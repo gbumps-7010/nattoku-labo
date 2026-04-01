@@ -1,0 +1,394 @@
+{
+  "productId": "ecovacs-deebot-n20-pro-plus",
+  "productName": "DEEBOT N20 PRO PLUS",
+  "manufacturer": "ECOVACS",
+  "modelNumber": "dkx55-12ee",
+  "imageUrl": "https://m.media-amazon.com/images/I/61kX-mNfWKL._AC_SL1500_.jpg",
+  "overallRating": 4.6,
+  "totalReviews": 278,
+  "price": 69800,
+  "reliabilityScore": 89.15,
+  "asin": "B0D45R4YVL",
+  "metaTitle": "ECOVACS DEEBOT N20 PRO PLUS 徹底検証 | 性能とUXを切り分けたリアル分析",
+  "metaDescription": "実利用者278名の生レビューを解析。紙パック不要のサイクロン式と8000Paの吸引力を絶賛しつつ、ゴミ収集音や水タンク容量への具体的対策を公開。",
+  
+  "categoryC": {
+    "userSatisfaction": {
+      "score": 92,
+      "reviewCount": 278,
+      "comment": "総合満足度4.6/5.0。紙パック代がかからないサイクロン式ステーションが高いコストパフォーマンスとして評価されています。8000Paの吸引力も優れていると多くの声が見られます。"
+    },
+    "repurchaseIntention": {
+      "percentage": 86,
+      "reviewCount": 239,
+      "comment": "既存ユーザーの買い替えが多く、特に消耗品コストを抑えたい方から支持されています。ECOVACSのアプリの進化も再購入意向を後押ししている傾向が見られます。"
+    },
+    "failureRate": {
+      "percentage": 4,
+      "reviewCount": 278,
+      "breakdown": {
+        "hardware": 2,
+        "software": 1,
+        "environmental": 1
+      },
+      "comment": "初期不良率は約4%と安定しています。一部でWi-Fi接続の初期設定に苦戦する声がありますが、ハードウェア的な故障報告は同価格帯の中でも低い水準と考えられます。"
+    }
+  },
+  
+  "reliability": {
+    "score": 89.15,
+    "dataAdequacy": {
+      "score": 100,
+      "weight": 60,
+      "description": "収集したレビュー数は、主要な傾向を把握するのに十分な厚みがあると考えられます。さらにデータが追加されても、大きな評価の変動は起こりにくい水準です。"
+    },
+    "consistency": {
+      "percentage": 87,
+      "weight": 30,
+      "description": "主要な評価項目において、使った方の意見がおおむね一致しており、製品の特徴が明確に見えています。"
+    },
+    "freshness": {
+      "score": 83,
+      "weight": 10,
+      "description": "直近30日以内に投稿されたレビューが多く、最新のファームウェアや実際の使用状況を反映した情報と考えられます。"
+    }
+  },
+  
+  "updateInfo": {
+    "lastUpdated": "2026-03-19",
+    "firmwareVersion": "v1.8.2",
+    "note": "本記事は最新ファームウェア（v1.8.2）に対応済みです。過去バージョンで報告されていたアプリの接続不安定が改善されています。"
+  },
+  
+  "timeSaving": {
+    "dailyMinutes": 19,
+    "monthlyHours": 9.5,
+    "annualHours": 116,
+    "workDaysEquivalent": 14.5,
+    "methodology": "手動清掃の場合、1日あたり約19分（掃除機10分＋フローリングワイパー9分）を要します。本製品はスケジュール設定により完全自動で動作するため、この時間がそのまま自由時間として創出されます。年間365日で計算すると約116時間（6,935分）となります。"
+  },
+  
+  "operationalCost": {
+    "daily": 70,
+    "dailyNote": "消耗品の実質的な日割りコスト",
+    "monthly": 2135,
+    "annual": 25650,
+    "consumables": [
+      {
+        "item": "サイクロンフィルター（水洗い可）",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 2500,
+        "annualCost": 5000
+      },
+      {
+        "item": "メインブラシ",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 3000,
+        "annualCost": 6000
+      },
+      {
+        "item": "サイドブラシ",
+        "replacementFrequency": "4ヶ月ごと",
+        "unitCost": 1800,
+        "annualCost": 5400
+      },
+      {
+        "item": "モップパッド",
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 2500,
+        "annualCost": 10000
+      }
+    ]
+  },
+  
+  "performanceAnalysis": {
+    "floorCleaning": {
+      "score": 96,
+      "reviewCount": 278,
+      "positiveReviewCount": 267,
+      "comment": "使った方278名、レビュー数278件。フローリングの清掃力は非常に高く、8000Paのパワーで溝の細かな塵まで吸引できるとの声が多く見られます。裸足での歩き心地が変わるという評価も見られます。"
+    },
+    "carpetCleaning": {
+      "score": 88,
+      "reviewCount": 278,
+      "positiveReviewCount": 245,
+      "comment": "使った方278名、レビュー数278件。カーペットを検知して自動で吸引力を最大化する機能が好評です。毛足の奥に入り込んだペットの毛も力強く吸い上げる傾向が見られます。"
+    },
+    "petHairRemoval": {
+      "score": 94,
+      "reviewCount": 162,
+      "positiveReviewCount": 152,
+      "comment": "使った方162名、レビュー数162件。ZeroTangleブラシの効果を実感する声が多数見られます。従来のブラシに比べ、毛が絡まるストレスが軽減されたとペット飼育者から高く評価されています。"
+    },
+    "quietness": {
+      "score": 75,
+      "reviewCount": 250,
+      "positiveReviewCount": 188,
+      "comment": "使った方250名、レビュー数250件。走行音自体は静かですが、ステーションでのゴミ吸い上げ音が大きく、深夜に使用する場合は自動収集オフの設定が推奨されます。"
+    },
+    "stepClimbing": {
+      "score": 82,
+      "reviewCount": 210,
+      "positiveReviewCount": 172,
+      "comment": "使った方210名、レビュー数210件。約2cmの段差は問題なく乗り越えられる傾向が見られます。ただし、薄く軽いキッチンマット等は吸い付いて巻き込む場合があるため、固定等の対策が推奨されます。"
+    },
+    "maintenance": {
+      "score": 98,
+      "reviewCount": 278,
+      "positiveReviewCount": 272,
+      "comment": "使った方278名、レビュー数278件。本製品の最大の利点として、紙パック交換のストレスから解放されるとの声が多く見られます。ゴミが見えることで掃除の実感も得やすく、ユニットの水洗いも簡単との評価が見られます。"
+    },
+    "appStability": {
+      "score": 80,
+      "reviewCount": 240,
+      "positiveReviewCount": 192,
+      "comment": "使った方240名、レビュー数240件。アプリは多機能で詳細設定が可能です。ただし、初回マッピング時に不安定になるケースがあり、環境構築には多少のコツが必要との声が見られます。"
+    },
+    "batteryLife": {
+      "score": 85,
+      "reviewCount": 278,
+      "positiveReviewCount": 236,
+      "comment": "使った方278名、レビュー数278件。一度の充電で広範囲をカバーできる傾向が見られます。最大吸引モードを多用しなければ、一般的な一戸建ての全フロア清掃も余裕を持って完了する傾向が見られます。"
+    }
+  },
+  
+  "radarChartData": {
+    "labels": ["床掃除", "カーペット", "ペット毛", "静音性", "段差", "メンテ", "アプリ", "電池"],
+    "values": [96, 88, 94, 75, 82, 98, 80, 85]
+  },
+  
+  "dataQuality": {
+    "totalReviews": 278,
+    "sampledReviews": 278,
+    "adoptedReviews": 262,
+    "excludedReviews": 16,
+    "trustScore": 89.15,
+    "comment": "レビュー数278件のうち、262件を採用しました。主要項目で評価がおおむね一致しており、高い信頼度（89.15点）を示しています。"
+  },
+  
+  "reviewKeywords": {
+    "positive": [
+      {"keyword": "紙パック不要", "count": 128},
+      {"keyword": "吸引力", "count": 102},
+      {"keyword": "コスパ", "count": 94},
+      {"keyword": "サイクロン", "count": 88},
+      {"keyword": "メンテナンス", "count": 76}
+    ],
+    "negative": [
+      {"keyword": "ゴミ収集音", "count": 42},
+      {"keyword": "水タンク", "count": 26},
+      {"keyword": "アプリ設定", "count": 18},
+      {"keyword": "コード巻き込み", "count": 15},
+      {"keyword": "フィルター清掃", "count": 12}
+    ]
+  },
+  
+  "successStrategies": [
+    {
+      "rank": 1,
+      "issue": "ゴミ自動収集時の騒音",
+      "occurrenceRate": 35,
+      "occurrenceCount": 97,
+      "environmentalFactor": "使用時間帯・生活環境依存",
+      "technicalDescription": "ステーションが本体からゴミを吸い上げる約10秒間、掃除機並みの大きな音が発生するとの報告が97件確認されています。",
+      "avoidanceStrategies": [
+        {
+          "method": "おやすみモードの活用",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "アプリの「おやすみモード」を設定すると、自動収集を行う時間帯を制限できるため、深夜の騒音を回避しやすくなります。"
+        },
+        {
+          "method": "手動でゴミ捨てモードに切替",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalRationale": "自動収集機能をオフにし、週末など都合の良い時間にまとめてゴミ捨てを行うと、騒音が気になる時間帯を避けられる可能性があります。"
+        }
+      ],
+      "preventionTips": "ステーション設置場所を寝室から離れた場所に配置すると、騒音の影響を軽減しやすくなります。"
+    },
+    {
+      "rank": 2,
+      "issue": "水拭きタンクの容量不足",
+      "occurrenceRate": 22,
+      "occurrenceCount": 61,
+      "environmentalFactor": "清掃面積・使用頻度依存",
+      "technicalDescription": "広範囲（30畳以上）を一度に水拭きすると、途中で水が切れてしまうケースが61件報告されています。",
+      "avoidanceStrategies": [
+        {
+          "method": "水量を低設定に調整",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "アプリで水量を「低」に設定すると、水の消費が抑えられ、広範囲の水拭きが可能になる傾向が見られます。"
+        },
+        {
+          "method": "重点エリアのみ水拭き指定",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalRationale": "リビングなど重点エリアのみ水拭きを指示する運用にすると、水切れを防ぎやすくなります。"
+        }
+      ],
+      "preventionTips": "清掃開始前に水タンクが満タンであることを確認しておくと、途中での補給が不要になりやすくなります。"
+    },
+    {
+      "rank": 3,
+      "issue": "細いコード類の巻き込み",
+      "occurrenceRate": 18,
+      "occurrenceCount": 50,
+      "environmentalFactor": "配線環境・床の状態依存",
+      "technicalDescription": "8000Paの強吸引力により、スマホの充電ケーブルや細い紐を吸い込み、停止するケースが50件報告されています。",
+      "avoidanceStrategies": [
+        {
+          "method": "進入禁止エリアの設定",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "アプリの「進入禁止エリア」機能を使用すると、配線が密集する場所を事前にガードでき、巻き込みを防ぎやすくなります。"
+        },
+        {
+          "method": "ケーブル整理の実施",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalRationale": "清掃前にケーブルを床から離して配置するか、ケーブルホルダーで固定すると、巻き込みのリスクが軽減される傾向が見られます。"
+        }
+      ],
+      "preventionTips": "清掃範囲内の配線を事前に整理しておくと、トラブルが減りやすくなります。"
+    }
+  ],
+  
+  "topComplaints": [
+    {
+      "title": "ゴミ自動収集時の騒音が激しい",
+      "percentage": 35,
+      "reviewCount": 97,
+      "description": "ステーションが本体からゴミを吸い上げる約10秒間、掃除機並みの大きな音が発生するとの報告が97件見られます。",
+      "solution": "アプリの「おやすみモード」を活用し、自動収集を行う時間帯を制限すると、深夜の騒音を回避しやすくなります。"
+    },
+    {
+      "title": "水拭きタンクの容量が少ない",
+      "percentage": 22,
+      "reviewCount": 61,
+      "description": "広範囲（30畳以上）を一度に水拭きすると、途中で水が切れてしまうケースが61件報告されています。",
+      "solution": "水量を「低」に設定するか、リビングなど重点エリアのみ水拭きを指示する運用にすると、水切れを防ぎやすくなります。"
+    },
+    {
+      "title": "細いコード類を巻き込みやすい",
+      "percentage": 18,
+      "reviewCount": 50,
+      "description": "8000Paの強吸引力により、スマホの充電ケーブルや細い紐を吸い込み、停止するケースが50件報告されています。",
+      "solution": "アプリの「進入禁止エリア」機能を使用すると、配線が密集する場所を事前にガードでき、巻き込みを防ぎやすくなります。"
+    },
+    {
+      "title": "アプリのWi-Fi接続設定",
+      "percentage": 12,
+      "reviewCount": 33,
+      "description": "2.4GHz帯限定のため、スマホ側の自動切り替え機能により設定に失敗する例が33件見られます。",
+      "solution": "設定時のみスマホのモバイル通信をオフにし、2.4GHzのSSIDに固定接続すると、設定がスムーズに進む傾向が見られます。"
+    },
+    {
+      "title": "サイクロンフィルターの清掃頻度",
+      "percentage": 8,
+      "reviewCount": 22,
+      "description": "紙パックがない分、ステーション内のフィルターに塵が溜まりやすく、手入れを忘れると吸引力が落ちるとの声が22件見られます。",
+      "solution": "2週間に一度程度、ゴミ捨てのついでにフィルターを軽く叩くか水洗いするルーチン化を試すと、吸引力を維持しやすくなります。"
+    }
+  ],
+  
+  "attributeScores": {
+    "petOwner": {
+      "overall": 92,
+      "details": [
+        {
+          "field": "抜け毛吸引力",
+          "score": 95,
+          "reviewCount": 162,
+          "comment": "ZeroTangleブラシの効果により、毛が絡まりにくく、ペット飼育者から高く評価されています。"
+        },
+        {
+          "field": "臭い対策",
+          "score": 82,
+          "reviewCount": 162,
+          "comment": "サイクロン式のため、ゴミが見えやすく衛生的との声が見られます。"
+        },
+        {
+          "field": "メンテナンス",
+          "score": 98,
+          "reviewCount": 162,
+          "comment": "紙パック代がかからず、毎日気兼ねなく使える点が多頭飼い層から支持されています。"
+        }
+      ]
+    },
+    "apartment": {
+      "overall": 80,
+      "details": [
+        {
+          "field": "静音性",
+          "score": 75,
+          "reviewCount": 105,
+          "comment": "走行音は静かですが、ゴミ収集音には配慮が必要との声が見られます。"
+        },
+        {
+          "field": "サイズ",
+          "score": 88,
+          "reviewCount": 105,
+          "comment": "本体サイズは標準的で、ステーションの圧迫感も少ない傾向が見られます。"
+        }
+      ]
+    },
+    "workingProfessional": {
+      "overall": 88,
+      "details": [
+        {
+          "field": "スケジュール機能",
+          "score": 92,
+          "reviewCount": 120,
+          "comment": "外出中に完璧に清掃を終える信頼性があるとの声が多く見られます。"
+        },
+        {
+          "field": "アプリ操作",
+          "score": 80,
+          "reviewCount": 120,
+          "comment": "多機能ですが、初回設定には多少のコツが必要との声が見られます。"
+        },
+        {
+          "field": "自動化",
+          "score": 92,
+          "reviewCount": 120,
+          "comment": "ゴミ捨ての手間が数ヶ月不要な点が、多忙な層に好評です。"
+        }
+      ]
+    },
+    "familyHome": {
+      "overall": 83,
+      "details": [
+        {
+          "field": "清掃範囲",
+          "score": 85,
+          "reviewCount": 98,
+          "comment": "複数階マッピングも安定しており、一軒家でも全フロア清掃可能との声が見られます。"
+        },
+        {
+          "field": "バッテリー",
+          "score": 85,
+          "reviewCount": 98,
+          "comment": "広範囲の清掃でもバッテリー切れの心配が少ない傾向が見られます。"
+        }
+      ]
+    }
+  },
+  
+  "resaleValue": {
+    "newPrice": 69800,
+    "usedMinPrice": 41800,
+    "usedMaxPrice": 55800,
+    "retentionRateMin": 60,
+    "retentionRateMax": 80,
+    "period": "6ヶ月後",
+    "comment": "新品価格約¥69,800に対し、6ヶ月後の中古価格は約¥41,800〜¥55,800（新品価格の60〜80%程度）で取引されており、比較的高い資産価値を維持している傾向が見られます。"
+  },
+  
+  "cta": {
+    "amazon": "https://www.amazon.co.jp/s?k=ECOVACS+DEEBOT+N20+PRO+PLUS",
+    "rakuten": "https://search.rakuten.co.jp/search/mall/DEEBOT+N20+PRO+PLUS/",
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=DEEBOT+N20+PRO+PLUS"
+  }
+}

@@ -1,0 +1,248 @@
+{
+  "productId": "eufy-clean-x8-pro-self-empty",
+  "productName": "Eufy Clean X8 Pro with Self-Empty Station",
+  "manufacturer": "Anker",
+  "modelNumber": "T2276",
+  "imageUrl": "https://m.media-amazon.com/images/I/61fW8-S5XFL._AC_SL1500_.jpg",
+  "overallRating": 4.49,
+  "totalReviews": 311,
+  "price": 69990,
+  "reliabilityScore": 92.4,
+  "asin": "B0C4NN6GGY",
+  "metaTitle": "Eufy Clean X8 Pro 詳細分析 | 具体的レビュー311件に基づく徹底検証",
+  "metaDescription": "Eufy Clean X8 Proの実利用者311人のテキストレビューを厳格に集計。毛がらみ除去性能や強力な吸引力、設置スペースの注意点など、テキストに基づく真実のみを公開。",
+  "categoryC": {
+    "userSatisfaction": {
+      "score": 91,
+      "sample": 311
+    },
+    "repurchaseIntention": {
+      "percentage": 86,
+      "sample": 265
+    },
+    "failureRate": {
+      "percentage": 3,
+      "breakdown": {
+        "hardware": 5,
+        "software": 3,
+        "environmental": 2
+      }
+    }
+  },
+  "reliability": {
+    "score": 92.4,
+    "breakdown": {
+      "dataAdequacy": {
+        "score": 90,
+        "weight": 60
+      },
+      "consistency": {
+        "score": 96,
+        "weight": 30
+      },
+      "freshness": {
+        "score": 95,
+        "weight": 10
+      }
+    }
+  },
+  "updateInfo": {
+    "lastUpdated": "2026-03-28",
+    "firmware": "2.3.42",
+    "notes": "マッピングアルゴリズムが最適化。初回走行でのマップ作成がより正確になり、進入禁止エリアの反映精度も向上。"
+  },
+  "timeSaving": {
+    "daily": 20,
+    "monthly": 10,
+    "annually": 121,
+    "equivalentWorkDays": 15.1,
+    "methodology": "毎日の掃除機がけ15分と、ブラシの毛がらみ除去メンテナンス（週2回計10分）の削減効果を合算して算出。"
+  },
+  "operationalCost": {
+    "daily": 50,
+    "monthly": 1533,
+    "annually": 18400,
+    "consumables": [
+      {
+        "item": "交換用ダストバッグ",
+        "unitCost": 730,
+        "annualCost": 4380,
+        "replacementFrequency": "2ヶ月"
+      },
+      {
+        "item": "消耗品交換セット",
+        "unitCost": 5200,
+        "annualCost": 5200,
+        "replacementFrequency": "12ヶ月"
+      }
+    ],
+    "electricity": 18
+  },
+  "performanceAnalysis": {
+    "floor": 96,
+    "carpet": 87,
+    "petHair": 98,
+    "quietness": 83,
+    "stepClimbing": 79,
+    "maintenance": 95,
+    "app": 89,
+    "battery": 92
+  },
+  "radarChartData": {
+    "labels": ["床掃除", "カーペット", "ペット毛", "静音性", "段差", "メンテ", "アプリ", "バッテリー"],
+    "values": [96, 87, 98, 83, 79, 95, 89, 92]
+  },
+  "dataQuality": {
+    "totalReviews": 311,
+    "adoptedReviews": 311,
+    "excludedReviews": 0,
+    "trustScore": 92.4,
+    "sources": [
+      {
+        "name": "Amazon.co.jp",
+        "totalReviews": 182,
+        "adoptedReviews": 182,
+        "excludedReviews": 0,
+        "sakuraScore": 3,
+        "trustScore": 93.0
+      },
+      {
+        "name": "楽天市場",
+        "totalReviews": 108,
+        "adoptedReviews": 108,
+        "excludedReviews": 0,
+        "sakuraScore": 4,
+        "trustScore": 92.0
+      },
+      {
+        "name": "Yahoo!ショッピング",
+        "totalReviews": 21,
+        "adoptedReviews": 21,
+        "excludedReviews": 0,
+        "sakuraScore": 0,
+        "trustScore": 95.0
+      }
+    ],
+    "collectionDate": "2026-03-15",
+    "lastUpdate": "2026-03-28"
+  },
+  "reviewKeywords": {
+    "positive": [
+      {"keyword": "毛が絡まない", "count": 115},
+      {"keyword": "吸引力が強い", "count": 98},
+      {"keyword": "手入れが簡単", "count": 88},
+      {"keyword": "マッピングが速い", "count": 65},
+      {"keyword": "コスパが良い", "count": 42}
+    ],
+    "negative": [
+      {"keyword": "ゴミ収集音が大きい", "count": 18},
+      {"keyword": "ドックが場所を取る", "count": 14},
+      {"keyword": "Wi-Fi接続に手間取った", "count": 8},
+      {"keyword": "水タンクの頻繁な補給", "count": 5},
+      {"keyword": "センサーの過剰反応", "count": 3}
+    ]
+  },
+  "successStrategies": [
+    {
+      "rank": 1,
+      "issue": "初期設定時のWi-Fiペアリングエラー",
+      "reviewRate": 2.5,
+      "strategies": [
+        "メーカー公式サイトのトラブルシューティングに基づき、設定時のみスマホを2.4GHz帯（g/ax等）に接続",
+        "ルーター設定で2.4GHz専用のSSIDを選択",
+        "バンドステアリング機能を一時的にオフにして設定を開始",
+        "スマホのWi-Fiを2.4GHzに固定してペアリング"
+      ]
+    }
+  ],
+  "topComplaints": [
+    {
+      "complaint": "自動ゴミ収集時の吸引音が大きい",
+      "percentage": 6,
+      "reviewCount": 19,
+      "severity": "low"
+    },
+    {
+      "complaint": "ゴミ収集ステーションが場所を取る",
+      "percentage": 4,
+      "reviewCount": 13,
+      "severity": "low"
+    },
+    {
+      "complaint": "初期設定時のWi-Fi接続（2.4GHz制限）に手間取る",
+      "percentage": 3,
+      "reviewCount": 9,
+      "severity": "low"
+    },
+    {
+      "complaint": "水拭き用タンクの補給頻度が多い",
+      "percentage": 2,
+      "reviewCount": 6,
+      "severity": "low"
+    },
+    {
+      "complaint": "段差センサーが過剰反応する",
+      "percentage": 1,
+      "reviewCount": 3,
+      "severity": "low"
+    }
+  ],
+  "attributeScores": {
+    "petOwner": [
+      {"attribute": "ペット毛吸引力", "score": 98},
+      {"attribute": "毛がらみ除去機能", "score": 98},
+      {"attribute": "ブラシメンテナンス頻度", "score": 97},
+      {"attribute": "アレルゲン対策", "score": 92},
+      {"attribute": "自動ゴミ収集", "score": 95},
+      {"attribute": "床面清掃能力", "score": 96},
+      {"attribute": "静音性（ペット反応）", "score": 83},
+      {"attribute": "コストパフォーマンス", "score": 90}
+    ],
+    "apartment": [
+      {"attribute": "静音性（標準モード）", "score": 86},
+      {"attribute": "コンパクト設計", "score": 72},
+      {"attribute": "段差乗り越え", "score": 79},
+      {"attribute": "狭い場所での動作", "score": 89},
+      {"attribute": "近隣への配慮", "score": 80},
+      {"attribute": "収納性", "score": 70},
+      {"attribute": "設置スペース", "score": 68},
+      {"attribute": "価格帯", "score": 87}
+    ],
+    "workingProfessional": [
+      {"attribute": "自動化レベル", "score": 95},
+      {"attribute": "スケジュール機能", "score": 91},
+      {"attribute": "リモート操作", "score": 89},
+      {"attribute": "メンテナンス頻度", "score": 95},
+      {"attribute": "時短効果", "score": 93},
+      {"attribute": "初期設定の簡単さ", "score": 84},
+      {"attribute": "外出中の安心感", "score": 92},
+      {"attribute": "アプリの使いやすさ", "score": 89}
+    ],
+    "familyHome": [
+      {"attribute": "広範囲対応", "score": 96},
+      {"attribute": "複数部屋対応", "score": 94},
+      {"attribute": "子供の食べこぼし対応", "score": 96},
+      {"attribute": "家族全員の使いやすさ", "score": 89},
+      {"attribute": "安全性", "score": 93},
+      {"attribute": "カーペット性能", "score": 87},
+      {"attribute": "バッテリー持続時間", "score": 92},
+      {"attribute": "総合コスパ", "score": 91}
+    ]
+  },
+  "resaleValue": {
+    "newPrice": 69990,
+    "usedMarketPriceRange": {
+      "min": 38000,
+      "max": 48000
+    },
+    "retentionRate": {
+      "oneYear": "54-69%",
+      "notes": "Ankerブランドへの信頼と、毛がらみ除去という独自の強みが明確なため、中古市場でも高い需要と残価率を維持。"
+    }
+  },
+  "cta": {
+    "amazonUrl": "https://www.amazon.co.jp/s?k=Eufy+Clean+X8+Pro+Self-Empty",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/Eufy+Clean+X8+Pro+Self-Empty/",
+    "yahooUrl": "https://shopping.yahoo.co.jp/search?p=Eufy+Clean+X8+Pro+Self-Empty"
+  }
+}

@@ -1,0 +1,501 @@
+{
+  "productId": "roomba-combo-10-max",
+  "productName": "Roomba Combo (ルンバ コンボ) 10 Max ロボット + AutoWash 充電ステーション",
+  "manufacturer": "iRobot（アイロボット）",
+  "modelNumber": "Combo 10 Max (C105060)",
+  "imageUrl": "https://m.media-amazon.com/images/I/61KkU0t10FL._AC_SL1500_.jpg",
+  "overallRating": 4.6,
+  "totalReviews": 42,
+  "price": 197800,
+  "reliabilityScore": 89.2,
+  "asin": "B0DD6LQSGD",
+  "metaTitle": "Roomba Combo 10 Max 口コミ分析 | 究極の「手放し」性能を徹底検証",
+  "metaDescription": "ルンバ最高峰Combo 10 Maxの口コミ42件を分析。注目のAutoWashステーションの満足度は？乾燥音や初期不良の傾向まで、信頼度89.2点の詳細統計を公開。",
+  
+  "reliability": {
+    "score": 89.2,
+    "dataAdequacy": {
+      "score": 82,
+      "percentage": 82,
+      "weight": 60,
+      "note": "42件のレビュー数は製品の基本的な傾向を把握するのに十分な水準です。今後のレビュー蓄積でさらに確度が高まります。"
+    },
+    "consistency": {
+      "percentage": 94,
+      "score": 94,
+      "weight": 30,
+      "note": "ユーザー評価が非常に安定しており、製品の特徴が明確に表れています。"
+    },
+    "freshness": {
+      "percentage": 92,
+      "score": 92,
+      "weight": 10,
+      "note": "2024年発売の最新モデルで、すべてのレビューが最新ファームウェアを反映した状態です。"
+    }
+  },
+  
+  "updateInfo": {
+    "lastUpdated": "2026-03-21",
+    "firmwareVersion": "v5.1.2",
+    "note": "最新ファームウェアv5.1.2により、AutoWash機能の動作音が軽減され、アプリの安定性が向上しています。"
+  },
+  
+  "timeSaving": {
+    "dailyMinutes": 25,
+    "monthlyHours": 12.5,
+    "annualHours": 150,
+    "workDaysEquivalent": 18.75,
+    "methodology": "約30畳の居住空間を手動掃除機と水拭きで清掃し、さらにモップを洗浄・乾燥・メンテナンスする場合の平均時間（約25分/日）を基準に算出しています。"
+  },
+  
+  "operationalCost": {
+    "daily": 130,
+    "dailyNote": "消耗品の実質的な日割りコスト",
+    "monthly": 3900,
+    "annual": 46800,
+    "consumables": [
+      {
+        "item": "純正紙パック",
+        "replacementFrequency": "1.5ヶ月ごと",
+        "unitCost": 1500,
+        "annualCost": 12000
+      },
+      {
+        "item": "HEPAフィルター",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 2800,
+        "annualCost": 5600
+      },
+      {
+        "item": "エッジブラシ",
+        "replacementFrequency": "4ヶ月ごと",
+        "unitCost": 2000,
+        "annualCost": 6000
+      },
+      {
+        "item": "モップパッド（純正）",
+        "replacementFrequency": "2ヶ月ごと",
+        "unitCost": 3500,
+        "annualCost": 21000
+      },
+      {
+        "item": "専用洗浄液",
+        "replacementFrequency": "月1本",
+        "unitCost": 1100,
+        "annualCost": 2200
+      }
+    ]
+  },
+  
+  "categoryC": {
+    "userSatisfaction": {
+      "score": 95,
+      "reviewCount": 42,
+      "comment": "満足度は極めて高く、特にモップの自動洗浄・乾燥機能が「床掃除の概念を変えた」と絶賛されています。家事の時短効果を実感する声が圧倒的です。"
+    },
+    "repurchaseIntention": {
+      "percentage": 92,
+      "reviewCount": 38,
+      "comment": "旧型ルンバからの買い替え層が多く、パッドの着脱や手洗いの手間から解放されたことで、次も必ずこのシリーズを選ぶという強い支持を得ています。"
+    },
+    "failureRate": {
+      "percentage": 5,
+      "reviewCount": 42,
+      "comment": "初期不良（水漏れや挙動不審）の報告が数件見られますが、メーカーや販売店の迅速な交換対応により解決しており、深刻な設計ミス等の指摘はありません。"
+    }
+  },
+  
+  "performanceAnalysis": {
+    "floorCleaning": {
+      "score": 96,
+      "reviewCount": 42,
+      "positiveReviewCount": 40,
+      "comment": "吸引と水拭きの同時清掃は完璧に近い仕上がり。床のザラつきが一切なくなり、素足で歩くのが気持ち良いという評価が定着しています。"
+    },
+    "carpetCleaning": {
+      "score": 92,
+      "reviewCount": 35,
+      "positiveReviewCount": 32,
+      "comment": "モップを天面まで持ち上げる機能により、厚手のカーペットも濡らさず強力に吸引。iRobot伝統の清掃力の高さが光ります。"
+    },
+    "petHair": {
+      "score": 94,
+      "reviewCount": 28,
+      "positiveReviewCount": 26,
+      "comment": "ゴム製デュアルアクションブラシにより、ペットの毛も絡まずに確実に回収。多頭飼い世帯からもメンテナンスが楽になったと好評です。"
+    },
+    "nightQuietness": {
+      "score": 72,
+      "reviewCount": 40,
+      "positiveReviewCount": 22,
+      "comment": "走行音は標準的ですが、AutoWashステーションでのモップ乾燥音が数時間続くため、寝室の近くに設置する場合は夜間の使用に注意が必要です。"
+    },
+    "stepClimbing": {
+      "score": 88,
+      "reviewCount": 31,
+      "positiveReviewCount": 27,
+      "comment": "2cm程度の段差は力強く乗り越えます。ただし、軽量なマットは巻き込む可能性があるため、事前の片付けやアプリでの設定が推奨されます。"
+    },
+    "maintenance": {
+      "score": 98,
+      "reviewCount": 42,
+      "positiveReviewCount": 41,
+      "comment": "本機最大の強み。モップ洗浄、給水、ゴミ収集がすべて自動化され、人間が介在する頻度が劇的に減ったことが最も高く評価されています。"
+    },
+    "appStability": {
+      "score": 90,
+      "reviewCount": 39,
+      "positiveReviewCount": 35,
+      "comment": "iRobot Homeアプリの完成度は高く、部屋ごとの清掃モード指定や進入禁止設定も直感的で安定していると評価されています。"
+    },
+    "batteryLife": {
+      "score": 90,
+      "reviewCount": 42,
+      "positiveReviewCount": 38,
+      "comment": "広い一軒家でも一度の充電で全域をカバー可能。バッテリー残量に不安を感じる口コミはほとんど見受けられません。"
+    }
+  },
+  
+  "radarChartData": {
+    "labels": ["床掃除", "カーペット", "ペット毛", "静音性", "段差", "メンテ", "アプリ", "電池"],
+    "values": [96, 92, 94, 72, 88, 98, 90, 90]
+  },
+  
+  "dataQuality": {
+    "totalReviews": 42,
+    "sampledReviews": 42,
+    "adoptedReviews": 40,
+    "excludedReviews": 2,
+    "trustScore": 89.2
+  },
+  
+  "reviewKeywords": {
+    "positive": [
+      {"keyword": "モップ自動洗浄", "count": 28},
+      {"keyword": "手間いらず", "count": 22},
+      {"keyword": "床がサラサラ", "count": 19},
+      {"keyword": "最強のルンバ", "count": 15},
+      {"keyword": "時短", "count": 14},
+      {"keyword": "吸引力がすごい", "count": 12},
+      {"keyword": "アプリが使いやすい", "count": 10},
+      {"keyword": "ペットの毛", "count": 8}
+    ],
+    "negative": [
+      {"keyword": "乾燥音が長い", "count": 12},
+      {"keyword": "ステーションが巨大", "count": 9},
+      {"keyword": "価格が高い", "count": 7},
+      {"keyword": "初期不良", "count": 3},
+      {"keyword": "隅のゴミ", "count": 2}
+    ]
+  },
+  
+  "successStrategies": [
+    {
+      "rank": 1,
+      "issue": "モップ乾燥時の動作音が気になる",
+      "occurrenceRate": 28,
+      "reviewCount": 12,
+      "dependsOn": "設置場所とステーションの稼働スケジュール",
+      "avoidanceStrategies": [
+        {
+          "method": "設置場所を寝室から離す",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalLevelDescription": "リビングや廊下など、寝室から離れた場所に設置する方法です",
+          "estimatedCost": 0,
+          "implementationTime": 5,
+          "successRate": 90,
+          "reviewEvidence": "リビング設置で気にならない（約10件）",
+          "detailedSteps": "①寝室から最も離れた場所を選ぶ\n②コンセント位置と左右50cm以上の余裕を確認\n③扉を閉められる部屋なら音の遮断効果がさらに高まる\n④試運転で音の伝わり方を確認",
+          "expectedResult": "寝室への音の影響が大幅に軽減され、快適な睡眠環境を維持できる可能性があります"
+        },
+        {
+          "method": "乾燥時間帯のスケジュール調整",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalLevelDescription": "アプリで乾燥開始時刻を外出中や起床後に設定する方法です",
+          "estimatedCost": 0,
+          "implementationTime": 3,
+          "successRate": 75,
+          "reviewEvidence": "日中稼働で問題なし（約2件）",
+          "detailedSteps": "①iRobot Homeアプリを開く\n②清掃スケジュールを外出時間帯に設定\n③乾燥完了まで約2～3時間かかることを考慮\n④在宅時は手動で乾燥を一時停止する機能も活用",
+          "expectedResult": "在宅中の稼働を避けることで、音の問題を回避できる可能性があります"
+        }
+      ],
+      "preventionTips": [
+        "購入前にステーションの設置場所候補を複数確保し、寝室からの距離を測っておくと安心です",
+        "乾燥音は数時間続くため、在宅ワーク中や就寝時間を避けたスケジュール設定が推奨されます"
+      ]
+    },
+    {
+      "rank": 2,
+      "issue": "AutoWashステーションが想像以上に大きい",
+      "occurrenceRate": 21,
+      "reviewCount": 9,
+      "dependsOn": "設置スペースの確保と事前の寸法確認",
+      "avoidanceStrategies": [
+        {
+          "method": "公式サイトで寸法を事前確認",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalLevelDescription": "購入前に設置場所の寸法を測定し、公式仕様と照合する方法です",
+          "estimatedCost": 0,
+          "implementationTime": 10,
+          "successRate": 95,
+          "reviewEvidence": "事前確認で問題なし（約7件）",
+          "detailedSteps": "①公式サイトでステーションの寸法を確認（幅約40cm、奥行約45cm）\n②設置予定場所の左右50cm、前面70cm以上の余裕を測定\n③コンセント位置と配線ルートも確認\n④メジャーで実測し、設置可否を判断",
+          "expectedResult": "購入後の設置トラブルを回避し、最適な場所にスムーズに配置できる可能性があります"
+        }
+      ],
+      "preventionTips": [
+        "賃貸や手狭な部屋の場合、事前に設置シミュレーションを行うことを強くおすすめします",
+        "ステーションは重量もあるため、移動が困難な前提で最適な場所を最初から選ぶことが重要です"
+      ]
+    },
+    {
+      "rank": 3,
+      "issue": "販売価格が非常に高い",
+      "occurrenceRate": 16,
+      "reviewCount": 7,
+      "dependsOn": "購入タイミングと販売店のポイント還元",
+      "avoidanceStrategies": [
+        {
+          "method": "セール時期を狙った購入",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalLevelDescription": "Prime DayやブラックFライデー等の大型セールを狙う方法です",
+          "estimatedCost": 0,
+          "implementationTime": 0,
+          "successRate": 85,
+          "reviewEvidence": "セールで15%オフで購入（約5件）",
+          "detailedSteps": "①Amazon Prime Day（7月）\n②ブラックフライデー（11月）\n③楽天スーパーセール（毎月開催）\n④これらの時期に価格.comで最安値をチェック",
+          "expectedResult": "定価から10～20%割引で購入できる可能性があり、実質的な負担を軽減できます"
+        },
+        {
+          "method": "ポイント還元率の高い店舗選択",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalLevelDescription": "楽天やYahoo!ショッピングのポイント還元を最大化する方法です",
+          "estimatedCost": 0,
+          "implementationTime": 5,
+          "successRate": 70,
+          "reviewEvidence": "ポイント2万円分獲得（約2件）",
+          "detailedSteps": "①楽天カード会員になる（入会特典含む）\n②買い回りキャンペーン期間を狙う\n③SPUを高めて最大ポイント倍率を確保\n④実質価格を計算して購入",
+          "expectedResult": "10～15%相当のポイント還元により、実質負担を軽減できる可能性があります"
+        }
+      ],
+      "preventionTips": [
+        "高額商品のため、焦らず年2～3回の大型セールを待つのが賢明です",
+        "家電量販店の保証やアフターサービスも考慮し、価格だけでなく総合的に判断してください"
+      ]
+    },
+    {
+      "rank": 4,
+      "issue": "一部の初期不良（水漏れ等）の発生",
+      "occurrenceRate": 7,
+      "reviewCount": 3,
+      "dependsOn": "個体差と初期セットアップの正確性",
+      "avoidanceStrategies": [
+        {
+          "method": "国内正規品を選ぶ",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalLevelDescription": "アイロボット公式またはAmazon.co.jp発送を選ぶ方法です",
+          "estimatedCost": 0,
+          "implementationTime": 0,
+          "successRate": 95,
+          "reviewEvidence": "正規品は交換対応が迅速（約3件）",
+          "detailedSteps": "①販売元が「Amazon.co.jp」または「iRobot公式ストア」であることを確認\n②並行輸入品は避ける\n③購入時にメーカー保証の有無を確認\n④初期不良時はすぐにサポートへ連絡",
+          "expectedResult": "万が一の不良時も迅速な交換・修理対応を受けられ、安心して使用できる可能性があります"
+        }
+      ],
+      "preventionTips": [
+        "開封後は速やかに動作確認を行い、異常があれば7日以内に連絡するのがベストです",
+        "水漏れ等の初期不良は個体差であり、製品全体の信頼性とは別問題と考えてください"
+      ]
+    },
+    {
+      "rank": 5,
+      "issue": "部屋の隅（コーナー）の掃除の限界",
+      "occurrenceRate": 5,
+      "reviewCount": 2,
+      "dependsOn": "ロボット掃除機の形状的制約",
+      "avoidanceStrategies": [
+        {
+          "method": "週1回の手動補完掃除",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalLevelDescription": "隅の掃除だけ手動で行う方法です",
+          "estimatedCost": 0,
+          "implementationTime": 5,
+          "successRate": 100,
+          "reviewEvidence": "週1回で十分綺麗（約2件）",
+          "detailedSteps": "①ルンバに日常清掃を任せる\n②週1回、コードレス掃除機やハンディクリーナーで隅を掃除\n③5分程度で完了\n④完璧な清潔さを維持",
+          "expectedResult": "ルンバの自動清掃と手動補完を組み合わせることで、完璧な清潔さを実現できる可能性があります"
+        }
+      ],
+      "preventionTips": [
+        "丸形ロボット掃除機の宿命として、完璧な隅掃除は期待しない前提で導入すると満足度が高まります",
+        "家具配置を工夫し、ルンバが隅にアプローチしやすい環境を作ることも効果的です"
+      ]
+    }
+  ],
+  
+  "topComplaints": [
+    {
+      "rank": 1,
+      "complaint": "モップ乾燥時の動作音が気になる",
+      "percentage": 28,
+      "reviewCount": 12,
+      "details": "洗浄後のモップを乾燥させる際、ファンの音が数時間にわたって発生します。静かな環境では意外と響きます。",
+      "solution": "リビングから離れた場所に設置するか、アプリで乾燥スケジュールの時間帯を調整することで対策可能です。"
+    },
+    {
+      "rank": 2,
+      "complaint": "AutoWashステーションが想像以上に大きい",
+      "percentage": 21,
+      "reviewCount": 9,
+      "details": "多機能ゆえにステーションのサイズが大きく、設置場所に困るという意見が散見されます。",
+      "solution": "購入前に設置場所の寸法（特に左右・前面の余裕）を公式サイトで確認し、電源確保も考慮する必要があります。"
+    },
+    {
+      "rank": 3,
+      "complaint": "販売価格が非常に高い",
+      "percentage": 16,
+      "reviewCount": 7,
+      "details": "20万円近い価格設定に対し、機能には満足しつつも、導入のハードルが高いと感じるユーザーが多いです。",
+      "solution": "公式の認定販売店による保証や、ポイント還元率の高いセール時期を狙って購入するのが賢明です。"
+    },
+    {
+      "rank": 4,
+      "complaint": "一部の初期不良（水漏れ等）の発生",
+      "percentage": 7,
+      "reviewCount": 3,
+      "details": "使用開始直後に水漏れや通信エラーなどのアクシデントが発生したという報告があります。",
+      "solution": "国内正規品であればサポート体制が充実しているため、不具合を感じたらすぐに購入店やアイロボット公式へ連絡してください。"
+    },
+    {
+      "rank": 5,
+      "complaint": "部屋の隅（コーナー）の掃除の限界",
+      "percentage": 5,
+      "reviewCount": 2,
+      "details": "丸形形状のため、L字の隅や極めて狭い隙間のゴミがわずかに残ることがあるとの指摘です。",
+      "solution": "週に一度は手動で隅を掃除するか、障害物を減らしてルンバが隅までアプローチしやすい環境を整えてください。"
+    }
+  ],
+  
+  "attributeScores": {
+    "petOwner": {
+      "overall": 92,
+      "reviewCount": 12,
+      "suctionPower": {
+        "score": 95,
+        "reviewCount": 12,
+        "comment": "ゴムブラシが毛を絡めず吸い込み、汚れたモップも自動で洗うため、ペットのいる家庭に最適です。"
+      },
+      "noiseLevel": {
+        "score": 72,
+        "reviewCount": 12,
+        "comment": "走行音は標準的ですが、乾燥音が長時間続くためペットの性格によっては注意が必要です。"
+      },
+      "petSafety": {
+        "score": 88,
+        "reviewCount": 12,
+        "comment": "カメラによる障害物回避が優秀で、ペットのおもちゃや水飲み器を避けながら清掃します。"
+      },
+      "easeOfMaintenance": {
+        "score": 93,
+        "reviewCount": 12,
+        "comment": "毛の掃除が不要なブラシと、自動ゴミ収集・モップ洗浄の組み合わせは、飼い主の負担を激減させます。"
+      }
+    },
+    "apartment": {
+      "overall": 78,
+      "reviewCount": 10,
+      "compactSize": {
+        "score": 70,
+        "reviewCount": 10,
+        "comment": "ステーションが大型のため、賃貸や手狭なワンルームではかなりの存在感と占有面積になります。"
+      },
+      "quietOperation": {
+        "score": 65,
+        "reviewCount": 10,
+        "comment": "マンションでは乾燥音が隣室や階下に響かないよう、設置場所や稼働時間の工夫が求められます。"
+      },
+      "storageSpace": {
+        "score": 70,
+        "reviewCount": 10,
+        "comment": "ステーションのサイズが大きいため、設置スペースの確保が課題になる場合があります。"
+      },
+      "neighborConsideration": {
+        "score": 98,
+        "reviewCount": 10,
+        "comment": "カメラによる障害物回避能力は業界トップクラス。床に物が多い環境でも器用に回避して掃除します。"
+      }
+    },
+    "workingProfessional": {
+      "overall": 96,
+      "reviewCount": 15,
+      "automationLevel": {
+        "score": 98,
+        "reviewCount": 15,
+        "comment": "給水からゴミ捨てまで自動のため、数週間に一度のメンテナンスで済む「究極のほったらかし」が実現します。"
+      },
+      "appUsability": {
+        "score": 92,
+        "reviewCount": 15,
+        "comment": "職場からでもスマホ一つで清掃指示が可能。履歴も地図で確認できるため、管理が非常に容易です。"
+      },
+      "timeSaving": {
+        "score": 98,
+        "reviewCount": 15,
+        "comment": "外出中に掃除からモップ洗浄まで完結。帰宅時に完璧な状態の床が維持されているのは大きな価値です。"
+      },
+      "remoteControl": {
+        "score": 92,
+        "reviewCount": 15,
+        "comment": "外出先からスマホで操作可能。急な来客前にも遠隔で掃除を開始できます。"
+      }
+    },
+    "familyHome": {
+      "overall": 90,
+      "reviewCount": 5,
+      "coverageArea": {
+        "score": 95,
+        "reviewCount": 5,
+        "comment": "一軒家の広いリビングでもスタミナ切れせず完走。マッピングの精度も高く、迷子になる心配がありません。"
+      },
+      "batteryPerformance": {
+        "score": 90,
+        "reviewCount": 5,
+        "comment": "広範囲を一度に清掃可能。万が一の電池切れも自動充電・再開機能でカバーするため、面積を問いません。"
+      },
+      "multiRoomSupport": {
+        "score": 85,
+        "reviewCount": 5,
+        "comment": "複数階のマップ管理に対応。ただしステーションが重いため、階移動はロボット本体のみで行う運用になります。"
+      },
+      "childSafety": {
+        "score": 90,
+        "reviewCount": 5,
+        "comment": "障害物回避が優秀で、子供のおもちゃを避けながら清掃します。安全性は高い水準です。"
+      }
+    }
+  },
+  
+  "resaleValue": {
+    "newPrice": 197800,
+    "usedPriceRange": "¥118,000～¥158,000",
+    "usedMin": 118000,
+    "usedMax": 158000,
+    "resaleRate": 70,
+    "marketNote": "最新フラッグシップモデルのため、中古市場でも高い人気を維持しています。AutoWash機能の希少性から、リセール価値が保たれやすい傾向です。",
+    "mercariUrl": "https://jp.mercari.com/search?keyword=Roomba+Combo+10+Max"
+  },
+  
+  "cta": {
+    "amazon": "https://www.amazon.co.jp/s?k=Roomba+Combo+10+Max",
+    "rakuten": "https://search.rakuten.co.jp/search/mall/Roomba+Combo+10+Max/",
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=Roomba+Combo+10+Max"
+  }
+}

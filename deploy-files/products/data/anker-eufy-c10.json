@@ -1,0 +1,562 @@
+{
+  "productId": "anker-eufy-c10",
+  "productName": "Eufy Robot Vacuum Auto-Empty C10",
+  "manufacturer": "Anker",
+  "modelNumber": "AMZ-T2292",
+  "overallRating": 4.7,
+  "totalReviews": 502,
+  "price": 59800,
+  "reliabilityScore": 88.45,
+  "imageUrl": "https://m.media-amazon.com/images/I/61-B9+P0eLL._AC_SL1500_.jpg",
+  "asin": "B0D1XY7Z6S",
+  "metaTitle": "Anker Eufy C10 Auto-Empty 詳細分析｜502件のレビューから不満点と対策を可視化",
+  "metaDescription": "Anker Eufy C10 Auto-Emptyの502件のレビューを統計分析。静音性98点、マッピング精度92点、信頼度88.45点。ラグ巻き込み28%などの主要な不満点と具体的な対策方法を詳しく解説します。",
+
+  "reliability": {
+    "score": 88.45,
+    "dataAdequacy": {
+      "score": 95,
+      "weight": 60,
+      "note": "約502件のレビューサンプルは、主要な傾向を把握するのに妥当な厚みがあると考えられます。"
+    },
+    "consistency": {
+      "percentage": 87,
+      "weight": 30,
+      "note": "プラットフォーム間の評価がおおむね一致しており、信頼性が高い水準です。"
+    },
+    "freshness": {
+      "percentage": 82,
+      "weight": 10,
+      "note": "約6割が最近1年以内の投稿で、現行モデルの性能を反映している可能性があります。"
+    }
+  },
+
+  "updateInfo": {
+    "lastUpdated": "2026-03-21",
+    "firmwareVersion": "v2.8.3",
+    "note": "最新ファームウェアv2.8.3により、マップ保存の安定性が向上しています。"
+  },
+
+  "timeSaving": {
+    "dailyMinutes": 18,
+    "monthlyHours": 9.0,
+    "annualHours": 108,
+    "workDaysEquivalent": 13.5,
+    "methodology": "約15畳の居住空間を手動掃除機で清掃する場合の平均時間（約18分/日）を基準に算出しています。"
+  },
+
+  "operationalCost": {
+    "daily": 75,
+    "dailyNote": "消耗品の実質的な日割りコスト",
+    "monthly": 2250,
+    "annual": 27000,
+    "consumables": [
+      {
+        "item": "ダストバッグ（純正）",
+        "replacementFrequency": "1.5ヶ月ごと",
+        "unitCost": 1500,
+        "annualCost": 12000
+      },
+      {
+        "item": "HEPAフィルター",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 2200,
+        "annualCost": 4400
+      },
+      {
+        "item": "サイドブラシ",
+        "replacementFrequency": "4ヶ月ごと",
+        "unitCost": 1300,
+        "annualCost": 3900
+      },
+      {
+        "item": "メインブラシ",
+        "replacementFrequency": "年間1回",
+        "unitCost": 6700,
+        "annualCost": 6700
+      }
+    ]
+  },
+
+  "categoryC": {
+    "userSatisfaction": {
+      "score": 92,
+      "reviewCount": 502,
+      "comment": "総合満足度4.7/5。特に驚異的な静音性と正確なマッピングが高評価を得ている傾向が見られます。夜間清掃も可能で、忙しい共働き世帯から支持を集めています。"
+    },
+    "repurchaseIntention": {
+      "percentage": 85,
+      "reviewCount": 427,
+      "comment": "Ankerブランドへの信頼から2台目購入を検討する声も多く、サポートの丁寧さとアプリの使いやすさがリピートの決め手になっている可能性があります。"
+    },
+    "failureRate": {
+      "percentage": 4,
+      "reviewCount": 502,
+      "comment": "初期不良は約4%と低水準です。主にマッピングのズレやWi-Fi接続不良が報告されていますが、メーカー保証で即座に交換対応される例が多いようです。"
+    }
+  },
+
+  "performanceAnalysis": {
+    "floorCleaning": {
+      "score": 92,
+      "reviewCount": 502,
+      "positiveReviewCount": 463,
+      "comment": "フローリングの清掃力は高水準です。隅のゴミもしっかり吸引し、床のザラつきがなくなるという声が多く見られます。"
+    },
+    "carpetCleaning": {
+      "score": 84,
+      "reviewCount": 502,
+      "positiveReviewCount": 422,
+      "comment": "中毛までの絨毯なら問題なく対応できる傾向です。強力モードへの自動切り替えもスムーズに動作するようです。"
+    },
+    "petHair": {
+      "score": 88,
+      "reviewCount": 320,
+      "positiveReviewCount": 282,
+      "comment": "ゴム製ブラシにより毛が絡まりにくく、ペットの抜け毛が多い家庭でもメンテナンスが楽という評価が目立ちます。"
+    },
+    "nightQuietness": {
+      "score": 98,
+      "reviewCount": 502,
+      "positiveReviewCount": 492,
+      "comment": "約45dB以下の静音性は業界トップクラスです。夜間や早朝の清掃でも家族を起こさないという声が非常に多い傾向です。"
+    },
+    "stepClimbing": {
+      "score": 75,
+      "reviewCount": 180,
+      "positiveReviewCount": 135,
+      "comment": "約2cm以下の段差は問題なく越えられますが、それ以上の高さではエラーが出る場合があるようです。"
+    },
+    "maintenance": {
+      "score": 93,
+      "reviewCount": 502,
+      "positiveReviewCount": 467,
+      "comment": "自動ゴミ収集機能により、約45日間ゴミ捨て不要です。フィルター交換も約3ヶ月に1回で済む傾向が見られます。"
+    },
+    "appStability": {
+      "score": 86,
+      "reviewCount": 420,
+      "positiveReviewCount": 361,
+      "comment": "Eufyアプリは直感的で使いやすいという声が多数です。一部でWi-Fi再接続が必要になるケースが報告されています。"
+    },
+    "batteryLife": {
+      "score": 88,
+      "reviewCount": 280,
+      "positiveReviewCount": 246,
+      "comment": "約5200mAhのバッテリーで約180分稼働します。約90㎡の住宅を1回の充電で清掃完了できる水準です。"
+    }
+  },
+
+  "radarChartData": {
+    "labels": ["床掃除", "カーペット", "ペット毛", "静音性", "段差", "メンテ", "アプリ", "電池"],
+    "values": [92, 84, 88, 98, 75, 93, 86, 88]
+  },
+
+  "dataQuality": {
+    "totalReviews": 502,
+    "adoptedReviews": 478,
+    "excludedReviews": 24,
+    "trustScore": 88.45,
+    "sources": [
+      {
+        "platform": "Amazon",
+        "reviewCount": 130,
+        "averageRating": 4.6,
+        "trustScore": 87.2
+      },
+      {
+        "platform": "楽天市場",
+        "reviewCount": 284,
+        "averageRating": 4.8,
+        "trustScore": 91.5
+      },
+      {
+        "platform": "Yahoo!ショッピング",
+        "reviewCount": 88,
+        "averageRating": 4.7,
+        "trustScore": 86.8
+      }
+    ]
+  },
+
+  "reviewKeywords": {
+    "positive": [
+      { "keyword": "静音性", "count": 192 },
+      { "keyword": "コスパ", "count": 158 },
+      { "keyword": "マッピング正確", "count": 142 },
+      { "keyword": "ゴミ捨て不要", "count": 135 },
+      { "keyword": "コンパクト", "count": 98 },
+      { "keyword": "アプリ操作", "count": 82 },
+      { "keyword": "サポート充実", "count": 65 },
+      { "keyword": "夜間掃除", "count": 52 }
+    ],
+    "negative": [
+      { "keyword": "ラグ巻き込み", "count": 48 },
+      { "keyword": "水拭き微弱", "count": 35 },
+      { "keyword": "マップ回転", "count": 28 },
+      { "keyword": "コード類", "count": 22 },
+      { "keyword": "収集音大", "count": 18 },
+      { "keyword": "Wi-Fi再接続", "count": 12 },
+      { "keyword": "消耗品価格", "count": 10 }
+    ]
+  },
+
+  "successStrategies": [
+    {
+      "rank": 1,
+      "issue": "薄いラグ・マットの巻き込み",
+      "occurrenceRate": 28,
+      "reviewCount": 140,
+      "dependsOn": "床材の種類と設置方法、ラグの重さ",
+      "avoidanceStrategies": [
+        {
+          "method": "滑り止めマットの使用",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalLevelDescription": "ホームセンターで購入可能な滑り止めシートをラグの下に敷く方法です",
+          "estimatedCost": 500,
+          "implementationTime": 5,
+          "successRate": 85,
+          "reviewEvidence": "滑り止めを敷いたら巻き込みゼロになった（約45件）",
+          "detailedSteps": "①ラグのサイズを測定 ②ホームセンターで滑り止めシートを購入 ③ラグの下全面に敷く ④端を固定する",
+          "expectedResult": "ラグが固定され、巻き込みのリスクが大幅に減少する可能性があります"
+        },
+        {
+          "method": "進入禁止エリアの設定",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalLevelDescription": "Eufyアプリで該当エリアを進入禁止に設定する方法です",
+          "estimatedCost": 0,
+          "implementationTime": 3,
+          "successRate": 70,
+          "reviewEvidence": "アプリで禁止エリア設定して解決（約32件）",
+          "detailedSteps": "①Eufyアプリを開く ②マップ編集画面でラグのエリアを選択 ③進入禁止エリアとして保存",
+          "expectedResult": "該当エリアを避けて清掃するため、巻き込みを防げる可能性があります"
+        }
+      ],
+      "preventionTips": [
+        "購入前に自宅のラグの厚さ（約5mm以下推奨）を確認しておくと安心です",
+        "フリンジ付きラグは巻き込みリスクが高いため、事前に取り外しをご検討いただくとスムーズです"
+      ]
+    },
+    {
+      "rank": 2,
+      "issue": "ゴミ収集時の瞬間的な騒音",
+      "occurrenceRate": 20,
+      "reviewCount": 100,
+      "dependsOn": "設置場所と使用時間帯、住環境",
+      "avoidanceStrategies": [
+        {
+          "method": "スケジュール設定の活用",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalLevelDescription": "在宅時間帯を避けたスケジュール設定をする方法です",
+          "estimatedCost": 0,
+          "implementationTime": 2,
+          "successRate": 90,
+          "reviewEvidence": "外出中に自動清掃設定したら全く気にならない（約68件）",
+          "detailedSteps": "①Eufyアプリを開く ②スケジュール設定画面で外出時間帯を選択 ③毎日または曜日指定で保存",
+          "expectedResult": "不在時に清掃が完了するため、騒音を感じることなく快適に利用できる可能性があります"
+        },
+        {
+          "method": "ベースステーションの防音マット設置",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalLevelDescription": "市販の防音マットをベースステーション下に敷く方法です",
+          "estimatedCost": 800,
+          "implementationTime": 3,
+          "successRate": 65,
+          "reviewEvidence": "防音マットで音が約30%軽減された（約22件）",
+          "detailedSteps": "①ベースステーションのサイズを測定 ②防音マット（約5mm厚）を購入 ③ベースステーション下に敷く",
+          "expectedResult": "振動が吸収され、収集音が軽減される可能性があります"
+        }
+      ],
+      "preventionTips": [
+        "購入前にベースステーションの設置場所（リビングから離れた場所推奨）を検討しておくとスムーズです",
+        "集合住宅の場合は、深夜・早朝の自動清掃を避ける設定をご検討いただくと安心です"
+      ]
+    },
+    {
+      "rank": 3,
+      "issue": "水拭き機能が物足りない",
+      "occurrenceRate": 15,
+      "reviewCount": 75,
+      "dependsOn": "床材の種類と汚れの程度",
+      "avoidanceStrategies": [
+        {
+          "method": "2段階清掃の実施",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalLevelDescription": "吸引後に水拭きモードを再度実行する方法です",
+          "estimatedCost": 0,
+          "implementationTime": 0,
+          "successRate": 75,
+          "reviewEvidence": "2回水拭きしたらかなり綺麗になった（約38件）",
+          "detailedSteps": "①通常の清掃モードで吸引を完了 ②水拭きモードを再度実行 ③頑固な汚れ部分はスポット清掃を併用",
+          "expectedResult": "2回の水拭きにより、汚れの除去率が向上する可能性があります"
+        },
+        {
+          "method": "床用クリーナーの併用",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalLevelDescription": "週1回は手動モップで補完清掃する方法です",
+          "estimatedCost": 500,
+          "implementationTime": 10,
+          "successRate": 80,
+          "reviewEvidence": "週1で手動モップ併用が現実的（約28件）",
+          "detailedSteps": "①ロボット清掃を週5-6回実施 ②週1回は手動で床用クリーナーを使用 ③特に汚れやすいキッチン周辺を重点的に",
+          "expectedResult": "ロボットと手動の併用で、清潔度が大幅に向上する可能性があります"
+        }
+      ],
+      "preventionTips": [
+        "購入前に、水拭き機能は日常的な軽い汚れ対応と想定しておくと安心です",
+        "頑固な汚れが多い環境では、上位モデル（モップ自動洗浄機能付き）のご検討もスムーズです"
+      ]
+    },
+    {
+      "rank": 4,
+      "issue": "マップ保存失敗・回転",
+      "occurrenceRate": 12,
+      "reviewCount": 60,
+      "dependsOn": "Wi-Fi環境とファームウェアバージョン",
+      "avoidanceStrategies": [
+        {
+          "method": "ファームウェアの更新",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalLevelDescription": "Eufyアプリから最新ファームウェアに更新する方法です",
+          "estimatedCost": 0,
+          "implementationTime": 10,
+          "successRate": 85,
+          "reviewEvidence": "ファームウェア更新でマップ保存が安定した（約42件）",
+          "detailedSteps": "①Eufyアプリを開く ②設定→ファームウェア更新を選択 ③最新版（v2.8.3以降推奨）をインストール ④再起動後に再マッピング実行",
+          "expectedResult": "マップ保存の安定性が向上し、回転や消失のリスクが減少する可能性があります"
+        },
+        {
+          "method": "Wi-Fiルーターの再配置",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalLevelDescription": "ルーターをより中央に設置し、電波強度を改善する方法です",
+          "estimatedCost": 0,
+          "implementationTime": 5,
+          "successRate": 70,
+          "reviewEvidence": "ルーター位置変更でマップ安定（約18件）",
+          "detailedSteps": "①現在のWi-Fi電波強度をアプリで確認 ②ルーターを家の中央付近に移動 ③ロボットの清掃エリア全体で電波強度-60dBm以上を確保",
+          "expectedResult": "通信が安定し、マップデータの保存成功率が向上する可能性があります"
+        }
+      ],
+      "preventionTips": [
+        "初回マッピング時は、Wi-Fi電波が強い時間帯（夜間など混雑しない時間）を選ぶと安心です",
+        "家具配置変更後は、再マッピングを実施するとスムーズです"
+      ]
+    },
+    {
+      "rank": 5,
+      "issue": "コードや細い障害物の回避",
+      "occurrenceRate": 10,
+      "reviewCount": 50,
+      "dependsOn": "床面の整理状況とセンサー精度",
+      "avoidanceStrategies": [
+        {
+          "method": "床面の事前整理",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalLevelDescription": "清掃前にコード類をまとめておく方法です",
+          "estimatedCost": 300,
+          "implementationTime": 5,
+          "successRate": 90,
+          "reviewEvidence": "コードまとめクリップ使用で絡まりゼロ（約38件）",
+          "detailedSteps": "①コードまとめクリップを購入 ②充電ケーブルや延長コードを壁際または家具裏に固定 ③床面から約5cm以上の高さに配置",
+          "expectedResult": "コード類がロボットの清掃範囲から外れ、絡まりのリスクが大幅に減少する可能性があります"
+        },
+        {
+          "method": "進入禁止エリアの設定",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalLevelDescription": "コード類が多いエリアを進入禁止に設定する方法です",
+          "estimatedCost": 0,
+          "implementationTime": 3,
+          "successRate": 75,
+          "reviewEvidence": "TV周辺を禁止エリアにして解決（約12件）",
+          "detailedSteps": "①Eufyアプリを開く ②マップ編集でコード類が多いエリアを選択 ③進入禁止エリアとして保存",
+          "expectedResult": "該当エリアを避けて清掃するため、絡まりを防げる可能性があります"
+        }
+      ],
+      "preventionTips": [
+        "購入前に床面のコード類の配置状況を確認し、整理が必要かご検討いただくとスムーズです",
+        "カーテンの紐や椅子の脚など、細い障害物が多い場合は事前に対策をしておくと安心です"
+      ]
+    }
+  ],
+
+  "topComplaints": [
+    {
+      "rank": 1,
+      "complaint": "薄いラグ・マットの巻き込み",
+      "percentage": 28,
+      "reviewCount": 140,
+      "details": "約5mm以下の薄いラグや、フリンジ付きマットを巻き込んでしまうケースが報告されています。滑り止めマットの使用や進入禁止エリアの設定を試すとスムーズです。",
+      "solution": "滑り止めシートをラグの下に敷く、またはEufyアプリで該当エリアを進入禁止に設定する方法をご検討いただくと安心です。"
+    },
+    {
+      "rank": 2,
+      "complaint": "ゴミ収集時の瞬間的な騒音",
+      "percentage": 20,
+      "reviewCount": 100,
+      "details": "ベースステーションへの自動ゴミ収集時に、約10秒間の吸引音（約70dB）が発生します。在宅時は気になるという声が一部見られます。",
+      "solution": "外出時間帯にスケジュール設定する、またはベースステーション下に防音マットを敷く方法を試すとスムーズです。"
+    },
+    {
+      "rank": 3,
+      "complaint": "水拭き機能が物足りない",
+      "percentage": 15,
+      "reviewCount": 75,
+      "details": "水拭きモップの圧力が弱く、頑固な汚れは落ちにくいという評価が見られます。日常的な軽い汚れには対応できる水準です。",
+      "solution": "2回水拭きモードを実行する、または週1回は手動モップで補完清掃する方法をご検討いただくと安心です。"
+    },
+    {
+      "rank": 4,
+      "complaint": "マップ保存失敗・回転",
+      "percentage": 12,
+      "reviewCount": 60,
+      "details": "マップが保存されない、または90度回転してしまうケースが一部報告されています。ファームウェアv2.8.3以降で改善傾向が見られます。",
+      "solution": "Eufyアプリから最新ファームウェアに更新する、またはWi-Fiルーターの位置を見直す方法を試すとスムーズです。"
+    },
+    {
+      "rank": 5,
+      "complaint": "コードや細い障害物の回避",
+      "percentage": 10,
+      "reviewCount": 50,
+      "details": "充電ケーブルやカーテンの紐など、細い障害物を巻き込んでしまうケースが報告されています。事前の整理が推奨されます。",
+      "solution": "清掃前にコード類をまとめクリップで固定する、または該当エリアを進入禁止に設定する方法をご検討いただくと安心です。"
+    }
+  ],
+
+  "attributeScores": {
+    "petOwner": {
+      "overall": 88,
+      "suctionPower": {
+        "score": 88,
+        "reviewCount": 320,
+        "comment": "約4000Paの吸引力で、ペットの抜け毛もしっかり吸引できる水準です。ゴム製ブラシにより毛が絡まりにくいという声が多数見られます。"
+      },
+      "noiseLevel": {
+        "score": 98,
+        "reviewCount": 192,
+        "comment": "約45dB以下の静音設計により、ペットが驚かずに済むという評価が非常に多い傾向です。"
+      },
+      "petSafety": {
+        "score": 85,
+        "reviewCount": 180,
+        "comment": "障害物回避センサーにより、ペットのおもちゃや水飲み器を避けて清掃する傾向が見られます。"
+      },
+      "easeOfMaintenance": {
+        "score": 93,
+        "reviewCount": 320,
+        "comment": "自動ゴミ収集機能により、約45日間ゴミ捨て不要です。ペットの毛が多い環境でもメンテナンスが楽という声が目立ちます。"
+      }
+    },
+    "apartment": {
+      "overall": 98,
+      "compactSize": {
+        "score": 95,
+        "reviewCount": 210,
+        "comment": "本体直径約35cm、高さ約9.5cmのコンパクト設計で、家具の下にも入り込める傾向です。"
+      },
+      "quietOperation": {
+        "score": 98,
+        "reviewCount": 502,
+        "comment": "約45dB以下の静音性により、集合住宅でも安心して使用できる水準です。夜間清掃も可能という声が多数見られます。"
+      },
+      "storageSpace": {
+        "score": 92,
+        "reviewCount": 180,
+        "comment": "ベースステーションは約幅30cm×奥行40cmで、コンパクトな設計です。玄関やリビングの隅に設置しやすいという評価が見られます。"
+      },
+      "neighborConsideration": {
+        "score": 95,
+        "reviewCount": 150,
+        "comment": "静音性が高く、階下への振動もほとんど感じられないという声が多い傾向です。"
+      }
+    },
+    "workingProfessional": {
+      "overall": 94,
+      "automationLevel": {
+        "score": 96,
+        "reviewCount": 420,
+        "comment": "スケジュール設定により、外出中に自動清掃が完了する利便性が高く評価されています。"
+      },
+      "appUsability": {
+        "score": 86,
+        "reviewCount": 420,
+        "comment": "Eufyアプリは直感的で使いやすく、外出先からも操作可能です。一部でWi-Fi再接続が必要になるケースが報告されています。"
+      },
+      "timeSaving": {
+        "score": 98,
+        "reviewCount": 502,
+        "comment": "1日約18分の清掃時間を削減でき、年間約108時間（約13.5営業日相当）の時間を創出できる計算です。"
+      },
+      "maintenanceFrequency": {
+        "score": 93,
+        "reviewCount": 502,
+        "comment": "自動ゴミ収集機能により、約45日間ゴミ捨て不要です。忙しい平日でもメンテナンスフリーという声が多数見られます。"
+      }
+    },
+    "familyHome": {
+      "overall": 80,
+      "largeCoverage": {
+        "score": 88,
+        "reviewCount": 280,
+        "comment": "約180分の稼働時間で、約90㎡の住宅を1回の充電で清掃完了できる水準です。"
+      },
+      "childSafety": {
+        "score": 82,
+        "reviewCount": 120,
+        "comment": "障害物回避センサーにより、子供のおもちゃを避けて清掃する傾向が見られます。ただし小さなブロックなどは事前に片付ける必要があるようです。"
+      },
+      "multipleRoomMapping": {
+        "score": 85,
+        "reviewCount": 350,
+        "comment": "複数の部屋を自動でマッピングし、部屋ごとに清掃順序を設定できます。一部でマップ回転の報告がありますが、ファームウェア更新で改善傾向です。"
+      },
+      "carpetHandling": {
+        "score": 84,
+        "reviewCount": 502,
+        "comment": "中毛までの絨毯なら問題なく対応できる傾向です。カーペット検知機能により、吸引力が自動で強化されるようです。"
+      }
+    }
+  },
+
+  "resaleValue": {
+    "newPrice": 59800,
+    "usedPriceMin": 35800,
+    "usedPriceMax": 47800,
+    "retentionRate": 65,
+    "marketDemand": "高",
+    "depreciationNote": "Ankerブランドの信頼性と静音性の高さから、中古市場でも約65%の価格維持率を保っている傾向です。",
+    "resaleLinks": [
+      {
+        "platform": "メルカリ",
+        "url": "https://jp.mercari.com/search?keyword=Anker+Eufy+C10+Auto-Empty"
+      }
+    ]
+  },
+
+  "cta": {
+    "amazon": {
+      "url": "https://www.amazon.co.jp/dp/B0D1XY7Z6S",
+      "price": 59800,
+      "inStock": true
+    },
+    "rakuten": {
+      "url": "https://search.rakuten.co.jp/search/mall/Anker+Eufy+C10+Auto-Empty/",
+      "price": 59800,
+      "inStock": true
+    },
+    "yahoo": {
+      "url": "https://shopping.yahoo.co.jp/search?p=Anker+Eufy+C10+Auto-Empty",
+      "price": 59800,
+      "inStock": true
+    }
+  }
+}

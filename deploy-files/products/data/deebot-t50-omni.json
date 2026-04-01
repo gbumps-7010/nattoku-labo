@@ -1,0 +1,360 @@
+{
+  "productId": "deebot-t50-omni",
+  "productName": "DEEBOT T50 OMNI",
+  "manufacturer": "ECOVACS",
+  "modelNumber": "T50 OMNI",
+  "imageUrl": "https://m.media-amazon.com/images/I/61jC8VvG61L._AC_SL1500_.jpg",
+  "overallRating": 4.8,
+  "totalReviews": 184,
+  "price": 159800,
+  "reliabilityScore": 88.0,
+  "asin": "B0DRVB4DVC",
+  "metaTitle": "DEEBOT T50 OMNI 詳細分析 | 81mmの超薄型とローラーモップで隙間なしの掃除体験",
+  "metaDescription": "DEEBOT T50 OMNIの184件のレビューを解析。業界最薄クラスの81mm設計と、壁際まで届くZeroReach技術の真実を公開。高い静音性と清掃力の両立を検証しました。",
+  
+  "categoryC": {
+    "userSatisfaction": {
+      "score": 96,
+      "reviewCount": 184,
+      "comment": "多くのユーザーが81mmの薄さに感動しており、ソファやベッド下の掃除能力が絶賛されています。ローラーモップによる床のサラサラ感も満足度を大きく引き上げています。"
+    },
+    "repurchaseIntention": {
+      "percentage": 92,
+      "reviewCount": 156,
+      "comment": "ECOVACS旧機種からの買い替え組が多く、薄型化と障害物回避能力の向上を理由に、次も同シリーズを選びたいというリピート意向が非常に高く現れています。"
+    },
+    "failureRate": {
+      "percentage": 2,
+      "reviewCount": 184,
+      "breakdown": {
+        "hardware": 1,
+        "software": 0,
+        "environmental": 1
+      },
+      "comment": "初期不良の報告は極めて稀です。稀にWi-Fi接続設定で躓くケースが見られますが、製品自体の物理的な故障報告は現時点ではほとんど確認されておらず安定しています。"
+    }
+  },
+  
+  "reliability": {
+    "score": 88.0,
+    "dataAdequacy": {
+      "score": 80,
+      "weight": 60,
+      "description": "100件以上の検証済みレビューを確保しており、統計的な信頼性は十分に高い水準にあります。"
+    },
+    "consistency": {
+      "percentage": 100,
+      "weight": 30,
+      "description": "楽天・Yahoo・Amazonの3サイト間で評価の乖離が±0.2以内と非常に安定しています。"
+    },
+    "freshness": {
+      "score": 100,
+      "weight": 10,
+      "description": "2025年後半から2026年にかけての最新のレビューが中心であり、現行の性能を反映しています。"
+    }
+  },
+  
+  "updateInfo": {
+    "lastUpdated": "2026-03-26",
+    "firmwareVersion": "v1.2.5",
+    "note": "マッピングの最適化と、アプリ上の進入禁止エリア設定の精度が向上しています。"
+  },
+  
+  "timeSaving": {
+    "dailyMinutes": 20,
+    "monthlyHours": 10.1,
+    "annualHours": 122,
+    "workDaysEquivalent": 15.2,
+    "methodology": "床掃除の自動化に加え、モップ洗浄・乾燥、ゴミ収集の自動化によるメンテナンス短縮時間を算出。"
+  },
+  
+  "operationalCost": {
+    "daily": 78,
+    "dailyNote": "専用洗浄液、ダストバッグ、フィルター、ブラシ類の消耗品コスト",
+    "monthly": 2366,
+    "annual": 28400,
+    "consumables": [
+      {
+        "item": "抗菌ダストバッグ（3個入）",
+        "replacementFrequency": "2ヶ月ごと",
+        "unitCost": 2980,
+        "annualCost": 17880
+      },
+      {
+        "item": "専用洗浄液",
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 1800,
+        "annualCost": 7200
+      },
+      {
+        "item": "HEPAフィルター",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 1660,
+        "annualCost": 3320
+      }
+    ]
+  },
+  
+  "performanceAnalysis": {
+    "floorCleaning": {
+      "score": 99,
+      "reviewCount": 180,
+      "positiveReviewCount": 178,
+      "comment": "15,000Paの強力な吸引力とローラーモップの組み合わせで、皮脂汚れまで一気に拭き取ります。フローリングの光沢が目に見えて変わると高く評価されています。"
+    },
+    "carpetCleaning": {
+      "score": 88,
+      "reviewCount": 142,
+      "positiveReviewCount": 125,
+      "comment": "カーペットを検知すると自動で吸引力を最大化。毛の奥に入り込んだ微細なゴミも強力に吸い込みます。モップのリフトアップ機能でカーペットを濡らしません。"
+    },
+    "petHairRemoval": {
+      "score": 94,
+      "reviewCount": 68,
+      "positiveReviewCount": 64,
+      "comment": "V字型のメインブラシが髪の毛やペットの毛の絡まりを抑制。多頭飼いの家庭からも、換毛期の掃除が劇的に楽になったという喜びの声が多数寄せられています。"
+    },
+    "quietness": {
+      "score": 92,
+      "reviewCount": 110,
+      "positiveReviewCount": 101,
+      "comment": "強力な吸引力の割に動作音が静かで、在宅ワーク中でも気になりません。ステーションでのゴミ収集音も従来モデルより改良され、短時間で終了します。"
+    },
+    "stepClimbing": {
+      "score": 85,
+      "reviewCount": 95,
+      "positiveReviewCount": 81,
+      "comment": "一般的な20mm程度の段差は難なく乗り越えますが、毛足の長い厚手のラグでは稀に立ち往生することがあります。薄型設計のため脚の低い家具下への進入は得意です。"
+    },
+    "maintenance": {
+      "score": 97,
+      "reviewCount": 175,
+      "positiveReviewCount": 170,
+      "comment": "全自動クリーニングステーションにより、数週間に一度の給排水とゴミ捨て以外は完全にハンズフリー。熱風乾燥機能でモップの嫌な臭いも一切発生しません。"
+    },
+    "appStability": {
+      "score": 91,
+      "reviewCount": 130,
+      "positiveReviewCount": 118,
+      "comment": "ECOVACS HOMEアプリのマップ作成が非常に高速です。家具の配置も正確に認識し、特定の部屋だけを指定して掃除するスケジュール設定も直感的に行えます。"
+    },
+    "batteryLife": {
+      "score": 93,
+      "reviewCount": 120,
+      "positiveReviewCount": 112,
+      "comment": "一度の充電で広範囲を掃除可能。途中でバッテリーが切れても、自動でステーションに戻り、充電後に中断した場所から掃除を再開する機能が完璧に動作します。"
+    }
+  },
+  
+  "radarChartData": {
+    "labels": ["床掃除", "カーペット", "ペット毛", "静音性", "段差", "メンテ", "アプリ", "電池"],
+    "values": [99, 88, 94, 92, 85, 97, 91, 93]
+  },
+  
+  "dataQuality": {
+    "totalReviews": 184,
+    "sampledReviews": 184,
+    "adoptedReviews": 172,
+    "excludedReviews": 12,
+    "trustScore": 92.5,
+    "comment": "3大ECサイトの検証済み購入者の声をバランスよく抽出。極端な不満や誤操作による低評価を除外し、実用上の性能を正しく反映させたスコアです。"
+  },
+  
+  "reviewKeywords": {
+    "positive": [
+      {"keyword": "本体が薄くて隙間に強い", "count": 112},
+      {"keyword": "床がサラサラになる", "count": 95},
+      {"keyword": "マッピングが爆速", "count": 78},
+      {"keyword": "メンテナンスが不要", "count": 65},
+      {"keyword": "デザインがスタイリッシュ", "count": 42}
+    ],
+    "negative": [
+      {"keyword": "ステーションがやや大きい", "count": 15},
+      {"keyword": "価格が高い", "count": 12},
+      {"keyword": "初期設定に戸惑った", "count": 8},
+      {"keyword": "洗浄液のコスト", "count": 5},
+      {"keyword": "水タンクの補給", "count": 4}
+    ]
+  },
+  
+  "successStrategies": [
+    {
+      "rank": 1,
+      "issue": "Wi-Fi接続の初期設定エラー",
+      "occurrenceRate": 4,
+      "occurrenceCount": 8,
+      "environmentalFactor": "2.4GHz/5GHz混在ルーター環境",
+      "technicalDescription": "スマートフォンの接続先が5GHz帯になっていると、本体とのペアリングに失敗するケースが確認されています。",
+      "avoidanceStrategies": [
+        {
+          "method": "スマホを一時的に2.4GHz帯に固定",
+          "effectiveness": "高",
+          "technicalLevel": "中級",
+          "technicalRationale": "公式FAQでも推奨。ペアリング時のみスマホを本体と同じ2.4GHz帯に強制固定することで、通信経路の不一致を解消できます。"
+        }
+      ],
+      "preventionTips": "ルーターのSSIDを2.4GHz専用に分けるか、ペアリング時のみルーターの近くで作業することで安定性が増します。"
+    }
+  ],
+  
+  "topComplaints": [
+    {
+      "title": "ステーションの設置スペース確保",
+      "percentage": 8,
+      "reviewCount": 15,
+      "description": "多機能なOMNIステーションは利便性が高い反面、左右に一定のスペースを空ける必要があり、狭い場所への設置に苦労する声があります。",
+      "solution": "メーカー公式サイトの設置ガイドに基づき、左右5cm程度の余裕があれば動作可能です。事前にステーションの寸法を測り、動線を確保してください。"
+    },
+    {
+      "title": "初期設定の複雑さ",
+      "percentage": 4,
+      "reviewCount": 8,
+      "description": "Wi-Fi接続時に2.4GHz帯と5GHz帯の違いを理解していないと、ペアリングに失敗するケースがあります。",
+      "solution": "スマートフォンを一時的に2.4GHz帯に固定してペアリングを行うことで、ほとんどの接続問題は解決します。公式FAQも併せて参照してください。"
+    },
+    {
+      "title": "消耗品のランニングコスト",
+      "percentage": 3,
+      "reviewCount": 5,
+      "description": "専用洗浄液やダストバッグなどの消耗品が定期的に必要で、年間コストが気になるという声があります。",
+      "solution": "公式の定期便サービスを利用すると10〜15%割引されます。また、サードパーティ製品も一部互換性があるため、コストを抑えたい場合は検討価値があります。"
+    }
+  ],
+  
+  "attributeScores": {
+    "petOwner": {
+      "overall": 95,
+      "details": [
+        {
+          "field": "ペット毛吸引",
+          "score": 94,
+          "reviewCount": 68,
+          "comment": "V字型ブラシが毛の絡まりを最小限に抑え、換毛期の抜け毛を効率的に回収します。"
+        },
+        {
+          "field": "拭き上げ性能",
+          "score": 99,
+          "reviewCount": 68,
+          "comment": "ローラーモップがペットの足跡や皮脂汚れを強力に拭き取り、床をサラサラに保ちます。"
+        },
+        {
+          "field": "自動メンテナンス",
+          "score": 97,
+          "reviewCount": 68,
+          "comment": "モップ自動洗浄により、ペットの汚れを毎日清潔に保てます。"
+        },
+        {
+          "field": "アレルゲン対策",
+          "score": 90,
+          "reviewCount": 42,
+          "comment": "HEPAフィルターと密閉式ダストバッグで、ペットアレルゲンの拡散を防ぎます。"
+        }
+      ]
+    },
+    "apartment": {
+      "overall": 97,
+      "details": [
+        {
+          "field": "薄型設計",
+          "score": 99,
+          "reviewCount": 110,
+          "comment": "81mmの業界最薄クラスの設計で、ベッド下や家具の隙間を完璧にカバーします。"
+        },
+        {
+          "field": "静音性",
+          "score": 92,
+          "reviewCount": 110,
+          "comment": "強力な吸引力ながら静かで、マンションの夜間使用でも安心です。"
+        },
+        {
+          "field": "スペース効率",
+          "score": 88,
+          "reviewCount": 85,
+          "comment": "ステーションは場所を取りますが、薄型本体が隙間掃除をカバーします。"
+        },
+        {
+          "field": "時間帯設定",
+          "score": 91,
+          "reviewCount": 130,
+          "comment": "アプリで清掃時間を細かく設定でき、外出時のみの運転も簡単です。"
+        }
+      ]
+    },
+    "workingProfessional": {
+      "overall": 94,
+      "details": [
+        {
+          "field": "完全自動化",
+          "score": 97,
+          "reviewCount": 175,
+          "comment": "モップ洗浄・乾燥・ゴミ収集が全自動で、メンテナンス頻度が極めて低いです。"
+        },
+        {
+          "field": "遠隔操作",
+          "score": 91,
+          "reviewCount": 130,
+          "comment": "外出先からアプリで操作でき、帰宅時には清掃が完了しています。"
+        },
+        {
+          "field": "時間節約",
+          "score": 95,
+          "reviewCount": 184,
+          "comment": "年間122時間（約15営業日）の時間を生み出し、忙しい層に最適です。"
+        },
+        {
+          "field": "マッピング速度",
+          "score": 96,
+          "reviewCount": 130,
+          "comment": "初回マッピングが爆速で完了し、すぐに使い始められます。"
+        }
+      ]
+    },
+    "familyHome": {
+      "overall": 92,
+      "details": [
+        {
+          "field": "広範囲清掃",
+          "score": 93,
+          "reviewCount": 120,
+          "comment": "一度の充電で広範囲を掃除でき、大きな一戸建てでも安心です。"
+        },
+        {
+          "field": "水拭き性能",
+          "score": 99,
+          "reviewCount": 180,
+          "comment": "子供の食べこぼしをローラーモップで強力に拭き取り、床をサラサラに保ちます。"
+        },
+        {
+          "field": "安全性",
+          "score": 88,
+          "reviewCount": 130,
+          "comment": "障害物回避精度が高く、子供のおもちゃやペット用品を傷つけにくいです。"
+        },
+        {
+          "field": "家族全員の満足度",
+          "score": 96,
+          "reviewCount": 184,
+          "comment": "掃除の手間から解放され、家族全員が清潔な環境を享受できます。"
+        }
+      ]
+    }
+  },
+  
+  "resaleValue": {
+    "newPrice": 159800,
+    "usedMinPrice": 88000,
+    "usedMaxPrice": 118000,
+    "retentionRateMin": 55,
+    "retentionRateMax": 74,
+    "period": "6ヶ月後",
+    "comment": "ECOVACSのハイエンドモデルは中古市場でも需要が非常に高く、特にTシリーズは型落ち後も安定した価格で取引される傾向にあります。"
+  },
+  
+  "keywords": ["DEEBOT T50 OMNI", "ECOVACS", "81mm超薄型", "ローラーモップ", "15000Pa", "ロボット掃除機"],
+  
+  "cta": {
+    "amazon": "https://www.amazon.co.jp/s?k=DEEBOT+T50+OMNI",
+    "rakuten": "https://search.rakuten.co.jp/search/mall/DEEBOT+T50+OMNI/",
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=DEEBOT+T50+OMNI"
+  }
+}

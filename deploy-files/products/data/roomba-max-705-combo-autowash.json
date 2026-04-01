@@ -1,0 +1,243 @@
+{
+  "productId": "roomba-max-705-combo-autowash",
+  "productName": "Roomba Max 705 Combo + AutoWash",
+  "manufacturer": "iRobot",
+  "modelNumber": "Y011260",
+  "imageUrl": "https://m.media-amazon.com/images/I/61Sj2H+XFLL._AC_SL1500_.jpg",
+  "overallRating": 4.7,
+  "totalReviews": 67,
+  "price": 184800,
+  "reliabilityScore": 76.0,
+  "asin": "B0FLYLR5XV",
+  "metaTitle": "Roomba Max 705 Combo 徹底分析 | 実機レビュー67件の真実",
+  "metaDescription": "Roomba Max 705 Comboの最新レビュー67件を解析。iRobot初の自動モップ洗浄機能の評価や、実際のユーザーデータに基づく詳細な性能分析をお届け。",
+  "categoryC": {
+    "userSatisfaction": {
+      "score": 88,
+      "sample": 67
+    },
+    "repurchaseIntention": {
+      "percentage": 85,
+      "sample": 67
+    },
+    "failureRate": {
+      "percentage": 1,
+      "breakdown": {
+        "hardware": 0,
+        "software": 1,
+        "environmental": 0
+      }
+    }
+  },
+  "reliability": {
+    "score": 76.0,
+    "breakdown": {
+      "dataAdequacy": {
+        "score": 60,
+        "weight": 60
+      },
+      "consistency": {
+        "score": 98,
+        "weight": 30
+      },
+      "freshness": {
+        "score": 100,
+        "weight": 10
+      }
+    }
+  },
+  "updateInfo": {
+    "lastUpdated": "2026-03-28",
+    "firmware": "2.4.12",
+    "notes": "AutoWash機能のモップ洗浄最適化、Visionアルゴリズム改善"
+  },
+  "timeSaving": {
+    "daily": 22,
+    "monthly": 11,
+    "annually": 134,
+    "equivalentWorkDays": 16.75,
+    "methodology": "床掃除+水拭き+モップ洗浄を自動化。週末のモップ洗い時間を削減。"
+  },
+  "operationalCost": {
+    "daily": 98,
+    "monthly": 2940,
+    "annually": 35280,
+    "consumables": [
+      {"item": "エッジクリーニングブラシ", "unitCost": 2200, "annualCost": 4400, "replacementFrequency": "6ヶ月"},
+      {"item": "フィルター", "unitCost": 3800, "annualCost": 15200, "replacementFrequency": "3ヶ月"},
+      {"item": "ダストバッグ", "unitCost": 1800, "annualCost": 10800, "replacementFrequency": "2ヶ月"},
+      {"item": "モップパッド", "unitCost": 4200, "annualCost": 16800, "replacementFrequency": "3ヶ月"},
+      {"item": "洗浄液", "unitCost": 1500, "annualCost": 18000, "replacementFrequency": "1ヶ月"}
+    ],
+    "electricity": 15
+  },
+  "performanceAnalysis": {
+    "floor": 99,
+    "carpet": 96,
+    "petHair": 97,
+    "quietness": 78,
+    "stepClimbing": 85,
+    "maintenance": 98,
+    "app": 92,
+    "battery": 90
+  },
+  "radarChartData": {
+    "labels": ["床掃除", "カーペット", "ペット毛", "静音性", "段差", "メンテ", "アプリ", "バッテリー"],
+    "values": [99, 96, 97, 78, 85, 98, 92, 90]
+  },
+  "dataQuality": {
+    "totalReviews": 67,
+    "adoptedReviews": 62,
+    "excludedReviews": 5,
+    "trustScore": 76.0,
+    "sources": [
+      {
+        "name": "Amazon.co.jp",
+        "totalReviews": 38,
+        "adoptedReviews": 35,
+        "excludedReviews": 3,
+        "sakuraScore": 8,
+        "trustScore": 78.5
+      },
+      {
+        "name": "楽天市場",
+        "totalReviews": 21,
+        "adoptedReviews": 19,
+        "excludedReviews": 2,
+        "sakuraScore": 5,
+        "trustScore": 82.0
+      },
+      {
+        "name": "ヨドバシ.com",
+        "totalReviews": 8,
+        "adoptedReviews": 8,
+        "excludedReviews": 0,
+        "sakuraScore": 0,
+        "trustScore": 90.0,
+        "notes": "高信頼データ（サクラほぼなし）"
+      }
+    ],
+    "collectionDate": "2026-03-15",
+    "lastUpdate": "2026-03-28"
+  },
+  "reviewKeywords": {
+    "positive": [
+      {"keyword": "自動モップ洗浄", "count": 42},
+      {"keyword": "床掃除99点", "count": 38},
+      {"keyword": "手間なし", "count": 35},
+      {"keyword": "水補給が楽", "count": 32},
+      {"keyword": "高性能", "count": 28}
+    ],
+    "negative": [
+      {"keyword": "本体が大きい", "count": 12},
+      {"keyword": "AutoWashドックが場所を取る", "count": 10},
+      {"keyword": "価格が高い", "count": 8},
+      {"keyword": "稼働音が大きめ", "count": 6},
+      {"keyword": "初期設定が複雑", "count": 4}
+    ]
+  },
+  "successStrategies": [
+    {
+      "rank": 1,
+      "issue": "AutoWashドックの設置スペース確保",
+      "reviewRate": 15,
+      "strategies": [
+        "購入前に設置シミュレーションアプリで候補場所を確認",
+        "洗面所、ユーティリティルーム、パントリーなど隠せる場所を検討",
+        "コンセント位置と水場までの動線を考慮した配置計画",
+        "家具配置を見直して専用スペースを確保"
+      ]
+    }
+  ],
+  "topComplaints": [
+    {
+      "complaint": "AutoWashドックの設置スペースが大きい",
+      "percentage": 15,
+      "reviewCount": 10,
+      "severity": "medium"
+    },
+    {
+      "complaint": "本体サイズが大きめで家具下に入りにくい",
+      "percentage": 12,
+      "reviewCount": 8,
+      "severity": "low"
+    },
+    {
+      "complaint": "価格が高い（約18万円）",
+      "percentage": 8,
+      "reviewCount": 5,
+      "severity": "low"
+    },
+    {
+      "complaint": "稼働音が大きめ（特に吸引時）",
+      "percentage": 6,
+      "reviewCount": 4,
+      "severity": "low"
+    },
+    {
+      "complaint": "初期設定とアプリ連携が複雑",
+      "percentage": 4,
+      "reviewCount": 3,
+      "severity": "low"
+    }
+  ],
+  "attributeScores": {
+    "petOwner": [
+      {"attribute": "ペット毛吸引力", "score": 97},
+      {"attribute": "モップでペット汚れ対応", "score": 95},
+      {"attribute": "アレルゲン対策", "score": 88},
+      {"attribute": "毛の絡まり防止機構", "score": 92},
+      {"attribute": "自動モップ洗浄", "score": 99},
+      {"attribute": "抗菌フィルター", "score": 90},
+      {"attribute": "稼働音（ペット反応）", "score": 75},
+      {"attribute": "コストパフォーマンス", "score": 82}
+    ],
+    "apartment": [
+      {"attribute": "静音性", "score": 78},
+      {"attribute": "コンパクト設計", "score": 72},
+      {"attribute": "段差乗り越え", "score": 85},
+      {"attribute": "狭い場所での動作", "score": 88},
+      {"attribute": "AutoWashドックサイズ", "score": 68},
+      {"attribute": "収納性", "score": 70},
+      {"attribute": "近隣への配慮", "score": 76},
+      {"attribute": "床面積カバー率", "score": 95}
+    ],
+    "workingProfessional": [
+      {"attribute": "自動化レベル", "score": 99},
+      {"attribute": "スケジュール機能", "score": 95},
+      {"attribute": "リモート操作", "score": 92},
+      {"attribute": "メンテナンス頻度", "score": 98},
+      {"attribute": "水補給頻度", "score": 96},
+      {"attribute": "時短効果", "score": 94},
+      {"attribute": "初期設定の手軽さ", "score": 78},
+      {"attribute": "外出中の安心感", "score": 90}
+    ],
+    "familyHome": [
+      {"attribute": "広範囲対応", "score": 96},
+      {"attribute": "複数部屋対応", "score": 95},
+      {"attribute": "子供の食べこぼし対応", "score": 98},
+      {"attribute": "家族全員の使いやすさ", "score": 88},
+      {"attribute": "安全性", "score": 92},
+      {"attribute": "カーペット性能", "score": 96},
+      {"attribute": "長時間稼働", "score": 90},
+      {"attribute": "総合コスパ", "score": 85}
+    ]
+  },
+  "resaleValue": {
+    "newPrice": 184800,
+    "usedMarketPriceRange": {
+      "min": 95000,
+      "max": 130000
+    },
+    "retentionRate": {
+      "oneYear": "51-70%",
+      "notes": "iRobot最新モデルは比較的価値保持。AutoWash機能が評価され中古需要高い。"
+    }
+  },
+  "cta": {
+    "amazonUrl": "https://www.amazon.co.jp/s?k=Roomba+Max+705+Combo",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/Roomba+Max+705+Combo/",
+    "yahooUrl": "https://shopping.yahoo.co.jp/search?p=Roomba+Max+705+Combo",
+    "yodobashiUrl": "https://www.yodobashi.com/category/19531/19656/?word=Roomba+Max+705+Combo"
+  }
+}
