@@ -1,0 +1,38 @@
+# robots.txt for もう失敗しない。ナットクLabo
+
+# すべてのクローラーに対して
+User-agent: *
+
+# すべてのページをクロール許可
+Allow: /
+
+# 製品ページを明示的に許可
+Allow: /products/
+Allow: /products/*.html
+
+# プライバシーポリシーとAboutページを許可
+Allow: /privacy.html
+Allow: /about.html
+
+# インデックスページを許可
+Allow: /index.html
+
+# 以下のディレクトリはクロール不要（存在する場合）
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /test/
+Disallow: /data-templates/
+Disallow: /tools/
+Disallow: /docs/
+
+# テンプレートやテスト用ファイルを除外
+Disallow: /products/template-unified.html
+Disallow: /products/template-unified-old.html
+Disallow: /products/test-js.html
+
+# サイトマップの場所
+Sitemap: https://www.nattoku-labo.com/sitemap.xml
+
+# クロール速度の調整（オプション）
+Crawl-delay: 1

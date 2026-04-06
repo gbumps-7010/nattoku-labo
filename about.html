@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>このサイトについて | もう失敗しない。ナットクLabo</title>
+    <meta name="description" content="購入前の悩みを統計データで解決。複数のオンライン情報源から公開データを収集し、客観的な製品分析を提供します。">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.nattoku-labo.com/about.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary-color: #1e40af;
+            --secondary-color: #0f172a;
+            --accent-color: #0ea5e9;
+            --dark: #1e293b;
+            --light-bg: #f8fafc;
+            --white: #ffffff;
+            --gray-50: #f8fafc;
+            --gray-100: #f1f5f9;
+            --gray-200: #e2e8f0;
+            --gray-600: #475569;
+            --gray-700: #334155;
+            --gray-800: #1e293b;
+            --gray-900: #0f172a;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            line-height: 1.8;
+            color: var(--dark);
+            background: var(--light-bg);
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: var(--white);
+            padding: 2rem 0;
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 900;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        .logo a {
+            color: var(--white);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+            opacity: 0.9;
+        }
+        
+        .breadcrumb a {
+            color: var(--white);
+            text-decoration: none;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        
+        .hero-section {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        
+        .page-title {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: var(--dark);
+            margin-bottom: 1.5rem;
+            line-height: 1.3;
+        }
+        
+        .page-subtitle {
+            font-size: 1.3rem;
+            color: var(--gray-700);
+            font-weight: 600;
+            line-height: 1.6;
+        }
+        
+        .content-section {
+            background: var(--white);
+            border-radius: 16px;
+            padding: 2.5rem;
+            margin-bottom: 2.5rem;
+            box-shadow: var(--shadow);
+        }
+        
+        .section-title {
+            font-size: 1.75rem;
+            font-weight: 900;
+            color: var(--dark);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 3px solid var(--primary-color);
+        }
+        
+        .lead-text {
+            font-size: 1.15rem;
+            color: var(--gray-700);
+            line-height: 2;
+            margin-bottom: 2rem;
+        }
+        
+        .problem-grid {
+            display: grid;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .problem-card {
+            background: var(--gray-50);
+            padding: 1.75rem;
+            border-radius: 12px;
+            border-left: 5px solid var(--primary-color);
+        }
+        
+        .problem-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 0.75rem;
+        }
+        
+        .problem-description {
+            font-size: 1rem;
+            color: var(--gray-700);
+            line-height: 1.8;
+        }
+        
+        .solution-box {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: var(--white);
+            padding: 2.5rem;
+            border-radius: 16px;
+            margin: 2.5rem 0;
+        }
+        
+        .solution-title {
+            font-size: 1.8rem;
+            font-weight: 900;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .solution-description {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            opacity: 0.95;
+        }
+        
+        .feature-grid {
+            display: grid;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .feature-card {
+            background: var(--gray-50);
+            padding: 2rem;
+            border-radius: 12px;
+            border-left: 5px solid var(--accent-color);
+        }
+        
+        .feature-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 1rem;
+        }
+        
+        .feature-description {
+            font-size: 1rem;
+            color: var(--gray-700);
+            line-height: 1.8;
+        }
+        
+        .stats-highlight {
+            background: linear-gradient(135deg, var(--gray-50) 0%, var(--gray-100) 100%);
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            margin: 2rem 0;
+            border: 2px solid var(--gray-200);
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .stat-item {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--gray-700);
+            font-weight: 600;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: var(--white);
+            padding: 3rem;
+            border-radius: 16px;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        
+        .cta-title {
+            font-size: 2rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+        }
+        
+        .cta-description {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: var(--white);
+            color: var(--primary-color);
+            padding: 1.25rem 3rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 900;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+        }
+        
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        footer {
+            background: var(--gray-900);
+            color: var(--white);
+            padding: 2rem 0;
+            text-align: center;
+            margin-top: 4rem;
+        }
+        
+        @media (max-width: 768px) {
+            .page-title {
+                font-size: 1.8rem;
+            }
+            
+            .page-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .content-section {
+                padding: 1.5rem;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <a href="./index.html">
+                    <i class="fas fa-microscope"></i>
+                    <span>もう失敗しない。ナットクLabo</span>
+                </a>
+            </div>
+            <div class="breadcrumb">
+                <a href="./index.html"><i class="fas fa-home"></i> ホーム</a>
+                <span>/</span>
+                <span>このサイトについて</span>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="hero-section">
+            <h1 class="page-title">購入前の悩みを、<br>統計データで解決する</h1></h1>
+            <p class="page-subtitle">もう失敗しない。ナットクLabo</p>
+        </div>
+        
+        <!-- Problem Section -->
+        <div class="content-section">
+            <p class="lead-text">
+                <strong>「高い買い物だから失敗したくない」</strong><br>
+                そう思って口コミを読み始めたはずが、気づけば情報の海で迷子になっていませんか？<br>
+                現代のネットレビューには、私たちの冷静な判断を狂わせる<strong>「4つの心理的な罠」</strong>が潜んでいます。
+            </p>
+            
+            <h2 class="section-title">私たちがハマってしまう「口コミの罠」</h2>
+            
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <div class="problem-title">比較疲れによる「思考停止」</div>
+                    <div class="problem-description">
+                        複数のサイトを行き来し、数百の声を拾い上げる作業は脳を激しく疲弊させます。結果として、「最後に見た意見」や「極端な声」だけで決断を下してしまいがちです。
+                    </div>
+                </div>
+                
+                <div class="problem-card">
+                    <div class="problem-title">投稿者の「信頼性」というブラックボックス</div>
+                    <div class="problem-description">
+                        その絶賛はサクラではないか？ その酷評は単なる使い方のミスではないか？ 背景が見えない情報は、時に判断のノイズとなります。
+                    </div>
+                </div>
+                
+                <div class="problem-card">
+                    <div class="problem-title">「長文＝正解」という錯覚（ハロー効果）</div>
+                    <div class="problem-description">
+                        熱のこもった長文レビューは、脳に「これだけ書くなら正しいはずだ」と思い込ませます。しかし、それはあくまで「その一人」の特殊な体験かもしれません。
+                    </div>
+                </div>
+                
+                <div class="problem-card">
+                    <div class="problem-title">「やさしい口調」への無意識の加点</div>
+                    <div class="problem-description">
+                        丁寧で物腰の柔らかい文章には、本能的に好感を持ち、内容を信じてしまいます。ですが、投稿者の人柄と製品の性能に因果関係はありません。
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Solution Section -->
+        <div class="solution-box">
+            <div class="solution-title">もう失敗しない。ナットクLaboが提供する<br>「客観的データ」の力</div>
+            <div class="solution-description">
+                当サイトは、これらの感情的なノイズを徹底的に排除します。<br>
+                文章をそのまま転載・引用するのではなく、<strong>誰が使っても変わらない事実を統計的に抽出</strong>します。
+            </div>
+        </div>
+        
+        <!-- Features Section -->
+        <div class="content-section">
+            <h2 class="section-title">4つの分析アプローチ</h2>
+            
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-title">
+                        <i class="fas fa-chart-line" style="color: var(--accent-color);"></i>
+                        オンラインレビューの横断解析
+                    </div>
+                    <div class="feature-description">
+                        複数のオンライン情報源から公開データを収集し、独自アルゴリズムで統合。情報源ごとのユーザー属性の偏りを打ち消し、製品の「真の実力」を浮き彫りにします。
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-title">
+                        <i class="fas fa-calculator" style="color: var(--accent-color);"></i>
+                        180のデータポイントによる「指標化」
+                    </div>
+                    <div class="feature-description">
+                        「静かだった」「使いにくい」といった曖昧な感想を、180の評価指標へ変換。基本性能・耐久性・操作性・静音性などを精密にスコアリングし、あなたのライフスタイルに最適かを数値で判定します。
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-title">
+                        <i class="fas fa-user-check" style="color: var(--accent-color);"></i>
+                        あなたとの適合率を算出
+                    </div>
+                    <div class="feature-description">
+                        ペット、マンション、共働きといった環境キーワードを検知。同様の環境にあるユーザー群の満足度を抽出し、あなたに合うかどうかの適合率を算出します。
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-title">
+                        <i class="fas fa-coins" style="color: var(--accent-color);"></i>
+                        将来の「資産価値」を予測
+                    </div>
+                    <div class="feature-description">
+                        現在の販売価格、発売からの経過日数、および二次流通市場の相場データを組み合わせ、将来のリセールバリューまで予測します。
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Stats Section -->
+        <div class="content-section">
+            <h2 class="section-title">分析データ</h2>
+            
+            <div class="stats-highlight">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">23</div>
+                        <div class="stat-label">製品</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">6,995+</div>
+                        <div class="stat-label">レビュー数</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">180+</div>
+                        <div class="stat-label">分析項目</div>
+                    </div>
+                </div>
+            </div>
+            
+            <p style="font-size: 1rem; color: var(--gray-600); margin-top: 1.5rem; text-align: center;">
+                <i class="fas fa-sync-alt"></i> 最終更新: 2026年3月27日
+            </p>
+        </div>
+        
+        <!-- Method Section -->
+        <div class="content-section">
+            <h2 class="section-title">口コミ統計分析の仕組み</h2>
+            
+            <p style="font-size: 1rem; color: var(--gray-700; margin-bottom: 2rem; line-height: 1.8;">
+                私たちは、各情報源の利用規約および著作権法を尊重し、文章の引用ではなく<strong>情報の構造化</strong>を行っています。
+            </p>
+            
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-title">感情の数値化（感情分析）</div>
+                    <div class="feature-description">
+                        テキストから性能・品質に関するキーワードを抽出し、その文脈を判定。少数の極端な意見に左右されないよう統計的な補正を行い、安定したスコアを算出します。
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-title">データの「濃さ」を測る信頼性判定</div>
+                    <div class="feature-description">
+                        公開データの総数（サンプルサイズ）を重視し、情報の密度を評価。また、配送トラブルなど製品性能に関係のないノイズを自動的に除外することで、純粋な製品評価を抽出します。
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Closing Message -->
+        <div class="content-section">
+            <h2 class="section-title">新しい「納得」の形</h2>
+            
+            <p class="lead-text">
+                AIが溢れ、誰もがもっともらしいことを言える時代だからこそ、私たちは<strong>加工されていない統計データという一次情報</strong>の価値を信じています。
+            </p>
+            
+            <p class="lead-text">
+                あなたの貴重な時間と、決して安くない買い物を、誰かの個人的な感想に委ねるのをやめませんか？<br>
+                <strong>「もう失敗しない。ナットクLabo」</strong>で、データに基づいた本当の納得を手に入れてください。
+            </p>
+        </div>
+        
+        <!-- CTA -->
+        <div class="cta-section">
+            <div class="cta-title">製品分析を見てみる</div>
+            <div class="cta-description">
+                22製品の詳細な統計分析をご覧いただけます
+            </div>
+            <a href="./index.html" class="cta-button">
+                製品一覧へ
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+    
+    <footer>
+        <div style="max-width: 1200px; margin: 0 auto; padding: 3rem 2rem; text-align: center;">
+            <div style="margin-bottom: 2rem;">
+                <h3 style="font-size: 1.8rem; font-weight: 900; margin-bottom: 1rem;">
+                    もう失敗しない。ナットクLabo
+                </h3>
+                <p style="font-size: 1rem; opacity: 0.9;">
+                    統計データという「一次情報」の力で、購入判断を確かなものに。
+                </p>
+            </div>
+            
+            <div style="margin: 2rem 0; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                <a href="./index.html" style="color: white; text-decoration: none; transition: opacity 0.3s ease;">
+                    <i class="fas fa-home"></i> ホーム
+                </a>
+                <a href="./about.html" style="color: white; text-decoration: none; transition: opacity 0.3s ease;">
+                    <i class="fas fa-info-circle"></i> このサイトについて
+                </a>
+                <a href="./privacy.html" style="color: white; text-decoration: none; transition: opacity 0.3s ease;">
+                    <i class="fas fa-shield-alt"></i> プライバシーポリシー
+                </a>
+            </div>
+            
+            <p>&copy; 2026 もう失敗しない。ナットクLabo. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

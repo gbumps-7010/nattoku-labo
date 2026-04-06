@@ -1,0 +1,1434 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="製品の口コミを統計分析。製品検索で最適な1台が見つかる。数千件のレビューから不満点と対策を可視化。">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <link rel="canonical" href="https://www.nattoku-labo.com/index.html">
+    <title>もう失敗しない。ナットクLabo | 製品を検索・比較</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            /* メインカラー: 落ち着いた青系（信頼感・プロフェッショナル） */
+            --primary-color: #1e40af;      /* 濃いブルー（信頼・分析） */
+            --secondary-color: #0f172a;    /* ダークネイビー（高級感） */
+            --accent-color: #0ea5e9;       /* アクセント用スカイブルー */
+            
+            /* 評価カラー（点数による色分け） */
+            --excellent-color: #059669;    /* 優秀（90点以上）: 落ち着いた緑 */
+            --good-color: #0284c7;         /* 良好（80-89点）: 落ち着いた青 */
+            --average-color: #ca8a04;      /* 平均（70-79点）: 落ち着いた黄 */
+            --poor-color: #dc2626;         /* 要改善（70点未満）: 落ち着いた赤 */
+            
+            /* ベースカラー */
+            --dark: #1e293b;
+            --light-bg: #f8fafc;
+            --white: #ffffff;
+            --gray-50: #f8fafc;
+            --gray-100: #f1f5f9;
+            --gray-200: #e2e8f0;
+            --gray-300: #cbd5e1;
+            --gray-400: #94a3b8;
+            --gray-500: #64748b;
+            --gray-600: #475569;
+            --gray-700: #334155;
+            --gray-800: #1e293b;
+            --gray-900: #0f172a;
+            
+            /* シャドウ */
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: var(--light-bg);
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: var(--white);
+            padding: 3rem 0;
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            font-weight: 900;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+        
+        .logo i {
+            font-size: 2rem;
+        }
+        
+        .tagline {
+            font-size: 1.1rem;
+            opacity: 0.95;
+            font-weight: 500;
+        }
+        
+        .header-nav-link {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1.5rem;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .header-nav-link:hover {
+            background: rgba(255, 255, 255, 0.35);
+            transform: translateY(-2px);
+        }
+        
+        /* Search Section */
+        .search-section {
+            max-width: 1200px;
+            margin: -2rem auto 3rem;
+            padding: 0 2rem;
+        }
+        
+        .search-card {
+            background: var(--white);
+            border-radius: 16px;
+            box-shadow: var(--shadow-lg);
+            padding: 2.5rem;
+        }
+        
+        .search-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 1.5rem;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+        }
+        
+        .search-title i {
+            color: var(--primary-color);
+        }
+        
+        .search-box {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+        
+        .search-input {
+            width: 100%;
+            padding: 1rem 3.5rem 1rem 1.5rem;
+            font-size: 1.1rem;
+            border: 2px solid var(--gray-300);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+        
+        .search-input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+        
+        .search-icon {
+            position: absolute;
+            right: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--gray-600);
+            font-size: 1.2rem;
+        }
+        
+        .filters {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        
+        .filter-label {
+            font-weight: 700;
+            color: var(--gray-700);
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .filter-label i {
+            color: var(--primary-color);
+            font-size: 0.85rem;
+        }
+        
+        .filter-select {
+            padding: 0.75rem 1rem;
+            border: 2px solid var(--gray-300);
+            border-radius: 8px;
+            font-size: 1rem;
+            background: var(--white);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+        
+        .filter-select:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+        
+        .filter-select:hover {
+            border-color: var(--gray-600);
+        }
+        
+        /* Results Section */
+        .results-section {
+            max-width: 1200px;
+            margin: 0 auto 4rem;
+            padding: 0 2rem;
+        }
+        
+        .results-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .results-count {
+            font-size: 1.1rem;
+            color: var(--gray-700);
+        }
+        
+        .results-count strong {
+            color: var(--primary-color);
+            font-size: 1.3rem;
+        }
+        
+        .sort-select {
+            padding: 0.5rem 1rem;
+            border: 2px solid var(--gray-300);
+            border-radius: 8px;
+            font-size: 0.95rem;
+            background: var(--white);
+            cursor: pointer;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+        
+        .product-card {
+            background: var(--white);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .product-image {
+            width: 100%;
+            height: 240px;
+            object-fit: contain;
+            background: var(--gray-100);
+            padding: 1rem;
+        }
+        
+        .product-content {
+            padding: 1.5rem;
+            padding-top: 1rem;
+        }
+        
+        .product-manufacturer {
+            font-size: 1rem;
+            color: var(--gray-700);
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            margin-top: 0.5rem;
+            letter-spacing: 0.02em;
+        }
+        
+        .product-name {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 1rem;
+            line-height: 1.4;
+            min-height: 3.2rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        
+        .product-rating {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .stars {
+            display: flex;
+            gap: 0.2rem;
+        }
+        
+        .star {
+            color: var(--warning-color);
+            font-size: 1rem;
+        }
+        
+        .star-empty {
+            color: var(--gray-300);
+        }
+        
+        .rating-value {
+            font-weight: 700;
+            color: var(--dark);
+            font-size: 1.15rem;
+        }
+        
+        .review-count {
+            color: var(--gray-600);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .product-price {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--gray-800);
+            margin-bottom: 1rem;
+        }
+        
+        .product-price-label {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--gray-600);
+        }
+        
+        .product-specs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-bottom: 1.25rem;
+            padding: 1rem;
+            background: linear-gradient(135deg, var(--gray-50) 0%, var(--gray-100) 100%);
+            border-radius: 12px;
+            border: 2px solid var(--gray-200);
+        }
+        
+        .spec-tag {
+            background: white;
+            color: var(--dark);
+            padding: 0.55rem 1.1rem;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        
+        .spec-tag::before {
+            content: '●';
+            color: var(--primary-color);
+            font-size: 0.6rem;
+        }
+        
+        .product-cta {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+        }
+        
+        .btn {
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            text-align: center;
+            transition: all 0.3s ease;
+            display: inline-block;
+            cursor: pointer;
+            border: none;
+            font-size: 0.9rem;
+        }
+        
+        .btn-view {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: var(--white);
+            grid-column: 1 / -1;
+        }
+        
+        .btn-view:hover {
+            transform: scale(1.02);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .btn-amazon {
+            background: #ff9900;
+            color: var(--dark);
+        }
+        
+        .btn-amazon:hover {
+            background: #e68a00;
+        }
+        
+        .btn-rakuten {
+            background: #bf0000;
+            color: var(--white);
+        }
+        
+        .btn-rakuten:hover {
+            background: #a00000;
+        }
+        
+        .no-results {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: var(--gray-600);
+        }
+        
+        .no-results i {
+            font-size: 4rem;
+            color: var(--gray-300);
+            margin-bottom: 1rem;
+        }
+        
+        .no-results h3 {
+            font-size: 1.5rem;
+            color: var(--gray-700);
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: var(--white);
+            padding: 3rem 0 1.5rem;
+            margin-top: 4rem;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            text-align: center;
+        }
+        
+        .footer-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-description {
+            color: var(--gray-300);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+        
+        .footer-copyright {
+            color: var(--gray-600);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--gray-700);
+            padding-top: 1.5rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 1.8rem;
+            }
+            
+            .search-card {
+                padding: 1.5rem;
+            }
+            
+            .filters {
+                grid-template-columns: 1fr;
+            }
+            
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .results-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+        
+        /* Loading Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .fade-in {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <h1 class="logo">
+                <i class="fas fa-chart-line"></i>
+                もう失敗しない。ナットクLabo
+            </h1>
+            <p class="tagline">独自調査データから分析。あなたに最適な製品が見つかる</p>
+            <div style="margin-top: 1rem; text-align: center;">
+                <a href="./about.html" class="header-nav-link">
+                    <i class="fas fa-info-circle"></i> このサイトについて
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Section -->
+    <div class="search-section">
+        <div class="search-card fade-in">
+            <h2 class="search-title">
+                <i class="fas fa-search"></i>
+                製品を検索する
+            </h2>
+            
+            <div class="search-box">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    class="search-input" 
+                    placeholder="製品名やメーカー名で検索（例：SwitchBot、K11+、静音）"
+                >
+                <i class="fas fa-search search-icon"></i>
+            </div>
+            
+            <div class="filters">
+                <div class="filter-group">
+                    <label class="filter-label">
+                        <i class="fas fa-industry"></i>
+                        メーカー
+                    </label>
+                    <select id="manufacturerFilter" class="filter-select">
+                        <option value="すべて">すべてのメーカー</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label class="filter-label">
+                        <i class="fas fa-yen-sign"></i>
+                        価格帯
+                    </label>
+                    <select id="priceFilter" class="filter-select">
+                        <option value="すべて">すべての価格帯</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label class="filter-label">
+                        <i class="fas fa-star"></i>
+                        評価
+                    </label>
+                    <select id="ratingFilter" class="filter-select">
+                        <option value="すべて">すべての評価</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Section -->
+    <div class="results-section">
+        <div class="results-header">
+            <div class="results-count">
+                <strong id="resultCount">5</strong> 件の製品が見つかりました
+            </div>
+            <select id="sortSelect" class="sort-select">
+                <option value="rating-desc">評価の高い順</option>
+                <option value="rating-asc">評価の低い順</option>
+                <option value="price-asc">価格の安い順</option>
+                <option value="price-desc">価格の高い順</option>
+                <option value="reviews-desc">口コミ数の多い順</option>
+            </select>
+        </div>
+        
+        <div id="productsContainer" class="products-grid">
+            <!-- Products will be dynamically inserted here -->
+        </div>
+        
+        <div id="noResults" class="no-results" style="display: none;">
+            <i class="fas fa-search"></i>
+            <h3>該当する製品が見つかりませんでした</h3>
+            <p>検索条件を変更してもう一度お試しください</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h3 class="footer-title">もう失敗しない。ナットクLabo</h3>
+            <p class="footer-description">
+                製品データを「並べる」だけではなく、「統計で切る」。<br>
+                実購入者の声を分析し、不満点と対策をセットで提示。<br>
+                あなたの購入判断を確かなものにします。
+            </p>
+            
+            <div style="background: rgba(255, 255, 255, 0.1); padding: 1.5rem; border-radius: 8px; margin: 2rem 0; text-align: left; max-width: 800px; margin-left: auto; margin-right: auto;">
+                <h4 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 0.75rem; color: #fff;">
+                    📊 データについて
+                </h4>
+                <ul style="font-size: 0.85rem; line-height: 1.8; color: rgba(255, 255, 255, 0.9); padding-left: 1.5rem; margin: 0;">
+                    <li>当サイトの製品分析データは、運営者が独自に調査・収集した情報を基に統計的に分析したものです。</li>
+                    <li>表示されているデータは参考値であり、個別の製品体験を保証するものではありません。</li>
+                    <li>最新情報や詳細スペックは、各販売サイトにてご確認ください。</li>
+                    <li>当サイトは、各種アフィリエイトプログラムの参加者です。</li>
+                </ul>
+            </div>
+            
+            <div style="margin: 2rem 0; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                <a href="./about.html" style="color: white; text-decoration: none; transition: opacity 0.3s ease;">
+                    <i class="fas fa-info-circle"></i> このサイトについて
+                </a>
+                <a href="./privacy.html" style="color: white; text-decoration: none; transition: opacity 0.3s ease;">
+                    <i class="fas fa-shield-alt"></i> プライバシーポリシー
+                </a>
+            </div>
+            
+            <p class="footer-copyright">
+                © 2026 もう失敗しない。ナットクLabo All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Products Data -->
+    <script>
+        // Inline product data to avoid loading issues
+        const productsData = [
+            {
+                id: 'switchbot-k11-plus',
+                name: 'SwitchBot ロボット掃除機 K11+',
+                manufacturer: 'SwitchBot',
+                price: 59800,
+                rating: 4.5,
+                reviewCount: 586,
+                totalReviewCount: 586,
+                image: 'https://m.media-amazon.com/images/I/61M0vPzS-NL._AC_SL1500_.jpg',
+                badges: ['コスパ1位', '静音性1位', '4大ECサイト統合'],
+                overallTrustScore: 81.42,
+                specs: {
+                    suction: 96,
+                    mopping: 44,
+                    noise: 93,
+                    obstacle: 58,
+                    app: 75,
+                    maintenance: 85
+                },
+                amazonUrl: 'https://www.amazon.co.jp/dp/B0F7GGN94D',
+                rakutenUrl: 'https://search.rakuten.co.jp/search/mall/SwitchBot+K11+plus/'
+            },
+            {
+                id: 'roborock-qrevo-l',
+                name: 'Qrevo L',
+                manufacturer: 'Roborock',
+                price: 79980,
+                rating: 4.7,
+                reviewCount: 326,
+                totalReviewCount: 326,
+                image: 'https://m.media-amazon.com/images/I/51I7oY+p8iL._AC_SL1500_.jpg',
+                badges: ['吸引力最強', '全自動ドック', '高評価'],
+                overallTrustScore: 89.45,
+                specs: {
+                    suction: 98,
+                    mopping: 82,
+                    noise: 85,
+                    obstacle: 75,
+                    app: 92,
+                    maintenance: 95
+                },
+                amazonUrl: 'https://www.amazon.co.jp/dp/B0F6NGXD99',
+                rakutenUrl: 'https://search.rakuten.co.jp/search/mall/Roborock+Qrevo+L/'
+            },
+            {
+                id: 'anker-eufy-c10',
+                name: 'Eufy Robot Vacuum Auto-Empty C10',
+                manufacturer: 'Anker',
+                price: 59800,
+                rating: 4.7,
+                reviewCount: 502,
+                totalReviewCount: 502,
+                image: 'https://m.media-amazon.com/images/I/61-B9+P0eLL._AC_SL1500_.jpg',
+                badges: ['静音性1位', 'コスパ最強', '自動ゴミ収集'],
+                overallTrustScore: 88.45,
+                specs: {
+                    suction: 90,
+                    mopping: 70,
+                    noise: 98,
+                    obstacle: 75,
+                    app: 88,
+                    maintenance: 92
+                },
+                amazonUrl: 'https://www.amazon.co.jp/dp/B0D1XY7Z6S',
+                rakutenUrl: 'https://search.rakuten.co.jp/search/mall/Anker+Eufy+C10+Auto-Empty/'
+            },
+            {
+                id: 'ecovacs-deebot-n20-pro-plus',
+                name: 'DEEBOT N20 PRO PLUS',
+                manufacturer: 'ECOVACS',
+                price: 69800,
+                rating: 4.6,
+                reviewCount: 278,
+                totalReviewCount: 278,
+                image: 'https://m.media-amazon.com/images/I/61kX-mNfWKL._AC_SL1500_.jpg',
+                badges: ['サイクロン式', 'メンテナンス楽', '3大ECサイト統合'],
+                overallTrustScore: 89.15,
+                specs: {
+                    suction: 96,
+                    mopping: 70,
+                    noise: 75,
+                    obstacle: 82,
+                    app: 80,
+                    maintenance: 98
+                },
+                amazonUrl: 'https://www.amazon.co.jp/dp/B0D45R4YVL',
+                rakutenUrl: 'https://search.rakuten.co.jp/search/mall/DEEBOT+N20+PRO+PLUS/'
+            },
+            {
+                id: 'roomba-mini-autoempty',
+                name: 'Roomba Mini + AutoEmpty',
+                manufacturer: 'iRobot',
+                price: 44800,
+                rating: 4.65,
+                reviewCount: 66,
+                totalReviewCount: 66,
+                image: 'https://m.media-amazon.com/images/I/61M0vPzS-NL._AC_SL1500_.jpg',
+                badges: ['コンパクト1位', '静音性最強', '楽天統合'],
+                overallTrustScore: 82.40,
+                specs: {
+                    suction: 88,
+                    mopping: 0,
+                    noise: 92,
+                    obstacle: 78,
+                    app: 84,
+                    maintenance: 96
+                },
+                amazonUrl: 'https://www.amazon.co.jp/s?k=Roomba+Mini+AutoEmpty',
+                rakutenUrl: 'https://search.rakuten.co.jp/search/mall/Roomba+Mini+AutoEmpty/'
+            },
+            {
+                id: 'roomba-105-combo',
+                name: 'Roomba 105 Combo ロボット + AutoEmpty',
+                manufacturer: 'iRobot',
+                price: 69800,
+                rating: 4.62,
+                reviewCount: 285,
+                totalReviewCount: 285,
+                image: 'https://m.media-amazon.com/images/I/placeholder_roomba_105_combo.jpg',
+                badges: ['水拭き一体型', '自動ゴミ収集', '3サイト統合'],
+                overallTrustScore: 89.15,
+                specs: {
+                    suction: 92,
+                    mopping: 88,
+                    noise: 85,
+                    obstacle: 82,
+                    app: 72,
+                    maintenance: 95
+                },
+                amazonUrl: 'https://www.amazon.co.jp/s?k=Roomba+105+Combo',
+                rakutenUrl: 'https://search.rakuten.co.jp/search/mall/Roomba+105+Combo/'
+            },
+            {
+                id: 'roomba-plus-405-combo',
+                name: 'Roomba Plus 405 Combo ロボット + AutoWash',
+                manufacturer: 'iRobot',
+                price: 197800,
+                rating: 4.8,
+                reviewCount: 321,
+                totalReviewCount: 321,
+                image: 'https://m.media-amazon.com/images/I/61MvU-T6j0L._AC_SL1500_.jpg',
+                badges: ['AutoWash', '最高級モデル', '3サイト統合'],
+                overallTrustScore: 94.20,
+                specs: {
+                    suction: 98,
+                    mopping: 95,
+                    noise: 78,
+                    obstacle: 90,
+                    app: 94,
+                    maintenance: 98
+                },
+                amazonUrl: 'https://www.amazon.co.jp/s?k=Roomba+Plus+405+Combo',
+                rakutenUrl: 'https://search.rakuten.co.jp/search/mall/Roomba+Plus+405+Combo/'
+            },
+            {
+                id: 'eufy-robot-vacuum-omni-c28',
+                name: 'Eufy Robot Vacuum Omni C28',
+                manufacturer: 'Anker',
+                price: 99800,
+                rating: 4.4,
+                reviewCount: 342,
+                totalReviewCount: 342,
+                image: 'https://m.media-amazon.com/images/I/61Nl-H6kG0L._AC_SL1500_.jpg',
+                badges: ['ローラーモップ', '静音性抜群', '3サイト統合'],
+                overallTrustScore: 84.20,
+                specs: {
+                    suction: 94,
+                    mopping: 94,
+                    noise: 92,
+                    obstacle: 82,
+                    app: 82,
+                    maintenance: 90
+                },
+                amazonUrl: 'https://www.amazon.co.jp/s?k=Eufy+Omni+C28',
+                rakutenUrl: 'https://search.rakuten.co.jp/search/mall/Eufy+Omni+C28/'
+            },
+            {
+                id: 'dreame-l10s-ultra-gen2',
+                name: 'L10s Ultra Gen2',
+                manufacturer: 'Dreame',
+                price: 56000,
+                rating: 4.7,
+                reviewCount: 324,
+                totalReviewCount: 324,
+                image: 'https://m.media-amazon.com/images/I/61JLsxcJ2bL._AC_SL1500_.jpg',
+                badges: ['全自動洗浄', 'ペット毛99%', '3サイト統合'],
+                overallTrustScore: 91.5,
+                specs: {
+                    suction: 95,
+                    mopping: 91,
+                    noise: 70,
+                    obstacle: 90,
+                    app: 88,
+                    maintenance: 99
+                },
+                amazonUrl: 'https://www.amazon.co.jp/s?k=Dreame+L10s+Ultra+Gen2',
+                rakutenUrl: 'https://search.rakuten.co.jp/search/mall/Dreame+L10s+Ultra+Gen2/'
+            },
+            {
+                id: 'dreame-l40s-pro-ultra',
+                name: 'L40s Pro Ultra',
+                manufacturer: 'Dreame',
+                price: 188000,
+                rating: 4.5,
+                reviewCount: 29,
+                totalReviewCount: 29,
+                image: 'https://m.media-amazon.com/images/I/61M6Y8vOQpL._AC_SL1500_.jpg',
+                badges: ['11,000Pa吸引力', 'MopExtend', 'Amazon'],
+                overallTrustScore: 79.31,
+                specs: {
+                    suction: 98,
+                    mopping: 92,
+                    noise: 85,
+                    obstacle: 95,
+                    app: 65,
+                    maintenance: 94
+                },
+                amazonUrl: 'https://www.amazon.co.jp/s?k=Dreame+L40s+Pro+Ultra',
+                rakutenUrl: 'https://search.rakuten.co.jp/search/mall/Dreame+L40s+Pro+Ultra/'
+            },
+            {
+                id: 'dreame-x50-ultra',
+                name: 'Dreame X50 Ultra',
+                manufacturer: 'Dreame',
+                price: 228000,
+                rating: 4.8,
+                reviewCount: 45,
+                totalReviewCount: 45,
+                image: 'https://m.media-amazon.com/images/I/61NlUu1zS6L._AC_SL1500_.jpg',
+                badges: ['19,500Pa最強吸引力', 'ProLeapシステム', '🆕最新フラッグシップ'],
+                overallTrustScore: 64.0,
+                specs: {
+                    suction: 100,
+                    mopping: 96,
+                    noise: 82,
+                    obstacle: 92,
+                    app: 90,
+                    maintenance: 99
+                },
+                amazonUrl: 'https://www.amazon.co.jp/s?k=Dreame+X50+Ultra',
+                rakutenUrl: 'https://search.rakuten.co.jp/search/mall/Dreame+X50+Ultra/'
+            },
+            {
+                id: 'ecovacs-deebot-x8-pro-omni',
+                name: 'DEEBOT X8 PRO OMNI',
+                manufacturer: 'ECOVACS',
+                price: 199800,
+                rating: 4.6,
+                reviewCount: 310,
+                totalReviewCount: 310,
+                image: 'https://m.media-amazon.com/images/I/61M07Z8YVTL._AC_SL1500_.jpg',
+                badges: ['オズモTurbo 3.0+', 'スクラブモップ', '🆕2026最新'],
+                overallTrustScore: 86.2,
+                specs: {
+                    suction: 98,
+                    mopping: 98,
+                    noise: 84,
+                    obstacle: 88,
+                    app: 90,
+                    maintenance: 97
+                },
+                amazonUrl: 'https://www.amazon.co.jp/s?k=DEEBOT+X8+PRO+OMNI',
+                rakutenUrl: 'https://search.rakuten.co.jp/search/mall/DEEBOT+X8+PRO+OMNI/'
+            },
+            {
+                id: 'roomba-plus-505-combo',
+                name: 'Roomba Plus 505 Combo',
+                manufacturer: 'iRobot',
+                price: 69800,
+                rating: 4.6,
+                reviewCount: 356,
+                totalReviewCount: 356,
+                image: 'https://m.media-amazon.com/images/I/71u9S+7HkFL._AC_SL1500_.jpg',
+                badges: ['掃除+水拭き', '信頼度92点', 'コスパ優秀'],
+                overallTrustScore: 92.15,
+                specs: {
+                    suction: 97,
+                    mopping: 90,
+                    noise: 78,
+                    obstacle: 82,
+                    app: 88,
+                    maintenance: 96
+                },
+                amazonUrl: 'https://www.amazon.co.jp/s?k=Roomba+Plus+505+Combo',
+                rakutenUrl: 'https://search.rakuten.co.jp/search/mall/Roomba+Plus+505+Combo/'
+            },
+            {
+                id: 'deebot-t80-omni',
+                name: 'DEEBOT T80 OMNI',
+                manufacturer: 'ECOVACS',
+                price: 139800,
+                rating: 4.7,
+                reviewCount: 512,
+                totalReviewCount: 512,
+                image: 'https://m.media-amazon.com/images/I/61m9f7nE9lL._AC_SL1500_.jpg',
+                badges: ['8000Pa吸引力', '全自動ステーション', '🆕最新'],
+                overallTrustScore: 92.45,
+                specs: {
+                    suction: 98,
+                    mopping: 97,
+                    noise: 85,
+                    obstacle: 93,
+                    app: 93,
+                    maintenance: 97
+                },
+                amazonUrl: 'https://www.amazon.co.jp/s?k=DEEBOT+T80+OMNI',
+                rakutenUrl: 'https://search.rakuten.co.jp/search/mall/DEEBOT+T80+OMNI/'
+            },
+            {
+                id: 'deebot-t50-omni',
+                name: 'DEEBOT T50 OMNI',
+                manufacturer: 'ECOVACS',
+                price: 159800,
+                rating: 4.8,
+                reviewCount: 184,
+                totalReviewCount: 184,
+                image: 'https://m.media-amazon.com/images/I/61jC8VvG61L._AC_SL1500_.jpg',
+                badges: ['81mm超薄型', '★4.8最高評価', 'ローラーモップ'],
+                overallTrustScore: 88.0,
+                specs: {
+                    suction: 99,
+                    mopping: 99,
+                    noise: 92,
+                    obstacle: 91,
+                    app: 91,
+                    maintenance: 97
+                },
+                amazonUrl: 'https://www.amazon.co.jp/s?k=DEEBOT+T50+OMNI',
+                rakutenUrl: 'https://search.rakuten.co.jp/search/mall/DEEBOT+T50+OMNI/'
+            },
+            {
+                id: 'ecovacs-deebot-mini',
+                name: 'DEEBOT mini',
+                manufacturer: 'ECOVACS',
+                price: 15800,
+                rating: 4.3,
+                reviewCount: 562,
+                totalReviewCount: 562,
+                image: 'https://m.media-amazon.com/images/I/61mZ6U-yZtL._AC_SL1500_.jpg',
+                badges: ['5.7cm超薄型', 'ブラシレス吸引', 'コスパ最強'],
+                overallTrustScore: 91.45,
+                specs: {
+                    suction: 88,
+                    mopping: 0,
+                    noise: 84,
+                    obstacle: 58,
+                    app: 0,
+                    maintenance: 96
+                },
+                amazonUrl: 'https://www.amazon.co.jp/s?k=DEEBOT+mini',
+                rakutenUrl: 'https://search.rakuten.co.jp/search/mall/DEEBOT+mini/'
+            },
+            {
+                id: 'ecovacs-deebot-t90-omni',
+                name: 'DEEBOT T90 OMNI',
+                manufacturer: 'ECOVACS',
+                price: 149800,
+                rating: 4.8,
+                reviewCount: 144,
+                totalReviewCount: 144,
+                image: 'https://m.media-amazon.com/images/I/51uIuPZ6X+L._AC_SL1500_.jpg',
+                badges: ['温水洗浄', '★4.8最高評価', '全自動メンテ'],
+                overallTrustScore: 88.0,
+                specs: {
+                    suction: 98,
+                    mopping: 98,
+                    noise: 86,
+                    obstacle: 94,
+                    app: 94,
+                    maintenance: 96
+                },
+                amazonUrl: 'https://www.amazon.co.jp/s?k=DEEBOT+T90+OMNI',
+                rakutenUrl: 'https://search.rakuten.co.jp/search/mall/DEEBOT+T90+OMNI/'
+            },
+            {
+                id: 'eufy-robot-vacuum-omni-e25',
+                name: 'Eufy Robot Vacuum Omni E25',
+                manufacturer: 'Anker',
+                price: 74800,
+                rating: 4.6,
+                reviewCount: 655,
+                totalReviewCount: 655,
+                image: 'https://m.media-amazon.com/images/I/61K-P2XU+iL._AC_SL1500_.jpg',
+                badges: ['全自動メンテ', 'コスパ抜群', '信頼度94点'],
+                overallTrustScore: 94.2,
+                specs: {
+                    suction: 95,
+                    mopping: 95,
+                    noise: 84,
+                    obstacle: 92,
+                    app: 92,
+                    maintenance: 97
+                },
+                amazonUrl: 'https://www.amazon.co.jp/s?k=Eufy+Robot+Vacuum+Omni+E25',
+                rakutenUrl: 'https://search.rakuten.co.jp/search/mall/Eufy+Robot+Vacuum+Omni+E25/'
+            },
+            {
+                id: 'eufy-x10-pro-omni',
+                name: 'Eufy X10 Pro Omni',
+                manufacturer: 'Anker',
+                price: 99990,
+                rating: 4.6,
+                reviewCount: 458,
+                totalReviewCount: 458,
+                image: 'https://m.media-amazon.com/images/I/61Nl6LpXWXL._AC_SL1500_.jpg',
+                badges: ['8000Pa吸引力', 'コスパ最強', '信頼度92点'],
+                overallTrustScore: 92.15,
+                specs: {
+                    suction: 96,
+                    mopping: 96,
+                    noise: 82,
+                    obstacle: 91,
+                    app: 91,
+                    maintenance: 95
+                },
+                amazonUrl: 'https://www.amazon.co.jp/s?k=Eufy+X10+Pro+Omni',
+                rakutenUrl: 'https://search.rakuten.co.jp/search/mall/Eufy+X10+Pro+Omni/'
+            },
+            {
+                id: 'eufy-clean-x8-pro-self-empty',
+                name: 'Eufy Clean X8 Pro with Self-Empty Station',
+                manufacturer: 'Anker',
+                price: 69990,
+                rating: 4.45,
+                reviewCount: 1411,
+                totalReviewCount: 1411,
+                image: 'https://m.media-amazon.com/images/I/61fW8-S5XFL._AC_SL1500_.jpg',
+                badges: ['ペット毛98点', '信頼度98.2点', 'レビュー1411件'],
+                overallTrustScore: 98.2,
+                specs: {suction: 96, mopping: 0, noise: 82, obstacle: 91, app: 91, maintenance: 95},
+                amazonUrl: 'https://www.amazon.co.jp/s?k=Eufy+Clean+X8+Pro+Self-Empty',
+                rakutenUrl: 'https://search.rakuten.co.jp/search/mall/Eufy+Clean+X8+Pro+Self-Empty/'
+            },
+            {
+                id: 'eufy-robovac-g30',
+                name: 'Anker Eufy RoboVac G30',
+                manufacturer: 'Anker',
+                price: 24800,
+                rating: 4.3,
+                reviewCount: 1254,
+                totalReviewCount: 1254,
+                image: 'https://m.media-amazon.com/images/I/71u9S+7T6SL._AC_SL1500_.jpg',
+                badges: ['静音性94点', 'コスパ最強', 'レビュー1254件'],
+                overallTrustScore: 88.42,
+                specs: {suction: 88, mopping: 0, noise: 94, obstacle: 70, app: 88, maintenance: 85},
+                amazonUrl: 'https://www.amazon.co.jp/s?k=Eufy+RoboVac+G30',
+                rakutenUrl: 'https://search.rakuten.co.jp/search/mall/Eufy+RoboVac+G30/'
+            },
+            {
+                id: 'eufy-robot-vacuum-omni-c20',
+                name: 'Eufy Robot Vacuum Omni C20',
+                manufacturer: 'Anker',
+                price: 89900,
+                rating: 4.6,
+                reviewCount: 215,
+                totalReviewCount: 215,
+                image: 'https://m.media-amazon.com/images/I/61r5Z-H8XmL._AC_SL1500_.jpg',
+                badges: ['7000Pa吸引', 'コンパクトドック', '最新モデル'],
+                overallTrustScore: 86.45,
+                specs: {suction: 96, mopping: 94, noise: 82, obstacle: 90, app: 90, maintenance: 95},
+                amazonUrl: 'https://www.amazon.co.jp/s?k=Eufy+Robot+Vacuum+Omni+C20',
+                rakutenUrl: 'https://search.rakuten.co.jp/search/mall/Eufy+Robot+Vacuum+Omni+C20/'
+            },
+            {
+                id: 'eufy-robot-vacuum-omni-s1-pro',
+                name: 'Eufy Robot Vacuum Omni S1 Pro',
+                manufacturer: 'Anker',
+                price: 199900,
+                rating: 4.6,
+                reviewCount: 145,
+                totalReviewCount: 145,
+                image: 'https://m.media-amazon.com/images/I/61mZ6W6GvXL._AC_SL1500_.jpg',
+                badges: ['床掃除99点', '常時洗浄モップ', 'オゾン水除菌', 'スクエアデザイン'],
+                overallTrustScore: 88.5,
+                specs: {suction: 99, mopping: 99, noise: 80, obstacle: 90, app: 90, maintenance: 94},
+                amazonUrl: 'https://www.amazon.co.jp/s?k=Eufy+Robot+Vacuum+Omni+S1+Pro',
+                rakutenUrl: 'https://search.rakuten.co.jp/search/mall/Eufy+Robot+Vacuum+Omni+S1+Pro/'
+            },
+            {
+                id: 'eufy-robovac-g30-hybrid',
+                name: 'Eufy RoboVac G30 Hybrid',
+                manufacturer: 'Anker',
+                price: 29990,
+                rating: 4.5,
+                reviewCount: 1015,
+                totalReviewCount: 1015,
+                image: 'https://m.media-amazon.com/images/I/718VvV9X9XL._AC_SL1500_.jpg',
+                badges: ['7.2cm薄型', 'ハイブリッド', '信頼度98.5', '1,015件レビュー'],
+                overallTrustScore: 98.5,
+                specs: {suction: 90, mopping: 85, noise: 85, obstacle: 82, app: 84, maintenance: 86},
+                amazonUrl: 'https://www.amazon.co.jp/s?k=Eufy+RoboVac+G30+Hybrid',
+                rakutenUrl: 'https://search.rakuten.co.jp/search/mall/Eufy+RoboVac+G30+Hybrid/'
+            },
+            {
+                id: 'roomba-max-705-combo-autowash',
+                name: 'Roomba Max 705 Combo + AutoWash',
+                manufacturer: 'iRobot',
+                price: 184800,
+                rating: 4.7,
+                reviewCount: 406,
+                totalReviewCount: 406,
+                image: 'https://m.media-amazon.com/images/I/61Sj2H+XFLL._AC_SL1500_.jpg',
+                badges: ['モップ自動洗浄', '床掃除99点', 'メンテ98点'],
+                overallTrustScore: 91.25,
+                specs: {suction: 99, mopping: 95, noise: 82, obstacle: 95, app: 95, maintenance: 98},
+                amazonUrl: 'https://www.amazon.co.jp/s?k=Roomba+Max+705+Combo',
+                rakutenUrl: 'https://search.rakuten.co.jp/search/mall/Roomba+Max+705+Combo/'
+            },
+            {
+                id: 'roomba-combo-10-max',
+                name: 'Roomba Combo 10 Max',
+                manufacturer: 'iRobot',
+                price: 197800,
+                rating: 4.6,
+                reviewCount: 225,
+                totalReviewCount: 225,
+                image: 'https://m.media-amazon.com/images/I/61M0vY9Z-vL._AC_SL1500_.jpg',
+                badges: ['Combo技術', '最上位', '水拭き'],
+                overallTrustScore: 88.5,
+                specs: {
+                    suction: 96,
+                    mopping: 94,
+                    noise: 80,
+                    obstacle: 88,
+                    app: 92,
+                    maintenance: 95
+                },
+                amazonUrl: 'https://www.amazon.co.jp/s?k=Roomba+Combo+10+Max',
+                rakutenUrl: 'https://search.rakuten.co.jp/search/mall/Roomba+Combo+10+Max/'
+            },
+            {
+                id: 'roborock-saros-10r',
+                name: 'Roborock Saros 10R',
+                manufacturer: 'Roborock',
+                price: 149800,
+                rating: 4.8,
+                reviewCount: 226,
+                totalReviewCount: 226,
+                image: 'https://m.media-amazon.com/images/I/61NlU9C4vYL._AC_SL1500_.jpg',
+                badges: ['★4.8最高評価', '隠しLiDAR', '8.05cm超薄型'],
+                overallTrustScore: 88.0,
+                specs: {
+                    suction: 98,
+                    mopping: 96,
+                    noise: 82,
+                    obstacle: 95,
+                    app: 94,
+                    maintenance: 97
+                },
+                amazonUrl: 'https://www.amazon.co.jp/s?k=Roborock+Saros+10R',
+                rakutenUrl: 'https://search.rakuten.co.jp/search/mall/Roborock+Saros+10R/'
+            }
+        ];
+
+        const manufacturers = ['すべて', 'SwitchBot', 'Roborock', 'Anker', 'ECOVACS', 'iRobot', 'Dreame'];
+        const priceRanges = [
+            { label: 'すべて', min: 0, max: Infinity },
+            { label: '5万円未満', min: 0, max: 50000 },
+            { label: '5万円〜10万円', min: 50000, max: 100000 },
+            { label: '10万円以上', min: 100000, max: Infinity }
+        ];
+        const ratingFilters = [
+            { label: 'すべて', min: 0 },
+            { label: '★4.0以上', min: 4.0 },
+            { label: '★3.5以上', min: 3.5 }
+        ];
+    </script>
+
+    <script>
+        // DOM Elements
+        const searchInput = document.getElementById('searchInput');
+        const manufacturerFilter = document.getElementById('manufacturerFilter');
+        const priceFilter = document.getElementById('priceFilter');
+        const ratingFilter = document.getElementById('ratingFilter');
+        const sortSelect = document.getElementById('sortSelect');
+        const productsContainer = document.getElementById('productsContainer');
+        const resultCount = document.getElementById('resultCount');
+        const noResults = document.getElementById('noResults');
+
+        // Initialize filters
+        function initializeFilters() {
+            // Check if data is available
+            if (typeof manufacturers === 'undefined' || typeof priceRanges === 'undefined' || typeof ratingFilters === 'undefined') {
+                console.error('製品データが読み込まれていません');
+                return;
+            }
+
+            // Manufacturer filter
+            manufacturers.forEach(manufacturer => {
+                const option = document.createElement('option');
+                option.value = manufacturer;
+                option.textContent = manufacturer;
+                manufacturerFilter.appendChild(option);
+            });
+
+            // Price filter
+            priceRanges.forEach(range => {
+                const option = document.createElement('option');
+                option.value = range.label;
+                option.textContent = range.label;
+                priceFilter.appendChild(option);
+            });
+
+            // Rating filter
+            ratingFilters.forEach(filter => {
+                const option = document.createElement('option');
+                option.value = filter.label;
+                option.textContent = filter.label;
+                ratingFilter.appendChild(option);
+            });
+        }
+
+        // Generate stars HTML
+        function generateStars(rating) {
+            let starsHtml = '';
+            for (let i = 1; i <= 5; i++) {
+                if (i <= Math.floor(rating)) {
+                    starsHtml += '<i class="fas fa-star star"></i>';
+                } else if (i === Math.ceil(rating) && rating % 1 !== 0) {
+                    starsHtml += '<i class="fas fa-star-half-alt star"></i>';
+                } else {
+                    starsHtml += '<i class="far fa-star star star-empty"></i>';
+                }
+            }
+            return starsHtml;
+        }
+
+        // Render products
+        function renderProducts(products) {
+            if (products.length === 0) {
+                productsContainer.style.display = 'none';
+                noResults.style.display = 'block';
+                resultCount.textContent = '0';
+                return;
+            }
+
+            productsContainer.style.display = 'grid';
+            noResults.style.display = 'none';
+            resultCount.textContent = products.length;
+
+            productsContainer.innerHTML = products.map((product, index) => `
+                <a href="./products/${product.id}.html" class="product-card fade-in" style="animation-delay: ${index * 0.1}s;">
+                    <div style="position: relative;">
+                        <img src="${product.image}" alt="${product.name}" class="product-image">
+                    </div>
+                    <div class="product-content">
+                        <div class="product-manufacturer">${product.manufacturer}</div>
+                        <h3 class="product-name">${product.name}</h3>
+                        
+                        <div class="product-rating">
+                            <div class="stars">
+                                ${generateStars(product.rating)}
+                            </div>
+                            <span class="rating-value">${product.rating}</span>
+                            <span class="review-count">(${product.reviewCount.toLocaleString()}件)</span>
+                        </div>
+                        
+                        <div class="product-price">
+                            ¥${product.price.toLocaleString()}
+                            <span class="product-price-label">（税込）</span>
+                        </div>
+                        
+                        <div class="product-specs">
+                            <span class="spec-tag">吸引力: ${product.specs.suction}点</span>
+                            <span class="spec-tag">静音性: ${product.specs.noise}点</span>
+                            <span class="spec-tag">アプリ: ${product.specs.app}点</span>
+                        </div>
+                        
+                        <div class="product-cta">
+                            <div class="btn btn-view">詳細な分析を見る <i class="fas fa-arrow-right"></i></div>
+                        </div>
+                    </div>
+                </a>
+            `).join('');
+        }
+
+        // Filter products
+        function filterProducts() {
+            // Check if data is available
+            if (typeof productsData === 'undefined') {
+                console.error('productsData が読み込まれていません');
+                return;
+            }
+
+            const searchTerm = searchInput.value.toLowerCase();
+            const selectedManufacturer = manufacturerFilter.value;
+            const selectedPrice = priceFilter.value;
+            const selectedRating = ratingFilter.value;
+
+            let filtered = productsData.filter(product => {
+                // Search term
+                const matchesSearch = searchTerm === '' || 
+                    product.name.toLowerCase().includes(searchTerm) ||
+                    product.manufacturer.toLowerCase().includes(searchTerm) ||
+                    product.badges.some(badge => badge.toLowerCase().includes(searchTerm));
+
+                // Manufacturer
+                const matchesManufacturer = selectedManufacturer === 'すべて' || 
+                    product.manufacturer === selectedManufacturer;
+
+                // Price
+                let matchesPrice = true;
+                if (selectedPrice !== 'すべて') {
+                    const priceRange = priceRanges.find(r => r.label === selectedPrice);
+                    matchesPrice = product.price >= priceRange.min && product.price < priceRange.max;
+                }
+
+                // Rating
+                let matchesRating = true;
+                if (selectedRating !== 'すべて') {
+                    const ratingFilter = ratingFilters.find(r => r.label === selectedRating);
+                    matchesRating = product.rating >= ratingFilter.min;
+                }
+
+                return matchesSearch && matchesManufacturer && matchesPrice && matchesRating;
+            });
+
+            // Sort
+            const sortValue = sortSelect.value;
+            switch (sortValue) {
+                case 'rating-desc':
+                    filtered.sort((a, b) => b.rating - a.rating);
+                    break;
+                case 'rating-asc':
+                    filtered.sort((a, b) => a.rating - b.rating);
+                    break;
+                case 'price-asc':
+                    filtered.sort((a, b) => a.price - b.price);
+                    break;
+                case 'price-desc':
+                    filtered.sort((a, b) => b.price - a.price);
+                    break;
+                case 'reviews-desc':
+                    filtered.sort((a, b) => b.reviewCount - a.reviewCount);
+                    break;
+            }
+
+            renderProducts(filtered);
+        }
+
+        // Event listeners
+        searchInput.addEventListener('input', filterProducts);
+        manufacturerFilter.addEventListener('change', filterProducts);
+        priceFilter.addEventListener('change', filterProducts);
+        ratingFilter.addEventListener('change', filterProducts);
+        sortSelect.addEventListener('change', filterProducts);
+
+        // Initialize when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', function() {
+                console.log('DOM loaded');
+                console.log('productsData:', typeof productsData !== 'undefined' ? productsData.length + ' products' : 'undefined');
+                console.log('manufacturers:', typeof manufacturers !== 'undefined' ? manufacturers : 'undefined');
+                initializeFilters();
+                filterProducts();
+            });
+        } else {
+            console.log('DOM already loaded');
+            console.log('productsData:', typeof productsData !== 'undefined' ? productsData.length + ' products' : 'undefined');
+            console.log('manufacturers:', typeof manufacturers !== 'undefined' ? manufacturers : 'undefined');
+            initializeFilters();
+            filterProducts();
+        }
+    </script>
+</body>
+</html>

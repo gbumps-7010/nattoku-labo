@@ -1,0 +1,1582 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="製品の口コミ統計分析。詳細データを公開。">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <link rel="canonical" href="https://www.nattoku-labo.com/products/roomba-max-705-combo-autowash.html">
+    <title>製品名 詳細分析 | もう失敗しない。ナットクLabo</title>
+    
+    <!-- 構造化データ（SEO強化） - product-loader.jsが自動更新 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "製品名",
+      "description": "製品の詳細分析レポート",
+      "brand": {
+        "@type": "Brand",
+        "name": "メーカー名"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.5",
+        "reviewCount": "100",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "50000",
+        "priceCurrency": "JPY",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+    </script>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    
+    <!-- ナビゲーションCSS -->
+    <link rel="stylesheet" href="css/navigation.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary-color: #1e40af;
+            --secondary-color: #0f172a;
+            --accent-color: #0ea5e9;
+            --excellent-color: #059669;
+            --good-color: #0284c7;
+            --average-color: #ca8a04;
+            --poor-color: #dc2626;
+            --dark: #1e293b;
+            --light-bg: #f8fafc;
+            --white: #ffffff;
+            --gray-50: #f8fafc;
+            --gray-100: #f1f5f9;
+            --gray-200: #e2e8f0;
+            --gray-300: #cbd5e1;
+            --gray-400: #94a3b8;
+            --gray-500: #64748b;
+            --gray-600: #475569;
+            --gray-700: #334155;
+            --gray-800: #1e293b;
+            --gray-900: #0f172a;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: var(--light-bg);
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: var(--white);
+            padding: 2rem 0;
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            opacity: 0.9;
+        }
+        
+        .breadcrumb a {
+            color: var(--white);
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+        
+        .breadcrumb a:hover {
+            opacity: 0.7;
+        }
+        
+        /* パンくずリストの製品名を小さく */
+        .breadcrumb .product-title {
+            font-size: 0.75rem;
+            opacity: 0.8;
+        }
+        
+        /* 製品名を小さく */
+        .product-header h1.product-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 1.3;
+            margin: 0;
+        }
+        
+        .product-header {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+        
+        .product-image-header {
+            width: 220px;
+            height: 220px;
+            background: var(--white);
+            border-radius: 12px;
+            padding: 1rem;
+            object-fit: contain;
+        }
+        
+        .product-info {
+            flex: 1;
+            position: relative;
+        }
+        
+        .performance-scores {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+        
+        .score-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .score-label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            opacity: 0.95;
+        }
+        
+        .score-value {
+            font-size: 1.25rem;
+            font-weight: 900;
+            color: var(--accent-color);
+        }
+        
+        .product-title {
+            font-size: 2rem;
+            font-weight: 900;
+            margin-bottom: 0.5rem;
+        }
+        
+        .product-meta {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            opacity: 0.95;
+        }
+        
+        .rating-display {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+        
+        .stars i {
+            color: var(--warning-color);
+        }
+        
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        
+        /* Summary Stats */
+        .summary-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        .stat-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: var(--primary-color);
+            display: block;
+        }
+        
+        .stat-label {
+            color: var(--gray-600);
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+        
+        /* Section */
+        section {
+            margin-bottom: 3rem;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: var(--dark);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        .section-title i {
+            color: var(--primary-color);
+        }
+        
+        /* Card */
+        .card {
+            background: var(--white);
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        /* Chart Container */
+        .chart-container {
+            position: relative;
+            height: 400px;
+            margin-top: 1rem;
+        }
+        
+        /* Performance Cards - 古いデザインの詳細カード */
+        .performance-details-grid {
+            margin-top: 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
+        }
+        
+        .performance-detail-card {
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 4px solid;
+        }
+        
+        .performance-detail-card.high-score {
+            background: #f0fdf4;
+            border-color: #10b981;
+        }
+        
+        .performance-detail-card.medium-score {
+            background: #f0f9ff;
+            border-color: #2563eb;
+        }
+        
+        .performance-detail-card.low-score {
+            background: #fee2e2;
+            border-color: #dc2626;
+        }
+        
+        .performance-detail-card h4 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            margin: 0 0 0.5rem 0;
+        }
+        
+        .performance-detail-card.high-score h4 {
+            color: #065f46;
+        }
+        
+        .performance-detail-card.medium-score h4 {
+            color: #1e3a8a;
+        }
+        
+        .performance-detail-card.low-score h4 {
+            color: #991b1b;
+        }
+        
+        .performance-detail-card .rank-badge {
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin: 0 0 0.5rem 0;
+        }
+        
+        .performance-detail-card.high-score .rank-badge {
+            color: #10b981;
+        }
+        
+        .performance-detail-card.medium-score .rank-badge {
+            color: #2563eb;
+        }
+        
+        .performance-detail-card.low-score .rank-badge {
+            color: #dc2626;
+        }
+        
+        .performance-detail-card p {
+            font-size: 0.85rem;
+            color: #475569;
+            margin: 0;
+            line-height: 1.5;
+        }
+        
+        /* Problems Grid */
+        .problems-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+        
+        .problem-card {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            border-left: 5px solid var(--danger-color);
+            transition: all 0.3s ease;
+        }
+        
+        /* 重要度バッジ */
+        .importance-badge {
+            display: inline-block;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            margin-left: 0.5rem;
+        }
+        
+        .importance-badge.critical {
+            background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+            color: #991b1b;
+            border: 2px solid #ef4444;
+        }
+        
+        .importance-badge.high {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            color: #92400e;
+            border: 2px solid #f59e0b;
+        }
+        
+        .importance-badge.medium {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+            color: #1e40af;
+            border: 2px solid #3b82f6;
+        }
+        
+        /* カード全体のスタイル強調 */
+        .problem-card.critical-issue {
+            border-left: 5px solid #ef4444;
+            background: linear-gradient(135deg, #fef2f2 0%, #ffffff 100%);
+        }
+        
+        .problem-card.high-issue {
+            border-left: 5px solid #f59e0b;
+            background: linear-gradient(135deg, #fffbeb 0%, #ffffff 100%);
+        }
+        
+        .problem-card.medium-issue {
+            border-left: 4px solid #3b82f6;
+        }
+        
+        .problem-card.critical-issue:hover {
+            box-shadow: 0 8px 24px rgba(239, 68, 68, 0.25);
+            transform: translateY(-2px);
+        }
+        
+        .problem-card.high-issue:hover {
+            box-shadow: 0 8px 24px rgba(245, 158, 11, 0.25);
+            transform: translateY(-2px);
+        }
+        
+        .problem-card:hover {
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+            transform: translateY(-1px);
+        }
+        
+        .problem-rank {
+            display: inline-block;
+            background: var(--danger-color);
+            color: var(--white);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        
+        .problem-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            color: var(--dark);
+        }
+        
+        .problem-percentage {
+            display: inline-block;
+            background: rgba(239, 68, 68, 0.1);
+            color: var(--danger-color);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        .problem-description {
+            color: var(--gray-700);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        /* Success Strategies Styling */
+        .success-strategies .problem-card {
+            border-left: 5px solid #0284c7;
+            background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%);
+        }
+        
+        .success-strategies .problem-rank {
+            background: #0284c7;
+        }
+        
+        .technical-solution {
+            background: white;
+            padding: 1.25rem;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            border: 2px solid #e5e7eb;
+            transition: all 0.3s ease;
+        }
+        
+        .technical-solution:hover {
+            border-color: #0284c7;
+            box-shadow: 0 4px 12px rgba(2, 132, 199, 0.15);
+        }
+        
+        .solution-header {
+            display: flex; 
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 0.75rem;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .solution-method-name {
+            font-weight: 700;
+            color: #1e293b;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .solution-badges {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+        
+        .effectiveness-badge {
+            padding: 0.3rem 0.85rem;
+            border-radius: 14px;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+        
+        .effectiveness-high {
+            background: #dcfce7;
+            color: #166534;
+        }
+        
+        .effectiveness-medium {
+            background: #fef3c7;
+            color: #92400e;
+        }
+        
+        .technical-level-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            padding: 0.3rem 0.85rem;
+            background: #f1f5f9;
+            border-radius: 14px;
+            font-size: 0.75rem;
+            color: #475569;
+            font-weight: 600;
+        }
+        
+        .environmental-factor-badge {
+            display: inline-block;
+            padding: 0.4rem 1rem;
+            background: #fef3c7;
+            color: #92400e;
+            border-radius: 16px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        .prevention-note {
+            margin-top: 1.25rem;
+            padding: 1rem 1.25rem;
+            background: #eff6ff;
+            border-radius: 10px;
+            border-left: 3px solid #0284c7;
+        }
+        
+        .prevention-note-title {
+            font-weight: 700;
+            color: #1e40af;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        /* Consumable Item Styling */
+        .consumable-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 1.25rem;
+            background: #f8fafc;
+            border-radius: 10px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+        }
+        
+        .consumable-item:hover {
+            background: #f1f5f9;
+            border-color: #cbd5e1;
+        }
+        
+        .consumable-name {
+            font-weight: 600;
+            color: #1e293b;
+            font-size: 0.95rem;
+        }
+        
+        .consumable-details {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+            font-size: 0.85rem;
+        }
+        
+        .consumable-frequency {
+            color: #64748b;
+            background: white;
+            padding: 0.35rem 0.85rem;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+        
+        .consumable-cost {
+            font-weight: 700;
+            color: #0284c7;
+            font-size: 0.95rem;
+        }
+        
+        .solutions {
+            background: var(--gray-100);
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+        
+        .solutions-title {
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .solutions ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .solutions li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .solutions li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--success-color);
+            font-weight: 700;
+        }
+        
+        /* Keyword Tags */
+        .keyword-tag {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        
+        .keyword-tag.positive {
+            background: rgba(16, 185, 129, 0.1);
+            color: var(--success-color);
+            border: 1px solid var(--success-color);
+        }
+        
+        .keyword-tag.negative {
+            background: rgba(239, 68, 68, 0.1);
+            color: var(--danger-color);
+            border: 1px solid var(--danger-color);
+        }
+        
+        /* CTA Button Hover Effects */
+        .cta-amazon:hover,
+        .cta-rakuten:hover,
+        .cta-yahoo:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 28px rgba(0, 0, 0, 0.25) !important;
+        }
+        
+        .cta-amazon:active,
+        .cta-rakuten:active,
+        .cta-yahoo:active {
+            transform: translateY(-1px);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .product-header {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .product-image-header {
+                margin: 0 auto;
+            }
+            
+            .summary-stats {
+                grid-template-columns: 1fr;
+            }
+            
+            .problems-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .performance-details-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .consumable-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.75rem;
+            }
+            
+            .solution-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+        
+        /* 価格情報ツールチップ */
+        .price-info-tooltip {
+            display: inline-block;
+            position: relative;
+            cursor: help;
+            color: #60a5fa;
+            margin-left: 0.5rem;
+            font-size: 1.2rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        
+        .price-info-tooltip:hover {
+            color: #3b82f6;
+            transform: scale(1.1);
+        }
+        
+        .price-note {
+            display: block;
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.6);
+            margin-top: 0.25rem;
+            font-weight: 400;
+        }
+        
+        .price-info-tooltip .tooltip-text {
+            visibility: hidden;
+            opacity: 0;
+            background-color: rgba(0, 0, 0, 0.95);
+            color: #fff;
+            text-align: left;
+            padding: 1rem;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 400;
+            line-height: 1.6;
+            
+            /* 位置調整 */
+            position: absolute;
+            z-index: 1000;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 320px;
+            max-width: 90vw;
+            
+            /* アニメーション */
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+            
+            /* 影 */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+        
+        .price-info-tooltip .tooltip-text::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border-width: 8px;
+            border-style: solid;
+            border-color: rgba(0, 0, 0, 0.95) transparent transparent transparent;
+        }
+        
+        .price-info-tooltip:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
+        
+        @media (max-width: 768px) {
+            .price-info-tooltip .tooltip-text {
+                width: 280px;
+                font-size: 0.8rem;
+                padding: 0.875rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="breadcrumb">
+                <a href="../index.html"><i class="fas fa-home"></i> ホーム</a>
+                <span>/</span>
+                <span class="product-title">製品名</span>
+            </div>
+            
+            <div class="product-header">
+                <img src="" alt="製品名" class="product-image-header" data-dynamic="imageUrl">
+                
+                <div class="product-info">
+                    <p style="font-size: 1rem; font-weight: 600; opacity: 0.9; margin-bottom: 0.5rem;">
+                        <span data-dynamic="manufacturer">メーカー名</span>
+                    </p>
+                    <h1 class="product-title" data-dynamic="productName">製品名</h1>
+                    
+                    <!-- 性能スコア表示 -->
+                    <div class="performance-scores" id="performanceScores">
+                        <!-- JavaScriptで動的に挿入 -->
+                    </div>
+                    
+                    <div style="font-size: 2rem; font-weight: 900; color: white; margin: 1rem 0;">
+                        <span data-dynamic="price">00,000</span>
+                        <span class="price-info-tooltip">
+                            <i class="fas fa-info-circle"></i>
+                            <span class="tooltip-text">
+                                <strong style="display: block; margin-bottom: 0.5rem; color: #60a5fa;">💡 価格について</strong>
+                                表示価格はメーカー希望小売価格です。<br><br>
+                                実際の販売価格は、セールやポイント還元により変動します。<br><br>
+                                最新の市場価格は、下記の各ECサイトボタンからご確認ください。
+                            </span>
+                        </span>
+                        <span class="price-note">参考価格（メーカー希望小売価格） <i class="fas fa-info-circle" style="font-size: 0.7rem; color: #60a5fa;"></i></span>
+                    </div>
+                    
+                    <div class="product-meta">
+                        <div class="rating-display">
+                            <div class="stars" data-dynamic="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span data-dynamic="overallRating">4.5</span>
+                            <span style="opacity: 0.8;">（<span data-dynamic="totalReviews">100</span>件）</span>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: 20px; font-weight: 600;">
+                            信頼度: <span data-dynamic="reliabilityScore">85.0</span>点
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Summary Stats -->
+        <div class="summary-stats">
+            <div class="stat-card">
+                <span class="stat-number" data-dynamic="categoryC.userSatisfaction.score">90</span>
+                <p class="stat-label">ユーザー満足度</p>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" data-dynamic="categoryC.repurchaseIntention.percentage">85%</span>
+                <p class="stat-label">リピート意向</p>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" style="color: var(--danger-color);" data-dynamic="categoryC.failureRate.percentage">5%</span>
+                <p class="stat-label">不具合率</p>
+            </div>
+        </div>
+        
+        <!-- Data Reliability -->
+        <section>
+            <h2 class="section-title">
+                <i class="fas fa-shield-check"></i>
+                この分析データの信頼度
+            </h2>
+            <div class="card" style="background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%); border: 2px solid #e0f2fe;">
+                <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 2rem; margin-bottom: 2rem; padding: 2rem; background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                    <div>
+                        <p style="font-size: 0.95rem; color: #64748b; margin-bottom: 0.5rem; font-weight: 600; letter-spacing: 0.5px;">分析の信頼度スコア</p>
+                        <p style="font-size: 3rem; font-weight: 900; color: #0284c7; line-height: 1; margin-bottom: 0.5rem;" data-dynamic="reliability.score">85.5</p>
+                        <p style="font-size: 0.85rem; color: #64748b;">100点満点中</p>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 1rem; padding: 1rem 1.5rem; background: linear-gradient(135deg, #ecfeff 0%, #f0f9ff 100%); border-radius: 10px; border: 1px solid #a5f3fc;">
+                        <i class="fas fa-microchip" style="color: #06b6d4; font-size: 1.5rem;"></i>
+                        <div>
+                            <p style="font-size: 0.75rem; color: #0e7490; margin: 0; font-weight: 600;">記事最終更新日</p>
+                            <p style="font-size: 1rem; font-weight: 700; color: #164e63; margin: 0;" data-dynamic="updateInfo.lastUpdated">2026-03-18</p>
+                        </div>
+                        <div class="update-status-badge" data-dynamic="updateInfo.badge" style="padding: 0.5rem 1rem; background: #dcfce7; color: #166534; border-radius: 8px; font-weight: 700; font-size: 0.85rem;">
+                            <i class="fas fa-check-circle"></i> 最新対応済
+                        </div>
+                    </div>
+                </div>
+                
+                <p style="color: #475569; font-size: 0.95rem; line-height: 1.7; margin-bottom: 2rem; padding: 0 0.5rem;">
+                    このスコアは、レビューデータの<strong>量が妥当か</strong>、<strong>使った人の意見がおおむね一致しているか</strong>、<strong>最新の状況を反映しているか</strong>を総合的に評価したものです。85点以上は「購入判断の参考として、信頼できる水準」と考えられます。
+                </p>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+                    <!-- 口コミ件数の十分さ -->
+                    <div style="background: white; padding: 1.75rem; border-radius: 12px; border-left: 5px solid #0284c7; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+                        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+                            <h3 style="font-size: 1rem; font-weight: 700; color: #1e293b; margin: 0; display: flex; align-items: center; gap: 0.5rem;">
+                                <i class="fas fa-database" style="color: #0284c7;"></i>
+                                口コミ件数の十分さ
+                            </h3>
+                            <span style="font-size: 0.75rem; font-weight: 700; color: #0284c7; background: #e0f2fe; padding: 0.35rem 0.85rem; border-radius: 16px;">重要度 60%</span>
+                        </div>
+                        <div style="display: flex; align-items: baseline; gap: 0.5rem; margin-bottom: 1rem;">
+                            <span style="font-size: 2.5rem; font-weight: 900; color: #0284c7;" data-dynamic="reliability.dataAdequacy.score">88</span>
+                            <span style="font-size: 1rem; color: #64748b; font-weight: 600;">/ 100</span>
+                        </div>
+                        <p style="font-size: 0.9rem; color: #64748b; line-height: 1.6; margin: 0;" data-dynamic="reliability.dataAdequacy.description">
+                            収集したレビューサンプル数が統計的に十分であり、追加データによる評価変動リスクが低い状態です。
+                        </p>
+                    </div>
+                    
+                    <!-- 使った人の意見の一致度 -->
+                    <div style="background: white; padding: 1.75rem; border-radius: 12px; border-left: 5px solid #7c3aed; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+                        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+                            <h3 style="font-size: 1rem; font-weight: 700; color: #1e293b; margin: 0; display: flex; align-items: center; gap: 0.5rem;">
+                                <i class="fas fa-balance-scale" style="color: #7c3aed;"></i>
+                                使った人の意見の一致度
+                            </h3>
+                            <span style="font-size: 0.75rem; font-weight: 700; color: #7c3aed; background: #f3e8ff; padding: 0.35rem 0.85rem; border-radius: 16px;">重要度 30%</span>
+                        </div>
+                        <div style="display: flex; align-items: baseline; gap: 0.5rem; margin-bottom: 1rem;">
+                            <span style="font-size: 2.5rem; font-weight: 900; color: #7c3aed;" data-dynamic="reliability.consistency.percentage">82</span>
+                            <span style="font-size: 1.5rem; color: #7c3aed; font-weight: 700;">%</span>
+                        </div>
+                        <p style="font-size: 0.9rem; color: #64748b; line-height: 1.6; margin: 0;" data-dynamic="reliability.consistency.description">
+                            主要評価項目において、ユーザー間の評価が高度に一致しており、製品の実力が明確に収束しています。
+                        </p>
+                    </div>
+                    
+                    <!-- 最新の改善への対応状況 -->
+                    <div style="background: white; padding: 1.75rem; border-radius: 12px; border-left: 5px solid #10b981; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+                        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+                            <h3 style="font-size: 1rem; font-weight: 700; color: #1e293b; margin: 0; display: flex; align-items: center; gap: 0.5rem;">
+                                <i class="fas fa-clock-rotate-left" style="color: #10b981;"></i>
+                                最新の改善への対応状況
+                            </h3>
+                            <span style="font-size: 0.75rem; font-weight: 700; color: #10b981; background: #d1fae5; padding: 0.35rem 0.85rem; border-radius: 16px;">重要度 10%</span>
+                        </div>
+                        <div style="display: flex; align-items: baseline; gap: 0.5rem; margin-bottom: 1rem;">
+                            <span style="font-size: 2.5rem; font-weight: 900; color: #10b981;" data-dynamic="reliability.freshness.score">86</span>
+                            <span style="font-size: 1rem; color: #64748b; font-weight: 600;">/ 100</span>
+                        </div>
+                        <p style="font-size: 0.9rem; color: #64748b; line-height: 1.6; margin: 0;" data-dynamic="reliability.freshness.description">
+                            直近30日以内に投稿されたレビューが多数を占め、最新のファームウェア・運用実態を反映しています。
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- 仕様整合性の注記 -->
+                <div style="margin-top: 1.5rem; padding: 1.25rem; background: #fef3c7; border-radius: 10px; border-left: 4px solid #f59e0b; display: none;" data-dynamic="updateInfo.note-container">
+                    <div style="display: flex; gap: 1rem; align-items: start;">
+                        <i class="fas fa-info-circle" style="color: #f59e0b; font-size: 1.2rem; margin-top: 0.2rem;"></i>
+                        <div style="flex: 1;">
+                            <p style="font-weight: 700; color: #92400e; margin-bottom: 0.5rem; font-size: 0.95rem;">最新アップデートへの対応状況</p>
+                            <p style="color: #78350f; font-size: 0.9rem; line-height: 1.6; margin: 0;" data-dynamic="updateInfo.note">
+                                本記事は最新ファームウェア（v4.2.8）に対応済みです。過去バージョンで報告されていた接続不具合は解消されています。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Performance Radar -->
+        <section>
+            <h2 class="section-title">
+                <i class="fas fa-chart-radar"></i>
+                総合性能分析
+            </h2>
+            <div class="card">
+                <div class="chart-container">
+                    <canvas id="radarChart"></canvas>
+                </div>
+                
+                <!-- 評価項目の詳細説明 - product-loader.jsが動的生成 -->
+                <div class="performance-details-grid" data-dynamic="performance-details">
+                    <!-- ここにproduct-loader.jsが詳細カードを自動生成 -->
+                </div>
+            </div>
+        </section>
+        
+        <!-- メインCTA: 総合性能分析の直後 -->
+        <section style="background: #f8fafc; padding: 2.5rem; border-radius: 16px; text-align: center; margin: 2rem 0; border: 2px solid #e2e8f0;">
+            <h3 style="color: #1e293b; font-size: 1.6rem; margin-bottom: 0.75rem; font-weight: 800;">
+                💡 この製品の詳細情報を確認する
+            </h3>
+            <p style="color: #64748b; margin-bottom: 2rem; font-size: 1.05rem; line-height: 1.6;">
+                価格比較・在庫状況・最新レビューを各サイトでチェック<br>
+                <span style="font-size: 0.9rem;">4大ECサイトの価格・ポイント還元率・配送情報を一括確認</span>
+            </p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; max-width: 1000px; margin: 0 auto;">
+                <a href="#" class="cta-amazon" data-dynamic="cta.amazon" target="_blank" rel="nofollow noopener"
+                   style="background: #ff9900; color: white; padding: 1.25rem 1.5rem; border-radius: 10px; text-decoration: none; font-weight: 700; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center; gap: 0.5rem; box-shadow: 0 4px 16px rgba(255, 153, 0, 0.25);">
+                    <i class="fab fa-amazon" style="font-size: 1.3rem;"></i>
+                    <span>Amazon で見る</span>
+                </a>
+                <a href="#" class="cta-rakuten" data-dynamic="cta.rakuten" target="_blank" rel="nofollow noopener"
+                   style="background: #bf0000; color: white; padding: 1.25rem 1.5rem; border-radius: 10px; text-decoration: none; font-weight: 700; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center; gap: 0.5rem; box-shadow: 0 4px 16px rgba(191, 0, 0, 0.25);">
+                    <span style="font-size: 1.3rem; font-weight: 900;">楽</span>
+                    <span>楽天市場 で見る</span>
+                </a>
+                <a href="#" class="cta-yahoo" data-dynamic="cta.yahoo" target="_blank" rel="nofollow noopener"
+                   style="background: #ff0033; color: white; padding: 1.25rem 1.5rem; border-radius: 10px; text-decoration: none; font-weight: 700; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center; gap: 0.5rem; box-shadow: 0 4px 16px rgba(255, 0, 51, 0.25);">
+                    <span style="font-size: 1.3rem; font-weight: 900;">Y!</span>
+                    <span>Yahoo! で見る</span>
+                </a>
+
+            </div>
+        </section>
+        
+        <!-- Keywords -->
+        <section>
+            <h2 class="section-title">
+                <i class="fas fa-tags"></i>
+                レビューキーワード
+            </h2>
+            <div class="card">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem;">
+                    <div>
+                        <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem; color: var(--success-color); display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-thumbs-up"></i> 高評価キーワード
+                        </h3>
+                        <div style="height: 400px; position: relative;">
+                            <canvas id="positiveKeywordsChart"></canvas>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem; color: var(--danger-color); display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-thumbs-down"></i> 低評価キーワード
+                        </h3>
+                        <div style="height: 400px; position: relative;">
+                            <canvas id="negativeKeywordsChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Top Complaints -->
+        <section>
+            <h2 class="section-title">
+                <i class="fas fa-exclamation-triangle"></i>
+                主な不満点と対策
+            </h2>
+            <div class="problems-grid complaints-list">
+                <!-- product-loader.jsが自動生成 -->
+            </div>
+        </section>
+        
+        <!-- Attribute Scores -->
+        <section>
+            <h2 class="section-title">
+                <i class="fas fa-users"></i>
+                ライフスタイル別の相性診断
+            </h2>
+            <div style="background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%); padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; border: 2px solid #bfdbfe;">
+                <div style="display: flex; gap: 1rem; align-items: start;">
+                    <i class="fas fa-info-circle" style="color: #0284c7; font-size: 1.5rem; margin-top: 0.1rem;"></i>
+                    <div>
+                        <p style="font-weight: 600; color: #1e293b; margin-bottom: 0.5rem; font-size: 1rem;">スコア算出について</p>
+                        <p style="color: #475569; font-size: 0.9rem; line-height: 1.6; margin: 0;">
+                            各ライフスタイルのスコアは、<strong>実際のユーザーレビューを分析</strong>し、それぞれの生活環境に重要な項目（吸引力、静音性、メンテナンス性など）を評価して算出しています。100点満点で、<strong>90点以上が非常におすすめ</strong>、80点以上が推奨レベルです。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                    <div class="attribute-card" data-attribute="petOwner">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                            <h3 style="font-size: 1.1rem; font-weight: 700; margin: 0;" class="attribute-title">🐕 ペットオーナー</h3>
+                            <span style="font-size: 1.5rem; font-weight: 700; color: var(--primary-color);" class="attribute-overall-score">--</span>
+                        </div>
+                        <div class="attribute-details">
+                            <!-- product-loader.jsが自動生成 -->
+                        </div>
+                    </div>
+                    
+                    <div class="attribute-card" data-attribute="apartment">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                            <h3 style="font-size: 1.1rem; font-weight: 700; margin: 0;" class="attribute-title">🏢 アパート・マンション</h3>
+                            <span style="font-size: 1.5rem; font-weight: 700; color: var(--primary-color);" class="attribute-overall-score">--</span>
+                        </div>
+                        <div class="attribute-details">
+                            <!-- product-loader.jsが自動生成 -->
+                        </div>
+                    </div>
+                    
+                    <div class="attribute-card" data-attribute="workingProfessional">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                            <h3 style="font-size: 1.1rem; font-weight: 700; margin: 0;" class="attribute-title">💼 働くプロフェッショナル</h3>
+                            <span style="font-size: 1.5rem; font-weight: 700; color: var(--primary-color);" class="attribute-overall-score">--</span>
+                        </div>
+                        <div class="attribute-details">
+                            <!-- product-loader.jsが自動生成 -->
+                        </div>
+                    </div>
+                    
+                    <div class="attribute-card" data-attribute="familyHome">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                            <h3 style="font-size: 1.1rem; font-weight: 700; margin: 0;" class="attribute-title">🏠 ファミリー世帯</h3>
+                            <span style="font-size: 1.5rem; font-weight: 700; color: var(--primary-color);" class="attribute-overall-score">--</span>
+                        </div>
+                        <div class="attribute-details">
+                            <!-- product-loader.jsが自動生成 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Time Saving / Quality of Life -->
+        <section>
+            <h2 class="section-title">
+                <i class="fas fa-clock"></i>
+                毎日の掃除から解放されて、自由な時間が増えます
+            </h2>
+            <div class="card" style="background: linear-gradient(135deg, #fef3c7 0%, #ffffff 100%); border: 2px solid #fde68a;">
+                <div style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: white; padding: 2.5rem; border-radius: 14px; margin-bottom: 2rem; text-align: center; box-shadow: 0 4px 16px rgba(245, 158, 11, 0.2);">
+                    <p style="font-size: 1.05rem; opacity: 0.95; margin-bottom: 0.75rem; font-weight: 600; letter-spacing: 0.5px;">年間で生まれる自由時間</p>
+                    <p style="font-size: 3.5rem; font-weight: 900; margin-bottom: 0.75rem; line-height: 1;">
+                        約<span data-dynamic="timeSaving.annualHours">116</span>時間
+                    </p>
+                    <p style="font-size: 1rem; opacity: 0.92; margin: 0; line-height: 1.5;">
+                        手動清掃と比べて、これだけの時間が自由に使えます<br>
+                        <span style="font-size: 0.9rem; opacity: 0.85;">（1日8時間労働に換算すると約<span data-dynamic="timeSaving.workDaysEquivalent">14.5</span>日分）</span>
+                    </p>
+                </div>
+                
+                <p style="color: #475569; font-size: 0.95rem; line-height: 1.7; margin-bottom: 2rem; padding: 0 0.5rem;">
+                    以下の時間は、<strong>手動清掃（掃除機＋フローリングワイパー）と比較した場合の創出時間</strong>です。毎日の掃除から解放され、趣味や家族との時間など、より大切なことに使える時間が生まれます。
+                </p>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+                    <!-- 日次時間創出 -->
+                    <div style="background: white; padding: 1.75rem; border-radius: 12px; border: 2px solid #e5e7eb; text-align: center; transition: all 0.3s ease;">
+                        <p style="font-size: 0.9rem; color: #64748b; margin-bottom: 0.75rem; font-weight: 600;">1日あたり</p>
+                        <p style="font-size: 2.5rem; font-weight: 900; color: #f59e0b; margin-bottom: 0.5rem;">
+                            約<span data-dynamic="timeSaving.dailyMinutes">19</span>分
+                        </p>
+                        <p style="font-size: 0.85rem; color: #64748b; line-height: 1.5; margin: 0.75rem 0 0 0;">
+                            毎日、このぶんの時間が自由に
+                        </p>
+                    </div>
+                    
+                    <!-- 月次時間創出 -->
+                    <div style="background: white; padding: 1.75rem; border-radius: 12px; border: 2px solid #e5e7eb; text-align: center; transition: all 0.3s ease;">
+                        <p style="font-size: 0.9rem; color: #64748b; margin-bottom: 0.75rem; font-weight: 600;">月間</p>
+                        <p style="font-size: 2.5rem; font-weight: 900; color: #f59e0b; margin-bottom: 0.5rem;">
+                            約<span data-dynamic="timeSaving.monthlyHours">9.7</span>時間
+                        </p>
+                        <p style="font-size: 0.85rem; color: #64748b; line-height: 1.5; margin: 0.75rem 0 0 0;">
+                            映画約5本分の時間が生まれます
+                        </p>
+                    </div>
+                    
+                    <!-- 年次時間創出 -->
+                    <div style="background: white; padding: 1.75rem; border-radius: 12px; border: 2px solid #f59e0b; text-align: center; box-shadow: 0 4px 12px rgba(245, 158, 11, 0.15); transition: all 0.3s ease;">
+                        <p style="font-size: 0.9rem; color: #64748b; margin-bottom: 0.75rem; font-weight: 600;">年間</p>
+                        <p style="font-size: 2.5rem; font-weight: 900; color: #f59e0b; margin-bottom: 0.5rem;">
+                            約<span data-dynamic="timeSaving.annualHours">116</span>時間
+                        </p>
+                        <p style="font-size: 0.85rem; color: #92400e; line-height: 1.5; margin: 0.75rem 0 0 0;">
+                            約<span data-dynamic="timeSaving.workDaysEquivalent">14.5</span>日分の自由時間
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- 創出時間の根拠 -->
+                <div style="background: white; padding: 1.75rem; border-radius: 12px; border: 2px solid #e5e7eb;">
+                    <h3 style="font-size: 1.05rem; font-weight: 700; margin-bottom: 1.25rem; color: #1e293b; display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-calculator" style="color: #f59e0b;"></i>
+                        計算の根拠
+                    </h3>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.7; margin: 0;" data-dynamic="timeSaving.methodology">
+                        手動清掃の場合、1日あたり約19分（掃除機10分＋フローリングワイパー9分）を要します。本製品はスケジュール設定により完全自動で動作するため、この時間がそのまま自由時間として創出されます。年間365日で計算すると約116時間（6,935分）となります。
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Daily Maintenance Cost -->
+        <section>
+            <h2 class="section-title">
+                <i class="fas fa-piggy-bank"></i>
+                毎日使い続けるためのコスト（維持費）
+            </h2>
+            <div class="card" style="background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%); border: 2px solid #d1fae5;">
+                <div style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; padding: 2.5rem; border-radius: 14px; margin-bottom: 2rem; text-align: center; box-shadow: 0 4px 16px rgba(16, 185, 129, 0.2);">
+                    <p style="font-size: 1.05rem; opacity: 0.95; margin-bottom: 0.75rem; font-weight: 600; letter-spacing: 0.5px;">1日あたりの維持費</p>
+                    <p style="font-size: 3.5rem; font-weight: 900; margin-bottom: 0.75rem; line-height: 1;">
+                        約<span data-dynamic="operationalCost.daily">120</span>円
+                    </p>
+                    <p style="font-size: 1rem; opacity: 0.92; margin: 0; line-height: 1.5;">
+                        プロ級の清掃と清潔を、毎日この価格で維持できます<br>
+                        <span style="font-size: 0.9rem; opacity: 0.85;">（消耗品の実費を日割り計算した金額）</span>
+                    </p>
+                </div>
+                
+                <p style="color: #475569; font-size: 0.95rem; line-height: 1.7; margin-bottom: 2rem; padding: 0 0.5rem;">
+                    以下の金額は、<strong>2026年3月時点の市場価格に基づいた実費</strong>です。本製品を継続して使うために必要な消耗品のコストを、わかりやすく日割り・月割り・年間でまとめています。
+                </p>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+                    <!-- 日次コスト -->
+                    <div style="background: white; padding: 1.75rem; border-radius: 12px; border: 2px solid #e5e7eb; text-align: center; transition: all 0.3s ease;">
+                        <p style="font-size: 0.9rem; color: #64748b; margin-bottom: 0.75rem; font-weight: 600;">1日あたり</p>
+                        <p style="font-size: 2.5rem; font-weight: 900; color: #0284c7; margin-bottom: 0.5rem;">
+                            約¥<span data-dynamic="operationalCost.daily">120</span>
+                        </p>
+                        <p style="font-size: 0.85rem; color: #64748b; line-height: 1.5; margin: 0;" data-dynamic="operationalCost.dailyNote">
+                            消耗品の実質的な日割りコスト
+                        </p>
+                    </div>
+                    
+                    <!-- 月次コスト -->
+                    <div style="background: white; padding: 1.75rem; border-radius: 12px; border: 2px solid #e5e7eb; text-align: center; transition: all 0.3s ease;">
+                        <p style="font-size: 0.9rem; color: #64748b; margin-bottom: 0.75rem; font-weight: 600;">月間</p>
+                        <p style="font-size: 2.5rem; font-weight: 900; color: #0284c7; margin-bottom: 0.5rem;">
+                            約¥<span data-dynamic="operationalCost.monthly">3,600</span>
+                        </p>
+                        <p style="font-size: 0.85rem; color: #64748b; line-height: 1.5; margin: 0.75rem 0 0 0;">
+                            毎日自動で清潔が維持されます
+                        </p>
+                    </div>
+                    
+                    <!-- 年次コスト -->
+                    <div style="background: white; padding: 1.75rem; border-radius: 12px; border: 2px solid #10b981; text-align: center; box-shadow: 0 4px 12px rgba(16, 185, 129, 0.15); transition: all 0.3s ease;">
+                        <p style="font-size: 0.9rem; color: #64748b; margin-bottom: 0.75rem; font-weight: 600;">年間</p>
+                        <p style="font-size: 2.5rem; font-weight: 900; color: #10b981; margin-bottom: 0.5rem;">
+                            約¥<span data-dynamic="operationalCost.annual">43,200</span>
+                        </p>
+                        <p style="font-size: 0.85rem; color: #166534; line-height: 1.5; margin: 0.75rem 0 0 0;">
+                            1年間の維持費の目安
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- 消耗品内訳 -->
+                <div style="background: white; padding: 1.75rem; border-radius: 12px; border: 2px solid #e5e7eb;">
+                    <h3 style="font-size: 1.05rem; font-weight: 700; margin-bottom: 1.25rem; color: #1e293b; display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-list-check" style="color: #0284c7;"></i>
+                        消耗品の内訳（2026年3月時点の実費）
+                    </h3>
+                    <div style="display: grid; gap: 0.85rem;" data-dynamic="operationalCost.consumables">
+                        <!-- product-loader.jsが自動生成 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Data Quality -->
+        <section>
+            <h2 class="section-title">
+                <i class="fas fa-shield-alt"></i>
+                データ品質保証
+            </h2>
+            <div class="card">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1.5rem; text-align: center;">
+                    <div>
+                        <p style="font-size: 2rem; font-weight: 900; color: var(--primary-color);"><span data-dynamic="dataQuality.totalReviews">100</span>件</p>
+                        <p style="color: var(--gray-600); font-size: 0.9rem;">総レビュー数</p>
+                    </div>
+                    <div>
+                        <p style="font-size: 2rem; font-weight: 900; color: var(--success-color);"><span data-dynamic="dataQuality.adoptedReviews">95</span>件</p>
+                        <p style="color: var(--gray-600); font-size: 0.9rem;">採用データ</p>
+                    </div>
+                    <div>
+                        <p style="font-size: 2rem; font-weight: 900; color: var(--danger-color);"><span data-dynamic="dataQuality.excludedReviews">5</span>件</p>
+                        <p style="color: var(--gray-600); font-size: 0.9rem;">除外データ</p>
+                    </div>
+                    <div>
+                        <p style="font-size: 2rem; font-weight: 900; color: var(--warning-color);"><span data-dynamic="dataQuality.trustScore">85.0</span>点</p>
+                        <p style="color: var(--gray-600); font-size: 0.9rem;">信頼スコア</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Buttons -->
+        <section>
+            <h2 class="section-title">
+                <i class="fas fa-shopping-cart"></i>
+                購入先を比較
+            </h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+                <a href="#" target="_blank" rel="nofollow noopener" class="cta-amazon" data-dynamic="cta.amazon"
+                   style="background: white; padding: 1.5rem; border-radius: 12px; text-decoration: none; border: 3px solid #ff9900; display: flex; flex-direction: column; gap: 0.75rem; transition: all 0.3s ease; box-shadow: 0 6px 20px rgba(255, 153, 0, 0.2); position: relative; overflow: hidden;">
+                    <div style="display: flex; align-items: center; gap: 0.75rem;">
+                        <div style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: #ff9900; border-radius: 8px; box-shadow: 0 2px 8px rgba(255, 153, 0, 0.3);">
+                            <i class="fab fa-amazon" style="color: white; font-size: 1.4rem;"></i>
+                        </div>
+                        <div style="flex: 1; text-align: left;">
+                            <p style="font-weight: 800; font-size: 1.2rem; color: #1e293b; margin: 0;">Amazon.co.jp</p>
+                            <p style="font-size: 0.85rem; color: #64748b; margin: 0; font-weight: 600;">✓ プライム配送対応</p>
+                        </div>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #ff9900 0%, #ff7700 100%); color: white; padding: 1.1rem; border-radius: 10px; text-align: center; font-weight: 800; font-size: 1.05rem; box-shadow: 0 4px 12px rgba(255, 153, 0, 0.3);">
+                        製品詳細を見る →
+                    </div>
+                </a>
+                
+                <a href="#" target="_blank" rel="nofollow noopener" class="cta-rakuten" data-dynamic="cta.rakuten"
+                   style="background: white; padding: 1.5rem; border-radius: 12px; text-decoration: none; border: 3px solid #bf0000; display: flex; flex-direction: column; gap: 0.75rem; transition: all 0.3s ease; box-shadow: 0 6px 20px rgba(191, 0, 0, 0.2); position: relative; overflow: hidden;">
+                    <div style="display: flex; align-items: center; gap: 0.75rem;">
+                        <div style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: #bf0000; border-radius: 8px; box-shadow: 0 2px 8px rgba(191, 0, 0, 0.3);">
+                            <span style="color: white; font-weight: 900; font-size: 1.1rem; font-family: Arial, sans-serif;">楽</span>
+                        </div>
+                        <div style="flex: 1; text-align: left;">
+                            <p style="font-weight: 800; font-size: 1.2rem; color: #1e293b; margin: 0;">楽天市場</p>
+                            <p style="font-size: 0.85rem; color: #64748b; margin: 0; font-weight: 600;">✓ ポイント還元率高</p>
+                        </div>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #bf0000 0%, #a00000 100%); color: white; padding: 1.1rem; border-radius: 10px; text-align: center; font-weight: 800; font-size: 1.05rem; box-shadow: 0 4px 12px rgba(191, 0, 0, 0.3);">
+                        製品詳細を見る →
+                    </div>
+                </a>
+                
+                <a href="#" target="_blank" rel="nofollow noopener" class="cta-yahoo" data-dynamic="cta.yahoo"
+                   style="background: white; padding: 1.5rem; border-radius: 12px; text-decoration: none; border: 3px solid #ff0033; display: flex; flex-direction: column; gap: 0.75rem; transition: all 0.3s ease; box-shadow: 0 6px 20px rgba(255, 0, 51, 0.2); position: relative; overflow: hidden;">
+                    <div style="display: flex; align-items: center; gap: 0.75rem;">
+                        <div style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: #ff0033; border-radius: 8px; box-shadow: 0 2px 8px rgba(255, 0, 51, 0.3);">
+                            <span style="color: white; font-weight: 900; font-size: 1.1rem; font-family: Arial, sans-serif;">Y!</span>
+                        </div>
+                        <div style="flex: 1; text-align: left;">
+                            <p style="font-weight: 800; font-size: 1.2rem; color: #1e293b; margin: 0;">Yahoo!ショッピング</p>
+                            <p style="font-size: 0.85rem; color: #64748b; margin: 0; font-weight: 600;">✓ PayPay還元</p>
+                        </div>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #ff0033 0%, #dd0022 100%); color: white; padding: 1.1rem; border-radius: 10px; text-align: center; font-weight: 800; font-size: 1.05rem; box-shadow: 0 4px 12px rgba(255, 0, 51, 0.3);">
+                        製品詳細を見る →
+                    </div>
+                </a>
+                
+
+            </div>
+            
+            <p style="text-align: center; color: #64748b; font-size: 0.85rem; margin: 1.5rem 0 0 0; line-height: 1.6;">
+                💡 各サイトで<strong>スペック・機能・保証内容・配送オプション</strong>などの詳細情報をご確認いただけます
+            </p>
+        </section>
+    </div>
+    
+    <!-- Product Loader Script -->
+    <script src="js/product-loader.js"></script>
+
+<!-- ナビゲーションシステム V3.14 -->
+<script src="js/navigation.js"></script>
+    
+    <!-- Chart.js Initialization -->
+    <script>
+    // Chart.jsの読み込みを待つ
+    function initCharts() {
+        if (typeof Chart === 'undefined') {
+            console.log('⏳ Chart.js読み込み待機中...');
+            setTimeout(initCharts, 100);
+            return;
+        }
+        
+        console.log('✅ Chart.js読み込み完了');
+        
+        // レーダーチャート初期化
+        window.addEventListener('productDataLoaded', function(e) {
+            const data = e.detail;
+            console.log('📊 チャート描画開始');
+            
+            // レーダーチャート
+            if (data.radarChartData && document.getElementById('radarChart')) {
+                try {
+                    const ctx = document.getElementById('radarChart').getContext('2d');
+                    new Chart(ctx, {
+                        type: 'radar',
+                        data: {
+                            labels: data.radarChartData.labels,
+                            datasets: [{
+                                label: '性能スコア',
+                                data: data.radarChartData.values,
+                                backgroundColor: 'rgba(37, 99, 235, 0.2)',
+                                borderColor: 'rgba(37, 99, 235, 1)',
+                                borderWidth: 2,
+                                pointBackgroundColor: 'rgba(37, 99, 235, 1)',
+                                pointBorderColor: '#fff',
+                                pointHoverBackgroundColor: '#fff',
+                                pointHoverBorderColor: 'rgba(37, 99, 235, 1)'
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            animation: {
+                                duration: 1500,
+                                easing: 'easeOutQuart',
+                                delay: (context) => {
+                                    return context.dataIndex * 100;
+                                }
+                            },
+                            scales: {
+                                r: {
+                                    beginAtZero: true,
+                                    max: 100,
+                                    ticks: {
+                                        stepSize: 20,
+                                        callback: function(value) {
+                                            return value + '点';
+                                        }
+                                    },
+                                    animate: true
+                                }
+                            },
+                            plugins: {
+                                legend: {
+                                    display: false
+                                }
+                            }
+                        }
+                    });
+                    console.log('✅ レーダーチャート描画完了');
+                } catch (error) {
+                    console.error('❌ レーダーチャートエラー:', error);
+                }
+            }
+            
+            // キーワード横棒グラフ初期化
+            if (data.reviewKeywords) {
+                // ポジティブキーワード
+                const positiveCanvas = document.getElementById('positiveKeywordsChart');
+                if (positiveCanvas && data.reviewKeywords.positive) {
+                    try {
+                        const ctx = positiveCanvas.getContext('2d');
+                        const topPositive = data.reviewKeywords.positive.slice(0, 8);
+                        
+                        new Chart(ctx, {
+                            type: 'bar',
+                            data: {
+                                labels: topPositive.map(item => item.keyword),
+                                datasets: [{
+                                    label: '言及数',
+                                    data: topPositive.map(item => item.count),
+                                    backgroundColor: 'rgba(16, 185, 129, 0.8)',
+                                    borderColor: 'rgba(16, 185, 129, 1)',
+                                    borderWidth: 1
+                                }]
+                            },
+                            options: {
+                                indexAxis: 'y',
+                                responsive: true,
+                                maintainAspectRatio: false,
+                                animation: {
+                                    duration: 1200,
+                                    easing: 'easeOutQuart',
+                                    delay: (context) => {
+                                        return context.dataIndex * 80;
+                                    }
+                                },
+                                plugins: {
+                                    legend: {
+                                        display: false
+                                    }
+                                },
+                                scales: {
+                                    x: {
+                                        beginAtZero: true,
+                                        ticks: {
+                                            stepSize: 1,
+                                            callback: function(value) {
+                                                if (Number.isInteger(value)) {
+                                                    return value + '件';
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        });
+                        console.log('✅ ポジティブキーワードチャート描画完了');
+                    } catch (error) {
+                        console.error('❌ ポジティブチャートエラー:', error);
+                    }
+                }
+                
+                // ネガティブキーワード
+                const negativeCanvas = document.getElementById('negativeKeywordsChart');
+                if (negativeCanvas && data.reviewKeywords.negative) {
+                    try {
+                        const ctx = negativeCanvas.getContext('2d');
+                        const topNegative = data.reviewKeywords.negative.slice(0, 7);
+                        
+                        new Chart(ctx, {
+                            type: 'bar',
+                            data: {
+                                labels: topNegative.map(item => item.keyword),
+                                datasets: [{
+                                    label: '言及数',
+                                    data: topNegative.map(item => item.count),
+                                    backgroundColor: 'rgba(239, 68, 68, 0.8)',
+                                    borderColor: 'rgba(239, 68, 68, 1)',
+                                    borderWidth: 1
+                                }]
+                            },
+                            options: {
+                                indexAxis: 'y',
+                                responsive: true,
+                                maintainAspectRatio: false,
+                                animation: {
+                                    duration: 1200,
+                                    easing: 'easeOutQuart',
+                                    delay: (context) => {
+                                        return context.dataIndex * 80;
+                                    }
+                                },
+                                plugins: {
+                                    legend: {
+                                        display: false
+                                    }
+                                },
+                                scales: {
+                                    x: {
+                                        beginAtZero: true,
+                                        ticks: {
+                                            stepSize: 1,
+                                            callback: function(value) {
+                                                if (Number.isInteger(value)) {
+                                                    return value + '件';
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        });
+                        console.log('✅ ネガティブキーワードチャート描画完了');
+                    } catch (error) {
+                        console.error('❌ ネガティブチャートエラー:', error);
+                    }
+                }
+            }
+        });
+    }
+    
+    // ページ読み込み完了後に初期化
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initCharts);
+    } else {
+        initCharts();
+    }
+    
+    // 価格ツールチップを初回3秒間表示
+    window.addEventListener('load', function() {
+        setTimeout(function() {
+            const tooltip = document.querySelector('.price-info-tooltip .tooltip-text');
+            if (tooltip) {
+                tooltip.style.visibility = 'visible';
+                tooltip.style.opacity = '1';
+                
+                // 3秒後に自動非表示
+                setTimeout(function() {
+                    tooltip.style.visibility = 'hidden';
+                    tooltip.style.opacity = '0';
+                }, 3000);
+            }
+        }, 1000);
+    });
+    </script>
+</body>
+</html>

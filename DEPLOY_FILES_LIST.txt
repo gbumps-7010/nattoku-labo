@@ -1,0 +1,83 @@
+# デプロイ用ファイルリスト
+
+## ルートファイル (7個)
+- index.html
+- about.html
+- privacy.html
+- robots.txt
+- sitemap.xml
+- products-data.js
+- _redirects
+
+## 製品HTML (28個)
+- products/anker-eufy-c10.html
+- products/dreame-l10s-ultra-gen2.html
+- products/dreame-l40s-pro-ultra.html
+- products/dreame-x50-ultra.html
+- products/deebot-t50-omni.html
+- products/deebot-t80-omni.html
+- products/ecovacs-deebot-mini.html
+- products/ecovacs-deebot-n20-pro-plus.html
+- products/ecovacs-deebot-t90-omni.html
+- products/ecovacs-deebot-x8-pro-omni.html
+- products/eufy-clean-x8-pro-self-empty.html
+- products/eufy-robot-vacuum-omni-c20.html
+- products/eufy-robot-vacuum-omni-c28.html
+- products/eufy-robot-vacuum-omni-e25.html
+- products/eufy-robot-vacuum-omni-s1-pro.html
+- products/eufy-robovac-g30.html
+- products/eufy-robovac-g30-hybrid.html
+- products/eufy-x10-pro-omni.html
+- products/roborock-qrevo-l.html
+- products/roborock-saros-10r.html
+- products/roomba-105-combo.html
+- products/roomba-combo-10-max.html
+- products/roomba-max-705-combo-autowash.html
+- products/roomba-max-705-vac-autoempty.html
+- products/roomba-mini-autoempty.html
+- products/roomba-plus-405-combo.html
+- products/roomba-plus-505-combo.html
+- products/switchbot-k11-plus.html
+
+## 製品JSON (28個)
+- products/data/anker-eufy-c10.json
+- products/data/dreame-l10s-ultra-gen2.json
+- products/data/dreame-l40s-pro-ultra.json
+- products/data/dreame-x50-ultra.json
+- products/data/deebot-t50-omni.json
+- products/data/deebot-t80-omni.json
+- products/data/ecovacs-deebot-mini.json
+- products/data/ecovacs-deebot-n20-pro-plus.json
+- products/data/ecovacs-deebot-t90-omni.json
+- products/data/ecovacs-deebot-x8-pro-omni.json
+- products/data/eufy-clean-x8-pro-self-empty.json
+- products/data/eufy-robot-vacuum-omni-c20.json
+- products/data/eufy-robot-vacuum-omni-c28.json
+- products/data/eufy-robot-vacuum-omni-e25.json
+- products/data/eufy-robot-vacuum-omni-s1-pro.json
+- products/data/eufy-robovac-g30.json
+- products/data/eufy-robovac-g30-hybrid.json
+- products/data/eufy-x10-pro-omni.json
+- products/data/roborock-qrevo-l.json
+- products/data/roborock-saros-10r.json
+- products/data/roomba-105-combo.json
+- products/data/roomba-combo-10-max.json
+- products/data/roomba-max-705-combo-autowash.json
+- products/data/roomba-max-705-vac-autoempty.json
+- products/data/roomba-mini-autoempty.json
+- products/data/roomba-plus-405-combo.json
+- products/data/roomba-plus-505-combo.json
+- products/data/switchbot-k11-plus.json
+
+## JavaScript (3個)
+- products/js/product-loader.js
+- products/js/navigation.js
+- products/js/product-loader-minimal.js (optional)
+
+## CSS (1個)
+- products/css/navigation.css
+
+## 設定ファイル (1個)
+- .gitignore
+
+**合計: 67ファイル**
