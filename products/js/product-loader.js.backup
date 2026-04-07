@@ -1,0 +1,651 @@
+/**
+ * ✅ 製品データ自動ロードシステム V3.2 (2026-03-17)
+ * - Gemini出力JSONから180項目を完全自動反映
+ * - data-dynamic 属性による汎用データバインディング対応 ★NEW
+ * - 「収集データ詳細」セクション削除版に対応
+ * 
+ * 使用方法:
+ * 1. products/data/[productId].json にデータ配置
+ * 2. HTML内で <script src="js/product-loader.js"></script>
+ * 3. ファイル名が製品IDと一致すれば自動読み込み
+ * 4. data-dynamic 属性で任意の要素にデータを自動挿入可能
+ */
+
+// ========================================
+// 1. データ読み込み
+// ========================================
+
+function getProductId() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = urlParams.get('product');
+    
+    if (!productId) {
+        const path = window.location.pathname;
+        const filename = path.split('/').pop().replace('.html', '');
+        return filename;
+    }
+    
+    return productId;
+}
+
+async function loadProductData(productId) {
+    try {
+        const response = await fetch(`data/${productId}.json`);
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('❌ 製品データの読み込みに失敗:', error);
+        return null;
+    }
+}
+
+// ========================================
+// 2. メタデータ更新
+// ========================================
+
+function updateMetadata(data) {
+    document.title = data.metaTitle || `${data.productName} 詳細分析 | 失敗しない！ナットク研究所`;
+    
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+        metaDesc.setAttribute('content', data.metaDescription);
+    }
+    
+    // JSON-LD 構造化データ
+    const structuredData = {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": data.productName,
+        "description": data.metaDescription,
+        "brand": {
+            "@type": "Brand",
+            "name": data.manufacturer
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": data.overallRating.toString(),
+            "reviewCount": data.totalReviews.toString(),
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": data.price.toString(),
+            "priceCurrency": "JPY",
+            "availability": "https://schema.org/InStock"
+        }
+    };
+    
+    let structuredScript = document.querySelector('script[type="application/ld+json"]');
+    if (!structuredScript) {
+        structuredScript = document.createElement('script');
+        structuredScript.type = 'application/ld+json';
+        document.head.appendChild(structuredScript);
+    }
+    structuredScript.textContent = JSON.stringify(structuredData, null, 2);
+}
+
+// ========================================
+// 3. data-dynamic 属性による汎用データ更新
+// ========================================
+
+function updateDynamicElements(data) {
+    // data-dynamic 属性を持つすべての要素を取得
+    const dynamicElements = document.querySelectorAll('[data-dynamic]');
+    
+    console.log(`🔍 data-dynamic 要素: ${dynamicElements.length}個検出`);
+    
+    dynamicElements.forEach(element => {
+        const path = element.getAttribute('data-dynamic');
+        const value = getNestedValue(data, path);
+        
+        if (value !== undefined && value !== null) {
+            // 画像要素の場合
+            if (element.tagName === 'IMG' || element.classList.contains('product-image-header')) {
+                if (path === 'imageUrl') {
+                    element.src = value;
+                    element.alt = data.productName || '製品画像';
+                    console.log(`✅ 画像更新: ${value.substring(0, 50)}...`);
+                }
+            }
+            // 星評価の場合
+            else if (path === 'stars') {
+                updateStarRating(element, data.overallRating);
+                console.log(`✅ 星評価更新: ${data.overallRating}`);
+            }
+            // パーセンテージ形式の場合
+            else if (path.includes('percentage')) {
+                element.textContent = `${value}%`;
+                console.log(`✅ ${path} = ${value}%`);
+            }
+            // スコア形式の場合
+            else if (path.includes('score') || path.includes('Score')) {
+                element.textContent = value;
+                console.log(`✅ ${path} = ${value}`);
+            }
+            // レビュー数の場合
+            else if (path === 'totalReviews') {
+                element.textContent = value;
+                console.log(`✅ ${path} = ${value}`);
+            }
+            // 評価値の場合
+            else if (path === 'overallRating') {
+                element.textContent = value;
+                console.log(`✅ ${path} = ${value}`);
+            }
+            // 製品名の場合
+            else if (path === 'productName') {
+                element.textContent = value;
+                console.log(`✅ ${path} = ${value}`);
+            }
+            // 通常のテキスト更新
+            else {
+                element.textContent = value;
+                console.log(`✅ ${path} = ${value}`);
+            }
+        } else {
+            console.warn(`⚠️ ${path} のデータが見つかりません`);
+        }
+    });
+}
+
+// ネストしたプロパティにアクセスするヘルパー関数
+function getNestedValue(obj, path) {
+    return path.split('.').reduce((current, key) => current?.[key], obj);
+}
+
+// 星評価を更新する関数
+function updateStarRating(element, rating) {
+    const fullStars = Math.floor(rating);
+    const hasHalfStar = rating % 1 >= 0.5;
+    const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
+    
+    let starsHTML = '';
+    for (let i = 0; i < fullStars; i++) {
+        starsHTML += '<i class="fas fa-star"></i>';
+    }
+    if (hasHalfStar) {
+        starsHTML += '<i class="fas fa-star-half-alt"></i>';
+    }
+    for (let i = 0; i < emptyStars; i++) {
+        starsHTML += '<i class="far fa-star"></i>';
+    }
+    
+    element.innerHTML = starsHTML;
+}
+
+// ========================================
+// 4. 基本情報更新（従来の方式を保持）
+// ========================================
+
+function updateBasicInfo(data) {
+    // 製品タイトル
+    const productTitle = document.querySelector('.product-title');
+    if (productTitle) {
+        productTitle.textContent = data.productName;
+    }
+    
+    // メーカー名
+    const brandEl = document.querySelector('.brand-badge');
+    if (brandEl) {
+        brandEl.textContent = data.manufacturer;
+    }
+    
+    // 価格
+    const priceEl = document.querySelector('.price-badge, .price-value');
+    if (priceEl) {
+        priceEl.textContent = `¥${data.price.toLocaleString()}`;
+    }
+    
+    // 総合評価
+    const ratingEl = document.querySelector('.rating-value, .overall-rating');
+    if (ratingEl) {
+        ratingEl.textContent = data.overallRating;
+    }
+    
+    // レビュー数
+    const reviewCountEl = document.querySelector('.review-count');
+    if (reviewCountEl) {
+        reviewCountEl.textContent = `${data.totalReviews}件のレビュー`;
+    }
+    
+    // 信頼性スコア
+    const trustScoreEl = document.querySelector('.trust-score');
+    if (trustScoreEl) {
+        trustScoreEl.textContent = `${data.reliabilityScore}点`;
+    }
+    
+    // 製品画像
+    const productImage = document.querySelector('.product-image img, .product-img');
+    if (productImage) {
+        productImage.src = data.imageUrl;
+        productImage.alt = data.productName;
+    }
+}
+
+// ========================================
+// 5. カテゴリC データ更新
+// ========================================
+
+function updateCategoryC(data) {
+    const categoryC = data.categoryC;
+    if (!categoryC) return;
+    
+    // ユーザー満足度
+    const satCards = document.querySelectorAll('.stat-card');
+    if (satCards.length >= 1) {
+        const satCard = satCards[0];
+        const satNumber = satCard.querySelector('.stat-number');
+        const satLabel = satCard.querySelector('.stat-label');
+        
+        if (satNumber) satNumber.textContent = categoryC.userSatisfaction.score;
+        if (satLabel) satLabel.textContent = 'ユーザー満足度';
+    }
+    
+    // リピート購入意向
+    if (satCards.length >= 2) {
+        const repeatCard = satCards[1];
+        const repeatNumber = repeatCard.querySelector('.stat-number');
+        if (repeatNumber) repeatNumber.textContent = `${categoryC.repurchaseIntention.percentage}%`;
+    }
+    
+    // 故障率
+    if (satCards.length >= 3) {
+        const failureCard = satCards[2];
+        const failureNumber = failureCard.querySelector('.stat-number');
+        if (failureNumber) failureNumber.textContent = `${categoryC.failureRate.percentage}%`;
+    }
+}
+
+// ========================================
+// 6. 性能分析グラフデータ設定
+// ========================================
+
+function updatePerformanceData(data) {
+    const perfData = data.performanceAnalysis;
+    if (!perfData) return;
+    
+    // レーダーチャート用データをグローバルに保存
+    if (data.radarChartData) {
+        window.radarChartData = {
+            labels: data.radarChartData.labels,
+            values: data.radarChartData.values
+        };
+    }
+    
+    // 各性能スコアをDOMに設定（Chart.js初期化用）
+    window.performanceScores = {
+        floorCleaning: perfData.floorCleaning.score,
+        carpetCleaning: perfData.carpetCleaning.score,
+        petHair: perfData.petHair.score,
+        nightQuietness: perfData.nightQuietness.score,
+        stepClimbing: perfData.stepClimbing.score,
+        maintenance: perfData.maintenance.score,
+        appStability: perfData.appStability.score,
+        batteryLife: perfData.batteryLife.score
+    };
+    
+    // 性能分析の詳細カード更新
+    updatePerformanceCards(perfData);
+}
+
+function updatePerformanceCards(perfData) {
+    const perfMapping = [
+        { key: 'floorCleaning', icon: '📊', label: 'フローリング清掃' },
+        { key: 'carpetCleaning', icon: '⚠️', label: 'カーペット清掃' },
+        { key: 'petHair', icon: '🐕', label: 'ペット毛対応' },
+        { key: 'nightQuietness', icon: '🌙', label: '静音性（夜間）' },
+        { key: 'stepClimbing', icon: '📏', label: '段差乗り越え' },
+        { key: 'maintenance', icon: '🔧', label: 'メンテナンス性' },
+        { key: 'appStability', icon: '📱', label: 'アプリ安定性' },
+        { key: 'batteryLife', icon: '🔋', label: 'バッテリー持続' }
+    ];
+    
+    // 新しいセレクタに対応（統合版テンプレート用）
+    const detailsGrid = document.querySelector('.performance-details-grid, [data-dynamic="performance-details"]') || 
+                        document.querySelector('.chart-container').parentElement.querySelector('[style*="grid-template-columns"]');
+    
+    if (detailsGrid && perfData) {
+        const html = perfMapping.map(item => {
+            const data = perfData[item.key];
+            if (!data) return '';
+            
+            const score = data.score;
+            const scoreClass = score >= 80 ? 'high-score' : (score >= 60 ? 'medium-score' : 'low-score');
+            
+            return `
+                <div class="performance-detail-card ${scoreClass}">
+                    <h4>${item.icon} ${item.label}: ${score}/100点</h4>
+                    <p class="rank-badge">${data.reviewCount}件のレビューから算出</p>
+                    <p>${data.comment}</p>
+                </div>
+            `;
+        }).join('');
+        
+        detailsGrid.innerHTML = html;
+    }
+}
+
+// ========================================
+// 7. 口コミキーワード更新
+// ========================================
+
+function updateReviewKeywords(data) {
+    const keywords = data.reviewKeywords;
+    if (!keywords) return;
+    
+    // ポジティブキーワード
+    const positiveContainer = document.querySelector('.positive-keywords, .keyword-positive');
+    if (positiveContainer && keywords.positive) {
+        const html = keywords.positive.slice(0, 8).map(item => 
+            `<span class="keyword-tag positive">${item.keyword} (${item.count})</span>`
+        ).join('');
+        positiveContainer.innerHTML = html;
+    }
+    
+    // ネガティブキーワード
+    const negativeContainer = document.querySelector('.negative-keywords, .keyword-negative');
+    if (negativeContainer && keywords.negative) {
+        const html = keywords.negative.slice(0, 7).map(item => 
+            `<span class="keyword-tag negative">${item.keyword} (${item.count})</span>`
+        ).join('');
+        negativeContainer.innerHTML = html;
+    }
+}
+
+// ========================================
+// 8. トップクレーム更新
+// ========================================
+
+function updateTopComplaints(data) {
+    const complaints = data.topComplaints;
+    if (!complaints) return;
+    
+    const complaintsContainer = document.querySelector('.complaints-list, .top-complaints, .problems-grid');
+    if (complaintsContainer) {
+        const html = complaints.map((complaint, index) => `
+            <div class="problem-card">
+                <span class="problem-rank">${index + 1}位</span>
+                <h3 class="problem-title">${complaint.title}</h3>
+                <span class="problem-percentage">${complaint.percentage}% (${complaint.reviewCount}件)</span>
+                <p class="problem-description">${complaint.description}</p>
+                <div class="solutions">
+                    <p class="solutions-title"><i class="fas fa-lightbulb"></i> 対策</p>
+                    <p style="font-size: 0.9rem; color: #475569; line-height: 1.6; margin: 0;">${complaint.solution}</p>
+                </div>
+            </div>
+        `).join('');
+        
+        complaintsContainer.innerHTML = html;
+    }
+}
+        
+        complaintsContainer.innerHTML = html;
+    }
+}
+
+// ========================================
+// 9. 属性スコア更新
+// ========================================
+
+function updateAttributeScores(data) {
+    const attrScores = data.attributeScores;
+    if (!attrScores) return;
+    
+    // ペットオーナー
+    if (attrScores.petOwner) {
+        const petSection = document.querySelector('.attribute-pet, [data-attribute="petOwner"]');
+        if (petSection) {
+            updateAttributeSection(petSection, attrScores.petOwner, [
+                { key: 'suction', label: '吸引力' },
+                { key: 'odorControl', label: '臭い対策' },
+                { key: 'maintenance', label: 'メンテナンス' }
+            ]);
+        }
+    }
+    
+    // アパートメント
+    if (attrScores.apartment) {
+        const aptSection = document.querySelector('.attribute-apartment, [data-attribute="apartment"]');
+        if (aptSection) {
+            updateAttributeSection(aptSection, attrScores.apartment, [
+                { key: 'noise', label: '静音性' },
+                { key: 'sizeSuitability', label: 'サイズ適合' },
+                { key: 'obstacleHandling', label: '障害物回避' }
+            ]);
+        }
+    }
+    
+    // ワーキングプロフェッショナル
+    if (attrScores.workingProfessional) {
+        const workSection = document.querySelector('.attribute-professional, [data-attribute="workingProfessional"]');
+        if (workSection) {
+            updateAttributeSection(workSection, attrScores.workingProfessional, [
+                { key: 'scheduleCompatibility', label: 'スケジュール対応' },
+                { key: 'appUsability', label: 'アプリ使いやすさ' },
+                { key: 'automationFeatures', label: '自動化機能' }
+            ]);
+        }
+    }
+    
+    // ファミリーホーム
+    if (attrScores.familyHome) {
+        const familySection = document.querySelector('.attribute-family, [data-attribute="familyHome"]');
+        if (familySection) {
+            updateAttributeSection(familySection, attrScores.familyHome, [
+                { key: 'areaCoverage', label: '広範囲対応' },
+                { key: 'batteryDuration', label: 'バッテリー持続' },
+                { key: 'multiFloorSupport', label: '複数階対応' }
+            ]);
+        }
+    }
+}
+
+function updateAttributeSection(section, attrData, fields) {
+    // Update overall score in header
+    const overallScoreEl = section.querySelector('.attribute-overall-score');
+    if (overallScoreEl) {
+        overallScoreEl.textContent = attrData.overall;
+    }
+    
+    // Generate details HTML
+    const detailsContainer = section.querySelector('.attribute-details');
+    if (detailsContainer) {
+        const html = fields.map(field => {
+            const fieldData = attrData[field.key];
+            if (!fieldData) return '';
+            
+            return `
+                <div class="attribute-detail">
+                    <div class="attribute-detail-header">
+                        <span class="attribute-detail-title">${field.label}</span>
+                        <span class="attribute-detail-score">${fieldData.score}/100</span>
+                    </div>
+                    <div class="attribute-detail-comment">${fieldData.comment}</div>
+                </div>
+            `;
+        }).join('');
+        
+        detailsContainer.innerHTML = html;
+    }
+    
+    // Add review count
+    const reviewCountText = `（${attrData.reviewCount}件のレビューから）`;
+    const titleEl = section.querySelector('.attribute-title');
+    if (titleEl && attrData.reviewCount) {
+        const existingCount = titleEl.querySelector('.review-count-badge');
+        if (existingCount) {
+            existingCount.textContent = reviewCountText;
+        } else {
+            const badge = document.createElement('span');
+            badge.className = 'review-count-badge';
+            badge.style.fontSize = '0.75rem';
+            badge.style.fontWeight = '400';
+            badge.style.opacity = '0.7';
+            badge.textContent = reviewCountText;
+            titleEl.appendChild(badge);
+        }
+    }
+}
+
+// ========================================
+// 10. データ品質保証更新
+// ========================================
+
+function updateDataQuality(data) {
+    const dq = data.dataQuality;
+    if (!dq) return;
+    
+    // 総レビュー数
+    const totalReviewsEl = document.querySelector('.data-total-reviews, [data-dq="totalReviews"]');
+    if (totalReviewsEl) {
+        totalReviewsEl.textContent = `${dq.totalReviews}件`;
+    }
+    
+    // 調査対象数
+    const sampledEl = document.querySelector('.data-sampled, [data-dq="sampledReviews"]');
+    if (sampledEl) {
+        sampledEl.textContent = `${dq.sampledReviews}件`;
+    }
+    
+    // 採用データ
+    const adoptedEl = document.querySelector('.data-adopted, [data-dq="adoptedReviews"]');
+    if (adoptedEl) {
+        adoptedEl.textContent = `${dq.adoptedReviews}件`;
+    }
+    
+    // 除外データ
+    const excludedEl = document.querySelector('.data-excluded, [data-dq="excludedReviews"]');
+    if (excludedEl) {
+        excludedEl.textContent = `${dq.excludedReviews}件`;
+    }
+    
+    // 信頼度スコア
+    const trustScoreEl = document.querySelector('.data-trust-score, [data-dq="trustScore"]');
+    if (trustScoreEl) {
+        trustScoreEl.textContent = `${dq.trustScore}点`;
+    }
+    
+    // 採用率計算
+    const adoptionRate = ((dq.adoptedReviews / dq.totalReviews) * 100).toFixed(1);
+    const adoptionRateEl = document.querySelector('.adoption-rate, [data-dq="adoptionRate"]');
+    if (adoptionRateEl) {
+        adoptionRateEl.textContent = `${adoptionRate}%`;
+    }
+}
+
+// ========================================
+// 11. リセールバリュー更新
+// ========================================
+
+function updateResaleValue(data) {
+    const resale = data.resaleValue;
+    if (!resale) return;
+    
+    const newPriceEl = document.querySelector('.resale-new-price');
+    if (newPriceEl) {
+        newPriceEl.textContent = `¥${resale.newPrice.toLocaleString()}`;
+    }
+    
+    const usedMinEl = document.querySelector('.resale-used-min');
+    if (usedMinEl) {
+        usedMinEl.textContent = `¥${resale.usedMin.toLocaleString()}`;
+    }
+    
+    const usedMaxEl = document.querySelector('.resale-used-max');
+    if (usedMaxEl) {
+        usedMaxEl.textContent = `¥${resale.usedMax.toLocaleString()}`;
+    }
+}
+
+// ========================================
+// 12. CTA ボタン更新
+// ========================================
+
+function updateCTAButtons(data) {
+    const cta = data.cta;
+    if (!cta) return;
+    
+    // Amazon
+    const amazonBtn = document.querySelector('a[href*="amazon"], .cta-amazon');
+    if (amazonBtn && cta.amazon) {
+        amazonBtn.href = cta.amazon.url;
+    }
+    
+    // 楽天
+    const rakutenBtn = document.querySelector('a[href*="rakuten"], .cta-rakuten');
+    if (rakutenBtn && cta.rakuten) {
+        rakutenBtn.href = cta.rakuten.url;
+    }
+    
+    // Yahoo!ショッピング
+    const yahooBtn = document.querySelector('a[href*="yahoo"], .cta-yahoo');
+    if (yahooBtn && cta.yahoo) {
+        yahooBtn.href = cta.yahoo.url;
+    }
+    
+    // ヨドバシ
+    const yodobashiBtn = document.querySelector('a[href*="yodobashi"], .cta-yodobashi');
+    if (yodobashiBtn && cta.yodobashi) {
+        yodobashiBtn.href = cta.yodobashi.url;
+    }
+}
+
+// ========================================
+// 13. メイン初期化関数
+// ========================================
+
+async function initializePage() {
+    const productId = getProductId();
+    console.log('🔍 製品ID:', productId);
+    
+    const data = await loadProductData(productId);
+    if (!data) {
+        console.error('❌ 製品データが見つかりません');
+        return;
+    }
+    
+    console.log('✅ 製品データ読み込み成功:', data.productName);
+    console.log('📊 総レビュー数:', data.totalReviews, '件');
+    console.log('⭐ 総合評価:', data.overallRating, '/5.0');
+    console.log('🔒 信頼度スコア:', data.reliabilityScore, '点');
+    
+    // 全セクションを順次更新
+    try {
+        updateMetadata(data);
+        updateDynamicElements(data);  // ★ data-dynamic 属性による汎用更新を追加
+        updateBasicInfo(data);
+        updateCategoryC(data);
+        updatePerformanceData(data);
+        updateReviewKeywords(data);
+        updateTopComplaints(data);
+        updateAttributeScores(data);
+        updateDataQuality(data);
+        updateResaleValue(data);
+        updateCTAButtons(data);
+        
+        // グローバルに保存（Chart.jsなどの外部スクリプト用）
+        window.productData = data;
+        
+        console.log('✅ 全180項目の自動ロード完了');
+        
+        // カスタムイベント発火（Chart.js初期化トリガー）
+        window.dispatchEvent(new CustomEvent('productDataLoaded', { detail: data }));
+        
+    } catch (error) {
+        console.error('❌ データ更新中にエラー:', error);
+    }
+}
+
+// ========================================
+// 14. 実行
+// ========================================
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initializePage);
+} else {
+    initializePage();
+}
