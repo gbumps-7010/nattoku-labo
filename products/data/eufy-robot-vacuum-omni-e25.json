@@ -1,0 +1,386 @@
+{
+  "productId": "eufy-robot-vacuum-omni-e25",
+  "productName": "Eufy Robot Vacuum Omni E25",
+  "manufacturer": "Anker",
+  "modelNumber": "Omni E25",
+  "imageUrl": "https://m.media-amazon.com/images/I/61K-P2XU+iL._AC_SL1500_.jpg",
+  "overallRating": 4.6,
+  "totalReviews": 655,
+  "price": 74800,
+  "reliabilityScore": 94.2,
+  "asin": "B0F9JGVSDX",
+  "metaTitle": "Eufy Omni E25 詳細分析 | 全自動クリーニングステーション搭載の実力",
+  "metaDescription": "Eufy Omni E25の655件のレビューを徹底解析。全自動のモップ洗浄や乾燥機能、強力な吸引力など、実際のユーザーが感じた使い勝手とコスパの真実を公開します。",
+  
+  "categoryC": {
+    "userSatisfaction": {
+      "score": 92,
+      "reviewCount": 655,
+      "comment": "全自動の利便性と価格のバランスに対する満足度が非常に高く、特に共働き世帯からの支持が厚いです。掃除の手間が劇的に減ったという声が多く寄せられています。"
+    },
+    "repurchaseIntention": {
+      "percentage": 86,
+      "reviewCount": 540,
+      "comment": "モップ洗浄から乾燥まで完結する点が高く評価されており、次もEufyの全自動モデルを選びたいというユーザーが8割を超え、ブランドへの信頼感が定着しています。"
+    },
+    "failureRate": {
+      "percentage": 4,
+      "reviewCount": 655,
+      "breakdown": {
+        "hardware": 2,
+        "software": 1,
+        "environmental": 1
+      },
+      "comment": "初期不良やWi-Fi接続のトラブルが稀に見られますが、Ankerの迅速なカスタマーサポートによる交換対応で解決しているケースが多く、致命的な欠陥は少ないです。"
+    }
+  },
+  
+  "reliability": {
+    "score": 94.2,
+    "dataAdequacy": {
+      "score": 100,
+      "weight": 60,
+      "description": "楽天とAmazonで計600件以上の良質なレビューが蓄積されており、統計的信頼性は極めて高い状態です。"
+    },
+    "consistency": {
+      "percentage": 95,
+      "weight": 30,
+      "description": "各販路での評価差が±0.2以内と非常に小さく、ユーザー体験に偏りがないことが確認されています。"
+    },
+    "freshness": {
+      "score": 98,
+      "weight": 10,
+      "description": "直近1ヶ月以内にも多くの新規レビューが投稿されており、最新のファームウェア環境での評価が反映されています。"
+    }
+  },
+  
+  "updateInfo": {
+    "lastUpdated": "2026-03-27",
+    "firmwareVersion": "V1.2.35",
+    "note": "マッピング精度の向上と、暗所での障害物回避アルゴリズムが改善されています。"
+  },
+  
+  "timeSaving": {
+    "dailyMinutes": 20,
+    "monthlyHours": 10,
+    "annualHours": 122,
+    "workDaysEquivalent": 15.2,
+    "methodology": "床掃除の代行時間に加え、モップの手洗いや乾燥の手間を全自動化したことによる削減時間を算出しています。"
+  },
+  
+  "operationalCost": {
+    "daily": 72,
+    "dailyNote": "紙パック、専用洗剤、交換用モップ等の消耗品費用の試算",
+    "monthly": 2200,
+    "annual": 26400,
+    "consumables": [
+      {
+        "item": "ダストバッグ",
+        "replacementFrequency": "2ヶ月ごと",
+        "unitCost": 1200,
+        "annualCost": 7200
+      },
+      {
+        "item": "交換用モップ",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 3000,
+        "annualCost": 6000
+      },
+      {
+        "item": "HEPAフィルター",
+        "replacementFrequency": "12ヶ月ごと",
+        "unitCost": 2800,
+        "annualCost": 2800
+      },
+      {
+        "item": "サイドブラシ",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 1700,
+        "annualCost": 3400
+      }
+    ]
+  },
+  
+  "performanceAnalysis": {
+    "floorCleaning": {
+      "score": 95,
+      "reviewCount": 610,
+      "positiveReviewCount": 585,
+      "comment": "強力な吸引力と加圧式回転モップにより、フローリングのベタつきもしっかり除去。隅々のゴミ取り性能も高く評価されています。"
+    },
+    "carpetCleaning": {
+      "score": 82,
+      "reviewCount": 320,
+      "positiveReviewCount": 265,
+      "comment": "カーペット検知で吸引力を自動引き上げ。モップリフト機能がないため、厚手のラグでは進入禁止設定が必要な場合があります。"
+    },
+    "petHairRemoval": {
+      "score": 90,
+      "reviewCount": 145,
+      "positiveReviewCount": 132,
+      "comment": "ゴム製ブラシがペットの毛を絡め取りやすく、毛が絡まりにくい構造のため、多頭飼いの家庭からも好評を得ています。"
+    },
+    "quietness": {
+      "score": 84,
+      "reviewCount": 210,
+      "positiveReviewCount": 178,
+      "comment": "標準モードは非常に静かですが、ステーションでのゴミ収集時の音は大きく、夜間の自動収集は避ける設定が推奨されます。"
+    },
+    "stepClimbing": {
+      "score": 78,
+      "reviewCount": 150,
+      "positiveReviewCount": 120,
+      "comment": "約2cmの段差は超えられますが、形状や材質によっては苦戦することも。事前に自宅の敷居の高さを確認しておくと安心です。"
+    },
+    "maintenance": {
+      "score": 97,
+      "reviewCount": 580,
+      "positiveReviewCount": 565,
+      "comment": "自動ゴミ収集、モップ洗浄、温風乾燥が揃っており、ユーザーが直接メンテナンスする頻度は大幅に減少しています。"
+    },
+    "appStability": {
+      "score": 92,
+      "reviewCount": 280,
+      "positiveReviewCount": 258,
+      "comment": "Eufy Homeアプリは直感的で使いやすく、部屋ごとの詳細設定やスケジュールの管理もスムーズに行えると評判です。"
+    },
+    "batteryLife": {
+      "score": 88,
+      "reviewCount": 195,
+      "positiveReviewCount": 175,
+      "comment": "一般的な広さの間取りであれば一度の充電で全室清掃可能。バッテリーが減っても自動で充電に戻り、再開する機能も優秀です。"
+    }
+  },
+  
+  "radarChartData": {
+    "labels": ["床掃除", "カーペット", "ペット毛", "静音性", "段差", "メンテ", "アプリ", "電池"],
+    "values": [95, 82, 90, 84, 78, 97, 92, 88]
+  },
+  
+  "dataQuality": {
+    "totalReviews": 655,
+    "sampledReviews": 655,
+    "adoptedReviews": 622,
+    "excludedReviews": 33,
+    "trustScore": 94.2,
+    "comment": "主要ECサイトの評価が一致しており、サンプル数も豊富なため、製品の真の性能を極めて正確に反映したデータとなっています。"
+  },
+  
+  "reviewKeywords": {
+    "positive": [
+      {"keyword": "モップ洗浄が楽", "count": 285},
+      {"keyword": "圧倒的なコスパ", "count": 210},
+      {"keyword": "温風乾燥が便利", "count": 165},
+      {"keyword": "マッピングが爆速", "count": 142},
+      {"keyword": "掃除の手間が消えた", "count": 120}
+    ],
+    "negative": [
+      {"keyword": "ステーションが巨大", "count": 45},
+      {"keyword": "ゴミ収集音が大きい", "count": 32},
+      {"keyword": "水タンクの補充", "count": 18},
+      {"keyword": "Wi-Fi 2.4GHz限定", "count": 12},
+      {"keyword": "消耗品が高い", "count": 8}
+    ]
+  },
+  
+  "successStrategies": [
+    {
+      "rank": 1,
+      "issue": "設置スペースの確保",
+      "occurrenceRate": 12,
+      "occurrenceCount": 45,
+      "environmentalFactor": "ドックサイズの見誤り",
+      "technicalDescription": "全自動ステーションは横幅・奥行き共にサイズが大きく、左右の放熱スペースも考慮した設置場所が必要です。",
+      "avoidanceStrategies": [
+        {
+          "method": "事前採寸と障害物の除去",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "メーカー公式サイトに記載の「左右0.5m、前方1.5m」のスペースを確保することで赤外線誘導の失敗を防げます。"
+        },
+        {
+          "method": "AR機能での設置シミュレーション",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "スマホのARアプリで実寸大のステーションを部屋に配置してみることで、購入前に設置可否を判断できます。"
+        }
+      ],
+      "preventionTips": "電源コンセントの近くで、厚手のラグ等がないフラットな床面に設置することを強く推奨します。"
+    }
+  ],
+  
+  "topComplaints": [
+    {
+      "title": "ステーションからのゴミ収集音",
+      "percentage": 8,
+      "reviewCount": 32,
+      "description": "本体からステーションにゴミを吸い上げる際、約15〜20秒間大きな吸引音が発生し、夜間だと驚くレベルです。",
+      "solution": "アプリの「おやすみモード」を有効にするか、ゴミ収集の時間を昼間に固定することで、夜間の騒音トラブルを回避できます。"
+    },
+    {
+      "title": "設置スペースの確保",
+      "percentage": 12,
+      "reviewCount": 45,
+      "description": "全自動ステーションのサイズが大きく、設置場所の確保が課題です。",
+      "solution": "左右0.5m、前方1.5mのスペースを確保。AR機能で事前シミュレーションを推奨。"
+    },
+    {
+      "title": "水タンクの補充頻度",
+      "percentage": 5,
+      "reviewCount": 18,
+      "description": "清水タンクの容量が限られており、頻繁な補充が必要です。",
+      "solution": "モップ使用頻度を調整するか、大容量タンクの購入を検討。"
+    },
+    {
+      "title": "Wi-Fi接続の初期設定",
+      "percentage": 4,
+      "reviewCount": 12,
+      "description": "2.4GHz帯専用のため、5GHz帯に接続されたスマホでは初期設定時にエラーが発生するケースがあります。",
+      "solution": "初期設定時はスマホのWi-Fi接続を2.4GHz帯に固定し、ルーターのバンドステアリング機能を一時的にオフにすることで確実に接続できます。"
+    },
+    {
+      "title": "段差での立ち往生",
+      "percentage": 3,
+      "reviewCount": 8,
+      "description": "2cm以下の段差は問題なく乗り越えますが、特定の形状の椅子脚や薄いマットの端で稀に立ち往生することがあります。",
+      "solution": "問題となる箇所にバーチャルウォール（アプリで設定）を設けるか、薄いマットの端をテープで固定して段差を滑らかにすることで回避できます。"
+    }
+  ],
+  
+  "attributeScores": {
+    "petOwner": {
+      "overall": 93,
+      "details": [
+        {
+          "field": "ペット毛吸引",
+          "score": 90,
+          "reviewCount": 145,
+          "comment": "ゴム製ブラシがペットの毛を絡め取りやすく、毛が絡まりにくい構造です。"
+        },
+        {
+          "field": "抜け毛清掃",
+          "score": 96,
+          "reviewCount": 145,
+          "comment": "抜け毛の吸引力とメンテナンスのしやすさはトップクラス。多頭飼いでも清潔を保てます。"
+        },
+        {
+          "field": "メンテナンス性",
+          "score": 97,
+          "reviewCount": 580,
+          "comment": "自動ゴミ収集で毛の処理が簡単。モップ洗浄・乾燥も全自動です。"
+        },
+        {
+          "field": "コストパフォーマンス",
+          "score": 92,
+          "reviewCount": 655,
+          "comment": "全自動機能付きでこの価格帯は非常にコスパが高いです。"
+        }
+      ]
+    },
+    "apartment": {
+      "overall": 86,
+      "details": [
+        {
+          "field": "静音性",
+          "score": 84,
+          "reviewCount": 210,
+          "comment": "清掃時の音は控えめで集合住宅でも安心ですが、ゴミ収集音の鳴る時間帯には注意が必要です。"
+        },
+        {
+          "field": "静音運用",
+          "score": 88,
+          "reviewCount": 210,
+          "comment": "標準モードは非常に静かで、集合住宅でも安心して使用できます。"
+        },
+        {
+          "field": "コンパクト性",
+          "score": 72,
+          "reviewCount": 45,
+          "comment": "ステーションがやや大きめのため、狭い集合住宅では設置場所の確保が課題です。"
+        },
+        {
+          "field": "マッピング精度",
+          "score": 95,
+          "reviewCount": 280,
+          "comment": "複雑な間取りでも高速かつ正確にマッピングします。"
+        }
+      ]
+    },
+    "workingProfessional": {
+      "overall": 95,
+      "details": [
+        {
+          "field": "時間節約効果",
+          "score": 98,
+          "reviewCount": 655,
+          "comment": "年間122時間（約15.2営業日）の時間節約。掃除・洗浄・乾燥が完全自動化されます。"
+        },
+        {
+          "field": "完全自動化",
+          "score": 98,
+          "reviewCount": 280,
+          "comment": "帰宅時に床が常にサラサラなのは感動的。アプリ連携も安定しており、外出先からの操作も完璧です。"
+        },
+        {
+          "field": "アプリ操作性",
+          "score": 92,
+          "reviewCount": 280,
+          "comment": "Eufy Homeアプリは直感的で使いやすく、スケジュール管理も簡単です。"
+        },
+        {
+          "field": "信頼性",
+          "score": 96,
+          "reviewCount": 655,
+          "comment": "故障率4%と低く、Ankerのカスタマーサポートも迅速で安心です。"
+        }
+      ]
+    },
+    "familyHome": {
+      "overall": 91,
+      "details": [
+        {
+          "field": "広範囲カバー",
+          "score": 88,
+          "reviewCount": 195,
+          "comment": "一度の充電で広範囲をカバー。途中で息切れせず一軒家でも完遂します。"
+        },
+        {
+          "field": "広範囲清掃",
+          "score": 93,
+          "reviewCount": 195,
+          "comment": "複数の部屋を高速かつ正確にマッピング。子供やペットがいる家庭の汚れもしっかり拭き取ります。"
+        },
+        {
+          "field": "清潔維持",
+          "score": 95,
+          "reviewCount": 610,
+          "comment": "強力な吸引力と加圧式回転モップで、家族全員が裸足で過ごせる環境を作ります。"
+        },
+        {
+          "field": "安全性",
+          "score": 90,
+          "reviewCount": 280,
+          "comment": "障害物回避が優秀で、子供のおもちゃなども避けながら清掃します。"
+        }
+      ]
+    }
+  },
+  
+  "resaleValue": {
+    "newPrice": 74800,
+    "usedMinPrice": 38000,
+    "usedMaxPrice": 48000,
+    "retentionRateMin": 51,
+    "retentionRateMax": 64,
+    "period": "12ヶ月後",
+    "comment": "Anker製品はブランド力があり、特に全自動モデルは中古市場でも需要が高く、リセールバリューは安定しています。"
+  },
+  
+  "keywords": ["Eufy Robot Vacuum Omni E25", "Anker", "全自動クリーニング", "モップ洗浄", "温風乾燥", "ロボット掃除機"],
+  
+  "cta": {
+    "amazon": "https://www.amazon.co.jp/s?k=Eufy+Robot+Vacuum+Omni+E25",
+    "rakuten": "https://search.rakuten.co.jp/search/mall/Eufy+Robot+Vacuum+Omni+E25/",
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=Eufy+Robot+Vacuum+Omni+E25"
+  }
+}

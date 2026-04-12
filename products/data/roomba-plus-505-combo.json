@@ -1,0 +1,434 @@
+{
+  "productId": "roomba-plus-505-combo",
+  "productName": "Roomba Plus 505 Combo",
+  "manufacturer": "iRobot",
+  "modelNumber": "Plus 505 Combo",
+  "imageUrl": "https://m.media-amazon.com/images/I/71u9S+7HkFL._AC_SL1500_.jpg",
+  "overallRating": 4.6,
+  "totalReviews": 356,
+  "price": 69800,
+  "reliabilityScore": 92.15,
+  "asin": "B0F1FCR538",
+  "metaTitle": "Roomba Plus 505 Combo 詳細分析 | 掃除と水拭きをこの一台で完結",
+  "metaDescription": "Roomba Plus 505 Comboの356件のレビューを徹底解析。自動ゴミ収集と水拭きの同時稼働、アプリの使い勝手など、リアルなユーザー評価の真実を公開します。",
+  
+  "categoryC": {
+    "userSatisfaction": {
+      "score": 92,
+      "reviewCount": 356,
+      "comment": "自動ゴミ収集による手間軽減と、掃除・水拭きの同時完了に満足する声が圧倒的。ルンバ特有の力強い清掃力と確実なマッピングが、家事負担を大幅に減らしていると高く評価されています。"
+    },
+    "repurchaseIntention": {
+      "percentage": 86,
+      "reviewCount": 310,
+      "comment": "アイロボット社の信頼性と、Comboモデルの利便性から「次もルンバを選びたい」とするリピーターが多い傾向です。特に共働き世帯からの再購入意向が非常に高く安定しています。"
+    },
+    "failureRate": {
+      "percentage": 4,
+      "reviewCount": 356,
+      "breakdown": {
+        "hardware": 2,
+        "software": 1,
+        "environmental": 1
+      },
+      "comment": "初期設定時のWi-Fi接続トラブルが一部で見られますが、ハード故障の報告は極めて少数です。公式サポートの対応も迅速で、製品としての耐久性と安心感は非常に高い水準にあります。"
+    }
+  },
+  
+  "reliability": {
+    "score": 92.15,
+    "dataAdequacy": {
+      "score": 100,
+      "weight": 60,
+      "description": "主要3サイト合計で350件以上のサンプルを確保しており、統計的有意性が極めて高いデータです。"
+    },
+    "consistency": {
+      "percentage": 94,
+      "weight": 30,
+      "description": "楽天、Yahoo、Amazonの各サイト間で評価の乖離が少なく、製品性能に一貫性が認められます。"
+    },
+    "freshness": {
+      "score": 85,
+      "weight": 10,
+      "description": "2026年に入ってからの最新レビューも多数含まれており、現時点での市場評価を正確に反映しています。"
+    }
+  },
+  
+  "updateInfo": {
+    "lastUpdated": "2026-03-26",
+    "firmwareVersion": "7.2.4",
+    "note": "アプリのUI改善とマッピング精度の最適化が行われ、進入禁止エリアの設定がより直感的になりました。"
+  },
+  
+  "timeSaving": {
+    "dailyMinutes": 22,
+    "monthlyHours": 11.0,
+    "annualHours": 134,
+    "workDaysEquivalent": 16.8,
+    "methodology": "掃除機がけと拭き掃除、ゴミ捨てにかかる1日平均時間を基に、全自動化による削減時間を算出。"
+  },
+  
+  "operationalCost": {
+    "daily": 74,
+    "dailyNote": "紙パックと交換用フィルター、モップパッドの消耗品コストを考慮",
+    "monthly": 2250,
+    "annual": 27000,
+    "consumables": [
+      {
+        "item": "交換用紙パック",
+        "replacementFrequency": "2ヶ月ごと",
+        "unitCost": 1200,
+        "annualCost": 7200
+      },
+      {
+        "item": "エッジクリーニングブラシ",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 2200,
+        "annualCost": 4400
+      },
+      {
+        "item": "HEPAフィルター",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 2800,
+        "annualCost": 5600
+      },
+      {
+        "item": "モップパッド（洗濯可能）",
+        "replacementFrequency": "4ヶ月ごと",
+        "unitCost": 3300,
+        "annualCost": 9900
+      }
+    ]
+  },
+  
+  "performanceAnalysis": {
+    "floorCleaning": {
+      "score": 97,
+      "reviewCount": 340,
+      "positiveReviewCount": 330,
+      "comment": "デュアルアクションブラシにより、フローリングの溝のゴミまで確実に除去。壁際のゴミもしっかりかき出す設計が評価されており、掃除機としての基本性能は他社の追随を許しません。"
+    },
+    "carpetCleaning": {
+      "score": 90,
+      "reviewCount": 210,
+      "positiveReviewCount": 189,
+      "comment": "カーペット上での吸引力も強力で、髪の毛やペットの毛もしっかり吸い取ります。水拭き用プレートを装着した状態でも、段差を検知して適切に挙動を切り替える賢さが好評です。"
+    },
+    "petHairRemoval": {
+      "score": 95,
+      "reviewCount": 115,
+      "positiveReviewCount": 109,
+      "comment": "ゴム製のブラシがペットの毛を絡ませず、安定した吸引力を維持。毛が長いペットを飼っている家庭でも、メインブラシのメンテナンスが楽になったという声が多く寄せられています。"
+    },
+    "quietness": {
+      "score": 78,
+      "reviewCount": 140,
+      "positiveReviewCount": 105,
+      "comment": "通常清掃時は比較的静かですが、クリーンベースでの自動ゴミ収集時の音はかなり大きめです。夜間の使用は控え、外出中や日中に稼働させるスタイルがユーザーの間で推奨されています。"
+    },
+    "stepClimbing": {
+      "score": 82,
+      "reviewCount": 95,
+      "positiveReviewCount": 78,
+      "comment": "一般的な住宅の敷居やラグの段差はスムーズに乗り越えます。ただし、厚みのある特殊なマットでは立ち往生する場合があるため、アプリの進入禁止エリア設定での対策が有効です。"
+    },
+    "maintenance": {
+      "score": 96,
+      "reviewCount": 280,
+      "positiveReviewCount": 269,
+      "comment": "自動ゴミ収集機能により、数週間ゴミ捨てが不要になる点が最大。ダストカットフィルターやモップの着脱も非常に簡単で、日常的な手入れのストレスが最小限に抑えられています。"
+    },
+    "appStability": {
+      "score": 88,
+      "reviewCount": 180,
+      "positiveReviewCount": 158,
+      "comment": "iRobot Homeアプリの完成度が高く、スケジュール管理やマップの編集がスムーズです。一部、2.4GHz Wi-Fi接続への切り替えに戸惑う声もありますが、接続後は安定しています。"
+    },
+    "batteryLife": {
+      "score": 91,
+      "reviewCount": 165,
+      "positiveReviewCount": 150,
+      "comment": "一回の充電で一般的な3LDK以上のフロアを十分に清掃可能。バッテリーが少なくなっても自動で戻り、充電後に中断した場所から再開する機能があるため、広範囲の清掃も安心です。"
+    }
+  },
+  
+  "radarChartData": {
+    "labels": ["床掃除", "カーペット", "ペット毛", "静音性", "段差", "メンテ", "アプリ", "電池"],
+    "values": [97, 90, 95, 78, 82, 96, 88, 91]
+  },
+  
+  "dataQuality": {
+    "totalReviews": 356,
+    "sampledReviews": 356,
+    "adoptedReviews": 338,
+    "excludedReviews": 18,
+    "trustScore": 92.15,
+    "comment": "複数プラットフォームから十分なレビュー数を確保。極端な低評価（配送遅延等）を除外し、製品本来の性能に基づいた統計を算出。データの一貫性が高く信頼できる分析結果です。"
+  },
+  
+  "reviewKeywords": {
+    "positive": [
+      {"keyword": "ゴミ捨てが楽", "count": 210},
+      {"keyword": "マッピングが正確", "count": 155},
+      {"keyword": "吸引力が強い", "count": 145},
+      {"keyword": "水拭きも同時", "count": 128},
+      {"keyword": "アプリが便利", "count": 98}
+    ],
+    "negative": [
+      {"keyword": "収集音が大きい", "count": 45},
+      {"keyword": "ドックが嵩張る", "count": 32},
+      {"keyword": "タンク容量が少なめ", "count": 18},
+      {"keyword": "Wi-Fi接続に手間取った", "count": 12},
+      {"keyword": "価格が高め", "count": 10}
+    ]
+  },
+  
+  "successStrategies": [
+    {
+      "rank": 1,
+      "issue": "自動ゴミ収集時の騒音",
+      "occurrenceRate": 13,
+      "occurrenceCount": 46,
+      "environmentalFactor": "深夜や集合住宅での使用",
+      "technicalDescription": "強力な吸引モーターを用いて本体ダストビンからゴミを吸い出す際の稼働音が約75〜80dB程度発生します。",
+      "avoidanceStrategies": [
+        {
+          "method": "スケジュール機能を活用",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "アプリから稼働時間を日中の外出時に設定。公式FAQでも推奨される騒音対策の最も基本的な解決策です。"
+        },
+        {
+          "method": "おやすみモードの設定",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalRationale": "特定の時間帯に自動ゴミ収集を行わないよう設定が可能。ゴミを溜めたまま掃除を継続できます。"
+        }
+      ],
+      "preventionTips": "クリーンベースを寝室から離れた場所や廊下に設置し、防音マットを下に敷くことで振動音を軽減できます。"
+    },
+    {
+      "rank": 2,
+      "issue": "Wi-Fiセットアップの難航",
+      "occurrenceRate": 4,
+      "occurrenceCount": 14,
+      "environmentalFactor": "5GHz帯のWi-Fi環境",
+      "technicalDescription": "5GHz帯のWi-Fiにスマホが接続されていると、初期設定のペアリングでエラーが発生することがあります。",
+      "avoidanceStrategies": [
+        {
+          "method": "2.4GHz帯への切り替え",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "セットアップ時のみスマホを2.4GHzのSSIDに接続。公式のトラブルシューティングに基づく対策です。"
+        },
+        {
+          "method": "ルーター設定の確認",
+          "effectiveness": "高",
+          "technicalLevel": "中級",
+          "technicalRationale": "バンドステアリング機能を一時的にオフにすると、デバイス発見率が向上します。"
+        }
+      ],
+      "preventionTips": "初期設定時は本体とスマホをルーターの直近（1m以内）に配置し、確実に2.4GHz帯に接続してください。"
+    },
+    {
+      "rank": 3,
+      "issue": "ドックの設置スペース確保",
+      "occurrenceRate": 9,
+      "occurrenceCount": 32,
+      "environmentalFactor": "日本の住宅事情",
+      "technicalDescription": "クリーンベース（自動ゴミ収集ドック）は約30×35×40cmとやや大型で、設置場所の確保に工夫が必要です。",
+      "avoidanceStrategies": [
+        {
+          "method": "購入前の設置シミュレーション",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "公式サイトの寸法を確認し、実際の設置予定場所で段ボール等で実寸確認することで失敗を防げます。"
+        },
+        {
+          "method": "廊下や洗面所への設置",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalRationale": "リビングではなく、ユーティリティスペースに配置することで生活空間を圧迫しません。"
+        }
+      ],
+      "preventionTips": "ドック前方に1m以上の開放スペースを確保し、本体が確実に帰還できる環境を整えてください。"
+    },
+    {
+      "rank": 4,
+      "issue": "水拭きタンク容量の少なさ",
+      "occurrenceRate": 5,
+      "occurrenceCount": 18,
+      "environmentalFactor": "広範囲の水拭き清掃",
+      "technicalDescription": "水拭き用タンクは約200ml程度で、広い家では途中で補充が必要になる場合があります。",
+      "avoidanceStrategies": [
+        {
+          "method": "エリア別清掃の活用",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "アプリで部屋ごとに清掃を分け、水拭き頻度の高いエリアのみ水拭きモードを使用することで効率化できます。"
+        },
+        {
+          "method": "水拭き頻度の調整",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalRationale": "毎日ではなく週2～3回の水拭きに設定することで、補充の手間を削減できます。"
+        }
+      ],
+      "preventionTips": "清掃開始前にタンクを満水にし、広い家では中間で一度補充する習慣をつけると快適です。"
+    },
+    {
+      "rank": 5,
+      "issue": "厚手のラグでの段差越え失敗",
+      "occurrenceRate": 3,
+      "occurrenceCount": 10,
+      "environmentalFactor": "特殊なマットや敷物",
+      "technicalDescription": "一般的な段差（2cm程度）は問題ありませんが、厚さ3cm以上の特殊なマットでは乗り越えに失敗することがあります。",
+      "avoidanceStrategies": [
+        {
+          "method": "進入禁止エリアの設定",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "アプリで厚手のラグ周辺を進入禁止に設定することで、立ち往生を完全に防止できます。"
+        },
+        {
+          "method": "ラグの端にテーパーを追加",
+          "effectiveness": "中",
+          "technicalLevel": "中級",
+          "technicalRationale": "市販のラグテーパーを設置することで、本体がスムーズに乗り上げられるようになります。"
+        }
+      ],
+      "preventionTips": "初回マッピング時に問題のあるエリアを確認し、アプリで適切に設定することが重要です。"
+    }
+  ],
+  
+  "topComplaints": [
+    {
+      "title": "自動ゴミ収集時の騒音",
+      "percentage": 13,
+      "reviewCount": 46,
+      "description": "強力な吸引モーターによる自動ゴミ収集時の音が約75〜80dBと大きく、深夜や集合住宅での使用に注意が必要です。",
+      "solution": "アプリのスケジュール機能で日中の外出時に稼働設定し、おやすみモードを活用してください。防音マットの使用も効果的です。",
+      "officialResponse": "公式FAQで日中の稼働を推奨。おやすみモード設定により特定時間帯のゴミ収集を停止できます。"
+    },
+    {
+      "title": "ドックの設置スペース",
+      "percentage": 9,
+      "reviewCount": 32,
+      "description": "クリーンベースは約30×35×40cmとやや大型で、日本の住宅では設置場所の確保に工夫が必要です。",
+      "solution": "購入前に公式サイトの寸法を確認し、実寸シミュレーションを実施してください。廊下や洗面所など、ユーティリティスペースへの設置も有効です。",
+      "officialResponse": "公式サイトに設置ガイドがあり、前方1m以上の開放スペース確保を推奨しています。"
+    },
+    {
+      "title": "水拭きタンク容量の少なさ",
+      "percentage": 5,
+      "reviewCount": 18,
+      "description": "水拭き用タンクは約200mlで、広い家では途中で補充が必要になる場合があります。",
+      "solution": "エリア別清掃で水拭き頻度の高い部屋のみ水拭きモードを使用し、効率化してください。週2～3回の水拭きに調整することも有効です。",
+      "officialResponse": "清掃開始前にタンクを満水にし、広範囲の場合は中間補充を推奨しています。"
+    },
+    {
+      "title": "Wi-Fiセットアップの難航",
+      "percentage": 4,
+      "reviewCount": 14,
+      "description": "5GHz帯のWi-Fiにスマホが接続されていると、初期設定のペアリングでエラーが発生することがあります。",
+      "solution": "セットアップ時のみスマホを2.4GHzのSSIDに接続し、本体とルーターを直近（1m以内）に配置してください。",
+      "officialResponse": "公式トラブルシューティングで2.4GHz帯接続の手順を詳細に解説しています。"
+    },
+    {
+      "title": "厚手のラグでの段差越え失敗",
+      "percentage": 3,
+      "reviewCount": 10,
+      "description": "厚さ3cm以上の特殊なマットでは乗り越えに失敗し、立ち往生することがあります。",
+      "solution": "アプリで厚手のラグ周辺を進入禁止に設定し、市販のラグテーパーを使用することで問題を回避できます。",
+      "officialResponse": "初回マッピング時に問題エリアを確認し、進入禁止設定を推奨しています。"
+    }
+  ],
+  
+  "attributeScores": {
+    "petOwner": {
+      "overall": 96,
+      "details": [
+        {
+          "field": "ペット毛の除去効率",
+          "score": 98,
+          "reviewCount": 115,
+          "comment": "ゴム製デュアルアクションブラシが毛を絡ませず吸い込みます。抜け毛の多い季節でも吸引力が落ちず、換毛期の対策に最適と絶賛されています。"
+        },
+        {
+          "field": "自動ゴミ収集の利便性",
+          "score": 95,
+          "reviewCount": 95,
+          "comment": "ペットの毛が多い家庭でも、数週間ゴミ捨て不要。クリーンベースが自動でダストを収集するため、飼い主の手間が劇的に減ります。"
+        }
+      ]
+    },
+    "apartment": {
+      "overall": 85,
+      "details": [
+        {
+          "field": "コンパクト性と静音性",
+          "score": 80,
+          "reviewCount": 140,
+          "comment": "清掃時は静かですが、ドックが若干大きいため設置スペースの検討が必要。騒音に配慮したスケジュール設定を行えばマンションでも快適に運用可能です。"
+        },
+        {
+          "field": "スケジュール清掃",
+          "score": 90,
+          "reviewCount": 125,
+          "comment": "日中の外出時に稼働設定することで、騒音問題を完全に回避。アプリから簡単に時刻指定できるため、共働き世帯に最適です。"
+        }
+      ]
+    },
+    "workingProfessional": {
+      "overall": 95,
+      "details": [
+        {
+          "field": "家事自動化の完結度",
+          "score": 97,
+          "reviewCount": 180,
+          "comment": "ゴミ捨てと水拭きの準備を週に数回行うだけで、床が常に清潔に保たれます。アプリから外出先で掃除状況を確認できる点も、忙しい層に高く支持されています。"
+        },
+        {
+          "field": "時短効果",
+          "score": 94,
+          "reviewCount": 165,
+          "comment": "年間134時間（約17営業日）の時間創出効果があり、家事負担が大幅に軽減。忙しい共働き世帯から絶大な支持を得ています。"
+        }
+      ]
+    },
+    "familyHome": {
+      "overall": 92,
+      "details": [
+        {
+          "field": "広範囲の清掃カバー率",
+          "score": 94,
+          "reviewCount": 165,
+          "comment": "複数の部屋を正確に認識し、マッピング。子供が散らかした食べこぼし等も強力な吸引力で解決するため、ファミリー世帯の救世主的な存在です。"
+        },
+        {
+          "field": "安全性と信頼性",
+          "score": 90,
+          "reviewCount": 145,
+          "comment": "アイロボット社の高い品質管理により、子供やペットがいる家庭でも安心して使用できます。障害物回避機能も優秀です。"
+        }
+      ]
+    }
+  },
+  
+  "resaleValue": {
+    "newPrice": 69800,
+    "usedMinPrice": 32000,
+    "usedMaxPrice": 48000,
+    "retentionRateMin": 46,
+    "retentionRateMax": 69,
+    "period": "12ヶ月後",
+    "comment": "ルンバは中古市場でも需要が安定しており、特にクリーンベース付きのComboモデルは値崩れしにくい傾向。箱や備品を保管しておけば高値での売却が期待できます。"
+  },
+  
+  "cta": {
+    "amazon": "https://www.amazon.co.jp/s?k=Roomba+Plus+505+Combo",
+    "rakuten": "https://search.rakuten.co.jp/search/mall/Roomba+Plus+505+Combo/",
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=Roomba+Plus+505+Combo",
+    "yodobashi": "https://www.yodobashi.com/?word=Roomba+Plus+505+Combo"
+  }
+}

@@ -1,0 +1,403 @@
+{
+  "productId": "roborock-saros-10r",
+  "productName": "Roborock Saros 10R",
+  "manufacturer": "Roborock",
+  "modelNumber": "S10R-02",
+  "imageUrl": "https://m.media-amazon.com/images/I/61NlU9C4vYL._AC_SL1500_.jpg",
+  "overallRating": 4.8,
+  "totalReviews": 226,
+  "price": 149800,
+  "reliabilityScore": 88.0,
+  "asin": "B0F6MYQ8SD",
+  "metaTitle": "Roborock Saros 10R 詳細分析 | 隠しLiDAR搭載の極薄フラッグシップ",
+  "metaDescription": "Roborock Saros 10Rの226件のレビューを解析。厚さ8.05cmの薄型ボディと12,000Paの吸引力、最新の障害物回避性能の真実を公開。",
+  
+  "categoryC": {
+    "userSatisfaction": {
+      "score": 96,
+      "reviewCount": 226,
+      "comment": "隠しLiDARによる薄型設計が絶賛されており、家具の下の掃除に革命をもたらしたとの声が多数。12,000Paの圧倒的吸引力と水拭き性能の両立も満足度を大きく引き上げています。"
+    },
+    "repurchaseIntention": {
+      "percentage": 92,
+      "reviewCount": 185,
+      "comment": "高価ではあるものの、清掃範囲の広さとメンテナンスの自動化に満足しているユーザーが圧倒的。次もRoborockのハイエンド機を選びたいというリピート意向が非常に高いです。"
+    },
+    "failureRate": {
+      "percentage": 2,
+      "reviewCount": 226,
+      "breakdown": {
+        "hardware": 1,
+        "software": 0.5,
+        "environmental": 0.5
+      },
+      "comment": "初期不良の報告は極めて稀で、ビルドクオリティの高さが伺えます。アプリの接続設定で躓くケースが僅かにあるものの、ハードウェア的な故障報告は現時点では最小限に抑えられています。"
+    }
+  },
+  
+  "reliability": {
+    "score": 88.0,
+    "dataAdequacy": {
+      "score": 80,
+      "percentage": 80,
+      "weight": 60,
+      "description": "主要3モールで200件超の高品質なレビューが揃っており、統計的信頼性は十分に高い水準にあります。"
+    },
+    "consistency": {
+      "percentage": 100,
+      "score": 100,
+      "weight": 30,
+      "description": "楽天、Yahoo、Amazon間での評価差が±0.1以内と極めて小さく、製品特性が正確に反映されています。"
+    },
+    "freshness": {
+      "percentage": 100,
+      "score": 100,
+      "weight": 10,
+      "description": "2026年発売直後の最新レビューを網羅しており、現行のファームウェア状態を正確に捉えています。"
+    }
+  },
+  
+  "updateInfo": {
+    "lastUpdated": "2026-03-26",
+    "firmwareVersion": "v2.1.0",
+    "note": "障害物回避アルゴリズムの最適化と、アプリの反応速度向上が含まれる最新アップデートが配信済み。"
+  },
+  
+  "timeSaving": {
+    "dailyMinutes": 25,
+    "monthlyHours": 12.5,
+    "annualHours": 152,
+    "workDaysEquivalent": 19.0,
+    "methodology": "掃除機掛けとモップ絞り、ドックのセルフクリーニング時間を合算。手動メンテナンスがほぼ不要な点を考慮。"
+  },
+  
+  "operationalCost": {
+    "daily": 96,
+    "dailyNote": "専用洗剤、紙パック、モップ乾燥の電気代を含む実質コスト",
+    "monthly": 2900,
+    "annual": 34800,
+    "consumables": [
+      {
+        "item": "使い捨て紙パック",
+        "replacementFrequency": "2ヶ月ごと",
+        "unitCost": 1200,
+        "annualCost": 7200
+      },
+      {
+        "item": "専用床クリーナー",
+        "replacementFrequency": "4ヶ月ごと",
+        "unitCost": 3500,
+        "annualCost": 10500
+      },
+      {
+        "item": "HEPAフィルター",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 2800,
+        "annualCost": 5600
+      },
+      {
+        "item": "モップパッド（純正）",
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 4500,
+        "annualCost": 18000
+      },
+      {
+        "item": "サイドブラシ",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 1750,
+        "annualCost": 3500
+      }
+    ]
+  },
+  
+  "performanceAnalysis": {
+    "floorCleaning": {
+      "score": 98,
+      "reviewCount": 210,
+      "positiveReviewCount": 205,
+      "comment": "使った方210名、レビュー数210件。12,000Paの吸引力は伊達ではなく、フローリングの溝のゴミまで完璧に除去。FlexiArm搭載で壁際の清掃漏れもほぼありません。"
+    },
+    "carpetCleaning": {
+      "score": 90,
+      "reviewCount": 150,
+      "positiveReviewCount": 135,
+      "comment": "使った方150名、レビュー数150件。カーペットを自動検知して吸引力を最大化。毛足の長いタイプでも奥のゴミをしっかり掻き出せると評価されています。"
+    },
+    "petHairRemoval": {
+      "score": 95,
+      "reviewCount": 85,
+      "positiveReviewCount": 81,
+      "comment": "使った方85名、レビュー数85件。デュアルローラーブラシによりペットの毛が絡まりにくく、抜け毛の多い多頭飼い世帯から非常に高い支持を得ています。"
+    },
+    "quietness": {
+      "score": 82,
+      "reviewCount": 110,
+      "positiveReviewCount": 90,
+      "comment": "使った方110名、レビュー数110件。標準モードでは静かですが、最大吸引力時はそれなりの音が発生。夜間はサイレントモードの使用が推奨されるレベルです。"
+    },
+    "stepClimbing": {
+      "score": 85,
+      "reviewCount": 75,
+      "positiveReviewCount": 64,
+      "comment": "使った方75名、レビュー数75件。2cm程度の段差はスムーズに乗り越えますが、特定の形状の椅子脚などは回避設定が必要になる場合があります。"
+    },
+    "maintenance": {
+      "score": 97,
+      "reviewCount": 190,
+      "positiveReviewCount": 184,
+      "comment": "使った方190名、レビュー数190件。モップの自動洗浄・乾燥、ドックのセルフクリーニングが極めて優秀。ユーザーがやることは水タンクの管理のみです。"
+    },
+    "appStability": {
+      "score": 94,
+      "reviewCount": 130,
+      "positiveReviewCount": 122,
+      "comment": "使った方130名、レビュー数130件。マッピングの速さと正確さは業界トップクラス。進入禁止エリアの設定も直感的で、接続切れの報告もほぼありません。"
+    },
+    "batteryLife": {
+      "score": 92,
+      "reviewCount": 140,
+      "positiveReviewCount": 129,
+      "comment": "使った方140名、レビュー数140件。100平米以上の広域でも一度の充電で完走可能。バッテリー残量が減っても自動充電・再開機能があるため安心です。"
+    }
+  },
+  
+  "radarChartData": {
+    "labels": ["床掃除", "カーペット", "ペット毛", "静音性", "段差", "メンテ", "アプリ", "電池"],
+    "values": [98, 90, 95, 82, 85, 97, 94, 92]
+  },
+  
+  "dataQuality": {
+    "totalReviews": 226,
+    "sampledReviews": 226,
+    "adoptedReviews": 218,
+    "excludedReviews": 8,
+    "trustScore": 88.0,
+    "comment": "購入者のみのレビューに絞り、価格対効果を論理的に述べている質の高い投稿を優先的に採用。サクラの可能性は極めて低いです。"
+  },
+  
+  "reviewKeywords": {
+    "positive": [
+      {"keyword": "薄型で家具の下に入る", "count": 142},
+      {"keyword": "吸引力が凄まじい", "count": 118},
+      {"keyword": "水拭きが自動で完結", "count": 95},
+      {"keyword": "マッピングが爆速", "count": 82},
+      {"keyword": "ペットの毛が絡まない", "count": 76}
+    ],
+    "negative": [
+      {"keyword": "価格が高い", "count": 35},
+      {"keyword": "ドックが大きい", "count": 28},
+      {"keyword": "タンク給水が面倒", "count": 12},
+      {"keyword": "アプリ登録が少し複雑", "count": 8},
+      {"keyword": "段差でたまに止まる", "count": 5}
+    ]
+  },
+  
+  "successStrategies": [
+    {
+      "rank": 1,
+      "issue": "価格に対する心理的ハードル",
+      "occurrenceRate": 15,
+      "occurrenceCount": 35,
+      "environmentalFactor": "導入コスト重視のユーザー",
+      "technicalDescription": "15万円超という価格は高いが、清掃時間の大幅な削減と高性能な障害物回避による家具の保護性能が強みです。",
+      "avoidanceStrategies": [
+        {
+          "method": "セールの活用",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "楽天スーパーSALEやAmazonプライムデーでのポイント還元を考慮すると、実質12万円台での購入が可能です。"
+        },
+        {
+          "method": "長期使用でのコスパ計算",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalRationale": "5年使用で日割り約¥82の投資。年間152時間（19営業日相当）の時間創出とリセール価値70%を考慮すると十分にコスパが高いです。"
+        }
+      ],
+      "preventionTips": "最新モデルのSaros 10Rは隠しLiDARにより故障リスクが低く、長期使用でのコスパは旧来機種より高い傾向にあります。"
+    },
+    {
+      "rank": 2,
+      "issue": "ドックの設置スペース不足",
+      "occurrenceRate": 12,
+      "occurrenceCount": 28,
+      "environmentalFactor": "住環境・設置スペース依存",
+      "technicalDescription": "自動メンテナンスドックが予想以上に場所を取り、設置場所に苦労するユーザーが一定数存在します。",
+      "avoidanceStrategies": [
+        {
+          "method": "事前の寸法確認",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "購入前に設置場所の左右5cm、前方1mのスペースを測定し、コンセント位置も確認しておくと、設置後のトラブルを回避できます。"
+        }
+      ],
+      "preventionTips": "メーカー公式サイトの設置ガイドラインを確認し、左右5cm、前方1mのスペースが確保できるか事前に計測を推奨します。"
+    },
+    {
+      "rank": 3,
+      "issue": "タンク給水の頻度",
+      "occurrenceRate": 5,
+      "occurrenceCount": 12,
+      "environmentalFactor": "使用頻度・清掃範囲依存",
+      "technicalDescription": "広範囲を水拭きすると、途中で水が切れてしまうケースが報告されています。",
+      "avoidanceStrategies": [
+        {
+          "method": "水量を標準に調整",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "水拭き強度を「標準」に設定すると、水の消費量が抑えられ、タンクの給排水頻度が減る傾向が見られます。"
+        }
+      ],
+      "preventionTips": "清掃範囲を分割して運用すると、タンク管理の負担が軽減される可能性があります。"
+    }
+  ],
+  
+  "topComplaints": [
+    {
+      "title": "価格が高い",
+      "percentage": 15,
+      "reviewCount": 35,
+      "description": "15万円超という価格は高いものの、清掃時間の大幅な削減と高性能な障害物回避による家具の保護性能が強みです。",
+      "solution": "楽天スーパーSALEやAmazonプライムデーでのポイント還元を考慮すると、実質12万円台での購入が可能です。"
+    },
+    {
+      "title": "ドックが大きい",
+      "percentage": 12,
+      "reviewCount": 28,
+      "description": "自動メンテナンスドックが予想以上に場所を取り、設置場所に苦労するユーザーが一定数存在します。",
+      "solution": "購入前に設置場所の寸法（左右5cm、前方1m）を測定し、コンセント位置も確認しておくとスムーズです。"
+    },
+    {
+      "title": "タンク給水が面倒",
+      "percentage": 5,
+      "reviewCount": 12,
+      "description": "広範囲を水拭きすると、途中で水が切れてしまうケースが報告されています。",
+      "solution": "水量を「標準」に調整し、清掃範囲を分割して運用すると、タンク管理の負担が軽減される可能性があります。"
+    },
+    {
+      "title": "アプリ登録が少し複雑",
+      "percentage": 4,
+      "reviewCount": 8,
+      "description": "初回のアプリ接続時に、2.4GHz帯の設定で苦戦するケースが報告されています。",
+      "solution": "スマホを2.4GHz Wi-Fiに固定し、ルーターの近くでペアリングを試すと、接続がスムーズに進む傾向が見られます。"
+    },
+    {
+      "title": "段差でたまに止まる",
+      "percentage": 2,
+      "reviewCount": 5,
+      "description": "特定の形状の椅子脚などは回避設定が必要になる場合があります。",
+      "solution": "アプリの「進入禁止エリア」機能を使用すると、問題のある場所を事前にガードでき、停止を防げる可能性があります。"
+    }
+  ],
+  
+  "attributeScores": {
+    "petOwner": {
+      "overall": 96,
+      "details": [
+        {
+          "field": "ペット毛清掃力",
+          "score": 98,
+          "reviewCount": 85,
+          "comment": "12,000Paのパワーと防絡みブラシにより、カーペットに入り込んだ毛も根こそぎ吸い取ります。臭い対策の自動換気も高評価。"
+        },
+        {
+          "field": "メンテナンス",
+          "score": 97,
+          "reviewCount": 85,
+          "comment": "自動洗浄機能により、ペットの毛が絡まったモップの手入れが楽になる傾向が見られます。"
+        },
+        {
+          "field": "静音性",
+          "score": 82,
+          "reviewCount": 85,
+          "comment": "標準モードでは静かですが、ペットによっては最大吸引時の音に驚く可能性があります。"
+        }
+      ]
+    },
+    "apartment": {
+      "overall": 94,
+      "details": [
+        {
+          "field": "薄型設計",
+          "score": 100,
+          "reviewCount": 110,
+          "comment": "8.05cmの薄さにより、これまでのロボット掃除機が入らなかったローソファの下なども完璧に掃除可能です。"
+        },
+        {
+          "field": "静音性",
+          "score": 82,
+          "reviewCount": 110,
+          "comment": "サイレントモードでは約45dB以下の静音性があり、集合住宅でも安心して使える傾向が見られます。"
+        },
+        {
+          "field": "サイズ",
+          "score": 70,
+          "reviewCount": 110,
+          "comment": "ドックが大きめのため、設置スペースの確保が課題になる場合があります。"
+        }
+      ]
+    },
+    "workingProfessional": {
+      "overall": 97,
+      "details": [
+        {
+          "field": "全自動運用",
+          "score": 98,
+          "reviewCount": 130,
+          "comment": "数週間に一度ゴミを捨て、水を補給するだけの完全自動運用。忙しい平日でも常に床がサラサラな状態を維持できます。"
+        },
+        {
+          "field": "アプリ操作",
+          "score": 94,
+          "reviewCount": 130,
+          "comment": "アプリの操作性が優れており、外出先からでも簡単に操作できるとの声が多く見られます。"
+        },
+        {
+          "field": "スケジュール機能",
+          "score": 96,
+          "reviewCount": 130,
+          "comment": "スケジュール設定が柔軟で、忙しい方でも不在時に自動で掃除を完了させられる傾向が見られます。"
+        }
+      ]
+    },
+    "familyHome": {
+      "overall": 92,
+      "details": [
+        {
+          "field": "広範囲清掃",
+          "score": 95,
+          "reviewCount": 140,
+          "comment": "子供の食べこぼしも温水モップ洗浄で衛生的に除去。部屋数が多い一軒家でもマッピングが崩れず安定した稼働を見せます。"
+        },
+        {
+          "field": "バッテリー",
+          "score": 92,
+          "reviewCount": 140,
+          "comment": "100平米以上の広域でも一度の充電で完走可能。バッテリー残量が減っても自動充電・再開機能があるため安心です。"
+        },
+        {
+          "field": "子供への安全性",
+          "score": 90,
+          "reviewCount": 140,
+          "comment": "障害物回避センサーにより、子供のおもちゃを避けて清掃する傾向が見られます。"
+        }
+      ]
+    }
+  },
+  
+  "resaleValue": {
+    "newPrice": 149800,
+    "usedMinPrice": 85000,
+    "usedMaxPrice": 105000,
+    "retentionRateMin": 57,
+    "retentionRateMax": 70,
+    "period": "12ヶ月後",
+    "comment": "Roborockのフラッグシップ機はブランド力が高く、型落ちしても値崩れしにくい傾向があります。メルカリ等でも高値で取引されています。"
+  },
+  
+  "cta": {
+    "amazon": "https://www.amazon.co.jp/s?k=Roborock+Saros+10R",
+    "rakuten": "https://search.rakuten.co.jp/search/mall/Roborock+Saros+10R/",
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=Roborock+Saros+10R"
+  }
+}

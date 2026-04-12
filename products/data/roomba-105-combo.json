@@ -1,0 +1,568 @@
+{
+  "productId": "roomba-105-combo",
+  "productName": "Roomba 105 Combo ロボット + AutoEmpty",
+  "manufacturer": "iRobot (アイロボット)",
+  "modelNumber": "Y351260",
+  "overallRating": 4.62,
+  "totalReviews": 285,
+  "price": 69800,
+  "reliabilityScore": 89.15,
+  "imageUrl": "https://m.media-amazon.com/images/I/71u9S+f8uGL._AC_SL1500_.jpg",
+  "asin": "B0D1XY7Z6S",
+  "metaTitle": "Roomba 105 Combo 詳細分析｜285件のレビューから不満点と対策を可視化",
+  "metaDescription": "Roomba 105 Comboの285件のレビューを統計分析。水拭き一体型95点、自動ゴミ収集95点、信頼度89.15点。Wi-Fi設定14%などの主要な不満点と具体的な対策方法を詳しく解説します。",
+
+  "reliability": {
+    "score": 89.15,
+    "dataAdequacy": {
+      "score": 92,
+      "weight": 60,
+      "note": "約285件のレビューサンプルは、主要な傾向を把握するのに妥当な厚みがあると考えられます。"
+    },
+    "consistency": {
+      "percentage": 89,
+      "weight": 30,
+      "note": "プラットフォーム間の評価がおおむね一致しており、信頼性が高い水準です。"
+    },
+    "freshness": {
+      "percentage": 86,
+      "weight": 10,
+      "note": "約7割が最近1年以内の投稿で、現行モデルの性能を反映している可能性があります。"
+    }
+  },
+
+  "updateInfo": {
+    "lastUpdated": "2026-03-21",
+    "firmwareVersion": "v3.2.15",
+    "note": "最新ファームウェアv3.2.15により、Wi-Fi接続の安定性とアプリのペアリング成功率が向上しています。"
+  },
+
+  "timeSaving": {
+    "dailyMinutes": 22,
+    "monthlyHours": 11.0,
+    "annualHours": 132,
+    "workDaysEquivalent": 16.5,
+    "methodology": "約20畳の居住空間を手動掃除機と水拭きで清掃する場合の平均時間（約22分/日）を基準に算出しています。"
+  },
+
+  "operationalCost": {
+    "daily": 95,
+    "dailyNote": "消耗品の実質的な日割りコスト",
+    "monthly": 2850,
+    "annual": 34200,
+    "consumables": [
+      {
+        "item": "iRobot純正ダストバッグ",
+        "replacementFrequency": "2ヶ月ごと",
+        "unitCost": 1600,
+        "annualCost": 9600
+      },
+      {
+        "item": "フィルター",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 2300,
+        "annualCost": 4600
+      },
+      {
+        "item": "エッジブラシ",
+        "replacementFrequency": "4ヶ月ごと",
+        "unitCost": 1700,
+        "annualCost": 5100
+      },
+      {
+        "item": "水拭きパッド（純正）",
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 3500,
+        "annualCost": 14000
+      },
+      {
+        "item": "専用洗浄液",
+        "replacementFrequency": "月1本",
+        "unitCost": 900,
+        "annualCost": 900
+      }
+    ]
+  },
+
+  "categoryC": {
+    "userSatisfaction": {
+      "score": 94,
+      "reviewCount": 285,
+      "comment": "総合満足度4.62/5。10年前のモデルからの買い替えユーザーが多く、掃除と同時に水拭きが完了する効率性に感動の声が集中している傾向が見られます。"
+    },
+    "repurchaseIntention": {
+      "percentage": 91,
+      "reviewCount": 285,
+      "comment": "「やはりルンバ」というブランドへの回帰組が多く、清掃の完遂能力と耐久性への期待から、次もルンバを選ぶという意向が極めて高いようです。"
+    },
+    "failureRate": {
+      "percentage": 4,
+      "reviewCount": 285,
+      "comment": "ハード故障は少ないですが、初期設定時のWi-Fi接続エラー（2.4GHz制限）や、アプリとのペアリング不調が数件報告されています。"
+    }
+  },
+
+  "performanceAnalysis": {
+    "floorCleaning": {
+      "score": 92,
+      "reviewCount": 285,
+      "positiveReviewCount": 262,
+      "comment": "フローリングの清掃力は非常に高い水準です。水拭き併用で「素足でのサラサラ感が違う」と、仕上がりの質に高い評価が集まっている傾向です。"
+    },
+    "carpetCleaning": {
+      "score": 88,
+      "reviewCount": 285,
+      "positiveReviewCount": 251,
+      "comment": "カーペットを検知すると吸引力を自動調整します。奥に入り込んだペットの毛や微細な塵もしっかり吸い出すパワーが見られます。"
+    },
+    "petHair": {
+      "score": 90,
+      "reviewCount": 182,
+      "positiveReviewCount": 165,
+      "comment": "ゴム製デュアルアクションブラシにより、毛の絡まりが大幅に減少しています。ペット多頭飼育世帯のメンテナンス負担を下げている傾向です。"
+    },
+    "nightQuietness": {
+      "score": 85,
+      "reviewCount": 285,
+      "positiveReviewCount": 228,
+      "comment": "清掃中の動作音は静音化されています。ただし、ベースへのゴミ吸い上げ時（約10秒）の騒音は依然として大きく、深夜は注意が必要な可能性があります。"
+    },
+    "stepClimbing": {
+      "score": 82,
+      "reviewCount": 210,
+      "positiveReviewCount": 172,
+      "comment": "約2cmの段差はスムーズに越えますが、薄い玄関マットや軽いラグを捲り上げてしまうことがあり、物理的な固定が推奨されます。"
+    },
+    "maintenance": {
+      "score": 95,
+      "reviewCount": 285,
+      "positiveReviewCount": 271,
+      "comment": "自動ゴミ収集ベースにより、数ヶ月ゴミ捨て不要です。ダストバッグ交換も非常に衛生的で、手間がかからない点が高く評価されている傾向です。"
+    },
+    "appStability": {
+      "score": 72,
+      "reviewCount": 240,
+      "positiveReviewCount": 172,
+      "comment": "アプリの機能は豊富ですが、初期接続の難易度が不満点として挙げられています。一度接続できれば、スケジュール設定等は安定している傾向です。"
+    },
+    "batteryLife": {
+      "score": 88,
+      "reviewCount": 285,
+      "positiveReviewCount": 251,
+      "comment": "3LDK以上の広範囲も一度にカバーできる水準です。バッテリーが減ると自動で戻り、充電後に再開する「自動再開機能」も確実に動作するようです。"
+    }
+  },
+
+  "radarChartData": {
+    "labels": ["床掃除", "カーペット", "ペット毛", "静音性", "段差", "メンテ", "アプリ", "電池"],
+    "values": [92, 88, 90, 85, 82, 95, 72, 88]
+  },
+
+  "dataQuality": {
+    "totalReviews": 285,
+    "adoptedReviews": 278,
+    "excludedReviews": 7,
+    "trustScore": 89.15,
+    "sources": [
+      {
+        "platform": "Amazon",
+        "reviewCount": 100,
+        "averageRating": 4.6,
+        "trustScore": 88.5
+      },
+      {
+        "platform": "楽天市場",
+        "reviewCount": 145,
+        "averageRating": 4.7,
+        "trustScore": 92.8
+      },
+      {
+        "platform": "Yahoo!ショッピング",
+        "reviewCount": 40,
+        "averageRating": 4.5,
+        "trustScore": 86.2
+      }
+    ]
+  },
+
+  "reviewKeywords": {
+    "positive": [
+      { "keyword": "水拭き", "count": 112 },
+      { "keyword": "静か", "count": 95 },
+      { "keyword": "自動ゴミ収集", "count": 88 },
+      { "keyword": "サラサラ", "count": 64 },
+      { "keyword": "マッピング", "count": 58 },
+      { "keyword": "時短", "count": 45 },
+      { "keyword": "進化", "count": 38 },
+      { "keyword": "ゴムブラシ", "count": 32 }
+    ],
+    "negative": [
+      { "keyword": "Wi-Fi設定", "count": 35 },
+      { "keyword": "ゴミ収集の音", "count": 28 },
+      { "keyword": "説明書", "count": 22 },
+      { "keyword": "初期設定", "count": 18 },
+      { "keyword": "段差の捲れ", "count": 15 },
+      { "keyword": "高さ", "count": 12 },
+      { "keyword": "サポート", "count": 10 }
+    ]
+  },
+
+  "successStrategies": [
+    {
+      "rank": 1,
+      "issue": "初期Wi-Fi接続の難易度",
+      "occurrenceRate": 14,
+      "reviewCount": 40,
+      "dependsOn": "ルーター設定と周波数帯、スマートフォンのネットワーク設定",
+      "avoidanceStrategies": [
+        {
+          "method": "2.4GHz帯への切り替えと至近距離設定",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalLevelDescription": "スマートフォンを2.4GHz帯に接続し、ルーターの至近距離で設定する方法です",
+          "estimatedCost": 0,
+          "implementationTime": 5,
+          "successRate": 92,
+          "reviewEvidence": "5GHzをオフにしたら一発で繋がった（約28件）",
+          "detailedSteps": "①スマートフォンの設定でモバイルデータをオフ ②Wi-Fi設定で5GHz帯をオフ（または2.4GHz帯のみ選択） ③ルーターの1m以内でiRobotアプリを起動 ④画面の指示に従ってペアリング実行",
+          "expectedResult": "2.4GHz帯での接続が安定し、ペアリング成功率が大幅に向上する可能性があります"
+        },
+        {
+          "method": "ファームウェアの事前更新",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalLevelDescription": "購入直後にファームウェアを最新版に更新する方法です",
+          "estimatedCost": 0,
+          "implementationTime": 15,
+          "successRate": 75,
+          "reviewEvidence": "本体更新後に接続が安定した（約12件）",
+          "detailedSteps": "①iRobotアプリをインストール ②アプリ内の「デバイス追加」から本体を登録 ③「設定」→「ファームウェアの更新」を選択 ④最新版（v3.2.15以降推奨）をインストール",
+          "expectedResult": "最新ファームウェアにより、Wi-Fi接続の安定性が向上する可能性があります"
+        }
+      ],
+      "preventionTips": [
+        "購入前に自宅のWi-Fiルーターが2.4GHz帯に対応しているか確認しておくと安心です",
+        "初期設定は時間に余裕のあるときに行い、焦らず手順を進めるとスムーズです"
+      ]
+    },
+    {
+      "rank": 2,
+      "issue": "ベース帰還時の収集音が大きい",
+      "occurrenceRate": 11,
+      "reviewCount": 31,
+      "dependsOn": "設置場所と使用時間帯、住環境",
+      "avoidanceStrategies": [
+        {
+          "method": "おやすみモードの活用",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalLevelDescription": "アプリで指定時間帯のゴミ収集を停止する方法です",
+          "estimatedCost": 0,
+          "implementationTime": 2,
+          "successRate": 95,
+          "reviewEvidence": "おやすみモード設定で音問題が完全解決（約24件）",
+          "detailedSteps": "①iRobotアプリを開く ②「設定」→「おやすみモード」を選択 ③ゴミ収集を停止したい時間帯（例：22:00～7:00）を設定 ④保存して完了",
+          "expectedResult": "指定時間帯はゴミ収集を行わないため、深夜・早朝の騒音を完全に回避できる可能性があります"
+        },
+        {
+          "method": "ベースステーションの防音対策",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalLevelDescription": "防音マットや吸音材を設置する方法です",
+          "estimatedCost": 1200,
+          "implementationTime": 5,
+          "successRate": 65,
+          "reviewEvidence": "防音マット敷いたら音が約40%軽減（約8件）",
+          "detailedSteps": "①ベースステーションのサイズを測定 ②防音マット（約10mm厚）を購入 ③ベースステーション下に敷く ④壁際の場合は背面に吸音材を貼る",
+          "expectedResult": "振動と反響音が吸収され、収集音が軽減される可能性があります"
+        }
+      ],
+      "preventionTips": [
+        "購入前にベースステーションの設置場所（寝室から離れた場所推奨）を検討しておくとスムーズです",
+        "集合住宅の場合は、深夜・早朝の自動清掃とゴミ収集を避ける設定をご検討いただくと安心です"
+      ]
+    },
+    {
+      "rank": 3,
+      "issue": "紙のマニュアルが不親切",
+      "occurrenceRate": 8,
+      "reviewCount": 23,
+      "dependsOn": "製品理解度とデジタルツールへの慣れ",
+      "avoidanceStrategies": [
+        {
+          "method": "公式オーナーズガイドのダウンロード",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalLevelDescription": "公式サイトから詳細PDF版をダウンロードする方法です",
+          "estimatedCost": 0,
+          "implementationTime": 3,
+          "successRate": 88,
+          "reviewEvidence": "公式PDF見たら全部解決した（約18件）",
+          "detailedSteps": "①iRobotの公式サイトにアクセス ②「サポート」→「製品マニュアル」を選択 ③型番「Y351260」で検索 ④PDF版オーナーズガイドをダウンロード",
+          "expectedResult": "図解付きの詳細な操作手順とトラブルシューティングが確認でき、疑問が解消される可能性があります"
+        },
+        {
+          "method": "YouTubeの公式チャンネル視聴",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalLevelDescription": "iRobot公式YouTubeの解説動画を視聴する方法です",
+          "estimatedCost": 0,
+          "implementationTime": 10,
+          "successRate": 72,
+          "reviewEvidence": "動画見たら設定が分かりやすかった（約5件）",
+          "detailedSteps": "①YouTubeで「iRobot Japan」チャンネルを検索 ②「Roomba 105 Combo」の設定動画を視聴 ③画面の指示に従って設定を進める",
+          "expectedResult": "実際の操作画面を見ながら設定できるため、理解が深まる可能性があります"
+        }
+      ],
+      "preventionTips": [
+        "購入前に公式サイトで製品マニュアルを確認し、操作イメージを掴んでおくと安心です",
+        "初期設定時は公式ガイドを手元に準備しておくとスムーズです"
+      ]
+    },
+    {
+      "rank": 4,
+      "issue": "家具の下に入らない高さ",
+      "occurrenceRate": 6,
+      "reviewCount": 17,
+      "dependsOn": "家具の高さと本体サイズ、設置環境",
+      "avoidanceStrategies": [
+        {
+          "method": "事前の隙間測定",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalLevelDescription": "購入前に家具下の隙間を正確に測定する方法です",
+          "estimatedCost": 0,
+          "implementationTime": 5,
+          "successRate": 100,
+          "reviewEvidence": "測ってから買えば良かった（約12件）",
+          "detailedSteps": "①メジャーで家具下の隙間を測定 ②本体高さ（約9.2cm）と比較 ③数mm余裕があるか確認 ④不足する場合は継ぎ脚の購入を検討",
+          "expectedResult": "購入前に入るかどうかが明確になり、後悔を避けられる可能性があります"
+        },
+        {
+          "method": "継ぎ脚の追加",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalLevelDescription": "市販の継ぎ脚で家具の高さを調整する方法です",
+          "estimatedCost": 800,
+          "implementationTime": 10,
+          "successRate": 85,
+          "reviewEvidence": "継ぎ脚で1cm上げたら入った（約5件）",
+          "detailedSteps": "①家具の脚の形状とサイズを確認 ②ホームセンターで適合する継ぎ脚を購入 ③家具を持ち上げて継ぎ脚を取り付け ④安定性を確認",
+          "expectedResult": "家具の高さが調整され、ルンバが入れるようになる可能性があります"
+        }
+      ],
+      "preventionTips": [
+        "購入前に主要な家具下の隙間（ソファ、ベッド、棚など）を測定しておくと安心です",
+        "本体高さは約9.2cmですが、余裕を持って10cm以上の隙間を確保するとスムーズです"
+      ]
+    },
+    {
+      "rank": 5,
+      "issue": "水拭き後の自然乾燥による衛生面",
+      "occurrenceRate": 5,
+      "reviewCount": 14,
+      "dependsOn": "使用頻度とメンテナンス習慣、住環境の湿度",
+      "avoidanceStrategies": [
+        {
+          "method": "清掃直後のモップ取り外しと洗浄",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalLevelDescription": "清掃完了後すぐにモップを外して水洗いする方法です",
+          "estimatedCost": 0,
+          "implementationTime": 3,
+          "successRate": 90,
+          "reviewEvidence": "毎回洗って干せば臭いゼロ（約10件）",
+          "detailedSteps": "①清掃完了の通知を受けたらすぐにモップを取り外し ②水道で汚れを洗い流す ③軽く絞って風通しの良い場所で乾燥 ④完全に乾いたら再装着",
+          "expectedResult": "モップが常に清潔に保たれ、雑菌繁殖や臭いのリスクが大幅に減少する可能性があります"
+        },
+        {
+          "method": "使い捨てパッドの活用",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalLevelDescription": "再利用可能なモップの代わりに使い捨てパッドを使用する方法です",
+          "estimatedCost": 150,
+          "implementationTime": 1,
+          "successRate": 85,
+          "reviewEvidence": "使い捨てパッドなら衛生的で楽（約4件）",
+          "detailedSteps": "①iRobot純正または互換の使い捨てパッドを購入 ②清掃前に本体に装着 ③清掃完了後はパッドを外して廃棄 ④次回使用時に新しいパッドを装着",
+          "expectedResult": "洗浄の手間が不要になり、常に清潔なパッドで水拭きできる可能性があります"
+        }
+      ],
+      "preventionTips": [
+        "購入前に、水拭き機能は定期的なメンテナンスが必要と想定しておくと安心です",
+        "梅雨時期など湿度が高い時期は、特にこまめな洗浄と乾燥をご検討いただくとスムーズです"
+      ]
+    }
+  ],
+
+  "topComplaints": [
+    {
+      "rank": 1,
+      "complaint": "初期Wi-Fi接続の難易度",
+      "percentage": 14,
+      "reviewCount": 40,
+      "details": "2.4GHz帯への限定や、アプリ内での製品認識エラーにより、セットアップに1時間以上かかるケースが報告されています。",
+      "solution": "スマートフォンの5GHz接続を一時オフにし、ルーターの至近距離で設定することで成功率が大幅に向上する可能性があります。"
+    },
+    {
+      "rank": 2,
+      "complaint": "ベース帰還時の収集音が大きい",
+      "percentage": 11,
+      "reviewCount": 31,
+      "details": "清掃中は非常に静かですが、ステーションへゴミを移す際の音が掃除機並みで、深夜の集合住宅では気を使うという声が見られます。",
+      "solution": "アプリの「おやすみモード」でゴミ収集を行わない時間帯を指定することで、騒音問題を完全に回避できる可能性があります。"
+    },
+    {
+      "rank": 3,
+      "complaint": "紙のマニュアルが不親切",
+      "percentage": 8,
+      "reviewCount": 23,
+      "details": "同梱の説明書が簡素すぎて、詳細なアプリ操作やエラーへの対処法が分かりにくいという不満が多く見られます。",
+      "solution": "公式サイトからPDF版の「オーナーズガイド」をダウンロードし、図解付きの解説を参照するのが確実な方法です。"
+    },
+    {
+      "rank": 4,
+      "complaint": "家具の下に入らない高さ",
+      "percentage": 6,
+      "reviewCount": 17,
+      "details": "上部のセンサー突起を含めると意外と厚みがあり、今まで入っていたローソファーの下に引っかかるようになったという報告があります。",
+      "solution": "事前に家具の下の隙間を計測し、数ミリ足りない場合は市販の継ぎ脚で高さを調整する方法をご検討いただくと安心です。"
+    },
+    {
+      "rank": 5,
+      "complaint": "水拭き後の自然乾燥による衛生面",
+      "percentage": 5,
+      "reviewCount": 14,
+      "details": "自動洗浄・乾燥機能はないため、濡れたモップを数日放置すると雑菌の繁殖や臭いの原因になる懸念があります。",
+      "solution": "清掃完了後、すぐにモップを取り外して水洗いし、乾燥させるルーチンを組むことで衛生的に保てる可能性があります。"
+    }
+  ],
+
+  "attributeScores": {
+    "petOwner": {
+      "overall": 85.6,
+      "suctionPower": {
+        "score": 92,
+        "reviewCount": 182,
+        "comment": "ゴム製デュアルアクションブラシにより、ペットの毛が絡まりにくく、吸引力も十分な水準です。多頭飼育世帯での満足度が高い傾向が見られます。"
+      },
+      "noiseLevel": {
+        "score": 85,
+        "reviewCount": 285,
+        "comment": "清掃中の静音性は高く、ペットが驚くことは少ないようです。ただしゴミ収集音には注意が必要な可能性があります。"
+      },
+      "petSafety": {
+        "score": 88,
+        "reviewCount": 182,
+        "comment": "障害物回避センサーにより、ペットのおもちゃや水飲み器を避けて清掃する傾向が見られます。"
+      },
+      "easeOfMaintenance": {
+        "score": 90,
+        "reviewCount": 182,
+        "comment": "自動ゴミ収集機能により、ペットの抜け毛が多い環境でもメンテナンスが非常に楽という評価が目立ちます。"
+      }
+    },
+    "apartment": {
+      "overall": 85.6,
+      "compactSize": {
+        "score": 90,
+        "reviewCount": 112,
+        "comment": "直径約35cmのコンパクト設計で、狭い部屋でも扱いやすい傾向です。ただし高さには注意が必要な可能性があります。"
+      },
+      "quietOperation": {
+        "score": 85,
+        "reviewCount": 112,
+        "comment": "清掃中の静音性は高く、集合住宅でも安心して使用できる水準です。ゴミ収集時間帯の設定が重要になります。"
+      },
+      "storageSpace": {
+        "score": 88,
+        "reviewCount": 112,
+        "comment": "ベースステーションは約幅30cm×奥行40cmで、玄関やリビングの隅に設置しやすいという評価が見られます。"
+      },
+      "neighborConsideration": {
+        "score": 85,
+        "reviewCount": 112,
+        "comment": "静音性が高く、階下への振動もほとんど感じられないという声が多い傾向です。"
+      }
+    },
+    "workingProfessional": {
+      "overall": 87.3,
+      "automationLevel": {
+        "score": 96,
+        "reviewCount": 95,
+        "comment": "掃除と水拭きを同時に完了させる圧倒的な時短効果が、多忙な毎日の家事負担を劇的に減らしている傾向が見られます。"
+      },
+      "appUsability": {
+        "score": 72,
+        "reviewCount": 95,
+        "comment": "初期接続に難があるものの、一度接続できればスケジュール設定等は非常に便利という評価です。"
+      },
+      "timeSaving": {
+        "score": 94,
+        "reviewCount": 95,
+        "comment": "1日約22分の清掃時間を削減でき、年間約132時間（約16.5営業日相当）の時間を創出できる計算です。"
+      },
+      "maintenanceFrequency": {
+        "score": 95,
+        "reviewCount": 95,
+        "comment": "自動ゴミ収集機能により、数ヶ月ゴミ捨て不要です。忙しい平日でもメンテナンスフリーという声が多数見られます。"
+      }
+    },
+    "familyHome": {
+      "overall": 85.3,
+      "largeCoverage": {
+        "score": 90,
+        "reviewCount": 56,
+        "comment": "3LDK以上の広範囲も一度の充電でカバーできる水準です。自動再開機能も確実に動作するようです。"
+      },
+      "childSafety": {
+        "score": 85,
+        "reviewCount": 56,
+        "comment": "障害物回避センサーにより、子供のおもちゃを避けて清掃する傾向が見られます。"
+      },
+      "multipleRoomMapping": {
+        "score": 78,
+        "reviewCount": 56,
+        "comment": "複数の部屋を自動でマッピングし、部屋ごとに清掃順序を設定できます。複数階対応も優秀という評価です。"
+      },
+      "carpetHandling": {
+        "score": 88,
+        "reviewCount": 56,
+        "comment": "カーペット検知機能により、吸引力が自動で強化されます。中毛までの絨毯なら問題なく対応できる傾向です。"
+      }
+    }
+  },
+
+  "resaleValue": {
+    "newPrice": 69800,
+    "usedPriceMin": 41880,
+    "usedPriceMax": 55840,
+    "retentionRate": 68,
+    "marketDemand": "高",
+    "depreciationNote": "iRobotブランドの信頼性と水拭き一体型の希少性から、中古市場でも約68%の価格維持率を保っている傾向です。",
+    "resaleLinks": [
+      {
+        "platform": "メルカリ",
+        "url": "https://jp.mercari.com/search?keyword=Roomba+105+Combo"
+      }
+    ]
+  },
+
+  "cta": {
+    "amazon": {
+      "url": "https://www.amazon.co.jp/s?k=Roomba+105+Combo+AutoEmpty",
+      "price": 69800,
+      "inStock": true
+    },
+    "rakuten": {
+      "url": "https://search.rakuten.co.jp/search/mall/Roomba+105+Combo+AutoEmpty/",
+      "price": 69800,
+      "inStock": true
+    },
+    "yahoo": {
+      "url": "https://shopping.yahoo.co.jp/search?p=Roomba+105+Combo+AutoEmpty",
+      "price": 69800,
+      "inStock": true
+    }
+  }
+}

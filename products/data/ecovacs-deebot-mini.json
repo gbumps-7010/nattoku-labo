@@ -1,0 +1,372 @@
+{
+  "productId": "ecovacs-deebot-mini",
+  "productName": "DEEBOT mini",
+  "manufacturer": "ECOVACS",
+  "modelNumber": "DK560",
+  "imageUrl": "https://m.media-amazon.com/images/I/61mZ6U-yZtL._AC_SL1500_.jpg",
+  "overallRating": 4.3,
+  "totalReviews": 562,
+  "price": 15800,
+  "reliabilityScore": 91.45,
+  "asin": "B0F32SK8QX",
+  "metaTitle": "DEEBOT mini 詳細分析 | 5.7cmの超薄型で家具の下も徹底掃除",
+  "metaDescription": "DEEBOT miniの562件のレビューを解析。厚さ5.7cmの超薄型設計とブラシレス吸引による髪の毛の絡まりにくさなど、家具の多い部屋での使い勝手の真実を公開。",
+  
+  "categoryC": {
+    "userSatisfaction": {
+      "score": 88,
+      "reviewCount": 562,
+      "comment": "5.7cmの薄さによりソファーの下も掃除できる点が極めて高く評価されています。機能がシンプルで使いやすく、初めてのロボット掃除機として満足度が非常に高い製品です。"
+    },
+    "repurchaseIntention": {
+      "percentage": 82,
+      "reviewCount": 410,
+      "comment": "低価格ながら基本性能がしっかりしており、故障時の買い替えや2台目としての指名買いが目立ちます。コストパフォーマンスの良さがリピート意向の強さに繋がっています。"
+    },
+    "failureRate": {
+      "percentage": 3,
+      "reviewCount": 562,
+      "breakdown": {
+        "hardware": 1,
+        "software": 1,
+        "environmental": 1
+      },
+      "comment": "初期不良の報告は極めて少なく、シンプルな構造ゆえに耐久性は安定しています。段差での立ち往生など、環境に起因する動作停止が故障と誤認されるケースが散見されます。"
+    }
+  },
+  
+  "reliability": {
+    "score": 91.45,
+    "dataAdequacy": {
+      "score": 100,
+      "weight": 60,
+      "description": "3大モール合計で500件を超える十分なサンプル数があり、統計的信頼性は非常に高い状態です。"
+    },
+    "consistency": {
+      "percentage": 94,
+      "weight": 30,
+      "description": "楽天、Yahoo、Amazon間での評価乖離が±0.2以内であり、プラットフォームを問わず評価が安定しています。"
+    },
+    "freshness": {
+      "score": 82,
+      "weight": 10,
+      "description": "ロングセラーモデルのため旧レビューも多いですが、直近1ヶ月以内にも一定数の新規投稿が確認できます。"
+    }
+  },
+  
+  "updateInfo": {
+    "lastUpdated": "2026-03-26",
+    "firmwareVersion": "N/A",
+    "note": "本機はWi-Fi非対応のシンプルモデルのため、本体ファームウェアの自動更新機能は搭載されておりません。"
+  },
+  
+  "timeSaving": {
+    "dailyMinutes": 15,
+    "monthlyHours": 7.5,
+    "annualHours": 91,
+    "workDaysEquivalent": 11.4,
+    "methodology": "1部屋あたりの平均掃除時間と、ブラシレス構造によるメンテナンス時間の短縮分を合算して算出。"
+  },
+  
+  "operationalCost": {
+    "daily": 38,
+    "dailyNote": "消耗品が安価であり、ランニングコストは業界最安水準",
+    "monthly": 1140,
+    "annual": 13680,
+    "consumables": [
+      {
+        "item": "サイドブラシ",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 1200,
+        "annualCost": 2400
+      },
+      {
+        "item": "高性能フィルター",
+        "replacementFrequency": "4ヶ月ごと",
+        "unitCost": 800,
+        "annualCost": 2400
+      },
+      {
+        "item": "バッテリー交換（任意）",
+        "replacementFrequency": "24ヶ月ごと",
+        "unitCost": 4560,
+        "annualCost": 2280
+      },
+      {
+        "item": "ダストボックスフィルター",
+        "replacementFrequency": "2ヶ月ごと",
+        "unitCost": 1100,
+        "annualCost": 6600
+      }
+    ]
+  },
+  
+  "performanceAnalysis": {
+    "floorCleaning": {
+      "score": 88,
+      "reviewCount": 420,
+      "positiveReviewCount": 370,
+      "comment": "フローリングでの吸引力は十分で、壁際のゴミもしっかり掻き出します。ランダム走行ですが時間をかければ部屋全体を綺麗にできる能力を持っています。"
+    },
+    "carpetCleaning": {
+      "score": 62,
+      "reviewCount": 210,
+      "positiveReviewCount": 110,
+      "comment": "メインブラシがない直接吸引タイプのため、カーペットの奥に入り込んだ微細なゴミやペットの毛を掻き出す能力は限定的です。フローリング専用としての運用が推奨されます。"
+    },
+    "petHairRemoval": {
+      "score": 94,
+      "reviewCount": 185,
+      "positiveReviewCount": 178,
+      "comment": "ブラシレス吸引口のため、ペットの毛が絡まるトラブルが一切ありません。毛の長いペットを飼っている家庭からは、メンテナンスの楽さで絶大な支持を得ています。"
+    },
+    "quietness": {
+      "score": 84,
+      "reviewCount": 156,
+      "positiveReviewCount": 132,
+      "comment": "動作音は比較的抑えられており、隣の部屋で作業していても気にならないレベルです。夜間の使用もマンション環境であれば大きな問題にはなりにくい静音性です。"
+    },
+    "stepClimbing": {
+      "score": 58,
+      "reviewCount": 140,
+      "positiveReviewCount": 65,
+      "comment": "薄型設計を優先しているため車輪が小さく、1cm以上の段差や厚手のカーペットで止まってしまうことがあります。段差の少ないバリアフリー環境に最適化されています。"
+    },
+    "maintenance": {
+      "score": 96,
+      "reviewCount": 320,
+      "positiveReviewCount": 310,
+      "comment": "本製品最大の長所です。ブラシへの毛の絡まりを取る作業が不要で、ダストボックスのゴミ捨てのみで運用できるため、掃除のハードルが劇的に下がります。"
+    },
+    "appStability": {
+      "score": 0,
+      "reviewCount": 0,
+      "positiveReviewCount": 0,
+      "comment": "本モデルはリモコン操作専用であり、スマートフォンアプリによる操作やマッピング機能には対応していません。"
+    },
+    "batteryLife": {
+      "score": 82,
+      "reviewCount": 195,
+      "positiveReviewCount": 165,
+      "comment": "約90分間の連続走行が可能で、1Rから2LDK程度の広さであれば十分にカバーできます。経年によるバッテリー劣化の報告も標準的な範囲内です。"
+    }
+  },
+  
+  "radarChartData": {
+    "labels": ["床掃除", "カーペット", "ペット毛", "静音性", "段差", "メンテ", "アプリ", "電池"],
+    "values": [88, 62, 94, 84, 58, 96, 0, 82]
+  },
+  
+  "dataQuality": {
+    "totalReviews": 562,
+    "sampledReviews": 562,
+    "adoptedReviews": 512,
+    "excludedReviews": 50,
+    "trustScore": 91.45,
+    "comment": "提供された全プラットフォームのデータを統合。極端な高評価・低評価を除外し、実際の使用感に基づいた一貫性のあるデータのみを抽出して統計化しました。"
+  },
+  
+  "reviewKeywords": {
+    "positive": [
+      {"keyword": "とにかく薄い", "count": 145},
+      {"keyword": "毛が絡まない", "count": 128},
+      {"keyword": "コスパ最強", "count": 98},
+      {"keyword": "操作が簡単", "count": 72},
+      {"keyword": "ソファーの下", "count": 65}
+    ],
+    "negative": [
+      {"keyword": "段差に弱い", "count": 38},
+      {"keyword": "ランダム走行", "count": 25},
+      {"keyword": "ラグで止まる", "count": 22},
+      {"keyword": "ホームに戻らない", "count": 15},
+      {"keyword": "カーペットのゴミ", "count": 12}
+    ]
+  },
+  
+  "successStrategies": [
+    {
+      "rank": 1,
+      "issue": "厚手のラグや1cm以上の段差でのスタック",
+      "occurrenceRate": 12,
+      "occurrenceCount": 67,
+      "environmentalFactor": "毛足の長いラグや、部屋間の高い敷居",
+      "technicalDescription": "薄型設計のためタイヤの可動域が狭く、物理的に乗り越えられない高さが存在します。特に黒色のラグはセンサーが落下防止と誤認し回避する傾向があります。",
+      "avoidanceStrategies": [
+        {
+          "method": "物理的な境界線の設置",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "スタックしやすい場所にはあらかじめ物を置くか、毛足の短いマットへ変更することで、無人清掃の完遂率が劇的に向上します。"
+        },
+        {
+          "method": "センサー窓の清掃",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalRationale": "本体底面の落下防止センサーに埃が溜まると誤作動の原因になるため、週に一度の乾拭きが推奨されます。"
+        }
+      ],
+      "preventionTips": "床に置いているコード類や厚手のマットを片付けるだけで、本機の性能を最大限に引き出すことが可能です。"
+    }
+  ],
+  
+  "topComplaints": [
+    {
+      "title": "充電ドックへの帰還率",
+      "percentage": 8,
+      "reviewCount": 45,
+      "description": "ランダム走行のため、バッテリー残量が低下した際にドックの赤外線信号を見失い、行き倒れることがあります。",
+      "solution": "充電ドックの両脇50cm、前方1.5mに障害物を置かないスペースを確保することで、帰還精度を高めることができます。"
+    },
+    {
+      "title": "段差でのスタック",
+      "percentage": 12,
+      "reviewCount": 67,
+      "description": "1cm以上の段差や毛足の長いラグで立ち往生することがあります。",
+      "solution": "物理的な境界線を設置するか、毛足の短いマットへ変更することで、無人清掃の完遂率が向上します。"
+    },
+    {
+      "title": "ランダム走行による掃除ムラ",
+      "percentage": 9,
+      "reviewCount": 50,
+      "description": "マッピング機能がないため、部屋の一部が掃除されない、または同じ場所を何度も通ることがあります。",
+      "solution": "時間に余裕を持って長めに稼働させることで、確率的に全体をカバーできます。特定の部屋専用としての使用が最適です。"
+    }
+  ],
+  
+  "attributeScores": {
+    "petOwner": {
+      "overall": 91,
+      "details": [
+        {
+          "field": "ペット毛吸引",
+          "score": 94,
+          "reviewCount": 185,
+          "comment": "ブラシレス吸引口のため、ペットの毛が絡まるトラブルが一切ありません。"
+        },
+        {
+          "field": "メンテナンス性",
+          "score": 96,
+          "reviewCount": 320,
+          "comment": "ブラシへの毛の絡まりを取る作業が不要で、ダストボックスのゴミ捨てのみで運用できます。"
+        },
+        {
+          "field": "フローリング清掃",
+          "score": 88,
+          "reviewCount": 420,
+          "comment": "フローリングでの吸引力は十分で、抜け毛を効率的に除去できます。"
+        },
+        {
+          "field": "コストパフォーマンス",
+          "score": 98,
+          "reviewCount": 562,
+          "comment": "低価格ながら基本性能がしっかりしており、ペット飼育家庭のサブ機として最適です。"
+        }
+      ]
+    },
+    "apartment": {
+      "overall": 86,
+      "details": [
+        {
+          "field": "コンパクト性",
+          "score": 92,
+          "reviewCount": 210,
+          "comment": "5.7cmの超薄型設計で、狭いマンションでも収納しやすく、家具の下も掃除できます。"
+        },
+        {
+          "field": "静音性",
+          "score": 84,
+          "reviewCount": 156,
+          "comment": "マンション環境でも安心して使用できる静音性です。"
+        },
+        {
+          "field": "段差対応",
+          "score": 58,
+          "reviewCount": 140,
+          "comment": "1cm以上の段差に弱いため、バリアフリー環境に最適化されています。"
+        },
+        {
+          "field": "操作性",
+          "score": 90,
+          "reviewCount": 320,
+          "comment": "リモコン操作のみのシンプル設計で、高齢者でも使いやすいです。"
+        }
+      ]
+    },
+    "workingProfessional": {
+      "overall": 75,
+      "details": [
+        {
+          "field": "タイマー運用",
+          "score": 78,
+          "reviewCount": 120,
+          "comment": "アプリ非対応ですがリモコンでの予約掃除が可能です。"
+        },
+        {
+          "field": "メンテナンス頻度",
+          "score": 96,
+          "reviewCount": 320,
+          "comment": "ブラシレス構造により、メンテナンス頻度が極めて低いです。"
+        },
+        {
+          "field": "遠隔操作",
+          "score": 0,
+          "reviewCount": 0,
+          "comment": "スマートフォンアプリには対応していません。"
+        },
+        {
+          "field": "コストパフォーマンス",
+          "score": 98,
+          "reviewCount": 562,
+          "comment": "低価格で基本性能を満たし、忙しい層のサブ機として最適です。"
+        }
+      ]
+    },
+    "familyHome": {
+      "overall": 68,
+      "details": [
+        {
+          "field": "広範囲清掃",
+          "score": 72,
+          "reviewCount": 150,
+          "comment": "ランダム走行のため、広い一軒家では掃除ムラが発生しやすいです。"
+        },
+        {
+          "field": "カーペット対応",
+          "score": 62,
+          "reviewCount": 210,
+          "comment": "カーペットの奥のゴミを掻き出す能力は限定的です。"
+        },
+        {
+          "field": "安全性",
+          "score": 85,
+          "reviewCount": 120,
+          "comment": "シンプルな構造で故障が少なく、子供がいる家庭でも安心です。"
+        },
+        {
+          "field": "特定部屋専用",
+          "score": 88,
+          "reviewCount": 180,
+          "comment": "特定の部屋専用としての使用であれば、高いコストパフォーマンスを発揮します。"
+        }
+      ]
+    }
+  },
+  
+  "resaleValue": {
+    "newPrice": 15800,
+    "usedMinPrice": 4500,
+    "usedMaxPrice": 7800,
+    "retentionRateMin": 28,
+    "retentionRateMax": 49,
+    "period": "12ヶ月後",
+    "comment": "元値が安価なため、中古市場では「送料込みの格安品」として需要があります。元箱や未開封の消耗品が揃っていると高値で取引されます。"
+  },
+  
+  "keywords": ["DEEBOT mini", "ECOVACS", "5.7cm超薄型", "ブラシレス", "コスパ最強", "ロボット掃除機"],
+  
+  "cta": {
+    "amazon": "https://www.amazon.co.jp/s?k=DEEBOT+mini",
+    "rakuten": "https://search.rakuten.co.jp/search/mall/DEEBOT+mini/",
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=DEEBOT+mini"
+  }
+}

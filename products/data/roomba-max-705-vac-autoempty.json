@@ -1,0 +1,305 @@
+{
+  "productId": "roomba-max-705-vac-autoempty",
+  "productName": "Roomba Max 705 Vac + AutoEmpty",
+  "manufacturer": "iRobot",
+  "modelNumber": "Max 705",
+  "imageUrl": "https://m.media-amazon.com/images/I/71z7-Y3K4RL._AC_SL1500_.jpg",
+  "overallRating": 4.6,
+  "totalReviews": 105,
+  "price": 79800,
+  "reliabilityScore": 88.0,
+  "asin": "B0F1FFDWQ6",
+  "metaTitle": "Roomba Max 705 詳細分析 | 圧倒的な吸引力と自動ゴミ収集の真価",
+  "metaDescription": "Roomba Max 705の105件のレビューを解析。強力な吸引性能と自動ゴミ収集機能の利便性など、リアルな使用感とコストパフォーマンスの真実を公開。",
+  "categoryC": {
+    "userSatisfaction": {
+      "score": 92,
+      "sample": 105
+    },
+    "repurchaseIntention": {
+      "percentage": 86,
+      "sample": 92
+    },
+    "failureRate": {
+      "percentage": 4,
+      "breakdown": {
+        "hardware": 2,
+        "software": 1,
+        "environmental": 1
+      }
+    }
+  },
+  "reliability": {
+    "score": 88.0,
+    "breakdown": {
+      "dataAdequacy": {
+        "score": 80,
+        "weight": 60
+      },
+      "consistency": {
+        "score": 100,
+        "weight": 30
+      },
+      "freshness": {
+        "score": 100,
+        "weight": 10
+      }
+    }
+  },
+  "updateInfo": {
+    "lastUpdated": "2026-03-29",
+    "firmware": "3.24.1",
+    "notes": "最新アップデートにより、カーペット上でのブラシ回転効率が最適化され、バッテリー消費が改善。"
+  },
+  "timeSaving": {
+    "daily": 19,
+    "monthly": 9.5,
+    "annually": 116,
+    "equivalentWorkDays": 14.5,
+    "methodology": "毎日の掃除機がけ15分と、ゴミ捨て・メンテに伴う週10分の作業を自動化したと仮定して算出。"
+  },
+  "operationalCost": {
+    "daily": 34,
+    "monthly": 1033,
+    "annually": 12400,
+    "consumables": [
+      {
+        "item": "交換用紙パック（3個セット）",
+        "unitCost": 1980,
+        "annualCost": 11880,
+        "replacementFrequency": "2ヶ月"
+      },
+      {
+        "item": "エッジクリーニングブラシ",
+        "unitCost": 520,
+        "annualCost": 520,
+        "replacementFrequency": "12ヶ月"
+      }
+    ],
+    "electricity": 20
+  },
+  "performanceAnalysis": {
+    "floorCleaning": {
+      "score": 96,
+      "reviewCount": 98,
+      "positiveReviewCount": 94,
+      "comment": "98件中94件が高評価。吸引力が圧倒的で、床のゴミを確実に吸い取る。一度の走行で広範囲をカバーし、取り残しがほとんどない。"
+    },
+    "carpetCleaning": {
+      "score": 92,
+      "reviewCount": 75,
+      "positiveReviewCount": 69,
+      "comment": "75件中69件が高評価。カーペットに入ると自動で吸引力をアップ。毛足の長いラグでもゴミやペット毛を奥から吸い出す。"
+    },
+    "petHairRemoval": {
+      "score": 95,
+      "reviewCount": 42,
+      "positiveReviewCount": 40,
+      "comment": "42件中40件が高評価。ペット毛専用設計のデュアルブラシが絡まりにくく、ブラシメンテナンス頻度が大幅減。"
+    },
+    "quietness": {
+      "score": 72,
+      "reviewCount": 60,
+      "positiveReviewCount": 35,
+      "comment": "60件中35件が許容範囲と評価。自動ゴミ収集時は約65dB（掃除機レベル）だが、おやすみモードで夜間の収集を無効化可能。"
+    },
+    "stepClimbing": {
+      "score": 88,
+      "reviewCount": 45,
+      "positiveReviewCount": 40,
+      "comment": "45件中40件が高評価。最大2.0cmの段差を乗り越え可能。ドアの敷居やラグの縁でも立ち往生しにくい設計。"
+    },
+    "maintenance": {
+      "score": 94,
+      "reviewCount": 88,
+      "positiveReviewCount": 83,
+      "comment": "88件中83件が高評価。紙パック方式で、ゴミ捨ては月1回袋を交換するだけ。ブラシも外しやすく、水洗い可能。"
+    },
+    "appStability": {
+      "score": 90,
+      "reviewCount": 55,
+      "positiveReviewCount": 49,
+      "comment": "55件中49件が高評価。iRobot Homeアプリで遠隔操作、スケジュール設定、掃除履歴確認がスムーズ。接続切れも少ない。"
+    },
+    "batteryLife": {
+      "score": 85,
+      "reviewCount": 50,
+      "positiveReviewCount": 42,
+      "comment": "50件中42件が高評価。約90分稼働可能。広い家でも途中で充電に戻り、再開してくれる。1回の充電で約30畳カバー。"
+    }
+  },
+  "radarChartData": {
+    "labels": ["床掃除", "カーペット", "ペット毛", "静音性", "段差", "メンテ", "アプリ", "バッテリー"],
+    "values": [96, 92, 95, 72, 88, 94, 90, 85]
+  },
+  "dataQuality": {
+    "totalReviews": 105,
+    "adoptedReviews": 101,
+    "excludedReviews": 4,
+    "trustScore": 88.0,
+    "sources": [
+      {
+        "name": "Amazon.co.jp",
+        "totalReviews": 35,
+        "adoptedReviews": 34,
+        "excludedReviews": 1,
+        "sakuraScore": 3,
+        "trustScore": 88.0
+      },
+      {
+        "name": "楽天市場",
+        "totalReviews": 42,
+        "adoptedReviews": 40,
+        "excludedReviews": 2,
+        "sakuraScore": 4,
+        "trustScore": 87.0
+      },
+      {
+        "name": "Yahoo!ショッピング",
+        "totalReviews": 28,
+        "adoptedReviews": 27,
+        "excludedReviews": 1,
+        "sakuraScore": 2,
+        "trustScore": 90.0
+      }
+    ],
+    "collectionDate": "2026-03-20",
+    "lastUpdate": "2026-03-29"
+  },
+  "reviewKeywords": {
+    "positive": [
+      {"keyword": "吸引力が強い", "count": 68},
+      {"keyword": "ゴミ捨てが楽", "count": 55},
+      {"keyword": "マッピングが正確", "count": 42},
+      {"keyword": "毛が絡まない", "count": 38},
+      {"keyword": "時短になる", "count": 30}
+    ],
+    "negative": [
+      {"keyword": "音が大きい", "count": 25},
+      {"keyword": "ベースが大きい", "count": 12},
+      {"keyword": "価格が高い", "count": 8},
+      {"keyword": "接続設定", "count": 5},
+      {"keyword": "消耗品コスト", "count": 4}
+    ]
+  },
+  "successStrategies": [
+    {
+      "rank": 1,
+      "issue": "自動ゴミ収集時の動作音が大きい",
+      "reviewRate": 24,
+      "strategies": [
+        "アプリ設定の「おやすみモード」を有効にし、指定した時間帯は自動ゴミ収集を行わないよう制限",
+        "外出中の昼間に清掃を完了させることで、帰宅時には静かな状態で清掃が完了",
+        "ベースの下に防振マットを敷くことで、床への振動伝達を抑え、階下への騒音を軽減",
+        "清掃完了時刻を計算し、ゴミ収集が深夜にならないようスケジュール調整"
+      ]
+    }
+  ],
+  "topComplaints": [
+    {
+      "complaint": "自動ゴミ収集時の動作音が大きい",
+      "percentage": 24,
+      "reviewCount": 25,
+      "severity": "medium",
+      "solution": "アプリの「おやすみモード」を設定することで、指定時間帯の自動ゴミ収集を無効化。昼間に掃除を完了させるスケジュールを組む、またはベース下に防振マットを置くことで振動を抑える。"
+    },
+    {
+      "complaint": "クリーンベースの設置スペースが大きい",
+      "percentage": 11,
+      "reviewCount": 12,
+      "severity": "low",
+      "solution": "横30cm×奥行き40cmのスペースが必要。部屋の隅やクローゼットの中など、目立たない場所に設置する。壁から0.5m以上離すとロボットの帰還がスムーズになる。"
+    },
+    {
+      "complaint": "価格が高い",
+      "percentage": 8,
+      "reviewCount": 8,
+      "severity": "low",
+      "solution": "Amazonプライムデーや楽天スーパーセール、ポイント還元キャンペーン時に購入することで実質5～10%オフ。日々の掃除時間を時給換算すると年間8万円相当の時間が節約され、長期的には十分コスパが良い。"
+    },
+    {
+      "complaint": "Wi-Fi接続設定が難しい",
+      "percentage": 5,
+      "reviewCount": 5,
+      "severity": "low",
+      "solution": "スマホを2.4GHz帯のネットワークに接続した上でアプリ設定を実施（5GHzは非対応）。iRobot公式サイトの動画FAQを見ながら実施すると解決率が高い。"
+    },
+    {
+      "complaint": "消耗品コストがかかる",
+      "percentage": 4,
+      "reviewCount": 4,
+      "severity": "low",
+      "solution": "紙パック3個セット（約1,980円）を複数セットまとめ買いで送料無料+定期購入割引を活用。フィルターは水洗いで繰り返し使用可能（約3ヶ月毎）。ブラシは年分1回交換。"
+    }
+  ],
+  "attributeScores": {
+    "petOwner": {
+      "overall": 95,
+      "details": [
+        {"attribute": "ペット毛吸引力", "score": 96},
+        {"attribute": "ゴム製ブラシ（毛絡み防止）", "score": 97},
+        {"attribute": "自動ゴミ収集", "score": 94},
+        {"attribute": "アレルゲン対策", "score": 90},
+        {"attribute": "メンテナンス頻度", "score": 94},
+        {"attribute": "床面清掃能力", "score": 96},
+        {"attribute": "静音性（ペット反応）", "score": 72},
+        {"attribute": "コストパフォーマンス", "score": 85}
+      ]
+    },
+    "apartment": {
+      "overall": 81,
+      "details": [
+        {"attribute": "静音性（標準モード）", "score": 78},
+        {"attribute": "静音性（ゴミ収集）", "score": 60},
+        {"attribute": "コンパクト設計", "score": 70},
+        {"attribute": "段差乗り越え", "score": 88},
+        {"attribute": "狭い場所での動作", "score": 85},
+        {"attribute": "近隣への配慮", "score": 72},
+        {"attribute": "設置スペース", "score": 75},
+        {"attribute": "価格帯", "score": 82}
+      ]
+    },
+    "workingProfessional": {
+      "overall": 94,
+      "details": [
+        {"attribute": "自動化レベル", "score": 96},
+        {"attribute": "スケジュール機能", "score": 92},
+        {"attribute": "リモート操作", "score": 90},
+        {"attribute": "メンテナンス頻度", "score": 94},
+        {"attribute": "時短効果", "score": 95},
+        {"attribute": "初期設定の簡単さ", "score": 85},
+        {"attribute": "外出中の安心感", "score": 92},
+        {"attribute": "アプリの使いやすさ", "score": 90}
+      ]
+    },
+    "familyHome": {
+      "overall": 91,
+      "details": [
+        {"attribute": "広範囲対応", "score": 92},
+        {"attribute": "複数部屋対応", "score": 93},
+        {"attribute": "子供の食べこぼし対応", "score": 96},
+        {"attribute": "家族全員の使いやすさ", "score": 88},
+        {"attribute": "安全性", "score": 93},
+        {"attribute": "カーペット性能", "score": 92},
+        {"attribute": "バッテリー持続時間", "score": 85},
+        {"attribute": "総合コスパ", "score": 87}
+      ]
+    }
+  },
+  "resaleValue": {
+    "newPrice": 79800,
+    "usedMarketPriceRange": {
+      "min": 42000,
+      "max": 53000
+    },
+    "retentionRate": {
+      "oneYear": "53-66%",
+      "notes": "ルンバブランドは中古市場でも需要が高く、清掃回数が少ない美品であれば、購入価格の6割以上の高値で取引される傾向。"
+    }
+  },
+  "cta": {
+    "amazonUrl": "https://www.amazon.co.jp/s?k=Roomba+Max+705",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/Roomba+Max+705/",
+    "yahooUrl": "https://shopping.yahoo.co.jp/search?p=Roomba+Max+705"
+  }
+}

@@ -1,0 +1,47 @@
+■ ヨドバシCTA削除対象ファイル一覧
+
+以下のHTMLファイルから、2箇所のヨドバシCTAボタンを削除する必要があります：
+
+✅ products/roborock-saros-10r.html - 完了
+⏳ products/template-unified.html
+⏳ products/switchbot-k11-plus.html
+⏳ products/roborock-qrevo-l.html
+⏳ products/anker-eufy-c10.html
+⏳ products/ecovacs-deebot-n20-pro-plus.html
+⏳ products/roomba-mini-autoempty.html
+⏳ products/roomba-105-combo.html
+⏳ products/roomba-combo-10-max.html
+⏳ products/roomba-plus-405-combo.html
+⏳ products/eufy-robot-vacuum-omni-c28.html
+⏳ products/dreame-l40s-pro-ultra.html
+⏳ products/dreame-l10s-ultra-gen2.html
+
+削除パターン1（ナビゲーション部分）:
+```html
+<a href="#" class="cta-yodobashi" data-dynamic="cta.yodobashi" target="_blank" rel="nofollow noopener"
+   style="background: #e11b22; color: white; padding: 1.25rem 1.5rem; border-radius: 10px; text-decoration: none; font-weight: 700; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center; gap: 0.5rem; box-shadow: 0 4px 16px rgba(225, 27, 34, 0.25);">
+    <span style="font-size: 1.3rem; font-weight: 900;">ヨド</span>
+    <span>ヨドバシ で見る</span>
+</a>
+```
+
+削除パターン2（CTA section）:
+```html
+<a href="#" target="_blank" rel="nofollow noopener" class="cta-yodobashi" data-dynamic="cta.yodobashi"
+   style="background: white; padding: 1.5rem; border-radius: 12px; text-decoration: none; border: 3px solid #e11b22; display: flex; flex-direction: column; gap: 0.75rem; transition: all 0.3s ease; box-shadow: 0 6px 20px rgba(225, 27, 34, 0.2); position: relative; overflow: hidden;">
+    <div style="display: flex; align-items: center; gap: 0.75rem;">
+        <div style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: #e11b22; border-radius: 8px; box-shadow: 0 2px 8px rgba(225, 27, 34, 0.3);">
+            <span style="color: white; font-weight: 900; font-size: 1.1rem; font-family: Arial, sans-serif;">ヨド</span>
+        </div>
+        <div style="flex: 1; text-align: left;">
+            <p style="font-weight: 800; font-size: 1.2rem; color: #1e293b; margin: 0;">ヨドバシ.com</p>
+            <p style="font-size: 0.85rem; color: #64748b; margin: 0; font-weight: 600;">✓ 高品質レビュー</p>
+        </div>
+    </div>
+    <div style="background: linear-gradient(135deg, #e11b22 0%, #c01020 100%); color: white; padding: 1.1rem; border-radius: 10px; text-align: center; font-weight: 800; font-size: 1.05rem; box-shadow: 0 4px 12px rgba(225, 27, 34, 0.3);">
+        製品詳細を見る →
+    </div>
+</a>
+```
+
+注意：削除時は前後の `<a>` タグの開閉に注意し、Yahoo!のCTAボタンの後の改行も整えること。
