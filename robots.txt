@@ -24,7 +24,6 @@ Disallow: /temp/
 Disallow: /test/
 Disallow: /data-templates/
 Disallow: /tools/
-Disallow: /docs/
 
 # テンプレートやテスト用ファイルを除外
 Disallow: /products/template-unified.html
