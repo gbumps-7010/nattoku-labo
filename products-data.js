@@ -1,6 +1,27 @@
 // 製品データベース
 const productsData = [
     {
+        id: 'roomba-max-705-vac-autoempty',
+        name: 'Roomba Max 705 Vac + AutoEmpty',
+        manufacturer: 'iRobot',
+        price: 98800,
+        rating: 4.7,
+        reviewCount: 105,
+        totalReviewCount: 105,
+        image: 'https://m.media-amazon.com/images/I/71z7-Y3K4RL._AC_SL1500_.jpg',
+        badges: ['180倍吸引力', '自動ゴミ収集', '最新モデル'],
+        specs: {
+            suction: 97,
+            mopping: 96,
+            noise: 70,
+            obstacle: 85,
+            app: 92,
+            maintenance: 94
+        },
+        amazonUrl: 'https://www.amazon.co.jp/s?k=Roomba+Max+705',
+        rakutenUrl: 'https://search.rakuten.co.jp/search/mall/Roomba+Max+705/'
+    },
+    {
         id: 'switchbot-k11-plus',
         name: 'SwitchBot ロボット掃除機 K11+',
         manufacturer: 'SwitchBot',

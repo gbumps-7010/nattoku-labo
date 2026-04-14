@@ -1,6 +1,23 @@
-# 新製品追加完全ガイド 🚀（V2.0 - 2026-03-26更新）
+# 新製品追加完全ガイド 🚀（V2.1 - 2026-04-14更新）
 
 このガイドに従えば、**GeminiからのJSONを入力するだけで、完璧な製品ページが5分で完成します**。
+
+## Cursorから1コマンド追加（新）
+
+`nattoku-labo` 直下で次を実行すると、以下を自動処理します。
+
+- `products/data/[product-id].json` を保存
+- `products/[product-id].html` を `template-unified.html` から生成
+- `products-data.js` の製品一覧に追記
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\add-product-from-json.ps1 "C:\path\to\product.json"
+```
+
+必須フィールドは `productId` `productName` `manufacturer` `imageUrl` `overallRating` `totalReviews` `price` `reliabilityScore` です。  
+`cta.amazon` と `cta.rakuten` も必要です。
+
+Node.jsが入っている環境では、`node scripts/add-product-from-json.js "C:\path\to\product.json"` でも実行できます。
 
 ---
 
