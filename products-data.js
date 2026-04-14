@@ -1,6 +1,27 @@
 // 製品データベース
 const productsData = [
     {
+        id: 'switchbot-k10-plus-pro',
+        name: 'SwitchBot ロボット掃除機 K10+ Pro',
+        manufacturer: 'SwitchBot',
+        price: 64800,
+        rating: 4.75,
+        reviewCount: 350,
+        totalReviewCount: 350,
+        image: 'https://m.media-amazon.com/images/I/61M0vPzS-NL._AC_SL1500_.jpg',
+        badges: ['小型設計', '静音性', '自動収集'],
+        specs: {
+            suction: 96,
+            mopping: 88,
+            noise: 94,
+            obstacle: 85,
+            app: 93,
+            maintenance: 90
+        },
+        amazonUrl: 'https://www.amazon.co.jp/s?k=SwitchBot+K10+Pro',
+        rakutenUrl: 'https://search.rakuten.co.jp/search/mall/SwitchBot+K10%2B+Pro/'
+    },
+    {
         id: 'roomba-max-705-vac-autoempty',
         name: 'Roomba Max 705 Vac + AutoEmpty',
         manufacturer: 'iRobot',

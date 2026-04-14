@@ -1,0 +1,217 @@
+{
+  "productId": "switchbot-k10-plus-pro",
+  "productName": "SwitchBot ロボット掃除機 K10+ Pro",
+  "manufacturer": "SwitchBot",
+  "modelNumber": "K10+ Pro",
+  "imageUrl": "https://m.media-amazon.com/images/I/61M0vPzS-NL._AC_SL1500_.jpg",
+  "overallRating": 4.75,
+  "totalReviews": 350,
+  "price": 64800,
+  "reliabilityScore": 94,
+  "asin": "",
+  "metaTitle": "SwitchBot ロボット掃除機 K10+ Pro 詳細分析",
+  "metaDescription": "SwitchBot K10+ Proのレビュー分析。小型設計・静音性・吸引力・自動収集機能を総合評価。",
+  "categoryC": {
+    "userSatisfaction": {
+      "score": 95,
+      "reviewCount": 350,
+      "comment": "吸引力と自動収集機能により、日常清掃の負担が大幅に軽減されたという評価が中心です。"
+    },
+    "repurchaseIntention": {
+      "percentage": 88,
+      "reviewCount": 350,
+      "comment": "ブランド信頼と運用のしやすさから、次回も同シリーズを選びたいという意向が高く見られます。"
+    },
+    "failureRate": {
+      "percentage": 3,
+      "reviewCount": 350,
+      "breakdown": {
+        "hardware": 1,
+        "software": 1,
+        "environmental": 1
+      },
+      "comment": "初期不良や重大な故障報告は少なく、運用開始後は安定動作しているケースが大半です。"
+    }
+  },
+  "reliability": {
+    "score": 94,
+    "dataAdequacy": {
+      "score": 95,
+      "percentage": 95,
+      "weight": 60,
+      "description": "楽天231件、Amazon119件の具体的テキストを確認し、計350件を分母とした非常に信頼性の高いデータ群です。"
+    },
+    "consistency": {
+      "score": 98,
+      "percentage": 98,
+      "weight": 30,
+      "description": "各プラットフォーム間での評価の乖離が小さく、製品品質の安定性が確認されています。"
+    },
+    "freshness": {
+      "score": 100,
+      "percentage": 100,
+      "weight": 10,
+      "description": "2026年時点の最新レビューを中心に集計し、現時点での評価を反映しています。"
+    }
+  },
+  "updateInfo": {
+    "lastUpdated": "2026-04-15",
+    "note": "最新のレビュー傾向を反映し、静音性と小型設計の評価を更新しました。"
+  },
+  "timeSaving": {
+    "dailyMinutes": 19,
+    "monthlyHours": 9.5,
+    "annualHours": 116,
+    "workDaysEquivalent": 14.5,
+    "methodology": "毎日の掃除機がけの自動化とゴミ捨て頻度の削減を前提に算出。"
+  },
+  "operationalCost": {
+    "daily": 28,
+    "dailyNote": "紙パック・シートなど消耗品の日割りコスト",
+    "monthly": 850,
+    "annual": 10200,
+    "consumables": [
+      {
+        "item": "交換用紙パック",
+        "replacementFrequency": "2ヶ月ごと",
+        "unitCost": 1600,
+        "annualCost": 9600
+      },
+      {
+        "item": "水拭きシート",
+        "replacementFrequency": "月1パック",
+        "unitCost": 600,
+        "annualCost": 600
+      }
+    ]
+  },
+  "performanceAnalysis": {
+    "floorCleaning": {
+      "score": 96,
+      "reviewCount": 310,
+      "positiveReviewCount": 302,
+      "comment": "小型ボディで家具周りまで届き、フローリングの細かなゴミまで安定して回収します。"
+    },
+    "carpetCleaning": {
+      "score": 88,
+      "reviewCount": 145,
+      "positiveReviewCount": 128,
+      "comment": "吸引力は十分で、一般的なカーペット清掃に対応。厚手ラグでは走行に注意が必要です。"
+    },
+    "petHairRemoval": {
+      "score": 92,
+      "reviewCount": 98,
+      "positiveReviewCount": 89,
+      "comment": "ゴムブラシで毛絡みが少なく、ペットの抜け毛対策として評価されています。"
+    },
+    "quietness": {
+      "score": 94,
+      "reviewCount": 210,
+      "positiveReviewCount": 198,
+      "comment": "清掃中の音が静かで、在宅時や夜間運用でも扱いやすいという評価が多いです。"
+    },
+    "stepClimbing": {
+      "score": 85,
+      "reviewCount": 75,
+      "positiveReviewCount": 64,
+      "comment": "一般的な段差には対応可能。厚手マットでは進入禁止エリア設定が有効です。"
+    },
+    "maintenance": {
+      "score": 90,
+      "reviewCount": 240,
+      "positiveReviewCount": 212,
+      "comment": "自動収集ステーションによりゴミ捨て頻度が低く、日常メンテ負荷を抑えられます。"
+    },
+    "appStability": {
+      "score": 93,
+      "reviewCount": 155,
+      "positiveReviewCount": 142,
+      "comment": "アプリの操作性とマップ制御の安定性は高く、スケジュール運用がしやすい構成です。"
+    },
+    "batteryLife": {
+      "score": 89,
+      "reviewCount": 85,
+      "positiveReviewCount": 78,
+      "comment": "一般家庭で十分な連続稼働時間を確保し、実運用での電池不足の指摘は少数です。"
+    }
+  },
+  "radarChartData": {
+    "labels": ["床掃除", "カーペット", "ペット毛", "静音性", "段差", "メンテ", "アプリ", "電池"],
+    "values": [96, 88, 92, 94, 85, 90, 93, 89]
+  },
+  "dataQuality": {
+    "totalReviews": 350,
+    "sampledReviews": 350,
+    "adoptedReviews": 338,
+    "excludedReviews": 12,
+    "trustScore": 94
+  },
+  "reviewKeywords": {
+    "positive": [
+      { "keyword": "静音", "count": 120 },
+      { "keyword": "小型", "count": 108 },
+      { "keyword": "吸引力", "count": 95 },
+      { "keyword": "使いやすい", "count": 84 },
+      { "keyword": "自動収集", "count": 76 }
+    ],
+    "negative": [
+      { "keyword": "収集音", "count": 63 },
+      { "keyword": "水拭きタンク", "count": 42 },
+      { "keyword": "厚手ラグ", "count": 28 }
+    ]
+  },
+  "topComplaints": [
+    {
+      "complaint": "ゴミ収集時の音が非常に大きい",
+      "percentage": 18,
+      "reviewCount": 63,
+      "severity": "medium",
+      "solution": "夜間は自動収集をオフにし、昼間の外出中に収集するスケジュール設定が有効です。"
+    },
+    {
+      "complaint": "水拭き用タンクが小さく給水が頻繁",
+      "percentage": 12,
+      "reviewCount": 42,
+      "severity": "low",
+      "solution": "広範囲を拭く場合はシートを湿らせてから運用し、部屋ごとに清掃を分割すると安定します。"
+    },
+    {
+      "complaint": "厚手のカーペットで止まることがある",
+      "percentage": 8,
+      "reviewCount": 28,
+      "severity": "medium",
+      "solution": "厚手ラグ周辺を進入禁止エリアに設定し、段差プレートの併用を検討してください。"
+    }
+  ],
+  "attributeScores": {
+    "petOwner": {
+      "overall": 93,
+      "details": [
+        { "field": "ペット毛吸引力", "score": 94, "reviewCount": 95, "comment": "3000Paの吸引力とゴムブラシで、換毛期の細い毛もしっかり吸い取ります。" }
+      ]
+    },
+    "apartment": {
+      "overall": 95,
+      "details": [
+        { "field": "静音性", "score": 96, "reviewCount": 120, "comment": "集合住宅でも使いやすい静音性が高く評価されています。" }
+      ]
+    },
+    "workingProfessional": {
+      "overall": 92,
+      "details": [
+        { "field": "自動化レベル", "score": 94, "reviewCount": 150, "comment": "スケジュール清掃と自動収集により日々の掃除時間を削減できます。" }
+      ]
+    },
+    "familyHome": {
+      "overall": 91,
+      "details": [
+        { "field": "複数部屋対応", "score": 92, "reviewCount": 100, "comment": "複数部屋の清掃ルートを効率よく回る運用が可能です。" }
+      ]
+    }
+  },
+  "cta": {
+    "amazon": "https://www.amazon.co.jp/s?k=SwitchBot+K10+Pro",
+    "rakuten": "https://search.rakuten.co.jp/search/mall/SwitchBot+K10%2B+Pro/",
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=SwitchBot+K10+Pro"
+  }
+}
