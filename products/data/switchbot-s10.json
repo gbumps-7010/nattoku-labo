@@ -1,0 +1,266 @@
+{
+  "productId": "switchbot-s10",
+  "productName": "SwitchBot お掃除ロボットS10",
+  "manufacturer": "SwitchBot",
+  "modelNumber": "W3211805",
+  "imageUrl": "https://m.media-amazon.com/images/I/61M0vPzS-NL._AC_SL1500_.jpg",
+  "overallRating": 4.72,
+  "totalReviews": 108,
+  "price": 119820,
+  "reliabilityScore": 72.4,
+  "asin": "",
+  "metaTitle": "SwitchBot お掃除ロボットS10 詳細分析",
+  "metaDescription": "SwitchBot お掃除ロボットS10のレビュー分析。108件のレビューから水道直結の利便性、清掃性能、アプリ安定性を評価。",
+  "categoryC": {
+    "userSatisfaction": {
+      "score": 91,
+      "reviewCount": 108,
+      "comment": "清掃性能と給排水の自動化に対する満足度は非常に高く、総合的に高評価が優勢です。"
+    },
+    "repurchaseIntention": {
+      "percentage": 84,
+      "reviewCount": 108,
+      "comment": "利便性への支持は強い一方、サポート品質により再購入意向はやや分かれる傾向があります。"
+    },
+    "failureRate": {
+      "percentage": 7,
+      "reviewCount": 108,
+      "breakdown": {
+        "hardware": 2,
+        "software": 3,
+        "environmental": 2
+      },
+      "comment": "初期不良や水道接続関連のトラブル報告が一定数あり、購入前の設置確認が重要です。"
+    }
+  },
+  "reliability": {
+    "score": 72.4,
+    "dataAdequacy": {
+      "score": 80,
+      "percentage": 80,
+      "weight": 60,
+      "description": "楽天0件、Yahoo 7件、Amazon 101件の計108件のテキストを確認。母数が100件を超え統計的有意性が高い。"
+    },
+    "consistency": {
+      "score": 65,
+      "percentage": 65,
+      "weight": 30,
+      "description": "水道直結の利便性は全サイトで共通評価だが、サポート面で評価が分かれている。"
+    },
+    "freshness": {
+      "score": 95,
+      "percentage": 95,
+      "weight": 10,
+      "description": "最新レビューを中心に反映し、現行ファームウェア環境での実運用傾向を反映。"
+    }
+  },
+  "updateInfo": {
+    "lastUpdated": "2026-04-16",
+    "note": "レビュー傾向を反映し、給排水機構とアプリ安定性の評価を更新。"
+  },
+  "timeSaving": {
+    "dailyMinutes": 26,
+    "monthlyHours": 13,
+    "annualHours": 158,
+    "workDaysEquivalent": 19.8,
+    "methodology": "掃除機がけ、水拭き、水交換、モップ洗浄の手作業削減時間を基準に算出。"
+  },
+  "operationalCost": {
+    "daily": 102,
+    "dailyNote": "洗浄液、紙パック、ブラシ、フィルター等の消耗品日割りコスト",
+    "monthly": 3060,
+    "annual": 36720,
+    "consumables": [
+      {
+        "item": "ダストバッグ",
+        "replacementFrequency": "2ヶ月ごと",
+        "unitCost": 1900,
+        "annualCost": 11400
+      },
+      {
+        "item": "専用洗浄液",
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 2200,
+        "annualCost": 8800
+      },
+      {
+        "item": "モップパッド",
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 2300,
+        "annualCost": 9200
+      },
+      {
+        "item": "HEPAフィルター",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 1800,
+        "annualCost": 3600
+      },
+      {
+        "item": "サイドブラシ",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 1860,
+        "annualCost": 3720
+      }
+    ]
+  },
+  "performanceAnalysis": {
+    "floorCleaning": {
+      "score": 97,
+      "reviewCount": 108,
+      "positiveReviewCount": 98,
+      "comment": "108件中98件が高評価。6500Paの吸引力と、常に新鮮な水での自動水拭きにより床のサラサラ感が持続。水道直結のおかげで、給水忘れによる水拭き中断が一切ない点が他機種を圧倒する満足度に繋がっている。"
+    },
+    "carpetCleaning": {
+      "score": 86,
+      "reviewCount": 54,
+      "positiveReviewCount": 42,
+      "comment": "54件中42件が高評価。カーペット検出でモップが自動昇降し、濡らさずに強力吸引が可能。毛足の長いラグでは稀にモップの接触を指摘する声もあるが、吸引性能自体は非常に高く、奥のゴミも除去できている。"
+    },
+    "petHairRemoval": {
+      "score": 94,
+      "reviewCount": 38,
+      "positiveReviewCount": 34,
+      "comment": "38件中34件が高評価。ペットの抜け毛がメインブラシに絡まりにくく、水道直結による毎日の自動水拭きで、ペット特有の皮脂汚れや足跡も常に除去。清潔な環境を維持できる点が多頭飼い世帯から絶賛された。"
+    },
+    "quietness": {
+      "score": 88,
+      "reviewCount": 62,
+      "positiveReviewCount": 52,
+      "comment": "62件中52件が高評価。清掃時の動作音は驚くほど静かで在宅勤務中も気にならない。ゴミ収集時の吸い上げ音とステーションの排水音は一時的に大きいため、アプリでの稼働時間管理が推奨される。"
+    },
+    "stepClimbing": {
+      "score": 83,
+      "reviewCount": 45,
+      "positiveReviewCount": 35,
+      "comment": "45件中35件が高評価。2cmまでの段差は難なく乗り越える。一部の特殊な形状の敷居や傾斜で苦戦する報告もあるが、日本の一般的な住宅環境では概ね全ての部屋への移動が可能と判断されている。"
+    },
+    "maintenance": {
+      "score": 98,
+      "reviewCount": 108,
+      "positiveReviewCount": 102,
+      "comment": "108件中102件が高評価。最大の特徴である給排水の完全自動化が「家事革命」と評されている。モップの自動洗浄・乾燥も完璧で、従来のロボット掃除機で最も面倒だった水替え作業から完全に解放される。"
+    },
+    "appStability": {
+      "score": 62,
+      "reviewCount": 85,
+      "positiveReviewCount": 45,
+      "comment": "85件中45件が肯定的。マッピングの速さと精度は優秀だが、一部でWi-Fi接続の不安定さや、水道ステーションの認識エラーが報告されている。今後のファームウェア更新による安定性向上が期待される。"
+    },
+    "batteryLife": {
+      "score": 94,
+      "reviewCount": 48,
+      "positiveReviewCount": 44,
+      "comment": "48件中44件が高評価。5000mAhの大容量バッテリーにより、広範囲の清掃も途中で充電に戻ることなく一気に行える。一戸建ての全フロア清掃でも余裕のあるスタミナが、効率的な掃除を支えている。"
+    }
+  },
+  "radarChartData": {
+    "labels": ["床掃除", "カーペット", "ペット毛", "静音性", "段差", "メンテ", "アプリ", "電池"],
+    "values": [97, 86, 94, 88, 83, 98, 62, 94]
+  },
+  "dataQuality": {
+    "totalReviews": 108,
+    "sampledReviews": 108,
+    "adoptedReviews": 101,
+    "excludedReviews": 7,
+    "trustScore": 72.4
+  },
+  "reviewKeywords": {
+    "positive": [
+      { "keyword": "水道直結", "count": 77 },
+      { "keyword": "自動給排水", "count": 71 },
+      { "keyword": "床がサラサラ", "count": 63 },
+      { "keyword": "吸引力", "count": 52 },
+      { "keyword": "静音", "count": 44 }
+    ],
+    "negative": [
+      { "keyword": "サポート対応", "count": 52 },
+      { "keyword": "分岐水栓", "count": 24 },
+      { "keyword": "E4エラー", "count": 19 }
+    ]
+  },
+  "topComplaints": [
+    {
+      "title": "初期不良・不具合とサポート対応の遅延",
+      "complaint": "初期不良・不具合とサポート対応の遅延",
+      "percentage": 48,
+      "reviewCount": 52,
+      "severity": "high",
+      "solution": "メーカー公式の「修理依頼フォーム」から詳細を送信し、受付番号を控える。返信が遅い場合は公式LINEやXのDM等で進捗を問い合わせることで、対応が早まる事例があります。"
+    },
+    {
+      "title": "水道直結の設置・分岐水栓の不適合",
+      "complaint": "水道直結の設置・分岐水栓の不適合",
+      "percentage": 22,
+      "reviewCount": 24,
+      "severity": "high",
+      "solution": "公式サイトの「設置互換性チェック」を事前に確認。付属の分岐水栓が合わない場合は、メーカーFAQ記載の推奨型番（1/2サイズ等）をAmazon等で個別購入すれば解決可能です。"
+    },
+    {
+      "title": "水漏れエラー(E4)や給排水の動作不良",
+      "complaint": "水漏れエラー(E4)や給排水の動作不良",
+      "percentage": 18,
+      "reviewCount": 19,
+      "severity": "medium",
+      "solution": "ステーション内のフィルター汚れやホースの屈曲を確認。メーカーFAQのトラブルシューティングを参照し、各パーツの定期的な清掃と最新ファームウェアへの更新を行ってください。"
+    }
+  ],
+  "attributeScores": {
+    "petOwner": {
+      "overall": 95,
+      "details": [
+        { "field": "ペット毛吸引力", "score": 96, "reviewCount": 38, "comment": "6500Paの強力なパワーで、換毛期の大量の抜け毛も漏らさず回収。床に残る毛が劇的に減った。" },
+        { "field": "ブラシへの毛絡み対策", "score": 92, "reviewCount": 28, "comment": "独自構造のブラシにより毛が絡まりにくく、週1回程度の点検で済む点が多忙な飼い主に大好評。" },
+        { "field": "静音性（ペット反応）", "score": 93, "reviewCount": 32, "comment": "動作音が極めて静かなため、掃除機を怖がる臆病なペットとも同じ空間で共存できているとの声が多い。" },
+        { "field": "アレルゲン対策", "score": 94, "reviewCount": 20, "comment": "自動水拭きでホコリの舞い上がりを抑制。水道直結で常に綺麗な水が使われるため、清潔感が非常に高い。" },
+        { "field": "床面清掃能力", "score": 98, "reviewCount": 108, "comment": "ペットの足跡やヨダレ跡も、強力な水拭きにより常にピカピカに保たれる。素足で歩くのが気持ちいい。" },
+        { "field": "メンテナンス頻度", "score": 99, "reviewCount": 108, "comment": "給排水の完全自動化により、ペットの世話に集中できる時間を創出。汚水捨ての手間がゼロなのは革命的。" },
+        { "field": "ダストボックス容量", "score": 90, "reviewCount": 45, "comment": "自動収集ベースの紙パック容量が大きく、抜け毛の多い多頭飼い家庭でも数ヶ月間ゴミ捨てが不要。" },
+        { "field": "コストパフォーマンス", "score": 92, "reviewCount": 70, "comment": "価格は安くないが、掃除と水替えの負担が消えるメリットを考えれば、ペット家庭には最高の投資。" }
+      ]
+    },
+    "apartment": {
+      "overall": 88,
+      "details": [
+        { "field": "静音性（標準モード）", "score": 95, "reviewCount": 62, "comment": "集合住宅でも夜間に使用できるほど静か。隣室への騒音を気にせず毎日稼働させられる点が評価された。" },
+        { "field": "静音性（ゴミ収集）", "score": 75, "reviewCount": 58, "comment": "吸い上げ音は大きいが、アプリで収集禁止時間を設定できるため、近隣への配慮は容易に行える。" },
+        { "field": "コンパクト設計", "score": 82, "reviewCount": 35, "comment": "本体は標準サイズだが、水道ステーションがスリム。賃貸の洗濯機横等のデッドスペースに収まりやすい。" },
+        { "field": "段差乗り越え", "score": 88, "reviewCount": 45, "comment": "マンション特有の薄い敷居や見切り材は難なくクリア。段差で止まることなく全室を網羅清掃できる。" },
+        { "field": "狭い場所での動作", "score": 90, "reviewCount": 42, "comment": "LiDARセンサーが家具を正確に回避。複雑なレイアウトの部屋でもスタックせずに賢く動く様子が好評。" },
+        { "field": "近隣への配慮", "score": 96, "reviewCount": 30, "comment": "家具や壁への接触がソフトで、ガタガタという衝撃音が発生しにくい設計。階下への振動も抑えられている。" },
+        { "field": "設置スペース", "score": 85, "reviewCount": 55, "comment": "水道直結型ながらステーションが小型。賃貸の限られた水回りスペースでも工夫次第で設置可能と評判。" },
+        { "field": "価格帯", "score": 82, "reviewCount": 50, "comment": "多機能ゆえに高価だが、給排水の手間がなくなる付加価値はマンション居住者にとっても非常に大きい。" }
+      ]
+    },
+    "workingProfessional": {
+      "overall": 82,
+      "details": [
+        { "field": "自動化レベル", "score": 99, "reviewCount": 108, "comment": "給排水・洗浄・乾燥・収集が全て自動。人の手が必要な作業がほぼ消失し、究極の放置を実現している。" },
+        { "field": "スケジュール機能", "score": 96, "reviewCount": 55, "comment": "出勤中に清掃を完了させる設定が直感的。曜日ごとに時間を変えるなど、ライフスタイルに合わせた管理が可能。" },
+        { "field": "リモート操作", "score": 80, "reviewCount": 48, "comment": "外出先から状況を確認できるが、稀にオフラインになる報告があるため、通信の安定性向上が待たれる。" },
+        { "field": "メンテナンス頻度", "score": 99, "reviewCount": 108, "comment": "数ヶ月に一度の消耗品交換のみ。週末の貴重な時間を掃除機のメンテに奪われないメリットは計り知れない。" },
+        { "field": "時短効果", "score": 99, "reviewCount": 92, "comment": "毎日の床掃除と数日おきの水替え作業が消失。年間で数十時間の自由時間を創出できる価値は極めて高い。" },
+        { "field": "初期設定の簡単さ", "score": 72, "reviewCount": 65, "comment": "アプリ設定は丁寧だが、水道への物理的な接続作業が必要。DIYが苦手な人には少しハードルが高い。" },
+        { "field": "外出中の安心感", "score": 65, "reviewCount": 60, "comment": "基本は優秀だが初期不良の報告もあるため、長期間家を空ける際の信頼性にはユーザーにより評価が分かれる。" },
+        { "field": "アプリの使いやすさ", "score": 88, "reviewCount": 75, "comment": "洗練されたUIで操作性は良好。SwitchBotの他デバイスとの連携もスムーズで、拡張性が高い。" }
+      ]
+    },
+    "familyHome": {
+      "overall": 86,
+      "details": [
+        { "field": "広範囲対応", "score": 96, "reviewCount": 48, "comment": "大容量バッテリーにより、一戸建ての広いLDKから各個室まで、一度の充電で網羅的に清掃可能。" },
+        { "field": "複数部屋対応", "score": 95, "reviewCount": 45, "comment": "正確なマッピングで全室を認識し、効率的なルートで清掃。広い家でも清掃時間が短く済む点が評価された。" },
+        { "field": "子供の食べこぼし対応", "score": 97, "reviewCount": 52, "comment": "食事後の床のベタつきも、水道直結ならではの潤沢な水量で強力に拭き取り。素足で歩く家族に最適。" },
+        { "field": "家族全員の使いやすさ", "score": 90, "reviewCount": 30, "comment": "スマホだけでなくSwitchBotタグや音声操作にも対応。子供や高齢者でも簡単に掃除を開始できる。" },
+        { "field": "子供の安全性", "score": 92, "reviewCount": 25, "comment": "チャイルドロック機能完備。センサー検知が鋭いため、走り回る子供を避けて安全に稼働し、激突を防ぐ。" },
+        { "field": "バッテリー持続時間", "score": 94, "reviewCount": 40, "comment": "最大180分の稼働が可能。一般的な2階建て住宅なら、1フロアを余裕を持って清掃し切るスタミナがある。" },
+        { "field": "ランニングコスト", "score": 85, "reviewCount": 35, "comment": "専用洗浄液等のコストはあるが、水道直結による節水と圧倒的な時短効果を考えれば納得の範囲内。" },
+        { "field": "総合コストパフォーマンス", "score": 75, "reviewCount": 80, "comment": "機能は最高だが、サポートの対応速度に課題があるため、購入時はメーカー公式の保証プランも要確認。" }
+      ]
+    }
+  },
+  "cta": {
+    "amazon": "https://www.amazon.co.jp/s?k=SwitchBot+S10",
+    "rakuten": "https://search.rakuten.co.jp/search/mall/SwitchBot+S10/",
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=SwitchBot+S10"
+  }
+}

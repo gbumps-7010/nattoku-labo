@@ -1,6 +1,69 @@
 // 製品データベース
 const productsData = [
     {
+        id: 'roborock-qrevo-curv-c',
+        name: 'Roborock Qrevo Curv (C)',
+        manufacturer: 'Roborock',
+        price: 119900,
+        rating: 4.8,
+        reviewCount: 53,
+        totalReviewCount: 53,
+        image: 'https://m.media-amazon.com/images/I/51I7oY+p8iL._AC_SL1500_.jpg',
+        badges: ['18,500Pa吸引', '4cm段差対応', '毛絡み防止ブラシ'],
+        specs: {
+            suction: 98,
+            mopping: 93,
+            noise: 85,
+            obstacle: 99,
+            app: 90,
+            maintenance: 96
+        },
+        amazonUrl: 'https://www.amazon.co.jp/s?k=Roborock+Qrevo+Curv',
+        rakutenUrl: 'https://search.rakuten.co.jp/search/mall/Roborock+Qrevo+Curv/'
+    },
+    {
+        id: 'switchbot-s10',
+        name: 'SwitchBot お掃除ロボットS10',
+        manufacturer: 'SwitchBot',
+        price: 119820,
+        rating: 4.72,
+        reviewCount: 108,
+        totalReviewCount: 108,
+        image: 'https://m.media-amazon.com/images/I/61M0vPzS-NL._AC_SL1500_.jpg',
+        badges: ['水道直結', '全自動給排水', '清掃性能高評価'],
+        specs: {
+            suction: 97,
+            mopping: 86,
+            noise: 88,
+            obstacle: 83,
+            app: 62,
+            maintenance: 98
+        },
+        amazonUrl: 'https://www.amazon.co.jp/s?k=SwitchBot+S10',
+        rakutenUrl: 'https://search.rakuten.co.jp/search/mall/SwitchBot+S10/'
+    },
+    {
+        id: 'switchbot-s20',
+        name: 'SwitchBot お掃除ロボットS20',
+        manufacturer: 'SwitchBot',
+        price: 91800,
+        rating: 4.88,
+        reviewCount: 158,
+        totalReviewCount: 158,
+        image: 'https://m.media-amazon.com/images/I/61M0vPzS-NL._AC_SL1500_.jpg',
+        badges: ['10000Pa吸引', 'ローラーモップ洗浄', '高評価4.88'],
+        specs: {
+            suction: 98,
+            mopping: 94,
+            noise: 96,
+            obstacle: 88,
+            app: 94,
+            maintenance: 97
+        },
+        amazonUrl: 'https://www.amazon.co.jp/s?k=SwitchBot+S20',
+        rakutenUrl: 'https://search.rakuten.co.jp/search/mall/SwitchBot+S20/'
+    },
+    {
         id: 'switchbot-k10-plus-pro',
         name: 'SwitchBot ロボット掃除機 K10+ Pro',
         manufacturer: 'SwitchBot',
