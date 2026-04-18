@@ -1,0 +1,195 @@
+#!/usr/bin/env node
+/**
+ * products/data/*.json に存在するが products-data.js に無い製品だけを追記する。
+ * 既存の詳細フィールド（dataSources 等）はそのまま保持する。
+ *
+ * トップページ index.html は products-data.js を読み込む前提（単一ソース）。
+ *
+ * Usage: node scripts/sync-products-data-from-json.js
+ */
+"use strict";
+
+const fs = require("fs");
+const path = require("path");
+
+const ROOT = path.resolve(__dirname, "..");
+const DATA_DIR = path.join(ROOT, "products", "data");
+const PRODUCTS_DATA_PATH = path.join(ROOT, "products-data.js");
+
+function escapeSingle(value) {
+  return String(value).replace(/\\/g, "\\\\").replace(/'/g, "\\'");
+}
+
+/** cta.amazon / cta.amazonUrl / { url: "..." } などを吸収 */
+function pickUrl(...candidates) {
+  for (const c of candidates) {
+    if (!c) continue;
+    if (typeof c === "string" && /^https?:\/\//.test(c)) return c;
+    if (typeof c === "object" && typeof c.url === "string" && /^https?:\/\//.test(c.url)) {
+      return c.url;
+    }
+  }
+  return "";
+}
+
+function normalizeManufacturer(name) {
+  const s = String(name || "").trim();
+  if (/アイロボット|iRobot/i.test(s)) return "iRobot";
+  if (/ECOVACS|エコバックス/i.test(s)) return "ECOVACS";
+  if (/Roborock/i.test(s)) return "Roborock";
+  if (/SwitchBot/i.test(s)) return "SwitchBot";
+  if (/Anker|Eufy/i.test(s)) return "Anker";
+  if (/Dreame/i.test(s)) return "Dreame";
+  return s || "その他";
+}
+
+function toScore(value) {
+  const parsed = Number(value);
+  return Number.isFinite(parsed) ? Math.max(0, Math.min(100, Math.round(parsed))) : 0;
+}
+
+function getNoiseScore(data) {
+  const pa = data.performanceAnalysis || {};
+  return toScore(pa.nightQuietness?.score ?? pa.quietness?.score ?? 75);
+}
+
+function buildProductEntryLines(data) {
+  const required = ["productId", "productName", "manufacturer", "imageUrl", "overallRating", "totalReviews", "price"];
+  const missing = required.filter((k) => data[k] === undefined || data[k] === null || data[k] === "");
+  if (missing.length) {
+    throw new Error(`Missing fields: ${missing.join(", ")}`);
+  }
+  const amazonUrl = pickUrl(
+    data.cta?.amazon,
+    data.cta?.amazonUrl,
+    data.amazonUrl,
+  );
+  const rakutenUrl = pickUrl(
+    data.cta?.rakuten,
+    data.cta?.rakutenUrl,
+    data.rakutenUrl,
+  );
+  if (!amazonUrl || !rakutenUrl) {
+    throw new Error("CTA URLs required: cta.amazon and cta.rakuten");
+  }
+
+  const getPerformanceScore = (key, fallback = 0) =>
+    toScore(data.performanceAnalysis?.[key]?.score ?? fallback);
+
+  const badges =
+    Array.isArray(data.badges) && data.badges.length > 0
+      ? data.badges.slice(0, 3)
+      : ["詳細分析", "口コミ統計", "データ駆動"];
+
+  const manufacturer = normalizeManufacturer(data.manufacturer);
+
+  return [
+    "    {",
+    `        id: '${escapeSingle(data.productId)}',`,
+    `        name: '${escapeSingle(data.productName)}',`,
+    `        manufacturer: '${escapeSingle(manufacturer)}',`,
+    `        price: ${Number(data.price)},`,
+    `        rating: ${Number(data.overallRating)},`,
+    `        reviewCount: ${Number(data.totalReviews)},`,
+    `        totalReviewCount: ${Number(data.totalReviews)},`,
+    `        image: '${escapeSingle(data.imageUrl)}',`,
+    `        badges: [${badges.map((b) => `'${escapeSingle(String(b))}'`).join(", ")}],`,
+    "        specs: {",
+    `            suction: ${getPerformanceScore("floorCleaning", 80)},`,
+    `            mopping: ${getPerformanceScore("carpetCleaning", 75)},`,
+    `            noise: ${getNoiseScore(data)},`,
+    `            obstacle: ${getPerformanceScore("stepClimbing", 70)},`,
+    `            app: ${getPerformanceScore("appStability", 80)},`,
+    `            maintenance: ${getPerformanceScore("maintenance", 80)}`,
+    "        },",
+    `        amazonUrl: '${escapeSingle(amazonUrl)}',`,
+    `        rakutenUrl: '${escapeSingle(rakutenUrl)}'`,
+    "    }",
+  ].join("\n");
+}
+
+function patchManufacturers(content) {
+  const files = fs.readdirSync(DATA_DIR).filter((f) => f.endsWith(".json"));
+  const manufacturersSet = new Set();
+  for (const file of files) {
+    try {
+      const data = JSON.parse(fs.readFileSync(path.join(DATA_DIR, file), "utf8"));
+      manufacturersSet.add(normalizeManufacturer(data.manufacturer));
+    } catch {
+      /* skip */
+    }
+  }
+  const list = Array.from(manufacturersSet).sort();
+  const manufacturersJs = `const manufacturers = ['すべて', ${list.map((m) => `'${escapeSingle(m)}'`).join(", ")}];`;
+  const replaced = content.replace(
+    /const manufacturers = \[[\s\S]*?\];\s*\r?\nconst priceRanges/,
+    `${manufacturersJs}\nconst priceRanges`,
+  );
+  if (replaced === content) {
+    throw new Error("Could not patch manufacturers array");
+  }
+  return replaced;
+}
+
+function main() {
+  let content = fs.readFileSync(PRODUCTS_DATA_PATH, "utf8");
+  const existingIds = new Set(
+    [...content.matchAll(/id:\s*'([^']+)'/g)].map((m) => m[1]),
+  );
+
+  const filterMarker = "// フィルター用のマスターデータ";
+  const idxFilter = content.indexOf(filterMarker);
+  if (idxFilter === -1) {
+    throw new Error(`products-data.js: marker not found: ${filterMarker}`);
+  }
+
+  const head = content.slice(0, idxFilter);
+  const tail = content.slice(idxFilter);
+  const closeIdx = head.lastIndexOf("\n];");
+  if (closeIdx === -1) {
+    throw new Error("products-data.js: could not find productsData array closing");
+  }
+
+  const jsonFiles = fs.readdirSync(DATA_DIR).filter((f) => f.endsWith(".json")).sort();
+  const newBlocks = [];
+  const errors = [];
+
+  for (const file of jsonFiles) {
+    const full = path.join(DATA_DIR, file);
+    let data;
+    try {
+      data = JSON.parse(fs.readFileSync(full, "utf8"));
+    } catch (e) {
+      errors.push(`${file}: parse error: ${e.message}`);
+      continue;
+    }
+    if (!data.productId || existingIds.has(data.productId)) {
+      continue;
+    }
+    try {
+      newBlocks.push(buildProductEntryLines(data));
+      existingIds.add(data.productId);
+    } catch (e) {
+      errors.push(`${file}: ${e.message}`);
+    }
+  }
+
+  if (newBlocks.length === 0) {
+    console.log("✅ No missing products (products-data.js already matches JSON set).");
+  } else {
+    const beforeClose = head.slice(0, closeIdx);
+    const afterClose = head.slice(closeIdx);
+    content = beforeClose + ",\n" + newBlocks.join(",\n") + afterClose + tail;
+    console.log(`✅ Appended ${newBlocks.length} product(s) from JSON.`);
+  }
+
+  content = patchManufacturers(content);
+  fs.writeFileSync(PRODUCTS_DATA_PATH, content, "utf8");
+
+  if (errors.length) {
+    console.warn("⚠️ Skipped:");
+    errors.forEach((e) => console.warn(`  - ${e}`));
+  }
+}
+
+main();

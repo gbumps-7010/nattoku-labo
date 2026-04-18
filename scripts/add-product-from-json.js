@@ -76,8 +76,16 @@ function buildProductEntry(data) {
     ? data.badges.slice(0, 3)
     : ["新規追加", "詳細分析対応", "JSON自動追加"];
 
-  const amazonUrl = data.cta?.amazon || data.amazonUrl || "";
-  const rakutenUrl = data.cta?.rakuten || data.rakutenUrl || "";
+  const amazonUrl = pickUrl(
+    data.cta?.amazon,
+    data.cta?.amazonUrl,
+    data.amazonUrl,
+  );
+  const rakutenUrl = pickUrl(
+    data.cta?.rakuten,
+    data.cta?.rakutenUrl,
+    data.rakutenUrl,
+  );
   if (!amazonUrl || !rakutenUrl) {
     throw new Error("CTA URLs are required: cta.amazon and cta.rakuten");
   }
@@ -109,6 +117,17 @@ function buildProductEntry(data) {
 
 function escapeSingle(value) {
   return String(value).replace(/\\/g, "\\\\").replace(/'/g, "\\'");
+}
+
+function pickUrl(...candidates) {
+  for (const c of candidates) {
+    if (!c) continue;
+    if (typeof c === "string" && /^https?:\/\//.test(c)) return c;
+    if (typeof c === "object" && typeof c.url === "string" && /^https?:\/\//.test(c.url)) {
+      return c.url;
+    }
+  }
+  return "";
 }
 
 function updateProductsDataJs(data) {

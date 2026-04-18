@@ -761,7 +761,7 @@ const productsData = [
         manufacturer: 'iRobot',
         price: 69800,
         rating: 4.62,
-        reviews: 285,
+        reviewCount: 285,
         trustScore: 89.15,
         image: 'https://m.media-amazon.com/images/I/placeholder_roomba_105_combo.jpg',
         badges: ['水拭き一体型', '自動ゴミ収集', '3サイト統合'],
@@ -2317,11 +2317,138 @@ const productsData = [
         recommendations: {petOwner: 88, apartment: 87, working: 90, overall: 86},
         amazonUrl: 'https://www.amazon.co.jp/s?k=Eufy+RoboVac+G30+Hybrid',
         rakutenUrl: 'https://search.rakuten.co.jp/search/mall/Eufy+RoboVac+G30+Hybrid/'
+    },
+    {
+        id: 'eufy-robovac-g10-hybrid',
+        name: 'Eufy RoboVac G10 Hybrid',
+        manufacturer: 'Anker',
+        price: 29990,
+        rating: 4.3,
+        reviewCount: 102,
+        totalReviewCount: 102,
+        image: 'https://m.media-amazon.com/images/I/61-B9+P0eLL._AC_SL1500_.jpg',
+        badges: ['詳細分析', '口コミ統計', 'データ駆動'],
+        specs: {
+            suction: 92,
+            mopping: 55,
+            noise: 90,
+            obstacle: 68,
+            app: 70,
+            maintenance: 86
+        },
+        amazonUrl: 'https://www.amazon.co.jp/s?k=Eufy+RoboVac+G10+Hybrid',
+        rakutenUrl: 'https://search.rakuten.co.jp/search/mall/Eufy+RoboVac+G10+Hybrid/'
+    },
+    {
+        id: 'eufy-robovac-x8-hybrid',
+        name: 'Eufy RoboVac X8 Hybrid',
+        manufacturer: 'Anker',
+        price: 59800,
+        rating: 4.5,
+        reviewCount: 12,
+        totalReviewCount: 12,
+        image: 'https://m.media-amazon.com/images/I/61-B9+P0eLL._AC_SL1500_.jpg',
+        badges: ['詳細分析', '口コミ統計', 'データ駆動'],
+        specs: {
+            suction: 92,
+            mopping: 88,
+            noise: 82,
+            obstacle: 80,
+            app: 90,
+            maintenance: 85
+        },
+        amazonUrl: 'https://www.amazon.co.jp/s?k=Eufy+RoboVac+X8+Hybrid',
+        rakutenUrl: 'https://search.rakuten.co.jp/search/mall/Eufy+RoboVac+X8+Hybrid/'
+    },
+    {
+        id: 'roomba-combo-10-max',
+        name: 'Roomba Combo (ルンバ コンボ) 10 Max ロボット + AutoWash 充電ステーション',
+        manufacturer: 'iRobot',
+        price: 197800,
+        rating: 4.6,
+        reviewCount: 42,
+        totalReviewCount: 42,
+        image: 'https://m.media-amazon.com/images/I/61KkU0t10FL._AC_SL1500_.jpg',
+        badges: ['詳細分析', '口コミ統計', 'データ駆動'],
+        specs: {
+            suction: 96,
+            mopping: 92,
+            noise: 72,
+            obstacle: 88,
+            app: 90,
+            maintenance: 98
+        },
+        amazonUrl: 'https://www.amazon.co.jp/s?k=Roomba+Combo+10+Max',
+        rakutenUrl: 'https://search.rakuten.co.jp/search/mall/Roomba+Combo+10+Max/'
+    },
+    {
+        id: 'roomba-mini-slim-slimcharge',
+        name: 'Roomba Mini Slim + SlimCharge',
+        manufacturer: 'iRobot',
+        price: 39800,
+        rating: 4.4,
+        reviewCount: 47,
+        totalReviewCount: 47,
+        image: 'https://m.media-amazon.com/images/I/61-B9+P0eLL._AC_SL1500_.jpg',
+        badges: ['詳細分析', '口コミ統計', 'データ駆動'],
+        specs: {
+            suction: 92,
+            mopping: 78,
+            noise: 82,
+            obstacle: 75,
+            app: 90,
+            maintenance: 94
+        },
+        amazonUrl: 'https://www.amazon.co.jp/s?k=Roomba+Mini+Slim',
+        rakutenUrl: 'https://search.rakuten.co.jp/search/mall/Roomba+Mini+Slim/'
+    }
+,
+    {
+        id: 'eufy-robovac-g30',
+        name: 'Anker Eufy RoboVac G30',
+        manufacturer: 'Anker',
+        price: 24800,
+        rating: 4.4,
+        reviewCount: 3133,
+        totalReviewCount: 3133,
+        image: 'https://m.media-amazon.com/images/I/71u9S+7T6SL._AC_SL1500_.jpg',
+        badges: ['詳細分析', '口コミ統計', 'データ駆動'],
+        specs: {
+            suction: 89,
+            mopping: 70,
+            noise: 96,
+            obstacle: 72,
+            app: 88,
+            maintenance: 85
+        },
+        amazonUrl: 'https://www.amazon.co.jp/s?k=Eufy+RoboVac+G30',
+        rakutenUrl: 'https://search.rakuten.co.jp/search/mall/Eufy+RoboVac+G30/'
+    },
+    {
+        id: 'roomba-max-705-combo-autowash',
+        name: 'Roomba Max 705 Combo + AutoWash',
+        manufacturer: 'iRobot',
+        price: 184800,
+        rating: 4.7,
+        reviewCount: 67,
+        totalReviewCount: 67,
+        image: 'https://m.media-amazon.com/images/I/61Sj2H+XFLL._AC_SL1500_.jpg',
+        badges: ['詳細分析', '口コミ統計', 'データ駆動'],
+        specs: {
+            suction: 80,
+            mopping: 75,
+            noise: 75,
+            obstacle: 70,
+            app: 80,
+            maintenance: 80
+        },
+        amazonUrl: 'https://www.amazon.co.jp/s?k=Roomba+Max+705+Combo',
+        rakutenUrl: 'https://search.rakuten.co.jp/search/mall/Roomba+Max+705+Combo/'
     }
 ];
 
 // フィルター用のマスターデータ
-const manufacturers = ['すべて', 'SwitchBot', 'Roborock', 'Anker', 'ECOVACS', 'iRobot', 'Dreame'];
+const manufacturers = ['すべて', 'Anker', 'Dreame', 'ECOVACS', 'Roborock', 'SwitchBot', 'iRobot'];
 const priceRanges = [
     { label: 'すべて', min: 0, max: Infinity },
     { label: '5万円未満', min: 0, max: 50000 },
