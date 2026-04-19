@@ -3,6 +3,7 @@
 
 const fs = require("fs");
 const path = require("path");
+const { execFileSync } = require("child_process");
 
 const ROOT = path.resolve(__dirname, "..");
 const PRODUCTS_DIR = path.join(ROOT, "products");
@@ -24,7 +25,6 @@ function validateProductJson(data) {
     "productId",
     "productName",
     "manufacturer",
-    "imageUrl",
     "overallRating",
     "totalReviews",
     "price",
@@ -86,8 +86,13 @@ function buildProductEntry(data) {
     data.cta?.rakutenUrl,
     data.rakutenUrl,
   );
-  if (!amazonUrl || !rakutenUrl) {
-    throw new Error("CTA URLs are required: cta.amazon and cta.rakuten");
+  const listFallback = `https://nattoku-labo.com/products/${data.productId}.html`;
+  const finalAmazon = amazonUrl || (hasMoshimoAffiliate(data) ? listFallback : "");
+  const finalRakuten = rakutenUrl || (hasMoshimoAffiliate(data) ? listFallback : "");
+  if (!finalAmazon || !finalRakuten) {
+    throw new Error(
+      "products-data 用のリンクが必要です: cta.amazon と cta.rakuten（URL）、またはもしも moshimoAffiliateHtmlFile / moshimoAffiliateEasyLinkHtml / moshimoAffiliateEasyLinkHtmlFile / moshimoAffiliateEasyLink / moshimoAffiliateHtml",
+    );
   }
 
   return [
@@ -99,18 +104,18 @@ function buildProductEntry(data) {
     `        rating: ${Number(data.overallRating)},`,
     `        reviewCount: ${Number(data.totalReviews)},`,
     `        totalReviewCount: ${Number(data.totalReviews)},`,
-    `        image: '${escapeSingle(data.imageUrl)}',`,
+    `        image: '${escapeSingle(data.imageUrl != null ? String(data.imageUrl).trim() : "")}',`,
     `        badges: [${badges.map((badge) => `'${escapeSingle(String(badge))}'`).join(", ")}],`,
     "        specs: {",
     `            suction: ${getPerformanceScore("floorCleaning", 80)},`,
     `            mopping: ${getPerformanceScore("carpetCleaning", 75)},`,
-    `            noise: ${getPerformanceScore("nightQuietness", 75)},`,
+    `            noise: ${toScore(data.performanceAnalysis?.quietness?.score ?? data.performanceAnalysis?.nightQuietness?.score ?? 75)},`,
     `            obstacle: ${getPerformanceScore("stepClimbing", 70)},`,
     `            app: ${getPerformanceScore("appStability", 80)},`,
     `            maintenance: ${getPerformanceScore("maintenance", 80)}`,
     "        },",
-    `        amazonUrl: '${escapeSingle(amazonUrl)}',`,
-    `        rakutenUrl: '${escapeSingle(rakutenUrl)}'`,
+    `        amazonUrl: '${escapeSingle(finalAmazon)}',`,
+    `        rakutenUrl: '${escapeSingle(finalRakuten)}'`,
     "    }",
   ].join("\n");
 }
@@ -128,6 +133,16 @@ function pickUrl(...candidates) {
     }
   }
   return "";
+}
+
+function hasMoshimoAffiliate(data) {
+  if (!data) return false;
+  if (typeof data.moshimoAffiliateEasyLinkHtml === "string" && data.moshimoAffiliateEasyLinkHtml.trim()) return true;
+  if (typeof data.moshimoAffiliateEasyLinkHtmlFile === "string" && data.moshimoAffiliateEasyLinkHtmlFile.trim()) return true;
+  if (data.moshimoAffiliateEasyLink && typeof data.moshimoAffiliateEasyLink === "object") return true;
+  if (typeof data.moshimoAffiliateHtml === "string" && data.moshimoAffiliateHtml.trim()) return true;
+  if (typeof data.moshimoAffiliateHtmlFile === "string" && data.moshimoAffiliateHtmlFile.trim()) return true;
+  return false;
 }
 
 function updateProductsDataJs(data) {
@@ -168,6 +183,9 @@ function main() {
     const jsonPath = writeProductJson(productId, data);
     const htmlPath = createProductHtml(productId);
     updateProductsDataJs(data);
+
+    const syncScript = path.join(__dirname, "sync-products-data-from-json.js");
+    execFileSync(process.execPath, [syncScript], { cwd: ROOT, stdio: "inherit" });
 
     console.log("✅ Product added successfully");
     console.log(`- Source JSON: ${resolvedPath}`);

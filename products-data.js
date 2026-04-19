@@ -505,8 +505,8 @@ const productsData = [
             house: 80,
             overall: 89
         },
-        amazonUrl: 'https://www.amazon.co.jp/dp/B0D1XY7Z6S',
-        rakutenUrl: 'https://search.rakuten.co.jp/search/mall/Anker+Eufy+C10+Auto-Empty/'
+        amazonUrl: 'https://nattoku-labo.com/products/anker-eufy-c10.html',
+        rakutenUrl: 'https://nattoku-labo.com/products/anker-eufy-c10.html'
     },
     {
         id: 'ecovacs-deebot-n20-pro-plus',
@@ -2444,7 +2444,29 @@ const productsData = [
         },
         amazonUrl: 'https://www.amazon.co.jp/s?k=Roomba+Max+705+Combo',
         rakutenUrl: 'https://search.rakuten.co.jp/search/mall/Roomba+Max+705+Combo/'
+    },
+    {
+        id: 'roborock-q10v-plus',
+        name: 'Roborock Q10V+',
+        manufacturer: 'Roborock',
+        price: 51999,
+        rating: 4.4,
+        reviewCount: 102,
+        totalReviewCount: 102,
+        image: '',
+        badges: ['新規追加', '詳細分析対応', 'JSON自動追加'],
+        specs: {
+            suction: 93,
+            mopping: 80,
+            noise: 89,
+            obstacle: 84,
+            app: 92,
+            maintenance: 85
+        },
+        amazonUrl: 'https://www.amazon.co.jp/s?k=Roborock+Q10V%2B',
+        rakutenUrl: 'https://search.rakuten.co.jp/search/mall/Roborock+Q10V+/'
     }
+
 ];
 
 // フィルター用のマスターデータ

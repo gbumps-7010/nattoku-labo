@@ -26,7 +26,7 @@ try {
     $data = $jsonRaw | ConvertFrom-Json
 
     $required = @(
-        "productId", "productName", "manufacturer", "imageUrl",
+        "productId", "productName", "manufacturer",
         "overallRating", "totalReviews", "price", "reliabilityScore"
     )
     $missing = @()
@@ -45,10 +45,21 @@ try {
         Fail "productId must match ^[a-z0-9-]+$"
     }
 
-    $amazonUrl = "$($data.cta.amazon)"
-    $rakutenUrl = "$($data.cta.rakuten)"
+    $moshimoFile = $data.moshimoAffiliateHtmlFile
+    $moshimoHtml = $data.moshimoAffiliateHtml
+    $moshimoEasyHtml = $data.moshimoAffiliateEasyLinkHtml
+    $moshimoEasyFile = $data.moshimoAffiliateEasyLinkHtmlFile
+    $moshimoObj = $data.moshimoAffiliateEasyLink
+    $hasMoshimo = ((-not [string]::IsNullOrWhiteSpace("$moshimoFile")) -or (-not [string]::IsNullOrWhiteSpace("$moshimoHtml")) -or (-not [string]::IsNullOrWhiteSpace("$moshimoEasyHtml")) -or (-not [string]::IsNullOrWhiteSpace("$moshimoEasyFile")) -or ($null -ne $moshimoObj))
+
+    $cta = $data.cta
+    $amazonUrl = if ($null -ne $cta -and $null -ne $cta.amazon) { "$($cta.amazon)" } else { "" }
+    $rakutenUrl = if ($null -ne $cta -and $null -ne $cta.rakuten) { "$($cta.rakuten)" } else { "" }
+    $listFallback = "https://nattoku-labo.com/products/$productId.html"
+    if ([string]::IsNullOrWhiteSpace($amazonUrl)) { $amazonUrl = if ($hasMoshimo) { $listFallback } else { "" } }
+    if ([string]::IsNullOrWhiteSpace($rakutenUrl)) { $rakutenUrl = if ($hasMoshimo) { $listFallback } else { "" } }
     if ([string]::IsNullOrWhiteSpace($amazonUrl) -or [string]::IsNullOrWhiteSpace($rakutenUrl)) {
-        Fail "CTA URLs are required: cta.amazon and cta.rakuten"
+        Fail "CTA URLs or もしも (moshimoAffiliateHtmlFile / moshimoAffiliateEasyLinkHtml / moshimoAffiliateEasyLinkHtmlFile / moshimoAffiliateEasyLink / moshimoAffiliateHtml) が必要です"
     }
 
     $outputJsonPath = Join-Path $dataDir "$productId.json"
@@ -109,6 +120,12 @@ try {
     }
     $badgesText = ($badges | ForEach-Object { "'" + ($_ -replace "'", "\\'") + "'" }) -join ", "
 
+    $catalogImage = ""
+    if ($null -ne $data.imageUrl) {
+        $catalogImage = "$($data.imageUrl)".Trim()
+    }
+    $catalogImageEscaped = $catalogImage -replace "'", "\\'"
+
     $entry = @"
     {
         id: '$($productId -replace "'", "\\'")',
@@ -118,7 +135,7 @@ try {
         rating: $([double]$data.overallRating),
         reviewCount: $([int]$data.totalReviews),
         totalReviewCount: $([int]$data.totalReviews),
-        image: '$("$($data.imageUrl)" -replace "'", "\\'")',
+        image: '$catalogImageEscaped',
         badges: [$badgesText],
         specs: {
             suction: $suction,

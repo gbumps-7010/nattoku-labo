@@ -6,7 +6,7 @@
     <meta name="description" content="製品の口コミを統計分析。製品検索で最適な1台が見つかる。数千件のレビューから不満点と対策を可視化。">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="googlebot" content="index, follow">
-    <link rel="canonical" href="https://www.nattoku-labo.com/">
+    <link rel="canonical" href="https://nattoku-labo.com/">
     <title>もう失敗しない。ナットクLabo | 製品を検索・比較</title>
     
     <!-- Fonts -->
@@ -277,17 +277,8 @@
             box-shadow: var(--shadow-lg);
         }
         
-        .product-image {
-            width: 100%;
-            height: 240px;
-            object-fit: contain;
-            background: var(--gray-100);
-            padding: 1rem;
-        }
-        
         .product-content {
             padding: 1.5rem;
-            padding-top: 1rem;
         }
         
         .product-manufacturer {
@@ -295,7 +286,7 @@
             color: var(--gray-700);
             margin-bottom: 0.5rem;
             font-weight: 600;
-            margin-top: 0.5rem;
+            margin-top: 0;
             letter-spacing: 0.02em;
         }
         
@@ -886,9 +877,6 @@
 
             productsContainer.innerHTML = products.map((product, index) => `
                 <a href="./products/${product.id}.html" class="product-card fade-in" style="animation-delay: ${index * 0.1}s;">
-                    <div style="position: relative;">
-                        <img src="${product.image}" alt="${product.name}" class="product-image">
-                    </div>
                     <div class="product-content">
                         <div class="product-manufacturer">${product.manufacturer}</div>
                         <h3 class="product-name">${product.name}</h3>

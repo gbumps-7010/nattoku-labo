@@ -6,7 +6,7 @@
     <meta name="description" content="製品の口コミ統計分析。詳細データを公開。">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="googlebot" content="index, follow">
-    <link rel="canonical" href="https://www.nattoku-labo.com/products/switchbot-k11-plus.html">
+    <link rel="canonical" href="https://nattoku-labo.com/products/switchbot-k11-plus.html">
     <title>製品名 詳細分析 | もう失敗しない。ナットクLabo</title>
     
     <!-- 構造化データ（SEO強化） - product-loader.jsが自動更新 -->
@@ -142,20 +142,10 @@
         }
         
         .product-header {
-            display: grid;
-            grid-template-columns: auto 1fr;
-            gap: 2rem;
-            align-items: start;
+            display: block;
         }
         
-        .product-image-header {
-            width: 220px;
-            height: 220px;
-            background: var(--white);
-            border-radius: 12px;
-            padding: 1rem;
-            object-fit: contain;
-        }
+        
         
         .product-info {
             flex: 1;
@@ -639,12 +629,7 @@
         /* Responsive */
         @media (max-width: 768px) {
             .product-header {
-                grid-template-columns: 1fr;
                 text-align: center;
-            }
-            
-            .product-image-header {
-                margin: 0 auto;
             }
             
             .summary-stats {
@@ -759,8 +744,6 @@
             </div>
             
             <div class="product-header">
-                <img src="" alt="製品名" class="product-image-header" data-dynamic="imageUrl">
-                
                 <div class="product-info">
                     <p style="font-size: 1rem; font-weight: 600; opacity: 0.9; margin-bottom: 0.5rem;">
                         <span data-dynamic="manufacturer">メーカー名</span>
@@ -778,12 +761,12 @@
                             <i class="fas fa-info-circle"></i>
                             <span class="tooltip-text">
                                 <strong style="display: block; margin-bottom: 0.5rem; color: #60a5fa;">💡 価格について</strong>
-                                表示価格はメーカー希望小売価格です。<br><br>
+                                表示価格はメーカー公式HPを参考にした価格です。<br><br>
                                 実際の販売価格は、セールやポイント還元により変動します。<br><br>
                                 最新の市場価格は、下記の各ECサイトボタンからご確認ください。
                             </span>
                         </span>
-                        <span class="price-note">参考価格（メーカー希望小売価格） <i class="fas fa-info-circle" style="font-size: 0.7rem; color: #60a5fa;"></i></span>
+                        <span class="price-note">参考価格（メーカー公式HP参考） <i class="fas fa-info-circle" style="font-size: 0.7rem; color: #60a5fa;"></i></span>
                     </div>
                     
                     <div class="product-meta">
@@ -862,11 +845,10 @@
                                 <i class="fas fa-database" style="color: #0284c7;"></i>
                                 口コミ件数の十分さ
                             </h3>
-                            <span style="font-size: 0.75rem; font-weight: 700; color: #0284c7; background: #e0f2fe; padding: 0.35rem 0.85rem; border-radius: 16px;">重要度 60%</span>
+                            <span style="font-size: 0.75rem; font-weight: 700; color: #0284c7; background: #e0f2fe; padding: 0.35rem 0.85rem; border-radius: 16px;">60%</span>
                         </div>
                         <div style="display: flex; align-items: baseline; gap: 0.5rem; margin-bottom: 1rem;">
-                            <span style="font-size: 2.5rem; font-weight: 900; color: #0284c7;" data-dynamic="reliability.dataAdequacy.score">88</span>
-                            <span style="font-size: 1rem; color: #64748b; font-weight: 600;">/ 100</span>
+                            <span style="font-size: 2.5rem; font-weight: 900; color: #0284c7;" data-dynamic="reliability.dataAdequacy.score">88%</span>
                         </div>
                         <p style="font-size: 0.9rem; color: #64748b; line-height: 1.6; margin: 0;" data-dynamic="reliability.dataAdequacy.description">
                             収集したレビューサンプル数が統計的に十分であり、追加データによる評価変動リスクが低い状態です。
@@ -880,11 +862,10 @@
                                 <i class="fas fa-balance-scale" style="color: #7c3aed;"></i>
                                 使った人の意見の一致度
                             </h3>
-                            <span style="font-size: 0.75rem; font-weight: 700; color: #7c3aed; background: #f3e8ff; padding: 0.35rem 0.85rem; border-radius: 16px;">重要度 30%</span>
+                            <span style="font-size: 0.75rem; font-weight: 700; color: #7c3aed; background: #f3e8ff; padding: 0.35rem 0.85rem; border-radius: 16px;">30%</span>
                         </div>
                         <div style="display: flex; align-items: baseline; gap: 0.5rem; margin-bottom: 1rem;">
-                            <span style="font-size: 2.5rem; font-weight: 900; color: #7c3aed;" data-dynamic="reliability.consistency.percentage">82</span>
-                            <span style="font-size: 1.5rem; color: #7c3aed; font-weight: 700;">%</span>
+                            <span style="font-size: 2.5rem; font-weight: 900; color: #7c3aed;" data-dynamic="reliability.consistency.percentage">82%</span>
                         </div>
                         <p style="font-size: 0.9rem; color: #64748b; line-height: 1.6; margin: 0;" data-dynamic="reliability.consistency.description">
                             主要評価項目において、ユーザー間の評価が高度に一致しており、製品の実力が明確に収束しています。
@@ -898,11 +879,10 @@
                                 <i class="fas fa-clock-rotate-left" style="color: #10b981;"></i>
                                 最新の改善への対応状況
                             </h3>
-                            <span style="font-size: 0.75rem; font-weight: 700; color: #10b981; background: #d1fae5; padding: 0.35rem 0.85rem; border-radius: 16px;">重要度 10%</span>
+                            <span style="font-size: 0.75rem; font-weight: 700; color: #10b981; background: #d1fae5; padding: 0.35rem 0.85rem; border-radius: 16px;">10%</span>
                         </div>
                         <div style="display: flex; align-items: baseline; gap: 0.5rem; margin-bottom: 1rem;">
-                            <span style="font-size: 2.5rem; font-weight: 900; color: #10b981;" data-dynamic="reliability.freshness.score">86</span>
-                            <span style="font-size: 1rem; color: #64748b; font-weight: 600;">/ 100</span>
+                            <span style="font-size: 2.5rem; font-weight: 900; color: #10b981;" data-dynamic="reliability.freshness.score">86%</span>
                         </div>
                         <p style="font-size: 0.9rem; color: #64748b; line-height: 1.6; margin: 0;" data-dynamic="reliability.freshness.description">
                             直近30日以内に投稿されたレビューが多数を占め、最新のファームウェア・運用実態を反映しています。
@@ -943,36 +923,7 @@
             </div>
         </section>
         
-        <!-- メインCTA: 総合性能分析の直後 -->
-        <section style="background: #f8fafc; padding: 2.5rem; border-radius: 16px; text-align: center; margin: 2rem 0; border: 2px solid #e2e8f0;">
-            <h3 style="color: #1e293b; font-size: 1.6rem; margin-bottom: 0.75rem; font-weight: 800;">
-                💡 この製品の詳細情報を確認する
-            </h3>
-            <p style="color: #64748b; margin-bottom: 2rem; font-size: 1.05rem; line-height: 1.6;">
-                価格比較・在庫状況・最新レビューを各サイトでチェック<br>
-                <span style="font-size: 0.9rem;">4大ECサイトの価格・ポイント還元率・配送情報を一括確認</span>
-            </p>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; max-width: 1000px; margin: 0 auto;">
-                <a href="#" class="cta-amazon" data-dynamic="cta.amazon" target="_blank" rel="nofollow noopener"
-                   style="background: #ff9900; color: white; padding: 1.25rem 1.5rem; border-radius: 10px; text-decoration: none; font-weight: 700; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center; gap: 0.5rem; box-shadow: 0 4px 16px rgba(255, 153, 0, 0.25);">
-                    <i class="fab fa-amazon" style="font-size: 1.3rem;"></i>
-                    <span>Amazon で見る</span>
-                </a>
-                <a href="#" class="cta-rakuten" data-dynamic="cta.rakuten" target="_blank" rel="nofollow noopener"
-                   style="background: #bf0000; color: white; padding: 1.25rem 1.5rem; border-radius: 10px; text-decoration: none; font-weight: 700; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center; gap: 0.5rem; box-shadow: 0 4px 16px rgba(191, 0, 0, 0.25);">
-                    <span style="font-size: 1.3rem; font-weight: 900;">楽</span>
-                    <span>楽天市場 で見る</span>
-                </a>
-                <a href="#" class="cta-yahoo" data-dynamic="cta.yahoo" target="_blank" rel="nofollow noopener"
-                   style="background: #ff0033; color: white; padding: 1.25rem 1.5rem; border-radius: 10px; text-decoration: none; font-weight: 700; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center; gap: 0.5rem; box-shadow: 0 4px 16px rgba(255, 0, 51, 0.25);">
-                    <span style="font-size: 1.3rem; font-weight: 900;">Y!</span>
-                    <span>Yahoo! で見る</span>
-                </a>
-
-            </div>
-        </section>
-        
-        <!-- Keywords -->
+                <!-- Keywords -->
         <section>
             <h2 class="section-title">
                 <i class="fas fa-tags"></i>
@@ -1241,68 +1192,29 @@
             </div>
         </section>
         
-        <!-- CTA Buttons -->
-        <section>
+        <!-- 今の価格: かんたんリンク（product-loader で表示制御） -->
+        <section id="nattoku-moshimo-after-quality" hidden>
+            <h2 class="section-title">
+                <i class="fas fa-yen-sign"></i>
+                今の価格を確認する
+            </h2>
+            <div class="card" style="padding: 1rem;">
+                <div class="nattoku-moshimo-repeat-slot" aria-live="polite"></div>
+            </div>
+        </section>
+
+                <!-- 購入案内: JSON の moshimoAffiliate* があるときだけ表示（もしもアフィリエイト） -->
+        <section id="purchase-compare-cta" hidden>
             <h2 class="section-title">
                 <i class="fas fa-shopping-cart"></i>
-                購入先を比較
+                購入・価格のご案内
             </h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
-                <a href="#" target="_blank" rel="nofollow noopener" class="cta-amazon" data-dynamic="cta.amazon"
-                   style="background: white; padding: 1.5rem; border-radius: 12px; text-decoration: none; border: 3px solid #ff9900; display: flex; flex-direction: column; gap: 0.75rem; transition: all 0.3s ease; box-shadow: 0 6px 20px rgba(255, 153, 0, 0.2); position: relative; overflow: hidden;">
-                    <div style="display: flex; align-items: center; gap: 0.75rem;">
-                        <div style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: #ff9900; border-radius: 8px; box-shadow: 0 2px 8px rgba(255, 153, 0, 0.3);">
-                            <i class="fab fa-amazon" style="color: white; font-size: 1.4rem;"></i>
-                        </div>
-                        <div style="flex: 1; text-align: left;">
-                            <p style="font-weight: 800; font-size: 1.2rem; color: #1e293b; margin: 0;">Amazon.co.jp</p>
-                            <p style="font-size: 0.85rem; color: #64748b; margin: 0; font-weight: 600;">✓ プライム配送対応</p>
-                        </div>
-                    </div>
-                    <div style="background: linear-gradient(135deg, #ff9900 0%, #ff7700 100%); color: white; padding: 1.1rem; border-radius: 10px; text-align: center; font-weight: 800; font-size: 1.05rem; box-shadow: 0 4px 12px rgba(255, 153, 0, 0.3);">
-                        製品詳細を見る →
-                    </div>
-                </a>
-                
-                <a href="#" target="_blank" rel="nofollow noopener" class="cta-rakuten" data-dynamic="cta.rakuten"
-                   style="background: white; padding: 1.5rem; border-radius: 12px; text-decoration: none; border: 3px solid #bf0000; display: flex; flex-direction: column; gap: 0.75rem; transition: all 0.3s ease; box-shadow: 0 6px 20px rgba(191, 0, 0, 0.2); position: relative; overflow: hidden;">
-                    <div style="display: flex; align-items: center; gap: 0.75rem;">
-                        <div style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: #bf0000; border-radius: 8px; box-shadow: 0 2px 8px rgba(191, 0, 0, 0.3);">
-                            <span style="color: white; font-weight: 900; font-size: 1.1rem; font-family: Arial, sans-serif;">楽</span>
-                        </div>
-                        <div style="flex: 1; text-align: left;">
-                            <p style="font-weight: 800; font-size: 1.2rem; color: #1e293b; margin: 0;">楽天市場</p>
-                            <p style="font-size: 0.85rem; color: #64748b; margin: 0; font-weight: 600;">✓ ポイント還元率高</p>
-                        </div>
-                    </div>
-                    <div style="background: linear-gradient(135deg, #bf0000 0%, #a00000 100%); color: white; padding: 1.1rem; border-radius: 10px; text-align: center; font-weight: 800; font-size: 1.05rem; box-shadow: 0 4px 12px rgba(191, 0, 0, 0.3);">
-                        製品詳細を見る →
-                    </div>
-                </a>
-                
-                <a href="#" target="_blank" rel="nofollow noopener" class="cta-yahoo" data-dynamic="cta.yahoo"
-                   style="background: white; padding: 1.5rem; border-radius: 12px; text-decoration: none; border: 3px solid #ff0033; display: flex; flex-direction: column; gap: 0.75rem; transition: all 0.3s ease; box-shadow: 0 6px 20px rgba(255, 0, 51, 0.2); position: relative; overflow: hidden;">
-                    <div style="display: flex; align-items: center; gap: 0.75rem;">
-                        <div style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: #ff0033; border-radius: 8px; box-shadow: 0 2px 8px rgba(255, 0, 51, 0.3);">
-                            <span style="color: white; font-weight: 900; font-size: 1.1rem; font-family: Arial, sans-serif;">Y!</span>
-                        </div>
-                        <div style="flex: 1; text-align: left;">
-                            <p style="font-weight: 800; font-size: 1.2rem; color: #1e293b; margin: 0;">Yahoo!ショッピング</p>
-                            <p style="font-size: 0.85rem; color: #64748b; margin: 0; font-weight: 600;">✓ PayPay還元</p>
-                        </div>
-                    </div>
-                    <div style="background: linear-gradient(135deg, #ff0033 0%, #dd0022 100%); color: white; padding: 1.1rem; border-radius: 10px; text-align: center; font-weight: 800; font-size: 1.05rem; box-shadow: 0 4px 12px rgba(255, 0, 51, 0.3);">
-                        製品詳細を見る →
-                    </div>
-                </a>
-                
-
-            </div>
-            
-            <p style="text-align: center; color: #64748b; font-size: 0.85rem; margin: 1.5rem 0 0 0; line-height: 1.6;">
-                💡 各サイトで<strong>スペック・機能・保証内容・配送オプション</strong>などの詳細情報をご確認いただけます
+            <div class="nattoku-moshimo-slot" aria-live="polite"></div>
+            <p style="text-align: center; color: #64748b; font-size: 0.85rem; margin: 1.25rem 0 0 0; line-height: 1.6;">
+                💡 以下のカードから各ショップの<strong>価格・在庫・送料</strong>をご確認いただけます（もしもアフィリエイト）
             </p>
         </section>
+
     </div>
     
     <!-- Product Loader Script -->

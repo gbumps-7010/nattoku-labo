@@ -31,7 +31,4 @@ Disallow: /products/template-unified-old.html
 Disallow: /products/test-js.html
 
 # サイトマップの場所
-Sitemap: https://www.nattoku-labo.com/sitemap.xml
-
-# クロール速度の調整（オプション）
-Crawl-delay: 1
+Sitemap: https://nattoku-labo.com/sitemap.xml

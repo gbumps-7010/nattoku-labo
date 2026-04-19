@@ -4,6 +4,478 @@
  * - 構文エラーを完全修正
  */
 
+function injectNattokuMoshimoCtaStyles() {
+    const id = 'nattoku-moshimo-cta-style';
+    let st = document.getElementById(id);
+    if (!st) {
+        st = document.createElement('style');
+        st.id = id;
+        document.head.appendChild(st);
+    }
+    st.textContent = `
+#purchase-compare-cta .nattoku-moshimo-slot {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.08);
+  border: 2px solid #e2e8f0;
+  padding: 0.75rem;
+  min-height: 120px;
+}
+header .nattoku-moshimo-header-slot {
+  margin-top: 1.25rem;
+  max-width: 100%;
+}
+header .nattoku-moshimo-header-slot:not([hidden]) {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.12);
+  border: 2px solid #e2e8f0;
+  padding: 0.75rem;
+  min-height: 0;
+  color: #0f172a;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+header .nattoku-moshimo-header-slot:not([hidden]) a {
+  color: inherit;
+}
+header .nattoku-moshimo-header-slot--iframe:not([hidden]) {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 0.5rem 0.65rem 0.6rem;
+}
+header .nattoku-moshimo-header-slot-label {
+  margin: 0 0 0.65rem 0;
+  padding: 0.55rem 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1.05rem;
+  font-weight: 800;
+  line-height: 1.35;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 52%, #0ea5e9 100%);
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+header .nattoku-moshimo-header-easylink-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .nattoku-moshimo-header-easylink-wrap > [id^="msmaflink-"] {
+  max-width: 100%;
+}
+header .nattoku-moshimo-header-slot .nattoku-moshimo-easylink-iframe {
+  width: 100%;
+  max-width: 100%;
+  min-height: 0;
+  border: 0;
+  display: block;
+  vertical-align: top;
+}
+#nattoku-moshimo-after-quality .nattoku-moshimo-repeat-slot .nattoku-moshimo-easylink-iframe {
+  width: 100%;
+  max-width: 100%;
+  min-height: 0;
+  border: 0;
+  display: block;
+}
+`;
+}
+
+/** ヘッダー内の参考価格・星・信頼度バッジのコントラスト改善（テンプレの .price-note 半透明白や未定義 --warning-color を補正） */
+function injectProductHeaderContrastStyles() {
+    const id = 'nattoku-product-header-contrast-style';
+    let st = document.getElementById(id);
+    if (!st) {
+        st = document.createElement('style');
+        st.id = id;
+        document.head.appendChild(st);
+    }
+    st.textContent = `
+:root {
+  --warning-color: #fbbf24;
+  --danger-color: #dc2626;
+  --success-color: #059669;
+}
+.problems-grid.complaints-list .problem-card .problem-rank,
+.top-complaints .problem-card .problem-rank {
+  background: linear-gradient(135deg, #b91c1c 0%, #dc2626 100%) !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 8px rgba(185, 28, 28, 0.35);
+  border: 1px solid rgba(127, 29, 29, 0.45);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+header .product-header .product-info > p:first-of-type {
+  opacity: 1 !important;
+  color: rgba(255, 255, 255, 0.96) !important;
+}
+header .product-header .price-note {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 0.92rem !important;
+  font-weight: 600 !important;
+  color: rgba(255, 255, 255, 0.96) !important;
+  text-shadow: 0 1px 2px rgba(15, 23, 42, 0.35);
+  letter-spacing: 0.02em;
+}
+header .product-header .price-note .fa-info-circle {
+  color: #e0f2fe !important;
+  opacity: 1 !important;
+}
+header .product-header .product-meta {
+  opacity: 1 !important;
+  color: #ffffff;
+}
+header .product-header .rating-display {
+  font-weight: 700;
+  color: #ffffff;
+}
+header .product-header .rating-display .stars i {
+  color: #fde047 !important;
+  text-shadow: 0 0 1px rgba(15, 23, 42, 0.4);
+}
+header .product-header .rating-display .fa-star-half-alt,
+header .product-header .rating-display .far.fa-star {
+  color: #fcd34d !important;
+}
+header .product-header .rating-display > span {
+  color: rgba(255, 255, 255, 0.98) !important;
+}
+header .product-header .rating-display > span[style] {
+  opacity: 1 !important;
+  color: rgba(255, 255, 255, 0.92) !important;
+}
+header .product-header .product-meta > div:nth-child(2) {
+  background: rgba(255, 255, 255, 0.32) !important;
+  border: 1px solid rgba(255, 255, 255, 0.55) !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  text-shadow: 0 1px 2px rgba(15, 23, 42, 0.25);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+`;
+}
+
+function getOrCreateHeaderMoshimoSlot() {
+    let el = document.querySelector('header .nattoku-moshimo-header-slot');
+    if (el) return el;
+    const header = document.querySelector('header');
+    if (!header) return null;
+    const content = header.querySelector('.header-content') || header;
+    el = document.createElement('div');
+    el.className = 'nattoku-moshimo-header-slot';
+    el.setAttribute('aria-live', 'polite');
+    el.hidden = true;
+    content.appendChild(el);
+    return el;
+}
+
+function normalizeMoshimoEasyLinkHtml(html) {
+    if (typeof html !== 'string') return html;
+    return html.replace(
+        /(["'])\/\/dn\.msmstatic\.com\/site\/cardlink\/bundle\.js/g,
+        '$1https://dn.msmstatic.com/site/cardlink/bundle.js',
+    );
+}
+
+/**
+ * かんたんリンク配布HTMLは document.currentScript に依存する。
+ * メイン文書へ動的 append した script では currentScript が null になり、プレースホルダ「リンク」のままになることがあるため、
+ * iframe の srcdoc 内でパース・実行させる。
+ */
+/**
+ * @param {{ skipLabel?: boolean, labelText?: string }} [opts]
+ */
+function injectMoshimoEasyLinkViaSrcdocIframe(container, html, opts) {
+    opts = opts || {};
+    container.innerHTML = '';
+    if (!opts.skipLabel) {
+        const label = document.createElement('p');
+        label.className = 'nattoku-moshimo-header-slot-label';
+        label.textContent = opts.labelText || '製品の詳細を確認する';
+        container.appendChild(label);
+    }
+
+    const safe = normalizeMoshimoEasyLinkHtml(html);
+    const iframe = document.createElement('iframe');
+    iframe.className = 'nattoku-moshimo-easylink-iframe';
+    iframe.title = '価格・購入先（もしもアフィリエイト）';
+    iframe.setAttribute(
+        'sandbox',
+        'allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox',
+    );
+    iframe.srcdoc =
+        '<!DOCTYPE html><html><head><meta charset="utf-8">' +
+        '<meta name="viewport" content="width=device-width,initial-scale=1">' +
+        '<style>html,body{margin:0;padding:0;background:#fff;color:#0f172a;overflow-x:hidden}body{display:flex;flex-direction:column;align-items:center;box-sizing:border-box;min-width:100%}[id^="msmaflink-"]{max-width:100%;margin-left:auto;margin-right:auto}</style></head><body>' +
+        safe +
+        '</body></html>';
+    iframe.style.width = '100%';
+    iframe.style.border = '0';
+    iframe.style.display = 'block';
+    iframe.addEventListener('load', () => {
+        const resize = () => {
+            try {
+                const d = iframe.contentDocument;
+                if (!d || !d.body) return;
+                iframe.style.width = '100%';
+                const mount = d.querySelector('[id^="msmaflink-"]');
+                let h = 0;
+                if (mount) {
+                    const r = mount.getBoundingClientRect();
+                    h = Math.max(
+                        Math.ceil(r.height),
+                        mount.offsetHeight,
+                        mount.scrollHeight,
+                    );
+                }
+                if (!h) {
+                    h = Math.max(
+                        d.documentElement ? d.documentElement.scrollHeight : 0,
+                        d.body.scrollHeight,
+                    );
+                    h = Math.min(h, 900);
+                }
+                if (h > 0) iframe.style.height = Math.ceil(h + 12) + 'px';
+            } catch (_) {}
+        };
+        resize();
+        const id = window.setInterval(resize, 400);
+        window.setTimeout(() => window.clearInterval(id), 10000);
+    });
+    container.appendChild(iframe);
+}
+
+function ensureMoshimoCardlinkScript() {
+    if (window.__nattokuMoshimoCardlinkInit) return;
+    window.__nattokuMoshimoCardlinkInit = true;
+    const g = 'https://dn.msmstatic.com/site/cardlink/bundle.js?20220329';
+    const a = 'msmaflink';
+    window.MoshimoAffiliateObject = a;
+    window[a] =
+        window[a] ||
+        function () {
+            const c = document;
+            arguments.currentScript = c.currentScript || c.scripts[c.scripts.length - 2];
+            (window[a].q = window[a].q || []).push(arguments);
+        };
+    if (!document.getElementById(a)) {
+        const d = document.createElement('script');
+        d.src = g;
+        d.id = a;
+        document.body.appendChild(d);
+    }
+}
+
+function hasMoshimoCta(data) {
+    if (!data) return false;
+    if (typeof data.moshimoAffiliateEasyLinkHtml === 'string' && data.moshimoAffiliateEasyLinkHtml.trim()) return true;
+    if (typeof data.moshimoAffiliateEasyLinkHtmlFile === 'string' && data.moshimoAffiliateEasyLinkHtmlFile.trim()) return true;
+    if (data.moshimoAffiliateEasyLink) return true;
+    if (typeof data.moshimoAffiliateHtml === 'string' && data.moshimoAffiliateHtml.trim()) return true;
+    if (typeof data.moshimoAffiliateHtmlFile === 'string' && data.moshimoAffiliateHtmlFile.trim()) return true;
+    return false;
+}
+
+/**
+ * もしも管理画面の「HTMLをコピー」そのまま（コメント・script・div）を挿入する。
+ * innerHTML では script が動かないため、script 要素は生成し直してから append する。
+ * かんたんリンクのように script が #msmaflink-* より前にある場合、先に非 script を append してから script を付ける。
+ */
+function injectMoshimoAffiliateRawHtml(container, html) {
+    const doc = new DOMParser().parseFromString(html, 'text/html');
+    const body = doc.body;
+    if (!body) return;
+    const children = Array.from(body.childNodes);
+    const scripts = [];
+    for (const node of children) {
+        if (node.nodeType === Node.ELEMENT_NODE && node.tagName === 'SCRIPT') {
+            scripts.push(node);
+            continue;
+        }
+        if (node.nodeType === Node.COMMENT_NODE) {
+            container.appendChild(document.createComment(node.data));
+        } else if (node.nodeType === Node.TEXT_NODE) {
+            const t = node.textContent;
+            if (t && t.trim()) {
+                container.appendChild(document.createTextNode(t));
+            }
+        } else if (node.nodeType === Node.ELEMENT_NODE) {
+            container.appendChild(document.importNode(node, true));
+        }
+    }
+    for (const node of scripts) {
+        const s = document.createElement('script');
+        if (node.type) s.type = node.type;
+        if (node.src) {
+            s.src = node.src;
+            if (node.async) s.async = true;
+            if (node.defer) s.defer = true;
+            if (node.crossOrigin) s.crossOrigin = node.crossOrigin;
+        } else {
+            s.textContent = node.textContent;
+        }
+        container.appendChild(s);
+    }
+}
+
+/**
+ * もしもかんたんリンク・本文下バナーの表示。
+ * 差し込み用JSONキー:
+ *   - moshimoAffiliateEasyLinkHtml … 配布HTMLを文字列で直書き
+ *   - moshimoAffiliateEasyLinkHtmlFile … products/data/ 内のファイル名（例: moshimo-embed-{productId}.html）
+ *   - moshimoAffiliateEasyLink … オブジェクト形式（eid 等。HTMLが無いときのみ）
+ * 一括取り込み: node scripts/apply-moshimo-kantan-easylink-batch.js --from <フォルダ>
+ * 手順メモ: products/data/incoming-moshimo-easylink/README.txt
+ */
+async function applyPurchaseCtaMoshimoLayout(data) {
+    const section = document.getElementById('purchase-compare-cta');
+    const headerSlot = getOrCreateHeaderMoshimoSlot();
+
+    const hasEasyLinkHtml =
+        (typeof data.moshimoAffiliateEasyLinkHtml === 'string' && data.moshimoAffiliateEasyLinkHtml.trim()) ||
+        (typeof data.moshimoAffiliateEasyLinkHtmlFile === 'string' && data.moshimoAffiliateEasyLinkHtmlFile.trim());
+    const hasGeneralHtml =
+        (typeof data.moshimoAffiliateHtml === 'string' && data.moshimoAffiliateHtml.trim()) ||
+        (typeof data.moshimoAffiliateHtmlFile === 'string' && data.moshimoAffiliateHtmlFile.trim());
+    const useEasyObject = data.moshimoAffiliateEasyLink && !hasEasyLinkHtml;
+
+    function clearHeaderSlot() {
+        if (!headerSlot) return;
+        headerSlot.hidden = true;
+        headerSlot.innerHTML = '';
+        headerSlot.classList.remove('nattoku-moshimo-header-slot--iframe');
+    }
+
+    function clearAfterQualityMoshimo() {
+        const afterSec = document.getElementById('nattoku-moshimo-after-quality');
+        if (!afterSec) return;
+        afterSec.hidden = true;
+        const rs = afterSec.querySelector('.nattoku-moshimo-repeat-slot');
+        if (rs) rs.innerHTML = '';
+    }
+
+    if (!hasMoshimoCta(data)) {
+        clearHeaderSlot();
+        clearAfterQualityMoshimo();
+        if (section) {
+            section.hidden = true;
+            const s = section.querySelector('.nattoku-moshimo-slot');
+            if (s) s.innerHTML = '';
+        }
+        return;
+    }
+
+    injectNattokuMoshimoCtaStyles();
+
+    if (!section && hasGeneralHtml) {
+        console.warn('⚠️ 購入先セクション #purchase-compare-cta がありません（本文下のもしもHTML用）');
+    }
+
+    let easyLinkHtml = '';
+    if (typeof data.moshimoAffiliateEasyLinkHtml === 'string' && data.moshimoAffiliateEasyLinkHtml.trim()) {
+        easyLinkHtml = normalizeMoshimoEasyLinkHtml(data.moshimoAffiliateEasyLinkHtml.trim());
+    } else if (typeof data.moshimoAffiliateEasyLinkHtmlFile === 'string' && data.moshimoAffiliateEasyLinkHtmlFile.trim()) {
+        const path = 'data/' + data.moshimoAffiliateEasyLinkHtmlFile.trim().replace(/^\/+/, '');
+        const res = await fetch(path);
+        if (!res.ok) {
+            console.error('❌ かんたんリンクHTMLの取得に失敗:', path, res.status);
+        } else {
+            easyLinkHtml = normalizeMoshimoEasyLinkHtml(await res.text());
+        }
+    }
+
+    if (easyLinkHtml && headerSlot) {
+        headerSlot.innerHTML = '';
+        headerSlot.classList.add('nattoku-moshimo-header-slot--iframe');
+        injectMoshimoEasyLinkViaSrcdocIframe(headerSlot, easyLinkHtml, {});
+        headerSlot.hidden = false;
+        console.log('✅ もしもかんたんリンクHTMLをヘッダー（iframe）に挿入しました');
+
+        const afterSec = document.getElementById('nattoku-moshimo-after-quality');
+        const repeatSlot = afterSec && afterSec.querySelector('.nattoku-moshimo-repeat-slot');
+        if (repeatSlot) {
+            injectMoshimoEasyLinkViaSrcdocIframe(repeatSlot, easyLinkHtml, { skipLabel: true });
+            afterSec.hidden = false;
+            console.log('✅ もしもかんたんリンクHTMLをデータ品質直下に挿入しました');
+        }
+    } else if (useEasyObject && headerSlot) {
+        const cfg = data.moshimoAffiliateEasyLink;
+        const eid = cfg && cfg.eid;
+        if (!eid) {
+            console.error('❌ moshimoAffiliateEasyLink に eid がありません');
+            clearHeaderSlot();
+        } else {
+            headerSlot.innerHTML = '';
+            headerSlot.classList.add('nattoku-moshimo-header-slot--iframe');
+            const lb = document.createElement('p');
+            lb.className = 'nattoku-moshimo-header-slot-label';
+            lb.textContent = '製品の詳細を確認する';
+            headerSlot.appendChild(lb);
+            const wrap = document.createElement('div');
+            wrap.className = 'nattoku-moshimo-header-easylink-wrap';
+            const mount = document.createElement('div');
+            mount.id = 'msmaflink-' + eid;
+            mount.textContent = '\u00a0';
+            wrap.appendChild(mount);
+            headerSlot.appendChild(wrap);
+            ensureMoshimoCardlinkScript();
+            window.msmaflink(cfg);
+            headerSlot.hidden = false;
+            console.log('✅ もしもかんたんリンク（msmaflink オブジェクト）をヘッダーに挿入:', eid);
+        }
+    } else {
+        clearHeaderSlot();
+        clearAfterQualityMoshimo();
+    }
+
+    if (!section) {
+        return;
+    }
+
+    let slot = section.querySelector('.nattoku-moshimo-slot');
+    if (!hasGeneralHtml) {
+        section.hidden = true;
+        if (slot) slot.innerHTML = '';
+        return;
+    }
+
+    section.hidden = false;
+    if (!slot) {
+        slot = document.createElement('div');
+        slot.className = 'nattoku-moshimo-slot';
+        section.appendChild(slot);
+    }
+    slot.innerHTML = '';
+
+    if (typeof data.moshimoAffiliateHtml === 'string' && data.moshimoAffiliateHtml.trim()) {
+        injectMoshimoAffiliateRawHtml(slot, data.moshimoAffiliateHtml);
+        console.log('✅ もしもHTML（JSON内 moshimoAffiliateHtml）を本文下に挿入しました');
+        return;
+    }
+
+    if (typeof data.moshimoAffiliateHtmlFile === 'string' && data.moshimoAffiliateHtmlFile.trim()) {
+        const path = 'data/' + data.moshimoAffiliateHtmlFile.trim().replace(/^\/+/, '');
+        const res = await fetch(path);
+        if (!res.ok) {
+            console.error('❌ もしもHTMLの取得に失敗:', path, res.status);
+            return;
+        }
+        const html = await res.text();
+        injectMoshimoAffiliateRawHtml(slot, html);
+        console.log('✅ もしもHTML（ファイル）を本文下に挿入しました:', path);
+    }
+}
+
 // 1. データ読み込み
 function getProductId() {
     const urlParams = new URLSearchParams(window.location.search);
@@ -37,15 +509,25 @@ function updateMetadata(data) {
     document.title = data.metaTitle || `${data.productName} 詳細分析 | もう失敗しない。ナットクLabo`;
     
     const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) {
-        metaDesc.setAttribute('content', data.metaDescription);
+    if (metaDesc && typeof data.metaDescription === 'string' && data.metaDescription.trim()) {
+        metaDesc.setAttribute('content', data.metaDescription.trim());
+    }
+
+    const canonicalLink = document.querySelector('link[rel="canonical"]');
+    let productPageUrl = canonicalLink && canonicalLink.href ? canonicalLink.href.trim() : '';
+    if (!productPageUrl && typeof window !== 'undefined' && window.location && window.location.pathname) {
+        const path = window.location.pathname.replace(/^\/?/, '/');
+        productPageUrl = 'https://nattoku-labo.com' + (path.startsWith('/') ? path : '/' + path);
     }
     
     const structuredData = {
         "@context": "https://schema.org",
         "@type": "Product",
         "name": data.productName,
-        "description": data.metaDescription,
+        "description":
+            typeof data.metaDescription === 'string' && data.metaDescription.trim()
+                ? data.metaDescription.trim()
+                : `${data.productName || '製品'}の口コミ統計による詳細分析`,
         "brand": {
             "@type": "Brand",
             "name": data.manufacturer
@@ -64,6 +546,12 @@ function updateMetadata(data) {
             "availability": "https://schema.org/InStock"
         }
     };
+    if (productPageUrl) {
+        structuredData.url = productPageUrl;
+    }
+    if (typeof data.imageUrl === 'string' && data.imageUrl.trim()) {
+        structuredData.image = data.imageUrl.trim();
+    }
     
     let structuredScript = document.querySelector('script[type="application/ld+json"]');
     if (!structuredScript) {
@@ -81,14 +569,30 @@ function updateDynamicElements(data) {
     
     dynamicElements.forEach(element => {
         const path = element.getAttribute('data-dynamic');
-        const value = getNestedValue(data, path);
-        
-        if (value !== undefined && value !== null) {
-            if (element.tagName === 'IMG' && path === 'imageUrl') {
-                element.src = value;
+
+        if (element.tagName === 'IMG' && path === 'imageUrl') {
+            const raw = getNestedValue(data, path);
+            const url = typeof raw === 'string' ? raw.trim() : '';
+            if (url) {
+                element.src = url;
                 element.alt = data.productName || '製品画像';
+                element.hidden = false;
+                element.style.display = '';
                 console.log(`✅ 画像更新`);
-            } else if (path === 'stars') {
+            } else {
+                element.removeAttribute('src');
+                element.alt = '';
+                element.hidden = true;
+                element.style.display = 'none';
+                console.log(`⏩ 製品画像なし（非表示）`);
+            }
+            return;
+        }
+
+        const value = getNestedValue(data, path);
+
+        if (value !== undefined && value !== null) {
+            if (path === 'stars') {
                 updateStarRating(element, data.overallRating);
                 console.log(`✅ 星評価更新: ${data.overallRating}`);
             } else if (path === 'price') {
@@ -99,8 +603,7 @@ function updateDynamicElements(data) {
                 element.textContent = `${value}%`;
                 console.log(`✅ ${path} = ${value}%`);
             } else if (element.tagName === 'A' && path.startsWith('cta.')) {
-                // CTA リンクの場合（文字列またはオブジェクト対応）
-                const url = typeof value === 'string' ? value : (value.url || value);
+                const url = typeof value === 'string' ? value : (value && value.url);
                 if (url) {
                     element.href = url;
                     console.log(`✅ ${path} = ${url}`);
@@ -162,12 +665,6 @@ function updateStarRating(element, rating) {
 function updateBasicInfo(data) {
     const productTitle = document.querySelector('.product-title');
     if (productTitle) productTitle.textContent = data.productName;
-    
-    const productImage = document.querySelector('.product-image-header');
-    if (productImage) {
-        productImage.src = data.imageUrl;
-        productImage.alt = data.productName;
-    }
     
     // 性能スコアの表示（上位3項目を自動選択）
     if (data.performanceAnalysis) {
@@ -303,6 +800,15 @@ function updateReviewKeywords(data) {
     console.log('✅ キーワードはChart.jsで描画されます');
 }
 
+/** 信頼度サブカード用: 0–100 台の数値を「95%」形式に統一 */
+function formatReliabilityPercentDisplay(value) {
+    if (value === undefined || value === null || value === '') return '';
+    const s = String(value).replace(/%/g, '').trim();
+    const n = Number(s);
+    if (Number.isNaN(n)) return String(value);
+    return `${Math.round(n)}%`;
+}
+
 // 7.5. データ信頼性（DRI 2.0）更新
 function updateReliability(data) {
     if (!data.reliability) return;
@@ -321,7 +827,9 @@ function updateReliability(data) {
         if (adequacyScoreEl) {
             // scoreまたはpercentageに対応
             const adequacyValue = rel.dataAdequacy.score || rel.dataAdequacy.percentage;
-            if (adequacyValue) adequacyScoreEl.textContent = adequacyValue;
+            if (adequacyValue !== undefined && adequacyValue !== null && adequacyValue !== '') {
+                adequacyScoreEl.textContent = formatReliabilityPercentDisplay(adequacyValue);
+            }
         }
         
         const adequacyDescEl = document.querySelector('[data-dynamic="reliability.dataAdequacy.description"]');
@@ -336,7 +844,9 @@ function updateReliability(data) {
         const consistencyPercentEl = document.querySelector('[data-dynamic="reliability.consistency.percentage"]');
         if (consistencyPercentEl) {
             const consistencyValue = rel.consistency.percentage || rel.consistency.score;
-            if (consistencyValue) consistencyPercentEl.textContent = consistencyValue;
+            if (consistencyValue !== undefined && consistencyValue !== null && consistencyValue !== '') {
+                consistencyPercentEl.textContent = formatReliabilityPercentDisplay(consistencyValue);
+            }
         }
         
         const consistencyDescEl = document.querySelector('[data-dynamic="reliability.consistency.description"]');
@@ -352,7 +862,9 @@ function updateReliability(data) {
         if (freshnessScoreEl) {
             // scoreまたはpercentageに対応
             const freshnessValue = rel.freshness.score || rel.freshness.percentage;
-            if (freshnessValue) freshnessScoreEl.textContent = freshnessValue;
+            if (freshnessValue !== undefined && freshnessValue !== null && freshnessValue !== '') {
+                freshnessScoreEl.textContent = formatReliabilityPercentDisplay(freshnessValue);
+            }
         }
         
         const freshnessDescEl = document.querySelector('[data-dynamic="reliability.freshness.description"]');
@@ -906,49 +1418,7 @@ function updateResaleValue(data) {
     if (usedMaxEl) usedMaxEl.textContent = `約¥${resale.usedMax.toLocaleString()}`;
 }
 
-// 12. CTAボタン更新
-function updateCTAButtons(data) {
-    const cta = data.cta;
-    if (!cta) return;
-    
-    // Amazon
-    if (cta.amazon) {
-        const btn = document.querySelector('a[href*="amazon"]');
-        if (btn) {
-            btn.href = typeof cta.amazon === 'string' ? cta.amazon : cta.amazon.url;
-            console.log('✅ Amazon CTA更新:', btn.href);
-        }
-    }
-    
-    // 楽天
-    if (cta.rakuten) {
-        const btn = document.querySelector('a[href*="rakuten"]');
-        if (btn) {
-            btn.href = typeof cta.rakuten === 'string' ? cta.rakuten : cta.rakuten.url;
-            console.log('✅ 楽天 CTA更新:', btn.href);
-        }
-    }
-    
-    // Yahoo
-    if (cta.yahoo) {
-        const btn = document.querySelector('a[href*="yahoo"]');
-        if (btn) {
-            btn.href = typeof cta.yahoo === 'string' ? cta.yahoo : cta.yahoo.url;
-            console.log('✅ Yahoo CTA更新:', btn.href);
-        }
-    }
-    
-    // ヨドバシ（削除済み - 2026-03-26）
-    // if (cta.yodobashi) {
-    //     const btn = document.querySelector('a[href*="yodobashi"]');
-    //     if (btn) {
-    //         btn.href = typeof cta.yodobashi === 'string' ? cta.yodobashi : cta.yodobashi.url;
-    //         console.log('✅ ヨドバシ CTA更新:', btn.href);
-    //     }
-    // }
-}
-
-// 13. メイン初期化
+// 12. メイン初期化
 async function initializePage() {
     const productId = getProductId();
     console.log('🔍 製品ID:', productId);
@@ -980,8 +1450,8 @@ async function initializePage() {
         updateOperationalCost(data);
         updateDataQuality(data);
         updateResaleValue(data);
-        updateCTAButtons(data);
-        
+        await applyPurchaseCtaMoshimoLayout(data);
+
         window.productData = data;
         
         console.log('✅ 全180項目の自動ロード完了');
@@ -994,6 +1464,7 @@ async function initializePage() {
 }
 
 // 14. 実行
+injectProductHeaderContrastStyles();
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initializePage);
 } else {

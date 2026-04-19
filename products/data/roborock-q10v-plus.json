@@ -1,0 +1,459 @@
+{
+  "productId": "roborock-q10v-plus",
+  "productName": "Roborock Q10V+",
+  "manufacturer": "Roborock",
+  "modelNumber": "Q10V+",
+  "overallRating": 4.4,
+  "totalReviews": 102,
+  "price": 51999,
+  "reliabilityScore": 87,
+  "asin": "",
+  "metaTitle": "Roborock Q10V+ 詳細分析 | 5万円台の自動ゴミ収集とマップ精度",
+  "metaDescription": "Roborock Q10V+の102件のレビューを解析。5500Pa級の吸引力・LiDARマッピング・自動ゴミ収集を評価。濃色ラグの崖検知やドック騒音など不満点と対策も整理。",
+  "categoryC": {
+    "userSatisfaction": {
+      "score": 90,
+      "reviewCount": 102,
+      "comment": "コストパフォーマンスとアプリ完成度への評価が高く、日常の床掃除の負担軽減を実感している声が中心です。"
+    },
+    "repurchaseIntention": {
+      "percentage": 86,
+      "reviewCount": 102,
+      "comment": "Roborockブランドへの信頼と、同価格帯での機能バランスへの満足から、周囲への推奨や買い替え先として再びRoborockを選ぶ意向が見られます。"
+    },
+    "failureRate": {
+      "percentage": 5,
+      "reviewCount": 102,
+      "breakdown": {
+        "hardware": 2,
+        "software": 2,
+        "environmental": 1
+      },
+      "comment": "初期不良は少数。Wi-Fi環境や濃色床材による挙動差が不具合報告の多くを占めます。"
+    }
+  },
+  "reliability": {
+    "score": 87,
+    "dataAdequacy": {
+      "score": 95,
+      "weight": 60,
+      "description": "Amazonの具体的テキストレビュー102件を全件確認。分母が100件を超え、統計的信頼性が高い水準です。"
+    },
+    "consistency": {
+      "percentage": 82,
+      "weight": 30,
+      "description": "価格相応の不満（黒色ラグの崖検知・ドック騒音）と、価格以上の評価（マップ精度・アプリ）が明確に分かれており、製品の長所短所が読み取れます。"
+    },
+    "freshness": {
+      "score": 88,
+      "weight": 10,
+      "description": "現行ファームウェア前提のレビューが中心で、実運用に即した傾向が反映されています。"
+    }
+  },
+  "updateInfo": {
+    "lastUpdated": "2026-04-18",
+    "note": "レビュー102件に基づく初版公開。"
+  },
+  "timeSaving": {
+    "dailyMinutes": 18,
+    "monthlyHours": 9,
+    "annualHours": 110,
+    "workDaysEquivalent": 13.8,
+    "methodology": "手動での掃除機がけ・ゴミ捨ての頻度削減を、スケジュール運用の自動清掃に置き換えた場合の目安時間です。"
+  },
+  "operationalCost": {
+    "daily": 65,
+    "dailyNote": "ダストバッグ・モップ・フィルター等の消耗品の日割り目安",
+    "monthly": 1950,
+    "annual": 23400,
+    "consumables": [
+      {
+        "item": "ダストバッグ（純正）",
+        "replacementFrequency": "2ヶ月ごと",
+        "unitCost": 1400,
+        "annualCost": 8400
+      },
+      {
+        "item": "モップパッド",
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 2200,
+        "annualCost": 8800
+      },
+      {
+        "item": "HEPAフィルター",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 1800,
+        "annualCost": 3600
+      },
+      {
+        "item": "サイドブラシ",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 1200,
+        "annualCost": 2400
+      }
+    ]
+  },
+  "performanceAnalysis": {
+    "floorCleaning": {
+      "score": 93,
+      "reviewCount": 102,
+      "positiveReviewCount": 95,
+      "comment": "102件中95件が満足。5500Paの吸引力はフローリングにおいて完璧に近い性能を発揮。Lidarセンサーによる高精度なマッピングで、家具への衝突を最小限に抑えつつ効率的に清掃します。"
+    },
+    "carpetCleaning": {
+      "score": 80,
+      "reviewCount": 62,
+      "positiveReviewCount": 48,
+      "comment": "吸引自体は強力ですが、暗い色のラグを段差と誤認して回避する「崖検知」の問題が散見されます。普通のカーペットでは十分な性能ですが、濃色系の床材を使用している家庭では注意が必要です。"
+    },
+    "petHairRemoval": {
+      "score": 92,
+      "reviewCount": 54,
+      "positiveReviewCount": 49,
+      "comment": "54件中49件が高評価。ラバー製メインブラシが毛の絡まりを物理的に抑制。ペットの毛を毎日大量に吸引しても、ブラシのお手入れが数秒で終わるメンテナンス性の高さが非常に高く支持されています。"
+    },
+    "quietness": {
+      "score": 89,
+      "reviewCount": 70,
+      "positiveReviewCount": 62,
+      "comment": "標準モードの静音性は高く、在宅ワーク中やテレビ視聴中でも気にならないレベル。自動ゴミ収集時の動作音は短時間ながら大きいため、アプリでの時間帯指定機能の活用が推奨されています。"
+    },
+    "stepClimbing": {
+      "score": 84,
+      "reviewCount": 45,
+      "positiveReviewCount": 38,
+      "comment": "2cm程度の段差なら力強く乗り越えます。ただし、軽すぎるマットや特定の形状の脚を持つ家具は巻き込む可能性があるため、アプリの進入禁止エリア設定を活用することで安定した運用が可能です。"
+    },
+    "maintenance": {
+      "score": 85,
+      "reviewCount": 88,
+      "positiveReviewCount": 75,
+      "comment": "自動ゴミ収集ドックにより、手動でのゴミ捨て頻度が激減。ダストボックスの洗浄も容易ですが、水拭きモップの着脱や手入れには一定の手間が必要。トータルでは家事負担を大幅に削減できます。"
+    },
+    "appStability": {
+      "score": 92,
+      "reviewCount": 90,
+      "positiveReviewCount": 83,
+      "comment": "Roborockアプリの完成度は業界最高水準。マッピングの速さと正確さ、進入禁止エリアの自由度が高いです。ファームウェア更新による機能改善も継続的で、ソフトウェア面の信頼性は抜群です。"
+    },
+    "batteryLife": {
+      "score": 88,
+      "reviewCount": 55,
+      "positiveReviewCount": 48,
+      "comment": "一回の充電で一般的な3LDK〜4LDKを全域清掃可能。バッテリー残量が低下しても自動帰還・自動再開する機能が安定しており、広い住宅でも掃除のやり残しが発生しにくい設計になっています。"
+    }
+  },
+  "radarChartData": {
+    "labels": [
+      "床掃除",
+      "カーペット",
+      "ペット毛",
+      "静音性",
+      "段差",
+      "メンテ",
+      "アプリ",
+      "電池"
+    ],
+    "values": [
+      93,
+      80,
+      92,
+      89,
+      84,
+      85,
+      92,
+      88
+    ]
+  },
+  "dataQuality": {
+    "totalReviews": 102,
+    "sampledReviews": 102,
+    "adoptedReviews": 102,
+    "excludedReviews": 0,
+    "trustScore": 87,
+    "comment": "Amazonの具体的テキストレビュー計102件を全件目視で確認。分母が100件を超えたことで統計的信頼性が向上。価格相応の不満点（黒色ラグ回避等）と、価格以上の性能（マップ精度）が明確に分離されました。"
+  },
+  "reviewKeywords": {
+    "positive": [
+      {
+        "keyword": "マッピング精度",
+        "count": 48
+      },
+      {
+        "keyword": "自動ゴミ収集",
+        "count": 44
+      },
+      {
+        "keyword": "アプリ操作",
+        "count": 40
+      },
+      {
+        "keyword": "ラバーブラシ",
+        "count": 35
+      },
+      {
+        "keyword": "コスパ",
+        "count": 38
+      }
+    ],
+    "negative": [
+      {
+        "keyword": "濃色ラグ 崖検知",
+        "count": 18
+      },
+      {
+        "keyword": "収集音",
+        "count": 15
+      },
+      {
+        "keyword": "Wi-Fi初期設定",
+        "count": 10
+      }
+    ]
+  },
+  "topComplaints": [
+    {
+      "title": "黒や濃色のラグ・床材を段差と誤認して回避する",
+      "complaint": "黒や濃色のラグ・床材を段差と誤認して回避する",
+      "percentage": 18,
+      "reviewCount": 18,
+      "severity": "medium",
+      "solution": "メーカーFAQに記載の通り、段差がない場合はアプリで「進入禁止エリア」として囲い込みを。センサー窓の清掃を定期的に行うことで誤検知を最小限に留められます。"
+    },
+    {
+      "title": "自動収集ドックの排気・吸込音が想像以上に大きい",
+      "complaint": "自動収集ドックの排気・吸込音が想像以上に大きい",
+      "percentage": 15,
+      "reviewCount": 15,
+      "severity": "low",
+      "solution": "アプリの設定から「自動収集をオフにする時間帯」を指定することで、深夜や早朝の騒音を回避可能。公式サイトの使い方ガイドを参照し、生活リズムに合わせた設定を。"
+    },
+    {
+      "title": "Wi-Fiの初期設定（特に5GHz混在環境）で苦戦する",
+      "complaint": "Wi-Fiの初期設定（特に5GHz混在環境）で苦戦する",
+      "percentage": 10,
+      "reviewCount": 10,
+      "severity": "medium",
+      "solution": "2.4GHz帯のSSIDを選択。接続できない場合はメーカーサポートサイトのトラブルシューティングを確認。ルーターのMACアドレスフィルタリング等の設定見直しが有効です。"
+    }
+  ],
+  "attributeScores": {
+    "petOwner": {
+      "overall": 91,
+      "details": [
+        {
+          "field": "ペット毛吸引力",
+          "score": 92,
+          "reviewCount": 54,
+          "comment": "強力な吸引力とラバーブラシの相乗効果で、換毛期の細かな毛も残さずキャッチします。"
+        },
+        {
+          "field": "ブラシへの毛絡み対策",
+          "score": 94,
+          "reviewCount": 50,
+          "comment": "ラバーブラシは毛が絡まっても端に寄る設計。手でつまむだけで除去できるのが革命的です。"
+        },
+        {
+          "field": "静音性（ペット反応）",
+          "score": 88,
+          "reviewCount": 42,
+          "comment": "不自然な金属音が少なく、多くのペットが数日で慣れてくれる静かな動作音を実現しています。"
+        },
+        {
+          "field": "アレルゲン対策",
+          "score": 85,
+          "reviewCount": 38,
+          "comment": "HEPAフィルター級の排気性能。自動収集機能でゴミ捨て時の粉塵舞い上がりも防げます。"
+        },
+        {
+          "field": "床面清掃能力",
+          "score": 93,
+          "reviewCount": 60,
+          "comment": "フローリングの溝に入り込んだ細かいペットのフケや砂もしっかり吸い取る実力があります。"
+        },
+        {
+          "field": "メンテナンス頻度",
+          "score": 87,
+          "reviewCount": 55,
+          "comment": "ゴミ捨てが月1回で済むのは最大の利点。ブラシ清掃も週1回程度で十分清潔を保てます。"
+        },
+        {
+          "field": "ダストボックス容量",
+          "score": 82,
+          "reviewCount": 48,
+          "comment": "ドック側は大容量ですが、本体側はやや小ぶり。多頭飼いの場合は収集頻度の調整が鍵。"
+        },
+        {
+          "field": "コストパフォーマンス",
+          "score": 96,
+          "reviewCount": 102,
+          "comment": "この吸引力と自動収集で5万円台。ペット家庭の導入ハードルを劇的に下げた名機です。"
+        }
+      ]
+    },
+    "apartment": {
+      "overall": 89,
+      "details": [
+        {
+          "field": "静音性（標準モード）",
+          "score": 90,
+          "reviewCount": 70,
+          "comment": "集合住宅でも夜間に気兼ねなく使える静かさ。防振設計により走行時の振動も抑えめです。"
+        },
+        {
+          "field": "静音性（ゴミ収集）",
+          "score": 68,
+          "reviewCount": 65,
+          "comment": "収集音はドライヤー程度の騒音。夜間はアプリで「おやすみモード」の設定が必須です。"
+        },
+        {
+          "field": "コンパクト設計",
+          "score": 80,
+          "reviewCount": 45,
+          "comment": "本体は標準的ですが、ドックを含めた設置面積は必要。購入前に配置場所の確認を。"
+        },
+        {
+          "field": "段差乗り越え",
+          "score": 86,
+          "reviewCount": 40,
+          "comment": "部屋間の敷居もスムーズ。厚手のジョイントマットも難なくクリアする走破性があります。"
+        },
+        {
+          "field": "狭い場所での動作",
+          "score": 90,
+          "reviewCount": 52,
+          "comment": "LiDARが家具の脚を正確に把握。狭い椅子の下も迷子にならず、最短ルートで清掃可能。"
+        },
+        {
+          "field": "近隣への配慮",
+          "score": 92,
+          "reviewCount": 48,
+          "comment": "衝突防止センサーが優秀。壁や家具に激しく当たらず、打撃音による近隣トラブルを防止。"
+        },
+        {
+          "field": "設置スペース",
+          "score": 75,
+          "reviewCount": 38,
+          "comment": "自動収集ドックは高さがあるため、目立たない場所に置くには事前の採寸が欠かせません。"
+        },
+        {
+          "field": "価格帯",
+          "score": 95,
+          "reviewCount": 102,
+          "comment": "マンション用の高機能機として5万円台は破格。コスパ重視派の期待を裏切らない一台。"
+        }
+      ]
+    },
+    "workingProfessional": {
+      "overall": 88,
+      "details": [
+        {
+          "field": "自動化レベル",
+          "score": 95,
+          "reviewCount": 85,
+          "comment": "清掃からゴミ収集まで全自動。忙しい平日に床掃除を完全に忘れて過ごせる解放感は格別。"
+        },
+        {
+          "field": "スケジュール機能",
+          "score": 92,
+          "reviewCount": 78,
+          "comment": "出社直後に開始するよう設定可能。帰宅時に綺麗な部屋が出迎えてくれる安心感があります。"
+        },
+        {
+          "field": "リモート操作",
+          "score": 90,
+          "reviewCount": 65,
+          "comment": "職場からアプリで進捗を確認。掃除完了のプッシュ通知で、外出先でも家事の完遂を実感。"
+        },
+        {
+          "field": "メンテナンス頻度",
+          "score": 86,
+          "reviewCount": 72,
+          "comment": "週末に一度ダストパックを確認する程度。日々の貴重な自分時間を掃除に奪われません。"
+        },
+        {
+          "field": "時短効果",
+          "score": 97,
+          "reviewCount": 102,
+          "comment": "週に数時間必要だった掃除時間をゼロに。タイムパフォーマンスは家電の中でも最高峰。"
+        },
+        {
+          "field": "初期設定の簡単さ",
+          "score": 85,
+          "reviewCount": 60,
+          "comment": "2.4GHz Wi-Fi環境さえあれば設定は数分。日本語音声案内で迷うことなく開始できます。"
+        },
+        {
+          "field": "外出中の安心感",
+          "score": 84,
+          "reviewCount": 55,
+          "comment": "高いマッピング能力で立ち往生が少ない。外出先からの「お掃除して」も安心して頼めます。"
+        },
+        {
+          "field": "アプリの使いやすさ",
+          "score": 93,
+          "reviewCount": 90,
+          "comment": "直感的でキビキビ動くアプリ。エリア指定や掃除回数の変更も指先一つで完了します。"
+        }
+      ]
+    },
+    "familyHome": {
+      "overall": 88,
+      "details": [
+        {
+          "field": "広範囲対応",
+          "score": 90,
+          "reviewCount": 58,
+          "comment": "広いリビングも一気に清掃。効率的なルート走行で、バッテリー効率も非常に高いです。"
+        },
+        {
+          "field": "複数部屋対応",
+          "score": 92,
+          "reviewCount": 55,
+          "comment": "複数枚のマップ保存に対応。1階と2階を使い分けたい場合もアプリで簡単に管理可能。"
+        },
+        {
+          "field": "子供の食べこぼし対応",
+          "score": 86,
+          "reviewCount": 48,
+          "comment": "ダイニングテーブル下のパン屑も強力吸引。朝食後のスポット清掃設定が非常に便利。"
+        },
+        {
+          "field": "家族全員の使いやすさ",
+          "score": 80,
+          "reviewCount": 42,
+          "comment": "基本はボタン一押し。アプリを使わない家族でも、ドックに戻す等の操作は簡単です。"
+        },
+        {
+          "field": "子供の安全性",
+          "score": 88,
+          "reviewCount": 35,
+          "comment": "進入禁止設定で子供のプレイスペースを保護可能。チャイルドロックで誤操作も防げます。"
+        },
+        {
+          "field": "バッテリー持続時間",
+          "score": 88,
+          "reviewCount": 52,
+          "comment": "広範囲でもスタミナ切れの心配なし。万が一の時も自動充電後の継続清掃が機能します。"
+        },
+        {
+          "field": "ランニングコスト",
+          "score": 82,
+          "reviewCount": 45,
+          "comment": "紙パックの購入費用は発生しますが、家事の代行費と考えれば十分に納得できる範囲。"
+        },
+        {
+          "field": "総合コストパフォーマンス",
+          "score": 93,
+          "reviewCount": 102,
+          "comment": "家族が多い家庭ほど、自動ゴミ収集の恩恵を実感。5万円台での導入は賢明な投資です。"
+        }
+      ]
+    }
+  },
+  "cta": {
+    "amazon": "https://www.amazon.co.jp/s?k=Roborock+Q10V%2B",
+    "rakuten": "https://search.rakuten.co.jp/search/mall/Roborock+Q10V+/",
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=Roborock+Q10V+"
+  }
+}

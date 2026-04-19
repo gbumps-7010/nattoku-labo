@@ -14,7 +14,8 @@
 powershell -ExecutionPolicy Bypass -File .\scripts\add-product-from-json.ps1 "C:\path\to\product.json"
 ```
 
-必須フィールドは `productId` `productName` `manufacturer` `imageUrl` `overallRating` `totalReviews` `price` `reliabilityScore` です。  
+必須フィールドは `productId` `productName` `manufacturer` `overallRating` `totalReviews` `price` `reliabilityScore` です。  
+`imageUrl` は任意です（**製品写真を外部から取得・転載しない運用**の場合は省略または空で問題ありません。トップの製品一覧カードには画像欄は表示しません。JSON-LD も画像 URL が無いときは `image` を付けません）。  
 `cta.amazon` と `cta.rakuten` も必要です。
 
 Node.jsが入っている環境では、`node scripts/add-product-from-json.js "C:\path\to\product.json"` でも実行できます。
@@ -215,7 +216,7 @@ PlaywrightConsoleCapture で製品ページをテスト：
   "productName": "製品名",
   "manufacturer": "メーカー名",
   "modelNumber": "型番",
-  "imageUrl": "画像URL",
+  "imageUrl": "",
   "overallRating": 4.7,
   "totalReviews": 326,
   "price": 79980,

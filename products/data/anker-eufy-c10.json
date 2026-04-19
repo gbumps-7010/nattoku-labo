@@ -542,21 +542,5 @@
     ]
   },
 
-  "cta": {
-    "amazon": {
-      "url": "https://www.amazon.co.jp/dp/B0D1XY7Z6S",
-      "price": 59800,
-      "inStock": true
-    },
-    "rakuten": {
-      "url": "https://search.rakuten.co.jp/search/mall/Anker+Eufy+C10+Auto-Empty/",
-      "price": 59800,
-      "inStock": true
-    },
-    "yahoo": {
-      "url": "https://shopping.yahoo.co.jp/search?p=Anker+Eufy+C10+Auto-Empty",
-      "price": 59800,
-      "inStock": true
-    }
-  }
+  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-anker-eufy-c10.html"
 }
