@@ -1,0 +1,448 @@
+{
+  "productId": "dreame-d9-max-gen-2",
+  "productName": "Dreame D9 Max Gen 2",
+  "manufacturer": "Dreame",
+  "modelNumber": "D9 Max Gen 2",
+  "imageUrl": "",
+  "overallRating": 4.5,
+  "totalReviews": 60,
+  "price": 17800,
+  "reliabilityScore": 76,
+  "asin": "",
+  "metaTitle": "Dreame D9 Max Gen 2 詳細分析 | 1.7万円台とマッピング精度のコスパ",
+  "metaDescription": "Dreame D9 Max Gen 2の60件の口コミを分析。4000Pa・LDSマッピング・静音性の評価、Wi-Fi初期設定や水タンク、ブラシ手入れの不満と対策を整理。",
+  "categoryC": {
+    "userSatisfaction": {
+      "score": 91,
+      "reviewCount": 60,
+      "comment": "価格帯に対する清掃力とマッピング精度のバランスが好評。エントリー層からの乗り換えでも「想像以上」という声が多く、日常の床掃除負担の減少を実感するコメントが中心です。"
+    },
+    "repurchaseIntention": {
+      "percentage": 84,
+      "reviewCount": 50,
+      "comment": "同価格帯での完成度の高さから、他機種導入前提の第2台需要や、家族・知人への推奨意向が見られます。"
+    },
+    "failureRate": {
+      "percentage": 5,
+      "reviewCount": 60,
+      "comment": "重大な硬故障の報告は少なめ。初期Wi-Fiや水拭き周りの運用、ブラシ手入れの手間取りに関する言及が相対的に多い傾向です。"
+    }
+  },
+  "reliability": {
+    "score": 76,
+    "dataAdequacy": {
+      "score": 78,
+      "weight": 60,
+      "description": "本文付き60件を分母に主傾向を把握。低価格帯ながらマッピング精度への好意的言及の一貫性が高い。多チャネル合算の解釈上の制約はある。"
+    },
+    "consistency": {
+      "percentage": 90,
+      "weight": 30,
+      "description": "吸引力・静音・コスパへの評価の向きはおおむね揃い、不満はWi-Fi初期設定や水回り等に集約しやすい分布です。"
+    },
+    "freshness": {
+      "score": 88,
+      "weight": 10,
+      "description": "直近の運用レビューが多く、現行利用を反映しやすいスナップショットに近いです。"
+    }
+  },
+  "updateInfo": {
+    "lastUpdated": "2026-04-18",
+    "note": "60件・信頼76・年146h時短・年4800円維持目安を取り込み。チャネル固有名は非記載方針でコメント整備。"
+  },
+  "timeSaving": {
+    "dailyMinutes": 24,
+    "monthlyHours": 12,
+    "annualHours": 146,
+    "workDaysEquivalent": 18.3,
+    "methodology": "1日平均24分（準備・片付け・掃除機がけ相当）の削減を、スケジュール運転の自動清掃に置き換えた年間目安。年146時間。低価格でもマッピングが正確で手直しが少ない前提。間取りで変動します。"
+  },
+  "operationalCost": {
+    "daily": 13,
+    "dailyNote": "フィルター・サイドブラシ・メインブラシ等の交換の年間目安。純正・互換の流通が安定的で年5000円未満運用可能という前提。メーカー掲載価格基準。実費は変動。",
+    "monthly": 400,
+    "annual": 4800,
+    "consumables": [
+      {
+        "item": "フィルター",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 1500,
+        "annualCost": 3000
+      },
+      {
+        "item": "サイドブラシ・メインブラシ等",
+        "replacementFrequency": "1年ごと",
+        "unitCost": 1800,
+        "annualCost": 1800
+      }
+    ]
+  },
+  "performanceAnalysis": {
+    "floorCleaning": {
+      "score": 95,
+      "reviewCount": 56,
+      "positiveReviewCount": 53,
+      "comment": "60件中56件が高評価。1.7万円台ながら上位機種に迫る4000Paの吸引力を備え、フローリングの塵を確実に除去。LDSレーザーによるマッピング精度も価格帯を超えた正確さです。"
+    },
+    "carpetCleaning": {
+      "score": 88,
+      "reviewCount": 38,
+      "positiveReviewCount": 33,
+      "comment": "カーペットでの吸引力も好評ですが、毛足の長いラグでは少し苦戦する声も。最大吸引力設定を活用することで、奥に入り込んだゴミも十分に掻き出すことが可能。コスパ重視なら合格点です。"
+    },
+    "petHairRemoval": {
+      "score": 90,
+      "reviewCount": 28,
+      "positiveReviewCount": 25,
+      "comment": "ペットの毛もしっかり吸い取ると好評。メインブラシがゴム製のため絡まりにくい構造ですが、週に一度のメンテナンスを行うことで、より安定した吸引性能を維持できるとの声が多いです。"
+    },
+    "quietness": {
+      "score": 92,
+      "reviewCount": 40,
+      "positiveReviewCount": 37,
+      "comment": "多くのユーザーが「想像以上に静か」と回答。標準モードではテレビの音を邪魔せず、夜間や集合住宅でも気兼ねなく使用可能。旧世代機や他社安価モデルからの買い替えで満足度が非常に高いです。"
+    },
+    "stepClimbing": {
+      "score": 85,
+      "reviewCount": 35,
+      "positiveReviewCount": 30,
+      "comment": "2cm程度の段差であればスムーズに乗り越え可能。ただし、薄いマットや軽いラグは巻き込んでしまうことがあるため、アプリの進入禁止エリア機能を活用して対策しているユーザーが目立ちます。"
+    },
+    "maintenance": {
+      "score": 82,
+      "reviewCount": 45,
+      "positiveReviewCount": 38,
+      "comment": "ダストボックスの着脱が容易でゴミ捨ても簡単。水拭き後のモップ洗浄や給水は手動ですが、構造がシンプルなため清掃自体は苦にならないという評価が、実レビューの多数派を占めています。"
+    },
+    "appStability": {
+      "score": 80,
+      "reviewCount": 38,
+      "positiveReviewCount": 31,
+      "comment": "初期設定のWi-Fi接続で躓く声が見られますが、一度接続してしまえば安定稼働。マップの保存や進入禁止エリアの編集など、スマホからの操作感は非常に軽快で優秀なソフトウェア性能です。"
+    },
+    "batteryLife": {
+      "score": 88,
+      "reviewCount": 25,
+      "positiveReviewCount": 22,
+      "comment": "標準的な間取りであれば一度の充電で全室清掃可能。バッテリー残量が減ると自動で戻り、充電後に中断場所から再開する機能も正確。長時間稼働でも安定した吸引パワーを維持し続けます。"
+    }
+  },
+  "radarChartData": {
+    "labels": [
+      "床掃除",
+      "カーペット",
+      "ペット毛",
+      "静音性",
+      "段差",
+      "メンテ",
+      "アプリ",
+      "電池"
+    ],
+    "values": [
+      95,
+      88,
+      90,
+      92,
+      85,
+      82,
+      80,
+      88
+    ]
+  },
+  "dataQuality": {
+    "totalReviews": 60,
+    "sampledReviews": 60,
+    "adoptedReviews": 60,
+    "excludedReviews": 0,
+    "trustScore": 76,
+    "comment": "本文付き60件を分母に分析。低価格帯ながらマッピング精度への評価の一貫性が高い。reliabilityScore 76 および本 trustScore と整合。チャネル固有名は非記載（方針）。"
+  },
+  "reviewKeywords": {
+    "positive": [
+      {
+        "keyword": "LDS マッピング",
+        "count": 42
+      },
+      {
+        "keyword": "4000Pa コスパ",
+        "count": 38
+      },
+      {
+        "keyword": "静音",
+        "count": 35
+      },
+      {
+        "keyword": "Dreame アプリ",
+        "count": 30
+      },
+      {
+        "keyword": "水拭き エントリー",
+        "count": 28
+      }
+    ],
+    "negative": [
+      {
+        "keyword": "Wi-Fi 初期",
+        "count": 11
+      },
+      {
+        "keyword": "水タンク 給水",
+        "count": 7
+      },
+      {
+        "keyword": "ブラシ 毛絡み",
+        "count": 6
+      }
+    ]
+  },
+  "topComplaints": [
+    {
+      "complaint": "初期設定のWi-Fi接続が難しい",
+      "percentage": 18,
+      "reviewCount": 11,
+      "severity": "medium",
+      "solution": "ルーターの5GHz帯ではなく2.4GHz帯を選択。公式サイトのFAQにある接続ガイドに従い、アプリの権限を全て許可し直すことで解決。メーカーサポートでの個別案内も受けられます。"
+    },
+    {
+      "complaint": "水タンクの給排水頻度が高い",
+      "percentage": 12,
+      "reviewCount": 7,
+      "severity": "low",
+      "solution": "アプリの設定から水拭きの水量を「低」に調整することで稼働時間を延ばせます。広範囲を水拭きする場合は途中で補充が必要ですが、公式サイトのトラブルシューティングで最適設定を確認可能。"
+    },
+    {
+      "complaint": "メインブラシへの毛絡み",
+      "percentage": 10,
+      "reviewCount": 6,
+      "severity": "medium",
+      "solution": "週に一度の定期清掃を推奨。公式サイトの使い方ガイドに従い、ブラシ両端のキャップを外して絡まった毛を除去してください。別売りのゴム製メインブラシへの交換も長寿命化に有効です。"
+    }
+  ],
+  "attributeScores": {
+    "petOwner": {
+      "overall": 90,
+      "details": [
+        {
+          "field": "ペット毛吸引力",
+          "score": 92,
+          "reviewCount": 28,
+          "comment": "4000Paの強力な吸引力で、フローリングに落ちた抜け毛も一網打尽にできると高い評価を得ています。"
+        },
+        {
+          "field": "ブラシへの毛絡み対策",
+          "score": 82,
+          "reviewCount": 25,
+          "comment": "メインブラシの構造上、完全に絡まないわけではありませんが、付属のカッターで簡単に除去可能です。"
+        },
+        {
+          "field": "静音性（ペット反応）",
+          "score": 94,
+          "reviewCount": 22,
+          "comment": "動作音が非常に静かなため、臆病なペットがいる家庭でもストレスなく稼働させられるとの声が多いです。"
+        },
+        {
+          "field": "アレルゲン対策",
+          "score": 85,
+          "reviewCount": 18,
+          "comment": "高性能フィルターにより排気が綺麗で、ペットのフケや細かな埃を舞い上げにくい設計になっています。"
+        },
+        {
+          "field": "床面清掃能力",
+          "score": 95,
+          "reviewCount": 40,
+          "comment": "ペットが汚した足跡なども水拭き機能で綺麗に。1台2役の機能がこの価格で手に入る点は大きな魅力。"
+        },
+        {
+          "field": "メンテナンス頻度",
+          "score": 80,
+          "reviewCount": 35,
+          "comment": "毛が多い環境ではブラシチェックが週1回必要ですが、パーツの分解が容易で清掃自体は短時間で完了。"
+        },
+        {
+          "field": "ダストボックス容量",
+          "score": 88,
+          "reviewCount": 30,
+          "comment": "大型のダストボックスを搭載しており、多頭飼いの家庭でも頻繁にゴミを捨てる手間を軽減できます。"
+        },
+        {
+          "field": "コストパフォーマンス",
+          "score": 98,
+          "reviewCount": 56,
+          "comment": "ペット対策機として1.7万円台は破格。高額な専用機を買う前に試すエントリー機として最適です。"
+        }
+      ]
+    },
+    "apartment": {
+      "overall": 92,
+      "details": [
+        {
+          "field": "静音性（標準モード）",
+          "score": 93,
+          "reviewCount": 40,
+          "comment": "隣室への音漏れを気にせず使えるほど静か。集合住宅での夜間清掃もアプリのスケジュールで安心運用。"
+        },
+        {
+          "field": "設置スペースのコンパクトさ",
+          "score": 88,
+          "reviewCount": 35,
+          "comment": "ドックが小さく、ワンルームや狭い廊下でも場所を取らずに設置可能。部屋を圧迫しないサイズ感です。"
+        },
+        {
+          "field": "段差乗り越え",
+          "score": 85,
+          "reviewCount": 35,
+          "comment": "賃貸特有の低めの敷居であれば軽々と越えていきます。玄関の段差もセンサーが正確に検知して落下回避。"
+        },
+        {
+          "field": "狭い場所での動作",
+          "score": 90,
+          "reviewCount": 38,
+          "comment": "LDSセンサーにより家具の脚を正確に回避。入り組んだ配置の部屋でも迷子にならず効率的に清掃します。"
+        },
+        {
+          "field": "近隣への配慮",
+          "score": 95,
+          "reviewCount": 32,
+          "comment": "壁に強く激突することが少ないため、衝撃音による騒音トラブルの心配が少なく安心して使用できます。"
+        },
+        {
+          "field": "アプリの進入禁止設定",
+          "score": 92,
+          "reviewCount": 30,
+          "comment": "進入禁止エリアをアプリ上でミリ単位で設定可能。壊れやすい家具や配線周りを簡単に守ることができます。"
+        },
+        {
+          "field": "水拭き後の床の乾き",
+          "score": 86,
+          "reviewCount": 20,
+          "comment": "水量の調整が可能で、床がベタつかずすぐに乾きます。賃貸のフローリング材を傷める心配もありません。"
+        },
+        {
+          "field": "価格満足度",
+          "score": 98,
+          "reviewCount": 60,
+          "comment": "1.7万円台でこの静音性と性能は、一人暮らしやアパート住まいのユーザーにとって最高の選択肢。"
+        }
+      ]
+    },
+    "workingProfessional": {
+      "overall": 82,
+      "details": [
+        {
+          "field": "スケジュール機能",
+          "score": 95,
+          "reviewCount": 45,
+          "comment": "アプリから曜日・時間ごとに細かく設定可能。外出中に自動で清掃を終わらせる運用が極めて快適です。"
+        },
+        {
+          "field": "リモート操作",
+          "score": 92,
+          "reviewCount": 35,
+          "comment": "会社からアプリで掃除の進捗を確認したり、急な来客前にスポット清掃を命じたりする操作も確実。"
+        },
+        {
+          "field": "メンテナンス頻度",
+          "score": 75,
+          "reviewCount": 45,
+          "comment": "ゴミ捨てとモップ洗いの手動作業は発生しますが、シンプルな構造ゆえにトラブル自体は少ないです。"
+        },
+        {
+          "field": "時短効果",
+          "score": 96,
+          "reviewCount": 56,
+          "comment": "自分でする掃除が週1回の念入り掃除だけで済むようになり、平日の自分時間を大幅に増やせます。"
+        },
+        {
+          "field": "初期設定の簡単さ",
+          "score": 70,
+          "reviewCount": 38,
+          "comment": "2.4GHz帯のWi-Fi設定が必要な点に注意。マニュアル通りに進めれば10分程度でセットアップ完了。"
+        },
+        {
+          "field": "外出中の安心感",
+          "score": 90,
+          "reviewCount": 28,
+          "comment": "どこを掃除したかリアルタイムでマップ更新されるため、外出先からでも正常動作を確認でき安心。"
+        },
+        {
+          "field": "アプリの使いやすさ",
+          "score": 88,
+          "reviewCount": 38,
+          "comment": "UIが分かりやすく、ロボット掃除機初心者でも直感的に設定を変更できる優れたアプリデザインです。"
+        },
+        {
+          "field": "稼働音の静かさ",
+          "score": 93,
+          "reviewCount": 40,
+          "comment": "在宅勤務中でも気にならない静音設計。会議中であっても標準モードなら邪魔にならないレベルです。"
+        }
+      ]
+    },
+    "familyHome": {
+      "overall": 91,
+      "details": [
+        {
+          "field": "広範囲対応",
+          "score": 92,
+          "reviewCount": 35,
+          "comment": "LDSレーザーで複数の部屋を一つのマップに統合。広いリビングから子供部屋まで効率よく巡回します。"
+        },
+        {
+          "field": "複数部屋対応",
+          "score": 94,
+          "reviewCount": 30,
+          "comment": "ドアが開いていれば隣の部屋へも正確に移動。マップ上で部屋ごとの清掃順序も細かく指定できます。"
+        },
+        {
+          "field": "子供の食べこぼし対応",
+          "score": 88,
+          "reviewCount": 40,
+          "comment": "4000Paの吸引力でパン屑や砂場帰りの砂もしっかり吸引。水拭きを併用すれば床のベタつきも解消。"
+        },
+        {
+          "field": "家族全員の使いやすさ",
+          "score": 85,
+          "reviewCount": 25,
+          "comment": "本体ボタン一つのシンプル操作で高齢者でも始動可能。アレクサ連携で声による操作も非常に便利です。"
+        },
+        {
+          "field": "子供の安全性",
+          "score": 90,
+          "reviewCount": 28,
+          "comment": "障害物を検知して減速するため、子供の脱ぎ捨てたおもちゃや家具への衝撃を抑えつつ清掃します。"
+        },
+        {
+          "field": "バッテリー持続時間",
+          "score": 92,
+          "reviewCount": 25,
+          "comment": "一戸建ての広さでも十分対応。途中でバッテリーが切れても、充電後に自動再開する機能が頼もしい。"
+        },
+        {
+          "field": "ランニングコスト",
+          "score": 95,
+          "reviewCount": 35,
+          "comment": "消耗品が他社より安く設定されており、家族の多い家庭で頻繁に使用しても維持費を低く抑えられます。"
+        },
+        {
+          "field": "総合コストパフォーマンス",
+          "score": 98,
+          "reviewCount": 60,
+          "comment": "1.7万円台で家族全員を満足させる性能。家計に優しく家事の負担を確実に減らせる名機と言えます。"
+        }
+      ]
+    }
+  },
+  "keywords": [
+    "Dreame D9 Max Gen 2",
+    "Dreame",
+    "ロボット掃除機",
+    "D9",
+    "LDS",
+    "4000Pa"
+  ],
+  "cta": {
+    "amazon": "https://www.amazon.co.jp/s?k=Dreame+D9+Max+Gen+2",
+    "rakuten": "https://search.rakuten.co.jp/search/mall/Dreame+D9+Max+Gen+2/",
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=Dreame+D9+Max+Gen+2"
+  }
+}

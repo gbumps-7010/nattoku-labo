@@ -1,0 +1,461 @@
+{
+  "productId": "deebot-x11-omnicyclone",
+  "productName": "DEEBOT X11 OmniCyclone",
+  "manufacturer": "ECOVACS",
+  "modelNumber": "X11 OmniCyclone",
+  "imageUrl": "",
+  "overallRating": 4.5,
+  "totalReviews": 154,
+  "price": 229900,
+  "reliabilityScore": 87,
+  "asin": "",
+  "metaTitle": "DEEBOT X11 OmniCyclone 詳細分析 | 12,800Pa級と全自動ステーション",
+  "metaDescription": "DEEBOT X11 OmniCycloneの154件の口コミを解析。12,800Paに加圧回転水拭き、ZeroTangle、全自動メンテの傾向と、ステーション大型化・Wi-Fi設定の注意点を整理。",
+  "categoryC": {
+    "userSatisfaction": {
+      "score": 96,
+      "reviewCount": 154,
+      "comment": "加圧回転モップと強吸引力による床の仕上がり、およびゴミ収集・モップ洗浄までの自動化への満足が中心で、高価格帯でも納得感が高い傾向です。"
+    },
+    "repurchaseIntention": {
+      "percentage": 90,
+      "reviewCount": 140,
+      "comment": "ECOVACSの最上位ラインとして、次回も同ブランド・同シリーズを検討する声が多く、機能の過不足が少ない完成度として評価されています。"
+    },
+    "failureRate": {
+      "percentage": 3,
+      "reviewCount": 154,
+      "breakdown": {
+        "hardware": 1,
+        "software": 1,
+        "environmental": 1
+      },
+      "comment": "初期不良は限定的。Wi-Fi接続やアプリ連携で手間取る事例、設置スペースの制約に関する報告が相対的に目立ちます。"
+    }
+  },
+  "reliability": {
+    "score": 87,
+    "dataAdequacy": {
+      "score": 94,
+      "weight": 60,
+      "description": "提供スクリーンショット上で本文付きレビューを点呼し、重複除き154件を分母にした。100件超のサンプルで統計的信頼性は高水準と判断。"
+    },
+    "consistency": {
+      "percentage": 88,
+      "weight": 30,
+      "description": "各チャネルで清掃性能・メンテ自動化への評価がおおむね一致しており、製品の強みが横断的に読み取れます。"
+    },
+    "freshness": {
+      "score": 92,
+      "weight": 10,
+      "description": "現行モデル・直近の運用レビューが中心で、実使用に即した傾向が反映されています。"
+    }
+  },
+  "updateInfo": {
+    "lastUpdated": "2026-04-18",
+    "note": "時短（年175h目安）・年間運用コスト（14200円目安）を取り込み。消耗品内訳は目安。チャネル固有名は非記載方針で統一。"
+  },
+  "timeSaving": {
+    "dailyMinutes": 29,
+    "monthlyHours": 14.6,
+    "annualHours": 175,
+    "workDaysEquivalent": 21.9,
+    "methodology": "年間約175時間の自由時間を創出する目安。掃除機がけと加圧水拭き、さらにモップ洗浄・乾燥まで自動化し、床掃除の手作業負担を圧縮。間取り・稼働頻度で変動します。"
+  },
+  "operationalCost": {
+    "daily": 39,
+    "dailyNote": "専用ダストバッグ、回転モップ予備、専用洗浄液の交換費用および電気代の合計を含む、全自動メンテを維持する標準的な年間目安。内訳は表の消耗品＋上記。実価格は公式・店舗で変動。",
+    "monthly": 1183,
+    "annual": 14200,
+    "consumables": [
+      {
+        "item": "専用ダストバッグ",
+        "replacementFrequency": "2ヶ月ごと",
+        "unitCost": 1000,
+        "annualCost": 6000
+      },
+      {
+        "item": "専用洗浄液",
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 800,
+        "annualCost": 3200
+      },
+      {
+        "item": "回転モップ予備・その他",
+        "replacementFrequency": "1年ごと",
+        "unitCost": 5000,
+        "annualCost": 5000
+      }
+    ]
+  },
+  "performanceAnalysis": {
+    "floorCleaning": {
+      "score": 98,
+      "reviewCount": 142,
+      "positiveReviewCount": 140,
+      "comment": "142件中140件が高評価。12,800Paの圧倒的な吸引力と加圧回転式モップにより、フローリングの微細な塵や皮脂汚れも一度の走行で完璧に除去。最高峰の清掃能力であると多くのユーザーが証言している。"
+    },
+    "carpetCleaning": {
+      "score": 94,
+      "reviewCount": 92,
+      "positiveReviewCount": 86,
+      "comment": "カーペットを検知した際の自動吸引力アップとモップのリフトアップ機能が秀逸。毛足の長いラグでもスタックせず、奥のゴミまで強力に掻き出す性能が92件のレビューで高く評価されている。"
+    },
+    "petHairRemoval": {
+      "score": 96,
+      "reviewCount": 78,
+      "positiveReviewCount": 75,
+      "comment": "ZeroTangleブラシによりペットの毛が驚くほど絡まない。78件のオーナーレビューで「ブラシ掃除の手間が激減した」と絶賛され、アレルゲン対策としての密閉性の高さも評価されている。"
+    },
+    "quietness": {
+      "score": 88,
+      "reviewCount": 110,
+      "positiveReviewCount": 98,
+      "comment": "吸引力の強さに対して動作音は非常に静か。夜間稼働でも気にならないレベル。自動収集時は相応の音が発生するため、アプリでの稼働時間設定を推奨する声が110件中多く見られた。"
+    },
+    "stepClimbing": {
+      "score": 92,
+      "reviewCount": 85,
+      "positiveReviewCount": 80,
+      "comment": "2.4cmの段差乗り越え能力により、一般的な敷居や厚手のジョイントマットも軽快に走破。85件の走行報告において、センサーによる落下防止精度も極めて高いとポジティブに評されている。"
+    },
+    "maintenance": {
+      "score": 97,
+      "reviewCount": 135,
+      "positiveReviewCount": 130,
+      "comment": "モップの自動洗浄・温風乾燥、自動ゴミ収集まで完結。135件のレビューが、数週間に一度ゴミを捨てるだけの「真のメンテナンスフリー」が実現されていることを統計的なデータとして証言している。"
+    },
+    "appStability": {
+      "score": 90,
+      "reviewCount": 118,
+      "positiveReviewCount": 105,
+      "comment": "マッピング精度が極めて高く家具配置を正確に認識。118件の言及中、アプリ操作は直感的との声が多いが、初期のWi-Fi接続時のみ設定のコツを要するとの指摘が一部ユーザーから見られる。"
+    },
+    "batteryLife": {
+      "score": 94,
+      "reviewCount": 88,
+      "positiveReviewCount": 84,
+      "comment": "大容量バッテリーにより、一軒家の全フロアを一度の充電で余裕を持って清掃可能。88件のレビューで、途中で充電に戻ることなく全域をカバーできるスタミナがフラッグシップ機として高く評価された。"
+    }
+  },
+  "radarChartData": {
+    "labels": [
+      "床掃除",
+      "カーペット",
+      "ペット毛",
+      "静音性",
+      "段差",
+      "メンテ",
+      "アプリ",
+      "電池"
+    ],
+    "values": [
+      98,
+      94,
+      96,
+      88,
+      92,
+      97,
+      90,
+      94
+    ]
+  },
+  "dataQuality": {
+    "totalReviews": 154,
+    "sampledReviews": 154,
+    "adoptedReviews": 154,
+    "excludedReviews": 0,
+    "trustScore": 87,
+    "comment": "本文付きレビューを点呼し、重複除き154件を分母とした。100件超のサンプルで信頼性は高水準。分析上の信頼度（reliabilityScore／本 trustScore）87と整合。チャネル固有名は記載しない（プロジェクト方針）。"
+  },
+  "reviewKeywords": {
+    "positive": [
+      {
+        "keyword": "清掃力・吸引力",
+        "count": 95
+      },
+      {
+        "keyword": "モップ洗浄・乾燥",
+        "count": 88
+      },
+      {
+        "keyword": "ZeroTangle／ペット毛",
+        "count": 72
+      },
+      {
+        "keyword": "マッピング精度",
+        "count": 68
+      },
+      {
+        "keyword": "全自動ステーション",
+        "count": 65
+      }
+    ],
+    "negative": [
+      {
+        "keyword": "ステーションが大きい",
+        "count": 38
+      },
+      {
+        "keyword": "Wi-Fi初期設定",
+        "count": 23
+      },
+      {
+        "keyword": "価格が高い",
+        "count": 28
+      },
+      {
+        "keyword": "収集音",
+        "count": 42
+      },
+      {
+        "keyword": "設置スペース",
+        "count": 35
+      }
+    ]
+  },
+  "topComplaints": [
+    {
+      "complaint": "全自動ステーションのサイズが大きく場所を取る",
+      "percentage": 25,
+      "reviewCount": 38,
+      "severity": "medium",
+      "solution": "ステーションは幅34cm×奥行56cm以上の空間を推奨。壁から左右0.5m離すと本体の出入りがスムーズになる。詳細は公式サイトの設置ガイドやサポートFAQを参照し、推奨される配置環境を事前に確認してください。"
+    },
+    {
+      "complaint": "初期設定やアプリとのWi-Fi接続に手間取ることがある",
+      "percentage": 15,
+      "reviewCount": 23,
+      "severity": "medium",
+      "solution": "2.4GHz帯のWi-Fiを使用し、アプリの権限許可を再確認。ECOVACS公式サイトのサポートページにて接続トラブル解決ガイドが掲載中。公式動画でもペアリング手順が詳しく解説されているため参照を推奨します。"
+    }
+  ],
+  "attributeScores": {
+    "petOwner": {
+      "overall": 97,
+      "details": [
+        {
+          "field": "ペット毛吸引力",
+          "score": 98,
+          "reviewCount": 78,
+          "comment": "圧倒的なパワーで換毛期の抜け毛も一本残らず吸い上げる。フローリングの溝に入った毛にも非常に強い性能を発揮。"
+        },
+        {
+          "field": "ブラシへの毛絡み対策",
+          "score": 96,
+          "reviewCount": 72,
+          "comment": "ZeroTangleブラシの採用により、ブラシに毛が巻き付くストレスから解放。手入れの頻度が劇的に改善されている。"
+        },
+        {
+          "field": "静音性（ペット反応）",
+          "score": 90,
+          "reviewCount": 65,
+          "comment": "動作音が静かなため臆病なペットが怖がらず、清掃中もリラックスしている。夜間の稼働も全く問題ないレベルだ。"
+        },
+        {
+          "field": "アレルゲン対策",
+          "score": 97,
+          "reviewCount": 58,
+          "comment": "密閉型ダストバッグとHEPAフィルターにより排気が極めてクリーン。花粉症やアレルギー持ちには最適の選択肢。"
+        },
+        {
+          "field": "床面清掃能力",
+          "score": 98,
+          "reviewCount": 75,
+          "comment": "ペットのよだれや足跡の汚れも加圧回転水拭きで跡形もなく綺麗にする。床のサラサラ感が非常に心地よいと評判。"
+        },
+        {
+          "field": "メンテナンス頻度",
+          "score": 97,
+          "reviewCount": 70,
+          "comment": "自動収集と自動洗浄のおかげで飼い主が手を出す機会がほとんどない。家事の時短効果は計り知れない価値がある。"
+        },
+        {
+          "field": "ダストボックス容量",
+          "score": 94,
+          "reviewCount": 64,
+          "comment": "ステーション内のバッグは大容量で多頭飼いでも約2ヶ月は交換不要。ランニングコストも納得の範囲内に収まる。"
+        },
+        {
+          "field": "コストパフォーマンス",
+          "score": 92,
+          "reviewCount": 85,
+          "comment": "本体価格は高いが、ペットとの生活環境の向上と自由時間の創出を考えれば十分に投資価値がある最高級機といえる。"
+        }
+      ]
+    },
+    "apartment": {
+      "overall": 92,
+      "details": [
+        {
+          "field": "静音性（標準モード）",
+          "score": 94,
+          "reviewCount": 110,
+          "comment": "マンションの隣室や階下を気にせず使える静かさ。標準モードなら夜間でも掃除を任せられる高い品質を保持している。"
+        },
+        {
+          "field": "静音性（ゴミ収集）",
+          "score": 72,
+          "reviewCount": 105,
+          "comment": "収集時の音は一瞬だが大きいため、集合住宅では夜間の自動収集をオフに設定する配慮があるとより安心して運用可能。"
+        },
+        {
+          "field": "コンパクト設計",
+          "score": 70,
+          "reviewCount": 98,
+          "comment": "本体は標準的だが全自動ステーションのサイズが大きく場所を取る。事前に設置場所の寸法確認が必須となる点に注意。"
+        },
+        {
+          "field": "段差乗り越え",
+          "score": 95,
+          "reviewCount": 85,
+          "comment": "マンション特有の低い敷居やリビングに敷いたラグの段差も全く止まらずスムーズに走破してくれる頼もしい設計。"
+        },
+        {
+          "field": "狭い場所での動作",
+          "score": 92,
+          "reviewCount": 92,
+          "comment": "最新センサーが椅子の脚などの障害物をミリ単位で認識し、複雑な間取りでもぶつからずに効率よく動く賢さがある。"
+        },
+        {
+          "field": "近隣への配慮",
+          "score": 90,
+          "reviewCount": 82,
+          "comment": "壁や家具への当たりが非常にソフトで衝撃音が発生しにくい。集合住宅での運用に適した安心感のある設計といえる。"
+        },
+        {
+          "field": "設置スペース",
+          "score": 68,
+          "reviewCount": 90,
+          "comment": "都心のマンションではステーションの置き場所に苦労する場合がある。通路を塞がない場所の確保が運用の鍵となる。"
+        },
+        {
+          "field": "価格帯",
+          "score": 82,
+          "reviewCount": 120,
+          "comment": "最高級機のため価格は張るが、これ一台で床掃除のすべてが完結する利便性は価格以上の価値があるとユーザーが支持。"
+        }
+      ]
+    },
+    "workingProfessional": {
+      "overall": 94,
+      "details": [
+        {
+          "field": "自動化レベル",
+          "score": 98,
+          "reviewCount": 135,
+          "comment": "ゴミ捨て、モップ洗浄、乾燥まですべて自動。人間がすることは数週間に一度の給排水のみで済む完成度の高さが魅力。"
+        },
+        {
+          "field": "スケジュール機能",
+          "score": 97,
+          "reviewCount": 120,
+          "comment": "出勤中に清掃を完了させる詳細な予約が可能。帰宅した瞬間に完璧に綺麗な床が出迎えてくれる快感は代えがたい。"
+        },
+        {
+          "field": "リモート操作",
+          "score": 95,
+          "reviewCount": 105,
+          "comment": "外出先からアプリで状況を確認したり、急な来客前に清掃を開始させたりと、多忙な層にとって機動性が非常に高い。"
+        },
+        {
+          "field": "メンテナンス頻度",
+          "score": 98,
+          "reviewCount": 130,
+          "comment": "日々の手入れから解放されるため、忙しい共働き世帯の貴重な週末を掃除に費やす必要がなくなるのは大きなメリット。"
+        },
+        {
+          "field": "時短効果",
+          "score": 98,
+          "reviewCount": 154,
+          "comment": "掃除機がけと床拭きの両方を任せられるため週に数時間の自由時間を生み出せる。多忙な方にとって究極の時短家電。"
+        },
+        {
+          "field": "初期設定の簡単さ",
+          "score": 85,
+          "reviewCount": 115,
+          "comment": "日本語ガイドは丁寧だが、Wi-Fi接続で手間取ることがある。設定さえ終われば後は全自動で快適な生活が待っている。"
+        },
+        {
+          "field": "外出中の安心感",
+          "score": 96,
+          "reviewCount": 98,
+          "comment": "高度な回避性能でコードに絡まって止まることがほとんどない。エラー停止の少なさは業界随一の信頼性を誇っている。"
+        },
+        {
+          "field": "アプリの使いやすさ",
+          "score": 92,
+          "reviewCount": 122,
+          "comment": "多機能だがメニューが整理されており使いやすい。清掃履歴や消耗品の交換時期もアプリで一目で把握可能で便利。"
+        }
+      ]
+    },
+    "familyHome": {
+      "overall": 96,
+      "details": [
+        {
+          "field": "広範囲対応",
+          "score": 98,
+          "reviewCount": 118,
+          "comment": "一軒家の広いリビングや複数の個室を一度の走行で網羅。途中で迷子になることもなく確実に清掃を完遂するパワー。"
+        },
+        {
+          "field": "複数部屋対応",
+          "score": 97,
+          "reviewCount": 110,
+          "comment": "最新のマッピング技術で各部屋の形状を把握。部屋ごとの汚れ具合に応じた清掃設定も細かく行える点が家族に好評。"
+        },
+        {
+          "field": "子供の食べこぼし対応",
+          "score": 96,
+          "reviewCount": 102,
+          "comment": "食事後のダイニング下のベタつき汚れも強力な回転モップでスッキリ拭き取る。常に床の清潔を維持可能になった。"
+        },
+        {
+          "field": "家族全員の使いやすさ",
+          "score": 90,
+          "reviewCount": 88,
+          "comment": "本体ボタンや音声アシスタントでの操作も可能なため、機械に詳しくない家族でも簡単に扱える点が非常に良い。"
+        },
+        {
+          "field": "子供の安全性",
+          "score": 94,
+          "reviewCount": 82,
+          "comment": "おもちゃなどの障害物を高精度で回避し、衝突を未然に防ぐ。チャイルドロック機能も備えており、幼い子がいても安心。"
+        },
+        {
+          "field": "バッテリー持続時間",
+          "score": 95,
+          "reviewCount": 105,
+          "comment": "一回の稼働で家中を掃除しきるスタミナがある。バッテリー切れで戻れないといったトラブルも皆無で安定している。"
+        },
+        {
+          "field": "ランニングコスト",
+          "score": 85,
+          "reviewCount": 95,
+          "comment": "紙パック等の消耗品費用はかかるが、清掃にかける労力と時間の削減を考えれば妥当なコストであると納得感あり。"
+        },
+        {
+          "field": "総合コストパフォーマンス",
+          "score": 92,
+          "reviewCount": 135,
+          "comment": "高価ではあるが、家庭内の衛生レベルを最高水準に保ち続けるための投資として、ユーザーの満足度は極めて高い。"
+        }
+      ]
+    }
+  },
+  "keywords": [
+    "DEEBOT X11 OmniCyclone",
+    "ECOVACS",
+    "12,800Pa",
+    "ZeroTangle",
+    "全自動ステーション",
+    "ロボット掃除機"
+  ],
+  "cta": {
+    "amazon": "https://www.amazon.co.jp/s?k=DEEBOT+X11+OmniCyclone",
+    "rakuten": "https://search.rakuten.co.jp/search/mall/DEEBOT+X11+OmniCyclone/",
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=DEEBOT+X11+OmniCyclone"
+  },
+  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-deebot-x11-omnicyclone.html"
+}

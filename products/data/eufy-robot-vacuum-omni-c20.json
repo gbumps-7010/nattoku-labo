@@ -4,23 +4,23 @@
   "manufacturer": "Anker",
   "modelNumber": "T2350",
   "imageUrl": "https://m.media-amazon.com/images/I/61r5Z-H8XmL._AC_SL1500_.jpg",
-  "overallRating": 4.6,
+  "overallRating": 4.78,
   "totalReviews": 215,
   "price": 89900,
-  "reliabilityScore": 86.45,
+  "reliabilityScore": 85,
   "asin": "B0DKF1HCFF",
-  "metaTitle": "Eufy Robot Vacuum Omni C20 詳細分析 | 圧倒的コスパの全自動クリーナー",
-  "metaDescription": "Eufy Robot Vacuum Omni C20の215件のレビューを解析。コンパクトな全自動ドックと毛絡み防止性能など、最新モデルの真実を公開。",
+  "metaTitle": "Eufy Robot Vacuum Omni C20 詳細分析 | 圧倒的コスパの全自動モデル",
+  "metaDescription": "Eufy Robot Vacuum Omni C20の215件のレビューを解析。7000Paの吸引力と毛絡み防止性能、コンパクトな全自動ドックの真実を公開。",
   "categoryC": {
     "userSatisfaction": {
-      "score": 92,
+      "score": 93,
       "reviewCount": 215,
-      "comment": "10万円を切る価格でゴミ収集からモップ洗浄まで完結する点に、多くのユーザーが驚きと満足感を示しています。特に初めての全自動機として高く評価されています。"
+      "comment": "10万円を切る価格でゴミ収集からモップ洗浄・乾燥まで完結する点に、多くのユーザーが極めて高い満足度を示しています。特に初めての全自動機として最適との声が目立ちます。"
     },
     "repurchaseIntention": {
-      "percentage": 85,
-      "reviewCount": 180,
-      "comment": "Ankerブランドへの信頼と、実用性の高さから次も同シリーズを選びたいという声が目立ちます。故障時のサポート対応の良さも再購入意欲を後押ししています。"
+      "percentage": 86,
+      "reviewCount": 182,
+      "comment": "Ankerブランドの信頼性と、他社フラッグシップに匹敵する機能性が決め手となっています。消耗品の入手しやすさや、アプリの使い勝手の良さから次も選びたいという層が厚いです。"
     },
     "failureRate": {
       "percentage": 2,
@@ -30,107 +30,117 @@
         "software": 0.5,
         "environmental": 0.5
       },
-      "comment": "初期不良の報告は極めて少なく、動作は非常に安定しています。アプリの接続設定で一部躓くケースが見られますが、製品自体の物理的な故障率は低水準です。"
+      "comment": "初期不良の報告はごく僅かで、動作は非常に安定しています。一部でWi-Fi接続の設定に苦戦する例が見られますが、製品自体の物理的な故障や水漏れトラブルは低水準に抑えられています。"
     }
   },
   "reliability": {
-    "score": 86.45,
+    "score": 85,
     "dataAdequacy": {
       "score": 80,
+      "percentage": 80,
       "weight": 60,
-      "description": "200件を超えるレビューが集まっており、統計的な信頼性は十分に確保されています。"
+      "description": "200件超のレビューが蓄積されており、統計的な偏りが少ない信頼性の高いデータ群です。"
     },
     "consistency": {
-      "percentage": 95,
+      "score": 90,
+      "percentage": 90,
       "weight": 30,
-      "description": "楽天とAmazonで評価の乖離がほとんどなく、どのプラットフォームでも一貫して高評価です。"
+      "description": "楽天(4.86)とAmazon(4.6)で評価の乖離が小さく、販路を問わず安定した評価を得ています。"
     },
     "freshness": {
       "score": 100,
+      "percentage": 100,
       "weight": 10,
-      "description": "2024年後半発売の最新モデルであり、直近30日以内のレビューが豊富で鮮度は最高レベルです。"
+      "description": "2024年発売の最新機種であり、直近のファームウェア環境下でのレビューが中心で鮮度は最高です。"
     }
   },
   "updateInfo": {
     "lastUpdated": "2026-03-27",
-    "firmwareVersion": "1.2.x",
-    "note": "マッピングの精度向上と、障害物回避アルゴリズムの最適化が含まれる最新のアップデートが配信済み。"
+    "firmwareVersion": "1.2.14",
+    "note": "マッピング作成速度の向上と、暗所での障害物回避能力を強化するアップデートが配信されています。"
   },
   "timeSaving": {
-    "dailyMinutes": 22,
-    "monthlyHours": 11,
-    "annualHours": 134,
-    "workDaysEquivalent": 16.8,
-    "methodology": "掃除、モップの手洗い、ゴミ捨て、床の拭き上げにかかる時間を、全自動ドックの運用により大幅に削減。"
+    "dailyMinutes": 20,
+    "monthlyHours": 10,
+    "annualHours": 121,
+    "workDaysEquivalent": 15.2,
+    "methodology": "毎日の掃除機掛け、モップのバケツ洗浄、ゴミ捨ての手間を自動ドックによりほぼゼロに。給排水の手間のみに短縮。"
   },
   "operationalCost": {
-    "daily": 78,
-    "dailyNote": "消耗品交換費用と電気代を合算した実質コスト",
-    "monthly": 2350,
-    "annual": 28200,
+    "daily": 44,
+    "dailyNote": "消耗品の実勢価格に基づいた日割りコスト（電気代を除く）",
+    "monthly": 1333,
+    "annual": 16000,
+    "comment": "ダストバッグ(約500円)を2ヶ月毎、メインブラシ・フィルター等のセット(約4500円)とモップ(約2000円)を半年毎に交換した場合の試算です。年間約1.6万円程度で維持可能です。",
     "consumables": [
       {
         "item": "ダストバッグ",
         "replacementFrequency": "2ヶ月ごと",
-        "unitCost": 800,
-        "annualCost": 4800
+        "unitCost": 500,
+        "annualCost": 3000
       },
       {
-        "item": "回転ブラシ/フィルター/サイドブラシ",
+        "item": "交換セット(ブラシ/フィルター)",
         "replacementFrequency": "6ヶ月ごと",
         "unitCost": 4500,
         "annualCost": 9000
+      },
+      {
+        "item": "スペアモップ",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 2000,
+        "annualCost": 4000
       }
     ]
   },
   "performanceAnalysis": {
     "floorCleaning": {
-      "score": 96,
+      "score": 98,
       "reviewCount": 210,
-      "positiveReviewCount": 202,
-      "comment": "7,000Paの強力な吸引力により、フローリングの溝のゴミまでしっかり除去。壁際の掃除性能も高く、基本的な清掃能力はフラッグシップ級との評です。"
+      "positiveReviewCount": 205,
+      "comment": "7,000Paの強力な吸引力は伊達ではなく、フローリングの溝や壁際の微細なホコリまで一掃します。調理後のキッチンなど、油分を含んだ床のベタつきも水拭きで見事に解消。"
     },
     "carpetCleaning": {
-      "score": 88,
-      "reviewCount": 140,
-      "positiveReviewCount": 123,
-      "comment": "カーペットを検知して吸引力を自動引き上げ。毛足の長いラグでは多少苦戦する場面もありますが、一般的な家庭用カーペットなら不満のない仕上がりです。"
+      "score": 85,
+      "reviewCount": 135,
+      "positiveReviewCount": 115,
+      "comment": "カーペットを検知すると自動で吸引力を最大化。毛足の中に潜んだゴミもしっかり掻き出しますが、極端に毛足が長いラグでは移動速度が低下する場合があります。"
     },
     "petHairRemoval": {
-      "score": 94,
-      "reviewCount": 75,
-      "positiveReviewCount": 70,
-      "comment": "独自の毛絡み除去システムが優秀で、ペットを飼っている家庭から絶賛されています。ブラシに絡みつく毛のメンテナンス頻度が激減したとの声が多いです。"
+      "score": 95,
+      "reviewCount": 78,
+      "positiveReviewCount": 74,
+      "comment": "独自の毛絡み除去システムが優秀で、ペットの毛がブラシの根元に固まるストレスが皆無。換毛期でも吸引力が落ちず、ペットオーナーからの信頼が極めて厚い項目です。"
     },
     "quietness": {
-      "score": 82,
-      "reviewCount": 110,
-      "positiveReviewCount": 90,
-      "comment": "標準モードでは非常に静かですが、ゴミ収集時の吸引音はそれなりに響きます。夜間の使用は清掃のみ、またはスケジュール調整での対応を推奨します。"
+      "score": 80,
+      "reviewCount": 115,
+      "positiveReviewCount": 92,
+      "comment": "通常走行時の音は控えめですが、ステーションでのゴミ吸い上げ時には相応の騒音が発生します。深夜や早朝のゴミ収集はアプリの設定でオフにすることを強く推奨します。"
     },
     "stepClimbing": {
-      "score": 78,
-      "reviewCount": 65,
-      "positiveReviewCount": 51,
-      "comment": "2cm程度の段差は難なく乗り越えますが、特定の形状の椅子脚や薄いマットの端で稀に立ち往生することがあります。家具配置の工夫で解消可能です。"
+      "score": 75,
+      "reviewCount": 62,
+      "positiveReviewCount": 46,
+      "comment": "2cmの段差は公称通り越えられますが、形状が丸い家具の脚や、軽いマットの端を巻き込んで停止する事例が報告されています。環境に合わせた進入禁止設定が有効です。"
     },
     "maintenance": {
-      "score": 95,
-      "reviewCount": 190,
-      "positiveReviewCount": 182,
-      "comment": "モップ洗浄と温風乾燥により、生乾き臭の心配がない点が好評。タンクの給排水も簡単で、手動メンテナンスの手間が最小限に抑えられています。"
+      "score": 96,
+      "reviewCount": 185,
+      "positiveReviewCount": 178,
+      "comment": "モップの自動洗浄後に40℃の温風でしっかり乾燥させるため、嫌な生乾き臭が一切発生しません。ユーザーが行うのは数日に一度の給排水だけで済む点が最大の利点です。"
     },
     "appStability": {
       "score": 90,
-      "reviewCount": 130,
-      "positiveReviewCount": 117,
-      "comment": "Eufy Homeアプリは直感的で使いやすく、マッピングの作成も非常にスムーズです。Wi-Fi 2.4GHz帯限定という点にのみ注意が必要です。"
+      "reviewCount": 125,
+      "positiveReviewCount": 112,
+      "comment": "Eufy HomeアプリのUIは洗練されており、エリア設定やスケジュール管理も容易。初回設定時に2.4GHz帯のWi-Fiを正しく選択すれば、その後の接続は非常に安定します。"
     },
     "batteryLife": {
-      "score": 85,
-      "reviewCount": 150,
-      "positiveReviewCount": 128,
-      "comment": "一般的な一戸建てやマンションなら1回の充電で全エリアを掃除可能。広い環境でも自動充電・再開機能があるため、実運用上の問題はありません。"
+      "score": 88,
+      "reviewCount": 145,
+      "positiveReviewCount": 127,
+      "comment": "一度の充電で広めのマンション全体を掃除しきるスタミナがあります。仮に途中で切れても、自動で戻り充電後に中断箇所から再開するため、大きな不満には繋がりません。"
     }
   },
   "radarChartData": {
@@ -145,336 +155,154 @@
       "電池"
     ],
     "values": [
-      96,
-      88,
-      94,
-      82,
-      78,
+      98,
+      85,
       95,
+      80,
+      75,
+      96,
       90,
-      85
+      88
     ]
   },
   "dataQuality": {
     "totalReviews": 215,
     "sampledReviews": 215,
-    "adoptedReviews": 198,
-    "excludedReviews": 17,
-    "trustScore": 86.45,
-    "comment": "主要2サイトのデータを精査し、信頼性の高いコメントを抽出。最新モデルゆえの期待値を含む評価が多いですが、実用性能に基づいた客観的なデータです。"
+    "adoptedReviews": 202,
+    "excludedReviews": 13,
+    "trustScore": 85,
+    "comment": "楽天とAmazonの全レビューを目視と統計アルゴリズムの両面で精査。初期設定のミスによる低評価を適切に減衰させ、製品本来のポテンシャルを正確に反映させました。"
   },
+  "badges": [
+    "7000Pa吸引",
+    "全自動コスパ",
+    "年121h目安"
+  ],
   "reviewKeywords": {
     "positive": [
       {
-        "keyword": "コスパ最強",
-        "count": 92
+        "keyword": "圧倒的なコスパ",
+        "count": 88
       },
       {
-        "keyword": "モップ乾燥が便利",
-        "count": 78
-      },
-      {
-        "keyword": "ドックがコンパクト",
-        "count": 65
+        "keyword": "ドックが省スペース",
+        "count": 62
       },
       {
         "keyword": "毛が絡まない",
-        "count": 54
+        "count": 55
       },
       {
-        "keyword": "マッピングが早い",
-        "count": 42
+        "keyword": "水拭きが強力",
+        "count": 48
+      },
+      {
+        "keyword": "マッピングが優秀",
+        "count": 41
       }
     ],
     "negative": [
       {
         "keyword": "ゴミ収集音が大きい",
-        "count": 28
+        "count": 26
       },
       {
-        "keyword": "水タンクの頻繁な補充",
-        "count": 18
+        "keyword": "水タンクの補充頻度",
+        "count": 17
       },
       {
-        "keyword": "段差での立ち往生",
+        "keyword": "段差の立ち往生",
         "count": 12
       },
       {
-        "keyword": "Wi-Fi設定の難しさ",
+        "keyword": "Wi-Fi接続の難易度",
         "count": 9
       },
       {
-        "keyword": "壁際が少し残る",
-        "count": 5
+        "keyword": "壁際の拭き残し",
+        "count": 4
       }
     ]
   },
   "successStrategies": [
     {
       "rank": 1,
-      "issue": "Wi-Fi接続エラーとアプリ連携の失敗",
-      "occurrenceRate": 4,
-      "occurrenceCount": 9,
-      "environmentalFactor": "5GHz帯Wi-Fiの使用、またはルーターとの距離",
-      "technicalDescription": "初期設定時にスマホが5GHz帯に接続されていると、2.4GHz帯専用の本体とペアリングが正常に完了しないケースが報告されています。",
+      "issue": "ゴミ収集時の騒音対策",
+      "complaint": "ゴミ収集時の騒音対策",
+      "occurrenceRate": 12,
+      "occurrenceCount": 26,
+      "environmentalFactor": "集合住宅や夜間の使用環境",
+      "technicalDescription": "自動ドックの強力な吸引モーターによる排気音。短時間ですが、静かな時間帯には室内に響きやすい特性があります。",
       "avoidanceStrategies": [
         {
-          "method": "スマホの接続を2.4GHz帯に固定",
+          "method": "おやすみモードの設定",
           "effectiveness": "高",
           "technicalLevel": "初級",
-          "technicalRationale": "メーカー公式FAQでも推奨。ペアリング時のみ一時的に5GHz帯をオフにすることで、確実にデバイスを認識させることが可能です。"
+          "technicalRationale": "アプリから指定時間帯の自動ゴミ収集を禁止。メーカー公式サポートも推奨する、ソフトウェア制御による確実な騒音回避方法です。",
+          "technicalLevelDescription": "アプリから指定時間帯の自動ゴミ収集を禁止。メーカー公式サポートも推奨する、ソフトウェア制御による確実な騒音回避方法です。"
         }
       ],
-      "preventionTips": "ルーターのSSID設定を確認し、2.4GHzと5GHzが分離されている環境で設定を行うことが確実な接続への近道です。"
+      "preventionTips": "日中の外出中に掃除とゴミ収集が完了するようスケジュールを組むことで、音を気にせず快適に運用できます。"
     }
   ],
   "topComplaints": [
     {
-      "title": "ステーションのゴミ収集音が大きい",
-      "percentage": 13,
-      "reviewCount": 28,
-      "description": "本体からステーションへゴミを吸い上げる際、数秒間ドライヤー程度の大きな音が発生し、夜間の使用には気を使うという意見があります。",
-      "solution": "アプリの「おやすみモード」を活用し、夜間は自動ゴミ収集を行わないよう設定することで、騒音問題をスマートに回避できます。"
-    },
-    {
-      "title": "水タンクの給排水頻度が高い",
+      "rank": 1,
+      "title": "浄水・汚水タンクの頻繁なメンテナンス",
+      "complaint": "浄水・汚水タンクの頻繁なメンテナンス",
       "percentage": 8,
-      "reviewCount": 18,
-      "description": "モップ機能を毎日使用すると、清水タンクへの給水と汚水タンクの排水を週2〜3回行う必要があり、やや手間に感じるという声があります。",
-      "solution": "モップの強度設定を「標準」または「弱」にすることで水の消費量を抑えられます。また、広い家では1日おきにモップ機能を使うことで給排水頻度を減らせます。"
-    },
-    {
-      "title": "段差での立ち往生",
-      "percentage": 6,
-      "reviewCount": 12,
-      "description": "2cm以下の段差は問題なく乗り越えますが、特定の形状の椅子脚や薄いマットの端で稀に立ち往生することがあります。",
-      "solution": "問題となる箇所にバーチャルウォール（アプリで設定）を設けるか、薄いマットの端をテープで固定して段差を滑らかにすることで回避できます。"
-    },
-    {
-      "title": "Wi-Fi接続の初期設定",
-      "percentage": 4,
-      "reviewCount": 9,
-      "description": "2.4GHz帯専用のため、5GHz帯に接続されたスマホでは初期設定時にエラーが発生するケースがあります。",
-      "solution": "初期設定時はスマホのWi-Fi接続を2.4GHz帯に固定し、ルーターのバンドステアリング機能を一時的にオフにすることで確実に接続できます。"
-    },
-    {
-      "title": "壁際の清掃精度",
-      "percentage": 2,
-      "reviewCount": 5,
-      "description": "壁際の隅にわずかにゴミが残ることがあり、完璧を求めるユーザーからは改善を望む声があります。",
-      "solution": "週に1回程度、手動で壁際モードを起動して重点的に清掃するか、部屋の四隅を定期的に手動掃除機で補助することで完璧な仕上がりになります。"
+      "reviewCount": 17,
+      "description": "ドックがコンパクトな分、水タンクの容量も限られており、広い部屋を毎日水拭きすると数日おきの給排水が必要です。",
+      "solution": "水拭き強度を「標準」または「低」に調整することで、水消費量を抑え、給排水のサイクルを数日延ばすことが可能です。",
+      "solutions": [
+        "水拭き強度を標準・低に",
+        "掃除頻度の調整",
+        "給水タイミングの習慣化"
+      ]
     }
   ],
   "attributeScores": {
     "petOwner": {
-      "overall": 94,
+      "overall": 95.1,
       "details": [
         {
           "field": "毛絡み除去",
           "score": 98,
-          "reviewCount": 75,
-          "comment": "毛絡み防止ブラシの効果が絶大で、ペットの毛を毎日掃除しても手入れが楽という評価が圧倒的です。"
-        },
-        {
-          "field": "吸引力",
-          "score": 96,
-          "reviewCount": 75,
-          "comment": "7,000Paの強力吸引でペットの毛を逃さず回収。カーペット上の抜け毛も一度で綺麗になります。"
-        },
-        {
-          "field": "メンテナンス",
-          "score": 95,
-          "reviewCount": 75,
-          "comment": "全自動ゴミ収集により、毎日の手入れがほぼ不要。ペット飼育者にとって理想的な仕様です。"
-        },
-        {
-          "field": "臭い対策",
-          "score": 92,
-          "reviewCount": 60,
-          "comment": "密閉式ダストバッグでペット臭が漏れにくく、快適に使用できます。"
-        },
-        {
-          "field": "アレルギー対策",
-          "score": 90,
-          "reviewCount": 55,
-          "comment": "HEPAフィルター搭載で微細な毛や花粉もしっかり捕集。アレルギー体質の家族にも安心です。"
-        },
-        {
-          "field": "バッテリー",
-          "score": 85,
-          "reviewCount": 70,
-          "comment": "広い範囲を1回の充電で掃除可能。複数の部屋にペットがいる家庭でも対応できます。"
-        },
-        {
-          "field": "静音性",
-          "score": 82,
-          "reviewCount": 65,
-          "comment": "運転音は比較的静かで、ペットが驚きにくいレベル。ゴミ収集時のみ音が大きくなります。"
-        },
-        {
-          "field": "スケジュール",
-          "score": 90,
-          "reviewCount": 80,
-          "comment": "外出中に自動掃除を設定でき、帰宅時には常に清潔な床が保たれます。"
+          "reviewCount": 78,
+          "comment": "毛絡み防止ブラシが非常に優秀。換毛期の多頭飼い世帯でも、人間によるブラシ清掃の頻度が劇的に減ると絶賛されています。"
         }
       ]
     },
     "apartment": {
-      "overall": 88,
+      "overall": 87.2,
       "details": [
         {
-          "field": "省スペース",
+          "field": "省スペース性",
           "score": 92,
-          "reviewCount": 65,
-          "comment": "全自動ドックとしては横幅が抑えられたコンパクト設計で、手狭なマンションの廊下などにも設置しやすいです。"
-        },
-        {
-          "field": "静音性",
-          "score": 82,
-          "reviewCount": 110,
-          "comment": "標準モードでは非常に静かですが、ゴミ収集時の音は集合住宅では気になる場合があります。"
-        },
-        {
-          "field": "段差対応",
-          "score": 78,
-          "reviewCount": 65,
-          "comment": "2cm程度の段差は乗り越えられますが、玄関の段差など高い部分では注意が必要です。"
-        },
-        {
-          "field": "床拭き性能",
-          "score": 94,
-          "reviewCount": 150,
-          "comment": "水拭き機能が優秀で、フローリング主体のマンションには最適。素足で歩くと気持ち良さが違います。"
-        },
-        {
-          "field": "バッテリー",
-          "score": 88,
-          "reviewCount": 120,
-          "comment": "60〜80㎡程度のマンションなら1回の充電で全室掃除が完了します。"
-        },
-        {
-          "field": "壁際清掃",
-          "score": 85,
-          "reviewCount": 90,
-          "comment": "サイドブラシで壁際のゴミもしっかり掃き出し。角部屋の隅もそれなりに綺麗になります。"
-        },
-        {
-          "field": "アプリ操作",
-          "score": 90,
-          "reviewCount": 130,
-          "comment": "外出先からも操作可能で、急な来客前にサッと掃除を開始できるのが便利です。"
-        },
-        {
-          "field": "メンテナンス",
-          "score": 95,
-          "reviewCount": 100,
-          "comment": "タンクの給排水が簡単で、忙しい日々でも手間なく清潔を保てます。"
+          "reviewCount": 62,
+          "comment": "全自動ドックとしては横幅が非常にスリム。マンションの限られた設置スペースにも収まりやすく、圧迫感がない点が好評です。"
         }
       ]
     },
     "workingProfessional": {
-      "overall": 93,
+      "overall": 93.6,
       "details": [
         {
           "field": "完全自動化",
-          "score": 95,
-          "reviewCount": 130,
-          "comment": "共働きで掃除の時間が取れなくても、ゴミ捨てとモップ洗いを自動で完結してくれるため、常に床が清潔に保たれます。"
-        },
-        {
-          "field": "スケジュール機能",
-          "score": 92,
-          "reviewCount": 120,
-          "comment": "出勤前や外出中に自動掃除を設定でき、帰宅時には綺麗な床が待っています。"
-        },
-        {
-          "field": "アプリ操作",
-          "score": 90,
-          "reviewCount": 130,
-          "comment": "外出先からスマホで操作でき、急な来客や予定変更にも柔軟に対応できます。"
-        },
-        {
-          "field": "時間創出",
-          "score": 98,
-          "reviewCount": 150,
-          "comment": "年間134時間（約17営業日）の掃除時間を削減。仕事と家事の両立をサポートします。"
-        },
-        {
-          "field": "メンテナンス",
-          "score": 95,
-          "reviewCount": 140,
-          "comment": "週末にタンクの給排水をするだけ。平日は完全に手放しで運用できます。"
-        },
-        {
-          "field": "床拭き性能",
-          "score": 94,
-          "reviewCount": 150,
-          "comment": "水拭きまで自動で行うため、週末の大掃除が不要に。時間的余裕が生まれます。"
-        },
-        {
-          "field": "バッテリー",
-          "score": 85,
-          "reviewCount": 100,
-          "comment": "広い範囲を1回で掃除可能。途中で充電が切れる心配がほとんどありません。"
-        },
-        {
-          "field": "コスパ",
-          "score": 92,
-          "reviewCount": 180,
-          "comment": "10万円以下で全自動機能を実現。共働き世帯にとって投資価値の高い製品です。"
+          "score": 96,
+          "reviewCount": 125,
+          "comment": "不在時に掃除からモップ洗浄まで終わるため、帰宅後に家事をする必要がありません。アプリの安定性も高く、外出先からの操作も快適。"
         }
       ]
     },
     "familyHome": {
-      "overall": 91,
+      "overall": 91.5,
       "details": [
         {
-          "field": "床拭き性能",
-          "score": 94,
-          "reviewCount": 150,
-          "comment": "子供の食べこぼしや足跡も強力な水拭きで除去。素足で歩いた時のサラサラ感が全く違うと好評です。"
-        },
-        {
-          "field": "吸引力",
-          "score": 96,
-          "reviewCount": 210,
-          "comment": "食べこぼしやホコリを強力に吸引。子供が遊んだ後のリビングも短時間で綺麗になります。"
-        },
-        {
-          "field": "広範囲清掃",
-          "score": 88,
-          "reviewCount": 120,
-          "comment": "一戸建ての各部屋を効率的に掃除。自動充電・再開機能で広い家でも安心です。"
-        },
-        {
-          "field": "安全性",
-          "score": 90,
-          "reviewCount": 100,
-          "comment": "障害物回避機能が優秀で、子供のおもちゃを踏みつけたり引きずったりするリスクが低いです。"
-        },
-        {
-          "field": "メンテナンス",
+          "field": "水拭き清掃",
           "score": 95,
-          "reviewCount": 190,
-          "comment": "全自動ドックにより、忙しい子育て世帯でも手間なく清潔を保てます。"
-        },
-        {
-          "field": "静音性",
-          "score": 82,
-          "reviewCount": 110,
-          "comment": "運転音は許容範囲ですが、ゴミ収集時は子供の昼寝中を避けるのが無難です。"
-        },
-        {
-          "field": "スケジュール",
-          "score": 92,
-          "reviewCount": 140,
-          "comment": "子供の登園・登校時間に合わせて自動掃除を設定でき、常に清潔な環境を保てます。"
-        },
-        {
-          "field": "ペット対応",
-          "score": 94,
-          "reviewCount": 75,
-          "comment": "ペットと子供がいる家庭でも毛やアレルゲンをしっかり除去。家族全員が快適に過ごせます。"
+          "reviewCount": 145,
+          "comment": "裸足で歩く子供がいる家庭では、皮脂汚れや足跡を綺麗に消し去る水拭き性能が好評。常に床がサラサラに保たれます。"
         }
       ]
     }
@@ -486,11 +314,19 @@
     "retentionRateMin": 53,
     "retentionRateMax": 69,
     "period": "6ヶ月後",
-    "comment": "Anker製品は中古市場での人気が高く、全自動モデルは値崩れしにくい傾向。状態が良ければ高価買取が期待できます。"
+    "comment": "Anker製品は中古市場での需要が安定しており、特に最新の全自動モデルは値崩れしにくい傾向。箱や備品を揃えておけば高価買取が望めます。"
   },
+  "keywords": [
+    "Eufy Robot Vacuum Omni C20",
+    "Anker",
+    "7000Pa",
+    "全自動ドック",
+    "ロボット掃除機"
+  ],
   "cta": {
     "amazon": "https://www.amazon.co.jp/s?k=Eufy+Robot+Vacuum+Omni+C20",
     "rakuten": "https://search.rakuten.co.jp/search/mall/Eufy+Robot+Vacuum+Omni+C20/",
     "yahoo": "https://shopping.yahoo.co.jp/search?p=Eufy+Robot+Vacuum+Omni+C20"
-  }
+  },
+  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-eufy-robot-vacuum-omni-c20.html"
 }

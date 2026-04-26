@@ -1,0 +1,35 @@
+{
+  "timeSaving": {
+    "dailyMinutes": 18,
+    "monthlyHours": 9.2,
+    "annualHours": 110,
+    "workDaysEquivalent": 13.7,
+    "methodology": "手動掃除機・床拭きの週次所要を、全自動走行＋集塵ステーションに置き換えた場合の年間目安。間取り・稼働頻度で変動します。"
+  },
+  "operationalCost": {
+    "daily": 45,
+    "dailyNote": "公式掲載の消耗品価格・交換目安を想定した日割り。実購入価格はキャンペーン等で変動。",
+    "monthly": 1350,
+    "annual": 16200,
+    "consumables": [
+      {
+        "item": "ダストバッグ（掃除ロボ用）",
+        "replacementFrequency": "2ヶ月ごと",
+        "unitCost": 1980,
+        "annualCost": 11880
+      },
+      {
+        "item": "メインブラシ／サイドブラシ等",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 3500,
+        "annualCost": 7000
+      },
+      {
+        "item": "フィルター",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 1980,
+        "annualCost": 3960
+      }
+    ]
+  }
+}

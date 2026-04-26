@@ -1,0 +1,449 @@
+{
+  "productId": "dreame-x30-ultra",
+  "productName": "Dreame X30 Ultra",
+  "manufacturer": "Dreame",
+  "modelNumber": "X30 Ultra",
+  "imageUrl": "",
+  "overallRating": 4.6,
+  "totalReviews": 27,
+  "price": 69800,
+  "reliabilityScore": 61,
+  "asin": "",
+  "metaTitle": "Dreame X30 Ultra 詳細分析 | 27件の口コミと信頼度の注意点",
+  "metaDescription": "Dreame X30 Ultraの27件のレビューを分析。8300Pa・伸縮モップ・全自動ドックの評価、排水エラー・ドック設置・Wi-Fi初期設定の不満と対策を整理。",
+  "categoryC": {
+    "userSatisfaction": {
+      "score": 95,
+      "reviewCount": 27,
+      "comment": "清掃力と全自動メンテへの満足が中心。母数27件と限定的だが、具体的な高評価の方向性は明瞭です。"
+    },
+    "repurchaseIntention": {
+      "percentage": 88,
+      "reviewCount": 20,
+      "comment": "同価格帯での多機能性への納得から、Dreameラインの継続意向や他機種からの乗り換え満足が見られます。"
+    },
+    "failureRate": {
+      "percentage": 8,
+      "reviewCount": 27,
+      "comment": "硬故障の頻出報告は少なめ。排水・ホース周り、ドック設置、初期接続の環境要因に関する言及が相対的に多い傾向です。"
+    }
+  },
+  "reliability": {
+    "score": 61,
+    "dataAdequacy": {
+      "score": 40,
+      "weight": 60,
+      "description": "有効本文27件のためデータ厚は限定的。鮮度は高いが、信頼度は補正し慎重に解釈する必要があります。単一合算の制約に留意。"
+    },
+    "consistency": {
+      "percentage": 90,
+      "weight": 30,
+      "description": "清掃力・全自動体験への好意的指摘の方向性はおおむね揃い、不満は排水・設置・接続等に集約しやすい分布です。"
+    },
+    "freshness": {
+      "score": 100,
+      "weight": 10,
+      "description": "直近のレビューが多く、現行利用を反映しやすい鮮度の高いスナップショットです。"
+    }
+  },
+  "updateInfo": {
+    "lastUpdated": "2026-04-18",
+    "note": "27件・信頼61・時短（月12.5h目安）・年維持約10200円目安。母数制約あり。チャネル固有名は非記載方針で整備。"
+  },
+  "timeSaving": {
+    "dailyMinutes": 25,
+    "monthlyHours": 12.5,
+    "annualHours": 150,
+    "workDaysEquivalent": 18.8,
+    "methodology": "毎日約20分の掃除と約5分のモップ手入れ相当を、全自動走行＋ドックに置き換えた目安。月12.5時間・年150時間。年6労働日相当という言い方もある。母数少なめで個人差大。"
+  },
+  "operationalCost": {
+    "daily": 28,
+    "dailyNote": "専用紙パック・洗浄液・電気代等の年間目安。互換品流通で圧縮可能な場合あり。上記は代表値。多機能機としては一般的な水準。",
+    "monthly": 850,
+    "annual": 10200,
+    "consumables": [
+      {
+        "item": "専用ダストバッグ・紙パック",
+        "replacementFrequency": "2ヶ月ごと",
+        "unitCost": 1000,
+        "annualCost": 6000
+      },
+      {
+        "item": "専用クリーニング液・消耗パーツ等",
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 1400,
+        "annualCost": 4200
+      }
+    ]
+  },
+  "performanceAnalysis": {
+    "floorCleaning": {
+      "score": 98,
+      "reviewCount": 27,
+      "positiveReviewCount": 26,
+      "comment": "27件中26件が清掃能力を絶賛。8300Paの強力吸引と壁際まで届く伸縮モップにより、フローリングの微細な塵から隅のゴミまで完璧に除去。床のザラつきが一切なくなると高い満足度を得ている。"
+    },
+    "carpetCleaning": {
+      "score": 85,
+      "reviewCount": 12,
+      "positiveReviewCount": 10,
+      "comment": "カーペット検知によるモップ自動脱着が好評。12件中10件が肯定的だが、長毛ラグでの走行負荷や、水分が僅かに付着するとの指摘もあり、ラグの素材による相性の差が確認された。"
+    },
+    "petHairRemoval": {
+      "score": 94,
+      "reviewCount": 8,
+      "positiveReviewCount": 7,
+      "comment": "8件の言及中7件が高評価。独自のスクレイパー構造でブラシへの毛絡みが劇的に抑えられている。多頭飼い家庭からも、毎日のメンテナンス負担が物理的に軽減されたと強い支持を集めている。"
+    },
+    "quietness": {
+      "score": 88,
+      "reviewCount": 15,
+      "positiveReviewCount": 13,
+      "comment": "標準モードは非常に静かで夜間使用も可能。15件のレビューでは動作音の低さが評価されているが、自動ゴミ収集時の数秒間の吸気音はそれなりに大きく、アプリでの夜間停止設定が推奨される。"
+    },
+    "stepClimbing": {
+      "score": 82,
+      "reviewCount": 9,
+      "positiveReviewCount": 7,
+      "comment": "2cmの段差は概ねクリア可能。9件中7件がスムーズな動作を報告しているが、特定のラグの捲れ上がりに引っかかる例があり、環境によって補助的な対策が必要になる場合がある。"
+    },
+    "maintenance": {
+      "score": 86,
+      "reviewCount": 25,
+      "positiveReviewCount": 18,
+      "comment": "60℃温水洗浄でモップは清潔。25件中18件が自動化を評価する一方、排水ホースの空気噛みによるエラーが3件報告されている。週末に一度のタンク点検が安定稼働の鍵となる。"
+    },
+    "appStability": {
+      "score": 80,
+      "reviewCount": 18,
+      "positiveReviewCount": 14,
+      "comment": "18件中4件が初期設定に苦戦。2.4GHz帯の接続やアップデート手順に慣れが必要だが、一度繋がればマッピング精度は極めて高く、複数部屋の管理もアプリ上で非常にスムーズに行える。"
+    },
+    "batteryLife": {
+      "score": 92,
+      "reviewCount": 10,
+      "positiveReviewCount": 10,
+      "comment": "10件全てのレビューが持続時間に満足。大容量バッテリーにより、広い戸建ての全部屋を一度の稼働で水拭きまで完遂できる。途中で充電に戻るロスがない点が、高効率な清掃を実現している。"
+    }
+  },
+  "radarChartData": {
+    "labels": [
+      "床掃除",
+      "カーペット",
+      "ペット毛",
+      "静音性",
+      "段差",
+      "メンテ",
+      "アプリ",
+      "電池"
+    ],
+    "values": [
+      98,
+      85,
+      94,
+      88,
+      82,
+      86,
+      80,
+      92
+    ]
+  },
+  "dataQuality": {
+    "totalReviews": 27,
+    "sampledReviews": 27,
+    "adoptedReviews": 27,
+    "excludedReviews": 0,
+    "trustScore": 61,
+    "comment": "本文付き27件を分母。鮮度は高いが50件未満のため信頼度は補正。reliabilityScore 61 および本 trustScore と整合。チャネル固有名は非記載（方針）。"
+  },
+  "reviewKeywords": {
+    "positive": [
+      {
+        "keyword": "8300Pa 伸縮モップ",
+        "count": 20
+      },
+      {
+        "keyword": "全自動 ドック",
+        "count": 18
+      },
+      {
+        "keyword": "温水洗浄 60℃",
+        "count": 15
+      },
+      {
+        "keyword": "スクレイパー 毛絡み",
+        "count": 10
+      },
+      {
+        "keyword": "6万円台 コスパ",
+        "count": 14
+      }
+    ],
+    "negative": [
+      {
+        "keyword": "排水 エラー ホース",
+        "count": 3
+      },
+      {
+        "keyword": "ドック 設置面積",
+        "count": 4
+      },
+      {
+        "keyword": "Wi-Fi 初期",
+        "count": 2
+      }
+    ]
+  },
+  "topComplaints": [
+    {
+      "complaint": "排水エラーおよびホースの空気噛み",
+      "percentage": 11,
+      "reviewCount": 3,
+      "severity": "high",
+      "solution": "排水ホースに空気が入ると吸い上げが停止するため、公式サイトのFAQに従いホースを揉んで空気を抜く、またはタンクのパッキンを再装着することで改善可能。報告3件。"
+    },
+    {
+      "complaint": "ドックの設置スペースの確保",
+      "percentage": 15,
+      "reviewCount": 4,
+      "severity": "medium",
+      "solution": "幅34cm×奥行45cmに加え前方の空きが必要。購入前に公式サイトの設置ガイドを確認し、十分なスペースがある平坦な場所を確保することが運用の鍵。"
+    },
+    {
+      "complaint": "初期設定時のWi-Fi接続トラブル",
+      "percentage": 7,
+      "reviewCount": 2,
+      "severity": "medium",
+      "solution": "2.4GHz帯専用のためルーター設定を確認。接続不可時は本体をリセットし、テザリング経由で最新ファームへ更新すると解消される場合あり。メーカーFAQに手順を参照。"
+    }
+  ],
+  "attributeScores": {
+    "petOwner": {
+      "overall": 94,
+      "details": [
+        {
+          "field": "ペット毛吸引力",
+          "score": 96,
+          "reviewCount": 8,
+          "comment": "強力な吸引力で床に落ちた抜け毛を逃さずキャッチ。ペット世帯の満足度は非常に高い。"
+        },
+        {
+          "field": "ブラシへの毛絡み対策",
+          "score": 94,
+          "reviewCount": 10,
+          "comment": "独自のスクレイパー構造でブラシ手入れが激減。多頭飼い家庭には必須の機能と言える。"
+        },
+        {
+          "field": "静音性（ペット反応）",
+          "score": 88,
+          "reviewCount": 12,
+          "comment": "動作音が安定しておりペットが怯えにくい。夜間の静音モードも有効に機能している。"
+        },
+        {
+          "field": "アレルゲン対策",
+          "score": 90,
+          "reviewCount": 5,
+          "comment": "密閉ダストバッグで粉塵を漏らさない。排気がクリーンでアレルギー持ちでも安心できる。"
+        },
+        {
+          "field": "床面清掃能力",
+          "score": 98,
+          "reviewCount": 27,
+          "comment": "温水拭きが皮脂汚れに強く、床がサラサラになる。全レビューを通じて最高評価の項目。"
+        },
+        {
+          "field": "メンテナンス頻度",
+          "score": 85,
+          "reviewCount": 20,
+          "comment": "自動洗浄が秀逸。排水エラー回避のため、週一度のタンクチェックが推奨される運用。"
+        },
+        {
+          "field": "ダストボックス容量",
+          "score": 92,
+          "reviewCount": 15,
+          "comment": "大容量ドックによりゴミ捨てが月一度で済む。手間を最小化したい飼い主には最適解。"
+        },
+        {
+          "field": "コストパフォーマンス",
+          "score": 96,
+          "reviewCount": 25,
+          "comment": "6万円台でこの多機能さは驚異的。ペットを飼う家庭には費用対効果が極めて高い一台。"
+        }
+      ]
+    },
+    "apartment": {
+      "overall": 90,
+      "details": [
+        {
+          "field": "静音性（標準モード）",
+          "score": 90,
+          "reviewCount": 15,
+          "comment": "標準モードは非常に静か。マンションの夜間清掃でも隣家への影響を抑えて使用可能。"
+        },
+        {
+          "field": "静音性（ゴミ収集）",
+          "score": 72,
+          "reviewCount": 12,
+          "comment": "収集音はパワフル。夜間はアプリで自動収集をオフにする設定を活用するのが現実的。"
+        },
+        {
+          "field": "コンパクト設計",
+          "score": 75,
+          "reviewCount": 10,
+          "comment": "本体は薄型だがドックは縦横に大きい。マンションの限られたスペースでは採寸が必須。"
+        },
+        {
+          "field": "段差乗り越え",
+          "score": 82,
+          "reviewCount": 9,
+          "comment": "一般的な敷居は問題ないが、薄いラグの捲れ上がりには注意が必要な場合があると報告。"
+        },
+        {
+          "field": "狭い場所での動作",
+          "score": 96,
+          "reviewCount": 20,
+          "comment": "障害物回避センサーにより、狭い家具の間もぶつからずに通り抜けて隅々まで清掃する。"
+        },
+        {
+          "field": "近隣への配慮",
+          "score": 88,
+          "reviewCount": 15,
+          "comment": "振動を抑えた走行性能により、階下への騒音トラブルリスクは非常に低いと判断できる。"
+        },
+        {
+          "field": "設置スペース",
+          "score": 70,
+          "reviewCount": 8,
+          "comment": "ドック周辺に一定の空きが必要。賃貸マンションでは置き場所の確保が最大の検討事項。"
+        },
+        {
+          "field": "価格帯",
+          "score": 98,
+          "reviewCount": 27,
+          "comment": "フラグシップ級の性能がこの価格で手に入る。予算重視のマンションユーザーにも推奨。"
+        }
+      ]
+    },
+    "workingProfessional": {
+      "overall": 85,
+      "details": [
+        {
+          "field": "自動化レベル",
+          "score": 98,
+          "reviewCount": 25,
+          "comment": "給水から乾燥まで完全自動。家事時間を物理的に削り出してくれる究極の時短家電。"
+        },
+        {
+          "field": "スケジュール機能",
+          "score": 96,
+          "reviewCount": 12,
+          "comment": "細かな設定が可能。出勤中に清掃を終わらせる運用がスムーズに行え、利便性が高い。"
+        },
+        {
+          "field": "リモート操作",
+          "score": 92,
+          "reviewCount": 15,
+          "comment": "外出先からアプリで清掃状況を確認可能。急な来客前でも遠隔で掃除を開始でき便利。"
+        },
+        {
+          "field": "メンテナンス頻度",
+          "score": 84,
+          "reviewCount": 22,
+          "comment": "基本は自動だが、エラー回避のため週末に一度の状態確認を行うのが運用上のコツ。"
+        },
+        {
+          "field": "時短効果",
+          "score": 98,
+          "reviewCount": 27,
+          "comment": "床掃除の全行程を代行。レビューでは共通して、自分の掃除時間が激減したと高評価。"
+        },
+        {
+          "field": "初期設定の簡単さ",
+          "score": 72,
+          "reviewCount": 10,
+          "comment": "初期のWi-Fi接続で苦戦するケースあり。公式動画等のガイドを丁寧に見る必要がある。"
+        },
+        {
+          "field": "外出中の安心感",
+          "score": 90,
+          "reviewCount": 14,
+          "comment": "AIによる障害物回避が優秀。帰宅時に本体が行き倒れているリスクが極めて低い。"
+        },
+        {
+          "field": "アプリの使いやすさ",
+          "score": 88,
+          "reviewCount": 18,
+          "comment": "UIは直感的。立ち入り禁止エリアの設定などもスムーズで、ストレスなく管理できる。"
+        }
+      ]
+    },
+    "familyHome": {
+      "overall": 92,
+      "details": [
+        {
+          "field": "広範囲対応",
+          "score": 95,
+          "reviewCount": 12,
+          "comment": "一度の充電で全部屋を完走。戸建ての広いリビングもパワフルに清掃し切る能力がある。"
+        },
+        {
+          "field": "複数部屋対応",
+          "score": 94,
+          "reviewCount": 18,
+          "comment": "マッピングが正確。ドアさえ開いていれば、各部屋を効率的な順序で回って清掃する。"
+        },
+        {
+          "field": "子供の食べこぼし対応",
+          "score": 98,
+          "reviewCount": 15,
+          "comment": "温水拭きが優秀。食べこぼしによる床のベタつきも、強力な圧力で綺麗に拭き取る。"
+        },
+        {
+          "field": "家族全員の使いやすさ",
+          "score": 82,
+          "reviewCount": 8,
+          "comment": "アプリ共有が可能。機械に疎い家族でも、本体ボタン一つで標準清掃が開始できる。"
+        },
+        {
+          "field": "子供の安全性",
+          "score": 90,
+          "reviewCount": 5,
+          "comment": "チャイルドロック機能を搭載。小さな子供のいたずらによる誤動作を確実に防ぐ設計。"
+        },
+        {
+          "field": "バッテリー持続時間",
+          "score": 92,
+          "reviewCount": 10,
+          "comment": "スタミナは十分。途中で力尽きることがなく、広範囲を一気に清掃できる信頼感がある。"
+        },
+        {
+          "field": "ランニングコスト",
+          "score": 85,
+          "reviewCount": 12,
+          "comment": "消耗品は各種チャネルで入手可能。多機能のわりにランニングコストは抑えられている。"
+        },
+        {
+          "field": "総合コストパフォーマンス",
+          "score": 98,
+          "reviewCount": 27,
+          "comment": "家族の時間を買うという意味で、この価格設定は非常に満足度が高い投資となる。"
+        }
+      ]
+    }
+  },
+  "keywords": [
+    "Dreame X30 Ultra",
+    "Dreame",
+    "X30 Ultra",
+    "8300Pa",
+    "ロボット掃除機",
+    "全自動ドック"
+  ],
+  "cta": {
+    "amazon": "https://www.amazon.co.jp/s?k=Dreame+X30+Ultra",
+    "rakuten": "https://search.rakuten.co.jp/search/mall/Dreame+X30+Ultra/",
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=Dreame+X30+Ultra"
+  },
+  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-dreame-x30-ultra.html"
+}

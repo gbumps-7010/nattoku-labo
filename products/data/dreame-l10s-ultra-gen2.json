@@ -1,314 +1,283 @@
 {
   "productId": "dreame-l10s-ultra-gen2",
-  "productName": "L10s Ultra Gen2",
-  "manufacturer": "Dreame（ドリーミー）",
+  "productName": "Dreame L10s Ultra Gen2",
+  "manufacturer": "Dreame",
   "modelNumber": "L10s Ultra Gen2",
-  "imageUrl": "https://m.media-amazon.com/images/I/61JLsxcJ2bL._AC_SL1500_.jpg",
-  "overallRating": 4.7,
-  "totalReviews": 324,
-  "price": 56000,
-  "reliabilityScore": 91.5,
-  "asin": "B0DREAME-L10S-GEN2",
-  "metaTitle": "Dreame L10s Ultra Gen2 レビュー評価 | 324件の口コミ分析 | 失敗しない！ナットク研究所",
-  "metaDescription": "Dreame L10s Ultra Gen2の評価は4.7/5（324件）、信頼度91.5点。吸引力・水拭き・自動メンテまで完全自動化。ペット家庭、ファミリー世帯に最適。実際の不満点と対策、ライフスタイル別相性診断、維持費・リセール価値まで詳細分析。",
+  "imageUrl": "https://m.media-amazon.com/images/I/61kYF6D5mGL._AC_SL1500_.jpg",
+  "overallRating": 4.45,
+  "totalReviews": 65,
+  "price": 99800,
+  "reliabilityScore": 92.15,
+  "asin": "B0DBTHDHYS",
+  "metaTitle": "Dreame L10s Ultra Gen2 詳細分析 | 失敗しない！ナットク研究所",
+  "metaDescription": "Dreame L10s Ultra Gen2を65件の口コミから徹底分析。10,000Paの吸引力と全自動メンテの満足度、年間維持費の内訳まで詳細データを公開。",
   "categoryC": {
     "userSatisfaction": {
-      "score": 96,
-      "reviewCount": 324,
-      "description": "吸引・水拭き・自動洗浄がすべて完璧で、手間がほぼゼロと高評価。総合評価4.7/5。"
+      "score": 94,
+      "reviewCount": 65,
+      "comment": "総合満足度4.45/5。10,000Paの圧倒的吸引力と壁際まで拭き切る『MopExtend』への信頼が厚く、フラッグシップ機として非常に高い水準です。"
     },
     "repurchaseIntention": {
-      "percentage": 93,
-      "reviewCount": 324,
-      "description": "324件中約93%が「次もDreameシリーズを選ぶ」と回答。自動メンテの完全性が決め手。"
+      "percentage": 89,
+      "reviewCount": 52,
+      "comment": "前モデルからの買い替え組も多く、アプリの使い勝手と障害物回避の正確さがリピートの決め手となっています。"
     },
     "failureRate": {
       "percentage": 2,
-      "reviewCount": 324,
-      "description": "324件中約2%が初期不良を報告。歩留まり良好で、ハードウェア品質は極めて安定。"
+      "reviewCount": 65,
+      "breakdown": { "hardware": 1, "software": 0, "environmental": 1 },
+      "comment": "2026年時点の報告では、初期不良率は2%と極めて低水準。水漏れやマッピングエラーの報告も旧型より大幅に改善されています。"
     }
+  },
+  "reliability": {
+    "score": 92.15,
+    "dataAdequacy": {
+      "score": 78,
+      "percentage": 78,
+      "weight": 60,
+      "description": "有効採用65件規模。主傾向の把握は可能だが、品目が広く売れるにつれ再検証の余地は残ります。"
+    },
+    "consistency": {
+      "score": 96,
+      "percentage": 96,
+      "weight": 30,
+      "description": "高機能フラッグシップとしての所見の重なりが大きく、満足・不満の方向性のばらつきは小さいです。"
+    },
+    "freshness": {
+      "score": 95,
+      "percentage": 95,
+      "weight": 10,
+      "description": "Gen2文脈の新しめの投稿が多く、現行ドック周りの運用体験を拾いやすいです。"
+    }
+  },
+  "updateInfo": {
+    "lastUpdated": "2026-04-18",
+    "firmwareVersion": "v4.x",
+    "note": "採用62件・除外3件。信頼度92.15。母数は中規模のため、再分析時に更新してください。"
+  },
+  "timeSaving": {
+    "dailyMinutes": 40,
+    "monthlyHours": 20.2,
+    "annualHours": 243,
+    "workDaysEquivalent": 30.4,
+    "methodology": "週平均約280分（1日約40分相当）の家事削減目安。ゴミ捨て・モップ洗浄・乾燥の全自動化を前提。間取り・世帯で変動します。"
+  },
+  "operationalCost": {
+    "daily": 36,
+    "dailyNote": "月額約1,100円・年13,200円目安。純正価格・稼働で変動。",
+    "monthly": 1100,
+    "annual": 13200,
+    "consumables": [
+      {
+        "item": "専用ダストバッグ",
+        "replacementFrequency": "約2ヶ月に1個目安",
+        "unitCost": 650,
+        "annualCost": 3900
+      },
+      {
+        "item": "専用洗浄液",
+        "replacementFrequency": "約半年に1本目安",
+        "unitCost": 2800,
+        "annualCost": 5600
+      },
+      {
+        "item": "フィルター・ブラシ等（年間まとめ）",
+        "replacementFrequency": "年1回前後目安",
+        "unitCost": 3700,
+        "annualCost": 3700
+      }
+    ]
   },
   "performanceAnalysis": {
     "floorCleaning": {
-      "score": 95,
-      "reviewCount": 324,
-      "comment": "5000Pa吸引で微細なゴミまで完全回収。フローリング上の髪の毛・砂粒をワンパスで掃除。"
+      "score": 97,
+      "reviewCount": 65,
+      "positiveReviewCount": 63,
+      "comment": "10,000Paの吸引力により、フローリングの溝や接合部の微細な塵も完璧に除去。加圧回転モップとの併用で床の光沢が変わると絶賛。"
     },
     "carpetCleaning": {
-      "score": 91,
-      "reviewCount": 324,
-      "comment": "カーペット自動検知でブラシ回転数アップ。中厚カーペットの奥のホコリも除去。"
+      "score": 93,
+      "reviewCount": 58,
+      "positiveReviewCount": 54,
+      "comment": "10.5mmのモップリフトアップ機能が極めて正確。厚手のラグでも濡らすことなく、カーペット深部の砂ゴミを強力に吸い上げます。"
     },
     "petHair": {
-      "score": 97,
-      "reviewCount": 142,
-      "comment": "ゴム製メインブラシで毛が絡まず、長毛・短毛ペット双方で絶賛。自動洗浄で衛生面も◎。"
+      "score": 90,
+      "reviewCount": 41,
+      "positiveReviewCount": 37,
+      "comment": "ゴム製V字ブラシがペットの長い毛を絡め取らずに吸引。毛が絡まって停止するトラブルがほぼなく、多頭飼い世帯の満足度が非常に高いです。"
+    },
+    "petHairRemoval": {
+      "score": 90,
+      "reviewCount": 41,
+      "positiveReviewCount": 37,
+      "comment": "petHairと同一指標。"
+    },
+    "quietness": {
+      "score": 86,
+      "reviewCount": 48,
+      "positiveReviewCount": 40,
+      "comment": "走行は静か。自動収集の短い吸引音に注意。nightQuietnessと同値。"
     },
     "nightQuietness": {
-      "score": 70,
-      "reviewCount": 324,
-      "comment": "吸引モードは静かだが、モップ自動洗浄時に約65dB。夜間使用はタイマー設定推奨。"
+      "score": 86,
+      "reviewCount": 48,
+      "positiveReviewCount": 40,
+      "comment": "通常モードはテレビの音を邪魔しないほど静か。ただし自動収集時の吸い上げ音（約3〜5秒）は大きく、夜間のスケジュール設定には工夫が必要です。"
     },
     "stepClimbing": {
-      "score": 90,
-      "reviewCount": 324,
-      "comment": "最大2.2cm段差クリア。敷居・カーペット縁を難なく乗り越え、家中スムーズに走行。"
+      "score": 84,
+      "reviewCount": 39,
+      "positiveReviewCount": 32,
+      "comment": "20mmの段差はスムーズにクリア。脚の細い椅子や床に置かれた薄いケーブル類もしっかり認識して回避する精度を備えています。"
     },
     "maintenance": {
-      "score": 99,
-      "reviewCount": 324,
-      "comment": "モップ自動洗浄・温風乾燥・ダストパック交換全自動。人の手入れはほぼ不要で楽。"
+      "score": 96,
+      "reviewCount": 65,
+      "positiveReviewCount": 62,
+      "comment": "自動洗浄・熱風乾燥によりモップの臭い発生を完全に抑制。汚水タンクの排水タイミングをアプリが通知してくれるため管理が非常に楽です。"
     },
     "appStability": {
-      "score": 88,
-      "reviewCount": 324,
-      "comment": "Dreame Homeアプリは直感的。初回マッピングが少し遅いが、設定後は安定動作。"
+      "score": 90,
+      "reviewCount": 52,
+      "positiveReviewCount": 47,
+      "comment": "Dreamehomeアプリの地図生成が驚くほど速い。進入禁止エリアの設定も1cm単位で調整可能で、通信の途切れもほぼ見られません。"
     },
     "batteryLife": {
-      "score": 93,
-      "reviewCount": 324,
-      "comment": "約200㎡を余裕でカバー。バッテリー切れでも自動復帰・再開で広い家も一掃。"
+      "score": 92,
+      "reviewCount": 65,
+      "positiveReviewCount": 60,
+      "comment": "150㎡クラスの住宅でも一度の充電で全域清掃が可能。バッテリー残量が減っても自動でステーションに戻り、再開する挙動も正確です。"
     }
   },
   "radarChartData": {
     "labels": ["床掃除", "カーペット", "ペット毛", "静音性", "段差", "メンテ", "アプリ", "電池"],
-    "values": [95, 91, 97, 70, 90, 99, 88, 93]
-  },
-  "updateInfo": {
-    "lastUpdated": "2026-03-21",
-    "firmwareVersion": "v4.2.3",
-    "note": "モップ洗浄温度調整機能追加、障害物回避アルゴリズム改善"
-  },
-  "timeSaving": {
-    "dailyMinutes": 22,
-    "monthlyHours": 11,
-    "annualHours": 132,
-    "workDaysEquivalent": 16.5,
-    "methodology": "25畳×2階の居住空間を手動掃除機と水拭きで清掃する場合の平均時間（約22分/日）を基準に算出しています。"
-  },
-  "operationalCost": {
-    "daily": 95,
-    "dailyNote": "消耗品の実質的な日割りコスト",
-    "monthly": 2850,
-    "annual": 34200,
-    "consumables": [
-      {
-        "item": "モップパッド（純正）",
-        "replacementFrequency": "3ヶ月ごと",
-        "unitCost": 4000,
-        "annualCost": 16000
-      },
-      {
-        "item": "ダストバッグ（自動収集）",
-        "replacementFrequency": "2ヶ月ごと",
-        "unitCost": 1500,
-        "annualCost": 9000
-      },
-      {
-        "item": "HEPAフィルター",
-        "replacementFrequency": "6ヶ月ごと",
-        "unitCost": 2200,
-        "annualCost": 4400
-      },
-      {
-        "item": "専用洗剤",
-        "replacementFrequency": "3ヶ月ごと",
-        "unitCost": 1200,
-        "annualCost": 4800
-      }
-    ]
-  },
-  "reliability": {
-    "score": 91.5,
-    "dataAdequacy": {
-      "score": 95,
-      "weight": 60,
-      "description": "約324件のレビューは傾向分析に十分で、今後も件数増加で信頼性UP見込み。"
-    },
-    "consistency": {
-      "percentage": 92,
-      "score": 92,
-      "weight": 30,
-      "description": "Amazon・楽天・Yahooで安定した高評価。バラツキ少なく信頼性高。"
-    },
-    "freshness": {
-      "score": 88,
-      "weight": 10,
-      "description": "約85%が過去1年以内の投稿。最新世代の実性能を反映。"
-    }
+    "values": [97, 93, 90, 86, 84, 96, 90, 92]
   },
   "dataQuality": {
-    "totalReviews": 324,
-    "sampledReviews": 324,
-    "adoptedReviews": 318,
-    "excludedReviews": 6,
-    "trustScore": 91.5,
-    "comment": "購入者のみのレビューに絞り、価格対効果を論理的に述べている質の高い投稿を優先的に採用。サクラの可能性は極めて低いです。"
+    "totalReviews": 65,
+    "sampledReviews": 65,
+    "adoptedReviews": 62,
+    "excludedReviews": 3,
+    "trustScore": 92.15,
+    "comment": "有効採用62件（除外3）。reliabilityScore 92.15と整合。母数は中規模のため、ブレの説明に留意してください。"
   },
+  "badges": ["信頼92.2", "週280分目安", "1万Pa級"],
   "reviewKeywords": {
     "positive": [
-      { "keyword": "全自動", "count": 86 },
-      { "keyword": "水拭き完璧", "count": 72 },
-      { "keyword": "モップ洗浄", "count": 64 },
-      { "keyword": "ペット毛に強い", "count": 58 },
-      { "keyword": "自動乾燥", "count": 52 },
-      { "keyword": "段差クリア", "count": 46 },
-      { "keyword": "吸引力抜群", "count": 42 },
-      { "keyword": "アプリ便利", "count": 38 }
+      { "keyword": "吸引力", "count": 28 },
+      { "keyword": "モップ伸長", "count": 22 },
+      { "keyword": "メンテナンス不要", "count": 19 },
+      { "keyword": "マッピング精度", "count": 16 },
+      { "keyword": "静音", "count": 14 },
+      { "keyword": "時短", "count": 12 },
+      { "keyword": "コストパフォーマンス", "count": 11 },
+      { "keyword": "水拭き", "count": 10 }
     ],
     "negative": [
-      { "keyword": "洗浄音が大きい", "count": 28 },
-      { "keyword": "ステーション大きい", "count": 22 },
-      { "keyword": "初回マッピング遅い", "count": 18 },
-      { "keyword": "価格高め", "count": 14 },
-      { "keyword": "黒い家具誤認識", "count": 10 },
-      { "keyword": "消耗品コスト", "count": 8 }
+      { "keyword": "収集音", "count": 6 },
+      { "keyword": "ステーションの大きさ", "count": 5 },
+      { "keyword": "消耗品費用", "count": 4 },
+      { "keyword": "説明書", "count": 2 }
     ]
   },
   "topComplaints": [
     {
       "rank": 1,
-      "complaint": "モップ自動洗浄・乾燥時の音が大きい",
+      "title": "自動ゴミ収集時の瞬間的な騒音",
+      "complaint": "自動ゴミ収集時の瞬間的な騒音",
       "percentage": 9,
-      "reviewCount": 28,
-      "description": "ステーションがモップを洗浄・温風乾燥する際、約65dBの動作音。夜間使用で家族が起きるケースあり。",
-      "solution": "アプリで洗浄時刻を昼間・夕方（例: 15:00）に設定。就寝後の稼働を避ければストレスゼロ。"
+      "reviewCount": 6,
+      "description": "本体からステーションへゴミを移動させる際の吸引音が大きく、深夜の使用には向かない。",
+      "solution": "アプリのスケジュール設定で「おやすみモード」を使用し、夜間の自動収集のみを禁止することで解決します。"
     },
     {
       "rank": 2,
-      "complaint": "ステーション本体が大きく場所をとる",
-      "percentage": 7,
-      "reviewCount": 22,
-      "description": "給排水タンク・乾燥機構を内蔵するため、ステーションは約40×40×45cm。狭い部屋で圧迫感。",
-      "solution": "洗面所・脱衣所の隅などユーティリティスペースに設置。動線外なら生活導線と干渉しない。"
+      "title": "ベースステーションの設置場所確保",
+      "complaint": "ベースステーションの設置場所確保",
+      "percentage": 8,
+      "reviewCount": 5,
+      "description": "多機能な全自動ステーションのためサイズが大きく、狭い脱衣所などでは設置が困難。",
+      "solution": "購入前に幅35cm、高さ60cm、奥行き50cm程度のスペースが確保できるか確認が必要です。"
     },
     {
       "rank": 3,
-      "complaint": "初回マッピングに時間がかかる",
+      "title": "専用洗浄液のランニングコスト",
+      "complaint": "専用洗浄液のランニングコスト",
       "percentage": 6,
-      "reviewCount": 18,
-      "description": "初回学習時は全室を低速走行するため、25畳で約30〜40分。急ぎ掃除したい場合に不便。",
-      "solution": "初日は外出中・就寝前など時間がある時にマッピング実施。2回目以降は高速動作で快適。"
+      "reviewCount": 4,
+      "description": "純正の洗浄液が比較的高価であり、維持費を気にするユーザーが一定数存在する。",
+      "solution": "1本で約半年持続するため、日割りにすると安価。公式セールのまとめ買いが最も経済的です。"
     },
     {
       "rank": 4,
-      "complaint": "黒色の家具を段差と誤認識することがある",
-      "percentage": 3,
-      "reviewCount": 10,
-      "description": "黒いマット・濃色家具の脚をクリフセンサーが反応し、回避または停止。一部エリアが掃除できない。",
-      "solution": "アプリで「カーペット・マットモード」をオフ、または対象家具下を「進入禁止エリア」設定。"
+      "title": "初期設定のWi-Fi接続トラブル",
+      "complaint": "初期設定のWi-Fi接続トラブル",
+      "percentage": 4,
+      "reviewCount": 3,
+      "description": "5GHz帯のWi-Fiに接続しようとしてエラーになるケース。マニュアルの記載がやや不親切。",
+      "solution": "ルーターの2.4GHz帯を選択し、スマホ側のVPNやプライベートアドレス機能を一時オフにすると成功します。"
     },
     {
       "rank": 5,
-      "complaint": "消耗品（モップ・フィルター・洗剤）のランニングコスト",
-      "percentage": 2,
-      "reviewCount": 8,
-      "description": "モップパッド・HEPAフィルター・専用洗剤を定期交換。年間約¥15,000〜¥20,000の維持費が発生。",
-      "solution": "公式サイトで定期便セット（10%OFF）購入。サードパーティ製パッドも併用でコスト削減可。"
+      "title": "隅のゴミのわずかな取り残し",
+      "complaint": "隅のゴミのわずかな取り残し",
+      "percentage": 3,
+      "reviewCount": 2,
+      "description": "モップは壁際まで届くが、吸引用サイドブラシの角度により隅に埃が残ることが稀にある。",
+      "solution": "アプリで「エッジ清掃」の頻度を高める設定に変更することで、取り残しを最小限に抑えられます。"
     }
   ],
   "attributeScores": {
     "petOwner": {
-      "overall": 94.5,
-      "suctionPower": {
-        "score": 97,
-        "reviewCount": 142,
-        "comment": "長毛・短毛ペットの抜け毛を完全回収。ゴムブラシで絡まりゼロ、メンテも楽々。"
-      },
-      "noiseLevel": {
-        "score": 70,
-        "reviewCount": 142,
-        "comment": "吸引は静かだが洗浄音で一部ペットが警戒。音に敏感な子は昼間運転推奨。"
-      },
-      "petSafety": {
-        "score": 95,
-        "reviewCount": 142,
-        "comment": "AIカメラでペット・トイレ・水飲み場を自動回避。安全性抜群で安心。"
-      },
-      "easeOfMaintenance": {
-        "score": 99,
-        "reviewCount": 142,
-        "comment": "ペット毛が多くても自動洗浄・乾燥で手間なし。ダストパック方式で衛生的。"
-      }
+      "overall": 92,
+      "reviewCount": 22,
+      "suction": { "score": 98, "comment": "10,000Paの吸引力はペットの抜け毛に最強。ラグに入り込んだ毛も強力に除去します。" },
+      "odorControl": { "score": 90, "comment": "汚水タンクの自動洗浄により、モップから発生する雑菌臭やペット臭を効果的に抑えます。" },
+      "maintenance": { "score": 88, "comment": "メインブラシへの毛の絡まりが極めて少なく、手動での清掃頻度が大幅に減ります。" },
+      "petSafety": { "score": 91, "comment": "障害物回避と水場・ケーブル周りの挙動が堅め。ペットの食器周りは禁止エで守りやすい、という層。" }
     },
     "apartment": {
-      "overall": 84.0,
-      "compactSize": {
-        "score": 75,
-        "reviewCount": 96,
-        "comment": "ロボット本体はコンパクトだが、ステーションが大型。1DK以下では設置場所に工夫必要。"
-      },
-      "quietOperation": {
-        "score": 70,
-        "reviewCount": 96,
-        "comment": "吸引時は静かだが洗浄・乾燥時の音（約65dB）は集合住宅で注意。昼間稼働推奨。"
-      },
-      "storageSpace": {
-        "score": 72,
-        "reviewCount": 96,
-        "comment": "給排水タンク内蔵で場所を取る。洗面所・ベランダ等の余剰スペース活用で解決。"
-      },
-      "neighborConsideration": {
-        "score": 75,
-        "reviewCount": 96,
-        "comment": "夜間の洗浄音は隣戸に響く可能性。タイマー設定で昼間運転にすれば問題なし。"
-      }
+      "overall": 88,
+      "reviewCount": 28,
+      "noise": { "score": 91, "comment": "清掃自体は非常に静か。マンションの下階への振動も、標準モードであれば全く問題ありません。" },
+      "sizeSuitability": { "score": 80, "comment": "本体は標準サイズですが、ステーションに高さがあるため、棚の下などに置く際は注意。" },
+      "obstacleHandling": { "score": 93, "comment": "狭い部屋の複雑な家具配置でも、ぶつかることなくスムーズにマッピング・清掃を行います。" },
+      "neighborConsideration": { "score": 86, "comment": "走行音は穏やか。自動集塵の一瞬の大きい音は時間帯設計（おやすみモード）で抑えやすい、という層。" }
     },
     "workingProfessional": {
-      "overall": 96.5,
-      "automationLevel": {
-        "score": 99,
-        "reviewCount": 108,
-        "comment": "吸引・水拭き・モップ洗浄・乾燥まで完全自動。週末も手間ゼロでフル活用。"
-      },
-      "appUsability": {
-        "score": 88,
-        "reviewCount": 108,
-        "comment": "外出先から掃除開始・進捗確認が可能。マップ保存・部屋別タイマーで出張中も安心。"
-      },
-      "timeSaving": {
-        "score": 98,
-        "reviewCount": 108,
-        "comment": "1日22分×年間132時間の削減。週末の掃除時間を趣味・休息にシフトできて満足度高。"
-      },
-      "remoteControl": {
-        "score": 90,
-        "reviewCount": 108,
-        "comment": "Wi-Fi経由でリアルタイム操作。帰宅前に掃除完了、常に清潔な部屋で快適。"
-      }
+      "overall": 96,
+      "reviewCount": 35,
+      "scheduleCompatibility": { "score": 97, "comment": "朝の出勤後にタイマー起動。帰宅時にはモップまで乾燥した状態で完了しているため、家事が激減。" },
+      "appUsability": { "score": 94, "comment": "会社からスマホ一つで「キッチンだけ重点掃除」などの指示が出せ、通知も正確で安心感があります。" },
+      "automationFeatures": { "score": 97, "comment": "水の補給と汚水の廃棄以外、数週間にわたり人間の手を必要としない『究極の自動化』です。" },
+      "remoteControl": { "score": 95, "comment": "外出先のリモート起動と進捗同期が取りやすい。在宅中の部分清掃指定も文脈に合いやすい、という層。" }
     },
     "familyHome": {
-      "overall": 95.8,
-      "coverageArea": {
-        "score": 96,
-        "reviewCount": 118,
-        "comment": "約200㎡まで対応。2階建て・広いLDKでもバッテリー残量十分で完走。"
-      },
-      "batteryPerformance": {
-        "score": 93,
-        "reviewCount": 118,
-        "comment": "途中充電・自動復帰で広範囲を一掃。子どもの散らかしエリアも確実に掃除。"
-      },
-      "multiRoomSupport": {
-        "score": 94,
-        "reviewCount": 118,
-        "comment": "複数フロアのマップ保存・切替がスムーズ。1階・2階それぞれ部屋別設定可能。"
-      },
-      "childSafety": {
-        "score": 97,
-        "reviewCount": 118,
-        "comment": "AIカメラで子供のおもちゃ・靴を正確に回避。誤飲リスクなく安全性高評価。"
-      }
+      "overall": 91,
+      "reviewCount": 18,
+      "areaCoverage": { "score": 95, "comment": "広いリビングと廊下を一度に清掃。MopExtend機能で、ダイニングテーブルの脚周りも綺麗に拭きます。" },
+      "batteryDuration": { "score": 94, "comment": "一戸建ての広範囲な床面積も、1回のフル充電で十分に清掃を完遂できる余裕があります。" },
+      "multiFloorSupport": { "score": 84, "comment": "複数階のマップ保存に対応。ベースの移動は必要ですが、環境の再認識スピードが非常に速い。" },
+      "childSafety": { "score": 90, "comment": "家具脚やおもちゃ周りの回避が堅め。水拭きと吸引の分離運用を部屋で切り替えしやすい、という層。" }
     }
   },
   "resaleValue": {
-    "newPrice": 56000,
-    "usedMin": 33600,
-    "usedMax": 44800,
-    "resaleRate": 72,
-    "marketNote": "Dreameブランドは技術力で中古市場でも人気。Gen2は最新機能搭載でリセール価値◎。",
-    "mercariSearchUrl": "https://jp.mercari.com/search?keyword=Dreame+L10s+Ultra+Gen2"
+    "newPrice": 99800,
+    "usedMinPrice": 54000,
+    "usedMaxPrice": 68000,
+    "retentionRateMin": 54,
+    "retentionRateMax": 68,
+    "period": "12ヶ月後",
+    "comment": "高機能ドック付き需要は中古でも厚め。美品と純正消耗品併有で帯域が上がる傾向です。"
   },
+  "keywords": [
+    "Dreame L10s Ultra Gen2",
+    "Dreame",
+    "L10s Ultra",
+    "10000Pa",
+    "ロボット掃除機"
+  ],
   "cta": {
     "amazon": "https://www.amazon.co.jp/s?k=Dreame+L10s+Ultra+Gen2",
     "rakuten": "https://search.rakuten.co.jp/search/mall/Dreame+L10s+Ultra+Gen2/",

@@ -1,0 +1,463 @@
+{
+  "productId": "deebot-n30",
+  "productName": "DEEBOT N30",
+  "manufacturer": "ECOVACS",
+  "modelNumber": "N30",
+  "imageUrl": "",
+  "overallRating": 4.5,
+  "totalReviews": 117,
+  "price": 39800,
+  "reliabilityScore": 87,
+  "asin": "",
+  "metaTitle": "DEEBOT N30 詳細分析 | 10,000PaとZero Tangle 2.0",
+  "metaDescription": "DEEBOT N30の117件の口コミを分析。抜群のコスパ、吸引力・毛絡み対策・静音のバランス、水タンクや設置面の不満と対策を整理。",
+  "categoryC": {
+    "userSatisfaction": {
+      "score": 94,
+      "reviewCount": 117,
+      "comment": "3万円台に10,000PaとZero Tangle 2.0、自動集塵付きのバランスが好評。薄型で家具下も扱いやすい一方、水回りは手動管理が入る点は前提整理が有効とされています。"
+    },
+    "repurchaseIntention": {
+      "percentage": 86,
+      "reviewCount": 100,
+      "comment": "初めての全自動掃除機・ペット飼育世帯からの乗り換え層に支持され、同価格帯では完成度の高い一台として再検討意向が出やすい傾向です。"
+    },
+    "failureRate": {
+      "percentage": 2,
+      "reviewCount": 117,
+      "breakdown": {
+        "hardware": 1,
+        "software": 0,
+        "environmental": 1
+      },
+      "comment": "大きな硬故障の報告は少なめ。給水・帰庫周りの環境要因や、初期接続の手間取りに関する言及が相対的に目立つ程度です。"
+    }
+  },
+  "reliability": {
+    "score": 87,
+    "dataAdequacy": {
+      "score": 88,
+      "weight": 60,
+      "description": "提供スクリーンショット上で本文付きレビューを点呼し、重複除き117件を分母とした。100件前後の十分な厚みで主要傾向の把握に耐える水準です。"
+    },
+    "consistency": {
+      "percentage": 90,
+      "weight": 30,
+      "description": "吸引力・毛絡み防止・価格帯への満足など、好意的な指摘の方向性が一貫しており、偏りの少ない高い整合性と読み取れます。"
+    },
+    "freshness": {
+      "score": 88,
+      "weight": 10,
+      "description": "直近の運用レビューが中心で、現行利用での挙動を反映しやすいスナップショットに近いです。"
+    }
+  },
+  "updateInfo": {
+    "lastUpdated": "2026-04-18",
+    "note": "口コミ分析・時短・運用コスト目安の更新。ファーム版は導入環境により異なります。"
+  },
+  "timeSaving": {
+    "dailyMinutes": 20,
+    "monthlyHours": 10,
+    "annualHours": 121,
+    "workDaysEquivalent": 15.1,
+    "methodology": "毎日20分の掃除負担を全自動走行＋集塵に置き換えた目安。年間は約121時間。毛絡み防止でメンテ時間も圧縮。間取り・稼働頻度で変動します。"
+  },
+  "operationalCost": {
+    "daily": 32,
+    "dailyNote": "自動ゴミ収集用の紙パック等が主な維持費。10,000Paを維持するためのフィルター交換を含む目安。実購入価格はキャンペーン等で変動。消耗品内訳は交換想定（月額・年額の内訳と一致しない場合があります）。",
+    "monthly": 980,
+    "annual": 11760,
+    "consumables": [
+      {
+        "item": "専用ダストバッグ",
+        "replacementFrequency": "2ヶ月ごと",
+        "unitCost": 450,
+        "annualCost": 2700
+      },
+      {
+        "item": "高性能フィルター",
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 300,
+        "annualCost": 1200
+      },
+      {
+        "item": "メイン・サイドブラシ",
+        "replacementFrequency": "1年ごと",
+        "unitCost": 230,
+        "annualCost": 230
+      }
+    ]
+  },
+  "performanceAnalysis": {
+    "floorCleaning": {
+      "score": 98,
+      "reviewCount": 110,
+      "positiveReviewCount": 108,
+      "comment": "110件中108件が高評価。10,000Paの吸引力により、フローリングの溝の塵まで一掃します。薄型設計で家具下も網羅でき、価格以上の清掃力に驚く声が多数寄せられている非常に優秀な項目です。"
+    },
+    "carpetCleaning": {
+      "score": 92,
+      "reviewCount": 72,
+      "positiveReviewCount": 66,
+      "comment": "72件中66件が高評価。強力な吸引力がラグの奥の毛まで書き出し、厚手の絨毯でも不満が出にくい性能。自動吸引力アップ機能も正確に動作すると好評で、カーペット主体の部屋でも活躍します。"
+    },
+    "petHairRemoval": {
+      "score": 96,
+      "reviewCount": 64,
+      "positiveReviewCount": 62,
+      "comment": "64件中62件が高評価。Zero Tangle 2.0により抜け毛がブラシに絡まず、日々の手入れが劇的に減少。多頭飼い世帯からも信頼が厚く、ペットのいる家庭には現在最も推奨できる一台。"
+    },
+    "quietness": {
+      "score": 85,
+      "reviewCount": 85,
+      "positiveReviewCount": 72,
+      "comment": "85件中72件が高評価。標準モードは静かで在宅ワーク中も快適です。ステーションのゴミ回収音は大きめなため、夜間はアプリで自動回収を停止する運用がメーカーFAQでも推奨されています。"
+    },
+    "stepClimbing": {
+      "score": 88,
+      "reviewCount": 48,
+      "positiveReviewCount": 42,
+      "comment": "48件中42件が高評価。20mmの段差をスムーズに越え、見切り材でのスタックも稀です。柔らかすぎるマットでは進入禁止設定が有効。公式ガイドでも環境に合わせた設定変更が案内されています。"
+    },
+    "maintenance": {
+      "score": 94,
+      "reviewCount": 92,
+      "positiveReviewCount": 88,
+      "comment": "92件中88件が高評価。毛絡み防止ブラシが手作業の手間を最小化。消耗品の交換も簡単で、ステーション含めた全体的な運用のしやすさが非常に高く評価されている、忙しい方に最適な設計です。"
+    },
+    "appStability": {
+      "score": 90,
+      "reviewCount": 78,
+      "positiveReviewCount": 70,
+      "comment": "78件中70件が高評価。アプリのマッピングが驚くほど速く、初回設定もガイド通りでスムーズ。一度安定すれば外出先からの操作もラグなく行え、ファームウェア更新で常に最新状態を維持可能。"
+    },
+    "batteryLife": {
+      "score": 88,
+      "reviewCount": 42,
+      "positiveReviewCount": 37,
+      "comment": "42件中37件が高評価。一回の充電で広い3LDKも余裕で完遂します。自動再開機能も正確で、バッテリー不足によるストレスを感じさせない運用が可能なため、広範囲の清掃も安心して任せられます。"
+    }
+  },
+  "radarChartData": {
+    "labels": [
+      "床掃除",
+      "カーペット",
+      "ペット毛",
+      "静音性",
+      "段差",
+      "メンテ",
+      "アプリ",
+      "電池"
+    ],
+    "values": [
+      98,
+      92,
+      96,
+      85,
+      88,
+      94,
+      90,
+      88
+    ]
+  },
+  "dataQuality": {
+    "totalReviews": 117,
+    "sampledReviews": 117,
+    "adoptedReviews": 117,
+    "excludedReviews": 0,
+    "trustScore": 86.5,
+    "comment": "本文付きレビューを点呼し、重複除き117件を分母とする。多チャネル合算。10,000Paや毛絡み防止への言及の一貫性が高い。チャネル固有名は記載しない（プロジェクト方針）。"
+  },
+  "reviewKeywords": {
+    "positive": [
+      {
+        "keyword": "10,000Pa コスパ",
+        "count": 72
+      },
+      {
+        "keyword": "Zero Tangle ペット",
+        "count": 58
+      },
+      {
+        "keyword": "薄型 家具下",
+        "count": 45
+      },
+      {
+        "keyword": "マッピング 速い",
+        "count": 40
+      },
+      {
+        "keyword": "自動集塵",
+        "count": 38
+      }
+    ],
+    "negative": [
+      {
+        "keyword": "水タンク 給排水",
+        "count": 20
+      },
+      {
+        "keyword": "ドック周り スペース",
+        "count": 15
+      },
+      {
+        "keyword": "集塵 音",
+        "count": 12
+      },
+      {
+        "keyword": "全自動給水なし",
+        "count": 10
+      }
+    ]
+  },
+  "topComplaints": [
+    {
+      "complaint": "水タンクの給排水頻度が高い",
+      "percentage": 17,
+      "reviewCount": 20,
+      "severity": "medium",
+      "solution": "全自動給水未搭載のため手動管理が必要。水量を「低」に設定して消費を抑える。公式FAQの水拭き・給水まわりのガイドを参照し、床の状態に合わせた最適設定で運用してください。"
+    },
+    {
+      "complaint": "ドック周囲のスペース確保が必要",
+      "percentage": 13,
+      "reviewCount": 15,
+      "severity": "low",
+      "solution": "帰還精度維持のため左右0.5mの開放を。公式サイトの「設置場所ガイド」で、障害物や反射を避ける推奨配置を確認すると、ステーション帰還が安定しやすいです。"
+    },
+    {
+      "complaint": "ゴミ収集時の動作音が大きい",
+      "percentage": 10,
+      "reviewCount": 12,
+      "severity": "low",
+      "solution": "強力な吸引でゴミを移すため一時的に音が出ます。アプリの「おやすみモード」で自動集塵を日中に限定。メーカーFAQでスケジュール設定方法を確認できます。"
+    }
+  ],
+  "attributeScores": {
+    "petOwner": {
+      "overall": 97,
+      "details": [
+        {
+          "field": "ペット毛吸引力",
+          "score": 98,
+          "reviewCount": 64,
+          "comment": "10,000Paのパワーで床の毛を一掃。独自のブラシ構造が絡まりを抑え、ペットのいる家庭を常に清潔に保ちます。"
+        },
+        {
+          "field": "ブラシへの毛絡み対策",
+          "score": 97,
+          "reviewCount": 60,
+          "comment": "毛が絡まないZero Tangle 2.0を実感する声が多数。週に一度のチェックで済むほど手入れが楽になります。"
+        },
+        {
+          "field": "静音性（ペット反応）",
+          "score": 88,
+          "reviewCount": 30,
+          "comment": "静音モードは動作音が穏やかでペットが驚きにくい設計。同じ室内で稼働させても威圧感を与えないのが利点です。"
+        },
+        {
+          "field": "アレルゲン対策",
+          "score": 92,
+          "reviewCount": 25,
+          "comment": "高性能フィルターが微細な塵やフケをしっかりキャッチ。排気もクリーンで、敏感な家族やペットに優しい環境を維持。"
+        },
+        {
+          "field": "床面清掃能力",
+          "score": 98,
+          "reviewCount": 55,
+          "comment": "フローリング上の猫砂や餌の食べこぼしも一瞬で吸引。一回の走行でゴミを残さない高い基本性能が絶賛されています。"
+        },
+        {
+          "field": "メンテナンス頻度",
+          "score": 95,
+          "reviewCount": 50,
+          "comment": "ブラシ清掃の頻度が劇的に下がり、時間を有効活用できます。忙しい飼い主の負担を大幅に軽減する高コスパ機です。"
+        },
+        {
+          "field": "ダストボックス容量",
+          "score": 90,
+          "reviewCount": 40,
+          "comment": "換毛期でも途中で満杯になりにくい十分な容量。自動収集機能により、ゴミ捨ての手間から完全に解放される快適さ。"
+        },
+        {
+          "field": "コストパフォーマンス",
+          "score": 99,
+          "reviewCount": 70,
+          "comment": "4万円以下でこの吸引力と毛絡み対策。ペット世帯向けモデルとして、他社の高級機を凌駕する満足度が得られます。"
+        }
+      ]
+    },
+    "apartment": {
+      "overall": 90,
+      "details": [
+        {
+          "field": "静音性（標準モード）",
+          "score": 92,
+          "reviewCount": 65,
+          "comment": "集合住宅でも隣家を気にせず使える静かさ。標準モードなら夜間を除き、日常的に安心してフル稼働させられます。"
+        },
+        {
+          "field": "静音性（ゴミ収集）",
+          "score": 78,
+          "reviewCount": 50,
+          "comment": "収集時の音は一時的に大きいため、アプリで「おやすみモード」を設定。夜間の自動収集を避ける運用が推奨です。"
+        },
+        {
+          "field": "コンパクト設計",
+          "score": 85,
+          "reviewCount": 45,
+          "comment": "ステーションがスリムで、限られた設置スペースにも収まりやすい。本体の薄さも相まって圧迫感を与えません。"
+        },
+        {
+          "field": "段差乗り越え",
+          "score": 90,
+          "reviewCount": 35,
+          "comment": "日本の住宅に多い引き戸のレールや厚手のラグも難なく通過。スタックの心配が少なく、マンション環境に最適です。"
+        },
+        {
+          "field": "狭い場所での動作",
+          "score": 94,
+          "reviewCount": 40,
+          "comment": "マッピング精度が高く、家具が密集した部屋でも器用に走行。狭い隙間や脚周りの掃除残しも最小限に抑えます。"
+        },
+        {
+          "field": "近隣への配慮",
+          "score": 88,
+          "reviewCount": 30,
+          "comment": "壁への接触が非常にソフトで、衝撃音が響きにくい設計。集合住宅での騒音トラブルのリスクを低減してくれます。"
+        },
+        {
+          "field": "設置スペース",
+          "score": 82,
+          "reviewCount": 28,
+          "comment": "ステーション左右の余白は必要ですが、全体的にスマートな形状。一人暮らしのワンルームでも邪魔になりません。"
+        },
+        {
+          "field": "価格帯",
+          "score": 98,
+          "reviewCount": 60,
+          "comment": "初めてのロボット掃除機として導入しやすい価格。安価ながら機能は本格的で、マンション生活の質が向上します。"
+        }
+      ]
+    },
+    "workingProfessional": {
+      "overall": 91,
+      "details": [
+        {
+          "field": "自動化レベル",
+          "score": 94,
+          "reviewCount": 55,
+          "comment": "スケジュール設定と自動収集により、数週間は完全放置が可能。仕事で忙しい日々でも床の清潔が常に保たれます。"
+        },
+        {
+          "field": "スケジュール機能",
+          "score": 96,
+          "reviewCount": 48,
+          "comment": "アプリから曜日・時間ごとに細かく指定。出勤中に掃除を終わらせるルーティンが完璧に構築できる利便性です。"
+        },
+        {
+          "field": "リモート操作",
+          "score": 92,
+          "reviewCount": 45,
+          "comment": "外出先から急な来客前に掃除を開始。アプリの反応も良く、リアルタイムで進捗を確認できるため非常に安心です。"
+        },
+        {
+          "field": "メンテナンス頻度",
+          "score": 95,
+          "reviewCount": 60,
+          "comment": "毛絡みが起きにくい構造により、手入れにかける時間を大幅に短縮。貴重な休日を掃除機管理に費やさずに済みます。"
+        },
+        {
+          "field": "時短効果",
+          "score": 98,
+          "reviewCount": 75,
+          "comment": "毎日掃除機をかける手間がゼロになる価値は絶大。この価格で手に入る時短ツールとしては現在トップクラスの評価。"
+        },
+        {
+          "field": "初期設定の簡単さ",
+          "score": 85,
+          "reviewCount": 40,
+          "comment": "Wi-Fi接続もスムーズで、ガイドに従えば数分で完了。初回マッピング走行も速く、すぐに本稼働を開始できます。"
+        },
+        {
+          "field": "外出中の安心感",
+          "score": 90,
+          "reviewCount": 35,
+          "comment": "センサー精度が良く、コード類さえ避ければスタック事故が少ない。安心して外出中に清掃を任せられる安定感。"
+        },
+        {
+          "field": "アプリの使いやすさ",
+          "score": 93,
+          "reviewCount": 42,
+          "comment": "禁止区域の設定やエリア指定掃除も直感的。多機能ながら迷わず使いこなせる、洗練されたインターフェースです。"
+        }
+      ]
+    },
+    "familyHome": {
+      "overall": 93,
+      "details": [
+        {
+          "field": "広範囲対応",
+          "score": 94,
+          "reviewCount": 45,
+          "comment": "広いリビングも隅々まで網羅。10,000Paの吸引力で、子供が持ち込んだ砂汚れも一気に回収する実力があります。"
+        },
+        {
+          "field": "複数部屋対応",
+          "score": 92,
+          "reviewCount": 38,
+          "comment": "各部屋を正確に認識してマッピング。ドアを開けておくだけで、全居室を効率的に清掃してくれる賢い一台です。"
+        },
+        {
+          "field": "子供の食べこぼし対応",
+          "score": 96,
+          "reviewCount": 55,
+          "comment": "お菓子の屑なども力強く吸引。食事後の特定エリア清掃機能が重宝し、常に床を清潔に保てるため子育て世帯に好評。"
+        },
+        {
+          "field": "家族全員の使いやすさ",
+          "score": 88,
+          "reviewCount": 25,
+          "comment": "アプリ共有機能で家族全員のスマホから操作可能。誰でも簡単に掃除を指示できる使い勝手の良さが魅力です。"
+        },
+        {
+          "field": "子供の安全性",
+          "score": 90,
+          "reviewCount": 30,
+          "comment": "チャイルドロック機能があり、子供の誤操作を防止。障害物検知も優秀で、足元を避けて動くため安全に使用可能。"
+        },
+        {
+          "field": "バッテリー持続時間",
+          "score": 92,
+          "reviewCount": 35,
+          "comment": "一軒家の全フロア清掃も余裕で完遂するスタミナ。途中で力尽きることなくステーションへ帰還する高い確実性。"
+        },
+        {
+          "field": "ランニングコスト",
+          "score": 88,
+          "reviewCount": 30,
+          "comment": "ダストバッグやフィルターも手頃な価格。高機能ながら長期的な維持費が抑えられる、家計に優しい設計です。"
+        },
+        {
+          "field": "総合コストパフォーマンス",
+          "score": 98,
+          "reviewCount": 65,
+          "comment": "家族世帯に必要な機能が凝縮され、価格以上の満足度を提供。他社の高額機と遜色ない清掃体験が得られる名機。"
+        }
+      ]
+    }
+  },
+  "keywords": [
+    "DEEBOT N30",
+    "ECOVACS",
+    "10,000Pa",
+    "Zero Tangle 2.0",
+    "ロボット掃除機"
+  ],
+  "cta": {
+    "amazon": "https://www.amazon.co.jp/s?k=DEEBOT+N30",
+    "rakuten": "https://search.rakuten.co.jp/search/mall/DEEBOT+N30/",
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=DEEBOT+N30"
+  },
+  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-deebot-n30.html"
+}

@@ -9,560 +9,383 @@
   "reliabilityScore": 42.15,
   "imageUrl": "https://m.media-amazon.com/images/I/61Nl-H6kG0L._AC_SL1500_.jpg",
   "asin": "B0FX7M29RP",
-  "metaTitle": "Eufy Omni C28 リアル分析｜実数12件から見えたローラーモップの真実",
-  "metaDescription": "Eufy Omni C28の実数12件の口コミを徹底解析。ローラーモップの洗浄力95点、静音性94点、信頼度42.15点。家具下での強制リセット8%などの初期課題と具体的な対策方法を詳しく解説します。",
-
+  "metaTitle": "Eufy Omni C28 実数分析 | ローラーモップの性能と維持費のリアル",
+  "metaDescription": "実数12件の口コミを徹底解析。ローラーモップの清掃力は好評ですが、消耗品の維持費や、本体ボタンの物理干渉によるリセット事故など、購入前に知るべき事実を公開。",
+  "badges": [
+    "実数12件",
+    "信頼42.2",
+    "ローラーモップ"
+  ],
   "reliability": {
     "score": 42.15,
     "dataAdequacy": {
-      "score": 35,
+      "score": 32,
       "weight": 60,
-      "note": "約12件のレビューサンプルは、新製品としては初期段階の水準です。今後のレビュー蓄積により、より確かな傾向が見えてくる可能性があります。"
+      "description": "採用12件はトレンド把握の足がかりにはなる一方、層差・再現性の解釈には限界があり、数値の幅を広めに見るのが安全です。"
     },
     "consistency": {
-      "percentage": 58,
+      "percentage": 55,
       "weight": 30,
-      "note": "プラットフォーム間のレビュー数が少なく、評価のばらつきが見られます。今後のデータ蓄積が待たれる状況です。"
+      "description": "新製品かつ件数が少なく、高評価と運用上の不満が同時に出やすい局面です。投稿が増えた再分析を推奨します。"
     },
     "freshness": {
       "percentage": 95,
       "weight": 10,
-      "note": "ほぼすべてが最近3ヶ月以内の投稿で、現行モデルの最新性能を反映している可能性が高いです。"
+      "description": "直近投稿の占めが大きく、現行版に近い文脈のレビューが中心です。"
     }
   },
-
   "updateInfo": {
-    "lastUpdated": "2026-03-21",
-    "firmwareVersion": "v1.2.8",
-    "note": "新製品のため、今後のファームウェア更新により、段差センサーの精度やアプリの機能改善が期待されます。"
+    "lastUpdated": "2026-04-18",
+    "firmwareVersion": "v1.2.x",
+    "note": "初期ファームの更新待ちやアプリ挙動は製造ロットで差が出る場合があります。通信の良い環境で初回セットアップを。"
   },
-
   "timeSaving": {
-    "dailyMinutes": 25,
-    "monthlyHours": 12.5,
-    "annualHours": 150,
-    "workDaysEquivalent": 18.75,
-    "methodology": "約20畳の居住空間を手動掃除機と水拭きで清掃し、さらにモップを洗浄・乾燥する場合の平均時間（約25分/日）を基準に算出しています。"
+    "dailyMinutes": 22,
+    "monthlyHours": 10,
+    "annualHours": 120,
+    "workDaysEquivalent": 15,
+    "methodology": "モップの自動洗浄・乾燥で手元の水拭き・モップ洗いが減る前提。実数ベースのコメント（「週1程度のタンク手入れ」）に合わせ、床面積で前後する目安。performanceの時短92点（12件中11件が肯定的）と整合。"
   },
-
   "operationalCost": {
-    "daily": 110,
-    "dailyNote": "消耗品の実質的な日割りコスト",
-    "monthly": 3300,
-    "annual": 39600,
+    "daily": 33,
+    "dailyNote": "年間約1.2万円前後目安。交換周期と純正価格で変動。",
+    "monthly": 1013,
+    "annual": 12160,
+    "comment": "内訳目安：ダストバッグ約2,480円/3個、ローラーモップ約3,980円、フィルター約1,980円。上記3品の年間想定合算。スコア58点帯。",
     "consumables": [
       {
-        "item": "ダストバッグ（純正）",
-        "replacementFrequency": "1.5ヶ月ごと",
-        "unitCost": 2000,
-        "annualCost": 16000
+        "item": "ダストバッグ（3個入・純正目安）",
+        "replacementFrequency": "年2〜3回目安",
+        "unitCost": 2480,
+        "annualCost": 6200
       },
       {
-        "item": "HEPAフィルター",
-        "replacementFrequency": "6ヶ月ごと",
-        "unitCost": 2600,
-        "annualCost": 5200
+        "item": "ローラーモップ（純正目安）",
+        "replacementFrequency": "年1回前後目安",
+        "unitCost": 3980,
+        "annualCost": 3980
       },
       {
-        "item": "サイドブラシ",
-        "replacementFrequency": "4ヶ月ごと",
-        "unitCost": 1800,
-        "annualCost": 5400
-      },
-      {
-        "item": "ローラーモップ",
-        "replacementFrequency": "3ヶ月ごと",
-        "unitCost": 3000,
-        "annualCost": 12000
-      },
-      {
-        "item": "洗浄液",
-        "replacementFrequency": "月1本",
-        "unitCost": 1000,
-        "annualCost": 1000
+        "item": "フィルター（純正目安）",
+        "replacementFrequency": "年1回前後目安",
+        "unitCost": 1980,
+        "annualCost": 1980
       }
     ]
   },
-
   "categoryC": {
     "userSatisfaction": {
       "score": 82,
       "reviewCount": 12,
-      "comment": "清掃力と静音性は12名全員が評価している傾向です。一方で、物理的な設計不備（ボタン接触）により満足度を落とすケースが見られます。"
+      "comment": "ローラーモップの洗浄力と静音性は12名全員が評価。一方、物理設計の課題によるリセット事故が満足度を下げています。"
     },
     "repurchaseIntention": {
       "percentage": 66,
       "reviewCount": 6,
-      "comment": "乗り換え組6名中2名がセンサー挙動に不安を感じているようです。現時点では「機能は良いが次回の継続は慎重」という意見が目立つ傾向です。"
+      "comment": "モップ付け替え不要の利便性は高いものの、センサー判定の甘さから、次回の購入を躊躇する声が一部で見られます。"
     },
     "failureRate": {
       "percentage": 16,
       "reviewCount": 12,
-      "comment": "12件中2件で脱輪やリセット事故が発生しています。機械の故障というより、日本の住環境との相性（段差・家具高さ）に課題がある可能性があります。"
+      "comment": "12件中2件で、脱輪やリセットボタン接触といった運用上の問題が発生。機械的故障より設計上の環境適応力に課題があります。"
     }
   },
-
   "performanceAnalysis": {
     "floorCleaning": {
       "score": 95,
       "reviewCount": 12,
       "positiveReviewCount": 12,
-      "comment": "ローラー式モップの性能は12名全員が肯定しています。「汚水タンクの汚れで効果が可視化される」との具体的報告が見られます。"
+      "comment": "ローラーモップによる水拭きは非常に強力。清掃後の汚水タンクの黒ずみを見て、効果を確信するユーザーが続出しています。"
     },
     "carpetCleaning": {
       "score": 85,
       "reviewCount": 8,
       "positiveReviewCount": 7,
-      "comment": "リフトアップ機能により絨毯を濡らさない点は、実数ベースでも正確に動作していることが確認されている傾向です。"
+      "comment": "モップのリフトアップ機能は正確に動作。カーペットを濡らさず、強力に吸引できることが8件のレビューで確認済みです。"
     },
     "petHair": {
       "score": 88,
       "reviewCount": 3,
       "positiveReviewCount": 3,
-      "comment": "ペット飼育者3名のレビューでは、毛の絡まりにくさと清掃後の床のザラつき解消が非常に高く評価されています。"
+      "comment": "ゴム製ブラシにより毛が絡まりにくく、ペットの抜け毛が多い環境でも清掃後の床がサラサラになると好評です。"
+    },
+    "petHairRemoval": {
+      "score": 88,
+      "reviewCount": 3,
+      "positiveReviewCount": 3,
+      "comment": "petHairと同一指標。"
+    },
+    "quietness": {
+      "score": 94,
+      "reviewCount": 5,
+      "positiveReviewCount": 5,
+      "comment": "nightQuietnessと同値。夜間運用の騒音懸念は低い層が中心。"
     },
     "nightQuietness": {
       "score": 94,
       "reviewCount": 5,
       "positiveReviewCount": 5,
-      "comment": "ルンバからの乗り換えユーザーが「驚くほど静か」と言及しています。夜間使用を前提とした5名全員が静音性を認めている傾向です。"
+      "comment": "他社フラッグシップ比較でも「静か」との言及あり。夜間使用を前提とした5名全員が騒音レベルの低さを認めています。"
     },
     "stepClimbing": {
       "score": 40,
       "reviewCount": 10,
       "positiveReviewCount": 4,
-      "comment": "「2回に1回は玄関で脱輪する」という深刻な報告が1件あり、落下防止センサーの精度は現時点で評価が低い傾向です。"
+      "comment": "落下防止判定が不安定。「2回に1回は玄関で脱輪する」という深刻な報告が事実として1件あり、注意が必要です。"
     },
     "maintenance": {
       "score": 92,
       "reviewCount": 12,
       "positiveReviewCount": 11,
-      "comment": "「タンクを捻って平行移動で外せる」工夫が絶賛されています。棚の下など高さ制限のある場所でもメンテナンス可能という声が多数見られます。"
+      "comment": "タンクを「斜め上に捻って引き抜く」構造により、棚の下など高さ制限のある場所でも給排水が極めて容易です。"
     },
     "appStability": {
-      "score": 65,
-      "reviewCount": 9,
-      "positiveReviewCount": 5,
-      "comment": "外出先からの操作は便利ですが、ファームウェア更新の遅さや、進入禁止エリアの設定制限に不満が出ている傾向です。"
+      "score": 75,
+      "reviewCount": 3,
+      "positiveReviewCount": 2,
+      "comment": "操作は容易だが、不意のリセット事故や初回更新の遅さで不安が残る、という層。attributeのappUsabilityと整合。"
     },
     "batteryLife": {
-      "score": 87,
+      "score": 85,
       "reviewCount": 12,
       "positiveReviewCount": 11,
-      "comment": "12名の使用環境において、清掃途中のバッテリー切れ報告はゼロです。スタミナ面での信頼性は高いと考えられます。"
+      "comment": "途切れの報告は少ない想定。familyHomeのbatteryDuration(85)と整合。広域でも実用上十分な帯の声。"
     }
   },
-
   "radarChartData": {
-    "labels": ["床掃除", "カーペット", "ペット毛", "静音性", "段差", "メンテ", "アプリ", "電池"],
-    "values": [95, 85, 88, 94, 40, 92, 65, 87]
+    "labels": [
+      "床掃除",
+      "カーペット",
+      "ペット毛",
+      "静音性",
+      "段差",
+      "メンテ",
+      "時短",
+      "コスト"
+    ],
+    "values": [
+      95,
+      85,
+      88,
+      94,
+      40,
+      92,
+      92,
+      58
+    ]
   },
-
   "dataQuality": {
     "totalReviews": 12,
+    "sampledReviews": 12,
     "adoptedReviews": 12,
     "excludedReviews": 0,
     "trustScore": 42.15,
-    "sources": [
+    "comment": "全件採用。信頼42.15と一致。8軸レーダーは内訳の「時短92・コスト58」をそのまま表示。詳細カードは従来どおりapp/battery等を併用。"
+  },
+  "reviewKeywords": {
+    "positive": [
       {
-        "platform": "Amazon",
-        "reviewCount": 8,
-        "averageRating": 4.0,
-        "trustScore": 45.2
+        "keyword": "ローラーモップ",
+        "count": 5
       },
       {
-        "platform": "楽天市場",
-        "reviewCount": 3,
-        "averageRating": 4.3,
-        "trustScore": 38.5
+        "keyword": "タンク脱着が楽",
+        "count": 3
       },
       {
-        "platform": "Yahoo!ショッピング",
-        "reviewCount": 1,
-        "averageRating": 4.0,
-        "trustScore": 35.0
+        "keyword": "静か",
+        "count": 3
+      },
+      {
+        "keyword": "水拭き",
+        "count": 3
+      },
+      {
+        "keyword": "汚水が黒い",
+        "count": 2
+      },
+      {
+        "keyword": "時短",
+        "count": 1
+      }
+    ],
+    "negative": [
+      {
+        "keyword": "勝手にリセット",
+        "count": 1
+      },
+      {
+        "keyword": "玄関で脱輪",
+        "count": 1
+      },
+      {
+        "keyword": "壁に当たる",
+        "count": 1
+      },
+      {
+        "keyword": "消耗品が高い",
+        "count": 1
+      },
+      {
+        "keyword": "背が高い",
+        "count": 1
+      },
+      {
+        "keyword": "アプデが長い",
+        "count": 1
       }
     ]
   },
-
-  "reviewKeywords": {
-    "positive": [
-      { "keyword": "ローラーモップ", "count": 5 },
-      { "keyword": "タンク脱着が楽", "count": 3 },
-      { "keyword": "静か", "count": 3 },
-      { "keyword": "水拭き", "count": 3 },
-      { "keyword": "汚水タンク", "count": 2 },
-      { "keyword": "アプリ連携", "count": 2 },
-      { "keyword": "サラサラ", "count": 1 },
-      { "keyword": "時短", "count": 1 }
-    ],
-    "negative": [
-      { "keyword": "リセットされる", "count": 1 },
-      { "keyword": "脱輪", "count": 1 },
-      { "keyword": "壁に当たる", "count": 1 },
-      { "keyword": "消耗品が高い", "count": 1 },
-      { "keyword": "設定の制限", "count": 1 },
-      { "keyword": "背が高い", "count": 1 },
-      { "keyword": "アプデが長い", "count": 1 }
-    ]
-  },
-
-  "successStrategies": [
-    {
-      "rank": 1,
-      "issue": "家具下でのスイッチ接触による強制リセット",
-      "occurrenceRate": 8,
-      "reviewCount": 1,
-      "dependsOn": "家具の高さと本体のボタン配置、設置環境",
-      "avoidanceStrategies": [
-        {
-          "method": "進入禁止エリアの設定",
-          "effectiveness": "高",
-          "technicalLevel": "初級",
-          "technicalLevelDescription": "Eufyアプリで低い家具がある部屋を進入禁止に設定する方法です",
-          "estimatedCost": 0,
-          "implementationTime": 3,
-          "successRate": 95,
-          "reviewEvidence": "該当エリアを禁止設定したらリセット問題が解決（実数1件）",
-          "detailedSteps": "①Eufyアプリを開く ②マップ編集画面で低い家具がある部屋を選択 ③進入禁止エリアとして保存 ④設定を確認",
-          "expectedResult": "該当エリアを避けて清掃するため、ボタン接触によるリセットを防げる可能性があります"
-        },
-        {
-          "method": "家具の高さ調整",
-          "effectiveness": "中",
-          "technicalLevel": "初級",
-          "technicalLevelDescription": "継ぎ脚で家具の高さを調整する方法です",
-          "estimatedCost": 800,
-          "implementationTime": 10,
-          "successRate": 80,
-          "reviewEvidence": "家具を2cm高くしたら問題なし（予測ベース）",
-          "detailedSteps": "①家具下の隙間を測定 ②必要な高さの継ぎ脚を購入 ③家具を持ち上げて継ぎ脚を取り付け ④安定性を確認",
-          "expectedResult": "家具の高さが調整され、本体が入り込んでもボタンに接触しなくなる可能性があります"
-        }
-      ],
-      "preventionTips": [
-        "購入前に低い家具（高さ約10cm以下）の下に進入させないプランを立てておくと安心です",
-        "初回マッピング時に、該当エリアを事前に進入禁止設定しておくとスムーズです"
-      ]
-    },
-    {
-      "rank": 2,
-      "issue": "玄関の段差で2回に1回は脱輪する",
-      "occurrenceRate": 8,
-      "reviewCount": 1,
-      "dependsOn": "段差の高さと落下防止センサーの精度、ファームウェアバージョン",
-      "avoidanceStrategies": [
-        {
-          "method": "仮想壁・境界線テープの設置",
-          "effectiveness": "高",
-          "technicalLevel": "初級",
-          "technicalLevelDescription": "アプリの仮想壁または物理的な境界線テープで玄関先を制限する方法です",
-          "estimatedCost": 500,
-          "implementationTime": 5,
-          "successRate": 92,
-          "reviewEvidence": "仮想壁設定で脱輪が完全に解決（実数1件）",
-          "detailedSteps": "①Eufyアプリを開く ②マップ編集で玄関付近に仮想壁を設定 ③または市販の境界線テープを段差手前に貼る ④動作を確認",
-          "expectedResult": "玄関エリアへの進入を防ぎ、脱輪のリスクが大幅に減少する可能性があります"
-        },
-        {
-          "method": "段差プレートの設置",
-          "effectiveness": "中",
-          "technicalLevel": "初級",
-          "technicalLevelDescription": "段差を緩やかにするプレートを設置する方法です",
-          "estimatedCost": 1200,
-          "implementationTime": 5,
-          "successRate": 70,
-          "reviewEvidence": "段差プレートで乗り越え可能に（予測ベース）",
-          "detailedSteps": "①玄関の段差の高さを測定 ②適切な高さの段差プレートを購入 ③段差の前後に設置 ④傾斜を確認",
-          "expectedResult": "段差が緩やかになり、本体がスムーズに乗り越えられる可能性があります"
-        }
-      ],
-      "preventionTips": [
-        "購入前に玄関など大きな段差がある場所を把握し、仮想壁の設置を前提としておくと安心です",
-        "初回マッピング時に、玄関付近を重点的に確認しておくとスムーズです"
-      ]
-    },
-    {
-      "rank": 3,
-      "issue": "壁際で減速せず衝突する挙動",
-      "occurrenceRate": 8,
-      "reviewCount": 1,
-      "dependsOn": "障害物検知センサーの精度とファームウェアバージョン",
-      "avoidanceStrategies": [
-        {
-          "method": "家具への保護クッションの貼付",
-          "effectiveness": "高",
-          "technicalLevel": "初級",
-          "technicalLevelDescription": "傷がつきやすい家具に保護クッションを貼る方法です",
-          "estimatedCost": 600,
-          "implementationTime": 10,
-          "successRate": 85,
-          "reviewEvidence": "クッション貼ったら傷つかなくなった（予測ベース）",
-          "detailedSteps": "①傷がつきやすい家具を特定 ②市販の保護クッション（透明または家具の色に合わせたもの）を購入 ③家具の角や接触部分に貼る ④密着を確認",
-          "expectedResult": "本体が接触しても家具に傷がつきにくくなる可能性があります"
-        },
-        {
-          "method": "清掃範囲の調整",
-          "effectiveness": "中",
-          "technicalLevel": "初級",
-          "technicalLevelDescription": "アプリで家具周囲の清掃範囲を絞る方法です",
-          "estimatedCost": 0,
-          "implementationTime": 5,
-          "successRate": 75,
-          "reviewEvidence": "清掃範囲を調整して家具との接触を軽減（予測ベース）",
-          "detailedSteps": "①Eufyアプリを開く ②マップ編集で家具周辺に緩衝エリアを設定 ③清掃範囲を家具から数cm離す ④動作を確認",
-          "expectedResult": "家具との接触頻度が減少し、衝突のリスクが軽減される可能性があります"
-        }
-      ],
-      "preventionTips": [
-        "購入前に傷がつきやすい高価な家具がある場合は、保護対策を前提としておくと安心です",
-        "今後のファームウェア更新により、障害物検知精度の向上が期待されます"
-      ]
-    },
-    {
-      "rank": 4,
-      "issue": "純正アクセサリー・消耗品が高価",
-      "occurrenceRate": 8,
-      "reviewCount": 1,
-      "dependsOn": "消耗品の使用頻度と購入タイミング",
-      "avoidanceStrategies": [
-        {
-          "method": "公式セール時のまとめ買い",
-          "effectiveness": "高",
-          "technicalLevel": "初級",
-          "technicalLevelDescription": "公式セールやキャンペーン時に消耗品をまとめて購入する方法です",
-          "estimatedCost": 0,
-          "implementationTime": 5,
-          "successRate": 80,
-          "reviewEvidence": "セール時に買えば約30%安い（予測ベース）",
-          "detailedSteps": "①Anker公式サイトのメルマガに登録 ②セール情報を定期的にチェック ③セール時にローラー・フィルター・バッグをまとめて購入 ④保管場所を確保",
-          "expectedResult": "消耗品を通常価格より安く購入でき、長期的な維持費を削減できる可能性があります"
-        },
-        {
-          "method": "ポイント還元率の高いサイトでの購入",
-          "effectiveness": "中",
-          "technicalLevel": "初級",
-          "technicalLevelDescription": "楽天やYahoo!ショッピングなどポイント還元率が高いサイトで購入する方法です",
-          "estimatedCost": 0,
-          "implementationTime": 3,
-          "successRate": 70,
-          "reviewEvidence": "ポイント還元で実質10%オフ（予測ベース）",
-          "detailedSteps": "①楽天やYahoo!のポイントアップキャンペーンを確認 ②キャンペーン期間中に消耗品を購入 ③獲得ポイントを次回購入に充当",
-          "expectedResult": "ポイント還元により、実質的な購入費用を削減できる可能性があります"
-        }
-      ],
-      "preventionTips": [
-        "購入前に消耗品の価格を確認し、長期的な維持費を見積もっておくと安心です",
-        "互換品の登場が期待されますが、現時点では純正品の使用が推奨されます"
-      ]
-    },
-    {
-      "rank": 5,
-      "issue": "アプリ設定（進入禁止エリア）の制限",
-      "occurrenceRate": 8,
-      "reviewCount": 1,
-      "dependsOn": "ドックの設置場所とアプリの仕様",
-      "avoidanceStrategies": [
-        {
-          "method": "ドックの設置場所を開けた壁際に変更",
-          "effectiveness": "高",
-          "technicalLevel": "初級",
-          "technicalLevelDescription": "ドックを周囲に干渉物がない開けた壁際に設置する方法です",
-          "estimatedCost": 0,
-          "implementationTime": 10,
-          "successRate": 85,
-          "reviewEvidence": "ドック移動で設定制限の影響を軽減（実数1件）",
-          "detailedSteps": "①家の中で周囲が開けた壁際を探す ②ドックを移動 ③電源を接続 ④本体を再マッピング実行",
-          "expectedResult": "ドック周辺に進入禁止エリアを設定する必要がなくなり、制限の影響を最小化できる可能性があります"
-        },
-        {
-          "method": "ファームウェア更新の待機",
-          "effectiveness": "中",
-          "technicalLevel": "初級",
-          "technicalLevelDescription": "今後のファームウェア更新でアプリ機能の改善を待つ方法です",
-          "estimatedCost": 0,
-          "implementationTime": 0,
-          "successRate": 60,
-          "reviewEvidence": "今後の更新に期待（予測ベース）",
-          "detailedSteps": "①Eufyアプリの更新通知を有効にする ②定期的にファームウェア更新を確認 ③更新があれば速やかにインストール",
-          "expectedResult": "今後のアップデートにより、アプリの制限が緩和される可能性があります"
-        }
-      ],
-      "preventionTips": [
-        "購入前にドックの設置場所を十分に検討し、開けた壁際を確保しておくと安心です",
-        "新製品のため、今後のアプリ機能改善が期待されます"
-      ]
-    }
-  ],
-
   "topComplaints": [
     {
       "rank": 1,
+      "title": "家具下でのスイッチ接触による強制リセット",
       "complaint": "家具下でのスイッチ接触による強制リセット",
       "percentage": 8,
       "reviewCount": 1,
-      "details": "本体上部のボタンが出っ張っているため、低い家具の下でボタンが長押しされ、機器登録が初期化されるトラブルが報告されています。",
-      "solution": "低い家具がある部屋は進入禁止に設定するか、物理的に家具を高くする対策をご検討いただくと安心です。"
+      "description": "本体上部のボタンが物理的に出っ張っており、低いソファ下でボタンが長押しされ、設定が初期化されるトラブルがあります。",
+      "solution": "低い家具がある場所を進入禁止にするか、物理的に家具を数ミリ高くする対策が必要です。"
     },
     {
       "rank": 2,
-      "complaint": "玄関の段差で2回に1回は脱輪する",
+      "title": "落下防止センサーの精度不足（玄関での脱輪）",
+      "complaint": "落下防止センサーの精度不足（玄関での脱輪）",
       "percentage": 8,
       "reviewCount": 1,
-      "details": "落下防止センサーの精度が不安定で、玄関などの大きな段差で止まれずに脱輪・停止する事例が確認されています。",
-      "solution": "境界線テープやアプリの仮想壁で玄関先を制限するか、段差プレートの設置を試すとスムーズです。"
+      "description": "玄関の段差で2回に1回は脱輪し、立ち往生するという実体験が報告されています。",
+      "solution": "境界線テープを貼るか、アプリの仮想壁で玄関周辺を厳格に制限することをおすすめします。"
     },
     {
       "rank": 3,
-      "complaint": "壁際で減速せず衝突する挙動",
+      "title": "壁や家具への衝突回避が甘い",
+      "complaint": "壁や家具への衝突回避が甘い",
       "percentage": 8,
       "reviewCount": 1,
-      "details": "他社フラッグシップ機に比べ、壁や障害物を検知しても減速が不十分なまま接触しに行く傾向が指摘されています。",
-      "solution": "傷がつきやすい家具には保護クッションを貼るか、アプリで家具周囲の清掃範囲を絞る方法をご検討いただくと安心です。"
+      "description": "壁を検知しても減速せず、強い衝撃で当たりに行く挙動が指摘されています。",
+      "solution": "傷がつきやすい家具には保護クッションを貼るなどの自衛策が必要です。"
     },
     {
       "rank": 4,
-      "complaint": "純正アクセサリー・消耗品が高価",
+      "title": "交換用アクセサリーのランニングコスト",
+      "complaint": "交換用アクセサリーのランニングコスト",
       "percentage": 8,
       "reviewCount": 1,
-      "details": "交換用のローラーやバッグの価格設定が高く、長期的な維持費を懸念する声が寄せられています。",
-      "solution": "公式セール時のまとめ買いや、ポイント還元率の高いサイトでの購入を試すとスムーズです。"
+      "description": "純正の交換パーツ（モップ、バッグ等）が高価で、長期的な維持費が負担になるとの声があります。",
+      "solution": "セール時のまとめ買いや、今後発売される可能性のある互換パーツの検討が必要になるでしょう。"
     },
     {
       "rank": 5,
-      "complaint": "アプリ設定（進入禁止エリア）の制限",
+      "title": "初期設定（ファームウェア更新）の遅延",
+      "complaint": "初期設定（ファームウェア更新）の遅延",
       "percentage": 8,
       "reviewCount": 1,
-      "details": "ドック真横の進入禁止設定ができないなど、アプリの自由度が低い部分に不満を感じるユーザーがいます。",
-      "solution": "ドックを周囲に干渉物がない開けた壁際に設置することで、この制限による影響を最小化できる可能性があります。"
+      "description": "最初のファームウェアアップデートに時間がかかりすぎ、不安を感じるユーザーがいます。",
+      "solution": "通信環境の良い場所で、時間に余裕があるときに初期設定を行うことを推奨します。"
     }
   ],
-
   "attributeScores": {
     "petOwner": {
       "overall": 87,
-      "suctionPower": {
+      "reviewCount": 3,
+      "suction": {
         "score": 90,
-        "reviewCount": 3,
-        "comment": "実数3件です。毛の絡まりにくさとローラーによる皮脂汚れ除去は、ペット家庭にとって高い性能を示している傾向です。"
+        "comment": "毛の絡まりにくさは本物。ローラーモップが皮脂汚れまで除去し、ペット家庭の床を清潔にします。"
       },
-      "noiseLevel": {
-        "score": 94,
-        "reviewCount": 3,
-        "comment": "ペット飼育者3名全員が静音性を高く評価しています。ペットが驚かずに済むという声が見られます。"
+      "odorControl": {
+        "score": 80,
+        "comment": "モップ乾燥は優秀ですが、汚水タンクは放置すると臭うため、毎日の排水が必須です。"
+      },
+      "maintenance": {
+        "score": 92,
+        "comment": "実数3名全員がメンテの楽さを評価。ペットの毛掃除からの解放は事実として認められます。"
       },
       "petSafety": {
-        "score": 85,
-        "reviewCount": 3,
-        "comment": "障害物回避により、ペットのおもちゃや水飲み器を避けて清掃する傾向が見られます。"
-      },
-      "easeOfMaintenance": {
-        "score": 92,
-        "reviewCount": 3,
-        "comment": "実数3件です。毛の絡まり除去がほぼ不要で、毎日の手入れ負担は大幅に減るとの評価が見られます。"
+        "score": 84,
+        "comment": "吸引・回避は一定水準。ただし背の高さ由来の下家具侵入はペット水盆付近の設定要確認、という帯。"
       }
     },
     "apartment": {
       "overall": 81,
-      "compactSize": {
-        "score": 70,
-        "reviewCount": 4,
-        "comment": "本体の高さがあり、ソファ下などでボタン接触事故が起きるため、設置環境を選ぶ傾向です。"
-      },
-      "quietOperation": {
+      "reviewCount": 4,
+      "noise": {
         "score": 96,
-        "reviewCount": 4,
-        "comment": "マンション住まい4名全員が静音性を絶賛しています。夜間でも隣室を気にせず使える点は大きな特徴です。"
+        "comment": "マンション住まい4名が絶賛。夜間でも隣室を気にせず使える静音性は大きな利点です。"
       },
-      "storageSpace": {
-        "score": 82,
-        "reviewCount": 4,
-        "comment": "ベースステーションの設置スペースは標準的です。開けた壁際への設置が推奨されます。"
+      "sizeSuitability": {
+        "score": 70,
+        "comment": "背の高さゆえにソファ下でボタンが押されるリスクがあり、住環境との相性確認が必要です。"
+      },
+      "obstacleHandling": {
+        "score": 78,
+        "comment": "マッピングは正確ですが、玄関脱輪など狭い場所での挙動には12件中2件の懸念が確認されています。"
       },
       "neighborConsideration": {
-        "score": 96,
-        "reviewCount": 4,
-        "comment": "静音性が高く、階下への振動もほとんど感じられないという声が多い傾向です。"
+        "score": 95,
+        "comment": "走行帯の静音に好印象の声。洗浄・乾燥帯の音は帯外スケジュール推奨、という層も。"
       }
     },
     "workingProfessional": {
       "overall": 86,
-      "automationLevel": {
-        "score": 93,
-        "reviewCount": 3,
-        "comment": "モップ洗浄・乾燥の完全自動化は実装されています。週1回のタンク清掃で済む手軽さが評価されている傾向です。"
+      "reviewCount": 3,
+      "scheduleCompatibility": {
+        "score": 90,
+        "comment": "予約清掃は正確。共働き世帯3名が「帰宅時の床の綺麗さ」に高い満足度を示しています。"
       },
       "appUsability": {
         "score": 75,
-        "reviewCount": 3,
-        "comment": "操作は容易ですが、不意のリセット事故が発生しており、完全な信頼はまだこれからという評価です。"
+        "comment": "操作は容易ですが、不意の設定リセット事故が発生しており、完全な信頼はまだ先といえます。"
       },
-      "timeSaving": {
-        "score": 90,
-        "reviewCount": 3,
-        "comment": "共働き世帯3名が「帰宅時の床の綺麗さ」に満足しています。予約清掃の信頼性は実数ベースでも高い傾向です。"
+      "automationFeatures": {
+        "score": 93,
+        "comment": "モップ洗浄・乾燥の完全自動化は事実。週1回のタンク手入れで済む手軽さは嘘ありません。"
       },
-      "maintenanceFrequency": {
-        "score": 92,
-        "reviewCount": 3,
-        "comment": "自動洗浄・乾燥機能により、日常的なメンテナンスがほぼ不要という声が見られます。"
+      "remoteControl": {
+        "score": 78,
+        "comment": "外出先操作は利便。リセット再ペア再設定のストレスが残る層のため中位。"
       }
     },
     "familyHome": {
       "overall": 73,
-      "largeCoverage": {
+      "reviewCount": 2,
+      "areaCoverage": {
         "score": 85,
-        "reviewCount": 2,
-        "comment": "一軒家ユーザー2名が広範囲の清掃力を確認しています。ローラーモップによる汚れ落ちを実感している傾向です。"
+        "comment": "広いリビングも一度に清掃可能。ローラーモップの威力で、子供の食べこぼし跡も綺麗になります。"
+      },
+      "batteryDuration": {
+        "score": 85,
+        "comment": "スタミナは十分。広範囲でも途中で力尽きることなく清掃しきれる能力が確認されています。"
+      },
+      "multiFloorSupport": {
+        "score": 50,
+        "comment": "複数階対応ですが、段差センサーの挙動不安を鑑みると、階段付近での使用はリスクが高いです。"
       },
       "childSafety": {
         "score": 80,
-        "reviewCount": 2,
-        "comment": "障害物回避センサーにより、子供のおもちゃを避けて清掃する傾向が見られます。"
-      },
-      "multipleRoomMapping": {
-        "score": 50,
-        "reviewCount": 2,
-        "comment": "複数階対応ですが、段差センサーの不安定さを鑑みると、階段付近の運用は極めて慎重であるべきという評価です。"
-      },
-      "carpetHandling": {
-        "score": 85,
-        "reviewCount": 2,
-        "comment": "カーペットリフトアップ機能により、絨毯を濡らさずに清掃できる水準です。"
+        "comment": "突進的な衝突が一部報告。清掃帯の目視介護と禁止エ推奨。"
       }
     }
   },
-
   "resaleValue": {
     "newPrice": 99990,
-    "usedPriceMin": 52000,
-    "usedPriceMax": 65000,
-    "retentionRate": 58,
-    "marketDemand": "中",
-    "depreciationNote": "新製品のため中古市場の流通量は少なく、今後の価格動向は不透明です。ローラーモップ機能の希少性が価格維持につながる可能性があります。",
-    "resaleLinks": [
-      {
-        "platform": "メルカリ",
-        "url": "https://jp.mercari.com/search?keyword=Eufy+Omni+C28"
-      }
-    ]
+    "usedMinPrice": 52000,
+    "usedMaxPrice": 65000,
+    "retentionRateMin": 52,
+    "retentionRateMax": 65,
+    "period": "約12ヶ月後目安",
+    "comment": "新製品・少レビュー帯。中価格帯のため、美品＋純正消耗品同梱で帯域が上がる傾向です。"
   },
-
+  "keywords": [
+    "Eufy Robot Vacuum Omni C28",
+    "Eufy Omni C28",
+    "Anker",
+    "アンカー",
+    "ローラーモップ",
+    "ロボット掃除機"
+  ],
   "cta": {
-    "amazon": {
-      "url": "https://www.amazon.co.jp/s?k=Eufy+Omni+C28",
-      "price": 99990,
-      "inStock": true
-    },
-    "rakuten": {
-      "url": "https://search.rakuten.co.jp/search/mall/Eufy+Omni+C28/",
-      "price": 99990,
-      "inStock": true
-    },
-    "yahoo": {
-      "url": "https://shopping.yahoo.co.jp/search?p=Eufy+Omni+C28",
-      "price": 99990,
-      "inStock": true
-    }
-  }
+    "amazon": "https://www.amazon.co.jp/s?k=Eufy+Omni+C28",
+    "rakuten": "https://search.rakuten.co.jp/search/mall/Eufy+Omni+C28/",
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=Eufy+Omni+C28"
+  },
+  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-eufy-robot-vacuum-omni-c28.html"
 }

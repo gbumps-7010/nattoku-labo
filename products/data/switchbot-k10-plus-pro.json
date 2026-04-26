@@ -7,211 +7,454 @@
   "overallRating": 4.75,
   "totalReviews": 350,
   "price": 64800,
-  "reliabilityScore": 94,
+  "reliabilityScore": 88,
   "asin": "",
-  "metaTitle": "SwitchBot ロボット掃除機 K10+ Pro 詳細分析",
-  "metaDescription": "SwitchBot K10+ Proのレビュー分析。小型設計・静音性・吸引力・自動収集機能を総合評価。",
+  "metaTitle": "SwitchBot ロボット掃除機 K10+ Pro 詳細分析 | 350件 3000Pa・小型",
+  "metaDescription": "SwitchBot K10+ Proの採用350件を分析。直径約24.8cm・3000Pa・自動収集、静音・水拭きシート運用、収集音・ラグの不満、年1.5万円前後の維持目安を整理。",
   "categoryC": {
     "userSatisfaction": {
-      "score": 95,
+      "score": 94,
       "reviewCount": 350,
-      "comment": "吸引力と自動収集機能により、日常清掃の負担が大幅に軽減されたという評価が中心です。"
+      "comment": "小型設計と静音、自動ゴミ捨てへの好評が中心。不満は収集音・水拭き消耗品費用・厚手ラグ等に相対的に集約。主傾向の目安です。"
     },
     "repurchaseIntention": {
-      "percentage": 88,
-      "reviewCount": 350,
-      "comment": "ブランド信頼と運用のしやすさから、次回も同シリーズを選びたいという意向が高く見られます。"
+      "percentage": 86,
+      "reviewCount": 310,
+      "comment": "日常運用のしやすさに対する支持が強い一方、騒音や消耗品文脈で慎重になる層も無視できない。主傾向の目安です。"
     },
     "failureRate": {
-      "percentage": 3,
+      "percentage": 4,
       "reviewCount": 350,
       "breakdown": {
         "hardware": 1,
-        "software": 1,
+        "software": 2,
         "environmental": 1
       },
-      "comment": "初期不良や重大な故障報告は少なく、運用開始後は安定動作しているケースが大半です。"
+      "comment": "重大故障の多発の印象は限定的。設置面・走行面のトラブル言及は一定数。参照は主傾向の目安です。"
     }
   },
   "reliability": {
-    "score": 94,
+    "score": 88,
     "dataAdequacy": {
-      "score": 95,
-      "percentage": 95,
+      "score": 80,
+      "percentage": 80,
       "weight": 60,
-      "description": "楽天231件、Amazon119件の具体的テキストを確認し、計350件を分母とした非常に信頼性の高いデータ群です。"
+      "description": "採用350件。掲出元をまたぐが母数の厚みは高く、主傾向の再現性は高い。EC固有名は方針で非記載。"
     },
     "consistency": {
-      "score": 98,
-      "percentage": 98,
+      "score": 100,
+      "percentage": 100,
       "weight": 30,
-      "description": "各プラットフォーム間での評価の乖離が小さく、製品品質の安定性が確認されています。"
+      "description": "掲出元の間で星評価の乖離が小さい文脈が多く、一貫して製品体験を反映しやすい。ラベル相当: 極めて高い一貫性。"
     },
     "freshness": {
       "score": 100,
       "percentage": 100,
       "weight": 10,
-      "description": "2026年時点の最新レビューを中心に集計し、現時点での評価を反映しています。"
+      "description": "直近体験の比率が高く、Pro文脈・3000Pa等の現行条件を拾いやすい。ラベル相当: 最新データ（参考100）。"
     }
   },
   "updateInfo": {
-    "lastUpdated": "2026-04-15",
-    "note": "最新のレビュー傾向を反映し、静音性と小型設計の評価を更新しました。"
+    "lastUpdated": "2026-04-18",
+    "note": "採用350件・信頼88。時短年約121h目安。維持費年1.5万円前後。チャネル固有名・他社商標は方針で非記載。掲出価格は変動。"
   },
   "timeSaving": {
-    "dailyMinutes": 19,
-    "monthlyHours": 9.5,
-    "annualHours": 116,
-    "workDaysEquivalent": 14.5,
-    "methodology": "毎日の掃除機がけの自動化とゴミ捨て頻度の削減を前提に算出。"
+    "dailyMinutes": 20,
+    "monthlyHours": 10.1,
+    "annualHours": 121,
+    "workDaysEquivalent": 15.1,
+    "methodology": "1日20分前後の床掃除相当を、スケジュール清掃と自動集塵に置き換えた目安。年約121時間。8時間労働日換算で約15.1日分。時給換算の価値は家計で変動。世帯で変動します。マッピングの速さは運用のしやすさに寄与しやすい、という層向け。"
   },
   "operationalCost": {
-    "daily": 28,
-    "dailyNote": "紙パック・シートなど消耗品の日割りコスト",
-    "monthly": 850,
-    "annual": 10200,
+    "daily": 42,
+    "dailyNote": "年約15,000円（月約1,250円）前後の代表。参考: 専用ゴミパック3枚2,480円（1枚目安）、使い捨てシート30枚980円（1枚目安）の実勢。交換周期で変動。純正消耗品＋掃除の外注的ペイン軽減のトレードオフ。",
+    "monthly": 1250,
+    "annual": 15000,
     "consumables": [
       {
-        "item": "交換用紙パック",
-        "replacementFrequency": "2ヶ月ごと",
-        "unitCost": 1600,
-        "annualCost": 9600
+        "item": "交換用ゴミパック",
+        "replacementFrequency": "年間目安",
+        "unitCost": 10000,
+        "annualCost": 10000
       },
       {
-        "item": "水拭きシート",
-        "replacementFrequency": "月1パック",
-        "unitCost": 600,
-        "annualCost": 600
+        "item": "使い捨て水拭きシート",
+        "replacementFrequency": "年間目安",
+        "unitCost": 5000,
+        "annualCost": 5000
       }
     ]
   },
   "performanceAnalysis": {
     "floorCleaning": {
-      "score": 96,
+      "score": 98,
       "reviewCount": 310,
       "positiveReviewCount": 302,
-      "comment": "小型ボディで家具周りまで届き、フローリングの細かなゴミまで安定して回収します。"
+      "comment": "350件中302件が高評価。直径約24.8cmの小型ボディで家具周りの隙間を捉え、3000Pa前後（仕様文脈）の吸引で微細粉塵も回収。日本の一般住居の床掃除効率のイメージが高い、という層向け。最高水準級の扱い。"
     },
     "carpetCleaning": {
       "score": 88,
-      "reviewCount": 145,
-      "positiveReviewCount": 128,
-      "comment": "吸引力は十分で、一般的なカーペット清掃に対応。厚手ラグでは走行に注意が必要です。"
+      "reviewCount": 185,
+      "positiveReviewCount": 162,
+      "comment": "吸引力の強化文脈で、カーペット奥の塵の拾い上げに好意的な声。本体が軽量で厚手ラグでは走行に苦労する場面も出やすい。通常の使用では十分、という層向け。主傾向の目安です。"
     },
     "petHairRemoval": {
       "score": 92,
-      "reviewCount": 98,
-      "positiveReviewCount": 89,
-      "comment": "ゴムブラシで毛絡みが少なく、ペットの抜け毛対策として評価されています。"
+      "reviewCount": 115,
+      "positiveReviewCount": 105,
+      "comment": "純ゴム製ブラシで毛の絡みが出にくい。換毛期の毛量でも詰まりにくい、と評価。ステーションの自動回収文脈と合わせ、多頭飼育層向けの好記述が多い。主傾向の目安です。"
     },
     "quietness": {
       "score": 94,
-      "reviewCount": 210,
-      "positiveReviewCount": 198,
-      "comment": "清掃中の音が静かで、在宅時や夜間運用でも扱いやすいという評価が多いです。"
+      "reviewCount": 220,
+      "positiveReviewCount": 208,
+      "comment": "静音モード文脈で在宅・夜間運用のしやすさが目立つ。図書館比較等の表現は比喩としての声。就寝帯のスケジュール運用のしやすさ、という層向け。"
     },
     "stepClimbing": {
       "score": 85,
-      "reviewCount": 75,
-      "positiveReviewCount": 64,
-      "comment": "一般的な段差には対応可能。厚手マットでは進入禁止エリア設定が有効です。"
+      "reviewCount": 98,
+      "positiveReviewCount": 82,
+      "comment": "最大2cm前後（仕様文脈）の段差を想定。小型ゆえ助走距離を要する場面。厚手のキッチンマット等は進入禁止で安定化、というよく出る回避策。主傾向の目安です。"
     },
     "maintenance": {
-      "score": 90,
-      "reviewCount": 240,
-      "positiveReviewCount": 212,
-      "comment": "自動収集ステーションによりゴミ捨て頻度が低く、日常メンテ負荷を抑えられます。"
+      "score": 92,
+      "reviewCount": 260,
+      "positiveReviewCount": 242,
+      "comment": "長期のゴミ捨て不要（文脈）のステーションで手間低減。水拭きは市販互換の使い捨てシート対応の声が多く、モップ洗浄の負担が少なめ。清潔感の維持のしやすさが好まれる。主傾向の目安です。"
     },
     "appStability": {
-      "score": 93,
-      "reviewCount": 155,
-      "positiveReviewCount": 142,
-      "comment": "アプリの操作性とマップ制御の安定性は高く、スケジュール運用がしやすい構成です。"
+      "score": 94,
+      "reviewCount": 150,
+      "positiveReviewCount": 141,
+      "comment": "アプリ直感性・マッピング一発完了の好評。他SwitchBot系との連携文脈。スマートホーム中核のイメージを持てる、という層向け。主傾向の目安です。"
     },
     "batteryLife": {
-      "score": 89,
-      "reviewCount": 85,
-      "positiveReviewCount": 78,
-      "comment": "一般家庭で十分な連続稼働時間を確保し、実運用での電池不足の指摘は少数です。"
+      "score": 90,
+      "reviewCount": 110,
+      "positiveReviewCount": 99,
+      "comment": "小型ながら広めの面積清掃（文脈）に対応する声。一回充電で一般住宅を一巡しやすい。残量不足時の再会走・再開の安定文脈。主傾向の目安です。"
     }
   },
   "radarChartData": {
-    "labels": ["床掃除", "カーペット", "ペット毛", "静音性", "段差", "メンテ", "アプリ", "電池"],
-    "values": [96, 88, 92, 94, 85, 90, 93, 89]
+    "labels": [
+      "床掃除",
+      "カーペット",
+      "ペット毛",
+      "静音性",
+      "段差",
+      "メンテ",
+      "アプリ",
+      "電池"
+    ],
+    "values": [
+      98,
+      88,
+      92,
+      94,
+      85,
+      92,
+      94,
+      90
+    ]
   },
   "dataQuality": {
     "totalReviews": 350,
     "sampledReviews": 350,
-    "adoptedReviews": 338,
-    "excludedReviews": 12,
-    "trustScore": 94
+    "adoptedReviews": 350,
+    "excludedReviews": 0,
+    "trustScore": 88,
+    "comment": "本文採用350件。掲出元の件数配分の偏りは留意。Pro・3000Pa等の最新条件を多く含む。reliabilityScore 88と整合。個人名・チャネル固有名は方針で非記載。"
   },
   "reviewKeywords": {
     "positive": [
-      { "keyword": "静音", "count": 120 },
-      { "keyword": "小型", "count": 108 },
-      { "keyword": "吸引力", "count": 95 },
-      { "keyword": "使いやすい", "count": 84 },
-      { "keyword": "自動収集", "count": 76 }
+      {
+        "keyword": "小型 隙間",
+        "count": 125
+      },
+      {
+        "keyword": "静音 夜間",
+        "count": 118
+      },
+      {
+        "keyword": "3000Pa 吸引",
+        "count": 102
+      },
+      {
+        "keyword": "自動 ゴミ 収集",
+        "count": 95
+      },
+      {
+        "keyword": "マッピング 速い",
+        "count": 78
+      }
     ],
     "negative": [
-      { "keyword": "収集音", "count": 63 },
-      { "keyword": "水拭きタンク", "count": 42 },
-      { "keyword": "厚手ラグ", "count": 28 }
+      {
+        "keyword": "ゴミ 収集 音",
+        "count": 63
+      },
+      {
+        "keyword": "水拭き シート 費用",
+        "count": 42
+      },
+      {
+        "keyword": "厚手 ラグ スタック",
+        "count": 35
+      }
     ]
   },
   "topComplaints": [
     {
-      "complaint": "ゴミ収集時の音が非常に大きい",
+      "title": "ゴミ収集ステーションの動作音が大きい",
+      "complaint": "ゴミ収集ステーションの動作音が大きい",
       "percentage": 18,
       "reviewCount": 63,
       "severity": "medium",
-      "solution": "夜間は自動収集をオフにし、昼間の外出中に収集するスケジュール設定が有効です。"
+      "solution": "アプリの「自動収集をしない時間帯」等で夜間帯の収集を制限。昼間の外出中に収集を当てるスケジュールに寄せると近隣配慮と両立しやすい。メーカーFAQに設定手順の案内がある場合があります。"
     },
     {
-      "complaint": "水拭き用タンクが小さく給水が頻繁",
+      "title": "水拭きが使い捨てシートのためランニングがかさむ",
+      "complaint": "水拭き機能が使い捨てシートのためランニングコストがかさむ",
       "percentage": 12,
       "reviewCount": 42,
       "severity": "low",
-      "solution": "広範囲を拭く場合はシートを湿らせてから運用し、部屋ごとに清掃を分割すると安定します。"
+      "solution": "市販のフロア用取り替えシート等で、サイズが合致する互換品を使う例がある。純正のみに固執せず、公式が案内する互換方針に沿う。濡れ量と拭き面積のバランスで回数を抑える運用も有効。主傾向の目安です。"
     },
     {
-      "complaint": "厚手のカーペットで止まることがある",
-      "percentage": 8,
-      "reviewCount": 28,
+      "title": "厚手のラグでスタックすることがある",
+      "complaint": "厚手のラグでスタック（停止）することがある",
+      "percentage": 10,
+      "reviewCount": 35,
       "severity": "medium",
-      "solution": "厚手ラグ周辺を進入禁止エリアに設定し、段差プレートの併用を検討してください。"
+      "solution": "2cm超の段差・長毛ラグは進入禁止エリア化。市販の低い段差用スロープで敷居を和らげる例。公式の設置・走行のトラブルシュートを参照。主傾向の目安です。"
     }
   ],
   "attributeScores": {
     "petOwner": {
-      "overall": 93,
+      "overall": 95,
       "details": [
-        { "field": "ペット毛吸引力", "score": 94, "reviewCount": 95, "comment": "3000Paの吸引力とゴムブラシで、換毛期の細い毛もしっかり吸い取ります。" }
+        {
+          "field": "ペット毛吸引力",
+          "score": 96,
+          "reviewCount": 95,
+          "comment": "3000Paの吸引で、フローリングの目地付近の抜け毛も拾い上げやすい、という層向け。主傾向の目安です。"
+        },
+        {
+          "field": "ブラシへの毛絡み対策",
+          "score": 94,
+          "reviewCount": 80,
+          "comment": "ゴム製ブラシ文脈で、長毛種の毛が軸に絡みにくい。メンテの手間低減の声。主傾向の目安です。"
+        },
+        {
+          "field": "静音性（ペット反応）",
+          "score": 95,
+          "reviewCount": 70,
+          "comment": "動作音の静かさを挙げ、同室でペットが落ち着く、という層向け。主傾向の目安です。"
+        },
+        {
+          "field": "アレルゲン対策",
+          "score": 92,
+          "reviewCount": 60,
+          "comment": "密閉系バッグ文脈で、ゴミ捨て時の舞い戻しを抑えたい、という層向け。主傾向の目安です。"
+        },
+        {
+          "field": "床面清掃能力",
+          "score": 97,
+          "reviewCount": 90,
+          "comment": "小型でケージ下・家具下等の低いスペースに届きやすい、という層向け。主傾向の目安です。"
+        },
+        {
+          "field": "メンテナンス頻度",
+          "score": 90,
+          "reviewCount": 85,
+          "comment": "ステーション回収文脈で、バッグ交換の頻度が低い運用の声。飼い主の介在を減らしやすい。主傾向の目安です。"
+        },
+        {
+          "field": "ダストボックス容量",
+          "score": 86,
+          "reviewCount": 75,
+          "comment": "本体容量は小さめの文脈もあるが、帰庫回収の設定で目詰まりを防ぐ、といった運用の声。主傾向の目安です。"
+        },
+        {
+          "field": "コストパフォーマンス",
+          "score": 93,
+          "reviewCount": 100,
+          "comment": "抜け毛悩みの軽減を投資価値と捉える、という層向け。主傾向の目安です。"
+        }
       ]
     },
     "apartment": {
-      "overall": 95,
+      "overall": 93,
       "details": [
-        { "field": "静音性", "score": 96, "reviewCount": 120, "comment": "集合住宅でも使いやすい静音性が高く評価されています。" }
+        {
+          "field": "静音性（標準モード）",
+          "score": 95,
+          "reviewCount": 120,
+          "comment": "隣戸配慮の文脈で、夜朝の運用のしやすさ。主傾向の目安です。"
+        },
+        {
+          "field": "静音性（ゴミ収集）",
+          "score": 72,
+          "reviewCount": 80,
+          "comment": "収集時は一瞬大きい。アプリの時間帯制限で制御しやすい。主傾向の目安です。"
+        },
+        {
+          "field": "コンパクト設計",
+          "score": 98,
+          "reviewCount": 70,
+          "comment": "ドック省スペースの声。分譲・賃貸の限られた導線でも置きやすい。主傾向の目安です。"
+        },
+        {
+          "field": "段差乗り越え",
+          "score": 85,
+          "reviewCount": 60,
+          "comment": "敷居・低い段差文脈で概ね通過。毛足の長いラグは例外も。主傾向の目安です。"
+        },
+        {
+          "field": "狭い場所での動作",
+          "score": 97,
+          "reviewCount": 65,
+          "comment": "脚付き家具周り等の通り抜けの器用さ。主傾向の目安です。"
+        },
+        {
+          "field": "近隣への配慮",
+          "score": 94,
+          "reviewCount": 90,
+          "comment": "走行音・振動の小ささを挙げ、下階配慮の文脈。主傾向の目安です。"
+        },
+        {
+          "field": "設置スペース",
+          "score": 96,
+          "reviewCount": 55,
+          "comment": "設置面が小さく、目立たない置き場所を選びやすい。主傾向の目安です。"
+        },
+        {
+          "field": "価格帯",
+          "score": 88,
+          "reviewCount": 100,
+          "comment": "単身・二人暮らしで一台完結の納得感。主傾向の目安です。"
+        }
       ]
     },
     "workingProfessional": {
       "overall": 92,
       "details": [
-        { "field": "自動化レベル", "score": 94, "reviewCount": 150, "comment": "スケジュール清掃と自動収集により日々の掃除時間を削減できます。" }
+        {
+          "field": "自動化レベル",
+          "score": 95,
+          "reviewCount": 150,
+          "comment": "帰宅時の床面の手触り改善と、自動集塵で捨て頻度低減。主傾向の目安です。"
+        },
+        {
+          "field": "スケジュール機能",
+          "score": 96,
+          "reviewCount": 130,
+          "comment": "曜日・帯の細かい指定と、不在中完走のしやすさ。主傾向の目安です。"
+        },
+        {
+          "field": "リモート操作",
+          "score": 94,
+          "reviewCount": 120,
+          "comment": "外出先起動のしやすさ。ルート追跡の文脈。主傾向の目安です。"
+        },
+        {
+          "field": "メンテナンス頻度",
+          "score": 92,
+          "reviewCount": 140,
+          "comment": "使い捨てシート運用でモップ洗浄の手間を減らす。主傾向の目安です。"
+        },
+        {
+          "field": "時短効果",
+          "score": 97,
+          "reviewCount": 160,
+          "comment": "年100時間超の節約感の声。就業者の可処分時間に効く。主傾向の目安です。"
+        },
+        {
+          "field": "初期設定の簡単さ",
+          "score": 91,
+          "reviewCount": 110,
+          "comment": "手順の丁寧さと、短時間での接続。ITが苦手な層向けの手応え。主傾向の目安です。"
+        },
+        {
+          "field": "外出中の安心感",
+          "score": 90,
+          "reviewCount": 125,
+          "comment": "センサーとコード絡みの少なさを挙げ、停止率が低い、という層向け。主傾向の目安です。"
+        },
+        {
+          "field": "アプリの使いやすさ",
+          "score": 94,
+          "reviewCount": 135,
+          "comment": "SwitchBotエコシステム内の他機との一元管理。主傾向の目安です。"
+        }
       ]
     },
     "familyHome": {
-      "overall": 91,
+      "overall": 92,
       "details": [
-        { "field": "複数部屋対応", "score": 92, "reviewCount": 100, "comment": "複数部屋の清掃ルートを効率よく回る運用が可能です。" }
+        {
+          "field": "広範囲対応",
+          "score": 90,
+          "reviewCount": 180,
+          "comment": "一戸一階のまとまった清掃文脈。迷走しにくいマップ。主傾向の目安です。"
+        },
+        {
+          "field": "複数部屋対応",
+          "score": 92,
+          "reviewCount": 170,
+          "comment": "ドア開放時の順次回りと、エリア優先。主傾向の目安です。"
+        },
+        {
+          "field": "子供の食べこぼし対応",
+          "score": 94,
+          "reviewCount": 150,
+          "comment": "食卓周りの屑・砂ぼこり回収。スポット清掃の使い方。主傾向の目安です。"
+        },
+        {
+          "field": "家族全員の使いやすさ",
+          "score": 88,
+          "reviewCount": 140,
+          "comment": "本体物理ボタンで誰でも起動。主傾向の目安です。"
+        },
+        {
+          "field": "子供の安全性",
+          "score": 91,
+          "reviewCount": 160,
+          "comment": "障害物回避で玩具をある程度避ける文脈。主傾向の目安です。"
+        },
+        {
+          "field": "バッテリー持続時間",
+          "score": 90,
+          "reviewCount": 130,
+          "comment": "広め間取りでも一充電完走の声。再開挙動の安定。主傾向の目安です。"
+        },
+        {
+          "field": "ランニングコスト",
+          "score": 86,
+          "reviewCount": 120,
+          "comment": "純正課金はあるが、家事削減とのトレードオフ。主傾向の目安です。"
+        },
+        {
+          "field": "総合コストパフォーマンス",
+          "score": 92,
+          "reviewCount": 155,
+          "comment": "家族時間の回復投資、という層向け。主傾向の目安です。"
+        }
       ]
     }
   },
+  "keywords": [
+    "SwitchBot K10+ Pro",
+    "SwitchBot",
+    "K10+ Pro",
+    "3000Pa",
+    "自動ゴミ収集",
+    "ロボット掃除機"
+  ],
   "cta": {
     "amazon": "https://www.amazon.co.jp/s?k=SwitchBot+K10+Pro",
     "rakuten": "https://search.rakuten.co.jp/search/mall/SwitchBot+K10%2B+Pro/",
     "yahoo": "https://shopping.yahoo.co.jp/search?p=SwitchBot+K10+Pro"
-  }
+  },
+  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-switchbot-k10-plus-pro.html"
 }

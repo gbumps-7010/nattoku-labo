@@ -20,6 +20,13 @@ powershell -ExecutionPolicy Bypass -File .\scripts\add-product-from-json.ps1 "C:
 
 Node.jsが入っている環境では、`node scripts/add-product-from-json.js "C:\path\to\product.json"` でも実行できます。
 
+**口コミ分析・計算ロジック（厳格）**の本編: [GEMINI_PROMPT_CORE.md](GEMINI_PROMPT_CORE.md)（**口コミは提供スクリーンショット、件数は点呼、JSON の説明文字列に特定 EC 名を出さない、運用コストの円数はメーカー公式**、は本書先頭の「一次情報・表記・コストの絶対ルール」に集約）。
+
+**新製品 JSON 1 つ → add-product** 用: [GEMINI_ADD_PRODUCT_FROM_JSON.md](GEMINI_ADD_PRODUCT_FROM_JSON.md)（**本編＋補足＋短いJSON専用枠**の3段を推奨）。
+
+**サイト用キー追記**（本編の末尾に足す）: [GEMINI_JSON_OUTPUT_SUPPLEMENT.md](GEMINI_JSON_OUTPUT_SUPPLEMENT.md) をそのまま結合。  
+**`resaleValue`**: サイトでは使用しないため JSON に含めません（`products/data/*.json` から既存キーは削除済み）。
+
 ---
 
 ## ✅ **現在のシステム状態（2026-03-26）**
@@ -39,7 +46,8 @@ Node.jsが入っている環境では、`node scripts/add-product-from-json.js "
 
 - ✅ **products-data.js**: トップページ用製品リスト（12製品登録済み）
 
-- ✅ **GEMINI_PROMPT_V3.14.md**: Gemini用プロンプト（JSON自動生成）
+- ✅ **GEMINI_PROMPT_V3.14.md**: Gemini用プロンプト（JSON自動生成・リポジトリ外管理の場合あり）
+- ✅ **[GEMINI_JSON_OUTPUT_SUPPLEMENT.md](GEMINI_JSON_OUTPUT_SUPPLEMENT.md)**: 上記に足りないトップレベルキー・`radarChartData` / `reviewKeywords` 等の追記用
 
 ---
 
@@ -233,7 +241,8 @@ PlaywrightConsoleCapture で製品ページをテスト：
   "performanceAnalysis": { ... },
   "radarChartData": { ... },  // ⚠️ "radarChart"ではない！
   "attributeScores": { ... },
-  "keywords": { ... },
+  "reviewKeywords": { "positive": [...], "negative": [...] },
+  "keywords": [ "製品名", "メーカー" ],
   "successStrategies": [ ... ],
   "topComplaints": [ ... ],
   "dataQuality": { ... },

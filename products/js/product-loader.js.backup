@@ -538,31 +538,7 @@ function updateDataQuality(data) {
 }
 
 // ========================================
-// 11. リセールバリュー更新
-// ========================================
-
-function updateResaleValue(data) {
-    const resale = data.resaleValue;
-    if (!resale) return;
-    
-    const newPriceEl = document.querySelector('.resale-new-price');
-    if (newPriceEl) {
-        newPriceEl.textContent = `¥${resale.newPrice.toLocaleString()}`;
-    }
-    
-    const usedMinEl = document.querySelector('.resale-used-min');
-    if (usedMinEl) {
-        usedMinEl.textContent = `¥${resale.usedMin.toLocaleString()}`;
-    }
-    
-    const usedMaxEl = document.querySelector('.resale-used-max');
-    if (usedMaxEl) {
-        usedMaxEl.textContent = `¥${resale.usedMax.toLocaleString()}`;
-    }
-}
-
-// ========================================
-// 12. CTA ボタン更新
+// 11. CTA ボタン更新
 // ========================================
 
 function updateCTAButtons(data) {
@@ -624,7 +600,6 @@ async function initializePage() {
         updateTopComplaints(data);
         updateAttributeScores(data);
         updateDataQuality(data);
-        updateResaleValue(data);
         updateCTAButtons(data);
         
         // グローバルに保存（Chart.jsなどの外部スクリプト用）

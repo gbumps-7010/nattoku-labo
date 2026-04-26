@@ -334,7 +334,7 @@ function injectMoshimoAffiliateRawHtml(container, html) {
  *   - moshimoAffiliateEasyLinkHtml … 配布HTMLを文字列で直書き
  *   - moshimoAffiliateEasyLinkHtmlFile … products/data/ 内のファイル名（例: moshimo-embed-{productId}.html）
  *   - moshimoAffiliateEasyLink … オブジェクト形式（eid 等。HTMLが無いときのみ）
- * 一括取り込み: node scripts/apply-moshimo-kantan-easylink-batch.js --from <フォルダ>
+ * 一括取り込み: node scripts/apply-moshimo-kantan-easylink-batch.js --from <フォルダ> [--map <tsv|json>]
  * 手順メモ: products/data/incoming-moshimo-easylink/README.txt
  */
 async function applyPurchaseCtaMoshimoLayout(data) {
@@ -1403,22 +1403,7 @@ function updateDataQuality(data) {
     }
 }
 
-// 11. リセールバリュー更新
-function updateResaleValue(data) {
-    const resale = data.resaleValue;
-    if (!resale) return;
-    
-    const newPriceEl = document.querySelector('.resale-new-price');
-    if (newPriceEl) newPriceEl.textContent = `約¥${resale.newPrice.toLocaleString()}`;
-    
-    const usedMinEl = document.querySelector('.resale-used-min');
-    if (usedMinEl) usedMinEl.textContent = `約¥${resale.usedMin.toLocaleString()}`;
-    
-    const usedMaxEl = document.querySelector('.resale-used-max');
-    if (usedMaxEl) usedMaxEl.textContent = `約¥${resale.usedMax.toLocaleString()}`;
-}
-
-// 12. メイン初期化
+// 11. メイン初期化
 async function initializePage() {
     const productId = getProductId();
     console.log('🔍 製品ID:', productId);
@@ -1449,7 +1434,6 @@ async function initializePage() {
         updateTimeSaving(data);
         updateOperationalCost(data);
         updateDataQuality(data);
-        updateResaleValue(data);
         await applyPurchaseCtaMoshimoLayout(data);
 
         window.productData = data;

@@ -180,6 +180,7 @@
 .product-meta .manufacturer {
     font-weight: 600;
     color: #475569;
+    text-transform: none;
 }
 
 .product-meta .price {
@@ -204,6 +205,9 @@
 .price-label {
     font-weight: 600;
     color: #1e293b;
+}
+.manufacturer-name {
+    text-transform: none;
 }
 
 .product-count {
@@ -313,8 +317,9 @@ body {
     font-weight: 600;
     color: #64748b;
     margin-bottom: 0.4rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+    /* 全メーカー products-data / JSON の表記（Roborock, ECOVACS, Anker, Dreame, SwitchBot, iRobot 等）をそのまま表示 */
+    text-transform: none;
+    letter-spacing: 0.02em;
 }
 
 .related-name {

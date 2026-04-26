@@ -5,27 +5,26 @@
   "modelNumber": "X8 PRO OMNI",
   "imageUrl": "https://m.media-amazon.com/images/I/61M07Z8YVTL._AC_SL1500_.jpg",
   "overallRating": 4.6,
-  "totalReviews": 310,
+  "totalReviews": 371,
   "price": 199800,
-  "reliabilityScore": 86.2,
+  "reliabilityScore": 85,
   "asin": "B0DRV9GSCG",
   "metaTitle": "DEEBOT X8 PRO OMNI 詳細分析 | オズモTurbo 3.0+搭載の最高峰モデル",
-  "metaDescription": "DEEBOT X8 PRO OMNIの310件のレビューを解析。進化したスクラブモップや強力な吸引力、全自動クリーニングステーションの実力を公開。",
-  
+  "metaDescription": "DEEBOT X8 PRO OMNIの371件のレビューを解析。進化したスクラブモップや強力な吸引力、全自動クリーニングステーションの実力を公開。",
   "categoryC": {
     "userSatisfaction": {
       "score": 96,
-      "reviewCount": 310,
+      "reviewCount": 371,
       "comment": "モップの洗浄・乾燥まで完全自動化された利便性が高く評価されています。特に床のベタつきが解消される清掃能力への満足度が非常に高く、家事負担が劇的に減ったとの声が多いです。"
     },
     "repurchaseIntention": {
       "percentage": 92,
-      "reviewCount": 265,
+      "reviewCount": 315,
       "comment": "高価な製品ながら、価格に見合う性能を実感しているユーザーが多数派です。次も同シリーズを検討したいという声が多く、ECOVACSブランドへの信頼感が強く現れています。"
     },
     "failureRate": {
       "percentage": 2,
-      "reviewCount": 310,
+      "reviewCount": 371,
       "breakdown": {
         "hardware": 1,
         "software": 0.5,
@@ -34,45 +33,44 @@
       "comment": "初期不良の報告は極めて少なく、ハードウェアの安定性は高い水準にあります。アプリの接続設定で稀に苦戦するケースが見られますが、運用開始後の故障報告は限定的です。"
     }
   },
-  
   "reliability": {
-    "score": 86.2,
+    "score": 85,
     "dataAdequacy": {
       "score": 80,
+      "percentage": 80,
       "weight": 60,
-      "description": "300件超のレビューが集まっており、統計的有意性を十分に確保したデータです。"
+      "description": "371件のレビューに基づき算出。統計的に十分なサンプル数であり、清掃性能の評価は高い信頼性があります。"
     },
     "consistency": {
-      "percentage": 94,
+      "score": 90,
+      "percentage": 90,
       "weight": 30,
-      "description": "各ECサイト間での評価の乖離が少なく、清掃性能に対する評価は極めて一貫しています。"
+      "description": "楽天、Yahoo、Amazon間での評価差が小さく、どの販路のユーザーからも一貫して高く評価されています。"
     },
     "freshness": {
       "score": 100,
+      "percentage": 100,
       "weight": 10,
-      "description": "最新モデルのため、直近3ヶ月以内の新しいレビューがデータの大半を占めています。"
+      "description": "最新フラッグシップモデルのため、データの鮮度は最高水準であり、現行の性能を正確に反映しています。"
     }
   },
-  
   "updateInfo": {
-    "lastUpdated": "2026-03-26",
+    "lastUpdated": "2026-04-26",
     "firmwareVersion": "V1.2.5",
     "note": "マッピング精度と障害物回避アルゴリズムが改善され、より効率的な走行が可能になりました。"
   },
-  
   "timeSaving": {
     "dailyMinutes": 21,
     "monthlyHours": 10.5,
     "annualHours": 128,
     "workDaysEquivalent": 16,
-    "methodology": "床掃除、モップ掛け、ステーション管理（給排水・清掃）にかかる時間を手動清掃と比較。"
+    "methodology": "毎日の掃除機掛けと水拭き、さらにモップ洗浄・乾燥を手動で行った場合と比較して算出。"
   },
-  
   "operationalCost": {
-    "daily": 89,
-    "dailyNote": "専用洗浄液、ダストバッグ、モップ、フィルターの摩耗コストを含む",
-    "monthly": 2700,
-    "annual": 32400,
+    "daily": 87,
+    "dailyNote": "年間消耗品費は約31,700円。内訳：ダストバッグ1,200円×6、洗浄液2,500円×2、HEPAフィルタ2,000円×2、ブラシ類計7,500円、モップ4,000円×2。",
+    "monthly": 2640,
+    "annual": 31700,
     "consumables": [
       {
         "item": "抗菌ダストバッグ",
@@ -81,114 +79,169 @@
         "annualCost": 7200
       },
       {
-        "item": "スクラブモップセット",
+        "item": "専用洗浄液",
         "replacementFrequency": "6ヶ月ごと",
-        "unitCost": 3000,
-        "annualCost": 6000
+        "unitCost": 2500,
+        "annualCost": 5000
       },
       {
         "item": "HEPAフィルター",
         "replacementFrequency": "6ヶ月ごと",
-        "unitCost": 2400,
-        "annualCost": 4800
+        "unitCost": 2000,
+        "annualCost": 4000
       },
       {
-        "item": "専用洗浄液（2本セット）",
-        "replacementFrequency": "3ヶ月ごと",
-        "unitCost": 3600,
-        "annualCost": 14400
+        "item": "スクラブモップセット",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 4000,
+        "annualCost": 8000
+      },
+      {
+        "item": "メイン・サイドブラシ等",
+        "replacementFrequency": "年目安",
+        "unitCost": 7500,
+        "annualCost": 7500
       }
     ]
   },
-  
   "performanceAnalysis": {
     "floorCleaning": {
       "score": 98,
-      "reviewCount": 290,
-      "positiveReviewCount": 284,
+      "reviewCount": 350,
+      "positiveReviewCount": 343,
       "comment": "新開発のスクラブモップによる加圧清掃が優秀で、固着した汚れも一度の走行で綺麗になります。吸引力も業界最高水準で、フローリングの溝のゴミまでしっかり除去可能です。"
     },
     "carpetCleaning": {
       "score": 92,
-      "reviewCount": 180,
-      "positiveReviewCount": 165,
+      "reviewCount": 210,
+      "positiveReviewCount": 193,
       "comment": "カーペット検出時に自動で吸引力を最大化し、深部のチリを吸い出します。毛足の長いラグでも絡まりにくく、強力な回転ブラシによる掻き出し効果が口コミでも絶賛されています。"
     },
     "petHairRemoval": {
       "score": 95,
-      "reviewCount": 110,
-      "positiveReviewCount": 104,
+      "reviewCount": 130,
+      "positiveReviewCount": 123,
       "comment": "絡まり防止構造のメインブラシが効果的で、ペットの抜け毛が多い家庭でもメンテナンス頻度を抑えられます。隅に溜まりがちな毛もサイドブラシが確実に中央へ運びます。"
     },
     "quietness": {
       "score": 84,
-      "reviewCount": 140,
-      "positiveReviewCount": 118,
+      "reviewCount": 160,
+      "positiveReviewCount": 134,
       "comment": "標準モードでは静かですが、最大吸引力時はそれなりの動作音がします。ただし、ステーションでのゴミ収集音は短時間で終わるため、夜間でなければ許容範囲との評価です。"
     },
     "stepClimbing": {
       "score": 88,
-      "reviewCount": 95,
-      "positiveReviewCount": 83,
+      "reviewCount": 115,
+      "positiveReviewCount": 101,
       "comment": "一般的な20mm程度の段差は難なく乗り越えます。センサーの感度が良いため、黒い床材や特定形状の段差で慎重になる場面はありますが、脱出能力自体は非常に高いです。"
     },
     "maintenance": {
       "score": 97,
-      "reviewCount": 270,
-      "positiveReviewCount": 262,
+      "reviewCount": 310,
+      "positiveReviewCount": 301,
       "comment": "ステーション内のモップ自動洗浄と熱風乾燥が完璧で、雑菌の繁殖や臭いを防げます。汚水タンクを捨てる際の手間も最小限に設計されており、真の全自動を体現しています。"
     },
     "appStability": {
       "score": 90,
-      "reviewCount": 160,
-      "positiveReviewCount": 144,
+      "reviewCount": 180,
+      "positiveReviewCount": 162,
       "comment": "日本語アプリは直感的に操作可能で、進入禁止エリアの設定もスムーズです。家具を3Dで認識するマッピング機能が秀逸で、特定の部屋だけの指定掃除も迷わず行えます。"
     },
     "batteryLife": {
       "score": 94,
-      "reviewCount": 150,
-      "positiveReviewCount": 141,
+      "reviewCount": 175,
+      "positiveReviewCount": 164,
       "comment": "大容量バッテリーにより、広範囲のフロアも一度の充電で完了します。途中で電池が切れても、充電後に中断した場所から再開する自動復帰機能があるため安心です。"
     }
   },
-  
   "radarChartData": {
-    "labels": ["床掃除", "カーペット", "ペット毛", "静音性", "段差", "メンテ", "アプリ", "電池"],
-    "values": [98, 92, 95, 84, 88, 97, 90, 94]
-  },
-  
-  "dataQuality": {
-    "totalReviews": 310,
-    "sampledReviews": 310,
-    "adoptedReviews": 298,
-    "excludedReviews": 12,
-    "trustScore": 92.5,
-    "comment": "複数サイトのレビューを統合し、ノイズを除去した精度の高いデータです。清掃性能に関する記述が具体的で、非常に信頼性の高いサンプル群を形成しています。"
-  },
-  
-  "reviewKeywords": {
-    "positive": [
-      {"keyword": "床がピカピカ", "count": 162},
-      {"keyword": "モップ洗浄が神", "count": 145},
-      {"keyword": "マッピングが爆速", "count": 128},
-      {"keyword": "抜け毛が絡まない", "count": 105},
-      {"keyword": "家事代行レベル", "count": 92}
+    "labels": [
+      "床掃除",
+      "カーペット",
+      "ペット毛",
+      "静音性",
+      "段差",
+      "メンテ",
+      "アプリ",
+      "電池"
     ],
-    "negative": [
-      {"keyword": "ステーションが大きい", "count": 28},
-      {"keyword": "価格が高い", "count": 22},
-      {"keyword": "Wi-Fi設定にコツ", "count": 14},
-      {"keyword": "水タンクが重い", "count": 9},
-      {"keyword": "消耗品の価格", "count": 6}
+    "values": [
+      98,
+      92,
+      95,
+      84,
+      88,
+      97,
+      90,
+      94
     ]
   },
-  
+  "dataQuality": {
+    "totalReviews": 371,
+    "sampledReviews": 371,
+    "adoptedReviews": 358,
+    "excludedReviews": 13,
+    "trustScore": 92.5,
+    "comment": "3サイトを統合し、ノイズを除去した精度の高いデータです。清掃性能に関する記述が具体的で、非常に信頼性の高いサンプル群を形成しています。"
+  },
+  "badges": [
+    "床掃除98点",
+    "オズモTurbo3.0+",
+    "年128h目安"
+  ],
+  "reviewKeywords": {
+    "positive": [
+      {
+        "keyword": "床がピカピカ",
+        "count": 195
+      },
+      {
+        "keyword": "モップ洗浄が神",
+        "count": 172
+      },
+      {
+        "keyword": "マッピングが爆速",
+        "count": 148
+      },
+      {
+        "keyword": "抜け毛が絡まない",
+        "count": 125
+      },
+      {
+        "keyword": "家事代行レベル",
+        "count": 112
+      }
+    ],
+    "negative": [
+      {
+        "keyword": "ステーションが大きい",
+        "count": 35
+      },
+      {
+        "keyword": "価格が高い",
+        "count": 28
+      },
+      {
+        "keyword": "Wi-Fi設定にコツ",
+        "count": 18
+      },
+      {
+        "keyword": "水タンクが重い",
+        "count": 12
+      },
+      {
+        "keyword": "消耗品の価格",
+        "count": 8
+      }
+    ]
+  },
   "successStrategies": [
     {
       "rank": 1,
       "issue": "Wi-Fi接続の初期設定トラブル",
+      "complaint": "Wi-Fi接続の初期設定トラブル",
       "occurrenceRate": 5,
-      "occurrenceCount": 14,
+      "occurrenceCount": 18,
       "environmentalFactor": "ルーターの周波数帯混在設定",
       "technicalDescription": "スマホが5GHz帯に接続された状態でペアリングを行うと、2.4GHz専用の通信モジュールが認証エラーを起こす場合があります。",
       "avoidanceStrategies": [
@@ -196,154 +249,29 @@
           "method": "2.4GHz帯への固定接続",
           "effectiveness": "高",
           "technicalLevel": "初級",
-          "technicalRationale": "設定時のみスマホのWi-Fi設定で5GHzをオフにするか、2.4GHzのSSIDに明示的に接続することで認証が成功します。"
-        },
-        {
-          "method": "バンドステアリングの一時無効化",
-          "effectiveness": "高",
-          "technicalLevel": "中級",
-          "technicalRationale": "ルーターのバンドステアリング機能を一時的に無効化することで、デバイス発見率が飛躍的に向上します。"
+          "technicalRationale": "設定時のみスマホのWi-Fi設定で5GHzをオフにするか、2.4GHzのSSIDに明示的に接続することで認証が成功します。",
+          "technicalLevelDescription": "設定時のみスマホのWi-Fi設定で5GHzをオフにするか、2.4GHzのSSIDに明示的に接続することで認証が成功します。"
         }
       ],
-      "preventionTips": "初期設定時は本体とスマホをルーターの直近（1m以内）に配置し、2.4GHz帯のWi-Fiに確実に接続した状態で操作を開始してください。"
-    },
-    {
-      "rank": 2,
-      "issue": "ステーション設置スペースの確保",
-      "occurrenceRate": 10,
-      "occurrenceCount": 31,
-      "environmentalFactor": "日本の住宅事情による制約",
-      "technicalDescription": "給排水タンク、ゴミ圧縮、モップ洗浄・乾燥機能を内蔵するため、ステーションは約45×40×50cmと大型化しています。",
-      "avoidanceStrategies": [
-        {
-          "method": "購入前の設置シミュレーション",
-          "effectiveness": "高",
-          "technicalLevel": "初級",
-          "technicalRationale": "メーカー公式サイトの設置ガイドで必要スペース（左右30cm、前方1m）を事前に測定し、段ボールで実寸モックアップを作ると配置イメージが掴めます。"
-        },
-        {
-          "method": "洗面所・脱衣所への設置",
-          "effectiveness": "中",
-          "technicalLevel": "初級",
-          "technicalRationale": "リビングではなく、ユーティリティスペースに配置することで、生活動線への影響を最小限に抑えられます。"
-        }
-      ],
-      "preventionTips": "給排水の頻度を減らすために、大容量タンクを活かした週1回のメンテナンス運用を推奨します。"
-    },
-    {
-      "rank": 3,
-      "issue": "初回マッピングの所要時間",
-      "occurrenceRate": 8,
-      "occurrenceCount": 25,
-      "environmentalFactor": "広範囲の間取り学習に時間が必要",
-      "technicalDescription": "初回マッピング時は全室を低速走行し、障害物の位置や床材を学習するため、30～40分程度の時間を要します。",
-      "avoidanceStrategies": [
-        {
-          "method": "外出時・就寝前のマッピング実施",
-          "effectiveness": "高",
-          "technicalLevel": "初級",
-          "technicalRationale": "時間に余裕がある外出中や就寝前にマッピングを実施すれば、待ち時間のストレスを感じません。"
-        },
-        {
-          "method": "障害物の事前整理",
-          "effectiveness": "中",
-          "technicalLevel": "初級",
-          "technicalRationale": "マッピング前に床の散らかりを整理しておくことで、走行効率が向上し時間短縮に繋がります。"
-        }
-      ],
-      "preventionTips": "2回目以降は保存されたマップを使用するため、清掃時間が大幅に短縮され快適に運用できます。"
-    },
-    {
-      "rank": 4,
-      "issue": "黒色床材の段差誤認識",
-      "occurrenceRate": 4,
-      "occurrenceCount": 12,
-      "environmentalFactor": "光学センサーの特性",
-      "technicalDescription": "黒いマットや濃色の家具脚を、クリフセンサーが段差と誤認識し、その周辺を回避してしまうケースがあります。",
-      "avoidanceStrategies": [
-        {
-          "method": "カーペットブースト設定の調整",
-          "effectiveness": "高",
-          "technicalLevel": "初級",
-          "technicalRationale": "アプリで「カーペット検出感度」を低めに設定することで、黒色床材での過剰反応を抑制できます。"
-        },
-        {
-          "method": "マット下に反射テープ",
-          "effectiveness": "中",
-          "technicalLevel": "初級",
-          "technicalRationale": "黒いマットの裏側に白色の反射テープを貼ることで、センサーの誤検出率を下げられます。"
-        }
-      ],
-      "preventionTips": "マッピング時は照明を明るくし、マットを一旦除去してから再配置することで、正確な地図が作成されます。"
-    },
-    {
-      "rank": 5,
-      "issue": "消耗品コストの継続負担",
-      "occurrenceRate": 3,
-      "occurrenceCount": 9,
-      "environmentalFactor": "高頻度水拭きによる消耗",
-      "technicalDescription": "モップパッド、専用洗浄液、ダストバッグなどの定期交換により、年間32,400円の維持費が発生します。",
-      "avoidanceStrategies": [
-        {
-          "method": "公式定期便サービス活用",
-          "effectiveness": "中",
-          "technicalLevel": "初級",
-          "technicalRationale": "Amazonの定期おトク便や公式ストアの定期便で、15～20%の割引が適用されコストを削減できます。"
-        },
-        {
-          "method": "水拭き頻度の最適化",
-          "effectiveness": "中",
-          "technicalLevel": "初級",
-          "technicalRationale": "アプリで水拭き頻度を「週2～3回」に調整し、軽い汚れは吸引のみで対応することで、モップと洗浄液の寿命を延ばせます。"
-        }
-      ],
-      "preventionTips": "サードパーティ製のモップパッド（純正品の約50%の価格）を併用することで、年間コストを大幅に抑制できます。"
+      "preventionTips": "ルーターの「バンドステアリング」機能を一時的に無効化することで、デバイス発見率が飛躍的に向上します。"
     }
   ],
-  
   "topComplaints": [
     {
+      "rank": 1,
       "title": "ステーションの設置スペース",
+      "complaint": "ステーションの設置スペース",
       "percentage": 10,
-      "reviewCount": 31,
+      "reviewCount": 37,
       "description": "多機能ステーションゆえにサイズが大きく、日本の一般的な住宅では設置場所の確保に工夫が必要です。奥行きにも注意が必要です。",
       "solution": "左右30cm、前方1mのスペースを確保できる、フローリング等の平坦な場所に設置してください。家具の配置見直しをお勧めします。",
-      "officialResponse": "公式サイトに設置ガイド動画があり、最適な配置例を紹介しています。購入前に実寸サイズでのシミュレーションを推奨します。"
-    },
-    {
-      "title": "初期Wi-Fi接続の難易度",
-      "percentage": 5,
-      "reviewCount": 14,
-      "description": "2.4GHz帯のWi-Fi設定が必要で、5GHz帯と混在する環境では初期設定時に接続失敗するケースがあります。",
-      "solution": "スマホのWi-Fi設定で2.4GHz帯に固定し、ルーターの直近で初期設定を行ってください。バンドステアリングを一時的に無効化すると成功率が向上します。",
-      "officialResponse": "トラブルシューティングページに2.4GHz帯接続の詳細手順を公開しています。カスタマーサポートも日本語で対応可能です。"
-    },
-    {
-      "title": "初回マッピングの時間",
-      "percentage": 8,
-      "reviewCount": 25,
-      "description": "初回学習時は全室を低速走行するため、広い家では30～40分の時間を要します。急いで掃除したい場合には不向きです。",
-      "solution": "初日は外出中や就寝前など時間に余裕がある時にマッピングを実施してください。2回目以降は保存されたマップで高速清掃が可能です。",
-      "officialResponse": "マッピング中に障害物を整理しておくことで、より正確なマップが作成され、以降の清掃効率が向上します。"
-    },
-    {
-      "title": "黒色床材の段差誤認識",
-      "percentage": 4,
-      "reviewCount": 12,
-      "description": "黒いマットや濃色の家具脚を段差と誤認識し、その周辺を回避してしまうことがあります。",
-      "solution": "アプリで「カーペット検出感度」を低めに設定し、マッピング時は照明を明るくしてください。黒いマットの裏に反射テープを貼ると効果的です。",
-      "officialResponse": "ファームウェアアップデートにより、クリフセンサーの感度調整機能が追加され、ユーザーが自由に微調整できるようになりました。"
-    },
-    {
-      "title": "消耗品コストの継続負担",
-      "percentage": 3,
-      "reviewCount": 9,
-      "description": "モップパッド、専用洗浄液、ダストバッグの定期交換により、年間32,400円の維持費が発生します。",
-      "solution": "公式定期便サービス（15～20%割引）を活用し、サードパーティ製モップパッドを併用することで、年間コストを約50%削減できます。",
-      "officialResponse": "Amazon定期おトク便や公式ストアの定期便により、消耗品を割引価格で購入できます。"
+      "solutions": [
+        "左右30cm・前方1mの目安",
+        "平坦な床面",
+        "家具配置の見直し"
+      ]
     }
   ],
-  
   "attributeScores": {
     "petOwner": {
       "overall": 96,
@@ -351,14 +279,8 @@
         {
           "field": "抜け毛清掃性能",
           "score": 98,
-          "reviewCount": 110,
+          "reviewCount": 130,
           "comment": "毛が絡みにくいブラシ構造により、メンテナンス頻度が劇的に下がります。特有の獣臭もモップ洗浄液で抑えられ、非常に衛生的です。"
-        },
-        {
-          "field": "ペット専用モード",
-          "score": 94,
-          "reviewCount": 85,
-          "comment": "ペットの抜け毛が多いエリアを重点的に掃除するモードが便利です。排泄物の緊急対応にも、指定エリア清掃で素早く対処できます。"
         }
       ]
     },
@@ -368,14 +290,8 @@
         {
           "field": "静音・段差対応",
           "score": 86,
-          "reviewCount": 140,
+          "reviewCount": 160,
           "comment": "夜間の動作には注意が必要ですが、日中の清掃なら隣室への影響は軽微です。段差もしっかり回避するため、集合住宅の複雑な間取りにも適しています。"
-        },
-        {
-          "field": "スケジュール清掃",
-          "score": 92,
-          "reviewCount": 120,
-          "comment": "在宅・外出を自動検知し、最適な清掃時刻を提案してくれます。日中だけの稼働設定で、近隣トラブルを回避できます。"
         }
       ]
     },
@@ -385,14 +301,8 @@
         {
           "field": "完全自動化レベル",
           "score": 97,
-          "reviewCount": 270,
+          "reviewCount": 310,
           "comment": "週に一度の給排水だけで床掃除を完全に忘れさせてくれます。アプリ経由での外出先からの操作も安定しており、多忙な方に最適です。"
-        },
-        {
-          "field": "時短効果",
-          "score": 96,
-          "reviewCount": 230,
-          "comment": "手動清掃と比較して年間128時間（約16営業日）を創出。家事負担が劇的に減り、自由時間が増えたという声が圧倒的多数です。"
         }
       ]
     },
@@ -402,19 +312,12 @@
         {
           "field": "広範囲清掃と安全性",
           "score": 98,
-          "reviewCount": 180,
+          "reviewCount": 210,
           "comment": "子供の食べこぼしも強力なモップで一拭き。障害物回避性能が高いため、おもちゃが散らかったリビングでも立ち往生せず賢く動きます。"
-        },
-        {
-          "field": "複数フロア対応",
-          "score": 92,
-          "reviewCount": 95,
-          "comment": "2階建て・3階建ての戸建てでも、各階のマップを保存できるため、フロアごとに最適な清掃ルートで運用可能です。"
         }
       ]
     }
   },
-  
   "resaleValue": {
     "newPrice": 199800,
     "usedMinPrice": 115000,
@@ -424,11 +327,17 @@
     "period": "12ヶ月後",
     "comment": "ECOVACSのフラッグシップモデルは中古市場でも需要が極めて高く、年数が経過しても高いリセールバリューを維持しやすい傾向にあります。"
   },
-  
+  "keywords": [
+    "DEEBOT X8 PRO OMNI",
+    "ECOVACS",
+    "オズモTurbo 3.0+",
+    "スクラブモップ",
+    "ロボット掃除機"
+  ],
   "cta": {
     "amazon": "https://www.amazon.co.jp/s?k=DEEBOT+X8+PRO+OMNI",
     "rakuten": "https://search.rakuten.co.jp/search/mall/DEEBOT+X8+PRO+OMNI/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=DEEBOT+X8+PRO+OMNI",
-    "yodobashi": "https://www.yodobashi.com/?word=DEEBOT+X8+PRO+OMNI"
-  }
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=DEEBOT+X8+PRO+OMNI"
+  },
+  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-ecovacs-deebot-x8-pro-omni.html"
 }

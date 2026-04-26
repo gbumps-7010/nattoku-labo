@@ -7,80 +7,71 @@
   "overallRating": 4.7,
   "totalReviews": 105,
   "price": 98800,
-  "reliabilityScore": 88.0,
+  "reliabilityScore": 88,
   "asin": "B0F1FFDWQ6",
   "metaTitle": "Roomba Max 705 詳細分析 | 180倍の吸引力と自動ゴミ収集の真価を検証",
-  "metaDescription": "Roomba Max 705の105件のテキストレビューを解析。強力な吸引性能、ペットの毛への対応力、自動ゴミ収集の利便性など、ユーザーの生の声から真実を公開。",
+  "metaDescription": "Roomba Max 705（Vac + AutoEmpty）の採用105件を分析。吸引・カーペット・ペット毛・ゴミ収集音・メンテ・iRobot Homeの主傾向、設置面の注意を整理。",
   "categoryC": {
     "userSatisfaction": {
       "score": 95,
       "reviewCount": 105,
-      "comment": "圧倒的な吸引力と自動ゴミ収集機能により、掃除の負担が劇的に減ったと回答するユーザーが続出しています。特にカーペットの清掃能力に関しては、他社製品を凌駕する満足度を得ています。"
+      "comment": "吸引力と自動ゴミ収集で負担が大きく減った、という層向け。カーペット清掃への納得が、採用レビューで一貫して高い。主傾向の目安です。"
     },
     "repurchaseIntention": {
       "percentage": 88,
       "reviewCount": 92,
-      "comment": "ルンバ特有の耐久性と清掃アルゴリズムへの信頼が厚く、次も同じシリーズを検討したいという意向が極めて高い結果となりました。確かな清掃力に裏打ちされたブランド力が伺えます。"
+      "comment": "iRobot文脈での耐久性・清掃ルート習慣を踏まえ、同系列再検討の声が多い。主傾向の目安です。"
     },
     "failureRate": {
       "percentage": 3,
       "reviewCount": 105,
-      "breakdown": {
-        "hardware": 1,
-        "software": 1,
-        "environmental": 1
-      },
-      "comment": "初期不良の報告は極めて限定的であり、ハードウェアの堅牢性は非常に高い水準にあります。一部でWi-Fi接続の初期設定に苦労する声が見られますが、運用開始後の故障報告は少数です。"
+      "breakdown": { "hardware": 1, "software": 1, "environmental": 1 },
+      "comment": "初期不良の多発の印象は限定的。一部でWi-Fi初期設定の手間。運用後の重故障言及は相対的に少なめ。主傾向の目安です。"
     }
   },
   "reliability": {
-    "score": 88.0,
+    "score": 88,
     "dataAdequacy": {
       "score": 80,
+      "percentage": 80,
       "weight": 60,
-      "description": "主要3サイトから計105件の具体的テキストレビューを確認しており、統計的な信頼性を十分に担保できるデータ量に達しています。"
+      "description": "採用105件。主要掲出元をまたぎ、母数として主傾向の把握に十分。チャネル固有名は方針で非記載。"
     },
     "consistency": {
+      "score": 100,
       "percentage": 100,
       "weight": 30,
-      "description": "楽天、Yahoo、Amazonの全プラットフォームにおいて評価の分散が極めて小さく、場所を問わず高い評価が一貫していることが確認されました。"
+      "description": "掲出元の間で低い星のばらつきが小さく、製品体験の方向性が揃いやすい。ラベル相当: 高い一貫性（参考100）。"
     },
     "freshness": {
       "score": 100,
+      "percentage": 100,
       "weight": 10,
-      "description": "2026年4月の最新レビューを多数含んでおり、現行のファームウェア環境下での動作実態を正確に捉えた最新の統計データです。"
+      "description": "2026年4月前後の体験が多く、現行アプリ・ファーム文脈を反映しやすい。鮮度目安は高い（参考100）。"
     }
   },
   "updateInfo": {
-    "lastUpdated": "2026-04-15",
+    "lastUpdated": "2026-04-18",
     "firmwareVersion": "3.24.1",
-    "note": "最新の地図作成アルゴリズムにより、複雑な家具配置の部屋でも迷いにくくなり、清掃時間が約15%短縮されました。"
+    "note": "地図作成の迷いの少なさの文脈と、清掃完了までの印象時間の短縮（体験で約15%等）の声。掲出価格は変動。ファーム番号は参考。"
   },
   "timeSaving": {
     "dailyMinutes": 19,
     "monthlyHours": 9.5,
     "annualHours": 116,
     "workDaysEquivalent": 14.5,
-    "methodology": "毎日の床掃除15分と、週に1度のゴミ捨て・メンテナンス作業を自動化したと仮定し、実稼働データに基づき算出。"
+    "methodology": "毎日の床掃除約15分相当と、週1前後のゴミ捨て・点検作業の削減を仮定し、代表値として年約116時間（月約9.5時間・1日平均約19分）の目安。世帯で変動します。"
   },
   "operationalCost": {
     "daily": 34,
-    "dailyNote": "交換用紙パックと消耗品の実質的な日割りコスト",
+    "dailyNote": "年間12,400円（月1,033円前後）の代表。内訳例: 紙パック3個入り1,980円を年2回程度、エッジブラシ520円を半年×2、ダストカット1,200円を年2回、デュアルアクションブラシ5,000円を年1回。正規品・実勢で変動。合算は紙3,960＋1,040＋2,400＋5,000＝12,400。",
     "monthly": 1033,
     "annual": 12400,
     "consumables": [
-      {
-        "item": "交換用AllergenLock紙パック",
-        "replacementFrequency": "2ヶ月ごと",
-        "unitCost": 1980,
-        "annualCost": 11880
-      },
-      {
-        "item": "エッジクリーニングブラシ",
-        "replacementFrequency": "1年ごと",
-        "unitCost": 520,
-        "annualCost": 520
-      }
+      { "item": "交換用AllergenLock紙パック", "replacementFrequency": "2ヶ月ごと", "unitCost": 1980, "annualCost": 3960 },
+      { "item": "エッジクリーニングブラシ", "replacementFrequency": "6ヶ月ごと", "unitCost": 520, "annualCost": 1040 },
+      { "item": "ダストカットフィルター", "replacementFrequency": "6ヶ月ごと", "unitCost": 1200, "annualCost": 2400 },
+      { "item": "デュアルアクションブラシ（セット）", "replacementFrequency": "1年ごと", "unitCost": 5000, "annualCost": 5000 }
     ]
   },
   "performanceAnalysis": {
@@ -88,49 +79,49 @@
       "score": 97,
       "reviewCount": 98,
       "positiveReviewCount": 95,
-      "comment": "180倍にパワーアップした吸引力により、フローリングの隙間の微細な塵も逃さず吸い取ります。清掃後の足裏のサラサラ感に感動する声が多くのレビューで共通して見られました。"
+      "comment": "180倍文脈の吸引力でフローリング目地の微粉も拾い上げやすい、という層向け。清掃後の足裏感覚の好評。主傾向の目安です。"
     },
     "carpetCleaning": {
       "score": 96,
       "reviewCount": 85,
       "positiveReviewCount": 82,
-      "comment": "パワーブースト機能が優秀で、絨毯に入り込んだ奥のゴミまでしっかりかき出します。特にペットの毛や細かい砂、塵の除去能力については他モデルからの買い替え組も高く評価しています。"
+      "comment": "パワーブースト文脈で絨毯奥の塵のかき出しに好印象。他機からの買い替え層の評価が目立つ。主傾向の目安です。"
     },
     "petHairRemoval": {
       "score": 98,
       "reviewCount": 55,
       "positiveReviewCount": 54,
-      "comment": "ゴム製のデュアルアクションブラシにより毛が絡まりにくく、大型犬の抜け毛も難なく吸い込みます。毎日稼働させることで家中の毛が消えたと、ペットオーナーから絶大な支持を得ています。"
+      "comment": "デュアルアクションのゴム系ブラシ文脈で毛絡みが少なめ。大型犬抜け毛の回収、という層向け。主傾向の目安です。"
     },
     "quietness": {
       "score": 70,
       "reviewCount": 65,
       "positiveReviewCount": 32,
-      "comment": "清掃時の動作音は標準的ですが、自動ゴミ収集時の吸引音が非常に大きく、集合住宅や夜間の使用には注意が必要です。アプリのスケジュール機能を活用した昼間の運用が推奨されます。"
+      "comment": "走行音は普通程度の声。自動集塵の吸い上げ音は大きく、集合住宅では時間帯設計とアプリ制御が有効。主傾向の目安です。"
     },
     "stepClimbing": {
       "score": 85,
       "reviewCount": 42,
       "positiveReviewCount": 36,
-      "comment": "約2cmの段差は力強く乗り越えますが、軽量な玄関マットや長いフリンジのあるラグは巻き込む可能性があります。事前に障害物を最小限にすることで、より安定した清掃が可能です。"
+      "comment": "2cm前後の段差文脈で概ね乗り越え。薄い玄関マット・フリンジ付きラグは巻き込み易い。主傾向の目安です。"
     },
     "maintenance": {
       "score": 94,
       "reviewCount": 90,
       "positiveReviewCount": 85,
-      "comment": "最大60日分のゴミを自動で溜められるため、日々のゴミ捨てのストレスが皆無になります。パーツの構造もシンプルで、月に一度程度の簡単な拭き掃除だけで性能を維持できる点が優秀です。"
+      "comment": "最大60日分の文脈でゴミ捨て頻度の低減。パーツの分解の少なさと、月1程度の簡易拭きで保てる、という層向け。主傾向の目安です。"
     },
     "appStability": {
       "score": 92,
       "reviewCount": 60,
       "positiveReviewCount": 55,
-      "comment": "iRobot Homeアプリの地図作成精度が非常に高く、進入禁止エリアの設定も正確に反映されます。スケジュール管理や清掃状況の確認も直感的で、使い勝手の良さが評価されています。"
+      "comment": "iRobot Homeの地図・禁入ゾーンの再現性に好手応。スケジュール可視性の好評。主傾向の目安です。"
     },
     "batteryLife": {
       "score": 88,
       "reviewCount": 52,
       "positiveReviewCount": 46,
-      "comment": "一度の充電で3LDK程度の広さを十分にカバー可能です。万が一バッテリーが切れても自動で戻って充電し、中断場所から再開する機能があるため、広い家でも安心して任せられます。"
+      "comment": "3LDK程度文脈で一充電完走系の声。残量切れからの帰庫再開。主傾向の目安です。"
     }
   },
   "radarChartData": {
@@ -142,13 +133,13 @@
     "sampledReviews": 105,
     "adoptedReviews": 101,
     "excludedReviews": 4,
-    "trustScore": 88.0,
-    "comment": "楽天42件、Yahoo28件、Amazon35件の具体的テキストを確認し、計105件を分母とした。重複や内容の薄いレビューを除外し、精度の高い統計を算出。"
+    "trustScore": 88,
+    "comment": "採択前は105件母集団。重複・薄内容を4件除き本文採用101件で統計。reliabilityScore 88と整合。個人名・掲出元の固有名は方針で非記載。"
   },
   "reviewKeywords": {
     "positive": [
-      { "keyword": "吸引力が凄い", "count": 72 },
-      { "keyword": "ペットの毛が消えた", "count": 55 },
+      { "keyword": "吸引力", "count": 72 },
+      { "keyword": "ペットの毛", "count": 55 },
       { "keyword": "ゴミ捨て不要", "count": 48 },
       { "keyword": "地図が正確", "count": 35 },
       { "keyword": "メンテが楽", "count": 28 }
@@ -167,77 +158,59 @@
       "issue": "クリーンベースへのゴミ排出音",
       "occurrenceRate": 28,
       "occurrenceCount": 30,
-      "environmentalFactor": "集合住宅・深夜の静寂環境",
-      "technicalDescription": "本体のゴミをベースへ吸い上げる際、約15秒間、飛行機のエンジン音に近い騒音（約75-80dB）が発生します。",
+      "environmentalFactor": "集合住宅・深夜帯",
+      "technicalDescription": "ベース吸い上げの数十秒、体感で大きい音（層では飛行機比喩。目安70〜80dB級の文脈）。測定条件で変動。",
       "avoidanceStrategies": [
         {
           "method": "おやすみモードの設定",
           "effectiveness": "高",
           "technicalLevel": "初級",
-          "technicalRationale": "iRobot Homeアプリから「おやすみモード」を有効化すれば、夜間など指定時間内の自動ゴミ収集を一時的に停止させることが可能です。"
+          "technicalRationale": "iRobot Homeで夜間帯の自動集塵を止める。メーカー案内の手順に沿う。主傾向の目安です。"
         },
         {
           "method": "防振マットの設置",
           "effectiveness": "中",
           "technicalLevel": "初級",
-          "technicalRationale": "ベースの下に厚手の防振ゴムマットを敷くことで、床を通じた階下への振動伝達を大幅に軽減することがメーカーでも推奨されています。"
+          "technicalRationale": "ベース下の防振で床伝いの振動を抑える。メーカー・サポート文脈で併用例。主傾向の目安です。"
         }
       ],
-      "preventionTips": "清掃時間を家族が外出している時間帯に固定することで、騒音を感じる機会そのものを物理的に排除するのが最も効果的です。"
+      "preventionTips": "家族の不在帯に集塵を合わせると、聴感上の影響を小さくしやすい。主傾向の目安です。"
     }
   ],
   "topComplaints": [
     {
       "title": "ベースの設置サイズと左右の余白",
+      "complaint": "ベースの設置サイズと左右の余白",
+      "description": "自動ゴミ収集機が大きく、左右に各50cm前後の余白推奨の文脈があり、廊下幅や家具脇の設置に悩む声。",
       "percentage": 14,
       "reviewCount": 15,
-      "description": "自動ゴミ収集機が大きく、左右に各50cmのスペース確保が推奨されるため、狭い廊下や家具の隙間に置けない場合があります。",
-      "solution": "メーカー公式FAQでは、障害物がなければ左右30cm程度でも帰還可能とされています。光沢のある壁の近くを避けると帰還成功率が向上します。"
+      "severity": "medium",
+      "solution": "公式FAQ文脈では障害物が少なければ左右約30cmでも帰還例。光沢壁付近の誤検知を避ける等の帰庫失敗低減策の声。主傾向の目安です。"
     }
   ],
   "attributeScores": {
     "petOwner": {
       "overall": 97,
       "details": [
-        {
-          "field": "ペット毛清掃力",
-          "score": 98,
-          "reviewCount": 55,
-          "comment": "毛が絡みにくい独自ブラシと強力な吸引力の相乗効果で、換毛期のストレスが解消。ペットオーナーには最も推奨されるモデルです。"
-        }
+        { "field": "ペット毛清掃力", "score": 98, "reviewCount": 55, "comment": "毛絡みが少なめなブラシ文脈と吸引の掛け合わせ。換毛期の負担低減を挙げる層。主傾向の目安です。" }
       ]
     },
     "apartment": {
-      "overall": 82,
+      "overall": 81,
       "details": [
-        {
-          "field": "騒音配慮運用",
-          "score": 75,
-          "reviewCount": 65,
-          "comment": "清掃能力は抜群ですが、集合住宅ではゴミ収集音への対策が必須。アプリでのスケジュール管理を使いこなせば快適に使用可能です。"
-        }
+        { "field": "騒音配慮運用", "score": 75, "reviewCount": 65, "comment": "清掃力は好意的だが、集塵音対策の設計が必須の層。アプリの時間帯制御で使い分け。主傾向の目安です。" }
       ]
     },
     "workingProfessional": {
-      "overall": 95,
+      "overall": 92,
       "details": [
-        {
-          "field": "完全自動化",
-          "score": 96,
-          "reviewCount": 105,
-          "comment": "数ヶ月ゴミ捨て不要な運用と正確なスケジュール機能により、仕事で忙しい日々の清掃を完全にアウトソーシングできます。"
-        }
+        { "field": "完全自動化", "score": 96, "reviewCount": 105, "comment": "数ヶ月に一度の捨て頻度文脈と、スケジュール忠実性の掛け合わせ。主傾向の目安です。" }
       ]
     },
     "familyHome": {
-      "overall": 93,
+      "overall": 94,
       "details": [
-        {
-          "field": "マルチエリア清掃",
-          "score": 94,
-          "reviewCount": 52,
-          "comment": "広い戸建てや複雑な間取りでも、優れたマッピング能力で効率的に完走。子供の食べこぼしも強力に吸い取ると評判です。"
-        }
+        { "field": "マルチエリア清掃", "score": 94, "reviewCount": 52, "comment": "戸建の広め間取りでも、マッピングの辿り方に好手応。子どもの食べこぼし回収。主傾向の目安です。" }
       ]
     }
   },
@@ -248,8 +221,15 @@
     "retentionRateMin": 53,
     "retentionRateMax": 69,
     "period": "6ヶ月後",
-    "comment": "ルンバは中古市場で最も資産価値が落ちにくいブランドです。元箱と付属品を完備し、内部清掃を行えば、高リセールバリューが期待できます。"
+    "comment": "中古需要の文脈で下落が穏やかな例の声。元箱・付属品揃いと内清掃は査定のしやすさに寄与しやすい。主傾向の目安です。"
   },
+  "keywords": [
+    "Roomba Max 705",
+    "iRobot",
+    "AutoEmpty",
+    "ルンバ",
+    "ロボット掃除機"
+  ],
   "cta": {
     "amazon": "https://www.amazon.co.jp/s?k=Roomba+Max+705",
     "rakuten": "https://search.rakuten.co.jp/search/mall/Roomba+Max+705/",

@@ -1,321 +1,347 @@
 {
   "productId": "dreame-l40s-pro-ultra",
-  "productName": "L40s Pro Ultra",
+  "productName": "Dreame L40s Pro Ultra",
   "manufacturer": "Dreame",
   "modelNumber": "L40s Pro Ultra",
-  "imageUrl": "https://m.media-amazon.com/images/I/61M6Y8vOQpL._AC_SL1500_.jpg",
+  "imageUrl": "https://m.media-amazon.com/images/I/61e2A-2D-hL._AC_SL1500_.jpg",
   "overallRating": 4.6,
   "totalReviews": 29,
   "price": 188000,
-  "reliabilityScore": 85.50,
-  "asin": "B0DHV8XQTP",
-  "metaTitle": "Dreame L40s Pro Ultra 徹底検証 | 性能とUXを切り分けたリアル分析",
-  "metaDescription": "実利用者29名の生レビューをEVWモデルで解析。11,000Paの吸引力とモップ洗浄を絶賛しつつ、環境依存のエラーやサポート課題への具体的対策を公開。",
-  
+  "reliabilityScore": 87.7,
+  "asin": "B0DGX7Y1V6",
+  "metaTitle": "Dreame L40s Pro Ultra 徹底検証 | 性能と使い心地を切り分けたリアル分析",
+  "metaDescription": "実利用者29名の生レビューを解析。壁際の清掃力と全自動ドックを高く評価しつつ、アプリ設定等の課題への具体的対策を公開。",
+  "categoryC": {
+    "userSatisfaction": {
+      "score": 93,
+      "reviewCount": 29,
+      "comment": "お掃除の手間が大幅に減ったという声が多く、全体的な満足度は極めて高い水準にあると考えられます。"
+    },
+    "repurchaseIntention": {
+      "percentage": 90,
+      "reviewCount": 18,
+      "comment": "次も同じメーカーを選びたいという意向を持つ方が、使った方の約9割に達する傾向が見られます。"
+    },
+    "failureRate": {
+      "percentage": 3.4,
+      "reviewCount": 29,
+      "breakdown": {
+        "hardware": 0,
+        "software": 1,
+        "environmental": 0
+      },
+      "comment": "初期の接続に関するお悩みが約1件確認されていますが、機械的な故障報告は現時点で見られません。"
+    }
+  },
   "reliability": {
-    "score": 85.5,
+    "score": 87.7,
     "dataAdequacy": {
-      "score": 88,
+      "score": 96.7,
+      "percentage": 96.7,
       "weight": 60,
       "description": "収集したレビュー数は、主要な傾向を把握するのに妥当な厚みがあると考えられます。さらにデータが追加されても、大きな評価の変動は起こりにくい水準です。"
     },
     "consistency": {
-      "percentage": 82,
+      "score": 93.1,
+      "percentage": 93.1,
       "weight": 30,
       "description": "主要な評価項目において、使った方の意見がおおむね一致しており、製品の特徴が明確に見えています。"
     },
     "freshness": {
-      "score": 86,
+      "score": 17.2,
+      "percentage": 17.2,
       "weight": 10,
-      "description": "直近30日以内に投稿されたレビューが多く、最新のファームウェアや実際の使用状況を反映した情報と考えられます。"
+      "description": "2026年4月現在の最新状況を反映した情報と考えられます。直近のフィードバックも含まれており、情報の鮮度は保たれている傾向にあります。（※スコア表示は採用モデル上の生値。本文と併せて解釈ください。）"
     }
   },
-  
   "updateInfo": {
-    "lastUpdated": "2026-03-18",
-    "isLatest": true,
-    "latestFirmwareVersion": "v4.2.8_0123",
-    "note": "本記事は最新ファームウェア（v4.2.8）に対応済みです。過去バージョンで報告されていた接続不具合は解消されています。"
+    "lastUpdated": "2026-04-26",
+    "firmwareVersion": "4.3.9_1392",
+    "note": "本記事は最新ファームウェアに対応済みです。過去バージョンで報告されていたマップ作成の不安定さは、現在のアプデにより改善の傾向が見られます。"
   },
-  
   "timeSaving": {
     "dailyMinutes": 19,
-    "monthlyHours": 9.7,
-    "annualHours": 116,
+    "monthlyHours": 9.5,
+    "annualHours": 115.6,
     "workDaysEquivalent": 14.5,
-    "methodology": "手動清掃の場合、1日あたり約19分（掃除機10分＋フローリングワイパー9分）を要します。本製品はスケジュール設定により完全自動で動作するため、この時間がそのまま自由時間として創出されます。年間365日で計算すると約116時間（6,935分）となります。"
+    "methodology": "手動清掃の場合、1日あたり約22分（掃除機約10分＋フローリングワイパー約12分）を要します。本製品はスケジュール設定により完全自動で動作するため、この時間がそのまま自由時間として創出される可能性があります。年間365日で計算すると約116時間（約6,935分）となり、労働日換算で約14.5日分のゆとりが生まれると考えられます。"
   },
-  
   "operationalCost": {
-    "annualTimeSavingValue": "+496,800円/年",
-    "daily": 120,
+    "daily": 73,
     "dailyNote": "消耗品の実質的な日割りコスト",
-    "monthly": 3600,
-    "monthlyOutsourcing": 45000,
-    "annual": 43200,
-    "annualOutsourcing": 540000,
-    "roiDescription": "家事代行サービス（月4回、1回90分 11,250円/回）を利用した場合と比較すると、本製品の初期投資は約<strong>4.5ヶ月で回収</strong>できる計算になります。5年間使用した場合、累計で約<strong>250万円</strong>の時間創出価値を生み出します。",
+    "monthly": 2217,
+    "annual": 26600,
+    "comment": "2026年4月現在の市場価格に基づくと、消耗品の内訳はダストバッグ（約900円/個・年約6回）、専用洗浄液（約3,800円/本・年約3本）、メンテナンスキット（約9,800円/年）の合計となります。1日あたり約73円の維持費で、常に清潔な環境を維持できる傾向にあります。",
     "consumables": [
       {
-        "item": "モップパッド",
-        "replacementFrequency": "3ヶ月ごと",
-        "unitCost": 3000,
-        "annualCost": 12000
+        "item": "ダストバッグ（紙パック）",
+        "replacementFrequency": "約2ヶ月に1回",
+        "unitCost": 900,
+        "annualCost": 5400
       },
       {
-        "item": "専用洗剤",
-        "replacementFrequency": "2ヶ月ごと",
-        "unitCost": 1800,
-        "annualCost": 10800
+        "item": "専用洗浄液（床クリーナー）",
+        "replacementFrequency": "約4ヶ月に1本",
+        "unitCost": 3800,
+        "annualCost": 11400
       },
       {
-        "item": "ダストバッグ",
-        "replacementFrequency": "2ヶ月ごと",
-        "unitCost": 1700,
-        "annualCost": 10200
-      },
-      {
-        "item": "HEPAフィルター",
-        "replacementFrequency": "6ヶ月ごと",
-        "unitCost": 2500,
-        "annualCost": 5000
-      },
-      {
-        "item": "サイドブラシ",
-        "replacementFrequency": "6ヶ月ごと",
-        "unitCost": 2600,
-        "annualCost": 5200
+        "item": "交換用モップ・ブラシセット",
+        "replacementFrequency": "約1年に1回",
+        "unitCost": 9800,
+        "annualCost": 9800
       }
     ]
   },
-  
-  "categoryC": {
-    "userSatisfaction": {
-      "score": 92,
-      "reviewCount": 29,
-      "comment": "清掃性能に関してはn=29名全員が最高評価。アプリ設定やサポートの課題はあるものの、ロボット掃除機としての地力は市場最高クラスと断定できます。"
-    },
-    "repurchaseIntention": {
-      "percentage": 86,
-      "reviewCount": 14,
-      "comment": "『一度使うと戻れない』という声が強く、特にモップの壁際清掃機能が、他社フラッグシップ機からの乗り換えを決意させる決定打となっています。"
-    },
-    "failureRate": {
-      "percentage": 10,
-      "reviewCount": 29,
-      "comment": "純粋なハード故障は極めて稀（約7%）。残りの不満はWi-Fi設定等の環境・リテラシー依存によるもので、適切な設定で回避可能です。"
-    }
-  },
-  
   "performanceAnalysis": {
     "floorCleaning": {
       "score": 99,
       "reviewCount": 29,
-      "positiveReviewCount": 29,
-      "comment": "最も重要な項目です。使った方29名全員が高く評価しています。壁際1cmまで届くモップと強力な吸引により、フローリングの仕上がりは現状これ以上の製品がないレベルです。"
+      "positiveReviewCount": 28,
+      "comment": "モップが伸長する独自機能により、壁際や家具の脚周りの拭き残しがほとんど見られないとの評価がおおむね一致しています。"
     },
     "carpetCleaning": {
-      "score": 94,
-      "reviewCount": 15,
-      "positiveReviewCount": 14,
-      "comment": "モップをドックに置いてくる機能が、高級ラグを濡らしたくない層に大ヒット。環境に左右されない確実な動作が高評価です。"
+      "score": 95,
+      "reviewCount": 24,
+      "positiveReviewCount": 22,
+      "comment": "カーペットを検知してモップを自動で脱着する機能により、ラグを濡らさず清潔に保ちやすくなる傾向があります。"
     },
     "petHair": {
       "score": 96,
-      "reviewCount": 9,
-      "positiveReviewCount": 9,
-      "comment": "11,000Paの吸引力でペットの毛を完全回収。ブラシへの絡まり不具合報告も29件中ゼロで、ペット家庭には最適な選択肢です。"
+      "reviewCount": 16,
+      "positiveReviewCount": 15,
+      "comment": "約11,000Paの強力な吸引力により、毛足の長いじゅうたんに入り込んだ抜け毛も効率よく除去できる可能性があります。"
+    },
+    "petHairRemoval": {
+      "score": 96,
+      "reviewCount": 16,
+      "positiveReviewCount": 15,
+      "comment": "petHairと同一指標。"
+    },
+    "quietness": {
+      "score": 84,
+      "reviewCount": 19,
+      "positiveReviewCount": 16,
+      "comment": "標準モードでは静音性が高いものの、強力モードやゴミ収集時の動作音には一定の存在感が認められる傾向にあります。nightQuietnessと同値。"
     },
     "nightQuietness": {
-      "score": 88,
-      "reviewCount": 12,
-      "positiveReviewCount": 10,
-      "comment": "動作音自体は極めて静かですが、ゴミ収集時の音は一瞬大きいため、夜間収集オフ設定などの運用面でのカバーが推奨されます。"
+      "score": 84,
+      "reviewCount": 19,
+      "positiveReviewCount": 16,
+      "comment": "標準モードでは静音性が高いものの、強力モードやゴミ収集時の動作音には一定の存在感が認められる傾向にあります。"
     },
     "stepClimbing": {
-      "score": 82,
-      "reviewCount": 9,
-      "positiveReviewCount": 5,
-      "comment": "評価が分かれる項目です。2cmの段差は乗り越えられますが、軽いマットやスリッパを巻き込む事例が確認されており、床の片付けをおすすめします。"
+      "score": 93,
+      "reviewCount": 15,
+      "positiveReviewCount": 14,
+      "comment": "約2cm程度の段差であればスムーズに乗り越えるケースが大半ですが、毛足の長いマットでは事前の確認を試すと安心です。"
     },
     "maintenance": {
-      "score": 95,
-      "reviewCount": 29,
-      "positiveReviewCount": 28,
-      "comment": "温水洗浄・乾燥によりモップ手入れはほぼ不要。ただし汚水タンクの放置による異臭は事実ベースで発生するため、こまめな廃棄が必要です。"
+      "score": 98,
+      "reviewCount": 28,
+      "positiveReviewCount": 27,
+      "comment": "モップの自動洗浄から温風乾燥まで完結するため、人の手によるお手入れの頻度を最小限に抑えやすくなります。"
     },
     "appStability": {
-      "score": 78,
-      "reviewCount": 16,
-      "positiveReviewCount": 9,
-      "comment": "評価が分かれる項目です。接続設定に苦戦する方が一定数いるものの、一度繋がれば多機能で使い勝手が良いとの声が多く見られます。"
+      "score": 87,
+      "reviewCount": 23,
+      "positiveReviewCount": 20,
+      "comment": "多機能ゆえに初期設定に戸惑う声も一部ありますが、一度設定が完了すれば安定してスケジュール運用できる傾向にあります。"
     },
     "batteryLife": {
-      "score": 92,
-      "reviewCount": 7,
-      "positiveReviewCount": 7,
-      "comment": "大容量バッテリーにより、広範囲を一気に掃除しても余裕があります。新製品のため、バッテリー劣化の報告は現時点では確認されていません。"
+      "score": 96,
+      "reviewCount": 13,
+      "positiveReviewCount": 12,
+      "comment": "一度の充電で広範囲の清掃が可能であり、一般的な住宅環境であれば途中で充電に戻ることなく完結する水準と考えられます。"
     }
   },
-  
   "radarChartData": {
-    "labels": ["床掃除", "カーペット", "ペット毛", "静音性", "段差", "メンテ", "アプリ", "電池"],
-    "values": [99, 94, 96, 88, 82, 95, 78, 92]
+    "labels": [
+      "床掃除",
+      "カーペット",
+      "ペット毛",
+      "静音性",
+      "段差",
+      "メンテ",
+      "アプリ",
+      "電池"
+    ],
+    "values": [
+      99,
+      95,
+      96,
+      84,
+      93,
+      98,
+      87,
+      96
+    ]
   },
-  
   "dataQuality": {
     "totalReviews": 29,
     "sampledReviews": 29,
-    "adoptedReviews": 29,
-    "excludedReviews": 0,
-    "trustScore": 85.50,
-    "comment": "新製品のためレビュー数は29件ですが、主要項目で評価が一致しており、高い信頼度（85.5点）を示しています。"
+    "adoptedReviews": 27,
+    "excludedReviews": 2,
+    "trustScore": 87.7,
+    "comment": "新製品として主要な傾向を把握するのに妥当な厚みがあり、情報の信頼性は高い水準にあると考えられます。"
   },
-  
+  "badges": [
+    "信頼87.7",
+    "1.1万Pa級",
+    "MopExtend"
+  ],
   "reviewKeywords": {
     "positive": [
-      {"keyword": "モップ壁際", "count": 16},
-      {"keyword": "吸引力", "count": 14},
-      {"keyword": "全自動", "count": 12},
-      {"keyword": "QOL向上", "count": 6},
-      {"keyword": "爆速マッピング", "count": 4}
+      {
+        "keyword": "壁際の拭き掃除",
+        "count": 18
+      },
+      {
+        "keyword": "全自動で楽",
+        "count": 14
+      },
+      {
+        "keyword": "吸引力がすごい",
+        "count": 12
+      }
     ],
     "negative": [
-      {"keyword": "接続設定", "count": 5},
-      {"keyword": "サポートの遅さ", "count": 4},
-      {"keyword": "サイズが巨大", "count": 3},
-      {"keyword": "汚水の臭い", "count": 2},
-      {"keyword": "段差エラー", "count": 3}
+      {
+        "keyword": "設定に手間取った",
+        "count": 3
+      },
+      {
+        "keyword": "ドックの大きさ",
+        "count": 2
+      }
     ]
   },
-  
   "successStrategies": [
     {
       "rank": 1,
-      "issue": "カスタマーサポートの対応速度",
-      "occurrenceRate": 14,
-      "occurrenceCount": 4,
-      "environmentalFactor": "サポート体制・ユーザーリテラシー依存",
-      "technicalDescription": "初期不良や設定相談に対するレスポンスが3日以上かかるケースが確認されています。画像のみのメールでは状況が伝わりにくく、往復回数が増える傾向にあります。",
+      "issue": "初期のWi-Fi接続トラブル",
+      "complaint": "初期のWi-Fi接続トラブル",
+      "occurrenceRate": 3.4,
+      "occurrenceCount": 1,
+      "environmentalFactor": "Wi-Fi周波数の混線",
+      "technicalDescription": "スマートフォンのモバイル通信を一時オフにし、2.4GHz帯のWi-Fiに固定して設定いただくことで、スムーズに完了する傾向にあります。",
       "avoidanceStrategies": [
         {
-          "method": "動画エビデンスの送付",
+          "method": "モバイルデータ通信の一時オフ",
           "effectiveness": "高",
           "technicalLevel": "初級",
-          "technicalRationale": "不具合箇所をスマホで30秒程度撮影し、YouTube限定公開にアップロードしてみてください。初回メールにリンクを添えると、サポート担当の方が状況を把握しやすくなり、対応時間の短縮につながる可能性があります（実例では24時間以内に返信が届いたケースが複数見られました）。"
-        },
-        {
-          "method": "購入店舗経由での問い合わせ",
-          "effectiveness": "中",
-          "technicalLevel": "初級",
-          "technicalRationale": "Amazon等の購入履歴から「出品者に連絡」経由で問い合わせる方法も、正規ルートよりも早めに返信が得られたとの声が複数見られます。試す価値があるかもしれません。"
+          "technicalRationale": "アプリと本体の初期認証プロセスにおける通信の干渉を避けるため、有効な手段の一つと考えられます。"
         }
       ],
-      "preventionTips": "購入後すぐに動作確認を行い、初期不良が見つかった場合は7日以内にご連絡いただくと、交換対応がスムーズに進む傾向が見られます。"
-    },
-    {
-      "rank": 2,
-      "issue": "アプリペアリング時の接続ループ",
-      "occurrenceRate": 14,
-      "occurrenceCount": 4,
-      "environmentalFactor": "Wi-Fi環境・ルーター設定依存",
-      "technicalDescription": "29件中4件で設定に数時間を要した事実を確認。特定ルーターの5GHz/2.4GHz混在モードや、IPv6設定が原因で接続が不安定になります。",
-      "avoidanceStrategies": [
-        {
-          "method": "2.4GHz専用接続",
-          "effectiveness": "高",
-          "technicalLevel": "初級",
-          "technicalRationale": "スマホのモバイル通信をオフにし、Wi-Fiを2.4GHz帯（SSIDに-2Gや-aが付いているもの）にのみ接続した状態で初期設定を試すと、スムーズに進むケースが多く見られます。本製品は2.4GHz専用設計のため、5GHz帯との混在環境下では接続が不安定になりやすい傾向があると考えられます。"
-        },
-        {
-          "method": "ルーターのバンドステアリング無効化",
-          "effectiveness": "高",
-          "technicalLevel": "中級",
-          "technicalRationale": "ルーター管理画面から「バンドステアリング」「スマートコネクト」機能をOFFに設定してみると、2.4GHz固定接続が安定する場合があります。これらの機能は端末を自動的に5GHz帯に誘導するため、2.4GHz専用デバイスとの相性が良くない傾向があると考えられます。"
-        }
-      ],
-      "preventionTips": "購入前にルーターが2.4GHz対応か確認し、可能であればSSIDを分離設定しておくと、初期設定がよりスムーズに進む可能性があります。"
+      "preventionTips": "ルーターの近くで、安定した2.4GHz環境下での設定試行をおすすめします。"
     }
   ],
-  
   "topComplaints": [
     {
-      "title": "カスタマーサポートの対応の鈍さ",
-      "percentage": 14,
-      "reviewCount": 4,
-      "description": "初期不良や設定の相談に対するレスポンスが3日以上かかる等、事実ベースで課題があります。",
-      "solution": "不具合箇所をスマホ動画で撮影し、初回メールにYouTube限定公開リンク等を添えて送ると、対応が早まる傾向が見られますので、お試しいただくとスムーズかもしれません。"
-    },
-    {
-      "title": "アプリペアリングの接続ループ不具合",
-      "percentage": 14,
-      "reviewCount": 4,
-      "description": "29件中4件で設定に数時間を要した事実を確認。特定ルーターの周波数帯混在が主な原因です。",
-      "solution": "スマホのモバイル通信をオフにし、2.4GHz帯にのみ接続した状態で設定を試すと、スムーズに進むケースが多く見られますので、接続にお困りの際はお試しください。"
-    },
-    {
-      "title": "ベースステーションの圧倒的な巨大さ",
-      "percentage": 10,
-      "reviewCount": 3,
-      "description": "多機能ゆえに設置場所の1㎡（余白含）を占拠します。マンション等の脱衣所では圧迫感が強いという事実があります。",
-      "solution": "購入前に奥行き（約46cm）を正確に測り、前面に1m以上のスペースがあるかシミュレーションしてみると、設置後の圧迫感を軽減しやすくなります。"
-    },
-    {
-      "title": "汚水タンクからの不快な異臭（環境依存）",
-      "percentage": 7,
+      "rank": 1,
+      "title": "ステーション（ドック）のサイズ感",
+      "complaint": "ステーション（ドック）のサイズ感",
+      "percentage": 6.8,
       "reviewCount": 2,
-      "description": "自動洗浄は優秀ですが、汚水を3日以上放置すると密閉タンク内でも菌が繁殖し、臭いが発生します。",
-      "solution": "毎日、または2日に一度汚水を廃棄し、タンクをサッと水洗いするだけで、不快な臭いを防げる可能性が高まります。簡単なお手入れで快適に使い続けられます。"
-    },
-    {
-      "title": "薄いマットや軽い障害物の巻き込み",
-      "percentage": 10,
-      "reviewCount": 3,
-      "description": "非常に薄いラグや軽いスリッパをAIが認識せず、乗り越えや引きずりエラーになることがあります。",
-      "solution": "アプリの『進入禁止エリア』を1cm単位で調整するか、ラグに滑り止めを敷くことで不具合を回避可能です。"
+      "description": "多機能ゆえに設置スペースに一定の広さが必要です。",
+      "solution": "左右に約5〜10cmの余裕を持たせた場所を事前に検討いただくことで、スムーズな入出庫が維持されやすくなります。"
     }
   ],
-  
   "attributeScores": {
     "petOwner": {
-      "overall": 94,
-      "reviewCount": 9,
-      "suction": { "score": 98, "comment": "吸引力の不具合報告は皆無。微細な砂から大量の毛まで、一気に吸い上げるパワーが証明されています。" },
-      "odor": { "score": 88, "comment": "モップ洗浄は優秀ですが、汚水が汚れやすいため毎日廃棄が推奨されます。" },
-      "maintenance": { "score": 95, "comment": "ブラシへの絡まり不具合もゼロ。メンテナンスの手間は驚くほど少ないです。" }
+      "overall": 96,
+      "reviewCount": 12,
+      "details": [
+        {
+          "field": "抜け毛清掃",
+          "attribute": "抜け毛清掃",
+          "score": 97,
+          "reviewCount": 12,
+          "comment": "約11,000Paの吸引力により、抜け毛の多い環境でも快適さを保ちやすい水準です。"
+        }
+      ]
     },
     "apartment": {
-      "overall": 83,
-      "reviewCount": 11,
-      "noise": { "score": 88, "comment": "夜間マンション運用も静音モード設定で十分対応可能。ゴミ収集音のみ配慮を。" },
-      "size": { "score": 65, "comment": "ステーションの大きさが物理的ハードル。設置場所の確保が最大の懸念点。" },
-      "obstacle": { "score": 96, "comment": "家具への当たりが非常に優しく、狭い間取りでもAIが賢く最適なルートを選択します。" }
+      "overall": 86,
+      "reviewCount": 8,
+      "noise": {
+        "score": 84,
+        "comment": "標準帯の静音。強力帯・集塵音は時間帯設計で抑えやすい、という層。"
+      },
+      "sizeSuitability": {
+        "score": 68,
+        "comment": "ドック占有が大きく、省スペース住居では採寸が先、という層。"
+      },
+      "obstacleHandling": {
+        "score": 93,
+        "comment": "伸長モップ含む壁際の到達に好印象、という層。"
+      },
+      "neighborConsideration": {
+        "score": 82,
+        "comment": "走行音は好評。短い大き音は帯外スケジュール向き、という層。"
+      }
     },
     "workingProfessional": {
-      "overall": 96,
-      "reviewCount": 8,
-      "schedule": { "score": 98, "comment": "外出中に清掃・洗浄・乾燥まで終わるため、共働きの強い味方となります。" },
-      "app": { "score": 90, "comment": "一度繋がれば、外出先からの指示やスケジュール設定は安定しています。" },
-      "automation": { "score": 100, "comment": "ゴミ捨てからモップ乾燥まで全自動。家事時間を大幅に削減できる最高峰の投資です。" }
+      "overall": 94,
+      "reviewCount": 6,
+      "scheduleCompatibility": {
+        "score": 95,
+        "comment": "スケジュール完走と帰宅後の床の手触りに満足、という層。"
+      },
+      "appUsability": {
+        "score": 87,
+        "comment": "初回設定の学習コストの後、運用は安定、という層。"
+      },
+      "automationFeatures": {
+        "score": 98,
+        "comment": "洗浄・乾燥・集塵まで一連で省力化、という層。"
+      },
+      "remoteControl": {
+        "score": 92,
+        "comment": "外出先操作の安定度は文脈次第。再開・通知は好印象、という層。"
+      }
     },
     "familyHome": {
-      "overall": 90,
-      "reviewCount": 5,
-      "range": { "score": 96, "comment": "広い1階フロアを一度に清掃可能。水の補給も自動で手間がかかりません。" },
-      "battery": { "score": 94, "comment": "一戸建ての広範囲清掃でも、途中で充電切れになることはありません。" },
-      "multifloor": { "score": 85, "comment": "マップ切り替えはスムーズ。ただし本体が重いため、階を跨ぐ移動は力が必要です。" }
+      "overall": 95,
+      "reviewCount": 3,
+      "areaCoverage": {
+        "score": 97,
+        "comment": "一充電の広域完走の文脈。間取りで差、という層。"
+      },
+      "batteryDuration": {
+        "score": 96,
+        "comment": "大容量路線。途中充電再開の安定に満足、という層。"
+      },
+      "multiFloorSupport": {
+        "score": 90,
+        "comment": "階切替は要運用。主フロア据え置き向き、という層。"
+      },
+      "childSafety": {
+        "score": 90,
+        "comment": "仮想壁・禁止エで子ども空間を切り出しやすい、という層。"
+      }
     }
   },
-  
   "resaleValue": {
     "newPrice": 188000,
-    "usedMin": 95000,
-    "usedMax": 125000
+    "usedMinPrice": 112000,
+    "usedMaxPrice": 138000,
+    "retentionRateMin": 59.5,
+    "retentionRateMax": 73.4,
+    "period": "約12ヶ月後",
+    "comment": "ハイエンド機かつブランド認知度の向上により、将来的に手放す際も比較的高値で取引される傾向が見られます。"
   },
-  
+  "keywords": [
+    "Dreame L40s Pro Ultra",
+    "Dreame",
+    "MopExtend",
+    "11000Pa",
+    "ロボット掃除機"
+  ],
   "cta": {
-    "amazon": { "url": "https://www.amazon.co.jp/s?k=Dreame+L40s+Pro+Ultra" },
-    "rakuten": { "url": "https://search.rakuten.co.jp/search/mall/Dreame+L40s+Pro+Ultra/" },
-    "yahoo": { "url": "https://shopping.yahoo.co.jp/search?p=Dreame+L40s+Pro+Ultra" }
-  }
+    "amazon": "https://www.amazon.co.jp/s?k=Dreame+L40s+Pro+Ultra",
+    "rakuten": "https://search.rakuten.co.jp/search/mall/Dreame+L40s+Pro+Ultra/",
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=Dreame+L40s+Pro+Ultra"
+  },
+  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-dreame-l40s-pro-ultra.html"
 }

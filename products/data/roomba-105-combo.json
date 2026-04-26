@@ -11,7 +11,6 @@
   "asin": "B0D1XY7Z6S",
   "metaTitle": "Roomba 105 Combo 詳細分析｜285件のレビューから不満点と対策を可視化",
   "metaDescription": "Roomba 105 Comboの285件のレビューを統計分析。水拭き一体型95点、自動ゴミ収集95点、信頼度89.15点。Wi-Fi設定14%などの主要な不満点と具体的な対策方法を詳しく解説します。",
-
   "reliability": {
     "score": 89.15,
     "dataAdequacy": {
@@ -30,21 +29,18 @@
       "note": "約7割が最近1年以内の投稿で、現行モデルの性能を反映している可能性があります。"
     }
   },
-
   "updateInfo": {
     "lastUpdated": "2026-03-21",
     "firmwareVersion": "v3.2.15",
     "note": "最新ファームウェアv3.2.15により、Wi-Fi接続の安定性とアプリのペアリング成功率が向上しています。"
   },
-
   "timeSaving": {
     "dailyMinutes": 22,
-    "monthlyHours": 11.0,
+    "monthlyHours": 11,
     "annualHours": 132,
     "workDaysEquivalent": 16.5,
     "methodology": "約20畳の居住空間を手動掃除機と水拭きで清掃する場合の平均時間（約22分/日）を基準に算出しています。"
   },
-
   "operationalCost": {
     "daily": 95,
     "dailyNote": "消耗品の実質的な日割りコスト",
@@ -83,7 +79,6 @@
       }
     ]
   },
-
   "categoryC": {
     "userSatisfaction": {
       "score": 94,
@@ -101,7 +96,6 @@
       "comment": "ハード故障は少ないですが、初期設定時のWi-Fi接続エラー（2.4GHz制限）や、アプリとのペアリング不調が数件報告されています。"
     }
   },
-
   "performanceAnalysis": {
     "floorCleaning": {
       "score": 92,
@@ -152,12 +146,28 @@
       "comment": "3LDK以上の広範囲も一度にカバーできる水準です。バッテリーが減ると自動で戻り、充電後に再開する「自動再開機能」も確実に動作するようです。"
     }
   },
-
   "radarChartData": {
-    "labels": ["床掃除", "カーペット", "ペット毛", "静音性", "段差", "メンテ", "アプリ", "電池"],
-    "values": [92, 88, 90, 85, 82, 95, 72, 88]
+    "labels": [
+      "床掃除",
+      "カーペット",
+      "ペット毛",
+      "静音性",
+      "段差",
+      "メンテ",
+      "アプリ",
+      "電池"
+    ],
+    "values": [
+      92,
+      88,
+      90,
+      85,
+      82,
+      95,
+      72,
+      88
+    ]
   },
-
   "dataQuality": {
     "totalReviews": 285,
     "adoptedReviews": 278,
@@ -184,29 +194,72 @@
       }
     ]
   },
-
   "reviewKeywords": {
     "positive": [
-      { "keyword": "水拭き", "count": 112 },
-      { "keyword": "静か", "count": 95 },
-      { "keyword": "自動ゴミ収集", "count": 88 },
-      { "keyword": "サラサラ", "count": 64 },
-      { "keyword": "マッピング", "count": 58 },
-      { "keyword": "時短", "count": 45 },
-      { "keyword": "進化", "count": 38 },
-      { "keyword": "ゴムブラシ", "count": 32 }
+      {
+        "keyword": "水拭き",
+        "count": 112
+      },
+      {
+        "keyword": "静か",
+        "count": 95
+      },
+      {
+        "keyword": "自動ゴミ収集",
+        "count": 88
+      },
+      {
+        "keyword": "サラサラ",
+        "count": 64
+      },
+      {
+        "keyword": "マッピング",
+        "count": 58
+      },
+      {
+        "keyword": "時短",
+        "count": 45
+      },
+      {
+        "keyword": "進化",
+        "count": 38
+      },
+      {
+        "keyword": "ゴムブラシ",
+        "count": 32
+      }
     ],
     "negative": [
-      { "keyword": "Wi-Fi設定", "count": 35 },
-      { "keyword": "ゴミ収集の音", "count": 28 },
-      { "keyword": "説明書", "count": 22 },
-      { "keyword": "初期設定", "count": 18 },
-      { "keyword": "段差の捲れ", "count": 15 },
-      { "keyword": "高さ", "count": 12 },
-      { "keyword": "サポート", "count": 10 }
+      {
+        "keyword": "Wi-Fi設定",
+        "count": 35
+      },
+      {
+        "keyword": "ゴミ収集の音",
+        "count": 28
+      },
+      {
+        "keyword": "説明書",
+        "count": 22
+      },
+      {
+        "keyword": "初期設定",
+        "count": 18
+      },
+      {
+        "keyword": "段差の捲れ",
+        "count": 15
+      },
+      {
+        "keyword": "高さ",
+        "count": 12
+      },
+      {
+        "keyword": "サポート",
+        "count": 10
+      }
     ]
   },
-
   "successStrategies": [
     {
       "rank": 1,
@@ -394,7 +447,6 @@
       ]
     }
   ],
-
   "topComplaints": [
     {
       "rank": 1,
@@ -437,7 +489,6 @@
       "solution": "清掃完了後、すぐにモップを取り外して水洗いし、乾燥させるルーチンを組むことで衛生的に保てる可能性があります。"
     }
   ],
-
   "attributeScores": {
     "petOwner": {
       "overall": 85.6,
@@ -532,22 +583,6 @@
       }
     }
   },
-
-  "resaleValue": {
-    "newPrice": 69800,
-    "usedPriceMin": 41880,
-    "usedPriceMax": 55840,
-    "retentionRate": 68,
-    "marketDemand": "高",
-    "depreciationNote": "iRobotブランドの信頼性と水拭き一体型の希少性から、中古市場でも約68%の価格維持率を保っている傾向です。",
-    "resaleLinks": [
-      {
-        "platform": "メルカリ",
-        "url": "https://jp.mercari.com/search?keyword=Roomba+105+Combo"
-      }
-    ]
-  },
-
   "cta": {
     "amazon": {
       "url": "https://www.amazon.co.jp/s?k=Roomba+105+Combo+AutoEmpty",

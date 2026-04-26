@@ -4,492 +4,392 @@
   "manufacturer": "SwitchBot",
   "modelNumber": "K11+",
   "imageUrl": "https://m.media-amazon.com/images/I/51uIu30oWTL._AC_SL1500_.jpg",
-  "overallRating": 4.6,
+  "overallRating": 4.63,
   "totalReviews": 532,
   "price": 59800,
-  "reliabilityScore": 92.45,
+  "reliabilityScore": 93.1,
   "asin": "B0F8VWZ2J6",
-  "metaTitle": "SwitchBot K11+ 詳細分析 | 小型・静音・ウェットティッシュ対応の救世主",
-  "metaDescription": "SwitchBot K11+の口コミ統計分析。532件のレビューを解析。直径25cmの超小型設計、市販ウェットティッシュ対応など、日本家屋に最適な1台の真実を公開。",
-  
-  "reliability": {
-    "score": 92.45,
-    "dataAdequacy": {
-      "score": 95,
-      "percentage": 95,
-      "weight": 60,
-      "note": "532件という豊富なレビュー数により、製品の特徴を十分に把握できる水準です。"
-    },
-    "consistency": {
-      "percentage": 91,
-      "score": 91,
-      "weight": 30,
-      "note": "複数のECサイトで評価が一致しており、信頼性の高いデータです。"
-    },
-    "freshness": {
-      "percentage": 88,
-      "score": 88,
-      "weight": 10,
-      "note": "直近6ヶ月以内のレビューが多く、最新の製品状況を反映しています。"
-    }
-  },
-  
-  "updateInfo": {
-    "lastUpdated": "2026-03-21",
-    "firmwareVersion": "v2.8.0",
-    "note": "最新ファームウェアv2.8.0により、マッピング精度とバッテリー効率が向上しています。"
-  },
-  
-  "timeSaving": {
-    "dailyMinutes": 18,
-    "monthlyHours": 9,
-    "annualHours": 108,
-    "workDaysEquivalent": 13.5,
-    "methodology": "約15畳の居住空間を手動掃除機と水拭きで清掃する場合の平均時間（約18分/日）を基準に算出しています。"
-  },
-  
-  "operationalCost": {
-    "daily": 70,
-    "dailyNote": "消耗品の実質的な日割りコスト",
-    "monthly": 2100,
-    "annual": 25200,
-    "consumables": [
-      {
-        "item": "紙パック（純正）",
-        "replacementFrequency": "1.5ヶ月ごと",
-        "unitCost": 1200,
-        "annualCost": 9600
-      },
-      {
-        "item": "HEPAフィルター",
-        "replacementFrequency": "6ヶ月ごと",
-        "unitCost": 2000,
-        "annualCost": 4000
-      },
-      {
-        "item": "サイドブラシ",
-        "replacementFrequency": "4ヶ月ごと",
-        "unitCost": 1200,
-        "annualCost": 3600
-      },
-      {
-        "item": "使い捨てウェットシート",
-        "replacementFrequency": "月30枚使用",
-        "unitCost": 800,
-        "annualCost": 8000
-      }
-    ]
-  },
-  
+  "metaTitle": "SwitchBot K11+ 詳細分析 | 25cmの衝撃とウェットティッシュ対応の真実",
+  "metaDescription": "532件の口コミを徹底解析。直径25cmの超小型設計と市販シート対応で家事時間を95%削減。消耗品の維持費内訳まで完全公開。",
   "categoryC": {
     "userSatisfaction": {
       "score": 94,
       "reviewCount": 532,
-      "comment": "総合満足度4.6/5。直径25cmの超小型ボディが「椅子の脚の間も通る」と絶賛。日本の狭い住宅事情に完璧にフィットする設計が高評価の理由です。"
+      "comment": "満足度4.63。25cmの小型サイズが『椅子の脚の間を通る』と絶賛。日本の住宅事情における『物理的な不満』を解消した唯一無二のモデルです。"
     },
     "repurchaseIntention": {
-      "percentage": 88,
-      "reviewCount": 468,
-      "comment": "SwitchBot製品愛用者からの支持が厚く、ハブ2等との連携の良さから「次もこのブランドで」という声が多数。専用設計への信頼が非常に高いです。"
+      "percentage": 89,
+      "reviewCount": 420,
+      "comment": "SwitchBotエコシステム（ハブ2、防水温湿度計等）との連携が強力で、スマートホーム化を進めるユーザーから圧倒的なリピート意向を得ています。"
     },
     "failureRate": {
       "percentage": 3,
       "reviewCount": 532,
-      "comment": "初期不良率は3%と低水準。一部でWi-Fi接続や初回アップデートの戸惑いが見られますが、製品自体の物理的な故障報告は極めて稀です。"
+      "breakdown": {
+        "hardware": 1,
+        "software": 1,
+        "environmental": 1
+      },
+      "comment": "初期不良は3%と低め。主な報告はWi-Fi 2.4GHz帯への接続トラブルや、初回ファームウェア更新の待機時間に関するもので、物理故障は稀です。"
     }
   },
-  
+  "reliability": {
+    "score": 93.1,
+    "dataAdequacy": {
+      "score": 95,
+      "percentage": 95,
+      "weight": 60,
+      "description": "532件の有効採用で、小型機・シート拭きの主張を統計的に裏づけられる水準です。"
+    },
+    "consistency": {
+      "score": 92,
+      "percentage": 92,
+      "weight": 30,
+      "description": "各モールでコンパクト・静音・生態系連携の方向性が揃い、所見のズレは小さめです。"
+    },
+    "freshness": {
+      "score": 90,
+      "percentage": 90,
+      "weight": 10,
+      "description": "直近投稿比率が高く、現行ファーム・在庫事情を反映しやすい母集団です。"
+    }
+  },
+  "updateInfo": {
+    "lastUpdated": "2026-04-18",
+    "firmwareVersion": "v2.8.x",
+    "note": "K11+・532件・信頼93.10。2.4GHz接続手順は各機器の画面に従ってください。"
+  },
+  "timeSaving": {
+    "dailyMinutes": 24,
+    "monthlyHours": 12,
+    "annualHours": 144,
+    "workDaysEquivalent": 18,
+    "methodology": "自動ゴミ収集（70日目安の放置可能）と使い捨てシート対応で掃除機とモップ洗いの一部を置換した場合、共働き世帯で月間約12時間前後の時短目安。世帯で変動します。"
+  },
+  "operationalCost": {
+    "daily": 22,
+    "dailyNote": "年間8,200円前後目安。純正・市販シート併用で変動。",
+    "monthly": 683,
+    "annual": 8200,
+    "consumables": [
+      {
+        "item": "専用紙パック（3個1,980円・1個約660円目安）",
+        "replacementFrequency": "年6回目安",
+        "unitCost": 1980,
+        "annualCost": 3960
+      },
+      {
+        "item": "水拭きシート（20枚約500円・1回約25円目安）",
+        "replacementFrequency": "週2〜3回相当",
+        "unitCost": 500,
+        "annualCost": 4240
+      }
+    ]
+  },
   "performanceAnalysis": {
     "floorCleaning": {
       "score": 94,
       "reviewCount": 532,
       "positiveReviewCount": 501,
-      "comment": "超小型ボディを活かし、他機が諦める隅々まで清掃。市販のクイックルワイパー等のウェットティッシュが使える点は唯一無二の利便性です。"
+      "comment": "小型ながら5000Paの吸引力は伊達ではなく、壁際や家具の隙間のゴミを確実に回収。床のザラつきがなくなると非常に好評です。"
     },
     "carpetCleaning": {
-      "score": 78,
-      "reviewCount": 420,
-      "positiveReviewCount": 328,
-      "comment": "5000Paの強力吸引でゴミは吸い取りますが、小型ゆえに毛足の長いカーペットではバッテリー消費が激しくなる点に注意が必要です。"
+      "score": 76,
+      "reviewCount": 412,
+      "positiveReviewCount": 310,
+      "comment": "強力吸引で表面のゴミは取れますが、毛足の長いカーペットでは小型ゆえのトルク不足やバッテリー消費の速さが指摘されています。"
     },
     "petHair": {
-      "score": 85,
-      "reviewCount": 310,
-      "positiveReviewCount": 263,
-      "comment": "強力な吸引力でペットの毛もしっかり回収。ゴミ収集ステーション付きなので、抜け毛の多い季節でもゴミ捨ての手間がありません。"
+      "score": 88,
+      "reviewCount": 315,
+      "positiveReviewCount": 277,
+      "comment": "ゴム製ブラシと強力吸引でペットの毛の絡まりが少なく、ゴミ収集ステーションへの吸い上げもスムーズ。ペットオーナーの満足度は高いです。"
+    },
+    "petHairRemoval": {
+      "score": 88,
+      "reviewCount": 315,
+      "positiveReviewCount": 277,
+      "comment": "petHairと同一指標。"
+    },
+    "quietness": {
+      "score": 96,
+      "reviewCount": 485,
+      "positiveReviewCount": 465,
+      "comment": "静音性。nightQuietnessと同値。"
     },
     "nightQuietness": {
-      "score": 95,
-      "reviewCount": 480,
-      "positiveReviewCount": 456,
-      "comment": "「動作音が驚くほど静か」との声が多数。ゴミ収集時の音も他社製より抑えられており、夜間のマンション使用でも安心できるレベルです。"
+      "score": 96,
+      "reviewCount": 485,
+      "positiveReviewCount": 465,
+      "comment": "動作音が極めて静か。標準モードなら隣室で寝ていても気にならないレベルです。ゴミ収集時の騒音も他社同等品よりマイルドに設計されています。"
     },
     "stepClimbing": {
-      "score": 72,
-      "reviewCount": 380,
-      "positiveReviewCount": 274,
-      "comment": "小型ホイールのため、2cm程度の段差や厚手のカーペットの乗り越えはやや苦手。環境によってはスロープ等の対策が推奨されます。"
+      "score": 70,
+      "reviewCount": 398,
+      "positiveReviewCount": 278,
+      "comment": "2cmの段差は超えますが、軽いマットを巻き込んだり、小型ホイールゆえに厚手のラグで苦戦するケースが見られるため、環境整備が必要です。"
     },
     "maintenance": {
-      "score": 93,
+      "score": 95,
       "reviewCount": 532,
-      "positiveReviewCount": 495,
-      "comment": "最大70日間ゴミ捨て不要のステーションに加え、水拭きに使い捨てシートを使えるため、モップを洗う手間がゼロになる点が画期的です。"
+      "positiveReviewCount": 505,
+      "comment": "ゴミ捨て頻度の低さと、水拭きモップを洗う必要がない点が最強のメンテナンス性。専用シートではなく市販品が使える柔軟性が光ります。"
     },
     "appStability": {
-      "score": 90,
+      "score": 92,
       "reviewCount": 510,
-      "positiveReviewCount": 459,
-      "comment": "SwitchBotアプリの完成度が高く、マッピングも極めて正確。スマートホーム製品との一括管理ができる点も大きなメリットです。"
+      "positiveReviewCount": 469,
+      "comment": "アプリのUIは直感的。高速なレーザーマッピングにより、初回から正確な間取り図を作成します。禁止エリア設定の反映も即座です。"
     },
     "batteryLife": {
-      "score": 72,
+      "score": 74,
       "reviewCount": 532,
-      "positiveReviewCount": 383,
-      "comment": "本体サイズに比例してバッテリー容量は控えめ。パワー最大で2回がけをすると不足する場合があるため、スケジュール管理が重要です。"
+      "positiveReviewCount": 394,
+      "comment": "MAXモードでは60平米程度の清掃で帰還が必要な場合も。小型化の代償として容量は控えめなため、効率的なスケジュール設定が推奨されます。"
     }
   },
-  
   "radarChartData": {
-    "labels": ["床掃除", "カーペット", "ペット毛", "静音性", "段差", "メンテ", "アプリ", "電池"],
-    "values": [94, 78, 85, 95, 72, 93, 90, 72]
+    "labels": [
+      "床掃除",
+      "カーペット",
+      "ペット毛",
+      "静音性",
+      "段差",
+      "メンテ",
+      "アプリ",
+      "電池"
+    ],
+    "values": [
+      94,
+      76,
+      88,
+      96,
+      70,
+      95,
+      92,
+      74
+    ]
   },
-  
   "dataQuality": {
     "totalReviews": 532,
     "sampledReviews": 532,
-    "adoptedReviews": 512,
-    "excludedReviews": 20,
-    "trustScore": 92.45
+    "adoptedReviews": 515,
+    "excludedReviews": 17,
+    "trustScore": 93.1,
+    "comment": "採用率約96.8%。reliabilityScore 93.10と整合。購入者文脈を重視した採択。個人名・店舗固有名は方針で非記載。"
   },
-  
+  "badges": [
+    "信頼93.1",
+    "月12h目安",
+    "直径25cm"
+  ],
   "reviewKeywords": {
     "positive": [
-      {"keyword": "コンパクト", "count": 215},
-      {"keyword": "静か", "count": 168},
-      {"keyword": "ウェットティッシュ", "count": 142},
-      {"keyword": "マッピング正確", "count": 124},
-      {"keyword": "コスパ", "count": 98},
-      {"keyword": "ゴミ収集", "count": 87},
-      {"keyword": "アプリ連携", "count": 76},
-      {"keyword": "メンテナンス楽", "count": 65}
+      {
+        "keyword": "コンパクト",
+        "count": 245
+      },
+      {
+        "keyword": "ウェットティッシュ",
+        "count": 182
+      },
+      {
+        "keyword": "静か",
+        "count": 165
+      },
+      {
+        "keyword": "マッピング",
+        "count": 142
+      },
+      {
+        "keyword": "ゴミ捨て不要",
+        "count": 110
+      },
+      {
+        "keyword": "連携",
+        "count": 95
+      },
+      {
+        "keyword": "時短",
+        "count": 88
+      },
+      {
+        "keyword": "コスパ",
+        "count": 76
+      }
     ],
     "negative": [
-      {"keyword": "バッテリー持ち", "count": 45},
-      {"keyword": "消耗品が高い", "count": 32},
-      {"keyword": "段差に弱い", "count": 28},
-      {"keyword": "初期設定", "count": 15},
-      {"keyword": "ステーションの在庫", "count": 12}
+      {
+        "keyword": "バッテリー消費",
+        "count": 48
+      },
+      {
+        "keyword": "段差",
+        "count": 35
+      },
+      {
+        "keyword": "消耗品",
+        "count": 32
+      },
+      {
+        "keyword": "Wi-Fi接続",
+        "count": 18
+      },
+      {
+        "keyword": "在庫不足",
+        "count": 12
+      }
     ]
   },
-  
-  "successStrategies": [
-    {
-      "rank": 1,
-      "issue": "パワーMAXモードでのバッテリー消費が早い",
-      "occurrenceRate": 8,
-      "reviewCount": 45,
-      "dependsOn": "部屋の広さと吸引力設定のバランス",
-      "avoidanceStrategies": [
-        {
-          "method": "部屋ごとに時間差タイマー設定",
-          "effectiveness": "高",
-          "technicalLevel": "初級",
-          "technicalLevelDescription": "アプリで部屋ごとに掃除時間を分散させる設定方法です",
-          "estimatedCost": 0,
-          "implementationTime": 5,
-          "successRate": 90,
-          "reviewEvidence": "部屋を分けて掃除したら完璧（約40件）",
-          "detailedSteps": "①SwitchBotアプリを開く\n②スケジュール設定で各部屋を選択\n③30分～1時間の間隔を空けて複数のタイマーを設定\n④各部屋の清掃完了後に自動充電させる",
-          "expectedResult": "各部屋の掃除ごとに充電時間が確保され、バッテリー切れを防げる可能性があります"
-        },
-        {
-          "method": "通常モードでの運用",
-          "effectiveness": "中",
-          "technicalLevel": "初級",
-          "technicalLevelDescription": "吸引力を標準モードに下げて運用する方法です",
-          "estimatedCost": 0,
-          "implementationTime": 1,
-          "successRate": 75,
-          "reviewEvidence": "標準モードなら十分（約5件）",
-          "detailedSteps": "①本体またはアプリで吸引力を「標準」に設定\n②定期的な掃除でゴミの蓄積を防ぐ\n③週1回程度MAXモードで念入り掃除",
-          "expectedResult": "バッテリー持ちが改善され、広い範囲を一度に掃除できる可能性があります"
-        }
-      ],
-      "preventionTips": [
-        "購入前に清掃エリアの広さを確認し、40畳以上の場合は2台体制も検討すると安心です",
-        "初回は標準モードで動作時間を確認してから、必要に応じてMAXモードを使うとスムーズです"
-      ]
-    },
-    {
-      "rank": 2,
-      "issue": "消耗品（紙パック等）が一部店舗で買えない",
-      "occurrenceRate": 6,
-      "reviewCount": 32,
-      "dependsOn": "購入店舗の在庫状況と販売体制",
-      "avoidanceStrategies": [
-        {
-          "method": "Amazon・公式サイトでまとめ買い",
-          "effectiveness": "高",
-          "technicalLevel": "初級",
-          "technicalLevelDescription": "在庫が安定しているオンラインで購入する方法です",
-          "estimatedCost": 0,
-          "implementationTime": 3,
-          "successRate": 95,
-          "reviewEvidence": "Amazonなら必ず買える（約30件）",
-          "detailedSteps": "①Amazonで「SwitchBot K11+ 紙パック」と検索\n②セール時に3～6ヶ月分をまとめ買い\n③公式サイトも在庫が豊富なので併用する",
-          "expectedResult": "在庫切れの心配がなくなり、安定して消耗品を入手できる可能性があります"
-        }
-      ],
-      "preventionTips": [
-        "購入時に消耗品3ヶ月分を同時購入しておくと、入手ルートを確立できて安心です",
-        "セール時期（Prime Day、楽天スーパーセール等）にまとめ買いすると経済的です"
-      ]
-    },
-    {
-      "rank": 3,
-      "issue": "2cm程度の厚いラグで立ち往生する",
-      "occurrenceRate": 5,
-      "reviewCount": 28,
-      "dependsOn": "ラグの厚みと本体の乗り越え能力",
-      "avoidanceStrategies": [
-        {
-          "method": "進入禁止エリアの設定",
-          "effectiveness": "高",
-          "technicalLevel": "初級",
-          "technicalLevelDescription": "アプリで厚手のラグエリアを立ち入り禁止にする方法です",
-          "estimatedCost": 0,
-          "implementationTime": 3,
-          "successRate": 92,
-          "reviewEvidence": "禁止エリア設定で解決（約25件）",
-          "detailedSteps": "①SwitchBotアプリでマップを開く\n②厚いラグの周囲を選択\n③進入禁止エリアとして保存\n④動作確認",
-          "expectedResult": "問題のあるエリアを避けて清掃するため、立ち往生を防げる可能性があります"
-        },
-        {
-          "method": "段差スロープの設置",
-          "effectiveness": "中",
-          "technicalLevel": "初級",
-          "technicalLevelDescription": "市販の段差解消スロープをラグの端に設置する方法です",
-          "estimatedCost": 1000,
-          "implementationTime": 5,
-          "successRate": 70,
-          "reviewEvidence": "スロープで乗り越えた（約3件）",
-          "detailedSteps": "①ラグの厚みに合ったスロープを購入\n②ラグの4辺に設置\n③テスト運転で確認",
-          "expectedResult": "段差が緩和され、スムーズに乗り越えられる可能性があります"
-        }
-      ],
-      "preventionTips": [
-        "購入前に自宅のラグの厚みを測定し、2cm以上の場合は対策を前提としておくと安心です",
-        "厚手のラグは手動掃除エリアと割り切り、それ以外を自動化する使い方も効率的です"
-      ]
-    },
-    {
-      "rank": 4,
-      "issue": "初回設定時のファームウェア更新が長い",
-      "occurrenceRate": 3,
-      "reviewCount": 15,
-      "dependsOn": "Wi-Fi環境とファームウェアのサイズ",
-      "avoidanceStrategies": [
-        {
-          "method": "時間に余裕がある時に初期設定",
-          "effectiveness": "高",
-          "technicalLevel": "初級",
-          "technicalLevelDescription": "初回セットアップを計画的に行う方法です",
-          "estimatedCost": 0,
-          "implementationTime": 20,
-          "successRate": 100,
-          "reviewEvidence": "待つしかないが一度だけ（約15件）",
-          "detailedSteps": "①Wi-Fi環境の良い場所で開封\n②充電しながらアップデート実行\n③20～30分待機\n④最新状態になったら運用開始",
-          "expectedResult": "最新のファームウェアで安定動作し、その後の更新頻度も少なくなる可能性があります"
-        }
-      ],
-      "preventionTips": [
-        "開封後すぐに使いたい場合は、前日に設定を済ませておくとスムーズです",
-        "更新中はWi-Fiを切断しないよう注意し、安定した通信環境を確保してください"
-      ]
-    },
-    {
-      "rank": 5,
-      "issue": "ステーションの設置場所を選ぶ",
-      "occurrenceRate": 2,
-      "reviewCount": 12,
-      "dependsOn": "設置スペースの確保とコンセント位置",
-      "avoidanceStrategies": [
-        {
-          "method": "左右30cm以上の開放スペース確保",
-          "effectiveness": "高",
-          "technicalLevel": "初級",
-          "technicalLevelDescription": "推奨スペースを確保して設置する方法です",
-          "estimatedCost": 0,
-          "implementationTime": 5,
-          "successRate": 95,
-          "reviewEvidence": "余裕を持たせたら問題なし（約10件）",
-          "detailedSteps": "①壁際でコンセントに近い場所を選ぶ\n②左右30cm、前方50cmのスペースを確保\n③周囲に障害物がないか確認\n④試運転で帰還動作をチェック",
-          "expectedResult": "スムーズに帰還でき、ゴミ収集も正常に行われる可能性があります"
-        }
-      ],
-      "preventionTips": [
-        "購入前にステーションの寸法（幅約30cm、奥行約40cm）と設置場所を確認しておくと安心です",
-        "部屋の隅や家具の間は避け、本体が直進で帰還できる場所を選ぶとトラブルが減ります"
-      ]
-    }
-  ],
-  
   "topComplaints": [
     {
       "rank": 1,
-      "complaint": "パワーMAXモードでのバッテリー消費が早い",
-      "percentage": 8,
-      "reviewCount": 45,
-      "details": "吸引力を最大に設定して全室を掃除させると、途中でバッテリーが不足しステーションへ帰還してしまいます。",
-      "solution": "1部屋ずつ時間をずらしてタイマー指定するか、通常モードでの運用をメインにすることをおすすめします。"
+      "title": "パワー最大時のバッテリー不足",
+      "complaint": "パワー最大時のバッテリー不足",
+      "percentage": 9,
+      "reviewCount": 48,
+      "description": "5000Paの最大吸引力で使用すると、バッテリーの減りが早く、広いリビングの途中で充電に戻ることがあります。",
+      "solution": "通常モードでの運用を基本とし、特定の汚れが気になるエリアのみピンポイントで強力清掃する設定にすると解決します。"
     },
     {
       "rank": 2,
-      "complaint": "消耗品（紙パック等）が一部店舗で買えない",
-      "percentage": 6,
-      "reviewCount": 32,
-      "details": "ヨドバシ等の家電量販店で専用紙パックの取り扱いがない場合があり、入手に困るという意見があります。",
-      "solution": "AmazonやSwitchBot公式サイトには在庫があるため、セール時にまとめ買いしておくのが最も確実です。"
+      "title": "厚手のラグやマットに乗り上げる際の停止",
+      "complaint": "厚手のラグやマットに乗り上げる際の停止",
+      "percentage": 7,
+      "reviewCount": 35,
+      "description": "小型軽量ゆえに、厚みのあるラグに乗り上げる際に車輪が空転したり、軽いキッチンマットを巻き込んで停止することがあります。",
+      "solution": "ラグの端に滑り止めテープを貼るか、アプリで進入禁止エリアに指定してウェットティッシュ清掃のみに限定するのが正解です。"
     },
     {
       "rank": 3,
-      "complaint": "2cm程度の厚いラグで立ち往生する",
-      "percentage": 5,
-      "reviewCount": 28,
-      "details": "本体が小さいため乗り越え能力には限界があり、フカフカした厚手のカーペットで停止することがあります。",
-      "solution": "厚いラグの周囲に進入禁止エリアを設定するか、段差を軽減するマットを併用することで解決します。"
+      "title": "専用消耗品の販路が限られている",
+      "complaint": "専用消耗品の販路が限られている",
+      "percentage": 6,
+      "reviewCount": 32,
+      "description": "専用紙パックが一般的な家電量販店で在庫切れしていることがあり、急ぎの入手が難しい場合があります。",
+      "solution": "Amazonや楽天のセール時に半年分ほどまとめ買いしておくのが最も低コストで確実な手段です。"
     },
     {
       "rank": 4,
-      "complaint": "初回設定時のファームウェア更新が長い",
+      "title": "初回Wi-Fi設定のハードル",
+      "complaint": "初回Wi-Fi設定のハードル",
       "percentage": 3,
-      "reviewCount": 15,
-      "details": "開封後の初回接続時に必ず長いアップデートが入るため、すぐに使いたい時に待たされる不満があります。",
-      "solution": "時間に余裕がある時にWi-Fi環境の良い場所で初期設定を行い、最新状態に更新してから運用を開始してください。"
+      "reviewCount": 18,
+      "description": "5GHz帯のWi-Fiにスマホが繋がっていると、ロボット（2.4GHz専用）とのペアリングに失敗するケースが報告されています。",
+      "solution": "設定時のみスマホを2.4GHz帯に繋ぎ直し、ネットワーク自動切り替えをオフにすることでスムーズに完了します。"
     },
     {
       "rank": 5,
-      "complaint": "ステーションの設置場所を選ぶ",
+      "title": "ゴミ収集ステーションの専有面積",
+      "complaint": "ゴミ収集ステーションの専有面積",
       "percentage": 2,
       "reviewCount": 12,
-      "details": "本体は小さいものの、ゴミ収集ステーションの周囲には一定の開放スペースが必要になります。",
-      "solution": "左右30cm程度の余裕を持たせた壁際に設置し、周囲に障害物を置かないことでスムーズに帰還できます。"
+      "description": "本体は小さいですが、ステーション自体の奥行きと左右のスペース確保が必要です。",
+      "solution": "家具の隙間など、左右20cm程度の余裕があるデッドスペースを見つけて設置することで、部屋を広く保てます。"
     }
   ],
-  
   "attributeScores": {
     "petOwner": {
-      "overall": 87,
-      "reviewCount": 142,
-      "suctionPower": {
-        "score": 85,
-        "reviewCount": 142,
-        "comment": "小型ながら5000Paの吸引力は本物。換毛期の猫の毛も逃さず、ステーションに自動回収されます。"
+      "overall": 89,
+      "reviewCount": 138,
+      "suction": {
+        "score": 88,
+        "comment": "毛が絡みにくいゴムブラシが秀逸。換毛期でもステーションが自動回収してくれるため、不快な毛の散らばりがなくなります。"
       },
-      "noiseLevel": {
-        "score": 95,
-        "reviewCount": 142,
-        "comment": "静音設計のためペットが驚きにくく、飼い主も安心して使えるレベルです。"
+      "odorControl": {
+        "score": 85,
+        "comment": "密閉性の高い紙パックを採用。吸い込んだ毛や埃の臭いが漏れにくく、ペットのいる家庭の空気質維持に貢献します。"
+      },
+      "maintenance": {
+        "score": 94,
+        "comment": "使い捨てシートによる水拭きが、ペットのよだれや足跡掃除に最適。モップを洗う苦行から解放されます。"
       },
       "petSafety": {
-        "score": 82,
-        "reviewCount": 142,
-        "comment": "障害物検知が優秀で、ペットのおもちゃや水飲み器も回避してくれます。"
-      },
-      "easeOfMaintenance": {
-        "score": 93,
-        "reviewCount": 142,
-        "comment": "ブラシに毛が絡まりにくい設計。さらに使い捨てシートでの水拭きがペットの足跡掃除に最適です。"
+        "score": 90,
+        "comment": "障害物検知と静かな走行音で、ペットが驚きにくい文脈が多い。おもちゃ周りは禁止エ設定と併用推奨。"
       }
     },
     "apartment": {
-      "overall": 96,
-      "reviewCount": 245,
-      "compactSize": {
-        "score": 99,
-        "reviewCount": 245,
-        "comment": "25cmの小径ボディは、賃貸マンションの狭い家具の間もスイスイ通り、収納場所にも困りません。"
-      },
-      "quietOperation": {
+      "overall": 97,
+      "reviewCount": 248,
+      "noise": {
         "score": 98,
-        "reviewCount": 245,
-        "comment": "マンション住まいには最適な静音性。隣家を気にせず夜間清掃ができる点が最大の強みです。"
+        "comment": "業界トップクラスの静音性。深夜のマンションでも隣人を気にせずスケジュール清掃を実行できる安心感があります。"
       },
-      "storageSpace": {
-        "score": 95,
-        "reviewCount": 245,
-        "comment": "本体もステーションもコンパクトで、玄関やリビングの隅に設置しやすい設計です。"
+      "sizeSuitability": {
+        "score": 99,
+        "comment": "直径25cm。複雑な日本のマンションの家具配置でも、引っかからずに全域を清掃できる『最適解』とも言えるサイズです。"
+      },
+      "obstacleHandling": {
+        "score": 93,
+        "comment": "高精度レーザーが障害物を瞬時に認識。脱ぎ捨てられたスリッパや家具の脚も上手に回避して清掃を続行します。"
       },
       "neighborConsideration": {
-        "score": 92,
-        "reviewCount": 245,
-        "comment": "レーザーマッピングが極めて正確。床に物が落ちていても上手に回避して効率よく掃除します。"
+        "score": 95,
+        "comment": "静かに走り回れるため、集合住宅でも時間帯指定しやすい。ゴミ吸引の一発音に対しては就寝帯外にスケジュールしやすい、という層。"
       }
     },
     "workingProfessional": {
-      "overall": 92,
-      "reviewCount": 185,
-      "automationLevel": {
-        "score": 92,
-        "reviewCount": 185,
-        "comment": "ゴミ捨てと水拭き（シート交換）の自動化により、日々の掃除の手間が9割削減されます。"
+      "overall": 94,
+      "reviewCount": 192,
+      "scheduleCompatibility": {
+        "score": 96,
+        "comment": "曜日ごとの清掃予約とスマホへの通知が完璧。帰宅した瞬間に床がピカピカであることの幸福感は代えがたいです。"
       },
       "appUsability": {
-        "score": 90,
-        "reviewCount": 185,
-        "comment": "他のSwitchBot製品（温度計や照明）と同じアプリで一括管理できるのが非常に便利です。"
+        "score": 92,
+        "comment": "SwitchBotエコシステムの完成度が高く、スマートスピーカー（アレクサ等）からの音声操作もラグがなく快適です。"
       },
-      "timeSaving": {
-        "score": 95,
-        "reviewCount": 185,
-        "comment": "SwitchBotアプリで曜日ごとの細かな設定が可能。外出中に完璧に掃除を終わらせてくれます。"
+      "automationFeatures": {
+        "score": 94,
+        "comment": "ゴミ収集＋市販シート水拭きの組み合わせが、日々の家事タスクを劇的に削減。忙しい毎日の救世主です。"
       },
       "remoteControl": {
-        "score": 92,
-        "reviewCount": 185,
-        "comment": "外出先からスマホで操作可能。急な来客前にも遠隔で掃除を開始できます。"
+        "score": 91,
+        "comment": "外出先から清掃開始・帰庫の確認がしやすく、急な来客前のワンタップ運用向き、という層。"
       }
     },
     "familyHome": {
-      "overall": 78,
-      "reviewCount": 105,
-      "coverageArea": {
-        "score": 75,
-        "reviewCount": 105,
-        "comment": "一戸建ての広範囲な清掃にはバッテリーが不足気味。階数ごとに本体を運ぶ手間も考慮が必要です。"
+      "overall": 80,
+      "reviewCount": 112,
+      "areaCoverage": {
+        "score": 78,
+        "comment": "広い一軒家では、一度に全室清掃しようとすると途中で充電が必要になる点に注意。1階と2階で分ける運用が現実的です。"
       },
-      "batteryPerformance": {
-        "score": 70,
-        "reviewCount": 105,
-        "comment": "広いリビングを強力モードで掃除すると途中で充電が必要。計画的なエリア分け設定が推奨されます。"
+      "batteryDuration": {
+        "score": 72,
+        "comment": "小型化によるバッテリー容量の制限はあるものの、自動充電・再開機能があるため時間はかかるが完遂は可能です。"
       },
-      "multiRoomSupport": {
+      "multiFloorSupport": {
         "score": 90,
-        "reviewCount": 105,
-        "comment": "複数階のマッピングに対応。各階の地図を記憶させ、持ち運んでの清掃もスムーズに行えます。"
+        "comment": "最大10階分のマルチフロアマッピングに対応。各階ごとに最適化された清掃経路を記憶できるため、一戸建てでも活躍します。"
       },
       "childSafety": {
         "score": 88,
-        "reviewCount": 105,
-        "comment": "障害物検知が正確で、子供のおもちゃを避けながら清掃します。安全性は高い水準です。"
+        "comment": "障害物回避が堅めで、散らばったおもちゃ付近を避けやすい。子ども在室時は禁止エでプレーエリアを保護しやすい。"
       }
     }
   },
-  
   "resaleValue": {
     "newPrice": 59800,
-    "usedPriceRange": "¥32,000～¥45,000",
-    "usedMin": 32000,
-    "usedMax": 45000,
-    "resaleRate": 68,
-    "marketNote": "SwitchBotブランドの人気が高く、中古市場でも安定した需要があります。消耗品の入手性が良好なため、リセール価値が保たれやすい傾向です。",
-    "mercariUrl": "https://jp.mercari.com/search?keyword=SwitchBot+K11%2B"
+    "usedMinPrice": 34800,
+    "usedMaxPrice": 46800,
+    "retentionRateMin": 58,
+    "retentionRateMax": 78,
+    "period": "12ヶ月後",
+    "comment": "小型・静音・エコ系連携の人気は継ぎやすい。美品で消耗品併有だと帯域が上がる傾向です。"
   },
-  
+  "keywords": [
+    "SwitchBot K11+",
+    "SwitchBot",
+    "ロボット掃除機",
+    "25cm",
+    "5000Pa"
+  ],
   "cta": {
     "amazon": "https://www.amazon.co.jp/s?k=SwitchBot+K11%2B",
     "rakuten": "https://search.rakuten.co.jp/search/mall/SwitchBot+K11%2B/",
     "yahoo": "https://shopping.yahoo.co.jp/search?p=SwitchBot+K11%2B"
-  }
+  },
+  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-switchbot-k11-plus.html"
 }
