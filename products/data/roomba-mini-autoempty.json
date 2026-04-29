@@ -25,7 +25,11 @@
     "failureRate": {
       "percentage": 3,
       "reviewCount": 66,
-      "breakdown": { "hardware": 1, "software": 1, "environmental": 1 },
+      "breakdown": {
+        "hardware": 1,
+        "software": 1,
+        "environmental": 1
+      },
       "comment": "初期不良は3%と低水準。稀にWi-Fi設定の再試行が必要なケースがありますが、ハードウェアの信頼性はiRobot基準で非常に堅牢です。"
     }
   },
@@ -151,8 +155,26 @@
     }
   },
   "radarChartData": {
-    "labels": ["床掃除", "カーペット", "ペット毛", "静音性", "段差", "メンテ", "アプリ", "電池"],
-    "values": [88, 75, 85, 96, 78, 94, 82, 80]
+    "labels": [
+      "床掃除",
+      "カーペット",
+      "ペット毛",
+      "静音性",
+      "段差",
+      "メンテ",
+      "アプリ",
+      "電池"
+    ],
+    "values": [
+      88,
+      75,
+      85,
+      96,
+      78,
+      94,
+      82,
+      80
+    ]
   },
   "dataQuality": {
     "totalReviews": 66,
@@ -162,26 +184,75 @@
     "trustScore": 82.4,
     "comment": "楽天市場中心・採用64件。ソース内信頼目安91.5。全体信頼82.40と整合。再重み付けで変動し得ます。"
   },
-  "badges": ["信頼82.4", "超静音", "楽天66件"],
+  "badges": [
+    "信頼82.4",
+    "超静音",
+    "楽天66件"
+  ],
   "reviewKeywords": {
     "positive": [
-      { "keyword": "静か", "count": 28 },
-      { "keyword": "コンパクト", "count": 24 },
-      { "keyword": "自動ゴミ収集", "count": 22 },
-      { "keyword": "コスパ", "count": 15 },
-      { "keyword": "設定が簡単", "count": 12 },
-      { "keyword": "時短", "count": 9 },
-      { "keyword": "アプリ", "count": 8 },
-      { "keyword": "ゴミ捨て不要", "count": 8 }
+      {
+        "keyword": "静か",
+        "count": 28
+      },
+      {
+        "keyword": "コンパクト",
+        "count": 24
+      },
+      {
+        "keyword": "自動ゴミ収集",
+        "count": 22
+      },
+      {
+        "keyword": "コスパ",
+        "count": 15
+      },
+      {
+        "keyword": "設定が簡単",
+        "count": 12
+      },
+      {
+        "keyword": "時短",
+        "count": 9
+      },
+      {
+        "keyword": "アプリ",
+        "count": 8
+      },
+      {
+        "keyword": "ゴミ捨て不要",
+        "count": 8
+      }
     ],
     "negative": [
-      { "keyword": "ステーションの音", "count": 11 },
-      { "keyword": "マットの巻き込み", "count": 8 },
-      { "keyword": "段差の誤検知", "count": 6 },
-      { "keyword": "Wi-Fi接続", "count": 5 },
-      { "keyword": "マニュアル", "count": 4 },
-      { "keyword": "消耗品", "count": 3 },
-      { "keyword": "水拭き不可", "count": 2 }
+      {
+        "keyword": "ステーションの音",
+        "count": 11
+      },
+      {
+        "keyword": "マットの巻き込み",
+        "count": 8
+      },
+      {
+        "keyword": "段差の誤検知",
+        "count": 6
+      },
+      {
+        "keyword": "Wi-Fi接続",
+        "count": 5
+      },
+      {
+        "keyword": "マニュアル",
+        "count": 4
+      },
+      {
+        "keyword": "消耗品",
+        "count": 3
+      },
+      {
+        "keyword": "水拭き不可",
+        "count": 2
+      }
     ]
   },
   "topComplaints": [
@@ -235,34 +306,82 @@
     "petOwner": {
       "overall": 81,
       "reviewCount": 21,
-      "suction": { "score": 85, "comment": "抜け毛の自動処理は非常に便利。ペットを驚かせない極めて低い動作音が飼い主に支持されています。" },
-      "odorControl": { "score": 65, "comment": "紙パックの密閉性と交換周期のトレードオフ。負荷が高いと匂い・交換頻度の言及が増えやすい、という層。" },
-      "maintenance": { "score": 94, "comment": "毛の掃除から解放される価値は絶大。ダストバッグ交換だけで済む流れに満足、という層。" },
-      "petSafety": { "score": 88, "comment": "静音走行はペット向き。水場・食器周りは禁止エで守りやすい、という層。" }
+      "suction": {
+        "score": 85,
+        "comment": "抜け毛の自動処理は非常に便利。ペットを驚かせない極めて低い動作音が飼い主に支持されています。"
+      },
+      "odorControl": {
+        "score": 65,
+        "comment": "紙パックの密閉性と交換周期のトレードオフ。負荷が高いと匂い・交換頻度の言及が増えやすい、という層。"
+      },
+      "maintenance": {
+        "score": 94,
+        "comment": "毛の掃除から解放される価値は絶大。ダストバッグ交換だけで済む流れに満足、という層。"
+      },
+      "petSafety": {
+        "score": 88,
+        "comment": "静音走行はペット向き。水場・食器周りは禁止エで守りやすい、という層。"
+      }
     },
     "apartment": {
       "overall": 91,
       "reviewCount": 28,
-      "noise": { "score": 98, "comment": "マンション住まいには最強の選択肢。省スペースなベースと夜間でも気兼ねなく使える静かさが特筆モノ。" },
-      "sizeSuitability": { "score": 98, "comment": "省スペースなベースと置き場の自由度。狭い導線でも圧迫感が出にくい、という層。" },
-      "obstacleHandling": { "score": 78, "comment": "軽量ゆえに薄いマットを押し出す。滑り止めと禁止エで実用上は改善しやすい、という層。" },
-      "neighborConsideration": { "score": 88, "comment": "走行音は好評。収集の一瞬の大きい音は帯外スケジュールで抑えやすい、という層。" }
+      "noise": {
+        "score": 98,
+        "comment": "マンション住まいには最強の選択肢。省スペースなベースと夜間でも気兼ねなく使える静かさが特筆モノ。"
+      },
+      "sizeSuitability": {
+        "score": 98,
+        "comment": "省スペースなベースと置き場の自由度。狭い導線でも圧迫感が出にくい、という層。"
+      },
+      "obstacleHandling": {
+        "score": 78,
+        "comment": "軽量ゆえに薄いマットを押し出す。滑り止めと禁止エで実用上は改善しやすい、という層。"
+      },
+      "neighborConsideration": {
+        "score": 88,
+        "comment": "走行音は好評。収集の一瞬の大きい音は帯外スケジュールで抑えやすい、という層。"
+      }
     },
     "workingProfessional": {
       "overall": 89,
       "reviewCount": 18,
-      "scheduleCompatibility": { "score": 92, "comment": "清掃からゴミ捨てまで自動化。忙しい平日の家事時間をゼロに近づける「投資」として優秀です。" },
-      "appUsability": { "score": 84, "comment": "一度つながれば運用は軽い。初回2.4GHz手順の摩擦に備えると失敗しにくい、という層。" },
-      "automationFeatures": { "score": 92, "comment": "自動集塵の省力化が大きい。在宅帯外の一括稼働と相性が良い、という層。" },
-      "remoteControl": { "score": 90, "comment": "外出先起動の安定度は文脈次第。通知と履歴の見やすさは好印象、という層。" }
+      "scheduleCompatibility": {
+        "score": 92,
+        "comment": "清掃からゴミ捨てまで自動化。忙しい平日の家事時間をゼロに近づける「投資」として優秀です。"
+      },
+      "appUsability": {
+        "score": 84,
+        "comment": "一度つながれば運用は軽い。初回2.4GHz手順の摩擦に備えると失敗しにくい、という層。"
+      },
+      "automationFeatures": {
+        "score": 92,
+        "comment": "自動集塵の省力化が大きい。在宅帯外の一括稼働と相性が良い、という層。"
+      },
+      "remoteControl": {
+        "score": 90,
+        "comment": "外出先起動の安定度は文脈次第。通知と履歴の見やすさは好印象、という層。"
+      }
     },
     "familyHome": {
       "overall": 70,
       "reviewCount": 12,
-      "areaCoverage": { "score": 70, "comment": "広い戸建て全域にはややパワー不足。特定のフロア専用機や、サブ機としての運用が向いています。" },
-      "batteryDuration": { "score": 75, "comment": "広域は分割・再充電の組み合わせ。コンパクト機としては十分な層と物足りない層に分かれる、という層。" },
-      "multiFloorSupport": { "score": 65, "comment": "マップ切替は可能でも基地付き階移動は重い。フロア別に本体を持ち運ぶ運用向き、という層。" },
-      "childSafety": { "score": 75, "comment": "小物・おもちゃ周りの回避は堅め。子ども部屋は禁止エで守りやすい、という層。" }
+      "areaCoverage": {
+        "score": 70,
+        "comment": "広い戸建て全域にはややパワー不足。特定のフロア専用機や、サブ機としての運用が向いています。"
+      },
+      "batteryDuration": {
+        "score": 75,
+        "comment": "広域は分割・再充電の組み合わせ。コンパクト機としては十分な層と物足りない層に分かれる、という層。"
+      },
+      "multiFloorSupport": {
+        "score": 65,
+        "comment": "マップ切替は可能でも基地付き階移動は重い。フロア別に本体を持ち運ぶ運用向き、という層。"
+      },
+      "childSafety": {
+        "score": 75,
+        "comment": "小物・おもちゃ周りの回避は堅め。子ども部屋は禁止エで守りやすい、という層。"
+      }
     }
   },
   "resaleValue": {
@@ -285,5 +404,8 @@
     "amazon": "https://www.amazon.co.jp/s?k=Roomba+Mini+AutoEmpty",
     "rakuten": "https://search.rakuten.co.jp/search/mall/Roomba+Mini+AutoEmpty/",
     "yahoo": "https://shopping.yahoo.co.jp/search?p=Roomba+Mini+AutoEmpty"
-  }
+  },
+  "manufacturerOfficialAffiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AZOWQ+152XIQ+4KHO+HUD03&a8ejpredirect=https%3A%2F%2Fstore.irobot-jp.com%2Fitem%2FF155260.html%3F_gl%3D1*layzvb*_gcl_au*OTAzMDgyNTk5LjE3NzQ2NTY3ODg.*FPAU*OTAzMDgyNTk5LjE3NzQ2NTY3ODg.",
+  "manufacturerOfficialAffiliateTrackingPixelUrl": "",
+  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-roomba-mini-autoempty.html"
 }

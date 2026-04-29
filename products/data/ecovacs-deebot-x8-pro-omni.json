@@ -339,5 +339,7 @@
     "rakuten": "https://search.rakuten.co.jp/search/mall/DEEBOT+X8+PRO+OMNI/",
     "yahoo": "https://shopping.yahoo.co.jp/search?p=DEEBOT+X8+PRO+OMNI"
   },
-  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-ecovacs-deebot-x8-pro-omni.html"
+  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-ecovacs-deebot-x8-pro-omni.html",
+  "manufacturerOfficialAffiliateUrl": "",
+  "manufacturerOfficialAffiliateTrackingPixelUrl": ""
 }

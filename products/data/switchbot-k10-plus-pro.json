@@ -456,5 +456,7 @@
     "rakuten": "https://search.rakuten.co.jp/search/mall/SwitchBot+K10%2B+Pro/",
     "yahoo": "https://shopping.yahoo.co.jp/search?p=SwitchBot+K10+Pro"
   },
-  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-switchbot-k10-plus-pro.html"
+  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-switchbot-k10-plus-pro.html",
+  "manufacturerOfficialAffiliateUrl": "",
+  "manufacturerOfficialAffiliateTrackingPixelUrl": ""
 }

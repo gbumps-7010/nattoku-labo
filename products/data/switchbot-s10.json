@@ -456,5 +456,7 @@
     "rakuten": "https://search.rakuten.co.jp/search/mall/SwitchBot+S10/",
     "yahoo": "https://shopping.yahoo.co.jp/search?p=SwitchBot+S10"
   },
-  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-switchbot-s10.html"
+  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-switchbot-s10.html",
+  "manufacturerOfficialAffiliateUrl": "",
+  "manufacturerOfficialAffiliateTrackingPixelUrl": ""
 }

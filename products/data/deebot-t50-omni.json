@@ -328,5 +328,7 @@
     "rakuten": "https://search.rakuten.co.jp/search/mall/DEEBOT+T50+OMNI/",
     "yahoo": "https://shopping.yahoo.co.jp/search?p=DEEBOT+T50+OMNI"
   },
-  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-deebot-t50-omni.html"
+  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-deebot-t50-omni.html",
+  "manufacturerOfficialAffiliateUrl": "",
+  "manufacturerOfficialAffiliateTrackingPixelUrl": ""
 }

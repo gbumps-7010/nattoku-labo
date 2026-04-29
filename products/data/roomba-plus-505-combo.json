@@ -25,7 +25,11 @@
     "failureRate": {
       "percentage": 3,
       "reviewCount": 360,
-      "breakdown": { "hardware": 1, "software": 1, "environmental": 1 },
+      "breakdown": {
+        "hardware": 1,
+        "software": 1,
+        "environmental": 1
+      },
       "comment": "ハードウェアの故障報告は極めて少なく、非常に堅牢な設計です。初期のWi-Fi接続設定で戸惑う事例が数％見られますが、稼働後の安定性は高く、メーカー保証を含めた安心感は他社を圧倒しています。"
     }
   },
@@ -57,7 +61,7 @@
   },
   "timeSaving": {
     "dailyMinutes": 22,
-    "monthlyHours": 11.0,
+    "monthlyHours": 11,
     "annualHours": 134,
     "workDaysEquivalent": 16.8,
     "methodology": "毎日の床掃除20分、週2回の水拭き15分、ゴミ捨ての手間を自動化したことによる削減時間を算出。"
@@ -68,10 +72,30 @@
     "monthly": 2180,
     "annual": 26200,
     "consumables": [
-      { "item": "交換用紙パック", "replacementFrequency": "2ヶ月ごと", "unitCost": 726, "annualCost": 4356 },
-      { "item": "ダストカットフィルター", "replacementFrequency": "2ヶ月ごと", "unitCost": 1466, "annualCost": 8796 },
-      { "item": "エッジクリーニングブラシ", "replacementFrequency": "6ヶ月ごと", "unitCost": 2200, "annualCost": 4400 },
-      { "item": "メインブラシ等", "replacementFrequency": "年目安", "unitCost": 8648, "annualCost": 8648 }
+      {
+        "item": "交換用紙パック",
+        "replacementFrequency": "2ヶ月ごと",
+        "unitCost": 726,
+        "annualCost": 4356
+      },
+      {
+        "item": "ダストカットフィルター",
+        "replacementFrequency": "2ヶ月ごと",
+        "unitCost": 1466,
+        "annualCost": 8796
+      },
+      {
+        "item": "エッジクリーニングブラシ",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 2200,
+        "annualCost": 4400
+      },
+      {
+        "item": "メインブラシ等",
+        "replacementFrequency": "年目安",
+        "unitCost": 8648,
+        "annualCost": 8648
+      }
     ]
   },
   "performanceAnalysis": {
@@ -137,8 +161,26 @@
     }
   },
   "radarChartData": {
-    "labels": ["床掃除", "カーペット", "ペット毛", "静音性", "段差", "メンテ", "アプリ", "電池"],
-    "values": [97, 92, 96, 75, 84, 96, 89, 92]
+    "labels": [
+      "床掃除",
+      "カーペット",
+      "ペット毛",
+      "静音性",
+      "段差",
+      "メンテ",
+      "アプリ",
+      "電池"
+    ],
+    "values": [
+      97,
+      92,
+      96,
+      75,
+      84,
+      96,
+      89,
+      92
+    ]
   },
   "dataQuality": {
     "totalReviews": 360,
@@ -148,21 +190,55 @@
     "trustScore": 92.45,
     "comment": "掲出元3系統から計360件を精査。配送遅延等のノイズを12件除外し、製品本来の性能の声を採用348件に。信頼92.45と整合。"
   },
-  "badges": ["床掃除97点", "信頼度92.5点", "口コミ360件"],
+  "badges": [
+    "床掃除97点",
+    "信頼度92.5点",
+    "口コミ360件"
+  ],
   "reviewKeywords": {
     "positive": [
-      { "keyword": "ゴミ捨てが数ヶ月不要", "count": 218 },
-      { "keyword": "マッピングが完璧", "count": 165 },
-      { "keyword": "吸引力が圧倒的", "count": 152 },
-      { "keyword": "水拭きが手軽", "count": 138 },
-      { "keyword": "ペットの毛に強い", "count": 120 }
+      {
+        "keyword": "ゴミ捨てが数ヶ月不要",
+        "count": 218
+      },
+      {
+        "keyword": "マッピングが完璧",
+        "count": 165
+      },
+      {
+        "keyword": "吸引力が圧倒的",
+        "count": 152
+      },
+      {
+        "keyword": "水拭きが手軽",
+        "count": 138
+      },
+      {
+        "keyword": "ペットの毛に強い",
+        "count": 120
+      }
     ],
     "negative": [
-      { "keyword": "収集音が爆音", "count": 52 },
-      { "keyword": "ベースが少し大きい", "count": 38 },
-      { "keyword": "消耗品が高い", "count": 28 },
-      { "keyword": "初期設定に苦戦", "count": 15 },
-      { "keyword": "タンク給水が必要", "count": 10 }
+      {
+        "keyword": "収集音が爆音",
+        "count": 52
+      },
+      {
+        "keyword": "ベースが少し大きい",
+        "count": 38
+      },
+      {
+        "keyword": "消耗品が高い",
+        "count": 28
+      },
+      {
+        "keyword": "初期設定に苦戦",
+        "count": 15
+      },
+      {
+        "keyword": "タンク給水が必要",
+        "count": 10
+      }
     ]
   },
   "successStrategies": [
@@ -215,7 +291,11 @@
       "severity": "low",
       "details": "多くのスマホが自動で5GHz帯に繋がるため、初期設定時にルンバを認識できない現象が発生します。",
       "solution": "設定時のみスマホを2.4GHz Wi-Fiに固定。一度接続すればその後は5GHz帯に戻しても問題なく操作可能です。",
-      "solutions": ["スマホを2.4GHzに一時接続", "ルンバをルーター近くでペアリング", "メーカーFAQの手順を再確認"]
+      "solutions": [
+        "スマホを2.4GHzに一時接続",
+        "ルンバをルーター近くでペアリング",
+        "メーカーFAQの手順を再確認"
+      ]
     }
   ],
   "attributeScores": {
@@ -276,5 +356,8 @@
   "cta": {
     "amazon": "https://www.amazon.co.jp/s?k=Roomba+Plus+505+Combo",
     "rakuten": "https://search.rakuten.co.jp/search/mall/Roomba+Plus+505+Combo/"
-  }
+  },
+  "manufacturerOfficialAffiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AZOWQ+152XIQ+4KHO+HUD03&a8ejpredirect=https%3A%2F%2Fstore.irobot-jp.com%2Fitem%2FN185060.html%3F_gl%3D1*1kc2w72*_gcl_au*OTAzMDgyNTk5LjE3NzQ2NTY3ODg.*FPAU*OTAzMDgyNTk5LjE3NzQ2NTY3ODg.",
+  "manufacturerOfficialAffiliateTrackingPixelUrl": "",
+  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-roomba-plus-505-combo.html"
 }

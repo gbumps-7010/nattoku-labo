@@ -81,6 +81,68 @@ header .nattoku-moshimo-header-slot .nattoku-moshimo-easylink-iframe {
   display: block;
   vertical-align: top;
 }
+header .nattoku-moshimo-header-slot:not([hidden]) a.nattoku-manufacturer-official-cta,
+#nattoku-moshimo-after-quality:not([hidden]) .nattoku-moshimo-repeat-slot a.nattoku-manufacturer-official-cta {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 3.45rem;
+  box-sizing: border-box;
+  margin: 0 0 0.75rem 0;
+  padding: 0.85rem 1.15rem 0.9rem;
+  font-size: 1.04rem;
+  font-weight: 800;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(15, 23, 42, 0.35);
+  background: linear-gradient(145deg, #0e7490 0%, #0d9488 42%, #059669 100%);
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-radius: 12px;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0.25);
+  user-select: none;
+  box-shadow:
+    0 4px 6px -1px rgba(15, 23, 42, 0.12),
+    0 10px 22px -4px rgba(5, 150, 105, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.22);
+  transition: transform 0.12s ease, box-shadow 0.12s ease, filter 0.12s ease, border-color 0.12s ease;
+}
+header .nattoku-moshimo-header-slot:not([hidden]) a.nattoku-manufacturer-official-cta:hover,
+#nattoku-moshimo-after-quality:not([hidden]) .nattoku-moshimo-repeat-slot a.nattoku-manufacturer-official-cta:hover {
+  color: #ffffff;
+  filter: brightness(1.08) saturate(1.05);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+  box-shadow:
+    0 6px 12px -2px rgba(15, 23, 42, 0.18),
+    0 14px 32px -6px rgba(5, 150, 105, 0.55),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+header .nattoku-moshimo-header-slot:not([hidden]) a.nattoku-manufacturer-official-cta:active,
+#nattoku-moshimo-after-quality:not([hidden]) .nattoku-moshimo-repeat-slot a.nattoku-manufacturer-official-cta:active {
+  transform: translateY(0) scale(0.99);
+  filter: brightness(0.97);
+  box-shadow:
+    0 2px 4px -1px rgba(15, 23, 42, 0.15),
+    0 6px 14px -4px rgba(5, 100, 80, 0.4);
+}
+header .nattoku-moshimo-header-slot:not([hidden]) a.nattoku-manufacturer-official-cta:focus-visible,
+#nattoku-moshimo-after-quality:not([hidden]) .nattoku-moshimo-repeat-slot a.nattoku-manufacturer-official-cta:focus-visible {
+  outline: 3px solid #a7f3d0;
+  outline-offset: 3px;
+}
+#nattoku-moshimo-after-quality:not([hidden]) .nattoku-moshimo-repeat-slot {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  box-sizing: border-box;
+}
 #nattoku-moshimo-after-quality .nattoku-moshimo-repeat-slot .nattoku-moshimo-easylink-iframe {
   width: 100%;
   max-width: 100%;
@@ -179,6 +241,9 @@ function getOrCreateHeaderMoshimoSlot() {
     return el;
 }
 
+/**
+ * もしも配布HTMLのうち、cardlink の bundle.js だけ `//` を `https://` に直す（楽天/Yahoo の u_url 等は触らない）。
+ */
 function normalizeMoshimoEasyLinkHtml(html) {
     if (typeof html !== 'string') return html;
     return html.replace(
@@ -188,12 +253,47 @@ function normalizeMoshimoEasyLinkHtml(html) {
 }
 
 /**
+ * 製品JSONの任意キー: manufacturerOfficialAffiliateUrl（文字列） / manufacturerOfficialAffiliateLabel（省略時は「まずはメーカー公式HPで製品情報を確認」）
+ * manufacturerOfficialAffiliateTrackingPixelUrl … 任意。計測用1×1画像（A8等）をCTA直後に置く
+ * ヘッダーは「製品の詳細を確認する」ラベル直下、本文下「今の価格を確認する」は楽天等ボタン列の直上（いずれもかんたんリンク iframe より上）。
+ */
+function appendManufacturerOfficialAffiliateCta(container, dataOrOpts) {
+    if (!container || !dataOrOpts) return;
+    const u = dataOrOpts.manufacturerOfficialAffiliateUrl;
+    const url = typeof u === 'string' && u.trim() ? u.trim() : '';
+    if (!url) return;
+    const a = document.createElement('a');
+    a.className = 'nattoku-manufacturer-official-cta';
+    a.href = url;
+    a.target = '_blank';
+    a.rel = 'noopener sponsored nofollow';
+    const lab = dataOrOpts.manufacturerOfficialAffiliateLabel;
+    a.textContent =
+        typeof lab === 'string' && lab.trim()
+            ? lab.trim()
+            : 'まずはメーカー公式HPで製品情報を確認';
+    container.appendChild(a);
+    const pixel = dataOrOpts.manufacturerOfficialAffiliateTrackingPixelUrl;
+    if (typeof pixel === 'string' && pixel.trim()) {
+        const img = document.createElement('img');
+        img.src = pixel.trim();
+        img.width = 1;
+        img.height = 1;
+        img.alt = '';
+        img.setAttribute('aria-hidden', 'true');
+        img.setAttribute('decoding', 'async');
+        img.style.border = 'none';
+        container.appendChild(img);
+    }
+}
+
+/**
  * かんたんリンク配布HTMLは document.currentScript に依存する。
  * メイン文書へ動的 append した script では currentScript が null になり、プレースホルダ「リンク」のままになることがあるため、
  * iframe の srcdoc 内でパース・実行させる。
  */
 /**
- * @param {{ skipLabel?: boolean, labelText?: string }} [opts]
+ * @param {{ skipLabel?: boolean, labelText?: string, manufacturerOfficialAffiliateUrl?: string, manufacturerOfficialAffiliateLabel?: string, manufacturerOfficialAffiliateTrackingPixelUrl?: string }} [opts]
  */
 function injectMoshimoEasyLinkViaSrcdocIframe(container, html, opts) {
     opts = opts || {};
@@ -203,19 +303,21 @@ function injectMoshimoEasyLinkViaSrcdocIframe(container, html, opts) {
         label.className = 'nattoku-moshimo-header-slot-label';
         label.textContent = opts.labelText || '製品の詳細を確認する';
         container.appendChild(label);
+        appendManufacturerOfficialAffiliateCta(container, opts);
+    } else {
+        /* 「今の価格を確認する」内のかんたんリンク枠：ラベルなし・メーカーCTAをボタン列の最上段に */
+        appendManufacturerOfficialAffiliateCta(container, opts);
     }
 
     const safe = normalizeMoshimoEasyLinkHtml(html);
     const iframe = document.createElement('iframe');
     iframe.className = 'nattoku-moshimo-easylink-iframe';
     iframe.title = '価格・購入先（もしもアフィリエイト）';
-    iframe.setAttribute(
-        'sandbox',
-        'allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox',
-    );
+    /* sandbox 無し: 配布HTMLは自サイト data 由来。制限付き sandbox だと target=_blank や EC 側の挙動によりクリックが無視されることがある */
     iframe.srcdoc =
         '<!DOCTYPE html><html><head><meta charset="utf-8">' +
         '<meta name="viewport" content="width=device-width,initial-scale=1">' +
+        '<base target="_blank" rel="noopener noreferrer">' +
         '<style>html,body{margin:0;padding:0;background:#fff;color:#0f172a;overflow-x:hidden}body{display:flex;flex-direction:column;align-items:center;box-sizing:border-box;min-width:100%}[id^="msmaflink-"]{max-width:100%;margin-left:auto;margin-right:auto}</style></head><body>' +
         safe +
         '</body></html>';
@@ -286,6 +388,12 @@ function hasMoshimoCta(data) {
     return false;
 }
 
+function hasManufacturerOfficialAffiliate(data) {
+    if (!data) return false;
+    const u = data.manufacturerOfficialAffiliateUrl;
+    return typeof u === 'string' && u.trim().length > 0;
+}
+
 /**
  * もしも管理画面の「HTMLをコピー」そのまま（コメント・script・div）を挿入する。
  * innerHTML では script が動かないため、script 要素は生成し直してから append する。
@@ -334,6 +442,9 @@ function injectMoshimoAffiliateRawHtml(container, html) {
  *   - moshimoAffiliateEasyLinkHtml … 配布HTMLを文字列で直書き
  *   - moshimoAffiliateEasyLinkHtmlFile … products/data/ 内のファイル名（例: moshimo-embed-{productId}.html）
  *   - moshimoAffiliateEasyLink … オブジェクト形式（eid 等。HTMLが無いときのみ）
+ *   - manufacturerOfficialAffiliateUrl … 任意。メーカー公式HP用アフィリエイトURL（製品の詳細ラベル直下にCTAを出す。もしもが無くても URL があればヘッダーにCTAのみ表示）
+ *   - manufacturerOfficialAffiliateLabel … 任意。上記CTAの文言（デフォルト: まずはメーカー公式HPで製品情報を確認）
+ *   - manufacturerOfficialAffiliateTrackingPixelUrl … 任意。計測用1×1画像URL
  * 一括取り込み: node scripts/apply-moshimo-kantan-easylink-batch.js --from <フォルダ> [--map <tsv|json>]
  * 手順メモ: products/data/incoming-moshimo-easylink/README.txt
  */
@@ -364,7 +475,7 @@ async function applyPurchaseCtaMoshimoLayout(data) {
         if (rs) rs.innerHTML = '';
     }
 
-    if (!hasMoshimoCta(data)) {
+    if (!hasMoshimoCta(data) && !hasManufacturerOfficialAffiliate(data)) {
         clearHeaderSlot();
         clearAfterQualityMoshimo();
         if (section) {
@@ -397,14 +508,23 @@ async function applyPurchaseCtaMoshimoLayout(data) {
     if (easyLinkHtml && headerSlot) {
         headerSlot.innerHTML = '';
         headerSlot.classList.add('nattoku-moshimo-header-slot--iframe');
-        injectMoshimoEasyLinkViaSrcdocIframe(headerSlot, easyLinkHtml, {});
+        injectMoshimoEasyLinkViaSrcdocIframe(headerSlot, easyLinkHtml, {
+            manufacturerOfficialAffiliateUrl: data.manufacturerOfficialAffiliateUrl,
+            manufacturerOfficialAffiliateLabel: data.manufacturerOfficialAffiliateLabel,
+            manufacturerOfficialAffiliateTrackingPixelUrl: data.manufacturerOfficialAffiliateTrackingPixelUrl,
+        });
         headerSlot.hidden = false;
         console.log('✅ もしもかんたんリンクHTMLをヘッダー（iframe）に挿入しました');
 
         const afterSec = document.getElementById('nattoku-moshimo-after-quality');
         const repeatSlot = afterSec && afterSec.querySelector('.nattoku-moshimo-repeat-slot');
         if (repeatSlot) {
-            injectMoshimoEasyLinkViaSrcdocIframe(repeatSlot, easyLinkHtml, { skipLabel: true });
+            injectMoshimoEasyLinkViaSrcdocIframe(repeatSlot, easyLinkHtml, {
+                skipLabel: true,
+                manufacturerOfficialAffiliateUrl: data.manufacturerOfficialAffiliateUrl,
+                manufacturerOfficialAffiliateLabel: data.manufacturerOfficialAffiliateLabel,
+                manufacturerOfficialAffiliateTrackingPixelUrl: data.manufacturerOfficialAffiliateTrackingPixelUrl,
+            });
             afterSec.hidden = false;
             console.log('✅ もしもかんたんリンクHTMLをデータ品質直下に挿入しました');
         }
@@ -421,6 +541,7 @@ async function applyPurchaseCtaMoshimoLayout(data) {
             lb.className = 'nattoku-moshimo-header-slot-label';
             lb.textContent = '製品の詳細を確認する';
             headerSlot.appendChild(lb);
+            appendManufacturerOfficialAffiliateCta(headerSlot, data);
             const wrap = document.createElement('div');
             wrap.className = 'nattoku-moshimo-header-easylink-wrap';
             const mount = document.createElement('div');
@@ -434,8 +555,16 @@ async function applyPurchaseCtaMoshimoLayout(data) {
             console.log('✅ もしもかんたんリンク（msmaflink オブジェクト）をヘッダーに挿入:', eid);
         }
     } else {
-        clearHeaderSlot();
         clearAfterQualityMoshimo();
+        if (hasManufacturerOfficialAffiliate(data) && headerSlot) {
+            headerSlot.innerHTML = '';
+            headerSlot.classList.add('nattoku-moshimo-header-slot--iframe');
+            appendManufacturerOfficialAffiliateCta(headerSlot, data);
+            headerSlot.hidden = false;
+            console.log('✅ メーカー公式アフィリエイトCTAのみをヘッダーに表示しました（かんたんリンクなし）');
+        } else {
+            clearHeaderSlot();
+        }
     }
 
     if (!section) {

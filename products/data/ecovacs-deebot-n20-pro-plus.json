@@ -11,7 +11,11 @@
   "asin": "B0D45R4YVL",
   "metaTitle": "DEEBOT N20 PRO PLUS 詳細統計分析 | 失敗しない！ナットク研究所",
   "metaDescription": "DEEBOT N20 PRO PLUSの口コミ278件を分析。信頼度89.15点。年間維持費の内訳や、月間約8時間の時短効果を実データから算出。",
-  "badges": ["信頼89.2", "紙パック不要", "採用262件"],
+  "badges": [
+    "信頼89.2",
+    "紙パック不要",
+    "採用262件"
+  ],
   "reliability": {
     "score": 89.15,
     "dataAdequacy": {
@@ -49,10 +53,30 @@
     "annual": 5000,
     "comment": "紙パック0円のサイクロン帯。実勢内訳例：サイドブラシ約2,500円(4個)、メインブラシ約4,000円、フィルター約1,500円。2年累計1万円未満に収まる運用例。performanceの「維持費」高評価(98)と整合。",
     "consumables": [
-      { "item": "サイドブラシ（4本・純正目安）", "replacementFrequency": "年0.5回前後目安", "unitCost": 2500, "annualCost": 1250 },
-      { "item": "メインブラシ（純正目安）", "replacementFrequency": "年0.5〜1回目安", "unitCost": 4000, "annualCost": 2000 },
-      { "item": "フィルター類（純正目安）", "replacementFrequency": "年1回前後目安", "unitCost": 1500, "annualCost": 1500 },
-      { "item": "モップ消耗（該当モデル）", "replacementFrequency": "仕様に応じ年数回", "unitCost": 0, "annualCost": 250 }
+      {
+        "item": "サイドブラシ（4本・純正目安）",
+        "replacementFrequency": "年0.5回前後目安",
+        "unitCost": 2500,
+        "annualCost": 1250
+      },
+      {
+        "item": "メインブラシ（純正目安）",
+        "replacementFrequency": "年0.5〜1回目安",
+        "unitCost": 4000,
+        "annualCost": 2000
+      },
+      {
+        "item": "フィルター類（純正目安）",
+        "replacementFrequency": "年1回前後目安",
+        "unitCost": 1500,
+        "annualCost": 1500
+      },
+      {
+        "item": "モップ消耗（該当モデル）",
+        "replacementFrequency": "仕様に応じ年数回",
+        "unitCost": 0,
+        "annualCost": 250
+      }
     ]
   },
   "categoryC": {
@@ -135,8 +159,26 @@
     }
   },
   "radarChartData": {
-    "labels": ["床掃除", "カーペット", "ペット毛", "静音性", "段差", "メンテ", "アプリ", "電池"],
-    "values": [96, 88, 94, 75, 82, 98, 80, 85]
+    "labels": [
+      "床掃除",
+      "カーペット",
+      "ペット毛",
+      "静音性",
+      "段差",
+      "メンテ",
+      "アプリ",
+      "電池"
+    ],
+    "values": [
+      96,
+      88,
+      94,
+      75,
+      82,
+      98,
+      80,
+      85
+    ]
   },
   "dataQuality": {
     "totalReviews": 278,
@@ -177,23 +219,68 @@
   },
   "reviewKeywords": {
     "positive": [
-      { "keyword": "紙パック不要", "count": 128 },
-      { "keyword": "吸引力が凄い", "count": 105 },
-      { "keyword": "維持費ゼロ", "count": 98 },
-      { "keyword": "コスパ最強", "count": 94 },
-      { "keyword": "毛が絡まない", "count": 82 },
-      { "keyword": "サイクロン式", "count": 76 },
-      { "keyword": "時短になる", "count": 65 },
-      { "keyword": "アプリが便利", "count": 48 }
+      {
+        "keyword": "紙パック不要",
+        "count": 128
+      },
+      {
+        "keyword": "吸引力が凄い",
+        "count": 105
+      },
+      {
+        "keyword": "維持費ゼロ",
+        "count": 98
+      },
+      {
+        "keyword": "コスパ最強",
+        "count": 94
+      },
+      {
+        "keyword": "毛が絡まない",
+        "count": 82
+      },
+      {
+        "keyword": "サイクロン式",
+        "count": 76
+      },
+      {
+        "keyword": "時短になる",
+        "count": 65
+      },
+      {
+        "keyword": "アプリが便利",
+        "count": 48
+      }
     ],
     "negative": [
-      { "keyword": "収集音が大きい", "count": 45 },
-      { "keyword": "水タンク不足", "count": 28 },
-      { "keyword": "Wi-Fi設定", "count": 22 },
-      { "keyword": "ラグ巻き込み", "count": 18 },
-      { "keyword": "フィルター清掃", "count": 15 },
-      { "keyword": "説明書不親切", "count": 10 },
-      { "keyword": "段差の誤検知", "count": 6 }
+      {
+        "keyword": "収集音が大きい",
+        "count": 45
+      },
+      {
+        "keyword": "水タンク不足",
+        "count": 28
+      },
+      {
+        "keyword": "Wi-Fi設定",
+        "count": 22
+      },
+      {
+        "keyword": "ラグ巻き込み",
+        "count": 18
+      },
+      {
+        "keyword": "フィルター清掃",
+        "count": 15
+      },
+      {
+        "keyword": "説明書不親切",
+        "count": 10
+      },
+      {
+        "keyword": "段差の誤検知",
+        "count": 6
+      }
     ]
   },
   "topComplaints": [
@@ -247,34 +334,82 @@
     "petOwner": {
       "overall": 92,
       "reviewCount": 162,
-      "suction": { "score": 95, "comment": "毛の絡まりにくさと紙パック代0円の恩恵が最大化。換毛期の掃除頻度が上がってもコストを気にせず回せます。" },
-      "odorControl": { "score": 82, "comment": "可視のダスト＋手入れしやすさで衛生面に好印象。排気のニオイは帯差あり、という層も。" },
-      "maintenance": { "score": 98, "comment": "ZeroTangle＋空け手間減。多頭飼いでもメンテ回数を抑えやすい、という帯。" },
-      "petSafety": { "score": 90, "comment": "障害物回避＋高吸引力ゆえ、小物は事前片付け推奨。" }
+      "suction": {
+        "score": 95,
+        "comment": "毛の絡まりにくさと紙パック代0円の恩恵が最大化。換毛期の掃除頻度が上がってもコストを気にせず回せます。"
+      },
+      "odorControl": {
+        "score": 82,
+        "comment": "可視のダスト＋手入れしやすさで衛生面に好印象。排気のニオイは帯差あり、という層も。"
+      },
+      "maintenance": {
+        "score": 98,
+        "comment": "ZeroTangle＋空け手間減。多頭飼いでもメンテ回数を抑えやすい、という帯。"
+      },
+      "petSafety": {
+        "score": 90,
+        "comment": "障害物回避＋高吸引力ゆえ、小物は事前片付け推奨。"
+      }
     },
     "apartment": {
       "overall": 80,
       "reviewCount": 105,
-      "noise": { "score": 75, "comment": "静音性は高いが収集音の対策は必須。ステーションが比較的スリムなので、マンションの狭い場所にも設置しやすい。" },
-      "sizeSuitability": { "score": 88, "comment": "ベース比較的コンパクト。玄関脇・廊下下への収まりの良さ、という帯。" },
-      "obstacleHandling": { "score": 78, "comment": "コード・ラグ巻き込みは要禁止エ。床の明るさと事前整理で安定、という層。" },
-      "neighborConsideration": { "score": 72, "comment": "走行帯の静音に好印象。収集帯の短時間爆音はおやすみモード推奨、という層。" }
+      "noise": {
+        "score": 75,
+        "comment": "静音性は高いが収集音の対策は必須。ステーションが比較的スリムなので、マンションの狭い場所にも設置しやすい。"
+      },
+      "sizeSuitability": {
+        "score": 88,
+        "comment": "ベース比較的コンパクト。玄関脇・廊下下への収まりの良さ、という帯。"
+      },
+      "obstacleHandling": {
+        "score": 78,
+        "comment": "コード・ラグ巻き込みは要禁止エ。床の明るさと事前整理で安定、という層。"
+      },
+      "neighborConsideration": {
+        "score": 72,
+        "comment": "走行帯の静音に好印象。収集帯の短時間爆音はおやすみモード推奨、という層。"
+      }
     },
     "workingProfessional": {
       "overall": 88,
       "reviewCount": 120,
-      "scheduleCompatibility": { "score": 92, "comment": "外出中に清掃・収集まで完結。月8時間の時短は、多忙な共働き世帯にとって価格以上の価値があると評されています。" },
-      "appUsability": { "score": 80, "comment": "初回Wi-Fiの手間はあるが、安定後の操作性・スケジュールは好評、という帯。" },
-      "automationFeatures": { "score": 92, "comment": "自動空け＋部屋割で家事からの切り離し度が高い。帰宅時の床の仕上がりに満足、という層。" },
-      "remoteControl": { "score": 86, "comment": "外出先からの起動・完了通知のしやすさに満足、という帯。" }
+      "scheduleCompatibility": {
+        "score": 92,
+        "comment": "外出中に清掃・収集まで完結。月8時間の時短は、多忙な共働き世帯にとって価格以上の価値があると評されています。"
+      },
+      "appUsability": {
+        "score": 80,
+        "comment": "初回Wi-Fiの手間はあるが、安定後の操作性・スケジュールは好評、という帯。"
+      },
+      "automationFeatures": {
+        "score": 92,
+        "comment": "自動空け＋部屋割で家事からの切り離し度が高い。帰宅時の床の仕上がりに満足、という層。"
+      },
+      "remoteControl": {
+        "score": 86,
+        "comment": "外出先からの起動・完了通知のしやすさに満足、という帯。"
+      }
     },
     "familyHome": {
       "overall": 83,
       "reviewCount": 98,
-      "areaCoverage": { "score": 85, "comment": "複数階マッピング対応。一戸建てでも各階の情報を記憶でき、持ち運んでの清掃もスムーズに行えます。" },
-      "batteryDuration": { "score": 85, "comment": "標準帯の広域完走例が多い。最大吸引併用時は再充電前提、という帯。" },
-      "multiFloorSupport": { "score": 80, "comment": "階を跨ぐ運用はベース移動の手間あり。平屋・ワンフロア広めとの相性が高い、という層。" },
-      "childSafety": { "score": 80, "comment": "小物・玩具は巻き込みリスク。掃除前の片付けと禁止エ推奨。" }
+      "areaCoverage": {
+        "score": 85,
+        "comment": "複数階マッピング対応。一戸建てでも各階の情報を記憶でき、持ち運んでの清掃もスムーズに行えます。"
+      },
+      "batteryDuration": {
+        "score": 85,
+        "comment": "標準帯の広域完走例が多い。最大吸引併用時は再充電前提、という帯。"
+      },
+      "multiFloorSupport": {
+        "score": 80,
+        "comment": "階を跨ぐ運用はベース移動の手間あり。平屋・ワンフロア広めとの相性が高い、という層。"
+      },
+      "childSafety": {
+        "score": 80,
+        "comment": "小物・玩具は巻き込みリスク。掃除前の片付けと禁止エ推奨。"
+      }
     }
   },
   "resaleValue": {
@@ -282,7 +417,7 @@
     "usedMinPrice": 41800,
     "usedMaxPrice": 55800,
     "retentionRateMin": 59.9,
-    "retentionRateMax": 80.0,
+    "retentionRateMax": 80,
     "period": "12ヶ月前後目安",
     "comment": "中価格帯＋紙パック不要の人気。付属品・空け部品の有無で帯域が上下しやすいです。"
   },
@@ -298,5 +433,7 @@
     "amazon": "https://www.amazon.co.jp/s?k=ECOVACS+DEEBOT+N20+PRO+PLUS",
     "rakuten": "https://search.rakuten.co.jp/search/mall/DEEBOT+N20+PRO+PLUS/",
     "yahoo": "https://shopping.yahoo.co.jp/search?p=DEEBOT+N20+PRO+PLUS"
-  }
+  },
+  "manufacturerOfficialAffiliateUrl": "",
+  "manufacturerOfficialAffiliateTrackingPixelUrl": ""
 }

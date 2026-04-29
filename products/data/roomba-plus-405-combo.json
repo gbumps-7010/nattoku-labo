@@ -11,7 +11,11 @@
   "asin": "B0F1FCZYV6",
   "metaTitle": "Roomba Plus 405 Combo 詳細分析 | 失敗しない！ナットク研究所",
   "metaDescription": "Roomba Plus 405 Comboの口コミ統計分析。321件のレビューを解析。AutoWashによる全自動メンテナンスと時短効果、維持費の詳細を公開。",
-  "badges": ["信頼94.2", "AutoWash", "321件"],
+  "badges": [
+    "信頼94.2",
+    "AutoWash",
+    "321件"
+  ],
   "reliability": {
     "score": 94.2,
     "dataAdequacy": {
@@ -52,11 +56,36 @@
     "annual": 26400,
     "comment": "紙パック(3枚)3,300円、モップパッド(2枚)3,300円、エッジブラシ2,200円、メインブラシ6,600円、専用洗剤1,500円等を年間本数に換算した合算例。",
     "consumables": [
-      { "item": "紙パック（3枚入）", "replacementFrequency": "年2〜3回目安", "unitCost": 3300, "annualCost": 8250 },
-      { "item": "モップパッド（2枚入）", "replacementFrequency": "年2回前後目安", "unitCost": 3300, "annualCost": 6600 },
-      { "item": "エッジクリーニングブラシ", "replacementFrequency": "年1回前後目安", "unitCost": 2200, "annualCost": 2200 },
-      { "item": "メインブラシ", "replacementFrequency": "年0.5〜1回目安", "unitCost": 6600, "annualCost": 4950 },
-      { "item": "専用洗剤", "replacementFrequency": "年3〜4本目安", "unitCost": 1500, "annualCost": 4400 }
+      {
+        "item": "紙パック（3枚入）",
+        "replacementFrequency": "年2〜3回目安",
+        "unitCost": 3300,
+        "annualCost": 8250
+      },
+      {
+        "item": "モップパッド（2枚入）",
+        "replacementFrequency": "年2回前後目安",
+        "unitCost": 3300,
+        "annualCost": 6600
+      },
+      {
+        "item": "エッジクリーニングブラシ",
+        "replacementFrequency": "年1回前後目安",
+        "unitCost": 2200,
+        "annualCost": 2200
+      },
+      {
+        "item": "メインブラシ",
+        "replacementFrequency": "年0.5〜1回目安",
+        "unitCost": 6600,
+        "annualCost": 4950
+      },
+      {
+        "item": "専用洗剤",
+        "replacementFrequency": "年3〜4本目安",
+        "unitCost": 1500,
+        "annualCost": 4400
+      }
     ]
   },
   "categoryC": {
@@ -73,7 +102,11 @@
     "failureRate": {
       "percentage": 2,
       "reviewCount": 321,
-      "breakdown": { "hardware": 1, "software": 0, "environmental": 1 },
+      "breakdown": {
+        "hardware": 1,
+        "software": 0,
+        "environmental": 1
+      },
       "comment": "故障率は2%と極めて優秀。アプリ接続の不安定さが数例見られますが、本体のハードウェアトラブルはほとんど報告されていません。"
     }
   },
@@ -140,8 +173,26 @@
     }
   },
   "radarChartData": {
-    "labels": ["床掃除", "カーペット", "ペット毛", "静音性", "段差", "メンテ", "アプリ", "電池"],
-    "values": [98, 95, 96, 78, 90, 98, 96, 92]
+    "labels": [
+      "床掃除",
+      "カーペット",
+      "ペット毛",
+      "静音性",
+      "段差",
+      "メンテ",
+      "アプリ",
+      "電池"
+    ],
+    "values": [
+      98,
+      95,
+      96,
+      78,
+      90,
+      98,
+      96,
+      92
+    ]
   },
   "dataQuality": {
     "totalReviews": 321,
@@ -153,23 +204,68 @@
   },
   "reviewKeywords": {
     "positive": [
-      { "keyword": "モップ自動洗浄", "count": 142 },
-      { "keyword": "床がサラサラ", "count": 128 },
-      { "keyword": "時短", "count": 110 },
-      { "keyword": "自動乾燥", "count": 95 },
-      { "keyword": "手間いらず", "count": 88 },
-      { "keyword": "吸引力", "count": 85 },
-      { "keyword": "OSの安定性", "count": 72 },
-      { "keyword": "デザイン", "count": 45 }
+      {
+        "keyword": "モップ自動洗浄",
+        "count": 142
+      },
+      {
+        "keyword": "床がサラサラ",
+        "count": 128
+      },
+      {
+        "keyword": "時短",
+        "count": 110
+      },
+      {
+        "keyword": "自動乾燥",
+        "count": 95
+      },
+      {
+        "keyword": "手間いらず",
+        "count": 88
+      },
+      {
+        "keyword": "吸引力",
+        "count": 85
+      },
+      {
+        "keyword": "OSの安定性",
+        "count": 72
+      },
+      {
+        "keyword": "デザイン",
+        "count": 45
+      }
     ],
     "negative": [
-      { "keyword": "価格が高い", "count": 58 },
-      { "keyword": "ステーションが巨大", "count": 52 },
-      { "keyword": "動作音が大きい", "count": 41 },
-      { "keyword": "排水タンクの臭い", "count": 28 },
-      { "keyword": "設置場所の確保", "count": 22 },
-      { "keyword": "消耗品が高い", "count": 18 },
-      { "keyword": "初期設定", "count": 4 }
+      {
+        "keyword": "価格が高い",
+        "count": 58
+      },
+      {
+        "keyword": "ステーションが巨大",
+        "count": 52
+      },
+      {
+        "keyword": "動作音が大きい",
+        "count": 41
+      },
+      {
+        "keyword": "排水タンクの臭い",
+        "count": 28
+      },
+      {
+        "keyword": "設置場所の確保",
+        "count": 22
+      },
+      {
+        "keyword": "消耗品が高い",
+        "count": 18
+      },
+      {
+        "keyword": "初期設定",
+        "count": 4
+      }
     ]
   },
   "topComplaints": [
@@ -223,34 +319,82 @@
     "petOwner": {
       "overall": 95,
       "reviewCount": 105,
-      "suction": { "score": 98, "comment": "多頭飼いの毛もしっかり吸引。ゴム製ブラシは毛が絡まないので、手入れのストレスがほぼゼロになります。" },
-      "odorControl": { "score": 92, "comment": "モップが毎回自動で洗浄・熱風乾燥されるため、床に残るペット特有の臭いを強力に除去します。" },
-      "maintenance": { "score": 95, "comment": "抜け毛で満杯になっても自動で吸い上げるため、数週間はゴミ捨ての心配がありません。" },
-      "petSafety": { "score": 95, "comment": "水場・食器周りは禁止エで守りやすい。障害物回避の堅さに満足、という層。" }
+      "suction": {
+        "score": 98,
+        "comment": "多頭飼いの毛もしっかり吸引。ゴム製ブラシは毛が絡まないので、手入れのストレスがほぼゼロになります。"
+      },
+      "odorControl": {
+        "score": 92,
+        "comment": "モップが毎回自動で洗浄・熱風乾燥されるため、床に残るペット特有の臭いを強力に除去します。"
+      },
+      "maintenance": {
+        "score": 95,
+        "comment": "抜け毛で満杯になっても自動で吸い上げるため、数週間はゴミ捨ての心配がありません。"
+      },
+      "petSafety": {
+        "score": 95,
+        "comment": "水場・食器周りは禁止エで守りやすい。障害物回避の堅さに満足、という層。"
+      }
     },
     "apartment": {
       "overall": 79,
       "reviewCount": 82,
-      "noise": { "score": 75, "comment": "清掃音は静かですが、ドックの洗浄音は壁を伝わる可能性があるため、夜間の使用には配慮が必要です。" },
-      "sizeSuitability": { "score": 70, "comment": "ステーションがかなり大型。マンションの限られたスペースでは設置場所の選定に苦労します。" },
-      "obstacleHandling": { "score": 92, "comment": "家具や小物を賢く回避。物が散らかりがちなマンションの床でも、止まることなく清掃を完遂します。" },
-      "neighborConsideration": { "score": 78, "comment": "走行帯の静音は好印象。洗浄・乾燥帯の音は帯外スケジュール向き、という層。" }
+      "noise": {
+        "score": 75,
+        "comment": "清掃音は静かですが、ドックの洗浄音は壁を伝わる可能性があるため、夜間の使用には配慮が必要です。"
+      },
+      "sizeSuitability": {
+        "score": 70,
+        "comment": "ステーションがかなり大型。マンションの限られたスペースでは設置場所の選定に苦労します。"
+      },
+      "obstacleHandling": {
+        "score": 92,
+        "comment": "家具や小物を賢く回避。物が散らかりがちなマンションの床でも、止まることなく清掃を完遂します。"
+      },
+      "neighborConsideration": {
+        "score": 78,
+        "comment": "走行帯の静音は好印象。洗浄・乾燥帯の音は帯外スケジュール向き、という層。"
+      }
     },
     "workingProfessional": {
       "overall": 97,
       "reviewCount": 88,
-      "scheduleCompatibility": { "score": 98, "comment": "外出中に全て完結。帰宅時に床がピカピカで、モップも乾燥まで終わっている状態は生活の質を劇的に上げます。" },
-      "appUsability": { "score": 96, "comment": "仕事先からも清掃予約や状況確認が可能。iRobot Homeアプリの完成度は他社の追随を許しません。" },
-      "automationFeatures": { "score": 98, "comment": "まさに家事の完全自動化。掃除に費やしていた時間を趣味や仕事に充てられるメリットは計り知れません。" },
-      "remoteControl": { "score": 97, "comment": "外出先からの起動と完了通知の組み合わせに満足、という層。" }
+      "scheduleCompatibility": {
+        "score": 98,
+        "comment": "外出中に全て完結。帰宅時に床がピカピカで、モップも乾燥まで終わっている状態は生活の質を劇的に上げます。"
+      },
+      "appUsability": {
+        "score": 96,
+        "comment": "仕事先からも清掃予約や状況確認が可能。iRobot Homeアプリの完成度は他社の追随を許しません。"
+      },
+      "automationFeatures": {
+        "score": 98,
+        "comment": "まさに家事の完全自動化。掃除に費やしていた時間を趣味や仕事に充てられるメリットは計り知れません。"
+      },
+      "remoteControl": {
+        "score": 97,
+        "comment": "外出先からの起動と完了通知の組み合わせに満足、という層。"
+      }
     },
     "familyHome": {
       "overall": 93,
       "reviewCount": 46,
-      "areaCoverage": { "score": 95, "comment": "広い1階フロアも一度で完璧に清掃。高度なマッピングで迷わず最短ルートを掃除します。" },
-      "batteryDuration": { "score": 92, "comment": "大容量バッテリー搭載。広範囲の水拭きを伴う清掃でも、途中で息切れすることなく走りきります。" },
-      "multiFloorSupport": { "score": 92, "comment": "各階の地図を記憶可能。ただし、ステーションが重いため持ち運んでの使用は少々体力が必要です。" },
-      "childSafety": { "score": 92, "comment": "おもちゃ・小物の回避に満足。子ども部屋は禁止エでプレー域を守りやすい、という層。" }
+      "areaCoverage": {
+        "score": 95,
+        "comment": "広い1階フロアも一度で完璧に清掃。高度なマッピングで迷わず最短ルートを掃除します。"
+      },
+      "batteryDuration": {
+        "score": 92,
+        "comment": "大容量バッテリー搭載。広範囲の水拭きを伴う清掃でも、途中で息切れすることなく走りきります。"
+      },
+      "multiFloorSupport": {
+        "score": 92,
+        "comment": "各階の地図を記憶可能。ただし、ステーションが重いため持ち運んでの使用は少々体力が必要です。"
+      },
+      "childSafety": {
+        "score": 92,
+        "comment": "おもちゃ・小物の回避に満足。子ども部屋は禁止エでプレー域を守りやすい、という層。"
+      }
     }
   },
   "resaleValue": {
@@ -273,5 +417,8 @@
     "amazon": "https://www.amazon.co.jp/s?k=Roomba+Plus+405+Combo",
     "rakuten": "https://search.rakuten.co.jp/search/mall/Roomba+Plus+405+Combo/",
     "yahoo": "https://shopping.yahoo.co.jp/search?p=Roomba+Plus+405+Combo"
-  }
+  },
+  "manufacturerOfficialAffiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AZOWQ+152XIQ+4KHO+HUD03&a8ejpredirect=https%3A%2F%2Fstore.irobot-jp.com%2Fitem%2FG185060.html%3F_gl%3D1*1qx3iwz*_gcl_au*OTAzMDgyNTk5LjE3NzQ2NTY3ODg.*FPAU*OTAzMDgyNTk5LjE3NzQ2NTY3ODg.",
+  "manufacturerOfficialAffiliateTrackingPixelUrl": "",
+  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-roomba-plus-405-combo.html"
 }

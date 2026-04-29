@@ -450,5 +450,7 @@
     "rakuten": "https://search.rakuten.co.jp/search/mall/Roborock+Q10V+/",
     "yahoo": "https://shopping.yahoo.co.jp/search?p=Roborock+Q10V+"
   },
-  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-roborock-q10v-plus.html"
+  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-roborock-q10v-plus.html",
+  "manufacturerOfficialAffiliateUrl": "",
+  "manufacturerOfficialAffiliateTrackingPixelUrl": ""
 }

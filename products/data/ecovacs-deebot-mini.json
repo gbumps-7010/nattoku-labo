@@ -352,5 +352,7 @@
     "rakuten": "https://search.rakuten.co.jp/search/mall/DEEBOT+mini/",
     "yahoo": "https://shopping.yahoo.co.jp/search?p=DEEBOT+mini+ECOVACS"
   },
-  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-ecovacs-deebot-mini.html"
+  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-ecovacs-deebot-mini.html",
+  "manufacturerOfficialAffiliateUrl": "",
+  "manufacturerOfficialAffiliateTrackingPixelUrl": ""
 }

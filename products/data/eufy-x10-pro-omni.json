@@ -328,5 +328,7 @@
     "rakuten": "https://search.rakuten.co.jp/search/mall/Eufy+X10+Pro+Omni/",
     "yahoo": "https://shopping.yahoo.co.jp/search?p=Eufy+X10+Pro+Omni"
   },
-  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-eufy-x10-pro-omni.html"
+  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-eufy-x10-pro-omni.html",
+  "manufacturerOfficialAffiliateUrl": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3766176&pid=892603477&vc_url=https%3A%2F%2Fwww.ankerjapan.com%2Fproducts%2Ft2351%3F_pos%3D6%26_fid%3D6afd318d9%26_ss%3Dc%3Fvariant%3D43791514337441",
+  "manufacturerOfficialAffiliateTrackingPixelUrl": "https://ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3766176&pid=892603477"
 }

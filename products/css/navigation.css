@@ -1,5 +1,7 @@
 /**
- * ナビゲーションバー＆関連製品スタイル V3.14
+ * ナビゲーションバー＆関連製品スタイル V3.15
+ * - ノッチ・ホームバー対応（safe-area）、モバイルメニュー時の背景タップで閉じる
+ * - 製品ページ本体のモバイル余白・チャート高さ（body:has(#fixed-navigation)）
  */
 
 /* ===== 固定ナビゲーションバー ===== */
@@ -8,6 +10,7 @@
     top: 0;
     left: 0;
     right: 0;
+    padding-top: env(safe-area-inset-top, 0px);
     background: linear-gradient(135deg, #1e40af 0%, #0f172a 100%);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
@@ -25,7 +28,7 @@
 .nav-container {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 max(2rem, env(safe-area-inset-right, 0px)) 0 max(2rem, env(safe-area-inset-left, 0px));
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -225,11 +228,40 @@
     font-size: 1.5rem;
     cursor: pointer;
     padding: 0.5rem;
+    min-width: 44px;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.mobile-menu-toggle:focus-visible {
+    outline: 2px solid rgba(255, 255, 255, 0.85);
+    outline-offset: 2px;
 }
 
 /* bodyにpadding-topを追加してナビゲーションバーの下にコンテンツが表示されるようにする */
 body {
-    padding-top: 60px;
+    padding-top: calc(60px + env(safe-area-inset-top, 0px));
+}
+
+/* モバイルメニュー展開時：背後を暗くしてタップで閉じられるようにする（navigation.js と連動） */
+body.nav-mobile-open {
+    overflow: hidden;
+    touch-action: none;
+}
+
+body.nav-mobile-open::before {
+    content: '';
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: calc(60px + env(safe-area-inset-top, 0px));
+    background: rgba(15, 23, 42, 0.5);
+    z-index: 999;
+    pointer-events: auto;
 }
 
 /* ===== 関連製品セクション ===== */
@@ -390,7 +422,7 @@ body {
 /* ===== レスポンシブ ===== */
 @media (max-width: 1024px) {
     .nav-container {
-        padding: 0 1.5rem;
+        padding: 0 max(1.5rem, env(safe-area-inset-right, 0px)) 0 max(1.5rem, env(safe-area-inset-left, 0px));
     }
     
     .nav-menu {
@@ -413,23 +445,27 @@ body {
 
 @media (max-width: 768px) {
     .mobile-menu-toggle {
-        display: block;
+        display: inline-flex;
     }
     
     .nav-menu {
         position: fixed;
-        top: 60px;
+        top: calc(60px + env(safe-area-inset-top, 0px));
         left: 0;
         right: 0;
         background: linear-gradient(135deg, #1e40af 0%, #0f172a 100%);
         flex-direction: column;
         align-items: stretch;
         gap: 0;
-        padding: 1rem;
-        max-height: calc(100vh - 60px);
+        padding: 0.75rem 1rem max(1rem, env(safe-area-inset-bottom, 0px));
+        max-height: calc(100vh - 60px - env(safe-area-inset-top, 0px));
+        max-height: calc(100dvh - 60px - env(safe-area-inset-top, 0px));
         overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
         transform: translateX(-100%);
         transition: transform 0.3s ease;
+        z-index: 1001;
+        box-shadow: 4px 0 24px rgba(0, 0, 0, 0.25);
     }
     
     .nav-menu.mobile-open {
@@ -438,9 +474,17 @@ body {
     
     .nav-link {
         width: 100%;
-        padding: 1rem;
+        min-height: 48px;
+        padding: 0.75rem 1rem;
         justify-content: flex-start;
         border-radius: 8px;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .dropdown-item {
+        min-height: 48px;
+        display: flex;
+        align-items: center;
     }
     
     .nav-dropdown {
@@ -475,12 +519,22 @@ body {
 
 @media (max-width: 480px) {
     .nav-container {
-        padding: 0 1rem;
+        padding: 0 max(1rem, env(safe-area-inset-right, 0px)) 0 max(1rem, env(safe-area-inset-left, 0px));
         height: 55px;
     }
     
     body {
-        padding-top: 55px;
+        padding-top: calc(55px + env(safe-area-inset-top, 0px));
+    }
+
+    body.nav-mobile-open::before {
+        top: calc(55px + env(safe-area-inset-top, 0px));
+    }
+
+    .nav-menu {
+        top: calc(55px + env(safe-area-inset-top, 0px));
+        max-height: calc(100vh - 55px - env(safe-area-inset-top, 0px));
+        max-height: calc(100dvh - 55px - env(safe-area-inset-top, 0px));
     }
     
     .nav-logo a {
@@ -496,7 +550,85 @@ body {
     }
     
     .related-products-section .container {
-        padding: 0 1rem;
+        padding-left: max(1rem, env(safe-area-inset-left, 0px));
+        padding-right: max(1rem, env(safe-area-inset-right, 0px));
+    }
+}
+
+/* ===== 製品ページ（固定ナビあり）のモバイル調整 ===== */
+@media (max-width: 768px) {
+    body:has(#fixed-navigation) header {
+        padding: 1.25rem 0;
+    }
+
+    body:has(#fixed-navigation) .header-content {
+        padding-left: max(1rem, env(safe-area-inset-left, 0px));
+        padding-right: max(1rem, env(safe-area-inset-right, 0px));
+    }
+
+    body:has(#fixed-navigation) .breadcrumb {
+        flex-wrap: wrap;
+        row-gap: 0.35rem;
+        font-size: 0.85rem;
+    }
+
+    body:has(#fixed-navigation) .product-header h1.product-title,
+    body:has(#fixed-navigation) h1.product-title {
+        font-size: clamp(1.15rem, 4.5vw, 1.5rem);
+    }
+
+    body:has(#fixed-navigation) .performance-scores {
+        justify-content: center;
+    }
+
+    body:has(#fixed-navigation) .product-meta {
+        justify-content: center;
+        gap: 0.75rem;
+    }
+
+    body:has(#fixed-navigation) .container {
+        padding: 1.75rem max(1rem, env(safe-area-inset-left, 0px)) 2.5rem max(1rem, env(safe-area-inset-right, 0px));
+    }
+
+    body:has(#fixed-navigation) .section-title {
+        font-size: clamp(1.15rem, 4vw, 1.5rem);
+        flex-wrap: wrap;
+    }
+
+    body:has(#fixed-navigation) .card {
+        padding: 1.25rem;
+        border-radius: 12px;
+    }
+
+    body:has(#fixed-navigation) .chart-container {
+        height: min(360px, 62vw);
+        min-height: 240px;
+    }
+
+    body:has(#fixed-navigation) .stat-card {
+        padding: 1.25rem;
+    }
+
+    body:has(#fixed-navigation) .stat-number {
+        font-size: 2rem;
+    }
+
+    body:has(#fixed-navigation) .performance-details-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    body:has(#fixed-navigation) .score-item {
+        padding: 0.45rem 0.75rem;
+    }
+
+    body:has(#fixed-navigation) .score-value {
+        font-size: 1.1rem;
+    }
+
+    body:has(#fixed-navigation) .chart-container {
+        height: 260px;
     }
 }
 

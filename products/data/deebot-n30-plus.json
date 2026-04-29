@@ -468,5 +468,7 @@
     "rakuten": "https://search.rakuten.co.jp/search/mall/DEEBOT+N30+Plus/",
     "yahoo": "https://shopping.yahoo.co.jp/search?p=ECOVACS+DEEBOT+N30+Plus"
   },
-  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-deebot-n30-plus.html"
+  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-deebot-n30-plus.html",
+  "manufacturerOfficialAffiliateUrl": "",
+  "manufacturerOfficialAffiliateTrackingPixelUrl": ""
 }

@@ -464,5 +464,7 @@
     "rakuten": "https://search.rakuten.co.jp/search/mall/Dreame+L20+Ultra+Complete/",
     "yahoo": "https://shopping.yahoo.co.jp/search?p=Dreame+L20+Ultra+Complete"
   },
-  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-dreame-l20-ultra-complete.html"
+  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-dreame-l20-ultra-complete.html",
+  "manufacturerOfficialAffiliateUrl": "https://t.afi-b.com/visit.php?a=115804H-b7225928_X&p=g978598R",
+  "manufacturerOfficialAffiliateTrackingPixelUrl": "https://t.afi-b.com/lead/115804H/g978598R/b7225928_X"
 }

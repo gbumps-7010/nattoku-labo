@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="description" content="製品の口コミを統計分析。製品検索で最適な1台が見つかる。数千件のレビューから不満点と対策を可視化。">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="googlebot" content="index, follow">
@@ -54,6 +54,10 @@
             --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
         }
         
+        html {
+            -webkit-text-size-adjust: 100%;
+        }
+
         body {
             font-family: 'Noto Sans JP', sans-serif;
             line-height: 1.6;
@@ -72,7 +76,7 @@
         .header-content {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 2rem;
+            padding: 0 max(2rem, env(safe-area-inset-right, 0px)) 0 max(2rem, env(safe-area-inset-left, 0px));
             text-align: center;
         }
         
@@ -116,7 +120,7 @@
         .search-section {
             max-width: 1200px;
             margin: -2rem auto 3rem;
-            padding: 0 2rem;
+            padding: 0 max(2rem, env(safe-area-inset-right, 0px)) 0 max(2rem, env(safe-area-inset-left, 0px));
         }
         
         .search-card {
@@ -222,7 +226,7 @@
         .results-section {
             max-width: 1200px;
             margin: 0 auto 4rem;
-            padding: 0 2rem;
+            padding: 0 max(2rem, env(safe-area-inset-right, 0px)) max(2rem, env(safe-area-inset-bottom, 0px)) max(2rem, env(safe-area-inset-left, 0px));
         }
         
         .results-header {
@@ -270,11 +274,19 @@
             text-decoration: none;
             color: inherit;
             display: block;
+            -webkit-tap-highlight-color: transparent;
         }
         
         .product-card:hover {
             transform: translateY(-8px);
             box-shadow: var(--shadow-lg);
+        }
+
+        @media (hover: none) {
+            .product-card:active {
+                transform: scale(0.99);
+                box-shadow: var(--shadow);
+            }
         }
         
         .product-content {
@@ -458,7 +470,7 @@
         .footer-content {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 2rem;
+            padding: 0 max(2rem, env(safe-area-inset-right, 0px)) 0 max(2rem, env(safe-area-inset-left, 0px));
             text-align: center;
         }
         
@@ -483,25 +495,94 @@
         
         /* Responsive */
         @media (max-width: 768px) {
+            header {
+                padding: 2rem 0 max(2.5rem, env(safe-area-inset-bottom, 0px));
+            }
+
             .logo {
-                font-size: 1.8rem;
+                font-size: clamp(1.35rem, 5vw, 1.8rem);
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .tagline {
+                font-size: 0.95rem;
+                padding: 0 0.5rem;
             }
             
             .search-card {
-                padding: 1.5rem;
+                padding: 1.35rem max(1rem, env(safe-area-inset-right, 0px)) 1.5rem max(1rem, env(safe-area-inset-left, 0px));
+            }
+
+            .search-title {
+                font-size: 1.2rem;
+            }
+
+            .search-input,
+            .filter-select,
+            .sort-select {
+                font-size: 16px;
             }
             
             .filters {
                 grid-template-columns: 1fr;
+                gap: 1.1rem;
             }
             
             .products-grid {
                 grid-template-columns: 1fr;
+                gap: 1.25rem;
             }
             
             .results-header {
                 flex-direction: column;
-                align-items: flex-start;
+                align-items: stretch;
+            }
+
+            .sort-select {
+                width: 100%;
+                min-height: 48px;
+            }
+
+            .filter-select {
+                min-height: 48px;
+            }
+
+            .search-input {
+                min-height: 48px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 1.5rem 0 2rem;
+            }
+
+            .search-section {
+                margin-top: -1.25rem;
+                padding-left: max(1rem, env(safe-area-inset-left, 0px));
+                padding-right: max(1rem, env(safe-area-inset-right, 0px));
+            }
+
+            .header-nav-link {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 44px;
+                padding: 0.5rem 1.25rem;
+            }
+
+            .product-content {
+                padding: 1.15rem;
+            }
+
+            .product-name {
+                min-height: auto;
+            }
+
+            .spec-tag {
+                font-size: 0.85rem;
+                padding: 0.45rem 0.75rem;
             }
         }
         
@@ -848,6 +929,49 @@
             });
         }
 
+        function parseQueryNumber(param) {
+            if (param === null || param === undefined || param === '') return NaN;
+            if (param === 'Infinity' || param === 'infinity') return Infinity;
+            const n = Number(param);
+            return Number.isFinite(n) ? n : NaN;
+        }
+
+        /** 製品ページのナビなど ?manufacturer= &priceMin=&priceMax= を反映 */
+        function applyFiltersFromQueryString() {
+            const params = new URLSearchParams(window.location.search);
+            const manufacturerParam = params.get('manufacturer');
+            if (manufacturerParam) {
+                const decoded = decodeURIComponent(manufacturerParam);
+                if (Array.from(manufacturerFilter.options).some(o => o.value === decoded)) {
+                    manufacturerFilter.value = decoded;
+                }
+            }
+            const priceMinRaw = params.get('priceMin');
+            const priceMaxRaw = params.get('priceMax');
+            if (priceMinRaw !== null && priceMaxRaw !== null) {
+                const min = parseQueryNumber(priceMinRaw);
+                const max = priceMaxRaw === 'Infinity' || priceMaxRaw === 'infinity'
+                    ? Infinity
+                    : parseQueryNumber(priceMaxRaw);
+                let label = null;
+                if (Number.isFinite(min) && (max === Infinity || Number.isFinite(max))) {
+                    const exact = priceRanges.find(
+                        r => r.label !== 'すべて' && r.min === min && r.max === max
+                    );
+                    if (exact) {
+                        label = exact.label;
+                    } else if (min === 100000 && max === 150000) {
+                        label = '10万円以上';
+                    } else if (min === 150000 && max === Infinity) {
+                        label = '10万円以上';
+                    }
+                }
+                if (label && Array.from(priceFilter.options).some(o => o.value === label)) {
+                    priceFilter.value = label;
+                }
+            }
+        }
+
         // Generate stars HTML
         function generateStars(rating) {
             let starsHtml = '';
@@ -987,6 +1111,7 @@
                 console.log('productsData:', typeof productsData !== 'undefined' ? productsData.length + ' products' : 'undefined');
                 console.log('manufacturers:', typeof manufacturers !== 'undefined' ? manufacturers : 'undefined');
                 initializeFilters();
+                applyFiltersFromQueryString();
                 filterProducts();
             });
         } else {
@@ -994,6 +1119,7 @@
             console.log('productsData:', typeof productsData !== 'undefined' ? productsData.length + ' products' : 'undefined');
             console.log('manufacturers:', typeof manufacturers !== 'undefined' ? manufacturers : 'undefined');
             initializeFilters();
+            applyFiltersFromQueryString();
             filterProducts();
         }
     </script>

@@ -351,5 +351,7 @@
     "amazon": "https://www.amazon.co.jp/s?k=DEEBOT+T90+OMNI",
     "rakuten": "https://search.rakuten.co.jp/search/mall/DEEBOT+T90+OMNI/"
   },
-  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-ecovacs-deebot-t90-omni.html"
+  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-ecovacs-deebot-t90-omni.html",
+  "manufacturerOfficialAffiliateUrl": "",
+  "manufacturerOfficialAffiliateTrackingPixelUrl": ""
 }

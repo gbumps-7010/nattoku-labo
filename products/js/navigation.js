@@ -61,13 +61,12 @@ const ALL_PRODUCTS = [
 // メーカー一覧
 const MANUFACTURERS = ['すべて', 'Anker', 'Dreame', 'ECOVACS', 'Roborock', 'SwitchBot', 'iRobot'];
 
-// 価格帯一覧
+// 価格帯一覧（index.html / products-data.js の priceRanges と一致させる）
 const PRICE_RANGES = [
     { label: 'すべて', min: 0, max: Infinity },
     { label: '5万円未満', min: 0, max: 50000 },
-    { label: '5万〜10万円', min: 50000, max: 100000 },
-    { label: '10万〜15万円', min: 100000, max: 150000 },
-    { label: '15万円以上', min: 150000, max: Infinity }
+    { label: '5万円〜10万円', min: 50000, max: 100000 },
+    { label: '10万円以上', min: 100000, max: Infinity }
 ];
 
 /**
@@ -87,7 +86,7 @@ function createNavigationBar() {
                 </a>
             </div>
             
-            <div class="nav-menu">
+            <div class="nav-menu" id="nav-menu-panel">
                 <a href="../index.html" class="nav-link">
                     <i class="fas fa-home"></i> ホーム
                 </a>
@@ -150,8 +149,8 @@ function createNavigationBar() {
             </div>
             
             <!-- モバイルメニューボタン -->
-            <button class="mobile-menu-toggle">
-                <i class="fas fa-bars"></i>
+            <button type="button" class="mobile-menu-toggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="nav-menu-panel">
+                <i class="fas fa-bars" aria-hidden="true"></i>
             </button>
         </div>
     `;
@@ -210,17 +209,51 @@ function setupNavigationEvents() {
         });
     });
     
-    // 外側クリックでドロップダウンを閉じる
-    document.addEventListener('click', () => {
+    // 外側クリックでドロップダウンを閉じる・モバイルメニューを閉じる
+    document.addEventListener('click', (e) => {
         document.querySelectorAll('.nav-dropdown').forEach(d => d.classList.remove('open'));
+        const navMenu = document.querySelector('.nav-menu');
+        const mobileToggle = document.querySelector('.mobile-menu-toggle');
+        if (navMenu && mobileToggle && navMenu.classList.contains('mobile-open')) {
+            if (!navMenu.contains(e.target) && !mobileToggle.contains(e.target)) {
+                setMobileNavOpen(false);
+            }
+        }
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key !== 'Escape') return;
+        const navMenu = document.querySelector('.nav-menu');
+        if (navMenu?.classList.contains('mobile-open')) {
+            setMobileNavOpen(false);
+        }
     });
     
     // モバイルメニュートグル
     const mobileToggle = document.querySelector('.mobile-menu-toggle');
     if (mobileToggle) {
-        mobileToggle.addEventListener('click', () => {
-            document.querySelector('.nav-menu').classList.toggle('mobile-open');
+        mobileToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const navMenu = document.querySelector('.nav-menu');
+            const open = !navMenu.classList.contains('mobile-open');
+            setMobileNavOpen(open);
         });
+    }
+}
+
+function setMobileNavOpen(open) {
+    const navMenu = document.querySelector('.nav-menu');
+    const mobileToggle = document.querySelector('.mobile-menu-toggle');
+    if (!navMenu) return;
+    navMenu.classList.toggle('mobile-open', open);
+    document.body.classList.toggle('nav-mobile-open', open);
+    if (mobileToggle) {
+        mobileToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        mobileToggle.setAttribute('aria-label', open ? 'メニューを閉じる' : 'メニューを開く');
+        const icon = mobileToggle.querySelector('i');
+        if (icon) {
+            icon.className = open ? 'fas fa-times' : 'fas fa-bars';
+        }
     }
 }
 

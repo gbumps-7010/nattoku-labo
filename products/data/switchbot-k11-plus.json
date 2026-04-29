@@ -391,5 +391,7 @@
     "rakuten": "https://search.rakuten.co.jp/search/mall/SwitchBot+K11%2B/",
     "yahoo": "https://shopping.yahoo.co.jp/search?p=SwitchBot+K11%2B"
   },
-  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-switchbot-k11-plus.html"
+  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-switchbot-k11-plus.html",
+  "manufacturerOfficialAffiliateUrl": "",
+  "manufacturerOfficialAffiliateTrackingPixelUrl": ""
 }

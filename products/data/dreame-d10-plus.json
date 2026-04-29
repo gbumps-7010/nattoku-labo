@@ -445,5 +445,7 @@
     "rakuten": "https://search.rakuten.co.jp/search/mall/Dreame+D10+Plus/",
     "yahoo": "https://shopping.yahoo.co.jp/search?p=Dreame+D10+Plus"
   },
-  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-dreame-d10-plus.html"
+  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-dreame-d10-plus.html",
+  "manufacturerOfficialAffiliateUrl": "https://t.afi-b.com/visit.php?a=115804H-h5150028&p=g978598R",
+  "manufacturerOfficialAffiliateTrackingPixelUrl": "https://t.afi-b.com/lead/115804H/g978598R/h5150028"
 }

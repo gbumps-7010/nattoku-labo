@@ -25,7 +25,11 @@
     "failureRate": {
       "percentage": 3,
       "reviewCount": 326,
-      "breakdown": { "hardware": 1, "software": 1, "environmental": 1 },
+      "breakdown": {
+        "hardware": 1,
+        "software": 1,
+        "environmental": 1
+      },
       "comment": "初期不良率は統計的に有意に低く、ハードウェアの堅牢性はIT資産として高い信頼性を担保している"
     }
   },
@@ -68,11 +72,36 @@
     "monthly": 1033,
     "annual": 12400,
     "consumables": [
-      { "item": "紙パック", "replacementFrequency": "年4回目安", "unitCost": 500, "annualCost": 2000 },
-      { "item": "HEPAフィルタ", "replacementFrequency": "年1回目安", "unitCost": 2500, "annualCost": 2500 },
-      { "item": "メインブラシ", "replacementFrequency": "年1回目安", "unitCost": 3500, "annualCost": 3500 },
-      { "item": "サイドブラシ", "replacementFrequency": "年1回目安", "unitCost": 1200, "annualCost": 1200 },
-      { "item": "モップクロス", "replacementFrequency": "年2枚目安", "unitCost": 2200, "annualCost": 3200 }
+      {
+        "item": "紙パック",
+        "replacementFrequency": "年4回目安",
+        "unitCost": 500,
+        "annualCost": 2000
+      },
+      {
+        "item": "HEPAフィルタ",
+        "replacementFrequency": "年1回目安",
+        "unitCost": 2500,
+        "annualCost": 2500
+      },
+      {
+        "item": "メインブラシ",
+        "replacementFrequency": "年1回目安",
+        "unitCost": 3500,
+        "annualCost": 3500
+      },
+      {
+        "item": "サイドブラシ",
+        "replacementFrequency": "年1回目安",
+        "unitCost": 1200,
+        "annualCost": 1200
+      },
+      {
+        "item": "モップクロス",
+        "replacementFrequency": "年2枚目安",
+        "unitCost": 2200,
+        "annualCost": 3200
+      }
     ]
   },
   "performanceAnalysis": {
@@ -126,8 +155,26 @@
     }
   },
   "radarChartData": {
-    "labels": ["床掃除", "カーペット", "ペット毛", "静音性", "段差", "メンテ", "アプリ", "電池"],
-    "values": [98, 85, 92, 86, 75, 96, 94, 88]
+    "labels": [
+      "床掃除",
+      "カーペット",
+      "ペット毛",
+      "静音性",
+      "段差",
+      "メンテ",
+      "アプリ",
+      "電池"
+    ],
+    "values": [
+      98,
+      85,
+      92,
+      86,
+      75,
+      96,
+      94,
+      88
+    ]
   },
   "dataQuality": {
     "totalReviews": 326,
@@ -137,26 +184,75 @@
     "trustScore": 89.42,
     "comment": "採用率約92.6%。購入者認証付き文脈を重視。Amazon・楽天・Yahoo等の層差は分析時に減衰調整。89.42点の高信頼性データ。"
   },
-  "badges": ["信頼度89.4", "年156h目安", "1万Pa級"],
+  "badges": [
+    "信頼度89.4",
+    "年156h目安",
+    "1万Pa級"
+  ],
   "reviewKeywords": {
     "positive": [
-      { "keyword": "吸引力が非常に強い", "count": 185 },
-      { "keyword": "モップ洗浄・乾燥が秀逸", "count": 142 },
-      { "keyword": "マッピングの正確さ", "count": 110 },
-      { "keyword": "アプリの使いやすさ", "count": 82 },
-      { "keyword": "圧倒的なコスパ", "count": 76 },
-      { "keyword": "障害物回避の精度", "count": 65 },
-      { "keyword": "音が静かで驚いた", "count": 58 },
-      { "keyword": "床がサラサラになる", "count": 45 }
+      {
+        "keyword": "吸引力が非常に強い",
+        "count": 185
+      },
+      {
+        "keyword": "モップ洗浄・乾燥が秀逸",
+        "count": 142
+      },
+      {
+        "keyword": "マッピングの正確さ",
+        "count": 110
+      },
+      {
+        "keyword": "アプリの使いやすさ",
+        "count": 82
+      },
+      {
+        "keyword": "圧倒的なコスパ",
+        "count": 76
+      },
+      {
+        "keyword": "障害物回避の精度",
+        "count": 65
+      },
+      {
+        "keyword": "音が静かで驚いた",
+        "count": 58
+      },
+      {
+        "keyword": "床がサラサラになる",
+        "count": 45
+      }
     ],
     "negative": [
-      { "keyword": "ドックが巨大で場所を取る", "count": 22 },
-      { "keyword": "水タンクの補充頻度", "count": 15 },
-      { "keyword": "Wi-Fi 2.4GHz設定", "count": 5 },
-      { "keyword": "壁際の拭き残し", "count": 4 },
-      { "keyword": "消耗品が少し高価", "count": 3 },
-      { "keyword": "特定の段差で迷う", "count": 2 },
-      { "keyword": "音声案内が大きめ", "count": 2 }
+      {
+        "keyword": "ドックが巨大で場所を取る",
+        "count": 22
+      },
+      {
+        "keyword": "水タンクの補充頻度",
+        "count": 15
+      },
+      {
+        "keyword": "Wi-Fi 2.4GHz設定",
+        "count": 5
+      },
+      {
+        "keyword": "壁際の拭き残し",
+        "count": 4
+      },
+      {
+        "keyword": "消耗品が少し高価",
+        "count": 3
+      },
+      {
+        "keyword": "特定の段差で迷う",
+        "count": 2
+      },
+      {
+        "keyword": "音声案内が大きめ",
+        "count": 2
+      }
     ]
   },
   "successStrategies": [
@@ -342,5 +438,7 @@
     "amazon": "https://www.amazon.co.jp/s?k=Roborock+Qrevo+L",
     "rakuten": "https://search.rakuten.co.jp/search/mall/Roborock+Qrevo+L/",
     "yahoo": "https://shopping.yahoo.co.jp/search?p=Roborock+Qrevo+L"
-  }
+  },
+  "manufacturerOfficialAffiliateUrl": "",
+  "manufacturerOfficialAffiliateTrackingPixelUrl": ""
 }

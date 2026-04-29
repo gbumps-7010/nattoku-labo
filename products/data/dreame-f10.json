@@ -445,5 +445,7 @@
     "rakuten": "https://search.rakuten.co.jp/search/mall/Dreame+F10/",
     "yahoo": "https://shopping.yahoo.co.jp/search?p=Dreame+F10"
   },
-  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-dreame-f10.html"
+  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-dreame-f10.html",
+  "manufacturerOfficialAffiliateUrl": "https://t.afi-b.com/visit.php?a=115804H-Y7225930_y&p=g978598R",
+  "manufacturerOfficialAffiliateTrackingPixelUrl": "https://t.afi-b.com/lead/115804H/g978598R/Y7225930_y"
 }

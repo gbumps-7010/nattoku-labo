@@ -477,5 +477,7 @@
     "amazon": "https://www.amazon.co.jp/s?k=SwitchBot+S20",
     "rakuten": "https://search.rakuten.co.jp/search/mall/SwitchBot+S20/"
   },
-  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-switchbot-s20.html"
+  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-switchbot-s20.html",
+  "manufacturerOfficialAffiliateUrl": "",
+  "manufacturerOfficialAffiliateTrackingPixelUrl": ""
 }

@@ -417,5 +417,7 @@
     "rakuten": "https://search.rakuten.co.jp/search/mall/Anker+Eufy+C10+Auto-Empty/",
     "yahoo": "https://shopping.yahoo.co.jp/search?p=Anker+Eufy+C10+Auto-Empty"
   },
-  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-anker-eufy-c10.html"
+  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-anker-eufy-c10.html",
+  "manufacturerOfficialAffiliateUrl": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3766176&pid=892603477&vc_url=https%3A%2F%2Fwww.ankerjapan.com%2Fproducts%2Ft2292%3F_pos%3D3%26_fid%3D6afd318d9%26_ss%3Dc%3Fvariant%3D44871970226337",
+  "manufacturerOfficialAffiliateTrackingPixelUrl": "https://ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3766176&pid=892603477"
 }

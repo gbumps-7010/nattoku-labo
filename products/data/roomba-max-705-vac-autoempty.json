@@ -25,7 +25,11 @@
     "failureRate": {
       "percentage": 3,
       "reviewCount": 105,
-      "breakdown": { "hardware": 1, "software": 1, "environmental": 1 },
+      "breakdown": {
+        "hardware": 1,
+        "software": 1,
+        "environmental": 1
+      },
       "comment": "初期不良の多発の印象は限定的。一部でWi-Fi初期設定の手間。運用後の重故障言及は相対的に少なめ。主傾向の目安です。"
     }
   },
@@ -68,10 +72,30 @@
     "monthly": 1033,
     "annual": 12400,
     "consumables": [
-      { "item": "交換用AllergenLock紙パック", "replacementFrequency": "2ヶ月ごと", "unitCost": 1980, "annualCost": 3960 },
-      { "item": "エッジクリーニングブラシ", "replacementFrequency": "6ヶ月ごと", "unitCost": 520, "annualCost": 1040 },
-      { "item": "ダストカットフィルター", "replacementFrequency": "6ヶ月ごと", "unitCost": 1200, "annualCost": 2400 },
-      { "item": "デュアルアクションブラシ（セット）", "replacementFrequency": "1年ごと", "unitCost": 5000, "annualCost": 5000 }
+      {
+        "item": "交換用AllergenLock紙パック",
+        "replacementFrequency": "2ヶ月ごと",
+        "unitCost": 1980,
+        "annualCost": 3960
+      },
+      {
+        "item": "エッジクリーニングブラシ",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 520,
+        "annualCost": 1040
+      },
+      {
+        "item": "ダストカットフィルター",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 1200,
+        "annualCost": 2400
+      },
+      {
+        "item": "デュアルアクションブラシ（セット）",
+        "replacementFrequency": "1年ごと",
+        "unitCost": 5000,
+        "annualCost": 5000
+      }
     ]
   },
   "performanceAnalysis": {
@@ -125,8 +149,26 @@
     }
   },
   "radarChartData": {
-    "labels": ["床掃除", "カーペット", "ペット毛", "静音性", "段差", "メンテ", "アプリ", "電池"],
-    "values": [97, 96, 98, 70, 85, 94, 92, 88]
+    "labels": [
+      "床掃除",
+      "カーペット",
+      "ペット毛",
+      "静音性",
+      "段差",
+      "メンテ",
+      "アプリ",
+      "電池"
+    ],
+    "values": [
+      97,
+      96,
+      98,
+      70,
+      85,
+      94,
+      92,
+      88
+    ]
   },
   "dataQuality": {
     "totalReviews": 105,
@@ -138,18 +180,48 @@
   },
   "reviewKeywords": {
     "positive": [
-      { "keyword": "吸引力", "count": 72 },
-      { "keyword": "ペットの毛", "count": 55 },
-      { "keyword": "ゴミ捨て不要", "count": 48 },
-      { "keyword": "地図が正確", "count": 35 },
-      { "keyword": "メンテが楽", "count": 28 }
+      {
+        "keyword": "吸引力",
+        "count": 72
+      },
+      {
+        "keyword": "ペットの毛",
+        "count": 55
+      },
+      {
+        "keyword": "ゴミ捨て不要",
+        "count": 48
+      },
+      {
+        "keyword": "地図が正確",
+        "count": 35
+      },
+      {
+        "keyword": "メンテが楽",
+        "count": 28
+      }
     ],
     "negative": [
-      { "keyword": "収集音がうるさい", "count": 30 },
-      { "keyword": "ベースが大きい", "count": 15 },
-      { "keyword": "価格が高い", "count": 10 },
-      { "keyword": "Wi-Fi設定", "count": 6 },
-      { "keyword": "マットを巻き込む", "count": 5 }
+      {
+        "keyword": "収集音がうるさい",
+        "count": 30
+      },
+      {
+        "keyword": "ベースが大きい",
+        "count": 15
+      },
+      {
+        "keyword": "価格が高い",
+        "count": 10
+      },
+      {
+        "keyword": "Wi-Fi設定",
+        "count": 6
+      },
+      {
+        "keyword": "マットを巻き込む",
+        "count": 5
+      }
     ]
   },
   "successStrategies": [
@@ -192,25 +264,45 @@
     "petOwner": {
       "overall": 97,
       "details": [
-        { "field": "ペット毛清掃力", "score": 98, "reviewCount": 55, "comment": "毛絡みが少なめなブラシ文脈と吸引の掛け合わせ。換毛期の負担低減を挙げる層。主傾向の目安です。" }
+        {
+          "field": "ペット毛清掃力",
+          "score": 98,
+          "reviewCount": 55,
+          "comment": "毛絡みが少なめなブラシ文脈と吸引の掛け合わせ。換毛期の負担低減を挙げる層。主傾向の目安です。"
+        }
       ]
     },
     "apartment": {
       "overall": 81,
       "details": [
-        { "field": "騒音配慮運用", "score": 75, "reviewCount": 65, "comment": "清掃力は好意的だが、集塵音対策の設計が必須の層。アプリの時間帯制御で使い分け。主傾向の目安です。" }
+        {
+          "field": "騒音配慮運用",
+          "score": 75,
+          "reviewCount": 65,
+          "comment": "清掃力は好意的だが、集塵音対策の設計が必須の層。アプリの時間帯制御で使い分け。主傾向の目安です。"
+        }
       ]
     },
     "workingProfessional": {
       "overall": 92,
       "details": [
-        { "field": "完全自動化", "score": 96, "reviewCount": 105, "comment": "数ヶ月に一度の捨て頻度文脈と、スケジュール忠実性の掛け合わせ。主傾向の目安です。" }
+        {
+          "field": "完全自動化",
+          "score": 96,
+          "reviewCount": 105,
+          "comment": "数ヶ月に一度の捨て頻度文脈と、スケジュール忠実性の掛け合わせ。主傾向の目安です。"
+        }
       ]
     },
     "familyHome": {
       "overall": 94,
       "details": [
-        { "field": "マルチエリア清掃", "score": 94, "reviewCount": 52, "comment": "戸建の広め間取りでも、マッピングの辿り方に好手応。子どもの食べこぼし回収。主傾向の目安です。" }
+        {
+          "field": "マルチエリア清掃",
+          "score": 94,
+          "reviewCount": 52,
+          "comment": "戸建の広め間取りでも、マッピングの辿り方に好手応。子どもの食べこぼし回収。主傾向の目安です。"
+        }
       ]
     }
   },
@@ -235,5 +327,8 @@
     "rakuten": "https://search.rakuten.co.jp/search/mall/Roomba+Max+705/",
     "yahoo": "https://shopping.yahoo.co.jp/search?p=Roomba+Max+705",
     "yodobashi": "https://www.yodobashi.com/?word=Roomba+Max+705"
-  }
+  },
+  "manufacturerOfficialAffiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AZOWQ+152XIQ+4KHO+HUD03&a8ejpredirect=https%3A%2F%2Fstore.irobot-jp.com%2Fitem%2FW155060.html%3F_gl%3D1*s0y0ve*_gcl_au*OTAzMDgyNTk5LjE3NzQ2NTY3ODg.*FPAU*OTAzMDgyNTk5LjE3NzQ2NTY3ODg.",
+  "manufacturerOfficialAffiliateTrackingPixelUrl": "",
+  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-roomba-max-705-vac-autoempty.html"
 }

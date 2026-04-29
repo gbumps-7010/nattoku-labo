@@ -474,5 +474,7 @@
     "rakuten": "https://search.rakuten.co.jp/search/mall/Dreame+D20+Pro+Plus/",
     "yahoo": "https://shopping.yahoo.co.jp/search?p=Dreame+D20+Pro+Plus"
   },
-  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-dreame-d20-pro-plus.html"
+  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-dreame-d20-pro-plus.html",
+  "manufacturerOfficialAffiliateUrl": "https://t.afi-b.com/visit.php?a=115804H-O7225926_g&p=g978598R",
+  "manufacturerOfficialAffiliateTrackingPixelUrl": "https://t.afi-b.com/lead/115804H/g978598R/O7225926_g"
 }

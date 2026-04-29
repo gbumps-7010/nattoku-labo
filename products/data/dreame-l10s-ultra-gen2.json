@@ -25,7 +25,11 @@
     "failureRate": {
       "percentage": 2,
       "reviewCount": 65,
-      "breakdown": { "hardware": 1, "software": 0, "environmental": 1 },
+      "breakdown": {
+        "hardware": 1,
+        "software": 0,
+        "environmental": 1
+      },
       "comment": "2026年時点の報告では、初期不良率は2%と極めて低水準。水漏れやマッピングエラーの報告も旧型より大幅に改善されています。"
     }
   },
@@ -151,8 +155,26 @@
     }
   },
   "radarChartData": {
-    "labels": ["床掃除", "カーペット", "ペット毛", "静音性", "段差", "メンテ", "アプリ", "電池"],
-    "values": [97, 93, 90, 86, 84, 96, 90, 92]
+    "labels": [
+      "床掃除",
+      "カーペット",
+      "ペット毛",
+      "静音性",
+      "段差",
+      "メンテ",
+      "アプリ",
+      "電池"
+    ],
+    "values": [
+      97,
+      93,
+      90,
+      86,
+      84,
+      96,
+      90,
+      92
+    ]
   },
   "dataQuality": {
     "totalReviews": 65,
@@ -162,23 +184,63 @@
     "trustScore": 92.15,
     "comment": "有効採用62件（除外3）。reliabilityScore 92.15と整合。母数は中規模のため、ブレの説明に留意してください。"
   },
-  "badges": ["信頼92.2", "週280分目安", "1万Pa級"],
+  "badges": [
+    "信頼92.2",
+    "週280分目安",
+    "1万Pa級"
+  ],
   "reviewKeywords": {
     "positive": [
-      { "keyword": "吸引力", "count": 28 },
-      { "keyword": "モップ伸長", "count": 22 },
-      { "keyword": "メンテナンス不要", "count": 19 },
-      { "keyword": "マッピング精度", "count": 16 },
-      { "keyword": "静音", "count": 14 },
-      { "keyword": "時短", "count": 12 },
-      { "keyword": "コストパフォーマンス", "count": 11 },
-      { "keyword": "水拭き", "count": 10 }
+      {
+        "keyword": "吸引力",
+        "count": 28
+      },
+      {
+        "keyword": "モップ伸長",
+        "count": 22
+      },
+      {
+        "keyword": "メンテナンス不要",
+        "count": 19
+      },
+      {
+        "keyword": "マッピング精度",
+        "count": 16
+      },
+      {
+        "keyword": "静音",
+        "count": 14
+      },
+      {
+        "keyword": "時短",
+        "count": 12
+      },
+      {
+        "keyword": "コストパフォーマンス",
+        "count": 11
+      },
+      {
+        "keyword": "水拭き",
+        "count": 10
+      }
     ],
     "negative": [
-      { "keyword": "収集音", "count": 6 },
-      { "keyword": "ステーションの大きさ", "count": 5 },
-      { "keyword": "消耗品費用", "count": 4 },
-      { "keyword": "説明書", "count": 2 }
+      {
+        "keyword": "収集音",
+        "count": 6
+      },
+      {
+        "keyword": "ステーションの大きさ",
+        "count": 5
+      },
+      {
+        "keyword": "消耗品費用",
+        "count": 4
+      },
+      {
+        "keyword": "説明書",
+        "count": 2
+      }
     ]
   },
   "topComplaints": [
@@ -232,34 +294,82 @@
     "petOwner": {
       "overall": 92,
       "reviewCount": 22,
-      "suction": { "score": 98, "comment": "10,000Paの吸引力はペットの抜け毛に最強。ラグに入り込んだ毛も強力に除去します。" },
-      "odorControl": { "score": 90, "comment": "汚水タンクの自動洗浄により、モップから発生する雑菌臭やペット臭を効果的に抑えます。" },
-      "maintenance": { "score": 88, "comment": "メインブラシへの毛の絡まりが極めて少なく、手動での清掃頻度が大幅に減ります。" },
-      "petSafety": { "score": 91, "comment": "障害物回避と水場・ケーブル周りの挙動が堅め。ペットの食器周りは禁止エで守りやすい、という層。" }
+      "suction": {
+        "score": 98,
+        "comment": "10,000Paの吸引力はペットの抜け毛に最強。ラグに入り込んだ毛も強力に除去します。"
+      },
+      "odorControl": {
+        "score": 90,
+        "comment": "汚水タンクの自動洗浄により、モップから発生する雑菌臭やペット臭を効果的に抑えます。"
+      },
+      "maintenance": {
+        "score": 88,
+        "comment": "メインブラシへの毛の絡まりが極めて少なく、手動での清掃頻度が大幅に減ります。"
+      },
+      "petSafety": {
+        "score": 91,
+        "comment": "障害物回避と水場・ケーブル周りの挙動が堅め。ペットの食器周りは禁止エで守りやすい、という層。"
+      }
     },
     "apartment": {
       "overall": 88,
       "reviewCount": 28,
-      "noise": { "score": 91, "comment": "清掃自体は非常に静か。マンションの下階への振動も、標準モードであれば全く問題ありません。" },
-      "sizeSuitability": { "score": 80, "comment": "本体は標準サイズですが、ステーションに高さがあるため、棚の下などに置く際は注意。" },
-      "obstacleHandling": { "score": 93, "comment": "狭い部屋の複雑な家具配置でも、ぶつかることなくスムーズにマッピング・清掃を行います。" },
-      "neighborConsideration": { "score": 86, "comment": "走行音は穏やか。自動集塵の一瞬の大きい音は時間帯設計（おやすみモード）で抑えやすい、という層。" }
+      "noise": {
+        "score": 91,
+        "comment": "清掃自体は非常に静か。マンションの下階への振動も、標準モードであれば全く問題ありません。"
+      },
+      "sizeSuitability": {
+        "score": 80,
+        "comment": "本体は標準サイズですが、ステーションに高さがあるため、棚の下などに置く際は注意。"
+      },
+      "obstacleHandling": {
+        "score": 93,
+        "comment": "狭い部屋の複雑な家具配置でも、ぶつかることなくスムーズにマッピング・清掃を行います。"
+      },
+      "neighborConsideration": {
+        "score": 86,
+        "comment": "走行音は穏やか。自動集塵の一瞬の大きい音は時間帯設計（おやすみモード）で抑えやすい、という層。"
+      }
     },
     "workingProfessional": {
       "overall": 96,
       "reviewCount": 35,
-      "scheduleCompatibility": { "score": 97, "comment": "朝の出勤後にタイマー起動。帰宅時にはモップまで乾燥した状態で完了しているため、家事が激減。" },
-      "appUsability": { "score": 94, "comment": "会社からスマホ一つで「キッチンだけ重点掃除」などの指示が出せ、通知も正確で安心感があります。" },
-      "automationFeatures": { "score": 97, "comment": "水の補給と汚水の廃棄以外、数週間にわたり人間の手を必要としない『究極の自動化』です。" },
-      "remoteControl": { "score": 95, "comment": "外出先のリモート起動と進捗同期が取りやすい。在宅中の部分清掃指定も文脈に合いやすい、という層。" }
+      "scheduleCompatibility": {
+        "score": 97,
+        "comment": "朝の出勤後にタイマー起動。帰宅時にはモップまで乾燥した状態で完了しているため、家事が激減。"
+      },
+      "appUsability": {
+        "score": 94,
+        "comment": "会社からスマホ一つで「キッチンだけ重点掃除」などの指示が出せ、通知も正確で安心感があります。"
+      },
+      "automationFeatures": {
+        "score": 97,
+        "comment": "水の補給と汚水の廃棄以外、数週間にわたり人間の手を必要としない『究極の自動化』です。"
+      },
+      "remoteControl": {
+        "score": 95,
+        "comment": "外出先のリモート起動と進捗同期が取りやすい。在宅中の部分清掃指定も文脈に合いやすい、という層。"
+      }
     },
     "familyHome": {
       "overall": 91,
       "reviewCount": 18,
-      "areaCoverage": { "score": 95, "comment": "広いリビングと廊下を一度に清掃。MopExtend機能で、ダイニングテーブルの脚周りも綺麗に拭きます。" },
-      "batteryDuration": { "score": 94, "comment": "一戸建ての広範囲な床面積も、1回のフル充電で十分に清掃を完遂できる余裕があります。" },
-      "multiFloorSupport": { "score": 84, "comment": "複数階のマップ保存に対応。ベースの移動は必要ですが、環境の再認識スピードが非常に速い。" },
-      "childSafety": { "score": 90, "comment": "家具脚やおもちゃ周りの回避が堅め。水拭きと吸引の分離運用を部屋で切り替えしやすい、という層。" }
+      "areaCoverage": {
+        "score": 95,
+        "comment": "広いリビングと廊下を一度に清掃。MopExtend機能で、ダイニングテーブルの脚周りも綺麗に拭きます。"
+      },
+      "batteryDuration": {
+        "score": 94,
+        "comment": "一戸建ての広範囲な床面積も、1回のフル充電で十分に清掃を完遂できる余裕があります。"
+      },
+      "multiFloorSupport": {
+        "score": 84,
+        "comment": "複数階のマップ保存に対応。ベースの移動は必要ですが、環境の再認識スピードが非常に速い。"
+      },
+      "childSafety": {
+        "score": 90,
+        "comment": "家具脚やおもちゃ周りの回避が堅め。水拭きと吸引の分離運用を部屋で切り替えしやすい、という層。"
+      }
     }
   },
   "resaleValue": {
@@ -282,5 +392,7 @@
     "amazon": "https://www.amazon.co.jp/s?k=Dreame+L10s+Ultra+Gen2",
     "rakuten": "https://search.rakuten.co.jp/search/mall/Dreame+L10s+Ultra+Gen2/",
     "yahoo": "https://shopping.yahoo.co.jp/search?p=Dreame+L10s+Ultra+Gen2"
-  }
+  },
+  "manufacturerOfficialAffiliateUrl": "https://t.afi-b.com/visit.php?a=115804H-v513036g&p=g978598R",
+  "manufacturerOfficialAffiliateTrackingPixelUrl": "https://t.afi-b.com/lead/115804H/g978598R/v513036g"
 }

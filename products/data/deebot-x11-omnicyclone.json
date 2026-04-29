@@ -457,5 +457,7 @@
     "rakuten": "https://search.rakuten.co.jp/search/mall/DEEBOT+X11+OmniCyclone/",
     "yahoo": "https://shopping.yahoo.co.jp/search?p=DEEBOT+X11+OmniCyclone"
   },
-  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-deebot-x11-omnicyclone.html"
+  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-deebot-x11-omnicyclone.html",
+  "manufacturerOfficialAffiliateUrl": "",
+  "manufacturerOfficialAffiliateTrackingPixelUrl": ""
 }

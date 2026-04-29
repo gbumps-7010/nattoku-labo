@@ -481,5 +481,7 @@
     "rakuten": "https://search.rakuten.co.jp/search/mall/Roborock+Qrevo+Curv/",
     "yahoo": "https://shopping.yahoo.co.jp/search?p=Roborock+Qrevo+Curv"
   },
-  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-roborock-qrevo-curv-c.html"
+  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-roborock-qrevo-curv-c.html",
+  "manufacturerOfficialAffiliateUrl": "",
+  "manufacturerOfficialAffiliateTrackingPixelUrl": ""
 }

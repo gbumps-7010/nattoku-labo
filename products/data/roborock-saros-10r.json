@@ -334,5 +334,7 @@
     "rakuten": "https://search.rakuten.co.jp/search/mall/Roborock+Saros+10R/",
     "yahoo": "https://shopping.yahoo.co.jp/search?p=Roborock+Saros+10R"
   },
-  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-roborock-saros-10r.html"
+  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-roborock-saros-10r.html",
+  "manufacturerOfficialAffiliateUrl": "",
+  "manufacturerOfficialAffiliateTrackingPixelUrl": ""
 }

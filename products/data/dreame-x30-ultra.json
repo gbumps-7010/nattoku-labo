@@ -445,5 +445,7 @@
     "rakuten": "https://search.rakuten.co.jp/search/mall/Dreame+X30+Ultra/",
     "yahoo": "https://shopping.yahoo.co.jp/search?p=Dreame+X30+Ultra"
   },
-  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-dreame-x30-ultra.html"
+  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-dreame-x30-ultra.html",
+  "manufacturerOfficialAffiliateUrl": "https://t.afi-b.com/visit.php?a=115804H-g513037O&p=g978598R",
+  "manufacturerOfficialAffiliateTrackingPixelUrl": "https://t.afi-b.com/lead/115804H/g978598R/g513037O"
 }

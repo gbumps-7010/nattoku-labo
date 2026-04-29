@@ -11,7 +11,11 @@
   "asin": "B0FLYLR5XV",
   "metaTitle": "Roomba Max 705 Combo 徹底分析 | 実機レビュー67件の真実",
   "metaDescription": "Roomba Max 705 Comboの最新レビュー67件を解析。iRobot初の自動モップ洗浄機能の評価や、設置スペースの注意点など、購入前に知るべき情報を網羅。",
-  "badges": ["信頼76.5", "AutoWash", "採用65件"],
+  "badges": [
+    "信頼76.5",
+    "AutoWash",
+    "採用65件"
+  ],
   "reliability": {
     "score": 76.5,
     "dataAdequacy": {
@@ -37,7 +41,7 @@
   },
   "timeSaving": {
     "dailyMinutes": 22,
-    "monthlyHours": 11.0,
+    "monthlyHours": 11,
     "annualHours": 134,
     "workDaysEquivalent": 16.8,
     "methodology": "毎日の床掃除15分に加え、週2回のモップ手洗いと乾燥、給排水にかかる作業時間をロボットが代行することで算出。"
@@ -160,8 +164,26 @@
     }
   },
   "radarChartData": {
-    "labels": ["床掃除", "カーペット", "ペット毛", "静音性", "段差", "メンテ", "アプリ", "電池"],
-    "values": [98, 92, 95, 78, 85, 96, 90, 92]
+    "labels": [
+      "床掃除",
+      "カーペット",
+      "ペット毛",
+      "静音性",
+      "段差",
+      "メンテ",
+      "アプリ",
+      "電池"
+    ],
+    "values": [
+      98,
+      92,
+      95,
+      78,
+      85,
+      96,
+      90,
+      92
+    ]
   },
   "dataQuality": {
     "totalReviews": 67,
@@ -173,18 +195,48 @@
   },
   "reviewKeywords": {
     "positive": [
-      { "keyword": "モップ洗いが不要で最高", "count": 28 },
-      { "keyword": "吸引力が非常に安定", "count": 22 },
-      { "keyword": "ラグが濡れない安心感", "count": 18 },
-      { "keyword": "マップ作成がとにかく速い", "count": 15 },
-      { "keyword": "デザインが高級感あり", "count": 12 }
+      {
+        "keyword": "モップ洗いが不要で最高",
+        "count": 28
+      },
+      {
+        "keyword": "吸引力が非常に安定",
+        "count": 22
+      },
+      {
+        "keyword": "ラグが濡れない安心感",
+        "count": 18
+      },
+      {
+        "keyword": "マップ作成がとにかく速い",
+        "count": 15
+      },
+      {
+        "keyword": "デザインが高級感あり",
+        "count": 12
+      }
     ],
     "negative": [
-      { "keyword": "ドックが大きく場所を取る", "count": 14 },
-      { "keyword": "タンクの給排水が意外と重い", "count": 8 },
-      { "keyword": "乾燥音が長時間続く", "count": 6 },
-      { "keyword": "価格設定が高い", "count": 5 },
-      { "keyword": "初期設定に少し手惑った", "count": 3 }
+      {
+        "keyword": "ドックが大きく場所を取る",
+        "count": 14
+      },
+      {
+        "keyword": "タンクの給排水が意外と重い",
+        "count": 8
+      },
+      {
+        "keyword": "乾燥音が長時間続く",
+        "count": 6
+      },
+      {
+        "keyword": "価格設定が高い",
+        "count": 5
+      },
+      {
+        "keyword": "初期設定に少し手惑った",
+        "count": 3
+      }
     ]
   },
   "topComplaints": [
@@ -305,5 +357,8 @@
     "amazon": "https://www.amazon.co.jp/s?k=Roomba+Max+705+Combo+AutoWash",
     "rakuten": "https://search.rakuten.co.jp/search/mall/Roomba+Max+705+Combo",
     "yahoo": "https://shopping.yahoo.co.jp/search?p=Roomba+Max+705+Combo+AutoWash"
-  }
+  },
+  "manufacturerOfficialAffiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AZOWQ+152XIQ+4KHO+HUD03&a8ejpredirect=https%3A%2F%2Fstore.irobot-jp.com%2Fitem%2FX185060.html%3F_gl%3D1*jxk4tz*_gcl_au*OTAzMDgyNTk5LjE3NzQ2NTY3ODg.*FPAU*OTAzMDgyNTk5LjE3NzQ2NTY3ODg.",
+  "manufacturerOfficialAffiliateTrackingPixelUrl": "",
+  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-roomba-max-705-combo-autowash.html"
 }

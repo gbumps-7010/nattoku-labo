@@ -318,5 +318,7 @@
     "amazon": "https://www.amazon.co.jp/s?k=DEEBOT+T80+OMNI",
     "rakuten": "https://search.rakuten.co.jp/search/mall/DEEBOT+T80+OMNI/"
   },
-  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-deebot-t80-omni.html"
+  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-deebot-t80-omni.html",
+  "manufacturerOfficialAffiliateUrl": "",
+  "manufacturerOfficialAffiliateTrackingPixelUrl": ""
 }

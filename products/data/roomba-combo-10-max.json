@@ -25,7 +25,11 @@
     "failureRate": {
       "percentage": 4,
       "reviewCount": 42,
-      "breakdown": { "hardware": 2, "software": 1, "environmental": 1 },
+      "breakdown": {
+        "hardware": 2,
+        "software": 1,
+        "environmental": 1
+      },
       "comment": "初期不良（水漏れ、通信エラー）が数件報告されていますが、メーカーによる迅速な新品交換対応で解決しています。"
     }
   },
@@ -151,8 +155,26 @@
     }
   },
   "radarChartData": {
-    "labels": ["床掃除", "カーペット", "ペット毛", "静音性", "段差", "メンテ", "アプリ", "電池"],
-    "values": [96, 92, 94, 72, 88, 98, 90, 90]
+    "labels": [
+      "床掃除",
+      "カーペット",
+      "ペット毛",
+      "静音性",
+      "段差",
+      "メンテ",
+      "アプリ",
+      "電池"
+    ],
+    "values": [
+      96,
+      92,
+      94,
+      72,
+      88,
+      98,
+      90,
+      90
+    ]
   },
   "dataQuality": {
     "totalReviews": 42,
@@ -162,24 +184,67 @@
     "trustScore": 89.45,
     "comment": "有効採用40件（除外2）。reliabilityScore 89.45と整合。母数中規模のためブレ幅に留意。個人名は方針で非記載。"
   },
-  "badges": ["信頼89.5", "AutoWash", "採用40件"],
+  "badges": [
+    "信頼89.5",
+    "AutoWash",
+    "採用40件"
+  ],
   "reviewKeywords": {
     "positive": [
-      { "keyword": "モップ自動洗浄", "count": 28 },
-      { "keyword": "手間いらず", "count": 22 },
-      { "keyword": "床がサラサラ", "count": 19 },
-      { "keyword": "時短効果", "count": 18 },
-      { "keyword": "最強のルンバ", "count": 15 },
-      { "keyword": "吸引力がすごい", "count": 12 },
-      { "keyword": "アプリが使いやすい", "count": 10 },
-      { "keyword": "ペットの毛", "count": 8 }
+      {
+        "keyword": "モップ自動洗浄",
+        "count": 28
+      },
+      {
+        "keyword": "手間いらず",
+        "count": 22
+      },
+      {
+        "keyword": "床がサラサラ",
+        "count": 19
+      },
+      {
+        "keyword": "時短効果",
+        "count": 18
+      },
+      {
+        "keyword": "最強のルンバ",
+        "count": 15
+      },
+      {
+        "keyword": "吸引力がすごい",
+        "count": 12
+      },
+      {
+        "keyword": "アプリが使いやすい",
+        "count": 10
+      },
+      {
+        "keyword": "ペットの毛",
+        "count": 8
+      }
     ],
     "negative": [
-      { "keyword": "乾燥音が長い", "count": 12 },
-      { "keyword": "ステーションが巨大", "count": 9 },
-      { "keyword": "価格が高い", "count": 7 },
-      { "keyword": "初期不良", "count": 3 },
-      { "keyword": "消耗品が高い", "count": 3 }
+      {
+        "keyword": "乾燥音が長い",
+        "count": 12
+      },
+      {
+        "keyword": "ステーションが巨大",
+        "count": 9
+      },
+      {
+        "keyword": "価格が高い",
+        "count": 7
+      },
+      {
+        "keyword": "初期不良",
+        "count": 3
+      },
+      {
+        "keyword": "消耗品が高い",
+        "count": 3
+      }
     ]
   },
   "topComplaints": [
@@ -233,34 +298,82 @@
     "petOwner": {
       "overall": 92,
       "reviewCount": 12,
-      "suction": { "score": 95, "comment": "ゴムブラシが毛を絡めず吸い込み、汚れたモップも即座に洗浄。ペット世帯には最強の選択肢です。" },
-      "odorControl": { "score": 88, "comment": "モップの熱風乾燥により雑菌の繁殖を抑制。ペット特有の臭いや生乾き臭を最小限に抑えています。" },
-      "maintenance": { "score": 93, "comment": "毛の掃除から解放される価値は絶大。ダストバッグの交換だけで済むため手間がありません。" },
-      "petSafety": { "score": 90, "comment": "障害物回避は堅め。水飲み・食器周りは禁止エと組み合わせやすい、という層。" }
+      "suction": {
+        "score": 95,
+        "comment": "ゴムブラシが毛を絡めず吸い込み、汚れたモップも即座に洗浄。ペット世帯には最強の選択肢です。"
+      },
+      "odorControl": {
+        "score": 88,
+        "comment": "モップの熱風乾燥により雑菌の繁殖を抑制。ペット特有の臭いや生乾き臭を最小限に抑えています。"
+      },
+      "maintenance": {
+        "score": 93,
+        "comment": "毛の掃除から解放される価値は絶大。ダストバッグの交換だけで済むため手間がありません。"
+      },
+      "petSafety": {
+        "score": 90,
+        "comment": "障害物回避は堅め。水飲み・食器周りは禁止エと組み合わせやすい、という層。"
+      }
     },
     "apartment": {
       "overall": 78,
       "reviewCount": 10,
-      "noise": { "score": 65, "comment": "マンションでは乾燥音が隣室へ響く懸念があるため、夜間の稼働は避けるなどの工夫が必要です。" },
-      "sizeSuitability": { "score": 70, "comment": "ステーションが大型のため、マンションの間取りによっては設置場所が限定されてしまいます。" },
-      "obstacleHandling": { "score": 98, "comment": "障害物回避は業界最高水準。物が多い部屋でも立ち往生せず、確実に清掃を完了させます。" },
-      "neighborConsideration": { "score": 72, "comment": "乾燥の連続音は時間帯設計（日中・在宅帯外）で抑えやすい。集合住宅は設置面とセットで検討、という層。" }
+      "noise": {
+        "score": 65,
+        "comment": "マンションでは乾燥音が隣室へ響く懸念があるため、夜間の稼働は避けるなどの工夫が必要です。"
+      },
+      "sizeSuitability": {
+        "score": 70,
+        "comment": "ステーションが大型のため、マンションの間取りによっては設置場所が限定されてしまいます。"
+      },
+      "obstacleHandling": {
+        "score": 98,
+        "comment": "障害物回避は業界最高水準。物が多い部屋でも立ち往生せず、確実に清掃を完了させます。"
+      },
+      "neighborConsideration": {
+        "score": 72,
+        "comment": "乾燥の連続音は時間帯設計（日中・在宅帯外）で抑えやすい。集合住宅は設置面とセットで検討、という層。"
+      }
     },
     "workingProfessional": {
       "overall": 96,
       "reviewCount": 15,
-      "scheduleCompatibility": { "score": 98, "comment": "完全自動化により、帰宅時には完璧な床が維持されている。忙しい共働き層の救世主です。" },
-      "appUsability": { "score": 92, "comment": "外出先からの操作も確実。清掃完了の通知や地図の確認もスムーズで、安心感があります。" },
-      "automationFeatures": { "score": 98, "comment": "給水からモップ洗浄まで「ほったらかし」が可能。家事のタスクから掃除を完全に除外できます。" },
-      "remoteControl": { "score": 93, "comment": "外出先起動と履歴の見やすさが仕事帰り運用に合いやすい、という層。" }
+      "scheduleCompatibility": {
+        "score": 98,
+        "comment": "完全自動化により、帰宅時には完璧な床が維持されている。忙しい共働き層の救世主です。"
+      },
+      "appUsability": {
+        "score": 92,
+        "comment": "外出先からの操作も確実。清掃完了の通知や地図の確認もスムーズで、安心感があります。"
+      },
+      "automationFeatures": {
+        "score": 98,
+        "comment": "給水からモップ洗浄まで「ほったらかし」が可能。家事のタスクから掃除を完全に除外できます。"
+      },
+      "remoteControl": {
+        "score": 93,
+        "comment": "外出先起動と履歴の見やすさが仕事帰り運用に合いやすい、という層。"
+      }
     },
     "familyHome": {
       "overall": 90,
       "reviewCount": 5,
-      "areaCoverage": { "score": 95, "comment": "広い一軒家でもスタミナ切れせず、精緻なマッピングで効率的に全域を清掃します。" },
-      "batteryDuration": { "score": 90, "comment": "大容量バッテリーにより広範囲をカバー。電池が切れても自動充電・再開するため面積を問いません。" },
-      "multiFloorSupport": { "score": 85, "comment": "複数階のマップ管理に対応。本体移動だけで別の階の清掃が可能ですが、ベース移動は不要です。" },
-      "childSafety": { "score": 90, "comment": "おもちゃ・小物の回避が堅め。子ども部屋は禁止エでプレー域を保護しやすい、という層。" }
+      "areaCoverage": {
+        "score": 95,
+        "comment": "広い一軒家でもスタミナ切れせず、精緻なマッピングで効率的に全域を清掃します。"
+      },
+      "batteryDuration": {
+        "score": 90,
+        "comment": "大容量バッテリーにより広範囲をカバー。電池が切れても自動充電・再開するため面積を問いません。"
+      },
+      "multiFloorSupport": {
+        "score": 85,
+        "comment": "複数階のマップ管理に対応。本体移動だけで別の階の清掃が可能ですが、ベース移動は不要です。"
+      },
+      "childSafety": {
+        "score": 90,
+        "comment": "おもちゃ・小物の回避が堅め。子ども部屋は禁止エでプレー域を保護しやすい、という層。"
+      }
     }
   },
   "resaleValue": {
@@ -283,5 +396,7 @@
     "amazon": "https://www.amazon.co.jp/s?k=Roomba+Combo+10+Max",
     "rakuten": "https://search.rakuten.co.jp/search/mall/Roomba+Combo+10+Max/",
     "yahoo": "https://shopping.yahoo.co.jp/search?p=Roomba+Combo+10+Max"
-  }
+  },
+  "manufacturerOfficialAffiliateUrl": "",
+  "manufacturerOfficialAffiliateTrackingPixelUrl": ""
 }
