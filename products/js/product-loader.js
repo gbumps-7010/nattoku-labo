@@ -312,6 +312,7 @@ function injectMoshimoEasyLinkViaSrcdocIframe(container, html, opts) {
     }
 
     const safe = normalizeMoshimoEasyLinkHtml(html);
+    ensureMoshimoParentOpenBridge();
     const iframe = document.createElement('iframe');
     iframe.className = 'nattoku-moshimo-easylink-iframe';
     iframe.title = '価格・購入先（もしもアフィリエイト）';
@@ -322,7 +323,18 @@ function injectMoshimoEasyLinkViaSrcdocIframe(container, html, opts) {
         '<base target="_blank">' +
         '<style>html,body{margin:0;padding:0;background:#fff;color:#0f172a;overflow-x:hidden}body{display:flex;flex-direction:column;align-items:center;box-sizing:border-box;min-width:100%}[id^="msmaflink-"]{max-width:100%;margin-left:auto;margin-right:auto}a{cursor:pointer}</style></head><body>' +
         safe +
-        '<script>(function(){function patchLinks(){var as=document.querySelectorAll("a[href]");for(var i=0;i<as.length;i++){as[i].setAttribute("target","_blank");as[i].setAttribute("rel","noopener noreferrer sponsored nofollow");}}document.addEventListener("click",function(e){var a=e.target&&e.target.closest?e.target.closest("a[href]"):null;if(!a)return;a.setAttribute("target","_blank");a.setAttribute("rel","noopener noreferrer sponsored nofollow");});patchLinks();setTimeout(patchLinks,1200);})();<\/script>' +
+        '<script>(function(){' +
+        'function openViaParent(url){try{parent.postMessage({type:"nattoku-open-external",url:String(url||"")},"*");}catch(_){}}' +
+        'function patchLinks(){var as=document.querySelectorAll("a[href]");for(var i=0;i<as.length;i++){as[i].setAttribute("target","_blank");as[i].setAttribute("rel","noopener noreferrer sponsored nofollow");}}' +
+        'document.addEventListener("click",function(e){' +
+        'var a=e.target&&e.target.closest?e.target.closest("a[href]"):null;' +
+        'if(a&&a.href){e.preventDefault();e.stopPropagation();openViaParent(a.href);return;}' +
+        'var n=e.target&&e.target.closest?e.target.closest("[onclick]"):null;' +
+        'if(n){var oc=n.getAttribute("onclick")||"";var m=oc.match(/https?:\\\\/\\\\/[^"\\\'\\s)]+/i);if(m){e.preventDefault();e.stopPropagation();openViaParent(m[0]);return;}}' +
+        '},true);' +
+        'var _open=window.open;window.open=function(url){openViaParent(url);return null;};' +
+        'patchLinks();setTimeout(patchLinks,1200);setTimeout(patchLinks,3000);' +
+        '})();<\/script>' +
         '</body></html>';
     const blob = new Blob([docHtml], { type: 'text/html' });
     const blobUrl = URL.createObjectURL(blob);
@@ -387,6 +399,23 @@ function ensureMoshimoCardlinkScript() {
         d.id = a;
         document.body.appendChild(d);
     }
+}
+
+function ensureMoshimoParentOpenBridge() {
+    if (window.__nattokuMoshimoOpenBridgeInit) return;
+    window.__nattokuMoshimoOpenBridgeInit = true;
+    window.addEventListener('message', (event) => {
+        const data = event && event.data;
+        if (!data || data.type !== 'nattoku-open-external') return;
+        const url = typeof data.url === 'string' ? data.url.trim() : '';
+        if (!/^https?:\/\//i.test(url)) return;
+        try {
+            const w = window.open(url, '_blank', 'noopener,noreferrer');
+            if (!w) {
+                window.location.href = url;
+            }
+        } catch (_) {}
+    });
 }
 
 function hasMoshimoCta(data) {
