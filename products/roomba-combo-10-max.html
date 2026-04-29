@@ -924,12 +924,12 @@
                 レビューキーワード
             </h2>
             <div class="card">
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
                     <div>
                         <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem; color: var(--success-color); display: flex; align-items: center; gap: 0.5rem;">
                             <i class="fas fa-thumbs-up"></i> 高評価キーワード
                         </h3>
-                        <div style="height: 400px; position: relative;">
+                        <div style="height: min(400px, 70vw); min-height: 260px; position: relative;">
                             <canvas id="positiveKeywordsChart"></canvas>
                         </div>
                     </div>
@@ -937,7 +937,7 @@
                         <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem; color: var(--danger-color); display: flex; align-items: center; gap: 0.5rem;">
                             <i class="fas fa-thumbs-down"></i> 低評価キーワード
                         </h3>
-                        <div style="height: 400px; position: relative;">
+                        <div style="height: min(400px, 70vw); min-height: 260px; position: relative;">
                             <canvas id="negativeKeywordsChart"></canvas>
                         </div>
                     </div>

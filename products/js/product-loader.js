@@ -262,16 +262,17 @@ function appendManufacturerOfficialAffiliateCta(container, dataOrOpts) {
     const u = dataOrOpts.manufacturerOfficialAffiliateUrl;
     const url = typeof u === 'string' && u.trim() ? u.trim() : '';
     if (!url) return;
+    const lab = dataOrOpts.manufacturerOfficialAffiliateLabel;
+    const text =
+        typeof lab === 'string' && lab.trim()
+            ? lab.trim()
+            : 'まずはメーカー公式HPで製品情報を確認';
     const a = document.createElement('a');
     a.className = 'nattoku-manufacturer-official-cta';
     a.href = url;
     a.target = '_blank';
     a.rel = 'noopener sponsored nofollow';
-    const lab = dataOrOpts.manufacturerOfficialAffiliateLabel;
-    a.textContent =
-        typeof lab === 'string' && lab.trim()
-            ? lab.trim()
-            : 'まずはメーカー公式HPで製品情報を確認';
+    a.textContent = text;
     container.appendChild(a);
     const pixel = dataOrOpts.manufacturerOfficialAffiliateTrackingPixelUrl;
     if (typeof pixel === 'string' && pixel.trim()) {
@@ -290,7 +291,8 @@ function appendManufacturerOfficialAffiliateCta(container, dataOrOpts) {
 /**
  * かんたんリンク配布HTMLは document.currentScript に依存する。
  * メイン文書へ動的 append した script では currentScript が null になり、プレースホルダ「リンク」のままになることがあるため、
- * iframe の srcdoc 内でパース・実行させる。
+ * iframe の Blob URL 文書内でパース・実行させる。
+ * （srcdoc はブラウザ差でクリック遷移が不安定なケースがあるため）
  */
 /**
  * @param {{ skipLabel?: boolean, labelText?: string, manufacturerOfficialAffiliateUrl?: string, manufacturerOfficialAffiliateLabel?: string, manufacturerOfficialAffiliateTrackingPixelUrl?: string }} [opts]
@@ -314,13 +316,17 @@ function injectMoshimoEasyLinkViaSrcdocIframe(container, html, opts) {
     iframe.className = 'nattoku-moshimo-easylink-iframe';
     iframe.title = '価格・購入先（もしもアフィリエイト）';
     /* sandbox 無し: 配布HTMLは自サイト data 由来。制限付き sandbox だと target=_blank や EC 側の挙動によりクリックが無視されることがある */
-    iframe.srcdoc =
+    const docHtml =
         '<!DOCTYPE html><html><head><meta charset="utf-8">' +
         '<meta name="viewport" content="width=device-width,initial-scale=1">' +
-        '<base target="_blank" rel="noopener noreferrer">' +
-        '<style>html,body{margin:0;padding:0;background:#fff;color:#0f172a;overflow-x:hidden}body{display:flex;flex-direction:column;align-items:center;box-sizing:border-box;min-width:100%}[id^="msmaflink-"]{max-width:100%;margin-left:auto;margin-right:auto}</style></head><body>' +
+        '<base target="_blank">' +
+        '<style>html,body{margin:0;padding:0;background:#fff;color:#0f172a;overflow-x:hidden}body{display:flex;flex-direction:column;align-items:center;box-sizing:border-box;min-width:100%}[id^="msmaflink-"]{max-width:100%;margin-left:auto;margin-right:auto}a{cursor:pointer}</style></head><body>' +
         safe +
+        '<script>(function(){function patchLinks(){var as=document.querySelectorAll("a[href]");for(var i=0;i<as.length;i++){as[i].setAttribute("target","_blank");as[i].setAttribute("rel","noopener noreferrer sponsored nofollow");}}document.addEventListener("click",function(e){var a=e.target&&e.target.closest?e.target.closest("a[href]"):null;if(!a)return;a.setAttribute("target","_blank");a.setAttribute("rel","noopener noreferrer sponsored nofollow");});patchLinks();setTimeout(patchLinks,1200);})();<\/script>' +
         '</body></html>';
+    const blob = new Blob([docHtml], { type: 'text/html' });
+    const blobUrl = URL.createObjectURL(blob);
+    iframe.src = blobUrl;
     iframe.style.width = '100%';
     iframe.style.border = '0';
     iframe.style.display = 'block';
@@ -353,6 +359,11 @@ function injectMoshimoEasyLinkViaSrcdocIframe(container, html, opts) {
         resize();
         const id = window.setInterval(resize, 400);
         window.setTimeout(() => window.clearInterval(id), 10000);
+        window.setTimeout(() => {
+            try {
+                URL.revokeObjectURL(blobUrl);
+            } catch (_) {}
+        }, 30000);
     });
     container.appendChild(iframe);
 }
@@ -522,7 +533,8 @@ async function applyPurchaseCtaMoshimoLayout(data) {
             injectMoshimoEasyLinkViaSrcdocIframe(repeatSlot, easyLinkHtml, {
                 skipLabel: true,
                 manufacturerOfficialAffiliateUrl: data.manufacturerOfficialAffiliateUrl,
-                manufacturerOfficialAffiliateLabel: data.manufacturerOfficialAffiliateLabel,
+                manufacturerOfficialAffiliateLabel:
+                    data.manufacturerOfficialAffiliatePriceLabel || 'まずはメーカー公式HPで価格を確認',
                 manufacturerOfficialAffiliateTrackingPixelUrl: data.manufacturerOfficialAffiliateTrackingPixelUrl,
             });
             afterSec.hidden = false;
