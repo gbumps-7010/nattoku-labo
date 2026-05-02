@@ -1,0 +1,4 @@
+# Cloudflare Pages: canonical URL へ集約（GSC の重複・リダイレクト系を整理）
+# https://developers.cloudflare.com/pages/configuration/redirects/
+/index.html / 301
+/contact-simple /contact-simple.html 301

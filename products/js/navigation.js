@@ -61,7 +61,7 @@ const ALL_PRODUCTS = [
 // メーカー一覧
 const MANUFACTURERS = ['すべて', 'Anker', 'Dreame', 'ECOVACS', 'Roborock', 'SwitchBot', 'iRobot'];
 
-// 価格帯一覧（index.html / products-data.js の priceRanges と一致させる）
+// 価格帯一覧（トップページ / products-data.js の priceRanges と一致させる）
 const PRICE_RANGES = [
     { label: 'すべて', min: 0, max: Infinity },
     { label: '5万円未満', min: 0, max: 50000 },
@@ -80,7 +80,7 @@ function createNavigationBar() {
     nav.innerHTML = `
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="../index.html">
+                <a href="../">
                     <i class="fas fa-chart-line"></i>
                     <span>ナットクLabo</span>
                 </a>
@@ -196,7 +196,7 @@ function setupNavigationEvents() {
     document.querySelectorAll('.manufacturer-filter').forEach(item => {
         item.addEventListener('click', () => {
             const manufacturer = item.dataset.manufacturer;
-            window.location.href = `../index.html?manufacturer=${encodeURIComponent(manufacturer)}`;
+            window.location.href = `../?manufacturer=${encodeURIComponent(manufacturer)}`;
         });
     });
     
@@ -358,7 +358,7 @@ function createRelatedProductsSection() {
             </div>
             
             <div class="view-all-link">
-                <a href="../index.html" class="btn-view-all">
+                <a href="../" class="btn-view-all">
                     <i class="fas fa-th"></i>
                     全製品を見る（${ALL_PRODUCTS.length}製品）
                 </a>
