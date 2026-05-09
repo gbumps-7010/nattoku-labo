@@ -397,12 +397,55 @@ function createProductCard(product) {
 }
 
 /**
+ * フッターを作成
+ */
+function createFooter() {
+    if (document.querySelector('footer.site-footer')) return;
+
+    const footer = document.createElement('footer');
+    footer.className = 'site-footer';
+    footer.style.cssText = `
+        background: #0f172a;
+        color: #e2e8f0;
+        margin-top: 3rem;
+        padding: 2.5rem 1.5rem;
+        border-top: 1px solid rgba(148, 163, 184, 0.2);
+    `;
+
+    footer.innerHTML = `
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2 style="font-size: 1.1rem; margin: 0 0 1rem 0; color: #f8fafc;">運営者情報</h2>
+            <div style="display: grid; gap: 0.45rem; line-height: 1.8; font-size: 0.95rem;">
+                <p style="margin: 0;"><strong>媒体名:</strong> ナットクLabo</p>
+                <p style="margin: 0;"><strong>運営組織:</strong> GBumps</p>
+                <p style="margin: 0;"><strong>運営管理責任者:</strong> 代表 岩田 直人</p>
+                <p style="margin: 0;"><strong>所在地:</strong> 東京都北区</p>
+                <p style="margin: 0;"><strong>お問い合わせ:</strong> <a href="https://nattoku-labo.com/privacy.html" style="color: #93c5fd; text-decoration: underline;">https://nattoku-labo.com/privacy.html</a></p>
+                <p style="margin: 0;"><strong>事業内容:</strong> 家電・ガジェットの比較分析メディア運営、Webライティング、コンテンツ制作</p>
+            </div>
+            <h3 style="font-size: 1.0rem; margin: 1.5rem 0 0.75rem 0; color: #f8fafc;">責任の所在に関する明記</h3>
+            <p style="margin: 0; line-height: 1.9; font-size: 0.95rem;">
+                本ウェブサイト「ナットクLabo」に掲載されているすべてのコンテンツ（記事執筆、画像制作、データ分析、編集等）は、
+                GBumps 代表 岩田直人が全責任を持って制作・管理しております。外部委託を行わず、すべてのプロセスを代表自らが監修・執行することで、
+                情報の正確性と中立性の維持に努めています。
+            </p>
+            <p style="margin: 1.25rem 0 0 0; font-size: 0.85rem; color: #94a3b8;">
+                © ${new Date().getFullYear()} ナットクLabo All Rights Reserved.
+            </p>
+        </div>
+    `;
+
+    document.body.appendChild(footer);
+}
+
+/**
  * 初期化
  */
 function initNavigation() {
     console.log('🚀 ナビゲーションシステム V3.14 初期化');
     createNavigationBar();
     createRelatedProductsSection();
+    createFooter();
     console.log('✅ ナビゲーションバー＆関連製品セクション 生成完了');
 }
 
