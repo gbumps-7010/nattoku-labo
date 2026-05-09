@@ -667,10 +667,95 @@ async function loadProductData(productId) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         const data = await response.json();
-        return data;
+        return normalizeProductDataCopy(data);
     } catch (error) {
         console.error('❌ 製品データの読み込みに失敗:', error);
         return null;
+    }
+}
+
+function normalizeJapaneseCopy(text) {
+    if (typeof text !== 'string' || !text) return text;
+
+    const sentenceReplacements = [
+        [
+            '採用485件規模は主要傾向の把握に十分。除外17件を差し引いても層差の大枠に耐える厚みです。',
+            '採用した485件のレビューがあるため、全体の傾向は十分につかめます。17件を除外しても、ユーザー層ごとの違いを判断できるだけのデータ量があります。'
+        ],
+        [
+            '直近の投稿が一定割合を占め、現行ファーム文脈を拾いやすい分布です。',
+            '新しいレビューが一定数含まれているため、最新のファームウェア環境での使用感を反映しやすいデータ構成です。'
+        ],
+        [
+            '以下の時間は、手動清掃（掃除機＋フローリングワイパー）と比較した場合の創出時間です。毎日の掃除から解放され、趣味や家族との時間など、より大切なことに使える時間が生まれます。',
+            '以下の時間は、手動清掃（掃除機＋フローリングワイパー）と比較して生まれる時間です。毎日の掃除負担が減ることで、趣味や家族との時間など、より大切なことに使える余裕が生まれます。'
+        ],
+        [
+            '手動清掃の場合、1日あたり約19分（掃除機10分＋フローリングワイパー9分）を要します。本製品はスケジュール設定により完全自動で動作するため、この時間がそのまま自由時間として創出されます。年間365日で計算すると約116時間（6,935分）となります。',
+            '手動清掃では、1日あたり約19分（掃除機10分＋フローリングワイパー9分）が必要です。本製品はスケジュール設定で自動清掃できるため、この時間を自由時間として活用できます。年間365日で計算すると約116時間（6,935分）です。'
+        ],
+        [
+            '毎日、このぶんの時間が自由に',
+            '毎日、この分の時間が自由になります'
+        ],
+        [
+            'プロ級の清掃と清潔を、毎日この価格で維持できます',
+            '高い清掃品質を、毎日この価格で維持できます'
+        ]
+    ];
+
+    let normalized = text;
+    sentenceReplacements.forEach(([from, to]) => {
+        normalized = normalized.split(from).join(to);
+    });
+
+    normalized = normalized
+        .replace(/リピ意向/g, 'リピート意向')
+        .replace(/物足なさ/g, '物足りなさ')
+        .replace(/物足な/g, '物足りな')
+        .replace(/清掴/g, '清掃')
+        .replace(/禁止エ(?!リア)/g, '進入禁止エリア')
+        .replace(/自動空け/g, '自動収集')
+        .replace(/帯外スケジュール/g, '就寝時間外のスケジュール')
+        .replace(/([^\n。]+?)、という帯です。/g, '$1という傾向です。')
+        .replace(/([^\n。]+?)、という帯。/g, '$1という傾向です。')
+        .replace(/([^\n。]+?)、という層です。/g, '$1という声が多く見られます。')
+        .replace(/([^\n。]+?)、という層。/g, '$1という声が多く見られます。')
+        .replace(/記載あり。/g, '記載があります。');
+
+    return normalized;
+}
+
+function normalizeProductDataCopy(value) {
+    if (typeof value === 'string') {
+        return normalizeJapaneseCopy(value);
+    }
+    if (Array.isArray(value)) {
+        return value.map(item => normalizeProductDataCopy(item));
+    }
+    if (value && typeof value === 'object') {
+        const result = {};
+        Object.keys(value).forEach(key => {
+            result[key] = normalizeProductDataCopy(value[key]);
+        });
+        return result;
+    }
+    return value;
+}
+
+function normalizeStaticCopyInDom() {
+    if (!document.body) return;
+    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+    let node = walker.nextNode();
+    while (node) {
+        const parentTag = node.parentElement ? node.parentElement.tagName : '';
+        if (parentTag !== 'SCRIPT' && parentTag !== 'STYLE' && parentTag !== 'NOSCRIPT') {
+            const updated = normalizeJapaneseCopy(node.nodeValue);
+            if (updated !== node.nodeValue) {
+                node.nodeValue = updated;
+            }
+        }
+        node = walker.nextNode();
     }
 }
 
@@ -1605,6 +1690,7 @@ async function initializePage() {
         updateOperationalCost(data);
         updateDataQuality(data);
         await applyPurchaseCtaMoshimoLayout(data);
+        normalizeStaticCopyInDom();
 
         window.productData = data;
         
