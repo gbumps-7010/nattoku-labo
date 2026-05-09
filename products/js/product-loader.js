@@ -676,6 +676,8 @@ async function loadProductData(productId) {
 
 function normalizeJapaneseCopy(text) {
     if (typeof text !== 'string' || !text) return text;
+    // URLそのものは置換しない（リンク破損防止）
+    if (/^https?:\/\//i.test(text.trim())) return text;
 
     const sentenceReplacements = [
         [
@@ -710,6 +712,22 @@ function normalizeJapaneseCopy(text) {
     });
 
     normalized = normalized
+        .replace(/Amazon・楽天・Yahoo/gi, '主要ECサイト')
+        .replace(/Amazon\/楽天\/Yahoo/gi, '主要ECサイト')
+        .replace(/Amazon・楽天/gi, '主要ECサイト')
+        .replace(/楽天・Amazon/gi, '主要ECサイト')
+        .replace(/楽天・Yahoo/gi, '主要ECサイト')
+        .replace(/Yahoo・楽天/gi, '主要ECサイト')
+        .replace(/Amazon・Yahoo/gi, '主要ECサイト')
+        .replace(/Yahoo・Amazon/gi, '主要ECサイト')
+        .replace(/Amazon/gi, '大手ECサイト')
+        .replace(/Rakuten/gi, '大手ECサイト')
+        .replace(/Yahoo/gi, '大手ECサイト')
+        .replace(/楽天市場/g, '大手ECサイト')
+        .replace(/楽天/g, '大手ECサイト')
+        .replace(/ヤフーショッピング/g, '大手ECサイト')
+        .replace(/ヤフー/g, '大手ECサイト')
+        .replace(/アマゾン/g, '大手ECサイト')
         .replace(/リピ意向/g, 'リピート意向')
         .replace(/物足なさ/g, '物足りなさ')
         .replace(/物足な/g, '物足りな')
