@@ -912,6 +912,30 @@
     }
   },
   {
+    "id": "q10v-plus",
+    "name": "Q10V+",
+    "manufacturer": "Roborock",
+    "price": 79999,
+    "rating": 3.74,
+    "reviewCount": 30,
+    "totalReviewCount": 30,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/happynight/cabinet/g/8/e9z0wr6h0x-1.jpg",
+    "badges": [
+      "Roborock",
+      "満足・買ってよかった",
+      "吸引力が高い"
+    ],
+    "overallTrustScore": 58.0,
+    "specs": {
+      "suction": 90,
+      "mopping": 90,
+      "noise": 80,
+      "obstacle": 65,
+      "app": 70,
+      "maintenance": 70
+    }
+  },
+  {
     "id": "deebot-t90-omni",
     "name": "DEEBOT T90 OMNI",
     "manufacturer": "ECOVACS",

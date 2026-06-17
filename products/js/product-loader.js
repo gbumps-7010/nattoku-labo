@@ -85,9 +85,15 @@ function updateDynamicElements(data) {
         
         if (value !== undefined && value !== null) {
             if (element.tagName === 'IMG' && path === 'imageUrl') {
-                element.src = value;
-                element.alt = data.productName || '製品画像';
-                console.log(`✅ 画像更新`);
+                if (value) {
+                    element.src = value;
+                    element.alt = data.productName || '製品画像';
+                    element.style.display = '';
+                    console.log(`✅ 画像更新`);
+                } else {
+                    element.style.display = 'none';
+                    console.log('ℹ️ 画像なし（アフィリエイト画像未設定）→ 非表示');
+                }
             } else if (path === 'stars') {
                 updateStarRating(element, data.overallRating);
                 console.log(`✅ 星評価更新: ${data.overallRating}`);
@@ -169,8 +175,13 @@ function updateBasicInfo(data) {
     
     const productImage = document.querySelector('.product-image-header');
     if (productImage) {
-        productImage.src = data.imageUrl;
-        productImage.alt = data.productName;
+        if (data.imageUrl) {
+            productImage.src = data.imageUrl;
+            productImage.alt = data.productName;
+            productImage.style.display = '';
+        } else {
+            productImage.style.display = 'none';
+        }
     }
     
     // 性能スコアの表示（上位3項目を自動選択）
