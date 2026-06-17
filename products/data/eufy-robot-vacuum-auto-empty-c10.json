@@ -1,0 +1,321 @@
+{
+  "productId": "eufy-robot-vacuum-auto-empty-c10",
+  "productName": "Eufy Robot Vacuum Auto-Empty C10",
+  "manufacturer": "Anker",
+  "modelNumber": "Auto-Empty C10",
+  "imageUrl": "https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t2292/t2292_nomal.jpg",
+  "overallRating": 4.01,
+  "totalReviews": 413,
+  "price": 29990,
+  "reliabilityScore": 88.0,
+  "asin": "",
+  "metaTitle": "Eufy Robot Vacuum Auto-Empty C10 詳細分析 | 自動ゴミ収集で家事負担を軽減",
+  "metaDescription": "Eufy Robot Vacuum Auto-Empty C10の413件のレビューを解析。強力な吸引力、静音性、自動ゴミ収集機能の真実を公開。",
+  "keywords": [
+    "ロボット掃除機",
+    "自動ゴミ収集",
+    "Eufy C10",
+    "Anker",
+    "静音",
+    "ペットの毛"
+  ],
+  "categoryC": {
+    "userSatisfaction": {
+      "score": 92,
+      "reviewCount": 413,
+      "comment": "多くのユーザーがその清掃能力と手軽さに満足しており、日常の負担軽減に大きく貢献しています。"
+    },
+    "repurchaseIntention": {
+      "percentage": 85,
+      "reviewCount": 351,
+      "comment": "多くのユーザーが本製品の利便性とコストパフォーマンスを評価し、再購入や他者への推奨を検討しています。"
+    },
+    "failureRate": {
+      "percentage": 5,
+      "reviewCount": 413,
+      "breakdown": {
+        "hardware": 2,
+        "software": 1,
+        "environmental": 2
+      },
+      "comment": "一部で故障やエラーの報告がありますが、全体的な故障率は低く、環境要因による停止が主な原因です。"
+    }
+  },
+  "reliability": {
+    "score": 88.0,
+    "dataAdequacy": {
+      "score": 80,
+      "weight": 60,
+      "description": "レビュー総数が413件であり、十分なデータ量に基づき信頼性の高い分析が可能です。"
+    },
+    "consistency": {
+      "percentage": 100,
+      "weight": 30,
+      "description": "複数サイトでの評価に大きな乖離がなく、製品の評価が一貫しているため高い信頼性を示しています。",
+      "score": 100
+    },
+    "freshness": {
+      "score": 100,
+      "weight": 10,
+      "description": "直近30日以内のレビューが8.7%を占め、最新のユーザー体験が反映されており、鮮度が高いです。"
+    }
+  },
+  "updateInfo": {
+    "lastUpdated": "2026-06-15",
+    "firmwareVersion": "",
+    "note": "最新のレビュー時期は2026年6月上旬で、全体的に高い満足度を示しています。一部でアプリの改善や障害物回避性能の向上が期待されています。"
+  },
+  "timeSaving": {
+    "dailyMinutes": 19,
+    "monthlyHours": 9.5,
+    "annualHours": 116,
+    "workDaysEquivalent": 14.5,
+    "methodology": "ロボット掃除機による日々の手動掃除時間削減効果を平均19分と算出し、年間で換算しました。"
+  },
+  "operationalCost": {
+    "daily": 18,
+    "dailyNote": "消耗品の実質的な日割りコスト",
+    "monthly": 550,
+    "annual": 6600,
+    "consumables": [
+      {
+        "item": "ダストバッグ",
+        "replacementFrequency": "2ヶ月ごと",
+        "unitCost": 600,
+        "annualCost": 3600
+      },
+      {
+        "item": "サイドブラシ・フィルター",
+        "replacementFrequency": "年1回",
+        "unitCost": 3000,
+        "annualCost": 3000
+      }
+    ]
+  },
+  "performanceAnalysis": {
+    "floorCleaning": {
+      "score": 95,
+      "reviewCount": 110,
+      "positiveReviewCount": 105,
+      "comment": "フローリングや畳、無垢板など様々な床材で高い清掃能力を発揮し、日常の床掃除を大幅に軽減します。"
+    },
+    "carpetCleaning": {
+      "score": 70,
+      "reviewCount": 43,
+      "positiveReviewCount": 25,
+      "comment": "厚手のカーペットやラグの乗り越えは可能ですが、一部でめくり上げや吸引力不足の指摘が見られます。"
+    },
+    "petHairRemoval": {
+      "score": 88,
+      "reviewCount": 48,
+      "positiveReviewCount": 40,
+      "comment": "ペットの毛や猫砂の吸引力は高く評価されており、特にフローリングで効果を実感できます。"
+    },
+    "quietness": {
+      "score": 78,
+      "reviewCount": 71,
+      "positiveReviewCount": 45,
+      "comment": "掃除中の動作音は比較的静かですが、自動ゴミ収集時の音は大きく、夜間の使用には注意が必要です。"
+    },
+    "stepClimbing": {
+      "score": 75,
+      "reviewCount": 69,
+      "positiveReviewCount": 40,
+      "comment": "1～2cm程度の段差は乗り越え可能ですが、高い段差や特定の家具の脚で引っかかりのリスクがあります。"
+    },
+    "maintenance": {
+      "score": 85,
+      "reviewCount": 64,
+      "positiveReviewCount": 50,
+      "comment": "自動ゴミ収集機能によりゴミ捨ての手間が大幅に削減され、メンテナンスが楽であると評価されています。"
+    },
+    "appStability": {
+      "score": 80,
+      "reviewCount": 158,
+      "positiveReviewCount": 100,
+      "comment": "アプリは多機能でマッピングやスケジュール設定が可能ですが、初期設定やWi-Fi接続で戸惑う声もあります。"
+    },
+    "batteryLife": {
+      "score": 70,
+      "reviewCount": 28,
+      "positiveReviewCount": 15,
+      "comment": "掃除時間は最大120分と十分ですが、待機電力の消費や途中で停止する不具合の報告も一部見られます。"
+    }
+  },
+  "radarChartData": {
+    "labels": [
+      "床掃除",
+      "カーペット",
+      "ペット毛",
+      "静音性",
+      "段差",
+      "メンテ",
+      "アプリ",
+      "電池"
+    ],
+    "values": [
+      95,
+      70,
+      88,
+      78,
+      75,
+      85,
+      80,
+      70
+    ]
+  },
+  "dataQuality": {
+    "totalReviews": 413,
+    "sampledReviews": 413,
+    "adoptedReviews": 392,
+    "excludedReviews": 21,
+    "trustScore": 88.0,
+    "comment": "提供された413件のレビューを詳細に分析し、製品の性能、利便性、課題点を多角的に評価しました。"
+  },
+  "reviewKeywords": {
+    "positive": [
+      {
+        "keyword": "満足・買ってよかった",
+        "count": 120
+      },
+      {
+        "keyword": "静かで快適",
+        "count": 56
+      },
+      {
+        "keyword": "使いやすい・便利",
+        "count": 39
+      },
+      {
+        "keyword": "吸引力が高い",
+        "count": 27
+      },
+      {
+        "keyword": "綺麗になる",
+        "count": 22
+      }
+    ],
+    "negative": [
+      {
+        "keyword": "故障・不具合",
+        "count": 33
+      },
+      {
+        "keyword": "段差・家具で引っかかる",
+        "count": 26
+      },
+      {
+        "keyword": "止まってしまう",
+        "count": 15
+      },
+      {
+        "keyword": "動作音が気になる",
+        "count": 12
+      },
+      {
+        "keyword": "期待を下回る点",
+        "count": 8
+      }
+    ]
+  },
+  "successStrategies": [
+    {
+      "rank": 1,
+      "issue": "段差や障害物での停止・衝突",
+      "occurrenceRate": 12,
+      "occurrenceCount": 48,
+      "environmentalFactor": "床に散らばった小物、コード類、薄いラグ、特定の高さの段差や家具の脚。",
+      "technicalDescription": "レーザーナビゲーションは搭載していますが、小型の障害物や薄い布類、特定の段差は認識しづらく、乗り上げや巻き込みが発生することがあります。",
+      "avoidanceStrategies": [
+        {
+          "method": "進入禁止エリア・バーチャルウォールの設定",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "アプリからマップ上に進入禁止エリアや仮想の壁を設定することで、特定の場所への侵入を物理的に防ぎ、トラブルを回避できます。"
+        },
+        {
+          "method": "事前の床の整理整頓",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "コード類やおもちゃなどを事前に床から撤去することで、巻き込みや引っかかりによる停止を効果的に防ぎます。"
+        }
+      ],
+      "preventionTips": "ロボット掃除機がスムーズに動けるよう、毎日稼働前に床の障害物をチェックする習慣をつけることが重要です。特にコード類は壁に固定するなど工夫しましょう。"
+    }
+  ],
+  "topComplaints": [
+    {
+      "title": "頻発する故障やエラー",
+      "percentage": 8,
+      "reviewCount": 33,
+      "description": "購入後すぐに電源が入らない、ダストボックスが機能しない、エラーが頻発するといった報告が見られます。",
+      "solution": "サポートセンターへの連絡が必須です。Ankerは保証期間が長く、サポート対応も早いという声もあります。"
+    },
+    {
+      "title": "段差や障害物での停止・衝突",
+      "percentage": 12,
+      "reviewCount": 48,
+      "description": "段差から落下したり、家具に強く衝突したり、コードを巻き込んで停止するケースが報告されています。",
+      "solution": "アプリで進入禁止エリアを設定し、事前に床の障害物（コード、小物、薄いラグ）を片付けることで回避できます。"
+    },
+    {
+      "title": "自動ゴミ収集時の騒音",
+      "percentage": 3,
+      "reviewCount": 12,
+      "description": "掃除中の動作音は比較的静かですが、自動ゴミ収集ステーションがゴミを吸引する際の音が非常に大きいという指摘が多くあります。",
+      "solution": "不在時に稼働させる、またはアプリのおやすみモードでゴミ収集時間を調整することで、騒音の影響を最小限に抑えられます。"
+    }
+  ],
+  "attributeScores": {
+    "petOwner": {
+      "overall": 90,
+      "details": [
+        {
+          "field": "ペット毛吸引力",
+          "score": 88,
+          "reviewCount": 48,
+          "comment": "ペットの毛や猫砂の吸引力は高く評価されており、特にフローリングで効果を実感できます。"
+        }
+      ]
+    },
+    "apartment": {
+      "overall": 83,
+      "details": [
+        {
+          "field": "静音性",
+          "score": 78,
+          "reviewCount": 71,
+          "comment": "掃除中の動作音は比較的静かですが、自動ゴミ収集時の音は大きく、夜間の使用には注意が必要です。"
+        }
+      ]
+    },
+    "workingProfessional": {
+      "overall": 80,
+      "details": [
+        {
+          "field": "アプリ安定性",
+          "score": 80,
+          "reviewCount": 158,
+          "comment": "アプリは多機能でマッピングやスケジュール設定が可能ですが、初期設定やWi-Fi接続で戸惑う声もあります。"
+        }
+      ]
+    },
+    "familyHome": {
+      "overall": 80,
+      "details": [
+        {
+          "field": "床掃除",
+          "score": 95,
+          "reviewCount": 110,
+          "comment": "フローリングや畳、無垢板など様々な床材で高い清掃能力を発揮し、日常の床掃除を大幅に軽減します。"
+        }
+      ]
+    }
+  },
+  "resaleValue": null,
+  "affiliate": {
+    "moshimo": "<!-- START MoshimoAffiliateEasyLink -->\r\n<script type=\"text/javascript\">\r\n(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;\r\nb[a]=b[a]||function(){arguments.currentScript=c.currentScript\r\n||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};\r\nc.getElementById(a)||(d=c.createElement(f),d.src=g,\r\nd.id=a,e=c.getElementsByTagName(\"body\")[0],e.appendChild(d))})\r\n(window,document,\"script\",\"//dn.msmstatic.com/site/cardlink/bundle.js?20220329\",\"msmaflink\");\r\nmsmaflink({\"n\":\"Anker Eufy (ユーフィ) Robot Vacuum Auto-Empty C10 (ロボット掃除機) 【自動ゴミ収集ステーション 伸縮サイドブラシ 毛絡み除去システム レーザーマッピング アプリ操作 落下防止 薄型 小型 時短家電 新生活 引越し 一人暮らし】\",\"b\":\"\",\"t\":\"\",\"d\":\"https:\\/\\/thumbnail.image.rakuten.co.jp\",\"c_p\":\"\\/@0_mall\\/anker\\/cabinet\\/listing\",\"p\":[\"\\/tmb\\/t2292\\/t2292_nomal.jpg\",\"\\/product\\/t2292\\/t2292_sub_2.jpg\",\"\\/product\\/t2292\\/t2292_sub_3.jpg\"],\"u\":{\"u\":\"https:\\/\\/item.rakuten.co.jp\\/anker\\/t2292\\/\",\"t\":\"rakuten\",\"r_v\":\"\"},\"v\":\"2.1\",\"b_l\":[{\"id\":1,\"u_tx\":\"楽天市場で見る\",\"u_bc\":\"#f76956\",\"u_url\":\"https:\\/\\/item.rakuten.co.jp\\/anker\\/t2292\\/\",\"a_id\":5483003,\"p_id\":54,\"pl_id\":27059,\"pc_id\":54,\"s_n\":\"rakuten\",\"u_so\":1},{\"id\":2,\"u_tx\":\"Yahoo!ショッピングで見る\",\"u_bc\":\"#66a7ff\",\"u_url\":\"https:\\/\\/shopping.yahoo.co.jp\\/search?first=1\\u0026p=Anker%20Eufy%20(%E3%83%A6%E3%83%BC%E3%83%95%E3%82%A3)%20Robot%20Vacuum%20Auto-Empty%20C10%20(%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F)%20%E3%80%90%E8%87%AA%E5%8B%95%E3%82%B4%E3%83%9F%E5%8F%8E%E9%9B%86%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%20%E4%BC%B8%E7%B8%AE%E3%82%B5%E3%82%A4%E3%83%89%E3%83%96%E3%83%A9%E3%82%B7%20%E6%AF%9B%E7%B5%A1%E3%81%BF%E9%99%A4%E5%8E%BB%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%20%E3%83%AC%E3%83%BC%E3%82%B6%E3%83%BC%E3%83%9E%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0%20%E3%82%A2%E3%83%97%E3%83%AA%E6%93%8D%E4%BD%9C%20%E8%90%BD%E4%B8%8B%E9%98%B2%E6%AD%A2%20%E8%96%84%E5%9E%8B%20%E5%B0%8F%E5%9E%8B%20%E6%99%82%E7%9F%AD%E5%AE%B6%E9%9B%BB%20%E6%96%B0%E7%94%9F%E6%B4%BB%20%E5%BC%95%E8%B6%8A%E3%81%97%20%E4%B8%80%E4%BA%BA%E6%9A%AE%E3%82%89%E3%81%97%E3%80%91\",\"a_id\":5483010,\"p_id\":1225,\"pl_id\":27061,\"pc_id\":1925,\"s_n\":\"yahoo\",\"u_so\":2}],\"eid\":\"t9ggJ\",\"s\":\"s\"});\r\n</script>\r\n<div id=\"msmaflink-t9ggJ\">リンク</div>\r\n<!-- MoshimoAffiliateEasyLink END -->",
+    "direct": "<a href=\"//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3766176&pid=892603477&vc_url=https%3A%2F%2Fwww.ankerjapan.com%2Fproducts%2Ft2292%3F_pos%3D3%26_fid%3D6afd318d9%26_ss%3Dc%3Fvariant%3D44871970226337\" rel=\"nofollow\"><img src=\"//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3766176&pid=892603477\" height=\"1\" width=\"0\" border=\"0\">Eufy Robot Vacuum Auto-Empty C10</a>",
+    "hpPublish": true
+  }
+}

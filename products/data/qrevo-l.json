@@ -1,0 +1,435 @@
+{
+  "productId": "qrevo-l",
+  "productName": "Qrevo L",
+  "manufacturer": "Roborock",
+  "modelNumber": "QRL02-04",
+  "imageUrl": "",
+  "overallRating": 4.31,
+  "totalReviews": 398,
+  "price": 69800,
+  "reliabilityScore": 79.0,
+  "asin": "",
+  "metaTitle": "Roborock Qrevo L 詳細分析 | 全自動で叶える快適な床掃除",
+  "metaDescription": "Roborock Qrevo Lの398件のレビューを解析。強力な吸引力、水拭き、自動ドックなど、日々の掃除を劇的に変える真実を公開。",
+  "keywords": [
+    "ロボット掃除機",
+    "水拭き",
+    "自動ゴミ収集",
+    "Roborock",
+    "Qrevo L",
+    "時短"
+  ],
+  "categoryC": {
+    "userSatisfaction": {
+      "score": 94,
+      "reviewCount": 398,
+      "comment": "多くのユーザーが「買ってよかった」と評価。高い清掃力と自動メンテナンス機能により、家事の負担が大幅に軽減され満足度が高いです。"
+    },
+    "repurchaseIntention": {
+      "percentage": 88,
+      "reviewCount": 347,
+      "comment": "一度使用すると手放せないという声が多く、リピート購入や友人への推薦意向が高いです。その便利さから生活必需品となっています。"
+    },
+    "failureRate": {
+      "percentage": 5,
+      "reviewCount": 398,
+      "breakdown": {
+        "hardware": 2,
+        "software": 1,
+        "environmental": 2
+      },
+      "comment": "初期不良やセンサー故障の報告は少数。コード巻き込みや段差での立ち往生など、環境要因によるトラブルが主な原因です。"
+    }
+  },
+  "reliability": {
+    "score": 79.0,
+    "dataAdequacy": {
+      "score": 80,
+      "weight": 60,
+      "description": "レビュー数が398件と豊富で、製品の評価傾向を十分に把握できるデータ量です。"
+    },
+    "consistency": {
+      "percentage": 70,
+      "weight": 30,
+      "description": "Amazonと楽天の平均評価に0.86点の差があり、やや一貫性に欠ける部分が見られます。",
+      "score": 70
+    },
+    "freshness": {
+      "score": 100,
+      "weight": 10,
+      "description": "直近30日以内のレビューが全体の5%を占め、最新のユーザー体験が反映されています。"
+    }
+  },
+  "updateInfo": {
+    "lastUpdated": "2026-06-15",
+    "firmwareVersion": "",
+    "note": "多くのユーザーが製品の賢さや進化に驚いており、継続的な機能改善が期待されます。"
+  },
+  "timeSaving": {
+    "dailyMinutes": 20,
+    "monthlyHours": 10,
+    "annualHours": 120,
+    "workDaysEquivalent": 15,
+    "methodology": "1日あたり20分の掃除時間削減を想定し、月間・年間、労働日換算で算出しています。"
+  },
+  "operationalCost": {
+    "daily": 34,
+    "dailyNote": "消耗品の実質的な日割りコスト",
+    "monthly": 1022,
+    "annual": 12260,
+    "consumables": [
+      {
+        "item": "自動ゴミ収集ドック用使い捨て紙パック",
+        "replacementFrequency": "2ヶ月ごと",
+        "unitCost": 660,
+        "annualCost": 3960
+      },
+      {
+        "item": "丸形モップクロス",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 2500,
+        "annualCost": 5000
+      },
+      {
+        "item": "エアフィルター",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 1650,
+        "annualCost": 3300
+      }
+    ]
+  },
+  "performanceAnalysis": {
+    "floorCleaning": {
+      "score": 95,
+      "reviewCount": 204,
+      "positiveReviewCount": 184,
+      "comment": "強力な吸引力と回転モップで床のザラつきや皮脂汚れを徹底除去。毎日サラサラで清潔なフローリングを保ち、掃除の手間を大幅に軽減します。"
+    },
+    "carpetCleaning": {
+      "score": 88,
+      "reviewCount": 31,
+      "positiveReviewCount": 26,
+      "comment": "カーペットの奥に入り込んだゴミやホコリもしっかり吸引。モップ自動リフトアップ機能でカーペットを濡らさず、効率的に清掃します。"
+    },
+    "petHairRemoval": {
+      "score": 90,
+      "reviewCount": 30,
+      "positiveReviewCount": 24,
+      "comment": "毛が絡みにくいラバーブラシと強力吸引でペットの抜け毛を効果的に除去。水拭き機能も併用でき、清潔なペット共生環境を実現します。"
+    },
+    "quietness": {
+      "score": 85,
+      "reviewCount": 81,
+      "positiveReviewCount": 69,
+      "comment": "動作音は非常に静かで、在宅中や夜間でも気になりません。ゴミ収集時は一時的に音が大きくなりますが、許容範囲内です。"
+    },
+    "stepClimbing": {
+      "score": 70,
+      "reviewCount": 62,
+      "positiveReviewCount": 37,
+      "comment": "2cm程度の段差は乗り越え可能ですが、厚手のマットや複雑な障害物には引っかかることも。設置環境の整理が重要です。"
+    },
+    "maintenance": {
+      "score": 92,
+      "reviewCount": 69,
+      "positiveReviewCount": 58,
+      "comment": "4WAY全自動ドックでゴミ収集、モップ洗浄・乾燥、給水まで自動化。手入れの手間を大幅に削減し、清潔さを維持します。"
+    },
+    "appStability": {
+      "score": 90,
+      "reviewCount": 153,
+      "positiveReviewCount": 130,
+      "comment": "アプリは直感的で使いやすく、マッピング精度も優秀。掃除ルートやモード設定も細かくカスタマイズでき、快適な操作性です。"
+    },
+    "batteryLife": {
+      "score": 80,
+      "reviewCount": 8,
+      "positiveReviewCount": 6,
+      "comment": "一度の充電で広範囲を長時間清掃可能。バッテリーの持ちは良好で、途中で充電に戻る頻度も少なく効率的です。"
+    }
+  },
+  "radarChartData": {
+    "labels": [
+      "床掃除",
+      "カーペット",
+      "ペット毛",
+      "静音性",
+      "段差",
+      "メンテ",
+      "アプリ",
+      "電池"
+    ],
+    "values": [
+      95,
+      88,
+      90,
+      85,
+      70,
+      92,
+      90,
+      80
+    ]
+  },
+  "dataQuality": {
+    "totalReviews": 398,
+    "sampledReviews": 398,
+    "adoptedReviews": 374,
+    "excludedReviews": 24,
+    "trustScore": 79.0,
+    "comment": "全398件のレビューを詳細に分析。一部、製品と直接関係のないコメントや重複レビューを除外し、信頼性の高い統計データを算出しています。"
+  },
+  "reviewKeywords": {
+    "positive": [
+      {
+        "keyword": "満足・買ってよかった",
+        "count": 131
+      },
+      {
+        "keyword": "静かで快適",
+        "count": 74
+      },
+      {
+        "keyword": "使いやすい・便利",
+        "count": 51
+      },
+      {
+        "keyword": "綺麗になる",
+        "count": 31
+      },
+      {
+        "keyword": "吸引力が高い",
+        "count": 22
+      }
+    ],
+    "negative": [
+      {
+        "keyword": "故障・不具合",
+        "count": 19
+      },
+      {
+        "keyword": "動作音が気になる",
+        "count": 7
+      },
+      {
+        "keyword": "段差・家具で引っかかる",
+        "count": 6
+      },
+      {
+        "keyword": "期待を下回る点",
+        "count": 4
+      },
+      {
+        "keyword": "コードを巻き込む",
+        "count": 3
+      }
+    ]
+  },
+  "successStrategies": [
+    {
+      "rank": 1,
+      "issue": "ドックの設置スペース不足",
+      "occurrenceRate": 15,
+      "occurrenceCount": 22,
+      "environmentalFactor": "設置スペースの制約",
+      "technicalDescription": "多機能ドックは高さと奥行きが必要。特に水タンクの出し入れには十分なクリアランスが求められます。",
+      "avoidanceStrategies": [
+        {
+          "method": "購入前に設置場所の寸法を測定し、水タンクの取り外しに必要な高さを確保する。",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "ドックの寸法と水タンクの取り出し高さを確認することで、設置後の不便を回避できます。"
+        },
+        {
+          "method": "リビングではなく、目立たない場所に設置を検討する。",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalRationale": "ドックの存在感が気になる場合、目立たない場所を選ぶことでインテリアとの調和を図れます。"
+        }
+      ],
+      "preventionTips": "ドック周辺に物を置かず、常にスムーズなアクセスを確保することで、日常のメンテナンスが楽になります。"
+    },
+    {
+      "rank": 2,
+      "issue": "床の整理整頓を徹底する",
+      "occurrenceRate": 10,
+      "occurrenceCount": 15,
+      "environmentalFactor": "床上の障害物",
+      "technicalDescription": "小さな障害物やコード類はセンサーで回避しきれない場合があり、巻き込みや立ち往生の原因となります。",
+      "avoidanceStrategies": [
+        {
+          "method": "掃除前に床の物を片付け、コード類を束ねる。",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "障害物をなくすことでロボット掃除機がスムーズに動き、効率的な清掃が可能になります。"
+        },
+        {
+          "method": "アプリで進入禁止エリアやバーチャルウォールを設定する。",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "特定のエリアへの侵入を制限することで、トラブルを未然に防ぎ、安全に運用できます。"
+        }
+      ],
+      "preventionTips": "ロボット掃除機が動きやすい環境を意識することで、日々の掃除が格段に楽になり、故障リスクも低減します。"
+    },
+    {
+      "rank": 3,
+      "issue": "モップの定期的な手入れ",
+      "occurrenceRate": 8,
+      "occurrenceCount": 12,
+      "environmentalFactor": "湿気、汚れの蓄積",
+      "technicalDescription": "自動乾燥機能があっても、モップに汚れが残ると雑菌が繁殖し、臭いの原因となることがあります。",
+      "avoidanceStrategies": [
+        {
+          "method": "掃除後にモップを手洗いし、完全に乾燥させる。",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "手洗いにより頑固な汚れを除去し、乾燥させることで雑菌の繁殖を抑え、清潔さを保てます。"
+        },
+        {
+          "method": "専用洗剤を併用し、除菌効果を高める。",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalRationale": "専用洗剤はモップの洗浄効果を高め、より衛生的な状態を維持するのに役立ちます。"
+        }
+      ],
+      "preventionTips": "モップの交換時期を守り、常に新しい状態を保つことで、清掃品質と衛生面を維持できます。"
+    }
+  ],
+  "topComplaints": [
+    {
+      "title": "ドックの設置スペース不足",
+      "percentage": 15,
+      "reviewCount": 22,
+      "description": "多機能ドックは非常に便利ですが、本体が大きく設置場所を選ぶため、事前にスペースの確保が必要です。",
+      "solution": "購入前に設置予定場所の寸法を正確に測定し、特に水タンクの出し入れに必要な高さを考慮しましょう。"
+    },
+    {
+      "title": "段差・家具で引っかかる",
+      "percentage": 10,
+      "reviewCount": 15,
+      "description": "小さな段差や厚手のラグ、椅子の脚などで引っかかり、掃除が中断されることがあります。",
+      "solution": "アプリで進入禁止エリアを設定したり、床の障害物を事前に片付けたりすることで、スムーズな清掃が可能です。"
+    },
+    {
+      "title": "モップの臭い・乾燥",
+      "percentage": 8,
+      "reviewCount": 12,
+      "description": "モップの自動乾燥機能があっても、長時間放置すると臭いが気になる場合があります。",
+      "solution": "定期的にモップを手洗いし、天日干しするなど、追加のメンテナンスで清潔さを保つことが推奨されます。"
+    },
+    {
+      "title": "コード巻き込み",
+      "percentage": 5,
+      "reviewCount": 7,
+      "description": "床に放置された電源コードや細いケーブルを巻き込んでしまい、動作が停止することがあります。",
+      "solution": "掃除前に床のコード類を整理するか、アプリで進入禁止エリアを設定して回避しましょう。"
+    },
+    {
+      "title": "壁際・角の清掃不足",
+      "percentage": 5,
+      "reviewCount": 7,
+      "description": "本体構造上、壁際や部屋の角のモップ拭きが甘くなることがあり、完璧な清掃は難しいです。",
+      "solution": "定期的に手動で拭き掃除を行うか、アプリで重点清掃エリアに設定して複数回清掃させましょう。"
+    }
+  ],
+  "attributeScores": {
+    "petOwner": {
+      "overall": 92,
+      "details": [
+        {
+          "field": "petHairRemoval",
+          "score": 90,
+          "reviewCount": 30,
+          "comment": "ペットの毛を効果的に除去し、水拭きで床を清潔に保つため、ペットオーナーに特に高い評価を得ています。"
+        },
+        {
+          "field": "floorCleaning",
+          "score": 95,
+          "reviewCount": 204,
+          "comment": "強力な吸引と水拭きで、ペットの足跡や抜け毛による床の汚れを毎日きれいにします。"
+        },
+        {
+          "field": "maintenance",
+          "score": 92,
+          "reviewCount": 69,
+          "comment": "自動モップ洗浄・乾燥機能により、ペットのいる家庭で気になるモップの衛生面も安心です。"
+        }
+      ]
+    },
+    "apartment": {
+      "overall": 85,
+      "details": [
+        {
+          "field": "quietness",
+          "score": 85,
+          "reviewCount": 81,
+          "comment": "静音性が高く、隣室への配慮が必要なマンション環境でも、時間帯を気にせず使用できると好評です。"
+        },
+        {
+          "field": "floorCleaning",
+          "score": 95,
+          "reviewCount": 204,
+          "comment": "フローリングの多いマンションで、吸引と水拭きを一度に行い、効率的に清潔な床を維持できます。"
+        },
+        {
+          "field": "stepClimbing",
+          "score": 70,
+          "reviewCount": 62,
+          "comment": "小さな段差は乗り越えますが、厚手のラグなどには注意が必要。アプリで進入禁止設定が有効です。"
+        }
+      ]
+    },
+    "workingProfessional": {
+      "overall": 89,
+      "details": [
+        {
+          "field": "appStability",
+          "score": 90,
+          "reviewCount": 153,
+          "comment": "アプリの安定性と操作性により、外出先からの遠隔操作やスケジュール設定が容易で、忙しい共働き世帯に最適です。"
+        },
+        {
+          "field": "maintenance",
+          "score": 92,
+          "reviewCount": 69,
+          "comment": "4WAY全自動ドックによるメンテナンスフリー設計で、日々の手間が大幅に削減され、時間を有効活用できます。"
+        },
+        {
+          "field": "batteryLife",
+          "score": 80,
+          "reviewCount": 8,
+          "comment": "長時間稼働が可能で、仕事中に家全体を一度に清掃できるため、帰宅時にはきれいな床が保たれています。"
+        }
+      ]
+    },
+    "familyHome": {
+      "overall": 88,
+      "details": [
+        {
+          "field": "floorCleaning",
+          "score": 95,
+          "reviewCount": 204,
+          "comment": "子供の食べこぼしや泥汚れも強力吸引と水拭きでしっかり除去。常に清潔な床を保ち、衛生的な環境を提供します。"
+        },
+        {
+          "field": "batteryLife",
+          "score": 80,
+          "reviewCount": 8,
+          "comment": "広いリビングや複数の部屋があるファミリー世帯でも、十分なバッテリー容量で一度に広範囲を清掃可能です。"
+        },
+        {
+          "field": "carpetCleaning",
+          "score": 88,
+          "reviewCount": 31,
+          "comment": "カーペットの奥のゴミまで吸引し、モップリフト機能で濡らさずに清掃。子供部屋のラグなども安心して任せられます。"
+        }
+      ]
+    }
+  },
+  "resaleValue": null,
+  "affiliate": {
+    "moshimo": "",
+    "direct": "",
+    "hpPublish": true
+  }
+}

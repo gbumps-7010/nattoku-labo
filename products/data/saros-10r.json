@@ -1,0 +1,398 @@
+{
+  "productId": "saros-10r",
+  "productName": "Saros 10R",
+  "manufacturer": "Roborock",
+  "modelNumber": "S10R52-04",
+  "imageUrl": "https://thumbnail.image.rakuten.co.jp/@0_mall/roborockjapandirect/cabinet/products/12574614/imgrc0133487232.jpg",
+  "overallRating": 4.44,
+  "totalReviews": 322,
+  "price": 269800,
+  "reliabilityScore": 88.0,
+  "asin": "",
+  "metaTitle": "Roborock Saros 10R 詳細分析 | 圧倒的な清掃力と全自動ドックの真実",
+  "metaDescription": "Roborock Saros 10Rの322件のレビューを解析。床掃除、水拭き、ペット毛吸引力など、最上位モデルの真の実力と不満点を徹底公開。",
+  "keywords": [
+    "Roborock Saros 10R",
+    "ロボット掃除機",
+    "水拭き",
+    "自動ゴミ収集",
+    "静音性",
+    "ペット毛"
+  ],
+  "categoryC": {
+    "userSatisfaction": {
+      "score": 94,
+      "reviewCount": 322,
+      "comment": "多くのユーザーが「買ってよかった」と評価し、期待以上の清掃能力と利便性に高い満足度を示しています。"
+    },
+    "repurchaseIntention": {
+      "percentage": 88,
+      "reviewCount": 285,
+      "comment": "一度使ったら手放せないとの声が多く、高いリピート意向が見られます。生活の質向上に貢献すると評価されています。"
+    },
+    "failureRate": {
+      "percentage": 3,
+      "reviewCount": 322,
+      "breakdown": {
+        "hardware": 1,
+        "software": 1,
+        "environmental": 1
+      },
+      "comment": "初期不良や一部の接続問題が報告されていますが、全体的な故障率は低く、信頼性は高いと評価されています。"
+    }
+  },
+  "reliability": {
+    "score": 88.0,
+    "dataAdequacy": {
+      "score": 80,
+      "weight": 60,
+      "description": "322件のレビュー数から、データは十分に揃っており、製品評価の信頼性を高めています。"
+    },
+    "consistency": {
+      "percentage": 100,
+      "weight": 30,
+      "description": "各サイトの評価に大きな差がなく、一貫した高評価が得られているため、評価の信頼性が高いです。",
+      "score": 100
+    },
+    "freshness": {
+      "score": 100,
+      "weight": 10,
+      "description": "直近30日以内のレビューが豊富で、最新のユーザー体験が反映されており、鮮度が高いです。"
+    }
+  },
+  "updateInfo": {
+    "lastUpdated": "2026-06-15",
+    "firmwareVersion": "",
+    "note": "最新のレビューでは、本製品の安定した性能と高い満足度が継続して報告されています。"
+  },
+  "timeSaving": {
+    "dailyMinutes": 19,
+    "monthlyHours": 9.5,
+    "annualHours": 114,
+    "workDaysEquivalent": 14.5,
+    "methodology": "毎日の床掃除にかかる時間を平均19分と想定し、ロボット掃除機による自動化で節約される時間を算出。"
+  },
+  "operationalCost": {
+    "daily": 38,
+    "dailyNote": "消耗品の実質的な日割りコスト",
+    "monthly": 1167,
+    "annual": 14000,
+    "consumables": [
+      {
+        "item": "ダストバッグ",
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 1500,
+        "annualCost": 6000
+      },
+      {
+        "item": "モップパッドセット",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 2000,
+        "annualCost": 4000
+      },
+      {
+        "item": "専用洗剤",
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 1000,
+        "annualCost": 4000
+      }
+    ]
+  },
+  "performanceAnalysis": {
+    "floorCleaning": {
+      "score": 98,
+      "reviewCount": 118,
+      "positiveReviewCount": 110,
+      "comment": "卓越した吸引力と水拭き性能で、床は常にピカピカに。特に壁際や隅々まで丁寧に清掃し、素足で歩くのが気持ち良いと高評価です。"
+    },
+    "carpetCleaning": {
+      "score": 85,
+      "reviewCount": 37,
+      "positiveReviewCount": 30,
+      "comment": "カーペットの奥に入り込んだゴミやペットの毛も強力に吸引。モップ自動リフトアップ機能で濡れる心配も少ないです。"
+    },
+    "petHairRemoval": {
+      "score": 95,
+      "reviewCount": 42,
+      "positiveReviewCount": 38,
+      "comment": "ペットの毛の吸引力は非常に高く、特に多頭飼いの家庭で絶賛されています。ブラシへの絡まりも少なく手入れの手間を大幅に削減します。"
+    },
+    "quietness": {
+      "score": 88,
+      "reviewCount": 51,
+      "positiveReviewCount": 45,
+      "comment": "稼働音は非常に静かで、在宅時や就寝中の使用も気になりません。旧モデルや他社製品からの買い替えでその静音性に驚く声が多いです。"
+    },
+    "stepClimbing": {
+      "score": 78,
+      "reviewCount": 46,
+      "positiveReviewCount": 35,
+      "comment": "一般的な段差や敷居は問題なく乗り越え、広範囲を掃除可能です。ただし、一部の特殊な段差では補助が必要な場合もあります。"
+    },
+    "maintenance": {
+      "score": 92,
+      "reviewCount": 42,
+      "positiveReviewCount": 38,
+      "comment": "8way全自動ドックにより、ゴミ捨てやモップ洗浄・乾燥の手間が激減。汚水タンクの定期的な清掃で清潔さを保てます。"
+    },
+    "appStability": {
+      "score": 89,
+      "reviewCount": 120,
+      "positiveReviewCount": 100,
+      "comment": "高精度なマッピング機能と直感的なアプリ操作で、清掃エリアやスケジュールを細かく設定可能。一部Wi-Fi接続に課題の声も。"
+    },
+    "batteryLife": {
+      "score": 85,
+      "reviewCount": 11,
+      "positiveReviewCount": 8,
+      "comment": "十分なバッテリー容量で広範囲の掃除に対応。充電切れ前に自動でドックに戻る賢さも兼ね備えており、安心して任せられます。"
+    }
+  },
+  "radarChartData": {
+    "labels": [
+      "床掃除",
+      "カーペット",
+      "ペット毛",
+      "静音性",
+      "段差",
+      "メンテ",
+      "アプリ",
+      "電池"
+    ],
+    "values": [
+      98,
+      85,
+      95,
+      88,
+      78,
+      92,
+      89,
+      85
+    ]
+  },
+  "dataQuality": {
+    "totalReviews": 322,
+    "sampledReviews": 322,
+    "adoptedReviews": 302,
+    "excludedReviews": 20,
+    "trustScore": 88.0,
+    "comment": "ユーザーから提供された322件のレビューを詳細に分析。一部の重複や内容の薄いレビューを除外し、信頼性の高いデータのみを採用しました。"
+  },
+  "reviewKeywords": {
+    "positive": [
+      {
+        "keyword": "満足・買ってよかった",
+        "count": 97
+      },
+      {
+        "keyword": "静かで快適",
+        "count": 48
+      },
+      {
+        "keyword": "使いやすい・便利",
+        "count": 29
+      },
+      {
+        "keyword": "綺麗になる",
+        "count": 26
+      },
+      {
+        "keyword": "吸引力が高い",
+        "count": 21
+      }
+    ],
+    "negative": [
+      {
+        "keyword": "故障・不具合",
+        "count": 18
+      },
+      {
+        "keyword": "動作音が気になる",
+        "count": 7
+      },
+      {
+        "keyword": "段差・家具で引っかかる",
+        "count": 6
+      },
+      {
+        "keyword": "コードを巻き込む",
+        "count": 4
+      },
+      {
+        "keyword": "止まってしまう",
+        "count": 3
+      }
+    ]
+  },
+  "successStrategies": [
+    {
+      "rank": 1,
+      "issue": "Wi-Fi接続の不安定性",
+      "occurrenceRate": 5,
+      "occurrenceCount": 16,
+      "environmentalFactor": "Wi-Fiルーターの周波数帯（2.4GHz/5GHz）、設置場所、電波干渉",
+      "technicalDescription": "本製品は2.4GHz帯Wi-Fiに最適化されており、5GHz帯との混在環境や電波干渉により接続が不安定になる場合があります。",
+      "avoidanceStrategies": [
+        {
+          "method": "Wi-Fiルーターの2.4GHz帯を優先設定し、5GHz帯を一時的に停止して接続を試す。",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "本製品は2.4GHz帯での安定接続を推奨。ルーター設定で2.4GHz帯を分離または優先することで接続が改善されます。"
+        },
+        {
+          "method": "本体とWi-Fiルーターの距離を近づけ、間に障害物がないか確認する。",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalRationale": "電波強度が弱いと接続が不安定になります。ルーターと本体の物理的距離を短縮し、電波干渉を避けることで安定性が向上します。"
+        }
+      ],
+      "preventionTips": "初期設定時は、ルーターの近くで2.4GHz帯に接続し、マニュアルを参考に慎重に進めましょう。"
+    },
+    {
+      "rank": 2,
+      "issue": "ドック周辺のメンテナンス（汚水臭）",
+      "occurrenceRate": 8,
+      "occurrenceCount": 25,
+      "environmentalFactor": "高温多湿な環境、汚水タンクの放置",
+      "technicalDescription": "モップ洗浄後の汚水を長時間放置すると、雑菌が繁殖し不快な臭いが発生する可能性があります。特に夏場は注意が必要です。",
+      "avoidanceStrategies": [
+        {
+          "method": "汚水タンクは毎日、または清掃ごとに捨て、タンク内部を食器用洗剤などで洗浄する。",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "汚水タンクの定期的な洗浄により、雑菌の繁殖を抑制し、臭いの発生を効果的に防ぐことができます。"
+        },
+        {
+          "method": "ドックの洗浄トレイも定期的に清掃し、乾燥させることで衛生状態を保つ。",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalRationale": "ドックの洗浄トレイにも汚れが蓄積するため、本体だけでなくドック全体の清掃が重要です。"
+        }
+      ],
+      "preventionTips": "清掃後は汚水タンクの確認を習慣化し、必要に応じて洗浄することで常に清潔に保てます。"
+    }
+  ],
+  "topComplaints": [
+    {
+      "title": "初期不良や故障の発生",
+      "percentage": 6,
+      "reviewCount": 18,
+      "description": "センサーエラーや動作不良、サイドブラシの不具合など、初期段階での故障報告が一部見られます。高額商品のため不安の声も。",
+      "solution": "初期不良の場合は、速やかにメーカーサポートへ連絡し、交換または修理を依頼しましょう。購入時の保証期間や条件を確認することが重要です。"
+    },
+    {
+      "title": "ドックの設置スペースとメンテナンスの手間",
+      "percentage": 8,
+      "reviewCount": 25,
+      "description": "多機能ドックは便利ですが、その大きさに設置場所を悩む声や、汚水タンクの清掃を面倒に感じるユーザーもいます。",
+      "solution": "購入前に設置スペースを確保し、汚水タンクはこまめに洗浄することで清潔さを保てます。ドック周辺の定期的な清掃も推奨されます。"
+    },
+    {
+      "title": "価格設定の不安定さ",
+      "percentage": 3,
+      "reviewCount": 10,
+      "description": "定価が高額な上、セール期間で価格が変動するため、購入タイミングに迷いや不満を感じるユーザーが一部見られます。",
+      "solution": "セール情報を定期的にチェックし、お得な期間を狙って購入を検討しましょう。長期的な視点でのコストパフォーマンスも考慮すべきです。"
+    }
+  ],
+  "attributeScores": {
+    "petOwner": {
+      "overall": 95,
+      "details": [
+        {
+          "field": "ペット毛吸引力",
+          "score": 95,
+          "reviewCount": 42,
+          "comment": "ペットの毛を強力に吸引し、多頭飼いの家庭でも満足度の高い清掃力を発揮します。"
+        },
+        {
+          "field": "床掃除",
+          "score": 98,
+          "reviewCount": 118,
+          "comment": "卓越した吸引力と水拭き性能で、床は常にピカピカに。壁際まで丁寧に清掃します。"
+        },
+        {
+          "field": "メンテナンス",
+          "score": 92,
+          "reviewCount": 42,
+          "comment": "自動ドックによるゴミ捨てやモップ洗浄で、ペットの毛の手入れ負担を大幅に軽減します。"
+        }
+      ]
+    },
+    "apartment": {
+      "overall": 89,
+      "details": [
+        {
+          "field": "静音性",
+          "score": 88,
+          "reviewCount": 51,
+          "comment": "稼働音が非常に静かで、マンションでの夜間使用も周囲を気にせず行えます。"
+        },
+        {
+          "field": "床掃除",
+          "score": 98,
+          "reviewCount": 118,
+          "comment": "卓越した吸引力と水拭き性能で、床は常にピカピカに。壁際まで丁寧に清掃します。"
+        },
+        {
+          "field": "段差乗り越え",
+          "score": 78,
+          "reviewCount": 46,
+          "comment": "一般的な段差は乗り越え可能ですが、玄関などの高い段差には補助が必要な場合があります。"
+        }
+      ]
+    },
+    "workingProfessional": {
+      "overall": 89,
+      "details": [
+        {
+          "field": "アプリ安定性",
+          "score": 89,
+          "reviewCount": 120,
+          "comment": "高精度なマッピングと直感的なアプリ操作で、忙しい中でも効率的な清掃が可能です。"
+        },
+        {
+          "field": "メンテナンス",
+          "score": 92,
+          "reviewCount": 42,
+          "comment": "8way全自動ドックにより、ゴミ捨てやモップ洗浄の手間が激減し、時間を有効活用できます。"
+        },
+        {
+          "field": "バッテリー",
+          "score": 85,
+          "reviewCount": 11,
+          "comment": "十分なバッテリー容量で広範囲を一度に清掃可能。充電切れの心配も少なく、安心して任せられます。"
+        }
+      ]
+    },
+    "familyHome": {
+      "overall": 90,
+      "details": [
+        {
+          "field": "床掃除",
+          "score": 98,
+          "reviewCount": 118,
+          "comment": "卓越した吸引力と水拭き性能で、子供がいても清潔な床を保てます。壁際まで丁寧に清掃。"
+        },
+        {
+          "field": "バッテリー",
+          "score": 85,
+          "reviewCount": 11,
+          "comment": "広範囲を一度に清掃できるバッテリー性能で、家族の多い家庭でも安心して使用できます。"
+        },
+        {
+          "field": "カーペット掃除",
+          "score": 85,
+          "reviewCount": 37,
+          "comment": "カーペットの奥に入り込んだゴミや食べこぼしも強力に吸引。子供の遊び場も清潔に保てます。"
+        }
+      ]
+    }
+  },
+  "resaleValue": null,
+  "affiliate": {
+    "moshimo": "<!-- START MoshimoAffiliateEasyLink -->\r\n<script type=\"text/javascript\">\r\n(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;\r\nb[a]=b[a]||function(){arguments.currentScript=c.currentScript\r\n||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};\r\nc.getElementById(a)||(d=c.createElement(f),d.src=g,\r\nd.id=a,e=c.getElementsByTagName(\"body\")[0],e.appendChild(d))})\r\n(window,document,\"script\",\"//dn.msmstatic.com/site/cardlink/bundle.js?20220329\",\"msmaflink\");\r\nmsmaflink({\"n\":\"【4月27日までSaros10Rが40%OFF】ロボロック Roborock ロボット掃除機 Saros10R お掃除ロボット 水拭き対応 強力吸引 ゴミ収集 静音設計 時短掃除 ペット対応 自動充電 高性能 おすすめモデル ロボットクリーナー\",\"b\":\"\",\"t\":\"\",\"d\":\"https:\\/\\/thumbnail.image.rakuten.co.jp\",\"c_p\":\"\\/@0_mall\\/roborockjapandirect\\/cabinet\",\"p\":[\"\\/products\\/12574614\\/imgrc0133487232.jpg\",\"\\/bnr\\/imgrc0130142743.jpg\",\"\\/products\\/imgrc0128936664.jpg\"],\"u\":{\"u\":\"https:\\/\\/item.rakuten.co.jp\\/roborockjapandirect\\/6936905903761\\/\",\"t\":\"rakuten\",\"r_v\":\"\"},\"v\":\"2.1\",\"b_l\":[{\"id\":1,\"u_tx\":\"楽天市場で見る\",\"u_bc\":\"#f76956\",\"u_url\":\"https:\\/\\/item.rakuten.co.jp\\/roborockjapandirect\\/6936905903761\\/\",\"a_id\":5483003,\"p_id\":54,\"pl_id\":27059,\"pc_id\":54,\"s_n\":\"rakuten\",\"u_so\":1},{\"id\":2,\"u_tx\":\"Yahoo!ショッピングで見る\",\"u_bc\":\"#66a7ff\",\"u_url\":\"https:\\/\\/shopping.yahoo.co.jp\\/search?first=1\\u0026p=%E3%80%904%E6%9C%8827%E6%97%A5%E3%81%BE%E3%81%A7Saros10R%E3%81%8C40%25OFF%E3%80%91%E3%83%AD%E3%83%9C%E3%83%AD%E3%83%83%E3%82%AF%20Roborock%20%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%20Saros10R%20%E3%81%8A%E6%8E%83%E9%99%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%20%E6%B0%B4%E6%8B%AD%E3%81%8D%E5%AF%BE%E5%BF%9C%20%E5%BC%B7%E5%8A%9B%E5%90%B8%E5%BC%95%20%E3%82%B4%E3%83%9F%E5%8F%8E%E9%9B%86%20%E9%9D%99%E9%9F%B3%E8%A8%AD%E8%A8%88%20%E6%99%82%E7%9F%AD%E6%8E%83%E9%99%A4%20%E3%83%9A%E3%83%83%E3%83%88%E5%AF%BE%E5%BF%9C%20%E8%87%AA%E5%8B%95%E5%85%85%E9%9B%BB%20%E9%AB%98%E6%80%A7%E8%83%BD%20%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%83%A2%E3%83%87%E3%83%AB%20%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%8A%E3%83%BC\",\"a_id\":5483010,\"p_id\":1225,\"pl_id\":27061,\"pc_id\":1925,\"s_n\":\"yahoo\",\"u_so\":2}],\"eid\":\"uFRAQ\",\"s\":\"s\"});\r\n</script>\r\n<div id=\"msmaflink-uFRAQ\">リンク</div>\r\n<!-- MoshimoAffiliateEasyLink END -->",
+    "direct": "",
+    "hpPublish": true
+  }
+}

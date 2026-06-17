@@ -3,156 +3,139 @@
   "productName": "Eufy RoboVac X8 Hybrid",
   "manufacturer": "Anker",
   "modelNumber": "T2261",
-  "overallRating": 4.5,
-  "totalReviews": 12,
+  "imageUrl": "https://thumbnail.image.rakuten.co.jp/@0_mall/outl/cabinet/10380909/imgrc0094068125.jpg",
+  "overallRating": 3.53,
+  "totalReviews": 28,
   "price": 59800,
-  "reliabilityScore": 64,
-  "imageUrl": "https://m.media-amazon.com/images/I/61-B9+P0eLL._AC_SL1500_.jpg",
-  "asin": "B08BHWPM47",
-  "metaTitle": "Eufy RoboVac X8 Hybrid 詳細分析 | 採用12件",
-  "metaDescription": "Eufy RoboVac X8 Hybridの採用12件を分析。デュアル吸引・レーザーナビ、信頼64・年156h前後の節約目安・年約7,800円の維持目安。水タンク・長毛ラグ・手動ゴミ捨て等の主傾向と対策を整理。",
+  "reliabilityScore": 44.0,
+  "asin": "",
+  "metaTitle": "Eufy RoboVac X8 Hybrid 詳細分析 | 故障と吸引力の真実",
+  "metaDescription": "Eufy RoboVac X8 Hybridの28件のレビューを解析。強力な吸引力とマッピング機能の評価、頻発する故障やサポート対応の課題を徹底解説。",
+  "keywords": [
+    "ロボット掃除機",
+    "Eufy",
+    "RoboVac X8 Hybrid",
+    "吸引力",
+    "水拭き",
+    "故障",
+    "マッピング",
+    "Anker"
+  ],
+  "categoryC": {
+    "userSatisfaction": {
+      "score": 70,
+      "reviewCount": 28,
+      "comment": "強力な吸引力やマッピング機能に満足の声がある一方、頻発する故障やサポート対応に不満も多く見られます。"
+    },
+    "repurchaseIntention": {
+      "percentage": 30,
+      "reviewCount": 28,
+      "comment": "故障経験者からは再購入をためらう声が多く、耐久性やサポート体制への不信感が再購入意欲を低下させています。"
+    },
+    "failureRate": {
+      "percentage": 28,
+      "reviewCount": 28,
+      "breakdown": {
+        "hardware": 15,
+        "software": 5,
+        "environmental": 8
+      },
+      "comment": "バッテリー異常やセンサーエラー、モーター故障など、ハードウェアに関する不具合報告が全体の約15%を占めています。"
+    }
+  },
   "reliability": {
-    "score": 64,
+    "score": 44.0,
     "dataAdequacy": {
       "score": 40,
-      "percentage": 40,
       "weight": 60,
-      "description": "本文で確認できる採用12件。分母は少ないが2026年時点の文脈を多く含む。母数制約のため中程度。参考40。"
+      "description": "レビュー総数が28件と少なく、データ十分性のスコアは40点と評価されます。"
     },
     "consistency": {
-      "score": 100,
-      "percentage": 100,
+      "percentage": 50,
       "weight": 30,
-      "description": "性能・吸引力・アプリ等の言及の方向性の揃い。参考100。"
+      "description": "ポジティブな評価とネガティブな評価が混在しており、評価の一貫性は低い傾向にあります。",
+      "score": 50
     },
     "freshness": {
-      "score": 100,
-      "percentage": 100,
+      "score": 50,
       "weight": 10,
-      "description": "直近体験と現行文脈を含みやすい。参考100。"
+      "description": "直近30日以内のレビューが0%であり、鮮度スコアは50点と評価されます。"
     }
   },
   "updateInfo": {
-    "lastUpdated": "2026-04-18",
-    "firmwareVersion": "v2.8.3",
-    "note": "採用12件・信頼64。年約156h前後の節約目安。年7,800円前後の代表維持費。掲出価格は変動。"
+    "lastUpdated": "2026-06-15",
+    "firmwareVersion": "",
+    "note": "本製品は2021年11月に発売され、レビューは2022年から2025年にかけて投稿されています。バッテリーやセンサー関連の故障報告が多く見られます。"
   },
   "timeSaving": {
-    "dailyMinutes": 26,
-    "monthlyHours": 13,
-    "annualHours": 156,
-    "workDaysEquivalent": 19.5,
-    "methodology": "毎日約26分の床掃除・水拭きの手作業相当を、ハイブリッド清掃に置き換えた年約156時間（月約13時間、8時間労働日換算で約19.5日分）の目安。世帯で変動します。"
+    "dailyMinutes": 20,
+    "monthlyHours": 10.0,
+    "annualHours": 120,
+    "workDaysEquivalent": 15.0,
+    "methodology": "ロボット掃除機による日常清掃の自動化で、手動掃除にかかる時間を削減。1日あたり20分の清掃時間を節約すると仮定して算出。"
   },
   "operationalCost": {
-    "daily": 21,
-    "dailyNote": "年7,800円（月約650円）前後。内訳例: サイドブラシ1,320円、フィルター2,200円、回転ブラシ2,750円、モップ1,530円。セール・交換周期で変動。",
-    "monthly": 650,
-    "annual": 7800,
+    "daily": 82,
+    "dailyNote": "消耗品の実質的な日割りコスト",
+    "monthly": 2500,
+    "annual": 30000,
     "consumables": [
       {
-        "item": "サイドブラシ",
-        "replacementFrequency": "年目安",
-        "unitCost": 1320,
-        "annualCost": 1320
-      },
-      {
-        "item": "フィルター",
-        "replacementFrequency": "年目安",
-        "unitCost": 2200,
-        "annualCost": 2200
-      },
-      {
-        "item": "回転ブラシ",
-        "replacementFrequency": "年目安",
-        "unitCost": 2750,
-        "annualCost": 2750
-      },
-      {
-        "item": "モップ",
-        "replacementFrequency": "年目安",
-        "unitCost": 1530,
-        "annualCost": 1530
+        "item": "消耗品セット（フィルター、ブラシ等）",
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 7500,
+        "annualCost": 30000
       }
     ]
   },
-  "categoryC": {
-    "userSatisfaction": {
-      "score": 88,
-      "reviewCount": 12,
-      "comment": "12名中11名がデュアルタービンの吸引力とアプリの使いやすさを高く評価している傾向です。"
-    },
-    "repurchaseIntention": {
-      "percentage": 83,
-      "reviewCount": 10,
-      "comment": "10名中8名が次回も同ブランドを検討すると回答。コストパフォーマンスの高さが再購入意向につながっている傾向です。"
-    },
-    "failureRate": {
-      "percentage": 8,
-      "reviewCount": 12,
-      "comment": "12件中1件で初期不良が発生していますが、カスタマーサポートによる迅速な交換対応で解決しています。"
-    }
-  },
   "performanceAnalysis": {
     "floorCleaning": {
-      "score": 92,
-      "reviewCount": 12,
-      "positiveReviewCount": 11,
-      "comment": "12件中11件が高評価。デュアルタービンによる強力な吸引力が秀逸で、フローリングの微細なホコリまで確実に除去。iPathレーザーナビによる効率的な走行も高く評価されています。"
+      "score": 90,
+      "reviewCount": 8,
+      "positiveReviewCount": 7,
+      "comment": "強力な吸引力でフローリングの埃や髪の毛を効果的に除去し、手動掃除以上の清掃能力に多くのユーザーが満足しています。"
     },
     "carpetCleaning": {
-      "score": 88,
-      "reviewCount": 10,
-      "positiveReviewCount": 9,
-      "comment": "カーペットでの吸引力も非常に高く、2000Pa×2のパワーが奥のゴミをかき出します。BoostIQ機能により、床質に合わせた自動調整がスムーズに行われる点が好意的に受け止められています。"
-    },
-    "petHair": {
-      "score": 90,
-      "reviewCount": 8,
-      "positiveReviewCount": 7,
-      "comment": "ペットの毛に対しては非常に強力。デュアルタービンの風量が毛を確実に吸い込み、散らばる抜け毛のストレスを大幅に軽減。フィルター掃除頻度は上がるが、満足度は非常に高い結果となりました。"
+      "score": 50,
+      "reviewCount": 4,
+      "positiveReviewCount": 0,
+      "comment": "カーペットの清掃能力については言及が少なく、一部でほつれが絡まる問題が報告されており、注意が必要です。"
     },
     "petHairRemoval": {
-      "score": 90,
-      "reviewCount": 8,
-      "positiveReviewCount": 7,
-      "comment": "petHairと同一。後方互換用。"
-    },
-    "nightQuietness": {
-      "score": 82,
-      "reviewCount": 9,
-      "positiveReviewCount": 7,
-      "comment": "吸引力の割に音は抑えられているが、最大モード時は一定の稼働音が響く。夜間は静音モード推奨だが、標準モードでも隣室であれば気にならないレベルとの口コミが多数を占めています。"
+      "score": 95,
+      "reviewCount": 3,
+      "positiveReviewCount": 3,
+      "comment": "ペットの毛の除去に関して高い評価を得ており、犬や猫の抜け毛を効率的に吸引し、ペットオーナーから絶賛されています。"
     },
     "quietness": {
-      "score": 82,
-      "reviewCount": 9,
-      "positiveReviewCount": 7,
-      "comment": "nightQuietnessと同一。後方互換用。"
+      "score": 90,
+      "reviewCount": 2,
+      "positiveReviewCount": 2,
+      "comment": "動作音が静かで、マンションなどの集合住宅でも周囲を気にせず使用できると好評です。"
     },
     "stepClimbing": {
-      "score": 80,
-      "reviewCount": 7,
-      "positiveReviewCount": 6,
-      "comment": "約2cmまでの段差はスムーズに乗り越え可能。ただし、薄手のラグや毛足の長い絨毯の端で稀に立ち往生するとの報告もあり、環境に合わせた事前の整理が推奨されるレベルの走破性です。"
+      "score": 60,
+      "reviewCount": 3,
+      "positiveReviewCount": 1,
+      "comment": "少々の段差は乗り越える一方で、家具や特定の段差で引っかかるという報告もあり、環境に依存する可能性があります。"
     },
     "maintenance": {
-      "score": 85,
-      "reviewCount": 12,
-      "positiveReviewCount": 10,
-      "comment": "ダストボックスの着脱が容易でゴミ捨ても簡単。水拭きモップの洗浄は手間だが、使い捨てモップを活用すれば時短が可能。全体的にパーツの分解・清掃が直感的に行える親切な設計です。"
+      "score": 65,
+      "reviewCount": 3,
+      "positiveReviewCount": 0,
+      "comment": "フィルター掃除の手間やゴミ捨て時の蓋の硬さ、散乱のリスクが指摘されており、メンテナンス性には改善の余地があります。"
     },
     "appStability": {
-      "score": 90,
-      "reviewCount": 11,
-      "positiveReviewCount": 10,
-      "comment": "EufyHomeアプリの安定性は高く、マッピング生成も非常に高速。エリア指定や進入禁止設定も正確に反映され、外出先からの操作でも接続トラブルが発生しにくい点が信頼されています。"
+      "score": 75,
+      "reviewCount": 9,
+      "positiveReviewCount": 6,
+      "comment": "マッピング機能は賢く、掃除範囲の指定や禁止エリア設定が便利と評価される一方、アプリ設定に手間取る声も聞かれます。"
     },
     "batteryLife": {
-      "score": 88,
-      "reviewCount": 8,
-      "positiveReviewCount": 7,
-      "comment": "一度の充電で広範囲の清掃が可能。100平米超の間取りでも一度も帰還せずに掃除を完了できるスタミナがあります。残量低下時の自動帰還・再開機能も非常にスムーズに動作します。"
+      "score": 40,
+      "reviewCount": 10,
+      "positiveReviewCount": 0,
+      "comment": "バッテリーは交換可能ですが、異常や故障、リコール対象となるケースが報告されており、信頼性に課題が見られます。"
     }
   },
   "radarChartData": {
@@ -167,378 +150,232 @@
       "電池"
     ],
     "values": [
-      92,
-      88,
       90,
-      82,
-      80,
-      85,
+      50,
+      95,
       90,
-      88
+      60,
+      65,
+      75,
+      40
     ]
   },
   "dataQuality": {
-    "totalReviews": 12,
-    "sampledReviews": 12,
-    "adoptedReviews": 12,
+    "totalReviews": 28,
+    "sampledReviews": 28,
+    "adoptedReviews": 28,
     "excludedReviews": 0,
-    "trustScore": 64,
-    "comment": "本文採用12件。reliabilityScore 64と整合。母数は小さく分布の一般化は限定的。"
+    "trustScore": 44.0,
+    "comment": "提供された28件のレビューを全て分析対象とし、製品の長所と短所を公平に評価しました。信頼度スコアは44点です。"
   },
-  "badges": [
-    "ペット毛90点",
-    "信頼度64点",
-    "年156h目安"
-  ],
   "reviewKeywords": {
     "positive": [
       {
-        "keyword": "デュアルタービン",
-        "count": 8
-      },
-      {
-        "keyword": "吸引力",
-        "count": 7
-      },
-      {
-        "keyword": "レーザーナビ",
+        "keyword": "満足・買ってよかった",
         "count": 6
       },
       {
-        "keyword": "アプリ安定",
-        "count": 6
-      },
-      {
-        "keyword": "水拭き併用",
-        "count": 5
-      },
-      {
-        "keyword": "コスパ",
-        "count": 5
-      },
-      {
-        "keyword": "静かめ",
-        "count": 4
-      },
-      {
-        "keyword": "ペット毛",
+        "keyword": "吸引力が高い",
         "count": 3
+      },
+      {
+        "keyword": "家事が楽になった",
+        "count": 2
+      },
+      {
+        "keyword": "静かで快適",
+        "count": 2
+      },
+      {
+        "keyword": "綺麗になる",
+        "count": 2
       }
     ],
     "negative": [
       {
-        "keyword": "水タンク小さめ",
+        "keyword": "故障・不具合",
+        "count": 8
+      },
+      {
+        "keyword": "期待を下回る点",
         "count": 3
       },
       {
-        "keyword": "長毛ラグ",
+        "keyword": "段差・家具で引っかかる",
         "count": 2
       },
       {
-        "keyword": "手動ゴミ捨て",
-        "count": 1
+        "keyword": "コードを巻き込む",
+        "count": 2
       },
       {
-        "keyword": "Wi-Fi 2.4GHz",
-        "count": 1
-      },
-      {
-        "keyword": "フィルター交換",
+        "keyword": "止まってしまう",
         "count": 1
       }
     ]
   },
-  "topComplaints": [
+  "successStrategies": [
     {
       "rank": 1,
-      "title": "水タンクの容量が小さく、給排水頻度が高い",
-      "complaint": "水タンクの容量が小さく、給排水頻度が高い",
-      "percentage": 25,
-      "reviewCount": 3,
-      "severity": "medium",
-      "details": "広範囲の水拭きで給水が途切れやすい、という層。主傾向の目安です。",
-      "solution": "広い範囲を一度に水拭きする場合は水量を「低」に設定してください。メーカー公式のトラブルシューティングにて水漏れ防止の清掃方法も確認可能です。",
-      "solutions": [
-        "水量を「低」にして走行距離を伸ばす",
-        "タンク周りの清掃を公式手順で行う"
-      ]
+      "issue": "頻発する故障とサポート対応の遅延",
+      "occurrenceRate": 28,
+      "occurrenceCount": 8,
+      "environmentalFactor": "製品の品質問題、または特定の環境下での負荷",
+      "technicalDescription": "バッテリー異常、センサーエラー、車輪やブラシモーターの故障など、多岐にわたるハードウェアの不具合が報告されています。",
+      "avoidanceStrategies": [
+        {
+          "method": "保証期間内の迅速なサポート連絡",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalRationale": "不具合発生時は速やかにメーカーサポートへ連絡し、保証期間内の修理・交換を依頼することが重要です。対応には時間がかかる場合があります。"
+        },
+        {
+          "method": "定期的なファームウェア更新",
+          "effectiveness": "低",
+          "technicalLevel": "初級",
+          "technicalRationale": "ソフトウェア起因のバグはファームウェア更新で改善される可能性がありますが、ハードウェア故障には効果が限定的です。"
+        }
+      ],
+      "preventionTips": "購入時に保証期間やサポート体制を確認し、不具合発生時の対応フローを把握しておくことが推奨されます。"
     },
     {
       "rank": 2,
-      "title": "毛足の長いラグで乗り上げエラーが発生する",
-      "complaint": "毛足の長いラグで乗り上げエラーが発生する",
-      "percentage": 15,
-      "reviewCount": 2,
-      "severity": "low",
-      "details": "長毛・段差まわりで停止文脈。主傾向の目安です。",
-      "solution": "2cm以上の段差や長毛ラグはアプリで「進入禁止エリア」に設定してください。公式サイトの設置ガイドにて回避すべき環境の詳細が確認可能です。",
-      "solutions": [
-        "進入禁止エリアでラグ周りを除外",
-        "清掃時のみラグを巻き上げる"
-      ]
+      "issue": "ケーブル巻き込みと段差での動作停止",
+      "occurrenceRate": 14,
+      "occurrenceCount": 4,
+      "environmentalFactor": "床に散らばったケーブル、特定の高さの段差や家具",
+      "technicalDescription": "強力な吸引力により細いケーブルを巻き込み断線させる可能性があり、また特定の段差や家具の脚に引っかかり停止することがあります。",
+      "avoidanceStrategies": [
+        {
+          "method": "清掃前の床の整理整頓",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "ケーブルや小物を床から片付けることで、巻き込みや引っかかりによる動作停止を効果的に防ぎ、スムーズな清掃を促します。"
+        },
+        {
+          "method": "進入禁止エリアの設定",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "アプリのマッピング機能で進入禁止エリアを設定し、ケーブルが多い場所や段差の多い場所への侵入を制限できます。"
+        }
+      ],
+      "preventionTips": "ロボット掃除機がスムーズに動けるよう、事前に部屋の環境を整えることが重要です。"
+    }
+  ],
+  "topComplaints": [
+    {
+      "title": "頻発する故障とサポート対応の遅延",
+      "percentage": 28,
+      "reviewCount": 8,
+      "description": "バッテリーやセンサー関連の故障報告が多く、メーカーサポートの対応が遅いという不満が複数寄せられています。",
+      "solution": "不具合発生時は速やかにメーカーサポートへ連絡し、保証期間内の修理・交換を依頼することが重要です。"
     },
     {
-      "rank": 3,
-      "title": "自動ゴミ収集機能がないため手動清掃が必要",
-      "complaint": "自動ゴミ収集機能がないため手動清掃が必要",
-      "percentage": 10,
-      "reviewCount": 1,
-      "severity": "low",
-      "details": "収集ドック非搭載のためゴミ捨ては手動、という整理。主傾向の目安です。",
-      "solution": "本モデルは収集機非搭載のため、2〜3日に一度のゴミ捨てが必要です。手間を減らすには、水洗い可能なダストボックスを清潔に保つことが推奨されます。",
-      "solutions": [
-        "捨てる日を習慣化",
-        "ダストボックスを乾いた状態で保つ"
-      ]
-    },
-    {
-      "rank": 4,
-      "title": "Wi-Fi設定時に2.4GHz帯の選択が必要",
-      "complaint": "Wi-Fi設定時に2.4GHz帯の選択が必要",
-      "percentage": 8,
-      "reviewCount": 1,
-      "severity": "medium",
-      "details": "帯の制約文脈。主傾向の目安です。",
-      "solution": "初期設定時はスマホを2.4GHz帯に接続してください。メーカーFAQにて、メッシュWi-Fi環境下での接続のコツや手順が詳しく解説されています。",
-      "solutions": [
-        "スマホを2.4GHzに一時接続",
-        "メーカーFAQのメッシュ手順を参照"
-      ]
-    },
-    {
-      "rank": 5,
-      "title": "消耗品（フィルター）の交換頻度が高い",
-      "complaint": "消耗品（フィルター）の交換頻度が高い",
-      "percentage": 5,
-      "reviewCount": 1,
-      "severity": "low",
-      "details": "フィルター寿命・手入れ文脈。主傾向の目安です。",
-      "solution": "吸引力を維持するため、フィルターは定期的に水洗いして乾燥させてください。公式サイトの使い方ガイドに従うことで、消耗品の寿命を延ばすことが可能です。",
-      "solutions": [
-        "水洗い後は完全乾燥",
-        "交換時期をアプリ通知で管理"
-      ]
+      "title": "ケーブル巻き込みと段差での動作停止",
+      "percentage": 14,
+      "reviewCount": 4,
+      "description": "床に散らばったケーブルを巻き込んだり、特定の段差や家具の脚に引っかかって停止する事例が報告されています。",
+      "solution": "清掃前に床の整理整頓を行い、アプリで進入禁止エリアを設定することで、これらの問題を回避できます。"
     }
   ],
   "attributeScores": {
     "petOwner": {
-      "overall": 90,
+      "overall": 88,
       "details": [
         {
           "field": "ペット毛吸引力",
-          "score": 92,
+          "score": 95,
+          "reviewCount": 3,
+          "comment": "ペットの毛を強力に吸引し、特に犬や猫の抜け毛に悩む家庭で高い効果を発揮します。"
+        },
+        {
+          "field": "床掃除",
+          "score": 90,
           "reviewCount": 8,
-          "comment": "強力な2000Pa×2の吸引力で、床に落ちたペットの抜け毛や砂を逃さずキャッチ。毎日の掃除が驚くほど楽になります。"
+          "comment": "フローリングの埃やゴミを効率的に除去し、ペットの足跡なども綺麗にします。"
         },
         {
-          "field": "ブラシへの毛絡み対策",
-          "score": 82,
-          "reviewCount": 7,
-          "comment": "絡まりにくい構造だが、長毛種の場合は週1回程度の確認を推奨。カッター付き掃除ツールで手入れは比較的簡単に行えます。"
-        },
-        {
-          "field": "静音性（ペット反応）",
-          "score": 85,
-          "reviewCount": 6,
-          "comment": "静音モードならペットが驚きにくい音量。稼働音が一定なため、慣れてしまえば横で寝ているという報告も見受けられます。"
-        },
-        {
-          "field": "アレルゲン対策",
-          "score": 88,
-          "reviewCount": 5,
-          "comment": "高性能フィルターが微細な粒子をキャッチ。排気がクリーンなため、ペットとの共同生活環境を衛生的に保つことができます。"
-        },
-        {
-          "field": "床面清掃能力",
-          "score": 92,
-          "reviewCount": 10,
-          "comment": "フローリングのベタつきも水拭き併用でスッキリ。毛だけでなく足跡などの汚れも一度の稼働で綺麗になるのが強みです。"
-        },
-        {
-          "field": "メンテナンス頻度",
-          "score": 84,
-          "reviewCount": 9,
-          "comment": "ダストボックスが大きめで頻繁なゴミ捨てが不要。ペット多頭飼いでも1〜2日に一度のチェックで運用可能な余裕があります。"
-        },
-        {
-          "field": "ダストボックス容量",
-          "score": 86,
-          "reviewCount": 8,
-          "comment": "コンパクトな見た目以上にゴミが入る設計。圧縮効果は期待できないが、日常的な抜け毛を収めるには十分なサイズを確保。"
-        },
-        {
-          "field": "コストパフォーマンス",
-          "score": 94,
-          "reviewCount": 12,
-          "comment": "この吸引力とアプリ性能で5万円台は破格。ペット特化の高額モデルと比較しても遜色ない実力を備えていると評価できます。"
+          "field": "メンテナンス",
+          "score": 65,
+          "reviewCount": 3,
+          "comment": "フィルター掃除やゴミ捨てに手間がかかるという声があり、改善の余地があります。"
         }
       ]
     },
     "apartment": {
-      "overall": 85,
+      "overall": 84,
       "details": [
         {
-          "field": "静音性（標準モード）",
-          "score": 84,
-          "reviewCount": 9,
-          "comment": "集合住宅でも昼間なら全く問題ない音量。壁を叩くような接触音もレーザーナビのおかげで極めて少なく、隣家への影響も軽微。"
+          "field": "静音性",
+          "score": 90,
+          "reviewCount": 2,
+          "comment": "動作音が静かで、マンションなどの集合住宅でも周囲を気にせず使用できると好評です。"
         },
         {
-          "field": "静音性（ゴミ収集）",
-          "score": 100,
-          "reviewCount": 12,
-          "comment": "自動ゴミ収集機非搭載モデルのため、深夜に突如爆音が発生するリスクがゼロ。マンション等の集合住宅でも気兼ねなく使えます。"
-        },
-        {
-          "field": "コンパクト設計",
-          "score": 80,
-          "reviewCount": 6,
-          "comment": "本体サイズは標準的だが、ダストドックがないため設置場所を選ばない。狭いワンルームでも家具の隙間に配置が容易です。"
+          "field": "床掃除",
+          "score": 90,
+          "reviewCount": 8,
+          "comment": "フローリングの清掃能力は高く、日常の埃やゴミをしっかり除去し、部屋を清潔に保ちます。"
         },
         {
           "field": "段差乗り越え",
-          "score": 85,
-          "reviewCount": 7,
-          "comment": "賃貸特有の低い敷居も軽快にクリア。厚手の玄関マットなどでも止まることなく、家全体をスムーズに回って掃除してくれます。"
-        },
-        {
-          "field": "狭い場所での動作",
-          "score": 88,
-          "reviewCount": 8,
-          "comment": "正確なマッピングにより椅子の脚周りなども丁寧に清掃。無駄な接触を避け、狭い廊下や角も効率よく走行してくれます。"
-        },
-        {
-          "field": "近隣への配慮",
-          "score": 90,
-          "reviewCount": 5,
-          "comment": "衝突防止センサーが優秀で、壁への激突音がほとんどしません。夜間や早朝に予約設定をしてもトラブルになりにくい安心感。"
-        },
-        {
-          "field": "設置スペース",
-          "score": 92,
-          "reviewCount": 10,
-          "comment": "充電ステーションが小型で、家具の隙間などにも収まりが良い。圧迫感がないため、インテリアを損なわずに配置可能です。"
-        },
-        {
-          "field": "価格帯",
-          "score": 86,
-          "reviewCount": 12,
-          "comment": "一人暮らしやマンション住まいには十分すぎる多機能。高機能レーザー搭載機の中では導入しやすい戦略的な価格設定です。"
+          "score": 60,
+          "reviewCount": 3,
+          "comment": "小さな段差は乗り越えますが、家具の脚や特定の段差で引っかかることがあり注意が必要です。"
         }
       ]
     },
     "workingProfessional": {
-      "overall": 88,
+      "overall": 64,
       "details": [
         {
-          "field": "自動化レベル",
-          "score": 90,
-          "reviewCount": 11,
-          "comment": "一度設定すれば完全に自動で掃除が完了。マッピングが正確なため、帰宅後に掃除が途中で止まっているストレスがありません。"
-        },
-        {
-          "field": "スケジュール機能",
-          "score": 92,
-          "reviewCount": 10,
-          "comment": "曜日ごとの時間指定がスマホで簡単に行える。出社後の決まった時間に稼働させ、帰宅時には床が綺麗な状態を実現できます。"
-        },
-        {
-          "field": "リモート操作",
-          "score": 94,
+          "field": "アプリ安定性",
+          "score": 75,
           "reviewCount": 9,
-          "comment": "急な来客前でも会社から掃除を開始可能。アプリのUIが直感的なため、特定の部屋だけ掃除させる指定も数タップで完了。"
+          "comment": "マッピング機能は便利ですが、アプリの初期設定に手間取ったり、安定性に課題があるとの声もあります。"
         },
         {
-          "field": "メンテナンス頻度",
-          "score": 85,
-          "reviewCount": 12,
-          "comment": "ダストボックスとフィルターの水洗いが可能。週末のわずかな時間でメンテナンスが完了するため、多忙な方に適しています。"
+          "field": "メンテナンス",
+          "score": 65,
+          "reviewCount": 3,
+          "comment": "ゴミ捨てやフィルター清掃に手間がかかるため、忙しい共働き世帯には負担となる可能性があります。"
         },
         {
-          "field": "時短効果",
-          "score": 96,
-          "reviewCount": 12,
-          "comment": "床掃除の時間をゼロにできる価値は絶大。水拭きも同時に終わるため、家事にかける時間を大幅に削減し、自分時間を創出。"
-        },
-        {
-          "field": "初期設定の簡単さ",
-          "score": 90,
-          "reviewCount": 8,
-          "comment": "Wi-Fi接続からアプリの連携までガイドに従うだけで完了。機械が苦手な方でも数分で使い始めることができる設計です。"
-        },
-        {
-          "field": "外出中の安心感",
-          "score": 92,
-          "reviewCount": 7,
-          "comment": "リアルタイムで掃除の軌跡を確認可能。エラーが発生してもプッシュ通知で知らせてくれるため、状況を常に把握できます。"
-        },
-        {
-          "field": "アプリの使いやすさ",
-          "score": 94,
-          "reviewCount": 11,
-          "comment": "Ankerらしい分かりやすいUI。アップデートも頻繁に行われ、機能が進化し続けるため長く安心して使い続けられます。"
+          "field": "バッテリー",
+          "score": 40,
+          "reviewCount": 10,
+          "comment": "バッテリーの故障やリコール報告が多く、長期間の安定した運用に懸念が残ります。"
         }
       ]
     },
     "familyHome": {
-      "overall": 90,
+      "overall": 63,
       "details": [
         {
-          "field": "広範囲対応",
-          "score": 94,
-          "reviewCount": 9,
-          "comment": "複数の部屋がある広い家でもレーザーナビが迷わず対応。複雑な間取りも一度の走行で完璧にマッピングして記憶します。"
-        },
-        {
-          "field": "複数部屋対応",
-          "score": 92,
-          "reviewCount": 8,
-          "comment": "ドアが開いていれば家中を効率的に掃除。マルチフロアマイニング機能で1階と2階のマップを分けて管理できるのが便利。"
-        },
-        {
-          "field": "子供の食べこぼし対応",
-          "score": 88,
-          "reviewCount": 10,
-          "comment": "強力な吸引力でパン屑などの固形物も一掃。水拭き機能を併用すれば、食べこぼしのベタつき跡も綺麗に取り除けます。"
-        },
-        {
-          "field": "家族全員の使いやすさ",
-          "score": 86,
-          "reviewCount": 6,
-          "comment": "本体のボタン一つで全自動清掃が開始できるシンプルさ。アプリを使わない高齢者や子供でも簡単に操作が可能です。"
-        },
-        {
-          "field": "子供の安全性",
+          "field": "床掃除",
           "score": 90,
-          "reviewCount": 5,
-          "comment": "チャイルドロック機能があり、誤操作を防止可能。障害物検知が優しいため、子供のおもちゃなどを激しく弾き飛ばしません。"
-        },
-        {
-          "field": "バッテリー持続時間",
-          "score": 92,
           "reviewCount": 8,
-          "comment": "大容量バッテリーで一度に180分の稼働が可能。一軒家でも途中で息切れすることなく、隅々まで掃除をやり遂げます。"
+          "comment": "広範囲のフローリング清掃に優れ、子供の食べこぼしや日常の汚れを効果的に除去します。"
         },
         {
-          "field": "ランニングコスト",
-          "score": 88,
+          "field": "バッテリー",
+          "score": 40,
           "reviewCount": 10,
-          "comment": "消耗品の入手が容易で価格も良心的。長く使う上での維持費が安く抑えられるため、家計に優しいロボット掃除機です。"
+          "comment": "バッテリーの故障報告が多く、広い家での連続使用には不安が残る可能性があります。"
         },
         {
-          "field": "総合コストパフォーマンス",
-          "score": 95,
-          "reviewCount": 12,
-          "comment": "5万円台でこの機能性は競合他社を圧倒。家族が多い家庭にとって、この導入のしやすさと性能のバランスは最高峰です。"
+          "field": "カーペット",
+          "score": 50,
+          "reviewCount": 4,
+          "comment": "カーペットの清掃能力は限定的で、ほつれが絡まるなどの問題が報告されています。"
         }
       ]
     }
   },
-  "cta": {
-    "amazon": "https://www.amazon.co.jp/s?k=Eufy+RoboVac+X8+Hybrid",
-    "rakuten": "https://search.rakuten.co.jp/search/mall/Eufy+RoboVac+X8+Hybrid/"
-  },
-  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-eufy-robovac-x8-hybrid.html",
-  "manufacturerOfficialAffiliateUrl": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3766176&pid=892603477&vc_url=https%3A%2F%2Fwww.ankerjapan.com%2Fproducts%2Ft2261%3F_pos%3D12%26_fid%3D6afd318d9%26_ss%3Dc%3Fvariant%3D41282496856225",
-  "manufacturerOfficialAffiliateTrackingPixelUrl": "https://ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3766176&pid=892603477"
+  "resaleValue": null,
+  "affiliate": {
+    "moshimo": "<!-- START MoshimoAffiliateEasyLink -->\r\n<script type=\"text/javascript\">\r\n(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;\r\nb[a]=b[a]||function(){arguments.currentScript=c.currentScript\r\n||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};\r\nc.getElementById(a)||(d=c.createElement(f),d.src=g,\r\nd.id=a,e=c.getElementsByTagName(\"body\")[0],e.appendChild(d))})\r\n(window,document,\"script\",\"//dn.msmstatic.com/site/cardlink/bundle.js?20220329\",\"msmaflink\");\r\nmsmaflink({\"n\":\"【ポイント5倍：4月24日20時〜4月27日9時59分まで】 [中古] Eufy by Anker ロボット掃除機 RoboVac X8 Hybrid t2261511-36 [良い(B)]\",\"b\":\"\",\"t\":\"\",\"d\":\"https:\\/\\/thumbnail.image.rakuten.co.jp\",\"c_p\":\"\\/@0_mall\\/outl\\/cabinet\",\"p\":[\"\\/10380909\\/imgrc0094068125.jpg\",\"\\/10380909\\/imgrc0094068126.jpg\",\"\\/10509996\\/imgrc0094697427.jpg\"],\"u\":{\"u\":\"https:\\/\\/item.rakuten.co.jp\\/outl\\/rc_ityj0onz8tds_ppyq\\/\",\"t\":\"rakuten\",\"r_v\":\"\"},\"v\":\"2.1\",\"b_l\":[{\"id\":1,\"u_tx\":\"楽天市場で見る\",\"u_bc\":\"#f76956\",\"u_url\":\"https:\\/\\/item.rakuten.co.jp\\/outl\\/rc_ityj0onz8tds_ppyq\\/\",\"a_id\":5483003,\"p_id\":54,\"pl_id\":27059,\"pc_id\":54,\"s_n\":\"rakuten\",\"u_so\":1},{\"id\":2,\"u_tx\":\"Yahoo!ショッピングで見る\",\"u_bc\":\"#66a7ff\",\"u_url\":\"https:\\/\\/shopping.yahoo.co.jp\\/search?first=1\\u0026p=%E3%80%90%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%885%E5%80%8D%EF%BC%9A4%E6%9C%8824%E6%97%A520%E6%99%82%E3%80%9C4%E6%9C%8827%E6%97%A59%E6%99%8259%E5%88%86%E3%81%BE%E3%81%A7%E3%80%91%20%5B%E4%B8%AD%E5%8F%A4%5D%20Eufy%20by%20Anker%20%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%20RoboVac%20X8%20Hybrid%20t2261511-36%20%5B%E8%89%AF%E3%81%84(B)%5D\",\"a_id\":5483010,\"p_id\":1225,\"pl_id\":27061,\"pc_id\":1925,\"s_n\":\"yahoo\",\"u_so\":2}],\"eid\":\"7Vsf1\",\"s\":\"s\"});\r\n</script>\r\n<div id=\"msmaflink-7Vsf1\">リンク</div>\r\n<!-- MoshimoAffiliateEasyLink END -->",
+    "direct": "<a href=\"//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3766176&pid=892603477&vc_url=https%3A%2F%2Fwww.ankerjapan.com%2Fproducts%2Ft2261%3F_pos%3D12%26_fid%3D6afd318d9%26_ss%3Dc%3Fvariant%3D41282496856225\" rel=\"nofollow\"><img src=\"//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3766176&pid=892603477\" height=\"1\" width=\"0\" border=\"0\">Eufy RoboVac X8 Hybrid</a>",
+    "hpPublish": true
+  }
 }

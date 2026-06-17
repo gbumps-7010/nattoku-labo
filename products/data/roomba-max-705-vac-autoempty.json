@@ -2,150 +2,150 @@
   "productId": "roomba-max-705-vac-autoempty",
   "productName": "Roomba® Max 705 Vac + AutoEmpty™",
   "manufacturer": "iRobot",
-  "modelNumber": "Max 705 (W155060)",
-  "imageUrl": "https://m.media-amazon.com/images/I/71z7-Y3K4RL._AC_SL1500_.jpg",
-  "overallRating": 4.7,
-  "totalReviews": 105,
+  "modelNumber": "W155020",
+  "imageUrl": "https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/03016688/20260219_review_2nen/705v_tm_2nen_v3.jpg",
+  "overallRating": 3.98,
+  "totalReviews": 226,
   "price": 98800,
-  "reliabilityScore": 88,
-  "asin": "B0F1FFDWQ6",
-  "metaTitle": "Roomba Max 705 詳細分析 | 180倍の吸引力と自動ゴミ収集の真価を検証",
-  "metaDescription": "Roomba Max 705（Vac + AutoEmpty）の採用105件を分析。吸引・カーペット・ペット毛・ゴミ収集音・メンテ・iRobot Homeの主傾向、設置面の注意を整理。",
+  "reliabilityScore": 85.0,
+  "asin": "",
+  "metaTitle": "Roomba® Max 705 Vac + AutoEmpty™ 詳細分析 | 強力吸引と自動ゴミ収集の真実",
+  "metaDescription": "Roomba® Max 705 Vac + AutoEmpty™の226件のレビューを解析。強力な吸引力、賢いナビゲーション、自動ゴミ収集など、その真価を公開。",
+  "keywords": [
+    "ルンバ",
+    "Max 705 Vac",
+    "自動ゴミ収集",
+    "ロボット掃除機",
+    "ペットの毛",
+    "強力吸引"
+  ],
   "categoryC": {
     "userSatisfaction": {
-      "score": 95,
-      "reviewCount": 105,
-      "comment": "吸引力と自動ゴミ収集で負担が大きく減った、という層向け。カーペット清掃への納得が、採用レビューで一貫して高い。主傾向の目安です。"
+      "score": 90,
+      "reviewCount": 226,
+      "comment": "多くのユーザーが吸引力と自動ゴミ収集に高い満足度を示し、日々の掃除が格段に楽になったと評価しています。"
     },
     "repurchaseIntention": {
-      "percentage": 88,
-      "reviewCount": 92,
-      "comment": "iRobot文脈での耐久性・清掃ルート習慣を踏まえ、同系列再検討の声が多い。主傾向の目安です。"
+      "percentage": 85,
+      "reviewCount": 226,
+      "comment": "旧モデルからの買い替えユーザーが多く、ルンバの進化を実感し、今後も使い続けたいという高い再購入意向が見られます。"
     },
     "failureRate": {
-      "percentage": 3,
-      "reviewCount": 105,
+      "percentage": 12,
+      "reviewCount": 226,
       "breakdown": {
-        "hardware": 1,
-        "software": 1,
-        "environmental": 1
+        "hardware": 4,
+        "software": 4,
+        "environmental": 4
       },
-      "comment": "初期不良の多発の印象は限定的。一部でWi-Fi初期設定の手間。運用後の重故障言及は相対的に少なめ。主傾向の目安です。"
+      "comment": "故障・不具合の報告は全体の約12%で、バッテリー問題やブラシ外れ、アプリの不具合、ペットの排泄物巻き込みが主な原因です。"
     }
   },
   "reliability": {
-    "score": 88,
+    "score": 85.0,
     "dataAdequacy": {
       "score": 80,
-      "percentage": 80,
       "weight": 60,
-      "description": "採用105件。主要掲出元をまたぎ、母数として主傾向の把握に十分。チャネル固有名は方針で非記載。"
+      "description": "レビュー総数226件は十分なデータ量であり、製品の全体的な評価を把握するのに適しています。"
     },
     "consistency": {
-      "score": 100,
-      "percentage": 100,
+      "percentage": 95,
       "weight": 30,
-      "description": "掲出元の間で低い星のばらつきが小さく、製品体験の方向性が揃いやすい。ラベル相当: 高い一貫性（参考100）。"
+      "description": "楽天での平均評価が4.4と高く、レビュー間の評価に大きな乖離がなく、一貫したユーザー体験が伺えます。",
+      "score": 95
     },
     "freshness": {
-      "score": 100,
-      "percentage": 100,
+      "score": 85,
       "weight": 10,
-      "description": "2026年4月前後の体験が多く、現行アプリ・ファーム文脈を反映しやすい。鮮度目安は高い（参考100）。"
+      "description": "直近30日以内のレビューが全体の13.7%を占め、比較的新しい情報に基づいた評価が多く含まれています。"
     }
   },
   "updateInfo": {
-    "lastUpdated": "2026-04-18",
-    "firmwareVersion": "3.24.1",
-    "note": "地図作成の迷いの少なさの文脈と、清掃完了までの印象時間の短縮（体験で約15%等）の声。掲出価格は変動。ファーム番号は参考。"
+    "lastUpdated": "2026-06-15",
+    "firmwareVersion": "",
+    "note": "最新レビューは2026年6月12日。全体的に高評価で、特に吸引力と自動ゴミ収集機能への満足度が高い傾向です。"
   },
   "timeSaving": {
-    "dailyMinutes": 19,
-    "monthlyHours": 9.5,
-    "annualHours": 116,
-    "workDaysEquivalent": 14.5,
-    "methodology": "毎日の床掃除約15分相当と、週1前後のゴミ捨て・点検作業の削減を仮定し、代表値として年約116時間（月約9.5時間・1日平均約19分）の目安。世帯で変動します。"
+    "dailyMinutes": 45,
+    "monthlyHours": 22.5,
+    "annualHours": 270,
+    "workDaysEquivalent": 33.75,
+    "methodology": "1日あたり45分の掃除時間を節約できると仮定し、月間・年間、労働日数換算で算出しています。"
   },
   "operationalCost": {
-    "daily": 34,
-    "dailyNote": "年間12,400円（月1,033円前後）の代表。内訳例: 紙パック3個入り1,980円を年2回程度、エッジブラシ520円を半年×2、ダストカット1,200円を年2回、デュアルアクションブラシ5,000円を年1回。正規品・実勢で変動。合算は紙3,960＋1,040＋2,400＋5,000＝12,400。",
-    "monthly": 1033,
-    "annual": 12400,
+    "daily": 42,
+    "dailyNote": "消耗品（ゴミ袋、フィルター、ブラシ）の実質的な日割りコスト",
+    "monthly": 1300,
+    "annual": 15500,
     "consumables": [
       {
-        "item": "交換用AllergenLock紙パック",
-        "replacementFrequency": "2ヶ月ごと",
-        "unitCost": 1980,
-        "annualCost": 3960
-      },
-      {
-        "item": "エッジクリーニングブラシ",
-        "replacementFrequency": "6ヶ月ごと",
-        "unitCost": 520,
-        "annualCost": 1040
+        "item": "自動ゴミ収集機用紙パック",
+        "replacementFrequency": "約75日ごと",
+        "unitCost": 1030,
+        "annualCost": 5150
       },
       {
         "item": "ダストカットフィルター",
-        "replacementFrequency": "6ヶ月ごと",
-        "unitCost": 1200,
-        "annualCost": 2400
+        "replacementFrequency": "約3ヶ月ごと",
+        "unitCost": 1030,
+        "annualCost": 4120
       },
       {
-        "item": "デュアルアクションブラシ（セット）",
-        "replacementFrequency": "1年ごと",
-        "unitCost": 5000,
-        "annualCost": 5000
+        "item": "デュアルアクションブラシ",
+        "replacementFrequency": "約12ヶ月ごと",
+        "unitCost": 6200,
+        "annualCost": 6200
       }
     ]
   },
   "performanceAnalysis": {
     "floorCleaning": {
-      "score": 97,
-      "reviewCount": 98,
-      "positiveReviewCount": 95,
-      "comment": "180倍文脈の吸引力でフローリング目地の微粉も拾い上げやすい、という層向け。清掃後の足裏感覚の好評。主傾向の目安です。"
+      "score": 90,
+      "reviewCount": 45,
+      "positiveReviewCount": 38,
+      "comment": "吸引力は非常に高く、フローリングやカーペットの奥のゴミまでしっかり除去。隅々まで丁寧に掃除し、床が常に清潔に保たれると高評価です。"
     },
     "carpetCleaning": {
-      "score": 96,
-      "reviewCount": 85,
-      "positiveReviewCount": 82,
-      "comment": "パワーブースト文脈で絨毯奥の塵のかき出しに好印象。他機からの買い替え層の評価が目立つ。主傾向の目安です。"
+      "score": 80,
+      "reviewCount": 22,
+      "positiveReviewCount": 15,
+      "comment": "カーペットの毛足の奥のゴミやペットの毛も強力に吸引。厚手のカーペットも乗り越えるが、柔らかい絨毯では巻き込み停止の報告も。"
     },
     "petHairRemoval": {
-      "score": 98,
-      "reviewCount": 55,
-      "positiveReviewCount": 54,
-      "comment": "デュアルアクションのゴム系ブラシ文脈で毛絡みが少なめ。大型犬抜け毛の回収、という層向け。主傾向の目安です。"
+      "score": 92,
+      "reviewCount": 39,
+      "positiveReviewCount": 30,
+      "comment": "ペットの毛の吸引力は非常に高く、カーペットに絡んだ毛も強力に除去。多くのペットオーナーがその効果に満足しています。"
     },
     "quietness": {
       "score": 70,
-      "reviewCount": 65,
-      "positiveReviewCount": 32,
-      "comment": "走行音は普通程度の声。自動集塵の吸い上げ音は大きく、集合住宅では時間帯設計とアプリ制御が有効。主傾向の目安です。"
+      "reviewCount": 24,
+      "positiveReviewCount": 10,
+      "comment": "掃除中の動作音は以前より静かになったと評価される一方、自動ゴミ収集時の音が非常に大きい点が多くのレビューで指摘されています。"
     },
     "stepClimbing": {
-      "score": 85,
-      "reviewCount": 42,
-      "positiveReviewCount": 36,
-      "comment": "2cm前後の段差文脈で概ね乗り越え。薄い玄関マット・フリンジ付きラグは巻き込み易い。主傾向の目安です。"
+      "score": 80,
+      "reviewCount": 33,
+      "positiveReviewCount": 25,
+      "comment": "1～2cm程度の段差やカーペットはスムーズに乗り越え、落下防止機能も良好。ただし、高さのある段差には対応できない場合もあります。"
     },
     "maintenance": {
-      "score": 94,
-      "reviewCount": 90,
-      "positiveReviewCount": 85,
-      "comment": "最大60日分の文脈でゴミ捨て頻度の低減。パーツの分解の少なさと、月1程度の簡易拭きで保てる、という層向け。主傾向の目安です。"
+      "score": 85,
+      "reviewCount": 28,
+      "positiveReviewCount": 20,
+      "comment": "自動ゴミ収集機能は非常に便利で、ゴミ捨ての手間を大幅に削減。しかし、ブラシの絡まりや消耗品コスト、ゴミ排出時の音に不満も。"
     },
     "appStability": {
-      "score": 92,
-      "reviewCount": 60,
-      "positiveReviewCount": 55,
-      "comment": "iRobot Homeの地図・禁入ゾーンの再現性に好手応。スケジュール可視性の好評。主傾向の目安です。"
+      "score": 75,
+      "reviewCount": 88,
+      "positiveReviewCount": 50,
+      "comment": "マッピング機能は高速かつ正確で、部屋ごとの清掃設定や外出先からの操作は高評価。しかし、初期設定の難しさやアプリ接続の不安定さに不満も。"
     },
     "batteryLife": {
-      "score": 88,
-      "reviewCount": 52,
-      "positiveReviewCount": 46,
-      "comment": "3LDK程度文脈で一充電完走系の声。残量切れからの帰庫再開。主傾向の目安です。"
+      "score": 65,
+      "reviewCount": 19,
+      "positiveReviewCount": 8,
+      "comment": "丁寧な清掃によるバッテリー消費の多さや、充電の持ちに関する不満が見られます。広範囲の清掃では途中で充電に戻ることも。"
     }
   },
   "radarChartData": {
@@ -160,175 +160,239 @@
       "電池"
     ],
     "values": [
-      97,
-      96,
-      98,
-      70,
-      85,
-      94,
+      90,
+      80,
       92,
-      88
+      70,
+      80,
+      85,
+      75,
+      65
     ]
   },
   "dataQuality": {
-    "totalReviews": 105,
-    "sampledReviews": 105,
-    "adoptedReviews": 101,
-    "excludedReviews": 4,
-    "trustScore": 88,
-    "comment": "採択前は105件母集団。重複・薄内容を4件除き本文採用101件で統計。reliabilityScore 88と整合。個人名・掲出元の固有名は方針で非記載。"
+    "totalReviews": 226,
+    "sampledReviews": 226,
+    "adoptedReviews": 202,
+    "excludedReviews": 24,
+    "trustScore": 85.0,
+    "comment": "提供された全226件のレビューを分析し、信頼度スコア85.0を算出。一部、情報不足や重複レビューを除外しています。"
   },
   "reviewKeywords": {
     "positive": [
       {
-        "keyword": "吸引力",
-        "count": 72
+        "keyword": "満足・買ってよかった",
+        "count": 59
       },
       {
-        "keyword": "ペットの毛",
-        "count": 55
+        "keyword": "吸引力が高い",
+        "count": 49
       },
       {
-        "keyword": "ゴミ捨て不要",
-        "count": 48
+        "keyword": "静かで快適",
+        "count": 18
       },
       {
-        "keyword": "地図が正確",
-        "count": 35
+        "keyword": "使いやすい・便利",
+        "count": 14
       },
       {
-        "keyword": "メンテが楽",
-        "count": 28
+        "keyword": "綺麗になる",
+        "count": 11
       }
     ],
     "negative": [
       {
-        "keyword": "収集音がうるさい",
-        "count": 30
+        "keyword": "故障・不具合",
+        "count": 27
       },
       {
-        "keyword": "ベースが大きい",
-        "count": 15
-      },
-      {
-        "keyword": "価格が高い",
-        "count": 10
-      },
-      {
-        "keyword": "Wi-Fi設定",
-        "count": 6
-      },
-      {
-        "keyword": "マットを巻き込む",
+        "keyword": "段差・家具で引っかかる",
         "count": 5
+      },
+      {
+        "keyword": "コードを巻き込む",
+        "count": 5
+      },
+      {
+        "keyword": "動作音が気になる",
+        "count": 5
+      },
+      {
+        "keyword": "止まってしまう",
+        "count": 4
       }
     ]
   },
   "successStrategies": [
     {
       "rank": 1,
-      "issue": "クリーンベースへのゴミ排出音",
-      "occurrenceRate": 28,
-      "occurrenceCount": 30,
-      "environmentalFactor": "集合住宅・深夜帯",
-      "technicalDescription": "ベース吸い上げの数十秒、体感で大きい音（層では飛行機比喩。目安70〜80dB級の文脈）。測定条件で変動。",
+      "issue": "ペットの排泄物回避機能の不確実性",
+      "occurrenceRate": 5,
+      "occurrenceCount": 11,
+      "environmentalFactor": "床に放置されたペットの排泄物",
+      "technicalDescription": "AIカメラとLiDARによる物体認識が、特定の条件下で排泄物を誤認識または回避できない場合があるため、巻き込み事故が発生します。",
       "avoidanceStrategies": [
         {
-          "method": "おやすみモードの設定",
+          "method": "稼働前の床面確認と障害物除去",
           "effectiveness": "高",
           "technicalLevel": "初級",
-          "technicalRationale": "iRobot Homeで夜間帯の自動集塵を止める。メーカー案内の手順に沿う。主傾向の目安です。"
+          "technicalRationale": "AIカメラの視認性を確保し、排泄物などの障害物を事前に取り除くことで、誤認識や巻き込みのリスクを最小限に抑えます。"
         },
         {
-          "method": "防振マットの設置",
+          "method": "ペットの排泄場所の特定と進入禁止エリア設定",
           "effectiveness": "中",
-          "technicalLevel": "初級",
-          "technicalRationale": "ベース下の防振で床伝いの振動を抑える。メーカー・サポート文脈で併用例。主傾向の目安です。"
+          "technicalLevel": "中級",
+          "technicalRationale": "ペットの排習性を把握し、排泄しやすい場所をアプリで進入禁止エリアに設定することで、事故を未然に防ぎます。"
         }
       ],
-      "preventionTips": "家族の不在帯に集塵を合わせると、聴感上の影響を小さくしやすい。主傾向の目安です。"
+      "preventionTips": "ロボット掃除機稼働前には必ず床に障害物がないか確認し、特にペットのいる家庭では排泄物の有無をチェックしましょう。"
+    },
+    {
+      "rank": 2,
+      "issue": "初期設定とアプリ操作の複雑さ",
+      "occurrenceRate": 15,
+      "occurrenceCount": 34,
+      "environmentalFactor": "Wi-Fi環境やユーザーのリテラシー",
+      "technicalDescription": "Wi-Fi接続やアプリの初期設定が複雑で、特にIT機器に不慣れなユーザーにとって、設定完了までのハードルが高い傾向にあります。",
+      "avoidanceStrategies": [
+        {
+          "method": "公式サイトの詳しい設定ガイド参照",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "メーカー公式サイトには詳細な設定ガイドやFAQが用意されており、手順に沿って進めることで解決できることが多いです。"
+        },
+        {
+          "method": "メーカーカスタマーサポートの活用",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "不明な点があれば、専門のサポートセンターに問い合わせることで、個別の状況に応じた的確なアドバイスが得られます。"
+        }
+      ],
+      "preventionTips": "購入前にアプリのレビューや設定手順を確認し、必要に応じてサポート体制も考慮に入れると良いでしょう。"
     }
   ],
   "topComplaints": [
     {
-      "title": "ベースの設置サイズと左右の余白",
-      "complaint": "ベースの設置サイズと左右の余白",
-      "description": "自動ゴミ収集機が大きく、左右に各50cm前後の余白推奨の文脈があり、廊下幅や家具脇の設置に悩む声。",
-      "percentage": 14,
-      "reviewCount": 15,
-      "severity": "medium",
-      "solution": "公式FAQ文脈では障害物が少なければ左右約30cmでも帰還例。光沢壁付近の誤検知を避ける等の帰庫失敗低減策の声。主傾向の目安です。"
+      "title": "自動ゴミ収集ステーションの動作音",
+      "percentage": 20,
+      "reviewCount": 45,
+      "description": "本体からゴミを自動で収集する際の音が非常に大きく、特に夜間や早朝の使用時に気になるという声が多く聞かれます。",
+      "solution": "アプリで清掃スケジュールを設定し、外出中や日中の時間帯にゴミ収集が行われるように調整することで、騒音の影響を軽減できます。"
+    },
+    {
+      "title": "本体高さによる家具下への進入制限",
+      "percentage": 8,
+      "reviewCount": 18,
+      "description": "LiDARセンサーの突起により本体の高さが増し、以前のモデルでは進入できたベッドやソファの下に潜り込めなくなったという声があります。",
+      "solution": "購入前に家具下の高さを測定し、製品仕様と比較することで、掃除可能範囲を事前に確認できます。"
+    },
+    {
+      "title": "バッテリー持続時間の不足",
+      "percentage": 8,
+      "reviewCount": 19,
+      "description": "丁寧な清掃モードではバッテリー消費が多く、広範囲の清掃では途中で充電に戻る頻度が高いという不満が見られます。",
+      "solution": "清掃モードを調整したり、部屋を分割して清掃することで、一度の充電で完了できる範囲を広げることが可能です。"
     }
   ],
   "attributeScores": {
     "petOwner": {
-      "overall": 97,
+      "overall": 90,
       "details": [
         {
-          "field": "ペット毛清掃力",
-          "score": 98,
-          "reviewCount": 55,
-          "comment": "毛絡みが少なめなブラシ文脈と吸引の掛け合わせ。換毛期の負担低減を挙げる層。主傾向の目安です。"
+          "field": "ペット毛吸引力",
+          "score": 92,
+          "reviewCount": 39,
+          "comment": "ペットの毛を強力に吸引し、カーペットに絡んだ毛も除去。多くのペットオーナーから高い評価を得ています。"
+        },
+        {
+          "field": "床掃除",
+          "score": 90,
+          "reviewCount": 45,
+          "comment": "フローリングやカーペットの奥のゴミまでしっかり除去し、床が常に清潔に保たれると高評価です。"
+        },
+        {
+          "field": "メンテナンス",
+          "score": 85,
+          "reviewCount": 28,
+          "comment": "自動ゴミ収集機能は非常に便利で、ゴミ捨ての手間を大幅に削減。しかし、ブラシの絡まりや消耗品コストに不満も。"
         }
       ]
     },
     "apartment": {
-      "overall": 81,
+      "overall": 78,
       "details": [
         {
-          "field": "騒音配慮運用",
-          "score": 75,
-          "reviewCount": 65,
-          "comment": "清掃力は好意的だが、集塵音対策の設計が必須の層。アプリの時間帯制御で使い分け。主傾向の目安です。"
+          "field": "静音性",
+          "score": 70,
+          "reviewCount": 24,
+          "comment": "掃除中の動作音は改善されたが、自動ゴミ収集時の音が非常に大きく、集合住宅での使用では注意が必要です。"
+        },
+        {
+          "field": "床掃除",
+          "score": 90,
+          "reviewCount": 45,
+          "comment": "フローリングやカーペットの奥のゴミまでしっかり除去し、床が常に清潔に保たれると高評価です。"
+        },
+        {
+          "field": "段差乗り越え",
+          "score": 80,
+          "reviewCount": 33,
+          "comment": "1～2cm程度の段差やカーペットはスムーズに乗り越え、落下防止機能も良好。ただし、高さのある段差には対応できない場合もあります。"
         }
       ]
     },
     "workingProfessional": {
-      "overall": 92,
+      "overall": 77,
       "details": [
         {
-          "field": "完全自動化",
-          "score": 96,
-          "reviewCount": 105,
-          "comment": "数ヶ月に一度の捨て頻度文脈と、スケジュール忠実性の掛け合わせ。主傾向の目安です。"
+          "field": "アプリ安定性",
+          "score": 75,
+          "reviewCount": 88,
+          "comment": "マッピング機能や遠隔操作は便利だが、初期設定の難しさやアプリ接続の不安定さが一部で指摘されています。"
+        },
+        {
+          "field": "メンテナンス",
+          "score": 85,
+          "reviewCount": 28,
+          "comment": "自動ゴミ収集機能は非常に便利で、ゴミ捨ての手間を大幅に削減。しかし、ブラシの絡まりや消耗品コストに不満も。"
+        },
+        {
+          "field": "バッテリー",
+          "score": 65,
+          "reviewCount": 19,
+          "comment": "丁寧な清掃によるバッテリー消費の多さや、充電の持ちに関する不満が見られます。広範囲の清掃では途中で充電に戻ることも。"
         }
       ]
     },
     "familyHome": {
-      "overall": 94,
+      "overall": 80,
       "details": [
         {
-          "field": "マルチエリア清掃",
-          "score": 94,
-          "reviewCount": 52,
-          "comment": "戸建の広め間取りでも、マッピングの辿り方に好手応。子どもの食べこぼし回収。主傾向の目安です。"
+          "field": "床掃除",
+          "score": 90,
+          "reviewCount": 45,
+          "comment": "フローリングやカーペットの奥のゴミまでしっかり除去し、床が常に清潔に保たれると高評価です。"
+        },
+        {
+          "field": "バッテリー",
+          "score": 65,
+          "reviewCount": 19,
+          "comment": "丁寧な清掃によるバッテリー消費の多さや、充電の持ちに関する不満が見られます。広範囲の清掃では途中で充電に戻ることも。"
+        },
+        {
+          "field": "カーペット",
+          "score": 80,
+          "reviewCount": 22,
+          "comment": "カーペットの毛足の奥のゴミやペットの毛も強力に吸引。厚手のカーペットも乗り越えるが、柔らかい絨毯では巻き込み停止の報告も。"
         }
       ]
     }
   },
-  "resaleValue": {
-    "newPrice": 98800,
-    "usedMinPrice": 52000,
-    "usedMaxPrice": 68000,
-    "retentionRateMin": 53,
-    "retentionRateMax": 69,
-    "period": "6ヶ月後",
-    "comment": "中古需要の文脈で下落が穏やかな例の声。元箱・付属品揃いと内清掃は査定のしやすさに寄与しやすい。主傾向の目安です。"
-  },
-  "keywords": [
-    "Roomba Max 705",
-    "iRobot",
-    "AutoEmpty",
-    "ルンバ",
-    "ロボット掃除機"
-  ],
-  "cta": {
-    "amazon": "https://www.amazon.co.jp/s?k=Roomba+Max+705",
-    "rakuten": "https://search.rakuten.co.jp/search/mall/Roomba+Max+705/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=Roomba+Max+705",
-    "yodobashi": "https://www.yodobashi.com/?word=Roomba+Max+705"
-  },
-  "manufacturerOfficialAffiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AZOWQ+152XIQ+4KHO+HUD03&a8ejpredirect=https%3A%2F%2Fstore.irobot-jp.com%2Fitem%2FW155060.html%3F_gl%3D1*s0y0ve*_gcl_au*OTAzMDgyNTk5LjE3NzQ2NTY3ODg.*FPAU*OTAzMDgyNTk5LjE3NzQ2NTY3ODg.",
-  "manufacturerOfficialAffiliateTrackingPixelUrl": "",
-  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-roomba-max-705-vac-autoempty.html"
+  "resaleValue": null,
+  "affiliate": {
+    "moshimo": "<!-- START MoshimoAffiliateEasyLink -->\r\n<script type=\"text/javascript\">\r\n(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;\r\nb[a]=b[a]||function(){arguments.currentScript=c.currentScript\r\n||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};\r\nc.getElementById(a)||(d=c.createElement(f),d.src=g,\r\nd.id=a,e=c.getElementsByTagName(\"body\")[0],e.appendChild(d))})\r\n(window,document,\"script\",\"//dn.msmstatic.com/site/cardlink/bundle.js?20220329\",\"msmaflink\");\r\nmsmaflink({\"n\":\"【公式】 Roomba Max 705 Vac + AutoEmpty ルンバ アイロボット ロボット掃除機 2025 お掃除ロボット 掃除ロボット 自動ゴミ収集 強力吸引 高性能 マッピング 掃除機 自動充電 コードレス 物体認識 iRobot roomba 日本 国内 正規品 メーカー保証 延長保証 送料無料\",\"b\":\"\",\"t\":\"\",\"d\":\"https:\\/\\/thumbnail.image.rakuten.co.jp\",\"c_p\":\"\\/@0_mall\\/irobotstore\\/cabinet\\/03016688\",\"p\":[\"\\/20260219_review_2nen\\/705v_tm_2nen_v3.jpg\",\"\\/official\\/2y_official_tm_2602.jpg\",\"\\/12480358\\/2511_review_705v.jpg\"],\"u\":{\"u\":\"https:\\/\\/item.rakuten.co.jp\\/irobotstore\\/w155060\\/\",\"t\":\"rakuten\",\"r_v\":\"\"},\"v\":\"2.1\",\"b_l\":[{\"id\":1,\"u_tx\":\"楽天市場で見る\",\"u_bc\":\"#f76956\",\"u_url\":\"https:\\/\\/item.rakuten.co.jp\\/irobotstore\\/w155060\\/\",\"a_id\":5483003,\"p_id\":54,\"pl_id\":27059,\"pc_id\":54,\"s_n\":\"rakuten\",\"u_so\":1},{\"id\":2,\"u_tx\":\"Yahoo!ショッピングで見る\",\"u_bc\":\"#66a7ff\",\"u_url\":\"https:\\/\\/shopping.yahoo.co.jp\\/search?first=1\\u0026p=%E3%80%90%E5%85%AC%E5%BC%8F%E3%80%91%20Roomba%20Max%20705%20Vac%20%2B%20AutoEmpty%20%E3%83%AB%E3%83%B3%E3%83%90%20%E3%82%A2%E3%82%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%20%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%202025%20%E3%81%8A%E6%8E%83%E9%99%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%20%E6%8E%83%E9%99%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%20%E8%87%AA%E5%8B%95%E3%82%B4%E3%83%9F%E5%8F%8E%E9%9B%86%20%E5%BC%B7%E5%8A%9B%E5%90%B8%E5%BC%95%20%E9%AB%98%E6%80%A7%E8%83%BD%20%E3%83%9E%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0%20%E6%8E%83%E9%99%A4%E6%A9%9F%20%E8%87%AA%E5%8B%95%E5%85%85%E9%9B%BB%20%E3%82%B3%E3%83%BC%E3%83%89%E3%83%AC%E3%82%B9%20%E7%89%A9%E4%BD%93%E8%AA%8D%E8%AD%98%20iRobot%20roomba%20%E6%97%A5%E6%9C%AC%20%E5%9B%BD%E5%86%85%20%E6%AD%A3%E8%A6%8F%E5%93%81%20%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E4%BF%9D%E8%A8%BC%20%E5%BB%B6%E9%95%B7%E4%BF%9D%E8%A8%BC%20%E9%80%81%E6%96%99%E7%84%A1%E6%96%99\",\"a_id\":5483010,\"p_id\":1225,\"pl_id\":27061,\"pc_id\":1925,\"s_n\":\"yahoo\",\"u_so\":2}],\"eid\":\"JKaTX\",\"s\":\"s\"});\r\n</script>\r\n<div id=\"msmaflink-JKaTX\">リンク</div>\r\n<!-- MoshimoAffiliateEasyLink END -->",
+    "direct": "<span class=\"a8ad 4A9LOip-g7-vi8m7rg\"></span><script type=\"text/javascript\" src=\"//statics.a8.net/ad/ad.js\"></script><script type=\"text/javascript\">a8adscript('body').showAd({\"req\": {\"mat\":\"4AZOWQ+152XIQ+4KHO+HUSFL\",\"alt\":\"商品リンク\",\"id\":\"4A9LOip-g7-vi8m7rg\"},\"goods\": {\"ejp\":\"h\"+\"ttps://store.irobot-jp.com/item/W155060.html?_gl=1*jxk4tz*_gcl_au*OTAzMDgyNTk5LjE3NzQ2NTY3ODg.*FPAU*OTAzMDgyNTk5LjE3NzQ2NTY3ODg.\",\"imu\":\"h\"+\"ttps://store.irobot-jp.com/client_info/FS/itemimage/W155060_kv-slide01.jpg\"}});</script>",
+    "hpPublish": true
+  }
 }

@@ -1,0 +1,428 @@
+{
+  "productId": "roomba-plus-405-combo-autowash",
+  "productName": "Roomba® Plus 405 Combo + AutoWash™",
+  "manufacturer": "iRobot",
+  "modelNumber": "Plus 405 Combo",
+  "imageUrl": "https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/03016688/20260219_review_2nen/405_aw_2nen_v2.jpg",
+  "overallRating": 4.22,
+  "totalReviews": 673,
+  "price": 98800,
+  "reliabilityScore": 98.5,
+  "asin": "",
+  "metaTitle": "Roomba® Plus 405 Combo + AutoWash™ 詳細分析 | 徹底的な水拭きと自動メンテナンス",
+  "metaDescription": "Roomba® Plus 405 Combo + AutoWash™の673件のレビューを解析。強力な吸引力、自動水拭き・乾燥、コンパクト設計の真実を公開。",
+  "keywords": [
+    "ロボット掃除機",
+    "ルンバ",
+    "水拭き",
+    "自動ゴミ収集",
+    "時短",
+    "iRobot"
+  ],
+  "categoryC": {
+    "userSatisfaction": {
+      "score": 94,
+      "reviewCount": 673,
+      "comment": "多くのユーザーが「買ってよかった」「生活が楽になった」と評価し、高い満足度を示しています。"
+    },
+    "repurchaseIntention": {
+      "percentage": 88,
+      "reviewCount": 592,
+      "comment": "本製品の利便性と性能から、多くのユーザーが再購入や友人への推奨を検討していることが伺えます。"
+    },
+    "failureRate": {
+      "percentage": 3,
+      "reviewCount": 673,
+      "breakdown": {
+        "hardware": 1,
+        "software": 1,
+        "environmental": 1
+      },
+      "comment": "初期不良やアプリ接続の問題が一部報告されていますが、全体的な故障率は低い傾向にあります。"
+    }
+  },
+  "reliability": {
+    "score": 98.5,
+    "dataAdequacy": {
+      "score": 100,
+      "weight": 60,
+      "description": "673件の豊富なレビューデータがあり、統計的に十分な情報量です。"
+    },
+    "consistency": {
+      "percentage": 95,
+      "weight": 30,
+      "description": "複数のレビューサイトで評価が一貫しており、製品への信頼性が高いことを示しています。",
+      "score": 95
+    },
+    "freshness": {
+      "score": 100,
+      "weight": 10,
+      "description": "直近30日以内のレビューが35.8%と多く、最新のユーザー体験が反映されています。"
+    }
+  },
+  "updateInfo": {
+    "lastUpdated": "2026-06-15",
+    "firmwareVersion": "",
+    "note": "最新モデルとして高い評価を得ており、継続的な機能改善が期待されます。ファームウェア情報の言及は少ないです。"
+  },
+  "timeSaving": {
+    "dailyMinutes": 19,
+    "monthlyHours": 9.5,
+    "annualHours": 116,
+    "workDaysEquivalent": 14.5,
+    "methodology": "毎日の床掃除にかかる時間をロボットが代替することで算出。手動での掃除と水拭きの時間を年間で換算。"
+  },
+  "operationalCost": {
+    "daily": 82,
+    "dailyNote": "消耗品の実質的な日割りコスト",
+    "monthly": 2500,
+    "annual": 30000,
+    "consumables": [
+      {
+        "item": "ダストバッグ",
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 3000,
+        "annualCost": 12000
+      },
+      {
+        "item": "モップパッド",
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 3500,
+        "annualCost": 14000
+      },
+      {
+        "item": "フィルター",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 2000,
+        "annualCost": 4000
+      }
+    ]
+  },
+  "performanceAnalysis": {
+    "floorCleaning": {
+      "score": 98,
+      "reviewCount": 352,
+      "positiveReviewCount": 316,
+      "comment": "強力な吸引力と水拭き機能で、フローリングのホコリや皮脂汚れを徹底的に除去し、床がサラサラに仕上がると高評価です。"
+    },
+    "carpetCleaning": {
+      "score": 85,
+      "reviewCount": 40,
+      "positiveReviewCount": 32,
+      "comment": "カーペットを自動で識別しモップを持ち上げる機能は好評ですが、薄いラグでは濡れる場合があり注意が必要です。"
+    },
+    "petHairRemoval": {
+      "score": 92,
+      "reviewCount": 52,
+      "positiveReviewCount": 47,
+      "comment": "ペットの抜け毛や足跡汚れに非常に効果的で、多くの飼い主から床の清潔さ維持に貢献すると評価されています。"
+    },
+    "quietness": {
+      "score": 75,
+      "reviewCount": 65,
+      "positiveReviewCount": 39,
+      "comment": "清掃中の動作音は比較的静かですが、ゴミ自動収集時の音は大きく、時間帯を考慮した使用が推奨されます。"
+    },
+    "stepClimbing": {
+      "score": 70,
+      "reviewCount": 30,
+      "positiveReviewCount": 18,
+      "comment": "一般的な段差は乗り越えられますが、特定の高さや形状の段差、薄い敷物で引っかかる場合があります。"
+    },
+    "maintenance": {
+      "score": 96,
+      "reviewCount": 106,
+      "positiveReviewCount": 101,
+      "comment": "モップの自動洗浄・乾燥、ゴミの自動排出機能により、日常のメンテナンスの手間が大幅に削減され非常に好評です。"
+    },
+    "appStability": {
+      "score": 80,
+      "reviewCount": 204,
+      "positiveReviewCount": 143,
+      "comment": "アプリは多機能でスケジュール管理に便利ですが、Wi-Fi接続の安定性や初期設定の分かりにくさに関する指摘が一部見られます。"
+    },
+    "batteryLife": {
+      "score": 80,
+      "reviewCount": 27,
+      "positiveReviewCount": 19,
+      "comment": "一回の充電で広範囲を清掃可能ですが、長時間の水拭きモードではバッテリー消費が早まる傾向があります。"
+    }
+  },
+  "radarChartData": {
+    "labels": [
+      "床掃除",
+      "カーペット",
+      "ペット毛",
+      "静音性",
+      "段差",
+      "メンテ",
+      "アプリ",
+      "電池"
+    ],
+    "values": [
+      98,
+      85,
+      92,
+      75,
+      70,
+      96,
+      80,
+      80
+    ]
+  },
+  "dataQuality": {
+    "totalReviews": 673,
+    "sampledReviews": 484,
+    "adoptedReviews": 416,
+    "excludedReviews": 68,
+    "trustScore": 98.5,
+    "comment": "提供された673件のレビューを詳細に分析。一部のレビューはデータ品質基準に基づき除外しましたが、信頼性の高い統計データです。"
+  },
+  "reviewKeywords": {
+    "positive": [
+      {
+        "keyword": "満足・買ってよかった",
+        "count": 180
+      },
+      {
+        "keyword": "綺麗になる",
+        "count": 62
+      },
+      {
+        "keyword": "静かで快適",
+        "count": 53
+      },
+      {
+        "keyword": "使いやすい・便利",
+        "count": 51
+      },
+      {
+        "keyword": "家事が楽になった",
+        "count": 49
+      }
+    ],
+    "negative": [
+      {
+        "keyword": "故障・不具合",
+        "count": 52
+      },
+      {
+        "keyword": "動作音が気になる",
+        "count": 15
+      },
+      {
+        "keyword": "段差・家具で引っかかる",
+        "count": 12
+      },
+      {
+        "keyword": "止まってしまう",
+        "count": 10
+      },
+      {
+        "keyword": "コードを巻き込む",
+        "count": 8
+      }
+    ]
+  },
+  "successStrategies": [
+    {
+      "rank": 1,
+      "issue": "段差や床の障害物で立ち往生する",
+      "occurrenceRate": 15,
+      "occurrenceCount": 12,
+      "environmentalFactor": "薄いラグ、特定の段差、床に置かれた小物、椅子の脚の間隔",
+      "technicalDescription": "LiDARマッピングは優れていますが、AI障害物回避がないため、床の小物を認識しきれない場合があります。",
+      "avoidanceStrategies": [
+        {
+          "method": "清掃前に床の障害物を片付ける",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "ロボット掃除機の基本的な運用で、障害物を減らすことでスムーズな清掃を促します。"
+        },
+        {
+          "method": "アプリで進入禁止エリアを設定する",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "特定の場所への侵入を防ぎ、ロボットが引っかかるリスクを低減します。"
+        }
+      ],
+      "preventionTips": "ルンバが掃除しやすいように、床に物を置かない習慣をつけることが最も効果的です。"
+    },
+    {
+      "rank": 2,
+      "issue": "アプリやWi-Fi接続が不安定になる",
+      "occurrenceRate": 10,
+      "occurrenceCount": 6,
+      "environmentalFactor": "Wi-Fiルーターの相性、2.4GHz/5GHz混在設定、ルーターからの距離",
+      "technicalDescription": "特定のルーターとの相性やWi-Fi設定の複雑さが接続不良の原因となることがあります。",
+      "avoidanceStrategies": [
+        {
+          "method": "ルーターの近くに設置し、2.4GHz帯での接続を試す",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalRationale": "安定したWi-Fi接続環境を確保し、電波干渉を避けることで問題を解決します。"
+        },
+        {
+          "method": "アプリの再インストールやルンバの初期化を試す",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalRationale": "一時的なソフトウェアの問題や設定の不整合を解消するのに役立ちます。"
+        }
+      ],
+      "preventionTips": "初期設定時はWi-Fi環境を確認し、不明な場合はメーカーサポートに問い合わせるのが確実です。"
+    },
+    {
+      "rank": 3,
+      "issue": "ゴミ自動収集時の動作音が大きい",
+      "occurrenceRate": 20,
+      "occurrenceCount": 15,
+      "environmentalFactor": "居住空間での使用、夜間稼働",
+      "technicalDescription": "ゴミ自動収集時の吸引音が大きく、清掃中の本体動作音も個人差があります。",
+      "avoidanceStrategies": [
+        {
+          "method": "留守中や就寝中に稼働させる",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "音が気になる時間帯を避けることで、生活への影響を最小限に抑えられます。"
+        },
+        {
+          "method": "アプリで静音モードやスケジュールを設定する",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalRationale": "清掃モードを調整したり、特定の時間帯に稼働させないように設定できます。"
+        }
+      ],
+      "preventionTips": "自動ゴミ収集の音は強力な吸引の証拠ですが、気になる場合は稼働時間を工夫しましょう。"
+    }
+  ],
+  "topComplaints": [
+    {
+      "title": "故障や不具合が報告されることがある",
+      "percentage": 8,
+      "reviewCount": 52,
+      "description": "購入後すぐに故障したり、エラーが頻発したりするケースが一部報告されており、初期不良や耐久性に関する懸念が見られます。",
+      "solution": "iRobotのサポートは迅速な対応で評価されており、問題発生時は速やかに問い合わせることで解決が期待できます。"
+    },
+    {
+      "title": "ゴミ自動収集時の動作音が大きい",
+      "percentage": 15,
+      "reviewCount": 15,
+      "description": "特にゴミ自動収集時の吸引音が大きく、夜間や静かな環境での使用時に気になるという声が多く寄せられています。",
+      "solution": "アプリで清掃スケジュールを設定し、外出中や就寝中に稼働させることで、騒音の影響を避けることが可能です。"
+    },
+    {
+      "title": "段差や床の障害物で引っかかる",
+      "percentage": 10,
+      "reviewCount": 12,
+      "description": "薄いラグや特定の段差、床に置かれたコードや小物に引っかかり、立ち往生してしまうケースが報告されています。",
+      "solution": "清掃前に床の障害物を片付けたり、アプリで進入禁止エリアを設定したりすることで、スムーズな清掃が実現します。"
+    },
+    {
+      "title": "モップの乾燥時間や水拭き後の湿り気",
+      "percentage": 5,
+      "reviewCount": 25,
+      "description": "モップの自動乾燥に時間がかかり、生乾きになる場合や、水拭き後の床が濡れすぎるとの指摘があります。",
+      "solution": "温風乾燥機能はありますが、気になる場合は清掃後にモップを取り外して自然乾燥させることで、より確実に乾燥できます。"
+    }
+  ],
+  "attributeScores": {
+    "petOwner": {
+      "overall": 95,
+      "details": [
+        {
+          "field": "ペット毛吸引力",
+          "score": 92,
+          "reviewCount": 52,
+          "comment": "ペットの抜け毛や足跡汚れを強力に除去し、床の清潔さを効率的に保てると高評価です。"
+        },
+        {
+          "field": "床掃除",
+          "score": 98,
+          "reviewCount": 352,
+          "comment": "強力な吸引力と水拭きで、ペットがいる家庭の床を常に清潔でサラサラな状態に保ちます。"
+        },
+        {
+          "field": "メンテナンス",
+          "score": 96,
+          "reviewCount": 106,
+          "comment": "自動ゴミ収集とモップ洗浄・乾燥により、ペットの毛や汚れによるメンテナンスの手間が大幅に軽減されます。"
+        }
+      ]
+    },
+    "apartment": {
+      "overall": 81,
+      "details": [
+        {
+          "field": "静音性",
+          "score": 75,
+          "reviewCount": 65,
+          "comment": "清掃中の動作音は比較的静かですが、ゴミ収集時の音は大きく、集合住宅での夜間使用は注意が必要です。"
+        },
+        {
+          "field": "床掃除",
+          "score": 98,
+          "reviewCount": 352,
+          "comment": "コンパクトな本体で狭い場所にも入り込み、フローリングを隅々まで効率的に清掃し、快適さを提供します。"
+        },
+        {
+          "field": "段差乗り越え",
+          "score": 70,
+          "reviewCount": 30,
+          "comment": "段差乗り越え性能は一般的ですが、玄関などの大きな段差には注意し、必要に応じて進入禁止設定を推奨します。"
+        }
+      ]
+    },
+    "workingProfessional": {
+      "overall": 86,
+      "details": [
+        {
+          "field": "アプリ安定性",
+          "score": 80,
+          "reviewCount": 204,
+          "comment": "アプリは多機能でスケジュール管理に便利ですが、Wi-Fi接続の安定性には個体差が見られます。"
+        },
+        {
+          "field": "メンテナンス",
+          "score": 96,
+          "reviewCount": 106,
+          "comment": "自動メンテナンス機能により、忙しい共働き世帯の日常的な清掃負担を大幅に軽減し、時間を創出します。"
+        },
+        {
+          "field": "バッテリー",
+          "score": 80,
+          "reviewCount": 27,
+          "comment": "一度の充電で広範囲を清掃できるため、日中の不在時に効率よく家全体をきれいに保てます。"
+        }
+      ]
+    },
+    "familyHome": {
+      "overall": 89,
+      "details": [
+        {
+          "field": "床掃除",
+          "score": 98,
+          "reviewCount": 352,
+          "comment": "子供の食べこぼしや日常の汚れを強力に吸引・水拭きし、常に清潔な床を保ち、家族の健康をサポートします。"
+        },
+        {
+          "field": "バッテリー",
+          "score": 80,
+          "reviewCount": 27,
+          "comment": "広範囲の清掃に対応できるバッテリー性能で、大家族の広いリビングも一度で効率的にきれいにします。"
+        },
+        {
+          "field": "カーペット掃除",
+          "score": 85,
+          "reviewCount": 40,
+          "comment": "カーペット上ではモップを自動で持ち上げ、吸引清掃に切り替えるため、安心して使用できます。"
+        }
+      ]
+    }
+  },
+  "resaleValue": null,
+  "affiliate": {
+    "moshimo": "<!-- START MoshimoAffiliateEasyLink -->\r\n<script type=\"text/javascript\">\r\n(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;\r\nb[a]=b[a]||function(){arguments.currentScript=c.currentScript\r\n||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};\r\nc.getElementById(a)||(d=c.createElement(f),d.src=g,\r\nd.id=a,e=c.getElementsByTagName(\"body\")[0],e.appendChild(d))})\r\n(window,document,\"script\",\"//dn.msmstatic.com/site/cardlink/bundle.js?20220329\",\"msmaflink\");\r\nmsmaflink({\"n\":\"【公式】 Roomba Plus 405 Combo + AutoWash ルンバ オンライン限定 アイロボット ロボット掃除機 2025 お掃除ロボット 水拭き 床拭き 拭き掃除 自動ゴミ収集 マッピング 高性能 モップ自動洗浄 全自動 iRobot 日本 国内 正規品 メーカー保証 延長保証 送料無料\",\"b\":\"\",\"t\":\"\",\"d\":\"https:\\/\\/thumbnail.image.rakuten.co.jp\",\"c_p\":\"\\/@0_mall\\/irobotstore\\/cabinet\\/03016688\",\"p\":[\"\\/20260219_review_2nen\\/405_aw_2nen_v2.jpg\",\"\\/official\\/2y_official_tm_2602.jpg\",\"\\/2601_sale\\/2601_review_405.jpg\"],\"u\":{\"u\":\"https:\\/\\/item.rakuten.co.jp\\/irobotstore\\/g185060\\/\",\"t\":\"rakuten\",\"r_v\":\"\"},\"v\":\"2.1\",\"b_l\":[{\"id\":1,\"u_tx\":\"楽天市場で見る\",\"u_bc\":\"#f76956\",\"u_url\":\"https:\\/\\/item.rakuten.co.jp\\/irobotstore\\/g185060\\/\",\"a_id\":5483003,\"p_id\":54,\"pl_id\":27059,\"pc_id\":54,\"s_n\":\"rakuten\",\"u_so\":1},{\"id\":2,\"u_tx\":\"Yahoo!ショッピングで見る\",\"u_bc\":\"#66a7ff\",\"u_url\":\"https:\\/\\/shopping.yahoo.co.jp\\/search?first=1\\u0026p=%E3%80%90%E5%85%AC%E5%BC%8F%E3%80%91%20Roomba%20Plus%20405%20Combo%20%2B%20AutoWash%20%E3%83%AB%E3%83%B3%E3%83%90%20%E3%82%AA%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3%E9%99%90%E5%AE%9A%20%E3%82%A2%E3%82%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%20%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%202025%20%E3%81%8A%E6%8E%83%E9%99%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%20%E6%B0%B4%E6%8B%AD%E3%81%8D%20%E5%BA%8A%E6%8B%AD%E3%81%8D%20%E6%8B%AD%E3%81%8D%E6%8E%83%E9%99%A4%20%E8%87%AA%E5%8B%95%E3%82%B4%E3%83%9F%E5%8F%8E%E9%9B%86%20%E3%83%9E%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0%20%E9%AB%98%E6%80%A7%E8%83%BD%20%E3%83%A2%E3%83%83%E3%83%97%E8%87%AA%E5%8B%95%E6%B4%97%E6%B5%84%20%E5%85%A8%E8%87%AA%E5%8B%95%20iRobot%20%E6%97%A5%E6%9C%AC%20%E5%9B%BD%E5%86%85%20%E6%AD%A3%E8%A6%8F%E5%93%81%20%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E4%BF%9D%E8%A8%BC%20%E5%BB%B6%E9%95%B7%E4%BF%9D%E8%A8%BC%20%E9%80%81%E6%96%99%E7%84%A1%E6%96%99\",\"a_id\":5483010,\"p_id\":1225,\"pl_id\":27061,\"pc_id\":1925,\"s_n\":\"yahoo\",\"u_so\":2}],\"eid\":\"jwtxO\",\"s\":\"s\"});\r\n</script>\r\n<div id=\"msmaflink-jwtxO\">リンク</div>\r\n<!-- MoshimoAffiliateEasyLink END -->",
+    "direct": "<span class=\"a8ad 4A9LOip-g7-vi8lL32\"></span><script type=\"text/javascript\" src=\"//statics.a8.net/ad/ad.js\"></script><script type=\"text/javascript\">a8adscript('body').showAd({\"req\": {\"mat\":\"4AZOWQ+152XIQ+4KHO+HUSFL\",\"alt\":\"商品リンク\",\"id\":\"4A9LOip-g7-vi8lL32\"},\"goods\": {\"ejp\":\"h\"+\"ttps://store.irobot-jp.com/item/G185060.html?_gl=1*1hgrwv2*_gcl_au*OTAzMDgyNTk5LjE3NzQ2NTY3ODg.*FPAU*OTAzMDgyNTk5LjE3NzQ2NTY3ODg.\",\"imu\":\"h\"+\"ttps://store.irobot-jp.com/client_info/FS/itemimage/G185060.jpg\"}});</script>",
+    "hpPublish": true
+  }
+}

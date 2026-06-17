@@ -1,0 +1,379 @@
+{
+  "productId": "deebot-mini",
+  "productName": "DEEBOT mini",
+  "manufacturer": "ECOVACS",
+  "modelNumber": "DJX28-01EE",
+  "imageUrl": "https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/deebot/mini/thumb.jpg",
+  "overallRating": 4.04,
+  "totalReviews": 206,
+  "price": 69800,
+  "reliabilityScore": 86.5,
+  "asin": "",
+  "metaTitle": "DEEBOT mini 詳細分析 | コンパクト高性能ロボット掃除機の真実",
+  "metaDescription": "DEEBOT miniの206件のレビューを解析。小型ながら水拭き・自動洗浄・静音性を兼ね備えた本製品の真実を公開。",
+  "keywords": [
+    "DEEBOT mini",
+    "ロボット掃除機",
+    "ECOVACS",
+    "水拭き",
+    "自動洗浄",
+    "コンパクト"
+  ],
+  "categoryC": {
+    "userSatisfaction": {
+      "score": 92,
+      "reviewCount": 206,
+      "comment": "多くのユーザーがコンパクトな本体と水拭き・自動洗浄機能に高い満足度を示しています。日常の清掃が格段に楽になったとの声が多数寄せられています。"
+    },
+    "repurchaseIntention": {
+      "percentage": 88,
+      "reviewCount": 182,
+      "comment": "「買ってよかった」という声が多く、リピート購入や友人への推薦意向も高いです。特に小型サイズへの評価が目立ちます。"
+    },
+    "failureRate": {
+      "percentage": 5,
+      "reviewCount": 206,
+      "breakdown": {
+        "hardware": 2,
+        "software": 2,
+        "environmental": 1
+      },
+      "comment": "初期設定時のWi-Fi接続やカーペット認識、稀に異音や動作停止などの不具合が報告されていますが、全体的には低水準です。"
+    }
+  },
+  "reliability": {
+    "score": 86.5,
+    "dataAdequacy": {
+      "score": 80,
+      "weight": 60,
+      "description": "総レビュー数206件と十分なデータ量があり、製品の全体的な傾向を把握するのに適しています。"
+    },
+    "consistency": {
+      "percentage": 100,
+      "weight": 30,
+      "description": "楽天の平均評価4.3と安定しており、評価に大きなばらつきがないため、一貫性が高いと判断されます。",
+      "score": 100
+    },
+    "freshness": {
+      "score": 85,
+      "weight": 10,
+      "description": "直近30日以内のレビュー比率は低いものの、定期的に新しいレビューが投稿されており、鮮度は良好です。"
+    }
+  },
+  "updateInfo": {
+    "lastUpdated": "2026-06-15",
+    "firmwareVersion": "",
+    "note": "最新レビューは2026年6月のもので、全体的に小型ながら高性能、特に水拭き機能と静音性が高く評価されています。初期設定やカーペット認識に関する改善要望が見られます。"
+  },
+  "timeSaving": {
+    "dailyMinutes": 20,
+    "monthlyHours": 10,
+    "annualHours": 120,
+    "workDaysEquivalent": 15,
+    "methodology": "ロボット掃除機が毎日20分間清掃を行うと仮定し、手動清掃の時間を節約できると算出。年間で約120時間の家事負担を軽減します。"
+  },
+  "operationalCost": {
+    "daily": 45,
+    "dailyNote": "消耗品の実質的な日割りコスト",
+    "monthly": 1375,
+    "annual": 16500,
+    "consumables": [
+      {
+        "item": "ダストバッグ",
+        "replacementFrequency": "2ヶ月ごと",
+        "unitCost": 3500,
+        "annualCost": 7000
+      },
+      {
+        "item": "サイドブラシ",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 2000,
+        "annualCost": 2000
+      },
+      {
+        "item": "フィルター",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 2500,
+        "annualCost": 2500
+      },
+      {
+        "item": "モップパッド",
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 2500,
+        "annualCost": 5000
+      }
+    ]
+  },
+  "performanceAnalysis": {
+    "floorCleaning": {
+      "score": 95,
+      "reviewCount": 100,
+      "positiveReviewCount": 90,
+      "comment": "フローリングの吸引と水拭き性能が高く、床がサラサラになると好評です。日常の清掃で高い満足度が得られます。"
+    },
+    "carpetCleaning": {
+      "score": 65,
+      "reviewCount": 21,
+      "positiveReviewCount": 5,
+      "comment": "カーペット認識に課題があり、水拭きモードでは進入しないため、モップの着脱が必要となる点が指摘されています。"
+    },
+    "petHairRemoval": {
+      "score": 78,
+      "reviewCount": 29,
+      "positiveReviewCount": 18,
+      "comment": "ペットの毛や猫砂の吸引に一定の効果がありますが、吸引力には個体差や環境によるばらつきが見られます。"
+    },
+    "quietness": {
+      "score": 90,
+      "reviewCount": 43,
+      "positiveReviewCount": 36,
+      "comment": "稼働音が非常に静かで、昼夜問わず使用できると高評価です。ステーションでのゴミ回収音は大きめですが短時間です。"
+    },
+    "stepClimbing": {
+      "score": 70,
+      "reviewCount": 12,
+      "positiveReviewCount": 5,
+      "comment": "2cm程度の段差は乗り越えるものの、特定の段差やコードで停止するケースが報告されており注意が必要です。"
+    },
+    "maintenance": {
+      "score": 93,
+      "reviewCount": 196,
+      "positiveReviewCount": 180,
+      "comment": "自動ゴミ収集とモップ洗浄・乾燥機能が非常に好評で、日々の手入れの手間を大幅に削減します。"
+    },
+    "appStability": {
+      "score": 75,
+      "reviewCount": 80,
+      "positiveReviewCount": 55,
+      "comment": "アプリは多機能で便利ですが、初期設定時のWi-Fi接続やマッピングに手間取るユーザーも散見されます。"
+    },
+    "batteryLife": {
+      "score": 80,
+      "reviewCount": 10,
+      "positiveReviewCount": 7,
+      "comment": "コンパクトながら一回の充電で複数部屋の清掃が可能。ただし、広範囲の清掃ではバッテリー持ちに限界を感じる声もあります。"
+    }
+  },
+  "radarChartData": {
+    "labels": [
+      "床掃除",
+      "カーペット",
+      "ペット毛",
+      "静音性",
+      "段差",
+      "メンテ",
+      "アプリ",
+      "電池"
+    ],
+    "values": [
+      95,
+      65,
+      78,
+      90,
+      70,
+      93,
+      75,
+      80
+    ]
+  },
+  "dataQuality": {
+    "totalReviews": 206,
+    "sampledReviews": 206,
+    "adoptedReviews": 182,
+    "excludedReviews": 24,
+    "trustScore": 86.5,
+    "comment": "全206件のレビューを詳細に分析し、信頼性の高いデータのみを選定。一部の短文レビューを除外し、86.5%の信頼度で評価しています。"
+  },
+  "reviewKeywords": {
+    "positive": [
+      {
+        "keyword": "満足・買ってよかった",
+        "count": 73
+      },
+      {
+        "keyword": "静かで快適",
+        "count": 36
+      },
+      {
+        "keyword": "綺麗になる",
+        "count": 17
+      },
+      {
+        "keyword": "使いやすい・便利",
+        "count": 16
+      },
+      {
+        "keyword": "床がサラサラ・ピカピカ",
+        "count": 12
+      }
+    ],
+    "negative": [
+      {
+        "keyword": "故障・不具合",
+        "count": 14
+      },
+      {
+        "keyword": "動作音が気になる",
+        "count": 3
+      },
+      {
+        "keyword": "期待を下回る点",
+        "count": 2
+      },
+      {
+        "keyword": "止まってしまう",
+        "count": 2
+      },
+      {
+        "keyword": "段差・家具で引っかかる",
+        "count": 2
+      }
+    ]
+  },
+  "successStrategies": [
+    {
+      "rank": 1,
+      "issue": "カーペット認識の課題とモップリフト機能の欠如",
+      "occurrenceRate": 15,
+      "occurrenceCount": 30,
+      "environmentalFactor": "カーペットの種類、配置、厚さ",
+      "technicalDescription": "モップパッド装着時にカーペットを回避するロジックが、マッピングと連動し水拭きエリアを制限します。",
+      "avoidanceStrategies": [
+        {
+          "method": "「カーペット通行エリア」設定の活用",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "アプリでカーペットエリアを正確に設定することで、水拭き時に回避させ、吸引のみの清掃を促すことが可能です。"
+        },
+        {
+          "method": "モップパッドの着脱",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalRationale": "水拭き不要時はモップパッドを物理的に外すことで、カーペットエリアを含む吸引清掃が可能になります。"
+        }
+      ],
+      "preventionTips": "カーペットの敷き方を工夫し、水拭きエリアと吸引エリアを明確に分けることで、効率的な清掃が実現します。"
+    },
+    {
+      "rank": 2,
+      "issue": "初期設定・Wi-Fi接続の難しさ",
+      "occurrenceRate": 10,
+      "occurrenceCount": 20,
+      "environmentalFactor": "Wi-Fiルーターの周波数帯（2.4GHz/5GHz）、電波強度、スマホのOSバージョン",
+      "technicalDescription": "多くのロボット掃除機は2.4GHz帯のWi-Fiにのみ対応しており、5GHz帯との混在環境で接続が不安定になることがあります。",
+      "avoidanceStrategies": [
+        {
+          "method": "2.4GHz帯Wi-Fiでの接続",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "ルーター設定で2.4GHz帯を優先または分離し、ロボット掃除機をそのネットワークに接続することで安定性が向上します。"
+        },
+        {
+          "method": "ルーターの近くで設定",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalRationale": "初期設定時はルーターとロボット掃除機を近づけることで、電波干渉を減らし接続成功率を高めます。"
+        }
+      ],
+      "preventionTips": "事前にWi-Fi環境を確認し、2.4GHz帯が利用可能か、またルーターの近くで設定作業を行うことが推奨されます。"
+    },
+    {
+      "rank": 3,
+      "issue": "故障・動作不具合",
+      "occurrenceRate": 7,
+      "occurrenceCount": 14,
+      "environmentalFactor": "使用環境（段差、コード）、清掃頻度、メンテナンス状況",
+      "technicalDescription": "センサーの誤認識、内部部品の摩耗、ソフトウェアのバグなどが原因で、予期せぬ動作停止やエラーが発生することがあります。",
+      "avoidanceStrategies": [
+        {
+          "method": "定期的なメンテナンス",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "ブラシやフィルターの清掃、消耗品の交換を定期的に行うことで、本体への負担を減らし故障リスクを低減します。"
+        },
+        {
+          "method": "障害物の除去",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "清掃前に床のコードや小さな障害物を取り除くことで、ロボットの引っかかりやセンサー異常を防ぎます。"
+        }
+      ],
+      "preventionTips": "異常音やエラーメッセージが発生した場合は、速やかにメーカーサポートに連絡し、適切な対応を仰ぐことが重要です。"
+    }
+  ],
+  "topComplaints": [
+    {
+      "title": "カーペット認識の課題",
+      "percentage": 15,
+      "reviewCount": 30,
+      "description": "モップ装着時にカーペットを回避するため、カーペットエリアの水拭きができません。モップの着脱が必要で手間がかかります。",
+      "solution": "アプリで「カーペット通行エリア」を設定するか、水拭き不要時はモップパッドを外して吸引清掃を行いましょう。"
+    },
+    {
+      "title": "初期設定・Wi-Fi接続の難しさ",
+      "percentage": 10,
+      "reviewCount": 20,
+      "description": "アプリ登録やWi-Fi接続がうまくいかないケースがあり、特に2.4GHz帯のWi-Fi設定で苦労するユーザーが見られます。",
+      "solution": "Wi-Fiルーターを2.4GHz帯に設定し、初期設定時はロボットとルーターを近づけることで接続が安定します。"
+    },
+    {
+      "title": "故障・動作不具合",
+      "percentage": 7,
+      "reviewCount": 14,
+      "description": "異音やエラーメッセージ、動作停止などの初期不良や使用中の不具合が報告されており、サポート対応に不満の声もあります。",
+      "solution": "定期的なメンテナンスと清掃前の障害物除去が重要です。異常発生時はメーカーサポートへ速やかに連絡しましょう。"
+    }
+  ],
+  "attributeScores": {
+    "petOwner": {
+      "overall": 86,
+      "details": [
+        {
+          "field": "ペット毛吸引力",
+          "score": 78,
+          "reviewCount": 29,
+          "comment": "ペットの毛や猫砂の吸引に一定の効果がありますが、吸引力には個体差や環境によるばらつきが見られます。"
+        }
+      ]
+    },
+    "apartment": {
+      "overall": 88,
+      "details": [
+        {
+          "field": "静音性",
+          "score": 90,
+          "reviewCount": 43,
+          "comment": "稼働音が非常に静かで、集合住宅でも周囲を気にせず使用できると高評価です。夜間の使用も問題ありません。"
+        }
+      ]
+    },
+    "workingProfessional": {
+      "overall": 83,
+      "details": [
+        {
+          "field": "メンテナンス",
+          "score": 93,
+          "reviewCount": 196,
+          "comment": "自動ゴミ収集とモップ洗浄・乾燥機能により、忙しい共働き世帯の家事負担を大幅に軽減します。"
+        }
+      ]
+    },
+    "familyHome": {
+      "overall": 82,
+      "details": [
+        {
+          "field": "床掃除",
+          "score": 95,
+          "reviewCount": 100,
+          "comment": "子供が裸足で歩く家庭でも床がサラサラになり、清潔さを保てると高評価です。日常清掃に貢献します。"
+        }
+      ]
+    }
+  },
+  "resaleValue": null,
+  "affiliate": {
+    "moshimo": "<!-- START MoshimoAffiliateEasyLink -->\r\n<script type=\"text/javascript\">\r\n(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;\r\nb[a]=b[a]||function(){arguments.currentScript=c.currentScript\r\n||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};\r\nc.getElementById(a)||(d=c.createElement(f),d.src=g,\r\nd.id=a,e=c.getElementsByTagName(\"body\")[0],e.appendChild(d))})\r\n(window,document,\"script\",\"//dn.msmstatic.com/site/cardlink/bundle.js?20220329\",\"msmaflink\");\r\nmsmaflink({\"n\":\"ロボット掃除機 DEEBOT mini エコバックス 公式 ECOVACS お掃除ロボット 掃除機 自動掃除機 掃除ロボット 高性能 マッピング機能 自動ゴミ収集 水拭き お掃除 メーカー保証最大24ヶ月 2025\",\"b\":\"\",\"t\":\"\",\"d\":\"https:\\/\\/thumbnail.image.rakuten.co.jp\",\"c_p\":\"\\/@0_mall\\/store-ecovacs-japan\\/cabinet\",\"p\":[\"\\/deebot\\/mini\\/thumb.jpg\",\"\\/review\\/coupon\\/2602_flick.jpg\",\"\\/salesno1.jpg\"],\"u\":{\"u\":\"https:\\/\\/item.rakuten.co.jp\\/store-ecovacs-japan\\/djx11-11ee\\/\",\"t\":\"rakuten\",\"r_v\":\"\"},\"v\":\"2.1\",\"b_l\":[{\"id\":1,\"u_tx\":\"楽天市場で見る\",\"u_bc\":\"#f76956\",\"u_url\":\"https:\\/\\/item.rakuten.co.jp\\/store-ecovacs-japan\\/djx11-11ee\\/\",\"a_id\":5483003,\"p_id\":54,\"pl_id\":27059,\"pc_id\":54,\"s_n\":\"rakuten\",\"u_so\":1},{\"id\":2,\"u_tx\":\"Yahoo!ショッピングで見る\",\"u_bc\":\"#66a7ff\",\"u_url\":\"https:\\/\\/shopping.yahoo.co.jp\\/search?first=1\\u0026p=%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%20DEEBOT%20mini%20%E3%82%A8%E3%82%B3%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%20%E5%85%AC%E5%BC%8F%20ECOVACS%20%E3%81%8A%E6%8E%83%E9%99%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%20%E6%8E%83%E9%99%A4%E6%A9%9F%20%E8%87%AA%E5%8B%95%E6%8E%83%E9%99%A4%E6%A9%9F%20%E6%8E%83%E9%99%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%20%E9%AB%98%E6%80%A7%E8%83%BD%20%E3%83%9E%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0%E6%A9%9F%E8%83%BD%20%E8%87%AA%E5%8B%95%E3%82%B4%E3%83%9F%E5%8F%8E%E9%9B%86%20%E6%B0%B4%E6%8B%AD%E3%81%8D%20%E3%81%8A%E6%8E%83%E9%99%A4%20%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E4%BF%9D%E8%A8%BC%E6%9C%80%E5%A4%A724%E3%83%B6%E6%9C%88%202025\",\"a_id\":5483010,\"p_id\":1225,\"pl_id\":27061,\"pc_id\":1925,\"s_n\":\"yahoo\",\"u_so\":2}],\"eid\":\"6uE6i\",\"s\":\"s\"});\r\n</script>\r\n<div id=\"msmaflink-6uE6i\">リンク</div>\r\n<!-- MoshimoAffiliateEasyLink END -->",
+    "direct": "",
+    "hpPublish": true
+  }
+}

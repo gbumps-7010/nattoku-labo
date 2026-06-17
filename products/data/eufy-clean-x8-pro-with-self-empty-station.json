@@ -1,0 +1,387 @@
+{
+  "productId": "eufy-clean-x8-pro-with-self-empty-station",
+  "productName": "Eufy Clean X8 Pro with Self-Empty Station",
+  "manufacturer": "Anker",
+  "modelNumber": "T2276513",
+  "imageUrl": "https://thumbnail.image.rakuten.co.jp/@0_mall/select-list/cabinet/imgrc0095159420.jpg",
+  "overallRating": 3.72,
+  "totalReviews": 108,
+  "price": 69990,
+  "reliabilityScore": 88.0,
+  "asin": "",
+  "metaTitle": "Eufy Clean X8 Pro with Self-Empty Station 詳細分析 | 自動ゴミ収集ロボット掃除機の真実",
+  "metaDescription": "Eufy Clean X8 Proの108件のレビューを解析。強力な吸引力と水拭き、自動ゴミ収集の利便性、そしてアプリ連携や静音性に関する真実を公開。",
+  "keywords": [
+    "Eufy Clean X8 Pro",
+    "Anker",
+    "ロボット掃除機",
+    "自動ゴミ収集",
+    "水拭き",
+    "ペットの毛"
+  ],
+  "categoryC": {
+    "userSatisfaction": {
+      "score": 85,
+      "reviewCount": 108,
+      "comment": "強力な吸引力と自動ゴミ収集機能により、多くのユーザーが掃除の手間が減り、生活の質が向上したと高く評価しています。"
+    },
+    "repurchaseIntention": {
+      "percentage": 75,
+      "reviewCount": 108,
+      "comment": "多くのユーザーが「もっと早く買えばよかった」と後悔しており、その利便性から再購入意向も高い傾向にあります。"
+    },
+    "failureRate": {
+      "percentage": 22,
+      "reviewCount": 24,
+      "breakdown": {
+        "hardware": 10,
+        "software": 12,
+        "environmental": 8
+      },
+      "comment": "バッテリーや充電関連のハードウェア故障、アプリやWi-Fi接続の不安定さ、段差での引っかかりなど、多様な不具合が報告されています。"
+    }
+  },
+  "reliability": {
+    "score": 88.0,
+    "dataAdequacy": {
+      "score": 80,
+      "weight": 60,
+      "description": "レビュー数が100件以上であるため、データ十分性は高いと評価されます。"
+    },
+    "consistency": {
+      "percentage": 100,
+      "weight": 30,
+      "description": "提供されたレビューはAmazonのみであり、サイト間の評価差がないため一貫性は非常に高いです。",
+      "score": 100
+    },
+    "freshness": {
+      "score": 100,
+      "weight": 10,
+      "description": "直近30日以内のレビュー比率が高く、鮮度の高いデータが十分に確保されています。"
+    }
+  },
+  "updateInfo": {
+    "lastUpdated": "2026-06-15",
+    "firmwareVersion": "",
+    "note": "最新のレビュー時期は2026年6月まで確認されており、製品の評価は継続的に行われています。"
+  },
+  "timeSaving": {
+    "dailyMinutes": 19,
+    "monthlyHours": 9.5,
+    "annualHours": 116,
+    "workDaysEquivalent": 14.5,
+    "methodology": "ロボット掃除機による清掃で節約される時間を、一般的な手動掃除の時間と比較して算出しています。"
+  },
+  "operationalCost": {
+    "daily": 82,
+    "dailyNote": "消耗品の実質的な日割りコスト",
+    "monthly": 2500,
+    "annual": 30000,
+    "consumables": [
+      {
+        "item": "ダストバッグ",
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 3500,
+        "annualCost": 14000
+      },
+      {
+        "item": "メインブラシ",
+        "replacementFrequency": "12ヶ月ごと",
+        "unitCost": 5000,
+        "annualCost": 5000
+      },
+      {
+        "item": "サイドブラシ",
+        "replacementFrequency": "12ヶ月ごと",
+        "unitCost": 3000,
+        "annualCost": 3000
+      },
+      {
+        "item": "フィルター",
+        "replacementFrequency": "12ヶ月ごと",
+        "unitCost": 3000,
+        "annualCost": 3000
+      },
+      {
+        "item": "モップパッド",
+        "replacementFrequency": "12ヶ月ごと",
+        "unitCost": 5000,
+        "annualCost": 5000
+      }
+    ]
+  },
+  "performanceAnalysis": {
+    "floorCleaning": {
+      "score": 95,
+      "reviewCount": 40,
+      "positiveReviewCount": 38,
+      "comment": "強力な吸引力と効率的な経路設計により、床のゴミやホコリを徹底的に除去。毎日清潔な床を保てると高評価です。"
+    },
+    "carpetCleaning": {
+      "score": 80,
+      "reviewCount": 6,
+      "positiveReviewCount": 4,
+      "comment": "デュアルタービンによる強力吸引でカーペットの奥のゴミも効果的に除去。ただし、厚手の絨毯では性能に限界を感じる声も。"
+    },
+    "petHairRemoval": {
+      "score": 90,
+      "reviewCount": 12,
+      "positiveReviewCount": 7,
+      "comment": "ペットの毛や砂の吸引力は非常に高く、多頭飼いの家庭で特に重宝されています。ブラシへの毛絡みも少ないと好評です。"
+    },
+    "quietness": {
+      "score": 65,
+      "reviewCount": 15,
+      "positiveReviewCount": 7,
+      "comment": "通常清掃時は比較的静かですが、自動ゴミ収集時の動作音は非常に大きく、夜間使用には注意が必要です。"
+    },
+    "stepClimbing": {
+      "score": 60,
+      "reviewCount": 13,
+      "positiveReviewCount": 3,
+      "comment": "段差の乗り越えは一定の高さまで可能ですが、特定の段差や家具で引っかかり停止するケースが散見されます。"
+    },
+    "maintenance": {
+      "score": 75,
+      "reviewCount": 29,
+      "positiveReviewCount": 25,
+      "comment": "自動ゴミ収集機能によりゴミ捨ての手間が大幅に削減され、非常に便利。ただし、水拭きモップの手入れはやや手間がかかります。"
+    },
+    "appStability": {
+      "score": 60,
+      "reviewCount": 36,
+      "positiveReviewCount": 15,
+      "comment": "アプリは多機能で便利ですが、Wi-Fi接続の不安定さやマッピングのリセットなど、安定性に課題が見られます。"
+    },
+    "batteryLife": {
+      "score": 70,
+      "reviewCount": 15,
+      "positiveReviewCount": 1,
+      "comment": "長時間の稼働が可能ですが、一部でバッテリーの故障や充電に関する初期不良が報告されており、注意が必要です。"
+    }
+  },
+  "radarChartData": {
+    "labels": [
+      "床掃除",
+      "カーペット",
+      "ペット毛",
+      "静音性",
+      "段差",
+      "メンテ",
+      "アプリ",
+      "電池"
+    ],
+    "values": [
+      95,
+      80,
+      90,
+      65,
+      60,
+      75,
+      60,
+      70
+    ]
+  },
+  "dataQuality": {
+    "totalReviews": 108,
+    "sampledReviews": 108,
+    "adoptedReviews": 100,
+    "excludedReviews": 8,
+    "trustScore": 88.0,
+    "comment": "ユーザーから提供された108件のレビューを詳細に分析。一部の短文レビューを除き、製品の性能と課題を多角的に評価しました。"
+  },
+  "reviewKeywords": {
+    "positive": [
+      {
+        "keyword": "満足・買ってよかった",
+        "count": 17
+      },
+      {
+        "keyword": "家事が楽になった",
+        "count": 11
+      },
+      {
+        "keyword": "使いやすい・便利",
+        "count": 10
+      },
+      {
+        "keyword": "吸引力が高い",
+        "count": 7
+      },
+      {
+        "keyword": "綺麗になる",
+        "count": 7
+      }
+    ],
+    "negative": [
+      {
+        "keyword": "動作音が気になる",
+        "count": 9
+      },
+      {
+        "keyword": "故障・不具合",
+        "count": 7
+      },
+      {
+        "keyword": "段差・家具で引っかかる",
+        "count": 5
+      },
+      {
+        "keyword": "止まってしまう",
+        "count": 3
+      },
+      {
+        "keyword": "コードを巻き込む",
+        "count": 2
+      }
+    ]
+  },
+  "successStrategies": [
+    {
+      "rank": 1,
+      "issue": "コードや小物による動作停止",
+      "occurrenceRate": 10,
+      "occurrenceCount": 11,
+      "environmentalFactor": "床に散乱した充電コードや小物類",
+      "technicalDescription": "ロボット掃除機がコード類をブラシに巻き込んだり、小型の障害物に乗り上げたりすることで、動作が停止する問題が発生します。",
+      "avoidanceStrategies": [
+        {
+          "method": "掃除前に床のコードや小物を片付ける",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "物理的な障害物を取り除くことで、巻き込みや引っかかりのリスクを根本的に解消し、スムーズな清掃を確保します。"
+        },
+        {
+          "method": "アプリで進入禁止エリアを設定する",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalRationale": "特定のエリアへの侵入を制限することで、コード類が集中する場所や引っかかりやすい場所を回避し、トラブルを未然に防ぎます。"
+        }
+      ],
+      "preventionTips": "日常的に床に物を置かない習慣をつけることで、ロボット掃除機が効率的に稼働し、常に清潔な環境を維持できます。"
+    }
+  ],
+  "topComplaints": [
+    {
+      "title": "自動ゴミ収集時の騒音",
+      "percentage": 15,
+      "reviewCount": 16,
+      "description": "自動ゴミ収集ステーションへの吸引時に発生する音が非常に大きく、特に夜間や集合住宅での使用には注意が必要です。",
+      "solution": "アプリでゴミ収集の頻度や時間帯を設定し、騒音を避けたい時間帯の動作を停止させることで対策が可能です。"
+    },
+    {
+      "title": "アプリ・Wi-Fi接続の不安定さ",
+      "percentage": 12,
+      "reviewCount": 13,
+      "description": "アプリが不安定で設定がリセットされたり、Wi-Fi接続が頻繁に途切れたりするため、スムーズな操作が難しい場合があります。",
+      "solution": "ルーターの再起動や2.4GHz帯での接続確認、アプリの再インストール、またはメーカーサポートへの問い合わせが推奨されます。"
+    },
+    {
+      "title": "段差や障害物での引っかかり",
+      "percentage": 10,
+      "reviewCount": 11,
+      "description": "特定の段差や家具、コード類でロボット掃除機が引っかかり、停止してしまうことがあり、手動での救助が必要になる場合があります。",
+      "solution": "事前に床の障害物を取り除き、アプリで進入禁止エリアやバーチャルウォールを設定することで、引っかかりを防止できます。"
+    }
+  ],
+  "attributeScores": {
+    "petOwner": {
+      "overall": 89,
+      "details": [
+        {
+          "field": "ペット毛吸引力",
+          "score": 90,
+          "reviewCount": 12,
+          "comment": "ペットの毛を強力に吸引し、多頭飼いの家庭でも床を清潔に保てると高評価です。"
+        },
+        {
+          "field": "床掃除",
+          "score": 95,
+          "reviewCount": 40,
+          "comment": "床のゴミやホコリを徹底的に除去し、ペットのいる家庭でも衛生的な環境を維持できます。"
+        },
+        {
+          "field": "メンテナンス",
+          "score": 75,
+          "reviewCount": 29,
+          "comment": "自動ゴミ収集で手間は減りますが、モップの手入れや長期的な消耗品交換は考慮が必要です。"
+        }
+      ]
+    },
+    "apartment": {
+      "overall": 73,
+      "details": [
+        {
+          "field": "静音性",
+          "score": 65,
+          "reviewCount": 15,
+          "comment": "通常清掃は静かですが、ゴミ収集時の騒音が大きく、集合住宅での使用には時間帯の配慮が必要です。"
+        },
+        {
+          "field": "床掃除",
+          "score": 95,
+          "reviewCount": 40,
+          "comment": "マンションのフローリングを効率的に清掃し、日常の床掃除の負担を大幅に軽減します。"
+        },
+        {
+          "field": "段差乗り越え",
+          "score": 60,
+          "reviewCount": 13,
+          "comment": "比較的低い段差は乗り越えますが、特定の敷居や家具で引っかかることがあり、注意が必要です。"
+        }
+      ]
+    },
+    "workingProfessional": {
+      "overall": 68,
+      "details": [
+        {
+          "field": "アプリ安定性",
+          "score": 60,
+          "reviewCount": 36,
+          "comment": "多機能なアプリは便利ですが、接続不安定やマッピングのリセットなど、安定性に課題が見られます。"
+        },
+        {
+          "field": "メンテナンス",
+          "score": 75,
+          "reviewCount": 29,
+          "comment": "自動ゴミ収集で日常の手間は減りますが、モップの手入れや消耗品交換は定期的に必要です。"
+        },
+        {
+          "field": "バッテリー",
+          "score": 70,
+          "reviewCount": 15,
+          "comment": "長時間の稼働が可能ですが、一部でバッテリー故障や充電不良の報告があり、信頼性にばらつきがあります。"
+        }
+      ]
+    },
+    "familyHome": {
+      "overall": 83,
+      "details": [
+        {
+          "field": "床掃除",
+          "score": 95,
+          "reviewCount": 40,
+          "comment": "広範囲の床を効率的に清掃し、子供の食べこぼしやホコリをしっかり除去してくれます。"
+        },
+        {
+          "field": "バッテリー",
+          "score": 70,
+          "reviewCount": 15,
+          "comment": "広い家でも一度の充電で十分な範囲をカバーしますが、一部で充電関連の不具合も報告されています。"
+        },
+        {
+          "field": "カーペット",
+          "score": 80,
+          "reviewCount": 6,
+          "comment": "カーペットの奥のゴミも吸引力で除去しますが、厚手のカーペットが多い家庭では限界を感じるかもしれません。"
+        }
+      ]
+    }
+  },
+  "resaleValue": null,
+  "affiliate": {
+    "moshimo": "<!-- START MoshimoAffiliateEasyLink -->\r\n<script type=\"text/javascript\">\r\n(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;\r\nb[a]=b[a]||function(){arguments.currentScript=c.currentScript\r\n||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};\r\nc.getElementById(a)||(d=c.createElement(f),d.src=g,\r\nd.id=a,e=c.getElementsByTagName(\"body\")[0],e.appendChild(d))})\r\n(window,document,\"script\",\"//dn.msmstatic.com/site/cardlink/bundle.js?20220329\",\"msmaflink\");\r\nmsmaflink({\"n\":\"【特典あり】Anker Eufy Clean (ユーフィクリーン) X8 Pro with Self-Empty Station (ロボット掃除機) カーペット 自動ゴミ収集ステーション ブラック 自動ゴミ収集\",\"b\":\"\",\"t\":\"\",\"d\":\"https:\\/\\/thumbnail.image.rakuten.co.jp\",\"c_p\":\"\\/@0_mall\\/select-list\\/cabinet\",\"p\":[\"\\/imgrc0095159420.jpg\",\"\\/imgrc0095159421.jpg\",\"\\/imgrc0095159422.jpg\"],\"u\":{\"u\":\"https:\\/\\/item.rakuten.co.jp\\/select-list\\/t2276\\/\",\"t\":\"rakuten\",\"r_v\":\"\"},\"v\":\"2.1\",\"b_l\":[{\"id\":1,\"u_tx\":\"楽天市場で見る\",\"u_bc\":\"#f76956\",\"u_url\":\"https:\\/\\/item.rakuten.co.jp\\/select-list\\/t2276\\/\",\"a_id\":5483003,\"p_id\":54,\"pl_id\":27059,\"pc_id\":54,\"s_n\":\"rakuten\",\"u_so\":1},{\"id\":2,\"u_tx\":\"Yahoo!ショッピングで見る\",\"u_bc\":\"#66a7ff\",\"u_url\":\"https:\\/\\/shopping.yahoo.co.jp\\/search?first=1\\u0026p=%E3%80%90%E7%89%B9%E5%85%B8%E3%81%82%E3%82%8A%E3%80%91Anker%20Eufy%20Clean%20(%E3%83%A6%E3%83%BC%E3%83%95%E3%82%A3%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3)%20X8%20Pro%20with%20Self-Empty%20Station%20(%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F)%20%E3%82%AB%E3%83%BC%E3%83%9A%E3%83%83%E3%83%88%20%E8%87%AA%E5%8B%95%E3%82%B4%E3%83%9F%E5%8F%8E%E9%9B%86%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%20%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF%20%E8%87%AA%E5%8B%95%E3%82%B4%E3%83%9F%E5%8F%8E%E9%9B%86\",\"a_id\":5483010,\"p_id\":1225,\"pl_id\":27061,\"pc_id\":1925,\"s_n\":\"yahoo\",\"u_so\":2}],\"eid\":\"7VswI\",\"s\":\"s\"});\r\n</script>\r\n<div id=\"msmaflink-7VswI\">リンク</div>\r\n<!-- MoshimoAffiliateEasyLink END -->",
+    "direct": "<a href=\"//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3766176&pid=892603477&vc_url=https%3A%2F%2Fwww.ankerjapan.com%2Fproducts%2Ft2276%3F_pos%3D7%26_fid%3D6afd318d9%26_ss%3Dc%3Fvariant%3D43341857161377\" rel=\"nofollow\"><img src=\"//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3766176&pid=892603477\" height=\"1\" width=\"0\" border=\"0\">Eufy Clean X8 Pro with Self-Empty Station</a>",
+    "hpPublish": true
+  }
+}

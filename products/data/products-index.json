@@ -1,0 +1,986 @@
+[
+  {
+    "id": "k11",
+    "name": "ロボット掃除機 K11+",
+    "manufacturer": "SwitchBot",
+    "price": 59800,
+    "rating": 4.36,
+    "reviewCount": 514,
+    "totalReviewCount": 514,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/09377790/11892401/11892926/07.jpg",
+    "badges": [
+      "SwitchBot",
+      "満足・買ってよかった",
+      "静かで快適"
+    ],
+    "overallTrustScore": 100.0,
+    "specs": {
+      "suction": 93,
+      "mopping": 93,
+      "noise": 93,
+      "obstacle": 78,
+      "app": 90,
+      "maintenance": 88
+    }
+  },
+  {
+    "id": "deebot-t80-omni",
+    "name": "DEEBOT T80 OMNI",
+    "manufacturer": "ECOVACS",
+    "price": 149800,
+    "rating": 4.46,
+    "reviewCount": 572,
+    "totalReviewCount": 572,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260422/dex68-21ee.jpg",
+    "badges": [
+      "ECOVACS",
+      "満足・買ってよかった",
+      "静かで快適"
+    ],
+    "overallTrustScore": 98.5,
+    "specs": {
+      "suction": 98,
+      "mopping": 98,
+      "noise": 86,
+      "obstacle": 75,
+      "app": 94,
+      "maintenance": 96
+    }
+  },
+  {
+    "id": "roomba-plus-405-combo-autowash",
+    "name": "Roomba® Plus 405 Combo + AutoWash™",
+    "manufacturer": "iRobot",
+    "price": 98800,
+    "rating": 4.22,
+    "reviewCount": 673,
+    "totalReviewCount": 673,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/03016688/20260219_review_2nen/405_aw_2nen_v2.jpg",
+    "badges": [
+      "iRobot",
+      "満足・買ってよかった",
+      "綺麗になる"
+    ],
+    "overallTrustScore": 98.5,
+    "specs": {
+      "suction": 98,
+      "mopping": 98,
+      "noise": 75,
+      "obstacle": 70,
+      "app": 80,
+      "maintenance": 96
+    }
+  },
+  {
+    "id": "deebot-t50-omni",
+    "name": "DEEBOT T50 OMNI",
+    "manufacturer": "ECOVACS",
+    "price": 64820,
+    "rating": 4.18,
+    "reviewCount": 1257,
+    "totalReviewCount": 1257,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260422/ddx57-12ee.jpg",
+    "badges": [
+      "ECOVACS",
+      "満足・買ってよかった",
+      "静かで快適"
+    ],
+    "overallTrustScore": 97.9,
+    "specs": {
+      "suction": 98,
+      "mopping": 98,
+      "noise": 88,
+      "obstacle": 65,
+      "app": 72,
+      "maintenance": 85
+    }
+  },
+  {
+    "id": "eufy-clean-x8-pro-with-self-empty-station",
+    "name": "Eufy Clean X8 Pro with Self-Empty Station",
+    "manufacturer": "Anker",
+    "price": 69990,
+    "rating": 3.72,
+    "reviewCount": 108,
+    "totalReviewCount": 108,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/select-list/cabinet/imgrc0095159420.jpg",
+    "badges": [
+      "Anker",
+      "満足・買ってよかった",
+      "家事が楽になった"
+    ],
+    "overallTrustScore": 88.0,
+    "specs": {
+      "suction": 95,
+      "mopping": 95,
+      "noise": 65,
+      "obstacle": 60,
+      "app": 60,
+      "maintenance": 75
+    }
+  },
+  {
+    "id": "eufy-robot-vacuum-auto-empty-c10",
+    "name": "Eufy Robot Vacuum Auto-Empty C10",
+    "manufacturer": "Anker",
+    "price": 29990,
+    "rating": 4.01,
+    "reviewCount": 413,
+    "totalReviewCount": 413,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t2292/t2292_nomal.jpg",
+    "badges": [
+      "Anker",
+      "満足・買ってよかった",
+      "静かで快適"
+    ],
+    "overallTrustScore": 88.0,
+    "specs": {
+      "suction": 95,
+      "mopping": 95,
+      "noise": 78,
+      "obstacle": 75,
+      "app": 80,
+      "maintenance": 85
+    }
+  },
+  {
+    "id": "eufy-robot-vacuum-omni-e25",
+    "name": "Eufy Robot Vacuum Omni E25",
+    "manufacturer": "Anker",
+    "price": 119920,
+    "rating": 4.46,
+    "reviewCount": 305,
+    "totalReviewCount": 305,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t2353/imgrc0094500246.jpg",
+    "badges": [
+      "Anker",
+      "満足・買ってよかった",
+      "静かで快適"
+    ],
+    "overallTrustScore": 88.0,
+    "specs": {
+      "suction": 98,
+      "mopping": 98,
+      "noise": 86,
+      "obstacle": 75,
+      "app": 94,
+      "maintenance": 96
+    }
+  },
+  {
+    "id": "q10p",
+    "name": "Q10P+",
+    "manufacturer": "Roborock",
+    "price": 41800,
+    "rating": 4.41,
+    "reviewCount": 191,
+    "totalReviewCount": 191,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/roborockjapandirect/cabinet/products/12574614/imgrc0132772943.jpg",
+    "badges": [
+      "Roborock",
+      "満足・買ってよかった",
+      "静かで快適"
+    ],
+    "overallTrustScore": 88.0,
+    "specs": {
+      "suction": 98,
+      "mopping": 98,
+      "noise": 88,
+      "obstacle": 75,
+      "app": 90,
+      "maintenance": 92
+    }
+  },
+  {
+    "id": "roomba-105-combo-autoempty",
+    "name": "Roomba® 105 Combo + AutoEmpty™",
+    "manufacturer": "iRobot",
+    "price": 59200,
+    "rating": 3.94,
+    "reviewCount": 341,
+    "totalReviewCount": 341,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/03016688/20260219_review_2nen/105c_tm_2nen_v2.jpg",
+    "badges": [
+      "iRobot",
+      "満足・買ってよかった",
+      "静かで快適"
+    ],
+    "overallTrustScore": 88.0,
+    "specs": {
+      "suction": 95,
+      "mopping": 95,
+      "noise": 88,
+      "obstacle": 65,
+      "app": 60,
+      "maintenance": 85
+    }
+  },
+  {
+    "id": "s20",
+    "name": "お掃除ロボットS20",
+    "manufacturer": "SwitchBot",
+    "price": 91800,
+    "rating": 4.14,
+    "reviewCount": 108,
+    "totalReviewCount": 108,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/09377790/s20/amazon/s20.jpg",
+    "badges": [
+      "SwitchBot",
+      "満足・買ってよかった",
+      "使いやすい・便利"
+    ],
+    "overallTrustScore": 88.0,
+    "specs": {
+      "suction": 95,
+      "mopping": 95,
+      "noise": 78,
+      "obstacle": 65,
+      "app": 90,
+      "maintenance": 88
+    }
+  },
+  {
+    "id": "saros-10r",
+    "name": "Saros 10R",
+    "manufacturer": "Roborock",
+    "price": 269800,
+    "rating": 4.44,
+    "reviewCount": 322,
+    "totalReviewCount": 322,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/roborockjapandirect/cabinet/products/12574614/imgrc0133487232.jpg",
+    "badges": [
+      "Roborock",
+      "満足・買ってよかった",
+      "静かで快適"
+    ],
+    "overallTrustScore": 88.0,
+    "specs": {
+      "suction": 98,
+      "mopping": 98,
+      "noise": 88,
+      "obstacle": 78,
+      "app": 89,
+      "maintenance": 92
+    }
+  },
+  {
+    "id": "deebot-mini",
+    "name": "DEEBOT mini",
+    "manufacturer": "ECOVACS",
+    "price": 69800,
+    "rating": 4.04,
+    "reviewCount": 206,
+    "totalReviewCount": 206,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/deebot/mini/thumb.jpg",
+    "badges": [
+      "ECOVACS",
+      "満足・買ってよかった",
+      "静かで快適"
+    ],
+    "overallTrustScore": 86.5,
+    "specs": {
+      "suction": 95,
+      "mopping": 95,
+      "noise": 90,
+      "obstacle": 70,
+      "app": 75,
+      "maintenance": 93
+    }
+  },
+  {
+    "id": "roomba-mini-autoempty",
+    "name": "Roomba® Mini + AutoEmpty™",
+    "manufacturer": "iRobot",
+    "price": 49800,
+    "rating": 4.22,
+    "reviewCount": 338,
+    "totalReviewCount": 338,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/item_thum/br_thum/mini_ae_2nen_rank.jpg",
+    "badges": [
+      "iRobot",
+      "満足・買ってよかった",
+      "静かで快適"
+    ],
+    "overallTrustScore": 86.5,
+    "specs": {
+      "suction": 96,
+      "mopping": 96,
+      "noise": 80,
+      "obstacle": 72,
+      "app": 75,
+      "maintenance": 92
+    }
+  },
+  {
+    "id": "deebot-n30-plus",
+    "name": "DEEBOT N30 PLUS",
+    "manufacturer": "ECOVACS",
+    "price": 69800,
+    "rating": 4.34,
+    "reviewCount": 282,
+    "totalReviewCount": 282,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260422/ydlx11-35ee.jpg",
+    "badges": [
+      "ECOVACS",
+      "満足・買ってよかった",
+      "吸引力が高い"
+    ],
+    "overallTrustScore": 85.0,
+    "specs": {
+      "suction": 98,
+      "mopping": 98,
+      "noise": 86,
+      "obstacle": 75,
+      "app": 75,
+      "maintenance": 96
+    }
+  },
+  {
+    "id": "roomba-max-705-vac-autoempty",
+    "name": "Roomba® Max 705 Vac + AutoEmpty™",
+    "manufacturer": "iRobot",
+    "price": 98800,
+    "rating": 3.98,
+    "reviewCount": 226,
+    "totalReviewCount": 226,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/03016688/20260219_review_2nen/705v_tm_2nen_v3.jpg",
+    "badges": [
+      "iRobot",
+      "満足・買ってよかった",
+      "吸引力が高い"
+    ],
+    "overallTrustScore": 85.0,
+    "specs": {
+      "suction": 90,
+      "mopping": 90,
+      "noise": 70,
+      "obstacle": 80,
+      "app": 75,
+      "maintenance": 85
+    }
+  },
+  {
+    "id": "roomba-mini-slim-slimcharge",
+    "name": "Roomba® Mini Slim + SlimCharge™",
+    "manufacturer": "iRobot",
+    "price": 39800,
+    "rating": 3.75,
+    "reviewCount": 204,
+    "totalReviewCount": 204,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/item_thum/br_thum/mini_slim_tm.jpg",
+    "badges": [
+      "iRobot",
+      "満足・買ってよかった",
+      "静かで快適"
+    ],
+    "overallTrustScore": 85.0,
+    "specs": {
+      "suction": 95,
+      "mopping": 95,
+      "noise": 75,
+      "obstacle": 70,
+      "app": 60,
+      "maintenance": 75
+    }
+  },
+  {
+    "id": "s10",
+    "name": "お掃除ロボットS10",
+    "manufacturer": "SwitchBot",
+    "price": 119820,
+    "rating": 3.53,
+    "reviewCount": 100,
+    "totalReviewCount": 100,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/trend-tech/cabinet/item/13/switchbot/0810150540697_2.jpg",
+    "badges": [
+      "SwitchBot",
+      "満足・買ってよかった",
+      "使いやすい・便利"
+    ],
+    "overallTrustScore": 85.0,
+    "specs": {
+      "suction": 85,
+      "mopping": 85,
+      "noise": 65,
+      "obstacle": 70,
+      "app": 65,
+      "maintenance": 60
+    }
+  },
+  {
+    "id": "eufy-robovac-g10-hybrid",
+    "name": "Eufy RoboVac G10 Hybrid",
+    "manufacturer": "Anker",
+    "price": 29990,
+    "rating": 3.47,
+    "reviewCount": 102,
+    "totalReviewCount": 102,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/b-surprise2/cabinet/cm146/4571411191008_1.jpg",
+    "badges": [
+      "Anker",
+      "吸引力が高い",
+      "満足・買ってよかった"
+    ],
+    "overallTrustScore": 83.0,
+    "specs": {
+      "suction": 90,
+      "mopping": 90,
+      "noise": 85,
+      "obstacle": 60,
+      "app": 60,
+      "maintenance": 75
+    }
+  },
+  {
+    "id": "deebot-x8-pro-omni",
+    "name": "DEEBOT X8 PRO OMNI",
+    "manufacturer": "ECOVACS",
+    "price": 199800,
+    "rating": 4.24,
+    "reviewCount": 261,
+    "totalReviewCount": 261,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260422/dex56-14ee.jpg",
+    "badges": [
+      "ECOVACS",
+      "満足・買ってよかった",
+      "吸引力が高い"
+    ],
+    "overallTrustScore": 82.0,
+    "specs": {
+      "suction": 97,
+      "mopping": 97,
+      "noise": 88,
+      "obstacle": 65,
+      "app": 87,
+      "maintenance": 83
+    }
+  },
+  {
+    "id": "eufy-x10-pro-omni",
+    "name": "Eufy X10 Pro Omni",
+    "manufacturer": "Anker",
+    "price": 69990,
+    "rating": 4.0,
+    "reviewCount": 608,
+    "totalReviewCount": 608,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t2351/t2351_normal.jpg",
+    "badges": [
+      "Anker",
+      "満足・買ってよかった",
+      "使いやすい・便利"
+    ],
+    "overallTrustScore": 82.0,
+    "specs": {
+      "suction": 95,
+      "mopping": 95,
+      "noise": 75,
+      "obstacle": 65,
+      "app": 85,
+      "maintenance": 80
+    }
+  },
+  {
+    "id": "eufy-robovac-g30",
+    "name": "Eufy RoboVac G30",
+    "manufacturer": "Anker",
+    "price": 29490,
+    "rating": 4.16,
+    "reviewCount": 482,
+    "totalReviewCount": 482,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/deal/202604m3/t2253_sale.jpg",
+    "badges": [
+      "Anker",
+      "満足・買ってよかった",
+      "静かで快適"
+    ],
+    "overallTrustScore": 80.0,
+    "specs": {
+      "suction": 95,
+      "mopping": 95,
+      "noise": 92,
+      "obstacle": 70,
+      "app": 75,
+      "maintenance": 85
+    }
+  },
+  {
+    "id": "k10-pro",
+    "name": "ロボット掃除機 K10+ Pro",
+    "manufacturer": "SwitchBot",
+    "price": 64800,
+    "rating": 3.66,
+    "reviewCount": 430,
+    "totalReviewCount": 430,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/k10pro/imgrc0080848219.jpg",
+    "badges": [
+      "SwitchBot",
+      "満足・買ってよかった",
+      "使いやすい・便利"
+    ],
+    "overallTrustScore": 80.0,
+    "specs": {
+      "suction": 90,
+      "mopping": 90,
+      "noise": 75,
+      "obstacle": 65,
+      "app": 70,
+      "maintenance": 85
+    }
+  },
+  {
+    "id": "eufy-robot-vacuum-omni-c20",
+    "name": "Eufy Robot Vacuum Omni C20",
+    "manufacturer": "Anker",
+    "price": 69990,
+    "rating": 4.26,
+    "reviewCount": 123,
+    "totalReviewCount": 123,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/deal/202604m3/t2280_sale.jpg",
+    "badges": [
+      "Anker",
+      "満足・買ってよかった",
+      "綺麗になる"
+    ],
+    "overallTrustScore": 79.0,
+    "specs": {
+      "suction": 95,
+      "mopping": 95,
+      "noise": 78,
+      "obstacle": 72,
+      "app": 78,
+      "maintenance": 96
+    }
+  },
+  {
+    "id": "roomba-max-705-combo-autowash",
+    "name": "Roomba® Max 705 Combo + AutoWash™",
+    "manufacturer": "iRobot",
+    "price": 179800,
+    "rating": 3.91,
+    "reviewCount": 110,
+    "totalReviewCount": 110,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/03016688/20260219_review_2nen/705c_aw_tm_2nen_v2.jpg",
+    "badges": [
+      "iRobot",
+      "満足・買ってよかった",
+      "使いやすい・便利"
+    ],
+    "overallTrustScore": 79.0,
+    "specs": {
+      "suction": 85,
+      "mopping": 85,
+      "noise": 70,
+      "obstacle": 65,
+      "app": 70,
+      "maintenance": 75
+    }
+  },
+  {
+    "id": "deebot-x11-omnicyclone",
+    "name": "DEEBOT X11 OmniCyclone",
+    "manufacturer": "ECOVACS",
+    "price": 229900,
+    "rating": 4.46,
+    "reviewCount": 93,
+    "totalReviewCount": 93,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260422/dex99-10ee.jpg",
+    "badges": [
+      "ECOVACS",
+      "満足・買ってよかった",
+      "静かで快適"
+    ],
+    "overallTrustScore": 76.0,
+    "specs": {
+      "suction": 98,
+      "mopping": 98,
+      "noise": 86,
+      "obstacle": 75,
+      "app": 94,
+      "maintenance": 96
+    }
+  },
+  {
+    "id": "eufy-robot-vacuum-omni-c28",
+    "name": "Eufy Robot Vacuum Omni C28",
+    "manufacturer": "Anker",
+    "price": 99990,
+    "rating": 4.19,
+    "reviewCount": 54,
+    "totalReviewCount": 54,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t211a/imgrc0101372915.jpg",
+    "badges": [
+      "Anker",
+      "満足・買ってよかった",
+      "綺麗になる"
+    ],
+    "overallTrustScore": 73.9,
+    "specs": {
+      "suction": 97,
+      "mopping": 97,
+      "noise": 80,
+      "obstacle": 65,
+      "app": 95,
+      "maintenance": 85
+    }
+  },
+  {
+    "id": "deebot-n30",
+    "name": "DEEBOT N30",
+    "manufacturer": "ECOVACS",
+    "price": 34800,
+    "rating": 4.3,
+    "reviewCount": 84,
+    "totalReviewCount": 84,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260422/ydlx11-32df.jpg",
+    "badges": [
+      "ECOVACS",
+      "吸引力が高い",
+      "満足・買ってよかった"
+    ],
+    "overallTrustScore": 73.0,
+    "specs": {
+      "suction": 96,
+      "mopping": 96,
+      "noise": 88,
+      "obstacle": 65,
+      "app": 84,
+      "maintenance": 92
+    }
+  },
+  {
+    "id": "roomba-plus-505-combo-autowash",
+    "name": "Roomba® Plus 505 Combo + AutoWash™",
+    "manufacturer": "iRobot",
+    "price": 128400,
+    "rating": 3.87,
+    "reviewCount": 63,
+    "totalReviewCount": 63,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/03016688/20260219_review_2nen/505_aw_2nen_v2.jpg",
+    "badges": [
+      "iRobot",
+      "使いやすい・便利",
+      "満足・買ってよかった"
+    ],
+    "overallTrustScore": 73.0,
+    "specs": {
+      "suction": 95,
+      "mopping": 95,
+      "noise": 70,
+      "obstacle": 65,
+      "app": 60,
+      "maintenance": 90
+    }
+  },
+  {
+    "id": "eufy-robovac-g30-hybrid",
+    "name": "Eufy RoboVac G30 Hybrid",
+    "manufacturer": "Anker",
+    "price": 39990,
+    "rating": 4.09,
+    "reviewCount": 458,
+    "totalReviewCount": 458,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/deal/202604m3/t2253_sale.jpg",
+    "badges": [
+      "Anker",
+      "満足・買ってよかった",
+      "静かで快適"
+    ],
+    "overallTrustScore": 68.0,
+    "specs": {
+      "suction": 95,
+      "mopping": 95,
+      "noise": 93,
+      "obstacle": 78,
+      "app": 75,
+      "maintenance": 85
+    }
+  },
+  {
+    "id": "deebot-t50s-omni",
+    "name": "DEEBOT T50S OMNI",
+    "manufacturer": "ECOVACS",
+    "price": 89800,
+    "rating": 3.86,
+    "reviewCount": 16,
+    "totalReviewCount": 16,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260422/ddx47-0401.jpg",
+    "badges": [
+      "ECOVACS",
+      "満足・買ってよかった",
+      "静かで快適"
+    ],
+    "overallTrustScore": 64.0,
+    "specs": {
+      "suction": 95,
+      "mopping": 95,
+      "noise": 88,
+      "obstacle": 60,
+      "app": 85,
+      "maintenance": 80
+    }
+  },
+  {
+    "id": "qrevo-curvc",
+    "name": "Qrevo CurvC",
+    "manufacturer": "Roborock",
+    "price": 146900,
+    "rating": 4.46,
+    "reviewCount": 39,
+    "totalReviewCount": 39,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/renew06/cabinet/root_sniper_folder/sniper_folder_00049/imgrc0114979053.jpg",
+    "badges": [
+      "Roborock",
+      "満足・買ってよかった",
+      "吸引力が高い"
+    ],
+    "overallTrustScore": 64.0,
+    "specs": {
+      "suction": 98,
+      "mopping": 98,
+      "noise": 92,
+      "obstacle": 75,
+      "app": 88,
+      "maintenance": 97
+    }
+  },
+  {
+    "id": "eufy-robot-vacuum-omni-s1-pro",
+    "name": "Eufy Robot Vacuum Omni S1 Pro",
+    "manufacturer": "Anker",
+    "price": 199900,
+    "rating": 4.09,
+    "reviewCount": 85,
+    "totalReviewCount": 85,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t2080/imgrc0094857815.jpg",
+    "badges": [
+      "Anker",
+      "満足・買ってよかった",
+      "静かで快適"
+    ],
+    "overallTrustScore": 62.0,
+    "specs": {
+      "suction": 92,
+      "mopping": 92,
+      "noise": 88,
+      "obstacle": 72,
+      "app": 82,
+      "maintenance": 73
+    }
+  },
+  {
+    "id": "l40-ultra-ae",
+    "name": "L40 Ultra AE",
+    "manufacturer": "Dreame",
+    "price": 99800,
+    "rating": 4.26,
+    "reviewCount": 6,
+    "totalReviewCount": 6,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/20251230172934_1.jpg",
+    "badges": [
+      "Dreame",
+      "床がサラサラ・ピカピカ",
+      "綺麗になる"
+    ],
+    "overallTrustScore": 61.0,
+    "specs": {
+      "suction": 98,
+      "mopping": 98,
+      "noise": 70,
+      "obstacle": 75,
+      "app": 80,
+      "maintenance": 96
+    }
+  },
+  {
+    "id": "l40s-pro-ultra",
+    "name": "L40s Pro Ultra",
+    "manufacturer": "Dreame",
+    "price": 99800,
+    "rating": 4.36,
+    "reviewCount": 63,
+    "totalReviewCount": 63,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/20251230173059_1.jpg",
+    "badges": [
+      "Dreame",
+      "満足・買ってよかった",
+      "綺麗になる"
+    ],
+    "overallTrustScore": 61.0,
+    "specs": {
+      "suction": 98,
+      "mopping": 98,
+      "noise": 88,
+      "obstacle": 90,
+      "app": 75,
+      "maintenance": 96
+    }
+  },
+  {
+    "id": "x30-ultra",
+    "name": "X30 Ultra",
+    "manufacturer": "Dreame",
+    "price": 69800,
+    "rating": 4.27,
+    "reviewCount": 19,
+    "totalReviewCount": 19,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/11006786/imgrc0151417959.jpg",
+    "badges": [
+      "Dreame",
+      "満足・買ってよかった",
+      "静かで快適"
+    ],
+    "overallTrustScore": 61.0,
+    "specs": {
+      "suction": 98,
+      "mopping": 98,
+      "noise": 95,
+      "obstacle": 70,
+      "app": 85,
+      "maintenance": 88
+    }
+  },
+  {
+    "id": "x50-ultra",
+    "name": "X50 Ultra",
+    "manufacturer": "Dreame",
+    "price": 199800,
+    "rating": 4.53,
+    "reviewCount": 16,
+    "totalReviewCount": 16,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/20251230173336_1.jpg",
+    "badges": [
+      "Dreame",
+      "吸引力が高い",
+      "使いやすい・便利"
+    ],
+    "overallTrustScore": 61.0,
+    "specs": {
+      "suction": 98,
+      "mopping": 98,
+      "noise": 90,
+      "obstacle": 92,
+      "app": 85,
+      "maintenance": 97
+    }
+  },
+  {
+    "id": "q10v",
+    "name": "Q10V",
+    "manufacturer": "Roborock",
+    "price": 35999,
+    "rating": 4.14,
+    "reviewCount": 38,
+    "totalReviewCount": 38,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/enjoy-lovely/cabinet/gazoupic/systempic084/enly0f9k8ktyf1.jpg",
+    "badges": [
+      "Roborock",
+      "満足・買ってよかった",
+      "静かで快適"
+    ],
+    "overallTrustScore": 59.5,
+    "specs": {
+      "suction": 95,
+      "mopping": 95,
+      "noise": 90,
+      "obstacle": 70,
+      "app": 70,
+      "maintenance": 75
+    }
+  },
+  {
+    "id": "l20-ultra-complete",
+    "name": "L20 Ultra Complete",
+    "manufacturer": "Dreame",
+    "price": 52000,
+    "rating": 4.42,
+    "reviewCount": 36,
+    "totalReviewCount": 36,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/20251230165435_1.jpg",
+    "badges": [
+      "Dreame",
+      "満足・買ってよかった",
+      "床がサラサラ・ピカピカ"
+    ],
+    "overallTrustScore": 59.0,
+    "specs": {
+      "suction": 98,
+      "mopping": 98,
+      "noise": 86,
+      "obstacle": 75,
+      "app": 94,
+      "maintenance": 90
+    }
+  },
+  {
+    "id": "deebot-t90-omni",
+    "name": "DEEBOT T90 OMNI",
+    "manufacturer": "ECOVACS",
+    "price": 149800,
+    "rating": 4.36,
+    "reviewCount": 45,
+    "totalReviewCount": 45,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260422/dex96-12ee.jpg",
+    "badges": [
+      "ECOVACS",
+      "満足・買ってよかった",
+      "静かで快適"
+    ],
+    "overallTrustScore": 55.0,
+    "specs": {
+      "suction": 98,
+      "mopping": 98,
+      "noise": 95,
+      "obstacle": 75,
+      "app": 85,
+      "maintenance": 80
+    }
+  },
+  {
+    "id": "d10-plus",
+    "name": "D10 Plus",
+    "manufacturer": "Dreame",
+    "price": 26900,
+    "rating": 4.19,
+    "reviewCount": 30,
+    "totalReviewCount": 30,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/11302689/imgrc0140534087.jpg",
+    "badges": [
+      "Dreame",
+      "静かで快適",
+      "満足・買ってよかった"
+    ],
+    "overallTrustScore": 50.0,
+    "specs": {
+      "suction": 95,
+      "mopping": 95,
+      "noise": 90,
+      "obstacle": 70,
+      "app": 80,
+      "maintenance": 88
+    }
+  },
+  {
+    "id": "eufy-robovac-x8-hybrid",
+    "name": "Eufy RoboVac X8 Hybrid",
+    "manufacturer": "Anker",
+    "price": 59800,
+    "rating": 3.53,
+    "reviewCount": 28,
+    "totalReviewCount": 28,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/outl/cabinet/10380909/imgrc0094068125.jpg",
+    "badges": [
+      "Anker",
+      "満足・買ってよかった",
+      "吸引力が高い"
+    ],
+    "overallTrustScore": 44.0,
+    "specs": {
+      "suction": 90,
+      "mopping": 90,
+      "noise": 90,
+      "obstacle": 60,
+      "app": 75,
+      "maintenance": 65
+    }
+  }
+]

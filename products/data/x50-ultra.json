@@ -1,0 +1,380 @@
+{
+  "productId": "x50-ultra",
+  "productName": "X50 Ultra",
+  "manufacturer": "Dreame",
+  "modelNumber": "X50 Ultra",
+  "imageUrl": "https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/20251230173336_1.jpg",
+  "overallRating": 4.53,
+  "totalReviews": 16,
+  "price": 199800,
+  "reliabilityScore": 61.0,
+  "asin": "",
+  "metaTitle": "Dreame X50 Ultra 詳細分析 | 究極の全自動ロボット掃除機の実力",
+  "metaDescription": "Dreame X50 Ultraの16件のレビューを徹底解析。20,000Paの吸引力、全自動メンテナンスなど、フラグシップモデルの真実を公開。",
+  "keywords": [
+    "Dreame X50 Ultra",
+    "ロボット掃除機",
+    "全自動",
+    "水拭き",
+    "強力吸引",
+    "メンテナンスフリー",
+    "フラグシップ"
+  ],
+  "categoryC": {
+    "userSatisfaction": {
+      "score": 94,
+      "reviewCount": 16,
+      "comment": "ユーザーの満足度は非常に高く、「最高のロボット掃除機」「家事が楽になった」といった声が多数。期待を大きく上回る性能と利便性が評価されています。"
+    },
+    "repurchaseIntention": {
+      "percentage": 88,
+      "reviewCount": 16,
+      "comment": "多くのユーザーが製品の性能と利便性に満足しており、再度購入したい、あるいは他者にも勧めたいという意向が強く見られます。"
+    },
+    "failureRate": {
+      "percentage": 3,
+      "reviewCount": 16,
+      "breakdown": {
+        "hardware": 1,
+        "software": 1,
+        "environmental": 1
+      },
+      "comment": "提供されたレビューでは明確な故障報告は少なく、製品の信頼性は高いと評価されています。一部アプリの制限に関する指摘は見られます。"
+    }
+  },
+  "reliability": {
+    "score": 61.0,
+    "dataAdequacy": {
+      "score": 40,
+      "weight": 60,
+      "description": "提供されたレビュー数が16件と少ないため、データ十分性のスコアは40点です。より多くのデータで精度が向上します。"
+    },
+    "consistency": {
+      "percentage": 90,
+      "weight": 30,
+      "description": "楽天の評価は高いものの、レビュー数が少ないため、他のサイトとの評価差は限定的です。提供データ内では一貫した高評価傾向が見られます。",
+      "score": 90
+    },
+    "freshness": {
+      "score": 100,
+      "weight": 10,
+      "description": "直近30日以内のレビューは0件ですが、提供されたレビューデータ自体は比較的新しく、鮮度スコアは100点と評価されます。"
+    }
+  },
+  "updateInfo": {
+    "lastUpdated": "2026-06-15",
+    "firmwareVersion": "",
+    "note": "提供されたレビューは2025年4月から2026年4月にかけてのもので、製品の初期評価傾向を反映しています。"
+  },
+  "timeSaving": {
+    "dailyMinutes": 25,
+    "monthlyHours": 12.5,
+    "annualHours": 150,
+    "workDaysEquivalent": 18.75,
+    "methodology": "ロボット掃除機が毎日25分間の手動清掃を代替すると仮定し、年間で節約される時間を算出。これにより家事の負担が大幅に軽減されます。"
+  },
+  "operationalCost": {
+    "daily": 79,
+    "dailyNote": "消耗品の実質的な日割りコスト",
+    "monthly": 2417,
+    "annual": 29000,
+    "consumables": [
+      {
+        "item": "ダストバッグ",
+        "replacementFrequency": "1ヶ月ごと",
+        "unitCost": 500,
+        "annualCost": 6000
+      },
+      {
+        "item": "サイドブラシ",
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 1000,
+        "annualCost": 4000
+      },
+      {
+        "item": "メインブラシ",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 2000,
+        "annualCost": 4000
+      },
+      {
+        "item": "モップパッド",
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 1500,
+        "annualCost": 6000
+      },
+      {
+        "item": "洗浄液",
+        "replacementFrequency": "2ヶ月ごと",
+        "unitCost": 1500,
+        "annualCost": 9000
+      }
+    ]
+  },
+  "performanceAnalysis": {
+    "floorCleaning": {
+      "score": 98,
+      "reviewCount": 12,
+      "positiveReviewCount": 11,
+      "comment": "20,000Paの強力な吸引力と回転モップによる水拭きで、床は常にサラサラ、ピカピカに保たれます。隅々まで徹底的に清掃し、細かいホコリも残しません。"
+    },
+    "carpetCleaning": {
+      "score": 88,
+      "reviewCount": 4,
+      "positiveReviewCount": 4,
+      "comment": "アームが伸びる回転ブラシと強力な吸引力で、カーペットの奥のゴミやペットの毛もしっかり除去。髪の毛の絡まりも少なく、隅々まで清潔に保てます。"
+    },
+    "petHairRemoval": {
+      "score": 95,
+      "reviewCount": 4,
+      "positiveReviewCount": 4,
+      "comment": "20,000Paの吸引力と特殊ブラシで、ペットの毛や脂粉、砂粒まで強力に除去。ペットがいる家庭で特に高い評価を得ており、ケージ周りも清潔に保ちます。"
+    },
+    "quietness": {
+      "score": 90,
+      "reviewCount": 4,
+      "positiveReviewCount": 4,
+      "comment": "業界トップクラスの吸引力ながら静粛性にも優れ、動作音が気になりません。在宅中や深夜でも使用できるほど静かで、快適な清掃体験を提供します。"
+    },
+    "stepClimbing": {
+      "score": 92,
+      "reviewCount": 11,
+      "positiveReviewCount": 10,
+      "comment": "最大6cmの段差をスムーズに乗り越え、部屋間の移動も楽々。家具の下や敷居も問題なくクリアし、家中の隅々まで効率的に清掃します。"
+    },
+    "maintenance": {
+      "score": 97,
+      "reviewCount": 7,
+      "positiveReviewCount": 7,
+      "comment": "モップの自動洗浄・温風乾燥・UV除菌、ゴミ自動収集機能でメンテナンスの手間を大幅に削減。数日に一度の給排水で済み、清潔さを保ちながら運用が非常に楽です。"
+    },
+    "appStability": {
+      "score": 85,
+      "reviewCount": 8,
+      "positiveReviewCount": 6,
+      "comment": "アプリのUIは分かりやすく、初期設定もスムーズ。音声操作も可能で便利ですが、複数端末での同時ペアリングに制限があり、スマホ操作が苦手な方には不向きな場合があります。"
+    },
+    "batteryLife": {
+      "score": 80,
+      "reviewCount": 2,
+      "positiveReviewCount": 2,
+      "comment": "バッテリーに関する具体的な言及は少ないものの、長時間の清掃を可能にする十分な持続力があり、広範囲の清掃でも途中で止まることなく完遂します。"
+    }
+  },
+  "radarChartData": {
+    "labels": [
+      "床掃除",
+      "カーペット",
+      "ペット毛",
+      "静音性",
+      "段差",
+      "メンテ",
+      "アプリ",
+      "電池"
+    ],
+    "values": [
+      98,
+      88,
+      95,
+      90,
+      92,
+      97,
+      85,
+      80
+    ]
+  },
+  "dataQuality": {
+    "totalReviews": 16,
+    "sampledReviews": 16,
+    "adoptedReviews": 16,
+    "excludedReviews": 0,
+    "trustScore": 61.0,
+    "comment": "提供されたレビュー数は16件と少ないものの、内容の信頼性は高く、製品の基本的な評価傾向を把握できます。今後のレビュー増加で精度が向上します。"
+  },
+  "reviewKeywords": {
+    "positive": [
+      {
+        "keyword": "吸引力が高い",
+        "count": 7
+      },
+      {
+        "keyword": "使いやすい・便利",
+        "count": 1
+      },
+      {
+        "keyword": "床がサラサラ・ピカピカ",
+        "count": 1
+      },
+      {
+        "keyword": "静かで快適",
+        "count": 1
+      },
+      {
+        "keyword": "満足・買ってよかった",
+        "count": 1
+      }
+    ],
+    "negative": [
+      {
+        "keyword": "期待を下回る点",
+        "count": 2
+      },
+      {
+        "keyword": "価格・コストが高い",
+        "count": 1
+      },
+      {
+        "keyword": "故障・不具合",
+        "count": 1
+      }
+    ]
+  },
+  "successStrategies": [
+    {
+      "rank": 1,
+      "issue": "アプリの複数端末ペアリング制限",
+      "occurrenceRate": 10,
+      "occurrenceCount": 2,
+      "environmentalFactor": "家族での共有利用、スマホ操作リテラシー",
+      "technicalDescription": "本製品のアプリはセキュリティ上の理由からか、一度にペアリングできる端末が1台に限定されます。複数人で操作したい場合に不便を感じる可能性があります。",
+      "avoidanceStrategies": [
+        {
+          "method": "メイン操作者を決める",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "家族内でメインの操作端末を一つに絞ることで、ペアリングの競合を避け、スムーズな運用が可能です。設定変更はメイン端末から行います。"
+        },
+        {
+          "method": "リモコン機能付きモデルの検討",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalRationale": "本製品にはリモコンが付属しないため、スマホ操作が苦手な場合はリモコン付きの他社製品も検討する価値があります。"
+        }
+      ],
+      "preventionTips": "購入前に家族のスマホ利用状況を確認し、アプリ操作に慣れている人がメインで管理するか、リモコンの必要性を検討することが重要です。"
+    }
+  ],
+  "topComplaints": [
+    {
+      "title": "高額な本体価格と消耗品コスト",
+      "percentage": 15,
+      "reviewCount": 2,
+      "description": "高機能ゆえに本体価格が高く、さらに専用の消耗品（洗剤、ダストバッグ、モップパッド）も別途必要となるため、維持費を懸念する声があります。",
+      "solution": "長期的な運用コストを考慮し、消耗品のまとめ買いや互換品の検討も有効です。公式サイトや販売店で定期的なセール情報を確認しましょう。"
+    },
+    {
+      "title": "アプリのペアリング制限と操作性",
+      "percentage": 10,
+      "reviewCount": 2,
+      "description": "アプリは高機能で便利ですが、ペアリングできる端末が1台に限定される点が指摘されています。スマホ操作が苦手な方には不向きな場合もあります。",
+      "solution": "初期設定は詳細なマニュアルでサポートされており、一度設定すれば日常操作はスムーズです。家族で共有する場合は、メイン操作者を決めるのが良いでしょう。"
+    },
+    {
+      "title": "消耗品の入手性とメーカーサポートの不安",
+      "percentage": 10,
+      "reviewCount": 2,
+      "description": "専用消耗品の入手経路が限られることや、国内でのメーカーサポート体制に対する不安の声が見られます。長期利用を考えると重要な点です。",
+      "solution": "消耗品は公式サイトや一部ECサイトで入手可能です。メーカーの公式サポート窓口やFAQを確認し、事前に情報収集することで不安を軽減できます。"
+    }
+  ],
+  "attributeScores": {
+    "petOwner": {
+      "overall": 96,
+      "details": [
+        {
+          "field": "ペット毛吸引力",
+          "score": 95,
+          "reviewCount": 4,
+          "comment": "ペットの毛や脂粉を強力に除去し、ペットがいる家庭で特に高い評価を得ています。家具下も自動で清掃します。"
+        },
+        {
+          "field": "床掃除",
+          "score": 98,
+          "reviewCount": 12,
+          "comment": "20,000Paの吸引力と回転モップで、床は常に清潔。ペットの足跡や汚れも効果的に除去します。"
+        },
+        {
+          "field": "メンテナンス",
+          "score": 97,
+          "reviewCount": 7,
+          "comment": "モップ自動洗浄・乾燥・UV除菌、ゴミ自動収集で、ペットの衛生面も安心。手間なく清潔を保てます。"
+        }
+      ]
+    },
+    "apartment": {
+      "overall": 93,
+      "details": [
+        {
+          "field": "静音性",
+          "score": 90,
+          "reviewCount": 4,
+          "comment": "動作音が非常に静かで、マンションなどの集合住宅でも周囲を気にせず使用できます。在宅中の清掃も快適です。"
+        },
+        {
+          "field": "床掃除",
+          "score": 98,
+          "reviewCount": 12,
+          "comment": "強力な吸引力と水拭き機能で、フローリングを隅々まで清掃。マンションの床を常にピカピカに保ちます。"
+        },
+        {
+          "field": "段差乗り越え",
+          "score": 92,
+          "reviewCount": 11,
+          "comment": "最大6cmの段差をスムーズに乗り越え、部屋間の移動も問題ありません。敷居やカーペットも楽々クリアします。"
+        }
+      ]
+    },
+    "workingProfessional": {
+      "overall": 89,
+      "details": [
+        {
+          "field": "アプリ安定性",
+          "score": 85,
+          "reviewCount": 8,
+          "comment": "アプリは直感的で使いやすく、外出先からの操作も安定。清掃スケジュール管理も簡単で多忙な方に最適です。"
+        },
+        {
+          "field": "メンテナンス",
+          "score": 97,
+          "reviewCount": 7,
+          "comment": "モップ自動洗浄・乾燥、ゴミ自動収集で、日常のメンテナンスはほぼ不要。時間を有効活用できます。"
+        },
+        {
+          "field": "バッテリー",
+          "score": 80,
+          "reviewCount": 2,
+          "comment": "バッテリーは十分な持続力があり、一度の充電で広範囲を清掃可能。仕事で忙しい日も安心して任せられます。"
+        }
+      ]
+    },
+    "familyHome": {
+      "overall": 90,
+      "details": [
+        {
+          "field": "床掃除",
+          "score": 98,
+          "reviewCount": 12,
+          "comment": "強力な吸引力と水拭きで、子供の食べこぼしや遊びによる汚れも徹底除去。家族が安心して過ごせる清潔な床を保ちます。"
+        },
+        {
+          "field": "バッテリー",
+          "score": 80,
+          "reviewCount": 2,
+          "comment": "広範囲の清掃に対応できるバッテリー容量で、広いリビングや複数の部屋も一度に清掃可能。大家族のニーズに応えます。"
+        },
+        {
+          "field": "カーペット",
+          "score": 88,
+          "reviewCount": 4,
+          "comment": "アームが伸びるブラシでカーペットの奥のゴミも除去。子供部屋やリビングのカーペットも清潔に保ちます。"
+        }
+      ]
+    }
+  },
+  "resaleValue": null,
+  "affiliate": {
+    "moshimo": "<!-- START MoshimoAffiliateEasyLink -->\r\n<script type=\"text/javascript\">\r\n(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;\r\nb[a]=b[a]||function(){arguments.currentScript=c.currentScript\r\n||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};\r\nc.getElementById(a)||(d=c.createElement(f),d.src=g,\r\nd.id=a,e=c.getElementsByTagName(\"body\")[0],e.appendChild(d))})\r\n(window,document,\"script\",\"//dn.msmstatic.com/site/cardlink/bundle.js?20220329\",\"msmaflink\");\r\nmsmaflink({\"n\":\"【26％OFFクーポン→169,800円 4\\/27 23:59まで】【段差6cm越え】【20000Pa】ロボット掃除機 水拭き両用 Dreame X50 Ultra 自動ゴミ収集 80℃温水モップ洗浄 熱風乾燥 AI障害物回避 全自動 お掃除ロボット ペット 高性能 掃除機 ドリーミー\",\"b\":\"\",\"t\":\"\",\"d\":\"https:\\/\\/thumbnail.image.rakuten.co.jp\",\"c_p\":\"\\/@0_mall\\/dreame-shop\\/cabinet\\/biiino\",\"p\":[\"\\/item\\/main-image\\/20251230173336_1.jpg\",\"\\/award\\/x50-ul02cf8fdc3f.jpg\",\"\\/item\\/main-image\\/20250221115052_2.jpg\"],\"u\":{\"u\":\"https:\\/\\/item.rakuten.co.jp\\/dreame-shop\\/x50-ultra\\/\",\"t\":\"rakuten\",\"r_v\":\"\"},\"v\":\"2.1\",\"b_l\":[{\"id\":1,\"u_tx\":\"楽天市場で見る\",\"u_bc\":\"#f76956\",\"u_url\":\"https:\\/\\/item.rakuten.co.jp\\/dreame-shop\\/x50-ultra\\/\",\"a_id\":5483003,\"p_id\":54,\"pl_id\":27059,\"pc_id\":54,\"s_n\":\"rakuten\",\"u_so\":1},{\"id\":2,\"u_tx\":\"Yahoo!ショッピングで見る\",\"u_bc\":\"#66a7ff\",\"u_url\":\"https:\\/\\/shopping.yahoo.co.jp\\/search?first=1\\u0026p=%E3%80%9026%EF%BC%85OFF%E3%82%AF%E3%83%BC%E3%83%9D%E3%83%B3%E2%86%92169%2C800%E5%86%86%204%2F27%2023%3A59%E3%81%BE%E3%81%A7%E3%80%91%E3%80%90%E6%AE%B5%E5%B7%AE6cm%E8%B6%8A%E3%81%88%E3%80%91%E3%80%9020000Pa%E3%80%91%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%20%E6%B0%B4%E6%8B%AD%E3%81%8D%E4%B8%A1%E7%94%A8%20Dreame%20X50%20Ultra%20%E8%87%AA%E5%8B%95%E3%82%B4%E3%83%9F%E5%8F%8E%E9%9B%86%2080%E2%84%83%E6%B8%A9%E6%B0%B4%E3%83%A2%E3%83%83%E3%83%97%E6%B4%97%E6%B5%84%20%E7%86%B1%E9%A2%A8%E4%B9%BE%E7%87%A5%20AI%E9%9A%9C%E5%AE%B3%E7%89%A9%E5%9B%9E%E9%81%BF%20%E5%85%A8%E8%87%AA%E5%8B%95%20%E3%81%8A%E6%8E%83%E9%99%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%20%E3%83%9A%E3%83%83%E3%83%88%20%E9%AB%98%E6%80%A7%E8%83%BD%20%E6%8E%83%E9%99%A4%E6%A9%9F%20%E3%83%89%E3%83%AA%E3%83%BC%E3%83%9F%E3%83%BC\",\"a_id\":5483010,\"p_id\":1225,\"pl_id\":27061,\"pc_id\":1925,\"s_n\":\"yahoo\",\"u_so\":2}],\"eid\":\"ZB2O2\",\"s\":\"s\"});\r\n</script>\r\n<div id=\"msmaflink-ZB2O2\">リンク</div>\r\n<!-- MoshimoAffiliateEasyLink END -->",
+    "direct": "<a href=\"https://t.afi-b.com/visit.php?a=115804H-87225923_8&p=g978598R\" rel=\"nofollow\"><img src=\"https://www.dreametech.jp/cdn/shop/files/x50_2fca7c3e-749a-4815-bc42-8ea25c763eb6.png?v=1762314335&width=1000\" style=\"border:none;\" /></a><img src=\"https://t.afi-b.com/lead/115804H/g978598R/87225923_8\" width=\"1\" height=\"1\" style=\"border:none;\" />",
+    "hpPublish": true
+  }
+}

@@ -2,154 +2,138 @@
   "productId": "eufy-robot-vacuum-omni-c28",
   "productName": "Eufy Robot Vacuum Omni C28",
   "manufacturer": "Anker",
-  "modelNumber": "Omni C28 (T2340)",
-  "overallRating": 4.1,
-  "totalReviews": 12,
+  "modelNumber": "T211A510",
+  "imageUrl": "https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t211a/imgrc0101372915.jpg",
+  "overallRating": 4.19,
+  "totalReviews": 54,
   "price": 99990,
-  "reliabilityScore": 42.15,
-  "imageUrl": "https://m.media-amazon.com/images/I/61Nl-H6kG0L._AC_SL1500_.jpg",
-  "asin": "B0FX7M29RP",
-  "metaTitle": "Eufy Omni C28 実数分析 | ローラーモップの性能と維持費のリアル",
-  "metaDescription": "実数12件の口コミを徹底解析。ローラーモップの清掃力は好評ですが、消耗品の維持費や、本体ボタンの物理干渉によるリセット事故など、購入前に知るべき事実を公開。",
-  "badges": [
-    "実数12件",
-    "信頼42.2",
-    "ローラーモップ"
+  "reliabilityScore": 73.9,
+  "asin": "",
+  "metaTitle": "Eufy Robot Vacuum Omni C28 詳細分析 | 水拭きと吸引の真実",
+  "metaDescription": "Eufy Robot Vacuum Omni C28の54件のレビューを解析。強力な水拭きと吸引力、アプリ連携の真実を公開。",
+  "keywords": [
+    "ロボット掃除機",
+    "水拭き",
+    "吸引力",
+    "Anker",
+    "Eufy",
+    "Omni C28"
   ],
+  "categoryC": {
+    "userSatisfaction": {
+      "score": 94,
+      "reviewCount": 54,
+      "comment": "多くのユーザーが製品の性能と利便性に非常に満足しており、特に水拭き機能と清掃品質が高く評価されています。"
+    },
+    "repurchaseIntention": {
+      "percentage": 88,
+      "reviewCount": 48,
+      "comment": "購入者の約9割が本製品の購入を後悔しておらず、生活の質が向上したと実感しています。"
+    },
+    "failureRate": {
+      "percentage": 7,
+      "reviewCount": 4,
+      "breakdown": {
+        "hardware": 4,
+        "software": 0,
+        "environmental": 0
+      },
+      "comment": "初期不良や故障の報告が一部見られ、特にバッテリーやステーション関連の不具合が指摘されています。サポート対応への不満も。"
+    }
+  },
   "reliability": {
-    "score": 42.15,
+    "score": 73.9,
     "dataAdequacy": {
-      "score": 32,
+      "score": 60,
       "weight": 60,
-      "description": "採用12件はトレンド把握の足がかりにはなる一方、層差・再現性の解釈には限界があり、数値の幅を広めに見るのが安全です。"
+      "description": "54件のレビューから、データ十分性は中程度と評価されます。より多くのレビューで信頼性が向上します。"
     },
     "consistency": {
-      "percentage": 55,
+      "percentage": 93,
       "weight": 30,
-      "description": "新製品かつ件数が少なく、高評価と運用上の不満が同時に出やすい局面です。投稿が増えた再分析を推奨します。"
+      "description": "楽天の平均評価4.39と、レビュー内容の一貫性は高く、評価の信頼性を示しています。 [cite: 楽天★ 平均4.39]",
+      "score": 93
     },
     "freshness": {
-      "percentage": 95,
+      "score": 100,
       "weight": 10,
-      "description": "直近投稿の占めが大きく、現行版に近い文脈のレビューが中心です。"
+      "description": "直近30日以内のレビューが44.4%を占め、非常に高い鮮度を保っており、最新のユーザー体験を反映しています。"
     }
   },
   "updateInfo": {
-    "lastUpdated": "2026-04-18",
-    "firmwareVersion": "v1.2.x",
-    "note": "初期ファームの更新待ちやアプリ挙動は製造ロットで差が出る場合があります。通信の良い環境で初回セットアップを。"
+    "lastUpdated": "2026-06-15",
+    "firmwareVersion": "",
+    "note": "本製品は2026年2月24日に発売され、最新のレビューは2026年6月10日付です。多くのユーザーがその高い清掃能力と利便性を評価しています。"
   },
   "timeSaving": {
-    "dailyMinutes": 22,
+    "dailyMinutes": 20,
     "monthlyHours": 10,
     "annualHours": 120,
     "workDaysEquivalent": 15,
-    "methodology": "モップの自動洗浄・乾燥で手元の水拭き・モップ洗いが減る前提。実数ベースのコメント（「週1程度のタンク手入れ」）に合わせ、床面積で前後する目安。performanceの時短92点（12件中11件が肯定的）と整合。"
+    "methodology": "ロボット掃除機による自動清掃で、毎日約20分の手動掃除時間を削減できると仮定して算出。"
   },
   "operationalCost": {
-    "daily": 33,
-    "dailyNote": "年間約1.2万円前後目安。交換周期と純正価格で変動。",
-    "monthly": 1013,
-    "annual": 12160,
-    "comment": "内訳目安：ダストバッグ約2,480円/3個、ローラーモップ約3,980円、フィルター約1,980円。上記3品の年間想定合算。スコア58点帯。",
+    "daily": 17,
+    "dailyNote": "消耗品の実質的な日割りコスト",
+    "monthly": 500,
+    "annual": 6000,
     "consumables": [
       {
-        "item": "ダストバッグ（3個入・純正目安）",
-        "replacementFrequency": "年2〜3回目安",
-        "unitCost": 2480,
-        "annualCost": 6200
-      },
-      {
-        "item": "ローラーモップ（純正目安）",
-        "replacementFrequency": "年1回前後目安",
-        "unitCost": 3980,
-        "annualCost": 3980
-      },
-      {
-        "item": "フィルター（純正目安）",
-        "replacementFrequency": "年1回前後目安",
-        "unitCost": 1980,
-        "annualCost": 1980
+        "item": "ダストバッグ",
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 1500,
+        "annualCost": 6000
       }
     ]
   },
-  "categoryC": {
-    "userSatisfaction": {
-      "score": 82,
-      "reviewCount": 12,
-      "comment": "ローラーモップの洗浄力と静音性は12名全員が評価。一方、物理設計の課題によるリセット事故が満足度を下げています。"
-    },
-    "repurchaseIntention": {
-      "percentage": 66,
-      "reviewCount": 6,
-      "comment": "モップ付け替え不要の利便性は高いものの、センサー判定の甘さから、次回の購入を躊躇する声が一部で見られます。"
-    },
-    "failureRate": {
-      "percentage": 16,
-      "reviewCount": 12,
-      "comment": "12件中2件で、脱輪やリセットボタン接触といった運用上の問題が発生。機械的故障より設計上の環境適応力に課題があります。"
-    }
-  },
   "performanceAnalysis": {
     "floorCleaning": {
-      "score": 95,
-      "reviewCount": 12,
-      "positiveReviewCount": 12,
-      "comment": "ローラーモップによる水拭きは非常に強力。清掃後の汚水タンクの黒ずみを見て、効果を確信するユーザーが続出しています。"
+      "score": 97,
+      "reviewCount": 32,
+      "positiveReviewCount": 30,
+      "comment": "水拭き機能が特に高く評価されており、床がサラサラになるとの声多数。吸引力も強力で、日常の床掃除を任せられます。"
     },
     "carpetCleaning": {
-      "score": 85,
-      "reviewCount": 8,
-      "positiveReviewCount": 7,
-      "comment": "モップのリフトアップ機能は正確に動作。カーペットを濡らさず、強力に吸引できることが8件のレビューで確認済みです。"
-    },
-    "petHair": {
       "score": 88,
       "reviewCount": 3,
       "positiveReviewCount": 3,
-      "comment": "ゴム製ブラシにより毛が絡まりにくく、ペットの抜け毛が多い環境でも清掃後の床がサラサラになると好評です。"
+      "comment": "カーペット上では自動で水拭きを停止し、吸引力を上げてくれる機能が好評です。和室でも安心して使用できます。"
     },
     "petHairRemoval": {
-      "score": 88,
-      "reviewCount": 3,
-      "positiveReviewCount": 3,
-      "comment": "petHairと同一指標。"
+      "score": 90,
+      "reviewCount": 4,
+      "positiveReviewCount": 4,
+      "comment": "ペットを飼っている家庭でも、水拭き機能と吸引力でペットの毛をしっかり除去し、床を清潔に保てると評価されています。"
     },
     "quietness": {
-      "score": 94,
-      "reviewCount": 5,
-      "positiveReviewCount": 5,
-      "comment": "nightQuietnessと同値。夜間運用の騒音懸念は低い層が中心。"
-    },
-    "nightQuietness": {
-      "score": 94,
-      "reviewCount": 5,
-      "positiveReviewCount": 5,
-      "comment": "他社フラッグシップ比較でも「静か」との言及あり。夜間使用を前提とした5名全員が騒音レベルの低さを認めています。"
+      "score": 80,
+      "reviewCount": 3,
+      "positiveReviewCount": 3,
+      "comment": "本体の掃除音は静かで快適ですが、ゴミ収集やモップ洗浄時のステーション音は大きめです。不在時の利用が推奨されます。"
     },
     "stepClimbing": {
-      "score": 40,
-      "reviewCount": 10,
-      "positiveReviewCount": 4,
-      "comment": "落下防止判定が不安定。「2回に1回は玄関で脱輪する」という深刻な報告が事実として1件あり、注意が必要です。"
+      "score": 65,
+      "reviewCount": 4,
+      "positiveReviewCount": 1,
+      "comment": "段差乗り越え性能は一部で評価されるものの、本体の高さや落下防止機能に課題があり、特定の段差で脱輪する報告があります。"
     },
     "maintenance": {
-      "score": 92,
-      "reviewCount": 12,
-      "positiveReviewCount": 11,
-      "comment": "タンクを「斜め上に捻って引き抜く」構造により、棚の下など高さ制限のある場所でも給排水が極めて容易です。"
-    },
-    "appStability": {
-      "score": 75,
-      "reviewCount": 3,
-      "positiveReviewCount": 2,
-      "comment": "操作は容易だが、不意のリセット事故や初回更新の遅さで不安が残る、という層。attributeのappUsabilityと整合。"
-    },
-    "batteryLife": {
       "score": 85,
       "reviewCount": 12,
-      "positiveReviewCount": 11,
-      "comment": "途切れの報告は少ない想定。familyHomeのbatteryDuration(85)と整合。広域でも実用上十分な帯の声。"
+      "positiveReviewCount": 9,
+      "comment": "メンテナンス負担は少ないと評価される一方、ダストバッグ交換や汚水タンクの臭い、水の残量確認の不便さが指摘されています。"
+    },
+    "appStability": {
+      "score": 95,
+      "reviewCount": 14,
+      "positiveReviewCount": 13,
+      "comment": "アプリの安定性と使いやすさは非常に高く評価されています。マッピング精度も良く、遠隔操作や設定が簡単に行えます。"
+    },
+    "batteryLife": {
+      "score": 70,
+      "reviewCount": 3,
+      "positiveReviewCount": 0,
+      "comment": "バッテリー持続時間に関する具体的な言及は少ないですが、初期不良によるバッテリー問題の報告があり、今後の検証が必要です。"
     }
   },
   "radarChartData": {
@@ -160,234 +144,266 @@
       "静音性",
       "段差",
       "メンテ",
-      "時短",
-      "コスト"
+      "アプリ",
+      "電池"
     ],
     "values": [
-      95,
-      85,
+      97,
       88,
-      94,
-      40,
-      92,
-      92,
-      58
+      90,
+      80,
+      65,
+      85,
+      95,
+      70
     ]
   },
   "dataQuality": {
-    "totalReviews": 12,
-    "sampledReviews": 12,
-    "adoptedReviews": 12,
-    "excludedReviews": 0,
-    "trustScore": 42.15,
-    "comment": "全件採用。信頼42.15と一致。8軸レーダーは内訳の「時短92・コスト58」をそのまま表示。詳細カードは従来どおりapp/battery等を併用。"
+    "totalReviews": 54,
+    "sampledReviews": 54,
+    "adoptedReviews": 50,
+    "excludedReviews": 4,
+    "trustScore": 73.9,
+    "comment": "提供された54件のレビューを詳細に分析し、製品の性能、利便性、課題点を多角的に評価しました。"
   },
   "reviewKeywords": {
     "positive": [
       {
-        "keyword": "ローラーモップ",
+        "keyword": "満足・買ってよかった",
+        "count": 13
+      },
+      {
+        "keyword": "綺麗になる",
+        "count": 8
+      },
+      {
+        "keyword": "家事が楽になった",
+        "count": 6
+      },
+      {
+        "keyword": "床がサラサラ・ピカピカ",
         "count": 5
       },
       {
-        "keyword": "タンク脱着が楽",
-        "count": 3
-      },
-      {
-        "keyword": "静か",
-        "count": 3
-      },
-      {
-        "keyword": "水拭き",
-        "count": 3
-      },
-      {
-        "keyword": "汚水が黒い",
-        "count": 2
-      },
-      {
-        "keyword": "時短",
-        "count": 1
+        "keyword": "吸引力が高い",
+        "count": 4
       }
     ],
     "negative": [
       {
-        "keyword": "勝手にリセット",
+        "keyword": "故障・不具合",
+        "count": 6
+      },
+      {
+        "keyword": "コードを巻き込む",
+        "count": 3
+      },
+      {
+        "keyword": "止まってしまう",
         "count": 1
       },
       {
-        "keyword": "玄関で脱輪",
+        "keyword": "価格・コストが高い",
         "count": 1
       },
       {
-        "keyword": "壁に当たる",
-        "count": 1
-      },
-      {
-        "keyword": "消耗品が高い",
-        "count": 1
-      },
-      {
-        "keyword": "背が高い",
-        "count": 1
-      },
-      {
-        "keyword": "アプデが長い",
+        "keyword": "段差・家具で引っかかる",
         "count": 1
       }
     ]
   },
-  "topComplaints": [
+  "successStrategies": [
     {
       "rank": 1,
-      "title": "家具下でのスイッチ接触による強制リセット",
-      "complaint": "家具下でのスイッチ接触による強制リセット",
-      "percentage": 8,
-      "reviewCount": 1,
-      "description": "本体上部のボタンが物理的に出っ張っており、低いソファ下でボタンが長押しされ、設定が初期化されるトラブルがあります。",
-      "solution": "低い家具がある場所を進入禁止にするか、物理的に家具を数ミリ高くする対策が必要です。"
+      "issue": "初期不良や故障の発生",
+      "occurrenceRate": 7,
+      "occurrenceCount": 4,
+      "environmentalFactor": "製品の個体差、初期設定時の問題",
+      "technicalDescription": "バッテリーやステーションの動作不良、または本体が正常に機能しない初期段階での問題が報告されています。",
+      "avoidanceStrategies": [
+        {
+          "method": "購入直後の初期動作確認",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "製品到着後すぐに全機能をテストし、異常があれば速やかにメーカーサポートへ連絡することで早期解決が可能です。"
+        },
+        {
+          "method": "メーカー保証の活用",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "Ankerは最大24ヶ月保証を提供しており、保証期間内の故障は無償交換・修理の対象となるため、安心して利用できます。"
+        }
+      ],
+      "preventionTips": "製品マニュアルを熟読し、推奨される初期設定手順に従うことで、多くの初期トラブルを回避できます。"
     },
     {
       "rank": 2,
-      "title": "落下防止センサーの精度不足（玄関での脱輪）",
-      "complaint": "落下防止センサーの精度不足（玄関での脱輪）",
-      "percentage": 8,
-      "reviewCount": 1,
-      "description": "玄関の段差で2回に1回は脱輪し、立ち往生するという実体験が報告されています。",
-      "solution": "境界線テープを貼るか、アプリの仮想壁で玄関周辺を厳格に制限することをおすすめします。"
+      "issue": "ステーション関連の騒音とメンテナンス",
+      "occurrenceRate": 6,
+      "occurrenceCount": 3,
+      "environmentalFactor": "ステーションの設置場所、使用時間帯",
+      "technicalDescription": "ゴミ自動収集やモップ自動洗浄時に発生する大きな動作音と、汚水タンクの定期的な清掃が必要な点が挙げられます。",
+      "avoidanceStrategies": [
+        {
+          "method": "不在時のスケジュール清掃",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "アプリで清掃スケジュールを設定し、外出中に稼働させることで、動作音を気にせず快適に利用できます。"
+        },
+        {
+          "method": "汚水タンクのこまめな清掃",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "汚水タンクを放置すると臭いの原因となるため、使用後は速やかに汚水を捨て、定期的に清掃することで清潔を保てます。"
+        }
+      ],
+      "preventionTips": "ステーションは生活空間から離れた場所に設置し、定期的なメンテナンスを習慣化することで、快適な運用が可能です。"
     },
     {
       "rank": 3,
-      "title": "壁や家具への衝突回避が甘い",
-      "complaint": "壁や家具への衝突回避が甘い",
-      "percentage": 8,
-      "reviewCount": 1,
-      "description": "壁を検知しても減速せず、強い衝撃で当たりに行く挙動が指摘されています。",
-      "solution": "傷がつきやすい家具には保護クッションを貼るなどの自衛策が必要です。"
+      "issue": "障害物への引っかかりと段差乗り越えの限界",
+      "occurrenceRate": 9,
+      "occurrenceCount": 5,
+      "environmentalFactor": "床の障害物、家具の配置、段差の高さ",
+      "technicalDescription": "充電コードや小物類を巻き込んだり、本体の高さや落下防止センサーの限界により、特定の段差や家具下で停止する問題です。",
+      "avoidanceStrategies": [
+        {
+          "method": "清掃前の床の整理",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "清掃前に床にある充電コードや小物類を片付けることで、巻き込みや停止のリスクを大幅に減らせます。"
+        },
+        {
+          "method": "進入禁止エリアの設定",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "アプリで進入禁止エリアやバーチャルウォールを設定し、ロボットが引っかかりやすい場所への侵入を防ぎます。"
+        }
+      ],
+      "preventionTips": "家具の配置を見直し、ロボット掃除機がスムーズに移動できる環境を整えることが、トラブル防止に繋がります。"
+    }
+  ],
+  "topComplaints": [
+    {
+      "title": "故障・不具合",
+      "percentage": 7,
+      "reviewCount": 4,
+      "description": "初期不良や短期間での故障報告があり、特にバッテリーやステーション関連の不具合が目立ちます。",
+      "solution": "メーカー公式サポートへの迅速な連絡と交換手続きが重要です。保証期間内の対応を確認しましょう。"
     },
     {
-      "rank": 4,
-      "title": "交換用アクセサリーのランニングコスト",
-      "complaint": "交換用アクセサリーのランニングコスト",
-      "percentage": 8,
-      "reviewCount": 1,
-      "description": "純正の交換パーツ（モップ、バッグ等）が高価で、長期的な維持費が負担になるとの声があります。",
-      "solution": "セール時のまとめ買いや、今後発売される可能性のある互換パーツの検討が必要になるでしょう。"
+      "title": "ステーションの音・水管理",
+      "percentage": 6,
+      "reviewCount": 3,
+      "description": "ゴミ収集やモップ洗浄時のステーションの音が大きく、夜間の使用には注意が必要です。汚水タンクの臭いも指摘されます。",
+      "solution": "ステーションの設置場所を工夫し、不在時に稼働させるのが効果的です。汚水はこまめに捨て、タンクを清掃しましょう。"
     },
     {
-      "rank": 5,
-      "title": "初期設定（ファームウェア更新）の遅延",
-      "complaint": "初期設定（ファームウェア更新）の遅延",
-      "percentage": 8,
-      "reviewCount": 1,
-      "description": "最初のファームウェアアップデートに時間がかかりすぎ、不安を感じるユーザーがいます。",
-      "solution": "通信環境の良い場所で、時間に余裕があるときに初期設定を行うことを推奨します。"
+      "title": "コード巻き込み・段差での引っかかり",
+      "percentage": 9,
+      "reviewCount": 5,
+      "description": "充電コードなどの小さいものを巻き込んだり、段差や家具の高さで引っかかったりするケースが報告されています。",
+      "solution": "掃除前に床の障害物を取り除き、進入禁止エリアを設定することが有効です。家具の嵩上げも検討しましょう。"
     }
   ],
   "attributeScores": {
     "petOwner": {
-      "overall": 87,
-      "reviewCount": 3,
-      "suction": {
-        "score": 90,
-        "comment": "毛の絡まりにくさは本物。ローラーモップが皮脂汚れまで除去し、ペット家庭の床を清潔にします。"
-      },
-      "odorControl": {
-        "score": 80,
-        "comment": "モップ乾燥は優秀ですが、汚水タンクは放置すると臭うため、毎日の排水が必須です。"
-      },
-      "maintenance": {
-        "score": 92,
-        "comment": "実数3名全員がメンテの楽さを評価。ペットの毛掃除からの解放は事実として認められます。"
-      },
-      "petSafety": {
-        "score": 84,
-        "comment": "吸引・回避は一定水準。ただし背の高さ由来の下家具侵入はペット水盆付近の設定要確認、という帯。"
-      }
+      "overall": 91,
+      "details": [
+        {
+          "field": "ペット毛吸引力",
+          "score": 90,
+          "reviewCount": 4,
+          "comment": "ペットの毛を強力に吸引し、水拭きで床を清潔に保つ性能が高く評価されており、ペットオーナーに最適です。"
+        },
+        {
+          "field": "床掃除",
+          "score": 97,
+          "reviewCount": 32,
+          "comment": "床掃除の性能は非常に高く、特に水拭き機能が優れています。ペットの足跡や汚れも効果的に除去します。"
+        },
+        {
+          "field": "メンテナンス",
+          "score": 85,
+          "reviewCount": 12,
+          "comment": "メンテナンスは比較的容易ですが、ダストバッグ交換や汚水処理の手間は考慮が必要です。"
+        }
+      ]
     },
     "apartment": {
-      "overall": 81,
-      "reviewCount": 4,
-      "noise": {
-        "score": 96,
-        "comment": "マンション住まい4名が絶賛。夜間でも隣室を気にせず使える静音性は大きな利点です。"
-      },
-      "sizeSuitability": {
-        "score": 70,
-        "comment": "背の高さゆえにソファ下でボタンが押されるリスクがあり、住環境との相性確認が必要です。"
-      },
-      "obstacleHandling": {
-        "score": 78,
-        "comment": "マッピングは正確ですが、玄関脱輪など狭い場所での挙動には12件中2件の懸念が確認されています。"
-      },
-      "neighborConsideration": {
-        "score": 95,
-        "comment": "走行帯の静音に好印象の声。洗浄・乾燥帯の音は帯外スケジュール推奨、という層も。"
-      }
+      "overall": 82,
+      "details": [
+        {
+          "field": "静音性",
+          "score": 80,
+          "reviewCount": 3,
+          "comment": "本体の掃除音は静かで集合住宅での使用に適していますが、ステーションの音は大きめです。"
+        },
+        {
+          "field": "床掃除",
+          "score": 97,
+          "reviewCount": 32,
+          "comment": "床掃除の性能は非常に高く、特に水拭き機能が優れています。狭いスペースでも効率的に清掃します。"
+        },
+        {
+          "field": "段差乗り越え",
+          "score": 65,
+          "reviewCount": 4,
+          "comment": "段差乗り越えは一部で課題が指摘されており、家具の高さによっては進入できない場合があります。"
+        }
+      ]
     },
     "workingProfessional": {
       "overall": 86,
-      "reviewCount": 3,
-      "scheduleCompatibility": {
-        "score": 90,
-        "comment": "予約清掃は正確。共働き世帯3名が「帰宅時の床の綺麗さ」に高い満足度を示しています。"
-      },
-      "appUsability": {
-        "score": 75,
-        "comment": "操作は容易ですが、不意の設定リセット事故が発生しており、完全な信頼はまだ先といえます。"
-      },
-      "automationFeatures": {
-        "score": 93,
-        "comment": "モップ洗浄・乾燥の完全自動化は事実。週1回のタンク手入れで済む手軽さは嘘ありません。"
-      },
-      "remoteControl": {
-        "score": 78,
-        "comment": "外出先操作は利便。リセット再ペア再設定のストレスが残る層のため中位。"
-      }
+      "details": [
+        {
+          "field": "アプリ安定性",
+          "score": 95,
+          "reviewCount": 14,
+          "comment": "アプリは非常に安定しており、遠隔操作やスケジュール設定が容易なため、多忙な方でも安心して利用できます。"
+        },
+        {
+          "field": "メンテナンス",
+          "score": 85,
+          "reviewCount": 12,
+          "comment": "メンテナンスは比較的簡単ですが、ダストバッグ交換や汚水処理の頻度は考慮が必要です。"
+        },
+        {
+          "field": "バッテリー",
+          "score": 70,
+          "reviewCount": 3,
+          "comment": "バッテリー持続時間に関する明確な評価は少ないですが、初期不良の報告もあり、今後の改善が期待されます。"
+        }
+      ]
     },
     "familyHome": {
-      "overall": 73,
-      "reviewCount": 2,
-      "areaCoverage": {
-        "score": 85,
-        "comment": "広いリビングも一度に清掃可能。ローラーモップの威力で、子供の食べこぼし跡も綺麗になります。"
-      },
-      "batteryDuration": {
-        "score": 85,
-        "comment": "スタミナは十分。広範囲でも途中で力尽きることなく清掃しきれる能力が確認されています。"
-      },
-      "multiFloorSupport": {
-        "score": 50,
-        "comment": "複数階対応ですが、段差センサーの挙動不安を鑑みると、階段付近での使用はリスクが高いです。"
-      },
-      "childSafety": {
-        "score": 80,
-        "comment": "突進的な衝突が一部報告。清掃帯の目視介護と禁止エ推奨。"
-      }
+      "overall": 86,
+      "details": [
+        {
+          "field": "床掃除",
+          "score": 97,
+          "reviewCount": 32,
+          "comment": "床掃除の性能は非常に高く、特に水拭き機能が優れています。子供の食べこぼしなども効果的に清掃します。"
+        },
+        {
+          "field": "バッテリー",
+          "score": 70,
+          "reviewCount": 3,
+          "comment": "バッテリー持続時間に関する明確な評価は少ないですが、広範囲の清掃には十分な性能が期待されます。"
+        },
+        {
+          "field": "カーペット",
+          "score": 88,
+          "reviewCount": 3,
+          "comment": "カーペット上では水拭きを停止し吸引力を上げるため、リビングなどカーペットがある家庭でも安心して使えます。"
+        }
+      ]
     }
   },
-  "resaleValue": {
-    "newPrice": 99990,
-    "usedMinPrice": 52000,
-    "usedMaxPrice": 65000,
-    "retentionRateMin": 52,
-    "retentionRateMax": 65,
-    "period": "約12ヶ月後目安",
-    "comment": "新製品・少レビュー帯。中価格帯のため、美品＋純正消耗品同梱で帯域が上がる傾向です。"
-  },
-  "keywords": [
-    "Eufy Robot Vacuum Omni C28",
-    "Eufy Omni C28",
-    "Anker",
-    "アンカー",
-    "ローラーモップ",
-    "ロボット掃除機"
-  ],
-  "cta": {
-    "amazon": "https://www.amazon.co.jp/s?k=Eufy+Omni+C28",
-    "rakuten": "https://search.rakuten.co.jp/search/mall/Eufy+Omni+C28/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=Eufy+Omni+C28"
-  },
-  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-eufy-robot-vacuum-omni-c28.html",
-  "manufacturerOfficialAffiliateUrl": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3766176&pid=892603477&vc_url=https%3A%2F%2Fwww.ankerjapan.com%2Fproducts%2Ft211a%3F_pos%3D1%26_fid%3D6afd318d9%26_ss%3Dc%3Fvariant%3D45954295333025",
-  "manufacturerOfficialAffiliateTrackingPixelUrl": "https://ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3766176&pid=892603477"
+  "resaleValue": null,
+  "affiliate": {
+    "moshimo": "<!-- START MoshimoAffiliateEasyLink -->\r\n<script type=\"text/javascript\">\r\n(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;\r\nb[a]=b[a]||function(){arguments.currentScript=c.currentScript\r\n||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};\r\nc.getElementById(a)||(d=c.createElement(f),d.src=g,\r\nd.id=a,e=c.getElementsByTagName(\"body\")[0],e.appendChild(d))})\r\n(window,document,\"script\",\"//dn.msmstatic.com/site/cardlink/bundle.js?20220329\",\"msmaflink\");\r\nmsmaflink({\"n\":\"【クーポン利用で79,990円\\u0026P10倍！】26年最新モデル！Anker Eufy (ユーフィ) Robot Vacuum Omni C28 (ロボット掃除機) ローラーモップ 全自動クリーニングステーション 自動ゴミ収集 モップ洗浄・乾燥 15000Pa 水拭き兼用 高性能 2026年 ペット対応 新生活\",\"b\":\"\",\"t\":\"\",\"d\":\"https:\\/\\/thumbnail.image.rakuten.co.jp\",\"c_p\":\"\\/@0_mall\\/anker\\/cabinet\",\"p\":[\"\\/listing\\/tmb\\/t211a\\/imgrc0101372915.jpg\",\"\\/05328369\\/12988423\\/t211a_sub_1.jpg\",\"\\/categorypage\\/13125615\\/700x700.jpg\"],\"u\":{\"u\":\"https:\\/\\/item.rakuten.co.jp\\/anker\\/t211a\\/\",\"t\":\"rakuten\",\"r_v\":\"\"},\"v\":\"2.1\",\"b_l\":[{\"id\":1,\"u_tx\":\"楽天市場で見る\",\"u_bc\":\"#f76956\",\"u_url\":\"https:\\/\\/item.rakuten.co.jp\\/anker\\/t211a\\/\",\"a_id\":5483003,\"p_id\":54,\"pl_id\":27059,\"pc_id\":54,\"s_n\":\"rakuten\",\"u_so\":1},{\"id\":2,\"u_tx\":\"Yahoo!ショッピングで見る\",\"u_bc\":\"#66a7ff\",\"u_url\":\"https:\\/\\/shopping.yahoo.co.jp\\/search?first=1\\u0026p=%E3%80%90%E3%82%AF%E3%83%BC%E3%83%9D%E3%83%B3%E5%88%A9%E7%94%A8%E3%81%A779%2C990%E5%86%86%26P10%E5%80%8D%EF%BC%81%E3%80%9126%E5%B9%B4%E6%9C%80%E6%96%B0%E3%83%A2%E3%83%87%E3%83%AB%EF%BC%81Anker%20Eufy%20(%E3%83%A6%E3%83%BC%E3%83%95%E3%82%A3)%20Robot%20Vacuum%20Omni%20C28%20(%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F)%20%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC%E3%83%A2%E3%83%83%E3%83%97%20%E5%85%A8%E8%87%AA%E5%8B%95%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%20%E8%87%AA%E5%8B%95%E3%82%B4%E3%83%9F%E5%8F%8E%E9%9B%86%20%E3%83%A2%E3%83%83%E3%83%97%E6%B4%97%E6%B5%84%E3%83%BB%E4%B9%BE%E7%87%A5%2015000Pa%20%E6%B0%B4%E6%8B%AD%E3%81%8D%E5%85%BC%E7%94%A8%20%E9%AB%98%E6%80%A7%E8%83%BD%202026%E5%B9%B4%20%E3%83%9A%E3%83%83%E3%83%88%E5%AF%BE%E5%BF%9C%20%E6%96%B0%E7%94%9F%E6%B4%BB\",\"a_id\":5483010,\"p_id\":1225,\"pl_id\":27061,\"pc_id\":1925,\"s_n\":\"yahoo\",\"u_so\":2}],\"eid\":\"gEY6y\",\"s\":\"s\"});\r\n</script>\r\n<div id=\"msmaflink-gEY6y\">リンク</div>\r\n<!-- MoshimoAffiliateEasyLink END -->",
+    "direct": "<a href=\"//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3766176&pid=892603477&vc_url=https%3A%2F%2Fwww.ankerjapan.com%2Fproducts%2Ft211a%3F_pos%3D1%26_fid%3D6afd318d9%26_ss%3Dc%3Fvariant%3D45954295333025\" rel=\"nofollow\"><img src=\"//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3766176&pid=892603477\" height=\"1\" width=\"0\" border=\"0\">Eufy Robot Vacuum Omni C28</a>",
+    "hpPublish": true
+  }
 }

@@ -1,0 +1,352 @@
+{
+  "productId": "d9-max-gen-2",
+  "productName": "D9 Max Gen 2",
+  "manufacturer": "Dreame",
+  "modelNumber": "D9 Max Gen 2",
+  "imageUrl": "",
+  "overallRating": 4.1,
+  "totalReviews": 46,
+  "price": 17800,
+  "reliabilityScore": 62.5,
+  "asin": "",
+  "metaTitle": "Dreame D9 Max Gen 2 詳細分析 | コスパ最強ロボット掃除機の真実",
+  "metaDescription": "Dreame D9 Max Gen 2の46件のレビューを解析。強力な吸引力、静音性、アプリ機能など、このロボット掃除機の真実を公開。",
+  "keywords": [
+    "ロボット掃除機",
+    "水拭き",
+    "吸引力",
+    "静音性",
+    "アプリ連携",
+    "コスパ"
+  ],
+  "categoryC": {
+    "userSatisfaction": {
+      "score": 92,
+      "reviewCount": 46,
+      "comment": "多くのユーザーが吸引力や清掃品質に満足しており、価格以上の性能に驚きの声が多数見られます。"
+    },
+    "repurchaseIntention": {
+      "percentage": 85,
+      "reviewCount": 39,
+      "comment": "購入者の多くが満足しており、友人にも勧めたい、もう一台欲しいといった再購入意向を示すコメントが目立ちます。"
+    },
+    "failureRate": {
+      "percentage": 9,
+      "reviewCount": 46,
+      "breakdown": {
+        "hardware": 2,
+        "software": 1,
+        "environmental": 1
+      },
+      "comment": "一部でバッテリーやアプリ接続に関する不具合報告がありますが、全体的な故障率は低く、信頼性は高い傾向です。"
+    }
+  },
+  "reliability": {
+    "score": 62.5,
+    "dataAdequacy": {
+      "score": 40,
+      "weight": 60,
+      "description": "レビュー総数が50件未満のため、データ十分性スコアは40点です。"
+    },
+    "consistency": {
+      "percentage": 100,
+      "weight": 30,
+      "description": "主要サイト間の評価差が±0.2以内と非常に一貫性が高く、信頼できる評価です。",
+      "score": 100
+    },
+    "freshness": {
+      "score": 85,
+      "weight": 10,
+      "description": "直近30日以内のレビュー比率が4.3%であり、鮮度スコアは85点です。"
+    }
+  },
+  "updateInfo": {
+    "lastUpdated": "2026-06-15",
+    "firmwareVersion": "",
+    "note": "本製品は継続的に高い評価を得ており、特に吸引力と静音性が好評です。アプリ連携の改善が期待されます。"
+  },
+  "timeSaving": {
+    "dailyMinutes": 19,
+    "monthlyHours": 9.5,
+    "annualHours": 116,
+    "workDaysEquivalent": 14.5,
+    "methodology": "通常の床掃除にかかる時間をロボット掃除機が代替することで節約される時間を算出。毎日19分の清掃時間を想定。"
+  },
+  "operationalCost": {
+    "daily": 30,
+    "dailyNote": "消耗品の実質的な日割りコスト",
+    "monthly": 913,
+    "annual": 10960,
+    "consumables": [
+      {
+        "item": "フィルター",
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 990,
+        "annualCost": 3960
+      },
+      {
+        "item": "サイドブラシ",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 750,
+        "annualCost": 1500
+      },
+      {
+        "item": "メインブラシ",
+        "replacementFrequency": "12ヶ月ごと",
+        "unitCost": 2500,
+        "annualCost": 2500
+      },
+      {
+        "item": "モップパッド",
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 750,
+        "annualCost": 3000
+      }
+    ]
+  },
+  "performanceAnalysis": {
+    "floorCleaning": {
+      "score": 96,
+      "reviewCount": 23,
+      "positiveReviewCount": 21,
+      "comment": "強力な吸引力と水拭き機能で、毎日の床掃除が劇的に楽になります。隅々まで綺麗になり、床がサラサラになると高評価です。"
+    },
+    "carpetCleaning": {
+      "score": 80,
+      "reviewCount": 4,
+      "positiveReviewCount": 3,
+      "comment": "薄手のラグやカーペットは問題なく清掃可能で、食べこぼしも綺麗に吸引します。ただし厚手のカーペットは乗り越えが難しい場合があります。"
+    },
+    "petHairRemoval": {
+      "score": 90,
+      "reviewCount": 3,
+      "positiveReviewCount": 3,
+      "comment": "ペットの毛もしっかり吸引し、清潔な環境を保てると高評価です。特に猫の細かい毛にも効果を発揮します。"
+    },
+    "quietness": {
+      "score": 90,
+      "reviewCount": 8,
+      "positiveReviewCount": 7,
+      "comment": "稼働音は比較的静かで、会話やテレビ視聴の邪魔になりにくいと好評です。夜間や在宅中の使用にも適しています。"
+    },
+    "stepClimbing": {
+      "score": 72,
+      "reviewCount": 8,
+      "positiveReviewCount": 5,
+      "comment": "1-2cm程度の段差は乗り越えますが、5cm以上の段差や厚手のカーペットは苦手な傾向があります。落下センサーは優秀です。"
+    },
+    "maintenance": {
+      "score": 85,
+      "reviewCount": 6,
+      "positiveReviewCount": 4,
+      "comment": "自動ゴミ収集機能はないものの、ゴミ捨ては簡単で、ゴミパック不要な点はコスト面で評価されています。"
+    },
+    "appStability": {
+      "score": 78,
+      "reviewCount": 26,
+      "positiveReviewCount": 20,
+      "comment": "マッピング機能やスケジュール設定などアプリ機能は充実していますが、複数台スマホ登録や初期設定に課題が見られます。"
+    },
+    "batteryLife": {
+      "score": 65,
+      "reviewCount": 3,
+      "positiveReviewCount": 0,
+      "comment": "バッテリー切れで途中で停止する事例や、長期使用での充電不良の報告があります。バッテリー保護機能の改善が望まれます。"
+    }
+  },
+  "radarChartData": {
+    "labels": [
+      "床掃除",
+      "カーペット",
+      "ペット毛",
+      "静音性",
+      "段差",
+      "メンテ",
+      "アプリ",
+      "電池"
+    ],
+    "values": [
+      96,
+      80,
+      90,
+      90,
+      72,
+      85,
+      78,
+      65
+    ]
+  },
+  "dataQuality": {
+    "totalReviews": 46,
+    "sampledReviews": 46,
+    "adoptedReviews": 42,
+    "excludedReviews": 4,
+    "trustScore": 62.5,
+    "comment": "全46件のレビューを詳細に分析し、製品の性能、信頼性、ユーザー満足度を多角的に評価しました。信頼度スコアは62.5点です。"
+  },
+  "reviewKeywords": {
+    "positive": [
+      {
+        "keyword": "吸引力が高い",
+        "count": 11
+      },
+      {
+        "keyword": "静かで快適",
+        "count": 8
+      },
+      {
+        "keyword": "満足・買ってよかった",
+        "count": 8
+      },
+      {
+        "keyword": "使いやすい・便利",
+        "count": 8
+      },
+      {
+        "keyword": "綺麗になる",
+        "count": 4
+      }
+    ],
+    "negative": [
+      {
+        "keyword": "価格・コストが高い",
+        "count": 1
+      },
+      {
+        "keyword": "止まってしまう",
+        "count": 1
+      },
+      {
+        "keyword": "段差・家具で引っかかる",
+        "count": 1
+      },
+      {
+        "keyword": "故障・不具合",
+        "count": 1
+      }
+    ]
+  },
+  "successStrategies": [
+    {
+      "rank": 1,
+      "issue": "段差乗り越えの課題",
+      "occurrenceRate": 17,
+      "occurrenceCount": 8,
+      "environmentalFactor": "玄関、厚手のカーペット、5cm以上の段差",
+      "technicalDescription": "LDSセンサーが5cm程度の段差を認識しない場合があり、落下や乗り越え不能が発生します。厚手のカーペットも苦手です。",
+      "avoidanceStrategies": [
+        {
+          "method": "段差スロープの設置",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "市販の段差スロープを設置することで、5cm程度の段差もスムーズに乗り越え、清掃範囲を広げられます。"
+        },
+        {
+          "method": "仮想境界線の設定",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "アプリで進入禁止エリアを設定し、危険な段差や家具への引っかかりを未然に防ぎ、安全に運用できます。"
+        }
+      ],
+      "preventionTips": "事前に部屋の段差を確認し、必要に応じてスロープを設置するか、アプリで進入禁止エリアを設定しましょう。"
+    },
+    {
+      "rank": 2,
+      "issue": "アプリ接続・複数台登録の課題",
+      "occurrenceRate": 9,
+      "occurrenceCount": 4,
+      "environmentalFactor": "Wi-Fi環境、複数ユーザーでの利用",
+      "technicalDescription": "アプリの初期設定やWi-Fi接続で戸惑う声があり、特に複数台のスマホでの同時登録ができない点が不便です。",
+      "avoidanceStrategies": [
+        {
+          "method": "サポートセンターへの問い合わせ",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "不明な点はメーカーのサポートセンターに連絡することで、詳細な手順書や助言を得て解決できます。"
+        },
+        {
+          "method": "アプリの再インストール・Wi-Fi環境確認",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalRationale": "アプリの不具合時は再インストールやルーターの再起動、2.4GHz帯での接続確認が有効です。"
+        }
+      ],
+      "preventionTips": "初期設定時はマニュアルをよく読み、不明な点はすぐにサポートに連絡しましょう。Wi-Fi環境も安定させましょう。"
+    }
+  ],
+  "topComplaints": [
+    {
+      "title": "段差乗り越え性能の限界",
+      "percentage": 17,
+      "reviewCount": 8,
+      "description": "5cm程度の段差や厚手のカーペットで乗り越えに苦労したり、落下するケースが報告されています。",
+      "solution": "市販のスロープ設置やアプリでの進入禁止エリア設定により、これらの問題を回避し、安全に運用できます。"
+    },
+    {
+      "title": "アプリ接続と複数ユーザー対応",
+      "percentage": 9,
+      "reviewCount": 4,
+      "description": "アプリの初期設定が分かりにくい、または複数台のスマホで同時利用できない点が不便との声があります。",
+      "solution": "メーカーサポートの活用や、アプリの再インストール、Wi-Fi環境の確認で多くの問題は解決可能です。"
+    },
+    {
+      "title": "バッテリー持続時間と寿命への懸念",
+      "percentage": 7,
+      "reviewCount": 3,
+      "description": "バッテリー切れで清掃が中断される事例や、長期使用での充電不良に関する懸念が報告されています。",
+      "solution": "広範囲を一度に清掃する場合は充電ステーションの近くに設置し、定期的なバッテリーケアを推奨します。"
+    }
+  ],
+  "attributeScores": {
+    "petOwner": {
+      "overall": 91,
+      "details": [
+        {
+          "field": "ペット毛吸引力",
+          "score": 90,
+          "reviewCount": 3,
+          "comment": "ペットの毛を効果的に吸引し、清潔な環境を維持できるとペットオーナーから高評価です。"
+        }
+      ]
+    },
+    "apartment": {
+      "overall": 88,
+      "details": [
+        {
+          "field": "静音性",
+          "score": 90,
+          "reviewCount": 8,
+          "comment": "稼働音が静かで、集合住宅での使用に適しています。隣室への配慮も不要で快適に利用できます。"
+        }
+      ]
+    },
+    "workingProfessional": {
+      "overall": 78,
+      "details": [
+        {
+          "field": "アプリ安定性",
+          "score": 78,
+          "reviewCount": 26,
+          "comment": "アプリによる遠隔操作やスケジュール設定は便利ですが、初期設定や複数端末での利用に改善の余地があります。"
+        }
+      ]
+    },
+    "familyHome": {
+      "overall": 82,
+      "details": [
+        {
+          "field": "床掃除",
+          "score": 96,
+          "reviewCount": 23,
+          "comment": "広いリビングや複数の部屋を効率的に清掃し、家族が快適に過ごせる清潔な空間を提供します。"
+        }
+      ]
+    }
+  },
+  "resaleValue": null,
+  "affiliate": {
+    "moshimo": "",
+    "direct": "<a href=\"https://t.afi-b.com/visit.php?a=115804H-E517109l&p=g978598R\" rel=\"nofollow\">D9Max Gen 2 </a><img src=\"https://t.afi-b.com/lead/115804H/g978598R/E517109l\" width=\"1\" height=\"1\" style=\"border:none;\" />",
+    "hpPublish": true
+  }
+}

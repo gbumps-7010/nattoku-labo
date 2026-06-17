@@ -1,157 +1,145 @@
 {
   "productId": "roomba-mini-autoempty",
-  "productName": "Roomba Mini + AutoEmpty",
+  "productName": "Roomba® Mini + AutoEmpty™",
   "manufacturer": "iRobot",
-  "modelNumber": "F155660",
-  "overallRating": 4.65,
-  "totalReviews": 66,
-  "price": 44800,
-  "reliabilityScore": 82.4,
-  "imageUrl": "https://m.media-amazon.com/images/I/71u9S+f8uGL._AC_SL1500_.jpg",
-  "asin": "B0FT2FD6LP",
-  "metaTitle": "Roomba Mini + AutoEmpty 詳細分析 | 失敗しない！ナットク研究所",
-  "metaDescription": "Roomba Mini + AutoEmptyの口コミ統計分析。66件のレビューを解析。驚異的な静音性とコンパクトさを両立した最新モデルの満足度4.65/5.0の詳細データを公開。",
+  "modelNumber": "Mini + AutoEmpty™",
+  "imageUrl": "https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/item_thum/br_thum/mini_ae_2nen_rank.jpg",
+  "overallRating": 4.22,
+  "totalReviews": 338,
+  "price": 49800,
+  "reliabilityScore": 86.5,
+  "asin": "",
+  "metaTitle": "Roomba® Mini + AutoEmpty™ 詳細分析 | コンパクトで賢い日本の新常識",
+  "metaDescription": "Roomba® Mini + AutoEmpty™の338件のレビューを解析。コンパクトなサイズと高い清掃能力、自動ゴミ収集の真実を公開。",
+  "keywords": [
+    "ルンバミニ",
+    "ロボット掃除機",
+    "アイロボット",
+    "自動ゴミ収集",
+    "水拭き",
+    "コンパクト"
+  ],
   "categoryC": {
     "userSatisfaction": {
-      "score": 93,
-      "reviewCount": 66,
-      "comment": "総合満足度4.65/5。従来のルンバのイメージを覆す静かな動作音と、日本の住宅事情にマッチしたコンパクトさが非常に高く評価されています。"
+      "score": 92,
+      "reviewCount": 338,
+      "comment": "コンパクトなサイズと高い清掃能力、自動ゴミ収集機能により、多くのユーザーが日常の掃除負担軽減に満足しています。"
     },
     "repurchaseIntention": {
       "percentage": 88,
-      "reviewCount": 66,
-      "comment": "旧型からの買い替え層が「次もルンバを選ぶ」と断言するほど、清掃の完遂能力と静音化の進化に満足しています。"
+      "reviewCount": 285,
+      "comment": "既存ルンバユーザーからの買い替えや、友人・家族へのプレゼントとしても選ばれており、高い再購入意向が伺えます。"
     },
     "failureRate": {
-      "percentage": 3,
-      "reviewCount": 66,
+      "percentage": 8,
+      "reviewCount": 338,
       "breakdown": {
-        "hardware": 1,
-        "software": 1,
+        "hardware": 3,
+        "software": 4,
         "environmental": 1
       },
-      "comment": "初期不良は3%と低水準。稀にWi-Fi設定の再試行が必要なケースがありますが、ハードウェアの信頼性はiRobot基準で非常に堅牢です。"
+      "comment": "Wi-Fi接続の不安定さや段差からの落下、初期不良の報告が一部見られるものの、全体的な故障率は低い傾向です。"
     }
   },
   "reliability": {
-    "score": 82.4,
+    "score": 86.5,
     "dataAdequacy": {
-      "score": 78,
-      "percentage": 78,
+      "score": 80,
       "weight": 60,
-      "description": "有効採用66件規模。主傾向の把握は可能だが、再集計で安定幅が見えやすい母数です。"
+      "description": "レビュー総数338件は十分なデータ量であり、製品の全体的な評価を把握するのに適しています。"
     },
     "consistency": {
-      "score": 90,
-      "percentage": 90,
+      "percentage": 95,
       "weight": 30,
-      "description": "静音・コンパクト・自動集塵への所見の重なりが大きく、評価の方向性は揃いやすいです。"
+      "description": "楽天の平均評価4.35とAmazonのレビュー感情が一致しており、評価の一貫性が高いと判断されます。",
+      "score": 95
     },
     "freshness": {
-      "score": 88,
-      "percentage": 88,
+      "score": 100,
       "weight": 10,
-      "description": "現行モデル文脈の投稿が中心で、直近の運用体験を反映しやすいです。"
+      "description": "直近30日以内のレビュー比率が18.6%であり、比較的最新のユーザー意見が反映されているため鮮度が高いです。"
     }
   },
   "updateInfo": {
-    "lastUpdated": "2026-04-18",
-    "firmwareVersion": "v3.x",
-    "note": "採用64件・除外2件。信頼82.40。楽天中心のサンプル構成。再分析時に更新してください。"
+    "lastUpdated": "2026-06-15",
+    "firmwareVersion": "",
+    "note": "最新レビューは2026年6月上旬まで確認済み。全体的に小型化と機能性への満足度が高い傾向です。"
   },
   "timeSaving": {
-    "dailyMinutes": 15,
-    "monthlyHours": 7.5,
-    "annualHours": 90,
-    "workDaysEquivalent": 11.25,
-    "methodology": "自動ゴミ収集により毎日のゴミ捨てを最大約2ヶ月スキップできる文脈で、手動清掃・ダスト確認の手間を置換した目安。約15分/日・年約90h。世帯で変動します。"
+    "dailyMinutes": 20,
+    "monthlyHours": 10,
+    "annualHours": 120,
+    "workDaysEquivalent": 15,
+    "methodology": "ユーザーの平均的な手動掃除時間（20分/日）をロボット掃除機が代替することで得られる時間節約を算出。"
   },
   "operationalCost": {
-    "daily": 27,
-    "dailyNote": "年間8,000〜12,000円レンジの中央・1万円前後目安。公式価格・交換周期で変動。",
-    "monthly": 833,
-    "annual": 10000,
+    "daily": 82,
+    "dailyNote": "消耗品の実質的な日割りコスト",
+    "monthly": 2500,
+    "annual": 30000,
     "consumables": [
       {
-        "item": "交換用ダスト容器（3枚入・目安2,980円）",
-        "replacementFrequency": "年2回前後目安",
-        "unitCost": 2980,
-        "annualCost": 5960
+        "item": "ダストバッグ",
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 3500,
+        "annualCost": 14000
       },
       {
-        "item": "交換用フィルター（3個入・目安2,200円）",
-        "replacementFrequency": "年1セット前後目安",
-        "unitCost": 2200,
-        "annualCost": 2200
-      },
-      {
-        "item": "エッジクリーニングブラシ等（3個セット・目安2,200円）",
-        "replacementFrequency": "年1セット前後目安",
-        "unitCost": 2200,
-        "annualCost": 1840
+        "item": "ウェットシート",
+        "replacementFrequency": "毎日",
+        "unitCost": 44,
+        "annualCost": 16000
       }
     ]
   },
   "performanceAnalysis": {
     "floorCleaning": {
-      "score": 88,
-      "reviewCount": 66,
-      "positiveReviewCount": 60,
-      "comment": "フローリングでの清掃力は安定。壁際のゴミもしっかりかき出しており、毎日の維持清掃には十分すぎる性能です。"
+      "score": 96,
+      "reviewCount": 74,
+      "positiveReviewCount": 66,
+      "comment": "コンパクトながらパワフルな吸引力でフローリングのホコリや髪の毛をしっかり除去。床がサラサラになり、日常の清掃に大満足の声多数。"
     },
     "carpetCleaning": {
-      "score": 75,
-      "reviewCount": 66,
-      "positiveReviewCount": 48,
-      "comment": "Miniモデルゆえの吸気設計上、厚手の絨毯深部にある微細な砂埃の除去力は上位モデルに一歩譲ります。"
-    },
-    "petHair": {
-      "score": 85,
-      "reviewCount": 42,
-      "positiveReviewCount": 38,
-      "comment": "ゴム製ブラシではないものの、毛の絡まりにくさは工夫されており、換毛期のペット飼育家庭でも満足されています。"
+      "score": 82,
+      "reviewCount": 18,
+      "positiveReviewCount": 13,
+      "comment": "毛足の短いカーペットでは吸引力も上がり効果的。ただし、毛足が長いと絡まりやすいとの声も一部あり、注意が必要。"
     },
     "petHairRemoval": {
-      "score": 85,
-      "reviewCount": 42,
-      "positiveReviewCount": 38,
-      "comment": "petHairと同一指標。"
+      "score": 93,
+      "reviewCount": 23,
+      "positiveReviewCount": 20,
+      "comment": "ペットの毛の除去に高い効果を発揮。特に猫の抜け毛対策に貢献し、床を清潔に保つことで多くの飼い主から高評価。"
     },
     "quietness": {
-      "score": 96,
-      "reviewCount": 66,
-      "positiveReviewCount": 64,
-      "comment": "走行は極めて静か。nightQuietnessと同値。"
-    },
-    "nightQuietness": {
-      "score": 96,
-      "reviewCount": 66,
-      "positiveReviewCount": 64,
-      "comment": "本機最大の武器。清掃音は極めて静かで、隣の部屋で寝ていても気にならないレベルだと絶賛されています。"
+      "score": 80,
+      "reviewCount": 38,
+      "positiveReviewCount": 19,
+      "comment": "通常動作時は比較的静かですが、自動ゴミ収集時の音は大きく、夜間の使用には配慮が必要。カーペット上では吸引力アップで音量が増す。"
     },
     "stepClimbing": {
-      "score": 78,
-      "reviewCount": 55,
-      "positiveReviewCount": 42,
-      "comment": "2cm程度の段差は越えますが、本体が軽量なため、厚みのないバスマットなどは押しのけてしまう傾向があります。"
+      "score": 72,
+      "reviewCount": 33,
+      "positiveReviewCount": 20,
+      "comment": "約1.5cm程度の段差は乗り越えるが、玄関などの大きな段差では落下報告も。アプリでの進入禁止設定が推奨される。"
     },
     "maintenance": {
-      "score": 94,
-      "reviewCount": 66,
-      "positiveReviewCount": 62,
-      "comment": "自動ゴミ収集により数ヶ月放置可能。ステーションのダストバッグ交換も非常に衛生的で、手間いらずです。"
+      "score": 92,
+      "reviewCount": 33,
+      "positiveReviewCount": 26,
+      "comment": "自動ゴミ収集機能によりゴミ捨ての手間が大幅に軽減。水拭きも市販シート対応で交換が簡単だが、消耗品コストは考慮が必要。"
     },
     "appStability": {
-      "score": 82,
-      "reviewCount": 60,
-      "positiveReviewCount": 49,
-      "comment": "アプリのUIは直感的ですが、初回接続時にルーター設定（2.4GHz制限）で躓くユーザーが一部見受けられます。"
+      "score": 75,
+      "reviewCount": 136,
+      "positiveReviewCount": 75,
+      "comment": "アプリは多機能で便利だが、Wi-Fi接続の不安定さや初期設定の難しさに関する報告が散見される。一度接続できれば快適に使える。"
     },
     "batteryLife": {
-      "score": 80,
-      "reviewCount": 66,
-      "positiveReviewCount": 55,
-      "comment": "コンパクトな分、一度の稼働時間は長くないですが、自動充電・再開機能があるため一般的な間取りなら問題ありません。"
+      "score": 85,
+      "reviewCount": 27,
+      "positiveReviewCount": 19,
+      "comment": "コンパクトながら十分なバッテリー持ちで、1LDK程度の広さなら問題なく清掃可能。広範囲を一度に掃除する場合は充電を挟むことも。"
     }
   },
   "radarChartData": {
@@ -166,246 +154,262 @@
       "電池"
     ],
     "values": [
-      88,
-      75,
-      85,
       96,
-      78,
-      94,
       82,
-      80
+      93,
+      80,
+      72,
+      92,
+      75,
+      85
     ]
   },
   "dataQuality": {
-    "totalReviews": 66,
-    "sampledReviews": 66,
-    "adoptedReviews": 64,
-    "excludedReviews": 2,
-    "trustScore": 82.4,
-    "comment": "楽天市場中心・採用64件。ソース内信頼目安91.5。全体信頼82.40と整合。再重み付けで変動し得ます。"
+    "totalReviews": 338,
+    "sampledReviews": 338,
+    "adoptedReviews": 338,
+    "excludedReviews": 0,
+    "trustScore": 86.5,
+    "comment": "提供された全338件のレビューを詳細に分析。データ十分性、一貫性、鮮度を考慮し、高い信頼度で統計データを算出しました。"
   },
-  "badges": [
-    "信頼82.4",
-    "超静音",
-    "楽天66件"
-  ],
   "reviewKeywords": {
     "positive": [
       {
-        "keyword": "静か",
+        "keyword": "満足・買ってよかった",
+        "count": 92
+      },
+      {
+        "keyword": "静かで快適",
         "count": 28
       },
       {
-        "keyword": "コンパクト",
+        "keyword": "使いやすい・便利",
+        "count": 26
+      },
+      {
+        "keyword": "吸引力が高い",
         "count": 24
       },
       {
-        "keyword": "自動ゴミ収集",
-        "count": 22
-      },
-      {
-        "keyword": "コスパ",
-        "count": 15
-      },
-      {
-        "keyword": "設定が簡単",
-        "count": 12
-      },
-      {
-        "keyword": "時短",
-        "count": 9
-      },
-      {
-        "keyword": "アプリ",
-        "count": 8
-      },
-      {
-        "keyword": "ゴミ捨て不要",
-        "count": 8
+        "keyword": "綺麗になる",
+        "count": 17
       }
     ],
     "negative": [
       {
-        "keyword": "ステーションの音",
-        "count": 11
+        "keyword": "故障・不具合",
+        "count": 19
       },
       {
-        "keyword": "マットの巻き込み",
-        "count": 8
+        "keyword": "段差・家具で引っかかる",
+        "count": 9
       },
       {
-        "keyword": "段差の誤検知",
+        "keyword": "動作音が気になる",
         "count": 6
       },
       {
-        "keyword": "Wi-Fi接続",
+        "keyword": "期待を下回る点",
         "count": 5
       },
       {
-        "keyword": "マニュアル",
+        "keyword": "止まってしまう",
         "count": 4
-      },
-      {
-        "keyword": "消耗品",
-        "count": 3
-      },
-      {
-        "keyword": "水拭き不可",
-        "count": 2
       }
     ]
   },
-  "topComplaints": [
+  "successStrategies": [
     {
       "rank": 1,
-      "title": "ゴミ収集時の音が大きい",
-      "complaint": "ゴミ収集時の音が大きい",
-      "percentage": 16,
-      "reviewCount": 11,
-      "description": "本体の掃除は静かだが、ステーションへゴミを吸い上げる約10秒間だけは掃除機並みの騒音がする。",
-      "solution": "アプリのスケジュール設定で、就寝中や在宅勤務中を避けてゴミ収集を行う時間帯を指定してください。"
+      "issue": "Wi-Fi接続・アプリ不安定",
+      "occurrenceRate": 15,
+      "occurrenceCount": 22,
+      "environmentalFactor": "ルーター設定、スマホの互換性、初期設定時の混雑",
+      "technicalDescription": "2.4GHz帯のみ対応の機種が多く、5GHz優先ルーター環境では接続が不安定になることがあります。アプリの初期設定プロセスも複雑に感じるユーザーがいます。",
+      "avoidanceStrategies": [
+        {
+          "method": "Wi-Fiルーターの2.4GHz帯を優先設定にするか、テザリングで初期設定を行う。",
+          "effectiveness": "高",
+          "technicalLevel": "中級",
+          "technicalRationale": "2.4GHz専用設計のため、ルーター設定の見直しで接続安定性が向上。テザリングは一時的な回避策として有効です。"
+        },
+        {
+          "method": "サポートセンターのFAQやトラブルシューティングを参照し、段階的に設定を見直す。",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalRationale": "公式サイトには詳細なトラブルシューティングが掲載されており、一般的な問題は解決可能で、試す価値があります。"
+        }
+      ],
+      "preventionTips": "初期設定時はWi-Fi環境を整え、2.4GHz帯を優先。公式アプリの最新バージョンを使用し、不明点はサポートへ問い合わせましょう。"
     },
     {
       "rank": 2,
-      "title": "軽量ゆえにマットを動かす",
-      "complaint": "軽量ゆえにマットを動かす",
-      "percentage": 12,
-      "reviewCount": 8,
-      "description": "本体が軽くコンパクトなため、固定されていない薄いバスマットなどを巻き込んだり動かしたりする。",
-      "solution": "マットを滑り止め付きのものに変えるか、アプリでそのエリアを進入禁止に設定することを推奨します。"
+      "issue": "自動ゴミ収集時の騒音",
+      "occurrenceRate": 10,
+      "occurrenceCount": 15,
+      "environmentalFactor": "設置場所、使用時間帯",
+      "technicalDescription": "自動ゴミ収集機能は強力な吸引力でダストボックス内のゴミを紙パックへ移すため、一時的に大きな動作音が発生します。",
+      "avoidanceStrategies": [
+        {
+          "method": "稼働時間を夜間や早朝を避け、外出中や日中に設定する。",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "音の気になる時間帯を避けることで、生活への影響を最小限に抑えられます。スケジュール設定を活用しましょう。"
+        },
+        {
+          "method": "設置場所を寝室やリビングから離れた場所に検討する。",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalRationale": "音源から距離を置くことで、体感的な騒音レベルを下げることが期待でき、より快適に利用できます。"
+        }
+      ],
+      "preventionTips": "購入前に自動ゴミ収集機能の音量を確認し、設置場所と使用時間帯を計画的に設定することで、ストレスを軽減できます。"
     },
     {
       "rank": 3,
-      "title": "初期設定のWi-Fiトラブル",
-      "complaint": "初期設定のWi-Fiトラブル",
-      "percentage": 8,
-      "reviewCount": 5,
-      "description": "スマホアプリとの接続時、2.4GHz帯の認識エラーで数回やり直しが必要になるケースがある。",
-      "solution": "ルーターの5GHz帯を一時的にオフにし、スマホの自動ネットワーク切替を無効にすると成功しやすいです。"
+      "issue": "段差からの落下・引っかかり",
+      "occurrenceRate": 6,
+      "occurrenceCount": 9,
+      "environmentalFactor": "玄関の段差、敷居の高さ、床に置かれたケーブルや物",
+      "technicalDescription": "段差センサーが特定の高さや素材の段差を認識しにくい場合や、床に散らばったケーブル類を障害物として誤認識し、絡まることがあります。",
+      "avoidanceStrategies": [
+        {
+          "method": "アプリで進入禁止エリアを設定し、落下しやすい場所への侵入を防ぐ。",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "仮想的な壁を設定することで、物理的な障害物を置かずに危険エリアを回避し、安全に運用できます。"
+        },
+        {
+          "method": "稼働前に床の障害物（ケーブル、小物など）を片付ける。",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "障害物をなくすことで、ルンバがスムーズに走行し、引っかかりや停止を防ぎ、効率的な清掃が可能です。"
+        }
+      ],
+      "preventionTips": "稼働前に床を整理し、アプリのマップ機能を活用して危険な場所を事前に設定することが、トラブル回避の鍵です。"
+    }
+  ],
+  "topComplaints": [
+    {
+      "title": "Wi-Fi接続・アプリ不安定",
+      "percentage": 15,
+      "reviewCount": 22,
+      "description": "Wi-Fi接続が頻繁に切れたり、アプリの初期設定が難しいとの声が多数。クラウド接続エラーも報告されています。",
+      "solution": "ルーターの2.4GHz帯優先設定やテザリングでの初期設定を試す。公式サイトのトラブルシューティングも有効です。"
     },
     {
-      "rank": 4,
-      "title": "説明書が図解のみで簡素",
-      "complaint": "説明書が図解のみで簡素",
+      "title": "自動ゴミ収集時の騒音",
+      "percentage": 10,
+      "reviewCount": 15,
+      "description": "充電ステーションでのゴミ吸引時に発生する音が非常に大きく、特に夜間や集合住宅での使用時に気になるという意見があります。",
+      "solution": "稼働時間を外出中や日中に設定し、寝室から離れた場所に設置することで、騒音の影響を軽減できます。"
+    },
+    {
+      "title": "段差からの落下・引っかかり",
       "percentage": 6,
-      "reviewCount": 4,
-      "description": "同梱の紙マニュアルが最小限で、詳細なエラー対応や応用設定のやり方が初見では分かりにくい。",
-      "solution": "iRobot Homeアプリ内のガイドを参照するか、公式サイトからPDFのフルマニュアルをダウンロードしてください。"
-    },
-    {
-      "rank": 5,
-      "title": "消耗品の予備がない",
-      "complaint": "消耗品の予備がない",
-      "percentage": 5,
-      "reviewCount": 3,
-      "description": "購入時に予備の紙パックやブラシが付属しておらず、すぐに買い足す必要がある点への不満。",
-      "solution": "本体購入時に、純正の交換用ダスト容器（3枚セット）などを併せて注文しておくと安心です。"
+      "reviewCount": 9,
+      "description": "玄関などの段差から落下したり、家具の脚やコードに引っかかって停止するケースが報告されています。",
+      "solution": "アプリで進入禁止エリアを設定し、稼働前に床の障害物を片付けることで、スムーズな清掃が可能になります。"
     }
   ],
   "attributeScores": {
     "petOwner": {
-      "overall": 81,
-      "reviewCount": 21,
-      "suction": {
-        "score": 85,
-        "comment": "抜け毛の自動処理は非常に便利。ペットを驚かせない極めて低い動作音が飼い主に支持されています。"
-      },
-      "odorControl": {
-        "score": 65,
-        "comment": "紙パックの密閉性と交換周期のトレードオフ。負荷が高いと匂い・交換頻度の言及が増えやすい、という層。"
-      },
-      "maintenance": {
-        "score": 94,
-        "comment": "毛の掃除から解放される価値は絶大。ダストバッグ交換だけで済む流れに満足、という層。"
-      },
-      "petSafety": {
-        "score": 88,
-        "comment": "静音走行はペット向き。水場・食器周りは禁止エで守りやすい、という層。"
-      }
+      "overall": 94,
+      "details": [
+        {
+          "field": "ペット毛吸引力",
+          "score": 93,
+          "reviewCount": 23,
+          "comment": "ペットの毛を効率的に除去し、床を清潔に保つ能力は高く評価されています。特に猫の抜け毛対策に貢献。"
+        },
+        {
+          "field": "床掃除",
+          "score": 96,
+          "reviewCount": 74,
+          "comment": "フローリングのホコリや髪の毛をしっかり吸引し、ペットのいる家庭でも清潔な床を維持できます。"
+        },
+        {
+          "field": "メンテナンス",
+          "score": 92,
+          "reviewCount": 33,
+          "comment": "自動ゴミ収集と簡易水拭きで日常のメンテナンスが容易。ペットの毛の処理も楽になり好評です。"
+        }
+      ]
     },
     "apartment": {
-      "overall": 91,
-      "reviewCount": 28,
-      "noise": {
-        "score": 98,
-        "comment": "マンション住まいには最強の選択肢。省スペースなベースと夜間でも気兼ねなく使える静かさが特筆モノ。"
-      },
-      "sizeSuitability": {
-        "score": 98,
-        "comment": "省スペースなベースと置き場の自由度。狭い導線でも圧迫感が出にくい、という層。"
-      },
-      "obstacleHandling": {
-        "score": 78,
-        "comment": "軽量ゆえに薄いマットを押し出す。滑り止めと禁止エで実用上は改善しやすい、という層。"
-      },
-      "neighborConsideration": {
-        "score": 88,
-        "comment": "走行音は好評。収集の一瞬の大きい音は帯外スケジュールで抑えやすい、という層。"
-      }
+      "overall": 83,
+      "details": [
+        {
+          "field": "静音性",
+          "score": 80,
+          "reviewCount": 38,
+          "comment": "通常動作は比較的静かですが、ゴミ収集時の音は大きめ。マンションでの夜間使用は注意が必要です。"
+        },
+        {
+          "field": "床掃除",
+          "score": 96,
+          "reviewCount": 74,
+          "comment": "コンパクトな本体で狭いスペースも効率的に清掃。マンションのフローリング環境に最適です。"
+        },
+        {
+          "field": "段差乗り越え",
+          "score": 72,
+          "reviewCount": 33,
+          "comment": "約1.5cmの段差は乗り越えるが、玄関などの大きな段差には注意。アプリでの設定が有効です。"
+        }
+      ]
     },
     "workingProfessional": {
-      "overall": 89,
-      "reviewCount": 18,
-      "scheduleCompatibility": {
-        "score": 92,
-        "comment": "清掃からゴミ捨てまで自動化。忙しい平日の家事時間をゼロに近づける「投資」として優秀です。"
-      },
-      "appUsability": {
-        "score": 84,
-        "comment": "一度つながれば運用は軽い。初回2.4GHz手順の摩擦に備えると失敗しにくい、という層。"
-      },
-      "automationFeatures": {
-        "score": 92,
-        "comment": "自動集塵の省力化が大きい。在宅帯外の一括稼働と相性が良い、という層。"
-      },
-      "remoteControl": {
-        "score": 90,
-        "comment": "外出先起動の安定度は文脈次第。通知と履歴の見やすさは好印象、という層。"
-      }
+      "overall": 84,
+      "details": [
+        {
+          "field": "アプリ安定性",
+          "score": 75,
+          "reviewCount": 136,
+          "comment": "アプリは多機能で便利ですが、Wi-Fi接続の不安定さや初期設定の難しさが課題。安定すれば時短に貢献。"
+        },
+        {
+          "field": "メンテナンス",
+          "score": 92,
+          "reviewCount": 33,
+          "comment": "自動ゴミ収集で日常のゴミ捨てから解放され、忙しい共働き世帯の家事負担を大幅に軽減します。"
+        },
+        {
+          "field": "バッテリー",
+          "score": 85,
+          "reviewCount": 27,
+          "comment": "コンパクトなサイズで効率的に清掃し、外出中に完了。バッテリー持ちも十分で忙しい日々に貢献。"
+        }
+      ]
     },
     "familyHome": {
-      "overall": 70,
-      "reviewCount": 12,
-      "areaCoverage": {
-        "score": 70,
-        "comment": "広い戸建て全域にはややパワー不足。特定のフロア専用機や、サブ機としての運用が向いています。"
-      },
-      "batteryDuration": {
-        "score": 75,
-        "comment": "広域は分割・再充電の組み合わせ。コンパクト機としては十分な層と物足りない層に分かれる、という層。"
-      },
-      "multiFloorSupport": {
-        "score": 65,
-        "comment": "マップ切替は可能でも基地付き階移動は重い。フロア別に本体を持ち運ぶ運用向き、という層。"
-      },
-      "childSafety": {
-        "score": 75,
-        "comment": "小物・おもちゃ周りの回避は堅め。子ども部屋は禁止エで守りやすい、という層。"
-      }
+      "overall": 89,
+      "details": [
+        {
+          "field": "床掃除",
+          "score": 96,
+          "reviewCount": 74,
+          "comment": "子供の食べこぼしや日常の汚れを効率的に清掃。広範囲のフローリングもきれいに保てます。"
+        },
+        {
+          "field": "バッテリー",
+          "score": 85,
+          "reviewCount": 27,
+          "comment": "広いリビングや複数の部屋を一度に清掃可能。バッテリー持ちも良く、家族の多い家庭で活躍します。"
+        },
+        {
+          "field": "カーペット",
+          "score": 82,
+          "reviewCount": 18,
+          "comment": "リビングのカーペットも吸引力アップで清掃。子供が遊ぶスペースも清潔に保て、満足度が高いです。"
+        }
+      ]
     }
   },
-  "resaleValue": {
-    "newPrice": 44800,
-    "usedMinPrice": 26880,
-    "usedMaxPrice": 35840,
-    "retentionRateMin": 60,
-    "retentionRateMax": 80,
-    "period": "12ヶ月後",
-    "comment": "コンパクト＋AutoEmpty人気は中古でも一定の需給。純正消耗品併有で帯域が上がる傾向です。"
-  },
-  "keywords": [
-    "Roomba Mini",
-    "AutoEmpty",
-    "iRobot",
-    "ルンバ",
-    "ロボット掃除機"
-  ],
-  "cta": {
-    "amazon": "https://www.amazon.co.jp/s?k=Roomba+Mini+AutoEmpty",
-    "rakuten": "https://search.rakuten.co.jp/search/mall/Roomba+Mini+AutoEmpty/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=Roomba+Mini+AutoEmpty"
-  },
-  "manufacturerOfficialAffiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AZOWQ+152XIQ+4KHO+HUD03&a8ejpredirect=https%3A%2F%2Fstore.irobot-jp.com%2Fitem%2FF155260.html%3F_gl%3D1*layzvb*_gcl_au*OTAzMDgyNTk5LjE3NzQ2NTY3ODg.*FPAU*OTAzMDgyNTk5LjE3NzQ2NTY3ODg.",
-  "manufacturerOfficialAffiliateTrackingPixelUrl": "",
-  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-roomba-mini-autoempty.html"
+  "resaleValue": null,
+  "affiliate": {
+    "moshimo": "<!-- START MoshimoAffiliateEasyLink -->\r\n<script type=\"text/javascript\">\r\n(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;\r\nb[a]=b[a]||function(){arguments.currentScript=c.currentScript\r\n||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};\r\nc.getElementById(a)||(d=c.createElement(f),d.src=g,\r\nd.id=a,e=c.getElementsByTagName(\"body\")[0],e.appendChild(d))})\r\n(window,document,\"script\",\"//dn.msmstatic.com/site/cardlink/bundle.js?20220329\",\"msmaflink\");\r\nmsmaflink({\"n\":\"新発売 公式 Roomba Mini + AutoEmpty ルンバ ミニ アイロボット ロボット掃除機 2026 お掃除ロボット 床拭き 拭き掃除 自動ゴミ収集 マッピング 小型 薄型 最新 家電 コードレス irobot roomba 日本 国内 正規品 メーカー保証 延長保証 送料無料\",\"b\":\"\",\"t\":\"\",\"d\":\"https:\\/\\/thumbnail.image.rakuten.co.jp\",\"c_p\":\"\\/@0_mall\\/irobotstore\\/cabinet\",\"p\":[\"\\/item_thum\\/br_thum\\/mini_ae_2nen_rank.jpg\",\"\\/03016688\\/official\\/2y_official_tm_2602.jpg\",\"\\/item_thum\\/br_thum\\/mini_ae\\/mini_ae_02.jpg\"],\"u\":{\"u\":\"https:\\/\\/item.rakuten.co.jp\\/irobotstore\\/f15\\/\",\"t\":\"rakuten\",\"r_v\":\"\"},\"v\":\"2.1\",\"b_l\":[{\"id\":1,\"u_tx\":\"楽天市場で見る\",\"u_bc\":\"#f76956\",\"u_url\":\"https:\\/\\/item.rakuten.co.jp\\/irobotstore\\/f15\\/\",\"a_id\":5483003,\"p_id\":54,\"pl_id\":27059,\"pc_id\":54,\"s_n\":\"rakuten\",\"u_so\":1},{\"id\":2,\"u_tx\":\"Yahoo!ショッピングで見る\",\"u_bc\":\"#66a7ff\",\"u_url\":\"https:\\/\\/shopping.yahoo.co.jp\\/search?first=1\\u0026p=%E6%96%B0%E7%99%BA%E5%A3%B2%20%E5%85%AC%E5%BC%8F%20Roomba%20Mini%20%2B%20AutoEmpty%20%E3%83%AB%E3%83%B3%E3%83%90%20%E3%83%9F%E3%83%8B%20%E3%82%A2%E3%82%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%20%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%202026%20%E3%81%8A%E6%8E%83%E9%99%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%20%E5%BA%8A%E6%8B%AD%E3%81%8D%20%E6%8B%AD%E3%81%8D%E6%8E%83%E9%99%A4%20%E8%87%AA%E5%8B%95%E3%82%B4%E3%83%9F%E5%8F%8E%E9%9B%86%20%E3%83%9E%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0%20%E5%B0%8F%E5%9E%8B%20%E8%96%84%E5%9E%8B%20%E6%9C%80%E6%96%B0%20%E5%AE%B6%E9%9B%BB%20%E3%82%B3%E3%83%BC%E3%83%89%E3%83%AC%E3%82%B9%20irobot%20roomba%20%E6%97%A5%E6%9C%AC%20%E5%9B%BD%E5%86%85%20%E6%AD%A3%E8%A6%8F%E5%93%81%20%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E4%BF%9D%E8%A8%BC%20%E5%BB%B6%E9%95%B7%E4%BF%9D%E8%A8%BC%20%E9%80%81%E6%96%99%E7%84%A1%E6%96%99\",\"a_id\":5483010,\"p_id\":1225,\"pl_id\":27061,\"pc_id\":1925,\"s_n\":\"yahoo\",\"u_so\":2}],\"eid\":\"PUTGR\",\"s\":\"s\"});\r\n</script>\r\n<div id=\"msmaflink-PUTGR\">リンク</div>\r\n<!-- MoshimoAffiliateEasyLink END -->",
+    "direct": "<span class=\"a8ad 4A9LOip-g7-vi8kZtD\"></span><script type=\"text/javascript\" src=\"//statics.a8.net/ad/ad.js\"></script><script type=\"text/javascript\">a8adscript('body').showAd({\"req\": {\"mat\":\"4AZOWQ+152XIQ+4KHO+HUSFL\",\"alt\":\"商品リンク\",\"id\":\"4A9LOip-g7-vi8kZtD\"},\"goods\": {\"ejp\":\"h\"+\"ttps://store.irobot-jp.com/item/F155260.html?_gl=1*1fw3121*_gcl_au*OTAzMDgyNTk5LjE3NzQ2NTY3ODg.*FPAU*OTAzMDgyNTk5LjE3NzQ2NTY3ODg.\",\"imu\":\"h\"+\"ttps://store.irobot-jp.com/client_info/FS/itemimage/F155260_kv-slide01.jpg\"}});</script>",
+    "hpPublish": true
+  }
 }

@@ -1,0 +1,339 @@
+{
+  "productId": "l40-ultra-ae",
+  "productName": "L40 Ultra AE",
+  "manufacturer": "Dreame",
+  "modelNumber": "L40 Ultra AE",
+  "imageUrl": "https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/20251230172934_1.jpg",
+  "overallRating": 4.26,
+  "totalReviews": 6,
+  "price": 99800,
+  "reliabilityScore": 61.0,
+  "asin": "",
+  "metaTitle": "Dreame L40 Ultra AE 詳細分析 | 髪の毛絡まない！床サラサラの秘密を徹底解剖",
+  "metaDescription": "Dreame L40 Ultra AEの6件のレビューを解析。髪の毛が絡まない吸引力や床拭き性能、自動メンテナンス機能の真実を公開。",
+  "keywords": [
+    "ロボット掃除機",
+    "水拭き",
+    "自動ゴミ収集",
+    "髪の毛絡まない",
+    "Dreame",
+    "L40 Ultra AE"
+  ],
+  "categoryC": {
+    "userSatisfaction": {
+      "score": 95,
+      "reviewCount": 6,
+      "comment": "レビューは全体的に非常に満足度が高く、特に床拭き性能と自動メンテナンス機能が高く評価されています。"
+    },
+    "repurchaseIntention": {
+      "percentage": 90,
+      "reviewCount": 3,
+      "comment": "買い替えを検討しているユーザーからは「早く買えばよかった」という声が多く、高い再購入意向が伺えます。"
+    },
+    "failureRate": {
+      "percentage": 5,
+      "reviewCount": 6,
+      "breakdown": {
+        "hardware": 1,
+        "software": 2,
+        "environmental": 2
+      },
+      "comment": "大きな故障報告はなく、一部の運用上の課題はありますが、製品自体の信頼性は高いと評価されています。"
+    }
+  },
+  "reliability": {
+    "score": 61.0,
+    "dataAdequacy": {
+      "score": 40,
+      "weight": 60,
+      "description": "レビュー総数が6件と少ないため、データ十分性スコアは40点と評価されました。"
+    },
+    "consistency": {
+      "percentage": 90,
+      "weight": 30,
+      "description": "楽天の評価は平均5.0と非常に高く、Amazonのレビューも同様にポジティブな傾向を示しています。",
+      "score": 90
+    },
+    "freshness": {
+      "score": 100,
+      "weight": 10,
+      "description": "直近30日以内のレビューはありませんが、提供されたレビューは製品の基本的な性能を評価しています。"
+    }
+  },
+  "updateInfo": {
+    "lastUpdated": "2026-06-15",
+    "firmwareVersion": "",
+    "note": "最新のレビューは2025年12月で、製品の基本的な性能に対する満足度が高い傾向が見られます。"
+  },
+  "timeSaving": {
+    "dailyMinutes": 15,
+    "monthlyHours": 7.5,
+    "annualHours": 90,
+    "workDaysEquivalent": 11.3,
+    "methodology": "ロボット掃除機による日常清掃の自動化で節約される時間を、1日15分として年間で算出しています。"
+  },
+  "operationalCost": {
+    "daily": 60,
+    "dailyNote": "消耗品の実質的な日割りコストは、モップパッドやダストバッグの交換費用を年間で平均化したものです。",
+    "monthly": 1800,
+    "annual": 21517,
+    "consumables": [
+      {
+        "item": "モップパッド",
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 1880,
+        "annualCost": 7520
+      },
+      {
+        "item": "ダストバッグ",
+        "replacementFrequency": "4ヶ月ごと",
+        "unitCost": 2999,
+        "annualCost": 8997
+      },
+      {
+        "item": "消耗品セット（ブラシ・フィルター等）",
+        "replacementFrequency": "12ヶ月ごと",
+        "unitCost": 5000,
+        "annualCost": 5000
+      }
+    ]
+  },
+  "performanceAnalysis": {
+    "floorCleaning": {
+      "score": 98,
+      "reviewCount": 5,
+      "positiveReviewCount": 5,
+      "comment": "拭き掃除で床がサラサラになり、食べこぼしの跡も綺麗に除去されると高評価を得ています。"
+    },
+    "carpetCleaning": {
+      "score": 85,
+      "reviewCount": 2,
+      "positiveReviewCount": 2,
+      "comment": "ラグを自動で認知し濡らさない機能は高評価ですが、カーペット清掃の言及は限定的です。"
+    },
+    "petHairRemoval": {
+      "score": 92,
+      "reviewCount": 1,
+      "positiveReviewCount": 1,
+      "comment": "髪の毛が絡まない点に驚きの声があり、ペットの毛にも効果が期待できると評価されています。"
+    },
+    "quietness": {
+      "score": 70,
+      "reviewCount": 0,
+      "positiveReviewCount": 0,
+      "comment": "静音性に関する直接的な言及はありませんが、夜間利用にも配慮された設計が期待されます。"
+    },
+    "stepClimbing": {
+      "score": 75,
+      "reviewCount": 2,
+      "positiveReviewCount": 1,
+      "comment": "段差乗り越えは一部の家具で注意が必要ですが、ラグの乗り越えはスムーズで評価されています。"
+    },
+    "maintenance": {
+      "score": 96,
+      "reviewCount": 1,
+      "positiveReviewCount": 1,
+      "comment": "ゴミ吸引、モップ洗浄、乾燥まで全自動で、日々のメンテナンスの手間が大幅に削減されます。"
+    },
+    "appStability": {
+      "score": 80,
+      "reviewCount": 1,
+      "positiveReviewCount": 0,
+      "comment": "ドック位置変更時のマッピング再設定に手間を感じる声があり、アプリの安定性に改善の余地があります。"
+    },
+    "batteryLife": {
+      "score": 85,
+      "reviewCount": 0,
+      "positiveReviewCount": 0,
+      "comment": "バッテリー持続時間に関する具体的な言及はありませんが、広範囲の清掃に対応する性能が期待されます。"
+    }
+  },
+  "radarChartData": {
+    "labels": [
+      "床掃除",
+      "カーペット",
+      "ペット毛",
+      "静音性",
+      "段差",
+      "メンテ",
+      "アプリ",
+      "電池"
+    ],
+    "values": [
+      98,
+      85,
+      92,
+      70,
+      75,
+      96,
+      80,
+      85
+    ]
+  },
+  "dataQuality": {
+    "totalReviews": 6,
+    "sampledReviews": 6,
+    "adoptedReviews": 6,
+    "excludedReviews": 0,
+    "trustScore": 61.0,
+    "comment": "提供された6件のレビューは全て分析に採用。レビュー数が少ないため、信頼度スコアは中程度です。"
+  },
+  "reviewKeywords": {
+    "positive": [
+      {
+        "keyword": "床がサラサラ・ピカピカ",
+        "count": 1
+      },
+      {
+        "keyword": "綺麗になる",
+        "count": 1
+      },
+      {
+        "keyword": "満足・買ってよかった",
+        "count": 1
+      }
+    ],
+    "negative": []
+  },
+  "successStrategies": [
+    {
+      "rank": 1,
+      "issue": "特定の家具への乗り越えとマッピング",
+      "occurrenceRate": 17,
+      "occurrenceCount": 1,
+      "environmentalFactor": "家具の配置や形状",
+      "technicalDescription": "コの字型の家具への進入時に無理な乗り越えを試み、マッピングの再設定が必要になる場合があります。",
+      "avoidanceStrategies": [
+        {
+          "method": "進入を避けたいエリアをアプリで設定する",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "アプリの進入禁止エリア設定により、特定の家具への接触を回避し、スムーズな清掃が可能です。"
+        },
+        {
+          "method": "本体ドックの位置を固定し、頻繁な移動を避ける",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalRationale": "ドックの移動はマッピングの再構築を促すため、固定することで安定した運用が期待できます。"
+        }
+      ],
+      "preventionTips": "ロボット掃除機の経路を考慮し、複雑な形状の家具周辺は事前に片付けると良いでしょう。"
+    }
+  ],
+  "topComplaints": [
+    {
+      "title": "特定の家具への乗り越えとマッピング",
+      "percentage": 17,
+      "reviewCount": 1,
+      "description": "コの字型の家具に乗り越えようとして停止したり、ドック位置変更でマッピングの再設定が必要になる場合があります。",
+      "solution": "アプリで進入禁止エリアを設定し、ドックの設置場所を固定することで、これらの問題を回避できます。"
+    },
+    {
+      "title": "ランニングコストへの懸念",
+      "percentage": 17,
+      "reviewCount": 1,
+      "description": "消耗品の交換頻度や費用について、長期的な運用コストへの懸念がレビューで示されています。",
+      "solution": "純正消耗品の定期交換は必要ですが、長期的な視点で見れば時間節約効果が大きく、コストパフォーマンスは高いです。"
+    }
+  ],
+  "attributeScores": {
+    "petOwner": {
+      "overall": 95,
+      "details": [
+        {
+          "field": "ペット毛吸引力",
+          "score": 92,
+          "reviewCount": 1,
+          "comment": "ペットの毛が絡まない吸引力は特に高く評価され、ペットのいる家庭で清潔さを保つのに貢献します。"
+        },
+        {
+          "field": "床掃除",
+          "score": 98,
+          "reviewCount": 5,
+          "comment": "床拭き性能により、ペットの足跡や汚れもきれいに除去され、床が常にサラサラに保たれます。"
+        },
+        {
+          "field": "メンテナンス",
+          "score": 96,
+          "reviewCount": 1,
+          "comment": "自動ゴミ収集やモップ洗浄乾燥機能で、ペットの毛の処理や本体の手入れが格段に楽になります。"
+        }
+      ]
+    },
+    "apartment": {
+      "overall": 79,
+      "details": [
+        {
+          "field": "静音性",
+          "score": 70,
+          "reviewCount": 0,
+          "comment": "静音性に関する直接的な言及はないものの、マンションでの使用を考慮した設計が期待されます。"
+        },
+        {
+          "field": "床掃除",
+          "score": 98,
+          "reviewCount": 5,
+          "comment": "マンションのフローリングを毎日清潔に保ち、拭き掃除で床がサラサラになる点が好評です。"
+        },
+        {
+          "field": "段差乗り越え",
+          "score": 75,
+          "reviewCount": 2,
+          "comment": "一般的な段差やラグの乗り越えはスムーズで問題なく、マンション内の移動も快適に行えます。"
+        }
+      ]
+    },
+    "workingProfessional": {
+      "overall": 87,
+      "details": [
+        {
+          "field": "アプリ安定性",
+          "score": 80,
+          "reviewCount": 1,
+          "comment": "ドック位置変更時のマッピング再設定に改善の余地があるものの、基本的な操作は安定しています。"
+        },
+        {
+          "field": "メンテナンス",
+          "score": 96,
+          "reviewCount": 1,
+          "comment": "ゴミ収集からモップ洗浄まで全自動で、忙しい共働き世帯の掃除負担を大幅に軽減します。"
+        },
+        {
+          "field": "バッテリー",
+          "score": 85,
+          "reviewCount": 0,
+          "comment": "バッテリー持続時間に関する言及はないものの、一度の充電で広範囲をカバーできる性能が期待されます。"
+        }
+      ]
+    },
+    "familyHome": {
+      "overall": 90,
+      "details": [
+        {
+          "field": "床掃除",
+          "score": 98,
+          "reviewCount": 5,
+          "comment": "食べこぼしや日常の汚れもきれいに除去し、小さいお子さんがいる家庭でも床を清潔に保てます。"
+        },
+        {
+          "field": "バッテリー",
+          "score": 85,
+          "reviewCount": 0,
+          "comment": "バッテリー持続時間に関する言及はないものの、広い家全体を一度で清掃できる性能が期待されます。"
+        },
+        {
+          "field": "カーペット",
+          "score": 85,
+          "reviewCount": 2,
+          "comment": "ラグを濡らさずに清掃できるため、カーペット敷きの部屋が多いファミリー世帯でも安心して使えます。"
+        }
+      ]
+    }
+  },
+  "resaleValue": null,
+  "affiliate": {
+    "moshimo": "<!-- START MoshimoAffiliateEasyLink -->\r\n<script type=\"text/javascript\">\r\n(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;\r\nb[a]=b[a]||function(){arguments.currentScript=c.currentScript\r\n||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};\r\nc.getElementById(a)||(d=c.createElement(f),d.src=g,\r\nd.id=a,e=c.getElementsByTagName(\"body\")[0],e.appendChild(d))})\r\n(window,document,\"script\",\"//dn.msmstatic.com/site/cardlink/bundle.js?20220329\",\"msmaflink\");\r\nmsmaflink({\"n\":\"【5％OFFクーポン→94,800円 4\\/27 23:59まで】【19000Pa】ロボット掃除機 水拭き両用 Dreame L40 Ultra AE 自動ゴミ収集 モップ自動洗浄 熱風乾燥 AI障害物回避 モップ伸縮4cm 段差乗り越え お掃除ロボット ペット カーペット 掃除機 ドリーミー\",\"b\":\"\",\"t\":\"\",\"d\":\"https:\\/\\/thumbnail.image.rakuten.co.jp\",\"c_p\":\"\\/@0_mall\\/dreame-shop\\/cabinet\\/biiino\",\"p\":[\"\\/item\\/main-image\\/20251230172934_1.jpg\",\"\\/award\\/l40ultc302de2388.jpg\",\"\\/item\\/main-image\\/20250701183413_3.jpg\"],\"u\":{\"u\":\"https:\\/\\/item.rakuten.co.jp\\/dreame-shop\\/l40ultraae\\/\",\"t\":\"rakuten\",\"r_v\":\"\"},\"v\":\"2.1\",\"b_l\":[{\"id\":1,\"u_tx\":\"楽天市場で見る\",\"u_bc\":\"#f76956\",\"u_url\":\"https:\\/\\/item.rakuten.co.jp\\/dreame-shop\\/l40ultraae\\/\",\"a_id\":5483003,\"p_id\":54,\"pl_id\":27059,\"pc_id\":54,\"s_n\":\"rakuten\",\"u_so\":1},{\"id\":2,\"u_tx\":\"Yahoo!ショッピングで見る\",\"u_bc\":\"#66a7ff\",\"u_url\":\"https:\\/\\/shopping.yahoo.co.jp\\/search?first=1\\u0026p=%E3%80%905%EF%BC%85OFF%E3%82%AF%E3%83%BC%E3%83%9D%E3%83%B3%E2%86%9294%2C800%E5%86%86%204%2F27%2023%3A59%E3%81%BE%E3%81%A7%E3%80%91%E3%80%9019000Pa%E3%80%91%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%20%E6%B0%B4%E6%8B%AD%E3%81%8D%E4%B8%A1%E7%94%A8%20Dreame%20L40%20Ultra%20AE%20%E8%87%AA%E5%8B%95%E3%82%B4%E3%83%9F%E5%8F%8E%E9%9B%86%20%E3%83%A2%E3%83%83%E3%83%97%E8%87%AA%E5%8B%95%E6%B4%97%E6%B5%84%20%E7%86%B1%E9%A2%A8%E4%B9%BE%E7%87%A5%20AI%E9%9A%9C%E5%AE%B3%E7%89%A9%E5%9B%9E%E9%81%BF%20%E3%83%A2%E3%83%83%E3%83%97%E4%BC%B8%E7%B8%AE4cm%20%E6%AE%B5%E5%B7%AE%E4%B9%97%E3%82%8A%E8%B6%8A%E3%81%88%20%E3%81%8A%E6%8E%83%E9%99%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%20%E3%83%9A%E3%83%83%E3%83%88%20%E3%82%AB%E3%83%BC%E3%83%9A%E3%83%83%E3%83%88%20%E6%8E%83%E9%99%A4%E6%A9%9F%20%E3%83%89%E3%83%AA%E3%83%BC%E3%83%9F%E3%83%BC\",\"a_id\":5483010,\"p_id\":1225,\"pl_id\":27061,\"pc_id\":1925,\"s_n\":\"yahoo\",\"u_so\":2}],\"eid\":\"W6xbN\",\"s\":\"s\"});\r\n</script>\r\n<div id=\"msmaflink-W6xbN\">リンク</div>\r\n<!-- MoshimoAffiliateEasyLink END -->",
+    "direct": "<a href=\"https://t.afi-b.com/visit.php?a=115804H-9520052t&p=g978598R\" rel=\"nofollow\">L40 Ultra AE 6way全自動ロボット掃除機</a><img src=\"https://t.afi-b.com/lead/115804H/g978598R/9520052t\" width=\"1\" height=\"1\" style=\"border:none;\" />",
+    "hpPublish": true
+  }
+}

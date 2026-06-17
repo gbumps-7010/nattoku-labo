@@ -1,157 +1,148 @@
 {
   "productId": "roomba-mini-slim-slimcharge",
-  "productName": "Roomba Mini Slim + SlimCharge",
+  "productName": "Roomba® Mini Slim + SlimCharge™",
   "manufacturer": "iRobot",
-  "modelNumber": "Mini-Slim-SC",
-  "overallRating": 4.59,
-  "totalReviews": 47,
+  "modelNumber": "F115260",
+  "imageUrl": "https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/item_thum/br_thum/mini_slim_tm.jpg",
+  "overallRating": 3.75,
+  "totalReviews": 204,
   "price": 39800,
-  "reliabilityScore": 61,
-  "imageUrl": "https://m.media-amazon.com/images/I/61-B9+P0eLL._AC_SL1500_.jpg",
-  "asin": "B0D5XY8Z7M",
-  "metaTitle": "Roomba Mini Slim + SlimCharge 詳細分析 | 採用47件・薄型LiDAR",
-  "metaDescription": "Roomba Mini Slim + SlimChargeの採用47件を分析。LiDAR・薄型・SlimCharge、市販シート水拭き、ダスト小ささ・厚手ラグの主傾向と、月700円前後の維持目安を整理。",
+  "reliabilityScore": 85.0,
+  "asin": "",
+  "metaTitle": "Roomba® Mini Slim + SlimCharge™ 詳細分析 | 超小型ルンバの性能と口コミ評価",
+  "metaDescription": "iRobot Roomba® Mini Slim + SlimCharge™の204件のレビューを解析。小型化による利便性、吸引力、静音性、アプリ接続の真実を公開。",
+  "keywords": [
+    "ルンバ ミニ スリム",
+    "Roomba Mini Slim",
+    "ロボット掃除機",
+    "iRobot",
+    "口コミ",
+    "評価",
+    "SlimCharge",
+    "小型",
+    "水拭き"
+  ],
+  "categoryC": {
+    "userSatisfaction": {
+      "score": 85,
+      "reviewCount": 204,
+      "comment": "多くのユーザーが小型化による利便性と清掃力に満足しており、日々の掃除が楽になったと高評価です。"
+    },
+    "repurchaseIntention": {
+      "percentage": 80,
+      "reviewCount": 204,
+      "comment": "旧モデルからの買い替えユーザーが多く、ルンバの信頼性と小型化された本機への期待から高い再購入意向が見られます。"
+    },
+    "failureRate": {
+      "percentage": 8,
+      "reviewCount": 204,
+      "breakdown": {
+        "hardware": 4,
+        "software": 3,
+        "environmental": 1
+      },
+      "comment": "アプリ接続や充電ベースへの帰還に関する不具合報告が散見されますが、全体的な故障率は低めです。"
+    }
+  },
   "reliability": {
-    "score": 61,
+    "score": 85.0,
     "dataAdequacy": {
-      "score": 40,
-      "percentage": 40,
+      "score": 80,
       "weight": 60,
-      "description": "採用47件。母数は限定的だが、主要機能（LiDAR走行、シート拭き等）への言及の偏りは相対的に小さく、主傾向の把握に使える。信頼度は標準的（参考40）。"
+      "description": "204件のレビューは製品の全体像を把握するのに十分な量であり、多様な意見が反映されています。"
     },
     "consistency": {
-      "score": 90,
       "percentage": 90,
       "weight": 30,
-      "description": "掲出元の間で星・コメント傾向の食い違いが小さく、省スペース・手入れの良さ等の文脈が重なる。一貫性の目安は高い（参考90）。チャネル固有名は方針で非記載。"
+      "description": "楽天での平均評価4.31とAmazonでのレビュー内容に大きな乖離はなく、評価の一貫性が高いです。",
+      "score": 90
     },
     "freshness": {
       "score": 100,
-      "percentage": 100,
       "weight": 10,
-      "description": "直近体験の比率が高く、発売直後の文脈を反映。鮮度目安は高い（参考100）。"
+      "description": "直近30日以内のレビューが44.1%を占め、最新のユーザー体験が豊富に反映されています。"
     }
   },
   "updateInfo": {
-    "lastUpdated": "2026-04-14",
-    "firmwareVersion": "v1.0.1",
-    "note": "採用47件・信頼61。年約120h時短目安。月700円前後の代表維持費。掲出価格は変動。"
+    "lastUpdated": "2026-06-15",
+    "firmwareVersion": "",
+    "note": "最新レビューは2026年6月上旬に集中しており、製品の発売直後から活発な評価が行われています。"
   },
   "timeSaving": {
-    "dailyMinutes": 20,
-    "monthlyHours": 10,
-    "annualHours": 120,
-    "workDaysEquivalent": 15,
-    "methodology": "週5回前後の稼働を想定し、手掃除・拭き掃除の合計を年約120時間削減する目安。1日平均約20分相当。8時間労働日換算で約15日分。市販シート運用でモップ洗浄手間の削減を含む。世帯で変動します。"
+    "dailyMinutes": 18,
+    "monthlyHours": 9,
+    "annualHours": 108,
+    "workDaysEquivalent": 13.5,
+    "methodology": "ロボット掃除機が毎日18分間の手動清掃を代替すると仮定し、年間節約時間を算出しました。"
   },
   "operationalCost": {
-    "daily": 23,
-    "dailyNote": "年間8,400円（月約700円）前後。参考: 交換用フィルター1,320円（2個/半年目安）年2,640円、エッジブラシ1,100円/年、市販使い捨てシート（40枚入り等を約1.3ヶ月）の層想定。実勢で変動。",
-    "monthly": 700,
-    "annual": 8400,
+    "daily": 60,
+    "dailyNote": "消耗品の実質的な日割りコスト",
+    "monthly": 1833,
+    "annual": 22000,
     "consumables": [
       {
-        "item": "交換用フィルター",
-        "replacementFrequency": "6ヶ月目安",
-        "unitCost": 1320,
-        "annualCost": 2640
+        "item": "使い捨てウェットシート (30枚)",
+        "replacementFrequency": "1ヶ月ごと",
+        "unitCost": 1500,
+        "annualCost": 18000
       },
       {
-        "item": "エッジブラシ",
-        "replacementFrequency": "1年目安",
-        "unitCost": 1100,
-        "annualCost": 1100
-      },
-      {
-        "item": "使い捨てシート（市販）",
-        "replacementFrequency": "年間合算",
-        "unitCost": 4660,
-        "annualCost": 4660
+        "item": "メインブラシ・フィルターセット",
+        "replacementFrequency": "1年ごと",
+        "unitCost": 4000,
+        "annualCost": 4000
       }
     ]
   },
-  "categoryC": {
-    "userSatisfaction": {
-      "score": 90,
-      "reviewCount": 47,
-      "comment": "薄型とLiDAR走行、シート水拭きの手軽さが中心。ダスト容量は不満が出やすい。主傾向の目安です。"
-    },
-    "repurchaseIntention": {
-      "percentage": 82,
-      "reviewCount": 40,
-      "comment": "iRobot文脈と導入価格帯の納得が、継続・再検討の示唆に。主傾向の目安です。"
-    },
-    "failureRate": {
-      "percentage": 4,
-      "reviewCount": 47,
-      "breakdown": {
-        "hardware": 1,
-        "software": 2,
-        "environmental": 1
-      },
-      "comment": "重大故障の多発の印象は限定的。初期トラブル言及は少数。主傾向の目安です。"
-    }
-  },
   "performanceAnalysis": {
     "floorCleaning": {
-      "score": 92,
-      "reviewCount": 47,
-      "positiveReviewCount": 44,
-      "comment": "47件中44件が高評価。LiDARのマッピングと薄型で椅子脚間・家具下まで届きやすい。フローリング主の声が好意的。主傾向の目安です。"
+      "score": 95,
+      "reviewCount": 42,
+      "positiveReviewCount": 38,
+      "comment": "超小型ながら強力な吸引力で、フローリングのゴミやホコリを効率的に除去します。特に狭い場所や家具の隙間もきれいにし、床がサラサラになったと高評価です。"
     },
     "carpetCleaning": {
-      "score": 78,
-      "reviewCount": 40,
-      "positiveReviewCount": 32,
-      "comment": "40件中32件が満足。厚手ラグでは吸引力物足りなさ、表面の髪の毛・塵は回収、という層分け。主傾向の目安です。"
+      "score": 70,
+      "reviewCount": 16,
+      "positiveReviewCount": 10,
+      "comment": "カーペット上ではパワフルに清掃しますが、厚みのあるラグでは乗り越えられない場合や、奥のホコリ除去には限界があるとの声もあります。"
     },
     "petHairRemoval": {
-      "score": 85,
-      "reviewCount": 42,
-      "positiveReviewCount": 38,
-      "comment": "42件中38件が高評価。ゴム系ブラシで絡まりにくい。多頭飼育の抜け毛文脈で好評。主傾向の目安です。"
-    },
-    "petHair": {
-      "score": 85,
-      "reviewCount": 42,
-      "positiveReviewCount": 38,
-      "comment": "petHairRemovalと同一主傾向。後方互換用。"
+      "score": 90,
+      "reviewCount": 19,
+      "positiveReviewCount": 16,
+      "comment": "ペットの毛の吸引力は高く、犬や猫の抜け毛に悩む家庭で非常に役立つと評価されています。ただし、ダストボックスが小さいため頻繁なゴミ捨てが必要です。"
     },
     "quietness": {
-      "score": 82,
-      "reviewCount": 47,
-      "positiveReviewCount": 36,
-      "comment": "47件中36件が高評価。フロアは相対的に静か。ラグ乗り越え時の駆動音は大きめの声。夜より不在時稼働の示唆。主傾向の目安です。"
-    },
-    "nightQuietness": {
-      "score": 82,
-      "reviewCount": 47,
-      "positiveReviewCount": 36,
-      "comment": "quietnessと同一。後方互換用。"
+      "score": 75,
+      "reviewCount": 26,
+      "positiveReviewCount": 15,
+      "comment": "小型化に伴い静音性を期待する声が多いものの、吸引時は通常の掃除機に近い音がするため、静音性は評価が分かれる点です。"
     },
     "stepClimbing": {
-      "score": 75,
-      "reviewCount": 38,
-      "positiveReviewCount": 30,
-      "comment": "38件中30件が高評価。2cm前後の段差は可。軽量で滑り易いラグを押し出す例。主傾向の目安です。"
+      "score": 70,
+      "reviewCount": 24,
+      "positiveReviewCount": 18,
+      "comment": "小さな段差やラグは乗り越えられますが、玄関などの大きな段差では落下するケースも報告されています。アプリでの禁止エリア設定が推奨されます。"
     },
     "maintenance": {
-      "score": 94,
-      "reviewCount": 47,
-      "positiveReviewCount": 45,
-      "comment": "47件中45件が高評価。市販使い捨てシートでモップ洗乾の手間を抑え、ゴミ捨て頻度のイメージも現実的。主傾向の目安です。"
+      "score": 75,
+      "reviewCount": 20,
+      "positiveReviewCount": 10,
+      "comment": "本体が軽く持ち運びやすい点は評価されますが、ダストボックスの開け方やゴミ捨ての手間、静電気による汚れが気になるという声もあります。"
     },
     "appStability": {
-      "score": 90,
-      "reviewCount": 45,
-      "positiveReviewCount": 40,
-      "comment": "45件中40件が高評価。iRobot Homeの安定・履歴表示の好印象。主傾向の目安です。"
+      "score": 60,
+      "reviewCount": 77,
+      "positiveReviewCount": 20,
+      "comment": "アプリの初期設定やWi-Fi接続に苦戦するユーザーが多く、2.4GHz帯のみ対応やOSバージョン制限が原因となる場合もあります。接続後は便利との声もあります。"
     },
     "batteryLife": {
-      "score": 80,
-      "reviewCount": 35,
-      "positiveReviewCount": 31,
-      "comment": "35件中31件が高評価。2LDK程度で一充電完走の声。自動充電の安心感。主傾向の目安です。"
+      "score": 65,
+      "reviewCount": 29,
+      "positiveReviewCount": 5,
+      "comment": "小型化によりバッテリー持続時間が短く、広い部屋や複数フロアの清掃では途中で充電に戻る頻度が高いという指摘があります。"
     }
   },
   "radarChartData": {
@@ -166,78 +157,139 @@
       "電池"
     ],
     "values": [
-      92,
-      78,
-      85,
-      82,
-      75,
-      94,
+      95,
+      70,
       90,
-      80
+      75,
+      70,
+      75,
+      60,
+      65
     ]
   },
   "dataQuality": {
-    "totalReviews": 47,
-    "sampledReviews": 47,
-    "adoptedReviews": 47,
+    "totalReviews": 204,
+    "sampledReviews": 204,
+    "adoptedReviews": 204,
     "excludedReviews": 0,
-    "trustScore": 61,
-    "comment": "本文採用47件。掲出元の件数配分の偏りは留意。直近体験の比率が高い。reliabilityScore 61と整合。掲出元固有名は方針で非記載。"
+    "trustScore": 85.0,
+    "comment": "全204件のレビューを詳細に分析。楽天の評価は平均4.31と高く、Amazonでは小型化による利便性とアプリ接続の課題が指摘されています。信頼性スコアは85.00点です。"
   },
   "reviewKeywords": {
     "positive": [
       {
-        "keyword": "薄型",
-        "count": 38
+        "keyword": "満足・買ってよかった",
+        "count": 42
       },
       {
-        "keyword": "家具の下",
-        "count": 32
+        "keyword": "静かで快適",
+        "count": 21
       },
       {
-        "keyword": "LiDAR",
-        "count": 28
+        "keyword": "使いやすい・便利",
+        "count": 18
       },
       {
-        "keyword": "市販シート",
-        "count": 25
+        "keyword": "綺麗になる",
+        "count": 15
       },
       {
-        "keyword": "メンテ楽",
-        "count": 22
+        "keyword": "吸引力が高い",
+        "count": 14
       }
     ],
     "negative": [
       {
-        "keyword": "ダスト 小さい",
-        "count": 8
+        "keyword": "故障・不具合",
+        "count": 13
       },
       {
-        "keyword": "ラグ 音",
-        "count": 6
+        "keyword": "動作音が気になる",
+        "count": 5
       },
       {
-        "keyword": "カーペット 弱い",
+        "keyword": "止まってしまう",
         "count": 4
+      },
+      {
+        "keyword": "アプリ・Wi-Fi接続が難しい",
+        "count": 3
+      },
+      {
+        "keyword": "期待を下回る点",
+        "count": 2
       }
     ]
   },
-  "topComplaints": [
+  "successStrategies": [
     {
-      "title": "ダストボックスが小さく、ゴミ捨て頻度が高い",
-      "complaint": "ダストボックスが小さく、ゴミ捨て頻度が高い",
-      "percentage": 18,
-      "reviewCount": 8,
-      "severity": "medium",
-      "solution": "小型本体に伴う容量制約。清掃スケジュールを分散し、1回あたりの満杯を抑える。メーカーFAQの目安清掃頻度を参照。主傾向の目安です。"
+      "rank": 1,
+      "issue": "アプリ・Wi-Fi接続の不安定さ",
+      "occurrenceRate": 37,
+      "occurrenceCount": 77,
+      "environmentalFactor": "Wi-Fiルーターの周波数帯（2.4GHz専用）、設置場所、iOSバージョン",
+      "technicalDescription": "本機は2.4GHz帯Wi-Fiにのみ対応しており、ルーター設定や設置場所によっては接続が不安定になることがあります。iOSバージョンが古いと連携できない場合もあります。",
+      "avoidanceStrategies": [
+        {
+          "method": "Wi-Fiルーターを2.4GHz帯に設定し、ルンバ本体とルーターを近づけて初期設定を行う。",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "2.4GHz帯は障害物に強く、ルンバの接続安定性を高めます。ルーターとの距離を縮めることで電波強度を確保できます。"
+        },
+        {
+          "method": "初期設定時はスマホのWi-Fiを2.4GHzに固定し、満充電状態で行う。",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalRationale": "満充電状態での設定は安定しやすく、スマホのWi-Fi固定でルンバが正しいネットワークに接続しやすくなります。"
+        }
+      ],
+      "preventionTips": "アプリの指示に従い、Wi-Fi環境を確認。接続が難しい場合は、iRobot公式サイトのFAQやトラブルシューティングを参照してください。"
     },
     {
-      "title": "厚手のラグで音が大きくなり、動きが鈍くなる",
-      "complaint": "厚手のラグで音が大きくなり、動きが鈍くなる",
-      "percentage": 12,
-      "reviewCount": 6,
-      "severity": "low",
-      "solution": "軽量設計の影響。ラグ端の固定、進入禁止、床材に合わせた運用。トラブルシュートの手順を参照。主傾向の目安です。"
+      "rank": 2,
+      "issue": "ダストボックスの取り出し・ゴミ捨ての手間",
+      "occurrenceRate": 10,
+      "occurrenceCount": 20,
+      "environmentalFactor": "小型化による容量の小ささ、構造の複雑さ",
+      "technicalDescription": "小型設計のためダストボックス容量が小さく、頻繁なゴミ捨てが必要です。また、取り出し口が分かりにくい、トップカバーを外す手間がかかるという意見があります。",
+      "avoidanceStrategies": [
+        {
+          "method": "説明書（アプリ内またはWeb）で正しい開け方を確認し、慣れるまで丁寧に扱う。",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "正しい手順を理解することで、スムーズなゴミ捨てが可能になります。"
+        },
+        {
+          "method": "ゴミ捨て頻度を考慮し、AutoEmpty™ Dock付きの上位モデルも検討する。",
+          "effectiveness": "中",
+          "technicalLevel": "中級",
+          "technicalRationale": "自動ゴミ収集機能があれば、手動でのゴミ捨ての手間を大幅に削減できます。"
+        }
+      ],
+      "preventionTips": "毎日または数日に一度のゴミ捨てを習慣化し、ブラシの絡まりも定期的に確認しましょう。"
+    }
+  ],
+  "topComplaints": [
+    {
+      "title": "アプリ・Wi-Fi接続の不安定さ",
+      "percentage": 37,
+      "reviewCount": 77,
+      "description": "アプリの初期設定やWi-Fi接続に苦戦するユーザーが多く、2.4GHz帯のみ対応やOSバージョン制限が原因となる場合があります。",
+      "solution": "Wi-Fiルーターを2.4GHz帯に設定し、ルンバ本体とルーターを近づけて初期設定を行うと改善されることがあります。iRobot公式サイトのFAQも参照してください。"
+    },
+    {
+      "title": "ダストボックスの取り出し・ゴミ捨ての手間",
+      "percentage": 10,
+      "reviewCount": 20,
+      "description": "小型化によりダストボックス容量が小さく、頻繁なゴミ捨てが必要です。開け方が分かりにくい、トップカバーを外す手間がかかるとの声もあります。",
+      "solution": "説明書で正しい開け方を確認し、慣れるまで丁寧に扱うことが重要です。自動ゴミ収集機能付きモデルも検討の価値があります。"
+    },
+    {
+      "title": "バッテリー持続時間の短さ",
+      "percentage": 14,
+      "reviewCount": 29,
+      "description": "小型化によりバッテリー持続時間が短く、広い部屋や複数フロアの清掃では途中で充電に戻る頻度が高いという指摘があります。",
+      "solution": "部屋を区切って清掃したり、こまめに充電したりすることで対応可能です。広い家では上位モデルも検討しましょう。"
     }
   ],
   "attributeScores": {
@@ -246,226 +298,74 @@
       "details": [
         {
           "field": "ペット毛吸引力",
-          "score": 88,
-          "reviewCount": 42,
-          "comment": "ゴム製ブラシで毛が絡みにくく、換毛期の抜け毛も扱いやすい、という層向け。主傾向の目安です。"
-        },
-        {
-          "field": "ブラシへの毛絡み対策",
-          "score": 92,
-          "reviewCount": 40,
-          "comment": "従来系の手入れ少なめの文脈。週1前後の点検で足りる、という層向け。主傾向の目安です。"
-        },
-        {
-          "field": "静音性（ペット反応）",
-          "score": 80,
-          "reviewCount": 38,
-          "comment": "動作音の抑えを挙げ、同室で落ち着く、という層向け。主傾向の目安です。"
-        },
-        {
-          "field": "アレルゲン対策",
-          "score": 85,
-          "reviewCount": 30,
-          "comment": "排気のクリーンさ、フケ・ダスト回収。主傾向の目安です。"
-        },
-        {
-          "field": "床面清掃能力",
-          "score": 94,
-          "reviewCount": 47,
-          "comment": "フロア主力環境の砂埃回収。主傾向の目安です。"
-        },
-        {
-          "field": "メンテナンス頻度",
-          "score": 95,
-          "reviewCount": 47,
-          "comment": "使い捨てシートで汚れ拭きの手間低減。主傾向の目安です。"
-        },
-        {
-          "field": "ダストボックス容量",
-          "score": 70,
-          "reviewCount": 40,
-          "comment": "小型に伴い容量小さめ。抜け毛多い層は捨て頻度注意。主傾向の目安です。"
-        },
-        {
-          "field": "コストパフォーマンス",
           "score": 90,
-          "reviewCount": 47,
-          "comment": "3万円台でLiDARとブランド体験の納得。主傾向の目安です。"
+          "reviewCount": 19,
+          "comment": "ペットの毛を強力に吸引し、特に犬や猫の抜け毛に悩む家庭で高い評価を得ています。"
+        },
+        {
+          "field": "床掃除",
+          "score": 95,
+          "reviewCount": 42,
+          "comment": "フローリングのゴミやホコリを効率的に除去し、床がサラサラになったとの声が多く見られます。"
         }
       ]
     },
     "apartment": {
-      "overall": 84,
+      "overall": 80,
       "details": [
         {
-          "field": "静音性（標準モード）",
-          "score": 88,
-          "reviewCount": 47,
-          "comment": "隣戸配慮の文脈で夜早の利用。主傾向の目安です。"
-        },
-        {
-          "field": "静音性（ゴミ収集）",
+          "field": "静音性",
           "score": 75,
-          "reviewCount": 40,
-          "comment": "集塵が付く文脈では一瞬大きい。夜間帯の制限。本モデルはベース非搭載の層が多いが、他機併用の声は留意。主傾向の目安です。"
+          "reviewCount": 26,
+          "comment": "小型化による静音性を期待する声がある一方、吸引時は通常の掃除機に近い音がするため、評価が分かれます。"
         },
         {
-          "field": "コンパクト設計",
-          "score": 98,
-          "reviewCount": 47,
-          "comment": "幅狭・1K/1LDKの通り抜け。主傾向の目安です。"
-        },
-        {
-          "field": "段差乗り越え",
-          "score": 82,
-          "reviewCount": 45,
-          "comment": "敷居・低い段差。主傾向の目安です。"
-        },
-        {
-          "field": "狭い場所での動作",
-          "score": 96,
-          "reviewCount": 47,
-          "comment": "椅子脚30cm前後文脈。主傾向の目安です。"
-        },
-        {
-          "field": "近隣への配慮",
-          "score": 90,
+          "field": "床掃除",
+          "score": 95,
           "reviewCount": 42,
-          "comment": "接触のソフトさとLiDAR回避。主傾向の目安です。"
-        },
-        {
-          "field": "設置スペース",
-          "score": 94,
-          "reviewCount": 47,
-          "comment": "SlimChargeの省スペース。主傾向の目安です。"
-        },
-        {
-          "field": "価格帯",
-          "score": 85,
-          "reviewCount": 47,
-          "comment": "単身・共働きの導入しやすさ。主傾向の目安です。"
+          "comment": "コンパクトなサイズで狭いマンションの部屋でも隅々まで清掃し、高い満足度を得ています。"
         }
       ]
     },
     "workingProfessional": {
-      "overall": 90,
+      "overall": 67,
       "details": [
         {
-          "field": "自動化レベル",
-          "score": 92,
-          "reviewCount": 47,
-          "comment": "スケジュール通り起動。帰宅時の床の印象。主傾向の目安です。"
+          "field": "アプリ安定性",
+          "score": 60,
+          "reviewCount": 77,
+          "comment": "アプリの初期設定やWi-Fi接続に苦戦する声が多く、共働き世帯が求めるスムーズな運用には課題が残ります。"
         },
         {
-          "field": "スケジュール機能",
-          "score": 95,
-          "reviewCount": 45,
-          "comment": "曜日・帯の指定。主傾向の目安です。"
-        },
-        {
-          "field": "リモート操作",
-          "score": 94,
-          "reviewCount": 40,
-          "comment": "遠隔起動の手応え。主傾向の目安です。"
-        },
-        {
-          "field": "メンテナンス頻度",
-          "score": 96,
-          "reviewCount": 47,
-          "comment": "市販シートでモップ洗い削減。主傾向の目安です。"
-        },
-        {
-          "field": "時短効果",
-          "score": 97,
-          "reviewCount": 47,
-          "comment": "掃除・拭きの自動化で週数時間の層。主傾向の目安です。"
-        },
-        {
-          "field": "初期設定の簡単さ",
-          "score": 90,
-          "reviewCount": 42,
-          "comment": "誘導中心の導入。主傾向の目安です。"
-        },
-        {
-          "field": "外出中の安心感",
-          "score": 92,
-          "reviewCount": 45,
-          "comment": "停止少なめ・地図追跡。主傾向の目安です。"
-        },
-        {
-          "field": "アプリの使いやすさ",
-          "score": 94,
-          "reviewCount": 47,
-          "comment": "直感的UI。主傾向の目安です。"
+          "field": "メンテナンス",
+          "score": 75,
+          "reviewCount": 20,
+          "comment": "本体は軽量で扱いやすいものの、ダストボックスの開け方やゴミ捨ての手間が気になるという意見も見られます。"
         }
       ]
     },
     "familyHome": {
-      "overall": 84,
+      "overall": 79,
       "details": [
         {
-          "field": "広範囲対応",
-          "score": 85,
-          "reviewCount": 35,
-          "comment": "一充電の広がり。主傾向の目安です。"
-        },
-        {
-          "field": "複数部屋対応",
-          "score": 88,
-          "reviewCount": 38,
-          "comment": "ドア解放時の部屋越え。主傾向の目安です。"
-        },
-        {
-          "field": "子供の食べこぼし対応",
-          "score": 82,
-          "reviewCount": 40,
-          "comment": "除菌系シートの層。主傾向の目安です。"
-        },
-        {
-          "field": "家族全員の使いやすさ",
-          "score": 90,
+          "field": "床掃除",
+          "score": 95,
           "reviewCount": 42,
-          "comment": "物理ボタン。主傾向の目安です。"
+          "comment": "家族の多い家庭でもフローリングを効率的に清掃し、日々の掃除負担を軽減するのに貢献しています。"
         },
         {
-          "field": "子供の安全性",
-          "score": 88,
-          "reviewCount": 30,
-          "comment": "玩具回避。主傾向の目安です。"
-        },
-        {
-          "field": "バッテリー持続時間",
-          "score": 82,
-          "reviewCount": 35,
-          "comment": "1階文脈の完走。主傾向の目安です。"
-        },
-        {
-          "field": "ランニングコスト",
-          "score": 92,
-          "reviewCount": 47,
-          "comment": "市販シートの節約運用。主傾向の目安です。"
-        },
-        {
-          "field": "総合コストパフォーマンス",
-          "score": 88,
-          "reviewCount": 47,
-          "comment": "4万円未満帯の導入しやすさ。主傾向の目安です。"
+          "field": "バッテリー",
+          "score": 65,
+          "reviewCount": 29,
+          "comment": "広い家ではバッテリー持続時間の短さが課題となることがあり、途中で充電に戻る頻度が高いとの声もあります。"
         }
       ]
     }
   },
-  "keywords": [
-    "Roomba Mini Slim",
-    "SlimCharge",
-    "iRobot",
-    "薄型 ロボット掃除機"
-  ],
-  "cta": {
-    "amazon": "https://www.amazon.co.jp/s?k=Roomba+Mini+Slim",
-    "rakuten": "https://search.rakuten.co.jp/search/mall/Roomba+Mini+Slim/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=Roomba+Mini+Slim"
-  },
-  "manufacturerOfficialAffiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AZOWQ+152XIQ+4KHO+HUD03&a8ejpredirect=https%3A%2F%2Fstore.irobot-jp.com%2Fitem%2FF115260.html%3F_gl%3D1*layzvb*_gcl_au*OTAzMDgyNTk5LjE3NzQ2NTY3ODg.*FPAU*OTAzMDgyNTk5LjE3NzQ2NTY3ODg.",
-  "manufacturerOfficialAffiliateTrackingPixelUrl": "",
-  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-roomba-mini-slim-slimcharge.html"
+  "resaleValue": null,
+  "affiliate": {
+    "moshimo": "<!-- START MoshimoAffiliateEasyLink -->\r\n<script type=\"text/javascript\">\r\n(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;\r\nb[a]=b[a]||function(){arguments.currentScript=c.currentScript\r\n||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};\r\nc.getElementById(a)||(d=c.createElement(f),d.src=g,\r\nd.id=a,e=c.getElementsByTagName(\"body\")[0],e.appendChild(d))})\r\n(window,document,\"script\",\"//dn.msmstatic.com/site/cardlink/bundle.js?20220329\",\"msmaflink\");\r\nmsmaflink({\"n\":\"3\\/10新発売 【期間限定 下取りで10%OFF】 公式 Roomba Mini Slim + SlimCharge ルンバ アイロボット ロボット掃除機 2026 お掃除ロボット 床拭き 拭き掃除 マッピング 小型 薄型 irobot roomba 日本 国内 正規品 メーカー保証 延長保証 送料無料\",\"b\":\"\",\"t\":\"\",\"d\":\"https:\\/\\/thumbnail.image.rakuten.co.jp\",\"c_p\":\"\\/@0_mall\\/irobotstore\\/cabinet\",\"p\":[\"\\/item_thum\\/br_thum\\/mini_slim_tm.jpg\",\"\\/03016688\\/official\\/2y_official_tm_2602.jpg\",\"\\/item_thum\\/br_thum\\/mini_slim\\/mini_slim_02.jpg\"],\"u\":{\"u\":\"https:\\/\\/item.rakuten.co.jp\\/irobotstore\\/f11\\/\",\"t\":\"rakuten\",\"r_v\":\"\"},\"v\":\"2.1\",\"b_l\":[{\"id\":1,\"u_tx\":\"楽天市場で見る\",\"u_bc\":\"#f76956\",\"u_url\":\"https:\\/\\/item.rakuten.co.jp\\/irobotstore\\/f11\\/\",\"a_id\":5483003,\"p_id\":54,\"pl_id\":27059,\"pc_id\":54,\"s_n\":\"rakuten\",\"u_so\":1},{\"id\":2,\"u_tx\":\"Yahoo!ショッピングで見る\",\"u_bc\":\"#66a7ff\",\"u_url\":\"https:\\/\\/shopping.yahoo.co.jp\\/search?first=1\\u0026p=3%2F10%E6%96%B0%E7%99%BA%E5%A3%B2%20%E3%80%90%E6%9C%9F%E9%96%93%E9%99%90%E5%AE%9A%20%E4%B8%8B%E5%8F%96%E3%82%8A%E3%81%A710%25OFF%E3%80%91%20%E5%85%AC%E5%BC%8F%20Roomba%20Mini%20Slim%20%2B%20SlimCharge%20%E3%83%AB%E3%83%B3%E3%83%90%20%E3%82%A2%E3%82%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%20%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%202026%20%E3%81%8A%E6%8E%83%E9%99%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%20%E5%BA%8A%E6%8B%AD%E3%81%8D%20%E6%8B%AD%E3%81%8D%E6%8E%83%E9%99%A4%20%E3%83%9E%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0%20%E5%B0%8F%E5%9E%8B%20%E8%96%84%E5%9E%8B%20irobot%20roomba%20%E6%97%A5%E6%9C%AC%20%E5%9B%BD%E5%86%85%20%E6%AD%A3%E8%A6%8F%E5%93%81%20%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E4%BF%9D%E8%A8%BC%20%E5%BB%B6%E9%95%B7%E4%BF%9D%E8%A8%BC%20%E9%80%81%E6%96%99%E7%84%A1%E6%96%99\",\"a_id\":5483010,\"p_id\":1225,\"pl_id\":27061,\"pc_id\":1925,\"s_n\":\"yahoo\",\"u_so\":2}],\"eid\":\"NWSxI\",\"s\":\"s\"});\r\n</script>\r\n<div id=\"msmaflink-NWSxI\">リンク</div>\r\n<!-- MoshimoAffiliateEasyLink END -->",
+    "direct": "<span class=\"a8ad 4A9LOip-g7-vi8ljHP\"></span><script type=\"text/javascript\" src=\"//statics.a8.net/ad/ad.js\"></script><script type=\"text/javascript\">a8adscript('body').showAd({\"req\": {\"mat\":\"4AZOWQ+152XIQ+4KHO+HUSFL\",\"alt\":\"商品リンク\",\"id\":\"4A9LOip-g7-vi8ljHP\"},\"goods\": {\"ejp\":\"h\"+\"ttps://store.irobot-jp.com/item/F115260.html?_gl=1*14meuas*_gcl_au*OTAzMDgyNTk5LjE3NzQ2NTY3ODg.*FPAU*OTAzMDgyNTk5LjE3NzQ2NTY3ODg.\",\"imu\":\"h\"+\"ttps://store.irobot-jp.com/client_info/FS/itemimage/F115260_kv-slide01.jpg\"}});</script>",
+    "hpPublish": true
+  }
 }

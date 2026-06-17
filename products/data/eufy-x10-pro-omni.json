@@ -2,145 +2,156 @@
   "productId": "eufy-x10-pro-omni",
   "productName": "Eufy X10 Pro Omni",
   "manufacturer": "Anker",
-  "modelNumber": "T2351",
-  "imageUrl": "https://m.media-amazon.com/images/I/61Nl6LpXWXL._AC_SL1500_.jpg",
-  "overallRating": 4.6,
-  "totalReviews": 458,
-  "price": 99990,
-  "reliabilityScore": 88,
-  "asin": "B0CPHYJRRP",
-  "metaTitle": "Eufy X10 Pro Omni 詳細分析 | 10万円以下で全自動を実現したコスパ王",
-  "metaDescription": "Eufy X10 Pro Omniの458件のレビューを解析。8000Paの強力吸引と12mmモップリフト、自動洗浄乾燥など、実ユーザーが絶賛するコスパの真実を公開。",
+  "modelNumber": "X10 Pro Omni",
+  "imageUrl": "https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t2351/t2351_normal.jpg",
+  "overallRating": 4.0,
+  "totalReviews": 608,
+  "price": 69990,
+  "reliabilityScore": 82.0,
+  "asin": "",
+  "metaTitle": "Anker Eufy X10 Pro Omni 詳細分析 | 全自動水拭きロボット掃除機の真実",
+  "metaDescription": "Anker Eufy X10 Pro Omniの608件のレビューを解析。強力な吸引力と水拭き、自動メンテナンスで家事負担を大幅軽減。静音性や障害物回避の真実を公開。",
+  "keywords": [
+    "Anker Eufy X10 Pro Omni",
+    "ロボット掃除機",
+    "水拭き",
+    "自動ゴミ収集",
+    "Anker",
+    "時短家電"
+  ],
   "categoryC": {
     "userSatisfaction": {
-      "score": 94,
-      "reviewCount": 458,
-      "comment": "10万円を切る価格で、上位機種同等の全自動ドックと8000Paの吸引力を実現している点に満足度が集中しています。家事負担が劇的に減ったという声が圧倒的に多く、非常に高い評価を得ています。"
+      "score": 90,
+      "reviewCount": 608,
+      "comment": "多くのユーザーが「買ってよかった」「生活が変わった」と評価しており、特に水拭き機能と自動化による家事負担軽減に高い満足度を示しています。"
     },
     "repurchaseIntention": {
-      "percentage": 88,
-      "reviewCount": 395,
-      "comment": "Ankerの充実したサポートと、アプリの使い勝手の良さから「次もEufyを選びたい」とする層が厚いです。特に他社フラッグシップからの乗り換えユーザーが、そのコスパの高さに驚く傾向にあります。"
+      "percentage": 85,
+      "reviewCount": 500,
+      "comment": "製品の利便性と清掃能力の高さから、多くのユーザーが購入を強く推奨しており、リピート購入や友人への紹介意向も高い傾向にあります。"
     },
     "failureRate": {
-      "percentage": 3,
-      "reviewCount": 458,
+      "percentage": 10,
+      "reviewCount": 608,
       "breakdown": {
-        "hardware": 1,
-        "software": 1,
-        "environmental": 1
+        "hardware": 4,
+        "software": 3,
+        "environmental": 3
       },
-      "comment": "初期のWi-Fi接続トラブルが数件報告されていますが、本体の物理的な故障率は低く安定しています。Ankerの迅速な保証対応も相まって、長期利用に対するユーザーの信頼感は非常に高いです。"
+      "comment": "故障や不具合の報告が一部見られ、特にハードウェアの耐久性や汚水処理に関する問題が指摘されています。サポート対応への不満も散見されます。"
     }
   },
   "reliability": {
-    "score": 88,
+    "score": 82.0,
     "dataAdequacy": {
-      "score": 80,
-      "percentage": 80,
+      "score": 100,
       "weight": 60,
-      "description": "Amazonと楽天の主要2サイトで400件を超える有効サンプルを確認。統計的な信頼性は十分なレベルにあります。"
+      "description": "提供されたレビュー数が500件以上であるため、データ十分性は非常に高いと評価されます。"
     },
     "consistency": {
-      "score": 100,
-      "percentage": 100,
+      "percentage": 50,
       "weight": 30,
-      "description": "各販路での平均評価の乖離が±0.1以内と非常に小さく、どの環境でも安定したパフォーマンスを発揮することが裏付けられています。"
+      "description": "Amazonと楽天の平均評価に1.0点以上の差が見られ、サイト間の一貫性に課題があるため、評価は中程度です。",
+      "score": 50
     },
     "freshness": {
-      "score": 100,
-      "percentage": 100,
+      "score": 70,
       "weight": 10,
-      "description": "直近1ヶ月以内の投稿が全体の30%を超えており、最新ファームウェア下での安定した動作が確認されています。"
+      "description": "直近30日以内のレビュー比率が5%以上15%未満であるため、鮮度は平均的な評価です。"
     }
   },
   "updateInfo": {
-    "lastUpdated": "2026-03-27",
-    "firmwareVersion": "2.1.35",
-    "note": "AI障害物回避機能「AI.See」の識別精度が向上し、暗所でのコード類回避能力が強化されました。"
+    "lastUpdated": "2026-06-15",
+    "firmwareVersion": "",
+    "note": "最新レビュー時期は2026年6月で、製品は高い評価を得ています。一部で初期不良や耐久性に関する懸念が報告されています。"
   },
   "timeSaving": {
-    "dailyMinutes": 22,
-    "monthlyHours": 11,
-    "annualHours": 134,
-    "workDaysEquivalent": 16.8,
-    "methodology": "毎日の床掃除・水拭き・モップ洗浄・乾燥にかかる手作業を自動化したことによる削減時間を算出。"
+    "dailyMinutes": 20,
+    "monthlyHours": 10,
+    "annualHours": 120,
+    "workDaysEquivalent": 15,
+    "methodology": "ロボット掃除機による自動清掃で、手動での掃除機がけと水拭きにかかる時間を毎日20分と想定して算出。年間で約120時間の家事時間を節約します。"
   },
   "operationalCost": {
-    "daily": 42,
-    "dailyNote": "消耗品の実質的な日割りコスト（純正品使用時）",
-    "monthly": 1280,
-    "annual": 15360,
-    "comment": "年間維持費は約1.5万円。内訳はダストバッグ1,100円/個（2ヶ月毎）、回転モップ2,800円/組（半年毎）、メインブラシ3,200円等。サードパーティ製を活用すれば更にコストを抑える運用も可能です。",
+    "daily": 41,
+    "dailyNote": "消耗品の実質的な日割りコスト",
+    "monthly": 1250,
+    "annual": 15000,
     "consumables": [
       {
-        "item": "交換用ダストバッグ",
-        "replacementFrequency": "2ヶ月ごと",
-        "unitCost": 1100,
-        "annualCost": 6600
+        "item": "ダストパック",
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 1500,
+        "annualCost": 6000
       },
       {
-        "item": "回転モップパッド",
+        "item": "モップクロス",
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 1000,
+        "annualCost": 4000
+      },
+      {
+        "item": "サイドブラシ",
         "replacementFrequency": "6ヶ月ごと",
-        "unitCost": 2800,
-        "annualCost": 5600
+        "unitCost": 1000,
+        "annualCost": 2000
       },
       {
-        "item": "交換用メインブラシ",
-        "replacementFrequency": "1年ごと",
-        "unitCost": 3200,
-        "annualCost": 3160
+        "item": "メインブラシ",
+        "replacementFrequency": "12ヶ月ごと",
+        "unitCost": 3000,
+        "annualCost": 3000
       }
     ]
   },
   "performanceAnalysis": {
     "floorCleaning": {
-      "score": 96,
-      "reviewCount": 420,
-      "positiveReviewCount": 403,
-      "comment": "8000Paの強力吸引と、加圧式デュアル回転モップによる拭き上げ能力が絶賛されています。フローリングのベタつきが解消され、裸足で歩くのが楽しみになったという声が多数寄せられています。"
+      "score": 95,
+      "reviewCount": 299,
+      "positiveReviewCount": 280,
+      "comment": "フローリングのホコリや髪の毛を強力に吸引し、水拭きで床がサラサラ・ピカピカになると高評価。隅の清掃に若干の課題が見られますが、全体的な仕上がりは非常に満足されています。"
     },
     "carpetCleaning": {
-      "score": 92,
-      "reviewCount": 310,
-      "positiveReviewCount": 285,
-      "comment": "12mmのモップリフトアップ機能により、カーペットを濡らさず奥のゴミまで強力に吸引。毛足の長いラグがある家庭でも、設定変更なしでスムーズに掃除が完了すると好評です。"
+      "score": 80,
+      "reviewCount": 57,
+      "positiveReviewCount": 45,
+      "comment": "カーペットやラグの吸引力は良好で、厚みのあるものも乗り越えられます。しかし、薄手のマットは巻き込むことがあり、絨毯の毛羽立ちを指摘する声も一部あります。"
     },
     "petHairRemoval": {
-      "score": 95,
-      "reviewCount": 145,
-      "positiveReviewCount": 138,
-      "comment": "ゴム製のV字型回転ブラシがペットの毛の絡まりを最小限に抑制。メンテナンスの手間が省けるため、多頭飼いや換毛期の家庭から「救世主」として高く支持されています。"
+      "score": 90,
+      "reviewCount": 56,
+      "positiveReviewCount": 50,
+      "comment": "ペットの毛除去能力は非常に高く、多頭飼いの家庭でも床が清潔に保てると好評です。ブラシへの毛絡みはゼロではないものの、手入れは容易と評価されています。"
     },
     "quietness": {
-      "score": 82,
-      "reviewCount": 180,
-      "positiveReviewCount": 148,
-      "comment": "通常モードは静かですが、ゴミ収集時の吸引音はそれなりの大きさ。ただし、アプリで収集頻度や時間帯を制限できるため、運用次第で集合住宅でも問題なく利用できるとの評価です。"
+      "score": 75,
+      "reviewCount": 63,
+      "positiveReviewCount": 40,
+      "comment": "清掃中の動作音は比較的静かで、在宅時でも気にならないレベルです。しかし、ステーションでのゴミ自動収集時は非常に大きな音がするため、時間帯を考慮した運用が推奨されます。"
     },
     "stepClimbing": {
-      "score": 88,
-      "reviewCount": 110,
-      "positiveReviewCount": 97,
-      "comment": "2cm程度の標準的な段差は問題なく乗り越えます。薄いマットの巻き込みも少なく、障害物回避機能と相まってスタックによる停止が非常に少ない安定した稼働が特徴です。"
+      "score": 65,
+      "reviewCount": 73,
+      "positiveReviewCount": 40,
+      "comment": "一般的な段差や厚手のカーペットは乗り越えられますが、4cm程度の段差や薄いマット、階段ではエラーや落下が見られます。進入禁止エリア設定で対策可能です。"
     },
     "maintenance": {
-      "score": 98,
-      "reviewCount": 380,
-      "positiveReviewCount": 372,
-      "comment": "モップの自動洗浄と45℃熱風乾燥が完璧で、生乾き臭の悩みから解放されます。浄水・汚水タンクの容量も十分で、週に1〜2回の給排水のみで清潔を保てると高く評価されています。"
+      "score": 80,
+      "reviewCount": 146,
+      "positiveReviewCount": 100,
+      "comment": "モップの自動洗浄・乾燥、ゴミ自動収集機能は非常に便利で、日常のメンテナンス負担を大幅に軽減します。ただし、汚水タンクの臭いや一部消耗品の供給、部品の耐久性には改善の余地があります。"
     },
     "appStability": {
-      "score": 92,
-      "reviewCount": 210,
-      "positiveReviewCount": 193,
-      "comment": "Eufy Cleanアプリのマッピング速度と精度が優秀。進入禁止エリアの設定や、部屋ごとの掃除設定も直感的で使いやすく、家族間で共有してもトラブルが少ない安定性が魅力です。"
+      "score": 85,
+      "reviewCount": 198,
+      "positiveReviewCount": 150,
+      "comment": "アプリは直感的で、マッピングやスケジュール設定が容易と高評価です。AIカメラによる障害物回避も優秀ですが、初期のWi-Fi接続やマッピングで一部ユーザーが戸惑うケースも見られます。"
     },
     "batteryLife": {
-      "score": 90,
-      "reviewCount": 150,
-      "positiveReviewCount": 135,
-      "comment": "一度の充電で広範囲を網羅可能。バッテリーが少なくなると自動でドックに戻り、充電後に再開するピンポイントリチャージ機能により、広い一軒家でも全自動清掃が完結します。"
+      "score": 70,
+      "reviewCount": 18,
+      "positiveReviewCount": 10,
+      "comment": "バッテリーに関する直接的な言及は少ないですが、一部でバッテリーエラーの報告があります。一般的な使用では問題ないレベルと推測されます。"
     }
   },
   "radarChartData": {
@@ -155,180 +166,174 @@
       "電池"
     ],
     "values": [
-      96,
-      92,
       95,
-      82,
-      88,
-      98,
-      92,
-      90
+      80,
+      90,
+      75,
+      65,
+      80,
+      85,
+      70
     ]
   },
   "dataQuality": {
-    "totalReviews": 458,
-    "sampledReviews": 458,
-    "adoptedReviews": 435,
-    "excludedReviews": 23,
-    "trustScore": 88,
-    "comment": "Amazonの「購入者確認済み」レビューと、楽天の画像付き投稿をクロス分析。主観的な偏りを排除し、実運用における性能の再現性を重視してデータを精査しました。"
+    "totalReviews": 608,
+    "sampledReviews": 550,
+    "adoptedReviews": 522,
+    "excludedReviews": 28,
+    "trustScore": 82.0,
+    "comment": "ユーザーから提供された608件のレビューを詳細に分析しました。製品の性能、機能、不満点、解決策を網羅的に評価しています。"
   },
-  "badges": [
-    "8000Pa吸引",
-    "コスパ最強",
-    "年134h目安"
-  ],
   "reviewKeywords": {
     "positive": [
       {
-        "keyword": "吸引力が圧倒的",
-        "count": 215
+        "keyword": "満足・買ってよかった",
+        "count": 195
       },
       {
-        "keyword": "水拭きが最高",
-        "count": 192
+        "keyword": "使いやすい・便利",
+        "count": 57
       },
       {
-        "keyword": "メンテが楽",
-        "count": 178
+        "keyword": "綺麗になる",
+        "count": 55
       },
       {
-        "keyword": "コスパ最強",
-        "count": 165
+        "keyword": "床がサラサラ・ピカピカ",
+        "count": 45
       },
       {
-        "keyword": "サポートが安心",
-        "count": 82
+        "keyword": "静かで快適",
+        "count": 43
       }
     ],
     "negative": [
       {
-        "keyword": "ドックが巨大",
-        "count": 48
+        "keyword": "故障・不具合",
+        "count": 38
       },
       {
-        "keyword": "給排水の重さ",
-        "count": 35
+        "keyword": "動作音が気になる",
+        "count": 21
       },
       {
-        "keyword": "ゴミ収集音が大",
-        "count": 30
+        "keyword": "段差・家具で引っかかる",
+        "count": 20
       },
       {
-        "keyword": "Wi-Fi再設定",
-        "count": 12
+        "keyword": "コードを巻き込む",
+        "count": 15
       },
       {
-        "keyword": "サイズ確認必須",
-        "count": 8
+        "keyword": "止まってしまう",
+        "count": 6
       }
     ]
   },
   "successStrategies": [
     {
       "rank": 1,
-      "issue": "全自動ドックの設置場所と騒音",
-      "complaint": "全自動ドックの設置場所と騒音",
+      "issue": "汚水タンクの臭い",
       "occurrenceRate": 10,
-      "occurrenceCount": 48,
-      "environmentalFactor": "日本の住環境（夜間の騒音）",
-      "technicalDescription": "本機の全自動ドックは多機能ゆえにサイズが大きく、ゴミ収集時には80dB前後の音が発生します。",
+      "occurrenceCount": 60,
+      "environmentalFactor": "高温多湿な環境、長期間放置",
+      "technicalDescription": "モップ洗浄後の汚水がタンク内に滞留することで雑菌が繁殖し、不快な臭いが発生します。特に夏場は顕著です。",
       "avoidanceStrategies": [
         {
-          "method": "おやすみモードの設定",
+          "method": "毎回の汚水処理とタンク洗浄",
           "effectiveness": "高",
           "technicalLevel": "初級",
-          "technicalRationale": "アプリ設定で「自動収集」を特定の時間帯（夜間等）のみオフにすることで、近隣への騒音トラブルを未然に防ぐことが可能です。",
-          "technicalLevelDescription": "アプリ設定で「自動収集」を特定の時間帯（夜間等）のみオフにすることで、近隣への騒音トラブルを未然に防ぐことが可能です。"
+          "technicalRationale": "使用後に汚水を排出し、タンク内部を水洗い・乾燥させることで雑菌の繁殖を抑制し、臭いの発生を効果的に防ぎます。メーカー推奨の清掃頻度を守りましょう。"
+        },
+        {
+          "method": "専用洗剤の使用",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalRationale": "ロボット掃除機用の除菌・消臭効果のある洗剤を給水タンクに少量加えることで、モップやタンク内の衛生状態を保ち、臭いを軽減できます。"
         }
       ],
-      "preventionTips": "設置には左右0.5m、前方1.5mのクリアランスが推奨されますが、実際は前面のスペースを優先して確保すれば動作は安定します。"
+      "preventionTips": "清掃スケジュールを外出中に設定し、帰宅後に汚水処理を行う習慣をつけましょう。タンクを完全に乾燥させることも重要です。"
     }
   ],
   "topComplaints": [
     {
-      "rank": 1,
-      "title": "水タンクの補給・排水の重さ",
-      "complaint": "水タンクの補給・排水の重さ",
+      "title": "汚水タンクの臭いと手入れ",
+      "percentage": 10,
+      "reviewCount": 60,
+      "description": "自動洗浄後の汚水タンクから不快な臭いが発生しやすく、頻繁な給排水と清掃が必要であるという声が多く聞かれます。",
+      "solution": "汚水タンクは毎回捨てる、または週に1回徹底的に洗浄することで臭いを抑えられます。メーカー公式FAQで清掃方法を確認しましょう。"
+    },
+    {
+      "title": "ステーションでのゴミ吸引音",
       "percentage": 8,
-      "reviewCount": 35,
-      "description": "タンクが4Lと大容量なため、満水時の持ち運びが重く、特に高齢の方や腰に不安がある方には負担になる可能性があります。",
-      "solution": "一度に満杯にせず、半分程度の水で運用するか、ドックの設置場所を水場に近い場所に配置することで、移動の負担を軽減できます。",
-      "solutions": [
-        "満水にしない運用",
-        "水場近くにドック",
-        "持ち上げ導線の短縮"
-      ]
+      "reviewCount": 50,
+      "description": "清掃中の動作音は静かですが、ステーションに戻ってゴミを自動収集する際の音が非常に大きく、近隣への配慮が必要な場合があります。",
+      "solution": "外出中に清掃スケジュールを設定するか、就寝時を避けて稼働させることで、騒音によるストレスを軽減できます。アプリで時間設定が可能です。"
+    },
+    {
+      "title": "段差や障害物での引っかかり・落下",
+      "percentage": 7,
+      "reviewCount": 45,
+      "description": "特定の段差（ベビーゲートなど）や薄いマット、充電ケーブル、家具の脚などで引っかかったり、玄関から落下するケースが報告されています。",
+      "solution": "アプリで進入禁止エリアを設定し、床に物を置かない習慣をつけることが重要です。ケーブル類は束ねるか、家具の下に隠すなどの対策を検討しましょう。"
     }
   ],
   "attributeScores": {
     "petOwner": {
-      "overall": 96,
+      "overall": 90,
       "details": [
         {
-          "field": "ペット毛吸引",
-          "score": 95,
-          "reviewCount": 145,
-          "comment": "毛絡み抑制ブラシの効果が非常に高く、抜け毛の多い季節でもドックの自動収集機能により、メンテナンスフリーで清潔を保てます。"
+          "field": "ペット毛吸引力",
+          "score": 90,
+          "reviewCount": 56,
+          "comment": "ペットの毛を強力に除去し、床を清潔に保つ能力は高く評価されています。ブラシへの毛絡みも少ないです。"
         }
       ]
     },
     "apartment": {
-      "overall": 87,
+      "overall": 79,
       "details": [
         {
-          "field": "静音運用性",
-          "score": 82,
-          "reviewCount": 180,
-          "comment": "静音モードでの清掃は極めて静か。ゴミ収集時間を日中に限定設定すれば、マンション等の集合住宅でも騒音を気にせず導入可能です。"
+          "field": "静音性",
+          "score": 75,
+          "reviewCount": 63,
+          "comment": "清掃中の動作音は静かでマンション環境に適していますが、ゴミ収集時の音は大きく時間帯の配慮が必要です。"
         }
       ]
     },
     "workingProfessional": {
-      "overall": 94,
+      "overall": 80,
       "details": [
         {
-          "field": "アプリ・自動化",
-          "score": 92,
-          "reviewCount": 210,
-          "comment": "外出先からの操作やスケジュール管理が完璧。帰宅時に完璧に拭き上げられた床に出迎えられる体験は、忙しい共働き世帯に最適です。"
+          "field": "アプリ安定性",
+          "score": 85,
+          "reviewCount": 198,
+          "comment": "アプリは直感的でスケジュール管理も容易なため、忙しい共働き世帯の家事時短に貢献します。初期設定は一部で手間取ることも。"
         }
       ]
     },
     "familyHome": {
-      "overall": 93,
+      "overall": 83,
       "details": [
         {
-          "field": "床掃除・水拭き",
-          "score": 96,
-          "reviewCount": 420,
-          "comment": "子供の食べこぼしや足裏の汚れも、加圧水拭きでしっかり除去。大容量タンクで広い間取りも一度に掃除できるパワーが強みです。"
+          "field": "床掃除性能",
+          "score": 95,
+          "reviewCount": 299,
+          "comment": "子供の食べこぼしや汚れも水拭きで効果的に清掃し、床を清潔に保てます。バッテリーは一般的な家庭で十分な性能です。"
         }
       ]
+    },
+    "resaleValue": null,
+    "cta": {
+      "amazon": "https://www.amazon.co.jp/s?k=Eufy+X10+Pro+Omni",
+      "rakuten": "https://search.rakuten.co.jp/search/mall/Eufy+X10+Pro+Omni/",
+      "yahoo": "https://shopping.yahoo.co.jp/search?p=Eufy+X10+Pro+Omni"
     }
   },
-  "resaleValue": {
-    "newPrice": 99990,
-    "usedMinPrice": 58000,
-    "usedMaxPrice": 72000,
-    "retentionRateMin": 58,
-    "retentionRateMax": 72,
-    "period": "12ヶ月後",
-    "comment": "Ankerブランドは信頼性が高く、全自動モデルは中古市場でも需要が集中。定期的な清掃と純正消耗品の使用がリセール価格維持の鍵となります。"
-  },
-  "keywords": [
-    "Eufy X10 Pro Omni",
-    "Anker",
-    "8000Pa",
-    "全自動ドック",
-    "ロボット掃除機"
-  ],
-  "cta": {
-    "amazon": "https://www.amazon.co.jp/s?k=Eufy+X10+Pro+Omni",
-    "rakuten": "https://search.rakuten.co.jp/search/mall/Eufy+X10+Pro+Omni/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=Eufy+X10+Pro+Omni"
-  },
-  "moshimoAffiliateEasyLinkHtmlFile": "moshimo-embed-eufy-x10-pro-omni.html",
-  "manufacturerOfficialAffiliateUrl": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3766176&pid=892603477&vc_url=https%3A%2F%2Fwww.ankerjapan.com%2Fproducts%2Ft2351%3F_pos%3D6%26_fid%3D6afd318d9%26_ss%3Dc%3Fvariant%3D43791514337441",
-  "manufacturerOfficialAffiliateTrackingPixelUrl": "https://ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3766176&pid=892603477"
+  "resaleValue": null,
+  "affiliate": {
+    "moshimo": "<!-- START MoshimoAffiliateEasyLink -->\r\n<script type=\"text/javascript\">\r\n(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;\r\nb[a]=b[a]||function(){arguments.currentScript=c.currentScript\r\n||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};\r\nc.getElementById(a)||(d=c.createElement(f),d.src=g,\r\nd.id=a,e=c.getElementsByTagName(\"body\")[0],e.appendChild(d))})\r\n(window,document,\"script\",\"//dn.msmstatic.com/site/cardlink/bundle.js?20220329\",\"msmaflink\");\r\nmsmaflink({\"n\":\"Anker Eufy (ユーフィ) X10 Pro Omni (ロボット掃除機)【加圧式デュアル回転モップ搭載 自動ゴミ収集ステーション モップ自動洗浄・乾燥機能付き 毛絡み除去システム モップリフト 水拭き】\",\"b\":\"\",\"t\":\"\",\"d\":\"https:\\/\\/thumbnail.image.rakuten.co.jp\",\"c_p\":\"\\/@0_mall\\/anker\\/cabinet\",\"p\":[\"\\/listing\\/tmb\\/t2351\\/t2351_normal.jpg\",\"\\/listing\\/tmb\\/t2351\\/t2351_sub_1.jpg\",\"\\/categorypage\\/13125615\\/700x700.jpg\"],\"u\":{\"u\":\"https:\\/\\/item.rakuten.co.jp\\/anker\\/t2351\\/\",\"t\":\"rakuten\",\"r_v\":\"\"},\"v\":\"2.1\",\"b_l\":[{\"id\":1,\"u_tx\":\"楽天市場で見る\",\"u_bc\":\"#f76956\",\"u_url\":\"https:\\/\\/item.rakuten.co.jp\\/anker\\/t2351\\/\",\"a_id\":5483003,\"p_id\":54,\"pl_id\":27059,\"pc_id\":54,\"s_n\":\"rakuten\",\"u_so\":1},{\"id\":2,\"u_tx\":\"Yahoo!ショッピングで見る\",\"u_bc\":\"#66a7ff\",\"u_url\":\"https:\\/\\/shopping.yahoo.co.jp\\/search?first=1\\u0026p=Anker%20Eufy%20(%E3%83%A6%E3%83%BC%E3%83%95%E3%82%A3)%20X10%20Pro%20Omni%20(%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F)%E3%80%90%E5%8A%A0%E5%9C%A7%E5%BC%8F%E3%83%87%E3%83%A5%E3%82%A2%E3%83%AB%E5%9B%9E%E8%BB%A2%E3%83%A2%E3%83%83%E3%83%97%E6%90%AD%E8%BC%89%20%E8%87%AA%E5%8B%95%E3%82%B4%E3%83%9F%E5%8F%8E%E9%9B%86%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%20%E3%83%A2%E3%83%83%E3%83%97%E8%87%AA%E5%8B%95%E6%B4%97%E6%B5%84%E3%83%BB%E4%B9%BE%E7%87%A5%E6%A9%9F%E8%83%BD%E4%BB%98%E3%81%8D%20%E6%AF%9B%E7%B5%A1%E3%81%BF%E9%99%A4%E5%8E%BB%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%20%E3%83%A2%E3%83%83%E3%83%97%E3%83%AA%E3%83%95%E3%83%88%20%E6%B0%B4%E6%8B%AD%E3%81%8D%E3%80%91\",\"a_id\":5483010,\"p_id\":1225,\"pl_id\":27061,\"pc_id\":1925,\"s_n\":\"yahoo\",\"u_so\":2}],\"eid\":\"vl85z\",\"s\":\"s\"});\r\n</script>\r\n<div id=\"msmaflink-vl85z\">リンク</div>\r\n<!-- MoshimoAffiliateEasyLink END -->",
+    "direct": "<a href=\"//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3766176&pid=892603477&vc_url=https%3A%2F%2Fwww.ankerjapan.com%2Fproducts%2Ft2351%3F_pos%3D6%26_fid%3D6afd318d9%26_ss%3Dc%3Fvariant%3D43791514337441\" rel=\"nofollow\"><img src=\"//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3766176&pid=892603477\" height=\"1\" width=\"0\" border=\"0\">Eufy X10 Pro Omni</a>",
+    "hpPublish": true
+  }
 }
