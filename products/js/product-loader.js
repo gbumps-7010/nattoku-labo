@@ -980,15 +980,61 @@ function injectHtmlWithScripts(container, htmlStr) {
     });
 }
 
-// もしもウィジェットのDOMアンカーID(eid)を振り直す。
-//   同一ページで2回注入するとid重複で2つ目が描画されないため、複製側だけ別eidにする。
-//   報酬トラッキングは a_id / p_id 等に紐づくため、eid変更では一切影響しない。
-function remapMoshimoEid(html, suffix) {
-    if (!html || !suffix) return html;
-    const m = html.match(/"eid":"([^"]+)"/);
-    if (!m) return html;
-    const oldEid = m[1];
-    return html.split(oldEid).join(oldEid + suffix);
+// もしものbundle.js URLをhttps固定化（//... のままだとfile/混在で失敗することがある）
+function normalizeMoshimoEasyLinkHtml(html) {
+    if (typeof html !== 'string') return html;
+    return html.replace(
+        /(["'])\/\/dn\.msmstatic\.com\/site\/cardlink\/bundle\.js/g,
+        '$1https://dn.msmstatic.com/site/cardlink/bundle.js',
+    );
+}
+
+// もしも「かんたんリンク」は配布HTMLが document.currentScript に依存するため、
+//   メイン文書へ動的appendしたscriptでは currentScript=null となり「リンク」プレースホルダのまま
+//   描画されないことがある。iframe(srcdoc)内でmarkupとして解析・実行させて確実に描画する。
+//   各iframeは独立コンテキストなので、2枠並べてもeid(id)衝突は起きない。
+function injectMoshimoIframe(container, html) {
+    if (!container || !html) return;
+    container.innerHTML = '';
+    const safe = normalizeMoshimoEasyLinkHtml(html);
+    const iframe = document.createElement('iframe');
+    iframe.title = '価格・購入先（もしもアフィリエイト）';
+    iframe.setAttribute('scrolling', 'no');
+    iframe.srcdoc =
+        '<!DOCTYPE html><html><head><meta charset="utf-8">' +
+        '<meta name="viewport" content="width=device-width,initial-scale=1">' +
+        '<base target="_blank" rel="noopener noreferrer">' +
+        '<style>html,body{margin:0;padding:0;background:#fff;color:#0f172a;overflow-x:hidden}' +
+        'body{display:flex;flex-direction:column;align-items:center;box-sizing:border-box;min-width:100%}' +
+        '[id^="msmaflink-"]{max-width:100%;margin-left:auto;margin-right:auto}</style></head><body>' +
+        safe +
+        '</body></html>';
+    iframe.style.width = '100%';
+    iframe.style.border = '0';
+    iframe.style.display = 'block';
+    iframe.addEventListener('load', () => {
+        const resize = () => {
+            try {
+                const d = iframe.contentDocument;
+                if (!d || !d.body) return;
+                const mount = d.querySelector('[id^="msmaflink-"]');
+                let h = 0;
+                if (mount) {
+                    const r = mount.getBoundingClientRect();
+                    h = Math.max(Math.ceil(r.height), mount.offsetHeight, mount.scrollHeight);
+                }
+                if (!h) {
+                    h = Math.max(d.documentElement ? d.documentElement.scrollHeight : 0, d.body.scrollHeight);
+                    h = Math.min(h, 900);
+                }
+                if (h > 0) iframe.style.height = Math.ceil(h + 12) + 'px';
+            } catch (_) {}
+        };
+        resize();
+        const id = window.setInterval(resize, 400);
+        window.setTimeout(() => window.clearInterval(id), 10000);
+    });
+    container.appendChild(iframe);
 }
 
 // 公式HPアフィリンク(direct HTML)から「緑の公式CTAボタン」を生成。
@@ -1064,9 +1110,9 @@ function renderAffiliate(data) {
             }
         }
 
-        // もしもかんたんリンク（楽天/Yahoo）
+        // もしもかんたんリンク（楽天/Yahoo）をiframeで確実描画
         if (moshimoEl && hasMoshimo) {
-            injectHtmlWithScripts(moshimoEl, remapMoshimoEid(aff.moshimo, opts.eidSuffix));
+            injectMoshimoIframe(moshimoEl, aff.moshimo);
         }
     }
 
