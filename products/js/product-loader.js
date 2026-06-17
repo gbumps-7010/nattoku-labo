@@ -991,13 +991,43 @@ function remapMoshimoEid(html, suffix) {
     return html.split(oldEid).join(oldEid + suffix);
 }
 
+// 公式HPアフィリンク(direct HTML)から「緑の公式CTAボタン」を生成。
+//   directは A8等の画像リンク or テキストリンク。href を抜き出してボタン化し、
+//   計測ピクセル(1x1 img)があれば維持する（withPixelで重複発火を抑制）。
+function buildOfficialButton(directHtml, withPixel) {
+    if (!directHtml) return null;
+    const hrefM = directHtml.match(/href=["']([^"']+)["']/i);
+    if (!hrefM) return null;
+    const wrap = document.createElement('div');
+    wrap.style.cssText = 'position:relative; margin:0 auto 0.85rem;';
+    const a = document.createElement('a');
+    a.href = hrefM[1];
+    a.target = '_blank';
+    a.rel = 'noopener sponsored nofollow';
+    a.textContent = 'まずはメーカー公式HPで製品情報を確認';
+    a.style.cssText = 'display:block; text-align:center; text-decoration:none; color:#fff; font-weight:800; font-size:1.02rem; line-height:1.4; padding:0.9rem 1.15rem; border-radius:12px; background:linear-gradient(145deg,#0e7490 0%,#0d9488 42%,#059669 100%); box-shadow:0 6px 16px rgba(13,148,136,0.28);';
+    wrap.appendChild(a);
+    if (withPixel) {
+        const pixM = directHtml.match(/<img[^>]+src=["']([^"']+)["'][^>]*(?:width=["']?1\b|height=["']?1\b)/i);
+        if (pixM) {
+            const img = document.createElement('img');
+            img.src = pixM[1];
+            img.width = 1; img.height = 1; img.alt = '';
+            img.setAttribute('aria-hidden', 'true');
+            img.style.cssText = 'position:absolute; width:1px; height:1px; border:none; opacity:0; pointer-events:none;';
+            wrap.appendChild(img);
+        }
+    }
+    return wrap;
+}
+
 function renderAffiliate(data) {
     const aff = data.affiliate;
     const hasMoshimo = aff && aff.moshimo;
     const hasDirect = aff && aff.direct;
 
-    // 1枠分を描画（secId: セクション, moshId/dirId: 各コンテナ, eidSuffix: 複製枠は別eid）
-    function fillSlot(secId, moshId, dirId, eidSuffix) {
+    // 1枠分を描画（青ヘッダー「製品の詳細を確認する」＋緑「公式HP」ボタン＋もしもウィジェット）
+    function fillSlot(secId, moshId, dirId, eidSuffix, withPixel) {
         const section = document.getElementById(secId);
         const moshimoEl = document.getElementById(moshId);
         const directEl = document.getElementById(dirId);
@@ -1007,17 +1037,37 @@ function renderAffiliate(data) {
             return;
         }
         if (section) section.style.display = '';
+
+        // 見出しを青いバー「製品の詳細を確認する」に
+        const h = section ? section.querySelector('h2') : null;
+        if (h) {
+            h.innerHTML = '製品の詳細を確認する';
+            h.style.cssText = 'display:block; text-align:center; color:#fff; font-weight:800; font-size:1.15rem; padding:0.6rem 1rem; border-radius:10px; background:linear-gradient(135deg,#1e3a8a 0%,#2563eb 52%,#0ea5e9 100%); box-shadow:0 6px 16px rgba(37,99,235,0.25); margin-bottom:0.85rem;';
+        }
+
+        // 緑の公式HPボタンをウィジェットの上に挿入
+        if (directEl) { directEl.innerHTML = ''; directEl.style.display = 'none'; }
+        if (hasDirect) {
+            const btn = buildOfficialButton(aff.direct, withPixel);
+            if (btn) {
+                if (moshimoEl && moshimoEl.parentNode) {
+                    moshimoEl.parentNode.insertBefore(btn, moshimoEl);
+                } else if (directEl) {
+                    directEl.style.display = '';
+                    directEl.appendChild(btn);
+                }
+            }
+        }
+
+        // もしもかんたんリンク（楽天/Yahoo）
         if (moshimoEl && hasMoshimo) {
             injectHtmlWithScripts(moshimoEl, remapMoshimoEid(aff.moshimo, eidSuffix));
         }
-        if (directEl && hasDirect) {
-            injectHtmlWithScripts(directEl, aff.direct);
-        }
     }
 
-    fillSlot('affiliate-cta', 'affiliate-moshimo', 'affiliate-direct', '');
-    fillSlot('affiliate-cta-2', 'affiliate-moshimo-2', 'affiliate-direct-2', 'b');
-    console.log('✅ アフィリエイトCTA描画（上部＋フッター上）');
+    fillSlot('affiliate-cta', 'affiliate-moshimo', 'affiliate-direct', '', true);
+    fillSlot('affiliate-cta-2', 'affiliate-moshimo-2', 'affiliate-direct-2', 'b', false);
+    console.log('✅ アフィリエイトCTA描画（青ヘッダー＋公式HPボタン＋もしもウィジェット）');
 }
 
 // 13. メイン初期化
