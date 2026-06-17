@@ -994,7 +994,7 @@ function remapMoshimoEid(html, suffix) {
 // 公式HPアフィリンク(direct HTML)から「緑の公式CTAボタン」を生成。
 //   directは A8等の画像リンク or テキストリンク。href を抜き出してボタン化し、
 //   計測ピクセル(1x1 img)があれば維持する（withPixelで重複発火を抑制）。
-function buildOfficialButton(directHtml, withPixel) {
+function buildOfficialButton(directHtml, withPixel, label) {
     if (!directHtml) return null;
     const hrefM = directHtml.match(/href=["']([^"']+)["']/i);
     if (!hrefM) return null;
@@ -1004,7 +1004,7 @@ function buildOfficialButton(directHtml, withPixel) {
     a.href = hrefM[1];
     a.target = '_blank';
     a.rel = 'noopener sponsored nofollow';
-    a.textContent = 'まずはメーカー公式HPで製品情報を確認';
+    a.textContent = label || 'まずはメーカー公式HPで製品情報を確認';
     a.style.cssText = 'display:block; text-align:center; text-decoration:none; color:#fff; font-weight:800; font-size:1.02rem; line-height:1.4; padding:0.9rem 1.15rem; border-radius:12px; background:linear-gradient(145deg,#0e7490 0%,#0d9488 42%,#059669 100%); box-shadow:0 6px 16px rgba(13,148,136,0.28);';
     wrap.appendChild(a);
     if (withPixel) {
@@ -1026,11 +1026,11 @@ function renderAffiliate(data) {
     const hasMoshimo = aff && aff.moshimo;
     const hasDirect = aff && aff.direct;
 
-    // 1枠分を描画（青ヘッダー「製品の詳細を確認する」＋緑「公式HP」ボタン＋もしもウィジェット）
-    function fillSlot(secId, moshId, dirId, eidSuffix, withPixel) {
-        const section = document.getElementById(secId);
-        const moshimoEl = document.getElementById(moshId);
-        const directEl = document.getElementById(dirId);
+    // 1枠分を描画（見出し＋緑「公式HP」ボタン＋もしもウィジェット）
+    function fillSlot(opts) {
+        const section = document.getElementById(opts.secId);
+        const moshimoEl = document.getElementById(opts.moshId);
+        const directEl = document.getElementById(opts.dirId);
         if (!section && !moshimoEl && !directEl) return;
         if (!hasMoshimo && !hasDirect) {
             if (section) section.style.display = 'none';
@@ -1038,17 +1038,22 @@ function renderAffiliate(data) {
         }
         if (section) section.style.display = '';
 
-        // 見出しを青いバー「製品の詳細を確認する」に
+        // 見出し（上部=青バー / フッター上=ネイビーのセクション見出し）
         const h = section ? section.querySelector('h2') : null;
         if (h) {
-            h.innerHTML = '製品の詳細を確認する';
-            h.style.cssText = 'display:block; text-align:center; color:#fff; font-weight:800; font-size:1.15rem; padding:0.6rem 1rem; border-radius:10px; background:linear-gradient(135deg,#1e3a8a 0%,#2563eb 52%,#0ea5e9 100%); box-shadow:0 6px 16px rgba(37,99,235,0.25); margin-bottom:0.85rem;';
+            if (opts.headerStyle === 'title') {
+                h.innerHTML = (opts.headerIcon ? `<i class="fas ${opts.headerIcon}" style="color:#1e3a8a; margin-right:0.5rem;"></i>` : '') + opts.headerText;
+                h.style.cssText = 'display:block; text-align:center; color:#0f172a; font-weight:800; font-size:1.6rem; margin:0 0 1rem;';
+            } else {
+                h.innerHTML = opts.headerText;
+                h.style.cssText = 'display:block; text-align:center; color:#fff; font-weight:800; font-size:1.15rem; padding:0.6rem 1rem; border-radius:10px; background:linear-gradient(135deg,#1e3a8a 0%,#2563eb 52%,#0ea5e9 100%); box-shadow:0 6px 16px rgba(37,99,235,0.25); margin-bottom:0.85rem;';
+            }
         }
 
         // 緑の公式HPボタンをウィジェットの上に挿入
         if (directEl) { directEl.innerHTML = ''; directEl.style.display = 'none'; }
         if (hasDirect) {
-            const btn = buildOfficialButton(aff.direct, withPixel);
+            const btn = buildOfficialButton(aff.direct, opts.withPixel, opts.btnLabel);
             if (btn) {
                 if (moshimoEl && moshimoEl.parentNode) {
                     moshimoEl.parentNode.insertBefore(btn, moshimoEl);
@@ -1061,13 +1066,23 @@ function renderAffiliate(data) {
 
         // もしもかんたんリンク（楽天/Yahoo）
         if (moshimoEl && hasMoshimo) {
-            injectHtmlWithScripts(moshimoEl, remapMoshimoEid(aff.moshimo, eidSuffix));
+            injectHtmlWithScripts(moshimoEl, remapMoshimoEid(aff.moshimo, opts.eidSuffix));
         }
     }
 
-    fillSlot('affiliate-cta', 'affiliate-moshimo', 'affiliate-direct', '', true);
-    fillSlot('affiliate-cta-2', 'affiliate-moshimo-2', 'affiliate-direct-2', 'b', false);
-    console.log('✅ アフィリエイトCTA描画（青ヘッダー＋公式HPボタン＋もしもウィジェット）');
+    fillSlot({
+        secId: 'affiliate-cta', moshId: 'affiliate-moshimo', dirId: 'affiliate-direct',
+        eidSuffix: '', withPixel: true,
+        headerStyle: 'bar', headerText: '製品の詳細を確認する',
+        btnLabel: 'まずはメーカー公式HPで製品情報を確認'
+    });
+    fillSlot({
+        secId: 'affiliate-cta-2', moshId: 'affiliate-moshimo-2', dirId: 'affiliate-direct-2',
+        eidSuffix: 'b', withPixel: false,
+        headerStyle: 'title', headerText: '今の価格を確認する', headerIcon: 'fa-yen-sign',
+        btnLabel: 'まずはメーカー公式HPで価格を確認'
+    });
+    console.log('✅ アフィリエイトCTA描画（上部：詳細／フッター上：価格）');
 }
 
 // 13. メイン初期化
