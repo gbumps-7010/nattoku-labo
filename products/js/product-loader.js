@@ -980,27 +980,44 @@ function injectHtmlWithScripts(container, htmlStr) {
     });
 }
 
+// もしもウィジェットのDOMアンカーID(eid)を振り直す。
+//   同一ページで2回注入するとid重複で2つ目が描画されないため、複製側だけ別eidにする。
+//   報酬トラッキングは a_id / p_id 等に紐づくため、eid変更では一切影響しない。
+function remapMoshimoEid(html, suffix) {
+    if (!html || !suffix) return html;
+    const m = html.match(/"eid":"([^"]+)"/);
+    if (!m) return html;
+    const oldEid = m[1];
+    return html.split(oldEid).join(oldEid + suffix);
+}
+
 function renderAffiliate(data) {
     const aff = data.affiliate;
-    const section = document.getElementById('affiliate-cta');
-    const moshimoEl = document.getElementById('affiliate-moshimo');
-    const directEl = document.getElementById('affiliate-direct');
-
     const hasMoshimo = aff && aff.moshimo;
     const hasDirect = aff && aff.direct;
 
-    if (!hasMoshimo && !hasDirect) {
-        if (section) section.style.display = 'none';
-        return;
+    // 1枠分を描画（secId: セクション, moshId/dirId: 各コンテナ, eidSuffix: 複製枠は別eid）
+    function fillSlot(secId, moshId, dirId, eidSuffix) {
+        const section = document.getElementById(secId);
+        const moshimoEl = document.getElementById(moshId);
+        const directEl = document.getElementById(dirId);
+        if (!section && !moshimoEl && !directEl) return;
+        if (!hasMoshimo && !hasDirect) {
+            if (section) section.style.display = 'none';
+            return;
+        }
+        if (section) section.style.display = '';
+        if (moshimoEl && hasMoshimo) {
+            injectHtmlWithScripts(moshimoEl, remapMoshimoEid(aff.moshimo, eidSuffix));
+        }
+        if (directEl && hasDirect) {
+            injectHtmlWithScripts(directEl, aff.direct);
+        }
     }
-    if (moshimoEl && hasMoshimo) {
-        injectHtmlWithScripts(moshimoEl, aff.moshimo);
-        console.log('✅ もしもかんたんリンク注入');
-    }
-    if (directEl && hasDirect) {
-        injectHtmlWithScripts(directEl, aff.direct);
-        console.log('✅ 直販リンク注入');
-    }
+
+    fillSlot('affiliate-cta', 'affiliate-moshimo', 'affiliate-direct', '');
+    fillSlot('affiliate-cta-2', 'affiliate-moshimo-2', 'affiliate-direct-2', 'b');
+    console.log('✅ アフィリエイトCTA描画（上部＋フッター上）');
 }
 
 // 13. メイン初期化
