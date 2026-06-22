@@ -703,31 +703,35 @@ function updateTopComplaints(data) {
             // solutionsが配列の場合と文字列の場合に対応
             let solutionHTML = '';
             if (Array.isArray(item.solutions)) {
-                solutionHTML = item.solutions.map(s => `<li>${s}</li>`).join('');
-            } else if (item.solution) {
+                solutionHTML = item.solutions.filter(s => String(s).trim()).map(s => `<li>${s}</li>`).join('');
+            } else if (item.solution && String(item.solution).trim()) {
                 const solutions = item.solution.split(/[。\n]/).filter(s => s.trim().length > 0);
                 solutionHTML = solutions.map(s => `<li>${s.trim()}。</li>`).join('');
             }
             
             // reviewCountとcountの両方に対応
             const reviewCount = item.reviewCount || item.count || 0;
+            const pct = item.percentage != null ? item.percentage : 0;
             
             // titleとcomplaintの両方に対応
             const title = item.complaint || item.title || 'データなし';
             
             return `
             <div class="${cardClass}">
-                <span class="problem-rank">TOP ${index + 1}</span>
+                <div class="complaint-stats-hero" style="display:flex;align-items:baseline;gap:0.65rem;margin-bottom:0.85rem;padding:0.75rem 1rem;background:linear-gradient(135deg,#fef2f2 0%,#fff1f2 100%);border:2px solid #fecaca;border-radius:10px;">
+                    <span style="font-size:2rem;font-weight:900;color:#dc2626;line-height:1;">${pct}%</span>
+                    <span style="font-size:1.05rem;font-weight:700;color:#991b1b;">（${reviewCount}件）</span>
+                </div>
                 ${importanceBadge}
                 <h3 class="problem-title">${title}</h3>
-                <p class="problem-percentage">${item.percentage}% (${reviewCount}件)</p>
                 ${item.details || item.description ? `<p class="problem-description">${item.details || item.description}</p>` : ''}
+                ${solutionHTML ? `
                 <div class="solutions">
                     <h4 style="font-weight: 700; margin-bottom: 0.75rem;">💡 対策</h4>
                     <ul style="margin: 0; padding-left: 1.5rem; line-height: 1.8;">
                         ${solutionHTML}
                     </ul>
-                </div>
+                </div>` : ''}
             </div>
         `}).join('');
         container.innerHTML = html;
