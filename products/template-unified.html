@@ -945,7 +945,7 @@
                         <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem; color: var(--success-color); display: flex; align-items: center; gap: 0.5rem;">
                             <i class="fas fa-thumbs-up"></i> 高評価キーワード
                         </h3>
-                        <div style="height: 400px; position: relative;">
+                        <div style="height: 480px; position: relative;">
                             <canvas id="positiveKeywordsChart"></canvas>
                         </div>
                     </div>
@@ -953,7 +953,7 @@
                         <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem; color: var(--danger-color); display: flex; align-items: center; gap: 0.5rem;">
                             <i class="fas fa-thumbs-down"></i> 低評価キーワード
                         </h3>
-                        <div style="height: 400px; position: relative;">
+                        <div style="height: 480px; position: relative;">
                             <canvas id="negativeKeywordsChart"></canvas>
                         </div>
                     </div>
@@ -1289,7 +1289,7 @@
                 if (positiveCanvas && data.reviewKeywords.positive) {
                     try {
                         const ctx = positiveCanvas.getContext('2d');
-                        const topPositive = data.reviewKeywords.positive.slice(0, 8);
+                        const topPositive = data.reviewKeywords.positive.slice(0, 10);
                         
                         new Chart(ctx, {
                             type: 'bar',
@@ -1345,7 +1345,7 @@
                 if (negativeCanvas && data.reviewKeywords.negative) {
                     try {
                         const ctx = negativeCanvas.getContext('2d');
-                        const topNegative = data.reviewKeywords.negative.slice(0, 7);
+                        const topNegative = data.reviewKeywords.negative.slice(0, 10);
                         
                         new Chart(ctx, {
                             type: 'bar',

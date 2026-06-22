@@ -125,7 +125,7 @@ function createNavigationBar() {
                         ${PRICE_RANGES.filter(r => r.label !== 'すべて').map(r => {
                             const count = ALL_PRODUCTS.filter(p => p.price >= r.min && p.price < r.max).length;
                             return `
-                                <div class="dropdown-item price-filter" data-min="${r.min}" data-max="${r.max}">
+                                <div class="dropdown-item price-filter" data-min="${r.min}" data-max="${r.max}" data-label="${r.label}">
                                     <span class="price-label">${r.label}</span>
                                     <span class="product-count">(${count}製品)</span>
                                 </div>
@@ -183,20 +183,28 @@ function setupNavigationEvents() {
         });
     });
     
-    // メーカーフィルター
+    // メーカーフィルター → トップページの製品一覧へ
     document.querySelectorAll('.manufacturer-filter').forEach(item => {
         item.addEventListener('click', () => {
             const manufacturer = item.dataset.manufacturer;
-            window.location.href = `../?manufacturer=${encodeURIComponent(manufacturer)}`;
+            const url = new URL('../index.html', window.location.href);
+            url.searchParams.set('manufacturer', manufacturer);
+            window.location.href = url.pathname + url.search;
         });
     });
     
-    // 価格帯フィルター
+    // 価格帯フィルター → トップページの製品一覧へ
     document.querySelectorAll('.price-filter').forEach(item => {
         item.addEventListener('click', () => {
-            const min = item.dataset.min;
-            const max = item.dataset.max;
-            window.location.href = `../index.html?priceMin=${min}&priceMax=${max}`;
+            const url = new URL('../index.html', window.location.href);
+            const label = item.dataset.label;
+            if (label) {
+                url.searchParams.set('price', label);
+            } else {
+                url.searchParams.set('priceMin', item.dataset.min);
+                url.searchParams.set('priceMax', item.dataset.max);
+            }
+            window.location.href = url.pathname + url.search;
         });
     });
     

@@ -73,16 +73,34 @@
     "methodology": "手動での掃除に毎日20分かかると仮定し、ロボット掃除機による自動化で節約できる時間を算出しました。"
   },
   "operationalCost": {
-    "daily": 21,
+    "daily": 43,
     "dailyNote": "消耗品の実質的な日割りコスト",
-    "monthly": 625,
-    "annual": 7500,
+    "monthly": 1300,
+    "annual": 15600,
     "consumables": [
       {
         "item": "モップパッド",
         "replacementFrequency": "4ヶ月ごと",
         "unitCost": 2500,
         "annualCost": 7500
+      },
+      {
+        "item": "サイドブラシ",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 800,
+        "annualCost": 1600
+      },
+      {
+        "item": "メインブラシ",
+        "replacementFrequency": "1年ごと",
+        "unitCost": 2500,
+        "annualCost": 2500
+      },
+      {
+        "item": "フィルター",
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 1000,
+        "annualCost": 4000
       }
     ]
   },

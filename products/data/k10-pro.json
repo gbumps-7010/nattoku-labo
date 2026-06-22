@@ -195,6 +195,10 @@
         "count": 72
       },
       {
+        "keyword": "マッピング・ルートが賢い",
+        "count": 55
+      },
+      {
         "keyword": "静かで快適",
         "count": 46
       },
@@ -205,6 +209,22 @@
       {
         "keyword": "家事が楽になった",
         "count": 28
+      },
+      {
+        "keyword": "水拭き・拭き掃除が良い",
+        "count": 27
+      },
+      {
+        "keyword": "故障・トラブルが少ない",
+        "count": 12
+      },
+      {
+        "keyword": "綺麗になる",
+        "count": 8
+      },
+      {
+        "keyword": "床がサラサラ・ピカピカ",
+        "count": 3
       }
     ],
     "negative": [
@@ -227,6 +247,18 @@
       {
         "keyword": "コードを巻き込む",
         "count": 4
+      },
+      {
+        "keyword": "アプリ・Wi-Fi接続が難しい",
+        "count": 4
+      },
+      {
+        "keyword": "期待を下回る点",
+        "count": 3
+      },
+      {
+        "keyword": "価格・コストが高い",
+        "count": 1
       }
     ]
   },

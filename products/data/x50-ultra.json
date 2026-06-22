@@ -194,8 +194,16 @@
   "reviewKeywords": {
     "positive": [
       {
+        "keyword": "水拭き・拭き掃除が良い",
+        "count": 7
+      },
+      {
         "keyword": "吸引力が高い",
         "count": 7
+      },
+      {
+        "keyword": "マッピング・ルートが賢い",
+        "count": 5
       },
       {
         "keyword": "使いやすい・便利",
@@ -211,6 +219,10 @@
       },
       {
         "keyword": "満足・買ってよかった",
+        "count": 1
+      },
+      {
+        "keyword": "家事が楽になった",
         "count": 1
       }
     ],

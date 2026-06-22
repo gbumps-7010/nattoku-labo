@@ -73,16 +73,34 @@
     "methodology": "ロボット掃除機による自動清掃で、毎日約20分の手動掃除時間を削減できると仮定して算出。"
   },
   "operationalCost": {
-    "daily": 17,
+    "daily": 46,
     "dailyNote": "消耗品の実質的な日割りコスト",
-    "monthly": 500,
-    "annual": 6000,
+    "monthly": 1400,
+    "annual": 16800,
     "consumables": [
       {
         "item": "ダストバッグ",
         "replacementFrequency": "3ヶ月ごと",
         "unitCost": 1500,
         "annualCost": 6000
+      },
+      {
+        "item": "モップパッド",
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 1200,
+        "annualCost": 4800
+      },
+      {
+        "item": "サイドブラシ",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 1000,
+        "annualCost": 2000
+      },
+      {
+        "item": "フィルター",
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 1000,
+        "annualCost": 4000
       }
     ]
   },
@@ -169,6 +187,10 @@
   "reviewKeywords": {
     "positive": [
       {
+        "keyword": "水拭き・拭き掃除が良い",
+        "count": 24
+      },
+      {
         "keyword": "満足・買ってよかった",
         "count": 13
       },
@@ -185,8 +207,24 @@
         "count": 5
       },
       {
+        "keyword": "マッピング・ルートが賢い",
+        "count": 4
+      },
+      {
         "keyword": "吸引力が高い",
         "count": 4
+      },
+      {
+        "keyword": "使いやすい・便利",
+        "count": 3
+      },
+      {
+        "keyword": "静かで快適",
+        "count": 2
+      },
+      {
+        "keyword": "故障・トラブルが少ない",
+        "count": 2
       }
     ],
     "negative": [

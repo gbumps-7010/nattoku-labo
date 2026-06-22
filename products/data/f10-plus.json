@@ -73,16 +73,40 @@
     "methodology": "ロボット掃除機が毎日19分稼働することで、手動掃除にかかる時間を節約できると仮定して算出。"
   },
   "operationalCost": {
-    "daily": 82,
+    "daily": 59,
     "dailyNote": "消耗品の実質的な日割りコスト",
-    "monthly": 2500,
-    "annual": 30000,
+    "monthly": 1785,
+    "annual": 21420,
     "consumables": [
       {
-        "item": "消耗品セット（ダストバッグ、ブラシ、フィルター、モップパッド）",
-        "replacementFrequency": "3〜6ヶ月ごと",
-        "unitCost": 3500,
-        "annualCost": 14000
+        "item": "ダストバッグ",
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 1980,
+        "annualCost": 7920
+      },
+      {
+        "item": "モップパッド",
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 1500,
+        "annualCost": 6000
+      },
+      {
+        "item": "サイドブラシ",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 1000,
+        "annualCost": 2000
+      },
+      {
+        "item": "メインブラシ",
+        "replacementFrequency": "1年ごと",
+        "unitCost": 2500,
+        "annualCost": 2500
+      },
+      {
+        "item": "フィルター",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 1500,
+        "annualCost": 3000
       }
     ]
   },
@@ -181,11 +205,19 @@
         "count": 3
       },
       {
+        "keyword": "水拭き・拭き掃除が良い",
+        "count": 2
+      },
+      {
+        "keyword": "使いやすい・便利",
+        "count": 1
+      },
+      {
         "keyword": "床がサラサラ・ピカピカ",
         "count": 1
       },
       {
-        "keyword": "使いやすい・便利",
+        "keyword": "綺麗になる",
         "count": 1
       }
     ],

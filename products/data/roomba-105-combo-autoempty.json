@@ -181,6 +181,10 @@
   "reviewKeywords": {
     "positive": [
       {
+        "keyword": "水拭き・拭き掃除が良い",
+        "count": 104
+      },
+      {
         "keyword": "満足・買ってよかった",
         "count": 80
       },
@@ -197,8 +201,24 @@
         "count": 33
       },
       {
+        "keyword": "マッピング・ルートが賢い",
+        "count": 30
+      },
+      {
         "keyword": "吸引力が高い",
         "count": 17
+      },
+      {
+        "keyword": "家事が楽になった",
+        "count": 12
+      },
+      {
+        "keyword": "綺麗になる",
+        "count": 10
+      },
+      {
+        "keyword": "自動ゴミ収集が便利",
+        "count": 3
       }
     ],
     "negative": [
@@ -211,6 +231,10 @@
         "count": 11
       },
       {
+        "keyword": "期待を下回る点",
+        "count": 8
+      },
+      {
         "keyword": "段差・家具で引っかかる",
         "count": 5
       },
@@ -221,6 +245,18 @@
       {
         "keyword": "動作音が気になる",
         "count": 4
+      },
+      {
+        "keyword": "コードを巻き込む",
+        "count": 3
+      },
+      {
+        "keyword": "メンテナンスが面倒",
+        "count": 1
+      },
+      {
+        "keyword": "価格・コストが高い",
+        "count": 1
       }
     ]
   },

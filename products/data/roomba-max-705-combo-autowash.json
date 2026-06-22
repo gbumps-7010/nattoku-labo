@@ -73,10 +73,10 @@
     "methodology": "ロボット掃除機による日常清掃の自動化で、手動掃除にかかる時間を年間約116時間削減できます。"
   },
   "operationalCost": {
-    "daily": 82,
+    "daily": 110,
     "dailyNote": "消耗品の実質的な日割りコスト",
-    "monthly": 2500,
-    "annual": 30000,
+    "monthly": 3333,
+    "annual": 40000,
     "consumables": [
       {
         "item": "水拭きモップ",
@@ -89,6 +89,12 @@
         "replacementFrequency": "3ヶ月ごと",
         "unitCost": 4000,
         "annualCost": 16000
+      },
+      {
+        "item": "自動ゴミ収集機用紙パック",
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 2500,
+        "annualCost": 10000
       }
     ]
   },
@@ -175,8 +181,16 @@
   "reviewKeywords": {
     "positive": [
       {
+        "keyword": "水拭き・拭き掃除が良い",
+        "count": 69
+      },
+      {
         "keyword": "満足・買ってよかった",
         "count": 23
+      },
+      {
+        "keyword": "マッピング・ルートが賢い",
+        "count": 18
       },
       {
         "keyword": "使いやすい・便利",
@@ -193,6 +207,18 @@
       {
         "keyword": "家事が楽になった",
         "count": 7
+      },
+      {
+        "keyword": "静かで快適",
+        "count": 6
+      },
+      {
+        "keyword": "綺麗になる",
+        "count": 5
+      },
+      {
+        "keyword": "故障・トラブルが少ない",
+        "count": 3
       }
     ],
     "negative": [

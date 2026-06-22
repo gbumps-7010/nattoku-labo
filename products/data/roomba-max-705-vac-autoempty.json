@@ -75,8 +75,8 @@
   "operationalCost": {
     "daily": 42,
     "dailyNote": "消耗品（ゴミ袋、フィルター、ブラシ）の実質的な日割りコスト",
-    "monthly": 1300,
-    "annual": 15500,
+    "monthly": 1289,
+    "annual": 15470,
     "consumables": [
       {
         "item": "自動ゴミ収集機用紙パック",
@@ -189,6 +189,14 @@
         "count": 49
       },
       {
+        "keyword": "マッピング・ルートが賢い",
+        "count": 42
+      },
+      {
+        "keyword": "水拭き・拭き掃除が良い",
+        "count": 21
+      },
+      {
         "keyword": "静かで快適",
         "count": 18
       },
@@ -199,12 +207,28 @@
       {
         "keyword": "綺麗になる",
         "count": 11
+      },
+      {
+        "keyword": "家事が楽になった",
+        "count": 9
+      },
+      {
+        "keyword": "床がサラサラ・ピカピカ",
+        "count": 5
+      },
+      {
+        "keyword": "故障・トラブルが少ない",
+        "count": 4
       }
     ],
     "negative": [
       {
         "keyword": "故障・不具合",
         "count": 27
+      },
+      {
+        "keyword": "期待を下回る点",
+        "count": 6
       },
       {
         "keyword": "段差・家具で引っかかる",
@@ -221,6 +245,10 @@
       {
         "keyword": "止まってしまう",
         "count": 4
+      },
+      {
+        "keyword": "アプリ・Wi-Fi接続が難しい",
+        "count": 3
       }
     ]
   },

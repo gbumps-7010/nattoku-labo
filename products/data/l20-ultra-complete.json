@@ -73,16 +73,40 @@
     "methodology": "ユーザーの「掃除が楽になった」「時間に余裕ができた」という声に基づき、1日あたり19分の時間節約と算出しました。"
   },
   "operationalCost": {
-    "daily": 82,
+    "daily": 91,
     "dailyNote": "消耗品の実質的な日割りコスト",
-    "monthly": 2500,
-    "annual": 30000,
+    "monthly": 2773,
+    "annual": 33280,
     "consumables": [
       {
-        "item": "消耗品セット（モップパッド、ブラシ、ダストバッグ、洗剤など）",
-        "replacementFrequency": "年間1回〜数回",
-        "unitCost": 30000,
-        "annualCost": 30000
+        "item": "ダストバッグ",
+        "replacementFrequency": "2ヶ月ごと",
+        "unitCost": 1980,
+        "annualCost": 11880
+      },
+      {
+        "item": "モップパッド",
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 2000,
+        "annualCost": 8000
+      },
+      {
+        "item": "サイドブラシ",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 1200,
+        "annualCost": 2400
+      },
+      {
+        "item": "メインブラシ",
+        "replacementFrequency": "1年ごと",
+        "unitCost": 3000,
+        "annualCost": 3000
+      },
+      {
+        "item": "洗浄液",
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 2000,
+        "annualCost": 8000
       }
     ]
   },
@@ -169,8 +193,16 @@
   "reviewKeywords": {
     "positive": [
       {
+        "keyword": "水拭き・拭き掃除が良い",
+        "count": 13
+      },
+      {
         "keyword": "満足・買ってよかった",
         "count": 10
+      },
+      {
+        "keyword": "マッピング・ルートが賢い",
+        "count": 8
       },
       {
         "keyword": "床がサラサラ・ピカピカ",
@@ -187,6 +219,18 @@
       {
         "keyword": "使いやすい・便利",
         "count": 4
+      },
+      {
+        "keyword": "綺麗になる",
+        "count": 3
+      },
+      {
+        "keyword": "家事が楽になった",
+        "count": 2
+      },
+      {
+        "keyword": "故障・トラブルが少ない",
+        "count": 1
       }
     ],
     "negative": [
@@ -208,6 +252,10 @@
       },
       {
         "keyword": "アプリ・Wi-Fi接続が難しい",
+        "count": 1
+      },
+      {
+        "keyword": "段差・家具で引っかかる",
         "count": 1
       }
     ]

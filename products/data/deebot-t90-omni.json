@@ -73,11 +73,17 @@
     "methodology": "一般的な家庭での清掃時間（吸引・水拭き）をロボット掃除機が代替することで節約される時間を算出。毎日約19分の清掃時間を想定し、年間で換算しています。"
   },
   "operationalCost": {
-    "daily": 47,
+    "daily": 77,
     "dailyNote": "フィルターやモップパッドなどの消耗品交換費用を日割りで算出しています。使用頻度により変動します。",
-    "monthly": 1420,
-    "annual": 17000,
+    "monthly": 2333,
+    "annual": 28000,
     "consumables": [
+      {
+        "item": "ダストバッグ",
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 2000,
+        "annualCost": 8000
+      },
       {
         "item": "フィルター",
         "replacementFrequency": "3ヶ月ごと",
@@ -89,6 +95,18 @@
         "replacementFrequency": "2ヶ月ごと",
         "unitCost": 1500,
         "annualCost": 9000
+      },
+      {
+        "item": "サイドブラシ",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 1100,
+        "annualCost": 2200
+      },
+      {
+        "item": "メインブラシ",
+        "replacementFrequency": "1年ごと",
+        "unitCost": 2800,
+        "annualCost": 2800
       }
     ]
   },
@@ -183,6 +201,14 @@
         "count": 18
       },
       {
+        "keyword": "水拭き・拭き掃除が良い",
+        "count": 13
+      },
+      {
+        "keyword": "マッピング・ルートが賢い",
+        "count": 8
+      },
+      {
         "keyword": "綺麗になる",
         "count": 6
       },
@@ -193,12 +219,24 @@
       {
         "keyword": "床がサラサラ・ピカピカ",
         "count": 1
+      },
+      {
+        "keyword": "使いやすい・便利",
+        "count": 1
+      },
+      {
+        "keyword": "家事が楽になった",
+        "count": 1
       }
     ],
     "negative": [
       {
         "keyword": "故障・不具合",
         "count": 4
+      },
+      {
+        "keyword": "期待を下回る点",
+        "count": 1
       },
       {
         "keyword": "止まってしまう",

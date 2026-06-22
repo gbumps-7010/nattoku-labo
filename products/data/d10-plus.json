@@ -80,15 +80,27 @@
     "consumables": [
       {
         "item": "ダストバッグ",
-        "replacementFrequency": "約2ヶ月ごと",
+        "replacementFrequency": "2ヶ月ごと",
         "unitCost": 1980,
         "annualCost": 11880
       },
       {
-        "item": "ブラシ・フィルター・モップパッド",
-        "replacementFrequency": "約1年ごと",
-        "unitCost": 5000,
-        "annualCost": 5000
+        "item": "サイドブラシ",
+        "replacementFrequency": "1年ごと",
+        "unitCost": 2000,
+        "annualCost": 2000
+      },
+      {
+        "item": "フィルター",
+        "replacementFrequency": "1年ごと",
+        "unitCost": 1500,
+        "annualCost": 1500
+      },
+      {
+        "item": "モップパッド",
+        "replacementFrequency": "1年ごと",
+        "unitCost": 1500,
+        "annualCost": 1500
       }
     ]
   },
@@ -191,7 +203,23 @@
         "count": 6
       },
       {
+        "keyword": "水拭き・拭き掃除が良い",
+        "count": 4
+      },
+      {
+        "keyword": "マッピング・ルートが賢い",
+        "count": 3
+      },
+      {
+        "keyword": "自動ゴミ収集が便利",
+        "count": 2
+      },
+      {
         "keyword": "家事が楽になった",
+        "count": 1
+      },
+      {
+        "keyword": "綺麗になる",
         "count": 1
       }
     ],

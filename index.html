@@ -970,6 +970,27 @@
             });
         }
 
+        /** ナビバー等からの ?manufacturer= / ?price= / ?priceMin=&priceMax= を反映 */
+        function applyFiltersFromUrl() {
+            const params = new URLSearchParams(window.location.search);
+
+            const manufacturer = params.get('manufacturer');
+            if (manufacturer && manufacturers.includes(manufacturer)) {
+                manufacturerFilter.value = manufacturer;
+            }
+
+            const priceLabel = params.get('price');
+            if (priceLabel && priceRanges.some(r => r.label === priceLabel)) {
+                priceFilter.value = priceLabel;
+            } else if (params.has('priceMin') && params.has('priceMax')) {
+                const min = Number(params.get('priceMin'));
+                const maxRaw = params.get('priceMax');
+                const max = maxRaw === 'Infinity' ? Infinity : Number(maxRaw);
+                const range = priceRanges.find(r => r.min === min && r.max === max);
+                if (range) priceFilter.value = range.label;
+            }
+        }
+
         // Generate stars HTML
         function generateStars(rating) {
             let starsHtml = '';
@@ -1117,6 +1138,7 @@
                 productsData = [];
             }
             initializeFilters();
+            applyFiltersFromUrl();
             filterProducts();
         }
         if (document.readyState === 'loading') {

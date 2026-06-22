@@ -73,16 +73,34 @@
     "methodology": "ロボット掃除機による清掃・水拭き作業の自動化で、1日あたり約19分の家事時間を節約。年間で約114時間の自由な時間を創出します。"
   },
   "operationalCost": {
-    "daily": 38,
+    "daily": 104,
     "dailyNote": "消耗品の実質的な日割りコスト（主に専用洗浄液）",
-    "monthly": 1167,
-    "annual": 14000,
+    "monthly": 3167,
+    "annual": 38000,
     "consumables": [
+      {
+        "item": "ダストバッグ",
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 2000,
+        "annualCost": 8000
+      },
       {
         "item": "専用洗浄液",
         "replacementFrequency": "3ヶ月ごと",
         "unitCost": 3500,
         "annualCost": 14000
+      },
+      {
+        "item": "サイドブラシ・ローラーブラシ",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 5000,
+        "annualCost": 10000
+      },
+      {
+        "item": "モップパッド",
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 1500,
+        "annualCost": 6000
       }
     ]
   },
@@ -173,6 +191,10 @@
         "count": 36
       },
       {
+        "keyword": "水拭き・拭き掃除が良い",
+        "count": 24
+      },
+      {
         "keyword": "静かで快適",
         "count": 14
       },
@@ -187,6 +209,22 @@
       {
         "keyword": "綺麗になる",
         "count": 8
+      },
+      {
+        "keyword": "マッピング・ルートが賢い",
+        "count": 7
+      },
+      {
+        "keyword": "家事が楽になった",
+        "count": 5
+      },
+      {
+        "keyword": "床がサラサラ・ピカピカ",
+        "count": 5
+      },
+      {
+        "keyword": "故障・トラブルが少ない",
+        "count": 2
       }
     ],
     "negative": [

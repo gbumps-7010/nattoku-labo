@@ -185,6 +185,10 @@
         "count": 11
       },
       {
+        "keyword": "水拭き・拭き掃除が良い",
+        "count": 7
+      },
+      {
         "keyword": "静かで快適",
         "count": 6
       },
@@ -193,12 +197,28 @@
         "count": 5
       },
       {
+        "keyword": "マッピング・ルートが賢い",
+        "count": 3
+      },
+      {
         "keyword": "床がサラサラ・ピカピカ",
         "count": 3
       },
       {
         "keyword": "吸引力が高い",
         "count": 2
+      },
+      {
+        "keyword": "使いやすい・便利",
+        "count": 2
+      },
+      {
+        "keyword": "家事が楽になった",
+        "count": 1
+      },
+      {
+        "keyword": "故障・トラブルが少ない",
+        "count": 1
       }
     ],
     "negative": []

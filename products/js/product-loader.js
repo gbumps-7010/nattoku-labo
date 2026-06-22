@@ -1070,18 +1070,43 @@ function injectMoshimoIframe(container, html) {
 // 公式HPアフィリンク(direct HTML)から「緑の公式CTAボタン」を生成。
 //   directは A8等の画像リンク or テキストリンク。href を抜き出してボタン化し、
 //   計測ピクセル(1x1 img)があれば維持する（withPixelで重複発火を抑制）。
-function buildOfficialButton(directHtml, withPixel, label) {
+function buildOfficialButton(directHtml, withPixel, label, size) {
     if (!directHtml) return null;
     const hrefM = directHtml.match(/href=["']([^"']+)["']/i);
     if (!hrefM) return null;
+    const isLarge = size === 'large';
     const wrap = document.createElement('div');
-    wrap.style.cssText = 'position:relative; margin:0 auto 0.85rem;';
+    wrap.style.cssText = isLarge
+        ? 'position:relative; margin:0 auto 1.1rem; max-width:100%;'
+        : 'position:relative; margin:0 auto 0.85rem;';
     const a = document.createElement('a');
     a.href = hrefM[1];
     a.target = '_blank';
     a.rel = 'noopener sponsored nofollow';
     a.textContent = label || 'まずはメーカー公式HPで製品情報を確認';
-    a.style.cssText = 'display:block; text-align:center; text-decoration:none; color:#fff; font-weight:800; font-size:1.02rem; line-height:1.4; padding:0.9rem 1.15rem; border-radius:12px; background:linear-gradient(145deg,#0e7490 0%,#0d9488 42%,#059669 100%); box-shadow:0 6px 16px rgba(13,148,136,0.28);';
+    if (isLarge) {
+        a.style.cssText =
+            'display:block; text-align:center; text-decoration:none; color:#fff; font-weight:900; ' +
+            'font-size:clamp(1.2rem, 4.2vw, 1.45rem); line-height:1.45; padding:1.35rem 1.75rem; ' +
+            'border-radius:16px; letter-spacing:0.03em; ' +
+            'background:linear-gradient(145deg,#047857 0%,#059669 42%,#10b981 100%); ' +
+            'box-shadow:0 10px 28px rgba(5,150,105,0.48), inset 0 1px 0 rgba(255,255,255,0.22); ' +
+            'transition:transform 0.15s ease, box-shadow 0.15s ease;';
+        a.addEventListener('mouseenter', () => {
+            a.style.transform = 'translateY(-2px)';
+            a.style.boxShadow = '0 14px 34px rgba(5,150,105,0.58), inset 0 1px 0 rgba(255,255,255,0.22)';
+        });
+        a.addEventListener('mouseleave', () => {
+            a.style.transform = '';
+            a.style.boxShadow = '0 10px 28px rgba(5,150,105,0.48), inset 0 1px 0 rgba(255,255,255,0.22)';
+        });
+    } else {
+        a.style.cssText =
+            'display:block; text-align:center; text-decoration:none; color:#fff; font-weight:800; ' +
+            'font-size:1.02rem; line-height:1.4; padding:0.9rem 1.15rem; border-radius:12px; ' +
+            'background:linear-gradient(145deg,#0e7490 0%,#0d9488 42%,#059669 100%); ' +
+            'box-shadow:0 6px 16px rgba(13,148,136,0.28);';
+    }
     wrap.appendChild(a);
     if (withPixel) {
         const pixM = directHtml.match(/<img[^>]+src=["']([^"']+)["'][^>]*(?:width=["']?1\b|height=["']?1\b)/i);
@@ -1114,22 +1139,57 @@ function renderAffiliate(data) {
         }
         if (section) section.style.display = '';
 
+        // フッターCTAは目立つカード型レイアウト
+        if (opts.prominent && section) {
+            section.style.cssText =
+                'max-width:900px; margin:3.5rem auto 2.5rem; padding:2.25rem 2rem; ' +
+                'background:linear-gradient(180deg,#ecfdf5 0%,#ffffff 55%); ' +
+                'border:2px solid #6ee7b7; border-radius:22px; ' +
+                'box-shadow:0 16px 48px rgba(5,150,105,0.14);';
+        }
+
         // 見出し（上部=青バー / フッター上=ネイビーのセクション見出し）
         const h = section ? section.querySelector('h2') : null;
         if (h) {
             if (opts.headerStyle === 'title') {
-                h.innerHTML = (opts.headerIcon ? `<i class="fas ${opts.headerIcon}" style="color:#1e3a8a; margin-right:0.5rem;"></i>` : '') + opts.headerText;
-                h.style.cssText = 'display:block; text-align:center; color:#0f172a; font-weight:800; font-size:1.6rem; margin:0 0 1rem;';
+                h.innerHTML = (opts.headerIcon ? `<i class="fas ${opts.headerIcon}" style="color:#059669; margin-right:0.55rem;"></i>` : '') + opts.headerText;
+                if (opts.prominent) {
+                    h.style.cssText =
+                        'display:block; text-align:center; color:#065f46; font-weight:900; ' +
+                        'font-size:clamp(1.65rem, 5vw, 2.15rem); margin:0 0 0.35rem; letter-spacing:0.02em;';
+                } else {
+                    h.style.cssText = 'display:block; text-align:center; color:#0f172a; font-weight:800; font-size:1.6rem; margin:0 0 1rem;';
+                }
             } else {
                 h.innerHTML = opts.headerText;
                 h.style.cssText = 'display:block; text-align:center; color:#fff; font-weight:800; font-size:1.15rem; padding:0.6rem 1rem; border-radius:10px; background:linear-gradient(135deg,#1e3a8a 0%,#2563eb 52%,#0ea5e9 100%); box-shadow:0 6px 16px rgba(37,99,235,0.25); margin-bottom:0.85rem;';
             }
         }
 
+        // フッターCTAの補足テキスト
+        if (opts.prominent && section) {
+            let sub = section.querySelector('.affiliate-cta-subtitle');
+            if (!sub) {
+                sub = document.createElement('p');
+                sub.className = 'affiliate-cta-subtitle';
+                sub.textContent = '公式サイトで最新の価格・キャンペーン情報を確認できます';
+                sub.style.cssText =
+                    'text-align:center; color:#475569; font-size:1rem; font-weight:600; ' +
+                    'margin:0 0 1.35rem; line-height:1.5;';
+                if (h && h.nextSibling) {
+                    section.insertBefore(sub, h.nextSibling);
+                } else if (h) {
+                    h.after(sub);
+                } else {
+                    section.prepend(sub);
+                }
+            }
+        }
+
         // 緑の公式HPボタンをウィジェットの上に挿入
         if (directEl) { directEl.innerHTML = ''; directEl.style.display = 'none'; }
         if (hasDirect) {
-            const btn = buildOfficialButton(aff.direct, opts.withPixel, opts.btnLabel);
+            const btn = buildOfficialButton(aff.direct, opts.withPixel, opts.btnLabel, opts.buttonSize || 'default');
             if (btn) {
                 if (moshimoEl && moshimoEl.parentNode) {
                     moshimoEl.parentNode.insertBefore(btn, moshimoEl);
@@ -1138,6 +1198,21 @@ function renderAffiliate(data) {
                     directEl.appendChild(btn);
                 }
             }
+        }
+
+        // もしもウィジェット前の区切り（フッターCTAのみ・二次導線として控えめに）
+        if (opts.prominent && hasMoshimo && moshimoEl && moshimoEl.parentNode) {
+            let label = moshimoEl.previousElementSibling;
+            if (!label || !label.classList.contains('affiliate-secondary-label')) {
+                label = document.createElement('p');
+                label.className = 'affiliate-secondary-label';
+                label.textContent = '楽天・Yahooでも価格を比較';
+                label.style.cssText =
+                    'text-align:center; color:#94a3b8; font-size:0.88rem; font-weight:700; ' +
+                    'margin:0.25rem 0 1rem; letter-spacing:0.04em;';
+                moshimoEl.parentNode.insertBefore(label, moshimoEl);
+            }
+            moshimoEl.style.cssText = 'margin-top:0; opacity:0.94;';
         }
 
         // もしもかんたんリンク（楽天/Yahoo）をiframeで確実描画
@@ -1154,7 +1229,7 @@ function renderAffiliate(data) {
     });
     fillSlot({
         secId: 'affiliate-cta-2', moshId: 'affiliate-moshimo-2', dirId: 'affiliate-direct-2',
-        eidSuffix: 'b', withPixel: false,
+        eidSuffix: 'b', withPixel: false, prominent: true, buttonSize: 'large',
         headerStyle: 'title', headerText: '今の価格を確認する', headerIcon: 'fa-yen-sign',
         btnLabel: 'まずはメーカー公式HPで価格を確認'
     });

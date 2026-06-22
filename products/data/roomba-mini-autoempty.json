@@ -73,10 +73,10 @@
     "methodology": "ユーザーの平均的な手動掃除時間（20分/日）をロボット掃除機が代替することで得られる時間節約を算出。"
   },
   "operationalCost": {
-    "daily": 82,
+    "daily": 93,
     "dailyNote": "消耗品の実質的な日割りコスト",
-    "monthly": 2500,
-    "annual": 30000,
+    "monthly": 2833,
+    "annual": 34000,
     "consumables": [
       {
         "item": "ダストバッグ",
@@ -89,6 +89,12 @@
         "replacementFrequency": "毎日",
         "unitCost": 44,
         "annualCost": 16000
+      },
+      {
+        "item": "フィルター",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 2000,
+        "annualCost": 4000
       }
     ]
   },
@@ -179,6 +185,14 @@
         "count": 92
       },
       {
+        "keyword": "水拭き・拭き掃除が良い",
+        "count": 53
+      },
+      {
+        "keyword": "マッピング・ルートが賢い",
+        "count": 29
+      },
+      {
         "keyword": "静かで快適",
         "count": 28
       },
@@ -193,12 +207,28 @@
       {
         "keyword": "綺麗になる",
         "count": 17
+      },
+      {
+        "keyword": "家事が楽になった",
+        "count": 16
+      },
+      {
+        "keyword": "床がサラサラ・ピカピカ",
+        "count": 9
+      },
+      {
+        "keyword": "故障・トラブルが少ない",
+        "count": 2
       }
     ],
     "negative": [
       {
         "keyword": "故障・不具合",
         "count": 19
+      },
+      {
+        "keyword": "期待を下回る点",
+        "count": 10
       },
       {
         "keyword": "段差・家具で引っかかる",
@@ -209,12 +239,16 @@
         "count": 6
       },
       {
-        "keyword": "期待を下回る点",
-        "count": 5
-      },
-      {
         "keyword": "止まってしまう",
         "count": 4
+      },
+      {
+        "keyword": "アプリ・Wi-Fi接続が難しい",
+        "count": 3
+      },
+      {
+        "keyword": "コードを巻き込む",
+        "count": 1
       }
     ]
   },

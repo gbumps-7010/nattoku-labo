@@ -75,16 +75,34 @@
     "methodology": "ロボット掃除機による日常清掃の自動化で、手動掃除にかかる時間を削減。1日あたり20分の清掃時間を節約すると仮定して算出。"
   },
   "operationalCost": {
-    "daily": 82,
+    "daily": 67,
     "dailyNote": "消耗品の実質的な日割りコスト",
-    "monthly": 2500,
-    "annual": 30000,
+    "monthly": 2042,
+    "annual": 24500,
     "consumables": [
       {
-        "item": "消耗品セット（フィルター、ブラシ等）",
+        "item": "フィルター",
         "replacementFrequency": "3ヶ月ごと",
-        "unitCost": 7500,
-        "annualCost": 30000
+        "unitCost": 2000,
+        "annualCost": 8000
+      },
+      {
+        "item": "サイドブラシ",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 1500,
+        "annualCost": 3000
+      },
+      {
+        "item": "メインブラシ",
+        "replacementFrequency": "1年ごと",
+        "unitCost": 3500,
+        "annualCost": 3500
+      },
+      {
+        "item": "モップクロス",
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 2500,
+        "annualCost": 10000
       }
     ]
   },
@@ -276,6 +294,13 @@
       "reviewCount": 4,
       "description": "床に散らばったケーブルを巻き込んだり、特定の段差や家具の脚に引っかかって停止する事例が報告されています。",
       "solution": "清掃前に床の整理整頓を行い、アプリで進入禁止エリアを設定することで、これらの問題を回避できます。"
+    },
+    {
+      "title": "故障や不具合の報告",
+      "percentage": 29,
+      "reviewCount": 8,
+      "description": "レビューで「故障や不具合の報告」に関する言及が8件あり、利用時の注意点として挙がっています。",
+      "solution": "アプリの再起動や再接続を試し、改善しない場合はメーカーサポートへ問い合わせることをおすすめします。"
     }
   ],
   "attributeScores": {

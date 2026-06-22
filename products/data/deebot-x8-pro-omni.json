@@ -192,8 +192,16 @@
   "reviewKeywords": {
     "positive": [
       {
+        "keyword": "水拭き・拭き掃除が良い",
+        "count": 86
+      },
+      {
         "keyword": "満足・買ってよかった",
         "count": 79
+      },
+      {
+        "keyword": "マッピング・ルートが賢い",
+        "count": 31
       },
       {
         "keyword": "吸引力が高い",
@@ -210,6 +218,18 @@
       {
         "keyword": "使いやすい・便利",
         "count": 15
+      },
+      {
+        "keyword": "家事が楽になった",
+        "count": 13
+      },
+      {
+        "keyword": "床がサラサラ・ピカピカ",
+        "count": 12
+      },
+      {
+        "keyword": "故障・トラブルが少ない",
+        "count": 8
       }
     ],
     "negative": [
@@ -224,6 +244,10 @@
       {
         "keyword": "段差・家具で引っかかる",
         "count": 7
+      },
+      {
+        "keyword": "期待を下回る点",
+        "count": 6
       },
       {
         "keyword": "コードを巻き込む",

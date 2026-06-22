@@ -73,16 +73,28 @@
     "methodology": "一般的な家庭での床掃除時間を基に、ロボット掃除機による自動化で節約される時間を推計。日々の負担を大幅に軽減します。"
   },
   "operationalCost": {
-    "daily": 33,
+    "daily": 50,
     "dailyNote": "消耗品の実質的な日割りコスト",
-    "monthly": 1000,
-    "annual": 12000,
+    "monthly": 1533,
+    "annual": 18400,
     "consumables": [
       {
         "item": "ローラーモップ",
         "replacementFrequency": "4ヶ月ごと",
         "unitCost": 4000,
         "annualCost": 12000
+      },
+      {
+        "item": "サイドブラシ",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 1200,
+        "annualCost": 2400
+      },
+      {
+        "item": "フィルター",
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 1000,
+        "annualCost": 4000
       }
     ]
   },
@@ -169,6 +181,10 @@
   "reviewKeywords": {
     "positive": [
       {
+        "keyword": "水拭き・拭き掃除が良い",
+        "count": 37
+      },
+      {
         "keyword": "満足・買ってよかった",
         "count": 33
       },
@@ -187,12 +203,32 @@
       {
         "keyword": "綺麗になる",
         "count": 9
+      },
+      {
+        "keyword": "家事が楽になった",
+        "count": 8
+      },
+      {
+        "keyword": "静かで快適",
+        "count": 7
+      },
+      {
+        "keyword": "マッピング・ルートが賢い",
+        "count": 6
+      },
+      {
+        "keyword": "故障・トラブルが少ない",
+        "count": 3
       }
     ],
     "negative": [
       {
         "keyword": "故障・不具合",
         "count": 6
+      },
+      {
+        "keyword": "期待を下回る点",
+        "count": 4
       },
       {
         "keyword": "止まってしまう",
@@ -208,6 +244,10 @@
       },
       {
         "keyword": "動作音が気になる",
+        "count": 1
+      },
+      {
+        "keyword": "マッピング・認識が不正確",
         "count": 1
       }
     ]
