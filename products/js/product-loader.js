@@ -319,25 +319,45 @@ function updateReviewKeywords(data) {
 }
 
 // 7.5. データ信頼性（DRI 2.0）更新
+// 理論: 信頼度 = 口コミ件数(配点60) + 意見一致度(配点30) + 鮮度(配点10)
+//   各要素の0-100スコアを配点に換算して表示（例: 十分性77点→46.2/60点）
+function reliabilityWeightedPoints(raw, maxPts) {
+    const n = Number(raw);
+    if (!Number.isFinite(n)) return null;
+    const pts = Math.round(n * maxPts / 100 * 10) / 10;
+    return pts;
+}
+
+function setReliabilityFactorDisplay(scoreEl, raw, maxPts, denomColor) {
+    if (!scoreEl || raw == null) return;
+    const pts = reliabilityWeightedPoints(raw, maxPts);
+    if (pts == null) return;
+    scoreEl.textContent = Number.isInteger(pts) ? String(pts) : pts.toFixed(1);
+    const denom = scoreEl.nextElementSibling;
+    if (denom) {
+        denom.textContent = `/ ${maxPts}点`;
+        denom.style.fontSize = '1.15rem';
+        denom.style.fontWeight = '700';
+        denom.style.color = denomColor || '#64748b';
+    }
+}
+
 function updateReliability(data) {
     if (!data.reliability) return;
     
     const rel = data.reliability;
     
-    // 総合スコア
+    // 総合スコア（3要素の配点合計と一致）
     const scoreEl = document.querySelector('[data-dynamic="reliability.score"]');
     if (scoreEl && rel.score !== undefined) {
-        scoreEl.textContent = rel.score.toFixed(1);
+        scoreEl.textContent = Number(rel.score).toFixed(1);
     }
     
-    // 検証データ充足率
+    // 口コミ件数の十分さ（配点60点）
     if (rel.dataAdequacy) {
         const adequacyScoreEl = document.querySelector('[data-dynamic="reliability.dataAdequacy.score"]');
-        if (adequacyScoreEl) {
-            // scoreまたはpercentageに対応
-            const adequacyValue = rel.dataAdequacy.score || rel.dataAdequacy.percentage;
-            if (adequacyValue) adequacyScoreEl.textContent = adequacyValue;
-        }
+        const rawAdequacy = rel.dataAdequacy.score ?? rel.dataAdequacy.percentage;
+        setReliabilityFactorDisplay(adequacyScoreEl, rawAdequacy, 60, '#0284c7');
         
         const adequacyDescEl = document.querySelector('[data-dynamic="reliability.dataAdequacy.description"]');
         if (adequacyDescEl) {
@@ -346,13 +366,11 @@ function updateReliability(data) {
         }
     }
     
-    // 評価一致率
+    // 使った人の意見の一致度（配点30点）
     if (rel.consistency) {
         const consistencyPercentEl = document.querySelector('[data-dynamic="reliability.consistency.percentage"]');
-        if (consistencyPercentEl) {
-            const consistencyValue = rel.consistency.percentage || rel.consistency.score;
-            if (consistencyValue) consistencyPercentEl.textContent = consistencyValue;
-        }
+        const rawConsistency = rel.consistency.percentage ?? rel.consistency.score;
+        setReliabilityFactorDisplay(consistencyPercentEl, rawConsistency, 30, '#7c3aed');
         
         const consistencyDescEl = document.querySelector('[data-dynamic="reliability.consistency.description"]');
         if (consistencyDescEl) {
@@ -361,14 +379,11 @@ function updateReliability(data) {
         }
     }
     
-    // 情報最新性
+    // 最新の改善への対応状況（配点10点）
     if (rel.freshness) {
         const freshnessScoreEl = document.querySelector('[data-dynamic="reliability.freshness.score"]');
-        if (freshnessScoreEl) {
-            // scoreまたはpercentageに対応
-            const freshnessValue = rel.freshness.score || rel.freshness.percentage;
-            if (freshnessValue) freshnessScoreEl.textContent = freshnessValue;
-        }
+        const rawFreshness = rel.freshness.score ?? rel.freshness.percentage;
+        setReliabilityFactorDisplay(freshnessScoreEl, rawFreshness, 10, '#10b981');
         
         const freshnessDescEl = document.querySelector('[data-dynamic="reliability.freshness.description"]');
         if (freshnessDescEl) {
@@ -376,6 +391,17 @@ function updateReliability(data) {
             if (freshnessDesc) freshnessDescEl.textContent = freshnessDesc;
         }
     }
+
+    // 重要度バッジを大きく見やすく
+    document.querySelectorAll('.reliability-weight-badge').forEach((el) => {
+        el.style.display = 'inline-block';
+        el.style.fontSize = '1rem';
+        el.style.fontWeight = '800';
+        el.style.padding = '0.5rem 1rem';
+        el.style.borderRadius = '8px';
+        el.style.letterSpacing = '0.02em';
+        el.style.whiteSpace = 'nowrap';
+    });
 }
 
 // 7.6. 更新情報更新

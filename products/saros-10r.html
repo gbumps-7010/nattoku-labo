@@ -747,7 +747,7 @@
                 </div>
                 
                 <p style="color: #475569; font-size: 0.95rem; line-height: 1.7; margin-bottom: 2rem; padding: 0 0.5rem;">
-                    このスコアは、レビューデータの<strong>量が妥当か</strong>、<strong>使った人の意見がおおむね一致しているか</strong>、<strong>最新の状況を反映しているか</strong>を総合的に評価したものです。85点以上は「購入判断の参考として、信頼できる水準」と考えられます。
+                    このスコアは、<strong>口コミ件数の十分さ（配点60点）</strong>、<strong>使った人の意見の一致度（配点30点）</strong>、<strong>最新の改善への対応状況（配点10点）</strong>の<strong>合計100点満点</strong>です。各カードの数値は配点に換算した得点（例：46.2 / 60点）を示します。85点以上は「購入判断の参考として、信頼できる水準」と考えられます。
                 </p>
                 
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmin(280px, 1fr)); gap: 1.5rem;">
@@ -758,11 +758,11 @@
                                 <i class="fas fa-database" style="color: #0284c7;"></i>
                                 口コミ件数の十分さ
                             </h3>
-                            <span style="font-size: 0.75rem; font-weight: 700; color: #0284c7; background: #e0f2fe; padding: 0.35rem 0.85rem; border-radius: 16px;">重要度 60%</span>
+                            <span class="reliability-weight-badge" style="font-size: 1rem; font-weight: 800; color: #0284c7; background: #e0f2fe; padding: 0.5rem 1rem; border-radius: 8px; border: 2px solid #0284c7;">重要度 60%</span>
                         </div>
                         <div style="display: flex; align-items: baseline; gap: 0.5rem; margin-bottom: 1rem;">
                             <span style="font-size: 2.5rem; font-weight: 900; color: #0284c7;" data-dynamic="reliability.dataAdequacy.score">88</span>
-                            <span style="font-size: 1rem; color: #64748b; font-weight: 600;">/ 100</span>
+                            <span style="font-size: 1rem; color: #64748b; font-weight: 600;">/ 60点</span>
                         </div>
                         <p style="font-size: 0.9rem; color: #64748b; line-height: 1.6; margin: 0;" data-dynamic="reliability.dataAdequacy.description">
                             収集したレビューサンプル数が統計的に十分であり、追加データによる評価変動リスクが低い状態です。
@@ -776,11 +776,11 @@
                                 <i class="fas fa-balance-scale" style="color: #7c3aed;"></i>
                                 使った人の意見の一致度
                             </h3>
-                            <span style="font-size: 0.75rem; font-weight: 700; color: #7c3aed; background: #f3e8ff; padding: 0.35rem 0.85rem; border-radius: 16px;">重要度 30%</span>
+                            <span class="reliability-weight-badge" style="font-size: 1rem; font-weight: 800; color: #7c3aed; background: #f3e8ff; padding: 0.5rem 1rem; border-radius: 8px; border: 2px solid #7c3aed;">重要度 30%</span>
                         </div>
                         <div style="display: flex; align-items: baseline; gap: 0.5rem; margin-bottom: 1rem;">
                             <span style="font-size: 2.5rem; font-weight: 900; color: #7c3aed;" data-dynamic="reliability.consistency.percentage">82</span>
-                            <span style="font-size: 1.5rem; color: #7c3aed; font-weight: 700;">%</span>
+                            <span style="font-size: 1.5rem; color: #7c3aed; font-weight: 700;">/ 30点</span>
                         </div>
                         <p style="font-size: 0.9rem; color: #64748b; line-height: 1.6; margin: 0;" data-dynamic="reliability.consistency.description">
                             主要評価項目において、ユーザー間の評価が高度に一致しており、製品の実力が明確に収束しています。
@@ -794,11 +794,11 @@
                                 <i class="fas fa-clock-rotate-left" style="color: #10b981;"></i>
                                 最新の改善への対応状況
                             </h3>
-                            <span style="font-size: 0.75rem; font-weight: 700; color: #10b981; background: #d1fae5; padding: 0.35rem 0.85rem; border-radius: 16px;">重要度 10%</span>
+                            <span class="reliability-weight-badge" style="font-size: 1rem; font-weight: 800; color: #10b981; background: #d1fae5; padding: 0.5rem 1rem; border-radius: 8px; border: 2px solid #10b981;">重要度 10%</span>
                         </div>
                         <div style="display: flex; align-items: baseline; gap: 0.5rem; margin-bottom: 1rem;">
                             <span style="font-size: 2.5rem; font-weight: 900; color: #10b981;" data-dynamic="reliability.freshness.score">86</span>
-                            <span style="font-size: 1rem; color: #64748b; font-weight: 600;">/ 100</span>
+                            <span style="font-size: 1rem; color: #64748b; font-weight: 600;">/ 10点</span>
                         </div>
                         <p style="font-size: 0.9rem; color: #64748b; line-height: 1.6; margin: 0;" data-dynamic="reliability.freshness.description">
                             直近30日以内に投稿されたレビューが多数を占め、最新のファームウェア・運用実態を反映しています。
@@ -1170,10 +1170,10 @@
         </section>
 
     <!-- Product Loader Script -->
-    <script src="js/product-loader.js?v=20260623a"></script>
+    <script src="js/product-loader.js?v=20260623b"></script>
 
 <!-- ナビゲーションシステム V3.14 -->
-<script src="js/navigation.js?v=20260623a"></script>
+<script src="js/navigation.js?v=20260623b"></script>
     
     <!-- Chart.js Initialization -->
     <script>
