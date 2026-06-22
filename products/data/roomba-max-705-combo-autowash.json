@@ -7,7 +7,7 @@
   "overallRating": 3.91,
   "totalReviews": 110,
   "price": 179800,
-  "reliabilityScore": 71.8,
+  "reliabilityScore": 76.0,
   "asin": "",
   "metaTitle": "Roomba® Max 705 Combo + AutoWash™ 詳細分析 | 吸引と水拭きの究極体験",
   "metaDescription": "Roomba® Max 705 Combo + AutoWash™の110件のレビューを解析。強力な吸引力と温水水拭き、自動メンテナンス機能の真実を公開。",
@@ -42,17 +42,17 @@
     }
   },
   "reliability": {
-    "score": 71.8,
+    "score": 76.0,
     "dataAdequacy": {
       "score": 80,
       "weight": 60,
       "description": "レビュー件数は110件で、製品の評価を判断するのに十分なデータ量です。"
     },
     "consistency": {
-      "percentage": 46,
+      "percentage": 60,
       "weight": 30,
       "description": "評価は全体的に高いものの、水漏れや故障に関する強い不満も複数あり、体験の一貫性にばらつきが見られます。",
-      "score": 46
+      "score": 60
     },
     "freshness": {
       "score": 100,
@@ -169,7 +169,7 @@
     "sampledReviews": 110,
     "adoptedReviews": 88,
     "excludedReviews": 22,
-    "trustScore": 71.8,
+    "trustScore": 76.0,
     "comment": "提供された110件のレビューを詳細に分析。初期不良や水漏れに関する22件の報告を除き、高い信頼性で評価されています。"
   },
   "reviewKeywords": {

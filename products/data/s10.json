@@ -7,7 +7,7 @@
   "overallRating": 3.53,
   "totalReviews": 100,
   "price": 119820,
-  "reliabilityScore": 65.2,
+  "reliabilityScore": 83.5,
   "asin": "",
   "metaTitle": "SwitchBot S10 お掃除ロボットS10 詳細分析 | 故障・サポートの実態を徹底解説",
   "metaDescription": "SwitchBot S10の100件のレビューを解析。水道直結の革新性と、頻発する故障、サポート対応の課題など、製品の真実を公開。",
@@ -42,17 +42,17 @@
     }
   },
   "reliability": {
-    "score": 65.2,
+    "score": 83.5,
     "dataAdequacy": {
       "score": 80,
       "weight": 60,
       "description": "レビュー数が100件以上のため、データ十分性は高いと評価できます。広範なユーザーからの意見を反映しています。"
     },
     "consistency": {
-      "percentage": 34,
+      "percentage": 95,
       "weight": 30,
       "description": "単一のレビューソースからのデータであるため、評価の一貫性は高いと判断されます。サイト間の評価差による変動はありません。",
-      "score": 34
+      "score": 95
     },
     "freshness": {
       "score": 70,
@@ -181,7 +181,7 @@
     "sampledReviews": 100,
     "adoptedReviews": 90,
     "excludedReviews": 10,
-    "trustScore": 65.2,
+    "trustScore": 83.5,
     "comment": "提供された100件のレビューを詳細に分析しました。一部の短いレビューや重複を除き、90件のレビューを評価に採用しています。信頼度スコアは、データ十分性、一貫性、鮮度に基づいて算出されています。"
   },
   "reviewKeywords": {

@@ -7,7 +7,7 @@
   "overallRating": 4.46,
   "totalReviews": 572,
   "price": 149800,
-  "reliabilityScore": 92.2,
+  "reliabilityScore": 92.8,
   "asin": "",
   "metaTitle": "DEEBOT T80 OMNI 詳細分析 | ロボット掃除機の新時代を切り拓く",
   "metaDescription": "DEEBOT T80 OMNIの572件のレビューを解析。強力な吸引力、水拭き性能、AIの賢さなど、この革新的なロボット掃除機の真実を公開。",
@@ -42,17 +42,17 @@
     }
   },
   "reliability": {
-    "score": 92.2,
+    "score": 92.8,
     "dataAdequacy": {
       "score": 100,
       "weight": 60,
       "description": "レビュー総数が500件を超えており、データ量が非常に豊富で信頼性の高い分析が可能です。"
     },
     "consistency": {
-      "percentage": 74,
+      "percentage": 76,
       "weight": 30,
       "description": "複数のサイトでの評価に大きな乖離がなく、一貫したユーザー満足度が見られます。",
-      "score": 74
+      "score": 76
     },
     "freshness": {
       "score": 100,
@@ -175,7 +175,7 @@
     "sampledReviews": 516,
     "adoptedReviews": 494,
     "excludedReviews": 22,
-    "trustScore": 92.2,
+    "trustScore": 92.8,
     "comment": "全572件のレビューを詳細に分析し、製品の性能、利便性、課題点を多角的に評価。信頼性の高いデータを提供しています。"
   },
   "reviewKeywords": {

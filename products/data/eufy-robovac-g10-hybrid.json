@@ -7,7 +7,7 @@
   "overallRating": 3.47,
   "totalReviews": 102,
   "price": 29990,
-  "reliabilityScore": 63.2,
+  "reliabilityScore": 81.5,
   "asin": "",
   "metaTitle": "Eufy RoboVac G10 Hybrid 詳細分析 | 吸引と水拭きの両方に対応した高コスパモデル",
   "metaDescription": "Eufy RoboVac G10 Hybridの102件のレビューを解析。強力な吸引力と水拭き機能、優れたコストパフォーマンスの真実を公開。",
@@ -42,17 +42,17 @@
     }
   },
   "reliability": {
-    "score": 63.2,
+    "score": 81.5,
     "dataAdequacy": {
       "score": 80,
       "weight": 60,
       "description": "提供されたレビュー数は102件であり、データ十分性の基準を満たしています。製品の全体像を把握するのに十分な量です。"
     },
     "consistency": {
-      "percentage": 34,
+      "percentage": 95,
       "weight": 30,
       "description": "単一サイトからのレビューデータのため、サイト間の一貫性評価は行っていません。提供データ内での評価は安定しています。",
-      "score": 34
+      "score": 95
     },
     "freshness": {
       "score": 50,
@@ -175,7 +175,7 @@
     "sampledReviews": 102,
     "adoptedReviews": 95,
     "excludedReviews": 7,
-    "trustScore": 63.2,
+    "trustScore": 81.5,
     "comment": "全102件のレビューを詳細に分析し、製品の性能、信頼性、ユーザー満足度を評価しました。一部のレビューは内容が不十分なため除外しています。"
   },
   "reviewKeywords": {

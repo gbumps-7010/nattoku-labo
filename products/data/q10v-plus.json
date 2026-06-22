@@ -7,7 +7,7 @@
   "overallRating": 3.74,
   "totalReviews": 30,
   "price": 79999,
-  "reliabilityScore": 56.5,
+  "reliabilityScore": 69.7,
   "asin": "",
   "metaTitle": "Roborock Q10V+ 詳細分析 | 吸引力と水拭きの実力は？",
   "metaDescription": "Roborock Q10V+の30件のレビューを解析。強力な吸引力と水拭き機能、自動ゴミ収集など、Q10V+の真実を公開。",
@@ -42,17 +42,17 @@
     }
   },
   "reliability": {
-    "score": 56.5,
+    "score": 69.7,
     "dataAdequacy": {
       "score": 52,
       "weight": 60,
       "description": "レビュー総数が30件と比較的少ないため、データ十分性のスコアは40点です。今後のレビュー増加に期待します。"
     },
     "consistency": {
-      "percentage": 51,
+      "percentage": 95,
       "weight": 30,
       "description": "肯定的な意見と否定的な意見が混在しており、評価の一貫性は中程度です。特定の機能で意見が分かれる傾向が見られます。",
-      "score": 51
+      "score": 95
     },
     "freshness": {
       "score": 100,
@@ -187,7 +187,7 @@
     "sampledReviews": 30,
     "adoptedReviews": 29,
     "excludedReviews": 1,
-    "trustScore": 56.5,
+    "trustScore": 69.7,
     "comment": "ユーザー提供の30件のレビューを分析。1件は製品レビューとして不適格と判断し除外しました。信頼度スコアは58.0点です。"
   },
   "reviewKeywords": {

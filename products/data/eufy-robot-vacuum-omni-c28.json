@@ -7,7 +7,7 @@
   "overallRating": 4.19,
   "totalReviews": 54,
   "price": 99990,
-  "reliabilityScore": 62.2,
+  "reliabilityScore": 67.0,
   "asin": "",
   "metaTitle": "Eufy Robot Vacuum Omni C28 詳細分析 | 水拭きと吸引の真実",
   "metaDescription": "Eufy Robot Vacuum Omni C28の54件のレビューを解析。強力な水拭きと吸引力、アプリ連携の真実を公開。",
@@ -42,17 +42,17 @@
     }
   },
   "reliability": {
-    "score": 62.2,
+    "score": 67.0,
     "dataAdequacy": {
       "score": 62,
       "weight": 60,
       "description": "54件のレビューから、データ十分性は中程度と評価されます。より多くのレビューで信頼性が向上します。"
     },
     "consistency": {
-      "percentage": 50,
+      "percentage": 66,
       "weight": 30,
       "description": "楽天の平均評価4.39と、レビュー内容の一貫性は高く、評価の信頼性を示しています。 [cite: 楽天★ 平均4.39]",
-      "score": 50
+      "score": 66
     },
     "freshness": {
       "score": 100,
@@ -163,7 +163,7 @@
     "sampledReviews": 54,
     "adoptedReviews": 50,
     "excludedReviews": 4,
-    "trustScore": 62.2,
+    "trustScore": 67.0,
     "comment": "提供された54件のレビューを詳細に分析し、製品の性能、利便性、課題点を多角的に評価しました。"
   },
   "reviewKeywords": {

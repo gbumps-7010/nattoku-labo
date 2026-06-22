@@ -7,7 +7,7 @@
   "overallRating": 4.36,
   "totalReviews": 514,
   "price": 59800,
-  "reliabilityScore": 92.5,
+  "reliabilityScore": 92.8,
   "asin": "",
   "metaTitle": "ロボット掃除機 K11+ 詳細分析 | コンパクトでパワフルなスマート清掃",
   "metaDescription": "SwitchBot ロボット掃除機 K11+の514件のレビューを解析。コンパクトなサイズ、強力な吸引力、静音性など、K11+の真実を公開。",
@@ -43,17 +43,17 @@
     }
   },
   "reliability": {
-    "score": 92.5,
+    "score": 92.8,
     "dataAdequacy": {
       "score": 100,
       "weight": 60,
       "description": "500件を超える豊富なレビューデータに基づき、製品の評価傾向を高い信頼性で分析できています。"
     },
     "consistency": {
-      "percentage": 75,
+      "percentage": 76,
       "weight": 30,
       "description": "複数の販売サイトでの評価に大きな乖離がなく、一貫して高い満足度が示されており、信頼性が高いです。",
-      "score": 75
+      "score": 76
     },
     "freshness": {
       "score": 100,
@@ -164,7 +164,7 @@
     "sampledReviews": 514,
     "adoptedReviews": 488,
     "excludedReviews": 26,
-    "trustScore": 92.5,
+    "trustScore": 92.8,
     "comment": "全514件のレビューを詳細に分析し、信頼性の高いデータのみを採用。製品の真の評価を客観的に示しています。"
   },
   "reviewKeywords": {

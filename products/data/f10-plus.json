@@ -7,7 +7,7 @@
   "overallRating": 3.81,
   "totalReviews": 12,
   "price": 29800,
-  "reliabilityScore": 49.0,
+  "reliabilityScore": 55.6,
   "asin": "",
   "metaTitle": "Dreame F10 Plus 詳細分析 | 高コスパで静音性に優れたロボット掃除機",
   "metaDescription": "Dreame F10 Plusの12件のレビューを解析。静音性や吸引力、水拭き機能の真実を公開し、購入の参考に。",
@@ -42,17 +42,17 @@
     }
   },
   "reliability": {
-    "score": 49.0,
+    "score": 55.6,
     "dataAdequacy": {
       "score": 45,
       "weight": 60,
       "description": "レビュー総数が12件と少ないため、データ十分性のスコアは低めです。"
     },
     "consistency": {
-      "percentage": 40,
+      "percentage": 62,
       "weight": 30,
       "description": "楽天とAmazonでの評価に差が見られ、レビュー間の一貫性が低い傾向にあります。",
-      "score": 40
+      "score": 62
     },
     "freshness": {
       "score": 100,
@@ -163,7 +163,7 @@
     "sampledReviews": 12,
     "adoptedReviews": 10,
     "excludedReviews": 2,
-    "trustScore": 49.0,
+    "trustScore": 55.6,
     "comment": "全12件のレビューを分析し、製品の性能や不満点を詳細に評価しました。一部は特定の不具合ですが、傾向把握に採用。"
   },
   "reviewKeywords": {

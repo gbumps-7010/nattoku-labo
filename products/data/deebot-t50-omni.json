@@ -7,7 +7,7 @@
   "overallRating": 4.18,
   "totalReviews": 1257,
   "price": 64820,
-  "reliabilityScore": 86.5,
+  "reliabilityScore": 92.8,
   "asin": "",
   "keywords": [
     "ロボット掃除機",
@@ -42,17 +42,17 @@
     }
   },
   "reliability": {
-    "score": 86.5,
+    "score": 92.8,
     "dataAdequacy": {
       "score": 100,
       "weight": 60,
       "description": "レビュー総数は1257件と非常に多く、多様な利用環境からのフィードバックが集まっているため、データの信頼性は極めて高いです。"
     },
     "consistency": {
-      "score": 55,
+      "score": 76,
       "weight": 30,
       "description": "Amazonと楽天のレビューを横断的に分析した結果、評価の傾向に大きな乖離はなく、製品の長所と短所について一貫した意見が見られます。",
-      "percentage": 55
+      "percentage": 76
     },
     "freshness": {
       "score": 100,
@@ -181,7 +181,7 @@
     "sampledReviews": 552,
     "adoptedReviews": 552,
     "excludedReviews": 0,
-    "trustScore": 86.5,
+    "trustScore": 92.8,
     "comment": "Amazonと楽天から合計1257件のレビューを分析。購入直後から長期利用後まで多様な意見が含まれており、製品の性能を多角的に評価するための十分なデータ量です。"
   },
   "reviewKeywords": {

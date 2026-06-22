@@ -7,7 +7,7 @@
   "overallRating": 4.36,
   "totalReviews": 63,
   "price": 99800,
-  "reliabilityScore": 67.6,
+  "reliabilityScore": 73.3,
   "asin": "",
   "metaTitle": "Dreame L40s Pro Ultra 詳細分析 | 全自動で掃除の手間を解消する賢い一台",
   "metaDescription": "Dreame L40s Pro Ultraの63件のレビューを解析。強力吸引と水拭き、自動メンテナンスで家事負担を大幅軽減する真実を公開。",
@@ -42,17 +42,17 @@
     }
   },
   "reliability": {
-    "score": 67.6,
+    "score": 73.3,
     "dataAdequacy": {
       "score": 65,
       "weight": 60,
       "description": "レビュー総数63件は十分なデータ量とは言えず、より多くの情報があれば信頼性が向上します。"
     },
     "consistency": {
-      "percentage": 62,
+      "percentage": 81,
       "weight": 30,
       "description": "Amazonと楽天での平均評価に1.14点の差があり、評価の一貫性に課題が見られます。",
-      "score": 62
+      "score": 81
     },
     "freshness": {
       "score": 100,
@@ -193,7 +193,7 @@
     "sampledReviews": 63,
     "adoptedReviews": 59,
     "excludedReviews": 4,
-    "trustScore": 67.6,
+    "trustScore": 73.3,
     "comment": "ユーザー提供の全レビューを分析。一部のレビューは情報不足や重複のため除外しましたが、信頼性の高いデータです。"
   },
   "reviewKeywords": {

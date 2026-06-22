@@ -7,7 +7,7 @@
   "overallRating": 4.01,
   "totalReviews": 413,
   "price": 29990,
-  "reliabilityScore": 85.6,
+  "reliabilityScore": 89.5,
   "asin": "",
   "metaTitle": "Eufy Robot Vacuum Auto-Empty C10 詳細分析 | 自動ゴミ収集で家事負担を軽減",
   "metaDescription": "Eufy Robot Vacuum Auto-Empty C10の413件のレビューを解析。強力な吸引力、静音性、自動ゴミ収集機能の真実を公開。",
@@ -42,17 +42,17 @@
     }
   },
   "reliability": {
-    "score": 85.6,
+    "score": 89.5,
     "dataAdequacy": {
       "score": 96,
       "weight": 60,
       "description": "レビュー総数が413件であり、十分なデータ量に基づき信頼性の高い分析が可能です。"
     },
     "consistency": {
-      "percentage": 60,
+      "percentage": 73,
       "weight": 30,
       "description": "複数サイトでの評価に大きな乖離がなく、製品の評価が一貫しているため高い信頼性を示しています。",
-      "score": 60
+      "score": 73
     },
     "freshness": {
       "score": 100,
@@ -169,7 +169,7 @@
     "sampledReviews": 413,
     "adoptedReviews": 392,
     "excludedReviews": 21,
-    "trustScore": 85.6,
+    "trustScore": 89.5,
     "comment": "提供された413件のレビューを詳細に分析し、製品の性能、利便性、課題点を多角的に評価しました。"
   },
   "reviewKeywords": {

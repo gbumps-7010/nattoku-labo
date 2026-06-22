@@ -7,7 +7,7 @@
   "overallRating": 4.42,
   "totalReviews": 36,
   "price": 52000,
-  "reliabilityScore": 53.3,
+  "reliabilityScore": 55.4,
   "asin": "",
   "metaTitle": "Dreame L20 Ultra Complete 詳細分析 | 5way全自動で究極の清掃体験",
   "metaDescription": "Dreame L20 Ultra Completeの36件のレビューを解析。強力な吸引力、水拭き性能、自動メンテナンスなど、このフラッグシップモデルの真実を公開。",
@@ -42,17 +42,17 @@
     }
   },
   "reliability": {
-    "score": 53.3,
+    "score": 55.4,
     "dataAdequacy": {
       "score": 54,
       "weight": 60,
       "description": "レビュー数が50件未満のため、データ十分性スコアは40点です。より多くのレビューで精度向上します。"
     },
     "consistency": {
-      "percentage": 53,
+      "percentage": 60,
       "weight": 30,
       "description": "提供されたレビューが単一サイト（Amazon）のみのため、サイト間の一貫性は100点と評価しました。",
-      "score": 53
+      "score": 60
     },
     "freshness": {
       "score": 50,
@@ -163,7 +163,7 @@
     "sampledReviews": 36,
     "adoptedReviews": 34,
     "excludedReviews": 2,
-    "trustScore": 53.3,
+    "trustScore": 55.4,
     "comment": "全36件のレビューを分析し、信頼度スコアは59.00点。データ十分性と鮮度の向上が課題です。"
   },
   "reviewKeywords": {

@@ -7,7 +7,7 @@
   "overallRating": 4.3,
   "totalReviews": 84,
   "price": 34800,
-  "reliabilityScore": 69.4,
+  "reliabilityScore": 76.3,
   "asin": "",
   "metaTitle": "DEEBOT N30 詳細分析 | コスパと性能を両立したロボット掃除機",
   "metaDescription": "DEEBOT N30の84件のレビューを解析。強力な吸引力、水拭き、静音性など、DEEBOT N30の真実を公開。",
@@ -42,17 +42,17 @@
     }
   },
   "reliability": {
-    "score": 69.4,
+    "score": 76.3,
     "dataAdequacy": {
       "score": 74,
       "weight": 60,
       "description": "レビュー総数は84件で、データ十分性は中程度です。より多くのレビューがあれば、さらに詳細な分析が可能です。"
     },
     "consistency": {
-      "percentage": 50,
+      "percentage": 73,
       "weight": 30,
       "description": "楽天レビューの平均評価は4.31と高く、全体的なユーザー評価に大きな乖離は見られません。一貫性は良好です。",
-      "score": 50
+      "score": 73
     },
     "freshness": {
       "score": 100,
@@ -181,7 +181,7 @@
     "sampledReviews": 84,
     "adoptedReviews": 80,
     "excludedReviews": 4,
-    "trustScore": 69.4,
+    "trustScore": 76.3,
     "comment": "提供された84件のレビューを詳細に分析し、製品の性能やユーザー満足度を評価しました。一部のレビューは分析対象外としましたが、全体として高い信頼性を持つデータセットです。"
   },
   "reviewKeywords": {

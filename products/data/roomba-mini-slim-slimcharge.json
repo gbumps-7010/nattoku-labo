@@ -7,7 +7,7 @@
   "overallRating": 3.75,
   "totalReviews": 204,
   "price": 39800,
-  "reliabilityScore": 77.5,
+  "reliabilityScore": 82.6,
   "asin": "",
   "metaTitle": "Roomba® Mini Slim + SlimCharge™ 詳細分析 | 超小型ルンバの性能と口コミ評価",
   "metaDescription": "iRobot Roomba® Mini Slim + SlimCharge™の204件のレビューを解析。小型化による利便性、吸引力、静音性、アプリ接続の真実を公開。",
@@ -45,17 +45,17 @@
     }
   },
   "reliability": {
-    "score": 77.5,
+    "score": 82.6,
     "dataAdequacy": {
       "score": 85,
       "weight": 60,
       "description": "204件のレビューは製品の全体像を把握するのに十分な量であり、多様な意見が反映されています。"
     },
     "consistency": {
-      "percentage": 55,
+      "percentage": 72,
       "weight": 30,
       "description": "楽天での平均評価4.31とAmazonでのレビュー内容に大きな乖離はなく、評価の一貫性が高いです。",
-      "score": 55
+      "score": 72
     },
     "freshness": {
       "score": 100,
@@ -172,7 +172,7 @@
     "sampledReviews": 204,
     "adoptedReviews": 204,
     "excludedReviews": 0,
-    "trustScore": 77.5,
+    "trustScore": 82.6,
     "comment": "全204件のレビューを詳細に分析。楽天の評価は平均4.31と高く、Amazonでは小型化による利便性とアプリ接続の課題が指摘されています。信頼性スコアは85.00点です。"
   },
   "reviewKeywords": {

@@ -7,7 +7,7 @@
   "overallRating": 4.14,
   "totalReviews": 108,
   "price": 91800,
-  "reliabilityScore": 74.8,
+  "reliabilityScore": 79.6,
   "asin": "",
   "metaTitle": "SwitchBot お掃除ロボットS20 詳細分析 | 全自動で床ピカピカ、賢い掃除の真実",
   "metaDescription": "SwitchBot お掃除ロボットS20の108件のレビューを解析。強力な吸引力と水拭き機能、アプリ連携の真実を公開。",
@@ -42,17 +42,17 @@
     }
   },
   "reliability": {
-    "score": 74.8,
+    "score": 79.6,
     "dataAdequacy": {
       "score": 80,
       "weight": 60,
       "description": "レビュー数が100件を超え、製品の評価を判断するのに十分なデータ量があります。"
     },
     "consistency": {
-      "percentage": 56,
+      "percentage": 72,
       "weight": 30,
       "description": "各サイトの評価に大きな乖離がなく、レビュー内容の一貫性が高いことを示しています。",
-      "score": 56
+      "score": 72
     },
     "freshness": {
       "score": 100,
@@ -163,7 +163,7 @@
     "sampledReviews": 108,
     "adoptedReviews": 100,
     "excludedReviews": 8,
-    "trustScore": 74.8,
+    "trustScore": 79.6,
     "comment": "提供された108件のレビューを詳細に分析し、製品の性能、利便性、課題点を客観的に評価。信頼性の高いデータを提供します。"
   },
   "reviewKeywords": {
