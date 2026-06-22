@@ -7,7 +7,7 @@
   "overallRating": 4.31,
   "totalReviews": 398,
   "price": 69800,
-  "reliabilityScore": 79.0,
+  "reliabilityScore": 88.0,
   "asin": "",
   "metaTitle": "Roborock Qrevo L 詳細分析 | 全自動で叶える快適な床掃除",
   "metaDescription": "Roborock Qrevo Lの398件のレビューを解析。強力な吸引力、水拭き、自動ドックなど、日々の掃除を劇的に変える真実を公開。",
@@ -42,9 +42,9 @@
     }
   },
   "reliability": {
-    "score": 79.0,
+    "score": 88.0,
     "dataAdequacy": {
-      "score": 80,
+      "score": 95,
       "weight": 60,
       "description": "レビュー数が398件と豊富で、製品の評価傾向を十分に把握できるデータ量です。"
     },
@@ -175,7 +175,7 @@
     "sampledReviews": 398,
     "adoptedReviews": 374,
     "excludedReviews": 24,
-    "trustScore": 79.0,
+    "trustScore": 88.0,
     "comment": "全398件のレビューを詳細に分析。一部、製品と直接関係のないコメントや重複レビューを除外し、信頼性の高い統計データを算出しています。"
   },
   "reviewKeywords": {

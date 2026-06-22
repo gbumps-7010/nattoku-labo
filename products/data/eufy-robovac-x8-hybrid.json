@@ -7,7 +7,7 @@
   "overallRating": 3.53,
   "totalReviews": 28,
   "price": 59800,
-  "reliabilityScore": 44.0,
+  "reliabilityScore": 50.6,
   "asin": "",
   "metaTitle": "Eufy RoboVac X8 Hybrid 詳細分析 | 故障と吸引力の真実",
   "metaDescription": "Eufy RoboVac X8 Hybridの28件のレビューを解析。強力な吸引力とマッピング機能の評価、頻発する故障やサポート対応の課題を徹底解説。",
@@ -44,9 +44,9 @@
     }
   },
   "reliability": {
-    "score": 44.0,
+    "score": 50.6,
     "dataAdequacy": {
-      "score": 40,
+      "score": 51,
       "weight": 60,
       "description": "レビュー総数が28件と少なく、データ十分性のスコアは40点と評価されます。"
     },
@@ -165,7 +165,7 @@
     "sampledReviews": 28,
     "adoptedReviews": 28,
     "excludedReviews": 0,
-    "trustScore": 44.0,
+    "trustScore": 50.6,
     "comment": "提供された28件のレビューを全て分析対象とし、製品の長所と短所を公平に評価しました。信頼度スコアは44点です。"
   },
   "reviewKeywords": {

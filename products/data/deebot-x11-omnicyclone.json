@@ -7,7 +7,7 @@
   "overallRating": 4.46,
   "totalReviews": 93,
   "price": 229900,
-  "reliabilityScore": 76.0,
+  "reliabilityScore": 86.2,
   "asin": "",
   "metaTitle": "DEEBOT X11 OmniCyclone 詳細分析 | 93件の口コミから徹底評価",
   "metaDescription": "DEEBOT X11 OmniCycloneの93件のレビューを解析。圧倒的な清掃力、進化した水拭き性能、メンテナンスフリーの真実を公開。",
@@ -42,9 +42,9 @@
     }
   },
   "reliability": {
-    "score": 76.0,
+    "score": 86.2,
     "dataAdequacy": {
-      "score": 60,
+      "score": 77,
       "weight": 60,
       "description": "レビュー総数93件は十分なデータ量とは言えませんが、詳細なコメントが多く信頼性は高いです。"
     },
@@ -163,7 +163,7 @@
     "sampledReviews": 93,
     "adoptedReviews": 88,
     "excludedReviews": 5,
-    "trustScore": 76.0,
+    "trustScore": 86.2,
     "comment": "ユーザーから提供された93件のレビューを詳細に分析。一部の短いレビューを除き、88件のレビューを統計データに採用し、高い信頼性を確保しました。"
   },
   "reviewKeywords": {

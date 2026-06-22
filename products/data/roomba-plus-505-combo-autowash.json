@@ -7,7 +7,7 @@
   "overallRating": 3.87,
   "totalReviews": 63,
   "price": 128400,
-  "reliabilityScore": 73.0,
+  "reliabilityScore": 76.0,
   "asin": "",
   "metaTitle": "Roomba® Plus 505 Combo + AutoWash™ 詳細分析 | 全自動お掃除ロボットの真実",
   "metaDescription": "Roomba® Plus 505 Combo + AutoWash™の63件のレビューを解析。強力な吸引力と水拭き、自動メンテナンス機能の真実を公開。",
@@ -42,9 +42,9 @@
     }
   },
   "reliability": {
-    "score": 73.0,
+    "score": 76.0,
     "dataAdequacy": {
-      "score": 60,
+      "score": 65,
       "weight": 60,
       "description": "レビュー総数63件は一定の評価基準を満たしますが、より多くのデータがあれば信頼性は向上します。"
     },
@@ -193,7 +193,7 @@
     "sampledReviews": 63,
     "adoptedReviews": 58,
     "excludedReviews": 5,
-    "trustScore": 73.0,
+    "trustScore": 76.0,
     "comment": "提供されたAmazonレビュー63件を分析し、一部重複や無関係なレビューを除外して統計を作成しました。"
   },
   "reviewKeywords": {

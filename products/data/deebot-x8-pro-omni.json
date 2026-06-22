@@ -6,7 +6,7 @@
   "overallRating": 4.24,
   "totalReviews": 261,
   "price": 199800,
-  "reliabilityScore": 82.0,
+  "reliabilityScore": 86.8,
   "asin": "",
   "metaTitle": "DEEBOT X8 PRO OMNI 詳細分析 | 吸引と水拭きの決定版",
   "metaDescription": "DEEBOT X8 PRO OMNIの261件のレビューを解析。強力な吸引力と自動水拭き機能、メンテナンスの容易さなど、その真実を公開。",
@@ -41,9 +41,9 @@
     }
   },
   "reliability": {
-    "score": 82.0,
+    "score": 86.8,
     "dataAdequacy": {
-      "score": 80,
+      "score": 88,
       "weight": 60,
       "description": "261件のレビューから十分なデータ量を確保し、信頼性の高い分析が可能です。"
     },
@@ -186,7 +186,7 @@
     "sampledReviews": 261,
     "adoptedReviews": 240,
     "excludedReviews": 21,
-    "trustScore": 82.0,
+    "trustScore": 86.8,
     "comment": "提供された261件のレビューを全て分析し、信頼性スコア77.5に基づきデータ品質は良好と判断しました。"
   },
   "reviewKeywords": {

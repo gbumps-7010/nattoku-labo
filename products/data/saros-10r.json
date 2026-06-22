@@ -7,7 +7,7 @@
   "overallRating": 4.44,
   "totalReviews": 322,
   "price": 269800,
-  "reliabilityScore": 88.0,
+  "reliabilityScore": 94.6,
   "asin": "",
   "metaTitle": "Roborock Saros 10R 詳細分析 | 圧倒的な清掃力と全自動ドックの真実",
   "metaDescription": "Roborock Saros 10Rの322件のレビューを解析。床掃除、水拭き、ペット毛吸引力など、最上位モデルの真の実力と不満点を徹底公開。",
@@ -42,9 +42,9 @@
     }
   },
   "reliability": {
-    "score": 88.0,
+    "score": 94.6,
     "dataAdequacy": {
-      "score": 80,
+      "score": 91,
       "weight": 60,
       "description": "322件のレビュー数から、データは十分に揃っており、製品評価の信頼性を高めています。"
     },
@@ -175,7 +175,7 @@
     "sampledReviews": 322,
     "adoptedReviews": 302,
     "excludedReviews": 20,
-    "trustScore": 88.0,
+    "trustScore": 94.6,
     "comment": "ユーザーから提供された322件のレビューを詳細に分析。一部の重複や内容の薄いレビューを除外し、信頼性の高いデータのみを採用しました。"
   },
   "reviewKeywords": {

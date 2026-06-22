@@ -7,7 +7,7 @@
   "overallRating": 4.14,
   "totalReviews": 10,
   "price": 119900,
-  "reliabilityScore": 64.0,
+  "reliabilityScore": 66.4,
   "asin": "",
   "metaTitle": "Roborock Qrevo Curv 2 Flow 詳細分析 | 最新ローラーモップ搭載ロボット掃除機の真実",
   "metaDescription": "Roborock Qrevo Curv 2 Flowの10件のレビューを解析。強力な吸引力と進化した水拭き性能、ペット対応機能の真実を公開。",
@@ -43,9 +43,9 @@
     }
   },
   "reliability": {
-    "score": 64.0,
+    "score": 66.4,
     "dataAdequacy": {
-      "score": 40,
+      "score": 44,
       "weight": 60,
       "description": "レビュー総数が10件と少ないため、データ十分性のスコアは40点です。より多くのデータで精度向上を期待します。"
     },
@@ -182,7 +182,7 @@
     "sampledReviews": 10,
     "adoptedReviews": 10,
     "excludedReviews": 0,
-    "trustScore": 64.0,
+    "trustScore": 66.4,
     "comment": "提供された10件のレビューを全て分析に採用。データ量は少ないものの、最新のレビューが含まれており、信頼性スコアは64点です。"
   },
   "reviewKeywords": {

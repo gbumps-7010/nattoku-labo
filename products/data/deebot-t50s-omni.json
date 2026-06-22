@@ -7,7 +7,7 @@
   "overallRating": 3.86,
   "totalReviews": 16,
   "price": 89800,
-  "reliabilityScore": 64.0,
+  "reliabilityScore": 67.6,
   "asin": "",
   "metaTitle": "DEEBOT T50S OMNI 詳細分析 | 超薄型でパワフルな水拭きロボット掃除機の真実",
   "metaDescription": "DEEBOT T50S OMNIの16件のレビューを解析。高い吸引力と静音性、便利な水拭き機能など、日々の掃除を劇的に変えるこの製品の真実を公開。",
@@ -42,9 +42,9 @@
     }
   },
   "reliability": {
-    "score": 64.0,
+    "score": 67.6,
     "dataAdequacy": {
-      "score": 40,
+      "score": 46,
       "weight": 60,
       "description": "レビュー数が16件と少ないため、データ十分性は40点と評価しました。より多くのデータで信頼性が向上します。"
     },
@@ -181,7 +181,7 @@
     "sampledReviews": 16,
     "adoptedReviews": 14,
     "excludedReviews": 2,
-    "trustScore": 64.0,
+    "trustScore": 67.6,
     "comment": "提供された16件のレビューを分析。うち14件は製品の具体的な使用感や評価を含み、2件は初期感想で分析対象外としました。信頼度スコアは64.0点です。"
   },
   "reviewKeywords": {

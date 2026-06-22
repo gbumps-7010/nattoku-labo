@@ -7,7 +7,7 @@
   "overallRating": 4.27,
   "totalReviews": 19,
   "price": 69800,
-  "reliabilityScore": 61.0,
+  "reliabilityScore": 65.8,
   "asin": "",
   "metaTitle": "Dreame X30 Ultra 詳細分析 | 全自動で叶える究極の清潔",
   "metaDescription": "Dreame X30 Ultraの19件のレビューを解析。高い清掃能力と静音性、自動化されたメンテナンス機能の真実を公開。",
@@ -42,9 +42,9 @@
     }
   },
   "reliability": {
-    "score": 61.0,
+    "score": 65.8,
     "dataAdequacy": {
-      "score": 40,
+      "score": 48,
       "weight": 60,
       "description": "レビュー数は19件と少ないものの、内容は詳細で製品の特性を把握するのに十分な質を保っています。"
     },
@@ -175,7 +175,7 @@
     "sampledReviews": 19,
     "adoptedReviews": 19,
     "excludedReviews": 0,
-    "trustScore": 61.0,
+    "trustScore": 65.8,
     "comment": "提供された19件のレビューを全て分析対象とし、製品の性能や満足度を評価。データ量は少ないものの、レビューの質は高く信頼性は確保されています。"
   },
   "reviewKeywords": {

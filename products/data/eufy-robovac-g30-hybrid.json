@@ -7,7 +7,7 @@
   "overallRating": 4.09,
   "totalReviews": 458,
   "price": 39990,
-  "reliabilityScore": 68.0,
+  "reliabilityScore": 78.8,
   "asin": "",
   "metaTitle": "Eufy RoboVac G30 Hybrid 詳細分析 | 吸引と水拭きを両立する高コスパロボット掃除機",
   "metaDescription": "Eufy RoboVac G30 Hybridの458件のレビューを解析。高い吸引力と静音性、水拭き機能など、日々の掃除を劇的に変える本製品の真実を公開。",
@@ -42,9 +42,9 @@
     }
   },
   "reliability": {
-    "score": 68.0,
+    "score": 78.8,
     "dataAdequacy": {
-      "score": 80,
+      "score": 98,
       "weight": 60,
       "description": "レビュー総数458件はデータ分析に十分な量であり、製品評価の信頼性を高めています。"
     },
@@ -175,7 +175,7 @@
     "sampledReviews": 458,
     "adoptedReviews": 430,
     "excludedReviews": 28,
-    "trustScore": 68.0,
+    "trustScore": 78.8,
     "comment": "提供された458件のレビューを詳細に分析し、重複や内容の薄いものを除外して430件を採用しました。信頼度スコアは68.00点です。"
   },
   "reviewKeywords": {

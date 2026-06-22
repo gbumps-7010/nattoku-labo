@@ -7,7 +7,7 @@
   "overallRating": 4.36,
   "totalReviews": 45,
   "price": 149800,
-  "reliabilityScore": 55.0,
+  "reliabilityScore": 65.8,
   "asin": "",
   "metaTitle": "DEEBOT T90 OMNI 詳細分析 | 静音性と強力な水拭きで快適な毎日",
   "metaDescription": "DEEBOT T90 OMNIの45件のレビューを解析。進化したローラーモップによる床掃除、静音性、ペット毛除去能力の真実を公開。",
@@ -42,9 +42,9 @@
     }
   },
   "reliability": {
-    "score": 55.0,
+    "score": 65.8,
     "dataAdequacy": {
-      "score": 40,
+      "score": 58,
       "weight": 60,
       "description": "レビュー総数は45件で、データ量はまだ十分とは言えませんが、主要な評価項目については多くの言及があります。"
     },
@@ -169,7 +169,7 @@
     "sampledReviews": 45,
     "adoptedReviews": 41,
     "excludedReviews": 4,
-    "trustScore": 55.0,
+    "trustScore": 65.8,
     "comment": "ユーザーから提供された45件のレビューを詳細に分析しました。一部の初期設定やアプリに関する課題を除き、多くのレビューで高い満足度が示されています。データは十分な鮮度と一貫性を保っています。"
   },
   "reviewKeywords": {

@@ -7,7 +7,7 @@
   "overallRating": 4.24,
   "totalReviews": 30,
   "price": 69800,
-  "reliabilityScore": 55.0,
+  "reliabilityScore": 62.2,
   "asin": "",
   "metaTitle": "Dreame L10s Ultra Gen 3 詳細分析 | 圧倒的な清掃力と全自動ドックの真実",
   "metaDescription": "Dreame L10s Ultra Gen 3の30件のレビューを解析。強力な吸引力、静音性、自動メンテナンス機能など、最新ロボット掃除機の真実を公開。",
@@ -42,9 +42,9 @@
     }
   },
   "reliability": {
-    "score": 55.0,
+    "score": 62.2,
     "dataAdequacy": {
-      "score": 40,
+      "score": 52,
       "weight": 60,
       "description": "レビュー総数が30件と比較的少ないため、データ十分性スコアは40点です。今後のレビュー増加に期待されます。"
     },
@@ -187,7 +187,7 @@
     "sampledReviews": 30,
     "adoptedReviews": 26,
     "excludedReviews": 4,
-    "trustScore": 55.0,
+    "trustScore": 62.2,
     "comment": "提供された30件のレビューデータを詳細に分析。一部の初期設定に関する課題が見られるものの、清掃性能と自動化機能への高い評価が確認されました。"
   },
   "reviewKeywords": {

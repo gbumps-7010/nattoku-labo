@@ -7,7 +7,7 @@
   "overallRating": 4.09,
   "totalReviews": 85,
   "price": 199900,
-  "reliabilityScore": 62.0,
+  "reliabilityScore": 70.4,
   "asin": "",
   "metaTitle": "Eufy Robot Vacuum Omni S1 Pro 詳細分析 | 最強の吸引力と水拭きで快適な毎日",
   "metaDescription": "Eufy Robot Vacuum Omni S1 Proの85件のレビューを解析。高精度なマッピング、強力な吸引力、自動水拭き機能の真実を公開。",
@@ -42,9 +42,9 @@
     }
   },
   "reliability": {
-    "score": 62.0,
+    "score": 70.4,
     "dataAdequacy": {
-      "score": 60,
+      "score": 74,
       "weight": 60,
       "description": "レビュー数が85件であり、データ十分性の基準では60点と評価される。より多くのレビューがあれば信頼性が向上する。"
     },
@@ -181,7 +181,7 @@
     "sampledReviews": 85,
     "adoptedReviews": 80,
     "excludedReviews": 5,
-    "trustScore": 62.0,
+    "trustScore": 70.4,
     "comment": "提供された85件のレビューを詳細に分析。一部の重複や情報不足のレビューを除外し、80件のレビューを統計分析に採用した。"
   },
   "reviewKeywords": {

@@ -7,7 +7,7 @@
   "overallRating": 4.26,
   "totalReviews": 123,
   "price": 69990,
-  "reliabilityScore": 79.0,
+  "reliabilityScore": 79.6,
   "asin": "",
   "metaTitle": "Eufy Robot Vacuum Omni C20 詳細分析 | 全自動で床を徹底清掃",
   "metaDescription": "Eufy Robot Vacuum Omni C20の123件のレビューを解析。強力な吸引力、水拭き、自動メンテナンスなど、このロボット掃除機の真実を公開。",
@@ -42,9 +42,9 @@
     }
   },
   "reliability": {
-    "score": 79.0,
+    "score": 79.6,
     "dataAdequacy": {
-      "score": 80,
+      "score": 81,
       "weight": 60,
       "description": "レビュー数が100件以上あり、製品の評価を判断するのに十分なデータ量です。"
     },
@@ -181,7 +181,7 @@
     "sampledReviews": 123,
     "adoptedReviews": 115,
     "excludedReviews": 8,
-    "trustScore": 79.0,
+    "trustScore": 79.6,
     "comment": "提供された全レビューを分析し、信頼性の高い統計データを作成しました。一部のレビューは重複や無関係な内容のため除外しています。"
   },
   "reviewKeywords": {

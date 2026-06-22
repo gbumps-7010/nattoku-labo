@@ -7,7 +7,7 @@
   "overallRating": 4.16,
   "totalReviews": 482,
   "price": 29490,
-  "reliabilityScore": 80.0,
+  "reliabilityScore": 91.4,
   "asin": "",
   "metaTitle": "Eufy RoboVac G30 詳細分析 | 静音性と吸引力で快適な毎日",
   "metaDescription": "Eufy RoboVac G30の482件のレビューを解析。高い吸引力と静音性、アプリ連携による効率的な清掃で、日々の掃除を劇的に変える真実を公開。",
@@ -43,9 +43,9 @@
     }
   },
   "reliability": {
-    "score": 80.0,
+    "score": 91.4,
     "dataAdequacy": {
-      "score": 80,
+      "score": 99,
       "weight": 60,
       "description": "482件のレビューを分析しており、製品の評価を判断するのに十分なデータ量です。"
     },
@@ -182,7 +182,7 @@
     "sampledReviews": 482,
     "adoptedReviews": 458,
     "excludedReviews": 24,
-    "trustScore": 80.0,
+    "trustScore": 91.4,
     "comment": "482件のレビューを詳細に分析し、重複や無関係な情報を除外して信頼性の高いデータを作成しました。客観的な評価が可能です。"
   },
   "reviewKeywords": {

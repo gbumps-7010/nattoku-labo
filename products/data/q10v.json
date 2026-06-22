@@ -7,7 +7,7 @@
   "overallRating": 4.14,
   "totalReviews": 38,
   "price": 35999,
-  "reliabilityScore": 59.5,
+  "reliabilityScore": 68.5,
   "asin": "",
   "metaTitle": "Roborock Q10V 詳細分析 | 吸引力と水拭きを両立した高コスパモデルの真実",
   "metaDescription": "Roborock Q10Vの38件のレビューを解析。強力な吸引力と水拭き性能、静音性など、Q10Vの真実を公開。",
@@ -42,9 +42,9 @@
     }
   },
   "reliability": {
-    "score": 59.5,
+    "score": 68.5,
     "dataAdequacy": {
-      "score": 40,
+      "score": 55,
       "weight": 60,
       "description": "レビュー総数が38件と少ないため、データ十分性のスコアは低めですが、提供されたデータは全て分析対象です。"
     },
@@ -163,7 +163,7 @@
     "sampledReviews": 38,
     "adoptedReviews": 38,
     "excludedReviews": 0,
-    "trustScore": 59.5,
+    "trustScore": 68.5,
     "comment": "提供された38件のレビュー全てを分析対象としました。レビュー数が少ないため信頼度スコアは中程度です。"
   },
   "reviewKeywords": {
