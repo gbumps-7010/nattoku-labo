@@ -7,12 +7,12 @@
   "overallRating": 4.6,
   "totalReviews": 42,
   "price": 197800,
-  "reliabilityScore": 71.6,
+  "reliabilityScore": 62.9,
   "asin": "B0DD6LQSGD",
   "metaTitle": "Roomba Combo 10 Max 口コミ分析 | 究極の「手放し」性能を徹底検証",
   "metaDescription": "ルンバ最高峰Combo 10 Maxの口コミ42件を分析。注目のAutoWashステーションの満足度は？乾燥音や初期不良の傾向まで、信頼度89.2点の詳細統計を公開。",
   "reliability": {
-    "score": 71.6,
+    "score": 62.9,
     "dataAdequacy": {
       "score": 57,
       "percentage": 82,
@@ -20,8 +20,8 @@
       "note": "42件のレビュー数は製品の基本的な傾向を把握するのに十分な水準です。今後のレビュー蓄積でさらに確度が高まります。"
     },
     "consistency": {
-      "percentage": 94,
-      "score": 94,
+      "percentage": 65,
+      "score": 65,
       "weight": 30,
       "note": "ユーザー評価が非常に安定しており、製品の特徴が明確に表れています。"
     },
@@ -176,7 +176,7 @@
     "sampledReviews": 42,
     "adoptedReviews": 40,
     "excludedReviews": 2,
-    "trustScore": 71.6
+    "trustScore": 62.9
   },
   "reviewKeywords": {
     "positive": [

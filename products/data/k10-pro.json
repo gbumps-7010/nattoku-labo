@@ -7,7 +7,7 @@
   "overallRating": 3.66,
   "totalReviews": 430,
   "price": 64800,
-  "reliabilityScore": 89.6,
+  "reliabilityScore": 80.3,
   "asin": "",
   "metaTitle": "SwitchBot ロボット掃除機 K10+ Pro 詳細分析 | コンパクトさと利便性の真実",
   "metaDescription": "SwitchBot ロボット掃除機 K10+ Proの430件のレビューを解析。小型で小回りが利く点や自動ゴミ収集機能など、ユーザー評価の真実を公開。",
@@ -42,17 +42,17 @@
     }
   },
   "reliability": {
-    "score": 89.6,
+    "score": 80.3,
     "dataAdequacy": {
       "score": 96,
       "weight": 60,
       "description": "430件のレビュー数に基づき、十分なデータ量があると評価されます。"
     },
     "consistency": {
-      "percentage": 90,
+      "percentage": 59,
       "weight": 30,
       "description": "各サイトの評価に大きな乖離はなく、一貫したユーザー評価が見られます。",
-      "score": 90
+      "score": 59
     },
     "freshness": {
       "score": 50,
@@ -181,7 +181,7 @@
     "sampledReviews": 430,
     "adoptedReviews": 409,
     "excludedReviews": 21,
-    "trustScore": 89.6,
+    "trustScore": 80.3,
     "comment": "ユーザーから提供された430件のレビューを詳細に分析し、製品の性能とユーザー体験を多角的に評価しました。信頼性の高いデータに基づき、客観的な統計を作成しています。"
   },
   "reviewKeywords": {

@@ -7,7 +7,7 @@
   "overallRating": 4.1,
   "totalReviews": 46,
   "price": 17800,
-  "reliabilityScore": 73.3,
+  "reliabilityScore": 60.1,
   "asin": "",
   "metaTitle": "Dreame D9 Max Gen 2 詳細分析 | コスパ最強ロボット掃除機の真実",
   "metaDescription": "Dreame D9 Max Gen 2の46件のレビューを解析。強力な吸引力、静音性、アプリ機能など、このロボット掃除機の真実を公開。",
@@ -42,17 +42,17 @@
     }
   },
   "reliability": {
-    "score": 73.3,
+    "score": 60.1,
     "dataAdequacy": {
       "score": 58,
       "weight": 60,
       "description": "レビュー総数が50件未満のため、データ十分性スコアは40点です。"
     },
     "consistency": {
-      "percentage": 100,
+      "percentage": 56,
       "weight": 30,
       "description": "主要サイト間の評価差が±0.2以内と非常に一貫性が高く、信頼できる評価です。",
-      "score": 100
+      "score": 56
     },
     "freshness": {
       "score": 85,
@@ -181,7 +181,7 @@
     "sampledReviews": 46,
     "adoptedReviews": 42,
     "excludedReviews": 4,
-    "trustScore": 73.3,
+    "trustScore": 60.1,
     "comment": "全46件のレビューを詳細に分析し、製品の性能、信頼性、ユーザー満足度を多角的に評価しました。信頼度スコアは62.5点です。"
   },
   "reviewKeywords": {

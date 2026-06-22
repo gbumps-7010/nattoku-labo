@@ -7,7 +7,7 @@
   "overallRating": 4.53,
   "totalReviews": 16,
   "price": 199800,
-  "reliabilityScore": 64.6,
+  "reliabilityScore": 58.6,
   "asin": "",
   "metaTitle": "Dreame X50 Ultra 詳細分析 | 究極の全自動ロボット掃除機の実力",
   "metaDescription": "Dreame X50 Ultraの16件のレビューを徹底解析。20,000Paの吸引力、全自動メンテナンスなど、フラグシップモデルの真実を公開。",
@@ -43,17 +43,17 @@
     }
   },
   "reliability": {
-    "score": 64.6,
+    "score": 58.6,
     "dataAdequacy": {
       "score": 46,
       "weight": 60,
       "description": "提供されたレビュー数が16件と少ないため、データ十分性のスコアは40点です。より多くのデータで精度が向上します。"
     },
     "consistency": {
-      "percentage": 90,
+      "percentage": 70,
       "weight": 30,
       "description": "楽天の評価は高いものの、レビュー数が少ないため、他のサイトとの評価差は限定的です。提供データ内では一貫した高評価傾向が見られます。",
-      "score": 90
+      "score": 70
     },
     "freshness": {
       "score": 100,
@@ -188,7 +188,7 @@
     "sampledReviews": 16,
     "adoptedReviews": 16,
     "excludedReviews": 0,
-    "trustScore": 64.6,
+    "trustScore": 58.6,
     "comment": "提供されたレビュー数は16件と少ないものの、内容の信頼性は高く、製品の基本的な評価傾向を把握できます。今後のレビュー増加で精度が向上します。"
   },
   "reviewKeywords": {

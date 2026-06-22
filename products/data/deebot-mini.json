@@ -7,7 +7,7 @@
   "overallRating": 4.04,
   "totalReviews": 206,
   "price": 69800,
-  "reliabilityScore": 89.5,
+  "reliabilityScore": 78.7,
   "asin": "",
   "metaTitle": "DEEBOT mini 詳細分析 | コンパクト高性能ロボット掃除機の真実",
   "metaDescription": "DEEBOT miniの206件のレビューを解析。小型ながら水拭き・自動洗浄・静音性を兼ね備えた本製品の真実を公開。",
@@ -42,17 +42,17 @@
     }
   },
   "reliability": {
-    "score": 89.5,
+    "score": 78.7,
     "dataAdequacy": {
       "score": 85,
       "weight": 60,
       "description": "総レビュー数206件と十分なデータ量があり、製品の全体的な傾向を把握するのに適しています。"
     },
     "consistency": {
-      "percentage": 100,
+      "percentage": 64,
       "weight": 30,
       "description": "楽天の平均評価4.3と安定しており、評価に大きなばらつきがないため、一貫性が高いと判断されます。",
-      "score": 100
+      "score": 64
     },
     "freshness": {
       "score": 85,
@@ -181,7 +181,7 @@
     "sampledReviews": 206,
     "adoptedReviews": 182,
     "excludedReviews": 24,
-    "trustScore": 89.5,
+    "trustScore": 78.7,
     "comment": "全206件のレビューを詳細に分析し、信頼性の高いデータのみを選定。一部の短文レビューを除外し、86.5%の信頼度で評価しています。"
   },
   "reviewKeywords": {

@@ -7,7 +7,7 @@
   "overallRating": 3.94,
   "totalReviews": 341,
   "price": 59200,
-  "reliabilityScore": 95.2,
+  "reliabilityScore": 81.7,
   "asin": "",
   "metaTitle": "Roomba® 105 Combo + AutoEmpty™ 詳細分析 | もう失敗しない。ナットクLabo",
   "metaDescription": "Roomba® 105 Combo + AutoEmpty™の341件のレビューを解析。強力な吸引力と水拭き、自動ゴミ捨て機能の真実を公開。",
@@ -42,17 +42,17 @@
     }
   },
   "reliability": {
-    "score": 95.2,
+    "score": 81.7,
     "dataAdequacy": {
       "score": 92,
       "weight": 60,
       "description": "レビュー総数341件は十分なデータ量であり、製品の評価を多角的に分析するための基盤として信頼性が高いと判断されます。"
     },
     "consistency": {
-      "percentage": 100,
+      "percentage": 55,
       "weight": 30,
       "description": "複数の販売サイトでの評価に大きな乖離がなく、ユーザー体験の一貫性が確認されました。製品品質の安定性を示唆しています。",
-      "score": 100
+      "score": 55
     },
     "freshness": {
       "score": 100,
@@ -175,7 +175,7 @@
     "sampledReviews": 341,
     "adoptedReviews": 320,
     "excludedReviews": 21,
-    "trustScore": 95.2,
+    "trustScore": 81.7,
     "comment": "提供された341件のレビューを詳細に分析し、製品の性能、利便性、課題を多角的に評価。信頼性の高いデータを提供しています。"
   },
   "reviewKeywords": {

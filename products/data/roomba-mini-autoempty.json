@@ -7,7 +7,7 @@
   "overallRating": 4.22,
   "totalReviews": 338,
   "price": 49800,
-  "reliabilityScore": 93.7,
+  "reliabilityScore": 83.8,
   "asin": "",
   "metaTitle": "Roomba® Mini + AutoEmpty™ 詳細分析 | コンパクトで賢い日本の新常識",
   "metaDescription": "Roomba® Mini + AutoEmpty™の338件のレビューを解析。コンパクトなサイズと高い清掃能力、自動ゴミ収集の真実を公開。",
@@ -42,17 +42,17 @@
     }
   },
   "reliability": {
-    "score": 93.7,
+    "score": 83.8,
     "dataAdequacy": {
       "score": 92,
       "weight": 60,
       "description": "レビュー総数338件は十分なデータ量であり、製品の全体的な評価を把握するのに適しています。"
     },
     "consistency": {
-      "percentage": 95,
+      "percentage": 62,
       "weight": 30,
       "description": "楽天の平均評価4.35とAmazonのレビュー感情が一致しており、評価の一貫性が高いと判断されます。",
-      "score": 95
+      "score": 62
     },
     "freshness": {
       "score": 100,
@@ -169,7 +169,7 @@
     "sampledReviews": 338,
     "adoptedReviews": 338,
     "excludedReviews": 0,
-    "trustScore": 93.7,
+    "trustScore": 83.8,
     "comment": "提供された全338件のレビューを詳細に分析。データ十分性、一貫性、鮮度を考慮し、高い信頼度で統計データを算出しました。"
   },
   "reviewKeywords": {

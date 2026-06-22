@@ -7,7 +7,7 @@
   "overallRating": 4.46,
   "totalReviews": 305,
   "price": 119920,
-  "reliabilityScore": 94.0,
+  "reliabilityScore": 84.7,
   "asin": "",
   "metaTitle": "Eufy Robot Vacuum Omni E25 詳細分析 | 徹底した床洗浄と賢さで快適な毎日",
   "metaDescription": "Eufy Robot Vacuum Omni E25の305件のレビューを解析。ローラーモップによる床洗浄、20000Paの吸引力、AI障害物回避など、最高峰の掃除体験の真実を公開。",
@@ -42,17 +42,17 @@
     }
   },
   "reliability": {
-    "score": 94.0,
+    "score": 84.7,
     "dataAdequacy": {
       "score": 90,
       "weight": 60,
       "description": "総レビュー数305件は、製品の信頼性を評価する上で十分なデータ量です。多様な意見を網羅し、統計的な分析に耐えうる情報が揃っています。"
     },
     "consistency": {
-      "percentage": 100,
+      "percentage": 69,
       "weight": 30,
       "description": "Amazonと楽天の平均評価に大きな差がなく、一貫したユーザー体験が提供されていることを示しています。評価のばらつきが非常に少ないです。",
-      "score": 100
+      "score": 69
     },
     "freshness": {
       "score": 100,
@@ -175,7 +175,7 @@
     "sampledReviews": 305,
     "adoptedReviews": 305,
     "excludedReviews": 0,
-    "trustScore": 94.0,
+    "trustScore": 84.7,
     "comment": "提供された全305件のレビューデータを詳細に分析し、製品の性能、利便性、不満点などを多角的に評価しました。データは十分に信頼性があり、統計的分析に適しています。"
   },
   "reviewKeywords": {

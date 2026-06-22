@@ -7,7 +7,7 @@
   "overallRating": 4.0,
   "totalReviews": 608,
   "price": 69990,
-  "reliabilityScore": 82.0,
+  "reliabilityScore": 82.3,
   "asin": "",
   "metaTitle": "Anker Eufy X10 Pro Omni 詳細分析 | 全自動水拭きロボット掃除機の真実",
   "metaDescription": "Anker Eufy X10 Pro Omniの608件のレビューを解析。強力な吸引力と水拭き、自動メンテナンスで家事負担を大幅軽減。静音性や障害物回避の真実を公開。",
@@ -42,17 +42,17 @@
     }
   },
   "reliability": {
-    "score": 82.0,
+    "score": 82.3,
     "dataAdequacy": {
       "score": 100,
       "weight": 60,
       "description": "提供されたレビュー数が500件以上であるため、データ十分性は非常に高いと評価されます。"
     },
     "consistency": {
-      "percentage": 50,
+      "percentage": 51,
       "weight": 30,
       "description": "Amazonと楽天の平均評価に1.0点以上の差が見られ、サイト間の一貫性に課題があるため、評価は中程度です。",
-      "score": 50
+      "score": 51
     },
     "freshness": {
       "score": 70,
@@ -181,7 +181,7 @@
     "sampledReviews": 550,
     "adoptedReviews": 522,
     "excludedReviews": 28,
-    "trustScore": 82.0,
+    "trustScore": 82.3,
     "comment": "ユーザーから提供された608件のレビューを詳細に分析しました。製品の性能、機能、不満点、解決策を網羅的に評価しています。"
   },
   "reviewKeywords": {

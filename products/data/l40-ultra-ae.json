@@ -7,7 +7,7 @@
   "overallRating": 4.26,
   "totalReviews": 6,
   "price": 99800,
-  "reliabilityScore": 62.2,
+  "reliabilityScore": 57.7,
   "asin": "",
   "metaTitle": "Dreame L40 Ultra AE 詳細分析 | 髪の毛絡まない！床サラサラの秘密を徹底解剖",
   "metaDescription": "Dreame L40 Ultra AEの6件のレビューを解析。髪の毛が絡まない吸引力や床拭き性能、自動メンテナンス機能の真実を公開。",
@@ -42,17 +42,17 @@
     }
   },
   "reliability": {
-    "score": 62.2,
+    "score": 57.7,
     "dataAdequacy": {
       "score": 42,
       "weight": 60,
       "description": "レビュー総数が6件と少ないため、データ十分性スコアは40点と評価されました。"
     },
     "consistency": {
-      "percentage": 90,
+      "percentage": 75,
       "weight": 30,
       "description": "楽天の評価は平均5.0と非常に高く、Amazonのレビューも同様にポジティブな傾向を示しています。",
-      "score": 90
+      "score": 75
     },
     "freshness": {
       "score": 100,
@@ -175,7 +175,7 @@
     "sampledReviews": 6,
     "adoptedReviews": 6,
     "excludedReviews": 0,
-    "trustScore": 62.2,
+    "trustScore": 57.7,
     "comment": "提供された6件のレビューは全て分析に採用。レビュー数が少ないため、信頼度スコアは中程度です。"
   },
   "reviewKeywords": {

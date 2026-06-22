@@ -7,7 +7,7 @@
   "overallRating": 3.98,
   "totalReviews": 226,
   "price": 98800,
-  "reliabilityScore": 88.6,
+  "reliabilityScore": 76.0,
   "asin": "",
   "metaTitle": "Roomba® Max 705 Vac + AutoEmpty™ 詳細分析 | 強力吸引と自動ゴミ収集の真実",
   "metaDescription": "Roomba® Max 705 Vac + AutoEmpty™の226件のレビューを解析。強力な吸引力、賢いナビゲーション、自動ゴミ収集など、その真価を公開。",
@@ -42,17 +42,17 @@
     }
   },
   "reliability": {
-    "score": 88.6,
+    "score": 76.0,
     "dataAdequacy": {
       "score": 86,
       "weight": 60,
       "description": "レビュー総数226件は十分なデータ量であり、製品の全体的な評価を把握するのに適しています。"
     },
     "consistency": {
-      "percentage": 95,
+      "percentage": 53,
       "weight": 30,
       "description": "楽天での平均評価が4.4と高く、レビュー間の評価に大きな乖離がなく、一貫したユーザー体験が伺えます。",
-      "score": 95
+      "score": 53
     },
     "freshness": {
       "score": 85,
@@ -175,7 +175,7 @@
     "sampledReviews": 226,
     "adoptedReviews": 202,
     "excludedReviews": 24,
-    "trustScore": 88.6,
+    "trustScore": 76.0,
     "comment": "提供された全226件のレビューを分析し、信頼度スコア85.0を算出。一部、情報不足や重複レビューを除外しています。"
   },
   "reviewKeywords": {

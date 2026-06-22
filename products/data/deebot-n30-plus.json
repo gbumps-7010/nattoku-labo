@@ -7,7 +7,7 @@
   "overallRating": 4.34,
   "totalReviews": 282,
   "price": 69800,
-  "reliabilityScore": 90.4,
+  "reliabilityScore": 80.8,
   "asin": "",
   "metaTitle": "DEEBOT N30 PLUS 詳細分析 | 吸引力10000Paと水拭きで床を徹底清掃",
   "metaDescription": "ECOVACS DEEBOT N30 PLUSの282件のレビューを解析。強力な吸引力と水拭き、自動ゴミ収集の真実を公開。",
@@ -42,17 +42,17 @@
     }
   },
   "reliability": {
-    "score": 90.4,
+    "score": 80.8,
     "dataAdequacy": {
       "score": 89,
       "weight": 60,
       "description": "レビュー総数282件に基づき、十分なデータ量と判断され、信頼性の基礎となっています。"
     },
     "consistency": {
-      "percentage": 90,
+      "percentage": 58,
       "weight": 30,
       "description": "主要ECサイト間の評価に大きな乖離がなく、レビュー内容の一貫性が高いと評価されます。",
-      "score": 90
+      "score": 58
     },
     "freshness": {
       "score": 100,
@@ -175,7 +175,7 @@
     "sampledReviews": 282,
     "adoptedReviews": 260,
     "excludedReviews": 22,
-    "trustScore": 90.4,
+    "trustScore": 80.8,
     "comment": "ユーザーから提供された282件のレビューを詳細に分析し、信頼性の高い統計データを作成しました。"
   },
   "reviewKeywords": {

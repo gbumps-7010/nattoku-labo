@@ -7,7 +7,7 @@
   "overallRating": 4.45,
   "totalReviews": 78,
   "price": 58000,
-  "reliabilityScore": 76.6,
+  "reliabilityScore": 69.1,
   "asin": "",
   "metaTitle": "Dreame L10s Ultra Gen 2 詳細分析 | 78件の口コミから真実を公開",
   "metaDescription": "Dreame L10s Ultra Gen 2の78件のレビューを解析。全自動ベースステーションと強力な吸引力、静音性が高評価。Wi-Fi接続や段差乗り越えの課題と対策を徹底解説。",
@@ -42,17 +42,17 @@
     }
   },
   "reliability": {
-    "score": 76.6,
+    "score": 69.1,
     "dataAdequacy": {
       "score": 71,
       "weight": 60,
       "description": "レビュー総数が78件であり、製品の評価を判断する上で十分なデータ量があります。信頼性評価の基礎となります。"
     },
     "consistency": {
-      "percentage": 90,
+      "percentage": 65,
       "weight": 30,
       "description": "Amazonと楽天の評価に大きな乖離はなく、サイト間での評価の一貫性が保たれています。平均評価の差は小さいです。",
-      "score": 90
+      "score": 65
     },
     "freshness": {
       "score": 70,
@@ -181,7 +181,7 @@
     "sampledReviews": 78,
     "adoptedReviews": 68,
     "excludedReviews": 10,
-    "trustScore": 76.6,
+    "trustScore": 69.1,
     "comment": "提供された78件のレビューを全て確認し、そのうち10件を情報不足や重複のため除外しました。残りの68件を詳細に分析し、信頼性の高い統計データを作成しています。"
   },
   "reviewKeywords": {

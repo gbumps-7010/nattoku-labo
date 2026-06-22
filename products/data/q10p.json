@@ -7,7 +7,7 @@
   "overallRating": 4.41,
   "totalReviews": 191,
   "price": 41800,
-  "reliabilityScore": 91.0,
+  "reliabilityScore": 82.0,
   "asin": "",
   "metaTitle": "Roborock Q10P+ 詳細分析 | コンパクトドックと高吸引力で快適な毎日",
   "metaDescription": "Roborock Q10P+の191件のレビューを解析。10,000Paの吸引力、コンパクトなドック、障害物回避など、Q10P+の真実を公開。",
@@ -43,17 +43,17 @@
     }
   },
   "reliability": {
-    "score": 91.0,
+    "score": 82.0,
     "dataAdequacy": {
       "score": 85,
       "weight": 60,
       "description": "レビュー総数191件は十分なデータ量であり、統計分析の信頼性を高めます。"
     },
     "consistency": {
-      "percentage": 100,
+      "percentage": 70,
       "weight": 30,
       "description": "楽天の平均評価4.62と高く、評価のばらつきが少ないため、一貫性のある高評価が確認できます。",
-      "score": 100
+      "score": 70
     },
     "freshness": {
       "score": 100,
@@ -188,7 +188,7 @@
     "sampledReviews": 191,
     "adoptedReviews": 170,
     "excludedReviews": 21,
-    "trustScore": 91.0,
+    "trustScore": 82.0,
     "comment": "提供された全レビューを分析し、内容に基づきスコアとコメントを生成。データ整合性は高く、信頼性のある結果です。"
   },
   "reviewKeywords": {

@@ -7,7 +7,7 @@
   "overallRating": 4.22,
   "totalReviews": 673,
   "price": 98800,
-  "reliabilityScore": 98.5,
+  "reliabilityScore": 90.7,
   "asin": "",
   "metaTitle": "Roomba® Plus 405 Combo + AutoWash™ 詳細分析 | 徹底的な水拭きと自動メンテナンス",
   "metaDescription": "Roomba® Plus 405 Combo + AutoWash™の673件のレビューを解析。強力な吸引力、自動水拭き・乾燥、コンパクト設計の真実を公開。",
@@ -42,17 +42,17 @@
     }
   },
   "reliability": {
-    "score": 98.5,
+    "score": 90.7,
     "dataAdequacy": {
       "score": 100,
       "weight": 60,
       "description": "673件の豊富なレビューデータがあり、統計的に十分な情報量です。"
     },
     "consistency": {
-      "percentage": 95,
+      "percentage": 69,
       "weight": 30,
       "description": "複数のレビューサイトで評価が一貫しており、製品への信頼性が高いことを示しています。",
-      "score": 95
+      "score": 69
     },
     "freshness": {
       "score": 100,
@@ -175,7 +175,7 @@
     "sampledReviews": 484,
     "adoptedReviews": 416,
     "excludedReviews": 68,
-    "trustScore": 98.5,
+    "trustScore": 90.7,
     "comment": "提供された673件のレビューを詳細に分析。一部のレビューはデータ品質基準に基づき除外しましたが、信頼性の高い統計データです。"
   },
   "reviewKeywords": {

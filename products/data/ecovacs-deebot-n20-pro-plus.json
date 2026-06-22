@@ -7,7 +7,7 @@
   "overallRating": 4.6,
   "totalReviews": 278,
   "price": 69800,
-  "reliabilityScore": 87.8,
+  "reliabilityScore": 81.2,
   "asin": "B0D45R4YVL",
   "metaTitle": "ECOVACS DEEBOT N20 PRO PLUS 徹底検証 | 性能とUXを切り分けたリアル分析",
   "metaDescription": "実利用者278名の生レビューを解析。紙パック不要のサイクロン式と8000Paの吸引力を絶賛しつつ、ゴミ収集音や水タンク容量への具体的対策を公開。",
@@ -34,16 +34,17 @@
     }
   },
   "reliability": {
-    "score": 87.8,
+    "score": 81.2,
     "dataAdequacy": {
       "score": 89,
       "weight": 60,
       "description": "収集したレビュー数は、主要な傾向を把握するのに十分な厚みがあると考えられます。さらにデータが追加されても、大きな評価の変動は起こりにくい水準です。"
     },
     "consistency": {
-      "percentage": 87,
+      "percentage": 65,
       "weight": 30,
-      "description": "主要な評価項目において、使った方の意見がおおむね一致しており、製品の特徴が明確に見えています。"
+      "description": "主要な評価項目において、使った方の意見がおおむね一致しており、製品の特徴が明確に見えています。",
+      "score": 65
     },
     "freshness": {
       "score": 83,
@@ -172,7 +173,7 @@
     "sampledReviews": 278,
     "adoptedReviews": 262,
     "excludedReviews": 16,
-    "trustScore": 87.8,
+    "trustScore": 81.2,
     "comment": "レビュー数278件のうち、262件を採用しました。主要項目で評価がおおむね一致しており、高い信頼度（89.15点）を示しています。"
   },
   "reviewKeywords": {

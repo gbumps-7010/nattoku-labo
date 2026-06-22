@@ -7,7 +7,7 @@
   "overallRating": 4.19,
   "totalReviews": 30,
   "price": 26900,
-  "reliabilityScore": 57.2,
+  "reliabilityScore": 53.6,
   "asin": "",
   "metaTitle": "Dreame D10 Plus 詳細分析 | 自動ゴミ収集ロボット掃除機の真実",
   "metaDescription": "Dreame D10 Plusの30件のレビューを解析。静音性、吸引力、アプリ機能など、ユーザーが語るD10 Plusの真実を公開。",
@@ -42,17 +42,17 @@
     }
   },
   "reliability": {
-    "score": 57.2,
+    "score": 53.6,
     "dataAdequacy": {
       "score": 52,
       "weight": 60,
       "description": "レビュー総数が30件と比較的少ないため、データ十分性のスコアは40点です。より多くのレビューで評価の安定性が向上します。"
     },
     "consistency": {
-      "percentage": 70,
+      "percentage": 58,
       "weight": 30,
       "description": "Amazonと楽天の評価に1.0ポイントの差が見られ、評価の一貫性は中程度です。サイト間の評価差が今後の課題となります。",
-      "score": 70
+      "score": 58
     },
     "freshness": {
       "score": 50,
@@ -169,7 +169,7 @@
     "sampledReviews": 30,
     "adoptedReviews": 28,
     "excludedReviews": 2,
-    "trustScore": 57.2,
+    "trustScore": 53.6,
     "comment": "提供された30件のレビューを分析し、2件の重複レビューを除外しました。レビュー数が少ないため、信頼度スコアは中程度です。"
   },
   "reviewKeywords": {
