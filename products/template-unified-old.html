@@ -43,7 +43,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     
     <!-- ナビゲーションCSS -->
-    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/navigation.css?v=20260624c">
     
     <style>
         * {
@@ -102,7 +102,8 @@
         .header-content {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 2rem;
+            padding: 0 clamp(1.5rem, 5vw, 3rem);
+            box-sizing: border-box;
         }
         
         .breadcrumb {
@@ -219,7 +220,8 @@
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 3rem 2rem;
+            padding: 3rem clamp(1.5rem, 5vw, 3rem);
+            box-sizing: border-box;
         }
         
         /* Summary Stats */
@@ -526,7 +528,7 @@
         .price-note {
             display: block;
             font-size: 0.75rem;
-            color: rgba(255, 255, 255, 0.6);
+            color: rgba(255, 255, 255, 0.92);
             margin-top: 0.25rem;
             font-weight: 400;
         }
@@ -613,7 +615,7 @@
                         <span class="price-info-tooltip">
                             <i class="fas fa-info-circle"></i>
                             <span class="tooltip-text">
-                                <strong style="display: block; margin-bottom: 0.5rem; color: #60a5fa;">💡 価格について</strong>
+                                <strong style="display: block; margin-bottom: 0.5rem; color: #60a5fa;">価格について</strong>
                                 表示価格はメーカー希望小売価格です。<br><br>
                                 実際の販売価格は、セールやポイント還元により変動します。<br><br>
                                 最新の市場価格は、下記の各ECサイトボタンからご確認ください。
@@ -682,7 +684,7 @@
         <!-- メインCTA: 総合性能分析の直後 -->
         <section style="background: #f8fafc; padding: 2.5rem; border-radius: 16px; text-align: center; margin: 2rem 0; border: 2px solid #e2e8f0;">
             <h3 style="color: #1e293b; font-size: 1.6rem; margin-bottom: 0.75rem; font-weight: 800;">
-                💡 この製品の詳細情報を確認する
+                この製品の詳細情報を確認する
             </h3>
             <p style="color: #64748b; margin-bottom: 2rem; font-size: 1.05rem; line-height: 1.6;">
                 価格比較・在庫状況・最新レビューを各サイトでチェック<br>
@@ -714,12 +716,12 @@
                 レビューキーワード
             </h2>
             <div class="card">
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem;">
+                <div class="keywords-charts-grid">
                     <div>
                         <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem; color: var(--success-color); display: flex; align-items: center; gap: 0.5rem;">
                             <i class="fas fa-thumbs-up"></i> 高評価キーワード
                         </h3>
-                        <div style="height: 480px; position: relative;">
+                        <div class="keyword-chart-wrap">
                             <canvas id="positiveKeywordsChart"></canvas>
                         </div>
                     </div>
@@ -727,7 +729,7 @@
                         <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem; color: var(--danger-color); display: flex; align-items: center; gap: 0.5rem;">
                             <i class="fas fa-thumbs-down"></i> 低評価キーワード
                         </h3>
-                        <div style="height: 480px; position: relative;">
+                        <div class="keyword-chart-wrap">
                             <canvas id="negativeKeywordsChart"></canvas>
                         </div>
                     </div>
@@ -756,7 +758,7 @@
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
                     <div class="attribute-card" data-attribute="petOwner">
                         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                            <h3 style="font-size: 1.1rem; font-weight: 700; margin: 0;" class="attribute-title">🐕 ペットオーナー</h3>
+                            <h3 style="font-size: 1.1rem; font-weight: 700; margin: 0;" class="attribute-title">ペットオーナー</h3>
                             <span style="font-size: 1.5rem; font-weight: 700; color: var(--primary-color);" class="attribute-overall-score">--</span>
                         </div>
                         <div class="attribute-details">
@@ -766,7 +768,7 @@
                     
                     <div class="attribute-card" data-attribute="apartment">
                         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                            <h3 style="font-size: 1.1rem; font-weight: 700; margin: 0;" class="attribute-title">🏢 アパート・マンション</h3>
+                            <h3 style="font-size: 1.1rem; font-weight: 700; margin: 0;" class="attribute-title">アパート・マンション</h3>
                             <span style="font-size: 1.5rem; font-weight: 700; color: var(--primary-color);" class="attribute-overall-score">--</span>
                         </div>
                         <div class="attribute-details">
@@ -776,7 +778,7 @@
                     
                     <div class="attribute-card" data-attribute="workingProfessional">
                         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                            <h3 style="font-size: 1.1rem; font-weight: 700; margin: 0;" class="attribute-title">💼 働くプロフェッショナル</h3>
+                            <h3 style="font-size: 1.1rem; font-weight: 700; margin: 0;" class="attribute-title">働くプロフェッショナル</h3>
                             <span style="font-size: 1.5rem; font-weight: 700; color: var(--primary-color);" class="attribute-overall-score">--</span>
                         </div>
                         <div class="attribute-details">
@@ -786,7 +788,7 @@
                     
                     <div class="attribute-card" data-attribute="familyHome">
                         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                            <h3 style="font-size: 1.1rem; font-weight: 700; margin: 0;" class="attribute-title">🏠 ファミリー世帯</h3>
+                            <h3 style="font-size: 1.1rem; font-weight: 700; margin: 0;" class="attribute-title">ファミリー世帯</h3>
                             <span style="font-size: 1.5rem; font-weight: 700; color: var(--primary-color);" class="attribute-overall-score">--</span>
                         </div>
                         <div class="attribute-details">
@@ -882,7 +884,7 @@
             </div>
             
             <p style="text-align: center; color: #64748b; font-size: 0.85rem; margin: 1.5rem 0 0 0; line-height: 1.6;">
-                💡 各サイトで<strong>スペック・機能・保証内容・配送オプション</strong>などの詳細情報をご確認いただけます
+                各サイトで<strong>スペック・機能・保証内容・配送オプション</strong>などの詳細情報をご確認いただけます
             </p>
         </section>
     </div>
@@ -893,192 +895,7 @@
 <!-- ナビゲーションシステム V3.14 -->
 <script src="js/navigation.js"></script>
     
-    <!-- Chart.js Initialization -->
-    <script>
-    // Chart.jsの読み込みを待つ
-    function initCharts() {
-        if (typeof Chart === 'undefined') {
-            console.log('⏳ Chart.js読み込み待機中...');
-            setTimeout(initCharts, 100);
-            return;
-        }
-        
-        console.log('✅ Chart.js読み込み完了');
-        
-        // レーダーチャート初期化
-        window.addEventListener('productDataLoaded', function(e) {
-            const data = e.detail;
-            console.log('📊 チャート描画開始');
-            
-            // レーダーチャート (radarChart または radarChartData に対応)
-            const radarData = data.radarChart || data.radarChartData || window.radarChartData;
-            if (radarData && document.getElementById('radarChart')) {
-                try {
-                    const ctx = document.getElementById('radarChart').getContext('2d');
-                    new Chart(ctx, {
-                        type: 'radar',
-                        data: {
-                            labels: radarData.labels,
-                            datasets: [{
-                                label: '性能スコア',
-                                data: radarData.values,
-                                backgroundColor: 'rgba(37, 99, 235, 0.2)',
-                                borderColor: 'rgba(37, 99, 235, 1)',
-                                borderWidth: 2,
-                                pointBackgroundColor: 'rgba(37, 99, 235, 1)',
-                                pointBorderColor: '#fff',
-                                pointHoverBackgroundColor: '#fff',
-                                pointHoverBorderColor: 'rgba(37, 99, 235, 1)'
-                            }]
-                        },
-                        options: {
-                            responsive: true,
-                            maintainAspectRatio: false,
-                            scales: {
-                                r: {
-                                    beginAtZero: true,
-                                    max: 100,
-                                    ticks: {
-                                        stepSize: 20,
-                                        callback: function(value) {
-                                            return value + '点';
-                                        }
-                                    }
-                                }
-                            },
-                            plugins: {
-                                legend: {
-                                    display: false
-                                }
-                            }
-                        }
-                    });
-                    console.log('✅ レーダーチャート描画完了');
-                } catch (error) {
-                    console.error('❌ レーダーチャートエラー:', error);
-                }
-            }
-            
-            // キーワード横棒グラフ初期化
-            if (data.reviewKeywords) {
-                // ポジティブキーワード
-                const positiveCanvas = document.getElementById('positiveKeywordsChart');
-                if (positiveCanvas && data.reviewKeywords.positive) {
-                    try {
-                        const ctx = positiveCanvas.getContext('2d');
-                        const topPositive = data.reviewKeywords.positive.slice(0, 10);
-                        
-                        new Chart(ctx, {
-                            type: 'bar',
-                            data: {
-                                labels: topPositive.map(item => item.keyword),
-                                datasets: [{
-                                    label: '言及数',
-                                    data: topPositive.map(item => item.count),
-                                    backgroundColor: 'rgba(16, 185, 129, 0.8)',
-                                    borderColor: 'rgba(16, 185, 129, 1)',
-                                    borderWidth: 1
-                                }]
-                            },
-                            options: {
-                                indexAxis: 'y',
-                                responsive: true,
-                                maintainAspectRatio: false,
-                                plugins: {
-                                    legend: {
-                                        display: false
-                                    }
-                                },
-                                scales: {
-                                    x: {
-                                        beginAtZero: true,
-                                        ticks: {
-                                            callback: function(value) {
-                                                return value + '件';
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        });
-                        console.log('✅ ポジティブキーワードチャート描画完了');
-                    } catch (error) {
-                        console.error('❌ ポジティブチャートエラー:', error);
-                    }
-                }
-                
-                // ネガティブキーワード
-                const negativeCanvas = document.getElementById('negativeKeywordsChart');
-                if (negativeCanvas && data.reviewKeywords.negative) {
-                    try {
-                        const ctx = negativeCanvas.getContext('2d');
-                        const topNegative = data.reviewKeywords.negative.slice(0, 10);
-                        
-                        new Chart(ctx, {
-                            type: 'bar',
-                            data: {
-                                labels: topNegative.map(item => item.keyword),
-                                datasets: [{
-                                    label: '言及数',
-                                    data: topNegative.map(item => item.count),
-                                    backgroundColor: 'rgba(239, 68, 68, 0.8)',
-                                    borderColor: 'rgba(239, 68, 68, 1)',
-                                    borderWidth: 1
-                                }]
-                            },
-                            options: {
-                                indexAxis: 'y',
-                                responsive: true,
-                                maintainAspectRatio: false,
-                                plugins: {
-                                    legend: {
-                                        display: false
-                                    }
-                                },
-                                scales: {
-                                    x: {
-                                        beginAtZero: true,
-                                        ticks: {
-                                            callback: function(value) {
-                                                return value + '件';
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        });
-                        console.log('✅ ネガティブキーワードチャート描画完了');
-                    } catch (error) {
-                        console.error('❌ ネガティブチャートエラー:', error);
-                    }
-                }
-            }
-        });
-    }
-    
-    // ページ読み込み完了後に初期化
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', initCharts);
-    } else {
-        initCharts();
-    }
-    
-    // 価格ツールチップを初回3秒間表示
-    window.addEventListener('load', function() {
-        setTimeout(function() {
-            const tooltip = document.querySelector('.price-info-tooltip .tooltip-text');
-            if (tooltip) {
-                tooltip.style.visibility = 'visible';
-                tooltip.style.opacity = '1';
-                
-                // 3秒後に自動非表示
-                setTimeout(function() {
-                    tooltip.style.visibility = 'hidden';
-                    tooltip.style.opacity = '0';
-                }, 3000);
-            }
-        }, 1000);
-    });
-    </script>
+        <!-- Chart.js Initialization -->
+    <script src="js/product-charts.js?v=20260624c"></script>
 </body>
 </html>

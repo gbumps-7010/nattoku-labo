@@ -26,13 +26,14 @@
 }
 
 .nav-container {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 max(2rem, env(safe-area-inset-right, 0px)) 0 max(2rem, env(safe-area-inset-left, 0px));
+    padding: 0 max(clamp(1.5rem, 5vw, 3rem), env(safe-area-inset-right, 0px)) 0 max(clamp(1.5rem, 5vw, 3rem), env(safe-area-inset-left, 0px));
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 60px;
+    box-sizing: border-box;
 }
 
 /* ===== ロゴ ===== */
@@ -555,8 +556,111 @@ body.nav-mobile-open::before {
     }
 }
 
+/* ===== 製品ページヘッダー（固定ナビあり） ===== */
+body:has(#fixed-navigation) header {
+    padding: 2rem 0;
+}
+
+body:has(#fixed-navigation) .header-content {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: max(clamp(1.5rem, 5vw, 3rem), env(safe-area-inset-left, 0px));
+    padding-right: max(clamp(1.5rem, 5vw, 3rem), env(safe-area-inset-right, 0px));
+    box-sizing: border-box;
+}
+
+body:has(#fixed-navigation) .container {
+    padding-left: max(clamp(1.5rem, 5vw, 3rem), env(safe-area-inset-left, 0px));
+    padding-right: max(clamp(1.5rem, 5vw, 3rem), env(safe-area-inset-right, 0px));
+    box-sizing: border-box;
+}
+
+body:has(#fixed-navigation) .price-note {
+    color: rgba(255, 255, 255, 0.92) !important;
+    font-weight: 500;
+}
+
+body:has(#fixed-navigation) .score-label {
+    color: #fff;
+    opacity: 1;
+}
+
+body:has(#fixed-navigation) .product-info > p {
+    color: rgba(255, 255, 255, 0.95);
+}
+
+body:has(#fixed-navigation) .product-meta {
+    opacity: 1;
+}
+
+body:has(#fixed-navigation) .product-meta .rating-display span {
+    color: rgba(255, 255, 255, 0.92);
+    opacity: 1 !important;
+}
+
+body:has(#fixed-navigation) .product-meta > div {
+    color: #fff;
+}
+
+body:has(#fixed-navigation) .breadcrumb {
+    opacity: 1;
+    color: rgba(255, 255, 255, 0.92);
+}
+
+body:has(#fixed-navigation) .breadcrumb .product-title {
+    color: rgba(255, 255, 255, 0.88);
+}
+
+body:has(#fixed-navigation) .reliability-weight-badge {
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+body:has(#fixed-navigation) .reliability-intro-text {
+    color: #334155;
+    font-size: 0.95rem;
+    line-height: 1.75;
+    margin-bottom: 2rem;
+    padding: 0 0.5rem;
+}
+
+/* ===== キーワード横棒グラフ ===== */
+body:has(#fixed-navigation) .keywords-charts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
+    gap: 2rem;
+    min-width: 0;
+}
+
+body:has(#fixed-navigation) .keyword-chart-wrap {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    height: 480px;
+    overflow: hidden;
+}
+
+body:has(#fixed-navigation) .keyword-chart-wrap canvas {
+    max-width: 100% !important;
+}
+
+body:has(#fixed-navigation) .card {
+    min-width: 0;
+    overflow-x: clip;
+}
+
+body:has(#fixed-navigation) .container {
+    min-width: 0;
+}
+
 /* ===== 製品ページ（固定ナビあり）のモバイル調整 ===== */
 @media (max-width: 768px) {
+    body:has(#fixed-navigation) {
+        overflow-x: clip;
+    }
+
     body:has(#fixed-navigation) header {
         padding: 1.25rem 0;
     }
@@ -598,6 +702,36 @@ body.nav-mobile-open::before {
     body:has(#fixed-navigation) .card {
         padding: 1.25rem;
         border-radius: 12px;
+    }
+
+    body:has(#fixed-navigation) .keywords-charts-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    body:has(#fixed-navigation) .keyword-chart-wrap {
+        height: clamp(300px, 78vw, 380px);
+    }
+
+    /* インライン grid の minmax による横はみ出しを防止 */
+    body:has(#fixed-navigation) .card > [style*="minmax(400px"],
+    body:has(#fixed-navigation) .card > [style*="minmax(320px"],
+    body:has(#fixed-navigation) section [style*="minmax(400px"],
+    body:has(#fixed-navigation) section [style*="minmax(320px"],
+    body:has(#fixed-navigation) section [style*="minmax(280px"] {
+        grid-template-columns: 1fr !important;
+    }
+
+    body:has(#fixed-navigation) .reliability-weight-badge {
+        font-size: 0.85rem !important;
+        padding: 0.35rem 0.65rem !important;
+    }
+
+    body:has(#fixed-navigation) .price-info-tooltip .tooltip-text {
+        width: min(280px, calc(100vw - 2.5rem));
+        max-width: calc(100vw - 2.5rem);
+        left: 0;
+        transform: none;
     }
 
     body:has(#fixed-navigation) .chart-container {

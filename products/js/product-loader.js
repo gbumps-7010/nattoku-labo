@@ -271,14 +271,14 @@ function updatePerformanceData(data) {
 
 function updatePerformanceCards(perfData) {
     const perfMapping = [
-        { keys: ['floorCleaning'], icon: '📊', label: 'フローリング清掃' },
-        { keys: ['carpetCleaning'], icon: '⚠️', label: 'カーペット清掃' },
-        { keys: ['petHair', 'petHairRemoval'], icon: '🐕', label: 'ペット毛対応' },
-        { keys: ['nightQuietness', 'quietness'], icon: '🌙', label: '静音性（夜間）' },
-        { keys: ['stepClimbing'], icon: '📏', label: '段差乗り越え' },
-        { keys: ['maintenance'], icon: '🔧', label: 'メンテナンス性' },
-        { keys: ['appStability'], icon: '📱', label: 'アプリ安定性' },
-        { keys: ['batteryLife'], icon: '🔋', label: 'バッテリー持続' }
+        { keys: ['floorCleaning'], label: 'フローリング清掃' },
+        { keys: ['carpetCleaning'], label: 'カーペット清掃' },
+        { keys: ['petHair', 'petHairRemoval'], label: 'ペット毛対応' },
+        { keys: ['nightQuietness', 'quietness'], label: '静音性（夜間）' },
+        { keys: ['stepClimbing'], label: '段差乗り越え' },
+        { keys: ['maintenance'], label: 'メンテナンス性' },
+        { keys: ['appStability'], label: 'アプリ安定性' },
+        { keys: ['batteryLife'], label: 'バッテリー持続' }
     ];
     
     const detailsGrid = document.querySelector('.performance-details-grid');
@@ -300,7 +300,7 @@ function updatePerformanceCards(perfData) {
             
             return `
                 <div class="performance-detail-card ${scoreClass}">
-                    <h4>${item.icon} ${item.label}: ${score}/100点</h4>
+                    <h4>${item.label}: ${score}/100点</h4>
                     <p class="rank-badge">${data.reviewCount}件のレビューから算出</p>
                     <p>${data.comment || '詳細評価情報なし'}</p>
                 </div>
@@ -716,13 +716,13 @@ function updateTopComplaints(data) {
             let cardClass = 'problem-card';
             
             if (item.percentage >= 10) {
-                importanceBadge = '<span class="importance-badge critical">🔴 重要度：高</span>';
+                importanceBadge = '<span class="importance-badge critical">重要度：高</span>';
                 cardClass = 'problem-card critical-issue';
             } else if (item.percentage >= 5) {
-                importanceBadge = '<span class="importance-badge high">🟡 重要度：中</span>';
+                importanceBadge = '<span class="importance-badge high">重要度：中</span>';
                 cardClass = 'problem-card high-issue';
             } else if (item.percentage >= 3) {
-                importanceBadge = '<span class="importance-badge medium">🟢 注意</span>';
+                importanceBadge = '<span class="importance-badge medium">注意</span>';
                 cardClass = 'problem-card medium-issue';
             }
             
@@ -753,7 +753,7 @@ function updateTopComplaints(data) {
                 ${item.details || item.description ? `<p class="problem-description">${item.details || item.description}</p>` : ''}
                 ${solutionHTML ? `
                 <div class="solutions">
-                    <h4 style="font-weight: 700; margin-bottom: 0.75rem;">💡 対策</h4>
+                    <h4 style="font-weight: 700; margin-bottom: 0.75rem;">対策</h4>
                     <ul style="margin: 0; padding-left: 1.5rem; line-height: 1.8;">
                         ${solutionHTML}
                     </ul>
