@@ -2,162 +2,156 @@
   "productId": "eufy-robovac-g30",
   "productName": "Eufy RoboVac G30",
   "manufacturer": "Anker",
-  "modelNumber": "G30",
+  "modelNumber": "T2250",
   "imageUrl": "https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/deal/202604m3/t2253_sale.jpg",
-  "overallRating": 4.16,
-  "totalReviews": 482,
+  "overallRating": 4.12,
+  "totalReviews": 472,
   "price": 29490,
-  "reliabilityScore": 86.3,
+  "reliabilityScore": 85.4,
   "asin": "",
-  "metaTitle": "Eufy RoboVac G30 詳細分析 | 静音性と吸引力で快適な毎日",
-  "metaDescription": "Eufy RoboVac G30の482件のレビューを解析。高い吸引力と静音性、アプリ連携による効率的な清掃で、日々の掃除を劇的に変える真実を公開。",
   "keywords": [
+    "Eufy RoboVac G30",
     "ロボット掃除機",
     "Anker",
-    "Eufy",
-    "G30",
     "静音",
-    "吸引力",
-    "コスパ"
+    "アプリ連携",
+    "ペットの毛"
   ],
+  "metaTitle": "Eufy RoboVac G30 口コミ分析 | 静音性と吸引力の高コスパモデル",
+  "metaDescription": "Eufy RoboVac G30の461件の口コミを徹底解析。静音性の高さやペットの毛に強い吸引力、アプリ連携の安定性など、購入前に知りたい真実を公開します。",
   "categoryC": {
     "userSatisfaction": {
-      "score": 94,
-      "reviewCount": 482,
-      "comment": "多くのユーザーがEufy RoboVac G30の性能と手軽さに大変満足しており、日々の掃除が劇的に改善されたと評価しています。"
+      "score": 88,
+      "reviewCount": 461,
+      "comment": "多くのユーザーが価格以上の性能に満足しており、特に静音性や基本的な吸引力を高く評価しています。掃除の手間が減り、生活の質が向上したとの声が多数寄せられています。"
     },
     "repurchaseIntention": {
-      "percentage": 88,
-      "reviewCount": 424,
-      "comment": "約9割のユーザーが再購入や友人への推奨を検討しており、そのコストパフォーマンスと実用性が高く評価されています。"
+      "percentage": 85,
+      "reviewCount": 461,
+      "comment": "故障時の買い替えで同ブランドの後継機を選ぶリピーターが多い傾向にあります。シンプルな機能と信頼性、コストパフォーマンスの良さが再購入の決め手となっているようです。"
     },
     "failureRate": {
-      "percentage": 12,
+      "percentage": 12.1,
       "reviewCount": 56,
       "breakdown": {
-        "hardware": 8,
-        "software": 3,
-        "environmental": 1
+        "hardware": 8.5,
+        "software": 2.2,
+        "environmental": 1.4
       },
-      "comment": "故障や不具合の報告は全体の約1割に見られますが、多くは保証期間内の対応や環境要因で解決可能なケースです。"
+      "comment": "1～2年でバッテリー劣化や走行不能、回転ブラシのエラーが発生するとの報告が散見されます。ただし、Ankerのカスタマーサポートの対応は概ね良好と評価されています。"
     }
   },
   "reliability": {
-    "score": 86.3,
+    "score": 85.4,
     "dataAdequacy": {
-      "score": 99,
+      "score": 98,
       "weight": 60,
-      "description": "482件のレビューを分析しており、製品の評価を判断するのに十分なデータ量です。"
+      "description": "レビュー総数は461件と、製品の評価を判断する上で非常に信頼性の高いデータ量です。多様な利用環境からのフィードバックが集まっています。"
     },
     "consistency": {
-      "percentage": 73,
+      "score": 72,
       "weight": 30,
-      "description": "複数のプラットフォームでの評価に大きな乖離がなく、一貫したユーザー体験が報告されています。",
-      "score": 73
+      "description": "各ECサイトでの評価は概ね一致していますが、一部で故障報告やWi-Fi接続に関する不満も見られ、評価にばらつきが生じています。",
+      "percentage": 72
     },
     "freshness": {
       "score": 50,
       "weight": 10,
-      "description": "直近30日間のレビュー比率は低いものの、長期的な視点での評価が蓄積されています。"
+      "description": "発売から時間が経過しているため最新の口コミは少なめですが、長期利用者のレビューが多く、耐久性に関する貴重な情報が含まれています。"
     }
   },
   "updateInfo": {
-    "lastUpdated": "2026-06-15",
+    "lastUpdated": "2026-06-26",
     "firmwareVersion": "",
-    "note": "本製品は発売から時間が経過していますが、基本的な清掃性能は高く、多くのユーザーに支持されています。ファームウェアの大きな更新は確認されていません。"
+    "note": "口コミは2026年5月までのものを集計。長期利用によるバッテリー劣化やブラシの故障に関する言及が増える傾向にあり、消耗品の定期的な交換が重要です。"
   },
   "timeSaving": {
-    "dailyMinutes": 30,
-    "monthlyHours": 15,
-    "annualHours": 180,
-    "workDaysEquivalent": 22.5,
-    "methodology": "ユーザーのレビューに基づき、手動での掃除時間を平均30分/日と仮定し、ロボット掃除機による削減時間を算出しました。"
+    "vacuumMinutes": 10,
+    "mopMinutes": 9,
+    "dailyMinutes": 19,
+    "monthlyHours": 9.5,
+    "annualHours": 115.6,
+    "workDaysEquivalent": 14.4
   },
   "operationalCost": {
-    "daily": 25,
-    "dailyNote": "消耗品の実質的な日割りコスト",
-    "monthly": 750,
-    "annual": 9000,
+    "daily": 23,
+    "dailyNote": "交換用パーツキットを年2回交換した場合の実質的な日割りコストです。電気代は含みません。",
+    "monthly": 708,
+    "annual": 8500,
     "consumables": [
       {
-        "item": "サイドブラシ",
-        "replacementFrequency": "3ヶ月ごと",
-        "unitCost": 500,
-        "annualCost": 2000
-      },
-      {
-        "item": "メインブラシ",
+        "item": "交換用回転ブラシ",
         "replacementFrequency": "6ヶ月ごと",
         "unitCost": 1500,
         "annualCost": 3000
       },
       {
-        "item": "フィルター",
-        "replacementFrequency": "2ヶ月ごと",
-        "unitCost": 333,
-        "annualCost": 2000
+        "item": "交換用サイドブラシ",
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 750,
+        "annualCost": 3000
       },
       {
-        "item": "バッテリー",
-        "replacementFrequency": "2年ごと",
-        "unitCost": 4000,
-        "annualCost": 2000
+        "item": "交換用フィルター",
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 625,
+        "annualCost": 2500
       }
     ]
   },
   "performanceAnalysis": {
     "floorCleaning": {
-      "score": 95,
+      "score": 92,
       "reviewCount": 71,
       "positiveReviewCount": 65,
-      "comment": "フローリングの掃除能力は非常に高く、髪の毛やホコリをしっかり吸引します。自動で吸引力を調整し、床を隅々まで清潔に保ちます。"
+      "comment": "フローリングでの吸引力は非常に高く評価されています。ホコリや髪の毛、猫砂までしっかり吸い込み、掃除後の床はサラサラになると多くのユーザーが満足しています。"
     },
     "carpetCleaning": {
-      "score": 80,
+      "score": 75,
       "reviewCount": 41,
-      "positiveReviewCount": 30,
-      "comment": "カーペットやラグの上では自動で吸引力が向上し、ペットの毛も効果的に除去します。ただし、厚手のラグでは引っかかることもあります。"
+      "positiveReviewCount": 29,
+      "comment": "BoostIQ機能によりカーペット上では自動で吸引力が上がりますが、毛足の長いラグではゴミが残りがちです。厚手のカーペットの端でブラシが外れるという報告もあります。"
     },
     "petHairRemoval": {
       "score": 90,
       "reviewCount": 46,
-      "positiveReviewCount": 40,
-      "comment": "猫や犬の抜け毛を効果的に吸引し、ペットのいる家庭で大活躍します。ダストボックスには驚くほどの毛が集まります。"
+      "positiveReviewCount": 42,
+      "comment": "猫や犬の毛をしっかり集めてくれるとペットオーナーから高く評価されています。回転ブラシに毛が絡まりやすいものの、吸引性能自体は十分で、多くの家庭で重宝されています。"
     },
     "quietness": {
-      "score": 92,
-      "reviewCount": 98,
+      "score": 95,
+      "reviewCount": 97,
       "positiveReviewCount": 90,
-      "comment": "動作音が非常に静かで、在宅中や夜間でも気になりません。旧モデルや他社製品と比較しても、その静音性は際立っています。"
+      "comment": "動作音の静かさは本製品の最大の特徴の一つです。多くのレビューで「非常に静か」と評価されており、在宅中や夜間の使用でも気にならないレベルだと好評です。"
     },
     "stepClimbing": {
       "score": 70,
       "reviewCount": 59,
-      "positiveReviewCount": 40,
-      "comment": "低い段差やカーペットはスムーズに乗り越えますが、玄関などの高い段差では落下する可能性があり注意が必要です。"
+      "positiveReviewCount": 41,
+      "comment": "1-2cm程度の段差やラグは乗り越えますが、玄関など大きな段差からは落下する事例が報告されています。落下防止センサーはありますが、過信は禁物で物理的な対策が推奨されます。"
     },
     "maintenance": {
-      "score": 85,
+      "score": 72,
       "reviewCount": 42,
-      "positiveReviewCount": 35,
-      "comment": "ゴミ捨ては比較的簡単ですが、ブラシに髪の毛が絡まりやすく定期的な手入れが必要です。消耗品は安価で入手しやすいです。"
+      "positiveReviewCount": 28,
+      "comment": "ダストボックスは水洗い可能で衛生的ですが、回転ブラシに髪の毛が絡まりやすく、定期的な手入れが必要です。また、サイドブラシが段差などで外れやすいとの指摘もあります。"
     },
     "appStability": {
-      "score": 75,
+      "score": 80,
       "reviewCount": 125,
-      "positiveReviewCount": 80,
-      "comment": "アプリ連携でスケジュール設定や掃除経路の確認が可能ですが、Wi-Fi接続に苦労するユーザーも多く、安定性に課題が見られます。"
+      "positiveReviewCount": 95,
+      "comment": "アプリによるスケジュール設定や掃除履歴の確認は便利だと評価されています。しかし、初期のWi-Fi接続で苦労する声が多く、2.4GHz帯への接続が必須な点に注意が必要です。"
     },
     "batteryLife": {
-      "score": 78,
+      "score": 85,
       "reviewCount": 74,
-      "positiveReviewCount": 50,
-      "comment": "バッテリーは初期の持ちは良好ですが、長期使用で劣化するとの報告もあります。広い部屋では途中で充電が必要になる場合があります。"
+      "positiveReviewCount": 63,
+      "comment": "一度の充電で家全体を掃除できるとの声が多く、バッテリーの持続時間は概ね良好です。ただし、1年半から2年程度で劣化し、稼働時間が短くなるという長期使用者からの報告もあります。"
     }
   },
   "radarChartData": {
     "labels": [
-      "床掃除",
+      "フローリング",
       "カーペット",
       "ペット毛",
       "静音性",
@@ -167,23 +161,23 @@
       "電池"
     ],
     "values": [
-      95,
-      80,
-      90,
       92,
-      70,
-      85,
       75,
-      78
+      90,
+      95,
+      70,
+      72,
+      80,
+      85
     ]
   },
   "dataQuality": {
-    "totalReviews": 482,
-    "sampledReviews": 482,
-    "adoptedReviews": 458,
-    "excludedReviews": 24,
-    "trustScore": 86.3,
-    "comment": "482件のレビューを詳細に分析し、重複や無関係な情報を除外して信頼性の高いデータを作成しました。客観的な評価が可能です。"
+    "totalReviews": 472,
+    "sampledReviews": 461,
+    "adoptedReviews": 461,
+    "excludedReviews": 11,
+    "trustScore": 85.4,
+    "comment": "461件の豊富な口コミを分析。長期利用者のレビューも多く、製品の耐久性や経年劣化に関する信頼性の高い洞察が得られました。一部Wi-Fi設定など特定環境での評価に偏りが見られます。"
   },
   "reviewKeywords": {
     "positive": [
@@ -193,11 +187,11 @@
       },
       {
         "keyword": "静かで快適",
-        "count": 86
+        "count": 85
       },
       {
         "keyword": "使いやすい・便利",
-        "count": 39
+        "count": 38
       },
       {
         "keyword": "吸引力が高い",
@@ -205,7 +199,7 @@
       },
       {
         "keyword": "マッピング・ルートが賢い",
-        "count": 35
+        "count": 34
       },
       {
         "keyword": "家事が楽になった",
@@ -234,11 +228,11 @@
         "count": 56
       },
       {
-        "keyword": "期待を下回る点",
+        "keyword": "段差・家具で引っかかる",
         "count": 17
       },
       {
-        "keyword": "段差・家具で引っかかる",
+        "keyword": "期待を下回る点",
         "count": 17
       },
       {
@@ -270,148 +264,118 @@
   "successStrategies": [
     {
       "rank": 1,
-      "issue": "本体の故障やバッテリー劣化",
-      "occurrenceRate": 12,
+      "issue": "回転ブラシの故障（エラー4）",
+      "occurrenceRate": 12.1,
       "occurrenceCount": 56,
-      "environmentalFactor": "長期使用、個体差",
-      "technicalDescription": "バッテリーの急速な劣化や、走行系・ブラシ系のモーター不具合が報告されています。精密機器のため個体差も影響します。",
+      "environmentalFactor": "髪の毛やペットの毛、紐状のゴミの絡まり",
+      "technicalDescription": "回転ブラシに異物が絡まり、モーターに負荷がかかることで動作が停止するエラーです。放置するとモーター自体の故障につながる可能性があります。",
       "avoidanceStrategies": [
         {
-          "method": "保証期間内のサポート活用",
+          "method": "定期的に回転ブラシと接続部を清掃する",
           "effectiveness": "高",
           "technicalLevel": "初級",
-          "technicalRationale": "Ankerは24ヶ月保証を提供しており、初期不良や自然故障に対しては無償で修理・交換対応が可能です。購入後は保証期間を確認しましょう。"
+          "technicalRationale": "メーカーも推奨する最も基本的な対策です。ブラシや軸に絡まった髪の毛やホコリを取り除くことで、モーターへの負荷を軽減し、エラーの発生を未然に防ぎます。"
         },
         {
-          "method": "定期的なメンテナンス",
-          "effectiveness": "中",
+          "method": "床に落ちているケーブルや紐を片付ける",
+          "effectiveness": "高",
           "technicalLevel": "初級",
-          "technicalRationale": "ブラシやフィルターの清掃をこまめに行うことで、部品への負荷を軽減し、故障のリスクを低減できます。消耗品の交換も重要です。"
+          "technicalRationale": "ロボット掃除機が苦手とする紐状のゴミを事前に取り除くことで、ブラシへの絡まりを根本的に防ぎます。掃除前の数分の片付けが、結果的に故障リスクを大幅に低減します。"
         }
       ],
-      "preventionTips": "購入後は保証期間を確認し、定期的な清掃と消耗品交換で本体を長持ちさせましょう。不具合時は早めにサポートへ連絡を。"
+      "preventionTips": "掃除を開始する前に、床に落ちている長い髪の毛をフローリングワイパーなどで軽く取っておくと、ブラシへの絡まりを大幅に減らすことができ、メンテナンスの手間が省けます。"
     },
     {
       "rank": 2,
-      "issue": "段差やコードによる停止",
-      "occurrenceRate": 4,
+      "issue": "段差からの落下・スタック",
+      "occurrenceRate": 3.7,
       "occurrenceCount": 17,
-      "environmentalFactor": "室内の段差、床に散らばるコード",
-      "technicalDescription": "ジャイロセンサーとPathトラッキングセンサーで経路を把握しますが、特定の段差や細いコードは障害物として認識しにくい場合があります。車輪が浮くとエラー停止します。",
+      "environmentalFactor": "玄関の段差、厚手のラグ、黒い色の床材",
+      "technicalDescription": "落下防止センサーは搭載されていますが、段差の高さや床の色、光の反射具合によっては正しく認識できず、落下や立ち往生（スタック）の原因となります。",
       "avoidanceStrategies": [
         {
-          "method": "床の整理徹底",
+          "method": "玄関など落下危険箇所に物理的な仕切りを置く",
           "effectiveness": "高",
           "technicalLevel": "初級",
-          "technicalRationale": "床に散らばるコードや薄いマット、小さな障害物を片付けることで、ロボット掃除機がスムーズに走行し、停止するリスクを大幅に減らせます。"
+          "technicalRationale": "本モデルはアプリでの進入禁止エリア設定に対応していないため、物理的な障害物を置くことが最も確実な対策です。少し重さのある箱や専用のゲートなどが有効です。"
         },
         {
-          "method": "段差対策の実施",
+          "method": "落下防止センサーを定期的に清掃する",
           "effectiveness": "中",
           "technicalLevel": "初級",
-          "technicalRationale": "玄関など落下しやすい場所にはドアストッパーを置くか、市販の段差解消スロープを設置することで、安全な運用が可能です。"
+          "technicalRationale": "センサーにホコリが付着すると感度が低下し、段差を誤認識する原因になります。メーカーは乾いた布での定期的な清掃を推奨しており、センサーの性能維持に繋がります。"
         }
       ],
-      "preventionTips": "掃除前に床のコードや小物を片付け、段差には対策を施すことで、ロボット掃除機が効率よく稼働し、トラブルを未然に防げます。"
+      "preventionTips": "充電ステーションを階段や玄関の近くに設置すると、充電に戻る際に落下するリスクが高まります。落下する可能性のある場所から離れた壁際に設置することが推奨されます。"
     },
     {
       "rank": 3,
-      "issue": "動作音の懸念",
-      "occurrenceRate": 3,
-      "occurrenceCount": 14,
-      "environmentalFactor": "吸引モード、在宅時の使用",
-      "technicalDescription": "標準モードでは静音性が高いですが、BoostIQモードや最大吸引モードではモーターの回転数が上がり、それに伴い動作音も大きくなります。特にカーペット上では顕著です。",
+      "issue": "Wi-Fi接続ができない",
+      "occurrenceRate": 3.7,
+      "occurrenceCount": 17,
+      "environmentalFactor": "5GHz帯のWi-Fiルーター、特殊なネットワーク設定",
+      "technicalDescription": "本製品は2.4GHz帯のWi-Fiにのみ対応しています。多くの家庭用ルーターは5GHz帯と2.4GHz帯を併用しているため、設定時にスマートフォンが5GHz帯に接続されていると失敗します。",
       "avoidanceStrategies": [
         {
-          "method": "スケジュール清掃の活用",
-          "effectiveness": "高",
-          "technicalLevel": "初級",
-          "technicalRationale": "外出中に自動で掃除を開始するようアプリでスケジュールを設定することで、動作音を気にすることなく常に清潔な床を保てます。"
-        },
-        {
-          "method": "吸引モードの調整",
-          "effectiveness": "中",
-          "technicalLevel": "初級",
-          "technicalRationale": "アプリから吸引モードを「標準」に設定することで、動作音を抑えることが可能です。ただし、吸引力は低下します。"
-        }
-      ],
-      "preventionTips": "在宅時は標準モード、外出時は強力モードなど、状況に応じて吸引モードを使い分けましょう。最も効果的なのは外出中の自動清掃です。"
-    },
-    {
-      "rank": 4,
-      "issue": "Wi-Fi接続の不安定さ",
-      "occurrenceRate": 4,
-      "occurrenceCount": 20,
-      "environmentalFactor": "ルーター設定、電波環境",
-      "technicalDescription": "本機は2.4GHz帯のWi-Fiにのみ対応しており、5GHz帯との混在環境やルーターの設定によっては接続が不安定になることがあります。初期設定時の手順も重要です。",
-      "avoidanceStrategies": [
-        {
-          "method": "2.4GHz帯Wi-Fiへの接続",
+          "method": "設定時、スマホを2.4GHz帯のWi-Fiに接続する",
           "effectiveness": "高",
           "technicalLevel": "中級",
-          "technicalRationale": "ルーターの設定を確認し、本機を2.4GHz帯のWi-Fiネットワークに接続してください。SSIDが分かれている場合は2.4GHz帯を選択します。"
+          "technicalRationale": "Ankerの公式サポートページでも案内されている正規の手順です。スマートフォンのWi-Fi設定画面で、SSIDの末尾が「-2G」や「-g」となっているネットワークを選択してからアプリ設定を行います。"
         },
         {
-          "method": "初期設定時の工夫",
+          "method": "一時的にスマホを機内モードにしてWi-FiのみONにする",
           "effectiveness": "中",
           "technicalLevel": "初級",
-          "technicalRationale": "Wi-Fi接続時にスマートフォンの機内モードをオンにしてからWi-Fiをオンにし、2.4GHz帯に接続すると、スムーズに設定できる場合があります。"
+          "technicalRationale": "モバイルデータ通信がWi-Fi接続を妨害するケースがあります。機内モードで余計な通信を遮断し、Wi-Fi接続だけに集中させることで、設定が成功しやすくなる場合があります。"
         }
       ],
-      "preventionTips": "Wi-Fi接続時は2.4GHz帯を確実に選択し、ルーター設定や電波環境を確認しましょう。初期設定でつまずいたらAnkerサポートへ相談を。"
+      "preventionTips": "Wi-Fiのパスワードに特殊な記号を使用していると接続に失敗することがあります。接続がうまくいかない場合は、一度簡単な英数字のみのパスワードに変更してみるのも有効な手段です。"
     }
   ],
   "topComplaints": [
     {
-      "title": "故障・不具合の発生",
-      "percentage": 12,
+      "title": "1〜2年で故障・不具合が発生",
+      "percentage": 12.1,
       "reviewCount": 56,
-      "description": "購入後短期間での故障や、バッテリーの劣化、ブラシの不具合など、様々なトラブル報告があります。耐久性への懸念が見られます。",
-      "solution": "Ankerのカスタマーサポートは丁寧で、保証期間内であれば修理や交換対応が期待できます。不具合発生時は速やかに連絡しましょう。"
+      "description": "最も多い不満点は、1〜2年の使用で発生する故障報告です。特に「回転ブラシが動かなくなる（エラー4）」や「バッテリーが持たなくなる」「前輪が外れる」といった物理的な不具合が目立ちます。",
+      "solution": "Ankerのカスタマーサポートに連絡することを推奨します。保証期間内であれば無償修理や交換対応の実績が多数報告されています。保証期間外でも、消耗品（ブラシ、バッテリー）の交換で改善する場合があります。"
     },
     {
-      "title": "段差や家具での引っかかり",
-      "percentage": 4,
+      "title": "段差で引っかかる・玄関から落下する",
+      "percentage": 3.7,
       "reviewCount": 17,
-      "description": "低い段差は乗り越えますが、玄関などの高い段差や特定の家具の脚に引っかかり、停止してしまうことがあります。コードの巻き込みも注意が必要です。",
-      "solution": "進入禁止エリアの設定はできませんが、段差の手前に物を置いたり、コード類をまとめることで、引っかかりを減らせます。段差解消スロープも有効です。"
+      "description": "落下防止センサーはあるものの、玄関の框（かまち）など数センチの段差を認識できずに落下する事例が複数報告されています。また、厚手のカーペットや敷居で立ち往生することもあります。",
+      "solution": "このモデルはアプリでの進入禁止エリア設定ができないため、物理的な障害物を置くのが最も確実です。また、センサーの定期的な清掃で感度を維持することが重要です。"
     },
     {
-      "title": "動作音の大きさ",
-      "percentage": 3,
-      "reviewCount": 14,
-      "description": "静音性を評価する声が多い一方で、吸引力が上がると音が大きくなる、特定の環境下で音が気になるという意見もあります。",
-      "solution": "アプリから吸引モードを調整することで、動作音を抑えることが可能です。外出中にスケジュール設定して稼働させるのが最も効果的です。"
-    },
-    {
-      "title": "Wi-Fi接続の不安定さ",
-      "percentage": 4,
-      "reviewCount": 20,
-      "description": "Wi-Fi接続がうまくいかない、途中で切れる、アプリ連携が不安定といった報告があります。特に2.4GHz帯のみ対応のため、ルーター設定に注意が必要です。",
-      "solution": "ルーターの2.4GHz帯に接続し、初期設定時に工夫を凝らすことで改善する場合があります。Ankerサポートへの問い合わせも有効です。"
+      "title": "Wi-Fi（アプリ）の初期設定が難しい",
+      "percentage": 3.7,
+      "reviewCount": 17,
+      "description": "アプリ連携機能は便利ですが、「Wi-Fiに全く繋がらない」という声が一定数あります。原因の多くは、本機が2.4GHz帯のWi-Fiにしか対応していないことを知らずに設定しようとしたケースです。",
+      "solution": "設定を行うスマートフォンの接続先を、必ず2.4GHz帯のWi-Fiネットワーク（SSIDの末尾がgや2Gなど）に切り替えてからアプリの指示に従ってください。これで大半の問題は解決します。"
     }
   ],
   "attributeScores": {
     "petOwner": {
-      "overall": 91,
+      "overall": 87,
       "details": [
         {
-          "field": "ペット毛吸引力",
+          "field": "ペットの毛吸引",
           "score": 90,
           "reviewCount": 46,
-          "comment": "ペットの毛を強力に吸引し、猫や犬のいる家庭で特に高い評価を得ています。ダストボックスには驚くほどの毛が集まります。"
+          "comment": "猫や犬の抜け毛をしっかり吸い取ると、多くのペットオーナーから高く評価されています。掃除の手間が大幅に削減できたとの声が多数です。"
         },
         {
-          "field": "床掃除",
+          "field": "静音性",
           "score": 95,
-          "reviewCount": 71,
-          "comment": "フローリングの清掃能力は非常に高く、ペットの毛だけでなく、猫砂などの細かいゴミも効率的に除去します。"
+          "reviewCount": 97,
+          "comment": "動作音が非常に静かなため、ペットが怖がったりストレスを感じたりすることが少ないという利点があります。在宅中でも気兼ねなく使用できます。"
         },
         {
-          "field": "メンテナンス",
-          "score": 85,
+          "field": "メンテナンス性",
+          "score": 72,
           "reviewCount": 42,
-          "comment": "ブラシにペットの毛が絡まりやすいものの、比較的簡単に手入れが可能です。消耗品も安価で入手しやすい点が評価されています。"
+          "comment": "ブラシにペットの毛が絡まりやすく、こまめな手入れが必要です。この点を許容できるかが、ペットオーナーにとっての評価の分かれ目となります。"
         }
       ]
     },
@@ -420,67 +384,67 @@
       "details": [
         {
           "field": "静音性",
-          "score": 92,
-          "reviewCount": 98,
-          "comment": "マンション環境に最適な静音設計で、在宅中や夜間でも周囲を気にせず使用できます。動作音の小ささに驚く声が多く聞かれます。"
+          "score": 95,
+          "reviewCount": 97,
+          "comment": "集合住宅で最も重要視される静音性は、本製品の最大の強みです。隣室や階下への騒音を気にすることなく、時間を問わず使用できる点が絶賛されています。"
         },
         {
-          "field": "床掃除",
-          "score": 95,
+          "field": "フローリング掃除",
+          "score": 92,
           "reviewCount": 71,
-          "comment": "フローリング中心のマンションで高い清掃能力を発揮し、埃や髪の毛を徹底的に除去します。床を常に清潔に保ちます。"
+          "comment": "マンションで一般的なフローリングの掃除性能は非常に高いです。ホコリや髪の毛を効率的に除去し、素足で歩いても快適な床を維持できます。"
         },
         {
           "field": "段差乗り越え",
           "score": 70,
           "reviewCount": 59,
-          "comment": "室内の低い段差は問題なく乗り越えますが、玄関などの高い段差には注意が必要です。事前に障害物を整理することでスムーズに稼働します。"
+          "comment": "部屋間の敷居など、わずかな段差で立ち往生することがあります。完全なバリアフリー環境でない場合は、事前の対策が必要になるかもしれません。"
         }
       ]
     },
     "workingProfessional": {
-      "overall": 80,
+      "overall": 83,
       "details": [
         {
           "field": "アプリ安定性",
-          "score": 75,
+          "score": 80,
           "reviewCount": 125,
-          "comment": "アプリからの遠隔操作やスケジュール設定が可能で、忙しい共働き世帯の強い味方です。ただし、Wi-Fi接続には一部課題が見られます。"
+          "comment": "外出先から掃除を開始したり、スケジュールを設定したりできるアプリ機能は、多忙な社会人にとって非常に便利です。Wi-Fi初期設定のハードルさえ越えれば快適に使えます。"
         },
         {
-          "field": "メンテナンス",
-          "score": 85,
+          "field": "メンテナンス性",
+          "score": 72,
           "reviewCount": 42,
-          "comment": "ゴミ捨ては簡単ですが、ブラシの毛絡まりなど定期的な手入れは必要です。消耗品が安価なため、ランニングコストを抑えられます。"
+          "comment": "定期的なゴミ捨てやブラシの清掃が必要です。手間を最小限にしたい場合は、自動ゴミ収集機能付きの上位モデルを検討する方が良いかもしれません。"
         },
         {
           "field": "バッテリー",
-          "score": 78,
+          "score": 85,
           "reviewCount": 74,
-          "comment": "一度の充電で比較的広い範囲を清掃可能ですが、長時間の稼働には途中で充電が必要となる場合があります。使用状況に応じた運用が重要です。"
+          "comment": "帰宅時に掃除が完了している安心感は大きいです。標準的なマンションであれば、一度の充電で十分に掃除を終えることができるバッテリー性能を持っています。"
         }
       ]
     },
     "familyHome": {
-      "overall": 85,
+      "overall": 84,
       "details": [
         {
-          "field": "床掃除",
-          "score": 95,
+          "field": "フローリング掃除",
+          "score": 92,
           "reviewCount": 71,
-          "comment": "子供の食べこぼしや日常のゴミを強力に吸引し、家族が安心して過ごせる清潔な床を保ちます。掃除の手間を大幅に削減します。"
+          "comment": "子供の食べこぼしやホコリがたまりやすいリビングの掃除で活躍します。基本的な吸引性能が高く、日々の床の清潔さを保つのに十分な能力があります。"
+        },
+        {
+          "field": "カーペット掃除",
+          "score": 75,
+          "reviewCount": 41,
+          "comment": "子供部屋のラグやカーペットの掃除もこなしますが、完璧ではありません。髪の毛や奥に入り込んだゴミは取り残すことがあるため、補助的な掃除は必要です。"
         },
         {
           "field": "バッテリー",
-          "score": 78,
+          "score": 85,
           "reviewCount": 74,
-          "comment": "広いリビングや複数の部屋を清掃するのに十分なバッテリー容量ですが、より広い家では途中で充電が必要になることもあります。"
-        },
-        {
-          "field": "カーペット",
-          "score": 80,
-          "reviewCount": 41,
-          "comment": "カーペット上のゴミや埃を効果的に除去し、子供が遊ぶスペースも清潔に保ちます。BoostIQ機能で吸引力が自動調整されます。"
+          "comment": "広い一軒家でも、途中でバッテリーが切れることなく掃除を完了できる性能があります。ただし、部屋数が多い場合は複数回に分ける必要があるかもしれません。"
         }
       ]
     }

@@ -2,155 +2,156 @@
   "productId": "eufy-robovac-g10-hybrid",
   "productName": "Eufy RoboVac G10 Hybrid",
   "manufacturer": "Anker",
-  "modelNumber": "T2150521",
+  "modelNumber": "T2150",
   "imageUrl": "https://thumbnail.image.rakuten.co.jp/@0_mall/b-surprise2/cabinet/cm146/4571411191008_1.jpg",
-  "overallRating": 3.47,
+  "overallRating": 3.28,
   "totalReviews": 102,
   "price": 29990,
-  "reliabilityScore": 81.5,
+  "reliabilityScore": 69.8,
   "asin": "",
-  "metaTitle": "Eufy RoboVac G10 Hybrid 詳細分析 | 吸引と水拭きの両方に対応した高コスパモデル",
-  "metaDescription": "Eufy RoboVac G10 Hybridの102件のレビューを解析。強力な吸引力と水拭き機能、優れたコストパフォーマンスの真実を公開。",
+  "metaTitle": "Eufy RoboVac G10 Hybrid 口コミ分析 | 故障率とバッテリー寿命の真実",
+  "metaDescription": "Eufy RoboVac G10 Hybridの94件の口コミを徹底解析。フローリング掃除での高評価の一方、バッテリーの寿命や段差でのエラーなど、購入前に知るべき課題を公開します。",
   "keywords": [
-    "ロボット掃除機",
     "Eufy RoboVac G10 Hybrid",
+    "ロボット掃除機",
     "Anker",
     "水拭き",
-    "吸引力",
-    "コスパ"
+    "口コミ",
+    "評判"
   ],
   "categoryC": {
     "userSatisfaction": {
-      "score": 85,
-      "reviewCount": 102,
-      "comment": "多くのユーザーが吸引力と水拭き機能、手軽さに満足しています。特にフローリングの清掃能力は高く評価されています。"
+      "score": 75,
+      "reviewCount": 94,
+      "comment": "フローリングの吸引と水拭き性能には満足の声が多い一方、バッテリーの寿命が1〜2年と短い点が評価を下げています。長期的な利用を考えると、この点が大きな懸念材料となるでしょう。"
     },
     "repurchaseIntention": {
-      "percentage": 75,
-      "reviewCount": 77,
-      "comment": "バッテリー寿命の懸念はあるものの、コストパフォーマンスとAnkerのサポート体制を評価し、再購入を検討する声も多く見られます。"
+      "percentage": 40,
+      "reviewCount": 94,
+      "comment": "価格の手頃さや基本的な清掃能力は評価されていますが、バッテリーの故障報告が多数あり、再購入をためらうユーザーが多いです。サポート対応は良いものの、製品自体の信頼性が課題です。"
     },
     "failureRate": {
       "percentage": 28,
-      "reviewCount": 29,
+      "reviewCount": 94,
       "breakdown": {
-        "hardware": 15,
-        "software": 8,
-        "environmental": 5
+        "hardware": 25,
+        "software": 1,
+        "environmental": 2
       },
-      "comment": "バッテリー故障が主な原因で、約28%のレビューで不具合が報告されています。ナビゲーションエラーも散見されます。"
+      "comment": "故障報告のほとんどがバッテリー関連で、1年〜2年での寿命や充電不良が25件以上と突出しています。保証期間内の交換対応はあるものの、製品の耐久性には大きな課題があると言えます。"
     }
   },
   "reliability": {
-    "score": 81.5,
+    "score": 69.8,
     "dataAdequacy": {
-      "score": 80,
+      "score": 78,
       "weight": 60,
-      "description": "提供されたレビュー数は102件であり、データ十分性の基準を満たしています。製品の全体像を把握するのに十分な量です。"
+      "description": "レビュー総数94件。多様な意見を分析するには十分なデータ量ですが、より高い信頼性を得るためには数百件規模のデータが望ましいです。"
     },
     "consistency": {
-      "percentage": 95,
+      "score": 60,
       "weight": 30,
-      "description": "単一サイトからのレビューデータのため、サイト間の一貫性評価は行っていません。提供データ内での評価は安定しています。",
-      "score": 95
+      "description": "性能評価が二極化。フローリング清掃や静音性は高評価ですが、バッテリー寿命や段差対応、カーペット清掃に関する否定的な意見が多く、評価の一貫性は低い傾向にあります。",
+      "percentage": 60
     },
     "freshness": {
       "score": 50,
       "weight": 10,
-      "description": "最新レビューの割合は低いですが、長期的な使用感に関する貴重な情報が含まれており、製品の経年変化を把握できます。"
+      "description": "直近30日以内のレビューは全体の1%程度と少なく、鮮度は低いです。現在のファームウェアや製品改善が反映されていない可能性がある点に注意が必要です。"
     }
   },
   "updateInfo": {
-    "lastUpdated": "2026-06-15",
+    "lastUpdated": "2026-06-26",
     "firmwareVersion": "",
-    "note": "ファームウェアの更新情報は提供されていません。最新レビュー時期や全体傾向を要約しています。"
+    "note": "2022年から2026年にかけての口コミを分析。特にバッテリーの耐久性に関する問題が継続的に指摘されており、長期利用での信頼性が主な課題として挙げられています。"
   },
   "timeSaving": {
+    "vacuumMinutes": 10,
+    "mopMinutes": 9,
     "dailyMinutes": 19,
     "monthlyHours": 9.5,
-    "annualHours": 114,
-    "workDaysEquivalent": 14.25,
-    "methodology": "ロボット掃除機が毎日自動で清掃を行うことで、手動での掃除にかかる時間を大幅に削減。年間約114時間の節約効果が見込まれます。"
+    "annualHours": 115.6,
+    "workDaysEquivalent": 14.4
   },
   "operationalCost": {
     "daily": 23,
-    "dailyNote": "消耗品の実質的な日割りコスト",
-    "monthly": 675,
-    "annual": 8100,
+    "dailyNote": "消耗品（フィルター、サイドブラシ、モッピングクロス）の実質的な日割りコスト。バッテリー交換費用は含まず。",
+    "monthly": 703,
+    "annual": 8440,
     "consumables": [
       {
-        "item": "交換用フィルターセット (2個)",
+        "item": "交換用フィルター",
         "replacementFrequency": "6ヶ月ごと",
-        "unitCost": 1190,
-        "annualCost": 2380
+        "unitCost": 1430,
+        "annualCost": 2860
       },
       {
-        "item": "交換用サイドブラシ (4個)",
-        "replacementFrequency": "12ヶ月ごと",
-        "unitCost": 1320,
-        "annualCost": 1320
+        "item": "サイドブラシ",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 1290,
+        "annualCost": 2580
       },
       {
-        "item": "交換用モップクロス (3枚組)",
-        "replacementFrequency": "3ヶ月ごと",
-        "unitCost": 1100,
-        "annualCost": 4400
+        "item": "モッピングクロス",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 1500,
+        "annualCost": 3000
       }
     ]
   },
   "performanceAnalysis": {
     "floorCleaning": {
-      "score": 90,
+      "score": 88,
       "reviewCount": 40,
       "positiveReviewCount": 35,
-      "comment": "フローリングの吸引力は高く、髪の毛やホコリを効率的に除去します。水拭き機能も併用でき、床がサラサラになると好評です。"
+      "comment": "フローリングの吸引と水拭きの同時実行を評価する声が多数。髪の毛やホコリをしっかり除去し、床がサラサラになると好評です。ただし水拭きは軽い汚れ向けで、頑固な汚れには非対応です。"
     },
     "carpetCleaning": {
-      "score": 65,
+      "score": 35,
       "reviewCount": 6,
-      "positiveReviewCount": 3,
-      "comment": "厚手のカーペットも走行可能ですが、毛足の短いカーペットでは吸引力が不足し、ゴミを弾き飛ばすとの指摘もあります。"
+      "positiveReviewCount": 1,
+      "comment": "メインブラシ非搭載のため、カーペットのゴミを弾き飛ばすだけで吸い取れないという厳しい意見が目立ちます。毛足の短いカーペットでも吸引力不足が指摘され、不向きと言えるでしょう。"
     },
     "petHairRemoval": {
-      "score": 80,
+      "score": 85,
       "reviewCount": 11,
-      "positiveReviewCount": 8,
-      "comment": "ペットの毛の吸引力は高く、特にフローリングでは効果を発揮します。ブラシに毛が絡みにくい点も評価されています。"
+      "positiveReviewCount": 9,
+      "comment": "ダイレクト吸引式のため、ブラシへのペットの毛の絡まりがなくメンテナンスが楽だと評価されています。フローリング上の抜け毛掃除には十分な性能を発揮しますが、カーペットでは力不足です。"
     },
     "quietness": {
-      "score": 85,
+      "score": 90,
       "reviewCount": 12,
-      "positiveReviewCount": 9,
-      "comment": "多くのユーザーが静音性を評価しており、在宅中や夜間でも気にならないレベルです。ただし、段差乗り越え時は音が大きくなることがあります。"
+      "positiveReviewCount": 11,
+      "comment": "動作音は非常に静かで、在宅中や夜間でも気にならないとの高評価が多数です。電子レンジと同程度という静音設計は、特に集合住宅での利用において大きなメリットとなっています。"
     },
     "stepClimbing": {
-      "score": 60,
-      "reviewCount": 23,
+      "score": 55,
+      "reviewCount": 22,
       "positiveReviewCount": 10,
-      "comment": "1.5cm程度の段差は乗り越え可能ですが、それ以上の段差や特定の場所で引っかかったり、落下したりするケースが報告されています。"
+      "comment": "約1.5cm程度の段差は乗り越えるものの、それ以上の段差や特定の形状の家具、引き戸のレールで頻繁に立ち往生するとの報告が多数。玄関からの落下事例もあり、物理的な対策が必須です。"
     },
     "maintenance": {
-      "score": 75,
+      "score": 82,
       "reviewCount": 14,
-      "positiveReviewCount": 10,
-      "comment": "ダストボックスのゴミ捨ては簡単で、水洗いも可能です。ただし、交換用フィルターの入手困難やモップパッドの外れやすさに関する指摘があります。"
+      "positiveReviewCount": 12,
+      "comment": "ダストボックスやフィルターが水洗い可能で、清潔に保てると好評です。メインブラシがないため髪の毛の絡まり処理が不要な点も、手入れのしやすさに繋がり、高く評価されています。"
     },
     "appStability": {
-      "score": 60,
+      "score": 65,
       "reviewCount": 24,
-      "positiveReviewCount": 10,
-      "comment": "アプリからの操作やスケジュール設定は便利ですが、Wi-Fi接続が不安定で、接続に苦労するユーザーが多いようです。"
+      "positiveReviewCount": 15,
+      "comment": "スケジュール設定など基本的な操作は可能ですが、Wi-Fi接続が不安定で頻繁に切断される、初回設定に手間取るといった不満の声が見られます。アプリの安定性には改善の余地があります。"
     },
     "batteryLife": {
-      "score": 40,
-      "reviewCount": 33,
-      "positiveReviewCount": 0,
-      "comment": "バッテリーの寿命が短く、1年〜2年以内に故障するケースが多数報告されています。交換対応は手厚いものの、消耗品としての認識が必要です。"
+      "score": 25,
+      "reviewCount": 32,
+      "positiveReviewCount": 3,
+      "comment": "購入後1年から2年でバッテリーが故障・劣化し、充電不可や稼働時間の大幅な減少といった報告が多数。保証期間内の交換対応はあるものの、製品の寿命として最大の弱点となっています。"
     }
   },
   "radarChartData": {
     "labels": [
-      "床掃除",
+      "フローリング",
       "カーペット",
       "ペット毛",
       "静音性",
@@ -160,26 +161,30 @@
       "電池"
     ],
     "values": [
-      90,
-      65,
-      80,
+      88,
+      35,
       85,
-      60,
-      75,
-      60,
-      40
+      90,
+      55,
+      82,
+      65,
+      25
     ]
   },
   "dataQuality": {
     "totalReviews": 102,
-    "sampledReviews": 102,
-    "adoptedReviews": 95,
-    "excludedReviews": 7,
-    "trustScore": 81.5,
-    "comment": "全102件のレビューを詳細に分析し、製品の性能、信頼性、ユーザー満足度を評価しました。一部のレビューは内容が不十分なため除外しています。"
+    "sampledReviews": 94,
+    "adoptedReviews": 94,
+    "excludedReviews": 8,
+    "trustScore": 69.8,
+    "comment": "94件の口コミを分析。バッテリーの寿命に関する具体的な期間を伴う報告が多く、信頼性の高い情報源となっています。ただし、最新の製品改善が反映されていない可能性があります。"
   },
   "reviewKeywords": {
     "positive": [
+      {
+        "keyword": "水拭き・拭き掃除が良い",
+        "count": 27
+      },
       {
         "keyword": "吸引力が高い",
         "count": 14
@@ -189,225 +194,245 @@
         "count": 11
       },
       {
-        "keyword": "使いやすい・便利",
-        "count": 7
+        "keyword": "静かで快適",
+        "count": 6
       },
       {
-        "keyword": "静かで快適",
+        "keyword": "使いやすい・便利",
         "count": 6
       },
       {
         "keyword": "綺麗になる",
         "count": 4
+      },
+      {
+        "keyword": "床がサラサラ・ピカピカ",
+        "count": 4
+      },
+      {
+        "keyword": "故障・トラブルが少ない",
+        "count": 3
+      },
+      {
+        "keyword": "家事が楽になった",
+        "count": 2
       }
     ],
     "negative": [
       {
         "keyword": "故障・不具合",
-        "count": 29
+        "count": 27
       },
       {
         "keyword": "段差・家具で引っかかる",
-        "count": 8
+        "count": 7
       },
       {
         "keyword": "止まってしまう",
         "count": 6
       },
       {
+        "keyword": "期待を下回る点",
+        "count": 5
+      },
+      {
         "keyword": "動作音が気になる",
         "count": 3
       },
       {
-        "keyword": "期待を下回る点",
-        "count": 2
+        "keyword": "コードを巻き込む",
+        "count": 1
+      },
+      {
+        "keyword": "アプリ・Wi-Fi接続が難しい",
+        "count": 1
       }
     ]
   },
   "successStrategies": [
     {
       "rank": 1,
-      "issue": "バッテリー寿命の短さ・故障",
+      "issue": "バッテリーが1〜2年で故障・劣化する",
       "occurrenceRate": 28,
-      "occurrenceCount": 29,
-      "environmentalFactor": "使用頻度、充電環境",
-      "technicalDescription": "リチウムイオンバッテリーの劣化が早く、充電不良や動作停止を引き起こします。高温環境での使用は避けましょう。",
+      "occurrenceCount": 27,
+      "environmentalFactor": "製品の個体差、使用頻度",
+      "technicalDescription": "内蔵リチウムイオンバッテリーのセルまたは制御基板の不具合により、充電サイクルの許容回数が想定より早く上限に達し、充電不可や極端な稼働時間低下を引き起こす問題です。",
       "avoidanceStrategies": [
         {
-          "method": "保証期間内のサポート活用",
+          "method": "保証期間（18ヶ月）内に不具合を報告し交換",
           "effectiveness": "高",
           "technicalLevel": "初級",
-          "technicalRationale": "Ankerは保証期間内のバッテリー故障に対し、迅速な交換対応を提供しています。保証書を確認し、積極的に連絡しましょう。"
+          "technicalRationale": "Ankerのサポートは保証期間内のバッテリー不具合に対し、新品交換で対応する事例が多数報告されています。期間内に連絡することが最も確実な対策です。"
         },
         {
-          "method": "過充電・過放電を避ける",
+          "method": "保証期間外の場合は互換バッテリーに交換",
           "effectiveness": "中",
           "technicalLevel": "中級",
-          "technicalRationale": "バッテリーの寿命を延ばすため、長期間の放置や充電しっぱなしは避け、適切な使用を心がけましょう。"
+          "technicalRationale": "保証期間が過ぎた場合、メーカーは有償修理を受け付けないため、自己責任で市販の互換バッテリーに交換することで延命が可能です。純正品もオンラインで購入できます。"
         }
       ],
-      "preventionTips": "長期使用を考慮し、購入前に保証期間やサポート体制、バッテリー交換の可否を確認することが重要です。"
+      "preventionTips": "長期間使用しない場合でも、バッテリーを完全に空にせず50%程度の充電を保ち、涼しい場所で保管することが劣化抑制に繋がります。また、充電ステーションは常に通電させてください。"
     },
     {
       "rank": 2,
-      "issue": "段差・家具で引っかかる/ナビゲーションの課題",
-      "occurrenceRate": 14,
-      "occurrenceCount": 14,
-      "environmentalFactor": "部屋のレイアウト、障害物の有無",
-      "technicalDescription": "ジャイロセンサーと加速度センサーによるナビゲーションですが、複雑な環境や特定の障害物で誤認識が生じやすいです。",
+      "issue": "段差や家具の脚で頻繁に立ち往生する",
+      "occurrenceRate": 7,
+      "occurrenceCount": 7,
+      "environmentalFactor": "1.6cm以上の段差、日光の反射、黒い床材",
+      "technicalDescription": "本機はマッピング機能を持たず、ジャイロセンサーと落下防止センサーに依存します。そのため、日光が強く反射する床を段差と誤認識したり、複雑な形状の障害物を回避できずに動けなくなります。",
       "avoidanceStrategies": [
         {
-          "method": "床の障害物を徹底的に片付ける",
+          "method": "物理的な侵入禁止策を講じる",
           "effectiveness": "高",
           "technicalLevel": "初級",
-          "technicalRationale": "コードや小物類を床からなくすことで、引っかかりや動作停止のリスクを大幅に減らせ、効率的な清掃が可能です。"
+          "technicalRationale": "本機はアプリでの進入禁止エリア設定に対応していません。そのため、段差のある場所や立ち往生しやすい場所には、障害物を置いたり市販のスロープを設置したりする物理的な対策が有効です。"
         },
         {
-          "method": "充電ステーションの設置場所を見直す",
+          "method": "日光が差し込む時間帯の稼働を避ける",
           "effectiveness": "高",
           "technicalLevel": "初級",
-          "technicalRationale": "ステーション周辺に十分なスペースを確保し、直射日光が当たらない場所に設置することで帰還率が向上します。"
+          "technicalRationale": "落下防止センサーが強い日光を「暗い空間＝段差」と誤認識することが原因です。カーテンを閉めるか、日光が直接床に当たらない時間帯にスケジュール設定することでエラーを回避できます。"
         }
       ],
-      "preventionTips": "ロボット掃除機の動線を意識した部屋のレイアウトを心がけ、定期的に障害物を確認し、スムーズな稼働を促しましょう。"
+      "preventionTips": "掃除を開始する前に、椅子の脚周りや扇風機の土台など、乗り上げて動けなくなりそうな場所を事前に片付ける習慣をつけることが、スムーズな清掃完了への近道です。"
     },
     {
       "rank": 3,
-      "issue": "Wi-Fi接続・アプリの不安定さ",
-      "occurrenceRate": 8,
-      "occurrenceCount": 8,
-      "environmentalFactor": "Wi-Fi環境、ルーターの設置場所",
-      "technicalDescription": "本製品は2.4GHz Wi-Fiのみ対応しており、5GHzとの混在環境や電波状況によって接続が不安定になることがあります。",
+      "issue": "日光の当たる床でエラー停止する",
+      "occurrenceRate": 4,
+      "occurrenceCount": 4,
+      "environmentalFactor": "晴天時の直射日光、明るい色のフローリング",
+      "technicalDescription": "本体底面の落下防止センサー（赤外線）が、床に強く反射した日光を「何もない空間」と誤認識し、落下を避けるために緊急停止する安全機能の誤作動です。特に明るい色の床材で発生しやすいです。",
       "avoidanceStrategies": [
         {
-          "method": "2.4GHz Wi-Fi環境を整備する",
+          "method": "カーテンを閉めて遮光する",
           "effectiveness": "高",
-          "technicalLevel": "中級",
-          "technicalRationale": "多くのロボット掃除機は2.4GHz帯にのみ対応。ルーター設定を確認し、2.4GHz帯を安定させることが重要です。"
+          "technicalLevel": "初級",
+          "technicalRationale": "原因である直射日光を遮ることで、センサーの誤認識を根本的に防ぎます。レースカーテンだけでも効果がある場合が多く、最も手軽で確実な対策です。"
         },
         {
-          "method": "アプリの再接続・再インストール",
-          "effectiveness": "中",
+          "method": "夜間や早朝など、日光が当たらない時間に稼働させる",
+          "effectiveness": "高",
           "technicalLevel": "初級",
-          "technicalRationale": "接続トラブル時は、アプリのキャッシュクリアや再インストール、本体のリセットを試すことで改善する場合があります。"
+          "technicalRationale": "スケジュール機能を活用し、太陽光の影響を受けない時間帯に掃除を行うことで、この問題を完全に回避できます。静音性が高いため、夜間の稼働も比較的容易です。"
         }
       ],
-      "preventionTips": "購入前に自宅のWi-Fi環境（2.4GHz帯の安定性）を確認し、必要に応じて設定を見直すことでトラブルを減らせます。"
+      "preventionTips": "センサーの誤作動を防ぐため、定期的に本体底面の落下防止センサーを乾いた布で清掃し、ホコリや汚れが付着していない状態を保つことも重要です。"
     }
   ],
   "topComplaints": [
     {
-      "title": "バッテリー寿命の短さ・故障",
+      "title": "バッテリーが1〜2年で故障する",
       "percentage": 28,
-      "reviewCount": 29,
-      "description": "多くのユーザーが1〜2年以内にバッテリーの寿命や故障を経験しており、製品の耐久性に関する懸念があります。",
-      "solution": "Ankerのカスタマーサポートは丁寧で迅速な交換対応が評価されています。保証期間内の場合は積極的に連絡しましょう。"
+      "reviewCount": 27,
+      "description": "最も多い不満点で、購入後1年から2年以内にバッテリーが充電できなくなる、または数分しか稼働しないという報告が多数。保証期間（18ヶ月）内であれば交換対応されることが多いです。",
+      "solution": "Ankerの公式サイトによると、保証期間内の自然故障は交換対応となります。期間を過ぎた場合は、公式サイトやECサイトで販売されている交換用バッテリーを自己責任で購入・交換する必要があります。"
     },
     {
-      "title": "段差・家具で引っかかる/ナビゲーションの課題",
-      "percentage": 14,
-      "reviewCount": 14,
-      "description": "段差や家具に引っかかったり、特定の場所で停止したり、充電ステーションに戻れないなど、ナビゲーションに課題が見られます。",
-      "solution": "部屋の障害物を事前に片付け、充電ステーション周辺に十分なスペースを確保することで、動作の安定性が向上します。"
+      "title": "段差や障害物で頻繁に止まる",
+      "percentage": 7,
+      "reviewCount": 7,
+      "description": "マッピング機能がないため、少しの段差やカーペットの端、家具の脚などに乗り上げて動けなくなることが多いです。特に日光が反射する床ではセンサーが誤作動し、エラー停止するとの指摘も目立ちます。",
+      "solution": "メーカーは進入禁止エリア設定機能がないため、物理的に障害物を置くことを推奨しています。段差には市販のスロープを設置し、日光が強い時間帯はカーテンを閉めるなどの対策が有効です。"
     },
     {
-      "title": "Wi-Fi接続・アプリの不安定さ",
-      "percentage": 8,
-      "reviewCount": 8,
-      "description": "アプリの接続が不安定で、Wi-Fiに繋がりにくい、または途中で切れるといった問題が報告されています。",
-      "solution": "2.4GHz帯での接続を再試行し、ルーターとの距離や障害物を確認しましょう。アプリの再インストールも有効です。"
+      "title": "カーペットの掃除能力が低い",
+      "percentage": 5,
+      "reviewCount": 5,
+      "description": "メインの回転ブラシがなく吸引口のみの構造のため、カーペット上のゴミを吸い込む力が弱いという意見が多数。パンくずなどを弾き飛ばしてしまい、ほとんど掃除できないとの厳しい評価もあります。",
+      "solution": "このモデルはフローリング専用と割り切り、カーペットのある部屋では使用しないのが現実的です。メーカーも硬い床の水拭きを主な特長としており、カーペット清掃は想定されていません。"
     }
   ],
   "attributeScores": {
     "petOwner": {
-      "overall": 82,
+      "overall": 86,
       "details": [
         {
-          "field": "ペット毛吸引力",
-          "score": 80,
+          "field": "ペットの毛除去",
+          "score": 85,
           "reviewCount": 11,
-          "comment": "ペットの毛の吸引力は高く、特にフローリングでは効果を発揮します。ブラシに毛が絡みにくい点も評価されています。"
+          "comment": "ブラシレスのダイレクト吸引で、ペットの毛が絡まない手軽さが魅力。フローリングの抜け毛掃除には十分な性能を発揮し、メンテナンスの手間を大幅に削減できます。"
         },
         {
-          "field": "床掃除",
-          "score": 90,
+          "field": "床掃除（フローリング）",
+          "score": 88,
           "reviewCount": 40,
-          "comment": "フローリングの清掃能力は高く、日常的なペットの抜け毛掃除に貢献します。水拭き機能も併用可能です。"
+          "comment": "吸引と水拭きが同時にでき、ペットの足跡や軽い汚れを手間なく除去できます。床がサラサラになるため、ペットと素足で快適に過ごしたい家庭に適しています。"
         },
         {
-          "field": "メンテナンス",
-          "score": 75,
-          "reviewCount": 14,
-          "comment": "ダストボックスのゴミ捨ては簡単ですが、交換用フィルターの入手性には注意が必要です。"
+          "field": "静音性",
+          "score": 90,
+          "reviewCount": 12,
+          "comment": "動作音が非常に静かなため、音に敏感なペットを驚かせにくいです。ペットがリラックスしている時間帯でも気兼ねなく掃除を任せられる点は大きな利点です。"
         }
       ]
     },
     "apartment": {
-      "overall": 82,
+      "overall": 83,
       "details": [
         {
           "field": "静音性",
-          "score": 85,
+          "score": 90,
           "reviewCount": 12,
-          "comment": "多くのユーザーが静音性を評価しており、マンション環境でも周囲を気にせず使用できます。夜間稼働も可能です。"
+          "comment": "電子レンジと同等レベルの静音性は、隣室や階下への騒音を気にするマンション暮らしに最適です。夜間や早朝でも安心して稼働させられると高く評価されています。"
         },
         {
-          "field": "床掃除",
-          "score": 90,
+          "field": "床掃除（フローリング）",
+          "score": 88,
           "reviewCount": 40,
-          "comment": "フローリングの清掃能力は高く、狭い空間でも効率的にゴミを除去します。水拭き機能も利用可能です。"
+          "comment": "コンパクトな設計で、限られたスペースでも効率的にフローリングの掃除と水拭きをこなします。吸引力も十分で、日常的なホコリや髪の毛をしっかり取り除きます。"
         },
         {
           "field": "段差乗り越え",
-          "score": 60,
-          "reviewCount": 23,
-          "comment": "引き戸レール程度の段差は乗り越え可能ですが、大きな段差や複雑な家具配置には注意が必要です。"
+          "score": 55,
+          "reviewCount": 22,
+          "comment": "部屋間の敷居や引き戸のレールで立ち往生する可能性があり、注意が必要です。バリアフリーでない間取りの場合、スムーズな清掃のために事前の対策が求められます。"
         }
       ]
     },
     "workingProfessional": {
-      "overall": 62,
+      "overall": 64,
       "details": [
         {
-          "field": "アプリ安定性",
-          "score": 60,
-          "reviewCount": 24,
-          "comment": "アプリからの操作やスケジュール設定は便利ですが、Wi-Fi接続の不安定さが課題となる場合があります。"
-        },
-        {
-          "field": "メンテナンス",
-          "score": 75,
+          "field": "メンテナンス性",
+          "score": 82,
           "reviewCount": 14,
-          "comment": "ダストボックスのゴミ捨ては簡単で、水洗いも可能です。ただし、消耗品の入手性には注意が必要です。"
+          "comment": "水洗い可能なダストボックスとブラシレス設計により、日々のお手入れが簡単。忙しい中でも手間をかけずに清潔さを保てる点は、共働き世帯にとって大きなメリットです。"
         },
         {
-          "field": "バッテリー",
-          "score": 40,
-          "reviewCount": 33,
-          "comment": "バッテリー寿命が短く、1〜2年で故障するケースが多いため、忙しい共働き世帯には運用上の負担となる可能性があります。"
+          "field": "アプリの安定性",
+          "score": 65,
+          "reviewCount": 24,
+          "comment": "外出先から操作できる点は便利ですが、Wi-Fi接続が不安定になることがあり、確実な遠隔操作には若干の不安が残ります。帰宅したら動いていなかった、という事態も考えられます。"
+        },
+        {
+          "field": "バッテリー寿命",
+          "score": 25,
+          "reviewCount": 32,
+          "comment": "1〜2年で故障する可能性が高く、長期的な利用には不安が残ります。忙しい中で故障対応や買い替えの手間が発生するリスクは、大きなデメリットと言えるでしょう。"
         }
       ]
     },
     "familyHome": {
-      "overall": 68,
+      "overall": 61,
       "details": [
         {
-          "field": "床掃除",
-          "score": 90,
+          "field": "床掃除（フローリング）",
+          "score": 88,
           "reviewCount": 40,
-          "comment": "フローリングの清掃能力は高く、子供の食べこぼしや日常の汚れを効率的に除去し、清潔な環境を保てます。"
+          "comment": "子供の食べこぼしやホコリを吸引と水拭きで同時にきれいにできる点は、ファミリー世帯に好評です。床を清潔に保つことで、安心して子供を遊ばせることができます。"
         },
         {
-          "field": "バッテリー",
-          "score": 40,
-          "reviewCount": 33,
-          "comment": "バッテリー寿命が短く、1〜2年で故障するケースが多いため、広範囲を頻繁に掃除するファミリーには課題となる可能性があります。"
-        },
-        {
-          "field": "カーペット",
-          "score": 65,
+          "field": "カーペット掃除",
+          "score": 35,
           "reviewCount": 6,
-          "comment": "厚手のカーペットも走行可能ですが、毛足の短いカーペットでは吸引力が不足し、ゴミを弾き飛ばすとの指摘もあります。"
+          "comment": "カーペット敷きの部屋がある家庭には全く不向きです。ゴミを吸い取れず、かえって散らかす可能性があり、フローリング専用機として割り切る必要があります。"
+        },
+        {
+          "field": "バッテリー寿命",
+          "score": 25,
+          "reviewCount": 32,
+          "comment": "頻繁な使用が想定されるファミリー世帯において、1〜2年というバッテリー寿命は大きな問題です。長期的なコストパフォーマンスを考えると、より耐久性の高いモデルを検討すべきかもしれません。"
         }
       ]
     }

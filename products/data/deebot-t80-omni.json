@@ -2,43 +2,43 @@
   "productId": "deebot-t80-omni",
   "productName": "DEEBOT T80 OMNI",
   "manufacturer": "ECOVACS",
-  "modelNumber": "T80 OMNI",
+  "modelNumber": "DEX68",
   "imageUrl": "https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260422/dex68-21ee.jpg",
-  "overallRating": 4.46,
-  "totalReviews": 572,
+  "overallRating": 4.36,
+  "totalReviews": 567,
   "price": 149800,
   "reliabilityScore": 92.8,
   "asin": "",
-  "metaTitle": "DEEBOT T80 OMNI 詳細分析 | ロボット掃除機の新時代を切り拓く",
-  "metaDescription": "DEEBOT T80 OMNIの572件のレビューを解析。強力な吸引力、水拭き性能、AIの賢さなど、この革新的なロボット掃除機の真実を公開。",
   "keywords": [
-    "ロボット掃除機",
-    "ECOVACS",
     "DEEBOT T80 OMNI",
+    "エコバックス",
+    "ロボット掃除機",
     "水拭き",
-    "自動洗浄",
-    "AIナビゲーション"
+    "ローラーモップ",
+    "自動ゴミ収集"
   ],
+  "metaTitle": "DEEBOT T80 OMNI 詳細分析 | 548件の口コミでわかる実力と評判",
+  "metaDescription": "DEEBOT T80 OMNIの548件の口コミを徹底解析。強力な吸引力と独自のローラー式水拭きの実力、賢いマッピング性能や静音性など、購入前に知るべき真実を公開します。",
   "categoryC": {
     "userSatisfaction": {
-      "score": 94,
-      "reviewCount": 572,
-      "comment": "多くのユーザーが「買ってよかった」と評価。水拭き性能や静音性、AIの賢さに感動し、日々の家事負担が大幅に軽減されたと報告されています。"
+      "score": 95,
+      "reviewCount": 548,
+      "comment": "水拭き性能への高評価が圧倒的で、多くの利用者が「床がサラサラになる」と満足感を示しています。掃除の手間が大幅に削減され、QOLが向上したとの声が多数寄せられています。"
     },
     "repurchaseIntention": {
-      "percentage": 88,
-      "reviewCount": 572,
-      "comment": "旧モデルからの買い替えや、友人・家族への推薦が多く見られます。高い清掃能力と利便性が再購入意欲に繋がっています。"
+      "percentage": 90,
+      "reviewCount": 493,
+      "comment": "「もっと早く買えばよかった」という意見が非常に多く、高い満足度が再購入意向に繋がっています。特にエコバックス製品からの買い替えユーザーは、性能の進化に感動し、次も同社製品を選ぶ傾向にあります。"
     },
     "failureRate": {
-      "percentage": 3,
-      "reviewCount": 572,
+      "percentage": 6.4,
+      "reviewCount": 35,
       "breakdown": {
-        "hardware": 1,
-        "software": 1,
-        "environmental": 1
+        "hardware": 2.7,
+        "software": 2.2,
+        "environmental": 1.5
       },
-      "comment": "初期設定時のアプリ接続やセンサー認識、水漏れなどの報告がありますが、多くはサポートや再設定で解決しています。"
+      "comment": "「故障・不具合」に関する言及は35件見られました。初期不良やセンサーエラー、水漏れなどの報告が散見されますが、多くはサポート対応で解決しているようです。長期的な耐久性は今後の評価が待たれます。"
     }
   },
   "reliability": {
@@ -46,111 +46,118 @@
     "dataAdequacy": {
       "score": 100,
       "weight": 60,
-      "description": "レビュー総数が500件を超えており、データ量が非常に豊富で信頼性の高い分析が可能です。"
+      "description": "548件という豊富な口コミ数があり、多様な利用環境からの評価が集まっているため、データの信頼性は非常に高いです。"
     },
     "consistency": {
-      "percentage": 76,
+      "score": 76,
       "weight": 30,
-      "description": "複数のサイトでの評価に大きな乖離がなく、一貫したユーザー満足度が見られます。",
-      "score": 76
+      "description": "全体的に高評価で一致していますが、一部でナビゲーションやアプリ初期設定に関する不満も見られ、意見の一致度は良好レベルです。",
+      "percentage": 76
     },
     "freshness": {
       "score": 100,
       "weight": 10,
-      "description": "直近30日以内のレビューが5%以上あり、製品の最新の評価傾向を反映しています。"
+      "description": "最新モデルのため、直近30日以内の新しい口コミも多く投稿されており、情報の鮮度は非常に高い状態です。"
     }
   },
   "updateInfo": {
-    "lastUpdated": "2026-06-15",
+    "lastUpdated": "2026-06-12",
     "firmwareVersion": "",
-    "note": "最新レビュー時期は2026年6月で、製品の進化とユーザーの期待を反映。全体的に高い満足度を示しています。"
+    "note": "2026年6月までの口コミを分析。水拭き性能と静音性への高評価が目立ちますが、一部でケーブル巻き込みやアプリ初期設定の難しさを指摘する声もあります。"
   },
   "timeSaving": {
+    "vacuumMinutes": 10,
+    "mopMinutes": 9,
     "dailyMinutes": 19,
     "monthlyHours": 9.5,
-    "annualHours": 114,
-    "workDaysEquivalent": 14.25,
-    "methodology": "毎日19分の清掃時間削減を想定し、月間・年間で換算。家事負担軽減による時間創出効果を算出しています。"
+    "annualHours": 115.6,
+    "workDaysEquivalent": 14.4
   },
   "operationalCost": {
-    "daily": 82,
-    "dailyNote": "消耗品の実質的な日割りコスト",
-    "monthly": 2500,
-    "annual": 30000,
+    "daily": 36,
+    "dailyNote": "消耗品と電気代を考慮した1日あたりの推定運用コストです。使用頻度により変動します。",
+    "monthly": 1098,
+    "annual": 13176,
     "consumables": [
       {
-        "item": "ダストバッグ",
-        "replacementFrequency": "3ヶ月ごと",
-        "unitCost": 2000,
-        "annualCost": 8000
+        "item": "抗菌・消臭機能付きダストバッグ (3個)",
+        "replacementFrequency": "90日ごと",
+        "unitCost": 2480,
+        "annualCost": 3307
       },
       {
-        "item": "専用洗浄液",
-        "replacementFrequency": "3ヶ月ごと",
-        "unitCost": 3000,
-        "annualCost": 12000
+        "item": "メインブラシ",
+        "replacementFrequency": "6-12ヶ月ごと",
+        "unitCost": 2980,
+        "annualCost": 2980
       },
       {
-        "item": "サイドブラシ・ローラーブラシ",
-        "replacementFrequency": "6ヶ月ごと",
-        "unitCost": 5000,
-        "annualCost": 10000
+        "item": "サイドブラシ (2個)",
+        "replacementFrequency": "3-6ヶ月ごと",
+        "unitCost": 1680,
+        "annualCost": 3360
+      },
+      {
+        "item": "ローラーモップ (2個)",
+        "replacementFrequency": "3-6ヶ月ごと",
+        "unitCost": 3529,
+        "annualCost": 3529
       }
     ]
   },
   "performanceAnalysis": {
     "floorCleaning": {
-      "score": 98,
-      "reviewCount": 314,
-      "positiveReviewCount": 298,
-      "comment": "フローリングの清掃能力は非常に高く、多くのユーザーが「床がピカピカ・サラサラになる」と絶賛。水拭き性能も特に評価されています。"
+      "score": 97,
+      "reviewCount": 312,
+      "positiveReviewCount": 305,
+      "comment": "独自のローラー式モップによる水拭き性能は圧倒的で、「床がサラサラ、ピカピカになる」と絶賛の声が多数。吸引と水拭きの同時清掃で、皮脂汚れや食べこぼしも綺麗に除去できる点が非常に高く評価されています。"
     },
     "carpetCleaning": {
-      "score": 85,
+      "score": 82,
       "reviewCount": 33,
       "positiveReviewCount": 26,
-      "comment": "カーペットの自動認識と吸引力向上機能は好評。厚手のカーペットは問題ないが、薄手のマットは巻き込むことがあるため注意が必要です。"
+      "comment": "カーペットを自動で認識し、モップを持ち上げて吸引を強化する機能は評価されています。ただし、毛足の長いラグや軽いマットは巻き込んで停止することがあるため、事前の片付けや進入禁止設定が推奨されます。"
     },
     "petHairRemoval": {
-      "score": 92,
+      "score": 94,
       "reviewCount": 52,
-      "positiveReviewCount": 47,
-      "comment": "ペットの毛の吸引力は非常に高く、毛絡み除去システムも効果的。多頭飼いの家庭でも「掃除が楽になった」と高評価です。"
+      "positiveReviewCount": 50,
+      "comment": "ペットの毛の処理に強いという口コミが多く、毛が絡みにくい特殊なブラシ構造が高く評価されています。犬や猫を多頭飼いしている家庭でも、抜け毛をしっかり吸引し、メンテナンスの手間が少ないと好評です。"
     },
     "quietness": {
-      "score": 86,
+      "score": 90,
       "reviewCount": 74,
-      "positiveReviewCount": 63,
-      "comment": "清掃中の動作音は比較的静かで、在宅中や夜間の使用でも気にならないという声が多いです。ステーションの集塵音は一時的に大きくなります。"
+      "positiveReviewCount": 68,
+      "comment": "清掃中の動作音は「非常に静か」との評価が多く、在宅中や夜間でも気にならないレベルです。ただし、ステーションでのゴミ収集やモップ洗浄・乾燥時には一時的に大きな音が発生するとの指摘もあります。"
     },
     "stepClimbing": {
-      "score": 75,
+      "score": 78,
       "reviewCount": 39,
-      "positiveReviewCount": 27,
-      "comment": "2cm程度の段差は乗り越えるが、玄関などの大きな段差は落下報告も。AI障害物回避は優秀だが、完璧ではないため注意が必要です。"
+      "positiveReviewCount": 30,
+      "comment": "約2cmまでの段差は乗り越え可能で、多くの家庭では問題なく部屋間を移動できます。しかし、玄関のような大きな段差は落下防止センサーが作動する一方、稀に認識できず落下したという報告も見られました。"
     },
     "maintenance": {
-      "score": 96,
-      "reviewCount": 109,
-      "positiveReviewCount": 98,
-      "comment": "モップの自動洗浄・乾燥機能は非常に好評で、手入れの手間を大幅に削減。汚水タンクの清掃は必要ですが、全体的にメンテナンスは楽です。"
+      "score": 88,
+      "reviewCount": 108,
+      "positiveReviewCount": 99,
+      "comment": "ゴミ収集からモップの温水洗浄、熱風乾燥まで全自動で行うため、日々の手間は大幅に削減されます。ただし、給水・汚水タンクの清掃は定期的に必要で、怠るとヘドロや臭いが発生するとの指摘もあります。"
     },
     "appStability": {
-      "score": 94,
+      "score": 89,
       "reviewCount": 172,
-      "positiveReviewCount": 146,
-      "comment": "アプリは直感的で使いやすく、マッピング精度も高いと評価されています。初期設定でWi-Fi接続や認証コード受信に手間取るケースも報告されています。"
+      "positiveReviewCount": 158,
+      "comment": "マッピング作成やエリア指定、スケジュール設定など機能が豊富で使いやすいと好評です。一部で初期のWi-Fi接続に手間取ったという声もありますが、一度接続すれば安定して動作するとの評価が多数です。"
     },
     "batteryLife": {
-      "score": 88,
+      "score": 80,
       "reviewCount": 12,
       "positiveReviewCount": 9,
-      "comment": "バッテリー持続時間に関する直接的な言及は少ないですが、広範囲の清掃でも自動で充電に戻り、効率的に作業を完了させます。"
+      "comment": "広い家屋では一度の充電で清掃が完了せず、自動で充電に戻り再開する挙動が見られます。清掃時間は長くなりますが、バッテリーが切れて止まることはなく、確実に全範囲をカバーする点は評価されています。"
     }
   },
   "radarChartData": {
     "labels": [
-      "床掃除",
+      "フローリング",
       "カーペット",
       "ペット毛",
       "静音性",
@@ -160,29 +167,29 @@
       "電池"
     ],
     "values": [
-      98,
-      85,
-      92,
-      86,
-      75,
-      96,
+      97,
+      82,
       94,
-      88
+      90,
+      78,
+      88,
+      89,
+      80
     ]
   },
   "dataQuality": {
-    "totalReviews": 572,
-    "sampledReviews": 516,
-    "adoptedReviews": 494,
-    "excludedReviews": 22,
+    "totalReviews": 567,
+    "sampledReviews": 548,
+    "adoptedReviews": 548,
+    "excludedReviews": 19,
     "trustScore": 92.8,
-    "comment": "全572件のレビューを詳細に分析し、製品の性能、利便性、課題点を多角的に評価。信頼性の高いデータを提供しています。"
+    "comment": "全548件の口コミを分析。購入直後の感想や配送に関するものを除外し、製品性能に関する529件のレビューを評価の根拠としています。豊富なデータ量と内容の一貫性から、信頼性は高いと判断できます。"
   },
   "reviewKeywords": {
     "positive": [
       {
         "keyword": "満足・買ってよかった",
-        "count": 197
+        "count": 191
       },
       {
         "keyword": "水拭き・拭き掃除が良い",
@@ -190,7 +197,7 @@
       },
       {
         "keyword": "マッピング・ルートが賢い",
-        "count": 86
+        "count": 87
       },
       {
         "keyword": "静かで快適",
@@ -198,7 +205,7 @@
       },
       {
         "keyword": "綺麗になる",
-        "count": 61
+        "count": 62
       },
       {
         "keyword": "使いやすい・便利",
@@ -218,7 +225,7 @@
       },
       {
         "keyword": "故障・トラブルが少ない",
-        "count": 14
+        "count": 13
       }
     ],
     "negative": [
@@ -259,187 +266,141 @@
   "successStrategies": [
     {
       "rank": 1,
-      "issue": "センサーや水タンクの初期トラブル",
-      "occurrenceRate": 6,
-      "occurrenceCount": 35,
-      "environmentalFactor": "なし",
-      "technicalDescription": "センサーの誤検知や水タンクの密閉不良、ローラーの異常検知など、初期段階での製品動作に関する問題。",
+      "issue": "ケーブルや軽い敷物の巻き込み",
+      "occurrenceRate": 1.6,
+      "occurrenceCount": 9,
+      "environmentalFactor": "床に電源コードや薄いラグ、子供のおもちゃなどが散乱している環境。",
+      "technicalDescription": "AIVI 3D 3.0障害物回避機能は進化しているものの、細いケーブルや非常に軽い布類は認識できず、ブラシに巻き込んで停止する場合があります。",
       "avoidanceStrategies": [
         {
-          "method": "初期設定時の丁寧な確認とテスト",
-          "effectiveness": "中",
-          "technicalLevel": "初級",
-          "technicalRationale": "初期設定時に各機能をテストし、異常があればすぐにサポートへ連絡することで、早期解決に繋がります。"
-        },
-        {
-          "method": "マップの定期的な再作成",
-          "effectiveness": "中",
-          "technicalLevel": "中級",
-          "technicalRationale": "センサーの誤認識による異常動作の場合、マップを削除して再作成することで、経路計画が最適化され改善することがあります。"
-        }
-      ],
-      "preventionTips": "製品到着後、すぐに全機能をテストし、異常があれば速やかにサポートへ連絡しましょう。アプリの指示に従い、マップを正確に作成することが重要です。"
-    },
-    {
-      "rank": 2,
-      "issue": "コードやマットの巻き込み・段差でのスタック",
-      "occurrenceRate": 4,
-      "occurrenceCount": 21,
-      "environmentalFactor": "床に散らばった物、薄手のマット、大きな段差",
-      "technicalDescription": "ロボットのブラシや車輪が床の障害物に絡まったり、センサーが段差を正確に認識できない場合に発生する動作停止。",
-      "avoidanceStrategies": [
-        {
-          "method": "掃除前の床の徹底的な片付け",
+          "method": "清掃前に床のケーブル類を片付ける",
           "effectiveness": "高",
           "technicalLevel": "初級",
-          "technicalRationale": "コードや薄手のマットなど、ロボットが巻き込みやすい障害物を事前に除去することで、スムーズな清掃が可能です。"
+          "technicalRationale": "物理的に障害物をなくすことが最も確実な対策です。ケーブルホルダーやカバーでコードを壁際に固定することで、ロボットの清掃経路から障害物を排除できます。"
         },
         {
-          "method": "アプリでの進入禁止エリア設定",
+          "method": "アプリで進入禁止エリアを設定する",
           "effectiveness": "高",
           "technicalLevel": "初級",
-          "technicalRationale": "段差や特定の家具周辺など、ロボットがスタックしやすい場所をアプリで指定し、進入を禁止することでトラブルを防ぎます。"
+          "technicalRationale": "ECOVACS HOMEアプリのマップ編集機能で、ケーブルが多いエリアや軽いラグの上を仮想の壁や進入禁止エリアとして設定し、ロボットが近づかないようにします。"
         }
       ],
-      "preventionTips": "ロボット掃除機がスムーズに動けるよう、床にはできるだけ物を置かない習慣をつけましょう。特に細いコードや軽いマットは要注意です。"
-    },
-    {
-      "rank": 3,
-      "issue": "壁際や隅の清掃残し、水拭きムラ",
-      "occurrenceRate": 2,
-      "occurrenceCount": 12,
-      "environmentalFactor": "部屋の形状、床材の種類、家具の配置",
-      "technicalDescription": "ロボットのブラシやモップの物理的な限界、またはセンサーが壁際を過度に回避することで発生する清掃範囲の不足。",
-      "avoidanceStrategies": [
-        {
-          "method": "アプリで清掃モードや往復回数を調整",
-          "effectiveness": "中",
-          "technicalLevel": "初級",
-          "technicalRationale": "清掃設定で吸引力や水量を調整したり、往復清掃を増やすことで、より徹底的な清掃効果が得られます。"
-        },
-        {
-          "method": "専用洗浄液の併用",
-          "effectiveness": "中",
-          "technicalLevel": "初級",
-          "technicalRationale": "水拭き時に専用洗浄液を使用することで、皮脂汚れなどがより効果的に除去され、床の仕上がりが向上します。"
-        }
-      ],
-      "preventionTips": "定期的に手動で壁際や隅を補完清掃することで、常に最高の清潔さを保てます。アプリの清掃設定を試して最適なモードを見つけましょう。"
+      "preventionTips": "日常的に床に物を置かない習慣をつけることが最善の予防策です。特に充電ケーブルやイヤホンなど、細く長いものはロボットのブラシに絡まりやすいため注意が必要です。"
     }
   ],
   "topComplaints": [
     {
-      "title": "初期不良やセンサー・水漏れトラブル",
-      "percentage": 6,
+      "title": "初期不良・センサー関連のエラー",
+      "percentage": 6.4,
       "reviewCount": 35,
-      "description": "ローラーエラー、水タンクからの水漏れ、センサーの障害物認識不良、アプリ接続問題などが報告されています。",
-      "solution": "サポートセンターへの連絡で解決したケースが多く、マップの再作成で改善することもあります。"
+      "description": "「モップ洗浄トレイに異常」「水タンクのエラー」といった初期不良や、特定の場所で動かなくなるなどのセンサー関連の不具合報告が35件ありました。製品の品質にばらつきがある可能性が示唆されます。",
+      "solution": "問題が発生した場合、まずは本体の再起動やアプリからのリセットを試みてください。改善しない場合は、速やかにメーカーのカスタマーサポートに連絡することをお勧めします。多くの場合、部品交換や本体交換で対応されています。"
     },
     {
-      "title": "コード巻き込みや段差でのスタック",
-      "percentage": 4,
-      "reviewCount": 21,
-      "description": "ケーブルや薄手のマットを巻き込んだり、玄関などの段差で動けなくなるケースが報告されています。",
-      "solution": "掃除前に床の物を片付け、進入禁止エリアを設定することで、トラブルを未然に防ぐことができます。"
+      "title": "ケーブルや軽いラグの巻き込み",
+      "percentage": 1.6,
+      "reviewCount": 9,
+      "description": "障害物回避機能は搭載されていますが、床に落ちているスマートフォンケーブルや薄手のラグなどを巻き込んで停止してしまう事例が9件報告されています。完全な放置運転には事前の片付けが必要です。",
+      "solution": "清掃を開始する前に、床にケーブルや小物が落ちていないか確認することが最も効果的です。アプリのマップ機能でケーブルの多いエリアを「進入禁止」に設定することも有効な対策となります。"
     },
     {
-      "title": "清掃の取り残しや拭きムラ",
-      "percentage": 2,
-      "reviewCount": 12,
-      "description": "壁際や部屋の隅、カーペットの毛の取り残し、水拭き後の水跡が気になるという声が一部見られます。",
-      "solution": "アプリで往復清掃回数を増やしたり、専用洗浄液を使用することで、清掃品質の向上が期待できます。"
+      "title": "アプリの初期設定・Wi-Fi接続",
+      "percentage": 1.5,
+      "reviewCount": 8,
+      "description": "一部のユーザーから、最初のアプリ登録や自宅のWi-Fiへの接続に手間取ったとの声が寄せられています。認証コードが届かない、接続がうまくいかないなどの問題が報告されています。",
+      "solution": "接続時はロボットとルーターを近づけ、Wi-Fiが2.4GHz帯であることを確認してください。メーカー公式サイトのFAQにはトラブルシューティングが掲載されており、それでも解決しない場合はサポートへの問い合わせが推奨されます。"
     }
   ],
   "attributeScores": {
     "petOwner": {
-      "overall": 95,
+      "overall": 94,
       "details": [
         {
-          "field": "ペット毛吸引力",
-          "score": 92,
+          "field": "ペットの毛吸引",
+          "score": 94,
           "reviewCount": 52,
-          "comment": "強力な吸引力と毛絡み除去システムにより、ペットの抜け毛を効率的に除去。多頭飼い家庭でも床が清潔に保たれます。"
+          "comment": "毛が絡みにくい特殊ブラシが高評価。犬猫の抜け毛が多い家庭でも、メンテナンスの手間をかけずに床を清潔に保てると多くのペットオーナーから支持されています。"
         },
         {
-          "field": "床掃除",
-          "score": 98,
-          "reviewCount": 314,
-          "comment": "水拭き機能が特に優れており、ペットの足跡や皮脂汚れもきれいに除去。床がサラサラになると高評価です。"
+          "field": "床の衛生（水拭き）",
+          "score": 97,
+          "reviewCount": 312,
+          "comment": "ペットの足跡やよだれの跡も、強力なローラー式水拭きで綺麗になります。常に清潔なモップで拭き上げるため、衛生面を重視する家庭に最適です。"
         },
         {
-          "field": "メンテナンス",
-          "score": 96,
-          "reviewCount": 109,
-          "comment": "モップの自動洗浄・乾燥機能で、ペットの毛による絡まりや臭いの心配が少なく、手入れの手間が軽減されます。"
+          "field": "静音性",
+          "score": 90,
+          "reviewCount": 74,
+          "comment": "動作音が静かなため、ペットが怖がったりストレスを感じたりすることが少ないと好評です。在宅中に稼働させてもペットの邪魔になりにくい点が評価されています。"
         }
       ]
     },
     "apartment": {
-      "overall": 87,
+      "overall": 90,
       "details": [
         {
           "field": "静音性",
-          "score": 86,
+          "score": 90,
           "reviewCount": 74,
-          "comment": "清掃中の動作音は静かで、マンションでの使用に適しています。夜間稼働も可能ですが、ステーションの集塵音は大きめです。"
+          "comment": "「ルンバより遥かに静か」との声が多数。集合住宅で気になる階下への騒音を最小限に抑えられ、夜間や早朝の運転も気兼ねなく行えると高く評価されています。"
         },
         {
-          "field": "床掃除",
-          "score": 98,
-          "reviewCount": 314,
-          "comment": "フローリングの清掃能力は非常に高く、水拭きで床がピカピカに。集合住宅でも清潔な環境を維持できます。"
+          "field": "床掃除性能",
+          "score": 97,
+          "reviewCount": 312,
+          "comment": "限られたスペースでも効率的なルートで隅々まで清掃します。特にフローリングの水拭き性能は圧巻で、コンパクトな空間を常に清潔に保ちたいニーズに応えます。"
         },
         {
           "field": "段差乗り越え",
-          "score": 75,
+          "score": 78,
           "reviewCount": 39,
-          "comment": "段差乗り越え性能は平均的で、大きな段差は苦手。玄関などには進入禁止エリアの設定が推奨されます。"
+          "comment": "部屋間の敷居や薄いマット程度の段差は問題なく乗り越えます。マンション内のフラットな環境であれば、スタックの心配はほとんどなくスムーズに清掃可能です。"
         }
       ]
     },
     "workingProfessional": {
-      "overall": 94,
+      "overall": 87,
       "details": [
         {
-          "field": "アプリ安定性",
-          "score": 94,
-          "reviewCount": 172,
-          "comment": "アプリは直感的で操作しやすく、外出先からの遠隔操作も可能。忙しい共働き世帯の強い味方となります。"
-        },
-        {
-          "field": "メンテナンス",
-          "score": 96,
-          "reviewCount": 109,
-          "comment": "モップの自動洗浄・乾燥機能により、手入れの手間がほとんど不要。時間を有効活用したい方に最適です。"
-        },
-        {
-          "field": "バッテリー",
+          "field": "メンテナンス性",
           "score": 88,
-          "reviewCount": 12,
-          "comment": "広範囲の清掃でも自動で充電に戻り、効率的に作業を継続。忙しい日でも安心して任せられる性能です。"
+          "reviewCount": 108,
+          "comment": "ゴミ収集からモップ洗浄・乾燥まで全自動。忙しい日々の中で掃除の手間をほぼゼロにできる点が、時間に制約のある共働き世帯から絶大な支持を得ています。"
+        },
+        {
+          "field": "アプリの安定性・操作性",
+          "score": 89,
+          "reviewCount": 172,
+          "comment": "外出先からでもスマホアプリで簡単に操作でき、清掃予約も可能。帰宅時間に合わせて家を綺麗にしておける利便性が、多忙なライフスタイルにマッチしています。"
+        },
+        {
+          "field": "時間創出効果",
+          "score": 92,
+          "reviewCount": 548,
+          "comment": "掃除にかけていた時間を他の活動に充てられるようになり「QOLが向上した」との声が多数。日々の家事負担を軽減し、自由な時間を生み出す価値が高く評価されています。"
         }
       ]
     },
     "familyHome": {
-      "overall": 91,
+      "overall": 87,
       "details": [
         {
-          "field": "床掃除",
-          "score": 98,
-          "reviewCount": 314,
-          "comment": "子供の食べこぼしや日常の汚れを強力に吸引・水拭きし、床を清潔に保ちます。家族の健康維持にも貢献します。"
+          "field": "総合的な清掃力",
+          "score": 97,
+          "reviewCount": 312,
+          "comment": "子供の食べこぼしや砂汚れも、強力な吸引と水拭きで徹底的に除去。広いリビングや複数の部屋も効率的に清掃し、家族が快適に過ごせる清潔な環境を維持します。"
         },
         {
-          "field": "バッテリー",
-          "score": 88,
-          "reviewCount": 12,
-          "comment": "広い家でも効率的に清掃を完了させ、家族との時間を確保。自動充電機能で中断なく作業を続けられます。"
-        },
-        {
-          "field": "カーペット",
-          "score": 85,
+          "field": "カーペット掃除",
+          "score": 82,
           "reviewCount": 33,
-          "comment": "カーペットの自動認識と吸引力強化で、子供部屋のカーペットもきれいに。ただし薄手マットは注意が必要です。"
+          "comment": "リビングのカーペットも自動で認識し、吸引力を上げて対応。子供が遊ぶスペースの衛生を保つのに役立ちますが、毛足の長いタイプは苦手な場合もあります。"
+        },
+        {
+          "field": "静音性",
+          "score": 90,
+          "reviewCount": 74,
+          "comment": "子供が昼寝している間でも稼働させられるほど静かです。家族の生活リズムを妨げることなく、いつでも家を綺麗にできる点がファミリー層に喜ばれています。"
         }
       ]
     }

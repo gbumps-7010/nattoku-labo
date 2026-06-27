@@ -2,79 +2,80 @@
   "productId": "eufy-robot-vacuum-auto-empty-c10",
   "productName": "Eufy Robot Vacuum Auto-Empty C10",
   "manufacturer": "Anker",
-  "modelNumber": "Auto-Empty C10",
+  "modelNumber": "T2292",
   "imageUrl": "https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t2292/t2292_nomal.jpg",
-  "overallRating": 4.01,
-  "totalReviews": 413,
+  "overallRating": 4.14,
+  "totalReviews": 408,
   "price": 29990,
-  "reliabilityScore": 89.5,
+  "reliabilityScore": 88.6,
   "asin": "",
-  "metaTitle": "Eufy Robot Vacuum Auto-Empty C10 詳細分析 | 自動ゴミ収集で家事負担を軽減",
-  "metaDescription": "Eufy Robot Vacuum Auto-Empty C10の413件のレビューを解析。強力な吸引力、静音性、自動ゴミ収集機能の真実を公開。",
+  "metaTitle": "Eufy Robot Vacuum Auto-Empty C10 詳細分析 | 吸引力と静音性の口コミ評価",
+  "metaDescription": "Eufy Robot Vacuum Auto-Empty C10の394件の口コミを解析。自動ゴミ収集やマッピング機能、ペットの毛に対する吸引力など、購入前に知るべき真実を公開。",
   "keywords": [
-    "ロボット掃除機",
-    "自動ゴミ収集",
     "Eufy C10",
+    "ロボット掃除機",
     "Anker",
-    "静音",
+    "自動ゴミ収集",
+    "レーザーマッピング",
     "ペットの毛"
   ],
   "categoryC": {
     "userSatisfaction": {
-      "score": 92,
-      "reviewCount": 413,
-      "comment": "多くのユーザーがその清掃能力と手軽さに満足しており、日常の負担軽減に大きく貢献しています。"
+      "score": 85,
+      "reviewCount": 394,
+      "comment": "多くの利用者が掃除の手間が減ったと高く評価しています。特に自動ゴミ収集機能と正確なマッピングが好評ですが、一部で故障や期待を下回る性能への不満も見られます。"
     },
     "repurchaseIntention": {
-      "percentage": 85,
-      "reviewCount": 351,
-      "comment": "多くのユーザーが本製品の利便性とコストパフォーマンスを評価し、再購入や他者への推奨を検討しています。"
+      "percentage": 78,
+      "reviewCount": 394,
+      "comment": "価格と基本性能のバランスから、再購入を検討する声が多数あります。ただし、初期不良や半年程度の故障報告もあり、耐久性への懸念が再購入をためらわせる要因です。"
     },
     "failureRate": {
-      "percentage": 5,
-      "reviewCount": 413,
+      "percentage": 8.4,
+      "reviewCount": 394,
       "breakdown": {
-        "hardware": 2,
-        "software": 1,
-        "environmental": 2
+        "hardware": 5,
+        "software": 3,
+        "environmental": 1
       },
-      "comment": "一部で故障やエラーの報告がありますが、全体的な故障率は低く、環境要因による停止が主な原因です。"
+      "comment": "「半年で故障」「エラーが頻発」といったハードウェアの不具合報告が33件と目立ちます。アプリの不安定さやマッピングエラーなどソフトウェア関連の問題も散見されます。"
     }
   },
   "reliability": {
-    "score": 89.5,
+    "score": 88.6,
     "dataAdequacy": {
-      "score": 96,
+      "score": 95,
       "weight": 60,
-      "description": "レビュー総数が413件であり、十分なデータ量に基づき信頼性の高い分析が可能です。"
+      "description": "レビュー総数394件は、製品の長所と短所を判断するのに十分なデータ量です。多様な利用環境からのフィードバックが集まっており、信頼性は高いと評価できます。"
     },
     "consistency": {
-      "percentage": 73,
+      "score": 72,
       "weight": 30,
-      "description": "複数サイトでの評価に大きな乖離がなく、製品の評価が一貫しているため高い信頼性を示しています。",
-      "score": 73
+      "description": "全体的には高評価ですが、「静音性」や「カーペット清掃」など特定の項目で評価が分かれる傾向があります。初期不良や故障に関する低評価も一定数存在します。",
+      "percentage": 72
     },
     "freshness": {
       "score": 100,
       "weight": 10,
-      "description": "直近30日以内のレビューが8.7%を占め、最新のユーザー体験が反映されており、鮮度が高いです。"
+      "description": "直近30日以内のレビューが全体の3%を占めており、最新の利用状況やファームウェア更新後の評価も反映されているため、情報の鮮度は非常に高いです。"
     }
   },
   "updateInfo": {
-    "lastUpdated": "2026-06-15",
+    "lastUpdated": "2026-06-26",
     "firmwareVersion": "",
-    "note": "最新のレビュー時期は2026年6月上旬で、全体的に高い満足度を示しています。一部でアプリの改善や障害物回避性能の向上が期待されています。"
+    "note": "2026年5月までの口コミを分析。マッピング精度の向上やアプリの安定性に関する評価は安定的ですが、段差乗り越えや特定の家具でのスタック問題は依然として指摘されています。"
   },
   "timeSaving": {
+    "vacuumMinutes": 10,
+    "mopMinutes": 9,
     "dailyMinutes": 19,
     "monthlyHours": 9.5,
-    "annualHours": 116,
-    "workDaysEquivalent": 14.5,
-    "methodology": "ロボット掃除機による日々の手動掃除時間削減効果を平均19分と算出し、年間で換算しました。"
+    "annualHours": 115.6,
+    "workDaysEquivalent": 14.4
   },
   "operationalCost": {
     "daily": 18,
-    "dailyNote": "消耗品の実質的な日割りコスト",
+    "dailyNote": "ダストバッグ、ブラシ、フィルターの消耗品を定期交換した場合の実質的な日割りコストです。互換品の使用でさらに抑えることも可能です。",
     "monthly": 550,
     "annual": 6600,
     "consumables": [
@@ -100,57 +101,57 @@
   },
   "performanceAnalysis": {
     "floorCleaning": {
-      "score": 95,
+      "score": 92,
       "reviewCount": 110,
-      "positiveReviewCount": 105,
-      "comment": "フローリングや畳、無垢板など様々な床材で高い清掃能力を発揮し、日常の床掃除を大幅に軽減します。"
+      "positiveReviewCount": 101,
+      "comment": "フローリングの掃除能力は高く評価されており、「髪の毛やホコリが綺麗になる」との声が多数です。隅のゴミも伸縮ブラシで効率的に清掃できる点が好評を得ています。"
     },
     "carpetCleaning": {
-      "score": 70,
-      "reviewCount": 43,
-      "positiveReviewCount": 25,
-      "comment": "厚手のカーペットやラグの乗り越えは可能ですが、一部でめくり上げや吸引力不足の指摘が見られます。"
+      "score": 73,
+      "reviewCount": 44,
+      "positiveReviewCount": 31,
+      "comment": "薄手のカーペットやラグは問題なく掃除できますが、「厚手のラグでは吸引力が物足りない」「毛足の長いカーペットでは跳ねる」といった指摘があり、評価が分かれています。"
     },
     "petHairRemoval": {
       "score": 88,
       "reviewCount": 48,
-      "positiveReviewCount": 40,
-      "comment": "ペットの毛や猫砂の吸引力は高く評価されており、特にフローリングで効果を実感できます。"
+      "positiveReviewCount": 42,
+      "comment": "ペットの毛や猫砂の吸引力は多くの飼い主から高く評価されています。毛絡み除去システムも有効ですが、カーペットに絡みついた毛は残ることがあるとの意見もあります。"
     },
     "quietness": {
-      "score": 78,
+      "score": 79,
       "reviewCount": 71,
-      "positiveReviewCount": 45,
-      "comment": "掃除中の動作音は比較的静かですが、自動ゴミ収集時の音は大きく、夜間の使用には注意が必要です。"
+      "positiveReviewCount": 56,
+      "comment": "走行音は「静か」という評価が多い一方、ステーションでのゴミ収集音は「爆音」という意見でほぼ一致。夜間や集合住宅での使用は、時間帯設定の工夫が必須です。"
     },
     "stepClimbing": {
-      "score": 75,
+      "score": 68,
       "reviewCount": 69,
-      "positiveReviewCount": 40,
-      "comment": "1～2cm程度の段差は乗り越え可能ですが、高い段差や特定の家具の脚で引っかかりのリスクがあります。"
+      "positiveReviewCount": 45,
+      "comment": "1.7cmまでの段差に対応し、多くのラグを乗り越えますが、「玄関に落下する」「家具の脚に乗り上げて動けなくなる」という報告が多数あり、過信は禁物です。"
     },
     "maintenance": {
-      "score": 85,
+      "score": 93,
       "reviewCount": 64,
-      "positiveReviewCount": 50,
-      "comment": "自動ゴミ収集機能によりゴミ捨ての手間が大幅に削減され、メンテナンスが楽であると評価されています。"
+      "positiveReviewCount": 60,
+      "comment": "自動ゴミ収集機能により、約2ヶ月間ゴミ捨てが不要な点は圧倒的に高評価です。ただし、ブラシへの毛の絡まりは完全には防げず、定期的な手入れは必要です。"
     },
     "appStability": {
-      "score": 80,
-      "reviewCount": 158,
-      "positiveReviewCount": 100,
-      "comment": "アプリは多機能でマッピングやスケジュール設定が可能ですが、初期設定やWi-Fi接続で戸惑う声もあります。"
+      "score": 84,
+      "reviewCount": 160,
+      "positiveReviewCount": 139,
+      "comment": "マッピング機能や進入禁止エリア設定は「正確で便利」と好評です。しかし、「Wi-Fi接続に失敗する」「マップが勝手に変形する」など一部で不安定さも指摘されています。"
     },
     "batteryLife": {
-      "score": 70,
+      "score": 86,
       "reviewCount": 28,
-      "positiveReviewCount": 15,
-      "comment": "掃除時間は最大120分と十分ですが、待機電力の消費や途中で停止する不具合の報告も一部見られます。"
+      "positiveReviewCount": 25,
+      "comment": "一度の充電で広範囲を掃除でき、バッテリーに関する不満は少ないです。掃除途中で充電が切れても自動で再開する機能があり、広い間取りでも安心して任せられます。"
     }
   },
   "radarChartData": {
     "labels": [
-      "床掃除",
+      "フローリング",
       "カーペット",
       "ペット毛",
       "静音性",
@@ -160,29 +161,29 @@
       "電池"
     ],
     "values": [
-      95,
-      70,
+      92,
+      73,
       88,
-      78,
-      75,
-      85,
-      80,
-      70
+      79,
+      68,
+      93,
+      84,
+      86
     ]
   },
   "dataQuality": {
-    "totalReviews": 413,
-    "sampledReviews": 413,
-    "adoptedReviews": 392,
-    "excludedReviews": 21,
-    "trustScore": 89.5,
-    "comment": "提供された413件のレビューを詳細に分析し、製品の性能、利便性、課題点を多角的に評価しました。"
+    "totalReviews": 408,
+    "sampledReviews": 394,
+    "adoptedReviews": 394,
+    "excludedReviews": 14,
+    "trustScore": 88.6,
+    "comment": "全394件の口コミを分析。購入直後から長期利用まで様々な期間のレビューが含まれ、製品の多角的な評価が可能です。信頼性は高いですが、一部性能の評価にばらつきが見られます。"
   },
   "reviewKeywords": {
     "positive": [
       {
         "keyword": "満足・買ってよかった",
-        "count": 120
+        "count": 114
       },
       {
         "keyword": "静かで快適",
@@ -190,7 +191,7 @@
       },
       {
         "keyword": "マッピング・ルートが賢い",
-        "count": 46
+        "count": 47
       },
       {
         "keyword": "使いやすい・便利",
@@ -210,7 +211,7 @@
       },
       {
         "keyword": "家事が楽になった",
-        "count": 19
+        "count": 18
       },
       {
         "keyword": "故障・トラブルが少ない",
@@ -223,11 +224,11 @@
     ],
     "negative": [
       {
-        "keyword": "期待を下回る点",
-        "count": 34
+        "keyword": "故障・不具合",
+        "count": 33
       },
       {
-        "keyword": "故障・不具合",
+        "keyword": "期待を下回る点",
         "count": 33
       },
       {
@@ -259,144 +260,145 @@
   "successStrategies": [
     {
       "rank": 1,
-      "issue": "段差や障害物での停止・衝突",
-      "occurrenceRate": 12,
-      "occurrenceCount": 48,
-      "environmentalFactor": "床に散らばった小物、コード類、薄いラグ、特定の高さの段差や家具の脚。",
-      "technicalDescription": "レーザーナビゲーションは搭載していますが、小型の障害物や薄い布類、特定の段差は認識しづらく、乗り上げや巻き込みが発生することがあります。",
+      "issue": "段差や家具の脚でのスタック・落下",
+      "occurrenceRate": 8.4,
+      "occurrenceCount": 33,
+      "environmentalFactor": "家具の配置、床の段差、ケーブル類の散乱",
+      "technicalDescription": "iPathレーザーナビゲーションは部屋の形状を正確に把握しますが、カメラ非搭載のため床面の低い障害物や細い家具の脚、黒い物体の認識が苦手で、乗り上げや落下を引き起こします。",
       "avoidanceStrategies": [
         {
-          "method": "進入禁止エリア・バーチャルウォールの設定",
+          "method": "アプリで進入禁止エリア・バーチャルウォールを設定",
           "effectiveness": "高",
           "technicalLevel": "初級",
-          "technicalRationale": "アプリからマップ上に進入禁止エリアや仮想の壁を設定することで、特定の場所への侵入を物理的に防ぎ、トラブルを回避できます。"
+          "technicalRationale": "アプリのマップ上で、玄関や家具の周辺など問題が発生しやすい場所を仮想的な壁で囲むことで、物理的に侵入を防ぎます。これが最も確実で効果的な対策です。"
         },
         {
-          "method": "事前の床の整理整頓",
-          "effectiveness": "高",
+          "method": "床のケーブルや小物を片付ける",
+          "effectiveness": "中",
           "technicalLevel": "初級",
-          "technicalRationale": "コード類やおもちゃなどを事前に床から撤去することで、巻き込みや引っかかりによる停止を効果的に防ぎます。"
+          "technicalRationale": "掃除前に床の障害物をなくすことで、絡まりや乗り上げのリスクを大幅に減らせます。特に充電ケーブルや薄いラグはエラーの原因になりやすいです。"
         }
       ],
-      "preventionTips": "ロボット掃除機がスムーズに動けるよう、毎日稼働前に床の障害物をチェックする習慣をつけることが重要です。特にコード類は壁に固定するなど工夫しましょう。"
+      "preventionTips": "初回のマッピング走行後、すぐにアプリで玄関や風呂場、乗り上げやすい家具周りを進入禁止エリアに設定しましょう。物理的な障害物を置くのも有効です。"
     }
   ],
   "topComplaints": [
     {
-      "title": "頻発する故障やエラー",
-      "percentage": 8,
+      "title": "半年以内の故障・エラー頻発",
+      "percentage": 8.4,
       "reviewCount": 33,
-      "description": "購入後すぐに電源が入らない、ダストボックスが機能しない、エラーが頻発するといった報告が見られます。",
-      "solution": "サポートセンターへの連絡が必須です。Ankerは保証期間が長く、サポート対応も早いという声もあります。"
+      "description": "「半年で壊れた」「エラーが頻発して動かない」といった初期不良や早期故障の報告が目立ちます。特にゴミを吸引しなくなる、電源が入らないなどの深刻な問題が指摘されています。",
+      "solution": "保証期間内であれば、Ankerのカスタマーサポートへの連絡が推奨されます。購入履歴から問い合わせることで、修理や交換の対応が受けられる場合があります。"
     },
     {
-      "title": "段差や障害物での停止・衝突",
-      "percentage": 12,
-      "reviewCount": 48,
-      "description": "段差から落下したり、家具に強く衝突したり、コードを巻き込んで停止するケースが報告されています。",
-      "solution": "アプリで進入禁止エリアを設定し、事前に床の障害物（コード、小物、薄いラグ）を片付けることで回避できます。"
+      "title": "段差での落下や家具への乗り上げ",
+      "percentage": 6.6,
+      "reviewCount": 26,
+      "description": "落下防止センサーはあるものの「玄関に落ちる」という報告が散見されます。また、テーブルや椅子の脚、フロアスタンドの土台などに強引に乗り上げて動けなくなることが多いです。",
+      "solution": "最も効果的な対策は、アプリで玄関や問題の家具周辺を「進入禁止エリア」に設定することです。物理的な障害物を置くことでも落下を防げます。"
     },
     {
-      "title": "自動ゴミ収集時の騒音",
+      "title": "ステーションのゴミ収集音が「爆音」",
       "percentage": 3,
       "reviewCount": 12,
-      "description": "掃除中の動作音は比較的静かですが、自動ゴミ収集ステーションがゴミを吸引する際の音が非常に大きいという指摘が多くあります。",
-      "solution": "不在時に稼働させる、またはアプリのおやすみモードでゴミ収集時間を調整することで、騒音の影響を最小限に抑えられます。"
+      "description": "走行音は静かという評価の一方、ステーションに戻ってゴミを吸引する際の音は「掃除機の強運転レベル」「爆音」と評され、特に夜間や集合住宅での使用に懸念が示されています。",
+      "solution": "アプリのスケジュール機能で、在宅中や日中など、騒音が問題にならない時間帯にゴミ収集が行われるように設定することで、生活への影響を最小限に抑えられます。"
     }
   ],
   "attributeScores": {
     "petOwner": {
-      "overall": 90,
+      "overall": 89,
       "details": [
         {
-          "field": "ペット毛吸引力",
+          "field": "ペットの毛吸引",
           "score": 88,
           "reviewCount": 48,
-          "comment": "ペットの毛や猫砂の吸引力は高く評価されており、特にフローリングで効果を実感できます。"
+          "comment": "猫の毛や猫砂に対する吸引力は高く評価されています。毛絡み除去システムも搭載されており、ペットがいる家庭の強力な味方になります。"
         },
         {
-          "field": "床掃除",
-          "score": 95,
+          "field": "フローリング掃除",
+          "score": 92,
           "reviewCount": 110,
-          "comment": "フローリングや畳、無垢板など様々な床材で高い清掃能力を発揮し、日常の床掃除を大幅に軽減します。"
+          "comment": "ペットが散らかしがちな細かいゴミや毛をしっかり吸引し、フローリングを清潔に保ちます。多くのペットオーナーから満足の声が上がっています。"
         },
         {
-          "field": "メンテナンス",
-          "score": 85,
+          "field": "メンテナンス性",
+          "score": 93,
           "reviewCount": 64,
-          "comment": "自動ゴミ収集機能によりゴミ捨ての手間が大幅に削減され、メンテナンスが楽であると評価されています。"
+          "comment": "自動ゴミ収集機能でゴミ捨ての手間が大幅に削減。ペットの毛で頻繁にダストボックスが満杯になるストレスから解放される点が大きな魅力です。"
         }
       ]
     },
     "apartment": {
-      "overall": 83,
+      "overall": 80,
       "details": [
         {
           "field": "静音性",
-          "score": 78,
+          "score": 79,
           "reviewCount": 71,
-          "comment": "掃除中の動作音は比較的静かですが、自動ゴミ収集時の音は大きく、夜間の使用には注意が必要です。"
+          "comment": "走行音は比較的静かで、隣室への影響は少ないです。しかし、ゴミ収集時の騒音は大きいため、夜間の使用は避けるなど時間帯への配慮が必要です。"
         },
         {
-          "field": "床掃除",
-          "score": 95,
+          "field": "フローリング掃除",
+          "score": 92,
           "reviewCount": 110,
-          "comment": "フローリングや畳、無垢板など様々な床材で高い清掃能力を発揮し、日常の床掃除を大幅に軽減します。"
+          "comment": "限られたスペースでも隅々まで効率的に掃除し、フローリングをきれいに保ちます。コンパクトな本体は狭い場所にも入り込みやすいです。"
         },
         {
           "field": "段差乗り越え",
-          "score": 75,
+          "score": 68,
           "reviewCount": 69,
-          "comment": "1～2cm程度の段差は乗り越え可能ですが、高い段差や特定の家具の脚で引っかかりのリスクがあります。"
+          "comment": "部屋間の敷居などは乗り越えますが、玄関への落下リスクがあります。アプリで進入禁止エリアを設定することが、集合住宅でのトラブル回避に不可欠です。"
         }
       ]
     },
     "workingProfessional": {
-      "overall": 80,
+      "overall": 89,
       "details": [
         {
           "field": "アプリ安定性",
-          "score": 80,
-          "reviewCount": 158,
-          "comment": "アプリは多機能でマッピングやスケジュール設定が可能ですが、初期設定やWi-Fi接続で戸惑う声もあります。"
+          "score": 84,
+          "reviewCount": 160,
+          "comment": "外出先からスマホで操作でき、掃除の予約も可能なため、不在時に掃除を完了させられます。忙しい日々の中で掃除の手間を省ける点が魅力です。"
         },
         {
-          "field": "メンテナンス",
-          "score": 85,
+          "field": "メンテナンス性",
+          "score": 93,
           "reviewCount": 64,
-          "comment": "自動ゴミ収集機能によりゴミ捨ての手間が大幅に削減され、メンテナンスが楽であると評価されています。"
+          "comment": "約2ヶ月間ゴミ捨て不要の自動収集ステーションは、メンテナンスの手間を最小限にしたい多忙な専門職に最適。時間を有効活用できます。"
         },
         {
           "field": "バッテリー",
-          "score": 70,
+          "score": 86,
           "reviewCount": 28,
-          "comment": "掃除時間は最大120分と十分ですが、待機電力の消費や途中で停止する不具合の報告も一部見られます。"
+          "comment": "一度の充電で部屋全体を掃除できるため、帰宅時には常にきれいな状態が保たれます。充電切れの心配が少なく、安心して任せられます。"
         }
       ]
     },
     "familyHome": {
-      "overall": 80,
+      "overall": 85,
       "details": [
         {
-          "field": "床掃除",
-          "score": 95,
+          "field": "フローリング掃除",
+          "score": 92,
           "reviewCount": 110,
-          "comment": "フローリングや畳、無垢板など様々な床材で高い清掃能力を発揮し、日常の床掃除を大幅に軽減します。"
+          "comment": "子供が汚しがちなリビングの床も、強力な吸引力で清潔に保ちます。伸縮サイドブラシで壁際のゴミもしっかり掃除してくれる点が好評です。"
         },
         {
           "field": "バッテリー",
-          "score": 70,
+          "score": 86,
           "reviewCount": 28,
-          "comment": "掃除時間は最大120分と十分ですが、待機電力の消費や途中で停止する不具合の報告も一部見られます。"
+          "comment": "広い一軒家でも、掃除途中で充電ステーションに戻り、充電後に中断した場所から掃除を再開するため、全ての部屋を確実に掃除できます。"
         },
         {
-          "field": "カーペット",
-          "score": 70,
-          "reviewCount": 43,
-          "comment": "厚手のカーペットやラグの乗り越えは可能ですが、一部でめくり上げや吸引力不足の指摘が見られます。"
+          "field": "カーペット掃除",
+          "score": 73,
+          "reviewCount": 44,
+          "comment": "子供部屋のラグやカーペットの掃除もこなしますが、厚手のものや毛足の長いものは苦手な場合があります。BoostIQ機能の活用が推奨されます。"
         }
       ]
-    }
+    },
+    "resaleValue": null
   },
   "resaleValue": null,
   "affiliate": {

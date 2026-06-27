@@ -7,10 +7,10 @@
   "overallRating": 3.87,
   "totalReviews": 63,
   "price": 128400,
-  "reliabilityScore": 74.5,
+  "reliabilityScore": 73.0,
   "asin": "",
   "metaTitle": "Roomba® Plus 505 Combo + AutoWash™ 詳細分析 | 全自動お掃除ロボットの真実",
-  "metaDescription": "Roomba® Plus 505 Combo + AutoWash™の63件のレビューを解析。強力な吸引力と水拭き、自動メンテナンス機能の真実を公開。",
+  "metaDescription": "Roomba® Plus 505 Combo + AutoWash™の63件の口コミを解析。強力な吸引力と水拭き、自動メンテナンス機能の真実を公開。",
   "keywords": [
     "ルンバ",
     "ロボット掃除機",
@@ -42,22 +42,22 @@
     }
   },
   "reliability": {
-    "score": 74.5,
+    "score": 73.0,
     "dataAdequacy": {
-      "score": 65,
+      "score": 60,
       "weight": 60,
-      "description": "レビュー総数63件は一定の評価基準を満たしますが、より多くのデータがあれば信頼性は向上します。"
+      "description": "口コミ総数63件は一定の評価基準を満たしますが、より多くのデータがあれば信頼性は向上します。"
     },
     "consistency": {
-      "percentage": 95,
+      "percentage": 100,
       "weight": 30,
-      "description": "Amazonレビューのみのため、サイト間の評価差は発生していません。単一ソースでの一貫性は高いです。",
-      "score": 95
+      "description": "Amazon口コミのみのため、サイト間の評価差は発生していません。単一ソースでの一貫性は高いです。",
+      "score": 100
     },
     "freshness": {
       "score": 70,
       "weight": 10,
-      "description": "直近30日以内のレビューは0%ですが、比較的新しいレビューも含まれており、一定の鮮度を保っています。"
+      "description": "直近30日以内の口コミは0%ですが、比較的新しい口コミも含まれており、一定の鮮度を保っています。"
     }
   },
   "updateInfo": {
@@ -69,8 +69,7 @@
     "dailyMinutes": 19,
     "monthlyHours": 9.5,
     "annualHours": 116,
-    "workDaysEquivalent": 14.5,
-    "methodology": "ロボット掃除機導入により、日常の床掃除にかかる時間を平均的に削減できると仮定して算出しています。"
+    "workDaysEquivalent": 14.5
   },
   "operationalCost": {
     "daily": 98,
@@ -193,8 +192,8 @@
     "sampledReviews": 63,
     "adoptedReviews": 58,
     "excludedReviews": 5,
-    "trustScore": 74.5,
-    "comment": "提供されたAmazonレビュー63件を分析し、一部重複や無関係なレビューを除外して統計を作成しました。"
+    "trustScore": 73.0,
+    "comment": "提供されたAmazon口コミ63件を分析し、一部重複や無関係な口コミを除外して統計を作成しました。"
   },
   "reviewKeywords": {
     "positive": [

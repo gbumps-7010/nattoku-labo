@@ -2,79 +2,80 @@
   "productId": "eufy-robot-vacuum-omni-c28",
   "productName": "Eufy Robot Vacuum Omni C28",
   "manufacturer": "Anker",
-  "modelNumber": "T211A510",
+  "modelNumber": "C28",
   "imageUrl": "https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t211a/imgrc0101372915.jpg",
-  "overallRating": 4.19,
-  "totalReviews": 54,
+  "overallRating": 4.24,
+  "totalReviews": 53,
   "price": 99990,
-  "reliabilityScore": 67.0,
+  "reliabilityScore": 66.4,
   "asin": "",
-  "metaTitle": "Eufy Robot Vacuum Omni C28 詳細分析 | 水拭きと吸引の真実",
-  "metaDescription": "Eufy Robot Vacuum Omni C28の54件のレビューを解析。強力な水拭きと吸引力、アプリ連携の真実を公開。",
+  "metaTitle": "Eufy Robot Vacuum Omni C28 詳細分析 | 52件の口コミでわかる実力と注意点",
+  "metaDescription": "Eufy Robot Vacuum Omni C28の52件の口コミを徹底解析。強力な水拭き性能や賢いマッピング機能で高評価を得る一方、初期不良やコード巻き込み等の弱点も判明。購入前に知るべき真実を公開します。",
   "keywords": [
+    "Eufy C28",
     "ロボット掃除機",
-    "水拭き",
-    "吸引力",
     "Anker",
-    "Eufy",
-    "Omni C28"
+    "水拭き",
+    "全自動",
+    "口コミ"
   ],
   "categoryC": {
     "userSatisfaction": {
-      "score": 94,
-      "reviewCount": 54,
-      "comment": "多くのユーザーが製品の性能と利便性に非常に満足しており、特に水拭き機能と清掃品質が高く評価されています。"
+      "score": 85,
+      "reviewCount": 52,
+      "comment": "強力な水拭き機能と賢いマッピングによる清掃能力に満足する声が多数。一方で、初期不良やサポート対応への不満も見られ、製品の品質安定性が今後の課題と言えるでしょう。"
     },
     "repurchaseIntention": {
-      "percentage": 88,
-      "reviewCount": 48,
-      "comment": "購入者の約9割が本製品の購入を後悔しておらず、生活の質が向上したと実感しています。"
+      "percentage": 78,
+      "reviewCount": 46,
+      "comment": "「もっと早く買えばよかった」という意見が多く、家事負担の軽減効果を実感しているユーザーが多い。ただし、故障を経験したユーザーは次も同社製品を選ぶか慎重になる傾向があります。"
     },
     "failureRate": {
-      "percentage": 7,
-      "reviewCount": 4,
+      "percentage": 12,
+      "reviewCount": 52,
       "breakdown": {
         "hardware": 4,
-        "software": 0,
+        "software": 2,
         "environmental": 0
       },
-      "comment": "初期不良や故障の報告が一部見られ、特にバッテリーやステーション関連の不具合が指摘されています。サポート対応への不満も。"
+      "comment": "購入直後のバッテリー不良や、ステーションに帰還できなくなる不具合が6件報告されている。スペックは高いものの、品質のばらつきが散見され、初期不良のリスクは考慮すべきです。"
     }
   },
   "reliability": {
-    "score": 67.0,
+    "score": 66.4,
     "dataAdequacy": {
-      "score": 62,
+      "score": 61,
       "weight": 60,
-      "description": "54件のレビューから、データ十分性は中程度と評価されます。より多くのレビューで信頼性が向上します。"
+      "description": "口コミ件数は52件と、製品の基本的な傾向を把握するには十分な量です。ただし、より詳細な長期利用に関する評価には、さらなるデータ蓄積が望まれます。"
     },
     "consistency": {
-      "percentage": 66,
+      "score": 66,
       "weight": 30,
-      "description": "楽天の平均評価4.39と、レビュー内容の一貫性は高く、評価の信頼性を示しています。 [cite: 楽天★ 平均4.39]",
-      "score": 66
+      "description": "高評価と低評価の意見が分かれる傾向にあります。水拭き性能を絶賛する声が多い一方、初期不良やサポート対応への不満も複数見られ、評価の一貫性は中程度です。",
+      "percentage": 66
     },
     "freshness": {
       "score": 100,
       "weight": 10,
-      "description": "直近30日以内のレビューが44.4%を占め、非常に高い鮮度を保っており、最新のユーザー体験を反映しています。"
+      "description": "口コミの42%が直近30日以内に投稿されており、鮮度は非常に高いです。最新のファームウェアや現行ロットの品質に関するユーザーの生の声が反映されています。"
     }
   },
   "updateInfo": {
-    "lastUpdated": "2026-06-15",
+    "lastUpdated": "2026-06-26",
     "firmwareVersion": "",
-    "note": "本製品は2026年2月24日に発売され、最新のレビューは2026年6月10日付です。多くのユーザーがその高い清掃能力と利便性を評価しています。"
+    "note": "2026年2月発売モデル。口コミは2026年3月から6月にかけてのものが中心。水拭き性能への高評価と、一部の初期不良報告が混在する傾向にあります。"
   },
   "timeSaving": {
-    "dailyMinutes": 20,
-    "monthlyHours": 10,
-    "annualHours": 120,
-    "workDaysEquivalent": 15,
-    "methodology": "ロボット掃除機による自動清掃で、毎日約20分の手動掃除時間を削減できると仮定して算出。"
+    "vacuumMinutes": 10,
+    "mopMinutes": 9,
+    "dailyMinutes": 19,
+    "monthlyHours": 9.5,
+    "annualHours": 115.6,
+    "workDaysEquivalent": 14.4
   },
   "operationalCost": {
     "daily": 46,
-    "dailyNote": "消耗品の実質的な日割りコスト",
+    "dailyNote": "ダストバッグ、フィルター、ブラシ等の消耗品を定期交換した場合の実質的な日割りコストです。使用頻度により変動します。",
     "monthly": 1400,
     "annual": 16800,
     "consumables": [
@@ -106,57 +107,57 @@
   },
   "performanceAnalysis": {
     "floorCleaning": {
-      "score": 97,
+      "score": 94,
       "reviewCount": 32,
       "positiveReviewCount": 30,
-      "comment": "水拭き機能が特に高く評価されており、床がサラサラになるとの声多数。吸引力も強力で、日常の床掃除を任せられます。"
+      "comment": "加圧式のローラーモップによる水拭き性能は絶賛の声が多く「床がサラサラになる」と高評価。汚水タンクの汚れ具合で清掃効果を実感するユーザーも多いです。"
     },
     "carpetCleaning": {
       "score": 88,
       "reviewCount": 3,
       "positiveReviewCount": 3,
-      "comment": "カーペット上では自動で水拭きを停止し、吸引力を上げてくれる機能が好評です。和室でも安心して使用できます。"
+      "comment": "カーペットを検知してモップを自動でリフトアップする機能や、吸引力を自動で高める機能が評価されています。言及数は少ないものの、利用者からは満足の声が上がっています。"
     },
     "petHairRemoval": {
       "score": 90,
       "reviewCount": 4,
       "positiveReviewCount": 4,
-      "comment": "ペットを飼っている家庭でも、水拭き機能と吸引力でペットの毛をしっかり除去し、床を清潔に保てると評価されています。"
+      "comment": "室内犬を飼っているユーザーから「水拭きまでしてくれてしっかり綺麗になる」との高評価。吸引力と水拭きの組み合わせで、ペットの毛や足跡汚れにも効果を発揮します。"
     },
     "quietness": {
-      "score": 80,
+      "score": 82,
       "reviewCount": 3,
-      "positiveReviewCount": 3,
-      "comment": "本体の掃除音は静かで快適ですが、ゴミ収集やモップ洗浄時のステーション音は大きめです。不在時の利用が推奨されます。"
+      "positiveReviewCount": 2,
+      "comment": "掃除中の動作音は「静か」との評価がある一方、ゴミ収集時やモップ洗浄・乾燥時の音は大きいという指摘も。夜間の使用は避けるなど、時間帯を考慮した運用が推奨されます。"
     },
     "stepClimbing": {
-      "score": 65,
+      "score": 70,
       "reviewCount": 4,
-      "positiveReviewCount": 1,
-      "comment": "段差乗り越え性能は一部で評価されるものの、本体の高さや落下防止機能に課題があり、特定の段差で脱輪する報告があります。"
+      "positiveReviewCount": 2,
+      "comment": "段差に強いという声がある一方で、玄関の段差で脱輪して動けなくなったという報告も。2cm程度の一般的な段差は乗り越えますが、環境によってはスタックする可能性があります。"
     },
     "maintenance": {
       "score": 85,
       "reviewCount": 12,
-      "positiveReviewCount": 9,
-      "comment": "メンテナンス負担は少ないと評価される一方、ダストバッグ交換や汚水タンクの臭い、水の残量確認の不便さが指摘されています。"
+      "positiveReviewCount": 10,
+      "comment": "全自動ステーションにより日々の手入れは楽ですが、汚水タンクはこまめな清掃が必須。放置すると臭いの原因になります。また、定期的なダストバッグの交換コストが発生します。"
     },
     "appStability": {
-      "score": 95,
+      "score": 91,
       "reviewCount": 14,
       "positiveReviewCount": 13,
-      "comment": "アプリの安定性と使いやすさは非常に高く評価されています。マッピング精度も良く、遠隔操作や設定が簡単に行えます。"
+      "comment": "マッピング作成や禁止エリア設定など、アプリの基本操作はスムーズで使いやすいと好評です。一部で乾燥終了時間の表示に関する分かりにくさの指摘がありました。"
     },
     "batteryLife": {
-      "score": 70,
+      "score": 78,
       "reviewCount": 3,
-      "positiveReviewCount": 0,
-      "comment": "バッテリー持続時間に関する具体的な言及は少ないですが、初期不良によるバッテリー問題の報告があり、今後の検証が必要です。"
+      "positiveReviewCount": 2,
+      "comment": "2日目でバッテリー不良になったという初期不良報告が1件ありました。正常な状態での持続時間に関する言及は少なく、性能を判断するにはデータが不足しています。"
     }
   },
   "radarChartData": {
     "labels": [
-      "床掃除",
+      "フローリング",
       "カーペット",
       "ペット毛",
       "静音性",
@@ -166,23 +167,23 @@
       "電池"
     ],
     "values": [
-      97,
+      94,
       88,
       90,
-      80,
-      65,
+      82,
+      70,
       85,
-      95,
-      70
+      91,
+      78
     ]
   },
   "dataQuality": {
-    "totalReviews": 54,
-    "sampledReviews": 54,
-    "adoptedReviews": 50,
-    "excludedReviews": 4,
-    "trustScore": 67.0,
-    "comment": "提供された54件のレビューを詳細に分析し、製品の性能、利便性、課題点を多角的に評価しました。"
+    "totalReviews": 53,
+    "sampledReviews": 52,
+    "adoptedReviews": 52,
+    "excludedReviews": 1,
+    "trustScore": 66.4,
+    "comment": "全52件の口コミを分析。高評価と低評価が混在しており、特に初期不良に関する報告が信頼度スコアに影響。購入を検討する際は、メリットとリスクの両側面を把握することが重要です。"
   },
   "reviewKeywords": {
     "positive": [
@@ -253,190 +254,145 @@
   "successStrategies": [
     {
       "rank": 1,
-      "issue": "初期不良や故障の発生",
-      "occurrenceRate": 7,
-      "occurrenceCount": 4,
-      "environmentalFactor": "製品の個体差、初期設定時の問題",
-      "technicalDescription": "バッテリーやステーションの動作不良、または本体が正常に機能しない初期段階での問題が報告されています。",
+      "issue": "初期不良・突然の故障",
+      "occurrenceRate": 12,
+      "occurrenceCount": 6,
+      "environmentalFactor": "製品個体差",
+      "technicalDescription": "購入直後のバッテリー不良や、突然ステーションに帰還できなくなる等の動作不良報告。製品の品質管理や耐久性に課題がある可能性が示唆されます。",
       "avoidanceStrategies": [
         {
-          "method": "購入直後の初期動作確認",
+          "method": "Anker公式ストアや正規代理店から購入する",
           "effectiveness": "高",
           "technicalLevel": "初級",
-          "technicalRationale": "製品到着後すぐに全機能をテストし、異常があれば速やかにメーカーサポートへ連絡することで早期解決が可能です。"
+          "technicalRationale": "正規ルートでの購入は、保証適用やサポート対応をスムーズに受けるための大前提です。万一の不具合発生時に、迅速な交換や修理対応が期待できます。"
         },
         {
-          "method": "メーカー保証の活用",
-          "effectiveness": "高",
+          "method": "商品到着後、速やかに全機能の動作確認を行う",
+          "effectiveness": "中",
           "technicalLevel": "初級",
-          "technicalRationale": "Ankerは最大24ヶ月保証を提供しており、保証期間内の故障は無償交換・修理の対象となるため、安心して利用できます。"
+          "technicalRationale": "保証期間内に不具合を発見するため、マッピング、吸引、水拭き、自動帰還、ゴミ収集、モップ洗浄・乾燥など一連の動作を試すことが重要です。"
         }
       ],
-      "preventionTips": "製品マニュアルを熟読し、推奨される初期設定手順に従うことで、多くの初期トラブルを回避できます。"
-    },
-    {
-      "rank": 2,
-      "issue": "ステーション関連の騒音とメンテナンス",
-      "occurrenceRate": 6,
-      "occurrenceCount": 3,
-      "environmentalFactor": "ステーションの設置場所、使用時間帯",
-      "technicalDescription": "ゴミ自動収集やモップ自動洗浄時に発生する大きな動作音と、汚水タンクの定期的な清掃が必要な点が挙げられます。",
-      "avoidanceStrategies": [
-        {
-          "method": "不在時のスケジュール清掃",
-          "effectiveness": "高",
-          "technicalLevel": "初級",
-          "technicalRationale": "アプリで清掃スケジュールを設定し、外出中に稼働させることで、動作音を気にせず快適に利用できます。"
-        },
-        {
-          "method": "汚水タンクのこまめな清掃",
-          "effectiveness": "高",
-          "technicalLevel": "初級",
-          "technicalRationale": "汚水タンクを放置すると臭いの原因となるため、使用後は速やかに汚水を捨て、定期的に清掃することで清潔を保てます。"
-        }
-      ],
-      "preventionTips": "ステーションは生活空間から離れた場所に設置し、定期的なメンテナンスを習慣化することで、快適な運用が可能です。"
-    },
-    {
-      "rank": 3,
-      "issue": "障害物への引っかかりと段差乗り越えの限界",
-      "occurrenceRate": 9,
-      "occurrenceCount": 5,
-      "environmentalFactor": "床の障害物、家具の配置、段差の高さ",
-      "technicalDescription": "充電コードや小物類を巻き込んだり、本体の高さや落下防止センサーの限界により、特定の段差や家具下で停止する問題です。",
-      "avoidanceStrategies": [
-        {
-          "method": "清掃前の床の整理",
-          "effectiveness": "高",
-          "technicalLevel": "初級",
-          "technicalRationale": "清掃前に床にある充電コードや小物類を片付けることで、巻き込みや停止のリスクを大幅に減らせます。"
-        },
-        {
-          "method": "進入禁止エリアの設定",
-          "effectiveness": "高",
-          "technicalLevel": "初級",
-          "technicalRationale": "アプリで進入禁止エリアやバーチャルウォールを設定し、ロボットが引っかかりやすい場所への侵入を防ぎます。"
-        }
-      ],
-      "preventionTips": "家具の配置を見直し、ロボット掃除機がスムーズに移動できる環境を整えることが、トラブル防止に繋がります。"
+      "preventionTips": "製品到着後は、まず梱包や本体に傷がないか確認し、説明書に従って丁寧に初期設定を行う。最初の数回は、掃除の様子を観察し、異音や異常な動作がないかチェックしましょう。"
     }
   ],
   "topComplaints": [
     {
-      "title": "故障・不具合",
-      "percentage": 7,
-      "reviewCount": 4,
-      "description": "初期不良や短期間での故障報告があり、特にバッテリーやステーション関連の不具合が目立ちます。",
-      "solution": "メーカー公式サポートへの迅速な連絡と交換手続きが重要です。保証期間内の対応を確認しましょう。"
+      "title": "初期不良および突然の故障",
+      "percentage": 12,
+      "reviewCount": 6,
+      "description": "「到着翌日に故障」「2週間でステーションに帰還しなくなった」など、購入直後の不具合報告が複数。品質のばらつきが懸念され、購入には初期不良のリスクも考慮が必要です。",
+      "solution": "Ankerの公式サイトからカスタマーサポートに連絡し、保証期間内での修理や交換を依頼してください。症状を動画で撮影しておくと、スムーズな対応につながります。"
     },
     {
-      "title": "ステーションの音・水管理",
+      "title": "充電コードなどの巻き込み",
       "percentage": 6,
       "reviewCount": 3,
-      "description": "ゴミ収集やモップ洗浄時のステーションの音が大きく、夜間の使用には注意が必要です。汚水タンクの臭いも指摘されます。",
-      "solution": "ステーションの設置場所を工夫し、不在時に稼働させるのが効果的です。汚水はこまめに捨て、タンクを清掃しましょう。"
+      "description": "床に落ちている充電ケーブルや細いコード類を回避できず、巻き込んで停止してしまうことがある。掃除前に床を片付ける手間が完全になくなるわけではない点に注意が必要です。",
+      "solution": "掃除前には床のケーブル類を片付けるか、ケーブルホルダーで壁際に固定しましょう。アプリの進入禁止エリア機能を活用し、ケーブルが多い場所を避ける設定も有効です。"
     },
     {
-      "title": "コード巻き込み・段差での引っかかり",
-      "percentage": 9,
-      "reviewCount": 5,
-      "description": "充電コードなどの小さいものを巻き込んだり、段差や家具の高さで引っかかったりするケースが報告されています。",
-      "solution": "掃除前に床の障害物を取り除き、進入禁止エリアを設定することが有効です。家具の嵩上げも検討しましょう。"
+      "title": "段差や低い家具でのスタック",
+      "percentage": 4,
+      "reviewCount": 2,
+      "description": "玄関の段差で脱輪して動けなくなったり、ソファの下に無理に潜り込んでボタンが押され、リセットされた事例が報告されています。障害物検知には限界があるようです。",
+      "solution": "Anker公式サイトでは、カーペットの端を両面テープで固定する方法を推奨しています。また、アプリで進入禁止エリアを設定し、スタックしやすい場所を避けるのが確実です。"
     }
   ],
   "attributeScores": {
     "petOwner": {
-      "overall": 91,
+      "overall": 90,
       "details": [
         {
-          "field": "ペット毛吸引力",
+          "field": "ペットの毛除去",
           "score": 90,
           "reviewCount": 4,
-          "comment": "ペットの毛を強力に吸引し、水拭きで床を清潔に保つ性能が高く評価されており、ペットオーナーに最適です。"
+          "comment": "吸引と水拭きの同時実行で、床に落ちたペットの毛や皮脂汚れ、足跡を効果的に除去。アレルギー対策としても期待でき、ペットと暮らす家庭の強い味方になります。"
         },
         {
-          "field": "床掃除",
-          "score": 97,
+          "field": "フローリング清掃",
+          "score": 94,
           "reviewCount": 32,
-          "comment": "床掃除の性能は非常に高く、特に水拭き機能が優れています。ペットの足跡や汚れも効果的に除去します。"
+          "comment": "ペットが汚しがちなフローリングを、加圧式ローラーモップで徹底的に洗浄。素足で歩いても快適な、サラサラとした清潔な床を維持できると高く評価されています。"
         },
         {
-          "field": "メンテナンス",
+          "field": "メンテナンス性",
           "score": 85,
           "reviewCount": 12,
-          "comment": "メンテナンスは比較的容易ですが、ダストバッグ交換や汚水処理の手間は考慮が必要です。"
+          "comment": "全自動ステーションが手間を大幅に削減しますが、ペットの毛が絡みやすいブラシの手入れや、臭いの原因となる汚水タンクの定期的な洗浄は欠かせません。"
         }
       ]
     },
     "apartment": {
-      "overall": 82,
+      "overall": 84,
       "details": [
         {
           "field": "静音性",
-          "score": 80,
+          "score": 82,
           "reviewCount": 3,
-          "comment": "本体の掃除音は静かで集合住宅での使用に適していますが、ステーションの音は大きめです。"
+          "comment": "掃除中の動作音は比較的静かで、集合住宅でも日中の使用であれば問題ないレベルです。ただし、ゴミ収集やモップ洗浄音は大きいため、夜間の使用は配慮が必要です。"
         },
         {
-          "field": "床掃除",
-          "score": 97,
+          "field": "フローリング清掃",
+          "score": 94,
           "reviewCount": 32,
-          "comment": "床掃除の性能は非常に高く、特に水拭き機能が優れています。狭いスペースでも効率的に清掃します。"
+          "comment": "マンションで主流のフローリング床との相性は抜群。強力な水拭き機能で、ホコリだけでなく床のベタつきも解消し、清潔で快適な居住空間を保ちます。"
         },
         {
           "field": "段差乗り越え",
-          "score": 65,
+          "score": 70,
           "reviewCount": 4,
-          "comment": "段差乗り越えは一部で課題が指摘されており、家具の高さによっては進入できない場合があります。"
+          "comment": "部屋間の敷居など、一般的な段差は問題なく乗り越えます。しかし、玄関の上がり框など、特定の環境では落下・スタックの可能性があるため注意が必要です。"
         }
       ]
     },
     "workingProfessional": {
-      "overall": 86,
+      "overall": 89,
       "details": [
         {
-          "field": "アプリ安定性",
-          "score": 95,
+          "field": "アプリの安定性",
+          "score": 91,
           "reviewCount": 14,
-          "comment": "アプリは非常に安定しており、遠隔操作やスケジュール設定が容易なため、多忙な方でも安心して利用できます。"
+          "comment": "外出先から遠隔で掃除を開始できるなど、安定したアプリ操作が好評。忙しい中でも手軽に部屋の清潔を保てるため、共働き世帯や単身者に高く評価されています。"
         },
         {
-          "field": "メンテナンス",
+          "field": "メンテナンス性",
           "score": 85,
           "reviewCount": 12,
-          "comment": "メンテナンスは比較的簡単ですが、ダストバッグ交換や汚水処理の頻度は考慮が必要です。"
+          "comment": "ゴミ収集からモップ洗浄・乾燥まで自動化されており、日々の手間は最小限。汚水タンクの清掃と消耗品の交換だけで済むため、時間を有効活用したい人に最適です。"
         },
         {
-          "field": "バッテリー",
-          "score": 70,
+          "field": "バッテリー性能",
+          "score": 78,
           "reviewCount": 3,
-          "comment": "バッテリー持続時間に関する明確な評価は少ないですが、初期不良の報告もあり、今後の改善が期待されます。"
+          "comment": "一度の充電で広範囲を掃除できますが、初期不良の報告が1件ありました。万が一の際に備え、保証が充実した正規販売店での購入が賢明と言えるでしょう。"
         }
       ]
     },
     "familyHome": {
-      "overall": 86,
+      "overall": 90,
       "details": [
         {
-          "field": "床掃除",
-          "score": 97,
+          "field": "フローリング清掃",
+          "score": 94,
           "reviewCount": 32,
-          "comment": "床掃除の性能は非常に高く、特に水拭き機能が優れています。子供の食べこぼしなども効果的に清掃します。"
+          "comment": "子供の食べこぼしや素足の皮脂汚れが付着しやすいリビングの床を、強力な水拭きで清潔に保ちます。家族が快適に過ごせる空間作りに大きく貢献します。"
         },
         {
-          "field": "バッテリー",
-          "score": 70,
+          "field": "バッテリー性能",
+          "score": 78,
           "reviewCount": 3,
-          "comment": "バッテリー持続時間に関する明確な評価は少ないですが、広範囲の清掃には十分な性能が期待されます。"
+          "comment": "広い家でも途中で充電切れになる心配は少ないですが、初期不良のリスクはゼロではありません。長期的に安心して使うためにも、保証内容の確認は必須です。"
         },
         {
-          "field": "カーペット",
+          "field": "カーペット清掃",
           "score": 88,
           "reviewCount": 3,
-          "comment": "カーペット上では水拭きを停止し吸引力を上げるため、リビングなどカーペットがある家庭でも安心して使えます。"
+          "comment": "カーペットを濡らさない自動リフトアップ機能は、リビングにラグを敷いている家庭で特に重宝されます。吸引力も自動でアップし、繊維の奥のゴミまでしっかり吸引します。"
         }
       ]
-    }
+    },
+    "resaleValue": null
   },
   "resaleValue": null,
   "affiliate": {

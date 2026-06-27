@@ -7,10 +7,10 @@
   "overallRating": 4.46,
   "totalReviews": 39,
   "price": 146900,
-  "reliabilityScore": 72.1,
+  "reliabilityScore": 64.0,
   "asin": "",
-  "metaTitle": "Roborock Qrevo CurvC 詳細分析 | 39件のレビューを徹底解析",
-  "metaDescription": "Roborock Qrevo CurvCの39件のレビューを解析。強力な吸引力、自動水拭き、メンテナンスフリーの真実を公開。",
+  "metaTitle": "Roborock Qrevo CurvC 詳細分析 | 39件の口コミを徹底解析",
+  "metaDescription": "Roborock Qrevo CurvCの39件の口コミを解析。強力な吸引力、自動水拭き、メンテナンスフリーの真実を公開。",
   "keywords": [
     "ロボロック",
     "Qrevo CurvC",
@@ -43,35 +43,34 @@
     }
   },
   "reliability": {
-    "score": 72.1,
+    "score": 64.0,
     "dataAdequacy": {
-      "score": 56,
+      "score": 40,
       "weight": 60,
-      "description": "レビュー総数が39件と比較的少ないため、データ十分性スコアは40点です。"
+      "description": "口コミ総数が39件と比較的少ないため、データ十分性スコアは40点です。"
     },
     "consistency": {
-      "percentage": 95,
+      "percentage": 100,
       "weight": 30,
-      "description": "提供されたレビューは単一ソースからのものであり、サイト間の評価差がないため一貫性は高いです。",
-      "score": 95
+      "description": "提供された口コミは単一ソースからのものであり、サイト間の評価差がないため一貫性は高いです。",
+      "score": 100
     },
     "freshness": {
       "score": 100,
       "weight": 10,
-      "description": "直近30日以内のレビュー比率が0.077と低いものの、鮮度スコアは100点と評価されています。"
+      "description": "直近30日以内の口コミ比率が0.077と低いものの、鮮度スコアは100点と評価されています。"
     }
   },
   "updateInfo": {
     "lastUpdated": "2026-06-15",
     "firmwareVersion": "",
-    "note": "ユーザーレビューの傾向は非常に良好で、特に清掃能力とメンテナンスの容易さが評価されています。一部の初期設定や段差に関する課題も散見されます。"
+    "note": "ユーザー口コミの傾向は非常に良好で、特に清掃能力とメンテナンスの容易さが評価されています。一部の初期設定や段差に関する課題も散見されます。"
   },
   "timeSaving": {
     "dailyMinutes": 19,
     "monthlyHours": 9.5,
     "annualHours": 116,
-    "workDaysEquivalent": 14.5,
-    "methodology": "ロボット掃除機が毎日19分間の清掃を行うことで、手動掃除にかかる時間を大幅に削減します。"
+    "workDaysEquivalent": 14.5
   },
   "operationalCost": {
     "daily": 82,
@@ -182,8 +181,8 @@
     "sampledReviews": 39,
     "adoptedReviews": 35,
     "excludedReviews": 4,
-    "trustScore": 72.1,
-    "comment": "提供された39件のレビューを全て分析し、信頼性の高い統計データを作成しました。一部短いレビューは除外しています。"
+    "trustScore": 64.0,
+    "comment": "提供された39件の口コミを全て分析し、信頼性の高い統計データを作成しました。一部短い口コミは除外しています。"
   },
   "reviewKeywords": {
     "positive": [

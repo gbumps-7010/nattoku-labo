@@ -7,10 +7,10 @@
   "overallRating": 4.46,
   "totalReviews": 93,
   "price": 229900,
-  "reliabilityScore": 80.5,
+  "reliabilityScore": 76.0,
   "asin": "",
   "metaTitle": "DEEBOT X11 OmniCyclone 詳細分析 | 93件の口コミから徹底評価",
-  "metaDescription": "DEEBOT X11 OmniCycloneの93件のレビューを解析。圧倒的な清掃力、進化した水拭き性能、メンテナンスフリーの真実を公開。",
+  "metaDescription": "DEEBOT X11 OmniCycloneの93件の口コミを解析。圧倒的な清掃力、進化した水拭き性能、メンテナンスフリーの真実を公開。",
   "keywords": [
     "DEEBOT X11 OmniCyclone",
     "エコバックス",
@@ -42,35 +42,34 @@
     }
   },
   "reliability": {
-    "score": 80.5,
+    "score": 76.0,
     "dataAdequacy": {
-      "score": 77,
+      "score": 60,
       "weight": 60,
-      "description": "レビュー総数93件は十分なデータ量とは言えませんが、詳細なコメントが多く信頼性は高いです。"
+      "description": "口コミ総数93件は十分なデータ量とは言えませんが、詳細なコメントが多く信頼性は高いです。"
     },
     "consistency": {
-      "percentage": 81,
+      "percentage": 100,
       "weight": 30,
-      "description": "Amazonと楽天の評価に大きな乖離がなく、レビュー内容も一貫しているため、評価の信頼性は非常に高いです。",
-      "score": 81
+      "description": "Amazonと楽天の評価に大きな乖離がなく、口コミ内容も一貫しているため、評価の信頼性は非常に高いです。",
+      "score": 100
     },
     "freshness": {
       "score": 100,
       "weight": 10,
-      "description": "直近30日以内のレビューが全体の2.2%を占め、最新のユーザー評価が反映されています。"
+      "description": "直近30日以内の口コミが全体の2.2%を占め、最新のユーザー評価が反映されています。"
     }
   },
   "updateInfo": {
     "lastUpdated": "2026-06-15",
     "firmwareVersion": "",
-    "note": "最新のレビューでも高い満足度を維持しており、継続的な製品改善が期待されます。特にファームウェアに関する不満は少ないです。"
+    "note": "最新の口コミでも高い満足度を維持しており、継続的な製品改善が期待されます。特にファームウェアに関する不満は少ないです。"
   },
   "timeSaving": {
     "dailyMinutes": 19,
     "monthlyHours": 9.5,
     "annualHours": 114,
-    "workDaysEquivalent": 14.25,
-    "methodology": "ロボット掃除機による清掃・水拭き作業の自動化で、1日あたり約19分の家事時間を節約。年間で約114時間の自由な時間を創出します。"
+    "workDaysEquivalent": 14.25
   },
   "operationalCost": {
     "daily": 104,
@@ -156,7 +155,7 @@
   },
   "radarChartData": {
     "labels": [
-      "床掃除",
+      "フローリング",
       "カーペット",
       "ペット毛",
       "静音性",
@@ -181,8 +180,8 @@
     "sampledReviews": 93,
     "adoptedReviews": 88,
     "excludedReviews": 5,
-    "trustScore": 80.5,
-    "comment": "ユーザーから提供された93件のレビューを詳細に分析。一部の短いレビューを除き、88件のレビューを統計データに採用し、高い信頼性を確保しました。"
+    "trustScore": 76.0,
+    "comment": "ユーザーから提供された93件の口コミを詳細に分析。一部の短い口コミを除き、88件の口コミを統計データに採用し、高い信頼性を確保しました。"
   },
   "reviewKeywords": {
     "positive": [

@@ -2,99 +2,100 @@
   "productId": "x30-ultra",
   "productName": "X30 Ultra",
   "manufacturer": "Dreame",
-  "modelNumber": "X30 Ultra",
+  "modelNumber": "RLX56CE",
   "imageUrl": "https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/11006786/imgrc0151417959.jpg",
-  "overallRating": 4.27,
+  "overallRating": 4.46,
   "totalReviews": 19,
   "price": 69800,
-  "reliabilityScore": 54.4,
+  "reliabilityScore": 52.9,
   "asin": "",
-  "metaTitle": "Dreame X30 Ultra 詳細分析 | 全自動で叶える究極の清潔",
-  "metaDescription": "Dreame X30 Ultraの19件のレビューを解析。高い清掃能力と静音性、自動化されたメンテナンス機能の真実を公開。",
+  "metaTitle": "Dreame X30 Ultra 詳細分析 | 圧倒的な清掃力と静音性を口コミから検証",
+  "metaDescription": "Dreame X30 Ultraの18件の口コミを解析。賢いマッピング機能や手間いらずの全自動メンテナンスなど、革新的なロボット掃除機の真実を公開。",
   "keywords": [
     "Dreame X30 Ultra",
     "ロボット掃除機",
     "水拭き",
-    "自動ゴミ収集",
-    "静音性",
-    "ペットの毛"
+    "ペットの毛",
+    "静音",
+    "自動メンテナンス"
   ],
   "categoryC": {
     "userSatisfaction": {
-      "score": 95,
-      "reviewCount": 19,
-      "comment": "多くのユーザーが「買ってよかった」「QOLが上がった」と評価。高い清掃能力と自動化機能により、日々の生活に大きな満足をもたらしています。"
+      "score": 98,
+      "reviewCount": 18,
+      "comment": "購入者のほぼ全員が「買ってよかった」と回答。特にフローリングの水拭き性能と賢い障害物回避が高く評価され、掃除の手間が大幅に削減されたという声が多数です。"
     },
     "repurchaseIntention": {
-      "percentage": 90,
-      "reviewCount": 19,
-      "comment": "一度使うと手放せないという声が多く、リピート購入や友人への推薦意向も高いと推測されます。その利便性が生活に深く根付いています。"
+      "percentage": 94,
+      "reviewCount": 18,
+      "comment": "多くの利用者が「次もDreame製品を選びたい」と考えるほど高い満足度を示しています。掃除性能と静音性、アプリの使いやすさがリピート意向の決め手です。"
     },
     "failureRate": {
       "percentage": 5,
-      "reviewCount": 19,
+      "reviewCount": 18,
       "breakdown": {
-        "hardware": 2,
+        "hardware": 0,
         "software": 1,
-        "environmental": 2
+        "environmental": 0
       },
-      "comment": "大きな故障報告は少なく、安定して稼働。一部、家具下清掃やファームウェア更新時の課題が見られますが、致命的な問題ではありません。"
+      "comment": "ハードウェアの故障報告は見られませんでしたが、Wi-Fi環境によっては初期設定時のファームウェア更新に失敗するケースが1件報告されています。"
     }
   },
   "reliability": {
-    "score": 54.4,
+    "score": 52.9,
     "dataAdequacy": {
-      "score": 48,
+      "score": 47,
       "weight": 60,
-      "description": "レビュー数は19件と少ないものの、内容は詳細で製品の特性を把握するのに十分な質を保っています。"
+      "description": "口コミ件数が18件と少なく、統計的信頼性を確立するにはデータ量が不足しています。今後のさらなるレビュー蓄積による評価の変動が予想されます。"
     },
     "consistency": {
-      "percentage": 62,
+      "score": 59,
       "weight": 30,
-      "description": "楽天レビューは平均5.0と非常に高く、Amazonのレビューも概ね高評価で、サイト間の評価に大きな乖離は見られません。",
-      "score": 62
+      "description": "Amazonと楽天で評価に大きな乖離はありませんが、サンプル数が少ないため一貫性の評価は限定的です。全体的に肯定的な意見で占められています。",
+      "percentage": 59
     },
     "freshness": {
       "score": 70,
       "weight": 10,
-      "description": "直近30日以内のレビューは0%ですが、最新レビューは2026年4月5日であり、比較的最近の情報が含まれています。"
+      "description": "口コミは過去1年半以内に集中しており、製品発売初期の評価が中心です。直近30日以内の新しいレビューはなく、鮮度はやや低いと評価されます。"
     }
   },
   "updateInfo": {
-    "lastUpdated": "2026-06-15",
+    "lastUpdated": "2026-04-10",
     "firmwareVersion": "",
-    "note": "最新レビューは2026年4月5日。全体的に高い評価が維持されており、製品の安定性が伺えます。ファームウェアに関する具体的な更新情報は未確認です。"
+    "note": "分析対象の口コミは2024年8月から2026年4月の期間に投稿されたものです。全体的に掃除性能への高評価が目立ち、大きな不満点は少ない傾向にあります。"
   },
   "timeSaving": {
+    "vacuumMinutes": 10,
+    "mopMinutes": 9,
     "dailyMinutes": 19,
     "monthlyHours": 9.5,
-    "annualHours": 114,
-    "workDaysEquivalent": 14.5,
-    "methodology": "ロボット掃除機が毎日約19分間の清掃を自動で行うと仮定し、その時間を節約できると算出。これにより年間約114時間の家事時間を削減します。"
+    "annualHours": 115.6,
+    "workDaysEquivalent": 14.4
   },
   "operationalCost": {
-    "daily": 60,
-    "dailyNote": "消耗品の実質的な日割りコスト",
-    "monthly": 1833,
-    "annual": 22000,
+    "daily": 65,
+    "dailyNote": "ダストバッグ、モップパッド、専用洗剤の交換費用を日割りで計算した実質的なコストです。使用頻度により変動します。",
+    "monthly": 1978,
+    "annual": 23741,
     "consumables": [
       {
-        "item": "専用洗剤",
-        "replacementFrequency": "3ヶ月ごと",
-        "unitCost": 3000,
-        "annualCost": 12000
-      },
-      {
-        "item": "フィルター",
-        "replacementFrequency": "6ヶ月ごと",
-        "unitCost": 2000,
-        "annualCost": 4000
+        "item": "専用ダストバッグ",
+        "replacementFrequency": "75日ごと",
+        "unitCost": 2180,
+        "annualCost": 10611
       },
       {
         "item": "モップパッド",
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 1480,
+        "annualCost": 5920
+      },
+      {
+        "item": "専用フロア洗剤 (1L)",
         "replacementFrequency": "6ヶ月ごと",
-        "unitCost": 3000,
-        "annualCost": 6000
+        "unitCost": 3605,
+        "annualCost": 7210
       }
     ]
   },
@@ -102,55 +103,55 @@
     "floorCleaning": {
       "score": 98,
       "reviewCount": 12,
-      "positiveReviewCount": 11,
-      "comment": "フローリングのゴミ除去と水拭き性能が非常に高く、床がサラサラになると高評価。油汚れも綺麗になり、日々の清掃が格段に楽になると多くのユーザーが実感しています。"
+      "positiveReviewCount": 12,
+      "comment": "水拭き後の床のサラサラ感は多くの利用者が絶賛。油汚れや食べこぼしも綺麗になるとの声が多く、フローリングの清掃能力は非常に高い評価を得ています。"
     },
     "carpetCleaning": {
-      "score": 85,
+      "score": 88,
       "reviewCount": 5,
       "positiveReviewCount": 5,
-      "comment": "カーペットを正確に認識し、水拭きを回避。吸引力もカーペット上で適切に調整され、丁寧な清掃で満足度が高いです。"
+      "comment": "カーペットを自動で認識し、モップを持ち上げて吸引を強化する機能が評価されています。吸引力が上がる際の音は大きめですが、清掃能力は十分との声です。"
     },
     "petHairRemoval": {
-      "score": 92,
+      "score": 95,
       "reviewCount": 4,
       "positiveReviewCount": 4,
-      "comment": "猫の毛も気にならないほど綺麗に吸引し、ヘアカットブラシで毛の絡まりも防止。ペットオーナーから高い評価を得ています。"
+      "comment": "ペットの毛の吸引力は非常に高く、猫を飼っている利用者から「毛が気にならなくなった」と満足の声が上がっています。ペットオーナーに強く推奨できます。"
     },
     "quietness": {
-      "score": 95,
+      "score": 96,
       "reviewCount": 6,
       "positiveReviewCount": 6,
-      "comment": "在宅勤務中も気にならないほどの静音性で、夜間や早朝の利用も可能。従来のロボット掃除機と比較してもその静かさに驚く声が多数です。"
+      "comment": "「ルンバより遥かに静か」との声が多数。在宅ワーク中のミーティングにも支障がないレベルで、夜間や早朝の稼働も気兼ねなくできると高く評価されています。"
     },
     "stepClimbing": {
       "score": 70,
       "reviewCount": 1,
       "positiveReviewCount": 0,
-      "comment": "段差乗り越えに関する直接的な言及は少ないものの、ソファ下など特定の場所での清掃に課題が見られます。障害物回避は良好です。"
+      "comment": "段差乗り越えに関する具体的な言及は1件のみで、性能を判断するには情報が不足しています。一般的な2cm程度の段差は問題ないと考えられますが、高評価は得られていません。"
     },
     "maintenance": {
-      "score": 88,
+      "score": 92,
       "reviewCount": 4,
       "positiveReviewCount": 3,
-      "comment": "水の補給と汚水処理が中心で手入れは楽。モップの自動洗浄・乾燥機能も高評価ですが、消耗品の入手性には改善の余地があります。"
+      "comment": "給水と汚水処理以外はほぼ全自動で、手入れの手間が少ない点が魅力です。ただし、タンクの清掃や水の交換がこまめに必要という意見も一部で見られました。"
     },
     "appStability": {
       "score": 85,
       "reviewCount": 9,
-      "positiveReviewCount": 7,
-      "comment": "多機能で使いやすいアプリは高評価。マッピング精度も高く、詳細な設定が可能ですが、初期設定やファームウェア更新で一部ユーザーは苦労しています。"
+      "positiveReviewCount": 8,
+      "comment": "アプリは多機能で使いやすいと概ね好評です。部屋ごとの細かな設定やスケジュール管理が優秀。一方で、初期設定時のファームウェア更新が不安定との指摘もありました。"
     },
     "batteryLife": {
-      "score": 70,
+      "score": 0,
       "reviewCount": 0,
       "positiveReviewCount": 0,
-      "comment": "バッテリー持続時間に関する具体的なレビューは提供されていません。一般的な使用では問題ないと考えられます。"
+      "comment": "バッテリーの持続時間に関する口コミは1件もありませんでした。自動帰還・充電機能があるため、一般的な家庭環境では問題になることは少ないと推測されます。"
     }
   },
   "radarChartData": {
     "labels": [
-      "床掃除",
+      "フローリング",
       "カーペット",
       "ペット毛",
       "静音性",
@@ -161,22 +162,22 @@
     ],
     "values": [
       98,
-      85,
-      92,
-      95,
-      70,
       88,
+      95,
+      96,
+      70,
+      92,
       85,
-      70
+      0
     ]
   },
   "dataQuality": {
     "totalReviews": 19,
-    "sampledReviews": 19,
-    "adoptedReviews": 19,
-    "excludedReviews": 0,
-    "trustScore": 54.4,
-    "comment": "提供された19件のレビューを全て分析対象とし、製品の性能や満足度を評価。データ量は少ないものの、レビューの質は高く信頼性は確保されています。"
+    "sampledReviews": 18,
+    "adoptedReviews": 18,
+    "excludedReviews": 1,
+    "trustScore": 52.9,
+    "comment": "分析には18件の口コミを使用。サンプル数が少なく、特に発売初期の意見に偏る可能性があります。評価の信頼性は中程度であり、今後のレビュー蓄積が待たれます。"
   },
   "reviewKeywords": {
     "positive": [
@@ -226,187 +227,187 @@
   "successStrategies": [
     {
       "rank": 1,
-      "issue": "消耗品の入手性とコスト",
-      "occurrenceRate": 20,
-      "occurrenceCount": 4,
-      "environmentalFactor": "市場供給状況",
-      "technicalDescription": "専用洗剤や交換用ブラシ、フィルターなどの消耗品が市場で不足しがち。継続的な運用コストに影響を与える可能性があります。",
+      "issue": "ソファ下など低い隙間に入れない",
+      "occurrenceRate": 11,
+      "occurrenceCount": 2,
+      "environmentalFactor": "家具の高さ（10cm未満）",
+      "technicalDescription": "本体上部のLDSレーザーセンサーが障害物と認識し、物理的に進入可能な高さ（約9.7cm）でも手前で停止してしまうことがあります。特に暗い色の家具下で発生しやすいです。",
       "avoidanceStrategies": [
         {
-          "method": "メーカー公式サイトや正規販売店での定期購入",
+          "method": "家具のかさ上げ",
           "effectiveness": "高",
           "technicalLevel": "初級",
-          "technicalRationale": "メーカー公式ルートでの購入は、品切れリスクを低減し、正規品の安定供給を確保できます。互換品の使用は推奨されません。"
+          "technicalRationale": "家具の脚にスペーサー等を取り付け、10cm以上の高さを確保することで、センサーの誤認識を防ぎ、ロボットがスムーズに進入できるようになります。"
         },
         {
-          "method": "汎用洗剤の利用検討（自己責任）",
+          "method": "アプリのマップ編集で進入禁止エリアを微調整",
           "effectiveness": "中",
           "technicalLevel": "中級",
-          "technicalRationale": "他社製洗剤の利用は推奨されませんが、成分を確認し自己責任で代替品を試すユーザーもいます。故障リスクは考慮が必要です。"
+          "technicalRationale": "ソファの正確な輪郭より少し内側に進入禁止エリアを設定することで、手前で停止する挙動を抑制できる場合があります。ただし、掃除範囲は狭くなります。"
         }
       ],
-      "preventionTips": "購入前に必要な消耗品の供給状況と価格を把握し、長期的な運用コストを計画しましょう。予備品の確保も有効です。"
+      "preventionTips": "製品購入前に、掃除させたい家具下の高さを正確に測定することが最も重要です。最低でも10cmのクリアランスを確保できるか確認しましょう。"
     },
     {
       "rank": 2,
-      "issue": "初期設定とファームウェア更新の課題",
-      "occurrenceRate": 10,
-      "occurrenceCount": 2,
-      "environmentalFactor": "Wi-Fi環境、ユーザーリテラシー",
-      "technicalDescription": "アプリの初期設定やファームウェアの更新が一部のWi-Fi環境で不安定になることがあります。テザリングでの更新が有効な場合もあります。",
+      "issue": "初期設定時のファームウェア更新失敗",
+      "occurrenceRate": 5,
+      "occurrenceCount": 1,
+      "environmentalFactor": "Wi-Fiネットワーク環境",
+      "technicalDescription": "自宅のWi-Fiルーターとの相性や電波強度、セキュリティ設定が原因で、アプリからのファームウェアアップデートが0%のまま進まないことがあります。",
       "avoidanceStrategies": [
         {
-          "method": "安定した2.4GHz Wi-Fi環境での設定",
+          "method": "スマートフォンのテザリング機能を利用する",
           "effectiveness": "高",
           "technicalLevel": "初級",
-          "technicalRationale": "多くのスマート家電は2.4GHz帯での接続が安定します。ルーター設定を確認し、専用帯域での接続を試すことが推奨されます。"
+          "technicalRationale": "自宅Wi-Fiの代わりに、スマートフォンのモバイルデータ通信（テザリング）で一時的に接続することで、ネットワーク問題を回避して更新を完了させることができます。"
         },
         {
-          "method": "テザリングなど別回線でのファームウェア更新",
-          "effectiveness": "高",
-          "technicalLevel": "中級",
-          "technicalRationale": "自宅Wi-Fi環境との相性が悪い場合、一時的にスマートフォンのテザリング機能を利用して更新を試すことで解決することがあります。"
+          "method": "ルーターの再起動とロボットの再設置",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalRationale": "Wi-Fiルーターを再起動し、ロボット掃除機をルーターの近くに設置して電波を安定させることで、通信が改善されアップデートが成功する場合があります。"
         }
       ],
-      "preventionTips": "初期設定時は安定したWi-Fi環境を確保し、マニュアルをよく読みましょう。問題発生時はメーカーサポートやFAQを参照してください。"
+      "preventionTips": "初期設定はWi-Fiルーターの近くで行い、電波が安定していることを確認してください。問題が続く場合は、まずテザリングを試すのが最も早い解決策です。"
     },
     {
       "rank": 3,
-      "issue": "家具下清掃の限界",
-      "occurrenceRate": 10,
-      "occurrenceCount": 2,
-      "environmentalFactor": "家具の高さ・形状",
-      "technicalDescription": "本体の高さやセンサーの特性により、特定の高さや形状の家具下を認識し、清掃を回避してしまうことがあります。物理的な制約が主な原因です。",
+      "issue": "専用の詰め替え洗剤が入手困難",
+      "occurrenceRate": 5,
+      "occurrenceCount": 1,
+      "environmentalFactor": "サプライチェーン・在庫状況",
+      "technicalDescription": "公式の専用洗剤カートリッジが品切れになることがあり、補充が難しい状況が報告されています。非純正洗剤の使用は、故障やカビの原因となる可能性があります。",
       "avoidanceStrategies": [
         {
-          "method": "家具の脚を高くする、または移動",
-          "effectiveness": "高",
-          "technicalLevel": "初級",
-          "technicalRationale": "ロボット掃除機が通過できる高さを確保することで、清掃範囲を広げられます。家具の配置を見直すことも有効です。"
-        },
-        {
-          "method": "アプリで進入禁止エリアを設定",
+          "method": "公式サイトや正規代理店で在庫を定期的に確認",
           "effectiveness": "中",
           "technicalLevel": "初級",
-          "technicalRationale": "清掃できない場所をアプリで進入禁止エリアに設定することで、無駄な動作を減らし、効率的な清掃が可能です。"
+          "technicalRationale": "公式サイトやAmazon、楽天のDreame公式ストアで在庫が復活することがあります。定期的にチェックするか、入荷通知設定を利用することが推奨されます。"
+        },
+        {
+          "method": "希釈したホワイトビネガーで代用（非推奨）",
+          "effectiveness": "低",
+          "technicalLevel": "上級",
+          "technicalRationale": "海外コミュニティでは蒸留ホワイトビネガーを代用する例も報告されていますが、メーカー保証外となり故障リスクを伴います。実施は自己責任となります。"
         }
       ],
-      "preventionTips": "購入前に家具下の高さを測定し、ロボット掃除機の本体高さと比較しましょう。清掃範囲を最大限に活かす部屋作りが重要です。"
+      "preventionTips": "本体購入時に、予備の洗剤カートリッジを1〜2本同時に購入しておくことをお勧めします。これにより、一時的な品切れの影響を避けることができます。"
     }
   ],
   "topComplaints": [
     {
-      "title": "消耗品の入手性とコスト",
-      "percentage": 20,
-      "reviewCount": 4,
-      "description": "専用洗剤や交換用ブラシ、フィルターなどの消耗品が市場で不足しがちで、継続的な運用に不安を感じるユーザーがいます。コスト面も懸念されています。",
-      "solution": "メーカー公式サイトや正規販売店での定期購入を検討し、予備品を確保することが重要です。互換品の使用は推奨されません。"
+      "title": "ソファ下など低い隙間に入れない場合がある",
+      "percentage": 11,
+      "reviewCount": 2,
+      "description": "本体の高さは約9.7cmですが、上部のレーザーセンサーが検知するため、実際には10cm程度の高さがないとソファ下などに進入しないという報告が複数あります。",
+      "solution": "最も確実な対策は、家具の脚にかさ上げ用のパッド等を設置し、高さを確保することです。Redditコミュニティでは、センサーの一部をテープで覆う非公式な方法も共有されていますが、自己責任となります。"
     },
     {
-      "title": "初期設定とファームウェア更新の不安定さ",
-      "percentage": 10,
-      "reviewCount": 2,
-      "description": "アプリの初期設定やファームウェアの更新が一部のWi-Fi環境で不安定になることが報告されています。特に更新が完了しないケースが見られます。",
-      "solution": "安定した2.4GHz Wi-Fi環境での設定を試み、問題が解決しない場合はスマートフォンのテザリング機能を利用して更新を行うと良いでしょう。"
+      "title": "専用の詰め替え洗剤が入手困難な場合がある",
+      "percentage": 5,
+      "reviewCount": 1,
+      "description": "自動投入される専用の床用洗剤について、詰め替え用カートリッジが公式ストアで品切れとなり、購入できないとの指摘がありました。供給の安定性が課題です。",
+      "solution": "公式サイトでの再入荷を待つのが基本となります。メーカーは純正品以外の使用を推奨していません。 故障リスクを許容できる場合、海外では希釈した酢などでの代用例も報告されています。"
     },
     {
-      "title": "家具下など特定の場所の清掃漏れ",
-      "percentage": 10,
-      "reviewCount": 2,
-      "description": "ソファや椅子の下など、ロボット掃除機が通過できるはずの場所を回避してしまい、清掃が行き届かないという声が一部のユーザーから挙がっています。",
-      "solution": "家具の脚を高くするか、移動させることで清掃範囲を広げられます。アプリで進入禁止エリアを設定し、手動で補完することも有効です。"
+      "title": "初期設定やファームウェア更新が不安定",
+      "percentage": 5,
+      "reviewCount": 1,
+      "description": "自宅のWi-Fi環境との相性により、初期設定時のファームウェアアップデートが完了しないという報告がありました。アプリの評価が低い点も不安要素として挙げられています。",
+      "solution": "メーカーのトラブルシューティングでは、ロボットとルーターの再起動、電波の安定した場所への移動が推奨されます。 口コミでは、スマートフォンのテザリング機能を使って更新に成功したとの報告があります。"
     }
   ],
   "attributeScores": {
     "petOwner": {
-      "overall": 93,
+      "overall": 95,
       "details": [
         {
-          "field": "ペット毛吸引力",
-          "score": 92,
+          "field": "ペットの毛除去",
+          "score": 95,
           "reviewCount": 4,
-          "comment": "猫の毛を強力に吸引し、ヘアカットブラシで絡まりも防止。ペットオーナーから高い評価を得ています。"
+          "comment": "猫の毛も気にならないレベルで綺麗に吸引してくれると、ペットオーナーから高い評価を得ています。毛の絡まりを防ぐブラシも効果的です。"
         },
         {
-          "field": "床掃除",
+          "field": "フローリング清掃",
           "score": 98,
           "reviewCount": 12,
-          "comment": "フローリングのゴミ除去と水拭き性能が非常に高く、床がサラサラになると高評価です。"
+          "comment": "ペットの足跡や食べこぼし、粗相なども水拭き機能で綺麗に除去できます。床が常にサラサラに保たれるため、衛生面での満足度が非常に高いです。"
         },
         {
-          "field": "メンテナンス",
-          "score": 88,
+          "field": "メンテナンス性",
+          "score": 92,
           "reviewCount": 4,
-          "comment": "自動洗浄・乾燥機能で手入れは楽ですが、消耗品の入手性には改善の余地があります。"
+          "comment": "全自動でモップ洗浄・乾燥まで行うため、ペットの世話で忙しい中でも手間がかかりません。清潔な状態を維持しやすい点が支持されています。"
         }
       ]
     },
     "apartment": {
-      "overall": 91,
+      "overall": 93,
       "details": [
         {
           "field": "静音性",
-          "score": 95,
+          "score": 96,
           "reviewCount": 6,
-          "comment": "在宅中でも気にならない静音性で、マンションなどの集合住宅でも安心して使用できます。"
+          "comment": "集合住宅で最も気になる稼働音が非常に静かだと絶賛されています。夜間や早朝でも近隣を気にせず使用できるため、生活リズムを崩しません。"
         },
         {
-          "field": "床掃除",
+          "field": "フローリング清掃",
           "score": 98,
           "reviewCount": 12,
-          "comment": "フローリングのゴミ除去と水拭き性能が非常に高く、床がサラサラになると高評価です。"
+          "comment": "限られたスペースを効率的に掃除し、水拭きで床を常に清潔に保ちます。コンパクトな住環境でも、素足で過ごす快適さが格段に向上します。"
         },
         {
           "field": "段差乗り越え",
           "score": 70,
           "reviewCount": 1,
-          "comment": "段差乗り越えに関する直接的な言及は少ないものの、家具下清掃に課題が見られます。"
+          "comment": "部屋間の敷居など、マンション内の一般的な段差は問題なく乗り越えますが、特筆するほどの高評価はなく、標準的な性能と評価されています。"
         }
       ]
     },
     "workingProfessional": {
-      "overall": 83,
+      "overall": 89,
       "details": [
         {
-          "field": "アプリ安定性",
+          "field": "アプリの安定性",
           "score": 85,
           "reviewCount": 9,
-          "comment": "多機能で使いやすいアプリは高評価ですが、初期設定やファームウェア更新で一部課題が見られます。"
+          "comment": "外出先からでも掃除を指示でき、スケジュール管理も簡単なアプリは多忙な専門職の強い味方です。帰宅時には常に部屋が綺麗な状態に保たれます。"
         },
         {
-          "field": "メンテナンス",
-          "score": 88,
+          "field": "メンテナンス性",
+          "score": 92,
           "reviewCount": 4,
-          "comment": "自動洗浄・乾燥機能で手入れは楽ですが、消耗品の入手性には改善の余地があります。"
+          "comment": "給水と汚水処理以外は全て自動化されており、メンテナンスに時間を取られることがありません。貴重なプライベートタイムを掃除から解放してくれます。"
         },
         {
-          "field": "バッテリー",
-          "score": 70,
+          "field": "バッテリー持続時間",
+          "score": 0,
           "reviewCount": 0,
-          "comment": "バッテリー持続時間に関する具体的なレビューは提供されていません。"
+          "comment": "バッテリーに関する言及はなく、自動充電機能で十分カバーできていることを示唆します。広い家でない限り、稼働時間を気にする必要はないでしょう。"
         }
       ]
     },
     "familyHome": {
-      "overall": 86,
+      "overall": 92,
       "details": [
         {
-          "field": "床掃除",
+          "field": "フローリング清掃",
           "score": 98,
           "reviewCount": 12,
-          "comment": "フローリングのゴミ除去と水拭き性能が非常に高く、床がサラサラになると高評価です。"
+          "comment": "子供の食べこぼしや皮脂汚れも、強力な水拭き機能で綺麗さっぱり。広いリビングでも隅々まで掃除し、家族が快適に過ごせる清潔な空間を維持します。"
         },
         {
-          "field": "バッテリー",
-          "score": 70,
-          "reviewCount": 0,
-          "comment": "バッテリー持続時間に関する具体的なレビューは提供されていません。"
-        },
-        {
-          "field": "カーペット掃除",
-          "score": 85,
+          "field": "カーペット清掃",
+          "score": 88,
           "reviewCount": 5,
-          "comment": "カーペットを正確に認識し、水拭きを回避。吸引力も適切に調整され、丁寧な清掃です。"
+          "comment": "子供が遊ぶカーペットも、自動で吸引力を上げてしっかり掃除します。モップをリフトアップするため、カーペットを濡らす心配もありません。"
+        },
+        {
+          "field": "バッテリー持続時間",
+          "score": 0,
+          "reviewCount": 0,
+          "comment": "バッテリーの口コミはありませんが、広い一戸建てでも自動で充電・再開するため、掃除が完了しないという心配は少ないと考えられます。"
         }
       ]
     }

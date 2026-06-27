@@ -94,17 +94,13 @@ function updateDynamicElements(data) {
                     element.style.display = 'none';
                     console.log('ℹ️ 画像なし（アフィリエイト画像未設定）→ 非表示');
                 }
-            } else if (path === 'stars') {
-                updateStarRating(element, data.overallRating);
-                console.log(`✅ 星評価更新: ${data.overallRating}`);
             } else if (path === 'price') {
                 // 価格を「約」付きでカンマ区切りでフォーマット
                 element.textContent = `約¥${value.toLocaleString()}`;
                 console.log(`✅ 価格更新: 約¥${value.toLocaleString()}`);
-            } else if (path === 'overallRating') {
-                // 総合評価は小数第2位まで固定表示
-                element.textContent = Number(value).toFixed(2);
-                console.log(`✅ overallRating = ${Number(value).toFixed(2)}`);
+            } else if (path === 'totalReviews') {
+                element.textContent = Number(value).toLocaleString();
+                console.log(`✅ 総口コミ件数: ${Number(value).toLocaleString()}件`);
             } else if (path.includes('percentage')) {
                 element.textContent = `${value}%`;
                 console.log(`✅ ${path} = ${value}%`);
@@ -149,25 +145,6 @@ function getNestedValue(obj, path) {
     return path.split('.').reduce((current, key) => current?.[key], obj);
 }
 
-function updateStarRating(element, rating) {
-    const fullStars = Math.floor(rating);
-    const hasHalfStar = rating % 1 >= 0.5;
-    const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
-    
-    let starsHTML = '';
-    for (let i = 0; i < fullStars; i++) {
-        starsHTML += '<i class="fas fa-star"></i>';
-    }
-    if (hasHalfStar) {
-        starsHTML += '<i class="fas fa-star-half-alt"></i>';
-    }
-    for (let i = 0; i < emptyStars; i++) {
-        starsHTML += '<i class="far fa-star"></i>';
-    }
-    
-    element.innerHTML = starsHTML;
-}
-
 // 4. 基本情報更新
 function updateBasicInfo(data) {
     const productTitle = document.querySelector('.product-title');
@@ -192,7 +169,7 @@ function updateBasicInfo(data) {
             
             // すべての性能項目をスコア順にソート
             const allScores = [
-                { key: 'floorCleaning', label: '床掃除', value: perfData.floorCleaning?.score },
+                { key: 'floorCleaning', label: 'フローリング', value: perfData.floorCleaning?.score },
                 { key: 'carpetCleaning', label: 'カーペット', value: perfData.carpetCleaning?.score },
                 { key: 'petHairRemoval', label: 'ペット毛', value: perfData.petHairRemoval?.score || perfData.petHair?.score },
                 { key: 'quietness', label: '静音性', value: perfData.quietness?.score || perfData.nightQuietness?.score },
@@ -216,29 +193,7 @@ function updateBasicInfo(data) {
     }
 }
 
-// 5. カテゴリC更新
-function updateCategoryC(data) {
-    const categoryC = data.categoryC;
-    if (!categoryC) return;
-    
-    const satCards = document.querySelectorAll('.stat-card');
-    if (satCards.length >= 1) {
-        const satNumber = satCards[0].querySelector('.stat-number');
-        if (satNumber) satNumber.textContent = categoryC.userSatisfaction.score;
-    }
-    
-    if (satCards.length >= 2) {
-        const repeatNumber = satCards[1].querySelector('.stat-number');
-        if (repeatNumber) repeatNumber.textContent = `${categoryC.repurchaseIntention.percentage}%`;
-    }
-    
-    if (satCards.length >= 3) {
-        const failureNumber = satCards[2].querySelector('.stat-number');
-        if (failureNumber) failureNumber.textContent = `${categoryC.failureRate.percentage}%`;
-    }
-}
-
-// 6. 性能分析更新
+// 5. 性能分析更新
 function updatePerformanceData(data) {
     const perfData = data.performanceAnalysis;
     if (!perfData) return;
@@ -453,6 +408,20 @@ function updateTimeSaving(data) {
             el.textContent = ts.dailyMinutes;
         }
     });
+
+    const vacuumMinutesEls = document.querySelectorAll('[data-dynamic="timeSaving.vacuumMinutes"]');
+    vacuumMinutesEls.forEach(el => {
+        if (ts.vacuumMinutes !== undefined) {
+            el.textContent = ts.vacuumMinutes;
+        }
+    });
+
+    const mopMinutesEls = document.querySelectorAll('[data-dynamic="timeSaving.mopMinutes"]');
+    mopMinutesEls.forEach(el => {
+        if (ts.mopMinutes !== undefined) {
+            el.textContent = ts.mopMinutes;
+        }
+    });
     
     // 月次時間
     const monthlyHoursEls = document.querySelectorAll('[data-dynamic="timeSaving.monthlyHours"]');
@@ -477,12 +446,6 @@ function updateTimeSaving(data) {
             el.textContent = ts.workDaysEquivalent;
         }
     });
-    
-    // 計算根拠
-    const methodologyEl = document.querySelector('[data-dynamic="timeSaving.methodology"]');
-    if (methodologyEl && ts.methodology) {
-        methodologyEl.textContent = ts.methodology;
-    }
 }
 
 // 7.8. 運用コスト更新
@@ -1256,7 +1219,6 @@ async function initializePage() {
         updateMetadata(data);
         updateDynamicElements(data);
         updateBasicInfo(data);
-        updateCategoryC(data);
         updateReliability(data);
         updateUpdateInfo(data);
         updatePerformanceData(data);

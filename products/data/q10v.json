@@ -7,10 +7,10 @@
   "overallRating": 4.14,
   "totalReviews": 38,
   "price": 35999,
-  "reliabilityScore": 71.5,
+  "reliabilityScore": 59.5,
   "asin": "",
   "metaTitle": "Roborock Q10V 詳細分析 | 吸引力と水拭きを両立した高コスパモデルの真実",
-  "metaDescription": "Roborock Q10Vの38件のレビューを解析。強力な吸引力と水拭き性能、静音性など、Q10Vの真実を公開。",
+  "metaDescription": "Roborock Q10Vの38件の口コミを解析。強力な吸引力と水拭き性能、静音性など、Q10Vの真実を公開。",
   "keywords": [
     "Roborock Q10V",
     "ロボット掃除機",
@@ -42,35 +42,36 @@
     }
   },
   "reliability": {
-    "score": 71.5,
+    "score": 59.5,
     "dataAdequacy": {
-      "score": 55,
+      "score": 40,
       "weight": 60,
-      "description": "レビュー総数が38件と少ないため、データ十分性のスコアは低めですが、提供されたデータは全て分析対象です。"
+      "description": "口コミ総数が38件と少ないため、データ十分性のスコアは低めですが、提供されたデータは全て分析対象です。"
     },
     "consistency": {
-      "percentage": 95,
+      "percentage": 85,
       "weight": 30,
-      "description": "レビュー全体で高評価と低評価が混在しており、特に初期不良やアプリの不安定さで一貫性に課題が見られます。",
-      "score": 95
+      "description": "口コミ全体で高評価と低評価が混在しており、特に初期不良やアプリの不安定さで一貫性に課題が見られます。",
+      "score": 85
     },
     "freshness": {
       "score": 100,
       "weight": 10,
-      "description": "直近30日以内のレビューが全体の2.6%と少ないものの、最新のレビューが含まれており鮮度は高いです。"
+      "description": "直近30日以内の口コミが全体の2.6%と少ないものの、最新の口コミが含まれており鮮度は高いです。"
     }
   },
   "updateInfo": {
     "lastUpdated": "2026-06-15",
     "firmwareVersion": "",
-    "note": "レビューは2025年6月から2026年5月までの期間にわたります。全体的に高機能への評価が高いです。"
+    "note": "口コミは2025年6月から2026年5月までの期間にわたります。全体的に高機能への評価が高いです。"
   },
   "timeSaving": {
-    "dailyMinutes": 20,
-    "monthlyHours": 10.0,
-    "annualHours": 120,
-    "workDaysEquivalent": 15.0,
-    "methodology": "手動での掃除に毎日20分かかると仮定し、ロボット掃除機による自動化で節約できる時間を算出しました。"
+    "vacuumMinutes": 10,
+    "mopMinutes": 9,
+    "dailyMinutes": 19,
+    "monthlyHours": 9.5,
+    "annualHours": 115.6,
+    "workDaysEquivalent": 14.4
   },
   "operationalCost": {
     "daily": 43,
@@ -181,8 +182,8 @@
     "sampledReviews": 38,
     "adoptedReviews": 38,
     "excludedReviews": 0,
-    "trustScore": 71.5,
-    "comment": "提供された38件のレビュー全てを分析対象としました。レビュー数が少ないため信頼度スコアは中程度です。"
+    "trustScore": 59.5,
+    "comment": "提供された38件の口コミ全てを分析対象としました。口コミ数が少ないため信頼度スコアは中程度です。"
   },
   "reviewKeywords": {
     "positive": [

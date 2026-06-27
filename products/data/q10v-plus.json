@@ -7,10 +7,10 @@
   "overallRating": 3.74,
   "totalReviews": 30,
   "price": 79999,
-  "reliabilityScore": 69.7,
+  "reliabilityScore": 58.0,
   "asin": "",
   "metaTitle": "Roborock Q10V+ 詳細分析 | 吸引力と水拭きの実力は？",
-  "metaDescription": "Roborock Q10V+の30件のレビューを解析。強力な吸引力と水拭き機能、自動ゴミ収集など、Q10V+の真実を公開。",
+  "metaDescription": "Roborock Q10V+の30件の口コミを解析。強力な吸引力と水拭き機能、自動ゴミ収集など、Q10V+の真実を公開。",
   "keywords": [
     "Roborock Q10V+",
     "ロボット掃除機",
@@ -42,22 +42,22 @@
     }
   },
   "reliability": {
-    "score": 69.7,
+    "score": 58.0,
     "dataAdequacy": {
-      "score": 52,
+      "score": 40,
       "weight": 60,
-      "description": "レビュー総数が30件と比較的少ないため、データ十分性のスコアは40点です。今後のレビュー増加に期待します。"
+      "description": "口コミ総数が30件と比較的少ないため、データ十分性のスコアは40点です。今後の口コミ増加に期待します。"
     },
     "consistency": {
-      "percentage": 95,
+      "percentage": 80,
       "weight": 30,
       "description": "肯定的な意見と否定的な意見が混在しており、評価の一貫性は中程度です。特定の機能で意見が分かれる傾向が見られます。",
-      "score": 95
+      "score": 80
     },
     "freshness": {
       "score": 100,
       "weight": 10,
-      "description": "直近30日以内のレビューが13.3%と、比較的新しいレビューが含まれており、鮮度スコアは100点です。"
+      "description": "直近30日以内の口コミが13.3%と、比較的新しい口コミが含まれており、鮮度スコアは100点です。"
     }
   },
   "updateInfo": {
@@ -69,8 +69,7 @@
     "dailyMinutes": 19,
     "monthlyHours": 9.5,
     "annualHours": 114,
-    "workDaysEquivalent": 14.25,
-    "methodology": "ロボット掃除機が毎日19分間の掃除を自動で行うことで、ユーザーが手動で掃除する時間を節約します。これにより、月間約9.5時間、年間約114時間の自由な時間を創出します。"
+    "workDaysEquivalent": 14.25
   },
   "operationalCost": {
     "daily": 80,
@@ -127,7 +126,7 @@
       "score": 88,
       "reviewCount": 3,
       "positiveReviewCount": 1,
-      "comment": "長毛種のペットの毛も目立たなくなったとの声があり、ペットの毛の吸引力は一定の評価を得ています。ただし、レビュー件数が少ないため、より多くのデータで検証が必要です。"
+      "comment": "長毛種のペットの毛も目立たなくなったとの声があり、ペットの毛の吸引力は一定の評価を得ています。ただし、口コミ件数が少ないため、より多くのデータで検証が必要です。"
     },
     "quietness": {
       "score": 80,
@@ -187,8 +186,8 @@
     "sampledReviews": 30,
     "adoptedReviews": 29,
     "excludedReviews": 1,
-    "trustScore": 69.7,
-    "comment": "ユーザー提供の30件のレビューを分析。1件は製品レビューとして不適格と判断し除外しました。信頼度スコアは58.0点です。"
+    "trustScore": 58.0,
+    "comment": "ユーザー提供の30件の口コミを分析。1件は製品口コミとして不適格と判断し除外しました。信頼度スコアは58.0点です。"
   },
   "reviewKeywords": {
     "positive": [

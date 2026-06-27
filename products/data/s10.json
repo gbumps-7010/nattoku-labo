@@ -7,10 +7,10 @@
   "overallRating": 3.53,
   "totalReviews": 100,
   "price": 119820,
-  "reliabilityScore": 83.5,
+  "reliabilityScore": 85.0,
   "asin": "",
   "metaTitle": "SwitchBot S10 お掃除ロボットS10 詳細分析 | 故障・サポートの実態を徹底解説",
-  "metaDescription": "SwitchBot S10の100件のレビューを解析。水道直結の革新性と、頻発する故障、サポート対応の課題など、製品の真実を公開。",
+  "metaDescription": "SwitchBot S10の100件の口コミを解析。水道直結の革新性と、頻発する故障、サポート対応の課題など、製品の真実を公開。",
   "keywords": [
     "SwitchBot S10",
     "ロボット掃除機",
@@ -42,35 +42,36 @@
     }
   },
   "reliability": {
-    "score": 83.5,
+    "score": 85.0,
     "dataAdequacy": {
       "score": 80,
       "weight": 60,
-      "description": "レビュー数が100件以上のため、データ十分性は高いと評価できます。広範なユーザーからの意見を反映しています。"
+      "description": "口コミ数が100件以上のため、データ十分性は高いと評価できます。広範なユーザーからの意見を反映しています。"
     },
     "consistency": {
-      "percentage": 95,
+      "percentage": 100,
       "weight": 30,
-      "description": "単一のレビューソースからのデータであるため、評価の一貫性は高いと判断されます。サイト間の評価差による変動はありません。",
-      "score": 95
+      "description": "単一の口コミソースからのデータであるため、評価の一貫性は高いと判断されます。サイト間の評価差による変動はありません。",
+      "score": 100
     },
     "freshness": {
       "score": 70,
       "weight": 10,
-      "description": "直近30日以内のレビュー比率が低いため、鮮度スコアは中程度です。最新のユーザー体験を完全に反映しているとは言えません。"
+      "description": "直近30日以内の口コミ比率が低いため、鮮度スコアは中程度です。最新のユーザー体験を完全に反映しているとは言えません。"
     }
   },
   "updateInfo": {
     "lastUpdated": "2026-06-15",
     "firmwareVersion": "",
-    "note": "最新のレビューでは、製品のコンセプトは評価されるものの、頻発する故障とサポート対応の遅さが大きな課題として指摘されています。"
+    "note": "最新の口コミでは、製品のコンセプトは評価されるものの、頻発する故障とサポート対応の遅さが大きな課題として指摘されています。"
   },
   "timeSaving": {
-    "dailyMinutes": 30,
-    "monthlyHours": 15.0,
-    "annualHours": 180,
-    "workDaysEquivalent": 22.5,
-    "methodology": "毎日30分の掃除時間を節約できると仮定し、月間・年間で換算しています。手動での掃除や水拭きの労力を大幅に削減します。"
+    "vacuumMinutes": 10,
+    "mopMinutes": 9,
+    "dailyMinutes": 19,
+    "monthlyHours": 9.5,
+    "annualHours": 115.6,
+    "workDaysEquivalent": 14.4
   },
   "operationalCost": {
     "daily": 96,
@@ -115,7 +116,7 @@
       "score": 80,
       "reviewCount": 1,
       "positiveReviewCount": 1,
-      "comment": "カーペットを自動で識別し、吸引力を強化する機能は評価されていますが、言及しているレビューが非常に少ないため、評価は限定的です。"
+      "comment": "カーペットを自動で識別し、吸引力を強化する機能は評価されていますが、言及している口コミが非常に少ないため、評価は限定的です。"
     },
     "petHairRemoval": {
       "score": 90,
@@ -145,7 +146,7 @@
       "score": 65,
       "reviewCount": 34,
       "positiveReviewCount": 15,
-      "comment": "アプリの操作性やスケジュール設定、エリア指定機能は便利と評価されています。しかし、Wi-Fi接続の不安定さや、アプリ経由でのレビュー削除疑惑、スケジュール設定の不具合など、安定性に課題があります。"
+      "comment": "アプリの操作性やスケジュール設定、エリア指定機能は便利と評価されています。しかし、Wi-Fi接続の不安定さや、アプリ経由での口コミ削除疑惑、スケジュール設定の不具合など、安定性に課題があります。"
     },
     "batteryLife": {
       "score": 50,
@@ -181,8 +182,8 @@
     "sampledReviews": 100,
     "adoptedReviews": 90,
     "excludedReviews": 10,
-    "trustScore": 83.5,
-    "comment": "提供された100件のレビューを詳細に分析しました。一部の短いレビューや重複を除き、90件のレビューを評価に採用しています。信頼度スコアは、データ十分性、一貫性、鮮度に基づいて算出されています。"
+    "trustScore": 85.0,
+    "comment": "提供された100件の口コミを詳細に分析しました。一部の短い口コミや重複を除き、90件の口コミを評価に採用しています。信頼度スコアは、データ十分性、一貫性、鮮度に基づいて算出されています。"
   },
   "reviewKeywords": {
     "positive": [

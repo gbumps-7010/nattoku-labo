@@ -2,105 +2,106 @@
   "productId": "deebot-mini",
   "productName": "DEEBOT mini",
   "manufacturer": "ECOVACS",
-  "modelNumber": "DJX28-01EE",
+  "modelNumber": "DJX11",
   "imageUrl": "https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/deebot/mini/thumb.jpg",
-  "overallRating": 4.04,
-  "totalReviews": 206,
+  "overallRating": 3.88,
+  "totalReviews": 204,
   "price": 69800,
-  "reliabilityScore": 88.0,
+  "reliabilityScore": 81.1,
   "asin": "",
-  "metaTitle": "DEEBOT mini 詳細分析 | コンパクト高性能ロボット掃除機の真実",
-  "metaDescription": "DEEBOT miniの206件のレビューを解析。小型ながら水拭き・自動洗浄・静音性を兼ね備えた本製品の真実を公開。",
+  "metaTitle": "ECOVACS DEEBOT mini 詳細分析 | 購入前に知るべき口コミの真実",
+  "metaDescription": "ECOVACS DEEBOT miniの203件の口コミを徹底解析。コンパクトさ、静音性、水拭き性能の評価は高い一方、カーペット清掃やアプリ設定の課題も。購入前に知るべき真実を公開します。",
   "keywords": [
     "DEEBOT mini",
     "ロボット掃除機",
-    "ECOVACS",
+    "口コミ",
+    "評判",
     "水拭き",
-    "自動洗浄",
     "コンパクト"
   ],
   "categoryC": {
     "userSatisfaction": {
-      "score": 92,
-      "reviewCount": 206,
-      "comment": "多くのユーザーがコンパクトな本体と水拭き・自動洗浄機能に高い満足度を示しています。日常の清掃が格段に楽になったとの声が多数寄せられています。"
+      "score": 88,
+      "reviewCount": 203,
+      "comment": "コンパクトな設計と静音性、特にフローリングでの水拭き性能に高い満足度が示されています。多くのユーザーが家事負担の軽減を実感しており、初めてのロボット掃除機として高く評価する声が多数見られました。"
     },
     "repurchaseIntention": {
-      "percentage": 88,
-      "reviewCount": 182,
-      "comment": "「買ってよかった」という声が多く、リピート購入や友人への推薦意向も高いです。特に小型サイズへの評価が目立ちます。"
+      "percentage": 80,
+      "reviewCount": 180,
+      "comment": "機能と価格のバランスから、多くのユーザーが満足しており、次も同社製品を検討したいとの意見が見られます。ただし、カーペットを多用する家庭では、モップリフト機能付きの上位機種を望む声もありました。"
     },
     "failureRate": {
-      "percentage": 5,
-      "reviewCount": 206,
+      "percentage": 7,
+      "reviewCount": 203,
       "breakdown": {
-        "hardware": 2,
+        "hardware": 4,
         "software": 2,
         "environmental": 1
       },
-      "comment": "初期設定時のWi-Fi接続やカーペット認識、稀に異音や動作停止などの不具合が報告されていますが、全体的には低水準です。"
+      "comment": "初期不良や特定の動作（異音、ドッキング失敗）に関する報告が少数見られます。多くはサポート対応で解決していますが、購入後の動作確認は必須です。アプリの接続不良も一部で報告されています。"
     }
   },
   "reliability": {
-    "score": 88.0,
+    "score": 81.1,
     "dataAdequacy": {
       "score": 85,
       "weight": 60,
-      "description": "総レビュー数206件と十分なデータ量があり、製品の全体的な傾向を把握するのに適しています。"
+      "description": "レビュー総数は203件あり、製品の長所と短所を判断するための十分なデータ量が確保されています。多様な利用環境からのフィードバックが含まれており、信頼性の高い評価が可能です。"
     },
     "consistency": {
-      "percentage": 95,
+      "score": 72,
       "weight": 30,
-      "description": "楽天の平均評価4.3と安定しており、評価に大きなばらつきがないため、一貫性が高いと判断されます。",
-      "score": 95
+      "description": "全体的には高評価ですが、カーペット利用環境や初期設定の難しさなど、特定の条件下で評価が分かれる傾向があります。特にカーペットの扱いは、ユーザーの満足度を左右する大きな要因となっています。",
+      "percentage": 72
     },
     "freshness": {
       "score": 85,
       "weight": 10,
-      "description": "直近30日以内のレビュー比率は低いものの、定期的に新しいレビューが投稿されており、鮮度は良好です。"
+      "description": "レビューの大半は2025年から2026年にかけて投稿されており、現在の製品性能やアプリの挙動を反映した新しい情報が中心です。長期的な耐久性に関する評価は今後の課題となります。"
     }
   },
   "updateInfo": {
-    "lastUpdated": "2026-06-15",
+    "lastUpdated": "2026-06-27",
     "firmwareVersion": "",
-    "note": "最新レビューは2026年6月のもので、全体的に小型ながら高性能、特に水拭き機能と静音性が高く評価されています。初期設定やカーペット認識に関する改善要望が見られます。"
+    "note": "2026年6月までの口コミデータを基に分析。全体的にコンパクトさと水拭き性能が高く評価されていますが、カーペットの扱いやアプリの初期設定に関する課題が指摘されています。"
   },
   "timeSaving": {
-    "dailyMinutes": 20,
-    "monthlyHours": 10,
-    "annualHours": 120,
-    "workDaysEquivalent": 15,
-    "methodology": "ロボット掃除機が毎日20分間清掃を行うと仮定し、手動清掃の時間を節約できると算出。年間で約120時間の家事負担を軽減します。"
+    "vacuumMinutes": 10,
+    "mopMinutes": 9,
+    "dailyMinutes": 19,
+    "monthlyHours": 9.5,
+    "annualHours": 115.6,
+    "workDaysEquivalent": 14.4
   },
   "operationalCost": {
-    "daily": 45,
-    "dailyNote": "消耗品の実質的な日割りコスト",
-    "monthly": 1375,
-    "annual": 16500,
+    "daily": 68,
+    "dailyNote": "消耗品と洗浄液の実質的な日割りコスト。毎日の使用を想定した交換頻度で計算しています。",
+    "monthly": 2063,
+    "annual": 24760,
     "consumables": [
       {
-        "item": "ダストバッグ",
-        "replacementFrequency": "2ヶ月ごと",
-        "unitCost": 3500,
-        "annualCost": 7000
-      },
-      {
-        "item": "サイドブラシ",
-        "replacementFrequency": "6ヶ月ごと",
-        "unitCost": 2000,
-        "annualCost": 2000
-      },
-      {
-        "item": "フィルター",
-        "replacementFrequency": "6ヶ月ごと",
-        "unitCost": 2500,
-        "annualCost": 2500
-      },
-      {
-        "item": "モップパッド",
+        "item": "抗菌ダストパック (3個入)",
         "replacementFrequency": "3ヶ月ごと",
-        "unitCost": 2500,
-        "annualCost": 5000
+        "unitCost": 2200,
+        "annualCost": 8800
+      },
+      {
+        "item": "交換用モップ (3個入)",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 2800,
+        "annualCost": 5600
+      },
+      {
+        "item": "交換用サイドブラシ (4本入)",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 2200,
+        "annualCost": 4400
+      },
+      {
+        "item": "DEEBOT専用洗浄液 (110ml)",
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 1490,
+        "annualCost": 5960
       }
     ]
   },
@@ -108,55 +109,55 @@
     "floorCleaning": {
       "score": 95,
       "reviewCount": 100,
-      "positiveReviewCount": 90,
-      "comment": "フローリングの吸引と水拭き性能が高く、床がサラサラになると好評です。日常の清掃で高い満足度が得られます。"
+      "positiveReviewCount": 94,
+      "comment": "水拭き性能は絶賛されており「床がサラサラになる」との声が多数。回転モップによる拭き上げ効果は高く、特にフローリング中心の家庭で満足度が高いです。日々のざらつきやベタつきを解消してくれます。"
     },
     "carpetCleaning": {
-      "score": 65,
+      "score": 45,
       "reviewCount": 21,
-      "positiveReviewCount": 5,
-      "comment": "カーペット認識に課題があり、水拭きモードでは進入しないため、モップの着脱が必要となる点が指摘されています。"
+      "positiveReviewCount": 6,
+      "comment": "モップリフト機能がないため、カーペット清掃にはモップの着脱が必須。この手間が最大の不満点です。また、カーペットの認識精度が低く、掃除エリアから除外されてしまう問題も指摘されています。"
     },
     "petHairRemoval": {
-      "score": 78,
+      "score": 80,
       "reviewCount": 29,
-      "positiveReviewCount": 18,
-      "comment": "ペットの毛や猫砂の吸引に一定の効果がありますが、吸引力には個体差や環境によるばらつきが見られます。"
+      "positiveReviewCount": 23,
+      "comment": "フローリング上のペットの毛は問題なく吸引できます。猫の毛や抜け毛対策として満足している声が多いです。ただし、カーペット上の毛の除去能力は限定的で、過度な期待は禁物との意見も見られました。"
     },
     "quietness": {
-      "score": 90,
+      "score": 92,
       "reviewCount": 43,
-      "positiveReviewCount": 36,
-      "comment": "稼働音が非常に静かで、昼夜問わず使用できると高評価です。ステーションでのゴミ回収音は大きめですが短時間です。"
+      "positiveReviewCount": 40,
+      "comment": "「非常に静か」という評価が圧倒的多数。旧機種や他社製品からの買い替えユーザーはその静音性に驚いています。在宅中や夜間でも稼働させやすい点が、マンション居住者などから高く評価されています。"
     },
     "stepClimbing": {
-      "score": 70,
+      "score": 68,
       "reviewCount": 12,
-      "positiveReviewCount": 5,
-      "comment": "2cm程度の段差は乗り越えるものの、特定の段差やコードで停止するケースが報告されており注意が必要です。"
+      "positiveReviewCount": 8,
+      "comment": "公式では17mmまでの段差に対応していますが、実際には敷居やマットの形状により乗り越えられないことがあります。特にビニールクロスなどに引っかかるという声も。玄関などへの落下防止は問題なく機能します。"
     },
     "maintenance": {
       "score": 93,
-      "reviewCount": 196,
-      "positiveReviewCount": 180,
-      "comment": "自動ゴミ収集とモップ洗浄・乾燥機能が非常に好評で、日々の手入れの手間を大幅に削減します。"
+      "reviewCount": 194,
+      "positiveReviewCount": 182,
+      "comment": "ゴミの自動収集とモップの自動洗浄・乾燥機能は非常に高く評価されています。日々の手入れの手間が大幅に削減される点が最大の魅力です。ただし、消耗品のコストが比較的高価である点は留意が必要です。"
     },
     "appStability": {
-      "score": 75,
+      "score": 70,
       "reviewCount": 80,
-      "positiveReviewCount": 55,
-      "comment": "アプリは多機能で便利ですが、初期設定時のWi-Fi接続やマッピングに手間取るユーザーも散見されます。"
+      "positiveReviewCount": 56,
+      "comment": "Wi-Fiへの初期接続で苦労するユーザーが散見されます。特に2.4GHz帯への接続が必要な点で戸惑う声が多いです。一度接続すれば基本的な操作は可能ですが、マッピングの精度が不正確との指摘もあります。"
     },
     "batteryLife": {
-      "score": 80,
+      "score": 78,
       "reviewCount": 10,
       "positiveReviewCount": 7,
-      "comment": "コンパクトながら一回の充電で複数部屋の清掃が可能。ただし、広範囲の清掃ではバッテリー持ちに限界を感じる声もあります。"
+      "comment": "コンパクトな本体サイズのため、バッテリー容量は標準的です。ワンルームや2LDK程度の広さであれば1回の充電で完了するとの声が多いですが、広い家屋では途中で充電に戻ることがあります。"
     }
   },
   "radarChartData": {
     "labels": [
-      "床掃除",
+      "フローリング",
       "カーペット",
       "ペット毛",
       "静音性",
@@ -167,22 +168,22 @@
     ],
     "values": [
       95,
-      65,
-      78,
-      90,
-      70,
+      45,
+      80,
+      92,
+      68,
       93,
-      75,
-      80
+      70,
+      78
     ]
   },
   "dataQuality": {
-    "totalReviews": 206,
-    "sampledReviews": 206,
-    "adoptedReviews": 182,
-    "excludedReviews": 24,
-    "trustScore": 88.0,
-    "comment": "全206件のレビューを詳細に分析し、信頼性の高いデータのみを選定。一部の短文レビューを除外し、86.5%の信頼度で評価しています。"
+    "totalReviews": 204,
+    "sampledReviews": 203,
+    "adoptedReviews": 203,
+    "excludedReviews": 1,
+    "trustScore": 81.1,
+    "comment": "楽天に投稿された203件のユーザーレビューを分析。購入者の多様な意見を反映しており、製品の実際の性能と課題を把握する上で信頼性の高いデータとなっています。"
   },
   "reviewKeywords": {
     "positive": [
@@ -191,8 +192,16 @@
         "count": 73
       },
       {
+        "keyword": "水拭き・拭き掃除が良い",
+        "count": 65
+      },
+      {
         "keyword": "静かで快適",
         "count": 36
+      },
+      {
+        "keyword": "マッピング・ルートが賢い",
+        "count": 35
       },
       {
         "keyword": "綺麗になる",
@@ -205,6 +214,18 @@
       {
         "keyword": "床がサラサラ・ピカピカ",
         "count": 12
+      },
+      {
+        "keyword": "吸引力が高い",
+        "count": 10
+      },
+      {
+        "keyword": "家事が楽になった",
+        "count": 9
+      },
+      {
+        "keyword": "故障・トラブルが少ない",
+        "count": 4
       }
     ],
     "negative": [
@@ -213,12 +234,12 @@
         "count": 14
       },
       {
-        "keyword": "動作音が気になる",
-        "count": 3
+        "keyword": "期待を下回る点",
+        "count": 5
       },
       {
-        "keyword": "期待を下回る点",
-        "count": 2
+        "keyword": "動作音が気になる",
+        "count": 3
       },
       {
         "keyword": "止まってしまう",
@@ -227,193 +248,159 @@
       {
         "keyword": "段差・家具で引っかかる",
         "count": 2
+      },
+      {
+        "keyword": "アプリ・Wi-Fi接続が難しい",
+        "count": 1
+      },
+      {
+        "keyword": "マッピング・認識が不正確",
+        "count": 1
+      },
+      {
+        "keyword": "価格・コストが高い",
+        "count": 1
       }
     ]
   },
   "successStrategies": [
     {
       "rank": 1,
-      "issue": "カーペット認識の課題とモップリフト機能の欠如",
-      "occurrenceRate": 15,
-      "occurrenceCount": 30,
-      "environmentalFactor": "カーペットの種類、配置、厚さ",
-      "technicalDescription": "モップパッド装着時にカーペットを回避するロジックが、マッピングと連動し水拭きエリアを制限します。",
-      "avoidanceStrategies": [
-        {
-          "method": "「カーペット通行エリア」設定の活用",
-          "effectiveness": "高",
-          "technicalLevel": "初級",
-          "technicalRationale": "アプリでカーペットエリアを正確に設定することで、水拭き時に回避させ、吸引のみの清掃を促すことが可能です。"
-        },
-        {
-          "method": "モップパッドの着脱",
-          "effectiveness": "中",
-          "technicalLevel": "初級",
-          "technicalRationale": "水拭き不要時はモップパッドを物理的に外すことで、カーペットエリアを含む吸引清掃が可能になります。"
-        }
-      ],
-      "preventionTips": "カーペットの敷き方を工夫し、水拭きエリアと吸引エリアを明確に分けることで、効率的な清掃が実現します。"
-    },
-    {
-      "rank": 2,
-      "issue": "初期設定・Wi-Fi接続の難しさ",
+      "issue": "カーペット清掃と水拭きの両立ができない",
       "occurrenceRate": 10,
-      "occurrenceCount": 20,
-      "environmentalFactor": "Wi-Fiルーターの周波数帯（2.4GHz/5GHz）、電波強度、スマホのOSバージョン",
-      "technicalDescription": "多くのロボット掃除機は2.4GHz帯のWi-Fiにのみ対応しており、5GHz帯との混在環境で接続が不安定になることがあります。",
+      "occurrenceCount": 21,
+      "environmentalFactor": "フローリングとカーペットが混在する間取り",
+      "technicalDescription": "本機はモップリフトアップ機能非搭載のため、モップ装着時はカーペットを障害物と認識し進入しません。吸引のみを行うには、物理的にモップパッドを取り外す必要があります。",
       "avoidanceStrategies": [
         {
-          "method": "2.4GHz帯Wi-Fiでの接続",
+          "method": "清掃モードを使い分ける（モップ着脱）",
           "effectiveness": "高",
           "technicalLevel": "初級",
-          "technicalRationale": "ルーター設定で2.4GHz帯を優先または分離し、ロボット掃除機をそのネットワークに接続することで安定性が向上します。"
+          "technicalRationale": "最も確実な方法です。カーペットを含むエリアはモップを外して「吸引のみ」で清掃し、フローリングのみのエリアはモップを装着して「吸引と水拭き」で清掃スケジュールを分けることで対応します。"
         },
         {
-          "method": "ルーターの近くで設定",
+          "method": "アプリで「カーペット通行エリア」を設定する",
           "effectiveness": "中",
-          "technicalLevel": "初級",
-          "technicalRationale": "初期設定時はルーターとロボット掃除機を近づけることで、電波干渉を減らし接続成功率を高めます。"
+          "technicalLevel": "中級",
+          "technicalRationale": "この設定により、モップ装着時でもカーペット上を通過して先のフローリングエリアへ移動させることが可能です。ただし、カーペット自体の清掃は行われず、認識精度によっては上手く機能しない場合があります。"
         }
       ],
-      "preventionTips": "事前にWi-Fi環境を確認し、2.4GHz帯が利用可能か、またルーターの近くで設定作業を行うことが推奨されます。"
-    },
-    {
-      "rank": 3,
-      "issue": "故障・動作不具合",
-      "occurrenceRate": 7,
-      "occurrenceCount": 14,
-      "environmentalFactor": "使用環境（段差、コード）、清掃頻度、メンテナンス状況",
-      "technicalDescription": "センサーの誤認識、内部部品の摩耗、ソフトウェアのバグなどが原因で、予期せぬ動作停止やエラーが発生することがあります。",
-      "avoidanceStrategies": [
-        {
-          "method": "定期的なメンテナンス",
-          "effectiveness": "高",
-          "technicalLevel": "初級",
-          "technicalRationale": "ブラシやフィルターの清掃、消耗品の交換を定期的に行うことで、本体への負担を減らし故障リスクを低減します。"
-        },
-        {
-          "method": "障害物の除去",
-          "effectiveness": "高",
-          "technicalLevel": "初級",
-          "technicalRationale": "清掃前に床のコードや小さな障害物を取り除くことで、ロボットの引っかかりやセンサー異常を防ぎます。"
-        }
-      ],
-      "preventionTips": "異常音やエラーメッセージが発生した場合は、速やかにメーカーサポートに連絡し、適切な対応を仰ぐことが重要です。"
+      "preventionTips": "購入前に自宅のカーペット比率を確認することが重要です。ラグやマットを多用している家庭では、モップリフトアップ機能を持つ上位モデル（T20 OMNIなど）を検討する方がストレスなく運用できます。"
     }
   ],
   "topComplaints": [
     {
-      "title": "カーペット認識の課題",
-      "percentage": 15,
-      "reviewCount": 30,
-      "description": "モップ装着時にカーペットを回避するため、カーペットエリアの水拭きができません。モップの着脱が必要で手間がかかります。",
-      "solution": "アプリで「カーペット通行エリア」を設定するか、水拭き不要時はモップパッドを外して吸引清掃を行いましょう。"
-    },
-    {
-      "title": "初期設定・Wi-Fi接続の難しさ",
+      "title": "カーペットがあると思うように掃除できない",
       "percentage": 10,
-      "reviewCount": 20,
-      "description": "アプリ登録やWi-Fi接続がうまくいかないケースがあり、特に2.4GHz帯のWi-Fi設定で苦労するユーザーが見られます。",
-      "solution": "Wi-Fiルーターを2.4GHz帯に設定し、初期設定時はロボットとルーターを近づけることで接続が安定します。"
+      "reviewCount": 21,
+      "description": "モップリフト機能がないため、水拭きモップを装着しているとカーペットエリアを掃除できません。吸引のみの場合でも、一度カーペットと認識されるとマップから手動で削除できず、その後の水拭きに支障が出ます。",
+      "solution": "吸引のみの場合は必ずモップを外して実行してください。水拭きとカーペット掃除を両立したい場合は、掃除スケジュールを分けるか、アプリの「カーペット通行エリア」設定を試す必要があります。"
     },
     {
-      "title": "故障・動作不具合",
-      "percentage": 7,
-      "reviewCount": 14,
-      "description": "異音やエラーメッセージ、動作停止などの初期不良や使用中の不具合が報告されており、サポート対応に不満の声もあります。",
-      "solution": "定期的なメンテナンスと清掃前の障害物除去が重要です。異常発生時はメーカーサポートへ速やかに連絡しましょう。"
+      "title": "アプリの初期設定（Wi-Fi接続）が難しい",
+      "percentage": 5,
+      "reviewCount": 11,
+      "description": "自宅のWi-Fiが5GHz帯の場合、2.4GHz帯に切り替えないと接続できず、多くのユーザーがここで躓いています。また、アプリの案内が不親切で、接続完了までに時間がかかったという報告が複数あります。",
+      "solution": "接続時はスマホをルーターと本体の近くに置き、Wi-Fi設定で2.4GHz帯のネットワークを選択してください。うまくいかない場合は、ルーターの再起動や、別のスマートフォンから試すと成功することがあります。"
+    },
+    {
+      "title": "マッピングの精度が低く、部屋を正しく認識しない",
+      "percentage": 4,
+      "reviewCount": 9,
+      "description": "壁を認識できずに複数の部屋が一つに繋がってしまったり、掃除エリアがずれたりするなど、マップが不正確になることがあります。一度作成したマップが勝手に消えるという不具合報告も見られました。",
+      "solution": "初回のマッピングは、部屋のドアを開放し、床の障害物を極力減らした状態で行うと精度が向上します。問題が続く場合は、アプリからマップをリセットし、再作成を試みてください。"
     }
   ],
   "attributeScores": {
     "petOwner": {
-      "overall": 86,
+      "overall": 89,
       "details": [
         {
-          "field": "ペット毛吸引力",
-          "score": 78,
+          "field": "ペットの毛吸引",
+          "score": 80,
           "reviewCount": 29,
-          "comment": "ペットの毛や猫砂の吸引に一定の効果がありますが、吸引力には個体差や環境によるばらつきが見られます。"
+          "comment": "フローリングに落ちたペットの毛はしっかり吸引してくれます。日々の抜け毛対策として十分な性能を発揮し、猫を飼っているユーザーからの評価は良好です。カーペット上の毛は苦手なようです。"
         },
         {
-          "field": "床掃除",
+          "field": "床の清潔さ",
           "score": 95,
           "reviewCount": 100,
-          "comment": "フローリングの吸引と水拭き性能が高く、床がサラサラになると好評です。日常の清掃で高い満足度が得られます。"
+          "comment": "水拭き機能により、ペットの足跡や床のベタつきをきれいに除去できます。素足で歩いても快適なサラサラの床を維持できるため、室内でペットを飼っている家庭にとって大きなメリットです。"
         },
         {
-          "field": "メンテナンス",
+          "field": "メンテナンス性",
           "score": 93,
-          "reviewCount": 196,
-          "comment": "自動ゴミ収集とモップ洗浄・乾燥機能が非常に好評で、日々の手入れの手間を大幅に削減します。"
+          "reviewCount": 194,
+          "comment": "毛が絡まりにくいブラシと、ゴミの自動収集機能により、面倒なメンテナンスの手間が大幅に削減されます。忙しい飼い主でも、手を汚さずに清潔な環境を保つことができると好評です。"
         }
       ]
     },
     "apartment": {
-      "overall": 88,
+      "overall": 89,
       "details": [
         {
           "field": "静音性",
-          "score": 90,
+          "score": 92,
           "reviewCount": 43,
-          "comment": "稼働音が非常に静かで、集合住宅でも周囲を気にせず使用できると高評価です。夜間の使用も問題ありません。"
+          "comment": "「驚くほど静か」との声が多数あり、集合住宅での使用に非常に適しています。テレビの音を邪魔せず、隣室や階下への騒音を気にすることなく、時間帯を選ばずに掃除を任せられます。"
         },
         {
-          "field": "床掃除",
+          "field": "コンパクトさ",
           "score": 95,
           "reviewCount": 100,
-          "comment": "フローリングの吸引と水拭き性能が高く、床がサラサラになると好評です。日常の清掃で高い満足度が得られます。"
+          "comment": "本体・ステーションともにコンパクトな設計で、限られたスペースにもすっきりと設置できます。狭い場所や家具の隙間にも入り込んで掃除してくれるため、ワンルームや1LDKでも活躍します。"
         },
         {
-          "field": "段差乗り越え",
-          "score": 70,
-          "reviewCount": 12,
-          "comment": "2cm程度の段差は乗り越えるものの、特定の段差やコードで停止するケースが報告されており注意が必要です。"
+          "field": "床掃除性能",
+          "score": 95,
+          "reviewCount": 100,
+          "comment": "フローリングの水拭き性能が高く評価されており、床を常に清潔に保てます。ハウスダストが気になる方や、素足で過ごすことが多い方にとって、満足度の高い清掃品質を提供します。"
         }
       ]
     },
     "workingProfessional": {
-      "overall": 83,
+      "overall": 86,
       "details": [
         {
-          "field": "メンテナンス",
+          "field": "メンテナンスの容易さ",
           "score": 93,
-          "reviewCount": 196,
-          "comment": "自動ゴミ収集とモップ洗浄・乾燥機能により、忙しい共働き世帯の家事負担を大幅に軽減します。"
+          "reviewCount": 194,
+          "comment": "ゴミ収集からモップ洗浄・乾燥まで全自動で行うため、日々の手入れは給排水程度です。忙しい平日は完全に任せきりにでき、週末の時間を有効活用できる点が大きな魅力です。"
         },
         {
-          "field": "アプリ安定性",
-          "score": 75,
+          "field": "アプリの安定性",
+          "score": 70,
           "reviewCount": 80,
-          "comment": "アプリは多機能で便利ですが、初期設定時のWi-Fi接続やマッピングに手間取るユーザーも散見されます。"
+          "comment": "外出先から掃除を開始できるなど基本的な遠隔操作は可能ですが、初期設定の難しさやマッピングの不安定さが指摘されています。IT機器の扱いに慣れていないと、少し戸惑うかもしれません。"
         },
         {
-          "field": "バッテリー",
-          "score": 80,
-          "reviewCount": 10,
-          "comment": "コンパクトながら一回の充電で複数部屋の清掃が可能。ただし、広範囲の清掃ではバッテリー持ちに限界を感じる声もあります。"
+          "field": "時間創出効果",
+          "score": 90,
+          "reviewCount": 203,
+          "comment": "日々の掃除から解放されることで、自由な時間が増えたと実感する声が多数あります。帰宅時に部屋が綺麗になっている快適さは、多忙な社会人にとって価格以上の価値があると感じられています。"
         }
       ]
     },
     "familyHome": {
-      "overall": 82,
+      "overall": 79,
       "details": [
         {
-          "field": "床掃除",
+          "field": "フローリング掃除",
           "score": 95,
           "reviewCount": 100,
-          "comment": "子供が裸足で歩く家庭でも床がサラサラになり、清潔さを保てると高評価です。日常清掃に貢献します。"
+          "comment": "子供の食べこぼしや裸足の足跡が気になるフローリングを、水拭きで常に清潔に保てます。ハイハイする赤ちゃんがいる家庭でも安心して使えると、子育て世帯から高く評価されています。"
         },
         {
-          "field": "バッテリー",
-          "score": 80,
-          "reviewCount": 10,
-          "comment": "コンパクトながら一回の充電で複数部屋の清掃が可能。ただし、広範囲の清掃ではバッテリー持ちに限界を感じる声もあります。"
-        },
-        {
-          "field": "カーペット",
-          "score": 65,
+          "field": "カーペット掃除",
+          "score": 45,
           "reviewCount": 21,
-          "comment": "カーペット認識に課題があり、水拭きモードでは進入しないため、モップの着脱が必要となる点が指摘されています。"
+          "comment": "子供部屋のラグやリビングのカーペットを掃除する際に、モップの着脱が必要になる点が大きなマイナスポイント。物が多い家庭では、この一手間が運用上の大きな負担となる可能性があります。"
+        },
+        {
+          "field": "バッテリー性能",
+          "score": 78,
+          "reviewCount": 10,
+          "comment": "部屋数が多いと、一度の充電で全てのエリアを掃除しきれない場合があります。自動で充電・再開しますが、全体の清掃時間が長くなる傾向があるため、広い家屋にはやや不向きかもしれません。"
         }
       ]
     }

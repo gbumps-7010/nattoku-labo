@@ -4,109 +4,103 @@
   "manufacturer": "Dreame",
   "modelNumber": "L10s Ultra Gen 3",
   "imageUrl": "",
-  "overallRating": 4.24,
-  "totalReviews": 30,
+  "overallRating": 4.4,
+  "totalReviews": 29,
   "price": 69800,
-  "reliabilityScore": 65.5,
+  "reliabilityScore": 64.9,
   "asin": "",
-  "metaTitle": "Dreame L10s Ultra Gen 3 詳細分析 | 圧倒的な清掃力と全自動ドックの真実",
-  "metaDescription": "Dreame L10s Ultra Gen 3の30件のレビューを解析。強力な吸引力、静音性、自動メンテナンス機能など、最新ロボット掃除機の真実を公開。",
   "keywords": [
+    "Dreame L10s Ultra Gen 3",
     "ロボット掃除機",
-    "Dreame",
-    "L10s Ultra Gen 3",
     "水拭き",
-    "自動ゴミ収集",
-    "静音"
+    "自動洗浄",
+    "静音",
+    "ペットの毛"
   ],
+  "metaTitle": "Dreame L10s Ultra Gen 3 詳細分析 | 27件の口コミでわかる実力と賢さ",
+  "metaDescription": "Dreame L10s Ultra Gen 3の27件の口コミを徹底解析。強力な吸引力と静音性、高精度な水拭き機能など、購入前に知るべき真実を公開します。",
   "categoryC": {
     "userSatisfaction": {
-      "score": 90,
-      "reviewCount": 30,
-      "comment": "多くのユーザーが「買ってよかった」と回答し、床の仕上がりや家事負担の軽減に高い満足度を示しています。特に水拭き機能が好評です。"
+      "score": 95,
+      "reviewCount": 27,
+      "comment": "多くの利用者が掃除性能、特に水拭きの仕上がりに高い満足感を示しています。床がサラサラになる感覚や、メンテナンスの手軽さが評価され、生活の質が向上したとの声が多数寄せられています。"
     },
     "repurchaseIntention": {
-      "percentage": 85,
-      "reviewCount": 25,
-      "comment": "「もっと早く導入すればよかった」という声が多く、その利便性から高いリピート意向が伺えます。生活の質向上に貢献しています。"
+      "percentage": 92,
+      "reviewCount": 27,
+      "comment": "「もっと早く買えばよかった」という意見が散見され、製品への強い信頼がうかがえます。高い清掃能力と自動化機能が、他の人にも推薦したいという気持ちにつながっているようです。"
     },
     "failureRate": {
-      "percentage": 13,
-      "reviewCount": 30,
+      "percentage": 15,
+      "reviewCount": 27,
       "breakdown": {
-        "hardware": 4,
-        "software": 7,
-        "environmental": 2
+        "hardware": 11,
+        "software": 4
       },
-      "comment": "初期設定やアプリの接続、稀に本体の不具合が報告されています。しかし、多くの問題は設定調整で改善が見られます。"
+      "comment": "初期不良や設定の難しさに関する口コミが少数ながら存在します。特にWi-Fi接続やアプリの初期設定で戸惑うケースが見られますが、一度設定が完了すれば安定して動作するとの報告が多いです。"
     }
   },
   "reliability": {
-    "score": 65.5,
+    "score": 64.9,
     "dataAdequacy": {
-      "score": 52,
+      "score": 51,
       "weight": 60,
-      "description": "レビュー総数が30件と比較的少ないため、データ十分性スコアは40点です。今後のレビュー増加に期待されます。"
+      "description": "口コミ件数は27件とまだ少ないため、スコアは51点です。より多くのデータが集まることで、評価の網羅性が高まることが期待されます。"
     },
     "consistency": {
-      "percentage": 81,
+      "score": 81,
       "weight": 30,
-      "description": "Amazonと楽天の評価にやや差が見られますが、許容範囲内です。全体的な評価の一貫性は中程度と判断されます。",
-      "score": 81
+      "description": "各口コミサイトや個々のレビュー間での評価のばらつきは少なく、特に「静音性」と「水拭き性能」については肯定的な意見でほぼ一致しており、評価の一貫性は高いです。",
+      "percentage": 81
     },
     "freshness": {
       "score": 100,
       "weight": 10,
-      "description": "直近30日以内のレビューが63.3%を占め、製品への関心と購入が活発であることを示しています。非常に高い鮮度です。"
+      "description": "分析対象の口コミはすべて直近3ヶ月以内に投稿されており、鮮度は非常に高いです。最新の製品バージョンや使用環境に基づいた評価が反映されています。"
     }
   },
   "updateInfo": {
-    "lastUpdated": "2026-06-15",
+    "lastUpdated": "2026-06-27",
     "firmwareVersion": "",
-    "note": "最新レビューは直近1ヶ月のものが多く、製品の鮮度とユーザーの関心が高いことを示しています。全体的に高い満足度が報告されています。"
+    "note": "2026年4月から6月にかけての口コミを分析。全体的に清掃能力への高評価が目立ちますが、初期設定に関するいくつかの課題も指摘されています。"
   },
   "timeSaving": {
-    "dailyMinutes": 18,
-    "monthlyHours": 9,
-    "annualHours": 108,
-    "workDaysEquivalent": 13.5,
-    "methodology": "ロボット掃除機による日常の吸引・水拭き掃除の手間を省くことで、一日あたり18分の時間節約を想定して算出しています。"
+    "vacuumMinutes": 10,
+    "mopMinutes": 9,
+    "dailyMinutes": 19,
+    "monthlyHours": 9.5,
+    "annualHours": 115.6,
+    "workDaysEquivalent": 14.4
   },
   "operationalCost": {
-    "daily": 47,
-    "dailyNote": "消耗品の実質的な日割りコスト",
-    "monthly": 1433,
-    "annual": 17200,
+    "daily": 65,
+    "dailyNote": "消耗品（ダストバッグ、モップパッド、フィルター、洗剤）を定期交換した場合の実質的な日割りコストです。",
+    "monthly": 1978,
+    "annual": 23740,
     "consumables": [
       {
         "item": "ダストバッグ",
-        "replacementFrequency": "約1ヶ月ごと",
-        "unitCost": 350,
-        "annualCost": 4200
-      },
-      {
-        "item": "サイドブラシ",
-        "replacementFrequency": "約6ヶ月ごと",
-        "unitCost": 1000,
-        "annualCost": 2000
-      },
-      {
-        "item": "メインブラシ",
-        "replacementFrequency": "約12ヶ月ごと",
-        "unitCost": 2000,
-        "annualCost": 2000
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 2180,
+        "annualCost": 8720
       },
       {
         "item": "モップパッド",
-        "replacementFrequency": "約6ヶ月ごと",
-        "unitCost": 1500,
-        "annualCost": 3000
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 1480,
+        "annualCost": 5920
       },
       {
-        "item": "洗浄液",
-        "replacementFrequency": "約3ヶ月ごと",
-        "unitCost": 1500,
-        "annualCost": 6000
+        "item": "フィルター",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 2180,
+        "annualCost": 4360
+      },
+      {
+        "item": "床用洗剤",
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 2690,
+        "annualCost": 4740
       }
     ]
   },
@@ -114,55 +108,55 @@
     "floorCleaning": {
       "score": 98,
       "reviewCount": 12,
-      "positiveReviewCount": 11,
-      "comment": "床掃除の能力は非常に高く、隅々まで綺麗になると高評価です。水拭き後のサラサラ感も好評を得ています。"
+      "positiveReviewCount": 12,
+      "comment": "水拭き性能への評価が極めて高く、「床がサラサラになる」「汚水の汚れで効果を実感」といった声が多数です。吸引と水拭きの同時実行でも、高い清掃品質を維持している点が支持されています。"
     },
     "carpetCleaning": {
       "score": 85,
       "reviewCount": 2,
       "positiveReviewCount": 2,
-      "comment": "カーペットの自動検知機能により、適切な吸引力で掃除が可能です。水拭きモップの持ち上げ機能も評価されています。"
+      "comment": "言及は少ないものの、カーペットを自動で検知し、モップを持ち上げて吸引を強化する機能が評価されています。多様な床材に対応できる点も、利用者にとってのメリットとなっているようです。"
     },
     "petHairRemoval": {
       "score": 95,
       "reviewCount": 3,
       "positiveReviewCount": 3,
-      "comment": "ペットの毛の絡まりが大幅に改善され、吸引力も高いため多頭飼いの家庭から絶賛されています。メンテナンスも楽です。"
+      "comment": "ペットの毛の吸引力は非常に高く評価されています。特にゴム製のメインブラシが毛の絡まりを防ぎ、メンテナンスの手間を軽減している点が、ペットを多頭飼いしているユーザーから絶賛されています。"
     },
     "quietness": {
-      "score": 90,
+      "score": 92,
       "reviewCount": 9,
       "positiveReviewCount": 9,
-      "comment": "動作音が非常に静かで、リビングで過ごしていても気にならないレベルです。夜間や早朝の使用にも適しています。"
+      "comment": "多くのユーザーが動作音の静かさに驚いています。「テレビを見ていても気にならない」「旧モデルより圧倒的に静か」との声が多く、在宅中や夜間でも気兼ねなく使用できる点が強みです。"
     },
     "stepClimbing": {
-      "score": 75,
+      "score": 70,
       "reviewCount": 3,
-      "positiveReviewCount": 2,
-      "comment": "一般的な段差は乗り越え可能ですが、高い段差では注意が必要です。掃除禁止エリア設定で問題なく運用できます。"
+      "positiveReviewCount": 1,
+      "comment": "段差乗り越え性能自体への直接的な高評価は少ないです。むしろアプリの進入禁止エリア設定を活用し、玄関などの段差でのエラーを未然に防いでいる利用者が多く、ソフトウェアで物理的な課題を補っています。"
     },
     "maintenance": {
       "score": 96,
       "reviewCount": 11,
       "positiveReviewCount": 11,
-      "comment": "モップの自動洗浄・乾燥、ゴミ収集、給排水まで全自動で、日々のメンテナンス負担が大幅に軽減されると好評です。"
+      "comment": "モップの自動洗浄・乾燥、ゴミの自動収集機能により、メンテナンスの手間が大幅に削減された点が高く評価されています。「汚水を捨てるだけ」という手軽さが、多忙なユーザーに喜ばれています。"
     },
     "appStability": {
-      "score": 70,
+      "score": 88,
       "reviewCount": 8,
-      "positiveReviewCount": 4,
-      "comment": "アプリは概ね使いやすいものの、初期設定やWi-Fi接続、日本語表現に改善の余地があるとの声も一部見られます。"
+      "positiveReviewCount": 7,
+      "comment": "アプリの操作性は概ね良好で、マッピング機能やスケジュール設定は直感的に使えると評価されています。ただし一部でWi-Fi接続の初期設定や、日本語翻訳の不自然さを指摘する声もありました。"
     },
     "batteryLife": {
-      "score": 70,
+      "score": 80,
       "reviewCount": 0,
       "positiveReviewCount": 0,
-      "comment": "提供されたレビューデータではバッテリー持続時間に関する具体的な言及はありませんでした。標準的な性能を想定しています。"
+      "comment": "バッテリーの持続時間に関する明確な言及は見られませんでした。自動で充電ステーションに戻るため、一般的な家庭環境ではバッテリー切れが問題になることは少ないと推測されます。"
     }
   },
   "radarChartData": {
     "labels": [
-      "床掃除",
+      "フローリング",
       "カーペット",
       "ペット毛",
       "静音性",
@@ -175,20 +169,20 @@
       98,
       85,
       95,
-      90,
-      75,
-      96,
+      92,
       70,
-      70
+      96,
+      88,
+      80
     ]
   },
   "dataQuality": {
-    "totalReviews": 30,
-    "sampledReviews": 30,
-    "adoptedReviews": 26,
-    "excludedReviews": 4,
-    "trustScore": 65.5,
-    "comment": "提供された30件のレビューデータを詳細に分析。一部の初期設定に関する課題が見られるものの、清掃性能と自動化機能への高い評価が確認されました。"
+    "totalReviews": 29,
+    "sampledReviews": 27,
+    "adoptedReviews": 27,
+    "excludedReviews": 2,
+    "trustScore": 64.9,
+    "comment": "ユーザー提供の27件の口コミをすべて分析。件数はまだ発展途上ですが、内容の一貫性が高く、製品の長所と短所を判断する上で信頼性の高いデータセットです。"
   },
   "reviewKeywords": {
     "positive": [
@@ -247,141 +241,187 @@
   "successStrategies": [
     {
       "rank": 1,
-      "issue": "初期設定・アプリの使いにくさ",
-      "occurrenceRate": 13,
-      "occurrenceCount": 4,
-      "environmentalFactor": "Wi-Fi環境、ユーザーのITリテラシー",
-      "technicalDescription": "アプリの日本語表現が不自然な場合や、Wi-Fi接続に特定の制約があるため、初期設定で戸惑うユーザーが見られます。",
+      "issue": "Wi-Fi接続とアプリの初期設定",
+      "occurrenceRate": 7,
+      "occurrenceCount": 2,
+      "environmentalFactor": "家庭のWi-Fi環境（ルーター設定、SSIDの文字種）",
+      "technicalDescription": "一部のユーザーがWi-Fiへの接続で問題を報告。特にSSIDに特殊文字が含まれる場合や、5GHz帯のネットワークに接続しようとすると失敗するケースが見られます。",
       "avoidanceStrategies": [
         {
-          "method": "Wi-Fiルーターの設定を確認し、2.4GHz帯を優先的に使用する。",
+          "method": "2.4GHz帯のWi-Fiに接続する",
           "effectiveness": "高",
           "technicalLevel": "初級",
-          "technicalRationale": "多くのスマート家電は2.4GHz帯に最適化されており、安定した接続にはWi-Fi設定の確認が有効です。"
+          "technicalRationale": "本製品は2.4GHz帯のWi-Fiネットワークのみをサポートしています。スマートフォンのWi-Fi設定で接続先を確認し、ルーター側で2.4GHz帯が有効になっているか確認してください。"
         },
         {
-          "method": "アプリの権限設定を許可し、最新バージョンに更新する。",
+          "method": "Wi-FiのSSIDとパスワードを英数字のみに変更する",
           "effectiveness": "中",
-          "technicalLevel": "初級",
-          "technicalRationale": "アプリの権限不足や古いバージョンは機能不全の原因となるため、常に最新の状態を保つことが重要です。"
+          "technicalLevel": "中級",
+          "technicalRationale": "公式サポートでは、Wi-FiのSSIDとパスワードに特殊文字を使用しないことが推奨されています。ルーターの設定画面から、英数字のみのシンプルな名称に変更することで接続が安定する場合があります。"
         }
       ],
-      "preventionTips": "初期設定時は取扱説明書を熟読し、不明点は公式サイトのFAQを参照することでスムーズな導入が可能です。"
+      "preventionTips": "初期設定を始める前に、自宅のWi-Fiが2.4GHz帯に対応しているか確認しましょう。また、アプリに位置情報やBluetoothの権限を許可することで、接続プロセスがスムーズに進みます。"
+    },
+    {
+      "rank": 2,
+      "issue": "初回稼働時のナビゲーションエラー",
+      "occurrenceRate": 4,
+      "occurrenceCount": 1,
+      "environmentalFactor": "部屋のレイアウトや家具の配置",
+      "technicalDescription": "「掃除後にステーションに戻れない」というエラーが初回使用時に発生したとの報告があります。これは、マッピングが完了していない段階で、複雑なルートの計算に失敗したことが原因と考えられます。",
+      "avoidanceStrategies": [
+        {
+          "method": "初回はマッピングモードで部屋全体をスキャンさせる",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "最初に掃除を行わず、高速マッピング機能で家全体の地図を作成することで、ロボットが自身の位置とステーションの場所を正確に把握します。これにより、帰還エラーのリスクを大幅に減らせます。"
+        },
+        {
+          "method": "ステーション周辺の障害物を片付ける",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "メーカーはステーションの左右と前方に一定の空間を確保することを推奨しています。スムーズなドッキングのために、周囲に物を置かず、平らな床に設置することが重要です。"
+        }
+      ],
+      "preventionTips": "最初の数回はロボットの動きを見守り、問題なく帰還できるか確認すると安心です。使用を重ねることで学習が進み、動作は安定していく傾向にあります。"
+    },
+    {
+      "rank": 3,
+      "issue": "説明書不足による操作の戸惑い",
+      "occurrenceRate": 4,
+      "occurrenceCount": 1,
+      "environmentalFactor": "ユーザーのITリテラシー",
+      "technicalDescription": "「取扱説明書がついていない」「設定が難しい」といった、主に紙媒体の説明書を期待したユーザーからの不満が見られます。詳細な設定はアプリ内で行うため、操作に慣れが必要です。",
+      "avoidanceStrategies": [
+        {
+          "method": "公式アプリ内のガイドとヘルプを活用する",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "Dreamehomeアプリには、初期設定から各機能の使い方までを解説するガイドが内蔵されています。動画での説明もあり、手順に従うことでほとんどの機能が設定可能です。"
+        },
+        {
+          "method": "公式サイトのユーザーマニュアルを参照する",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "Dreameの公式サイトでは、詳細なPDF形式のユーザーマニュアルが公開されています。印刷して手元に置きたい場合や、アプリで解決しない問題があった場合に役立ちます。"
+        }
+      ],
+      "preventionTips": "購入前に公式サイトでユーザーマニュアルに目を通しておくと、製品の機能や設定方法の全体像を把握でき、スムーズに使い始めることができます。"
     }
   ],
   "topComplaints": [
     {
-      "title": "初期設定・アプリの使いにくさ",
-      "percentage": 13,
-      "reviewCount": 4,
-      "description": "アプリの日本語表現が不自然な場合やWi-Fi接続に特定の制約があり、初期設定で戸惑うユーザーが見られます。",
-      "solution": "公式サイトのFAQやトラブルシューティングを確認し、Wi-Fi設定（2.4GHz推奨）を再確認することで多くの場合解決します。"
+      "title": "Wi-Fi・アプリの初期設定が難しい",
+      "percentage": 7,
+      "reviewCount": 2,
+      "description": "一部のユーザーがWi-Fi接続でつまずいています。特にSSIDに日本語や記号が含まれている場合や、ルーターが5GHz帯に設定されていると接続に失敗するようです。",
+      "solution": "接続するWi-Fiを2.4GHz帯に設定し、SSIDとパスワードを英数字のみにすることをお試しください。また、設定中はロボットとスマートフォンをルーターの近くに置くと成功しやすくなります。"
     },
     {
-      "title": "故障・不具合",
-      "percentage": 13,
-      "reviewCount": 4,
-      "description": "稀に本体の故障や動作不良の報告があり、特に初期段階でのステーションへのドッキングエラーが指摘されています。",
-      "solution": "多くのケースでは再起動やファームウェアの更新で改善が見られ、初期不良の場合は迅速なサポート対応が期待できます。"
-    },
-    {
-      "title": "清掃中の停止・立ち往生",
-      "percentage": 3,
+      "title": "初回にステーションへ戻れなくなる",
+      "percentage": 4,
       "reviewCount": 1,
-      "description": "レビューで「清掃中の停止・立ち往生」に関する言及が1件あり、利用時の注意点として挙がっています。",
-      "solution": "床の障害物を片付け、詰まりやすい場所は進入禁止に設定すると、清掃中の停止を減らせます。"
+      "description": "使い始めに、掃除は完了するものの自力でステーションに戻れずエラーになるという報告がありました。これはマッピングデータの学習が不十分なために起こる現象と考えられます。",
+      "solution": "最初に高速マッピング機能で間取りを学習させると、その後の動作が安定します。また、ステーションの周囲に障害物がないか、電源が確実に入っているかもご確認ください。"
+    },
+    {
+      "title": "紙の取扱説明書が付属しない",
+      "percentage": 4,
+      "reviewCount": 1,
+      "description": "詳細な紙媒体の説明書が同梱されていない点に不満の声がありました。すべての設定や操作がアプリ中心のため、スマートフォン操作が苦手なユーザーは戸惑う可能性があります。",
+      "solution": "Dreameの公式サイトで詳細なユーザーマニュアル（PDF）がダウンロード可能です。また、公式YouTubeチャンネルには設定方法を解説した動画も用意されています。"
     }
   ],
   "attributeScores": {
     "petOwner": {
-      "overall": 96,
+      "overall": 96.1,
       "details": [
         {
-          "field": "ペット毛吸引力",
+          "field": "ペットの毛吸引",
           "score": 95,
           "reviewCount": 3,
-          "comment": "ペットの毛の絡まりが大幅に改善され、吸引力も高いため多頭飼いの家庭から絶賛されています。メンテナンスも楽です。"
+          "comment": "猫を多頭飼いしている家庭からも、毛詰まりがほとんどなく手入れが楽だと絶賛されています。ゴム製ブラシの効果は非常に高いようです。"
         },
         {
-          "field": "床掃除",
+          "field": "静音性",
+          "score": 92,
+          "reviewCount": 9,
+          "comment": "動作音が静かなため、ペットが怖がったりストレスを感じたりすることが少ないというメリットがあります。ペットがいる空間でも安心して稼働させられます。"
+        },
+        {
+          "field": "床の衛生（水拭き）",
           "score": 98,
           "reviewCount": 12,
-          "comment": "床掃除の能力は非常に高く、隅々まで綺麗になると高評価です。水拭き後のサラサラ感も好評を得ています。"
-        },
-        {
-          "field": "メンテナンス",
-          "score": 96,
-          "reviewCount": 11,
-          "comment": "モップの自動洗浄・乾燥、ゴミ収集、給排水まで全自動で、日々のメンテナンス負担が大幅に軽減されると好評です。"
+          "comment": "ペットの足跡や細かな汚れも水拭きでしっかり除去し、床を衛生的に保てます。自動洗浄・乾燥機能でモップが清潔に保たれる点も安心です。"
         }
       ]
     },
     "apartment": {
-      "overall": 89,
+      "overall": 89.4,
       "details": [
         {
           "field": "静音性",
-          "score": 90,
+          "score": 92,
           "reviewCount": 9,
-          "comment": "動作音が非常に静かで、リビングで過ごしていても気にならないレベルです。夜間や早朝の使用にも適しています。"
+          "comment": "「離れた部屋では止まっているかと思うほど静か」との声もあり、集合住宅での近隣への騒音を気にせず、時間帯を選ばずに使用できる点が大きな利点です。"
         },
         {
-          "field": "床掃除",
+          "field": "床掃除性能",
           "score": 98,
           "reviewCount": 12,
-          "comment": "床掃除の能力は非常に高く、隅々まで綺麗になると高評価です。水拭き後のサラサラ感も好評を得ています。"
+          "comment": "限られたスペースでも隅々まで丁寧に掃除します。特にフローリングの拭き掃除後のさっぱり感は、マンション居住者から高い評価を得ています。"
         },
         {
-          "field": "段差乗り越え",
-          "score": 75,
+          "field": "段差対応",
+          "score": 70,
           "reviewCount": 3,
-          "comment": "一般的な段差は乗り越え可能ですが、高い段差では注意が必要です。掃除禁止エリア設定で問題なく運用できます。"
+          "comment": "マンション内のフラットな床では問題ありませんが、玄関のたたきなどへの落下防止にはアプリの進入禁止エリア設定が有効です。賢くエリア分けして使えます。"
         }
       ]
     },
     "workingProfessional": {
-      "overall": 80,
+      "overall": 89.6,
       "details": [
         {
-          "field": "アプリ安定性",
-          "score": 70,
-          "reviewCount": 8,
-          "comment": "アプリは概ね使いやすいものの、初期設定やWi-Fi接続、日本語表現に改善の余地があるとの声も一部見られます。"
-        },
-        {
-          "field": "メンテナンス",
+          "field": "メンテナンス性",
           "score": 96,
           "reviewCount": 11,
-          "comment": "モップの自動洗浄・乾燥、ゴミ収集、給排水まで全自動で、日々のメンテナンス負担が大幅に軽減されると好評です。"
+          "comment": "ゴミ収集からモップ洗浄・乾燥まで全自動なため、日々の手入れはほとんど不要です。忙しい中でも常に清潔な環境を維持できる点が魅力です。"
         },
         {
-          "field": "バッテリー",
-          "score": 70,
-          "reviewCount": 0,
-          "comment": "提供されたレビューデータではバッテリー持続時間に関する具体的な言及はありませんでした。標準的な性能を想定しています。"
+          "field": "アプリ連携",
+          "score": 88,
+          "reviewCount": 8,
+          "comment": "外出先からでもアプリで掃除を開始したり、スケジュールを設定したりできます。帰宅したら家が綺麗になっている、という快適な体験が可能です。"
+        },
+        {
+          "field": "静音性",
+          "score": 92,
+          "reviewCount": 9,
+          "comment": "在宅ワーク中に稼働させても、Web会議や集中力の妨げになりにくい静かさです。仕事と家事の両立をスマートにサポートしてくれます。"
         }
       ]
     },
     "familyHome": {
-      "overall": 86,
+      "overall": 88.7,
       "details": [
         {
-          "field": "床掃除",
+          "field": "床掃除性能",
           "score": 98,
           "reviewCount": 12,
-          "comment": "床掃除の能力は非常に高く、隅々まで綺麗になると高評価です。水拭き後のサラサラ感も好評を得ています。"
+          "comment": "赤ちゃんがハイハイする家庭でも、水拭き機能で床を常に清潔に保てると好評です。汚水タンクを見れば、掃除の効果が一目瞭然で満足感も高いです。"
         },
         {
-          "field": "バッテリー",
-          "score": 70,
-          "reviewCount": 0,
-          "comment": "提供されたレビューデータではバッテリー持続時間に関する具体的な言及はありませんでした。標準的な性能を想定しています。"
-        },
-        {
-          "field": "カーペット",
+          "field": "カーペット対応",
           "score": 85,
           "reviewCount": 2,
-          "comment": "カーペットの自動検知機能により、適切な吸引力で掃除が可能です。水拭きモップの持ち上げ機能も評価されています。"
+          "comment": "リビングのラグや子供部屋のカーペットも、モップを濡らさずに賢く掃除します。床材を問わず家全体を任せられる安心感があります。"
+        },
+        {
+          "field": "アプリ機能",
+          "score": 88,
+          "reviewCount": 8,
+          "comment": "部屋ごとに掃除モードを変えたり、子供が遊ぶエリアだけを掃除したりと、家族の生活スタイルに合わせた柔軟な設定が可能です。"
         }
       ]
     }

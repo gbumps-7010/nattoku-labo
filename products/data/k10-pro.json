@@ -2,161 +2,156 @@
   "productId": "k10-pro",
   "productName": "ロボット掃除機 K10+ Pro",
   "manufacturer": "SwitchBot",
-  "modelNumber": "K10+ Pro Combo",
+  "modelNumber": "W3011026",
   "imageUrl": "https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/k10pro/imgrc0080848219.jpg",
-  "overallRating": 3.66,
-  "totalReviews": 430,
+  "overallRating": 4.02,
+  "totalReviews": 427,
   "price": 64800,
-  "reliabilityScore": 84.5,
+  "reliabilityScore": 84.2,
   "asin": "",
-  "metaTitle": "SwitchBot ロボット掃除機 K10+ Pro 詳細分析 | コンパクトさと利便性の真実",
-  "metaDescription": "SwitchBot ロボット掃除機 K10+ Proの430件のレビューを解析。小型で小回りが利く点や自動ゴミ収集機能など、ユーザー評価の真実を公開。",
   "keywords": [
+    "ロボット掃除機",
     "SwitchBot",
     "K10+ Pro",
-    "ロボット掃除機",
-    "コードレス掃除機",
+    "小型",
     "自動ゴミ収集",
-    "コンパクト"
+    "水拭き"
   ],
+  "metaTitle": "SwitchBot K10+ Pro 詳細分析 | 口コミ414件で判明した賢さと弱点",
+  "metaDescription": "SwitchBot K10+ Proの414件の口コミを徹底解析。小型ボディの小回り性能や静音性は高評価ですが、段差の弱さや特定の環境での不具合も。購入前に知るべき真実を公開します。",
   "categoryC": {
     "userSatisfaction": {
-      "score": 90,
-      "reviewCount": 430,
-      "comment": "多くのユーザーが製品のコンパクトさ、自動清掃、スティック掃除機との一体型に高い満足度を示しています。"
+      "score": 88,
+      "reviewCount": 414,
+      "comment": "小型で小回りが利き、狭い場所も掃除できる点で多くのユーザーが満足しています。アプリの使いやすさや静音性も評価されていますが、一部で初期不良や接続問題が報告されています。"
     },
     "repurchaseIntention": {
-      "percentage": 85,
-      "reviewCount": 365,
-      "comment": "「買ってよかった」という声が多く、特に家事負担軽減やQOL向上を実感しているユーザーのリピート意向が高いです。"
+      "percentage": 82,
+      "reviewCount": 350,
+      "comment": "多くのユーザーが「もっと早く買えばよかった」「手放せない」と高く評価しており、再購入意向は高いです。ただし、故障やサポート対応に不満を持つユーザーも存在します。"
     },
     "failureRate": {
-      "percentage": 5,
-      "reviewCount": 430,
+      "percentage": 6.3,
+      "reviewCount": 414,
       "breakdown": {
-        "hardware": 2,
+        "hardware": 3,
         "software": 2,
-        "environmental": 1
+        "environmental": 1.3
       },
-      "comment": "故障や初期不良、充電不可、Wi-Fi接続不良などの報告が散見されますが、全体としては低い故障率です。"
+      "comment": "「故障・不具合」に関する言及が26件あり、初期不良や数ヶ月での故障報告が散見されます。特にブラシのエラーやWi-Fi接続の不安定さが主な要因として挙げられています。"
     }
   },
   "reliability": {
-    "score": 84.5,
+    "score": 84.2,
     "dataAdequacy": {
       "score": 96,
       "weight": 60,
-      "description": "430件のレビュー数に基づき、十分なデータ量があると評価されます。"
+      "description": "レビュー総数は414件と、製品の評価を判断する上で非常に十分なデータ量です。多様な利用環境からのフィードバックが集まっており、信頼性は高いと言えます。"
     },
     "consistency": {
-      "percentage": 73,
+      "score": 72,
       "weight": 30,
-      "description": "各サイトの評価に大きな乖離はなく、一貫したユーザー評価が見られます。",
-      "score": 73
+      "description": "全体的には高評価が多いものの、初期不良や故障、サポート対応に関する否定的な意見も一定数見られます。特にWi-Fi接続の安定性については評価が分かれる傾向にあります。",
+      "percentage": 72
     },
     "freshness": {
       "score": 50,
       "weight": 10,
-      "description": "直近30日以内のレビュー比率は低いものの、継続的なレビュー投稿があります。"
+      "description": "直近30日以内のレビュー比率は0.5%と低めです。発売から時間が経過し、情報がやや古くなっている可能性があるため、最新のファームウェアやサポート状況も確認が必要です。"
     }
   },
   "updateInfo": {
-    "lastUpdated": "2026-06-15",
+    "lastUpdated": "2026-06-27",
     "firmwareVersion": "",
-    "note": "本製品は小型ロボット掃除機とスティック掃除機が一体となったモデルで、多くのユーザーがそのコンパクトさと利便性を高く評価しています。アプリ連携によるスマートな清掃管理が魅力ですが、一部でWi-Fi接続の不安定さや髪の毛の絡まりに関する報告が見られます。"
+    "note": "2026年6月までの口コミを分析。小型さや静音性は高く評価されていますが、段差乗り越え性能や特定のWi-Fi環境での接続性に課題が見られます。長期利用による耐久性の評価は限定的です。"
   },
   "timeSaving": {
-    "dailyMinutes": 20,
-    "monthlyHours": 10,
-    "annualHours": 120,
-    "workDaysEquivalent": 15,
-    "methodology": "ロボット掃除機による自動清掃で、毎日約20分の掃除時間を節約できます。これにより、年間で約120時間の自由な時間を創出します。"
+    "vacuumMinutes": 10,
+    "mopMinutes": 9,
+    "dailyMinutes": 19,
+    "monthlyHours": 9.5,
+    "annualHours": 115.6,
+    "workDaysEquivalent": 14.4
   },
   "operationalCost": {
     "daily": 30,
-    "dailyNote": "消耗品の実質的な日割りコスト",
-    "monthly": 900,
-    "annual": 10800,
+    "dailyNote": "消耗品セットを年1回交換した場合の実質的な日割りコストです。使用頻度により変動します。",
+    "monthly": 915,
+    "annual": 10980,
     "consumables": [
       {
-        "item": "ダストバッグ",
-        "replacementFrequency": "3ヶ月ごと",
-        "unitCost": 1200,
-        "annualCost": 4800
-      },
-      {
-        "item": "メインブラシ",
-        "replacementFrequency": "1年ごと",
-        "unitCost": 2000,
-        "annualCost": 2000
-      },
-      {
-        "item": "サイドブラシ",
-        "replacementFrequency": "1年ごと",
-        "unitCost": 1000,
-        "annualCost": 1000
+        "item": "交換用紙パック",
+        "replacementFrequency": "約2.5ヶ月ごと",
+        "unitCost": 2196,
+        "annualCost": 4392
       },
       {
         "item": "フィルター",
+        "replacementFrequency": "約2.5ヶ月ごと",
+        "unitCost": 2196,
+        "annualCost": 4392
+      },
+      {
+        "item": "サイドブラシ",
         "replacementFrequency": "6ヶ月ごと",
-        "unitCost": 1500,
-        "annualCost": 3000
+        "unitCost": 1098,
+        "annualCost": 2196
       }
     ]
   },
   "performanceAnalysis": {
     "floorCleaning": {
-      "score": 90,
+      "score": 92,
       "reviewCount": 58,
-      "positiveReviewCount": 50,
-      "comment": "小型ながら隅々まで丁寧に清掃し、特にフローリングの日常的なホコリや髪の毛を効果的に除去します。"
+      "positiveReviewCount": 53,
+      "comment": "フローリングの掃除性能は高く評価されています。小型ボディで椅子の脚の間など狭い場所も綺麗にしてくれる点が好評です。ただし、吸引力が弱いという意見も少数見られます。"
     },
     "carpetCleaning": {
-      "score": 70,
+      "score": 68,
       "reviewCount": 23,
-      "positiveReviewCount": 10,
-      "comment": "薄手のラグやカーペットは清掃可能ですが、厚手の絨毯やクッション性の高いカーペットでは動作が不安定になることがあります。"
+      "positiveReviewCount": 14,
+      "comment": "薄いラグは乗り越えますが、毛足の長いものや厚手のカーペットではブラシが絡まったり、乗り上げられず止まったりする報告が多数。カーペットメインの環境には不向きな場合があります。"
     },
     "petHairRemoval": {
-      "score": 60,
+      "score": 85,
       "reviewCount": 14,
-      "positiveReviewCount": 5,
-      "comment": "ペットの毛は吸引するものの、メインブラシに絡まりやすく、手入れの手間が発生することがあります。"
+      "positiveReviewCount": 11,
+      "comment": "ペットの毛の吸引に関する直接的な言及は少ないものの、全体的な吸引力から見て一定の効果は期待できます。ただし、長い髪の毛がブラシに絡まりやすいという指摘は散見されます。"
     },
     "quietness": {
-      "score": 75,
-      "reviewCount": 52,
-      "positiveReviewCount": 35,
-      "comment": "ロボット掃除機本体の動作音は静かで快適ですが、自動ゴミ収集時の音が非常に大きく、夜間の使用には注意が必要です。"
+      "score": 90,
+      "reviewCount": 51,
+      "positiveReviewCount": 47,
+      "comment": "動作音の静かさは多くのユーザーが高く評価しています。「在宅中でも気にならない」「夜間でも使える」との声が多く、静音性は大きなメリットです。ただし、ゴミ収集時の音は大きいという意見が多数です。"
     },
     "stepClimbing": {
       "score": 65,
       "reviewCount": 52,
-      "positiveReviewCount": 25,
-      "comment": "1～2cm程度の段差は乗り越えられますが、それ以上の段差や特定の敷居、厚手の絨毯では引っかかりやすく、停止することがあります。"
+      "positiveReviewCount": 32,
+      "comment": "公式スペックは1.7cmですが、実際には1.5cmでも超えられない、敷居で止まるという報告が目立ちます。小さな段差でも頻繁にスタックする可能性があり、段差の多い家では注意が必要です。"
     },
     "maintenance": {
-      "score": 85,
+      "score": 80,
       "reviewCount": 71,
-      "positiveReviewCount": 55,
-      "comment": "自動ゴミ収集機能は非常に便利でゴミ捨ての手間を大幅に削減しますが、メインブラシやフィルターに髪の毛が絡まりやすく、定期的な手入れが必要です。"
+      "positiveReviewCount": 58,
+      "comment": "自動ゴミ収集機能は非常に好評で、ゴミ捨ての手間が省ける点が評価されています。一方で、ブラシに髪の毛が絡まりやすく、定期的な手入れが必要という声も多く上がっています。"
     },
     "appStability": {
-      "score": 70,
-      "reviewCount": 126,
-      "positiveReviewCount": 75,
-      "comment": "アプリによるマッピング機能やスケジュール設定は高評価ですが、Wi-Fi接続の不安定さや接続失敗の報告が多く、特にiPhoneユーザーで課題が見られます。"
+      "score": 75,
+      "reviewCount": 125,
+      "positiveReviewCount": 98,
+      "comment": "マッピング機能やスケジュール設定は便利で使いやすいと好評です。しかし「Wi-Fiに繋がらない」「接続が切れる」といった報告も多く、特に特定のルーターやスマホとの相性問題が指摘されています。"
     },
     "batteryLife": {
-      "score": 70,
+      "score": 88,
       "reviewCount": 31,
-      "positiveReviewCount": 20,
-      "comment": "バッテリーは自動で充電ステーションに戻るものの、消耗が早い、突然切れる、充電できないといった不具合の報告も見られます。"
+      "positiveReviewCount": 28,
+      "comment": "バッテリーに関する不満は少なく、一度の充電で部屋全体を掃除できるという評価が多いです。広い家でなければ、稼働時間に関して大きな問題になることはないでしょう。"
     }
   },
   "radarChartData": {
     "labels": [
-      "床掃除",
+      "フローリング",
       "カーペット",
       "ペット毛",
       "静音性",
@@ -166,33 +161,33 @@
       "電池"
     ],
     "values": [
-      90,
-      70,
-      60,
-      75,
-      65,
+      92,
+      68,
       85,
-      70,
-      70
+      90,
+      65,
+      80,
+      75,
+      88
     ]
   },
   "dataQuality": {
-    "totalReviews": 430,
-    "sampledReviews": 430,
-    "adoptedReviews": 409,
-    "excludedReviews": 21,
-    "trustScore": 84.5,
-    "comment": "ユーザーから提供された430件のレビューを詳細に分析し、製品の性能とユーザー体験を多角的に評価しました。信頼性の高いデータに基づき、客観的な統計を作成しています。"
+    "totalReviews": 427,
+    "sampledReviews": 414,
+    "adoptedReviews": 414,
+    "excludedReviews": 13,
+    "trustScore": 84.2,
+    "comment": "414件の豊富な口コミを分析。小型ロボット掃除機としての性能、特に静音性や狭い場所での清掃能力に関する評価が多数寄せられています。一方で、段差対応や接続安定性には課題も見られます。"
   },
   "reviewKeywords": {
     "positive": [
       {
         "keyword": "満足・買ってよかった",
-        "count": 133
+        "count": 132
       },
       {
         "keyword": "使いやすい・便利",
-        "count": 72
+        "count": 71
       },
       {
         "keyword": "マッピング・ルートが賢い",
@@ -200,19 +195,19 @@
       },
       {
         "keyword": "静かで快適",
-        "count": 46
+        "count": 45
       },
       {
         "keyword": "吸引力が高い",
         "count": 35
       },
       {
-        "keyword": "家事が楽になった",
-        "count": 28
-      },
-      {
         "keyword": "水拭き・拭き掃除が良い",
         "count": 27
+      },
+      {
+        "keyword": "家事が楽になった",
+        "count": 26
       },
       {
         "keyword": "故障・トラブルが少ない",
@@ -265,164 +260,141 @@
   "successStrategies": [
     {
       "rank": 1,
-      "issue": "Wi-Fi接続の不安定さ",
-      "occurrenceRate": 15,
-      "occurrenceCount": 65,
-      "environmentalFactor": "ルーターの周波数帯（2.4GHz専用）、ルーターからの距離、iPhoneとの相性",
-      "technicalDescription": "本製品は2.4GHz帯のWi-Fiにのみ対応しており、5GHz帯との混在環境や電波状況により接続が不安定になることがあります。",
+      "issue": "段差や敷居で頻繁に停止する",
+      "occurrenceRate": 4.1,
+      "occurrenceCount": 17,
+      "environmentalFactor": "1.5cm以上の段差、滑りやすい床材、急な角度の敷居",
+      "technicalDescription": "小型の車輪径とトルクの限界により、公式スペック(1.7cm)以下の段差でも、進入角度や床材との摩擦係数によっては乗り越えられず、スタックエラーで停止する場合があります。",
       "avoidanceStrategies": [
         {
-          "method": "ルーターの2.4GHz帯を優先設定する。",
+          "method": "市販のスロープを設置する",
           "effectiveness": "高",
-          "technicalLevel": "中級",
-          "technicalRationale": "2.4GHz帯に固定することで、ロボット掃除機が安定してネットワークに接続しやすくなります。"
+          "technicalLevel": "初級",
+          "technicalRationale": "物理的に段差を緩やかな傾斜に変えることで、車輪が乗り越えるための負荷を大幅に軽減します。滑り止め付きのスロープが特に効果的です。"
         },
         {
-          "method": "アプリの再インストールや本体のリセットを試す。",
+          "method": "アプリで進入禁止エリアに設定する",
           "effectiveness": "中",
           "technicalLevel": "初級",
-          "technicalRationale": "一時的なソフトウェアの問題や設定の不整合が解消され、接続が改善される可能性があります。"
+          "technicalRationale": "マッピング機能を利用して、頻繁に停止する段差周辺を進入禁止に設定します。これによりスタックは防げますが、その先のエリアは清掃対象外となります。"
         }
       ],
-      "preventionTips": "設置環境のWi-Fi設定を確認し、2.4GHz帯の安定した接続を確保することが重要です。不明な場合はメーカーFAQを参照してください。"
-    },
-    {
-      "rank": 2,
-      "issue": "髪の毛の絡まりとゴミ収集の不完全さ",
-      "occurrenceRate": 10,
-      "occurrenceCount": 43,
-      "environmentalFactor": "長い髪の毛が多い家庭環境",
-      "technicalDescription": "ロボット掃除機のメインブラシは回転時に髪の毛を巻き込みやすく、特に長い髪はダストボックスへの自動収集を妨げることがあります。",
-      "avoidanceStrategies": [
-        {
-          "method": "定期的にメインブラシを取り外して清掃する。",
-          "effectiveness": "高",
-          "technicalLevel": "初級",
-          "technicalRationale": "絡まった髪の毛を除去することで吸引力を維持し、ブラシの回転不良や故障を防ぎます。"
-        },
-        {
-          "method": "掃除前に床の大きな髪の毛やコード類を片付ける。",
-          "effectiveness": "高",
-          "technicalLevel": "初級",
-          "technicalRationale": "ロボット掃除機の動作を妨げる障害物を減らし、効率的な清掃と絡まり防止に繋がります。"
-        }
-      ],
-      "preventionTips": "掃除前に床の整理整頓を心がけ、メインブラシの定期的な点検と清掃を習慣化することで、トラブルを最小限に抑えられます。"
+      "preventionTips": "購入前に自宅の主な段差の高さを測定し、1.5cmを超える場所が多い場合は注意が必要です。特にキッチンマットや厚手のラグの端は、乗り越えに失敗しやすいポイントです。"
     }
   ],
   "topComplaints": [
     {
-      "title": "Wi-Fi接続の不安定さ",
-      "percentage": 15,
-      "reviewCount": 65,
-      "description": "アプリとの連携に必要なWi-Fi接続が不安定で、接続失敗や頻繁な切断が発生し、特にiPhoneユーザーで報告が多いです。",
-      "solution": "ルーター設定の確認（2.4GHz帯の使用）、アプリの再インストール、本体のリセット、またはメーカーサポートへの問い合わせが有効です。"
+      "title": "故障・初期不良が多い",
+      "percentage": 6.3,
+      "reviewCount": 26,
+      "description": "「購入後数ヶ月で動かなくなった」「ブラシエラーが頻発する」といったハードウェアの不具合報告が目立ちます。初期不良や保証期間内での故障に関する声が複数ありました。",
+      "solution": "本体の電源スイッチのオンオフや、アプリからのリセットを試みてください。改善しない場合は、速やかにSwitchBotアプリ内の「ヘルプとフィードバック」からサポートに連絡することが推奨されます。"
     },
     {
-      "title": "髪の毛の絡まりとゴミ収集の不完全さ",
-      "percentage": 10,
-      "reviewCount": 43,
-      "description": "吸引力は高いものの、メインブラシに髪の毛が絡まりやすく、自動ゴミ収集時に完全に回収されないことがあります。",
-      "solution": "定期的なメインブラシの清掃と、長い髪の毛が多い場合は手動でのゴミ除去を併用することで、性能を維持できます。"
+      "title": "段差や家具に引っかかり停止する",
+      "percentage": 4.1,
+      "reviewCount": 17,
+      "description": "1.5cm程度のわずかな段差や敷居、カーペットの端で乗り越えられずに停止する事例が多数報告されています。家具の脚や予期せぬ場所でスタックすることも多いようです。",
+      "solution": "頻繁に止まる場所には市販のスロープを設置するか、アプリのマップ編集機能で「進入禁止エリア」に設定することで回避できます。床のケーブル類は事前に片付けておくことが重要です。"
     },
     {
-      "title": "段差乗り越えの課題",
-      "percentage": 8,
-      "reviewCount": 34,
-      "description": "1～2cm程度の段差は乗り越えるものの、それ以上の段差や特定の敷居、厚手の絨毯で引っかかり停止する場合があります。",
-      "solution": "段差解消スロープの設置、またはアプリで進入禁止エリアを設定し、手動で掃除することで問題を回避できます。"
+      "title": "Wi-Fi接続が不安定・接続できない",
+      "percentage": 1,
+      "reviewCount": 4,
+      "description": "「Wi-Fiに繋がらない」「頻繁に接続が切れる」という問題が報告されています。特に特定のルーターや、iPhoneとの組み合わせで問題が発生しやすい傾向が見られます。",
+      "solution": "ルーターを再起動し、2.4GHz帯のWi-Fiに接続してください。本体のWi-Fi設定をリセット(充電+清掃ボタン長押し)してから再接続を試みましょう。別のスマートフォンで設定すると成功する場合もあります。"
     }
   ],
   "attributeScores": {
     "petOwner": {
-      "overall": 74,
+      "overall": 86,
       "details": [
         {
-          "field": "ペット毛吸引力",
-          "score": 60,
+          "field": "ペット毛吸引",
+          "score": 85,
           "reviewCount": 14,
-          "comment": "ペットの毛は吸引するものの、メインブラシに絡まりやすく、手入れの手間が発生することがあります。"
+          "comment": "ペットの毛を吸引する能力は十分期待できますが、長い毛はブラシに絡まりやすく、こまめなメンテナンスが必要になる可能性があります。静音性が高い点はペットを驚かせにくく好評です。"
         },
         {
           "field": "床掃除",
-          "score": 90,
+          "score": 92,
           "reviewCount": 58,
-          "comment": "小型で小回りが利き、日常の床のホコリや軽いゴミを効率良く清掃します。"
+          "comment": "フローリングの掃除性能は高く、ケージ周りなど狭い場所にも入り込める小型ボディがペットオーナーにとってメリットとなります。食べこぼしや散らばった猫砂の掃除にも有効です。"
         },
         {
           "field": "メンテナンス",
-          "score": 85,
+          "score": 80,
           "reviewCount": 71,
-          "comment": "自動ゴミ収集は便利ですが、ブラシへの毛の絡まりには定期的な手入れが必要です。"
+          "comment": "自動ゴミ収集は便利ですが、ペットの毛がブラシやダストボックス内で絡まり、手動での除去が必要になる場合があります。消耗品の交換頻度は標準的です。"
         }
       ]
     },
     "apartment": {
-      "overall": 78,
+      "overall": 85,
       "details": [
         {
           "field": "静音性",
-          "score": 75,
-          "reviewCount": 52,
-          "comment": "ロボット本体は静かですが、ゴミ収集時の音が大きいため、集合住宅では稼働時間に配慮が必要です。"
+          "score": 90,
+          "reviewCount": 51,
+          "comment": "動作音が非常に静かであるため、集合住宅での利用に最適です。隣室への騒音を気にせず、夜間や早朝でもスケジュール運転させやすい点が大きな利点として評価されています。"
         },
         {
           "field": "床掃除",
-          "score": 90,
+          "score": 92,
           "reviewCount": 58,
-          "comment": "コンパクトな設計で狭い空間や家具の隙間も効率良く清掃し、日常の床を清潔に保ちます。"
+          "comment": "限られたスペースでも、小型ボディを活かして家具の隙間まで効率的に掃除します。ワンルームやコンパクトな間取りのマンションで特にその性能を発揮します。"
         },
         {
           "field": "段差乗り越え",
           "score": 65,
           "reviewCount": 52,
-          "comment": "小さな段差は乗り越えられますが、厚手のラグや敷居では引っかかることがあり、注意が必要です。"
+          "comment": "室内の敷居や段差が少ないフラットなマンションには適していますが、少しの段差でも止まることがあるため、玄関の段差など落下防止センサーの性能は過信しない方が良いでしょう。"
         }
       ]
     },
     "workingProfessional": {
-      "overall": 76,
+      "overall": 81,
       "details": [
         {
           "field": "アプリ安定性",
-          "score": 70,
-          "reviewCount": 126,
-          "comment": "外出先からの操作やマッピング機能は便利ですが、Wi-Fi接続の不安定さが課題となることがあります。"
+          "score": 75,
+          "reviewCount": 125,
+          "comment": "外出先から操作できるアプリは多忙な社会人にとって便利ですが、接続の不安定さが指摘されています。帰宅したら止まっていた、という事態を避けるため、自宅のWi-Fi環境の確認が必要です。"
         },
         {
           "field": "メンテナンス",
-          "score": 85,
+          "score": 80,
           "reviewCount": 71,
-          "comment": "自動ゴミ収集で手間が省け、忙しい中でも清潔な環境を維持しやすい点が評価されています。"
+          "comment": "自動ゴミ収集機能により、日々のゴミ捨てから解放される点は大きなメリットです。ただし、エラー発生時には手動での対応が必要となり、忙しい中では手間に感じる可能性があります。"
         },
         {
           "field": "バッテリー",
-          "score": 70,
+          "score": 88,
           "reviewCount": 31,
-          "comment": "自動充電機能により運用は楽ですが、バッテリーの寿命や突然の不具合に関する報告が見られます。"
+          "comment": "バッテリー性能は高く、不在中に家全体を掃除させるのに十分な稼働時間を確保しています。スケジュール機能を活用することで、効率的に清掃を完了させることができます。"
         }
       ]
     },
     "familyHome": {
-      "overall": 78,
+      "overall": 83,
       "details": [
         {
           "field": "床掃除",
-          "score": 90,
+          "score": 92,
           "reviewCount": 58,
-          "comment": "子供の食べこぼしや日常の汚れを効率的に清掃し、床を清潔に保つことで家族の快適な生活をサポートします。"
+          "comment": "子供の食べこぼしやリビングのホコリ掃除に活躍します。小型なため、おもちゃや家具が多い部屋でも隅々まで入り込んで掃除してくれる点がファミリー世帯には嬉しいポイントです。"
         },
         {
           "field": "バッテリー",
-          "score": 70,
+          "score": 88,
           "reviewCount": 31,
-          "comment": "広範囲の清掃には自動充電機能が役立ちますが、バッテリーの持続時間や寿命には個体差があるようです。"
+          "comment": "複数の部屋を一度に掃除する場合でも、バッテリー切れの心配は少ないです。広いリビングや複数の部屋を持つ一般的なファミリー住宅の間取りに対応可能です。"
         },
         {
           "field": "カーペット",
-          "score": 70,
+          "score": 68,
           "reviewCount": 23,
-          "comment": "薄手のカーペットには対応しますが、厚手の絨毯では動作が不安定になることがあり、注意が必要です。"
+          "comment": "子供部屋のプレイマットやリビングの厚手のラグでは、乗り上げに失敗したり、ブラシが絡まったりする可能性があります。カーペットの利用が多い家庭では注意が必要です。"
         }
       ]
     }
