@@ -7,7 +7,7 @@
   "overallRating": 3.91,
   "totalReviews": 335,
   "price": 49800,
-  "reliabilityScore": 86.2,
+  "reliabilityScore": 85.6,
   "asin": "",
   "keywords": [
     "Roomba Mini",
@@ -42,17 +42,17 @@
     }
   },
   "reliability": {
-    "score": 86.2,
+    "score": 85.6,
     "dataAdequacy": {
       "score": 91,
       "weight": 60,
       "description": "総レビュー数327件は、製品の一般的な評価傾向を把握するのに十分なデータ量です。多様な利用環境からのフィードバックが含まれており、信頼性の高い分析基盤となっています。"
     },
     "consistency": {
-      "score": 72,
+      "score": 70,
       "weight": 30,
       "description": "多くの口コミで「コンパクトさ」と「吸引力」が高く評価される一方、「アプリ接続」や「段差認識」に関する不満が共通して指摘されており、製品の長所と短所が一貫して報告されています。",
-      "percentage": 72
+      "percentage": 70
     },
     "freshness": {
       "score": 100,
@@ -176,7 +176,7 @@
     "sampledReviews": 327,
     "adoptedReviews": 327,
     "excludedReviews": 8,
-    "trustScore": 86.2,
+    "trustScore": 85.6,
     "comment": "ユーザーから提供された327件の口コミデータを100%使用。外部サイトからの収集は行わず、提供データのみを分析。価格と消耗品情報は公式サイトを参照し、信頼性を確保しています。"
   },
   "reviewKeywords": {
@@ -228,10 +228,6 @@
         "count": 19
       },
       {
-        "keyword": "期待を下回る点",
-        "count": 10
-      },
-      {
         "keyword": "段差・家具で引っかかる",
         "count": 9
       },
@@ -240,12 +236,28 @@
         "count": 6
       },
       {
+        "keyword": "マッピング・認識が不正確",
+        "count": 4
+      },
+      {
         "keyword": "止まってしまう",
         "count": 4
       },
       {
         "keyword": "アプリ・Wi-Fi接続が難しい",
         "count": 3
+      },
+      {
+        "keyword": "使いにくい・不便",
+        "count": 2
+      },
+      {
+        "keyword": "期待外れ・不満",
+        "count": 2
+      },
+      {
+        "keyword": "水拭き・拭き掃除が不十分",
+        "count": 1
       },
       {
         "keyword": "コードを巻き込む",

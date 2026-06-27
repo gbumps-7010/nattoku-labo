@@ -188,11 +188,11 @@
   "reviewKeywords": {
     "positive": [
       {
-        "keyword": "水拭き・拭き掃除が良い",
+        "keyword": "満足・買ってよかった",
         "count": 6
       },
       {
-        "keyword": "満足・買ってよかった",
+        "keyword": "水拭き・拭き掃除が良い",
         "count": 6
       },
       {
@@ -204,11 +204,11 @@
         "count": 3
       },
       {
-        "keyword": "静かで快適",
+        "keyword": "家事が楽になった",
         "count": 2
       },
       {
-        "keyword": "家事が楽になった",
+        "keyword": "静かで快適",
         "count": 2
       },
       {
@@ -226,16 +226,20 @@
         "count": 8
       },
       {
-        "keyword": "期待を下回る点",
-        "count": 3
-      },
-      {
         "keyword": "段差・家具で引っかかる",
         "count": 2
       },
       {
         "keyword": "コードを巻き込む",
         "count": 2
+      },
+      {
+        "keyword": "吸引力が弱い",
+        "count": 2
+      },
+      {
+        "keyword": "使いにくい・不便",
+        "count": 1
       },
       {
         "keyword": "止まってしまう",

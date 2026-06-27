@@ -7,7 +7,7 @@
   "overallRating": 3.53,
   "totalReviews": 100,
   "price": 119820,
-  "reliabilityScore": 85.0,
+  "reliabilityScore": 73.0,
   "asin": "",
   "metaTitle": "SwitchBot S10 お掃除ロボットS10 詳細分析 | 故障・サポートの実態を徹底解説",
   "metaDescription": "SwitchBot S10の100件の口コミを解析。水道直結の革新性と、頻発する故障、サポート対応の課題など、製品の真実を公開。",
@@ -42,17 +42,17 @@
     }
   },
   "reliability": {
-    "score": 85.0,
+    "score": 73.0,
     "dataAdequacy": {
       "score": 80,
       "weight": 60,
       "description": "口コミ数が100件以上のため、データ十分性は高いと評価できます。広範なユーザーからの意見を反映しています。"
     },
     "consistency": {
-      "percentage": 100,
+      "percentage": 60,
       "weight": 30,
       "description": "単一の口コミソースからのデータであるため、評価の一貫性は高いと判断されます。サイト間の評価差による変動はありません。",
-      "score": 100
+      "score": 60
     },
     "freshness": {
       "score": 70,
@@ -182,18 +182,22 @@
     "sampledReviews": 100,
     "adoptedReviews": 90,
     "excludedReviews": 10,
-    "trustScore": 85.0,
+    "trustScore": 73.0,
     "comment": "提供された100件の口コミを詳細に分析しました。一部の短い口コミや重複を除き、90件の口コミを評価に採用しています。信頼度スコアは、データ十分性、一貫性、鮮度に基づいて算出されています。"
   },
   "reviewKeywords": {
     "positive": [
+      {
+        "keyword": "水拭き・拭き掃除が良い",
+        "count": 29
+      },
       {
         "keyword": "満足・買ってよかった",
         "count": 17
       },
       {
         "keyword": "使いやすい・便利",
-        "count": 14
+        "count": 13
       },
       {
         "keyword": "家事が楽になった",
@@ -206,19 +210,35 @@
       {
         "keyword": "綺麗になる",
         "count": 5
+      },
+      {
+        "keyword": "マッピング・ルートが賢い",
+        "count": 5
+      },
+      {
+        "keyword": "吸引力が高い",
+        "count": 5
+      },
+      {
+        "keyword": "床がサラサラ・ピカピカ",
+        "count": 4
+      },
+      {
+        "keyword": "静かで快適",
+        "count": 3
       }
     ],
     "negative": [
       {
         "keyword": "故障・不具合",
-        "count": 47
+        "count": 46
       },
       {
         "keyword": "アプリ・Wi-Fi接続が難しい",
         "count": 8
       },
       {
-        "keyword": "期待を下回る点",
+        "keyword": "期待外れ・不満",
         "count": 5
       },
       {
@@ -226,8 +246,20 @@
         "count": 4
       },
       {
+        "keyword": "水拭き・拭き掃除が不十分",
+        "count": 4
+      },
+      {
         "keyword": "動作音が気になる",
         "count": 3
+      },
+      {
+        "keyword": "止まってしまう",
+        "count": 2
+      },
+      {
+        "keyword": "価格・コストが高い",
+        "count": 1
       }
     ]
   },

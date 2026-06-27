@@ -234,10 +234,6 @@
         "count": 27
       },
       {
-        "keyword": "期待を下回る点",
-        "count": 6
-      },
-      {
         "keyword": "段差・家具で引っかかる",
         "count": 5
       },
@@ -250,12 +246,28 @@
         "count": 5
       },
       {
+        "keyword": "水拭き・拭き掃除が不十分",
+        "count": 4
+      },
+      {
         "keyword": "止まってしまう",
         "count": 4
       },
       {
         "keyword": "アプリ・Wi-Fi接続が難しい",
         "count": 3
+      },
+      {
+        "keyword": "吸引力が弱い",
+        "count": 1
+      },
+      {
+        "keyword": "期待外れ・不満",
+        "count": 1
+      },
+      {
+        "keyword": "掃除が不十分",
+        "count": 1
       }
     ]
   },

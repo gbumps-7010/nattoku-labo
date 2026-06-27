@@ -7,7 +7,7 @@
   "overallRating": 4.14,
   "totalReviews": 408,
   "price": 29990,
-  "reliabilityScore": 88.6,
+  "reliabilityScore": 88.0,
   "asin": "",
   "metaTitle": "Eufy Robot Vacuum Auto-Empty C10 詳細分析 | 吸引力と静音性の口コミ評価",
   "metaDescription": "Eufy Robot Vacuum Auto-Empty C10の394件の口コミを解析。自動ゴミ収集やマッピング機能、ペットの毛に対する吸引力など、購入前に知るべき真実を公開。",
@@ -42,17 +42,17 @@
     }
   },
   "reliability": {
-    "score": 88.6,
+    "score": 88.0,
     "dataAdequacy": {
       "score": 95,
       "weight": 60,
       "description": "レビュー総数394件は、製品の長所と短所を判断するのに十分なデータ量です。多様な利用環境からのフィードバックが集まっており、信頼性は高いと評価できます。"
     },
     "consistency": {
-      "score": 72,
+      "score": 70,
       "weight": 30,
       "description": "全体的には高評価ですが、「静音性」や「カーペット清掃」など特定の項目で評価が分かれる傾向があります。初期不良や故障に関する低評価も一定数存在します。",
-      "percentage": 72
+      "percentage": 70
     },
     "freshness": {
       "score": 100,
@@ -176,7 +176,7 @@
     "sampledReviews": 394,
     "adoptedReviews": 394,
     "excludedReviews": 14,
-    "trustScore": 88.6,
+    "trustScore": 88.0,
     "comment": "全394件の口コミを分析。購入直後から長期利用まで様々な期間のレビューが含まれ、製品の多角的な評価が可能です。信頼性は高いですが、一部性能の評価にばらつきが見られます。"
   },
   "reviewKeywords": {
@@ -228,8 +228,8 @@
         "count": 33
       },
       {
-        "keyword": "期待を下回る点",
-        "count": 33
+        "keyword": "水拭き・拭き掃除が不十分",
+        "count": 26
       },
       {
         "keyword": "段差・家具で引っかかる",
@@ -241,11 +241,15 @@
       },
       {
         "keyword": "動作音が気になる",
-        "count": 12
+        "count": 14
       },
       {
         "keyword": "コードを巻き込む",
         "count": 7
+      },
+      {
+        "keyword": "吸引力が弱い",
+        "count": 5
       },
       {
         "keyword": "価格・コストが高い",
@@ -253,6 +257,10 @@
       },
       {
         "keyword": "アプリ・Wi-Fi接続が難しい",
+        "count": 1
+      },
+      {
+        "keyword": "期待外れ・不満",
         "count": 1
       }
     ]

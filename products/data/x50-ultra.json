@@ -222,11 +222,15 @@
     ],
     "negative": [
       {
-        "keyword": "期待を下回る点",
-        "count": 2
+        "keyword": "吸引力が弱い",
+        "count": 1
       },
       {
         "keyword": "故障・不具合",
+        "count": 1
+      },
+      {
+        "keyword": "使いにくい・不便",
         "count": 1
       }
     ]

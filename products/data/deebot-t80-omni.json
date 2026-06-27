@@ -7,7 +7,7 @@
   "overallRating": 4.36,
   "totalReviews": 567,
   "price": 149800,
-  "reliabilityScore": 92.8,
+  "reliabilityScore": 92.5,
   "asin": "",
   "keywords": [
     "DEEBOT T80 OMNI",
@@ -42,17 +42,17 @@
     }
   },
   "reliability": {
-    "score": 92.8,
+    "score": 92.5,
     "dataAdequacy": {
       "score": 100,
       "weight": 60,
       "description": "548件という豊富な口コミ数があり、多様な利用環境からの評価が集まっているため、データの信頼性は非常に高いです。"
     },
     "consistency": {
-      "score": 76,
+      "score": 75,
       "weight": 30,
       "description": "全体的に高評価で一致していますが、一部でナビゲーションやアプリ初期設定に関する不満も見られ、意見の一致度は良好レベルです。",
-      "percentage": 76
+      "percentage": 75
     },
     "freshness": {
       "score": 100,
@@ -182,7 +182,7 @@
     "sampledReviews": 548,
     "adoptedReviews": 548,
     "excludedReviews": 19,
-    "trustScore": 92.8,
+    "trustScore": 92.5,
     "comment": "全548件の口コミを分析。購入直後の感想や配送に関するものを除外し、製品性能に関する529件のレビューを評価の根拠としています。豊富なデータ量と内容の一貫性から、信頼性は高いと判断できます。"
   },
   "reviewKeywords": {
@@ -234,8 +234,8 @@
         "count": 35
       },
       {
-        "keyword": "期待を下回る点",
-        "count": 17
+        "keyword": "水拭き・拭き掃除が不十分",
+        "count": 11
       },
       {
         "keyword": "コードを巻き込む",
@@ -247,18 +247,26 @@
       },
       {
         "keyword": "動作音が気になる",
-        "count": 5
+        "count": 6
       },
       {
         "keyword": "段差・家具で引っかかる",
         "count": 4
       },
       {
+        "keyword": "マッピング・認識が不正確",
+        "count": 2
+      },
+      {
         "keyword": "価格・コストが高い",
         "count": 1
       },
       {
-        "keyword": "アプリ・Wi-Fi接続が難しい",
+        "keyword": "期待外れ・不満",
+        "count": 1
+      },
+      {
+        "keyword": "使いにくい・不便",
         "count": 1
       }
     ]

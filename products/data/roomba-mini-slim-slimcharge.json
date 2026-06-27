@@ -7,7 +7,7 @@
   "overallRating": 3.73,
   "totalReviews": 201,
   "price": 39800,
-  "reliabilityScore": 82.0,
+  "reliabilityScore": 81.4,
   "asin": "",
   "keywords": [
     "ロボット掃除機",
@@ -42,17 +42,17 @@
     }
   },
   "reliability": {
-    "score": 82.0,
+    "score": 81.4,
     "dataAdequacy": {
       "score": 85,
       "weight": 60,
       "description": "レビュー総数は195件あり、製品の評価を行う上で信頼性の高い母集団です。多様な利用環境からの意見が集まっており、長所と短所の両側面を十分に把握できます。"
     },
     "consistency": {
-      "score": 70,
+      "score": 68,
       "weight": 30,
       "description": "全体的には高評価ですが、アプリ接続やナビゲーション精度において評価が分かれています。使用するWi-Fi環境や家の間取りによって、ユーザー体験にばらつきが見られます。",
-      "percentage": 70
+      "percentage": 68
     },
     "freshness": {
       "score": 100,
@@ -176,7 +176,7 @@
     "sampledReviews": 195,
     "adoptedReviews": 195,
     "excludedReviews": 6,
-    "trustScore": 82.0,
+    "trustScore": 81.4,
     "comment": "提供された195件の口コミを全て分析。短文や内容の薄いレビューは除外済みのため、各評価項目の精度は高いです。特にアプリの安定性に関する言及が多く、信頼性の高い課題点が抽出できています。"
   },
   "reviewKeywords": {
@@ -228,12 +228,12 @@
         "count": 13
       },
       {
-        "keyword": "期待を下回る点",
-        "count": 7
-      },
-      {
         "keyword": "動作音が気になる",
         "count": 5
+      },
+      {
+        "keyword": "水拭き・拭き掃除が不十分",
+        "count": 4
       },
       {
         "keyword": "止まってしまう",
@@ -244,8 +244,16 @@
         "count": 3
       },
       {
+        "keyword": "吸引力が弱い",
+        "count": 2
+      },
+      {
         "keyword": "段差・家具で引っかかる",
         "count": 2
+      },
+      {
+        "keyword": "マッピング・認識が不正確",
+        "count": 1
       }
     ]
   },

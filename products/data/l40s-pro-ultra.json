@@ -7,7 +7,7 @@
   "overallRating": 4.3,
   "totalReviews": 62,
   "price": 99800,
-  "reliabilityScore": 72.7,
+  "reliabilityScore": 72.4,
   "asin": "",
   "metaTitle": "Dreame L40s Pro Ultra 詳細分析 | 全自動ロボット掃除機の賢さと課題を徹底解剖",
   "metaDescription": "Dreame L40s Pro Ultraの61件の口コミを解析。強力な吸引力と高精度マッピング、全自動メンテナンスが魅力。一方で、初期不良やサポート対応の課題も浮き彫りに。",
@@ -42,17 +42,17 @@
     }
   },
   "reliability": {
-    "score": 72.7,
+    "score": 72.4,
     "dataAdequacy": {
       "score": 64,
       "weight": 60,
       "description": "総レビュー数61件は、製品の基本的な長所・短所を把握するには十分な量ですが、より多様な使用環境での評価を確認するには、さらなるデータ蓄積が望まれます。"
     },
     "consistency": {
-      "score": 81,
+      "score": 80,
       "weight": 30,
       "description": "Amazonと楽天の評価はともに高く、全体的な満足度には一貫性が見られます。ただし、サポート対応や初期不良に関するネガティブな意見も両サイトで散見されます。",
-      "percentage": 81
+      "percentage": 80
     },
     "freshness": {
       "score": 100,
@@ -188,7 +188,7 @@
     "sampledReviews": 61,
     "adoptedReviews": 61,
     "excludedReviews": 1,
-    "trustScore": 72.7,
+    "trustScore": 72.4,
     "comment": "Amazonと楽天から収集した61件の口コミを分析。購入直後から半年以上の長期利用まで、多様な意見が含まれており、製品の性能と課題を多角的に評価しています。"
   },
   "reviewKeywords": {
@@ -240,11 +240,15 @@
         "count": 4
       },
       {
-        "keyword": "期待を下回る点",
-        "count": 4
+        "keyword": "水拭き・拭き掃除が不十分",
+        "count": 2
       },
       {
         "keyword": "動作音が気になる",
+        "count": 2
+      },
+      {
+        "keyword": "吸引力が弱い",
         "count": 2
       },
       {

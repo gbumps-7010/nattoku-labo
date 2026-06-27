@@ -7,7 +7,7 @@
   "overallRating": 3.87,
   "totalReviews": 63,
   "price": 128400,
-  "reliabilityScore": 73.0,
+  "reliabilityScore": 61.0,
   "asin": "",
   "metaTitle": "Roomba® Plus 505 Combo + AutoWash™ 詳細分析 | 全自動お掃除ロボットの真実",
   "metaDescription": "Roomba® Plus 505 Combo + AutoWash™の63件の口コミを解析。強力な吸引力と水拭き、自動メンテナンス機能の真実を公開。",
@@ -42,17 +42,17 @@
     }
   },
   "reliability": {
-    "score": 73.0,
+    "score": 61.0,
     "dataAdequacy": {
       "score": 60,
       "weight": 60,
       "description": "口コミ総数63件は一定の評価基準を満たしますが、より多くのデータがあれば信頼性は向上します。"
     },
     "consistency": {
-      "percentage": 100,
+      "percentage": 60,
       "weight": 30,
       "description": "Amazon口コミのみのため、サイト間の評価差は発生していません。単一ソースでの一貫性は高いです。",
-      "score": 100
+      "score": 60
     },
     "freshness": {
       "score": 70,
@@ -66,15 +66,17 @@
     "note": "最新ファームウェアに関する具体的な言及はありませんが、アプリのアップデートにより機能改善が期待されます。"
   },
   "timeSaving": {
+    "vacuumMinutes": 10,
+    "mopMinutes": 9,
     "dailyMinutes": 19,
     "monthlyHours": 9.5,
-    "annualHours": 116,
-    "workDaysEquivalent": 14.5
+    "annualHours": 115.6,
+    "workDaysEquivalent": 14.4
   },
   "operationalCost": {
-    "daily": 98,
+    "daily": 96,
     "dailyNote": "消耗品の実質的な日割りコスト",
-    "monthly": 2900,
+    "monthly": 2933,
     "annual": 35200,
     "consumables": [
       {
@@ -192,11 +194,15 @@
     "sampledReviews": 63,
     "adoptedReviews": 58,
     "excludedReviews": 5,
-    "trustScore": 73.0,
+    "trustScore": 61.0,
     "comment": "提供されたAmazon口コミ63件を分析し、一部重複や無関係な口コミを除外して統計を作成しました。"
   },
   "reviewKeywords": {
     "positive": [
+      {
+        "keyword": "水拭き・拭き掃除が良い",
+        "count": 29
+      },
       {
         "keyword": "使いやすい・便利",
         "count": 15
@@ -204,6 +210,10 @@
       {
         "keyword": "満足・買ってよかった",
         "count": 11
+      },
+      {
+        "keyword": "マッピング・ルートが賢い",
+        "count": 8
       },
       {
         "keyword": "静かで快適",
@@ -216,6 +226,14 @@
       {
         "keyword": "綺麗になる",
         "count": 3
+      },
+      {
+        "keyword": "家事が楽になった",
+        "count": 2
+      },
+      {
+        "keyword": "床がサラサラ・ピカピカ",
+        "count": 1
       }
     ],
     "negative": [
@@ -237,6 +255,14 @@
       },
       {
         "keyword": "コードを巻き込む",
+        "count": 1
+      },
+      {
+        "keyword": "価格・コストが高い",
+        "count": 1
+      },
+      {
+        "keyword": "アプリ・Wi-Fi接続が難しい",
         "count": 1
       }
     ]

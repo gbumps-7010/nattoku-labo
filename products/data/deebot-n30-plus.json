@@ -236,12 +236,8 @@
         "count": 10
       },
       {
-        "keyword": "期待を下回る点",
-        "count": 6
-      },
-      {
         "keyword": "動作音が気になる",
-        "count": 3
+        "count": 4
       },
       {
         "keyword": "コードを巻き込む",
@@ -252,7 +248,19 @@
         "count": 3
       },
       {
+        "keyword": "水拭き・拭き掃除が不十分",
+        "count": 2
+      },
+      {
+        "keyword": "吸引力が弱い",
+        "count": 2
+      },
+      {
         "keyword": "アプリ・Wi-Fi接続が難しい",
+        "count": 1
+      },
+      {
+        "keyword": "掃除が不十分",
         "count": 1
       }
     ]

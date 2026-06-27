@@ -7,7 +7,7 @@
   "overallRating": 3.88,
   "totalReviews": 204,
   "price": 69800,
-  "reliabilityScore": 81.1,
+  "reliabilityScore": 80.5,
   "asin": "",
   "metaTitle": "ECOVACS DEEBOT mini 詳細分析 | 購入前に知るべき口コミの真実",
   "metaDescription": "ECOVACS DEEBOT miniの203件の口コミを徹底解析。コンパクトさ、静音性、水拭き性能の評価は高い一方、カーペット清掃やアプリ設定の課題も。購入前に知るべき真実を公開します。",
@@ -42,17 +42,17 @@
     }
   },
   "reliability": {
-    "score": 81.1,
+    "score": 80.5,
     "dataAdequacy": {
       "score": 85,
       "weight": 60,
       "description": "レビュー総数は203件あり、製品の長所と短所を判断するための十分なデータ量が確保されています。多様な利用環境からのフィードバックが含まれており、信頼性の高い評価が可能です。"
     },
     "consistency": {
-      "score": 72,
+      "score": 70,
       "weight": 30,
       "description": "全体的には高評価ですが、カーペット利用環境や初期設定の難しさなど、特定の条件下で評価が分かれる傾向があります。特にカーペットの扱いは、ユーザーの満足度を左右する大きな要因となっています。",
-      "percentage": 72
+      "percentage": 70
     },
     "freshness": {
       "score": 85,
@@ -182,7 +182,7 @@
     "sampledReviews": 203,
     "adoptedReviews": 203,
     "excludedReviews": 1,
-    "trustScore": 81.1,
+    "trustScore": 80.5,
     "comment": "楽天に投稿された203件のユーザーレビューを分析。購入者の多様な意見を反映しており、製品の実際の性能と課題を把握する上で信頼性の高いデータとなっています。"
   },
   "reviewKeywords": {
@@ -234,12 +234,16 @@
         "count": 14
       },
       {
-        "keyword": "期待を下回る点",
-        "count": 5
+        "keyword": "動作音が気になる",
+        "count": 4
       },
       {
-        "keyword": "動作音が気になる",
-        "count": 3
+        "keyword": "マッピング・認識が不正確",
+        "count": 2
+      },
+      {
+        "keyword": "水拭き・拭き掃除が不十分",
+        "count": 2
       },
       {
         "keyword": "止まってしまう",
@@ -254,7 +258,7 @@
         "count": 1
       },
       {
-        "keyword": "マッピング・認識が不正確",
+        "keyword": "掃除が不十分",
         "count": 1
       },
       {

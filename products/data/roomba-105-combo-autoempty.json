@@ -238,10 +238,6 @@
         "count": 11
       },
       {
-        "keyword": "期待を下回る点",
-        "count": 8
-      },
-      {
         "keyword": "段差・家具で引っかかる",
         "count": 5
       },
@@ -254,15 +250,23 @@
         "count": 4
       },
       {
+        "keyword": "水拭き・拭き掃除が不十分",
+        "count": 4
+      },
+      {
         "keyword": "コードを巻き込む",
         "count": 3
       },
       {
-        "keyword": "メンテナンスが面倒",
-        "count": 1
+        "keyword": "マッピング・認識が不正確",
+        "count": 2
       },
       {
-        "keyword": "価格・コストが高い",
+        "keyword": "期待外れ・不満",
+        "count": 2
+      },
+      {
+        "keyword": "メンテナンスが面倒",
         "count": 1
       }
     ]

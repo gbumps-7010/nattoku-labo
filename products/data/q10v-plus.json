@@ -7,7 +7,7 @@
   "overallRating": 3.74,
   "totalReviews": 30,
   "price": 79999,
-  "reliabilityScore": 58.0,
+  "reliabilityScore": 52.0,
   "asin": "",
   "metaTitle": "Roborock Q10V+ 詳細分析 | 吸引力と水拭きの実力は？",
   "metaDescription": "Roborock Q10V+の30件の口コミを解析。強力な吸引力と水拭き機能、自動ゴミ収集など、Q10V+の真実を公開。",
@@ -42,17 +42,17 @@
     }
   },
   "reliability": {
-    "score": 58.0,
+    "score": 52.0,
     "dataAdequacy": {
       "score": 40,
       "weight": 60,
       "description": "口コミ総数が30件と比較的少ないため、データ十分性のスコアは40点です。今後の口コミ増加に期待します。"
     },
     "consistency": {
-      "percentage": 80,
+      "percentage": 60,
       "weight": 30,
       "description": "肯定的な意見と否定的な意見が混在しており、評価の一貫性は中程度です。特定の機能で意見が分かれる傾向が見られます。",
-      "score": 80
+      "score": 60
     },
     "freshness": {
       "score": 100,
@@ -66,10 +66,12 @@
     "note": "最新ファームウェアに関する具体的な情報は提供されていませんが、アプリの安定性やマッピング機能の改善が期待されています。"
   },
   "timeSaving": {
+    "vacuumMinutes": 10,
+    "mopMinutes": 9,
     "dailyMinutes": 19,
     "monthlyHours": 9.5,
-    "annualHours": 114,
-    "workDaysEquivalent": 14.25
+    "annualHours": 115.6,
+    "workDaysEquivalent": 14.4
   },
   "operationalCost": {
     "daily": 80,
@@ -186,11 +188,15 @@
     "sampledReviews": 30,
     "adoptedReviews": 29,
     "excludedReviews": 1,
-    "trustScore": 58.0,
+    "trustScore": 52.0,
     "comment": "ユーザー提供の30件の口コミを分析。1件は製品口コミとして不適格と判断し除外しました。信頼度スコアは58.0点です。"
   },
   "reviewKeywords": {
     "positive": [
+      {
+        "keyword": "水拭き・拭き掃除が良い",
+        "count": 9
+      },
       {
         "keyword": "満足・買ってよかった",
         "count": 8
@@ -200,8 +206,12 @@
         "count": 5
       },
       {
-        "keyword": "使いやすい・便利",
+        "keyword": "マッピング・ルートが賢い",
         "count": 5
+      },
+      {
+        "keyword": "使いやすい・便利",
+        "count": 4
       },
       {
         "keyword": "静かで快適",

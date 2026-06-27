@@ -7,7 +7,7 @@
   "overallRating": 4.12,
   "totalReviews": 472,
   "price": 29490,
-  "reliabilityScore": 85.4,
+  "reliabilityScore": 84.8,
   "asin": "",
   "keywords": [
     "Eufy RoboVac G30",
@@ -42,17 +42,17 @@
     }
   },
   "reliability": {
-    "score": 85.4,
+    "score": 84.8,
     "dataAdequacy": {
       "score": 98,
       "weight": 60,
       "description": "レビュー総数は461件と、製品の評価を判断する上で非常に信頼性の高いデータ量です。多様な利用環境からのフィードバックが集まっています。"
     },
     "consistency": {
-      "score": 72,
+      "score": 70,
       "weight": 30,
       "description": "各ECサイトでの評価は概ね一致していますが、一部で故障報告やWi-Fi接続に関する不満も見られ、評価にばらつきが生じています。",
-      "percentage": 72
+      "percentage": 70
     },
     "freshness": {
       "score": 50,
@@ -176,7 +176,7 @@
     "sampledReviews": 461,
     "adoptedReviews": 461,
     "excludedReviews": 11,
-    "trustScore": 85.4,
+    "trustScore": 84.8,
     "comment": "461件の豊富な口コミを分析。長期利用者のレビューも多く、製品の耐久性や経年劣化に関する信頼性の高い洞察が得られました。一部Wi-Fi設定など特定環境での評価に偏りが見られます。"
   },
   "reviewKeywords": {
@@ -232,16 +232,20 @@
         "count": 17
       },
       {
-        "keyword": "期待を下回る点",
-        "count": 17
-      },
-      {
         "keyword": "動作音が気になる",
-        "count": 14
+        "count": 15
       },
       {
         "keyword": "止まってしまう",
         "count": 11
+      },
+      {
+        "keyword": "水拭き・拭き掃除が不十分",
+        "count": 8
+      },
+      {
+        "keyword": "吸引力が弱い",
+        "count": 6
       },
       {
         "keyword": "コードを巻き込む",
@@ -252,11 +256,11 @@
         "count": 4
       },
       {
-        "keyword": "バッテリー・稼働時間が短い",
-        "count": 1
+        "keyword": "期待外れ・不満",
+        "count": 2
       },
       {
-        "keyword": "アプリ・Wi-Fi接続が難しい",
+        "keyword": "バッテリー・稼働時間が短い",
         "count": 1
       }
     ]

@@ -813,6 +813,20 @@
                 口コミの信頼度
             </h2>
             <div class="card" style="background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%); border: 2px solid #e0f2fe;">
+                <div class="data-quality-summary" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1.5rem; text-align: center; margin-bottom: 2rem; padding: 1.5rem; background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+                    <div>
+                        <p style="font-size: 2rem; font-weight: 900; color: var(--primary-color);"><span data-dynamic="dataQuality.totalReviews">100</span>件</p>
+                        <p style="color: var(--gray-600); font-size: 0.9rem;">総口コミ数</p>
+                    </div>
+                    <div>
+                        <p style="font-size: 2rem; font-weight: 900; color: var(--success-color);"><span data-dynamic="dataQuality.adoptedReviews">95</span>件</p>
+                        <p style="color: var(--gray-600); font-size: 0.9rem;">採用データ</p>
+                    </div>
+                    <div>
+                        <p style="font-size: 2rem; font-weight: 900; color: var(--danger-color);"><span data-dynamic="dataQuality.excludedReviews">5</span>件</p>
+                        <p style="color: var(--gray-600); font-size: 0.9rem;">除外データ</p>
+                    </div>
+                </div>
                 <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 2rem; margin-bottom: 2rem; padding: 2rem; background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
                     <div>
                         <p style="font-size: 0.95rem; color: #64748b; margin-bottom: 0.5rem; font-weight: 600; letter-spacing: 0.5px;">口コミの信頼度</p>
@@ -1154,34 +1168,6 @@
                     </h3>
                     <div style="display: grid; gap: 0.85rem;" data-dynamic="operationalCost.consumables">
                         <!-- product-loader.jsが自動生成 -->
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Data Quality -->
-        <section>
-            <h2 class="section-title">
-                <i class="fas fa-shield-alt"></i>
-                データ品質保証
-            </h2>
-            <div class="card">
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1.5rem; text-align: center;">
-                    <div>
-                        <p style="font-size: 2rem; font-weight: 900; color: var(--primary-color);"><span data-dynamic="dataQuality.totalReviews">100</span>件</p>
-                        <p style="color: var(--gray-600); font-size: 0.9rem;">総口コミ数</p>
-                    </div>
-                    <div>
-                        <p style="font-size: 2rem; font-weight: 900; color: var(--success-color);"><span data-dynamic="dataQuality.adoptedReviews">95</span>件</p>
-                        <p style="color: var(--gray-600); font-size: 0.9rem;">採用データ</p>
-                    </div>
-                    <div>
-                        <p style="font-size: 2rem; font-weight: 900; color: var(--danger-color);"><span data-dynamic="dataQuality.excludedReviews">5</span>件</p>
-                        <p style="color: var(--gray-600); font-size: 0.9rem;">除外データ</p>
-                    </div>
-                    <div>
-                        <p style="font-size: 2rem; font-weight: 900; color: var(--warning-color);"><span data-dynamic="dataQuality.trustScore">85.0</span>点</p>
-                        <p style="color: var(--gray-600); font-size: 0.9rem;">信頼スコア</p>
                     </div>
                 </div>
             </div>

@@ -7,7 +7,7 @@
   "overallRating": 4.4,
   "totalReviews": 28,
   "price": 26900,
-  "reliabilityScore": 53.3,
+  "reliabilityScore": 52.7,
   "asin": "",
   "keywords": [
     "Dreame D10 Plus",
@@ -42,17 +42,17 @@
     }
   },
   "reliability": {
-    "score": 53.3,
+    "score": 52.7,
     "dataAdequacy": {
       "score": 51,
       "weight": 60,
       "description": "口コミ総数は27件と多くはなく、製品の全体像を把握するにはやや限定的です。より多角的な評価のためには、今後のレビュー蓄積が待たれます。"
     },
     "consistency": {
-      "score": 59,
+      "score": 57,
       "weight": 30,
       "description": "満足しているユーザーと初期不良に遭遇したユーザーとで評価が大きく分かれています。そのため、サイト間の評価のばらつきは大きい傾向にあります。",
-      "percentage": 59
+      "percentage": 57
     },
     "freshness": {
       "score": 50,
@@ -182,7 +182,7 @@
     "sampledReviews": 27,
     "adoptedReviews": 27,
     "excludedReviews": 1,
-    "trustScore": 53.3,
+    "trustScore": 52.7,
     "comment": "分析対象の口コミは27件です。製品の長所と短所を把握するには十分ですが、サンプル数が限られるため、個々の意見が統計結果に与える影響が比較的大きい点に留意が必要です。"
   },
   "reviewKeywords": {
@@ -226,15 +226,19 @@
     ],
     "negative": [
       {
-        "keyword": "期待を下回る点",
-        "count": 2
-      },
-      {
         "keyword": "段差・家具で引っかかる",
         "count": 1
       },
       {
         "keyword": "故障・不具合",
+        "count": 1
+      },
+      {
+        "keyword": "吸引力が弱い",
+        "count": 1
+      },
+      {
+        "keyword": "使いにくい・不便",
         "count": 1
       },
       {

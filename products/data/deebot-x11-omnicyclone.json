@@ -7,7 +7,7 @@
   "overallRating": 4.46,
   "totalReviews": 93,
   "price": 229900,
-  "reliabilityScore": 76.0,
+  "reliabilityScore": 70.3,
   "asin": "",
   "metaTitle": "DEEBOT X11 OmniCyclone 詳細分析 | 93件の口コミから徹底評価",
   "metaDescription": "DEEBOT X11 OmniCycloneの93件の口コミを解析。圧倒的な清掃力、進化した水拭き性能、メンテナンスフリーの真実を公開。",
@@ -42,17 +42,17 @@
     }
   },
   "reliability": {
-    "score": 76.0,
+    "score": 70.3,
     "dataAdequacy": {
       "score": 60,
       "weight": 60,
       "description": "口コミ総数93件は十分なデータ量とは言えませんが、詳細なコメントが多く信頼性は高いです。"
     },
     "consistency": {
-      "percentage": 100,
+      "percentage": 81,
       "weight": 30,
       "description": "Amazonと楽天の評価に大きな乖離がなく、口コミ内容も一貫しているため、評価の信頼性は非常に高いです。",
-      "score": 100
+      "score": 81
     },
     "freshness": {
       "score": 100,
@@ -66,10 +66,12 @@
     "note": "最新の口コミでも高い満足度を維持しており、継続的な製品改善が期待されます。特にファームウェアに関する不満は少ないです。"
   },
   "timeSaving": {
+    "vacuumMinutes": 10,
+    "mopMinutes": 9,
     "dailyMinutes": 19,
     "monthlyHours": 9.5,
-    "annualHours": 114,
-    "workDaysEquivalent": 14.25
+    "annualHours": 115.6,
+    "workDaysEquivalent": 14.4
   },
   "operationalCost": {
     "daily": 104,
@@ -180,7 +182,7 @@
     "sampledReviews": 93,
     "adoptedReviews": 88,
     "excludedReviews": 5,
-    "trustScore": 76.0,
+    "trustScore": 70.3,
     "comment": "ユーザーから提供された93件の口コミを詳細に分析。一部の短い口コミを除き、88件の口コミを統計データに採用し、高い信頼性を確保しました。"
   },
   "reviewKeywords": {
@@ -195,7 +197,7 @@
       },
       {
         "keyword": "静かで快適",
-        "count": 14
+        "count": 15
       },
       {
         "keyword": "吸引力が高い",
@@ -206,11 +208,11 @@
         "count": 8
       },
       {
-        "keyword": "綺麗になる",
+        "keyword": "マッピング・ルートが賢い",
         "count": 8
       },
       {
-        "keyword": "マッピング・ルートが賢い",
+        "keyword": "綺麗になる",
         "count": 7
       },
       {
@@ -219,7 +221,7 @@
       },
       {
         "keyword": "床がサラサラ・ピカピカ",
-        "count": 5
+        "count": 4
       },
       {
         "keyword": "故障・トラブルが少ない",
