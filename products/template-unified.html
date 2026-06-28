@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="製品の口コミ統計分析。詳細データを公開。">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <link rel="canonical" href="https://nattoku-labo.com/products/PRODUCT_ID.html">
     <title>製品名 詳細分析 | もう失敗しない。ナットクLabo</title>
     
     <!-- 構造化データ（SEO強化） - product-loader.jsが自動更新 -->
@@ -43,7 +46,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     
     <!-- ナビゲーションCSS -->
-    <link rel="stylesheet" href="css/navigation.css?v=20260624c">
+    <link rel="stylesheet" href="css/navigation.css?v=20260624d">
     
     <style>
         * {
@@ -196,62 +199,14 @@
             flex-wrap: wrap;
             opacity: 0.95;
         }
-        
-        .rating-display {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-size: 1.1rem;
-            font-weight: 700;
-        }
-        
-        .stars i {
-            color: var(--warning-color);
-        }
-        
-        /* Container */
+/* Container */
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 3rem clamp(1.5rem, 5vw, 3rem);
             box-sizing: border-box;
         }
-        
-        /* Summary Stats */
-        .summary-stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
-            margin-bottom: 3rem;
-        }
-        
-        .stat-card {
-            background: var(--white);
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: var(--shadow);
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
-        
-        .stat-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .stat-number {
-            font-size: 2.5rem;
-            font-weight: 900;
-            color: var(--primary-color);
-            display: block;
-        }
-        
-        .stat-label {
-            color: var(--gray-600);
-            font-size: 0.9rem;
-            margin-top: 0.5rem;
-        }
-        
-        /* Section */
+/* Section */
         section {
             margin-bottom: 3rem;
         }
@@ -638,11 +593,6 @@
             .product-image-header {
                 margin: 0 auto;
             }
-            
-            .summary-stats {
-                grid-template-columns: 1fr;
-            }
-            
             .problems-grid {
                 grid-template-columns: 1fr;
             }
@@ -779,19 +729,11 @@
                     </div>
                     
                     <div class="product-meta">
-                        <div class="rating-display">
-                            <div class="stars" data-dynamic="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                            <span data-dynamic="overallRating">4.5</span>
-                            <span style="opacity: 0.8;">（<span data-dynamic="totalReviews">100</span>件）</span>
+                        <div style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: 20px; font-weight: 600;">
+                            総口コミ: <span data-dynamic="totalReviews">0</span>件
                         </div>
                         <div style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: 20px; font-weight: 600;">
-                            信頼度: <span data-dynamic="reliabilityScore">85.0</span>点
+                            ECサイト口コミの信頼度: <span data-dynamic="reliabilityScore">85.0</span>点
                         </div>
                     </div>
                 </div>
@@ -801,21 +743,6 @@
     
     <!-- Main Content -->
     <div class="container">
-        <!-- Summary Stats -->
-        <div class="summary-stats">
-            <div class="stat-card">
-                <span class="stat-number" data-dynamic="categoryC.userSatisfaction.score">90</span>
-                <p class="stat-label">ユーザー満足度</p>
-            </div>
-            <div class="stat-card">
-                <span class="stat-number" data-dynamic="categoryC.repurchaseIntention.percentage">85%</span>
-                <p class="stat-label">リピート意向</p>
-            </div>
-            <div class="stat-card">
-                <span class="stat-number" style="color: var(--danger-color);" data-dynamic="categoryC.failureRate.percentage">5%</span>
-                <p class="stat-label">不具合率</p>
-            </div>
-        </div>
         
         <!-- Data Reliability -->
         <section>
@@ -824,6 +751,20 @@
                 この分析データの信頼度
             </h2>
             <div class="card" style="background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%); border: 2px solid #e0f2fe;">
+                <div class="data-quality-summary" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1.5rem; text-align: center; margin-bottom: 2rem; padding: 1.5rem; background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+                    <div>
+                        <p style="font-size: 2rem; font-weight: 900; color: var(--primary-color);"><span data-dynamic="dataQuality.totalReviews">100</span>件</p>
+                        <p style="color: var(--gray-600); font-size: 0.9rem;">総口コミ数</p>
+                    </div>
+                    <div>
+                        <p style="font-size: 2rem; font-weight: 900; color: var(--success-color);"><span data-dynamic="dataQuality.adoptedReviews">95</span>件</p>
+                        <p style="color: var(--gray-600); font-size: 0.9rem;">採用データ</p>
+                    </div>
+                    <div>
+                        <p style="font-size: 2rem; font-weight: 900; color: var(--danger-color);"><span data-dynamic="dataQuality.excludedReviews">5</span>件</p>
+                        <p style="color: var(--gray-600); font-size: 0.9rem;">除外データ</p>
+                    </div>
+                </div>
                 <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 2rem; margin-bottom: 2rem; padding: 2rem; background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
                     <div>
                         <p style="font-size: 0.95rem; color: #64748b; margin-bottom: 0.5rem; font-weight: 600; letter-spacing: 0.5px;">分析の信頼度スコア</p>
@@ -843,7 +784,7 @@
                 </div>
                 
                 <p class="reliability-intro-text" style="color: #334155; font-size: 0.95rem; line-height: 1.75; margin-bottom: 2rem; padding: 0 0.5rem;">
-                    このスコアは、レビューデータの<strong>量が妥当か</strong>、<strong>使った人の意見がおおむね一致しているか</strong>、<strong>最新の状況を反映しているか</strong>を総合的に評価したものです。85点以上は「購入判断の参考として、信頼できる水準」と考えられます。
+                    このスコアは、口コミデータの<strong>量が妥当か</strong>、<strong>使った人の意見がおおむね一致しているか</strong>、<strong>最新の状況を反映しているか</strong>を総合的に評価したものです。85点以上は「購入判断の参考として、信頼できる水準」と考えられます。
                 </p>
                 
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
@@ -861,7 +802,7 @@
                             <span style="font-size: 1rem; color: #64748b; font-weight: 600;">/ 100</span>
                         </div>
                         <p style="font-size: 0.9rem; color: #64748b; line-height: 1.6; margin: 0;" data-dynamic="reliability.dataAdequacy.description">
-                            収集したレビューサンプル数が統計的に十分であり、追加データによる評価変動リスクが低い状態です。
+                            収集した口コミサンプル数が統計的に十分であり、追加データによる評価変動リスクが低い状態です。
                         </p>
                     </div>
                     
@@ -897,7 +838,7 @@
                             <span style="font-size: 1rem; color: #64748b; font-weight: 600;">/ 100</span>
                         </div>
                         <p style="font-size: 0.9rem; color: #64748b; line-height: 1.6; margin: 0;" data-dynamic="reliability.freshness.description">
-                            直近30日以内に投稿されたレビューが多数を占め、最新のファームウェア・運用実態を反映しています。
+                            直近30日以内に投稿された口コミが多数を占め、最新のファームウェア・運用実態を反映しています。
                         </p>
                     </div>
                 </div>
@@ -939,7 +880,7 @@
         <section>
             <h2 class="section-title">
                 <i class="fas fa-tags"></i>
-                レビューキーワード
+                口コミキーワード
             </h2>
             <div class="card">
                 <div class="keywords-charts-grid">
@@ -986,7 +927,7 @@
                     <div>
                         <p style="font-weight: 600; color: #1e293b; margin-bottom: 0.5rem; font-size: 1rem;">スコア算出について</p>
                         <p style="color: #475569; font-size: 0.9rem; line-height: 1.6; margin: 0;">
-                            各ライフスタイルのスコアは、<strong>実際のユーザーレビューを分析</strong>し、それぞれの生活環境に重要な項目（吸引力、静音性、メンテナンス性など）を評価して算出しています。100点満点で、<strong>90点以上が非常におすすめ</strong>、80点以上が推奨レベルです。
+                            各ライフスタイルのスコアは、<strong>実際のユーザー口コミを分析</strong>し、それぞれの生活環境に重要な項目（吸引力、静音性、メンテナンス性など）を評価して算出しています。100点満点で、<strong>90点以上が非常におすすめ</strong>、80点以上が推奨レベルです。
                         </p>
                     </div>
                 </div>
@@ -1055,7 +996,7 @@
                 </div>
                 
                 <p class="reliability-intro-text" style="color: #334155; font-size: 0.95rem; line-height: 1.75; margin-bottom: 2rem; padding: 0 0.5rem;">
-                    以下の時間は、<strong>手動清掃（掃除機＋フローリングワイパー）と比較した場合の創出時間</strong>です。毎日の掃除から解放され、趣味や家族との時間など、より大切なことに使える時間が生まれます。
+                    以下の時間は、<strong>手動清掃（掃除機がけ＋クイックルワイパー等での水拭き）と比較した場合の創出時間</strong>です。毎日の掃除から解放され、趣味や家族との時間など、より大切なことに使える時間が生まれます。
                 </p>
                 
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
@@ -1066,7 +1007,8 @@
                             約<span data-dynamic="timeSaving.dailyMinutes">19</span>分
                         </p>
                         <p style="font-size: 0.85rem; color: #64748b; line-height: 1.5; margin: 0.75rem 0 0 0;">
-                            毎日、このぶんの時間が自由に
+                            掃除機がけ <span data-dynamic="timeSaving.vacuumMinutes">10</span>分 ＋
+                            水拭き <span data-dynamic="timeSaving.mopMinutes">9</span>分
                         </p>
                     </div>
                     
@@ -1091,17 +1033,6 @@
                             約<span data-dynamic="timeSaving.workDaysEquivalent">14.5</span>日分の自由時間
                         </p>
                     </div>
-                </div>
-                
-                <!-- 創出時間の根拠 -->
-                <div style="background: white; padding: 1.75rem; border-radius: 12px; border: 2px solid #e5e7eb;">
-                    <h3 style="font-size: 1.05rem; font-weight: 700; margin-bottom: 1.25rem; color: #1e293b; display: flex; align-items: center; gap: 0.5rem;">
-                        <i class="fas fa-calculator" style="color: #f59e0b;"></i>
-                        計算の根拠
-                    </h3>
-                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.7; margin: 0;" data-dynamic="timeSaving.methodology">
-                        手動清掃の場合、1日あたり約19分（掃除機10分＋フローリングワイパー9分）を要します。本製品はスケジュール設定により完全自動で動作するため、この時間がそのまま自由時間として創出されます。年間365日で計算すると約116時間（6,935分）となります。
-                    </p>
                 </div>
             </div>
         </section>
@@ -1171,34 +1102,6 @@
                     </h3>
                     <div style="display: grid; gap: 0.85rem;" data-dynamic="operationalCost.consumables">
                         <!-- product-loader.jsが自動生成 -->
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Data Quality -->
-        <section>
-            <h2 class="section-title">
-                <i class="fas fa-shield-alt"></i>
-                データ品質保証
-            </h2>
-            <div class="card">
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1.5rem; text-align: center;">
-                    <div>
-                        <p style="font-size: 2rem; font-weight: 900; color: var(--primary-color);"><span data-dynamic="dataQuality.totalReviews">100</span>件</p>
-                        <p style="color: var(--gray-600); font-size: 0.9rem;">総レビュー数</p>
-                    </div>
-                    <div>
-                        <p style="font-size: 2rem; font-weight: 900; color: var(--success-color);"><span data-dynamic="dataQuality.adoptedReviews">95</span>件</p>
-                        <p style="color: var(--gray-600); font-size: 0.9rem;">採用データ</p>
-                    </div>
-                    <div>
-                        <p style="font-size: 2rem; font-weight: 900; color: var(--danger-color);"><span data-dynamic="dataQuality.excludedReviews">5</span>件</p>
-                        <p style="color: var(--gray-600); font-size: 0.9rem;">除外データ</p>
-                    </div>
-                    <div>
-                        <p style="font-size: 2rem; font-weight: 900; color: var(--warning-color);"><span data-dynamic="dataQuality.trustScore">85.0</span>点</p>
-                        <p style="color: var(--gray-600); font-size: 0.9rem;">信頼スコア</p>
                     </div>
                 </div>
             </div>

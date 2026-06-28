@@ -43,7 +43,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     
     <!-- ナビゲーションCSS -->
-    <link rel="stylesheet" href="css/navigation.css?v=20260624c">
+    <link rel="stylesheet" href="css/navigation.css?v=20260624d">
     
     <style>
         * {
@@ -203,62 +203,14 @@
             flex-wrap: wrap;
             opacity: 0.95;
         }
-        
-        .rating-display {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-size: 1.1rem;
-            font-weight: 700;
-        }
-        
-        .stars i {
-            color: var(--warning-color);
-        }
-        
-        /* Container */
+/* Container */
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 3rem clamp(1.5rem, 5vw, 3rem);
             box-sizing: border-box;
         }
-        
-        /* Summary Stats */
-        .summary-stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
-            margin-bottom: 3rem;
-        }
-        
-        .stat-card {
-            background: var(--white);
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: var(--shadow);
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
-        
-        .stat-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .stat-number {
-            font-size: 2.5rem;
-            font-weight: 900;
-            color: var(--primary-color);
-            display: block;
-        }
-        
-        .stat-label {
-            color: var(--gray-600);
-            font-size: 0.9rem;
-            margin-top: 0.5rem;
-        }
-        
-        /* Section */
+/* Section */
         section {
             margin-bottom: 3rem;
         }
@@ -495,11 +447,6 @@
             .product-image-header {
                 margin: 0 auto;
             }
-            
-            .summary-stats {
-                grid-template-columns: 1fr;
-            }
-            
             .problems-grid {
                 grid-template-columns: 1fr;
             }
@@ -625,19 +572,11 @@
                     </div>
                     
                     <div class="product-meta">
-                        <div class="rating-display">
-                            <div class="stars" data-dynamic="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                            <span data-dynamic="overallRating">4.5</span>
-                            <span style="opacity: 0.8;">（<span data-dynamic="totalReviews">100</span>件）</span>
+                        <div style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: 20px; font-weight: 600;">
+                            総口コミ: <span data-dynamic="totalReviews">0</span>件
                         </div>
                         <div style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: 20px; font-weight: 600;">
-                            信頼度: <span data-dynamic="reliabilityScore">85.0</span>点
+                            ECサイト口コミの信頼度: <span data-dynamic="reliabilityScore">85.0</span>点
                         </div>
                     </div>
                 </div>
@@ -647,20 +586,6 @@
     
     <!-- Main Content -->
     <div class="container">
-        <!-- Summary Stats -->
-        <div class="summary-stats">
-            <div class="stat-card">
-                <span class="stat-number" data-dynamic="categoryC.userSatisfaction.score">90</span>
-                <p class="stat-label">ユーザー満足度</p>
-            </div>
-            <div class="stat-card">
-                <span class="stat-number" data-dynamic="categoryC.repurchaseIntention.percentage">85%</span>
-                <p class="stat-label">リピート意向</p>
-            </div>
-            <div class="stat-card">
-                <span class="stat-number" style="color: var(--danger-color);" data-dynamic="categoryC.failureRate.percentage">5%</span>
-                <p class="stat-label">不具合率</p>
-            </div>
         </div>
         
         <!-- Performance Radar -->
@@ -687,7 +612,7 @@
                 この製品の詳細情報を確認する
             </h3>
             <p style="color: #64748b; margin-bottom: 2rem; font-size: 1.05rem; line-height: 1.6;">
-                価格比較・在庫状況・最新レビューを各サイトでチェック<br>
+                価格比較・在庫状況・最新口コミを各サイトでチェック<br>
                 <span style="font-size: 0.9rem;">4大ECサイトの価格・ポイント還元率・配送情報を一括確認</span>
             </p>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; max-width: 1000px; margin: 0 auto;">
@@ -713,7 +638,7 @@
         <section>
             <h2 class="section-title">
                 <i class="fas fa-tags"></i>
-                レビューキーワード
+                口コミキーワード
             </h2>
             <div class="card">
                 <div class="keywords-charts-grid">
@@ -809,7 +734,7 @@
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1.5rem; text-align: center;">
                     <div>
                         <p style="font-size: 2rem; font-weight: 900; color: var(--primary-color);"><span data-dynamic="dataQuality.totalReviews">100</span>件</p>
-                        <p style="color: var(--gray-600); font-size: 0.9rem;">総レビュー数</p>
+                        <p style="color: var(--gray-600); font-size: 0.9rem;">総口コミ数</p>
                     </div>
                     <div>
                         <p style="font-size: 2rem; font-weight: 900; color: var(--success-color);"><span data-dynamic="dataQuality.adoptedReviews">95</span>件</p>
@@ -818,10 +743,6 @@
                     <div>
                         <p style="font-size: 2rem; font-weight: 900; color: var(--danger-color);"><span data-dynamic="dataQuality.excludedReviews">5</span>件</p>
                         <p style="color: var(--gray-600); font-size: 0.9rem;">除外データ</p>
-                    </div>
-                    <div>
-                        <p style="font-size: 2rem; font-weight: 900; color: var(--warning-color);"><span data-dynamic="dataQuality.trustScore">85.0</span>点</p>
-                        <p style="color: var(--gray-600); font-size: 0.9rem;">信頼スコア</p>
                     </div>
                 </div>
             </div>

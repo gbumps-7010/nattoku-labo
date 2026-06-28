@@ -1,327 +1,381 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://nattoku-labo.com/</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/about.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/privacy.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/contact-simple.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-04-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/d10-plus.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/d9-max-gen-2.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/deebot-mini.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/deebot-n30-plus.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/deebot-n30.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/deebot-t50-omni.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/deebot-t50s-omni.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/deebot-t80-omni.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/deebot-t90-omni.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/deebot-x11-omnicyclone.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/deebot-x8-pro-omni.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/ecovacs-deebot-n20-pro-plus.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/eufy-clean-x8-pro-with-self-empty-station.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/eufy-robot-vacuum-auto-empty-c10.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/eufy-robot-vacuum-omni-c20.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/eufy-robot-vacuum-omni-c28.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/eufy-robot-vacuum-omni-e25.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/eufy-robot-vacuum-omni-s1-pro.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/eufy-robovac-g10-hybrid.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/eufy-robovac-g30-hybrid.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/eufy-robovac-g30.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/eufy-robovac-x8-hybrid.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/eufy-x10-pro-omni.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/f10-plus.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/k10-pro.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/k11.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/l10s-ultra-gen-2.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/l10s-ultra-gen-3.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/l20-ultra-complete.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/l40-ultra-ae.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/l40s-pro-ultra.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/q10p.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/q10v-plus.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/q10v.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/qrevo-curv-2-flow.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/qrevo-curvc.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/qrevo-l.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/roomba-105-combo-autoempty.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/roomba-combo-10-max.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/roomba-max-705-combo-autowash.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/roomba-max-705-vac-autoempty.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/roomba-mini-autoempty.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/roomba-mini-slim-slimcharge.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/roomba-plus-405-combo-autowash.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/roomba-plus-505-combo-autowash.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/s10.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/s20.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/saros-10r.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/x30-ultra.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nattoku-labo.com/products/x50-ultra.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
 </urlset>

@@ -24,6 +24,9 @@ Disallow: /test/
 Disallow: /data-templates/
 Disallow: /tools/
 
+# 製品JSONデータ（API用・検索結果対象外）
+Disallow: /products/data/
+
 # テンプレートやテスト用ファイルを除外
 Disallow: /products/template-unified.html
 Disallow: /products/template-unified-old.html

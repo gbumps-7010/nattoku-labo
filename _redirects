@@ -1,4 +1,7 @@
 # Cloudflare Pages redirects
+# 0) www → 正規ドメイン（non-www。Search Console / sitemap と一致）
+https://www.nattoku-labo.com/* https://nattoku-labo.com/:splat 301
+
 # 1) 正規URL集約
 /index.html / 301
 /contact-simple /contact-simple.html 301
