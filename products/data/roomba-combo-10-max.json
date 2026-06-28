@@ -17,7 +17,7 @@
       "score": 57,
       "percentage": 82,
       "weight": 60,
-      "note": "42件のレビュー数は製品の基本的な傾向を把握するのに十分な水準です。今後のレビュー蓄積でさらに確度が高まります。"
+      "note": "42件の口コミ数は製品の基本的な傾向を把握するのに十分な水準です。今後の口コミ蓄積でさらに確度が高まります。"
     },
     "consistency": {
       "percentage": 82,
@@ -29,7 +29,7 @@
       "percentage": 92,
       "score": 92,
       "weight": 10,
-      "note": "2024年発売の最新モデルで、すべてのレビューが最新ファームウェアを反映した状態です。"
+      "note": "2024年発売の最新モデルで、すべての口コミが最新ファームウェアを反映した状態です。"
     }
   },
   "updateInfo": {
@@ -38,14 +38,15 @@
     "note": "最新ファームウェアv5.1.2により、AutoWash機能の動作音が軽減され、アプリの安定性が向上しています。"
   },
   "timeSaving": {
-    "dailyMinutes": 25,
-    "monthlyHours": 12.5,
-    "annualHours": 150,
-    "workDaysEquivalent": 18.75,
-    "methodology": "約30畳の居住空間を手動掃除機と水拭きで清掃し、さらにモップを洗浄・乾燥・メンテナンスする場合の平均時間（約25分/日）を基準に算出しています。"
+    "vacuumMinutes": 10,
+    "mopMinutes": 9,
+    "dailyMinutes": 19,
+    "monthlyHours": 9.5,
+    "annualHours": 115.6,
+    "workDaysEquivalent": 14.4
   },
   "operationalCost": {
-    "daily": 130,
+    "daily": 128,
     "dailyNote": "消耗品の実質的な日割りコスト",
     "monthly": 3900,
     "annual": 46800,
@@ -151,7 +152,7 @@
   },
   "radarChartData": {
     "labels": [
-      "床掃除",
+      "フローリング",
       "カーペット",
       "ペット毛",
       "静音性",
@@ -458,7 +459,7 @@
           "field": "ペット毛吸引力",
           "score": 92,
           "reviewCount": 0,
-          "comment": "レビュー0件の言及から、ペット毛吸引力について評価しています。"
+          "comment": "口コミ0件の言及から、ペット毛吸引力について評価しています。"
         },
         {
           "field": "床掃除",
@@ -502,7 +503,7 @@
           "field": "静音性",
           "score": 78,
           "reviewCount": 0,
-          "comment": "レビュー0件の言及から、静音性について評価しています。"
+          "comment": "口コミ0件の言及から、静音性について評価しています。"
         },
         {
           "field": "床掃除",

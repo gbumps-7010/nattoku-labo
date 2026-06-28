@@ -10,7 +10,7 @@
   "reliabilityScore": 91.9,
   "asin": "",
   "metaTitle": "Roborock Qrevo L 詳細分析 | 全自動で叶える快適な床掃除",
-  "metaDescription": "Roborock Qrevo Lの398件のレビューを解析。強力な吸引力、水拭き、自動ドックなど、日々の掃除を劇的に変える真実を公開。",
+  "metaDescription": "Roborock Qrevo Lの398件の口コミを解析。強力な吸引力、水拭き、自動ドックなど、日々の掃除を劇的に変える真実を公開。",
   "keywords": [
     "ロボット掃除機",
     "水拭き",
@@ -46,7 +46,7 @@
     "dataAdequacy": {
       "score": 95,
       "weight": 60,
-      "description": "レビュー数が398件と豊富で、製品の評価傾向を十分に把握できるデータ量です。"
+      "description": "口コミ数が398件と豊富で、製品の評価傾向を十分に把握できるデータ量です。"
     },
     "consistency": {
       "percentage": 83,
@@ -57,7 +57,7 @@
     "freshness": {
       "score": 100,
       "weight": 10,
-      "description": "直近30日以内のレビューが全体の5%を占め、最新のユーザー体験が反映されています。"
+      "description": "直近30日以内の口コミが全体の5%を占め、最新のユーザー体験が反映されています。"
     }
   },
   "updateInfo": {
@@ -66,11 +66,12 @@
     "note": "多くのユーザーが製品の賢さや進化に驚いており、継続的な機能改善が期待されます。"
   },
   "timeSaving": {
-    "dailyMinutes": 20,
-    "monthlyHours": 10,
-    "annualHours": 120,
-    "workDaysEquivalent": 15,
-    "methodology": "1日あたり20分の掃除時間削減を想定し、月間・年間、労働日換算で算出しています。"
+    "vacuumMinutes": 10,
+    "mopMinutes": 9,
+    "dailyMinutes": 19,
+    "monthlyHours": 9.5,
+    "annualHours": 115.6,
+    "workDaysEquivalent": 14.4
   },
   "operationalCost": {
     "daily": 34,
@@ -150,7 +151,7 @@
   },
   "radarChartData": {
     "labels": [
-      "床掃除",
+      "フローリング",
       "カーペット",
       "ペット毛",
       "静音性",
@@ -176,7 +177,7 @@
     "adoptedReviews": 374,
     "excludedReviews": 24,
     "trustScore": 91.9,
-    "comment": "全398件のレビューを詳細に分析。一部、製品と直接関係のないコメントや重複レビューを除外し、信頼性の高い統計データを算出しています。"
+    "comment": "全398件の口コミを詳細に分析。一部、製品と直接関係のないコメントや重複口コミを除外し、信頼性の高い統計データを算出しています。"
   },
   "reviewKeywords": {
     "positive": [

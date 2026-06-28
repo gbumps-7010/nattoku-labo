@@ -256,7 +256,7 @@ function updatePerformanceCards(perfData) {
             return `
                 <div class="performance-detail-card ${scoreClass}">
                     <h4>${item.label}: ${score}/100点</h4>
-                    <p class="rank-badge">${data.reviewCount}件のレビューから算出</p>
+                    <p class="rank-badge">${data.reviewCount}件の口コミから算出</p>
                     <p>${data.comment || '詳細評価情報なし'}</p>
                 </div>
             `;
@@ -810,7 +810,7 @@ function updateAttributeScores(data) {
                     }
                     
                     const commentText = item.comment || 
-                        (item.reviewCount ? `実数${item.reviewCount}件のレビューから算出` : '');
+                        (item.reviewCount ? `実数${item.reviewCount}件の口コミから算出` : '');
                     
                     return `
                         <div style="background: #f8fafc; padding: 1rem; border-radius: 8px; margin-bottom: 0.75rem; border-left: 4px solid ${scoreColor};">
@@ -853,7 +853,7 @@ function updateAttributeScores(data) {
                     
                     // commentがない場合は、reviewCountを表示
                     const commentText = fieldData.comment || 
-                        (fieldData.reviewCount ? `実数${fieldData.reviewCount}件のレビューから算出` : '');
+                        (fieldData.reviewCount ? `実数${fieldData.reviewCount}件の口コミから算出` : '');
                     
                     return `
                         <div style="background: #f8fafc; padding: 1rem; border-radius: 8px; margin-bottom: 0.75rem; border-left: 4px solid ${scoreColor};">
@@ -1211,7 +1211,7 @@ async function initializePage() {
     }
     
     console.log('✅ 製品データ読み込み成功:', data.productName);
-    console.log('📊 総レビュー数:', data.totalReviews, '件');
+    console.log('📊 総口コミ数:', data.totalReviews, '件');
     console.log('⭐ 総合評価:', data.overallRating, '/5.0');
     console.log('🔒 信頼度スコア:', data.reliabilityScore, '点');
     

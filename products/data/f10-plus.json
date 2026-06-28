@@ -10,7 +10,7 @@
   "reliabilityScore": 55.6,
   "asin": "",
   "metaTitle": "Dreame F10 Plus 詳細分析 | 高コスパで静音性に優れたロボット掃除機",
-  "metaDescription": "Dreame F10 Plusの12件のレビューを解析。静音性や吸引力、水拭き機能の真実を公開し、購入の参考に。",
+  "metaDescription": "Dreame F10 Plusの12件の口コミを解析。静音性や吸引力、水拭き機能の真実を公開し、購入の参考に。",
   "keywords": [
     "ロボット掃除機",
     "水拭き",
@@ -46,31 +46,30 @@
     "dataAdequacy": {
       "score": 45,
       "weight": 60,
-      "description": "レビュー総数が12件と少ないため、データ十分性のスコアは低めです。"
+      "description": "口コミ総数が12件と少ないため、データ十分性のスコアは低めです。"
     },
     "consistency": {
       "percentage": 62,
       "weight": 30,
-      "description": "楽天とAmazonでの評価に差が見られ、レビュー間の一貫性が低い傾向にあります。",
+      "description": "楽天とAmazonでの評価に差が見られ、口コミ間の一貫性が低い傾向にあります。",
       "score": 62
     },
     "freshness": {
       "score": 100,
       "weight": 10,
-      "description": "直近30日以内のレビューが全体の33%を占め、鮮度スコアは非常に高いです。"
+      "description": "直近30日以内の口コミが全体の33%を占め、鮮度スコアは非常に高いです。"
     }
   },
   "updateInfo": {
     "lastUpdated": "2026-06-15",
     "firmwareVersion": "",
-    "note": "レビューは概ね直近のものが多く、製品の現状を反映しています。一部故障報告もあります。"
+    "note": "口コミは概ね直近のものが多く、製品の現状を反映しています。一部故障報告もあります。"
   },
   "timeSaving": {
     "dailyMinutes": 19,
     "monthlyHours": 9.5,
     "annualHours": 114,
-    "workDaysEquivalent": 14.5,
-    "methodology": "ロボット掃除機が毎日19分稼働することで、手動掃除にかかる時間を節約できると仮定して算出。"
+    "workDaysEquivalent": 14.5
   },
   "operationalCost": {
     "daily": 59,
@@ -162,7 +161,7 @@
   },
   "radarChartData": {
     "labels": [
-      "床掃除",
+      "フローリング",
       "カーペット",
       "ペット毛",
       "静音性",
@@ -188,7 +187,7 @@
     "adoptedReviews": 10,
     "excludedReviews": 2,
     "trustScore": 55.6,
-    "comment": "全12件のレビューを分析し、製品の性能や不満点を詳細に評価しました。一部は特定の不具合ですが、傾向把握に採用。"
+    "comment": "全12件の口コミを分析し、製品の性能や不満点を詳細に評価しました。一部は特定の不具合ですが、傾向把握に採用。"
   },
   "reviewKeywords": {
     "positive": [
