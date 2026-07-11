@@ -78,7 +78,7 @@ function createNavigationBar() {
             </div>
             
             <div class="nav-menu" id="nav-menu-panel">
-                <a href="../index.html" class="nav-link">
+                <a href="/" class="nav-link">
                     <i class="fas fa-home"></i> ホーム
                 </a>
                 
@@ -88,7 +88,7 @@ function createNavigationBar() {
                     </button>
                     <div class="dropdown-menu products-dropdown">
                         ${ALL_PRODUCTS.map(p => `
-                            <a href="${p.id}.html" class="dropdown-item ${getCurrentProductId() === p.id ? 'active' : ''}">
+                            <a href="/products/${p.id}" class="dropdown-item ${getCurrentProductId() === p.id ? 'active' : ''}">
                                 <span class="product-name">${p.name}</span>
                                 <span class="product-meta">
                                     <span class="manufacturer">${p.manufacturer}</span>
@@ -134,7 +134,7 @@ function createNavigationBar() {
                     </div>
                 </div>
                 
-                <a href="../about.html" class="nav-link">
+                <a href="/about" class="nav-link">
                     <i class="fas fa-info-circle"></i> サイトについて
                 </a>
             </div>
@@ -187,7 +187,7 @@ function setupNavigationEvents() {
     document.querySelectorAll('.manufacturer-filter').forEach(item => {
         item.addEventListener('click', () => {
             const manufacturer = item.dataset.manufacturer;
-            const url = new URL('../index.html', window.location.href);
+            const url = new URL('/', window.location.origin);
             url.searchParams.set('manufacturer', manufacturer);
             window.location.href = url.pathname + url.search;
         });
@@ -196,7 +196,7 @@ function setupNavigationEvents() {
     // 価格帯フィルター → トップページの製品一覧へ
     document.querySelectorAll('.price-filter').forEach(item => {
         item.addEventListener('click', () => {
-            const url = new URL('../index.html', window.location.href);
+            const url = new URL('/', window.location.origin);
             const label = item.dataset.label;
             if (label) {
                 url.searchParams.set('price', label);
@@ -379,7 +379,7 @@ function createRelatedProductsSection() {
  */
 function createProductCard(product) {
     return `
-        <a href="${product.id}.html" class="related-product-card">
+        <a href="${product.id}" class="related-product-card">
             <div class="related-product-info">
                 <div class="related-manufacturer">${product.manufacturer}</div>
                 <div class="related-name">${product.name}</div>
@@ -419,7 +419,7 @@ function createFooter() {
                 <p style="margin: 0;"><strong>運営組織:</strong> GBumps</p>
                 <p style="margin: 0;"><strong>運営管理責任者:</strong> 代表 岩田 直人</p>
                 <p style="margin: 0;"><strong>所在地:</strong> 東京都北区</p>
-                <p style="margin: 0;"><strong>お問い合わせ:</strong> <a href="https://nattoku-labo.com/privacy.html" style="color: #93c5fd; text-decoration: underline;">https://nattoku-labo.com/privacy.html</a></p>
+                <p style="margin: 0;"><strong>お問い合わせ:</strong> <a href="https://nattoku-labo.com/privacy" style="color: #93c5fd; text-decoration: underline;">https://nattoku-labo.com/privacy</a></p>
                 <p style="margin: 0;"><strong>事業内容:</strong> 家電・ガジェットの比較分析メディア運営、Webライティング、コンテンツ制作</p>
             </div>
             <h3 style="font-size: 1.0rem; margin: 1.5rem 0 0.75rem 0; color: #f8fafc;">責任の所在に関する明記</h3>

@@ -8,11 +8,11 @@ Allow: /
 
 # 製品ページを明示的に許可
 Allow: /products/
-Allow: /products/*.html
+Allow: /products/*
 
 # プライバシーポリシーとAboutページを許可
-Allow: /privacy.html
-Allow: /about.html
+Allow: /privacy
+Allow: /about
 
 # トップは https://nattoku-labo.com/ を正規URLとする（index.html はホスティングで / へ 301）
 
