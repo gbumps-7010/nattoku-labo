@@ -34,28 +34,14 @@ function displayName(data) {
     : name;
 }
 
-function firstKeyword(data, kind) {
-  const item = data.reviewKeywords?.[kind]?.find((entry) => entry?.keyword);
-  return item ? String(item.keyword).trim() : "";
-}
-
-function firstComplaint(data) {
-  const item = data.topComplaints?.find((entry) => entry?.title);
-  return item ? String(item.title).trim() : "";
-}
-
 function buildMetadata(data) {
   const name = displayName(data);
-  const total = Number(data.totalReviews || 0);
-  const positive = firstKeyword(data, "positive");
-  const complaint = firstComplaint(data);
-  const title = `${name} 口コミ分析｜${total}件の評価・注意点`;
-
-  const details = [];
-  if (positive) details.push(`高評価の「${positive}」`);
-  if (complaint) details.push(`注意点「${complaint}」`);
-  const focus = details.length ? `${details.join("、")}を含め、` : "";
-  const description = `${name}の口コミ${total}件を分析。${focus}性能・信頼度・運用コストをデータで詳しく解説します。`;
+  const title = String(
+    data.metaTitle || `${data.productName} 詳細分析 | もう失敗しない。ナットクLabo`,
+  );
+  const description = String(
+    data.metaDescription || `${name}の口コミ統計分析。詳細データを公開。`,
+  );
 
   return { name, title, description };
 }
@@ -130,48 +116,6 @@ function formatValue(dottedPath, value) {
     return Number.isFinite(number) ? number.toLocaleString("ja-JP") : value;
   }
   return value;
-}
-
-function buildSummary(data, metadata) {
-  const positiveItems = (data.reviewKeywords?.positive || []).slice(0, 3);
-  const complaintItems = (data.topComplaints || []).slice(0, 3);
-
-  const positiveList = positiveItems.length
-    ? `<h3>高評価のポイント</h3>
-                <ul>${positiveItems
-                  .map(
-                    (item) =>
-                      `<li>${escapeHtml(item.keyword)}（${escapeHtml(item.count ?? 0)}件）</li>`,
-                  )
-                  .join("")}</ul>`
-    : "";
-  const complaintList = complaintItems.length
-    ? `<h3>購入前の注意点</h3>
-                <ul>${complaintItems
-                  .map(
-                    (item) =>
-                      `<li>${escapeHtml(item.title)}（${escapeHtml(item.reviewCount ?? 0)}件）</li>`,
-                  )
-                  .join("")}</ul>`
-    : "";
-
-  return `        <!-- SEO_PRERENDER_START -->
-        <section class="seo-prerender-summary" aria-labelledby="seo-summary-title" style="margin: 1.5rem 0 2.5rem; padding: 1.5rem; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px;">
-            <h2 id="seo-summary-title" style="margin: 0 0 1rem; color: #0f172a; font-size: 1.4rem;">${escapeHtml(metadata.name)}の口コミ分析概要</h2>
-            <p style="margin: 0 0 1rem; color: #334155; line-height: 1.8;">${escapeHtml(metadata.description)}</p>
-            <div class="seo-summary-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem;">
-                <div>
-                    <h3>分析データ</h3>
-                    <ul>
-                        <li>口コミ件数：${escapeHtml(data.totalReviews)}件</li>
-                        <li>総合評価：${escapeHtml(data.overallRating)} / 5</li>
-                        <li>口コミの信頼度：${escapeHtml(data.reliabilityScore)} / 100</li>
-                    </ul>
-                </div>
-                <div>${positiveList}${complaintList}</div>
-            </div>
-        </section>
-        <!-- SEO_PRERENDER_END -->`;
 }
 
 const mobileOverrides = `        /* MOBILE_LAYOUT_FIX_START */
@@ -271,11 +215,6 @@ const mobileOverrides = `        /* MOBILE_LAYOUT_FIX_START */
             [style*="minmax(280px"] {
                 grid-template-columns: 1fr !important;
             }
-
-            .seo-prerender-summary {
-                min-width: 0;
-                padding: 1rem !important;
-            }
         }
         /* MOBILE_LAYOUT_FIX_END */`;
 
@@ -364,16 +303,8 @@ function prerenderHtml(html, data) {
     html = replaceSimpleDynamic(html, dottedPath, formatValue(dottedPath, value));
   }
 
-  const summary = buildSummary(data, metadata);
   const existingSummary = /[ \t]*<!-- SEO_PRERENDER_START -->[\s\S]*?<!-- SEO_PRERENDER_END -->/;
-  if (existingSummary.test(html)) {
-    html = html.replace(existingSummary, summary);
-  } else {
-    html = html.replace(
-      /(\s*<section id="affiliate-cta")/,
-      `\n${summary}\n$1`,
-    );
-  }
+  html = html.replace(existingSummary, "");
 
   return html;
 }
@@ -399,7 +330,6 @@ function validatePrerenderedHtml(html, data) {
   const required = [
     `<link rel="canonical" href="https://nattoku-labo.com/products/${data.productId}">`,
     `data-dynamic="productName">${escapeHtml(data.productName)}</h1>`,
-    "<!-- SEO_PRERENDER_START -->",
     "/* MOBILE_LAYOUT_FIX_START */",
   ];
   for (const expected of required) {

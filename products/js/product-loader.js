@@ -38,18 +38,11 @@ function buildSeoMetadata(data) {
     const name = manufacturer && !productName.toLowerCase().includes(manufacturer.toLowerCase())
         ? `${manufacturer} ${productName}`
         : productName;
-    const totalReviews = Number(data.totalReviews || 0);
-    const positive = data.reviewKeywords?.positive?.find(item => item?.keyword)?.keyword;
-    const complaint = data.topComplaints?.find(item => item?.title)?.title;
-    const details = [];
-    if (positive) details.push(`高評価の「${positive}」`);
-    if (complaint) details.push(`注意点「${complaint}」`);
-    const focus = details.length ? `${details.join('、')}を含め、` : '';
 
     return {
         name,
-        title: `${name} 口コミ分析｜${totalReviews}件の評価・注意点`,
-        description: `${name}の口コミ${totalReviews}件を分析。${focus}性能・信頼度・運用コストをデータで詳しく解説します。`
+        title: data.metaTitle || `${productName} 詳細分析 | もう失敗しない。ナットクLabo`,
+        description: data.metaDescription || `${name}の口コミ統計分析。詳細データを公開。`
     };
 }
 
