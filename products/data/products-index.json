@@ -264,30 +264,6 @@
     }
   },
   {
-    "id": "ecovacs-deebot-n20-pro-plus",
-    "name": "DEEBOT N20 PRO PLUS",
-    "manufacturer": "ECOVACS",
-    "price": 69800,
-    "rating": 4.6,
-    "reviewCount": 278,
-    "totalReviewCount": 278,
-    "image": "",
-    "badges": [
-      "ECOVACS",
-      "紙パック不要",
-      "吸引力"
-    ],
-    "overallTrustScore": 88.1,
-    "specs": {
-      "suction": 96,
-      "mopping": 88,
-      "noise": 75,
-      "obstacle": 82,
-      "app": 80,
-      "maintenance": 98
-    }
-  },
-  {
     "id": "eufy-clean-x8-pro-with-self-empty-station",
     "name": "Eufy Clean X8 Pro with Self-Empty Station",
     "manufacturer": "Anker",
@@ -909,30 +885,6 @@
       "obstacle": 65,
       "app": 58,
       "maintenance": 72
-    }
-  },
-  {
-    "id": "roomba-combo-10-max",
-    "name": "Roomba Combo (ルンバ コンボ) 10 Max ロボット + AutoWash 充電ステーション",
-    "manufacturer": "iRobot",
-    "price": 197800,
-    "rating": 4.6,
-    "reviewCount": 42,
-    "totalReviewCount": 42,
-    "image": "",
-    "badges": [
-      "iRobot",
-      "モップ自動洗浄",
-      "手間いらず"
-    ],
-    "overallTrustScore": 68,
-    "specs": {
-      "suction": 96,
-      "mopping": 92,
-      "noise": 72,
-      "obstacle": 88,
-      "app": 90,
-      "maintenance": 98
     }
   },
   {

@@ -17,7 +17,6 @@
 - products/deebot-t50-omni.html
 - products/deebot-t80-omni.html
 - products/ecovacs-deebot-mini.html
-- products/ecovacs-deebot-n20-pro-plus.html
 - products/ecovacs-deebot-t90-omni.html
 - products/ecovacs-deebot-x8-pro-omni.html
 - products/eufy-clean-x8-pro-self-empty.html
@@ -31,7 +30,6 @@
 - products/roborock-qrevo-l.html
 - products/roborock-saros-10r.html
 - products/roomba-105-combo.html
-- products/roomba-combo-10-max.html
 - products/roomba-max-705-combo-autowash.html
 - products/roomba-max-705-vac-autoempty.html
 - products/roomba-mini-autoempty.html
@@ -47,7 +45,6 @@
 - products/data/deebot-t50-omni.json
 - products/data/deebot-t80-omni.json
 - products/data/ecovacs-deebot-mini.json
-- products/data/ecovacs-deebot-n20-pro-plus.json
 - products/data/ecovacs-deebot-t90-omni.json
 - products/data/ecovacs-deebot-x8-pro-omni.json
 - products/data/eufy-clean-x8-pro-self-empty.json
@@ -61,7 +58,6 @@
 - products/data/roborock-qrevo-l.json
 - products/data/roborock-saros-10r.json
 - products/data/roomba-105-combo.json
-- products/data/roomba-combo-10-max.json
 - products/data/roomba-max-705-combo-autowash.json
 - products/data/roomba-max-705-vac-autoempty.json
 - products/data/roomba-mini-autoempty.json
