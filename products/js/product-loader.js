@@ -1026,12 +1026,18 @@ function injectMoshimoIframe(container, html) {
         '<!DOCTYPE html><html><head><meta charset="utf-8">' +
         '<meta name="viewport" content="width=device-width,initial-scale=1">' +
         '<base target="_blank" rel="noopener noreferrer">' +
-        '<style>html,body{margin:0;padding:0;background:#fff;color:#0f172a;overflow-x:hidden}' +
-        'body{display:flex;flex-direction:column;align-items:center;box-sizing:border-box;min-width:100%}' +
-        '[id^="msmaflink-"]{max-width:100%;margin-left:auto;margin-right:auto}</style></head><body>' +
+        '<style>*,*::before,*::after{box-sizing:border-box}' +
+        'html,body{width:100%;max-width:100%;min-width:0;margin:0;padding:0;background:#fff;color:#0f172a;overflow-x:hidden}' +
+        'body{display:flex;flex-direction:column;align-items:stretch}' +
+        '[id^="msmaflink-"]{width:100%!important;max-width:100%!important;min-width:0!important;margin-left:auto;margin-right:auto}' +
+        '[id^="msmaflink-"] *{max-width:100%!important;min-width:0}' +
+        '[id^="msmaflink-"] table{width:100%!important;table-layout:fixed}' +
+        '[id^="msmaflink-"] img{height:auto!important;object-fit:contain}</style></head><body>' +
         safe +
         '</body></html>';
     iframe.style.width = '100%';
+    iframe.style.maxWidth = '100%';
+    iframe.style.minWidth = '0';
     iframe.style.border = '0';
     iframe.style.display = 'block';
     iframe.addEventListener('load', () => {

@@ -110,10 +110,22 @@ function replaceSimpleDynamic(html, dottedPath, value) {
 
 function formatValue(dottedPath, value) {
   if (value === undefined || value === null) return value;
-  if (
-    dottedPath === "price" ||
-    dottedPath.startsWith("operationalCost.")
-  ) {
+  const reliabilityWeights = {
+    "reliability.dataAdequacy.score": 60,
+    "reliability.consistency.percentage": 30,
+    "reliability.freshness.score": 10,
+  };
+  if (reliabilityWeights[dottedPath]) {
+    const number = Number(value);
+    if (!Number.isFinite(number)) return value;
+    const weighted = Math.round(number * reliabilityWeights[dottedPath] / 100 * 10) / 10;
+    return Number.isInteger(weighted) ? String(weighted) : weighted.toFixed(1);
+  }
+  if (dottedPath === "price") {
+    const number = Number(value);
+    return Number.isFinite(number) ? `約¥${number.toLocaleString("ja-JP")}` : value;
+  }
+  if (dottedPath.startsWith("operationalCost.")) {
     const number = Number(value);
     return Number.isFinite(number) ? number.toLocaleString("ja-JP") : value;
   }
@@ -340,6 +352,15 @@ function prerenderHtml(html, data) {
     let value = getNestedValue(data, dottedPath);
     if (value === undefined && dottedPath === "reliability.score") value = data.reliabilityScore;
     if (value === undefined && dottedPath === "dataQuality.totalReviews") value = data.totalReviews;
+    if (value === undefined && dottedPath === "reliability.dataAdequacy.score") {
+      value = data.reliability?.dataAdequacy?.percentage;
+    }
+    if (value === undefined && dottedPath === "reliability.consistency.percentage") {
+      value = data.reliability?.consistency?.score;
+    }
+    if (value === undefined && dottedPath === "reliability.freshness.score") {
+      value = data.reliability?.freshness?.percentage;
+    }
     html = replaceSimpleDynamic(html, dottedPath, formatValue(dottedPath, value));
   }
 
@@ -358,6 +379,23 @@ function prerenderHtml(html, data) {
 }
 
 function validatePrerenderedHtml(html, data) {
+  const weightedExpectations = [
+    [
+      "reliability.dataAdequacy.score",
+      data.reliability?.dataAdequacy?.score ?? data.reliability?.dataAdequacy?.percentage,
+      60,
+    ],
+    [
+      "reliability.consistency.percentage",
+      data.reliability?.consistency?.percentage ?? data.reliability?.consistency?.score,
+      30,
+    ],
+    [
+      "reliability.freshness.score",
+      data.reliability?.freshness?.score ?? data.reliability?.freshness?.percentage,
+      10,
+    ],
+  ];
   const required = [
     `<link rel="canonical" href="https://nattoku-labo.com/products/${data.productId}">`,
     `data-dynamic="productName">${escapeHtml(data.productName)}</h1>`,
@@ -367,6 +405,15 @@ function validatePrerenderedHtml(html, data) {
   for (const expected of required) {
     if (!html.includes(expected)) {
       throw new Error(`${data.productId}: prerender validation failed (${expected})`);
+    }
+  }
+  for (const [dottedPath, rawValue, weight] of weightedExpectations) {
+    if (rawValue === undefined || rawValue === null) continue;
+    const weighted = Math.round(Number(rawValue) * weight / 100 * 10) / 10;
+    const display = Number.isInteger(weighted) ? String(weighted) : weighted.toFixed(1);
+    const expected = `data-dynamic="${dottedPath}">${display}</span>`;
+    if (!html.includes(expected)) {
+      throw new Error(`${data.productId}: weighted reliability value is incorrect (${dottedPath})`);
     }
   }
 
