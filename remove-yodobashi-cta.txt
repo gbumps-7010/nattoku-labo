@@ -35,7 +35,7 @@
         </div>
         <div style="flex: 1; text-align: left;">
             <p style="font-weight: 800; font-size: 1.2rem; color: #1e293b; margin: 0;">ヨドバシ.com</p>
-            <p style="font-size: 0.85rem; color: #64748b; margin: 0; font-weight: 600;">✓ 高品質レビュー</p>
+            <p style="font-size: 0.85rem; color: #64748b; margin: 0; font-weight: 600;">✓ 高品質口コミ</p>
         </div>
     </div>
     <div style="background: linear-gradient(135deg, #e11b22 0%, #c01020 100%); color: white; padding: 1.1rem; border-radius: 10px; text-align: center; font-weight: 800; font-size: 1.05rem; box-shadow: 0 4px 12px rgba(225, 27, 34, 0.3);">

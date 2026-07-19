@@ -14,7 +14,7 @@
 powershell -ExecutionPolicy Bypass -File .\scripts\add-product-from-json.ps1 "C:\path\to\product.json"
 ```
 
-必須フィールドは `productId` `productName` `manufacturer` `overallRating` `totalReviews` `price` `reliabilityScore` です。  
+必須フィールドは `productId` `productName` `manufacturer` `totalReviews` `price` `reliabilityScore` です。  
 `imageUrl` は任意です（**製品写真を外部から取得・転載しない運用**の場合は省略または空で問題ありません。トップの製品一覧カードには画像欄は表示しません。JSON-LD も画像 URL が無いときは `image` を付けません）。  
 `cta.amazon` と `cta.rakuten` も必要です。
 
@@ -143,7 +143,7 @@ products/data/[product-id].json
 <!-- 製品数 -->
 <div class="stat-number">12</div> → <div class="stat-number">13</div>
 
-<!-- レビュー数（必要に応じて） -->
+<!-- 口コミ数（必要に応じて） -->
 <div class="stat-number">3,200+</div> → <div class="stat-number">3,500+</div>
 ```
 
@@ -176,14 +176,14 @@ PlaywrightConsoleCapture で製品ページをテスト：
 ### ✅ データ更新
 - [ ] `products-data.js` - 新製品エントリー追加
 - [ ] `README.md` - 製品数・製品リスト・最終更新日
-- [ ] `about.html` - 製品数・レビュー数（統計カード）
+- [ ] `about.html` - 製品数・口コミ数（統計カード）
 
 ### ✅ 動作確認（必須）
 - [ ] PlaywrightConsoleCapture で製品ページをテスト
 - [ ] 全9セクションが表示されることを確認：
   - [ ] ①この分析データの信頼度
   - [ ] ②総合性能分析（レーダーチャート）
-  - [ ] ③レビューキーワード
+  - [ ] ③口コミキーワード
   - [ ] ④主な不満点と対策
   - [ ] ⑤ライフスタイル別の相性診断
   - [ ] ⑥毎日の掃除から解放されて、自由な時間が増えます
@@ -225,7 +225,6 @@ PlaywrightConsoleCapture で製品ページをテスト：
   "manufacturer": "メーカー名",
   "modelNumber": "型番",
   "imageUrl": "",
-  "overallRating": 4.7,
   "totalReviews": 326,
   "price": 79980,
   "reliabilityScore": 89.42,
@@ -334,7 +333,7 @@ PlaywrightConsoleCapture で製品ページをテスト：
 ### PlaywrightConsoleCapture出力で以下を確認
 ```
 ✅ 製品データ読み込み成功: [製品名]
-✅ 総レビュー数: XXX 件
+✅ 総口コミ数: XXX 件
 ✅ 総合評価: X.X /5.0
 ✅ 信頼度スコア: XX 点
 ✅ data-dynamic 要素: XX個検出
@@ -358,12 +357,12 @@ PlaywrightConsoleCapture で製品ページをテスト：
 
 1. ✅ **この分析データの信頼度**（信頼度スコア、データ十分性、一致度、最新性）
 2. ✅ **総合性能分析**（レーダーチャート + 8項目の詳細）
-3. ✅ **レビューキーワード**（ポジティブ・ネガティブのチャート）
+3. ✅ **口コミキーワード**（ポジティブ・ネガティブのチャート）
 4. ✅ **主な不満点と対策**（TOP5の問題と解決策）
 5. ✅ **ライフスタイル別の相性診断**（ペット、集合住宅、共働き、ファミリー）
 6. ✅ **毎日の掃除から解放されて、自由な時間が増えます**（時間節約の可視化）
 7. ✅ **毎日使い続けるためのコスト（維持費）**（日額・月額・年額、消耗品リスト）
-8. ✅ **データ品質保証**（総レビュー数、採用データ、除外データ、信頼スコア）
+8. ✅ **データ品質保証**（総口コミ数、採用データ、除外データ、信頼スコア）
 9. ✅ **購入先を比較**（Amazon・楽天・Yahooの3つ）← ヨドバシなし
 
 ---
@@ -376,7 +375,7 @@ PlaywrightConsoleCapture で製品ページをテスト：
 | 2. JSON保存 | 30秒 | products/data/[id].json |
 | 3. HTMLコピー | 30秒 | template-unified.html → [id].html |
 | 4. products-data.js更新 | 1分 | 新製品エントリー追加 |
-| 5. README & about更新 | 30秒 | 製品数・レビュー数 |
+| 5. README & about更新 | 30秒 | 製品数・口コミ数 |
 | 6. 動作確認 | 30秒 | PlaywrightConsoleCapture |
 | **合計** | **約6分** | 🎉 完璧な製品ページ完成！ |
 
@@ -475,7 +474,7 @@ PlaywrightConsoleCapture で製品ページをテスト：
 - 製品名: [Product Name]
 - メーカー: [Manufacturer]
 - 価格: [price]
-- 総レビュー数: [totalReviews]
+- 総口コミ数: [totalReviews]
 - 総合評価: [rating]
 - ASIN: [asin]
 - 信頼性スコア: [reliabilityScore]

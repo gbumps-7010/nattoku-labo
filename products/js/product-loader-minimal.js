@@ -45,8 +45,7 @@ async function initializePage() {
     }
     
     console.log('✅ 製品データ読み込み成功:', data.productName);
-    console.log('📊 総レビュー数:', data.totalReviews, '件');
-    console.log('⭐ 総合評価:', data.overallRating, '/5.0');
+    console.log('📊 総口コミ数:', data.totalReviews, '件');
     
     // グローバルに保存
     window.productData = data;

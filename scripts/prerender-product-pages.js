@@ -58,13 +58,6 @@ function buildStructuredData(data, metadata) {
       "@type": "Brand",
       name: String(data.manufacturer || ""),
     },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: Number(data.overallRating),
-      reviewCount: Number(data.totalReviews),
-      bestRating: 5,
-      worstRating: 1,
-    },
     offers: {
       "@type": "Offer",
       url: `https://nattoku-labo.com/products/${data.productId}`,
@@ -247,6 +240,10 @@ function prerenderHtml(html, data) {
     /<script\s+type="application\/ld\+json">[\s\S]*?<\/script>/i,
     `<script type="application/ld+json">\n${structuredData}\n    </script>`,
   );
+  html = html.replace(
+    /(<p class="reliability-intro-text"[^>]*>)[\s\S]*?(<\/p>)/i,
+    '$1\n                    このスコアは、口コミデータの<strong>量が妥当か</strong>、<strong>使った人の意見がおおむね一致しているか</strong>、<strong>最新の状況を反映しているか</strong>を総合的に評価したものです。85点以上は「購入判断の参考として、信頼できる水準」と考えられます。\n                $2',
+  );
 
   html = html.replace(
     /<span class="product-title">[\s\S]*?<\/span>/,
@@ -355,7 +352,7 @@ function validatePrerenderedHtml(html, data) {
   if (
     jsonLd["@type"] !== "Product" ||
     jsonLd.url !== `https://nattoku-labo.com/products/${data.productId}` ||
-    Number(jsonLd.aggregateRating?.reviewCount) !== Number(data.totalReviews)
+    jsonLd.aggregateRating !== undefined
   ) {
     throw new Error(`${data.productId}: Product JSON-LD values do not match source JSON`);
   }

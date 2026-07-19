@@ -38,12 +38,24 @@ function pickUrl(...candidates) {
 
 function hasMoshimoAffiliate(data) {
   if (!data) return false;
+  if (typeof data.affiliate?.moshimo === "string" && data.affiliate.moshimo.trim()) return true;
   if (typeof data.moshimoAffiliateEasyLinkHtml === "string" && data.moshimoAffiliateEasyLinkHtml.trim()) return true;
   if (typeof data.moshimoAffiliateEasyLinkHtmlFile === "string" && data.moshimoAffiliateEasyLinkHtmlFile.trim()) return true;
   if (data.moshimoAffiliateEasyLink && typeof data.moshimoAffiliateEasyLink === "object") return true;
   if (typeof data.moshimoAffiliateHtml === "string" && data.moshimoAffiliateHtml.trim()) return true;
   if (typeof data.moshimoAffiliateHtmlFile === "string" && data.moshimoAffiliateHtmlFile.trim()) return true;
   return false;
+}
+
+function hasAffiliate(data) {
+  return hasMoshimoAffiliate(data) ||
+    (typeof data?.affiliate?.direct === "string" && data.affiliate.direct.trim() !== "");
+}
+
+function isPublishReady(data) {
+  return data?.affiliate?.hpPublish === true &&
+    String(data?.imageUrl || "").trim() !== "" &&
+    hasAffiliate(data);
 }
 
 function normalizeManufacturer(name) {
@@ -68,7 +80,7 @@ function getNoiseScore(data) {
 }
 
 function buildProductEntryLines(data) {
-  const required = ["productId", "productName", "manufacturer", "overallRating", "totalReviews", "price"];
+  const required = ["productId", "productName", "manufacturer", "totalReviews", "price"];
   const missing = required.filter((k) => data[k] === undefined || data[k] === null || data[k] === "");
   if (missing.length) {
     throw new Error(`Missing fields: ${missing.join(", ")}`);
@@ -84,8 +96,8 @@ function buildProductEntryLines(data) {
     data.rakutenUrl,
   );
   const listFallback = `https://nattoku-labo.com/products/${data.productId}`;
-  const finalAmazon = amazonUrl || (hasMoshimoAffiliate(data) ? listFallback : "");
-  const finalRakuten = rakutenUrl || (hasMoshimoAffiliate(data) ? listFallback : "");
+  const finalAmazon = amazonUrl || (hasAffiliate(data) ? listFallback : "");
+  const finalRakuten = rakutenUrl || (hasAffiliate(data) ? listFallback : "");
   if (!finalAmazon || !finalRakuten) {
     throw new Error(
       "CTA URLs or もしも (moshimoAffiliateHtmlFile / moshimoAffiliateEasyLinkHtml / moshimoAffiliateEasyLinkHtmlFile / moshimoAffiliateEasyLink / moshimoAffiliateHtml) が必要です",
@@ -110,7 +122,6 @@ function buildProductEntryLines(data) {
     `        name: '${escapeSingle(data.productName)}',`,
     `        manufacturer: '${escapeSingle(manufacturer)}',`,
     `        price: ${Number(data.price)},`,
-    `        rating: ${Number(data.overallRating)},`,
     `        reviewCount: ${Number(data.totalReviews)},`,
     `        totalReviewCount: ${Number(data.totalReviews)},`,
     `        image: '${escapeSingle(catalogImage)}',`,
@@ -173,16 +184,16 @@ function rebuildNavigationFromDataDir() {
       navErrors.push(`${file}: parse error: ${e.message}`);
       continue;
     }
+    if (!isPublishReady(data)) continue;
     const id = data.productId;
     const name = data.productName;
     const price = Number(data.price);
-    const rating = Number(data.overallRating);
     if (!id || name === undefined || name === null || String(name).trim() === "") {
       navErrors.push(`${file}: missing productId or productName`);
       continue;
     }
-    if (!Number.isFinite(price) || !Number.isFinite(rating)) {
-      navErrors.push(`${file}: missing or invalid price / overallRating`);
+    if (!Number.isFinite(price)) {
+      navErrors.push(`${file}: missing or invalid price`);
       continue;
     }
     const manufacturer = normalizeManufacturer(data.manufacturer);
@@ -192,7 +203,6 @@ function rebuildNavigationFromDataDir() {
       name: String(name),
       manufacturer,
       price,
-      rating,
     });
   }
 
@@ -200,7 +210,7 @@ function rebuildNavigationFromDataDir() {
 
   const productLines = items.map(
     (p) =>
-      `    { id: '${escapeSingle(p.id)}', name: '${escapeSingle(p.name)}', manufacturer: '${escapeSingle(p.manufacturer)}', price: ${p.price}, rating: ${p.rating} }`,
+      `    { id: '${escapeSingle(p.id)}', name: '${escapeSingle(p.name)}', manufacturer: '${escapeSingle(p.manufacturer)}', price: ${p.price} }`,
   );
 
   const manList = Array.from(manufacturersSet).sort();
@@ -240,6 +250,7 @@ function rebuildProductsIndexFromDataDir() {
     const data = JSON.parse(fs.readFileSync(path.join(DATA_DIR, file), "utf8"));
     const productId = String(data.productId || "").trim();
     if (!productId) continue;
+    if (!isPublishReady(data)) continue;
     if (!fs.existsSync(path.join(ROOT, "products", `${productId}.html`))) continue;
 
     const positiveKeywords = (data.reviewKeywords?.positive || [])
@@ -257,7 +268,6 @@ function rebuildProductsIndexFromDataDir() {
       name: String(data.productName || productId),
       manufacturer: normalizeManufacturer(data.manufacturer),
       price: Number(data.price || 0),
-      rating: Number(data.overallRating || 0),
       reviewCount: Number(data.totalReviews || 0),
       totalReviewCount: Number(data.totalReviews || 0),
       image: String(data.imageUrl || "").trim(),
@@ -279,70 +289,10 @@ function rebuildProductsIndexFromDataDir() {
 }
 
 function main() {
-  let content = fs.readFileSync(PRODUCTS_DATA_PATH, "utf8");
-  const existingIds = new Set(
-    [...content.matchAll(/id:\s*'([^']+)'/g)].map((m) => m[1]),
-  );
-
-  const filterMarker = "// フィルター用のマスターデータ";
-  const idxFilter = content.indexOf(filterMarker);
-  if (idxFilter === -1) {
-    throw new Error(`products-data.js: marker not found: ${filterMarker}`);
-  }
-
-  const head = content.slice(0, idxFilter);
-  const tail = content.slice(idxFilter);
-  const closeIdx = head.lastIndexOf("\n];");
-  if (closeIdx === -1) {
-    throw new Error("products-data.js: could not find productsData array closing");
-  }
-
-  const jsonFiles = fs
-    .readdirSync(DATA_DIR)
-    .filter((f) => f.endsWith(".json") && f !== "products-index.json")
-    .sort();
-  const newBlocks = [];
-  const errors = [];
-
-  for (const file of jsonFiles) {
-    const full = path.join(DATA_DIR, file);
-    let data;
-    try {
-      data = JSON.parse(fs.readFileSync(full, "utf8"));
-    } catch (e) {
-      errors.push(`${file}: parse error: ${e.message}`);
-      continue;
-    }
-    if (!data.productId || existingIds.has(data.productId)) {
-      continue;
-    }
-    try {
-      newBlocks.push(buildProductEntryLines(data));
-      existingIds.add(data.productId);
-    } catch (e) {
-      errors.push(`${file}: ${e.message}`);
-    }
-  }
-
-  if (newBlocks.length === 0) {
-    console.log("✅ No missing products (products-data.js already matches JSON set).");
-  } else {
-    const beforeClose = head.slice(0, closeIdx);
-    const afterClose = head.slice(closeIdx);
-    content = beforeClose + ",\n" + newBlocks.join(",\n") + afterClose + tail;
-    console.log(`✅ Appended ${newBlocks.length} product(s) from JSON.`);
-  }
-
-  content = patchManufacturers(content);
-  fs.writeFileSync(PRODUCTS_DATA_PATH, content, "utf8");
-
+  // 公開一覧は products-index.json と navigation.js を正とする。
+  // 旧 products-data.js へ追記すると旧IDとの重複が発生するため更新しない。
   rebuildNavigationFromDataDir();
   rebuildProductsIndexFromDataDir();
-
-  if (errors.length) {
-    console.warn("⚠️ Skipped:");
-    errors.forEach((e) => console.warn(`  - ${e}`));
-  }
 }
 
 main();

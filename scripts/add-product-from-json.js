@@ -25,7 +25,6 @@ function validateProductJson(data) {
     "productId",
     "productName",
     "manufacturer",
-    "overallRating",
     "totalReviews",
     "price",
     "reliabilityScore",
@@ -34,7 +33,7 @@ function validateProductJson(data) {
   if (missing.length > 0) {
     throw new Error(`Missing required fields: ${missing.join(", ")}`);
   }
-  const numericFields = ["overallRating", "totalReviews", "price", "reliabilityScore"];
+  const numericFields = ["totalReviews", "price", "reliabilityScore"];
   const invalidNumbers = numericFields.filter((key) => Number.isNaN(Number(data[key])));
   if (invalidNumbers.length > 0) {
     throw new Error(`Numeric fields must be valid numbers: ${invalidNumbers.join(", ")}`);
@@ -87,8 +86,8 @@ function buildProductEntry(data) {
     data.rakutenUrl,
   );
   const listFallback = `https://nattoku-labo.com/products/${data.productId}`;
-  const finalAmazon = amazonUrl || (hasMoshimoAffiliate(data) ? listFallback : "");
-  const finalRakuten = rakutenUrl || (hasMoshimoAffiliate(data) ? listFallback : "");
+  const finalAmazon = amazonUrl || (hasAffiliate(data) ? listFallback : "");
+  const finalRakuten = rakutenUrl || (hasAffiliate(data) ? listFallback : "");
   if (!finalAmazon || !finalRakuten) {
     throw new Error(
       "products-data 用のリンクが必要です: cta.amazon と cta.rakuten（URL）、またはもしも moshimoAffiliateHtmlFile / moshimoAffiliateEasyLinkHtml / moshimoAffiliateEasyLinkHtmlFile / moshimoAffiliateEasyLink / moshimoAffiliateHtml",
@@ -101,7 +100,6 @@ function buildProductEntry(data) {
     `        name: '${escapeSingle(data.productName)}',`,
     `        manufacturer: '${escapeSingle(data.manufacturer)}',`,
     `        price: ${Number(data.price)},`,
-    `        rating: ${Number(data.overallRating)},`,
     `        reviewCount: ${Number(data.totalReviews)},`,
     `        totalReviewCount: ${Number(data.totalReviews)},`,
     `        image: '${escapeSingle(data.imageUrl != null ? String(data.imageUrl).trim() : "")}',`,
@@ -137,12 +135,18 @@ function pickUrl(...candidates) {
 
 function hasMoshimoAffiliate(data) {
   if (!data) return false;
+  if (typeof data.affiliate?.moshimo === "string" && data.affiliate.moshimo.trim()) return true;
   if (typeof data.moshimoAffiliateEasyLinkHtml === "string" && data.moshimoAffiliateEasyLinkHtml.trim()) return true;
   if (typeof data.moshimoAffiliateEasyLinkHtmlFile === "string" && data.moshimoAffiliateEasyLinkHtmlFile.trim()) return true;
   if (data.moshimoAffiliateEasyLink && typeof data.moshimoAffiliateEasyLink === "object") return true;
   if (typeof data.moshimoAffiliateHtml === "string" && data.moshimoAffiliateHtml.trim()) return true;
   if (typeof data.moshimoAffiliateHtmlFile === "string" && data.moshimoAffiliateHtmlFile.trim()) return true;
   return false;
+}
+
+function hasAffiliate(data) {
+  return hasMoshimoAffiliate(data) ||
+    (typeof data?.affiliate?.direct === "string" && data.affiliate.direct.trim() !== "");
 }
 
 function updateProductsDataJs(data) {

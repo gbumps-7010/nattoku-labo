@@ -69,7 +69,7 @@ powershell -ExecutionPolicy Bypass -File .\scripts\add-product-from-json.ps1 "C:
 - `dataQuality` の中に **`reliabilityScore`** がある。  
 - `dataQuality` が `totalReviews`+`comment`+`reliabilityScore` 止まりで、**`sampledReviews` 等6キーが揃っていない**。  
 - `comment` / `metaDescription` に **「楽天」「Yahoo」「Amazon」等のEC固有名**が入っている。  
-- トップに **`productId` が無い**、または `overallRating` / `reliabilityScore` が**トップレベル**にない。  
+- トップに **`productId` が無い**、または `reliabilityScore` が**トップレベル**にない。  
 - サイト用の **`categoryC` や `radarChartData` や `timeSaving` を省略**し、「性能ブロックだけ」とする。  
 - **`timeSaving` または `operationalCost` を省略**する、または**数値フィールドが空・ゼロだけ**で中身の根拠がない（テンプレの**時短・運用コスト枠が空**になる。完成品として不十分）。
 
@@ -80,7 +80,7 @@ powershell -ExecutionPolicy Bypass -File .\scripts\add-product-from-json.ps1 "C:
 
 ## 3. 正しいトップレベル（必須キーの所在）
 - **`reliabilityScore` は最上位**に1つだけ。`dataQuality` 内**禁止**。
-- 必須7キー（**すべて数値型が正しい**）: `productId`, `productName`, `manufacturer`, `overallRating`, `totalReviews`, `price`, `reliabilityScore`  
+- 必須6キー（**数値項目は数値型が正しい**）: `productId`, `productName`, `manufacturer`, `totalReviews`, `price`, `reliabilityScore`  
 - `productId` は `^[a-z0-9-]+$`（例: `deebot-n30`）。  
 - 付け足し: `modelNumber`, `asin`（不明な `""`）, `imageUrl`（使わないなら `""`）, `metaTitle`, `metaDescription`
 

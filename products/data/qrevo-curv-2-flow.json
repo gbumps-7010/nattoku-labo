@@ -3,11 +3,11 @@
   "productName": "Qrevo Curv 2 Flow",
   "manufacturer": "Roborock",
   "modelNumber": "Qrevo Curv 2 Flow",
-  "imageUrl": "",
+  "imageUrl": "https://thumbnail.image.rakuten.co.jp/@0_mall/lien0605/cabinet/g/4/e9d3eqcf0a-1.jpg",
   "overallRating": 4.14,
   "totalReviews": 10,
   "price": 119900,
-  "reliabilityScore": 64.9,
+  "reliabilityScore": 52.6,
   "asin": "",
   "metaTitle": "Roborock Qrevo Curv 2 Flow 詳細分析 | 最新ローラーモップ搭載ロボット掃除機の真実",
   "metaDescription": "Roborock Qrevo Curv 2 Flowの10件の口コミを解析。強力な吸引力と進化した水拭き性能、ペット対応機能の真実を公開。",
@@ -43,17 +43,17 @@
     }
   },
   "reliability": {
-    "score": 64.9,
+    "score": 52.6,
     "dataAdequacy": {
-      "score": 44,
+      "score": 40,
       "weight": 60,
       "description": "口コミ総数が10件と少ないため、データ十分性のスコアは40点です。より多くのデータで精度向上を期待します。"
     },
     "consistency": {
-      "percentage": 95,
+      "percentage": 62,
       "weight": 30,
       "description": "提供された口コミデータのみではサイト間の評価差を算出できないため、一貫性は100%と仮定しています。",
-      "score": 95
+      "score": 62
     },
     "freshness": {
       "score": 100,
@@ -158,7 +158,7 @@
   },
   "radarChartData": {
     "labels": [
-      "フローリング",
+      "床掃除",
       "カーペット",
       "ペット毛",
       "静音性",
@@ -183,11 +183,15 @@
     "sampledReviews": 10,
     "adoptedReviews": 10,
     "excludedReviews": 0,
-    "trustScore": 64.9,
+    "trustScore": 52.6,
     "comment": "提供された10件の口コミを全て分析に採用。データ量は少ないものの、最新の口コミが含まれており、信頼性スコアは64点です。"
   },
   "reviewKeywords": {
     "positive": [
+      {
+        "keyword": "水拭き・拭き掃除が良い",
+        "count": 6
+      },
       {
         "keyword": "吸引力が高い",
         "count": 6
@@ -201,11 +205,15 @@
         "count": 1
       },
       {
+        "keyword": "床がサラサラ・ピカピカ",
+        "count": 1
+      },
+      {
         "keyword": "静かで快適",
         "count": 1
       },
       {
-        "keyword": "床がサラサラ・ピカピカ",
+        "keyword": "マッピング・ルートが賢い",
         "count": 1
       }
     ],
@@ -431,7 +439,7 @@
   },
   "resaleValue": null,
   "affiliate": {
-    "moshimo": "",
+    "moshimo": "<!-- START MoshimoAffiliateEasyLink -->\r\n<script type=\"text/javascript\">\r\n(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;\r\nb[a]=b[a]||function(){arguments.currentScript=c.currentScript\r\n||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};\r\nc.getElementById(a)||(d=c.createElement(f),d.src=g,\r\nd.id=a,e=c.getElementsByTagName(\"body\")[0],e.appendChild(d))})\r\n(window,document,\"script\",\"//dn.msmstatic.com/site/cardlink/bundle.js?20220329\",\"msmaflink\");\r\nmsmaflink({\"n\":\"roborock (ロボロック) Qrevo Curv 2 Flow ロボット掃除機 水拭き両用【26年革新ローラーモップカバー搭載】特大伸縮ワイドローラー AI汚れ認識 ペット自動認識\\u0026スナップ 活水洗浄 2.5倍モップ圧 …\",\"b\":\"\",\"t\":\"\",\"d\":\"https:\\/\\/thumbnail.image.rakuten.co.jp\",\"c_p\":\"\",\"p\":[\"\\/@0_mall\\/lien0605\\/cabinet\\/g\\/4\\/e9d3eqcf0a-1.jpg\"],\"u\":{\"u\":\"https:\\/\\/item.rakuten.co.jp\\/lien0605\\/gr-e9d3eqcf0a\\/\",\"t\":\"rakuten\",\"r_v\":\"\"},\"v\":\"2.1\",\"b_l\":[{\"id\":1,\"u_tx\":\"楽天市場で見る\",\"u_bc\":\"#f76956\",\"u_url\":\"https:\\/\\/item.rakuten.co.jp\\/lien0605\\/gr-e9d3eqcf0a\\/\",\"a_id\":5483003,\"p_id\":54,\"pl_id\":27059,\"pc_id\":54,\"s_n\":\"rakuten\",\"u_so\":1},{\"id\":2,\"u_tx\":\"Yahoo!ショッピングで見る\",\"u_bc\":\"#66a7ff\",\"u_url\":\"https:\\/\\/shopping.yahoo.co.jp\\/search?first=1\\u0026p=roborock%20(%E3%83%AD%E3%83%9C%E3%83%AD%E3%83%83%E3%82%AF)%20Qrevo%20Curv%202%20Flow%20%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%20%E6%B0%B4%E6%8B%AD%E3%81%8D%E4%B8%A1%E7%94%A8%E3%80%9026%E5%B9%B4%E9%9D%A9%E6%96%B0%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC%E3%83%A2%E3%83%83%E3%83%97%E3%82%AB%E3%83%90%E3%83%BC%E6%90%AD%E8%BC%89%E3%80%91%E7%89%B9%E5%A4%A7%E4%BC%B8%E7%B8%AE%E3%83%AF%E3%82%A4%E3%83%89%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC%20AI%E6%B1%9A%E3%82%8C%E8%AA%8D%E8%AD%98%20%E3%83%9A%E3%83%83%E3%83%88%E8%87%AA%E5%8B%95%E8%AA%8D%E8%AD%98%26%E3%82%B9%E3%83%8A%E3%83%83%E3%83%97%20%E6%B4%BB%E6%B0%B4%E6%B4%97%E6%B5%84%202.5%E5%80%8D%E3%83%A2%E3%83%83%E3%83%97%E5%9C%A7%20%E2%80%A6\",\"a_id\":5483010,\"p_id\":1225,\"pl_id\":27061,\"pc_id\":1925,\"s_n\":\"yahoo\",\"u_so\":2}],\"eid\":\"qjmbc\",\"s\":\"s\"});\r\n</script>\r\n<div id=\"msmaflink-qjmbc\">リンク</div>\r\n<!-- MoshimoAffiliateEasyLink END -->",
     "direct": "",
     "hpPublish": false
   }

@@ -2597,8 +2597,3 @@ const priceRanges = [
     { label: '5万円〜10万円', min: 50000, max: 100000 },
     { label: '10万円以上', min: 100000, max: Infinity }
 ];
-const ratingFilters = [
-    { label: 'すべて', min: 0 },
-    { label: '★4.0以上', min: 4.0 },
-    { label: '★3.5以上', min: 3.5 }
-];

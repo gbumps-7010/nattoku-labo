@@ -68,13 +68,6 @@ function updateMetadata(data) {
             "@type": "Brand",
             "name": data.manufacturer
         },
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": Number(data.overallRating),
-            "reviewCount": Number(data.totalReviews),
-            "bestRating": 5,
-            "worstRating": 1
-        },
         "offers": {
             "@type": "Offer",
             "url": productUrl,
@@ -1240,7 +1233,6 @@ async function initializePage() {
     
     console.log('✅ 製品データ読み込み成功:', data.productName);
     console.log('📊 総口コミ数:', data.totalReviews, '件');
-    console.log('⭐ 総合評価:', data.overallRating, '/5.0');
     console.log('🔒 信頼度スコア:', data.reliabilityScore, '点');
     
     try {

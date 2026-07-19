@@ -17,7 +17,7 @@
 
 ## 必須：サイトが読むが、分析ブロック以外のフィールド
 
-以下は `products/js/product-loader.js` および `products/template-unified.html` が参照します。**既存の計算式・レビュー集計ルールは変えず**、出力 JSON に**必ず含める**こと。
+以下は `products/js/product-loader.js` および `products/template-unified.html` が参照します。**既存の計算式・口コミ集計ルールは変えず**、出力 JSON に**必ず含める**こと。
 
 ### メタ・基本
 
@@ -27,7 +27,6 @@
 | `productName` | string | |
 | `manufacturer` | string | |
 | `modelNumber` | string | 不明時は製品名から推測可能な表記 |
-| `overallRating` | number | 例: 4.5 |
 | `totalReviews` | number | 既存ルールの分母 |
 | `price` | number | 円・整数 |
 | `reliabilityScore` | number | 既存の信頼度計算結果（トップレベル） |
@@ -63,7 +62,7 @@
 
 ```json
 "radarChartData": {
-  "labels": ["床掃除", "カーペット", "ペット毛", "静音性", "段差", "メンテ", "アプリ", "電池"],
+  "labels": ["フローリング", "カーペット", "ペット毛", "静音性", "段差", "メンテ", "アプリ", "電池"],
   "values": [ /* 8個。順序は labels と performanceAnalysis の8軸に対応 */ ]
 }
 ```
