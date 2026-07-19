@@ -7,6 +7,16 @@ https://www.nattoku-labo.com/* https://nattoku-labo.com/:splat 301
 /contact-simple /privacy 301
 /contact-simple.html /privacy 301
 
+# 公開不要な複製・テンプレートURLを正規ページへ集約
+/deploy-files/products/* /products/:splat 301
+/deploy-files/* / 301
+/products/template-unified / 301
+/products/template-unified.html / 301
+/products/template-unified-old / 301
+/products/template-unified-old.html / 301
+/products/test-js / 301
+/products/test-js.html / 301
+
 # 2) スラッグ移行（旧メーカー接頭辞付き → 新スラッグ） 301
 /products/anker-eufy-c10.html /products/eufy-robot-vacuum-auto-empty-c10 301
 /products/anker-eufy-c10 /products/eufy-robot-vacuum-auto-empty-c10 301

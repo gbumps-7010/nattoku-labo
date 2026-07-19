@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 /**
  * sitemap.xml を products/*.html とルートの公開ページから再生成する。
+ * Cloudflare Pages の正規URLは拡張子なし。
  * Usage: node scripts/generate-sitemap.js
  */
 "use strict";
@@ -54,15 +55,14 @@ urlEntries.push({
 
 // ルートの公開HTML（存在するものだけ）
 const rootPages = [
-  { file: "about.html", changefreq: "monthly", priority: "0.8" },
-  { file: "privacy.html", changefreq: "monthly", priority: "0.5" },
-  { file: "contact-simple.html", changefreq: "monthly", priority: "0.6" },
+  { file: "about.html", slug: "about", changefreq: "monthly", priority: "0.8" },
+  { file: "privacy.html", slug: "privacy", changefreq: "monthly", priority: "0.5" },
 ];
 for (const p of rootPages) {
   const ab = path.join(ROOT, p.file);
   if (fs.existsSync(ab)) {
     urlEntries.push({
-      loc: `${BASE}/${p.file}`,
+      loc: `${BASE}/${p.slug}`,
       lastmod: lastmodFile(ab),
       changefreq: p.changefreq,
       priority: p.priority,
@@ -80,7 +80,7 @@ const productFiles = fs
 for (const f of productFiles) {
   const ab = path.join(productsDir, f);
   urlEntries.push({
-    loc: `${BASE}/products/${f}`,
+    loc: `${BASE}/products/${path.basename(f, ".html")}`,
     lastmod: lastmodFile(ab),
     changefreq: "weekly",
     priority: "0.9",

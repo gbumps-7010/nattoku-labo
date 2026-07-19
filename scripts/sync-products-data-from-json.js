@@ -82,7 +82,7 @@ function buildProductEntryLines(data) {
     data.cta?.rakutenUrl,
     data.rakutenUrl,
   );
-  const listFallback = `https://nattoku-labo.com/products/${data.productId}.html`;
+  const listFallback = `https://nattoku-labo.com/products/${data.productId}`;
   const finalAmazon = amazonUrl || (hasMoshimoAffiliate(data) ? listFallback : "");
   const finalRakuten = rakutenUrl || (hasMoshimoAffiliate(data) ? listFallback : "");
   if (!finalAmazon || !finalRakuten) {

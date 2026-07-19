@@ -24,13 +24,11 @@ Disallow: /test/
 Disallow: /data-templates/
 Disallow: /tools/
 
-# 製品JSONデータ（API用・検索結果対象外）
-Disallow: /products/data/
+# 製品JSON・広告断片は _headers の X-Robots-Tag で noindex
+# Googleがnoindexを確認できるよう、robots.txt ではブロックしない
 
-# テンプレートやテスト用ファイルを除外
-Disallow: /products/template-unified.html
-Disallow: /products/template-unified-old.html
-Disallow: /products/test-js.html
+# 旧テンプレート・テストURLは _redirects で正規ページへ301集約
+# Googleがリダイレクトを確認できるよう、robots.txt ではブロックしない
 
 # サイトマップの場所
 Sitemap: https://nattoku-labo.com/sitemap.xml
