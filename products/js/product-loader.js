@@ -32,38 +32,67 @@ async function loadProductData(productId) {
     }
 }
 
+function buildSeoMetadata(data) {
+    const manufacturer = String(data.manufacturer || '').trim();
+    const productName = String(data.productName || data.productId).trim();
+    const name = manufacturer && !productName.toLowerCase().includes(manufacturer.toLowerCase())
+        ? `${manufacturer} ${productName}`
+        : productName;
+    const totalReviews = Number(data.totalReviews || 0);
+    const positive = data.reviewKeywords?.positive?.find(item => item?.keyword)?.keyword;
+    const complaint = data.topComplaints?.find(item => item?.title)?.title;
+    const details = [];
+    if (positive) details.push(`高評価の「${positive}」`);
+    if (complaint) details.push(`注意点「${complaint}」`);
+    const focus = details.length ? `${details.join('、')}を含め、` : '';
+
+    return {
+        name,
+        title: `${name} 口コミ分析｜${totalReviews}件の評価・注意点`,
+        description: `${name}の口コミ${totalReviews}件を分析。${focus}性能・信頼度・運用コストをデータで詳しく解説します。`
+    };
+}
+
 // 2. メタデータ更新
 function updateMetadata(data) {
-    document.title = data.metaTitle || `${data.productName} 詳細分析 | もう失敗しない。ナットクLabo`;
+    const metadata = buildSeoMetadata(data);
+    const productUrl = `https://nattoku-labo.com/products/${data.productId}`;
+    document.title = metadata.title;
     
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-        metaDesc.setAttribute('content', data.metaDescription);
+        metaDesc.setAttribute('content', metadata.description);
     }
     
     const structuredData = {
         "@context": "https://schema.org",
         "@type": "Product",
-        "name": data.productName,
-        "description": data.metaDescription,
+        "@id": `${productUrl}#product`,
+        "url": productUrl,
+        "name": metadata.name,
+        "description": metadata.description,
         "brand": {
             "@type": "Brand",
             "name": data.manufacturer
         },
         "aggregateRating": {
             "@type": "AggregateRating",
-            "ratingValue": Number(data.overallRating).toFixed(2),
-            "reviewCount": data.totalReviews.toString(),
-            "bestRating": "5",
-            "worstRating": "1"
+            "ratingValue": Number(data.overallRating),
+            "reviewCount": Number(data.totalReviews),
+            "bestRating": 5,
+            "worstRating": 1
         },
         "offers": {
             "@type": "Offer",
-            "price": data.price.toString(),
+            "url": productUrl,
+            "price": Number(data.price),
             "priceCurrency": "JPY",
             "availability": "https://schema.org/InStock"
         }
     };
+    if (data.imageUrl) structuredData.image = data.imageUrl;
+    if (data.modelNumber) structuredData.model = data.modelNumber;
+    if (data.asin) structuredData.sku = data.asin;
     
     let structuredScript = document.querySelector('script[type="application/ld+json"]');
     if (!structuredScript) {

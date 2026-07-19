@@ -17,6 +17,7 @@ const path = require("path");
 const ROOT = path.resolve(__dirname, "..");
 const DATA_DIR = path.join(ROOT, "products", "data");
 const PRODUCTS_DATA_PATH = path.join(ROOT, "products-data.js");
+const PRODUCTS_INDEX_PATH = path.join(DATA_DIR, "products-index.json");
 const NAVIGATION_JS_PATH = path.join(ROOT, "products", "js", "navigation.js");
 
 function escapeSingle(value) {
@@ -129,7 +130,9 @@ function buildProductEntryLines(data) {
 }
 
 function patchManufacturers(content) {
-  const files = fs.readdirSync(DATA_DIR).filter((f) => f.endsWith(".json"));
+  const files = fs
+    .readdirSync(DATA_DIR)
+    .filter((f) => f.endsWith(".json") && f !== "products-index.json");
   const manufacturersSet = new Set();
   for (const file of files) {
     try {
@@ -158,7 +161,10 @@ function rebuildNavigationFromDataDir() {
   const items = [];
   const navErrors = [];
 
-  const jsonFiles = fs.readdirSync(DATA_DIR).filter((f) => f.endsWith(".json")).sort();
+  const jsonFiles = fs
+    .readdirSync(DATA_DIR)
+    .filter((f) => f.endsWith(".json") && f !== "products-index.json")
+    .sort();
   for (const file of jsonFiles) {
     let data;
     try {
@@ -220,6 +226,58 @@ function rebuildNavigationFromDataDir() {
   }
 }
 
+/**
+ * トップページ用の商品一覧を、公開中の製品HTMLとJSONから全件再生成する。
+ */
+function rebuildProductsIndexFromDataDir() {
+  const entries = [];
+  const jsonFiles = fs
+    .readdirSync(DATA_DIR)
+    .filter((f) => f.endsWith(".json") && f !== "products-index.json")
+    .sort();
+
+  for (const file of jsonFiles) {
+    const data = JSON.parse(fs.readFileSync(path.join(DATA_DIR, file), "utf8"));
+    const productId = String(data.productId || "").trim();
+    if (!productId) continue;
+    if (!fs.existsSync(path.join(ROOT, "products", `${productId}.html`))) continue;
+
+    const positiveKeywords = (data.reviewKeywords?.positive || [])
+      .map((item) => item?.keyword)
+      .filter(Boolean)
+      .slice(0, 2);
+    const badges = Array.isArray(data.badges) && data.badges.length
+      ? data.badges.slice(0, 3)
+      : [normalizeManufacturer(data.manufacturer), ...positiveKeywords].filter(Boolean);
+    const getPerformanceScore = (key, fallback = 0) =>
+      toScore(data.performanceAnalysis?.[key]?.score ?? fallback);
+
+    entries.push({
+      id: productId,
+      name: String(data.productName || productId),
+      manufacturer: normalizeManufacturer(data.manufacturer),
+      price: Number(data.price || 0),
+      rating: Number(data.overallRating || 0),
+      reviewCount: Number(data.totalReviews || 0),
+      totalReviewCount: Number(data.totalReviews || 0),
+      image: String(data.imageUrl || "").trim(),
+      badges,
+      overallTrustScore: Number(data.reliabilityScore || data.reliability?.score || 0),
+      specs: {
+        suction: getPerformanceScore("floorCleaning", 0),
+        mopping: getPerformanceScore("carpetCleaning", 0),
+        noise: getNoiseScore(data),
+        obstacle: getPerformanceScore("stepClimbing", 0),
+        app: getPerformanceScore("appStability", 0),
+        maintenance: getPerformanceScore("maintenance", 0),
+      },
+    });
+  }
+
+  fs.writeFileSync(PRODUCTS_INDEX_PATH, `${JSON.stringify(entries, null, 2)}\n`, "utf8");
+  console.log(`✅ Updated products/data/products-index.json (${entries.length} products).`);
+}
+
 function main() {
   let content = fs.readFileSync(PRODUCTS_DATA_PATH, "utf8");
   const existingIds = new Set(
@@ -239,7 +297,10 @@ function main() {
     throw new Error("products-data.js: could not find productsData array closing");
   }
 
-  const jsonFiles = fs.readdirSync(DATA_DIR).filter((f) => f.endsWith(".json")).sort();
+  const jsonFiles = fs
+    .readdirSync(DATA_DIR)
+    .filter((f) => f.endsWith(".json") && f !== "products-index.json")
+    .sort();
   const newBlocks = [];
   const errors = [];
 
@@ -276,6 +337,7 @@ function main() {
   fs.writeFileSync(PRODUCTS_DATA_PATH, content, "utf8");
 
   rebuildNavigationFromDataDir();
+  rebuildProductsIndexFromDataDir();
 
   if (errors.length) {
     console.warn("⚠️ Skipped:");

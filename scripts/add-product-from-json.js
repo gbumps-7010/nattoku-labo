@@ -186,13 +186,15 @@ function main() {
 
     const syncScript = path.join(__dirname, "sync-products-data-from-json.js");
     execFileSync(process.execPath, [syncScript], { cwd: ROOT, stdio: "inherit" });
+    const prerenderScript = path.join(__dirname, "prerender-product-pages.js");
+    execFileSync(process.execPath, [prerenderScript, productId], { cwd: ROOT, stdio: "inherit" });
 
     console.log("✅ Product added successfully");
     console.log(`- Source JSON: ${resolvedPath}`);
     console.log(`- Data file: ${jsonPath}`);
     console.log(`- HTML file: ${htmlPath}`);
     console.log(`- Updated: ${PRODUCTS_DATA_PATH}`);
-    console.log(`- Preview URL: products/${productId}.html`);
+    console.log(`- Preview URL: https://nattoku-labo.com/products/${productId}`);
   } catch (error) {
     console.error(`❌ ${error.message}`);
     process.exit(1);

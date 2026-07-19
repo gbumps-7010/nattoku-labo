@@ -688,7 +688,111 @@
                 padding: 0.875rem;
             }
         }
-    </style>
+        /* MOBILE_LAYOUT_FIX_START */
+        html,
+        body {
+            max-width: 100%;
+            overflow-x: clip;
+        }
+
+        img,
+        iframe {
+            max-width: 100%;
+        }
+
+        @media (max-width: 480px) {
+            .header-content,
+            .container {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+
+            .product-header,
+            .product-info {
+                min-width: 0;
+                width: 100%;
+            }
+
+            .product-header {
+                gap: 1rem;
+            }
+
+            .product-image-header {
+                width: min(200px, 100%);
+                height: auto;
+                aspect-ratio: 1;
+            }
+
+            .performance-scores {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 0.5rem;
+                width: 100%;
+            }
+
+            .score-item {
+                min-width: 0;
+                justify-content: center;
+                gap: 0.35rem;
+                padding: 0.5rem 0.6rem;
+            }
+
+            .score-label,
+            .score-value,
+            .product-meta > * {
+                min-width: 0;
+                overflow-wrap: anywhere;
+            }
+
+            .score-label {
+                font-size: 0.75rem;
+            }
+
+            .score-value {
+                font-size: 1rem;
+            }
+
+            .product-meta {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 0.65rem;
+                width: 100%;
+            }
+
+            .product-meta > * {
+                padding: 0.55rem 0.75rem !important;
+            }
+
+            .affiliate-cta-section {
+                max-width: 100% !important;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+                overflow: hidden;
+            }
+
+            .affiliate-cta-section iframe,
+            .affiliate-cta-section img,
+            .affiliate-cta-section table {
+                max-width: 100% !important;
+            }
+
+            .card {
+                min-width: 0;
+                padding: 1rem;
+            }
+
+            .data-quality-summary,
+            [style*="minmax(280px"] {
+                grid-template-columns: 1fr !important;
+            }
+
+            .seo-prerender-summary {
+                min-width: 0;
+                padding: 1rem !important;
+            }
+        }
+        /* MOBILE_LAYOUT_FIX_END */
+</style>
 </head>
 <body>
     <!-- Header -->
