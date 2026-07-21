@@ -1018,7 +1018,8 @@ function injectMoshimoIframe(container, html) {
         '[id^="msmaflink-"]{width:100%!important;max-width:100%!important;min-width:0!important;margin-left:auto;margin-right:auto}' +
         '[id^="msmaflink-"] *{max-width:100%!important;min-width:0}' +
         '[id^="msmaflink-"] table{width:100%!important;table-layout:fixed}' +
-        '[id^="msmaflink-"] img{height:auto!important;object-fit:contain}</style></head><body>' +
+        '[id^="msmaflink-"] img{width:auto!important;height:auto!important;max-width:180px!important;max-height:180px!important;object-fit:contain}' +
+        '@media(max-width:480px){[id^="msmaflink-"] img{max-width:140px!important;max-height:140px!important}}</style></head><body>' +
         safe +
         '</body></html>';
     iframe.style.width = '100%';
@@ -1182,21 +1183,6 @@ function renderAffiliate(data) {
                     directEl.appendChild(btn);
                 }
             }
-        }
-
-        // もしもウィジェット前の区切り（フッターCTAのみ・二次導線として控えめに）
-        if (opts.prominent && hasMoshimo && moshimoEl && moshimoEl.parentNode) {
-            let label = moshimoEl.previousElementSibling;
-            if (!label || !label.classList.contains('affiliate-secondary-label')) {
-                label = document.createElement('p');
-                label.className = 'affiliate-secondary-label';
-                label.textContent = '楽天・Yahooでも価格を比較';
-                label.style.cssText =
-                    'text-align:center; color:#94a3b8; font-size:0.88rem; font-weight:700; ' +
-                    'margin:0.25rem 0 1rem; letter-spacing:0.04em;';
-                moshimoEl.parentNode.insertBefore(label, moshimoEl);
-            }
-            moshimoEl.style.cssText = 'margin-top:0; opacity:0.94;';
         }
 
         // もしもかんたんリンク（楽天/Yahoo）をiframeで確実描画

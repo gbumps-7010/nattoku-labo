@@ -23,6 +23,29 @@
     }
   },
   {
+    "id": "d9-max-gen-2",
+    "name": "D9 Max Gen 2",
+    "manufacturer": "Dreame",
+    "price": 17800,
+    "reviewCount": 45,
+    "totalReviewCount": 45,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/d9maxgen2_cp.jpg",
+    "badges": [
+      "Dreame",
+      "水拭き・拭き掃除が良い",
+      "マッピング・ルートが賢い"
+    ],
+    "overallTrustScore": 67.0,
+    "specs": {
+      "suction": 95,
+      "mopping": 82,
+      "noise": 88,
+      "obstacle": 70,
+      "app": 92,
+      "maintenance": 85
+    }
+  },
+  {
     "id": "deebot-mini",
     "name": "DEEBOT mini",
     "manufacturer": "ECOVACS",
@@ -46,29 +69,6 @@
     }
   },
   {
-    "id": "deebot-n30-plus",
-    "name": "DEEBOT N30 PLUS",
-    "manufacturer": "ECOVACS",
-    "price": 69800,
-    "reviewCount": 271,
-    "totalReviewCount": 271,
-    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260422/ydlx11-35ee.jpg",
-    "badges": [
-      "ECOVACS",
-      "満足・買ってよかった",
-      "水拭き・拭き掃除が良い"
-    ],
-    "overallTrustScore": 85.6,
-    "specs": {
-      "suction": 95,
-      "mopping": 82,
-      "noise": 80,
-      "obstacle": 72,
-      "app": 75,
-      "maintenance": 88
-    }
-  },
-  {
     "id": "deebot-n30",
     "name": "DEEBOT N30",
     "manufacturer": "ECOVACS",
@@ -89,6 +89,29 @@
       "obstacle": 65,
       "app": 88,
       "maintenance": 85
+    }
+  },
+  {
+    "id": "deebot-n30-plus",
+    "name": "DEEBOT N30 PLUS",
+    "manufacturer": "ECOVACS",
+    "price": 69800,
+    "reviewCount": 271,
+    "totalReviewCount": 271,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260422/ydlx11-35ee.jpg",
+    "badges": [
+      "ECOVACS",
+      "満足・買ってよかった",
+      "水拭き・拭き掃除が良い"
+    ],
+    "overallTrustScore": 85.6,
+    "specs": {
+      "suction": 95,
+      "mopping": 82,
+      "noise": 80,
+      "obstacle": 72,
+      "app": 75,
+      "maintenance": 88
     }
   },
   {
@@ -265,7 +288,7 @@
       "満足・買ってよかった",
       "静かで快適"
     ],
-    "overallTrustScore": 88,
+    "overallTrustScore": 88.0,
     "specs": {
       "suction": 92,
       "mopping": 73,
@@ -391,29 +414,6 @@
     }
   },
   {
-    "id": "eufy-robovac-g30-hybrid",
-    "name": "Eufy RoboVac G30 Hybrid",
-    "manufacturer": "Anker",
-    "price": 39990,
-    "reviewCount": 451,
-    "totalReviewCount": 451,
-    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/deal/202604m3/t2253_sale.jpg",
-    "badges": [
-      "Anker",
-      "満足・買ってよかった",
-      "水拭き・拭き掃除が良い"
-    ],
-    "overallTrustScore": 84.8,
-    "specs": {
-      "suction": 92,
-      "mopping": 70,
-      "noise": 96,
-      "obstacle": 62,
-      "app": 73,
-      "maintenance": 78
-    }
-  },
-  {
     "id": "eufy-robovac-g30",
     "name": "Eufy RoboVac G30",
     "manufacturer": "Anker",
@@ -434,6 +434,29 @@
       "obstacle": 70,
       "app": 80,
       "maintenance": 72
+    }
+  },
+  {
+    "id": "eufy-robovac-g30-hybrid",
+    "name": "Eufy RoboVac G30 Hybrid",
+    "manufacturer": "Anker",
+    "price": 39990,
+    "reviewCount": 451,
+    "totalReviewCount": 451,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/deal/202604m3/t2253_sale.jpg",
+    "badges": [
+      "Anker",
+      "満足・買ってよかった",
+      "水拭き・拭き掃除が良い"
+    ],
+    "overallTrustScore": 84.8,
+    "specs": {
+      "suction": 92,
+      "mopping": 70,
+      "noise": 96,
+      "obstacle": 62,
+      "app": 73,
+      "maintenance": 78
     }
   },
   {
@@ -472,7 +495,7 @@
       "水拭き・拭き掃除が良い",
       "満足・買ってよかった"
     ],
-    "overallTrustScore": 88,
+    "overallTrustScore": 88.0,
     "specs": {
       "suction": 97,
       "mopping": 82,
@@ -480,6 +503,29 @@
       "obstacle": 78,
       "app": 93,
       "maintenance": 85
+    }
+  },
+  {
+    "id": "f10-plus",
+    "name": "F10 Plus",
+    "manufacturer": "Dreame",
+    "price": 29800,
+    "reviewCount": 12,
+    "totalReviewCount": 12,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/homarina/cabinet/g/8/e9zecwh0u4-5.jpg",
+    "badges": [
+      "Dreame",
+      "満足・買ってよかった",
+      "吸引力が高い"
+    ],
+    "overallTrustScore": 55.0,
+    "specs": {
+      "suction": 90,
+      "mopping": 70,
+      "noise": 95,
+      "obstacle": 50,
+      "app": 65,
+      "maintenance": 78
     }
   },
   {
@@ -529,13 +575,36 @@
     }
   },
   {
+    "id": "l10s-ultra-gen-2",
+    "name": "L10s Ultra Gen 2",
+    "manufacturer": "Dreame",
+    "price": 58000,
+    "reviewCount": 75,
+    "totalReviewCount": 75,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/fleurette01/cabinet/g/1/e9ge84g4av-5.jpg",
+    "badges": [
+      "Dreame",
+      "水拭き・拭き掃除が良い",
+      "満足・買ってよかった"
+    ],
+    "overallTrustScore": 67.6,
+    "specs": {
+      "suction": 97,
+      "mopping": 82,
+      "noise": 88,
+      "obstacle": 72,
+      "app": 85,
+      "maintenance": 94
+    }
+  },
+  {
     "id": "l10s-ultra-gen-3",
     "name": "L10s Ultra Gen 3",
     "manufacturer": "Dreame",
     "price": 69800,
     "reviewCount": 29,
     "totalReviewCount": 29,
-    "image": "https://www.dreametech.jp/cdn/shop/files/l10s_ultra_gen_3.png?v=1774859748&width=1950",
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/l10sultragen3_cp.jpg",
     "badges": [
       "Dreame",
       "水拭き・拭き掃除が良い",
@@ -558,7 +627,7 @@
     "price": 52000,
     "reviewCount": 36,
     "totalReviewCount": 36,
-    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/20251230165435_1.jpg",
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/lapistores/cabinet/13061158/35177699_4.jpg",
     "badges": [
       "Dreame",
       "水拭き・拭き掃除が良い",
@@ -604,7 +673,7 @@
     "price": 99800,
     "reviewCount": 62,
     "totalReviewCount": 62,
-    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/20251230173059_1.jpg",
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/20251230173059_cp.jpg",
     "badges": [
       "Dreame",
       "水拭き・拭き掃除が良い",
@@ -644,29 +713,6 @@
     }
   },
   {
-    "id": "q10v-plus",
-    "name": "Q10V+",
-    "manufacturer": "Roborock",
-    "price": 79999,
-    "reviewCount": 30,
-    "totalReviewCount": 30,
-    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/fleurette01/cabinet/g/2/e9z0wr6h0x-4.jpg",
-    "badges": [
-      "Roborock",
-      "水拭き・拭き掃除が良い",
-      "満足・買ってよかった"
-    ],
-    "overallTrustScore": 52,
-    "specs": {
-      "suction": 90,
-      "mopping": 75,
-      "noise": 80,
-      "obstacle": 65,
-      "app": 70,
-      "maintenance": 70
-    }
-  },
-  {
     "id": "q10v",
     "name": "Q10V",
     "manufacturer": "Roborock",
@@ -679,13 +725,59 @@
       "水拭き・拭き掃除が良い",
       "満足・買ってよかった"
     ],
-    "overallTrustScore": 52,
+    "overallTrustScore": 52.0,
     "specs": {
       "suction": 95,
       "mopping": 90,
       "noise": 90,
       "obstacle": 70,
       "app": 70,
+      "maintenance": 75
+    }
+  },
+  {
+    "id": "q10v-plus",
+    "name": "Q10V+",
+    "manufacturer": "Roborock",
+    "price": 79999,
+    "reviewCount": 30,
+    "totalReviewCount": 30,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/fleurette01/cabinet/g/2/e9z0wr6h0x-4.jpg",
+    "badges": [
+      "Roborock",
+      "水拭き・拭き掃除が良い",
+      "満足・買ってよかった"
+    ],
+    "overallTrustScore": 52.0,
+    "specs": {
+      "suction": 90,
+      "mopping": 75,
+      "noise": 80,
+      "obstacle": 65,
+      "app": 70,
+      "maintenance": 70
+    }
+  },
+  {
+    "id": "qrevo-curv-2-flow",
+    "name": "Qrevo Curv 2 Flow",
+    "manufacturer": "Roborock",
+    "price": 119900,
+    "reviewCount": 10,
+    "totalReviewCount": 10,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/lien0605/cabinet/g/4/e9d3eqcf0a-1.jpg",
+    "badges": [
+      "Roborock",
+      "水拭き・拭き掃除が良い",
+      "吸引力が高い"
+    ],
+    "overallTrustScore": 52.6,
+    "specs": {
+      "suction": 98,
+      "mopping": 85,
+      "noise": 78,
+      "obstacle": 70,
+      "app": 92,
       "maintenance": 75
     }
   },
@@ -702,7 +794,7 @@
       "満足・買ってよかった",
       "水拭き・拭き掃除が良い"
     ],
-    "overallTrustScore": 52,
+    "overallTrustScore": 52.0,
     "specs": {
       "suction": 98,
       "mopping": 80,
@@ -771,7 +863,7 @@
       "水拭き・拭き掃除が良い",
       "満足・買ってよかった"
     ],
-    "overallTrustScore": 76,
+    "overallTrustScore": 76.0,
     "specs": {
       "suction": 95,
       "mopping": 82,
@@ -886,7 +978,7 @@
       "水拭き・拭き掃除が良い",
       "使いやすい・便利"
     ],
-    "overallTrustScore": 61,
+    "overallTrustScore": 61.0,
     "specs": {
       "suction": 95,
       "mopping": 88,
@@ -909,7 +1001,7 @@
       "水拭き・拭き掃除が良い",
       "満足・買ってよかった"
     ],
-    "overallTrustScore": 73,
+    "overallTrustScore": 73.0,
     "specs": {
       "suction": 85,
       "mopping": 80,
@@ -932,7 +1024,7 @@
       "水拭き・拭き掃除が良い",
       "満足・買ってよかった"
     ],
-    "overallTrustScore": 79,
+    "overallTrustScore": 79.0,
     "specs": {
       "suction": 97,
       "mopping": 82,
@@ -995,7 +1087,7 @@
     "price": 199800,
     "reviewCount": 16,
     "totalReviewCount": 16,
-    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/20251230173336_1.jpg",
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/x50ultra_cp.jpg",
     "badges": [
       "Dreame",
       "水拭き・拭き掃除が良い",

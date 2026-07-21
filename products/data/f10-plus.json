@@ -3,77 +3,79 @@
   "productName": "F10 Plus",
   "manufacturer": "Dreame",
   "modelNumber": "F10 Plus",
-  "imageUrl": "",
-  "overallRating": 3.81,
+  "imageUrl": "https://thumbnail.image.rakuten.co.jp/@0_mall/homarina/cabinet/g/8/e9zecwh0u4-5.jpg",
+  "overallRating": 3.71,
   "totalReviews": 12,
   "price": 29800,
-  "reliabilityScore": 55.6,
+  "reliabilityScore": 55.0,
   "asin": "",
-  "metaTitle": "Dreame F10 Plus 詳細分析 | 高コスパで静音性に優れたロボット掃除機",
-  "metaDescription": "Dreame F10 Plusの12件の口コミを解析。静音性や吸引力、水拭き機能の真実を公開し、購入の参考に。",
+  "metaTitle": "Dreame F10 Plus 詳細分析 | 11件の口コミからわかる実力と注意点",
+  "metaDescription": "Dreame F10 Plusの口コミ11件を徹底解析。静音性や吸引力は高評価な一方、故障やケーブルの巻き込みといった課題も。購入前に知るべき真実を公開します。",
   "keywords": [
+    "Dreame F10 Plus",
     "ロボット掃除機",
+    "口コミ",
+    "評判",
     "水拭き",
-    "自動ゴミ収集",
-    "静音",
-    "高コスパ",
-    "ペットの毛"
+    "自動ゴミ収集"
   ],
   "categoryC": {
     "userSatisfaction": {
-      "score": 85,
-      "reviewCount": 12,
-      "comment": "多くのユーザーが静音性や吸引力、水拭き機能に満足しており、価格以上の価値を感じています。"
+      "score": 75,
+      "reviewCount": 11,
+      "comment": "基本的な清掃性能や静音性には満足の声が多いですが、半年での故障報告やケーブル巻き込みなど、信頼性や障害物回避に関する不満が全体の評価を下げています。"
     },
     "repurchaseIntention": {
-      "percentage": 80,
-      "reviewCount": 10,
-      "comment": "旧モデルからの買い替えで性能向上に満足する声が多く、友人にも勧めたいという意向が見られます。"
+      "percentage": 55,
+      "reviewCount": 11,
+      "comment": "「買ってよかった」という声がある一方で、故障を経験したユーザーは再購入に慎重な姿勢です。コストパフォーマンスを評価する声と、耐久性を疑問視する声に分かれています。"
     },
     "failureRate": {
-      "percentage": 33,
-      "reviewCount": 4,
+      "percentage": 36,
+      "reviewCount": 11,
       "breakdown": {
-        "hardware": 1,
+        "hardware": 3,
         "software": 1,
-        "environmental": 2
+        "environmental": 0
       },
-      "comment": "バッテリー故障やアプリ接続不良、コード巻き込みなどの不具合報告が一部あり、注意が必要です。"
+      "comment": "11件中4件が故障や不具合に言及しており、特に購入後半年でのバッテリー不良の報告が目立ちます。サポートの対応は迅速だったものの、根本的な耐久性に不安が残ります。"
     }
   },
   "reliability": {
-    "score": 55.6,
+    "score": 55.0,
     "dataAdequacy": {
-      "score": 45,
+      "score": 44,
       "weight": 60,
-      "description": "口コミ総数が12件と少ないため、データ十分性のスコアは低めです。"
+      "description": "口コミ件数が11件と少なく、製品の全体像を把握するにはデータ量が不十分です。より多くの口コミが集まることで、評価の信頼性が増すと考えられます。"
     },
     "consistency": {
-      "percentage": 62,
+      "score": 62,
       "weight": 30,
-      "description": "楽天とAmazonでの評価に差が見られ、口コミ間の一貫性が低い傾向にあります。",
-      "score": 62
+      "description": "静音性や基本的な清掃能力については意見が一致していますが、故障や障害物回避の挙動については評価が大きく分かれており、個体差や使用環境による影響が考えられます。",
+      "percentage": 62
     },
     "freshness": {
       "score": 100,
       "weight": 10,
-      "description": "直近30日以内の口コミが全体の33%を占め、鮮度スコアは非常に高いです。"
+      "description": "分析対象の口コミはすべて直近6ヶ月以内に投稿されており、現在の製品品質やサポート体制を反映した、非常に鮮度の高い情報だと言えます。"
     }
   },
   "updateInfo": {
-    "lastUpdated": "2026-06-15",
+    "lastUpdated": "2026-06-27",
     "firmwareVersion": "",
-    "note": "口コミは概ね直近のものが多く、製品の現状を反映しています。一部故障報告もあります。"
+    "note": "2026年上半期の口コミを基に分析。静音性と吸引力は評価されていますが、半年以内の故障報告や、コード類の巻き込みといったネガティブな意見も見られます。"
   },
   "timeSaving": {
+    "vacuumMinutes": 10,
+    "mopMinutes": 9,
     "dailyMinutes": 19,
     "monthlyHours": 9.5,
-    "annualHours": 114,
-    "workDaysEquivalent": 14.5
+    "annualHours": 115.6,
+    "workDaysEquivalent": 14.4
   },
   "operationalCost": {
     "daily": 59,
-    "dailyNote": "消耗品の実質的な日割りコスト",
+    "dailyNote": "ダストパック、メインブラシ、サイドブラシの交換費用を日割りで計算した実質的なコストです。使用頻度により変動します。",
     "monthly": 1785,
     "annual": 21420,
     "consumables": [
@@ -111,52 +113,52 @@
   },
   "performanceAnalysis": {
     "floorCleaning": {
-      "score": 95,
-      "reviewCount": 3,
-      "positiveReviewCount": 3,
-      "comment": "非常に静かで吸引力も高く、床が毎日ピカピカになると高評価です。水拭き機能も日常使いに十分役立ちます。"
-    },
-    "carpetCleaning": {
-      "score": 75,
-      "reviewCount": 2,
-      "positiveReviewCount": 1,
-      "comment": "カーペットへの対応は「そこそこ」との声があり、古い畳では注意が必要です。吸引力は一定の評価を得ています。"
-    },
-    "petHairRemoval": {
       "score": 90,
       "reviewCount": 3,
-      "positiveReviewCount": 2,
-      "comment": "ペットの抜け毛が全く気にならなくなったという声が多く、高い吸引力で効果的に除去できると評価されています。"
+      "positiveReviewCount": 3,
+      "comment": "フローリングの清掃能力は高く評価されており、「毎日ピカピカになる」「抜け毛が気にならなくなった」との声があります。吸引と水拭きの同時実行が満足度に貢献しています。"
+    },
+    "carpetCleaning": {
+      "score": 70,
+      "reviewCount": 2,
+      "positiveReviewCount": 1,
+      "comment": "ペットの毛には対応できる一方、古い畳を傷つける可能性があるという指摘がありました。カーペットや畳の上で使用する際は、アプリで吸引力を調整するなどの工夫が必要です。"
+    },
+    "petHairRemoval": {
+      "score": 85,
+      "reviewCount": 3,
+      "positiveReviewCount": 3,
+      "comment": "犬を2匹飼っている家庭でも「抜け毛が全く気にならなくなった」と高く評価されています。ペットの毛の吸引力は十分期待できるレベルにあると言えるでしょう。"
     },
     "quietness": {
       "score": 95,
       "reviewCount": 3,
       "positiveReviewCount": 3,
-      "comment": "動作音が非常に静かで、朝や夜間でも周囲を気にせず使用できる点が多くのユーザーに喜ばれています。"
+      "comment": "「とにかく静か」「ルンバに比べてかなり静か」といった絶賛の声が多数。夜間や在宅ワーク中でも気兼ねなく使用できる静音性は、本製品の大きな魅力となっています。"
     },
     "stepClimbing": {
-      "score": 40,
+      "score": 50,
       "reviewCount": 2,
       "positiveReviewCount": 0,
-      "comment": "段差が多い環境ではアプリの魅力が半減し、段差乗り越え性能に不満の声が一部見られます。"
+      "comment": "段差対応については「残念」という明確なネガティブ評価がありました。アプリの魅力が半減するとの意見もあり、段差の多い家では性能を十分に発揮できない可能性があります。"
     },
     "maintenance": {
-      "score": 85,
+      "score": 78,
       "reviewCount": 2,
       "positiveReviewCount": 2,
-      "comment": "自動ゴミ収集機能は非常に便利で手間が省けます。水拭きモップの手洗いは必要ですが、苦にならないとの声も。"
+      "comment": "自動ゴミ収集機能は高く評価されており、日々のゴミ捨ての手間がない点をメリットと感じる声が多いです。ただし、モップは毎回手洗いが必要なため、完全な自動化ではありません。"
     },
     "appStability": {
-      "score": 70,
+      "score": 65,
       "reviewCount": 3,
       "positiveReviewCount": 2,
-      "comment": "遠隔操作や吸引力調整など高機能で便利ですが、スマホとの連動が難しいという報告も一部あります。"
+      "comment": "遠隔操作や部屋ごとの設定ができる点は評価されていますが、「説明書通りに操作してもスマホと連動出来ない」という報告もあり、初期設定でつまずく可能性があるようです。"
     },
     "batteryLife": {
       "score": 60,
       "reviewCount": 1,
       "positiveReviewCount": 0,
-      "comment": "バッテリーの持続時間に関する直接的な言及は少ないですが、半年以内のバッテリー故障報告があり、耐久性に懸念も。"
+      "comment": "購入後半年でバッテリーが充電されなくなる故障事例が報告されています。1件のみの言及ですが、製品の耐久性においてバッテリーが弱点となる可能性を示唆しています。"
     }
   },
   "radarChartData": {
@@ -171,23 +173,23 @@
       "電池"
     ],
     "values": [
-      95,
-      75,
       90,
-      95,
-      40,
-      85,
       70,
+      85,
+      95,
+      50,
+      78,
+      65,
       60
     ]
   },
   "dataQuality": {
     "totalReviews": 12,
-    "sampledReviews": 12,
-    "adoptedReviews": 10,
-    "excludedReviews": 2,
-    "trustScore": 55.6,
-    "comment": "全12件の口コミを分析し、製品の性能や不満点を詳細に評価しました。一部は特定の不具合ですが、傾向把握に採用。"
+    "sampledReviews": 11,
+    "adoptedReviews": 11,
+    "excludedReviews": 1,
+    "trustScore": 55.0,
+    "comment": "11件の口コミを分析。サンプル数は少ないものの、直近の口コミが中心で鮮度は高いです。ただし、故障や障害物回避など評価の分かれる点があり、信頼性は中程度です。"
   },
   "reviewKeywords": {
     "positive": [
@@ -208,11 +210,11 @@
         "count": 2
       },
       {
-        "keyword": "使いやすい・便利",
+        "keyword": "床がサラサラ・ピカピカ",
         "count": 1
       },
       {
-        "keyword": "床がサラサラ・ピカピカ",
+        "keyword": "使いやすい・便利",
         "count": 1
       },
       {
@@ -234,189 +236,195 @@
   "successStrategies": [
     {
       "rank": 1,
-      "issue": "コードやラグの巻き込み",
-      "occurrenceRate": 17,
-      "occurrenceCount": 2,
-      "environmentalFactor": "床に散らばったケーブルや薄いラグ",
-      "technicalDescription": "ロボット掃除機が障害物を強引に進む傾向があり、コードや薄いラグを巻き込むリスクがあります。",
+      "issue": "半年以内のバッテリー故障",
+      "occurrenceRate": 9,
+      "occurrenceCount": 1,
+      "environmentalFactor": "特定ロットの初期不良の可能性",
+      "technicalDescription": "購入から短期間でバッテリーが充電不能になる事例が報告されています。使用頻度は週1回程度と標準的で、製品の個体差や初期不良が原因である可能性が考えられます。",
       "avoidanceStrategies": [
         {
-          "method": "掃除前に床の障害物を片付ける",
-          "effectiveness": "高",
-          "technicalLevel": "初級",
-          "technicalRationale": "掃除エリアからコードや小物を除去することで、巻き込みによる停止や故障を未然に防ぎます。"
-        },
-        {
-          "method": "アプリで掃除禁止エリアを設定",
+          "method": "購入後すぐに動作確認とフル充電・放電を行う",
           "effectiveness": "中",
           "technicalLevel": "初級",
-          "technicalRationale": "特にコードが多い場所への侵入を制限することで、物理的な巻き込みリスクを低減できます。"
+          "technicalRationale": "初期不良を早期に発見するための基本的な対策です。メーカー保証期間内に不具合を特定し、迅速にサポートへ連絡することで、無償修理や交換を受けられる可能性が高まります。"
+        },
+        {
+          "method": "公式チャネルや正規代理店から購入する",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "正規販売店からの購入は、メーカー保証を確実に受けるための大前提です。万が一の故障時にも、スムーズな修理・交換対応が期待でき、安心して製品を使用できます。"
         }
       ],
-      "preventionTips": "日常的に床を整理整頓し、ロボット掃除機がスムーズに走行できる環境を維持することが重要です。"
+      "preventionTips": "長期間使用しない場合でも、バッテリーの過放電を防ぐため、定期的に充電を行うことが推奨されます。また、充電ステーション周りは障害物がなく、熱がこもらない場所に設置してください。"
     },
     {
       "rank": 2,
-      "issue": "スマートフォンアプリとの連携不良",
-      "occurrenceRate": 8,
-      "occurrenceCount": 1,
-      "environmentalFactor": "Wi-Fi環境や初期設定の不備",
-      "technicalDescription": "初期設定時にスマートフォンとロボット掃除機の連携がうまくいかないケースが一部報告されています。",
+      "issue": "ケーブルやラグの巻き込み",
+      "occurrenceRate": 18,
+      "occurrenceCount": 2,
+      "environmentalFactor": "床面の整理状況",
+      "technicalDescription": "障害物回避センサーの性能が十分でなく、床に置かれた電源コードやラグなどを巻き込んで停止する事例が報告されています。「かなり強引」と評されるほど挙動がアグレッシブなようです。",
       "avoidanceStrategies": [
         {
-          "method": "説明書を熟読し、Wi-Fi設定を確認",
+          "method": "掃除前に床のケーブル類を片付ける",
           "effectiveness": "高",
           "technicalLevel": "初級",
-          "technicalRationale": "多くの場合、Wi-Fiの周波数帯（2.4GHz推奨）やルーター設定が原因で、説明書通りに設定することで解決します。"
+          "technicalRationale": "最も確実な物理的対策です。ロボット掃除機が進入するエリアから事前に巻き込みの原因となる物を撤去することで、トラブルを未然に防ぎ、スムーズな清掃を実現します。"
         },
         {
-          "method": "メーカーのFAQやトラブルシューティングを参照",
-          "effectiveness": "中",
-          "technicalLevel": "初級",
-          "technicalRationale": "公式サポートページには一般的な接続問題の解決策が記載されており、具体的な手順を確認できます。"
+          "method": "アプリの「掃除禁止エリア」機能を活用する",
+          "effectiveness": "高",
+          "technicalLevel": "中級",
+          "technicalRationale": "スマートフォンの専用アプリで、ケーブルが多いエリアや薄いラグがある場所を仮想的に進入禁止に設定します。これにより、物理的に片付けが難しい場所でもトラブルを回避できます。"
         }
       ],
-      "preventionTips": "設定前にWi-Fi環境を整え、スマートフォンのOSが最新であることを確認するとスムーズです。"
+      "preventionTips": "初めて稼働させる際は、掃除機の動きを監視し、どのエリアで問題が発生しやすいか把握することが重要です。問題箇所を特定し、禁止エリア設定や物理的な片付けを行いましょう。"
     },
     {
       "rank": 3,
-      "issue": "購入後短期間でのバッテリー故障",
-      "occurrenceRate": 8,
+      "issue": "スマートフォンとの連携失敗",
+      "occurrenceRate": 9,
       "occurrenceCount": 1,
-      "environmentalFactor": "製品個体差または使用環境",
-      "technicalDescription": "購入後半年以内にバッテリーが充電されなくなる故障が報告されており、耐久性に懸念があります。",
+      "environmentalFactor": "Wi-Fi環境やアプリ設定",
+      "technicalDescription": "「説明書通りに操作してもスマホとロボット掃除機が連動出来ない」という報告があります。Wi-Fiの周波数帯（2.4GHzのみ対応など）や、アプリの権限設定が原因の可能性があります。",
       "avoidanceStrategies": [
         {
-          "method": "故障時は迅速にカスタマーサポートへ連絡",
+          "method": "自宅のWi-Fiが2.4GHz帯に対応しているか確認する",
+          "effectiveness": "高",
+          "technicalLevel": "中級",
+          "technicalRationale": "多くのロボット掃除機は安定性の高い2.4GHz帯のWi-Fiにのみ対応しています。ルーターの設定を確認し、必要であれば2.4GHz帯のネットワークを有効にする必要があります。"
+        },
+        {
+          "method": "アプリに位置情報やローカルネットワークの権限を許可する",
           "effectiveness": "高",
           "technicalLevel": "初級",
-          "technicalRationale": "保証期間内であれば無償修理や交換の対象となるため、早めにメーカーに問い合わせることが重要です。"
+          "technicalRationale": "スマートフォンの設定で、Dreamehomeアプリに対して「位置情報」や「ローカルネットワーク上のデバイスの検索」といった権限を許可しないと、掃除機を検出できず接続に失敗します。"
         }
       ],
-      "preventionTips": "定期的な清掃と、充電ドックへの適切な設置を心がけることで、バッテリーの負担を軽減できる可能性があります。"
+      "preventionTips": "接続に失敗する場合は、一度スマートフォンとロボット掃除機本体を再起動し、ルーターの近くで再度ペアリングを試みてください。公式アプリのガイドも併せて確認しましょう。"
     }
   ],
   "topComplaints": [
     {
-      "title": "コードやラグの巻き込み",
-      "percentage": 17,
+      "title": "購入後、短期間で故障する",
+      "percentage": 18,
       "reviewCount": 2,
-      "description": "ロボット掃除機が床のコードや薄いラグを巻き込んでしまい、停止したり故障の原因となることがあります。",
-      "solution": "掃除前に床の障害物を片付け、アプリで掃除禁止エリアを設定することで巻き込みを効果的に防げます。"
+      "description": "購入後半年でバッテリーが充電されなくなるなど、耐久性に不安を感じる声が上がっています。サポートの対応は迅速なようですが、製品自体の信頼性への懸念は拭えません。",
+      "solution": "故障が発生した場合、すぐにカスタマーサポートへ連絡することが重要です。公式サイトのFAQやトラブルシューティングを確認し、保証期間内であれば無償修理や交換を依頼しましょう。"
     },
     {
-      "title": "スマートフォンアプリとの連携不良",
-      "percentage": 8,
-      "reviewCount": 1,
-      "description": "初期設定時や使用中に、スマートフォンアプリとロボット掃除機がうまく連動しないという報告があります。",
-      "solution": "説明書を確認し、Wi-Fi設定の見直しやメーカーのトラブルシューティングを参照することで解決する場合があります。"
+      "title": "コード類を強引に巻き込む",
+      "percentage": 18,
+      "reviewCount": 2,
+      "description": "障害物回避能力が低く、床にある電源コードやケーブルを巻き込んで停止してしまうという報告が複数あります。留守中に稼働させるにはリスクが高いとの意見も見られます。",
+      "solution": "稼働前に床を整理し、ケーブル類を片付けるのが最も確実な対策です。また、アプリの「進入禁止エリア」機能を活用し、ケーブルの多い場所を避けて掃除するよう設定しましょう。"
     },
     {
-      "title": "購入後短期間でのバッテリー故障",
-      "percentage": 8,
+      "title": "スマホアプリとの連携が難しい",
+      "percentage": 9,
       "reviewCount": 1,
-      "description": "購入から半年以内にバッテリーが充電されなくなる故障が報告されており、製品の耐久性に懸念があります。",
-      "solution": "故障時は速やかにカスタマーサポートへ連絡し、保証期間内での修理や交換対応を依頼することが重要です。"
+      "description": "説明書通りに設定しても、スマートフォンと本体がうまく連携できないという問題が報告されています。Wi-Fi環境やスマホの設定が原因である可能性が考えられます。",
+      "solution": "自宅のWi-Fiが2.4GHz帯であることを確認してください。また、スマホの設定でアプリに位置情報やローカルネットワークへのアクセス権限を許可すると解決することがあります。"
     }
   ],
   "attributeScores": {
     "petOwner": {
-      "overall": 91,
+      "overall": 86,
       "details": [
         {
-          "field": "ペット毛吸引力",
-          "score": 90,
+          "field": "ペットの毛吸引",
+          "score": 85,
           "reviewCount": 3,
-          "comment": "ペットの抜け毛を効果的に除去し、床を清潔に保つ能力が高く評価されています。"
+          "comment": "犬2匹を飼う家庭でも抜け毛が気にならなくなったと高評価です。ペットの毛や細かいゴミをしっかり吸引する能力は、この価格帯の製品として非常に優れています。"
         },
         {
-          "field": "床掃除",
+          "field": "静音性",
           "score": 95,
           "reviewCount": 3,
-          "comment": "静音性と吸引力に優れ、ペットのいる家庭でも毎日快適に床をきれいに保てると好評です。"
+          "comment": "ペットが怖がりにくい静かな動作音は大きな利点です。在宅中やペットがいる空間でもストレスなく稼働させることができ、日々の掃除を快適にこなしてくれます。"
         },
         {
-          "field": "メンテナンス",
-          "score": 85,
-          "reviewCount": 2,
-          "comment": "自動ゴミ収集機能で手間が省け、モップの手洗いも苦にならないという声があり、全体的に良好です。"
+          "field": "水拭き性能",
+          "score": 80,
+          "reviewCount": 1,
+          "comment": "ペットの足跡やよだれの跡もしっかり落とせる「ディープ床拭き」モードが好評です。ただし、モップの手洗いが必須なため、メンテナンスの手間は残ります。"
         }
       ]
     },
     "apartment": {
-      "overall": 84,
+      "overall": 83,
       "details": [
         {
           "field": "静音性",
           "score": 95,
           "reviewCount": 3,
-          "comment": "非常に静かで、マンションなどの集合住宅でも時間帯を気にせず安心して使用できると高評価です。"
+          "comment": "集合住宅で最も気になる騒音問題に関して、卓越した性能を発揮します。「とにかく静か」との評価が多く、隣室や階下を気にせず、時間帯を選ばずに使用できます。"
         },
         {
-          "field": "床掃除",
-          "score": 95,
+          "field": "床掃除能力",
+          "score": 90,
           "reviewCount": 3,
-          "comment": "吸引力と水拭き機能で床を清潔に保ち、マンションのフローリング環境に非常に適しています。"
+          "comment": "コンパクトな空間を効率よく清掃し、フローリングを常に清潔に保ちます。吸引と水拭きを同時に行うため、限られたスペースでも高い清掃品質を実現します。"
         },
         {
           "field": "段差乗り越え",
-          "score": 40,
+          "score": 50,
           "reviewCount": 2,
-          "comment": "段差が多い環境では性能が半減し、乗り越えに課題があるため、注意が必要です。"
+          "comment": "部屋の間の敷居など、わずかな段差でも乗り越えに失敗する可能性が指摘されています。バリアフリーでない住居では、部屋ごとに移動させる手間が発生するかもしれません。"
         }
       ]
     },
     "workingProfessional": {
-      "overall": 74,
+      "overall": 71,
       "details": [
         {
-          "field": "アプリ安定性",
-          "score": 70,
-          "reviewCount": 3,
-          "comment": "遠隔操作や詳細設定が可能で便利ですが、一部で接続不良の報告があり、安定性に課題も。"
-        },
-        {
-          "field": "メンテナンス",
-          "score": 85,
+          "field": "メンテナンス性",
+          "score": 78,
           "reviewCount": 2,
-          "comment": "自動ゴミ収集機能により日々の手間が大幅に削減され、忙しい共働き世帯に非常に適しています。"
+          "comment": "自動ゴミ収集機能により、多忙な日々でもゴミ捨ての手間から解放されます。帰宅時に綺麗な部屋が待っている手軽さは、大きな時間的メリットをもたらします。"
         },
         {
-          "field": "バッテリー",
+          "field": "アプリ安定性",
+          "score": 65,
+          "reviewCount": 3,
+          "comment": "外出先から遠隔操作できる点は便利ですが、初期設定で接続に失敗する事例も。IT機器の設定に不慣れな場合、スムーズに使い始められない可能性があります。"
+        },
+        {
+          "field": "信頼性（バッテリー）",
           "score": 60,
           "reviewCount": 1,
-          "comment": "バッテリーの持続時間に関する明確な評価は少ないですが、短期間での故障報告があり、懸念点です。"
+          "comment": "短期でのバッテリー故障報告は、留守中に掃除を任せたい多忙な世帯にとって大きな不安要素です。長期的な安定稼働にはやや疑問符がつきます。"
         }
       ]
     },
     "familyHome": {
-      "overall": 79,
+      "overall": 76,
       "details": [
         {
-          "field": "床掃除",
-          "score": 95,
+          "field": "床掃除能力",
+          "score": 90,
           "reviewCount": 3,
-          "comment": "高い吸引力と水拭き機能で、家族のいる広い家でも毎日床を清潔に保てると好評です。"
+          "comment": "広いリビングでも隅々まで掃除し、家族が集まる空間を清潔に保ちます。食べこぼしやホコリがたまりやすい場所も、パワフルな吸引力と水拭きで綺麗にします。"
         },
         {
-          "field": "バッテリー",
+          "field": "カーペット清掃",
+          "score": 70,
+          "reviewCount": 2,
+          "comment": "カーペットのゴミは吸引できますが、デリケートな素材や古い畳を傷つける懸念があります。子供部屋のプレイマットなどでの使用には注意が必要かもしれません。"
+        },
+        {
+          "field": "信頼性（バッテリー）",
           "score": 60,
           "reviewCount": 1,
-          "comment": "バッテリーの持続時間に関する明確な評価は少ないですが、短期間での故障報告があり、懸念点です。"
-        },
-        {
-          "field": "カーペット",
-          "score": 75,
-          "reviewCount": 2,
-          "comment": "カーペットへの対応は一定の評価ですが、特に古い畳などでは注意が必要とされています。"
+          "comment": "広い家を掃除するにはバッテリーの持続性と信頼性が不可欠ですが、短期故障の報告があるため不安が残ります。掃除の途中で停止するリスクも考慮すべきです。"
         }
       ]
     }
   },
   "resaleValue": null,
   "affiliate": {
-    "moshimo": "",
-    "direct": "",
-    "hpPublish": false
+    "moshimo": "<!-- START MoshimoAffiliateEasyLink -->\r\n<script type=\"text/javascript\">\r\n(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;\r\nb[a]=b[a]||function(){arguments.currentScript=c.currentScript\r\n||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};\r\nc.getElementById(a)||(d=c.createElement(f),d.src=g,\r\nd.id=a,e=c.getElementsByTagName(\"body\")[0],e.appendChild(d))})\r\n(window,document,\"script\",\"//dn.msmstatic.com/site/cardlink/bundle.js?20220329\",\"msmaflink\");\r\nmsmaflink({\"n\":\"dreame F10 Plusロボット掃除機 吸引\\u0026水拭き両対応 13,000Pa超強力吸引VormaxTM技術\\/5200mAh大容量バッテリー(300\",\"b\":\"\",\"t\":\"\",\"d\":\"https:\\/\\/thumbnail.image.rakuten.co.jp\",\"c_p\":\"\",\"p\":[\"\\/@0_mall\\/homarina\\/cabinet\\/g\\/8\\/e9zecwh0u4-5.jpg\"],\"u\":{\"u\":\"https:\\/\\/item.rakuten.co.jp\\/homarina\\/gr-e9zecwh0u4\\/\",\"t\":\"rakuten\",\"r_v\":\"\"},\"v\":\"2.1\",\"b_l\":[{\"id\":1,\"u_tx\":\"楽天市場で見る\",\"u_bc\":\"#f76956\",\"u_url\":\"https:\\/\\/item.rakuten.co.jp\\/homarina\\/gr-e9zecwh0u4\\/\",\"a_id\":5483003,\"p_id\":54,\"pl_id\":27059,\"pc_id\":54,\"s_n\":\"rakuten\",\"u_so\":1},{\"id\":2,\"u_tx\":\"Yahoo!ショッピングで見る\",\"u_bc\":\"#66a7ff\",\"u_url\":\"https:\\/\\/shopping.yahoo.co.jp\\/search?first=1\\u0026p=dreame%20F10%20Plus%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%20%E5%90%B8%E5%BC%95%26%E6%B0%B4%E6%8B%AD%E3%81%8D%E4%B8%A1%E5%AF%BE%E5%BF%9C%2013%2C000Pa%E8%B6%85%E5%BC%B7%E5%8A%9B%E5%90%B8%E5%BC%95VormaxTM%E6%8A%80%E8%A1%93%2F5200mAh%E5%A4%A7%E5%AE%B9%E9%87%8F%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC(300\",\"a_id\":5483010,\"p_id\":1225,\"pl_id\":27061,\"pc_id\":1925,\"s_n\":\"yahoo\",\"u_so\":2},{\"u_bc\":\"#ffcf0f\",\"u_tx\":\"Amazonで見る\",\"u_url\":\"https:\\/\\/www.amazon.co.jp\\/s\\/ref=nb_sb_noss_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A\\u0026url=search-alias%3Daps\\u0026field-keywords=dreame%20F10%20Plus%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%20%E5%90%B8%E5%BC%95%26%E6%B0%B4%E6%8B%AD%E3%81%8D%E4%B8%A1%E5%AF%BE%E5%BF%9C%2013%2C000Pa%E8%B6%85%E5%BC%B7%E5%8A%9B%E5%90%B8%E5%BC%95VormaxTM%E6%8A%80%E8%A1%93%2F5200mAh%E5%A4%A7%E5%AE%B9%E9%87%8F%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC(300\",\"s_n\":\"amazon\",\"u_so\":3,\"a_id\":5483011,\"p_id\":170,\"pc_id\":185,\"pl_id\":27060,\"id\":3}],\"eid\":\"G1oHz\",\"s\":\"l\"});\r\n</script>\r\n<div id=\"msmaflink-G1oHz\">リンク</div>\r\n<!-- MoshimoAffiliateEasyLink END -->",
+    "direct": "<a href=\"https://t.afi-b.com/visit.php?a=115804H-O7349579_w&p=g978598R\" rel=\"nofollow\"><img src=\"https://www.dreametech.jp/cdn/shop/files/F10P-CR7.png?v=1781968412&width=1950\" style=\"border:none;\" /></a><img src=\"https://t.afi-b.com/lead/115804H/g978598R/O7349579_w\" width=\"1\" height=\"1\" style=\"border:none;\" />",
+    "hpPublish": true
   }
 }
