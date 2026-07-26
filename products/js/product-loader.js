@@ -1018,8 +1018,8 @@ function injectMoshimoIframe(container, html) {
         '[id^="msmaflink-"]{width:100%!important;max-width:100%!important;min-width:0!important;margin-left:auto;margin-right:auto}' +
         '[id^="msmaflink-"] *{max-width:100%!important;min-width:0}' +
         '[id^="msmaflink-"] table{width:100%!important;table-layout:fixed}' +
-        '[id^="msmaflink-"] img{width:auto!important;height:auto!important;max-width:180px!important;max-height:180px!important;object-fit:contain}' +
-        '@media(max-width:480px){[id^="msmaflink-"] img{max-width:140px!important;max-height:140px!important}}</style></head><body>' +
+        '[id^="msmaflink-"] img{width:auto!important;height:auto!important;max-width:280px!important;max-height:280px!important;object-fit:contain}' +
+        '@media(max-width:480px){[id^="msmaflink-"] img{max-width:220px!important;max-height:220px!important}}</style></head><body>' +
         safe +
         '</body></html>';
     iframe.style.width = '100%';

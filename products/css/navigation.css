@@ -219,6 +219,11 @@
     font-weight: 600;
 }
 
+.product-meta .rating {
+    color: #f59e0b;
+    font-weight: 600;
+}
+
 /* ===== メーカー・価格帯ドロップダウン ===== */
 .manufacturer-filter,
 .price-filter {
@@ -396,6 +401,11 @@ body.nav-mobile-open::before {
 .related-price {
     color: #0ea5e9;
     font-weight: 700;
+}
+
+.related-rating {
+    color: #f59e0b;
+    font-weight: 600;
 }
 
 .related-arrow {
@@ -612,6 +622,11 @@ body:has(#fixed-navigation) .product-meta {
     opacity: 1;
 }
 
+body:has(#fixed-navigation) .product-meta .rating-display span {
+    color: rgba(255, 255, 255, 0.92);
+    opacity: 1 !important;
+}
+
 body:has(#fixed-navigation) .product-meta > div {
     color: #fff;
 }
@@ -736,11 +751,52 @@ body:has(#fixed-navigation) .container {
         padding: 0.35rem 0.65rem !important;
     }
 
+    /* 価格注意書き：上方向・横はみ出しを防ぎ、価格ブロック直下に収める */
+    body:has(#fixed-navigation) header,
+    body:has(#fixed-navigation) .header-content,
+    body:has(#fixed-navigation) .product-info {
+        overflow: visible;
+    }
+
+    body:has(#fixed-navigation) .product-info > div:has(> .price-info-tooltip) {
+        position: relative;
+        z-index: 5;
+    }
+
+    body:has(#fixed-navigation) .price-info-tooltip {
+        position: static;
+    }
+
     body:has(#fixed-navigation) .price-info-tooltip .tooltip-text {
-        width: min(280px, calc(100vw - 2.5rem));
-        max-width: calc(100vw - 2.5rem);
         left: 0;
+        right: 0;
+        width: auto;
+        max-width: none;
+        bottom: auto;
+        top: calc(100% + 0.4rem);
         transform: none;
+        box-sizing: border-box;
+        font-size: 0.78rem;
+        padding: 0.75rem 0.875rem;
+        line-height: 1.55;
+        text-align: left;
+        word-break: break-word;
+        overflow-wrap: anywhere;
+    }
+
+    body:has(#fixed-navigation) .price-info-tooltip .tooltip-text::after {
+        top: auto;
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-color: transparent transparent rgba(0, 0, 0, 0.95) transparent;
+    }
+
+    body:has(#fixed-navigation) .price-note {
+        max-width: 100%;
+        line-height: 1.45;
+        white-space: normal;
+        overflow-wrap: anywhere;
     }
 
     body:has(#fixed-navigation) .chart-container {

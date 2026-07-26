@@ -1,5 +1,6 @@
 /**
  * 製品ページ Chart.js 初期化（モバイル横はみ出し対策込み）
+ * チャートはスクロールで表示領域に入ったとき初めて描画し、アニメーションさせる
  */
 (function () {
     'use strict';
@@ -14,6 +15,90 @@
         return text.length > maxLen ? text.slice(0, maxLen) + '…' : text;
     }
 
+    /**
+     * IntersectionObserver 用の監視対象（サイズのある親を優先）
+     */
+    function resolveObserveTarget(element) {
+        if (!element) return null;
+        return (
+            element.closest('.chart-container') ||
+            element.closest('.keyword-chart-wrap') ||
+            element.closest('.card') ||
+            element
+        );
+    }
+
+    /**
+     * スクロールが落ち着いてから描画（スマホでアニメ欠落する対策）
+     */
+    function runAfterScrollSettle(callback) {
+        if (typeof callback !== 'function') return;
+
+        if (!isMobileViewport()) {
+            requestAnimationFrame(function () {
+                callback();
+            });
+            return;
+        }
+
+        var finished = false;
+        var timer = null;
+
+        function finish() {
+            if (finished) return;
+            finished = true;
+            window.removeEventListener('scroll', onScroll, true);
+            window.removeEventListener('touchend', onScroll, true);
+            requestAnimationFrame(function () {
+                requestAnimationFrame(callback);
+            });
+        }
+
+        function onScroll() {
+            clearTimeout(timer);
+            timer = setTimeout(finish, 140);
+        }
+
+        window.addEventListener('scroll', onScroll, true);
+        window.addEventListener('touchend', onScroll, true);
+        timer = setTimeout(finish, 160);
+    }
+
+    /**
+     * 要素がビューポートに入ったら一度だけ callback を実行する
+     */
+    function whenVisible(element, callback) {
+        var target = resolveObserveTarget(element);
+        if (!target || typeof callback !== 'function') return;
+
+        var run = function () {
+            runAfterScrollSettle(callback);
+        };
+
+        if (typeof IntersectionObserver === 'undefined') {
+            run();
+            return;
+        }
+
+        var mobile = isMobileViewport();
+        var started = false;
+        var observer = new IntersectionObserver(function (entries, obs) {
+            entries.forEach(function (entry) {
+                if (!entry.isIntersecting || started) return;
+                started = true;
+                obs.unobserve(entry.target);
+                obs.disconnect();
+                run();
+            });
+        }, {
+            // スマホは画面が狭いので早めに発火させる
+            threshold: mobile ? 0.12 : 0.2,
+            rootMargin: mobile ? '0px 0px -6% 0px' : '0px 0px -8% 0px'
+        });
+
+        observer.observe(target);
+    }
+
     function buildKeywordBarOptions() {
         const mobile = isMobileViewport();
         return {
@@ -21,10 +106,11 @@
             responsive: true,
             maintainAspectRatio: false,
             animation: {
-                duration: mobile ? 800 : 1200,
+                duration: mobile ? 900 : 1200,
                 easing: 'easeOutQuart',
                 delay: function (context) {
-                    return context.dataIndex * (mobile ? 50 : 80);
+                    if (context.type !== 'data' || context.mode !== 'default') return 0;
+                    return context.dataIndex * (mobile ? 45 : 80);
                 }
             },
             plugins: {
@@ -90,11 +176,13 @@
         };
     }
 
-    function initRadarChart(data) {
-        if (!data.radarChartData || !document.getElementById('radarChart')) return;
+    function createRadarChart(data) {
+        var canvas = document.getElementById('radarChart');
+        if (!data.radarChartData || !canvas) return;
+        if (typeof Chart !== 'undefined' && Chart.getChart && Chart.getChart(canvas)) return;
 
         try {
-            var ctx = document.getElementById('radarChart').getContext('2d');
+            var ctx = canvas.getContext('2d');
             var mobile = isMobileViewport();
             new Chart(ctx, {
                 type: 'radar',
@@ -116,10 +204,11 @@
                     responsive: true,
                     maintainAspectRatio: false,
                     animation: {
-                        duration: mobile ? 1000 : 1500,
+                        duration: mobile ? 1100 : 1500,
                         easing: 'easeOutQuart',
                         delay: function (context) {
-                            return context.dataIndex * 100;
+                            if (context.type !== 'data' || context.mode !== 'default') return 0;
+                            return context.dataIndex * (mobile ? 70 : 100);
                         }
                     },
                     scales: {
@@ -135,8 +224,7 @@
                             },
                             pointLabels: {
                                 font: { size: mobile ? 10 : 12 }
-                            },
-                            animate: true
+                            }
                         }
                     },
                     plugins: {
@@ -150,9 +238,18 @@
         }
     }
 
-    function initKeywordChart(canvasId, items, colors) {
+    function initRadarChart(data) {
+        var canvas = document.getElementById('radarChart');
+        if (!data.radarChartData || !canvas) return;
+        whenVisible(canvas, function () {
+            createRadarChart(data);
+        });
+    }
+
+    function createKeywordChart(canvasId, items, colors) {
         var canvas = document.getElementById(canvasId);
         if (!canvas || !items || !items.length) return;
+        if (typeof Chart !== 'undefined' && Chart.getChart && Chart.getChart(canvas)) return;
 
         try {
             var topItems = items.slice(0, 10);
@@ -168,6 +265,14 @@
         } catch (error) {
             console.error('❌ ' + canvasId + ' エラー:', error);
         }
+    }
+
+    function initKeywordChart(canvasId, items, colors) {
+        var canvas = document.getElementById(canvasId);
+        if (!canvas || !items || !items.length) return;
+        whenVisible(canvas, function () {
+            createKeywordChart(canvasId, items, colors);
+        });
     }
 
     function initKeywordCharts(data) {
@@ -213,7 +318,7 @@
 
         window.addEventListener('productDataLoaded', function (e) {
             var data = e.detail;
-            console.log('📊 チャート描画開始');
+            console.log('📊 チャート表示待ち（スクロールで描画）');
             initRadarChart(data);
             initKeywordCharts(data);
         });
