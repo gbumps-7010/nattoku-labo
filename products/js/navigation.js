@@ -1,55 +1,53 @@
 /**
- * ナビゲーションバー＆関連製品システム V3.14
+ * ナビゲーションバー＆関連製品システム V3.15
  * - 固定ナビゲーションバー（製品ドロップダウン、メーカーフィルター、価格帯フィルター）
  * - 関連製品セクション（同メーカー・同価格帯の製品を自動表示）
+ * - 内部リンクはすべてルート絶対パス（/products/...）に統一し /products/products 404 を防止
  */
 
 // 全製品データ（価格・メーカー情報のみ）
 const ALL_PRODUCTS = [
-    { id: 'd10-plus', name: 'D10 Plus', manufacturer: 'Dreame', price: 26900 },
-    { id: 'deebot-mini', name: 'DEEBOT mini', manufacturer: 'ECOVACS', price: 69800 },
-    { id: 'deebot-n30', name: 'DEEBOT N30', manufacturer: 'ECOVACS', price: 34800 },
-    { id: 'deebot-n30-plus', name: 'DEEBOT N30 PLUS', manufacturer: 'ECOVACS', price: 69800 },
-    { id: 'deebot-t50-omni', name: 'DEEBOT T50 OMNI', manufacturer: 'ECOVACS', price: 64820 },
-    { id: 'deebot-t50s-omni', name: 'DEEBOT T50S OMNI', manufacturer: 'ECOVACS', price: 89800 },
-    { id: 'deebot-t80-omni', name: 'DEEBOT T80 OMNI', manufacturer: 'ECOVACS', price: 149800 },
-    { id: 'deebot-t90-omni', name: 'DEEBOT T90 OMNI', manufacturer: 'ECOVACS', price: 149800 },
-    { id: 'deebot-x11-omnicyclone', name: 'DEEBOT X11 OmniCyclone', manufacturer: 'ECOVACS', price: 229900 },
-    { id: 'deebot-x8-pro-omni', name: 'DEEBOT X8 PRO OMNI', manufacturer: 'ECOVACS', price: 199800 },
-    { id: 'eufy-clean-x8-pro-with-self-empty-station', name: 'Eufy Clean X8 Pro with Self-Empty Station', manufacturer: 'Anker', price: 69990 },
-    { id: 'eufy-robot-vacuum-auto-empty-c10', name: 'Eufy Robot Vacuum Auto-Empty C10', manufacturer: 'Anker', price: 29990 },
-    { id: 'eufy-robot-vacuum-omni-c20', name: 'Eufy Robot Vacuum Omni C20', manufacturer: 'Anker', price: 69990 },
-    { id: 'eufy-robot-vacuum-omni-c28', name: 'Eufy Robot Vacuum Omni C28', manufacturer: 'Anker', price: 99990 },
-    { id: 'eufy-robot-vacuum-omni-e25', name: 'Eufy Robot Vacuum Omni E25', manufacturer: 'Anker', price: 119920 },
-    { id: 'eufy-robot-vacuum-omni-s1-pro', name: 'Eufy Robot Vacuum Omni S1 Pro', manufacturer: 'Anker', price: 199900 },
-    { id: 'eufy-robovac-g10-hybrid', name: 'Eufy RoboVac G10 Hybrid', manufacturer: 'Anker', price: 29990 },
-    { id: 'eufy-robovac-g30', name: 'Eufy RoboVac G30', manufacturer: 'Anker', price: 29490 },
-    { id: 'eufy-robovac-g30-hybrid', name: 'Eufy RoboVac G30 Hybrid', manufacturer: 'Anker', price: 39990 },
-    { id: 'eufy-robovac-x8-hybrid', name: 'Eufy RoboVac X8 Hybrid', manufacturer: 'Anker', price: 59800 },
-    { id: 'eufy-x10-pro-omni', name: 'Eufy X10 Pro Omni', manufacturer: 'Anker', price: 69990 },
-    { id: 'k10-pro', name: 'ロボット掃除機 K10+ Pro', manufacturer: 'SwitchBot', price: 64800 },
-    { id: 'k11', name: 'ロボット掃除機 K11+', manufacturer: 'SwitchBot', price: 59800 },
-    { id: 'l10s-ultra-gen-3', name: 'L10s Ultra Gen 3', manufacturer: 'Dreame', price: 69800 },
-    { id: 'l20-ultra-complete', name: 'L20 Ultra Complete', manufacturer: 'Dreame', price: 52000 },
-    { id: 'l40-ultra-ae', name: 'L40 Ultra AE', manufacturer: 'Dreame', price: 99800 },
-    { id: 'l40s-pro-ultra', name: 'L40s Pro Ultra', manufacturer: 'Dreame', price: 99800 },
-    { id: 'q10p', name: 'Q10P+', manufacturer: 'Roborock', price: 89800 },
-    { id: 'q10v', name: 'Q10V', manufacturer: 'Roborock', price: 35999 },
-    { id: 'q10v-plus', name: 'Q10V+', manufacturer: 'Roborock', price: 79999 },
-    { id: 'qrevo-curvc', name: 'Qrevo CurvC', manufacturer: 'Roborock', price: 146900 },
-    { id: 'qrevo-l', name: 'Qrevo L', manufacturer: 'Roborock', price: 149800 },
-    { id: 'roomba-105-combo-autoempty', name: 'Roomba® 105 Combo + AutoEmpty™', manufacturer: 'iRobot', price: 59200 },
-    { id: 'roomba-max-705-combo-autowash', name: 'Roomba® Max 705 Combo + AutoWash™', manufacturer: 'iRobot', price: 179800 },
-    { id: 'roomba-max-705-vac-autoempty', name: 'Roomba® Max 705 Vac + AutoEmpty™', manufacturer: 'iRobot', price: 98800 },
-    { id: 'roomba-mini-autoempty', name: 'Roomba® Mini + AutoEmpty™', manufacturer: 'iRobot', price: 49800 },
-    { id: 'roomba-mini-slim-slimcharge', name: 'Roomba® Mini Slim + SlimCharge™', manufacturer: 'iRobot', price: 39800 },
-    { id: 'roomba-plus-405-combo-autowash', name: 'Roomba® Plus 405 Combo + AutoWash™', manufacturer: 'iRobot', price: 98800 },
-    { id: 'roomba-plus-505-combo-autowash', name: 'Roomba® Plus 505 Combo + AutoWash™', manufacturer: 'iRobot', price: 128400 },
-    { id: 's10', name: 'お掃除ロボットS10', manufacturer: 'SwitchBot', price: 119820 },
-    { id: 's20', name: 'お掃除ロボットS20', manufacturer: 'SwitchBot', price: 91800 },
-    { id: 'saros-10r', name: 'Saros 10R', manufacturer: 'Roborock', price: 269800 },
-    { id: 'x30-ultra', name: 'X30 Ultra', manufacturer: 'Dreame', price: 69800 },
-    { id: 'x50-ultra', name: 'X50 Ultra', manufacturer: 'Dreame', price: 199800 }
+    { id: 'eufy-clean-x8-pro-with-self-empty-station', name: 'Eufy Clean X8 Pro with Self-Empty Station', manufacturer: 'Anker', price: 69990, rating: 3.72 },
+    { id: 'eufy-robovac-g10-hybrid', name: 'Eufy RoboVac G10 Hybrid', manufacturer: 'Anker', price: 29990, rating: 3.47 },
+    { id: 'eufy-robovac-g30', name: 'Eufy RoboVac G30', manufacturer: 'Anker', price: 29490, rating: 4.16 },
+    { id: 'eufy-robovac-g30-hybrid', name: 'Eufy RoboVac G30 Hybrid', manufacturer: 'Anker', price: 39990, rating: 4.09 },
+    { id: 'eufy-robovac-x8-hybrid', name: 'Eufy RoboVac X8 Hybrid', manufacturer: 'Anker', price: 59800, rating: 3.53 },
+    { id: 'eufy-robot-vacuum-auto-empty-c10', name: 'Eufy Robot Vacuum Auto-Empty C10', manufacturer: 'Anker', price: 29990, rating: 4.01 },
+    { id: 'eufy-robot-vacuum-omni-c20', name: 'Eufy Robot Vacuum Omni C20', manufacturer: 'Anker', price: 69990, rating: 4.26 },
+    { id: 'eufy-robot-vacuum-omni-c28', name: 'Eufy Robot Vacuum Omni C28', manufacturer: 'Anker', price: 99990, rating: 4.19 },
+    { id: 'eufy-robot-vacuum-omni-e25', name: 'Eufy Robot Vacuum Omni E25', manufacturer: 'Anker', price: 119920, rating: 4.46 },
+    { id: 'eufy-robot-vacuum-omni-s1-pro', name: 'Eufy Robot Vacuum Omni S1 Pro', manufacturer: 'Anker', price: 199900, rating: 4.09 },
+    { id: 'eufy-x10-pro-omni', name: 'Eufy X10 Pro Omni', manufacturer: 'Anker', price: 69990, rating: 4.0 },
+    { id: 'd10-plus', name: 'D10 Plus', manufacturer: 'Dreame', price: 26900, rating: 4.19 },
+    { id: 'l20-ultra-complete', name: 'L20 Ultra Complete', manufacturer: 'Dreame', price: 52000, rating: 4.42 },
+    { id: 'l40-ultra-ae', name: 'L40 Ultra AE', manufacturer: 'Dreame', price: 99800, rating: 4.26 },
+    { id: 'l40s-pro-ultra', name: 'L40s Pro Ultra', manufacturer: 'Dreame', price: 99800, rating: 4.36 },
+    { id: 'x30-ultra', name: 'X30 Ultra', manufacturer: 'Dreame', price: 69800, rating: 4.27 },
+    { id: 'x50-ultra', name: 'X50 Ultra', manufacturer: 'Dreame', price: 199800, rating: 4.53 },
+    { id: 'deebot-n30', name: 'DEEBOT N30', manufacturer: 'ECOVACS', price: 34800, rating: 4.3 },
+    { id: 'deebot-n30-plus', name: 'DEEBOT N30 PLUS', manufacturer: 'ECOVACS', price: 69800, rating: 4.34 },
+    { id: 'deebot-t50-omni', name: 'DEEBOT T50 OMNI', manufacturer: 'ECOVACS', price: 64820, rating: 4.18 },
+    { id: 'deebot-t50s-omni', name: 'DEEBOT T50S OMNI', manufacturer: 'ECOVACS', price: 89800, rating: 3.86 },
+    { id: 'deebot-t80-omni', name: 'DEEBOT T80 OMNI', manufacturer: 'ECOVACS', price: 149800, rating: 4.46 },
+    { id: 'deebot-t90-omni', name: 'DEEBOT T90 OMNI', manufacturer: 'ECOVACS', price: 149800, rating: 4.36 },
+    { id: 'deebot-x11-omnicyclone', name: 'DEEBOT X11 OmniCyclone', manufacturer: 'ECOVACS', price: 229900, rating: 4.46 },
+    { id: 'deebot-x8-pro-omni', name: 'DEEBOT X8 PRO OMNI', manufacturer: 'ECOVACS', price: 199800, rating: 4.24 },
+    { id: 'deebot-mini', name: 'DEEBOT mini', manufacturer: 'ECOVACS', price: 69800, rating: 4.04 },
+    { id: 'q10p', name: 'Q10P+', manufacturer: 'Roborock', price: 41800, rating: 4.41 },
+    { id: 'q10v', name: 'Q10V', manufacturer: 'Roborock', price: 35999, rating: 4.14 },
+    { id: 'qrevo-curvc', name: 'Qrevo CurvC', manufacturer: 'Roborock', price: 146900, rating: 4.46 },
+    { id: 'saros-10r', name: 'Saros 10R', manufacturer: 'Roborock', price: 269800, rating: 4.44 },
+    { id: 's10', name: 'お掃除ロボットS10', manufacturer: 'SwitchBot', price: 119820, rating: 3.53 },
+    { id: 's20', name: 'お掃除ロボットS20', manufacturer: 'SwitchBot', price: 91800, rating: 4.14 },
+    { id: 'k10-pro', name: 'ロボット掃除機 K10+ Pro', manufacturer: 'SwitchBot', price: 64800, rating: 3.66 },
+    { id: 'k11', name: 'ロボット掃除機 K11+', manufacturer: 'SwitchBot', price: 59800, rating: 4.36 },
+    { id: 'roomba-105-combo-autoempty', name: 'Roomba® 105 Combo + AutoEmpty™', manufacturer: 'iRobot', price: 59200, rating: 3.94 },
+    { id: 'roomba-max-705-combo-autowash', name: 'Roomba® Max 705 Combo + AutoWash™', manufacturer: 'iRobot', price: 179800, rating: 3.91 },
+    { id: 'roomba-max-705-vac-autoempty', name: 'Roomba® Max 705 Vac + AutoEmpty™', manufacturer: 'iRobot', price: 98800, rating: 3.98 },
+    { id: 'roomba-mini-autoempty', name: 'Roomba® Mini + AutoEmpty™', manufacturer: 'iRobot', price: 49800, rating: 4.22 },
+    { id: 'roomba-mini-slim-slimcharge', name: 'Roomba® Mini Slim + SlimCharge™', manufacturer: 'iRobot', price: 39800, rating: 3.75 },
+    { id: 'roomba-plus-405-combo-autowash', name: 'Roomba® Plus 405 Combo + AutoWash™', manufacturer: 'iRobot', price: 98800, rating: 4.22 },
+    { id: 'roomba-plus-505-combo-autowash', name: 'Roomba® Plus 505 Combo + AutoWash™', manufacturer: 'iRobot', price: 128400, rating: 3.87 }
 ];
 
 // メーカー一覧
@@ -74,7 +72,7 @@ function createNavigationBar() {
     nav.innerHTML = `
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="../">
+                <a href="/">
                     <i class="fas fa-chart-line"></i>
                     <span>ナットクLabo</span>
                 </a>
@@ -343,7 +341,7 @@ function createRelatedProductsSection() {
             ` : ''}
             
             <div class="view-all-link">
-                <a href="../" class="btn-view-all">
+                <a href="/" class="btn-view-all">
                     <i class="fas fa-th"></i>
                     全製品を見る（${ALL_PRODUCTS.length}製品）
                 </a>
@@ -364,8 +362,10 @@ function createRelatedProductsSection() {
  * 製品カードを作成
  */
 function createProductCard(product) {
+    // Always use root-absolute paths. Relative "products/..." from /products/*
+    // resolves to /products/products/... and 404s in Search Console.
     return `
-        <a href="${product.id}" class="related-product-card">
+        <a href="/products/${product.id}" class="related-product-card">
             <div class="related-product-info">
                 <div class="related-manufacturer">${product.manufacturer}</div>
                 <div class="related-name">${product.name}</div>
@@ -426,7 +426,7 @@ function createFooter() {
  * 初期化
  */
 function initNavigation() {
-    console.log('🚀 ナビゲーションシステム V3.14 初期化');
+    console.log('🚀 ナビゲーションシステム V3.15 初期化');
     createNavigationBar();
     createRelatedProductsSection();
     createFooter();

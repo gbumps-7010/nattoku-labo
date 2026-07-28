@@ -46,12 +46,17 @@ function buildMetadata(data) {
   return { name, title, description };
 }
 
+function pageUrl(productId) {
+  return `https://nattoku-labo.com/products/${productId}`;
+}
+
 function buildStructuredData(data, metadata) {
+  const url = pageUrl(data.productId);
   const product = {
     "@context": "https://schema.org",
     "@type": "Product",
-    "@id": `https://nattoku-labo.com/products/${data.productId}#product`,
-    url: `https://nattoku-labo.com/products/${data.productId}`,
+    "@id": `${url}#product`,
+    url,
     name: metadata.name,
     description: metadata.description,
     brand: {
@@ -60,7 +65,7 @@ function buildStructuredData(data, metadata) {
     },
     offers: {
       "@type": "Offer",
-      url: `https://nattoku-labo.com/products/${data.productId}`,
+      url,
       price: Number(data.price),
       priceCurrency: "JPY",
       availability: "https://schema.org/InStock",
@@ -71,10 +76,163 @@ function buildStructuredData(data, metadata) {
   if (data.modelNumber) product.model = String(data.modelNumber);
   if (data.asin) product.sku = String(data.asin);
 
-  return JSON.stringify(product, null, 2)
-    .replace(/</g, "\\u003c")
-    .replace(/>/g, "\\u003e")
-    .replace(/&/g, "\\u0026");
+  const breadcrumb = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "ホーム",
+        item: "https://nattoku-labo.com/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: metadata.name,
+        item: url,
+      },
+    ],
+  };
+
+  const webpage = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${url}#webpage`,
+    url,
+    name: metadata.title,
+    description: metadata.description,
+    isPartOf: {
+      "@type": "WebSite",
+      name: "ナットクLabo",
+      url: "https://nattoku-labo.com/",
+    },
+    primaryEntity: { "@id": `${url}#product` },
+  };
+
+  return [product, breadcrumb, webpage]
+    .map((obj) =>
+      JSON.stringify(obj, null, 2)
+        .replace(/</g, "\\u003c")
+        .replace(/>/g, "\\u003e")
+        .replace(/&/g, "\\u0026"),
+    )
+    .map((json) => `<script type="application/ld+json">\n${json}\n    </script>`)
+    .join("\n    ");
+}
+
+function keywordList(items, limit = 8) {
+  if (!Array.isArray(items)) return [];
+  return items
+    .map((item) => (typeof item === "string" ? item : item?.keyword))
+    .filter(Boolean)
+    .slice(0, limit);
+}
+
+function buildUniqueSeoBlock(data, metadata) {
+  const name = metadata.name;
+  const reviews = Number(data.totalReviews) || 0;
+  const score = data.reliabilityScore ?? data.reliability?.score;
+  const satisfaction = data.categoryC?.userSatisfaction;
+  const complaints = Array.isArray(data.topComplaints) ? data.topComplaints.slice(0, 3) : [];
+  const perf = data.performanceAnalysis || {};
+  const perfEntries = Object.entries(perf)
+    .filter(([, v]) => v && (v.comment || v.score != null))
+    .slice(0, 6);
+  const positiveKw = keywordList(data.reviewKeywords?.positive);
+  const negativeKw = keywordList(data.reviewKeywords?.negative);
+  const updateNote = data.updateInfo?.note || "";
+
+  const complaintHtml = complaints
+    .map((c) => {
+      const title = escapeHtml(c.title || "不満点");
+      const desc = escapeHtml(c.description || "");
+      const solution = c.solution ? `<p><strong>対策:</strong> ${escapeHtml(c.solution)}</p>` : "";
+      const pct = c.percentage != null ? `${escapeHtml(c.percentage)}%` : "";
+      return `<li><strong>${title}${pct ? `（${pct}）` : ""}</strong><p>${desc}</p>${solution}</li>`;
+    })
+    .join("\n");
+
+  const perfHtml = perfEntries
+    .map(([key, v]) => {
+      const labelMap = {
+        floorCleaning: "床掃除",
+        carpetCleaning: "カーペット",
+        petHairRemoval: "ペットの毛",
+        quietness: "静音性",
+        stepClimbing: "段差乗り越え",
+        maintenance: "メンテナンス",
+        appStability: "アプリ安定性",
+        batteryLife: "バッテリー",
+      };
+      const label = labelMap[key] || key;
+      const scoreText = v.score != null ? `（評価 ${escapeHtml(v.score)}）` : "";
+      return `<li><strong>${escapeHtml(label)}${scoreText}</strong><p>${escapeHtml(v.comment || "")}</p></li>`;
+    })
+    .join("\n");
+
+  const kw = (arr) =>
+    arr.length
+      ? `<p>${arr.map((k) => `<span class="seo-kw">${escapeHtml(k)}</span>`).join(" ")}</p>`
+      : "";
+
+  return `<!-- SEO_PRERENDER_START -->
+        <section class="seo-unique-summary" aria-label="${escapeHtml(name)}の口コミ分析サマリー" style="max-width:900px;margin:2rem auto 2.5rem;padding:1.5rem 1.75rem;background:#fff;border:1px solid #e2e8f0;border-radius:14px;">
+            <style>
+                .seo-unique-summary h2{font-size:1.35rem;font-weight:800;color:#0f172a;margin:0 0 0.75rem;}
+                .seo-unique-summary h3{font-size:1.05rem;font-weight:700;color:#1e293b;margin:1.25rem 0 0.5rem;}
+                .seo-unique-summary p,.seo-unique-summary li{color:#334155;line-height:1.75;font-size:0.95rem;}
+                .seo-unique-summary ul{margin:0.35rem 0 0;padding-left:1.2rem;}
+                .seo-unique-summary li{margin-bottom:0.65rem;}
+                .seo-unique-summary .seo-kw{display:inline-block;margin:0.2rem 0.35rem 0.2rem 0;padding:0.2rem 0.55rem;background:#f1f5f9;border-radius:999px;font-size:0.82rem;color:#0f172a;}
+            </style>
+            <h2>${escapeHtml(name)}の口コミ分析サマリー</h2>
+            <p>${escapeHtml(metadata.description)}</p>
+            <p>${escapeHtml(name)}について、ECサイトの口コミ${escapeHtml(reviews)}件を統計解析しました。口コミの信頼度は${escapeHtml(score ?? "—")}点です。${
+              satisfaction?.comment ? escapeHtml(satisfaction.comment) : ""
+            }</p>
+            ${updateNote ? `<p><strong>分析時点の傾向:</strong> ${escapeHtml(updateNote)}</p>` : ""}
+            ${
+              positiveKw.length || negativeKw.length
+                ? `<h3>口コミで目立ったキーワード</h3>
+            ${positiveKw.length ? `<p><strong>高評価側:</strong></p>${kw(positiveKw)}` : ""}
+            ${negativeKw.length ? `<p><strong>低評価側:</strong></p>${kw(negativeKw)}` : ""}`
+                : ""
+            }
+            ${perfHtml ? `<h3>${escapeHtml(name)}の性能に関する利用者の声</h3><ul>${perfHtml}</ul>` : ""}
+            ${complaintHtml ? `<h3>${escapeHtml(name)}で多い不満点と対策</h3><ul>${complaintHtml}</ul>` : ""}
+            <p>${escapeHtml(name)}の購入を検討する際は、上記の口コミ傾向と最新価格をあわせて判断してください。詳細なスコア内訳・キーワード分布は本ページ下部の各セクションで確認できます。</p>
+        </section>
+        <!-- SEO_PRERENDER_END -->`;
+}
+
+function upsertOpenGraphTags(html, data, metadata) {
+  const url = pageUrl(data.productId);
+  const tags = [
+    `<meta property="og:type" content="product">`,
+    `<meta property="og:site_name" content="ナットクLabo">`,
+    `<meta property="og:locale" content="ja_JP">`,
+    `<meta property="og:url" content="${escapeHtml(url)}">`,
+    `<meta property="og:title" content="${escapeHtml(metadata.title)}">`,
+    `<meta property="og:description" content="${escapeHtml(metadata.description)}">`,
+  ];
+  if (data.imageUrl) {
+    tags.push(`<meta property="og:image" content="${escapeHtml(data.imageUrl)}">`);
+  }
+  tags.push(`<meta name="twitter:card" content="summary_large_image">`);
+  tags.push(`<meta name="twitter:title" content="${escapeHtml(metadata.title)}">`);
+  tags.push(`<meta name="twitter:description" content="${escapeHtml(metadata.description)}">`);
+
+  html = html.replace(
+    /\s*<meta\s+(?:property="og:[^"]+"|name="twitter:[^"]+")[^>]*>\s*/gi,
+    "\n    ",
+  );
+
+  const canonicalRe = /(<link\s+rel="canonical"\s+href="[^"]*"\s*\/?>)/i;
+  if (!canonicalRe.test(html)) {
+    throw new Error(`${data.productId}: canonical tag missing for Open Graph insertion`);
+  }
+  return html.replace(canonicalRe, `$1\n    ${tags.join("\n    ")}`);
 }
 
 function replaceSimpleDynamic(html, dottedPath, value) {
@@ -224,7 +382,7 @@ function ensureMobileOverrides(html) {
 
 function prerenderHtml(html, data) {
   const metadata = buildMetadata(data);
-  const structuredData = buildStructuredData(data, metadata);
+  const structuredDataScripts = buildStructuredData(data, metadata);
 
   html = ensureMobileOverrides(html);
   html = html.replace(/<title>[\s\S]*?<\/title>/i, `<title>${escapeHtml(metadata.title)}</title>`);
@@ -234,12 +392,27 @@ function prerenderHtml(html, data) {
   );
   html = html.replace(
     /<link\s+rel="canonical"\s+href="[^"]*"\s*\/?>/i,
-    `<link rel="canonical" href="https://nattoku-labo.com/products/${escapeHtml(data.productId)}">`,
+    `<link rel="canonical" href="${pageUrl(escapeHtml(data.productId))}">`,
   );
-  html = html.replace(
-    /<script\s+type="application\/ld\+json">[\s\S]*?<\/script>/i,
-    `<script type="application/ld+json">\n${structuredData}\n    </script>`,
-  );
+  html = upsertOpenGraphTags(html, data, metadata);
+
+  // Replace the first Product JSON-LD block, then drop any leftover JSON-LD in <head>
+  // so Breadcrumb/WebPage scripts stay singular and in sync.
+  let replacedJsonLd = false;
+  html = html.replace(/<script\s+type="application\/ld\+json">[\s\S]*?<\/script>/gi, (match) => {
+    if (!replacedJsonLd) {
+      replacedJsonLd = true;
+      return structuredDataScripts;
+    }
+    return "";
+  });
+  if (!replacedJsonLd) {
+    html = html.replace(
+      /<link\s+rel="canonical"[^>]*>/i,
+      (m) => `${m}\n    ${structuredDataScripts}`,
+    );
+  }
+
   html = html.replace(
     /(<p class="reliability-intro-text"[^>]*>)[\s\S]*?(<\/p>)/i,
     '$1\n                    このスコアは、口コミデータの<strong>量が妥当か</strong>、<strong>使った人の意見がおおむね一致しているか</strong>、<strong>最新の状況を反映しているか</strong>を総合的に評価したものです。85点以上は「購入判断の参考として、信頼できる水準」と考えられます。\n                $2',
@@ -300,8 +473,46 @@ function prerenderHtml(html, data) {
     html = replaceSimpleDynamic(html, dottedPath, formatValue(dottedPath, value));
   }
 
+  const seoBlock = buildUniqueSeoBlock(data, metadata);
   const existingSummary = /[ \t]*<!-- SEO_PRERENDER_START -->[\s\S]*?<!-- SEO_PRERENDER_END -->/;
-  html = html.replace(existingSummary, "");
+  if (existingSummary.test(html)) {
+    html = html.replace(existingSummary, seoBlock);
+  } else {
+    // Prefer right after <div class="container"> so crawlers see unique copy early.
+    const containerRe = /(<div class="container">\s*)/;
+    if (containerRe.test(html)) {
+      html = html.replace(containerRe, `$1\n        ${seoBlock}\n`);
+    } else {
+      html = html.replace(/<\/header>/i, `</header>\n    ${seoBlock}\n`);
+    }
+  }
+
+  // Make shared section headings product-specific so pages are not near-identical shells.
+  const namedHeadings = [
+    ["口コミの信頼度", `${metadata.name}の口コミの信頼度`],
+    ["総合性能分析", `${metadata.name}の総合性能分析`],
+    ["口コミキーワード", `${metadata.name}の口コミキーワード`],
+    ["主な不満点と対策", `${metadata.name}の主な不満点と対策`],
+    ["ライフスタイル別の相性診断", `${metadata.name}のライフスタイル別の相性診断`],
+    [
+      "毎日の掃除から解放されて、自由な時間が増えます",
+      `${metadata.name}で毎日の掃除から解放されて、自由な時間が増えます`,
+    ],
+    [
+      "毎日使い続けるためのコスト（維持費）",
+      `${metadata.name}を毎日使い続けるためのコスト（維持費）`,
+    ],
+  ];
+  for (const [generic, specific] of namedHeadings) {
+    if (html.includes(specific)) continue;
+    // Headings are usually on their own indented line after an icon tag.
+    const lineRe = new RegExp(`(^\\s*)${escapeRegExp(generic)}(\\s*$)`, "m");
+    if (lineRe.test(html)) {
+      html = html.replace(lineRe, `$1${escapeHtml(specific)}$2`);
+      continue;
+    }
+    html = html.split(generic).join(escapeHtml(specific));
+  }
 
   return html;
 }
@@ -324,8 +535,12 @@ function validatePrerenderedHtml(html, data) {
       10,
     ],
   ];
+  const url = pageUrl(data.productId);
   const required = [
-    `<link rel="canonical" href="https://nattoku-labo.com/products/${data.productId}">`,
+    `<link rel="canonical" href="${url}">`,
+    `property="og:url" content="${url}"`,
+    "<!-- SEO_PRERENDER_START -->",
+    "<!-- SEO_PRERENDER_END -->",
     `data-dynamic="productName">${escapeHtml(data.productName)}</h1>`,
     "/* MOBILE_LAYOUT_FIX_START */",
   ];
@@ -344,17 +559,19 @@ function validatePrerenderedHtml(html, data) {
     }
   }
 
-  const jsonLdMatch = html.match(
-    /<script\s+type="application\/ld\+json">([\s\S]*?)<\/script>/i,
-  );
-  if (!jsonLdMatch) throw new Error(`${data.productId}: Product JSON-LD not found`);
-  const jsonLd = JSON.parse(jsonLdMatch[1]);
+  const jsonLdBlocks = [...html.matchAll(/<script\s+type="application\/ld\+json">([\s\S]*?)<\/script>/gi)];
+  if (!jsonLdBlocks.length) throw new Error(`${data.productId}: Product JSON-LD not found`);
+  const jsonLd = JSON.parse(jsonLdBlocks[0][1]);
   if (
     jsonLd["@type"] !== "Product" ||
-    jsonLd.url !== `https://nattoku-labo.com/products/${data.productId}` ||
+    jsonLd.url !== url ||
     jsonLd.aggregateRating !== undefined
   ) {
     throw new Error(`${data.productId}: Product JSON-LD values do not match source JSON`);
+  }
+  const types = jsonLdBlocks.map((m) => JSON.parse(m[1])["@type"]);
+  if (!types.includes("BreadcrumbList") || !types.includes("WebPage")) {
+    throw new Error(`${data.productId}: BreadcrumbList/WebPage JSON-LD missing`);
   }
 }
 

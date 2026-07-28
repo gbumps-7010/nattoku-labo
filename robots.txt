@@ -27,8 +27,9 @@ Disallow: /tools/
 # 製品JSON・広告断片は _headers の X-Robots-Tag で noindex
 # Googleがnoindexを確認できるよう、robots.txt ではブロックしない
 
-# 旧テンプレート・テストURLは _redirects で正規ページへ301集約
-# Googleがリダイレクトを確認できるよう、robots.txt ではブロックしない
+# 旧テンプレート・廃止製品は _redirects で 410
+# 旧スラッグは 301 で新URLへ（robots でブロックしない＝Googleがリダイレクトを辿れる）
+# UTM等付きURLは functions/_middleware.js で正規URLへ301（代替ページ化を防止）
 
-# サイトマップの場所
+# サイトマップの場所（拡張子なしの正規URLのみ。リダイレクト元は含めない）
 Sitemap: https://nattoku-labo.com/sitemap.xml
