@@ -187,27 +187,19 @@ const STYLE = `<style>
     .compare-scroll-wrap {
       position: relative;
     }
-    .compare-scroll-wrap::before,
     .compare-scroll-wrap::after {
       content: "";
       position: absolute;
       top: 0;
+      right: 0;
       bottom: 8px;
-      width: 22px;
+      width: 28px;
       z-index: 3;
       pointer-events: none;
       opacity: 0;
       transition: opacity .15s ease;
-    }
-    .compare-scroll-wrap::before {
-      left: 0;
-      background: linear-gradient(to right, rgba(255,255,255,.95), transparent);
-    }
-    .compare-scroll-wrap::after {
-      right: 0;
       background: linear-gradient(to left, rgba(255,255,255,.95), transparent);
     }
-    .compare-scroll-wrap.can-scroll-left::before,
     .compare-scroll-wrap.can-scroll-right::after {
       opacity: 1;
     }
@@ -215,9 +207,13 @@ const STYLE = `<style>
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
       overscroll-behavior-x: contain;
-      scroll-snap-type: x proximity;
       padding-bottom: 0.35rem;
       scrollbar-width: thin;
+      /* Keep first product clear of sticky label column when snapping/resting */
+      scroll-padding-left: 5.5rem;
+    }
+    @media (min-width: 720px) {
+      .compare-scroll { scroll-padding-left: 7.2rem; }
     }
     .compare-scroll::-webkit-scrollbar { height: 7px; }
     .compare-scroll::-webkit-scrollbar-thumb {
@@ -270,7 +266,6 @@ const STYLE = `<style>
       font-size: 0.72rem;
     }
     table.compare thead th.product-col {
-      scroll-snap-align: start;
       background: #f1f5f9;
     }
     .product-head {
@@ -918,13 +913,19 @@ const scrollHelperScript = `
       const scroller = document.querySelector(".compare-scroll");
       if (!wrap || !scroller) return;
       const update = () => {
-        const max = scroller.scrollWidth - scroller.clientWidth;
-        wrap.classList.toggle("can-scroll-left", scroller.scrollLeft > 4);
+        const max = Math.max(0, scroller.scrollWidth - scroller.clientWidth);
         wrap.classList.toggle("can-scroll-right", scroller.scrollLeft < max - 4);
+      };
+      // Ensure the leftmost product starts fully visible beside the sticky label.
+      const resetLeft = () => {
+        scroller.scrollLeft = 0;
+        update();
       };
       scroller.addEventListener("scroll", update, { passive: true });
       window.addEventListener("resize", update);
-      update();
+      if (document.readyState === "complete") resetLeft();
+      else window.addEventListener("load", resetLeft);
+      requestAnimationFrame(resetLeft);
     })();
   </script>`;
 
