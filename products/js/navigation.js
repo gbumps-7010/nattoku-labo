@@ -134,7 +134,7 @@ function createNavigationBar() {
                     </div>
                 </div>
                 
-                <a href="/compare/robot-vacuum-10-15man" class="nav-link">
+                <a href="/compare/" class="nav-link">
                     <i class="fas fa-table"></i> おすすめ比較
                 </a>
 

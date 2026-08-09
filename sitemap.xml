@@ -16,11 +16,54 @@
   </url>
 
   <url>
+    <loc>https://nattoku-labo.com/compare/</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.96</priority>
+  </url>
+
+  <url>
+    <loc>https://nattoku-labo.com/compare/robot-vacuum-under-5man</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <url>
+    <loc>https://nattoku-labo.com/compare/robot-vacuum-5-7man</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <url>
+    <loc>https://nattoku-labo.com/compare/robot-vacuum-7-10man</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <url>
     <loc>https://nattoku-labo.com/compare/robot-vacuum-10-15man</loc>
     <lastmod>2026-08-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
+
+  <url>
+    <loc>https://nattoku-labo.com/compare/robot-vacuum-15-20man</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <url>
+    <loc>https://nattoku-labo.com/compare/robot-vacuum-20man-plus</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
 
   <url>
     <loc>https://nattoku-labo.com/privacy</loc>
