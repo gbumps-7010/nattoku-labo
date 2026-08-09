@@ -134,6 +134,10 @@ function createNavigationBar() {
                     </div>
                 </div>
                 
+                <a href="/compare/robot-vacuum-10-15man" class="nav-link">
+                    <i class="fas fa-table"></i> おすすめ比較
+                </a>
+
                 <a href="/about" class="nav-link">
                     <i class="fas fa-info-circle"></i> サイトについて
                 </a>
