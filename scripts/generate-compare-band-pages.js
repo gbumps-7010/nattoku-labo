@@ -709,7 +709,7 @@ function perf(p, key) {
 function autoOneLiner(p) {
   const reviews = p.totalReviews || 0;
   if (reviews < 30) return "口コミ少なめ。参考程度に";
-  if (reviews < 80) return "データは中位。注意点を要確認";
+  if (reviews < 80) return "口コミはそこそこ。注意点も確認を";
   const scores = [
     ["床", perf(p, "floorCleaning")],
     ["静音", perf(p, "quietness")],
