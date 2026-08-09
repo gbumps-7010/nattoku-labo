@@ -219,11 +219,6 @@
     font-weight: 600;
 }
 
-.product-meta .rating {
-    color: #f59e0b;
-    font-weight: 600;
-}
-
 /* ===== メーカー・価格帯ドロップダウン ===== */
 .manufacturer-filter,
 .price-filter {
@@ -245,6 +240,47 @@
     font-size: 0.8rem;
     color: #64748b;
     font-weight: 500;
+}
+
+/* ===== モバイルでも常時見える主要リンク ===== */
+.nav-quick-links {
+    display: none;
+    align-items: center;
+    gap: 0.4rem;
+    flex: 0 1 auto;
+    min-width: 0;
+}
+
+.nav-quick-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.45rem 0.7rem;
+    min-height: 40px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.82rem;
+    line-height: 1.2;
+    white-space: nowrap;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.nav-quick-link i {
+    font-size: 0.78rem;
+}
+
+.nav-quick-link-secondary {
+    background: transparent;
+    border-color: rgba(255, 255, 255, 0.22);
+    font-weight: 600;
+}
+
+.compare-dropdown {
+    min-width: 220px;
 }
 
 /* ===== モバイルメニュー ===== */
@@ -403,11 +439,6 @@ body.nav-mobile-open::before {
     font-weight: 700;
 }
 
-.related-rating {
-    color: #f59e0b;
-    font-weight: 600;
-}
-
 .related-arrow {
     color: #cbd5e1;
     font-size: 1.3rem;
@@ -474,8 +505,24 @@ body.nav-mobile-open::before {
         display: inline-flex;
     }
 
+    .nav-quick-links {
+        display: flex;
+        margin-left: auto;
+    }
+
+    .nav-quick-link-secondary {
+        display: none;
+    }
+
+    .nav-quick-link span {
+        max-width: 6.5rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
     .nav-logo {
-        flex: 1 1 auto;
+        flex: 0 1 auto;
+        max-width: 42%;
     }
     
     .nav-menu {
@@ -622,11 +669,6 @@ body:has(#fixed-navigation) .product-meta {
     opacity: 1;
 }
 
-body:has(#fixed-navigation) .product-meta .rating-display span {
-    color: rgba(255, 255, 255, 0.92);
-    opacity: 1 !important;
-}
-
 body:has(#fixed-navigation) .product-meta > div {
     color: #fff;
 }
@@ -751,52 +793,11 @@ body:has(#fixed-navigation) .container {
         padding: 0.35rem 0.65rem !important;
     }
 
-    /* 価格注意書き：上方向・横はみ出しを防ぎ、価格ブロック直下に収める */
-    body:has(#fixed-navigation) header,
-    body:has(#fixed-navigation) .header-content,
-    body:has(#fixed-navigation) .product-info {
-        overflow: visible;
-    }
-
-    body:has(#fixed-navigation) .product-info > div:has(> .price-info-tooltip) {
-        position: relative;
-        z-index: 5;
-    }
-
-    body:has(#fixed-navigation) .price-info-tooltip {
-        position: static;
-    }
-
     body:has(#fixed-navigation) .price-info-tooltip .tooltip-text {
+        width: min(280px, calc(100vw - 2.5rem));
+        max-width: calc(100vw - 2.5rem);
         left: 0;
-        right: 0;
-        width: auto;
-        max-width: none;
-        bottom: auto;
-        top: calc(100% + 0.4rem);
         transform: none;
-        box-sizing: border-box;
-        font-size: 0.78rem;
-        padding: 0.75rem 0.875rem;
-        line-height: 1.55;
-        text-align: left;
-        word-break: break-word;
-        overflow-wrap: anywhere;
-    }
-
-    body:has(#fixed-navigation) .price-info-tooltip .tooltip-text::after {
-        top: auto;
-        bottom: 100%;
-        left: 50%;
-        transform: translateX(-50%);
-        border-color: transparent transparent rgba(0, 0, 0, 0.95) transparent;
-    }
-
-    body:has(#fixed-navigation) .price-note {
-        max-width: 100%;
-        line-height: 1.45;
-        white-space: normal;
-        overflow-wrap: anywhere;
     }
 
     body:has(#fixed-navigation) .chart-container {

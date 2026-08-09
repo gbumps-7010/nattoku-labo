@@ -21,6 +21,7 @@
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/products/css/navigation.css?v=20260810a">
     
     <style>
         * {
@@ -106,17 +107,51 @@
         .header-nav-link {
             color: white;
             text-decoration: none;
-            padding: 0.5rem 1.5rem;
+            padding: 0.5rem 1.15rem;
             background: rgba(255, 255, 255, 0.2);
             border-radius: 25px;
             font-weight: 600;
             transition: all 0.3s ease;
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.92rem;
         }
         
         .header-nav-link:hover {
             background: rgba(255, 255, 255, 0.35);
             transform: translateY(-2px);
+        }
+
+        .header-nav {
+            margin-top: 1.15rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.55rem;
+        }
+
+        .header-nav-link.primary {
+            background: #fef08a;
+            color: #0f172a;
+            font-weight: 800;
+        }
+
+        .header-nav-link.primary:hover {
+            background: #fde047;
+        }
+
+        @media (max-width: 640px) {
+            header { padding: 1.75rem 0 2rem; }
+            .logo { font-size: 1.55rem; gap: 0.55rem; }
+            .tagline { font-size: 0.95rem; padding: 0 0.5rem; }
+            .header-content { padding: 0 1rem; }
+            .header-nav { gap: 0.45rem; }
+            .header-nav-link {
+                padding: 0.55rem 0.85rem;
+                font-size: 0.84rem;
+                min-height: 42px;
+            }
         }
         
         /* Search Section */
@@ -520,11 +555,17 @@
                 もう失敗しない。ナットクLabo
             </h1>
             <p class="tagline">独自調査データから分析。あなたに最適な製品が見つかる</p>
-            <div style="margin-top: 1rem; text-align: center;">
-                <a href="/about" class="header-nav-link">
-                    <i class="fas fa-info-circle"></i> このサイトについて
+            <nav class="header-nav" aria-label="主要メニュー">
+                <a href="/compare/" class="header-nav-link primary">
+                    <i class="fas fa-table"></i> おすすめ比較
                 </a>
-            </div>
+                <a href="#searchInput" class="header-nav-link">
+                    <i class="fas fa-search"></i> 製品を探す
+                </a>
+                <a href="/about" class="header-nav-link">
+                    <i class="fas fa-info-circle"></i> サイトについて
+                </a>
+            </nav>
         </div>
     </header>
 
@@ -571,6 +612,24 @@
         </div>
     </div>
 
+    <!-- おすすめ比較（検索直下・スマホでもすぐ見える） -->
+    <div id="compare-bands" style="max-width: 1200px; margin: 0 auto 2rem; padding: 0 2rem;">
+        <div style="display:grid;gap:0.75rem;">
+            <a href="/compare/" style="display:block;text-decoration:none;background:#1e40af;border-radius:16px;padding:1.15rem 1.5rem;color:#fff;">
+                <strong style="display:block;font-size:1.15rem;margin-bottom:0.3rem;">ロボット掃除機 おすすめ比較（価格帯別）｜口コミ分析</strong>
+                <span style="font-size:0.95rem;font-weight:600;opacity:0.95;">〜5万 / 5〜7万 / 7〜10万 / 10〜15万 / 15〜20万 / 20万〜 の一覧 →</span>
+            </a>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:0.55rem;">
+                <a href="/compare/robot-vacuum-under-5man" style="display:block;text-decoration:none;background:#eff6ff;border:1px solid #bfdbfe;border-radius:12px;padding:0.85rem 0.9rem;color:#1e3a8a;text-align:center;"><strong>〜5万円</strong></a>
+                <a href="/compare/robot-vacuum-5-7man" style="display:block;text-decoration:none;background:#eff6ff;border:1px solid #bfdbfe;border-radius:12px;padding:0.85rem 0.9rem;color:#1e3a8a;text-align:center;"><strong>5〜7万円</strong></a>
+                <a href="/compare/robot-vacuum-7-10man" style="display:block;text-decoration:none;background:#eff6ff;border:1px solid #bfdbfe;border-radius:12px;padding:0.85rem 0.9rem;color:#1e3a8a;text-align:center;"><strong>7〜10万円</strong></a>
+                <a href="/compare/robot-vacuum-10-15man" style="display:block;text-decoration:none;background:#eff6ff;border:1px solid #bfdbfe;border-radius:12px;padding:0.85rem 0.9rem;color:#1e3a8a;text-align:center;"><strong>10〜15万円</strong></a>
+                <a href="/compare/robot-vacuum-15-20man" style="display:block;text-decoration:none;background:#eff6ff;border:1px solid #bfdbfe;border-radius:12px;padding:0.85rem 0.9rem;color:#1e3a8a;text-align:center;"><strong>15〜20万円</strong></a>
+                <a href="/compare/robot-vacuum-20man-plus" style="display:block;text-decoration:none;background:#eff6ff;border:1px solid #bfdbfe;border-radius:12px;padding:0.85rem 0.9rem;color:#1e3a8a;text-align:center;"><strong>20万円〜</strong></a>
+            </div>
+        </div>
+    </div>
+
     <!-- Results Section -->
     <div class="results-section">
         <div class="results-header">
@@ -592,24 +651,6 @@
             <i class="fas fa-search"></i>
             <h3>該当する製品が見つかりませんでした</h3>
             <p>検索条件を変更してもう一度お試しください</p>
-        </div>
-    </div>
-
-    <!-- おすすめ比較（SEO用） -->
-    <div style="max-width: 1200px; margin: 2rem auto 0; padding: 0 2rem;">
-        <div style="display:grid;gap:0.75rem;">
-            <a href="/compare/" style="display:block;text-decoration:none;background:#1e40af;border-radius:16px;padding:1.15rem 1.5rem;color:#fff;">
-                <strong style="display:block;font-size:1.15rem;margin-bottom:0.3rem;">ロボット掃除機 おすすめ比較（価格帯別）｜口コミ分析</strong>
-                <span style="font-size:0.95rem;font-weight:600;opacity:0.95;">〜5万 / 5〜7万 / 7〜10万 / 10〜15万 / 15〜20万 / 20万〜 の一覧 →</span>
-            </a>
-            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:0.65rem;">
-                <a href="/compare/robot-vacuum-under-5man" style="display:block;text-decoration:none;background:#eff6ff;border:1px solid #bfdbfe;border-radius:12px;padding:0.9rem 1rem;color:#1e3a8a;"><strong>〜5万円</strong></a>
-                <a href="/compare/robot-vacuum-5-7man" style="display:block;text-decoration:none;background:#eff6ff;border:1px solid #bfdbfe;border-radius:12px;padding:0.9rem 1rem;color:#1e3a8a;"><strong>5〜7万円</strong></a>
-                <a href="/compare/robot-vacuum-7-10man" style="display:block;text-decoration:none;background:#eff6ff;border:1px solid #bfdbfe;border-radius:12px;padding:0.9rem 1rem;color:#1e3a8a;"><strong>7〜10万円</strong></a>
-                <a href="/compare/robot-vacuum-10-15man" style="display:block;text-decoration:none;background:#eff6ff;border:1px solid #bfdbfe;border-radius:12px;padding:0.9rem 1rem;color:#1e3a8a;"><strong>10〜15万円</strong></a>
-                <a href="/compare/robot-vacuum-15-20man" style="display:block;text-decoration:none;background:#eff6ff;border:1px solid #bfdbfe;border-radius:12px;padding:0.9rem 1rem;color:#1e3a8a;"><strong>15〜20万円</strong></a>
-                <a href="/compare/robot-vacuum-20man-plus" style="display:block;text-decoration:none;background:#eff6ff;border:1px solid #bfdbfe;border-radius:12px;padding:0.9rem 1rem;color:#1e3a8a;"><strong>20万円〜</strong></a>
-            </div>
         </div>
     </div>
 
@@ -1078,5 +1119,6 @@
             loadAndInit();
         }
     </script>
+    <script src="/products/js/navigation.js?v=20260810a"></script>
 </body>
 </html>

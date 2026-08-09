@@ -61,6 +61,17 @@ const PRICE_RANGES = [
     { label: '10万円以上', min: 100000, max: Infinity }
 ];
 
+// おすすめ比較（価格帯別）
+const COMPARE_BANDS = [
+    { label: '比較一覧（すべて）', href: '/compare/' },
+    { label: '〜5万円', href: '/compare/robot-vacuum-under-5man' },
+    { label: '5〜7万円', href: '/compare/robot-vacuum-5-7man' },
+    { label: '7〜10万円', href: '/compare/robot-vacuum-7-10man' },
+    { label: '10〜15万円', href: '/compare/robot-vacuum-10-15man' },
+    { label: '15〜20万円', href: '/compare/robot-vacuum-15-20man' },
+    { label: '20万円〜', href: '/compare/robot-vacuum-20man-plus' },
+];
+
 /**
  * 固定ナビゲーションバーを作成
  */
@@ -75,6 +86,17 @@ function createNavigationBar() {
                 <a href="/">
                     <i class="fas fa-chart-line"></i>
                     <span>ナットクLabo</span>
+                </a>
+            </div>
+
+            <div class="nav-quick-links" aria-label="主要メニュー">
+                <a href="/compare/" class="nav-quick-link">
+                    <i class="fas fa-table"></i>
+                    <span>おすすめ比較</span>
+                </a>
+                <a href="/about" class="nav-quick-link nav-quick-link-secondary">
+                    <i class="fas fa-info-circle"></i>
+                    <span>サイトについて</span>
                 </a>
             </div>
             
@@ -134,9 +156,18 @@ function createNavigationBar() {
                     </div>
                 </div>
                 
-                <a href="/compare/" class="nav-link">
-                    <i class="fas fa-table"></i> おすすめ比較
-                </a>
+                <div class="nav-dropdown">
+                    <button class="nav-link dropdown-toggle">
+                        <i class="fas fa-table"></i> おすすめ比較 <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-menu compare-dropdown">
+                        ${COMPARE_BANDS.map(b => `
+                            <a href="${b.href}" class="dropdown-item">
+                                <span class="price-label">${b.label}</span>
+                            </a>
+                        `).join('')}
+                    </div>
+                </div>
 
                 <a href="/about" class="nav-link">
                     <i class="fas fa-info-circle"></i> サイトについて
