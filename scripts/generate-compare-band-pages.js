@@ -500,19 +500,25 @@ const STYLE = `<style>
     }
     .aff-card-direct {
       text-align: center;
-      margin-bottom: 0.45rem;
+      margin-bottom: 0.55rem;
+      position: relative;
     }
-    .aff-card-direct a {
-      display: inline-block;
-      max-width: 100%;
-      word-break: break-word;
-    }
-    .aff-card-direct img {
-      max-width: 100% !important;
-      width: auto !important;
-      height: auto !important;
+    .aff-card-direct .official-hp-btn {
       display: block;
-      margin: 0 auto;
+      width: 100%;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 800;
+      font-size: 0.95rem;
+      line-height: 1.4;
+      padding: 0.85rem 1rem;
+      border-radius: 12px;
+      background: linear-gradient(145deg, #0e7490 0%, #0d9488 42%, #059669 100%);
+      box-shadow: 0 6px 16px rgba(13, 148, 136, 0.28);
+    }
+    .aff-card-direct .official-hp-btn:hover {
+      filter: brightness(1.05);
     }
     .aff-card-moshimo {
       width: 100%;
@@ -534,14 +540,30 @@ const STYLE = `<style>
     }
     .aff-card-status.error { color: var(--bad); }
     .price-jump {
-      display: inline-block;
-      margin-top: 0.15rem;
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      margin-top: 0.35rem;
+      padding: 0.45rem 0.35rem;
       font-size: 0.68rem;
-      font-weight: 700;
-      color: var(--primary);
+      font-weight: 800;
+      line-height: 1.3;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      background: linear-gradient(145deg, #1e40af 0%, #2563eb 55%, #0ea5e9 100%);
+      border: 1px solid #1d4ed8;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(37, 99, 235, 0.28);
+    }
+    .price-jump:hover {
+      filter: brightness(1.06);
       text-decoration: none;
     }
-    .price-jump:hover { text-decoration: underline; }
+    .price-jump:focus-visible {
+      outline: 2px solid #0ea5e9;
+      outline-offset: 2px;
+    }
     footer {
       border-top: 1px solid var(--line);
       padding: 1.5rem 1rem;
@@ -827,7 +849,7 @@ function productHead(prod) {
                       <div class="product-name">${escapeHtml(prod.name)}</div>
                       <div class="product-mfr">${escapeHtml(prod.brand)}</div>
                     </a>
-                    <a class="price-jump" href="#price-check-${escapeHtml(prod.slug)}">最新価格 ↓</a>
+                    <a class="price-jump" href="#price-check-${escapeHtml(prod.slug)}">最新価格を見る ↓</a>
                   </div>
                 </th>`;
 }
@@ -851,7 +873,7 @@ function buildAffiliateSection(prods) {
     .join("\n        ");
   return `<section class="affiliate-section" id="price-check" aria-label="最新価格をチェック">
         <h2>最新価格をチェック</h2>
-        <p class="section-sub">もしもアフィリエイト／公式の提供タグをそのまま表示しています（ボタンデザインの自作はしていません）。</p>
+        <p class="section-sub">公式ホームページへの導線と、もしもアフィリエイトの提供タグ（楽天・Yahooなど）を製品ごとに表示します。</p>
         <div class="affiliate-grid">
         ${cards}
         </div>
@@ -1137,6 +1159,36 @@ const affiliateInlineScript = `
         container.appendChild(iframe);
       }
 
+      function buildOfficialHpButton(directHtml) {
+        if (!directHtml) return null;
+        const hrefM = String(directHtml).match(/href=["']([^"']+)["']/i);
+        if (!hrefM) return null;
+        const wrap = document.createElement("div");
+        wrap.className = "aff-card-direct";
+        const a = document.createElement("a");
+        a.className = "official-hp-btn";
+        a.href = hrefM[1];
+        a.target = "_blank";
+        a.rel = "noopener sponsored nofollow";
+        a.textContent = "公式ホームページ";
+        wrap.appendChild(a);
+        const pixM = String(directHtml).match(
+          /<img[^>]+src=["']([^"']+)["'][^>]*(?:width=["']?1\\b|height=["']?1\\b)/i,
+        );
+        if (pixM) {
+          const img = document.createElement("img");
+          img.src = pixM[1];
+          img.width = 1;
+          img.height = 1;
+          img.alt = "";
+          img.setAttribute("aria-hidden", "true");
+          img.style.cssText =
+            "position:absolute;width:1px;height:1px;border:none;opacity:0;pointer-events:none;";
+          wrap.appendChild(img);
+        }
+        return wrap;
+      }
+
       async function mountCard(el) {
         const slug = el.getAttribute("data-slug");
         const body = el.querySelector(".aff-card-body");
@@ -1158,11 +1210,16 @@ const affiliateInlineScript = `
           if (!body) return;
           body.innerHTML = "";
           if (hasDirect) {
-            const directSlot = document.createElement("div");
-            directSlot.className = "aff-card-direct";
-            // 提供された公式アフィリエイトHTMLを改変せずそのまま挿入
-            directSlot.innerHTML = String(aff.direct);
-            body.appendChild(directSlot);
+            const btn = buildOfficialHpButton(aff.direct);
+            if (btn) {
+              body.appendChild(btn);
+            } else {
+              // hrefが取れない場合のみ提供HTMLをそのまま挿入
+              const directSlot = document.createElement("div");
+              directSlot.className = "aff-card-direct";
+              directSlot.innerHTML = String(aff.direct);
+              body.appendChild(directSlot);
+            }
           }
           if (hasMoshimo) {
             const moshimoSlot = document.createElement("div");
@@ -1280,8 +1337,6 @@ function buildPage(band) {
         </div>
       </section>
 
-      ${buildAffiliateSection(band.products)}
-
       <h2>この徹底比較で見るべきポイント</h2>
       <p class="section-sub">表の差だけ短く補足します。詳細は各製品ページへ。</p>
       ${matrixPoints(points)}
@@ -1293,6 +1348,8 @@ function buildPage(band) {
       <div class="product-links">
         ${productLinks}
       </div>
+
+      ${buildAffiliateSection(band.products)}
 
       <p class="section-sub" style="margin-top:1.5rem"><a href="/compare/">ほかの価格帯のおすすめ・口コミ徹底比較一覧 →</a></p>
     </div>

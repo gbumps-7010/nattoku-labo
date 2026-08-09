@@ -507,19 +507,25 @@
     }
     .aff-card-direct {
       text-align: center;
-      margin-bottom: 0.45rem;
+      margin-bottom: 0.55rem;
+      position: relative;
     }
-    .aff-card-direct a {
-      display: inline-block;
-      max-width: 100%;
-      word-break: break-word;
-    }
-    .aff-card-direct img {
-      max-width: 100% !important;
-      width: auto !important;
-      height: auto !important;
+    .aff-card-direct .official-hp-btn {
       display: block;
-      margin: 0 auto;
+      width: 100%;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 800;
+      font-size: 0.95rem;
+      line-height: 1.4;
+      padding: 0.85rem 1rem;
+      border-radius: 12px;
+      background: linear-gradient(145deg, #0e7490 0%, #0d9488 42%, #059669 100%);
+      box-shadow: 0 6px 16px rgba(13, 148, 136, 0.28);
+    }
+    .aff-card-direct .official-hp-btn:hover {
+      filter: brightness(1.05);
     }
     .aff-card-moshimo {
       width: 100%;
@@ -541,14 +547,30 @@
     }
     .aff-card-status.error { color: var(--bad); }
     .price-jump {
-      display: inline-block;
-      margin-top: 0.15rem;
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      margin-top: 0.35rem;
+      padding: 0.45rem 0.35rem;
       font-size: 0.68rem;
-      font-weight: 700;
-      color: var(--primary);
+      font-weight: 800;
+      line-height: 1.3;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      background: linear-gradient(145deg, #1e40af 0%, #2563eb 55%, #0ea5e9 100%);
+      border: 1px solid #1d4ed8;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(37, 99, 235, 0.28);
+    }
+    .price-jump:hover {
+      filter: brightness(1.06);
       text-decoration: none;
     }
-    .price-jump:hover { text-decoration: underline; }
+    .price-jump:focus-visible {
+      outline: 2px solid #0ea5e9;
+      outline-offset: 2px;
+    }
     footer {
       border-top: 1px solid var(--line);
       padding: 1.5rem 1rem;
@@ -702,7 +724,7 @@
                       <div class="product-name">Q10V+</div>
                       <div class="product-mfr">Roborock</div>
                     </a>
-                    <a class="price-jump" href="#price-check-q10v-plus">最新価格 ↓</a>
+                    <a class="price-jump" href="#price-check-q10v-plus">最新価格を見る ↓</a>
                   </div>
                 </th>
                 <th scope="col" class="product-col">
@@ -719,7 +741,7 @@
                       <div class="product-name">Q10P+</div>
                       <div class="product-mfr">Roborock</div>
                     </a>
-                    <a class="price-jump" href="#price-check-q10p">最新価格 ↓</a>
+                    <a class="price-jump" href="#price-check-q10p">最新価格を見る ↓</a>
                   </div>
                 </th>
                 <th scope="col" class="product-col thin-data">
@@ -736,7 +758,7 @@
                       <div class="product-name">DEEBOT T50S OMNI</div>
                       <div class="product-mfr">ECOVACS</div>
                     </a>
-                    <a class="price-jump" href="#price-check-deebot-t50s-omni">最新価格 ↓</a>
+                    <a class="price-jump" href="#price-check-deebot-t50s-omni">最新価格を見る ↓</a>
                   </div>
                 </th>
                 <th scope="col" class="product-col">
@@ -753,7 +775,7 @@
                       <div class="product-name">お掃除ロボットS20</div>
                       <div class="product-mfr">SwitchBot</div>
                     </a>
-                    <a class="price-jump" href="#price-check-s20">最新価格 ↓</a>
+                    <a class="price-jump" href="#price-check-s20">最新価格を見る ↓</a>
                   </div>
                 </th>
                 <th scope="col" class="product-col">
@@ -770,7 +792,7 @@
                       <div class="product-name">Roomba® Plus 405 Combo + AutoWash™</div>
                       <div class="product-mfr">iRobot</div>
                     </a>
-                    <a class="price-jump" href="#price-check-roomba-plus-405-combo-autowash">最新価格 ↓</a>
+                    <a class="price-jump" href="#price-check-roomba-plus-405-combo-autowash">最新価格を見る ↓</a>
                   </div>
                 </th>
                 <th scope="col" class="product-col">
@@ -787,7 +809,7 @@
                       <div class="product-name">Roomba® Max 705 Vac + AutoEmpty™</div>
                       <div class="product-mfr">iRobot</div>
                     </a>
-                    <a class="price-jump" href="#price-check-roomba-max-705-vac-autoempty">最新価格 ↓</a>
+                    <a class="price-jump" href="#price-check-roomba-max-705-vac-autoempty">最新価格を見る ↓</a>
                   </div>
                 </th>
                 <th scope="col" class="product-col">
@@ -804,7 +826,7 @@
                       <div class="product-name">L40s Pro Ultra</div>
                       <div class="product-mfr">Dreame</div>
                     </a>
-                    <a class="price-jump" href="#price-check-l40s-pro-ultra">最新価格 ↓</a>
+                    <a class="price-jump" href="#price-check-l40s-pro-ultra">最新価格を見る ↓</a>
                   </div>
                 </th>
                 <th scope="col" class="product-col thin-data">
@@ -821,7 +843,7 @@
                       <div class="product-name">L40 Ultra AE</div>
                       <div class="product-mfr">Dreame</div>
                     </a>
-                    <a class="price-jump" href="#price-check-l40-ultra-ae">最新価格 ↓</a>
+                    <a class="price-jump" href="#price-check-l40-ultra-ae">最新価格を見る ↓</a>
                   </div>
                 </th>
                 <th scope="col" class="product-col">
@@ -838,7 +860,7 @@
                       <div class="product-name">Eufy Robot Vacuum Omni C28</div>
                       <div class="product-mfr">Anker</div>
                     </a>
-                    <a class="price-jump" href="#price-check-eufy-robot-vacuum-omni-c28">最新価格 ↓</a>
+                    <a class="price-jump" href="#price-check-eufy-robot-vacuum-omni-c28">最新価格を見る ↓</a>
                   </div>
                 </th>
               </tr>
@@ -1030,9 +1052,67 @@
         </div>
       </section>
 
+      <h2>この徹底比較で見るべきポイント</h2>
+      <p class="section-sub">表の差だけ短く補足します。詳細は各製品ページへ。</p>
+      <div class="matrix">
+        <div class="card">
+          <span class="pick">口コミ厚み</span>
+          <h3>Roomba® Plus 405 Combo + AutoWash™</h3>
+          <p>667件・信頼度91.6。口コミ厚みあり。床が強い</p>
+        </div>
+        <div class="card">
+          <span class="pick">対抗候補</span>
+          <h3>Roomba® Max 705 Vac + AutoEmpty™</h3>
+          <p>221件・信頼度81.1。床評価が相対的に高い</p>
+        </div>
+        <div class="card">
+          <span class="pick">第三候補</span>
+          <h3>Q10P+</h3>
+          <p>184件・信頼度83.2。床評価が相対的に高い</p>
+        </div>
+        <div class="card">
+          <span class="pick">見方</span>
+          <h3>帯内 9 製品をすべて掲載</h3>
+          <p>口コミ50件未満が3台あります。件数の薄い列は参考値として扱い、詳細ページも確認してください。</p>
+        </div>
+      </div>
+
+      <h2>どんな人におすすめか</h2>
+      <div class="matrix">
+        <div class="card">
+          <h3>失敗したくない</h3>
+          <p><strong>Roomba® Plus 405 Combo + AutoWash™</strong> — 帯内で口コミが最も厚い（667件）。</p>
+        </div>
+        <div class="card">
+          <h3>床をきれいに</h3>
+          <p><strong>DEEBOT T50S OMNI</strong> — 床掃除スコア 98。</p>
+        </div>
+        <div class="card">
+          <h3>音が気になる</h3>
+          <p><strong>DEEBOT T50S OMNI</strong> — 静音スコア 92。</p>
+        </div>
+        <div class="card">
+          <h3>手間を減らしたい / 予算</h3>
+          <p><strong>Roomba® Max 705 Vac + AutoEmpty™</strong> — メンテ 96。予算優先なら <strong>Q10V+</strong>（¥79,999）。</p>
+        </div>
+      </div>
+
+      <h2>比較したロボット掃除機の詳細へ</h2>
+      <div class="product-links">
+        <a href="https://nattoku-labo.com/products/q10v-plus" target="_blank" rel="noopener">Q10V+ の詳細分析 →</a>
+        <a href="https://nattoku-labo.com/products/q10p" target="_blank" rel="noopener">Q10P+ の詳細分析 →</a>
+        <a href="https://nattoku-labo.com/products/deebot-t50s-omni" target="_blank" rel="noopener">DEEBOT T50S OMNI の詳細分析 →</a>
+        <a href="https://nattoku-labo.com/products/s20" target="_blank" rel="noopener">お掃除ロボットS20 の詳細分析 →</a>
+        <a href="https://nattoku-labo.com/products/roomba-plus-405-combo-autowash" target="_blank" rel="noopener">Roomba® Plus 405 Combo + AutoWash™ の詳細分析 →</a>
+        <a href="https://nattoku-labo.com/products/roomba-max-705-vac-autoempty" target="_blank" rel="noopener">Roomba® Max 705 Vac + AutoEmpty™ の詳細分析 →</a>
+        <a href="https://nattoku-labo.com/products/l40s-pro-ultra" target="_blank" rel="noopener">L40s Pro Ultra の詳細分析 →</a>
+        <a href="https://nattoku-labo.com/products/l40-ultra-ae" target="_blank" rel="noopener">L40 Ultra AE の詳細分析 →</a>
+        <a href="https://nattoku-labo.com/products/eufy-robot-vacuum-omni-c28" target="_blank" rel="noopener">Eufy Robot Vacuum Omni C28 の詳細分析 →</a>
+      </div>
+
       <section class="affiliate-section" id="price-check" aria-label="最新価格をチェック">
         <h2>最新価格をチェック</h2>
-        <p class="section-sub">もしもアフィリエイト／公式の提供タグをそのまま表示しています（ボタンデザインの自作はしていません）。</p>
+        <p class="section-sub">公式ホームページへの導線と、もしもアフィリエイトの提供タグ（楽天・Yahooなど）を製品ごとに表示します。</p>
         <div class="affiliate-grid">
         <article class="aff-card" id="price-check-q10v-plus" data-slug="q10v-plus">
           <div class="aff-card-head">
@@ -1144,64 +1224,6 @@
         </article>
         </div>
       </section>
-
-      <h2>この徹底比較で見るべきポイント</h2>
-      <p class="section-sub">表の差だけ短く補足します。詳細は各製品ページへ。</p>
-      <div class="matrix">
-        <div class="card">
-          <span class="pick">口コミ厚み</span>
-          <h3>Roomba® Plus 405 Combo + AutoWash™</h3>
-          <p>667件・信頼度91.6。口コミ厚みあり。床が強い</p>
-        </div>
-        <div class="card">
-          <span class="pick">対抗候補</span>
-          <h3>Roomba® Max 705 Vac + AutoEmpty™</h3>
-          <p>221件・信頼度81.1。床評価が相対的に高い</p>
-        </div>
-        <div class="card">
-          <span class="pick">第三候補</span>
-          <h3>Q10P+</h3>
-          <p>184件・信頼度83.2。床評価が相対的に高い</p>
-        </div>
-        <div class="card">
-          <span class="pick">見方</span>
-          <h3>帯内 9 製品をすべて掲載</h3>
-          <p>口コミ50件未満が3台あります。件数の薄い列は参考値として扱い、詳細ページも確認してください。</p>
-        </div>
-      </div>
-
-      <h2>どんな人におすすめか</h2>
-      <div class="matrix">
-        <div class="card">
-          <h3>失敗したくない</h3>
-          <p><strong>Roomba® Plus 405 Combo + AutoWash™</strong> — 帯内で口コミが最も厚い（667件）。</p>
-        </div>
-        <div class="card">
-          <h3>床をきれいに</h3>
-          <p><strong>DEEBOT T50S OMNI</strong> — 床掃除スコア 98。</p>
-        </div>
-        <div class="card">
-          <h3>音が気になる</h3>
-          <p><strong>DEEBOT T50S OMNI</strong> — 静音スコア 92。</p>
-        </div>
-        <div class="card">
-          <h3>手間を減らしたい / 予算</h3>
-          <p><strong>Roomba® Max 705 Vac + AutoEmpty™</strong> — メンテ 96。予算優先なら <strong>Q10V+</strong>（¥79,999）。</p>
-        </div>
-      </div>
-
-      <h2>比較したロボット掃除機の詳細へ</h2>
-      <div class="product-links">
-        <a href="https://nattoku-labo.com/products/q10v-plus" target="_blank" rel="noopener">Q10V+ の詳細分析 →</a>
-        <a href="https://nattoku-labo.com/products/q10p" target="_blank" rel="noopener">Q10P+ の詳細分析 →</a>
-        <a href="https://nattoku-labo.com/products/deebot-t50s-omni" target="_blank" rel="noopener">DEEBOT T50S OMNI の詳細分析 →</a>
-        <a href="https://nattoku-labo.com/products/s20" target="_blank" rel="noopener">お掃除ロボットS20 の詳細分析 →</a>
-        <a href="https://nattoku-labo.com/products/roomba-plus-405-combo-autowash" target="_blank" rel="noopener">Roomba® Plus 405 Combo + AutoWash™ の詳細分析 →</a>
-        <a href="https://nattoku-labo.com/products/roomba-max-705-vac-autoempty" target="_blank" rel="noopener">Roomba® Max 705 Vac + AutoEmpty™ の詳細分析 →</a>
-        <a href="https://nattoku-labo.com/products/l40s-pro-ultra" target="_blank" rel="noopener">L40s Pro Ultra の詳細分析 →</a>
-        <a href="https://nattoku-labo.com/products/l40-ultra-ae" target="_blank" rel="noopener">L40 Ultra AE の詳細分析 →</a>
-        <a href="https://nattoku-labo.com/products/eufy-robot-vacuum-omni-c28" target="_blank" rel="noopener">Eufy Robot Vacuum Omni C28 の詳細分析 →</a>
-      </div>
 
       <p class="section-sub" style="margin-top:1.5rem"><a href="/compare/">ほかの価格帯のおすすめ・口コミ徹底比較一覧 →</a></p>
     </div>
@@ -1363,6 +1385,36 @@
         container.appendChild(iframe);
       }
 
+      function buildOfficialHpButton(directHtml) {
+        if (!directHtml) return null;
+        const hrefM = String(directHtml).match(/href=["']([^"']+)["']/i);
+        if (!hrefM) return null;
+        const wrap = document.createElement("div");
+        wrap.className = "aff-card-direct";
+        const a = document.createElement("a");
+        a.className = "official-hp-btn";
+        a.href = hrefM[1];
+        a.target = "_blank";
+        a.rel = "noopener sponsored nofollow";
+        a.textContent = "公式ホームページ";
+        wrap.appendChild(a);
+        const pixM = String(directHtml).match(
+          /<img[^>]+src=["']([^"']+)["'][^>]*(?:width=["']?1\b|height=["']?1\b)/i,
+        );
+        if (pixM) {
+          const img = document.createElement("img");
+          img.src = pixM[1];
+          img.width = 1;
+          img.height = 1;
+          img.alt = "";
+          img.setAttribute("aria-hidden", "true");
+          img.style.cssText =
+            "position:absolute;width:1px;height:1px;border:none;opacity:0;pointer-events:none;";
+          wrap.appendChild(img);
+        }
+        return wrap;
+      }
+
       async function mountCard(el) {
         const slug = el.getAttribute("data-slug");
         const body = el.querySelector(".aff-card-body");
@@ -1384,11 +1436,16 @@
           if (!body) return;
           body.innerHTML = "";
           if (hasDirect) {
-            const directSlot = document.createElement("div");
-            directSlot.className = "aff-card-direct";
-            // 提供された公式アフィリエイトHTMLを改変せずそのまま挿入
-            directSlot.innerHTML = String(aff.direct);
-            body.appendChild(directSlot);
+            const btn = buildOfficialHpButton(aff.direct);
+            if (btn) {
+              body.appendChild(btn);
+            } else {
+              // hrefが取れない場合のみ提供HTMLをそのまま挿入
+              const directSlot = document.createElement("div");
+              directSlot.className = "aff-card-direct";
+              directSlot.innerHTML = String(aff.direct);
+              body.appendChild(directSlot);
+            }
           }
           if (hasMoshimo) {
             const moshimoSlot = document.createElement("div");

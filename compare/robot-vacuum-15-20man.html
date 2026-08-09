@@ -507,19 +507,25 @@
     }
     .aff-card-direct {
       text-align: center;
-      margin-bottom: 0.45rem;
+      margin-bottom: 0.55rem;
+      position: relative;
     }
-    .aff-card-direct a {
-      display: inline-block;
-      max-width: 100%;
-      word-break: break-word;
-    }
-    .aff-card-direct img {
-      max-width: 100% !important;
-      width: auto !important;
-      height: auto !important;
+    .aff-card-direct .official-hp-btn {
       display: block;
-      margin: 0 auto;
+      width: 100%;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 800;
+      font-size: 0.95rem;
+      line-height: 1.4;
+      padding: 0.85rem 1rem;
+      border-radius: 12px;
+      background: linear-gradient(145deg, #0e7490 0%, #0d9488 42%, #059669 100%);
+      box-shadow: 0 6px 16px rgba(13, 148, 136, 0.28);
+    }
+    .aff-card-direct .official-hp-btn:hover {
+      filter: brightness(1.05);
     }
     .aff-card-moshimo {
       width: 100%;
@@ -541,14 +547,30 @@
     }
     .aff-card-status.error { color: var(--bad); }
     .price-jump {
-      display: inline-block;
-      margin-top: 0.15rem;
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      margin-top: 0.35rem;
+      padding: 0.45rem 0.35rem;
       font-size: 0.68rem;
-      font-weight: 700;
-      color: var(--primary);
+      font-weight: 800;
+      line-height: 1.3;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      background: linear-gradient(145deg, #1e40af 0%, #2563eb 55%, #0ea5e9 100%);
+      border: 1px solid #1d4ed8;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(37, 99, 235, 0.28);
+    }
+    .price-jump:hover {
+      filter: brightness(1.06);
       text-decoration: none;
     }
-    .price-jump:hover { text-decoration: underline; }
+    .price-jump:focus-visible {
+      outline: 2px solid #0ea5e9;
+      outline-offset: 2px;
+    }
     footer {
       border-top: 1px solid var(--line);
       padding: 1.5rem 1rem;
@@ -672,7 +694,7 @@
                       <div class="product-name">Roomba® Max 705 Combo + AutoWash™</div>
                       <div class="product-mfr">iRobot</div>
                     </a>
-                    <a class="price-jump" href="#price-check-roomba-max-705-combo-autowash">最新価格 ↓</a>
+                    <a class="price-jump" href="#price-check-roomba-max-705-combo-autowash">最新価格を見る ↓</a>
                   </div>
                 </th>
                 <th scope="col" class="product-col">
@@ -689,7 +711,7 @@
                       <div class="product-name">DEEBOT X8 PRO OMNI</div>
                       <div class="product-mfr">ECOVACS</div>
                     </a>
-                    <a class="price-jump" href="#price-check-deebot-x8-pro-omni">最新価格 ↓</a>
+                    <a class="price-jump" href="#price-check-deebot-x8-pro-omni">最新価格を見る ↓</a>
                   </div>
                 </th>
                 <th scope="col" class="product-col thin-data">
@@ -706,7 +728,7 @@
                       <div class="product-name">X50 Ultra</div>
                       <div class="product-mfr">Dreame</div>
                     </a>
-                    <a class="price-jump" href="#price-check-x50-ultra">最新価格 ↓</a>
+                    <a class="price-jump" href="#price-check-x50-ultra">最新価格を見る ↓</a>
                   </div>
                 </th>
                 <th scope="col" class="product-col">
@@ -723,7 +745,7 @@
                       <div class="product-name">Eufy Robot Vacuum Omni S1 Pro</div>
                       <div class="product-mfr">Anker</div>
                     </a>
-                    <a class="price-jump" href="#price-check-eufy-robot-vacuum-omni-s1-pro">最新価格 ↓</a>
+                    <a class="price-jump" href="#price-check-eufy-robot-vacuum-omni-s1-pro">最新価格を見る ↓</a>
                   </div>
                 </th>
               </tr>
@@ -840,61 +862,6 @@
         </div>
       </section>
 
-      <section class="affiliate-section" id="price-check" aria-label="最新価格をチェック">
-        <h2>最新価格をチェック</h2>
-        <p class="section-sub">もしもアフィリエイト／公式の提供タグをそのまま表示しています（ボタンデザインの自作はしていません）。</p>
-        <div class="affiliate-grid">
-        <article class="aff-card" id="price-check-roomba-max-705-combo-autowash" data-slug="roomba-max-705-combo-autowash">
-          <div class="aff-card-head">
-            <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/03016688/20260219_review_2nen/705c_aw_tm_2nen_v2.jpg" alt="" width="52" height="52" loading="lazy">
-            <div>
-              <div class="aff-card-title">Roomba® Max 705 Combo + AutoWash™</div>
-              <div class="aff-card-brand">iRobot · ¥179,800</div>
-            </div>
-          </div>
-          <div class="aff-card-body">
-            <span class="aff-card-status">価格読込中…</span>
-          </div>
-        </article>
-        <article class="aff-card" id="price-check-deebot-x8-pro-omni" data-slug="deebot-x8-pro-omni">
-          <div class="aff-card-head">
-            <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/dex56-14ee.jpg" alt="" width="52" height="52" loading="lazy">
-            <div>
-              <div class="aff-card-title">DEEBOT X8 PRO OMNI</div>
-              <div class="aff-card-brand">ECOVACS · ¥199,800</div>
-            </div>
-          </div>
-          <div class="aff-card-body">
-            <span class="aff-card-status">価格読込中…</span>
-          </div>
-        </article>
-        <article class="aff-card" id="price-check-x50-ultra" data-slug="x50-ultra">
-          <div class="aff-card-head">
-            <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/x50ultra_cp.jpg" alt="" width="52" height="52" loading="lazy">
-            <div>
-              <div class="aff-card-title">X50 Ultra</div>
-              <div class="aff-card-brand">Dreame · ¥199,800</div>
-            </div>
-          </div>
-          <div class="aff-card-body">
-            <span class="aff-card-status">価格読込中…</span>
-          </div>
-        </article>
-        <article class="aff-card" id="price-check-eufy-robot-vacuum-omni-s1-pro" data-slug="eufy-robot-vacuum-omni-s1-pro">
-          <div class="aff-card-head">
-            <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/youplan/cabinet/300087/100007649453_1.jpg" alt="" width="52" height="52" loading="lazy">
-            <div>
-              <div class="aff-card-title">Eufy Robot Vacuum Omni S1 Pro</div>
-              <div class="aff-card-brand">Anker · ¥199,900</div>
-            </div>
-          </div>
-          <div class="aff-card-body">
-            <span class="aff-card-status">価格読込中…</span>
-          </div>
-        </article>
-        </div>
-      </section>
-
       <h2>この徹底比較で見るべきポイント</h2>
       <p class="section-sub">表の差だけ短く補足します。詳細は各製品ページへ。</p>
       <div class="matrix">
@@ -947,6 +914,61 @@
         <a href="https://nattoku-labo.com/products/x50-ultra" target="_blank" rel="noopener">X50 Ultra の詳細分析 →</a>
         <a href="https://nattoku-labo.com/products/eufy-robot-vacuum-omni-s1-pro" target="_blank" rel="noopener">Eufy Robot Vacuum Omni S1 Pro の詳細分析 →</a>
       </div>
+
+      <section class="affiliate-section" id="price-check" aria-label="最新価格をチェック">
+        <h2>最新価格をチェック</h2>
+        <p class="section-sub">公式ホームページへの導線と、もしもアフィリエイトの提供タグ（楽天・Yahooなど）を製品ごとに表示します。</p>
+        <div class="affiliate-grid">
+        <article class="aff-card" id="price-check-roomba-max-705-combo-autowash" data-slug="roomba-max-705-combo-autowash">
+          <div class="aff-card-head">
+            <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/03016688/20260219_review_2nen/705c_aw_tm_2nen_v2.jpg" alt="" width="52" height="52" loading="lazy">
+            <div>
+              <div class="aff-card-title">Roomba® Max 705 Combo + AutoWash™</div>
+              <div class="aff-card-brand">iRobot · ¥179,800</div>
+            </div>
+          </div>
+          <div class="aff-card-body">
+            <span class="aff-card-status">価格読込中…</span>
+          </div>
+        </article>
+        <article class="aff-card" id="price-check-deebot-x8-pro-omni" data-slug="deebot-x8-pro-omni">
+          <div class="aff-card-head">
+            <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/dex56-14ee.jpg" alt="" width="52" height="52" loading="lazy">
+            <div>
+              <div class="aff-card-title">DEEBOT X8 PRO OMNI</div>
+              <div class="aff-card-brand">ECOVACS · ¥199,800</div>
+            </div>
+          </div>
+          <div class="aff-card-body">
+            <span class="aff-card-status">価格読込中…</span>
+          </div>
+        </article>
+        <article class="aff-card" id="price-check-x50-ultra" data-slug="x50-ultra">
+          <div class="aff-card-head">
+            <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/x50ultra_cp.jpg" alt="" width="52" height="52" loading="lazy">
+            <div>
+              <div class="aff-card-title">X50 Ultra</div>
+              <div class="aff-card-brand">Dreame · ¥199,800</div>
+            </div>
+          </div>
+          <div class="aff-card-body">
+            <span class="aff-card-status">価格読込中…</span>
+          </div>
+        </article>
+        <article class="aff-card" id="price-check-eufy-robot-vacuum-omni-s1-pro" data-slug="eufy-robot-vacuum-omni-s1-pro">
+          <div class="aff-card-head">
+            <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/youplan/cabinet/300087/100007649453_1.jpg" alt="" width="52" height="52" loading="lazy">
+            <div>
+              <div class="aff-card-title">Eufy Robot Vacuum Omni S1 Pro</div>
+              <div class="aff-card-brand">Anker · ¥199,900</div>
+            </div>
+          </div>
+          <div class="aff-card-body">
+            <span class="aff-card-status">価格読込中…</span>
+          </div>
+        </article>
+        </div>
+      </section>
 
       <p class="section-sub" style="margin-top:1.5rem"><a href="/compare/">ほかの価格帯のおすすめ・口コミ徹底比較一覧 →</a></p>
     </div>
@@ -1108,6 +1130,36 @@
         container.appendChild(iframe);
       }
 
+      function buildOfficialHpButton(directHtml) {
+        if (!directHtml) return null;
+        const hrefM = String(directHtml).match(/href=["']([^"']+)["']/i);
+        if (!hrefM) return null;
+        const wrap = document.createElement("div");
+        wrap.className = "aff-card-direct";
+        const a = document.createElement("a");
+        a.className = "official-hp-btn";
+        a.href = hrefM[1];
+        a.target = "_blank";
+        a.rel = "noopener sponsored nofollow";
+        a.textContent = "公式ホームページ";
+        wrap.appendChild(a);
+        const pixM = String(directHtml).match(
+          /<img[^>]+src=["']([^"']+)["'][^>]*(?:width=["']?1\b|height=["']?1\b)/i,
+        );
+        if (pixM) {
+          const img = document.createElement("img");
+          img.src = pixM[1];
+          img.width = 1;
+          img.height = 1;
+          img.alt = "";
+          img.setAttribute("aria-hidden", "true");
+          img.style.cssText =
+            "position:absolute;width:1px;height:1px;border:none;opacity:0;pointer-events:none;";
+          wrap.appendChild(img);
+        }
+        return wrap;
+      }
+
       async function mountCard(el) {
         const slug = el.getAttribute("data-slug");
         const body = el.querySelector(".aff-card-body");
@@ -1129,11 +1181,16 @@
           if (!body) return;
           body.innerHTML = "";
           if (hasDirect) {
-            const directSlot = document.createElement("div");
-            directSlot.className = "aff-card-direct";
-            // 提供された公式アフィリエイトHTMLを改変せずそのまま挿入
-            directSlot.innerHTML = String(aff.direct);
-            body.appendChild(directSlot);
+            const btn = buildOfficialHpButton(aff.direct);
+            if (btn) {
+              body.appendChild(btn);
+            } else {
+              // hrefが取れない場合のみ提供HTMLをそのまま挿入
+              const directSlot = document.createElement("div");
+              directSlot.className = "aff-card-direct";
+              directSlot.innerHTML = String(aff.direct);
+              body.appendChild(directSlot);
+            }
           }
           if (hasMoshimo) {
             const moshimoSlot = document.createElement("div");
