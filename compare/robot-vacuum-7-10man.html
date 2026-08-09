@@ -456,33 +456,55 @@
     .affiliate-section > h2 { margin-top: 0; }
     .aff-inline {
       width: 100%;
-      margin-top: 0.35rem;
+      margin-top: 0.4rem;
       display: flex;
       flex-direction: column;
-      gap: 0.28rem;
+      gap: 0.35rem;
       align-items: stretch;
+      min-width: 0;
     }
-    .aff-inline-btn {
-      display: block;
+    .aff-inline-direct {
+      width: 100%;
+      min-width: 0;
       text-align: center;
-      text-decoration: none;
-      font-weight: 800;
-      font-size: 0.62rem;
-      line-height: 1.25;
-      padding: 0.32rem 0.3rem;
-      border-radius: 7px;
-      color: #fff;
-      white-space: nowrap;
+    }
+    .aff-inline-direct a {
+      display: inline-block;
+      max-width: 100%;
+    }
+    .aff-inline-direct img {
+      max-width: 100% !important;
+      width: auto !important;
+      height: auto !important;
+      display: block;
+      margin: 0 auto;
+    }
+    /* もしも公式ウィジェットを列幅に合わせて縮小表示（見た目は提供タグのまま） */
+    .aff-inline-moshimo {
+      width: 100%;
+      max-height: 150px;
       overflow: hidden;
-      text-overflow: ellipsis;
+      min-width: 0;
+      position: relative;
     }
-    .aff-inline-btn.store-rakuten { background: #bf0000; }
-    .aff-inline-btn.store-amazon { background: #ff9900; color: #111; }
-    .aff-inline-btn.store-yahoo { background: #ff0033; }
-    .aff-inline-btn.store-official {
-      background: linear-gradient(145deg, #0e7490 0%, #059669 100%);
+    .aff-inline-moshimo iframe {
+      border: 0;
+      display: block;
+      width: 260%;
+      max-width: none;
+      height: 380px;
+      transform: scale(0.385);
+      transform-origin: top left;
+      pointer-events: auto;
     }
-    .aff-inline-btn.store-other { background: #334155; }
+    @media (min-width: 720px) {
+      .aff-inline-moshimo { max-height: 170px; }
+      .aff-inline-moshimo iframe {
+        width: 240%;
+        transform: scale(0.42);
+        height: 400px;
+      }
+    }
     .aff-inline-status {
       font-size: 0.58rem;
       color: var(--muted);
@@ -491,9 +513,6 @@
       line-height: 1.3;
     }
     .aff-inline-status.error { color: var(--bad); }
-    @media (min-width: 720px) {
-      .aff-inline-btn { font-size: 0.7rem; padding: 0.38rem 0.4rem; }
-    }
     footer {
       border-top: 1px solid var(--line);
       padding: 1.5rem 1rem;
@@ -993,7 +1012,7 @@
         </div>
       </section>
 
-      <p class="section-sub" style="margin:0.35rem 0 1.25rem">各製品の写真下にある <strong>楽天 / Amazon / Yahoo / 公式</strong> ボタンから最新価格を確認できます。</p>
+      <p class="section-sub" style="margin:0.35rem 0 1.25rem">各製品の写真下に、もしもアフィリエイト／公式の提供タグをそのまま表示しています。</p>
 
       <h2>この徹底比較で見るべきポイント</h2>
       <p class="section-sub">表の差だけ短く補足します。詳細は各製品ページへ。</p>
@@ -1154,68 +1173,46 @@
   
   <script>
     (function () {
-      function storeClass(s) {
-        const n = String(s || "").toLowerCase();
-        if (n.indexOf("rakuten") >= 0) return "store-rakuten";
-        if (n.indexOf("amazon") >= 0) return "store-amazon";
-        if (n.indexOf("yahoo") >= 0) return "store-yahoo";
-        return "store-other";
+      function normalizeMoshimoEasyLinkHtml(html) {
+        if (typeof html !== "string") return html;
+        return html.replace(
+          /(["'])\/\/dn\.msmstatic\.com\/site\/cardlink\/bundle\.js/g,
+          "$1https://dn.msmstatic.com/site/cardlink/bundle.js",
+        );
       }
-      function storeLabel(s, fallback) {
-        const n = String(s || "").toLowerCase();
-        if (n.indexOf("rakuten") >= 0) return "楽天";
-        if (n.indexOf("amazon") >= 0) return "Amazon";
-        if (n.indexOf("yahoo") >= 0) return "Yahoo";
-        if (fallback) {
-          return String(fallback).replace(/で見る/g, "").replace(/で購入/g, "").slice(0, 8);
-        }
-        return "購入";
+
+      function injectMoshimoIframe(container, html) {
+        if (!container || !html) return;
+        container.innerHTML = "";
+        const safe = normalizeMoshimoEasyLinkHtml(html);
+        const iframe = document.createElement("iframe");
+        iframe.title = "価格・購入先（もしもアフィリエイト）";
+        iframe.setAttribute("scrolling", "no");
+        iframe.loading = "lazy";
+        iframe.srcdoc =
+          '<!DOCTYPE html><html><head><meta charset="utf-8">' +
+          '<meta name="viewport" content="width=device-width,initial-scale=1">' +
+          '<base target="_blank" rel="noopener noreferrer">' +
+          "<style>*,*::before,*::after{box-sizing:border-box}" +
+          "html,body{width:100%;max-width:100%;min-width:0;margin:0;padding:0;background:#fff;color:#0f172a;overflow-x:hidden}" +
+          "body{display:flex;flex-direction:column;align-items:stretch}" +
+          '[id^="msmaflink-"]{width:100%!important;max-width:100%!important;min-width:0!important;margin-left:auto;margin-right:auto}' +
+          '[id^="msmaflink-"] *{max-width:100%!important;min-width:0}' +
+          '[id^="msmaflink-"] table{width:100%!important;table-layout:fixed}' +
+          '[id^="msmaflink-"] img{width:auto!important;height:auto!important;max-width:220px!important;max-height:220px!important;object-fit:contain}' +
+          "</style></head><body>" +
+          safe +
+          "</body></html>";
+        container.appendChild(iframe);
       }
-      function moshimoClickUrl(b) {
-        const params = new URLSearchParams();
-        if (b.a_id != null) params.set("a_id", String(b.a_id));
-        if (b.p_id != null) params.set("p_id", String(b.p_id));
-        if (b.pc_id != null) params.set("pc_id", String(b.pc_id));
-        if (b.pl_id != null) params.set("pl_id", String(b.pl_id));
-        if (b.u_url) params.set("url", b.u_url);
-        return "https://af.moshimo.com/af/c/click?" + params.toString();
+
+      function injectDirectHtml(container, directHtml) {
+        if (!container || !directHtml) return false;
+        // 提供された公式アフィリエイトHTMLを改変せずそのまま挿入
+        container.innerHTML = String(directHtml);
+        return true;
       }
-      function parseMoshimoButtons(html) {
-        if (!html || typeof html !== "string") return [];
-        const m = html.match(/msmaflink\((\{[\s\S]*?\})\);\s*<\/script>/);
-        if (!m) return [];
-        try {
-          const cfg = JSON.parse(m[1]);
-          return (cfg.b_l || [])
-            .slice()
-            .sort((a, b) => (a.u_so || 0) - (b.u_so || 0))
-            .map((b) => ({
-              label: storeLabel(b.s_n, b.u_tx),
-              href: moshimoClickUrl(b),
-              cls: storeClass(b.s_n),
-            }));
-        } catch (_) {
-          return [];
-        }
-      }
-      function officialHref(directHtml) {
-        if (!directHtml) return null;
-        const m = String(directHtml).match(/href=["']([^"']+)["']/i);
-        if (!m) return null;
-        return m[1].startsWith("//") ? "https:" + m[1] : m[1];
-      }
-      function renderButtons(mount, buttons) {
-        mount.innerHTML = "";
-        buttons.forEach((b) => {
-          const a = document.createElement("a");
-          a.className = "aff-inline-btn " + b.cls;
-          a.href = b.href;
-          a.target = "_blank";
-          a.rel = "noopener sponsored nofollow";
-          a.textContent = b.label;
-          mount.appendChild(a);
-        });
-      }
+
       async function mountInline(el) {
         const slug = el.getAttribute("data-slug");
         const status = el.querySelector(".aff-inline-status");
@@ -1224,23 +1221,28 @@
           if (!res.ok) throw new Error("HTTP " + res.status);
           const data = await res.json();
           const aff = data.affiliate || {};
-          const buttons = parseMoshimoButtons(aff.moshimo);
-          const off = officialHref(aff.direct);
-          if (off) {
-            buttons.unshift({
-              label: "公式",
-              href: off,
-              cls: "store-official",
-            });
-          }
-          if (!buttons.length) {
+          const hasMoshimo = !!(aff.moshimo && String(aff.moshimo).trim());
+          const hasDirect = !!(aff.direct && String(aff.direct).trim());
+          if (!hasMoshimo && !hasDirect) {
             if (status) {
               status.textContent = "準備中";
               status.classList.add("error");
             }
             return;
           }
-          renderButtons(el, buttons.slice(0, 4));
+          el.innerHTML = "";
+          if (hasDirect) {
+            const directSlot = document.createElement("div");
+            directSlot.className = "aff-inline-direct";
+            injectDirectHtml(directSlot, aff.direct);
+            el.appendChild(directSlot);
+          }
+          if (hasMoshimo) {
+            const moshimoSlot = document.createElement("div");
+            moshimoSlot.className = "aff-inline-moshimo";
+            injectMoshimoIframe(moshimoSlot, aff.moshimo);
+            el.appendChild(moshimoSlot);
+          }
         } catch (err) {
           if (status) {
             status.textContent = "読込失敗";
@@ -1248,6 +1250,7 @@
           }
         }
       }
+
       document.querySelectorAll(".aff-inline[data-slug]").forEach(mountInline);
     })();
   </script>
