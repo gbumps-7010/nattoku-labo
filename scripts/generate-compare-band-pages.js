@@ -353,6 +353,48 @@ const STYLE = `<style>
       width: 100%;
     }
     .product-head a:hover .product-name { color: var(--primary); }
+    .product-head a.price-jump {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.08rem;
+      width: 100%;
+      box-sizing: border-box;
+      margin-top: 0.2rem;
+      padding: 0.5rem 0.3rem 0.45rem;
+      font-size: 0.72rem;
+      font-weight: 900;
+      line-height: 1.2;
+      letter-spacing: 0.02em;
+      text-align: center;
+      text-decoration: none;
+      color: #0f172a;
+      background: #fde047;
+      border: 2px solid #ca8a04;
+      border-radius: 10px;
+      box-shadow: 0 2px 0 #a16207;
+    }
+    .product-head a.price-jump:hover {
+      color: #0f172a;
+      background: #facc15;
+      filter: none;
+      text-decoration: none;
+    }
+    .product-head a.price-jump:focus-visible {
+      outline: 2px solid #2563eb;
+      outline-offset: 2px;
+    }
+    .product-head a.price-jump .price-jump-main {
+      display: block;
+      font-size: 0.74rem;
+    }
+    .product-head a.price-jump .price-jump-sub {
+      display: block;
+      font-size: 0.62rem;
+      font-weight: 800;
+      color: #713f12;
+    }
     @media (min-width: 720px) {
       table.compare { font-size: 0.84rem; }
       table.compare th,
@@ -539,31 +581,6 @@ const STYLE = `<style>
       padding: 0.75rem 0;
     }
     .aff-card-status.error { color: var(--bad); }
-    .price-jump {
-      display: block;
-      width: 100%;
-      box-sizing: border-box;
-      margin-top: 0.35rem;
-      padding: 0.45rem 0.35rem;
-      font-size: 0.68rem;
-      font-weight: 800;
-      line-height: 1.3;
-      text-align: center;
-      text-decoration: none;
-      color: #fff;
-      background: linear-gradient(145deg, #1e40af 0%, #2563eb 55%, #0ea5e9 100%);
-      border: 1px solid #1d4ed8;
-      border-radius: 8px;
-      box-shadow: 0 3px 8px rgba(37, 99, 235, 0.28);
-    }
-    .price-jump:hover {
-      filter: brightness(1.06);
-      text-decoration: none;
-    }
-    .price-jump:focus-visible {
-      outline: 2px solid #0ea5e9;
-      outline-offset: 2px;
-    }
     footer {
       border-top: 1px solid var(--line);
       padding: 1.5rem 1rem;
@@ -849,7 +866,7 @@ function productHead(prod) {
                       <div class="product-name">${escapeHtml(prod.name)}</div>
                       <div class="product-mfr">${escapeHtml(prod.brand)}</div>
                     </a>
-                    <a class="price-jump" href="#price-check-${escapeHtml(prod.slug)}">最新価格を見る ↓</a>
+                    <a class="price-jump" href="#price-check-${escapeHtml(prod.slug)}"><span class="price-jump-main">最新価格を見る</span><span class="price-jump-sub">▼ 下へジャンプ</span></a>
                   </div>
                 </th>`;
 }
