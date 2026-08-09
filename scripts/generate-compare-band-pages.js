@@ -8,16 +8,6 @@ const path = require("path");
 const root = path.resolve(__dirname, "..");
 const dataDir = path.join(root, "products/data");
 
-const affiliateScript = (() => {
-  const template = fs.readFileSync(
-    path.join(root, "compare/robot-vacuum-10-15man.html"),
-    "utf8",
-  );
-  return template.match(
-    /<script>\s*\(function \(\) \{[\s\S]*?\}\)\(\);\s*<\/script>/,
-  )[0];
-})();
-
 const STYLE = `<style>
     :root {
       --primary: #1e40af;
@@ -457,77 +447,46 @@ const STYLE = `<style>
     }
     .affiliate-section { margin: 1.75rem 0 1rem; }
     .affiliate-section > h2 { margin-top: 0; }
-    .affiliate-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 0.85rem;
-    }
-    @media (min-width: 640px) {
-      .affiliate-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    }
-    @media (min-width: 980px) {
-      .affiliate-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    }
-    .aff-card {
-      background: #fff;
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      padding: 0.9rem 0.8rem 1rem;
+    .aff-inline {
+      width: 100%;
+      margin-top: 0.35rem;
       display: flex;
       flex-direction: column;
-      gap: 0.55rem;
-      min-width: 0;
+      gap: 0.28rem;
+      align-items: stretch;
     }
-    .aff-card-head {
-      display: flex;
-      align-items: center;
-      gap: 0.65rem;
-    }
-    .aff-card-head img {
-      width: 56px;
-      height: 56px;
-      object-fit: contain;
-      border: 1px solid var(--line);
-      border-radius: 10px;
-      background: #fff;
-      flex-shrink: 0;
-    }
-    .aff-card-head .name {
-      font-weight: 900;
-      font-size: 0.86rem;
-      line-height: 1.3;
-      color: var(--secondary);
-    }
-    .aff-card-head .mfr {
-      font-size: 0.72rem;
-      font-weight: 700;
-      color: var(--muted);
-    }
-    .aff-official {
+    .aff-inline-btn {
       display: block;
       text-align: center;
       text-decoration: none;
-      color: #fff;
       font-weight: 800;
-      font-size: 0.88rem;
-      line-height: 1.4;
-      padding: 0.7rem 0.8rem;
-      border-radius: 10px;
-      background: linear-gradient(145deg, #0e7490 0%, #0d9488 42%, #059669 100%);
+      font-size: 0.62rem;
+      line-height: 1.25;
+      padding: 0.32rem 0.3rem;
+      border-radius: 7px;
+      color: #fff;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
-    .aff-moshimo { min-width: 0; width: 100%; }
-    .aff-moshimo iframe {
-      width: 100%;
-      max-width: 100%;
-      border: 0;
-      display: block;
+    .aff-inline-btn.store-rakuten { background: #bf0000; }
+    .aff-inline-btn.store-amazon { background: #ff9900; color: #111; }
+    .aff-inline-btn.store-yahoo { background: #ff0033; }
+    .aff-inline-btn.store-official {
+      background: linear-gradient(145deg, #0e7490 0%, #059669 100%);
     }
-    .aff-status {
-      font-size: 0.78rem;
+    .aff-inline-btn.store-other { background: #334155; }
+    .aff-inline-status {
+      font-size: 0.58rem;
       color: var(--muted);
       font-weight: 600;
+      text-align: center;
+      line-height: 1.3;
     }
-    .aff-status.error { color: var(--bad); }
+    .aff-inline-status.error { color: var(--bad); }
+    @media (min-width: 720px) {
+      .aff-inline-btn { font-size: 0.7rem; padding: 0.38rem 0.4rem; }
+    }
     footer {
       border-top: 1px solid var(--line);
       padding: 1.5rem 1rem;
@@ -813,6 +772,9 @@ function productHead(prod) {
                       <div class="product-name">${escapeHtml(prod.name)}</div>
                       <div class="product-mfr">${escapeHtml(prod.brand)}</div>
                     </a>
+                    <div class="aff-inline" data-slug="${prod.slug}">
+                      <span class="aff-inline-status">価格読込中…</span>
+                    </div>
                   </div>
                 </th>`;
 }
@@ -896,25 +858,6 @@ function buildTable(prods) {
               </tr>
             </tbody>
           </table>`;
-}
-
-function affCards(prods) {
-  return prods
-    .map(
-      (p) => `          <article class="aff-card" data-slug="${p.slug}">
-            <div class="aff-card-head">
-              <img src="${escapeHtml(p.imageUrl)}" alt="" loading="lazy">
-              <div>
-                <div class="name">${escapeHtml(p.name)}</div>
-                <div class="mfr">${escapeHtml(p.brand)}</div>
-              </div>
-            </div>
-            <div class="aff-official-slot"></div>
-            <div class="aff-moshimo" id="aff-moshimo-${p.slug}"></div>
-            <p class="aff-status">読み込み中…</p>
-          </article>`,
-    )
-    .join("\n");
 }
 
 function matrixPoints(points) {
@@ -1053,6 +996,107 @@ const scrollHelperScript = `
     })();
   </script>`;
 
+const affiliateInlineScript = `
+  <script>
+    (function () {
+      function storeClass(s) {
+        const n = String(s || "").toLowerCase();
+        if (n.indexOf("rakuten") >= 0) return "store-rakuten";
+        if (n.indexOf("amazon") >= 0) return "store-amazon";
+        if (n.indexOf("yahoo") >= 0) return "store-yahoo";
+        return "store-other";
+      }
+      function storeLabel(s, fallback) {
+        const n = String(s || "").toLowerCase();
+        if (n.indexOf("rakuten") >= 0) return "楽天";
+        if (n.indexOf("amazon") >= 0) return "Amazon";
+        if (n.indexOf("yahoo") >= 0) return "Yahoo";
+        if (fallback) {
+          return String(fallback).replace(/で見る/g, "").replace(/で購入/g, "").slice(0, 8);
+        }
+        return "購入";
+      }
+      function moshimoClickUrl(b) {
+        const params = new URLSearchParams();
+        if (b.a_id != null) params.set("a_id", String(b.a_id));
+        if (b.p_id != null) params.set("p_id", String(b.p_id));
+        if (b.pc_id != null) params.set("pc_id", String(b.pc_id));
+        if (b.pl_id != null) params.set("pl_id", String(b.pl_id));
+        if (b.u_url) params.set("url", b.u_url);
+        return "https://af.moshimo.com/af/c/click?" + params.toString();
+      }
+      function parseMoshimoButtons(html) {
+        if (!html || typeof html !== "string") return [];
+        const m = html.match(/msmaflink\\((\\{[\\s\\S]*?\\})\\);\\s*<\\/script>/);
+        if (!m) return [];
+        try {
+          const cfg = JSON.parse(m[1]);
+          return (cfg.b_l || [])
+            .slice()
+            .sort((a, b) => (a.u_so || 0) - (b.u_so || 0))
+            .map((b) => ({
+              label: storeLabel(b.s_n, b.u_tx),
+              href: moshimoClickUrl(b),
+              cls: storeClass(b.s_n),
+            }));
+        } catch (_) {
+          return [];
+        }
+      }
+      function officialHref(directHtml) {
+        if (!directHtml) return null;
+        const m = String(directHtml).match(/href=["']([^"']+)["']/i);
+        if (!m) return null;
+        return m[1].startsWith("//") ? "https:" + m[1] : m[1];
+      }
+      function renderButtons(mount, buttons) {
+        mount.innerHTML = "";
+        buttons.forEach((b) => {
+          const a = document.createElement("a");
+          a.className = "aff-inline-btn " + b.cls;
+          a.href = b.href;
+          a.target = "_blank";
+          a.rel = "noopener sponsored nofollow";
+          a.textContent = b.label;
+          mount.appendChild(a);
+        });
+      }
+      async function mountInline(el) {
+        const slug = el.getAttribute("data-slug");
+        const status = el.querySelector(".aff-inline-status");
+        try {
+          const res = await fetch("/products/data/" + slug + ".json", { cache: "no-store" });
+          if (!res.ok) throw new Error("HTTP " + res.status);
+          const data = await res.json();
+          const aff = data.affiliate || {};
+          const buttons = parseMoshimoButtons(aff.moshimo);
+          const off = officialHref(aff.direct);
+          if (off) {
+            buttons.unshift({
+              label: "公式",
+              href: off,
+              cls: "store-official",
+            });
+          }
+          if (!buttons.length) {
+            if (status) {
+              status.textContent = "準備中";
+              status.classList.add("error");
+            }
+            return;
+          }
+          renderButtons(el, buttons.slice(0, 4));
+        } catch (err) {
+          if (status) {
+            status.textContent = "読込失敗";
+            status.classList.add("error");
+          }
+        }
+      }
+      document.querySelectorAll(".aff-inline[data-slug]").forEach(mountInline);
+    })();
+  </script>`;
+
 function buildPage(band) {
   const totalReviews = band.products.reduce((s, p) => s + (p.reviews || 0), 0);
   const title = `ロボット掃除機のおすすめ・口コミ徹底比較【${band.label}】 | ナットクLabo`;
@@ -1151,13 +1195,7 @@ function buildPage(band) {
         </div>
       </section>
 
-      <section class="affiliate-section" id="price-check" aria-label="最新価格をチェック">
-        <h2>最新価格をチェック</h2>
-        <p class="section-sub">各製品の最新価格は、以下から確認できます（${band.products.length}製品）。</p>
-        <div class="affiliate-grid" id="affiliate-grid">
-${affCards(band.products)}
-        </div>
-      </section>
+      <p class="section-sub" style="margin:0.35rem 0 1.25rem">各製品の写真下にある <strong>楽天 / Amazon / Yahoo / 公式</strong> ボタンから最新価格を確認できます。</p>
 
       <h2>この徹底比較で見るべきポイント</h2>
       <p class="section-sub">表の差だけ短く補足します。詳細は各製品ページへ。</p>
@@ -1178,8 +1216,8 @@ ${affCards(band.products)}
   <footer>
     ナットクLabo ·
   </footer>
-  ${affiliateScript}
   ${scrollHelperScript}
+  ${affiliateInlineScript}
   <script src="/products/js/navigation.js?v=20260810d"></script>
 </body>
 </html>
