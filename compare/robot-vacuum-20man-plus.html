@@ -136,29 +136,6 @@
       color: #78350f;
       line-height: 1.5;
     }
-    .swipe-hint {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 0.5rem;
-      margin: 0 0 0.55rem;
-      padding: 0.55rem 0.7rem;
-      background: #eff6ff;
-      border: 1px solid #bfdbfe;
-      border-radius: 8px;
-      color: #1e40af;
-      font-size: 0.8rem;
-      font-weight: 800;
-    }
-    .swipe-hint .count {
-      flex-shrink: 0;
-      background: #1e40af;
-      color: #fff;
-      border-radius: 999px;
-      padding: 0.15rem 0.55rem;
-      font-size: 0.72rem;
-    }
-    /* ===== MAIN COMPARISON TABLE ===== */
     .table-stage {
       background: #fff;
       border: 2px solid #cbd5e1;
@@ -181,22 +158,106 @@
       font-weight: 900;
       color: var(--secondary);
     }
+    .swipe-hint {
+      display: none;
+    }
+    .compare-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      margin: 0 0 0.65rem;
+      padding: 0.45rem 0.5rem;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+    }
+    .compare-nav-btn {
+      flex-shrink: 0;
+      width: 2.4rem;
+      height: 2.4rem;
+      border: 1px solid #bfdbfe;
+      border-radius: 10px;
+      background: #eff6ff;
+      color: #1e40af;
+      font-size: 1.35rem;
+      font-weight: 900;
+      line-height: 1;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .compare-nav-btn:disabled {
+      opacity: 0.35;
+      cursor: default;
+    }
+    .compare-nav-btn:not(:disabled):active {
+      background: #dbeafe;
+    }
+    .compare-nav-meta {
+      flex: 1;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+    .compare-nav-pos {
+      font-size: 0.78rem;
+      font-weight: 800;
+      color: #1e40af;
+      text-align: center;
+    }
+    .compare-nav-hint {
+      font-size: 0.68rem;
+      font-weight: 600;
+      color: #64748b;
+      text-align: center;
+    }
+    .compare-nav-track {
+      position: relative;
+      height: 6px;
+      border-radius: 999px;
+      background: #e2e8f0;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .compare-nav-thumb {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 30%;
+      border-radius: 999px;
+      background: #3b82f6;
+      pointer-events: none;
+    }
     .compare-scroll-wrap {
       position: relative;
     }
+    .compare-scroll-wrap::before,
     .compare-scroll-wrap::after {
       content: "";
       position: absolute;
       top: 0;
-      right: 0;
-      bottom: 8px;
-      width: 28px;
+      bottom: 0;
+      width: 26px;
       z-index: 3;
       pointer-events: none;
       opacity: 0;
       transition: opacity .15s ease;
+    }
+    .compare-scroll-wrap::before {
+      left: 5.2rem;
+      background: linear-gradient(to right, rgba(255,255,255,.92), transparent);
+    }
+    .compare-scroll-wrap::after {
+      right: 0;
       background: linear-gradient(to left, rgba(255,255,255,.95), transparent);
     }
+    @media (min-width: 720px) {
+      .compare-scroll-wrap::before { left: 7rem; }
+    }
+    .compare-scroll-wrap.can-scroll-left::before,
     .compare-scroll-wrap.can-scroll-right::after {
       opacity: 1;
     }
@@ -204,18 +265,12 @@
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
       overscroll-behavior-x: contain;
-      padding-bottom: 0.35rem;
-      scrollbar-width: thin;
-      /* Keep first product clear of sticky label column when snapping/resting */
-      scroll-padding-left: 5.5rem;
+      scrollbar-width: none; /* Firefox: hide bottom scrollbar */
+      -ms-overflow-style: none; /* IE/old Edge */
     }
-    @media (min-width: 720px) {
-      .compare-scroll { scroll-padding-left: 7.2rem; }
-    }
-    .compare-scroll::-webkit-scrollbar { height: 7px; }
-    .compare-scroll::-webkit-scrollbar-thumb {
-      background: #94a3b8;
-      border-radius: 999px;
+    .compare-scroll::-webkit-scrollbar {
+      display: none; /* Chrome/Safari: hide bottom scrollbar */
+      height: 0;
     }
     table.compare {
       width: max-content;
@@ -553,10 +608,15 @@
           <strong>ロボット掃除機 おすすめ比較表（20万円〜・全2製品）</strong>
         </div>
         <p class="table-source">比較表の数値・キーワード・注意点は、すべて2大ECサイトの口コミ分析に基づきます。</p>
-        <p class="swipe-hint">
-          <span>表を左右にスワイプして全製品を比較</span>
-          <span class="count">2製品</span>
-        </p>
+        <div class="compare-nav" role="group" aria-label="比較表の横移動">
+          <button type="button" class="compare-nav-btn" data-dir="-1" aria-label="前の製品へ">‹</button>
+          <div class="compare-nav-meta">
+            <div class="compare-nav-pos">全2製品</div>
+            <div class="compare-nav-track" aria-hidden="true"><div class="compare-nav-thumb"></div></div>
+            <div class="compare-nav-hint">表をスワイプ、またはボタンで横に移動</div>
+          </div>
+          <button type="button" class="compare-nav-btn" data-dir="1" aria-label="次の製品へ">›</button>
+        </div>
         <div class="compare-scroll-wrap can-scroll-right">
           <div class="compare-scroll">
             <table class="compare">
@@ -887,18 +947,87 @@
     (function () {
       const wrap = document.querySelector(".compare-scroll-wrap");
       const scroller = document.querySelector(".compare-scroll");
+      const prevBtn = document.querySelector('.compare-nav-btn[data-dir="-1"]');
+      const nextBtn = document.querySelector('.compare-nav-btn[data-dir="1"]');
+      const posEl = document.querySelector(".compare-nav-pos");
+      const track = document.querySelector(".compare-nav-track");
+      const thumb = document.querySelector(".compare-nav-thumb");
       if (!wrap || !scroller) return;
-      const update = () => {
-        const max = Math.max(0, scroller.scrollWidth - scroller.clientWidth);
-        wrap.classList.toggle("can-scroll-right", scroller.scrollLeft < max - 4);
+
+      const cols = () => Array.from(scroller.querySelectorAll("thead th.product-col"));
+      const step = () => {
+        const col = scroller.querySelector("thead th.product-col");
+        return col ? Math.max(col.getBoundingClientRect().width, 96) : 120;
       };
-      // Ensure the leftmost product starts fully visible beside the sticky label.
+      const maxScroll = () => Math.max(0, scroller.scrollWidth - scroller.clientWidth);
+
+      const update = () => {
+        const max = maxScroll();
+        const left = scroller.scrollLeft;
+        wrap.classList.toggle("can-scroll-left", left > 4);
+        wrap.classList.toggle("can-scroll-right", left < max - 4);
+        if (prevBtn) prevBtn.disabled = left <= 4;
+        if (nextBtn) nextBtn.disabled = left >= max - 4;
+
+        const list = cols();
+        const total = list.length || 1;
+        let first = 1;
+        let last = 1;
+        if (list.length) {
+          const rootLeft = scroller.getBoundingClientRect().left;
+          const label = scroller.querySelector("thead th:first-child");
+          const stickyW = label ? label.getBoundingClientRect().width : 0;
+          const viewL = rootLeft + stickyW + 2;
+          const viewR = scroller.getBoundingClientRect().right - 2;
+          let seen = [];
+          list.forEach((th, i) => {
+            const r = th.getBoundingClientRect();
+            const visible = r.right > viewL + 8 && r.left < viewR - 8;
+            if (visible) seen.push(i + 1);
+          });
+          if (seen.length) {
+            first = seen[0];
+            last = seen[seen.length - 1];
+          } else {
+            first = Math.min(total, Math.floor(left / step()) + 1);
+            last = first;
+          }
+        }
+        if (posEl) {
+          posEl.textContent =
+            first === last
+              ? total + "製品中 " + first + "台目を表示"
+              : total + "製品中 " + first + "〜" + last + "台目を表示";
+        }
+        if (thumb && track) {
+          const ratio = scroller.scrollWidth > 0 ? scroller.clientWidth / scroller.scrollWidth : 1;
+          const w = Math.max(12, Math.min(100, ratio * 100));
+          const x = max > 0 ? (left / max) * (100 - w) : 0;
+          thumb.style.width = w.toFixed(2) + "%";
+          thumb.style.left = x.toFixed(2) + "%";
+        }
+      };
+
+      const scrollByDir = (dir) => {
+        scroller.scrollBy({ left: dir * step() * 0.95, behavior: "smooth" });
+      };
+
+      if (prevBtn) prevBtn.addEventListener("click", () => scrollByDir(-1));
+      if (nextBtn) nextBtn.addEventListener("click", () => scrollByDir(1));
+      if (track) {
+        track.addEventListener("click", (e) => {
+          const rect = track.getBoundingClientRect();
+          const ratio = (e.clientX - rect.left) / rect.width;
+          scroller.scrollTo({ left: ratio * maxScroll(), behavior: "smooth" });
+        });
+      }
+
+      scroller.addEventListener("scroll", update, { passive: true });
+      window.addEventListener("resize", update);
       const resetLeft = () => {
         scroller.scrollLeft = 0;
         update();
       };
-      scroller.addEventListener("scroll", update, { passive: true });
-      window.addEventListener("resize", update);
       if (document.readyState === "complete") resetLeft();
       else window.addEventListener("load", resetLeft);
       requestAnimationFrame(resetLeft);
