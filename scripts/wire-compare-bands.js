@@ -9,7 +9,7 @@ function banner(label, href) {
         <section class="same-price-compare-banner" style="max-width:760px;margin:0 auto 2rem;padding:0 1.5rem;">
             <a href="${href}" style="display:block;text-decoration:none;background:#eff6ff;border:1px solid #bfdbfe;border-radius:12px;padding:1rem 1.15rem;color:#1e3a8a;">
                 <strong style="display:block;font-size:1rem;margin-bottom:0.25rem;">同価格帯の口コミ分析比較を見る</strong>
-                <span style="font-size:0.9rem;font-weight:600;color:#1e40af;">${label}帯｜全製品のおすすめ比較を見る →</span>
+                <span style="font-size:0.9rem;font-weight:600;color:#1e40af;">${label}｜全製品のおすすめ比較を見る →</span>
             </a>
         </section>
 `;
@@ -52,17 +52,17 @@ hub = hub.replace(
 );
 
 const hubMetas = {
-  "/compare/robot-vacuum-under-5man": "帯内全11製品を横比較",
-  "/compare/robot-vacuum-5-7man": "帯内全14製品を横比較",
-  "/compare/robot-vacuum-7-10man": "帯内全9製品を横比較",
-  "/compare/robot-vacuum-10-15man": "帯内全8製品を横比較",
-  "/compare/robot-vacuum-15-20man": "帯内全4製品を横比較",
-  "/compare/robot-vacuum-20man-plus": "帯内全2製品を横比較",
+  "/compare/robot-vacuum-under-5man": "この価格帯の全11製品を比較",
+  "/compare/robot-vacuum-5-7man": "この価格帯の全14製品を比較",
+  "/compare/robot-vacuum-7-10man": "この価格帯の全9製品を比較",
+  "/compare/robot-vacuum-10-15man": "この価格帯の全8製品を比較",
+  "/compare/robot-vacuum-15-20man": "この価格帯の全4製品を比較",
+  "/compare/robot-vacuum-20man-plus": "この価格帯の全2製品を比較",
 };
 
 for (const [urlPath, text] of Object.entries(hubMetas)) {
   const m = metaByPath[urlPath];
-  const label = m ? `帯内全${m.count}製品を横比較` : text;
+  const label = m ? `この価格帯の全${m.count}製品を比較` : text;
   const re = new RegExp(
     `(href="${urlPath.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}"[\\s\\S]*?<span class="meta">)[^<]*(</span>)`,
   );

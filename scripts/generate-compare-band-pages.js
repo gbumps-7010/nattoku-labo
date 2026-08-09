@@ -708,19 +708,21 @@ function perf(p, key) {
 
 function autoOneLiner(p) {
   const reviews = p.totalReviews || 0;
-  if (reviews < 30) return "口コミ少なめ。参考程度に";
+  if (reviews < 30) return "口コミが少ないので参考程度に";
   if (reviews < 80) return "口コミはそこそこ。注意点も確認を";
   const scores = [
-    ["床", perf(p, "floorCleaning")],
-    ["静音", perf(p, "quietness")],
-    ["メンテ", perf(p, "maintenance")],
-    ["ペット毛", perf(p, "petHairRemoval")],
-    ["アプリ", perf(p, "appStability")],
+    ["床掃除", perf(p, "floorCleaning")],
+    ["静音性", perf(p, "quietness")],
+    ["お手入れしやすさ", perf(p, "maintenance")],
+    ["ペット毛の吸い取り", perf(p, "petHairRemoval")],
+    ["アプリの使いやすさ", perf(p, "appStability")],
   ].filter(([, s]) => typeof s === "number");
   scores.sort((a, b) => b[1] - a[1]);
-  if (reviews >= 300 && scores[0]) return `口コミ厚みあり。${scores[0][0]}が強い`;
-  if (scores[0]) return `${scores[0][0]}評価が相対的に高い`;
-  return "表の数値と注意点で判断";
+  if (reviews >= 300 && scores[0]) {
+    return `口コミが多く、${scores[0][0]}の評価が高い`;
+  }
+  if (scores[0]) return `${scores[0][0]}の評価が高め`;
+  return "表の点数と注意点を見て判断を";
 }
 
 function productMeta(slug) {
@@ -774,18 +776,19 @@ function buildPoints(products) {
   const ranked = [...products].sort((a, b) => b.reviews - a.reviews);
   const top = ranked.slice(0, Math.min(3, ranked.length));
   const thin = products.filter((p) => p.thin);
+  const pickLabels = ["口コミが多い", "次の候補", "もう一つの候補"];
   const points = top.map((p, i) => ({
-    pick: i === 0 ? "口コミ厚み" : i === 1 ? "対抗候補" : "第三候補",
+    pick: pickLabels[i] || "候補",
     h: p.name,
-    p: `${p.reviews}件・信頼度${p.trust}。${p.oneLiner}`,
+    p: `口コミ${p.reviews}件・信頼度${p.trust}。${p.oneLiner}`,
   }));
   points.push({
     pick: "見方",
-    h: `帯内 ${products.length} 製品をすべて掲載`,
+    h: `この価格帯の${products.length}製品をすべて掲載`,
     p:
       thin.length > 0
-        ? `口コミ50件未満が${thin.length}台あります。件数の薄い列は参考値として扱い、詳細ページも確認してください。`
-        : "左右スワイプで全製品を横断比較できます。件数と信頼度を先に見ると判断しやすいです。",
+        ? `口コミが50件未満の製品が${thin.length}台あります。件数が少ない列は参考として扱い、詳細ページも確認してください。`
+        : "左右にスワイプすると、すべての製品を並べて比べられます。まずは件数と信頼度を見ると判断しやすいです。",
   });
   return points;
 }
@@ -804,26 +807,26 @@ function buildWho(products) {
   const cheapest = [...products].sort((a, b) => a.price - b.price)[0];
   return [
     {
-      h: "失敗したくない",
-      p: `<strong>${escapeHtml(ranked[0].name)}</strong> — 帯内で口コミが最も厚い（${ranked[0].reviews}件）。`,
+      h: "失敗したくない人",
+      p: `<strong>${escapeHtml(ranked[0].name)}</strong> — この価格帯で口コミ件数が最も多い（${ranked[0].reviews}件）。`,
     },
     {
-      h: "床をきれいに",
+      h: "床をきれいにしたい人",
       p: byFloor
-        ? `<strong>${escapeHtml(byFloor.name)}</strong> — 床掃除スコア ${byFloor.floor}。`
-        : "表の床掃除スコアを優先して比較。",
+        ? `<strong>${escapeHtml(byFloor.name)}</strong> — 床掃除の評価が${byFloor.floor}点。`
+        : "表の床掃除の点数を優先して比べてください。",
     },
     {
-      h: "音が気になる",
+      h: "運転音が気になる人",
       p: byQuiet
-        ? `<strong>${escapeHtml(byQuiet.name)}</strong> — 静音スコア ${byQuiet.quiet}。`
-        : "表の静音スコアを優先して比較。",
+        ? `<strong>${escapeHtml(byQuiet.name)}</strong> — 静音性の評価が${byQuiet.quiet}点。`
+        : "表の静音性の点数を優先して比べてください。",
     },
     {
-      h: "手間を減らしたい / 予算",
-      p: `<strong>${escapeHtml(byMaint ? byMaint.name : cheapest.name)}</strong>${
-        byMaint ? ` — メンテ ${byMaint.maint}。` : "。"
-      }予算優先なら <strong>${escapeHtml(cheapest.name)}</strong>（${cheapest.priceLabel}）。`,
+      h: "手間を減らしたい／予算を抑えたい人",
+      p: byMaint
+        ? `<strong>${escapeHtml(byMaint.name)}</strong> — お手入れしやすさの評価が${byMaint.maint}点。予算を抑えるなら <strong>${escapeHtml(cheapest.name)}</strong>（${cheapest.priceLabel}）。`
+        : `予算を抑えるなら <strong>${escapeHtml(cheapest.name)}</strong>（${cheapest.priceLabel}）。`,
     },
   ];
 }
@@ -974,11 +977,11 @@ function buildTable(prods) {
                 ${cells(prods, (p) => `<td class="score">${p.quiet}</td>`)}
               </tr>
               <tr>
-                <td>メンテ</td>
+                <td>お手入れ</td>
                 ${cells(prods, (p) => `<td class="score">${p.maint}</td>`)}
               </tr>
               <tr>
-                <td>段差</td>
+                <td>段差越え</td>
                 ${cells(prods, (p) => `<td class="score">${p.step}</td>`)}
               </tr>
               <tr>
@@ -986,7 +989,7 @@ function buildTable(prods) {
                 ${cells(prods, (p) => `<td class="score">${p.pet}</td>`)}
               </tr>
               <tr>
-                <td>アプリ安定</td>
+                <td>アプリ</td>
                 ${cells(prods, (p) => `<td class="score">${p.app}</td>`)}
               </tr>
               <tr class="row-group">
@@ -1341,10 +1344,10 @@ function buildPage(band) {
 <body>
   <header class="hero">
     <div class="wrap">
-      <p class="eyebrow">おすすめ・口コミ徹底比較 · ${band.label}帯 · 全${band.products.length}製品</p>
+      <p class="eyebrow">おすすめ・口コミ徹底比較 · ${band.label} · 全${band.products.length}製品</p>
       <h1>${h1}</h1>
       <p class="lede">
-        「ロボット掃除機 おすすめ 比較」で迷う人向けに、同じ予算帯の候補を口コミ徹底比較します。この価格帯の掲載製品はすべて表に入れています。
+        「ロボット掃除機 おすすめ 比較」で迷っている人向けに、同じ予算の候補を口コミで徹底比較します。この価格帯の掲載製品は、すべて表に入れています。
       </p>
       <div class="source-banner" role="note">
         <span class="source-kicker">データ根拠</span>
@@ -1386,7 +1389,7 @@ function buildPage(band) {
       </section>
 
       <h2>この徹底比較で見るべきポイント</h2>
-      <p class="section-sub">表の差だけ短く補足します。詳細は各製品ページへ。</p>
+      <p class="section-sub">表の違いを短く補足します。くわしくは各製品ページへ。</p>
       ${matrixPoints(points)}
 
       <h2>どんな人におすすめか</h2>
