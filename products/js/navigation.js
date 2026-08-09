@@ -281,6 +281,10 @@ function setMobileNavOpen(open) {
     if (!navMenu) return;
     navMenu.classList.toggle('mobile-open', open);
     document.body.classList.toggle('nav-mobile-open', open);
+    if (!open) {
+        // 閉じるときはサブメニューも畳んで次回は上詰め状態から開始
+        document.querySelectorAll('.nav-dropdown.open').forEach((d) => d.classList.remove('open'));
+    }
     if (mobileToggle) {
         mobileToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
         mobileToggle.setAttribute('aria-label', open ? 'メニューを閉じる' : 'メニューを開く');

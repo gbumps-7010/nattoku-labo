@@ -1,7 +1,7 @@
 /**
- * ナビゲーションバー＆関連製品スタイル V3.16
- * - ノッチ・ホームバー対応（safe-area）、モバイルメニュー時の背景タップで閉じる
- * - 製品ページ本体のモバイル余白・チャート高さ（body:has(#fixed-navigation)）
+ * ナビゲーションバー＆関連製品スタイル V3.17
+ * - モバイルメニューは display 開閉（transform幅崩れ対策）
+ * - 未展開サブメニューは非表示で項目を上詰め
  */
 
 :root {
@@ -524,112 +524,136 @@ body.nav-mobile-open::before {
         flex: 0 1 auto;
         max-width: 42%;
     }
-    
+
+    /*
+     * モバイルメニューは transform ではなく display で開閉する。
+     * transform だと初回表示時に子要素幅が潰れる端末がある。
+     * パネル高さは中身に合わせ、未展開項目は上に詰める。
+     */
     .nav-menu {
+        display: none;
         position: fixed;
         top: calc(60px + env(safe-area-inset-top, 0px));
         left: 0;
         right: 0;
+        bottom: auto;
         width: 100%;
-        width: 100vw;
         max-width: 100%;
+        height: auto;
+        max-height: calc(100dvh - 60px - env(safe-area-inset-top, 0px));
         box-sizing: border-box;
         background: linear-gradient(135deg, #1e40af 0%, #0f172a 100%);
         flex-direction: column;
+        flex-wrap: nowrap;
         align-items: stretch;
         justify-content: flex-start;
-        gap: 0.15rem;
-        padding: 0.75rem 1rem max(1rem, env(safe-area-inset-bottom, 0px));
-        max-height: calc(100vh - 60px - env(safe-area-inset-top, 0px));
-        max-height: calc(100dvh - 60px - env(safe-area-inset-top, 0px));
+        align-content: flex-start;
+        gap: 0;
+        padding: 0.35rem 0.75rem 0.75rem;
         overflow-x: hidden;
         overflow-y: auto;
         -webkit-overflow-scrolling: touch;
-        transform: translateX(-100%);
-        transition: transform 0.3s ease;
         z-index: 1001;
-        box-shadow: 4px 0 24px rgba(0, 0, 0, 0.25);
+        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
+        transform: none;
     }
-    
+
     .nav-menu.mobile-open {
-        transform: translateX(0);
+        display: flex;
+        transform: none;
     }
 
     .nav-menu > .nav-link,
     .nav-menu > .nav-dropdown {
-        width: 100%;
-        max-width: 100%;
-        min-width: 0;
-        flex: 0 0 auto;
+        display: block;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        flex: 0 0 auto !important;
+        align-self: stretch !important;
         box-sizing: border-box;
+        margin: 0;
     }
-    
+
     .nav-link,
     .nav-menu .dropdown-toggle {
-        width: 100%;
-        max-width: 100%;
-        min-width: 0;
-        min-height: 48px;
-        padding: 0.75rem 1rem;
+        display: flex !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        min-height: 44px;
+        height: auto;
+        padding: 0.65rem 0.85rem;
         justify-content: flex-start;
+        align-items: center;
         border-radius: 8px;
         box-sizing: border-box;
-        display: flex;
         -webkit-tap-highlight-color: transparent;
     }
 
     .dropdown-item {
-        min-height: 48px;
+        min-height: 44px;
         display: flex;
         align-items: center;
         width: 100%;
         box-sizing: border-box;
     }
-    
+
     .nav-dropdown {
-        width: 100%;
-        max-width: 100%;
-        min-width: 0;
-    }
-    
-    /* 閉じているサブメニューはレイアウトから外す（幅崩れ防止） */
-    .nav-menu .dropdown-menu {
-        display: none;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
         position: static;
-        left: auto;
-        top: auto;
-        opacity: 1;
-        visibility: visible;
-        transform: none;
-        transition: none;
-        box-shadow: none;
-        border-radius: 8px;
-        margin-top: 0.35rem;
-        margin-bottom: 0.35rem;
-        background: rgba(255, 255, 255, 0.95);
-        min-width: 0;
-        width: 100%;
-        max-width: 100%;
-        max-height: min(50vh, 320px);
-        overflow-y: auto;
-        box-sizing: border-box;
     }
-    
+
+    /* 未選択（閉じた）サブメニューは完全に非表示＝上詰め */
+    .nav-menu .dropdown-menu,
+    .nav-menu .products-dropdown,
+    .nav-menu .manufacturer-dropdown,
+    .nav-menu .price-dropdown,
+    .nav-menu .compare-dropdown {
+        display: none !important;
+        position: static !important;
+        left: auto !important;
+        top: auto !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: none !important;
+        transition: none !important;
+        box-shadow: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        min-width: 0 !important;
+        min-height: 0 !important;
+        height: 0 !important;
+        max-height: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow: hidden !important;
+        border: 0 !important;
+        pointer-events: none;
+    }
+
     .nav-menu .nav-dropdown.open > .dropdown-menu {
-        display: block;
-        transform: none;
-        opacity: 1;
-        visibility: visible;
+        display: block !important;
+        height: auto !important;
+        max-height: min(45vh, 280px) !important;
+        margin: 0.2rem 0 0.35rem !important;
+        padding: 0 !important;
+        overflow-y: auto !important;
+        border-radius: 8px !important;
+        background: rgba(255, 255, 255, 0.96) !important;
+        pointer-events: auto;
     }
-    
+
     .related-products-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .section-title {
         font-size: 1.5rem;
     }
-    
+
     .related-subtitle {
         font-size: 1.1rem;
     }
