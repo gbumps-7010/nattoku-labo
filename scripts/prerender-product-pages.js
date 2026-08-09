@@ -398,33 +398,31 @@ function prerenderHtml(html, data) {
   // 口コミ分析サマリー（seo-unique-summary）は表示しない
   html = removeSeoSummaryBlock(html);
 
-  // Make shared section headings product-specific so pages are not near-identical shells.
-  const namedHeadings = [
-    ["口コミの信頼度", `${metadata.name}の口コミの信頼度`],
-    ["総合性能分析", `${metadata.name}の総合性能分析`],
-    ["口コミキーワード", `${metadata.name}の口コミキーワード`],
-    ["主な不満点と対策", `${metadata.name}の主な不満点と対策`],
-    ["ライフスタイル別の相性診断", `${metadata.name}のライフスタイル別の相性診断`],
-    [
-      "毎日の掃除から解放されて、自由な時間が増えます",
-      `${metadata.name}で毎日の掃除から解放されて、自由な時間が増えます`,
-    ],
-    [
-      "毎日使い続けるためのコスト（維持費）",
-      `${metadata.name}を毎日使い続けるためのコスト（維持費）`,
-    ],
-  ];
-  for (const [generic, specific] of namedHeadings) {
-    if (html.includes(specific)) continue;
-    // Headings are usually on their own indented line after an icon tag.
-    const lineRe = new RegExp(`(^\\s*)${escapeRegExp(generic)}(\\s*$)`, "m");
-    if (lineRe.test(html)) {
-      html = html.replace(lineRe, `$1${escapeHtml(specific)}$2`);
-      continue;
-    }
-    html = html.split(generic).join(escapeHtml(specific));
-  }
+  // セクション見出しは製品名なしの共通文言に統一する
+  html = stripProductNameFromSectionHeadings(html, metadata.name, data.productName);
 
+  return html;
+}
+
+function stripProductNameFromSectionHeadings(html, displayName, productName) {
+  const generics = [
+    ["の口コミの信頼度", "口コミの信頼度"],
+    ["の総合性能分析", "総合性能分析"],
+    ["の口コミキーワード", "口コミキーワード"],
+    ["の主な不満点と対策", "主な不満点と対策"],
+    ["のライフスタイル別の相性診断", "ライフスタイル別の相性診断"],
+    ["で毎日の掃除から解放されて、自由な時間が増えます", "毎日の掃除から解放されて、自由な時間が増えます"],
+    ["を毎日使い続けるためのコスト（維持費）", "毎日使い続けるためのコスト（維持費）"],
+  ];
+  const names = [...new Set([displayName, productName].filter(Boolean).map(String))];
+  for (const name of names) {
+    for (const [suffix, generic] of generics) {
+      const specific = `${name}${suffix}`;
+      if (html.includes(specific)) {
+        html = html.split(specific).join(generic);
+      }
+    }
+  }
   return html;
 }
 
