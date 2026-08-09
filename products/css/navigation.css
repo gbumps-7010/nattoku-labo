@@ -530,13 +530,19 @@ body.nav-mobile-open::before {
         top: calc(60px + env(safe-area-inset-top, 0px));
         left: 0;
         right: 0;
+        width: 100%;
+        width: 100vw;
+        max-width: 100%;
+        box-sizing: border-box;
         background: linear-gradient(135deg, #1e40af 0%, #0f172a 100%);
         flex-direction: column;
         align-items: stretch;
-        gap: 0;
+        justify-content: flex-start;
+        gap: 0.15rem;
         padding: 0.75rem 1rem max(1rem, env(safe-area-inset-bottom, 0px));
         max-height: calc(100vh - 60px - env(safe-area-inset-top, 0px));
         max-height: calc(100dvh - 60px - env(safe-area-inset-top, 0px));
+        overflow-x: hidden;
         overflow-y: auto;
         -webkit-overflow-scrolling: touch;
         transform: translateX(-100%);
@@ -548,13 +554,27 @@ body.nav-mobile-open::before {
     .nav-menu.mobile-open {
         transform: translateX(0);
     }
-    
-    .nav-link {
+
+    .nav-menu > .nav-link,
+    .nav-menu > .nav-dropdown {
         width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        flex: 0 0 auto;
+        box-sizing: border-box;
+    }
+    
+    .nav-link,
+    .nav-menu .dropdown-toggle {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
         min-height: 48px;
         padding: 0.75rem 1rem;
         justify-content: flex-start;
         border-radius: 8px;
+        box-sizing: border-box;
+        display: flex;
         -webkit-tap-highlight-color: transparent;
     }
 
@@ -562,23 +582,44 @@ body.nav-mobile-open::before {
         min-height: 48px;
         display: flex;
         align-items: center;
+        width: 100%;
+        box-sizing: border-box;
     }
     
     .nav-dropdown {
         width: 100%;
+        max-width: 100%;
+        min-width: 0;
     }
     
-    .dropdown-menu {
+    /* 閉じているサブメニューはレイアウトから外す（幅崩れ防止） */
+    .nav-menu .dropdown-menu {
+        display: none;
         position: static;
+        left: auto;
+        top: auto;
+        opacity: 1;
+        visibility: visible;
         transform: none;
+        transition: none;
         box-shadow: none;
-        border-radius: 0;
-        margin-top: 0.5rem;
+        border-radius: 8px;
+        margin-top: 0.35rem;
+        margin-bottom: 0.35rem;
         background: rgba(255, 255, 255, 0.95);
+        min-width: 0;
+        width: 100%;
+        max-width: 100%;
+        max-height: min(50vh, 320px);
+        overflow-y: auto;
+        box-sizing: border-box;
     }
     
-    .nav-dropdown.open .dropdown-menu {
+    .nav-menu .nav-dropdown.open > .dropdown-menu {
+        display: block;
         transform: none;
+        opacity: 1;
+        visibility: visible;
     }
     
     .related-products-grid {
