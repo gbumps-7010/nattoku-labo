@@ -92,7 +92,7 @@ function createNavigationBar() {
             <div class="nav-quick-links" aria-label="主要メニュー">
                 <a href="/compare/" class="nav-quick-link">
                     <i class="fas fa-table"></i>
-                    <span>おすすめ比較</span>
+                    <span>徹底比較</span>
                 </a>
                 <a href="/about" class="nav-quick-link nav-quick-link-secondary">
                     <i class="fas fa-info-circle"></i>
@@ -158,7 +158,7 @@ function createNavigationBar() {
                 
                 <div class="nav-dropdown">
                     <button class="nav-link dropdown-toggle">
-                        <i class="fas fa-table"></i> おすすめ比較 <i class="fas fa-chevron-down"></i>
+                        <i class="fas fa-table"></i> おすすめ・口コミ徹底比較 <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="dropdown-menu compare-dropdown">
                         ${COMPARE_BANDS.map(b => `

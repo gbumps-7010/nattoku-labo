@@ -948,8 +948,8 @@ function itemListJson(band) {
   return {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: `ロボット掃除機 おすすめ比較【${band.label}】2大ECサイトの口コミ分析`,
-    description: `2大ECサイトの口コミを分析した${band.label}帯のロボット掃除機おすすめ比較（全${band.products.length}製品）`,
+    name: `ロボット掃除機のおすすめ・口コミ徹底比較【${band.label}】`,
+    description: `${band.label}帯のロボット掃除機をおすすめ・口コミ徹底比較（全${band.products.length}製品）。2大ECサイトの口コミ分析に基づきます。`,
     url: `https://nattoku-labo.com${band.urlPath}`,
     numberOfItems: band.products.length,
     itemListElement: band.products.map((p, i) => ({
@@ -1055,9 +1055,9 @@ const scrollHelperScript = `
 
 function buildPage(band) {
   const totalReviews = band.products.reduce((s, p) => s + (p.reviews || 0), 0);
-  const title = `ロボット掃除機 おすすめ比較【${band.label}】2大ECサイトの口コミ分析 | ナットクLabo`;
-  const desc = `${band.label}帯のロボット掃除機全${band.products.length}製品をおすすめ比較。2大ECサイトの口コミを分析し、価格・信頼度・注意点を横並びで確認できます。`;
-  const h1 = `ロボット掃除機のおすすめ比較【${band.label}】｜2大ECサイトの口コミ分析`;
+  const title = `ロボット掃除機のおすすめ・口コミ徹底比較【${band.label}】 | ナットクLabo`;
+  const desc = `${band.label}帯のロボット掃除機全${band.products.length}製品をおすすめ・口コミ徹底比較。2大ECサイトの口コミを分析し、価格・信頼度・注意点を横並びで確認できます。`;
+  const h1 = `ロボット掃除機のおすすめ・口コミ徹底比較【${band.label}】`;
   const productLinks = band.products
     .map(
       (p) =>
@@ -1080,7 +1080,7 @@ function buildPage(band) {
   <meta property="og:site_name" content="ナットクLabo">
   <meta property="og:locale" content="ja_JP">
   <meta property="og:url" content="https://nattoku-labo.com${band.urlPath}">
-  <meta property="og:title" content="ロボット掃除機 おすすめ比較【${band.label}】2大ECサイトの口コミ分析">
+  <meta property="og:title" content="ロボット掃除機のおすすめ・口コミ徹底比較【${band.label}】">
   <meta property="og:description" content="${escapeHtml(desc)}">
   <meta name="twitter:card" content="summary_large_image">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -1097,7 +1097,7 @@ function buildPage(band) {
     "@type": "BreadcrumbList",
     "itemListElement": [
       {"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://nattoku-labo.com/"},
-      {"@type": "ListItem", "position": 2, "name": "おすすめ比較", "item": "https://nattoku-labo.com/compare/"},
+      {"@type": "ListItem", "position": 2, "name": "おすすめ・口コミ徹底比較", "item": "https://nattoku-labo.com/compare/"},
       {"@type": "ListItem", "position": 3, "name": "${band.label}", "item": "https://nattoku-labo.com${band.urlPath}"}
     ]
   }
@@ -1107,18 +1107,17 @@ function buildPage(band) {
 <body>
   <header class="hero">
     <div class="wrap">
-      <p class="eyebrow">ロボット掃除機 おすすめ比較 · 口コミ分析 · ${band.label}帯 · 全${band.products.length}製品</p>
+      <p class="eyebrow">おすすめ・口コミ徹底比較 · ${band.label}帯 · 全${band.products.length}製品</p>
       <h1>${h1}</h1>
       <p class="lede">
-        「ロボット掃除機 おすすめ 比較」で迷う人向けに、同じ予算帯の候補を2大ECサイトの口コミ分析で横比較します。この価格帯の掲載製品はすべて表に入れています。
+        「ロボット掃除機 おすすめ 比較」で迷う人向けに、同じ予算帯の候補を口コミ徹底比較します。この価格帯の掲載製品はすべて表に入れています。
       </p>
       <div class="source-banner" role="note">
         <span class="source-kicker">データ根拠</span>
         <span>2大ECサイトの口コミを分析した結果です（合計 ${totalReviews.toLocaleString("ja-JP")}件 / ${band.products.length}製品）</span>
       </div>
       <div class="meta-row">
-        <span class="chip">2大ECサイトの口コミ分析</span>
-        <span class="chip">おすすめ比較</span>
+        <span class="chip">おすすめ・口コミ徹底比較</span>
         <span class="chip">${band.label}</span>
         <span class="chip">全${band.products.length}製品</span>
       </div>
@@ -1131,9 +1130,9 @@ function buildPage(band) {
         表示価格はメーカー希望小売価格（参考）です。本ページの比較は、2大ECサイトに寄せられた口コミを集計・分析した参考情報です。口コミが少ない製品は数値が揺れやすいので、件数・信頼度とあわせて読んでください。
       </div>
 
-      <section class="table-stage" aria-label="ロボット掃除機おすすめ比較表">
+      <section class="table-stage" aria-label="ロボット掃除機のおすすめ・口コミ徹底比較表">
         <div class="table-stage-label">
-          <strong>ロボット掃除機 おすすめ比較表（${band.label}・全${band.products.length}製品）</strong>
+          <strong>おすすめ・口コミ徹底比較表（${band.label}・全${band.products.length}製品）</strong>
         </div>
         <p class="table-source">比較表の数値・キーワード・注意点は、すべて2大ECサイトの口コミ分析に基づきます。</p>
         <div class="compare-nav" role="group" aria-label="比較表の横移動">
@@ -1160,7 +1159,7 @@ ${affCards(band.products)}
         </div>
       </section>
 
-      <h2>このおすすめ比較で見るべきポイント</h2>
+      <h2>この徹底比較で見るべきポイント</h2>
       <p class="section-sub">表の差だけ短く補足します。詳細は各製品ページへ。</p>
       ${matrixPoints(points)}
 
@@ -1172,7 +1171,7 @@ ${affCards(band.products)}
         ${productLinks}
       </div>
 
-      <p class="section-sub" style="margin-top:1.5rem"><a href="/compare/">ほかの価格帯のおすすめ比較一覧 →</a></p>
+      <p class="section-sub" style="margin-top:1.5rem"><a href="/compare/">ほかの価格帯のおすすめ・口コミ徹底比較一覧 →</a></p>
     </div>
   </article>
 
@@ -1181,7 +1180,7 @@ ${affCards(band.products)}
   </footer>
   ${affiliateScript}
   ${scrollHelperScript}
-  <script src="/products/js/navigation.js?v=20260810c"></script>
+  <script src="/products/js/navigation.js?v=20260810d"></script>
 </body>
 </html>
 `;
