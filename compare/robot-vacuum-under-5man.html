@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ロボット掃除機 おすすめ比較【〜5万円】2大ECサイトの口コミ分析 | ナットクLabo</title>
-  <meta name="description" content="〜5万円帯のロボット掃除機をおすすめ比較。2大ECサイトの口コミを分析し、価格・信頼度・注意点を横並びで確認できます。">
+  <meta name="description" content="〜5万円帯のロボット掃除機全11製品をおすすめ比較。2大ECサイトの口コミを分析し、価格・信頼度・注意点を横並びで確認できます。">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <link rel="canonical" href="https://nattoku-labo.com/compare/robot-vacuum-under-5man">
   <meta property="og:type" content="article">
@@ -12,7 +12,7 @@
   <meta property="og:locale" content="ja_JP">
   <meta property="og:url" content="https://nattoku-labo.com/compare/robot-vacuum-under-5man">
   <meta property="og:title" content="ロボット掃除機 おすすめ比較【〜5万円】2大ECサイトの口コミ分析">
-  <meta property="og:description" content="〜5万円帯のロボット掃除機をおすすめ比較。2大ECサイトの口コミを分析し、価格・信頼度・注意点を横並びで確認できます。">
+  <meta property="og:description" content="〜5万円帯のロボット掃除機全11製品をおすすめ比較。2大ECサイトの口コミを分析し、価格・信頼度・注意点を横並びで確認できます。">
   <meta name="twitter:card" content="summary_large_image">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
   <style>
@@ -36,24 +36,6 @@
       background: var(--bg);
       color: var(--text);
       line-height: 1.75;
-    }
-    .draft-bar {
-      position: sticky;
-      top: 0;
-      z-index: 50;
-      background: #0f172a;
-      color: #fff;
-      padding: 0.55rem 0.85rem;
-      font-size: 0.75rem;
-      display: flex;
-      gap: 0.5rem;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-    .draft-bar .draft-path { display: none; }
-    @media (min-width: 720px) {
-      .draft-bar .draft-path { display: inline; }
-      .draft-bar { font-size: 0.85rem; padding: 0.65rem 1.25rem; }
     }
     header.hero {
       background: linear-gradient(135deg, var(--primary), var(--secondary));
@@ -143,15 +125,6 @@
       font-size: 0.88rem;
       margin: 1rem 0 1.25rem;
     }
-    .draft-comment {
-      border: 1px dashed #f59e0b;
-      background: #fffbeb;
-      color: #92400e;
-      padding: 0.7rem 0.9rem;
-      border-radius: 10px;
-      font-size: 0.85rem;
-      margin: 0.85rem 0;
-    }
     .table-source {
       margin: 0 0 0.55rem;
       padding: 0.6rem 0.75rem;
@@ -169,7 +142,7 @@
       justify-content: space-between;
       gap: 0.5rem;
       margin: 0 0 0.55rem;
-      padding: 0.45rem 0.65rem;
+      padding: 0.55rem 0.7rem;
       background: #eff6ff;
       border: 1px solid #bfdbfe;
       border-radius: 8px;
@@ -177,15 +150,20 @@
       font-size: 0.8rem;
       font-weight: 800;
     }
-    @media (min-width: 900px) {
-      .swipe-hint { display: none; }
+    .swipe-hint .count {
+      flex-shrink: 0;
+      background: #1e40af;
+      color: #fff;
+      border-radius: 999px;
+      padding: 0.15rem 0.55rem;
+      font-size: 0.72rem;
     }
     /* ===== MAIN COMPARISON TABLE ===== */
     .table-stage {
       background: #fff;
       border: 2px solid #cbd5e1;
       border-radius: 16px;
-      padding: 0.75rem;
+      padding: 0.65rem;
       margin: 0.5rem 0 1.5rem;
       box-shadow: 0 1px 0 rgba(15, 23, 42, 0.04);
     }
@@ -196,12 +174,39 @@
       gap: 0.75rem;
       flex-wrap: wrap;
       margin-bottom: 0.65rem;
-      padding: 0 0.25rem;
+      padding: 0 0.15rem;
     }
     .table-stage-label strong {
-      font-size: 1.05rem;
+      font-size: 1.02rem;
       font-weight: 900;
       color: var(--secondary);
+    }
+    .compare-scroll-wrap {
+      position: relative;
+    }
+    .compare-scroll-wrap::before,
+    .compare-scroll-wrap::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 8px;
+      width: 22px;
+      z-index: 3;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity .15s ease;
+    }
+    .compare-scroll-wrap::before {
+      left: 0;
+      background: linear-gradient(to right, rgba(255,255,255,.95), transparent);
+    }
+    .compare-scroll-wrap::after {
+      right: 0;
+      background: linear-gradient(to left, rgba(255,255,255,.95), transparent);
+    }
+    .compare-scroll-wrap.can-scroll-left::before,
+    .compare-scroll-wrap.can-scroll-right::after {
+      opacity: 1;
     }
     .compare-scroll {
       overflow-x: auto;
@@ -209,21 +214,23 @@
       overscroll-behavior-x: contain;
       scroll-snap-type: x proximity;
       padding-bottom: 0.35rem;
+      scrollbar-width: thin;
     }
-    .compare-scroll::-webkit-scrollbar { height: 6px; }
+    .compare-scroll::-webkit-scrollbar { height: 7px; }
     .compare-scroll::-webkit-scrollbar-thumb {
       background: #94a3b8;
       border-radius: 999px;
     }
     table.compare {
-      width: 100%;
-      min-width: 760px;
-      border-collapse: collapse;
-      font-size: 0.86rem;
+      width: max-content;
+      min-width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 0.76rem;
     }
     table.compare th,
     table.compare td {
-      padding: 0.7rem 0.65rem;
+      padding: 0.55rem 0.4rem;
       border-bottom: 1px solid var(--line);
       text-align: center;
       vertical-align: middle;
@@ -233,73 +240,117 @@
       text-align: left;
       font-weight: 700;
       color: #334155;
-      white-space: nowrap;
+      white-space: normal;
+      line-height: 1.3;
       background: #f8fafc;
       position: sticky;
       left: 0;
-      z-index: 2;
-      min-width: 7.5rem;
+      z-index: 4;
+      min-width: 4.8rem;
+      max-width: 5.4rem;
+      padding-left: 0.45rem;
+      padding-right: 0.4rem;
+      box-shadow: 6px 0 10px -8px rgba(15, 23, 42, 0.35);
+      font-size: 0.7rem;
     }
     table.compare thead th {
       background: #f1f5f9;
       vertical-align: bottom;
       border-bottom: 2px solid #cbd5e1;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+    table.compare thead th:first-child {
+      z-index: 5;
+      vertical-align: middle;
+      font-size: 0.72rem;
     }
     table.compare thead th.product-col {
       scroll-snap-align: start;
-    }
-    table.compare thead th:first-child {
-      vertical-align: middle;
-      font-size: 0.82rem;
+      background: #f1f5f9;
     }
     .product-head {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 0.55rem;
-      min-width: 12.5rem;
-      padding: 0.25rem 0.15rem 0.15rem;
+      gap: 0.35rem;
+      width: 7.1rem;
+      padding: 0.15rem 0.1rem;
     }
     .product-photo {
-      width: 112px;
-      height: 112px;
+      width: 68px;
+      height: 68px;
       object-fit: contain;
       background: #fff;
       border: 1px solid var(--line);
-      border-radius: 12px;
-      padding: 6px;
-    }
-    @media (min-width: 720px) {
-      .product-photo { width: 132px; height: 132px; }
-      table.compare { font-size: 0.9rem; }
+      border-radius: 10px;
+      padding: 4px;
     }
     .product-name {
-      font-size: 0.84rem;
+      font-size: 0.7rem;
       font-weight: 900;
-      line-height: 1.3;
+      line-height: 1.25;
       color: var(--secondary);
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      word-break: break-word;
     }
     .product-mfr {
-      font-size: 0.75rem;
+      font-size: 0.62rem;
       font-weight: 700;
       color: var(--muted);
-      margin-top: -0.25rem;
+      margin-top: -0.15rem;
     }
     .product-head a {
       color: inherit;
       text-decoration: none;
+      width: 100%;
     }
     .product-head a:hover .product-name { color: var(--primary); }
+    @media (min-width: 720px) {
+      table.compare { font-size: 0.84rem; }
+      table.compare th,
+      table.compare td { padding: 0.65rem 0.55rem; }
+      table.compare th:first-child,
+      table.compare td:first-child {
+        min-width: 6.5rem;
+        max-width: 7.2rem;
+        font-size: 0.8rem;
+      }
+      .product-head { width: 9.5rem; gap: 0.45rem; }
+      .product-photo { width: 96px; height: 96px; }
+      .product-name { font-size: 0.8rem; }
+      .product-mfr { font-size: 0.72rem; }
+    }
+    @media (min-width: 1100px) {
+      .product-head { width: 11rem; }
+      .product-photo { width: 112px; height: 112px; }
+      .product-name { font-size: 0.84rem; }
+    }
     table.compare tbody tr:nth-child(even) td { background: #fcfdff; }
     table.compare tbody tr:nth-child(even) td:first-child { background: #f1f5f9; }
     table.compare tbody tr:hover td { background: #f0f9ff; }
     table.compare tbody tr:hover td:first-child { background: #e0f2fe; }
-    .score { font-weight: 900; color: var(--primary); font-size: 1.02rem; }
-    .price { font-weight: 800; }
-    .kw { font-size: 0.82rem; line-height: 1.45; text-align: left; }
+    .score { font-weight: 900; color: var(--primary); font-size: 0.92rem; }
+    .price { font-weight: 800; font-size: 0.78rem; white-space: nowrap; }
+    .kw {
+      font-size: 0.68rem;
+      line-height: 1.4;
+      text-align: left;
+      max-width: 7.1rem;
+      word-break: break-word;
+    }
+    @media (min-width: 720px) {
+      .score { font-size: 1rem; }
+      .price { font-size: 0.86rem; }
+      .kw { font-size: 0.78rem; max-width: 9.5rem; }
+    }
     .warn { color: var(--warn); font-weight: 700; }
     .bad { color: var(--bad); font-weight: 700; }
-    .muted { color: var(--muted); font-size: 0.88rem; }
+    .thin-data { opacity: 0.85; }
     .section-sub {
       color: var(--muted);
       font-size: 0.88rem;
@@ -331,49 +382,57 @@
       border-radius: 6px;
       margin-bottom: 0.35rem;
     }
-    .product-links { display: grid; gap: 0.55rem; margin-top: 0.75rem; }
+    .product-links {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+      margin-top: 0.75rem;
+    }
+    @media (min-width: 640px) {
+      .product-links { grid-template-columns: 1fr 1fr; }
+    }
     .product-links a {
       display: block;
       text-decoration: none;
       color: var(--primary);
       font-weight: 700;
+      font-size: 0.88rem;
       background: #fff;
       border: 1px solid var(--line);
       border-radius: 10px;
-      padding: 0.75rem 0.9rem;
+      padding: 0.7rem 0.85rem;
     }
-    .affiliate-section {
-      margin: 1.75rem 0 1rem;
-    }
-    .affiliate-section > h2 {
-      margin-top: 0;
-    }
+    .affiliate-section { margin: 1.75rem 0 1rem; }
+    .affiliate-section > h2 { margin-top: 0; }
     .affiliate-grid {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 1rem;
+      gap: 0.85rem;
     }
-    @media (min-width: 900px) {
+    @media (min-width: 640px) {
+      .affiliate-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (min-width: 980px) {
       .affiliate-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     }
     .aff-card {
       background: #fff;
       border: 1px solid var(--line);
       border-radius: 14px;
-      padding: 1rem 0.9rem 1.1rem;
+      padding: 0.9rem 0.8rem 1rem;
       display: flex;
       flex-direction: column;
-      gap: 0.65rem;
+      gap: 0.55rem;
       min-width: 0;
     }
     .aff-card-head {
       display: flex;
       align-items: center;
-      gap: 0.75rem;
+      gap: 0.65rem;
     }
     .aff-card-head img {
-      width: 64px;
-      height: 64px;
+      width: 56px;
+      height: 56px;
       object-fit: contain;
       border: 1px solid var(--line);
       border-radius: 10px;
@@ -382,12 +441,12 @@
     }
     .aff-card-head .name {
       font-weight: 900;
-      font-size: 0.92rem;
-      line-height: 1.35;
+      font-size: 0.86rem;
+      line-height: 1.3;
       color: var(--secondary);
     }
     .aff-card-head .mfr {
-      font-size: 0.75rem;
+      font-size: 0.72rem;
       font-weight: 700;
       color: var(--muted);
     }
@@ -397,16 +456,13 @@
       text-decoration: none;
       color: #fff;
       font-weight: 800;
-      font-size: 0.92rem;
+      font-size: 0.88rem;
       line-height: 1.4;
-      padding: 0.75rem 0.9rem;
+      padding: 0.7rem 0.8rem;
       border-radius: 10px;
       background: linear-gradient(145deg, #0e7490 0%, #0d9488 42%, #059669 100%);
     }
-    .aff-moshimo {
-      min-width: 0;
-      width: 100%;
-    }
+    .aff-moshimo { min-width: 0; width: 100%; }
     .aff-moshimo iframe {
       width: 100%;
       max-width: 100%;
@@ -414,7 +470,7 @@
       display: block;
     }
     .aff-status {
-      font-size: 0.82rem;
+      font-size: 0.78rem;
       color: var(--muted);
       font-weight: 600;
     }
@@ -432,31 +488,79 @@
   </style>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="/products/css/navigation.css?v=20260809a">
+  <link rel="stylesheet" href="/products/css/navigation.css?v=20260809b">
   <script type="application/ld+json">
   {
   "@context": "https://schema.org",
   "@type": "ItemList",
   "name": "ロボット掃除機 おすすめ比較【〜5万円】2大ECサイトの口コミ分析",
-  "description": "2大ECサイトの口コミを分析した〜5万円帯のロボット掃除機おすすめ比較",
+  "description": "2大ECサイトの口コミを分析した〜5万円帯のロボット掃除機おすすめ比較（全11製品）",
   "url": "https://nattoku-labo.com/compare/robot-vacuum-under-5man",
-  "numberOfItems": 3,
+  "numberOfItems": 11,
   "itemListElement": [
     {
       "@type": "ListItem",
       "position": 1,
-      "url": "https://nattoku-labo.com/products/eufy-robot-vacuum-auto-empty-c10",
-      "name": "Eufy Robot Vacuum Auto-Empty C10"
+      "url": "https://nattoku-labo.com/products/d9-max-gen-2",
+      "name": "D9 Max Gen 2"
     },
     {
       "@type": "ListItem",
       "position": 2,
+      "url": "https://nattoku-labo.com/products/d10-plus",
+      "name": "D10 Plus"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
       "url": "https://nattoku-labo.com/products/eufy-robovac-g30",
       "name": "Eufy RoboVac G30"
     },
     {
       "@type": "ListItem",
-      "position": 3,
+      "position": 4,
+      "url": "https://nattoku-labo.com/products/f10-plus",
+      "name": "F10 Plus"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "url": "https://nattoku-labo.com/products/eufy-robot-vacuum-auto-empty-c10",
+      "name": "Eufy Robot Vacuum Auto-Empty C10"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "url": "https://nattoku-labo.com/products/eufy-robovac-g10-hybrid",
+      "name": "Eufy RoboVac G10 Hybrid"
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "url": "https://nattoku-labo.com/products/deebot-n30",
+      "name": "DEEBOT N30"
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "url": "https://nattoku-labo.com/products/q10v",
+      "name": "Q10V"
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "url": "https://nattoku-labo.com/products/roomba-mini-slim-slimcharge",
+      "name": "Roomba® Mini Slim + SlimCharge™"
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "url": "https://nattoku-labo.com/products/eufy-robovac-g30-hybrid",
+      "name": "Eufy RoboVac G30 Hybrid"
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
       "url": "https://nattoku-labo.com/products/roomba-mini-autoempty",
       "name": "Roomba® Mini + AutoEmpty™"
     }
@@ -479,20 +583,20 @@
 <body>
   <header class="hero">
     <div class="wrap">
-      <p class="eyebrow">ロボット掃除機 おすすめ比較 · 口コミ分析 · 〜5万円帯</p>
+      <p class="eyebrow">ロボット掃除機 おすすめ比較 · 口コミ分析 · 〜5万円帯 · 全11製品</p>
       <h1>ロボット掃除機のおすすめ比較【〜5万円】｜2大ECサイトの口コミ分析</h1>
       <p class="lede">
-        「ロボット掃除機 おすすめ 比較」で迷う人向けに、同じ予算帯の候補を2大ECサイトの口コミ分析で横比較します。
+        「ロボット掃除機 おすすめ 比較」で迷う人向けに、同じ予算帯の候補を2大ECサイトの口コミ分析で横比較します。この価格帯の掲載製品はすべて表に入れています。
       </p>
       <div class="source-banner" role="note">
         <span class="source-kicker">データ根拠</span>
-        <span>2大ECサイトの口コミを分析した結果です（合計 1,215件）</span>
+        <span>2大ECサイトの口コミを分析した結果です（合計 2,174件 / 11製品）</span>
       </div>
       <div class="meta-row">
         <span class="chip">2大ECサイトの口コミ分析</span>
         <span class="chip">おすすめ比較</span>
         <span class="chip">〜5万円</span>
-        <span class="chip">口コミ分析比較</span>
+        <span class="chip">全11製品</span>
       </div>
     </div>
   </header>
@@ -500,33 +604,53 @@
   <article>
     <div class="wrap">
       <div class="note">
-        表示価格はメーカー希望小売価格（参考）です。本ページの比較は、2大ECサイトに寄せられた口コミを集計・分析した参考情報です。すべての方に当てはまるわけではありません。
+        表示価格はメーカー希望小売価格（参考）です。本ページの比較は、2大ECサイトに寄せられた口コミを集計・分析した参考情報です。口コミが少ない製品は数値が揺れやすいので、件数・信頼度とあわせて読んでください。
       </div>
 
       <section class="table-stage" aria-label="ロボット掃除機おすすめ比較表">
         <div class="table-stage-label">
-          <strong>ロボット掃除機 おすすめ比較表（〜5万円）</strong>
+          <strong>ロボット掃除機 おすすめ比較表（〜5万円・全11製品）</strong>
         </div>
         <p class="table-source">比較表の数値・キーワード・注意点は、すべて2大ECサイトの口コミ分析に基づきます。</p>
-        <p class="swipe-hint"><span>他の製品を見る</span><span>左右にスワイプ →</span></p>
-        <div class="compare-scroll">
-          <table class="compare">
+        <p class="swipe-hint">
+          <span>表を左右にスワイプして全製品を比較</span>
+          <span class="count">11製品</span>
+        </p>
+        <div class="compare-scroll-wrap can-scroll-right">
+          <div class="compare-scroll">
+            <table class="compare">
             <thead>
               <tr>
                 <th scope="col">比較項目</th>
-                <th scope="col" class="product-col">
+                <th scope="col" class="product-col thin-data">
                   <div class="product-head">
-                    <a href="https://nattoku-labo.com/products/eufy-robot-vacuum-auto-empty-c10" target="_blank" rel="noopener">
+                    <a href="https://nattoku-labo.com/products/d9-max-gen-2" target="_blank" rel="noopener">
                       <img
                         class="product-photo"
-                        src="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t2292/t2292_nomal.jpg"
-                        alt="Anker Eufy Robot Vacuum Auto-Empty C10"
-                        width="132"
-                        height="132"
-                        loading="eager"
+                        src="https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/d9maxgen2_cp.jpg"
+                        alt="Dreame D9 Max Gen 2"
+                        width="112"
+                        height="112"
+                        loading="lazy"
                       >
-                      <div class="product-name">Eufy Robot Vacuum Auto-Empty C10</div>
-                      <div class="product-mfr">Anker</div>
+                      <div class="product-name">D9 Max Gen 2</div>
+                      <div class="product-mfr">Dreame</div>
+                    </a>
+                  </div>
+                </th>
+                <th scope="col" class="product-col thin-data">
+                  <div class="product-head">
+                    <a href="https://nattoku-labo.com/products/d10-plus" target="_blank" rel="noopener">
+                      <img
+                        class="product-photo"
+                        src="https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/11302689/imgrc0140534087.jpg"
+                        alt="Dreame D10 Plus"
+                        width="112"
+                        height="112"
+                        loading="lazy"
+                      >
+                      <div class="product-name">D10 Plus</div>
+                      <div class="product-mfr">Dreame</div>
                     </a>
                   </div>
                 </th>
@@ -537,11 +661,123 @@
                         class="product-photo"
                         src="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t2250/t2250_normal.jpg"
                         alt="Anker Eufy RoboVac G30"
-                        width="132"
-                        height="132"
-                        loading="eager"
+                        width="112"
+                        height="112"
+                        loading="lazy"
                       >
                       <div class="product-name">Eufy RoboVac G30</div>
+                      <div class="product-mfr">Anker</div>
+                    </a>
+                  </div>
+                </th>
+                <th scope="col" class="product-col thin-data">
+                  <div class="product-head">
+                    <a href="https://nattoku-labo.com/products/f10-plus" target="_blank" rel="noopener">
+                      <img
+                        class="product-photo"
+                        src="https://thumbnail.image.rakuten.co.jp/@0_mall/homarina/cabinet/g/8/e9zecwh0u4-5.jpg"
+                        alt="Dreame F10 Plus"
+                        width="112"
+                        height="112"
+                        loading="lazy"
+                      >
+                      <div class="product-name">F10 Plus</div>
+                      <div class="product-mfr">Dreame</div>
+                    </a>
+                  </div>
+                </th>
+                <th scope="col" class="product-col">
+                  <div class="product-head">
+                    <a href="https://nattoku-labo.com/products/eufy-robot-vacuum-auto-empty-c10" target="_blank" rel="noopener">
+                      <img
+                        class="product-photo"
+                        src="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t2292/t2292_nomal.jpg"
+                        alt="Anker Eufy Robot Vacuum Auto-Empty C10"
+                        width="112"
+                        height="112"
+                        loading="lazy"
+                      >
+                      <div class="product-name">Eufy Robot Vacuum Auto-Empty C10</div>
+                      <div class="product-mfr">Anker</div>
+                    </a>
+                  </div>
+                </th>
+                <th scope="col" class="product-col">
+                  <div class="product-head">
+                    <a href="https://nattoku-labo.com/products/eufy-robovac-g10-hybrid" target="_blank" rel="noopener">
+                      <img
+                        class="product-photo"
+                        src="https://thumbnail.image.rakuten.co.jp/@0_mall/value-shopping/cabinet/product07/4571411191008.jpg"
+                        alt="Anker Eufy RoboVac G10 Hybrid"
+                        width="112"
+                        height="112"
+                        loading="lazy"
+                      >
+                      <div class="product-name">Eufy RoboVac G10 Hybrid</div>
+                      <div class="product-mfr">Anker</div>
+                    </a>
+                  </div>
+                </th>
+                <th scope="col" class="product-col">
+                  <div class="product-head">
+                    <a href="https://nattoku-labo.com/products/deebot-n30" target="_blank" rel="noopener">
+                      <img
+                        class="product-photo"
+                        src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/ydlx11-32df.jpg"
+                        alt="ECOVACS DEEBOT N30"
+                        width="112"
+                        height="112"
+                        loading="lazy"
+                      >
+                      <div class="product-name">DEEBOT N30</div>
+                      <div class="product-mfr">ECOVACS</div>
+                    </a>
+                  </div>
+                </th>
+                <th scope="col" class="product-col thin-data">
+                  <div class="product-head">
+                    <a href="https://nattoku-labo.com/products/q10v" target="_blank" rel="noopener">
+                      <img
+                        class="product-photo"
+                        src="https://thumbnail.image.rakuten.co.jp/@0_mall/goodlifeshopstore/cabinet/g/11/e9z0wtw8az-4.jpg"
+                        alt="Roborock Q10V"
+                        width="112"
+                        height="112"
+                        loading="lazy"
+                      >
+                      <div class="product-name">Q10V</div>
+                      <div class="product-mfr">Roborock</div>
+                    </a>
+                  </div>
+                </th>
+                <th scope="col" class="product-col">
+                  <div class="product-head">
+                    <a href="https://nattoku-labo.com/products/roomba-mini-slim-slimcharge" target="_blank" rel="noopener">
+                      <img
+                        class="product-photo"
+                        src="https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/03016688/20260219_review_2nen/minislim_2nen_logo.jpg"
+                        alt="iRobot Roomba® Mini Slim + SlimCharge™"
+                        width="112"
+                        height="112"
+                        loading="lazy"
+                      >
+                      <div class="product-name">Roomba® Mini Slim + SlimCharge™</div>
+                      <div class="product-mfr">iRobot</div>
+                    </a>
+                  </div>
+                </th>
+                <th scope="col" class="product-col">
+                  <div class="product-head">
+                    <a href="https://nattoku-labo.com/products/eufy-robovac-g30-hybrid" target="_blank" rel="noopener">
+                      <img
+                        class="product-photo"
+                        src="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t2253/t2253_daily.jpg"
+                        alt="Anker Eufy RoboVac G30 Hybrid"
+                        width="112"
+                        height="112"
+                        loading="lazy"
+                      >
+                      <div class="product-name">Eufy RoboVac G30 Hybrid</div>
                       <div class="product-mfr">Anker</div>
                     </a>
                   </div>
@@ -553,9 +789,9 @@
                         class="product-photo"
                         src="https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/item_thum/br_thum/mini_ae_2nen_rank.jpg"
                         alt="iRobot Roomba® Mini + AutoEmpty™"
-                        width="132"
-                        height="132"
-                        loading="eager"
+                        width="112"
+                        height="112"
+                        loading="lazy"
                       >
                       <div class="product-name">Roomba® Mini + AutoEmpty™</div>
                       <div class="product-mfr">iRobot</div>
@@ -567,118 +803,251 @@
             <tbody>
               <tr>
                 <td>参考価格</td>
-                <td class="price">¥29,990</td>
+                <td class="price">¥17,800</td>
+                <td class="price">¥26,900</td>
                 <td class="price">¥29,490</td>
+                <td class="price">¥29,800</td>
+                <td class="price">¥29,990</td>
+                <td class="price">¥29,990</td>
+                <td class="price">¥34,800</td>
+                <td class="price">¥35,999</td>
+                <td class="price">¥39,800</td>
+                <td class="price">¥39,990</td>
                 <td class="price">¥49,800</td>
               </tr>
               <tr>
                 <td>口コミ件数</td>
-                <td class="score">408件</td>
+                <td class="score thin-data">45件</td>
+                <td class="score thin-data">28件</td>
                 <td class="score">472件</td>
+                <td class="score thin-data">12件</td>
+                <td class="score">408件</td>
+                <td class="score">102件</td>
+                <td class="score">82件</td>
+                <td class="score thin-data">38件</td>
+                <td class="score">201件</td>
+                <td class="score">451件</td>
                 <td class="score">335件</td>
               </tr>
               <tr>
                 <td>口コミ信頼度</td>
+                <td class="score">67</td>
+                <td class="score">52.7</td>
+                <td class="score">84.8</td>
+                <td class="score">55</td>
                 <td class="score">88</td>
+                <td class="score">69.8</td>
+                <td class="score">74.8</td>
+                <td class="score">52</td>
+                <td class="score">81.4</td>
                 <td class="score">84.8</td>
                 <td class="score">85.6</td>
               </tr>
               <tr class="row-group">
                 <td>高評価で多い声</td>
-                <td class="kw">満足 / 静か / マッピング</td>
+                <td class="kw">水拭き / マッピング / 吸引</td>
+                <td class="kw">静か / 満足 / 便利</td>
                 <td class="kw">満足 / 静か / 便利</td>
+                <td class="kw">満足 / 吸引 / 静か</td>
+                <td class="kw">満足 / 静か / マッピング</td>
+                <td class="kw">水拭き / 吸引 / 満足</td>
+                <td class="kw">吸引 / マッピング / 満足</td>
+                <td class="kw">水拭き / 満足 / マッピング</td>
+                <td class="kw">満足 / 水拭き / 静か</td>
+                <td class="kw">満足 / 水拭き / 静か</td>
                 <td class="kw">満足 / 水拭き / マッピング</td>
               </tr>
               <tr>
                 <td>低評価で多い声</td>
-                <td class="kw">故障 / 水拭き / 段差</td>
+                <td class="kw">価格 / 停止 / 段差</td>
+                <td class="kw">段差 / 故障 / 吸引</td>
                 <td class="kw">故障 / 段差 / 動作音</td>
+                <td class="kw">故障 / コード</td>
+                <td class="kw">故障 / 水拭き / 段差</td>
+                <td class="kw">故障 / 段差 / 停止</td>
+                <td class="kw">故障 / 段差 / 停止</td>
+                <td class="kw">故障 / 停止 / 段差</td>
+                <td class="kw">故障 / 動作音 / 水拭き</td>
+                <td class="kw">故障 / 段差 / 停止</td>
                 <td class="kw">故障 / 段差 / 動作音</td>
               </tr>
               <tr class="row-group">
                 <td>床掃除</td>
+                <td class="score">95</td>
+                <td class="score">95</td>
                 <td class="score">92</td>
+                <td class="score">90</td>
+                <td class="score">92</td>
+                <td class="score">88</td>
+                <td class="score">95</td>
+                <td class="score">95</td>
+                <td class="score">96</td>
                 <td class="score">92</td>
                 <td class="score">95</td>
               </tr>
               <tr>
                 <td>静音</td>
-                <td class="score">79</td>
+                <td class="score">88</td>
+                <td class="score">96</td>
                 <td class="score">95</td>
+                <td class="score">95</td>
+                <td class="score">79</td>
+                <td class="score">90</td>
+                <td class="score">82</td>
+                <td class="score">90</td>
+                <td class="score">78</td>
+                <td class="score">96</td>
                 <td class="score">70</td>
               </tr>
               <tr>
                 <td>メンテ</td>
-                <td class="score">93</td>
+                <td class="score">85</td>
+                <td class="score">85</td>
                 <td class="score">72</td>
+                <td class="score">78</td>
+                <td class="score">93</td>
+                <td class="score">82</td>
+                <td class="score">85</td>
+                <td class="score">75</td>
+                <td class="score">62</td>
+                <td class="score">78</td>
                 <td class="score">92</td>
               </tr>
               <tr>
                 <td>段差</td>
-                <td class="score">68</td>
                 <td class="score">70</td>
+                <td class="score">80</td>
+                <td class="score">70</td>
+                <td class="score">50</td>
+                <td class="score">68</td>
+                <td class="score">55</td>
+                <td class="score">65</td>
+                <td class="score">70</td>
+                <td class="score">68</td>
+                <td class="score">62</td>
                 <td class="score">65</td>
               </tr>
               <tr>
                 <td>ペット毛</td>
+                <td class="score">90</td>
+                <td class="score">90</td>
+                <td class="score">90</td>
+                <td class="score">85</td>
                 <td class="score">88</td>
+                <td class="score">85</td>
+                <td class="score">92</td>
+                <td class="score">93</td>
+                <td class="score">91</td>
                 <td class="score">90</td>
                 <td class="score">88</td>
               </tr>
               <tr>
                 <td>アプリ安定</td>
-                <td class="score">84</td>
+                <td class="score">92</td>
+                <td class="score">88</td>
                 <td class="score">80</td>
+                <td class="score">65</td>
+                <td class="score">84</td>
+                <td class="score">65</td>
+                <td class="score">88</td>
+                <td class="score">70</td>
+                <td class="score">55</td>
+                <td class="score">73</td>
                 <td class="score">55</td>
               </tr>
               <tr class="row-group">
                 <td>注意点1</td>
-                <td class="kw bad">半年以内の故障・エラー頻発（8.4%）</td>
+                <td class="kw bad">段差に弱く、玄関などから落下すること…（19%）</td>
+                <td class="kw bad">消耗品の入手が困難・不明（22%）</td>
                 <td class="kw bad">1〜2年で故障・不具合が発生（12.1%）</td>
+                <td class="kw bad">購入後、短期間で故障する（18%）</td>
+                <td class="kw bad">半年以内の故障・エラー頻発（8.4%）</td>
+                <td class="kw bad">バッテリーが1〜2年で故障する（28%）</td>
+                <td class="kw warn">段差やラグで頻繁に停止・スタックする（6.2%）</td>
+                <td class="kw bad">購入後の故障・不具合（13%）</td>
+                <td class="kw bad">アプリとWi-Fiが接続できない・不…（39%）</td>
+                <td class="kw bad">2〜3年でバッテリーや車輪が故障する（11%）</td>
                 <td class="kw bad">Wi-Fi接続が非常に不安定（41%）</td>
               </tr>
               <tr>
                 <td>注意点2</td>
-                <td class="kw">段差での落下や家具への乗り上げ</td>
+                <td class="kw">アプリが1台のスマホでしか利用できな…</td>
+                <td class="kw">初期不良で充電・起動しない</td>
                 <td class="kw">段差で引っかかる・玄関から落下する</td>
+                <td class="kw">コード類を強引に巻き込む</td>
+                <td class="kw">段差での落下や家具への乗り上げ</td>
+                <td class="kw">段差や障害物で頻繁に止まる</td>
+                <td class="kw">掃除が完了する前に途中で止まる・故障</td>
+                <td class="kw">アプリ・Alexa連携の不安定さ</td>
+                <td class="kw">ダスト容器が小さく、手入れがしにくい</td>
+                <td class="kw">サイドブラシが掃除中にすぐ外れる</td>
                 <td class="kw">玄関などの段差から落下する</td>
               </tr>
               <tr>
                 <td>注意点3</td>
-                <td class="kw">ステーションのゴミ収集音が「爆音」</td>
+                <td class="kw">厚手のカーペットや家具の脚で止まって…</td>
+                <td class="kw">アプリの初期設定で失敗する</td>
                 <td class="kw">Wi-Fiの初期設定が難しい</td>
+                <td class="kw">スマホアプリとの連携が難しい</td>
+                <td class="kw">ステーションのゴミ収集音が「爆音」</td>
+                <td class="kw">カーペットの掃除能力が低い</td>
+                <td class="kw">アプリの初期設定やWi-Fi接続が難…</td>
+                <td class="kw">日本語音声の違和感</td>
+                <td class="kw">段差で落下・立ち往生することがある</td>
+                <td class="kw">わずかな段差やラグで頻繁に停止する</td>
                 <td class="kw">ゴミ収集時の音が「爆音」レベル</td>
               </tr>
               <tr class="row-group">
                 <td>ひとこと</td>
-                <td class="kw">自動収集つきのエントリー本命</td>
-                <td class="kw">口コミ最多。定番の吸引特化</td>
-                <td class="kw">ブランド安心のコンパクト収集</td>
+                <td class="kw">データは中位。注意点を要確認</td>
+                <td class="kw">口コミ少なめ。参考程度に</td>
+                <td class="kw">口コミ厚みあり。静音が強い</td>
+                <td class="kw">口コミ少なめ。参考程度に</td>
+                <td class="kw">口コミ厚みあり。メンテが強い</td>
+                <td class="kw">静音評価が相対的に高い</td>
+                <td class="kw">床評価が相対的に高い</td>
+                <td class="kw">データは中位。注意点を要確認</td>
+                <td class="kw">床評価が相対的に高い</td>
+                <td class="kw">口コミ厚みあり。静音が強い</td>
+                <td class="kw">口コミ厚みあり。床が強い</td>
               </tr>
             </tbody>
           </table>
+          </div>
         </div>
       </section>
 
       <section class="affiliate-section" id="price-check" aria-label="最新価格をチェック">
         <h2>最新価格をチェック</h2>
-        <p class="section-sub">各製品の最新価格は、以下から確認できます。</p>
+        <p class="section-sub">各製品の最新価格は、以下から確認できます（11製品）。</p>
         <div class="affiliate-grid" id="affiliate-grid">
-          <article class="aff-card" data-slug="eufy-robot-vacuum-auto-empty-c10">
+          <article class="aff-card" data-slug="d9-max-gen-2">
             <div class="aff-card-head">
-              <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t2292/t2292_nomal.jpg" alt="">
+              <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/d9maxgen2_cp.jpg" alt="" loading="lazy">
               <div>
-                <div class="name">Eufy Robot Vacuum Auto-Empty C10</div>
-                <div class="mfr">Anker</div>
+                <div class="name">D9 Max Gen 2</div>
+                <div class="mfr">Dreame</div>
               </div>
             </div>
             <div class="aff-official-slot"></div>
-            <div class="aff-moshimo" id="aff-moshimo-eufy-robot-vacuum-auto-empty-c10"></div>
+            <div class="aff-moshimo" id="aff-moshimo-d9-max-gen-2"></div>
+            <p class="aff-status">読み込み中…</p>
+          </article>
+          <article class="aff-card" data-slug="d10-plus">
+            <div class="aff-card-head">
+              <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/11302689/imgrc0140534087.jpg" alt="" loading="lazy">
+              <div>
+                <div class="name">D10 Plus</div>
+                <div class="mfr">Dreame</div>
+              </div>
+            </div>
+            <div class="aff-official-slot"></div>
+            <div class="aff-moshimo" id="aff-moshimo-d10-plus"></div>
             <p class="aff-status">読み込み中…</p>
           </article>
           <article class="aff-card" data-slug="eufy-robovac-g30">
             <div class="aff-card-head">
-              <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t2250/t2250_normal.jpg" alt="">
+              <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t2250/t2250_normal.jpg" alt="" loading="lazy">
               <div>
                 <div class="name">Eufy RoboVac G30</div>
                 <div class="mfr">Anker</div>
@@ -688,9 +1057,93 @@
             <div class="aff-moshimo" id="aff-moshimo-eufy-robovac-g30"></div>
             <p class="aff-status">読み込み中…</p>
           </article>
+          <article class="aff-card" data-slug="f10-plus">
+            <div class="aff-card-head">
+              <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/homarina/cabinet/g/8/e9zecwh0u4-5.jpg" alt="" loading="lazy">
+              <div>
+                <div class="name">F10 Plus</div>
+                <div class="mfr">Dreame</div>
+              </div>
+            </div>
+            <div class="aff-official-slot"></div>
+            <div class="aff-moshimo" id="aff-moshimo-f10-plus"></div>
+            <p class="aff-status">読み込み中…</p>
+          </article>
+          <article class="aff-card" data-slug="eufy-robot-vacuum-auto-empty-c10">
+            <div class="aff-card-head">
+              <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t2292/t2292_nomal.jpg" alt="" loading="lazy">
+              <div>
+                <div class="name">Eufy Robot Vacuum Auto-Empty C10</div>
+                <div class="mfr">Anker</div>
+              </div>
+            </div>
+            <div class="aff-official-slot"></div>
+            <div class="aff-moshimo" id="aff-moshimo-eufy-robot-vacuum-auto-empty-c10"></div>
+            <p class="aff-status">読み込み中…</p>
+          </article>
+          <article class="aff-card" data-slug="eufy-robovac-g10-hybrid">
+            <div class="aff-card-head">
+              <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/value-shopping/cabinet/product07/4571411191008.jpg" alt="" loading="lazy">
+              <div>
+                <div class="name">Eufy RoboVac G10 Hybrid</div>
+                <div class="mfr">Anker</div>
+              </div>
+            </div>
+            <div class="aff-official-slot"></div>
+            <div class="aff-moshimo" id="aff-moshimo-eufy-robovac-g10-hybrid"></div>
+            <p class="aff-status">読み込み中…</p>
+          </article>
+          <article class="aff-card" data-slug="deebot-n30">
+            <div class="aff-card-head">
+              <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/ydlx11-32df.jpg" alt="" loading="lazy">
+              <div>
+                <div class="name">DEEBOT N30</div>
+                <div class="mfr">ECOVACS</div>
+              </div>
+            </div>
+            <div class="aff-official-slot"></div>
+            <div class="aff-moshimo" id="aff-moshimo-deebot-n30"></div>
+            <p class="aff-status">読み込み中…</p>
+          </article>
+          <article class="aff-card" data-slug="q10v">
+            <div class="aff-card-head">
+              <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/goodlifeshopstore/cabinet/g/11/e9z0wtw8az-4.jpg" alt="" loading="lazy">
+              <div>
+                <div class="name">Q10V</div>
+                <div class="mfr">Roborock</div>
+              </div>
+            </div>
+            <div class="aff-official-slot"></div>
+            <div class="aff-moshimo" id="aff-moshimo-q10v"></div>
+            <p class="aff-status">読み込み中…</p>
+          </article>
+          <article class="aff-card" data-slug="roomba-mini-slim-slimcharge">
+            <div class="aff-card-head">
+              <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/03016688/20260219_review_2nen/minislim_2nen_logo.jpg" alt="" loading="lazy">
+              <div>
+                <div class="name">Roomba® Mini Slim + SlimCharge™</div>
+                <div class="mfr">iRobot</div>
+              </div>
+            </div>
+            <div class="aff-official-slot"></div>
+            <div class="aff-moshimo" id="aff-moshimo-roomba-mini-slim-slimcharge"></div>
+            <p class="aff-status">読み込み中…</p>
+          </article>
+          <article class="aff-card" data-slug="eufy-robovac-g30-hybrid">
+            <div class="aff-card-head">
+              <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t2253/t2253_daily.jpg" alt="" loading="lazy">
+              <div>
+                <div class="name">Eufy RoboVac G30 Hybrid</div>
+                <div class="mfr">Anker</div>
+              </div>
+            </div>
+            <div class="aff-official-slot"></div>
+            <div class="aff-moshimo" id="aff-moshimo-eufy-robovac-g30-hybrid"></div>
+            <p class="aff-status">読み込み中…</p>
+          </article>
           <article class="aff-card" data-slug="roomba-mini-autoempty">
             <div class="aff-card-head">
-              <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/item_thum/br_thum/mini_ae_2nen_rank.jpg" alt="">
+              <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/item_thum/br_thum/mini_ae_2nen_rank.jpg" alt="" loading="lazy">
               <div>
                 <div class="name">Roomba® Mini + AutoEmpty™</div>
                 <div class="mfr">iRobot</div>
@@ -707,51 +1160,59 @@
       <p class="section-sub">表の差だけ短く補足します。詳細は各製品ページへ。</p>
       <div class="matrix">
         <div class="card">
-          <span class="pick">自動ゴミ収集</span>
-          <h3>Eufy Robot Vacuum Auto-Empty C10</h3>
-          <p>約3万円で自動収集。口コミ408件・信頼度88。音やカーペット評価のばらつきは先に確認。</p>
-        </div>
-        <div class="card">
           <span class="pick">口コミ厚み</span>
           <h3>Eufy RoboVac G30</h3>
-          <p>帯内最多の472件。長く売れている定番だが、故障・Wi-Fi系の声も読む。</p>
+          <p>472件・信頼度84.8。口コミ厚みあり。静音が強い</p>
         </div>
         <div class="card">
-          <span class="pick">ブランド・サイズ</span>
-          <h3>Roomba® Mini + AutoEmpty™</h3>
-          <p>約5万円。コンパクトさ評価が高い。アプリ接続と段差は要対策。</p>
+          <span class="pick">対抗候補</span>
+          <h3>Eufy RoboVac G30 Hybrid</h3>
+          <p>451件・信頼度84.8。口コミ厚みあり。静音が強い</p>
         </div>
         <div class="card">
-          <span class="pick">共通注意</span>
-          <h3>機能の取捨選択</h3>
-          <p>この帯は全自動水拭きより「吸引＋収集の有無」で差が出やすい。</p>
+          <span class="pick">第三候補</span>
+          <h3>Eufy Robot Vacuum Auto-Empty C10</h3>
+          <p>408件・信頼度88。口コミ厚みあり。メンテが強い</p>
+        </div>
+        <div class="card">
+          <span class="pick">見方</span>
+          <h3>帯内 11 製品をすべて掲載</h3>
+          <p>口コミ50件未満が4台あります。件数の薄い列は参考値として扱い、詳細ページも確認してください。</p>
         </div>
       </div>
 
       <h2>どんな人におすすめか</h2>
       <div class="matrix">
         <div class="card">
-          <h3>手間を減らしたい</h3>
-          <p><strong>Eufy Robot Vacuum Auto-Empty C10</strong> — 自動収集で日常メンテが楽。</p>
+          <h3>失敗したくない</h3>
+          <p><strong>Eufy RoboVac G30</strong> — 帯内で口コミが最も厚い（472件）。</p>
         </div>
         <div class="card">
-          <h3>まず安く始めたい</h3>
-          <p><strong>Eufy RoboVac G30</strong> — 価格を抑えつつ口コミ判断材料が多い。</p>
+          <h3>床をきれいに</h3>
+          <p><strong>Roomba® Mini Slim + SlimCharge™</strong> — 床掃除スコア 96。</p>
         </div>
         <div class="card">
-          <h3>小型・ブランド重視</h3>
-          <p><strong>Roomba® Mini + AutoEmpty™</strong> — 置き場所を取りにくい。</p>
+          <h3>音が気になる</h3>
+          <p><strong>D10 Plus</strong> — 静音スコア 96。</p>
         </div>
         <div class="card">
-          <h3>水拭き全自動が欲しい</h3>
-          <p>この帯は候補が薄い。一つ上の5〜7万円帯も併せて見る。</p>
+          <h3>手間を減らしたい / 予算</h3>
+          <p><strong>Eufy Robot Vacuum Auto-Empty C10</strong> — メンテ 93。予算優先なら <strong>D9 Max Gen 2</strong>（¥17,800）。</p>
         </div>
       </div>
 
       <h2>比較したロボット掃除機の詳細へ</h2>
       <div class="product-links">
-        <a href="https://nattoku-labo.com/products/eufy-robot-vacuum-auto-empty-c10" target="_blank" rel="noopener">Eufy Robot Vacuum Auto-Empty C10 の詳細分析 →</a>
+        <a href="https://nattoku-labo.com/products/d9-max-gen-2" target="_blank" rel="noopener">D9 Max Gen 2 の詳細分析 →</a>
+        <a href="https://nattoku-labo.com/products/d10-plus" target="_blank" rel="noopener">D10 Plus の詳細分析 →</a>
         <a href="https://nattoku-labo.com/products/eufy-robovac-g30" target="_blank" rel="noopener">Eufy RoboVac G30 の詳細分析 →</a>
+        <a href="https://nattoku-labo.com/products/f10-plus" target="_blank" rel="noopener">F10 Plus の詳細分析 →</a>
+        <a href="https://nattoku-labo.com/products/eufy-robot-vacuum-auto-empty-c10" target="_blank" rel="noopener">Eufy Robot Vacuum Auto-Empty C10 の詳細分析 →</a>
+        <a href="https://nattoku-labo.com/products/eufy-robovac-g10-hybrid" target="_blank" rel="noopener">Eufy RoboVac G10 Hybrid の詳細分析 →</a>
+        <a href="https://nattoku-labo.com/products/deebot-n30" target="_blank" rel="noopener">DEEBOT N30 の詳細分析 →</a>
+        <a href="https://nattoku-labo.com/products/q10v" target="_blank" rel="noopener">Q10V の詳細分析 →</a>
+        <a href="https://nattoku-labo.com/products/roomba-mini-slim-slimcharge" target="_blank" rel="noopener">Roomba® Mini Slim + SlimCharge™ の詳細分析 →</a>
+        <a href="https://nattoku-labo.com/products/eufy-robovac-g30-hybrid" target="_blank" rel="noopener">Eufy RoboVac G30 Hybrid の詳細分析 →</a>
         <a href="https://nattoku-labo.com/products/roomba-mini-autoempty" target="_blank" rel="noopener">Roomba® Mini + AutoEmpty™ の詳細分析 →</a>
       </div>
 
@@ -879,6 +1340,22 @@
       document.querySelectorAll(".aff-card[data-slug]").forEach((card) => {
         mountCard(card);
       });
+    })();
+  </script>
+  
+  <script>
+    (function () {
+      const wrap = document.querySelector(".compare-scroll-wrap");
+      const scroller = document.querySelector(".compare-scroll");
+      if (!wrap || !scroller) return;
+      const update = () => {
+        const max = scroller.scrollWidth - scroller.clientWidth;
+        wrap.classList.toggle("can-scroll-left", scroller.scrollLeft > 4);
+        wrap.classList.toggle("can-scroll-right", scroller.scrollLeft < max - 4);
+      };
+      scroller.addEventListener("scroll", update, { passive: true });
+      window.addEventListener("resize", update);
+      update();
     })();
   </script>
   <script src="/products/js/navigation.js?v=20260809b"></script>

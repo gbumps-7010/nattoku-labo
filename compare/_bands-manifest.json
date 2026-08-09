@@ -1,0 +1,92 @@
+[
+  {
+    "label": "〜5万円",
+    "urlPath": "/compare/robot-vacuum-under-5man",
+    "slugs": [
+      "d9-max-gen-2",
+      "d10-plus",
+      "eufy-robovac-g30",
+      "f10-plus",
+      "eufy-robot-vacuum-auto-empty-c10",
+      "eufy-robovac-g10-hybrid",
+      "deebot-n30",
+      "q10v",
+      "roomba-mini-slim-slimcharge",
+      "eufy-robovac-g30-hybrid",
+      "roomba-mini-autoempty"
+    ],
+    "count": 11
+  },
+  {
+    "label": "5〜7万円",
+    "urlPath": "/compare/robot-vacuum-5-7man",
+    "slugs": [
+      "l20-ultra-complete",
+      "l10s-ultra-gen-2",
+      "roomba-105-combo-autoempty",
+      "k11",
+      "eufy-robovac-x8-hybrid",
+      "k10-pro",
+      "deebot-t50-omni",
+      "deebot-n30-plus",
+      "deebot-mini",
+      "l10s-ultra-gen-3",
+      "x30-ultra",
+      "eufy-x10-pro-omni",
+      "eufy-robot-vacuum-omni-c20",
+      "eufy-clean-x8-pro-with-self-empty-station"
+    ],
+    "count": 14
+  },
+  {
+    "label": "7〜10万円",
+    "urlPath": "/compare/robot-vacuum-7-10man",
+    "slugs": [
+      "q10v-plus",
+      "q10p",
+      "deebot-t50s-omni",
+      "s20",
+      "roomba-plus-405-combo-autowash",
+      "roomba-max-705-vac-autoempty",
+      "l40s-pro-ultra",
+      "l40-ultra-ae",
+      "eufy-robot-vacuum-omni-c28"
+    ],
+    "count": 9
+  },
+  {
+    "label": "10〜15万円",
+    "urlPath": "/compare/robot-vacuum-10-15man",
+    "slugs": [
+      "s10",
+      "qrevo-curv-2-flow",
+      "eufy-robot-vacuum-omni-e25",
+      "roomba-plus-505-combo-autowash",
+      "qrevo-curvc",
+      "deebot-t80-omni",
+      "qrevo-l",
+      "deebot-t90-omni"
+    ],
+    "count": 8
+  },
+  {
+    "label": "15〜20万円",
+    "urlPath": "/compare/robot-vacuum-15-20man",
+    "slugs": [
+      "roomba-max-705-combo-autowash",
+      "deebot-x8-pro-omni",
+      "x50-ultra",
+      "eufy-robot-vacuum-omni-s1-pro"
+    ],
+    "count": 4
+  },
+  {
+    "label": "20万円〜",
+    "urlPath": "/compare/robot-vacuum-20man-plus",
+    "slugs": [
+      "deebot-x11-omnicyclone",
+      "saros-10r"
+    ],
+    "count": 2
+  }
+]

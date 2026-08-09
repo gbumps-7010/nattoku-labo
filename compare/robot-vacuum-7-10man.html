@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ロボット掃除機 おすすめ比較【7〜10万円】2大ECサイトの口コミ分析 | ナットクLabo</title>
-  <meta name="description" content="7〜10万円帯のロボット掃除機をおすすめ比較。2大ECサイトの口コミを分析し、価格・信頼度・注意点を横並びで確認できます。">
+  <meta name="description" content="7〜10万円帯のロボット掃除機全9製品をおすすめ比較。2大ECサイトの口コミを分析し、価格・信頼度・注意点を横並びで確認できます。">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <link rel="canonical" href="https://nattoku-labo.com/compare/robot-vacuum-7-10man">
   <meta property="og:type" content="article">
@@ -12,7 +12,7 @@
   <meta property="og:locale" content="ja_JP">
   <meta property="og:url" content="https://nattoku-labo.com/compare/robot-vacuum-7-10man">
   <meta property="og:title" content="ロボット掃除機 おすすめ比較【7〜10万円】2大ECサイトの口コミ分析">
-  <meta property="og:description" content="7〜10万円帯のロボット掃除機をおすすめ比較。2大ECサイトの口コミを分析し、価格・信頼度・注意点を横並びで確認できます。">
+  <meta property="og:description" content="7〜10万円帯のロボット掃除機全9製品をおすすめ比較。2大ECサイトの口コミを分析し、価格・信頼度・注意点を横並びで確認できます。">
   <meta name="twitter:card" content="summary_large_image">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
   <style>
@@ -36,24 +36,6 @@
       background: var(--bg);
       color: var(--text);
       line-height: 1.75;
-    }
-    .draft-bar {
-      position: sticky;
-      top: 0;
-      z-index: 50;
-      background: #0f172a;
-      color: #fff;
-      padding: 0.55rem 0.85rem;
-      font-size: 0.75rem;
-      display: flex;
-      gap: 0.5rem;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-    .draft-bar .draft-path { display: none; }
-    @media (min-width: 720px) {
-      .draft-bar .draft-path { display: inline; }
-      .draft-bar { font-size: 0.85rem; padding: 0.65rem 1.25rem; }
     }
     header.hero {
       background: linear-gradient(135deg, var(--primary), var(--secondary));
@@ -143,15 +125,6 @@
       font-size: 0.88rem;
       margin: 1rem 0 1.25rem;
     }
-    .draft-comment {
-      border: 1px dashed #f59e0b;
-      background: #fffbeb;
-      color: #92400e;
-      padding: 0.7rem 0.9rem;
-      border-radius: 10px;
-      font-size: 0.85rem;
-      margin: 0.85rem 0;
-    }
     .table-source {
       margin: 0 0 0.55rem;
       padding: 0.6rem 0.75rem;
@@ -169,7 +142,7 @@
       justify-content: space-between;
       gap: 0.5rem;
       margin: 0 0 0.55rem;
-      padding: 0.45rem 0.65rem;
+      padding: 0.55rem 0.7rem;
       background: #eff6ff;
       border: 1px solid #bfdbfe;
       border-radius: 8px;
@@ -177,15 +150,20 @@
       font-size: 0.8rem;
       font-weight: 800;
     }
-    @media (min-width: 900px) {
-      .swipe-hint { display: none; }
+    .swipe-hint .count {
+      flex-shrink: 0;
+      background: #1e40af;
+      color: #fff;
+      border-radius: 999px;
+      padding: 0.15rem 0.55rem;
+      font-size: 0.72rem;
     }
     /* ===== MAIN COMPARISON TABLE ===== */
     .table-stage {
       background: #fff;
       border: 2px solid #cbd5e1;
       border-radius: 16px;
-      padding: 0.75rem;
+      padding: 0.65rem;
       margin: 0.5rem 0 1.5rem;
       box-shadow: 0 1px 0 rgba(15, 23, 42, 0.04);
     }
@@ -196,12 +174,39 @@
       gap: 0.75rem;
       flex-wrap: wrap;
       margin-bottom: 0.65rem;
-      padding: 0 0.25rem;
+      padding: 0 0.15rem;
     }
     .table-stage-label strong {
-      font-size: 1.05rem;
+      font-size: 1.02rem;
       font-weight: 900;
       color: var(--secondary);
+    }
+    .compare-scroll-wrap {
+      position: relative;
+    }
+    .compare-scroll-wrap::before,
+    .compare-scroll-wrap::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 8px;
+      width: 22px;
+      z-index: 3;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity .15s ease;
+    }
+    .compare-scroll-wrap::before {
+      left: 0;
+      background: linear-gradient(to right, rgba(255,255,255,.95), transparent);
+    }
+    .compare-scroll-wrap::after {
+      right: 0;
+      background: linear-gradient(to left, rgba(255,255,255,.95), transparent);
+    }
+    .compare-scroll-wrap.can-scroll-left::before,
+    .compare-scroll-wrap.can-scroll-right::after {
+      opacity: 1;
     }
     .compare-scroll {
       overflow-x: auto;
@@ -209,21 +214,23 @@
       overscroll-behavior-x: contain;
       scroll-snap-type: x proximity;
       padding-bottom: 0.35rem;
+      scrollbar-width: thin;
     }
-    .compare-scroll::-webkit-scrollbar { height: 6px; }
+    .compare-scroll::-webkit-scrollbar { height: 7px; }
     .compare-scroll::-webkit-scrollbar-thumb {
       background: #94a3b8;
       border-radius: 999px;
     }
     table.compare {
-      width: 100%;
-      min-width: 760px;
-      border-collapse: collapse;
-      font-size: 0.86rem;
+      width: max-content;
+      min-width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 0.76rem;
     }
     table.compare th,
     table.compare td {
-      padding: 0.7rem 0.65rem;
+      padding: 0.55rem 0.4rem;
       border-bottom: 1px solid var(--line);
       text-align: center;
       vertical-align: middle;
@@ -233,73 +240,117 @@
       text-align: left;
       font-weight: 700;
       color: #334155;
-      white-space: nowrap;
+      white-space: normal;
+      line-height: 1.3;
       background: #f8fafc;
       position: sticky;
       left: 0;
-      z-index: 2;
-      min-width: 7.5rem;
+      z-index: 4;
+      min-width: 4.8rem;
+      max-width: 5.4rem;
+      padding-left: 0.45rem;
+      padding-right: 0.4rem;
+      box-shadow: 6px 0 10px -8px rgba(15, 23, 42, 0.35);
+      font-size: 0.7rem;
     }
     table.compare thead th {
       background: #f1f5f9;
       vertical-align: bottom;
       border-bottom: 2px solid #cbd5e1;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+    table.compare thead th:first-child {
+      z-index: 5;
+      vertical-align: middle;
+      font-size: 0.72rem;
     }
     table.compare thead th.product-col {
       scroll-snap-align: start;
-    }
-    table.compare thead th:first-child {
-      vertical-align: middle;
-      font-size: 0.82rem;
+      background: #f1f5f9;
     }
     .product-head {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 0.55rem;
-      min-width: 12.5rem;
-      padding: 0.25rem 0.15rem 0.15rem;
+      gap: 0.35rem;
+      width: 7.1rem;
+      padding: 0.15rem 0.1rem;
     }
     .product-photo {
-      width: 112px;
-      height: 112px;
+      width: 68px;
+      height: 68px;
       object-fit: contain;
       background: #fff;
       border: 1px solid var(--line);
-      border-radius: 12px;
-      padding: 6px;
-    }
-    @media (min-width: 720px) {
-      .product-photo { width: 132px; height: 132px; }
-      table.compare { font-size: 0.9rem; }
+      border-radius: 10px;
+      padding: 4px;
     }
     .product-name {
-      font-size: 0.84rem;
+      font-size: 0.7rem;
       font-weight: 900;
-      line-height: 1.3;
+      line-height: 1.25;
       color: var(--secondary);
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      word-break: break-word;
     }
     .product-mfr {
-      font-size: 0.75rem;
+      font-size: 0.62rem;
       font-weight: 700;
       color: var(--muted);
-      margin-top: -0.25rem;
+      margin-top: -0.15rem;
     }
     .product-head a {
       color: inherit;
       text-decoration: none;
+      width: 100%;
     }
     .product-head a:hover .product-name { color: var(--primary); }
+    @media (min-width: 720px) {
+      table.compare { font-size: 0.84rem; }
+      table.compare th,
+      table.compare td { padding: 0.65rem 0.55rem; }
+      table.compare th:first-child,
+      table.compare td:first-child {
+        min-width: 6.5rem;
+        max-width: 7.2rem;
+        font-size: 0.8rem;
+      }
+      .product-head { width: 9.5rem; gap: 0.45rem; }
+      .product-photo { width: 96px; height: 96px; }
+      .product-name { font-size: 0.8rem; }
+      .product-mfr { font-size: 0.72rem; }
+    }
+    @media (min-width: 1100px) {
+      .product-head { width: 11rem; }
+      .product-photo { width: 112px; height: 112px; }
+      .product-name { font-size: 0.84rem; }
+    }
     table.compare tbody tr:nth-child(even) td { background: #fcfdff; }
     table.compare tbody tr:nth-child(even) td:first-child { background: #f1f5f9; }
     table.compare tbody tr:hover td { background: #f0f9ff; }
     table.compare tbody tr:hover td:first-child { background: #e0f2fe; }
-    .score { font-weight: 900; color: var(--primary); font-size: 1.02rem; }
-    .price { font-weight: 800; }
-    .kw { font-size: 0.82rem; line-height: 1.45; text-align: left; }
+    .score { font-weight: 900; color: var(--primary); font-size: 0.92rem; }
+    .price { font-weight: 800; font-size: 0.78rem; white-space: nowrap; }
+    .kw {
+      font-size: 0.68rem;
+      line-height: 1.4;
+      text-align: left;
+      max-width: 7.1rem;
+      word-break: break-word;
+    }
+    @media (min-width: 720px) {
+      .score { font-size: 1rem; }
+      .price { font-size: 0.86rem; }
+      .kw { font-size: 0.78rem; max-width: 9.5rem; }
+    }
     .warn { color: var(--warn); font-weight: 700; }
     .bad { color: var(--bad); font-weight: 700; }
-    .muted { color: var(--muted); font-size: 0.88rem; }
+    .thin-data { opacity: 0.85; }
     .section-sub {
       color: var(--muted);
       font-size: 0.88rem;
@@ -331,49 +382,57 @@
       border-radius: 6px;
       margin-bottom: 0.35rem;
     }
-    .product-links { display: grid; gap: 0.55rem; margin-top: 0.75rem; }
+    .product-links {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+      margin-top: 0.75rem;
+    }
+    @media (min-width: 640px) {
+      .product-links { grid-template-columns: 1fr 1fr; }
+    }
     .product-links a {
       display: block;
       text-decoration: none;
       color: var(--primary);
       font-weight: 700;
+      font-size: 0.88rem;
       background: #fff;
       border: 1px solid var(--line);
       border-radius: 10px;
-      padding: 0.75rem 0.9rem;
+      padding: 0.7rem 0.85rem;
     }
-    .affiliate-section {
-      margin: 1.75rem 0 1rem;
-    }
-    .affiliate-section > h2 {
-      margin-top: 0;
-    }
+    .affiliate-section { margin: 1.75rem 0 1rem; }
+    .affiliate-section > h2 { margin-top: 0; }
     .affiliate-grid {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 1rem;
+      gap: 0.85rem;
     }
-    @media (min-width: 900px) {
+    @media (min-width: 640px) {
+      .affiliate-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (min-width: 980px) {
       .affiliate-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     }
     .aff-card {
       background: #fff;
       border: 1px solid var(--line);
       border-radius: 14px;
-      padding: 1rem 0.9rem 1.1rem;
+      padding: 0.9rem 0.8rem 1rem;
       display: flex;
       flex-direction: column;
-      gap: 0.65rem;
+      gap: 0.55rem;
       min-width: 0;
     }
     .aff-card-head {
       display: flex;
       align-items: center;
-      gap: 0.75rem;
+      gap: 0.65rem;
     }
     .aff-card-head img {
-      width: 64px;
-      height: 64px;
+      width: 56px;
+      height: 56px;
       object-fit: contain;
       border: 1px solid var(--line);
       border-radius: 10px;
@@ -382,12 +441,12 @@
     }
     .aff-card-head .name {
       font-weight: 900;
-      font-size: 0.92rem;
-      line-height: 1.35;
+      font-size: 0.86rem;
+      line-height: 1.3;
       color: var(--secondary);
     }
     .aff-card-head .mfr {
-      font-size: 0.75rem;
+      font-size: 0.72rem;
       font-weight: 700;
       color: var(--muted);
     }
@@ -397,16 +456,13 @@
       text-decoration: none;
       color: #fff;
       font-weight: 800;
-      font-size: 0.92rem;
+      font-size: 0.88rem;
       line-height: 1.4;
-      padding: 0.75rem 0.9rem;
+      padding: 0.7rem 0.8rem;
       border-radius: 10px;
       background: linear-gradient(145deg, #0e7490 0%, #0d9488 42%, #059669 100%);
     }
-    .aff-moshimo {
-      min-width: 0;
-      width: 100%;
-    }
+    .aff-moshimo { min-width: 0; width: 100%; }
     .aff-moshimo iframe {
       width: 100%;
       max-width: 100%;
@@ -414,7 +470,7 @@
       display: block;
     }
     .aff-status {
-      font-size: 0.82rem;
+      font-size: 0.78rem;
       color: var(--muted);
       font-weight: 600;
     }
@@ -432,21 +488,21 @@
   </style>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="/products/css/navigation.css?v=20260809a">
+  <link rel="stylesheet" href="/products/css/navigation.css?v=20260809b">
   <script type="application/ld+json">
   {
   "@context": "https://schema.org",
   "@type": "ItemList",
   "name": "ロボット掃除機 おすすめ比較【7〜10万円】2大ECサイトの口コミ分析",
-  "description": "2大ECサイトの口コミを分析した7〜10万円帯のロボット掃除機おすすめ比較",
+  "description": "2大ECサイトの口コミを分析した7〜10万円帯のロボット掃除機おすすめ比較（全9製品）",
   "url": "https://nattoku-labo.com/compare/robot-vacuum-7-10man",
-  "numberOfItems": 3,
+  "numberOfItems": 9,
   "itemListElement": [
     {
       "@type": "ListItem",
       "position": 1,
-      "url": "https://nattoku-labo.com/products/roomba-plus-405-combo-autowash",
-      "name": "Roomba® Plus 405 Combo + AutoWash™"
+      "url": "https://nattoku-labo.com/products/q10v-plus",
+      "name": "Q10V+"
     },
     {
       "@type": "ListItem",
@@ -457,8 +513,44 @@
     {
       "@type": "ListItem",
       "position": 3,
+      "url": "https://nattoku-labo.com/products/deebot-t50s-omni",
+      "name": "DEEBOT T50S OMNI"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
       "url": "https://nattoku-labo.com/products/s20",
       "name": "お掃除ロボットS20"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "url": "https://nattoku-labo.com/products/roomba-plus-405-combo-autowash",
+      "name": "Roomba® Plus 405 Combo + AutoWash™"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "url": "https://nattoku-labo.com/products/roomba-max-705-vac-autoempty",
+      "name": "Roomba® Max 705 Vac + AutoEmpty™"
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "url": "https://nattoku-labo.com/products/l40s-pro-ultra",
+      "name": "L40s Pro Ultra"
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "url": "https://nattoku-labo.com/products/l40-ultra-ae",
+      "name": "L40 Ultra AE"
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "url": "https://nattoku-labo.com/products/eufy-robot-vacuum-omni-c28",
+      "name": "Eufy Robot Vacuum Omni C28"
     }
   ]
 }
@@ -479,20 +571,20 @@
 <body>
   <header class="hero">
     <div class="wrap">
-      <p class="eyebrow">ロボット掃除機 おすすめ比較 · 口コミ分析 · 7〜10万円帯</p>
+      <p class="eyebrow">ロボット掃除機 おすすめ比較 · 口コミ分析 · 7〜10万円帯 · 全9製品</p>
       <h1>ロボット掃除機のおすすめ比較【7〜10万円】｜2大ECサイトの口コミ分析</h1>
       <p class="lede">
-        「ロボット掃除機 おすすめ 比較」で迷う人向けに、同じ予算帯の候補を2大ECサイトの口コミ分析で横比較します。
+        「ロボット掃除機 おすすめ 比較」で迷う人向けに、同じ予算帯の候補を2大ECサイトの口コミ分析で横比較します。この価格帯の掲載製品はすべて表に入れています。
       </p>
       <div class="source-banner" role="note">
         <span class="source-kicker">データ根拠</span>
-        <span>2大ECサイトの口コミを分析した結果です（合計 958件）</span>
+        <span>2大ECサイトの口コミを分析した結果です（合計 1,346件 / 9製品）</span>
       </div>
       <div class="meta-row">
         <span class="chip">2大ECサイトの口コミ分析</span>
         <span class="chip">おすすめ比較</span>
         <span class="chip">7〜10万円</span>
-        <span class="chip">口コミ分析比較</span>
+        <span class="chip">全9製品</span>
       </div>
     </div>
   </header>
@@ -500,33 +592,37 @@
   <article>
     <div class="wrap">
       <div class="note">
-        表示価格はメーカー希望小売価格（参考）です。本ページの比較は、2大ECサイトに寄せられた口コミを集計・分析した参考情報です。すべての方に当てはまるわけではありません。
+        表示価格はメーカー希望小売価格（参考）です。本ページの比較は、2大ECサイトに寄せられた口コミを集計・分析した参考情報です。口コミが少ない製品は数値が揺れやすいので、件数・信頼度とあわせて読んでください。
       </div>
 
       <section class="table-stage" aria-label="ロボット掃除機おすすめ比較表">
         <div class="table-stage-label">
-          <strong>ロボット掃除機 おすすめ比較表（7〜10万円）</strong>
+          <strong>ロボット掃除機 おすすめ比較表（7〜10万円・全9製品）</strong>
         </div>
         <p class="table-source">比較表の数値・キーワード・注意点は、すべて2大ECサイトの口コミ分析に基づきます。</p>
-        <p class="swipe-hint"><span>他の製品を見る</span><span>左右にスワイプ →</span></p>
-        <div class="compare-scroll">
-          <table class="compare">
+        <p class="swipe-hint">
+          <span>表を左右にスワイプして全製品を比較</span>
+          <span class="count">9製品</span>
+        </p>
+        <div class="compare-scroll-wrap can-scroll-right">
+          <div class="compare-scroll">
+            <table class="compare">
             <thead>
               <tr>
                 <th scope="col">比較項目</th>
-                <th scope="col" class="product-col">
+                <th scope="col" class="product-col thin-data">
                   <div class="product-head">
-                    <a href="https://nattoku-labo.com/products/roomba-plus-405-combo-autowash" target="_blank" rel="noopener">
+                    <a href="https://nattoku-labo.com/products/q10v-plus" target="_blank" rel="noopener">
                       <img
                         class="product-photo"
-                        src="https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/03016688/20260730_brandday/260730_405c_tm.jpg"
-                        alt="iRobot Roomba® Plus 405 Combo + AutoWash™"
-                        width="132"
-                        height="132"
-                        loading="eager"
+                        src="https://thumbnail.image.rakuten.co.jp/@0_mall/fleurette01/cabinet/g/2/e9z0wr6h0x-4.jpg"
+                        alt="Roborock Q10V+"
+                        width="112"
+                        height="112"
+                        loading="lazy"
                       >
-                      <div class="product-name">Roomba® Plus 405 Combo + AutoWash™</div>
-                      <div class="product-mfr">iRobot</div>
+                      <div class="product-name">Q10V+</div>
+                      <div class="product-mfr">Roborock</div>
                     </a>
                   </div>
                 </th>
@@ -537,12 +633,28 @@
                         class="product-photo"
                         src="https://thumbnail.image.rakuten.co.jp/@0_mall/roborockjapandirect/cabinet/products/12574614/imgrc0133045076.jpg"
                         alt="Roborock Q10P+"
-                        width="132"
-                        height="132"
-                        loading="eager"
+                        width="112"
+                        height="112"
+                        loading="lazy"
                       >
                       <div class="product-name">Q10P+</div>
                       <div class="product-mfr">Roborock</div>
+                    </a>
+                  </div>
+                </th>
+                <th scope="col" class="product-col thin-data">
+                  <div class="product-head">
+                    <a href="https://nattoku-labo.com/products/deebot-t50s-omni" target="_blank" rel="noopener">
+                      <img
+                        class="product-photo"
+                        src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/ddx47-0401.jpg"
+                        alt="ECOVACS DEEBOT T50S OMNI"
+                        width="112"
+                        height="112"
+                        loading="lazy"
+                      >
+                      <div class="product-name">DEEBOT T50S OMNI</div>
+                      <div class="product-mfr">ECOVACS</div>
                     </a>
                   </div>
                 </th>
@@ -553,12 +665,92 @@
                         class="product-photo"
                         src="https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/09377790/s20/amazon/s20.jpg"
                         alt="SwitchBot お掃除ロボットS20"
-                        width="132"
-                        height="132"
-                        loading="eager"
+                        width="112"
+                        height="112"
+                        loading="lazy"
                       >
                       <div class="product-name">お掃除ロボットS20</div>
                       <div class="product-mfr">SwitchBot</div>
+                    </a>
+                  </div>
+                </th>
+                <th scope="col" class="product-col">
+                  <div class="product-head">
+                    <a href="https://nattoku-labo.com/products/roomba-plus-405-combo-autowash" target="_blank" rel="noopener">
+                      <img
+                        class="product-photo"
+                        src="https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/03016688/20260730_brandday/260730_405c_tm.jpg"
+                        alt="iRobot Roomba® Plus 405 Combo + AutoWash™"
+                        width="112"
+                        height="112"
+                        loading="lazy"
+                      >
+                      <div class="product-name">Roomba® Plus 405 Combo + AutoWash™</div>
+                      <div class="product-mfr">iRobot</div>
+                    </a>
+                  </div>
+                </th>
+                <th scope="col" class="product-col">
+                  <div class="product-head">
+                    <a href="https://nattoku-labo.com/products/roomba-max-705-vac-autoempty" target="_blank" rel="noopener">
+                      <img
+                        class="product-photo"
+                        src="https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/03016688/20260730_brandday/260730_705v_tm.jpg"
+                        alt="iRobot Roomba® Max 705 Vac + AutoEmpty™"
+                        width="112"
+                        height="112"
+                        loading="lazy"
+                      >
+                      <div class="product-name">Roomba® Max 705 Vac + AutoEmpty™</div>
+                      <div class="product-mfr">iRobot</div>
+                    </a>
+                  </div>
+                </th>
+                <th scope="col" class="product-col">
+                  <div class="product-head">
+                    <a href="https://nattoku-labo.com/products/l40s-pro-ultra" target="_blank" rel="noopener">
+                      <img
+                        class="product-photo"
+                        src="https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/20251230173059_cp.jpg"
+                        alt="Dreame L40s Pro Ultra"
+                        width="112"
+                        height="112"
+                        loading="lazy"
+                      >
+                      <div class="product-name">L40s Pro Ultra</div>
+                      <div class="product-mfr">Dreame</div>
+                    </a>
+                  </div>
+                </th>
+                <th scope="col" class="product-col thin-data">
+                  <div class="product-head">
+                    <a href="https://nattoku-labo.com/products/l40-ultra-ae" target="_blank" rel="noopener">
+                      <img
+                        class="product-photo"
+                        src="https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/20251230172934_1.jpg"
+                        alt="Dreame L40 Ultra AE"
+                        width="112"
+                        height="112"
+                        loading="lazy"
+                      >
+                      <div class="product-name">L40 Ultra AE</div>
+                      <div class="product-mfr">Dreame</div>
+                    </a>
+                  </div>
+                </th>
+                <th scope="col" class="product-col">
+                  <div class="product-head">
+                    <a href="https://nattoku-labo.com/products/eufy-robot-vacuum-omni-c28" target="_blank" rel="noopener">
+                      <img
+                        class="product-photo"
+                        src="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t211a/imgrc0103188193.jpg"
+                        alt="Anker Eufy Robot Vacuum Omni C28"
+                        width="112"
+                        height="112"
+                        loading="lazy"
+                      >
+                      <div class="product-name">Eufy Robot Vacuum Omni C28</div>
+                      <div class="product-mfr">Anker</div>
                     </a>
                   </div>
                 </th>
@@ -567,118 +759,209 @@
             <tbody>
               <tr>
                 <td>参考価格</td>
-                <td class="price">¥98,800</td>
+                <td class="price">¥79,999</td>
+                <td class="price">¥89,800</td>
                 <td class="price">¥89,800</td>
                 <td class="price">¥91,800</td>
+                <td class="price">¥98,800</td>
+                <td class="price">¥98,800</td>
+                <td class="price">¥99,800</td>
+                <td class="price">¥99,800</td>
+                <td class="price">¥99,990</td>
               </tr>
               <tr>
                 <td>口コミ件数</td>
-                <td class="score">667件</td>
+                <td class="score thin-data">30件</td>
                 <td class="score">184件</td>
+                <td class="score thin-data">16件</td>
                 <td class="score">107件</td>
+                <td class="score">667件</td>
+                <td class="score">221件</td>
+                <td class="score">62件</td>
+                <td class="score thin-data">6件</td>
+                <td class="score">53件</td>
               </tr>
               <tr>
                 <td>口コミ信頼度</td>
-                <td class="score">91.6</td>
+                <td class="score">52</td>
                 <td class="score">83.2</td>
+                <td class="score">55.6</td>
                 <td class="score">79</td>
+                <td class="score">91.6</td>
+                <td class="score">81.1</td>
+                <td class="score">72.4</td>
+                <td class="score">53.8</td>
+                <td class="score">66.4</td>
               </tr>
               <tr class="row-group">
                 <td>高評価で多い声</td>
-                <td class="kw">水拭き / 満足 / 綺麗</td>
+                <td class="kw">水拭き / 満足 / 吸引</td>
+                <td class="kw">満足 / 水拭き / 静か</td>
                 <td class="kw">満足 / 水拭き / 静か</td>
                 <td class="kw">水拭き / 満足 / 便利</td>
+                <td class="kw">水拭き / 満足 / 綺麗</td>
+                <td class="kw">満足 / 吸引 / マッピング</td>
+                <td class="kw">水拭き / 満足 / 綺麗</td>
+                <td class="kw">水拭き / 床きれい / マッピング</td>
+                <td class="kw">水拭き / 満足 / 綺麗</td>
               </tr>
               <tr>
                 <td>低評価で多い声</td>
-                <td class="kw">故障 / 動作音 / 段差</td>
+                <td class="kw">故障 / 停止 / 段差</td>
                 <td class="kw">故障 / 段差 / 動作音</td>
+                <td class="kw">故障</td>
                 <td class="kw">故障 / 水拭き / 停止</td>
+                <td class="kw">故障 / 動作音 / 段差</td>
+                <td class="kw">故障 / 段差 / コード</td>
+                <td class="kw">故障 / 水拭き / 動作音</td>
+                <td class="kw">—</td>
+                <td class="kw">故障 / コード / 停止</td>
               </tr>
               <tr class="row-group">
                 <td>床掃除</td>
-                <td class="score">97</td>
+                <td class="score">90</td>
                 <td class="score">95</td>
+                <td class="score">98</td>
                 <td class="score">97</td>
+                <td class="score">97</td>
+                <td class="score">97</td>
+                <td class="score">96</td>
+                <td class="score">98</td>
+                <td class="score">94</td>
               </tr>
               <tr>
                 <td>静音</td>
-                <td class="score">81</td>
-                <td class="score">91</td>
                 <td class="score">80</td>
+                <td class="score">91</td>
+                <td class="score">92</td>
+                <td class="score">80</td>
+                <td class="score">81</td>
+                <td class="score">80</td>
+                <td class="score">88</td>
+                <td class="score">85</td>
+                <td class="score">82</td>
               </tr>
               <tr>
                 <td>メンテ</td>
-                <td class="score">95</td>
+                <td class="score">70</td>
                 <td class="score">80</td>
+                <td class="score">88</td>
+                <td class="score">85</td>
+                <td class="score">95</td>
+                <td class="score">96</td>
+                <td class="score">94</td>
+                <td class="score">96</td>
                 <td class="score">85</td>
               </tr>
               <tr>
                 <td>段差</td>
+                <td class="score">65</td>
+                <td class="score">75</td>
+                <td class="score">70</td>
+                <td class="score">68</td>
                 <td class="score">73</td>
                 <td class="score">75</td>
-                <td class="score">68</td>
+                <td class="score">85</td>
+                <td class="score">70</td>
+                <td class="score">70</td>
               </tr>
               <tr>
                 <td>ペット毛</td>
+                <td class="score">88</td>
                 <td class="score">92</td>
+                <td class="score">95</td>
+                <td class="score">94</td>
                 <td class="score">92</td>
                 <td class="score">94</td>
+                <td class="score">92</td>
+                <td class="score">95</td>
+                <td class="score">90</td>
               </tr>
               <tr>
                 <td>アプリ安定</td>
-                <td class="score">74</td>
+                <td class="score">70</td>
+                <td class="score">85</td>
                 <td class="score">85</td>
                 <td class="score">88</td>
+                <td class="score">74</td>
+                <td class="score">89</td>
+                <td class="score">75</td>
+                <td class="score">75</td>
+                <td class="score">91</td>
               </tr>
               <tr class="row-group">
                 <td>注意点1</td>
-                <td class="kw bad">初期不良・購入後すぐの故障（8.3%）</td>
+                <td class="kw bad">充電ドックへの帰還失敗とマップ消失（16%）</td>
                 <td class="kw">特定の段差や敷居を乗り越えられない（2.2%）</td>
+                <td class="kw bad">汚水タンクの臭い（7%）</td>
                 <td class="kw warn">初期不良・故障の報告（6%）</td>
+                <td class="kw bad">初期不良・購入後すぐの故障（8.3%）</td>
+                <td class="kw bad">初期不良・購入後すぐの故障（12.5%）</td>
+                <td class="kw bad">初期不良・故障の発生（7%）</td>
+                <td class="kw bad">四隅の掃除が甘い（16.7%）</td>
+                <td class="kw bad">初期不良および突然の故障（12%）</td>
               </tr>
               <tr>
                 <td>注意点2</td>
-                <td class="kw">アプリの接続不安定・設定の難しさ</td>
+                <td class="kw">段差やカーペットでの引っかかり</td>
                 <td class="kw">アプリの動作が不安定になることがある</td>
+                <td class="kw">アプリのマッピングエラー</td>
                 <td class="kw">段差や家具でのスタック</td>
+                <td class="kw">アプリの接続不安定・設定の難しさ</td>
+                <td class="kw">ペットの糞を回避できず塗り広げる</td>
+                <td class="kw">アプリの不安定さ</td>
+                <td class="kw">ドック移動で再マッピングが必要</td>
+                <td class="kw">充電コードなどの巻き込み</td>
               </tr>
               <tr>
                 <td>注意点3</td>
-                <td class="kw">ゴミ収集時の騒音</td>
+                <td class="kw">アプリの不安定性と日本語音声の質</td>
                 <td class="kw">フローリングに細かい傷がついた</td>
+                <td class="kw">初期設定の難しさ</td>
                 <td class="kw">サポート対応への不満</td>
+                <td class="kw">ゴミ収集時の騒音</td>
+                <td class="kw">本体の高さで家具の下に入れない</td>
+                <td class="kw">家具の下に入らない</td>
+                <td class="kw">特定の家具に乗り上げようとする</td>
+                <td class="kw">段差や低い家具でのスタック</td>
               </tr>
               <tr class="row-group">
                 <td>ひとこと</td>
-                <td class="kw">口コミ最多の水拭き全自動</td>
-                <td class="kw">Roborockの中位本命</td>
-                <td class="kw">SwitchBotの第三候補</td>
+                <td class="kw">データは中位。注意点を要確認</td>
+                <td class="kw">床評価が相対的に高い</td>
+                <td class="kw">口コミ少なめ。参考程度に</td>
+                <td class="kw">床評価が相対的に高い</td>
+                <td class="kw">口コミ厚みあり。床が強い</td>
+                <td class="kw">床評価が相対的に高い</td>
+                <td class="kw">データは中位。注意点を要確認</td>
+                <td class="kw">口コミ少なめ。参考程度に</td>
+                <td class="kw">データは中位。注意点を要確認</td>
               </tr>
             </tbody>
           </table>
+          </div>
         </div>
       </section>
 
       <section class="affiliate-section" id="price-check" aria-label="最新価格をチェック">
         <h2>最新価格をチェック</h2>
-        <p class="section-sub">各製品の最新価格は、以下から確認できます。</p>
+        <p class="section-sub">各製品の最新価格は、以下から確認できます（9製品）。</p>
         <div class="affiliate-grid" id="affiliate-grid">
-          <article class="aff-card" data-slug="roomba-plus-405-combo-autowash">
+          <article class="aff-card" data-slug="q10v-plus">
             <div class="aff-card-head">
-              <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/03016688/20260730_brandday/260730_405c_tm.jpg" alt="">
+              <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/fleurette01/cabinet/g/2/e9z0wr6h0x-4.jpg" alt="" loading="lazy">
               <div>
-                <div class="name">Roomba® Plus 405 Combo + AutoWash™</div>
-                <div class="mfr">iRobot</div>
+                <div class="name">Q10V+</div>
+                <div class="mfr">Roborock</div>
               </div>
             </div>
             <div class="aff-official-slot"></div>
-            <div class="aff-moshimo" id="aff-moshimo-roomba-plus-405-combo-autowash"></div>
+            <div class="aff-moshimo" id="aff-moshimo-q10v-plus"></div>
             <p class="aff-status">読み込み中…</p>
           </article>
           <article class="aff-card" data-slug="q10p">
             <div class="aff-card-head">
-              <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/roborockjapandirect/cabinet/products/12574614/imgrc0133045076.jpg" alt="">
+              <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/roborockjapandirect/cabinet/products/12574614/imgrc0133045076.jpg" alt="" loading="lazy">
               <div>
                 <div class="name">Q10P+</div>
                 <div class="mfr">Roborock</div>
@@ -688,9 +971,21 @@
             <div class="aff-moshimo" id="aff-moshimo-q10p"></div>
             <p class="aff-status">読み込み中…</p>
           </article>
+          <article class="aff-card" data-slug="deebot-t50s-omni">
+            <div class="aff-card-head">
+              <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/ddx47-0401.jpg" alt="" loading="lazy">
+              <div>
+                <div class="name">DEEBOT T50S OMNI</div>
+                <div class="mfr">ECOVACS</div>
+              </div>
+            </div>
+            <div class="aff-official-slot"></div>
+            <div class="aff-moshimo" id="aff-moshimo-deebot-t50s-omni"></div>
+            <p class="aff-status">読み込み中…</p>
+          </article>
           <article class="aff-card" data-slug="s20">
             <div class="aff-card-head">
-              <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/09377790/s20/amazon/s20.jpg" alt="">
+              <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/09377790/s20/amazon/s20.jpg" alt="" loading="lazy">
               <div>
                 <div class="name">お掃除ロボットS20</div>
                 <div class="mfr">SwitchBot</div>
@@ -698,6 +993,66 @@
             </div>
             <div class="aff-official-slot"></div>
             <div class="aff-moshimo" id="aff-moshimo-s20"></div>
+            <p class="aff-status">読み込み中…</p>
+          </article>
+          <article class="aff-card" data-slug="roomba-plus-405-combo-autowash">
+            <div class="aff-card-head">
+              <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/03016688/20260730_brandday/260730_405c_tm.jpg" alt="" loading="lazy">
+              <div>
+                <div class="name">Roomba® Plus 405 Combo + AutoWash™</div>
+                <div class="mfr">iRobot</div>
+              </div>
+            </div>
+            <div class="aff-official-slot"></div>
+            <div class="aff-moshimo" id="aff-moshimo-roomba-plus-405-combo-autowash"></div>
+            <p class="aff-status">読み込み中…</p>
+          </article>
+          <article class="aff-card" data-slug="roomba-max-705-vac-autoempty">
+            <div class="aff-card-head">
+              <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/03016688/20260730_brandday/260730_705v_tm.jpg" alt="" loading="lazy">
+              <div>
+                <div class="name">Roomba® Max 705 Vac + AutoEmpty™</div>
+                <div class="mfr">iRobot</div>
+              </div>
+            </div>
+            <div class="aff-official-slot"></div>
+            <div class="aff-moshimo" id="aff-moshimo-roomba-max-705-vac-autoempty"></div>
+            <p class="aff-status">読み込み中…</p>
+          </article>
+          <article class="aff-card" data-slug="l40s-pro-ultra">
+            <div class="aff-card-head">
+              <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/20251230173059_cp.jpg" alt="" loading="lazy">
+              <div>
+                <div class="name">L40s Pro Ultra</div>
+                <div class="mfr">Dreame</div>
+              </div>
+            </div>
+            <div class="aff-official-slot"></div>
+            <div class="aff-moshimo" id="aff-moshimo-l40s-pro-ultra"></div>
+            <p class="aff-status">読み込み中…</p>
+          </article>
+          <article class="aff-card" data-slug="l40-ultra-ae">
+            <div class="aff-card-head">
+              <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/20251230172934_1.jpg" alt="" loading="lazy">
+              <div>
+                <div class="name">L40 Ultra AE</div>
+                <div class="mfr">Dreame</div>
+              </div>
+            </div>
+            <div class="aff-official-slot"></div>
+            <div class="aff-moshimo" id="aff-moshimo-l40-ultra-ae"></div>
+            <p class="aff-status">読み込み中…</p>
+          </article>
+          <article class="aff-card" data-slug="eufy-robot-vacuum-omni-c28">
+            <div class="aff-card-head">
+              <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t211a/imgrc0103188193.jpg" alt="" loading="lazy">
+              <div>
+                <div class="name">Eufy Robot Vacuum Omni C28</div>
+                <div class="mfr">Anker</div>
+              </div>
+            </div>
+            <div class="aff-official-slot"></div>
+            <div class="aff-moshimo" id="aff-moshimo-eufy-robot-vacuum-omni-c28"></div>
             <p class="aff-status">読み込み中…</p>
           </article>
         </div>
@@ -709,22 +1064,22 @@
         <div class="card">
           <span class="pick">口コミ厚み</span>
           <h3>Roomba® Plus 405 Combo + AutoWash™</h3>
-          <p>667件・信頼度91.6。初期不良・アプリ接続は先に確認。</p>
+          <p>667件・信頼度91.6。口コミ厚みあり。床が強い</p>
         </div>
         <div class="card">
-          <span class="pick">マップ・吸引</span>
+          <span class="pick">対抗候補</span>
+          <h3>Roomba® Max 705 Vac + AutoEmpty™</h3>
+          <p>221件・信頼度81.1。床評価が相対的に高い</p>
+        </div>
+        <div class="card">
+          <span class="pick">第三候補</span>
           <h3>Q10P+</h3>
-          <p>184件。Roborockらしい運用感。口コミは中位なので個別注意点を読む。</p>
+          <p>184件・信頼度83.2。床評価が相対的に高い</p>
         </div>
         <div class="card">
-          <span class="pick">別ブランド</span>
-          <h3>お掃除ロボットS20</h3>
-          <p>107件で閾値超え。データは薄めなので過度な期待は禁物。</p>
-        </div>
-        <div class="card">
-          <span class="pick">共通注意</span>
-          <h3>口コミの厚み差</h3>
-          <p>405が突出。他2台は件数差を織り込んで比較する。</p>
+          <span class="pick">見方</span>
+          <h3>帯内 9 製品をすべて掲載</h3>
+          <p>口コミ50件未満が3台あります。件数の薄い列は参考値として扱い、詳細ページも確認してください。</p>
         </div>
       </div>
 
@@ -732,27 +1087,33 @@
       <div class="matrix">
         <div class="card">
           <h3>失敗したくない</h3>
-          <p><strong>Roomba® Plus 405 Combo + AutoWash™</strong> — 判断材料が最も厚い。</p>
+          <p><strong>Roomba® Plus 405 Combo + AutoWash™</strong> — 帯内で口コミが最も厚い（667件）。</p>
         </div>
         <div class="card">
-          <h3>Roborock派</h3>
-          <p><strong>Q10P+</strong> — 10万円手前のRoborock候補。</p>
+          <h3>床をきれいに</h3>
+          <p><strong>DEEBOT T50S OMNI</strong> — 床掃除スコア 98。</p>
         </div>
         <div class="card">
-          <h3>SwitchBot連携</h3>
-          <p><strong>S20</strong> — エコシステム優先なら。口コミは少なめ。</p>
+          <h3>音が気になる</h3>
+          <p><strong>DEEBOT T50S OMNI</strong> — 静音スコア 92。</p>
         </div>
         <div class="card">
-          <h3>コスパ全自動を再考</h3>
-          <p>一つ下の5〜7万円帯（T50 OMNI等）も併せて比較を。</p>
+          <h3>手間を減らしたい / 予算</h3>
+          <p><strong>Roomba® Max 705 Vac + AutoEmpty™</strong> — メンテ 96。予算優先なら <strong>Q10V+</strong>（¥79,999）。</p>
         </div>
       </div>
 
       <h2>比較したロボット掃除機の詳細へ</h2>
       <div class="product-links">
-        <a href="https://nattoku-labo.com/products/roomba-plus-405-combo-autowash" target="_blank" rel="noopener">Roomba® Plus 405 Combo + AutoWash™ の詳細分析 →</a>
+        <a href="https://nattoku-labo.com/products/q10v-plus" target="_blank" rel="noopener">Q10V+ の詳細分析 →</a>
         <a href="https://nattoku-labo.com/products/q10p" target="_blank" rel="noopener">Q10P+ の詳細分析 →</a>
+        <a href="https://nattoku-labo.com/products/deebot-t50s-omni" target="_blank" rel="noopener">DEEBOT T50S OMNI の詳細分析 →</a>
         <a href="https://nattoku-labo.com/products/s20" target="_blank" rel="noopener">お掃除ロボットS20 の詳細分析 →</a>
+        <a href="https://nattoku-labo.com/products/roomba-plus-405-combo-autowash" target="_blank" rel="noopener">Roomba® Plus 405 Combo + AutoWash™ の詳細分析 →</a>
+        <a href="https://nattoku-labo.com/products/roomba-max-705-vac-autoempty" target="_blank" rel="noopener">Roomba® Max 705 Vac + AutoEmpty™ の詳細分析 →</a>
+        <a href="https://nattoku-labo.com/products/l40s-pro-ultra" target="_blank" rel="noopener">L40s Pro Ultra の詳細分析 →</a>
+        <a href="https://nattoku-labo.com/products/l40-ultra-ae" target="_blank" rel="noopener">L40 Ultra AE の詳細分析 →</a>
+        <a href="https://nattoku-labo.com/products/eufy-robot-vacuum-omni-c28" target="_blank" rel="noopener">Eufy Robot Vacuum Omni C28 の詳細分析 →</a>
       </div>
 
       <p class="section-sub" style="margin-top:1.5rem"><a href="/compare/">ほかの価格帯のおすすめ比較一覧 →</a></p>
@@ -879,6 +1240,22 @@
       document.querySelectorAll(".aff-card[data-slug]").forEach((card) => {
         mountCard(card);
       });
+    })();
+  </script>
+  
+  <script>
+    (function () {
+      const wrap = document.querySelector(".compare-scroll-wrap");
+      const scroller = document.querySelector(".compare-scroll");
+      if (!wrap || !scroller) return;
+      const update = () => {
+        const max = scroller.scrollWidth - scroller.clientWidth;
+        wrap.classList.toggle("can-scroll-left", scroller.scrollLeft > 4);
+        wrap.classList.toggle("can-scroll-right", scroller.scrollLeft < max - 4);
+      };
+      scroller.addEventListener("scroll", update, { passive: true });
+      window.addEventListener("resize", update);
+      update();
     })();
   </script>
   <script src="/products/js/navigation.js?v=20260809b"></script>
