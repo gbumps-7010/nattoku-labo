@@ -591,6 +591,29 @@ const STYLE = `<style>
     .row-group td {
       border-top: 2px solid #cbd5e1;
     }
+    a.detail-page-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.2rem;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0.5rem 0.35rem;
+      font-size: 0.7rem;
+      font-weight: 800;
+      line-height: 1.25;
+      text-align: center;
+      text-decoration: none;
+      color: #1e3a8a;
+      background: #eff6ff;
+      border: 1.5px solid #93c5fd;
+      border-radius: 8px;
+    }
+    a.detail-page-link:hover {
+      color: #fff;
+      background: #2563eb;
+      border-color: #1d4ed8;
+    }
   </style>`;
 
 function load(slug) {
@@ -913,6 +936,14 @@ function buildTable(prods) {
               <tr>
                 <td>参考価格</td>
                 ${cells(prods, (p) => `<td class="price">${p.priceLabel}</td>`)}
+              </tr>
+              <tr>
+                <td>詳細ページ</td>
+                ${cells(
+                  prods,
+                  (p) =>
+                    `<td><a class="detail-page-link" href="https://nattoku-labo.com/products/${p.slug}" target="_blank" rel="noopener">詳細を見る →</a></td>`,
+                )}
               </tr>
               <tr>
                 <td>口コミ件数</td>
