@@ -447,65 +447,101 @@ const STYLE = `<style>
     }
     .affiliate-section { margin: 1.75rem 0 1rem; }
     .affiliate-section > h2 { margin-top: 0; }
-    .aff-inline {
-      width: 100%;
-      margin-top: 0.4rem;
+    .affiliate-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    @media (min-width: 720px) {
+      .affiliate-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (min-width: 1100px) {
+      .affiliate-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+    .aff-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 0.95rem 0.85rem 1.05rem;
       display: flex;
       flex-direction: column;
-      gap: 0.35rem;
-      align-items: stretch;
+      gap: 0.65rem;
       min-width: 0;
     }
-    .aff-inline-direct {
+    .aff-card-head {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+    }
+    .aff-card-head img {
+      width: 52px;
+      height: 52px;
+      object-fit: contain;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      flex-shrink: 0;
+    }
+    .aff-card-title {
+      font-weight: 800;
+      font-size: 0.92rem;
+      line-height: 1.35;
+      color: var(--secondary);
+    }
+    .aff-card-brand {
+      font-size: 0.72rem;
+      color: var(--muted);
+      font-weight: 600;
+      margin-top: 0.1rem;
+    }
+    .aff-card-body {
+      min-width: 0;
       width: 100%;
-      min-width: 0;
-      text-align: center;
     }
-    .aff-inline-direct a {
+    .aff-card-direct {
+      text-align: center;
+      margin-bottom: 0.45rem;
+    }
+    .aff-card-direct a {
       display: inline-block;
       max-width: 100%;
+      word-break: break-word;
     }
-    .aff-inline-direct img {
+    .aff-card-direct img {
       max-width: 100% !important;
       width: auto !important;
       height: auto !important;
       display: block;
       margin: 0 auto;
     }
-    /* もしも公式ウィジェットを列幅に合わせて縮小表示（見た目は提供タグのまま） */
-    .aff-inline-moshimo {
+    .aff-card-moshimo {
       width: 100%;
-      max-height: 150px;
-      overflow: hidden;
       min-width: 0;
-      position: relative;
     }
-    .aff-inline-moshimo iframe {
+    .aff-card-moshimo iframe {
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
       border: 0;
       display: block;
-      width: 260%;
-      max-width: none;
-      height: 380px;
-      transform: scale(0.385);
-      transform-origin: top left;
-      pointer-events: auto;
     }
-    @media (min-width: 720px) {
-      .aff-inline-moshimo { max-height: 170px; }
-      .aff-inline-moshimo iframe {
-        width: 240%;
-        transform: scale(0.42);
-        height: 400px;
-      }
-    }
-    .aff-inline-status {
-      font-size: 0.58rem;
+    .aff-card-status {
+      font-size: 0.78rem;
       color: var(--muted);
       font-weight: 600;
       text-align: center;
-      line-height: 1.3;
+      padding: 0.75rem 0;
     }
-    .aff-inline-status.error { color: var(--bad); }
+    .aff-card-status.error { color: var(--bad); }
+    .price-jump {
+      display: inline-block;
+      margin-top: 0.15rem;
+      font-size: 0.68rem;
+      font-weight: 700;
+      color: var(--primary);
+      text-decoration: none;
+    }
+    .price-jump:hover { text-decoration: underline; }
     footer {
       border-top: 1px solid var(--line);
       padding: 1.5rem 1rem;
@@ -791,11 +827,35 @@ function productHead(prod) {
                       <div class="product-name">${escapeHtml(prod.name)}</div>
                       <div class="product-mfr">${escapeHtml(prod.brand)}</div>
                     </a>
-                    <div class="aff-inline" data-slug="${prod.slug}">
-                      <span class="aff-inline-status">価格読込中…</span>
-                    </div>
+                    <a class="price-jump" href="#price-check-${escapeHtml(prod.slug)}">最新価格 ↓</a>
                   </div>
                 </th>`;
+}
+
+function buildAffiliateSection(prods) {
+  const cards = prods
+    .map(
+      (p) => `<article class="aff-card" id="price-check-${escapeHtml(p.slug)}" data-slug="${escapeHtml(p.slug)}">
+          <div class="aff-card-head">
+            <img src="${escapeHtml(p.imageUrl)}" alt="" width="52" height="52" loading="lazy">
+            <div>
+              <div class="aff-card-title">${escapeHtml(p.name)}</div>
+              <div class="aff-card-brand">${escapeHtml(p.brand)} · ${escapeHtml(p.priceLabel)}</div>
+            </div>
+          </div>
+          <div class="aff-card-body">
+            <span class="aff-card-status">価格読込中…</span>
+          </div>
+        </article>`,
+    )
+    .join("\n        ");
+  return `<section class="affiliate-section" id="price-check" aria-label="最新価格をチェック">
+        <h2>最新価格をチェック</h2>
+        <p class="section-sub">もしもアフィリエイト／公式の提供タグをそのまま表示しています（ボタンデザインの自作はしていません）。</p>
+        <div class="affiliate-grid">
+        ${cards}
+        </div>
+      </section>`;
 }
 
 function cells(prods, fn) {
@@ -1044,23 +1104,43 @@ const affiliateInlineScript = `
           '[id^="msmaflink-"]{width:100%!important;max-width:100%!important;min-width:0!important;margin-left:auto;margin-right:auto}' +
           '[id^="msmaflink-"] *{max-width:100%!important;min-width:0}' +
           '[id^="msmaflink-"] table{width:100%!important;table-layout:fixed}' +
-          '[id^="msmaflink-"] img{width:auto!important;height:auto!important;max-width:220px!important;max-height:220px!important;object-fit:contain}' +
+          '[id^="msmaflink-"] img{height:auto!important;object-fit:contain}' +
           "</style></head><body>" +
           safe +
           "</body></html>";
+        iframe.style.cssText = "width:100%;max-width:100%;min-width:0;border:0;display:block;";
+        iframe.addEventListener("load", () => {
+          const resize = () => {
+            try {
+              const d = iframe.contentDocument;
+              if (!d || !d.body) return;
+              const mount = d.querySelector('[id^="msmaflink-"]');
+              let h = 0;
+              if (mount) {
+                const r = mount.getBoundingClientRect();
+                h = Math.max(Math.ceil(r.height), mount.offsetHeight, mount.scrollHeight);
+              }
+              if (!h) {
+                h = Math.max(
+                  d.documentElement ? d.documentElement.scrollHeight : 0,
+                  d.body.scrollHeight,
+                );
+                h = Math.min(h, 900);
+              }
+              if (h > 0) iframe.style.height = Math.ceil(h + 12) + "px";
+            } catch (_) {}
+          };
+          resize();
+          const id = window.setInterval(resize, 400);
+          window.setTimeout(() => window.clearInterval(id), 10000);
+        });
         container.appendChild(iframe);
       }
 
-      function injectDirectHtml(container, directHtml) {
-        if (!container || !directHtml) return false;
-        // 提供された公式アフィリエイトHTMLを改変せずそのまま挿入
-        container.innerHTML = String(directHtml);
-        return true;
-      }
-
-      async function mountInline(el) {
+      async function mountCard(el) {
         const slug = el.getAttribute("data-slug");
-        const status = el.querySelector(".aff-inline-status");
+        const body = el.querySelector(".aff-card-body");
+        const status = el.querySelector(".aff-card-status");
         try {
           const res = await fetch("/products/data/" + slug + ".json", { cache: "no-store" });
           if (!res.ok) throw new Error("HTTP " + res.status);
@@ -1075,18 +1155,20 @@ const affiliateInlineScript = `
             }
             return;
           }
-          el.innerHTML = "";
+          if (!body) return;
+          body.innerHTML = "";
           if (hasDirect) {
             const directSlot = document.createElement("div");
-            directSlot.className = "aff-inline-direct";
-            injectDirectHtml(directSlot, aff.direct);
-            el.appendChild(directSlot);
+            directSlot.className = "aff-card-direct";
+            // 提供された公式アフィリエイトHTMLを改変せずそのまま挿入
+            directSlot.innerHTML = String(aff.direct);
+            body.appendChild(directSlot);
           }
           if (hasMoshimo) {
             const moshimoSlot = document.createElement("div");
-            moshimoSlot.className = "aff-inline-moshimo";
+            moshimoSlot.className = "aff-card-moshimo";
             injectMoshimoIframe(moshimoSlot, aff.moshimo);
-            el.appendChild(moshimoSlot);
+            body.appendChild(moshimoSlot);
           }
         } catch (err) {
           if (status) {
@@ -1096,7 +1178,7 @@ const affiliateInlineScript = `
         }
       }
 
-      document.querySelectorAll(".aff-inline[data-slug]").forEach(mountInline);
+      document.querySelectorAll(".aff-card[data-slug]").forEach(mountCard);
     })();
   </script>`;
 
@@ -1198,7 +1280,7 @@ function buildPage(band) {
         </div>
       </section>
 
-      <p class="section-sub" style="margin:0.35rem 0 1.25rem">各製品の写真下に、もしもアフィリエイト／公式の提供タグをそのまま表示しています。</p>
+      ${buildAffiliateSection(band.products)}
 
       <h2>この徹底比較で見るべきポイント</h2>
       <p class="section-sub">表の差だけ短く補足します。詳細は各製品ページへ。</p>
