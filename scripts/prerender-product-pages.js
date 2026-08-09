@@ -121,89 +121,11 @@ function buildStructuredData(data, metadata) {
     .join("\n    ");
 }
 
-function keywordList(items, limit = 8) {
-  if (!Array.isArray(items)) return [];
-  return items
-    .map((item) => (typeof item === "string" ? item : item?.keyword))
-    .filter(Boolean)
-    .slice(0, limit);
-}
-
-function buildUniqueSeoBlock(data, metadata) {
-  const name = metadata.name;
-  const reviews = Number(data.totalReviews) || 0;
-  const score = data.reliabilityScore ?? data.reliability?.score;
-  const satisfaction = data.categoryC?.userSatisfaction;
-  const complaints = Array.isArray(data.topComplaints) ? data.topComplaints.slice(0, 3) : [];
-  const perf = data.performanceAnalysis || {};
-  const perfEntries = Object.entries(perf)
-    .filter(([, v]) => v && (v.comment || v.score != null))
-    .slice(0, 6);
-  const positiveKw = keywordList(data.reviewKeywords?.positive);
-  const negativeKw = keywordList(data.reviewKeywords?.negative);
-  const updateNote = data.updateInfo?.note || "";
-
-  const complaintHtml = complaints
-    .map((c) => {
-      const title = escapeHtml(c.title || "不満点");
-      const desc = escapeHtml(c.description || "");
-      const solution = c.solution ? `<p><strong>対策:</strong> ${escapeHtml(c.solution)}</p>` : "";
-      const pct = c.percentage != null ? `${escapeHtml(c.percentage)}%` : "";
-      return `<li><strong>${title}${pct ? `（${pct}）` : ""}</strong><p>${desc}</p>${solution}</li>`;
-    })
-    .join("\n");
-
-  const perfHtml = perfEntries
-    .map(([key, v]) => {
-      const labelMap = {
-        floorCleaning: "床掃除",
-        carpetCleaning: "カーペット",
-        petHairRemoval: "ペットの毛",
-        quietness: "静音性",
-        stepClimbing: "段差乗り越え",
-        maintenance: "メンテナンス",
-        appStability: "アプリ安定性",
-        batteryLife: "バッテリー",
-      };
-      const label = labelMap[key] || key;
-      const scoreText = v.score != null ? `（評価 ${escapeHtml(v.score)}）` : "";
-      return `<li><strong>${escapeHtml(label)}${scoreText}</strong><p>${escapeHtml(v.comment || "")}</p></li>`;
-    })
-    .join("\n");
-
-  const kw = (arr) =>
-    arr.length
-      ? `<p>${arr.map((k) => `<span class="seo-kw">${escapeHtml(k)}</span>`).join(" ")}</p>`
-      : "";
-
-  return `<!-- SEO_PRERENDER_START -->
-        <section class="seo-unique-summary" aria-label="${escapeHtml(name)}の口コミ分析サマリー" style="max-width:900px;margin:2rem auto 2.5rem;padding:1.5rem 1.75rem;background:#fff;border:1px solid #e2e8f0;border-radius:14px;">
-            <style>
-                .seo-unique-summary h2{font-size:1.35rem;font-weight:800;color:#0f172a;margin:0 0 0.75rem;}
-                .seo-unique-summary h3{font-size:1.05rem;font-weight:700;color:#1e293b;margin:1.25rem 0 0.5rem;}
-                .seo-unique-summary p,.seo-unique-summary li{color:#334155;line-height:1.75;font-size:0.95rem;}
-                .seo-unique-summary ul{margin:0.35rem 0 0;padding-left:1.2rem;}
-                .seo-unique-summary li{margin-bottom:0.65rem;}
-                .seo-unique-summary .seo-kw{display:inline-block;margin:0.2rem 0.35rem 0.2rem 0;padding:0.2rem 0.55rem;background:#f1f5f9;border-radius:999px;font-size:0.82rem;color:#0f172a;}
-            </style>
-            <h2>${escapeHtml(name)}の口コミ分析サマリー</h2>
-            <p>${escapeHtml(metadata.description)}</p>
-            <p>${escapeHtml(name)}について、ECサイトの口コミ${escapeHtml(reviews)}件を統計解析しました。口コミの信頼度は${escapeHtml(score ?? "—")}点です。${
-              satisfaction?.comment ? escapeHtml(satisfaction.comment) : ""
-            }</p>
-            ${updateNote ? `<p><strong>分析時点の傾向:</strong> ${escapeHtml(updateNote)}</p>` : ""}
-            ${
-              positiveKw.length || negativeKw.length
-                ? `<h3>口コミで目立ったキーワード</h3>
-            ${positiveKw.length ? `<p><strong>高評価側:</strong></p>${kw(positiveKw)}` : ""}
-            ${negativeKw.length ? `<p><strong>低評価側:</strong></p>${kw(negativeKw)}` : ""}`
-                : ""
-            }
-            ${perfHtml ? `<h3>${escapeHtml(name)}の性能に関する利用者の声</h3><ul>${perfHtml}</ul>` : ""}
-            ${complaintHtml ? `<h3>${escapeHtml(name)}で多い不満点と対策</h3><ul>${complaintHtml}</ul>` : ""}
-            <p>${escapeHtml(name)}の購入を検討する際は、上記の口コミ傾向と最新価格をあわせて判断してください。詳細なスコア内訳・キーワード分布は本ページ下部の各セクションで確認できます。</p>
-        </section>
-        <!-- SEO_PRERENDER_END -->`;
+function removeSeoSummaryBlock(html) {
+  return html.replace(
+    /[ \t]*<!-- SEO_PRERENDER_START -->[\s\S]*?<!-- SEO_PRERENDER_END -->\s*/g,
+    "",
+  );
 }
 
 function upsertOpenGraphTags(html, data, metadata) {
@@ -473,19 +395,8 @@ function prerenderHtml(html, data) {
     html = replaceSimpleDynamic(html, dottedPath, formatValue(dottedPath, value));
   }
 
-  const seoBlock = buildUniqueSeoBlock(data, metadata);
-  const existingSummary = /[ \t]*<!-- SEO_PRERENDER_START -->[\s\S]*?<!-- SEO_PRERENDER_END -->/;
-  if (existingSummary.test(html)) {
-    html = html.replace(existingSummary, seoBlock);
-  } else {
-    // Prefer right after <div class="container"> so crawlers see unique copy early.
-    const containerRe = /(<div class="container">\s*)/;
-    if (containerRe.test(html)) {
-      html = html.replace(containerRe, `$1\n        ${seoBlock}\n`);
-    } else {
-      html = html.replace(/<\/header>/i, `</header>\n    ${seoBlock}\n`);
-    }
-  }
+  // 口コミ分析サマリー（seo-unique-summary）は表示しない
+  html = removeSeoSummaryBlock(html);
 
   // Make shared section headings product-specific so pages are not near-identical shells.
   const namedHeadings = [
@@ -539,8 +450,6 @@ function validatePrerenderedHtml(html, data) {
   const required = [
     `<link rel="canonical" href="${url}">`,
     `property="og:url" content="${url}"`,
-    "<!-- SEO_PRERENDER_START -->",
-    "<!-- SEO_PRERENDER_END -->",
     `data-dynamic="productName">${escapeHtml(data.productName)}</h1>`,
     "/* MOBILE_LAYOUT_FIX_START */",
   ];
@@ -548,6 +457,13 @@ function validatePrerenderedHtml(html, data) {
     if (!html.includes(expected)) {
       throw new Error(`${data.productId}: prerender validation failed (${expected})`);
     }
+  }
+  if (
+    html.includes("<!-- SEO_PRERENDER_START -->") ||
+    html.includes("seo-unique-summary") ||
+    html.includes("口コミ分析サマリー")
+  ) {
+    throw new Error(`${data.productId}: SEO analysis summary block must be removed`);
   }
   for (const [dottedPath, rawValue, weight] of weightedExpectations) {
     if (rawValue === undefined || rawValue === null) continue;
