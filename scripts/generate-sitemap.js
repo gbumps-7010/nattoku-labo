@@ -70,11 +70,38 @@ for (const p of rootPages) {
   }
 }
 
-// 製品ページ
+// 製品ページ（HP掲載=TRUE かつ口コミありのものだけ）
 const productsDir = path.join(ROOT, "products");
+const dataDir = path.join(productsDir, "data");
+
+function isPublishReady(data) {
+  const reviews = Number(data?.totalReviews || 0);
+  const aff = data?.affiliate || {};
+  const hasAff =
+    (typeof aff.moshimo === "string" && aff.moshimo.trim() !== "") ||
+    (typeof aff.direct === "string" && aff.direct.trim() !== "");
+  return (
+    aff.hpPublish === true &&
+    Number.isFinite(reviews) &&
+    reviews > 0 &&
+    String(data?.imageUrl || "").trim() !== "" &&
+    hasAff
+  );
+}
+
 const productFiles = fs
   .readdirSync(productsDir)
   .filter((f) => f.endsWith(".html") && !EXCLUDE_PRODUCTS.has(f) && !f.startsWith("moshimo-embed"))
+  .filter((f) => {
+    const slug = path.basename(f, ".html");
+    const jp = path.join(dataDir, `${slug}.json`);
+    if (!fs.existsSync(jp)) return false;
+    try {
+      return isPublishReady(JSON.parse(fs.readFileSync(jp, "utf8")));
+    } catch {
+      return false;
+    }
+  })
   .sort((a, b) => a.localeCompare(b, "en"));
 
 for (const f of productFiles) {

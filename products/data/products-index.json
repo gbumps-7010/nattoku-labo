@@ -46,6 +46,29 @@
     }
   },
   {
+    "id": "deebot-mini-2",
+    "name": "DEEBOT mini 2",
+    "manufacturer": "ECOVACS",
+    "price": 69800,
+    "reviewCount": 36,
+    "totalReviewCount": 36,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260804/djx28-01ee.jpg",
+    "badges": [
+      "ECOVACS",
+      "水拭き・拭き掃除が良い",
+      "満足・買ってよかった"
+    ],
+    "overallTrustScore": 65.2,
+    "specs": {
+      "suction": 96,
+      "mopping": 78,
+      "noise": 92,
+      "obstacle": 55,
+      "app": 85,
+      "maintenance": 88
+    }
+  },
+  {
     "id": "deebot-mini",
     "name": "DEEBOT mini",
     "manufacturer": "ECOVACS",
@@ -115,6 +138,29 @@
     }
   },
   {
+    "id": "deebot-n50-omni",
+    "name": "DEEBOT N50 OMNI",
+    "manufacturer": "ECOVACS",
+    "price": 79800,
+    "reviewCount": 4,
+    "totalReviewCount": 4,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260730/dlx88-0204_v02.jpg",
+    "badges": [
+      "ECOVACS",
+      "水拭き・拭き掃除が良い",
+      "吸引力が高い"
+    ],
+    "overallTrustScore": 53.2,
+    "specs": {
+      "suction": 95,
+      "mopping": 88,
+      "noise": 94,
+      "obstacle": 78,
+      "app": 80,
+      "maintenance": 96
+    }
+  },
+  {
     "id": "deebot-t50-omni",
     "name": "DEEBOT T50 OMNI",
     "manufacturer": "ECOVACS",
@@ -181,6 +227,29 @@
       "obstacle": 78,
       "app": 89,
       "maintenance": 88
+    }
+  },
+  {
+    "id": "deebot-t80s-omni",
+    "name": "DEEBOT T80S OMNI",
+    "manufacturer": "ECOVACS",
+    "price": 139800,
+    "reviewCount": 21,
+    "totalReviewCount": 21,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260804/dex62-0402.jpg",
+    "badges": [
+      "ECOVACS",
+      "満足・買ってよかった",
+      "水拭き・拭き掃除が良い"
+    ],
+    "overallTrustScore": 61.3,
+    "specs": {
+      "suction": 96,
+      "mopping": 75,
+      "noise": 88,
+      "obstacle": 40,
+      "app": 75,
+      "maintenance": 78
     }
   },
   {
@@ -302,7 +371,7 @@
     "id": "eufy-robot-vacuum-omni-c28",
     "name": "Eufy Robot Vacuum Omni C28",
     "manufacturer": "Anker",
-    "price": 99990,
+    "price": 79990,
     "reviewCount": 53,
     "totalReviewCount": 53,
     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t211a/imgrc0103188193.jpg",
@@ -325,7 +394,7 @@
     "id": "eufy-robot-vacuum-omni-e25",
     "name": "Eufy Robot Vacuum Omni E25",
     "manufacturer": "Anker",
-    "price": 119920,
+    "price": 99980,
     "reviewCount": 290,
     "totalReviewCount": 290,
     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t2353/imgrc0094500246.jpg",
@@ -417,7 +486,7 @@
     "id": "eufy-x10-pro-omni",
     "name": "Eufy X10 Pro Omni",
     "manufacturer": "Anker",
-    "price": 69990,
+    "price": 49990,
     "reviewCount": 596,
     "totalReviewCount": 596,
     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t2351/t2351_normal.jpg",
@@ -434,6 +503,52 @@
       "obstacle": 78,
       "app": 93,
       "maintenance": 85
+    }
+  },
+  {
+    "id": "f20-plus",
+    "name": "F20 Plus",
+    "manufacturer": "Dreame",
+    "price": 59800,
+    "reviewCount": 11,
+    "totalReviewCount": 11,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/13111094/imgrc0155930361.jpg",
+    "badges": [
+      "Dreame",
+      "使いやすい・便利",
+      "吸引力が高い"
+    ],
+    "overallTrustScore": 54.4,
+    "specs": {
+      "suction": 95,
+      "mopping": 40,
+      "noise": 75,
+      "obstacle": 60,
+      "app": 92,
+      "maintenance": 90
+    }
+  },
+  {
+    "id": "f20",
+    "name": "F20",
+    "manufacturer": "Dreame",
+    "price": 39800,
+    "reviewCount": 7,
+    "totalReviewCount": 7,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/13111094/imgrc0155930361.jpg",
+    "badges": [
+      "Dreame",
+      "水拭き・拭き掃除が良い",
+      "使いやすい・便利"
+    ],
+    "overallTrustScore": 54.4,
+    "specs": {
+      "suction": 85,
+      "mopping": 60,
+      "noise": 70,
+      "obstacle": 70,
+      "app": 88,
+      "maintenance": 80
     }
   },
   {
@@ -460,10 +575,33 @@
     }
   },
   {
+    "id": "k11-pro",
+    "name": "ロボット掃除機 K11+ Pro",
+    "manufacturer": "SwitchBot",
+    "price": 49800,
+    "reviewCount": 26,
+    "totalReviewCount": 26,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/13479056/mainbg2.jpg",
+    "badges": [
+      "SwitchBot",
+      "吸引力が高い",
+      "満足・買ってよかった"
+    ],
+    "overallTrustScore": 63.4,
+    "specs": {
+      "suction": 75,
+      "mopping": 92,
+      "noise": 88,
+      "obstacle": 68,
+      "app": 55,
+      "maintenance": 89
+    }
+  },
+  {
     "id": "k11",
     "name": "ロボット掃除機 K11+",
     "manufacturer": "SwitchBot",
-    "price": 59800,
+    "price": 37800,
     "reviewCount": 503,
     "totalReviewCount": 503,
     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/09377790/11892401/13129054/imgrc0100726038.jpg",
@@ -480,6 +618,28 @@
       "obstacle": 72,
       "app": 94,
       "maintenance": 90
+    }
+  },
+  {
+    "id": "k20-pro",
+    "name": "マルチタスク家庭用ロボットK20+ Pro",
+    "manufacturer": "SwitchBot",
+    "price": 79840,
+    "reviewCount": 1,
+    "totalReviewCount": 1,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/09377790/k20/head.jpg",
+    "badges": [
+      "SwitchBot",
+      "使いやすい・便利"
+    ],
+    "overallTrustScore": 52.6,
+    "specs": {
+      "suction": 80,
+      "mopping": 80,
+      "noise": 80,
+      "obstacle": 80,
+      "app": 60,
+      "maintenance": 60
     }
   },
   {
@@ -900,7 +1060,7 @@
     "id": "s10",
     "name": "お掃除ロボットS10",
     "manufacturer": "SwitchBot",
-    "price": 119820,
+    "price": 54980,
     "reviewCount": 100,
     "totalReviewCount": 100,
     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/trend-tech/cabinet/item/13/switchbot/0810150540697_2.jpg",
@@ -923,7 +1083,7 @@
     "id": "s20",
     "name": "お掃除ロボットS20",
     "manufacturer": "SwitchBot",
-    "price": 91800,
+    "price": 56980,
     "reviewCount": 107,
     "totalReviewCount": 107,
     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/09377790/s20/amazon/s20.jpg",
@@ -946,7 +1106,7 @@
     "id": "saros-10r",
     "name": "Saros 10R",
     "manufacturer": "Roborock",
-    "price": 269800,
+    "price": 199980,
     "reviewCount": 317,
     "totalReviewCount": 317,
     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/roborockjapandirect/cabinet/products/12574614/imgrc0135010295.jpg",
@@ -963,6 +1123,29 @@
       "obstacle": 78,
       "app": 89,
       "maintenance": 91
+    }
+  },
+  {
+    "id": "saros-20",
+    "name": "Saros 20",
+    "manufacturer": "Roborock",
+    "price": 249800,
+    "reviewCount": 41,
+    "totalReviewCount": 41,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/roborockjapandirect/cabinet/products/12574614/imgrc0134813006.jpg",
+    "badges": [
+      "Roborock",
+      "水拭き・拭き掃除が良い",
+      "吸引力が高い"
+    ],
+    "overallTrustScore": 67.9,
+    "specs": {
+      "suction": 98,
+      "mopping": 94,
+      "noise": 88,
+      "obstacle": 92,
+      "app": 91,
+      "maintenance": 95
     }
   },
   {

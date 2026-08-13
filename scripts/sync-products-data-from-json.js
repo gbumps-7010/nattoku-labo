@@ -53,7 +53,10 @@ function hasAffiliate(data) {
 }
 
 function isPublishReady(data) {
+  const reviews = Number(data?.totalReviews || 0);
   return data?.affiliate?.hpPublish === true &&
+    Number.isFinite(reviews) &&
+    reviews > 0 &&
     String(data?.imageUrl || "").trim() !== "" &&
     hasAffiliate(data);
 }

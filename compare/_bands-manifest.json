@@ -9,23 +9,25 @@
       "eufy-robovac-g10-hybrid",
       "deebot-n30",
       "q10v",
+      "k11",
       "roomba-mini-slim-slimcharge",
       "f20",
       "eufy-robovac-g30-hybrid",
       "roomba-mini-autoempty",
       "k11-pro",
-      "d20-ultra"
+      "eufy-x10-pro-omni"
     ],
-    "count": 12
+    "count": 13
   },
   {
     "label": "5〜7万円",
     "urlPath": "/compare/robot-vacuum-5-7man",
     "slugs": [
       "l20-ultra-complete",
+      "s10",
+      "s20",
       "l10s-ultra-gen-2",
       "roomba-105-combo-autoempty",
-      "k11",
       "f20-plus",
       "k10-pro",
       "deebot-t50-omni",
@@ -34,7 +36,6 @@
       "deebot-mini-2",
       "l10s-ultra-gen-3",
       "x30-ultra",
-      "eufy-x10-pro-omni",
       "eufy-clean-x8-pro-with-self-empty-station"
     ],
     "count": 14
@@ -45,15 +46,15 @@
     "slugs": [
       "deebot-n50-omni",
       "k20-pro",
+      "eufy-robot-vacuum-omni-c28",
       "q10v-plus",
       "q10p",
       "deebot-t50s-omni",
-      "s20",
       "roomba-plus-405-combo-autowash",
       "roomba-max-705-vac-autoempty",
       "l40s-pro-ultra",
       "l40-ultra-ae",
-      "eufy-robot-vacuum-omni-c28"
+      "eufy-robot-vacuum-omni-e25"
     ],
     "count": 11
   },
@@ -61,9 +62,7 @@
     "label": "10〜15万円",
     "urlPath": "/compare/robot-vacuum-10-15man",
     "slugs": [
-      "s10",
       "qrevo-curv-2-flow",
-      "eufy-robot-vacuum-omni-e25",
       "roomba-plus-505-combo-autowash",
       "deebot-t80s-omni",
       "qrevo-curvc",
@@ -71,29 +70,27 @@
       "qrevo-l",
       "deebot-t90-omni"
     ],
-    "count": 9
+    "count": 7
   },
   {
     "label": "15〜20万円",
     "urlPath": "/compare/robot-vacuum-15-20man",
     "slugs": [
-      "roomba-plus-575-combo-autowash",
       "roomba-max-705-combo-autowash",
       "deebot-x8-pro-omni",
       "x50-ultra",
       "eufy-robot-vacuum-omni-s1-pro",
-      "eufy-robot-vacuum-omni-s2"
+      "saros-10r"
     ],
-    "count": 6
+    "count": 5
   },
   {
     "label": "20万円〜",
     "urlPath": "/compare/robot-vacuum-20man-plus",
     "slugs": [
       "deebot-x11-omnicyclone",
-      "saros-20",
-      "saros-10r"
+      "saros-20"
     ],
-    "count": 3
+    "count": 2
   }
 ]

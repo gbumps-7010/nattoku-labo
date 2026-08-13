@@ -757,8 +757,27 @@ function productMeta(slug) {
 function listAllSlugs() {
   return fs
     .readdirSync(dataDir)
-    .filter((f) => f.endsWith(".json"))
-    .map((f) => f.replace(/\.json$/, ""));
+    .filter((f) => f.endsWith(".json") && f !== "products-index.json")
+    .map((f) => f.replace(/\.json$/, ""))
+    .filter((slug) => {
+      try {
+        const p = load(slug);
+        const aff = p.affiliate || {};
+        const reviews = Number(p.totalReviews || 0);
+        const hasAff = Boolean(
+          (typeof aff.moshimo === "string" && aff.moshimo.trim()) ||
+            (typeof aff.direct === "string" && aff.direct.trim()),
+        );
+        return (
+          aff.hpPublish === true &&
+          reviews > 0 &&
+          String(p.imageUrl || "").trim() !== "" &&
+          hasAff
+        );
+      } catch {
+        return false;
+      }
+    });
 }
 
 function productsInRange(min, max) {
@@ -1411,7 +1430,7 @@ function buildPage(band) {
   </footer>
   ${scrollHelperScript}
   ${affiliateInlineScript}
-  <script src="/products/js/navigation.js?v=20260813d"></script>
+  <script src="/products/js/navigation.js?v=20260813e"></script>
 </body>
 </html>
 `;
