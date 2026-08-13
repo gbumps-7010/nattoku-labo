@@ -49,7 +49,6 @@
 - products/data/eufy-robot-vacuum-omni-c28.json
 - products/data/eufy-robot-vacuum-omni-e25.json
 - products/data/eufy-robot-vacuum-omni-s1-pro.json
-- products/data/eufy-robovac-g30.json
 - products/data/eufy-robovac-g30-hybrid.json
 - products/data/eufy-x10-pro-omni.json
 - products/data/roborock-qrevo-l.json
