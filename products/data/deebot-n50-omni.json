@@ -1,0 +1,365 @@
+{
+  "productId": "deebot-n50-omni",
+  "productName": "DEEBOT N50 OMNI",
+  "manufacturer": "ECOVACS",
+  "modelNumber": "N50 OMNI",
+  "imageUrl": "https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260730/dlx88-0204_v02.jpg",
+  "overallRating": 4.39,
+  "totalReviews": 4,
+  "price": 79800,
+  "reliabilityScore": 53.2,
+  "asin": "",
+  "metaTitle": "DEEBOT N50 OMNI 詳細分析 | 賢いマッピングと静音性が光るが、アプリの初期設定に注意点も",
+  "metaDescription": "DEEBOT N50 OMNIの4件の口コミを解析。賢いマッピング性能や静音性は高評価ですが、アプリの分かりにくさや設置スペースなど、購入前に知るべき真実を公開。",
+  "keywords": [
+    "DEEBOT N50 OMNI",
+    "ECOVACS",
+    "ロボット掃除機",
+    "全自動",
+    "水拭き",
+    "静音"
+  ],
+  "categoryC": {
+    "userSatisfaction": {
+      "score": 85,
+      "reviewCount": 4,
+      "comment": "吸引力や水拭き性能、マッピングの賢さなど清掃能力への満足度は高いです。一方で、アプリの初期設定や説明書の分かりにくさが一部のユーザー満足度を下げています。"
+    },
+    "repurchaseIntention": {
+      "percentage": 75,
+      "reviewCount": 4,
+      "comment": "清掃性能には満足しており、次も同メーカーを検討したいとの声が期待されます。ただし、アプリの使い勝手や設置性の改善がリピート購入の鍵となりそうです。"
+    },
+    "failureRate": {
+      "percentage": 25,
+      "reviewCount": 4,
+      "breakdown": {
+        "hardware": 0,
+        "software": 1,
+        "environmental": 0
+      },
+      "comment": "物理的な故障報告はありませんが、アプリの接続や設定で戸惑う声が1件見られました。これはソフトウェア起因の問題と分類され、初期設定時のハードルを示唆しています。"
+    }
+  },
+  "reliability": {
+    "score": 53.2,
+    "dataAdequacy": {
+      "score": 42,
+      "weight": 60,
+      "description": "口コミ件数が4件と非常に少なく、製品の全体的な評価を判断するには情報が不十分です。より多くのデータが集まることで、評価の信頼性が増すと考えられます。"
+    },
+    "consistency": {
+      "score": 60,
+      "weight": 30,
+      "description": "清掃性能を賞賛する声と、アプリの使い勝手に不満を持つ声が混在しており、評価の一貫性は中程度です。ユーザーのITリテラシーによって評価が分かれる傾向があります。",
+      "percentage": 60
+    },
+    "freshness": {
+      "score": 100,
+      "weight": 10,
+      "description": "分析対象の口コミはすべて直近1ヶ月以内に投稿されており、鮮度は非常に高いです。現行の製品性能やソフトウェアの挙動を正確に反映していると考えられます。"
+    }
+  },
+  "updateInfo": {
+    "lastUpdated": "2026-08-12",
+    "firmwareVersion": "",
+    "note": "2026年7月から8月にかけての口コミを分析。清掃能力は高く評価されていますが、初心者ユーザーがアプリの多機能性や設定で戸惑う傾向が見られます。"
+  },
+  "timeSaving": {
+    "vacuumMinutes": 10,
+    "mopMinutes": 9,
+    "dailyMinutes": 19,
+    "monthlyHours": 9.5,
+    "annualHours": 115.6,
+    "workDaysEquivalent": 14.4
+  },
+  "operationalCost": {
+    "daily": 75,
+    "dailyNote": "消耗品3点の交換費用を日割り計算した実質コスト。ランニングコストは比較的安価な部類に入ります。",
+    "monthly": 2292,
+    "annual": 27500,
+    "consumables": [
+      {
+        "item": "抗菌・消臭ダストパック",
+        "replacementFrequency": "2ヶ月ごと",
+        "unitCost": 2750,
+        "annualCost": 16500
+      },
+      {
+        "item": "モップパッド",
+        "replacementFrequency": "3ヶ月ごと",
+        "unitCost": 2000,
+        "annualCost": 8000
+      },
+      {
+        "item": "サイドブラシ",
+        "replacementFrequency": "6ヶ月ごと",
+        "unitCost": 1500,
+        "annualCost": 3000
+      }
+    ]
+  },
+  "performanceAnalysis": {
+    "floorCleaning": {
+      "score": 95,
+      "reviewCount": 2,
+      "positiveReviewCount": 2,
+      "comment": "吸引力と水拭き性能は高く評価されています。「ホコリや髪の毛、細かいゴミまでしっかり掃除してくれる」との声があり、日常的な床の清潔さを保つ能力は十分です。"
+    },
+    "carpetCleaning": {
+      "score": 88,
+      "reviewCount": 1,
+      "positiveReviewCount": 1,
+      "comment": "カーペットを先に吸引し、その後他の床を水拭きする賢いルート設定が好評です。濡れたモップがカーペットに触れるのを防ぐなど、細かい配慮が評価されています。"
+    },
+    "petHairRemoval": {
+      "score": 92,
+      "reviewCount": 1,
+      "positiveReviewCount": 1,
+      "comment": "「髪の毛」をしっかり掃除してくれるとの明確な言及があり、ペットの毛の吸引能力も高いと推測されます。ブラシへの毛の絡み付きが少ない設計も期待できます。"
+    },
+    "quietness": {
+      "score": 94,
+      "reviewCount": 1,
+      "positiveReviewCount": 1,
+      "comment": "「稼働音も驚くほど静か」というレビューがあり、静音性は非常に高く評価されています。在宅中や夜間の使用でも気になりにくく、マンション暮らしにも最適です。"
+    },
+    "stepClimbing": {
+      "score": 78,
+      "reviewCount": 2,
+      "positiveReviewCount": 1,
+      "comment": "障害物にハマっても激しくもがかず、スムーズに方向転換して別ルートを探す賢さが評価されています。ただし、本体が大型なため、狭い場所での取り回しには注意が必要です。"
+    },
+    "maintenance": {
+      "score": 96,
+      "reviewCount": 2,
+      "positiveReviewCount": 2,
+      "comment": "モップ洗浄後のベースステーションのトレイにゴミが全く残らない点が絶賛されています。日々のメンテナンスの手間が少なく、清潔さを保ちやすい設計が高く評価されています。"
+    },
+    "appStability": {
+      "score": 80,
+      "reviewCount": 2,
+      "positiveReviewCount": 1,
+      "comment": "直感的な案内で設定が簡単だったという声がある一方、多機能ゆえに初心者には分かりにくい部分や、言語設定が煩雑という指摘もあり、評価が分かれています。"
+    },
+    "batteryLife": {
+      "score": 80,
+      "reviewCount": 0,
+      "positiveReviewCount": 0,
+      "comment": "バッテリーに関する直接的な口コミはありませんでした。しかし、清掃性能への満足度が高いことから、一般的な家庭での使用において十分な稼働時間を持つと推測されます。"
+    }
+  },
+  "radarChartData": {
+    "labels": [
+      "フローリング",
+      "カーペット",
+      "ペット毛",
+      "静音性",
+      "段差",
+      "メンテ",
+      "アプリ",
+      "電池"
+    ],
+    "values": [
+      95,
+      88,
+      92,
+      94,
+      78,
+      96,
+      80,
+      80
+    ]
+  },
+  "dataQuality": {
+    "totalReviews": 4,
+    "sampledReviews": 4,
+    "adoptedReviews": 4,
+    "excludedReviews": 0,
+    "trustScore": 53.2,
+    "comment": "分析対象の口コミは4件と少ないですが、内容は詳細で具体的です。清掃性能とアプリの使い勝手という異なる側面からの評価が含まれ、製品の長所と短所を把握できます。"
+  },
+  "reviewKeywords": {
+    "positive": [
+      {
+        "keyword": "水拭き・拭き掃除が良い",
+        "count": 2
+      },
+      {
+        "keyword": "吸引力が高い",
+        "count": 1
+      },
+      {
+        "keyword": "満足・買ってよかった",
+        "count": 1
+      },
+      {
+        "keyword": "静かで快適",
+        "count": 1
+      },
+      {
+        "keyword": "マッピング・ルートが賢い",
+        "count": 1
+      }
+    ],
+    "negative": [
+      {
+        "keyword": "故障・不具合",
+        "count": 1
+      },
+      {
+        "keyword": "段差・家具で引っかかる",
+        "count": 1
+      }
+    ]
+  },
+  "successStrategies": [
+    {
+      "rank": 1,
+      "issue": "アプリの初期設定と操作の分かりにくさ",
+      "occurrenceRate": 25,
+      "occurrenceCount": 1,
+      "environmentalFactor": "ユーザーのITリテラシー",
+      "technicalDescription": "多機能なアプリですが、説明書での解説が少なく、音声言語とアプリ言語の設定が別など、初めてロボット掃除機を使うユーザーが戸惑いやすいUIになっています。",
+      "avoidanceStrategies": [
+        {
+          "method": "公式サイトの接続ガイドを事前に確認する",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "公式サイトには、Wi-Fiの2.4GHz帯への接続やQRコードのスキャンなど、アプリ接続の手順が図解付きで解説されており、迷わず設定を進められます。"
+        },
+        {
+          "method": "アプリ内の各メニューを一度すべて開いてみる",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalRationale": "手探りにはなりますが、清掃モードのカスタマイズやスケジュール設定など、どのような機能があるかを事前に把握することで、いざ使うときにスムーズに操作できます。"
+        }
+      ],
+      "preventionTips": "初期設定時は、本体とWi-Fiルーター、スマートフォンを2m以内に近づけて作業すると、接続が安定しやすくなります。公式アプリのチュートリアルに従うのが最も確実です。"
+    }
+  ],
+  "topComplaints": [
+    {
+      "title": "アプリの初期設定と操作が分かりにくい",
+      "percentage": 25,
+      "reviewCount": 1,
+      "description": "多機能な反面、説明書での解説が不足しており、特に言語設定などが直感的でないとの指摘があります。初心者は手探りで機能を覚える必要があり、少し戸惑うかもしれません。",
+      "solution": "公式サイトのQ&Aや接続ガイドで図解付きの手順を確認するのがおすすめです。Wi-Fiは2.4GHz帯に接続する必要があるため、事前に自宅のネットワーク設定を確認しておきましょう。"
+    },
+    {
+      "title": "設置スペースに広い場所が必要",
+      "percentage": 25,
+      "reviewCount": 1,
+      "description": "ステーションの左右に各5cm、前方に80cmの空間を確保するよう推奨されています。本体やステーションが大型なため、購入前に設置場所をメジャーで測っておくことが重要です。",
+      "solution": "公式サイトの設置ガイドラインを確認し、壁際で前方が開けた平らな床に設置場所を決めましょう。ソファの横やテレビ台の脇などが候補になります。"
+    },
+    {
+      "title": "説明書にアプリに関する情報が不足",
+      "percentage": 25,
+      "reviewCount": 1,
+      "description": "付属の説明書は、本体の設置やお手入れ方法が中心で、アプリの具体的な操作方法に関する記載が少ないです。そのため、詳細な設定はアプリを操作しながら覚える必要があります。",
+      "solution": "公式アプリ「ECOVACS HOME」内にチュートリアルや機能説明が含まれています。また、公式サイトのサポートページで詳細なネットワーク接続ガイドが公開されています。"
+    }
+  ],
+  "attributeScores": {
+    "petOwner": {
+      "overall": 93,
+      "details": [
+        {
+          "field": "ペットの毛除去",
+          "score": 92,
+          "reviewCount": 1,
+          "comment": "口コミで「髪の毛」の吸引力が高く評価されており、ペットの毛も同様にしっかり除去できる性能が期待できます。毛が絡まりにくいブラシ設計も魅力です。"
+        },
+        {
+          "field": "床掃除（水拭き）",
+          "score": 95,
+          "reviewCount": 2,
+          "comment": "吸引と水拭きを同時に行い、床を清潔に保ちます。ペットの足跡や細かな汚れも綺麗にでき、衛生的な環境を維持したい飼い主にとって心強い機能です。"
+        },
+        {
+          "field": "メンテナンス性",
+          "score": 96,
+          "reviewCount": 2,
+          "comment": "モップ洗浄後のステーションが非常に綺麗で、ゴミや毛が残らない点が絶賛されています。ペットがいる家庭で重要な、メンテナンスの手間が少ない点は大きな利点です。"
+        }
+      ]
+    },
+    "apartment": {
+      "overall": 88,
+      "details": [
+        {
+          "field": "静音性",
+          "score": 94,
+          "reviewCount": 1,
+          "comment": "「驚くほど静か」と評される高い静音性で、集合住宅での使用に最適です。隣室や階下への騒音を気にすることなく、時間帯を問わず掃除を任せられます。"
+        },
+        {
+          "field": "床掃除",
+          "score": 95,
+          "reviewCount": 2,
+          "comment": "フローリングの吸引・水拭き性能が高く評価されています。コンパクトな空間を効率よく清掃し、限られたスペースでも隅々まで綺麗にしてくれる能力があります。"
+        },
+        {
+          "field": "段差乗り越え",
+          "score": 78,
+          "reviewCount": 2,
+          "comment": "家具への衝突回避能力は高いですが、本体が大型なため、狭い通路や家具の脚周りでの動作には注意が必要です。購入前に設置スペースの確認が推奨されます。"
+        }
+      ]
+    },
+    "workingProfessional": {
+      "overall": 86,
+      "details": [
+        {
+          "field": "アプリの安定性",
+          "score": 80,
+          "reviewCount": 2,
+          "comment": "一度設定すれば安定して動作しますが、初期設定で戸惑う可能性があります。外出先からの操作など便利な機能も多いため、最初にしっかり設定することが重要です。"
+        },
+        {
+          "field": "メンテナンス性",
+          "score": 96,
+          "reviewCount": 2,
+          "comment": "全自動ステーションの性能が非常に高く、ゴミ収集からモップ洗浄・乾燥までお任せできます。忙しい日々の中で、掃除機の手入れにかける時間を大幅に削減できます。"
+        },
+        {
+          "field": "バッテリー性能",
+          "score": 80,
+          "reviewCount": 0,
+          "comment": "バッテリーに関する口コミはありませんでしたが、清掃完了までの性能は高評価です。自動充電・再開機能があるため、広い部屋でも任せられ、帰宅時には掃除が完了しています。"
+        }
+      ]
+    },
+    "familyHome": {
+      "overall": 88,
+      "details": [
+        {
+          "field": "床掃除",
+          "score": 95,
+          "reviewCount": 2,
+          "comment": "吸引力が高く、食べこぼしや砂埃など、子供がいる家庭で発生しがちなゴミもしっかり掃除します。水拭き機能で床を素足で歩けるほど清潔に保てる点も魅力です。"
+        },
+        {
+          "field": "カーペット掃除",
+          "score": 88,
+          "reviewCount": 1,
+          "comment": "カーペットとフローリングが混在するリビングでも、賢く掃除ルートを判断します。カーペットを濡らさない工夫など、多様な床材に対応できる性能を持っています。"
+        },
+        {
+          "field": "バッテリー性能",
+          "score": 80,
+          "reviewCount": 0,
+          "comment": "口コミはありませんが、自動充電と清掃再開機能により、広い家でも掃除残しがありません。複数の部屋を効率的に清掃できるため、ファミリー世帯の広い間取りにも対応可能です。"
+        }
+      ]
+    },
+    "resaleValue": null
+  },
+  "resaleValue": null,
+  "affiliate": {
+    "moshimo": "<!-- START MoshimoAffiliateEasyLink -->\r\n<script type=\"text/javascript\">\r\n(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;\r\nb[a]=b[a]||function(){arguments.currentScript=c.currentScript\r\n||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};\r\nc.getElementById(a)||(d=c.createElement(f),d.src=g,\r\nd.id=a,e=c.getElementsByTagName(\"body\")[0],e.appendChild(d))})\r\n(window,document,\"script\",\"//dn.msmstatic.com/site/cardlink/bundle.js?20220329\",\"msmaflink\");\r\nmsmaflink({\"n\":\"【クーポン利用で79,800円\\u0026P10倍！8\\/15まで】＜7\\/29新発売＞ロボット掃除機 DEEBOT N50 OMNI エコバックス 公式 ECOVACS お掃除ロボット 掃除機 自動掃除機 掃除ロボット 高性能 マッピング機能 自動ゴミ収集 水拭き お掃除 メーカー保証最大24ヶ月 ロボット掃除機 2025\",\"b\":\"\",\"t\":\"\",\"d\":\"https:\\/\\/thumbnail.image.rakuten.co.jp\",\"c_p\":\"\\/@0_mall\\/store-ecovacs-japan\\/cabinet\",\"p\":[\"\\/campaign\\/260730\\/dlx88-0204_v02.jpg\",\"\\/review\\/coupon\\/2602_flick.jpg\",\"\\/salesno1.jpg\"],\"u\":{\"u\":\"https:\\/\\/item.rakuten.co.jp\\/store-ecovacs-japan\\/dlx88-0204\\/\",\"t\":\"rakuten\",\"r_v\":\"\"},\"v\":\"2.1\",\"b_l\":[{\"id\":1,\"u_tx\":\"楽天市場で見る\",\"u_bc\":\"#f76956\",\"u_url\":\"https:\\/\\/item.rakuten.co.jp\\/store-ecovacs-japan\\/dlx88-0204\\/\",\"a_id\":5483003,\"p_id\":54,\"pl_id\":27059,\"pc_id\":54,\"s_n\":\"rakuten\",\"u_so\":1},{\"id\":2,\"u_tx\":\"Yahoo!ショッピングで見る\",\"u_bc\":\"#66a7ff\",\"u_url\":\"https:\\/\\/shopping.yahoo.co.jp\\/search?first=1\\u0026p=%E3%80%90%E3%82%AF%E3%83%BC%E3%83%9D%E3%83%B3%E5%88%A9%E7%94%A8%E3%81%A779%2C800%E5%86%86%26P10%E5%80%8D%EF%BC%818%2F15%E3%81%BE%E3%81%A7%E3%80%91%EF%BC%9C7%2F29%E6%96%B0%E7%99%BA%E5%A3%B2%EF%BC%9E%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%20DEEBOT%20N50%20OMNI%20%E3%82%A8%E3%82%B3%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%20%E5%85%AC%E5%BC%8F%20ECOVACS%20%E3%81%8A%E6%8E%83%E9%99%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%20%E6%8E%83%E9%99%A4%E6%A9%9F%20%E8%87%AA%E5%8B%95%E6%8E%83%E9%99%A4%E6%A9%9F%20%E6%8E%83%E9%99%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%20%E9%AB%98%E6%80%A7%E8%83%BD%20%E3%83%9E%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0%E6%A9%9F%E8%83%BD%20%E8%87%AA%E5%8B%95%E3%82%B4%E3%83%9F%E5%8F%8E%E9%9B%86%20%E6%B0%B4%E6%8B%AD%E3%81%8D%20%E3%81%8A%E6%8E%83%E9%99%A4%20%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E4%BF%9D%E8%A8%BC%E6%9C%80%E5%A4%A724%E3%83%B6%E6%9C%88%20%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%202025\",\"a_id\":5483010,\"p_id\":1225,\"pl_id\":27061,\"pc_id\":1925,\"s_n\":\"yahoo\",\"u_so\":2},{\"id\":3,\"u_tx\":\"Amazonで見る\",\"u_bc\":\"#ffcf0f\",\"u_url\":\"https:\\/\\/www.amazon.co.jp\\/s\\/ref=nb_sb_noss_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A\\u0026url=search-alias%3Daps\\u0026field-keywords=%E3%80%90%E3%82%AF%E3%83%BC%E3%83%9D%E3%83%B3%E5%88%A9%E7%94%A8%E3%81%A779%2C800%E5%86%86%26P10%E5%80%8D%EF%BC%818%2F15%E3%81%BE%E3%81%A7%E3%80%91%EF%BC%9C7%2F29%E6%96%B0%E7%99%BA%E5%A3%B2%EF%BC%9E%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%20DEEBOT%20N50%20OMNI%20%E3%82%A8%E3%82%B3%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%20%E5%85%AC%E5%BC%8F%20ECOVACS%20%E3%81%8A%E6%8E%83%E9%99%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%20%E6%8E%83%E9%99%A4%E6%A9%9F%20%E8%87%AA%E5%8B%95%E6%8E%83%E9%99%A4%E6%A9%9F%20%E6%8E%83%E9%99%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%20%E9%AB%98%E6%80%A7%E8%83%BD%20%E3%83%9E%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0%E6%A9%9F%E8%83%BD%20%E8%87%AA%E5%8B%95%E3%82%B4%E3%83%9F%E5%8F%8E%E9%9B%86%20%E6%B0%B4%E6%8B%AD%E3%81%8D%20%E3%81%8A%E6%8E%83%E9%99%A4%20%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E4%BF%9D%E8%A8%BC%E6%9C%80%E5%A4%A724%E3%83%B6%E6%9C%88%20%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%202025\",\"a_id\":5483011,\"p_id\":170,\"pl_id\":27060,\"pc_id\":185,\"s_n\":\"amazon\",\"u_so\":3}],\"eid\":\"Hv6pk\",\"s\":\"l\"});\r\n</script>\r\n<div id=\"msmaflink-Hv6pk\">リンク</div>\r\n<!-- MoshimoAffiliateEasyLink END -->",
+    "direct": "",
+    "hpPublish": false
+  }
+}

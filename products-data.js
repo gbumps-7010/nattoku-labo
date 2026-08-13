@@ -2387,7 +2387,228 @@ const productsData = [
         },
         amazonUrl: 'https://www.amazon.co.jp/s?k=Roborock+Q10V',
         rakutenUrl: 'https://search.rakuten.co.jp/search/mall/Roborock+Q10V/'
+    },
+    {
+        id: 'd20-ultra',
+        name: 'D20 Ultra',
+        manufacturer: 'Dreame',
+        price: 49800,
+        reviewCount: 8,
+        totalReviewCount: 8,
+        image: 'https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/20250815185610_1.jpg',
+        badges: ['新規追加', '詳細分析対応', 'JSON自動追加'],
+        specs: {
+            suction: 98,
+            mopping: 90,
+            noise: 95,
+            obstacle: 88,
+            app: 80,
+            maintenance: 96
+        },
+        amazonUrl: 'https://nattoku-labo.com/products/d20-ultra',
+        rakutenUrl: 'https://nattoku-labo.com/products/d20-ultra'
+    },
+    {
+        id: 'f20',
+        name: 'F20',
+        manufacturer: 'Dreame',
+        price: 39800,
+        reviewCount: 7,
+        totalReviewCount: 7,
+        image: 'https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/13111094/imgrc0155930361.jpg',
+        badges: ['新規追加', '詳細分析対応', 'JSON自動追加'],
+        specs: {
+            suction: 85,
+            mopping: 60,
+            noise: 70,
+            obstacle: 70,
+            app: 88,
+            maintenance: 80
+        },
+        amazonUrl: 'https://nattoku-labo.com/products/f20',
+        rakutenUrl: 'https://nattoku-labo.com/products/f20'
+    },
+    {
+        id: 'f20-plus',
+        name: 'F20 Plus',
+        manufacturer: 'Dreame',
+        price: 59800,
+        reviewCount: 11,
+        totalReviewCount: 11,
+        image: 'https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/13111094/imgrc0155930361.jpg',
+        badges: ['新規追加', '詳細分析対応', 'JSON自動追加'],
+        specs: {
+            suction: 95,
+            mopping: 40,
+            noise: 75,
+            obstacle: 60,
+            app: 92,
+            maintenance: 90
+        },
+        amazonUrl: 'https://nattoku-labo.com/products/f20-plus',
+        rakutenUrl: 'https://nattoku-labo.com/products/f20-plus'
+    },
+    {
+        id: 'deebot-mini-2',
+        name: 'DEEBOT mini 2',
+        manufacturer: 'ECOVACS',
+        price: 69800,
+        reviewCount: 36,
+        totalReviewCount: 36,
+        image: 'https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260804/djx28-01ee.jpg',
+        badges: ['新規追加', '詳細分析対応', 'JSON自動追加'],
+        specs: {
+            suction: 96,
+            mopping: 78,
+            noise: 92,
+            obstacle: 55,
+            app: 85,
+            maintenance: 88
+        },
+        amazonUrl: 'https://nattoku-labo.com/products/deebot-mini-2',
+        rakutenUrl: 'https://nattoku-labo.com/products/deebot-mini-2'
+    },
+    {
+        id: 'deebot-n50-omni',
+        name: 'DEEBOT N50 OMNI',
+        manufacturer: 'ECOVACS',
+        price: 79800,
+        reviewCount: 4,
+        totalReviewCount: 4,
+        image: 'https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260730/dlx88-0204_v02.jpg',
+        badges: ['新規追加', '詳細分析対応', 'JSON自動追加'],
+        specs: {
+            suction: 95,
+            mopping: 88,
+            noise: 94,
+            obstacle: 78,
+            app: 80,
+            maintenance: 96
+        },
+        amazonUrl: 'https://nattoku-labo.com/products/deebot-n50-omni',
+        rakutenUrl: 'https://nattoku-labo.com/products/deebot-n50-omni'
+    },
+    {
+        id: 'deebot-t80s-omni',
+        name: 'DEEBOT T80S OMNI',
+        manufacturer: 'ECOVACS',
+        price: 139800,
+        reviewCount: 21,
+        totalReviewCount: 21,
+        image: 'https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260804/dex62-0402.jpg',
+        badges: ['新規追加', '詳細分析対応', 'JSON自動追加'],
+        specs: {
+            suction: 96,
+            mopping: 75,
+            noise: 88,
+            obstacle: 40,
+            app: 75,
+            maintenance: 78
+        },
+        amazonUrl: 'https://nattoku-labo.com/products/deebot-t80s-omni',
+        rakutenUrl: 'https://nattoku-labo.com/products/deebot-t80s-omni'
+    },
+    {
+        id: 'saros-20',
+        name: 'Saros 20',
+        manufacturer: 'Roborock',
+        price: 249800,
+        reviewCount: 41,
+        totalReviewCount: 41,
+        image: 'https://thumbnail.image.rakuten.co.jp/@0_mall/roborockjapandirect/cabinet/products/12574614/imgrc0134813006.jpg',
+        badges: ['新規追加', '詳細分析対応', 'JSON自動追加'],
+        specs: {
+            suction: 98,
+            mopping: 94,
+            noise: 88,
+            obstacle: 92,
+            app: 91,
+            maintenance: 95
+        },
+        amazonUrl: 'https://nattoku-labo.com/products/saros-20',
+        rakutenUrl: 'https://nattoku-labo.com/products/saros-20'
+    },
+    {
+        id: 'eufy-robot-vacuum-omni-s2',
+        name: 'Eufy Robot Vacuum Omni S2',
+        manufacturer: 'Anker',
+        price: 199900,
+        reviewCount: 24,
+        totalReviewCount: 24,
+        image: 'https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/deal/202608m1/imgrc0103966655.jpg',
+        badges: ['新規追加', '詳細分析対応', 'JSON自動追加'],
+        specs: {
+            suction: 98,
+            mopping: 92,
+            noise: 85,
+            obstacle: 88,
+            app: 94,
+            maintenance: 98
+        },
+        amazonUrl: 'https://nattoku-labo.com/products/eufy-robot-vacuum-omni-s2',
+        rakutenUrl: 'https://nattoku-labo.com/products/eufy-robot-vacuum-omni-s2'
+    },
+    {
+        id: 'roomba-plus-575-combo-autowash',
+        name: 'Roomba Plus 575 Combo + AutoWash',
+        manufacturer: 'iRobot',
+        price: 169800,
+        reviewCount: 129,
+        totalReviewCount: 129,
+        image: 'https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/03016688/20260219_review_2nen/575_aw_2nen.jpg',
+        badges: ['新規追加', '詳細分析対応', 'JSON自動追加'],
+        specs: {
+            suction: 96,
+            mopping: 82,
+            noise: 88,
+            obstacle: 78,
+            app: 65,
+            maintenance: 85
+        },
+        amazonUrl: 'https://nattoku-labo.com/products/roomba-plus-575-combo-autowash',
+        rakutenUrl: 'https://nattoku-labo.com/products/roomba-plus-575-combo-autowash'
+    },
+    {
+        id: 'k20-pro',
+        name: 'マルチタスク家庭用ロボットK20+ Pro',
+        manufacturer: 'SwitchBot',
+        price: 79840,
+        reviewCount: 1,
+        totalReviewCount: 1,
+        image: 'https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/09377790/k20/head.jpg',
+        badges: ['新規追加', '詳細分析対応', 'JSON自動追加'],
+        specs: {
+            suction: 80,
+            mopping: 80,
+            noise: 80,
+            obstacle: 80,
+            app: 60,
+            maintenance: 60
+        },
+        amazonUrl: 'https://nattoku-labo.com/products/k20-pro',
+        rakutenUrl: 'https://nattoku-labo.com/products/k20-pro'
+    },
+    {
+        id: 'k11-pro',
+        name: 'ロボット掃除機 K11+ Pro',
+        manufacturer: 'SwitchBot',
+        price: 49800,
+        reviewCount: 26,
+        totalReviewCount: 26,
+        image: 'https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/13479056/mainbg2.jpg',
+        badges: ['新規追加', '詳細分析対応', 'JSON自動追加'],
+        specs: {
+            suction: 75,
+            mopping: 92,
+            noise: 88,
+            obstacle: 68,
+            app: 55,
+            maintenance: 89
+        },
+        amazonUrl: 'https://nattoku-labo.com/products/k11-pro',
+        rakutenUrl: 'https://nattoku-labo.com/products/k11-pro'
     }
+
 ];
 
 // フィルター用のマスターデータ

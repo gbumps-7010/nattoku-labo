@@ -1,0 +1,394 @@
+{
+  "productId": "eufy-robot-vacuum-omni-s2",
+  "productName": "Eufy Robot Vacuum Omni S2",
+  "manufacturer": "Anker",
+  "modelNumber": "T2081511",
+  "imageUrl": "https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/deal/202608m1/imgrc0103966655.jpg",
+  "overallRating": 4.61,
+  "totalReviews": 24,
+  "price": 199900,
+  "reliabilityScore": 57.4,
+  "asin": "",
+  "metaTitle": "Eufy Robot Vacuum Omni S2 詳細分析 | 全自動で手間いらず、最高の家事パートナー",
+  "metaDescription": "Eufy Robot Vacuum Omni S2の23件の口コミを徹底解析。30,000Paの強力吸引や賢いマッピング性能、全自動ステーションの実力を公開します。",
+  "keywords": [
+    "Eufy Robot Vacuum Omni S2",
+    "ロボット掃除機",
+    "Anker",
+    "全自動",
+    "水拭き",
+    "ペットの毛"
+  ],
+  "categoryC": {
+    "userSatisfaction": {
+      "score": 96,
+      "reviewCount": 23,
+      "comment": "多くの利用者が「最高の投資」「買ってよかった」と高く評価。特に全自動ステーションによるメンテナンスの手間削減と、強力な清掃性能が満足度に直結。家事の概念が変わるほどの体験を提供するとの声が多数です。"
+    },
+    "repurchaseIntention": {
+      "percentage": 91,
+      "reviewCount": 23,
+      "comment": "「ユーフィ命」「3台目の購入」といった熱心なリピーターからの支持が厚い。圧倒的な性能進化とデザイン性から、他のブランドから乗り換えて満足する声も多く、高い再購入意向がうかがえます。"
+    },
+    "failureRate": {
+      "percentage": 4,
+      "reviewCount": 23,
+      "breakdown": {
+        "hardware": 2,
+        "software": 1,
+        "environmental": 1
+      },
+      "comment": "致命的な故障報告はほぼないものの、段差での引っかかりや家具への衝突といった軽微な動作不良が稀に発生。ただし、これらはアプリ設定や環境整備で改善可能な範囲であり、製品の信頼性は高いと評価できます。"
+    }
+  },
+  "reliability": {
+    "score": 57.4,
+    "dataAdequacy": {
+      "score": 49,
+      "weight": 60,
+      "description": "口コミ総数は23件と少なめですが、各レビューの内容が詳細で具体的なため、製品の長所と短所を把握するには十分な情報量です。"
+    },
+    "consistency": {
+      "score": 60,
+      "weight": 30,
+      "description": "Amazonと楽天の評価はともに高く、大半のユーザーが清掃性能と自動化機能に満足。一部で動作の不安定さを指摘する声もあるが、全体的な評価傾向は一致しており、信頼できる内容です。",
+      "percentage": 60
+    },
+    "freshness": {
+      "score": 100,
+      "weight": 10,
+      "description": "レビューの大半が発売後3ヶ月以内に集中しており、最新のソフトウェアやハードウェアに基づいた評価が中心。初期ロットのユーザー体験を反映した鮮度の高い情報源となっています。"
+    }
+  },
+  "updateInfo": {
+    "lastUpdated": "2026-08-12",
+    "firmwareVersion": "",
+    "note": "2026年5月から7月にかけてのユーザーレビューを基に分析。全体的に清掃性能と全自動機能への高評価が目立ちますが、一部で段差乗り越えや障害物回避に関する課題も指摘されています。"
+  },
+  "timeSaving": {
+    "vacuumMinutes": 10,
+    "mopMinutes": 9,
+    "dailyMinutes": 19,
+    "monthlyHours": 9.5,
+    "annualHours": 115.6,
+    "workDaysEquivalent": 14.4
+  },
+  "operationalCost": {
+    "daily": 57,
+    "dailyNote": "消耗品と洗浄液の実質的な日割りコスト",
+    "monthly": 1742,
+    "annual": 20910,
+    "consumables": [
+      {
+        "item": "交換用ダストバッグ (6個)",
+        "replacementFrequency": "2ヶ月ごと (年間6個)",
+        "unitCost": 4990,
+        "annualCost": 4990
+      },
+      {
+        "item": "交換用ローラーモップ (2個)",
+        "replacementFrequency": "3ヶ月ごと (年間4個)",
+        "unitCost": 3990,
+        "annualCost": 7980
+      },
+      {
+        "item": "交換用回転ブラシ",
+        "replacementFrequency": "6ヶ月ごと (年間2個)",
+        "unitCost": 1990,
+        "annualCost": 3980
+      },
+      {
+        "item": "床用洗浄液",
+        "replacementFrequency": "3ヶ月ごと (年間4本)",
+        "unitCost": 990,
+        "annualCost": 3960
+      }
+    ]
+  },
+  "performanceAnalysis": {
+    "floorCleaning": {
+      "score": 98,
+      "reviewCount": 15,
+      "positiveReviewCount": 15,
+      "comment": "30,000Paの圧倒的な吸引力と加圧式ローラーモップが高評価。フローリングの微細なホコリや皮脂汚れまで除去し、「床がサラサラになる」との声が多数。無垢床でも水量を調整すれば安心して使用できます。"
+    },
+    "carpetCleaning": {
+      "score": 92,
+      "reviewCount": 9,
+      "positiveReviewCount": 8,
+      "comment": "毛足の長いラグでも奥のゴミまで強力に吸引する性能が評価されています。モップを自動で5cm持ち上げるリフトアップ機能により、カーペットを濡らす心配がない点も多くのユーザーに支持されています。"
+    },
+    "petHairRemoval": {
+      "score": 94,
+      "reviewCount": 8,
+      "positiveReviewCount": 8,
+      "comment": "犬や猫の毛で悩む家庭から「助かっている」と絶賛の声。強力な吸引力と毛が絡まりにくいブラシ構造で、ペットの抜け毛を効率的に除去。アレルギー対策としても非常に有効な機能です。"
+    },
+    "quietness": {
+      "score": 85,
+      "reviewCount": 5,
+      "positiveReviewCount": 4,
+      "comment": "フローリングでの通常清掃時は「非常に静か」と高評価。一方で、カーペット上で吸引力が上がると相応の音が発生します。ステーションのゴミ収集音は大きいですが短時間で終わるため、許容範囲との意見が多いです。"
+    },
+    "stepClimbing": {
+      "score": 88,
+      "reviewCount": 11,
+      "positiveReviewCount": 8,
+      "comment": "最大4.2cmの段差に対応し、厚手のラグや部屋の敷居もスムーズに乗り越える性能が多くのレビューで称賛されています。ただし、家具の脚や特定の形状の段差で稀に引っかかることがあるとの指摘も見られます。"
+    },
+    "maintenance": {
+      "score": 98,
+      "reviewCount": 12,
+      "positiveReviewCount": 12,
+      "comment": "ゴミ収集からモップの温水洗浄・乾燥、洗剤自動投入まで全てをこなす全自動ステーションが「手間いらず」と絶賛されています。日々の作業は給排水のみで、メンテナンスの負担が劇的に軽減されます。"
+    },
+    "appStability": {
+      "score": 94,
+      "reviewCount": 13,
+      "positiveReviewCount": 12,
+      "comment": "マッピングの速さと精度、直感的な操作性が高く評価されています。使い始めはルートが非効率に感じられても、学習を重ねることで最適化される点が優秀。アプリ自体の動作も安定しており、ストレスなく使えます。"
+    },
+    "batteryLife": {
+      "score": 88,
+      "reviewCount": 2,
+      "positiveReviewCount": 2,
+      "comment": "バッテリーに関する不満はほとんど見られず、広い間取りでも一度の充電で清掃を完了できる性能を持っています。言及数は少ないものの、基本的な持続時間についてはユーザーの期待を満たしているようです。"
+    }
+  },
+  "radarChartData": {
+    "labels": [
+      "フローリング",
+      "カーペット",
+      "ペット毛",
+      "静音性",
+      "段差",
+      "メンテ",
+      "アプリ",
+      "電池"
+    ],
+    "values": [
+      98,
+      92,
+      94,
+      85,
+      88,
+      98,
+      94,
+      88
+    ]
+  },
+  "dataQuality": {
+    "totalReviews": 24,
+    "sampledReviews": 23,
+    "adoptedReviews": 23,
+    "excludedReviews": 1,
+    "trustScore": 57.4,
+    "comment": "ユーザー提供の23件の口コミを全て分析。各レビューが具体的な使用感に言及しており、製品の性能を多角的に評価するための信頼性の高いデータとなっています。ただし、サンプル総数が少ない点は考慮が必要です。"
+  },
+  "reviewKeywords": {
+    "positive": [
+      {
+        "keyword": "マッピング・ルートが賢い",
+        "count": 10
+      },
+      {
+        "keyword": "水拭き・拭き掃除が良い",
+        "count": 10
+      },
+      {
+        "keyword": "吸引力が高い",
+        "count": 9
+      },
+      {
+        "keyword": "満足・買ってよかった",
+        "count": 6
+      },
+      {
+        "keyword": "使いやすい・便利",
+        "count": 4
+      },
+      {
+        "keyword": "静かで快適",
+        "count": 4
+      },
+      {
+        "keyword": "家事が楽になった",
+        "count": 3
+      },
+      {
+        "keyword": "綺麗になる",
+        "count": 2
+      },
+      {
+        "keyword": "故障・トラブルが少ない",
+        "count": 2
+      },
+      {
+        "keyword": "床がサラサラ・ピカピカ",
+        "count": 2
+      }
+    ],
+    "negative": [
+      {
+        "keyword": "段差・家具で引っかかる",
+        "count": 3
+      },
+      {
+        "keyword": "止まってしまう",
+        "count": 1
+      },
+      {
+        "keyword": "コードを巻き込む",
+        "count": 1
+      }
+    ]
+  },
+  "successStrategies": [
+    {
+      "rank": 1,
+      "issue": "家具の脚や敷居での引っかかり・立ち往生",
+      "occurrenceRate": 13,
+      "occurrenceCount": 3,
+      "environmentalFactor": "床に物が多い、複雑な形状の家具、2.5cm以上の急な段差",
+      "technicalDescription": "AIカメラと3Dセンサーは多くの障害物を認識しますが、細い家具の脚や特定の角度の段差、暗い色の敷物などを誤認識し、乗り上げようとして停止することがあります。特に学習初期に発生しやすい傾向です。",
+      "avoidanceStrategies": [
+        {
+          "method": "アプリで進入禁止エリア・仮想の壁を設定する",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "マップ上でロボットが頻繁に問題を起こす箇所を予め指定することで、物理的にそのエリアに進入しなくなり、立ち往生を根本的に防ぎます。最も確実で効果的な公式推奨の対策です。"
+        },
+        {
+          "method": "床になるべく物を置かず、ケーブル類をまとめる",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalRationale": "障害物が少ないほどAIの判断が容易になり、清掃ルートが最適化されます。特に電源コードや薄手の敷物はセンサーの誤認識を招きやすいため、事前に片付けることでスムーズな走行を促します。"
+        }
+      ],
+      "preventionTips": "最初の数回はロボットの動きを観察し、どこで問題が起きやすいか把握しましょう。問題箇所を進入禁止エリアに設定するだけで、その後の清掃成功率が大幅に向上します。家具の配置変更時もマップの再調整が有効です。"
+    }
+  ],
+  "topComplaints": [
+    {
+      "title": "ステーションのサイズが大きく設置場所に困る",
+      "percentage": 13,
+      "reviewCount": 3,
+      "description": "全自動で高機能な反面、ステーションの高さが約67cmあり、汚水タンクの取り出しには更に上部スペースが必要です。購入前に設置場所とコンセント位置を確保しないと、圧迫感が出てしまうとの意見があります。",
+      "solution": "購入前にメジャーで設置スペース（幅39cm×奥行48cm×高さ70cm以上推奨）を必ず確認しましょう。生活動線上を避け、パントリーや階段下など、目立たない場所に設置するのがおすすめです。"
+    },
+    {
+      "title": "賢いはずが、家具や壁にぶつかることがある",
+      "percentage": 9,
+      "reviewCount": 2,
+      "description": "高精度な障害物回避機能を持つものの、暗い色の家具やガラス製のドア、細い椅子の脚など、センサーが認識しにくい物体には衝突することがあります。特に暗い環境では精度が落ちる場合があるとの指摘です。",
+      "solution": "メーカー公式サイトでは、黒色や鏡面の家具、透明なパーティション等はセンサーが認識しにくい場合があると案内されています。アプリで該当箇所周辺を進入禁止エリアに設定することで、衝突を未然に防げます。"
+    },
+    {
+      "title": "段差や敷居で止まってしまうことがある",
+      "percentage": 9,
+      "reviewCount": 2,
+      "description": "高い段差乗り越え性能を誇る一方、特定の形状の敷居や家具の脚、厚手のラグの端などでタイヤが空転し、立ち往生することが稀にあります。バンパーが引っかかるとアプリに通知が来て、手動での救出が必要です。",
+      "solution": "Ankerのサポートページでは、頻繁に止まる場所にスロープを設置するか、アプリの進入禁止エリア機能を活用することが推奨されています。また、本体の車輪やセンサーを定期的に清掃することも効果的です。"
+    }
+  ],
+  "attributeScores": {
+    "petOwner": {
+      "overall": 95,
+      "details": [
+        {
+          "field": "ペットの毛吸引",
+          "score": 94,
+          "reviewCount": 8,
+          "comment": "30,000Paの強力な吸引力で、カーペットに絡みついたペットの毛もしっかり除去。毛が絡まりにくいブラシも搭載し、ペットがいる家庭の掃除負担を大幅に軽減します。"
+        },
+        {
+          "field": "床の除菌・水拭き",
+          "score": 98,
+          "reviewCount": 15,
+          "comment": "オゾン水でモップを洗浄しながら水拭きするため、ペットの足跡や皮脂汚れをきれいに拭き取り、床を衛生的に保ちます。掃除後の床のサラサラ感が好評です。"
+        },
+        {
+          "field": "メンテナンス性",
+          "score": 98,
+          "reviewCount": 12,
+          "comment": "毛が絡んだブラシの手入れやゴミ捨ての手間から解放される全自動ステーションが非常に便利。ペットの毛が多くても、日々のメンテナンスは給排水だけで済みます。"
+        }
+      ]
+    },
+    "apartment": {
+      "overall": 88,
+      "details": [
+        {
+          "field": "静音性",
+          "score": 85,
+          "reviewCount": 5,
+          "comment": "フローリングでの動作音は非常に静かで、在宅中や夜間の使用でも気になりにくいレベルです。集合住宅でも隣室への騒音を気にせず、気兼ねなく掃除を任せられます。"
+        },
+        {
+          "field": "段差乗り越え",
+          "score": 88,
+          "reviewCount": 11,
+          "comment": "部屋間の敷居やラグなど、マンションにありがちな段差もスムーズに乗り越えます。各部屋を隈なく掃除できるため、人間が介在する必要がほとんどありません。"
+        },
+        {
+          "field": "省スペース性",
+          "score": 75,
+          "reviewCount": 3,
+          "comment": "本体はコンパクトですが、ステーションは高さがあるため設置場所を選びます。限られたスペースに置く場合は、購入前にサイズをしっかり確認することが重要です。"
+        }
+      ]
+    },
+    "workingProfessional": {
+      "overall": 95,
+      "details": [
+        {
+          "field": "メンテナンスの容易さ",
+          "score": 98,
+          "reviewCount": 12,
+          "comment": "ゴミ収集からモップ洗浄・乾燥まで全て自動。忙しい日々の中で掃除機のメンテナンスに時間を割く必要がなく、帰宅すれば常に綺麗な床が待っています。"
+        },
+        {
+          "field": "アプリの安定性と機能性",
+          "score": 94,
+          "reviewCount": 13,
+          "comment": "外出先からでもスマホアプリで簡単に操作でき、掃除スケジュールも細かく設定可能。安定した動作と賢いマッピングで、安心して掃除を任せられます。"
+        },
+        {
+          "field": "時間創出効果",
+          "score": 95,
+          "reviewCount": 23,
+          "comment": "毎日の床掃除から完全に解放されることで、自分の時間や家族と過ごす時間を創出できます。「家事の概念が変わる」と評されるほどの時短効果は、多忙な人に最適です。"
+        }
+      ]
+    },
+    "familyHome": {
+      "overall": 93,
+      "details": [
+        {
+          "field": "広範囲の清掃能力",
+          "score": 98,
+          "reviewCount": 15,
+          "comment": "子供の食べこぼしや泥汚れ、無垢床の皮脂汚れまで、吸引と水拭きで徹底的に綺麗にします。バッテリー性能も高く、広いリビングや複数の部屋も一度で掃除可能です。"
+        },
+        {
+          "field": "障害物回避性能",
+          "score": 90,
+          "reviewCount": 13,
+          "comment": "床に散らばりがちな子供のおもちゃやスリッパなどをAIカメラが賢く認識して回避。コード類の巻き込みも少なく、掃除のたびに床を片付けるストレスが軽減されます。"
+        },
+        {
+          "field": "カーペット対応力",
+          "score": 92,
+          "reviewCount": 9,
+          "comment": "リビングのラグや子供部屋のカーペットも、モップを自動で持ち上げて濡らさずに掃除。強力な吸引力で、アレルゲンの元となるハウスダストもしっかり除去します。"
+        }
+      ]
+    }
+  },
+  "resaleValue": null,
+  "affiliate": {
+    "moshimo": "<!-- START MoshimoAffiliateEasyLink -->\r\n<script type=\"text/javascript\">\r\n(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;\r\nb[a]=b[a]||function(){arguments.currentScript=c.currentScript\r\n||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};\r\nc.getElementById(a)||(d=c.createElement(f),d.src=g,\r\nd.id=a,e=c.getElementsByTagName(\"body\")[0],e.appendChild(d))})\r\n(window,document,\"script\",\"//dn.msmstatic.com/site/cardlink/bundle.js?20220329\",\"msmaflink\");\r\nmsmaflink({\"n\":\"【8\\/11 12時~クーポン利用で199,900円\\u0026P10倍！】Anker Eufy (ユーフィ) Robot Vacuum Omni S2 (ロボット掃除機) 【26年5月最新\\/伸縮式ローラーモップ\\/全自動クリーニングステーション\\/自動ゴミ収集\\/モップ温水洗浄・温風乾燥\\/30000Pa 吸引力\\/サイクロン式\\/モップリフト】\",\"b\":\"\",\"t\":\"\",\"d\":\"https:\\/\\/thumbnail.image.rakuten.co.jp\",\"c_p\":\"\\/@0_mall\\/anker\\/cabinet\",\"p\":[\"\\/deal\\/202608m1\\/imgrc0103966655.jpg\",\"\\/listing\\/product\\/t2081\\/t2081_sub_v2_1.jpg\",\"\\/listing\\/product\\/t2081\\/t2081_sub_v2_2.jpg\"],\"u\":{\"u\":\"https:\\/\\/item.rakuten.co.jp\\/anker\\/t2081\\/\",\"t\":\"rakuten\",\"r_v\":\"\"},\"v\":\"2.1\",\"b_l\":[{\"id\":1,\"u_tx\":\"楽天市場で見る\",\"u_bc\":\"#f76956\",\"u_url\":\"https:\\/\\/item.rakuten.co.jp\\/anker\\/t2081\\/\",\"a_id\":5483003,\"p_id\":54,\"pl_id\":27059,\"pc_id\":54,\"s_n\":\"rakuten\",\"u_so\":1},{\"id\":2,\"u_tx\":\"Yahoo!ショッピングで見る\",\"u_bc\":\"#66a7ff\",\"u_url\":\"https:\\/\\/shopping.yahoo.co.jp\\/search?first=1\\u0026p=%E3%80%908%2F11%2012%E6%99%82~%E3%82%AF%E3%83%BC%E3%83%9D%E3%83%B3%E5%88%A9%E7%94%A8%E3%81%A7199%2C900%E5%86%86%26P10%E5%80%8D%EF%BC%81%E3%80%91Anker%20Eufy%20(%E3%83%A6%E3%83%BC%E3%83%95%E3%82%A3)%20Robot%20Vacuum%20Omni%20S2%20(%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F)%20%E3%80%9026%E5%B9%B45%E6%9C%88%E6%9C%80%E6%96%B0%2F%E4%BC%B8%E7%B8%AE%E5%BC%8F%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC%E3%83%A2%E3%83%83%E3%83%97%2F%E5%85%A8%E8%87%AA%E5%8B%95%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%2F%E8%87%AA%E5%8B%95%E3%82%B4%E3%83%9F%E5%8F%8E%E9%9B%86%2F%E3%83%A2%E3%83%83%E3%83%97%E6%B8%A9%E6%B0%B4%E6%B4%97%E6%B5%84%E3%83%BB%E6%B8%A9%E9%A2%A8%E4%B9%BE%E7%87%A5%2F30000Pa%20%E5%90%B8%E5%BC%95%E5%8A%9B%2F%E3%82%B5%E3%82%A4%E3%82%AF%E3%83%AD%E3%83%B3%E5%BC%8F%2F%E3%83%A2%E3%83%83%E3%83%97%E3%83%AA%E3%83%95%E3%83%88%E3%80%91\",\"a_id\":5483010,\"p_id\":1225,\"pl_id\":27061,\"pc_id\":1925,\"s_n\":\"yahoo\",\"u_so\":2},{\"id\":3,\"u_tx\":\"Amazonで見る\",\"u_bc\":\"#ffcf0f\",\"u_url\":\"https:\\/\\/www.amazon.co.jp\\/s\\/ref=nb_sb_noss_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A\\u0026url=search-alias%3Daps\\u0026field-keywords=%E3%80%908%2F11%2012%E6%99%82~%E3%82%AF%E3%83%BC%E3%83%9D%E3%83%B3%E5%88%A9%E7%94%A8%E3%81%A7199%2C900%E5%86%86%26P10%E5%80%8D%EF%BC%81%E3%80%91Anker%20Eufy%20(%E3%83%A6%E3%83%BC%E3%83%95%E3%82%A3)%20Robot%20Vacuum%20Omni%20S2%20(%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F)%20%E3%80%9026%E5%B9%B45%E6%9C%88%E6%9C%80%E6%96%B0%2F%E4%BC%B8%E7%B8%AE%E5%BC%8F%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC%E3%83%A2%E3%83%83%E3%83%97%2F%E5%85%A8%E8%87%AA%E5%8B%95%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%2F%E8%87%AA%E5%8B%95%E3%82%B4%E3%83%9F%E5%8F%8E%E9%9B%86%2F%E3%83%A2%E3%83%83%E3%83%97%E6%B8%A9%E6%B0%B4%E6%B4%97%E6%B5%84%E3%83%BB%E6%B8%A9%E9%A2%A8%E4%B9%BE%E7%87%A5%2F30000Pa%20%E5%90%B8%E5%BC%95%E5%8A%9B%2F%E3%82%B5%E3%82%A4%E3%82%AF%E3%83%AD%E3%83%B3%E5%BC%8F%2F%E3%83%A2%E3%83%83%E3%83%97%E3%83%AA%E3%83%95%E3%83%88%E3%80%91\",\"a_id\":5483011,\"p_id\":170,\"pl_id\":27060,\"pc_id\":185,\"s_n\":\"amazon\",\"u_so\":3}],\"eid\":\"ncFHO\",\"s\":\"l\"});\r\n</script>\r\n<div id=\"msmaflink-ncFHO\">リンク</div>\r\n<!-- MoshimoAffiliateEasyLink END -->",
+    "direct": "<a href=\"//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3766176&pid=892603477&vc_url=https%3A%2F%2Fwww.ankerjapan.com%2Fproducts%2Ft2081%3F_pos%3D1%26_fid%3D2bc356268%26_ss%3Dc%3Fvariant%3D46436416946337\" rel=\"nofollow\"><img src=\"//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3766176&pid=892603477\" height=\"1\" width=\"0\" border=\"0\"><img src='https://www.ankerjapan.com/cdn/shop/files/T2081511.png?v=1778827389&width=1200' border='0' /></a>",
+    "hpPublish": false
+  }
+}

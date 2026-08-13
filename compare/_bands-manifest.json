@@ -10,10 +10,13 @@
       "deebot-n30",
       "q10v",
       "roomba-mini-slim-slimcharge",
+      "f20",
       "eufy-robovac-g30-hybrid",
-      "roomba-mini-autoempty"
+      "roomba-mini-autoempty",
+      "k11-pro",
+      "d20-ultra"
     ],
-    "count": 9
+    "count": 12
   },
   {
     "label": "5〜7万円",
@@ -23,21 +26,25 @@
       "l10s-ultra-gen-2",
       "roomba-105-combo-autoempty",
       "k11",
+      "f20-plus",
       "k10-pro",
       "deebot-t50-omni",
       "deebot-n30-plus",
       "deebot-mini",
+      "deebot-mini-2",
       "l10s-ultra-gen-3",
       "x30-ultra",
       "eufy-x10-pro-omni",
       "eufy-clean-x8-pro-with-self-empty-station"
     ],
-    "count": 12
+    "count": 14
   },
   {
     "label": "7〜10万円",
     "urlPath": "/compare/robot-vacuum-7-10man",
     "slugs": [
+      "deebot-n50-omni",
+      "k20-pro",
       "q10v-plus",
       "q10p",
       "deebot-t50s-omni",
@@ -48,7 +55,7 @@
       "l40-ultra-ae",
       "eufy-robot-vacuum-omni-c28"
     ],
-    "count": 9
+    "count": 11
   },
   {
     "label": "10〜15万円",
@@ -58,31 +65,35 @@
       "qrevo-curv-2-flow",
       "eufy-robot-vacuum-omni-e25",
       "roomba-plus-505-combo-autowash",
+      "deebot-t80s-omni",
       "qrevo-curvc",
       "deebot-t80-omni",
       "qrevo-l",
       "deebot-t90-omni"
     ],
-    "count": 8
+    "count": 9
   },
   {
     "label": "15〜20万円",
     "urlPath": "/compare/robot-vacuum-15-20man",
     "slugs": [
+      "roomba-plus-575-combo-autowash",
       "roomba-max-705-combo-autowash",
       "deebot-x8-pro-omni",
       "x50-ultra",
-      "eufy-robot-vacuum-omni-s1-pro"
+      "eufy-robot-vacuum-omni-s1-pro",
+      "eufy-robot-vacuum-omni-s2"
     ],
-    "count": 4
+    "count": 6
   },
   {
     "label": "20万円〜",
     "urlPath": "/compare/robot-vacuum-20man-plus",
     "slugs": [
       "deebot-x11-omnicyclone",
+      "saros-20",
       "saros-10r"
     ],
-    "count": 2
+    "count": 3
   }
 ]

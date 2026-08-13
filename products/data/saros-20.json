@@ -1,0 +1,407 @@
+{
+  "productId": "saros-20",
+  "productName": "Saros 20",
+  "manufacturer": "Roborock",
+  "modelNumber": "S20S52-04",
+  "imageUrl": "https://thumbnail.image.rakuten.co.jp/@0_mall/roborockjapandirect/cabinet/products/12574614/imgrc0134813006.jpg",
+  "overallRating": 4.8,
+  "totalReviews": 41,
+  "price": 249800,
+  "reliabilityScore": 67.9,
+  "asin": "",
+  "metaTitle": "Roborock Saros 20 詳細分析 | 3.6万Paの吸引力と8.8cm段差走破性の実力",
+  "metaDescription": "Roborock Saros 20の40件の口コミを徹底解析。驚異的な吸引力と段差乗り越え性能、静音性や賢いマッピング機能の真実を、利用者の声から明らかにします。",
+  "keywords": [
+    "Saros 20",
+    "Roborock",
+    "ロボット掃除機",
+    "水拭き",
+    "ペット",
+    "静音"
+  ],
+  "categoryC": {
+    "userSatisfaction": {
+      "score": 95,
+      "reviewCount": 40,
+      "comment": "多くの利用者が吸引力や水拭き性能、静音性に高い満足感を示しています。特に「掃除の手間がほぼゼロになった」「人生の質が上がる」といった声が多く、日常生活の負担を大幅に軽減できる点が評価されています。"
+    },
+    "repurchaseIntention": {
+      "percentage": 92,
+      "reviewCount": 35,
+      "comment": "高価格帯にもかかわらず、「もっと早く買えば良かった」「もう手放せない」という意見が多数を占めます。他社製品からの乗り換えユーザーも多く、性能への信頼から再購入意向は非常に高いと考えられます。"
+    },
+    "failureRate": {
+      "percentage": 5,
+      "reviewCount": 40,
+      "breakdown": {
+        "hardware": 1,
+        "software": 1,
+        "environmental": 0
+      },
+      "comment": "「故障・不具合」に関する言及は2件のみと非常に低いです。ただし、特定の家具の脚で停止する、アプリの挙動が不安定になるといったソフトウェアや環境起因の軽微な問題が散見されるため、今後の改善が期待されます。"
+    }
+  },
+  "reliability": {
+    "score": 67.9,
+    "dataAdequacy": {
+      "score": 56,
+      "weight": 60,
+      "description": "口コミ件数は40件と、新製品としては一定数集まっていますが、長期的な信頼性を判断するにはまだデータが不足しています。今後のレビュー蓄積により、スコアの信頼性はさらに向上する見込みです。"
+    },
+    "consistency": {
+      "score": 81,
+      "weight": 30,
+      "description": "Amazonと楽天のレビュー間で評価の大きな乖離は見られず、概ね高評価で一致しています。吸引力や静音性、段差乗り越えといった主要機能への評価が一貫しており、製品性能の安定性を示唆しています。"
+    },
+    "freshness": {
+      "score": 100,
+      "weight": 10,
+      "description": "分析対象の口コミはすべて直近3ヶ月以内に投稿されており、鮮度は非常に高いです。最新のファームウェアや現行ロットの品質を反映した、信頼性の高いユーザー体験に基づいた評価となっています。"
+    }
+  },
+  "updateInfo": {
+    "lastUpdated": "2026-08-12",
+    "firmwareVersion": "",
+    "note": "2026年5月下旬から8月上旬の口コミに基づき分析。新製品のため、ソフトウェアアップデートによる機能改善が頻繁に行われている可能性があり、一部の挙動は将来的に解消されることが期待されます。"
+  },
+  "timeSaving": {
+    "vacuumMinutes": 10,
+    "mopMinutes": 9,
+    "dailyMinutes": 19,
+    "monthlyHours": 9.5,
+    "annualHours": 115.6,
+    "workDaysEquivalent": 14.4
+  },
+  "operationalCost": {
+    "daily": 69,
+    "dailyNote": "消耗品の実質的な日割りコスト。使用頻度により変動します。",
+    "monthly": 2108,
+    "annual": 25300,
+    "consumables": [
+      {
+        "item": "メインブラシ",
+        "replacementFrequency": "6-12ヶ月ごと",
+        "unitCost": 3500,
+        "annualCost": 4500
+      },
+      {
+        "item": "サイドブラシ",
+        "replacementFrequency": "3-6ヶ月ごと",
+        "unitCost": 2200,
+        "annualCost": 5400
+      },
+      {
+        "item": "エアフィルターPro",
+        "replacementFrequency": "3-6ヶ月ごと",
+        "unitCost": 3000,
+        "annualCost": 7500
+      },
+      {
+        "item": "モップクロス",
+        "replacementFrequency": "3-6ヶ月ごと",
+        "unitCost": 2800,
+        "annualCost": 6900
+      },
+      {
+        "item": "ダストバッグ",
+        "replacementFrequency": "1-2ヶ月ごと",
+        "unitCost": 2000,
+        "annualCost": 1000
+      }
+    ]
+  },
+  "performanceAnalysis": {
+    "floorCleaning": {
+      "score": 98,
+      "reviewCount": 26,
+      "positiveReviewCount": 25,
+      "comment": "36,000Paの強力な吸引力とデュアル回転モップによる水拭き性能は絶賛されています。「床がサラサラ・ピカピカになる」との声が多数あり、ホコリや髪の毛、皮脂汚れまでしっかり除去できる点が高く評価されています。"
+    },
+    "carpetCleaning": {
+      "score": 94,
+      "reviewCount": 8,
+      "positiveReviewCount": 7,
+      "comment": "カーペットを自動認識し、モップリフトと吸引力アップで対応する機能が好評です。「カーペットの奥に入り込んだゴミまでしっかり吸い取ってくれる」と、ペットの毛が絡みにくい点も評価されています。"
+    },
+    "petHairRemoval": {
+      "score": 96,
+      "reviewCount": 11,
+      "positiveReviewCount": 10,
+      "comment": "猫を多頭飼いしている家庭からも「想像以上に綺麗になる」と高評価です。強力な吸引力と毛が絡みにくいブラシ構造により、カーペットやフローリングに付着したペットの毛を効率的に除去できる点が支持されています。"
+    },
+    "quietness": {
+      "score": 88,
+      "reviewCount": 10,
+      "positiveReviewCount": 8,
+      "comment": "本体の動作音は「吸引力からすると十分に静か」と評価されています。ただし、ドックでのゴミ収集やモップ洗浄時の音は大きいという指摘もあり、夜間の使用には注意が必要です。アプリでおやすみモードの設定が可能です。"
+    },
+    "stepClimbing": {
+      "score": 92,
+      "reviewCount": 13,
+      "positiveReviewCount": 12,
+      "comment": "最大8.8cmの段差乗り越え機能は高く評価されており、「敷居などで止まってしまうことがなくなった」との声が多いです。これまでロボット掃除機が苦手としていた部屋間の移動もスムーズに行える点が強みです。"
+    },
+    "maintenance": {
+      "score": 95,
+      "reviewCount": 11,
+      "positiveReviewCount": 10,
+      "comment": "ゴミ自動収集、モップの自動洗浄・乾燥機能により、日々の手入れの手間が大幅に削減されたと好評です。「本当に放置でOK」という声もあり、給排水や消耗品交換程度で済む手軽さが高く評価されています。"
+    },
+    "appStability": {
+      "score": 91,
+      "reviewCount": 17,
+      "positiveReviewCount": 15,
+      "comment": "マッピングの速さと正確性、部屋ごとの掃除設定など、アプリの使いやすさが評価されています。一部で「接続に手間取った」との声もありましたが、概ね安定して動作し、多機能ながら直感的に操作できる点が好評です。"
+    },
+    "batteryLife": {
+      "score": 89,
+      "reviewCount": 4,
+      "positiveReviewCount": 4,
+      "comment": "バッテリーに関する不満の口コミは見られず、広い範囲を一度に掃除できる性能を持っていると評価できます。掃除途中で充電が切れても自動で再開するため、長時間の稼働でも安心して任せられるとの声があります。"
+    }
+  },
+  "radarChartData": {
+    "labels": [
+      "フローリング",
+      "カーペット",
+      "ペット毛",
+      "静音性",
+      "段差",
+      "メンテ",
+      "アプリ",
+      "電池"
+    ],
+    "values": [
+      98,
+      94,
+      96,
+      88,
+      92,
+      95,
+      91,
+      89
+    ]
+  },
+  "dataQuality": {
+    "totalReviews": 40,
+    "sampledReviews": 40,
+    "adoptedReviews": 40,
+    "excludedReviews": 1,
+    "trustScore": 67.9,
+    "comment": "新製品のため口コミ総数は40件と発展途上ですが、Amazonと楽天から収集した質の高いレビューを分析対象としています。すべての口コミが直近3ヶ月以内のため、情報の鮮度は非常に高いです。"
+  },
+  "reviewKeywords": {
+    "positive": [
+      {
+        "keyword": "水拭き・拭き掃除が良い",
+        "count": 18
+      },
+      {
+        "keyword": "吸引力が高い",
+        "count": 14
+      },
+      {
+        "keyword": "満足・買ってよかった",
+        "count": 13
+      },
+      {
+        "keyword": "マッピング・ルートが賢い",
+        "count": 9
+      },
+      {
+        "keyword": "静かで快適",
+        "count": 8
+      },
+      {
+        "keyword": "綺麗になる",
+        "count": 5
+      },
+      {
+        "keyword": "使いやすい・便利",
+        "count": 3
+      },
+      {
+        "keyword": "家事が楽になった",
+        "count": 2
+      },
+      {
+        "keyword": "床がサラサラ・ピカピカ",
+        "count": 2
+      },
+      {
+        "keyword": "故障・トラブルが少ない",
+        "count": 1
+      }
+    ],
+    "negative": [
+      {
+        "keyword": "段差・家具で引っかかる",
+        "count": 3
+      },
+      {
+        "keyword": "止まってしまう",
+        "count": 2
+      },
+      {
+        "keyword": "故障・不具合",
+        "count": 2
+      },
+      {
+        "keyword": "動作音が気になる",
+        "count": 1
+      },
+      {
+        "keyword": "水拭き・拭き掃除が不十分",
+        "count": 1
+      }
+    ]
+  },
+  "successStrategies": [
+    {
+      "rank": 1,
+      "issue": "臆病な動きで掃除範囲が狭まる",
+      "occurrenceRate": 7.5,
+      "occurrenceCount": 3,
+      "environmentalFactor": "椅子の脚や複雑な形状の家具が多い部屋",
+      "technicalDescription": "高精度の障害物回避システムが、衝突リスクを過剰に判断し、本来通過できるはずの狭いスペースを避けてしまうことがあります。特に家具の脚が密集しているエリアで顕著に見られます。",
+      "avoidanceStrategies": [
+        {
+          "method": "アプリで「衝突減少モード」を調整する",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "Roborockアプリの設定で、障害物への接近度合いを調整できます。 衝突を許容する設定に変更することで、よりキワまで攻めた掃除が可能になり、未清掃エリアを減らす効果が期待できます。"
+        },
+        {
+          "method": "掃除前に椅子などを軽く移動させる",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalRationale": "ロボットが苦手とする複雑なエリアを物理的に解消する最も確実な方法です。掃除前に椅子をテーブルの上に上げるなど、簡単な片付けで清掃カバレッジを最大化できます。"
+        }
+      ],
+      "preventionTips": "初回のマッピングは、できるだけ床の障害物をなくした状態で行うと、より正確な部屋の形状が登録されます。これにより、通常清掃時のルート効率が向上し、未清掃エリアの発生を抑制できます。"
+    }
+  ],
+  "topComplaints": [
+    {
+      "title": "特定の家具の脚や敷居で停止する",
+      "percentage": 7.5,
+      "reviewCount": 3,
+      "description": "高い段差乗り越え性能を持つものの、椅子の脚が密集した場所や特定の形状の敷居で、まれに身動きが取れなくなり停止することがあります。障害物回避システムが安全を優先しすぎるのが原因と考えられます。",
+      "solution": "アプリで進入禁止エリアやバーチャルウォールを設定し、問題が発生する特定の場所を避けるように設定するのが効果的です。 また、ファームウェアのアップデートで回避ロジックが改善される可能性もあります。"
+    },
+    {
+      "title": "ドックのゴミ吸引・洗浄音が大きい",
+      "percentage": 2.5,
+      "reviewCount": 1,
+      "description": "本体の動作音は静かだと評価される一方、ドックに戻った際のゴミ自動収集やモップ洗浄時の動作音が「一瞬大きい」との指摘があります。特に夜間や在宅勤務中の稼働には注意が必要です。",
+      "solution": "Roborockアプリの「おやすみモード」を活用し、指定した時間帯は自動ゴミ収集を行わないように設定できます。 これにより、就寝中などの静かに過ごしたい時間帯の騒音を避けることが可能です。"
+    },
+    {
+      "title": "アプリ接続にやや手間取ることがある",
+      "percentage": 2.5,
+      "reviewCount": 1,
+      "description": "多くのユーザーは設定が簡単だと評価していますが、一部でWi-Fi接続に少し手間取ったという声がありました。自宅のWi-Fi環境（2.4GHz/5GHzのバンドステアリングなど）によっては接続が不安定になる場合があります。",
+      "solution": "公式サポートでは、バンドステアリング機能が接続に影響する場合があるとしています。 ルーター側で2.4GHz帯のSSIDを個別に設定し、そちらに接続を試みることで問題が解決することがあります。"
+    }
+  ],
+  "attributeScores": {
+    "petOwner": {
+      "overall": 95,
+      "details": [
+        {
+          "field": "ペットの毛除去",
+          "score": 96,
+          "reviewCount": 11,
+          "comment": "猫を多頭飼いしている家庭からも高評価。強力な吸引力と毛が絡みにくいブラシで、カーペットや床の抜け毛を効率的に除去します。動物の排泄物を検知・回避する機能も安心材料です。"
+        },
+        {
+          "field": "床掃除（水拭き）",
+          "score": 98,
+          "reviewCount": 26,
+          "comment": "ペットの足跡や皮脂汚れも、デュアル回転モップによる水拭きでしっかり綺麗になります。床が常にサラサラの状態に保たれるため、ペットと快適に過ごせる空間を維持できます。"
+        },
+        {
+          "field": "メンテナンス性",
+          "score": 95,
+          "reviewCount": 11,
+          "comment": "全自動ドックがゴミ収集からモップ洗浄・乾燥まで行うため、ペットの毛で汚れやすいダストボックスの手入れ頻度が激減します。忙しい飼い主の負担を大幅に軽減してくれる点が魅力です。"
+        }
+      ]
+    },
+    "apartment": {
+      "overall": 89,
+      "details": [
+        {
+          "field": "静音性",
+          "score": 88,
+          "reviewCount": 10,
+          "comment": "本体の動作音は非常に静かで、隣室への騒音を気にするマンション暮らしに適しています。在宅勤務中でも気にならないレベルとの評価が多く、日中の稼働も問題ありません。"
+        },
+        {
+          "field": "床掃除",
+          "score": 98,
+          "reviewCount": 26,
+          "comment": "限られたスペースでも、正確なマッピングと効率的なルートで隅々まで掃除します。特にフローリングの吸引・水拭き性能が高く、コンパクトな住空間を常に清潔に保つことができます。"
+        },
+        {
+          "field": "段差乗り越え",
+          "score": 92,
+          "reviewCount": 13,
+          "comment": "マンション内の部屋の敷居や、厚手のラグマットなどの段差もスムーズに乗り越えます。掃除エリアが分断されることなく、一度の指示で家全体を任せられる走破性の高さが魅力です。"
+        }
+      ]
+    },
+    "workingProfessional": {
+      "overall": 93,
+      "details": [
+        {
+          "field": "アプリの安定性",
+          "score": 91,
+          "reviewCount": 17,
+          "comment": "外出先からでもスマホアプリで簡単に操作・予約設定が可能です。安定した動作と直感的なUIで、忙しい中でも手軽に掃除を管理できるため、時間を有効活用したい専門職に最適です。"
+        },
+        {
+          "field": "メンテナンス性",
+          "score": 95,
+          "reviewCount": 11,
+          "comment": "ゴミ収集からモップ洗浄まで全自動化されており、メンテナンスの手間がほとんどかかりません。「本当に放置でOK」との声もあり、多忙な日々の中で掃除を完全に任せられる点が大きなメリットです。"
+        },
+        {
+          "field": "バッテリー性能",
+          "score": 89,
+          "reviewCount": 4,
+          "comment": "一度の充電で広い範囲を掃除でき、バッテリー切れの心配が少ないです。万が一途中で充電がなくなっても自動でドックに戻り、充電後に中断した場所から掃除を再開するため、手間がかかりません。"
+        }
+      ]
+    },
+    "familyHome": {
+      "overall": 94,
+      "details": [
+        {
+          "field": "床掃除",
+          "score": 98,
+          "reviewCount": 26,
+          "comment": "子供の食べこぼしや足跡など、汚れやすいファミリー世帯の床を吸引と水拭きで徹底的に綺麗にします。「子供が安心して床を移動できる」と、衛生面での安心感が高く評価されています。"
+        },
+        {
+          "field": "バッテリー性能",
+          "score": 89,
+          "reviewCount": 4,
+          "comment": "広い戸建てでも一度の充電で広範囲をカバーできるバッテリー性能を備えています。掃除途中の充電ロスが少なく、家全体を効率的に清掃できるため、家族が集まるリビングを常に清潔に保てます。"
+        },
+        {
+          "field": "カーペット掃除",
+          "score": 94,
+          "reviewCount": 8,
+          "comment": "子供部屋のラグやリビングのカーペットも、自動で吸引力を高めて奥のゴミまでしっかり掃除します。モップを自動でリフトアップするため、カーペットを濡らす心配がない点も安心です。"
+        }
+      ]
+    }
+  },
+  "resaleValue": null,
+  "affiliate": {
+    "moshimo": "<!-- START MoshimoAffiliateEasyLink -->\r\n<script type=\"text/javascript\">\r\n(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;\r\nb[a]=b[a]||function(){arguments.currentScript=c.currentScript\r\n||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};\r\nc.getElementById(a)||(d=c.createElement(f),d.src=g,\r\nd.id=a,e=c.getElementsByTagName(\"body\")[0],e.appendChild(d))})\r\n(window,document,\"script\",\"//dn.msmstatic.com/site/cardlink/bundle.js?20220329\",\"msmaflink\");\r\nmsmaflink({\"n\":\"【50,000円クーポン発行中】[2026年6月モデル] ロボロック Roborock ロボット掃除機 Saros 20 お掃除ロボット 水拭き対応 強力吸引 ゴミ収集 静音設計 時短掃除 ペット対応 高性能 ロボットクリーナー\",\"b\":\"\",\"t\":\"\",\"d\":\"https:\\/\\/thumbnail.image.rakuten.co.jp\",\"c_p\":\"\\/@0_mall\\/roborockjapandirect\\/cabinet\\/products\",\"p\":[\"\\/12574614\\/imgrc0134813006.jpg\",\"\\/saros20\\/imgrc0134558519.jpg\",\"\\/12136292\\/13216021\\/003.jpg\"],\"u\":{\"u\":\"https:\\/\\/item.rakuten.co.jp\\/roborockjapandirect\\/6936905906625\\/\",\"t\":\"rakuten\",\"r_v\":\"\"},\"v\":\"2.1\",\"b_l\":[{\"id\":1,\"u_tx\":\"楽天市場で見る\",\"u_bc\":\"#f76956\",\"u_url\":\"https:\\/\\/item.rakuten.co.jp\\/roborockjapandirect\\/6936905906625\\/\",\"a_id\":5483003,\"p_id\":54,\"pl_id\":27059,\"pc_id\":54,\"s_n\":\"rakuten\",\"u_so\":1},{\"id\":2,\"u_tx\":\"Yahoo!ショッピングで見る\",\"u_bc\":\"#66a7ff\",\"u_url\":\"https:\\/\\/shopping.yahoo.co.jp\\/search?first=1\\u0026p=%E3%80%9050%2C000%E5%86%86%E3%82%AF%E3%83%BC%E3%83%9D%E3%83%B3%E7%99%BA%E8%A1%8C%E4%B8%AD%E3%80%91%5B2026%E5%B9%B46%E6%9C%88%E3%83%A2%E3%83%87%E3%83%AB%5D%20%E3%83%AD%E3%83%9C%E3%83%AD%E3%83%83%E3%82%AF%20Roborock%20%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%20Saros%2020%20%E3%81%8A%E6%8E%83%E9%99%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%20%E6%B0%B4%E6%8B%AD%E3%81%8D%E5%AF%BE%E5%BF%9C%20%E5%BC%B7%E5%8A%9B%E5%90%B8%E5%BC%95%20%E3%82%B4%E3%83%9F%E5%8F%8E%E9%9B%86%20%E9%9D%99%E9%9F%B3%E8%A8%AD%E8%A8%88%20%E6%99%82%E7%9F%AD%E6%8E%83%E9%99%A4%20%E3%83%9A%E3%83%83%E3%83%88%E5%AF%BE%E5%BF%9C%20%E9%AB%98%E6%80%A7%E8%83%BD%20%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%8A%E3%83%BC\",\"a_id\":5483010,\"p_id\":1225,\"pl_id\":27061,\"pc_id\":1925,\"s_n\":\"yahoo\",\"u_so\":2},{\"id\":3,\"u_tx\":\"Amazonで見る\",\"u_bc\":\"#ffcf0f\",\"u_url\":\"https:\\/\\/www.amazon.co.jp\\/s\\/ref=nb_sb_noss_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A\\u0026url=search-alias%3Daps\\u0026field-keywords=%E3%80%9050%2C000%E5%86%86%E3%82%AF%E3%83%BC%E3%83%9D%E3%83%B3%E7%99%BA%E8%A1%8C%E4%B8%AD%E3%80%91%5B2026%E5%B9%B46%E6%9C%88%E3%83%A2%E3%83%87%E3%83%AB%5D%20%E3%83%AD%E3%83%9C%E3%83%AD%E3%83%83%E3%82%AF%20Roborock%20%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%20Saros%2020%20%E3%81%8A%E6%8E%83%E9%99%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%20%E6%B0%B4%E6%8B%AD%E3%81%8D%E5%AF%BE%E5%BF%9C%20%E5%BC%B7%E5%8A%9B%E5%90%B8%E5%BC%95%20%E3%82%B4%E3%83%9F%E5%8F%8E%E9%9B%86%20%E9%9D%99%E9%9F%B3%E8%A8%AD%E8%A8%88%20%E6%99%82%E7%9F%AD%E6%8E%83%E9%99%A4%20%E3%83%9A%E3%83%83%E3%83%88%E5%AF%BE%E5%BF%9C%20%E9%AB%98%E6%80%A7%E8%83%BD%20%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%8A%E3%83%BC\",\"a_id\":5483011,\"p_id\":170,\"pl_id\":27060,\"pc_id\":185,\"s_n\":\"amazon\",\"u_so\":3}],\"eid\":\"QfHBJ\",\"s\":\"l\"});\r\n</script>\r\n<div id=\"msmaflink-QfHBJ\">リンク</div>\r\n<!-- MoshimoAffiliateEasyLink END -->",
+    "direct": "",
+    "hpPublish": false
+  }
+}
