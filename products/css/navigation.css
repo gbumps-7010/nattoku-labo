@@ -763,8 +763,8 @@ body:has(#fixed-navigation) .reliability-intro-text {
 /* ===== キーワード横棒グラフ ===== */
 body:has(#fixed-navigation) .keywords-charts-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
-    gap: 2rem;
+    grid-template-columns: 1fr;
+    gap: 2.25rem;
     min-width: 0;
 }
 
@@ -773,7 +773,7 @@ body:has(#fixed-navigation) .keyword-chart-wrap {
     width: 100%;
     max-width: 100%;
     min-width: 0;
-    height: 480px;
+    height: 620px;
     overflow: hidden;
 }
 
@@ -837,11 +837,11 @@ body:has(#fixed-navigation) .container {
 
     body:has(#fixed-navigation) .keywords-charts-grid {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
+        gap: 1.75rem;
     }
 
     body:has(#fixed-navigation) .keyword-chart-wrap {
-        height: clamp(300px, 78vw, 380px);
+        height: clamp(420px, 95vw, 560px);
     }
 
     /* インライン grid の minmax による横はみ出しを防止 */

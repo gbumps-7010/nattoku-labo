@@ -125,25 +125,42 @@
             },
             layout: {
                 padding: mobile
-                    ? { left: 0, right: 2, top: 0, bottom: 0 }
-                    : { right: 8 }
+                    ? { left: 2, right: 4, top: 8, bottom: 8 }
+                    : { left: 4, right: 12, top: 10, bottom: 10 }
+            },
+            datasets: {
+                bar: {
+                    categoryPercentage: mobile ? 0.72 : 0.68,
+                    barPercentage: mobile ? 0.78 : 0.72
+                }
             },
             scales: {
                 y: {
                     ticks: {
                         autoSkip: false,
-                        font: { size: mobile ? 10 : 12 },
+                        padding: mobile ? 6 : 10,
+                        font: {
+                            size: mobile ? 11 : 13,
+                            weight: '600',
+                            family: "'Noto Sans JP', sans-serif"
+                        },
+                        color: '#334155',
                         callback: function (value) {
                             const label = this.getLabelForValue(value);
-                            return truncateLabel(label, mobile ? 7 : 14);
+                            return truncateLabel(label, mobile ? 9 : 16);
                         }
+                    },
+                    grid: {
+                        display: false
                     },
                     afterFit: function (scale) {
                         if (isMobileViewport()) {
                             scale.width = Math.min(
                                 scale.width,
-                                Math.max(60, window.innerWidth * 0.30)
+                                Math.max(78, window.innerWidth * 0.34)
                             );
+                        } else {
+                            scale.width = Math.max(scale.width, 160);
                         }
                     }
                 },
@@ -151,12 +168,16 @@
                     beginAtZero: true,
                     ticks: {
                         maxTicksLimit: mobile ? 4 : 8,
-                        font: { size: mobile ? 9 : 11 },
+                        font: { size: mobile ? 10 : 12 },
+                        color: '#64748b',
                         callback: function (value) {
                             if (Number.isInteger(value)) {
                                 return value + '件';
                             }
                         }
+                    },
+                    grid: {
+                        color: 'rgba(148, 163, 184, 0.25)'
                     }
                 }
             }
@@ -171,8 +192,9 @@
             backgroundColor: colors.bg,
             borderColor: colors.border,
             borderWidth: 1,
-            barThickness: mobile ? 14 : 18,
-            maxBarThickness: mobile ? 16 : 24
+            borderRadius: 6,
+            barThickness: mobile ? 18 : 22,
+            maxBarThickness: mobile ? 22 : 28
         };
     }
 
@@ -253,6 +275,16 @@
 
         try {
             var topItems = items.slice(0, 10);
+            var wrap = canvas.closest('.keyword-chart-wrap');
+            if (wrap) {
+                var mobile = isMobileViewport();
+                var rowH = mobile ? 44 : 52;
+                var chrome = mobile ? 72 : 90;
+                wrap.style.height = Math.max(
+                    mobile ? 420 : 560,
+                    topItems.length * rowH + chrome
+                ) + 'px';
+            }
             new Chart(canvas.getContext('2d'), {
                 type: 'bar',
                 data: {
