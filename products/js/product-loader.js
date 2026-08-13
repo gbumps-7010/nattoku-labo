@@ -1032,11 +1032,12 @@ function injectMoshimoIframe(container, html) {
         '<style>*,*::before,*::after{box-sizing:border-box}' +
         'html,body{width:100%;max-width:100%;min-width:0;margin:0;padding:0;background:#fff;color:#0f172a;overflow-x:hidden}' +
         'body{display:flex;flex-direction:column;align-items:stretch}' +
-        '[id^="msmaflink-"]{width:100%!important;max-width:100%!important;min-width:0!important;margin-left:auto;margin-right:auto}' +
-        '[id^="msmaflink-"] *{max-width:100%!important;min-width:0}' +
-        '[id^="msmaflink-"] table{width:100%!important;table-layout:fixed}' +
-        '[id^="msmaflink-"] img{width:auto!important;height:auto!important;max-width:280px!important;max-height:280px!important;object-fit:contain}' +
-        '@media(max-width:480px){[id^="msmaflink-"] img{max-width:220px!important;max-height:220px!important}}</style></head><body>' +
+        '[id^="msmaflink-"]{width:100%!important;max-width:100%!important;margin-left:auto;margin-right:auto}' +
+        '[id^="msmaflink-"] *:not(img){max-width:100%!important}' +
+        '[id^="msmaflink-"] table{width:100%!important;table-layout:auto!important}' +
+        '[id^="msmaflink-"] img{width:280px!important;min-width:220px!important;max-width:280px!important;' +
+        'height:auto!important;max-height:280px!important;object-fit:contain!important;flex-shrink:0!important}' +
+        '@media(max-width:480px){[id^="msmaflink-"] img{width:200px!important;min-width:160px!important;max-width:200px!important;max-height:200px!important}}</style></head><body>' +
         safe +
         '</body></html>';
     iframe.style.width = '100%';
