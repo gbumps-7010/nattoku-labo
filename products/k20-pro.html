@@ -678,81 +678,33 @@
             }
         }
         
-        /* 価格情報ツールチップ */
-        .price-info-tooltip {
-            display: inline-block;
-            position: relative;
-            cursor: help;
-            color: #60a5fa;
-            margin-left: 0.5rem;
-            font-size: 1.2rem;
-            transition: color 0.3s ease, transform 0.3s ease;
+        /* 価格注意書き（常時表示） */
+        .product-price-block {
+            margin: 1rem 0 1.15rem;
         }
-        
-        .price-info-tooltip:hover {
-            color: #3b82f6;
-            transform: scale(1.1);
+
+        .product-price-value {
+            font-size: 2rem;
+            font-weight: 900;
+            color: white;
+            line-height: 1.2;
         }
-        
+
         .price-note {
             display: block;
-            font-size: 0.75rem;
-            color: rgba(255, 255, 255, 0.92);
-            margin-top: 0.25rem;
-            font-weight: 400;
+            margin-top: 0.55rem;
+            max-width: 36rem;
+            font-size: 0.82rem;
+            line-height: 1.55;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.95);
         }
-        
-        .price-info-tooltip .tooltip-text {
-            visibility: hidden;
-            opacity: 0;
-            background-color: rgba(0, 0, 0, 0.95);
-            color: #fff;
-            text-align: left;
-            padding: 1rem;
-            border-radius: 8px;
-            font-size: 0.85rem;
-            font-weight: 400;
-            line-height: 1.6;
-            
-            /* 位置調整 */
-            position: absolute;
-            z-index: 1000;
-            bottom: 125%;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 320px;
-            max-width: 90vw;
-            
-            /* アニメーション */
-            transition: opacity 0.3s ease, visibility 0.3s ease;
-            
-            /* 影 */
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+
+        .price-note strong {
+            color: #fde68a;
+            font-weight: 800;
         }
-        
-        .price-info-tooltip .tooltip-text::after {
-            content: "";
-            position: absolute;
-            top: 100%;
-            left: 50%;
-            transform: translateX(-50%);
-            border-width: 8px;
-            border-style: solid;
-            border-color: rgba(0, 0, 0, 0.95) transparent transparent transparent;
-        }
-        
-        .price-info-tooltip:hover .tooltip-text {
-            visibility: visible;
-            opacity: 1;
-        }
-        
-        @media (max-width: 768px) {
-            .price-info-tooltip .tooltip-text {
-                width: 280px;
-                font-size: 0.8rem;
-                padding: 0.875rem;
-            }
-        }
+
         /* MOBILE_LAYOUT_FIX_START */
         html,
         body {
@@ -882,20 +834,16 @@
                         <!-- JavaScriptで動的に挿入 -->
                     </div>
                     
-                    <div style="font-size: 2rem; font-weight: 900; color: white; margin: 1rem 0;">
-                        <span data-dynamic="price">約¥79,840</span>
-                        <span class="price-info-tooltip">
-                            <i class="fas fa-info-circle"></i>
-                            <span class="tooltip-text">
-                                <strong style="display: block; margin-bottom: 0.5rem; color: #60a5fa;">価格について</strong>
-                                表示価格は<strong style="color:#e2e8f0;">メーカー公式ホームページ</strong>の参考価格です。<br><br>
-                                Amazon・楽天などの各ECサイトでは<strong style="color:#fde68a;">セールが頻繁に入る</strong>ため、表示価格と大きく異なることがあります。<br><br>
-                                <strong style="color:#fca5a5;">購入前に、必ず各ECサイトで現在の販売価格をご確認ください。</strong>
-                            </span>
-                        </span>
-                        <span class="price-note">参考価格（メーカー公式HP） · <strong style="color:#fde68a;">ECは現価の確認を強く推奨</strong> <i class="fas fa-info-circle" style="font-size: 0.7rem; color: #60a5fa;"></i></span>
-                    </div>
                     
+                    <div class="product-price-block">
+                        <div class="product-price-value">
+                            <span data-dynamic="price">00,000</span>
+                        </div>
+                        <p class="price-note">
+                            表示価格はメーカー公式ホームページの参考価格です。<br>
+                            各ECサイトではセールが頻繁に入るため、<strong>購入前に現在の販売価格の確認を強く推奨</strong>します。
+                        </p>
+                    </div>
                     
                     <div class="product-meta">
                         <div class="product-meta-pill">
@@ -1054,10 +1002,6 @@
                 <span style="font-size:0.9rem;font-weight:600;color:#1e40af;">7〜10万円｜全製品のおすすめ比較を見る →</span>
             </a>
         </section>
-
-
-
-
 
         <!-- Keywords -->
         <section>
