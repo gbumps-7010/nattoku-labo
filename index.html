@@ -92,10 +92,25 @@
             align-items: center;
             justify-content: center;
             gap: 1rem;
+            line-height: 1.25;
         }
         
         .logo i {
             font-size: 2rem;
+            flex-shrink: 0;
+        }
+
+        .logo-text {
+            display: inline;
+            text-align: center;
+            word-break: keep-all;
+            overflow-wrap: normal;
+            line-break: strict;
+        }
+
+        .logo-catch,
+        .logo-name {
+            white-space: nowrap;
         }
         
         .tagline {
@@ -143,7 +158,24 @@
 
         @media (max-width: 640px) {
             header { padding: 1.75rem 0 2rem; }
-            .logo { font-size: 1.55rem; gap: 0.55rem; }
+            .logo {
+                font-size: 1.35rem;
+                gap: 0.45rem;
+                flex-wrap: nowrap;
+            }
+            .logo i { font-size: 1.2rem; }
+            .logo-text {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.12rem;
+                text-align: left;
+            }
+            .logo-catch,
+            .logo-name {
+                display: block;
+                white-space: nowrap;
+            }
             .tagline { font-size: 0.95rem; padding: 0 0.5rem; }
             .header-content { padding: 0 1rem; }
             .header-nav { gap: 0.45rem; }
@@ -508,7 +540,7 @@
         /* Responsive */
         @media (max-width: 768px) {
             .logo {
-                font-size: 1.8rem;
+                font-size: 1.65rem;
             }
             
             .search-card {
@@ -551,8 +583,11 @@
     <header>
         <div class="header-content">
             <h1 class="logo">
-                <i class="fas fa-chart-line"></i>
-                もう失敗しない。ナットクLabo
+                <i class="fas fa-chart-line" aria-hidden="true"></i>
+                <span class="logo-text">
+                    <span class="logo-catch">もう失敗しない。</span>
+                    <span class="logo-name">ナットクLabo</span>
+                </span>
             </h1>
             <p class="tagline">独自調査データから分析。あなたに最適な製品が見つかる</p>
             <nav class="header-nav" aria-label="主要メニュー">
