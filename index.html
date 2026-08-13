@@ -1134,13 +1134,17 @@
             initializeFilters();
             applyFiltersFromUrl();
             filterProducts();
-        }
+            if (window.location.hash === '#productsContainer') {
+                requestAnimationFrame(() => {
+                    document.getElementById('productsContainer')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                });
+            }
         if (document.readyState === 'loading') {
             document.addEventListener('DOMContentLoaded', loadAndInit);
         } else {
             loadAndInit();
         }
     </script>
-    <script src="/products/js/navigation.js?v=20260813e"></script>
+    <script src="/products/js/navigation.js?v=20260814b"></script>
 </body>
 </html>

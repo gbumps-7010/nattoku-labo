@@ -220,10 +220,22 @@ function rebuildNavigationFromDataDir() {
   const manList = Array.from(manufacturersSet).sort();
   const manufacturersJs = `const MANUFACTURERS = ['すべて', ${manList.map((m) => `'${escapeSingle(m)}'`).join(", ")}];`;
 
-  const newBlock = `const ALL_PRODUCTS = [\n${productLines.join(",\n")}\n];\n\n// メーカー一覧\n${manufacturersJs}`;
+  // PRICE_RANGES は同期対象外（ナビ生成で必須）。欠落時はここで必ず復元する。
+  const priceRangesBlock = `// 価格帯一覧（トップのフィルター・比較ページと一致）
+const PRICE_RANGES = [
+    { label: 'すべて', min: 0, max: Infinity },
+    { label: '〜5万円', min: 0, max: 50000 },
+    { label: '5〜7万円', min: 50000, max: 70000 },
+    { label: '7〜10万円', min: 70000, max: 100000 },
+    { label: '10〜15万円', min: 100000, max: 150000 },
+    { label: '15〜20万円', min: 150000, max: 200000 },
+    { label: '20万円〜', min: 200000, max: Infinity }
+];`;
+
+  const newBlock = `const ALL_PRODUCTS = [\n${productLines.join(",\n")}\n];\n\n// メーカー一覧\n${manufacturersJs}\n\n${priceRangesBlock}`;
 
   const navProductsRe =
-    /const ALL_PRODUCTS = \[[\s\S]*?\];\s*\r?\n\r?\n\/\/ メーカー一覧\s*\r?\nconst MANUFACTURERS = \[[\s\S]*?\];/;
+    /const ALL_PRODUCTS = \[[\s\S]*?\];\s*\r?\n\r?\n\/\/ メーカー一覧\s*\r?\nconst MANUFACTURERS = \[[\s\S]*?\];(?:\s*\r?\n\r?\n\/\/ 価格帯一覧[\s\S]*?const PRICE_RANGES = \[[\s\S]*?\];)?/;
   if (!navProductsRe.test(nav)) {
     throw new Error("Could not patch products/js/navigation.js (ALL_PRODUCTS / MANUFACTURERS pattern not found)");
   }
