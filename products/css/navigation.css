@@ -418,6 +418,147 @@ body {
     }
 }
 
+/* ===== フッター直上：ほかの製品・比較を探す ===== */
+.site-explore-section {
+    background: linear-gradient(180deg, #f1f5f9 0%, #e2e8f0 100%);
+    border-top: 1px solid #cbd5e1;
+    padding: 2.75rem 0 2.5rem;
+    margin-top: 3rem;
+}
+
+.site-explore-inner {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 max(var(--site-gutter, 1.25rem), env(safe-area-inset-left, 0px)) 0 max(var(--site-gutter, 1.25rem), env(safe-area-inset-right, 0px));
+    box-sizing: border-box;
+}
+
+.site-explore-heading {
+    margin-bottom: 1.25rem;
+}
+
+.site-explore-heading h2 {
+    margin: 0 0 0.45rem;
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: #0f172a;
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+}
+
+.site-explore-heading h2 i {
+    color: #1e40af;
+}
+
+.site-explore-heading p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #475569;
+}
+
+.site-explore-filter {
+    background: #fff;
+    border: 1px solid #cbd5e1;
+    border-radius: 14px;
+    padding: 0.85rem 0.9rem 0.95rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+}
+
+.site-explore-filter .product-page-filter-form {
+    padding: 0;
+    max-width: none;
+}
+
+.site-explore-groups {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.site-explore-group h3 {
+    margin: 0 0 0.65rem;
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    color: #334155;
+    text-transform: none;
+}
+
+.site-explore-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.site-explore-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.45rem 0.75rem;
+    border-radius: 999px;
+    border: 1px solid #cbd5e1;
+    background: #fff;
+    color: #0f172a;
+    text-decoration: none;
+    font-size: 0.86rem;
+    font-weight: 700;
+    line-height: 1.2;
+    transition: border-color 0.15s ease, background 0.15s ease, color 0.15s ease;
+}
+
+.site-explore-chip i {
+    color: #1e40af;
+    font-size: 0.8rem;
+}
+
+.site-explore-chip span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 1.35rem;
+    height: 1.35rem;
+    padding: 0 0.35rem;
+    border-radius: 999px;
+    background: #e2e8f0;
+    color: #334155;
+    font-size: 0.72rem;
+    font-weight: 800;
+}
+
+.site-explore-chip:hover {
+    border-color: #60a5fa;
+    background: #eff6ff;
+    color: #1e3a8a;
+}
+
+.site-explore-chip-primary {
+    border-color: #93c5fd;
+    background: #eff6ff;
+    color: #1e3a8a;
+}
+
+.site-explore-section + .site-footer {
+    margin-top: 0 !important;
+}
+
+@media (max-width: 768px) {
+    .site-explore-section {
+        margin-top: 2rem;
+        padding: 2rem 0 1.75rem;
+    }
+
+    .site-explore-heading h2 {
+        font-size: 1.15rem;
+    }
+
+    .site-explore-filter {
+        padding: 0.75rem;
+    }
+}
+
 /* モバイルメニュー展開時：背後を暗くしてタップで閉じられるようにする（navigation.js と連動） */
 body.nav-mobile-open {
     overflow: hidden;

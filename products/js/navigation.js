@@ -7,64 +7,53 @@
 
 // 全製品データ（価格・メーカー情報のみ）
 const ALL_PRODUCTS = [
-    { id: 'd10-plus', name: 'D10 Plus', manufacturer: 'Dreame', price: 26900 },
-    { id: 'd9-max-gen-2', name: 'D9 Max Gen 2', manufacturer: 'Dreame', price: 17800 },
-    { id: 'deebot-mini', name: 'DEEBOT mini', manufacturer: 'ECOVACS', price: 69800 },
-    { id: 'deebot-mini-2', name: 'DEEBOT mini 2', manufacturer: 'ECOVACS', price: 69800 },
-    { id: 'deebot-n30', name: 'DEEBOT N30', manufacturer: 'ECOVACS', price: 34800 },
-    { id: 'deebot-n30-plus', name: 'DEEBOT N30 PLUS', manufacturer: 'ECOVACS', price: 69800 },
-    { id: 'deebot-n50-omni', name: 'DEEBOT N50 OMNI', manufacturer: 'ECOVACS', price: 79800 },
-    { id: 'deebot-t50-omni', name: 'DEEBOT T50 OMNI', manufacturer: 'ECOVACS', price: 64820 },
-    { id: 'deebot-t50s-omni', name: 'DEEBOT T50S OMNI', manufacturer: 'ECOVACS', price: 89800 },
-    { id: 'deebot-t80-omni', name: 'DEEBOT T80 OMNI', manufacturer: 'ECOVACS', price: 149800 },
-    { id: 'deebot-t80s-omni', name: 'DEEBOT T80S OMNI', manufacturer: 'ECOVACS', price: 139800 },
-    { id: 'deebot-t90-omni', name: 'DEEBOT T90 OMNI', manufacturer: 'ECOVACS', price: 149800 },
-    { id: 'deebot-x11-omnicyclone', name: 'DEEBOT X11 OmniCyclone', manufacturer: 'ECOVACS', price: 229900 },
-    { id: 'deebot-x8-pro-omni', name: 'DEEBOT X8 PRO OMNI', manufacturer: 'ECOVACS', price: 199800 },
-    { id: 'eufy-clean-x8-pro-with-self-empty-station', name: 'Eufy Clean X8 Pro with Self-Empty Station', manufacturer: 'Anker', price: 69990 },
-    { id: 'eufy-robot-vacuum-auto-empty-c10', name: 'Eufy Robot Vacuum Auto-Empty C10', manufacturer: 'Anker', price: 29990 },
-    { id: 'eufy-robot-vacuum-omni-c28', name: 'Eufy Robot Vacuum Omni C28', manufacturer: 'Anker', price: 79990 },
-    { id: 'eufy-robot-vacuum-omni-e25', name: 'Eufy Robot Vacuum Omni E25', manufacturer: 'Anker', price: 99980 },
-    { id: 'eufy-robot-vacuum-omni-s1-pro', name: 'Eufy Robot Vacuum Omni S1 Pro', manufacturer: 'Anker', price: 199900 },
-    { id: 'eufy-robovac-g10-hybrid', name: 'Eufy RoboVac G10 Hybrid', manufacturer: 'Anker', price: 29990 },
-    { id: 'eufy-robovac-g30-hybrid', name: 'Eufy RoboVac G30 Hybrid', manufacturer: 'Anker', price: 39990 },
-    { id: 'eufy-x10-pro-omni', name: 'Eufy X10 Pro Omni', manufacturer: 'Anker', price: 49990 },
-    { id: 'f20', name: 'F20', manufacturer: 'Dreame', price: 39800 },
-    { id: 'f20-plus', name: 'F20 Plus', manufacturer: 'Dreame', price: 59800 },
-    { id: 'k10-pro', name: 'ロボット掃除機 K10+ Pro', manufacturer: 'SwitchBot', price: 64800 },
-    { id: 'k11', name: 'ロボット掃除機 K11+', manufacturer: 'SwitchBot', price: 37800 },
-    { id: 'k11-pro', name: 'ロボット掃除機 K11+ Pro', manufacturer: 'SwitchBot', price: 49800 },
-    { id: 'k20-pro', name: 'マルチタスク家庭用ロボットK20+ Pro', manufacturer: 'SwitchBot', price: 79840 },
-    { id: 'l10s-ultra-gen-2', name: 'L10s Ultra Gen 2', manufacturer: 'Dreame', price: 58000 },
-    { id: 'l10s-ultra-gen-3', name: 'L10s Ultra Gen 3', manufacturer: 'Dreame', price: 69800 },
-    { id: 'l20-ultra-complete', name: 'L20 Ultra Complete', manufacturer: 'Dreame', price: 52000 },
-    { id: 'l40-ultra-ae', name: 'L40 Ultra AE', manufacturer: 'Dreame', price: 99800 },
-    { id: 'l40s-pro-ultra', name: 'L40s Pro Ultra', manufacturer: 'Dreame', price: 99800 },
-    { id: 'q10p', name: 'Q10P+', manufacturer: 'Roborock', price: 89800 },
-    { id: 'q10v', name: 'Q10V', manufacturer: 'Roborock', price: 57999 },
-    { id: 'q10v-plus', name: 'Q10V+', manufacturer: 'Roborock', price: 79999 },
-    { id: 'qrevo-curv-2-flow', name: 'Qrevo Curv 2 Flow', manufacturer: 'Roborock', price: 119900 },
-    { id: 'qrevo-curvc', name: 'Qrevo CurvC', manufacturer: 'Roborock', price: 146900 },
-    { id: 'qrevo-l', name: 'Qrevo L', manufacturer: 'Roborock', price: 69800 },
-    { id: 'roomba-105-combo-autoempty', name: 'Roomba® 105 Combo + AutoEmpty™', manufacturer: 'iRobot', price: 59200 },
-    { id: 'roomba-max-705-combo-autowash', name: 'Roomba® Max 705 Combo + AutoWash™', manufacturer: 'iRobot', price: 179800 },
-    { id: 'roomba-max-705-vac-autoempty', name: 'Roomba® Max 705 Vac + AutoEmpty™', manufacturer: 'iRobot', price: 98800 },
-    { id: 'roomba-mini-autoempty', name: 'Roomba® Mini + AutoEmpty™', manufacturer: 'iRobot', price: 49800 },
-    { id: 'roomba-mini-slim-slimcharge', name: 'Roomba® Mini Slim + SlimCharge™', manufacturer: 'iRobot', price: 39800 },
-    { id: 'roomba-plus-405-combo-autowash', name: 'Roomba® Plus 405 Combo + AutoWash™', manufacturer: 'iRobot', price: 98800 },
-    { id: 'roomba-plus-505-combo-autowash', name: 'Roomba® Plus 505 Combo + AutoWash™', manufacturer: 'iRobot', price: 128400 },
-    { id: 's10', name: 'お掃除ロボットS10', manufacturer: 'SwitchBot', price: 54980 },
-    { id: 's20', name: 'お掃除ロボットS20', manufacturer: 'SwitchBot', price: 56980 },
-    { id: 'saros-10r', name: 'Saros 10R', manufacturer: 'Roborock', price: 199980 },
-    { id: 'saros-20', name: 'Saros 20', manufacturer: 'Roborock', price: 249800 },
-    { id: 'x30-ultra', name: 'X30 Ultra', manufacturer: 'Dreame', price: 69800 },
-    { id: 'x50-ultra', name: 'X50 Ultra', manufacturer: 'Dreame', price: 199800 }
+    { id: 'eufy-clean-x8-pro-with-self-empty-station', name: 'Eufy Clean X8 Pro with Self-Empty Station', manufacturer: 'Anker', price: 69990, rating: 3.72 },
+    { id: 'eufy-robovac-g10-hybrid', name: 'Eufy RoboVac G10 Hybrid', manufacturer: 'Anker', price: 29990, rating: 3.47 },
+    { id: 'eufy-robovac-g30', name: 'Eufy RoboVac G30', manufacturer: 'Anker', price: 29490, rating: 4.16 },
+    { id: 'eufy-robovac-g30-hybrid', name: 'Eufy RoboVac G30 Hybrid', manufacturer: 'Anker', price: 39990, rating: 4.09 },
+    { id: 'eufy-robovac-x8-hybrid', name: 'Eufy RoboVac X8 Hybrid', manufacturer: 'Anker', price: 59800, rating: 3.53 },
+    { id: 'eufy-robot-vacuum-auto-empty-c10', name: 'Eufy Robot Vacuum Auto-Empty C10', manufacturer: 'Anker', price: 29990, rating: 4.01 },
+    { id: 'eufy-robot-vacuum-omni-c20', name: 'Eufy Robot Vacuum Omni C20', manufacturer: 'Anker', price: 69990, rating: 4.26 },
+    { id: 'eufy-robot-vacuum-omni-c28', name: 'Eufy Robot Vacuum Omni C28', manufacturer: 'Anker', price: 99990, rating: 4.19 },
+    { id: 'eufy-robot-vacuum-omni-e25', name: 'Eufy Robot Vacuum Omni E25', manufacturer: 'Anker', price: 119920, rating: 4.46 },
+    { id: 'eufy-robot-vacuum-omni-s1-pro', name: 'Eufy Robot Vacuum Omni S1 Pro', manufacturer: 'Anker', price: 199900, rating: 4.09 },
+    { id: 'eufy-x10-pro-omni', name: 'Eufy X10 Pro Omni', manufacturer: 'Anker', price: 69990, rating: 4.0 },
+    { id: 'd10-plus', name: 'D10 Plus', manufacturer: 'Dreame', price: 26900, rating: 4.19 },
+    { id: 'l20-ultra-complete', name: 'L20 Ultra Complete', manufacturer: 'Dreame', price: 52000, rating: 4.42 },
+    { id: 'l40-ultra-ae', name: 'L40 Ultra AE', manufacturer: 'Dreame', price: 99800, rating: 4.26 },
+    { id: 'l40s-pro-ultra', name: 'L40s Pro Ultra', manufacturer: 'Dreame', price: 99800, rating: 4.36 },
+    { id: 'x30-ultra', name: 'X30 Ultra', manufacturer: 'Dreame', price: 69800, rating: 4.27 },
+    { id: 'x50-ultra', name: 'X50 Ultra', manufacturer: 'Dreame', price: 199800, rating: 4.53 },
+    { id: 'deebot-n30', name: 'DEEBOT N30', manufacturer: 'ECOVACS', price: 34800, rating: 4.3 },
+    { id: 'deebot-n30-plus', name: 'DEEBOT N30 PLUS', manufacturer: 'ECOVACS', price: 69800, rating: 4.34 },
+    { id: 'deebot-t50-omni', name: 'DEEBOT T50 OMNI', manufacturer: 'ECOVACS', price: 64820, rating: 4.18 },
+    { id: 'deebot-t50s-omni', name: 'DEEBOT T50S OMNI', manufacturer: 'ECOVACS', price: 89800, rating: 3.86 },
+    { id: 'deebot-t80-omni', name: 'DEEBOT T80 OMNI', manufacturer: 'ECOVACS', price: 149800, rating: 4.46 },
+    { id: 'deebot-t90-omni', name: 'DEEBOT T90 OMNI', manufacturer: 'ECOVACS', price: 149800, rating: 4.36 },
+    { id: 'deebot-x11-omnicyclone', name: 'DEEBOT X11 OmniCyclone', manufacturer: 'ECOVACS', price: 229900, rating: 4.46 },
+    { id: 'deebot-x8-pro-omni', name: 'DEEBOT X8 PRO OMNI', manufacturer: 'ECOVACS', price: 199800, rating: 4.24 },
+    { id: 'deebot-mini', name: 'DEEBOT mini', manufacturer: 'ECOVACS', price: 69800, rating: 4.04 },
+    { id: 'q10p', name: 'Q10P+', manufacturer: 'Roborock', price: 41800, rating: 4.41 },
+    { id: 'q10v', name: 'Q10V', manufacturer: 'Roborock', price: 35999, rating: 4.14 },
+    { id: 'qrevo-curvc', name: 'Qrevo CurvC', manufacturer: 'Roborock', price: 146900, rating: 4.46 },
+    { id: 'saros-10r', name: 'Saros 10R', manufacturer: 'Roborock', price: 269800, rating: 4.44 },
+    { id: 's10', name: 'お掃除ロボットS10', manufacturer: 'SwitchBot', price: 119820, rating: 3.53 },
+    { id: 's20', name: 'お掃除ロボットS20', manufacturer: 'SwitchBot', price: 91800, rating: 4.14 },
+    { id: 'k10-pro', name: 'ロボット掃除機 K10+ Pro', manufacturer: 'SwitchBot', price: 64800, rating: 3.66 },
+    { id: 'k11', name: 'ロボット掃除機 K11+', manufacturer: 'SwitchBot', price: 59800, rating: 4.36 },
+    { id: 'roomba-105-combo-autoempty', name: 'Roomba® 105 Combo + AutoEmpty™', manufacturer: 'iRobot', price: 59200, rating: 3.94 },
+    { id: 'roomba-max-705-combo-autowash', name: 'Roomba® Max 705 Combo + AutoWash™', manufacturer: 'iRobot', price: 179800, rating: 3.91 },
+    { id: 'roomba-max-705-vac-autoempty', name: 'Roomba® Max 705 Vac + AutoEmpty™', manufacturer: 'iRobot', price: 98800, rating: 3.98 },
+    { id: 'roomba-mini-autoempty', name: 'Roomba® Mini + AutoEmpty™', manufacturer: 'iRobot', price: 49800, rating: 4.22 },
+    { id: 'roomba-mini-slim-slimcharge', name: 'Roomba® Mini Slim + SlimCharge™', manufacturer: 'iRobot', price: 39800, rating: 3.75 },
+    { id: 'roomba-plus-405-combo-autowash', name: 'Roomba® Plus 405 Combo + AutoWash™', manufacturer: 'iRobot', price: 98800, rating: 4.22 },
+    { id: 'roomba-plus-505-combo-autowash', name: 'Roomba® Plus 505 Combo + AutoWash™', manufacturer: 'iRobot', price: 128400, rating: 3.87 }
 ];
 
 // メーカー一覧
 const MANUFACTURERS = ['すべて', 'Anker', 'Dreame', 'ECOVACS', 'Roborock', 'SwitchBot', 'iRobot'];
 
-// 価格帯一覧（トップのフィルター・比較ページと一致）
+// 価格帯一覧（比較ページの価格帯と一致させる）
 const PRICE_RANGES = [
     { label: 'すべて', min: 0, max: Infinity },
     { label: '〜5万円', min: 0, max: 50000 },
@@ -448,7 +437,8 @@ function createProductCard(product) {
  * フッターを作成
  */
 function createFooter() {
-    if (document.querySelector('footer.site-footer')) return;
+    // 既存フッターがあるページ（about / privacy など）では二重生成しない
+    if (document.querySelector('footer.site-footer') || document.querySelector('footer')) return;
 
     const footer = document.createElement('footer');
     footer.className = 'site-footer';
@@ -487,7 +477,80 @@ function createFooter() {
 }
 
 /**
- * 製品詳細 or 比較ページ判定（検索フィルター表示対象）
+ * 検索フォームHTML（ヘッダー用・フッター上用で共用）
+ */
+function buildSiteFilterFormHtml(formId, inputIdPrefix) {
+    const manufacturerOptions = MANUFACTURERS.map((m) => {
+        const label = m === 'すべて' ? 'すべてのメーカー' : m;
+        return `<option value="${m}">${label}</option>`;
+    }).join('');
+
+    const priceOptions = PRICE_RANGES.map((r) => {
+        const label = r.label === 'すべて' ? 'すべての価格帯' : r.label;
+        return `<option value="${r.label}">${label}</option>`;
+    }).join('');
+
+    const qId = `${inputIdPrefix}-search-input`;
+    const mId = `${inputIdPrefix}-manufacturer`;
+    const pId = `${inputIdPrefix}-price`;
+
+    return `
+        <form class="product-page-filter-form" id="${formId}">
+            <div class="product-page-filter-field product-page-filter-search">
+                <label for="${qId}">キーワード</label>
+                <input
+                    type="search"
+                    id="${qId}"
+                    name="q"
+                    placeholder="製品名・メーカーで検索"
+                    autocomplete="off"
+                >
+            </div>
+            <div class="product-page-filter-field">
+                <label for="${mId}">メーカー</label>
+                <select id="${mId}" name="manufacturer">
+                    ${manufacturerOptions}
+                </select>
+            </div>
+            <div class="product-page-filter-field">
+                <label for="${pId}">価格帯</label>
+                <select id="${pId}" name="price">
+                    ${priceOptions}
+                </select>
+            </div>
+            <button type="submit" class="product-page-filter-submit">
+                <i class="fas fa-search" aria-hidden="true"></i>
+                検索
+            </button>
+        </form>
+    `;
+}
+
+/**
+ * 検索フォーム送信 → ホーム製品一覧へ
+ */
+function bindSiteFilterForm(form, inputIdPrefix) {
+    if (!form) return;
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const q = (form.querySelector(`#${inputIdPrefix}-search-input`)?.value || '').trim();
+        const manufacturer = form.querySelector(`#${inputIdPrefix}-manufacturer`)?.value;
+        const price = form.querySelector(`#${inputIdPrefix}-price`)?.value;
+        const url = new URL('/', window.location.origin);
+        if (q) url.searchParams.set('q', q);
+        if (manufacturer && manufacturer !== 'すべて') {
+            url.searchParams.set('manufacturer', manufacturer);
+        }
+        if (price && price !== 'すべて') {
+            url.searchParams.set('price', price);
+        }
+        url.hash = 'productsContainer';
+        window.location.href = url.pathname + url.search + url.hash;
+    });
+}
+
+/**
+ * 製品詳細 or 比較ページ判定（上部検索フィルター表示対象）
  */
 function shouldShowSiteFilterBar() {
     const path = window.location.pathname.replace(/\/+$/, '') || '/';
@@ -512,47 +575,7 @@ function createProductPageFilterBar() {
     bar.className = 'product-page-filter-bar';
     bar.setAttribute('role', 'search');
     bar.setAttribute('aria-label', '製品検索フィルター');
-
-    const manufacturerOptions = MANUFACTURERS.map((m) => {
-        const label = m === 'すべて' ? 'すべてのメーカー' : m;
-        return `<option value="${m}">${label}</option>`;
-    }).join('');
-
-    const priceOptions = PRICE_RANGES.map((r) => {
-        const label = r.label === 'すべて' ? 'すべての価格帯' : r.label;
-        return `<option value="${r.label}">${label}</option>`;
-    }).join('');
-
-    bar.innerHTML = `
-        <form class="product-page-filter-form" id="product-page-filter-form">
-            <div class="product-page-filter-field product-page-filter-search">
-                <label for="product-page-search-input">キーワード</label>
-                <input
-                    type="search"
-                    id="product-page-search-input"
-                    name="q"
-                    placeholder="製品名・メーカーで検索"
-                    autocomplete="off"
-                >
-            </div>
-            <div class="product-page-filter-field">
-                <label for="product-page-manufacturer">メーカー</label>
-                <select id="product-page-manufacturer" name="manufacturer">
-                    ${manufacturerOptions}
-                </select>
-            </div>
-            <div class="product-page-filter-field">
-                <label for="product-page-price">価格帯</label>
-                <select id="product-page-price" name="price">
-                    ${priceOptions}
-                </select>
-            </div>
-            <button type="submit" class="product-page-filter-submit">
-                <i class="fas fa-search" aria-hidden="true"></i>
-                検索
-            </button>
-        </form>
-    `;
+    bar.innerHTML = buildSiteFilterFormHtml('product-page-filter-form', 'product-page');
 
     const pageHeader =
         document.querySelector('body > header') ||
@@ -569,35 +592,100 @@ function createProductPageFilterBar() {
         }
     }
 
-    const form = bar.querySelector('#product-page-filter-form');
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const q = (bar.querySelector('#product-page-search-input').value || '').trim();
-        const manufacturer = bar.querySelector('#product-page-manufacturer').value;
-        const price = bar.querySelector('#product-page-price').value;
-        const url = new URL('/', window.location.origin);
-        if (q) url.searchParams.set('q', q);
-        if (manufacturer && manufacturer !== 'すべて') {
-            url.searchParams.set('manufacturer', manufacturer);
-        }
-        if (price && price !== 'すべて') {
-            url.searchParams.set('price', price);
-        }
-        url.hash = 'productsContainer';
-        window.location.href = url.pathname + url.search + url.hash;
-    });
+    bindSiteFilterForm(bar.querySelector('#product-page-filter-form'), 'product-page');
+}
+
+/**
+ * フッター直上：検索＋主要ページ導線（どのページからも移りやすく）
+ */
+function createSiteExploreSection() {
+    if (document.getElementById('site-explore-section')) return;
+
+    const manufacturerLinks = MANUFACTURERS.filter((m) => m !== 'すべて')
+        .map((m) => {
+            const count = ALL_PRODUCTS.filter((p) => p.manufacturer === m).length;
+            return `<a class="site-explore-chip" href="/?manufacturer=${encodeURIComponent(m)}#productsContainer">${m}<span>${count}</span></a>`;
+        })
+        .join('');
+
+    const compareLinks = COMPARE_BANDS.map((b) => {
+        const count =
+            b.min == null
+                ? ALL_PRODUCTS.length
+                : ALL_PRODUCTS.filter((p) => p.price >= b.min && p.price < b.max).length;
+        return `<a class="site-explore-chip" href="${b.href}">${b.label}<span>${count}</span></a>`;
+    }).join('');
+
+    const section = document.createElement('section');
+    section.id = 'site-explore-section';
+    section.className = 'site-explore-section';
+    section.setAttribute('aria-label', 'ほかの製品・比較を探す');
+    section.innerHTML = `
+        <div class="site-explore-inner">
+            <div class="site-explore-heading">
+                <h2><i class="fas fa-compass" aria-hidden="true"></i>ほかの製品・比較を探す</h2>
+                <p>キーワードや条件で絞り込み、価格帯比較・メーカー別一覧へすぐ移動できます。</p>
+            </div>
+
+            <div class="site-explore-filter" role="search" aria-label="フッター上の製品検索">
+                ${buildSiteFilterFormHtml('site-explore-filter-form', 'site-explore')}
+            </div>
+
+            <div class="site-explore-groups">
+                <div class="site-explore-group">
+                    <h3>主要ページ</h3>
+                    <div class="site-explore-chips">
+                        <a class="site-explore-chip site-explore-chip-primary" href="/#productsContainer"><i class="fas fa-th" aria-hidden="true"></i>全製品一覧<span>${ALL_PRODUCTS.length}</span></a>
+                        <a class="site-explore-chip site-explore-chip-primary" href="/compare/"><i class="fas fa-table" aria-hidden="true"></i>徹底比較ハブ</a>
+                        <a class="site-explore-chip" href="/about"><i class="fas fa-info-circle" aria-hidden="true"></i>サイトについて</a>
+                        <a class="site-explore-chip" href="/privacy"><i class="fas fa-shield-alt" aria-hidden="true"></i>プライバシー</a>
+                    </div>
+                </div>
+
+                <div class="site-explore-group">
+                    <h3>価格帯別の徹底比較</h3>
+                    <div class="site-explore-chips">
+                        ${compareLinks}
+                    </div>
+                </div>
+
+                <div class="site-explore-group">
+                    <h3>メーカーから探す</h3>
+                    <div class="site-explore-chips">
+                        ${manufacturerLinks}
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+
+    const footer = document.querySelector('footer.site-footer') || document.querySelector('footer');
+    if (footer && footer.parentNode) {
+        footer.parentNode.insertBefore(section, footer);
+    } else {
+        document.body.appendChild(section);
+    }
+
+    bindSiteFilterForm(section.querySelector('#site-explore-filter-form'), 'site-explore');
 }
 
 /**
  * 初期化
  */
 function initNavigation() {
-    console.log('🚀 ナビゲーションシステム V3.15 初期化');
+    console.log('🚀 ナビゲーションシステム V3.16 初期化');
     try {
         createNavigationBar();
         createProductPageFilterBar();
         createRelatedProductsSection();
+        createSiteExploreSection();
         createFooter();
+        // フッター生成後でも探索枠が前に来るよう再配置
+        const explore = document.getElementById('site-explore-section');
+        const footer = document.querySelector('footer.site-footer');
+        if (explore && footer && explore.nextElementSibling !== footer) {
+            footer.parentNode.insertBefore(explore, footer);
+        }
         console.log('✅ ナビゲーションバー＆関連製品セクション 生成完了');
     } catch (err) {
         console.error('❌ ナビゲーション初期化に失敗:', err);
