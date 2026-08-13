@@ -116,6 +116,9 @@ function updateDynamicElements(data) {
             } else if (path === 'totalReviews') {
                 element.textContent = Number(value).toLocaleString();
                 console.log(`✅ 総口コミ件数: ${Number(value).toLocaleString()}件`);
+            } else if (path === 'updateInfo.lastUpdated') {
+                element.textContent = formatUpdateDate(value);
+                console.log(`✅ データ更新日: ${formatUpdateDate(value)}`);
             } else if (path.includes('percentage')) {
                 element.textContent = `${value}%`;
                 console.log(`✅ ${path} = ${value}%`);
@@ -374,16 +377,25 @@ function updateReliability(data) {
     });
 }
 
+function formatUpdateDate(value) {
+    const raw = String(value || '').trim();
+    const m = raw.match(/^(\d{4})-(\d{2})-(\d{2})/);
+    if (!m) return raw;
+    return `${m[1]}年${Number(m[2])}月${Number(m[3])}日`;
+}
+
 // 7.6. 更新情報更新
 function updateUpdateInfo(data) {
     if (!data.updateInfo) return;
     
     const ui = data.updateInfo;
     
-    // 最終更新日
-    const lastUpdatedEl = document.querySelector('[data-dynamic="updateInfo.lastUpdated"]');
-    if (lastUpdatedEl && ui.lastUpdated) {
-        lastUpdatedEl.textContent = ui.lastUpdated;
+    // 最終更新日（ヒーロー＋信頼度セクションなど複数箇所）
+    if (ui.lastUpdated) {
+        const formatted = formatUpdateDate(ui.lastUpdated);
+        document.querySelectorAll('[data-dynamic="updateInfo.lastUpdated"]').forEach((el) => {
+            el.textContent = formatted;
+        });
     }
     
     // ステータスバッジ
