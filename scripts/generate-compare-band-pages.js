@@ -1411,7 +1411,7 @@ function buildPage(band) {
   </footer>
   ${scrollHelperScript}
   ${affiliateInlineScript}
-  <script src="/products/js/navigation.js?v=20260813a"></script>
+  <script src="/products/js/navigation.js?v=20260813b"></script>
 </body>
 </html>
 `;

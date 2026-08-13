@@ -54,7 +54,6 @@ const DEFAULT_SHEET_NAME_TO_PRODUCT_ID = {
   "Eufy Robot Vacuum Omni C28": "eufy-robot-vacuum-omni-c28",
   "Eufy Clean X8 Pro with Self-Empty Station": "eufy-clean-x8-pro-self-empty",
   "Eufy Robot Vacuum Omni S1 Pro": "eufy-robot-vacuum-omni-s1-pro",
-  "Eufy Robot Vacuum Omni C20": "eufy-robot-vacuum-omni-c20",
   "Eufy Robot Vacuum Auto-Empty C10": "anker-eufy-c10",
   "Eufy RoboVac G30 Hybrid": "eufy-robovac-g30-hybrid",
   "Eufy RoboVac G30": "eufy-robovac-g30",

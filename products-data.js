@@ -1814,44 +1814,6 @@ const productsData = [
         rakutenUrl: 'https://search.rakuten.co.jp/search/mall/Eufy+Clean+X8+Pro/'
     },
     {
-        id: 'eufy-robot-vacuum-omni-c20',
-        name: 'Eufy Robot Vacuum Omni C20',
-        manufacturer: 'Anker',
-        price: 89900,
-        rating: 4.78,
-        reviewCount: 215,
-        totalReviewCount: 215,
-        image: 'https://m.media-amazon.com/images/I/61r5Z-H8XmL._AC_SL1500_.jpg',
-        badges: ['7000Pa吸引', '全自動コスパ', '年121h目安'],
-        specs: { suction: 98, mopping: 95, noise: 80, obstacle: 75, app: 90, maintenance: 96 },
-        problems: [
-            {
-                rank: 1,
-                title: 'ゴミ収集時の騒音',
-                percentage: 12,
-                description: 'ドック集塵時の短時間だが大きな音が、静かな時間帯に響きやすい、という層。',
-                solutions: ['おやすみモード', '日中のスケジュール掃除', '外出中の完了設定']
-            },
-            {
-                rank: 2,
-                title: '浄水・汚水タンクの給排水',
-                percentage: 8,
-                description: 'コンパクトドックゆえタンク容量に限りがあり、水拭き頻度が高いと給排水が手間、という層。',
-                solutions: ['水拭き強度を標準・低に', '掃除頻度の調整', '給水の習慣化']
-            },
-            {
-                rank: 3,
-                title: '段差・マット周り',
-                percentage: 6,
-                description: '特定の段差や薄いマットで停止・巻き込みが出る、という層。',
-                solutions: ['進入禁止エリア', 'マット端の整理', '公式推奨の段差目安の確認']
-            }
-        ],
-        recommendations: { petOwner: 95, apartment: 87, working: 94, house: 92, overall: 92 },
-        amazonUrl: 'https://www.amazon.co.jp/s?k=Eufy+Robot+Vacuum+Omni+C20',
-        rakutenUrl: 'https://search.rakuten.co.jp/search/mall/Eufy+Robot+Vacuum+Omni+C20/'
-    },
-    {
         id: 'eufy-robot-vacuum-omni-s1-pro',
         name: 'Eufy Robot Vacuum Omni S1 Pro',
         manufacturer: 'Anker',

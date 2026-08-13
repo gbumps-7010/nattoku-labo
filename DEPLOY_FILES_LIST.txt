@@ -20,7 +20,6 @@
 - products/ecovacs-deebot-t90-omni.html
 - products/ecovacs-deebot-x8-pro-omni.html
 - products/eufy-clean-x8-pro-self-empty.html
-- products/eufy-robot-vacuum-omni-c20.html
 - products/eufy-robot-vacuum-omni-c28.html
 - products/eufy-robot-vacuum-omni-e25.html
 - products/eufy-robot-vacuum-omni-s1-pro.html
@@ -48,7 +47,6 @@
 - products/data/ecovacs-deebot-t90-omni.json
 - products/data/ecovacs-deebot-x8-pro-omni.json
 - products/data/eufy-clean-x8-pro-self-empty.json
-- products/data/eufy-robot-vacuum-omni-c20.json
 - products/data/eufy-robot-vacuum-omni-c28.json
 - products/data/eufy-robot-vacuum-omni-e25.json
 - products/data/eufy-robot-vacuum-omni-s1-pro.json

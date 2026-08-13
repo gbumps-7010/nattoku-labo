@@ -299,29 +299,6 @@
     }
   },
   {
-    "id": "eufy-robot-vacuum-omni-c20",
-    "name": "Eufy Robot Vacuum Omni C20",
-    "manufacturer": "Anker",
-    "price": 69990,
-    "reviewCount": 118,
-    "totalReviewCount": 118,
-    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/arc-market-kaden/cabinet/10911043/4571411226861.jpg",
-    "badges": [
-      "Anker",
-      "水拭き・拭き掃除が良い",
-      "満足・買ってよかった"
-    ],
-    "overallTrustScore": 79.6,
-    "specs": {
-      "suction": 96,
-      "mopping": 82,
-      "noise": 85,
-      "obstacle": 72,
-      "app": 75,
-      "maintenance": 88
-    }
-  },
-  {
     "id": "eufy-robot-vacuum-omni-c28",
     "name": "Eufy Robot Vacuum Omni C28",
     "manufacturer": "Anker",

@@ -20,7 +20,6 @@ const ALL_PRODUCTS = [
     { id: 'deebot-x8-pro-omni', name: 'DEEBOT X8 PRO OMNI', manufacturer: 'ECOVACS', price: 199800 },
     { id: 'eufy-clean-x8-pro-with-self-empty-station', name: 'Eufy Clean X8 Pro with Self-Empty Station', manufacturer: 'Anker', price: 69990 },
     { id: 'eufy-robot-vacuum-auto-empty-c10', name: 'Eufy Robot Vacuum Auto-Empty C10', manufacturer: 'Anker', price: 29990 },
-    { id: 'eufy-robot-vacuum-omni-c20', name: 'Eufy Robot Vacuum Omni C20', manufacturer: 'Anker', price: 69990 },
     { id: 'eufy-robot-vacuum-omni-c28', name: 'Eufy Robot Vacuum Omni C28', manufacturer: 'Anker', price: 99990 },
     { id: 'eufy-robot-vacuum-omni-e25', name: 'Eufy Robot Vacuum Omni E25', manufacturer: 'Anker', price: 119920 },
     { id: 'eufy-robot-vacuum-omni-s1-pro', name: 'Eufy Robot Vacuum Omni S1 Pro', manufacturer: 'Anker', price: 199900 },
@@ -57,18 +56,7 @@ const ALL_PRODUCTS = [
 ];
 
 // メーカー一覧
-const MANUFACTURERS = ['すべて', 'Anker', 'Dreame', 'ECOVACS', 'Roborock', 'SwitchBot', 'iRobot']
-
-// 価格帯一覧（比較ページの価格帯と一致させる）
-const PRICE_RANGES = [
-    { label: 'すべて', min: 0, max: Infinity },
-    { label: '〜5万円', min: 0, max: 50000 },
-    { label: '5〜7万円', min: 50000, max: 70000 },
-    { label: '7〜10万円', min: 70000, max: 100000 },
-    { label: '10〜15万円', min: 100000, max: 150000 },
-    { label: '15〜20万円', min: 150000, max: 200000 },
-    { label: '20万円〜', min: 200000, max: Infinity }
-];
+const MANUFACTURERS = ['すべて', 'Anker', 'Dreame', 'ECOVACS', 'Roborock', 'SwitchBot', 'iRobot'];
 
 // おすすめ比較（価格帯別）
 const COMPARE_BANDS = [
