@@ -46,7 +46,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     
     <!-- ナビゲーションCSS -->
-    <link rel="stylesheet" href="css/navigation.css?v=20260813a">
+    <link rel="stylesheet" href="css/navigation.css?v=20260726a">
     
     <style>
         * {
@@ -195,29 +195,9 @@
         .product-meta {
             display: flex;
             align-items: center;
-            gap: 0.75rem;
+            gap: 1.5rem;
             flex-wrap: wrap;
-        }
-
-        .product-meta-pill {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.25rem;
-            padding: 0.55rem 1rem;
-            border-radius: 999px;
-            font-weight: 700;
-            font-size: 0.92rem;
-            line-height: 1.3;
-            color: #ffffff;
-            background: rgba(15, 23, 42, 0.45);
-            border: 1px solid rgba(255, 255, 255, 0.45);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 1px 0 rgba(255, 255, 255, 0.12) inset;
-        }
-
-        .product-meta-pill [data-dynamic] {
-            color: #7dd3fc;
-            font-weight: 900;
+            opacity: 0.95;
         }
 /* Container */
         .container {
@@ -749,10 +729,10 @@
                     </div>
                     
                     <div class="product-meta">
-                        <div class="product-meta-pill">
+                        <div style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: 20px; font-weight: 600;">
                             総口コミ: <span data-dynamic="totalReviews">0</span>件
                         </div>
-                        <div class="product-meta-pill">
+                        <div style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: 20px; font-weight: 600;">
                             ECサイト口コミの信頼度: <span data-dynamic="reliabilityScore">85.0</span>点
                         </div>
                     </div>
@@ -778,7 +758,6 @@
                 <span style="font-size:0.9rem;font-weight:600;color:#1e40af;">5〜7万円｜全製品のおすすめ比較を見る →</span>
             </a>
         </section>
-
 
         
         <!-- Data Reliability -->
@@ -1166,6 +1145,6 @@
 <script src="js/navigation.js?v=20260624a"></script>
     
         <!-- Chart.js Initialization -->
-    <script src="js/product-charts.js?v=20260813a"></script>
+    <script src="js/product-charts.js?v=20260726b"></script>
 </body>
 </html>

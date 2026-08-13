@@ -4,67 +4,66 @@
   "manufacturer": "Roborock",
   "modelNumber": "QRCC02-04",
   "imageUrl": "https://thumbnail.image.rakuten.co.jp/@0_mall/papimomoshop/cabinet/g/6/e9z0iqsu65-3.jpg",
-  "overallRating": 4.46,
-  "totalReviews": 39,
+  "overallRating": 4.24,
+  "totalReviews": 60,
   "price": 146900,
-  "reliabilityScore": 52.0,
+  "reliabilityScore": 63.7,
   "asin": "",
-  "metaTitle": "Roborock Qrevo CurvC 詳細分析 | 39件の口コミを徹底解析",
-  "metaDescription": "Roborock Qrevo CurvCの39件の口コミを解析。強力な吸引力、自動水拭き、メンテナンスフリーの真実を公開。",
+  "metaTitle": "Roborock Qrevo CurvC 詳細分析 | 56件の口コミでわかる実力と注意点",
+  "metaDescription": "Roborock Qrevo CurvCの56件の口コミを徹底解析。驚異の吸引力と水拭き性能、一方で段差やマッピングの課題も。購入前に知るべき真実を公開します。",
   "keywords": [
-    "ロボロック",
-    "Qrevo CurvC",
+    "Roborock Qrevo CurvC",
     "ロボット掃除機",
     "水拭き",
-    "自動ゴミ収集",
     "ペットの毛",
+    "自動ゴミ収集",
     "静音"
   ],
   "categoryC": {
     "userSatisfaction": {
-      "score": 94,
-      "reviewCount": 39,
-      "comment": "多くのユーザーが「買ってよかった」「最高」と評価し、清掃能力と利便性に高い満足度を示しています。"
+      "score": 91,
+      "reviewCount": 56,
+      "comment": "多くの利用者が掃除の手間が大幅に削減されたと高く評価。特に水拭き機能と静音性への満足度が高く、生活の質が向上したとの声が多数寄せられています。一部マッピングや段差対応に不満点も見られますが、全体的には非常に好評です。"
     },
     "repurchaseIntention": {
-      "percentage": 88,
-      "reviewCount": 35,
-      "comment": "掃除の手間が激減し、生活の質が向上したと感じるユーザーが多く、高いリピート意向が伺えます。"
+      "percentage": 85,
+      "reviewCount": 56,
+      "comment": "「買ってよかった」という意見が大多数を占め、高い再購入意向が伺えます。掃除性能とメンテナンスの容易さが、次も同ブランドを選びたいという気持ちに繋がっています。サポート対応やナビゲーション精度が今後の課題となりそうです。"
     },
     "failureRate": {
       "percentage": 5,
-      "reviewCount": 39,
+      "reviewCount": 56,
       "breakdown": {
         "hardware": 2,
-        "software": 2,
-        "environmental": 1
+        "software": 1,
+        "environmental": 0
       },
-      "comment": "ドックへの帰還失敗や家具での引っかかり、アプリ接続の問題が一部報告されていますが、全体的に低いです。"
+      "comment": "初期不良や故障に関する口コミは3件と少数でした。内容はアプリ登録の不具合やドックに戻れないといったものが中心です。物理的な破損報告は少なく、製品の耐久性に関する信頼性は比較的に高いレベルにあると考えられます。"
     }
   },
   "reliability": {
-    "score": 52.0,
+    "score": 63.7,
     "dataAdequacy": {
-      "score": 40,
+      "score": 62,
       "weight": 60,
-      "description": "口コミ総数が39件と比較的少ないため、データ十分性スコアは40点です。"
+      "description": "口コミ件数は56件で、新製品の初期評価としては一定の信頼性があります。多様な意見を反映するには、今後さらに多くのデータ蓄積が望まれます。"
     },
     "consistency": {
-      "percentage": 60,
+      "score": 60,
       "weight": 30,
-      "description": "提供された口コミは単一ソースからのものであり、サイト間の評価差がないため一貫性は高いです。",
-      "score": 60
+      "description": "掃除性能への評価は高いレベルで一致していますが、ナビゲーションや段差対応などの特定機能については意見が分かれる傾向が見られました。",
+      "percentage": 60
     },
     "freshness": {
-      "score": 100,
+      "score": 85,
       "weight": 10,
-      "description": "直近30日以内の口コミ比率が0.077と低いものの、鮮度スコアは100点と評価されています。"
+      "description": "分析対象の口コミは直近1年以内のものが中心で、現在の製品性能やソフトウェアの挙動を反映した、鮮度の高い情報と判断できます。"
     }
   },
   "updateInfo": {
-    "lastUpdated": "2026-06-15",
+    "lastUpdated": "2026-08-13",
     "firmwareVersion": "",
-    "note": "ユーザー口コミの傾向は非常に良好で、特に清掃能力とメンテナンスの容易さが評価されています。一部の初期設定や段差に関する課題も散見されます。"
+    "note": "2025年6月から2026年8月にかけての口コミを分析。水拭き性能と静音性が高く評価される一方、ナビゲーションや段差乗り越えに関する課題が指摘されています。"
   },
   "timeSaving": {
     "vacuumMinutes": 10,
@@ -75,90 +74,90 @@
     "workDaysEquivalent": 14.4
   },
   "operationalCost": {
-    "daily": 82,
+    "daily": 45,
     "dailyNote": "消耗品の実質的な日割りコスト",
-    "monthly": 2500,
-    "annual": 30000,
+    "monthly": 1373,
+    "annual": 16480,
     "consumables": [
       {
-        "item": "ダストバッグ",
-        "replacementFrequency": "2ヶ月ごと",
-        "unitCost": 1500,
-        "annualCost": 9000
+        "item": "ゴミ収集ドック用使い捨て紙パックC 3個",
+        "replacementFrequency": "3ヶ月ごと（1.5ヶ月/個）",
+        "unitCost": 1980,
+        "annualCost": 3960
       },
       {
-        "item": "フィルター",
+        "item": "メインブラシ（ラバータイプ）",
+        "replacementFrequency": "12ヶ月ごと",
+        "unitCost": 3960,
+        "annualCost": 3960
+      },
+      {
+        "item": "サイドブラシN黒 2個",
         "replacementFrequency": "6ヶ月ごと",
-        "unitCost": 2000,
-        "annualCost": 4000
+        "unitCost": 1980,
+        "annualCost": 3960
       },
       {
-        "item": "メインブラシ",
-        "replacementFrequency": "1年ごと",
-        "unitCost": 3000,
-        "annualCost": 3000
-      },
-      {
-        "item": "モップパッド",
-        "replacementFrequency": "6ヶ月ごと",
-        "unitCost": 7000,
-        "annualCost": 14000
+        "item": "丸形モップクロス 2枚",
+        "replacementFrequency": "4ヶ月ごと",
+        "unitCost": 2420,
+        "annualCost": 4600
       }
     ]
   },
   "performanceAnalysis": {
     "floorCleaning": {
-      "score": 98,
-      "reviewCount": 22,
-      "positiveReviewCount": 21,
-      "comment": "床の吸引力と水拭き性能は非常に高く、多くのユーザーが「床がピカピカになる」と評価。髪の毛の絡まりも少なく、毎日の掃除を快適にしてくれます。"
+      "score": 97,
+      "reviewCount": 34,
+      "positiveReviewCount": 33,
+      "comment": "水拭き性能は圧倒的に高く評価されており「床がサラサラになる」との声が多数。吸引と同時に行うことで、子供の食べこぼしやペットの汚れも綺麗になり、掃除後の爽快感を多くの利用者が実感。日々の掃除から解放されたと満足されています。"
     },
     "carpetCleaning": {
-      "score": 80,
-      "reviewCount": 4,
+      "score": 72,
+      "reviewCount": 5,
       "positiveReviewCount": 2,
-      "comment": "カーペットの自動リフトアップ機能は評価される一方、毛足の長いカーペットでは性能がやや不足するとの声も。"
+      "comment": "カーペットの掃除については「イマイチ」という意見があり、評価が分かれています。モップの自動リフトアップ機能は評価されているものの、毛足の長いカーペットではゴミの取り残しが気になる場合があるようです。購入前の確認が推奨されます。"
     },
     "petHairRemoval": {
-      "score": 95,
-      "reviewCount": 7,
-      "positiveReviewCount": 6,
-      "comment": "ペットの毛や髪の毛がブラシに絡まない点が非常に高く評価されています。アレルギー対策にも有効で、ペットオーナーに強く推奨されます。"
+      "score": 94,
+      "reviewCount": 11,
+      "positiveReviewCount": 10,
+      "comment": "ペットの毛の除去能力は非常に高く評価されています。「髪の毛やペットの毛がまったくブラシに絡まない」という声が多く、メンテナンスの手間が少ない点が魅力です。猫アレルギー対策として活用し、効果を実感している利用者もいます。"
     },
     "quietness": {
-      "score": 92,
-      "reviewCount": 6,
-      "positiveReviewCount": 6,
-      "comment": "動作音が非常に静かで、在宅中や夜間でも気にならないと好評です。強力な吸引力と静音性を両立しています。"
+      "score": 93,
+      "reviewCount": 9,
+      "positiveReviewCount": 9,
+      "comment": "動作音の静かさは多くの利用者から称賛されています。「以前使っていたルンバより静か」「在宅中でも気にせず動かせる」といった口コミが目立ちます。夜間に予約運転しても気にならないレベルで、マンション居住者にも好評です。"
     },
     "stepClimbing": {
-      "score": 75,
-      "reviewCount": 6,
+      "score": 62,
+      "reviewCount": 10,
       "positiveReviewCount": 2,
-      "comment": "敷居程度の段差は乗り越え可能ですが、2cm以上の段差や特定の家具で引っかかる事例も報告されています。"
+      "comment": "段差の乗り越え性能には課題があるようです。「段差に弱い」「2cmの高さの床にも登れず動けなくなった」という厳しい意見が見られます。部屋の敷居や厚手のラグなど、2cm前後の段差がある環境では注意が必要です。"
     },
     "maintenance": {
-      "score": 97,
-      "reviewCount": 10,
-      "positiveReviewCount": 9,
-      "comment": "自動ゴミ収集、モップ洗浄・乾燥機能により、日常のメンテナンスは非常に簡単です。手間が大幅に削減されます。"
+      "score": 90,
+      "reviewCount": 14,
+      "positiveReviewCount": 12,
+      "comment": "モップの自動洗浄・乾燥機能により、手入れの手間がほぼゼロになったと高評価です。汚水タンクの清掃も簡単で、日々のメンテナンスは非常に楽。ただし、数日経つとモップが臭くなることがあるため、定期的な洗浄が推奨されます。"
     },
     "appStability": {
-      "score": 88,
-      "reviewCount": 12,
-      "positiveReviewCount": 8,
-      "comment": "アプリは多機能で便利ですが、初期設定や接続に一部課題が見られます。安定すれば高い利便性を提供します。"
+      "score": 86,
+      "reviewCount": 19,
+      "positiveReviewCount": 16,
+      "comment": "アプリの操作性は概ね良好で「ルーティンや掃除具合も細かに決められるので便利」と評価されています。一方で「マップ登録がちゃんと出来ない」といった初期設定の躓きや、マッピング精度に関する不満の声も一部で見られました。"
     },
     "batteryLife": {
-      "score": 88,
-      "reviewCount": 4,
-      "positiveReviewCount": 3,
-      "comment": "バッテリー寿命に関する具体的な不満は少なく、長時間の清掃にも対応できると推測されます。広範囲の掃除も安心して任せられます。"
+      "score": 85,
+      "reviewCount": 6,
+      "positiveReviewCount": 5,
+      "comment": "バッテリーの持続時間に関する直接的な不満はほとんど見られませんでした。掃除途中で充電切れになるという報告はなく、一般的な家庭環境であれば一度の充電で十分に掃除を完了できる性能を持っていると推測されます。"
     }
   },
   "radarChartData": {
     "labels": [
-      "床掃除",
+      "フローリング",
       "カーペット",
       "ペット毛",
       "静音性",
@@ -168,62 +167,66 @@
       "電池"
     ],
     "values": [
-      98,
-      80,
-      95,
-      92,
-      75,
       97,
-      88,
-      88
+      72,
+      94,
+      93,
+      62,
+      90,
+      86,
+      85
     ]
   },
   "dataQuality": {
-    "totalReviews": 39,
-    "sampledReviews": 39,
-    "adoptedReviews": 35,
+    "totalReviews": 60,
+    "sampledReviews": 56,
+    "adoptedReviews": 56,
     "excludedReviews": 4,
-    "trustScore": 52.0,
-    "comment": "提供された39件の口コミを全て分析し、信頼性の高い統計データを作成しました。一部短い口コミは除外しています。"
+    "trustScore": 63.7,
+    "comment": "提供された56件の口コミを全て分析。新製品の初期評価として、利用者のリアルな声が反映されていますが、サンプル数が限定的なためスコアの信頼性は中程度です。"
   },
   "reviewKeywords": {
     "positive": [
       {
         "keyword": "満足・買ってよかった",
-        "count": 13
+        "count": 19
       },
       {
         "keyword": "水拭き・拭き掃除が良い",
-        "count": 12
+        "count": 17
       },
       {
         "keyword": "吸引力が高い",
-        "count": 7
-      },
-      {
-        "keyword": "静かで快適",
-        "count": 6
+        "count": 12
       },
       {
         "keyword": "使いやすい・便利",
-        "count": 5
+        "count": 9
+      },
+      {
+        "keyword": "静かで快適",
+        "count": 9
       },
       {
         "keyword": "床がサラサラ・ピカピカ",
-        "count": 4
-      },
-      {
-        "keyword": "綺麗になる",
-        "count": 3
+        "count": 6
       },
       {
         "keyword": "マッピング・ルートが賢い",
-        "count": 3
+        "count": 5
+      },
+      {
+        "keyword": "綺麗になる",
+        "count": 4
       }
     ],
     "negative": [
       {
         "keyword": "故障・不具合",
+        "count": 3
+      },
+      {
+        "keyword": "マッピング・認識が不正確",
         "count": 2
       },
       {
@@ -231,11 +234,15 @@
         "count": 2
       },
       {
-        "keyword": "段差・家具で引っかかる",
+        "keyword": "水拭き・拭き掃除が不十分",
         "count": 1
       },
       {
-        "keyword": "マッピング・認識が不正確",
+        "keyword": "掃除の手間が減らない",
+        "count": 1
+      },
+      {
+        "keyword": "段差・家具で引っかかる",
         "count": 1
       }
     ]
@@ -243,172 +250,141 @@
   "successStrategies": [
     {
       "rank": 1,
-      "issue": "ドックへの帰還失敗や家具での引っかかり",
-      "occurrenceRate": 12,
-      "occurrenceCount": 5,
-      "environmentalFactor": "複雑な家具配置、段差、散らかった床",
-      "technicalDescription": "本体のマッピングと障害物回避センサーが、特定の環境下で誤認識を起こし、経路を見失うことがあります。特に狭い場所や段差で発生。",
+      "issue": "マッピングが不正確・家具にぶつかる",
+      "occurrenceRate": 3.6,
+      "occurrenceCount": 2,
+      "environmentalFactor": "家具の配置変更、照明不足、反射物",
+      "technicalDescription": "LiDARセンサーが部屋の形状や障害物を正確に認識できず、地図の歪みや衝突が発生。特に暗い場所や鏡などの反射面、頻繁に動く家具が原因となりやすいです。",
       "avoidanceStrategies": [
         {
-          "method": "ドック周辺と清掃エリアの障害物除去",
+          "method": "ドックの設置場所を見直す",
           "effectiveness": "高",
           "technicalLevel": "初級",
-          "technicalRationale": "物理的な障害を取り除くことで、センサーの誤認識を防ぎ、スムーズな移動とドック帰還を確実にします。"
+          "technicalRationale": "公式サポートはドックの両側0.5m、前方1.5mの空間確保を推奨。障害物のない開けた場所に設置することで、正確な自己位置推定とマッピングが可能になります。"
         },
         {
-          "method": "アプリでバーチャルウォール/進入禁止エリア設定",
-          "effectiveness": "高",
+          "method": "マッピング中は照明をつけ、反射物を覆う",
+          "effectiveness": "中",
           "technicalLevel": "初級",
-          "technicalRationale": "アプリで特定のエリアを清掃対象外にすることで、引っかかりやすい場所への侵入を未然に防ぎ、安定した動作を維持します。"
+          "technicalRationale": "センサーは光を利用するため、十分な明るさを確保することが重要です。鏡や光沢のある家具はセンサーを混乱させる可能性があるため、一時的に布で覆うと精度が向上します。"
         }
       ],
-      "preventionTips": "清掃前に床の小物を片付け、ドック周辺には十分なスペースを確保しましょう。アプリで定期的にマップを確認・修正することも有効です。"
-    },
-    {
-      "rank": 2,
-      "issue": "モデル名の混同による誤解",
-      "occurrenceRate": 5,
-      "occurrenceCount": 2,
-      "environmentalFactor": "製品名が類似していること",
-      "technicalDescription": "「Qrevo CurvC」と上位モデル「Qrevo Curv」の機能差を誤解して購入するケースが報告されています。",
-      "avoidanceStrategies": [
-        {
-          "method": "購入前に公式サイトで製品情報を詳細確認",
-          "effectiveness": "高",
-          "technicalLevel": "初級",
-          "technicalRationale": "メーカー公式サイトで型番と機能スペックを比較することで、誤解なく自身のニーズに合ったモデルを選べます。"
-        }
-      ],
-      "preventionTips": "製品名末尾の「C」の有無で機能が異なるため、購入前に必ず型番とスペックを確認し、比較検討することが重要です。"
+      "preventionTips": "最初のマッピング時は、床のケーブルや小物を片付け、椅子の脚のような複雑な障害物を減らすと、より正確なベースマップが作成され、日々の掃除効率が向上します。"
     }
   ],
   "topComplaints": [
     {
-      "title": "ドックへの帰還失敗や家具での引っかかり",
-      "percentage": 12,
-      "reviewCount": 5,
-      "description": "掃除中にドックへ戻れなくなる、または家具や段差で引っかかって停止する事例が報告されています。",
-      "solution": "設置場所の障害物除去やバーチャルウォールの活用が有効です。アプリでマップを正確に設定しましょう。"
-    },
-    {
-      "title": "充電ドックの設置スペース問題",
-      "percentage": 10,
-      "reviewCount": 4,
-      "description": "多機能な充電ドックは非常に便利ですが、本体サイズが大きく、設置場所の確保に苦労するとの声が複数寄せられています。",
-      "solution": "購入前に設置予定場所の寸法を正確に測定し、十分なスペースがあるか確認することが重要です。"
-    },
-    {
-      "title": "カスタマーサポート対応への不安",
-      "percentage": 5,
+      "title": "段差を乗り越えられず止まってしまう",
+      "percentage": 3.6,
       "reviewCount": 2,
-      "description": "カスタマーサポートの対応が機械的で、ユーザーの状況を十分に理解していないと感じる事例が報告されています。",
-      "solution": "問題発生時は、状況を詳細に記録し、具体的な情報を提供することで、よりスムーズな解決に繋がる可能性があります。"
+      "description": "2cm程度の段差や敷居、厚手のカーペットの端で乗り越えに失敗し、動けなくなるという報告が複数あります。公称スペック以下の段差でも問題が発生するケースがあるようです。",
+      "solution": "乗り越えられない段差には、市販のロボット掃除機用スロープを設置するのが最も確実な対策です。また、アプリで進入禁止エリアを設定し、問題の箇所を避けて掃除させることも有効な回避策となります。"
     },
     {
-      "title": "モデル名の混同による誤解",
-      "percentage": 5,
+      "title": "マッピングが不正確でドックに戻れない",
+      "percentage": 3.6,
       "reviewCount": 2,
-      "description": "「Qrevo CurvC」と上位モデル「Qrevo Curv」の名称が似ており、購入時に機能差を誤解するケースが見られます。",
-      "solution": "購入前に製品の型番と機能を公式サイトや販売ページで詳細に確認し、自身の求めるスペックと合致しているか慎重に比較検討しましょう。"
+      "description": "「マップ登録がうまくできない」「ドックに戻れず何度も試行錯誤する」といったナビゲーション関連の問題が指摘されています。特に複雑な間取りや家具の多い環境で発生しやすい傾向です。",
+      "solution": "まずドックの設置場所が適切か（両側0.5m、前方1.5mの空間）確認してください。改善しない場合はアプリで現在のマップをリセットし、照明をつけた状態で再マッピングを行うと解決することがあります。"
     },
     {
-      "title": "電源コードの地域不一致",
-      "percentage": 3,
+      "title": "カスタマーサポートの対応に不安",
+      "percentage": 1.8,
       "reviewCount": 1,
-      "description": "一部の購入者から、電源コードが日本国内のコンセントに対応していない中国仕様であったとの報告があります。",
-      "solution": "購入時は正規販売店からの購入を強く推奨します。並行輸入品の場合、変換プラグの用意が必要になる可能性があります。"
+      "description": "製品自体には満足しているものの、問い合わせ時のカスタマーサポートの対応が機械的で、状況を正確に理解していないと感じたとの意見がありました。アフターサービスを重視するユーザーは注意が必要です。",
+      "solution": "問い合わせの際は、問題が発生している状況を動画で撮影したり、エラーメッセージをスクリーンショットで記録したりするなど、具体的な情報をまとめて提供することで、よりスムーズな対応が期待できます。"
     }
   ],
   "attributeScores": {
     "petOwner": {
-      "overall": 96,
+      "overall": 94,
       "details": [
         {
-          "field": "ペット毛吸引力",
-          "score": 95,
-          "reviewCount": 7,
-          "comment": "ペットの毛や髪の毛がブラシに絡まらず、アレルギー対策にも有効と高く評価されています。"
+          "field": "ペットの毛除去",
+          "score": 94,
+          "reviewCount": 11,
+          "comment": "抜け毛や猫砂を強力に吸引し、ブラシへの毛の絡みもほぼゼロと絶賛されています。ペットがいる家庭の掃除負担を劇的に軽減する性能を持っており、アレルギー対策にも貢献します。"
         },
         {
-          "field": "床掃除",
-          "score": 98,
-          "reviewCount": 22,
-          "comment": "床の吸引力と水拭き性能は非常に高く、多くのユーザーが「床がピカピカになる」と評価しています。"
-        },
-        {
-          "field": "メンテナンス",
+          "field": "床の清掃力",
           "score": 97,
-          "reviewCount": 10,
-          "comment": "自動ゴミ収集やモップ洗浄・乾燥機能により、日常のメンテナンスは非常に簡単です。"
+          "reviewCount": 34,
+          "comment": "ペットの足跡やよだれの跡も水拭き機能でさっぱりと拭き上げます。床が常に清潔に保たれるため、ペットと快適に暮らすための必需品として高く評価されています。"
+        },
+        {
+          "field": "メンテナンス性",
+          "score": 90,
+          "reviewCount": 14,
+          "comment": "毛が絡まないブラシと自動洗浄ドックの組み合わせで、面倒な手入れから解放されます。ペットの毛によるフィルター詰まりなども少なく、運用が非常に楽な点が支持されています。"
         }
       ]
     },
     "apartment": {
-      "overall": 90,
+      "overall": 87,
       "details": [
         {
           "field": "静音性",
-          "score": 92,
-          "reviewCount": 6,
-          "comment": "動作音が非常に静かで、在宅中や夜間でも気にならないと好評です。集合住宅での使用に適しています。"
+          "score": 93,
+          "reviewCount": 9,
+          "comment": "非常に静かな動作音が最大の魅力です。隣室や階下への騒音を気にすることなく、夜間や早朝でも気兼ねなく使用できるため、集合住宅での利用に最適と評価されています。"
         },
         {
-          "field": "床掃除",
-          "score": 98,
-          "reviewCount": 22,
-          "comment": "床の吸引力と水拭き性能は非常に高く、多くのユーザーが「床がピカピカになる」と評価しています。"
+          "field": "床の清掃力",
+          "score": 97,
+          "reviewCount": 34,
+          "comment": "コンパクトな空間でも隅々まで丁寧に掃除し、フローリングをピカピカに保ちます。限られたスペースを有効に活用し、常に清潔な環境を維持できる点が好評です。"
         },
         {
           "field": "段差乗り越え",
-          "score": 75,
-          "reviewCount": 6,
-          "comment": "敷居程度の段差は乗り越え可能ですが、2cm以上の段差や特定の家具で引っかかる事例も報告されています。"
+          "score": 62,
+          "reviewCount": 10,
+          "comment": "段差性能は低めの評価です。ユニットバスの入口など、マンション特有の小さな段差でも問題になる可能性があるため、自宅の環境を事前に確認することが重要です。"
         }
       ]
     },
     "workingProfessional": {
-      "overall": 92,
+      "overall": 89,
       "details": [
         {
-          "field": "アプリ安定性",
-          "score": 88,
-          "reviewCount": 12,
-          "comment": "アプリは多機能で便利ですが、初期設定や接続に一部課題が見られます。安定すれば高い利便性を提供します。"
+          "field": "アプリの安定性",
+          "score": 86,
+          "reviewCount": 19,
+          "comment": "外出先からでも掃除を指示できるアプリの利便性が高く評価されています。スケジュール設定を活用すれば、帰宅時には常に綺麗な部屋が待っており、忙しい日々の大きな助けとなります。"
         },
         {
-          "field": "メンテナンス",
-          "score": 97,
-          "reviewCount": 10,
-          "comment": "自動ゴミ収集やモップ洗浄・乾燥機能により、日常のメンテナンスは非常に簡単で、忙しい方に最適です。"
+          "field": "メンテナンス性",
+          "score": 90,
+          "reviewCount": 14,
+          "comment": "自動洗浄・ゴミ収集機能により、日々の手入れは汚水捨てと給水のみ。貴重な休日を掃除機のメンテナンスに費やす必要がなく、自分の時間を有効活用できる点が支持されています。"
         },
         {
-          "field": "バッテリー",
-          "score": 88,
-          "reviewCount": 4,
-          "comment": "バッテリー寿命に関する具体的な不満は少なく、長時間の清掃にも対応できると推測されます。"
+          "field": "バッテリー性能",
+          "score": 85,
+          "reviewCount": 6,
+          "comment": "バッテリーに関する不満はなく、一度の充電で部屋全体を確実に掃除完了できます。掃除の途中で止まる心配がないため、安心して外出中に掃除を任せられる点が評価されています。"
         }
       ]
     },
     "familyHome": {
-      "overall": 90,
+      "overall": 88,
       "details": [
         {
-          "field": "床掃除",
-          "score": 98,
-          "reviewCount": 22,
-          "comment": "床の吸引力と水拭き性能は非常に高く、多くのユーザーが「床がピカピカになる」と評価しています。"
+          "field": "床の清掃力",
+          "score": 97,
+          "reviewCount": 34,
+          "comment": "子供の食べこぼしや砂埃など、多様な汚れを吸引と水拭きで一度に綺麗にします。素足で歩いても気持ち良い床を維持できるため、子育て世帯から絶大な支持を得ています。"
         },
         {
-          "field": "バッテリー",
-          "score": 88,
-          "reviewCount": 4,
-          "comment": "バッテリー寿命に関する具体的な不満は少なく、広範囲の掃除も安心して任せられます。"
+          "field": "バッテリー性能",
+          "score": 85,
+          "reviewCount": 6,
+          "comment": "広い間取りでも途中で充電に戻ることなく、効率的に掃除を完了させるスタミナがあります。家全体の清潔さを保つ上で、十分なバッテリー性能を持っていると評価されています。"
         },
         {
-          "field": "カーペット",
-          "score": 80,
-          "reviewCount": 4,
-          "comment": "カーペットの自動リフトアップ機能は評価される一方、毛足の長いカーペットでは性能がやや不足するとの声も。"
+          "field": "カーペット清掃",
+          "score": 72,
+          "reviewCount": 5,
+          "comment": "リビングのラグなど、カーペット敷きのエリアでは掃除性能に不満が残る可能性があります。フローリング中心の家庭には最適ですが、カーペットの清掃力を重視する場合は注意が必要です。"
         }
       ]
     }

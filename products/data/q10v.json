@@ -2,68 +2,68 @@
   "productId": "q10v",
   "productName": "Q10V",
   "manufacturer": "Roborock",
-  "modelNumber": "Q10V52-04",
+  "modelNumber": "Q10V",
   "imageUrl": "https://thumbnail.image.rakuten.co.jp/@0_mall/goodlifeshopstore/cabinet/g/11/e9z0wtw8az-4.jpg",
-  "overallRating": 4.14,
-  "totalReviews": 38,
-  "price": 35999,
-  "reliabilityScore": 52.0,
+  "overallRating": 4.24,
+  "totalReviews": 51,
+  "price": 57999,
+  "reliabilityScore": 62.5,
   "asin": "",
-  "metaTitle": "Roborock Q10V 詳細分析 | 吸引力と水拭きを両立した高コスパモデルの真実",
-  "metaDescription": "Roborock Q10Vの38件の口コミを解析。強力な吸引力と水拭き性能、静音性など、Q10Vの真実を公開。",
+  "metaTitle": "Roborock Q10V 詳細分析 | 50件の口コミで判明した賢さと弱点",
+  "metaDescription": "Roborock Q10Vの50件の口コミを徹底解析。賢いマッピング性能や静音性は高評価ですが、故障の多さやサポート対応の問題など、購入前に知るべき真実を公開します。",
   "keywords": [
     "Roborock Q10V",
     "ロボット掃除機",
+    "口コミ",
+    "評判",
     "水拭き",
-    "吸引力",
-    "静音性",
-    "コスパ"
+    "マッピング"
   ],
   "categoryC": {
     "userSatisfaction": {
-      "score": 88,
-      "reviewCount": 38,
-      "comment": "多くのユーザーが吸引力、水拭き、静音性に満足しており、日常の掃除を大幅に効率化できると評価しています。"
+      "score": 82,
+      "reviewCount": 50,
+      "comment": "マッピング精度や静音性、基本的な清掃能力には多くのユーザーが満足しています。しかし、初期不良や故障報告が散見され、サポート対応への不満が全体の満足度を下げています。"
     },
     "repurchaseIntention": {
-      "percentage": 80,
-      "reviewCount": 30,
-      "comment": "「買ってよかった」「次もロボロック」という声が多い一方、一部の不具合報告が再購入意向に影響しています。"
+      "percentage": 65,
+      "reviewCount": 50,
+      "comment": "製品の基本性能を評価し、次もロボロックを検討したいという声がある一方、故障時の対応や耐久性への懸念から、他社製品への乗り換えを考えるユーザーも少なくありません。"
     },
     "failureRate": {
-      "percentage": 13,
-      "reviewCount": 5,
+      "percentage": 20,
+      "reviewCount": 50,
       "breakdown": {
-        "hardware": 6,
+        "hardware": 16,
         "software": 4,
-        "environmental": 3
+        "environmental": 0
       },
-      "comment": "購入後短期間での故障やアプリ関連の不具合報告があり、特にハードウェア故障が一部見られます。"
+      "comment": "購入後数ヶ月での故障報告が10件と目立ちます。「電源が入らない」「動かなくなった」といったハードウェアの不具合が多く、製品の信頼性に課題を残しています。"
     }
   },
   "reliability": {
-    "score": 52.0,
+    "score": 62.5,
     "dataAdequacy": {
-      "score": 40,
+      "score": 60,
       "weight": 60,
-      "description": "口コミ総数が38件と少ないため、データ十分性のスコアは低めですが、提供されたデータは全て分析対象です。"
+      "description": "口コミ件数は50件で、製品の主要な長所と短所を把握するには一定の信頼性がありますが、より多角的な評価のためにはさらなるデータ蓄積が望まれます。"
     },
     "consistency": {
-      "percentage": 60,
+      "score": 60,
       "weight": 30,
-      "description": "口コミ全体で高評価と低評価が混在しており、特に初期不良やアプリの不安定さで一貫性に課題が見られます。",
-      "score": 60
+      "description": "清掃性能への高評価と、故障やサポートへの厳しい批判で意見が二分しており、一貫性は中程度です。購入時期や個体差による品質のばらつきが示唆されます。",
+      "percentage": 60
     },
     "freshness": {
-      "score": 100,
+      "score": 85,
       "weight": 10,
-      "description": "直近30日以内の口コミが全体の2.6%と少ないものの、最新の口コミが含まれており鮮度は高いです。"
+      "description": "直近3ヶ月以内の口コミが全体の約2割を占めており、最近のファームウェアや製品品質の傾向を反映しているため、情報の鮮度は比較的新しいと評価できます。"
     }
   },
   "updateInfo": {
-    "lastUpdated": "2026-06-15",
+    "lastUpdated": "2026-08-13",
     "firmwareVersion": "",
-    "note": "口コミは2025年6月から2026年5月までの期間にわたります。全体的に高機能への評価が高いです。"
+    "note": "2025年後半から2026年前半にかけての口コミが中心。賢いナビゲーション機能は好評ですが、2026年に入りAlexa連携の不具合や初期不良に関する報告が散見されます。"
   },
   "timeSaving": {
     "vacuumMinutes": 10,
@@ -75,7 +75,7 @@
   },
   "operationalCost": {
     "daily": 43,
-    "dailyNote": "消耗品の実質的な日割りコスト",
+    "dailyNote": "消耗品（メインブラシ、サイドブラシ、フィルター、モップクロス）の交換コストを日割りで計算した実質的な運用費用です。",
     "monthly": 1300,
     "annual": 15600,
     "consumables": [
@@ -108,56 +108,56 @@
   "performanceAnalysis": {
     "floorCleaning": {
       "score": 95,
-      "reviewCount": 23,
-      "positiveReviewCount": 22,
-      "comment": "強力な吸引力と水拭き機能で、日常の床掃除を効率的に行い、床を常に清潔に保てると高評価です。"
+      "reviewCount": 27,
+      "positiveReviewCount": 26,
+      "comment": "10,000Paの強力な吸引力と高振動水拭き機能は絶賛されています。「床がサラサラになる」「ゴミをしっかり吸い取る」など、基本的な清掃能力は非常に高く評価されています。"
     },
     "carpetCleaning": {
-      "score": 90,
+      "score": 84,
       "reviewCount": 10,
-      "positiveReviewCount": 9,
-      "comment": "カーペットの奥のゴミやペットの毛も強力に吸引し、水拭き時にはモップを自動で持ち上げるため安心です。"
+      "positiveReviewCount": 8,
+      "comment": "カーペットを自動認識し吸引力を高める機能や、水拭きモップのリフトアップ機能は好評です。ただし一部で「カーペットが湿る」との指摘もあり、毛足の長さによっては注意が必要です。"
     },
     "petHairRemoval": {
-      "score": 93,
+      "score": 92,
       "reviewCount": 11,
       "positiveReviewCount": 10,
-      "comment": "ペットの毛絡まりを抑えるブラシと強力な吸引力で、ペットを飼っている家庭でも高い清掃能力を発揮します。"
+      "comment": "ペットの毛に対する吸引力は高く評価されています。ゴム製のメインブラシが毛の絡まりを防ぎ、効率的に清掃できるため、ペットを飼っている家庭でも満足度が高いようです。"
     },
     "quietness": {
-      "score": 90,
-      "reviewCount": 11,
-      "positiveReviewCount": 10,
-      "comment": "動作音が非常に静かで、夜間や在宅時でも気にならず、ストレスなく使用できると多くのユーザーが評価しています。"
+      "score": 93,
+      "reviewCount": 15,
+      "positiveReviewCount": 14,
+      "comment": "「ルンバよりはるかに静か」「夜間でも気にならない」といった声が多く、動作音の静かさは大きな長所です。在宅中でもストレスなく使用できる点が支持されています。"
     },
     "stepClimbing": {
-      "score": 70,
-      "reviewCount": 11,
-      "positiveReviewCount": 6,
-      "comment": "2cm程度の段差は乗り越えるものの、スムーズさに欠ける場合があり、家具への接触を避ける工夫が必要です。"
+      "score": 78,
+      "reviewCount": 17,
+      "positiveReviewCount": 13,
+      "comment": "約2cmまでの段差に対応し、扇風機の台座なども乗り越える走破性があります。しかし、段差の形状によっては勢いよく衝突することもあり、家具への保護を検討する声もありました。"
     },
     "maintenance": {
-      "score": 75,
-      "reviewCount": 8,
-      "positiveReviewCount": 4,
-      "comment": "自動ゴミ収集機能がないため、ゴミ捨てや水補給は手動ですが、衛生面を重視するユーザーには許容範囲です。"
+      "score": 68,
+      "reviewCount": 11,
+      "positiveReviewCount": 5,
+      "comment": "本体のダスト容器の排出口が小さく「ゴミが捨てにくい」という意見が複数見られます。手動でのゴミ捨てを頻繁に行う場合、この点はストレスになる可能性があります。"
     },
     "appStability": {
-      "score": 70,
-      "reviewCount": 21,
-      "positiveReviewCount": 12,
-      "comment": "アプリ操作は直感的で便利ですが、Alexa連携の不具合やWi-Fi接続の不安定さ、日本語音声への不満が見られます。"
+      "score": 80,
+      "reviewCount": 26,
+      "positiveReviewCount": 20,
+      "comment": "マッピング機能は「部屋の間取りが完璧」と高評価ですが、初期設定やWi-Fi接続で手間取るケースも。また、Alexa連携が不安定になるという報告も複数寄せられています。"
     },
     "batteryLife": {
-      "score": 80,
-      "reviewCount": 10,
-      "positiveReviewCount": 7,
-      "comment": "バッテリーは一般的な家庭での使用には十分ですが、広範囲を一度に掃除する際には充電が必要になる場合があります。"
+      "score": 88,
+      "reviewCount": 14,
+      "positiveReviewCount": 12,
+      "comment": "一般的な1〜2人暮らしの住居であれば、一度の充電で十分に掃除を完了できます。吸引力を最大に設定して広い範囲を掃除する場合は、途中で充電に戻ることもあります。"
     }
   },
   "radarChartData": {
     "labels": [
-      "床掃除",
+      "フローリング",
       "カーペット",
       "ペット毛",
       "静音性",
@@ -168,40 +168,40 @@
     ],
     "values": [
       95,
-      90,
+      84,
+      92,
       93,
-      90,
-      70,
-      75,
-      70,
-      80
+      78,
+      68,
+      80,
+      88
     ]
   },
   "dataQuality": {
-    "totalReviews": 38,
-    "sampledReviews": 38,
-    "adoptedReviews": 38,
-    "excludedReviews": 0,
-    "trustScore": 52.0,
-    "comment": "提供された38件の口コミ全てを分析対象としました。口コミ数が少ないため信頼度スコアは中程度です。"
+    "totalReviews": 51,
+    "sampledReviews": 50,
+    "adoptedReviews": 50,
+    "excludedReviews": 1,
+    "trustScore": 62.5,
+    "comment": "Amazonの口コミ50件を分析。清掃性能に関する具体的な評価が多い一方、購入直後の故障報告も目立ち、製品の耐久性や品質管理には注意が必要です。"
   },
   "reviewKeywords": {
     "positive": [
       {
         "keyword": "水拭き・拭き掃除が良い",
-        "count": 16
+        "count": 18
       },
       {
         "keyword": "満足・買ってよかった",
-        "count": 13
+        "count": 17
       },
       {
         "keyword": "マッピング・ルートが賢い",
-        "count": 11
+        "count": 16
       },
       {
         "keyword": "静かで快適",
-        "count": 11
+        "count": 15
       },
       {
         "keyword": "吸引力が高い",
@@ -219,26 +219,26 @@
     "negative": [
       {
         "keyword": "故障・不具合",
-        "count": 5
+        "count": 10
       },
       {
         "keyword": "止まってしまう",
-        "count": 3
-      },
-      {
-        "keyword": "段差・家具で引っかかる",
-        "count": 1
-      },
-      {
-        "keyword": "コードを巻き込む",
-        "count": 1
-      },
-      {
-        "keyword": "動作音が気になる",
-        "count": 1
+        "count": 4
       },
       {
         "keyword": "水拭き・拭き掃除が不十分",
+        "count": 3
+      },
+      {
+        "keyword": "動作音が気になる",
+        "count": 2
+      },
+      {
+        "keyword": "段差・家具で引っかかる",
+        "count": 2
+      },
+      {
+        "keyword": "コードを巻き込む",
         "count": 1
       }
     ]
@@ -246,178 +246,187 @@
   "successStrategies": [
     {
       "rank": 1,
-      "issue": "購入後の故障・不具合",
-      "occurrenceRate": 13,
-      "occurrenceCount": 5,
-      "environmentalFactor": "初期不良、使用環境、サポート体制",
-      "technicalDescription": "購入後短期間で電源が入らない、動作停止などのハードウェア故障や、マップ読み込みエラーなどのソフトウェア不具合が発生しています。",
+      "issue": "突然の故障・動作不能",
+      "occurrenceRate": 20,
+      "occurrenceCount": 10,
+      "environmentalFactor": "製品の個体差、初期不良",
+      "technicalDescription": "「購入2ヶ月で動かなくなった」「電源が入らず充電もできない」など、使用期間が短い中での致命的なハードウェア故障報告が複数あり、製品の信頼性に懸念が残ります。",
       "avoidanceStrategies": [
         {
-          "method": "購入前の保証内容確認",
+          "method": "Amazon購入品は日本正規代理店の保証対象外のため、正規販売店で購入する",
           "effectiveness": "高",
           "technicalLevel": "初級",
-          "technicalRationale": "Amazon購入品は日本のRoborock Japan保証非対応との報告があり、購入前に販売店の保証内容とサポート体制を必ず確認してください。"
+          "technicalRationale": "正規販売店からの購入であれば、国内の公式サポートや保証規定が適用されます。これにより、万が一の故障時にも修理や交換などの適切な対応を期待できます。"
         },
         {
-          "method": "初期設定の丁寧な実施",
+          "method": "製品到着後、速やかに全機能の動作確認を行う",
           "effectiveness": "中",
           "technicalLevel": "初級",
-          "technicalRationale": "Wi-Fi接続やマッピングが不安定な場合、アプリの再インストールやルーター設定の見直しで改善する可能性があります。"
+          "technicalRationale": "初期不良の多くは使用開始直後に発生します。保証期間内に問題を発見し、販売元の返品・交換ポリシーに基づき迅速に対応することが重要です。"
         }
       ],
-      "preventionTips": "製品が届いたらすぐに動作確認を行い、異常があれば速やかに販売店へ問い合わせましょう。保証書も大切に保管してください。"
+      "preventionTips": "購入前に販売元が正規代理店であるかを確認することが最も重要です。また、延長保証サービスへの加入も、長期的な安心材料として有効な選択肢となります。"
     },
     {
       "rank": 2,
-      "issue": "アプリ・Alexa連携の不安定さ",
-      "occurrenceRate": 11,
+      "issue": "充電ドックに戻れない・迷子になる",
+      "occurrenceRate": 8,
       "occurrenceCount": 4,
-      "environmentalFactor": "Wi-Fi環境、ファームウェア、アプリバージョン",
-      "technicalDescription": "Alexa経由の定型アクションが機能しない、Wi-Fi接続が頻繁に切れる、マップを読み込めないなどの問題が報告されています。",
+      "environmentalFactor": "ドック周辺の環境、マップデータの破損",
+      "technicalDescription": "清掃完了後や手動で一時停止した後に、本体がドックの位置を見失い、部屋をさまようことがあります。これはマップ情報の不整合やドック周辺の障害物が原因と考えられます。",
       "avoidanceStrategies": [
         {
-          "method": "Wi-Fi環境の最適化",
+          "method": "ドック周辺に十分なスペース（左右0.5m、前方1.5m）を確保する",
           "effectiveness": "高",
-          "technicalLevel": "中級",
-          "technicalRationale": "2.4GHz帯での安定したWi-Fi接続が推奨されます。ルーターの再起動や設置場所の変更で接続が改善する場合があります。"
+          "technicalLevel": "初級",
+          "technicalRationale": "ドックは赤外線信号で本体を誘導します。周辺に障害物や鏡面、直射日光があると信号が乱れ、帰還精度が低下するため、推奨スペースの確保が不可欠です。"
         },
         {
-          "method": "アプリ・ファームウェアの更新",
-          "effectiveness": "中",
-          "technicalLevel": "初級",
-          "technicalRationale": "アプリやファームウェアのバージョンが古いと不具合が発生しやすいため、常に最新の状態に保つことが重要です。"
+          "method": "アプリでマップをリセットし、再マッピングを行う",
+          "effectiveness": "高",
+          "technicalLevel": "中級",
+          "technicalRationale": "家具の移動などでマップと実際の部屋の状況が大きく異なると、自己位置の推定に失敗します。マップを再作成することで、正確なナビゲーションが回復します。"
         }
       ],
-      "preventionTips": "アプリの権限設定を確認し、必要な許可を与えましょう。Alexa連携は、Roborockスキルを再有効化すると改善することがあります。"
+      "preventionTips": "ドックはWi-Fiルーターから離れた、壁際で床が平らな場所に設置するのが理想です。また、清掃途中で本体を持ち上げて移動させることは極力避けてください。"
+    },
+    {
+      "rank": 3,
+      "issue": "Alexa連携が機能しない・不安定",
+      "occurrenceRate": 6,
+      "occurrenceCount": 3,
+      "environmentalFactor": "アプリやスキルのバージョン、サーバー側の問題",
+      "technicalDescription": "「定型アクションが実行できなくなった」「日本語化が壊れている」など、スマートスピーカー連携に関する問題が報告されています。これはRoborock側のサーバーやスキル更新に起因する場合があります。",
+      "avoidanceStrategies": [
+        {
+          "method": "AlexaアプリでRoborockスキルを一度無効化し、再度有効化して再リンクする",
+          "effectiveness": "中",
+          "technicalLevel": "中級",
+          "technicalRationale": "アカウントの連携情報に一時的な不整合が生じている可能性があります。スキルを再リンクすることで認証情報がリフレッシュされ、問題が解決することがあります。"
+        },
+        {
+          "method": "RoborockアプリとAlexaアプリを常に最新バージョンにアップデートする",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalRationale": "アプリやスキルのアップデートにより、既知の不具合が修正されることがあります。両方のアプリを最新の状態に保つことで、安定した連携を維持できます。"
+        }
+      ],
+      "preventionTips": "連携が不安定な場合は、まずRoborockアプリから正常に操作できるかを確認してください。本体がオフラインの場合、外部サービスからの操作は一切受け付けません。"
     }
   ],
   "topComplaints": [
     {
-      "title": "購入後の故障・不具合",
-      "percentage": 13,
-      "reviewCount": 5,
-      "description": "購入後短期間で電源が入らない、動作停止などのハードウェア故障や、マップ読み込みエラーなどのソフトウェア不具合が発生しています。",
-      "solution": "Amazon購入品は日本のRoborock Japan保証非対応との報告もあり、購入前に販売店の保証内容とサポート体制の確認が重要です。"
+      "title": "購入後、数ヶ月で故障する",
+      "percentage": 20,
+      "reviewCount": 10,
+      "description": "「買って2ヶ月で動かなくなった」「電源が入らない」といった、使用期間の短い中での致命的な故障報告が最も多く、製品の耐久性に大きな懸念が寄せられています。",
+      "solution": "Amazon購入品は日本の正規保証対象外との報告があるため、購入前に正規販売店か確認することが重要です。万一故障した際は、まず販売元に問い合わせてください。"
     },
     {
-      "title": "アプリ・Alexa連携の不安定さ",
-      "percentage": 11,
-      "reviewCount": 4,
-      "description": "Alexa連携の不具合やWi-Fi接続の不安定さ、マッピングエラーなど、アプリ関連の課題が指摘されています。",
-      "solution": "Wi-Fi環境の確認やアプリの再インストール、ファームウェアの最新化で改善される可能性があります。"
-    },
-    {
-      "title": "日本語音声の違和感",
-      "percentage": 5,
-      "reviewCount": 2,
-      "description": "日本語音声が不自然で、カタコトに感じるという意見があり、英語モードへの切り替えを推奨する声もあります。",
-      "solution": "アプリ設定で音声言語を英語に変更するか、今後のファームウェアアップデートでの改善に期待しましょう。"
-    },
-    {
-      "title": "段差乗り越え・引っかかり",
-      "percentage": 5,
-      "reviewCount": 2,
-      "description": "1cm程度のマットを避ける、2cm段差でぶつかるなど、段差乗り越え性能に課題が見られます。",
-      "solution": "段差部分にスロープを設置したり、進入禁止エリアを設定することで、スムーズな走行を促せます。"
-    },
-    {
-      "title": "ゴミ捨て・水補給の手間",
+      "title": "充電ドックに戻れない・迷子になる",
       "percentage": 8,
-      "reviewCount": 3,
-      "description": "自動ゴミ収集・給水機能がないため、ゴミ捨てや水補給の手間が毎日の運用で発生します。",
-      "solution": "ドックなしモデルの特性として受け入れ、こまめなメンテナンスで衛生的に保つ運用が推奨されます。"
+      "reviewCount": 4,
+      "description": "掃除の途中で持ち上げたり、掃除完了後にホームベースを見失ったりする事例が報告されています。マップ情報と実際の環境のズレが主な原因と考えられます。",
+      "solution": "公式の案内に従い、ドックの周囲に十分な空間を確保してください。解決しない場合は、アプリでマップを一度リセットし、家全体を再マッピングすると改善することがあります。"
+    },
+    {
+      "title": "ゴミが捨てにくい",
+      "percentage": 4,
+      "reviewCount": 2,
+      "description": "本体のダストボックスの排出口が狭い構造のため、溜まったゴミをスムーズに捨てにくいという指摘があります。自動ゴミ収集ドックなしでの運用を考えている方は注意が必要です。",
+      "solution": "ゴミを捨てる際は、ダストボックスを少し傾けたり軽く振ったりして、ゴミを排出口に誘導すると捨てやすくなります。定期的なフィルター清掃もゴミの固着を防ぎます。"
     }
   ],
   "attributeScores": {
     "petOwner": {
-      "overall": 90,
+      "overall": 87,
       "details": [
         {
-          "field": "ペット毛吸引力",
-          "score": 93,
+          "field": "ペットの毛吸引",
+          "score": 92,
           "reviewCount": 11,
-          "comment": "ペットの毛絡まりを抑えるブラシと強力な吸引力で、ペットを飼っている家庭でも高い清掃能力を発揮します。"
+          "comment": "毛が絡まりにくいゴム製ブラシと強力な吸引力で、ペットの毛を効率的に除去します。多くのペットオーナーから高い評価を得ており、抜け毛対策に非常に有効です。"
         },
         {
           "field": "床掃除",
           "score": 95,
-          "reviewCount": 23,
-          "comment": "強力な吸引力と水拭き機能で、日常の床掃除を効率的に行い、床を常に清潔に保てると高評価です。"
+          "reviewCount": 27,
+          "comment": "吸引と水拭きを同時に行い、ペットの足跡や細かなホコリもきれいにします。床がサラサラに仕上がるため、素足で過ごすことが多い家庭に最適です。"
         },
         {
           "field": "メンテナンス",
-          "score": 75,
-          "reviewCount": 8,
-          "comment": "自動ゴミ収集機能がないため、ゴミ捨てや水補給は手動ですが、衛生面を重視するユーザーには許容範囲です。"
+          "score": 68,
+          "reviewCount": 11,
+          "comment": "ゴミ捨てのしにくさが指摘されており、ペットの毛が多く溜まると、より手間を感じる可能性があります。こまめなゴミ捨てとフィルター清掃が快適な運用の鍵です。"
         }
       ]
     },
     "apartment": {
-      "overall": 88,
+      "overall": 90,
       "details": [
         {
           "field": "静音性",
-          "score": 90,
-          "reviewCount": 11,
-          "comment": "動作音が非常に静かで、夜間や在宅時でも気にならず、ストレスなく使用できると多くのユーザーが評価しています。"
+          "score": 93,
+          "reviewCount": 15,
+          "comment": "「非常に静か」との口コミが多く、集合住宅での夜間や早朝の運転でも、近隣への騒音を気にせず使用できます。在宅ワーク中も邪魔になりにくい点が魅力です。"
         },
         {
           "field": "床掃除",
           "score": 95,
-          "reviewCount": 23,
-          "comment": "強力な吸引力と水拭き機能で、日常の床掃除を効率的に行い、床を常に清潔に保てると高評価です。"
+          "reviewCount": 27,
+          "comment": "コンパクトな設計ながら、パワフルな吸引力と丁寧な水拭きでフローリングをピカピカに保ちます。限られたスペースでも隅々まで効率的に掃除してくれます。"
         },
         {
           "field": "段差乗り越え",
-          "score": 70,
-          "reviewCount": 11,
-          "comment": "2cm程度の段差は乗り越えるものの、スムーズさに欠ける場合があり、家具への接触を避ける工夫が必要です。"
+          "score": 78,
+          "reviewCount": 17,
+          "comment": "敷居やカーペットの段差は問題なく乗り越えますが、乗り越える際に多少の衝撃音が出ることがあります。下の階への影響が気になる場合は、スロープの設置も有効です。"
         }
       ]
     },
     "workingProfessional": {
-      "overall": 74,
+      "overall": 81,
       "details": [
         {
           "field": "アプリ安定性",
-          "score": 70,
-          "reviewCount": 21,
-          "comment": "アプリ操作は直感的で便利ですが、Alexa連携の不具合やWi-Fi接続の不安定さ、日本語音声への不満が見られます。"
+          "score": 80,
+          "reviewCount": 26,
+          "comment": "外出先から掃除を指示できるアプリは便利ですが、Alexa連携の不安定さやWi-Fi接続の問題が指摘されています。安定運用にはネットワーク環境の見直しが必要な場合もあります。"
         },
         {
           "field": "メンテナンス",
-          "score": 75,
-          "reviewCount": 8,
-          "comment": "自動ゴミ収集機能がないため、ゴミ捨てや水補給は手動ですが、衛生面を重視するユーザーには許容範囲です。"
+          "score": 68,
+          "reviewCount": 11,
+          "comment": "忙しい中で、手動でのゴミ捨てが面倒に感じられるかもしれません。特にゴミ捨て口の構造は改善の余地があり、手間を最小限にしたい場合は自動収集ドック付きモデルが推奨されます。"
         },
         {
           "field": "バッテリー",
-          "score": 80,
-          "reviewCount": 10,
-          "comment": "バッテリーは一般的な家庭での使用には十分ですが、広範囲を一度に掃除する際には充電が必要になる場合があります。"
+          "score": 88,
+          "reviewCount": 14,
+          "comment": "一人暮らしの部屋であれば、バッテリー切れの心配はほぼありません。スケジュール設定で留守中に掃除を完了させることができ、帰宅時にはきれいな部屋が待っています。"
         }
       ]
     },
     "familyHome": {
-      "overall": 89,
+      "overall": 88,
       "details": [
         {
           "field": "床掃除",
           "score": 95,
-          "reviewCount": 23,
-          "comment": "強力な吸引力と水拭き機能で、日常の床掃除を効率的に行い、床を常に清潔に保てると高評価です。"
+          "reviewCount": 27,
+          "comment": "子供の食べこぼしやホコリを強力に吸引し、水拭きで仕上げるため、衛生的な床を保てます。広いリビングでも効率的なルートで掃除し、家事の負担を大幅に軽減します。"
         },
         {
           "field": "バッテリー",
-          "score": 80,
-          "reviewCount": 10,
-          "comment": "バッテリーは一般的な家庭での使用には十分ですが、広範囲を一度に掃除する際には充電が必要になる場合があります。"
+          "score": 88,
+          "reviewCount": 14,
+          "comment": "複数の部屋を掃除しても、途中で充電に戻り、完了まで自動で清掃を続けます。広い家でも任せきりにできるため、家族と過ごす時間を増やすことができます。"
         },
         {
-          "field": "カーペット",
-          "score": 90,
+          "field": "カーペット掃除",
+          "score": 84,
           "reviewCount": 10,
-          "comment": "カーペットの奥のゴミやペットの毛も強力に吸引し、水拭き時にはモップを自動で持ち上げるため安心です。"
+          "comment": "リビングのラグや子供部屋のカーペットも、自動で吸引力を上げてしっかり掃除します。モップが自動で上がるため、カーペットを濡らす心配が少ないのも安心です。"
         }
       ]
     }
