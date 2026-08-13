@@ -730,21 +730,33 @@ body:has(#fixed-navigation) .product-info > p {
     color: rgba(255, 255, 255, 0.95);
 }
 
-body:has(#fixed-navigation) .product-meta {
+/* ヒーロー統計ピル（旧 .product-meta とナビドロップダウンの衝突を回避） */
+body:has(#fixed-navigation) .product-header-stats {
     opacity: 1;
-}
-
-body:has(#fixed-navigation) .product-meta > div {
-    color: #fff;
 }
 
 body:has(#fixed-navigation) .breadcrumb {
     opacity: 1;
     color: rgba(255, 255, 255, 0.92);
+    flex-wrap: wrap;
+    row-gap: 0.35rem;
 }
 
-body:has(#fixed-navigation) .breadcrumb .product-title {
+body:has(#fixed-navigation) .breadcrumb a {
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+    font-weight: 700;
+}
+
+body:has(#fixed-navigation) .breadcrumb a:hover {
+    opacity: 0.85;
+}
+
+body:has(#fixed-navigation) .breadcrumb-current {
     color: rgba(255, 255, 255, 0.88);
+    font-size: 0.75rem;
+    opacity: 0.9;
 }
 
 body:has(#fixed-navigation) .reliability-weight-badge {
@@ -815,7 +827,7 @@ body:has(#fixed-navigation) .container {
         justify-content: center;
     }
 
-    body:has(#fixed-navigation) .product-meta {
+    body:has(#fixed-navigation) .product-header-stats {
         justify-content: center;
         gap: 0.75rem;
     }

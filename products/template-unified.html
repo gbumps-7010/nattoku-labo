@@ -39,7 +39,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     
     <!-- ナビゲーションCSS -->
-    <link rel="stylesheet" href="css/navigation.css?v=20260813a">
+    <link rel="stylesheet" href="css/navigation.css?v=20260814a">
     
     <style>
         * {
@@ -115,7 +115,7 @@
         }
         
         /* パンくずリストの製品名を小さく */
-        .breadcrumb .product-title {
+        .breadcrumb-current {
             font-size: 0.75rem;
             opacity: 0.8;
         }
@@ -185,14 +185,14 @@
             margin-bottom: 0.5rem;
         }
 
-        .product-meta {
+        .product-header-stats {
             display: flex;
             align-items: center;
             gap: 0.75rem;
             flex-wrap: wrap;
         }
 
-        .product-meta-pill {
+        .product-header-stat {
             display: inline-flex;
             align-items: center;
             gap: 0.3rem;
@@ -207,7 +207,7 @@
             box-shadow: 0 4px 14px rgba(15, 23, 42, 0.2);
         }
 
-        .product-meta-pill [data-dynamic] {
+        .product-header-stat [data-dynamic] {
             color: #0369a1;
             font-weight: 900;
         }
@@ -701,7 +701,7 @@
                 padding: 0.5rem 0.6rem;
             }
 
-            .product-meta > * {
+            .product-header-stats > * {
                 min-width: 0;
                 overflow-wrap: anywhere;
             }
@@ -714,14 +714,14 @@
                 font-size: 1rem;
             }
 
-            .product-meta {
+            .product-header-stats {
                 display: grid;
                 grid-template-columns: 1fr;
                 gap: 0.65rem;
                 width: 100%;
             }
 
-            .product-meta-pill {
+            .product-header-stat {
                 padding: 0.6rem 0.85rem;
                 font-size: 0.88rem;
                 justify-content: flex-start;
@@ -759,13 +759,15 @@
     <!-- Header -->
     <header>
         <div class="header-content">
-            <div class="breadcrumb">
+            <div class="breadcrumb" aria-label="パンくずリスト">
                 <a href="/"><i class="fas fa-home"></i> ホーム</a>
-                <span>/</span>
-                <span class="product-title">製品名</span>
+                <span aria-hidden="true">/</span>
+                <a href="/#productsContainer">製品一覧</a>
+                <span aria-hidden="true">/</span>
+                <span class="breadcrumb-current">製品名</span>
             </div>
             
-            <div class="product-header">
+<div class="product-header">
                 <img src="" alt="製品名" class="product-image-header" data-dynamic="imageUrl">
                 
                 <div class="product-info">
@@ -790,14 +792,14 @@
                         </p>
                     </div>
                     
-                    <div class="product-meta">
-                        <div class="product-meta-pill">
+                    <div class="product-header-stats">
+                        <div class="product-header-stat">
                             総口コミ: <span data-dynamic="totalReviews">0</span>件
                         </div>
-                        <div class="product-meta-pill">
+                        <div class="product-header-stat">
                             口コミ信頼度: <span data-dynamic="reliabilityScore">0</span>点
                         </div>
-                        <div class="product-meta-pill">
+                        <div class="product-header-stat">
                             データ更新: <span data-dynamic="updateInfo.lastUpdated">—</span>
                         </div>
                     </div>
@@ -1177,7 +1179,7 @@
     <script src="js/product-loader.js"></script>
 
 <!-- ナビゲーションシステム V3.14 -->
-<script src="js/navigation.js?v=20260810d"></script>
+<script src="js/navigation.js?v=20260814a"></script>
     
         <!-- Chart.js Initialization -->
     <script src="js/product-charts.js?v=20260813a"></script>

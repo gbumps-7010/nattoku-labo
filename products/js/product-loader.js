@@ -165,8 +165,13 @@ function getNestedValue(obj, path) {
 
 // 4. 基本情報更新
 function updateBasicInfo(data) {
-    const productTitle = document.querySelector('.product-title');
-    if (productTitle) productTitle.textContent = data.productName;
+    const breadcrumbCurrent = document.querySelector('.breadcrumb-current');
+    if (breadcrumbCurrent && data.productName) {
+        breadcrumbCurrent.textContent = data.productName;
+    }
+
+    const productTitle = document.querySelector('h1.product-title, .product-header h1.product-title');
+    if (productTitle && data.productName) productTitle.textContent = data.productName;
     
     const productImage = document.querySelector('.product-image-header');
     if (productImage) {
