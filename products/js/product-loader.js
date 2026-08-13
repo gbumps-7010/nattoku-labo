@@ -1025,19 +1025,41 @@ function injectMoshimoIframe(container, html) {
     const iframe = document.createElement('iframe');
     iframe.title = '価格・購入先（もしもアフィリエイト）';
     iframe.setAttribute('scrolling', 'no');
+    // もしも cardlink は viewport<704px で縮小レイアウトになる。
+    // 画像枠(.easyLink-img-box)を240px固定し、flexで潰さない（リンクHTML自体は変更しない）。
     iframe.srcdoc =
         '<!DOCTYPE html><html><head><meta charset="utf-8">' +
         '<meta name="viewport" content="width=device-width,initial-scale=1">' +
         '<base target="_blank" rel="noopener noreferrer">' +
-        '<style>*,*::before,*::after{box-sizing:border-box}' +
-        'html,body{width:100%;max-width:100%;min-width:0;margin:0;padding:0;background:#fff;color:#0f172a;overflow-x:hidden}' +
-        'body{display:flex;flex-direction:column;align-items:stretch}' +
-        '[id^="msmaflink-"]{width:100%!important;max-width:100%!important;margin-left:auto;margin-right:auto}' +
-        '[id^="msmaflink-"] *:not(img){max-width:100%!important}' +
-        '[id^="msmaflink-"] table{width:100%!important;table-layout:auto!important}' +
-        '[id^="msmaflink-"] img{width:280px!important;min-width:220px!important;max-width:280px!important;' +
-        'height:auto!important;max-height:280px!important;object-fit:contain!important;flex-shrink:0!important}' +
-        '@media(max-width:480px){[id^="msmaflink-"] img{width:200px!important;min-width:160px!important;max-width:200px!important;max-height:200px!important}}</style></head><body>' +
+        '<style>' +
+        '*,*::before,*::after{box-sizing:border-box}' +
+        'html,body{width:100%;margin:0;padding:0;background:#fff;color:#0f172a;overflow-x:hidden}' +
+        'body{display:block}' +
+        '[id^="msmaflink-"]{width:100%!important;max-width:100%!important}' +
+        'div.easyLink-box{width:100%!important;max-width:100%!important;box-sizing:border-box!important}' +
+        'div.easyLink-box div.easyLink-img,' +
+        'div.easyLink-box div.easyLink-img p.easyLink-img-box{' +
+        'width:240px!important;min-width:240px!important;max-width:240px!important;' +
+        'height:240px!important;flex:0 0 240px!important;flex-shrink:0!important;' +
+        'margin-right:16px!important;box-sizing:border-box!important}' +
+        'div.easyLink-box div.easyLink-img::before{display:none!important;padding-top:0!important;content:none!important}' +
+        'div.easyLink-box div.easyLink-img p.easyLink-img-box span{' +
+        'width:240px!important;height:240px!important}' +
+        'div.easyLink-box div.easyLink-img p.easyLink-img-box span>img,' +
+        'div.easyLink-box img.js-item-image{' +
+        'max-width:240px!important;max-height:240px!important;' +
+        'width:auto!important;height:auto!important;min-width:0!important;object-fit:contain!important}' +
+        '@media screen and (max-width:480px){' +
+        'div.easyLink-box{display:block!important}' +
+        'div.easyLink-box div.easyLink-img,' +
+        'div.easyLink-box div.easyLink-img p.easyLink-img-box{' +
+        'width:220px!important;min-width:220px!important;max-width:220px!important;' +
+        'height:220px!important;flex-basis:220px!important;margin:0 auto 12px!important}' +
+        'div.easyLink-box div.easyLink-img p.easyLink-img-box span{width:220px!important;height:220px!important}' +
+        'div.easyLink-box div.easyLink-img p.easyLink-img-box span>img,' +
+        'div.easyLink-box img.js-item-image{max-width:220px!important;max-height:220px!important}' +
+        '}' +
+        '</style></head><body>' +
         safe +
         '</body></html>';
     iframe.style.width = '100%';
@@ -1073,15 +1095,30 @@ function injectMoshimoIframe(container, html) {
 // 公式HPアフィリンク(direct HTML)から「公式HP」選択肢ボタンを生成。
 //   directは A8等の画像リンク or テキストリンク。href を抜き出してボタン化し、
 //   計測ピクセル(1x1 img)があれば維持する（withPixelで重複発火を抑制）。
-function buildOfficialButton(directHtml, withPixel, label, size) {
+function extractOfficialHref(directHtml) {
     if (!directHtml) return null;
     const hrefM = directHtml.match(/href=["']([^"']+)["']/i);
-    if (!hrefM) return null;
+    if (hrefM) return hrefM[1];
+    // A8商品リンク: "ejp":"h"+"ttps://..."
+    const a8 = directHtml.match(/"ejp"\s*:\s*"([^"]*)"\s*\+\s*"([^"]*)"/i);
+    if (a8) {
+        const url = (a8[1] + a8[2]).replace(/^h+ttps:/i, 'https:');
+        if (/^https?:\/\//i.test(url)) return url;
+    }
+    const a8b = directHtml.match(/"h"\s*\+\s*"(ttps:\/\/[^"]+)"/i);
+    if (a8b) return 'h' + a8b[1];
+    return null;
+}
+
+function buildOfficialButton(directHtml, withPixel, label, size) {
+    if (!directHtml) return null;
+    const href = extractOfficialHref(directHtml);
+    if (!href) return null;
     const wrap = document.createElement('div');
     wrap.className = 'affiliate-official-wrap';
     wrap.style.cssText = 'position:relative; margin:0; width:100%;';
     const a = document.createElement('a');
-    a.href = hrefM[1];
+    a.href = href;
     a.target = '_blank';
     a.rel = 'noopener sponsored nofollow';
     a.className = 'affiliate-official-btn';
@@ -1163,8 +1200,8 @@ function renderAffiliate(data) {
         if (section) {
             section.style.display = '';
             section.style.cssText = opts.prominent
-                ? 'max-width:900px; margin:3.5rem auto 2.5rem; padding:0 1.5rem;'
-                : 'max-width:760px; margin:2.5rem auto; padding:0 1.5rem;';
+                ? 'max-width:920px; margin:3.5rem auto 2.5rem; padding:0 1rem;'
+                : 'max-width:860px; margin:2.5rem auto; padding:0 1rem;';
         }
 
         const panel = section ? ensureAffiliatePanel(section, opts) : null;
@@ -1210,14 +1247,14 @@ function renderAffiliate(data) {
             body.className = 'affiliate-options-body';
             body.style.cssText =
                 'display:flex; flex-direction:column; gap:0.75rem; ' +
-                'padding:0 1.1rem 1.2rem;';
+                'padding:0 0.85rem 1.1rem;';
             if (moshimoEl) body.appendChild(moshimoEl);
             if (directEl) body.appendChild(directEl);
             panel.appendChild(body);
         } else if (body) {
             body.style.cssText =
                 'display:flex; flex-direction:column; gap:0.75rem; ' +
-                'padding:0 1.1rem 1.2rem;';
+                'padding:0 0.85rem 1.1rem;';
         }
 
         // 公式HPを「確認先のひとつ」として先頭に
