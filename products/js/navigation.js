@@ -29,7 +29,6 @@ const ALL_PRODUCTS = [
     { id: 'eufy-robovac-g30-hybrid', name: 'Eufy RoboVac G30 Hybrid', manufacturer: 'Anker', price: 39990 },
     { id: 'eufy-robovac-x8-hybrid', name: 'Eufy RoboVac X8 Hybrid', manufacturer: 'Anker', price: 59800 },
     { id: 'eufy-x10-pro-omni', name: 'Eufy X10 Pro Omni', manufacturer: 'Anker', price: 69990 },
-    { id: 'f10-plus', name: 'F10 Plus', manufacturer: 'Dreame', price: 29800 },
     { id: 'k10-pro', name: 'ロボット掃除機 K10+ Pro', manufacturer: 'SwitchBot', price: 64800 },
     { id: 'k11', name: 'ロボット掃除機 K11+', manufacturer: 'SwitchBot', price: 59800 },
     { id: 'l10s-ultra-gen-2', name: 'L10s Ultra Gen 2', manufacturer: 'Dreame', price: 58000 },

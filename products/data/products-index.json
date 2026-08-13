@@ -506,29 +506,6 @@
     }
   },
   {
-    "id": "f10-plus",
-    "name": "F10 Plus",
-    "manufacturer": "Dreame",
-    "price": 29800,
-    "reviewCount": 12,
-    "totalReviewCount": 12,
-    "image": "https://www.dreametech.jp/cdn/shop/files/F10P-CR7.png?v=1781968412&width=800",
-    "badges": [
-      "Dreame",
-      "満足・買ってよかった",
-      "吸引力が高い"
-    ],
-    "overallTrustScore": 55,
-    "specs": {
-      "suction": 90,
-      "mopping": 70,
-      "noise": 95,
-      "obstacle": 50,
-      "app": 65,
-      "maintenance": 78
-    }
-  },
-  {
     "id": "k10-pro",
     "name": "ロボット掃除機 K10+ Pro",
     "manufacturer": "SwitchBot",
