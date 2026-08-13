@@ -23,7 +23,6 @@
 - products/eufy-robot-vacuum-omni-c28.html
 - products/eufy-robot-vacuum-omni-e25.html
 - products/eufy-robot-vacuum-omni-s1-pro.html
-- products/eufy-robovac-g30.html
 - products/eufy-robovac-g30-hybrid.html
 - products/eufy-x10-pro-omni.html
 - products/roborock-qrevo-l.html
