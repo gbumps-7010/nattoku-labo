@@ -3,11 +3,11 @@
   "productName": "F10 Plus",
   "manufacturer": "Dreame",
   "modelNumber": "F10 Plus",
-  "imageUrl": "https://thumbnail.image.rakuten.co.jp/@0_mall/homarina/cabinet/g/8/e9zecwh0u4-5.jpg",
+  "imageUrl": "https://www.dreametech.jp/cdn/shop/files/F10P-CR7.png?v=1781968412&width=800",
   "overallRating": 3.71,
   "totalReviews": 12,
   "price": 29800,
-  "reliabilityScore": 55.0,
+  "reliabilityScore": 55,
   "asin": "",
   "metaTitle": "Dreame F10 Plus 詳細分析 | 11件の口コミからわかる実力と注意点",
   "metaDescription": "Dreame F10 Plusの口コミ11件を徹底解析。静音性や吸引力は高評価な一方、故障やケーブルの巻き込みといった課題も。購入前に知るべき真実を公開します。",
@@ -42,7 +42,7 @@
     }
   },
   "reliability": {
-    "score": 55.0,
+    "score": 55,
     "dataAdequacy": {
       "score": 44,
       "weight": 60,
@@ -188,7 +188,7 @@
     "sampledReviews": 11,
     "adoptedReviews": 11,
     "excludedReviews": 1,
-    "trustScore": 55.0,
+    "trustScore": 55,
     "comment": "11件の口コミを分析。サンプル数は少ないものの、直近の口コミが中心で鮮度は高いです。ただし、故障や障害物回避など評価の分かれる点があり、信頼性は中程度です。"
   },
   "reviewKeywords": {

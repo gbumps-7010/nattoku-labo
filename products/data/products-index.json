@@ -35,7 +35,7 @@
       "水拭き・拭き掃除が良い",
       "マッピング・ルートが賢い"
     ],
-    "overallTrustScore": 67.0,
+    "overallTrustScore": 67,
     "specs": {
       "suction": 95,
       "mopping": 82,
@@ -69,29 +69,6 @@
     }
   },
   {
-    "id": "deebot-n30",
-    "name": "DEEBOT N30",
-    "manufacturer": "ECOVACS",
-    "price": 34800,
-    "reviewCount": 82,
-    "totalReviewCount": 82,
-    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/ydlx11-32df.jpg",
-    "badges": [
-      "ECOVACS",
-      "吸引力が高い",
-      "マッピング・ルートが賢い"
-    ],
-    "overallTrustScore": 74.8,
-    "specs": {
-      "suction": 95,
-      "mopping": 78,
-      "noise": 82,
-      "obstacle": 65,
-      "app": 88,
-      "maintenance": 85
-    }
-  },
-  {
     "id": "deebot-n30-plus",
     "name": "DEEBOT N30 PLUS",
     "manufacturer": "ECOVACS",
@@ -112,6 +89,29 @@
       "obstacle": 72,
       "app": 75,
       "maintenance": 88
+    }
+  },
+  {
+    "id": "deebot-n30",
+    "name": "DEEBOT N30",
+    "manufacturer": "ECOVACS",
+    "price": 34800,
+    "reviewCount": 82,
+    "totalReviewCount": 82,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/ydlx11-32df.jpg",
+    "badges": [
+      "ECOVACS",
+      "吸引力が高い",
+      "マッピング・ルートが賢い"
+    ],
+    "overallTrustScore": 74.8,
+    "specs": {
+      "suction": 95,
+      "mopping": 78,
+      "noise": 82,
+      "obstacle": 65,
+      "app": 88,
+      "maintenance": 85
     }
   },
   {
@@ -288,7 +288,7 @@
       "満足・買ってよかった",
       "静かで快適"
     ],
-    "overallTrustScore": 88.0,
+    "overallTrustScore": 88,
     "specs": {
       "suction": 92,
       "mopping": 73,
@@ -414,29 +414,6 @@
     }
   },
   {
-    "id": "eufy-robovac-g30",
-    "name": "Eufy RoboVac G30",
-    "manufacturer": "Anker",
-    "price": 29490,
-    "reviewCount": 472,
-    "totalReviewCount": 472,
-    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t2250/t2250_normal.jpg",
-    "badges": [
-      "Anker",
-      "満足・買ってよかった",
-      "静かで快適"
-    ],
-    "overallTrustScore": 84.8,
-    "specs": {
-      "suction": 92,
-      "mopping": 75,
-      "noise": 95,
-      "obstacle": 70,
-      "app": 80,
-      "maintenance": 72
-    }
-  },
-  {
     "id": "eufy-robovac-g30-hybrid",
     "name": "Eufy RoboVac G30 Hybrid",
     "manufacturer": "Anker",
@@ -457,6 +434,29 @@
       "obstacle": 62,
       "app": 73,
       "maintenance": 78
+    }
+  },
+  {
+    "id": "eufy-robovac-g30",
+    "name": "Eufy RoboVac G30",
+    "manufacturer": "Anker",
+    "price": 29490,
+    "reviewCount": 472,
+    "totalReviewCount": 472,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t2250/t2250_normal.jpg",
+    "badges": [
+      "Anker",
+      "満足・買ってよかった",
+      "静かで快適"
+    ],
+    "overallTrustScore": 84.8,
+    "specs": {
+      "suction": 92,
+      "mopping": 75,
+      "noise": 95,
+      "obstacle": 70,
+      "app": 80,
+      "maintenance": 72
     }
   },
   {
@@ -495,7 +495,7 @@
       "水拭き・拭き掃除が良い",
       "満足・買ってよかった"
     ],
-    "overallTrustScore": 88.0,
+    "overallTrustScore": 88,
     "specs": {
       "suction": 97,
       "mopping": 82,
@@ -512,13 +512,13 @@
     "price": 29800,
     "reviewCount": 12,
     "totalReviewCount": 12,
-    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/homarina/cabinet/g/8/e9zecwh0u4-5.jpg",
+    "image": "https://www.dreametech.jp/cdn/shop/files/F10P-CR7.png?v=1781968412&width=800",
     "badges": [
       "Dreame",
       "満足・買ってよかった",
       "吸引力が高い"
     ],
-    "overallTrustScore": 55.0,
+    "overallTrustScore": 55,
     "specs": {
       "suction": 90,
       "mopping": 70,
@@ -713,29 +713,6 @@
     }
   },
   {
-    "id": "q10v",
-    "name": "Q10V",
-    "manufacturer": "Roborock",
-    "price": 35999,
-    "reviewCount": 38,
-    "totalReviewCount": 38,
-    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/goodlifeshopstore/cabinet/g/11/e9z0wtw8az-4.jpg",
-    "badges": [
-      "Roborock",
-      "水拭き・拭き掃除が良い",
-      "満足・買ってよかった"
-    ],
-    "overallTrustScore": 52.0,
-    "specs": {
-      "suction": 95,
-      "mopping": 90,
-      "noise": 90,
-      "obstacle": 70,
-      "app": 70,
-      "maintenance": 75
-    }
-  },
-  {
     "id": "q10v-plus",
     "name": "Q10V+",
     "manufacturer": "Roborock",
@@ -748,7 +725,7 @@
       "水拭き・拭き掃除が良い",
       "満足・買ってよかった"
     ],
-    "overallTrustScore": 52.0,
+    "overallTrustScore": 52,
     "specs": {
       "suction": 90,
       "mopping": 75,
@@ -756,6 +733,29 @@
       "obstacle": 65,
       "app": 70,
       "maintenance": 70
+    }
+  },
+  {
+    "id": "q10v",
+    "name": "Q10V",
+    "manufacturer": "Roborock",
+    "price": 35999,
+    "reviewCount": 38,
+    "totalReviewCount": 38,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/goodlifeshopstore/cabinet/g/11/e9z0wtw8az-4.jpg",
+    "badges": [
+      "Roborock",
+      "水拭き・拭き掃除が良い",
+      "満足・買ってよかった"
+    ],
+    "overallTrustScore": 52,
+    "specs": {
+      "suction": 95,
+      "mopping": 90,
+      "noise": 90,
+      "obstacle": 70,
+      "app": 70,
+      "maintenance": 75
     }
   },
   {
@@ -794,7 +794,7 @@
       "満足・買ってよかった",
       "水拭き・拭き掃除が良い"
     ],
-    "overallTrustScore": 52.0,
+    "overallTrustScore": 52,
     "specs": {
       "suction": 98,
       "mopping": 80,
@@ -863,7 +863,7 @@
       "水拭き・拭き掃除が良い",
       "満足・買ってよかった"
     ],
-    "overallTrustScore": 76.0,
+    "overallTrustScore": 76,
     "specs": {
       "suction": 95,
       "mopping": 82,
@@ -978,7 +978,7 @@
       "水拭き・拭き掃除が良い",
       "使いやすい・便利"
     ],
-    "overallTrustScore": 61.0,
+    "overallTrustScore": 61,
     "specs": {
       "suction": 95,
       "mopping": 88,
@@ -1001,7 +1001,7 @@
       "水拭き・拭き掃除が良い",
       "満足・買ってよかった"
     ],
-    "overallTrustScore": 73.0,
+    "overallTrustScore": 73,
     "specs": {
       "suction": 85,
       "mopping": 80,
@@ -1024,7 +1024,7 @@
       "水拭き・拭き掃除が良い",
       "満足・買ってよかった"
     ],
-    "overallTrustScore": 79.0,
+    "overallTrustScore": 79,
     "specs": {
       "suction": 97,
       "mopping": 82,
