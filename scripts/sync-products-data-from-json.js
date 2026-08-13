@@ -185,6 +185,7 @@ function rebuildNavigationFromDataDir() {
       continue;
     }
     if (!isPublishReady(data)) continue;
+    if (!fs.existsSync(path.join(ROOT, "products", `${String(data.productId)}.html`))) continue;
     const id = data.productId;
     const name = data.productName;
     const price = Number(data.price);

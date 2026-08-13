@@ -57,25 +57,28 @@ const ALL_PRODUCTS = [
 ];
 
 // メーカー一覧
-const MANUFACTURERS = ['すべて', 'Anker', 'Dreame', 'ECOVACS', 'Roborock', 'SwitchBot', 'iRobot'];
+const MANUFACTURERS = ['すべて', 'Anker', 'Dreame', 'ECOVACS', 'Roborock', 'SwitchBot', 'iRobot']
 
-// 価格帯一覧（トップページ / products-data.js の priceRanges と一致させる）
+// 価格帯一覧（比較ページの価格帯と一致させる）
 const PRICE_RANGES = [
     { label: 'すべて', min: 0, max: Infinity },
-    { label: '5万円未満', min: 0, max: 50000 },
-    { label: '5万円〜10万円', min: 50000, max: 100000 },
-    { label: '10万円以上', min: 100000, max: Infinity }
+    { label: '〜5万円', min: 0, max: 50000 },
+    { label: '5〜7万円', min: 50000, max: 70000 },
+    { label: '7〜10万円', min: 70000, max: 100000 },
+    { label: '10〜15万円', min: 100000, max: 150000 },
+    { label: '15〜20万円', min: 150000, max: 200000 },
+    { label: '20万円〜', min: 200000, max: Infinity }
 ];
 
 // おすすめ比較（価格帯別）
 const COMPARE_BANDS = [
-    { label: '比較一覧（すべて）', href: '/compare/' },
-    { label: '〜5万円', href: '/compare/robot-vacuum-under-5man' },
-    { label: '5〜7万円', href: '/compare/robot-vacuum-5-7man' },
-    { label: '7〜10万円', href: '/compare/robot-vacuum-7-10man' },
-    { label: '10〜15万円', href: '/compare/robot-vacuum-10-15man' },
-    { label: '15〜20万円', href: '/compare/robot-vacuum-15-20man' },
-    { label: '20万円〜', href: '/compare/robot-vacuum-20man-plus' },
+    { label: '比較一覧（すべて）', href: '/compare/', min: null, max: null },
+    { label: '〜5万円', href: '/compare/robot-vacuum-under-5man', min: 0, max: 50000 },
+    { label: '5〜7万円', href: '/compare/robot-vacuum-5-7man', min: 50000, max: 70000 },
+    { label: '7〜10万円', href: '/compare/robot-vacuum-7-10man', min: 70000, max: 100000 },
+    { label: '10〜15万円', href: '/compare/robot-vacuum-10-15man', min: 100000, max: 150000 },
+    { label: '15〜20万円', href: '/compare/robot-vacuum-15-20man', min: 150000, max: 200000 },
+    { label: '20万円〜', href: '/compare/robot-vacuum-20man-plus', min: 200000, max: Infinity },
 ];
 
 /**
@@ -167,11 +170,16 @@ function createNavigationBar() {
                         <i class="fas fa-table"></i> おすすめ・口コミ徹底比較 <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="dropdown-menu compare-dropdown">
-                        ${COMPARE_BANDS.map(b => `
+                        ${COMPARE_BANDS.map(b => {
+                            const count = (b.min == null)
+                                ? ALL_PRODUCTS.length
+                                : ALL_PRODUCTS.filter(p => p.price >= b.min && p.price < b.max).length;
+                            return `
                             <a href="${b.href}" class="dropdown-item">
                                 <span class="price-label">${b.label}</span>
-                            </a>
-                        `).join('')}
+                                <span class="product-count">(${count}製品)</span>
+                            </a>`;
+                        }).join('')}
                     </div>
                 </div>
 

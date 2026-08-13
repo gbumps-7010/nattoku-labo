@@ -2593,7 +2593,10 @@ const productsData = [
 const manufacturers = ['すべて', 'Anker', 'Dreame', 'ECOVACS', 'Roborock', 'SwitchBot', 'iRobot'];
 const priceRanges = [
     { label: 'すべて', min: 0, max: Infinity },
-    { label: '5万円未満', min: 0, max: 50000 },
-    { label: '5万円〜10万円', min: 50000, max: 100000 },
-    { label: '10万円以上', min: 100000, max: Infinity }
+    { label: '〜5万円', min: 0, max: 50000 },
+    { label: '5〜7万円', min: 50000, max: 70000 },
+    { label: '7〜10万円', min: 70000, max: 100000 },
+    { label: '10〜15万円', min: 100000, max: 150000 },
+    { label: '15〜20万円', min: 150000, max: 200000 },
+    { label: '20万円〜', min: 200000, max: Infinity }
 ];
