@@ -56,7 +56,6 @@ const DEFAULT_SHEET_NAME_TO_PRODUCT_ID = {
   "Eufy Robot Vacuum Omni S1 Pro": "eufy-robot-vacuum-omni-s1-pro",
   "Eufy Robot Vacuum Auto-Empty C10": "anker-eufy-c10",
   "Eufy RoboVac G30 Hybrid": "eufy-robovac-g30-hybrid",
-  "Eufy RoboVac X8 Hybrid": "eufy-robovac-x8-hybrid",
   "Eufy RoboVac G10 Hybrid": "eufy-robovac-g10-hybrid",
   // SwitchBot（スプレッドシート B 列の <a> 本文に合わせる）
   "お掃除ロボットS20": "switchbot-s20",

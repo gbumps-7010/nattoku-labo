@@ -1909,27 +1909,7 @@ const productsData = [
         },
         amazonUrl: 'https://www.amazon.co.jp/s?k=Eufy+RoboVac+G10+Hybrid',
         rakutenUrl: 'https://search.rakuten.co.jp/search/mall/Eufy+RoboVac+G10+Hybrid/'
-    },
-    {
-        id: 'eufy-robovac-x8-hybrid',
-        name: 'Eufy RoboVac X8 Hybrid',
-        manufacturer: 'Anker',
-        price: 59800,
-        rating: 4.5,
-        reviewCount: 12,
-        totalReviewCount: 12,
-        image: 'https://m.media-amazon.com/images/I/61-B9+P0eLL._AC_SL1500_.jpg',
-        badges: ['ペット毛90点', '信頼度64点', '年156h目安'],
-        specs: { suction: 92, mopping: 88, noise: 82, obstacle: 80, app: 90, maintenance: 85 },
-        problems: [
-            { rank: 1, title: '水タンクの容量', percentage: 25, description: '広範囲水拭きで給水が途切れやすい。', solutions: ['水量「低」に設定', 'タンク手入れを公式手順で'] },
-            { rank: 2, title: '長毛ラグで停止', percentage: 15, description: '乗り上げエラーの文脈。', solutions: ['進入禁止エリア', '掃除時にラグを巻く'] },
-            { rank: 3, title: '手動ゴミ捨て', percentage: 10, description: '収集ドック非搭載。', solutions: ['2〜3日で捨てる習慣', 'ダストボックス清潔に'] }
-        ],
-        recommendations: { petOwner: 90, apartment: 85, working: 88, overall: 88 },
-        amazonUrl: 'https://www.amazon.co.jp/s?k=Eufy+RoboVac+X8+Hybrid',
-        rakutenUrl: 'https://search.rakuten.co.jp/search/mall/Eufy+RoboVac+X8+Hybrid/'
-    },
+    }
     {
         id: 'roomba-mini-slim-slimcharge',
         name: 'Roomba Mini Slim + SlimCharge',

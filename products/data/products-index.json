@@ -414,29 +414,6 @@
     }
   },
   {
-    "id": "eufy-robovac-x8-hybrid",
-    "name": "Eufy RoboVac X8 Hybrid",
-    "manufacturer": "Anker",
-    "price": 59800,
-    "reviewCount": 28,
-    "totalReviewCount": 28,
-    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/value-shopping/cabinet/product07/4571411191008.jpg",
-    "badges": [
-      "Anker",
-      "満足・買ってよかった",
-      "水拭き・拭き掃除が良い"
-    ],
-    "overallTrustScore": 53.6,
-    "specs": {
-      "suction": 90,
-      "mopping": 50,
-      "noise": 92,
-      "obstacle": 70,
-      "app": 72,
-      "maintenance": 45
-    }
-  },
-  {
     "id": "eufy-x10-pro-omni",
     "name": "Eufy X10 Pro Omni",
     "manufacturer": "Anker",
