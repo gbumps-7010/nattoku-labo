@@ -1000,9 +1000,14 @@
 
         }
 
-        /** ナビバー等からの ?manufacturer= / ?price= / ?priceMin=&priceMax= を反映 */
+        /** ナビバー等からの ?q= / ?manufacturer= / ?price= / ?priceMin=&priceMax= を反映 */
         function applyFiltersFromUrl() {
             const params = new URLSearchParams(window.location.search);
+
+            const q = params.get('q');
+            if (q) {
+                searchInput.value = q;
+            }
 
             const manufacturer = params.get('manufacturer');
             if (manufacturer && manufacturers.includes(manufacturer)) {
@@ -1146,6 +1151,6 @@
             loadAndInit();
         }
     </script>
-    <script src="/products/js/navigation.js?v=20260814b"></script>
+    <script src="/products/js/navigation.js?v=20260814c"></script>
 </body>
 </html>

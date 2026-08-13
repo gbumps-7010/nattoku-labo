@@ -476,12 +476,106 @@ function createFooter() {
 }
 
 /**
+ * 製品詳細ページ判定
+ */
+function isProductDetailPage() {
+    const path = window.location.pathname.replace(/\/+$/, '');
+    return /^\/products\/[^/]+$/.test(path) || /\/products\/[^/]+\.html$/i.test(path);
+}
+
+/**
+ * 製品ページのヘッダー直上に検索フィルターを表示
+ */
+function createProductPageFilterBar() {
+    if (!isProductDetailPage()) return;
+    if (document.getElementById('product-page-filter-bar')) return;
+
+    const bar = document.createElement('div');
+    bar.id = 'product-page-filter-bar';
+    bar.className = 'product-page-filter-bar';
+    bar.setAttribute('role', 'search');
+    bar.setAttribute('aria-label', '製品検索フィルター');
+
+    const manufacturerOptions = MANUFACTURERS.map((m) => {
+        const label = m === 'すべて' ? 'すべてのメーカー' : m;
+        return `<option value="${m}">${label}</option>`;
+    }).join('');
+
+    const priceOptions = PRICE_RANGES.map((r) => {
+        const label = r.label === 'すべて' ? 'すべての価格帯' : r.label;
+        return `<option value="${r.label}">${label}</option>`;
+    }).join('');
+
+    bar.innerHTML = `
+        <form class="product-page-filter-form" id="product-page-filter-form">
+            <div class="product-page-filter-field product-page-filter-search">
+                <label for="product-page-search-input">キーワード</label>
+                <input
+                    type="search"
+                    id="product-page-search-input"
+                    name="q"
+                    placeholder="製品名・メーカーで検索"
+                    autocomplete="off"
+                >
+            </div>
+            <div class="product-page-filter-field">
+                <label for="product-page-manufacturer">メーカー</label>
+                <select id="product-page-manufacturer" name="manufacturer">
+                    ${manufacturerOptions}
+                </select>
+            </div>
+            <div class="product-page-filter-field">
+                <label for="product-page-price">価格帯</label>
+                <select id="product-page-price" name="price">
+                    ${priceOptions}
+                </select>
+            </div>
+            <button type="submit" class="product-page-filter-submit">
+                <i class="fas fa-search" aria-hidden="true"></i>
+                検索
+            </button>
+        </form>
+    `;
+
+    const pageHeader = document.querySelector('body > header') || document.querySelector('header');
+    if (pageHeader && pageHeader.parentNode) {
+        pageHeader.parentNode.insertBefore(bar, pageHeader);
+    } else {
+        const nav = document.getElementById('fixed-navigation');
+        if (nav && nav.nextSibling) {
+            nav.parentNode.insertBefore(bar, nav.nextSibling);
+        } else {
+            document.body.appendChild(bar);
+        }
+    }
+
+    const form = bar.querySelector('#product-page-filter-form');
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const q = (bar.querySelector('#product-page-search-input').value || '').trim();
+        const manufacturer = bar.querySelector('#product-page-manufacturer').value;
+        const price = bar.querySelector('#product-page-price').value;
+        const url = new URL('/', window.location.origin);
+        if (q) url.searchParams.set('q', q);
+        if (manufacturer && manufacturer !== 'すべて') {
+            url.searchParams.set('manufacturer', manufacturer);
+        }
+        if (price && price !== 'すべて') {
+            url.searchParams.set('price', price);
+        }
+        url.hash = 'productsContainer';
+        window.location.href = url.pathname + url.search + url.hash;
+    });
+}
+
+/**
  * 初期化
  */
 function initNavigation() {
     console.log('🚀 ナビゲーションシステム V3.15 初期化');
     try {
         createNavigationBar();
+        createProductPageFilterBar();
         createRelatedProductsSection();
         createFooter();
         console.log('✅ ナビゲーションバー＆関連製品セクション 生成完了');
