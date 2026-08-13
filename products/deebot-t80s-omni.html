@@ -241,9 +241,29 @@
         .product-meta {
             display: flex;
             align-items: center;
-            gap: 1.5rem;
+            gap: 0.75rem;
             flex-wrap: wrap;
-            opacity: 0.95;
+        }
+
+        .product-meta-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+            padding: 0.55rem 1rem;
+            border-radius: 999px;
+            font-weight: 700;
+            font-size: 0.92rem;
+            line-height: 1.3;
+            color: #ffffff;
+            background: rgba(15, 23, 42, 0.45);
+            border: 1px solid rgba(255, 255, 255, 0.45);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 1px 0 rgba(255, 255, 255, 0.12) inset;
+        }
+
+        .product-meta-pill [data-dynamic] {
+            color: #7dd3fc;
+            font-weight: 900;
         }
 /* Container */
         .container {
@@ -805,8 +825,10 @@
                 width: 100%;
             }
 
-            .product-meta > * {
-                padding: 0.55rem 0.75rem !important;
+            .product-meta-pill {
+                padding: 0.6rem 0.85rem;
+                font-size: 0.88rem;
+                justify-content: flex-start;
             }
 
             .affiliate-cta-section {
@@ -874,10 +896,10 @@
                     </div>
                     
                     <div class="product-meta">
-                        <div style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: 20px; font-weight: 600;">
+                        <div class="product-meta-pill">
                             総口コミ: <span data-dynamic="totalReviews">21</span>件
                         </div>
-                        <div style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: 20px; font-weight: 600;">
+                        <div class="product-meta-pill">
                             ECサイト口コミの信頼度: <span data-dynamic="reliabilityScore">61.3</span>点
                         </div>
                     </div>
