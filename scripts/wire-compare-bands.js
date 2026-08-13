@@ -6,10 +6,14 @@ const manifest = JSON.parse(
 
 function banner(label, href) {
   return `
-        <section class="same-price-compare-banner" style="max-width:760px;margin:0 auto 2rem;padding:0 1.5rem;">
-            <a href="${href}" style="display:block;text-decoration:none;background:#eff6ff;border:1px solid #bfdbfe;border-radius:12px;padding:1rem 1.15rem;color:#1e3a8a;">
-                <strong style="display:block;font-size:1rem;margin-bottom:0.25rem;">同価格帯の口コミ分析比較を見る</strong>
-                <span style="font-size:0.9rem;font-weight:600;color:#1e40af;">${label}｜全製品のおすすめ比較を見る →</span>
+        <section class="same-price-compare-banner">
+            <a class="same-price-compare-link" href="${href}">
+                <span class="same-price-compare-icon" aria-hidden="true"><i class="fas fa-balance-scale"></i></span>
+                <span class="same-price-compare-copy">
+                    <strong>同価格帯の口コミ分析比較を見る</strong>
+                    <span class="same-price-compare-meta">${label}｜全製品のおすすめ比較</span>
+                </span>
+                <span class="same-price-compare-action">比較を見る<i class="fas fa-arrow-right" aria-hidden="true"></i></span>
             </a>
         </section>
 `;
