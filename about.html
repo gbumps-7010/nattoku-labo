@@ -18,6 +18,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/products/css/navigation.css?v=20260814k">
     <style>
         * {
             margin: 0;
@@ -35,6 +36,7 @@
             --gray-50: #f8fafc;
             --gray-100: #f1f5f9;
             --gray-200: #e2e8f0;
+            --gray-300: #cbd5e1;
             --gray-600: #475569;
             --gray-700: #334155;
             --gray-800: #1e293b;
@@ -53,7 +55,7 @@
         header {
             background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
             color: var(--white);
-            padding: 2rem 0;
+            padding: 3rem 0;
             box-shadow: var(--shadow-lg);
         }
         
@@ -61,43 +63,255 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 2rem;
+            text-align: center;
         }
         
         .logo {
-            font-size: 1.8rem;
+            font-size: 2.5rem;
             font-weight: 900;
             margin-bottom: 0.5rem;
             display: flex;
             align-items: center;
-            gap: 0.75rem;
+            justify-content: center;
+            gap: 1rem;
+            line-height: 1.25;
         }
         
-        .logo a {
-            color: var(--white);
+        .logo i {
+            font-size: 2rem;
+            flex-shrink: 0;
+        }
+
+        .logo-text {
+            display: inline;
+            text-align: center;
+            word-break: keep-all;
+            overflow-wrap: normal;
+            line-break: strict;
+        }
+
+        .logo-catch,
+        .logo-name {
+            white-space: nowrap;
+        }
+        
+        .tagline {
+            font-size: 1.1rem;
+            opacity: 0.95;
+            font-weight: 500;
+        }
+        
+        .header-nav {
+            margin-top: 1.15rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.55rem;
+        }
+
+        .header-nav-link {
+            color: white;
             text-decoration: none;
+            padding: 0.5rem 1.15rem;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.92rem;
+        }
+        
+        .header-nav-link:hover {
+            background: rgba(255, 255, 255, 0.35);
+            transform: translateY(-2px);
+        }
+
+        .header-nav-link.primary {
+            background: #fef08a;
+            color: #0f172a;
+            font-weight: 800;
+        }
+
+        .header-nav-link.primary:hover {
+            background: #fde047;
+        }
+
+        @media (max-width: 640px) {
+            header { padding: 1.75rem 0 2rem; }
+            .logo {
+                font-size: 1.35rem;
+                gap: 0.45rem;
+                flex-wrap: nowrap;
+            }
+            .logo i { font-size: 1.2rem; }
+            .logo-text {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.12rem;
+                text-align: left;
+            }
+            .logo-catch,
+            .logo-name {
+                display: block;
+                white-space: nowrap;
+            }
+            .tagline { font-size: 0.95rem; padding: 0 0.5rem; }
+            .header-content { padding: 0 1rem; }
+            .header-nav { gap: 0.45rem; }
+            .header-nav-link {
+                padding: 0.55rem 0.85rem;
+                font-size: 0.84rem;
+                min-height: 42px;
+            }
+        }
+
+        .search-section {
+            max-width: 1200px;
+            margin: -2rem auto 2rem;
+            padding: 0 2rem;
+        }
+        
+        .search-card {
+            background: var(--white);
+            border-radius: 16px;
+            box-shadow: var(--shadow-lg);
+            padding: 2.5rem;
+        }
+        
+        .search-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 1.5rem;
+            text-align: center;
             display: flex;
             align-items: center;
+            justify-content: center;
             gap: 0.75rem;
         }
         
-        .breadcrumb {
+        .search-title i {
+            color: var(--primary-color);
+        }
+        
+        .search-box {
+            position: relative;
+            margin-bottom: 1.25rem;
+        }
+        
+        .search-input {
+            width: 100%;
+            padding: 1rem 3.5rem 1rem 1.5rem;
+            font-size: 1.1rem;
+            border: 2px solid var(--gray-300);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            font-family: 'Noto Sans JP', sans-serif;
+            box-sizing: border-box;
+        }
+        
+        .search-input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+        
+        .search-icon {
+            position: absolute;
+            right: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--gray-600);
+            font-size: 1.2rem;
+            pointer-events: none;
+        }
+        
+        .filters {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 1.25rem;
+        }
+        
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        
+        .filter-label {
+            font-weight: 700;
+            color: var(--gray-700);
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .filter-label i {
+            color: var(--primary-color);
+            font-size: 0.85rem;
+        }
+        
+        .filter-select {
+            padding: 0.75rem 1rem;
+            border: 2px solid var(--gray-300);
+            border-radius: 8px;
+            font-size: 1rem;
+            background: var(--white);
+            cursor: pointer;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+        
+        .filter-select:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        .search-submit {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.45rem;
+            width: 100%;
+            min-height: 48px;
+            border: none;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #1e40af 0%, #0f172a 100%);
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 800;
+            cursor: pointer;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+
+        .search-submit:hover {
+            opacity: 0.93;
+        }
+
+        .page-breadcrumb {
             display: flex;
             align-items: center;
             gap: 0.5rem;
             font-size: 0.9rem;
-            margin-top: 1rem;
-            opacity: 0.9;
+            margin-bottom: 1.5rem;
+            color: var(--gray-600);
+            flex-wrap: wrap;
         }
         
-        .breadcrumb a {
-            color: var(--white);
+        .page-breadcrumb a {
+            color: var(--primary-color);
             text-decoration: none;
+            font-weight: 600;
         }
         
         .container {
             max-width: 900px;
             margin: 0 auto;
-            padding: 3rem 2rem;
+            padding: 1.5rem 2rem 3rem;
         }
         
         .hero-section {
@@ -136,6 +350,17 @@
             padding-bottom: 0.75rem;
             border-bottom: 3px solid var(--primary-color);
         }
+
+        .section-problems {
+            background: linear-gradient(180deg, #fff7ed 0%, #ffffff 55%);
+            border: 1px solid #fed7aa;
+            box-shadow: none;
+        }
+
+        .section-problems .section-title {
+            color: #9a3412;
+            border-bottom-color: #ea580c;
+        }
         
         .lead-text {
             font-size: 1.15rem;
@@ -143,31 +368,66 @@
             line-height: 2;
             margin-bottom: 2rem;
         }
+
+        .section-problems .lead-text {
+            color: #7c2d12;
+            background: rgba(255, 247, 237, 0.7);
+            border-left: 3px solid #f97316;
+            padding: 1rem 1.1rem;
+            border-radius: 0 10px 10px 0;
+        }
         
         .problem-grid {
             display: grid;
-            gap: 1.5rem;
-            margin: 2rem 0;
+            gap: 1rem;
+            margin: 1.5rem 0 0;
         }
         
         .problem-card {
-            background: var(--gray-50);
-            padding: 1.75rem;
+            background: #fff;
+            padding: 1.35rem 1.35rem 1.35rem 1.2rem;
             border-radius: 12px;
-            border-left: 5px solid var(--primary-color);
+            border: 1px solid #fdba74;
+            border-left: 4px solid #ea580c;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 0.85rem 1rem;
+            align-items: start;
+            box-shadow: 0 1px 0 rgba(154, 52, 18, 0.06);
+        }
+
+        .problem-index {
+            width: 2rem;
+            height: 2rem;
+            border-radius: 8px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: #ffedd5;
+            color: #c2410c;
+            font-size: 0.82rem;
+            font-weight: 900;
+            line-height: 1;
         }
         
         .problem-title {
-            font-size: 1.2rem;
-            font-weight: 700;
-            color: var(--dark);
-            margin-bottom: 0.75rem;
+            font-size: 1.12rem;
+            font-weight: 800;
+            color: #9a3412;
+            margin: 0 0 0.45rem;
+            grid-column: 2;
         }
         
         .problem-description {
-            font-size: 1rem;
-            color: var(--gray-700);
-            line-height: 1.8;
+            font-size: 0.98rem;
+            color: #7c2d12;
+            line-height: 1.75;
+            opacity: 0.92;
+            grid-column: 2;
+        }
+
+        .problem-card .problem-index {
+            grid-row: 1 / span 2;
         }
         
         .solution-box {
@@ -190,67 +450,172 @@
             line-height: 1.9;
             opacity: 0.95;
         }
+
+        .section-solutions {
+            background: linear-gradient(180deg, #eff6ff 0%, #ffffff 50%);
+            border: 1px solid #bfdbfe;
+            box-shadow: 0 10px 28px rgba(30, 64, 175, 0.08);
+        }
+
+        .section-solutions .section-title {
+            color: #1e3a8a;
+            border-bottom-color: #2563eb;
+        }
         
         .feature-grid {
             display: grid;
-            gap: 1.5rem;
-            margin: 2rem 0;
+            gap: 1rem;
+            margin: 1.5rem 0 0;
         }
         
         .feature-card {
-            background: var(--gray-50);
-            padding: 2rem;
-            border-radius: 12px;
-            border-left: 5px solid var(--accent-color);
+            background: linear-gradient(165deg, #ffffff 0%, #f8fbff 100%);
+            padding: 1.45rem 1.4rem 1.45rem 1.2rem;
+            border-radius: 14px;
+            border: 1px solid #bfdbfe;
+            border-left: 4px solid #2563eb;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 0.85rem 1rem;
+            align-items: start;
+            box-shadow: 0 8px 18px rgba(37, 99, 235, 0.06);
+        }
+
+        .feature-index {
+            width: 2rem;
+            height: 2rem;
+            border-radius: 999px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #2563eb 0%, #0ea5e9 100%);
+            color: #fff;
+            font-size: 0.82rem;
+            font-weight: 900;
+            line-height: 1;
+            box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);
         }
         
         .feature-title {
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: var(--dark);
-            margin-bottom: 1rem;
+            font-size: 1.18rem;
+            font-weight: 800;
+            color: #1e3a8a;
+            margin: 0 0 0.45rem;
+            grid-column: 2;
         }
         
         .feature-description {
-            font-size: 1rem;
-            color: var(--gray-700);
-            line-height: 1.8;
+            font-size: 0.98rem;
+            color: #334155;
+            line-height: 1.75;
+            grid-column: 2;
+        }
+
+        .feature-card .feature-index {
+            grid-row: 1 / span 2;
         }
         
         .stats-highlight {
-            background: linear-gradient(135deg, var(--gray-50) 0%, var(--gray-100) 100%);
-            padding: 2rem;
-            border-radius: 12px;
-            text-align: center;
-            margin: 2rem 0;
-            border: 2px solid var(--gray-200);
+            margin: 1.75rem 0 0.25rem;
+            padding: 0.85rem;
+            border: none;
+            border-radius: 18px;
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 55%, #0369a1 100%);
+            box-shadow: 0 14px 34px rgba(15, 23, 42, 0.18);
+            overflow: hidden;
         }
         
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1.5rem;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 0.75rem;
+            margin: 0;
         }
         
         .stat-item {
-            background: var(--white);
-            padding: 1.5rem;
-            border-radius: 10px;
-            box-shadow: var(--shadow);
+            background: rgba(255, 255, 255, 0.96);
+            padding: 1.55rem 1.1rem 1.4rem;
+            border-radius: 14px;
+            box-shadow: none;
+            text-align: left;
+            position: relative;
+            overflow: hidden;
+            min-height: 118px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
-        
-        .stat-number {
-            font-size: 2.5rem;
-            font-weight: 900;
-            color: var(--primary-color);
-            margin-bottom: 0.5rem;
+
+        .stat-item::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+        }
+
+        .stat-item:nth-child(1) {
+            background: linear-gradient(165deg, #ffffff 0%, #eff6ff 100%);
+        }
+        .stat-item:nth-child(1)::before { background: #2563eb; }
+
+        .stat-item:nth-child(2) {
+            background: linear-gradient(165deg, #ffffff 0%, #ecfeff 100%);
+        }
+        .stat-item:nth-child(2)::before { background: #0891b2; }
+
+        .stat-item:nth-child(3) {
+            background: linear-gradient(165deg, #ffffff 0%, #f8fafc 100%);
+        }
+        .stat-item:nth-child(3)::before { background: #0f172a; }
+
+        .stat-item + .stat-item {
+            border-left: 0;
         }
         
         .stat-label {
-            font-size: 0.9rem;
-            color: var(--gray-700);
-            font-weight: 600;
+            display: block;
+            font-size: 0.78rem;
+            color: #64748b;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            margin: 0 0 0.85rem 0.35rem;
+        }
+        
+        .stat-number {
+            font-size: clamp(1.9rem, 4vw, 2.6rem);
+            font-weight: 900;
+            margin: 0 0 0 0.35rem;
+            line-height: 1.05;
+            font-variant-numeric: tabular-nums;
+            letter-spacing: -0.03em;
+        }
+
+        .stat-item:nth-child(1) .stat-number { color: #1d4ed8; }
+        .stat-item:nth-child(2) .stat-number { color: #0e7490; }
+        .stat-item:nth-child(3) .stat-number { color: #0f172a; }
+
+        .stat-number-date {
+            font-size: clamp(1.35rem, 3.2vw, 1.8rem);
+            letter-spacing: 0.01em;
+        }
+
+        @media (max-width: 640px) {
+            .stats-highlight {
+                padding: 0.7rem;
+                border-radius: 16px;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 0.65rem;
+            }
+
+            .stat-item {
+                min-height: 0;
+                padding: 1.2rem 1rem 1.15rem;
+            }
         }
         
         .cta-section {
@@ -292,15 +657,28 @@
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
         }
         
-        footer {
+        footer.site-footer {
             background: var(--gray-900);
             color: var(--white);
             padding: 2rem 0;
             text-align: center;
-            margin-top: 4rem;
+            margin-top: 0;
         }
         
         @media (max-width: 768px) {
+            .search-section {
+                padding: 0 1rem;
+                margin-top: -1.5rem;
+            }
+
+            .search-card {
+                padding: 1.5rem;
+            }
+
+            .search-title {
+                font-size: 1.25rem;
+            }
+
             .page-title {
                 font-size: 1.8rem;
             }
@@ -316,35 +694,114 @@
             .stats-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
+
+            .container {
+                padding: 1rem 1rem 2.5rem;
+            }
         }
     </style>
 </head>
 <body>
     <header>
         <div class="header-content">
-            <div class="logo">
-                <a href="/">
-                    <i class="fas fa-microscope"></i>
-                    <span>もう失敗しない。ナットクLabo</span>
+            <h1 class="logo">
+                <i class="fas fa-chart-line" aria-hidden="true"></i>
+                <span class="logo-text">
+                    <span class="logo-catch">もう失敗しない。</span>
+                    <span class="logo-name">ナットクLabo</span>
+                </span>
+            </h1>
+            <p class="tagline">ECサイトの口コミを分析</p>
+            <nav class="header-nav" aria-label="主要メニュー">
+                <a href="/compare/" class="header-nav-link primary">
+                    <i class="fas fa-table"></i> おすすめ・口コミ徹底比較
                 </a>
-            </div>
-            <div class="breadcrumb">
-                <a href="/"><i class="fas fa-home"></i> ホーム</a>
-                <span>/</span>
-                <span>このサイトについて</span>
-            </div>
+                <a href="#aboutSearchInput" class="header-nav-link">
+                    <i class="fas fa-search"></i> 製品を探す
+                </a>
+                <a href="#about-content" class="header-nav-link">
+                    <i class="fas fa-info-circle"></i> サイトについて
+                </a>
+            </nav>
         </div>
     </header>
+
+    <div class="search-section">
+        <form class="search-card" id="aboutSearchForm" role="search" aria-label="製品検索">
+            <h2 class="search-title">
+                <i class="fas fa-search"></i>
+                製品を検索する
+            </h2>
+            
+            <div class="search-box">
+                <input
+                    type="search"
+                    id="aboutSearchInput"
+                    class="search-input"
+                    name="q"
+                    placeholder="製品名やメーカー名で検索（例：SwitchBot、K11+、静音）"
+                    autocomplete="off"
+                >
+                <i class="fas fa-search search-icon" aria-hidden="true"></i>
+            </div>
+            
+            <div class="filters">
+                <div class="filter-group">
+                    <label class="filter-label" for="aboutManufacturerFilter">
+                        <i class="fas fa-industry"></i>
+                        メーカー
+                    </label>
+                    <select id="aboutManufacturerFilter" class="filter-select" name="manufacturer">
+                        <option value="すべて">すべてのメーカー</option>
+                        <option value="Anker">Anker</option>
+                        <option value="Dreame">Dreame</option>
+                        <option value="ECOVACS">ECOVACS</option>
+                        <option value="Roborock">Roborock</option>
+                        <option value="SwitchBot">SwitchBot</option>
+                        <option value="iRobot">iRobot</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label class="filter-label" for="aboutPriceFilter">
+                        <i class="fas fa-yen-sign"></i>
+                        価格帯
+                    </label>
+                    <select id="aboutPriceFilter" class="filter-select" name="price">
+                        <option value="すべて">すべての価格帯</option>
+                        <option value="〜5万円">〜5万円</option>
+                        <option value="5〜7万円">5〜7万円</option>
+                        <option value="7〜10万円">7〜10万円</option>
+                        <option value="10〜15万円">10〜15万円</option>
+                        <option value="15〜20万円">15〜20万円</option>
+                        <option value="20万円〜">20万円〜</option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="submit" class="search-submit">
+                <i class="fas fa-search" aria-hidden="true"></i>
+                製品一覧で検索
+            </button>
+        </form>
+    </div>
     
-    <div class="container">
+    <div class="container" id="about-content">
+        <div class="page-breadcrumb" aria-label="パンくずリスト">
+            <a href="/"><i class="fas fa-home"></i> ホーム</a>
+            <span>/</span>
+            <span>このサイトについて</span>
+        </div>
+
         <div class="hero-section">
-            <h1 class="page-title">購入前の悩みを、<br>統計データで解決する</h1>
+            <h2 class="page-title">購入前の悩みを、<br>統計データで解決する</h2>
             <p class="page-subtitle">もう失敗しない。ナットクLabo</p>
         </div>
         
         <!-- Problem Section -->
-        <div class="content-section">
+        <div class="content-section section-problems">
             <p class="lead-text">
+                良い買い物をするために欠かせないのが、実際に使った人たちの「リアルな口コミ」です。<br>
                 <strong>「高い買い物だから失敗したくない」</strong><br>
                 そう思って口コミを読み始めたはずが、気づけば情報の海で迷子になっていませんか？<br>
                 現代のネットレビューには、私たちの冷静な判断を狂わせる<strong>「4つの心理的な罠」</strong>が潜んでいます。
@@ -354,6 +811,7 @@
             
             <div class="problem-grid">
                 <div class="problem-card">
+                    <span class="problem-index">01</span>
                     <div class="problem-title">比較疲れによる「思考停止」</div>
                     <div class="problem-description">
                         複数のサイトを行き来し、数百の声を拾い上げる作業は脳を激しく疲弊させます。結果として、「最後に見た意見」や「極端な声」だけで決断を下してしまいがちです。
@@ -361,6 +819,7 @@
                 </div>
                 
                 <div class="problem-card">
+                    <span class="problem-index">02</span>
                     <div class="problem-title">投稿者の「信頼性」というブラックボックス</div>
                     <div class="problem-description">
                         その絶賛はサクラではないか？ その酷評は単なる使い方のミスではないか？ 背景が見えない情報は、時に判断のノイズとなります。
@@ -368,13 +827,15 @@
                 </div>
                 
                 <div class="problem-card">
-                    <div class="problem-title">「長文＝正解」という錯覚（ハロー効果）</div>
+                    <span class="problem-index">03</span>
+                    <div class="problem-title">「長文＝正解」という錯覚</div>
                     <div class="problem-description">
                         熱のこもった長文レビューは、脳に「これだけ書くなら正しいはずだ」と思い込ませます。しかし、それはあくまで「その一人」の特殊な体験かもしれません。
                     </div>
                 </div>
                 
                 <div class="problem-card">
+                    <span class="problem-index">04</span>
                     <div class="problem-title">「やさしい口調」への無意識の加点</div>
                     <div class="problem-description">
                         丁寧で物腰の柔らかい文章には、本能的に好感を持ち、内容を信じてしまいます。ですが、投稿者の人柄と製品の性能に因果関係はありません。
@@ -393,47 +854,47 @@
         </div>
         
         <!-- Features Section -->
-        <div class="content-section">
+        <div class="content-section section-solutions">
             <h2 class="section-title">4つの分析アプローチ</h2>
             
             <div class="feature-grid">
                 <div class="feature-card">
+                    <span class="feature-index">01</span>
                     <div class="feature-title">
-                        <i class="fas fa-chart-line" style="color: var(--accent-color);"></i>
-                        オンラインレビューの横断解析
+                        複数ECの口コミ横断分析
                     </div>
                     <div class="feature-description">
-                        複数のオンライン情報源から公開データを収集し、独自アルゴリズムで統合。情報源ごとのユーザー属性の偏りを打ち消し、製品の「真の実力」を浮き彫りにします。
+                        複数のECサイトの公開口コミを横断して集計し、あちこち見て回る比較疲れを防ぎながら、偏りの少ない評価傾向を分析します。
                     </div>
                 </div>
                 
                 <div class="feature-card">
+                    <span class="feature-index">02</span>
                     <div class="feature-title">
-                        <i class="fas fa-calculator" style="color: var(--accent-color);"></i>
-                        180のデータポイントによる「指標化」
+                        感想のスコア化
                     </div>
                     <div class="feature-description">
-                        「静かだった」「使いにくい」といった曖昧な感想を、180の評価指標へ変換。基本性能・耐久性・操作性・静音性などを精密にスコアリングし、あなたのライフスタイルに最適かを数値で判定します。
+                        「静か」「吸引力が強い」などの感想を評価項目ごとに点数化し、製品の強み・弱みを数値で比較します。
                     </div>
                 </div>
                 
                 <div class="feature-card">
+                    <span class="feature-index">03</span>
                     <div class="feature-title">
-                        <i class="fas fa-user-check" style="color: var(--accent-color);"></i>
-                        あなたとの適合率を算出
+                        口コミの信頼度チェック
                     </div>
                     <div class="feature-description">
-                        ペット、マンション、共働きといった環境キーワードを検知。同様の環境にあるユーザー群の満足度を抽出し、あなたに合うかどうかの適合率を算出します。
+                        口コミ件数・内容の一貫性・新しさなどを確認し、データの信頼度をあわせて示します。
                     </div>
                 </div>
                 
                 <div class="feature-card">
+                    <span class="feature-index">04</span>
                     <div class="feature-title">
-                        <i class="fas fa-coins" style="color: var(--accent-color);"></i>
-                        将来の「資産価値」を予測
+                        公平な視点
                     </div>
                     <div class="feature-description">
-                        現在の販売価格、発売からの経過日数、および二次流通市場の相場データを組み合わせ、将来のリセールバリューまで予測します。
+                        良い評価だけでなく不満点も集計・記載し、メリット・デメリットを両面から公平に示します。
                     </div>
                 </div>
             </div>
@@ -446,69 +907,26 @@
             <div class="stats-highlight">
                 <div class="stats-grid">
                     <div class="stat-item">
-                        <div class="stat-number">35</div>
-                        <div class="stat-label">製品</div>
+                        <span class="stat-label">掲載製品</span>
+                        <div class="stat-number">52</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-number">13,474+</div>
-                        <div class="stat-label">レビュー数</div>
+                        <span class="stat-label">分析レビュー</span>
+                        <div class="stat-number">5,700+</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-number">180+</div>
-                        <div class="stat-label">分析項目</div>
+                        <span class="stat-label">最終更新</span>
+                        <div class="stat-number stat-number-date">2026.8.13</div>
                     </div>
                 </div>
             </div>
-            
-            <p style="font-size: 1rem; color: var(--gray-600); margin-top: 1.5rem; text-align: center;">
-                <i class="fas fa-sync-alt"></i> 最終更新: 2026年4月18日
-            </p>
-        </div>
-        
-        <!-- Method Section -->
-        <div class="content-section">
-            <h2 class="section-title">口コミ統計分析の仕組み</h2>
-            
-            <p style="font-size: 1rem; color: var(--gray-700; margin-bottom: 2rem; line-height: 1.8;">
-                私たちは、各情報源の利用規約および著作権法を尊重し、文章の引用ではなく<strong>情報の構造化</strong>を行っています。
-            </p>
-            
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <div class="feature-title">感情の数値化（感情分析）</div>
-                    <div class="feature-description">
-                        テキストから性能・品質に関するキーワードを抽出し、その文脈を判定。少数の極端な意見に左右されないよう統計的な補正を行い、安定したスコアを算出します。
-                    </div>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-title">データの「濃さ」を測る信頼性判定</div>
-                    <div class="feature-description">
-                        公開データの総数（サンプルサイズ）を重視し、情報の密度を評価。また、配送トラブルなど製品性能に関係のないノイズを自動的に除外することで、純粋な製品評価を抽出します。
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Closing Message -->
-        <div class="content-section">
-            <h2 class="section-title">新しい「納得」の形</h2>
-            
-            <p class="lead-text">
-                AIが溢れ、誰もがもっともらしいことを言える時代だからこそ、私たちは<strong>加工されていない統計データという一次情報</strong>の価値を信じています。
-            </p>
-            
-            <p class="lead-text">
-                あなたの貴重な時間と、決して安くない買い物を、誰かの個人的な感想に委ねるのをやめませんか？<br>
-                <strong>「もう失敗しない。ナットクLabo」</strong>で、データに基づいた本当の納得を手に入れてください。
-            </p>
         </div>
         
         <!-- CTA -->
         <div class="cta-section">
             <div class="cta-title">製品分析を見てみる</div>
             <div class="cta-description">
-                35製品の詳細な統計分析をご覧いただけます
+                52製品の詳細な統計分析をご覧いただけます
             </div>
             <a href="/" class="cta-button">
                 製品一覧へ
@@ -517,7 +935,7 @@
         </div>
     </div>
     
-    <footer>
+    <footer class="site-footer">
         <div style="max-width: 1200px; margin: 0 auto; padding: 3rem 2rem; text-align: center;">
             <div style="margin-bottom: 2rem;">
                 <h3 style="font-size: 1.8rem; font-weight: 900; margin-bottom: 1rem;">
@@ -532,6 +950,9 @@
                 <a href="/" style="color: white; text-decoration: none; transition: opacity 0.3s ease;">
                     <i class="fas fa-home"></i> ホーム
                 </a>
+                <a href="/compare/" style="color: white; text-decoration: none; transition: opacity 0.3s ease;">
+                    <i class="fas fa-table"></i> 徹底比較
+                </a>
                 <a href="/about" style="color: white; text-decoration: none; transition: opacity 0.3s ease;">
                     <i class="fas fa-info-circle"></i> このサイトについて
                 </a>
@@ -543,6 +964,29 @@
             <p>&copy; 2026 もう失敗しない。ナットクLabo. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        (function () {
+            const form = document.getElementById('aboutSearchForm');
+            if (!form) return;
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                const q = (document.getElementById('aboutSearchInput')?.value || '').trim();
+                const manufacturer = document.getElementById('aboutManufacturerFilter')?.value;
+                const price = document.getElementById('aboutPriceFilter')?.value;
+                const url = new URL('/', window.location.origin);
+                if (q) url.searchParams.set('q', q);
+                if (manufacturer && manufacturer !== 'すべて') {
+                    url.searchParams.set('manufacturer', manufacturer);
+                }
+                if (price && price !== 'すべて') {
+                    url.searchParams.set('price', price);
+                }
+                url.hash = 'productsContainer';
+                window.location.href = url.pathname + url.search + url.hash;
+            });
+        })();
+    </script>
+    <script src="/products/js/navigation.js?v=20260814k"></script>
 </body>
 </html>
 
