@@ -1,6 +1,52 @@
 # robots.txt for もう失敗しない。ナットクLabo
 
-# すべてのクローラーに対して
+# ---------------------------------------------------------------------------
+# AI クローラー許可（学習・引用・拡張インデックス用）
+# 注意: Cloudflare の「Manage robots.txt」が有効だと、この上に
+# Disallow が注入され無効化される。ダッシュボードで無効化すること。
+# ---------------------------------------------------------------------------
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+# ---------------------------------------------------------------------------
+# 一般クローラー
+# ---------------------------------------------------------------------------
 User-agent: *
 
 # すべてのページをクロール許可
