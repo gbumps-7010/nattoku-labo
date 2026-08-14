@@ -565,6 +565,7 @@ function shouldShowSiteFilterBar() {
 
 /**
  * 製品・比較ページのヘッダー直上に検索フィルターを表示
+ * スマホでは折りたたみ（タップで開閉）にして閲覧領域を確保
  */
 function createProductPageFilterBar() {
     if (!shouldShowSiteFilterBar()) return;
@@ -572,10 +573,27 @@ function createProductPageFilterBar() {
 
     const bar = document.createElement('div');
     bar.id = 'product-page-filter-bar';
-    bar.className = 'product-page-filter-bar';
+    bar.className = 'product-page-filter-bar is-collapsed';
     bar.setAttribute('role', 'search');
     bar.setAttribute('aria-label', '製品検索フィルター');
-    bar.innerHTML = buildSiteFilterFormHtml('product-page-filter-form', 'product-page');
+    bar.innerHTML = `
+        <button
+            type="button"
+            class="product-page-filter-toggle"
+            id="product-page-filter-toggle"
+            aria-expanded="false"
+            aria-controls="product-page-filter-panel"
+        >
+            <span class="product-page-filter-toggle-label">
+                <i class="fas fa-search" aria-hidden="true"></i>
+                製品を探す
+            </span>
+            <span class="product-page-filter-toggle-hint" aria-hidden="true">開く</span>
+        </button>
+        <div class="product-page-filter-panel" id="product-page-filter-panel">
+            ${buildSiteFilterFormHtml('product-page-filter-form', 'product-page')}
+        </div>
+    `;
 
     const pageHeader =
         document.querySelector('body > header') ||
@@ -590,6 +608,22 @@ function createProductPageFilterBar() {
         } else {
             document.body.appendChild(bar);
         }
+    }
+
+    const toggle = bar.querySelector('#product-page-filter-toggle');
+    const panel = bar.querySelector('#product-page-filter-panel');
+    const hint = bar.querySelector('.product-page-filter-toggle-hint');
+    if (toggle && panel) {
+        toggle.addEventListener('click', () => {
+            const collapsed = bar.classList.toggle('is-collapsed');
+            const expanded = !collapsed;
+            toggle.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+            if (hint) hint.textContent = expanded ? '閉じる' : '開く';
+            if (expanded) {
+                const input = panel.querySelector('#product-page-search-input');
+                if (input) input.focus({ preventScroll: true });
+            }
+        });
     }
 
     bindSiteFilterForm(bar.querySelector('#product-page-filter-form'), 'product-page');
