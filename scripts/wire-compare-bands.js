@@ -8,12 +8,11 @@ function banner(label, href) {
   return `
         <section class="same-price-compare-banner">
             <a class="same-price-compare-link" href="${href}">
-                <span class="same-price-compare-icon" aria-hidden="true"><i class="fas fa-balance-scale"></i></span>
                 <span class="same-price-compare-copy">
                     <strong>同価格帯の口コミ分析比較を見る</strong>
                     <span class="same-price-compare-meta">${label}｜全製品のおすすめ比較</span>
                 </span>
-                <span class="same-price-compare-action">比較を見る<i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+                <span class="same-price-compare-action">比較を見る</span>
             </a>
         </section>
 `;
