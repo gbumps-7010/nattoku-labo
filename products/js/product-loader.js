@@ -35,7 +35,7 @@ async function loadProductData(productId) {
 function manufacturerKatakana(manufacturer) {
     const m = String(manufacturer || '').trim();
     const map = {
-        iRobot: 'ルンバ',
+        iRobot: 'アイロボット',
         Roborock: 'ロボロック',
         ECOVACS: 'エコバックス',
         Dreame: 'ドリーミー',
@@ -68,7 +68,6 @@ function seoProductLabel(data) {
     name = name
         .replace(/^ロボット掃除機\s*/u, '')
         .replace(/^お掃除ロボット\s*/u, '')
-        .replace(/^Roomba[®]?\s*/i, '')
         .replace(/^Eufy\s+(Clean\s+)?/i, '')
         .replace(/^Robot Vacuum\s+/i, '')
         .replace(/^RoboVac\s+/i, '')
