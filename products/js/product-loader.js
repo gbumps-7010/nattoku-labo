@@ -32,18 +32,104 @@ async function loadProductData(productId) {
     }
 }
 
+function manufacturerKatakana(manufacturer) {
+    const m = String(manufacturer || '').trim();
+    const map = {
+        iRobot: 'ルンバ',
+        Roborock: 'ロボロック',
+        ECOVACS: 'エコバックス',
+        Dreame: 'ドリーミー',
+        Anker: 'ユーフィー',
+        eufy: 'ユーフィー',
+        Eufy: 'ユーフィー',
+        SwitchBot: 'スイッチボット',
+    };
+    return map[m] || m;
+}
+
+function manufacturerEnglish(manufacturer) {
+    const m = String(manufacturer || '').trim();
+    const map = {
+        iRobot: 'iRobot',
+        Roborock: 'Roborock',
+        ECOVACS: 'ECOVACS',
+        Dreame: 'Dreame',
+        Anker: 'eufy',
+        eufy: 'eufy',
+        Eufy: 'eufy',
+        SwitchBot: 'SwitchBot',
+    };
+    return map[m] || m;
+}
+
+function seoProductLabel(data) {
+    let name = String(data.productName || data.productId || '').trim();
+    // タイトル先頭のカタカナと重複しやすい接頭辞を整理
+    name = name
+        .replace(/^ロボット掃除機\s*/u, '')
+        .replace(/^お掃除ロボット\s*/u, '')
+        .replace(/^Roomba[®]?\s*/i, '')
+        .replace(/^Eufy\s+(Clean\s+)?/i, '')
+        .replace(/^Robot Vacuum\s+/i, '')
+        .replace(/^RoboVac\s+/i, '')
+        .replace(/^iRobot\s+/i, '')
+        .replace(/^Roborock\s+/i, '')
+        .replace(/^ECOVACS\s+/i, '')
+        .replace(/^Dreame\s+/i, '')
+        .replace(/^SwitchBot\s+/i, '')
+        .replace(/^Anker\s+/i, '')
+        .trim();
+    return name || String(data.productId || '').trim();
+}
+
 function buildSeoMetadata(data) {
     const manufacturer = String(data.manufacturer || '').trim();
     const productName = String(data.productName || data.productId).trim();
     const name = manufacturer && !productName.toLowerCase().includes(manufacturer.toLowerCase())
         ? `${manufacturer} ${productName}`
         : productName;
+    const kana = manufacturerKatakana(manufacturer);
+    const eng = manufacturerEnglish(manufacturer);
+    const label = seoProductLabel(data);
+    // カタカナ（英語） → ロボット掃除機口コミ比較 → 製品名
+    const brandPart = eng ? `${kana}（${eng}）` : kana;
+    const title = `${brandPart}｜ロボット掃除機口コミ比較｜${label}`;
 
     return {
         name,
-        title: data.metaTitle || `${productName} 詳細分析 | もう失敗しない。ナットクLabo`,
+        title,
+        brandPart,
+        comparePart: 'ロボット掃除機口コミ比較',
+        labelPart: label,
         description: data.metaDescription || `${name}の口コミ統計分析。詳細データを公開。`
     };
+}
+
+/** H1を「｜」単位で改行できる構造にし、各ブロック内の変な改行を防ぐ */
+function setProductTitleHeading(element, metadata) {
+    if (!element || !metadata) return;
+    const parts = [
+        metadata.brandPart,
+        metadata.comparePart,
+        metadata.labelPart,
+    ].filter(Boolean);
+    element.textContent = '';
+    parts.forEach((part, idx) => {
+        const unit = document.createElement('span');
+        unit.className = 'product-title-unit';
+        if (idx > 0) {
+            const sep = document.createElement('span');
+            sep.className = 'product-title-sep';
+            sep.setAttribute('aria-hidden', 'true');
+            sep.textContent = '｜';
+            unit.appendChild(sep);
+        }
+        const span = document.createElement('span');
+        span.className = 'product-title-part';
+        span.textContent = part;
+        unit.appendChild(span);
+        element.appendChild(unit);
+    });
 }
 
 // 2. メタデータ更新
@@ -55,6 +141,14 @@ function updateMetadata(data) {
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
         metaDesc.setAttribute('content', metadata.description);
+    }
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    if (ogTitle) {
+        ogTitle.setAttribute('content', metadata.title);
+    }
+    const ogDesc = document.querySelector('meta[property="og:description"]');
+    if (ogDesc) {
+        ogDesc.setAttribute('content', metadata.description);
     }
     
     const structuredData = {
@@ -109,6 +203,9 @@ function updateDynamicElements(data) {
                     element.style.display = 'none';
                     console.log('ℹ️ 画像なし（アフィリエイト画像未設定）→ 非表示');
                 }
+            } else if (path === 'productName' && element.tagName === 'H1') {
+                // ページ見出し（H1）はSEOタイトルを表示（改行位置を制御）
+                setProductTitleHeading(element, buildSeoMetadata(data));
             } else if (path === 'price') {
                 // 価格を「約」付きでカンマ区切りでフォーマット
                 element.textContent = `約¥${value.toLocaleString()}`;
@@ -171,7 +268,7 @@ function updateBasicInfo(data) {
     }
 
     const productTitle = document.querySelector('h1.product-title, .product-header h1.product-title');
-    if (productTitle && data.productName) productTitle.textContent = data.productName;
+    if (productTitle) setProductTitleHeading(productTitle, buildSeoMetadata(data));
     
     const productImage = document.querySelector('.product-image-header');
     if (productImage) {

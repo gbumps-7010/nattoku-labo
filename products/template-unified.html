@@ -39,7 +39,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     
     <!-- ナビゲーションCSS -->
-    <link rel="stylesheet" href="css/navigation.css?v=20260814h">
+    <link rel="stylesheet" href="css/navigation.css?v=20260814i">
     
     <style>
         * {
@@ -701,7 +701,9 @@
                 padding: 0.5rem 0.6rem;
             }
 
-            .product-header-stats > * {
+            .score-label,
+            .score-value,
+            .product-meta > * {
                 min-width: 0;
                 overflow-wrap: anywhere;
             }
@@ -714,19 +716,15 @@
                 font-size: 1rem;
             }
 
-            .product-header-stats {
+            .product-meta {
                 display: grid;
                 grid-template-columns: 1fr;
                 gap: 0.65rem;
                 width: 100%;
             }
 
-            .product-header-stat {
-                padding: 0.6rem 0.85rem;
-                font-size: 0.88rem;
-                justify-content: flex-start;
-                width: 100%;
-                box-sizing: border-box;
+            .product-meta > * {
+                padding: 0.55rem 0.75rem !important;
             }
 
             .affiliate-cta-section {
@@ -1176,7 +1174,7 @@
     </div>
     
     <!-- Product Loader Script -->
-    <script src="js/product-loader.js?v=20260814e"></script>
+    <script src="js/product-loader.js?v=20260814i"></script>
 
 <!-- ナビゲーションシステム V3.14 -->
 <script src="js/navigation.js?v=20260814e"></script>

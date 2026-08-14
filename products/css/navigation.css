@@ -1144,6 +1144,36 @@ body:has(#fixed-navigation) .container {
     min-width: 0;
 }
 
+/* SEOタイトルH1: 「｜」単位でのみ改行し、ブロック内は折り返さない（PC/スマホ共通） */
+body:has(#fixed-navigation) h1.product-title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    column-gap: 0;
+    row-gap: 0.12em;
+    overflow-wrap: normal;
+    word-break: keep-all;
+    line-height: 1.35;
+}
+
+body:has(#fixed-navigation) h1.product-title .product-title-unit {
+    display: inline-block;
+    white-space: nowrap;
+    max-width: 100%;
+}
+
+body:has(#fixed-navigation) h1.product-title .product-title-part,
+body:has(#fixed-navigation) h1.product-title .product-title-sep {
+    white-space: nowrap;
+}
+
+@media (max-width: 380px) {
+    body:has(#fixed-navigation) h1.product-title .product-title-unit:first-child {
+        white-space: normal;
+        overflow-wrap: anywhere;
+    }
+}
+
 /* ===== 製品ページ（固定ナビあり）のモバイル調整 ===== */
 @media (max-width: 768px) {
     body:has(#fixed-navigation) {

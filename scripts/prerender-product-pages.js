@@ -26,6 +26,55 @@ function getNestedValue(object, dottedPath) {
   return dottedPath.split(".").reduce((value, key) => value?.[key], object);
 }
 
+function manufacturerKatakana(manufacturer) {
+  const m = String(manufacturer || "").trim();
+  const map = {
+    iRobot: "ルンバ",
+    Roborock: "ロボロック",
+    ECOVACS: "エコバックス",
+    Dreame: "ドリーミー",
+    Anker: "ユーフィー",
+    eufy: "ユーフィー",
+    Eufy: "ユーフィー",
+    SwitchBot: "スイッチボット",
+  };
+  return map[m] || m;
+}
+
+function manufacturerEnglish(manufacturer) {
+  const m = String(manufacturer || "").trim();
+  const map = {
+    iRobot: "iRobot",
+    Roborock: "Roborock",
+    ECOVACS: "ECOVACS",
+    Dreame: "Dreame",
+    Anker: "eufy",
+    eufy: "eufy",
+    Eufy: "eufy",
+    SwitchBot: "SwitchBot",
+  };
+  return map[m] || m;
+}
+
+function seoProductLabel(data) {
+  let name = String(data.productName || data.productId || "").trim();
+  name = name
+    .replace(/^ロボット掃除機\s*/u, "")
+    .replace(/^お掃除ロボット\s*/u, "")
+    .replace(/^Roomba[®]?\s*/i, "")
+    .replace(/^Eufy\s+(Clean\s+)?/i, "")
+    .replace(/^Robot Vacuum\s+/i, "")
+    .replace(/^RoboVac\s+/i, "")
+    .replace(/^iRobot\s+/i, "")
+    .replace(/^Roborock\s+/i, "")
+    .replace(/^ECOVACS\s+/i, "")
+    .replace(/^Dreame\s+/i, "")
+    .replace(/^SwitchBot\s+/i, "")
+    .replace(/^Anker\s+/i, "")
+    .trim();
+  return name || String(data.productId || "").trim();
+}
+
 function displayName(data) {
   const manufacturer = String(data.manufacturer || "").trim();
   const name = String(data.productName || data.productId).trim();
@@ -36,14 +85,32 @@ function displayName(data) {
 
 function buildMetadata(data) {
   const name = displayName(data);
-  const title = String(
-    data.metaTitle || `${data.productName} 詳細分析 | もう失敗しない。ナットクLabo`,
-  );
+  const kana = manufacturerKatakana(data.manufacturer);
+  const eng = manufacturerEnglish(data.manufacturer);
+  const label = seoProductLabel(data);
+  const brandPart = eng ? `${kana}（${eng}）` : kana;
+  const comparePart = "ロボット掃除機口コミ比較";
+  const title = `${brandPart}｜${comparePart}｜${label}`;
   const description = String(
     data.metaDescription || `${name}の口コミ統計分析。詳細データを公開。`,
   );
 
-  return { name, title, description };
+  return { name, title, brandPart, comparePart, labelPart: label, description };
+}
+
+function buildProductTitleHtml(metadata) {
+  const parts = [metadata.brandPart, metadata.comparePart, metadata.labelPart].filter(
+    Boolean,
+  );
+  return parts
+    .map((part, idx) => {
+      const sep =
+        idx > 0
+          ? '<span class="product-title-sep" aria-hidden="true">｜</span>'
+          : "";
+      return `<span class="product-title-unit">${sep}<span class="product-title-part">${escapeHtml(part)}</span></span>`;
+    })
+    .join("");
 }
 
 function pageUrl(productId) {
@@ -395,6 +462,12 @@ function prerenderHtml(html, data) {
     html = replaceSimpleDynamic(html, dottedPath, formatValue(dottedPath, value));
   }
 
+  // H1はSEOタイトルを表示（｜単位で改行できる構造）
+  html = html.replace(
+    /(<h1 class="product-title"[^>]*data-dynamic="productName"[^>]*>)[\s\S]*?(<\/h1>)/i,
+    `$1${buildProductTitleHtml(metadata)}$2`,
+  );
+
   // 口コミ分析サマリー（seo-unique-summary）は表示しない
   html = removeSeoSummaryBlock(html);
 
@@ -427,6 +500,7 @@ function stripProductNameFromSectionHeadings(html, displayName, productName) {
 }
 
 function validatePrerenderedHtml(html, data) {
+  const metadata = buildMetadata(data);
   const weightedExpectations = [
     [
       "reliability.dataAdequacy.score",
@@ -448,7 +522,7 @@ function validatePrerenderedHtml(html, data) {
   const required = [
     `<link rel="canonical" href="${url}">`,
     `property="og:url" content="${url}"`,
-    `data-dynamic="productName">${escapeHtml(data.productName)}</h1>`,
+    `data-dynamic="productName">${buildProductTitleHtml(metadata)}</h1>`,
     "/* MOBILE_LAYOUT_FIX_START */",
   ];
   for (const expected of required) {
