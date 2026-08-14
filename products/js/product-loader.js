@@ -402,80 +402,99 @@ function reliabilityWeightedPoints(raw, maxPts) {
     return pts;
 }
 
-function setReliabilityFactorDisplay(scoreEl, raw, maxPts, denomColor) {
-    if (!scoreEl || raw == null) return;
+function formatReliabilityPoints(raw, maxPts) {
     const pts = reliabilityWeightedPoints(raw, maxPts);
-    if (pts == null) return;
-    scoreEl.textContent = Number.isInteger(pts) ? String(pts) : pts.toFixed(1);
-    const denom = scoreEl.nextElementSibling;
-    if (denom) {
-        denom.textContent = `/ ${maxPts}点`;
-        denom.style.fontSize = '1.15rem';
-        denom.style.fontWeight = '700';
-        denom.style.color = denomColor || '#64748b';
-    }
+    if (pts == null) return '—';
+    return Number.isInteger(pts) ? String(pts) : pts.toFixed(1);
+}
+
+function renderReliabilityFactors(rel) {
+    const host = document.getElementById('reliability-factors');
+    if (!host) return;
+
+    const cards = [
+        {
+            tone: 'adequacy',
+            title: '口コミ件数の十分さ',
+            weight: '重要度 60%',
+            hint: '口コミの件数が多いほど、分析の信頼度は高くなります。',
+            maxPts: 60,
+            scoreAttr: 'reliability.dataAdequacy.score',
+            descAttr: 'reliability.dataAdequacy.description',
+            score: formatReliabilityPoints(
+                rel.dataAdequacy?.score ?? rel.dataAdequacy?.percentage,
+                60,
+            ),
+            description:
+                rel.dataAdequacy?.description ||
+                rel.dataAdequacy?.note ||
+                '',
+        },
+        {
+            tone: 'consistency',
+            title: '口コミの意見の一致度',
+            weight: '重要度 30%',
+            hint: '高評価・低評価ともに、多くの口コミが同じ論点に集まるほど高得点です。',
+            maxPts: 30,
+            scoreAttr: 'reliability.consistency.percentage',
+            descAttr: 'reliability.consistency.description',
+            score: formatReliabilityPoints(
+                rel.consistency?.percentage ?? rel.consistency?.score,
+                30,
+            ),
+            description:
+                rel.consistency?.description ||
+                rel.consistency?.note ||
+                '',
+        },
+        {
+            tone: 'freshness',
+            title: '口コミの鮮度',
+            weight: '重要度 10%',
+            hint: '新しい口コミが多いほど、いまの製品品質やサポート状況を反映しやすいです。',
+            maxPts: 10,
+            scoreAttr: 'reliability.freshness.score',
+            descAttr: 'reliability.freshness.description',
+            score: formatReliabilityPoints(
+                rel.freshness?.score ?? rel.freshness?.percentage,
+                10,
+            ),
+            description:
+                rel.freshness?.description ||
+                rel.freshness?.note ||
+                '',
+        },
+    ];
+
+    host.innerHTML = cards
+        .map(
+            (card) => `
+        <article class="reliability-factor-card reliability-factor-${card.tone}">
+            <h3 class="reliability-factor-title">${card.title}</h3>
+            <span class="reliability-weight-badge">${card.weight}</span>
+            <p class="reliability-factor-hint">${card.hint}</p>
+            <div class="reliability-factor-score">
+                <span data-dynamic="${card.scoreAttr}">${card.score}</span>
+                <span class="reliability-factor-denom">/ ${card.maxPts}点</span>
+            </div>
+            <p class="reliability-factor-desc" data-dynamic="${card.descAttr}">${card.description}</p>
+        </article>
+    `,
+        )
+        .join('');
 }
 
 function updateReliability(data) {
     if (!data.reliability) return;
-    
+
     const rel = data.reliability;
-    
-    // 総合スコア（3要素の配点合計と一致）
+
     const scoreEl = document.querySelector('[data-dynamic="reliability.score"]');
     if (scoreEl && rel.score !== undefined) {
         scoreEl.textContent = Number(rel.score).toFixed(1);
     }
-    
-    // 口コミ件数の十分さ（配点60点）
-    if (rel.dataAdequacy) {
-        const adequacyScoreEl = document.querySelector('[data-dynamic="reliability.dataAdequacy.score"]');
-        const rawAdequacy = rel.dataAdequacy.score ?? rel.dataAdequacy.percentage;
-        setReliabilityFactorDisplay(adequacyScoreEl, rawAdequacy, 60, '#0284c7');
-        
-        const adequacyDescEl = document.querySelector('[data-dynamic="reliability.dataAdequacy.description"]');
-        if (adequacyDescEl) {
-            const adequacyDesc = rel.dataAdequacy.description || rel.dataAdequacy.note;
-            if (adequacyDesc) adequacyDescEl.textContent = adequacyDesc;
-        }
-    }
-    
-    // 使った人の意見の一致度（配点30点）
-    if (rel.consistency) {
-        const consistencyPercentEl = document.querySelector('[data-dynamic="reliability.consistency.percentage"]');
-        const rawConsistency = rel.consistency.percentage ?? rel.consistency.score;
-        setReliabilityFactorDisplay(consistencyPercentEl, rawConsistency, 30, '#7c3aed');
-        
-        const consistencyDescEl = document.querySelector('[data-dynamic="reliability.consistency.description"]');
-        if (consistencyDescEl) {
-            const consistencyDesc = rel.consistency.description || rel.consistency.note;
-            if (consistencyDesc) consistencyDescEl.textContent = consistencyDesc;
-        }
-    }
-    
-    // 最新の改善への対応状況（配点10点）
-    if (rel.freshness) {
-        const freshnessScoreEl = document.querySelector('[data-dynamic="reliability.freshness.score"]');
-        const rawFreshness = rel.freshness.score ?? rel.freshness.percentage;
-        setReliabilityFactorDisplay(freshnessScoreEl, rawFreshness, 10, '#10b981');
-        
-        const freshnessDescEl = document.querySelector('[data-dynamic="reliability.freshness.description"]');
-        if (freshnessDescEl) {
-            const freshnessDesc = rel.freshness.description || rel.freshness.note;
-            if (freshnessDesc) freshnessDescEl.textContent = freshnessDesc;
-        }
-    }
 
-    // 重要度バッジを大きく見やすく
-    document.querySelectorAll('.reliability-weight-badge').forEach((el) => {
-        el.style.display = 'inline-block';
-        el.style.fontSize = '1rem';
-        el.style.fontWeight = '800';
-        el.style.padding = '0.5rem 1rem';
-        el.style.borderRadius = '8px';
-        el.style.letterSpacing = '0.02em';
-        el.style.whiteSpace = 'nowrap';
-    });
+    renderReliabilityFactors(rel);
 }
 
 function formatUpdateDate(value) {

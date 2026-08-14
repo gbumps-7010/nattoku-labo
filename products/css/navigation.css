@@ -1255,6 +1255,100 @@ body:has(#fixed-navigation) .header-content {
     }
 }
 
+/* 口コミ信頼度：3指標カードを統一レイアウト */
+.reliability-factors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.reliability-factor-card {
+    background: #fff;
+    padding: 1.75rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border-left: 5px solid #64748b;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    min-width: 0;
+}
+
+.reliability-factor-adequacy { border-left-color: #0284c7; }
+.reliability-factor-consistency { border-left-color: #7c3aed; }
+.reliability-factor-freshness { border-left-color: #10b981; }
+
+.reliability-factor-title {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1e293b;
+    line-height: 1.4;
+}
+
+.reliability-factor-card .reliability-weight-badge {
+    display: inline-flex;
+    align-self: flex-start;
+    font-size: 0.92rem;
+    font-weight: 800;
+    padding: 0.4rem 0.85rem;
+    border-radius: 8px;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+    border: 2px solid currentColor;
+}
+
+.reliability-factor-adequacy .reliability-weight-badge {
+    color: #0284c7;
+    background: #e0f2fe;
+}
+
+.reliability-factor-consistency .reliability-weight-badge {
+    color: #7c3aed;
+    background: #f3e8ff;
+}
+
+.reliability-factor-freshness .reliability-weight-badge {
+    color: #10b981;
+    background: #d1fae5;
+}
+
+.reliability-factor-hint {
+    margin: 0;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: #64748b;
+}
+
+.reliability-factor-score {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+
+.reliability-factor-score [data-dynamic] {
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.reliability-factor-adequacy .reliability-factor-score [data-dynamic] { color: #0284c7; }
+.reliability-factor-consistency .reliability-factor-score [data-dynamic] { color: #7c3aed; }
+.reliability-factor-freshness .reliability-factor-score [data-dynamic] { color: #10b981; }
+
+.reliability-factor-denom {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #64748b;
+}
+
+.reliability-factor-desc {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #64748b;
+}
+
 /* SEOタイトルH1: 「｜」単位でのみ改行し、ブロック内は折り返さない（PC/スマホ共通） */
 body:has(#fixed-navigation) h1.product-title {
     display: flex;
