@@ -1394,7 +1394,31 @@ function renderAffiliate(data) {
 }
 
 // 13. メイン初期化
+/** 製品ヘッダー直下にサイト価値の短い説明を差し込む（控えめ表示） */
+function ensureProductValueNote() {
+    if (document.getElementById('product-value-note')) return;
+
+    const header =
+        document.querySelector('body > header') ||
+        document.querySelector('header');
+    if (!header || !header.parentNode) return;
+
+    const note = document.createElement('div');
+    note.id = 'product-value-note';
+    note.className = 'product-value-note';
+    note.innerHTML =
+        '<p>口コミは重要でも、どれを信じればよいか分からないし、読み疲れしてしまう。このサイトでは、ECサイトの口コミを横断的に分析・点数化し、メリットとデメリットを公平に示して失敗しない購入をサポートします。</p>';
+
+    const container = document.querySelector('body > .container, .container');
+    if (container && container.parentNode === header.parentNode) {
+        container.parentNode.insertBefore(note, container);
+    } else {
+        header.insertAdjacentElement('afterend', note);
+    }
+}
+
 async function initializePage() {
+    ensureProductValueNote();
     const productId = getProductId();
     console.log('🔍 製品ID:', productId);
     
