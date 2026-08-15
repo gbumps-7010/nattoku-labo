@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Generate /rankings/floor-cleaning.html and /rankings/index.html (floor 85% + trust 15%)."""
+"""Generate feature ranking pages under /rankings/ (feature 85% + trust 15%)."""
 from __future__ import annotations
 
 import html
@@ -14,26 +14,110 @@ NAV_V = "20260815a"
 WF, WR = 0.85, 0.15
 UPDATED = date.today().isoformat()
 
+RANKINGS = [
+    {
+        "slug": "floor-cleaning",
+        "perf_keys": ("floorCleaning", "floor", "hardwood", "hardFloor"),
+        "crumb": "フローリング掃除",
+        "h1": "【ロボット掃除機ランキング】フローリング掃除のおすすめ機種",
+        "meta_description": "口コミの吸引力・水拭き評価を数値化したフローリング掃除ランキング。口コミ信頼度も加味したおすすめ順で{count}製品を比較できます。",
+        "og_description": "口コミの吸引力・水拭き評価を数値化したフローリング掃除ランキング。口コミ信頼度も加味したおすすめ順で比較できます。",
+        "lede": "口コミに書かれた吸引力や水拭きの評価を数値化し、フローリング掃除の得意さを比較したランキングです。各製品には、実際の口コミからまとめたフローリング清掃の傾向コメントも掲載しています。",
+        "method_body": (
+            "「吸引力が強い」「水拭きがきれい」といった口コミを点数化し、フローリング掃除の得意さで並べています。"
+            "口コミの信頼度を適切に加味するので、<strong>実体験に近いおすすめ順</strong>になっています。"
+            "表の各製品には、床の仕上がりや水拭きに関する口コミ傾向も記載しているので、点数だけでなく具体的な声も比較できます。"
+        ),
+        "formula_label": "フローリング点数",
+        "score_col": "フローリング",
+        "comment_label": "フローリング清掃の口コミ傾向",
+        "table_note": "各製品にフローリング清掃の口コミコメント付き",
+        "hub_title": "【ロボット掃除機ランキング】フローリング掃除のおすすめ機種",
+        "hub_cta": "フローリング清掃ランキングを見る →",
+        "hub_meta": "吸引力・水拭きの口コミを数値化",
+        "schema_description": "口コミの吸引力・水拭き評価を数値化したフローリング掃除ランキング",
+        "related_note": "カーペット掃除・静音性は別のランキングでも比較できます。",
+        "related_rankings": [
+            ("/rankings/carpet-cleaning", "カーペット掃除ランキング"),
+            ("/rankings/quietness", "静音性ランキング"),
+        ],
+    },
+    {
+        "slug": "carpet-cleaning",
+        "perf_keys": ("carpetCleaning", "carpet"),
+        "crumb": "カーペット掃除",
+        "h1": "【ロボット掃除機ランキング】カーペット掃除のおすすめ機種",
+        "meta_description": "口コミのカーペット清掃評価を数値化したランキング。口コミ信頼度も加味したおすすめ順で{count}製品を比較できます。",
+        "og_description": "口コミのカーペット清掃評価を数値化したランキング。口コミ信頼度も加味したおすすめ順で比較できます。",
+        "lede": "口コミに書かれたカーペット清掃の評価を数値化し、ラグや絨毯掃除の得意さを比較したランキングです。各製品には、実際の口コミからまとめたカーペット清掃の傾向コメントも掲載しています。",
+        "method_body": (
+            "「カーペットのゴミが取れる」「ラグを巻き込まない」といった口コミを点数化し、カーペット掃除の得意さで並べています。"
+            "口コミの信頼度を適切に加味するので、<strong>実体験に近いおすすめ順</strong>になっています。"
+            "表の各製品には、カーペット検知や吸引力に関する口コミ傾向も記載しているので、点数だけでなく具体的な声も比較できます。"
+        ),
+        "formula_label": "カーペット点数",
+        "score_col": "カーペット",
+        "comment_label": "カーペット清掃の口コミ傾向",
+        "table_note": "各製品にカーペット清掃の口コミコメント付き",
+        "hub_title": "【ロボット掃除機ランキング】カーペット掃除のおすすめ機種",
+        "hub_cta": "カーペット清掃ランキングを見る →",
+        "hub_meta": "カーペット清掃の口コミを数値化",
+        "schema_description": "口コミのカーペット清掃評価を数値化したランキング",
+        "related_note": "フローリング掃除・静音性は別のランキングでも比較できます。",
+        "related_rankings": [
+            ("/rankings/floor-cleaning", "フローリング掃除ランキング"),
+            ("/rankings/quietness", "静音性ランキング"),
+        ],
+    },
+    {
+        "slug": "quietness",
+        "perf_keys": ("quietness", "noiseLevel", "quietOperation"),
+        "crumb": "静音性",
+        "h1": "【ロボット掃除機ランキング】静音性のおすすめ機種",
+        "meta_description": "口コミの静音性評価を数値化したランキング。口コミ信頼度も加味したおすすめ順で{count}製品を比較できます。",
+        "og_description": "口コミの静音性評価を数値化したランキング。口コミ信頼度も加味したおすすめ順で比較できます。",
+        "lede": "口コミに書かれた運転音・静音性の評価を数値化し、在宅中や夜間でも使いやすい機種を比較したランキングです。各製品には、実際の口コミからまとめた静音性の傾向コメントも掲載しています。",
+        "method_body": (
+            "「音が静か」「テレビの邪魔にならない」といった口コミを点数化し、静音性の高さで並べています。"
+            "口コミの信頼度を適切に加味するので、<strong>実体験に近いおすすめ順</strong>になっています。"
+            "表の各製品には、運転音や生活への影響に関する口コミ傾向も記載しているので、点数だけでなく具体的な声も比較できます。"
+        ),
+        "formula_label": "静音性点数",
+        "score_col": "静音性",
+        "comment_label": "静音性の口コミ傾向",
+        "table_note": "各製品に静音性の口コミコメント付き",
+        "hub_title": "【ロボット掃除機ランキング】静音性のおすすめ機種",
+        "hub_cta": "静音性ランキングを見る →",
+        "hub_meta": "運転音・静音性の口コミを数値化",
+        "schema_description": "口コミの静音性評価を数値化したランキング",
+        "related_note": "フローリング掃除・カーペット掃除は別のランキングでも比較できます。",
+        "related_rankings": [
+            ("/rankings/floor-cleaning", "フローリング掃除ランキング"),
+            ("/rankings/carpet-cleaning", "カーペット掃除ランキング"),
+        ],
+    },
+]
 
-def load_products() -> list[dict]:
+
+def load_products(perf_keys: tuple[str, ...]) -> list[dict]:
     rows = []
     for path in sorted(DATA_DIR.glob("*.json")):
         raw = json.loads(path.read_text(encoding="utf-8"))
         if not isinstance(raw, dict):
             continue
         perf = raw.get("performanceAnalysis") or {}
-        floor = None
+        feature = None
         comment = ""
-        for key in ("floorCleaning", "floor", "hardwood", "hardFloor"):
+        for key in perf_keys:
             value = perf.get(key)
             if isinstance(value, dict) and value.get("score") is not None:
-                floor = float(value["score"])
+                feature = float(value["score"])
                 comment = (value.get("comment") or "").strip()
                 break
             if isinstance(value, (int, float)):
-                floor = float(value)
+                feature = float(value)
                 break
-        if floor is None:
+        if feature is None:
             continue
         rel = raw.get("reliabilityScore")
         if rel is None:
@@ -46,15 +130,17 @@ def load_products() -> list[dict]:
                 "name": raw.get("productName") or path.stem,
                 "manufacturer": raw.get("manufacturer") or "",
                 "imageUrl": raw.get("imageUrl") or "",
-                "floor": floor,
+                "feature": feature,
                 "reliability": float(rel),
                 "reviews": int(raw.get("totalReviews") or 0),
                 "price": int(raw.get("price") or 0),
-                "composite": round(WF * floor + WR * float(rel), 1),
-                "floorComment": comment,
+                "composite": round(WF * feature + WR * float(rel), 1),
+                "comment": comment,
             }
         )
-    rows.sort(key=lambda x: (-x["composite"], -x["floor"], -x["reliability"], -x["reviews"]))
+    rows.sort(
+        key=lambda x: (-x["composite"], -x["feature"], -x["reliability"], -x["reviews"])
+    )
     for i, row in enumerate(rows, 1):
         row["rank"] = i
     return rows
@@ -88,13 +174,13 @@ def product_url(pid: str) -> str:
     return f"https://nattoku-labo.com/products/{pid}"
 
 
-def build_rows(products: list[dict]) -> str:
+def build_rows(products: list[dict], comment_label: str) -> str:
     chunks = []
     for p in products:
         url = product_url(p["id"])
         name = html.escape(p["name"])
         mfr = html.escape(p["manufacturer"])
-        comment = html.escape((p.get("floorComment") or "").strip())
+        comment = html.escape((p.get("comment") or "").strip())
         tc = top_class(p["rank"])
         img = (
             f'<img src="{html.escape(p["imageUrl"])}" alt="{name}の製品画像" loading="lazy" width="56" height="56">'
@@ -107,7 +193,7 @@ def build_rows(products: list[dict]) -> str:
       <tr class="comment-row{tc}" data-price="{p['price']}" data-rank="{p['rank']}">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>{comment}</p>
+          <p class="floor-comment"><span class="floor-comment-label">{html.escape(comment_label)}</span>{comment}</p>
         </td>
       </tr>"""
         chunks.append(
@@ -123,7 +209,7 @@ def build_rows(products: list[dict]) -> str:
             </span>
           </a>
         </td>
-        <td class="num floor"><span class="score {score_class(p['floor'])}">{p['floor']:.0f}</span></td>
+        <td class="num floor"><span class="score {score_class(p['feature'])}">{p['feature']:.0f}</span></td>
         <td class="num"><span class="score {score_class(p['reliability'])}">{p['reliability']:.1f}</span></td>
         <td class="num muted">{p['reviews']:,}</td>
         <td class="num muted">{yen(p['price'])}</td>
@@ -132,23 +218,22 @@ def build_rows(products: list[dict]) -> str:
     return "".join(chunks)
 
 
-def build_item_list_json(products: list[dict]) -> str:
-    elements = []
-    for p in products[:30]:
-        elements.append(
-            {
-                "@type": "ListItem",
-                "position": p["rank"],
-                "url": product_url(p["id"]),
-                "name": p["name"],
-            }
-        )
+def build_item_list_json(products: list[dict], cfg: dict) -> str:
+    elements = [
+        {
+            "@type": "ListItem",
+            "position": p["rank"],
+            "url": product_url(p["id"]),
+            "name": p["name"],
+        }
+        for p in products[:30]
+    ]
     payload = {
         "@context": "https://schema.org",
         "@type": "ItemList",
-        "name": "【ロボット掃除機ランキング】フローリング掃除のおすすめ機種",
-        "description": "口コミの吸引力・水拭き評価を数値化したフローリング掃除ランキング",
-        "url": "https://nattoku-labo.com/rankings/floor-cleaning",
+        "name": cfg["h1"],
+        "description": cfg["schema_description"],
+        "url": f"https://nattoku-labo.com/rankings/{cfg['slug']}",
         "numberOfItems": len(products),
         "itemListElement": elements,
     }
@@ -442,30 +527,36 @@ JS = r"""
 """
 
 
-def write_floor_page(products: list[dict]) -> Path:
+def write_ranking_page(cfg: dict, products: list[dict]) -> Path:
     count = len(products)
+    slug = cfg["slug"]
+    related_links = "".join(
+        f'<a href="{href}">{html.escape(label)}</a>'
+        for href, label in cfg.get("related_rankings", [])
+    )
+    meta_desc = cfg["meta_description"].format(count=count)
     page = f"""<!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>【ロボット掃除機ランキング】フローリング掃除のおすすめ機種｜ナットクLabo</title>
-  <meta name="description" content="口コミの吸引力・水拭き評価を数値化したフローリング掃除ランキング。口コミ信頼度も加味したおすすめ順で{count}製品を比較できます。">
+  <title>{html.escape(cfg["h1"])}｜ナットクLabo</title>
+  <meta name="description" content="{html.escape(meta_desc)}">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-  <link rel="canonical" href="https://nattoku-labo.com/rankings/floor-cleaning">
+  <link rel="canonical" href="https://nattoku-labo.com/rankings/{slug}">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="ナットクLabo">
   <meta property="og:locale" content="ja_JP">
-  <meta property="og:url" content="https://nattoku-labo.com/rankings/floor-cleaning">
-  <meta property="og:title" content="【ロボット掃除機ランキング】フローリング掃除のおすすめ機種">
-  <meta property="og:description" content="口コミの吸引力・水拭き評価を数値化したフローリング掃除ランキング。口コミ信頼度も加味したおすすめ順で比較できます。">
+  <meta property="og:url" content="https://nattoku-labo.com/rankings/{slug}">
+  <meta property="og:title" content="{html.escape(cfg["h1"])}">
+  <meta property="og:description" content="{html.escape(cfg["og_description"])}">
   <meta name="twitter:card" content="summary_large_image">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
   <link rel="stylesheet" href="/products/css/navigation.css?v={NAV_V}">
   <style>{CSS}</style>
   <script type="application/ld+json">
-{build_item_list_json(products)}
+{build_item_list_json(products, cfg)}
   </script>
   <script type="application/ld+json">
   {{
@@ -474,7 +565,7 @@ def write_floor_page(products: list[dict]) -> Path:
     "itemListElement": [
       {{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://nattoku-labo.com/"}},
       {{"@type": "ListItem", "position": 2, "name": "ランキング", "item": "https://nattoku-labo.com/rankings/"}},
-      {{"@type": "ListItem", "position": 3, "name": "フローリング掃除", "item": "https://nattoku-labo.com/rankings/floor-cleaning"}}
+      {{"@type": "ListItem", "position": 3, "name": "{html.escape(cfg["crumb"])}", "item": "https://nattoku-labo.com/rankings/{slug}"}}
     ]
   }}
   </script>
@@ -483,10 +574,10 @@ def write_floor_page(products: list[dict]) -> Path:
   <header class="hero">
     <div class="wrap">
       <nav class="crumb" aria-label="パンくず">
-        <a href="/">ホーム</a> › <a href="/rankings/">ランキング</a> › フローリング掃除
+        <a href="/">ホーム</a> › <a href="/rankings/">ランキング</a> › {html.escape(cfg["crumb"])}
       </nav>
-      <h1>【ロボット掃除機ランキング】フローリング掃除のおすすめ機種</h1>
-      <p class="lede">口コミに書かれた吸引力や水拭きの評価を数値化し、フローリング掃除の得意さを比較したランキングです。各製品には、実際の口コミからまとめたフローリング清掃の傾向コメントも掲載しています。</p>
+      <h1>{html.escape(cfg["h1"])}</h1>
+      <p class="lede">{cfg["lede"]}</p>
     </div>
   </header>
 
@@ -494,13 +585,9 @@ def write_floor_page(products: list[dict]) -> Path:
     <div class="wrap">
       <section class="method">
         <h2>このランキングの見方</h2>
-        <p>
-          「吸引力が強い」「水拭きがきれい」といった口コミを点数化し、フローリング掃除の得意さで並べています。
-          口コミの信頼度を適切に加味するので、<strong>実体験に近いおすすめ順</strong>になっています。
-          表の各製品には、床の仕上がりや水拭きに関する口コミ傾向も記載しているので、点数だけでなく具体的な声も比較できます。
-        </p>
+        <p>{cfg["method_body"]}</p>
         <p class="method-sub">
-          ランキングの式：<code>フローリング点数 × 0.85 ＋ 口コミ信頼度 × 0.15</code>
+          ランキングの式：<code>{html.escape(cfg["formula_label"])} × 0.85 ＋ 口コミ信頼度 × 0.15</code>
         </p>
       </section>
 
@@ -521,7 +608,7 @@ def write_floor_page(products: list[dict]) -> Path:
       <section class="table-wrap">
         <div class="table-head">
           <h2>全機種ランキング</h2>
-          <span>各製品にフローリング清掃の口コミコメント付き</span>
+          <span>{html.escape(cfg["table_note"])}</span>
         </div>
         <p class="swipe-hint">← 表は横にスワイプできます →</p>
         <div class="scroll">
@@ -530,14 +617,14 @@ def write_floor_page(products: list[dict]) -> Path:
               <tr>
                 <th>順位</th>
                 <th>製品</th>
-                <th>フローリング</th>
+                <th>{html.escape(cfg["score_col"])}</th>
                 <th>口コミ信頼度</th>
                 <th>口コミ数</th>
                 <th>価格目安</th>
               </tr>
             </thead>
             <tbody>
-              {build_rows(products)}
+              {build_rows(products, cfg["comment_label"])}
             </tbody>
           </table>
         </div>
@@ -550,21 +637,25 @@ def write_floor_page(products: list[dict]) -> Path:
           <ul>
             <li>点数はECサイトの口コミを横断分析した値です。実機テストの計測値ではありません。</li>
             <li>価格は調査時点の目安です。購入前に各販売ページでご確認ください。</li>
-            <li>カーペット性能やペット毛などは、今後の機能別ランキングで比較できます。</li>
+            <li>{html.escape(cfg["related_note"])}</li>
           </ul>
         </section>
         <section>
-          <h2>価格帯で比較する</h2>
+          <h2>ほかのランキング・比較</h2>
           <div class="related">
+            {related_links}
+            <a href="/rankings/">ランキング一覧</a>
+            <a href="/compare/">価格帯比較</a>
+          </div>
+          <div class="related" style="margin-top:0.65rem">
             <a href="/compare/robot-vacuum-under-5man">〜5万円</a>
             <a href="/compare/robot-vacuum-5-7man">5〜7万円</a>
             <a href="/compare/robot-vacuum-7-10man">7〜10万円</a>
             <a href="/compare/robot-vacuum-10-15man">10〜15万円</a>
             <a href="/compare/robot-vacuum-15-20man">15〜20万円</a>
             <a href="/compare/robot-vacuum-20man-plus">20万円〜</a>
-            <a href="/compare/">比較一覧</a>
           </div>
-          <p class="more-links"><a href="/rankings/">ランキング一覧へ →</a>　<a href="/">製品一覧へ →</a>　<a href="/about">このサイトについて →</a></p>
+          <p class="more-links"><a href="/">製品一覧へ →</a>　<a href="/about">このサイトについて →</a></p>
         </section>
       </div>
     </div>
@@ -585,19 +676,29 @@ def write_floor_page(products: list[dict]) -> Path:
 </html>
 """
     OUT_DIR.mkdir(parents=True, exist_ok=True)
-    out = OUT_DIR / "floor-cleaning.html"
+    out = OUT_DIR / f"{slug}.html"
     out.write_text(page, encoding="utf-8")
     return out
 
 
-def write_hub(count: int) -> Path:
+def write_hub(entries: list[tuple[dict, int]]) -> Path:
+    bands = []
+    for cfg, count in entries:
+        bands.append(
+            f"""
+    <a class="band" href="/rankings/{cfg["slug"]}">
+      <strong>{html.escape(cfg["hub_title"])}</strong>
+      <span>{html.escape(cfg["hub_cta"])}</span>
+      <span class="meta">{html.escape(cfg["hub_meta"])} / 掲載{count}製品</span>
+    </a>"""
+        )
     page = f"""<!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ロボット掃除機ランキング一覧｜ナットクLabo</title>
-  <meta name="description" content="口コミ分析に基づくロボット掃除機の機能別ランキング一覧。フローリング掃除など、気になる性能からおすすめ機種を探せます。">
+  <meta name="description" content="口コミ分析に基づくロボット掃除機の機能別ランキング一覧。フローリング・カーペット・静音性など、気になる性能からおすすめ機種を探せます。">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://nattoku-labo.com/rankings/">
   <meta property="og:type" content="website">
@@ -642,11 +743,7 @@ def write_hub(count: int) -> Path:
     </div>
   </header>
   <div class="wrap list">
-    <a class="band" href="/rankings/floor-cleaning">
-      <strong>【ロボット掃除機ランキング】フローリング掃除のおすすめ機種</strong>
-      <span>フローリング清掃ランキングを見る →</span>
-      <span class="meta">吸引力・水拭きの口コミを数値化 / 掲載{count}製品</span>
-    </a>
+    {"".join(bands)}
   </div>
   <footer class="page-footer">
     <a href="/">ホーム</a>
@@ -664,10 +761,16 @@ def write_hub(count: int) -> Path:
 
 
 def main() -> None:
-    products = load_products()
-    floor = write_floor_page(products)
-    hub = write_hub(len(products))
-    print(f"wrote {floor} ({len(products)} products)")
+    entries: list[tuple[dict, int]] = []
+    for cfg in RANKINGS:
+        products = load_products(tuple(cfg["perf_keys"]))
+        out = write_ranking_page(cfg, products)
+        entries.append((cfg, len(products)))
+        print(f"wrote {out} ({len(products)} products)")
+        if products:
+            top = products[0]
+            print(f"  #1 {top['name']} feature={top['feature']} rel={top['reliability']} s={top['composite']}")
+    hub = write_hub(entries)
     print(f"wrote {hub}")
 
 
