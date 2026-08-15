@@ -93,6 +93,10 @@ function createNavigationBar() {
             </div>
 
             <div class="nav-quick-links" aria-label="主要メニュー">
+                <a href="/rankings/" class="nav-quick-link">
+                    <i class="fas fa-trophy"></i>
+                    <span>ランキング</span>
+                </a>
                 <a href="/compare/" class="nav-quick-link">
                     <i class="fas fa-table"></i>
                     <span>徹底比較</span>
@@ -560,6 +564,9 @@ function shouldShowSiteFilterBar() {
     if (path === '/compare' || path.startsWith('/compare/')) {
         return true;
     }
+    if (path === '/rankings' || path.startsWith('/rankings/')) {
+        return true;
+    }
     return false;
 }
 
@@ -670,6 +677,7 @@ function createSiteExploreSection() {
                     <h3>主要ページ</h3>
                     <div class="site-explore-chips">
                         <a class="site-explore-chip site-explore-chip-primary" href="/#productsContainer"><i class="fas fa-th" aria-hidden="true"></i>全製品一覧<span>${ALL_PRODUCTS.length}</span></a>
+                        <a class="site-explore-chip site-explore-chip-primary" href="/rankings/"><i class="fas fa-trophy" aria-hidden="true"></i>ランキング</a>
                         <a class="site-explore-chip site-explore-chip-primary" href="/compare/"><i class="fas fa-table" aria-hidden="true"></i>徹底比較ハブ</a>
                         <a class="site-explore-chip" href="/about"><i class="fas fa-info-circle" aria-hidden="true"></i>サイトについて</a>
                         <a class="site-explore-chip" href="/privacy"><i class="fas fa-shield-alt" aria-hidden="true"></i>プライバシー</a>
