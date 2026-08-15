@@ -277,6 +277,152 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
   color: var(--muted); font-size: 0.9rem;
 }
 .empty-msg.show { display: block; }
+.top-cards {
+  margin: 1.35rem 0 0;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 1rem 1.1rem 1.25rem;
+}
+.top-cards h2 { font-size: 1.05rem; margin-bottom: 0.35rem; }
+.top-cards .section-sub {
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+.top-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+@media (min-width: 720px) {
+  .top-cards-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (min-width: 1100px) {
+  .top-cards-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+.aff-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 0.95rem 0.85rem 1.05rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  min-width: 0;
+}
+.aff-card-rank {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 8px;
+  background: #eff6ff;
+  color: var(--primary);
+  font-weight: 900;
+  font-size: 0.85rem;
+  margin-right: 0.35rem;
+}
+.aff-card.rank-1 .aff-card-rank { background: #f59e0b; color: #fff; }
+.aff-card.rank-2 .aff-card-rank { background: #64748b; color: #fff; }
+.aff-card.rank-3 .aff-card-rank { background: #c2410c; color: #fff; }
+.aff-card-head {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+.aff-card-head img {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+.aff-card-title {
+  font-weight: 800;
+  font-size: 0.92rem;
+  line-height: 1.35;
+  color: var(--secondary);
+}
+.aff-card-title a {
+  color: inherit;
+  text-decoration: none;
+}
+.aff-card-title a:hover { color: var(--primary); text-decoration: underline; }
+.aff-card-brand {
+  font-size: 0.72rem;
+  color: var(--muted);
+  font-weight: 600;
+  margin-top: 0.1rem;
+}
+.aff-card-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.85rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #334155;
+}
+.aff-card-stats span strong { color: var(--excellent); font-variant-numeric: tabular-nums; }
+.aff-card-detail {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0.5rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid #bfdbfe;
+  background: #eff6ff;
+  color: #1e40af;
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+.aff-card-detail:hover {
+  color: #fff;
+  background: #2563eb;
+  border-color: #1d4ed8;
+}
+.aff-card-body { min-width: 0; width: 100%; }
+.aff-card-direct {
+  text-align: center;
+  margin-bottom: 0.55rem;
+  position: relative;
+}
+.aff-card-direct .official-hp-btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 800;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  padding: 0.85rem 1rem;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #0e7490 0%, #0d9488 42%, #059669 100%);
+  box-shadow: 0 6px 16px rgba(13, 148, 136, 0.28);
+}
+.aff-card-direct .official-hp-btn:hover { filter: brightness(1.05); }
+.aff-card-moshimo { width: 100%; min-width: 0; }
+.aff-card-moshimo iframe {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  border: 0;
+  display: block;
+}
+.aff-card-status {
+  color: var(--muted);
+  font-weight: 600;
+  text-align: center;
+  padding: 0.75rem 0;
+  font-size: 0.82rem;
+}
+.aff-card-status.error { color: #dc2626; }
 </style>
   <script type="application/ld+json">
 {
@@ -1759,6 +1905,225 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <p class="empty-msg" id="empty-msg">この価格帯に該当する製品はありません。</p>
       </section>
 
+
+      <section class="top-cards" aria-label="上位10製品">
+        <h2>上位10製品</h2>
+        <p class="section-sub">ランキング上位の製品カードです。詳細分析ページと最新価格を確認できます。</p>
+        <div class="top-cards-grid">
+          
+        <article class="aff-card rank-1" data-slug="saros-20">
+          <div class="aff-card-head">
+            <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/roborockjapandirect/cabinet/products/12574614/imgrc0134813006.jpg" alt="" width="56" height="56" loading="lazy">
+            <div>
+              <div class="aff-card-title">
+                <span class="aff-card-rank">1</span>
+                <a href="https://nattoku-labo.com/products/saros-20" target="_blank" rel="noopener">Saros 20</a>
+              </div>
+              <div class="aff-card-brand">Roborock · ¥249,800</div>
+            </div>
+          </div>
+          <div class="aff-card-stats">
+            <span>カーペット <strong>94</strong></span>
+            <span>口コミ信頼度 <strong>67.9</strong></span>
+            <span>口コミ <strong>41</strong></span>
+          </div>
+          <a class="aff-card-detail" href="https://nattoku-labo.com/products/saros-20" target="_blank" rel="noopener">詳細分析を見る →</a>
+          <div class="aff-card-body">
+            <span class="aff-card-status">価格読込中…</span>
+          </div>
+        </article>
+        <article class="aff-card rank-2" data-slug="roomba-max-705-vac-autoempty">
+          <div class="aff-card-head">
+            <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/03016688/20260730_brandday/260730_705v_tm.jpg" alt="" width="56" height="56" loading="lazy">
+            <div>
+              <div class="aff-card-title">
+                <span class="aff-card-rank">2</span>
+                <a href="https://nattoku-labo.com/products/roomba-max-705-vac-autoempty" target="_blank" rel="noopener">Roomba® Max 705 Vac + AutoEmpty™</a>
+              </div>
+              <div class="aff-card-brand">iRobot · ¥98,800</div>
+            </div>
+          </div>
+          <div class="aff-card-stats">
+            <span>カーペット <strong>89</strong></span>
+            <span>口コミ信頼度 <strong>82.3</strong></span>
+            <span>口コミ <strong>154</strong></span>
+          </div>
+          <a class="aff-card-detail" href="https://nattoku-labo.com/products/roomba-max-705-vac-autoempty" target="_blank" rel="noopener">詳細分析を見る →</a>
+          <div class="aff-card-body">
+            <span class="aff-card-status">価格読込中…</span>
+          </div>
+        </article>
+        <article class="aff-card rank-3" data-slug="k11-pro">
+          <div class="aff-card-head">
+            <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/13479056/mainbg2.jpg" alt="" width="56" height="56" loading="lazy">
+            <div>
+              <div class="aff-card-title">
+                <span class="aff-card-rank">3</span>
+                <a href="https://nattoku-labo.com/products/k11-pro" target="_blank" rel="noopener">ロボット掃除機 K11+ Pro</a>
+              </div>
+              <div class="aff-card-brand">SwitchBot · ¥49,800</div>
+            </div>
+          </div>
+          <div class="aff-card-stats">
+            <span>カーペット <strong>92</strong></span>
+            <span>口コミ信頼度 <strong>63.4</strong></span>
+            <span>口コミ <strong>26</strong></span>
+          </div>
+          <a class="aff-card-detail" href="https://nattoku-labo.com/products/k11-pro" target="_blank" rel="noopener">詳細分析を見る →</a>
+          <div class="aff-card-body">
+            <span class="aff-card-status">価格読込中…</span>
+          </div>
+        </article>
+        <article class="aff-card" data-slug="l10s-ultra-gen-3">
+          <div class="aff-card-head">
+            <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/l10sultragen3_cp.jpg" alt="" width="56" height="56" loading="lazy">
+            <div>
+              <div class="aff-card-title">
+                <span class="aff-card-rank">4</span>
+                <a href="https://nattoku-labo.com/products/l10s-ultra-gen-3" target="_blank" rel="noopener">L10s Ultra Gen 3</a>
+              </div>
+              <div class="aff-card-brand">Dreame · ¥69,800</div>
+            </div>
+          </div>
+          <div class="aff-card-stats">
+            <span>カーペット <strong>90</strong></span>
+            <span>口コミ信頼度 <strong>74.5</strong></span>
+            <span>口コミ <strong>73</strong></span>
+          </div>
+          <a class="aff-card-detail" href="https://nattoku-labo.com/products/l10s-ultra-gen-3" target="_blank" rel="noopener">詳細分析を見る →</a>
+          <div class="aff-card-body">
+            <span class="aff-card-status">価格読込中…</span>
+          </div>
+        </article>
+        <article class="aff-card" data-slug="qrevo-l">
+          <div class="aff-card-head">
+            <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/roborockjapandirect/cabinet/products/12574614/12574615/imgrc0130333896.jpg" alt="" width="56" height="56" loading="lazy">
+            <div>
+              <div class="aff-card-title">
+                <span class="aff-card-rank">5</span>
+                <a href="https://nattoku-labo.com/products/qrevo-l" target="_blank" rel="noopener">Qrevo L</a>
+              </div>
+              <div class="aff-card-brand">Roborock · ¥69,800</div>
+            </div>
+          </div>
+          <div class="aff-card-stats">
+            <span>カーペット <strong>88</strong></span>
+            <span>口コミ信頼度 <strong>81.1</strong></span>
+            <span>口コミ <strong>161</strong></span>
+          </div>
+          <a class="aff-card-detail" href="https://nattoku-labo.com/products/qrevo-l" target="_blank" rel="noopener">詳細分析を見る →</a>
+          <div class="aff-card-body">
+            <span class="aff-card-status">価格読込中…</span>
+          </div>
+        </article>
+        <article class="aff-card" data-slug="eufy-robot-vacuum-omni-c28">
+          <div class="aff-card-head">
+            <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t211a/imgrc0103188193.jpg" alt="" width="56" height="56" loading="lazy">
+            <div>
+              <div class="aff-card-title">
+                <span class="aff-card-rank">6</span>
+                <a href="https://nattoku-labo.com/products/eufy-robot-vacuum-omni-c28" target="_blank" rel="noopener">Eufy Robot Vacuum Omni C28</a>
+              </div>
+              <div class="aff-card-brand">Anker · ¥79,990</div>
+            </div>
+          </div>
+          <div class="aff-card-stats">
+            <span>カーペット <strong>88</strong></span>
+            <span>口コミ信頼度 <strong>81.1</strong></span>
+            <span>口コミ <strong>99</strong></span>
+          </div>
+          <a class="aff-card-detail" href="https://nattoku-labo.com/products/eufy-robot-vacuum-omni-c28" target="_blank" rel="noopener">詳細分析を見る →</a>
+          <div class="aff-card-body">
+            <span class="aff-card-status">価格読込中…</span>
+          </div>
+        </article>
+        <article class="aff-card" data-slug="eufy-robot-vacuum-omni-s2">
+          <div class="aff-card-head">
+            <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/deal/202608m1/imgrc0103966655.jpg" alt="" width="56" height="56" loading="lazy">
+            <div>
+              <div class="aff-card-title">
+                <span class="aff-card-rank">7</span>
+                <a href="https://nattoku-labo.com/products/eufy-robot-vacuum-omni-s2" target="_blank" rel="noopener">Eufy Robot Vacuum Omni S2</a>
+              </div>
+              <div class="aff-card-brand">Anker · ¥199,900</div>
+            </div>
+          </div>
+          <div class="aff-card-stats">
+            <span>カーペット <strong>92</strong></span>
+            <span>口コミ信頼度 <strong>57.4</strong></span>
+            <span>口コミ <strong>24</strong></span>
+          </div>
+          <a class="aff-card-detail" href="https://nattoku-labo.com/products/eufy-robot-vacuum-omni-s2" target="_blank" rel="noopener">詳細分析を見る →</a>
+          <div class="aff-card-body">
+            <span class="aff-card-status">価格読込中…</span>
+          </div>
+        </article>
+        <article class="aff-card" data-slug="deebot-t90-omni">
+          <div class="aff-card-head">
+            <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/dex96-12ee.jpg" alt="" width="56" height="56" loading="lazy">
+            <div>
+              <div class="aff-card-title">
+                <span class="aff-card-rank">8</span>
+                <a href="https://nattoku-labo.com/products/deebot-t90-omni" target="_blank" rel="noopener">DEEBOT T90 OMNI</a>
+              </div>
+              <div class="aff-card-brand">ECOVACS · ¥149,800</div>
+            </div>
+          </div>
+          <div class="aff-card-stats">
+            <span>カーペット <strong>88</strong></span>
+            <span>口コミ信頼度 <strong>79.0</strong></span>
+            <span>口コミ <strong>94</strong></span>
+          </div>
+          <a class="aff-card-detail" href="https://nattoku-labo.com/products/deebot-t90-omni" target="_blank" rel="noopener">詳細分析を見る →</a>
+          <div class="aff-card-body">
+            <span class="aff-card-status">価格読込中…</span>
+          </div>
+        </article>
+        <article class="aff-card" data-slug="q10p">
+          <div class="aff-card-head">
+            <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/roborockjapandirect/cabinet/products/12574614/imgrc0133045076.jpg" alt="" width="56" height="56" loading="lazy">
+            <div>
+              <div class="aff-card-title">
+                <span class="aff-card-rank">9</span>
+                <a href="https://nattoku-labo.com/products/q10p" target="_blank" rel="noopener">Q10P+</a>
+              </div>
+              <div class="aff-card-brand">Roborock · ¥89,800</div>
+            </div>
+          </div>
+          <div class="aff-card-stats">
+            <span>カーペット <strong>86</strong></span>
+            <span>口コミ信頼度 <strong>79.9</strong></span>
+            <span>口コミ <strong>92</strong></span>
+          </div>
+          <a class="aff-card-detail" href="https://nattoku-labo.com/products/q10p" target="_blank" rel="noopener">詳細分析を見る →</a>
+          <div class="aff-card-body">
+            <span class="aff-card-status">価格読込中…</span>
+          </div>
+        </article>
+        <article class="aff-card" data-slug="deebot-n30-plus">
+          <div class="aff-card-head">
+            <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/ydlx11-35ee.jpg" alt="" width="56" height="56" loading="lazy">
+            <div>
+              <div class="aff-card-title">
+                <span class="aff-card-rank">10</span>
+                <a href="https://nattoku-labo.com/products/deebot-n30-plus" target="_blank" rel="noopener">DEEBOT N30 PLUS</a>
+              </div>
+              <div class="aff-card-brand">ECOVACS · ¥69,800</div>
+            </div>
+          </div>
+          <div class="aff-card-stats">
+            <span>カーペット <strong>85</strong></span>
+            <span>口コミ信頼度 <strong>84.4</strong></span>
+            <span>口コミ <strong>186</strong></span>
+          </div>
+          <a class="aff-card-detail" href="https://nattoku-labo.com/products/deebot-n30-plus" target="_blank" rel="noopener">詳細分析を見る →</a>
+          <div class="aff-card-body">
+            <span class="aff-card-status">価格読込中…</span>
+          </div>
+        </article>
+        </div>
+      </section>
+
       <div class="notes">
         <section>
           <h2>注意事項</h2>
@@ -1867,6 +2232,136 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
   }
   window.addEventListener("load", function () { requestAnimationFrame(fitFiveProducts); });
   requestAnimationFrame(fitFiveProducts);
+})();
+</script>
+  <script>
+(function () {
+  function normalizeMoshimoEasyLinkHtml(html) {
+    if (typeof html !== "string") return html;
+    return html.replace(
+      /(["'])\/\/dn\.msmstatic\.com\/site\/cardlink\/bundle\.js/g,
+      "$1https://dn.msmstatic.com/site/cardlink/bundle.js",
+    );
+  }
+
+  function injectMoshimoIframe(container, html) {
+    if (!container || !html) return;
+    container.innerHTML = "";
+    const safe = normalizeMoshimoEasyLinkHtml(html);
+    const iframe = document.createElement("iframe");
+    iframe.title = "価格・購入先（もしもアフィリエイト）";
+    iframe.setAttribute("scrolling", "no");
+    iframe.loading = "lazy";
+    iframe.srcdoc =
+      '<!DOCTYPE html><html><head><meta charset="utf-8">' +
+      '<meta name="viewport" content="width=device-width,initial-scale=1">' +
+      '<base target="_blank" rel="noopener noreferrer">' +
+      "<style>*,*::before,*::after{box-sizing:border-box}" +
+      "html,body{width:100%;max-width:100%;min-width:0;margin:0;padding:0;background:#fff;color:#0f172a;overflow-x:hidden}" +
+      "body{display:flex;flex-direction:column;align-items:stretch}" +
+      '[id^="msmaflink-"]{width:100%!important;max-width:100%!important;min-width:0!important;margin-left:auto;margin-right:auto}' +
+      '[id^="msmaflink-"] *{max-width:100%!important;min-width:0}' +
+      '[id^="msmaflink-"] table{width:100%!important;table-layout:fixed}' +
+      '[id^="msmaflink-"] img{height:auto!important;object-fit:contain}' +
+      "</style></head><body>" +
+      safe +
+      "</body></html>";
+    iframe.style.cssText = "width:100%;max-width:100%;min-width:0;border:0;display:block;";
+    iframe.addEventListener("load", function () {
+      const resize = function () {
+        try {
+          const doc = iframe.contentDocument;
+          if (!doc) return;
+          const h = Math.max(
+            doc.body ? doc.body.scrollHeight : 0,
+            doc.documentElement ? doc.documentElement.scrollHeight : 0,
+          );
+          if (h > 40) iframe.style.height = h + "px";
+        } catch (e) {}
+      };
+      resize();
+      const id = window.setInterval(resize, 400);
+      window.setTimeout(function () { window.clearInterval(id); }, 10000);
+    });
+    container.appendChild(iframe);
+  }
+
+  function buildOfficialHpButton(directHtml) {
+    if (!directHtml) return null;
+    const hrefM = String(directHtml).match(/href=["']([^"']+)["']/i);
+    if (!hrefM) return null;
+    const wrap = document.createElement("div");
+    wrap.className = "aff-card-direct";
+    const a = document.createElement("a");
+    a.className = "official-hp-btn";
+    a.href = hrefM[1];
+    a.target = "_blank";
+    a.rel = "noopener sponsored nofollow";
+    a.textContent = "公式ホームページ";
+    wrap.appendChild(a);
+    const pixM = String(directHtml).match(
+      /<img[^>]+src=["']([^"']+)["'][^>]*(?:width=["']?1\b|height=["']?1\b)/i,
+    );
+    if (pixM) {
+      const img = document.createElement("img");
+      img.src = pixM[1];
+      img.width = 1;
+      img.height = 1;
+      img.alt = "";
+      img.setAttribute("aria-hidden", "true");
+      img.style.cssText =
+        "position:absolute;width:1px;height:1px;border:none;opacity:0;pointer-events:none;";
+      wrap.appendChild(img);
+    }
+    return wrap;
+  }
+
+  async function mountCard(el) {
+    const slug = el.getAttribute("data-slug");
+    const body = el.querySelector(".aff-card-body");
+    const status = el.querySelector(".aff-card-status");
+    try {
+      const res = await fetch("/products/data/" + slug + ".json", { cache: "no-store" });
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      const data = await res.json();
+      const aff = data.affiliate || {};
+      const hasMoshimo = !!(aff.moshimo && String(aff.moshimo).trim());
+      const hasDirect = !!(aff.direct && String(aff.direct).trim());
+      if (!hasMoshimo && !hasDirect) {
+        if (status) {
+          status.textContent = "準備中";
+          status.classList.add("error");
+        }
+        return;
+      }
+      if (!body) return;
+      body.innerHTML = "";
+      if (hasDirect) {
+        const btn = buildOfficialHpButton(aff.direct);
+        if (btn) {
+          body.appendChild(btn);
+        } else {
+          const directSlot = document.createElement("div");
+          directSlot.className = "aff-card-direct";
+          directSlot.innerHTML = String(aff.direct);
+          body.appendChild(directSlot);
+        }
+      }
+      if (hasMoshimo) {
+        const moshimoSlot = document.createElement("div");
+        moshimoSlot.className = "aff-card-moshimo";
+        injectMoshimoIframe(moshimoSlot, aff.moshimo);
+        body.appendChild(moshimoSlot);
+      }
+    } catch (err) {
+      if (status) {
+        status.textContent = "読込失敗";
+        status.classList.add("error");
+      }
+    }
+  }
+
+  document.querySelectorAll(".aff-card[data-slug]").forEach(mountCard);
 })();
 </script>
 </body>
