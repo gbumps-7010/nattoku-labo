@@ -16,7 +16,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="/products/css/navigation.css?v=20260815a">
+  <link rel="stylesheet" href="/products/css/navigation.css?v=20260815b">
   <style>
 :root {
   --primary: #1e40af;
@@ -54,6 +54,53 @@ h1 {
   margin-bottom: 0.65rem;
 }
 .lede { font-size: 0.95rem; opacity: 0.95; max-width: 42rem; }
+.rank-tabs {
+  position: sticky;
+  top: calc(60px + env(safe-area-inset-top, 0px));
+  z-index: 20;
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+}
+@media (max-width: 768px) {
+  .rank-tabs { top: calc(55px + env(safe-area-inset-top, 0px)); }
+}
+.rank-tabs-inner {
+  display: flex;
+  gap: 0.35rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 0.55rem 1rem;
+  scrollbar-width: thin;
+}
+.rank-tab {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: #334155;
+  text-decoration: none;
+  font-size: 0.84rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+.rank-tab:hover { border-color: #93c5fd; color: var(--primary); background: #eff6ff; }
+.rank-tab.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+.rank-tab-all {
+  margin-left: auto;
+  font-weight: 700;
+  color: var(--primary);
+  background: #eff6ff;
+  border-color: #bfdbfe;
+}
 main { padding: 1.25rem 0 2rem; }
 footer.page-footer {
   border-top: 1px solid var(--line);
@@ -445,6 +492,12 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
       <p class="lede">口コミに書かれた吸引力や水拭きの評価を数値化し、フローリング掃除の得意さを比較したランキングです。各製品には、実際の口コミからまとめたフローリング清掃の傾向コメントも掲載しています。</p>
     </div>
   </header>
+
+  <nav class="rank-tabs" aria-label="機能別ランキング">
+    <div class="wrap rank-tabs-inner">
+      <a class="rank-tab active" href="/rankings/floor-cleaning" aria-current="page">フローリング</a><a class="rank-tab" href="/rankings/carpet-cleaning">カーペット</a><a class="rank-tab" href="/rankings/quietness">静音性</a><a class="rank-tab rank-tab-all" href="/rankings/">一覧</a>
+    </div>
+  </nav>
 
   <main>
     <div class="wrap">
@@ -1745,7 +1798,7 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
     </div>
     <p style="margin-top:0.65rem">ナットクLabo · 更新 2026-08-15</p>
   </footer>
-  <script src="/products/js/navigation.js?v=20260815a"></script>
+  <script src="/products/js/navigation.js?v=20260815b"></script>
   <script>
 (function () {
   const chips = document.querySelectorAll(".filter-chip");

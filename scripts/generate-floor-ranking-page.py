@@ -10,13 +10,14 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "products" / "data"
 OUT_DIR = ROOT / "rankings"
-NAV_V = "20260815a"
+NAV_V = "20260815b"
 WF, WR = 0.85, 0.15
 UPDATED = date.today().isoformat()
 
 RANKINGS = [
     {
         "slug": "floor-cleaning",
+        "tab_label": "フローリング",
         "perf_keys": ("floorCleaning", "floor", "hardwood", "hardFloor"),
         "crumb": "フローリング掃除",
         "h1": "【ロボット掃除機ランキング】フローリング掃除のおすすめ機種",
@@ -44,6 +45,7 @@ RANKINGS = [
     },
     {
         "slug": "carpet-cleaning",
+        "tab_label": "カーペット",
         "perf_keys": ("carpetCleaning", "carpet"),
         "crumb": "カーペット掃除",
         "h1": "【ロボット掃除機ランキング】カーペット掃除のおすすめ機種",
@@ -71,6 +73,7 @@ RANKINGS = [
     },
     {
         "slug": "quietness",
+        "tab_label": "静音性",
         "perf_keys": ("quietness", "noiseLevel", "quietOperation"),
         "crumb": "静音性",
         "h1": "【ロボット掃除機ランキング】静音性のおすすめ機種",
@@ -172,6 +175,29 @@ def top_class(rank: int) -> str:
 
 def product_url(pid: str) -> str:
     return f"https://nattoku-labo.com/products/{pid}"
+
+
+def build_feature_tabs(active_slug: str | None = None) -> str:
+    items = []
+    for cfg in RANKINGS:
+        is_active = cfg["slug"] == active_slug
+        active_cls = " active" if is_active else ""
+        aria = ' aria-current="page"' if is_active else ""
+        label = html.escape(cfg["tab_label"])
+        items.append(
+            f'<a class="rank-tab{active_cls}" href="/rankings/{cfg["slug"]}"{aria}>{label}</a>'
+        )
+    all_active = " active" if active_slug is None else ""
+    all_aria = ' aria-current="page"' if active_slug is None else ""
+    items.append(
+        f'<a class="rank-tab rank-tab-all{all_active}" href="/rankings/"{all_aria}>一覧</a>'
+    )
+    return f"""
+  <nav class="rank-tabs" aria-label="機能別ランキング">
+    <div class="wrap rank-tabs-inner">
+      {"".join(items)}
+    </div>
+  </nav>"""
 
 
 def build_rows(products: list[dict], comment_label: str) -> str:
@@ -277,6 +303,53 @@ h1 {
   margin-bottom: 0.65rem;
 }
 .lede { font-size: 0.95rem; opacity: 0.95; max-width: 42rem; }
+.rank-tabs {
+  position: sticky;
+  top: calc(60px + env(safe-area-inset-top, 0px));
+  z-index: 20;
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+}
+@media (max-width: 768px) {
+  .rank-tabs { top: calc(55px + env(safe-area-inset-top, 0px)); }
+}
+.rank-tabs-inner {
+  display: flex;
+  gap: 0.35rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 0.55rem 1rem;
+  scrollbar-width: thin;
+}
+.rank-tab {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: #334155;
+  text-decoration: none;
+  font-size: 0.84rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+.rank-tab:hover { border-color: #93c5fd; color: var(--primary); background: #eff6ff; }
+.rank-tab.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+.rank-tab-all {
+  margin-left: auto;
+  font-weight: 700;
+  color: var(--primary);
+  background: #eff6ff;
+  border-color: #bfdbfe;
+}
 main { padding: 1.25rem 0 2rem; }
 footer.page-footer {
   border-top: 1px solid var(--line);
@@ -553,7 +626,7 @@ def write_ranking_page(cfg: dict, products: list[dict]) -> Path:
   <meta name="twitter:card" content="summary_large_image">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="/products/css/navigation.css?v={NAV_V}">
+  <link rel="stylesheet" href="/products/css/navigation.css?v=20260815b">
   <style>{CSS}</style>
   <script type="application/ld+json">
 {build_item_list_json(products, cfg)}
@@ -580,6 +653,7 @@ def write_ranking_page(cfg: dict, products: list[dict]) -> Path:
       <p class="lede">{cfg["lede"]}</p>
     </div>
   </header>
+{build_feature_tabs(slug)}
 
   <main>
     <div class="wrap">
@@ -670,7 +744,7 @@ def write_ranking_page(cfg: dict, products: list[dict]) -> Path:
     </div>
     <p style="margin-top:0.65rem">ナットクLabo · 更新 {UPDATED}</p>
   </footer>
-  <script src="/products/js/navigation.js?v={NAV_V}"></script>
+  <script src="/products/js/navigation.js?v=20260815b"></script>
   <script>{JS}</script>
 </body>
 </html>
@@ -709,7 +783,7 @@ def write_hub(entries: list[tuple[dict, int]]) -> Path:
   <meta property="og:description" content="口コミ分析に基づくロボット掃除機の機能別ランキング一覧。">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="/products/css/navigation.css?v={NAV_V}">
+  <link rel="stylesheet" href="/products/css/navigation.css?v=20260815b">
   <style>
     :root {{ --primary:#1e40af; --secondary:#0f172a; --bg:#f8fafc; --text:#1e293b; --muted:#64748b; --line:#e2e8f0; }}
     * {{ box-sizing:border-box; margin:0; padding:0; }}
@@ -720,6 +794,30 @@ def write_hub(entries: list[tuple[dict, int]]) -> Path:
     .crumb a {{ color:#bfdbfe; text-decoration:none; }}
     h1 {{ font-size:clamp(1.25rem,4.6vw,1.9rem); font-weight:900; line-height:1.35; margin-bottom:0.65rem; }}
     .lede {{ font-size:0.95rem; opacity:0.95; max-width:40rem; }}
+    .rank-tabs {{
+      position: sticky;
+      top: calc(60px + env(safe-area-inset-top, 0px));
+      z-index: 20;
+      background: #fff;
+      border-bottom: 1px solid var(--line);
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+    }}
+    @media (max-width: 768px) {{
+      .rank-tabs {{ top: calc(55px + env(safe-area-inset-top, 0px)); }}
+    }}
+    .rank-tabs-inner {{
+      display: flex; gap: 0.35rem; overflow-x: auto; -webkit-overflow-scrolling: touch;
+      padding: 0.55rem 1rem; scrollbar-width: thin; max-width: 920px; margin: 0 auto;
+    }}
+    .rank-tab {{
+      flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center;
+      padding: 0.45rem 0.9rem; border-radius: 999px; border: 1px solid var(--line);
+      background: #fff; color: #334155; text-decoration: none; font-size: 0.84rem;
+      font-weight: 800; white-space: nowrap;
+    }}
+    .rank-tab:hover {{ border-color: #93c5fd; color: var(--primary); background: #eff6ff; }}
+    .rank-tab.active {{ background: var(--primary); border-color: var(--primary); color: #fff; }}
+    .rank-tab-all {{ margin-left: auto; font-weight: 700; color: var(--primary); background: #eff6ff; border-color: #bfdbfe; }}
     .list {{ padding:1.5rem 0 2.5rem; display:grid; gap:0.85rem; }}
     a.band {{
       display:block; text-decoration:none; background:#fff; border:1px solid var(--line);
@@ -742,6 +840,7 @@ def write_hub(entries: list[tuple[dict, int]]) -> Path:
       <p class="lede">口コミ分析の点数をもとに、気になる機能からおすすめ機種を探せます。</p>
     </div>
   </header>
+{build_feature_tabs(None)}
   <div class="wrap list">
     {"".join(bands)}
   </div>
@@ -751,7 +850,7 @@ def write_hub(entries: list[tuple[dict, int]]) -> Path:
     <a href="/about">サイトについて</a>
     <p style="margin-top:0.65rem">ナットクLabo</p>
   </footer>
-  <script src="/products/js/navigation.js?v={NAV_V}"></script>
+  <script src="/products/js/navigation.js?v=20260815b"></script>
 </body>
 </html>
 """

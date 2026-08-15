@@ -15,7 +15,7 @@
   <meta property="og:description" content="口コミ分析に基づくロボット掃除機の機能別ランキング一覧。">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="/products/css/navigation.css?v=20260815a">
+  <link rel="stylesheet" href="/products/css/navigation.css?v=20260815b">
   <style>
     :root { --primary:#1e40af; --secondary:#0f172a; --bg:#f8fafc; --text:#1e293b; --muted:#64748b; --line:#e2e8f0; }
     * { box-sizing:border-box; margin:0; padding:0; }
@@ -26,6 +26,30 @@
     .crumb a { color:#bfdbfe; text-decoration:none; }
     h1 { font-size:clamp(1.25rem,4.6vw,1.9rem); font-weight:900; line-height:1.35; margin-bottom:0.65rem; }
     .lede { font-size:0.95rem; opacity:0.95; max-width:40rem; }
+    .rank-tabs {
+      position: sticky;
+      top: calc(60px + env(safe-area-inset-top, 0px));
+      z-index: 20;
+      background: #fff;
+      border-bottom: 1px solid var(--line);
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+    }
+    @media (max-width: 768px) {
+      .rank-tabs { top: calc(55px + env(safe-area-inset-top, 0px)); }
+    }
+    .rank-tabs-inner {
+      display: flex; gap: 0.35rem; overflow-x: auto; -webkit-overflow-scrolling: touch;
+      padding: 0.55rem 1rem; scrollbar-width: thin; max-width: 920px; margin: 0 auto;
+    }
+    .rank-tab {
+      flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center;
+      padding: 0.45rem 0.9rem; border-radius: 999px; border: 1px solid var(--line);
+      background: #fff; color: #334155; text-decoration: none; font-size: 0.84rem;
+      font-weight: 800; white-space: nowrap;
+    }
+    .rank-tab:hover { border-color: #93c5fd; color: var(--primary); background: #eff6ff; }
+    .rank-tab.active { background: var(--primary); border-color: var(--primary); color: #fff; }
+    .rank-tab-all { margin-left: auto; font-weight: 700; color: var(--primary); background: #eff6ff; border-color: #bfdbfe; }
     .list { padding:1.5rem 0 2.5rem; display:grid; gap:0.85rem; }
     a.band {
       display:block; text-decoration:none; background:#fff; border:1px solid var(--line);
@@ -48,6 +72,12 @@
       <p class="lede">口コミ分析の点数をもとに、気になる機能からおすすめ機種を探せます。</p>
     </div>
   </header>
+
+  <nav class="rank-tabs" aria-label="機能別ランキング">
+    <div class="wrap rank-tabs-inner">
+      <a class="rank-tab" href="/rankings/floor-cleaning">フローリング</a><a class="rank-tab" href="/rankings/carpet-cleaning">カーペット</a><a class="rank-tab" href="/rankings/quietness">静音性</a><a class="rank-tab rank-tab-all active" href="/rankings/" aria-current="page">一覧</a>
+    </div>
+  </nav>
   <div class="wrap list">
     
     <a class="band" href="/rankings/floor-cleaning">
@@ -72,6 +102,6 @@
     <a href="/about">サイトについて</a>
     <p style="margin-top:0.65rem">ナットクLabo</p>
   </footer>
-  <script src="/products/js/navigation.js?v=20260815a"></script>
+  <script src="/products/js/navigation.js?v=20260815b"></script>
 </body>
 </html>

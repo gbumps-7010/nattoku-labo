@@ -75,6 +75,14 @@ const COMPARE_BANDS = [
     { label: '20万円〜', href: '/compare/robot-vacuum-20man-plus', min: 200000, max: Infinity },
 ];
 
+// 機能別ランキング
+const RANKING_FEATURES = [
+    { label: 'ランキング一覧', href: '/rankings/' },
+    { label: 'フローリング掃除', href: '/rankings/floor-cleaning' },
+    { label: 'カーペット掃除', href: '/rankings/carpet-cleaning' },
+    { label: '静音性', href: '/rankings/quietness' },
+];
+
 /**
  * 固定ナビゲーションバーを作成
  */
@@ -163,6 +171,23 @@ function createNavigationBar() {
                     </div>
                 </div>
                 
+                <div class="nav-dropdown">
+                    <button class="nav-link dropdown-toggle">
+                        <i class="fas fa-trophy"></i> 機能別ランキング <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-menu ranking-dropdown">
+                        ${RANKING_FEATURES.map(r => {
+                            const path = (window.location.pathname || '').replace(/\/+$/, '') || '/';
+                            const hrefPath = r.href.replace(/\/+$/, '') || '/';
+                            const active = path === hrefPath || path === hrefPath + '.html' ? 'active' : '';
+                            return `
+                            <a href="${r.href}" class="dropdown-item ${active}">
+                                <span class="price-label">${r.label}</span>
+                            </a>`;
+                        }).join('')}
+                    </div>
+                </div>
+
                 <div class="nav-dropdown">
                     <button class="nav-link dropdown-toggle">
                         <i class="fas fa-table"></i> おすすめ・口コミ徹底比較 <i class="fas fa-chevron-down"></i>
@@ -681,6 +706,17 @@ function createSiteExploreSection() {
                         <a class="site-explore-chip site-explore-chip-primary" href="/compare/"><i class="fas fa-table" aria-hidden="true"></i>徹底比較ハブ</a>
                         <a class="site-explore-chip" href="/about"><i class="fas fa-info-circle" aria-hidden="true"></i>サイトについて</a>
                         <a class="site-explore-chip" href="/privacy"><i class="fas fa-shield-alt" aria-hidden="true"></i>プライバシー</a>
+                    </div>
+                </div>
+
+                <div class="site-explore-group">
+                    <h3>機能別ランキング</h3>
+                    <div class="site-explore-chips">
+                        ${RANKING_FEATURES.map((r) => `
+                            <a class="site-explore-chip${r.href === '/rankings/' ? ' site-explore-chip-primary' : ''}" href="${r.href}">
+                                <i class="fas fa-trophy" aria-hidden="true"></i>${r.label}
+                            </a>
+                        `).join('')}
                     </div>
                 </div>
 
