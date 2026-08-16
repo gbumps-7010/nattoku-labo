@@ -182,6 +182,55 @@ function updateMetadata(data) {
     structuredScript.textContent = JSON.stringify(structuredData, null, 2);
 }
 
+function formatScoreDisplay(n) {
+    if (!Number.isFinite(n)) return null;
+    return Number.isInteger(n) ? String(n) : n.toFixed(1);
+}
+
+function computeOverallScores(data) {
+    const perf = data?.performanceAnalysis;
+    if (!perf || typeof perf !== 'object') return null;
+
+    const axisKeys = [
+        'floorCleaning',
+        'carpetCleaning',
+        'petHairRemoval',
+        'quietness',
+        'stepClimbing',
+        'maintenance',
+        'appStability',
+        'batteryLife',
+    ];
+
+    const scores = [];
+    for (const key of axisKeys) {
+        const node =
+            key === 'petHairRemoval'
+                ? (perf.petHairRemoval || perf.petHair)
+                : key === 'quietness'
+                    ? (perf.quietness || perf.nightQuietness)
+                    : perf[key];
+        const n = Number(node?.score);
+        if (Number.isFinite(n)) scores.push(n);
+    }
+
+    if (!scores.length) {
+        for (const value of Object.values(perf)) {
+            const n = Number(value?.score);
+            if (Number.isFinite(n)) scores.push(n);
+        }
+    }
+    if (!scores.length) return null;
+
+    const featureAverageScore = Math.round((scores.reduce((a, b) => a + b, 0) / scores.length) * 10) / 10;
+    const reliability = Number(data.reliabilityScore ?? data.reliability?.score);
+    if (!Number.isFinite(reliability)) {
+        return { featureAverageScore, overallScore: null };
+    }
+    const overallScore = Math.round((featureAverageScore * 0.85 + reliability * 0.15) * 10) / 10;
+    return { featureAverageScore, overallScore };
+}
+
 // 3. data-dynamic 属性更新
 function updateDynamicElements(data) {
     const dynamicElements = document.querySelectorAll('[data-dynamic]');
@@ -212,6 +261,10 @@ function updateDynamicElements(data) {
             } else if (path === 'totalReviews') {
                 element.textContent = Number(value).toLocaleString();
                 console.log(`✅ 総口コミ件数: ${Number(value).toLocaleString()}件`);
+            } else if (path === 'overallScore' || path === 'featureAverageScore' || path === 'reliabilityScore') {
+                const display = formatScoreDisplay(Number(value));
+                element.textContent = display ?? value;
+                console.log(`✅ ${path} = ${display ?? value}`);
             } else if (path === 'updateInfo.lastUpdated') {
                 element.textContent = formatUpdateDate(value);
                 console.log(`✅ データ更新日: ${formatUpdateDate(value)}`);
@@ -280,35 +333,30 @@ function updateBasicInfo(data) {
         }
     }
     
-    // 性能スコアの表示（上位3項目を自動選択）
-    if (data.performanceAnalysis) {
-        const scoresContainer = document.getElementById('performanceScores');
-        if (scoresContainer) {
-            const perfData = data.performanceAnalysis;
-            
-            // すべての性能項目をスコア順にソート
-            const allScores = [
-                { key: 'floorCleaning', label: 'フローリング', value: perfData.floorCleaning?.score },
-                { key: 'carpetCleaning', label: 'カーペット', value: perfData.carpetCleaning?.score },
-                { key: 'petHairRemoval', label: 'ペット毛', value: perfData.petHairRemoval?.score || perfData.petHair?.score },
-                { key: 'quietness', label: '静音性', value: perfData.quietness?.score || perfData.nightQuietness?.score },
-                { key: 'stepClimbing', label: '段差', value: perfData.stepClimbing?.score },
-                { key: 'maintenance', label: 'メンテ', value: perfData.maintenance?.score },
-                { key: 'appStability', label: 'アプリ', value: perfData.appStability?.score },
-                { key: 'batteryLife', label: 'バッテリー', value: perfData.batteryLife?.score }
-            ].filter(item => item.value !== undefined && item.value !== null)
-             .sort((a, b) => b.value - a.value)
-             .slice(0, 3); // 上位3項目を取得
-            
-            scoresContainer.innerHTML = allScores
-                .map(s => `
-                    <div class="score-item">
-                        <span class="score-label">${s.label}:</span>
-                        <span class="score-value">${s.value}点</span>
-                    </div>
-                `).join('');
-            console.log(`✅ 性能スコア 上位${allScores.length}項目 表示完了:`, allScores.map(s => `${s.label}(${s.value}点)`).join(', '));
+    // 総合点ブロック（機能平均点 × 0.85 ＋ 口コミ信頼度 × 0.15）
+    const scores = computeOverallScores(data);
+    const hero = document.getElementById('overallScoreHero');
+    if (scores && hero) {
+        data.featureAverageScore = scores.featureAverageScore;
+        if (scores.overallScore != null) data.overallScore = scores.overallScore;
+        const overallEl = hero.querySelector('[data-dynamic="overallScore"]');
+        const featureEl = hero.querySelector('[data-dynamic="featureAverageScore"]');
+        const relEl = hero.querySelector('[data-dynamic="reliabilityScore"]');
+        if (overallEl && scores.overallScore != null) {
+            overallEl.textContent = formatScoreDisplay(scores.overallScore);
         }
+        if (featureEl) {
+            featureEl.textContent = formatScoreDisplay(scores.featureAverageScore);
+        }
+        if (relEl) {
+            const rel = Number(data.reliabilityScore ?? data.reliability?.score);
+            if (Number.isFinite(rel)) relEl.textContent = formatScoreDisplay(rel);
+        }
+        console.log(
+            `✅ 総合点 ${formatScoreDisplay(scores.overallScore)}（機能平均 ${formatScoreDisplay(scores.featureAverageScore)} ×0.85 ＋ 信頼度 ${data.reliabilityScore} ×0.15）`
+        );
+    } else if (hero && !scores) {
+        hero.style.display = 'none';
     }
 }
 
@@ -1452,6 +1500,11 @@ async function initializePage() {
     console.log('🔒 信頼度スコア:', data.reliabilityScore, '点');
     
     try {
+        const computed = computeOverallScores(data);
+        if (computed) {
+            data.featureAverageScore = computed.featureAverageScore;
+            if (computed.overallScore != null) data.overallScore = computed.overallScore;
+        }
         updateMetadata(data);
         updateDynamicElements(data);
         updateBasicInfo(data);

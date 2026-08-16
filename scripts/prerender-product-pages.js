@@ -3,6 +3,7 @@
 
 const fs = require("fs");
 const path = require("path");
+const { computeOverallScores, formatScore } = require("./lib/overall-score");
 
 const ROOT = path.resolve(__dirname, "..");
 const PRODUCTS_DIR = path.join(ROOT, "products");
@@ -250,6 +251,10 @@ function formatValue(dottedPath, value) {
     const number = Number(value);
     return Number.isFinite(number) ? `約¥${number.toLocaleString("ja-JP")}` : value;
   }
+  if (dottedPath === "overallScore" || dottedPath === "featureAverageScore" || dottedPath === "reliabilityScore") {
+    const number = Number(value);
+    return Number.isFinite(number) ? formatScore(number) : value;
+  }
   if (dottedPath.startsWith("operationalCost.")) {
     const number = Number(value);
     return Number.isFinite(number) ? number.toLocaleString("ja-JP") : value;
@@ -292,33 +297,13 @@ const mobileOverrides = `        /* MOBILE_LAYOUT_FIX_START */
                 aspect-ratio: 1;
             }
 
-            .performance-scores {
-                display: grid;
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-                gap: 0.5rem;
+            .score-hero {
                 width: 100%;
             }
 
-            .score-item {
-                min-width: 0;
-                justify-content: center;
-                gap: 0.35rem;
-                padding: 0.5rem 0.6rem;
-            }
-
-            .score-label,
-            .score-value,
             .product-meta > * {
                 min-width: 0;
                 overflow-wrap: anywhere;
-            }
-
-            .score-label {
-                font-size: 0.75rem;
-            }
-
-            .score-value {
-                font-size: 1rem;
             }
 
             .product-meta {
@@ -420,6 +405,8 @@ function prerenderHtml(html, data) {
     "productName",
     "price",
     "totalReviews",
+    "overallScore",
+    "featureAverageScore",
     "reliabilityScore",
     "dataQuality.totalReviews",
     "dataQuality.adoptedReviews",
@@ -444,6 +431,12 @@ function prerenderHtml(html, data) {
     "operationalCost.monthly",
     "operationalCost.annual",
   ];
+
+  const computed = computeOverallScores(data);
+  if (computed) {
+    if (computed.overallScore != null) data.overallScore = computed.overallScore;
+    if (computed.featureAverageScore != null) data.featureAverageScore = computed.featureAverageScore;
+  }
 
   for (const dottedPath of directPaths) {
     let value = getNestedValue(data, dottedPath);
@@ -538,6 +531,8 @@ function validatePrerenderedHtml(html, data) {
   }
   for (const [dottedPath, rawValue, weight] of weightedExpectations) {
     if (rawValue === undefined || rawValue === null) continue;
+    // 内訳は JS が #reliability-factors に注入するページがあるため、静的spanがある場合のみ検証
+    if (!html.includes(`data-dynamic="${dottedPath}"`)) continue;
     const weighted = Math.round(Number(rawValue) * weight / 100 * 10) / 10;
     const display = Number.isInteger(weighted) ? String(weighted) : weighted.toFixed(1);
     const expected = `data-dynamic="${dottedPath}">${display}</span>`;
