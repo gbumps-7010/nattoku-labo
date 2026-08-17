@@ -98,26 +98,19 @@ const RANKING_FEATURES = [
 ];
 
 const MAKER_COMPARE_PAGES = [
-    { label: '一覧', file: 'manufacturer-compare-index.html' },
-    { label: 'エコバックス（ECOVACS）', file: 'manufacturer-compare-ecovacs.html' },
-    { label: 'アンカー（Anker）', file: 'manufacturer-compare-anker.html' },
-    { label: 'ドリーミー（Dreame）', file: 'manufacturer-compare-dreame.html' },
-    { label: 'ロボロック（Roborock）', file: 'manufacturer-compare-roborock.html' },
-    { label: 'ルンバ（iRobot）', file: 'manufacturer-compare-irobot.html' },
-    { label: 'スイッチボット（SwitchBot）', file: 'manufacturer-compare-switchbot.html' },
+    { label: '一覧', href: '/makers/' },
+    { label: 'エコバックス（ECOVACS）', href: '/makers/ecovacs' },
+    { label: 'アンカー（Anker）', href: '/makers/anker' },
+    { label: 'ドリーミー（Dreame）', href: '/makers/dreame' },
+    { label: 'ロボロック（Roborock）', href: '/makers/roborock' },
+    { label: 'ルンバ（iRobot）', href: '/makers/irobot' },
+    { label: 'スイッチボット（SwitchBot）', href: '/makers/switchbot' },
 ];
 
-function makerCompareHref(file) {
-    const path = String(window.location.pathname || '').replace(/\\/g, '/');
-    if (/\/drafts\//i.test(path) || /manufacturer-compare/i.test(path)) {
-        return file;
-    }
-    return '/drafts/' + file;
-}
-
-function isMakerCompareActive(file) {
-    const path = String(window.location.pathname || '').replace(/\\/g, '/');
-    return path.endsWith('/' + file) || path.endsWith(file);
+function isMakerCompareActive(href) {
+    const path = String(window.location.pathname || '').replace(/\\/g, '/').replace(/\/+$/, '') || '/';
+    const target = String(href || '').replace(/\/+$/, '') || '/';
+    return path === target || path === target + '.html';
 }
 
 /**
@@ -232,10 +225,9 @@ function createNavigationBar() {
                     <div class="dropdown-menu compare-dropdown">
                         <div class="dropdown-heading">メーカー別全機種比較</div>
                         ${MAKER_COMPARE_PAGES.map(m => {
-                            const href = makerCompareHref(m.file);
-                            const active = isMakerCompareActive(m.file) ? 'active' : '';
+                            const active = isMakerCompareActive(m.href) ? 'active' : '';
                             return `
-                            <a href="${href}" class="dropdown-item ${active}">
+                            <a href="${m.href}" class="dropdown-item ${active}">
                                 <span class="price-label">${m.label}</span>
                             </a>`;
                         }).join('')}
@@ -778,7 +770,7 @@ function createSiteExploreSection() {
                     <h3>メーカー別全機種比較</h3>
                     <div class="site-explore-chips">
                         ${MAKER_COMPARE_PAGES.map((m) => `
-                            <a class="site-explore-chip${m.file === 'manufacturer-compare-index.html' ? ' site-explore-chip-primary' : ''}" href="${makerCompareHref(m.file)}">
+                            <a class="site-explore-chip${m.href === '/makers/' ? ' site-explore-chip-primary' : ''}" href="${m.href}">
                                 <i class="fas fa-industry" aria-hidden="true"></i>${m.label}
                             </a>
                         `).join('')}

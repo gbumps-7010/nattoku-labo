@@ -21,6 +21,30 @@ https://www.nattoku-labo.com/* https://nattoku-labo.com/:splat 301
 /about.html /about 301
 /privacy.html /privacy 301
 /products/*.html /products/:splat 301
+/makers/index.html /makers/ 301
+/makers/*.html /makers/:splat 301
+/compare/index.html /compare/ 301
+/compare/*.html /compare/:splat 301
+/rankings/index.html /rankings/ 301
+/rankings/*.html /rankings/:splat 301
+
+# 1c) メーカー比較の草案URL → 本番
+/drafts/manufacturer-compare-index.html /makers/ 301
+/drafts/manufacturer-compare-index /makers/ 301
+/drafts/manufacturer-compare-preview.html /makers/ecovacs 301
+/drafts/manufacturer-compare-preview /makers/ecovacs 301
+/drafts/manufacturer-compare-ecovacs.html /makers/ecovacs 301
+/drafts/manufacturer-compare-ecovacs /makers/ecovacs 301
+/drafts/manufacturer-compare-anker.html /makers/anker 301
+/drafts/manufacturer-compare-anker /makers/anker 301
+/drafts/manufacturer-compare-dreame.html /makers/dreame 301
+/drafts/manufacturer-compare-dreame /makers/dreame 301
+/drafts/manufacturer-compare-roborock.html /makers/roborock 301
+/drafts/manufacturer-compare-roborock /makers/roborock 301
+/drafts/manufacturer-compare-irobot.html /makers/irobot 301
+/drafts/manufacturer-compare-irobot /makers/irobot 301
+/drafts/manufacturer-compare-switchbot.html /makers/switchbot 301
+/drafts/manufacturer-compare-switchbot /makers/switchbot 301
 
 # 2) 公開終了・テンプレ・テスト → 410（パスのみ。宛先付きだと無効化される）
 /contact-simple /privacy 301

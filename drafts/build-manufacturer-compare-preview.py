@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Manufacturer compare preview pages (all makers): article layout + vertical table."""
+"""Manufacturer compare pages (all makers): article layout + vertical table."""
 from __future__ import annotations
 
 import argparse
@@ -10,7 +10,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "products" / "data"
-OUT_DIR = ROOT / "drafts"
+OUT_DIR = ROOT / "makers"
+NAV_V = "20260818f"
+SITE = "https://nattoku-labo.com"
 WF, WR = 0.85, 0.15
 
 # id = products/data JSON の manufacturer 値
@@ -316,7 +318,7 @@ def maker_switcher_html(current_slug: str) -> str:
     for m in MANUFACTURERS:
         selected = " selected" if m["slug"] == current_slug else ""
         label = html.escape(f"{m['name_ja']}（{m['name_en']}）")
-        href = html.escape(f"manufacturer-compare-{m['slug']}.html")
+        href = html.escape(f"/makers/{m['slug']}")
         options.append(f'<option value="{href}"{selected}>{label}</option>')
     return f"""
       <div class="maker-switch">
@@ -1121,11 +1123,40 @@ def build_manufacturer_page(meta: dict) -> Path:
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noindex, nofollow">
-  <title>【草案】【全機種比較】{html.escape(brand_ja)}ロボット掃除機｜口コミでわかるおすすめの選び方｜ナットクLabo</title>
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <title>【全機種比較】{html.escape(brand_ja)}ロボット掃除機｜口コミでわかるおすすめの選び方｜ナットクLabo</title>
+  <meta name="description" content="{html.escape(brand_full)}のロボット掃除機{len(rows)}製品を口コミ分析データで横断比較。価格帯・機能・暮らし方別のおすすめも掲載します。">
+  <link rel="canonical" href="{SITE}/makers/{slug}">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="ナットクLabo">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:url" content="{SITE}/makers/{slug}">
+  <meta property="og:title" content="【全機種比較】{html.escape(brand_ja)}ロボット掃除機｜口コミでわかるおすすめの選び方">
+  <meta property="og:description" content="{html.escape(brand_full)}のロボット掃除機{len(rows)}製品を口コミ分析データで横断比較します。">
+  <meta name="twitter:card" content="summary_large_image">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="../products/css/navigation.css?v=20260818e">
+  <link rel="stylesheet" href="/products/css/navigation.css?v={NAV_V}">
+  <script type="application/ld+json">
+  {{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "【全機種比較】{html.escape(brand_ja)}ロボット掃除機｜口コミでわかるおすすめの選び方",
+    "url": "{SITE}/makers/{slug}",
+    "description": "{html.escape(brand_full)}のロボット掃除機{len(rows)}製品を口コミ分析データで横断比較します。"
+  }}
+  </script>
+  <script type="application/ld+json">
+  {{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "{SITE}/"}},
+      {{"@type": "ListItem", "position": 2, "name": "メーカー比較", "item": "{SITE}/makers/"}},
+      {{"@type": "ListItem", "position": 3, "name": "{html.escape(brand_ja)}", "item": "{SITE}/makers/{slug}"}}
+    ]
+  }}
+  </script>
   <style>
     :root {{
       --primary:#1e40af; --secondary:#0f172a; --bg:#f1f5f9; --card:#fff;
@@ -1138,25 +1169,8 @@ def build_manufacturer_page(meta: dict) -> Path:
       line-height:1.8; font-size:16px;
       overflow-x:clip;
     }}
-    .draft {{
-      position:sticky; top:calc(60px + env(safe-area-inset-top, 0px)); z-index:40;
-      background:#0f172a; color:#fff;
-      padding:.55rem 1rem; font-size:.78rem; display:flex; gap:.75rem; flex-wrap:wrap; justify-content:space-between;
-    }}
-    @media (max-width:768px) {{
-      .draft {{ top:calc(55px + env(safe-area-inset-top, 0px)); }}
-    }}
-    @media (min-width:481px) and (max-width:768px) {{
-      .draft {{ top:calc(60px + env(safe-area-inset-top, 0px)); }}
-    }}
-    .draft strong {{ color:#93c5fd; }}
     .crumb a {{ color:#bfdbfe; text-decoration:none; }}
     .crumb a:hover {{ text-decoration:underline; }}
-    .note {{ max-width:1080px; margin:.85rem auto 0; padding:0 1rem; }}
-    .note .box {{
-      border:1px dashed #f59e0b; background:#fffbeb; color:#92400e;
-      padding:.7rem .9rem; border-radius:10px; font-size:.84rem; line-height:1.6;
-    }}
     .maker-switch {{
       margin-top:.9rem; display:flex; flex-wrap:wrap; align-items:center; gap:.55rem .75rem;
     }}
@@ -1475,19 +1489,9 @@ def build_manufacturer_page(meta: dict) -> Path:
   </style>
 </head>
 <body>
-  <div class="draft">
-    <span>草案 · <strong>【全機種比較】{html.escape(brand_ja)}</strong> · 記事構成＋目次</span>
-    <span>{len(rows)}製品 · 本番未公開</span>
-  </div>
-  <div class="note">
-    <div class="box">
-      草案ページです。<a href="manufacturer-compare-index.html">メーカー比較一覧</a>から他メーカーへ移動できます。かんたんリンクHTMLは改変しません。
-    </div>
-  </div>
-
   <header class="hero">
     <div class="wrap">
-      <nav class="crumb"><a href="/">ホーム</a> › <a href="manufacturer-compare-index.html">メーカー比較</a> › {html.escape(brand_ja)}</nav>
+      <nav class="crumb"><a href="/">ホーム</a> › <a href="/makers/">メーカー比較</a> › {html.escape(brand_ja)}</nav>
       <h1>【全機種比較】{html.escape(brand_ja)}ロボット掃除機｜口コミでわかるおすすめの選び方</h1>
       <p class="lede">口コミ分析データで、{html.escape(brand_full)}のロボット掃除機{len(rows)}製品を横断比較します。</p>
       {switcher}
@@ -1562,15 +1566,11 @@ def build_manufacturer_page(meta: dict) -> Path:
   <script>
 {AFFILIATE_JS}
   </script>
-  <script src="../products/js/navigation.js?v=20260818e"></script>
+  <script src="/products/js/navigation.js?v={NAV_V}"></script>
 </body>
 </html>
 """
-    # intro already escaped above via html.escape(intro) - but intro has yen() etc which is fine.
-    # Fix: we double-escaped intro if we use html.escape on a string that shouldn't include tags.
-    # intro has no HTML - good.
-
-    out = OUT_DIR / f"manufacturer-compare-{slug}.html"
+    out = OUT_DIR / f"{slug}.html"
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     out.write_text(page, encoding="utf-8")
     print(f"wrote {out} ({len(rows)} {brand_en} products, affiliate={len(aff_map)})")
@@ -1583,7 +1583,7 @@ def build_index_page(counts: dict[str, int]) -> Path:
         n = counts.get(m["id"], 0)
         cards.append(
             f"""
-      <a class="maker-card" href="manufacturer-compare-{html.escape(m['slug'])}.html">
+      <a class="maker-card" href="/makers/{html.escape(m['slug'])}">
         <span class="maker-card-name">{html.escape(m['name_full'])}</span>
         <span class="maker-card-meta">{n}製品を比較</span>
       </a>"""
@@ -1593,26 +1593,30 @@ def build_index_page(counts: dict[str, int]) -> Path:
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noindex, nofollow">
-  <title>【草案】メーカー別全機種比較｜ナットクLabo</title>
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <title>メーカー別全機種比較｜ロボット掃除機の口コミ徹底比較｜ナットクLabo</title>
+  <meta name="description" content="エコバックス、アンカー、ドリーミー、ロボロック、ルンバ、スイッチボットのロボット掃除機をメーカー別に全機種比較。口コミ分析データで選び方を整理します。">
+  <link rel="canonical" href="{SITE}/makers/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ナットクLabo">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:url" content="{SITE}/makers/">
+  <meta property="og:title" content="メーカー別全機種比較｜ロボット掃除機の口コミ徹底比較">
+  <meta property="og:description" content="メーカーごとのロボット掃除機を全機種横断比較。口コミ分析データで選び方を整理します。">
+  <meta name="twitter:card" content="summary_large_image">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="../products/css/navigation.css?v=20260818e">
+  <link rel="stylesheet" href="/products/css/navigation.css?v={NAV_V}">
   <style>
     body {{
       font-family:"Noto Sans JP",sans-serif; background:#f1f5f9; color:#1e293b;
       line-height:1.7; margin:0;
     }}
-    .draft {{
-      position:sticky; top:calc(60px + env(safe-area-inset-top, 0px)); z-index:40;
-      background:#0f172a; color:#fff; padding:.55rem 1rem; font-size:.78rem;
-    }}
-    @media (max-width:480px) {{
-      .draft {{ top:calc(55px + env(safe-area-inset-top, 0px)); }}
-    }}
     header.hero {{
       background:linear-gradient(135deg,#1e40af,#0f172a); color:#fff; padding:1.6rem 1rem 1.8rem;
     }}
+    .crumb {{ font-size:.78rem; opacity:.85; margin-bottom:.55rem; }}
+    .crumb a {{ color:#bfdbfe; text-decoration:none; }}
     .wrap {{ max-width:960px; margin:0 auto; padding:0 1rem 2.5rem; }}
     h1 {{ font-size:clamp(1.25rem,3.6vw,1.75rem); font-weight:900; margin:.4rem 0 .55rem; }}
     .lede {{ opacity:.95; max-width:36rem; }}
@@ -1630,23 +1634,33 @@ def build_index_page(counts: dict[str, int]) -> Path:
     .maker-card-name {{ font-weight:900; font-size:1.02rem; color:#0f172a; }}
     .maker-card-meta {{ font-size:.86rem; color:#64748b; font-weight:700; }}
   </style>
+  <script type="application/ld+json">
+  {{
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "メーカー別全機種比較",
+    "url": "{SITE}/makers/",
+    "description": "メーカーごとのロボット掃除機を全機種横断比較します。"
+  }}
+  </script>
 </head>
 <body>
-  <div class="draft">草案 · メーカー別全機種比較一覧 · 本番未公開</div>
   <header class="hero">
     <div class="wrap">
+      <nav class="crumb"><a href="/">ホーム</a> › メーカー比較</nav>
       <h1>メーカー別・全機種比較</h1>
-      <p class="lede">口コミ分析データをもとに、メーカーごとの製品を横断比較する草案ページです。</p>
+      <p class="lede">口コミ分析データをもとに、メーカーごとのロボット掃除機を横断比較します。</p>
     </div>
   </header>
   <main class="wrap">
     <div class="grid">{"".join(cards)}</div>
   </main>
-  <script src="../products/js/navigation.js?v=20260818e"></script>
+  <script src="/products/js/navigation.js?v={NAV_V}"></script>
 </body>
 </html>
 """
-    out = OUT_DIR / "manufacturer-compare-index.html"
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    out = OUT_DIR / "index.html"
     out.write_text(page, encoding="utf-8")
     print(f"wrote {out}")
     return out
@@ -1680,8 +1694,8 @@ def qa_japanese(paths: list[Path]) -> list[str]:
         copy = re.sub(r"<script[\s\S]*?</script>", " ", copy)
         copy = re.sub(r"<style[\s\S]*?</style>", " ", copy)
         copy = re.sub(r"<[^>]+>", " ", copy).replace("\u2060", "")
-        slug = path.stem.replace("manufacturer-compare-", "")
-        if slug not in ("ecovacs", "index", "preview"):
+        slug = path.stem
+        if slug not in ("ecovacs", "index"):
             if "エコバックス" in copy or re.search(r"\bECOVACS製品\b", copy):
                 warnings.append(f"{path.name}: 他メーカーページにエコバックス表記が残存")
         for pat, msg in awkward:
@@ -1702,7 +1716,7 @@ def qa_japanese(paths: list[Path]) -> list[str]:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Build manufacturer compare draft pages")
+    parser = argparse.ArgumentParser(description="Build manufacturer compare pages")
     parser.add_argument(
         "--only",
         nargs="*",
@@ -1728,14 +1742,7 @@ def main() -> None:
 
     # Always refresh index with full counts
     all_counts = {m["id"]: len(load_manufacturer(m["id"])) for m in MANUFACTURERS}
-    build_index_page(all_counts)
-
-    # Keep legacy preview filename as ECOVACS alias
-    ecovacs = OUT_DIR / "manufacturer-compare-ecovacs.html"
-    legacy = OUT_DIR / "manufacturer-compare-preview.html"
-    if ecovacs.exists():
-        legacy.write_text(ecovacs.read_text(encoding="utf-8"), encoding="utf-8")
-        print(f"wrote {legacy} (alias of ecovacs)")
+    outs.append(build_index_page(all_counts))
 
     warnings = qa_japanese(outs)
     if warnings:

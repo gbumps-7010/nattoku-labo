@@ -70,6 +70,36 @@ for (const p of rootPages) {
   }
 }
 
+function addHtmlDir(dirName, urlPrefix, changefreq, priority) {
+  const dir = path.join(ROOT, dirName);
+  if (!fs.existsSync(dir)) return;
+  const indexAb = path.join(dir, "index.html");
+  if (fs.existsSync(indexAb)) {
+    urlEntries.push({
+      loc: `${BASE}${urlPrefix}/`,
+      lastmod: lastmodFile(indexAb),
+      changefreq,
+      priority,
+    });
+  }
+  const files = fs
+    .readdirSync(dir)
+    .filter((f) => f.endsWith(".html") && f !== "index.html")
+    .sort((a, b) => a.localeCompare(b, "en"));
+  for (const f of files) {
+    urlEntries.push({
+      loc: `${BASE}${urlPrefix}/${path.basename(f, ".html")}`,
+      lastmod: lastmodFile(path.join(dir, f)),
+      changefreq,
+      priority,
+    });
+  }
+}
+
+addHtmlDir("makers", "/makers", "weekly", "0.85");
+addHtmlDir("compare", "/compare", "weekly", "0.85");
+addHtmlDir("rankings", "/rankings", "weekly", "0.85");
+
 // 製品ページ（HP掲載=TRUE かつ口コミありのものだけ）
 const productsDir = path.join(ROOT, "products");
 const dataDir = path.join(productsDir, "data");
