@@ -53,6 +53,20 @@ const ALL_PRODUCTS = [
 // メーカー一覧
 const MANUFACTURERS = ['すべて', 'Anker', 'Dreame', 'ECOVACS', 'Roborock', 'SwitchBot', 'iRobot'];
 
+const MANUFACTURER_LABELS = {
+    Anker: 'アンカー（Anker）',
+    Dreame: 'ドリーミー（Dreame）',
+    ECOVACS: 'エコバックス（ECOVACS）',
+    Roborock: 'ロボロック（Roborock）',
+    iRobot: 'ルンバ（iRobot）',
+    SwitchBot: 'スイッチボット（SwitchBot）',
+};
+
+function manufacturerLabel(id) {
+    if (!id || id === 'すべて') return id;
+    return MANUFACTURER_LABELS[id] || id;
+}
+
 // 価格帯一覧（比較ページの価格帯と一致させる）
 const PRICE_RANGES = [
     { label: 'すべて', min: 0, max: Infinity },
@@ -66,7 +80,7 @@ const PRICE_RANGES = [
 
 // おすすめ比較（価格帯別）
 const COMPARE_BANDS = [
-    { label: '比較一覧（すべて）', href: '/compare/', min: null, max: null },
+    { label: '一覧', href: '/compare/', min: null, max: null },
     { label: '〜5万円', href: '/compare/robot-vacuum-under-5man', min: 0, max: 50000 },
     { label: '5〜7万円', href: '/compare/robot-vacuum-5-7man', min: 50000, max: 70000 },
     { label: '7〜10万円', href: '/compare/robot-vacuum-7-10man', min: 70000, max: 100000 },
@@ -82,6 +96,29 @@ const RANKING_FEATURES = [
     { label: 'カーペット掃除', href: '/rankings/carpet-cleaning' },
     { label: '静音性', href: '/rankings/quietness' },
 ];
+
+const MAKER_COMPARE_PAGES = [
+    { label: '一覧', file: 'manufacturer-compare-index.html' },
+    { label: 'エコバックス（ECOVACS）', file: 'manufacturer-compare-ecovacs.html' },
+    { label: 'アンカー（Anker）', file: 'manufacturer-compare-anker.html' },
+    { label: 'ドリーミー（Dreame）', file: 'manufacturer-compare-dreame.html' },
+    { label: 'ロボロック（Roborock）', file: 'manufacturer-compare-roborock.html' },
+    { label: 'ルンバ（iRobot）', file: 'manufacturer-compare-irobot.html' },
+    { label: 'スイッチボット（SwitchBot）', file: 'manufacturer-compare-switchbot.html' },
+];
+
+function makerCompareHref(file) {
+    const path = String(window.location.pathname || '').replace(/\\/g, '/');
+    if (/\/drafts\//i.test(path) || /manufacturer-compare/i.test(path)) {
+        return file;
+    }
+    return '/drafts/' + file;
+}
+
+function isMakerCompareActive(file) {
+    const path = String(window.location.pathname || '').replace(/\\/g, '/');
+    return path.endsWith('/' + file) || path.endsWith(file);
+}
 
 /**
  * 固定ナビゲーションバーを作成
@@ -116,7 +153,7 @@ function createNavigationBar() {
             </div>
             
             <div class="nav-menu" id="nav-menu-panel">
-                <a href="/" class="nav-link">
+                <a href="/" class="nav-link nav-link-home">
                     <i class="fas fa-home"></i> ホーム
                 </a>
                 
@@ -129,7 +166,7 @@ function createNavigationBar() {
                             <a href="/products/${p.id}" class="dropdown-item ${getCurrentProductId() === p.id ? 'active' : ''}">
                                 <span class="product-name">${p.name}</span>
                                 <span class="product-meta">
-                                    <span class="manufacturer">${p.manufacturer}</span>
+                                    <span class="manufacturer">${manufacturerLabel(p.manufacturer)}</span>
                                     <span class="price">¥${p.price.toLocaleString()}</span>
                                 </span>
                             </a>
@@ -146,7 +183,7 @@ function createNavigationBar() {
                             const count = ALL_PRODUCTS.filter(p => p.manufacturer === m).length;
                             return `
                                 <div class="dropdown-item manufacturer-filter" data-manufacturer="${m}">
-                                    <span class="manufacturer-name">${m}</span>
+                                    <span class="manufacturer-name">${manufacturerLabel(m)}</span>
                                     <span class="product-count">(${count}製品)</span>
                                 </div>
                             `;
@@ -173,7 +210,7 @@ function createNavigationBar() {
                 
                 <div class="nav-dropdown">
                     <button class="nav-link dropdown-toggle">
-                        <i class="fas fa-trophy"></i> 機能別ランキング <i class="fas fa-chevron-down"></i>
+                        <i class="fas fa-trophy"></i> ランキング <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="dropdown-menu ranking-dropdown">
                         ${RANKING_FEATURES.map(r => {
@@ -190,9 +227,19 @@ function createNavigationBar() {
 
                 <div class="nav-dropdown">
                     <button class="nav-link dropdown-toggle">
-                        <i class="fas fa-table"></i> おすすめ・口コミ徹底比較 <i class="fas fa-chevron-down"></i>
+                        <i class="fas fa-table"></i> 徹底比較 <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="dropdown-menu compare-dropdown">
+                        <div class="dropdown-heading">メーカー別全機種比較</div>
+                        ${MAKER_COMPARE_PAGES.map(m => {
+                            const href = makerCompareHref(m.file);
+                            const active = isMakerCompareActive(m.file) ? 'active' : '';
+                            return `
+                            <a href="${href}" class="dropdown-item ${active}">
+                                <span class="price-label">${m.label}</span>
+                            </a>`;
+                        }).join('')}
+                        <div class="dropdown-heading">価格別比較</div>
                         ${COMPARE_BANDS.map(b => {
                             const count = (b.min == null)
                                 ? ALL_PRODUCTS.length
@@ -402,7 +449,7 @@ function createRelatedProductsSection() {
                 <div class="related-group">
                     <h3 class="related-subtitle">
                         <i class="fas fa-industry"></i>
-                        同じメーカー（${currentProduct.manufacturer}）の製品
+                        同じメーカー（${manufacturerLabel(currentProduct.manufacturer)}）の製品
                     </h3>
                     <div class="related-products-grid">
                         ${sameManufacturer.map(p => createProductCard(p)).join('')}
@@ -449,7 +496,7 @@ function createProductCard(product) {
     return `
         <a href="/products/${product.id}" class="related-product-card">
             <div class="related-product-info">
-                <div class="related-manufacturer">${product.manufacturer}</div>
+                <div class="related-manufacturer">${manufacturerLabel(product.manufacturer)}</div>
                 <div class="related-name">${product.name}</div>
                 <div class="related-meta">
                     <span class="related-price">¥${product.price.toLocaleString()}</span>
@@ -510,7 +557,7 @@ function createFooter() {
  */
 function buildSiteFilterFormHtml(formId, inputIdPrefix) {
     const manufacturerOptions = MANUFACTURERS.map((m) => {
-        const label = m === 'すべて' ? 'すべてのメーカー' : m;
+        const label = m === 'すべて' ? 'すべてのメーカー' : manufacturerLabel(m);
         return `<option value="${m}">${label}</option>`;
     }).join('');
 
@@ -670,7 +717,7 @@ function createSiteExploreSection() {
     const manufacturerLinks = MANUFACTURERS.filter((m) => m !== 'すべて')
         .map((m) => {
             const count = ALL_PRODUCTS.filter((p) => p.manufacturer === m).length;
-            return `<a class="site-explore-chip" href="/?manufacturer=${encodeURIComponent(m)}#productsContainer">${m}<span>${count}</span></a>`;
+            return `<a class="site-explore-chip" href="/?manufacturer=${encodeURIComponent(m)}#productsContainer">${manufacturerLabel(m)}<span>${count}</span></a>`;
         })
         .join('');
 
@@ -721,9 +768,20 @@ function createSiteExploreSection() {
                 </div>
 
                 <div class="site-explore-group">
-                    <h3>価格帯別の徹底比較</h3>
+                    <h3>価格別比較</h3>
                     <div class="site-explore-chips">
                         ${compareLinks}
+                    </div>
+                </div>
+
+                <div class="site-explore-group">
+                    <h3>メーカー別全機種比較</h3>
+                    <div class="site-explore-chips">
+                        ${MAKER_COMPARE_PAGES.map((m) => `
+                            <a class="site-explore-chip${m.file === 'manufacturer-compare-index.html' ? ' site-explore-chip-primary' : ''}" href="${makerCompareHref(m.file)}">
+                                <i class="fas fa-industry" aria-hidden="true"></i>${m.label}
+                            </a>
+                        `).join('')}
                     </div>
                 </div>
 

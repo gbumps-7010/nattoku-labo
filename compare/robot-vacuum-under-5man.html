@@ -36,6 +36,7 @@
       background: var(--bg);
       color: var(--text);
       line-height: 1.75;
+      overflow-x: clip;
     }
     header.hero {
       background: linear-gradient(135deg, var(--primary), var(--secondary));
@@ -233,6 +234,7 @@
     }
     .compare-scroll-wrap {
       position: relative;
+      overflow: hidden;
     }
     .compare-scroll-wrap::before,
     .compare-scroll-wrap::after {
@@ -263,7 +265,7 @@
     }
     .compare-scroll {
       overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
+      overflow-y: hidden;
       overscroll-behavior-x: contain;
       scrollbar-width: none; /* Firefox: hide bottom scrollbar */
       -ms-overflow-style: none; /* IE/old Edge */
@@ -296,29 +298,33 @@
       background: #f8fafc;
       position: sticky;
       left: 0;
-      z-index: 4;
+      z-index: 6;
       min-width: 4.8rem;
       max-width: 5.4rem;
       padding-left: 0.45rem;
       padding-right: 0.4rem;
       box-shadow: 6px 0 10px -8px rgba(15, 23, 42, 0.35);
       font-size: 0.7rem;
+      transform: translateZ(0);
     }
     table.compare thead th {
       background: #f1f5f9;
       vertical-align: bottom;
       border-bottom: 2px solid #cbd5e1;
-      position: sticky;
-      top: 0;
-      z-index: 2;
     }
     table.compare thead th:first-child {
-      z-index: 5;
+      z-index: 8;
       vertical-align: middle;
       font-size: 0.72rem;
     }
     table.compare thead th.product-col {
       background: #f1f5f9;
+      position: relative;
+      z-index: 0;
+    }
+    table.compare tbody td:not(:first-child) {
+      position: relative;
+      z-index: 0;
     }
     .product-head {
       display: flex;
@@ -426,7 +432,24 @@
     table.compare tbody tr:nth-child(even) td:first-child { background: #f1f5f9; }
     table.compare tbody tr:hover td { background: #f0f9ff; }
     table.compare tbody tr:hover td:first-child { background: #e0f2fe; }
-    .score { font-weight: 900; color: var(--primary); font-size: 0.92rem; }
+    .score {
+      font-weight: 900;
+      color: var(--primary);
+      font-size: 0.92rem;
+      font-variant-numeric: tabular-nums;
+    }
+    td.score.s90 { color: #047857; background: #ecfdf5; }
+    td.score.s80 { color: #1d4ed8; background: #eff6ff; }
+    td.score.s70 { color: #a16207; background: #fffbeb; }
+    td.score.s60 { color: #b91c1c; background: #fef2f2; }
+    table.compare tbody tr:nth-child(even) td.score.s90,
+    table.compare tbody tr:hover td.score.s90 { background: #ecfdf5; }
+    table.compare tbody tr:nth-child(even) td.score.s80,
+    table.compare tbody tr:hover td.score.s80 { background: #eff6ff; }
+    table.compare tbody tr:nth-child(even) td.score.s70,
+    table.compare tbody tr:hover td.score.s70 { background: #fffbeb; }
+    table.compare tbody tr:nth-child(even) td.score.s60,
+    table.compare tbody tr:hover td.score.s60 { background: #fef2f2; }
     .price { font-weight: 800; font-size: 0.78rem; white-space: nowrap; }
     .kw {
       font-size: 0.68rem;
@@ -624,7 +647,7 @@
   </style>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="/products/css/navigation.css?v=20260815b">
+  <link rel="stylesheet" href="/products/css/navigation.css?v=20260818e">
   <script type="application/ld+json">
   {
   "@context": "https://schema.org",
@@ -752,7 +775,7 @@
         <div class="table-stage-label">
           <strong>おすすめ・口コミ徹底比較表（〜5万円・全12製品）</strong>
         </div>
-        <p class="table-source">比較表の数値・キーワード・注意点は、すべて2大ECサイトの口コミ分析に基づきます。</p>
+        <p class="table-source">比較表の数値・キーワード・注意点は、すべて2大ECサイトの口コミ分析に基づきます。点数は<strong>90点台が緑</strong>、<strong>80点台が青</strong>、<strong>70点台が黄</strong>、<strong>70点未満が赤</strong>です。</p>
         <div class="compare-nav" role="group" aria-label="比較表の横移動">
           <button type="button" class="compare-nav-btn" data-dir="-1" aria-label="前の製品へ">‹</button>
           <div class="compare-nav-meta">
@@ -774,13 +797,13 @@
                       <img
                         class="product-photo"
                         src="https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/d9maxgen2_cp.jpg"
-                        alt="Dreame D9 Max Gen 2"
+                        alt="ドリーミー（Dreame） D9 Max Gen 2"
                         width="112"
                         height="112"
                         loading="lazy"
                       >
                       <div class="product-name">D9 Max Gen 2</div>
-                      <div class="product-mfr">Dreame</div>
+                      <div class="product-mfr">ドリーミー（Dreame）</div>
                     </a>
                     <a class="price-jump" href="#price-check-d9-max-gen-2"><span class="price-jump-main">最新価格を見る</span><span class="price-jump-sub">▼ 下へジャンプ</span></a>
                   </div>
@@ -791,13 +814,13 @@
                       <img
                         class="product-photo"
                         src="https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/11302689/imgrc0140534087.jpg"
-                        alt="Dreame D10 Plus"
+                        alt="ドリーミー（Dreame） D10 Plus"
                         width="112"
                         height="112"
                         loading="lazy"
                       >
                       <div class="product-name">D10 Plus</div>
-                      <div class="product-mfr">Dreame</div>
+                      <div class="product-mfr">ドリーミー（Dreame）</div>
                     </a>
                     <a class="price-jump" href="#price-check-d10-plus"><span class="price-jump-main">最新価格を見る</span><span class="price-jump-sub">▼ 下へジャンプ</span></a>
                   </div>
@@ -808,13 +831,13 @@
                       <img
                         class="product-photo"
                         src="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t2292/t2292_nomal.jpg"
-                        alt="Anker Eufy Robot Vacuum Auto-Empty C10"
+                        alt="アンカー（Anker） Eufy Robot Vacuum Auto-Empty C10"
                         width="112"
                         height="112"
                         loading="lazy"
                       >
                       <div class="product-name">Eufy Robot Vacuum Auto-Empty C10</div>
-                      <div class="product-mfr">Anker</div>
+                      <div class="product-mfr">アンカー（Anker）</div>
                     </a>
                     <a class="price-jump" href="#price-check-eufy-robot-vacuum-auto-empty-c10"><span class="price-jump-main">最新価格を見る</span><span class="price-jump-sub">▼ 下へジャンプ</span></a>
                   </div>
@@ -825,13 +848,13 @@
                       <img
                         class="product-photo"
                         src="https://thumbnail.image.rakuten.co.jp/@0_mall/value-shopping/cabinet/product07/4571411191008.jpg"
-                        alt="Anker Eufy RoboVac G10 Hybrid"
+                        alt="アンカー（Anker） Eufy RoboVac G10 Hybrid"
                         width="112"
                         height="112"
                         loading="lazy"
                       >
                       <div class="product-name">Eufy RoboVac G10 Hybrid</div>
-                      <div class="product-mfr">Anker</div>
+                      <div class="product-mfr">アンカー（Anker）</div>
                     </a>
                     <a class="price-jump" href="#price-check-eufy-robovac-g10-hybrid"><span class="price-jump-main">最新価格を見る</span><span class="price-jump-sub">▼ 下へジャンプ</span></a>
                   </div>
@@ -842,13 +865,13 @@
                       <img
                         class="product-photo"
                         src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/ydlx11-32df.jpg"
-                        alt="ECOVACS DEEBOT N30"
+                        alt="エコバックス（ECOVACS） DEEBOT N30"
                         width="112"
                         height="112"
                         loading="lazy"
                       >
                       <div class="product-name">DEEBOT N30</div>
-                      <div class="product-mfr">ECOVACS</div>
+                      <div class="product-mfr">エコバックス（ECOVACS）</div>
                     </a>
                     <a class="price-jump" href="#price-check-deebot-n30"><span class="price-jump-main">最新価格を見る</span><span class="price-jump-sub">▼ 下へジャンプ</span></a>
                   </div>
@@ -859,13 +882,13 @@
                       <img
                         class="product-photo"
                         src="https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/09377790/11892401/13129054/imgrc0100726038.jpg"
-                        alt="SwitchBot ロボット掃除機 K11+"
+                        alt="スイッチボット（SwitchBot） ロボット掃除機 K11+"
                         width="112"
                         height="112"
                         loading="lazy"
                       >
                       <div class="product-name">ロボット掃除機 K11+</div>
-                      <div class="product-mfr">SwitchBot</div>
+                      <div class="product-mfr">スイッチボット（SwitchBot）</div>
                     </a>
                     <a class="price-jump" href="#price-check-k11"><span class="price-jump-main">最新価格を見る</span><span class="price-jump-sub">▼ 下へジャンプ</span></a>
                   </div>
@@ -876,13 +899,13 @@
                       <img
                         class="product-photo"
                         src="https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/03016688/20260219_review_2nen/minislim_2nen_logo.jpg"
-                        alt="iRobot Roomba® Mini Slim + SlimCharge™"
+                        alt="ルンバ（iRobot） Roomba® Mini Slim + SlimCharge™"
                         width="112"
                         height="112"
                         loading="lazy"
                       >
                       <div class="product-name">Roomba® Mini Slim + SlimCharge™</div>
-                      <div class="product-mfr">iRobot</div>
+                      <div class="product-mfr">ルンバ（iRobot）</div>
                     </a>
                     <a class="price-jump" href="#price-check-roomba-mini-slim-slimcharge"><span class="price-jump-main">最新価格を見る</span><span class="price-jump-sub">▼ 下へジャンプ</span></a>
                   </div>
@@ -893,13 +916,13 @@
                       <img
                         class="product-photo"
                         src="https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/13111094/imgrc0155930361.jpg"
-                        alt="Dreame F20"
+                        alt="ドリーミー（Dreame） F20"
                         width="112"
                         height="112"
                         loading="lazy"
                       >
                       <div class="product-name">F20</div>
-                      <div class="product-mfr">Dreame</div>
+                      <div class="product-mfr">ドリーミー（Dreame）</div>
                     </a>
                     <a class="price-jump" href="#price-check-f20"><span class="price-jump-main">最新価格を見る</span><span class="price-jump-sub">▼ 下へジャンプ</span></a>
                   </div>
@@ -910,13 +933,13 @@
                       <img
                         class="product-photo"
                         src="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t2253/t2253_daily.jpg"
-                        alt="Anker Eufy RoboVac G30 Hybrid"
+                        alt="アンカー（Anker） Eufy RoboVac G30 Hybrid"
                         width="112"
                         height="112"
                         loading="lazy"
                       >
                       <div class="product-name">Eufy RoboVac G30 Hybrid</div>
-                      <div class="product-mfr">Anker</div>
+                      <div class="product-mfr">アンカー（Anker）</div>
                     </a>
                     <a class="price-jump" href="#price-check-eufy-robovac-g30-hybrid"><span class="price-jump-main">最新価格を見る</span><span class="price-jump-sub">▼ 下へジャンプ</span></a>
                   </div>
@@ -927,13 +950,13 @@
                       <img
                         class="product-photo"
                         src="https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/item_thum/br_thum/mini_ae_2nen_rank.jpg"
-                        alt="iRobot Roomba® Mini + AutoEmpty™"
+                        alt="ルンバ（iRobot） Roomba® Mini + AutoEmpty™"
                         width="112"
                         height="112"
                         loading="lazy"
                       >
                       <div class="product-name">Roomba® Mini + AutoEmpty™</div>
-                      <div class="product-mfr">iRobot</div>
+                      <div class="product-mfr">ルンバ（iRobot）</div>
                     </a>
                     <a class="price-jump" href="#price-check-roomba-mini-autoempty"><span class="price-jump-main">最新価格を見る</span><span class="price-jump-sub">▼ 下へジャンプ</span></a>
                   </div>
@@ -944,13 +967,13 @@
                       <img
                         class="product-photo"
                         src="https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/13479056/mainbg2.jpg"
-                        alt="SwitchBot ロボット掃除機 K11+ Pro"
+                        alt="スイッチボット（SwitchBot） ロボット掃除機 K11+ Pro"
                         width="112"
                         height="112"
                         loading="lazy"
                       >
                       <div class="product-name">ロボット掃除機 K11+ Pro</div>
-                      <div class="product-mfr">SwitchBot</div>
+                      <div class="product-mfr">スイッチボット（SwitchBot）</div>
                     </a>
                     <a class="price-jump" href="#price-check-k11-pro"><span class="price-jump-main">最新価格を見る</span><span class="price-jump-sub">▼ 下へジャンプ</span></a>
                   </div>
@@ -961,13 +984,13 @@
                       <img
                         class="product-photo"
                         src="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t2351/t2351_normal.jpg"
-                        alt="Anker Eufy X10 Pro Omni"
+                        alt="アンカー（Anker） Eufy X10 Pro Omni"
                         width="112"
                         height="112"
                         loading="lazy"
                       >
                       <div class="product-name">Eufy X10 Pro Omni</div>
-                      <div class="product-mfr">Anker</div>
+                      <div class="product-mfr">アンカー（Anker）</div>
                     </a>
                     <a class="price-jump" href="#price-check-eufy-x10-pro-omni"><span class="price-jump-main">最新価格を見る</span><span class="price-jump-sub">▼ 下へジャンプ</span></a>
                   </div>
@@ -1022,18 +1045,18 @@
               </tr>
               <tr>
                 <td>口コミ信頼度</td>
-                <td class="score">70</td>
-                <td class="score">52.7</td>
-                <td class="score">85</td>
-                <td class="score">71</td>
-                <td class="score">77.8</td>
-                <td class="score">83.8</td>
-                <td class="score">82</td>
-                <td class="score">54.4</td>
-                <td class="score">84.4</td>
-                <td class="score">83.2</td>
-                <td class="score">63.4</td>
-                <td class="score">85.3</td>
+                <td class="score s70">70</td>
+                <td class="score s60">52.7</td>
+                <td class="score s80">85</td>
+                <td class="score s70">71</td>
+                <td class="score s70">77.8</td>
+                <td class="score s80">83.8</td>
+                <td class="score s80">82</td>
+                <td class="score s60">54.4</td>
+                <td class="score s80">84.4</td>
+                <td class="score s80">83.2</td>
+                <td class="score s60">63.4</td>
+                <td class="score s80">85.3</td>
               </tr>
               <tr class="row-group">
                 <td>高評価で多い声</td>
@@ -1067,93 +1090,93 @@
               </tr>
               <tr class="row-group">
                 <td>床掃除</td>
-                <td class="score">96</td>
-                <td class="score">95</td>
-                <td class="score">93</td>
-                <td class="score">88</td>
-                <td class="score">95</td>
-                <td class="score">94</td>
-                <td class="score">95</td>
-                <td class="score">85</td>
-                <td class="score">92</td>
-                <td class="score">93</td>
-                <td class="score">75</td>
-                <td class="score">97</td>
+                <td class="score s90">96</td>
+                <td class="score s90">95</td>
+                <td class="score s90">93</td>
+                <td class="score s80">88</td>
+                <td class="score s90">95</td>
+                <td class="score s90">94</td>
+                <td class="score s90">95</td>
+                <td class="score s80">85</td>
+                <td class="score s90">92</td>
+                <td class="score s90">93</td>
+                <td class="score s70">75</td>
+                <td class="score s90">97</td>
               </tr>
               <tr>
                 <td>静音</td>
-                <td class="score">88</td>
-                <td class="score">96</td>
-                <td class="score">88</td>
-                <td class="score">90</td>
-                <td class="score">82</td>
-                <td class="score">89</td>
-                <td class="score">72</td>
-                <td class="score">70</td>
-                <td class="score">95</td>
-                <td class="score">65</td>
-                <td class="score">88</td>
-                <td class="score">82</td>
+                <td class="score s80">88</td>
+                <td class="score s90">96</td>
+                <td class="score s80">88</td>
+                <td class="score s90">90</td>
+                <td class="score s80">82</td>
+                <td class="score s80">89</td>
+                <td class="score s70">72</td>
+                <td class="score s70">70</td>
+                <td class="score s90">95</td>
+                <td class="score s60">65</td>
+                <td class="score s80">88</td>
+                <td class="score s80">82</td>
               </tr>
               <tr>
                 <td>お手入れ</td>
-                <td class="score">85</td>
-                <td class="score">85</td>
-                <td class="score">94</td>
-                <td class="score">82</td>
-                <td class="score">88</td>
-                <td class="score">85</td>
-                <td class="score">65</td>
-                <td class="score">80</td>
-                <td class="score">75</td>
-                <td class="score">95</td>
-                <td class="score">89</td>
-                <td class="score">85</td>
+                <td class="score s80">85</td>
+                <td class="score s80">85</td>
+                <td class="score s90">94</td>
+                <td class="score s80">82</td>
+                <td class="score s80">88</td>
+                <td class="score s80">85</td>
+                <td class="score s60">65</td>
+                <td class="score s80">80</td>
+                <td class="score s70">75</td>
+                <td class="score s90">95</td>
+                <td class="score s80">89</td>
+                <td class="score s80">85</td>
               </tr>
               <tr>
                 <td>段差越え</td>
-                <td class="score">72</td>
-                <td class="score">80</td>
-                <td class="score">85</td>
-                <td class="score">55</td>
-                <td class="score">70</td>
-                <td class="score">70</td>
-                <td class="score">68</td>
-                <td class="score">70</td>
-                <td class="score">65</td>
-                <td class="score">70</td>
-                <td class="score">68</td>
-                <td class="score">72</td>
+                <td class="score s70">72</td>
+                <td class="score s80">80</td>
+                <td class="score s80">85</td>
+                <td class="score s60">55</td>
+                <td class="score s70">70</td>
+                <td class="score s70">70</td>
+                <td class="score s60">68</td>
+                <td class="score s70">70</td>
+                <td class="score s60">65</td>
+                <td class="score s70">70</td>
+                <td class="score s60">68</td>
+                <td class="score s70">72</td>
               </tr>
               <tr>
                 <td>ペット毛</td>
-                <td class="score">90</td>
-                <td class="score">90</td>
-                <td class="score">90</td>
-                <td class="score">85</td>
-                <td class="score">92</td>
-                <td class="score">92</td>
-                <td class="score">91</td>
-                <td class="score">95</td>
-                <td class="score">88</td>
-                <td class="score">85</td>
-                <td class="score">85</td>
-                <td class="score">93</td>
+                <td class="score s90">90</td>
+                <td class="score s90">90</td>
+                <td class="score s90">90</td>
+                <td class="score s80">85</td>
+                <td class="score s90">92</td>
+                <td class="score s90">92</td>
+                <td class="score s90">91</td>
+                <td class="score s90">95</td>
+                <td class="score s80">88</td>
+                <td class="score s80">85</td>
+                <td class="score s80">85</td>
+                <td class="score s90">93</td>
               </tr>
               <tr>
                 <td>アプリ</td>
-                <td class="score">92</td>
-                <td class="score">88</td>
-                <td class="score">89</td>
-                <td class="score">65</td>
-                <td class="score">88</td>
-                <td class="score">88</td>
-                <td class="score">55</td>
-                <td class="score">88</td>
-                <td class="score">80</td>
-                <td class="score">68</td>
-                <td class="score">55</td>
-                <td class="score">94</td>
+                <td class="score s90">92</td>
+                <td class="score s80">88</td>
+                <td class="score s80">89</td>
+                <td class="score s60">65</td>
+                <td class="score s80">88</td>
+                <td class="score s80">88</td>
+                <td class="score s60">55</td>
+                <td class="score s80">88</td>
+                <td class="score s80">80</td>
+                <td class="score s60">68</td>
+                <td class="score s60">55</td>
+                <td class="score s90">94</td>
               </tr>
               <tr class="row-group">
                 <td>注意点1</td>
@@ -1291,7 +1314,7 @@
             <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/d9maxgen2_cp.jpg" alt="" width="52" height="52" loading="lazy">
             <div>
               <div class="aff-card-title">D9 Max Gen 2</div>
-              <div class="aff-card-brand">Dreame · ¥17,800</div>
+              <div class="aff-card-brand">ドリーミー（Dreame） · ¥17,800</div>
             </div>
           </div>
           <div class="aff-card-body">
@@ -1303,7 +1326,7 @@
             <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/11302689/imgrc0140534087.jpg" alt="" width="52" height="52" loading="lazy">
             <div>
               <div class="aff-card-title">D10 Plus</div>
-              <div class="aff-card-brand">Dreame · ¥26,900</div>
+              <div class="aff-card-brand">ドリーミー（Dreame） · ¥26,900</div>
             </div>
           </div>
           <div class="aff-card-body">
@@ -1315,7 +1338,7 @@
             <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t2292/t2292_nomal.jpg" alt="" width="52" height="52" loading="lazy">
             <div>
               <div class="aff-card-title">Eufy Robot Vacuum Auto-Empty C10</div>
-              <div class="aff-card-brand">Anker · ¥29,990</div>
+              <div class="aff-card-brand">アンカー（Anker） · ¥29,990</div>
             </div>
           </div>
           <div class="aff-card-body">
@@ -1327,7 +1350,7 @@
             <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/value-shopping/cabinet/product07/4571411191008.jpg" alt="" width="52" height="52" loading="lazy">
             <div>
               <div class="aff-card-title">Eufy RoboVac G10 Hybrid</div>
-              <div class="aff-card-brand">Anker · ¥29,990</div>
+              <div class="aff-card-brand">アンカー（Anker） · ¥29,990</div>
             </div>
           </div>
           <div class="aff-card-body">
@@ -1339,7 +1362,7 @@
             <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/ydlx11-32df.jpg" alt="" width="52" height="52" loading="lazy">
             <div>
               <div class="aff-card-title">DEEBOT N30</div>
-              <div class="aff-card-brand">ECOVACS · ¥34,800</div>
+              <div class="aff-card-brand">エコバックス（ECOVACS） · ¥34,800</div>
             </div>
           </div>
           <div class="aff-card-body">
@@ -1351,7 +1374,7 @@
             <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/09377790/11892401/13129054/imgrc0100726038.jpg" alt="" width="52" height="52" loading="lazy">
             <div>
               <div class="aff-card-title">ロボット掃除機 K11+</div>
-              <div class="aff-card-brand">SwitchBot · ¥37,800</div>
+              <div class="aff-card-brand">スイッチボット（SwitchBot） · ¥37,800</div>
             </div>
           </div>
           <div class="aff-card-body">
@@ -1363,7 +1386,7 @@
             <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/03016688/20260219_review_2nen/minislim_2nen_logo.jpg" alt="" width="52" height="52" loading="lazy">
             <div>
               <div class="aff-card-title">Roomba® Mini Slim + SlimCharge™</div>
-              <div class="aff-card-brand">iRobot · ¥39,800</div>
+              <div class="aff-card-brand">ルンバ（iRobot） · ¥39,800</div>
             </div>
           </div>
           <div class="aff-card-body">
@@ -1375,7 +1398,7 @@
             <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/13111094/imgrc0155930361.jpg" alt="" width="52" height="52" loading="lazy">
             <div>
               <div class="aff-card-title">F20</div>
-              <div class="aff-card-brand">Dreame · ¥39,800</div>
+              <div class="aff-card-brand">ドリーミー（Dreame） · ¥39,800</div>
             </div>
           </div>
           <div class="aff-card-body">
@@ -1387,7 +1410,7 @@
             <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t2253/t2253_daily.jpg" alt="" width="52" height="52" loading="lazy">
             <div>
               <div class="aff-card-title">Eufy RoboVac G30 Hybrid</div>
-              <div class="aff-card-brand">Anker · ¥39,990</div>
+              <div class="aff-card-brand">アンカー（Anker） · ¥39,990</div>
             </div>
           </div>
           <div class="aff-card-body">
@@ -1399,7 +1422,7 @@
             <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/item_thum/br_thum/mini_ae_2nen_rank.jpg" alt="" width="52" height="52" loading="lazy">
             <div>
               <div class="aff-card-title">Roomba® Mini + AutoEmpty™</div>
-              <div class="aff-card-brand">iRobot · ¥49,800</div>
+              <div class="aff-card-brand">ルンバ（iRobot） · ¥49,800</div>
             </div>
           </div>
           <div class="aff-card-body">
@@ -1411,7 +1434,7 @@
             <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/13479056/mainbg2.jpg" alt="" width="52" height="52" loading="lazy">
             <div>
               <div class="aff-card-title">ロボット掃除機 K11+ Pro</div>
-              <div class="aff-card-brand">SwitchBot · ¥49,800</div>
+              <div class="aff-card-brand">スイッチボット（SwitchBot） · ¥49,800</div>
             </div>
           </div>
           <div class="aff-card-body">
@@ -1423,7 +1446,7 @@
             <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t2351/t2351_normal.jpg" alt="" width="52" height="52" loading="lazy">
             <div>
               <div class="aff-card-title">Eufy X10 Pro Omni</div>
-              <div class="aff-card-brand">Anker · ¥49,990</div>
+              <div class="aff-card-brand">アンカー（Anker） · ¥49,990</div>
             </div>
           </div>
           <div class="aff-card-body">
@@ -1672,6 +1695,6 @@
       document.querySelectorAll(".aff-card[data-slug]").forEach(mountCard);
     })();
   </script>
-  <script src="/products/js/navigation.js?v=20260815b"></script>
+  <script src="/products/js/navigation.js?v=20260818e"></script>
 </body>
 </html>

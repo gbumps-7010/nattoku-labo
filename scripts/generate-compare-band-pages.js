@@ -29,6 +29,7 @@ const STYLE = `<style>
       background: var(--bg);
       color: var(--text);
       line-height: 1.75;
+      overflow-x: clip;
     }
     header.hero {
       background: linear-gradient(135deg, var(--primary), var(--secondary));
@@ -226,6 +227,7 @@ const STYLE = `<style>
     }
     .compare-scroll-wrap {
       position: relative;
+      overflow: hidden;
     }
     .compare-scroll-wrap::before,
     .compare-scroll-wrap::after {
@@ -256,7 +258,7 @@ const STYLE = `<style>
     }
     .compare-scroll {
       overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
+      overflow-y: hidden;
       overscroll-behavior-x: contain;
       scrollbar-width: none; /* Firefox: hide bottom scrollbar */
       -ms-overflow-style: none; /* IE/old Edge */
@@ -289,29 +291,33 @@ const STYLE = `<style>
       background: #f8fafc;
       position: sticky;
       left: 0;
-      z-index: 4;
+      z-index: 6;
       min-width: 4.8rem;
       max-width: 5.4rem;
       padding-left: 0.45rem;
       padding-right: 0.4rem;
       box-shadow: 6px 0 10px -8px rgba(15, 23, 42, 0.35);
       font-size: 0.7rem;
+      transform: translateZ(0);
     }
     table.compare thead th {
       background: #f1f5f9;
       vertical-align: bottom;
       border-bottom: 2px solid #cbd5e1;
-      position: sticky;
-      top: 0;
-      z-index: 2;
     }
     table.compare thead th:first-child {
-      z-index: 5;
+      z-index: 8;
       vertical-align: middle;
       font-size: 0.72rem;
     }
     table.compare thead th.product-col {
       background: #f1f5f9;
+      position: relative;
+      z-index: 0;
+    }
+    table.compare tbody td:not(:first-child) {
+      position: relative;
+      z-index: 0;
     }
     .product-head {
       display: flex;
@@ -419,7 +425,24 @@ const STYLE = `<style>
     table.compare tbody tr:nth-child(even) td:first-child { background: #f1f5f9; }
     table.compare tbody tr:hover td { background: #f0f9ff; }
     table.compare tbody tr:hover td:first-child { background: #e0f2fe; }
-    .score { font-weight: 900; color: var(--primary); font-size: 0.92rem; }
+    .score {
+      font-weight: 900;
+      color: var(--primary);
+      font-size: 0.92rem;
+      font-variant-numeric: tabular-nums;
+    }
+    td.score.s90 { color: #047857; background: #ecfdf5; }
+    td.score.s80 { color: #1d4ed8; background: #eff6ff; }
+    td.score.s70 { color: #a16207; background: #fffbeb; }
+    td.score.s60 { color: #b91c1c; background: #fef2f2; }
+    table.compare tbody tr:nth-child(even) td.score.s90,
+    table.compare tbody tr:hover td.score.s90 { background: #ecfdf5; }
+    table.compare tbody tr:nth-child(even) td.score.s80,
+    table.compare tbody tr:hover td.score.s80 { background: #eff6ff; }
+    table.compare tbody tr:nth-child(even) td.score.s70,
+    table.compare tbody tr:hover td.score.s70 { background: #fffbeb; }
+    table.compare tbody tr:nth-child(even) td.score.s60,
+    table.compare tbody tr:hover td.score.s60 { background: #fef2f2; }
     .price { font-weight: 800; font-size: 0.78rem; white-space: nowrap; }
     .kw {
       font-size: 0.68rem;
@@ -674,6 +697,23 @@ function scoreTone(pct) {
   return "";
 }
 
+function scoreBandClass(n) {
+  if (n == null || n === "—") return "";
+  const v = Number(n);
+  if (!Number.isFinite(v)) return "";
+  if (v >= 90) return " s90";
+  if (v >= 80) return " s80";
+  if (v >= 70) return " s70";
+  return " s60";
+}
+
+function scoreCell(value, extraClass = "") {
+  const band = scoreBandClass(value);
+  const extra = extraClass ? ` ${extraClass}` : "";
+  const shown = value == null || value === "" ? "—" : value;
+  return `<td class="score${band}${extra}">${shown}</td>`;
+}
+
 function complaintCell(c) {
   if (!c) return '<td class="kw">—</td>';
   const title = (c.title || "").replace(/（.*?）/g, "").trim();
@@ -692,12 +732,12 @@ function complaintShort(c) {
 
 function brandOf(p) {
   const m = (p.manufacturer || "").trim();
-  if (/ecovacs/i.test(m)) return "ECOVACS";
-  if (/roborock/i.test(m)) return "Roborock";
-  if (/anker|eufy/i.test(m)) return "Anker";
-  if (/irobot/i.test(m)) return "iRobot";
-  if (/switchbot/i.test(m)) return "SwitchBot";
-  if (/dreame/i.test(m)) return "Dreame";
+  if (/ecovacs/i.test(m)) return "エコバックス（ECOVACS）";
+  if (/roborock/i.test(m)) return "ロボロック（Roborock）";
+  if (/anker|eufy/i.test(m)) return "アンカー（Anker）";
+  if (/irobot/i.test(m)) return "ルンバ（iRobot）";
+  if (/switchbot/i.test(m)) return "スイッチボット（SwitchBot）";
+  if (/dreame/i.test(m)) return "ドリーミー（Dreame）";
   return m || "—";
 }
 
@@ -977,7 +1017,7 @@ function buildTable(prods) {
               </tr>
               <tr>
                 <td>口コミ信頼度</td>
-                ${cells(prods, (p) => `<td class="score">${p.trust}</td>`)}
+                ${cells(prods, (p) => scoreCell(p.trust))}
               </tr>
               <tr class="row-group">
                 <td>高評価で多い声</td>
@@ -989,27 +1029,27 @@ function buildTable(prods) {
               </tr>
               <tr class="row-group">
                 <td>床掃除</td>
-                ${cells(prods, (p) => `<td class="score">${p.floor}</td>`)}
+                ${cells(prods, (p) => scoreCell(p.floor))}
               </tr>
               <tr>
                 <td>静音</td>
-                ${cells(prods, (p) => `<td class="score">${p.quiet}</td>`)}
+                ${cells(prods, (p) => scoreCell(p.quiet))}
               </tr>
               <tr>
                 <td>お手入れ</td>
-                ${cells(prods, (p) => `<td class="score">${p.maint}</td>`)}
+                ${cells(prods, (p) => scoreCell(p.maint))}
               </tr>
               <tr>
                 <td>段差越え</td>
-                ${cells(prods, (p) => `<td class="score">${p.step}</td>`)}
+                ${cells(prods, (p) => scoreCell(p.step))}
               </tr>
               <tr>
                 <td>ペット毛</td>
-                ${cells(prods, (p) => `<td class="score">${p.pet}</td>`)}
+                ${cells(prods, (p) => scoreCell(p.pet))}
               </tr>
               <tr>
                 <td>アプリ</td>
-                ${cells(prods, (p) => `<td class="score">${p.app}</td>`)}
+                ${cells(prods, (p) => scoreCell(p.app))}
               </tr>
               <tr class="row-group">
                 <td>注意点1</td>
@@ -1343,7 +1383,7 @@ function buildPage(band) {
   ${STYLE}
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="/products/css/navigation.css?v=20260814h">
+  <link rel="stylesheet" href="/products/css/navigation.css?v=20260818e">
   <script type="application/ld+json">
   ${JSON.stringify(itemListJson(band), null, 2)}
   </script>
@@ -1390,7 +1430,7 @@ function buildPage(band) {
         <div class="table-stage-label">
           <strong>おすすめ・口コミ徹底比較表（${band.label}・全${band.products.length}製品）</strong>
         </div>
-        <p class="table-source">比較表の数値・キーワード・注意点は、すべて2大ECサイトの口コミ分析に基づきます。</p>
+        <p class="table-source">比較表の数値・キーワード・注意点は、すべて2大ECサイトの口コミ分析に基づきます。点数は<strong>90点台が緑</strong>、<strong>80点台が青</strong>、<strong>70点台が黄</strong>、<strong>70点未満が赤</strong>です。</p>
         <div class="compare-nav" role="group" aria-label="比較表の横移動">
           <button type="button" class="compare-nav-btn" data-dir="-1" aria-label="前の製品へ">‹</button>
           <div class="compare-nav-meta">
@@ -1430,7 +1470,7 @@ function buildPage(band) {
   </footer>
   ${scrollHelperScript}
   ${affiliateInlineScript}
-  <script src="/products/js/navigation.js?v=20260814e"></script>
+  <script src="/products/js/navigation.js?v=20260818e"></script>
 </body>
 </html>
 `;

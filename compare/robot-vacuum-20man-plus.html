@@ -36,6 +36,7 @@
       background: var(--bg);
       color: var(--text);
       line-height: 1.75;
+      overflow-x: clip;
     }
     header.hero {
       background: linear-gradient(135deg, var(--primary), var(--secondary));
@@ -233,6 +234,7 @@
     }
     .compare-scroll-wrap {
       position: relative;
+      overflow: hidden;
     }
     .compare-scroll-wrap::before,
     .compare-scroll-wrap::after {
@@ -263,7 +265,7 @@
     }
     .compare-scroll {
       overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
+      overflow-y: hidden;
       overscroll-behavior-x: contain;
       scrollbar-width: none; /* Firefox: hide bottom scrollbar */
       -ms-overflow-style: none; /* IE/old Edge */
@@ -296,29 +298,33 @@
       background: #f8fafc;
       position: sticky;
       left: 0;
-      z-index: 4;
+      z-index: 6;
       min-width: 4.8rem;
       max-width: 5.4rem;
       padding-left: 0.45rem;
       padding-right: 0.4rem;
       box-shadow: 6px 0 10px -8px rgba(15, 23, 42, 0.35);
       font-size: 0.7rem;
+      transform: translateZ(0);
     }
     table.compare thead th {
       background: #f1f5f9;
       vertical-align: bottom;
       border-bottom: 2px solid #cbd5e1;
-      position: sticky;
-      top: 0;
-      z-index: 2;
     }
     table.compare thead th:first-child {
-      z-index: 5;
+      z-index: 8;
       vertical-align: middle;
       font-size: 0.72rem;
     }
     table.compare thead th.product-col {
       background: #f1f5f9;
+      position: relative;
+      z-index: 0;
+    }
+    table.compare tbody td:not(:first-child) {
+      position: relative;
+      z-index: 0;
     }
     .product-head {
       display: flex;
@@ -426,7 +432,24 @@
     table.compare tbody tr:nth-child(even) td:first-child { background: #f1f5f9; }
     table.compare tbody tr:hover td { background: #f0f9ff; }
     table.compare tbody tr:hover td:first-child { background: #e0f2fe; }
-    .score { font-weight: 900; color: var(--primary); font-size: 0.92rem; }
+    .score {
+      font-weight: 900;
+      color: var(--primary);
+      font-size: 0.92rem;
+      font-variant-numeric: tabular-nums;
+    }
+    td.score.s90 { color: #047857; background: #ecfdf5; }
+    td.score.s80 { color: #1d4ed8; background: #eff6ff; }
+    td.score.s70 { color: #a16207; background: #fffbeb; }
+    td.score.s60 { color: #b91c1c; background: #fef2f2; }
+    table.compare tbody tr:nth-child(even) td.score.s90,
+    table.compare tbody tr:hover td.score.s90 { background: #ecfdf5; }
+    table.compare tbody tr:nth-child(even) td.score.s80,
+    table.compare tbody tr:hover td.score.s80 { background: #eff6ff; }
+    table.compare tbody tr:nth-child(even) td.score.s70,
+    table.compare tbody tr:hover td.score.s70 { background: #fffbeb; }
+    table.compare tbody tr:nth-child(even) td.score.s60,
+    table.compare tbody tr:hover td.score.s60 { background: #fef2f2; }
     .price { font-weight: 800; font-size: 0.78rem; white-space: nowrap; }
     .kw {
       font-size: 0.68rem;
@@ -624,7 +647,7 @@
   </style>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="/products/css/navigation.css?v=20260815b">
+  <link rel="stylesheet" href="/products/css/navigation.css?v=20260818e">
   <script type="application/ld+json">
   {
   "@context": "https://schema.org",
@@ -692,7 +715,7 @@
         <div class="table-stage-label">
           <strong>おすすめ・口コミ徹底比較表（20万円〜・全2製品）</strong>
         </div>
-        <p class="table-source">比較表の数値・キーワード・注意点は、すべて2大ECサイトの口コミ分析に基づきます。</p>
+        <p class="table-source">比較表の数値・キーワード・注意点は、すべて2大ECサイトの口コミ分析に基づきます。点数は<strong>90点台が緑</strong>、<strong>80点台が青</strong>、<strong>70点台が黄</strong>、<strong>70点未満が赤</strong>です。</p>
         <div class="compare-nav" role="group" aria-label="比較表の横移動">
           <button type="button" class="compare-nav-btn" data-dir="-1" aria-label="前の製品へ">‹</button>
           <div class="compare-nav-meta">
@@ -714,13 +737,13 @@
                       <img
                         class="product-photo"
                         src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/dex99-10ee.jpg"
-                        alt="ECOVACS DEEBOT X11 OmniCyclone"
+                        alt="エコバックス（ECOVACS） DEEBOT X11 OmniCyclone"
                         width="112"
                         height="112"
                         loading="lazy"
                       >
                       <div class="product-name">DEEBOT X11 OmniCyclone</div>
-                      <div class="product-mfr">ECOVACS</div>
+                      <div class="product-mfr">エコバックス（ECOVACS）</div>
                     </a>
                     <a class="price-jump" href="#price-check-deebot-x11-omnicyclone"><span class="price-jump-main">最新価格を見る</span><span class="price-jump-sub">▼ 下へジャンプ</span></a>
                   </div>
@@ -731,13 +754,13 @@
                       <img
                         class="product-photo"
                         src="https://thumbnail.image.rakuten.co.jp/@0_mall/roborockjapandirect/cabinet/products/12574614/imgrc0134813006.jpg"
-                        alt="Roborock Saros 20"
+                        alt="ロボロック（Roborock） Saros 20"
                         width="112"
                         height="112"
                         loading="lazy"
                       >
                       <div class="product-name">Saros 20</div>
-                      <div class="product-mfr">Roborock</div>
+                      <div class="product-mfr">ロボロック（Roborock）</div>
                     </a>
                     <a class="price-jump" href="#price-check-saros-20"><span class="price-jump-main">最新価格を見る</span><span class="price-jump-sub">▼ 下へジャンプ</span></a>
                   </div>
@@ -762,8 +785,8 @@
               </tr>
               <tr>
                 <td>口コミ信頼度</td>
-                <td class="score">70.3</td>
-                <td class="score">67.9</td>
+                <td class="score s70">70.3</td>
+                <td class="score s60">67.9</td>
               </tr>
               <tr class="row-group">
                 <td>高評価で多い声</td>
@@ -777,33 +800,33 @@
               </tr>
               <tr class="row-group">
                 <td>床掃除</td>
-                <td class="score">98</td>
-                <td class="score">98</td>
+                <td class="score s90">98</td>
+                <td class="score s90">98</td>
               </tr>
               <tr>
                 <td>静音</td>
-                <td class="score">86</td>
-                <td class="score">88</td>
+                <td class="score s80">86</td>
+                <td class="score s80">88</td>
               </tr>
               <tr>
                 <td>お手入れ</td>
-                <td class="score">96</td>
-                <td class="score">95</td>
+                <td class="score s90">96</td>
+                <td class="score s90">95</td>
               </tr>
               <tr>
                 <td>段差越え</td>
-                <td class="score">75</td>
-                <td class="score">92</td>
+                <td class="score s70">75</td>
+                <td class="score s90">92</td>
               </tr>
               <tr>
                 <td>ペット毛</td>
-                <td class="score">92</td>
-                <td class="score">96</td>
+                <td class="score s90">92</td>
+                <td class="score s90">96</td>
               </tr>
               <tr>
                 <td>アプリ</td>
-                <td class="score">94</td>
-                <td class="score">91</td>
+                <td class="score s90">94</td>
+                <td class="score s90">91</td>
               </tr>
               <tr class="row-group">
                 <td>注意点1</td>
@@ -886,7 +909,7 @@
             <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/dex99-10ee.jpg" alt="" width="52" height="52" loading="lazy">
             <div>
               <div class="aff-card-title">DEEBOT X11 OmniCyclone</div>
-              <div class="aff-card-brand">ECOVACS · ¥229,900</div>
+              <div class="aff-card-brand">エコバックス（ECOVACS） · ¥229,900</div>
             </div>
           </div>
           <div class="aff-card-body">
@@ -898,7 +921,7 @@
             <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/roborockjapandirect/cabinet/products/12574614/imgrc0134813006.jpg" alt="" width="52" height="52" loading="lazy">
             <div>
               <div class="aff-card-title">Saros 20</div>
-              <div class="aff-card-brand">Roborock · ¥249,800</div>
+              <div class="aff-card-brand">ロボロック（Roborock） · ¥249,800</div>
             </div>
           </div>
           <div class="aff-card-body">
@@ -1147,6 +1170,6 @@
       document.querySelectorAll(".aff-card[data-slug]").forEach(mountCard);
     })();
   </script>
-  <script src="/products/js/navigation.js?v=20260815b"></script>
+  <script src="/products/js/navigation.js?v=20260818e"></script>
 </body>
 </html>

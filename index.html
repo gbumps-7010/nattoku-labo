@@ -21,7 +21,7 @@
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="/products/css/navigation.css?v=20260815b">
+    <link rel="stylesheet" href="/products/css/navigation.css?v=20260818e">
     
     <style>
         * {
@@ -953,6 +953,18 @@
         let productsData = [];
 
         const manufacturers = ['すべて', 'Anker', 'Dreame', 'ECOVACS', 'Roborock', 'SwitchBot', 'iRobot'];
+        const manufacturerLabels = {
+            Anker: 'アンカー（Anker）',
+            Dreame: 'ドリーミー（Dreame）',
+            ECOVACS: 'エコバックス（ECOVACS）',
+            Roborock: 'ロボロック（Roborock）',
+            iRobot: 'ルンバ（iRobot）',
+            SwitchBot: 'スイッチボット（SwitchBot）',
+        };
+        function manufacturerLabel(id) {
+            if (!id || id === 'すべて') return id;
+            return manufacturerLabels[id] || id;
+        }
         const priceRanges = [
             { label: 'すべて', min: 0, max: Infinity },
             { label: '〜5万円', min: 0, max: 50000 },
@@ -986,7 +998,7 @@
             manufacturers.forEach(manufacturer => {
                 const option = document.createElement('option');
                 option.value = manufacturer;
-                option.textContent = manufacturer;
+                option.textContent = manufacturer === 'すべて' ? 'すべてのメーカー' : manufacturerLabel(manufacturer);
                 manufacturerFilter.appendChild(option);
             });
 
@@ -1045,7 +1057,7 @@
                         <img src="${product.image}" alt="${product.name}" class="product-image">
                     </div>
                     <div class="product-content">
-                        <div class="product-manufacturer">${product.manufacturer}</div>
+                        <div class="product-manufacturer">${manufacturerLabel(product.manufacturer)}</div>
                         <h3 class="product-name">${product.name}</h3>
                         
                         <div class="product-review-count">口コミ ${product.reviewCount.toLocaleString()}件</div>
@@ -1086,6 +1098,7 @@
                 const matchesSearch = searchTerm === '' || 
                     product.name.toLowerCase().includes(searchTerm) ||
                     product.manufacturer.toLowerCase().includes(searchTerm) ||
+                    manufacturerLabel(product.manufacturer).toLowerCase().includes(searchTerm) ||
                     product.badges.some(badge => badge.toLowerCase().includes(searchTerm));
 
                 // Manufacturer
@@ -1151,6 +1164,6 @@
             loadAndInit();
         }
     </script>
-    <script src="/products/js/navigation.js?v=20260815b"></script>
+    <script src="/products/js/navigation.js?v=20260818e"></script>
 </body>
 </html>

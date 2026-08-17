@@ -87,18 +87,20 @@
 .nav-menu {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.2rem;
+    min-width: 0;
+    flex: 0 1 auto;
 }
 
 .nav-link {
     display: flex;
     align-items: center;
-    gap: 0.4rem;
-    padding: 0.6rem 1rem;
+    gap: 0.3rem;
+    padding: 0.5rem 0.55rem;
     color: white;
     text-decoration: none;
     font-weight: 500;
-    font-size: 0.95rem;
+    font-size: 0.86rem;
     border-radius: 6px;
     transition: all 0.3s ease;
     background: transparent;
@@ -144,7 +146,7 @@
     border-radius: 8px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     min-width: 280px;
-    max-height: 400px;
+    max-height: min(70vh, 480px);
     overflow-y: auto;
     opacity: 0;
     visibility: hidden;
@@ -178,9 +180,25 @@
 }
 
 .dropdown-item.active {
-    background: linear-gradient(135deg, #1e40af15 0%, #0f172a10 100%);
-    font-weight: 600;
-    border-left: 3px solid #1e40af;
+    background: #eff6ff;
+    color: #1e40af;
+    font-weight: 700;
+}
+
+.dropdown-heading {
+    padding: 0.7rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 900;
+    letter-spacing: 0.03em;
+    color: #fff;
+    background: linear-gradient(135deg, #1e40af 0%, #0f172a 100%);
+    border-bottom: 0;
+    line-height: 1.35;
+}
+
+.compare-dropdown .dropdown-heading:not(:first-child) {
+    margin-top: 0.25rem;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
 }
 
 /* ===== 製品ドロップダウン ===== */
@@ -279,7 +297,8 @@
     font-weight: 600;
 }
 
-.compare-dropdown {
+.compare-dropdown,
+.maker-compare-dropdown {
     min-width: 220px;
 }
 
@@ -876,26 +895,13 @@ body.nav-mobile-open::before {
 }
 
 /* ===== レスポンシブ ===== */
-@media (max-width: 1024px) {
-    .nav-menu {
-        gap: 0.6rem;
-    }
-    
-    .nav-link {
-        padding: 0.5rem 0.8rem;
-        font-size: 0.9rem;
-    }
-    
-    .dropdown-menu {
-        min-width: 260px;
-    }
-    
-    .products-dropdown {
-        min-width: 320px;
+@media (min-width: 1181px) {
+    .nav-link-home {
+        display: none;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1180px) {
     .mobile-menu-toggle {
         display: inline-flex;
     }
@@ -1006,7 +1012,8 @@ body.nav-mobile-open::before {
     .nav-menu .products-dropdown,
     .nav-menu .manufacturer-dropdown,
     .nav-menu .price-dropdown,
-    .nav-menu .compare-dropdown {
+    .nav-menu .compare-dropdown,
+    .nav-menu .maker-compare-dropdown {
         display: none !important;
         position: static !important;
         left: auto !important;
@@ -1032,7 +1039,7 @@ body.nav-mobile-open::before {
     .nav-menu .nav-dropdown.open > .dropdown-menu {
         display: block !important;
         height: auto !important;
-        max-height: min(45vh, 280px) !important;
+        max-height: min(50vh, 360px) !important;
         margin: 0.2rem 0 0.35rem !important;
         padding: 0 !important;
         overflow-y: auto !important;
@@ -1041,6 +1048,15 @@ body.nav-mobile-open::before {
         pointer-events: auto;
     }
 
+    /* 徹底比較は項目が多いので、内側スクロールせずメニュー全体で送る */
+    .nav-menu .nav-dropdown.open > .compare-dropdown,
+    .nav-menu .nav-dropdown.open > .maker-compare-dropdown {
+        max-height: none !important;
+        overflow: visible !important;
+    }
+}
+
+@media (max-width: 768px) {
     .related-products-grid {
         grid-template-columns: 1fr;
     }
@@ -1065,6 +1081,21 @@ body.nav-mobile-open::before {
 
     body.nav-mobile-open::before {
         top: calc(55px + env(safe-area-inset-top, 0px));
+    }
+
+    .nav-logo {
+        max-width: 46%;
+    }
+
+    .nav-logo a {
+        font-size: 0.95rem;
+        gap: 0.4rem;
+    }
+
+    .nav-quick-link {
+        padding: 0.35rem 0.5rem;
+        font-size: 0.72rem;
+        min-height: 36px;
     }
 
     .nav-menu {
