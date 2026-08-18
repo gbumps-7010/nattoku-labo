@@ -7,47 +7,61 @@
 
 // 全製品データ（価格・メーカー情報のみ）
 const ALL_PRODUCTS = [
-    { id: 'eufy-clean-x8-pro-with-self-empty-station', name: 'Eufy Clean X8 Pro with Self-Empty Station', manufacturer: 'Anker', price: 69990, rating: 3.72 },
-    { id: 'eufy-robovac-g10-hybrid', name: 'Eufy RoboVac G10 Hybrid', manufacturer: 'Anker', price: 29990, rating: 3.47 },
-    { id: 'eufy-robovac-g30', name: 'Eufy RoboVac G30', manufacturer: 'Anker', price: 29490, rating: 4.16 },
-    { id: 'eufy-robovac-g30-hybrid', name: 'Eufy RoboVac G30 Hybrid', manufacturer: 'Anker', price: 39990, rating: 4.09 },
-    { id: 'eufy-robovac-x8-hybrid', name: 'Eufy RoboVac X8 Hybrid', manufacturer: 'Anker', price: 59800, rating: 3.53 },
-    { id: 'eufy-robot-vacuum-auto-empty-c10', name: 'Eufy Robot Vacuum Auto-Empty C10', manufacturer: 'Anker', price: 29990, rating: 4.01 },
-    { id: 'eufy-robot-vacuum-omni-c20', name: 'Eufy Robot Vacuum Omni C20', manufacturer: 'Anker', price: 69990, rating: 4.26 },
-    { id: 'eufy-robot-vacuum-omni-c28', name: 'Eufy Robot Vacuum Omni C28', manufacturer: 'Anker', price: 99990, rating: 4.19 },
-    { id: 'eufy-robot-vacuum-omni-e25', name: 'Eufy Robot Vacuum Omni E25', manufacturer: 'Anker', price: 119920, rating: 4.46 },
-    { id: 'eufy-robot-vacuum-omni-s1-pro', name: 'Eufy Robot Vacuum Omni S1 Pro', manufacturer: 'Anker', price: 199900, rating: 4.09 },
-    { id: 'eufy-x10-pro-omni', name: 'Eufy X10 Pro Omni', manufacturer: 'Anker', price: 69990, rating: 4.0 },
-    { id: 'd10-plus', name: 'D10 Plus', manufacturer: 'Dreame', price: 26900, rating: 4.19 },
-    { id: 'l20-ultra-complete', name: 'L20 Ultra Complete', manufacturer: 'Dreame', price: 52000, rating: 4.42 },
-    { id: 'l40-ultra-ae', name: 'L40 Ultra AE', manufacturer: 'Dreame', price: 99800, rating: 4.26 },
-    { id: 'l40s-pro-ultra', name: 'L40s Pro Ultra', manufacturer: 'Dreame', price: 99800, rating: 4.36 },
-    { id: 'x30-ultra', name: 'X30 Ultra', manufacturer: 'Dreame', price: 69800, rating: 4.27 },
-    { id: 'x50-ultra', name: 'X50 Ultra', manufacturer: 'Dreame', price: 199800, rating: 4.53 },
-    { id: 'deebot-n30', name: 'DEEBOT N30', manufacturer: 'ECOVACS', price: 34800, rating: 4.3 },
-    { id: 'deebot-n30-plus', name: 'DEEBOT N30 PLUS', manufacturer: 'ECOVACS', price: 69800, rating: 4.34 },
-    { id: 'deebot-t50-omni', name: 'DEEBOT T50 OMNI', manufacturer: 'ECOVACS', price: 64820, rating: 4.18 },
-    { id: 'deebot-t50s-omni', name: 'DEEBOT T50S OMNI', manufacturer: 'ECOVACS', price: 89800, rating: 3.86 },
-    { id: 'deebot-t80-omni', name: 'DEEBOT T80 OMNI', manufacturer: 'ECOVACS', price: 149800, rating: 4.46 },
+    { id: 'eufy-clean-x8-pro-with-self-empty-station', name: 'Eufy Clean X8 Pro with Self-Empty Station', manufacturer: 'Anker', price: 69990, rating: 4.14 },
+    { id: 'eufy-robot-vacuum-auto-empty-c10', name: 'Eufy Robot Vacuum Auto-Empty C10', manufacturer: 'Anker', price: 29990, rating: 4.37 },
+    { id: 'eufy-robot-vacuum-omni-c28', name: 'Eufy Robot Vacuum Omni C28', manufacturer: 'Anker', price: 79990, rating: 4.49 },
+    { id: 'eufy-robot-vacuum-omni-e25', name: 'Eufy Robot Vacuum Omni E25', manufacturer: 'Anker', price: 99980, rating: 4.27 },
+    { id: 'eufy-robot-vacuum-omni-s1-pro', name: 'Eufy Robot Vacuum Omni S1 Pro', manufacturer: 'Anker', price: 199900, rating: 4.19 },
+    { id: 'eufy-robot-vacuum-omni-s2', name: 'Eufy Robot Vacuum Omni S2', manufacturer: 'Anker', price: 199900, rating: 4.61 },
+    { id: 'eufy-robovac-g10-hybrid', name: 'Eufy RoboVac G10 Hybrid', manufacturer: 'Anker', price: 29990, rating: 3.28 },
+    { id: 'eufy-robovac-g30-hybrid', name: 'Eufy RoboVac G30 Hybrid', manufacturer: 'Anker', price: 39990, rating: 4.02 },
+    { id: 'eufy-x10-pro-omni', name: 'Eufy X10 Pro Omni', manufacturer: 'Anker', price: 49990, rating: 4.34 },
+    { id: 'd10-plus', name: 'D10 Plus', manufacturer: 'Dreame', price: 26900, rating: 4.4 },
+    { id: 'd20-ultra', name: 'D20 Ultra', manufacturer: 'Dreame', price: 49800, rating: 4.48 },
+    { id: 'd9-max-gen-2', name: 'D9 Max Gen 2', manufacturer: 'Dreame', price: 17800, rating: 4.31 },
+    { id: 'f20', name: 'F20', manufacturer: 'Dreame', price: 39800, rating: 3.89 },
+    { id: 'f20-plus', name: 'F20 Plus', manufacturer: 'Dreame', price: 59800, rating: 3.89 },
+    { id: 'l10s-ultra-gen-2', name: 'L10s Ultra Gen 2', manufacturer: 'Dreame', price: 58000, rating: 4.38 },
+    { id: 'l10s-ultra-gen-3', name: 'L10s Ultra Gen 3', manufacturer: 'Dreame', price: 69800, rating: 4.51 },
+    { id: 'l20-ultra-complete', name: 'L20 Ultra Complete', manufacturer: 'Dreame', price: 52000, rating: 4.43 },
+    { id: 'l40-ultra-ae', name: 'L40 Ultra AE', manufacturer: 'Dreame', price: 99800, rating: 4.15 },
+    { id: 'l40s-pro-ultra', name: 'L40s Pro Ultra', manufacturer: 'Dreame', price: 99800, rating: 4.33 },
+    { id: 'x30-ultra', name: 'X30 Ultra', manufacturer: 'Dreame', price: 69800, rating: 4.11 },
+    { id: 'x50-ultra', name: 'X50 Ultra', manufacturer: 'Dreame', price: 199800, rating: 4.55 },
+    { id: 'deebot-mini', name: 'DEEBOT mini', manufacturer: 'ECOVACS', price: 69800, rating: 3.79 },
+    { id: 'deebot-mini-2', name: 'DEEBOT mini 2', manufacturer: 'ECOVACS', price: 69800, rating: 4.12 },
+    { id: 'deebot-n30', name: 'DEEBOT N30', manufacturer: 'ECOVACS', price: 34800, rating: 4.32 },
+    { id: 'deebot-n30-plus', name: 'DEEBOT N30 PLUS', manufacturer: 'ECOVACS', price: 69800, rating: 4.38 },
+    { id: 'deebot-n50-omni', name: 'DEEBOT N50 OMNI', manufacturer: 'ECOVACS', price: 79800, rating: 4.39 },
+    { id: 'deebot-t50-omni', name: 'DEEBOT T50 OMNI', manufacturer: 'ECOVACS', price: 64820, rating: 4.23 },
+    { id: 'deebot-t50s-omni', name: 'DEEBOT T50S OMNI', manufacturer: 'ECOVACS', price: 89800, rating: 4.34 },
+    { id: 'deebot-t80-omni', name: 'DEEBOT T80 OMNI', manufacturer: 'ECOVACS', price: 149800, rating: 4.19 },
+    { id: 'deebot-t80s-omni', name: 'DEEBOT T80S OMNI', manufacturer: 'ECOVACS', price: 139800, rating: 3.84 },
     { id: 'deebot-t90-omni', name: 'DEEBOT T90 OMNI', manufacturer: 'ECOVACS', price: 149800, rating: 4.36 },
     { id: 'deebot-x11-omnicyclone', name: 'DEEBOT X11 OmniCyclone', manufacturer: 'ECOVACS', price: 229900, rating: 4.46 },
-    { id: 'deebot-x8-pro-omni', name: 'DEEBOT X8 PRO OMNI', manufacturer: 'ECOVACS', price: 199800, rating: 4.24 },
-    { id: 'deebot-mini', name: 'DEEBOT mini', manufacturer: 'ECOVACS', price: 69800, rating: 4.04 },
-    { id: 'q10p', name: 'Q10P+', manufacturer: 'Roborock', price: 41800, rating: 4.41 },
-    { id: 'q10v', name: 'Q10V', manufacturer: 'Roborock', price: 35999, rating: 4.14 },
-    { id: 'qrevo-curvc', name: 'Qrevo CurvC', manufacturer: 'Roborock', price: 146900, rating: 4.46 },
-    { id: 'saros-10r', name: 'Saros 10R', manufacturer: 'Roborock', price: 269800, rating: 4.44 },
-    { id: 's10', name: 'お掃除ロボットS10', manufacturer: 'SwitchBot', price: 119820, rating: 3.53 },
-    { id: 's20', name: 'お掃除ロボットS20', manufacturer: 'SwitchBot', price: 91800, rating: 4.14 },
-    { id: 'k10-pro', name: 'ロボット掃除機 K10+ Pro', manufacturer: 'SwitchBot', price: 64800, rating: 3.66 },
-    { id: 'k11', name: 'ロボット掃除機 K11+', manufacturer: 'SwitchBot', price: 59800, rating: 4.36 },
-    { id: 'roomba-105-combo-autoempty', name: 'Roomba® 105 Combo + AutoEmpty™', manufacturer: 'iRobot', price: 59200, rating: 3.94 },
-    { id: 'roomba-max-705-combo-autowash', name: 'Roomba® Max 705 Combo + AutoWash™', manufacturer: 'iRobot', price: 179800, rating: 3.91 },
-    { id: 'roomba-max-705-vac-autoempty', name: 'Roomba® Max 705 Vac + AutoEmpty™', manufacturer: 'iRobot', price: 98800, rating: 3.98 },
-    { id: 'roomba-mini-autoempty', name: 'Roomba® Mini + AutoEmpty™', manufacturer: 'iRobot', price: 49800, rating: 4.22 },
-    { id: 'roomba-mini-slim-slimcharge', name: 'Roomba® Mini Slim + SlimCharge™', manufacturer: 'iRobot', price: 39800, rating: 3.75 },
-    { id: 'roomba-plus-405-combo-autowash', name: 'Roomba® Plus 405 Combo + AutoWash™', manufacturer: 'iRobot', price: 98800, rating: 4.22 },
-    { id: 'roomba-plus-505-combo-autowash', name: 'Roomba® Plus 505 Combo + AutoWash™', manufacturer: 'iRobot', price: 128400, rating: 3.87 }
+    { id: 'deebot-x8-pro-omni', name: 'DEEBOT X8 PRO OMNI', manufacturer: 'ECOVACS', price: 199800, rating: 3.79 },
+    { id: 'q10p', name: 'Q10P+', manufacturer: 'Roborock', price: 89800, rating: 4.46 },
+    { id: 'q10v', name: 'Q10V', manufacturer: 'Roborock', price: 57999, rating: 4.24 },
+    { id: 'q10v-plus', name: 'Q10V+', manufacturer: 'Roborock', price: 79999, rating: 4.02 },
+    { id: 'qrevo-curv-2-flow', name: 'Qrevo Curv 2 Flow', manufacturer: 'Roborock', price: 119900, rating: 4.36 },
+    { id: 'qrevo-curvc', name: 'Qrevo CurvC', manufacturer: 'Roborock', price: 146900, rating: 4.24 },
+    { id: 'qrevo-l', name: 'Qrevo L', manufacturer: 'Roborock', price: 69800, rating: 4.51 },
+    { id: 'saros-10r', name: 'Saros 10R', manufacturer: 'Roborock', price: 199980, rating: 4.4 },
+    { id: 'saros-20', name: 'Saros 20', manufacturer: 'Roborock', price: 249800, rating: 4.8 },
+    { id: 'k10-pro', name: 'ロボット掃除機 K10+ Pro', manufacturer: 'SwitchBot', price: 64800, rating: 4.0 },
+    { id: 'k11', name: 'ロボット掃除機 K11+', manufacturer: 'SwitchBot', price: 37800, rating: 4.24 },
+    { id: 'k11-pro', name: 'ロボット掃除機 K11+ Pro', manufacturer: 'SwitchBot', price: 49800, rating: 3.77 },
+    { id: 'k20-pro', name: 'マルチタスク家庭用ロボットK20+ Pro', manufacturer: 'SwitchBot', price: 79840, rating: 3.66 },
+    { id: 's10', name: 'お掃除ロボットS10', manufacturer: 'SwitchBot', price: 54980, rating: 3.7 },
+    { id: 's20', name: 'お掃除ロボットS20', manufacturer: 'SwitchBot', price: 56980, rating: 4.15 },
+    { id: 'roomba-105-combo-autoempty', name: 'Roomba® 105 Combo + AutoEmpty™', manufacturer: 'iRobot', price: 59200, rating: 3.84 },
+    { id: 'roomba-max-705-combo-autowash', name: 'Roomba® Max 705 Combo + AutoWash™', manufacturer: 'iRobot', price: 179800, rating: 4.05 },
+    { id: 'roomba-max-705-vac-autoempty', name: 'Roomba® Max 705 Vac + AutoEmpty™', manufacturer: 'iRobot', price: 98800, rating: 4.11 },
+    { id: 'roomba-mini-autoempty', name: 'Roomba® Mini + AutoEmpty™', manufacturer: 'iRobot', price: 49800, rating: 3.98 },
+    { id: 'roomba-mini-slim-slimcharge', name: 'Roomba® Mini Slim + SlimCharge™', manufacturer: 'iRobot', price: 39800, rating: 3.79 },
+    { id: 'roomba-plus-405-combo-autowash', name: 'Roomba® Plus 405 Combo + AutoWash™', manufacturer: 'iRobot', price: 98800, rating: 4.24 },
+    { id: 'roomba-plus-505-combo-autowash', name: 'Roomba® Plus 505 Combo + AutoWash™', manufacturer: 'iRobot', price: 128400, rating: 4.33 },
+    { id: 'roomba-plus-575-combo-autowash', name: 'Roomba Plus 575 Combo + AutoWash', manufacturer: 'iRobot', price: 169800, rating: 4.16 }
 ];
 
 // メーカー一覧
@@ -559,7 +573,6 @@ function createFooter() {
                 <p style="margin: 0;"><strong>媒体名:</strong> ナットクLabo</p>
                 <p style="margin: 0;"><strong>運営組織:</strong> GBumps</p>
                 <p style="margin: 0;"><strong>運営管理責任者:</strong> 代表 岩田 直人</p>
-                <p style="margin: 0;"><strong>所在地:</strong> 東京都北区</p>
                 <p style="margin: 0;"><strong>お問い合わせ:</strong> <a href="https://nattoku-labo.com/privacy" style="color: #93c5fd; text-decoration: underline;">https://nattoku-labo.com/privacy</a></p>
                 <p style="margin: 0;"><strong>事業内容:</strong> 家電・ガジェットの比較分析メディア運営、Webライティング、コンテンツ制作</p>
             </div>
@@ -777,6 +790,7 @@ function createSiteExploreSection() {
                         <a class="site-explore-chip site-explore-chip-primary" href="/#productsContainer"><i class="fas fa-th" aria-hidden="true"></i>全製品一覧<span>${ALL_PRODUCTS.length}</span></a>
                         <a class="site-explore-chip site-explore-chip-primary" href="/rankings/"><i class="fas fa-trophy" aria-hidden="true"></i>ランキング</a>
                         <a class="site-explore-chip site-explore-chip-primary" href="/compare/"><i class="fas fa-table" aria-hidden="true"></i>徹底比較ハブ</a>
+                        <a class="site-explore-chip site-explore-chip-primary" href="/makers/"><i class="fas fa-industry" aria-hidden="true"></i>メーカー別全機種比較</a>
                         <a class="site-explore-chip" href="/about"><i class="fas fa-info-circle" aria-hidden="true"></i>サイトについて</a>
                         <a class="site-explore-chip" href="/privacy"><i class="fas fa-shield-alt" aria-hidden="true"></i>プライバシー</a>
                     </div>

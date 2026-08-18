@@ -286,10 +286,10 @@ function updateDynamicElements(data) {
                         <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.85rem; background: #f8fafc; border-radius: 8px; border-left: 3px solid #0284c7;">
                             <div style="flex: 1;">
                                 <p style="font-size: 0.95rem; font-weight: 600; color: #1e293b; margin-bottom: 0.25rem;">${item.item}</p>
-                                <p style="font-size: 0.8rem; color: #64748b; margin: 0;">交換頻度: ${item.replacementFrequency}</p>
+                                <p style="font-size: 0.8rem; color: #0f172a; margin: 0;">交換頻度: ${item.replacementFrequency}</p>
                             </div>
                             <div style="text-align: right;">
-                                <p style="font-size: 0.85rem; color: #64748b; margin-bottom: 0.25rem;">単価: ¥${item.unitCost.toLocaleString()}</p>
+                                <p style="font-size: 0.85rem; color: #0f172a; margin-bottom: 0.25rem;">単価: ¥${item.unitCost.toLocaleString()}</p>
                                 <p style="font-size: 0.95rem; font-weight: 700; color: #059669; margin: 0;">年間: ¥${item.annualCost.toLocaleString()}</p>
                             </div>
                         </div>
@@ -701,13 +701,13 @@ function updateOperationalCost(data) {
             const html = oc.consumables.map(item => `
                 <div class="consumable-item">
                     <div class="consumable-name">
-                        <i class="fas fa-box" style="color: #64748b; margin-right: 0.5rem;"></i>
+                        <i class="fas fa-box" style="color: #0f172a; margin-right: 0.5rem;"></i>
                         ${item.item}
                     </div>
                     <div class="consumable-details">
                         <span class="consumable-frequency">${item.replacementFrequency}</span>
                         <span class="consumable-cost">¥${item.unitCost.toLocaleString()}</span>
-                        <span style="color: #64748b; font-size: 0.8rem;">(年間 ¥${item.annualCost.toLocaleString()})</span>
+                        <span style="color: #0f172a; font-size: 0.8rem;">(年間 ¥${item.annualCost.toLocaleString()})</span>
                     </div>
                 </div>
             `).join('');
@@ -762,7 +762,7 @@ function updateSuccessStrategies(data) {
                             </div>
                         </div>
                         ${strategy.technicalLevelDescription ? `
-                            <p style="color: #64748b; font-size: 0.85rem; line-height: 1.6; margin: 0.5rem 0;">
+                            <p style="color: #0f172a; font-size: 0.85rem; line-height: 1.6; margin: 0.5rem 0;">
                                 <i class="fas fa-info-circle" style="color: #3b82f6;"></i>
                                 ${strategy.technicalLevelDescription}
                             </p>
@@ -1013,7 +1013,7 @@ function updateAttributeScores(data) {
                                 <span style="font-weight: 700; color: #1e293b;">${scoreIcon} ${item.attribute || item.field}</span>
                                 <span style="font-size: 1.3rem; font-weight: 900; color: ${scoreColor};">${score}</span>
                             </div>
-                            ${commentText ? `<p style="font-size: 0.85rem; color: #64748b; margin: 0; line-height: 1.5;">${commentText}</p>` : ''}
+                            ${commentText ? `<p style="font-size: 0.85rem; color: #0f172a; margin: 0; line-height: 1.5;">${commentText}</p>` : ''}
                         </div>
                     `;
                 }).join('');
@@ -1056,7 +1056,7 @@ function updateAttributeScores(data) {
                                 <span style="font-weight: 700; color: #1e293b;">${scoreIcon} ${field.label}</span>
                                 <span style="font-size: 1.3rem; font-weight: 900; color: ${scoreColor};">${score}</span>
                             </div>
-                            ${commentText ? `<p style="font-size: 0.85rem; color: #64748b; margin: 0; line-height: 1.5;">${commentText}</p>` : ''}
+                            ${commentText ? `<p style="font-size: 0.85rem; color: #0f172a; margin: 0; line-height: 1.5;">${commentText}</p>` : ''}
                         </div>
                     `;
                 }).filter(html => html !== '').join('');
@@ -1399,7 +1399,7 @@ function renderAffiliate(data) {
         if (sub) {
             sub.textContent = opts.subText || 'メーカー公式HP・各ECサイトから確認できます';
             sub.style.cssText =
-                'text-align:center; color:#64748b; font-size:0.92rem; font-weight:600; ' +
+                'text-align:center; color:#0f172a; font-size:0.92rem; font-weight:600; ' +
                 'margin:0; padding:0 1.15rem 1rem; line-height:1.55;';
         }
 

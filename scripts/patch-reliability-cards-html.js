@@ -31,7 +31,7 @@ function patch(s) {
   t = t.split("重要度 10%").join("10%");
 
   t = t.replace(
-    /(<span style="font-size: 2\.5rem; font-weight: 900; color: #0284c7;" data-dynamic="reliability\.dataAdequacy\.score">)(\d+)(<\/span>)\s*\r?\n\s*<span style="font-size: 1rem; color: #64748b; font-weight: 600;">\/ 100<\/span>/g,
+    /(<span style="font-size: 2\.5rem; font-weight: 900; color: #0284c7;" data-dynamic="reliability\.dataAdequacy\.score">)(\d+)(<\/span>)\s*\r?\n\s*<span style="font-size: 1rem; color: #0f172a; font-weight: 600;">\/ 100<\/span>/g,
     "$1$2%$3",
   );
   t = t.replace(
@@ -39,7 +39,7 @@ function patch(s) {
     "$1$2%$3",
   );
   t = t.replace(
-    /(<span style="font-size: 2\.5rem; font-weight: 900; color: #10b981;" data-dynamic="reliability\.freshness\.score">)(\d+)(<\/span>)\s*\r?\n\s*<span style="font-size: 1rem; color: #64748b; font-weight: 600;">\/ 100<\/span>/g,
+    /(<span style="font-size: 2\.5rem; font-weight: 900; color: #10b981;" data-dynamic="reliability\.freshness\.score">)(\d+)(<\/span>)\s*\r?\n\s*<span style="font-size: 1rem; color: #0f172a; font-weight: 600;">\/ 100<\/span>/g,
     "$1$2%$3",
   );
   return t;

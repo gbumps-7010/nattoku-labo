@@ -14,9 +14,10 @@
       "eufy-robovac-g30-hybrid",
       "roomba-mini-autoempty",
       "k11-pro",
+      "d20-ultra",
       "eufy-x10-pro-omni"
     ],
-    "count": 12
+    "count": 13
   },
   {
     "label": "5〜7万円",
@@ -76,13 +77,15 @@
     "label": "15〜20万円",
     "urlPath": "/compare/robot-vacuum-15-20man",
     "slugs": [
+      "roomba-plus-575-combo-autowash",
       "roomba-max-705-combo-autowash",
       "deebot-x8-pro-omni",
       "x50-ultra",
       "eufy-robot-vacuum-omni-s1-pro",
+      "eufy-robot-vacuum-omni-s2",
       "saros-10r"
     ],
-    "count": 5
+    "count": 7
   },
   {
     "label": "20万円〜",

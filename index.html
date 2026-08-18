@@ -21,7 +21,7 @@
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="/products/css/navigation.css?v=20260818g">
+    <link rel="stylesheet" href="/products/css/navigation.css?v=20260818i">
     
     <style>
         * {
@@ -199,6 +199,19 @@
             .header-nav-link.primary {
                 grid-column: 1 / -1;
                 font-size: 0.9rem;
+            }
+            .search-section {
+                margin: -0.35rem auto 2rem;
+                padding: 0 1rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body:has(#fixed-navigation) header {
+                padding: 1.75rem 0 2.75rem;
+            }
+            .search-section {
+                margin-top: -0.5rem;
             }
         }
         
@@ -945,7 +958,6 @@
                     <p style="margin: 0;"><strong>媒体名:</strong> ナットクLabo</p>
                     <p style="margin: 0;"><strong>運営組織:</strong> GBumps</p>
                     <p style="margin: 0;"><strong>運営管理責任者:</strong> 代表 岩田 直人</p>
-                    <p style="margin: 0;"><strong>所在地:</strong> 東京都北区</p>
                     <p style="margin: 0;"><strong>お問い合わせ:</strong> <a href="https://nattoku-labo.com/privacy" style="color: #93c5fd; text-decoration: underline;">https://nattoku-labo.com/privacy</a></p>
                     <p style="margin: 0;"><strong>事業内容:</strong> 家電・ガジェットの比較分析メディア運営、Webライティング、コンテンツ制作</p>
                 </div>
@@ -1180,6 +1192,6 @@
             loadAndInit();
         }
     </script>
-    <script src="/products/js/navigation.js?v=20260818g"></script>
+    <script src="/products/js/navigation.js?v=20260818k"></script>
 </body>
 </html>

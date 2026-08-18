@@ -55,11 +55,11 @@ hub = hub.replace(
 );
 
 const hubMetas = {
-  "/compare/robot-vacuum-under-5man": "この価格帯の全11製品を比較",
-  "/compare/robot-vacuum-5-7man": "この価格帯の全14製品を比較",
-  "/compare/robot-vacuum-7-10man": "この価格帯の全9製品を比較",
-  "/compare/robot-vacuum-10-15man": "この価格帯の全8製品を比較",
-  "/compare/robot-vacuum-15-20man": "この価格帯の全4製品を比較",
+  "/compare/robot-vacuum-under-5man": "この価格帯の全13製品を比較",
+  "/compare/robot-vacuum-5-7man": "この価格帯の全16製品を比較",
+  "/compare/robot-vacuum-7-10man": "この価格帯の全11製品を比較",
+  "/compare/robot-vacuum-10-15man": "この価格帯の全6製品を比較",
+  "/compare/robot-vacuum-15-20man": "この価格帯の全7製品を比較",
   "/compare/robot-vacuum-20man-plus": "この価格帯の全2製品を比較",
 };
 

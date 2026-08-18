@@ -16,7 +16,7 @@ const STYLE = `<style>
       --bg: #f8fafc;
       --card: #ffffff;
       --text: #1e293b;
-      --muted: #64748b;
+      --muted: #0f172a;
       --line: #e2e8f0;
       --good: #059669;
       --warn: #b45309;
@@ -204,7 +204,7 @@ const STYLE = `<style>
     .compare-nav-hint {
       font-size: 0.68rem;
       font-weight: 600;
-      color: #64748b;
+      color: #0f172a;
       text-align: center;
     }
     .compare-nav-track {
@@ -808,8 +808,9 @@ function listAllSlugs() {
           (typeof aff.moshimo === "string" && aff.moshimo.trim()) ||
             (typeof aff.direct === "string" && aff.direct.trim()),
         );
+        const hasPage = fs.existsSync(path.join(root, "products", `${slug}.html`));
         return (
-          aff.hpPublish === true &&
+          hasPage &&
           reviews > 0 &&
           String(p.imageUrl || "").trim() !== "" &&
           hasAff
@@ -1390,7 +1391,7 @@ function buildPage(band) {
   ${STYLE}
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="/products/css/navigation.css?v=20260818g">
+  <link rel="stylesheet" href="/products/css/navigation.css?v=20260818i">
   <script type="application/ld+json">
   ${JSON.stringify(itemListJson(band), null, 2)}
   </script>
@@ -1477,7 +1478,7 @@ function buildPage(band) {
   </footer>
   ${scrollHelperScript}
   ${affiliateInlineScript}
-  <script src="/products/js/navigation.js?v=20260818g"></script>
+  <script src="/products/js/navigation.js?v=20260818k"></script>
 </body>
 </html>
 `;

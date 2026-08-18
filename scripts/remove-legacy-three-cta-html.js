@@ -21,7 +21,7 @@ const MOSHI_SECTION = `        <!-- 購入案内: JSON の moshimoAffiliate* が
                 購入・価格のご案内
             </h2>
             <div class="nattoku-moshimo-slot" aria-live="polite"></div>
-            <p style="text-align: center; color: #64748b; font-size: 0.85rem; margin: 1.25rem 0 0 0; line-height: 1.6;">
+            <p style="text-align: center; color: #0f172a; font-size: 0.85rem; margin: 1.25rem 0 0 0; line-height: 1.6;">
                 💡 以下のカードから各ショップの<strong>価格・在庫・送料</strong>をご確認いただけます（もしもアフィリエイト）
             </p>
         </section>

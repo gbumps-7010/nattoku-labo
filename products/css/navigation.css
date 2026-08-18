@@ -223,12 +223,12 @@
     display: flex;
     gap: 0.75rem;
     font-size: 0.8rem;
-    color: #64748b;
+    color: #0f172a;
 }
 
 .product-meta .manufacturer {
     font-weight: 600;
-    color: #475569;
+    color: #0f172a;
     text-transform: none;
 }
 
@@ -256,7 +256,7 @@
 
 .product-count {
     font-size: 0.8rem;
-    color: #64748b;
+    color: #0f172a;
     font-weight: 500;
 }
 
@@ -475,7 +475,7 @@ body {
 .product-page-filter-field label {
     font-size: 0.72rem;
     font-weight: 700;
-    color: #475569;
+    color: #0f172a;
     letter-spacing: 0.02em;
 }
 
@@ -566,7 +566,7 @@ body {
     .product-page-filter-toggle-hint {
         font-size: 0.78rem;
         font-weight: 700;
-        color: #64748b;
+        color: #0f172a;
     }
 
     .product-page-filter-bar.is-collapsed .product-page-filter-panel {
@@ -632,7 +632,7 @@ body {
     margin: 0;
     font-size: 0.95rem;
     line-height: 1.6;
-    color: #475569;
+    color: #0f172a;
 }
 
 .site-explore-filter {
@@ -659,7 +659,7 @@ body {
     font-size: 0.82rem;
     font-weight: 800;
     letter-spacing: 0.04em;
-    color: #334155;
+    color: #0f172a;
     text-transform: none;
 }
 
@@ -699,7 +699,7 @@ body {
     padding: 0 0.35rem;
     border-radius: 999px;
     background: #e2e8f0;
-    color: #334155;
+    color: #0f172a;
     font-size: 0.72rem;
     font-weight: 800;
 }
@@ -789,7 +789,7 @@ body.nav-mobile-open::before {
 .related-subtitle {
     font-size: 1.3rem;
     font-weight: 600;
-    color: #334155;
+    color: #0f172a;
     margin-bottom: 1.5rem;
     display: flex;
     align-items: center;
@@ -836,7 +836,7 @@ body.nav-mobile-open::before {
 .related-manufacturer {
     font-size: 0.85rem;
     font-weight: 600;
-    color: #64748b;
+    color: #0f172a;
     margin-bottom: 0.4rem;
     /* 全メーカー products-data / JSON の表記（Roborock, ECOVACS, Anker, Dreame, SwitchBot, iRobot 等）をそのまま表示 */
     text-transform: none;
@@ -1224,7 +1224,7 @@ body:has(#fixed-navigation) .reliability-weight-badge {
 }
 
 body:has(#fixed-navigation) .reliability-intro-text {
-    color: #334155;
+    color: #0f172a;
     font-size: 0.95rem;
     line-height: 1.75;
     margin-bottom: 2rem;
@@ -1279,7 +1279,7 @@ body:has(#fixed-navigation) .container {
     font-size: 0.86rem;
     line-height: 1.75;
     font-weight: 500;
-    color: #64748b;
+    color: #0f172a;
     background: #f8fafc;
     border: 1px solid #e2e8f0;
     border-radius: 10px;
@@ -1381,7 +1381,7 @@ body:has(#fixed-navigation) .header-content {
     margin: 0;
     font-size: 0.8rem;
     line-height: 1.5;
-    color: #64748b;
+    color: #0f172a;
 }
 
 .reliability-factor-score {
@@ -1403,14 +1403,14 @@ body:has(#fixed-navigation) .header-content {
 .reliability-factor-denom {
     font-size: 1rem;
     font-weight: 600;
-    color: #64748b;
+    color: #0f172a;
 }
 
 .reliability-factor-desc {
     margin: 0;
     font-size: 0.9rem;
     line-height: 1.6;
-    color: #64748b;
+    color: #0f172a;
 }
 
 /* SEOタイトルH1: 「｜」単位でのみ改行し、ブロック内は折り返さない（PC/スマホ共通） */
@@ -1566,4 +1566,16 @@ body:has(#fixed-navigation) h1.product-title .product-title-sep {
 
 .dropdown-menu::-webkit-scrollbar-thumb:hover {
     background: #94a3b8;
+}
+
+/* グレー背景上の薄いグレー文字を黒に揃える（ナビ／ヒーロー／フッターの白文字は対象外） */
+body {
+    --muted: #0f172a;
+    --gray-500: #0f172a;
+    --gray-600: #0f172a;
+    --gray-700: #0f172a;
+}
+html body [style*="color: #64748b"],
+html body [style*="color:#64748b"] {
+    color: #0f172a !important;
 }

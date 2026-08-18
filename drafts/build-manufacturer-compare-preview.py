@@ -11,7 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "products" / "data"
 OUT_DIR = ROOT / "makers"
-NAV_V = "20260818g"
+NAV_V = "20260818k"
 SITE = "https://nattoku-labo.com"
 WF, WR = 0.85, 0.15
 
@@ -1158,7 +1158,7 @@ def build_manufacturer_page(meta: dict) -> Path:
   <style>
     :root {{
       --primary:#1e40af; --secondary:#0f172a; --bg:#f1f5f9; --card:#fff;
-      --text:#1e293b; --muted:#64748b; --line:#e2e8f0; --good:#059669;
+      --text:#1e293b; --muted:#0f172a; --line:#e2e8f0; --good:#059669;
     }}
     * {{ box-sizing:border-box; margin:0; padding:0; }}
     html {{ scroll-behavior:smooth; }}
@@ -1260,7 +1260,7 @@ def build_manufacturer_page(meta: dict) -> Path:
       margin:0 0 1rem; min-height:2rem;
     }}
     .aff-status {{
-      margin:0; font-size:.84rem; color:#64748b; font-weight:600;
+      margin:0; font-size:.84rem; color:#0f172a; font-weight:600;
     }}
     .aff-status.error {{ color:#b45309; }}
     .aff-moshimo {{
@@ -1305,7 +1305,7 @@ def build_manufacturer_page(meta: dict) -> Path:
       background:#dbeafe; color:#1e40af; border:1px solid #93c5fd;
     }}
     .price-caution {{
-      margin:0; font-size:.8rem; line-height:1.65; color:#64748b; font-weight:600;
+      margin:0; font-size:.8rem; line-height:1.65; color:#0f172a; font-weight:600;
     }}
     .price-caution strong {{
       color:#b45309; font-weight:900;
@@ -1407,7 +1407,7 @@ def build_manufacturer_page(meta: dict) -> Path:
       font-size:1.15rem; font-weight:900; margin:0 0 .45rem; color:var(--secondary);
     }}
     .table-chapter .sec-lead {{
-      margin:0 0 .85rem; font-size:.88rem; color:#64748b;
+      margin:0 0 .85rem; font-size:.88rem; color:#0f172a;
     }}
     .swipe-hint {{
       margin:0 0 .45rem; text-align:center;
@@ -1629,7 +1629,7 @@ def build_index_page(counts: dict[str, int]) -> Path:
     }}
     .maker-card:hover {{ border-color:#93c5fd; box-shadow:0 4px 14px rgba(30,64,175,.12); }}
     .maker-card-name {{ font-weight:900; font-size:1.02rem; color:#0f172a; }}
-    .maker-card-meta {{ font-size:.86rem; color:#64748b; font-weight:700; }}
+    .maker-card-meta {{ font-size:.86rem; color:#0f172a; font-weight:700; }}
   </style>
   <script type="application/ld+json">
   {{

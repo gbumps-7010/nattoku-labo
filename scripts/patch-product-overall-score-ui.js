@@ -62,7 +62,7 @@ const SCORE_HERO_CSS = `        .score-hero {
             margin-top: 0.15rem;
             font-size: 0.72rem;
             font-weight: 800;
-            color: #64748b;
+            color: #0f172a;
         }
 
         .score-break {

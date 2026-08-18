@@ -16,7 +16,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="/products/css/navigation.css?v=20260818g">
+  <link rel="stylesheet" href="/products/css/navigation.css?v=20260818k">
   <style>
 :root {
   --primary: #1e40af;
@@ -24,7 +24,7 @@
   --bg: #f8fafc;
   --card: #fff;
   --text: #1e293b;
-  --muted: #64748b;
+  --muted: #0f172a;
   --line: #e2e8f0;
   --excellent: #059669;
   --good: #0284c7;
@@ -171,23 +171,116 @@ footer.page-footer a:hover { text-decoration: underline; }
 }
 .table-head h2 { font-size: 1.05rem; }
 .table-head span { font-size: 0.8rem; color: var(--muted); }
-.swipe-hint {
-  display: none;
-  margin: 0 1rem 0.65rem;
-  padding: 0.4rem 0.65rem;
+.rank-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 0.75rem 0.85rem 0.65rem;
+  padding: 0.45rem 0.5rem;
   background: #eff6ff;
-  border: 1px solid #bfdbfe;
-  border-radius: 8px;
-  color: #1e40af;
-  font-size: 0.78rem;
-  font-weight: 700;
+  border: 1px solid #93c5fd;
+  border-radius: 12px;
 }
-@media (max-width: 760px) { .swipe-hint { display: block; } }
+.rank-nav-btn {
+  flex-shrink: 0;
+  width: 2.4rem;
+  height: 2.4rem;
+  border: 1px solid #93c5fd;
+  border-radius: 10px;
+  background: #fff;
+  color: #1e40af;
+  font-size: 0.95rem;
+  font-weight: 900;
+  line-height: 1;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.rank-nav-btn:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+.rank-nav-btn:not(:disabled):active { background: #dbeafe; }
+.rank-nav-meta {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.rank-nav-pos {
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: #1e40af;
+  text-align: center;
+}
+.rank-nav-hint {
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: #0f172a;
+  text-align: center;
+  line-height: 1.45;
+}
+.rank-nav-track {
+  position: relative;
+  height: 6px;
+  border-radius: 999px;
+  background: #bfdbfe;
+  overflow: hidden;
+  cursor: pointer;
+}
+.rank-nav-thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 18%;
+  border-radius: 999px;
+  background: #2563eb;
+  pointer-events: none;
+}
+.scroll-stage {
+  position: relative;
+  margin: 0 0.65rem 0.75rem;
+  border: 1.5px solid #93c5fd;
+  border-radius: 12px;
+  background: #fff;
+  overflow: hidden;
+}
+.scroll-stage::before,
+.scroll-stage::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1.35rem;
+  pointer-events: none;
+  z-index: 4;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+.scroll-stage::before {
+  top: 0;
+  background: linear-gradient(to bottom, rgba(30, 64, 175, 0.16), transparent);
+}
+.scroll-stage::after {
+  bottom: 0;
+  background: linear-gradient(to top, rgba(30, 64, 175, 0.22), transparent);
+}
+.scroll-stage.can-up::before { opacity: 1; }
+.scroll-stage.can-down::after { opacity: 1; }
 .scroll {
   overflow: auto;
   max-height: 42rem;
+  overscroll-behavior: contain;
   -webkit-overflow-scrolling: touch;
-  border-radius: 0 0 14px 14px;
+  scrollbar-gutter: stable;
+  scrollbar-width: auto;
+}
+.scroll:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: -2px;
 }
 table { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 0.88rem; min-width: 720px; }
 th, td { padding: 0.75rem 0.85rem; text-align: left; border-bottom: 1px solid #f1f5f9; vertical-align: middle; }
@@ -674,8 +767,17 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
           <h2>全機種ランキング</h2>
           <span>各製品にフローリング清掃の口コミコメント付き</span>
         </div>
-        <p class="swipe-hint">← 表は横にスワイプできます →</p>
-        <div class="scroll">
+        <div class="rank-nav" role="group" aria-label="ランキング表のスクロール">
+          <button type="button" class="rank-nav-btn" data-dir="-1" aria-label="表を上へ">▲</button>
+          <div class="rank-nav-meta">
+            <div class="rank-nav-pos">先頭5製品を表示</div>
+            <div class="rank-nav-track" aria-hidden="true"><div class="rank-nav-thumb"></div></div>
+            <div class="rank-nav-hint">表の中を上下に動かすと続きの順位が出ます。ページ全体は表の外をスクロールしてください</div>
+          </div>
+          <button type="button" class="rank-nav-btn" data-dir="1" aria-label="表を下へ">▼</button>
+        </div>
+        <div class="scroll-stage" id="rank-scroll-stage">
+        <div class="scroll" tabindex="0" aria-label="全機種ランキング表">
           <table id="ranking-table">
             <thead>
               <tr>
@@ -1902,6 +2004,7 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
             </tbody>
           </table>
         </div>
+        </div>
         <p class="empty-msg" id="empty-msg">この価格帯に該当する製品はありません。</p>
       </section>
 
@@ -2161,9 +2264,9 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
       <a href="/compare/">徹底比較</a>
       <a href="/about">サイトについて</a>
     </div>
-    <p style="margin-top:0.65rem">ナットクLabo · 更新 2026-08-15</p>
+    <p style="margin-top:0.65rem">ナットクLabo · 更新 2026-08-19</p>
   </footer>
-  <script src="/products/js/navigation.js?v=20260818g"></script>
+  <script src="/products/js/navigation.js?v=20260818k"></script>
   <script>
 (function () {
   const chips = document.querySelectorAll(".filter-chip");
@@ -2172,14 +2275,66 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
   const emptyEl = document.getElementById("empty-msg");
   const table = document.getElementById("ranking-table");
   const scroll = document.querySelector(".table-wrap .scroll");
+  const stage = document.getElementById("rank-scroll-stage");
+  const prevBtn = document.querySelector('.rank-nav-btn[data-dir="-1"]');
+  const nextBtn = document.querySelector('.rank-nav-btn[data-dir="1"]');
+  const posEl = document.querySelector(".rank-nav-pos");
+  const track = document.querySelector(".rank-nav-track");
+  const thumb = document.querySelector(".rank-nav-thumb");
   const thead = table ? table.querySelector("thead") : null;
+
+  function visibleRankRows() {
+    if (!table) return [];
+    return Array.from(table.querySelectorAll("tbody tr.rank-row"))
+      .filter(function (row) { return row.style.display !== "none"; });
+  }
+
+  function updateRankNav() {
+    if (!scroll) return;
+    const max = Math.max(0, scroll.scrollHeight - scroll.clientHeight);
+    const top = scroll.scrollTop;
+    const canUp = top > 2;
+    const canDown = top < max - 2;
+    if (stage) {
+      stage.classList.toggle("can-up", canUp);
+      stage.classList.toggle("can-down", canDown);
+    }
+    if (prevBtn) prevBtn.disabled = !canUp;
+    if (nextBtn) nextBtn.disabled = !canDown;
+    if (thumb) {
+      if (max <= 0) {
+        thumb.style.width = "100%";
+        thumb.style.left = "0%";
+      } else {
+        const ratio = Math.min(1, scroll.clientHeight / Math.max(scroll.scrollHeight, 1));
+        const thumbW = Math.max(12, Math.round(ratio * 100));
+        const left = (top / max) * (100 - thumbW);
+        thumb.style.width = thumbW + "%";
+        thumb.style.left = left + "%";
+      }
+    }
+    const ranks = visibleRankRows();
+    if (posEl && ranks.length) {
+      const box = scroll.getBoundingClientRect();
+      const inView = ranks.filter(function (row) {
+        const b = row.getBoundingClientRect();
+        return b.bottom > box.top + 10 && b.top < box.bottom - 10;
+      });
+      const shown = inView.length ? inView : ranks.slice(0, 1);
+      const first = shown[0].getAttribute("data-rank") || "1";
+      const last = shown[shown.length - 1].getAttribute("data-rank") || first;
+      posEl.textContent = first === last
+        ? first + "位を表示 · 全" + ranks.length + "製品"
+        : first + "〜" + last + "位を表示 · 全" + ranks.length + "製品";
+    }
+  }
 
   function fitFiveProducts() {
     if (!scroll || !table || !thead) return;
-    const visibleRanks = Array.from(table.querySelectorAll("tbody tr.rank-row"))
-      .filter(function (row) { return row.style.display !== "none"; });
+    const visibleRanks = visibleRankRows();
     if (!visibleRanks.length) {
       scroll.style.maxHeight = "";
+      updateRankNav();
       return;
     }
     const n = Math.min(5, visibleRanks.length);
@@ -2199,6 +2354,7 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
     } else if (prevMax) {
       scroll.style.maxHeight = prevMax;
     }
+    updateRankNav();
   }
 
   function applyFilter(min, max) {
@@ -2225,6 +2381,32 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
       applyFilter(min, max);
     });
   });
+
+  if (scroll) {
+    scroll.addEventListener("scroll", updateRankNav, { passive: true });
+  }
+  if (prevBtn) {
+    prevBtn.addEventListener("click", function () {
+      if (!scroll) return;
+      scroll.scrollBy({ top: -Math.max(120, scroll.clientHeight * 0.92), behavior: "smooth" });
+    });
+  }
+  if (nextBtn) {
+    nextBtn.addEventListener("click", function () {
+      if (!scroll) return;
+      scroll.scrollBy({ top: Math.max(120, scroll.clientHeight * 0.92), behavior: "smooth" });
+    });
+  }
+  if (track && thumb) {
+    track.addEventListener("click", function (ev) {
+      if (!scroll) return;
+      const max = Math.max(0, scroll.scrollHeight - scroll.clientHeight);
+      if (max <= 0) return;
+      const rect = track.getBoundingClientRect();
+      const ratio = Math.min(1, Math.max(0, (ev.clientX - rect.left) / rect.width));
+      scroll.scrollTo({ top: ratio * max, behavior: "smooth" });
+    });
+  }
 
   window.addEventListener("resize", function () { requestAnimationFrame(fitFiveProducts); });
   if (document.fonts && document.fonts.ready) {
