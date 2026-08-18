@@ -1792,6 +1792,13 @@
           '[id^="msmaflink-"] *{max-width:100%!important;min-width:0}' +
           '[id^="msmaflink-"] table{width:100%!important;table-layout:fixed}' +
           '[id^="msmaflink-"] img{height:auto!important;object-fit:contain}' +
+          "@media screen and (max-width:480px){" +
+          "div.easyLink-box{display:block!important;width:100%!important;max-width:100%!important}" +
+          "div.easyLink-box div.easyLink-img,div.easyLink-box div.easyLink-img p.easyLink-img-box{" +
+          "width:min(220px,100%)!important;min-width:0!important;max-width:100%!important;margin:0 auto 12px!important}" +
+          "div.easyLink-box div.easyLink-info,div.easyLink-box div.easyLink-info p.easyLink-info-btn a{" +
+          "width:100%!important;max-width:100%!important;min-width:0!important}" +
+          "}" +
           "</style></head><body>" +
           safe +
           "</body></html>";

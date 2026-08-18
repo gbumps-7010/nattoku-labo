@@ -146,12 +146,11 @@
     }
     .aff-status.error { color:#b45309; }
     .aff-moshimo {
-      display:block; width:100% !important; max-width:100%; min-width:0;
-      border:0; background:transparent; overflow-x:auto; overflow-y:hidden;
-      -webkit-overflow-scrolling:touch; overscroll-behavior-x:contain;
+      display:block; width:100%; max-width:100%; min-width:0;
+      border:0; background:transparent; overflow:hidden;
     }
     .aff-moshimo iframe {
-      border:0; display:block; max-width:100%;
+      width:100%; max-width:100%; min-width:0; border:0; display:block;
     }
     .aff-direct {
       margin:.55rem 0 0;
@@ -2091,72 +2090,70 @@
     const iframe = document.createElement("iframe");
     iframe.title = "価格・購入先（もしもアフィリエイト）";
     iframe.setAttribute("scrolling", "no");
-    // もしもは viewport<704px で縦レイアウトになるため、iframe内viewportをPC幅に固定。
-    // かんたんリンクのHTML/URL自体は変更しない。枠はもともとの easyLink-box 黒枠に合わせる。
+    // かんたんリンクのHTML/URL自体は変更しない。スマホでは製品ページと同じく枠内に収める。
     iframe.srcdoc =
       '<!DOCTYPE html><html><head><meta charset="utf-8">' +
-      '<meta name="viewport" content="width=830">' +
+      '<meta name="viewport" content="width=device-width,initial-scale=1">' +
       '<base target="_blank" rel="noopener noreferrer">' +
       "<style>" +
       "*,*::before,*::after{box-sizing:border-box}" +
-      "html,body{margin:0;padding:0;background:transparent;color:#0f172a;overflow:hidden}" +
-      "body{display:inline-block;min-width:0}" +
-      '[id^="msmaflink-"]{display:inline-block;margin:0;max-width:830px}' +
-      /* PC横長レイアウトを強制（黒枠= easyLink-box のサイズに追従） */
-      "div.easyLink-box{" +
-      "display:flex!important;flex-direction:row!important;flex-wrap:nowrap!important;" +
-      "align-items:stretch!important;max-width:830px!important;width:max-content!important;" +
-      "min-width:560px!important;box-sizing:border-box!important;margin:0!important}" +
-      "div.easyLink-box div.easyLink-img{" +
-      "margin-right:20px!important;height:240px!important;position:relative!important;" +
-      "flex:0 0 240px!important;width:240px!important;min-width:240px!important;max-width:240px!important}" +
-      "div.easyLink-box div.easyLink-img::before{display:none!important;padding-top:0!important;content:none!important}" +
+      "html,body{width:100%;max-width:100%;min-width:0;margin:0;padding:0;background:#fff;color:#0f172a;overflow-x:hidden}" +
+      "body{display:block}" +
+      '[id^="msmaflink-"]{width:100%!important;max-width:100%!important;min-width:0!important}' +
+      "div.easyLink-box{width:100%!important;max-width:100%!important;min-width:0!important;box-sizing:border-box!important}" +
+      "div.easyLink-box div.easyLink-img," +
       "div.easyLink-box div.easyLink-img p.easyLink-img-box{" +
-      "width:240px!important;height:240px!important;display:flex!important;" +
-      "justify-content:center!important;align-items:center!important;" +
-      "margin:0!important;flex:0 0 240px!important}" +
+      "width:240px!important;min-width:240px!important;max-width:240px!important;" +
+      "height:240px!important;flex:0 0 240px!important;flex-shrink:0!important;" +
+      "margin-right:16px!important;box-sizing:border-box!important}" +
+      "div.easyLink-box div.easyLink-img::before{display:none!important;padding-top:0!important;content:none!important}" +
       "div.easyLink-box div.easyLink-img p.easyLink-img-box span{" +
       "width:240px!important;height:240px!important}" +
       "div.easyLink-box div.easyLink-img p.easyLink-img-box span>img," +
       "div.easyLink-box img.js-item-image{" +
       "max-width:240px!important;max-height:240px!important;" +
-      "width:auto!important;height:auto!important;object-fit:contain!important}" +
-      "div.easyLink-box div.easyLink-info{" +
-      "width:auto!important;flex:1 1 auto!important;min-width:280px!important}" +
-      "div.easyLink-box div.easyLink-info p.easyLink-info-btn{" +
-      "margin-top:20px!important;display:flex!important;flex-wrap:wrap!important;" +
-      "justify-content:flex-start!important;gap:10px!important}" +
-      "div.easyLink-box div.easyLink-info p.easyLink-info-btn a{" +
-      "width:280px!important;max-width:100%!important}" +
+      "width:auto!important;height:auto!important;min-width:0!important;object-fit:contain!important}" +
+      "@media screen and (max-width:480px){" +
+      "div.easyLink-box{display:block!important}" +
+      "div.easyLink-box div.easyLink-img," +
+      "div.easyLink-box div.easyLink-img p.easyLink-img-box{" +
+      "width:min(220px,100%)!important;min-width:0!important;max-width:100%!important;" +
+      "height:auto!important;aspect-ratio:1!important;flex-basis:auto!important;margin:0 auto 12px!important}" +
+      "div.easyLink-box div.easyLink-img p.easyLink-img-box span{width:100%!important;height:auto!important;aspect-ratio:1!important}" +
+      "div.easyLink-box div.easyLink-img p.easyLink-img-box span>img," +
+      "div.easyLink-box img.js-item-image{max-width:100%!important;max-height:220px!important}" +
+      "div.easyLink-box div.easyLink-info{min-width:0!important;width:100%!important}" +
+      "div.easyLink-box div.easyLink-info p.easyLink-info-btn a{width:100%!important;max-width:100%!important;min-width:0!important}" +
+      "}" +
       "</style></head><body>" +
       safe +
       "</body></html>";
-    iframe.style.cssText = "border:0;display:block;background:transparent;";
+    iframe.style.cssText = "width:100%;max-width:100%;min-width:0;border:0;display:block;";
 
-    function fitToBlackBox() {
+    function fitHeight() {
       try {
         const d = iframe.contentDocument;
         if (!d || !d.body) return;
-        const box =
-          d.querySelector("div.easyLink-box") ||
-          d.querySelector('[id^="msmaflink-"]') ||
-          d.body;
-        const r = box.getBoundingClientRect();
-        const w = Math.max(Math.ceil(r.width), box.offsetWidth || 0, 560);
-        const h = Math.max(Math.ceil(r.height), box.offsetHeight || 0, 120);
-        iframe.style.width = w + "px";
-        iframe.style.height = h + "px";
-        container.style.width = "100%";
-        container.style.maxWidth = "100%";
+        const mount = d.querySelector('[id^="msmaflink-"]') || d.body;
+        const r = mount.getBoundingClientRect();
+        let h = Math.max(Math.ceil(r.height), mount.offsetHeight || 0, mount.scrollHeight || 0);
+        if (!h) {
+          h = Math.max(
+            d.documentElement ? d.documentElement.scrollHeight : 0,
+            d.body.scrollHeight,
+          );
+        }
+        h = Math.min(Math.max(h, 120), 1200);
+        iframe.style.height = Math.ceil(h + 12) + "px";
       } catch (e) {}
     }
 
     iframe.addEventListener("load", function () {
-      fitToBlackBox();
-      const id = window.setInterval(fitToBlackBox, 400);
+      fitHeight();
+      const id = window.setInterval(fitHeight, 400);
       window.setTimeout(function () { window.clearInterval(id); }, 12000);
     });
-    window.addEventListener("resize", fitToBlackBox);
+    window.addEventListener("resize", fitHeight);
     container.appendChild(iframe);
   }
 
