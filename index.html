@@ -21,7 +21,7 @@
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="/products/css/navigation.css?v=20260818f">
+    <link rel="stylesheet" href="/products/css/navigation.css?v=20260818g">
     
     <style>
         * {
@@ -167,9 +167,9 @@
             .logo-text {
                 display: flex;
                 flex-direction: column;
-                align-items: flex-start;
+                align-items: center;
                 gap: 0.12rem;
-                text-align: left;
+                text-align: center;
             }
             .logo-catch,
             .logo-name {
@@ -178,11 +178,27 @@
             }
             .tagline { font-size: 0.95rem; padding: 0 0.5rem; }
             .header-content { padding: 0 1rem; }
-            .header-nav { gap: 0.45rem; }
+            .header-nav {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 0.5rem;
+                width: 100%;
+                max-width: 420px;
+                margin: 1.15rem auto 0;
+            }
             .header-nav-link {
-                padding: 0.55rem 0.85rem;
-                font-size: 0.84rem;
-                min-height: 42px;
+                width: 100%;
+                justify-content: center;
+                text-align: center;
+                padding: 0.7rem 0.7rem;
+                font-size: 0.82rem;
+                min-height: 48px;
+                line-height: 1.35;
+                white-space: normal;
+            }
+            .header-nav-link.primary {
+                grid-column: 1 / -1;
+                font-size: 0.9rem;
             }
         }
         
@@ -1164,6 +1180,6 @@
             loadAndInit();
         }
     </script>
-    <script src="/products/js/navigation.js?v=20260818f"></script>
+    <script src="/products/js/navigation.js?v=20260818g"></script>
 </body>
 </html>

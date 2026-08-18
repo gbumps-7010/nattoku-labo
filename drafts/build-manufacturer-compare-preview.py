@@ -11,7 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "products" / "data"
 OUT_DIR = ROOT / "makers"
-NAV_V = "20260818f"
+NAV_V = "20260818g"
 SITE = "https://nattoku-labo.com"
 WF, WR = 0.85, 0.15
 

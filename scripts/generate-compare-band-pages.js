@@ -1390,7 +1390,7 @@ function buildPage(band) {
   ${STYLE}
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="/products/css/navigation.css?v=20260818f">
+  <link rel="stylesheet" href="/products/css/navigation.css?v=20260818g">
   <script type="application/ld+json">
   ${JSON.stringify(itemListJson(band), null, 2)}
   </script>
@@ -1477,7 +1477,7 @@ function buildPage(band) {
   </footer>
   ${scrollHelperScript}
   ${affiliateInlineScript}
-  <script src="/products/js/navigation.js?v=20260818f"></script>
+  <script src="/products/js/navigation.js?v=20260818g"></script>
 </body>
 </html>
 `;

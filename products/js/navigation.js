@@ -113,6 +113,38 @@ function isMakerCompareActive(href) {
     return path === target || path === target + '.html';
 }
 
+function buildCompareDropdownItemsHtml() {
+    const makerItems = MAKER_COMPARE_PAGES.map((m) => {
+        const active = isMakerCompareActive(m.href) ? 'active' : '';
+        return `
+                            <a href="${m.href}" class="dropdown-item ${active}">
+                                <span class="price-label">${m.label}</span>
+                            </a>`;
+    }).join('');
+    const bandItems = COMPARE_BANDS.map((b) => {
+        const count = (b.min == null)
+            ? ALL_PRODUCTS.length
+            : ALL_PRODUCTS.filter((p) => p.price >= b.min && p.price < b.max).length;
+        return `
+                            <a href="${b.href}" class="dropdown-item">
+                                <span class="price-label">${b.label}</span>
+                                <span class="product-count">(${count}製品)</span>
+                            </a>`;
+    }).join('');
+    return `
+                        <div class="dropdown-heading">メーカー別全機種比較</div>
+                        ${makerItems}
+                        <div class="dropdown-heading">価格別比較</div>
+                        ${bandItems}`;
+}
+
+function syncDropdownAria() {
+    document.querySelectorAll('.dropdown-toggle').forEach((toggle) => {
+        const dropdown = toggle.closest('.nav-dropdown');
+        toggle.setAttribute('aria-expanded', dropdown?.classList.contains('open') ? 'true' : 'false');
+    });
+}
+
 /**
  * 固定ナビゲーションバーを作成
  */
@@ -135,10 +167,16 @@ function createNavigationBar() {
                     <i class="fas fa-trophy"></i>
                     <span>ランキング</span>
                 </a>
-                <a href="/compare/" class="nav-quick-link">
-                    <i class="fas fa-table"></i>
-                    <span>徹底比較</span>
-                </a>
+                <div class="nav-dropdown nav-quick-dropdown">
+                    <button type="button" class="nav-quick-link dropdown-toggle" aria-expanded="false" aria-haspopup="true" aria-controls="nav-quick-compare-menu">
+                        <i class="fas fa-table"></i>
+                        <span>徹底比較</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div id="nav-quick-compare-menu" class="dropdown-menu compare-dropdown">
+                        ${buildCompareDropdownItemsHtml()}
+                    </div>
+                </div>
                 <a href="/about" class="nav-quick-link nav-quick-link-secondary">
                     <i class="fas fa-info-circle"></i>
                     <span>サイトについて</span>
@@ -223,25 +261,7 @@ function createNavigationBar() {
                         <i class="fas fa-table"></i> 徹底比較 <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="dropdown-menu compare-dropdown">
-                        <div class="dropdown-heading">メーカー別全機種比較</div>
-                        ${MAKER_COMPARE_PAGES.map(m => {
-                            const active = isMakerCompareActive(m.href) ? 'active' : '';
-                            return `
-                            <a href="${m.href}" class="dropdown-item ${active}">
-                                <span class="price-label">${m.label}</span>
-                            </a>`;
-                        }).join('')}
-                        <div class="dropdown-heading">価格別比較</div>
-                        ${COMPARE_BANDS.map(b => {
-                            const count = (b.min == null)
-                                ? ALL_PRODUCTS.length
-                                : ALL_PRODUCTS.filter(p => p.price >= b.min && p.price < b.max).length;
-                            return `
-                            <a href="${b.href}" class="dropdown-item">
-                                <span class="price-label">${b.label}</span>
-                                <span class="product-count">(${count}製品)</span>
-                            </a>`;
-                        }).join('')}
+                        ${buildCompareDropdownItemsHtml()}
                     </div>
                 </div>
 
@@ -290,7 +310,11 @@ function setupNavigationEvents() {
             // 現在のドロップダウンをトグル
             if (!isOpen) {
                 dropdown.classList.add('open');
+                if (dropdown.classList.contains('nav-quick-dropdown')) {
+                    setMobileNavOpen(false);
+                }
             }
+            syncDropdownAria();
         });
     });
     
@@ -327,7 +351,10 @@ function setupNavigationEvents() {
     
     // 外側クリックでドロップダウンを閉じる・モバイルメニューを閉じる
     document.addEventListener('click', (e) => {
-        document.querySelectorAll('.nav-dropdown').forEach(d => d.classList.remove('open'));
+        if (!e.target.closest('.nav-dropdown.open')) {
+            document.querySelectorAll('.nav-dropdown').forEach(d => d.classList.remove('open'));
+            syncDropdownAria();
+        }
         const navMenu = document.querySelector('.nav-menu');
         const mobileToggle = document.querySelector('.mobile-menu-toggle');
         if (navMenu && mobileToggle && navMenu.classList.contains('mobile-open')) {
@@ -339,6 +366,8 @@ function setupNavigationEvents() {
 
     document.addEventListener('keydown', (e) => {
         if (e.key !== 'Escape') return;
+        document.querySelectorAll('.nav-dropdown.open').forEach((d) => d.classList.remove('open'));
+        syncDropdownAria();
         const navMenu = document.querySelector('.nav-menu');
         if (navMenu?.classList.contains('mobile-open')) {
             setMobileNavOpen(false);
@@ -352,6 +381,10 @@ function setupNavigationEvents() {
             e.stopPropagation();
             const navMenu = document.querySelector('.nav-menu');
             const open = !navMenu.classList.contains('mobile-open');
+            if (open) {
+                document.querySelectorAll('.nav-quick-dropdown').forEach((d) => d.classList.remove('open'));
+                syncDropdownAria();
+            }
             setMobileNavOpen(open);
         });
     }
@@ -364,8 +397,9 @@ function setMobileNavOpen(open) {
     navMenu.classList.toggle('mobile-open', open);
     document.body.classList.toggle('nav-mobile-open', open);
     if (!open) {
-        // 閉じるときはサブメニューも畳んで次回は上詰め状態から開始
-        document.querySelectorAll('.nav-dropdown.open').forEach((d) => d.classList.remove('open'));
+        // 閉じるときはハンバーガー内のサブメニューだけ畳む（上部クイックは別制御）
+        document.querySelectorAll('.nav-menu .nav-dropdown.open').forEach((d) => d.classList.remove('open'));
+        syncDropdownAria();
     }
     if (mobileToggle) {
         mobileToggle.setAttribute('aria-expanded', open ? 'true' : 'false');

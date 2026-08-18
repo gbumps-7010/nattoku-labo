@@ -277,6 +277,7 @@
     min-height: 40px;
     color: #fff;
     text-decoration: none;
+    font-family: inherit;
     font-weight: 700;
     font-size: 0.82rem;
     line-height: 1.2;
@@ -284,11 +285,19 @@
     border-radius: 999px;
     background: rgba(255, 255, 255, 0.18);
     border: 1px solid rgba(255, 255, 255, 0.28);
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
     -webkit-tap-highlight-color: transparent;
 }
 
 .nav-quick-link i {
     font-size: 0.78rem;
+}
+
+.nav-quick-link .fa-chevron-down {
+    font-size: 0.62rem;
+    margin-left: 0.05rem;
 }
 
 .nav-quick-link-secondary {
@@ -911,6 +920,25 @@ body.nav-mobile-open::before {
         margin-left: auto;
     }
 
+    .nav-quick-dropdown {
+        position: relative;
+        flex: 0 0 auto;
+    }
+
+    .nav-quick-dropdown > .dropdown-menu {
+        position: fixed;
+        top: calc(60px + env(safe-area-inset-top, 0px));
+        left: max(0.75rem, env(safe-area-inset-left, 0px));
+        right: max(0.75rem, env(safe-area-inset-right, 0px));
+        width: auto;
+        min-width: 0;
+        max-width: none;
+        max-height: min(70vh, calc(100dvh - 72px - env(safe-area-inset-top, 0px)));
+        z-index: 1100;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
     .nav-quick-link-secondary {
         display: none;
     }
@@ -1096,6 +1124,11 @@ body.nav-mobile-open::before {
         padding: 0.35rem 0.5rem;
         font-size: 0.72rem;
         min-height: 36px;
+    }
+
+    .nav-quick-dropdown > .dropdown-menu {
+        top: calc(55px + env(safe-area-inset-top, 0px));
+        max-height: min(70vh, calc(100dvh - 67px - env(safe-area-inset-top, 0px)));
     }
 
     .nav-menu {
