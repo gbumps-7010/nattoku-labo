@@ -629,31 +629,25 @@ AFFILIATE_JS = r"""
       "html,body{width:100%;max-width:100%;min-width:0;margin:0;padding:0;background:#fff;color:#0f172a;overflow-x:hidden}" +
       "body{display:block}" +
       '[id^="msmaflink-"]{width:100%!important;max-width:100%!important;min-width:0!important}' +
-      "div.easyLink-box{width:100%!important;max-width:100%!important;min-width:0!important;box-sizing:border-box!important}" +
+      "div.easyLink-box{display:block!important;width:100%!important;max-width:100%!important;min-width:0!important;box-sizing:border-box!important}" +
       "div.easyLink-box div.easyLink-img," +
       "div.easyLink-box div.easyLink-img p.easyLink-img-box{" +
-      "width:240px!important;min-width:240px!important;max-width:240px!important;" +
-      "height:240px!important;flex:0 0 240px!important;flex-shrink:0!important;" +
-      "margin-right:16px!important;box-sizing:border-box!important}" +
+      "width:min(240px,100%)!important;min-width:0!important;max-width:100%!important;" +
+      "height:auto!important;aspect-ratio:1!important;flex:none!important;" +
+      "margin:0 auto 12px!important;box-sizing:border-box!important}" +
       "div.easyLink-box div.easyLink-img::before{display:none!important;padding-top:0!important;content:none!important}" +
       "div.easyLink-box div.easyLink-img p.easyLink-img-box span{" +
-      "width:240px!important;height:240px!important}" +
+      "width:100%!important;height:auto!important;aspect-ratio:1!important}" +
       "div.easyLink-box div.easyLink-img p.easyLink-img-box span>img," +
       "div.easyLink-box img.js-item-image{" +
-      "max-width:240px!important;max-height:240px!important;" +
+      "max-width:100%!important;max-height:240px!important;" +
       "width:auto!important;height:auto!important;min-width:0!important;object-fit:contain!important}" +
-      "@media screen and (max-width:480px){" +
-      "div.easyLink-box{display:block!important}" +
-      "div.easyLink-box div.easyLink-img," +
-      "div.easyLink-box div.easyLink-img p.easyLink-img-box{" +
-      "width:min(220px,100%)!important;min-width:0!important;max-width:100%!important;" +
-      "height:auto!important;aspect-ratio:1!important;flex-basis:auto!important;margin:0 auto 12px!important}" +
-      "div.easyLink-box div.easyLink-img p.easyLink-img-box span{width:100%!important;height:auto!important;aspect-ratio:1!important}" +
-      "div.easyLink-box div.easyLink-img p.easyLink-img-box span>img," +
-      "div.easyLink-box img.js-item-image{max-width:100%!important;max-height:220px!important}" +
-      "div.easyLink-box div.easyLink-info{min-width:0!important;width:100%!important}" +
-      "div.easyLink-box div.easyLink-info p.easyLink-info-btn a{width:100%!important;max-width:100%!important;min-width:0!important}" +
-      "}" +
+      "div.easyLink-box div.easyLink-info{" +
+      "min-width:0!important;width:100%!important;max-width:560px!important;margin:0 auto!important;float:none!important}" +
+      "div.easyLink-box div.easyLink-info p.easyLink-info-btn{" +
+      "display:block!important;width:100%!important;max-width:100%!important;margin:0 0 8px!important;float:none!important;clear:both!important}" +
+      "div.easyLink-box div.easyLink-info p.easyLink-info-btn a{" +
+      "display:block!important;width:100%!important;max-width:100%!important;min-width:0!important;box-sizing:border-box!important}" +
       "</style></head><body>" +
       safe +
       "</body></html>";
@@ -1264,7 +1258,8 @@ def build_manufacturer_page(meta: dict) -> Path:
     }}
     .aff-status.error {{ color:#b45309; }}
     .aff-moshimo {{
-      display:block; width:100%; max-width:100%; min-width:0;
+      display:block; width:100%; max-width:560px; min-width:0;
+      margin:0 auto;
       border:0; background:transparent; overflow:hidden;
     }}
     .aff-moshimo iframe {{
