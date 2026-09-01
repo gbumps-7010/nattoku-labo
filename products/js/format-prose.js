@@ -1,18 +1,7 @@
 /**
  * Shared prose formatting: emphasis + Japanese line-wrap (browser / Node).
  */
-const EMPHASIS_PHRASES = [
-  "一貫した高評価",
-  "減点要因",
-  "注意が必要",
-  "推奨されます",
-  "事前の片付け",
-  "限界",
-  "高く評価",
-  "好評",
-  "不満",
-  "苦労",
-  "つまず",
+const SITE_UI_PHRASES = [
   "購入前に現在の販売価格の確認を強くおすすめ",
   "90点台が緑",
   "80点台が青",
@@ -33,22 +22,28 @@ const EMPHASIS_PHRASES = [
   "口コミデータ",
   "比較表",
   "実体験に近いおすすめ順",
-  "吸引力",
-  "水拭き",
-  "静音性",
   "口コミ件数",
   "口コミ信頼度",
-  "フローリング",
-  "カーペット",
-  "メンテナンス",
-  "コスパ",
   "価格帯",
-  "おすすめ",
+];
+
+const BENEFIT_PATTERNS = [
+  /[^。、\n\x00]{0,30}(?:心配(?:も)?(?:なく|ない|ありません))[^。、\n\x00]{0,20}(?:安心(?:です|して|できます|して任せられます)?)?/g,
+  /[^。、\n\x00]{0,20}(?:濡らす|汚す|傷つける)[^。、\n\x00]{0,30}(?:心配|安心)[^。、\n\x00]{0,20}/g,
+  /[^。、\n\x00]{0,22}(?:しっかり吸引|きれいに|問題なく|スムーズに|簡単に|手間が少な|衛生的に)/g,
+  /[^。、\n\x00]{4,48}(?:満足しており|満足です|好評|評価されています|支持されています|任せられます|助かります|便利です|楽になり|掃除が楽|買って良かった|期待以上|うれしい|コスパが良)/g,
+];
+
+const DEMERIT_PATTERNS = [
+  /[^。、\n]{4,50}(?:不満|懸念|課題|注意が必要|トラブル|散見され|取り残|手間がかか|難しい|ストレス|失望|不具合|故障|劣化|限界|苦労|つまず)/g,
+  /[^。、\n]{4,45}(?:減点要因|事前の片付け|購入前に確認)/g,
 ];
 
 const JA_NO_LINE_START = new Set("、。，．）］｝」』】〉》をにではがのともへやや");
 const JA_NO_LINE_END = new Set("（［｛「『【〈《");
-const EMPH_MARK = "\x00E";
+const EMPH_BENEFIT = "\uf000";
+const EMPH_DEMERIT = "\uf001";
+const EMPH_NEUTRAL = "\uf002";
 
 function escapeHtml(s) {
   return String(s)
@@ -70,34 +65,47 @@ function jaWrap(text) {
   return out;
 }
 
-function markPhrase(text, phrase) {
-  const wrapped = `${EMPH_MARK}${phrase}${EMPH_MARK}`;
+function markPhrase(text, phrase, mark) {
+  const wrapped = `${mark}${phrase}${mark}`;
   return text.includes(phrase) && !text.includes(wrapped)
     ? text.replaceAll(phrase, wrapped)
     : text;
 }
 
+function markPatterns(text, patterns, mark) {
+  const marks = [EMPH_BENEFIT, EMPH_DEMERIT, EMPH_NEUTRAL];
+  let out = text;
+  for (const pattern of patterns) {
+    out = out.replace(pattern, (match) => {
+      if (marks.some((mk) => match.includes(mk))) return match;
+      return `${mark}${match}${mark}`;
+    });
+  }
+  return out;
+}
+
+function replaceMarks(safe, mark, className) {
+  const esc = mark.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const cls = className ? `em-key ${className}` : "em-key";
+  return safe.replace(new RegExp(`${esc}(.+?)${esc}`, "g"), `<strong class="${cls}">$1</strong>`);
+}
+
 function formatProse(text) {
   if (!text) return "";
+  if (String(text).includes("<") && String(text).includes(">")) return String(text);
   let work = String(text).trim();
-  for (const phrase of [...EMPHASIS_PHRASES].sort((a, b) => b.length - a.length)) {
-    work = markPhrase(work, phrase);
+  work = markPatterns(work, DEMERIT_PATTERNS, EMPH_DEMERIT);
+  work = markPatterns(work, BENEFIT_PATTERNS, EMPH_BENEFIT);
+  for (const phrase of [...SITE_UI_PHRASES].sort((a, b) => b.length - a.length)) {
+    work = markPhrase(work, phrase, EMPH_NEUTRAL);
   }
-  work = work.replace(/「([^」]+)」/g, (_, inner) => `「${EMPH_MARK}${inner}${EMPH_MARK}」`);
-  work = work.replace(
-    /(?<!特に)特に([^。、]{2,28})(?=について|が|を|に|で)/g,
-    (_, inner) => `特に${EMPH_MARK}${inner}${EMPH_MARK}`,
-  );
-  const safe = escapeHtml(jaWrap(work));
-  const markPat = new RegExp(
-    EMPH_MARK.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") +
-      "(.+?)" +
-      EMPH_MARK.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"),
-    "g",
-  );
-  return safe.replace(markPat, '<strong class="em-key">$1</strong>');
+  let safe = escapeHtml(jaWrap(work));
+  safe = replaceMarks(safe, EMPH_BENEFIT, "benefit");
+  safe = replaceMarks(safe, EMPH_DEMERIT, "demerit");
+  safe = replaceMarks(safe, EMPH_NEUTRAL, "");
+  return safe;
 }
 
 if (typeof module !== "undefined" && module.exports) {
-  module.exports = { formatProse, escapeHtml, EMPHASIS_PHRASES };
+  module.exports = { formatProse, escapeHtml, SITE_UI_PHRASES };
 }

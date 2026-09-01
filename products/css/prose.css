@@ -18,6 +18,7 @@
 .price-caution,
 .performance-detail-card p,
 .reliability-intro-text,
+.reliability-factor-desc,
 .attribute-comment,
 .problem-desc,
 [data-prose] {
@@ -33,29 +34,40 @@
   display: inline;
   font-weight: 800;
   color: #0f172a;
+  background: linear-gradient(transparent 58%, #fde68a 58%);
+  padding: 0 0.14em;
+  border-radius: 3px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
 
+.em-key.benefit,
 .entry.good .entry-body .em-key,
 .performance-detail-card.high-score p .em-key,
 .prose-good .em-key {
   color: #065f46;
+  background: linear-gradient(transparent 58%, #bbf7d0 58%);
 }
 
+.em-key.demerit,
 .entry.warn .entry-body .em-key,
 .entry.issue .entry-body .em-key,
 .problem-desc .em-key,
 .prose-warn .em-key {
   color: #9f1239;
+  background: linear-gradient(transparent 58%, #fecdd3 58%);
 }
 
 .hero .lede .em-key,
 .hero-lede .em-key {
   color: #fff;
+  background: linear-gradient(transparent 58%, rgba(255, 255, 255, 0.35) 58%);
 }
 
 .price-caution .em-key {
   color: #b45309;
   font-weight: 900;
+  background: linear-gradient(transparent 58%, #fed7aa 58%);
 }
 
 .know-body > strong {

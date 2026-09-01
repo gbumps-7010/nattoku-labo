@@ -302,6 +302,9 @@ function updateDynamicElements(data) {
                 });
                 element.innerHTML = consumablesHTML;
                 console.log(`✅ 消耗品リスト ${value.length}項目 表示完了`);
+            } else if (path.endsWith('.description') || path.endsWith('.comment') || path.endsWith('.note') || path === 'operationalCost.roiDescription') {
+                element.innerHTML = fp(String(value));
+                console.log(`✅ ${path} (prose)`);
             } else if (typeof value === 'object') {
                 // オブジェクトの場合はスキップ
                 console.log(`⏩ ${path} (オブジェクト)`);
@@ -479,9 +482,9 @@ function renderReliabilityFactors(rel) {
                 60,
             ),
             description:
-                fp(rel.dataAdequacy?.description ||
+                rel.dataAdequacy?.description ||
                 rel.dataAdequacy?.note ||
-                ''),
+                '',
         },
         {
             tone: 'consistency',
@@ -496,9 +499,9 @@ function renderReliabilityFactors(rel) {
                 30,
             ),
             description:
-                fp(rel.consistency?.description ||
+                rel.consistency?.description ||
                 rel.consistency?.note ||
-                ''),
+                '',
         },
         {
             tone: 'freshness',
@@ -513,9 +516,9 @@ function renderReliabilityFactors(rel) {
                 10,
             ),
             description:
-                fp(rel.freshness?.description ||
+                rel.freshness?.description ||
                 rel.freshness?.note ||
-                ''),
+                '',
         },
     ];
 
