@@ -6,7 +6,7 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-PROSE_V = "20260902a"
+PROSE_V = "20260902b"
 ASSETS = ("prose.css", "format-prose.js", "prose-init.js", "product-loader.js")
 SKIP_DIRS = {"__pycache__", "mobile-preview", "node_modules"}
 
