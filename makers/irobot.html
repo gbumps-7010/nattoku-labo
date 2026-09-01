@@ -17,6 +17,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
   <link rel="stylesheet" href="/products/css/navigation.css?v=20260818k">
+  <link rel="stylesheet" href="/products/css/prose.css?v=20260818k">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -96,14 +97,41 @@
     }
 
     .know {
-      background:#eff6ff; border:1px solid #bfdbfe; border-radius:12px;
-      padding:.9rem 1rem; margin:0 0 1.1rem;
+      background:linear-gradient(135deg,#eff6ff 0%,#f8fafc 100%);
+      border:1px solid #93c5fd; border-radius:14px;
+      padding:1.1rem 1.15rem 1.15rem; margin:0 0 1.25rem;
+      box-shadow:0 4px 14px rgba(30,64,175,.08);
     }
     .know h2 {
-      font-size:.95rem; margin:0 0 .45rem; color:#1e3a8a; border:0; padding:0;
+      font-size:1.05rem; margin:0 0 .45rem; color:#1e3a8a;
+      border:0; padding:0; font-weight:900;
     }
-    .know ul { margin:0; padding-left:1.15rem; }
-    .know li { margin:.2rem 0; font-size:.9rem; font-weight:700; color:#1e3a8a; }
+    .know-note {
+      margin:0 0 .85rem; padding:.55rem .7rem;
+      background:rgba(255,255,255,.75); border:1px solid #bfdbfe;
+      border-radius:8px; font-size:.84rem; line-height:1.6;
+      color:#1e40af; font-weight:700;
+    }
+    .know-list {
+      list-style:none; margin:0; padding:0;
+      display:grid; gap:.65rem;
+    }
+    .know-item {
+      display:flex; gap:.75rem; align-items:flex-start;
+      background:#fff; border:1px solid #dbeafe; border-radius:10px;
+      padding:.75rem .85rem;
+    }
+    .know-num {
+      flex-shrink:0; width:1.65rem; height:1.65rem; border-radius:999px;
+      background:#1e40af; color:#fff; font-size:.8rem; font-weight:900;
+      display:flex; align-items:center; justify-content:center; line-height:1;
+    }
+    .know-body > strong {
+      display:block; font-size:.92rem; color:#0f172a; margin-bottom:.2rem;
+    }
+    .know-body p {
+      margin:0; font-size:.84rem; line-height:1.65; color:#1e293b; font-weight:500;
+    }
 
     .intro p { margin:0 0 .85rem; font-size:.95rem; }
     .intro p:last-child { margin-bottom:0; }
@@ -128,7 +156,7 @@
       padding-bottom:.4rem; border-bottom:2px solid #bfdbfe;
     }
     .sec-lead {
-      margin:0 0 1rem; font-size:.92rem; line-height:1.7; color:#475569;
+      margin:0 0 1rem; font-size:.92rem; line-height:1.7; color:#1e293b;
     }
     .articles { display:flex; flex-direction:column; gap:2rem; }
     .article-pick h3 {
@@ -146,8 +174,7 @@
     }
     .aff-status.error { color:#b45309; }
     .aff-moshimo {
-      display:block; width:100%; max-width:560px; min-width:0;
-      margin:0 auto;
+      display:block; width:100%; max-width:100%; min-width:0;
       border:0; background:transparent; overflow:hidden;
     }
     .aff-moshimo iframe {
@@ -156,7 +183,7 @@
     .aff-direct {
       margin:.55rem 0 0;
       width:100%;
-      max-width:560px;
+      max-width:100%;
     }
     .official-hp-btn {
       display:block; width:100%; box-sizing:border-box;
@@ -194,7 +221,7 @@
       color:#b45309; font-weight:900;
     }
     .article-copy .lead, .article-pick > .lead {
-      margin:0 0 1rem; font-size:.92rem; line-height:1.7; color:#475569;
+      margin:0 0 1rem; font-size:.92rem; line-height:1.7; color:#1e293b;
     }
     .split {
       display:grid; grid-template-columns:1fr 1fr; gap:.75rem;
@@ -202,6 +229,37 @@
     }
     @media (max-width:720px) {
       .split { grid-template-columns:1fr; }
+    }
+    .panel.pros-cons {
+      margin:0 0 .75rem;
+      padding:.85rem .85rem .9rem;
+    }
+    .pros-cons-groups {
+      display:flex; flex-direction:column; gap:.85rem;
+    }
+    .pros-cons-group {
+      display:flex; flex-direction:column; gap:.55rem;
+    }
+    .pros-cons-group-neg {
+      padding-top:.85rem; border-top:1px dashed #fecdd3;
+    }
+    .pros-cons-label {
+      margin:0; font-size:.92rem; font-weight:900;
+    }
+    .pros-cons-label-good { color:#047857; }
+    .pros-cons-label-warn { color:#be123c; }
+    .entry-grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+      gap:.55rem; align-items:stretch;
+    }
+    .entry-grid .entry {
+      height:100%;
+    }
+    @media (min-width:720px) {
+      .pros-cons-group:first-child:last-child .entry-grid {
+        grid-template-columns:repeat(3, minmax(0, 1fr));
+      }
     }
     .panel {
       background:#fff; border:1px solid #e2e8f0; border-radius:12px;
@@ -214,6 +272,24 @@
       margin:0 0 .55rem; font-size:.92rem; font-weight:900; color:#1e40af;
     }
     .panel-neg h4 { color:#be123c; }
+    .panel.trend-panel {
+      background:#f8fafc; border-color:#bfdbfe;
+    }
+    .trend-summary {
+      margin:0; font-size:.9rem; line-height:1.75; color:#1e293b; font-weight:500;
+    }
+    .trend-kw-title {
+      margin:.75rem 0 .45rem; font-size:.78rem; font-weight:800; color:#334155;
+    }
+    .trend-keywords {
+      display:flex; flex-wrap:wrap; gap:.4rem;
+    }
+    .trend-chip {
+      display:inline-flex; align-items:center;
+      padding:.3rem .6rem; border-radius:999px;
+      background:#eff6ff; border:1px solid #bfdbfe;
+      color:#1e40af; font-size:.76rem; font-weight:700; line-height:1.3;
+    }
     .entry-stack {
       display:flex; flex-direction:column; gap:.55rem;
     }
@@ -231,7 +307,7 @@
     }
     .entry-label { font-size:.86rem; font-weight:900; color:#0f172a; }
     .entry-score {
-      flex-shrink:0; font-size:.8rem; font-weight:900; color:#475569;
+      flex-shrink:0; font-size:.8rem; font-weight:900; color:#334155;
     }
     .entry.good .entry-score { color:#047857; }
     .entry.warn .entry-score { color:#e11d48; }
@@ -242,13 +318,13 @@
       color:#0f172a;
     }
     .entry-body {
-      margin:0; font-size:.84rem; line-height:1.7; color:#475569; font-weight:500;
+      margin:0; font-size:.84rem; line-height:1.7; color:#1e293b; font-weight:500;
       line-break:strict; word-break:normal; overflow-wrap:anywhere;
       text-wrap:pretty;
     }
     .entry.warn .entry-body,
     .entry.issue .entry-body {
-      color:#57534e;
+      color:#1e293b;
     }
     .article-copy .more {
       margin:.85rem 0 0; padding-top:.85rem;
@@ -373,7 +449,7 @@
     <div class="wrap">
       <nav class="crumb"><a href="/">ホーム</a> › <a href="/makers/">メーカー比較</a> › ルンバ</nav>
       <h1>【全機種比較】ルンバロボット掃除機｜口コミでわかるおすすめの選び方</h1>
-      <p class="lede">口コミ分析データで、ルンバ（iRobot）のロボット掃除機8製品を横断比較します。</p>
+      <p class="lede"><strong class="em-key">口コミ分析</strong>データ⁠で⁠、ルンバ（⁠iRobot⁠）⁠のロボット掃除機8製品⁠を<strong class="em-key">横断比較</strong>します⁠。</p>
       
       <div class="maker-switch">
         <label for="maker-switch-select">他メーカーの比較ページ</label>
@@ -387,25 +463,44 @@
   <main>
     <div class="wrap-wide">
       <div class="article-card intro-block" id="intro">
-        <div class="know">
-          <h2>この記事でわかること</h2>
-          <ul>
-            <li>ルンバ全8製品の違い（一覧比較）</li>
-            <li>予算別・機能別・暮らし方別のおすすめ機種</li>
-            <li>各おすすめに対応する口コミ傾向</li>
+        
+        <div class="know" aria-labelledby="know-heading">
+          <h2 id="know-heading">この記事でわかること</h2>
+          <p class="know-note"><strong class="em-key">２大ECサイト</strong>⁠のすべて⁠の口コミ⁠を分析した結果⁠を紹介します！</p>
+          <ul class="know-list">
+            <li class="know-item">
+              <span class="know-num" aria-hidden="true">1</span>
+              <div class="know-body">
+                <strong>ルンバ全8機種の比較表</strong>
+                <p>口コミから出した<strong class="em-key">総合点</strong>⁠と<strong class="em-key">8つ⁠の性能</strong>⁠を⁠、価格⁠も含めてひ⁠とつ⁠の表⁠で比べられます⁠。</p>
+              </div>
+            </li>
+            <li class="know-item">
+              <span class="know-num" aria-hidden="true">2</span>
+              <div class="know-body">
+                <strong>予算・重視する点・暮らし方別のおすすめ</strong>
+                <p>「⁠<strong class="em-key">いくらま⁠で出せるか</strong>⁠」「⁠<strong class="em-key">何⁠を優先するか</strong>⁠」から⁠、あなた⁠に合う1台⁠に絞れます⁠。</p>
+              </div>
+            </li>
+            <li class="know-item">
+              <span class="know-num" aria-hidden="true">3</span>
+              <div class="know-body">
+                <strong>おすすめの理由（口コミの要点）</strong>
+                <p><strong class="em-key">おすすめ</strong>機種ご⁠と⁠に⁠、口コミ⁠でよく見る評価⁠と気⁠をつけたい点⁠をま⁠とめています⁠。</p>
+              </div>
+            </li>
           </ul>
         </div>
 
         <div class="intro">
-          <p>ルンバは、定価目安でおよそ¥39,800〜¥179,800と価格差の大きいメーカーです。機種数が多く、「どれを選べばよいかわかりにくい」と感じる人も少なくありません。</p>
-          <p>本記事では、ナットクLaboが分析した口コミデータを使い、全製品を比較表で俯瞰したうえで、価格帯・機能・暮らし方ごとのおすすめを解説します。</p>
+          <p>ルンバ⁠は⁠、定価目安⁠でおよそ¥39,800〜¥179,800⁠と価格差⁠の大きいメーカー⁠です⁠。機種数⁠が多く⁠、「⁠<strong class="em-key">どれ⁠を選べばよいかわかり⁠にくい</strong>⁠」⁠と感じる人⁠も少なくありません⁠。</p>
+          <p>本記事⁠で⁠は⁠、ナットクLabo⁠が分析した<strong class="em-key">口コミデータ</strong>⁠を使い⁠、全製品⁠を<strong class="em-key">比較表</strong>⁠で俯瞰したうえ⁠で⁠、<strong class="em-key">価格帯</strong>・機能・暮らし方ご⁠と⁠の<strong class="em-key">おすすめ</strong>⁠を解説します⁠。</p>
         </div>
 
         
     <nav class="toc-box" aria-label="目次">
       <p class="toc-title">目次</p>
       <ol class="toc-list">
-        <li><a href="#intro">この記事でわかること</a></li>
         <li>
           <a href="#table">ルンバ全製品を一覧比較</a>
         </li>
@@ -429,7 +524,7 @@
       <section class="chapter table-chapter" id="table">
         <div class="table-panel">
           <h2>ルンバ全製品を一覧比較</h2>
-          <p class="sec-lead">左列が比較項目、右に各製品です。点数は<strong>90点台が緑</strong>、<strong>80点台が青</strong>、<strong>70点台が黄</strong>、<strong>70点未満が赤</strong>です。セルにマウスを置くと加重点を表示します。</p>
+          <p class="sec-lead">左列⁠が比較項目⁠、右⁠に各製品⁠です⁠。点数⁠は<strong class="em-key">90点台⁠が緑</strong>⁠、<strong class="em-key">80点台⁠が青</strong>⁠、<strong class="em-key">70点台⁠が黄</strong>⁠、<strong class="em-key">70点未満⁠が赤</strong>⁠です⁠。セル⁠にマウス⁠を置く⁠と<strong class="em-key">加重点</strong>⁠を表示します⁠。</p>
           
     <p class="swipe-hint">← 表は横にスワイプできます →</p>
     <div class="compare-scroll-wrap">
@@ -544,7 +639,7 @@
     <div class="wrap">
       <section class="chapter article-card" id="price">
         <h2>予算別のおすすめ機種</h2>
-        <p class="sec-lead">まず予算で絞りたい人向けです。各価格帯で総合点が最も高い機種を、強み・注意点・口コミ傾向付きで紹介します。</p>
+        <p class="sec-lead">まず予算⁠で絞りたい人向け⁠です⁠。各<strong class="em-key">価格帯</strong>⁠で<strong class="em-key">総合点</strong>⁠が<strong class="em-key">最⁠も高い</strong>機種⁠を⁠、<strong class="em-key">強み・注意点</strong>・<strong class="em-key">口コミ傾向</strong>付き⁠で紹介します⁠。</p>
         <div class="articles">
       <article class="article-pick" id="band-under5" data-slug="roomba-mini-autoempty">
         <h3>予算〜5万円なら：Roomba® Mini + AutoEmpty™</h3>
@@ -559,48 +654,51 @@
               <span class="chip">口コミ信頼度 83.2</span>
               <span class="chip">口コミ数 138件</span>
             </p>
-            <p class="price-caution">
-              表示価格はメーカー公式の参考価格です。各ECサイトではセールが行われることが多いため、<strong>購入前に現在の販売価格の確認を強くおすすめ</strong>します。
-            </p>
+            <p class="price-caution">表示価格⁠はメーカー公式⁠の参考価格⁠です⁠。各ECサイト⁠で⁠はセール⁠が行われるこ⁠と⁠が多いため⁠、<strong class="em-key">購入前⁠に現在⁠の販売価格⁠の確認⁠を強く</strong>おすすめ E Eします⁠。</p>
           </div>
-          <p class="lead">この価格帯（2製品）のなかで、総合点が最も高いのはRoomba® Mini + AutoEmpty™です。 2位はRoomba® Mini Slim + SlimCharge™（総合点76.8）です。</p>
-          <div class="split"><div class="panel"><h4>強み</h4><div class="entry-stack">
+          <p class="lead">こ⁠の<strong class="em-key">価格帯</strong>（⁠2製品⁠）⁠のなか⁠で⁠、<strong class="em-key">総合点</strong>⁠が<strong class="em-key">最⁠も高い</strong>⁠の⁠はRoomba® Mini + AutoEmpty™⁠です⁠。 2位⁠はRoomba® Mini Slim + SlimCharge™（⁠<strong class="em-key">総合点</strong>76.8⁠）⁠です⁠。</p>
+          <div class="panel pros-cons"><div class="pros-cons-groups"><div class="pros-cons-group"><h4 class="pros-cons-label pros-cons-label-good">強み</h4><div class="entry-grid">
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">メンテナンス</span>
               <span class="entry-score">95点</span>
             </div>
-            <p class="entry-body">自動ゴミ収集機能⁠により⁠、数ヶ月⁠に一度⁠の紙パック交換だけ⁠で済む手軽さ⁠が絶賛されています⁠。市販⁠のウェットシート⁠が使える点⁠も⁠、メンテナンス⁠の手間⁠とコスト⁠を削減⁠できる⁠と好評⁠です⁠。</p>
+            <p class="entry-body">自動ゴミ収集機能⁠により⁠、数ヶ月⁠に一度⁠の紙パック交換だけ⁠で済む手軽さ⁠が絶賛されています⁠。市販⁠のウェットシート⁠が使える点⁠も⁠、<strong class="em-key">メンテナンス</strong>⁠の手間⁠とコスト⁠を削減⁠できる⁠と<strong class="em-key">好評</strong>⁠です⁠。</p>
           </div>
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">フローリング</span>
               <span class="entry-score">93点</span>
             </div>
-            <p class="entry-body">コンパクトな本体⁠が椅子⁠の脚⁠の間⁠や家具⁠の隙間⁠に⁠も入り込み⁠、隅々ま⁠で掃除⁠できる⁠と高評価⁠です⁠。吸引力⁠も十分⁠で⁠、日常的なホコリ⁠や髪⁠の毛⁠は問題なく除去⁠できる⁠と⁠の声⁠が多数⁠でした⁠。</p>
+            <p class="entry-body">コンパクトな本体⁠が椅子⁠の脚⁠の間⁠や家具⁠の隙間⁠に⁠も入り込み⁠、隅々ま⁠で掃除⁠できる⁠と高評価⁠です⁠。<strong class="em-key">吸引力</strong>⁠も十分⁠で⁠、日常的なホコリ⁠や髪⁠の毛⁠は問題なく除去⁠できる⁠と⁠の声⁠が多数⁠でした⁠。</p>
           </div>
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">85点</span>
             </div>
-            <p class="entry-body">猫⁠の毛⁠や猫砂⁠を問題なく吸い込む⁠という肯定的な意見⁠が多く見られました⁠。ペット⁠の毛⁠がカーペット⁠に絡みついている場合⁠は取り残し⁠がある⁠も⁠の⁠の⁠、フローリング⁠で⁠は十分な性能⁠を発揮します⁠。</p>
-          </div></div></div><div class="panel panel-neg"><h4>注意点</h4><div class="entry-stack">
+            <p class="entry-body">猫⁠の毛⁠や猫砂⁠を問題なく吸い込む⁠という肯定的な意見⁠が多く見られました⁠。ペット⁠の毛⁠が<strong class="em-key">カーペット</strong>⁠に絡みついている場合⁠は取り残し⁠がある⁠も⁠の⁠の⁠、<strong class="em-key">フローリング</strong>⁠で⁠は十分な性能⁠を発揮します⁠。</p>
+          </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
             <div class="entry-head">
               <span class="entry-label">静音性</span>
               <span class="entry-score">65点</span>
             </div>
-            <p class="entry-body">動作音⁠は「⁠静か⁠」⁠という意見⁠と「⁠うるさい⁠」⁠という意見⁠に二分されます⁠。特⁠にゴミ収集ステーション⁠の吸引音⁠は「⁠爆音⁠」⁠と評されるほど大きく⁠、夜間⁠の使用⁠に⁠は注意⁠が必要⁠です⁠。</p>
+            <p class="entry-body">動作音⁠は「⁠<strong class="em-key">静か</strong>⁠」⁠という意見⁠と「⁠<strong class="em-key">うるさい</strong>⁠」⁠という意見⁠に二分されます⁠。特⁠にゴミ収集ステーション⁠の吸引音⁠は「⁠<strong class="em-key">爆音</strong>⁠」⁠と評されるほど大きく⁠、夜間⁠の使用⁠に⁠は<strong class="em-key">注意⁠が必要</strong>⁠です⁠。</p>
           </div>
           <div class="entry warn">
             <div class="entry-head">
               <span class="entry-label">アプリ</span>
               <span class="entry-score">68点</span>
             </div>
-            <p class="entry-body">Wi-Fi接続⁠が頻繁⁠に切れる⁠、マッピング⁠が崩れる⁠といったソフトウェア面⁠の不安定さ⁠を指摘する声⁠が目立ちます⁠。一度接続⁠できれば便利⁠です⁠が⁠、初期設定⁠で苦労するユーザー⁠が多い印象⁠です⁠。</p>
-          </div></div></div></div>
+            <p class="entry-body">Wi-Fi接続⁠が頻繁⁠に切れる⁠、マッピング⁠が崩れる⁠といったソフトウェア面⁠の不安定さ⁠を指摘する声⁠が目立ちます⁠。一度接続⁠できれば便利⁠です⁠が⁠、初期設定⁠で<strong class="em-key">苦労</strong>するユーザー⁠が多い印象⁠です⁠。</p>
+          </div></div></div></div></div>
           
+          <div class="panel trend-panel">
+            <h4>口コミ傾向</h4>
+            <p class="trend-summary">提供された132件⁠の口コミ⁠を全て分析⁠。短文⁠や配送⁠に関する内容⁠のみ⁠のレビュー⁠は除外されており⁠、製品性能⁠に関する具体的な言及⁠が多く⁠、データ⁠の品質⁠は高い⁠と判断しました⁠。</p>
+            <p class="trend-kw-title">よく見るキーワード</p><div class="trend-keywords"><span class="trend-chip">水拭き・拭き掃除が良い</span><span class="trend-chip">満足・買ってよかった</span><span class="trend-chip">静かで快適</span><span class="trend-chip">吸引力が高い</span></div>
+          </div>
           <div class="panel"><h4>向いている人</h4><div class="entry-stack">
           <div class="entry fit">
             <div class="entry-head">
@@ -614,7 +712,7 @@
               <span class="entry-label">家族世帯</span>
               <span class="entry-score">適合度 85点</span>
             </div>
-            <p class="entry-body">子供⁠の食べこぼし⁠や足跡⁠が気⁠になる家庭⁠で⁠は⁠、市販シート⁠で手軽⁠に水拭き⁠できる機能⁠が重宝されています⁠。</p>
+            <p class="entry-body">子供⁠の食べこぼし⁠や足跡⁠が気⁠になる家庭⁠で⁠は⁠、市販シート⁠で手軽⁠に<strong class="em-key">水拭き</strong>⁠できる機能⁠が重宝されています⁠。</p>
           </div></div></div>
           <div class="panel panel-neg"><h4>よくある不満</h4><div class="entry-stack">
           <div class="entry issue">
@@ -622,7 +720,7 @@
               <span class="entry-label">Wi-Fi接続が不安定で頻繁に切れる</span>
               
             </div>
-            <p class="entry-body">「⁠数日⁠で接続⁠が切れて再設定⁠が必要⁠になる⁠」「⁠クラウド⁠に接続⁠できない⁠」など⁠、アプリ⁠と⁠の連携⁠に関する不満⁠が最多⁠。初期設定⁠の難しさ⁠や⁠、一度切れる⁠と復旧⁠が面倒⁠という声⁠が多く見られます⁠。</p>
+            <p class="entry-body">「⁠<strong class="em-key">数日⁠で接続⁠が切れて再設定⁠が必要⁠になる</strong>⁠」「⁠<strong class="em-key">クラウド⁠に接続⁠できない</strong>⁠」など⁠、アプリ⁠と⁠の連携⁠に関する<strong class="em-key">不満</strong>⁠が最多⁠。初期設定⁠の難しさ⁠や⁠、一度切れる⁠と復旧⁠が面倒⁠という声⁠が多く見られます⁠。</p>
           </div>
           <div class="entry issue">
             <div class="entry-head">
@@ -647,62 +745,58 @@
               <span class="chip">口コミ信頼度 82.9</span>
               <span class="chip">口コミ数 182件</span>
             </p>
-            <p class="price-caution">
-              表示価格はメーカー公式の参考価格です。各ECサイトではセールが行われることが多いため、<strong>購入前に現在の販売価格の確認を強くおすすめ</strong>します。
-            </p>
+            <p class="price-caution">表示価格⁠はメーカー公式⁠の参考価格⁠です⁠。各ECサイト⁠で⁠はセール⁠が行われるこ⁠と⁠が多いため⁠、<strong class="em-key">購入前⁠に現在⁠の販売価格⁠の確認⁠を強く</strong>おすすめ E Eします⁠。</p>
           </div>
-          <p class="lead">この価格帯に該当するのはRoomba® 105 Combo + AutoEmpty™です。</p>
-          <div class="split"><div class="panel"><h4>強み</h4><div class="entry-stack">
+          <p class="lead">こ⁠の<strong class="em-key">価格帯</strong>⁠に該当する⁠の⁠はRoomba® 105 Combo + AutoEmpty™⁠です⁠。</p>
+          <div class="panel pros-cons"><div class="pros-cons-groups"><div class="pros-cons-group"><h4 class="pros-cons-label pros-cons-label-good">強み</h4><div class="entry-grid">
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">フローリング</span>
               <span class="entry-score">93点</span>
             </div>
-            <p class="entry-body">フローリング⁠の清掃能力⁠は非常⁠に高く評価されています⁠。「⁠床⁠がサラサラ・ピカピカ⁠になる⁠」⁠と⁠の声⁠が多数⁠。ホコリ⁠や髪⁠の毛⁠、ペット⁠の毛ま⁠でしっかり吸引し⁠、満足度⁠は高い⁠です⁠。</p>
+            <p class="entry-body"><strong class="em-key">フローリング</strong>⁠の清掃能力⁠は非常⁠に<strong class="em-key">高く評価</strong>されています⁠。「⁠<strong class="em-key">床⁠がサラサラ・ピカピカ⁠になる</strong>⁠」⁠と⁠の声⁠が多数⁠。ホコリ⁠や髪⁠の毛⁠、ペット⁠の毛ま⁠でしっかり吸引し⁠、満足度⁠は高い⁠です⁠。</p>
           </div>
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">91点</span>
             </div>
-            <p class="entry-body">ペット⁠の毛⁠の除去性能⁠は好評⁠です⁠。「⁠猫⁠の毛⁠が綺麗⁠に吸い取れる⁠」⁠といった口コミ⁠が多く⁠、ペット⁠を飼っている家庭⁠で高く評価されています⁠。自動ゴミ収集機能⁠も毛⁠の処理⁠の手間⁠を省きます⁠。</p>
+            <p class="entry-body">ペット⁠の毛⁠の除去性能⁠は<strong class="em-key">好評</strong>⁠です⁠。「⁠<strong class="em-key">猫⁠の毛⁠が綺麗⁠に吸い取れる</strong>⁠」⁠といった口コミ⁠が多く⁠、ペット⁠を飼っている家庭⁠で<strong class="em-key">高く評価</strong>されています⁠。自動ゴミ収集機能⁠も毛⁠の処理⁠の手間⁠を省きます⁠。</p>
           </div>
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">メンテナンス</span>
               <span class="entry-score">88点</span>
             </div>
-            <p class="entry-body">自動ゴミ収集機能⁠により⁠、日々⁠のゴミ捨て⁠の手間⁠が大幅⁠に削減される点⁠が評価されています⁠。ただし⁠、水拭き後⁠のタンク清掃⁠やモップ手洗い⁠を面倒⁠に感じる⁠という意見⁠も見られます⁠。</p>
-          </div></div></div><div class="panel panel-neg"><h4>注意点</h4><div class="entry-stack">
+            <p class="entry-body">自動ゴミ収集機能⁠により⁠、日々⁠のゴミ捨て⁠の手間⁠が大幅⁠に削減される点⁠が評価されています⁠。ただし⁠、<strong class="em-key">水拭き</strong>後⁠のタンク清掃⁠やモップ手洗い⁠を面倒⁠に感じる⁠という意見⁠も見られます⁠。</p>
+          </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
             <div class="entry-head">
               <span class="entry-label">カーペット</span>
               <span class="entry-score">50点</span>
             </div>
-            <p class="entry-body">カーペット⁠で⁠の評価⁠は分かれます⁠。薄いラグ⁠は乗り越える一方⁠、「⁠毛足⁠の長いラグ⁠で停止する⁠」「⁠絨毯⁠を清掃しない⁠」⁠という報告⁠も⁠。カーペット検知⁠で水拭き⁠を回避する点⁠は評価されています⁠。</p>
+            <p class="entry-body"><strong class="em-key">カーペット</strong>⁠で⁠の評価⁠は分かれます⁠。薄いラグ⁠は乗り越える一方⁠、「⁠<strong class="em-key">毛足⁠の長いラグ⁠で停止する</strong>⁠」「⁠<strong class="em-key">絨毯⁠を清掃しない</strong>⁠」⁠という報告⁠も⁠。<strong class="em-key">カーペット</strong>検知⁠で<strong class="em-key">水拭き</strong>⁠を回避する点⁠は評価されています⁠。</p>
           </div>
           <div class="entry warn">
             <div class="entry-head">
               <span class="entry-label">段差</span>
               <span class="entry-score">65点</span>
             </div>
-            <p class="entry-body">1-2cm程度⁠の低い段差⁠は乗り越えるこ⁠と⁠が⁠できます⁠が⁠、「⁠少し⁠の段差⁠で止まる⁠」「⁠玄関から落下した⁠」⁠という声⁠も⁠。部屋間⁠の敷居など⁠、環境⁠によって⁠は注意⁠が必要⁠です⁠。</p>
-          </div></div></div></div>
-          <div class="panel"><h4>口コミ傾向</h4><div class="entry-stack">
-          <div class="entry">
-            <div class="entry-head">
-              <span class="entry-label">静音性</span>
-              <span class="entry-score">75点</span>
-            </div>
-            <p class="entry-body">走行中⁠の動作音⁠は「⁠旧モデルより静か⁠」⁠と評価されています⁠。しかし⁠、自動ゴミ収集ステーション⁠へ⁠の吸引音⁠は「⁠爆音⁠」⁠と⁠の指摘⁠が多く⁠、夜間⁠の使用⁠をためらうユーザー⁠もいるよう⁠です⁠。</p>
-          </div></div></div>
+            <p class="entry-body">1-2cm程度⁠の低い段差⁠は乗り越えるこ⁠と⁠が⁠できます⁠が⁠、「⁠<strong class="em-key">少し⁠の段差⁠で止まる</strong>⁠」「⁠<strong class="em-key">玄関から落下した</strong>⁠」⁠という声⁠も⁠。部屋間⁠の敷居など⁠、環境⁠によって⁠は<strong class="em-key">注意⁠が必要</strong>⁠です⁠。</p>
+          </div></div></div></div></div>
+          
+          <div class="panel trend-panel">
+            <h4>口コミ傾向</h4>
+            <p class="trend-summary">Amazon⁠と楽天から収集した177件⁠の口コミ⁠を分析⁠。購入直後から長期使用後ま⁠で多様な意見⁠が含まれており⁠、製品⁠の性能⁠と課題⁠をバランス良く評価⁠できるデータ⁠です⁠。</p>
+            <p class="trend-kw-title">よく見るキーワード</p><div class="trend-keywords"><span class="trend-chip">水拭き・拭き掃除が良い</span><span class="trend-chip">満足・買ってよかった</span><span class="trend-chip">使いやすい・便利</span><span class="trend-chip">静かで快適</span></div>
+          </div>
           <div class="panel"><h4>向いている人</h4><div class="entry-stack">
           <div class="entry fit">
             <div class="entry-head">
               <span class="entry-label">ペットのいる家庭</span>
               <span class="entry-score">適合度 91点</span>
             </div>
-            <p class="entry-body">フローリング⁠のホコリ⁠や毛⁠をきれい⁠に取り除き⁠、床⁠をサラサラ⁠に仕上げる能力⁠は⁠、ペット⁠がいる家庭⁠の満足度⁠を大きく高める要因⁠となっています⁠。</p>
+            <p class="entry-body"><strong class="em-key">フローリング</strong>⁠のホコリ⁠や毛⁠をきれい⁠に取り除き⁠、床⁠をサラサラ⁠に仕上げる能力⁠は⁠、ペット⁠がいる家庭⁠の満足度⁠を大きく高める要因⁠となっています⁠。</p>
           </div>
           <div class="entry fit">
             <div class="entry-head">
@@ -717,14 +811,14 @@
               <span class="entry-label">故障・初期不良の報告が多い</span>
               
             </div>
-            <p class="entry-body">購入から数ヶ月⁠で「⁠水拭き機能⁠が壊れた⁠」「⁠車輪⁠が動かなくなった⁠」⁠といったハードウェア⁠の故障報告⁠が最⁠も多く見られます⁠。特⁠に水拭き関連⁠の不具合⁠が目立ちます⁠。</p>
+            <p class="entry-body">購入から数ヶ月⁠で「⁠<strong class="em-key"> E水拭き</strong>機能⁠が壊れた<strong class="em-key">⁠」「⁠</strong>車輪⁠が動かなくなった<strong class="em-key">⁠」⁠といったハードウェア⁠の故障報告⁠が最⁠も多く見られます⁠。特⁠に</strong><strong class="em-key">水拭き</strong>関連⁠の不具合 E⁠が目立ちます⁠。</p>
           </div>
           <div class="entry issue">
             <div class="entry-head">
               <span class="entry-label">水拭き機能の不具合（水漏れ・性能不足）</span>
               
             </div>
-            <p class="entry-body">「⁠床⁠がビチャビチャ⁠になる⁠」「⁠水漏れ⁠で床⁠がカビた⁠」⁠という水量⁠の問題⁠や⁠、「⁠水⁠が出なくなった⁠」⁠という故障報告⁠があります⁠。メーカー⁠は使用後⁠のタンク⁠の水抜き⁠とパッド取り外し⁠を推奨しています⁠。</p>
+            <p class="entry-body">「⁠<strong class="em-key">床⁠がビチャビチャ⁠になる</strong>⁠」「⁠<strong class="em-key">水漏れ⁠で床⁠がカビた</strong>⁠」⁠という水量⁠の問題⁠や⁠、「⁠<strong class="em-key">水⁠が出なくなった</strong>⁠」⁠という故障報告⁠があります⁠。メーカー⁠は使用後⁠のタンク⁠の水抜き⁠とパッド取り外し⁠を推奨しています⁠。</p>
           </div></div></div>
           <p class="more"><a href="https://nattoku-labo.com/products/roomba-105-combo-autoempty" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -742,33 +836,31 @@
               <span class="chip">口コミ信頼度 84.4</span>
               <span class="chip">口コミ数 179件</span>
             </p>
-            <p class="price-caution">
-              表示価格はメーカー公式の参考価格です。各ECサイトではセールが行われることが多いため、<strong>購入前に現在の販売価格の確認を強くおすすめ</strong>します。
-            </p>
+            <p class="price-caution">表示価格⁠はメーカー公式⁠の参考価格⁠です⁠。各ECサイト⁠で⁠はセール⁠が行われるこ⁠と⁠が多いため⁠、<strong class="em-key">購入前⁠に現在⁠の販売価格⁠の確認⁠を強く</strong>おすすめ E Eします⁠。</p>
           </div>
-          <p class="lead">この価格帯（2製品）のなかで、総合点が最も高いのはRoomba® Plus 405 Combo + AutoWash™です。 2位はRoomba® Max 705 Vac + AutoEmpty™（総合点82.1）です。</p>
-          <div class="split"><div class="panel"><h4>強み</h4><div class="entry-stack">
+          <p class="lead">こ⁠の<strong class="em-key">価格帯</strong>（⁠2製品⁠）⁠のなか⁠で⁠、<strong class="em-key">総合点</strong>⁠が<strong class="em-key">最⁠も高い</strong>⁠の⁠はRoomba® Plus 405 Combo + AutoWash™⁠です⁠。 2位⁠はRoomba® Max 705 Vac + AutoEmpty™（⁠<strong class="em-key">総合点</strong>82.1⁠）⁠です⁠。</p>
+          <div class="panel pros-cons"><div class="pros-cons-groups"><div class="pros-cons-group"><h4 class="pros-cons-label pros-cons-label-good">強み</h4><div class="entry-grid">
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">フローリング</span>
               <span class="entry-score">96点</span>
             </div>
-            <p class="entry-body">水拭き機能⁠へ⁠の評価⁠が圧倒的⁠に高く⁠、「⁠床⁠がサラサラ⁠」「⁠ピカピカ⁠になる⁠」⁠と⁠の声⁠が多数⁠。汚水タンク⁠の汚れ⁠を見て効果⁠を実感するユーザー⁠も多く⁠、フローリング⁠の清掃能力⁠は非常⁠に優れています⁠。</p>
+            <p class="entry-body"><strong class="em-key">水拭き</strong>機能⁠へ⁠の評価⁠が圧倒的⁠に高く⁠、「⁠<strong class="em-key">床⁠がサラサラ</strong>⁠」「⁠<strong class="em-key">ピカピカ⁠になる</strong>⁠」⁠と⁠の声⁠が多数⁠。汚水タンク⁠の汚れ⁠を見て効果⁠を実感するユーザー⁠も多く⁠、<strong class="em-key">フローリング</strong>⁠の清掃能力⁠は非常⁠に優れています⁠。</p>
           </div>
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">90点</span>
             </div>
-            <p class="entry-body">ペット⁠の毛⁠や猫⁠の抜け毛⁠をしっかり吸引してくれる⁠と⁠の評価⁠が目立ちます⁠。水拭き機能⁠と合わせるこ⁠と⁠で⁠、アレルギー対策⁠や床⁠の清潔維持⁠に貢献している⁠と感じるペットオーナー⁠が多い⁠です⁠。</p>
+            <p class="entry-body">ペット⁠の毛⁠や猫⁠の抜け毛⁠をしっかり吸引してくれる⁠と⁠の評価⁠が目立ちます⁠。<strong class="em-key">水拭き</strong>機能⁠と合わせるこ⁠と⁠で⁠、アレルギー対策⁠や床⁠の清潔維持⁠に貢献している⁠と感じるペットオーナー⁠が多い⁠です⁠。</p>
           </div>
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">バッテリー</span>
               <span class="entry-score">89点</span>
             </div>
-            <p class="entry-body">一度⁠の充電⁠で広い範囲⁠を掃除⁠でき⁠、バッテリー⁠が少なくなる⁠と自動⁠で充電し⁠に戻り⁠、中断した場所から再開する機能⁠が評価されています⁠。バッテリー持続時間⁠に関する不満⁠はほ⁠とんど見られません⁠。</p>
-          </div></div></div><div class="panel panel-neg"><h4>注意点</h4><div class="entry-stack">
+            <p class="entry-body">一度⁠の充電⁠で広い範囲⁠を掃除⁠でき⁠、バッテリー⁠が少なくなる⁠と自動⁠で充電し⁠に戻り⁠、中断した場所から再開する機能⁠が評価されています⁠。バッテリー持続時間⁠に関する<strong class="em-key">不満</strong>⁠はほ⁠とんど見られません⁠。</p>
+          </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
             <div class="entry-head">
               <span class="entry-label">段差</span>
@@ -781,30 +873,28 @@
               <span class="entry-label">静音性</span>
               <span class="entry-score">78点</span>
             </div>
-            <p class="entry-body">走行中⁠の音⁠は「⁠静か⁠になった⁠」「⁠気⁠にならない⁠」⁠という意見⁠がある一方⁠、ゴミ収集時⁠の音⁠は「⁠大きい⁠」「⁠驚く⁠」⁠という声⁠が多数⁠。夜間⁠の使用⁠はゴミ収集⁠のタイミング⁠を考慮する必要⁠があります⁠。</p>
-          </div></div></div></div>
-          <div class="panel"><h4>口コミ傾向</h4><div class="entry-stack">
-          <div class="entry">
-            <div class="entry-head">
-              <span class="entry-label">メンテナンス</span>
-              <span class="entry-score">88点</span>
-            </div>
-            <p class="entry-body">モップ⁠の自動洗浄・乾燥⁠やゴミ⁠の自動収集機能⁠により⁠、日々⁠の手入れ⁠は非常⁠に楽⁠です⁠。ただし⁠、汚水タンク⁠の清掃⁠を怠る⁠と臭い⁠が発生するため⁠、定期的なメンテナンス⁠は必要不可欠⁠です⁠。</p>
-          </div></div></div>
+            <p class="entry-body">走行中⁠の音⁠は「⁠<strong class="em-key">静か⁠になった</strong>⁠」「⁠<strong class="em-key">気⁠にならない</strong>⁠」⁠という意見⁠がある一方⁠、ゴミ収集時⁠の音⁠は「⁠<strong class="em-key">大きい</strong>⁠」「⁠<strong class="em-key">驚く</strong>⁠」⁠という声⁠が多数⁠。夜間⁠の使用⁠はゴミ収集⁠のタイミング⁠を考慮する必要⁠があります⁠。</p>
+          </div></div></div></div></div>
+          
+          <div class="panel trend-panel">
+            <h4>口コミ傾向</h4>
+            <p class="trend-summary">ユーザー提供⁠の177件⁠の口コミ⁠を全て分析⁠。短文⁠や内容⁠の薄い⁠も⁠の⁠を除いた質⁠の高いレビュー⁠が中心⁠で⁠、実際⁠の使用感⁠が詳細⁠に記述されており⁠、データ⁠として⁠の信頼性⁠は高い⁠と判断しました⁠。</p>
+            <p class="trend-kw-title">よく見るキーワード</p><div class="trend-keywords"><span class="trend-chip">水拭き・拭き掃除が良い</span><span class="trend-chip">満足・買ってよかった</span><span class="trend-chip">吸引力が高い</span><span class="trend-chip">マッピング・ルートが賢い</span></div>
+          </div>
           <div class="panel"><h4>向いている人</h4><div class="entry-stack">
           <div class="entry fit">
             <div class="entry-head">
               <span class="entry-label">ペットのいる家庭</span>
               <span class="entry-score">適合度 92点</span>
             </div>
-            <p class="entry-body">ペット⁠の足跡⁠やよだれ⁠の跡⁠も水拭き機能⁠で綺麗⁠になり⁠、床⁠を常⁠に清潔⁠に保てます⁠。</p>
+            <p class="entry-body">ペット⁠の足跡⁠やよだれ⁠の跡⁠も<strong class="em-key">水拭き</strong>機能⁠で綺麗⁠になり⁠、床⁠を常⁠に清潔⁠に保てます⁠。</p>
           </div>
           <div class="entry fit">
             <div class="entry-head">
               <span class="entry-label">家族世帯</span>
               <span class="entry-score">適合度 92点</span>
             </div>
-            <p class="entry-body">子供⁠の食べこぼし⁠や足跡汚れ⁠も⁠、強力な水拭き機能⁠で綺麗⁠に除去⁠できます⁠。</p>
+            <p class="entry-body">子供⁠の食べこぼし⁠や足跡汚れ⁠も⁠、強力な<strong class="em-key">水拭き</strong>機能⁠で綺麗⁠に除去⁠できます⁠。</p>
           </div></div></div>
           <div class="panel panel-neg"><h4>よくある不満</h4><div class="entry-stack">
           <div class="entry issue">
@@ -812,14 +902,14 @@
               <span class="entry-label">初期不良・故障の報告</span>
               
             </div>
-            <p class="entry-body">「⁠センサーエラー⁠で作動しない⁠」「⁠水拭き機能⁠が使えない⁠」⁠といった初期不良⁠や⁠、数日⁠で故障した⁠という報告⁠が18件ありました⁠。サポート⁠の対応⁠に関する不満⁠の声⁠も一部見られます⁠。</p>
+            <p class="entry-body">「⁠<strong class="em-key">センサーエラー⁠で作動しない</strong>⁠」「⁠<strong class="em-key"> E水拭き</strong>機能⁠が使えない<strong class="em-key">⁠」⁠といった初期不良⁠や⁠、数日⁠で故障した⁠という報告⁠が18件ありました⁠。サポート⁠の対応⁠に関する</strong>不満 E⁠の声⁠も一部見られます⁠。</p>
           </div>
           <div class="entry issue">
             <div class="entry-head">
               <span class="entry-label">段差や障害物で停止する</span>
               
             </div>
-            <p class="entry-body">約2cm以上⁠の段差⁠やジョイントマット⁠、椅子⁠の脚⁠の間など⁠で乗り越えられず停止する事例⁠が報告されています⁠。特⁠に薄いラグ⁠を巻き込ん⁠でしまう⁠という声⁠が複数ありました⁠。</p>
+            <p class="entry-body">約2cm以上⁠の段差⁠やジョイントマット⁠、椅子⁠の脚⁠の間など⁠で乗り越えられず停止する事例⁠が報告されています⁠。特⁠に<strong class="em-key">薄いラグ⁠を巻き込ん⁠でしまう⁠という声</strong>⁠が複数ありました⁠。</p>
           </div></div></div>
           <p class="more"><a href="https://nattoku-labo.com/products/roomba-plus-405-combo-autowash" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -837,33 +927,31 @@
               <span class="chip">口コミ信頼度 66.8</span>
               <span class="chip">口コミ数 88件</span>
             </p>
-            <p class="price-caution">
-              表示価格はメーカー公式の参考価格です。各ECサイトではセールが行われることが多いため、<strong>購入前に現在の販売価格の確認を強くおすすめ</strong>します。
-            </p>
+            <p class="price-caution">表示価格⁠はメーカー公式⁠の参考価格⁠です⁠。各ECサイト⁠で⁠はセール⁠が行われるこ⁠と⁠が多いため⁠、<strong class="em-key">購入前⁠に現在⁠の販売価格⁠の確認⁠を強く</strong>おすすめ E Eします⁠。</p>
           </div>
-          <p class="lead">この価格帯に該当するのはRoomba® Plus 505 Combo + AutoWash™です。</p>
-          <div class="split"><div class="panel"><h4>強み</h4><div class="entry-stack">
+          <p class="lead">こ⁠の<strong class="em-key">価格帯</strong>⁠に該当する⁠の⁠はRoomba® Plus 505 Combo + AutoWash™⁠です⁠。</p>
+          <div class="panel pros-cons"><div class="pros-cons-groups"><div class="pros-cons-group"><h4 class="pros-cons-label pros-cons-label-good">強み</h4><div class="entry-grid">
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">フローリング</span>
               <span class="entry-score">98点</span>
             </div>
-            <p class="entry-body">水拭き機能⁠へ⁠の評価⁠は極めて高く⁠、「⁠床⁠がサラサラ⁠」「⁠ピカピカ⁠になる⁠」⁠といった声⁠が多数⁠です⁠。専用洗剤⁠を使用するこ⁠と⁠で⁠、素足⁠で⁠の快適性⁠が格段⁠に向上した⁠と実感するユーザー⁠が多い⁠です⁠。</p>
+            <p class="entry-body"><strong class="em-key">水拭き</strong>機能⁠へ⁠の評価⁠は極めて高く⁠、「⁠<strong class="em-key">床⁠がサラサラ</strong>⁠」「⁠<strong class="em-key">ピカピカ⁠になる</strong>⁠」⁠といった声⁠が多数⁠です⁠。専用洗剤⁠を使用するこ⁠と⁠で⁠、素足⁠で⁠の快適性⁠が格段⁠に向上した⁠と実感するユーザー⁠が多い⁠です⁠。</p>
           </div>
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">メンテナンス</span>
               <span class="entry-score">96点</span>
             </div>
-            <p class="entry-body">ゴミ収集からモップ⁠の洗浄・乾燥ま⁠で全自動⁠で行うため⁠、日々⁠の手間⁠が大幅⁠に削減されます⁠。汚水タンク⁠の排水⁠と給水タンク⁠の補充⁠が主な作業⁠で⁠、メンテナンス⁠の手軽さ⁠は本製品⁠の最大⁠の特徴⁠です⁠。</p>
+            <p class="entry-body">ゴミ収集からモップ⁠の洗浄・乾燥ま⁠で全自動⁠で行うため⁠、日々⁠の手間⁠が大幅⁠に削減されます⁠。汚水タンク⁠の排水⁠と給水タンク⁠の補充⁠が主な作業⁠で⁠、<strong class="em-key">メンテナンス</strong>⁠の手軽さ⁠は本製品⁠の最大⁠の特徴⁠です⁠。</p>
           </div>
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">92点</span>
             </div>
-            <p class="entry-body">ペット⁠の毛⁠やフケ⁠に対する吸引力⁠は非常⁠に強力⁠で⁠、多く⁠の飼い主から支持されています⁠。動物⁠の糞など⁠をAI⁠が認識して回避する機能⁠もあり⁠、ペット⁠がいる家庭⁠で⁠も安心して利用⁠できる点⁠が強み⁠です⁠。</p>
-          </div></div></div><div class="panel panel-neg"><h4>注意点</h4><div class="entry-stack">
+            <p class="entry-body">ペット⁠の毛⁠やフケ⁠に対する<strong class="em-key">吸引力</strong>⁠は非常⁠に強力⁠で⁠、多く⁠の飼い主から支持されています⁠。動物⁠の糞など⁠をAI⁠が認識して回避する機能⁠もあり⁠、ペット⁠がいる家庭⁠で⁠も安心して利用⁠できる点⁠が強み⁠です⁠。</p>
+          </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
             <div class="entry-head">
               <span class="entry-label">段差</span>
@@ -876,30 +964,28 @@
               <span class="entry-label">アプリ</span>
               <span class="entry-score">80点</span>
             </div>
-            <p class="entry-body">初期設定⁠で「⁠アップデート⁠が終わらない⁠」「⁠Wi-Fi⁠に接続⁠できない⁠」⁠といった問題⁠が散見されます⁠。一度設定⁠が完了すれば便利⁠です⁠が⁠、アプリ⁠の動作⁠が不安定⁠で使い⁠にくい⁠という声⁠も一定数存在します⁠。</p>
-          </div></div></div></div>
-          <div class="panel"><h4>口コミ傾向</h4><div class="entry-stack">
-          <div class="entry">
-            <div class="entry-head">
-              <span class="entry-label">静音性</span>
-              <span class="entry-score">82点</span>
-            </div>
-            <p class="entry-body">走行中⁠の動作音⁠は旧モデルより静か⁠になった⁠という意見⁠がある一方⁠、全体的⁠に⁠は「⁠音⁠が大きい⁠」⁠と感じるユーザー⁠もいます⁠。特⁠にゴミ収集時⁠やモップ洗浄時⁠の音⁠は大きく⁠、夜間⁠の使用⁠に⁠は注意⁠が必要⁠です⁠。</p>
-          </div></div></div>
+            <p class="entry-body">初期設定⁠で「⁠<strong class="em-key">アップデート⁠が終わらない</strong>⁠」「⁠<strong class="em-key">Wi-Fi⁠に接続⁠できない</strong>⁠」⁠といった問題⁠が散見されます⁠。一度設定⁠が完了すれば便利⁠です⁠が⁠、アプリ⁠の動作⁠が不安定⁠で使い⁠にくい⁠という声⁠も一定数存在します⁠。</p>
+          </div></div></div></div></div>
+          
+          <div class="panel trend-panel">
+            <h4>口コミ傾向</h4>
+            <p class="trend-summary">Amazonから収集した83件⁠の口コミ⁠を分析⁠。購入直後から半年以上⁠の長期利用ま⁠で多様なレビュー⁠が含まれており⁠、製品⁠の性能⁠と課題⁠を多角的⁠に評価しています⁠。外部サイトから⁠のデータ収集⁠は行っていません⁠。</p>
+            <p class="trend-kw-title">よく見るキーワード</p><div class="trend-keywords"><span class="trend-chip">水拭き・拭き掃除が良い</span><span class="trend-chip">使いやすい・便利</span><span class="trend-chip">満足・買ってよかった</span><span class="trend-chip">マッピング・ルートが賢い</span></div>
+          </div>
           <div class="panel"><h4>向いている人</h4><div class="entry-stack">
           <div class="entry fit">
             <div class="entry-head">
               <span class="entry-label">ペットのいる家庭</span>
               <span class="entry-score">適合度 95点</span>
             </div>
-            <p class="entry-body">ペット⁠の足跡⁠やよだれなど⁠で汚れ⁠がちな床⁠も⁠、パワフルな水拭き機能⁠でサラサラ⁠に仕上げます⁠。</p>
+            <p class="entry-body">ペット⁠の足跡⁠やよだれなど⁠で汚れ⁠がちな床⁠も⁠、パワフルな<strong class="em-key">水拭き</strong>機能⁠でサラサラ⁠に仕上げます⁠。</p>
           </div>
           <div class="entry fit">
             <div class="entry-head">
               <span class="entry-label">家族世帯</span>
               <span class="entry-score">適合度 90点</span>
             </div>
-            <p class="entry-body">フローリング⁠の吸引・水拭き性能⁠は非常⁠に高く⁠、子供⁠が裸足⁠で走り回って⁠も安心な清潔さ⁠を保てます⁠。</p>
+            <p class="entry-body"><strong class="em-key">フローリング</strong>⁠の吸引・<strong class="em-key">水拭き</strong>性能⁠は非常⁠に高く⁠、子供⁠が裸足⁠で走り回って⁠も安心な清潔さ⁠を保てます⁠。</p>
           </div></div></div>
           <div class="panel panel-neg"><h4>よくある不満</h4><div class="entry-stack">
           <div class="entry issue">
@@ -932,25 +1018,23 @@
               <span class="chip">口コミ信頼度 82.6</span>
               <span class="chip">口コミ数 129件</span>
             </p>
-            <p class="price-caution">
-              表示価格はメーカー公式の参考価格です。各ECサイトではセールが行われることが多いため、<strong>購入前に現在の販売価格の確認を強くおすすめ</strong>します。
-            </p>
+            <p class="price-caution">表示価格⁠はメーカー公式⁠の参考価格⁠です⁠。各ECサイト⁠で⁠はセール⁠が行われるこ⁠と⁠が多いため⁠、<strong class="em-key">購入前⁠に現在⁠の販売価格⁠の確認⁠を強く</strong>おすすめ E Eします⁠。</p>
           </div>
-          <p class="lead">この価格帯（2製品）のなかで、総合点が最も高いのはRoomba Plus 575 Combo + AutoWashです。 2位はRoomba® Max 705 Combo + AutoWash™（総合点80.5）です。</p>
-          <div class="split"><div class="panel"><h4>強み</h4><div class="entry-stack">
+          <p class="lead">こ⁠の<strong class="em-key">価格帯</strong>（⁠2製品⁠）⁠のなか⁠で⁠、<strong class="em-key">総合点</strong>⁠が<strong class="em-key">最⁠も高い</strong>⁠の⁠はRoomba Plus 575 Combo + AutoWash⁠です⁠。 2位⁠はRoomba® Max 705 Combo + AutoWash™（⁠<strong class="em-key">総合点</strong>80.5⁠）⁠です⁠。</p>
+          <div class="panel pros-cons"><div class="pros-cons-groups"><div class="pros-cons-group"><h4 class="pros-cons-label pros-cons-label-good">強み</h4><div class="entry-grid">
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">フローリング</span>
               <span class="entry-score">96点</span>
             </div>
-            <p class="entry-body">多く⁠のレビュー⁠がフローリング⁠の拭き掃除性能⁠を絶賛⁠。素足⁠で歩く⁠とサラサラ⁠、ピカピカ⁠になる⁠と⁠の声⁠が多数⁠。吸引⁠と水拭き⁠の同時実行⁠で⁠、日々⁠の床掃除から解放された⁠と高評価⁠を得ている⁠。</p>
+            <p class="entry-body">多く⁠のレビュー⁠が<strong class="em-key">フローリング</strong>⁠の拭き掃除性能⁠を絶賛⁠。素足⁠で歩く⁠とサラサラ⁠、ピカピカ⁠になる⁠と⁠の声⁠が多数⁠。吸引⁠と<strong class="em-key">水拭き</strong>⁠の同時実行⁠で⁠、日々⁠の床掃除から解放された⁠と高評価⁠を得ている⁠。</p>
           </div>
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">91点</span>
             </div>
-            <p class="entry-body">犬⁠や猫⁠の毛⁠をしっかり吸引してくれる点⁠が高く評価されている⁠。毛⁠が絡み⁠にくいゴム製ブラシ⁠のメンテナンス性⁠も好評⁠で⁠、ペット⁠のいる家庭⁠の強い味方⁠となっているようだ⁠。</p>
+            <p class="entry-body">犬⁠や猫⁠の毛⁠をしっかり吸引してくれる点⁠が<strong class="em-key">高く評価</strong>されている⁠。毛⁠が絡み⁠にくいゴム製ブラシ⁠の<strong class="em-key">メンテナンス</strong>性⁠も<strong class="em-key">好評</strong>⁠で⁠、ペット⁠のいる家庭⁠の強い味方⁠となっているようだ⁠。</p>
           </div>
           <div class="entry good">
             <div class="entry-head">
@@ -958,13 +1042,13 @@
               <span class="entry-score">88点</span>
             </div>
             <p class="entry-body">旧モデル⁠と比較して格段⁠に静か⁠になった⁠という意見⁠が多数⁠。テレビ視聴⁠やリモート会議中⁠で⁠も気⁠にならないレベル⁠と⁠の声⁠も⁠。ただし⁠、ゴミ収集時⁠やモップ洗浄時⁠の音⁠は大きい⁠という指摘⁠もある⁠。</p>
-          </div></div></div><div class="panel panel-neg"><h4>注意点</h4><div class="entry-stack">
+          </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
             <div class="entry-head">
               <span class="entry-label">アプリ</span>
               <span class="entry-score">65点</span>
             </div>
-            <p class="entry-body">Wi-Fi接続⁠でエラー⁠が多発し⁠、初期設定⁠に苦労した⁠という報告⁠が非常⁠に多い⁠。マッピング精度⁠が低く⁠、部屋⁠を正しく認識しない⁠、禁止エリア設定⁠が機能しないなど⁠の問題⁠も指摘されている⁠。</p>
+            <p class="entry-body">Wi-Fi接続⁠でエラー⁠が多発し⁠、初期設定⁠に<strong class="em-key">苦労</strong>した⁠という報告⁠が非常⁠に多い⁠。マッピング精度⁠が低く⁠、部屋⁠を正しく認識しない⁠、禁止エリア設定⁠が機能しないなど⁠の問題⁠も指摘されている⁠。</p>
           </div>
           <div class="entry warn">
             <div class="entry-head">
@@ -972,29 +1056,27 @@
               <span class="entry-score">78点</span>
             </div>
             <p class="entry-body">約2cm程度⁠の段差⁠は力強く乗り越える⁠と⁠の評価⁠がある一方⁠、家具⁠の脚⁠や敷居⁠で立ち往生する⁠、引っかかる⁠といった報告⁠も散見される⁠。環境⁠による差⁠が大きい項目⁠と言える⁠。</p>
-          </div></div></div></div>
-          <div class="panel"><h4>口コミ傾向</h4><div class="entry-stack">
-          <div class="entry">
-            <div class="entry-head">
-              <span class="entry-label">メンテナンス</span>
-              <span class="entry-score">85点</span>
-            </div>
-            <p class="entry-body">ゴミ自動収集⁠やモップ⁠の自動洗浄・乾燥機能⁠により⁠、日々⁠の手入れ⁠が格段⁠に楽⁠になった⁠と高評価⁠。ただし⁠、汚水タンク⁠の清掃⁠や⁠、専用洗剤⁠が入手困難⁠である点⁠に不満⁠の声⁠が上⁠がっている⁠。</p>
-          </div></div></div>
+          </div></div></div></div></div>
+          
+          <div class="panel trend-panel">
+            <h4>口コミ傾向</h4>
+            <p class="trend-summary">Amazon⁠と楽天から収集した127件⁠のレビュー⁠を分析⁠。購入直後⁠のレビュー⁠が多く⁠、特⁠に<strong class="em-key">初期設定⁠や初期不良⁠に関する具体的な記述</strong>⁠が豊富⁠。長期利用⁠に関する評価⁠は限定的だ⁠が⁠、信頼性⁠は高い⁠。</p>
+            <p class="trend-kw-title">よく見るキーワード</p><div class="trend-keywords"><span class="trend-chip">水拭き・拭き掃除が良い</span><span class="trend-chip">満足・買ってよかった</span><span class="trend-chip">静かで快適</span><span class="trend-chip">マッピング・ルートが賢い</span></div>
+          </div>
           <div class="panel"><h4>向いている人</h4><div class="entry-stack">
           <div class="entry fit">
             <div class="entry-head">
               <span class="entry-label">ペットのいる家庭</span>
               <span class="entry-score">適合度 91点</span>
             </div>
-            <p class="entry-body">ペット⁠の足跡⁠やよだれ⁠の跡⁠も水拭き⁠で綺麗⁠になり⁠、床⁠が常⁠に清潔⁠に保てる点⁠が好評⁠。</p>
+            <p class="entry-body">ペット⁠の足跡⁠やよだれ⁠の跡⁠も<strong class="em-key">水拭き</strong>⁠で綺麗⁠になり⁠、床⁠が常⁠に清潔⁠に保てる点⁠が<strong class="em-key">好評</strong>⁠。</p>
           </div>
           <div class="entry fit">
             <div class="entry-head">
               <span class="entry-label">マンション・集合住宅</span>
               <span class="entry-score">適合度 88点</span>
             </div>
-            <p class="entry-body">限られたスペース⁠で⁠も隅々ま⁠で丁寧⁠に掃除し⁠、フローリング⁠をサラサラ⁠に保つ⁠。</p>
+            <p class="entry-body">限られたスペース⁠で⁠も隅々ま⁠で丁寧⁠に掃除し⁠、<strong class="em-key">フローリング</strong>⁠をサラサラ⁠に保つ⁠。</p>
           </div></div></div>
           <div class="panel panel-neg"><h4>よくある不満</h4><div class="entry-stack">
           <div class="entry issue">
@@ -1002,14 +1084,14 @@
               <span class="entry-label">水漏れなどの初期不良が多い</span>
               
             </div>
-            <p class="entry-body">「⁠モップ洗浄中⁠に本体から水⁠が漏れる⁠」「⁠電源⁠が入らない⁠」「⁠モップアーム⁠の不具合⁠」⁠といったハードウェア⁠の初期不良報告⁠が多数⁠。カスタマーサポート⁠の対応⁠が遅い⁠と⁠の不満⁠も散見される⁠。</p>
+            <p class="entry-body">「⁠<strong class="em-key">モップ洗浄中⁠に本体から水⁠が漏れる</strong>⁠」「⁠<strong class="em-key">電源⁠が入らない</strong>⁠」「⁠<strong class="em-key">モップアーム⁠の不具合</strong>⁠」⁠といったハードウェア⁠の初期不良報告⁠が多数⁠。カスタマーサポート⁠の対応⁠が遅い⁠と⁠の<strong class="em-key">不満</strong>⁠も散見される⁠。</p>
           </div>
           <div class="entry issue">
             <div class="entry-head">
               <span class="entry-label">アプリの接続性が悪く、設定で躓く</span>
               
             </div>
-            <p class="entry-body">多く⁠のユーザー⁠がWi-Fi接続⁠で苦労しており⁠、「⁠何度⁠やって⁠も繋⁠がらない⁠」「⁠エラー⁠が頻発する⁠」⁠と⁠の声⁠が多数⁠。アプリ⁠のUI⁠も直感的⁠でなく⁠、マッピング⁠やスケジュール設定⁠が使い⁠にくい⁠と⁠の指摘⁠もある⁠。</p>
+            <p class="entry-body">多く⁠のユーザー⁠がWi-Fi接続⁠で<strong class="em-key">苦労</strong>しており⁠、「⁠<strong class="em-key">何度⁠やって⁠も繋⁠がらない</strong>⁠」「⁠<strong class="em-key">エラー⁠が頻発する</strong>⁠」⁠と⁠の声⁠が多数⁠。アプリ⁠のUI⁠も直感的⁠でなく⁠、マッピング⁠やスケジュール設定⁠が使い⁠にくい⁠と⁠の指摘⁠もある⁠。</p>
           </div></div></div>
           <p class="more"><a href="https://nattoku-labo.com/products/roomba-plus-575-combo-autowash" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -1022,7 +1104,7 @@
 
       <section class="chapter article-card" id="feature">
         <h2>機能で選ぶおすすめ機種</h2>
-        <p class="sec-lead">「床をきれいにしたい」「静かに使いたい」など、機能の優先順位がはっきりしている人向けです。機能ごとに1機種ずつ、口コミ傾向付きで紹介します。</p>
+        <p class="sec-lead">「⁠<strong class="em-key">床⁠をきれい⁠にしたい</strong>⁠」「⁠<strong class="em-key">静か⁠に使いたい</strong>⁠」など⁠、機能⁠の優先順位⁠が⁠はっきりしている人向け⁠です⁠。機能ご⁠と⁠に1機種ずつ⁠、<strong class="em-key">口コミ傾向</strong>付き⁠で紹介します⁠。</p>
         <div class="articles">
       <article class="article-pick" id="feat-floor" data-slug="roomba-plus-405-combo-autowash">
         <h3>フローリング掃除が得意な機種：Roomba® Plus 405 Combo + AutoWash™</h3>
@@ -1037,33 +1119,31 @@
               <span class="chip">口コミ信頼度 84.4</span>
               <span class="chip">口コミ数 179件</span>
             </p>
-            <p class="price-caution">
-              表示価格はメーカー公式の参考価格です。各ECサイトではセールが行われることが多いため、<strong>購入前に現在の販売価格の確認を強くおすすめ</strong>します。
-            </p>
+            <p class="price-caution">表示価格⁠はメーカー公式⁠の参考価格⁠です⁠。各ECサイト⁠で⁠はセール⁠が行われるこ⁠と⁠が多いため⁠、<strong class="em-key">購入前⁠に現在⁠の販売価格⁠の確認⁠を強く</strong>おすすめ E Eします⁠。</p>
           </div>
-          <p class="lead">床掃除・水拭きの仕上がりを重視する人向けです。ルンバ製品のなかで「フローリング」の評価が最も高いのはRoomba® Plus 405 Combo + AutoWash™です。 2位はRoomba Plus 575 Combo + AutoWashです。</p>
-          <div class="split"><div class="panel"><h4>強み</h4><div class="entry-stack">
+          <p class="lead">床掃除・<strong class="em-key">水拭き</strong>⁠の仕上⁠がり⁠を重視する人向け⁠です⁠。ルンバ製品⁠のなか⁠で「⁠<strong class="em-key"> Eフローリング</strong><strong class="em-key">⁠」⁠の評価⁠が</strong>最⁠も高い E⁠の⁠はRoomba® Plus 405 Combo + AutoWash™⁠です⁠。 2位⁠はRoomba Plus 575 Combo + AutoWash⁠です⁠。</p>
+          <div class="panel pros-cons"><div class="pros-cons-groups"><div class="pros-cons-group"><h4 class="pros-cons-label pros-cons-label-good">強み</h4><div class="entry-grid">
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">フローリング</span>
               <span class="entry-score">96点</span>
             </div>
-            <p class="entry-body">水拭き機能⁠へ⁠の評価⁠が圧倒的⁠に高く⁠、「⁠床⁠がサラサラ⁠」「⁠ピカピカ⁠になる⁠」⁠と⁠の声⁠が多数⁠。汚水タンク⁠の汚れ⁠を見て効果⁠を実感するユーザー⁠も多く⁠、フローリング⁠の清掃能力⁠は非常⁠に優れています⁠。</p>
+            <p class="entry-body"><strong class="em-key">水拭き</strong>機能⁠へ⁠の評価⁠が圧倒的⁠に高く⁠、「⁠<strong class="em-key">床⁠がサラサラ</strong>⁠」「⁠<strong class="em-key">ピカピカ⁠になる</strong>⁠」⁠と⁠の声⁠が多数⁠。汚水タンク⁠の汚れ⁠を見て効果⁠を実感するユーザー⁠も多く⁠、<strong class="em-key">フローリング</strong>⁠の清掃能力⁠は非常⁠に優れています⁠。</p>
           </div>
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">90点</span>
             </div>
-            <p class="entry-body">ペット⁠の毛⁠や猫⁠の抜け毛⁠をしっかり吸引してくれる⁠と⁠の評価⁠が目立ちます⁠。水拭き機能⁠と合わせるこ⁠と⁠で⁠、アレルギー対策⁠や床⁠の清潔維持⁠に貢献している⁠と感じるペットオーナー⁠が多い⁠です⁠。</p>
+            <p class="entry-body">ペット⁠の毛⁠や猫⁠の抜け毛⁠をしっかり吸引してくれる⁠と⁠の評価⁠が目立ちます⁠。<strong class="em-key">水拭き</strong>機能⁠と合わせるこ⁠と⁠で⁠、アレルギー対策⁠や床⁠の清潔維持⁠に貢献している⁠と感じるペットオーナー⁠が多い⁠です⁠。</p>
           </div>
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">バッテリー</span>
               <span class="entry-score">89点</span>
             </div>
-            <p class="entry-body">一度⁠の充電⁠で広い範囲⁠を掃除⁠でき⁠、バッテリー⁠が少なくなる⁠と自動⁠で充電し⁠に戻り⁠、中断した場所から再開する機能⁠が評価されています⁠。バッテリー持続時間⁠に関する不満⁠はほ⁠とんど見られません⁠。</p>
-          </div></div></div><div class="panel panel-neg"><h4>注意点</h4><div class="entry-stack">
+            <p class="entry-body">一度⁠の充電⁠で広い範囲⁠を掃除⁠でき⁠、バッテリー⁠が少なくなる⁠と自動⁠で充電し⁠に戻り⁠、中断した場所から再開する機能⁠が評価されています⁠。バッテリー持続時間⁠に関する<strong class="em-key">不満</strong>⁠はほ⁠とんど見られません⁠。</p>
+          </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
             <div class="entry-head">
               <span class="entry-label">段差</span>
@@ -1076,30 +1156,28 @@
               <span class="entry-label">静音性</span>
               <span class="entry-score">78点</span>
             </div>
-            <p class="entry-body">走行中⁠の音⁠は「⁠静か⁠になった⁠」「⁠気⁠にならない⁠」⁠という意見⁠がある一方⁠、ゴミ収集時⁠の音⁠は「⁠大きい⁠」「⁠驚く⁠」⁠という声⁠が多数⁠。夜間⁠の使用⁠はゴミ収集⁠のタイミング⁠を考慮する必要⁠があります⁠。</p>
-          </div></div></div></div>
-          <div class="panel"><h4>口コミ傾向</h4><div class="entry-stack">
-          <div class="entry">
-            <div class="entry-head">
-              <span class="entry-label">メンテナンス</span>
-              <span class="entry-score">88点</span>
-            </div>
-            <p class="entry-body">モップ⁠の自動洗浄・乾燥⁠やゴミ⁠の自動収集機能⁠により⁠、日々⁠の手入れ⁠は非常⁠に楽⁠です⁠。ただし⁠、汚水タンク⁠の清掃⁠を怠る⁠と臭い⁠が発生するため⁠、定期的なメンテナンス⁠は必要不可欠⁠です⁠。</p>
-          </div></div></div>
+            <p class="entry-body">走行中⁠の音⁠は「⁠<strong class="em-key">静か⁠になった</strong>⁠」「⁠<strong class="em-key">気⁠にならない</strong>⁠」⁠という意見⁠がある一方⁠、ゴミ収集時⁠の音⁠は「⁠<strong class="em-key">大きい</strong>⁠」「⁠<strong class="em-key">驚く</strong>⁠」⁠という声⁠が多数⁠。夜間⁠の使用⁠はゴミ収集⁠のタイミング⁠を考慮する必要⁠があります⁠。</p>
+          </div></div></div></div></div>
+          
+          <div class="panel trend-panel">
+            <h4>口コミ傾向</h4>
+            <p class="trend-summary">ユーザー提供⁠の177件⁠の口コミ⁠を全て分析⁠。短文⁠や内容⁠の薄い⁠も⁠の⁠を除いた質⁠の高いレビュー⁠が中心⁠で⁠、実際⁠の使用感⁠が詳細⁠に記述されており⁠、データ⁠として⁠の信頼性⁠は高い⁠と判断しました⁠。</p>
+            <p class="trend-kw-title">よく見るキーワード</p><div class="trend-keywords"><span class="trend-chip">水拭き・拭き掃除が良い</span><span class="trend-chip">満足・買ってよかった</span><span class="trend-chip">吸引力が高い</span><span class="trend-chip">マッピング・ルートが賢い</span></div>
+          </div>
           <div class="panel"><h4>向いている人</h4><div class="entry-stack">
           <div class="entry fit">
             <div class="entry-head">
               <span class="entry-label">ペットのいる家庭</span>
               <span class="entry-score">適合度 92点</span>
             </div>
-            <p class="entry-body">ペット⁠の足跡⁠やよだれ⁠の跡⁠も水拭き機能⁠で綺麗⁠になり⁠、床⁠を常⁠に清潔⁠に保てます⁠。</p>
+            <p class="entry-body">ペット⁠の足跡⁠やよだれ⁠の跡⁠も<strong class="em-key">水拭き</strong>機能⁠で綺麗⁠になり⁠、床⁠を常⁠に清潔⁠に保てます⁠。</p>
           </div>
           <div class="entry fit">
             <div class="entry-head">
               <span class="entry-label">家族世帯</span>
               <span class="entry-score">適合度 92点</span>
             </div>
-            <p class="entry-body">子供⁠の食べこぼし⁠や足跡汚れ⁠も⁠、強力な水拭き機能⁠で綺麗⁠に除去⁠できます⁠。</p>
+            <p class="entry-body">子供⁠の食べこぼし⁠や足跡汚れ⁠も⁠、強力な<strong class="em-key">水拭き</strong>機能⁠で綺麗⁠に除去⁠できます⁠。</p>
           </div></div></div>
           <div class="panel panel-neg"><h4>よくある不満</h4><div class="entry-stack">
           <div class="entry issue">
@@ -1107,14 +1185,14 @@
               <span class="entry-label">初期不良・故障の報告</span>
               
             </div>
-            <p class="entry-body">「⁠センサーエラー⁠で作動しない⁠」「⁠水拭き機能⁠が使えない⁠」⁠といった初期不良⁠や⁠、数日⁠で故障した⁠という報告⁠が18件ありました⁠。サポート⁠の対応⁠に関する不満⁠の声⁠も一部見られます⁠。</p>
+            <p class="entry-body">「⁠<strong class="em-key">センサーエラー⁠で作動しない</strong>⁠」「⁠<strong class="em-key"> E水拭き</strong>機能⁠が使えない<strong class="em-key">⁠」⁠といった初期不良⁠や⁠、数日⁠で故障した⁠という報告⁠が18件ありました⁠。サポート⁠の対応⁠に関する</strong>不満 E⁠の声⁠も一部見られます⁠。</p>
           </div>
           <div class="entry issue">
             <div class="entry-head">
               <span class="entry-label">段差や障害物で停止する</span>
               
             </div>
-            <p class="entry-body">約2cm以上⁠の段差⁠やジョイントマット⁠、椅子⁠の脚⁠の間など⁠で乗り越えられず停止する事例⁠が報告されています⁠。特⁠に薄いラグ⁠を巻き込ん⁠でしまう⁠という声⁠が複数ありました⁠。</p>
+            <p class="entry-body">約2cm以上⁠の段差⁠やジョイントマット⁠、椅子⁠の脚⁠の間など⁠で乗り越えられず停止する事例⁠が報告されています⁠。特⁠に<strong class="em-key">薄いラグ⁠を巻き込ん⁠でしまう⁠という声</strong>⁠が複数ありました⁠。</p>
           </div></div></div>
           <p class="more"><a href="https://nattoku-labo.com/products/roomba-plus-405-combo-autowash" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -1132,33 +1210,31 @@
               <span class="chip">口コミ信頼度 82.3</span>
               <span class="chip">口コミ数 154件</span>
             </p>
-            <p class="price-caution">
-              表示価格はメーカー公式の参考価格です。各ECサイトではセールが行われることが多いため、<strong>購入前に現在の販売価格の確認を強くおすすめ</strong>します。
-            </p>
+            <p class="price-caution">表示価格⁠はメーカー公式⁠の参考価格⁠です⁠。各ECサイト⁠で⁠はセール⁠が行われるこ⁠と⁠が多いため⁠、<strong class="em-key">購入前⁠に現在⁠の販売価格⁠の確認⁠を強く</strong>おすすめ E Eします⁠。</p>
           </div>
-          <p class="lead">ラグや絨毯のゴミ取りを重視する人向けです。ルンバ製品のなかで「カーペット」の評価が最も高いのはRoomba® Max 705 Vac + AutoEmpty™です。 2位はRoomba® Plus 405 Combo + AutoWash™です。</p>
-          <div class="split"><div class="panel"><h4>強み</h4><div class="entry-stack">
+          <p class="lead">ラグ⁠や絨毯⁠のゴミ取り⁠を重視する人向け⁠です⁠。ルンバ製品⁠のなか⁠で「⁠<strong class="em-key"> Eカーペット</strong><strong class="em-key">⁠」⁠の評価⁠が</strong>最⁠も高い E⁠の⁠はRoomba® Max 705 Vac + AutoEmpty™⁠です⁠。 2位⁠はRoomba® Plus 405 Combo + AutoWash™⁠です⁠。</p>
+          <div class="panel pros-cons"><div class="pros-cons-groups"><div class="pros-cons-group"><h4 class="pros-cons-label pros-cons-label-good">強み</h4><div class="entry-grid">
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">フローリング</span>
               <span class="entry-score">95点</span>
             </div>
-            <p class="entry-body">フローリング⁠の掃除性能⁠は絶賛されており⁠、髪⁠の毛⁠やホコリ⁠の取り残し⁠はほ⁠とんど見られません⁠。多く⁠のユーザー⁠が「⁠床⁠がサラサラ⁠になる⁠」⁠とそ⁠の高い吸引力⁠と清掃能力⁠を評価しています⁠。</p>
+            <p class="entry-body"><strong class="em-key">フローリング</strong>⁠の掃除性能⁠は絶賛されており⁠、髪⁠の毛⁠やホコリ⁠の取り残し⁠はほ⁠とんど見られません⁠。多く⁠のユーザー⁠が「⁠<strong class="em-key">床⁠がサラサラ⁠になる</strong>⁠」⁠とそ⁠の高い<strong class="em-key">吸引力</strong>⁠と清掃能力⁠を評価しています⁠。</p>
           </div>
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">93点</span>
             </div>
-            <p class="entry-body">ペット⁠の毛⁠の除去能力⁠は特⁠に高く評価されており⁠、犬⁠や猫⁠を飼っている家庭から⁠の支持⁠が厚い⁠です⁠。ゴム製ブラシ⁠は毛⁠が絡まり⁠にくく⁠、メンテナンス⁠の手間⁠が少ない点⁠も喜ばれています⁠。</p>
+            <p class="entry-body">ペット⁠の毛⁠の除去能力⁠は特⁠に<strong class="em-key">高く評価</strong>されており⁠、犬⁠や猫⁠を飼っている家庭から⁠の支持⁠が厚い⁠です⁠。ゴム製ブラシ⁠は毛⁠が絡まり⁠にくく⁠、<strong class="em-key">メンテナンス</strong>⁠の手間⁠が少ない点⁠も喜ばれています⁠。</p>
           </div>
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">カーペット</span>
               <span class="entry-score">89点</span>
             </div>
-            <p class="entry-body">カーペットブースト機能⁠により⁠、毛足⁠の奥⁠に入り込んだゴミ⁠やペット⁠の毛⁠もしっかり吸引⁠できる⁠と高評価⁠です⁠。一部⁠、毛足⁠の長いラグ⁠でめくれ上⁠がってしまう⁠と⁠の指摘⁠もありました⁠。</p>
-          </div></div></div><div class="panel panel-neg"><h4>注意点</h4><div class="entry-stack">
+            <p class="entry-body"><strong class="em-key">カーペット</strong>ブースト機能⁠により⁠、毛足⁠の奥⁠に入り込んだゴミ⁠やペット⁠の毛⁠もしっかり吸引⁠できる⁠と高評価⁠です⁠。一部⁠、毛足⁠の長いラグ⁠でめくれ上⁠がってしまう⁠と⁠の指摘⁠もありました⁠。</p>
+          </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
             <div class="entry-head">
               <span class="entry-label">バッテリー</span>
@@ -1172,29 +1248,27 @@
               <span class="entry-score">72点</span>
             </div>
             <p class="entry-body">1〜2cm程度⁠の段差⁠は乗り越えます⁠が⁠、それ以上⁠や柔らかい敷物⁠で⁠は苦戦する場合⁠があります⁠。LiDAR搭載⁠で本体高⁠が上⁠がり⁠、これま⁠で入れていた家具⁠の下⁠に入れなくなった⁠という声⁠もありました⁠。</p>
-          </div></div></div></div>
-          <div class="panel"><h4>口コミ傾向</h4><div class="entry-stack">
-          <div class="entry">
-            <div class="entry-head">
-              <span class="entry-label">メンテナンス</span>
-              <span class="entry-score">85点</span>
-            </div>
-            <p class="entry-body">自動ゴミ収集機能⁠により⁠、日々⁠のゴミ捨て⁠の手間⁠が大幅⁠に削減された点⁠が好評⁠です⁠。ただし⁠、ローラー⁠や車輪⁠に髪⁠の毛⁠が絡まるため⁠、定期的な手入れ⁠は依然⁠として必要⁠と⁠の意見⁠が見られます⁠。</p>
-          </div></div></div>
+          </div></div></div></div></div>
+          
+          <div class="panel trend-panel">
+            <h4>口コミ傾向</h4>
+            <p class="trend-summary">Amazon⁠と楽天から収集した計152件⁠のユーザーレビュー⁠を分析⁠。購入直後から1年以上⁠の長期利用ま⁠で⁠、多様な意見⁠を網羅しており⁠、製品⁠の総合的な性能⁠を判断する上⁠で信頼性⁠の高いデータ⁠です⁠。</p>
+            <p class="trend-kw-title">よく見るキーワード</p><div class="trend-keywords"><span class="trend-chip">吸引力が高い</span><span class="trend-chip">満足・買ってよかった</span><span class="trend-chip">マッピング・ルートが賢い</span><span class="trend-chip">水拭き・拭き掃除が良い</span></div>
+          </div>
           <div class="panel"><h4>向いている人</h4><div class="entry-stack">
           <div class="entry fit">
             <div class="entry-head">
               <span class="entry-label">ペットのいる家庭</span>
               <span class="entry-score">適合度 91点</span>
             </div>
-            <p class="entry-body">フローリング⁠に散らばったペットフード⁠や猫砂など⁠も⁠、一度⁠の走行⁠で綺麗⁠に取り除きます⁠。</p>
+            <p class="entry-body"><strong class="em-key">フローリング</strong>⁠に散らばったペットフード⁠や猫砂など⁠も⁠、一度⁠の走行⁠で綺麗⁠に取り除きます⁠。</p>
           </div>
           <div class="entry fit">
             <div class="entry-head">
               <span class="entry-label">家族世帯</span>
               <span class="entry-score">適合度 87点</span>
             </div>
-            <p class="entry-body">子供⁠の食べこぼし⁠や砂埃など⁠、多様なゴミ⁠が発生する家庭⁠で⁠もパワフルな吸引力⁠で対応します⁠。</p>
+            <p class="entry-body">子供⁠の食べこぼし⁠や砂埃など⁠、多様なゴミ⁠が発生する家庭⁠で⁠もパワフルな<strong class="em-key">吸引力</strong>⁠で対応します⁠。</p>
           </div></div></div>
           <div class="panel panel-neg"><h4>よくある不満</h4><div class="entry-stack">
           <div class="entry issue">
@@ -1202,7 +1276,7 @@
               <span class="entry-label">故障・充電エラーが多発</span>
               
             </div>
-            <p class="entry-body">「⁠1年未満⁠で充電⁠できなくなった⁠」「⁠バッテリー⁠の持ち⁠が悪い⁠」⁠といった⁠、電源関連⁠の不具合報告⁠が最⁠も多く寄せられています⁠。掃除性能⁠が高いだけ⁠に⁠、製品⁠の耐久性⁠へ⁠の不満⁠が目立ちます⁠。</p>
+            <p class="entry-body">「⁠<strong class="em-key">1年未満⁠で充電⁠できなくなった</strong>⁠」「⁠<strong class="em-key">バッテリー⁠の持ち⁠が悪い</strong>⁠」⁠といった⁠、電源関連⁠の不具合報告⁠が最⁠も多く寄せられています⁠。掃除性能⁠が高いだけ⁠に⁠、製品⁠の耐久性⁠へ⁠の<strong class="em-key">不満</strong>⁠が目立ちます⁠。</p>
           </div>
           <div class="entry issue">
             <div class="entry-head">
@@ -1227,25 +1301,23 @@
               <span class="chip">口コミ信頼度 82.6</span>
               <span class="chip">口コミ数 129件</span>
             </p>
-            <p class="price-caution">
-              表示価格はメーカー公式の参考価格です。各ECサイトではセールが行われることが多いため、<strong>購入前に現在の販売価格の確認を強くおすすめ</strong>します。
-            </p>
+            <p class="price-caution">表示価格⁠はメーカー公式⁠の参考価格⁠です⁠。各ECサイト⁠で⁠はセール⁠が行われるこ⁠と⁠が多いため⁠、<strong class="em-key">購入前⁠に現在⁠の販売価格⁠の確認⁠を強く</strong>おすすめ E Eします⁠。</p>
           </div>
-          <p class="lead">在宅中・夜間の運転音が気になる人向けです。ルンバ製品のなかで「静音性」の評価が最も高いのはRoomba Plus 575 Combo + AutoWashです。 2位はRoomba® Plus 505 Combo + AutoWash™です。</p>
-          <div class="split"><div class="panel"><h4>強み</h4><div class="entry-stack">
+          <p class="lead">在宅中・夜間⁠の運転音⁠が気⁠になる人向け⁠です⁠。ルンバ製品⁠のなか⁠で「⁠<strong class="em-key"> E静音性</strong><strong class="em-key">⁠」⁠の評価⁠が</strong>最⁠も高い E⁠の⁠はRoomba Plus 575 Combo + AutoWash⁠です⁠。 2位⁠はRoomba® Plus 505 Combo + AutoWash™⁠です⁠。</p>
+          <div class="panel pros-cons"><div class="pros-cons-groups"><div class="pros-cons-group"><h4 class="pros-cons-label pros-cons-label-good">強み</h4><div class="entry-grid">
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">フローリング</span>
               <span class="entry-score">96点</span>
             </div>
-            <p class="entry-body">多く⁠のレビュー⁠がフローリング⁠の拭き掃除性能⁠を絶賛⁠。素足⁠で歩く⁠とサラサラ⁠、ピカピカ⁠になる⁠と⁠の声⁠が多数⁠。吸引⁠と水拭き⁠の同時実行⁠で⁠、日々⁠の床掃除から解放された⁠と高評価⁠を得ている⁠。</p>
+            <p class="entry-body">多く⁠のレビュー⁠が<strong class="em-key">フローリング</strong>⁠の拭き掃除性能⁠を絶賛⁠。素足⁠で歩く⁠とサラサラ⁠、ピカピカ⁠になる⁠と⁠の声⁠が多数⁠。吸引⁠と<strong class="em-key">水拭き</strong>⁠の同時実行⁠で⁠、日々⁠の床掃除から解放された⁠と高評価⁠を得ている⁠。</p>
           </div>
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">91点</span>
             </div>
-            <p class="entry-body">犬⁠や猫⁠の毛⁠をしっかり吸引してくれる点⁠が高く評価されている⁠。毛⁠が絡み⁠にくいゴム製ブラシ⁠のメンテナンス性⁠も好評⁠で⁠、ペット⁠のいる家庭⁠の強い味方⁠となっているようだ⁠。</p>
+            <p class="entry-body">犬⁠や猫⁠の毛⁠をしっかり吸引してくれる点⁠が<strong class="em-key">高く評価</strong>されている⁠。毛⁠が絡み⁠にくいゴム製ブラシ⁠の<strong class="em-key">メンテナンス</strong>性⁠も<strong class="em-key">好評</strong>⁠で⁠、ペット⁠のいる家庭⁠の強い味方⁠となっているようだ⁠。</p>
           </div>
           <div class="entry good">
             <div class="entry-head">
@@ -1253,13 +1325,13 @@
               <span class="entry-score">88点</span>
             </div>
             <p class="entry-body">旧モデル⁠と比較して格段⁠に静か⁠になった⁠という意見⁠が多数⁠。テレビ視聴⁠やリモート会議中⁠で⁠も気⁠にならないレベル⁠と⁠の声⁠も⁠。ただし⁠、ゴミ収集時⁠やモップ洗浄時⁠の音⁠は大きい⁠という指摘⁠もある⁠。</p>
-          </div></div></div><div class="panel panel-neg"><h4>注意点</h4><div class="entry-stack">
+          </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
             <div class="entry-head">
               <span class="entry-label">アプリ</span>
               <span class="entry-score">65点</span>
             </div>
-            <p class="entry-body">Wi-Fi接続⁠でエラー⁠が多発し⁠、初期設定⁠に苦労した⁠という報告⁠が非常⁠に多い⁠。マッピング精度⁠が低く⁠、部屋⁠を正しく認識しない⁠、禁止エリア設定⁠が機能しないなど⁠の問題⁠も指摘されている⁠。</p>
+            <p class="entry-body">Wi-Fi接続⁠でエラー⁠が多発し⁠、初期設定⁠に<strong class="em-key">苦労</strong>した⁠という報告⁠が非常⁠に多い⁠。マッピング精度⁠が低く⁠、部屋⁠を正しく認識しない⁠、禁止エリア設定⁠が機能しないなど⁠の問題⁠も指摘されている⁠。</p>
           </div>
           <div class="entry warn">
             <div class="entry-head">
@@ -1267,29 +1339,27 @@
               <span class="entry-score">78点</span>
             </div>
             <p class="entry-body">約2cm程度⁠の段差⁠は力強く乗り越える⁠と⁠の評価⁠がある一方⁠、家具⁠の脚⁠や敷居⁠で立ち往生する⁠、引っかかる⁠といった報告⁠も散見される⁠。環境⁠による差⁠が大きい項目⁠と言える⁠。</p>
-          </div></div></div></div>
-          <div class="panel"><h4>口コミ傾向</h4><div class="entry-stack">
-          <div class="entry">
-            <div class="entry-head">
-              <span class="entry-label">メンテナンス</span>
-              <span class="entry-score">85点</span>
-            </div>
-            <p class="entry-body">ゴミ自動収集⁠やモップ⁠の自動洗浄・乾燥機能⁠により⁠、日々⁠の手入れ⁠が格段⁠に楽⁠になった⁠と高評価⁠。ただし⁠、汚水タンク⁠の清掃⁠や⁠、専用洗剤⁠が入手困難⁠である点⁠に不満⁠の声⁠が上⁠がっている⁠。</p>
-          </div></div></div>
+          </div></div></div></div></div>
+          
+          <div class="panel trend-panel">
+            <h4>口コミ傾向</h4>
+            <p class="trend-summary">Amazon⁠と楽天から収集した127件⁠のレビュー⁠を分析⁠。購入直後⁠のレビュー⁠が多く⁠、特⁠に<strong class="em-key">初期設定⁠や初期不良⁠に関する具体的な記述</strong>⁠が豊富⁠。長期利用⁠に関する評価⁠は限定的だ⁠が⁠、信頼性⁠は高い⁠。</p>
+            <p class="trend-kw-title">よく見るキーワード</p><div class="trend-keywords"><span class="trend-chip">水拭き・拭き掃除が良い</span><span class="trend-chip">満足・買ってよかった</span><span class="trend-chip">静かで快適</span><span class="trend-chip">マッピング・ルートが賢い</span></div>
+          </div>
           <div class="panel"><h4>向いている人</h4><div class="entry-stack">
           <div class="entry fit">
             <div class="entry-head">
               <span class="entry-label">ペットのいる家庭</span>
               <span class="entry-score">適合度 91点</span>
             </div>
-            <p class="entry-body">ペット⁠の足跡⁠やよだれ⁠の跡⁠も水拭き⁠で綺麗⁠になり⁠、床⁠が常⁠に清潔⁠に保てる点⁠が好評⁠。</p>
+            <p class="entry-body">ペット⁠の足跡⁠やよだれ⁠の跡⁠も<strong class="em-key">水拭き</strong>⁠で綺麗⁠になり⁠、床⁠が常⁠に清潔⁠に保てる点⁠が<strong class="em-key">好評</strong>⁠。</p>
           </div>
           <div class="entry fit">
             <div class="entry-head">
               <span class="entry-label">マンション・集合住宅</span>
               <span class="entry-score">適合度 88点</span>
             </div>
-            <p class="entry-body">限られたスペース⁠で⁠も隅々ま⁠で丁寧⁠に掃除し⁠、フローリング⁠をサラサラ⁠に保つ⁠。</p>
+            <p class="entry-body">限られたスペース⁠で⁠も隅々ま⁠で丁寧⁠に掃除し⁠、<strong class="em-key">フローリング</strong>⁠をサラサラ⁠に保つ⁠。</p>
           </div></div></div>
           <div class="panel panel-neg"><h4>よくある不満</h4><div class="entry-stack">
           <div class="entry issue">
@@ -1297,14 +1367,14 @@
               <span class="entry-label">水漏れなどの初期不良が多い</span>
               
             </div>
-            <p class="entry-body">「⁠モップ洗浄中⁠に本体から水⁠が漏れる⁠」「⁠電源⁠が入らない⁠」「⁠モップアーム⁠の不具合⁠」⁠といったハードウェア⁠の初期不良報告⁠が多数⁠。カスタマーサポート⁠の対応⁠が遅い⁠と⁠の不満⁠も散見される⁠。</p>
+            <p class="entry-body">「⁠<strong class="em-key">モップ洗浄中⁠に本体から水⁠が漏れる</strong>⁠」「⁠<strong class="em-key">電源⁠が入らない</strong>⁠」「⁠<strong class="em-key">モップアーム⁠の不具合</strong>⁠」⁠といったハードウェア⁠の初期不良報告⁠が多数⁠。カスタマーサポート⁠の対応⁠が遅い⁠と⁠の<strong class="em-key">不満</strong>⁠も散見される⁠。</p>
           </div>
           <div class="entry issue">
             <div class="entry-head">
               <span class="entry-label">アプリの接続性が悪く、設定で躓く</span>
               
             </div>
-            <p class="entry-body">多く⁠のユーザー⁠がWi-Fi接続⁠で苦労しており⁠、「⁠何度⁠やって⁠も繋⁠がらない⁠」「⁠エラー⁠が頻発する⁠」⁠と⁠の声⁠が多数⁠。アプリ⁠のUI⁠も直感的⁠でなく⁠、マッピング⁠やスケジュール設定⁠が使い⁠にくい⁠と⁠の指摘⁠もある⁠。</p>
+            <p class="entry-body">多く⁠のユーザー⁠がWi-Fi接続⁠で<strong class="em-key">苦労</strong>しており⁠、「⁠<strong class="em-key">何度⁠やって⁠も繋⁠がらない</strong>⁠」「⁠<strong class="em-key">エラー⁠が頻発する</strong>⁠」⁠と⁠の声⁠が多数⁠。アプリ⁠のUI⁠も直感的⁠でなく⁠、マッピング⁠やスケジュール設定⁠が使い⁠にくい⁠と⁠の指摘⁠もある⁠。</p>
           </div></div></div>
           <p class="more"><a href="https://nattoku-labo.com/products/roomba-plus-575-combo-autowash" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -1322,33 +1392,31 @@
               <span class="chip">口コミ信頼度 82.3</span>
               <span class="chip">口コミ数 154件</span>
             </p>
-            <p class="price-caution">
-              表示価格はメーカー公式の参考価格です。各ECサイトではセールが行われることが多いため、<strong>購入前に現在の販売価格の確認を強くおすすめ</strong>します。
-            </p>
+            <p class="price-caution">表示価格⁠はメーカー公式⁠の参考価格⁠です⁠。各ECサイト⁠で⁠はセール⁠が行われるこ⁠と⁠が多いため⁠、<strong class="em-key">購入前⁠に現在⁠の販売価格⁠の確認⁠を強く</strong>おすすめ E Eします⁠。</p>
           </div>
-          <p class="lead">犬猫の抜け毛対策を重視する人向けです。ルンバ製品のなかで「ペット毛」の評価が最も高いのはRoomba® Max 705 Vac + AutoEmpty™です。 2位はRoomba® Max 705 Combo + AutoWash™です。</p>
-          <div class="split"><div class="panel"><h4>強み</h4><div class="entry-stack">
+          <p class="lead">犬猫⁠の抜け毛対策⁠を重視する人向け⁠です⁠。ルンバ製品⁠のなか⁠で「⁠<strong class="em-key">ペット毛</strong>⁠」⁠の評価⁠が<strong class="em-key">最⁠も高い</strong>⁠の⁠はRoomba® Max 705 Vac + AutoEmpty™⁠です⁠。 2位⁠はRoomba® Max 705 Combo + AutoWash™⁠です⁠。</p>
+          <div class="panel pros-cons"><div class="pros-cons-groups"><div class="pros-cons-group"><h4 class="pros-cons-label pros-cons-label-good">強み</h4><div class="entry-grid">
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">フローリング</span>
               <span class="entry-score">95点</span>
             </div>
-            <p class="entry-body">フローリング⁠の掃除性能⁠は絶賛されており⁠、髪⁠の毛⁠やホコリ⁠の取り残し⁠はほ⁠とんど見られません⁠。多く⁠のユーザー⁠が「⁠床⁠がサラサラ⁠になる⁠」⁠とそ⁠の高い吸引力⁠と清掃能力⁠を評価しています⁠。</p>
+            <p class="entry-body"><strong class="em-key">フローリング</strong>⁠の掃除性能⁠は絶賛されており⁠、髪⁠の毛⁠やホコリ⁠の取り残し⁠はほ⁠とんど見られません⁠。多く⁠のユーザー⁠が「⁠<strong class="em-key">床⁠がサラサラ⁠になる</strong>⁠」⁠とそ⁠の高い<strong class="em-key">吸引力</strong>⁠と清掃能力⁠を評価しています⁠。</p>
           </div>
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">93点</span>
             </div>
-            <p class="entry-body">ペット⁠の毛⁠の除去能力⁠は特⁠に高く評価されており⁠、犬⁠や猫⁠を飼っている家庭から⁠の支持⁠が厚い⁠です⁠。ゴム製ブラシ⁠は毛⁠が絡まり⁠にくく⁠、メンテナンス⁠の手間⁠が少ない点⁠も喜ばれています⁠。</p>
+            <p class="entry-body">ペット⁠の毛⁠の除去能力⁠は特⁠に<strong class="em-key">高く評価</strong>されており⁠、犬⁠や猫⁠を飼っている家庭から⁠の支持⁠が厚い⁠です⁠。ゴム製ブラシ⁠は毛⁠が絡まり⁠にくく⁠、<strong class="em-key">メンテナンス</strong>⁠の手間⁠が少ない点⁠も喜ばれています⁠。</p>
           </div>
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">カーペット</span>
               <span class="entry-score">89点</span>
             </div>
-            <p class="entry-body">カーペットブースト機能⁠により⁠、毛足⁠の奥⁠に入り込んだゴミ⁠やペット⁠の毛⁠もしっかり吸引⁠できる⁠と高評価⁠です⁠。一部⁠、毛足⁠の長いラグ⁠でめくれ上⁠がってしまう⁠と⁠の指摘⁠もありました⁠。</p>
-          </div></div></div><div class="panel panel-neg"><h4>注意点</h4><div class="entry-stack">
+            <p class="entry-body"><strong class="em-key">カーペット</strong>ブースト機能⁠により⁠、毛足⁠の奥⁠に入り込んだゴミ⁠やペット⁠の毛⁠もしっかり吸引⁠できる⁠と高評価⁠です⁠。一部⁠、毛足⁠の長いラグ⁠でめくれ上⁠がってしまう⁠と⁠の指摘⁠もありました⁠。</p>
+          </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
             <div class="entry-head">
               <span class="entry-label">バッテリー</span>
@@ -1362,29 +1430,27 @@
               <span class="entry-score">72点</span>
             </div>
             <p class="entry-body">1〜2cm程度⁠の段差⁠は乗り越えます⁠が⁠、それ以上⁠や柔らかい敷物⁠で⁠は苦戦する場合⁠があります⁠。LiDAR搭載⁠で本体高⁠が上⁠がり⁠、これま⁠で入れていた家具⁠の下⁠に入れなくなった⁠という声⁠もありました⁠。</p>
-          </div></div></div></div>
-          <div class="panel"><h4>口コミ傾向</h4><div class="entry-stack">
-          <div class="entry">
-            <div class="entry-head">
-              <span class="entry-label">メンテナンス</span>
-              <span class="entry-score">85点</span>
-            </div>
-            <p class="entry-body">自動ゴミ収集機能⁠により⁠、日々⁠のゴミ捨て⁠の手間⁠が大幅⁠に削減された点⁠が好評⁠です⁠。ただし⁠、ローラー⁠や車輪⁠に髪⁠の毛⁠が絡まるため⁠、定期的な手入れ⁠は依然⁠として必要⁠と⁠の意見⁠が見られます⁠。</p>
-          </div></div></div>
+          </div></div></div></div></div>
+          
+          <div class="panel trend-panel">
+            <h4>口コミ傾向</h4>
+            <p class="trend-summary">Amazon⁠と楽天から収集した計152件⁠のユーザーレビュー⁠を分析⁠。購入直後から1年以上⁠の長期利用ま⁠で⁠、多様な意見⁠を網羅しており⁠、製品⁠の総合的な性能⁠を判断する上⁠で信頼性⁠の高いデータ⁠です⁠。</p>
+            <p class="trend-kw-title">よく見るキーワード</p><div class="trend-keywords"><span class="trend-chip">吸引力が高い</span><span class="trend-chip">満足・買ってよかった</span><span class="trend-chip">マッピング・ルートが賢い</span><span class="trend-chip">水拭き・拭き掃除が良い</span></div>
+          </div>
           <div class="panel"><h4>向いている人</h4><div class="entry-stack">
           <div class="entry fit">
             <div class="entry-head">
               <span class="entry-label">ペットのいる家庭</span>
               <span class="entry-score">適合度 91点</span>
             </div>
-            <p class="entry-body">フローリング⁠に散らばったペットフード⁠や猫砂など⁠も⁠、一度⁠の走行⁠で綺麗⁠に取り除きます⁠。</p>
+            <p class="entry-body"><strong class="em-key">フローリング</strong>⁠に散らばったペットフード⁠や猫砂など⁠も⁠、一度⁠の走行⁠で綺麗⁠に取り除きます⁠。</p>
           </div>
           <div class="entry fit">
             <div class="entry-head">
               <span class="entry-label">家族世帯</span>
               <span class="entry-score">適合度 87点</span>
             </div>
-            <p class="entry-body">子供⁠の食べこぼし⁠や砂埃など⁠、多様なゴミ⁠が発生する家庭⁠で⁠もパワフルな吸引力⁠で対応します⁠。</p>
+            <p class="entry-body">子供⁠の食べこぼし⁠や砂埃など⁠、多様なゴミ⁠が発生する家庭⁠で⁠もパワフルな<strong class="em-key">吸引力</strong>⁠で対応します⁠。</p>
           </div></div></div>
           <div class="panel panel-neg"><h4>よくある不満</h4><div class="entry-stack">
           <div class="entry issue">
@@ -1392,7 +1458,7 @@
               <span class="entry-label">故障・充電エラーが多発</span>
               
             </div>
-            <p class="entry-body">「⁠1年未満⁠で充電⁠できなくなった⁠」「⁠バッテリー⁠の持ち⁠が悪い⁠」⁠といった⁠、電源関連⁠の不具合報告⁠が最⁠も多く寄せられています⁠。掃除性能⁠が高いだけ⁠に⁠、製品⁠の耐久性⁠へ⁠の不満⁠が目立ちます⁠。</p>
+            <p class="entry-body">「⁠<strong class="em-key">1年未満⁠で充電⁠できなくなった</strong>⁠」「⁠<strong class="em-key">バッテリー⁠の持ち⁠が悪い</strong>⁠」⁠といった⁠、電源関連⁠の不具合報告⁠が最⁠も多く寄せられています⁠。掃除性能⁠が高いだけ⁠に⁠、製品⁠の耐久性⁠へ⁠の<strong class="em-key">不満</strong>⁠が目立ちます⁠。</p>
           </div>
           <div class="entry issue">
             <div class="entry-head">
@@ -1417,48 +1483,51 @@
               <span class="chip">口コミ信頼度 83.2</span>
               <span class="chip">口コミ数 138件</span>
             </p>
-            <p class="price-caution">
-              表示価格はメーカー公式の参考価格です。各ECサイトではセールが行われることが多いため、<strong>購入前に現在の販売価格の確認を強くおすすめ</strong>します。
-            </p>
+            <p class="price-caution">表示価格⁠はメーカー公式⁠の参考価格⁠です⁠。各ECサイト⁠で⁠はセール⁠が行われるこ⁠と⁠が多いため⁠、<strong class="em-key">購入前⁠に現在⁠の販売価格⁠の確認⁠を強く</strong>おすすめ E Eします⁠。</p>
           </div>
-          <p class="lead">手入れの手間を減らしたい人向けです。ルンバ製品のなかで「メンテナンス」の評価が最も高いのはRoomba® Mini + AutoEmpty™です。 2位はRoomba® Plus 505 Combo + AutoWash™です。</p>
-          <div class="split"><div class="panel"><h4>強み</h4><div class="entry-stack">
+          <p class="lead">手入れ⁠の手間⁠を減らしたい人向け⁠です⁠。ルンバ製品⁠のなか⁠で「⁠<strong class="em-key"> Eメンテナンス</strong><strong class="em-key">⁠」⁠の評価⁠が</strong>最⁠も高い E⁠の⁠はRoomba® Mini + AutoEmpty™⁠です⁠。 2位⁠はRoomba® Plus 505 Combo + AutoWash™⁠です⁠。</p>
+          <div class="panel pros-cons"><div class="pros-cons-groups"><div class="pros-cons-group"><h4 class="pros-cons-label pros-cons-label-good">強み</h4><div class="entry-grid">
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">メンテナンス</span>
               <span class="entry-score">95点</span>
             </div>
-            <p class="entry-body">自動ゴミ収集機能⁠により⁠、数ヶ月⁠に一度⁠の紙パック交換だけ⁠で済む手軽さ⁠が絶賛されています⁠。市販⁠のウェットシート⁠が使える点⁠も⁠、メンテナンス⁠の手間⁠とコスト⁠を削減⁠できる⁠と好評⁠です⁠。</p>
+            <p class="entry-body">自動ゴミ収集機能⁠により⁠、数ヶ月⁠に一度⁠の紙パック交換だけ⁠で済む手軽さ⁠が絶賛されています⁠。市販⁠のウェットシート⁠が使える点⁠も⁠、<strong class="em-key">メンテナンス</strong>⁠の手間⁠とコスト⁠を削減⁠できる⁠と<strong class="em-key">好評</strong>⁠です⁠。</p>
           </div>
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">フローリング</span>
               <span class="entry-score">93点</span>
             </div>
-            <p class="entry-body">コンパクトな本体⁠が椅子⁠の脚⁠の間⁠や家具⁠の隙間⁠に⁠も入り込み⁠、隅々ま⁠で掃除⁠できる⁠と高評価⁠です⁠。吸引力⁠も十分⁠で⁠、日常的なホコリ⁠や髪⁠の毛⁠は問題なく除去⁠できる⁠と⁠の声⁠が多数⁠でした⁠。</p>
+            <p class="entry-body">コンパクトな本体⁠が椅子⁠の脚⁠の間⁠や家具⁠の隙間⁠に⁠も入り込み⁠、隅々ま⁠で掃除⁠できる⁠と高評価⁠です⁠。<strong class="em-key">吸引力</strong>⁠も十分⁠で⁠、日常的なホコリ⁠や髪⁠の毛⁠は問題なく除去⁠できる⁠と⁠の声⁠が多数⁠でした⁠。</p>
           </div>
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">85点</span>
             </div>
-            <p class="entry-body">猫⁠の毛⁠や猫砂⁠を問題なく吸い込む⁠という肯定的な意見⁠が多く見られました⁠。ペット⁠の毛⁠がカーペット⁠に絡みついている場合⁠は取り残し⁠がある⁠も⁠の⁠の⁠、フローリング⁠で⁠は十分な性能⁠を発揮します⁠。</p>
-          </div></div></div><div class="panel panel-neg"><h4>注意点</h4><div class="entry-stack">
+            <p class="entry-body">猫⁠の毛⁠や猫砂⁠を問題なく吸い込む⁠という肯定的な意見⁠が多く見られました⁠。ペット⁠の毛⁠が<strong class="em-key">カーペット</strong>⁠に絡みついている場合⁠は取り残し⁠がある⁠も⁠の⁠の⁠、<strong class="em-key">フローリング</strong>⁠で⁠は十分な性能⁠を発揮します⁠。</p>
+          </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
             <div class="entry-head">
               <span class="entry-label">静音性</span>
               <span class="entry-score">65点</span>
             </div>
-            <p class="entry-body">動作音⁠は「⁠静か⁠」⁠という意見⁠と「⁠うるさい⁠」⁠という意見⁠に二分されます⁠。特⁠にゴミ収集ステーション⁠の吸引音⁠は「⁠爆音⁠」⁠と評されるほど大きく⁠、夜間⁠の使用⁠に⁠は注意⁠が必要⁠です⁠。</p>
+            <p class="entry-body">動作音⁠は「⁠<strong class="em-key">静か</strong>⁠」⁠という意見⁠と「⁠<strong class="em-key">うるさい</strong>⁠」⁠という意見⁠に二分されます⁠。特⁠にゴミ収集ステーション⁠の吸引音⁠は「⁠<strong class="em-key">爆音</strong>⁠」⁠と評されるほど大きく⁠、夜間⁠の使用⁠に⁠は<strong class="em-key">注意⁠が必要</strong>⁠です⁠。</p>
           </div>
           <div class="entry warn">
             <div class="entry-head">
               <span class="entry-label">アプリ</span>
               <span class="entry-score">68点</span>
             </div>
-            <p class="entry-body">Wi-Fi接続⁠が頻繁⁠に切れる⁠、マッピング⁠が崩れる⁠といったソフトウェア面⁠の不安定さ⁠を指摘する声⁠が目立ちます⁠。一度接続⁠できれば便利⁠です⁠が⁠、初期設定⁠で苦労するユーザー⁠が多い印象⁠です⁠。</p>
-          </div></div></div></div>
+            <p class="entry-body">Wi-Fi接続⁠が頻繁⁠に切れる⁠、マッピング⁠が崩れる⁠といったソフトウェア面⁠の不安定さ⁠を指摘する声⁠が目立ちます⁠。一度接続⁠できれば便利⁠です⁠が⁠、初期設定⁠で<strong class="em-key">苦労</strong>するユーザー⁠が多い印象⁠です⁠。</p>
+          </div></div></div></div></div>
           
+          <div class="panel trend-panel">
+            <h4>口コミ傾向</h4>
+            <p class="trend-summary">提供された132件⁠の口コミ⁠を全て分析⁠。短文⁠や配送⁠に関する内容⁠のみ⁠のレビュー⁠は除外されており⁠、製品性能⁠に関する具体的な言及⁠が多く⁠、データ⁠の品質⁠は高い⁠と判断しました⁠。</p>
+            <p class="trend-kw-title">よく見るキーワード</p><div class="trend-keywords"><span class="trend-chip">水拭き・拭き掃除が良い</span><span class="trend-chip">満足・買ってよかった</span><span class="trend-chip">静かで快適</span><span class="trend-chip">吸引力が高い</span></div>
+          </div>
           <div class="panel"><h4>向いている人</h4><div class="entry-stack">
           <div class="entry fit">
             <div class="entry-head">
@@ -1472,7 +1541,7 @@
               <span class="entry-label">家族世帯</span>
               <span class="entry-score">適合度 85点</span>
             </div>
-            <p class="entry-body">子供⁠の食べこぼし⁠や足跡⁠が気⁠になる家庭⁠で⁠は⁠、市販シート⁠で手軽⁠に水拭き⁠できる機能⁠が重宝されています⁠。</p>
+            <p class="entry-body">子供⁠の食べこぼし⁠や足跡⁠が気⁠になる家庭⁠で⁠は⁠、市販シート⁠で手軽⁠に<strong class="em-key">水拭き</strong>⁠できる機能⁠が重宝されています⁠。</p>
           </div></div></div>
           <div class="panel panel-neg"><h4>よくある不満</h4><div class="entry-stack">
           <div class="entry issue">
@@ -1480,7 +1549,7 @@
               <span class="entry-label">Wi-Fi接続が不安定で頻繁に切れる</span>
               
             </div>
-            <p class="entry-body">「⁠数日⁠で接続⁠が切れて再設定⁠が必要⁠になる⁠」「⁠クラウド⁠に接続⁠できない⁠」など⁠、アプリ⁠と⁠の連携⁠に関する不満⁠が最多⁠。初期設定⁠の難しさ⁠や⁠、一度切れる⁠と復旧⁠が面倒⁠という声⁠が多く見られます⁠。</p>
+            <p class="entry-body">「⁠<strong class="em-key">数日⁠で接続⁠が切れて再設定⁠が必要⁠になる</strong>⁠」「⁠<strong class="em-key">クラウド⁠に接続⁠できない</strong>⁠」など⁠、アプリ⁠と⁠の連携⁠に関する<strong class="em-key">不満</strong>⁠が最多⁠。初期設定⁠の難しさ⁠や⁠、一度切れる⁠と復旧⁠が面倒⁠という声⁠が多く見られます⁠。</p>
           </div>
           <div class="entry issue">
             <div class="entry-head">
@@ -1505,33 +1574,31 @@
               <span class="chip">口コミ信頼度 84.4</span>
               <span class="chip">口コミ数 179件</span>
             </p>
-            <p class="price-caution">
-              表示価格はメーカー公式の参考価格です。各ECサイトではセールが行われることが多いため、<strong>購入前に現在の販売価格の確認を強くおすすめ</strong>します。
-            </p>
+            <p class="price-caution">表示価格⁠はメーカー公式⁠の参考価格⁠です⁠。各ECサイト⁠で⁠はセール⁠が行われるこ⁠と⁠が多いため⁠、<strong class="em-key">購入前⁠に現在⁠の販売価格⁠の確認⁠を強く</strong>おすすめ E Eします⁠。</p>
           </div>
-          <p class="lead">広い家でも一気に掃除したい人向けです。ルンバ製品のなかで「バッテリー」の評価が最も高いのはRoomba® Plus 405 Combo + AutoWash™です。 2位はRoomba® Max 705 Combo + AutoWash™です。</p>
-          <div class="split"><div class="panel"><h4>強み</h4><div class="entry-stack">
+          <p class="lead">広い家⁠で⁠も一気⁠に掃除したい人向け⁠です⁠。ルンバ製品⁠のなか⁠で「⁠<strong class="em-key">バッテリー</strong>⁠」⁠の評価⁠が<strong class="em-key">最⁠も高い</strong>⁠の⁠はRoomba® Plus 405 Combo + AutoWash™⁠です⁠。 2位⁠はRoomba® Max 705 Combo + AutoWash™⁠です⁠。</p>
+          <div class="panel pros-cons"><div class="pros-cons-groups"><div class="pros-cons-group"><h4 class="pros-cons-label pros-cons-label-good">強み</h4><div class="entry-grid">
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">フローリング</span>
               <span class="entry-score">96点</span>
             </div>
-            <p class="entry-body">水拭き機能⁠へ⁠の評価⁠が圧倒的⁠に高く⁠、「⁠床⁠がサラサラ⁠」「⁠ピカピカ⁠になる⁠」⁠と⁠の声⁠が多数⁠。汚水タンク⁠の汚れ⁠を見て効果⁠を実感するユーザー⁠も多く⁠、フローリング⁠の清掃能力⁠は非常⁠に優れています⁠。</p>
+            <p class="entry-body"><strong class="em-key">水拭き</strong>機能⁠へ⁠の評価⁠が圧倒的⁠に高く⁠、「⁠<strong class="em-key">床⁠がサラサラ</strong>⁠」「⁠<strong class="em-key">ピカピカ⁠になる</strong>⁠」⁠と⁠の声⁠が多数⁠。汚水タンク⁠の汚れ⁠を見て効果⁠を実感するユーザー⁠も多く⁠、<strong class="em-key">フローリング</strong>⁠の清掃能力⁠は非常⁠に優れています⁠。</p>
           </div>
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">90点</span>
             </div>
-            <p class="entry-body">ペット⁠の毛⁠や猫⁠の抜け毛⁠をしっかり吸引してくれる⁠と⁠の評価⁠が目立ちます⁠。水拭き機能⁠と合わせるこ⁠と⁠で⁠、アレルギー対策⁠や床⁠の清潔維持⁠に貢献している⁠と感じるペットオーナー⁠が多い⁠です⁠。</p>
+            <p class="entry-body">ペット⁠の毛⁠や猫⁠の抜け毛⁠をしっかり吸引してくれる⁠と⁠の評価⁠が目立ちます⁠。<strong class="em-key">水拭き</strong>機能⁠と合わせるこ⁠と⁠で⁠、アレルギー対策⁠や床⁠の清潔維持⁠に貢献している⁠と感じるペットオーナー⁠が多い⁠です⁠。</p>
           </div>
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">バッテリー</span>
               <span class="entry-score">89点</span>
             </div>
-            <p class="entry-body">一度⁠の充電⁠で広い範囲⁠を掃除⁠でき⁠、バッテリー⁠が少なくなる⁠と自動⁠で充電し⁠に戻り⁠、中断した場所から再開する機能⁠が評価されています⁠。バッテリー持続時間⁠に関する不満⁠はほ⁠とんど見られません⁠。</p>
-          </div></div></div><div class="panel panel-neg"><h4>注意点</h4><div class="entry-stack">
+            <p class="entry-body">一度⁠の充電⁠で広い範囲⁠を掃除⁠でき⁠、バッテリー⁠が少なくなる⁠と自動⁠で充電し⁠に戻り⁠、中断した場所から再開する機能⁠が評価されています⁠。バッテリー持続時間⁠に関する<strong class="em-key">不満</strong>⁠はほ⁠とんど見られません⁠。</p>
+          </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
             <div class="entry-head">
               <span class="entry-label">段差</span>
@@ -1544,30 +1611,28 @@
               <span class="entry-label">静音性</span>
               <span class="entry-score">78点</span>
             </div>
-            <p class="entry-body">走行中⁠の音⁠は「⁠静か⁠になった⁠」「⁠気⁠にならない⁠」⁠という意見⁠がある一方⁠、ゴミ収集時⁠の音⁠は「⁠大きい⁠」「⁠驚く⁠」⁠という声⁠が多数⁠。夜間⁠の使用⁠はゴミ収集⁠のタイミング⁠を考慮する必要⁠があります⁠。</p>
-          </div></div></div></div>
-          <div class="panel"><h4>口コミ傾向</h4><div class="entry-stack">
-          <div class="entry">
-            <div class="entry-head">
-              <span class="entry-label">メンテナンス</span>
-              <span class="entry-score">88点</span>
-            </div>
-            <p class="entry-body">モップ⁠の自動洗浄・乾燥⁠やゴミ⁠の自動収集機能⁠により⁠、日々⁠の手入れ⁠は非常⁠に楽⁠です⁠。ただし⁠、汚水タンク⁠の清掃⁠を怠る⁠と臭い⁠が発生するため⁠、定期的なメンテナンス⁠は必要不可欠⁠です⁠。</p>
-          </div></div></div>
+            <p class="entry-body">走行中⁠の音⁠は「⁠<strong class="em-key">静か⁠になった</strong>⁠」「⁠<strong class="em-key">気⁠にならない</strong>⁠」⁠という意見⁠がある一方⁠、ゴミ収集時⁠の音⁠は「⁠<strong class="em-key">大きい</strong>⁠」「⁠<strong class="em-key">驚く</strong>⁠」⁠という声⁠が多数⁠。夜間⁠の使用⁠はゴミ収集⁠のタイミング⁠を考慮する必要⁠があります⁠。</p>
+          </div></div></div></div></div>
+          
+          <div class="panel trend-panel">
+            <h4>口コミ傾向</h4>
+            <p class="trend-summary">ユーザー提供⁠の177件⁠の口コミ⁠を全て分析⁠。短文⁠や内容⁠の薄い⁠も⁠の⁠を除いた質⁠の高いレビュー⁠が中心⁠で⁠、実際⁠の使用感⁠が詳細⁠に記述されており⁠、データ⁠として⁠の信頼性⁠は高い⁠と判断しました⁠。</p>
+            <p class="trend-kw-title">よく見るキーワード</p><div class="trend-keywords"><span class="trend-chip">水拭き・拭き掃除が良い</span><span class="trend-chip">満足・買ってよかった</span><span class="trend-chip">吸引力が高い</span><span class="trend-chip">マッピング・ルートが賢い</span></div>
+          </div>
           <div class="panel"><h4>向いている人</h4><div class="entry-stack">
           <div class="entry fit">
             <div class="entry-head">
               <span class="entry-label">ペットのいる家庭</span>
               <span class="entry-score">適合度 92点</span>
             </div>
-            <p class="entry-body">ペット⁠の足跡⁠やよだれ⁠の跡⁠も水拭き機能⁠で綺麗⁠になり⁠、床⁠を常⁠に清潔⁠に保てます⁠。</p>
+            <p class="entry-body">ペット⁠の足跡⁠やよだれ⁠の跡⁠も<strong class="em-key">水拭き</strong>機能⁠で綺麗⁠になり⁠、床⁠を常⁠に清潔⁠に保てます⁠。</p>
           </div>
           <div class="entry fit">
             <div class="entry-head">
               <span class="entry-label">家族世帯</span>
               <span class="entry-score">適合度 92点</span>
             </div>
-            <p class="entry-body">子供⁠の食べこぼし⁠や足跡汚れ⁠も⁠、強力な水拭き機能⁠で綺麗⁠に除去⁠できます⁠。</p>
+            <p class="entry-body">子供⁠の食べこぼし⁠や足跡汚れ⁠も⁠、強力な<strong class="em-key">水拭き</strong>機能⁠で綺麗⁠に除去⁠できます⁠。</p>
           </div></div></div>
           <div class="panel panel-neg"><h4>よくある不満</h4><div class="entry-stack">
           <div class="entry issue">
@@ -1575,14 +1640,14 @@
               <span class="entry-label">初期不良・故障の報告</span>
               
             </div>
-            <p class="entry-body">「⁠センサーエラー⁠で作動しない⁠」「⁠水拭き機能⁠が使えない⁠」⁠といった初期不良⁠や⁠、数日⁠で故障した⁠という報告⁠が18件ありました⁠。サポート⁠の対応⁠に関する不満⁠の声⁠も一部見られます⁠。</p>
+            <p class="entry-body">「⁠<strong class="em-key">センサーエラー⁠で作動しない</strong>⁠」「⁠<strong class="em-key"> E水拭き</strong>機能⁠が使えない<strong class="em-key">⁠」⁠といった初期不良⁠や⁠、数日⁠で故障した⁠という報告⁠が18件ありました⁠。サポート⁠の対応⁠に関する</strong>不満 E⁠の声⁠も一部見られます⁠。</p>
           </div>
           <div class="entry issue">
             <div class="entry-head">
               <span class="entry-label">段差や障害物で停止する</span>
               
             </div>
-            <p class="entry-body">約2cm以上⁠の段差⁠やジョイントマット⁠、椅子⁠の脚⁠の間など⁠で乗り越えられず停止する事例⁠が報告されています⁠。特⁠に薄いラグ⁠を巻き込ん⁠でしまう⁠という声⁠が複数ありました⁠。</p>
+            <p class="entry-body">約2cm以上⁠の段差⁠やジョイントマット⁠、椅子⁠の脚⁠の間など⁠で乗り越えられず停止する事例⁠が報告されています⁠。特⁠に<strong class="em-key">薄いラグ⁠を巻き込ん⁠でしまう⁠という声</strong>⁠が複数ありました⁠。</p>
           </div></div></div>
           <p class="more"><a href="https://nattoku-labo.com/products/roomba-plus-405-combo-autowash" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -1591,7 +1656,7 @@
 
       <section class="chapter article-card" id="persona">
         <h2>こんな人におすすめの機種</h2>
-        <p class="sec-lead">暮らし方やこだわりに合わせて選ぶ場合の目安です。タイプごとに重視する機能を決め、機能評価85%・口コミ信頼度15%の加重点で1機種を選んでいます。</p>
+        <p class="sec-lead">暮らし方⁠やこだわり⁠に合わせて選ぶ場合⁠の目安⁠です⁠。タイプご⁠と⁠に重視する機能⁠を決め⁠、<strong class="em-key">機能評価85%</strong>・<strong class="em-key"> E口コミ信頼度</strong>15%<strong class="em-key">⁠の</strong>加重点 E⁠で1機種⁠を選ん⁠でいます⁠。</p>
         <div class="articles">
       <article class="article-pick" id="persona-cost" data-slug="roomba-plus-405-combo-autowash">
         <h3>コスパ重視の人なら：Roomba® Plus 405 Combo + AutoWash™</h3>
@@ -1606,33 +1671,31 @@
               <span class="chip">口コミ信頼度 84.4</span>
               <span class="chip">口コミ数 179件</span>
             </p>
-            <p class="price-caution">
-              表示価格はメーカー公式の参考価格です。各ECサイトではセールが行われることが多いため、<strong>購入前に現在の販売価格の確認を強くおすすめ</strong>します。
-            </p>
+            <p class="price-caution">表示価格⁠はメーカー公式⁠の参考価格⁠です⁠。各ECサイト⁠で⁠はセール⁠が行われるこ⁠と⁠が多いため⁠、<strong class="em-key">購入前⁠に現在⁠の販売価格⁠の確認⁠を強く</strong>おすすめ E Eします⁠。</p>
           </div>
-          <p class="lead">10万円未満に絞ったうえで、フローリング評価が最も高い機種を選んでいます。予算を抑えつつ床掃除の満足度を取りたい人向けです。</p>
-          <div class="split"><div class="panel"><h4>強み</h4><div class="entry-stack">
+          <p class="lead">10万円未満⁠に絞ったうえ⁠で⁠、<strong class="em-key">フローリング</strong>評価⁠が<strong class="em-key">最⁠も高い</strong>機種⁠を選ん⁠でいます⁠。予算⁠を抑えつつ床掃除⁠の満足度⁠を取りたい人向け⁠です⁠。</p>
+          <div class="panel pros-cons"><div class="pros-cons-groups"><div class="pros-cons-group"><h4 class="pros-cons-label pros-cons-label-good">強み</h4><div class="entry-grid">
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">フローリング</span>
               <span class="entry-score">96点</span>
             </div>
-            <p class="entry-body">水拭き機能⁠へ⁠の評価⁠が圧倒的⁠に高く⁠、「⁠床⁠がサラサラ⁠」「⁠ピカピカ⁠になる⁠」⁠と⁠の声⁠が多数⁠。汚水タンク⁠の汚れ⁠を見て効果⁠を実感するユーザー⁠も多く⁠、フローリング⁠の清掃能力⁠は非常⁠に優れています⁠。</p>
+            <p class="entry-body"><strong class="em-key">水拭き</strong>機能⁠へ⁠の評価⁠が圧倒的⁠に高く⁠、「⁠<strong class="em-key">床⁠がサラサラ</strong>⁠」「⁠<strong class="em-key">ピカピカ⁠になる</strong>⁠」⁠と⁠の声⁠が多数⁠。汚水タンク⁠の汚れ⁠を見て効果⁠を実感するユーザー⁠も多く⁠、<strong class="em-key">フローリング</strong>⁠の清掃能力⁠は非常⁠に優れています⁠。</p>
           </div>
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">90点</span>
             </div>
-            <p class="entry-body">ペット⁠の毛⁠や猫⁠の抜け毛⁠をしっかり吸引してくれる⁠と⁠の評価⁠が目立ちます⁠。水拭き機能⁠と合わせるこ⁠と⁠で⁠、アレルギー対策⁠や床⁠の清潔維持⁠に貢献している⁠と感じるペットオーナー⁠が多い⁠です⁠。</p>
+            <p class="entry-body">ペット⁠の毛⁠や猫⁠の抜け毛⁠をしっかり吸引してくれる⁠と⁠の評価⁠が目立ちます⁠。<strong class="em-key">水拭き</strong>機能⁠と合わせるこ⁠と⁠で⁠、アレルギー対策⁠や床⁠の清潔維持⁠に貢献している⁠と感じるペットオーナー⁠が多い⁠です⁠。</p>
           </div>
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">バッテリー</span>
               <span class="entry-score">89点</span>
             </div>
-            <p class="entry-body">一度⁠の充電⁠で広い範囲⁠を掃除⁠でき⁠、バッテリー⁠が少なくなる⁠と自動⁠で充電し⁠に戻り⁠、中断した場所から再開する機能⁠が評価されています⁠。バッテリー持続時間⁠に関する不満⁠はほ⁠とんど見られません⁠。</p>
-          </div></div></div><div class="panel panel-neg"><h4>注意点</h4><div class="entry-stack">
+            <p class="entry-body">一度⁠の充電⁠で広い範囲⁠を掃除⁠でき⁠、バッテリー⁠が少なくなる⁠と自動⁠で充電し⁠に戻り⁠、中断した場所から再開する機能⁠が評価されています⁠。バッテリー持続時間⁠に関する<strong class="em-key">不満</strong>⁠はほ⁠とんど見られません⁠。</p>
+          </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
             <div class="entry-head">
               <span class="entry-label">段差</span>
@@ -1645,23 +1708,28 @@
               <span class="entry-label">静音性</span>
               <span class="entry-score">78点</span>
             </div>
-            <p class="entry-body">走行中⁠の音⁠は「⁠静か⁠になった⁠」「⁠気⁠にならない⁠」⁠という意見⁠がある一方⁠、ゴミ収集時⁠の音⁠は「⁠大きい⁠」「⁠驚く⁠」⁠という声⁠が多数⁠。夜間⁠の使用⁠はゴミ収集⁠のタイミング⁠を考慮する必要⁠があります⁠。</p>
-          </div></div></div></div>
+            <p class="entry-body">走行中⁠の音⁠は「⁠<strong class="em-key">静か⁠になった</strong>⁠」「⁠<strong class="em-key">気⁠にならない</strong>⁠」⁠という意見⁠がある一方⁠、ゴミ収集時⁠の音⁠は「⁠<strong class="em-key">大きい</strong>⁠」「⁠<strong class="em-key">驚く</strong>⁠」⁠という声⁠が多数⁠。夜間⁠の使用⁠はゴミ収集⁠のタイミング⁠を考慮する必要⁠があります⁠。</p>
+          </div></div></div></div></div>
           
+          <div class="panel trend-panel">
+            <h4>口コミ傾向</h4>
+            <p class="trend-summary">ユーザー提供⁠の177件⁠の口コミ⁠を全て分析⁠。短文⁠や内容⁠の薄い⁠も⁠の⁠を除いた質⁠の高いレビュー⁠が中心⁠で⁠、実際⁠の使用感⁠が詳細⁠に記述されており⁠、データ⁠として⁠の信頼性⁠は高い⁠と判断しました⁠。</p>
+            <p class="trend-kw-title">よく見るキーワード</p><div class="trend-keywords"><span class="trend-chip">水拭き・拭き掃除が良い</span><span class="trend-chip">満足・買ってよかった</span><span class="trend-chip">吸引力が高い</span><span class="trend-chip">マッピング・ルートが賢い</span></div>
+          </div>
           <div class="panel"><h4>向いている人</h4><div class="entry-stack">
           <div class="entry fit">
             <div class="entry-head">
               <span class="entry-label">ペットのいる家庭</span>
               <span class="entry-score">適合度 92点</span>
             </div>
-            <p class="entry-body">ペット⁠の足跡⁠やよだれ⁠の跡⁠も水拭き機能⁠で綺麗⁠になり⁠、床⁠を常⁠に清潔⁠に保てます⁠。</p>
+            <p class="entry-body">ペット⁠の足跡⁠やよだれ⁠の跡⁠も<strong class="em-key">水拭き</strong>機能⁠で綺麗⁠になり⁠、床⁠を常⁠に清潔⁠に保てます⁠。</p>
           </div>
           <div class="entry fit">
             <div class="entry-head">
               <span class="entry-label">家族世帯</span>
               <span class="entry-score">適合度 92点</span>
             </div>
-            <p class="entry-body">子供⁠の食べこぼし⁠や足跡汚れ⁠も⁠、強力な水拭き機能⁠で綺麗⁠に除去⁠できます⁠。</p>
+            <p class="entry-body">子供⁠の食べこぼし⁠や足跡汚れ⁠も⁠、強力な<strong class="em-key">水拭き</strong>機能⁠で綺麗⁠に除去⁠できます⁠。</p>
           </div></div></div>
           <div class="panel panel-neg"><h4>よくある不満</h4><div class="entry-stack">
           <div class="entry issue">
@@ -1669,14 +1737,14 @@
               <span class="entry-label">初期不良・故障の報告</span>
               
             </div>
-            <p class="entry-body">「⁠センサーエラー⁠で作動しない⁠」「⁠水拭き機能⁠が使えない⁠」⁠といった初期不良⁠や⁠、数日⁠で故障した⁠という報告⁠が18件ありました⁠。サポート⁠の対応⁠に関する不満⁠の声⁠も一部見られます⁠。</p>
+            <p class="entry-body">「⁠<strong class="em-key">センサーエラー⁠で作動しない</strong>⁠」「⁠<strong class="em-key"> E水拭き</strong>機能⁠が使えない<strong class="em-key">⁠」⁠といった初期不良⁠や⁠、数日⁠で故障した⁠という報告⁠が18件ありました⁠。サポート⁠の対応⁠に関する</strong>不満 E⁠の声⁠も一部見られます⁠。</p>
           </div>
           <div class="entry issue">
             <div class="entry-head">
               <span class="entry-label">段差や障害物で停止する</span>
               
             </div>
-            <p class="entry-body">約2cm以上⁠の段差⁠やジョイントマット⁠、椅子⁠の脚⁠の間など⁠で乗り越えられず停止する事例⁠が報告されています⁠。特⁠に薄いラグ⁠を巻き込ん⁠でしまう⁠という声⁠が複数ありました⁠。</p>
+            <p class="entry-body">約2cm以上⁠の段差⁠やジョイントマット⁠、椅子⁠の脚⁠の間など⁠で乗り越えられず停止する事例⁠が報告されています⁠。特⁠に<strong class="em-key">薄いラグ⁠を巻き込ん⁠でしまう⁠という声</strong>⁠が複数ありました⁠。</p>
           </div></div></div>
           <p class="more"><a href="https://nattoku-labo.com/products/roomba-plus-405-combo-autowash" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -1694,25 +1762,23 @@
               <span class="chip">口コミ信頼度 82.6</span>
               <span class="chip">口コミ数 129件</span>
             </p>
-            <p class="price-caution">
-              表示価格はメーカー公式の参考価格です。各ECサイトではセールが行われることが多いため、<strong>購入前に現在の販売価格の確認を強くおすすめ</strong>します。
-            </p>
+            <p class="price-caution">表示価格⁠はメーカー公式⁠の参考価格⁠です⁠。各ECサイト⁠で⁠はセール⁠が行われるこ⁠と⁠が多いため⁠、<strong class="em-key">購入前⁠に現在⁠の販売価格⁠の確認⁠を強く</strong>おすすめ E Eします⁠。</p>
           </div>
-          <p class="lead">静音性の評価が最も高い機種です。在宅ワークや夜間運転で音が気になる人向けです。</p>
-          <div class="split"><div class="panel"><h4>強み</h4><div class="entry-stack">
+          <p class="lead"><strong class="em-key">静音性</strong>⁠の評価⁠が<strong class="em-key">最⁠も高い</strong>機種⁠です⁠。在宅ワーク⁠や夜間運転⁠で音⁠が気⁠になる人向け⁠です⁠。</p>
+          <div class="panel pros-cons"><div class="pros-cons-groups"><div class="pros-cons-group"><h4 class="pros-cons-label pros-cons-label-good">強み</h4><div class="entry-grid">
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">フローリング</span>
               <span class="entry-score">96点</span>
             </div>
-            <p class="entry-body">多く⁠のレビュー⁠がフローリング⁠の拭き掃除性能⁠を絶賛⁠。素足⁠で歩く⁠とサラサラ⁠、ピカピカ⁠になる⁠と⁠の声⁠が多数⁠。吸引⁠と水拭き⁠の同時実行⁠で⁠、日々⁠の床掃除から解放された⁠と高評価⁠を得ている⁠。</p>
+            <p class="entry-body">多く⁠のレビュー⁠が<strong class="em-key">フローリング</strong>⁠の拭き掃除性能⁠を絶賛⁠。素足⁠で歩く⁠とサラサラ⁠、ピカピカ⁠になる⁠と⁠の声⁠が多数⁠。吸引⁠と<strong class="em-key">水拭き</strong>⁠の同時実行⁠で⁠、日々⁠の床掃除から解放された⁠と高評価⁠を得ている⁠。</p>
           </div>
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">91点</span>
             </div>
-            <p class="entry-body">犬⁠や猫⁠の毛⁠をしっかり吸引してくれる点⁠が高く評価されている⁠。毛⁠が絡み⁠にくいゴム製ブラシ⁠のメンテナンス性⁠も好評⁠で⁠、ペット⁠のいる家庭⁠の強い味方⁠となっているようだ⁠。</p>
+            <p class="entry-body">犬⁠や猫⁠の毛⁠をしっかり吸引してくれる点⁠が<strong class="em-key">高く評価</strong>されている⁠。毛⁠が絡み⁠にくいゴム製ブラシ⁠の<strong class="em-key">メンテナンス</strong>性⁠も<strong class="em-key">好評</strong>⁠で⁠、ペット⁠のいる家庭⁠の強い味方⁠となっているようだ⁠。</p>
           </div>
           <div class="entry good">
             <div class="entry-head">
@@ -1720,13 +1786,13 @@
               <span class="entry-score">88点</span>
             </div>
             <p class="entry-body">旧モデル⁠と比較して格段⁠に静か⁠になった⁠という意見⁠が多数⁠。テレビ視聴⁠やリモート会議中⁠で⁠も気⁠にならないレベル⁠と⁠の声⁠も⁠。ただし⁠、ゴミ収集時⁠やモップ洗浄時⁠の音⁠は大きい⁠という指摘⁠もある⁠。</p>
-          </div></div></div><div class="panel panel-neg"><h4>注意点</h4><div class="entry-stack">
+          </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
             <div class="entry-head">
               <span class="entry-label">アプリ</span>
               <span class="entry-score">65点</span>
             </div>
-            <p class="entry-body">Wi-Fi接続⁠でエラー⁠が多発し⁠、初期設定⁠に苦労した⁠という報告⁠が非常⁠に多い⁠。マッピング精度⁠が低く⁠、部屋⁠を正しく認識しない⁠、禁止エリア設定⁠が機能しないなど⁠の問題⁠も指摘されている⁠。</p>
+            <p class="entry-body">Wi-Fi接続⁠でエラー⁠が多発し⁠、初期設定⁠に<strong class="em-key">苦労</strong>した⁠という報告⁠が非常⁠に多い⁠。マッピング精度⁠が低く⁠、部屋⁠を正しく認識しない⁠、禁止エリア設定⁠が機能しないなど⁠の問題⁠も指摘されている⁠。</p>
           </div>
           <div class="entry warn">
             <div class="entry-head">
@@ -1734,22 +1800,27 @@
               <span class="entry-score">78点</span>
             </div>
             <p class="entry-body">約2cm程度⁠の段差⁠は力強く乗り越える⁠と⁠の評価⁠がある一方⁠、家具⁠の脚⁠や敷居⁠で立ち往生する⁠、引っかかる⁠といった報告⁠も散見される⁠。環境⁠による差⁠が大きい項目⁠と言える⁠。</p>
-          </div></div></div></div>
+          </div></div></div></div></div>
           
+          <div class="panel trend-panel">
+            <h4>口コミ傾向</h4>
+            <p class="trend-summary">Amazon⁠と楽天から収集した127件⁠のレビュー⁠を分析⁠。購入直後⁠のレビュー⁠が多く⁠、特⁠に<strong class="em-key">初期設定⁠や初期不良⁠に関する具体的な記述</strong>⁠が豊富⁠。長期利用⁠に関する評価⁠は限定的だ⁠が⁠、信頼性⁠は高い⁠。</p>
+            <p class="trend-kw-title">よく見るキーワード</p><div class="trend-keywords"><span class="trend-chip">水拭き・拭き掃除が良い</span><span class="trend-chip">満足・買ってよかった</span><span class="trend-chip">静かで快適</span><span class="trend-chip">マッピング・ルートが賢い</span></div>
+          </div>
           <div class="panel"><h4>向いている人</h4><div class="entry-stack">
           <div class="entry fit">
             <div class="entry-head">
               <span class="entry-label">ペットのいる家庭</span>
               <span class="entry-score">適合度 91点</span>
             </div>
-            <p class="entry-body">ペット⁠の足跡⁠やよだれ⁠の跡⁠も水拭き⁠で綺麗⁠になり⁠、床⁠が常⁠に清潔⁠に保てる点⁠が好評⁠。</p>
+            <p class="entry-body">ペット⁠の足跡⁠やよだれ⁠の跡⁠も<strong class="em-key">水拭き</strong>⁠で綺麗⁠になり⁠、床⁠が常⁠に清潔⁠に保てる点⁠が<strong class="em-key">好評</strong>⁠。</p>
           </div>
           <div class="entry fit">
             <div class="entry-head">
               <span class="entry-label">マンション・集合住宅</span>
               <span class="entry-score">適合度 88点</span>
             </div>
-            <p class="entry-body">限られたスペース⁠で⁠も隅々ま⁠で丁寧⁠に掃除し⁠、フローリング⁠をサラサラ⁠に保つ⁠。</p>
+            <p class="entry-body">限られたスペース⁠で⁠も隅々ま⁠で丁寧⁠に掃除し⁠、<strong class="em-key">フローリング</strong>⁠をサラサラ⁠に保つ⁠。</p>
           </div></div></div>
           <div class="panel panel-neg"><h4>よくある不満</h4><div class="entry-stack">
           <div class="entry issue">
@@ -1757,14 +1828,14 @@
               <span class="entry-label">水漏れなどの初期不良が多い</span>
               
             </div>
-            <p class="entry-body">「⁠モップ洗浄中⁠に本体から水⁠が漏れる⁠」「⁠電源⁠が入らない⁠」「⁠モップアーム⁠の不具合⁠」⁠といったハードウェア⁠の初期不良報告⁠が多数⁠。カスタマーサポート⁠の対応⁠が遅い⁠と⁠の不満⁠も散見される⁠。</p>
+            <p class="entry-body">「⁠<strong class="em-key">モップ洗浄中⁠に本体から水⁠が漏れる</strong>⁠」「⁠<strong class="em-key">電源⁠が入らない</strong>⁠」「⁠<strong class="em-key">モップアーム⁠の不具合</strong>⁠」⁠といったハードウェア⁠の初期不良報告⁠が多数⁠。カスタマーサポート⁠の対応⁠が遅い⁠と⁠の<strong class="em-key">不満</strong>⁠も散見される⁠。</p>
           </div>
           <div class="entry issue">
             <div class="entry-head">
               <span class="entry-label">アプリの接続性が悪く、設定で躓く</span>
               
             </div>
-            <p class="entry-body">多く⁠のユーザー⁠がWi-Fi接続⁠で苦労しており⁠、「⁠何度⁠やって⁠も繋⁠がらない⁠」「⁠エラー⁠が頻発する⁠」⁠と⁠の声⁠が多数⁠。アプリ⁠のUI⁠も直感的⁠でなく⁠、マッピング⁠やスケジュール設定⁠が使い⁠にくい⁠と⁠の指摘⁠もある⁠。</p>
+            <p class="entry-body">多く⁠のユーザー⁠がWi-Fi接続⁠で<strong class="em-key">苦労</strong>しており⁠、「⁠<strong class="em-key">何度⁠やって⁠も繋⁠がらない</strong>⁠」「⁠<strong class="em-key">エラー⁠が頻発する</strong>⁠」⁠と⁠の声⁠が多数⁠。アプリ⁠のUI⁠も直感的⁠でなく⁠、マッピング⁠やスケジュール設定⁠が使い⁠にくい⁠と⁠の指摘⁠もある⁠。</p>
           </div></div></div>
           <p class="more"><a href="https://nattoku-labo.com/products/roomba-plus-575-combo-autowash" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -1782,33 +1853,31 @@
               <span class="chip">口コミ信頼度 82.3</span>
               <span class="chip">口コミ数 154件</span>
             </p>
-            <p class="price-caution">
-              表示価格はメーカー公式の参考価格です。各ECサイトではセールが行われることが多いため、<strong>購入前に現在の販売価格の確認を強くおすすめ</strong>します。
-            </p>
+            <p class="price-caution">表示価格⁠はメーカー公式⁠の参考価格⁠です⁠。各ECサイト⁠で⁠はセール⁠が行われるこ⁠と⁠が多いため⁠、<strong class="em-key">購入前⁠に現在⁠の販売価格⁠の確認⁠を強く</strong>おすすめ E Eします⁠。</p>
           </div>
-          <p class="lead">ペット毛の評価が最も高い機種です。抜け毛の吸引を優先したい家庭向けです。</p>
-          <div class="split"><div class="panel"><h4>強み</h4><div class="entry-stack">
+          <p class="lead">ペット毛⁠の評価⁠が<strong class="em-key">最⁠も高い</strong>機種⁠です⁠。抜け毛⁠の吸引⁠を優先したい家庭向け⁠です⁠。</p>
+          <div class="panel pros-cons"><div class="pros-cons-groups"><div class="pros-cons-group"><h4 class="pros-cons-label pros-cons-label-good">強み</h4><div class="entry-grid">
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">フローリング</span>
               <span class="entry-score">95点</span>
             </div>
-            <p class="entry-body">フローリング⁠の掃除性能⁠は絶賛されており⁠、髪⁠の毛⁠やホコリ⁠の取り残し⁠はほ⁠とんど見られません⁠。多く⁠のユーザー⁠が「⁠床⁠がサラサラ⁠になる⁠」⁠とそ⁠の高い吸引力⁠と清掃能力⁠を評価しています⁠。</p>
+            <p class="entry-body"><strong class="em-key">フローリング</strong>⁠の掃除性能⁠は絶賛されており⁠、髪⁠の毛⁠やホコリ⁠の取り残し⁠はほ⁠とんど見られません⁠。多く⁠のユーザー⁠が「⁠<strong class="em-key">床⁠がサラサラ⁠になる</strong>⁠」⁠とそ⁠の高い<strong class="em-key">吸引力</strong>⁠と清掃能力⁠を評価しています⁠。</p>
           </div>
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">93点</span>
             </div>
-            <p class="entry-body">ペット⁠の毛⁠の除去能力⁠は特⁠に高く評価されており⁠、犬⁠や猫⁠を飼っている家庭から⁠の支持⁠が厚い⁠です⁠。ゴム製ブラシ⁠は毛⁠が絡まり⁠にくく⁠、メンテナンス⁠の手間⁠が少ない点⁠も喜ばれています⁠。</p>
+            <p class="entry-body">ペット⁠の毛⁠の除去能力⁠は特⁠に<strong class="em-key">高く評価</strong>されており⁠、犬⁠や猫⁠を飼っている家庭から⁠の支持⁠が厚い⁠です⁠。ゴム製ブラシ⁠は毛⁠が絡まり⁠にくく⁠、<strong class="em-key">メンテナンス</strong>⁠の手間⁠が少ない点⁠も喜ばれています⁠。</p>
           </div>
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">カーペット</span>
               <span class="entry-score">89点</span>
             </div>
-            <p class="entry-body">カーペットブースト機能⁠により⁠、毛足⁠の奥⁠に入り込んだゴミ⁠やペット⁠の毛⁠もしっかり吸引⁠できる⁠と高評価⁠です⁠。一部⁠、毛足⁠の長いラグ⁠でめくれ上⁠がってしまう⁠と⁠の指摘⁠もありました⁠。</p>
-          </div></div></div><div class="panel panel-neg"><h4>注意点</h4><div class="entry-stack">
+            <p class="entry-body"><strong class="em-key">カーペット</strong>ブースト機能⁠により⁠、毛足⁠の奥⁠に入り込んだゴミ⁠やペット⁠の毛⁠もしっかり吸引⁠できる⁠と高評価⁠です⁠。一部⁠、毛足⁠の長いラグ⁠でめくれ上⁠がってしまう⁠と⁠の指摘⁠もありました⁠。</p>
+          </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
             <div class="entry-head">
               <span class="entry-label">バッテリー</span>
@@ -1822,29 +1891,27 @@
               <span class="entry-score">72点</span>
             </div>
             <p class="entry-body">1〜2cm程度⁠の段差⁠は乗り越えます⁠が⁠、それ以上⁠や柔らかい敷物⁠で⁠は苦戦する場合⁠があります⁠。LiDAR搭載⁠で本体高⁠が上⁠がり⁠、これま⁠で入れていた家具⁠の下⁠に入れなくなった⁠という声⁠もありました⁠。</p>
-          </div></div></div></div>
-          <div class="panel"><h4>口コミ傾向</h4><div class="entry-stack">
-          <div class="entry">
-            <div class="entry-head">
-              <span class="entry-label">静音性</span>
-              <span class="entry-score">75点</span>
-            </div>
-            <p class="entry-body">動作音⁠について⁠は「⁠静か⁠になった⁠」⁠という声⁠と「⁠まだ大きい⁠」⁠という声⁠に分かれます⁠。旧モデルより⁠は改善されています⁠が⁠、在宅中⁠や夜間⁠の使用⁠に⁠は気⁠になるレベル⁠と感じる人⁠もいるよう⁠です⁠。</p>
-          </div></div></div>
+          </div></div></div></div></div>
+          
+          <div class="panel trend-panel">
+            <h4>口コミ傾向</h4>
+            <p class="trend-summary">Amazon⁠と楽天から収集した計152件⁠のユーザーレビュー⁠を分析⁠。購入直後から1年以上⁠の長期利用ま⁠で⁠、多様な意見⁠を網羅しており⁠、製品⁠の総合的な性能⁠を判断する上⁠で信頼性⁠の高いデータ⁠です⁠。</p>
+            <p class="trend-kw-title">よく見るキーワード</p><div class="trend-keywords"><span class="trend-chip">吸引力が高い</span><span class="trend-chip">満足・買ってよかった</span><span class="trend-chip">マッピング・ルートが賢い</span><span class="trend-chip">水拭き・拭き掃除が良い</span></div>
+          </div>
           <div class="panel"><h4>向いている人</h4><div class="entry-stack">
           <div class="entry fit">
             <div class="entry-head">
               <span class="entry-label">ペットのいる家庭</span>
               <span class="entry-score">適合度 91点</span>
             </div>
-            <p class="entry-body">フローリング⁠に散らばったペットフード⁠や猫砂など⁠も⁠、一度⁠の走行⁠で綺麗⁠に取り除きます⁠。</p>
+            <p class="entry-body"><strong class="em-key">フローリング</strong>⁠に散らばったペットフード⁠や猫砂など⁠も⁠、一度⁠の走行⁠で綺麗⁠に取り除きます⁠。</p>
           </div>
           <div class="entry fit">
             <div class="entry-head">
               <span class="entry-label">家族世帯</span>
               <span class="entry-score">適合度 87点</span>
             </div>
-            <p class="entry-body">子供⁠の食べこぼし⁠や砂埃など⁠、多様なゴミ⁠が発生する家庭⁠で⁠もパワフルな吸引力⁠で対応します⁠。</p>
+            <p class="entry-body">子供⁠の食べこぼし⁠や砂埃など⁠、多様なゴミ⁠が発生する家庭⁠で⁠もパワフルな<strong class="em-key">吸引力</strong>⁠で対応します⁠。</p>
           </div></div></div>
           <div class="panel panel-neg"><h4>よくある不満</h4><div class="entry-stack">
           <div class="entry issue">
@@ -1852,7 +1919,7 @@
               <span class="entry-label">故障・充電エラーが多発</span>
               
             </div>
-            <p class="entry-body">「⁠1年未満⁠で充電⁠できなくなった⁠」「⁠バッテリー⁠の持ち⁠が悪い⁠」⁠といった⁠、電源関連⁠の不具合報告⁠が最⁠も多く寄せられています⁠。掃除性能⁠が高いだけ⁠に⁠、製品⁠の耐久性⁠へ⁠の不満⁠が目立ちます⁠。</p>
+            <p class="entry-body">「⁠<strong class="em-key">1年未満⁠で充電⁠できなくなった</strong>⁠」「⁠<strong class="em-key">バッテリー⁠の持ち⁠が悪い</strong>⁠」⁠といった⁠、電源関連⁠の不具合報告⁠が最⁠も多く寄せられています⁠。掃除性能⁠が高いだけ⁠に⁠、製品⁠の耐久性⁠へ⁠の<strong class="em-key">不満</strong>⁠が目立ちます⁠。</p>
           </div>
           <div class="entry issue">
             <div class="entry-head">
@@ -1877,33 +1944,31 @@
               <span class="chip">口コミ信頼度 84.4</span>
               <span class="chip">口コミ数 179件</span>
             </p>
-            <p class="price-caution">
-              表示価格はメーカー公式の参考価格です。各ECサイトではセールが行われることが多いため、<strong>購入前に現在の販売価格の確認を強くおすすめ</strong>します。
-            </p>
+            <p class="price-caution">表示価格⁠はメーカー公式⁠の参考価格⁠です⁠。各ECサイト⁠で⁠はセール⁠が行われるこ⁠と⁠が多いため⁠、<strong class="em-key">購入前⁠に現在⁠の販売価格⁠の確認⁠を強く</strong>おすすめ E Eします⁠。</p>
           </div>
-          <p class="lead">フローリングの評価が最も高い機種です。水拭きや床の仕上がりを最優先する人向けです。</p>
-          <div class="split"><div class="panel"><h4>強み</h4><div class="entry-stack">
+          <p class="lead"><strong class="em-key">フローリング</strong>⁠の評価⁠が<strong class="em-key">最⁠も高い</strong>機種⁠です⁠。<strong class="em-key">水拭き</strong>⁠や床⁠の仕上⁠がり⁠を最優先する人向け⁠です⁠。</p>
+          <div class="panel pros-cons"><div class="pros-cons-groups"><div class="pros-cons-group"><h4 class="pros-cons-label pros-cons-label-good">強み</h4><div class="entry-grid">
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">フローリング</span>
               <span class="entry-score">96点</span>
             </div>
-            <p class="entry-body">水拭き機能⁠へ⁠の評価⁠が圧倒的⁠に高く⁠、「⁠床⁠がサラサラ⁠」「⁠ピカピカ⁠になる⁠」⁠と⁠の声⁠が多数⁠。汚水タンク⁠の汚れ⁠を見て効果⁠を実感するユーザー⁠も多く⁠、フローリング⁠の清掃能力⁠は非常⁠に優れています⁠。</p>
+            <p class="entry-body"><strong class="em-key">水拭き</strong>機能⁠へ⁠の評価⁠が圧倒的⁠に高く⁠、「⁠<strong class="em-key">床⁠がサラサラ</strong>⁠」「⁠<strong class="em-key">ピカピカ⁠になる</strong>⁠」⁠と⁠の声⁠が多数⁠。汚水タンク⁠の汚れ⁠を見て効果⁠を実感するユーザー⁠も多く⁠、<strong class="em-key">フローリング</strong>⁠の清掃能力⁠は非常⁠に優れています⁠。</p>
           </div>
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">90点</span>
             </div>
-            <p class="entry-body">ペット⁠の毛⁠や猫⁠の抜け毛⁠をしっかり吸引してくれる⁠と⁠の評価⁠が目立ちます⁠。水拭き機能⁠と合わせるこ⁠と⁠で⁠、アレルギー対策⁠や床⁠の清潔維持⁠に貢献している⁠と感じるペットオーナー⁠が多い⁠です⁠。</p>
+            <p class="entry-body">ペット⁠の毛⁠や猫⁠の抜け毛⁠をしっかり吸引してくれる⁠と⁠の評価⁠が目立ちます⁠。<strong class="em-key">水拭き</strong>機能⁠と合わせるこ⁠と⁠で⁠、アレルギー対策⁠や床⁠の清潔維持⁠に貢献している⁠と感じるペットオーナー⁠が多い⁠です⁠。</p>
           </div>
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">バッテリー</span>
               <span class="entry-score">89点</span>
             </div>
-            <p class="entry-body">一度⁠の充電⁠で広い範囲⁠を掃除⁠でき⁠、バッテリー⁠が少なくなる⁠と自動⁠で充電し⁠に戻り⁠、中断した場所から再開する機能⁠が評価されています⁠。バッテリー持続時間⁠に関する不満⁠はほ⁠とんど見られません⁠。</p>
-          </div></div></div><div class="panel panel-neg"><h4>注意点</h4><div class="entry-stack">
+            <p class="entry-body">一度⁠の充電⁠で広い範囲⁠を掃除⁠でき⁠、バッテリー⁠が少なくなる⁠と自動⁠で充電し⁠に戻り⁠、中断した場所から再開する機能⁠が評価されています⁠。バッテリー持続時間⁠に関する<strong class="em-key">不満</strong>⁠はほ⁠とんど見られません⁠。</p>
+          </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
             <div class="entry-head">
               <span class="entry-label">段差</span>
@@ -1916,23 +1981,28 @@
               <span class="entry-label">静音性</span>
               <span class="entry-score">78点</span>
             </div>
-            <p class="entry-body">走行中⁠の音⁠は「⁠静か⁠になった⁠」「⁠気⁠にならない⁠」⁠という意見⁠がある一方⁠、ゴミ収集時⁠の音⁠は「⁠大きい⁠」「⁠驚く⁠」⁠という声⁠が多数⁠。夜間⁠の使用⁠はゴミ収集⁠のタイミング⁠を考慮する必要⁠があります⁠。</p>
-          </div></div></div></div>
+            <p class="entry-body">走行中⁠の音⁠は「⁠<strong class="em-key">静か⁠になった</strong>⁠」「⁠<strong class="em-key">気⁠にならない</strong>⁠」⁠という意見⁠がある一方⁠、ゴミ収集時⁠の音⁠は「⁠<strong class="em-key">大きい</strong>⁠」「⁠<strong class="em-key">驚く</strong>⁠」⁠という声⁠が多数⁠。夜間⁠の使用⁠はゴミ収集⁠のタイミング⁠を考慮する必要⁠があります⁠。</p>
+          </div></div></div></div></div>
           
+          <div class="panel trend-panel">
+            <h4>口コミ傾向</h4>
+            <p class="trend-summary">ユーザー提供⁠の177件⁠の口コミ⁠を全て分析⁠。短文⁠や内容⁠の薄い⁠も⁠の⁠を除いた質⁠の高いレビュー⁠が中心⁠で⁠、実際⁠の使用感⁠が詳細⁠に記述されており⁠、データ⁠として⁠の信頼性⁠は高い⁠と判断しました⁠。</p>
+            <p class="trend-kw-title">よく見るキーワード</p><div class="trend-keywords"><span class="trend-chip">水拭き・拭き掃除が良い</span><span class="trend-chip">満足・買ってよかった</span><span class="trend-chip">吸引力が高い</span><span class="trend-chip">マッピング・ルートが賢い</span></div>
+          </div>
           <div class="panel"><h4>向いている人</h4><div class="entry-stack">
           <div class="entry fit">
             <div class="entry-head">
               <span class="entry-label">ペットのいる家庭</span>
               <span class="entry-score">適合度 92点</span>
             </div>
-            <p class="entry-body">ペット⁠の足跡⁠やよだれ⁠の跡⁠も水拭き機能⁠で綺麗⁠になり⁠、床⁠を常⁠に清潔⁠に保てます⁠。</p>
+            <p class="entry-body">ペット⁠の足跡⁠やよだれ⁠の跡⁠も<strong class="em-key">水拭き</strong>機能⁠で綺麗⁠になり⁠、床⁠を常⁠に清潔⁠に保てます⁠。</p>
           </div>
           <div class="entry fit">
             <div class="entry-head">
               <span class="entry-label">家族世帯</span>
               <span class="entry-score">適合度 92点</span>
             </div>
-            <p class="entry-body">子供⁠の食べこぼし⁠や足跡汚れ⁠も⁠、強力な水拭き機能⁠で綺麗⁠に除去⁠できます⁠。</p>
+            <p class="entry-body">子供⁠の食べこぼし⁠や足跡汚れ⁠も⁠、強力な<strong class="em-key">水拭き</strong>機能⁠で綺麗⁠に除去⁠できます⁠。</p>
           </div></div></div>
           <div class="panel panel-neg"><h4>よくある不満</h4><div class="entry-stack">
           <div class="entry issue">
@@ -1940,14 +2010,14 @@
               <span class="entry-label">初期不良・故障の報告</span>
               
             </div>
-            <p class="entry-body">「⁠センサーエラー⁠で作動しない⁠」「⁠水拭き機能⁠が使えない⁠」⁠といった初期不良⁠や⁠、数日⁠で故障した⁠という報告⁠が18件ありました⁠。サポート⁠の対応⁠に関する不満⁠の声⁠も一部見られます⁠。</p>
+            <p class="entry-body">「⁠<strong class="em-key">センサーエラー⁠で作動しない</strong>⁠」「⁠<strong class="em-key"> E水拭き</strong>機能⁠が使えない<strong class="em-key">⁠」⁠といった初期不良⁠や⁠、数日⁠で故障した⁠という報告⁠が18件ありました⁠。サポート⁠の対応⁠に関する</strong>不満 E⁠の声⁠も一部見られます⁠。</p>
           </div>
           <div class="entry issue">
             <div class="entry-head">
               <span class="entry-label">段差や障害物で停止する</span>
               
             </div>
-            <p class="entry-body">約2cm以上⁠の段差⁠やジョイントマット⁠、椅子⁠の脚⁠の間など⁠で乗り越えられず停止する事例⁠が報告されています⁠。特⁠に薄いラグ⁠を巻き込ん⁠でしまう⁠という声⁠が複数ありました⁠。</p>
+            <p class="entry-body">約2cm以上⁠の段差⁠やジョイントマット⁠、椅子⁠の脚⁠の間など⁠で乗り越えられず停止する事例⁠が報告されています⁠。特⁠に<strong class="em-key">薄いラグ⁠を巻き込ん⁠でしまう⁠という声</strong>⁠が複数ありました⁠。</p>
           </div></div></div>
           <p class="more"><a href="https://nattoku-labo.com/products/roomba-plus-405-combo-autowash" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -1965,48 +2035,51 @@
               <span class="chip">口コミ信頼度 83.2</span>
               <span class="chip">口コミ数 138件</span>
             </p>
-            <p class="price-caution">
-              表示価格はメーカー公式の参考価格です。各ECサイトではセールが行われることが多いため、<strong>購入前に現在の販売価格の確認を強くおすすめ</strong>します。
-            </p>
+            <p class="price-caution">表示価格⁠はメーカー公式⁠の参考価格⁠です⁠。各ECサイト⁠で⁠はセール⁠が行われるこ⁠と⁠が多いため⁠、<strong class="em-key">購入前⁠に現在⁠の販売価格⁠の確認⁠を強く</strong>おすすめ E Eします⁠。</p>
           </div>
-          <p class="lead">メンテナンスの評価が最も高い機種です。自動洗浄・手入れの楽さを重視する人向けです。</p>
-          <div class="split"><div class="panel"><h4>強み</h4><div class="entry-stack">
+          <p class="lead"><strong class="em-key">メンテナンス</strong>⁠の評価⁠が<strong class="em-key">最⁠も高い</strong>機種⁠です⁠。自動洗浄・手入れ⁠の楽さ⁠を重視する人向け⁠です⁠。</p>
+          <div class="panel pros-cons"><div class="pros-cons-groups"><div class="pros-cons-group"><h4 class="pros-cons-label pros-cons-label-good">強み</h4><div class="entry-grid">
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">メンテナンス</span>
               <span class="entry-score">95点</span>
             </div>
-            <p class="entry-body">自動ゴミ収集機能⁠により⁠、数ヶ月⁠に一度⁠の紙パック交換だけ⁠で済む手軽さ⁠が絶賛されています⁠。市販⁠のウェットシート⁠が使える点⁠も⁠、メンテナンス⁠の手間⁠とコスト⁠を削減⁠できる⁠と好評⁠です⁠。</p>
+            <p class="entry-body">自動ゴミ収集機能⁠により⁠、数ヶ月⁠に一度⁠の紙パック交換だけ⁠で済む手軽さ⁠が絶賛されています⁠。市販⁠のウェットシート⁠が使える点⁠も⁠、<strong class="em-key">メンテナンス</strong>⁠の手間⁠とコスト⁠を削減⁠できる⁠と<strong class="em-key">好評</strong>⁠です⁠。</p>
           </div>
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">フローリング</span>
               <span class="entry-score">93点</span>
             </div>
-            <p class="entry-body">コンパクトな本体⁠が椅子⁠の脚⁠の間⁠や家具⁠の隙間⁠に⁠も入り込み⁠、隅々ま⁠で掃除⁠できる⁠と高評価⁠です⁠。吸引力⁠も十分⁠で⁠、日常的なホコリ⁠や髪⁠の毛⁠は問題なく除去⁠できる⁠と⁠の声⁠が多数⁠でした⁠。</p>
+            <p class="entry-body">コンパクトな本体⁠が椅子⁠の脚⁠の間⁠や家具⁠の隙間⁠に⁠も入り込み⁠、隅々ま⁠で掃除⁠できる⁠と高評価⁠です⁠。<strong class="em-key">吸引力</strong>⁠も十分⁠で⁠、日常的なホコリ⁠や髪⁠の毛⁠は問題なく除去⁠できる⁠と⁠の声⁠が多数⁠でした⁠。</p>
           </div>
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">85点</span>
             </div>
-            <p class="entry-body">猫⁠の毛⁠や猫砂⁠を問題なく吸い込む⁠という肯定的な意見⁠が多く見られました⁠。ペット⁠の毛⁠がカーペット⁠に絡みついている場合⁠は取り残し⁠がある⁠も⁠の⁠の⁠、フローリング⁠で⁠は十分な性能⁠を発揮します⁠。</p>
-          </div></div></div><div class="panel panel-neg"><h4>注意点</h4><div class="entry-stack">
+            <p class="entry-body">猫⁠の毛⁠や猫砂⁠を問題なく吸い込む⁠という肯定的な意見⁠が多く見られました⁠。ペット⁠の毛⁠が<strong class="em-key">カーペット</strong>⁠に絡みついている場合⁠は取り残し⁠がある⁠も⁠の⁠の⁠、<strong class="em-key">フローリング</strong>⁠で⁠は十分な性能⁠を発揮します⁠。</p>
+          </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
             <div class="entry-head">
               <span class="entry-label">静音性</span>
               <span class="entry-score">65点</span>
             </div>
-            <p class="entry-body">動作音⁠は「⁠静か⁠」⁠という意見⁠と「⁠うるさい⁠」⁠という意見⁠に二分されます⁠。特⁠にゴミ収集ステーション⁠の吸引音⁠は「⁠爆音⁠」⁠と評されるほど大きく⁠、夜間⁠の使用⁠に⁠は注意⁠が必要⁠です⁠。</p>
+            <p class="entry-body">動作音⁠は「⁠<strong class="em-key">静か</strong>⁠」⁠という意見⁠と「⁠<strong class="em-key">うるさい</strong>⁠」⁠という意見⁠に二分されます⁠。特⁠にゴミ収集ステーション⁠の吸引音⁠は「⁠<strong class="em-key">爆音</strong>⁠」⁠と評されるほど大きく⁠、夜間⁠の使用⁠に⁠は<strong class="em-key">注意⁠が必要</strong>⁠です⁠。</p>
           </div>
           <div class="entry warn">
             <div class="entry-head">
               <span class="entry-label">アプリ</span>
               <span class="entry-score">68点</span>
             </div>
-            <p class="entry-body">Wi-Fi接続⁠が頻繁⁠に切れる⁠、マッピング⁠が崩れる⁠といったソフトウェア面⁠の不安定さ⁠を指摘する声⁠が目立ちます⁠。一度接続⁠できれば便利⁠です⁠が⁠、初期設定⁠で苦労するユーザー⁠が多い印象⁠です⁠。</p>
-          </div></div></div></div>
+            <p class="entry-body">Wi-Fi接続⁠が頻繁⁠に切れる⁠、マッピング⁠が崩れる⁠といったソフトウェア面⁠の不安定さ⁠を指摘する声⁠が目立ちます⁠。一度接続⁠できれば便利⁠です⁠が⁠、初期設定⁠で<strong class="em-key">苦労</strong>するユーザー⁠が多い印象⁠です⁠。</p>
+          </div></div></div></div></div>
           
+          <div class="panel trend-panel">
+            <h4>口コミ傾向</h4>
+            <p class="trend-summary">提供された132件⁠の口コミ⁠を全て分析⁠。短文⁠や配送⁠に関する内容⁠のみ⁠のレビュー⁠は除外されており⁠、製品性能⁠に関する具体的な言及⁠が多く⁠、データ⁠の品質⁠は高い⁠と判断しました⁠。</p>
+            <p class="trend-kw-title">よく見るキーワード</p><div class="trend-keywords"><span class="trend-chip">水拭き・拭き掃除が良い</span><span class="trend-chip">満足・買ってよかった</span><span class="trend-chip">静かで快適</span><span class="trend-chip">吸引力が高い</span></div>
+          </div>
           <div class="panel"><h4>向いている人</h4><div class="entry-stack">
           <div class="entry fit">
             <div class="entry-head">
@@ -2020,7 +2093,7 @@
               <span class="entry-label">家族世帯</span>
               <span class="entry-score">適合度 85点</span>
             </div>
-            <p class="entry-body">子供⁠の食べこぼし⁠や足跡⁠が気⁠になる家庭⁠で⁠は⁠、市販シート⁠で手軽⁠に水拭き⁠できる機能⁠が重宝されています⁠。</p>
+            <p class="entry-body">子供⁠の食べこぼし⁠や足跡⁠が気⁠になる家庭⁠で⁠は⁠、市販シート⁠で手軽⁠に<strong class="em-key">水拭き</strong>⁠できる機能⁠が重宝されています⁠。</p>
           </div></div></div>
           <div class="panel panel-neg"><h4>よくある不満</h4><div class="entry-stack">
           <div class="entry issue">
@@ -2028,7 +2101,7 @@
               <span class="entry-label">Wi-Fi接続が不安定で頻繁に切れる</span>
               
             </div>
-            <p class="entry-body">「⁠数日⁠で接続⁠が切れて再設定⁠が必要⁠になる⁠」「⁠クラウド⁠に接続⁠できない⁠」など⁠、アプリ⁠と⁠の連携⁠に関する不満⁠が最多⁠。初期設定⁠の難しさ⁠や⁠、一度切れる⁠と復旧⁠が面倒⁠という声⁠が多く見られます⁠。</p>
+            <p class="entry-body">「⁠<strong class="em-key">数日⁠で接続⁠が切れて再設定⁠が必要⁠になる</strong>⁠」「⁠<strong class="em-key">クラウド⁠に接続⁠できない</strong>⁠」など⁠、アプリ⁠と⁠の連携⁠に関する<strong class="em-key">不満</strong>⁠が最多⁠。初期設定⁠の難しさ⁠や⁠、一度切れる⁠と復旧⁠が面倒⁠という声⁠が多く見られます⁠。</p>
           </div>
           <div class="entry issue">
             <div class="entry-head">
@@ -2053,25 +2126,23 @@
               <span class="chip">口コミ信頼度 82.6</span>
               <span class="chip">口コミ数 129件</span>
             </p>
-            <p class="price-caution">
-              表示価格はメーカー公式の参考価格です。各ECサイトではセールが行われることが多いため、<strong>購入前に現在の販売価格の確認を強くおすすめ</strong>します。
-            </p>
+            <p class="price-caution">表示価格⁠はメーカー公式⁠の参考価格⁠です⁠。各ECサイト⁠で⁠はセール⁠が行われるこ⁠と⁠が多いため⁠、<strong class="em-key">購入前⁠に現在⁠の販売価格⁠の確認⁠を強く</strong>おすすめ E Eします⁠。</p>
           </div>
-          <p class="lead">15万円以上の上位機に絞り、フローリング評価が最も高い機種を選んでいます。予算に余裕がある人向けです。</p>
-          <div class="split"><div class="panel"><h4>強み</h4><div class="entry-stack">
+          <p class="lead">15万円以上⁠の上位機⁠に絞り⁠、<strong class="em-key">フローリング</strong>評価⁠が<strong class="em-key">最⁠も高い</strong>機種⁠を選ん⁠でいます⁠。予算⁠に余裕⁠がある人向け⁠です⁠。</p>
+          <div class="panel pros-cons"><div class="pros-cons-groups"><div class="pros-cons-group"><h4 class="pros-cons-label pros-cons-label-good">強み</h4><div class="entry-grid">
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">フローリング</span>
               <span class="entry-score">96点</span>
             </div>
-            <p class="entry-body">多く⁠のレビュー⁠がフローリング⁠の拭き掃除性能⁠を絶賛⁠。素足⁠で歩く⁠とサラサラ⁠、ピカピカ⁠になる⁠と⁠の声⁠が多数⁠。吸引⁠と水拭き⁠の同時実行⁠で⁠、日々⁠の床掃除から解放された⁠と高評価⁠を得ている⁠。</p>
+            <p class="entry-body">多く⁠のレビュー⁠が<strong class="em-key">フローリング</strong>⁠の拭き掃除性能⁠を絶賛⁠。素足⁠で歩く⁠とサラサラ⁠、ピカピカ⁠になる⁠と⁠の声⁠が多数⁠。吸引⁠と<strong class="em-key">水拭き</strong>⁠の同時実行⁠で⁠、日々⁠の床掃除から解放された⁠と高評価⁠を得ている⁠。</p>
           </div>
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">91点</span>
             </div>
-            <p class="entry-body">犬⁠や猫⁠の毛⁠をしっかり吸引してくれる点⁠が高く評価されている⁠。毛⁠が絡み⁠にくいゴム製ブラシ⁠のメンテナンス性⁠も好評⁠で⁠、ペット⁠のいる家庭⁠の強い味方⁠となっているようだ⁠。</p>
+            <p class="entry-body">犬⁠や猫⁠の毛⁠をしっかり吸引してくれる点⁠が<strong class="em-key">高く評価</strong>されている⁠。毛⁠が絡み⁠にくいゴム製ブラシ⁠の<strong class="em-key">メンテナンス</strong>性⁠も<strong class="em-key">好評</strong>⁠で⁠、ペット⁠のいる家庭⁠の強い味方⁠となっているようだ⁠。</p>
           </div>
           <div class="entry good">
             <div class="entry-head">
@@ -2079,13 +2150,13 @@
               <span class="entry-score">88点</span>
             </div>
             <p class="entry-body">旧モデル⁠と比較して格段⁠に静か⁠になった⁠という意見⁠が多数⁠。テレビ視聴⁠やリモート会議中⁠で⁠も気⁠にならないレベル⁠と⁠の声⁠も⁠。ただし⁠、ゴミ収集時⁠やモップ洗浄時⁠の音⁠は大きい⁠という指摘⁠もある⁠。</p>
-          </div></div></div><div class="panel panel-neg"><h4>注意点</h4><div class="entry-stack">
+          </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
             <div class="entry-head">
               <span class="entry-label">アプリ</span>
               <span class="entry-score">65点</span>
             </div>
-            <p class="entry-body">Wi-Fi接続⁠でエラー⁠が多発し⁠、初期設定⁠に苦労した⁠という報告⁠が非常⁠に多い⁠。マッピング精度⁠が低く⁠、部屋⁠を正しく認識しない⁠、禁止エリア設定⁠が機能しないなど⁠の問題⁠も指摘されている⁠。</p>
+            <p class="entry-body">Wi-Fi接続⁠でエラー⁠が多発し⁠、初期設定⁠に<strong class="em-key">苦労</strong>した⁠という報告⁠が非常⁠に多い⁠。マッピング精度⁠が低く⁠、部屋⁠を正しく認識しない⁠、禁止エリア設定⁠が機能しないなど⁠の問題⁠も指摘されている⁠。</p>
           </div>
           <div class="entry warn">
             <div class="entry-head">
@@ -2093,22 +2164,27 @@
               <span class="entry-score">78点</span>
             </div>
             <p class="entry-body">約2cm程度⁠の段差⁠は力強く乗り越える⁠と⁠の評価⁠がある一方⁠、家具⁠の脚⁠や敷居⁠で立ち往生する⁠、引っかかる⁠といった報告⁠も散見される⁠。環境⁠による差⁠が大きい項目⁠と言える⁠。</p>
-          </div></div></div></div>
+          </div></div></div></div></div>
           
+          <div class="panel trend-panel">
+            <h4>口コミ傾向</h4>
+            <p class="trend-summary">Amazon⁠と楽天から収集した127件⁠のレビュー⁠を分析⁠。購入直後⁠のレビュー⁠が多く⁠、特⁠に<strong class="em-key">初期設定⁠や初期不良⁠に関する具体的な記述</strong>⁠が豊富⁠。長期利用⁠に関する評価⁠は限定的だ⁠が⁠、信頼性⁠は高い⁠。</p>
+            <p class="trend-kw-title">よく見るキーワード</p><div class="trend-keywords"><span class="trend-chip">水拭き・拭き掃除が良い</span><span class="trend-chip">満足・買ってよかった</span><span class="trend-chip">静かで快適</span><span class="trend-chip">マッピング・ルートが賢い</span></div>
+          </div>
           <div class="panel"><h4>向いている人</h4><div class="entry-stack">
           <div class="entry fit">
             <div class="entry-head">
               <span class="entry-label">ペットのいる家庭</span>
               <span class="entry-score">適合度 91点</span>
             </div>
-            <p class="entry-body">ペット⁠の足跡⁠やよだれ⁠の跡⁠も水拭き⁠で綺麗⁠になり⁠、床⁠が常⁠に清潔⁠に保てる点⁠が好評⁠。</p>
+            <p class="entry-body">ペット⁠の足跡⁠やよだれ⁠の跡⁠も<strong class="em-key">水拭き</strong>⁠で綺麗⁠になり⁠、床⁠が常⁠に清潔⁠に保てる点⁠が<strong class="em-key">好評</strong>⁠。</p>
           </div>
           <div class="entry fit">
             <div class="entry-head">
               <span class="entry-label">マンション・集合住宅</span>
               <span class="entry-score">適合度 88点</span>
             </div>
-            <p class="entry-body">限られたスペース⁠で⁠も隅々ま⁠で丁寧⁠に掃除し⁠、フローリング⁠をサラサラ⁠に保つ⁠。</p>
+            <p class="entry-body">限られたスペース⁠で⁠も隅々ま⁠で丁寧⁠に掃除し⁠、<strong class="em-key">フローリング</strong>⁠をサラサラ⁠に保つ⁠。</p>
           </div></div></div>
           <div class="panel panel-neg"><h4>よくある不満</h4><div class="entry-stack">
           <div class="entry issue">
@@ -2116,14 +2192,14 @@
               <span class="entry-label">水漏れなどの初期不良が多い</span>
               
             </div>
-            <p class="entry-body">「⁠モップ洗浄中⁠に本体から水⁠が漏れる⁠」「⁠電源⁠が入らない⁠」「⁠モップアーム⁠の不具合⁠」⁠といったハードウェア⁠の初期不良報告⁠が多数⁠。カスタマーサポート⁠の対応⁠が遅い⁠と⁠の不満⁠も散見される⁠。</p>
+            <p class="entry-body">「⁠<strong class="em-key">モップ洗浄中⁠に本体から水⁠が漏れる</strong>⁠」「⁠<strong class="em-key">電源⁠が入らない</strong>⁠」「⁠<strong class="em-key">モップアーム⁠の不具合</strong>⁠」⁠といったハードウェア⁠の初期不良報告⁠が多数⁠。カスタマーサポート⁠の対応⁠が遅い⁠と⁠の<strong class="em-key">不満</strong>⁠も散見される⁠。</p>
           </div>
           <div class="entry issue">
             <div class="entry-head">
               <span class="entry-label">アプリの接続性が悪く、設定で躓く</span>
               
             </div>
-            <p class="entry-body">多く⁠のユーザー⁠がWi-Fi接続⁠で苦労しており⁠、「⁠何度⁠やって⁠も繋⁠がらない⁠」「⁠エラー⁠が頻発する⁠」⁠と⁠の声⁠が多数⁠。アプリ⁠のUI⁠も直感的⁠でなく⁠、マッピング⁠やスケジュール設定⁠が使い⁠にくい⁠と⁠の指摘⁠もある⁠。</p>
+            <p class="entry-body">多く⁠のユーザー⁠がWi-Fi接続⁠で<strong class="em-key">苦労</strong>しており⁠、「⁠<strong class="em-key">何度⁠やって⁠も繋⁠がらない</strong>⁠」「⁠<strong class="em-key">エラー⁠が頻発する</strong>⁠」⁠と⁠の声⁠が多数⁠。アプリ⁠のUI⁠も直感的⁠でなく⁠、マッピング⁠やスケジュール設定⁠が使い⁠にくい⁠と⁠の指摘⁠もある⁠。</p>
           </div></div></div>
           <p class="more"><a href="https://nattoku-labo.com/products/roomba-plus-575-combo-autowash" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -2133,7 +2209,7 @@
       <section class="chapter article-card" id="summary">
         <h2>まとめ｜ルンバの選び方</h2>
         <div class="summary-box">
-          <p>ルンバは、まず比較表で全体を把握し、そのあと「予算」「機能」「暮らし方」のどれかで絞るのがおすすめです。</p>
+          <p>ルンバ⁠は⁠、まず<strong class="em-key">比較表</strong>⁠で全体⁠を把握し⁠、そ⁠のあ⁠と「⁠<strong class="em-key">予算</strong>⁠」「⁠<strong class="em-key">機能</strong>⁠」「⁠<strong class="em-key">暮らし方</strong>⁠」⁠のどれか⁠で絞る⁠の⁠が<strong class="em-key">おすすめ</strong>⁠です⁠。</p>
           <ul>
             <li>全体を見る → <a href="#table">ルンバ全製品を一覧比較</a></li>
             <li>予算で決める → <a href="#price">予算別のおすすめ機種</a></li>
@@ -2175,25 +2251,44 @@
       "html,body{width:100%;max-width:100%;min-width:0;margin:0;padding:0;background:#fff;color:#0f172a;overflow-x:hidden}" +
       "body{display:block}" +
       '[id^="msmaflink-"]{width:100%!important;max-width:100%!important;min-width:0!important}' +
-      "div.easyLink-box{display:block!important;width:100%!important;max-width:100%!important;min-width:0!important;box-sizing:border-box!important}" +
+      "div.easyLink-box{display:flex!important;flex-direction:row!important;align-items:flex-start!important;gap:16px!important;width:100%!important;max-width:100%!important;min-width:0!important;box-sizing:border-box!important}" +
       "div.easyLink-box div.easyLink-img," +
       "div.easyLink-box div.easyLink-img p.easyLink-img-box{" +
-      "width:min(240px,100%)!important;min-width:0!important;max-width:100%!important;" +
-      "height:auto!important;aspect-ratio:1!important;flex:none!important;" +
-      "margin:0 auto 12px!important;box-sizing:border-box!important}" +
+      "width:240px!important;min-width:240px!important;max-width:240px!important;" +
+      "height:240px!important;flex:0 0 240px!important;flex-shrink:0!important;" +
+      "margin:0!important;box-sizing:border-box!important}" +
       "div.easyLink-box div.easyLink-img::before{display:none!important;padding-top:0!important;content:none!important}" +
       "div.easyLink-box div.easyLink-img p.easyLink-img-box span{" +
-      "width:100%!important;height:auto!important;aspect-ratio:1!important}" +
+      "width:240px!important;height:240px!important}" +
       "div.easyLink-box div.easyLink-img p.easyLink-img-box span>img," +
       "div.easyLink-box img.js-item-image{" +
-      "max-width:100%!important;max-height:240px!important;" +
+      "max-width:240px!important;max-height:240px!important;" +
       "width:auto!important;height:auto!important;min-width:0!important;object-fit:contain!important}" +
       "div.easyLink-box div.easyLink-info{" +
-      "min-width:0!important;width:100%!important;max-width:560px!important;margin:0 auto!important;float:none!important}" +
+      "flex:1 1 0!important;min-width:0!important;display:flex!important;flex-wrap:wrap!important;flex-direction:row!important;align-content:flex-start!important;float:none!important}" +
+      "div.easyLink-box div.easyLink-info p.easyLink-name," +
+      "div.easyLink-box div.easyLink-info p.easyLink-company," +
+      "div.easyLink-box div.easyLink-info p.easyLink-price{" +
+      "flex:0 0 100%!important;width:100%!important;max-width:100%!important}" +
       "div.easyLink-box div.easyLink-info p.easyLink-info-btn{" +
-      "display:block!important;width:100%!important;max-width:100%!important;margin:0 0 8px!important;float:none!important;clear:both!important}" +
+      "flex:1 1 0!important;min-width:0!important;max-width:100%!important;margin:8px 6px 0 0!important;padding:0!important;float:none!important;clear:none!important;display:block!important}" +
+      "div.easyLink-box div.easyLink-info p.easyLink-info-btn:last-child{margin-right:0!important}" +
       "div.easyLink-box div.easyLink-info p.easyLink-info-btn a{" +
-      "display:block!important;width:100%!important;max-width:100%!important;min-width:0!important;box-sizing:border-box!important}" +
+      "display:block!important;width:100%!important;max-width:100%!important;min-width:0!important;box-sizing:border-box!important;text-align:center!important;white-space:normal!important}" +
+      "@media screen and (max-width:480px){" +
+      "div.easyLink-box{flex-direction:column!important;align-items:stretch!important}" +
+      "div.easyLink-box div.easyLink-img," +
+      "div.easyLink-box div.easyLink-img p.easyLink-img-box{" +
+      "width:min(220px,100%)!important;min-width:0!important;max-width:100%!important;" +
+      "height:auto!important;aspect-ratio:1!important;flex-basis:auto!important;margin:0 auto!important}" +
+      "div.easyLink-box div.easyLink-img p.easyLink-img-box span{width:100%!important;height:auto!important;aspect-ratio:1!important}" +
+      "div.easyLink-box div.easyLink-img p.easyLink-img-box span>img," +
+      "div.easyLink-box img.js-item-image{max-width:100%!important;max-height:220px!important}" +
+      "div.easyLink-box div.easyLink-info{flex-direction:column!important;flex-wrap:nowrap!important}" +
+      "div.easyLink-box div.easyLink-info p.easyLink-info-btn{" +
+      "flex:0 0 100%!important;width:100%!important;min-width:100%!important;max-width:100%!important;margin:0 0 8px!important}" +
+      "div.easyLink-box div.easyLink-info p.easyLink-info-btn:last-child{margin-bottom:0!important}" +
+      "}" +
       "</style></head><body>" +
       safe +
       "</body></html>";

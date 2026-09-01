@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>プレビュー：強み・注意点レイアウト</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Noto Sans JP", sans-serif;
+      background: #e2e8f0;
+      color: #1e293b;
+      line-height: 1.65;
+      padding: 1.25rem 1rem 2rem;
+    }
+    h1.preview-label { font-size: 1.05rem; margin-bottom: 0.35rem; }
+    .note {
+      font-size: 0.88rem;
+      color: #1e293b;
+      margin-bottom: 1rem;
+      max-width: 720px;
+    }
+    .frames {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .frame-wrap { width: 390px; max-width: 100%; }
+    .frame-wrap.wide { width: min(920px, 100%); }
+    .caption {
+      text-align: center;
+      font-size: 0.82rem;
+      font-weight: 800;
+      margin-bottom: 0.4rem;
+      color: #0f172a;
+    }
+    .frame {
+      background: #f8fafc;
+      border: 10px solid #0f172a;
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.18);
+    }
+    .frame.wide { border-width: 8px; border-radius: 18px; }
+    main { padding: 0.9rem; }
+    .article-pick h3 {
+      font-size: 1rem;
+      font-weight: 900;
+      margin: 0 0 0.75rem;
+      color: #0f172a;
+    }
+    .lead {
+      margin: 0 0 1rem;
+      font-size: 0.92rem;
+      line-height: 1.7;
+      color: #1e293b;
+    }
+    .panel.pros-cons {
+      margin: 0 0 0.75rem;
+      padding: 0.85rem 0.85rem 0.9rem;
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+    }
+    .pros-cons-groups { display: flex; flex-direction: column; gap: 0.85rem; }
+    .pros-cons-group { display: flex; flex-direction: column; gap: 0.55rem; }
+    .pros-cons-group-neg { padding-top: 0.85rem; border-top: 1px dashed #fecdd3; }
+    .pros-cons-label { margin: 0; font-size: 0.92rem; font-weight: 900; }
+    .pros-cons-label-good { color: #047857; }
+    .pros-cons-label-warn { color: #be123c; }
+    .entry-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 0.55rem;
+      align-items: stretch;
+    }
+    .entry-grid .entry { height: 100%; }
+    .panel {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 0.75rem 0.8rem 0.85rem;
+      margin: 0 0 0.75rem;
+    }
+    .panel h4 {
+      margin: 0 0 0.55rem;
+      font-size: 0.92rem;
+      font-weight: 900;
+      color: #1e40af;
+    }
+    .panel.panel-neg { background: #fff7f7; border-color: #fecdd3; }
+    .panel.trend-panel { background: #f8fafc; border-color: #bfdbfe; margin-bottom: 0.75rem; }
+    .trend-summary { margin: 0; font-size: 0.9rem; line-height: 1.75; color: #1e293b; font-weight: 500; }
+    .trend-kw-title { margin: 0.75rem 0 0.45rem; font-size: 0.78rem; font-weight: 800; color: #334155; }
+    .trend-keywords { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .trend-chip {
+      display: inline-flex; padding: 0.3rem 0.6rem; border-radius: 999px;
+      background: #eff6ff; border: 1px solid #bfdbfe;
+      color: #1e40af; font-size: 0.76rem; font-weight: 700;
+    }
+    .panel-neg h4 { color: #be123c; }
+    .entry-stack { display: flex; flex-direction: column; gap: 0.55rem; }
+    .entry {
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 0.55rem 0.65rem;
+      background: #f8fafc;
+    }
+    .entry.good { border-color: #a7f3d0; background: #ecfdf5; }
+    .entry.warn { border-color: #fecdd3; background: #fff1f2; }
+    .entry.fit { border-color: #bfdbfe; background: #eff6ff; }
+    .entry.issue { border-color: #fecdd3; background: #fff1f2; }
+    .entry-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 0.35rem 0.65rem;
+      margin-bottom: 0.25rem;
+    }
+    .entry-label { font-size: 0.86rem; font-weight: 900; color: #0f172a; }
+    .entry-score { font-size: 0.8rem; font-weight: 900; }
+    .entry.good .entry-score { color: #047857; }
+    .entry.warn .entry-score { color: #e11d48; }
+    .entry.fit .entry-score { color: #1d4ed8; }
+    .entry-body {
+      margin: 0;
+      font-size: 0.84rem;
+      line-height: 1.7;
+      color: #1e293b;
+      font-weight: 500;
+    }
+    .em-key { font-weight: 800; color: #0f172a; }
+    .entry.good .entry-body .em-key { color: #065f46; }
+    .entry.warn .entry-body .em-key { color: #9f1239; }
+    .lead .em-key,
+    .trend-summary .em-key { color: #0f172a; }
+    .badge {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.35rem 0.65rem;
+      border-radius: 999px;
+      background: #dcfce7;
+      color: #166534;
+      font-size: 0.78rem;
+      font-weight: 800;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="preview-label">プレビュー：強み・注意点レイアウト（横並びグリッド）</h1>
+  <p class="note">強み3枚・注意点2枚を、縦2カラムではなく全幅の横並びグリッドに変更しました。下の「口コミ傾向」以降は従来どおり縦積みです。</p>
+
+  <div class="frames">
+    <div class="frame-wrap">
+      <p class="caption">スマホ幅（390px）</p>
+      <div class="frame">
+        <main>
+          <article class="article-pick">
+            <h3>予算7〜10万円なら：DEEBOT T50S OMNI</h3>
+            <p class="lead">この価格帯（2製品）のなかで、総合点が最も高いのはDEEBOT T50S OMNIです。2位はDEEBOT N50 OMNI（総合点82.7）です。</p>
+
+            <div class="panel pros-cons">
+              <div class="pros-cons-groups">
+                <div class="pros-cons-group">
+                  <h4 class="pros-cons-label pros-cons-label-good">強み</h4>
+                  <div class="entry-grid">
+                    <div class="entry good">
+                      <div class="entry-head"><span class="entry-label">フローリング</span><span class="entry-score">98点</span></div>
+                      <p class="entry-body">「<strong class="em-key">床がピカピカ</strong>」「<strong class="em-key">サラサラになる</strong>」といった絶賛の声が多数。吸引と水拭きを同時に行うことで、素足で歩きたくなるほどの仕上がりを実現します。</p>
+                    </div>
+                    <div class="entry good">
+                      <div class="entry-head"><span class="entry-label">ペット毛</span><span class="entry-score">95点</span></div>
+                      <p class="entry-body">ペットの毛に関する言及はすべてポジティブで、「全く気にならなくなった」との声も。犬や猫を飼っている家庭にとって頼もしい存在です。</p>
+                    </div>
+                    <div class="entry good">
+                      <div class="entry-head"><span class="entry-label">メンテナンス</span><span class="entry-score">94点</span></div>
+                      <p class="entry-body">ゴミ収集からモップの洗浄・乾燥まで全自動で行うため、日々の手入れは汚水タンクの処理程度です。「手間が劇的に楽になった」と高く評価されています。</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="pros-cons-group pros-cons-group-neg">
+                  <h4 class="pros-cons-label pros-cons-label-warn">注意点</h4>
+                  <div class="entry-grid">
+                    <div class="entry warn">
+                      <div class="entry-head"><span class="entry-label">段差</span><span class="entry-score">75点</span></div>
+                      <p class="entry-body">2cm程度の段差が限界と考えられ、それ以上の段差がある場所では使用できません。</p>
+                    </div>
+                    <div class="entry warn">
+                      <div class="entry-head"><span class="entry-label">カーペット</span><span class="entry-score">78点</span></div>
+                      <p class="entry-body">薄いカーペットを巻き込んでしまうという指摘もありました。毛足の長い敷物などでは事前の片付けが推奨されます。</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel trend-panel">
+              <h4>口コミ傾向</h4>
+              <p class="trend-summary">ユーザーから提供された67件の採用口コミを分析。ECサイト横断での評価のばらつきは少なく、特に<strong class="em-key">水拭き性能と全自動ステーションの利便性</strong>について<strong class="em-key">一貫した高評価</strong>が得られています。初期設定の難しさが一部の<strong class="em-key">減点要因</strong>です。</p>
+              <p class="trend-kw-title">よく見るキーワード</p>
+              <div class="trend-keywords">
+                <span class="trend-chip">満足・買ってよかった</span>
+                <span class="trend-chip">水拭き・拭き掃除が良い</span>
+                <span class="trend-chip">静かで快適</span>
+                <span class="trend-chip">床がサラサラ・ピカピカ</span>
+              </div>
+            </div>
+
+            <span class="badge">強み・注意点は横並びグリッド</span>
+          </article>
+        </main>
+      </div>
+    </div>
+
+    <div class="frame-wrap wide">
+      <p class="caption">PC幅（920px）</p>
+      <div class="frame wide">
+        <main>
+          <article class="article-pick">
+            <h3>予算7〜10万円なら：DEEBOT T50S OMNI</h3>
+            <p class="lead">この価格帯（2製品）のなかで、総合点が最も高いのはDEEBOT T50S OMNIです。2位はDEEBOT N50 OMNI（総合点82.7）です。</p>
+
+            <div class="panel pros-cons">
+              <div class="pros-cons-groups">
+                <div class="pros-cons-group">
+                  <h4 class="pros-cons-label pros-cons-label-good">強み</h4>
+                  <div class="entry-grid">
+                    <div class="entry good">
+                      <div class="entry-head"><span class="entry-label">フローリング</span><span class="entry-score">98点</span></div>
+                      <p class="entry-body">「床がピカピカ」「サラサラになる」といった絶賛の声が多数。吸引と水拭きを同時に行うことで、素足で歩きたくなるほどの仕上がりを実現します。特にフローリングの多い家庭では、その効果を最大限に実感できるでしょう。</p>
+                    </div>
+                    <div class="entry good">
+                      <div class="entry-head"><span class="entry-label">ペット毛</span><span class="entry-score">95点</span></div>
+                      <p class="entry-body">ペットの毛に関する言及はすべてポジティブで、「全く気にならなくなった」との声も。毛が絡まりにくい特殊なブラシ構造が効果を発揮しており、犬や猫を飼っている家庭にとって非常に頼もしい存在であることがうかがえます。</p>
+                    </div>
+                    <div class="entry good">
+                      <div class="entry-head"><span class="entry-label">メンテナンス</span><span class="entry-score">94点</span></div>
+                      <p class="entry-body">ゴミ収集からモップの洗浄・乾燥まで全自動で行うため、日々の手入れは汚水タンクの処理程度です。これにより「手間が劇的に楽になった」と高く評価されています。ただし、数日汚水を放置すると臭いが発生するとの指摘もあります。</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="pros-cons-group pros-cons-group-neg">
+                  <h4 class="pros-cons-label pros-cons-label-warn">注意点</h4>
+                  <div class="entry-grid">
+                    <div class="entry warn">
+                      <div class="entry-head"><span class="entry-label">段差</span><span class="entry-score">75点</span></div>
+                      <p class="entry-body">段差乗り越えに関する具体的な言及は1件のみで、性能を判断するには情報が不足しています。一般的なロボット掃除機と同様に、2cm程度の段差が限界と考えられ、それ以上の段差がある場所では使用できません。</p>
+                    </div>
+                    <div class="entry warn">
+                      <div class="entry-head"><span class="entry-label">カーペット</span><span class="entry-score">78点</span></div>
+                      <p class="entry-body">カーペット上のペットの毛やホコリの除去能力は評価されていますが、薄いカーペットを巻き込んでしまうという指摘もありました。モップの自動リフトアップ機能は便利ですが、毛足の長い敷物などでは事前の片付けが推奨されます。</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel trend-panel">
+              <h4>口コミ傾向</h4>
+              <p class="trend-summary">ユーザーから提供された67件の採用口コミを分析。ECサイト横断での評価のばらつきは少なく、特に<strong class="em-key">水拭き性能と全自動ステーションの利便性</strong>について<strong class="em-key">一貫した高評価</strong>が得られています。初期設定の難しさが一部の<strong class="em-key">減点要因</strong>です。</p>
+              <p class="trend-kw-title">よく見るキーワード</p>
+              <div class="trend-keywords">
+                <span class="trend-chip">満足・買ってよかった</span>
+                <span class="trend-chip">水拭き・拭き掃除が良い</span>
+                <span class="trend-chip">静かで快適</span>
+                <span class="trend-chip">床がサラサラ・ピカピカ</span>
+              </div>
+            </div>
+
+            <div class="panel"><h4>向いている人</h4><div class="entry-stack">
+              <div class="entry fit">
+                <div class="entry-head"><span class="entry-label">ペットのいる家庭</span><span class="entry-score">適合度 95点</span></div>
+                <p class="entry-body">毛が絡まりにくいブラシと強力な吸引力で、カーペットや床に落ちたペットの毛をしっかり除去。</p>
+              </div>
+              <div class="entry fit">
+                <div class="entry-head"><span class="entry-label">家族世帯</span><span class="entry-score">適合度 92点</span></div>
+                <p class="entry-body">子どもが汚した床の食べこぼしや足跡も、強力な水拭き機能で綺麗さっぱり。</p>
+              </div>
+            </div></div>
+
+            <div class="panel panel-neg"><h4>よくある不満</h4><div class="entry-stack">
+              <div class="entry issue">
+                <div class="entry-head"><span class="entry-label">アプリの初期設定が難しい</span></div>
+                <p class="entry-body">Wi-Fi接続やアカウント登録でつまずくユーザーが一定数存在します。</p>
+              </div>
+              <div class="entry issue">
+                <div class="entry-head"><span class="entry-label">ステーションが大きくて場所を取る</span></div>
+                <p class="entry-body">全自動ステーションのサイズが大きく、設置スペースの確保が必要です。</p>
+              </div>
+            </div></div>
+          </article>
+        </main>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

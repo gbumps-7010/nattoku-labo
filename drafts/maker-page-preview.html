@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>プレビュー：メーカー比較ページ（最新版）</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Noto Sans JP", sans-serif;
+      background: #e2e8f0;
+      color: #1e293b;
+      line-height: 1.65;
+      padding: 1.25rem 1rem 2rem;
+    }
+    h1.preview-label { font-size: 1.05rem; margin-bottom: 0.35rem; }
+    .note { font-size: 0.88rem; color: #475569; margin-bottom: 1rem; max-width: 720px; }
+    .frames { display: flex; flex-wrap: wrap; gap: 1.25rem; justify-content: center; align-items: flex-start; }
+    .frame-wrap { width: 390px; max-width: 100%; }
+    .frame-wrap.wide { width: min(920px, 100%); }
+    .caption { text-align: center; font-size: 0.82rem; font-weight: 800; margin-bottom: 0.4rem; }
+    .frame { background: #f8fafc; border: 10px solid #0f172a; border-radius: 28px; overflow: hidden; box-shadow: 0 12px 30px rgba(15,23,42,.18); }
+    .frame.wide { border-width: 8px; border-radius: 18px; }
+    .hero { background: linear-gradient(135deg,#1e40af,#0f172a); color: #fff; padding: 1rem 0.9rem 1.1rem; font-size: 0.78rem; }
+    .hero h2 { font-size: 0.95rem; font-weight: 900; line-height: 1.4; margin-top: 0.35rem; }
+    .lede { font-size: 0.88rem; opacity: 0.95; margin-top: 0.35rem; }
+    main { padding: 0.9rem; background: #f1f5f9; }
+    .know {
+      background: linear-gradient(135deg,#eff6ff 0%,#f8fafc 100%);
+      border: 1px solid #93c5fd; border-radius: 14px;
+      padding: 1rem; margin-bottom: 1rem;
+    }
+    .know h2 { font-size: 1.02rem; color: #1e3a8a; font-weight: 900; margin-bottom: 0.45rem; }
+    .know-note {
+      margin: 0 0 0.75rem; padding: 0.55rem 0.7rem;
+      background: rgba(255,255,255,.75); border: 1px solid #bfdbfe;
+      border-radius: 8px; font-size: 0.84rem; color: #1e40af; font-weight: 700;
+    }
+    .know-list { list-style: none; display: grid; gap: 0.6rem; }
+    .know-item { display: flex; gap: 0.7rem; background: #fff; border: 1px solid #dbeafe; border-radius: 10px; padding: 0.7rem; }
+    .know-num { flex-shrink: 0; width: 1.6rem; height: 1.6rem; border-radius: 999px; background: #1e40af; color: #fff; font-size: 0.78rem; font-weight: 900; display: flex; align-items: center; justify-content: center; }
+    .know-body > strong { display: block; font-size: 0.9rem; margin-bottom: 0.2rem; }
+    .know-body p, .intro p { font-size: 0.84rem; color: #1e293b; margin-bottom: 0.75rem; }
+    .intro p:last-child { margin-bottom: 0; }
+    .sec-lead { font-size: 0.88rem; color: #1e293b; margin: 0.5rem 0 0.85rem; }
+    .article-pick h3 {
+      font-size: 0.95rem; font-weight: 900; margin: 0.75rem 0 0.65rem; padding: 0.65rem 0.75rem 0.65rem 0.9rem;
+      border-left: 5px solid #2563eb; background: linear-gradient(90deg,#eff6ff 0%,#f8fafc 70%,transparent 100%);
+      border-radius: 0 10px 10px 0;
+    }
+    .meta { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.55rem; }
+    .chip { padding: 0.35rem 0.7rem; border-radius: 999px; background: #e2e8f0; font-size: 0.8rem; font-weight: 900; }
+    .chip.accent { background: #dbeafe; color: #1e40af; }
+    .price-caution { font-size: 0.78rem; color: #1e293b; font-weight: 600; margin-bottom: 0.65rem; }
+    .lead { font-size: 0.88rem; color: #1e293b; margin-bottom: 0.75rem; }
+    .panel { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 0.75rem; margin-bottom: 0.65rem; }
+    .panel h4 { font-size: 0.9rem; font-weight: 900; color: #1e40af; margin-bottom: 0.5rem; }
+    .panel.panel-neg { background: #fff7f7; border-color: #fecdd3; }
+    .panel.panel-neg h4 { color: #be123c; }
+    .panel.trend-panel { background: #f8fafc; border-color: #bfdbfe; }
+    .pros-cons-groups { display: flex; flex-direction: column; gap: 0.75rem; }
+    .pros-cons-group-neg { padding-top: 0.75rem; border-top: 1px dashed #fecdd3; }
+    .pros-cons-label-good { color: #047857; font-size: 0.88rem; font-weight: 900; margin-bottom: 0.45rem; }
+    .pros-cons-label-warn { color: #be123c; font-size: 0.88rem; font-weight: 900; margin-bottom: 0.45rem; }
+    .entry-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.5rem; }
+    .entry-stack { display: flex; flex-direction: column; gap: 0.5rem; }
+    .entry { border: 1px solid #e2e8f0; border-radius: 10px; padding: 0.5rem 0.6rem; background: #f8fafc; font-size: 0.82rem; }
+    .entry.good { border-color: #a7f3d0; background: #ecfdf5; }
+    .entry.warn, .entry.issue { border-color: #fecdd3; background: #fff1f2; }
+    .entry.fit { border-color: #bfdbfe; background: #eff6ff; }
+    .entry-head { display: flex; gap: 0.4rem; font-weight: 900; margin-bottom: 0.2rem; font-size: 0.82rem; }
+    .entry.good .entry-score { color: #047857; }
+    .entry.warn .entry-score, .entry.issue .entry-score { color: #e11d48; }
+    .entry-body { margin: 0; line-height: 1.65; color: #1e293b; font-weight: 500; }
+    .trend-summary { font-size: 0.88rem; color: #1e293b; margin-bottom: 0.5rem; }
+    .trend-kw-title { font-size: 0.76rem; font-weight: 800; color: #334155; margin-bottom: 0.35rem; }
+    .trend-keywords { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+    .trend-chip { padding: 0.28rem 0.55rem; border-radius: 999px; background: #eff6ff; border: 1px solid #bfdbfe; color: #1e40af; font-size: 0.72rem; font-weight: 700; }
+    .em-key { display: inline; font-weight: 800; color: #0f172a; }
+    .hero .lede .em-key { color: #fff; }
+    .entry.good .entry-body .em-key { color: #065f46; }
+    .entry.warn .entry-body .em-key, .entry.issue .entry-body .em-key { color: #9f1239; }
+    .price-caution .em-key { color: #b45309; font-weight: 900; }
+    .know-body .em-key, .intro .em-key, .sec-lead .em-key, .lead .em-key, .trend-summary .em-key { color: #0f172a; }
+  </style>
+</head>
+<body>
+  <h1 class="preview-label">プレビュー：メーカー比較ページ（最新版）</h1>
+  <p class="note">「この記事でわかること」・イントロ・おすすめ機種ブロック（強み/注意点グリッド・口コミ傾向・重要語句の強調）を反映しています。</p>
+
+  <div class="frames">
+    <div class="frame-wrap">
+      <p class="caption">スマホ幅（390px）</p>
+      <div class="frame">
+        <div class="hero">
+          <div>ホーム › メーカー比較 › エコバックス</div>
+          <h2>【全機種比較】エコバックスロボット掃除機</h2>
+          <p class="lede"><strong class="em-key">口コミ分析</strong>データで、エコバックス（ECOVACS）のロボット掃除機12製品を<strong class="em-key">横断比較</strong>します。</p>
+        </div>
+        <main>
+          <div class="know">
+            <h2>この記事でわかること</h2>
+            <p class="know-note"><strong class="em-key">２大ECサイト</strong>のすべての口コミを分析した結果を紹介します！</p>
+            <ul class="know-list">
+              <li class="know-item">
+                <span class="know-num">1</span>
+                <div class="know-body">
+                  <strong>エコバックス全12機種の比較表</strong>
+                  <p>口コミから出した<strong class="em-key">総合点</strong>と<strong class="em-key">8つの性能</strong>を、価格も含めてひとつの表で比べられます。</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="intro">
+            <p>エコバックスは、定価目安でおよそ¥34,800〜¥229,900と価格差の大きいメーカーです。「<strong class="em-key">どれを選べばよいかわかりにくい</strong>」と感じる人も少なくありません。</p>
+          </div>
+          <p class="sec-lead">点数は<strong class="em-key">90点台が緑</strong>、<strong class="em-key">80点台が青</strong>、<strong class="em-key">70点台が黄</strong>、<strong class="em-key">70点未満が赤</strong>です。</p>
+          <article class="article-pick">
+            <h3>予算7〜10万円なら：DEEBOT T50S OMNI</h3>
+            <p class="price-caution">表示価格はメーカー公式の参考価格です。<strong class="em-key">購入前に現在の販売価格の確認を強くおすすめ</strong>します。</p>
+            <p class="lead">この価格帯のなかで、<strong class="em-key">総合点</strong>が<strong class="em-key">最も高い</strong>のはDEEBOT T50S OMNIです。</p>
+            <div class="panel pros-cons">
+              <div class="pros-cons-groups">
+                <div class="pros-cons-group">
+                  <h4 class="pros-cons-label-good">強み</h4>
+                  <div class="entry-grid">
+                    <div class="entry good">
+                      <div class="entry-head"><span>フローリング</span><span class="entry-score">98点</span></div>
+                      <p class="entry-body">「<strong class="em-key">床がピカピカ</strong>」「<strong class="em-key">サラサラになる</strong>」といった絶賛の声が多数。</p>
+                    </div>
+                    <div class="entry good">
+                      <div class="entry-head"><span>ペット毛</span><span class="entry-score">95点</span></div>
+                      <p class="entry-body">ペットの毛に関する言及はすべてポジティブ。</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="pros-cons-group pros-cons-group-neg">
+                  <h4 class="pros-cons-label-warn">注意点</h4>
+                  <div class="entry-grid">
+                    <div class="entry warn">
+                      <div class="entry-head"><span>段差</span><span class="entry-score">75点</span></div>
+                      <p class="entry-body">2cm程度の段差が<strong class="em-key">限界</strong>と考えられます。</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel trend-panel">
+              <h4>口コミ傾向</h4>
+              <p class="trend-summary">特に<strong class="em-key">水拭き性能と全自動ステーションの利便性</strong>について<strong class="em-key">一貫した高評価</strong>が得られています。初期設定の難しさが一部の<strong class="em-key">減点要因</strong>です。</p>
+              <p class="trend-kw-title">よく見るキーワード</p>
+              <div class="trend-keywords">
+                <span class="trend-chip">満足・買ってよかった</span>
+                <span class="trend-chip">水拭き・拭き掃除が良い</span>
+              </div>
+            </div>
+          </article>
+        </main>
+      </div>
+    </div>
+
+    <div class="frame-wrap wide">
+      <p class="caption">PC幅（920px）</p>
+      <div class="frame wide">
+        <div class="hero">
+          <div>ホーム › メーカー比較 › エコバックス</div>
+          <h2>【全機種比較】エコバックスロボット掃除機｜口コミでわかるおすすめの選び方</h2>
+          <p class="lede"><strong class="em-key">口コミ分析</strong>データで、エコバックス（ECOVACS）のロボット掃除機12製品を<strong class="em-key">横断比較</strong>します。</p>
+        </div>
+        <main>
+          <div class="know">
+            <h2>この記事でわかること</h2>
+            <p class="know-note"><strong class="em-key">２大ECサイト</strong>のすべての口コミを分析した結果を紹介します！</p>
+            <ul class="know-list">
+              <li class="know-item">
+                <span class="know-num">1</span>
+                <div class="know-body">
+                  <strong>エコバックス全12機種の比較表</strong>
+                  <p>口コミから出した<strong class="em-key">総合点</strong>と<strong class="em-key">8つの性能</strong>を、価格も含めてひとつの表で比べられます。</p>
+                </div>
+              </li>
+              <li class="know-item">
+                <span class="know-num">2</span>
+                <div class="know-body">
+                  <strong>予算・重視する点・暮らし方別のおすすめ</strong>
+                  <p>「<strong class="em-key">いくらまで出せるか</strong>」「<strong class="em-key">何を優先するか</strong>」から、あなたに合う1台に絞れます。</p>
+                </div>
+              </li>
+              <li class="know-item">
+                <span class="know-num">3</span>
+                <div class="know-body">
+                  <strong>おすすめの理由（口コミの要点）</strong>
+                  <p>おすすめ機種ごとに、口コミでよく見る評価と気をつけたい点をまとめています。</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="intro">
+            <p>エコバックスは、定価目安でおよそ¥34,800〜¥229,900と価格差の大きいメーカーです。「<strong class="em-key">どれを選べばよいかわかりにくい</strong>」と感じる人も少なくありません。</p>
+            <p>本記事では、ナットクLaboが分析した<strong class="em-key">口コミデータ</strong>を使い、全製品を<strong class="em-key">比較表</strong>で俯瞰したうえで、価格帯・機能・暮らし方ごとのおすすめを解説します。</p>
+          </div>
+          <p class="sec-lead">左列が比較項目、右に各製品です。点数は<strong class="em-key">90点台が緑</strong>、<strong class="em-key">80点台が青</strong>、<strong class="em-key">70点台が黄</strong>、<strong class="em-key">70点未満が赤</strong>です。セルにマウスを置くと<strong class="em-key">加重点</strong>を表示します。</p>
+          <article class="article-pick">
+            <h3>予算7〜10万円なら：DEEBOT T50S OMNI</h3>
+            <div class="meta">
+              <span class="chip">¥89,800</span>
+              <span class="chip accent">総合点 84.8</span>
+              <span class="chip">口コミ数 71件</span>
+            </div>
+            <p class="price-caution">表示価格はメーカー公式の参考価格です。各ECサイトではセールが行われることが多いため、<strong class="em-key">購入前に現在の販売価格の確認を強くおすすめ</strong>します。</p>
+            <p class="lead">この価格帯（2製品）のなかで、<strong class="em-key">総合点</strong>が<strong class="em-key">最も高い</strong>のはDEEBOT T50S OMNIです。2位はDEEBOT N50 OMNI（総合点82.7）です。</p>
+            <div class="panel pros-cons">
+              <div class="pros-cons-groups">
+                <div class="pros-cons-group">
+                  <h4 class="pros-cons-label-good">強み</h4>
+                  <div class="entry-grid">
+                    <div class="entry good">
+                      <div class="entry-head"><span>フローリング</span><span class="entry-score">98点</span></div>
+                      <p class="entry-body">「<strong class="em-key">床がピカピカ</strong>」「<strong class="em-key">サラサラになる</strong>」といった絶賛の声が多数。吸引と水拭きを同時に行うことで、素足で歩きたくなるほどの仕上がりを実現します。</p>
+                    </div>
+                    <div class="entry good">
+                      <div class="entry-head"><span>ペット毛</span><span class="entry-score">95点</span></div>
+                      <p class="entry-body">「<strong class="em-key">全く気にならなくなった</strong>」との声も。犬や猫を飼っている家庭にとって頼もしい存在です。</p>
+                    </div>
+                    <div class="entry good">
+                      <div class="entry-head"><span>メンテナンス</span><span class="entry-score">94点</span></div>
+                      <p class="entry-body">「<strong class="em-key">手間が劇的に楽になった</strong>」と<strong class="em-key">高く評価</strong>されています。</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="pros-cons-group pros-cons-group-neg">
+                  <h4 class="pros-cons-label-warn">注意点</h4>
+                  <div class="entry-grid">
+                    <div class="entry warn">
+                      <div class="entry-head"><span>段差</span><span class="entry-score">75点</span></div>
+                      <p class="entry-body">2cm程度の段差が<strong class="em-key">限界</strong>と考えられ、それ以上の段差がある場所では使用できません。</p>
+                    </div>
+                    <div class="entry warn">
+                      <div class="entry-head"><span>カーペット</span><span class="entry-score">78点</span></div>
+                      <p class="entry-body">毛足の長い敷物などでは<strong class="em-key">事前の片付け</strong>が<strong class="em-key">推奨されます</strong>。</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel trend-panel">
+              <h4>口コミ傾向</h4>
+              <p class="trend-summary">ユーザーから提供された67件の採用口コミを分析。ECサイト横断での評価のばらつきは少なく、特に<strong class="em-key">水拭き性能と全自動ステーションの利便性</strong>について<strong class="em-key">一貫した高評価</strong>が得られています。初期設定の難しさが一部の<strong class="em-key">減点要因</strong>です。</p>
+              <p class="trend-kw-title">よく見るキーワード</p>
+              <div class="trend-keywords">
+                <span class="trend-chip">満足・買ってよかった</span>
+                <span class="trend-chip">水拭き・拭き掃除が良い</span>
+                <span class="trend-chip">静かで快適</span>
+                <span class="trend-chip">床がサラサラ・ピカピカ</span>
+              </div>
+            </div>
+            <div class="panel"><h4>向いている人</h4><div class="entry-stack">
+              <div class="entry fit"><div class="entry-head"><span>ペットのいる家庭</span><span class="entry-score">適合度 95点</span></div><p class="entry-body">毛が絡まりにくいブラシと強力な吸引力で、ペットの毛をしっかり除去。</p></div>
+            </div></div>
+            <div class="panel panel-neg"><h4>よくある不満</h4><div class="entry-stack">
+              <div class="entry issue"><div class="entry-head"><span>アプリの初期設定が難しい</span></div><p class="entry-body">Wi-Fi接続で<strong class="em-key">つまず</strong>くユーザーが一定数存在します。</p></div>
+            </div></div>
+          </article>
+        </main>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -4,6 +4,11 @@
  * - 構文エラーを完全修正
  */
 
+function fp(text) {
+    if (!text) return '';
+    return typeof formatProse === 'function' ? formatProse(text) : text;
+}
+
 // 1. データ読み込み
 function getProductId() {
     const urlParams = new URLSearchParams(window.location.search);
@@ -424,7 +429,7 @@ function updatePerformanceCards(perfData) {
                 <div class="performance-detail-card ${scoreClass}">
                     <h4>${item.label}: ${score}/100点</h4>
                     <p class="rank-badge">${data.reviewCount}件の口コミから算出</p>
-                    <p>${data.comment || '詳細評価情報なし'}</p>
+                    <p>${fp(data.comment || '詳細評価情報なし')}</p>
                 </div>
             `;
         }).join('');
@@ -474,9 +479,9 @@ function renderReliabilityFactors(rel) {
                 60,
             ),
             description:
-                rel.dataAdequacy?.description ||
+                fp(rel.dataAdequacy?.description ||
                 rel.dataAdequacy?.note ||
-                '',
+                ''),
         },
         {
             tone: 'consistency',
@@ -491,9 +496,9 @@ function renderReliabilityFactors(rel) {
                 30,
             ),
             description:
-                rel.consistency?.description ||
+                fp(rel.consistency?.description ||
                 rel.consistency?.note ||
-                '',
+                ''),
         },
         {
             tone: 'freshness',
@@ -508,9 +513,9 @@ function renderReliabilityFactors(rel) {
                 10,
             ),
             description:
-                rel.freshness?.description ||
+                fp(rel.freshness?.description ||
                 rel.freshness?.note ||
-                '',
+                ''),
         },
     ];
 
@@ -525,7 +530,7 @@ function renderReliabilityFactors(rel) {
                 <span data-dynamic="${card.scoreAttr}">${card.score}</span>
                 <span class="reliability-factor-denom">/ ${card.maxPts}点</span>
             </div>
-            <p class="reliability-factor-desc" data-dynamic="${card.descAttr}">${card.description}</p>
+            <p class="reliability-factor-desc" data-dynamic="${card.descAttr}">${fp(card.description)}</p>
         </article>
     `,
         )
@@ -691,7 +696,7 @@ function updateOperationalCost(data) {
     // ROI説明
     const roiDescEl = document.querySelector('[data-dynamic="operationalCost.roiDescription"]');
     if (roiDescEl && oc.roiDescription) {
-        roiDescEl.innerHTML = oc.roiDescription;
+        roiDescEl.innerHTML = fp(oc.roiDescription);
     }
     
     // 消耗品リスト
@@ -764,7 +769,7 @@ function updateSuccessStrategies(data) {
                         ${strategy.technicalLevelDescription ? `
                             <p style="color: #0f172a; font-size: 0.85rem; line-height: 1.6; margin: 0.5rem 0;">
                                 <i class="fas fa-info-circle" style="color: #3b82f6;"></i>
-                                ${strategy.technicalLevelDescription}
+                                ${fp(strategy.technicalLevelDescription)}
                             </p>
                         ` : ''}
                         ${strategy.detailedSteps ? `
@@ -772,8 +777,8 @@ function updateSuccessStrategies(data) {
                                 <div style="font-weight: 600; color: #334155; margin-bottom: 0.5rem; font-size: 0.9rem;">
                                     <i class="fas fa-list-check"></i> 具体的な手順
                                 </div>
-                                <p style="color: #475569; font-size: 0.9rem; line-height: 1.7; margin: 0; white-space: pre-line;">
-                                    ${strategy.detailedSteps}
+                                <p style="color: #1e293b; font-size: 0.9rem; line-height: 1.7; margin: 0; white-space: pre-line;">
+                                    ${fp(strategy.detailedSteps)}
                                 </p>
                             </div>
                         ` : ''}
@@ -783,7 +788,7 @@ function updateSuccessStrategies(data) {
                                     <i class="fas fa-bullseye"></i> 期待される結果
                                 </div>
                                 <p style="color: #1e40af; font-size: 0.85rem; line-height: 1.6; margin: 0;">
-                                    ${strategy.expectedResult}
+                                    ${fp(strategy.expectedResult)}
                                 </p>
                             </div>
                         ` : ''}
@@ -839,7 +844,7 @@ function updateSuccessStrategies(data) {
             <h3 class="problem-title">${item.complaint || item.issue || item.title || 'データなし'}</h3>
             <p class="problem-percentage">${item.percentage || item.occurrenceRate}% の方が経験</p>
             ${envFactorHTML}
-            ${technicalDesc ? `<p class="problem-description" style="margin-top: 1rem;">${technicalDesc}</p>` : ''}
+            ${technicalDesc ? `<p class="problem-description prose-warn" style="margin-top: 1rem;">${fp(technicalDesc)}</p>` : ''}
             <div class="solutions" style="margin-top: 1.5rem;">
                 <h4 style="font-weight: 700; color: #10b981; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
                     <i class="fas fa-circle-check"></i>
@@ -908,7 +913,7 @@ function updateTopComplaints(data) {
                 </div>
                 ${importanceBadge}
                 <h3 class="problem-title">${title}</h3>
-                ${item.details || item.description ? `<p class="problem-description">${item.details || item.description}</p>` : ''}
+                ${item.details || item.description ? `<p class="problem-description prose-warn">${fp(item.details || item.description)}</p>` : ''}
                 ${solutionHTML ? `
                 <div class="solutions">
                     <h4 style="font-weight: 700; margin-bottom: 0.75rem;">対策</h4>
@@ -1013,7 +1018,7 @@ function updateAttributeScores(data) {
                                 <span style="font-weight: 700; color: #1e293b;">${scoreIcon} ${item.attribute || item.field}</span>
                                 <span style="font-size: 1.3rem; font-weight: 900; color: ${scoreColor};">${score}</span>
                             </div>
-                            ${commentText ? `<p style="font-size: 0.85rem; color: #0f172a; margin: 0; line-height: 1.5;">${commentText}</p>` : ''}
+                            ${commentText ? `<p style="font-size: 0.85rem; color: #1e293b; margin: 0; line-height: 1.5;">${fp(commentText)}</p>` : ''}
                         </div>
                     `;
                 }).join('');
@@ -1056,7 +1061,7 @@ function updateAttributeScores(data) {
                                 <span style="font-weight: 700; color: #1e293b;">${scoreIcon} ${field.label}</span>
                                 <span style="font-size: 1.3rem; font-weight: 900; color: ${scoreColor};">${score}</span>
                             </div>
-                            ${commentText ? `<p style="font-size: 0.85rem; color: #0f172a; margin: 0; line-height: 1.5;">${commentText}</p>` : ''}
+                            ${commentText ? `<p style="font-size: 0.85rem; color: #1e293b; margin: 0; line-height: 1.5;">${fp(commentText)}</p>` : ''}
                         </div>
                     `;
                 }).filter(html => html !== '').join('');
@@ -1069,7 +1074,7 @@ function updateAttributeScores(data) {
         // コメント（overall配下）
         const commentEl = section.querySelector('.attribute-comment');
         if (commentEl && attrData.comment) {
-            commentEl.textContent = attrData.comment;
+            commentEl.innerHTML = fp(attrData.comment);
         }
     });
 }

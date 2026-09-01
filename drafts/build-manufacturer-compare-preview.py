@@ -6,9 +6,12 @@ import argparse
 import html
 import json
 import re
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts" / "lib"))
+from format_prose import format_prose  # noqa: E402
 DATA = ROOT / "products" / "data"
 OUT_DIR = ROOT / "makers"
 NAV_V = "20260818k"
@@ -263,6 +266,27 @@ def load_manufacturer(mfr_id: str) -> list[dict]:
             )
         attributes.sort(key=lambda a: -a["overall"])
 
+        review_trend = ""
+        for path_keys in (
+            ("dataQuality", "comment"),
+            ("updateInfo", "note"),
+            ("categoryC", "userSatisfaction", "comment"),
+            ("reliability", "consistency", "description"),
+        ):
+            node: object = d
+            for key in path_keys:
+                node = node.get(key) if isinstance(node, dict) else ""
+            if isinstance(node, str) and node.strip():
+                review_trend = node.strip()
+                break
+
+        review_keywords_pos: list[str] = []
+        for item in ((d.get("reviewKeywords") or {}).get("positive") or [])[:4]:
+            if isinstance(item, dict):
+                kw = (item.get("keyword") or "").strip()
+                if kw:
+                    review_keywords_pos.append(kw)
+
         row = {
             "id": d.get("productId") or path.stem,
             "name": d.get("productName") or path.stem,
@@ -278,6 +302,8 @@ def load_manufacturer(mfr_id: str) -> list[dict]:
             "axes": axes,
             "complaints": complaints,
             "attributes": attributes,
+            "review_trend": review_trend,
+            "review_keywords_pos": review_keywords_pos,
         }
         for short, key in FEATURE_KEYS.items():
             item = perf.get(key) if isinstance(perf.get(key), dict) else {}
@@ -366,28 +392,26 @@ def pick_cautions(product: dict, n: int = 2) -> list[dict]:
     return sorted(axes, key=lambda a: a["score"])[:n]
 
 
-def pick_trends(product: dict, preferred: list[str] | None = None, n: int = 3) -> list[dict]:
-    by_short = {a["short"]: a for a in (product.get("axes") or []) if a.get("comment")}
-    out: list[dict] = []
-    seen: set[str] = set()
-    for short in preferred or []:
-        ax = by_short.get(short)
-        if ax and short not in seen:
-            out.append(ax)
-            seen.add(short)
-        if len(out) >= n:
-            return out
-    for ax in sorted(
-        [a for a in (product.get("axes") or []) if a.get("comment") and a.get("score") is not None],
-        key=lambda a: -a["score"],
-    ):
-        if ax["short"] in seen:
-            continue
-        out.append(ax)
-        seen.add(ax["short"])
-        if len(out) >= n:
-            break
-    return out
+def build_review_trend_html(product: dict) -> str:
+    text = (product.get("review_trend") or "").strip()
+    if not text:
+        return ""
+    keywords = product.get("review_keywords_pos") or []
+    kw_block = ""
+    if keywords:
+        chips = "".join(
+            f'<span class="trend-chip">{html.escape(kw)}</span>' for kw in keywords[:4]
+        )
+        kw_block = (
+            '<p class="trend-kw-title">よく見るキーワード</p>'
+            f'<div class="trend-keywords">{chips}</div>'
+        )
+    return f"""
+          <div class="panel trend-panel">
+            <h4>口コミ傾向</h4>
+            <p class="trend-summary">{format_prose(_clip(text, 220))}</p>
+            {kw_block}
+          </div>"""
 
 
 def pick_fit_audiences(product: dict, n: int = 3, min_score: float = 75.0) -> list[dict]:
@@ -437,30 +461,43 @@ def _clip(text: str, n: int = 90) -> str:
     return out
 
 
-# 行頭に来ると不自然な文字（助詞・句読点など）を直前に食い付かせる
-_JA_NO_LINE_START = set("、。，．）］｝」』】〉》をにではがのともへやや")
-# 行末に来ると不自然な開き記号
-_JA_NO_LINE_END = set("（［｛「『【〈《")
-
-
-def _ja_wrap(text: str) -> str:
-    """Insert word joiners so 1–2 character orphans are less likely."""
-    if not text:
-        return text
-    out: list[str] = []
-    for i, ch in enumerate(text):
-        if i > 0 and ch in _JA_NO_LINE_START:
-            out.append("\u2060")
-        out.append(ch)
-        if ch in _JA_NO_LINE_END and i + 1 < len(text):
-            out.append("\u2060")
-    return "".join(out)
+PRICE_CAUTION_TEXT = (
+    "表示価格はメーカー公式の参考価格です。"
+    "各ECサイトではセールが行われることが多いため、"
+    "購入前に現在の販売価格の確認を強くおすすめします。"
+)
+INTRO_FOLLOWUP = (
+    "本記事では、ナットクLaboが分析した口コミデータを使い、"
+    "全製品を比較表で俯瞰したうえで、価格帯・機能・暮らし方ごとのおすすめを解説します。"
+)
+TABLE_SEC_LEAD = (
+    "左列が比較項目、右に各製品です。"
+    "点数は90点台が緑、80点台が青、70点台が黄、70点未満が赤です。"
+    "セルにマウスを置くと加重点を表示します。"
+)
+PRICE_SEC_LEAD = (
+    "まず予算で絞りたい人向けです。"
+    "各価格帯で総合点が最も高い機種を、強み・注意点・口コミ傾向付きで紹介します。"
+)
+FEATURE_SEC_LEAD = (
+    "「床をきれいにしたい」「静かに使いたい」など、"
+    "機能の優先順位がはっきりしている人向けです。"
+    "機能ごとに1機種ずつ、口コミ傾向付きで紹介します。"
+)
+PERSONA_SEC_LEAD = (
+    "暮らし方やこだわりに合わせて選ぶ場合の目安です。"
+    "タイプごとに重視する機能を決め、機能評価85%・口コミ信頼度15%の加重点で1機種を選んでいます。"
+)
+SUMMARY_LEAD = (
+    "まず比較表で全体を把握し、そのあと「予算」「機能」「暮らし方」のどれかで絞るのがおすすめです。"
+)
+MAKERS_INDEX_LEDE = "口コミ分析データをもとに、メーカーごとのロボット掃除機を横断比較します。"
 
 
 def render_entry(label: str, score_txt: str, body: str, tone: str = "") -> str:
     score_html = f'<span class="entry-score">{html.escape(score_txt)}</span>' if score_txt else ""
     body_html = (
-        f'<p class="entry-body">{html.escape(_ja_wrap(body))}</p>' if body else ""
+        f'<p class="entry-body">{format_prose(body)}</p>' if body else ""
     )
     tone_cls = f" {tone}" if tone else ""
     return f"""
@@ -479,7 +516,6 @@ def article_pick(
     heading: str,
     lead: str,
     product: dict | None,
-    trend_keys: list[str] | None = None,
 ) -> str:
     if not product:
         return f"""
@@ -492,17 +528,12 @@ def article_pick(
     cautions = pick_cautions(product, n=2)
     strength_shorts = {a["short"] for a in strengths}
     cautions = [a for a in cautions if a["short"] not in strength_shorts][:2]
-    used_shorts = strength_shorts | {a["short"] for a in cautions}
-    preferred = [k for k in (trend_keys or []) if k not in used_shorts]
-    trends = pick_trends(product, preferred or trend_keys, n=2)
-    trends = [t for t in trends if t["short"] not in used_shorts][:2]
     fits = pick_fit_audiences(product, n=2)
     complaints = (product.get("complaints") or [])[:2]
 
     pros_cons = ""
     if strengths or cautions:
-        left = ""
-        right = ""
+        groups = []
         if strengths:
             items = "".join(
                 render_entry(
@@ -513,7 +544,12 @@ def article_pick(
                 )
                 for a in strengths
             )
-            left = f'<div class="panel"><h4>強み</h4><div class="entry-stack">{items}</div></div>'
+            groups.append(
+                f'<div class="pros-cons-group">'
+                f'<h4 class="pros-cons-label pros-cons-label-good">強み</h4>'
+                f'<div class="entry-grid">{items}</div>'
+                f"</div>"
+            )
         if cautions:
             items = "".join(
                 render_entry(
@@ -524,20 +560,19 @@ def article_pick(
                 )
                 for a in cautions
             )
-            right = f'<div class="panel panel-neg"><h4>注意点</h4><div class="entry-stack">{items}</div></div>'
-        pros_cons = f'<div class="split">{left}{right}</div>'
-
-    trends_html = ""
-    if trends:
-        items = "".join(
-            render_entry(
-                ax["label"],
-                f"{ax['score']:.0f}点" if ax.get("score") is not None else "",
-                _clip(ax.get("comment") or "", 120),
+            groups.append(
+                f'<div class="pros-cons-group pros-cons-group-neg">'
+                f'<h4 class="pros-cons-label pros-cons-label-warn">注意点</h4>'
+                f'<div class="entry-grid">{items}</div>'
+                f"</div>"
             )
-            for ax in trends
+        pros_cons = (
+            f'<div class="panel pros-cons">'
+            f'<div class="pros-cons-groups">{"".join(groups)}</div>'
+            f"</div>"
         )
-        trends_html = f'<div class="panel"><h4>口コミ傾向</h4><div class="entry-stack">{items}</div></div>'
+
+    trends_html = build_review_trend_html(product)
 
     fit_html = ""
     if fits:
@@ -587,11 +622,9 @@ def article_pick(
               <span class="chip">口コミ信頼度 {product['rel']:.1f}</span>
               <span class="chip">口コミ数 {product['reviews']:,}件</span>
             </p>
-            <p class="price-caution">
-              表示価格はメーカー公式の参考価格です。各ECサイトではセールが行われることが多いため、<strong>購入前に現在の販売価格の確認を強くおすすめ</strong>します。
-            </p>
+            <p class="price-caution">{format_prose(PRICE_CAUTION_TEXT)}</p>
           </div>
-          <p class="lead">{html.escape(lead)}</p>
+          <p class="lead">{format_prose(lead)}</p>
           {pros_cons}
           {trends_html}
           {fit_html}
@@ -629,25 +662,44 @@ AFFILIATE_JS = r"""
       "html,body{width:100%;max-width:100%;min-width:0;margin:0;padding:0;background:#fff;color:#0f172a;overflow-x:hidden}" +
       "body{display:block}" +
       '[id^="msmaflink-"]{width:100%!important;max-width:100%!important;min-width:0!important}' +
-      "div.easyLink-box{display:block!important;width:100%!important;max-width:100%!important;min-width:0!important;box-sizing:border-box!important}" +
+      "div.easyLink-box{display:flex!important;flex-direction:row!important;align-items:flex-start!important;gap:16px!important;width:100%!important;max-width:100%!important;min-width:0!important;box-sizing:border-box!important}" +
       "div.easyLink-box div.easyLink-img," +
       "div.easyLink-box div.easyLink-img p.easyLink-img-box{" +
-      "width:min(240px,100%)!important;min-width:0!important;max-width:100%!important;" +
-      "height:auto!important;aspect-ratio:1!important;flex:none!important;" +
-      "margin:0 auto 12px!important;box-sizing:border-box!important}" +
+      "width:240px!important;min-width:240px!important;max-width:240px!important;" +
+      "height:240px!important;flex:0 0 240px!important;flex-shrink:0!important;" +
+      "margin:0!important;box-sizing:border-box!important}" +
       "div.easyLink-box div.easyLink-img::before{display:none!important;padding-top:0!important;content:none!important}" +
       "div.easyLink-box div.easyLink-img p.easyLink-img-box span{" +
-      "width:100%!important;height:auto!important;aspect-ratio:1!important}" +
+      "width:240px!important;height:240px!important}" +
       "div.easyLink-box div.easyLink-img p.easyLink-img-box span>img," +
       "div.easyLink-box img.js-item-image{" +
-      "max-width:100%!important;max-height:240px!important;" +
+      "max-width:240px!important;max-height:240px!important;" +
       "width:auto!important;height:auto!important;min-width:0!important;object-fit:contain!important}" +
       "div.easyLink-box div.easyLink-info{" +
-      "min-width:0!important;width:100%!important;max-width:560px!important;margin:0 auto!important;float:none!important}" +
+      "flex:1 1 0!important;min-width:0!important;display:flex!important;flex-wrap:wrap!important;flex-direction:row!important;align-content:flex-start!important;float:none!important}" +
+      "div.easyLink-box div.easyLink-info p.easyLink-name," +
+      "div.easyLink-box div.easyLink-info p.easyLink-company," +
+      "div.easyLink-box div.easyLink-info p.easyLink-price{" +
+      "flex:0 0 100%!important;width:100%!important;max-width:100%!important}" +
       "div.easyLink-box div.easyLink-info p.easyLink-info-btn{" +
-      "display:block!important;width:100%!important;max-width:100%!important;margin:0 0 8px!important;float:none!important;clear:both!important}" +
+      "flex:1 1 0!important;min-width:0!important;max-width:100%!important;margin:8px 6px 0 0!important;padding:0!important;float:none!important;clear:none!important;display:block!important}" +
+      "div.easyLink-box div.easyLink-info p.easyLink-info-btn:last-child{margin-right:0!important}" +
       "div.easyLink-box div.easyLink-info p.easyLink-info-btn a{" +
-      "display:block!important;width:100%!important;max-width:100%!important;min-width:0!important;box-sizing:border-box!important}" +
+      "display:block!important;width:100%!important;max-width:100%!important;min-width:0!important;box-sizing:border-box!important;text-align:center!important;white-space:normal!important}" +
+      "@media screen and (max-width:480px){" +
+      "div.easyLink-box{flex-direction:column!important;align-items:stretch!important}" +
+      "div.easyLink-box div.easyLink-img," +
+      "div.easyLink-box div.easyLink-img p.easyLink-img-box{" +
+      "width:min(220px,100%)!important;min-width:0!important;max-width:100%!important;" +
+      "height:auto!important;aspect-ratio:1!important;flex-basis:auto!important;margin:0 auto!important}" +
+      "div.easyLink-box div.easyLink-img p.easyLink-img-box span{width:100%!important;height:auto!important;aspect-ratio:1!important}" +
+      "div.easyLink-box div.easyLink-img p.easyLink-img-box span>img," +
+      "div.easyLink-box img.js-item-image{max-width:100%!important;max-height:220px!important}" +
+      "div.easyLink-box div.easyLink-info{flex-direction:column!important;flex-wrap:nowrap!important}" +
+      "div.easyLink-box div.easyLink-info p.easyLink-info-btn{" +
+      "flex:0 0 100%!important;width:100%!important;min-width:100%!important;max-width:100%!important;margin:0 0 8px!important}" +
+      "div.easyLink-box div.easyLink-info p.easyLink-info-btn:last-child{margin-bottom:0!important}" +
+      "}" +
       "</style></head><body>" +
       safe +
       "</body></html>";
@@ -845,6 +897,37 @@ def build_vertical_table(rows: list[dict]) -> str:
     </div>"""
 
 
+def build_know_box(brand_ja: str, n: int) -> str:
+    return f"""
+        <div class="know" aria-labelledby="know-heading">
+          <h2 id="know-heading">この記事でわかること</h2>
+          <p class="know-note">{format_prose("２大ECサイトのすべての口コミを分析した結果を紹介します！")}</p>
+          <ul class="know-list">
+            <li class="know-item">
+              <span class="know-num" aria-hidden="true">1</span>
+              <div class="know-body">
+                <strong>{html.escape(brand_ja)}全{n}機種の比較表</strong>
+                <p>{format_prose("口コミから出した総合点と8つの性能を、価格も含めてひとつの表で比べられます。")}</p>
+              </div>
+            </li>
+            <li class="know-item">
+              <span class="know-num" aria-hidden="true">2</span>
+              <div class="know-body">
+                <strong>予算・重視する点・暮らし方別のおすすめ</strong>
+                <p>{format_prose("「いくらまで出せるか」「何を優先するか」から、あなたに合う1台に絞れます。")}</p>
+              </div>
+            </li>
+            <li class="know-item">
+              <span class="know-num" aria-hidden="true">3</span>
+              <div class="know-body">
+                <strong>おすすめの理由（口コミの要点）</strong>
+                <p>{format_prose("おすすめ機種ごとに、口コミでよく見る評価と気をつけたい点をまとめています。")}</p>
+              </div>
+            </li>
+          </ul>
+        </div>"""
+
+
 def build_toc(
     price_items: list[tuple[str, str]],
     feature_items: list[tuple[str, str]],
@@ -862,7 +945,6 @@ def build_toc(
     <nav class="toc-box" aria-label="目次">
       <p class="toc-title">目次</p>
       <ol class="toc-list">
-        <li><a href="#intro">この記事でわかること</a></li>
         <li>
           <a href="#table">{html.escape(brand_ja)}全製品を一覧比較</a>
         </li>
@@ -930,7 +1012,6 @@ def build_manufacturer_page(meta: dict) -> Path:
                 heading=f"予算{label}なら：{p['name']}",
                 lead=lead,
                 product=p,
-                trend_keys=["floor", "quiet", "maint"],
             )
         )
 
@@ -1017,7 +1098,6 @@ def build_manufacturer_page(meta: dict) -> Path:
                 heading=f"{h3_base}：{top['name']}",
                 lead=lead,
                 product=top,
-                trend_keys=[raw_k, "floor", "maint"],
             )
         )
 
@@ -1093,7 +1173,6 @@ def build_manufacturer_page(meta: dict) -> Path:
                 heading=f"{title}なら：{top['name']}",
                 lead=lead_base,
                 product=top,
-                trend_keys=[raw_k, "floor", "quiet"],
             )
         )
 
@@ -1109,6 +1188,11 @@ def build_manufacturer_page(meta: dict) -> Path:
                 "direct": r.get("direct") or "",
             }
     aff_json = json.dumps(aff_map, ensure_ascii=False).replace("</", "<\\/")
+
+    hero_lede = (
+        f"口コミ分析データで、{brand_full}のロボット掃除機{len(rows)}製品を横断比較します。"
+    )
+    summary_text = f"{brand_ja}は、{SUMMARY_LEAD}"
 
     page = f"""<!DOCTYPE html>
 <html lang="ja">
@@ -1129,6 +1213,7 @@ def build_manufacturer_page(meta: dict) -> Path:
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
   <link rel="stylesheet" href="/products/css/navigation.css?v={NAV_V}">
+  <link rel="stylesheet" href="/products/css/prose.css?v={NAV_V}">
   <script type="application/ld+json">
   {{
     "@context": "https://schema.org",
@@ -1208,14 +1293,41 @@ def build_manufacturer_page(meta: dict) -> Path:
     }}
 
     .know {{
-      background:#eff6ff; border:1px solid #bfdbfe; border-radius:12px;
-      padding:.9rem 1rem; margin:0 0 1.1rem;
+      background:linear-gradient(135deg,#eff6ff 0%,#f8fafc 100%);
+      border:1px solid #93c5fd; border-radius:14px;
+      padding:1.1rem 1.15rem 1.15rem; margin:0 0 1.25rem;
+      box-shadow:0 4px 14px rgba(30,64,175,.08);
     }}
     .know h2 {{
-      font-size:.95rem; margin:0 0 .45rem; color:#1e3a8a; border:0; padding:0;
+      font-size:1.05rem; margin:0 0 .45rem; color:#1e3a8a;
+      border:0; padding:0; font-weight:900;
     }}
-    .know ul {{ margin:0; padding-left:1.15rem; }}
-    .know li {{ margin:.2rem 0; font-size:.9rem; font-weight:700; color:#1e3a8a; }}
+    .know-note {{
+      margin:0 0 .85rem; padding:.55rem .7rem;
+      background:rgba(255,255,255,.75); border:1px solid #bfdbfe;
+      border-radius:8px; font-size:.84rem; line-height:1.6;
+      color:#1e40af; font-weight:700;
+    }}
+    .know-list {{
+      list-style:none; margin:0; padding:0;
+      display:grid; gap:.65rem;
+    }}
+    .know-item {{
+      display:flex; gap:.75rem; align-items:flex-start;
+      background:#fff; border:1px solid #dbeafe; border-radius:10px;
+      padding:.75rem .85rem;
+    }}
+    .know-num {{
+      flex-shrink:0; width:1.65rem; height:1.65rem; border-radius:999px;
+      background:#1e40af; color:#fff; font-size:.8rem; font-weight:900;
+      display:flex; align-items:center; justify-content:center; line-height:1;
+    }}
+    .know-body > strong {{
+      display:block; font-size:.92rem; color:#0f172a; margin-bottom:.2rem;
+    }}
+    .know-body p {{
+      margin:0; font-size:.84rem; line-height:1.65; color:#1e293b; font-weight:500;
+    }}
 
     .intro p {{ margin:0 0 .85rem; font-size:.95rem; }}
     .intro p:last-child {{ margin-bottom:0; }}
@@ -1240,7 +1352,7 @@ def build_manufacturer_page(meta: dict) -> Path:
       padding-bottom:.4rem; border-bottom:2px solid #bfdbfe;
     }}
     .sec-lead {{
-      margin:0 0 1rem; font-size:.92rem; line-height:1.7; color:#475569;
+      margin:0 0 1rem; font-size:.92rem; line-height:1.7; color:#1e293b;
     }}
     .articles {{ display:flex; flex-direction:column; gap:2rem; }}
     .article-pick h3 {{
@@ -1258,8 +1370,7 @@ def build_manufacturer_page(meta: dict) -> Path:
     }}
     .aff-status.error {{ color:#b45309; }}
     .aff-moshimo {{
-      display:block; width:100%; max-width:560px; min-width:0;
-      margin:0 auto;
+      display:block; width:100%; max-width:100%; min-width:0;
       border:0; background:transparent; overflow:hidden;
     }}
     .aff-moshimo iframe {{
@@ -1268,7 +1379,7 @@ def build_manufacturer_page(meta: dict) -> Path:
     .aff-direct {{
       margin:.55rem 0 0;
       width:100%;
-      max-width:560px;
+      max-width:100%;
     }}
     .official-hp-btn {{
       display:block; width:100%; box-sizing:border-box;
@@ -1306,7 +1417,7 @@ def build_manufacturer_page(meta: dict) -> Path:
       color:#b45309; font-weight:900;
     }}
     .article-copy .lead, .article-pick > .lead {{
-      margin:0 0 1rem; font-size:.92rem; line-height:1.7; color:#475569;
+      margin:0 0 1rem; font-size:.92rem; line-height:1.7; color:#1e293b;
     }}
     .split {{
       display:grid; grid-template-columns:1fr 1fr; gap:.75rem;
@@ -1314,6 +1425,37 @@ def build_manufacturer_page(meta: dict) -> Path:
     }}
     @media (max-width:720px) {{
       .split {{ grid-template-columns:1fr; }}
+    }}
+    .panel.pros-cons {{
+      margin:0 0 .75rem;
+      padding:.85rem .85rem .9rem;
+    }}
+    .pros-cons-groups {{
+      display:flex; flex-direction:column; gap:.85rem;
+    }}
+    .pros-cons-group {{
+      display:flex; flex-direction:column; gap:.55rem;
+    }}
+    .pros-cons-group-neg {{
+      padding-top:.85rem; border-top:1px dashed #fecdd3;
+    }}
+    .pros-cons-label {{
+      margin:0; font-size:.92rem; font-weight:900;
+    }}
+    .pros-cons-label-good {{ color:#047857; }}
+    .pros-cons-label-warn {{ color:#be123c; }}
+    .entry-grid {{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+      gap:.55rem; align-items:stretch;
+    }}
+    .entry-grid .entry {{
+      height:100%;
+    }}
+    @media (min-width:720px) {{
+      .pros-cons-group:first-child:last-child .entry-grid {{
+        grid-template-columns:repeat(3, minmax(0, 1fr));
+      }}
     }}
     .panel {{
       background:#fff; border:1px solid #e2e8f0; border-radius:12px;
@@ -1326,6 +1468,24 @@ def build_manufacturer_page(meta: dict) -> Path:
       margin:0 0 .55rem; font-size:.92rem; font-weight:900; color:#1e40af;
     }}
     .panel-neg h4 {{ color:#be123c; }}
+    .panel.trend-panel {{
+      background:#f8fafc; border-color:#bfdbfe;
+    }}
+    .trend-summary {{
+      margin:0; font-size:.9rem; line-height:1.75; color:#1e293b; font-weight:500;
+    }}
+    .trend-kw-title {{
+      margin:.75rem 0 .45rem; font-size:.78rem; font-weight:800; color:#334155;
+    }}
+    .trend-keywords {{
+      display:flex; flex-wrap:wrap; gap:.4rem;
+    }}
+    .trend-chip {{
+      display:inline-flex; align-items:center;
+      padding:.3rem .6rem; border-radius:999px;
+      background:#eff6ff; border:1px solid #bfdbfe;
+      color:#1e40af; font-size:.76rem; font-weight:700; line-height:1.3;
+    }}
     .entry-stack {{
       display:flex; flex-direction:column; gap:.55rem;
     }}
@@ -1343,7 +1503,7 @@ def build_manufacturer_page(meta: dict) -> Path:
     }}
     .entry-label {{ font-size:.86rem; font-weight:900; color:#0f172a; }}
     .entry-score {{
-      flex-shrink:0; font-size:.8rem; font-weight:900; color:#475569;
+      flex-shrink:0; font-size:.8rem; font-weight:900; color:#334155;
     }}
     .entry.good .entry-score {{ color:#047857; }}
     .entry.warn .entry-score {{ color:#e11d48; }}
@@ -1354,13 +1514,13 @@ def build_manufacturer_page(meta: dict) -> Path:
       color:#0f172a;
     }}
     .entry-body {{
-      margin:0; font-size:.84rem; line-height:1.7; color:#475569; font-weight:500;
+      margin:0; font-size:.84rem; line-height:1.7; color:#1e293b; font-weight:500;
       line-break:strict; word-break:normal; overflow-wrap:anywhere;
       text-wrap:pretty;
     }}
     .entry.warn .entry-body,
     .entry.issue .entry-body {{
-      color:#57534e;
+      color:#1e293b;
     }}
     .article-copy .more {{
       margin:.85rem 0 0; padding-top:.85rem;
@@ -1485,7 +1645,7 @@ def build_manufacturer_page(meta: dict) -> Path:
     <div class="wrap">
       <nav class="crumb"><a href="/">ホーム</a> › <a href="/makers/">メーカー比較</a> › {html.escape(brand_ja)}</nav>
       <h1>【全機種比較】{html.escape(brand_ja)}ロボット掃除機｜口コミでわかるおすすめの選び方</h1>
-      <p class="lede">口コミ分析データで、{html.escape(brand_full)}のロボット掃除機{len(rows)}製品を横断比較します。</p>
+      <p class="lede">{format_prose(hero_lede)}</p>
       {switcher}
     </div>
   </header>
@@ -1493,18 +1653,11 @@ def build_manufacturer_page(meta: dict) -> Path:
   <main>
     <div class="wrap-wide">
       <div class="article-card intro-block" id="intro">
-        <div class="know">
-          <h2>この記事でわかること</h2>
-          <ul>
-            <li>{html.escape(brand_ja)}全{len(rows)}製品の違い（一覧比較）</li>
-            <li>予算別・機能別・暮らし方別のおすすめ機種</li>
-            <li>各おすすめに対応する口コミ傾向</li>
-          </ul>
-        </div>
+        {build_know_box(brand_ja, len(rows))}
 
         <div class="intro">
-          <p>{html.escape(intro)}</p>
-          <p>本記事では、ナットクLaboが分析した口コミデータを使い、全製品を比較表で俯瞰したうえで、価格帯・機能・暮らし方ごとのおすすめを解説します。</p>
+          <p>{format_prose(intro)}</p>
+          <p>{format_prose(INTRO_FOLLOWUP)}</p>
         </div>
 
         {toc}
@@ -1513,7 +1666,7 @@ def build_manufacturer_page(meta: dict) -> Path:
       <section class="chapter table-chapter" id="table">
         <div class="table-panel">
           <h2>{html.escape(brand_ja)}全製品を一覧比較</h2>
-          <p class="sec-lead">左列が比較項目、右に各製品です。点数は<strong>90点台が緑</strong>、<strong>80点台が青</strong>、<strong>70点台が黄</strong>、<strong>70点未満が赤</strong>です。セルにマウスを置くと加重点を表示します。</p>
+          <p class="sec-lead">{format_prose(TABLE_SEC_LEAD)}</p>
           {build_vertical_table(rows)}
         </div>
       </section>
@@ -1522,26 +1675,26 @@ def build_manufacturer_page(meta: dict) -> Path:
     <div class="wrap">
       <section class="chapter article-card" id="price">
         <h2>予算別のおすすめ機種</h2>
-        <p class="sec-lead">まず予算で絞りたい人向けです。各価格帯で総合点が最も高い機種を、強み・注意点・口コミ傾向付きで紹介します。</p>
+        <p class="sec-lead">{format_prose(PRICE_SEC_LEAD)}</p>
         <div class="articles">{''.join(band_html)}</div>
       </section>
 
       <section class="chapter article-card" id="feature">
         <h2>機能で選ぶおすすめ機種</h2>
-        <p class="sec-lead">「床をきれいにしたい」「静かに使いたい」など、機能の優先順位がはっきりしている人向けです。機能ごとに1機種ずつ、口コミ傾向付きで紹介します。</p>
+        <p class="sec-lead">{format_prose(FEATURE_SEC_LEAD)}</p>
         <div class="articles">{''.join(feature_html)}</div>
       </section>
 
       <section class="chapter article-card" id="persona">
         <h2>こんな人におすすめの機種</h2>
-        <p class="sec-lead">暮らし方やこだわりに合わせて選ぶ場合の目安です。タイプごとに重視する機能を決め、機能評価85%・口コミ信頼度15%の加重点で1機種を選んでいます。</p>
+        <p class="sec-lead">{format_prose(PERSONA_SEC_LEAD)}</p>
         <div class="articles">{''.join(persona_html)}</div>
       </section>
 
       <section class="chapter article-card" id="summary">
         <h2>まとめ｜{html.escape(brand_ja)}の選び方</h2>
         <div class="summary-box">
-          <p>{html.escape(brand_ja)}は、まず比較表で全体を把握し、そのあと「予算」「機能」「暮らし方」のどれかで絞るのがおすすめです。</p>
+          <p>{format_prose(summary_text)}</p>
           <ul>
             <li>全体を見る → <a href="#table">{html.escape(brand_ja)}全製品を一覧比較</a></li>
             <li>予算で決める → <a href="#price">予算別のおすすめ機種</a></li>
@@ -1599,6 +1752,7 @@ def build_index_page(counts: dict[str, int]) -> Path:
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
   <link rel="stylesheet" href="/products/css/navigation.css?v={NAV_V}">
+  <link rel="stylesheet" href="/products/css/prose.css?v={NAV_V}">
   <style>
     body {{
       font-family:"Noto Sans JP",sans-serif; background:#f1f5f9; color:#1e293b;
@@ -1612,6 +1766,7 @@ def build_index_page(counts: dict[str, int]) -> Path:
     .wrap {{ max-width:960px; margin:0 auto; padding:0 1rem 2.5rem; }}
     h1 {{ font-size:clamp(1.25rem,3.6vw,1.75rem); font-weight:900; margin:.4rem 0 .55rem; }}
     .lede {{ opacity:.95; max-width:36rem; }}
+    .lede .em-key {{ font-weight:800; color:#fff; }}
     .grid {{
       display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
       gap:.85rem; margin-top:1.25rem;
@@ -1641,7 +1796,7 @@ def build_index_page(counts: dict[str, int]) -> Path:
     <div class="wrap">
       <nav class="crumb"><a href="/">ホーム</a> › メーカー比較</nav>
       <h1>メーカー別・全機種比較</h1>
-      <p class="lede">口コミ分析データをもとに、メーカーごとのロボット掃除機を横断比較します。</p>
+      <p class="lede">{format_prose(MAKERS_INDEX_LEDE)}</p>
     </div>
   </header>
   <main class="wrap">

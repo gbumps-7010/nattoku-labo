@@ -4,6 +4,7 @@
  */
 const fs = require("fs");
 const path = require("path");
+const { formatProse } = require("./lib/format-prose.js");
 
 const root = path.resolve(__dirname, "..");
 const dataDir = path.join(root, "products/data");
@@ -285,7 +286,7 @@ const STYLE = `<style>
     table.compare td:first-child {
       text-align: left;
       font-weight: 700;
-      color: #334155;
+      color: #1e293b;
       white-space: normal;
       line-height: 1.3;
       background: #f8fafc;
@@ -868,25 +869,25 @@ function buildWho(products) {
   return [
     {
       h: "失敗したくない人",
-      p: `<strong>${escapeHtml(ranked[0].name)}</strong> — この価格帯で口コミ件数が最も多い（${ranked[0].reviews}件）。`,
+      p: `<strong>${escapeHtml(ranked[0].name)}</strong> — ${formatProse(`この価格帯で口コミ件数が最も多い（${ranked[0].reviews}件）。`)}`,
     },
     {
       h: "床をきれいにしたい人",
       p: byFloor
-        ? `<strong>${escapeHtml(byFloor.name)}</strong> — 床掃除の評価が${byFloor.floor}点。`
-        : "表の床掃除の点数を優先して比べてください。",
+        ? `<strong>${escapeHtml(byFloor.name)}</strong> — ${formatProse(`床掃除の評価が${byFloor.floor}点。`)}`
+        : formatProse("表の床掃除の点数を優先して比べてください。"),
     },
     {
       h: "運転音が気になる人",
       p: byQuiet
-        ? `<strong>${escapeHtml(byQuiet.name)}</strong> — 静音性の評価が${byQuiet.quiet}点。`
-        : "表の静音性の点数を優先して比べてください。",
+        ? `<strong>${escapeHtml(byQuiet.name)}</strong> — ${formatProse(`静音性の評価が${byQuiet.quiet}点。`)}`
+        : formatProse("表の静音性の点数を優先して比べてください。"),
     },
     {
       h: "手間を減らしたい／予算を抑えたい人",
       p: byMaint
-        ? `<strong>${escapeHtml(byMaint.name)}</strong> — お手入れしやすさの評価が${byMaint.maint}点。予算を抑えるなら <strong>${escapeHtml(cheapest.name)}</strong>（${cheapest.priceLabel}）。`
-        : `予算を抑えるなら <strong>${escapeHtml(cheapest.name)}</strong>（${cheapest.priceLabel}）。`,
+        ? `<strong>${escapeHtml(byMaint.name)}</strong> — ${formatProse(`お手入れしやすさの評価が${byMaint.maint}点。`)} ${formatProse("予算を抑えるなら")} <strong>${escapeHtml(cheapest.name)}</strong>（${cheapest.priceLabel}）。`
+        : `${formatProse("予算を抑えるなら")} <strong>${escapeHtml(cheapest.name)}</strong>（${cheapest.priceLabel}）。`,
     },
   ];
 }
@@ -1079,7 +1080,7 @@ function matrixPoints(points) {
             (c) => `<div class="card">
           <span class="pick">${escapeHtml(c.pick)}</span>
           <h3>${escapeHtml(c.h)}</h3>
-          <p>${escapeHtml(c.p)}</p>
+          <p>${formatProse(c.p)}</p>
         </div>`,
           )
           .join("\n        ")}
@@ -1392,6 +1393,7 @@ function buildPage(band) {
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
   <link rel="stylesheet" href="/products/css/navigation.css?v=20260818i">
+  <link rel="stylesheet" href="/products/css/prose.css?v=20260818k">
   <script type="application/ld+json">
   ${JSON.stringify(itemListJson(band), null, 2)}
   </script>
@@ -1414,7 +1416,7 @@ function buildPage(band) {
       <p class="eyebrow">おすすめ・口コミ徹底比較 · ${band.label} · 全${band.products.length}製品</p>
       <h1>${h1}</h1>
       <p class="lede">
-        「ロボット掃除機 おすすめ 比較」で迷っている人向けに、同じ予算の候補を口コミで徹底比較します。この価格帯の掲載製品は、すべて表に入れています。
+        ${formatProse("「ロボット掃除機 おすすめ 比較」で迷っている人向けに、同じ予算の候補を口コミで徹底比較します。この価格帯の掲載製品は、すべて表に入れています。")}
       </p>
       <div class="source-banner" role="note">
         <span class="source-kicker">データ根拠</span>
@@ -1431,14 +1433,14 @@ function buildPage(band) {
   <article>
     <div class="wrap">
       <div class="note">
-        表示価格はメーカー希望小売価格（参考）です。本ページの比較は、2大ECサイトに寄せられた口コミを集計・分析した参考情報です。口コミが少ない製品は数値が揺れやすいので、件数・信頼度とあわせて読んでください。
+        ${formatProse("表示価格はメーカー希望小売価格（参考）です。本ページの比較は、2大ECサイトに寄せられた口コミを集計・分析した参考情報です。口コミが少ない製品は数値が揺れやすいので、件数・信頼度とあわせて読んでください。")}
       </div>
 
       <section class="table-stage" aria-label="ロボット掃除機のおすすめ・口コミ徹底比較表">
         <div class="table-stage-label">
           <strong>おすすめ・口コミ徹底比較表（${band.label}・全${band.products.length}製品）</strong>
         </div>
-        <p class="table-source">比較表の数値・キーワード・注意点は、すべて2大ECサイトの口コミ分析に基づきます。点数は<strong>90点台が緑</strong>、<strong>80点台が青</strong>、<strong>70点台が黄</strong>、<strong>70点未満が赤</strong>です。</p>
+        <p class="table-source">${formatProse("比較表の数値・キーワード・注意点は、すべて2大ECサイトの口コミ分析に基づきます。点数は90点台が緑、80点台が青、70点台が黄、70点未満が赤です。")}</p>
         <div class="compare-nav" role="group" aria-label="比較表の横移動">
           <button type="button" class="compare-nav-btn" data-dir="-1" aria-label="前の製品へ">‹</button>
           <div class="compare-nav-meta">

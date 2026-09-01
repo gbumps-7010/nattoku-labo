@@ -4,10 +4,13 @@ from __future__ import annotations
 
 import html
 import json
+import sys
 from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts" / "lib"))
+from format_prose import format_prose  # noqa: E402
 DATA_DIR = ROOT / "products" / "data"
 OUT_DIR = ROOT / "rankings"
 NAV_V = "20260818k"
@@ -26,7 +29,7 @@ RANKINGS = [
         "lede": "口コミに書かれた吸引力や水拭きの評価を数値化し、フローリング掃除の得意さを比較したランキングです。各製品には、実際の口コミからまとめたフローリング清掃の傾向コメントも掲載しています。",
         "method_body": (
             "「吸引力が強い」「水拭きがきれい」といった口コミを点数化し、フローリング掃除の得意さで並べています。"
-            "口コミの信頼度を適切に加味するので、<strong>実体験に近いおすすめ順</strong>になっています。"
+            "口コミの信頼度を適切に加味するので、実体験に近いおすすめ順になっています。"
             "表の各製品には、床の仕上がりや水拭きに関する口コミ傾向も記載しているので、点数だけでなく具体的な声も比較できます。"
         ),
         "formula_label": "フローリング点数",
@@ -54,7 +57,7 @@ RANKINGS = [
         "lede": "口コミに書かれたカーペット清掃の評価を数値化し、ラグや絨毯掃除の得意さを比較したランキングです。各製品には、実際の口コミからまとめたカーペット清掃の傾向コメントも掲載しています。",
         "method_body": (
             "「カーペットのゴミが取れる」「ラグを巻き込まない」といった口コミを点数化し、カーペット掃除の得意さで並べています。"
-            "口コミの信頼度を適切に加味するので、<strong>実体験に近いおすすめ順</strong>になっています。"
+            "口コミの信頼度を適切に加味するので、実体験に近いおすすめ順になっています。"
             "表の各製品には、カーペット検知や吸引力に関する口コミ傾向も記載しているので、点数だけでなく具体的な声も比較できます。"
         ),
         "formula_label": "カーペット点数",
@@ -82,7 +85,7 @@ RANKINGS = [
         "lede": "口コミに書かれた運転音・静音性の評価を数値化し、在宅中や夜間でも使いやすい機種を比較したランキングです。各製品には、実際の口コミからまとめた静音性の傾向コメントも掲載しています。",
         "method_body": (
             "「音が静か」「テレビの邪魔にならない」といった口コミを点数化し、静音性の高さで並べています。"
-            "口コミの信頼度を適切に加味するので、<strong>実体験に近いおすすめ順</strong>になっています。"
+            "口コミの信頼度を適切に加味するので、実体験に近いおすすめ順になっています。"
             "表の各製品には、運転音や生活への影響に関する口コミ傾向も記載しているので、点数だけでなく具体的な声も比較できます。"
         ),
         "formula_label": "静音性点数",
@@ -206,7 +209,7 @@ def build_rows(products: list[dict], comment_label: str) -> str:
         url = product_url(p["id"])
         name = html.escape(p["name"])
         mfr = html.escape(p["manufacturer"])
-        comment = html.escape((p.get("comment") or "").strip())
+        comment = format_prose((p.get("comment") or "").strip())
         tc = top_class(p["rank"])
         img = (
             f'<img src="{html.escape(p["imageUrl"])}" alt="{name}の製品画像" loading="lazy" width="56" height="56">'
@@ -331,7 +334,7 @@ h1 {
   border-radius: 999px;
   border: 1px solid var(--line);
   background: #fff;
-  color: #334155;
+  color: #1e293b;
   text-decoration: none;
   font-size: 0.84rem;
   font-weight: 800;
@@ -373,7 +376,7 @@ footer.page-footer a:hover { text-decoration: underline; }
   margin-bottom: 1rem;
 }
 .method h2 { font-size: 0.95rem; margin-bottom: 0.4rem; color: var(--primary); }
-.method p { font-size: 0.9rem; color: #334155; }
+.method p { font-size: 0.9rem; color: #1e293b; }
 .method p + p { margin-top: 0.55rem; }
 .method-sub { font-size: 0.82rem !important; color: var(--muted) !important; }
 .method code {
@@ -395,7 +398,7 @@ footer.page-footer a:hover { text-decoration: underline; }
 .filter-chip {
   border: 1px solid var(--line);
   background: #fff;
-  color: #334155;
+  color: #1e293b;
   border-radius: 999px;
   padding: 0.4rem 0.75rem;
   font-size: 0.8rem;
@@ -578,7 +581,7 @@ tr.comment-row .comment-spacer { border-bottom: 1px solid #e2e8f0; }
 .floor-comment {
   margin: 0; padding: 0.55rem 0.7rem;
   background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;
-  color: #334155; font-size: 0.82rem; line-height: 1.7; font-weight: 500;
+  color: #1e293b; font-size: 0.82rem; line-height: 1.7; font-weight: 500;
 }
 .floor-comment-label {
   display: inline-block; margin-right: 0.45rem;
@@ -601,7 +604,7 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
   border-radius: 12px; padding: 1rem 1.1rem;
 }
 .notes h2 { font-size: 0.95rem; margin-bottom: 0.45rem; }
-.notes p, .notes li { font-size: 0.88rem; color: #334155; }
+.notes p, .notes li { font-size: 0.88rem; color: #1e293b; }
 .notes ul { padding-left: 1.15rem; }
 .notes li { margin: 0.25rem 0; }
 .related { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 0.55rem; }
@@ -706,7 +709,7 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
   gap: 0.45rem 0.85rem;
   font-size: 0.8rem;
   font-weight: 700;
-  color: #334155;
+  color: #1e293b;
 }
 .aff-card-stats span strong { color: var(--excellent); font-variant-numeric: tabular-nums; }
 .aff-card-detail {
@@ -1126,6 +1129,7 @@ def write_ranking_page(cfg: dict, products: list[dict]) -> Path:
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
   <link rel="stylesheet" href="/products/css/navigation.css?v={NAV_V}">
+  <link rel="stylesheet" href="/products/css/prose.css?v={NAV_V}">
   <style>{CSS}</style>
   <script type="application/ld+json">
 {build_item_list_json(products, cfg)}
@@ -1149,7 +1153,7 @@ def write_ranking_page(cfg: dict, products: list[dict]) -> Path:
         <a href="/">ホーム</a> › <a href="/rankings/">ランキング</a> › {html.escape(cfg["crumb"])}
       </nav>
       <h1>{html.escape(cfg["h1"])}</h1>
-      <p class="lede">{cfg["lede"]}</p>
+      <p class="lede">{format_prose(cfg["lede"])}</p>
     </div>
   </header>
 {build_feature_tabs(slug)}
@@ -1158,7 +1162,7 @@ def write_ranking_page(cfg: dict, products: list[dict]) -> Path:
     <div class="wrap">
       <section class="method">
         <h2>このランキングの見方</h2>
-        <p>{cfg["method_body"]}</p>
+        <p>{format_prose(cfg["method_body"])}</p>
         <p class="method-sub">
           ランキングの式：<code>{html.escape(cfg["formula_label"])} × 0.85 ＋ 口コミ信頼度 × 0.15</code>
         </p>
@@ -1296,6 +1300,7 @@ def write_hub(entries: list[tuple[dict, int]]) -> Path:
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
   <link rel="stylesheet" href="/products/css/navigation.css?v={NAV_V}">
+  <link rel="stylesheet" href="/products/css/prose.css?v={NAV_V}">
   <style>
     :root {{ --primary:#1e40af; --secondary:#0f172a; --bg:#f8fafc; --text:#1e293b; --muted:#0f172a; --line:#e2e8f0; }}
     * {{ box-sizing:border-box; margin:0; padding:0; }}
@@ -1349,7 +1354,7 @@ def write_hub(entries: list[tuple[dict, int]]) -> Path:
     <div class="wrap">
       <nav class="crumb" aria-label="パンくず"><a href="/">ホーム</a> › ランキング</nav>
       <h1>ロボット掃除機ランキング一覧</h1>
-      <p class="lede">口コミ分析の点数をもとに、気になる機能からおすすめ機種を探せます。</p>
+      <p class="lede">{format_prose("口コミ分析の点数をもとに、気になる機能からおすすめ機種を探せます。")}</p>
     </div>
   </header>
 {build_feature_tabs(None)}
