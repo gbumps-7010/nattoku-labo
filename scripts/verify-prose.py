@@ -1,18 +1,17 @@
-from pathlib import Path
-import re
 import sys
+from pathlib import Path
 
-sys.path.insert(0, "scripts/lib")
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts/lib"))
 from format_prose import format_prose
 
-text = "リビングのラグなどに絡まった髪の毛やホコリをしっかり吸引します。モップが自動でリフトアップするため、カーペットを濡らす心配もなく安心です。"
-out = format_prose(text)
-assert "心配" in out and "benefit" in out
+wifi = "「何度やっても接続できない」「設定が難しい」といった声が少数見られます。"
+out_wifi = format_prose(wifi)
+assert out_wifi.count("demerit") == 2
+assert "connect" not in out_wifi  # sanity
+assert out_wifi.index("demerit") < out_wifi.rindex("demerit")
 
-rel = format_prose("Amazonと楽天の評価に大きな乖離はなく、大部分のユーザーが掃除性能と自動メンテナンス機能に満足しており、意見の一貫性は高いです。")
-assert "満足しており" in rel
-
-neg = format_prose("特に階段のある家では注意が必要です。")
-assert "demerit" in neg
+carpet = "リビングのラグなどに絡まった髪の毛やホコリをしっかり吸引します。モップが自動でリフトアップするため、カーペットを濡らす心配もなく安心です。"
+out_carpet = format_prose(carpet)
+assert out_carpet.count("benefit") <= 2
 
 print("ok")

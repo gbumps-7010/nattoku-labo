@@ -33,143 +33,77 @@ SITE_UI_PHRASES = (
     "価格帯",
 )
 
-# メリットを示す語（長い順でマッチ）
-BENEFIT_ANCHORS = (
-    "買って良かった",
+# 「」以外で強調する、はっきりしたメリット表現（語句単位・最大限控えめ）
+PHRASE_BENEFITS = (
     "もっと早く買えばよかった",
-    "期待以上",
-    "満足しており",
-    "満足度は非常に高い",
-    "満足度は高い",
-    "高く評価",
-    "高い満足",
-    "評価されています",
-    "支持されています",
-    "任せられます",
-    "任せることができます",
-    "安心して使用",
-    "安心して使",
-    "安心して任せ",
+    "買って良かった",
     "心配もなく安心",
+    "濡らす心配もなく",
     "心配もなく",
-    "心配が少なく",
-    "心配がない",
-    "心配ありません",
+    "満足しており",
     "手間が大幅に削減",
-    "手間が削減",
-    "手間は汚水",
-    "手間が少な",
     "負担が劇的に減",
-    "負担の軽減",
-    "負担が軽減",
-    "家事の負担",
     "生活の質が向上",
-    "サラサラ",
-    "ピカピカ",
     "しっかり吸引",
-    "しっかり掃除",
-    "しっかりと掃除",
-    "問題なく",
-    "問題なく乗り越え",
-    "スムーズに",
-    "簡単に",
-    "全自動",
-    "自動化",
-    "衛生的に",
-    "清掃効果",
-    "掃除が楽",
-    "掃除を任せ",
-    "掃除を完結",
-    "掃除を完全に自動化",
-    "助かります",
-    "助かる",
-    "便利です",
-    "便利に",
-    "快適に",
-    "快適になり",
-    "魅力です",
-    "理想的な",
-    "実感",
-    "コスパが良",
-    "うれしい",
-    "好評です",
-    "好評",
-    "絶賛",
-    "高評価",
-    "満足です",
-    "満足",
-    "安心です",
-    "安心",
-    "便利",
-    "十分です",
-    "十分",
-    "静か",
-    "きれいに",
-    "綺麗に",
-    "効率的",
+    "任せられます",
 )
 
-# デメリット・注意を示す語
-DEMERIT_ANCHORS = (
-    "購入前に確認",
+# 「」以外で強調する、はっきりしたデメリット表現
+PHRASE_DEMERITS = (
     "購入前に寸法を確認",
+    "購入前に確認",
     "注意が必要",
     "事前の片付け",
     "減点要因",
     "立ち往生",
-    "見つけにくい",
-    "分かりにくい",
-    "戸惑う",
-    "在庫がない",
-    "巻き込んでしまう",
-    "誤認識",
     "取り残",
-    "散見され",
-    "散見",
-    "手間がかか",
-    "手間取",
-    "不具合",
-    "トラブル",
-    "ストレス",
-    "ネガティブ",
-    "可能性があります",
-    "可能性があ",
-    "報告があり",
-    "報告も",
-    "指摘も",
-    "懸念",
-    "課題",
-    "不便",
-    "困る",
-    "苦労",
+)
+
+_QUOTE_DEMERIT_HINTS = (
     "難しい",
-    "失望",
-    "限定的",
-    "限界",
-    "劣化",
-    "故障",
-    "停止",
-    "エラー",
+    "できない",
+    "しない",
+    "失敗",
     "不満",
-    "問題",
-    "注意",
+    "不便",
+    "困",
+    "うるさ",
+    "弱",
+    "残",
+    "故障",
+    "止ま",
+    "エラー",
+    "苦労",
+    "戸惑",
+    "分かりにく",
+    "見つけにく",
+    "接続でき",
 )
 
-BENEFIT_PATTERNS = (
-    r"[^。、\n\uf000\uf001\uf002]{0,35}(?:心配(?:も)?(?:なく|ない|ありません))[^。、\n\uf000\uf001\uf002]{0,25}",
-    r"[^。、\n\uf000\uf001\uf002]{0,25}(?:濡らす|汚す|傷つける)[^。、\n\uf000\uf001\uf002]{0,35}",
-)
-
-DEMERIT_PATTERNS = (
-    r"[^。、\n\uf000\uf001\uf002]{4,55}(?:減点要因|事前の片付け|購入前に(?:確認|寸法))",
+_QUOTE_BENEFIT_HINTS = (
+    "良かった",
+    "買えばよかった",
+    "満足",
+    "便利",
+    "安心",
+    "静か",
+    "きれい",
+    "サラサラ",
+    "ピカピカ",
+    "助か",
+    "楽",
+    "最高",
+    "快適",
+    "任せ",
+    "十分",
+    "好評",
+    "絶賛",
 )
 
 _EMPH_BENEFIT = "\uf000"
 _EMPH_DEMERIT = "\uf001"
 _EMPH_NEUTRAL = "\uf002"
 _ALL_MARKS = (_EMPH_BENEFIT, _EMPH_DEMERIT, _EMPH_NEUTRAL)
-_MIN_CLAUSE = 5
-_MAX_CLAUSE = 88
 
 
 def ja_wrap(text: str) -> str:
@@ -185,63 +119,45 @@ def ja_wrap(text: str) -> str:
     return "".join(out)
 
 
-def _clause_bounds(text: str, pos: int) -> tuple[int, int]:
-    prev = max(text.rfind("。", 0, pos), text.rfind("、", 0, pos))
-    start = 0 if prev == -1 else prev + 1
-    end_dot = text.find("。", pos)
-    end = end_dot + 1 if end_dot != -1 else len(text)
-    return start, end
-
-
 def _has_mark(text: str) -> bool:
     return any(mk in text for mk in _ALL_MARKS)
 
 
-def _collect_clause_spans(text: str, anchors: tuple[str, ...], mark: str) -> list[tuple[int, int, str]]:
-    spans: list[tuple[int, int, str]] = []
-    for anchor in anchors:
-        pos = 0
-        while True:
-            pos = text.find(anchor, pos)
-            if pos == -1:
-                break
-            start, end = _clause_bounds(text, pos)
-            chunk = text[start:end]
-            if _MIN_CLAUSE <= len(chunk.strip()) <= _MAX_CLAUSE:
-                spans.append((start, end, mark))
-            pos += max(len(anchor), 1)
-    return spans
+def _quote_tone(inner: str) -> str | None:
+    dem = any(h in inner for h in _QUOTE_DEMERIT_HINTS)
+    ben = any(h in inner for h in _QUOTE_BENEFIT_HINTS)
+    if dem and not ben:
+        return "demerit"
+    if ben and not dem:
+        return "benefit"
+    if dem and ben:
+        return "demerit"
+    return None
 
 
-def _collect_pattern_spans(text: str, patterns: tuple[str, ...], mark: str) -> list[tuple[int, int, str]]:
-    spans: list[tuple[int, int, str]] = []
-    for pattern in patterns:
-        for m in re.finditer(pattern, text):
-            spans.append((m.start(), m.end(), mark))
-    return spans
+def _mark_quotes(text: str) -> str:
+    def repl(m: re.Match[str]) -> str:
+        inner = m.group(1)
+        if _has_mark(inner):
+            return m.group(0)
+        tone = _quote_tone(inner)
+        if tone == "demerit":
+            return f"「{_EMPH_DEMERIT}{inner}{_EMPH_DEMERIT}」"
+        if tone == "benefit":
+            return f"「{_EMPH_BENEFIT}{inner}{_EMPH_BENEFIT}」"
+        return m.group(0)
+
+    return re.sub(r"「([^」]+)」", repl, text)
 
 
-def _merge_spans(spans: list[tuple[int, int, str]]) -> list[tuple[int, int, str]]:
-    if not spans:
-        return []
-    priority = {_EMPH_DEMERIT: 0, _EMPH_BENEFIT: 1, _EMPH_NEUTRAL: 2}
-    ordered = sorted(spans, key=lambda s: (s[0], -(s[1] - s[0]), priority[s[2]]))
-    merged: list[tuple[int, int, str]] = []
-    for start, end, mark in ordered:
-        if merged and start < merged[-1][1]:
-            if priority[mark] < priority[merged[-1][2]]:
-                merged[-1] = (start, max(merged[-1][1], end), mark)
+def _mark_phrases(text: str, phrases: tuple[str, ...], mark: str) -> str:
+    for phrase in sorted(phrases, key=len, reverse=True):
+        if phrase not in text:
             continue
-        merged.append((start, end, mark))
-    return merged
-
-
-def _apply_spans(text: str, spans: list[tuple[int, int, str]]) -> str:
-    for start, end, mark in sorted(spans, key=lambda s: s[0], reverse=True):
-        chunk = text[start:end]
-        if _has_mark(chunk):
+        wrapped = f"{mark}{phrase}{mark}"
+        if wrapped in text:
             continue
-        text = text[:start] + f"{mark}{chunk}{mark}" + text[end:]
+        text = text.replace(phrase, wrapped)
     return text
 
 
@@ -250,37 +166,16 @@ def _mark_phrase(text: str, phrase: str, mark: str) -> str:
     return text.replace(phrase, wrapped) if phrase in text and wrapped not in text else text
 
 
-def _mark_quoted_sentiment(text: str) -> str:
-    def repl(m: re.Match[str]) -> str:
-        inner = m.group(1)
-        if _has_mark(inner):
-            return m.group(0)
-        dem = any(a in inner for a in DEMERIT_ANCHORS[:20])
-        ben = any(a in inner for a in BENEFIT_ANCHORS[:25])
-        if dem and not ben:
-            return f"「{_EMPH_DEMERIT}{inner}{_EMPH_DEMERIT}」"
-        if ben:
-            return f"「{_EMPH_BENEFIT}{inner}{_EMPH_BENEFIT}」"
-        return m.group(0)
-
-    return re.sub(r"「([^」]+)」", repl, text)
-
-
 def format_prose(text: str) -> str:
+    """Escape HTML and emphasize user-voice quotes + a few key phrases."""
     if not text:
         return ""
     if "<" in text and ">" in text:
         return text
     work = text.strip()
-    work = _mark_quoted_sentiment(work)
-
-    spans: list[tuple[int, int, str]] = []
-    spans.extend(_collect_clause_spans(work, DEMERIT_ANCHORS, _EMPH_DEMERIT))
-    spans.extend(_collect_pattern_spans(work, DEMERIT_PATTERNS, _EMPH_DEMERIT))
-    spans.extend(_collect_clause_spans(work, BENEFIT_ANCHORS, _EMPH_BENEFIT))
-    spans.extend(_collect_pattern_spans(work, BENEFIT_PATTERNS, _EMPH_BENEFIT))
-    work = _apply_spans(work, _merge_spans(spans))
-
+    work = _mark_quotes(work)
+    work = _mark_phrases(work, PHRASE_DEMERITS, _EMPH_DEMERIT)
+    work = _mark_phrases(work, PHRASE_BENEFITS, _EMPH_BENEFIT)
     for phrase in sorted(SITE_UI_PHRASES, key=len, reverse=True):
         work = _mark_phrase(work, phrase, _EMPH_NEUTRAL)
 

@@ -50,13 +50,14 @@
 
 .em-key {
   display: inline;
-  font-weight: 800;
+  font-weight: 700;
   color: #0f172a;
-  background: linear-gradient(transparent 58%, #fde68a 58%);
-  padding: 0 0.14em;
-  border-radius: 3px;
+  background: #fde68a;
+  padding: 0.08em 0.22em;
+  border-radius: 4px;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
+  line-height: 1.65;
 }
 
 .em-key.benefit,
@@ -64,7 +65,7 @@
 .performance-detail-card.high-score p .em-key,
 .prose-good .em-key {
   color: #065f46;
-  background: linear-gradient(transparent 58%, #bbf7d0 58%);
+  background: #bbf7d0;
 }
 
 .em-key.demerit,
@@ -73,19 +74,19 @@
 .problem-desc .em-key,
 .prose-warn .em-key {
   color: #9f1239;
-  background: linear-gradient(transparent 58%, #fecdd3 58%);
+  background: #fecdd3;
 }
 
 .hero .lede .em-key,
 .hero-lede .em-key {
   color: #fff;
-  background: linear-gradient(transparent 58%, rgba(255, 255, 255, 0.35) 58%);
+  background: rgba(255, 255, 255, 0.28);
 }
 
 .price-caution .em-key {
   color: #b45309;
-  font-weight: 900;
-  background: linear-gradient(transparent 58%, #fed7aa 58%);
+  font-weight: 800;
+  background: #fed7aa;
 }
 
 .know-body > strong {
@@ -108,19 +109,19 @@
 </head>
 <body>
   <h1>強調デザイン プレビュー（コミット前）</h1>
-  <p class="note">メリットは緑のマーカー、デメリットは赤のマーカーで強調します。名詞（カーペット等）ではなく、ユーザーへの便益・不安の解消を強調します。</p>
+  <p class="note">基本は「」内の口コミ引用のみ強調。引用がない文は、代表的なメリット・デメリット語句だけを控えめに強調します。</p>
   <section class="preview-card">
-      <h2>カーペット清掃コメント</h2>
-      <p class="performance-detail-card high-score"><strong class="em-key benefit">リビング⁠のラグなど⁠に絡まった髪⁠の毛⁠やホコリ⁠をしっかり吸引します⁠。</strong>モップ⁠が自動⁠でリフトアップするため⁠、<strong class="em-key benefit">カーペット⁠を濡らす心配⁠もなく安心⁠です⁠。</strong></p>
+      <h2>口コミ引用（画像の例）</h2>
+      <p class="problem-description prose-warn">「⁠<strong class="em-key demerit">何度⁠やって⁠も接続⁠できない</strong>⁠」「⁠<strong class="em-key demerit">設定⁠が難しい</strong>⁠」⁠といった声⁠が少数見られます⁠。</p>
+      <p class="raw">原文: 「何度やっても接続できない」「設定が難しい」といった声が少数見られます。</p>
+    </section><section class="preview-card">
+      <h2>カーペット清掃（引用なし）</h2>
+      <p class="performance-detail-card high-score">リビング⁠のラグなど⁠に絡まった髪⁠の毛⁠やホコリ⁠を<strong class="em-key benefit">しっかり吸引</strong>します⁠。モップ⁠が自動⁠でリフトアップするため⁠、カーペット⁠を<strong class="em-key benefit">濡らす</strong>心配⁠もなく安心⁠です⁠。</p>
       <p class="raw">原文: リビングのラグなどに絡まった髪の毛やホコリをしっかり吸引します。モップが自動でリフトアップするため、カーペットを濡らす心配もなく安心です。</p>
     </section><section class="preview-card">
-      <h2>信頼度カード（バグ修正）</h2>
-      <p class="reliability-factor-desc">Amazon⁠と楽天⁠の評価⁠に大きな乖離⁠はなく⁠、<strong class="em-key benefit">大部分⁠のユーザー⁠が掃除性能⁠と自動メンテナンス機能⁠に満足しており⁠、意見⁠の一貫性⁠は高い⁠です⁠。</strong></p>
-      <p class="raw">原文: Amazonと楽天の評価に大きな乖離はなく、大部分のユーザーが掃除性能と自動メンテナンス機能に満足しており、意見の一貫性は高いです。</p>
-    </section><section class="preview-card">
-      <h2>デメリット文</h2>
-      <p class="problem-description prose-warn">落下防止センサー⁠が機能せず⁠、<strong class="em-key demerit">2階から落下した⁠という深刻な報告⁠があります⁠。</strong>本体⁠の破損だけ⁠でなく⁠、<strong class="em-key benefit">家屋⁠を傷つける危険性⁠もあり</strong>⁠、<strong class="em-key demerit">特⁠に階段⁠のある家⁠で⁠は注意⁠が必要⁠です⁠。</strong></p>
-      <p class="raw">原文: 落下防止センサーが機能せず、2階から落下したという深刻な報告があります。本体の破損だけでなく、家屋を傷つける危険性もあり、特に階段のある家では注意が必要です。</p>
+      <h2>口コミの好評引用</h2>
+      <p class="performance-detail-card high-score">「⁠<strong class="em-key benefit">驚くほど静か</strong>⁠」「⁠<strong class="em-key benefit">⁠もっ⁠と早く買えばよかった</strong>⁠」⁠といった高評価⁠の声⁠が多数あります⁠。</p>
+      <p class="raw">原文: 「驚くほど静か」「もっと早く買えばよかった」といった高評価の声が多数あります。</p>
     </section>
   <script>/**
  * Shared prose formatting: emphasis + Japanese line-wrap (browser / Node).
@@ -151,133 +152,69 @@ const SITE_UI_PHRASES = [
   "価格帯",
 ];
 
-const BENEFIT_ANCHORS = [
-  "買って良かった",
+const PHRASE_BENEFITS = [
   "もっと早く買えばよかった",
-  "期待以上",
-  "満足しており",
-  "満足度は非常に高い",
-  "満足度は高い",
-  "高く評価",
-  "高い満足",
-  "評価されています",
-  "支持されています",
-  "任せられます",
-  "任せることができます",
-  "安心して使用",
-  "安心して使",
-  "安心して任せ",
+  "買って良かった",
   "心配もなく安心",
+  "濡らす心配もなく",
   "心配もなく",
-  "心配が少なく",
-  "心配がない",
-  "心配ありません",
+  "満足しており",
   "手間が大幅に削減",
-  "手間が削減",
-  "手間は汚水",
-  "手間が少な",
   "負担が劇的に減",
-  "負担の軽減",
-  "負担が軽減",
-  "家事の負担",
   "生活の質が向上",
-  "サラサラ",
-  "ピカピカ",
   "しっかり吸引",
-  "しっかり掃除",
-  "しっかりと掃除",
-  "問題なく",
-  "問題なく乗り越え",
-  "スムーズに",
-  "簡単に",
-  "全自動",
-  "自動化",
-  "衛生的に",
-  "清掃効果",
-  "掃除が楽",
-  "掃除を任せ",
-  "掃除を完結",
-  "掃除を完全に自動化",
-  "助かります",
-  "助かる",
-  "便利です",
-  "便利に",
-  "快適に",
-  "快適になり",
-  "魅力です",
-  "理想的な",
-  "実感",
-  "コスパが良",
-  "うれしい",
-  "好評です",
-  "好評",
-  "絶賛",
-  "高評価",
-  "満足です",
-  "満足",
-  "安心です",
-  "安心",
-  "便利",
-  "十分です",
-  "十分",
-  "静か",
-  "きれいに",
-  "綺麗に",
-  "効率的",
+  "任せられます",
 ];
 
-const DEMERIT_ANCHORS = [
-  "購入前に確認",
+const PHRASE_DEMERITS = [
   "購入前に寸法を確認",
+  "購入前に確認",
   "注意が必要",
   "事前の片付け",
   "減点要因",
   "立ち往生",
-  "見つけにくい",
-  "分かりにくい",
-  "戸惑う",
-  "在庫がない",
-  "巻き込んでしまう",
-  "誤認識",
   "取り残",
-  "散見され",
-  "散見",
-  "手間がかか",
-  "手間取",
-  "不具合",
-  "トラブル",
-  "ストレス",
-  "ネガティブ",
-  "可能性があります",
-  "可能性があ",
-  "報告があり",
-  "報告も",
-  "指摘も",
-  "懸念",
-  "課題",
-  "不便",
-  "困る",
-  "苦労",
+];
+
+const QUOTE_DEMERIT_HINTS = [
   "難しい",
-  "失望",
-  "限定的",
-  "限界",
-  "劣化",
-  "故障",
-  "停止",
-  "エラー",
+  "できない",
+  "しない",
+  "失敗",
   "不満",
-  "問題",
-  "注意",
+  "不便",
+  "困",
+  "うるさ",
+  "弱",
+  "残",
+  "故障",
+  "止ま",
+  "エラー",
+  "苦労",
+  "戸惑",
+  "分かりにく",
+  "見つけにく",
+  "接続でき",
 ];
 
-const BENEFIT_PATTERNS = [
-  /[^。、\n\uf000\uf001\uf002]{0,35}(?:心配(?:も)?(?:なく|ない|ありません))[^。、\n\uf000\uf001\uf002]{0,25}/g,
-  /[^。、\n\uf000\uf001\uf002]{0,25}(?:濡らす|汚す|傷つける)[^。、\n\uf000\uf001\uf002]{0,35}/g,
-];
-
-const DEMERIT_PATTERNS = [
-  /[^。、\n\uf000\uf001\uf002]{4,55}(?:減点要因|事前の片付け|購入前に(?:確認|寸法))/g,
+const QUOTE_BENEFIT_HINTS = [
+  "良かった",
+  "買えばよかった",
+  "満足",
+  "便利",
+  "安心",
+  "静か",
+  "きれい",
+  "サラサラ",
+  "ピカピカ",
+  "助か",
+  "楽",
+  "最高",
+  "快適",
+  "任せ",
+  "十分",
+  "好評",
+  "絶賛",
 ];
 
 const JA_NO_LINE_START = new Set("、。，．）］｝」』】〉》をにではがのともへやや");
@@ -286,8 +223,6 @@ const EMPH_BENEFIT = "\uf000";
 const EMPH_DEMERIT = "\uf001";
 const EMPH_NEUTRAL = "\uf002";
 const ALL_MARKS = [EMPH_BENEFIT, EMPH_DEMERIT, EMPH_NEUTRAL];
-const MIN_CLAUSE = 5;
-const MAX_CLAUSE = 88;
 
 function escapeHtml(s) {
   return String(s)
@@ -309,90 +244,43 @@ function jaWrap(text) {
   return out;
 }
 
-function clauseBounds(text, pos) {
-  const prev = Math.max(text.lastIndexOf("。", pos), text.lastIndexOf("、", pos));
-  const start = prev === -1 ? 0 : prev + 1;
-  const endDot = text.indexOf("。", pos);
-  const end = endDot === -1 ? text.length : endDot + 1;
-  return [start, end];
-}
-
 function hasMark(text) {
   return ALL_MARKS.some((mk) => text.includes(mk));
 }
 
-function collectClauseSpans(text, anchors, mark) {
-  const spans = [];
-  for (const anchor of anchors) {
-    let pos = 0;
-    while (pos !== -1) {
-      pos = text.indexOf(anchor, pos);
-      if (pos === -1) break;
-      const [start, end] = clauseBounds(text, pos);
-      const chunk = text.slice(start, end);
-      if (chunk.trim().length >= MIN_CLAUSE && chunk.length <= MAX_CLAUSE) {
-        spans.push([start, end, mark]);
-      }
-      pos += Math.max(anchor.length, 1);
-    }
-  }
-  return spans;
+function quoteTone(inner) {
+  const dem = QUOTE_DEMERIT_HINTS.some((h) => inner.includes(h));
+  const ben = QUOTE_BENEFIT_HINTS.some((h) => inner.includes(h));
+  if (dem && !ben) return "demerit";
+  if (ben && !dem) return "benefit";
+  if (dem && ben) return "demerit";
+  return null;
 }
 
-function collectPatternSpans(text, patterns, mark) {
-  const spans = [];
-  for (const pattern of patterns) {
-    const re = new RegExp(pattern.source, pattern.flags);
-    let m;
-    while ((m = re.exec(text)) !== null) {
-      spans.push([m.index, m.index + m[0].length, mark]);
-    }
-  }
-  return spans;
+function markQuotes(text) {
+  return text.replace(/「([^」]+)」/g, (full, inner) => {
+    if (hasMark(inner)) return full;
+    const tone = quoteTone(inner);
+    if (tone === "demerit") return `「${EMPH_DEMERIT}${inner}${EMPH_DEMERIT}」`;
+    if (tone === "benefit") return `「${EMPH_BENEFIT}${inner}${EMPH_BENEFIT}」`;
+    return full;
+  });
 }
 
-function mergeSpans(spans) {
-  if (!spans.length) return [];
-  const priority = { [EMPH_DEMERIT]: 0, [EMPH_BENEFIT]: 1, [EMPH_NEUTRAL]: 2 };
-  const ordered = [...spans].sort((a, b) => a[0] - b[0] || b[1] - b[0] - (a[1] - a[0]) || priority[a[2]] - priority[b[2]]);
-  const merged = [];
-  for (const span of ordered) {
-    const [start, end, mark] = span;
-    if (merged.length && start < merged[merged.length - 1][1]) {
-      if (priority[mark] < priority[merged[merged.length - 1][2]]) {
-        merged[merged.length - 1] = [start, Math.max(merged[merged.length - 1][1], end), mark];
-      }
-      continue;
+function markPhrases(text, phrases, mark) {
+  let out = text;
+  for (const phrase of [...phrases].sort((a, b) => b.length - a.length)) {
+    const wrapped = `${mark}${phrase}${mark}`;
+    if (out.includes(phrase) && !out.includes(wrapped)) {
+      out = out.replaceAll(phrase, wrapped);
     }
-    merged.push(span);
   }
-  return merged;
-}
-
-function applySpans(text, spans) {
-  const sorted = [...spans].sort((a, b) => b[0] - a[0]);
-  for (const [start, end, mark] of sorted) {
-    const chunk = text.slice(start, end);
-    if (hasMark(chunk)) continue;
-    text = text.slice(0, start) + mark + chunk + mark + text.slice(end);
-  }
-  return text;
+  return out;
 }
 
 function markPhrase(text, phrase, mark) {
   const wrapped = `${mark}${phrase}${mark}`;
   return text.includes(phrase) && !text.includes(wrapped) ? text.replaceAll(phrase, wrapped) : text;
-}
-
-function markQuotedSentiment(text) {
-  return text.replace(/「([^」]+)」/g, (full, inner) => {
-    if (hasMark(inner)) return full;
-    const dem = DEMERIT_ANCHORS.slice(0, 20).some((a) => inner.includes(a));
-    const ben = BENEFIT_ANCHORS.slice(0, 25).some((a) => inner.includes(a));
-    if (dem && !ben) return `「${EMPH_DEMERIT}${inner}${EMPH_DEMERIT}」`;
-    if (ben) return `「${EMPH_BENEFIT}${inner}${EMPH_BENEFIT}」`;
-    return full;
-  });
 }
 
 function replaceMarks(safe, mark, className) {
@@ -405,15 +293,9 @@ function formatProse(text) {
   if (!text) return "";
   if (String(text).includes("<") && String(text).includes(">")) return String(text);
   let work = String(text).trim();
-  work = markQuotedSentiment(work);
-
-  let spans = [];
-  spans = spans.concat(collectClauseSpans(work, DEMERIT_ANCHORS, EMPH_DEMERIT));
-  spans = spans.concat(collectPatternSpans(work, DEMERIT_PATTERNS, EMPH_DEMERIT));
-  spans = spans.concat(collectClauseSpans(work, BENEFIT_ANCHORS, EMPH_BENEFIT));
-  spans = spans.concat(collectPatternSpans(work, BENEFIT_PATTERNS, EMPH_BENEFIT));
-  work = applySpans(work, mergeSpans(spans));
-
+  work = markQuotes(work);
+  work = markPhrases(work, PHRASE_DEMERITS, EMPH_DEMERIT);
+  work = markPhrases(work, PHRASE_BENEFITS, EMPH_BENEFIT);
   for (const phrase of [...SITE_UI_PHRASES].sort((a, b) => b.length - a.length)) {
     work = markPhrase(work, phrase, EMPH_NEUTRAL);
   }
