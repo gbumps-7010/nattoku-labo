@@ -24,6 +24,7 @@
     for (const sel of SELECTORS) {
       document.querySelectorAll(sel).forEach((el) => {
         if (el.dataset.proseDone) return;
+        if (el.closest("h1, h2, h3, h4, a")) return;
         const raw = el.textContent;
         if (!raw || !raw.trim()) return;
         el.innerHTML = formatProse(raw);
