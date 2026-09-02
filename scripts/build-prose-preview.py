@@ -24,6 +24,11 @@ samples = [
         "performance-detail-card high-score",
     ),
     (
+        "静音性の好評引用（止まっているほど静か）",
+        "「離れた部屋では止まっているかと思うほど静か」との声多数。",
+        "performance-detail-card high-score",
+    ),
+    (
         "口コミの好評引用",
         "「驚くほど静か」「もっと早く買えばよかった」といった高評価の声が多数あります。",
         "performance-detail-card high-score",

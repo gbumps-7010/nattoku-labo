@@ -119,6 +119,10 @@
       <p class="performance-detail-card high-score">リビング⁠のラグなど⁠に絡まった髪⁠の毛⁠やホコリ⁠を<strong class="em-key benefit">しっかり吸引</strong>します⁠。モップ⁠が自動⁠でリフトアップするため⁠、カーペット⁠を濡らす<strong class="em-key benefit">心配⁠もなく安心</strong>⁠です⁠。</p>
       <p class="raw">原文: リビングのラグなどに絡まった髪の毛やホコリをしっかり吸引します。モップが自動でリフトアップするため、カーペットを濡らす心配もなく安心です。</p>
     </section><section class="preview-card">
+      <h2>静音性の好評引用（止まっているほど静か）</h2>
+      <p class="performance-detail-card high-score">「⁠離れた部屋⁠で⁠は止まっているか<strong class="em-key benefit">⁠と思うほど静か</strong>⁠」⁠と⁠の声多数⁠。</p>
+      <p class="raw">原文: 「離れた部屋では止まっているかと思うほど静か」との声多数。</p>
+    </section><section class="preview-card">
       <h2>口コミの好評引用</h2>
       <p class="performance-detail-card high-score">「⁠<strong class="em-key benefit">驚くほど静か</strong>⁠」「⁠<strong class="em-key benefit">⁠もっ⁠と早く買えばよかった</strong>⁠」⁠といった高評価⁠の声⁠が多数あります⁠。</p>
       <p class="raw">原文: 「驚くほど静か」「もっと早く買えばよかった」といった高評価の声が多数あります。</p>
@@ -236,7 +240,8 @@ const CORE_BENEFITS = [
   "しっかり吸引",
 
   "驚くほど静か",
-
+  "思うほど静か",
+  "と思うほど静か",
   "任せられます",
 
   "満足しており",
@@ -293,7 +298,6 @@ const QUOTE_DEMERIT_HINTS = [
 
   "故障",
 
-  "止ま",
 
   "エラー",
 
@@ -307,9 +311,7 @@ const QUOTE_DEMERIT_HINTS = [
 
   "接続でき",
 
-  "大きい",
 
-  "注意",
 
 ];
 
@@ -656,7 +658,6 @@ if (typeof module !== "undefined" && module.exports) {
   module.exports = { formatProse, escapeHtml, SITE_UI_PHRASES };
 
 }
-
 </script>
 </body>
 </html>

@@ -133,7 +133,8 @@ CORE_BENEFITS = tuple(
         "しっかり吸引",
 
         "驚くほど静か",
-
+        "思うほど静か",
+        "と思うほど静か",
         "任せられます",
 
         "満足しており",
@@ -204,7 +205,6 @@ _QUOTE_DEMERIT_HINTS = (
 
     "故障",
 
-    "止ま",
 
     "エラー",
 
@@ -218,9 +218,7 @@ _QUOTE_DEMERIT_HINTS = (
 
     "接続でき",
 
-    "大きい",
 
-    "注意",
 
 )
 
@@ -330,25 +328,60 @@ def _valid_span(text: str) -> bool:
 
     return True
 
+_BENEFIT_IDIOMS = (
+    "ほど静か",
+    "と思うほど",
+    "驚くほど静",
+    "格段に静",
+    "非常に静",
+    "とても静",
+    "うるさくない",
+    "気にならない",
+    "買って良かった",
+    "買えばよかった",
+)
+
+_STRONG_BENEFIT_HINTS = (
+    "静か",
+    "良かった",
+    "満足",
+    "便利",
+    "快適",
+    "最高",
+    "助か",
+    "きれい",
+    "サラサラ",
+    "ピカピカ",
+    "任せ",
+    "十分",
+    "好評",
+    "絶賛",
+    "解消",
+    "安心",
+)
+
+
 def _quote_tone(inner: str) -> str | None:
-
-    dem = any(h in inner for h in _QUOTE_DEMERIT_HINTS)
-
-    ben = any(h in inner for h in _QUOTE_BENEFIT_HINTS)
-
-    if dem and not ben:
-
-        return "demerit"
-
-    if ben and not dem:
-
+    if any(p in inner for p in _BENEFIT_IDIOMS):
+        return "benefit"
+    if "静か" in inner and any(w in inner for w in ("ほど", "思う", "驚", "格段", "非常", "かなり")):
+        return "benefit"
+    if "静か" in inner and not any(h in inner for h in ("うるさ", "音が大", "大きい音", "騒音")):
         return "benefit"
 
-    if dem and ben:
-
+    dem = any(h in inner for h in _QUOTE_DEMERIT_HINTS)
+    ben = any(h in inner for h in _QUOTE_BENEFIT_HINTS)
+    if ben and not dem:
+        return "benefit"
+    if dem and not ben:
         return "demerit"
-
+    if dem and ben:
+        if any(h in inner for h in _STRONG_BENEFIT_HINTS):
+            return "benefit"
+        return "demerit"
     return None
+
+
 
 def _best_quote_span(inner: str, tone: str) -> str | None:
 

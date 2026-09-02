@@ -17,7 +17,14 @@ out_wifi = format_prose(wifi)
 h_wifi = highlights(out_wifi)
 assert len(h_wifi) == 2, h_wifi
 assert all(len(h) <= MAX_MARKER_CHARS for h in h_wifi)
-assert all("demerit" in out_wifi for _ in [1]) or out_wifi.count("demerit") == 2
+assert out_wifi.count("demerit") == 2
+
+quiet = "「離れた部屋では止まっているかと思うほど静か」との声多数。"
+out_quiet = format_prose(quiet)
+h_quiet = highlights(out_quiet)
+assert out_quiet.count("benefit") >= 1, out_quiet
+assert out_quiet.count("demerit") == 0, out_quiet
+assert all(len(h) <= MAX_MARKER_CHARS for h in h_quiet)
 
 carpet = "リビングのラグなどに絡まった髪の毛やホコリをしっかり吸引します。モップが自動でリフトアップするため、カーペットを濡らす心配もなく安心です。"
 out_carpet = format_prose(carpet)
