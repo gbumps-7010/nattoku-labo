@@ -1495,6 +1495,12 @@ const SPEC_GROUPS = [
         ['マッピング方式', 'cleaning.mappingType'],
         ['運転音', 'cleaning.noiseDb', 'dB'],
     ]},
+    { title: 'スマート機能', rows: [
+        ['対応アプリ', 'smart.app'],
+        ['Wi-Fi', 'smart.wifi'],
+        ['音声アシスタント', 'smart.voiceAssistants', 'list'],
+        ['Matter対応', 'smart.matter', 'bool'],
+    ]},
     { title: '水拭き', rows: [
         ['モップの方式', 'mop.type'],
     ]},
@@ -1509,12 +1515,6 @@ const SPEC_GROUPS = [
         ['給水タンク容量', 'station.cleanTankMl', 'ml'],
         ['汚水タンク容量', 'station.dirtyTankMl', 'ml'],
         ['ステーション重量', 'station.weightKg', 'kg'],
-    ]},
-    { title: 'スマート機能', rows: [
-        ['対応アプリ', 'smart.app'],
-        ['Wi-Fi', 'smart.wifi'],
-        ['音声アシスタント', 'smart.voiceAssistants', 'list'],
-        ['Matter対応', 'smart.matter', 'bool'],
     ]},
 ];
 
@@ -1578,14 +1578,18 @@ function buildSpecRows(specs, rowDefs) {
         });
 }
 
-function buildSpecsHtml(specs) {
+function buildKeySpecsHtml(specs) {
     const keyRows = buildSpecRows(specs, SPEC_KEY_ROWS);
-    const keyHtml = keyRows.length ? `
-        <div class="spec-key">
-            <h3 class="spec-group-title">主要スペック</h3>
+    if (keyRows.length === 0) return '';
+    return `
+        <h2 class="section-title"><i class="fas fa-list-ul"></i>主要スペック（メーカー公式）</h2>
+        <div class="card">
             <table class="spec-table spec-table-key"><tbody>${keyRows.join('')}</tbody></table>
-        </div>` : '';
+            <p class="spec-key-more">その他のスペックと出典は<a href="#product-specs">詳細スペック</a>に掲載しています。</p>
+        </div>`;
+}
 
+function buildSpecsHtml(specs) {
     const groupsHtml = SPEC_GROUPS.map((group) => {
         const rows = buildSpecRows(specs, group.rows);
         if (rows.length === 0) return '';
@@ -1602,9 +1606,8 @@ function buildSpecsHtml(specs) {
     const checked = specs.checkedAt ? formatSpecValue(specs.checkedAt, 'date') : '';
 
     return `
-        <h2 class="section-title"><i class="fas fa-list-ul"></i>製品スペック（メーカー公式）</h2>
+        <h2 class="section-title"><i class="fas fa-list-ul"></i>詳細スペック（メーカー公式）</h2>
         <div class="card">
-            ${keyHtml}
             <div class="spec-groups">${groupsHtml}</div>
             <div class="spec-footer">
                 <p>「メーカー非公表」はメーカーが数値を公開していない項目です。仕様は予告なく変更される場合があるため、購入前に公式サイトで最新情報をご確認ください。${checked ? `（${checked}確認）` : ''}</p>
@@ -1618,25 +1621,26 @@ function injectSpecsStyles() {
     const style = document.createElement('style');
     style.id = 'spec-styles';
     style.textContent = `
-        .spec-groups { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 1.75rem 2.5rem; }
+        .spec-groups { column-count: 2; column-gap: 2.5rem; }
+        .spec-group { break-inside: avoid; margin-bottom: 1.75rem; }
         .spec-group-title { font-size: 1.05rem; font-weight: 700; color: #1e293b; margin: 0 0 0.75rem; }
-        .spec-key { margin-bottom: 2rem; padding: 1.25rem 1.5rem; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; }
         .spec-table-key { font-size: 1rem; }
         .spec-table-key th { width: 30%; }
-        .spec-table-key tr:last-child th, .spec-table-key tr:last-child td { border-bottom: none; }
+        .spec-key-more { margin: 1rem 0 0; color: #64748b; font-size: 0.85rem; }
+        .spec-key-more a { color: var(--primary-color); }
         .spec-table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
         .spec-table th, .spec-table td { padding: 0.65rem 0.5rem; border-bottom: 1px solid #e5e7eb; text-align: left; vertical-align: top; line-height: 1.55; }
         .spec-table th { width: 40%; color: #64748b; font-weight: 600; }
         .spec-table td { color: #0f172a; font-weight: 600; }
         .spec-undisclosed { color: #94a3b8; font-weight: 500; }
         .spec-note { display: block; color: #64748b; font-size: 0.82rem; font-weight: 500; }
-        .spec-footer { margin-top: 1.75rem; padding-top: 1.25rem; border-top: 1px solid #e5e7eb; color: #64748b; font-size: 0.82rem; line-height: 1.7; }
+        .spec-footer { margin-top: 0; padding-top: 1.25rem; border-top: 1px solid #e5e7eb; color: #64748b; font-size: 0.82rem; line-height: 1.7; }
         .spec-footer p { margin: 0 0 0.5rem; }
         .spec-sources-title { font-weight: 700; color: #475569; }
         .spec-sources { margin: 0; padding-left: 1.2rem; }
         .spec-sources a { color: var(--primary-color); }
         @media (max-width: 768px) {
-            .spec-groups { grid-template-columns: 1fr; }
+            .spec-groups { column-count: 1; }
         }
     `;
     document.head.appendChild(style);
@@ -1653,6 +1657,15 @@ async function renderSpecs(productId) {
     }
 
     injectSpecsStyles();
+    const keyHtml = buildKeySpecsHtml(specs);
+    const affiliateSection = document.getElementById('affiliate-cta');
+    if (keyHtml && affiliateSection) {
+        const keySection = document.createElement('section');
+        keySection.id = 'product-key-specs';
+        keySection.innerHTML = keyHtml;
+        affiliateSection.after(keySection);
+    }
+
     const section = document.createElement('section');
     section.id = 'product-specs';
     section.innerHTML = buildSpecsHtml(specs);
