@@ -13,7 +13,8 @@ sys.path.insert(0, str(ROOT / "scripts" / "lib"))
 from format_prose import format_prose  # noqa: E402
 DATA_DIR = ROOT / "products" / "data"
 OUT_DIR = ROOT / "rankings"
-NAV_V = "20260818k"
+NAV_V = "20261003a"
+PROSE_V = "20260902d"
 WF, WR = 0.85, 0.15
 UPDATED = date.today().isoformat()
 
@@ -1129,7 +1130,7 @@ def write_ranking_page(cfg: dict, products: list[dict]) -> Path:
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
   <link rel="stylesheet" href="/products/css/navigation.css?v={NAV_V}">
-  <link rel="stylesheet" href="/products/css/prose.css?v={NAV_V}">
+  <link rel="stylesheet" href="/products/css/prose.css?v={PROSE_V}">
   <style>{CSS}</style>
   <script type="application/ld+json">
 {build_item_list_json(products, cfg)}
@@ -1225,7 +1226,7 @@ def write_ranking_page(cfg: dict, products: list[dict]) -> Path:
           <h2>注意事項</h2>
           <ul>
             <li>点数はECサイトの口コミを横断分析した値です。実機テストの計測値ではありません。</li>
-            <li>価格は調査時点の目安です。購入前に各販売ページでご確認ください。</li>
+            <li>価格はメーカー公式ストアの販売価格（調査時点）です。購入前に各販売ページでご確認ください。</li>
             <li>{html.escape(cfg["related_note"])}</li>
           </ul>
         </section>
@@ -1300,7 +1301,7 @@ def write_hub(entries: list[tuple[dict, int]]) -> Path:
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
   <link rel="stylesheet" href="/products/css/navigation.css?v={NAV_V}">
-  <link rel="stylesheet" href="/products/css/prose.css?v={NAV_V}">
+  <link rel="stylesheet" href="/products/css/prose.css?v={PROSE_V}">
   <style>
     :root {{ --primary:#1e40af; --secondary:#0f172a; --bg:#f8fafc; --text:#1e293b; --muted:#0f172a; --line:#e2e8f0; }}
     * {{ box-sizing:border-box; margin:0; padding:0; }}

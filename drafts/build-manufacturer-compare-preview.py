@@ -14,7 +14,8 @@ sys.path.insert(0, str(ROOT / "scripts" / "lib"))
 from format_prose import format_prose  # noqa: E402
 DATA = ROOT / "products" / "data"
 OUT_DIR = ROOT / "makers"
-NAV_V = "20260818k"
+NAV_V = "20261003a"
+PROSE_V = "20260902d"
 SITE = "https://nattoku-labo.com"
 WF, WR = 0.85, 0.15
 
@@ -325,16 +326,16 @@ def intro_paragraph(meta: dict, price_min: int, price_max: int, n: int) -> str:
     spread = price_max - price_min
     if spread >= 100_000:
         return (
-            f"{ja}は、定価目安でおよそ{yen(price_min)}〜{yen(price_max)}と価格差の大きいメーカーです。"
+            f"{ja}は、公式ストア価格でおよそ{yen(price_min)}〜{yen(price_max)}と価格差の大きいメーカーです。"
             f"機種数が多く、「どれを選べばよいかわかりにくい」と感じる人も少なくありません。"
         )
     if n <= 6:
         return (
-            f"{ja}は、定価目安でおよそ{yen(price_min)}〜{yen(price_max)}のラインナップです。"
+            f"{ja}は、公式ストア価格でおよそ{yen(price_min)}〜{yen(price_max)}のラインナップです。"
             f"候補は絞りやすい一方、用途に合う1台を見極めることが大切です。"
         )
     return (
-        f"{ja}は、定価目安でおよそ{yen(price_min)}〜{yen(price_max)}の製品を展開しています。"
+        f"{ja}は、公式ストア価格でおよそ{yen(price_min)}〜{yen(price_max)}の製品を展開しています。"
         f"機種ごとの違いを整理し、自分に合う1台を選びやすくします。"
     )
 
@@ -462,9 +463,9 @@ def _clip(text: str, n: int = 90) -> str:
 
 
 PRICE_CAUTION_TEXT = (
-    "表示価格はメーカー公式の参考価格です。"
-    "各ECサイトではセールが行われることが多いため、"
-    "購入前に現在の販売価格の確認を強くおすすめします。"
+    "表示価格はメーカー公式ストアの販売価格です。"
+    "セールで頻繁に変わるため、"
+    "購入前に最新の価格の確認を強くおすすめします。"
 )
 INTRO_FOLLOWUP = (
     "本記事では、ナットクLaboが分析した口コミデータを使い、"
@@ -1213,7 +1214,7 @@ def build_manufacturer_page(meta: dict) -> Path:
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
   <link rel="stylesheet" href="/products/css/navigation.css?v={NAV_V}">
-  <link rel="stylesheet" href="/products/css/prose.css?v={NAV_V}">
+  <link rel="stylesheet" href="/products/css/prose.css?v={PROSE_V}">
   <script type="application/ld+json">
   {{
     "@context": "https://schema.org",
@@ -1752,7 +1753,7 @@ def build_index_page(counts: dict[str, int]) -> Path:
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
   <link rel="stylesheet" href="/products/css/navigation.css?v={NAV_V}">
-  <link rel="stylesheet" href="/products/css/prose.css?v={NAV_V}">
+  <link rel="stylesheet" href="/products/css/prose.css?v={PROSE_V}">
   <style>
     body {{
       font-family:"Noto Sans JP",sans-serif; background:#f1f5f9; color:#1e293b;

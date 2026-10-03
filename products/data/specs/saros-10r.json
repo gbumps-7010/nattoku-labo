@@ -1,0 +1,55 @@
+{
+  "productId": "saros-10r",
+  "modelNumber": "S10R52-04",
+  "checkedAt": "2026-10-03",
+  "sources": [
+    { "label": "Roborock公式 製品ページ", "url": "https://jp.roborock.com/pages/roborock-saros-10r" },
+    { "label": "Roborock公式 取扱説明書", "url": "https://jp.roborock.com/cdn/shop/t/7/assets/manual_saros10r.pdf" },
+    { "label": "Roborock公式 プレスリリース（2025年6月4日）", "url": "https://prtimes.jp/main/html/rd/p/000000078.000085581.html" },
+    { "label": "公式販売店 トレテク！ソフトバンクセレクション", "url": "https://shop.softbankselection.jp/item/6936905903761.html" }
+  ],
+  "basic": {
+    "dimensionsMm": { "w": 350, "d": 353, "h": 79.8 },
+    "weightKg": 4.1,
+    "runtimeMin": 180,
+    "chargeTimeMin": 150,
+    "batteryMah": 6400,
+    "releaseDate": "2025-06",
+    "warrantyMonths": 12
+  },
+  "cleaning": {
+    "suctionPa": 20000,
+    "dustboxMl": 270,
+    "waterTankMl": null,
+    "mappingType": "3D ToF（StarSight 自律システム2.0）",
+    "obstacleAvoidance": "3D ToF + RGBカメラ（108種の障害物を認識）",
+    "climbHeightMm": 40,
+    "climbNote": "二層の敷居。一層の敷居は最大30mm",
+    "noiseDb": null
+  },
+  "mop": {
+    "type": "回転式（最大200回転/分）",
+    "liftMm": 10,
+    "autoDetach": true
+  },
+  "station": {
+    "autoEmpty": true,
+    "mopWash": true,
+    "hotWaterWash": true,
+    "hotWaterNote": "80℃",
+    "hotAirDry": true,
+    "autoRefillDrain": false,
+    "detergentDispenser": true,
+    "dustBagMl": null,
+    "cleanTankMl": null,
+    "dirtyTankMl": null,
+    "dimensionsMm": { "w": 381, "d": 475, "h": 488 },
+    "weightKg": 11.4
+  },
+  "smart": {
+    "app": "Roborock",
+    "wifi": "2.4GHzのみ",
+    "voiceAssistants": ["Alexa", "Googleアシスタント", "Siri"],
+    "matter": true
+  }
+}

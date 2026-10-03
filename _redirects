@@ -67,6 +67,10 @@ https://www.nattoku-labo.com/* https://nattoku-labo.com/:splat 301
 /products/f10-plus 410
 /products/eufy-robot-vacuum-omni-c20.html 410
 /products/eufy-robot-vacuum-omni-c20 410
+/products/qrevo-curvc.html 410
+/products/qrevo-curvc 410
+/products/roborock-qrevo-curv-c.html 410
+/products/roborock-qrevo-curv-c 410
 /products/eufy-robovac-g30.html 410
 /products/eufy-robovac-g30 410
 /products/eufy-robovac-x8-hybrid.html 410
@@ -106,8 +110,6 @@ https://www.nattoku-labo.com/* https://nattoku-labo.com/:splat 301
 /products/roborock-q10v /products/q10v 301
 /products/roborock-q10v-plus.html /products/q10v-plus 301
 /products/roborock-q10v-plus /products/q10v-plus 301
-/products/roborock-qrevo-curv-c.html /products/qrevo-curvc 301
-/products/roborock-qrevo-curv-c /products/qrevo-curvc 301
 /products/roborock-qrevo-l.html /products/qrevo-l 301
 /products/roborock-qrevo-l /products/qrevo-l 301
 /products/roborock-saros-10r.html /products/saros-10r 301

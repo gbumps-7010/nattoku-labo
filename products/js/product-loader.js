@@ -1468,6 +1468,219 @@ function renderAffiliate(data) {
     console.log('✅ アフィリエイトCTA描画（詳細／価格を同一グループで表示）');
 }
 
+// 12.5 製品スペック（メーカー公式）
+// 値が null の項目は「メーカー非公表」、キー自体が無い項目は行ごと非表示にする
+const SPEC_KEY_ROWS = [
+    ['発売時期', 'basic.releaseDate', 'month'],
+    ['本体サイズ', 'basic.dimensionsMm', 'dims'],
+    ['ステーションサイズ', 'station.dimensionsMm', 'dims'],
+    ['吸引力', 'cleaning.suctionPa', 'Pa'],
+    ['段差乗り越え', 'cleaning.climbHeightMm', 'mm', 'cleaning.climbNote'],
+    ['障害物回避', 'cleaning.obstacleAvoidance'],
+    ['モップ自動リフト', 'mop.liftMm', 'mm'],
+    ['モップ自動着脱', 'mop.autoDetach', 'bool'],
+];
+
+const SPEC_GROUPS = [
+    { title: '本体', rows: [
+        ['本体重量', 'basic.weightKg', 'kg'],
+        ['最大稼働時間', 'basic.runtimeMin', 'min'],
+        ['充電時間', 'basic.chargeTimeMin', 'min'],
+        ['バッテリー容量', 'basic.batteryMah', 'mAh'],
+        ['メーカー保証', 'basic.warrantyMonths', 'warranty'],
+    ]},
+    { title: '掃除性能', rows: [
+        ['ダストボックス容量', 'cleaning.dustboxMl', 'ml'],
+        ['本体水タンク容量', 'cleaning.waterTankMl', 'ml'],
+        ['マッピング方式', 'cleaning.mappingType'],
+        ['運転音', 'cleaning.noiseDb', 'dB'],
+    ]},
+    { title: '水拭き', rows: [
+        ['モップの方式', 'mop.type'],
+    ]},
+    { title: 'ステーション', rows: [
+        ['自動ゴミ収集', 'station.autoEmpty', 'bool'],
+        ['モップ自動洗浄', 'station.mopWash', 'bool'],
+        ['温水洗浄', 'station.hotWaterWash', 'bool', 'station.hotWaterNote'],
+        ['温風乾燥', 'station.hotAirDry', 'bool'],
+        ['自動給排水（水道直結）', 'station.autoRefillDrain', 'bool'],
+        ['洗剤自動投入', 'station.detergentDispenser', 'bool'],
+        ['紙パック容量', 'station.dustBagMl', 'ml'],
+        ['給水タンク容量', 'station.cleanTankMl', 'ml'],
+        ['汚水タンク容量', 'station.dirtyTankMl', 'ml'],
+        ['ステーション重量', 'station.weightKg', 'kg'],
+    ]},
+    { title: 'スマート機能', rows: [
+        ['対応アプリ', 'smart.app'],
+        ['Wi-Fi', 'smart.wifi'],
+        ['音声アシスタント', 'smart.voiceAssistants', 'list'],
+        ['Matter対応', 'smart.matter', 'bool'],
+    ]},
+];
+
+function escapeSpecHtml(str) {
+    return String(str).replace(/[&<>"']/g, (c) => ({
+        '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+    }[c]));
+}
+
+function hasNestedKey(obj, path) {
+    let cur = obj;
+    for (const key of path.split('.')) {
+        if (cur === null || typeof cur !== 'object' || !(key in cur)) return false;
+        cur = cur[key];
+    }
+    return true;
+}
+
+function formatSpecValue(value, format) {
+    const num = (v) => Number(v).toLocaleString();
+    switch (format) {
+        case 'dims':
+            return `幅${num(value.w)} × 奥行${num(value.d)} × 高さ${num(value.h)} mm`;
+        case 'kg': return `約${num(value)}kg`;
+        case 'min': return `${num(value)}分`;
+        case 'mAh': return `${num(value)}mAh`;
+        case 'Pa': return `${num(value)}Pa`;
+        case 'ml': return `${num(value)}ml`;
+        case 'mm': return `${num(value)}mm`;
+        case 'dB': return `${num(value)}dB`;
+        case 'bool': return value ? 'あり' : 'なし';
+        case 'list': return value.join('・');
+        case 'month': {
+            const [y, m] = String(value).split('-');
+            return m ? `${y}年${Number(m)}月` : `${y}年`;
+        }
+        case 'date': {
+            const [y, m, d] = String(value).split(/[-/]/);
+            return `${y}年${Number(m)}月${Number(d)}日`;
+        }
+        case 'warranty':
+            return value % 12 === 0 ? `${value / 12}年` : `${value}か月`;
+        default: return String(value);
+    }
+}
+
+function buildSpecRows(specs, rowDefs) {
+    return rowDefs
+        .filter(([, path]) => hasNestedKey(specs, path))
+        .map(([label, path, format, notePath]) => {
+            const value = getNestedValue(specs, path);
+            let cell;
+            if (value === null) {
+                cell = '<span class="spec-undisclosed">メーカー非公表</span>';
+            } else {
+                cell = escapeSpecHtml(formatSpecValue(value, format));
+                const note = notePath ? getNestedValue(specs, notePath) : null;
+                if (note && value !== false) cell += `<span class="spec-note">（${escapeSpecHtml(note)}）</span>`;
+            }
+            return `<tr><th scope="row">${escapeSpecHtml(label)}</th><td>${cell}</td></tr>`;
+        });
+}
+
+function buildSpecsHtml(specs) {
+    const keyRows = buildSpecRows(specs, SPEC_KEY_ROWS);
+    const keyHtml = keyRows.length ? `
+        <div class="spec-key">
+            <h3 class="spec-group-title">主要スペック</h3>
+            <table class="spec-table spec-table-key"><tbody>${keyRows.join('')}</tbody></table>
+        </div>` : '';
+
+    const groupsHtml = SPEC_GROUPS.map((group) => {
+        const rows = buildSpecRows(specs, group.rows);
+        if (rows.length === 0) return '';
+        return `
+            <div class="spec-group">
+                <h3 class="spec-group-title">${escapeSpecHtml(group.title)}</h3>
+                <table class="spec-table"><tbody>${rows.join('')}</tbody></table>
+            </div>`;
+    }).join('');
+
+    const sources = (specs.sources || []).map((s) =>
+        `<li><a href="${escapeSpecHtml(s.url)}" target="_blank" rel="noopener">${escapeSpecHtml(s.label)}</a></li>`
+    ).join('');
+    const checked = specs.checkedAt ? formatSpecValue(specs.checkedAt, 'date') : '';
+
+    return `
+        <h2 class="section-title"><i class="fas fa-list-ul"></i>製品スペック（メーカー公式）</h2>
+        <div class="card">
+            ${keyHtml}
+            <div class="spec-groups">${groupsHtml}</div>
+            <div class="spec-footer">
+                <p>「メーカー非公表」はメーカーが数値を公開していない項目です。仕様は予告なく変更される場合があるため、購入前に公式サイトで最新情報をご確認ください。${checked ? `（${checked}確認）` : ''}</p>
+                ${sources ? `<p class="spec-sources-title">出典</p><ul class="spec-sources">${sources}</ul>` : ''}
+            </div>
+        </div>`;
+}
+
+function injectSpecsStyles() {
+    if (document.getElementById('spec-styles')) return;
+    const style = document.createElement('style');
+    style.id = 'spec-styles';
+    style.textContent = `
+        .spec-groups { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 1.75rem 2.5rem; }
+        .spec-group-title { font-size: 1.05rem; font-weight: 700; color: #1e293b; margin: 0 0 0.75rem; }
+        .spec-key { margin-bottom: 2rem; padding: 1.25rem 1.5rem; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; }
+        .spec-table-key { font-size: 1rem; }
+        .spec-table-key th { width: 30%; }
+        .spec-table-key tr:last-child th, .spec-table-key tr:last-child td { border-bottom: none; }
+        .spec-table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+        .spec-table th, .spec-table td { padding: 0.65rem 0.5rem; border-bottom: 1px solid #e5e7eb; text-align: left; vertical-align: top; line-height: 1.55; }
+        .spec-table th { width: 40%; color: #64748b; font-weight: 600; }
+        .spec-table td { color: #0f172a; font-weight: 600; }
+        .spec-undisclosed { color: #94a3b8; font-weight: 500; }
+        .spec-note { display: block; color: #64748b; font-size: 0.82rem; font-weight: 500; }
+        .spec-footer { margin-top: 1.75rem; padding-top: 1.25rem; border-top: 1px solid #e5e7eb; color: #64748b; font-size: 0.82rem; line-height: 1.7; }
+        .spec-footer p { margin: 0 0 0.5rem; }
+        .spec-sources-title { font-weight: 700; color: #475569; }
+        .spec-sources { margin: 0; padding-left: 1.2rem; }
+        .spec-sources a { color: var(--primary-color); }
+        @media (max-width: 768px) {
+            .spec-groups { grid-template-columns: 1fr; }
+        }
+    `;
+    document.head.appendChild(style);
+}
+
+async function renderSpecs(productId) {
+    let specs;
+    try {
+        const response = await fetch(`data/specs/${productId}.json`);
+        if (!response.ok) return;
+        specs = await response.json();
+    } catch (error) {
+        return;
+    }
+
+    injectSpecsStyles();
+    const section = document.createElement('section');
+    section.id = 'product-specs';
+    section.innerHTML = buildSpecsHtml(specs);
+
+    const anchor = document.querySelector('[data-dynamic="operationalCost.consumables"]');
+    const anchorSection = anchor ? anchor.closest('section') : null;
+    if (anchorSection) {
+        anchorSection.after(section);
+    } else {
+        const container = document.querySelector('.container');
+        if (container) container.appendChild(section);
+    }
+}
+
+// 12.6 価格の出典表示（priceSource が無い製品は HTML の既定文のまま）
+const PRICE_SOURCE_LABELS = {
+    official: 'メーカー公式オンラインストア',
+    amazon: 'メーカー公式Amazonストア',
+};
+
+function updatePriceNote(data) {
+    const label = PRICE_SOURCE_LABELS[data.priceSource];
+    const note = document.querySelector('.price-note');
+    if (!label || !note) return;
+    const checked = data.priceCheckedAt ? `（${formatSpecValue(data.priceCheckedAt, 'date')}時点）` : '';
+    note.innerHTML = `表示価格は${label}の販売価格です${checked}。<br>セールで頻繁に変わるため、<strong>購入前に最新の価格を確認</strong>してください。`;
+}
+
 // 13. メイン初期化
 /** 製品ヘッダー直下にサイト価値の短い説明を差し込む（控えめ表示） */
 function ensureProductValueNote() {
@@ -1529,6 +1742,8 @@ async function initializePage() {
         updateResaleValue(data);
         updateCTAButtons(data);
         renderAffiliate(data);
+        updatePriceNote(data);
+        renderSpecs(productId);
         
         window.productData = data;
         

@@ -45,7 +45,6 @@ const DEFAULT_SHEET_NAME_TO_PRODUCT_ID = {
   "D20 Pro Plus": "dreame-d20-pro-plus",
   // Roborock（スプレッドシート B 列表記に合わせる）
   "Saros 10R": "roborock-saros-10r",
-  "Qrevo CurvC": "roborock-qrevo-curv-c",
   "Q10V+": "roborock-q10v-plus",
   "Q10V": "roborock-q10v",
   // Anker / Eufy（製品名は「製品名」列の <a> テキストに合わせる）
