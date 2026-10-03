@@ -2,7 +2,11 @@
 """もしも「かんたんリンク」のカード表示（商品名・画像・Yahoo!/Amazon の検索語）を楽天の最新情報で更新する。
 
 かんたんリンクの埋め込みコードは作成時点の楽天商品名・画像を固定で持つため、
-セール文句入りの商品名やクーポン画像がそのまま残る。楽天の商品ページから最新の情報を取り直して書き換える。
+セール文句入りの商品名やクーポン画像がそのまま残る。楽天から最新の情報を取り直して書き換える。
+
+取得元:
+  環境変数 RAKUTEN_APP_ID と RAKUTEN_ACCESS_KEY があれば楽天市場商品検索API（楽天ウェブサービス）。
+  なければ楽天の商品ページを直接読む（楽天はクラウドからの直接アクセスを拒否するため、GitHub Actions ではAPI必須）。
 
 計測に使う a_id / p_id / pc_id / pl_id と楽天の商品URL（u）は変更しない。
 （もしもの bundle.js はクリック時に af.moshimo.com/af/c/click?a_id=…&url=遷移先 を組み立てるため、
@@ -46,6 +50,8 @@ SEARCH_URLS = {
     ),
 }
 RAKUTEN_SEARCH = "https://search.rakuten.co.jp/search/mall/{}/"
+RAKUTEN_API = "https://openapi.rakuten.co.jp/ichibams/api/IchibaItem/Search/20260701"
+SITE_URL = "https://nattoku-labo.com/"
 MSM_RE = re.compile(r"msmaflink\((\{.*?\})\);", re.S)
 AFF_RE = re.compile(r"^([ \t]*window\.__AFFILIATE__ = )(.*?);[ \t]*\r?$", re.M)
 
@@ -115,6 +121,64 @@ def parse_item_page(page: str) -> dict | None:
     }
 
 
+def item_code(url: str) -> str | None:
+    """https://item.rakuten.co.jp/<店舗>/<商品>/ -> 「店舗:商品」"""
+    parts = [p for p in urllib.parse.urlparse(url).path.split("/") if p]
+    return f"{parts[0]}:{parts[1]}" if len(parts) >= 2 else None
+
+
+def fetch_api(code: str, app_id: str, access_key: str) -> tuple[str, dict | None]:
+    """("ok", 商品) / ("missing", None) 検索に出ない / ("error", None) 判定できない。"""
+    query = urllib.parse.urlencode({
+        "applicationId": app_id,
+        "accessKey": access_key,
+        "itemCode": code,
+        "availability": 0,
+        "formatVersion": 2,
+        "elements": "itemName,mediumImageUrls,availability",
+    })
+    req = urllib.request.Request(
+        f"{RAKUTEN_API}?{query}",
+        headers={"User-Agent": UA, "Referer": SITE_URL, "Origin": SITE_URL.rstrip("/")},
+    )
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as res:
+                body = json.load(res)
+        except urllib.error.HTTPError as e:
+            if e.code == 404:
+                return "missing", None
+            if e.code in (400, 401, 403):
+                detail = e.read().decode("utf-8", errors="replace")[:200]
+                raise SystemExit(f"楽天APIの認証・パラメータエラー（HTTP {e.code}）: {detail}")
+        except (urllib.error.URLError, TimeoutError, json.JSONDecodeError):
+            pass
+        else:
+            items = body.get("Items") or body.get("items") or []
+            if not items:
+                return "missing", None
+            item = items[0]
+            return "ok", item.get("Item", item)
+        time.sleep(5 * (attempt + 1))
+    return "error", None
+
+
+def parse_api_item(item: dict, obj: dict) -> dict:
+    """APIの商品情報をカードの形に合わせる。画像はカードの d + c_p に続くパスだけを使う。"""
+    prefix = (obj.get("d") or "") + (obj.get("c_p") or "") + "/"
+    images = []
+    for im in item.get("mediumImageUrls") or []:
+        url = (im.get("imageUrl") if isinstance(im, dict) else im) or ""
+        url = url.split("?", 1)[0]
+        if obj.get("c_p") and url.startswith(prefix):
+            images.append(url[len(prefix) - 1:])
+    return {
+        "name": strip_promos(item.get("itemName") or ""),
+        "images": images[:MAX_IMAGES],
+        "inStock": item.get("availability") == 1,
+    }
+
+
 def search_keyword(data: dict) -> str:
     maker = (data.get("manufacturer") or "").strip()
     name = re.sub(r"\s+", " ", re.sub(r"[®™©]", "", data.get("productName") or "")).strip()
@@ -173,6 +237,12 @@ def main() -> int:
     ap.add_argument("--only", help="カンマ区切りの slug だけ処理する")
     args = ap.parse_args()
     only = set(args.only.split(",")) if args.only else None
+    app_id = os.environ.get("RAKUTEN_APP_ID", "").strip()
+    access_key = os.environ.get("RAKUTEN_ACCESS_KEY", "").strip()
+    use_api = bool(app_id and access_key)
+    if not use_api and os.environ.get("GITHUB_ACTIONS"):
+        print("RAKUTEN_APP_ID / RAKUTEN_ACCESS_KEY が未設定です。リポジトリの Settings → Secrets に登録してください。")
+        return 1
 
     embed_files = {p: read_keep_newline(p)[0] for p in DATA.glob("moshimo-embed-*.html")}
     new_moshimo: dict[str, str] = {}
@@ -193,16 +263,30 @@ def main() -> int:
         item = None
         changes = []
         if main.get("t") == "rakuten" and "item.rakuten.co.jp" in (main.get("u") or ""):
-            status, page = fetch(main["u"])
-            item = parse_item_page(page) if page else None
+            status = None
+            if use_api:
+                state, api_item = fetch_api(item_code(main["u"]) or "", app_id, access_key)
+                time.sleep(1.2)
+                if state == "ok":
+                    item = parse_api_item(api_item, obj)
+                elif state == "missing":
+                    # 検索に出ないのは削除・非公開のどちらか。削除（404）かどうかはページで確かめる
+                    status, _ = fetch(main["u"])
+                    if status not in (404, 410):
+                        warnings.append(f"{path.stem}: 楽天APIの検索に出ません（今回は変更なし）: {main['u']}")
+                else:
+                    warnings.append(f"{path.stem}: 楽天APIから取得できませんでした（今回は変更なし）: {main['u']}")
+            else:
+                status, page = fetch(main["u"])
+                item = parse_item_page(page) if page else None
+                time.sleep(1.5)
+                if item is None and status not in (404, 410):
+                    warnings.append(f"{path.stem}: 楽天の商品ページを取得できませんでした（今回は変更なし）: {main['u']}")
             if status in (404, 410):
                 warnings.append(f"{path.stem}: 楽天の商品ページが削除されています。新しいかんたんリンクの作成をおすすめします: {main['u']}")
                 changes += point_rakuten_to_search(obj, keyword)
-            elif item is None:
-                warnings.append(f"{path.stem}: 楽天の商品ページを取得できませんでした（今回は変更なし）: {main['u']}")
-            elif not item["inStock"]:
-                warnings.append(f"{path.stem}: 楽天の商品ページが在庫切れ表示です: {main['u']}")
-            time.sleep(1.5)
+            elif item and not item["inStock"]:
+                warnings.append(f"{path.stem}: 楽天の商品が在庫切れです: {main['u']}")
 
         changes += refresh_card(obj, item, keyword)
         if not changes:
