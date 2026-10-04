@@ -1,0 +1,190 @@
+{
+  "maker": "ECOVACS",
+  "checkedAt": "2026-10-03",
+  "products": {
+    "deebot-mini": {
+      "dimensionsMm": { "w": 286, "d": 286, "h": 99.8 },
+      "weightKg": null,
+      "climbHeightMm": 17,
+      "obstacleAvoidance": "LDSレーザー＋前方レーザー（公式表記「LDS 赤外線センサー」、AIカメラなし）",
+      "recognizesPetWaste": false,
+      "liftLidar": false,
+      "stationDimensionsMm": { "w": 320, "d": 400, "h": 385 },
+      "sources": [
+        { "label": "ECOVACS Japan公式 DEEBOT mini 製品ページ", "url": "https://www.ecovacs.com/jp/deebot-robotic-vacuum-cleaner/deebot-mini" },
+        { "label": "PR TIMES エコバックスジャパン DEEBOT mini ファミリー発売リリース", "url": "https://prtimes.jp/main/html/rd/p/000000138.000017926.html" },
+        { "label": "価格.com DEEBOT mini DJX11 スペック", "url": "https://kakaku.com/item/J0000047956/spec/" }
+      ],
+      "note": "公式「本体：286mm*286mm*99.8mm」（高さ9.98cm）。段差は公式本文「最大17mm」。本体重量は公式・価格.comとも記載なし（非公式通販サイトに本体3.1kg／ステーション5.72kgの記載があるが未採用）。ビデオマネージャーなし＝カメラ非搭載。"
+    },
+    "deebot-mini-2": {
+      "dimensionsMm": { "w": 286, "d": 286, "h": 99.8 },
+      "weightKg": null,
+      "climbHeightMm": 18,
+      "obstacleAvoidance": "TrueDetect 3D（LDS LiDAR＋前方レーザー）",
+      "recognizesPetWaste": null,
+      "liftLidar": false,
+      "stationDimensionsMm": { "w": 320, "d": 400, "h": 385 },
+      "sources": [
+        { "label": "ECOVACS Japan公式 DEEBOT mini 2 製品ページ", "url": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/deebot-mini2" },
+        { "label": "ECOVACS 公式 DEEBOT mini 2 取扱説明書（JP）", "url": "https://site-static.ecovacs.com/upload/file/support/2026/04/15/074040_8489$DEEBOTmini2InstructionManual-JP.pdf" },
+        { "label": "価格.com DEEBOT mini2 DJX28-01EE スペック", "url": "https://kakaku.com/item/K0001781249/spec/" }
+      ],
+      "note": "公式「本体：286mm*286mm*99.8mm」、段差は公式本文「最大18mm」。価格.comは「本体重量：8.82kg(バッテリー含む)」と記載するが、直径28.6cmの本体としては不自然でステーション込みの総重量の可能性が高いため未採用（null）。ビデオマネージャー（カメラ）搭載だが、ペット排泄物の認識・回避の公式記載なし。"
+    },
+    "deebot-n30": {
+      "dimensionsMm": { "w": 353, "d": 350, "h": 104 },
+      "weightKg": 3.85,
+      "climbHeightMm": 20,
+      "obstacleAvoidance": "LDS 赤外線センサー（AIカメラなし）",
+      "recognizesPetWaste": false,
+      "liftLidar": false,
+      "stationDimensionsMm": null,
+      "sources": [
+        { "label": "ECOVACS Japan公式 DEEBOT N30 製品ページ", "url": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/deebot-n30-black" },
+        { "label": "PR TIMES エコバックスジャパン DEEBOT N30 ファミリー発売リリース", "url": "https://prtimes.jp/main/html/rd/p/000000146.000017926.html" },
+        { "label": "価格.com DEEBOT N30 YDLX11-32DF スペック", "url": "https://kakaku.com/item/K0001711542/spec/" }
+      ],
+      "note": "本体353×350×104mm（公式リリース）。重量3.85kg(バッテリー含む)は価格.com記載。段差は公式「最大20mm」。ゴミ収集ステーションなし（充電台のみ、寸法の公式記載なし）。"
+    },
+    "deebot-n30-plus": {
+      "dimensionsMm": { "w": 353, "d": 350, "h": 104 },
+      "weightKg": 3.85,
+      "climbHeightMm": 20,
+      "obstacleAvoidance": "LDS 赤外線センサー（AIカメラなし）",
+      "recognizesPetWaste": false,
+      "liftLidar": false,
+      "stationDimensionsMm": { "w": 358, "d": 451, "h": 388 },
+      "sources": [
+        { "label": "ECOVACS Japan公式 DEEBOT N30 PLUS 製品ページ", "url": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/deebot-n30-plus-black" },
+        { "label": "PR TIMES エコバックスジャパン DEEBOT N30 ファミリー発売リリース", "url": "https://prtimes.jp/main/html/rd/p/000000146.000017926.html" },
+        { "label": "価格.com DEEBOT N30 PLUS YDLX11-35EE スペック", "url": "https://kakaku.com/item/K0001711195/spec/" }
+      ],
+      "note": "公式「本体：353*350*104 ステーション：358*451*388」。重量3.85kg(バッテリー含む)は価格.com記載。段差は公式「20mm」。ステーションはバッグレス（ゴミ収集のみ、モップ洗浄なし）。"
+    },
+    "deebot-n50-omni": {
+      "dimensionsMm": { "w": 353, "d": 352, "h": 100.35 },
+      "weightKg": null,
+      "climbHeightMm": 20,
+      "obstacleAvoidance": "TrueDetect 3D（構造光・赤外線レーザー、AIカメラなし）",
+      "recognizesPetWaste": false,
+      "liftLidar": false,
+      "stationDimensionsMm": { "w": 350, "d": 477, "h": 533 },
+      "sources": [
+        { "label": "ECOVACS Japan公式 DEEBOT N50 OMNI 製品ページ", "url": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/deebot-n50-omni-black" },
+        { "label": "PR TIMES エコバックスジャパン DEEBOT N50 OMNI 発売リリース", "url": "https://prtimes.jp/main/html/rd/p/000000167.000017926.html" },
+        { "label": "価格.com DEEBOT N50 OMNI DLX88-0204 スペック", "url": "https://kakaku.com/item/K0001795702/spec/" }
+      ],
+      "note": "公式「本体：353*352*100.35 ステーション：350*477*533」。段差は公式「最大20mm（乾いた床・濡れた床とも）」。本体重量は公式・価格.comとも記載なし。ビデオマネージャーなし＝カメラ非搭載。"
+    },
+    "deebot-t50-omni": {
+      "dimensionsMm": { "w": 352.7, "d": 351.6, "h": 81 },
+      "weightKg": 3.7,
+      "climbHeightMm": null,
+      "obstacleAvoidance": "TrueDetect 3D（公式スペック表）／本文では「AIVI 3D（AI物体認識&回避技術）」",
+      "recognizesPetWaste": null,
+      "liftLidar": false,
+      "stationDimensionsMm": { "w": 350, "d": 477, "h": 533 },
+      "sources": [
+        { "label": "ECOVACS Japan公式 DEEBOT T50 OMNI 製品ページ", "url": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/deebot-t50-omni-black" },
+        { "label": "PR TIMES エコバックスジャパン DEEBOT T50 Family 発売リリース", "url": "https://prtimes.jp/main/html/rd/p/000000132.000017926.html" },
+        { "label": "価格.com DEEBOT T50 OMNI スペック", "url": "https://kakaku.com/item/J0000049404/spec/" }
+      ],
+      "note": "公式「本体：352.7*351.6*81」、完全内蔵型dToF LiDARで高さ81mm（突起なし・昇降式ではない）。重量3.7kg(バッテリー含む)は価格.com記載。段差高さの公式記載見つからず（レビューサイト等に20mmの記載はあるが未採用）。障害物回避は公式スペック表がTrueDetect 3D、本文がAIVI 3Dと表記揺れあり（AIVI 3D 3.0はT50 PRO OMNIのみ）。ビデオマネージャーなし。"
+    },
+    "deebot-t50s-omni": {
+      "dimensionsMm": { "w": 352.7, "d": 351.6, "h": 81 },
+      "weightKg": 3.7,
+      "climbHeightMm": null,
+      "obstacleAvoidance": "TrueDetect 3D（デュアル構造光、AIカメラなし）",
+      "recognizesPetWaste": false,
+      "liftLidar": false,
+      "stationDimensionsMm": { "w": 350, "d": 477, "h": 533 },
+      "sources": [
+        { "label": "ECOVACS Japan公式 DEEBOT T50S OMNI 製品ページ", "url": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/t50s-omni-black" },
+        { "label": "PR TIMES エコバックスジャパン T50S OMNI / T80S OMNI 発売リリース", "url": "https://prtimes.jp/main/html/rd/p/000000156.000017926.html" },
+        { "label": "価格.com DEEBOT T50S OMNI DDX47 スペック", "url": "https://kakaku.com/item/J0000050209/spec/" }
+      ],
+      "note": "公式「本体：352.7*351.6*81」、完全内蔵型dToF LiDARで高さ81mm（昇降式ではない）。重量3.7kg(バッテリー含む)は価格.com記載。段差高さの公式記載見つからず（Amazonレビューに約1.8cmとの記述があるが未採用）。Amazon商品名に「AI障害物回避」「AIVI 3D 3.0」表記があるが、公式ページ・公式リリースはTrueDetect 3D（構造光）でビデオマネージャーなし。"
+    },
+    "deebot-t80-omni": {
+      "dimensionsMm": { "w": 353, "d": 351.5, "h": 98 },
+      "weightKg": 4.95,
+      "climbHeightMm": 20,
+      "obstacleAvoidance": "AIVI 3D 3.0 Omni-Approach（AI・VLM＋デュアル構造化光）",
+      "recognizesPetWaste": null,
+      "liftLidar": false,
+      "stationDimensionsMm": { "w": 338, "d": 459, "h": 500 },
+      "sources": [
+        { "label": "ECOVACS Japan公式 DEEBOT T80 OMNI 製品ページ", "url": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/deebot-t80-omni-white" },
+        { "label": "PR TIMES エコバックスジャパン DEEBOT T80 OMNI 発売リリース", "url": "https://prtimes.jp/main/html/rd/p/000000142.000017926.html" },
+        { "label": "価格.com DEEBOT T80 OMNI DEX68 スペック", "url": "https://kakaku.com/item/J0000049725/spec/" },
+        { "label": "Amazon エコバックスジャパン公式ストア DEEBOT T80 OMNI", "url": "https://www.amazon.co.jp/dp/B0F66LKTV6" }
+      ],
+      "note": "公式「本体：353*351.5*98 ステーション：338*459*500」。重量4.95kg(バッテリー含む)は価格.com、Amazon公式ストア仕様にも本体4.95kg。段差20mmはAmazon公式ストアの仕様・比較表（公式サイトには記載なし）。公式リリースでは「家具やコード、靴、ペットの食器」を識別とあるが、ペット排泄物の明記なし。ビデオマネージャー搭載。"
+    },
+    "deebot-t80s-omni": {
+      "dimensionsMm": { "w": 353, "d": 351, "h": 98 },
+      "weightKg": 5.1,
+      "climbHeightMm": 20,
+      "obstacleAvoidance": "AIVI 3D 3.0 Omni-Approach（AI・VLM＋構造化光）",
+      "recognizesPetWaste": null,
+      "liftLidar": false,
+      "stationDimensionsMm": { "w": 338, "d": 459, "h": 500 },
+      "sources": [
+        { "label": "ECOVACS Japan公式 DEEBOT T80S OMNI 製品ページ", "url": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/t80s-omni-black" },
+        { "label": "PR TIMES エコバックスジャパン T50S OMNI / T80S OMNI 発売リリース", "url": "https://prtimes.jp/main/html/rd/p/000000156.000017926.html" },
+        { "label": "価格.com DEEBOT T80S OMNI DEX62-0401 スペック", "url": "https://kakaku.com/item/K0001775591/spec/" }
+      ],
+      "note": "公式「本体：353*351*98 ステーション：338*459*500」、内蔵レーダーで高さ98mm（昇降式ではない）。段差は公式「最大20mm」。重量5.1kg(バッテリー含む)は価格.com記載。型番は価格.comでDEX62。ペット排泄物の認識・回避の公式記載なし。ビデオマネージャー搭載。"
+    },
+    "deebot-t90-omni": {
+      "dimensionsMm": { "w": 353, "d": 351, "h": 95 },
+      "weightKg": null,
+      "climbHeightMm": 24,
+      "obstacleAvoidance": "AIVI 3D 4.0 Omni-Approach（AI・VLM＋前方構造光）",
+      "recognizesPetWaste": null,
+      "liftLidar": false,
+      "stationDimensionsMm": { "w": 338, "d": 460, "h": 500 },
+      "sources": [
+        { "label": "ECOVACS Japan公式 DEEBOT T90 OMNI 製品ページ", "url": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/deebot-t90-omni" },
+        { "label": "PR TIMES エコバックスジャパン DEEBOT T90 ファミリー発売リリース", "url": "https://prtimes.jp/main/html/rd/p/000000154.000017926.html" },
+        { "label": "価格.com DEEBOT T90 OMNI スペック", "url": "https://kakaku.com/item/J0000049936/spec/" },
+        { "label": "Amazon エコバックスジャパン公式ストア 比較表（T90 OMNI 段差24mm）", "url": "https://www.amazon.co.jp/dp/B0F66LKTV6" }
+      ],
+      "note": "本体353×351×95mm・ステーション338×460×500mm（公式リリース）、埋め込み式レーダーで高さ95mm（昇降式ではない）。段差はTruePassアダプティブ4WDで単段最大24mm、連続段差最大40mm（公式）。本体重量はT90 OMNI単体の記載なし（上位T90 PRO OMNIは価格.comで5.3kg）。公式本文「コード類やペット用品など…一定の距離を保って回避」とあるがペット排泄物の明記なし。"
+    },
+    "deebot-x11-omnicyclone": {
+      "dimensionsMm": { "w": 353, "d": 351, "h": 98 },
+      "weightKg": 4.9,
+      "climbHeightMm": 24,
+      "obstacleAvoidance": "AIVI 3D 3.0 Omni-Approach（AIカメラ・VLM＋構造化ライト）",
+      "recognizesPetWaste": null,
+      "liftLidar": false,
+      "stationDimensionsMm": { "w": 380, "d": 493, "h": 465 },
+      "sources": [
+        { "label": "ECOVACS Japan公式 DEEBOT X11 OmniCyclone 製品ページ", "url": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/deebot-x11-omnicyclone" },
+        { "label": "PR TIMES エコバックスジャパン DEEBOT X11 OmniCyclone 発売リリース", "url": "https://prtimes.jp/main/html/rd/p/000000144.000017926.html" },
+        { "label": "価格.com DEEBOT X11 OmniCyclone DEX99-10EE スペック", "url": "https://kakaku.com/item/K0001708441/spec/" },
+        { "label": "ヨドバシ.com DEEBOT X11 OmniCyclone DEX99-10EE", "url": "https://www.yodobashi.com/product/100000001009334302/" },
+        { "label": "ECOVACS Singapore公式 DEEBOT X11 OmniCyclone（重量参考）", "url": "https://www.ecovacs.com/sg/deebot-robotic-vacuum-cleaner/deebot-x11-omnicyclone" }
+      ],
+      "note": "本体353×351×98mm（公式リリース・ヨドバシ）。ステーションは公式「380*335(493)*465」＝ベース込み奥行493mm（ベースなし335mm）。段差はTruePassで単段最大24mm、連続段差最大40mm（公式）。重量4.9kg(バッテリー含む)は価格.com記載だが、ECOVACSシンガポール公式は本体5.3±0.1kgと記載しており食い違いあり。公式は「AIカメラがモノや人を認識し賢く回避」とするがペット排泄物の明記なし。"
+    },
+    "deebot-x8-pro-omni": {
+      "dimensionsMm": { "w": 353, "d": 351.5, "h": 98 },
+      "weightKg": 5.3,
+      "climbHeightMm": 20,
+      "obstacleAvoidance": "AIVI 3D 3.0 Omni-Approach（RGBD＋3D構造光）＋TruEdge 3Dエッジセンサー",
+      "recognizesPetWaste": null,
+      "liftLidar": false,
+      "stationDimensionsMm": { "w": 350, "d": 477, "h": 533 },
+      "sources": [
+        { "label": "ECOVACS Japan公式 DEEBOT X8 PRO OMNI 製品ページ", "url": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/deebot-x8-pro" },
+        { "label": "PR TIMES エコバックスジャパン DEEBOT X8 PRO OMNI 発売リリース", "url": "https://prtimes.jp/main/html/rd/p/000000130.000017926.html" },
+        { "label": "Amazon エコバックスジャパン公式ストア DEEBOT X8 PRO OMNI", "url": "https://www.amazon.co.jp/dp/B0DRV9GSCG" }
+      ],
+      "note": "公式「本体：353*351.5*98 ステーション：350*477*533」。重量は公式リリース「本体：5.3kg±0.1／ステーション：7.6kg」。段差20mmはAmazon公式ストア仕様「乗り越え可能な段差：20mm」（公式サイトには記載なし）。ペット排泄物の認識・回避の公式記載なし。ビデオマネージャー搭載。"
+    }
+  }
+}

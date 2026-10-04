@@ -346,7 +346,8 @@ const STYLE = `<style>
       -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
       overflow: hidden;
-      word-break: break-word;
+      word-break: auto-phrase;
+      overflow-wrap: anywhere;
     }
     .product-mfr {
       font-size: 0.62rem;
@@ -450,7 +451,8 @@ const STYLE = `<style>
       line-height: 1.4;
       text-align: left;
       max-width: 7.1rem;
-      word-break: break-word;
+      word-break: auto-phrase;
+      overflow-wrap: anywhere;
     }
     @media (min-width: 720px) {
       .score { font-size: 1rem; }
@@ -579,13 +581,15 @@ const STYLE = `<style>
       font-size: 0.95rem;
       line-height: 1.4;
       padding: 0.85rem 1rem;
-      border-radius: 12px;
-      background: linear-gradient(145deg, #0e7490 0%, #0d9488 42%, #059669 100%);
-      box-shadow: 0 6px 16px rgba(13, 148, 136, 0.28);
+      border-radius: 10px;
+      background: #0f766e;
+      border: 1px solid #0d9488;
+      box-shadow: 0 1px 4px rgba(13, 148, 136, 0.18);
     }
     .aff-card-direct .official-hp-btn:hover {
-      filter: brightness(1.05);
+      background: #0d9488;
     }
+    .aff-card-body > .op-slim { margin: 0 0 0.75rem; }
     .aff-card-moshimo {
       width: 100%;
       min-width: 0;
@@ -654,6 +658,11 @@ function escapeHtml(s) {
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;");
+}
+
+/** 製品名をエスケープし、カタカナと漢字の境目に改行候補(<wbr>)を入れる。 */
+function productNameHtml(name) {
+  return escapeHtml(name).replace(/([ァ-ヶー])(?=[一-龯々])|([一-龯々])(?=[ァ-ヶ])/g, "$1$2<wbr>");
 }
 
 function shortKw(keyword) {
@@ -950,7 +959,7 @@ function productHead(prod) {
                         height="112"
                         loading="lazy"
                       >
-                      <div class="product-name">${escapeHtml(prod.name)}</div>
+                      <div class="product-name">${productNameHtml(prod.name)}</div>
                       <div class="product-mfr">${escapeHtml(prod.brand)}</div>
                     </a>
                     <a class="price-jump" href="#price-check-${escapeHtml(prod.slug)}"><span class="price-jump-main">最新価格を見る</span><span class="price-jump-sub">▼ 下へジャンプ</span></a>
@@ -1278,15 +1287,26 @@ const affiliateInlineScript = `
         container.appendChild(iframe);
       }
 
+      function extractOfficialHref(directHtml) {
+        const s = String(directHtml);
+        const hrefM = s.match(/href=["']([^"']+)["']/i);
+        if (hrefM) return hrefM[1].indexOf("//") === 0 ? "https:" + hrefM[1] : hrefM[1];
+        const a8 = s.match(/"ejp"\\s*:\\s*"([^"]*)"\\s*\\+\\s*"([^"]*)"/i);
+        if (a8) return a8[1] + a8[2];
+        const a8b = s.match(/"h"\\s*\\+\\s*"(ttps:\\/\\/[^"]+)"/i);
+        if (a8b) return "h" + a8b[1];
+        return null;
+      }
+
       function buildOfficialHpButton(directHtml) {
         if (!directHtml) return null;
-        const hrefM = String(directHtml).match(/href=["']([^"']+)["']/i);
-        if (!hrefM) return null;
+        const href = extractOfficialHref(directHtml);
+        if (!href) return null;
         const wrap = document.createElement("div");
         wrap.className = "aff-card-direct";
         const a = document.createElement("a");
         a.className = "official-hp-btn";
-        a.href = hrefM[1];
+        a.href = href;
         a.target = "_blank";
         a.rel = "noopener sponsored nofollow";
         a.textContent = "公式ホームページ";
@@ -1331,7 +1351,13 @@ const affiliateInlineScript = `
           if (hasDirect) {
             const btn = buildOfficialHpButton(aff.direct);
             if (btn) {
-              body.appendChild(btn);
+              const perksApi = window.NattokuOfficialPerks;
+              if (perksApi && perksApi.has(data.manufacturer, slug)) {
+                btn.querySelector("a").textContent = "公式ストアで特典を確認する";
+                body.appendChild(perksApi.build({ maker: data.manufacturer, productId: slug, button: btn, mode: "slim" }) || btn);
+              } else {
+                body.appendChild(btn);
+              }
             } else {
               // hrefが取れない場合のみ提供HTMLをそのまま挿入
               const directSlot = document.createElement("div");
@@ -1392,8 +1418,8 @@ function buildPage(band) {
   ${STYLE}
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="/products/css/navigation.css?v=20260818i">
-  <link rel="stylesheet" href="/products/css/prose.css?v=20260818k">
+  <link rel="stylesheet" href="/products/css/navigation.css?v=20261004b">
+  <link rel="stylesheet" href="/products/css/prose.css?v=20261004c">
   <script type="application/ld+json">
   ${JSON.stringify(itemListJson(band), null, 2)}
   </script>
@@ -1479,8 +1505,9 @@ function buildPage(band) {
     ナットクLabo ·
   </footer>
   ${scrollHelperScript}
+  <script src="/products/js/official-perks.js?v=20261004b"></script>
   ${affiliateInlineScript}
-  <script src="/products/js/navigation.js?v=20261003a"></script>
+  <script src="/products/js/navigation.js?v=20261004a"></script>
 </body>
 </html>
 `;

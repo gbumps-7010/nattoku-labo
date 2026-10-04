@@ -1,0 +1,101 @@
+{
+  "maker": "SwitchBot",
+  "checkedAt": "2026-10-03",
+  "products": {
+    "k10-pro": {
+      "dimensionsMm": { "w": 248, "d": 248, "h": 92 },
+      "weightKg": 2.3,
+      "climbHeightMm": 20,
+      "obstacleAvoidance": "LDSレーザー＋PSD距離センサー（カメラなし）",
+      "recognizesPetWaste": false,
+      "liftLidar": false,
+      "stationDimensionsMm": { "w": 261, "d": 210, "h": 323 },
+      "sources": [
+        { "label": "SwitchBot公式 K10+ Pro 製品ページ（仕様詳細）", "url": "https://www.switchbot.jp/products/switchbot-robot-vacuum-cleaner-k10-pro" },
+        { "label": "SwitchBot公式 ロボット掃除機機能比較一覧（乗り越え可能な段差 2CM）", "url": "https://www.switchbot.jp/pages/s1-s1plus-functional-comparison" },
+        { "label": "価格.com スペック W3011026", "url": "https://kakaku.com/item/K0001663869/spec/" }
+      ],
+      "note": "本体248×248×92mm・約2.3kgは公式仕様。段差2cmは公式比較表の「乗り越え可能な段差」欄。障害物回避は公式ページでPSD距離センサー＋高精度レーダーナビ（LDS）と記載、カメラ非搭載のためペット排泄物認識なし。ゴミ収集ベースは公式表記「261×210×323mm」で幅・奥行・高さの順の明記なし（323mmが高さと推定）。"
+    },
+    "k11": {
+      "dimensionsMm": { "w": 248, "d": 248, "h": 92 },
+      "weightKg": 2.3,
+      "climbHeightMm": 20,
+      "obstacleAvoidance": "LDSレーザー＋PSD距離センサー（カメラなし）",
+      "recognizesPetWaste": false,
+      "liftLidar": false,
+      "stationDimensionsMm": { "w": 240, "d": 180, "h": 250 },
+      "sources": [
+        { "label": "SwitchBot公式 K11+ 製品ページ（仕様詳細）", "url": "https://www.switchbot.jp/products/switchbot-robot-vacuum-cleaner-k11" },
+        { "label": "SwitchBot公式 ロボット掃除機機能比較一覧（乗り越え可能な段差 2CM）", "url": "https://www.switchbot.jp/pages/s1-s1plus-functional-comparison" },
+        { "label": "価格.com スペック W3003100", "url": "https://kakaku.com/item/J0000048711/spec/" }
+      ],
+      "note": "本体248×248×92mm・約2.3kgは公式仕様。段差2cmは公式比較表（価格.comニュースでは「20mm（正面）」）。公式はLDSレーザーSLAM＋PSD距離センサーと記載、カメラ非搭載。一部ブログの「AIカメラ追加」は公式記載なし。ステーションは公式仕様「240×180×250mm」、価格.comでは幅240×高さ250×奥行180mm。ただし公式ページ本文に「高さ24cm×幅18cm」との表記もあり不整合。K11+ Pro公式の「底面240×180mm・高さ約25cm」と同寸のため高さ250mmを採用。落下防止センサーは8cm以上の段差を検知。"
+    },
+    "k11-pro": {
+      "dimensionsMm": { "w": 248, "d": 248, "h": 92 },
+      "weightKg": 2.3,
+      "climbHeightMm": 20,
+      "obstacleAvoidance": "LDS LiDAR＋PSD近距離センサー（カメラなし）",
+      "recognizesPetWaste": false,
+      "liftLidar": false,
+      "stationDimensionsMm": { "w": 240, "d": 180, "h": 250 },
+      "sources": [
+        { "label": "SwitchBot公式 K11+ Pro 製品ページ（仕様詳細）", "url": "https://www.switchbot.jp/products/switchbot-robot-vacuum-cleaner-k11-pro" },
+        { "label": "SWITCHBOT プレスリリース K11+ Pro 予約販売（2026/7/1）", "url": "https://prtimes.jp/main/html/rd/p/000000186.000057002.html" },
+        { "label": "SWITCHBOT プレスリリース K11+ Pro 新色ブラック（2026/9/1）", "url": "https://prtimes.jp/main/html/rd/p/000000205.000057002.html" },
+        { "label": "価格.comニュース K11+ Pro（段差約20mm未満）", "url": "https://news.kakaku.com/prdnews/cd=kaden/ctcd=2130/id=157253/" },
+        { "label": "価格.com W3004100-B", "url": "https://kakaku.com/item/K0001800629/" }
+      ],
+      "note": "本体248×248×92mm・約2.3kgは公式仕様。段差は公式比較表に未掲載で、価格.comニュースの「約20mm未満の段差乗り越えに対応」に基づく（SwitchBotサポートFAQも同社ロボット掃除機は20mm未満と案内）。公式はLDS LiDAR＋PSD近距離センサーと記載、カメラ非搭載。ステーションは公式「240×180×250mm」（本文で底面240×180mm、高さ約25cm）。"
+    },
+    "k20-pro": {
+      "dimensionsMm": { "w": 248, "d": 248, "h": 92 },
+      "weightKg": 2.3,
+      "climbHeightMm": 20,
+      "obstacleAvoidance": "dToF LiDAR＋前面・側面の3つのレーザーセンサー（AI障害物回避）",
+      "recognizesPetWaste": null,
+      "liftLidar": false,
+      "stationDimensionsMm": { "w": 195, "d": 297, "h": 410 },
+      "sources": [
+        { "label": "SwitchBot公式 K20+ Pro 製品ページ（仕様詳細）", "url": "https://www.switchbot.jp/products/switchbot-robot-vacuum-cleaner-k20-pro" },
+        { "label": "SwitchBot公式 ロボット掃除機機能比較一覧（乗り越え可能な段差 2CM）", "url": "https://www.switchbot.jp/pages/s1-s1plus-functional-comparison" },
+        { "label": "価格.com W3002530", "url": "https://kakaku.com/item/K0001688904/" }
+      ],
+      "note": "ロボット掃除機本体は248×248×92mm・約2.3kg（公式）。移動ベース（プラットフォーム）装着時は400×400×208mm、移動ベース重量約4kg。公式ページに「本体のみ最大2cmまで乗り越え可、プラットフォーム搭載時は3mm以内でないと通過できない場合あり」と記載。障害物回避はレーザーセンサー式で、ペット排泄物の認識に関する記載なし（見守りカメラは別売オプション）。ステーションはデュアル集塵ステーション195×297×410mm（順序明記なし、410mmが高さと推定）。価格.comでの型番はW3002530。"
+    },
+    "s10": {
+      "dimensionsMm": { "w": 365, "d": 365, "h": 115 },
+      "weightKg": 5.5,
+      "climbHeightMm": 20,
+      "obstacleAvoidance": "AIカメラ＋LDSレーザー＋PSD距離センサー（暗所LED補助）",
+      "recognizesPetWaste": null,
+      "liftLidar": false,
+      "stationDimensionsMm": { "w": 260, "d": 207, "h": 412 },
+      "sources": [
+        { "label": "SwitchBot公式 S10 製品ページ（仕様詳細）", "url": "https://www.switchbot.jp/products/switchbot-robot-vacuum-cleaner-s10" },
+        { "label": "SwitchBot公式 S10 特設ページ", "url": "https://www.switchbot.jp/pages/switchbot-robot-vacuum-cleaner-s10" },
+        { "label": "SWITCHBOT プレスリリース S10 販売開始（2024/5/14）", "url": "https://prtimes.jp/main/html/rd/p/000000067.000057002.html" },
+        { "label": "SwitchBot公式 ロボット掃除機機能比較一覧（365×115mm、乗り越え可能な段差 2CM）", "url": "https://www.switchbot.jp/pages/s1-s1plus-functional-comparison" },
+        { "label": "価格.com スペック W3211805", "url": "https://kakaku.com/item/K0001625453/spec/" }
+      ],
+      "note": "本体365×365×115mm・5500g±10gは公式プレスリリース仕様。段差2cmは公式比較表。AIカメラによる障害物回避は公式記載ありだが、例示は靴やおもちゃのみでペット排泄物の明記なし。ゴミ収集ステーションはプレスリリースで260×207×412mm（順序明記なし）、別途水交換ステーション400×165×100mmあり。"
+    },
+    "s20": {
+      "dimensionsMm": { "w": 365, "d": 365, "h": 115 },
+      "weightKg": 5.5,
+      "climbHeightMm": 20,
+      "obstacleAvoidance": "AIカメラ＋LDSレーザー＋PSD距離センサー（暗所LED補助）",
+      "recognizesPetWaste": true,
+      "liftLidar": false,
+      "stationDimensionsMm": { "w": 380, "d": 223, "h": 460 },
+      "sources": [
+        { "label": "SwitchBot公式 S20 製品ページ（仕様詳細）", "url": "https://www.switchbot.jp/products/switchbot-robot-vacuum-cleaner-s20" },
+        { "label": "SWITCHBOT プレスリリース S20 発売（2025/5/30）", "url": "https://prtimes.jp/main/html/rd/p/000000104.000057002.html" },
+        { "label": "SwitchBot公式 ロボット掃除機機能比較一覧（S20 36.5×11.5cm、乗り越え可能な段差 2CM）", "url": "https://www.switchbot.jp/pages/s1-s1plus-functional-comparison" },
+        { "label": "ソフトバンクセレクション S20 W6602001 仕様", "url": "https://shop.softbankselection.jp/item/0810150544022.html" }
+      ],
+      "note": "本体365×365×115mm・約5.5kg、ステーション380×223×460mm・約6.79kgは公式仕様。公式プレスリリースに「AIカメラ障害物回避では電源コードやスリッパ、体重計、さらにはペットのフンまで識別」「段差は2cmまで乗り越え可能」と明記（公式製品ページ本文は「100種類以上の障害物を認識」「2cm乗り越え」）。"
+    }
+  }
+}

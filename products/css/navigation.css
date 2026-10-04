@@ -1425,15 +1425,12 @@ body:has(#fixed-navigation) h1.product-title {
     line-height: 1.35;
 }
 
+/* ブロックが1行に収まらない長い型番だけ、keep-all のまま空白位置で折り返す */
 body:has(#fixed-navigation) h1.product-title .product-title-unit {
     display: inline-block;
-    white-space: nowrap;
+    white-space: normal;
     max-width: 100%;
-}
-
-body:has(#fixed-navigation) h1.product-title .product-title-part,
-body:has(#fixed-navigation) h1.product-title .product-title-sep {
-    white-space: nowrap;
+    text-align: left;
 }
 
 @media (max-width: 380px) {
@@ -1578,4 +1575,10 @@ body {
 html body [style*="color: #64748b"],
 html body [style*="color:#64748b"] {
     color: #0f172a !important;
+}
+
+@media (max-width: 640px) {
+    .nav-quick-link-trouble {
+        display: none;
+    }
 }

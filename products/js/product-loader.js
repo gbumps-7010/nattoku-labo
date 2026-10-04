@@ -1220,15 +1220,17 @@ function injectMoshimoIframe(container, html) {
         'div.easyLink-box img.js-item-image{' +
         'max-width:240px!important;max-height:240px!important;' +
         'width:auto!important;height:auto!important;min-width:0!important;object-fit:contain!important}' +
+        'div.easyLink-box div.easyLink-info p.easyLink-info-name{' +
+        'display:-webkit-box!important;-webkit-box-orient:vertical!important;-webkit-line-clamp:3!important;overflow:hidden!important}' +
         '@media screen and (max-width:480px){' +
         'div.easyLink-box{display:block!important}' +
         'div.easyLink-box div.easyLink-img,' +
         'div.easyLink-box div.easyLink-img p.easyLink-img-box{' +
-        'width:220px!important;min-width:220px!important;max-width:220px!important;' +
-        'height:220px!important;flex-basis:220px!important;margin:0 auto 12px!important}' +
-        'div.easyLink-box div.easyLink-img p.easyLink-img-box span{width:220px!important;height:220px!important}' +
+        'width:160px!important;min-width:160px!important;max-width:160px!important;' +
+        'height:160px!important;flex-basis:160px!important;margin:0 auto 12px!important}' +
+        'div.easyLink-box div.easyLink-img p.easyLink-img-box span{width:160px!important;height:160px!important}' +
         'div.easyLink-box div.easyLink-img p.easyLink-img-box span>img,' +
-        'div.easyLink-box img.js-item-image{max-width:220px!important;max-height:220px!important}' +
+        'div.easyLink-box img.js-item-image{max-width:160px!important;max-height:160px!important}' +
         '}' +
         '</style></head><body>' +
         safe +
@@ -1431,7 +1433,19 @@ function renderAffiliate(data) {
         // 公式HPを「確認先のひとつ」として先頭に
         if (directEl) { directEl.innerHTML = ''; directEl.style.cssText = 'display:none; margin:0;'; }
         if (hasDirect) {
-            const btn = buildOfficialButton(aff.direct, opts.withPixel, opts.btnLabel, opts.buttonSize || 'default');
+            const perksApi = window.NattokuOfficialPerks;
+            const hasPerks = !!(perksApi && perksApi.has(data.manufacturer, data.productId));
+            let btn = hasPerks
+                ? buildOfficialButton(aff.direct, opts.withPixel, '公式ストアで特典を確認する', 'default')
+                : buildOfficialButton(aff.direct, opts.withPixel, opts.btnLabel, opts.buttonSize || 'default');
+            if (btn && hasPerks) {
+                btn = perksApi.build({
+                    maker: data.manufacturer,
+                    productId: data.productId,
+                    button: btn,
+                    mode: 'slim',
+                }) || btn;
+            }
             if (btn) {
                 if (body) {
                     body.insertBefore(btn, body.firstChild);

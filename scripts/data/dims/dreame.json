@@ -1,0 +1,388 @@
+{
+  "maker": "Dreame",
+  "checkedAt": "2026-10-03",
+  "products": {
+    "d10-plus": {
+      "dimensionsMm": {
+        "w": 349,
+        "d": 350,
+        "h": 96.3
+      },
+      "weightKg": null,
+      "climbHeightMm": 20,
+      "obstacleAvoidance": "なし（LDSレーザー＋メカニカルバンパー）",
+      "recognizesPetWaste": false,
+      "liftLidar": false,
+      "stationDimensionsMm": {
+        "w": 303,
+        "d": 403,
+        "h": 399
+      },
+      "sources": [
+        {
+          "label": "Dreame Japan公式 D10 Plus 製品ページ（仕様）",
+          "url": "https://www.dreametech.jp/products/dreame-bot-d10-plus"
+        },
+        {
+          "label": "CFD販売（国内代理店）D10 Plus 仕様",
+          "url": "https://www.cfd.co.jp/biz/product/detail/d10-plus.html"
+        },
+        {
+          "label": "価格.com D10 Plus RLS3D スペック",
+          "url": "https://kakaku.com/item/K0001609447/spec/"
+        }
+      ],
+      "note": "本体重量は公式サイト・代理店・価格.com・公式取扱説明書のいずれにも記載がなく未確認（海外小売の4.3kg表記は採用せず）。段差20mmはCFD販売の仕様「段差対応高さ制限 20 mm」。衝突防止は「LDS+メカニカルバンパー」でAIカメラ非搭載。ステーション寸法は公式表記「303 × 403 × 399mm」（CFDは399.2mm）の順に格納、幅/奥行の割当は表記順のまま。"
+    },
+    "d20-ultra": {
+      "dimensionsMm": {
+        "w": 350,
+        "d": 350,
+        "h": 104
+      },
+      "weightKg": 3.9,
+      "climbHeightMm": null,
+      "obstacleAvoidance": "3D構造化ライト（3DAdapt）",
+      "recognizesPetWaste": false,
+      "liftLidar": false,
+      "stationDimensionsMm": {
+        "w": 340,
+        "d": 457,
+        "h": 590
+      },
+      "sources": [
+        {
+          "label": "Dreame Japan公式 D20 Ultra 製品ページ（仕様）",
+          "url": "https://www.dreametech.jp/products/dreame-d20-ultra"
+        },
+        {
+          "label": "Dreame India公式 D20 Ultra（仕様）",
+          "url": "https://in.dreametech.com/products/dreame-d20-ultra"
+        },
+        {
+          "label": "Dreame楽天市場店 D20 Ultra",
+          "url": "https://item.rakuten.co.jp/dreame-shop/d20ultra/"
+        }
+      ],
+      "note": "高さは公式サイト（日本・インド）の104mmを採用。Dreame楽天市場店の仕様表は350×350×97.2mmと表記揺れあり（L10s Ultra Gen 2と同値で誤記の可能性）。段差乗り越え高さは公式サイト・公式取扱説明書に数値記載がなく未確認（レビューサイトの2cmは採用せず）。障害物回避は3DAdapt（レーザー式3D構造化ライト）でAIカメラ非搭載、ペット排泄物認識の記載なし。ステーション公式表記「340 x 457 x 590 mm」。"
+    },
+    "d9-max-gen-2": {
+      "dimensionsMm": {
+        "w": 350,
+        "d": 350,
+        "h": 96.8
+      },
+      "weightKg": 3.21,
+      "climbHeightMm": 20,
+      "obstacleAvoidance": "なし（LDSレーザーナビのみ）",
+      "recognizesPetWaste": false,
+      "liftLidar": false,
+      "stationDimensionsMm": {
+        "w": 130,
+        "d": 126,
+        "h": 93.21
+      },
+      "sources": [
+        {
+          "label": "価格.com D9 Max Gen 2 スペック",
+          "url": "https://kakaku.com/item/K0001662324/"
+        },
+        {
+          "label": "Dreame Global公式 D9 Max Gen 2（仕様・20mm段差）",
+          "url": "https://global.dreametech.com/products/d9-max-gen-2"
+        }
+      ],
+      "note": "日本公式サイトの製品ページは現在404（公式取扱説明書PDFのみ掲載）。寸法・重量は価格.com（350x96.8x350mm／3.21kg）とGlobal公式で一致。段差20mmはGlobal公式「20mm threshold」の記載。仕様に「LED Illumination ×」、AIカメラ・3D構造化ライト非搭載。充電ドック寸法はGlobal公式「130 x 126 x 93.21mm」の表記順。"
+    },
+    "f20": {
+      "dimensionsMm": {
+        "w": 325,
+        "d": 325,
+        "h": 94.7
+      },
+      "weightKg": 2.55,
+      "climbHeightMm": null,
+      "obstacleAvoidance": "なし（LiDARナビゲーションのみ）",
+      "recognizesPetWaste": false,
+      "liftLidar": false,
+      "stationDimensionsMm": {
+        "w": 146,
+        "d": 60,
+        "h": 98.6
+      },
+      "sources": [
+        {
+          "label": "Dreame Japan公式 F20 製品ページ（仕様）",
+          "url": "https://www.dreametech.jp/products/f20-robot-vacuum-cleaner"
+        },
+        {
+          "label": "Amazon.co.jp F20（メーカー仕様転載）",
+          "url": "https://www.amazon.co.jp/dp/B0GVNN41P1"
+        },
+        {
+          "label": "Dreame Japan公式 取扱説明書 F20（PDF）",
+          "url": "https://cdn.shopify.com/s/files/1/0622/3524/6797/files/R9526-F20.pdf?v=1782371124"
+        }
+      ],
+      "note": "段差乗り越え高さは仕様表に数値なし。公式取扱説明書のトラブルシューティングに「高さ2cm以上の敷居は乗り越えられない」旨の記載があるのみのため null とした。充電ベースは「146 × 60 × 98.6 mm」の表記順。AIカメラ非搭載。"
+    },
+    "f20-plus": {
+      "dimensionsMm": {
+        "w": 325,
+        "d": 325,
+        "h": 94.7
+      },
+      "weightKg": 2.59,
+      "climbHeightMm": null,
+      "obstacleAvoidance": "なし（LiDARナビゲーションのみ）",
+      "recognizesPetWaste": false,
+      "liftLidar": false,
+      "stationDimensionsMm": {
+        "w": 293,
+        "d": 201,
+        "h": 266.5
+      },
+      "sources": [
+        {
+          "label": "Dreame Japan公式 F20 Plus 製品ページ（仕様）",
+          "url": "https://www.dreametech.jp/products/f20-plus-robot-vacuum"
+        },
+        {
+          "label": "Amazon.co.jp F20 Plus（メーカー仕様転載）",
+          "url": "https://www.amazon.co.jp/dp/B0GVNN41NZ"
+        },
+        {
+          "label": "Dreame Japan公式 取扱説明書 F20 Plus（PDF）",
+          "url": "https://cdn.shopify.com/s/files/1/0622/3524/6797/files/R9527-F20_Plus.pdf?v=1782371115"
+        }
+      ],
+      "note": "公式キャッチは「Dreame史上最小サイズ」。段差乗り越え高さは仕様表に数値なし。公式取扱説明書に「高さ2cm以上の敷居は乗り越えられない」旨の記載があるのみのため null。型番はAmazon表記でRLF41GD。ベースステーションは「293*201*266.5mm」の表記順。"
+    },
+    "l10s-ultra-gen-2": {
+      "dimensionsMm": {
+        "w": 350,
+        "d": 350,
+        "h": 97.2
+      },
+      "weightKg": 4,
+      "climbHeightMm": 20,
+      "obstacleAvoidance": "3D構造化ライト（3DAdapt）",
+      "recognizesPetWaste": false,
+      "liftLidar": false,
+      "stationDimensionsMm": {
+        "w": 340,
+        "d": 457,
+        "h": 590.5
+      },
+      "sources": [
+        {
+          "label": "Dreame Japan公式 L10s Ultra Gen 2 製品ページ（仕様）",
+          "url": "https://www.dreametech.jp/products/l10s-ultra-gen-2"
+        },
+        {
+          "label": "価格.com L10s Ultra Gen2 スペック",
+          "url": "https://kakaku.com/item/K0001660238/spec/"
+        }
+      ],
+      "note": "段差は公式仕様「乗り越え可能高さ 2 cm」、本文に「障害物乗り越えストリップを取り付けた状態で最大20mm」と注記あり。障害物回避は3DAdapt（3D構造化ライト）でAIカメラ非搭載、排泄物認識の記載なし。ステーション公式表記「457 x 340 x 590.5 mm」（幅340・奥行457と解釈）。"
+    },
+    "l10s-ultra-gen-3": {
+      "dimensionsMm": {
+        "w": 350,
+        "d": 350,
+        "h": 97
+      },
+      "weightKg": 3.89,
+      "climbHeightMm": 20,
+      "obstacleAvoidance": "3D構造化ライト（3DAdapt）",
+      "recognizesPetWaste": false,
+      "liftLidar": false,
+      "stationDimensionsMm": {
+        "w": 340,
+        "d": 457,
+        "h": 590
+      },
+      "sources": [
+        {
+          "label": "Dreame Japan公式 L10s Ultra Gen 3 製品ページ（仕様）",
+          "url": "https://www.dreametech.jp/products/l10s-ultra-gen3"
+        },
+        {
+          "label": "PR TIMES 公式プレスリリース（2026/4/15発売）",
+          "url": "https://prtimes.jp/main/html/rd/p/000000104.000116327.html"
+        },
+        {
+          "label": "Dreame楽天市場店 L10s Ultra Gen 3（乗り越え可能高さ20mm）",
+          "url": "https://item.rakuten.co.jp/dreame-shop/l10sultragen3/"
+        }
+      ],
+      "note": "寸法・重量は公式サイト（350×350×97mm／3.89kg）を採用。Dreame楽天市場店の仕様表は350×350×96.5mm／3.9kg、ステーション457×340×589mm／8.6kgと表記揺れあり。段差20mmは楽天公式店の「乗り越え可能高さ：20 mm」。障害物回避は3DAdapt（ダイナミックレーザーによる3D構造化光）でAIカメラ非搭載。ステーション公式表記「457 x 340 x 590 mm」。"
+    },
+    "l20-ultra-complete": {
+      "dimensionsMm": {
+        "w": 350,
+        "d": 350,
+        "h": 103.8
+      },
+      "weightKg": 4.3,
+      "climbHeightMm": 20,
+      "obstacleAvoidance": "AIカメラ＋3D構造化ライト＋LED（55種認識）",
+      "recognizesPetWaste": null,
+      "liftLidar": false,
+      "stationDimensionsMm": {
+        "w": 426,
+        "d": 499,
+        "h": 606.5
+      },
+      "sources": [
+        {
+          "label": "PR TIMES 公式プレスリリース（製品仕様）",
+          "url": "https://prtimes.jp/main/html/rd/p/000000013.000116327.html"
+        },
+        {
+          "label": "CFD販売（国内代理店）L20 Ultra Complete 仕様",
+          "url": "https://www.cfd.co.jp/biz/product/detail/l20-ultra-complete.html"
+        },
+        {
+          "label": "価格.com L20 Ultra Complete スペック",
+          "url": "https://kakaku.com/item/K0001574418/spec/"
+        }
+      ],
+      "note": "日本公式サイトの製品ページは現在掲載なし。段差20mmはCFD販売の仕様「段差対応高さ制限 20 mm」（公式取説にも2cm以上の敷居は不可と記載）。ペット排泄物の認識は公式プレスリリース・代理店仕様に明記なし（価格.comマガジンのPR記事に「ペットのフン回避」の記述はあるが公式仕様ではないため null）。ステーションはプレスリリースのW×D×H表記「426*499*606.5」。"
+    },
+    "l40-ultra-ae": {
+      "dimensionsMm": {
+        "w": 350,
+        "d": 350,
+        "h": 97
+      },
+      "weightKg": 4,
+      "climbHeightMm": 20,
+      "obstacleAvoidance": "AIカメラ（RGB）＋3D構造化ライト（120種認識）",
+      "recognizesPetWaste": null,
+      "liftLidar": false,
+      "stationDimensionsMm": {
+        "w": 340,
+        "d": 457,
+        "h": 590
+      },
+      "sources": [
+        {
+          "label": "Dreame Japan公式 L40 Ultra AE 製品ページ（仕様）",
+          "url": "https://www.dreametech.jp/products/l40-ultra-ae"
+        },
+        {
+          "label": "PR TIMES 公式プレスリリース（対応可能段差20mm）",
+          "url": "https://prtimes.jp/main/html/rd/p/000000069.000116327.html"
+        },
+        {
+          "label": "価格.com L40 Ultra AE RLL77SE スペック",
+          "url": "https://kakaku.com/item/K0001693496/spec/"
+        }
+      ],
+      "note": "障害物回避は公式仕様「インテリジェント RGB + 3D 構造化光方式」。ペット（人・ペット本体）の検知・回避や餌皿/トイレ周り清掃の記載はあるが、排泄物の認識は明記なしのため null。ステーション公式表記「457 x 340 x 590mm」（価格.comは450幅×340奥行と表記揺れ）。"
+    },
+    "l40s-pro-ultra": {
+      "dimensionsMm": {
+        "w": 350,
+        "d": 350,
+        "h": 103.5
+      },
+      "weightKg": 4.23,
+      "climbHeightMm": 40,
+      "obstacleAvoidance": "AIカメラ（RGB）＋デュアルレーザー3D構造化ライト（180種認識）",
+      "recognizesPetWaste": null,
+      "liftLidar": false,
+      "stationDimensionsMm": {
+        "w": 340,
+        "d": 457,
+        "h": 591
+      },
+      "sources": [
+        {
+          "label": "Dreame Japan公式 L40s Pro Ultra 製品ページ（仕様）",
+          "url": "https://www.dreametech.jp/products/l40s-pro-ultra"
+        },
+        {
+          "label": "Dreame楽天市場店 L40s Pro Ultra",
+          "url": "https://item.rakuten.co.jp/dreame-shop/l40sproultra/"
+        }
+      ],
+      "note": "段差は公式仕様「通過可能な障害物の高さ 40 mm（2段）, 22 mm（1段）」。EasyLeap 4輪機構。餌入れ・トイレ・人・ペットの認識回避の記載はあるが、排泄物の認識は日本公式に明記なしのため null。ステーション公式表記「340 x 457 x 591mm」。",
+      "climbTwoStep": true
+    },
+    "x30-ultra": {
+      "dimensionsMm": {
+        "w": 350,
+        "d": 350,
+        "h": 97
+      },
+      "weightKg": 4,
+      "climbHeightMm": 20,
+      "obstacleAvoidance": "AIカメラ＋3D構造化ライト＋LED（70種認識）",
+      "recognizesPetWaste": null,
+      "liftLidar": false,
+      "stationDimensionsMm": {
+        "w": 340,
+        "d": 457,
+        "h": 590
+      },
+      "sources": [
+        {
+          "label": "価格.com DreameBot X30 Ultra RLX56CE スペック",
+          "url": "https://kakaku.com/item/K0001655796/spec/"
+        },
+        {
+          "label": "Dreame Global公式 X30 Ultra（比較表 寸法）",
+          "url": "https://global.dreametech.com/products/x30-ultra"
+        },
+        {
+          "label": "Makuake 公式プロジェクト（Q&A 段差2cm以下）",
+          "url": "https://www.makuake.com/project/dreamebot_x30_ultra/"
+        },
+        {
+          "label": "Gadget Gate（発表記事：直径350×高さ97mm・約4kg）",
+          "url": "https://gadget.phileweb.com/post-72493/"
+        }
+      ],
+      "note": "日本公式サイトの製品ページは現在トップへリダイレクト。寸法・重量は価格.com（350x97x350mm／標準質量4kg）とGlobal公式（350*350*97）で一致。段差はDreame公式Makuakeプロジェクトの「2cm以下の段差を乗り越えることができます」（公式取説にも2cm以上の敷居は不可と記載）。排泄物認識は日本公式に明記なしのため null（Global公式はペットゾーン設定のみ）。ステーションはGlobal公式「340*457*590」、Gadget Gateは457W×590H×340Dと表記揺れ。"
+    },
+    "x50-ultra": {
+      "dimensionsMm": {
+        "w": 350,
+        "d": 350,
+        "h": 89
+      },
+      "weightKg": 4.53,
+      "climbHeightMm": 60,
+      "obstacleAvoidance": "AIカメラ＋3D構造化ライト＋LED（200種認識）",
+      "recognizesPetWaste": true,
+      "liftLidar": true,
+      "stationDimensionsMm": {
+        "w": 340,
+        "d": 457,
+        "h": 590
+      },
+      "sources": [
+        {
+          "label": "Dreame Japan公式 X50 Ultra 製品ページ（仕様）",
+          "url": "https://www.dreametech.jp/products/x50-ultra"
+        },
+        {
+          "label": "PR TIMES 公式プレスリリース（製品概要）",
+          "url": "https://prtimes.jp/main/html/rd/p/000000066.000116327.html"
+        },
+        {
+          "label": "価格.com X50 Ultra RLX85CE スペック",
+          "url": "https://kakaku.com/item/K0001680231/spec/"
+        },
+        {
+          "label": "ヨドバシ.com X50 Ultra RLX85CE",
+          "url": "https://www.yodobashi.com/product/100000001009012302/"
+        }
+      ],
+      "note": "高さ89mmはVersaLiftセンサー格納時、センサー伸張時は111mm。段差は60mm（2段：1.8cm+4.2cm）、1段の場合は42mm（ProLeapシステム）。公式に「ペットの排泄物を含む最大200種類を識別」と明記。ステーション公式表記「457 x 340 x 590mm」、ヨドバシは幅340・奥行457・高さ590。",
+      "climbTwoStep": true
+    }
+  }
+}

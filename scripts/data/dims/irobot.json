@@ -1,0 +1,123 @@
+{
+  "maker": "iRobot",
+  "checkedAt": "2026-10-03",
+  "products": {
+    "roomba-105-combo-autoempty": {
+      "dimensionsMm": { "w": 335, "d": 336, "h": 104 },
+      "weightKg": 2.92,
+      "climbHeightMm": null,
+      "obstacleAvoidance": "LiDAR（ClearView LiDAR）※カメラなし",
+      "recognizesPetWaste": false,
+      "liftLidar": false,
+      "stationDimensionsMm": { "w": 213, "d": 171, "h": 293 },
+      "sources": [
+        { "label": "アイロボット公式オンラインストア Y351260 製品仕様", "url": "https://store.irobot-jp.com/item/Y351260.html" },
+        { "label": "アイロボット プレスリリース 2025-04-16（Roomba 105 Combo）", "url": "https://www.irobot-jp.com/press/pdf/20250416_2.pdf" },
+        { "label": "価格.com スペック Y351260", "url": "https://kakaku.com/item/K0001686220/spec/" }
+      ],
+      "note": "公式仕様: 33.6(奥行)×33.5(幅)×10.4(高さ)cm、本体約2.92kg、ステーション17.1(奥行)×21.3(幅)×29.3(高さ)cm/約3.07kg。物体認識はClearView LiDARのみでカメラ非搭載のため排泄物認識の記載なし。段差乗り越え高さは公式に数値記載なし（比較ブログでは約2cmとされるが未検証のためnull）。"
+    },
+    "roomba-max-705-combo-autowash": {
+      "dimensionsMm": { "w": 366, "d": 372, "h": 105 },
+      "weightKg": 5.72,
+      "climbHeightMm": null,
+      "obstacleAvoidance": "AIカメラ（PrecisionVision AI）＋LiDAR（ClearView Pro LiDAR）＋LEDライト",
+      "recognizesPetWaste": true,
+      "liftLidar": false,
+      "stationDimensionsMm": { "w": 430, "d": 456, "h": 432 },
+      "sources": [
+        { "label": "アイロボット公式オンラインストア X185060 製品仕様", "url": "https://store.irobot-jp.com/item/X185060.html" },
+        { "label": "アイロボット プレスリリース 2025-08-27（Roomba Max 705 Combo）", "url": "https://www.irobot-jp.com/press/pdf/20250827.pdf" }
+      ],
+      "note": "公式仕様: 37.2(奥行)×36.6(幅)×10.5(高さ)cm、本体約5.72kg、ステーション45.6(奥行)×43(幅)×43.2(高さ)cm/約8.47kg。LiDARは本体内部に格納（天面の突起なし）とプレスリリースに明記。ペットの排せつ物回避は「犬または猫の固形の糞のみ」と公式注記あり。段差乗り越え高さは公式に数値記載なし。"
+    },
+    "roomba-max-705-vac-autoempty": {
+      "dimensionsMm": { "w": 350, "d": 355, "h": 104 },
+      "weightKg": 2.9,
+      "climbHeightMm": null,
+      "obstacleAvoidance": "AIカメラ（PrecisionVision AI）＋LiDAR（ClearView Pro LiDAR）＋LEDライト",
+      "recognizesPetWaste": true,
+      "liftLidar": false,
+      "stationDimensionsMm": { "w": 213, "d": 171, "h": 281 },
+      "sources": [
+        { "label": "アイロボット公式オンラインストア W155060 製品仕様", "url": "https://store.irobot-jp.com/item/W155060.html" },
+        { "label": "アイロボット プレスリリース 2025-04-16（Roomba Max 705 Vac）", "url": "https://www.irobot-jp.com/press/pdf/20250416_4.pdf" }
+      ],
+      "note": "公式仕様: 35.5(奥行)×35(幅)×10.4(高さ)cm、本体約2.9kg、ステーション17.1(奥行)×21.3(幅)×28.1(高さ)cm/約1.6kg。吸引専用（水拭きなし）。ペットの排せつ物回避は「犬または猫の固形の糞のみ」と公式注記あり。段差乗り越え高さは公式に数値記載なし。"
+    },
+    "roomba-mini-autoempty": {
+      "dimensionsMm": { "w": 245, "d": 245, "h": 92 },
+      "weightKg": 2.0,
+      "climbHeightMm": null,
+      "obstacleAvoidance": "LiDAR（ClearView LiDAR）※カメラなし",
+      "recognizesPetWaste": false,
+      "liftLidar": false,
+      "stationDimensionsMm": { "w": 212, "d": 178, "h": 285 },
+      "sources": [
+        { "label": "アイロボット公式オンラインストア F155060 製品仕様", "url": "https://store.irobot-jp.com/item/F155060.html" },
+        { "label": "アイロボット プレスリリース 2026-02-19（Roomba Mini）", "url": "https://www.irobot-jp.com/press/pdf/20260219.pdf" }
+      ],
+      "note": "公式仕様: 24.5(奥行)×24.5(幅)×9.2(高さ)cm、本体約2kg、ステーション17.8(奥行)×21.2(幅)×28.5(高さ)cm/約2.03kg（公式カタログでは約2.1kg表記）。F155060は黒(KURO)、白はF155260、桜F155660・若葉F155460。2026年2月発売。カメラ非搭載。段差乗り越え高さは公式に数値記載なし。"
+    },
+    "roomba-mini-slim-slimcharge": {
+      "dimensionsMm": { "w": 245, "d": 245, "h": 92 },
+      "weightKg": 2.0,
+      "climbHeightMm": null,
+      "obstacleAvoidance": "LiDAR（ClearView LiDAR）※カメラなし",
+      "recognizesPetWaste": false,
+      "liftLidar": false,
+      "stationDimensionsMm": { "w": 222, "d": 86, "h": 123 },
+      "sources": [
+        { "label": "アイロボット公式オンラインストア F115260 製品仕様", "url": "https://store.irobot-jp.com/item/F115260.html" },
+        { "label": "アイロボット プレスリリース 2026-02-19（Roomba Mini）", "url": "https://www.irobot-jp.com/press/pdf/20260219.pdf" }
+      ],
+      "note": "公式仕様: 24.5(奥行)×24.5(幅)×9.2(高さ)cm、本体約2kg。SlimCharge充電スタンドは縦置き時8.6(奥行)×22.2(幅)×12.3(高さ)cm/約0.7kg（自動ゴミ収集なし）。F115260は白(SHIRO)、黒はF115060。2026年2月発売。カメラ非搭載。段差乗り越え高さは公式に数値記載なし。"
+    },
+    "roomba-plus-405-combo-autowash": {
+      "dimensionsMm": { "w": 351, "d": 357, "h": 106 },
+      "weightKg": 4.1,
+      "climbHeightMm": null,
+      "obstacleAvoidance": "LiDAR（ClearView LiDAR）※カメラなし",
+      "recognizesPetWaste": false,
+      "liftLidar": false,
+      "stationDimensionsMm": { "w": 315, "d": 450, "h": 472 },
+      "sources": [
+        { "label": "アイロボット公式オンラインストア G185060 製品仕様", "url": "https://store.irobot-jp.com/item/G185060.html" },
+        { "label": "アイロボット プレスリリース 2025-04-16（Roomba Plus 405/505 Combo）", "url": "https://www.irobot-jp.com/press/pdf/20250416_3.pdf" }
+      ],
+      "note": "公式仕様: 35.7(奥行)×35.1(幅)×10.6(高さ)cm、本体約4.1kg、ステーション45(奥行)×31.5(幅)×47.2(高さ)cm/約6.3kg。天面にLiDARの突起があるタイプで、公式の高さ10.6cmは全高と解釈（公式に「突起込み」の明記はなし）。カメラ非搭載。段差乗り越え高さは公式に数値記載なし。"
+    },
+    "roomba-plus-505-combo-autowash": {
+      "dimensionsMm": { "w": 351, "d": 357, "h": 106 },
+      "weightKg": 4.3,
+      "climbHeightMm": null,
+      "obstacleAvoidance": "AIカメラ（PrecisionVision AI）＋LiDAR（ClearView Pro LiDAR）＋LEDライト",
+      "recognizesPetWaste": true,
+      "liftLidar": false,
+      "stationDimensionsMm": { "w": 315, "d": 450, "h": 470 },
+      "sources": [
+        { "label": "アイロボット公式オンラインストア N185060 製品仕様", "url": "https://store.irobot-jp.com/item/N185060.html" },
+        { "label": "アイロボット プレスリリース 2025-04-16（Roomba Plus 405/505 Combo）", "url": "https://www.irobot-jp.com/press/pdf/20250416_3.pdf" },
+        { "label": "iRobot UK 公式 505 Combo（505CMASTER）", "url": "https://www.irobot.co.uk/en_GB/505-combo-series/505CMASTER.html" }
+      ],
+      "note": "指定の型番「505C」は海外向けコード。国内品番はN185060。公式仕様: 35.7(奥行)×35.1(幅)×10.6(高さ)cm、本体約4.3kg。ステーション幅は国内公式ストアでは31.5cm、UK公式・一部国内販売店では34.4cmと表記が割れている（ここでは国内公式ストアの45×31.5×47cmを採用）。ペットの排せつ物回避は「犬または猫の固形の糞のみ」と公式注記あり。段差乗り越え高さは公式に数値記載なし。"
+    },
+    "roomba-plus-575-combo-autowash": {
+      "dimensionsMm": { "w": 298, "d": 303, "h": 84 },
+      "weightKg": 3.1,
+      "climbHeightMm": 35,
+      "obstacleAvoidance": "AIカメラ（PrecisionVision AI）＋LiDAR（ClearView Pro LiDAR）",
+      "recognizesPetWaste": true,
+      "liftLidar": false,
+      "stationDimensionsMm": { "w": 330, "d": 340, "h": 485 },
+      "sources": [
+        { "label": "アイロボット公式オンラインストア R285060", "url": "https://store.irobot-jp.com/item/R285060.html" },
+        { "label": "Amazon.co.jp R285060（メーカー比較表・商品寸法）", "url": "https://www.amazon.co.jp/dp/B0GWDG6XPC" },
+        { "label": "価格.com R285060（本体寸法・質量）", "url": "https://kakaku.com/item/K0001798414/" },
+        { "label": "アイロボット プレスリリース 2026-09-04（Roomba Duo／Plus 575の段差3.5cm・高さ8.4cm）", "url": "https://www.irobot-jp.com/press/pdf/20260904.pdf" },
+        { "label": "iRobot US 公式 Plus 575 Combo", "url": "https://www.irobot.com/en_US/roomba-plus-575-combo/R285020.html" }
+      ],
+      "note": "指定の型番「RVD-Y6」は確認できず、国内品番はR285060（2026年5月発売のオンライン専用モデル。2025年ラインナップではない）。国内公式ストアのページには仕様表が無く、寸法30.3(奥行)×29.8(幅)×8.4(高さ)cm・ステーション34.0×33.0×48.5cmはAmazon掲載のメーカー比較表、重量3.1kgは価格.com。段差3.5cmは国内公式プレスリリース（自動昇降式前輪）とUS公式の35mmで一致。LiDARは本体内蔵（天面突起なし）。排せつ物認識は国内ページでは明記を確認できず、US公式の「PrecisionVision AI immediately recognizes cords, socks, even pet waste」に基づく。なおUS公式のRobot Dimensions(14.1×13.8×4.2in)・重量9.44lbは国内値と大きく食い違うため不採用。"
+    }
+  }
+}

@@ -1,4 +1,11 @@
 /* Shared prose typography: body text color + emphasis */
+
+/* 日本語は文節の切れ目で改行する（auto-phrase 非対応のブラウザは通常の改行のまま） */
+html:lang(ja) body {
+  word-break: auto-phrase;
+  text-wrap: pretty;
+}
+
 .prose,
 .prose p,
 .lede,
@@ -25,9 +32,29 @@
   color: #1e293b;
   font-weight: 500;
   line-break: strict;
-  word-break: normal;
+  word-break: auto-phrase;
   overflow-wrap: anywhere;
   text-wrap: pretty;
+}
+
+/* 濃い背景のヒーロー内のリード文は、ヒーローの文字色（白系）を引き継ぐ */
+.hero .lede {
+  color: inherit;
+}
+
+/* 見出し・リード文などの短い文は行の長さをそろえ、最後の行に1語だけ残さない */
+h1, h2, h3, h4, h5, h6,
+[class$="-title"],
+summary,
+.lede,
+.hero-lede,
+.sec-lead,
+.trouble-lead,
+th,
+dt,
+figcaption,
+button {
+  text-wrap: balance;
 }
 
 .em-key {

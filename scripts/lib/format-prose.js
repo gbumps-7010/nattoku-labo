@@ -228,7 +228,14 @@ const QUOTE_BENEFIT_HINTS = [
 
 ];
 
-const JA_NO_LINE_START = new Set("、。，．）］｝」』】〉》をにではがのともへやや");
+const JA_NO_LINE_START = new Set("、。，．）］｝」』】〉》");
+
+// 助詞は直前が漢字・カタカナ・英数字のときだけ前の語につなげる（「はっきり」の「は」などを誤ってつながない）
+const JA_PARTICLES = new Set("をにではがのともへや");
+
+function isHiragana(ch) {
+  return ch >= "\u3041" && ch <= "\u309f";
+}
 
 const JA_NO_LINE_END = new Set("（［｛「『【〈《");
 
@@ -274,7 +281,7 @@ function jaWrap(text) {
 
     const ch = text[i];
 
-    if (i > 0 && JA_NO_LINE_START.has(ch)) out += "\u2060";
+    if (i > 0 && (JA_NO_LINE_START.has(ch) || (JA_PARTICLES.has(ch) && !isHiragana(text[i - 1])))) out += "\u2060";
 
     out += ch;
 
@@ -282,7 +289,7 @@ function jaWrap(text) {
 
   }
 
-  return out;
+  return out.split("ナットクLabo").join("ナットク\u2060Labo");
 
 }
 

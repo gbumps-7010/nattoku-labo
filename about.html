@@ -18,8 +18,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="/products/css/navigation.css?v=20260818i">
-  <link rel="stylesheet" href="/products/css/prose.css?v=20260902d">
+    <link rel="stylesheet" href="/products/css/navigation.css?v=20261004b">
+  <link rel="stylesheet" href="/products/css/prose.css?v=20261004c">
     <style>
         * {
             margin: 0;
@@ -204,6 +204,10 @@
             font-weight: 900;
             margin-bottom: 1.5rem;
             text-align: center;
+        }
+
+        .title-line {
+            display: block;
         }
         
         .solution-description {
@@ -447,6 +451,20 @@
                 padding: 1.25rem 1rem 2.5rem;
             }
         }
+
+        @media (max-width: 640px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .solution-box {
+                padding: 1.75rem 1.25rem;
+            }
+
+            .solution-title {
+                font-size: 1.35rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -510,7 +528,7 @@
         
         <!-- Solution Section -->
         <div class="solution-box">
-            <div class="solution-title">もう失敗しない。ナットクLaboが提供する<br>「客観的データ」の力</div>
+            <div class="solution-title"><span class="title-line">もう失敗しない。ナットクLaboが提供する</span><span class="title-line">「客観的データ」の力</span></div>
             <div class="solution-description">
                 当サイトは、これらの感情的なノイズを徹底的に排除します。<br>
                 文章をそのまま転載・引用するのではなく、<strong>誰が使っても変わらない事実を統計的に抽出</strong>します。
@@ -628,9 +646,9 @@
             <p>&copy; 2026 もう失敗しない。ナットクLabo. All rights reserved.</p>
         </div>
     </footer>
-    <script src="/products/js/navigation.js?v=20261003a"></script>
-  <script src="/products/js/format-prose.js?v=20260902d"></script>
-  <script src="/products/js/prose-init.js?v=20260902d"></script>
+    <script src="/products/js/navigation.js?v=20261004a"></script>
+  <script src="/products/js/format-prose.js?v=20261004c"></script>
+  <script src="/products/js/prose-init.js?v=20261004c"></script>
 </body>
 </html>
 

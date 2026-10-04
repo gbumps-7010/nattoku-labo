@@ -11,11 +11,12 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts" / "lib"))
-from format_prose import format_prose  # noqa: E402
+from format_prose import format_prose, product_name_html  # noqa: E402
 DATA = ROOT / "products" / "data"
 OUT_DIR = ROOT / "makers"
-NAV_V = "20261003a"
-PROSE_V = "20260902d"
+NAV_V = "20261004b"
+PERKS_V = "20261004b"
+PROSE_V = "20261004c"
 SITE = "https://nattoku-labo.com"
 WF, WR = 0.85, 0.15
 
@@ -290,6 +291,7 @@ def load_manufacturer(mfr_id: str) -> list[dict]:
 
         row = {
             "id": d.get("productId") or path.stem,
+            "maker_id": mfr_id,
             "name": d.get("productName") or path.stem,
             "price": int(d["price"]),
             "reviews": int(d.get("totalReviews") or 0),
@@ -612,7 +614,7 @@ def article_pick(
     return f"""
       <article class="article-pick" id="{html.escape(anchor_id)}" data-slug="{html.escape(product['id'])}">
         <h3>{html.escape(heading)}</h3>
-        <div class="aff-mount" data-slug="{html.escape(product['id'])}">
+        <div class="aff-mount" data-slug="{html.escape(product['id'])}"{aff_mount_attrs(product)}>
           <p class="aff-status">かんたんリンクを読み込み中…</p>
         </div>
         <div class="article-copy">
@@ -634,6 +636,12 @@ def article_pick(
         </div>
       </article>"""
 
+
+
+def aff_mount_attrs(product: dict) -> str:
+    """公式ストア特典（official-perks.js）用のデータ属性。"""
+    maker = product.get("maker_id") or ""
+    return f' data-maker="{html.escape(maker)}"' if maker else ""
 
 
 AFFILIATE_JS = r"""
@@ -677,29 +685,28 @@ AFFILIATE_JS = r"""
       "max-width:240px!important;max-height:240px!important;" +
       "width:auto!important;height:auto!important;min-width:0!important;object-fit:contain!important}" +
       "div.easyLink-box div.easyLink-info{" +
-      "flex:1 1 0!important;min-width:0!important;display:flex!important;flex-wrap:wrap!important;flex-direction:row!important;align-content:flex-start!important;float:none!important}" +
-      "div.easyLink-box div.easyLink-info p.easyLink-name," +
-      "div.easyLink-box div.easyLink-info p.easyLink-company," +
-      "div.easyLink-box div.easyLink-info p.easyLink-price{" +
-      "flex:0 0 100%!important;width:100%!important;max-width:100%!important}" +
+      "flex:1 1 0!important;min-width:0!important;width:auto!important;display:block!important;float:none!important}" +
+      "div.easyLink-box div.easyLink-info p.easyLink-info-maker:empty," +
+      "div.easyLink-box div.easyLink-info p.easyLink-info-model:empty{display:none!important}" +
+      "div.easyLink-box div.easyLink-info p.easyLink-info-name{" +
+      "display:-webkit-box!important;-webkit-box-orient:vertical!important;-webkit-line-clamp:3!important;overflow:hidden!important;width:100%!important;max-width:100%!important;margin:0!important;white-space:normal!important;line-height:1.6!important}" +
       "div.easyLink-box div.easyLink-info p.easyLink-info-btn{" +
-      "flex:1 1 0!important;min-width:0!important;max-width:100%!important;margin:8px 6px 0 0!important;padding:0!important;float:none!important;clear:none!important;display:block!important}" +
-      "div.easyLink-box div.easyLink-info p.easyLink-info-btn:last-child{margin-right:0!important}" +
+      "position:relative!important;display:flex!important;flex-wrap:wrap!important;gap:8px!important;width:100%!important;max-width:100%!important;margin:14px 0 0!important;padding:0!important;float:none!important;clear:none!important}" +
+      "div.easyLink-box div.easyLink-info p.easyLink-info-btn img{position:absolute!important;width:1px!important;height:1px!important;margin:0!important}" +
       "div.easyLink-box div.easyLink-info p.easyLink-info-btn a{" +
-      "display:block!important;width:100%!important;max-width:100%!important;min-width:0!important;box-sizing:border-box!important;text-align:center!important;white-space:normal!important}" +
+      "display:flex!important;align-items:center!important;justify-content:center!important;flex:1 1 180px!important;width:auto!important;max-width:100%!important;min-width:0!important;height:auto!important;min-height:44px!important;margin:0!important;padding:6px 10px!important;line-height:1.35!important;box-sizing:border-box!important;text-align:center!important;white-space:normal!important}" +
       "@media screen and (max-width:480px){" +
       "div.easyLink-box{flex-direction:column!important;align-items:stretch!important}" +
       "div.easyLink-box div.easyLink-img," +
       "div.easyLink-box div.easyLink-img p.easyLink-img-box{" +
-      "width:min(220px,100%)!important;min-width:0!important;max-width:100%!important;" +
+      "width:min(160px,100%)!important;min-width:0!important;max-width:100%!important;" +
       "height:auto!important;aspect-ratio:1!important;flex-basis:auto!important;margin:0 auto!important}" +
       "div.easyLink-box div.easyLink-img p.easyLink-img-box span{width:100%!important;height:auto!important;aspect-ratio:1!important}" +
       "div.easyLink-box div.easyLink-img p.easyLink-img-box span>img," +
-      "div.easyLink-box img.js-item-image{max-width:100%!important;max-height:220px!important}" +
-      "div.easyLink-box div.easyLink-info{flex-direction:column!important;flex-wrap:nowrap!important}" +
-      "div.easyLink-box div.easyLink-info p.easyLink-info-btn{" +
-      "flex:0 0 100%!important;width:100%!important;min-width:100%!important;max-width:100%!important;margin:0 0 8px!important}" +
-      "div.easyLink-box div.easyLink-info p.easyLink-info-btn:last-child{margin-bottom:0!important}" +
+      "div.easyLink-box img.js-item-image{max-width:100%!important;max-height:160px!important}" +
+      "div.easyLink-box div.easyLink-info{width:100%!important}" +
+      "div.easyLink-box div.easyLink-info p.easyLink-info-btn{flex-direction:column!important}" +
+      "div.easyLink-box div.easyLink-info p.easyLink-info-btn a{flex:0 0 auto!important;width:100%!important}" +
       "}" +
       "</style></head><body>" +
       safe +
@@ -799,7 +806,15 @@ AFFILIATE_JS = r"""
     }
     if (hasDirect) {
       const btn = buildOfficialHpButton(pack.direct);
-      if (btn) el.appendChild(btn);
+      if (!btn) return;
+      const perksApi = window.NattokuOfficialPerks;
+      const maker = el.getAttribute("data-maker");
+      if (perksApi && perksApi.has(maker, slug)) {
+        btn.querySelector("a").textContent = "公式ストアで特典を確認する";
+        el.appendChild(perksApi.build({ maker: maker, productId: slug, button: btn, mode: "slim" }) || btn);
+      } else {
+        el.appendChild(btn);
+      }
     }
   }
 
@@ -838,7 +853,7 @@ def build_vertical_table(rows: list[dict]) -> str:
               <div class="product-head">
                 <a href="https://nattoku-labo.com/products/{html.escape(r['id'])}" target="_blank" rel="noopener">
                   {img}
-                  <div class="product-name">{html.escape(r['name'])}</div>
+                  <div class="product-name">{product_name_html(r['name'])}</div>
                 </a>
                 <div class="product-price">{yen(r['price'])}</div>
                 <a class="detail-page-link" href="https://nattoku-labo.com/products/{html.escape(r['id'])}" target="_blank" rel="noopener">詳細を見る →</a>
@@ -1280,7 +1295,7 @@ def build_manufacturer_page(meta: dict) -> Path:
     .crumb {{ font-size:.78rem; opacity:.85; margin-bottom:.55rem; }}
     h1 {{
       font-size:clamp(1.15rem,3.4vw,1.85rem); font-weight:900; line-height:1.4; margin-bottom:.55rem;
-      text-wrap:pretty; overflow-wrap:break-word;
+      text-wrap:balance; overflow-wrap:break-word;
     }}
     .lede {{ font-size:.95rem; opacity:.95; max-width:40rem; }}
 
@@ -1516,7 +1531,7 @@ def build_manufacturer_page(meta: dict) -> Path:
     }}
     .entry-body {{
       margin:0; font-size:.84rem; line-height:1.7; color:#1e293b; font-weight:500;
-      line-break:strict; word-break:normal; overflow-wrap:anywhere;
+      line-break:strict; word-break:auto-phrase; overflow-wrap:anywhere;
       text-wrap:pretty;
     }}
     .entry.warn .entry-body,
@@ -1709,6 +1724,7 @@ def build_manufacturer_page(meta: dict) -> Path:
   <script>
     window.__AFFILIATE__ = {aff_json};
   </script>
+  <script src="/products/js/official-perks.js?v={PERKS_V}"></script>
   <script>
 {AFFILIATE_JS}
   </script>

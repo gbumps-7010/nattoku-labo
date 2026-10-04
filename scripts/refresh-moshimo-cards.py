@@ -163,18 +163,22 @@ def fetch_api(code: str, app_id: str, access_key: str) -> tuple[str, dict | None
     return "error", None
 
 
-def parse_api_item(item: dict, obj: dict) -> dict:
-    """APIの商品情報をカードの形に合わせる。画像はカードの d + c_p に続くパスだけを使う。"""
-    prefix = (obj.get("d") or "") + (obj.get("c_p") or "") + "/"
+def fit_images(urls: list[str], obj: dict) -> list[str]:
+    """画像の完全なURLを、bundle.js が d + c_p + p で組み立てる p の形にする。d + c_p の下にない画像は使わない。"""
+    prefix = (obj.get("d") or "") + (obj.get("c_p") or "")
     images = []
-    for im in item.get("mediumImageUrls") or []:
-        url = (im.get("imageUrl") if isinstance(im, dict) else im) or ""
+    for url in urls:
         url = url.split("?", 1)[0]
-        if obj.get("c_p") and url.startswith(prefix):
-            images.append(url[len(prefix) - 1:])
+        if prefix and url.startswith(prefix + "/"):
+            images.append(url[len(prefix):])
+    return images[:MAX_IMAGES]
+
+
+def parse_api_item(item: dict, obj: dict) -> dict:
+    urls = [(im.get("imageUrl") if isinstance(im, dict) else im) or "" for im in item.get("mediumImageUrls") or []]
     return {
         "name": strip_promos(item.get("itemName") or ""),
-        "images": images[:MAX_IMAGES],
+        "images": fit_images(urls, obj),
         "inStock": item.get("availability") == 1,
     }
 
@@ -279,6 +283,10 @@ def main() -> int:
             else:
                 status, page = fetch(main["u"])
                 item = parse_item_page(page) if page else None
+                if item:
+                    shop = (item_code(main["u"]) or ":").split(":")[0]
+                    cabinet = f"{obj.get('d') or ''}/@0_mall/{shop}/cabinet"
+                    item["images"] = fit_images([cabinet + loc for loc in item["images"]], obj)
                 time.sleep(1.5)
                 if item is None and status not in (404, 410):
                     warnings.append(f"{path.stem}: 楽天の商品ページを取得できませんでした（今回は変更なし）: {main['u']}")

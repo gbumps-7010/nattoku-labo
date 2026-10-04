@@ -99,6 +99,7 @@ function addHtmlDir(dirName, urlPrefix, changefreq, priority) {
 addHtmlDir("makers", "/makers", "weekly", "0.85");
 addHtmlDir("compare", "/compare", "weekly", "0.85");
 addHtmlDir("rankings", "/rankings", "weekly", "0.85");
+addHtmlDir("guides", "/guides", "weekly", "0.85");
 
 // 製品ページ（HP掲載=TRUE かつ口コミありのものだけ）
 const productsDir = path.join(ROOT, "products");

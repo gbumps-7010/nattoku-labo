@@ -1,0 +1,139 @@
+{
+  "maker": "Anker",
+  "checkedAt": "2026-10-03",
+  "products": {
+    "eufy-clean-x8-pro-with-self-empty-station": {
+      "dimensionsMm": { "w": 350, "d": 353, "h": 100 },
+      "weightKg": 4.0,
+      "climbHeightMm": 19,
+      "obstacleAvoidance": "なし（AIカメラ非搭載・iPathレーザーナビ＋衝突防止センサー）",
+      "recognizesPetWaste": false,
+      "liftLidar": false,
+      "stationDimensionsMm": { "w": 195, "d": 155, "h": 384 },
+      "sources": [
+        { "label": "Anker Japan公式 製品ページ T2276", "url": "https://www.ankerjapan.com/products/t2276" },
+        { "label": "Anker Japan公式 X10 Pro Omni LP（比較表：X8 Pro SESの障害物回避性能「-」）", "url": "https://www.ankerjapan.com/pages/eufy-x10-pro" }
+      ],
+      "note": "公式表記「約35.0 x 35.3 x 10.0cm」。LiDAR昇降（格納）機能の公式記載なし。公式比較表で障害物回避AIカメラは「-」。段差は公式「19mmまで」。"
+    },
+    "eufy-robot-vacuum-auto-empty-c10": {
+      "dimensionsMm": { "w": 325, "d": 323, "h": 72 },
+      "weightKg": 2.5,
+      "climbHeightMm": 17,
+      "obstacleAvoidance": "なし（AIカメラ非搭載・iPathレーザーナビ）",
+      "recognizesPetWaste": false,
+      "liftLidar": false,
+      "stationDimensionsMm": { "w": 275, "d": 191, "h": 212 },
+      "sources": [
+        { "label": "Anker Japan公式 製品ページ T2292", "url": "https://www.ankerjapan.com/products/t2292" },
+        { "label": "Anker Japan公式 X10 Pro Omni LP（比較表：Auto-Empty C10の障害物回避性能「-」）", "url": "https://www.ankerjapan.com/pages/eufy-x10-pro" }
+      ],
+      "note": "公式表記「約32.5 x 32.3 x 7.2cm」、「約7.2cmの薄型ボディ」とレーザーナビ搭載ながら突起の少ない薄型。段差は公式「高さ約17mmまで」。"
+    },
+    "eufy-robot-vacuum-omni-c28": {
+      "dimensionsMm": { "w": 327, "d": 350, "h": 111 },
+      "weightKg": 5.1,
+      "climbHeightMm": 20,
+      "obstacleAvoidance": "レーザーセンサー（前視センサー）による障害物回避（AIカメラなし）",
+      "recognizesPetWaste": false,
+      "liftLidar": false,
+      "stationDimensionsMm": { "w": 353, "d": 437, "h": 430 },
+      "sources": [
+        { "label": "Anker Japan公式 製品ページ T211A", "url": "https://www.ankerjapan.com/products/t211a" },
+        { "label": "Anker Japan公式 取扱説明書 T211A（PDF）", "url": "https://lp.ankerjapan.com/hubfs/aoos/manual/T211AManual.pdf" },
+        { "label": "Anker Japan公式 FAQ Omni C28", "url": "https://www.ankerjapan.com/blogs/faq/eufy-robot-vacuum-omni-c28" },
+        { "label": "Anker Japan公式 ロボット掃除機ラインナップ", "url": "https://www.ankerjapan.com/pages/eufy-robotcleaner-lineup" }
+      ],
+      "note": "本体重量は製品ページ「約5.1kg」、取扱説明書の仕様は「約4.9kg」で不一致（製品ページ値を採用）。段差は説明書「20mm未満の高さの物体を乗り越えることができます」、FAQ「2cmを超える段差は基本的に乗り越えられない」。障害物回避は「高精度なレーザーセンサーにより、おもちゃや靴下などの物体を検知し回避」でカメラ/AI認識の記載なし。高さ12cm未満の場所には進入しない仕様と公式注記あり。"
+    },
+    "eufy-robot-vacuum-omni-e25": {
+      "dimensionsMm": { "w": 327, "d": 346, "h": 111 },
+      "weightKg": 5.2,
+      "climbHeightMm": 21,
+      "obstacleAvoidance": "AIカメラ（AI.See：200種類以上の障害物を認識）＋LEDライト",
+      "recognizesPetWaste": null,
+      "liftLidar": false,
+      "stationDimensionsMm": { "w": 370, "d": 462, "h": 437 },
+      "sources": [
+        { "label": "Anker Japan公式 製品ページ T2353", "url": "https://www.ankerjapan.com/products/t2353" },
+        { "label": "Anker Japan公式 Omni E25 LP", "url": "https://www.ankerjapan.com/pages/eufy-e25" },
+        { "label": "Anker Japan公式 取扱説明書 T2353（PDF）", "url": "https://lp.ankerjapan.com/hubfs/aoos/manual/T2353Manual.pdf" },
+        { "label": "Anker Japan公式 FAQ Omni E25", "url": "https://www.ankerjapan.com/blogs/faq/eufy-robot-vacuum-omni-e25" }
+      ],
+      "note": "公式型番はT2353（T2353511/T2353521）。依頼リストのT23535は誤記の可能性。段差は説明書「21mm以下」、FAQ「21mmを超える段差は基本的に乗り越えられない」。AI.Seeの認識対象にペットの排泄物を明記した日本公式記載は見つからず（null）。"
+    },
+    "eufy-robot-vacuum-omni-s1-pro": {
+      "dimensionsMm": { "w": 325, "d": 347, "h": 96 },
+      "weightKg": 4.8,
+      "climbHeightMm": 20,
+      "obstacleAvoidance": "3D MatrixEye（赤外線照射＋デュアルカメラによる3D認識）",
+      "recognizesPetWaste": null,
+      "liftLidar": false,
+      "stationDimensionsMm": { "w": 383, "d": 467, "h": 670 },
+      "sources": [
+        { "label": "Anker Japan公式 製品ページ T2080", "url": "https://www.ankerjapan.com/products/t2080" },
+        { "label": "Anker Japan公式 Omni S1 Pro LP", "url": "https://www.ankerjapan.com/pages/eufy-s1-pro" }
+      ],
+      "note": "dToF LiDAR内蔵で「上部に突起がない」デザイン、高さ約9.6cm（昇降式ではない）。段差は公式「20mmまで」。ペットの排泄物を認識・回避する旨の日本公式記載は見つからず（null）。"
+    },
+    "eufy-robot-vacuum-omni-s2": {
+      "dimensionsMm": { "w": 326, "d": 358, "h": 98 },
+      "weightKg": 5.2,
+      "climbHeightMm": 35,
+      "obstacleAvoidance": "3D MatrixEye 2.0＋CleanMind AIシステム（3D視覚・AI認識）",
+      "recognizesPetWaste": null,
+      "liftLidar": false,
+      "stationDimensionsMm": { "w": 387, "d": 476, "h": 670 },
+      "sources": [
+        { "label": "Anker Japan公式 製品ページ T2081", "url": "https://www.ankerjapan.com/products/t2081" },
+        { "label": "Anker Japan公式 Omni S2 LP", "url": "https://www.ankerjapan.com/pages/eufy-s2" },
+        { "label": "Anker Japan公式 FAQ Omni S2", "url": "https://www.ankerjapan.com/blogs/faq/eufy-robot-vacuum-omni-s2" },
+        { "label": "アンカー・ジャパン プレスリリース（PR TIMES）", "url": "https://prtimes.jp/main/html/rd/p/000000647.000016775.html" }
+      ],
+      "note": "高さ約9.8cmの「突起のないフラットなデザイン」（昇降式LiDARではない）。段差は1段最大35mm、2段の連続段差は最大42mm（本体を自動で持ち上げて乗り越え）。約9.3cm以下の家具下は感度センサーにより進入できない場合ありと公式注記。ペットの排泄物を認識・回避する旨の日本公式記載は見つからず（null）。"
+    },
+    "eufy-robovac-g10-hybrid": {
+      "dimensionsMm": { "w": 325, "d": 325, "h": 72 },
+      "weightKg": 2.5,
+      "climbHeightMm": 16,
+      "obstacleAvoidance": "なし（バンパー＋衝突防止・落下防止センサーのみ、ジャイロナビ）",
+      "recognizesPetWaste": false,
+      "liftLidar": false,
+      "stationDimensionsMm": null,
+      "sources": [
+        { "label": "Anker Japan公式 製品ページ T2150", "url": "https://www.ankerjapan.com/products/t2150" },
+        { "label": "Anker Japan公式 取扱説明書 T2150（PDF）", "url": "https://lp.ankerjapan.com/hubfs/aoos/manual/T2150Manual.pdf" }
+      ],
+      "note": "公式表記「直径約32.5cm x 高さ約7.2cm」（円形のためw=dとして直径を記録）。本文では「約7cmの薄型設計」とも記載。段差は説明書「およそ16mm未満の高さの物体を乗り越えることができます」。充電ステーションの寸法は公式に見つからず。"
+    },
+    "eufy-robovac-g30-hybrid": {
+      "dimensionsMm": { "w": 325, "d": 325, "h": 72 },
+      "weightKg": 2.9,
+      "climbHeightMm": 16,
+      "obstacleAvoidance": "なし（AIカメラ非搭載・ジャイロ＋Pathトラッキングセンサーのナビ）",
+      "recognizesPetWaste": false,
+      "liftLidar": false,
+      "stationDimensionsMm": null,
+      "sources": [
+        { "label": "Anker Japan公式 製品ページ T2253", "url": "https://www.ankerjapan.com/products/t2253" },
+        { "label": "Anker Japan公式 取扱説明書 T2253（PDF）", "url": "https://f.hubspotusercontent20.net/hubfs/5012528/aoos/manual/T2253Manual.pdf" },
+        { "label": "Anker Japan公式 X10 Pro Omni LP（比較表：G30 Hybridの障害物回避性能「-」）", "url": "https://www.ankerjapan.com/pages/eufy-x10-pro" }
+      ],
+      "note": "公式表記「直径約32.5cm x 高さ約7.2cm」（円形のためw=dとして直径を記録）。本文では「厚さ約7cm」とも記載。段差は説明書「16mm未満の高さの物体を乗り越えることができます」。充電ステーションの寸法は公式に見つからず。"
+    },
+    "eufy-x10-pro-omni": {
+      "dimensionsMm": { "w": 353, "d": 327, "h": 114 },
+      "weightKg": 4.6,
+      "climbHeightMm": 20,
+      "obstacleAvoidance": "AIカメラ（AI.See：100以上の物体を認識）＋LEDセンサー",
+      "recognizesPetWaste": null,
+      "liftLidar": false,
+      "stationDimensionsMm": { "w": 366, "d": 480, "h": 460 },
+      "sources": [
+        { "label": "Anker Japan公式 製品ページ T2351", "url": "https://www.ankerjapan.com/products/t2351" },
+        { "label": "Anker Japan公式 X10 Pro Omni LP", "url": "https://www.ankerjapan.com/pages/eufy-x10-pro" }
+      ],
+      "note": "公式表記「約35.3 x 32.7 x 11.4cm」（表記順のままw/dに記録）。LiDAR昇降（格納）機能の公式記載なし。段差は公式「20mmまで」。AI.Seeの認識対象にペットの排泄物を明記した日本公式記載は見つからず（null）。"
+    }
+  }
+}

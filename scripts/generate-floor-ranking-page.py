@@ -13,8 +13,9 @@ sys.path.insert(0, str(ROOT / "scripts" / "lib"))
 from format_prose import format_prose  # noqa: E402
 DATA_DIR = ROOT / "products" / "data"
 OUT_DIR = ROOT / "rankings"
-NAV_V = "20261003a"
-PROSE_V = "20260902d"
+NAV_V = "20261004b"
+PERKS_V = "20261004b"
+PROSE_V = "20261004c"
 WF, WR = 0.85, 0.15
 UPDATED = date.today().isoformat()
 
@@ -748,11 +749,13 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
   font-size: 0.95rem;
   line-height: 1.4;
   padding: 0.85rem 1rem;
-  border-radius: 12px;
-  background: linear-gradient(145deg, #0e7490 0%, #0d9488 42%, #059669 100%);
-  box-shadow: 0 6px 16px rgba(13, 148, 136, 0.28);
+  border-radius: 10px;
+  background: #0f766e;
+  border: 1px solid #0d9488;
+  box-shadow: 0 1px 4px rgba(13, 148, 136, 0.18);
 }
-.aff-card-direct .official-hp-btn:hover { filter: brightness(1.05); }
+.aff-card-direct .official-hp-btn:hover { background: #0d9488; }
+.aff-card-body > .op-slim { margin: 0 0 0.75rem; }
 .aff-card-moshimo { width: 100%; min-width: 0; }
 .aff-card-moshimo iframe {
   width: 100%;
@@ -969,19 +972,36 @@ AFFILIATE_JS = r"""
       resize();
       const id = window.setInterval(resize, 400);
       window.setTimeout(function () { window.clearInterval(id); }, 10000);
+      try {
+        const win = iframe.contentWindow;
+        if (win && win.ResizeObserver && iframe.contentDocument.body) {
+          new win.ResizeObserver(resize).observe(iframe.contentDocument.body);
+        }
+      } catch (e) {}
     });
     container.appendChild(iframe);
   }
 
+  function extractOfficialHref(directHtml) {
+    const s = String(directHtml);
+    const hrefM = s.match(/href=["']([^"']+)["']/i);
+    if (hrefM) return hrefM[1].indexOf("//") === 0 ? "https:" + hrefM[1] : hrefM[1];
+    const a8 = s.match(/"ejp"\s*:\s*"([^"]*)"\s*\+\s*"([^"]*)"/i);
+    if (a8) return a8[1] + a8[2];
+    const a8b = s.match(/"h"\s*\+\s*"(ttps:\/\/[^"]+)"/i);
+    if (a8b) return "h" + a8b[1];
+    return null;
+  }
+
   function buildOfficialHpButton(directHtml) {
     if (!directHtml) return null;
-    const hrefM = String(directHtml).match(/href=["']([^"']+)["']/i);
-    if (!hrefM) return null;
+    const href = extractOfficialHref(directHtml);
+    if (!href) return null;
     const wrap = document.createElement("div");
     wrap.className = "aff-card-direct";
     const a = document.createElement("a");
     a.className = "official-hp-btn";
-    a.href = hrefM[1];
+    a.href = href;
     a.target = "_blank";
     a.rel = "noopener sponsored nofollow";
     a.textContent = "公式ホームページ";
@@ -1026,7 +1046,13 @@ AFFILIATE_JS = r"""
       if (hasDirect) {
         const btn = buildOfficialHpButton(aff.direct);
         if (btn) {
-          body.appendChild(btn);
+          const perksApi = window.NattokuOfficialPerks;
+          if (perksApi && perksApi.has(data.manufacturer, slug)) {
+            btn.querySelector("a").textContent = "公式ストアで特典を確認する";
+            body.appendChild(perksApi.build({ maker: data.manufacturer, productId: slug, button: btn, mode: "slim" }) || btn);
+          } else {
+            body.appendChild(btn);
+          }
         } else {
           const directSlot = document.createElement("div");
           directSlot.className = "aff-card-direct";
@@ -1262,6 +1288,7 @@ def write_ranking_page(cfg: dict, products: list[dict]) -> Path:
   </footer>
   <script src="/products/js/navigation.js?v={NAV_V}"></script>
   <script>{JS}</script>
+  <script src="/products/js/official-perks.js?v={PERKS_V}"></script>
   <script>{AFFILIATE_JS}</script>
 </body>
 </html>

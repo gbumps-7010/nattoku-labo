@@ -1,0 +1,228 @@
+{
+  "maker": "Roborock",
+  "checkedAt": "2026-10-03",
+  "products": {
+    "q10p": {
+      "dimensionsMm": {
+        "w": 353,
+        "d": 353,
+        "h": 99
+      },
+      "weightKg": 4.0,
+      "climbHeightMm": null,
+      "obstacleAvoidance": "障害物回避センサー（距離測定式・幅5cm×高さ3.5cm以上の物体を回避）＋LDSレーザー",
+      "recognizesPetWaste": false,
+      "liftLidar": false,
+      "stationDimensionsMm": {
+        "w": 212,
+        "d": 178,
+        "h": 258.5
+      },
+      "sources": [
+        {
+          "label": "Roborock公式 Q10P+ 製品ページ",
+          "url": "https://jp.roborock.com/pages/roborock-q10p"
+        },
+        {
+          "label": "Roborock公式 Q10P+ 取扱説明書PDF（基本仕様）",
+          "url": "https://jp.roborock.com/cdn/shop/t/7/assets/manual_q10pplus.pdf?v=161913463032108283741758193391"
+        },
+        {
+          "label": "トレテク！ソフトバンクセレクション Q10P+ 製品仕様",
+          "url": "https://shop.softbankselection.jp/item/6936905902108.html"
+        }
+      ],
+      "note": "取説の基本仕様は「幅353×奥行353×高さ99mm、約4kg」。ドック高さは取説258.5mm／製品ページ258.9mm／ソフトバンク25.85cmと表記揺れあり（取説値を採用）。公式は「床にある物体との距離を測定」して回避と説明しており、カメラ／AI物体認識の記載はないため、ペット排泄物の認識はfalseとした。段差乗り越え高さは公式に記載なし（レビューサイトでは2cmとの記載あり・未採用）。"
+    },
+    "q10v": {
+      "dimensionsMm": {
+        "w": 353,
+        "d": 353,
+        "h": 99
+      },
+      "weightKg": 4.0,
+      "climbHeightMm": null,
+      "obstacleAvoidance": "Reactive Tech障害物回避センサー（幅5cm×高さ3cm以上の物体を回避）＋LDSレーザー",
+      "recognizesPetWaste": false,
+      "liftLidar": false,
+      "stationDimensionsMm": {
+        "w": 160,
+        "d": 70,
+        "h": 101
+      },
+      "sources": [
+        {
+          "label": "Roborock公式 Q10V+/Q10V 製品ページ",
+          "url": "https://jp.roborock.com/pages/roborock-q10v"
+        },
+        {
+          "label": "Roborock公式 Q10V 取扱説明書PDF（基本仕様）",
+          "url": "https://jp.roborock.com/cdn/shop/t/7/assets/manual_q10v.pdf?v=111174812800938649061758193391"
+        }
+      ],
+      "note": "取説の型番はQ10V52-04（黒）。Q10Vはゴミ収集ドックなしで、stationDimensionsMmは取説記載の充電ドック（幅160×奥行70×高さ101mm）。公式にカメラ／AI物体認識の記載はないため、ペット排泄物の認識はfalseとした。段差乗り越え高さは公式に記載なし。"
+    },
+    "q10v-plus": {
+      "dimensionsMm": {
+        "w": 353,
+        "d": 353,
+        "h": 99
+      },
+      "weightKg": 4.0,
+      "climbHeightMm": null,
+      "obstacleAvoidance": "Reactive Tech障害物回避センサー（幅5cm×高さ3cm以上の物体を回避）＋LDSレーザー",
+      "recognizesPetWaste": false,
+      "liftLidar": false,
+      "stationDimensionsMm": {
+        "w": 212,
+        "d": 178,
+        "h": 258.5
+      },
+      "sources": [
+        {
+          "label": "Roborock公式 Q10V+/Q10V 製品ページ",
+          "url": "https://jp.roborock.com/pages/roborock-q10v"
+        },
+        {
+          "label": "Roborock公式 Q10V+ 取扱説明書PDF（基本仕様）",
+          "url": "https://jp.roborock.com/cdn/shop/t/7/assets/manual_q10vplus.pdf?v=177992984883944419571758193391"
+        },
+        {
+          "label": "価格.com Q10V+ Q10VP52-04 スペック",
+          "url": "https://kakaku.com/item/K0001763379/"
+        }
+      ],
+      "note": "正式型番はQ10VP52-04（黒）。ゴミ収集ドックの高さは取説258.5mm／製品ページ259mm（取説値を採用）、ドック重量約2.16kg。公式にカメラ／AI物体認識の記載はないため、ペット排泄物の認識はfalseとした。段差乗り越え高さは公式に記載なし。"
+    },
+    "qrevo-curv-2-flow": {
+      "dimensionsMm": {
+        "w": 353,
+        "d": 353,
+        "h": 119
+      },
+      "weightKg": 5.3,
+      "climbHeightMm": 20,
+      "obstacleAvoidance": "Reactive AI（ストラクチャードライト＋RGBカメラ、200種類以上を認識）＋PreciSense LiDAR",
+      "recognizesPetWaste": true,
+      "liftLidar": false,
+      "stationDimensionsMm": {
+        "w": 450,
+        "d": 450,
+        "h": 450
+      },
+      "sources": [
+        {
+          "label": "Roborock公式 Qrevo Curv 2 Flow 製品ページ（仕様詳細）",
+          "url": "https://jp.roborock.com/pages/roborock-qrevo-curv-2-flow"
+        },
+        {
+          "label": "Roborock公式プレスリリース（PR TIMES 2026-04-28）",
+          "url": "https://prtimes.jp/main/html/rd/p/000000109.000085581.html"
+        },
+        {
+          "label": "Amazon.co.jp 公式販売ページ（メーカー記載の仕様：重量・段差）",
+          "url": "https://www.amazon.co.jp/dp/B0GXB2RZ9Y"
+        },
+        {
+          "label": "価格.com Qrevo Curv 2 Flow QC2F02-04 スペック",
+          "url": "https://kakaku.com/item/K0001801119/"
+        }
+      ],
+      "note": "Amazon限定モデル（型番QC2F02-04）。本体重量約5.3kg・ドック重量約9.1kg・段差乗り越え20mmはAmazon商品ページのメーカー記載仕様から。プレスリリースに「ケーブルやスリッパ、ペットの排泄物などの200種類以上の障害物を認識・回避」と明記。ドック寸法450×450×450mmは公式製品ページ・Amazonの表記どおり（一部レビューサイトの41.5×51.5×52.0cmとは不一致）。"
+    },
+    "qrevo-l": {
+      "dimensionsMm": {
+        "w": 350,
+        "d": 353.8,
+        "h": 96.6
+      },
+      "weightKg": 3.71,
+      "climbHeightMm": null,
+      "obstacleAvoidance": "ストラクチャードライト（幅5cm×高さ3cm以上の物体を回避）＋LDSレーザー",
+      "recognizesPetWaste": false,
+      "liftLidar": false,
+      "stationDimensionsMm": {
+        "w": 340,
+        "d": 486.5,
+        "h": 521.6
+      },
+      "sources": [
+        {
+          "label": "Roborock公式 Qrevo L 製品ページ",
+          "url": "https://jp.roborock.com/pages/roborock-qrevo-l"
+        },
+        {
+          "label": "Roborock公式 Qrevo L 取扱説明書PDF（基本仕様）",
+          "url": "https://jp.roborock.com/cdn/shop/t/7/assets/manual_qrevol.pdf?v=116939356397231485221758193389"
+        },
+        {
+          "label": "トレテク！ソフトバンクセレクション Qrevo L 製品仕様",
+          "url": "https://shop.softbankselection.jp/item/6936905903426.html"
+        }
+      ],
+      "note": "幅・奥行は取説「幅350×奥行353.8」と製品ページ「幅353.8×奥行350」で逆転表記（取説値を採用、高さ96.6mmは共通）。ドック重量約7.35kg。カメラ非搭載（ストラクチャードライトのみ）のため、ペット排泄物の認識はfalse。段差乗り越え高さは公式に記載なし（レビューサイトでは2cmとの記載あり・未採用）。"
+    },
+    "saros-20": {
+      "dimensionsMm": {
+        "w": 350,
+        "d": 353,
+        "h": 79.8
+      },
+      "weightKg": 5.05,
+      "climbHeightMm": 88,
+      "obstacleAvoidance": "StarSight自律システム2.0（3Dストラクチャードライト＋RGBカメラ、VertiBeam側面ストラクチャードライト、300種類以上を認識）",
+      "recognizesPetWaste": null,
+      "liftLidar": false,
+      "stationDimensionsMm": {
+        "w": 381,
+        "d": 475,
+        "h": 488
+      },
+      "sources": [
+        {
+          "label": "Roborock公式 Saros 20 製品ページ（主な仕様）",
+          "url": "https://jp.roborock.com/pages/roborock-saros-20"
+        },
+        {
+          "label": "Roborock公式プレスリリース（PR TIMES 2026-05-18）",
+          "url": "https://prtimes.jp/main/html/rd/p/000000111.000085581.html"
+        },
+        {
+          "label": "トレテク！ソフトバンクセレクション Saros 20 製品仕様",
+          "url": "https://shop.softbankselection.jp/item/6936905906625.html"
+        }
+      ],
+      "note": "日本版はLiDARタワーなし（3Dセンサー方式のStarSight 2.0）で、昇降式LiDARの記載もないため liftLidar=false、本体高さ7.98cm。公式製品ページは「353 x 350 x 79.8 mm・5.05kg」、ソフトバンク仕様表は「幅350×奥行353×高さ79.8mm・約5.1kg」（幅/奥行は後者の明示表記を採用）。段差は二層合計最大8.8cm（1段目4.5cm＋2段目4.3cm）で、climbHeightMmは二層合計値。単段のみの最大値は公式に明記なし。型番は公式販売店表記でS2052-04（依頼のS20S52-04とは表記が異なる）。ペット本体の認識・回避、猫砂の汚れ検知は明記されているが、ペット排泄物の認識は公式に明記なし。",
+      "climbTwoStep": true
+    },
+    "saros-10r": {
+      "dimensionsMm": {
+        "w": 350,
+        "d": 353,
+        "h": 79.8
+      },
+      "weightKg": 4.1,
+      "climbHeightMm": 40,
+      "obstacleAvoidance": "StarSight自律システム2.0（3D ToF＋RGBカメラ、108種類を認識）",
+      "recognizesPetWaste": null,
+      "liftLidar": false,
+      "stationDimensionsMm": {
+        "w": 381,
+        "d": 475,
+        "h": 488
+      },
+      "sources": [
+        {
+          "label": "Roborock公式 Saros 10R 製品ページ",
+          "url": "https://jp.roborock.com/pages/roborock-saros-10r"
+        },
+        {
+          "label": "Roborock公式プレスリリース（PR TIMES）",
+          "url": "https://prtimes.jp/main/html/rd/p/000000078.000085581.html"
+        }
+      ],
+      "note": "段差は公式「二層の敷居は最大4cm、一層の敷居は最大3cm」で、climbHeightMmは二層値。公式の障害物認識例は小さな物体・ケーブル類・ペット等で、ペット排泄物の認識は公式に明記なし（レビューサイトでは排泄物も回避との記述あり・未採用）。",
+      "climbTwoStep": true
+    }
+  }
+}

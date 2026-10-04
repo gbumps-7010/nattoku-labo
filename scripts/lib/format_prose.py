@@ -6,7 +6,10 @@ import html
 
 import re
 
-_JA_NO_LINE_START = set("、。，．）］｝」』】〉》をにではがのともへやや")
+_JA_NO_LINE_START = set("、。，．）］｝」』】〉》")
+
+# 助詞は直前が漢字・カタカナ・英数字のときだけ前の語につなげる（「はっきり」の「は」などを誤ってつながない）
+_JA_PARTICLES = set("をにではがのともへや")
 
 _JA_NO_LINE_END = set("（［｛「『【〈《")
 
@@ -292,7 +295,10 @@ def ja_wrap(text: str) -> str:
 
     for i, ch in enumerate(text):
 
-        if i > 0 and ch in _JA_NO_LINE_START:
+        if i > 0 and (
+            ch in _JA_NO_LINE_START
+            or (ch in _JA_PARTICLES and not "\u3041" <= text[i - 1] <= "\u309f")
+        ):
 
             out.append("\u2060")
 
@@ -302,7 +308,14 @@ def ja_wrap(text: str) -> str:
 
             out.append("\u2060")
 
-    return "".join(out)
+    return "".join(out).replace("ナットクLabo", "ナットク\u2060Labo")
+
+_NAME_BREAK_RE = re.compile(r"(?<=[ァ-ヶー])(?=[一-龯々])|(?<=[一-龯々])(?=[ァ-ヶ])")
+
+
+def product_name_html(name: str) -> str:
+    """製品名をエスケープし、カタカナと漢字の境目に改行候補(<wbr>)を入れる。"""
+    return _NAME_BREAK_RE.sub("<wbr>", html.escape(name))
 
 def _has_mark(text: str) -> bool:
 

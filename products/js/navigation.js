@@ -120,6 +120,19 @@ const MAKER_COMPARE_PAGES = [
     { label: 'スイッチボット（SwitchBot）', href: '/makers/switchbot' },
 ];
 
+// 目的別の選び方ガイド
+const GUIDE_PAGES = [
+    { label: 'ガイド一覧', href: '/guides/' },
+    { label: '薄型', href: '/guides/robot-vacuum-thin' },
+    { label: '高さ一覧', href: '/guides/robot-vacuum-height' },
+    { label: '小さい', href: '/guides/robot-vacuum-small' },
+    { label: '安い', href: '/guides/robot-vacuum-cheap' },
+    { label: 'コスパ', href: '/guides/robot-vacuum-cost-performance' },
+    { label: '猫がいる家', href: '/guides/robot-vacuum-cat' },
+    { label: 'ペットがいる家', href: '/guides/robot-vacuum-pet' },
+    { label: 'おすすめメーカー', href: '/guides/robot-vacuum-makers' },
+];
+
 function isMakerCompareActive(href) {
     const path = String(window.location.pathname || '').replace(/\\/g, '/').replace(/\/+$/, '') || '/';
     const target = String(href || '').replace(/\/+$/, '') || '/';
@@ -176,6 +189,10 @@ function createNavigationBar() {
             </div>
 
             <div class="nav-quick-links" aria-label="主要メニュー">
+                <a href="/#nayami" class="nav-quick-link nav-quick-link-trouble">
+                    <i class="fas fa-lightbulb"></i>
+                    <span>お悩みから探す</span>
+                </a>
                 <a href="/rankings/" class="nav-quick-link">
                     <i class="fas fa-trophy"></i>
                     <span>ランキング</span>
@@ -199,6 +216,10 @@ function createNavigationBar() {
             <div class="nav-menu" id="nav-menu-panel">
                 <a href="/" class="nav-link nav-link-home">
                     <i class="fas fa-home"></i> ホーム
+                </a>
+
+                <a href="/#nayami" class="nav-link">
+                    <i class="fas fa-lightbulb"></i> お悩みから探す
                 </a>
                 
                 <div class="nav-dropdown">
@@ -677,6 +698,9 @@ function shouldShowSiteFilterBar() {
     if (path === '/rankings' || path.startsWith('/rankings/')) {
         return true;
     }
+    if (path === '/guides' || path.startsWith('/guides/')) {
+        return true;
+    }
     return false;
 }
 
@@ -790,6 +814,7 @@ function createSiteExploreSection() {
                         <a class="site-explore-chip site-explore-chip-primary" href="/rankings/"><i class="fas fa-trophy" aria-hidden="true"></i>ランキング</a>
                         <a class="site-explore-chip site-explore-chip-primary" href="/compare/"><i class="fas fa-table" aria-hidden="true"></i>徹底比較ハブ</a>
                         <a class="site-explore-chip site-explore-chip-primary" href="/makers/"><i class="fas fa-industry" aria-hidden="true"></i>メーカー別全機種比較</a>
+                        <a class="site-explore-chip site-explore-chip-primary" href="/guides/"><i class="fas fa-book-open" aria-hidden="true"></i>選び方ガイド</a>
                         <a class="site-explore-chip" href="/about"><i class="fas fa-info-circle" aria-hidden="true"></i>サイトについて</a>
                         <a class="site-explore-chip" href="/privacy"><i class="fas fa-shield-alt" aria-hidden="true"></i>プライバシー</a>
                     </div>
@@ -801,6 +826,17 @@ function createSiteExploreSection() {
                         ${RANKING_FEATURES.map((r) => `
                             <a class="site-explore-chip${r.href === '/rankings/' ? ' site-explore-chip-primary' : ''}" href="${r.href}">
                                 <i class="fas fa-trophy" aria-hidden="true"></i>${r.label}
+                            </a>
+                        `).join('')}
+                    </div>
+                </div>
+
+                <div class="site-explore-group">
+                    <h3>目的別の選び方ガイド</h3>
+                    <div class="site-explore-chips">
+                        ${GUIDE_PAGES.map((g) => `
+                            <a class="site-explore-chip${g.href === '/guides/' ? ' site-explore-chip-primary' : ''}" href="${g.href}">
+                                <i class="fas fa-book-open" aria-hidden="true"></i>${g.label}
                             </a>
                         `).join('')}
                     </div>

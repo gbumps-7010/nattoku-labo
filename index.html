@@ -21,8 +21,8 @@
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="/products/css/navigation.css?v=20260818i">
-  <link rel="stylesheet" href="/products/css/prose.css?v=20260902d">
+    <link rel="stylesheet" href="/products/css/navigation.css?v=20261004b">
+  <link rel="stylesheet" href="/products/css/prose.css?v=20261004c">
     
     <style>
         * {
@@ -201,9 +201,8 @@
                 grid-column: 1 / -1;
                 font-size: 0.9rem;
             }
-            .search-section {
-                margin: -0.35rem auto 2rem;
-                padding: 0 1rem;
+            .header-nav-link:not(.primary):last-child:nth-child(even) {
+                grid-column: 1 / -1;
             }
         }
 
@@ -211,16 +210,267 @@
             body:has(#fixed-navigation) header {
                 padding: 1.75rem 0 2.75rem;
             }
-            .search-section {
-                margin-top: -0.5rem;
+        }
+
+        /* お悩みから探す */
+        .trouble-section {
+            max-width: 1200px;
+            margin: 0 auto 3rem;
+            padding: 0 2rem;
+            scroll-margin-top: 80px;
+        }
+
+        .trouble-card {
+            background: var(--white);
+            border-radius: 16px;
+            box-shadow: var(--shadow-lg);
+            padding: 2.25rem 2.5rem 2.5rem;
+        }
+
+        .trouble-title {
+            font-size: 1.6rem;
+            font-weight: 900;
+            color: var(--dark);
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.6rem;
+        }
+
+        .trouble-title i {
+            color: var(--primary-color);
+        }
+
+        .trouble-lead {
+            text-align: center;
+            color: var(--gray-600);
+            font-size: 0.98rem;
+            margin: 0.5rem 0 1.75rem;
+            word-break: auto-phrase;
+        }
+
+        .trouble-groups {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 1.25rem;
+        }
+
+        .trouble-group {
+            border: 1px solid var(--gray-200);
+            border-radius: 14px;
+            padding: 1.1rem 1.1rem 1.2rem;
+            background: var(--gray-50);
+        }
+
+        .trouble-group-label {
+            display: flex;
+            align-items: center;
+            gap: 0.55rem;
+            font-size: 1.05rem;
+            font-weight: 800;
+            color: var(--secondary-color);
+            margin-bottom: 0.8rem;
+        }
+
+        .trouble-group-label i {
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            background: var(--primary-color);
+            color: var(--white);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            flex-shrink: 0;
+        }
+
+        .trouble-list {
+            display: grid;
+            gap: 0.6rem;
+        }
+
+        .trouble-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+            background: var(--white);
+            border: 1px solid #d5dde8;
+            border-radius: 12px;
+            padding: 0.85rem 0.9rem 0.85rem 0.95rem;
+            transition: border-color 0.2s ease;
+        }
+
+        .trouble-item:hover {
+            border-color: var(--primary-color);
+        }
+
+        .trouble-body {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .trouble-q {
+            position: relative;
+            display: inline-block;
+            max-width: 100%;
+            background: #fef3c7;
+            color: #78350f;
+            border-radius: 10px;
+            padding: 0.45rem 0.8rem;
+            font-weight: 700;
+            font-size: 0.98rem;
+            line-height: 1.5;
+            word-break: auto-phrase;
+        }
+
+        .trouble-q::after {
+            content: '';
+            position: absolute;
+            left: 1.1rem;
+            bottom: -7px;
+            border: 7px solid transparent;
+            border-bottom: 0;
+            border-top-color: #fef3c7;
+        }
+
+        .trouble-chev {
+            flex-shrink: 0;
+            width: 1.8rem;
+            height: 1.8rem;
+            border-radius: 50%;
+            border: 1px solid var(--gray-300);
+            color: var(--primary-color);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+        }
+
+        .trouble-item:hover .trouble-chev {
+            background: var(--primary-color);
+            border-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        .trouble-a {
+            display: flex;
+            align-items: baseline;
+            gap: 0.4rem;
+            margin-top: 0.6rem;
+            color: var(--primary-color);
+            font-size: 0.9rem;
+            font-weight: 700;
+            line-height: 1.45;
+            word-break: auto-phrase;
+        }
+
+        .trouble-a i {
+            font-size: 0.75rem;
+            flex-shrink: 0;
+        }
+
+        .trouble-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+            margin-top: 0.55rem;
+        }
+
+        .trouble-chip {
+            text-decoration: none;
+            background: #eff6ff;
+            border: 1px solid #bfdbfe;
+            color: #1e3a8a;
+            border-radius: 999px;
+            padding: 0.35rem 0.8rem;
+            font-size: 0.85rem;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        .trouble-chip:hover {
+            background: #dbeafe;
+        }
+
+        .trouble-hubs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.6rem 1.5rem;
+            margin-top: 1.5rem;
+            padding-top: 1.25rem;
+            border-top: 1px dashed var(--gray-300);
+        }
+
+        .trouble-hubs a {
+            color: var(--primary-color);
+            font-weight: 700;
+            font-size: 0.92rem;
+            text-decoration: none;
+        }
+
+        .trouble-hubs a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .trouble-section {
+                margin: 0 auto 2rem;
+                padding: 0 1rem;
+            }
+            .trouble-card {
+                padding: 1.5rem 1rem 1.6rem;
+            }
+            .trouble-title {
+                font-size: 1.3rem;
+            }
+            .trouble-groups {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            .trouble-group {
+                padding: 0.95rem 0.8rem 1rem;
             }
         }
         
         /* Search Section */
         .search-section {
             max-width: 1200px;
-            margin: -2rem auto 3rem;
+            margin: 2.5rem auto 2rem;
             padding: 0 2rem;
+            scroll-margin-top: 80px;
+        }
+
+        .search-jump {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 1.5rem;
+            padding: 0.85rem 1rem;
+            border-radius: 10px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: var(--white);
+            font-weight: 700;
+            text-decoration: none;
+            transition: box-shadow 0.2s ease, transform 0.2s ease;
+        }
+
+        .search-jump strong {
+            font-size: 1.2rem;
+        }
+
+        .search-jump:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-1px);
+        }
+
+        .results-section {
+            scroll-margin-top: 80px;
         }
         
         .search-card {
@@ -573,6 +823,11 @@
                 font-size: 1.65rem;
             }
             
+            .search-section {
+                margin-top: 1.75rem;
+                padding: 0 1rem;
+            }
+
             .search-card {
                 padding: 1.5rem;
             }
@@ -627,6 +882,9 @@
                 <a href="#searchInput" class="header-nav-link">
                     <i class="fas fa-search"></i> 製品を探す
                 </a>
+                <a href="#nayami" class="header-nav-link">
+                    <i class="fas fa-lightbulb"></i> お悩みから探す
+                </a>
                 <a href="/about" class="header-nav-link">
                     <i class="fas fa-info-circle"></i> サイトについて
                 </a>
@@ -658,9 +916,7 @@
                         <i class="fas fa-industry"></i>
                         メーカー
                     </label>
-                    <select id="manufacturerFilter" class="filter-select">
-                        <option value="すべて">すべてのメーカー</option>
-                    </select>
+                    <select id="manufacturerFilter" class="filter-select"></select>
                 </div>
                 
                 <div class="filter-group">
@@ -668,35 +924,137 @@
                         <i class="fas fa-yen-sign"></i>
                         価格帯
                     </label>
-                    <select id="priceFilter" class="filter-select">
-                        <option value="すべて">すべての価格帯</option>
-                    </select>
+                    <select id="priceFilter" class="filter-select"></select>
                 </div>
                 
             </div>
+
+            <a href="#results" class="search-jump">
+                該当する製品 <strong id="searchJumpCount">0</strong> 件を見る <i class="fas fa-arrow-down"></i>
+            </a>
         </div>
     </div>
 
-    <!-- おすすめ比較（検索直下・スマホでもすぐ見える） -->
-    <div id="compare-bands" style="max-width: 1200px; margin: 0 auto 2rem; padding: 0 2rem;">
-        <div style="display:grid;gap:0.75rem;">
-            <a href="/compare/" style="display:block;text-decoration:none;background:#1e40af;border-radius:16px;padding:1.15rem 1.5rem;color:#fff;">
-                <strong style="display:block;font-size:1.15rem;margin-bottom:0.3rem;">ロボット掃除機のおすすめ・口コミ徹底比較（価格帯別）</strong>
-                <span style="font-size:0.95rem;font-weight:600;opacity:0.95;">〜5万 / 5〜7万 / 7〜10万 / 10〜15万 / 15〜20万 / 20万〜 の一覧 →</span>
-            </a>
-            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:0.55rem;">
-                <a href="/compare/robot-vacuum-under-5man" style="display:block;text-decoration:none;background:#eff6ff;border:1px solid #bfdbfe;border-radius:12px;padding:0.85rem 0.9rem;color:#1e3a8a;text-align:center;"><strong>〜5万円</strong></a>
-                <a href="/compare/robot-vacuum-5-7man" style="display:block;text-decoration:none;background:#eff6ff;border:1px solid #bfdbfe;border-radius:12px;padding:0.85rem 0.9rem;color:#1e3a8a;text-align:center;"><strong>5〜7万円</strong></a>
-                <a href="/compare/robot-vacuum-7-10man" style="display:block;text-decoration:none;background:#eff6ff;border:1px solid #bfdbfe;border-radius:12px;padding:0.85rem 0.9rem;color:#1e3a8a;text-align:center;"><strong>7〜10万円</strong></a>
-                <a href="/compare/robot-vacuum-10-15man" style="display:block;text-decoration:none;background:#eff6ff;border:1px solid #bfdbfe;border-radius:12px;padding:0.85rem 0.9rem;color:#1e3a8a;text-align:center;"><strong>10〜15万円</strong></a>
-                <a href="/compare/robot-vacuum-15-20man" style="display:block;text-decoration:none;background:#eff6ff;border:1px solid #bfdbfe;border-radius:12px;padding:0.85rem 0.9rem;color:#1e3a8a;text-align:center;"><strong>15〜20万円</strong></a>
-                <a href="/compare/robot-vacuum-20man-plus" style="display:block;text-decoration:none;background:#eff6ff;border:1px solid #bfdbfe;border-radius:12px;padding:0.85rem 0.9rem;color:#1e3a8a;text-align:center;"><strong>20万円〜</strong></a>
+    <!-- お悩みから探す -->
+    <section id="nayami" class="trouble-section">
+        <div class="trouble-card fade-in">
+            <h2 class="trouble-title">
+                <i class="fas fa-lightbulb"></i>
+                お悩みから記事を探す
+            </h2>
+            <p class="trouble-lead">気になることを選ぶと、口コミ分析で答えを出した記事に進めます。</p>
+
+            <div class="trouble-groups">
+                <div class="trouble-group">
+                    <h3 class="trouble-group-label"><i class="fas fa-couch"></i>置き場所・サイズ</h3>
+                    <div class="trouble-list">
+                        <a class="trouble-item" href="/guides/robot-vacuum-thin">
+                            <span class="trouble-body"><span class="trouble-q">ソファやベッドの下まで掃除してほしい</span><span class="trouble-a"><i class="fas fa-arrow-right"></i>薄型ロボット掃除機のおすすめ5選（高さ9cm以下）</span></span>
+                            <span class="trouble-chev"><i class="fas fa-chevron-right"></i></span>
+                        </a>
+                        <a class="trouble-item" href="/guides/robot-vacuum-height">
+                            <span class="trouble-body"><span class="trouble-q">家具下の隙間に入るか、高さを確かめたい</span><span class="trouble-a"><i class="fas fa-arrow-right"></i>ロボット掃除機の高さ一覧（全54機種・隙間の測り方）</span></span>
+                            <span class="trouble-chev"><i class="fas fa-chevron-right"></i></span>
+                        </a>
+                        <a class="trouble-item" href="/guides/robot-vacuum-small">
+                            <span class="trouble-body"><span class="trouble-q">部屋が狭くて、置き場所に困る</span><span class="trouble-a"><i class="fas fa-arrow-right"></i>小さいロボット掃除機のおすすめ5選</span></span>
+                            <span class="trouble-chev"><i class="fas fa-chevron-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="trouble-group">
+                    <h3 class="trouble-group-label"><i class="fas fa-yen-sign"></i>予算・お金</h3>
+                    <div class="trouble-list">
+                        <a class="trouble-item" href="/guides/robot-vacuum-cheap">
+                            <span class="trouble-body"><span class="trouble-q">できるだけ安く、5万円以下で買いたい</span><span class="trouble-a"><i class="fas fa-arrow-right"></i>安いロボット掃除機のおすすめ6選</span></span>
+                            <span class="trouble-chev"><i class="fas fa-chevron-right"></i></span>
+                        </a>
+                        <a class="trouble-item" href="/guides/robot-vacuum-cost-performance">
+                            <span class="trouble-body"><span class="trouble-q">消耗品代まで含めて、損をしたくない</span><span class="trouble-a"><i class="fas fa-arrow-right"></i>コスパ最強のロボット掃除機（本体＋消耗品の3年総額で比較）</span></span>
+                            <span class="trouble-chev"><i class="fas fa-chevron-right"></i></span>
+                        </a>
+                        <a class="trouble-item" href="/compare/">
+                            <span class="trouble-body"><span class="trouble-q">予算は決まっている。その中で一番いい機種は？</span><span class="trouble-a"><i class="fas fa-arrow-right"></i>価格帯別のおすすめ・口コミ徹底比較</span></span>
+                            <span class="trouble-chev"><i class="fas fa-chevron-right"></i></span>
+                        </a>
+                        <div class="trouble-chips" aria-label="価格帯別の徹底比較">
+                            <a class="trouble-chip" href="/compare/robot-vacuum-under-5man">〜5万円</a>
+                            <a class="trouble-chip" href="/compare/robot-vacuum-5-7man">5〜7万円</a>
+                            <a class="trouble-chip" href="/compare/robot-vacuum-7-10man">7〜10万円</a>
+                            <a class="trouble-chip" href="/compare/robot-vacuum-10-15man">10〜15万円</a>
+                            <a class="trouble-chip" href="/compare/robot-vacuum-15-20man">15〜20万円</a>
+                            <a class="trouble-chip" href="/compare/robot-vacuum-20man-plus">20万円〜</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trouble-group">
+                    <h3 class="trouble-group-label"><i class="fas fa-paw"></i>ペットがいる</h3>
+                    <div class="trouble-list">
+                        <a class="trouble-item" href="/guides/robot-vacuum-cat">
+                            <span class="trouble-body"><span class="trouble-q">猫の毛や猫砂が、床に散らかる</span><span class="trouble-a"><i class="fas fa-arrow-right"></i>猫がいる家のロボット掃除機おすすめ6選</span></span>
+                            <span class="trouble-chev"><i class="fas fa-chevron-right"></i></span>
+                        </a>
+                        <a class="trouble-item" href="/guides/robot-vacuum-pet">
+                            <span class="trouble-body"><span class="trouble-q">犬の抜け毛や、フンを巻き込まないかが心配</span><span class="trouble-a"><i class="fas fa-arrow-right"></i>ペットがいる家のロボット掃除機おすすめ7選</span></span>
+                            <span class="trouble-chev"><i class="fas fa-chevron-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="trouble-group">
+                    <h3 class="trouble-group-label"><i class="fas fa-broom"></i>掃除の仕上がり・音</h3>
+                    <div class="trouble-list">
+                        <a class="trouble-item" href="/rankings/floor-cleaning">
+                            <span class="trouble-body"><span class="trouble-q">フローリングのホコリや髪の毛を、しっかり取りたい</span><span class="trouble-a"><i class="fas fa-arrow-right"></i>フローリング掃除のおすすめランキング</span></span>
+                            <span class="trouble-chev"><i class="fas fa-chevron-right"></i></span>
+                        </a>
+                        <a class="trouble-item" href="/rankings/carpet-cleaning">
+                            <span class="trouble-body"><span class="trouble-q">カーペットやラグのゴミが取れない</span><span class="trouble-a"><i class="fas fa-arrow-right"></i>カーペット掃除のおすすめランキング</span></span>
+                            <span class="trouble-chev"><i class="fas fa-chevron-right"></i></span>
+                        </a>
+                        <a class="trouble-item" href="/rankings/quietness">
+                            <span class="trouble-body"><span class="trouble-q">在宅中や夜に動かすので、音が気になる</span><span class="trouble-a"><i class="fas fa-arrow-right"></i>静音性のおすすめランキング</span></span>
+                            <span class="trouble-chev"><i class="fas fa-chevron-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="trouble-group">
+                    <h3 class="trouble-group-label"><i class="fas fa-industry"></i>メーカー選び</h3>
+                    <div class="trouble-list">
+                        <a class="trouble-item" href="/guides/robot-vacuum-makers">
+                            <span class="trouble-body"><span class="trouble-q">どのメーカーを選べばいいかわからない</span><span class="trouble-a"><i class="fas fa-arrow-right"></i>ロボット掃除機のおすすめメーカー6社を比較</span></span>
+                            <span class="trouble-chev"><i class="fas fa-chevron-right"></i></span>
+                        </a>
+                        <a class="trouble-item" href="/makers/">
+                            <span class="trouble-body"><span class="trouble-q">気になるメーカーの全機種を見比べたい</span><span class="trouble-a"><i class="fas fa-arrow-right"></i>メーカー別の全機種比較</span></span>
+                            <span class="trouble-chev"><i class="fas fa-chevron-right"></i></span>
+                        </a>
+                        <div class="trouble-chips" aria-label="メーカー別の全機種比較">
+                            <a class="trouble-chip" href="/makers/ecovacs">エコバックス</a>
+                            <a class="trouble-chip" href="/makers/anker">アンカー</a>
+                            <a class="trouble-chip" href="/makers/dreame">ドリーミー</a>
+                            <a class="trouble-chip" href="/makers/roborock">ロボロック</a>
+                            <a class="trouble-chip" href="/makers/irobot">ルンバ</a>
+                            <a class="trouble-chip" href="/makers/switchbot">スイッチボット</a>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <nav class="trouble-hubs" aria-label="記事一覧">
+                <a href="/guides/"><i class="fas fa-book-open"></i> 目的別ガイド一覧</a>
+                <a href="/compare/"><i class="fas fa-table"></i> 価格帯別の徹底比較</a>
+                <a href="/makers/"><i class="fas fa-industry"></i> メーカー別の全機種比較</a>
+                <a href="/rankings/"><i class="fas fa-trophy"></i> 性能別ランキング</a>
+            </nav>
         </div>
-    </div>
+    </section>
 
     <!-- Results Section -->
-    <div class="results-section">
+    <div id="results" class="results-section">
         <div class="results-header">
             <div class="results-count">
                 <strong id="resultCount">5</strong> 件の製品が見つかりました
@@ -1010,6 +1368,7 @@
         const productsContainer = document.getElementById('productsContainer');
         const resultCount = document.getElementById('resultCount');
         const noResults = document.getElementById('noResults');
+        const searchJumpCount = document.getElementById('searchJumpCount');
 
         // Initialize filters
         function initializeFilters() {
@@ -1031,7 +1390,7 @@
             priceRanges.forEach(range => {
                 const option = document.createElement('option');
                 option.value = range.label;
-                option.textContent = range.label;
+                option.textContent = range.label === 'すべて' ? 'すべての価格帯' : range.label;
                 priceFilter.appendChild(option);
             });
 
@@ -1065,6 +1424,7 @@
 
         // Render products
         function renderProducts(products) {
+            searchJumpCount.textContent = products.length;
             if (products.length === 0) {
                 productsContainer.style.display = 'none';
                 noResults.style.display = 'block';
@@ -1083,7 +1443,7 @@
                     </div>
                     <div class="product-content">
                         <div class="product-manufacturer">${manufacturerLabel(product.manufacturer)}</div>
-                        <h3 class="product-name">${product.name}</h3>
+                        <h3 class="product-name">${product.name.replace(/([ァ-ヶー])(?=[一-龯々])|([一-龯々])(?=[ァ-ヶ])/g, '$1$2<wbr>')}</h3>
                         
                         <div class="product-review-count">口コミ ${product.reviewCount.toLocaleString()}件</div>
                         
@@ -1189,8 +1549,8 @@
             loadAndInit();
         }
     </script>
-    <script src="/products/js/navigation.js?v=20261003a"></script>
-  <script src="/products/js/format-prose.js?v=20260902d"></script>
-  <script src="/products/js/prose-init.js?v=20260902d"></script>
+    <script src="/products/js/navigation.js?v=20261004a"></script>
+  <script src="/products/js/format-prose.js?v=20261004c"></script>
+  <script src="/products/js/prose-init.js?v=20261004c"></script>
 </body>
 </html>
