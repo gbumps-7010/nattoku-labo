@@ -23,7 +23,7 @@ html:lang(ja) body {
 .trend-summary,
 .summary-box p,
 .price-caution,
-.performance-detail-card p,
+.performance-detail-comment,
 .reliability-intro-text,
 .reliability-factor-desc,
 .attribute-comment,
@@ -71,7 +71,8 @@ button {
 
 .em-key.benefit,
 .entry.good .entry-body .em-key,
-.performance-detail-card.high-score p .em-key,
+.score-lv-excellent .performance-detail-comment .em-key,
+.score-lv-good .performance-detail-comment .em-key,
 .prose-good .em-key {
   color: #065f46;
   background: #bbf7d0;

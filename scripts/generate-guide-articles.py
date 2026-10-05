@@ -32,8 +32,8 @@ DATA_DIR = ROOT / "products" / "data"
 DIMS_DIR = ROOT / "scripts" / "data" / "dims"
 OUT_DIR = ROOT / "guides"
 SITE = "https://nattoku-labo.com"
-NAV_V = "20261004b"
-PROSE_V = "20261004c"
+NAV_V = "20261005a"
+PROSE_V = "20261005a"
 TODAY = date.today()
 UPDATED = TODAY.isoformat()
 UPDATED_JA = f"{TODAY.year}年{TODAY.month}月{TODAY.day}日"
@@ -466,7 +466,7 @@ main { padding:1.25rem 0 3rem; }
 .intro p { margin:0 0 .85rem; font-size:.95rem; }
 .toc-box {
   margin:1.25rem 0 0; padding:1rem 1.1rem; background:#f8fafc;
-  border:1px solid var(--line); border-left:4px solid var(--primary); border-radius:10px;
+  border:1px solid var(--line); border-radius:10px;
 }
 .toc-title { font-size:.95rem; font-weight:900; margin-bottom:.55rem; color:var(--secondary); }
 .toc-list { margin:0; padding-left:1.25rem; }
@@ -493,12 +493,12 @@ section.chapter h3 { font-size:1.02rem; font-weight:900; color:#0f172a; margin:1
 }
 .point p { font-size:.9rem; margin:0 0 .5rem; }
 .callout {
-  background:#eff6ff; border-left:4px solid #0ea5e9; border-radius:0 10px 10px 0;
-  padding:.75rem .95rem; margin:.85rem 0 1rem; font-size:.9rem; color:#1e3a8a;
+  background:#f8fafc; border:1px solid #e2e8f0; border-radius:10px;
+  padding:.75rem .95rem; margin:.85rem 0 1rem; font-size:.9rem; color:#1e293b;
 }
 .callout p { margin:0 0 .35rem; }
 .callout p:last-child { margin:0; }
-.callout.warn { background:#fff7ed; border-left-color:#f97316; color:#7c2d12; }
+.callout.warn { background:#fffbeb; border-color:#fcd34d; color:#78350f; }
 .steps { margin:.5rem 0 1rem 1.3rem; }
 .steps li { margin:.35rem 0; font-size:.92rem; }
 .steps li strong { color:#0f172a; }
@@ -558,9 +558,9 @@ table.dt tbody tr:hover td { background:#f8fafc; }
 .articles { display:flex; flex-direction:column; gap:2rem; margin-top:.75rem; }
 .article-pick h3 {
   font-size:1.08rem; font-weight:900; margin:0 0 .85rem; color:#0f172a;
-  padding:.7rem .85rem .7rem 1rem; border-left:5px solid #2563eb;
-  background:linear-gradient(90deg,#eff6ff 0%,#f8fafc 70%,transparent 100%);
-  border-radius:0 10px 10px 0; scroll-margin-top:84px;
+  padding:.7rem 1rem; border:1px solid var(--line);
+  background:#f8fafc;
+  border-radius:10px; scroll-margin-top:84px;
 }
 .maker-nav { display:flex; flex-wrap:wrap; gap:.45rem; margin:.25rem 0 1.4rem; }
 .maker-nav a {

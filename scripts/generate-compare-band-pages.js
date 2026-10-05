@@ -112,11 +112,11 @@ const STYLE = `<style>
     }
     p { margin-bottom: 0.85rem; }
     .note {
-      background: #eff6ff;
-      border-left: 4px solid var(--accent);
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
       padding: 0.75rem 0.95rem;
-      border-radius: 0 10px 10px 0;
-      color: #1e3a8a;
+      border-radius: 10px;
+      color: #1e293b;
       font-size: 0.88rem;
       margin: 1rem 0 1.25rem;
     }
@@ -1418,8 +1418,8 @@ function buildPage(band) {
   ${STYLE}
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="/products/css/navigation.css?v=20261004b">
-  <link rel="stylesheet" href="/products/css/prose.css?v=20261004c">
+  <link rel="stylesheet" href="/products/css/navigation.css?v=20261005a">
+  <link rel="stylesheet" href="/products/css/prose.css?v=20261005a">
   <script type="application/ld+json">
   ${JSON.stringify(itemListJson(band), null, 2)}
   </script>

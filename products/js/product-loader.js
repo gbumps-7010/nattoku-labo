@@ -288,7 +288,7 @@ function updateDynamicElements(data) {
                 let consumablesHTML = '';
                 value.forEach(item => {
                     consumablesHTML += `
-                        <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.85rem; background: #f8fafc; border-radius: 8px; border-left: 3px solid #0284c7;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.85rem; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
                             <div style="flex: 1;">
                                 <p style="font-size: 0.95rem; font-weight: 600; color: #1e293b; margin-bottom: 0.25rem;">${item.item}</p>
                                 <p style="font-size: 0.8rem; color: #0f172a; margin: 0;">交換頻度: ${item.replacementFrequency}</p>
@@ -399,6 +399,20 @@ function updatePerformanceData(data) {
     updatePerformanceCards(perfData);
 }
 
+// 点数の段階（サイト共通：90点以上＝緑／80点台＝青／70点台＝黄／70点未満＝赤）
+function scoreLevel(score) {
+    const n = Number(score);
+    if (n >= 90) return { key: 'excellent', label: '優秀' };
+    if (n >= 80) return { key: 'good', label: '良好' };
+    if (n >= 70) return { key: 'fair', label: '普通' };
+    return { key: 'poor', label: '要注意' };
+}
+
+function scoreBarWidth(score) {
+    const n = Number(score);
+    return Number.isFinite(n) ? Math.max(0, Math.min(100, n)) : 0;
+}
+
 function updatePerformanceCards(perfData) {
     const perfMapping = [
         { keys: ['floorCleaning'], label: 'フローリング清掃' },
@@ -426,13 +440,20 @@ function updatePerformanceCards(perfData) {
             if (!data) return '';
             
             const score = data.score;
-            const scoreClass = score >= 80 ? 'high-score' : (score >= 60 ? 'medium-score' : 'low-score');
+            const lv = scoreLevel(score);
             
             return `
-                <div class="performance-detail-card ${scoreClass}">
-                    <h4>${item.label}: ${score}/100点</h4>
-                    <p class="rank-badge">${data.reviewCount}件の口コミから算出</p>
-                    <p>${fp(data.comment || '詳細評価情報なし')}</p>
+                <div class="performance-detail-card score-lv-${lv.key}">
+                    <div class="performance-detail-head">
+                        <h4>${item.label}</h4>
+                        <span class="score-level">${lv.label}</span>
+                    </div>
+                    <div class="performance-detail-main">
+                        <div class="performance-detail-score"><b>${score}</b><small>/ 100点</small></div>
+                        <div class="score-bar"><i style="width:${scoreBarWidth(score)}%"></i></div>
+                        <p class="rank-badge">${data.reviewCount}件の口コミから算出</p>
+                        <p class="performance-detail-comment">${fp(data.comment || '詳細評価情報なし')}</p>
+                    </div>
                 </div>
             `;
         }).join('');
@@ -472,7 +493,6 @@ function renderReliabilityFactors(rel) {
         {
             tone: 'adequacy',
             title: '口コミ件数の十分さ',
-            weight: '重要度 60%',
             hint: '口コミの件数が多いほど、分析の信頼度は高くなります。',
             maxPts: 60,
             scoreAttr: 'reliability.dataAdequacy.score',
@@ -489,7 +509,6 @@ function renderReliabilityFactors(rel) {
         {
             tone: 'consistency',
             title: '口コミの意見の一致度',
-            weight: '重要度 30%',
             hint: '高評価・低評価ともに、多くの口コミが同じ論点に集まるほど高得点です。',
             maxPts: 30,
             scoreAttr: 'reliability.consistency.percentage',
@@ -506,7 +525,6 @@ function renderReliabilityFactors(rel) {
         {
             tone: 'freshness',
             title: '口コミの鮮度',
-            weight: '重要度 10%',
             hint: '新しい口コミが多いほど、いまの製品品質やサポート状況を反映しやすいです。',
             maxPts: 10,
             scoreAttr: 'reliability.freshness.score',
@@ -526,14 +544,18 @@ function renderReliabilityFactors(rel) {
         .map(
             (card) => `
         <article class="reliability-factor-card reliability-factor-${card.tone}">
-            <h3 class="reliability-factor-title">${card.title}</h3>
-            <span class="reliability-weight-badge">${card.weight}</span>
-            <p class="reliability-factor-hint">${card.hint}</p>
-            <div class="reliability-factor-score">
-                <span data-dynamic="${card.scoreAttr}">${card.score}</span>
-                <span class="reliability-factor-denom">/ ${card.maxPts}点</span>
+            <div class="reliability-factor-head">
+                <h3 class="reliability-factor-title">${card.title}</h3>
+                <span class="reliability-weight-badge">重要度 <b>${card.maxPts}%</b></span>
             </div>
-            <p class="reliability-factor-desc" data-dynamic="${card.descAttr}">${fp(card.description)}</p>
+            <div class="reliability-factor-main">
+                <p class="reliability-factor-hint">${card.hint}</p>
+                <div class="reliability-factor-score">
+                    <span data-dynamic="${card.scoreAttr}">${card.score}</span>
+                    <span class="reliability-factor-denom">/ ${card.maxPts}点</span>
+                </div>
+                <p class="reliability-factor-desc" data-dynamic="${card.descAttr}">${fp(card.description)}</p>
+            </div>
         </article>
     `,
         )
@@ -786,7 +808,7 @@ function updateSuccessStrategies(data) {
                             </div>
                         ` : ''}
                         ${strategy.expectedResult ? `
-                            <div style="margin-top: 0.75rem; padding: 0.75rem; background: linear-gradient(135deg, #e0f2fe 0%, #dbeafe 100%); border-left: 3px solid #3b82f6; border-radius: 4px;">
+                            <div style="margin-top: 0.75rem; padding: 0.75rem; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
                                 <div style="font-weight: 600; color: #1e40af; margin-bottom: 0.25rem; font-size: 0.85rem;">
                                     <i class="fas fa-bullseye"></i> 期待される結果
                                 </div>
@@ -882,13 +904,13 @@ function updateTopComplaints(data) {
             let cardClass = 'problem-card';
             
             if (item.percentage >= 10) {
-                importanceBadge = '<span class="importance-badge critical">重要度：高</span>';
+                importanceBadge = '<span class="complaint-tag">重要度：高</span>';
                 cardClass = 'problem-card critical-issue';
             } else if (item.percentage >= 5) {
-                importanceBadge = '<span class="importance-badge high">重要度：中</span>';
+                importanceBadge = '<span class="complaint-tag">重要度：中</span>';
                 cardClass = 'problem-card high-issue';
             } else if (item.percentage >= 3) {
-                importanceBadge = '<span class="importance-badge medium">注意</span>';
+                importanceBadge = '<span class="complaint-tag">注意</span>';
                 cardClass = 'problem-card medium-issue';
             }
             
@@ -910,20 +932,24 @@ function updateTopComplaints(data) {
             
             return `
             <div class="${cardClass}">
-                <div class="complaint-stats-hero" style="display:flex;align-items:baseline;gap:0.65rem;margin-bottom:0.85rem;padding:0.75rem 1rem;background:linear-gradient(135deg,#fef2f2 0%,#fff1f2 100%);border:2px solid #fecaca;border-radius:10px;">
-                    <span style="font-size:2rem;font-weight:900;color:#dc2626;line-height:1;">${pct}%</span>
-                    <span style="font-size:1.05rem;font-weight:700;color:#991b1b;">（${reviewCount}件）</span>
+                <div class="complaint-head">
+                    ${importanceBadge}
+                    <h3 class="problem-title">${title}</h3>
                 </div>
-                ${importanceBadge}
-                <h3 class="problem-title">${title}</h3>
-                ${item.details || item.description ? `<p class="problem-description prose-warn">${fp(item.details || item.description)}</p>` : ''}
-                ${solutionHTML ? `
-                <div class="solutions">
-                    <h4 style="font-weight: 700; margin-bottom: 0.75rem;">対策</h4>
-                    <ul style="margin: 0; padding-left: 1.5rem; line-height: 1.8;">
-                        ${solutionHTML}
-                    </ul>
-                </div>` : ''}
+                <div class="complaint-main">
+                    <div class="complaint-stats-hero" style="display:flex;align-items:baseline;gap:0.65rem;margin-bottom:0.85rem;padding:0.75rem 1rem;background:#fef2f2;border:1px solid #fecaca;border-radius:10px;">
+                        <span style="font-size:2rem;font-weight:900;color:#dc2626;line-height:1;">${pct}%</span>
+                        <span style="font-size:1.05rem;font-weight:700;color:#991b1b;">（${reviewCount}件）</span>
+                    </div>
+                    ${item.details || item.description ? `<p class="problem-description prose-warn">${fp(item.details || item.description)}</p>` : ''}
+                    ${solutionHTML ? `
+                    <div class="solutions">
+                        <h4 style="font-weight: 700; margin-bottom: 0.75rem;">対策</h4>
+                        <ul style="margin: 0; padding-left: 1.5rem; line-height: 1.8;">
+                            ${solutionHTML}
+                        </ul>
+                    </div>` : ''}
+                </div>
             </div>
         `}).join('');
         container.innerHTML = html;
@@ -931,6 +957,21 @@ function updateTopComplaints(data) {
     } else {
         console.warn('⚠️ topComplaints コンテナが見つかりません');
     }
+}
+
+function attributeItemHTML(label, score, commentText) {
+    const lv = scoreLevel(score);
+    return `
+        <div class="attribute-item score-lv-${lv.key}">
+            <div class="attribute-item-head">
+                <span class="attribute-item-name">${label}</span>
+                <span class="score-level">${lv.label}</span>
+                <span class="attribute-item-score">${score}</span>
+            </div>
+            <div class="score-bar"><i style="width:${scoreBarWidth(score)}%"></i></div>
+            ${commentText ? `<p class="attribute-item-comment">${fp(commentText)}</p>` : ''}
+        </div>
+    `;
 }
 
 // 9. 属性スコア更新
@@ -993,37 +1034,10 @@ function updateAttributeScores(data) {
             // details配列形式のデータをサポート（新形式）
             if (attrData.details && Array.isArray(attrData.details)) {
                 html = attrData.details.map(item => {
-                    const score = item.score;
-                    
-                    // スコアに応じて色とアイコンを変更
-                    let scoreColor = '#64748b';
-                    let scoreIcon = '○';
-                    if (score >= 90) {
-                        scoreColor = '#10b981';
-                        scoreIcon = '◎';
-                    } else if (score >= 80) {
-                        scoreColor = '#2563eb';
-                        scoreIcon = '○';
-                    } else if (score >= 70) {
-                        scoreColor = '#f59e0b';
-                        scoreIcon = '△';
-                    } else {
-                        scoreColor = '#ef4444';
-                        scoreIcon = '×';
-                    }
-                    
                     const commentText = item.comment || 
                         (item.reviewCount ? `実数${item.reviewCount}件の口コミから算出` : '');
                     
-                    return `
-                        <div style="background: #f8fafc; padding: 1rem; border-radius: 8px; margin-bottom: 0.75rem; border-left: 4px solid ${scoreColor};">
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-                                <span style="font-weight: 700; color: #1e293b;">${scoreIcon} ${item.attribute || item.field}</span>
-                                <span style="font-size: 1.3rem; font-weight: 900; color: ${scoreColor};">${score}</span>
-                            </div>
-                            ${commentText ? `<p style="font-size: 0.85rem; color: #1e293b; margin: 0; line-height: 1.5;">${fp(commentText)}</p>` : ''}
-                        </div>
-                    `;
+                    return attributeItemHTML(item.attribute || item.field, item.score, commentText);
                 }).join('');
             }
             // 旧形式のフィールド別データをサポート（後方互換）
@@ -1036,37 +1050,13 @@ function updateAttributeScores(data) {
                     // valueが数値の場合、オブジェクト形式に変換
                     const fieldData = typeof value === 'number' ? { score: value } : value;
                     
-                    // スコアに応じて色とアイコンを変更
-                    let scoreColor = '#64748b';
-                    let scoreIcon = '○';
                     const score = fieldData.score || fieldData;
-                    if (score >= 90) {
-                        scoreColor = '#10b981';
-                        scoreIcon = '◎';
-                    } else if (score >= 80) {
-                        scoreColor = '#2563eb';
-                        scoreIcon = '○';
-                    } else if (score >= 70) {
-                        scoreColor = '#f59e0b';
-                        scoreIcon = '△';
-                    } else {
-                        scoreColor = '#ef4444';
-                        scoreIcon = '×';
-                    }
                     
                     // commentがない場合は、reviewCountを表示
                     const commentText = fieldData.comment || 
                         (fieldData.reviewCount ? `実数${fieldData.reviewCount}件の口コミから算出` : '');
                     
-                    return `
-                        <div style="background: #f8fafc; padding: 1rem; border-radius: 8px; margin-bottom: 0.75rem; border-left: 4px solid ${scoreColor};">
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-                                <span style="font-weight: 700; color: #1e293b;">${scoreIcon} ${field.label}</span>
-                                <span style="font-size: 1.3rem; font-weight: 900; color: ${scoreColor};">${score}</span>
-                            </div>
-                            ${commentText ? `<p style="font-size: 0.85rem; color: #1e293b; margin: 0; line-height: 1.5;">${fp(commentText)}</p>` : ''}
-                        </div>
-                    `;
+                    return attributeItemHTML(field.label, score, commentText);
                 }).filter(html => html !== '').join('');
             }
             

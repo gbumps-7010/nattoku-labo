@@ -14,9 +14,9 @@ sys.path.insert(0, str(ROOT / "scripts" / "lib"))
 from format_prose import format_prose, product_name_html  # noqa: E402
 DATA = ROOT / "products" / "data"
 OUT_DIR = ROOT / "makers"
-NAV_V = "20261004b"
+NAV_V = "20261005a"
 PERKS_V = "20261004b"
-PROSE_V = "20261004c"
+PROSE_V = "20261005a"
 SITE = "https://nattoku-labo.com"
 WF, WR = 0.85, 0.15
 
@@ -1350,7 +1350,7 @@ def build_manufacturer_page(meta: dict) -> Path:
 
     .toc-box {{
       margin:1.25rem 0 0; padding:1rem 1.1rem; background:#f8fafc;
-      border:1px solid var(--line); border-left:4px solid var(--primary); border-radius:10px;
+      border:1px solid var(--line); border-radius:10px;
     }}
     .toc-title {{
       font-size:.95rem; font-weight:900; margin-bottom:.55rem; color:var(--secondary);
@@ -1373,10 +1373,10 @@ def build_manufacturer_page(meta: dict) -> Path:
     .articles {{ display:flex; flex-direction:column; gap:2rem; }}
     .article-pick h3 {{
       font-size:1.08rem; font-weight:900; margin:0 0 .85rem; color:#0f172a;
-      padding:.7rem .85rem .7rem 1rem;
-      border-left:5px solid #2563eb;
-      background:linear-gradient(90deg,#eff6ff 0%,#f8fafc 70%,transparent 100%);
-      border-radius:0 10px 10px 0;
+      padding:.7rem 1rem;
+      border:1px solid var(--line);
+      background:#f8fafc;
+      border-radius:10px;
     }}
     .aff-mount {{
       margin:0 0 1rem; min-height:2rem;

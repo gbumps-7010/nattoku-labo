@@ -13,9 +13,9 @@ sys.path.insert(0, str(ROOT / "scripts" / "lib"))
 from format_prose import format_prose  # noqa: E402
 DATA_DIR = ROOT / "products" / "data"
 OUT_DIR = ROOT / "rankings"
-NAV_V = "20261004b"
+NAV_V = "20261005a"
 PERKS_V = "20261004b"
-PROSE_V = "20261004c"
+PROSE_V = "20261005a"
 WF, WR = 0.85, 0.15
 UPDATED = date.today().isoformat()
 
