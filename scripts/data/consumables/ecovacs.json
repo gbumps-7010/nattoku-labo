@@ -69,6 +69,89 @@
       ],
       "excluded": ["ゴミパック（バッグレス設計のため不要）"],
       "note": "ECOVACS Japan公式ストアの純正品価格。自動ゴミ収集ステーションはサイクロン式で紙パック不要。モップパッドは確認時点で公式ストア完売表示。"
+    },
+    "deebot-t80-omni": {
+      "parts": [
+        {
+          "item": "交換用キット（メインブラシ1・サイドブラシ2・フィルター3）",
+          "packPrice": 4950, "packQty": 1, "perSwap": 1,
+          "intervalMonths": [3, 6],
+          "intervalBasis": "公式ストア商品ページ「交換頻度：3~6ヵ月ごと」",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/buddy-kit-t80"
+        },
+        {
+          "item": "ゴミパック",
+          "packPrice": 3300, "packQty": 3, "perSwap": 1,
+          "intervalMonths": [2, 3],
+          "intervalBasis": "取扱説明書「2～3カ月ごと」",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/antibacteria-dust-bag-x8",
+          "intervalUrl": "https://site-static.ecovacs.com/upload/file/support/2025/05/08/055928_2473$DEEBOTT80FamilyInstructionManual_JP.pdf"
+        },
+        {
+          "item": "ローラーモップ",
+          "packPrice": 2750, "packQty": 1, "perSwap": 1,
+          "intervalMonths": [1, 2],
+          "intervalBasis": "取扱説明書「1～2カ月ごと」",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/antibacterial-mopping-roller-x8",
+          "intervalUrl": "https://site-static.ecovacs.com/upload/file/support/2025/05/08/055928_2473$DEEBOTT80FamilyInstructionManual_JP.pdf"
+        }
+      ],
+      "excluded": ["専用床洗剤（他機種と条件をそろえるため除外）"],
+      "note": "ECOVACS Japan公式ストアの純正品価格。メインブラシ・サイドブラシ・フィルターは単品がなくセット販売のため、セットを公式の交換頻度で買い替える前提（メインブラシ分はやや高めに見積もり）。ローラーモップは確認時点で予約販売。"
+    },
+    "deebot-t90-omni": {
+      "parts": [
+        {
+          "item": "交換用キット（メインブラシ・サイドブラシ・フィルター）",
+          "packPrice": 5500, "packQty": 1, "perSwap": 1,
+          "intervalMonths": [3, 6],
+          "intervalBasis": "公式ストア商品ページ「交換頻度：3~6ヵ月ごと」",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/buddy-kit-t90"
+        },
+        {
+          "item": "ゴミパック",
+          "packPrice": 3300, "packQty": 3, "perSwap": 1,
+          "intervalMonths": [3, 3],
+          "intervalBasis": "製品ページ「最長90日間メンテナンス不要」（取扱説明書は「アプリからの通知があったとき」）",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/antibacterial-dust-bag-deebot-t90",
+          "intervalUrl": "https://www.ecovacs.com/jp/deebot-robotic-vacuum-cleaner/deebot-t90-omni"
+        },
+        {
+          "item": "ローラーモップ",
+          "packPrice": 3500, "packQty": 1, "perSwap": 1,
+          "intervalMonths": [1, 2],
+          "intervalBasis": "取扱説明書「1～2カ月ごと」",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/antibacterial-mopping-roller-t90",
+          "intervalUrl": "https://site-static.ecovacs.com/upload/file/support/2026/02/26/021703_9181$DEEBOTT90OMNIInstructionManual-JP.pdf"
+        }
+      ],
+      "excluded": ["専用床洗剤（他機種と条件をそろえるため除外）"],
+      "note": "ECOVACS Japan公式ストアの純正品価格。メインブラシ・サイドブラシ・フィルターは単品がなくセット販売のため、セットを公式の交換頻度で買い替える前提（メインブラシ分はやや高めに見積もり）。ゴミパックは最長日数での計算のため、ゴミが多い家庭では早まる。"
+    },
+    "deebot-x11-omnicyclone": {
+      "parts": [
+        {
+          "item": "交換用キット（メインブラシ・サイドブラシ・フィルター）",
+          "packPrice": 5500, "packQty": 1, "perSwap": 1,
+          "intervalMonths": [3, 6],
+          "intervalBasis": "公式ストア商品ページ「交換頻度：3~6ヵ月ごと」",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/buddy-kit-x11"
+        },
+        {
+          "item": "ローラーモップ",
+          "packPrice": 3300, "packQty": 1, "perSwap": 1,
+          "intervalMonths": [1, 2],
+          "intervalBasis": "取扱説明書「1～2カ月ごと」",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/mopping-roller-x11",
+          "intervalUrl": "https://site-static.ecovacs.com/upload/file/support/2025/11/19/092859_7875$X11OMNICYCLONEInstructionManual_JP.pdf"
+        }
+      ],
+      "excluded": [
+        "ゴミパック（ステーションがサイクロン式で紙パック不要）",
+        "ステーションのダストボックス用フィルター（公式ストアで単品の販売を確認できないため除外）",
+        "専用床洗剤（他機種と条件をそろえるため除外）"
+      ],
+      "note": "ECOVACS Japan公式ストアの純正品価格。メインブラシ・サイドブラシ・フィルターは単品がなくセット販売のため、セットを公式の交換頻度で買い替える前提（メインブラシ分はやや高めに見積もり）。"
     }
   }
 }

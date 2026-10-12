@@ -47,6 +47,95 @@
       ],
       "excluded": [],
       "note": "価格はRoborock純正品の正規販売店（ソフトバンクセレクション）の税込価格。型番・対応機種はRoborock公式アクセサリー一覧で確認。"
+    },
+    "qrevo-l": {
+      "parts": [
+        {
+          "item": "紙パック（紙パックC）",
+          "packPrice": 1980, "packQty": 3, "perSwap": 1,
+          "intervalMonths": [2, 2],
+          "intervalBasis": "製品ページ「60日分のゴミを収集可能」（取扱説明書は「必要に応じて交換」）",
+          "priceUrl": "https://shop.softbankselection.jp/item/6970995788273.html",
+          "intervalUrl": "https://jp.roborock.com/pages/roborock-qrevo-l"
+        },
+        {
+          "item": "メインブラシ（ラバータイプ）",
+          "packPrice": 1980, "packQty": 1, "perSwap": 1,
+          "intervalMonths": [6, 12],
+          "intervalBasis": "取扱説明書「6～12か月ごとに交換」",
+          "priceUrl": "https://shop.softbankselection.jp/item/6970995783186.html",
+          "intervalUrl": "https://jp.roborock.com/cdn/shop/t/7/assets/manual_qrevol.pdf"
+        },
+        {
+          "item": "サイドブラシ（サイドブラシN2）",
+          "packPrice": 1650, "packQty": 2, "perSwap": 1,
+          "intervalMonths": [3, 6],
+          "intervalBasis": "取扱説明書「3～6か月ごとに交換」",
+          "priceUrl": "https://shop.softbankselection.jp/item/6970995783605.html",
+          "intervalUrl": "https://jp.roborock.com/cdn/shop/t/7/assets/manual_qrevol.pdf"
+        },
+        {
+          "item": "エアフィルター（エアフィルターF）",
+          "packPrice": 1980, "packQty": 2, "perSwap": 1,
+          "intervalMonths": [6, 12],
+          "intervalBasis": "取扱説明書「6～12か月に1度交換」",
+          "priceUrl": "https://shop.softbankselection.jp/item/6970995783568.html",
+          "intervalUrl": "https://jp.roborock.com/cdn/shop/t/7/assets/manual_qrevol.pdf"
+        },
+        {
+          "item": "丸形モップクロス（丸形モップクロスD）",
+          "packPrice": 1980, "packQty": 4, "perSwap": 2,
+          "intervalMonths": [1, 3],
+          "intervalBasis": "取扱説明書「1～3か月に1度交換」（モップは2枚使用）",
+          "priceUrl": "https://shop.softbankselection.jp/item/6936905903686.html",
+          "intervalUrl": "https://jp.roborock.com/cdn/shop/t/7/assets/manual_qrevol.pdf"
+        }
+      ],
+      "excluded": [],
+      "note": "価格はRoborock純正品の正規販売店（ソフトバンクセレクション）の税込価格。型番・対応機種はRoborock公式アクセサリー一覧で確認。"
+    },
+    "saros-10r": {
+      "parts": [
+        {
+          "item": "紙パック（紙パックC）",
+          "packPrice": 1980, "packQty": 3, "perSwap": 1,
+          "intervalMonths": [2, 2],
+          "intervalBasis": "製品ページ「60日分のゴミを本体から自動で吸い上げ」（販売ページは「必要に応じて交換」）",
+          "priceUrl": "https://shop.softbankselection.jp/item/6970995788273.html",
+          "intervalUrl": "https://jp.roborock.com/pages/roborock-saros-10r"
+        },
+        {
+          "item": "メインブラシ（メインブラシN・2本1組）",
+          "packPrice": 3300, "packQty": 2, "perSwap": 2,
+          "intervalMonths": [6, 12],
+          "intervalBasis": "販売ページ「6～12か月ごとに交換」（本体はメインブラシ2本）",
+          "priceUrl": "https://shop.softbankselection.jp/item/6970995783599.html"
+        },
+        {
+          "item": "サイドブラシ（サイドブラシN2）",
+          "packPrice": 1650, "packQty": 2, "perSwap": 1,
+          "intervalMonths": [3, 6],
+          "intervalBasis": "販売ページ「3～6か月ごとに交換」",
+          "priceUrl": "https://shop.softbankselection.jp/item/6970995783605.html"
+        },
+        {
+          "item": "エアフィルター（エアフィルターK）",
+          "packPrice": 1980, "packQty": 2, "perSwap": 1,
+          "intervalMonths": [6, 12],
+          "intervalBasis": "Roborock公式アクセサリー一覧「6～12か月ごとに交換」",
+          "priceUrl": "https://shop.softbankselection.jp/item/6936905904270.html",
+          "intervalUrl": "https://jp.roborock.com/pages/accessories"
+        },
+        {
+          "item": "丸形モップクロス（丸形モップクロスC）",
+          "packPrice": 1980, "packQty": 4, "perSwap": 2,
+          "intervalMonths": [1, 3],
+          "intervalBasis": "販売ページ「1～3か月ごとに交換」（モップは2枚使用）",
+          "priceUrl": "https://shop.softbankselection.jp/item/6936905903549.html"
+        }
+      ],
+      "excluded": ["専用床洗剤（他機種と条件をそろえるため除外）"],
+      "note": "価格はRoborock純正品の正規販売店（ソフトバンクセレクション）の税込価格。型番・対応機種はRoborock公式アクセサリー一覧で確認。交換目安は正規販売店の商品ページ（メーカー記載の仕様表）による。"
     }
   }
 }
