@@ -21,6 +21,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts" / "lib"))
 from format_prose import ja_wrap, product_name_html  # noqa: E402
+from consumables import load_verified, summarize  # noqa: E402
 
 _spec = importlib.util.spec_from_file_location(
     "maker_pages", ROOT / "drafts" / "build-manufacturer-compare-preview.py"
@@ -30,6 +31,7 @@ _spec.loader.exec_module(mp)
 
 DATA_DIR = ROOT / "products" / "data"
 DIMS_DIR = ROOT / "scripts" / "data" / "dims"
+CONS_DIR = ROOT / "scripts" / "data" / "consumables"
 OUT_DIR = ROOT / "guides"
 SITE = "https://nattoku-labo.com"
 NAV_V = "20261005a"
@@ -63,7 +65,7 @@ GUIDES = [
     {"slug": "robot-vacuum-cheap", "label": "安いロボット掃除機のおすすめ", "group": "予算で選ぶ",
      "meta": "5万円以下を口コミで比較"},
     {"slug": "robot-vacuum-cost-performance", "label": "コスパの良いロボット掃除機", "group": "予算で選ぶ",
-     "meta": "本体＋消耗品の3年総額で比較"},
+     "meta": "本体価格と消耗品代で比較"},
     {"slug": "robot-vacuum-cat", "label": "猫がいる家のロボット掃除機", "group": "暮らしで選ぶ",
      "meta": "猫毛・猫砂・静音性で比較"},
     {"slug": "robot-vacuum-pet", "label": "ペットがいる家のロボット掃除機", "group": "暮らしで選ぶ",
@@ -121,6 +123,7 @@ def cat_sentences(raw: dict) -> list[str]:
 
 def load_products() -> list[dict]:
     dims = load_dims()
+    cons = load_verified(CONS_DIR)
     rows: list[dict] = []
     for meta in mp.MANUFACTURERS:
         for r in mp.load_manufacturer(meta["id"]):
@@ -128,8 +131,8 @@ def load_products() -> list[dict]:
             perf = raw.get("performanceAnalysis") or {}
             attrs = raw.get("attributeScores") or {}
             r["maker"] = meta
-            r["annual"] = int((raw.get("operationalCost") or {}).get("annual") or 0)
-            r["tco3"] = r["price"] + 3 * r["annual"]
+            c = cons.get(r["id"])
+            r["cons"] = summarize(c, r["price"]) if c else None
             r["pet_owner"] = _num((attrs.get("petOwner") or {}).get("overall"))
             r["apartment"] = _num((attrs.get("apartment") or {}).get("overall"))
             r["cat_quotes"] = cat_sentences(raw)
@@ -178,6 +181,78 @@ def mean(vals) -> float | None:
 
 def yen(n: int) -> str:
     return f"¥{int(n):,}"
+
+
+PENDING = "確認中"
+
+
+def yen_range(lo: int, hi: int, step: int) -> str:
+    a, b = int(lo / step + 0.5) * step, int(hi / step + 0.5) * step
+    return f"約¥{a:,}" if a == b else f"約¥{a:,}〜{b:,}"
+
+
+def annual_txt(r: dict) -> str:
+    c = r.get("cons")
+    return yen_range(c["annualLo"], c["annualHi"], 100) if c else PENDING
+
+
+def tco3_txt(r: dict) -> str:
+    c = r.get("cons")
+    return yen_range(c["tco3Lo"], c["tco3Hi"], 1000) if c else PENDING
+
+
+def months_txt(iv: list[float]) -> str:
+    def one(m: float) -> str:
+        if m == int(m):
+            return f"{int(m)}カ月"
+        return f"{round(m * 30.4)}日"
+    a, b = iv
+    if a == b:
+        return f"{one(a)}ごと"
+    if a == int(a) and b == int(b):
+        return f"{int(a)}〜{int(b)}カ月ごと"
+    return f"{one(a)}〜{one(b)}ごと"
+
+
+def cons_breakdown_html(rows: list[dict]) -> str:
+    blocks = []
+    for r in rows:
+        c = r.get("cons")
+        if not c:
+            continue
+        trs = []
+        for p in c["parts"]:
+            qty = f"{p['packQty']}個入り" if p["packQty"] > 1 else "1個"
+            per = f"・1回{p['perSwap']}個" if p.get("perSwap", 1) > 1 else ""
+            label = "価格" if p.get("intervalUrl") else "価格・交換目安"
+            links = [f'<a href="{html.escape(p["priceUrl"])}" target="_blank" rel="noopener">{label}</a>']
+            if p.get("intervalUrl"):
+                links.append(f'<a href="{html.escape(p["intervalUrl"])}" target="_blank" rel="noopener">交換目安</a>')
+            trs.append(
+                "<tr>"
+                f"<td>{html.escape(p['item'])}</td>"
+                f"<td>{yen(p['packPrice'])}（{qty}{per}）</td>"
+                f"<td>{months_txt(p['intervalMonths'])}<br><small>{html.escape(p['intervalBasis'])}</small></td>"
+                f"<td>{yen_range(p['annualLo'], p['annualHi'], 10)}</td>"
+                f"<td>{'・'.join(links)}</td>"
+                "</tr>"
+            )
+        extra = []
+        if c["excluded"]:
+            extra.append("計算に含めていないもの：" + "、".join(c["excluded"]))
+        if c["note"]:
+            extra.append(c["note"])
+        extra.append(f"確認日：{c['checkedAt']}")
+        blocks.append(f"""
+        <details class="sources">
+          <summary>{html.escape(r['name'])}：消耗品 年{annual_txt(r)}</summary>
+          <div class="dt-wrap"><table class="dt">
+            <thead><tr><th scope="col">部品</th><th scope="col">純正品価格</th><th scope="col">交換目安</th><th scope="col">年間</th><th scope="col">出典</th></tr></thead>
+            <tbody>{''.join(trs)}</tbody>
+          </table></div>
+          <p>{html.escape(' '.join(extra))}</p>
+        </details>""")
+    return "".join(blocks)
 
 
 def _cm_num(mm: float) -> str:
@@ -1596,7 +1671,6 @@ def build_cheap(rows: list[dict]) -> dict:
     diffs.sort(key=lambda x: -x[3])
     few = [r for r in cheap if r["reviews"] < MIN_REVIEWS]
     weak = [r for r in reliable(cheap) if (r["carpet"] is not None and r["carpet"] < 60) or (r["step"] is not None and r["step"] < 65)]
-    upkeep = sorted([r for r in cheap if r["annual"] >= 25000], key=lambda r: -r["annual"])
     mop_reviewed = [r for r in reliable(cheap) if "水拭き" in r["floor_comment_full"]]
 
     sec_market = [
@@ -1633,8 +1707,8 @@ def build_cheap(rows: list[dict]) -> dict:
         (
             "本体価格だけでなく消耗品代も見る",
             "ゴミパックやモップ、ブラシなどの消耗品は、**機種によって年間の費用が大きく違います**。"
-            + (f"5万円以下でも、{join_ja([f'{r['name']}（年{yen(r['annual'])}）' for r in upkeep[:3]])}のように消耗品代が高めの機種があります。" if upkeep else "")
-            + f"\n本体と消耗品を合わせた総額は{gl('robot-vacuum-cost-performance')}で比べています。",
+            "特に、交換式のモップを使う水拭き機能は、交換周期が短く費用がかさみやすい部分です。"
+            f"\n消耗品代の考え方は{gl('robot-vacuum-cost-performance')}で解説しています。",
         ),
     ]
 
@@ -1646,7 +1720,9 @@ def build_cheap(rows: list[dict]) -> dict:
         )
         if ax:
             lead += f"特に**{ax[0][0]}（{ax[0][1]:.0f}点）と{ax[1][0]}（{ax[1][1]:.0f}点）の口コミ評価が高め**です。"
-        lead += f"消耗品代の目安は年{yen(r['annual'])}です。" + pick_lead_tail(r)
+        if r["cons"]:
+            lead += f"メーカー公式の価格と交換目安で計算した消耗品代は、年{annual_txt(r)}です。"
+        lead += pick_lead_tail(r)
         cards.append(pick_card(f"pick-{i}", f"{i}位：{r['name']}（{yen(r['price'])}）", lead, r))
 
     table = data_table(
@@ -1659,7 +1735,7 @@ def build_cheap(rows: list[dict]) -> dict:
             ("フローリング", lambda r: sc_cell(r["floor"])),
             ("カーペット", lambda r: sc_cell(r["carpet"])),
             ("静音性", lambda r: sc_cell(r["quiet"])),
-            ("消耗品／年", lambda r: yen(r["annual"]) if r["annual"] else "—"),
+            ("消耗品／年", annual_txt),
         ],
         cheap,
         "5万円以下のロボット掃除機比較表",
@@ -1743,16 +1819,28 @@ def build_cheap(rows: list[dict]) -> dict:
         "faqs": faqs,
         "summary": summary,
         "picks": picks,
-        "notes": ["消耗品代は、ゴミパック・モップ・ブラシなどを推奨周期で交換した場合の年間目安です。"],
+        "notes": [CONS_NOTE],
     }
+
+
+CONS_NOTE = (
+    "消耗品代は、メーカー公式の純正品価格と交換目安から計算した年間の幅です（交換目安の長い方〜短い方）。"
+    "公式情報で確認できていない機種は「確認中」と表示しています。洗剤・電気代は含みません。"
+)
 
 
 def build_cost(rows: list[dict]) -> dict:
     rel_rows = reliable(rows)
-    qualified = sorted([r for r in rel_rows if r["overall"] >= 85], key=lambda r: (r["tco3"], -r["overall"]))
-    picks = qualified[:5]
-    cheapest = min(rows, key=lambda r: r["price"])
-    annuals = [r["annual"] for r in rows if r["annual"]]
+    qualified = [r for r in rel_rows if r["overall"] >= 85]
+    verified = sorted([r for r in qualified if r["cons"]], key=lambda r: r["price"])
+    if len(verified) < len(qualified):
+        return build_cost_pending(rel_rows, qualified, verified)
+
+    ranked = sorted(qualified, key=lambda r: (r["cons"]["tco3Mid"], -r["overall"]))
+    picks = ranked[:5]
+    cheapest = min(qualified, key=lambda r: r["price"])
+    lo_all = min(r["cons"]["annualLo"] for r in verified)
+    hi_all = max(r["cons"]["annualHi"] for r in verified)
     band_rows = []
     hrefs = {
         "band-under5": "/compare/robot-vacuum-under-5man", "band-5-7": "/compare/robot-vacuum-5-7man",
@@ -1766,11 +1854,17 @@ def build_cost(rows: list[dict]) -> dict:
             band_rows.append([
                 f'<a href="{hrefs[aid]}">{label}</a>',
                 f'<a href="/products/{b["id"]}">{html.escape(b["name"])}</a>',
-                f"{b['overall']:.1f}点", yen(b["price"]), yen(b["tco3"]),
+                f"{b['overall']:.1f}点", yen(b["price"]), tco3_txt(b),
             ])
-    upkeep = sorted([r for r in rows if r["price"] < 100000 and r["annual"] >= 25000], key=lambda r: -r["annual"] / r["price"])
+    upkeep = sorted(
+        [r for r in rel_rows if r["cons"] and r["price"] < 100000 and r["cons"]["annualHi"] >= 25000],
+        key=lambda r: -r["cons"]["annualHi"] / r["price"],
+    )
     hi_end = [r for r in rel_rows if r["price"] >= 70000]
     lo_end = [r for r in rel_rows if r["price"] < 70000]
+
+    def overlaps(a: dict, b: dict) -> bool:
+        return a["cons"]["tco3Hi"] >= b["cons"]["tco3Lo"]
 
     sec_def = [
         P(
@@ -1782,8 +1876,9 @@ def build_cost(rows: list[dict]) -> dict:
         + P("条件2：3年総額＝本体価格＋消耗品代（年間）×3年が安い")
         + "</div>",
         P(
-            "消耗品代は、ゴミパック・モップ・ブラシ・フィルターなどを推奨周期で交換した場合の年間目安です。"
-            f"掲載機種では年{yen(min(annuals))}〜{yen(max(annuals))}と幅があり、**本体価格だけでは本当の負担がわかりません**。"
+            "消耗品代は、メーカー公式の純正品価格と交換目安から計算しました。"
+            "交換目安は「3〜6カ月」のように幅があるため、**3年総額も幅で示し、幅の中間値の安い順**に並べています。"
+            f"確認できた機種では年{yen_range(lo_all, hi_all, 100)}と差が大きく、**本体価格だけでは本当の負担がわかりません**。"
             "3年は、バッテリーの劣化や買い替えを考え始める一つの目安として採用しています。"
         ),
     ]
@@ -1791,51 +1886,66 @@ def build_cost(rows: list[dict]) -> dict:
     cards = []
     for i, r in enumerate(picks, 1):
         lead = (
-            f"本体{yen(r['price'])}＋消耗品 年{yen(r['annual'])}×3年で、**3年総額は{yen(r['tco3'])}**です。"
-            f"総合点85点以上の{len(qualified)}機種のなかで、**3年総額が{ordinal(i)}安い**機種です（総合点{r['overall']:.1f}点）。"
-        ) + pick_lead_tail(r)
-        cards.append(pick_card(f"pick-{i}", f"{i}位：{r['name']}（3年総額{yen(r['tco3'])}）", lead, r,
-                               [f"3年総額 {yen(r['tco3'])}", f"消耗品 年{yen(r['annual'])}"]))
+            f"本体{yen(r['price'])}＋消耗品 年{annual_txt(r)}×3年で、**3年総額は{tco3_txt(r)}**です。"
+            f"総合点85点以上の{len(qualified)}機種のなかで、**3年総額（幅の中間値）が{ordinal(i)}安い**機種です（総合点{r['overall']:.1f}点）。"
+        )
+        if i < len(picks) and overlaps(r, picks[i]):
+            lead += "次の順位の機種とは金額の幅が重なるため、**使い方によっては順位が入れ替わります**。"
+        lead += pick_lead_tail(r)
+        cards.append(pick_card(f"pick-{i}", f"{i}位：{r['name']}（3年総額{tco3_txt(r)}）", lead, r,
+                               [f"3年総額 {tco3_txt(r)}", f"消耗品 年{annual_txt(r)}"]))
 
     upkeep_html = ""
     if upkeep:
         upkeep_html = P(
             "本体が手ごろでも、**消耗品代が高いと3年で大きな差**になります。"
-            "10万円未満で消耗品代が年2.5万円以上の機種は次のとおりです。"
+            "10万円未満で、消耗品代が多いときに年2.5万円以上になる機種は次のとおりです。"
         ) + mini_table(
             ["機種", "本体価格", "消耗品／年", "3年総額"],
-            [[f'<a href="/products/{r["id"]}">{html.escape(r["name"])}</a>', yen(r["price"]), yen(r["annual"]), yen(r["tco3"])] for r in upkeep],
-        ) + P("ゴミパックの交換頻度やモップの種類で費用は変わるため、気になる機種は製品ページの消耗品の内訳も確認してください。")
+            [[f'<a href="/products/{r["id"]}">{html.escape(r["name"])}</a>', yen(r["price"]), annual_txt(r), tco3_txt(r)] for r in upkeep],
+        ) + P("水拭き用モップの交換が費用の多くを占める機種もあります。水拭きを使わない場合、モップ代はかかりません。")
 
     table = data_table(
         [
             ("製品", product_cell),
-            ("3年総額", lambda r: f"<strong>{yen(r['tco3'])}</strong>"),
+            ("3年総額", lambda r: f"<strong>{tco3_txt(r)}</strong>"),
             ("本体価格", lambda r: yen(r["price"])),
-            ("消耗品／年", lambda r: yen(r["annual"])),
+            ("消耗品／年", annual_txt),
             ("総合点", lambda r: sc_cell(r["overall"], 1)),
             ("口コミ信頼度", lambda r: sc_cell(r["rel"], 1)),
             ("口コミ数", lambda r: f"{r['reviews']:,}件"),
         ],
-        sorted(rel_rows, key=lambda r: r["tco3"]),
+        sorted(rel_rows, key=lambda r: (r["cons"] is None, r["cons"]["tco3Mid"] if r["cons"] else r["price"])),
         "3年総額の比較表",
     )
 
     conclusion = conclusion_box(
         "結論：3年総額で見たコスパ上位3台",
-        [(f"{i}位", r, f"3年総額{yen(r['tco3'])}・総合点{r['overall']:.1f}点。", f"pick-{i}") for i, r in enumerate(picks[:3], 1)],
+        [(f"{i}位", r, f"3年総額{tco3_txt(r)}・総合点{r['overall']:.1f}点。", f"pick-{i}") for i, r in enumerate(picks[:3], 1)],
     )
 
+    if cheapest["id"] == picks[0]["id"]:
+        cheap_faq = (
+            f"本記事の対象では、本体が最も安い{plink(cheapest)}（{yen(cheapest['price'])}）が、"
+            f"3年総額（{tco3_txt(cheapest)}）でも1位でした。ただし、**消耗品代を含めると順位が入れ替わる機種もある**ため、総額で比べるのがおすすめです。"
+        )
+    else:
+        cheap_faq = (
+            f"本体が最も安いのは{plink(cheapest)}（{yen(cheapest['price'])}）で、3年総額は{tco3_txt(cheapest)}です。"
+            f"本記事の1位の{plink(picks[0])}は3年総額{tco3_txt(picks[0])}で、**総額で見ると順位が入れ替わります**。"
+        )
+
     faqs = [
-        (
-            "いちばん安い機種がコスパ最強ではないのですか？",
-            f"本体が最も安いのは{plink(cheapest)}（{yen(cheapest['price'])}）ですが、消耗品代が年{yen(cheapest['annual'])}かかるため、3年総額は{yen(cheapest['tco3'])}になります。"
-            f"本記事の1位の{plink(picks[0])}は3年総額{yen(picks[0]['tco3'])}で、**総額で見ると順位が入れ替わります**。",
-        ),
+        ("いちばん安い機種がコスパ最強ではないのですか？", cheap_faq),
         (
             "消耗品代はどれくらいかかりますか？",
-            f"掲載機種の年間消耗品代は{yen(min(annuals))}〜{yen(max(annuals))}で、**中央値は{yen(int(statistics.median(annuals)))}**です。"
-            "自動ゴミ収集の紙パックや、交換式モップのある機種は**高くなりやすい**傾向があります。",
+            f"総合点85点以上の{len(verified)}機種では、年間の消耗品代は{yen_range(lo_all, hi_all, 100)}でした。"
+            "**交換式モップや自動ゴミ収集の紙パックがある機種は高くなりやすい**傾向があります。",
+        ),
+        (
+            "なぜ金額に幅があるのですか？",
+            "メーカーの交換目安が「3〜6カ月」のように幅で示されているためです。"
+            "長い方の周期で交換すれば下限、短い方なら上限の金額になります。水拭きを使わない場合、モップ代はかかりません。",
         ),
         (
             "全自動（モップ洗浄付き）モデルはコスパが悪いですか？",
@@ -1846,13 +1956,13 @@ def build_cost(rows: list[dict]) -> dict:
         (
             "互換品の消耗品を使えば安くなりますか？",
             "互換品は安く手に入ることがありますが、**品質や適合はメーカーが保証していません**。"
-            "本記事の消耗品代は純正品の目安です。保証期間中は純正品を使うのが安心です。",
+            "本記事の消耗品代は純正品の価格で計算しています。保証期間中は純正品を使うのが安心です。",
         ),
     ]
 
     summary = f"""
         <div class="summary-box">
-          {P(f"ロボット掃除機のコスパは、**本体価格だけでなく消耗品代まで含めて考える**のがポイントです。総合点85点以上で3年総額が最も安いのは**{plink(picks[0])}**でした。")}
+          {P(f"ロボット掃除機のコスパは、**本体価格だけでなく消耗品代まで含めて考える**のがポイントです。総合点85点以上で3年総額（幅の中間値）が最も安いのは**{plink(picks[0])}**でした。")}
           <ul>
             <li>本体価格の安さで選ぶ → {prose(gl('robot-vacuum-cheap'))}</li>
             <li>予算帯ごとに比べる → <a href="/compare/">価格帯別の徹底比較</a></li>
@@ -1866,41 +1976,183 @@ def build_cost(rows: list[dict]) -> dict:
         "h1": "コスパの良いロボット掃除機おすすめ｜本体価格＋消耗品の3年総額と口コミ評価で比較",
         "description": (
             "ロボット掃除機のコスパを「本体価格＋消耗品の3年総額」と口コミ分析の総合点で比較。"
-            "総合点85点以上の機種から3年総額が安い順に、価格帯別のコスパ機種も紹介します。"
+            "消耗品代はメーカー公式の価格と交換目安から計算し、総合点85点以上の機種を3年総額が安い順に紹介します。"
         ),
         "lede": (
             "本体が安くても、消耗品代が高ければ結局は割高になります。"
-            "口コミ評価が高い機種に絞り、本体＋消耗品の3年総額で本当にコスパの良いロボット掃除機を比べました。"
+            "口コミ評価が高い機種に絞り、メーカー公式の消耗品価格と交換目安から、本体＋消耗品の3年総額を比べました。"
         ),
-        "chips": ["3年総額で比較", f"総合点85点以上・{len(qualified)}機種"],
+        "chips": ["3年総額で比較", f"総合点85点以上・{len(qualified)}機種", "消耗品はメーカー公式情報"],
         "know": [
             ("コスパを測る基準", "「評価の高さ」と「3年間の総額」の2つでコスパを定義します。"),
             ("3年総額で見たおすすめ機種", "総合点85点以上の機種を、3年総額が安い順に紹介します。"),
-            ("維持費が高い機種の見分け方", "本体は安くても消耗品代がかさむ機種を、データで確認できます。"),
+            ("消耗品代の内訳と出典", "部品ごとの純正品価格・交換目安と、その出典を確認できます。"),
         ],
         "conclusion": conclusion,
         "intro": [
             "ロボット掃除機は、買ったあとにもゴミパックやモップ、ブラシなどの消耗品代がかかります。"
-            "当サイトの分析では、**年間の消耗品代が本体価格の半分を超える機種**もありました。",
+            "交換目安と純正品の価格は機種ごとに違い、**3年で数万円の差**になることもあります。",
             "そこで本記事では、口コミの評価が十分に高い機種だけを対象に、本体と消耗品を合わせた3年間の総額で比べました。",
         ],
         "sections": [
             ("definition", "この記事での「コスパ」の考え方", "".join(sec_def)),
             ("picks", "3年総額で選ぶコスパの良いロボット掃除機", P(
-                f"口コミ{MIN_REVIEWS}件以上・総合点85点以上の機種を、3年総額の安い順に紹介します。"
+                f"口コミ{MIN_REVIEWS}件以上・総合点85点以上の機種を、3年総額（幅の中間値）の安い順に紹介します。"
             ) + f'<div class="articles">{"".join(cards)}</div>'),
             ("bands", "価格帯別のコスパ機種", P(
                 f"予算が決まっている人向けに、価格帯ごとの総合点トップ（口コミ{MIN_REVIEWS}件以上）と3年総額をまとめました。"
             ) + mini_table(["価格帯", "機種", "総合点", "本体価格", "3年総額"], band_rows)),
             ("upkeep", "本体が安くても維持費が高い機種に注意", upkeep_html or P("該当する機種はありません。")),
             ("table", "3年総額の比較表", P(
-                f"口コミ{MIN_REVIEWS}件以上の{len(rel_rows)}機種を、3年総額の安い順に並べました。"
+                f"口コミ{MIN_REVIEWS}件以上の{len(rel_rows)}機種を、3年総額（幅の中間値）の安い順に並べました。"
+                "消耗品の公式情報を確認中の機種は、最後に本体価格の安い順で載せています。"
             ) + table),
+            ("breakdown", "消耗品代の内訳と出典", P(
+                "部品ごとの純正品価格・交換目安と、計算に使った公式ページです。"
+            ) + cons_breakdown_html(verified)),
         ],
         "faqs": faqs,
         "summary": summary,
         "picks": picks,
-        "notes": ["消耗品代は、ゴミパック・モップ・ブラシなどを推奨周期で交換した場合の年間目安です。電気代は含みません。"],
+        "notes": [CONS_NOTE],
+    }
+
+
+def build_cost_pending(rel_rows: list[dict], qualified: list[dict], verified: list[dict]) -> dict:
+    by_price = sorted(qualified, key=lambda r: r["price"])
+    hi_end = [r for r in rel_rows if r["price"] >= 70000]
+    lo_end = [r for r in rel_rows if r["price"] < 70000]
+
+    conclusion = f"""
+        <div class="conclusion" aria-label="お知らせ">
+          <p class="conclusion-title">3年総額のランキングは現在確認中です</p>
+          {P(
+            "消耗品の価格と交換目安を、各社の公式情報で確認し直しています。"
+            f"対象{len(qualified)}機種のうち、確認が終わったのは{len(verified)}機種です。"
+            "**すべての機種で確認できるまで、3年総額とランキングの表示を止めています**。"
+          )}
+        </div>"""
+
+    sec_def = [
+        P(
+            "「コスパが良い」は人によって意味が変わります。本記事では、口コミの評価が十分に高い機種のなかで、"
+            "**買ってから3年間に払うお金が少ない**ことを「コスパが良い」と考えます。"
+        ),
+        '<div class="callout">'
+        + P(f"条件1：口コミ{MIN_REVIEWS}件以上・総合点85点以上（評価が安定して高い）")
+        + P("条件2：3年総額＝本体価格＋消耗品代（年間）×3年が安い")
+        + "</div>",
+        P(
+            "消耗品代は、メーカー公式の純正品価格と交換目安から計算します。"
+            "交換目安は「3〜6カ月」のように幅があるため、**金額も幅で示します**。"
+        ),
+    ]
+
+    table = data_table(
+        [
+            ("製品", product_cell),
+            ("本体価格", lambda r: f"<strong>{yen(r['price'])}</strong>"),
+            ("消耗品／年", annual_txt),
+            ("総合点", lambda r: sc_cell(r["overall"], 1)),
+            ("口コミ信頼度", lambda r: sc_cell(r["rel"], 1)),
+            ("口コミ数", lambda r: f"{r['reviews']:,}件"),
+        ],
+        by_price,
+        "総合点85点以上の機種",
+    )
+
+    points = [
+        (
+            "交換式モップは費用がかさみやすい",
+            "水拭き用のモップは、メーカーの交換目安が**1〜3カ月ごと**など短めの機種があり、年間の消耗品代の多くを占めることがあります。"
+            "水拭きを使わない場合、モップ代はかかりません。",
+        ),
+        (
+            "紙パック式の自動ゴミ収集は紙パック代がかかる",
+            "自動ゴミ収集ステーションが紙パック式の機種は、**約2カ月ごと**の交換が目安とされていることが多く、年に数回の買い足しが必要です。"
+            "サイクロン式など紙パックを使わないステーションもあります。",
+        ),
+        (
+            "純正品の価格は公式ストアで確認する",
+            "同じ部品でも、販売店によって価格や入り数が違います。互換品は安いことがありますが、**品質や適合はメーカーが保証していません**。",
+        ),
+    ]
+
+    sections = [
+        ("definition", "この記事での「コスパ」の考え方", "".join(sec_def)),
+        ("candidates", "総合点85点以上の機種", P(
+            f"口コミ{MIN_REVIEWS}件以上・総合点85点以上の{len(qualified)}機種を、本体価格の安い順に並べました。"
+            "消耗品代は、公式情報で確認できた機種だけ表示しています。"
+        ) + table),
+        ("upkeep", "消耗品代で差が出やすいポイント", points_list(points)),
+    ]
+    if verified:
+        sections.append(("breakdown", "確認済みの消耗品代の内訳と出典", P(
+            "部品ごとの純正品価格・交換目安と、計算に使った公式ページです。"
+        ) + cons_breakdown_html(verified)))
+
+    faqs = [
+        (
+            "3年総額のランキングはいつ見られますか？",
+            "対象機種すべての消耗品について、メーカー公式の価格と交換目安を確認でき次第、この記事で公開します。",
+        ),
+        (
+            "なぜ消耗品代に幅があるのですか？",
+            "メーカーの交換目安が「3〜6カ月」のように幅で示されているためです。"
+            "長い方の周期で交換すれば下限、短い方なら上限の金額になります。",
+        ),
+        (
+            "全自動（モップ洗浄付き）モデルはコスパが悪いですか？",
+            f"7万円以上の機種の総合点の平均は{mean(r['overall'] for r in hi_end)}点、7万円未満は{mean(r['overall'] for r in lo_end)}点です"
+            f"（口コミ{MIN_REVIEWS}件以上）。モップ洗浄などで手間は減りますが、本体価格は高くなりがちです。"
+            "**水拭きの手間をお金で解決したいかどうか**で判断しましょう。",
+        ),
+        (
+            "互換品の消耗品を使えば安くなりますか？",
+            "互換品は安く手に入ることがありますが、**品質や適合はメーカーが保証していません**。"
+            "本記事の消耗品代は純正品の価格で計算しています。保証期間中は純正品を使うのが安心です。",
+        ),
+    ]
+
+    summary = f"""
+        <div class="summary-box">
+          {P("ロボット掃除機のコスパは、**本体価格だけでなく消耗品代まで含めて考える**のがポイントです。3年総額のランキングは、公式情報の確認が終わり次第公開します。")}
+          <ul>
+            <li>本体価格の安さで選ぶ → {prose(gl('robot-vacuum-cheap'))}</li>
+            <li>予算帯ごとに比べる → <a href="/compare/">価格帯別の徹底比較</a></li>
+          </ul>
+        </div>"""
+
+    return {
+        "slug": "robot-vacuum-cost-performance",
+        "crumb": "コスパの良いロボット掃除機",
+        "title": f"コスパの良いロボット掃除機の選び方｜本体価格と消耗品代の考え方【{YEAR}年】",
+        "h1": "コスパの良いロボット掃除機の選び方｜本体価格と消耗品代で考える",
+        "description": (
+            "ロボット掃除機のコスパを、本体価格と消耗品代の両面から解説。"
+            "口コミ分析の総合点85点以上の機種と、メーカー公式情報で確認した消耗品代の内訳を紹介します。"
+        ),
+        "lede": (
+            "本体が安くても、消耗品代が高ければ結局は割高になります。"
+            "口コミ評価が高い機種に絞り、メーカー公式の価格と交換目安で消耗品代を確認しています。"
+        ),
+        "chips": [f"総合点85点以上・{len(qualified)}機種", f"消耗品データ確認済み {len(verified)}/{len(qualified)}"],
+        "know": [
+            ("コスパを測る基準", "「評価の高さ」と「3年間の総額」の2つでコスパを考えます。"),
+            ("総合点85点以上の機種", "口コミ評価が安定して高い機種を、本体価格の安い順に確認できます。"),
+            ("消耗品代で差が出やすい点", "モップや紙パックなど、費用がかさみやすい部品を解説します。"),
+        ],
+        "conclusion": conclusion,
+        "intro": [
+            "ロボット掃除機は、買ったあとにもゴミパックやモップ、ブラシなどの消耗品代がかかります。"
+            "交換目安と純正品の価格は機種ごとに違うため、**本体価格だけでは本当の負担がわかりません**。",
+            "本記事では、口コミの評価が十分に高い機種を対象に、メーカー公式の情報で消耗品代を確認しています。",
+        ],
+        "sections": sections,
+        "faqs": faqs,
+        "summary": summary,
+        "picks": [],
+        "notes": [CONS_NOTE],
     }
 
 

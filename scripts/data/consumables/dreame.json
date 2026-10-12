@@ -1,0 +1,52 @@
+{
+  "maker": "Dreame",
+  "checkedAt": "2026-10-12",
+  "products": {
+    "l10s-ultra-gen-2": {
+      "parts": [
+        {
+          "item": "ダストバッグ（3枚入り）",
+          "packPrice": 2180, "packQty": 3, "perSwap": 1,
+          "intervalMonths": [1.4, 2.6],
+          "intervalBasis": "Dreame全自動モデル取扱説明書「6～8週間」〜製品ページ「80日ゴミ捨て不要」",
+          "priceUrl": "https://www.dreametech.jp/products/x30-ultra-l10s-ultra-gen2-l20-ultra-dust-bag",
+          "intervalUrl": "https://www.dreametech.jp/products/l10s-ultra-gen-2"
+        },
+        {
+          "item": "メインブラシ（絡まり防止）",
+          "packPrice": 5500, "packQty": 1, "perSwap": 1,
+          "intervalMonths": [6, 12],
+          "intervalBasis": "Dreame全自動モデル取扱説明書「6～12カ月毎」",
+          "priceUrl": "https://www.dreametech.jp/products/l10s-ultra-gen-2",
+          "intervalUrl": "https://m.media-amazon.com/images/I/B1PmFhKyeAL.pdf"
+        },
+        {
+          "item": "サイドブラシ（2個入り）",
+          "packPrice": 1100, "packQty": 2, "perSwap": 1,
+          "intervalMonths": [3, 6],
+          "intervalBasis": "Dreame全自動モデル取扱説明書「3～6カ月毎」",
+          "priceUrl": "https://www.dreametech.jp/products/lside-brush-l10s-ultra-gen2-l20-ultra-complete-x30-ultra-l10s-plus-se",
+          "intervalUrl": "https://m.media-amazon.com/images/I/B1PmFhKyeAL.pdf"
+        },
+        {
+          "item": "HEPAフィルター（2個入り）",
+          "packPrice": 1280, "packQty": 2, "perSwap": 1,
+          "intervalMonths": [3, 6],
+          "intervalBasis": "Dreame全自動モデル取扱説明書「3～6カ月毎」",
+          "priceUrl": "https://www.dreametech.jp/products/filter-x30-ultra-l10s-ultra-gen2",
+          "intervalUrl": "https://m.media-amazon.com/images/I/B1PmFhKyeAL.pdf"
+        },
+        {
+          "item": "モップパッド（4枚入り）",
+          "packPrice": 1446, "packQty": 4, "perSwap": 2,
+          "intervalMonths": [1, 3],
+          "intervalBasis": "Dreame全自動モデル取扱説明書「1～3カ月毎」",
+          "priceUrl": "https://www.dreametech.jp/products/mop-x50-ultra-x30-ultra-l20-ultra-complete-l10s-plus-se-l10s-ultra-gen2",
+          "intervalUrl": "https://m.media-amazon.com/images/I/B1PmFhKyeAL.pdf"
+        }
+      ],
+      "excluded": ["専用床洗剤（他機種と条件をそろえるため除外）"],
+      "note": "Dreame Japan公式ストアの純正品価格。L10s Ultra Gen 2専用の取扱説明書に交換周期の記載がないため、同社の全自動モデル取扱説明書の目安を使用。"
+    }
+  }
+}

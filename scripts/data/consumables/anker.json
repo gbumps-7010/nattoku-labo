@@ -1,0 +1,36 @@
+{
+  "maker": "Anker",
+  "checkedAt": "2026-10-12",
+  "products": {
+    "eufy-robot-vacuum-auto-empty-c10": {
+      "parts": [
+        {
+          "item": "ダストバッグ",
+          "packPrice": 2990, "packQty": 6, "perSwap": 1,
+          "intervalMonths": [2, 2],
+          "intervalBasis": "製品ページ「約2ヶ月間ゴミ捨て不要」",
+          "priceUrl": "https://www.ankerjapan.com/products/t291c",
+          "intervalUrl": "https://www.ankerjapan.com/products/t2292"
+        },
+        {
+          "item": "サイドブラシ",
+          "packPrice": 1990, "packQty": 6, "perSwap": 1,
+          "intervalMonths": [3, 6],
+          "intervalBasis": "同社 X10 Pro Omni 取扱説明書の交換目安（C10の取扱説明書に記載なし）",
+          "priceUrl": "https://www.ankerjapan.com/products/t291d",
+          "intervalUrl": "https://service.eufy.com/article-description/eufy-Clean-X10-Pro-Omni-%E5%8F%96%E6%89%B1%E8%AA%AC%E6%98%8E%E6%9B%B8-T2351"
+        },
+        {
+          "item": "フィルター",
+          "packPrice": 1990, "packQty": 2, "perSwap": 1,
+          "intervalMonths": [3, 6],
+          "intervalBasis": "同社 X10 Pro Omni 取扱説明書の交換目安（C10の取扱説明書に記載なし）",
+          "priceUrl": "https://www.ankerjapan.com/products/t290y",
+          "intervalUrl": "https://service.eufy.com/article-description/eufy-Clean-X10-Pro-Omni-%E5%8F%96%E6%89%B1%E8%AA%AC%E6%98%8E%E6%9B%B8-T2351"
+        }
+      ],
+      "excluded": ["回転ブラシ（公式の単品販売なし）"],
+      "note": "Anker Japan公式ストアの純正品価格。"
+    }
+  }
+}

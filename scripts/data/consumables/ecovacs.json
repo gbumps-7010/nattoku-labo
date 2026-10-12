@@ -1,0 +1,74 @@
+{
+  "maker": "ECOVACS",
+  "checkedAt": "2026-10-12",
+  "products": {
+    "deebot-n30": {
+      "parts": [
+        {
+          "item": "メインブラシ",
+          "packPrice": 3250, "packQty": 1, "perSwap": 1,
+          "intervalMonths": [6, 12],
+          "intervalBasis": "公式ストア商品ページ「交換頻度：6~12ヵ月ごと」",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/antibacterial-rubber-brush-n30"
+        },
+        {
+          "item": "サイドブラシ",
+          "packPrice": 2750, "packQty": 2, "perSwap": 2,
+          "intervalMonths": [3, 6],
+          "intervalBasis": "公式ストア商品ページ「交換頻度：3~6ヵ月ごと」",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/side-brush-t30-series"
+        },
+        {
+          "item": "フィルター",
+          "packPrice": 2550, "packQty": 3, "perSwap": 1,
+          "intervalMonths": [3, 6],
+          "intervalBasis": "公式ストア商品ページ「交換頻度：3~6ヵ月ごと」",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/antibacterial-filter-n30"
+        },
+        {
+          "item": "モップパッド",
+          "packPrice": 2500, "packQty": 3, "perSwap": 1,
+          "intervalMonths": [1, 2],
+          "intervalBasis": "公式ストア商品ページ「交換頻度：1~2ヵ月ごと」",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/washable-mopping-pad-x1-t10-3pcs"
+        }
+      ],
+      "excluded": [],
+      "note": "ECOVACS Japan公式ストアの純正品価格。モップパッドは確認時点で公式ストア完売表示。水拭きを使わない場合はモップ代はかからない。"
+    },
+    "deebot-n30-plus": {
+      "parts": [
+        {
+          "item": "メインブラシ",
+          "packPrice": 3250, "packQty": 1, "perSwap": 1,
+          "intervalMonths": [6, 12],
+          "intervalBasis": "公式ストア商品ページ「交換頻度：6~12ヵ月ごと」",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/antibacterial-rubber-brush-n30"
+        },
+        {
+          "item": "サイドブラシ",
+          "packPrice": 2750, "packQty": 2, "perSwap": 2,
+          "intervalMonths": [3, 6],
+          "intervalBasis": "公式ストア商品ページ「交換頻度：3~6ヵ月ごと」",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/side-brush-t30-series"
+        },
+        {
+          "item": "フィルター",
+          "packPrice": 2550, "packQty": 3, "perSwap": 1,
+          "intervalMonths": [3, 6],
+          "intervalBasis": "公式ストア商品ページ「交換頻度：3~6ヵ月ごと」",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/antibacterial-filter-n30"
+        },
+        {
+          "item": "モップパッド",
+          "packPrice": 2500, "packQty": 3, "perSwap": 1,
+          "intervalMonths": [1, 2],
+          "intervalBasis": "公式ストア商品ページ「交換頻度：1~2ヵ月ごと」",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/washable-mopping-pad-x1-t10-3pcs"
+        }
+      ],
+      "excluded": ["ゴミパック（バッグレス設計のため不要）"],
+      "note": "ECOVACS Japan公式ストアの純正品価格。自動ゴミ収集ステーションはサイクロン式で紙パック不要。モップパッドは確認時点で公式ストア完売表示。"
+    }
+  }
+}

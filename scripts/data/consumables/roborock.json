@@ -1,0 +1,52 @@
+{
+  "maker": "Roborock",
+  "checkedAt": "2026-10-12",
+  "products": {
+    "q10p": {
+      "parts": [
+        {
+          "item": "紙パック（紙パックB・3枚入り）",
+          "packPrice": 1980, "packQty": 3, "perSwap": 1,
+          "intervalMonths": [2, 2],
+          "intervalBasis": "製品ページ「60日分のゴミを自動収集」（取扱説明書は「必要に応じて交換」）",
+          "priceUrl": "https://shop.softbankselection.jp/item/6970995785890.html",
+          "intervalUrl": "https://jp.roborock.com/pages/roborock-q10p"
+        },
+        {
+          "item": "メインブラシ（メインブラシC）",
+          "packPrice": 3300, "packQty": 1, "perSwap": 1,
+          "intervalMonths": [6, 12],
+          "intervalBasis": "取扱説明書「6～12か月に1度交換」",
+          "priceUrl": "https://shop.softbankselection.jp/item/6936905902450.html",
+          "intervalUrl": "https://jp.roborock.com/cdn/shop/t/7/assets/manual_q10pplus.pdf"
+        },
+        {
+          "item": "サイドブラシ（サイドブラシN2・2個入り）",
+          "packPrice": 1650, "packQty": 2, "perSwap": 1,
+          "intervalMonths": [3, 6],
+          "intervalBasis": "取扱説明書「3～6か月に1度交換」",
+          "priceUrl": "https://shop.softbankselection.jp/item/6970995783605.html",
+          "intervalUrl": "https://jp.roborock.com/cdn/shop/t/7/assets/manual_q10pplus.pdf"
+        },
+        {
+          "item": "エアフィルター（エアフィルターI・2個入り）",
+          "packPrice": 1980, "packQty": 2, "perSwap": 1,
+          "intervalMonths": [6, 12],
+          "intervalBasis": "取扱説明書「6～12か月に1度交換」",
+          "priceUrl": "https://shop.softbankselection.jp/item/6936905902474.html",
+          "intervalUrl": "https://jp.roborock.com/cdn/shop/t/7/assets/manual_q10pplus.pdf"
+        },
+        {
+          "item": "モップクロス（モップクロスC・2個入り）",
+          "packPrice": 1980, "packQty": 2, "perSwap": 1,
+          "intervalMonths": [3, 6],
+          "intervalBasis": "取扱説明書「3～6か月に1度交換」",
+          "priceUrl": "https://shop.softbankselection.jp/item/6936905902498.html",
+          "intervalUrl": "https://jp.roborock.com/cdn/shop/t/7/assets/manual_q10pplus.pdf"
+        }
+      ],
+      "excluded": [],
+      "note": "価格はRoborock純正品の正規販売店（ソフトバンクセレクション）の税込価格。型番・対応機種はRoborock公式アクセサリー一覧で確認。"
+    }
+  }
+}
