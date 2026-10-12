@@ -4,11 +4,14 @@
 const fs = require("fs");
 const path = require("path");
 const { computeOverallScores, formatScore } = require("./lib/overall-score");
+const { loadVerified, summarize } = require("./lib/consumables");
 
 const ROOT = path.resolve(__dirname, "..");
 const PRODUCTS_DIR = path.join(ROOT, "products");
 const DATA_DIR = path.join(PRODUCTS_DIR, "data");
 const EXCLUDED = new Set(["template-unified.html", "template-unified-old.html", "test-js.html"]);
+const LOADER_V = "20261012a";
+const VERIFIED_CONSUMABLES = loadVerified(path.join(ROOT, "scripts", "data", "consumables"));
 
 function escapeHtml(value) {
   return String(value ?? "")
@@ -255,11 +258,105 @@ function formatValue(dottedPath, value) {
     const number = Number(value);
     return Number.isFinite(number) ? formatScore(number) : value;
   }
-  if (dottedPath.startsWith("operationalCost.")) {
-    const number = Number(value);
-    return Number.isFinite(number) ? number.toLocaleString("ja-JP") : value;
-  }
   return value;
+}
+
+function yenRange(lo, hi, step) {
+  const a = Math.floor(lo / step + 0.5) * step;
+  const b = Math.floor(hi / step + 0.5) * step;
+  const f = (n) => n.toLocaleString("ja-JP");
+  return a === b ? `約¥${f(a)}` : `約¥${f(a)}〜${f(b)}`;
+}
+
+function monthsText([a, b]) {
+  const one = (m) => (Number.isInteger(m) ? `${m}カ月` : `${Math.round(m * 30.4)}日`);
+  if (a === b) return `${one(a)}ごと`;
+  if (Number.isInteger(a) && Number.isInteger(b)) return `${a}〜${b}カ月ごと`;
+  return `${one(a)}〜${one(b)}ごと`;
+}
+
+function buildConsumablesSection(data, entry) {
+  const head = `<!-- CONSUMABLES_START -->
+        <section id="consumables-cost">
+            <h2 class="section-title">
+                <i class="fas fa-piggy-bank"></i>
+                消耗品代（維持費）の目安
+            </h2>
+            <div class="card">`;
+  const tail = `
+            </div>
+        </section>
+        <!-- CONSUMABLES_END -->`;
+  if (!entry) {
+    return `${head}
+                <p style="font-weight: 800; color: #0f172a; margin-bottom: 0.5rem;">消耗品データ確認中</p>
+                <p style="color: #334155; font-size: 0.95rem; line-height: 1.75; margin: 0;">消耗品の価格と交換目安を、メーカーの公式情報で確認しています。確認が終わるまで、金額の表示を止めています。</p>${tail}`;
+  }
+
+  const c = summarize(entry, Number(data.price));
+  const cell = "padding: 0.6rem 0.5rem; border-bottom: 1px solid #e5e7eb; vertical-align: top;";
+  const rows = c.parts
+    .map((p) => {
+      const qty = p.packQty > 1 ? `${p.packQty}個入り` : "1個";
+      const per = (p.perSwap || 1) > 1 ? `・1回${p.perSwap}個` : "";
+      const links = [
+        `<a href="${escapeHtml(p.priceUrl)}" target="_blank" rel="noopener">${p.intervalUrl ? "価格" : "価格・交換目安"}</a>`,
+      ];
+      if (p.intervalUrl) {
+        links.push(`<a href="${escapeHtml(p.intervalUrl)}" target="_blank" rel="noopener">交換目安</a>`);
+      }
+      return `
+                            <tr>
+                                <td style="${cell}">${escapeHtml(p.item)}</td>
+                                <td style="${cell}">¥${p.packPrice.toLocaleString("ja-JP")}（${qty}${per}）</td>
+                                <td style="${cell}">${monthsText(p.intervalMonths)}<br><small style="color: #475569;">${escapeHtml(p.intervalBasis)}</small></td>
+                                <td style="${cell} white-space: nowrap;">${yenRange(p.annualLo, p.annualHi, 10)}</td>
+                                <td style="${cell} white-space: nowrap;">${links.join("・")}</td>
+                            </tr>`;
+    })
+    .join("");
+  const notes = [];
+  if (c.excluded.length) notes.push(`計算に含めていないもの：${c.excluded.join("、")}`);
+  if (c.note) notes.push(c.note);
+  notes.push(`確認日：${c.checkedAt}`);
+  const box = (label, value, accent) => `
+                    <div style="background: white; padding: 1.25rem; border-radius: 12px; border: 2px solid ${accent}; text-align: center;">
+                        <p style="font-size: 0.9rem; color: #0f172a; margin-bottom: 0.4rem; font-weight: 600;">${label}</p>
+                        <p style="font-size: 1.6rem; font-weight: 900; color: #059669; margin: 0;">${value}</p>
+                    </div>`;
+  const th = "text-align: left; padding: 0.6rem 0.5rem; border-bottom: 2px solid #cbd5e1; white-space: nowrap;";
+  return `${head}
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1.25rem;">${box(
+                  "年間",
+                  yenRange(c.annualLo, c.annualHi, 100),
+                  "#10b981",
+                )}${box("1カ月あたり", yenRange(c.annualLo / 12, c.annualHi / 12, 100), "#e5e7eb")}
+                </div>
+                <p style="color: #334155; font-size: 0.95rem; line-height: 1.75; margin-bottom: 1rem;">メーカー公式の純正品価格と交換目安から計算した金額です。交換目安に幅があるため、金額も幅で示しています（長い方の周期で交換した場合〜短い方の周期で交換した場合）。洗剤・電気代は含みません。</p>
+                <div style="overflow-x: auto;">
+                    <table style="width: 100%; min-width: 560px; border-collapse: collapse; font-size: 0.88rem; color: #0f172a;">
+                        <thead>
+                            <tr><th scope="col" style="${th}">部品</th><th scope="col" style="${th}">純正品価格</th><th scope="col" style="${th}">交換目安</th><th scope="col" style="${th}">年間</th><th scope="col" style="${th}">出典</th></tr>
+                        </thead>
+                        <tbody>${rows}
+                        </tbody>
+                    </table>
+                </div>
+                <p style="font-size: 0.82rem; color: #475569; line-height: 1.7; margin: 0.85rem 0 0;">${escapeHtml(notes.join(" "))}</p>${tail}`;
+}
+
+const CONSUMABLES_MARKED = /<!-- CONSUMABLES_START -->[\s\S]*?<!-- CONSUMABLES_END -->/;
+const CONSUMABLES_LEGACY =
+  /(?:<!-- Daily Maintenance Cost -->\s*)?<section>\s*<h2 class="section-title">\s*<i class="fas fa-piggy-bank"><\/i>[\s\S]*?<\/section>/;
+
+function replaceConsumablesSection(html, sectionHtml, label) {
+  if (CONSUMABLES_MARKED.test(html)) return html.replace(CONSUMABLES_MARKED, () => sectionHtml);
+  if (CONSUMABLES_LEGACY.test(html)) return html.replace(CONSUMABLES_LEGACY, () => sectionHtml);
+  throw new Error(`${label}: consumables section not found`);
+}
+
+function bumpLoaderVersion(html) {
+  return html.replace(/js\/product-loader\.js\?v=[0-9a-z]+/, `js/product-loader.js?v=${LOADER_V}`);
 }
 
 const mobileOverrides = `        /* MOBILE_LAYOUT_FIX_START */
@@ -372,10 +469,10 @@ function prerenderHtml(html, data) {
   // Replace the first Product JSON-LD block, then drop any leftover JSON-LD in <head>
   // so Breadcrumb/WebPage scripts stay singular and in sync.
   let replacedJsonLd = false;
-  html = html.replace(/<script\s+type="application\/ld\+json">[\s\S]*?<\/script>/gi, (match) => {
+  html = html.replace(/(\s*)<script\s+type="application\/ld\+json">[\s\S]*?<\/script>/gi, (match, ws) => {
     if (!replacedJsonLd) {
       replacedJsonLd = true;
-      return structuredDataScripts;
+      return `${ws}${structuredDataScripts}`;
     }
     return "";
   });
@@ -426,10 +523,6 @@ function prerenderHtml(html, data) {
     "timeSaving.vacuumMinutes",
     "timeSaving.mopMinutes",
     "timeSaving.monthlyHours",
-    "operationalCost.daily",
-    "operationalCost.dailyNote",
-    "operationalCost.monthly",
-    "operationalCost.annual",
   ];
 
   const computed = computeOverallScores(data);
@@ -459,6 +552,14 @@ function prerenderHtml(html, data) {
     /(<h1 class="product-title"[^>]*data-dynamic="productName"[^>]*>)[\s\S]*?(<\/h1>)/i,
     `$1${buildProductTitleHtml(metadata)}$2`,
   );
+
+  // 消耗品代は公式情報で確認できた製品だけ金額を出す（それ以外は「確認中」）
+  html = replaceConsumablesSection(
+    html,
+    buildConsumablesSection(data, VERIFIED_CONSUMABLES[data.productId]),
+    data.productId,
+  );
+  html = bumpLoaderVersion(html);
 
   // 口コミ分析サマリー（seo-unique-summary）は表示しない
   html = removeSeoSummaryBlock(html);
@@ -529,6 +630,9 @@ function validatePrerenderedHtml(html, data) {
   ) {
     throw new Error(`${data.productId}: SEO analysis summary block must be removed`);
   }
+  if (!html.includes("<!-- CONSUMABLES_START -->") || html.includes('data-dynamic="operationalCost.')) {
+    throw new Error(`${data.productId}: consumables section must come from verified data only`);
+  }
   for (const [dottedPath, rawValue, weight] of weightedExpectations) {
     if (rawValue === undefined || rawValue === null) continue;
     // 内訳は JS が #reliability-factors に注入するページがあるため、静的spanがある場合のみ検証
@@ -574,7 +678,13 @@ function main() {
   const templatePath = path.join(PRODUCTS_DIR, "template-unified.html");
   if (fs.existsSync(templatePath)) {
     const currentTemplate = fs.readFileSync(templatePath, "utf8");
-    const nextTemplate = ensureMobileOverrides(currentTemplate);
+    const nextTemplate = bumpLoaderVersion(
+      replaceConsumablesSection(
+        ensureMobileOverrides(currentTemplate),
+        buildConsumablesSection({}, null),
+        "template-unified",
+      ),
+    );
     if (nextTemplate !== currentTemplate) {
       fs.writeFileSync(templatePath, nextTemplate, "utf8");
     }

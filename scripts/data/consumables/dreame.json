@@ -5,7 +5,7 @@
     "l10s-ultra-gen-2": {
       "parts": [
         {
-          "item": "ダストバッグ（3枚入り）",
+          "item": "ダストバッグ",
           "packPrice": 2180, "packQty": 3, "perSwap": 1,
           "intervalMonths": [1.4, 2.6],
           "intervalBasis": "Dreame全自動モデル取扱説明書「6～8週間」〜製品ページ「80日ゴミ捨て不要」",
@@ -21,7 +21,7 @@
           "intervalUrl": "https://m.media-amazon.com/images/I/B1PmFhKyeAL.pdf"
         },
         {
-          "item": "サイドブラシ（2個入り）",
+          "item": "サイドブラシ",
           "packPrice": 1100, "packQty": 2, "perSwap": 1,
           "intervalMonths": [3, 6],
           "intervalBasis": "Dreame全自動モデル取扱説明書「3～6カ月毎」",
@@ -29,7 +29,7 @@
           "intervalUrl": "https://m.media-amazon.com/images/I/B1PmFhKyeAL.pdf"
         },
         {
-          "item": "HEPAフィルター（2個入り）",
+          "item": "HEPAフィルター",
           "packPrice": 1280, "packQty": 2, "perSwap": 1,
           "intervalMonths": [3, 6],
           "intervalBasis": "Dreame全自動モデル取扱説明書「3～6カ月毎」",
@@ -37,7 +37,7 @@
           "intervalUrl": "https://m.media-amazon.com/images/I/B1PmFhKyeAL.pdf"
         },
         {
-          "item": "モップパッド（4枚入り）",
+          "item": "モップパッド",
           "packPrice": 1446, "packQty": 4, "perSwap": 2,
           "intervalMonths": [1, 3],
           "intervalBasis": "Dreame全自動モデル取扱説明書「1～3カ月毎」",

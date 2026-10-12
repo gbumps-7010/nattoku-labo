@@ -1185,73 +1185,18 @@
             </div>
         </section>
         
-        <!-- Daily Maintenance Cost -->
-        <section>
+        <!-- CONSUMABLES_START -->
+        <section id="consumables-cost">
             <h2 class="section-title">
                 <i class="fas fa-piggy-bank"></i>
-                毎日使い続けるためのコスト（維持費）
+                消耗品代（維持費）の目安
             </h2>
-            <div class="card" style="background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%); border: 2px solid #d1fae5;">
-                <div style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; padding: 2.5rem; border-radius: 14px; margin-bottom: 2rem; text-align: center; box-shadow: 0 4px 16px rgba(16, 185, 129, 0.2);">
-                    <p style="font-size: 1.05rem; opacity: 0.95; margin-bottom: 0.75rem; font-weight: 600; letter-spacing: 0.5px;">1日あたりの維持費</p>
-                    <p style="font-size: 3.5rem; font-weight: 900; margin-bottom: 0.75rem; line-height: 1;">
-                        約<span data-dynamic="operationalCost.daily">23</span>円
-                    </p>
-                    <p style="font-size: 1rem; opacity: 0.92; margin: 0; line-height: 1.5;">
-                        プロ級の清掃と清潔を、毎日この価格で維持できます<br>
-                        <span style="font-size: 0.9rem; opacity: 0.85;">（消耗品の実費を日割り計算した金額）</span>
-                    </p>
-                </div>
-                
-                <p class="reliability-intro-text" style="color: #334155; font-size: 0.95rem; line-height: 1.75; margin-bottom: 2rem; padding: 0 0.5rem;">
-                    以下の金額は、<strong>2026年3月時点の市場価格に基づいた実費</strong>です。本製品を継続して使うために必要な消耗品のコストを、わかりやすく日割り・月割り・年間でまとめています。
-                </p>
-                
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
-                    <!-- 日次コスト -->
-                    <div style="background: white; padding: 1.75rem; border-radius: 12px; border: 2px solid #e5e7eb; text-align: center; transition: all 0.3s ease;">
-                        <p style="font-size: 0.9rem; color: #0f172a; margin-bottom: 0.75rem; font-weight: 600;">1日あたり</p>
-                        <p style="font-size: 2.5rem; font-weight: 900; color: #0284c7; margin-bottom: 0.5rem;">
-                            約¥<span data-dynamic="operationalCost.daily">23</span>
-                        </p>
-                        <p style="font-size: 0.85rem; color: #0f172a; line-height: 1.5; margin: 0;" data-dynamic="operationalCost.dailyNote">消耗品（サイドブラシ、フィルター、モッピングクロス）の交換コストを日割りで計算した実質的な費用です。</p>
-                    </div>
-                    
-                    <!-- 月次コスト -->
-                    <div style="background: white; padding: 1.75rem; border-radius: 12px; border: 2px solid #e5e7eb; text-align: center; transition: all 0.3s ease;">
-                        <p style="font-size: 0.9rem; color: #0f172a; margin-bottom: 0.75rem; font-weight: 600;">月間</p>
-                        <p style="font-size: 2.5rem; font-weight: 900; color: #0284c7; margin-bottom: 0.5rem;">
-                            約¥<span data-dynamic="operationalCost.monthly">708</span>
-                        </p>
-                        <p style="font-size: 0.85rem; color: #0f172a; line-height: 1.5; margin: 0.75rem 0 0 0;">
-                            毎日自動で清潔が維持されます
-                        </p>
-                    </div>
-                    
-                    <!-- 年次コスト -->
-                    <div style="background: white; padding: 1.75rem; border-radius: 12px; border: 2px solid #10b981; text-align: center; box-shadow: 0 4px 12px rgba(16, 185, 129, 0.15); transition: all 0.3s ease;">
-                        <p style="font-size: 0.9rem; color: #0f172a; margin-bottom: 0.75rem; font-weight: 600;">年間</p>
-                        <p style="font-size: 2.5rem; font-weight: 900; color: #10b981; margin-bottom: 0.5rem;">
-                            約¥<span data-dynamic="operationalCost.annual">8,500</span>
-                        </p>
-                        <p style="font-size: 0.85rem; color: #166534; line-height: 1.5; margin: 0.75rem 0 0 0;">
-                            1年間の維持費の目安
-                        </p>
-                    </div>
-                </div>
-                
-                <!-- 消耗品内訳 -->
-                <div style="background: white; padding: 1.75rem; border-radius: 12px; border: 2px solid #e5e7eb;">
-                    <h3 style="font-size: 1.05rem; font-weight: 700; margin-bottom: 1.25rem; color: #1e293b; display: flex; align-items: center; gap: 0.5rem;">
-                        <i class="fas fa-list-check" style="color: #0284c7;"></i>
-                        消耗品の内訳（2026年3月時点の実費）
-                    </h3>
-                    <div style="display: grid; gap: 0.85rem;" data-dynamic="operationalCost.consumables">
-                        <!-- product-loader.jsが自動生成 -->
-                    </div>
-                </div>
+            <div class="card">
+                <p style="font-weight: 800; color: #0f172a; margin-bottom: 0.5rem;">消耗品データ確認中</p>
+                <p style="color: #334155; font-size: 0.95rem; line-height: 1.75; margin: 0;">消耗品の価格と交換目安を、メーカーの公式情報で確認しています。確認が終わるまで、金額の表示を止めています。</p>
             </div>
         </section>
+        <!-- CONSUMABLES_END -->
 
     </div>
     
@@ -1266,7 +1211,7 @@
     <!-- Product Loader Script -->
     <script src="js/format-prose.js?v=20261005a"></script>
     <script src="js/official-perks.js?v=20261004b"></script>
-    <script src="js/product-loader.js?v=20261005a"></script>
+    <script src="js/product-loader.js?v=20261012a"></script>
 
 <!-- ナビゲーションシステム V3.14 -->
 <script src="js/navigation.js?v=20261004a"></script>

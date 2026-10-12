@@ -283,25 +283,6 @@ function updateDynamicElements(data) {
                     element.href = url;
                     console.log(`✅ ${path} = ${url}`);
                 }
-            } else if (path === 'operationalCost.consumables' && Array.isArray(value)) {
-                // 消耗品の詳細リスト表示
-                let consumablesHTML = '';
-                value.forEach(item => {
-                    consumablesHTML += `
-                        <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.85rem; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
-                            <div style="flex: 1;">
-                                <p style="font-size: 0.95rem; font-weight: 600; color: #1e293b; margin-bottom: 0.25rem;">${item.item}</p>
-                                <p style="font-size: 0.8rem; color: #0f172a; margin: 0;">交換頻度: ${item.replacementFrequency}</p>
-                            </div>
-                            <div style="text-align: right;">
-                                <p style="font-size: 0.85rem; color: #0f172a; margin-bottom: 0.25rem;">単価: ¥${item.unitCost.toLocaleString()}</p>
-                                <p style="font-size: 0.95rem; font-weight: 700; color: #059669; margin: 0;">年間: ¥${item.annualCost.toLocaleString()}</p>
-                            </div>
-                        </div>
-                    `;
-                });
-                element.innerHTML = consumablesHTML;
-                console.log(`✅ 消耗品リスト ${value.length}項目 表示完了`);
             } else if (path.endsWith('.description') || path.endsWith('.comment') || path.endsWith('.note') || path === 'operationalCost.roiDescription') {
                 element.innerHTML = fp(String(value));
                 console.log(`✅ ${path} (prose)`);
@@ -671,79 +652,6 @@ function updateTimeSaving(data) {
             el.textContent = ts.workDaysEquivalent;
         }
     });
-}
-
-// 7.8. 運用コスト更新
-function updateOperationalCost(data) {
-    if (!data.operationalCost) return;
-    
-    const oc = data.operationalCost;
-    
-    // 年間時間創出価値
-    const annualValueEl = document.querySelector('[data-dynamic="operationalCost.annualTimeSavingValue"]');
-    if (annualValueEl && oc.annualTimeSavingValue) {
-        annualValueEl.textContent = oc.annualTimeSavingValue;
-    }
-    
-    // 日次コスト
-    const dailyEl = document.querySelector('[data-dynamic="operationalCost.daily"]');
-    if (dailyEl && oc.daily !== undefined) {
-        dailyEl.textContent = oc.daily.toLocaleString();
-    }
-    
-    const dailyNoteEl = document.querySelector('[data-dynamic="operationalCost.dailyNote"]');
-    if (dailyNoteEl && oc.dailyNote) {
-        dailyNoteEl.textContent = oc.dailyNote;
-    }
-    
-    // 月次コスト
-    const monthlyEl = document.querySelector('[data-dynamic="operationalCost.monthly"]');
-    if (monthlyEl && oc.monthly !== undefined) {
-        monthlyEl.textContent = oc.monthly.toLocaleString();
-    }
-    
-    const monthlyOutsourcingEl = document.querySelector('[data-dynamic="operationalCost.monthlyOutsourcing"]');
-    if (monthlyOutsourcingEl && oc.monthlyOutsourcing !== undefined) {
-        monthlyOutsourcingEl.textContent = oc.monthlyOutsourcing.toLocaleString();
-    }
-    
-    // 年次コスト
-    const annualEl = document.querySelector('[data-dynamic="operationalCost.annual"]');
-    if (annualEl && oc.annual !== undefined) {
-        annualEl.textContent = oc.annual.toLocaleString();
-    }
-    
-    const annualOutsourcingEl = document.querySelector('[data-dynamic="operationalCost.annualOutsourcing"]');
-    if (annualOutsourcingEl && oc.annualOutsourcing !== undefined) {
-        annualOutsourcingEl.textContent = oc.annualOutsourcing.toLocaleString();
-    }
-    
-    // ROI説明
-    const roiDescEl = document.querySelector('[data-dynamic="operationalCost.roiDescription"]');
-    if (roiDescEl && oc.roiDescription) {
-        roiDescEl.innerHTML = fp(oc.roiDescription);
-    }
-    
-    // 消耗品リスト
-    if (oc.consumables && Array.isArray(oc.consumables)) {
-        const listContainer = document.querySelector('[data-dynamic="operationalCost.consumables"]');
-        if (listContainer) {
-            const html = oc.consumables.map(item => `
-                <div class="consumable-item">
-                    <div class="consumable-name">
-                        <i class="fas fa-box" style="color: #0f172a; margin-right: 0.5rem;"></i>
-                        ${item.item}
-                    </div>
-                    <div class="consumable-details">
-                        <span class="consumable-frequency">${item.replacementFrequency}</span>
-                        <span class="consumable-cost">¥${item.unitCost.toLocaleString()}</span>
-                        <span style="color: #0f172a; font-size: 0.8rem;">(年間 ¥${item.annualCost.toLocaleString()})</span>
-                    </div>
-                </div>
-            `).join('');
-            listContainer.innerHTML = html;
-        }
-    }
 }
 
 // 8. 不満点更新（強化版：運用成功率向上対策）
@@ -1674,8 +1582,7 @@ async function renderSpecs(productId) {
     section.id = 'product-specs';
     section.innerHTML = buildSpecsHtml(specs);
 
-    const anchor = document.querySelector('[data-dynamic="operationalCost.consumables"]');
-    const anchorSection = anchor ? anchor.closest('section') : null;
+    const anchorSection = document.getElementById('consumables-cost');
     if (anchorSection) {
         anchorSection.after(section);
     } else {
@@ -1754,7 +1661,6 @@ async function initializePage() {
         updateTopComplaints(data);
         updateAttributeScores(data);
         updateTimeSaving(data);
-        updateOperationalCost(data);
         updateDataQuality(data);
         updateResaleValue(data);
         updateCTAButtons(data);

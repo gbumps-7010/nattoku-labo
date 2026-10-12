@@ -5,7 +5,7 @@
     "q10p": {
       "parts": [
         {
-          "item": "紙パック（紙パックB・3枚入り）",
+          "item": "紙パック（紙パックB）",
           "packPrice": 1980, "packQty": 3, "perSwap": 1,
           "intervalMonths": [2, 2],
           "intervalBasis": "製品ページ「60日分のゴミを自動収集」（取扱説明書は「必要に応じて交換」）",
@@ -21,7 +21,7 @@
           "intervalUrl": "https://jp.roborock.com/cdn/shop/t/7/assets/manual_q10pplus.pdf"
         },
         {
-          "item": "サイドブラシ（サイドブラシN2・2個入り）",
+          "item": "サイドブラシ（サイドブラシN2）",
           "packPrice": 1650, "packQty": 2, "perSwap": 1,
           "intervalMonths": [3, 6],
           "intervalBasis": "取扱説明書「3～6か月に1度交換」",
@@ -29,7 +29,7 @@
           "intervalUrl": "https://jp.roborock.com/cdn/shop/t/7/assets/manual_q10pplus.pdf"
         },
         {
-          "item": "エアフィルター（エアフィルターI・2個入り）",
+          "item": "エアフィルター（エアフィルターI）",
           "packPrice": 1980, "packQty": 2, "perSwap": 1,
           "intervalMonths": [6, 12],
           "intervalBasis": "取扱説明書「6～12か月に1度交換」",
@@ -37,7 +37,7 @@
           "intervalUrl": "https://jp.roborock.com/cdn/shop/t/7/assets/manual_q10pplus.pdf"
         },
         {
-          "item": "モップクロス（モップクロスC・2個入り）",
+          "item": "モップクロス（モップクロスC）",
           "packPrice": 1980, "packQty": 2, "perSwap": 1,
           "intervalMonths": [3, 6],
           "intervalBasis": "取扱説明書「3～6か月に1度交換」",
