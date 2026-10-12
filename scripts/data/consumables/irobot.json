@@ -1,0 +1,550 @@
+{
+  "maker": "iRobot",
+  "checkedAt": "2026-10-12",
+  "products": {
+    "roomba-105-combo-autoempty": {
+      "parts": [
+        {
+          "item": "交換用紙パック（4849916・3枚）",
+          "packPrice": 2200,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            2.47,
+            2.47
+          ],
+          "intervalBasis": "製品ページ「自動ゴミ収集：最大75日分」（75日÷30.4で換算。取扱説明書は「紙パックがいっぱいになっているというお知らせを受け取ったら、紙パックを交換する」）",
+          "priceUrl": "https://store.irobot-jp.com/item/4849916.html",
+          "intervalUrl": "https://store.irobot-jp.com/item/Y351260.html"
+        },
+        {
+          "item": "ダストカットフィルター（4837321・3個）",
+          "packPrice": 3100,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「フィルター：3～6か月ごと」",
+          "priceUrl": "https://store.irobot-jp.com/item/4837321.html",
+          "intervalUrl": "https://prod-help-content.care.irobotapi.com/files/2025/OGs/OG105ComboandVacwAEjaJP.pdf"
+        },
+        {
+          "item": "エッジクリーニングブラシ（4837322・3個）",
+          "packPrice": 2300,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「3～6か月ごとにエッジクリーニングブラシを交換することをお勧めします」",
+          "priceUrl": "https://store.irobot-jp.com/item/4837322.html",
+          "intervalUrl": "https://prod-help-content.care.irobotapi.com/files/2025/OGs/OG105ComboandVacwAEjaJP.pdf"
+        },
+        {
+          "item": "メインブラシ（毛のシングルアクションブラシ・4849960）",
+          "packPrice": 3100,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            12
+          ],
+          "intervalBasis": "取扱説明書「メインブラシは6～12ヶ月ごとに交換することをお勧めします」",
+          "priceUrl": "https://store.irobot-jp.com/item/4849960.html",
+          "intervalUrl": "https://prod-help-content.care.irobotapi.com/files/2025/OGs/OG105ComboandVacwAEjaJP.pdf"
+        },
+        {
+          "item": "マイクロファイバーモップパッド（4837324・3枚）",
+          "packPrice": 3100,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「モップパッド：3～6か月ごと。使用できなくなったら、家庭ごみとして捨てて下さい」",
+          "priceUrl": "https://store.irobot-jp.com/item/4837324.html",
+          "intervalUrl": "https://prod-help-content.care.irobotapi.com/files/2025/OGs/OG105ComboandVacwAEjaJP.pdf"
+        }
+      ],
+      "excluded": [
+        "交換パーツキット（4849966・7,000円）：同じ消耗品を単品で計上しているため（二重計上回避。公式ページに内容物の記載もなし）",
+        "カーボン紙パック（4861286・3個2,900円）：通常の紙パックで計上（防臭仕様の上位オプション）",
+        "床用洗剤（Braava jet 床用洗剤・iRobot 床用洗剤）：洗剤のため除外",
+        "リチウムイオンバッテリー：バッテリーのため除外",
+        "ダスト容器・ドリップトレイ：交換時期の記載なし"
+      ],
+      "note": "価格はアイロボット公式オンラインストアの税込価格。対応機種は各商品ページおよび製品ページ（Y351260）の「この製品のオプション・消耗品」一覧で確認（4837321・4837324は商品ページ本文に対象機種の記載がないため、製品ページの一覧とRoomba 105/115 Combo用アクセサリーカテゴリで確認）。交換目安は公式サポート掲載の『Roomba 105 Vac|Combo ロボット + AutoEmpty 充電ステーション取扱説明書』の「交換時期の目安」表による。"
+    },
+    "roomba-max-705-combo-autowash": {
+      "parts": [
+        {
+          "item": "交換用紙パック（4849916・3枚）",
+          "packPrice": 2200,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            2.47,
+            2.47
+          ],
+          "intervalBasis": "製品ページ「自動ゴミ収集：最大75日分」（75日÷30.4で換算。取扱説明書は「紙パックがいっぱいになっているというお知らせを受け取ったら交換」）",
+          "priceUrl": "https://store.irobot-jp.com/item/4849916.html",
+          "intervalUrl": "https://store.irobot-jp.com/item/X185060.html"
+        },
+        {
+          "item": "フィルター（4849940・3個）",
+          "packPrice": 3100,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「フィルター：3～6か月ごと」",
+          "priceUrl": "https://store.irobot-jp.com/item/4849940.html",
+          "intervalUrl": "https://prod-help-content.care.irobotapi.com/files/2025/OGs/NewSeries/Max700C/OG700SeriesMAXCombowAWAmericasjaJP.pdf"
+        },
+        {
+          "item": "エッジクリーニングブラシ（4849941・2個×3セット）",
+          "packPrice": 3100,
+          "packQty": 6,
+          "perSwap": 2,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「3～6か月ごとにエッジクリーニングブラシを交換することをお勧めします」（デュアルエッジクリーニングブラシで2個使用）",
+          "priceUrl": "https://store.irobot-jp.com/item/4849941.html",
+          "intervalUrl": "https://prod-help-content.care.irobotapi.com/files/2025/OGs/NewSeries/Max700C/OG700SeriesMAXCombowAWAmericasjaJP.pdf"
+        },
+        {
+          "item": "デュアルアクションブラシ（4849905・1セット）",
+          "packPrice": 4400,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            12
+          ],
+          "intervalBasis": "取扱説明書「デュアルアクションブラシ：6～12か月ごと」（2本1セット）",
+          "priceUrl": "https://store.irobot-jp.com/item/4849905.html",
+          "intervalUrl": "https://prod-help-content.care.irobotapi.com/files/2025/OGs/NewSeries/Max700C/OG700SeriesMAXCombowAWAmericasjaJP.pdf"
+        },
+        {
+          "item": "PowerSpin ローラーモップ（4849939）",
+          "packPrice": 3100,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            12
+          ],
+          "intervalBasis": "取扱説明書「PowerSpin ローラーモップ水拭きクリーニングシステム：6～12か月ごと」",
+          "priceUrl": "https://store.irobot-jp.com/item/4849939.html",
+          "intervalUrl": "https://prod-help-content.care.irobotapi.com/files/2025/OGs/NewSeries/Max700C/OG700SeriesMAXCombowAWAmericasjaJP.pdf"
+        }
+      ],
+      "excluded": [
+        "交換パーツキット（4849963・8,400円／4862706・8,900円）：同じ消耗品を単品で計上しているため（二重計上回避）",
+        "カーボンフィルター（4862708・3個3,800円）・新型エッジクリーニングブラシ（4862707・3,100円）：通常品で計上（同等の代替品）",
+        "カーボン紙パック（4861286・3個2,900円）：通常の紙パックで計上（防臭仕様の上位オプション）",
+        "StayClean 床用濃縮洗剤・Braava jet 床用洗剤：洗剤のため除外",
+        "リチウムイオンバッテリー：バッテリーのため除外"
+      ],
+      "note": "価格はアイロボット公式オンラインストアの税込価格。対応機種は各商品ページの【対象機種】と製品ページ（X185060）の「この製品のオプション・消耗品」一覧で確認。交換目安は公式サポート掲載の『Roomba Max 700 シリーズ Combo ロボット + AutoWash 充電ステーション取扱説明書』による。ローラーモップ（4849939）は商品名・本文に入数の記載がないため1本入りとして計上。同商品は確認時点で「売り切れ中」表示。"
+    },
+    "roomba-max-705-vac-autoempty": {
+      "parts": [
+        {
+          "item": "交換用紙パック（4849916・3枚）",
+          "packPrice": 2200,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            2.47,
+            2.47
+          ],
+          "intervalBasis": "製品ページ「自動ゴミ収集：最大75日分」（75日÷30.4で換算。取扱説明書は「紙パックがいっぱいになっているというお知らせを受け取ったら交換」）",
+          "priceUrl": "https://store.irobot-jp.com/item/4849916.html",
+          "intervalUrl": "https://store.irobot-jp.com/item/W155060.html"
+        },
+        {
+          "item": "フィルター（4849904・3個）",
+          "packPrice": 3100,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            2,
+            2
+          ],
+          "intervalBasis": "取扱説明書「フィルター：2か月ごと」",
+          "priceUrl": "https://store.irobot-jp.com/item/4849904.html",
+          "intervalUrl": "https://prod-help-content.care.irobotapi.com/files/2025/OGs/705MAXVacAutoEmptyOGJP.pdf"
+        },
+        {
+          "item": "エッジクリーニングブラシ（4837322・3個）",
+          "packPrice": 2300,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「3～6か月ごとにエッジクリーニングブラシを交換することをお勧めします」",
+          "priceUrl": "https://store.irobot-jp.com/item/4837322.html",
+          "intervalUrl": "https://prod-help-content.care.irobotapi.com/files/2025/OGs/705MAXVacAutoEmptyOGJP.pdf"
+        },
+        {
+          "item": "デュアルアクションブラシ（4849905・1セット）",
+          "packPrice": 4400,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            12
+          ],
+          "intervalBasis": "取扱説明書「6～12か月ごとにデュアルアクションブラシを交換することをお勧めします」（2本1セット）",
+          "priceUrl": "https://store.irobot-jp.com/item/4849905.html",
+          "intervalUrl": "https://prod-help-content.care.irobotapi.com/files/2025/OGs/705MAXVacAutoEmptyOGJP.pdf"
+        }
+      ],
+      "excluded": [
+        "交換パーツキット（4849964・7,900円）：同じ消耗品を単品で計上しているため（二重計上回避。公式ページに内容物の記載もなし）",
+        "カーボンフィルター（4866448・3個3,800円）：通常フィルターで計上（防臭仕様の上位オプション）",
+        "カーボン紙パック（4861286・3個2,900円）：通常の紙パックで計上（防臭仕様の上位オプション）",
+        "リチウムイオンバッテリー：バッテリーのため除外"
+      ],
+      "note": "価格はアイロボット公式オンラインストアの税込価格。対応機種は各商品ページの【対象機種】と製品ページ（W155060）の「この製品のオプション・消耗品」一覧で確認。交換目安は公式サポート掲載の『Roomba 705 Max Vac ロボット + AutoEmpty 充電ステーション取扱説明書』による（この機種のみフィルターが「2か月ごと」）。"
+    },
+    "roomba-mini-autoempty": {
+      "parts": [
+        {
+          "item": "交換用紙パック（4849916・3枚）",
+          "packPrice": 2200,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            2.96,
+            2.96
+          ],
+          "intervalBasis": "製品ページ「自動ゴミ収集：最大90日分」（90日÷30.4で換算。取扱説明書には紙パックの交換時期の記載なし）",
+          "priceUrl": "https://store.irobot-jp.com/item/4849916.html",
+          "intervalUrl": "https://store.irobot-jp.com/item/F155260.html"
+        },
+        {
+          "item": "フィルター（4859242・3個）",
+          "packPrice": 3100,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「フィルター：3～6か月ごと」（製品ページFAQも「フィルターは3～6か月ごとに交換」）",
+          "priceUrl": "https://store.irobot-jp.com/item/4859242.html",
+          "intervalUrl": "https://prod-help-content.care.irobotapi.com/files/2026/OwnersGuides/Mini/OGRoombaMinijaJP.pdf"
+        },
+        {
+          "item": "エッジクリーニングブラシ（4859243・3個）",
+          "packPrice": 3100,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「3～6か月ごとにエッジクリーニングブラシを交換することをお勧めします」",
+          "priceUrl": "https://store.irobot-jp.com/item/4859243.html",
+          "intervalUrl": "https://prod-help-content.care.irobotapi.com/files/2026/OwnersGuides/Mini/OGRoombaMinijaJP.pdf"
+        },
+        {
+          "item": "シングルアクションブラシ（4859244）",
+          "packPrice": 3100,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            12
+          ],
+          "intervalBasis": "取扱説明書「6～12か月ごとにシングルアクションブラシを交換することをお勧めします」",
+          "priceUrl": "https://store.irobot-jp.com/item/4859244.html",
+          "intervalUrl": "https://prod-help-content.care.irobotapi.com/files/2026/OwnersGuides/Mini/OGRoombaMinijaJP.pdf"
+        }
+      ],
+      "excluded": [
+        "使い捨てパッドワイプ（30枚・1,500円）：使い捨てウェットシートのため除外",
+        "交換パーツキット（4860285・7,000円）：同じ消耗品を単品で計上しているため（二重計上回避。公式ページに内容物の記載もなし）",
+        "カーボン紙パック（4861286・3個2,900円）：通常の紙パックで計上（防臭仕様の上位オプション）",
+        "リチウムイオンバッテリー：バッテリーのため除外"
+      ],
+      "note": "価格はアイロボット公式オンラインストアの税込価格。対応機種は各商品ページの【対象機種】と製品ページ（F155260）の「この製品のオプション・消耗品」一覧で確認。交換目安は公式サポート掲載の『Roomba Mini/Mini Slim 掃除機|床拭きロボット』取扱説明書による。紙パック容量は製品ページの「最大90日分」を採用（紙パック商品ページの記載は「最大75日～90日分」）。"
+    },
+    "roomba-mini-slim-slimcharge": {
+      "parts": [
+        {
+          "item": "フィルター（4859242・3個）",
+          "packPrice": 3100,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「フィルター：3～6か月ごと」（製品ページFAQも「フィルターは3～6か月ごとに交換」）",
+          "priceUrl": "https://store.irobot-jp.com/item/4859242.html",
+          "intervalUrl": "https://prod-help-content.care.irobotapi.com/files/2026/OwnersGuides/Mini/OGRoombaMinijaJP.pdf"
+        },
+        {
+          "item": "エッジクリーニングブラシ（4859243・3個）",
+          "packPrice": 3100,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「3～6か月ごとにエッジクリーニングブラシを交換することをお勧めします」",
+          "priceUrl": "https://store.irobot-jp.com/item/4859243.html",
+          "intervalUrl": "https://prod-help-content.care.irobotapi.com/files/2026/OwnersGuides/Mini/OGRoombaMinijaJP.pdf"
+        },
+        {
+          "item": "シングルアクションブラシ（4859244）",
+          "packPrice": 3100,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            12
+          ],
+          "intervalBasis": "取扱説明書「6～12か月ごとにシングルアクションブラシを交換することをお勧めします」",
+          "priceUrl": "https://store.irobot-jp.com/item/4859244.html",
+          "intervalUrl": "https://prod-help-content.care.irobotapi.com/files/2026/OwnersGuides/Mini/OGRoombaMinijaJP.pdf"
+        }
+      ],
+      "excluded": [
+        "紙パック：SlimCharge 充電スタンドは「充電スタンドでの自動ゴミ収集なし」のため対象外",
+        "使い捨てパッドワイプ（30枚・1,500円）：使い捨てウェットシートのため除外",
+        "交換パーツキット（4860285・7,000円）：同じ消耗品を単品で計上しているため（二重計上回避。公式ページに内容物の記載もなし）",
+        "リチウムイオンバッテリー：バッテリーのため除外"
+      ],
+      "note": "価格はアイロボット公式オンラインストアの税込価格。対応機種は各商品ページの【対象機種】と製品ページ（F115260）の「この製品のオプション・消耗品」一覧で確認。交換目安は公式サポート掲載の『Roomba Mini/Mini Slim 掃除機|床拭きロボット』取扱説明書（Mini と共通）による。"
+    },
+    "roomba-plus-405-combo-autowash": {
+      "parts": [
+        {
+          "item": "交換用紙パック（4849916・3枚）",
+          "packPrice": 2200,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            2.47,
+            2.47
+          ],
+          "intervalBasis": "製品ページ「自動ゴミ収集：最大75日分」（75日÷30.4で換算。取扱説明書は「Roomba Homeアプリから通知を受信した場合は、紙パックを交換する」）",
+          "priceUrl": "https://store.irobot-jp.com/item/4849916.html",
+          "intervalUrl": "https://store.irobot-jp.com/item/G185060.html"
+        },
+        {
+          "item": "フィルター（4849900・3個）",
+          "packPrice": 3100,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「フィルター：3～6か月ごと」",
+          "priceUrl": "https://store.irobot-jp.com/item/4849900.html",
+          "intervalUrl": "https://prod-help-content.care.irobotapi.com/files/2025/OGs/NewSeries/Plus400/OG400SeriesPLUSCombowAWAPACJAjaJP.pdf"
+        },
+        {
+          "item": "エッジクリーニングブラシ（4837322・3個）",
+          "packPrice": 2300,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「3～6か月ごとにエッジクリーニングブラシを交換することをお勧めします」",
+          "priceUrl": "https://store.irobot-jp.com/item/4837322.html",
+          "intervalUrl": "https://prod-help-content.care.irobotapi.com/files/2025/OGs/NewSeries/Plus400/OG400SeriesPLUSCombowAWAPACJAjaJP.pdf"
+        },
+        {
+          "item": "シングルアクションブラシ（4849902）",
+          "packPrice": 3100,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            12
+          ],
+          "intervalBasis": "取扱説明書「6～12か月ごとにシングルアクションブラシを交換することをお勧めします」",
+          "priceUrl": "https://store.irobot-jp.com/item/4849902.html",
+          "intervalUrl": "https://prod-help-content.care.irobotapi.com/files/2025/OGs/NewSeries/Plus400/OG400SeriesPLUSCombowAWAPACJAjaJP.pdf"
+        },
+        {
+          "item": "DualClean モップパッド（4849901・6個）",
+          "packPrice": 3900,
+          "packQty": 6,
+          "perSwap": 2,
+          "intervalMonths": [
+            11.84,
+            11.84
+          ],
+          "intervalBasis": "取扱説明書の「交換時期の目安」欄「180時間毎に洗浄」（英語版は Replacement Frequency「Every 180 hours of cleaning」）。1日30分使用と仮定し180時間＝360日で換算（モップは2枚使用）",
+          "priceUrl": "https://store.irobot-jp.com/item/4849901.html",
+          "intervalUrl": "https://prod-help-content.care.irobotapi.com/files/2025/OGs/NewSeries/Plus400/OG400SeriesPLUSCombowAWAPACJAjaJP.pdf"
+        }
+      ],
+      "excluded": [
+        "交換パーツキット（4849962・7,000円）：同じ消耗品を単品で計上しているため（二重計上回避。公式ページに内容物の記載もなし）",
+        "カーボン紙パック（4861286・3個2,900円）：通常の紙パックで計上（防臭仕様の上位オプション）",
+        "StayClean 床用濃縮洗剤・iRobot 床用洗剤・Braava jet 床用洗剤：洗剤のため除外",
+        "リチウムイオンバッテリー：バッテリーのため除外"
+      ],
+      "note": "価格はアイロボット公式オンラインストアの税込価格。対応機種は各商品ページの【対象機種】と製品ページ（G185060）の「この製品のオプション・消耗品」一覧で確認。交換目安は公式サポート掲載の『Roomba Plus 400シリーズ Combo ロボット + AutoWash 充電ステーション取扱説明書』による。モップパッドは日本語版の表記が「洗浄」となっているが、表の「交換時期の目安」欄にあり英語版でも交換頻度として記載されているため交換目安として採用（要確認）。モップパッドの使用枚数2枚は製品ページのセット内容「パッドプレート＆モップパッドｘ1セット（2個）」による。"
+    },
+    "roomba-plus-505-combo-autowash": {
+      "parts": [
+        {
+          "item": "交換用紙パック（4849916・3枚）",
+          "packPrice": 2200,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            2.47,
+            2.47
+          ],
+          "intervalBasis": "製品ページ「自動ゴミ収集：最大75日分」（75日÷30.4で換算。取扱説明書は「Roomba Homeアプリから通知を受信した場合は、紙パックを交換する」）",
+          "priceUrl": "https://store.irobot-jp.com/item/4849916.html",
+          "intervalUrl": "https://store.irobot-jp.com/item/N185060.html"
+        },
+        {
+          "item": "フィルター（4849900・3個）",
+          "packPrice": 3100,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「フィルター：3～6か月ごと」（製品ページFAQも「3～6か月ごとのフィルター交換」）",
+          "priceUrl": "https://store.irobot-jp.com/item/4849900.html",
+          "intervalUrl": "https://prod-help-content.care.irobotapi.com/files/2025/OGs/OG505PLUSCombowAWjaJP.pdf"
+        },
+        {
+          "item": "エッジクリーニングブラシ（4837322・3個）",
+          "packPrice": 2300,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「3～6か月ごとにエッジクリーニングブラシを交換することをお勧めします」",
+          "priceUrl": "https://store.irobot-jp.com/item/4837322.html",
+          "intervalUrl": "https://prod-help-content.care.irobotapi.com/files/2025/OGs/OG505PLUSCombowAWjaJP.pdf"
+        },
+        {
+          "item": "シングルアクションブラシ（4849902）",
+          "packPrice": 3100,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            12
+          ],
+          "intervalBasis": "取扱説明書「6～12か月ごとにシングルアクションブラシを交換することをお勧めします」",
+          "priceUrl": "https://store.irobot-jp.com/item/4849902.html",
+          "intervalUrl": "https://prod-help-content.care.irobotapi.com/files/2025/OGs/OG505PLUSCombowAWjaJP.pdf"
+        },
+        {
+          "item": "DualClean モップパッド（4849901・6個）",
+          "packPrice": 3900,
+          "packQty": 6,
+          "perSwap": 2,
+          "intervalMonths": [
+            11.84,
+            11.84
+          ],
+          "intervalBasis": "取扱説明書の「交換時期の目安」欄「180時間毎に洗浄」（英語版は Replacement Frequency「Every 180 hours of cleaning」）。1日30分使用と仮定し180時間＝360日で換算（モップは2枚使用）",
+          "priceUrl": "https://store.irobot-jp.com/item/4849901.html",
+          "intervalUrl": "https://prod-help-content.care.irobotapi.com/files/2025/OGs/OG505PLUSCombowAWjaJP.pdf"
+        }
+      ],
+      "excluded": [
+        "交換パーツキット（4849962・7,000円）：同じ消耗品を単品で計上しているため（二重計上回避。公式ページに内容物の記載もなし）",
+        "カーボン紙パック（4861286・3個2,900円）：通常の紙パックで計上（防臭仕様の上位オプション）",
+        "StayClean 床用濃縮洗剤・iRobot 床用洗剤・Braava jet 床用洗剤：洗剤のため除外",
+        "リチウムイオンバッテリー：バッテリーのため除外"
+      ],
+      "note": "価格はアイロボット公式オンラインストアの税込価格。対応機種は各商品ページの【対象機種】と製品ページ（N185060）の「この製品のオプション・消耗品」一覧で確認。交換目安は公式サポート掲載の『Roomba Plus 505 Combo ロボット + AutoWash 充電ステーション取扱説明書』による。モップパッドは日本語版の表記が「洗浄」となっているが、表の「交換時期の目安」欄にあり英語版でも交換頻度として記載されているため交換目安として採用（要確認）。モップパッドの使用枚数2枚は製品ページのセット内容「パッドプレート＆モップパッドｘ1セット（2個）」による。"
+    },
+    "roomba-plus-575-combo-autowash": {
+      "parts": [
+        {
+          "item": "交換用紙パック（4849916・3枚）",
+          "packPrice": 2200,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            2.47,
+            2.96
+          ],
+          "intervalBasis": "紙パック商品ページ「紙パックには最大75日～90日分のゴミを収納可能」（÷30.4で換算。取扱説明書は「紙パックがいっぱいになったときに交換してください」、575の製品ページに日数の記載なし）",
+          "priceUrl": "https://store.irobot-jp.com/item/4849916.html"
+        },
+        {
+          "item": "フィルター（4860487・3個）",
+          "packPrice": 3100,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「フィルター：交換頻度 3～6か月ごと」",
+          "priceUrl": "https://store.irobot-jp.com/item/4860487.html",
+          "intervalUrl": "https://prod-help-content.care.irobotapi.com/files/2026/OwnersGuides/575/575OGjaJP2.pdf"
+        },
+        {
+          "item": "エッジクリーニングブラシ（4860283・3個）",
+          "packPrice": 3100,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「エッジクリーニングブラシは3～6か月ごとに交換してください」",
+          "priceUrl": "https://store.irobot-jp.com/item/4860283.html",
+          "intervalUrl": "https://prod-help-content.care.irobotapi.com/files/2026/OwnersGuides/575/575OGjaJP2.pdf"
+        },
+        {
+          "item": "DualClean モップパッド（4860486・6個）",
+          "packPrice": 3900,
+          "packQty": 6,
+          "perSwap": 2,
+          "intervalMonths": [
+            1,
+            3
+          ],
+          "intervalBasis": "取扱説明書「モップパッド：交換頻度 1～3か月ごと」（モップは2枚使用）",
+          "priceUrl": "https://store.irobot-jp.com/item/4860486.html",
+          "intervalUrl": "https://prod-help-content.care.irobotapi.com/files/2026/OwnersGuides/575/575OGjaJP2.pdf"
+        }
+      ],
+      "excluded": [
+        "シングルアクションブラシ：取扱説明書に「6～12か月ごとに交換」とあるが、575対応の単品が公式ストアで販売されていない（4849902は405/505用。交換パーツキットの内容物も公式ページに記載なし）",
+        "交換パーツキット（4860682・7,500円）：内容物が公式ページに記載されておらず、フィルター・エッジブラシ・モップパッドを単品で計上しているため（二重計上回避）",
+        "カーボン紙パック（4861286・3個2,900円）：通常の紙パックで計上（防臭仕様の上位オプション）",
+        "洗剤ボトル／StayClean 床用濃縮洗剤（取扱説明書「洗剤ボトル：1～3か月ごと」）：洗剤のため除外"
+      ],
+      "note": "価格はアイロボット公式オンラインストアの税込価格。対応機種は各商品ページの【対象機種】で確認（製品ページR285060の消耗品一覧はモップパッド・フィルター・交換パーツキットのみ掲載。4860283の対象機種表記は「575 Combo ロボット + AutoEmpty」となっているが、Roomba Plus 505/515/575 Combo用アクセサリーカテゴリにも575 Comboとして掲載）。交換目安は公式サポート掲載の『Roomba Plus 570-579 Combo ロボット + AutoWash 充電ステーション』取扱説明書による。モップパッド2枚使用は取扱説明書の底面図による。"
+    }
+  }
+}

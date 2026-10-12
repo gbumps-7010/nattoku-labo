@@ -6,29 +6,49 @@
       "parts": [
         {
           "item": "メインブラシ",
-          "packPrice": 3250, "packQty": 1, "perSwap": 1,
-          "intervalMonths": [6, 12],
+          "packPrice": 3250,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            12
+          ],
           "intervalBasis": "公式ストア商品ページ「交換頻度：6~12ヵ月ごと」",
           "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/antibacterial-rubber-brush-n30"
         },
         {
           "item": "サイドブラシ",
-          "packPrice": 2750, "packQty": 2, "perSwap": 2,
-          "intervalMonths": [3, 6],
+          "packPrice": 2750,
+          "packQty": 2,
+          "perSwap": 2,
+          "intervalMonths": [
+            3,
+            6
+          ],
           "intervalBasis": "公式ストア商品ページ「交換頻度：3~6ヵ月ごと」",
           "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/side-brush-t30-series"
         },
         {
           "item": "フィルター",
-          "packPrice": 2550, "packQty": 3, "perSwap": 1,
-          "intervalMonths": [3, 6],
+          "packPrice": 2550,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
           "intervalBasis": "公式ストア商品ページ「交換頻度：3~6ヵ月ごと」",
           "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/antibacterial-filter-n30"
         },
         {
           "item": "モップパッド",
-          "packPrice": 2500, "packQty": 3, "perSwap": 1,
-          "intervalMonths": [1, 2],
+          "packPrice": 2500,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            1,
+            2
+          ],
           "intervalBasis": "公式ストア商品ページ「交換頻度：1~2ヵ月ごと」",
           "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/washable-mopping-pad-x1-t10-3pcs"
         }
@@ -40,107 +60,201 @@
       "parts": [
         {
           "item": "メインブラシ",
-          "packPrice": 3250, "packQty": 1, "perSwap": 1,
-          "intervalMonths": [6, 12],
+          "packPrice": 3250,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            12
+          ],
           "intervalBasis": "公式ストア商品ページ「交換頻度：6~12ヵ月ごと」",
           "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/antibacterial-rubber-brush-n30"
         },
         {
           "item": "サイドブラシ",
-          "packPrice": 2750, "packQty": 2, "perSwap": 2,
-          "intervalMonths": [3, 6],
+          "packPrice": 2750,
+          "packQty": 2,
+          "perSwap": 2,
+          "intervalMonths": [
+            3,
+            6
+          ],
           "intervalBasis": "公式ストア商品ページ「交換頻度：3~6ヵ月ごと」",
           "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/side-brush-t30-series"
         },
         {
           "item": "フィルター",
-          "packPrice": 2550, "packQty": 3, "perSwap": 1,
-          "intervalMonths": [3, 6],
+          "packPrice": 2550,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
           "intervalBasis": "公式ストア商品ページ「交換頻度：3~6ヵ月ごと」",
           "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/antibacterial-filter-n30"
         },
         {
           "item": "モップパッド",
-          "packPrice": 2500, "packQty": 3, "perSwap": 1,
-          "intervalMonths": [1, 2],
+          "packPrice": 2500,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            1,
+            2
+          ],
           "intervalBasis": "公式ストア商品ページ「交換頻度：1~2ヵ月ごと」",
           "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/washable-mopping-pad-x1-t10-3pcs"
         }
       ],
-      "excluded": ["ゴミパック（バッグレス設計のため不要）"],
+      "excluded": [
+        "ゴミパック（バッグレス設計のため不要）"
+      ],
       "note": "ECOVACS Japan公式ストアの純正品価格。自動ゴミ収集ステーションはサイクロン式で紙パック不要。モップパッドは確認時点で公式ストア完売表示。"
     },
     "deebot-t80-omni": {
       "parts": [
         {
-          "item": "交換用キット（メインブラシ1・サイドブラシ2・フィルター3）",
-          "packPrice": 4950, "packQty": 1, "perSwap": 1,
-          "intervalMonths": [3, 6],
-          "intervalBasis": "公式ストア商品ページ「交換頻度：3~6ヵ月ごと」",
-          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/buddy-kit-t80"
+          "item": "絡み防止メインブラシ（X8/T80/T50/T50S/N50用）",
+          "packPrice": 3300,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            12
+          ],
+          "intervalBasis": "取扱説明書「6～12か月ごと」",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/anti-tangle-main-brush-x8",
+          "intervalUrl": "https://site-static.ecovacs.com/upload/file/support/2025/05/08/055928_2473$DEEBOTT80FamilyInstructionManual_JP.pdf"
+        },
+        {
+          "item": "サイドブラシ（T80/T50S/N50用・2個入り）",
+          "packPrice": 2000,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「3～6か月ごと」",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/side-brush-t80",
+          "intervalUrl": "https://site-static.ecovacs.com/upload/file/support/2025/05/08/055928_2473$DEEBOTT80FamilyInstructionManual_JP.pdf"
+        },
+        {
+          "item": "抗菌フィルター（X11/X8/T80/T80S用・3個入り）",
+          "packPrice": 2750,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「3～6か月ごと」",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/antibacterial-filter-x8",
+          "intervalUrl": "https://site-static.ecovacs.com/upload/file/support/2025/05/08/055928_2473$DEEBOTT80FamilyInstructionManual_JP.pdf"
         },
         {
           "item": "ゴミパック",
-          "packPrice": 3300, "packQty": 3, "perSwap": 1,
-          "intervalMonths": [2, 3],
+          "packPrice": 3300,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            2,
+            3
+          ],
           "intervalBasis": "取扱説明書「2～3カ月ごと」",
           "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/antibacteria-dust-bag-x8",
           "intervalUrl": "https://site-static.ecovacs.com/upload/file/support/2025/05/08/055928_2473$DEEBOTT80FamilyInstructionManual_JP.pdf"
         },
         {
           "item": "ローラーモップ",
-          "packPrice": 2750, "packQty": 1, "perSwap": 1,
-          "intervalMonths": [1, 2],
+          "packPrice": 2750,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            1,
+            2
+          ],
           "intervalBasis": "取扱説明書「1～2カ月ごと」",
           "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/antibacterial-mopping-roller-x8",
           "intervalUrl": "https://site-static.ecovacs.com/upload/file/support/2025/05/08/055928_2473$DEEBOTT80FamilyInstructionManual_JP.pdf"
         }
       ],
-      "excluded": ["専用床洗剤（他機種と条件をそろえるため除外）"],
-      "note": "ECOVACS Japan公式ストアの純正品価格。メインブラシ・サイドブラシ・フィルターは単品がなくセット販売のため、セットを公式の交換頻度で買い替える前提（メインブラシ分はやや高めに見積もり）。ローラーモップは確認時点で予約販売。"
+      "excluded": [
+        "専用床洗剤（他機種と条件をそろえるため除外）"
+      ],
+      "note": "ECOVACS Japan公式ストアの純正品価格。メインブラシ・サイドブラシ・フィルターは単品がそろうため単品で計算（交換用キット：メインブラシ1・サイドブラシ2・フィルター3で4,950円もあり）。交換頻度は公式サイト掲載のT80 Family取扱説明書（日本語）による。ローラーモップは確認時点で予約販売。",
+      "checkedAt": "2026-10-12"
     },
     "deebot-t90-omni": {
       "parts": [
         {
           "item": "交換用キット（メインブラシ・サイドブラシ・フィルター）",
-          "packPrice": 5500, "packQty": 1, "perSwap": 1,
-          "intervalMonths": [3, 6],
+          "packPrice": 5500,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
           "intervalBasis": "公式ストア商品ページ「交換頻度：3~6ヵ月ごと」",
           "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/buddy-kit-t90"
         },
         {
           "item": "ゴミパック",
-          "packPrice": 3300, "packQty": 3, "perSwap": 1,
-          "intervalMonths": [3, 3],
+          "packPrice": 3300,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            3
+          ],
           "intervalBasis": "製品ページ「最長90日間メンテナンス不要」（取扱説明書は「アプリからの通知があったとき」）",
           "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/antibacterial-dust-bag-deebot-t90",
           "intervalUrl": "https://www.ecovacs.com/jp/deebot-robotic-vacuum-cleaner/deebot-t90-omni"
         },
         {
           "item": "ローラーモップ",
-          "packPrice": 3500, "packQty": 1, "perSwap": 1,
-          "intervalMonths": [1, 2],
+          "packPrice": 3500,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            1,
+            2
+          ],
           "intervalBasis": "取扱説明書「1～2カ月ごと」",
           "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/antibacterial-mopping-roller-t90",
           "intervalUrl": "https://site-static.ecovacs.com/upload/file/support/2026/02/26/021703_9181$DEEBOTT90OMNIInstructionManual-JP.pdf"
         }
       ],
-      "excluded": ["専用床洗剤（他機種と条件をそろえるため除外）"],
+      "excluded": [
+        "専用床洗剤（他機種と条件をそろえるため除外）"
+      ],
       "note": "ECOVACS Japan公式ストアの純正品価格。メインブラシ・サイドブラシ・フィルターは単品がなくセット販売のため、セットを公式の交換頻度で買い替える前提（メインブラシ分はやや高めに見積もり）。ゴミパックは最長日数での計算のため、ゴミが多い家庭では早まる。"
     },
     "deebot-x11-omnicyclone": {
       "parts": [
         {
           "item": "交換用キット（メインブラシ・サイドブラシ・フィルター）",
-          "packPrice": 5500, "packQty": 1, "perSwap": 1,
-          "intervalMonths": [3, 6],
+          "packPrice": 5500,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
           "intervalBasis": "公式ストア商品ページ「交換頻度：3~6ヵ月ごと」",
           "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/buddy-kit-x11"
         },
         {
           "item": "ローラーモップ",
-          "packPrice": 3300, "packQty": 1, "perSwap": 1,
-          "intervalMonths": [1, 2],
+          "packPrice": 3300,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            1,
+            2
+          ],
           "intervalBasis": "取扱説明書「1～2カ月ごと」",
           "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/mopping-roller-x11",
           "intervalUrl": "https://site-static.ecovacs.com/upload/file/support/2025/11/19/092859_7875$X11OMNICYCLONEInstructionManual_JP.pdf"
@@ -152,6 +266,451 @@
         "専用床洗剤（他機種と条件をそろえるため除外）"
       ],
       "note": "ECOVACS Japan公式ストアの純正品価格。メインブラシ・サイドブラシ・フィルターは単品がなくセット販売のため、セットを公式の交換頻度で買い替える前提（メインブラシ分はやや高めに見積もり）。"
+    },
+    "deebot-mini-2": {
+      "parts": [
+        {
+          "item": "絡み防止メインブラシ（DEEBOT mini2用）",
+          "packPrice": 3300,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            12
+          ],
+          "intervalBasis": "取扱説明書「メインブラシ 6～12ヵ月ごと」",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/anti-tangle-main-brush-deebot-mini2",
+          "intervalUrl": "https://site-static.ecovacs.com/upload/file/support/2026/04/23/080640_9697$DEEBOTmini2InstructionManual-JP.pdf"
+        },
+        {
+          "item": "ARClean絡み防止サイドブラシ（DEEBOT mini2用・2個入り）",
+          "packPrice": 1980,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「サイドブラシ 3～6ヵ月ごと」（本体のサイドブラシは1本）",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/side-brush-deebot-mini2",
+          "intervalUrl": "https://site-static.ecovacs.com/upload/file/support/2026/04/23/080640_9697$DEEBOTmini2InstructionManual-JP.pdf"
+        },
+        {
+          "item": "抗菌フィルター（DEEBOT mini2用・3個入り）",
+          "packPrice": 1650,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「フィルター 3～6ヵ月ごと」",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/antibacterial-filter-deebot-mini2",
+          "intervalUrl": "https://site-static.ecovacs.com/upload/file/support/2026/04/23/080640_9697$DEEBOTmini2InstructionManual-JP.pdf"
+        },
+        {
+          "item": "抗菌ゴミパック（DEEBOT mini/mini PRO/mini2専用・3個入り）",
+          "packPrice": 2200,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            2,
+            2
+          ],
+          "intervalBasis": "製品ページ「ダストボックスに触れずに最大60日間※おまかせできます」（取扱説明書は「アプリから通知されたとき」）",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/antibacterial-dust-bag-deebot-mini",
+          "intervalUrl": "https://www.ecovacs.com/jp/deebot-robotic-vacuum-cleaner/deebot-mini2"
+        }
+      ],
+      "excluded": [
+        "モップパッド（mini2対応の単品が公式ストアになく、アクセサリーキット8,400円にのみ同梱のため除外）",
+        "ブラシカバー（取扱説明書に交換頻度の記載なし）",
+        "専用床洗剤（他機種と条件をそろえるため除外）"
+      ],
+      "note": "ECOVACS Japan公式ストアの純正品価格。交換頻度は公式サイト掲載の日本語取扱説明書による。単品がそろうため単品で計算（アクセサリーキット：フィルター3・サイドブラシ2・メインブラシ1・モップパッド4・ゴミパック3で8,400円もあり）。ゴミパックは最長日数での計算のため、ゴミが多い家庭では早まる。モップパッド分は含まれない。",
+      "checkedAt": "2026-10-12"
+    },
+    "deebot-mini": {
+      "parts": [
+        {
+          "item": "絡み防止メインブラシ（DEEBOT mini/mini PRO専用）",
+          "packPrice": 3300,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            12
+          ],
+          "intervalBasis": "取扱説明書「ローラーブラシ 6～12か月ごと」",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/anti-tangle-main-brush-deebot-mini",
+          "intervalUrl": "https://site-static.ecovacs.com/upload/file/support/2026/04/09/074310_5163$DEEBOTminiFamilyInstructionManua-JP.pdf"
+        },
+        {
+          "item": "サイドブラシ（DEEBOT mini/mini PRO専用・2個入り）",
+          "packPrice": 1980,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「サイドブラシ 3～6か月ごと」（本体のサイドブラシは1本）",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/side-brush-deebot-mini",
+          "intervalUrl": "https://site-static.ecovacs.com/upload/file/support/2026/04/09/074310_5163$DEEBOTminiFamilyInstructionManua-JP.pdf"
+        },
+        {
+          "item": "抗菌フィルター（DEEBOT mini/mini PRO専用・3個入り）",
+          "packPrice": 1650,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「本体ダストボックスフィルター 3～6か月ごと」",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/antibacterial-filter-deebot-mini",
+          "intervalUrl": "https://site-static.ecovacs.com/upload/file/support/2026/04/09/074310_5163$DEEBOTminiFamilyInstructionManua-JP.pdf"
+        },
+        {
+          "item": "モップパッド（DEEBOT mini/mini PRO専用・4枚入り）",
+          "packPrice": 2750,
+          "packQty": 4,
+          "perSwap": 2,
+          "intervalMonths": [
+            1,
+            2
+          ],
+          "intervalBasis": "取扱説明書「洗えるモップパッド 1～2か月ごと」（モップは2枚使用）",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/washable-mopping-pad-deebot-mini",
+          "intervalUrl": "https://site-static.ecovacs.com/upload/file/support/2026/04/09/074310_5163$DEEBOTminiFamilyInstructionManua-JP.pdf"
+        }
+      ],
+      "excluded": [
+        "抗菌ゴミパック（取扱説明書は「アプリにメッセージが表示される時に交換する」のみで、製品ページにも日数の記載がないため除外）",
+        "専用床洗剤（他機種と条件をそろえるため除外）"
+      ],
+      "note": "ECOVACS Japan公式ストアの純正品価格。交換頻度は公式サイト掲載の日本語取扱説明書（DEEBOT mini Family）による。モップパッドの商品ページは「推奨交換頻度：2～3ヶ月」だが、取扱説明書の「1～2か月ごと」を採用。単品がそろうため単品で計算（アクセサリーキット：メインブラシ1・サイドブラシ4・フィルター3で5,500円もあり）。ゴミパック代は含まれない。",
+      "checkedAt": "2026-10-12"
+    },
+    "deebot-n50-omni": {
+      "parts": [
+        {
+          "item": "絡み防止メインブラシ（X8/T80/T50/T50S/N50用）",
+          "packPrice": 3300,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            12
+          ],
+          "intervalBasis": "取扱説明書「メインブラシ 6～12ヵ月ごと」",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/anti-tangle-main-brush-x8",
+          "intervalUrl": "https://site-static.ecovacs.com/upload/file/support/2026/07/30/055849_9214$DEEBOTN50OMNIInstructionManual.pdf"
+        },
+        {
+          "item": "サイドブラシ（T80/T50S/N50用・2個入り）",
+          "packPrice": 2000,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「サイドブラシ 3～6ヵ月ごと」（本体のサイドブラシは1本）",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/side-brush-t80",
+          "intervalUrl": "https://site-static.ecovacs.com/upload/file/support/2026/07/30/055849_9214$DEEBOTN50OMNIInstructionManual.pdf"
+        },
+        {
+          "item": "抗菌フィルター（T50/T50S/N50用・3個入り）",
+          "packPrice": 3300,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「フィルター 3～6ヵ月ごと」",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/antibacterial-filter-t50",
+          "intervalUrl": "https://site-static.ecovacs.com/upload/file/support/2026/07/30/055849_9214$DEEBOTN50OMNIInstructionManual.pdf"
+        },
+        {
+          "item": "モップパッド（T50/T50S/N50シリーズ用・4個入り）",
+          "packPrice": 3300,
+          "packQty": 4,
+          "perSwap": 2,
+          "intervalMonths": [
+            1,
+            2
+          ],
+          "intervalBasis": "取扱説明書「洗えるモップパッド 1～2ヵ月ごと」（モップは2枚使用）",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/washable-mopping-pad-t50",
+          "intervalUrl": "https://site-static.ecovacs.com/upload/file/support/2026/07/30/055849_9214$DEEBOTN50OMNIInstructionManual.pdf"
+        },
+        {
+          "item": "抗菌ゴミパック（X8/T80/T80S/T50/T50S/N50シリーズ用・3個入り）",
+          "packPrice": 3300,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            3
+          ],
+          "intervalBasis": "製品ページ「3Lの大容量ダストバッグにより、最大90日間ゴミ捨てが不要」（取扱説明書は「アプリから通知されたとき」）",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/antibacteria-dust-bag-x8",
+          "intervalUrl": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/bundle-deebot-n50-omni-white"
+        }
+      ],
+      "excluded": [
+        "専用床洗剤（他機種と条件をそろえるため除外）"
+      ],
+      "note": "ECOVACS Japan公式ストアの純正品価格。交換頻度は公式サイト掲載のN50 OMNI取扱説明書（日本語）による。サイドブラシの商品ページは「推奨交換サイクル：2〜3ヶ月」、メインブラシの商品ページは「推奨交換サイクル：6ヶ月」だが、取扱説明書の値を採用。T50/T50S/N50用アクセサリーキット（フィルター1・ゴミパック2・モップ4で7,150円）もあるが単品で計算。ゴミパックは最長日数での計算のため、ゴミが多い家庭では早まる。",
+      "checkedAt": "2026-10-12"
+    },
+    "deebot-t50-omni": {
+      "parts": [
+        {
+          "item": "絡み防止メインブラシ（X8/T80/T50/T50S/N50用）",
+          "packPrice": 3300,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            12
+          ],
+          "intervalBasis": "取扱説明書「メインブラシ 6～12か月ごと」",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/anti-tangle-main-brush-x8",
+          "intervalUrl": "https://site-static.ecovacs.com/upload/file/support/2025/04/08/025221_4952$DEEBOTT50OMNI-InstructionManual-JP.pdf"
+        },
+        {
+          "item": "サイドブラシ（X8/T50シリーズ用・2個入り）",
+          "packPrice": 1320,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「サイドブラシ 3～6か月ごと」（本体のサイドブラシは1本）",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/side-brush-x8",
+          "intervalUrl": "https://site-static.ecovacs.com/upload/file/support/2025/04/08/025221_4952$DEEBOTT50OMNI-InstructionManual-JP.pdf"
+        },
+        {
+          "item": "抗菌フィルター（T50/T50S/N50用・3個入り）",
+          "packPrice": 3300,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「フィルター 3～6か月ごと」",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/antibacterial-filter-t50",
+          "intervalUrl": "https://site-static.ecovacs.com/upload/file/support/2025/04/08/025221_4952$DEEBOTT50OMNI-InstructionManual-JP.pdf"
+        },
+        {
+          "item": "モップパッド（T50/T50S/N50シリーズ用・4個入り）",
+          "packPrice": 3300,
+          "packQty": 4,
+          "perSwap": 2,
+          "intervalMonths": [
+            1,
+            2
+          ],
+          "intervalBasis": "取扱説明書「洗えるモップ 1～2か月ごと」（モップは2枚使用）",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/washable-mopping-pad-t50",
+          "intervalUrl": "https://site-static.ecovacs.com/upload/file/support/2025/04/08/025221_4952$DEEBOTT50OMNI-InstructionManual-JP.pdf"
+        }
+      ],
+      "excluded": [
+        "抗菌ゴミパック（取扱説明書は「アプリが通知したら」のみで、製品ページにも日数の記載がないため除外）",
+        "専用床洗剤（他機種と条件をそろえるため除外）"
+      ],
+      "note": "ECOVACS Japan公式ストアの純正品価格。交換頻度は公式サイト掲載のT50 OMNI取扱説明書（日本語）による。サイドブラシはT50用（X8/T50シリーズ用）で、T50S/N50用とは別品。T50/T50S/N50用アクセサリーキット（フィルター1・ゴミパック2・モップ4で7,150円）もあるが単品で計算。ゴミパック代は含まれない。",
+      "checkedAt": "2026-10-12"
+    },
+    "deebot-t50s-omni": {
+      "parts": [
+        {
+          "item": "絡み防止メインブラシ（X8/T80/T50/T50S/N50用）",
+          "packPrice": 3300,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            12
+          ],
+          "intervalBasis": "取扱説明書「メインブラシ 6～12ヵ月ごと」",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/anti-tangle-main-brush-x8",
+          "intervalUrl": "https://site-static.ecovacs.com/upload/file/support/2026/03/20/011718_1130$DEEBOTT50SOMNIInstructionManual%E2%80%94JP.pdf"
+        },
+        {
+          "item": "サイドブラシ（T80/T50S/N50用・2個入り）",
+          "packPrice": 2000,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「サイドブラシ 3～6ヵ月ごと」（本体のサイドブラシは1本）",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/side-brush-t80",
+          "intervalUrl": "https://site-static.ecovacs.com/upload/file/support/2026/03/20/011718_1130$DEEBOTT50SOMNIInstructionManual%E2%80%94JP.pdf"
+        },
+        {
+          "item": "抗菌フィルター（T50/T50S/N50用・3個入り）",
+          "packPrice": 3300,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「フィルター 3～6ヵ月ごと」",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/antibacterial-filter-t50",
+          "intervalUrl": "https://site-static.ecovacs.com/upload/file/support/2026/03/20/011718_1130$DEEBOTT50SOMNIInstructionManual%E2%80%94JP.pdf"
+        },
+        {
+          "item": "モップパッド（T50/T50S/N50シリーズ用・4個入り）",
+          "packPrice": 3300,
+          "packQty": 4,
+          "perSwap": 2,
+          "intervalMonths": [
+            1,
+            2
+          ],
+          "intervalBasis": "取扱説明書「洗えるモップパッド 1～2ヵ月ごと」（モップは2枚使用）",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/washable-mopping-pad-t50",
+          "intervalUrl": "https://site-static.ecovacs.com/upload/file/support/2026/03/20/011718_1130$DEEBOTT50SOMNIInstructionManual%E2%80%94JP.pdf"
+        }
+      ],
+      "excluded": [
+        "抗菌ゴミパック（取扱説明書は「アプリから通知されたとき」のみで、製品ページにも日数の記載がないため除外）",
+        "専用床洗剤（他機種と条件をそろえるため除外）"
+      ],
+      "note": "ECOVACS Japan公式ストアの純正品価格。交換頻度は公式サイト掲載のT50S OMNI取扱説明書（日本語）による。サイドブラシの商品ページは「推奨交換サイクル：2〜3ヶ月」、メインブラシの商品ページは「推奨交換サイクル：6ヶ月」だが、取扱説明書の値を採用。T50/T50S/N50用アクセサリーキット（フィルター1・ゴミパック2・モップ4で7,150円）もあるが単品で計算。ゴミパック代は含まれない。",
+      "checkedAt": "2026-10-12"
+    },
+    "deebot-t80s-omni": {
+      "parts": [
+        {
+          "item": "X11/T80S用抗菌アクセサリーキット（メインブラシ1・サイドブラシ2・フィルター3）",
+          "packPrice": 5500,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "公式ストア商品ページ「交換頻度：3〜6か月ごと」",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/buddy-kit-x11"
+        },
+        {
+          "item": "抗菌付きローラーモップ（X11/T80S用）",
+          "packPrice": 3300,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            1,
+            2
+          ],
+          "intervalBasis": "取扱説明書「洗えるローラーモップ 1～2ヵ月ごと」",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/mopping-roller-x11",
+          "intervalUrl": "https://site-static.ecovacs.com/upload/file/support/2026/03/20/014236_5672$DEEBOTT80SOMNIInstructionManual%E2%80%94JP.pdf"
+        },
+        {
+          "item": "抗菌ゴミパック（X8/T80/T80S/T50/T50S/N50シリーズ用・3個入り）",
+          "packPrice": 3300,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            3
+          ],
+          "intervalBasis": "製品ページ「最大90日間ゴミ捨て不要」（取扱説明書は「アプリから通知されたとき」）",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/antibacteria-dust-bag-x8",
+          "intervalUrl": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/bundle-t80s-omni-black-kit-mop"
+        }
+      ],
+      "excluded": [
+        "サイドブラシ・フィルターの単品（アクセサリーキットに含まれるため二重計上を避けて除外）",
+        "専用床洗剤（他機種と条件をそろえるため除外）"
+      ],
+      "note": "ECOVACS Japan公式ストアの純正品価格。T80S対応のメインブラシは単品がなく（X8/T80用メインブラシはT80S非対応）、キットでのみ購入できるため、既存のX11と同じくキットを公式の交換頻度で買い替える前提（メインブラシ分はやや高めに見積もり）。取扱説明書（日本語）の交換頻度はサイドブラシ・フィルター3～6ヵ月、メインブラシ6～12ヵ月。ゴミパックは最長日数での計算のため、ゴミが多い家庭では早まる。",
+      "checkedAt": "2026-10-12"
+    },
+    "deebot-x8-pro-omni": {
+      "parts": [
+        {
+          "item": "絡み防止メインブラシ（X8/T80/T50/T50S/N50用）",
+          "packPrice": 3300,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            12
+          ],
+          "intervalBasis": "取扱説明書「メインブラシ 6～12か月ごと」",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/anti-tangle-main-brush-x8",
+          "intervalUrl": "https://site-static.ecovacs.com/upload/file/support/2025/03/31/010949_2306$DEEBOTX8FAMILYInstructionManual-JP.pdf"
+        },
+        {
+          "item": "サイドブラシ（X8/T50シリーズ用・2個入り）",
+          "packPrice": 1320,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「サイドブラシ 3～6か月ごと」（本体のサイドブラシは1本）",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/side-brush-x8",
+          "intervalUrl": "https://site-static.ecovacs.com/upload/file/support/2025/03/31/010949_2306$DEEBOTX8FAMILYInstructionManual-JP.pdf"
+        },
+        {
+          "item": "抗菌フィルター（X11/X8/T80/T80S用・3個入り）",
+          "packPrice": 2750,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「フィルター 3～6か月ごと」",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/antibacterial-filter-x8",
+          "intervalUrl": "https://site-static.ecovacs.com/upload/file/support/2025/03/31/010949_2306$DEEBOTX8FAMILYInstructionManual-JP.pdf"
+        },
+        {
+          "item": "抗菌付きローラーモップ（X8/T80用）",
+          "packPrice": 2750,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            1,
+            2
+          ],
+          "intervalBasis": "取扱説明書「交換可能なローラーモップ 1～2か月ごと」",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/antibacterial-mopping-roller-x8",
+          "intervalUrl": "https://site-static.ecovacs.com/upload/file/support/2025/03/31/010949_2306$DEEBOTX8FAMILYInstructionManual-JP.pdf"
+        },
+        {
+          "item": "抗菌ゴミパック（X8/T80/T80S/T50/T50S/N50シリーズ用・3個入り）",
+          "packPrice": 3300,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            2,
+            3
+          ],
+          "intervalBasis": "取扱説明書「ダストバッグ 2～3ヶ月ごと」",
+          "priceUrl": "https://www.ecovacs.com/jp/shop/accessories/antibacteria-dust-bag-x8",
+          "intervalUrl": "https://site-static.ecovacs.com/upload/file/support/2025/03/31/010949_2306$DEEBOTX8FAMILYInstructionManual-JP.pdf"
+        }
+      ],
+      "excluded": [
+        "専用床洗剤（他機種と条件をそろえるため除外）"
+      ],
+      "note": "ECOVACS Japan公式ストアの純正品価格。交換頻度は公式サイト掲載のX8 FAMILY取扱説明書（日本語）による。メインブラシの商品ページは「推奨交換サイクル：6ヶ月」だが取扱説明書の「6～12か月ごと」を採用。単品がそろうため単品で計算（X8シリーズ用アクセサリーキット：フィルター3・サイドブラシ2・メインブラシ1で4,950円もあり）。ローラーモップは確認時点で予約販売（10月中旬以降発送）。",
+      "checkedAt": "2026-10-12"
     }
   }
 }

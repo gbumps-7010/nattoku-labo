@@ -6,40 +6,65 @@
       "parts": [
         {
           "item": "紙パック（紙パックB）",
-          "packPrice": 1980, "packQty": 3, "perSwap": 1,
-          "intervalMonths": [2, 2],
+          "packPrice": 1980,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            2,
+            2
+          ],
           "intervalBasis": "製品ページ「60日分のゴミを自動収集」（取扱説明書は「必要に応じて交換」）",
           "priceUrl": "https://shop.softbankselection.jp/item/6970995785890.html",
           "intervalUrl": "https://jp.roborock.com/pages/roborock-q10p"
         },
         {
           "item": "メインブラシ（メインブラシC）",
-          "packPrice": 3300, "packQty": 1, "perSwap": 1,
-          "intervalMonths": [6, 12],
+          "packPrice": 3300,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            12
+          ],
           "intervalBasis": "取扱説明書「6～12か月に1度交換」",
           "priceUrl": "https://shop.softbankselection.jp/item/6936905902450.html",
           "intervalUrl": "https://jp.roborock.com/cdn/shop/t/7/assets/manual_q10pplus.pdf"
         },
         {
           "item": "サイドブラシ（サイドブラシN2）",
-          "packPrice": 1650, "packQty": 2, "perSwap": 1,
-          "intervalMonths": [3, 6],
+          "packPrice": 1650,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
           "intervalBasis": "取扱説明書「3～6か月に1度交換」",
           "priceUrl": "https://shop.softbankselection.jp/item/6970995783605.html",
           "intervalUrl": "https://jp.roborock.com/cdn/shop/t/7/assets/manual_q10pplus.pdf"
         },
         {
           "item": "エアフィルター（エアフィルターI）",
-          "packPrice": 1980, "packQty": 2, "perSwap": 1,
-          "intervalMonths": [6, 12],
+          "packPrice": 1980,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            12
+          ],
           "intervalBasis": "取扱説明書「6～12か月に1度交換」",
           "priceUrl": "https://shop.softbankselection.jp/item/6936905902474.html",
           "intervalUrl": "https://jp.roborock.com/cdn/shop/t/7/assets/manual_q10pplus.pdf"
         },
         {
           "item": "モップクロス（モップクロスC）",
-          "packPrice": 1980, "packQty": 2, "perSwap": 1,
-          "intervalMonths": [3, 6],
+          "packPrice": 1980,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
           "intervalBasis": "取扱説明書「3～6か月に1度交換」",
           "priceUrl": "https://shop.softbankselection.jp/item/6936905902498.html",
           "intervalUrl": "https://jp.roborock.com/cdn/shop/t/7/assets/manual_q10pplus.pdf"
@@ -52,40 +77,65 @@
       "parts": [
         {
           "item": "紙パック（紙パックC）",
-          "packPrice": 1980, "packQty": 3, "perSwap": 1,
-          "intervalMonths": [2, 2],
+          "packPrice": 1980,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            2,
+            2
+          ],
           "intervalBasis": "製品ページ「60日分のゴミを収集可能」（取扱説明書は「必要に応じて交換」）",
           "priceUrl": "https://shop.softbankselection.jp/item/6970995788273.html",
           "intervalUrl": "https://jp.roborock.com/pages/roborock-qrevo-l"
         },
         {
           "item": "メインブラシ（ラバータイプ）",
-          "packPrice": 1980, "packQty": 1, "perSwap": 1,
-          "intervalMonths": [6, 12],
+          "packPrice": 1980,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            12
+          ],
           "intervalBasis": "取扱説明書「6～12か月ごとに交換」",
           "priceUrl": "https://shop.softbankselection.jp/item/6970995783186.html",
           "intervalUrl": "https://jp.roborock.com/cdn/shop/t/7/assets/manual_qrevol.pdf"
         },
         {
           "item": "サイドブラシ（サイドブラシN2）",
-          "packPrice": 1650, "packQty": 2, "perSwap": 1,
-          "intervalMonths": [3, 6],
+          "packPrice": 1650,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
           "intervalBasis": "取扱説明書「3～6か月ごとに交換」",
           "priceUrl": "https://shop.softbankselection.jp/item/6970995783605.html",
           "intervalUrl": "https://jp.roborock.com/cdn/shop/t/7/assets/manual_qrevol.pdf"
         },
         {
           "item": "エアフィルター（エアフィルターF）",
-          "packPrice": 1980, "packQty": 2, "perSwap": 1,
-          "intervalMonths": [6, 12],
+          "packPrice": 1980,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            12
+          ],
           "intervalBasis": "取扱説明書「6～12か月に1度交換」",
           "priceUrl": "https://shop.softbankselection.jp/item/6970995783568.html",
           "intervalUrl": "https://jp.roborock.com/cdn/shop/t/7/assets/manual_qrevol.pdf"
         },
         {
           "item": "丸形モップクロス（丸形モップクロスD）",
-          "packPrice": 1980, "packQty": 4, "perSwap": 2,
-          "intervalMonths": [1, 3],
+          "packPrice": 1980,
+          "packQty": 4,
+          "perSwap": 2,
+          "intervalMonths": [
+            1,
+            3
+          ],
           "intervalBasis": "取扱説明書「1～3か月に1度交換」（モップは2枚使用）",
           "priceUrl": "https://shop.softbankselection.jp/item/6936905903686.html",
           "intervalUrl": "https://jp.roborock.com/cdn/shop/t/7/assets/manual_qrevol.pdf"
@@ -98,44 +148,358 @@
       "parts": [
         {
           "item": "紙パック（紙パックC）",
-          "packPrice": 1980, "packQty": 3, "perSwap": 1,
-          "intervalMonths": [2, 2],
+          "packPrice": 1980,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            2,
+            2
+          ],
           "intervalBasis": "製品ページ「60日分のゴミを本体から自動で吸い上げ」（販売ページは「必要に応じて交換」）",
           "priceUrl": "https://shop.softbankselection.jp/item/6970995788273.html",
           "intervalUrl": "https://jp.roborock.com/pages/roborock-saros-10r"
         },
         {
           "item": "メインブラシ（メインブラシN・2本1組）",
-          "packPrice": 3300, "packQty": 2, "perSwap": 2,
-          "intervalMonths": [6, 12],
+          "packPrice": 3300,
+          "packQty": 2,
+          "perSwap": 2,
+          "intervalMonths": [
+            6,
+            12
+          ],
           "intervalBasis": "販売ページ「6～12か月ごとに交換」（本体はメインブラシ2本）",
           "priceUrl": "https://shop.softbankselection.jp/item/6970995783599.html"
         },
         {
           "item": "サイドブラシ（サイドブラシN2）",
-          "packPrice": 1650, "packQty": 2, "perSwap": 1,
-          "intervalMonths": [3, 6],
+          "packPrice": 1650,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
           "intervalBasis": "販売ページ「3～6か月ごとに交換」",
           "priceUrl": "https://shop.softbankselection.jp/item/6970995783605.html"
         },
         {
           "item": "エアフィルター（エアフィルターK）",
-          "packPrice": 1980, "packQty": 2, "perSwap": 1,
-          "intervalMonths": [6, 12],
+          "packPrice": 1980,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            12
+          ],
           "intervalBasis": "Roborock公式アクセサリー一覧「6～12か月ごとに交換」",
           "priceUrl": "https://shop.softbankselection.jp/item/6936905904270.html",
           "intervalUrl": "https://jp.roborock.com/pages/accessories"
         },
         {
           "item": "丸形モップクロス（丸形モップクロスC）",
-          "packPrice": 1980, "packQty": 4, "perSwap": 2,
-          "intervalMonths": [1, 3],
+          "packPrice": 1980,
+          "packQty": 4,
+          "perSwap": 2,
+          "intervalMonths": [
+            1,
+            3
+          ],
           "intervalBasis": "販売ページ「1～3か月ごとに交換」（モップは2枚使用）",
           "priceUrl": "https://shop.softbankselection.jp/item/6936905903549.html"
         }
       ],
-      "excluded": ["専用床洗剤（他機種と条件をそろえるため除外）"],
+      "excluded": [
+        "専用床洗剤（他機種と条件をそろえるため除外）"
+      ],
       "note": "価格はRoborock純正品の正規販売店（ソフトバンクセレクション）の税込価格。型番・対応機種はRoborock公式アクセサリー一覧で確認。交換目安は正規販売店の商品ページ（メーカー記載の仕様表）による。"
+    },
+    "q10v-plus": {
+      "parts": [
+        {
+          "item": "紙パック（紙パックB）",
+          "packPrice": 1980,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            1.61,
+            1.61
+          ],
+          "intervalBasis": "製品ページ「7週間分のゴミを本体から自動で吸い上げ」（49日÷30.4日で約1.61か月。取扱説明書は「満杯になったらすぐに交換」、販売ページは「必要に応じて交換」）",
+          "priceUrl": "https://shop.softbankselection.jp/item/6970995785890.html",
+          "intervalUrl": "https://jp.roborock.com/pages/roborock-q10v"
+        },
+        {
+          "item": "メインブラシ（メインブラシC）",
+          "packPrice": 3300,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            12
+          ],
+          "intervalBasis": "取扱説明書「2週間に1度清掃し、6～12か月に1度交換してください」",
+          "priceUrl": "https://shop.softbankselection.jp/item/6936905902450.html",
+          "intervalUrl": "https://jp.roborock.com/cdn/shop/t/7/assets/manual_q10vplus.pdf"
+        },
+        {
+          "item": "サイドブラシ（サイドブラシN2）",
+          "packPrice": 1650,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「月に1回清掃し、3～6か月に1度交換してください」",
+          "priceUrl": "https://shop.softbankselection.jp/item/6970995783605.html",
+          "intervalUrl": "https://jp.roborock.com/cdn/shop/t/7/assets/manual_q10vplus.pdf"
+        },
+        {
+          "item": "エアフィルター（エアフィルターI）",
+          "packPrice": 1980,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            12
+          ],
+          "intervalBasis": "取扱説明書「2週間に1度清掃し、6～12か月に1度交換してください」",
+          "priceUrl": "https://shop.softbankselection.jp/item/6936905902474.html",
+          "intervalUrl": "https://jp.roborock.com/cdn/shop/t/7/assets/manual_q10vplus.pdf"
+        },
+        {
+          "item": "VibraRiseモップクロス（SXTB15RR・2枚入り）",
+          "packPrice": 2499,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「使用後に毎回清掃し、3～6か月に1度交換してください」（本体はモップクロス1枚）",
+          "priceUrl": "https://www.amazon.co.jp/dp/B0F6T4MPW9",
+          "intervalUrl": "https://jp.roborock.com/pages/accessories"
+        }
+      ],
+      "excluded": [
+        "メインブラシカバーG（ブラック）：「必要に応じて交換」のみで交換目安なし"
+      ],
+      "note": "価格はRoborock純正品の正規販売店（ソフトバンクセレクション）の税込価格。型番・対応機種はRoborock公式アクセサリー一覧で確認。交換目安はQ10V+の取扱説明書による。紙パックの交換目安は既存データの慣例に従い、製品ページの収集容量表記（7週間分）を月数に換算。 VibraRiseモップクロスの価格はAmazon（販売元：Roborock JP、公式アクセサリー一覧の購入リンク先）の税込価格。",
+      "checkedAt": "2026-10-12"
+    },
+    "q10v": {
+      "parts": [
+        {
+          "item": "メインブラシ（メインブラシC）",
+          "packPrice": 3300,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            12
+          ],
+          "intervalBasis": "取扱説明書「2週間に1度清掃し、6～12か月に1度交換してください」",
+          "priceUrl": "https://shop.softbankselection.jp/item/6936905902450.html",
+          "intervalUrl": "https://jp.roborock.com/cdn/shop/t/7/assets/manual_q10v.pdf"
+        },
+        {
+          "item": "サイドブラシ（サイドブラシN2）",
+          "packPrice": 1650,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「月に1回清掃し、3～6か月に1度交換してください」",
+          "priceUrl": "https://shop.softbankselection.jp/item/6970995783605.html",
+          "intervalUrl": "https://jp.roborock.com/cdn/shop/t/7/assets/manual_q10v.pdf"
+        },
+        {
+          "item": "エアフィルター（エアフィルターI）",
+          "packPrice": 1980,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            12
+          ],
+          "intervalBasis": "取扱説明書「2週間に1度清掃し、6～12か月に1度交換してください」",
+          "priceUrl": "https://shop.softbankselection.jp/item/6936905902474.html",
+          "intervalUrl": "https://jp.roborock.com/cdn/shop/t/7/assets/manual_q10v.pdf"
+        },
+        {
+          "item": "VibraRiseモップクロス（SXTB15RR・2枚入り）",
+          "packPrice": 2499,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「使用後に毎回清掃し、3～6か月に1度交換してください」（本体はモップクロス1枚）",
+          "priceUrl": "https://www.amazon.co.jp/dp/B0F6T4MPW9",
+          "intervalUrl": "https://jp.roborock.com/pages/accessories"
+        }
+      ],
+      "excluded": [
+        "紙パック：Q10Vは自動ゴミ収集ドックなしのモデルのため対象外",
+        "メインブラシカバーG（ブラック）：「必要に応じて交換」のみで交換目安なし"
+      ],
+      "note": "価格はRoborock純正品の正規販売店（ソフトバンクセレクション）の税込価格。型番・対応機種はRoborock公式アクセサリー一覧で確認。交換目安はQ10Vの取扱説明書による。 VibraRiseモップクロスの価格はAmazon（販売元：Roborock JP、公式アクセサリー一覧の購入リンク先）の税込価格。",
+      "checkedAt": "2026-10-12"
+    },
+    "qrevo-curv-2-flow": {
+      "parts": [
+        {
+          "item": "紙パック（紙パックC）",
+          "packPrice": 1980,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            2.14,
+            2.14
+          ],
+          "intervalBasis": "製品ページ「手動でのゴミ収集なしで、最大65日間使用できます」（65日÷30.4日で約2.14か月。取扱説明書・販売ページは「必要に応じて交換」）",
+          "priceUrl": "https://shop.softbankselection.jp/item/6970995788273.html",
+          "intervalUrl": "https://jp.roborock.com/pages/roborock-qrevo-curv-2-flow"
+        },
+        {
+          "item": "メインブラシ（メインブラシN・2本入り）",
+          "packPrice": 3300,
+          "packQty": 2,
+          "perSwap": 2,
+          "intervalMonths": [
+            6,
+            12
+          ],
+          "intervalBasis": "取扱説明書「2週間に1度掃除し、6～12か月ごとに交換することをお勧めします」（DuoDivideメインブラシは2本1組。販売ページ製品構成「メインブラシ×2」、同ブラシ対応のSaros 10R製品ページ「らせん状の２つのメインブラシ」）",
+          "priceUrl": "https://shop.softbankselection.jp/item/6970995783599.html",
+          "intervalUrl": "https://cdn.shopify.com/s/files/1/0648/8778/3472/files/Qrevo_Curv_2_Flow.pdf"
+        },
+        {
+          "item": "ローラーモップ（SXTB19RR）",
+          "packPrice": 2999,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            1,
+            3
+          ],
+          "intervalBasis": "取扱説明書・公式アクセサリー一覧「1～3か月ごとに交換」",
+          "priceUrl": "https://www.amazon.co.jp/dp/B0GQBDCWCB",
+          "intervalUrl": "https://jp.roborock.com/pages/accessories"
+        },
+        {
+          "item": "サイドブラシN3（SDBS05RR・グレー／黄の2本1組）",
+          "packPrice": 2399,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書・公式アクセサリー一覧「3～6か月ごとに交換」（本体は色分けされた2本を使用）",
+          "priceUrl": "https://www.amazon.co.jp/dp/B0GQBH2WWT",
+          "intervalUrl": "https://jp.roborock.com/pages/accessories"
+        },
+        {
+          "item": "エアフィルターJ（SDLW10RR・2個入り）",
+          "packPrice": 2399,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            12
+          ],
+          "intervalBasis": "取扱説明書・公式アクセサリー一覧「6～12か月ごとに交換」",
+          "priceUrl": "https://www.amazon.co.jp/dp/B0FPFKZ926",
+          "intervalUrl": "https://jp.roborock.com/pages/accessories"
+        }
+      ],
+      "excluded": [
+        "消耗品セット（HCTZ59RR）：交換目安の記載なし（「-」）・正規販売店での取り扱いなし",
+        "メインブラシカバーL：「必要に応じて交換」のみで交換目安なし",
+        "専用床洗剤（フロアクリーナーN）：洗剤のため除外"
+      ],
+      "note": "価格は紙パック・メインブラシが正規販売店（ソフトバンクセレクション）、ローラーモップ・サイドブラシN3・エアフィルターJがAmazon（販売元：Roborock JP、公式アクセサリー一覧の購入リンク先）の税込価格。型番・対応機種はRoborock公式アクセサリー一覧で確認。交換目安はQrevo Curv 2 Flowの取扱説明書（公式サポートページ掲載PDF）による。",
+      "checkedAt": "2026-10-12"
+    },
+    "saros-20": {
+      "parts": [
+        {
+          "item": "紙パック（紙パックC）",
+          "packPrice": 1980,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            2.14,
+            2.14
+          ],
+          "intervalBasis": "製品ページ「手動でゴミを捨てることなく、最大65日間使用できます」（65日÷30.4日で約2.14か月。取扱説明書・販売ページは「必要に応じて交換」）",
+          "priceUrl": "https://shop.softbankselection.jp/item/6970995788273.html",
+          "intervalUrl": "https://jp.roborock.com/pages/roborock-saros-20"
+        },
+        {
+          "item": "メインブラシ（メインブラシN・2本入り）",
+          "packPrice": 3300,
+          "packQty": 2,
+          "perSwap": 2,
+          "intervalMonths": [
+            6,
+            12
+          ],
+          "intervalBasis": "取扱説明書「2週間に1度掃除し、6～12か月ごとに交換することをお勧めします」（DuoDivideメインブラシは2本1組。販売ページ製品構成「メインブラシ×2」、同ブラシ対応のSaros 10R製品ページ「らせん状の２つのメインブラシ」）",
+          "priceUrl": "https://shop.softbankselection.jp/item/6970995783599.html",
+          "intervalUrl": "https://cdn.shopify.com/s/files/1/0648/8778/3472/files/Saros20.pdf"
+        },
+        {
+          "item": "サイドブラシ（サイドブラシN2）",
+          "packPrice": 1650,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「月に1度掃除し、3～6か月ごとに交換することをお勧めします」",
+          "priceUrl": "https://shop.softbankselection.jp/item/6970995783605.html",
+          "intervalUrl": "https://cdn.shopify.com/s/files/1/0648/8778/3472/files/Saros20.pdf"
+        },
+        {
+          "item": "エアフィルター（エアフィルターK）",
+          "packPrice": 1980,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            12
+          ],
+          "intervalBasis": "取扱説明書「2週間に1回掃除し、6～12か月に1度交換してください」",
+          "priceUrl": "https://shop.softbankselection.jp/item/6936905904270.html",
+          "intervalUrl": "https://cdn.shopify.com/s/files/1/0648/8778/3472/files/Saros20.pdf"
+        },
+        {
+          "item": "丸形モップクロス（丸形モップクロスF）",
+          "packPrice": 1980,
+          "packQty": 4,
+          "perSwap": 2,
+          "intervalMonths": [
+            1,
+            3
+          ],
+          "intervalBasis": "取扱説明書「必要に応じて掃除し、1～3か月に1度交換してください」（デュアル回転モップで2枚使用）",
+          "priceUrl": "https://shop.softbankselection.jp/item/6936905905680.html",
+          "intervalUrl": "https://cdn.shopify.com/s/files/1/0648/8778/3472/files/Saros20.pdf"
+        }
+      ],
+      "excluded": [
+        "メインブラシカバーH：「必要に応じて交換」のみで交換目安なし",
+        "専用床洗剤（フロアクリーナーN）：洗剤のため除外"
+      ],
+      "note": "価格はRoborock純正品の正規販売店（ソフトバンクセレクション）の税込価格。型番・対応機種はRoborock公式アクセサリー一覧で確認。交換目安はSaros 20の取扱説明書（公式サポートページ掲載PDF）による。",
+      "checkedAt": "2026-10-12"
     }
   }
 }

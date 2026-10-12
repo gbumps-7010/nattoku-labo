@@ -6,70 +6,112 @@
       "parts": [
         {
           "item": "ダストバッグ",
-          "packPrice": 2990, "packQty": 6, "perSwap": 1,
-          "intervalMonths": [2, 2],
+          "packPrice": 2990,
+          "packQty": 6,
+          "perSwap": 1,
+          "intervalMonths": [
+            2,
+            2
+          ],
           "intervalBasis": "製品ページ「約2ヶ月間ゴミ捨て不要」",
           "priceUrl": "https://www.ankerjapan.com/products/t291c",
           "intervalUrl": "https://www.ankerjapan.com/products/t2292"
         },
         {
           "item": "サイドブラシ",
-          "packPrice": 1990, "packQty": 6, "perSwap": 1,
-          "intervalMonths": [3, 6],
+          "packPrice": 1990,
+          "packQty": 6,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
           "intervalBasis": "同社 X10 Pro Omni 取扱説明書の交換目安（C10の取扱説明書に記載なし）",
           "priceUrl": "https://www.ankerjapan.com/products/t291d",
           "intervalUrl": "https://service.eufy.com/article-description/eufy-Clean-X10-Pro-Omni-%E5%8F%96%E6%89%B1%E8%AA%AC%E6%98%8E%E6%9B%B8-T2351"
         },
         {
           "item": "フィルター",
-          "packPrice": 1990, "packQty": 2, "perSwap": 1,
-          "intervalMonths": [3, 6],
+          "packPrice": 1990,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
           "intervalBasis": "同社 X10 Pro Omni 取扱説明書の交換目安（C10の取扱説明書に記載なし）",
           "priceUrl": "https://www.ankerjapan.com/products/t290y",
           "intervalUrl": "https://service.eufy.com/article-description/eufy-Clean-X10-Pro-Omni-%E5%8F%96%E6%89%B1%E8%AA%AC%E6%98%8E%E6%9B%B8-T2351"
         }
       ],
-      "excluded": ["回転ブラシ（公式の単品販売なし）"],
+      "excluded": [
+        "回転ブラシ（公式の単品販売なし）"
+      ],
       "note": "Anker Japan公式ストアの純正品価格。"
     },
     "eufy-x10-pro-omni": {
       "parts": [
         {
           "item": "ダストバッグ",
-          "packPrice": 2990, "packQty": 6, "perSwap": 1,
-          "intervalMonths": [2, 2],
+          "packPrice": 2990,
+          "packQty": 6,
+          "perSwap": 1,
+          "intervalMonths": [
+            2,
+            2
+          ],
           "intervalBasis": "公式製品ページ「約2ヶ月ゴミ捨て不要」",
           "priceUrl": "https://www.ankerjapan.com/products/t29f7",
           "intervalUrl": "https://www.ankerjapan.com/pages/eufy-x10-pro"
         },
         {
           "item": "回転ブラシ／ブラシガードセット",
-          "packPrice": 3990, "packQty": 1, "perSwap": 1,
-          "intervalMonths": [3, 6],
+          "packPrice": 3990,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
           "intervalBasis": "取扱説明書「ブラシガード3～6ヶ月ごと・回転ブラシ6ヶ月ごと」（セット販売のためガードの目安で計算）",
           "priceUrl": "https://www.ankerjapan.com/products/t29e9",
           "intervalUrl": "https://service.eufy.com/article-description/eufy-Clean-X10-Pro-Omni-%E5%8F%96%E6%89%B1%E8%AA%AC%E6%98%8E%E6%9B%B8-T2351"
         },
         {
           "item": "サイドブラシ",
-          "packPrice": 1990, "packQty": 2, "perSwap": 1,
-          "intervalMonths": [3, 6],
+          "packPrice": 1990,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
           "intervalBasis": "取扱説明書「3～6ヶ月ごと」",
           "priceUrl": "https://www.ankerjapan.com/products/t29a1",
           "intervalUrl": "https://service.eufy.com/article-description/eufy-Clean-X10-Pro-Omni-%E5%8F%96%E6%89%B1%E8%AA%AC%E6%98%8E%E6%9B%B8-T2351"
         },
         {
           "item": "フィルター",
-          "packPrice": 1990, "packQty": 2, "perSwap": 1,
-          "intervalMonths": [3, 6],
+          "packPrice": 1990,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
           "intervalBasis": "取扱説明書「3～6ヶ月ごと」",
           "priceUrl": "https://www.ankerjapan.com/products/t29e8",
           "intervalUrl": "https://service.eufy.com/article-description/eufy-Clean-X10-Pro-Omni-%E5%8F%96%E6%89%B1%E8%AA%AC%E6%98%8E%E6%9B%B8-T2351"
         },
         {
           "item": "モップパッド",
-          "packPrice": 1990, "packQty": 2, "perSwap": 2,
-          "intervalMonths": [3, 6],
+          "packPrice": 1990,
+          "packQty": 2,
+          "perSwap": 2,
+          "intervalMonths": [
+            3,
+            6
+          ],
           "intervalBasis": "取扱説明書「3～6ヶ月ごと」（モップは2枚使用）",
           "priceUrl": "https://www.ankerjapan.com/products/t29e7",
           "intervalUrl": "https://service.eufy.com/article-description/eufy-Clean-X10-Pro-Omni-%E5%8F%96%E6%89%B1%E8%AA%AC%E6%98%8E%E6%9B%B8-T2351"
@@ -82,94 +124,151 @@
       "parts": [
         {
           "item": "ダストバッグ",
-          "packPrice": 1990, "packQty": 3, "perSwap": 1,
-          "intervalMonths": [3, 3],
+          "packPrice": 1990,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            3
+          ],
           "intervalBasis": "同じダストバッグを使う同社 Omni E25 の取扱説明書「3ヶ月ごと」（C28の取扱説明書は「必要に応じて交換」）",
           "priceUrl": "https://www.ankerjapan.com/products/t29yq",
           "intervalUrl": "https://lp.ankerjapan.com/hubfs/aoos/manual/T2353Manual.pdf"
         },
         {
           "item": "ローラーモップ",
-          "packPrice": 2990, "packQty": 1, "perSwap": 1,
-          "intervalMonths": [3.95, 3.95],
+          "packPrice": 2990,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            3.95,
+            3.95
+          ],
           "intervalBasis": "取扱説明書「60時間ごと」（1日30分使用として約120日で計算）",
           "priceUrl": "https://www.ankerjapan.com/products/t291x",
           "intervalUrl": "https://lp.ankerjapan.com/hubfs/aoos/manual/T211AManual.pdf"
         },
         {
           "item": "回転ブラシ／ブラシガードセット",
-          "packPrice": 3990, "packQty": 1, "perSwap": 1,
-          "intervalMonths": [11.84, 11.84],
+          "packPrice": 3990,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            11.84,
+            11.84
+          ],
           "intervalBasis": "取扱説明書（英語版）「180時間ごと」（1日30分使用として約360日で計算）",
           "priceUrl": "https://www.ankerjapan.com/products/t290g",
           "intervalUrl": "https://m.media-amazon.com/images/I/E1uQb9gMtiL.pdf"
         },
         {
           "item": "サイドブラシ（2本1組）",
-          "packPrice": 1990, "packQty": 2, "perSwap": 1,
-          "intervalMonths": [11.84, 11.84],
+          "packPrice": 1990,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            11.84,
+            11.84
+          ],
           "intervalBasis": "取扱説明書（英語版）「180時間ごと」（1日30分使用として約360日で計算）",
           "priceUrl": "https://www.ankerjapan.com/products/t29b8",
           "intervalUrl": "https://m.media-amazon.com/images/I/E1uQb9gMtiL.pdf"
         },
         {
           "item": "汚水タンクフィルター",
-          "packPrice": 2990, "packQty": 2, "perSwap": 1,
-          "intervalMonths": [11.84, 11.84],
+          "packPrice": 2990,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            11.84,
+            11.84
+          ],
           "intervalBasis": "取扱説明書（英語版）「180時間ごと」（1日30分使用として約360日で計算）",
           "priceUrl": "https://www.ankerjapan.com/products/t291g",
           "intervalUrl": "https://m.media-amazon.com/images/I/E1uQb9gMtiL.pdf"
         },
         {
           "item": "フィルター",
-          "packPrice": 1990, "packQty": 2, "perSwap": 1,
-          "intervalMonths": [3, 3],
+          "packPrice": 1990,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            3
+          ],
           "intervalBasis": "同社 Omni E25 取扱説明書「3ヶ月ごと」（C28の取扱説明書に記載なし）",
           "priceUrl": "https://www.ankerjapan.com/products/t290b121",
           "intervalUrl": "https://lp.ankerjapan.com/hubfs/aoos/manual/T2353Manual.pdf"
         }
       ],
-      "excluded": ["フロアクリーナー（他機種と条件をそろえるため除外）"],
+      "excluded": [
+        "フロアクリーナー（他機種と条件をそろえるため除外）"
+      ],
       "note": "Anker Japan公式ストアの純正品価格。取扱説明書の交換目安は使用時間表記のため、1日30分使用として日数に換算（使用時間が長いほど早まる）。日本語版取扱説明書ではサイドブラシ・回転ブラシ・汚水タンクフィルターの交換頻度が「1ヶ月ごと」と英語版と異なる記載のため、英語版の時間表記を採用。回転ブラシセットは確認時点で在庫切れ。"
     },
     "eufy-robot-vacuum-omni-e25": {
       "parts": [
         {
           "item": "ダストバッグ",
-          "packPrice": 1990, "packQty": 3, "perSwap": 1,
-          "intervalMonths": [3, 3],
+          "packPrice": 1990,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            3
+          ],
           "intervalBasis": "取扱説明書「アプリで通知があった時、または3ヶ月ごと」",
           "priceUrl": "https://www.ankerjapan.com/products/t29yq",
           "intervalUrl": "https://lp.ankerjapan.com/hubfs/aoos/manual/T2353Manual.pdf"
         },
         {
           "item": "回転ブラシ／ブラシガードセット",
-          "packPrice": 3990, "packQty": 1, "perSwap": 1,
-          "intervalMonths": [3, 6],
+          "packPrice": 3990,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
           "intervalBasis": "取扱説明書「ブラシガード3～6ヶ月ごと・回転ブラシ6ヶ月ごと」（セット販売のためガードの目安で計算）",
           "priceUrl": "https://www.ankerjapan.com/products/t290g",
           "intervalUrl": "https://lp.ankerjapan.com/hubfs/aoos/manual/T2353Manual.pdf"
         },
         {
           "item": "サイドブラシ（2本1組）",
-          "packPrice": 1990, "packQty": 2, "perSwap": 1,
-          "intervalMonths": [3, 6],
+          "packPrice": 1990,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
           "intervalBasis": "取扱説明書「3～6ヶ月ごと」",
           "priceUrl": "https://www.ankerjapan.com/products/t29b8",
           "intervalUrl": "https://lp.ankerjapan.com/hubfs/aoos/manual/T2353Manual.pdf"
         },
         {
           "item": "高性能フィルター",
-          "packPrice": 1990, "packQty": 1, "perSwap": 1,
-          "intervalMonths": [3, 3],
+          "packPrice": 1990,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            3
+          ],
           "intervalBasis": "取扱説明書「3ヶ月ごと」",
           "priceUrl": "https://www.ankerjapan.com/products/t290k",
           "intervalUrl": "https://lp.ankerjapan.com/hubfs/aoos/manual/T2353Manual.pdf"
         },
         {
           "item": "汚水タンクフィルター",
-          "packPrice": 2990, "packQty": 1, "perSwap": 1,
-          "intervalMonths": [6, 6],
+          "packPrice": 2990,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            6
+          ],
           "intervalBasis": "取扱説明書「6ヶ月ごと」",
           "priceUrl": "https://www.ankerjapan.com/products/t290j",
           "intervalUrl": "https://lp.ankerjapan.com/hubfs/aoos/manual/T2353Manual.pdf"
@@ -180,6 +279,348 @@
         "フロアクリーナー（他機種と条件をそろえるため除外）"
       ],
       "note": "Anker Japan公式ストアの純正品価格。回転モップ代を含まないため、実際はやや高くなる。回転ブラシセット・汚水タンクフィルターは確認時点で在庫切れ。"
+    },
+    "eufy-clean-x8-pro-with-self-empty-station": {
+      "parts": [
+        {
+          "item": "ダストバッグ（T29F70A2）",
+          "packPrice": 2990,
+          "packQty": 6,
+          "perSwap": 1,
+          "intervalMonths": [
+            2,
+            2
+          ],
+          "intervalBasis": "取扱説明書「ダストバッグ (T2276のみ) 2ヶ月ごと」",
+          "priceUrl": "https://www.ankerjapan.com/products/t29f7",
+          "intervalUrl": "https://lp.ankerjapan.com/hubfs/aoos/manual/T2276Manual.pdf"
+        },
+        {
+          "item": "回転ブラシ（T29F4011）",
+          "packPrice": 1990,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            12
+          ],
+          "intervalBasis": "取扱説明書「6～12ヶ月ごと」",
+          "priceUrl": "https://www.ankerjapan.com/products/t29f4",
+          "intervalUrl": "https://lp.ankerjapan.com/hubfs/aoos/manual/T2276Manual.pdf"
+        },
+        {
+          "item": "ブラシガード（T29F2011）",
+          "packPrice": 1990,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「3～6ヶ月ごと (もしくは目に見えて摩耗している場合)」",
+          "priceUrl": "https://www.ankerjapan.com/products/t29f2",
+          "intervalUrl": "https://lp.ankerjapan.com/hubfs/aoos/manual/T2276Manual.pdf"
+        },
+        {
+          "item": "サイドブラシ（T29F3011）",
+          "packPrice": 1990,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「3～6ヶ月ごと (もしくは目に見えて摩耗している場合)」（本体のサイドブラシは1本）",
+          "priceUrl": "https://www.ankerjapan.com/products/t29f3",
+          "intervalUrl": "https://lp.ankerjapan.com/hubfs/aoos/manual/T2276Manual.pdf"
+        },
+        {
+          "item": "フィルター（T29F0011）",
+          "packPrice": 1990,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            3
+          ],
+          "intervalBasis": "取扱説明書「3ヵ月ごと」",
+          "priceUrl": "https://www.ankerjapan.com/products/t29f0",
+          "intervalUrl": "https://lp.ankerjapan.com/hubfs/aoos/manual/T2276Manual.pdf"
+        }
+      ],
+      "excluded": [
+        "モッピングクロス（取扱説明書に交換頻度の記載なし）",
+        "バッテリー（対象外）"
+      ],
+      "note": "Anker Japan公式ストアの純正品価格。交換目安はX8 Pro / X8 Pro with Self-Empty Station共通の日本語取扱説明書（T2276）による。ダストバッグ・サイドブラシ・フィルターの入数は公式ストアに文字表記がなく、公式ストアの商品画像（6枚・2本・2枚）で確認。ダストバッグはX8 Pro専用品（T29F70A1、同価格）が在庫切れのため、X8 Pro with Self-Empty Station / X10 Pro Omni対応品（T29F70A2）を採用。ブラシガードは確認時点で在庫切れ。",
+      "checkedAt": "2026-10-12"
+    },
+    "eufy-robot-vacuum-omni-s1-pro": {
+      "parts": [
+        {
+          "item": "ダストバッグ（T29B9021）",
+          "packPrice": 1990,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            2,
+            2
+          ],
+          "intervalBasis": "製品ページ「約2ヶ月間ゴミ捨て不要」（取扱説明書は「使用状況に応じて交換」）",
+          "priceUrl": "https://www.ankerjapan.com/products/t29b9",
+          "intervalUrl": "https://www.ankerjapan.com/products/t2080"
+        },
+        {
+          "item": "回転ブラシ／ブラシガードセット（T29B6001）",
+          "packPrice": 3990,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            6
+          ],
+          "intervalBasis": "取扱説明書「回転ブラシ 6ヶ月ごと (または目に見えて摩耗した場合)」（ブラシガードの記載なし）",
+          "priceUrl": "https://www.ankerjapan.com/products/t29b6",
+          "intervalUrl": "https://lp.ankerjapan.com/hubfs/aoos/manual/T2080Manual.pdf"
+        },
+        {
+          "item": "高性能フィルター（T29B7021）",
+          "packPrice": 1990,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            3
+          ],
+          "intervalBasis": "取扱説明書「3ヶ月ごと」",
+          "priceUrl": "https://www.ankerjapan.com/products/t29b7",
+          "intervalUrl": "https://lp.ankerjapan.com/hubfs/aoos/manual/T2080Manual.pdf"
+        },
+        {
+          "item": "ローラーモップ（T29C00A1）",
+          "packPrice": 2990,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            6
+          ],
+          "intervalBasis": "取扱説明書「回転モップ 6ヶ月ごと (または目に見えて摩耗した場合)」",
+          "priceUrl": "https://www.ankerjapan.com/products/t29c0",
+          "intervalUrl": "https://lp.ankerjapan.com/hubfs/aoos/manual/T2080Manual.pdf"
+        }
+      ],
+      "excluded": [
+        "サイドブラシ（取扱説明書に交換頻度の記載なし）",
+        "汚水タンクフィルター（取扱説明書は清掃6ヶ月ごとのみで交換頻度の記載なし）",
+        "フロアクリーナー（他機種と条件をそろえるため除外）",
+        "バッテリー（対象外）"
+      ],
+      "note": "Anker Japan公式ストアの純正品価格。交換目安は日本語取扱説明書（T2080）の「推奨する本体清掃 / 部品交換の頻度」表による。ダストバッグは同じくOmni S2対応の新型番（T291R110、3枚・同価格）もあるが、S1 Pro専用品（T29B9021）を採用。",
+      "checkedAt": "2026-10-12"
+    },
+    "eufy-robot-vacuum-omni-s2": {
+      "parts": [
+        {
+          "item": "回転ブラシ／ブラシガードセット（T291Y110）",
+          "packPrice": 3990,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            6
+          ],
+          "intervalBasis": "取扱説明書「回転ブラシ 6ヶ月ごと」（ブラシガードの記載なし）",
+          "priceUrl": "https://www.ankerjapan.com/products/t291y",
+          "intervalUrl": "https://lp.ankerjapan.com/hubfs/aoos/manual/T2081Manual.pdf"
+        },
+        {
+          "item": "サイドブラシ（T291U110）",
+          "packPrice": 2990,
+          "packQty": 2,
+          "perSwap": 2,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「3～6ヶ月ごと (または目に見えて摩耗した場合)」（本体のサイドブラシは2本）",
+          "priceUrl": "https://www.ankerjapan.com/products/t291u",
+          "intervalUrl": "https://lp.ankerjapan.com/hubfs/aoos/manual/T2081Manual.pdf"
+        },
+        {
+          "item": "高性能フィルター（T291M110）",
+          "packPrice": 1990,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            3
+          ],
+          "intervalBasis": "取扱説明書「3ヶ月ごと」",
+          "priceUrl": "https://www.ankerjapan.com/products/t291m",
+          "intervalUrl": "https://lp.ankerjapan.com/hubfs/aoos/manual/T2081Manual.pdf"
+        },
+        {
+          "item": "ローラーモップ（T29C00A1）",
+          "packPrice": 2990,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「回転モップ 3～6ヶ月ごと (または目に見えて摩耗した場合)」",
+          "priceUrl": "https://www.ankerjapan.com/products/t29c0",
+          "intervalUrl": "https://lp.ankerjapan.com/hubfs/aoos/manual/T2081Manual.pdf"
+        },
+        {
+          "item": "汚水タンクフィルター（T291S110）",
+          "packPrice": 2990,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            6
+          ],
+          "intervalBasis": "取扱説明書「6ヶ月ごと」",
+          "priceUrl": "https://www.ankerjapan.com/products/t291s",
+          "intervalUrl": "https://lp.ankerjapan.com/hubfs/aoos/manual/T2081Manual.pdf"
+        }
+      ],
+      "excluded": [
+        "ダストバッグ（取扱説明書は「必要に応じて交換」、製品ページにも目安の記載なし）",
+        "フロアクリーナー（他機種と条件をそろえるため除外）",
+        "バッテリー（対象外）"
+      ],
+      "note": "Anker Japan公式ストアの純正品価格。日本語取扱説明書（T2081）の交換頻度表は画像のみ（テキストなし）のため、PDFを目視で確認。サイドブラシの入数は公式ストアに文字表記がなく、商品画像（左右2本＋ネジ）で確認。高性能フィルターの入数も文字表記がなく、eufy英国公式ストアの「1-pack」表記と商品画像から1個と判断。ダストバッグ（T291R110、3枚 1,990円）は交換目安がないため除外しており、実際の維持費はやや高くなる。",
+      "checkedAt": "2026-10-12"
+    },
+    "eufy-robovac-g10-hybrid": {
+      "parts": [
+        {
+          "item": "フィルターセット（T29150N1）",
+          "packPrice": 1190,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            6
+          ],
+          "intervalBasis": "取扱説明書「6ヶ月ごと」",
+          "priceUrl": "https://www.ankerjapan.com/products/t2915",
+          "intervalUrl": "https://lp.ankerjapan.com/hubfs/aoos/manual/T2150Manual.pdf"
+        },
+        {
+          "item": "サイドブラシ（T2905031）",
+          "packPrice": 1299,
+          "packQty": 4,
+          "perSwap": 2,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「3～6ヶ月ごと (もしくは摩耗した場合)」（本体のサイドブラシは2本）",
+          "priceUrl": "https://www.ankerjapan.com/products/t2905",
+          "intervalUrl": "https://lp.ankerjapan.com/hubfs/aoos/manual/T2150Manual.pdf"
+        },
+        {
+          "item": "ゴム製ストリップ（T2920011）",
+          "packPrice": 999,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            6
+          ],
+          "intervalBasis": "取扱説明書「6ヶ月ごと (もしくは摩耗した場合)」",
+          "priceUrl": "https://www.ankerjapan.com/products/t2920",
+          "intervalUrl": "https://lp.ankerjapan.com/hubfs/aoos/manual/T2150Manual.pdf"
+        },
+        {
+          "item": "フィルターエレメント 水タンク用（T2918031）",
+          "packPrice": 799,
+          "packQty": 8,
+          "perSwap": 2,
+          "intervalMonths": [
+            6,
+            6
+          ],
+          "intervalBasis": "取扱説明書「6ヶ月ごと (もしくは黄ばんできた場合)」（水タンクのフィルターエレメントは2個）",
+          "priceUrl": "https://www.ankerjapan.com/products/t2918",
+          "intervalUrl": "https://lp.ankerjapan.com/hubfs/aoos/manual/T2150Manual.pdf"
+        }
+      ],
+      "excluded": [
+        "モッピングクロス（取扱説明書に交換頻度の記載なし）",
+        "使い捨てモッピングクロス（使い捨てシートのため対象外）",
+        "バッテリー（対象外）"
+      ],
+      "note": "Anker Japan公式ストアの純正品価格（本体は販売終了・在庫なし、消耗品は販売中）。交換目安は日本語取扱説明書（T2150）による。フィルターセット（2枚）・サイドブラシ（4本）・フィルターエレメント（8個）の入数は公式ストアに文字表記がなく、商品画像で確認。ゴム製ストリップは公式ストアの「×2」表記、本体の使用数1本は取扱説明書の交換手順図から判断。",
+      "checkedAt": "2026-10-12"
+    },
+    "eufy-robovac-g30-hybrid": {
+      "parts": [
+        {
+          "item": "フィルターセット（T29150N1）",
+          "packPrice": 1190,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            6
+          ],
+          "intervalBasis": "取扱説明書「半年または50回に1度」",
+          "priceUrl": "https://www.ankerjapan.com/products/t2915",
+          "intervalUrl": "https://lp.ankerjapan.com/hubfs/aoos/manual/T2253Manual.pdf"
+        },
+        {
+          "item": "サイドブラシ（T2905031）",
+          "packPrice": 1299,
+          "packQty": 4,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「3～6ヶ月ごと (もしくは目に見えて摩耗している場合)」（本体のサイドブラシは1本）",
+          "priceUrl": "https://www.ankerjapan.com/products/t2905",
+          "intervalUrl": "https://lp.ankerjapan.com/hubfs/aoos/manual/T2253Manual.pdf"
+        },
+        {
+          "item": "回転ブラシ（T2907031）",
+          "packPrice": 1399,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            12
+          ],
+          "intervalBasis": "取扱説明書「6～12ヶ月ごと」",
+          "priceUrl": "https://www.ankerjapan.com/products/t2907",
+          "intervalUrl": "https://lp.ankerjapan.com/hubfs/aoos/manual/T2253Manual.pdf"
+        },
+        {
+          "item": "ブラシガード（T2904031）",
+          "packPrice": 799,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「3～6ヶ月ごと (もしくは目に見えて摩耗している場合)」",
+          "priceUrl": "https://www.ankerjapan.com/products/t2904",
+          "intervalUrl": "https://lp.ankerjapan.com/hubfs/aoos/manual/T2253Manual.pdf"
+        }
+      ],
+      "excluded": [
+        "モッピングクロス（取扱説明書に交換頻度の記載なし）",
+        "フィルターエレメント 水タンク用（公式ストアでG30 Hybrid対応とあるが、G30 Hybridの取扱説明書に交換目安の記載なし）",
+        "使い捨てモッピングクロス（使い捨てシートのため対象外）",
+        "バッテリー（対象外）"
+      ],
+      "note": "Anker Japan公式ストアの純正品価格。交換目安は日本語取扱説明書（G30 / G30 Edge / G30 Hybrid共通、T2253）による。フィルターセット（2枚）・サイドブラシ（4本）の入数は公式ストアに文字表記がなく、商品画像で確認。回転ブラシ・ブラシガードは公式ストアの「×1」表記。",
+      "checkedAt": "2026-10-12"
     }
   }
 }

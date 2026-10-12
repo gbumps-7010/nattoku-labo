@@ -6,78 +6,125 @@
       "parts": [
         {
           "item": "ダストバッグ",
-          "packPrice": 2180, "packQty": 3, "perSwap": 1,
-          "intervalMonths": [1.4, 2.6],
+          "packPrice": 2180,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            1.4,
+            2.6
+          ],
           "intervalBasis": "Dreame全自動モデル取扱説明書「6～8週間」〜製品ページ「80日ゴミ捨て不要」",
           "priceUrl": "https://www.dreametech.jp/products/x30-ultra-l10s-ultra-gen2-l20-ultra-dust-bag",
           "intervalUrl": "https://www.dreametech.jp/products/l10s-ultra-gen-2"
         },
         {
           "item": "メインブラシ（絡まり防止）",
-          "packPrice": 5500, "packQty": 1, "perSwap": 1,
-          "intervalMonths": [6, 12],
+          "packPrice": 5500,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            12
+          ],
           "intervalBasis": "Dreame全自動モデル取扱説明書「6～12カ月毎」",
           "priceUrl": "https://www.dreametech.jp/products/l10s-ultra-gen-2",
           "intervalUrl": "https://m.media-amazon.com/images/I/B1PmFhKyeAL.pdf"
         },
         {
           "item": "サイドブラシ",
-          "packPrice": 1100, "packQty": 2, "perSwap": 1,
-          "intervalMonths": [3, 6],
+          "packPrice": 1100,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
           "intervalBasis": "Dreame全自動モデル取扱説明書「3～6カ月毎」",
           "priceUrl": "https://www.dreametech.jp/products/lside-brush-l10s-ultra-gen2-l20-ultra-complete-x30-ultra-l10s-plus-se",
           "intervalUrl": "https://m.media-amazon.com/images/I/B1PmFhKyeAL.pdf"
         },
         {
           "item": "HEPAフィルター",
-          "packPrice": 1280, "packQty": 2, "perSwap": 1,
-          "intervalMonths": [3, 6],
+          "packPrice": 1280,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
           "intervalBasis": "Dreame全自動モデル取扱説明書「3～6カ月毎」",
           "priceUrl": "https://www.dreametech.jp/products/filter-x30-ultra-l10s-ultra-gen2",
           "intervalUrl": "https://m.media-amazon.com/images/I/B1PmFhKyeAL.pdf"
         },
         {
           "item": "モップパッド",
-          "packPrice": 1446, "packQty": 4, "perSwap": 2,
-          "intervalMonths": [1, 3],
+          "packPrice": 1446,
+          "packQty": 4,
+          "perSwap": 2,
+          "intervalMonths": [
+            1,
+            3
+          ],
           "intervalBasis": "Dreame全自動モデル取扱説明書「1～3カ月毎」",
           "priceUrl": "https://www.dreametech.jp/products/mop-x50-ultra-x30-ultra-l20-ultra-complete-l10s-plus-se-l10s-ultra-gen2",
           "intervalUrl": "https://m.media-amazon.com/images/I/B1PmFhKyeAL.pdf"
         }
       ],
-      "excluded": ["専用床洗剤（他機種と条件をそろえるため除外）"],
+      "excluded": [
+        "専用床洗剤（他機種と条件をそろえるため除外）"
+      ],
       "note": "Dreame Japan公式ストアの純正品価格。L10s Ultra Gen 2専用の取扱説明書に交換周期の記載がないため、同社の全自動モデル取扱説明書の目安を使用。"
     },
     "l10s-ultra-gen-3": {
       "parts": [
         {
           "item": "ダストバッグ",
-          "packPrice": 2180, "packQty": 3, "perSwap": 1,
-          "intervalMonths": [1.4, 3.3],
+          "packPrice": 2180,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            1.4,
+            3.3
+          ],
           "intervalBasis": "Dreame全自動モデル取扱説明書「6～8週間」〜製品ページ「最長100日間ゴミ捨て不要」",
           "priceUrl": "https://www.dreametech.jp/products/x30-ultra-l10s-ultra-gen2-l20-ultra-dust-bag",
           "intervalUrl": "https://www.dreametech.jp/products/l10s-ultra-gen3"
         },
         {
           "item": "メインブラシ（ゴム製）",
-          "packPrice": 1780, "packQty": 1, "perSwap": 1,
-          "intervalMonths": [6, 12],
+          "packPrice": 1780,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            12
+          ],
           "intervalBasis": "Dreame全自動モデル取扱説明書「6～12カ月毎」",
           "priceUrl": "https://www.dreametech.jp/products/x30-ultra-l10s-ultra-gen2-%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B5%E3%83%AA%E3%83%BC%E3%82%AD%E3%83%83%E3%83%88-%E5%A4%8D%E5%88%B6",
           "intervalUrl": "https://m.media-amazon.com/images/I/B1PmFhKyeAL.pdf"
         },
         {
           "item": "HEPAフィルター",
-          "packPrice": 1280, "packQty": 2, "perSwap": 1,
-          "intervalMonths": [3, 6],
+          "packPrice": 1280,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
           "intervalBasis": "Dreame全自動モデル取扱説明書「3～6カ月毎」",
           "priceUrl": "https://www.dreametech.jp/products/filter-x30-ultra-l10s-ultra-gen2",
           "intervalUrl": "https://m.media-amazon.com/images/I/B1PmFhKyeAL.pdf"
         },
         {
           "item": "モップパッド",
-          "packPrice": 1446, "packQty": 4, "perSwap": 2,
-          "intervalMonths": [1, 3],
+          "packPrice": 1446,
+          "packQty": 4,
+          "perSwap": 2,
+          "intervalMonths": [
+            1,
+            3
+          ],
           "intervalBasis": "Dreame全自動モデル取扱説明書「1～3カ月毎」",
           "priceUrl": "https://www.dreametech.jp/products/mop-x50-ultra-x30-ultra-l20-ultra-complete-l10s-plus-se-l10s-ultra-gen2",
           "intervalUrl": "https://m.media-amazon.com/images/I/B1PmFhKyeAL.pdf"
@@ -93,47 +140,654 @@
       "parts": [
         {
           "item": "ダストバッグ",
-          "packPrice": 2180, "packQty": 3, "perSwap": 1,
-          "intervalMonths": [1.4, 3.3],
+          "packPrice": 2180,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            1.4,
+            3.3
+          ],
           "intervalBasis": "Dreame全自動モデル取扱説明書「6～8週間」〜製品ページ「最長100日間の自動ゴミ回収」",
           "priceUrl": "https://www.dreametech.jp/products/x30-ultra-l10s-ultra-gen2-l20-ultra-dust-bag",
           "intervalUrl": "https://www.dreametech.jp/products/l40s-pro-ultra"
         },
         {
           "item": "絡まり防止デュオブラシ（2本1組）",
-          "packPrice": 4980, "packQty": 2, "perSwap": 2,
-          "intervalMonths": [6, 12],
+          "packPrice": 4980,
+          "packQty": 2,
+          "perSwap": 2,
+          "intervalMonths": [
+            6,
+            12
+          ],
           "intervalBasis": "Dreame全自動モデル取扱説明書「6～12カ月毎」",
           "priceUrl": "https://www.dreametech.jp/products/%E7%B4%94%E6%AD%A3-%E7%B5%A1%E3%81%BE%E3%82%8A%E9%98%B2%E6%AD%A2%E3%83%87%E3%83%A5%E3%82%AA%E3%83%96%E3%83%A9%E3%82%B7-%E4%BA%A4%E6%8F%9B%E7%94%A8",
           "intervalUrl": "https://m.media-amazon.com/images/I/B1PmFhKyeAL.pdf"
         },
         {
           "item": "サイドブラシ",
-          "packPrice": 1980, "packQty": 2, "perSwap": 1,
-          "intervalMonths": [3, 6],
+          "packPrice": 1980,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
           "intervalBasis": "Dreame全自動モデル取扱説明書「3～6カ月毎」",
           "priceUrl": "https://www.dreametech.jp/products/%E7%B4%94%E6%AD%A3-%E3%82%B5%E3%82%A4%E3%83%89%E3%83%96%E3%83%A9%E3%82%B7-%E4%BA%A4%E6%8F%9B%E7%94%A8",
           "intervalUrl": "https://m.media-amazon.com/images/I/B1PmFhKyeAL.pdf"
         },
         {
           "item": "HEPAフィルター",
-          "packPrice": 1680, "packQty": 2, "perSwap": 1,
-          "intervalMonths": [3, 6],
+          "packPrice": 1680,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
           "intervalBasis": "Dreame全自動モデル取扱説明書「3～6カ月毎」",
           "priceUrl": "https://www.dreametech.jp/products/%E7%B4%94%E6%AD%A3-hepa%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%83%BC-%E4%BA%A4%E6%8F%9B%E7%94%A8",
           "intervalUrl": "https://m.media-amazon.com/images/I/B1PmFhKyeAL.pdf"
         },
         {
           "item": "モップパッド",
-          "packPrice": 1446, "packQty": 4, "perSwap": 2,
-          "intervalMonths": [1, 3],
+          "packPrice": 1446,
+          "packQty": 4,
+          "perSwap": 2,
+          "intervalMonths": [
+            1,
+            3
+          ],
           "intervalBasis": "Dreame全自動モデル取扱説明書「1～3カ月毎」",
           "priceUrl": "https://www.dreametech.jp/products/mop-x50-ultra-x30-ultra-l20-ultra-complete-l10s-plus-se-l10s-ultra-gen2",
           "intervalUrl": "https://m.media-amazon.com/images/I/B1PmFhKyeAL.pdf"
         }
       ],
-      "excluded": ["専用床洗剤（他機種と条件をそろえるため除外）"],
+      "excluded": [
+        "専用床洗剤（他機種と条件をそろえるため除外）"
+      ],
       "note": "Dreame Japan公式ストアの純正品価格。交換周期は同社の全自動モデル取扱説明書の目安を使用。デュオブラシは2本セットを1回の交換で使い切る前提（高めに見積もり）。"
+    },
+    "d10-plus": {
+      "parts": [
+        {
+          "item": "ダストバッグ（3枚入り）",
+          "packPrice": 1980,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            0.92,
+            1.38
+          ],
+          "intervalBasis": "取扱説明書「4～6週間ごとにダストパックを交換することをお勧めします」（28～42日÷30.4）",
+          "priceUrl": "https://www.dreametech.jp/products/%E7%B4%94%E6%AD%A3-%E3%83%80%E3%82%B9%E3%83%88%E3%83%90%E3%83%83%E3%82%B0-%E4%BA%A4%E6%8F%9B%E7%94%A8",
+          "intervalUrl": "https://cdn.shopify.com/s/files/1/0622/3524/6797/files/DreameBot_D10plus.pdf?v=1675762638"
+        },
+        {
+          "item": "HEPAフィルター（長型タイプ・2枚入り）",
+          "packPrice": 2980,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            3
+          ],
+          "intervalBasis": "取扱説明書「フィルターは2週間に1度のお掃除と、3か月に1度の交換をお勧めします」",
+          "priceUrl": "https://www.dreametech.jp/products/%E7%B4%94%E6%AD%A3-hepa%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%83%BC-%E4%BA%A4%E6%8F%9B%E7%94%A8-2",
+          "intervalUrl": "https://cdn.shopify.com/s/files/1/0622/3524/6797/files/DreameBot_D10plus.pdf?v=1675762638"
+        },
+        {
+          "item": "モップパッド（2枚入り）",
+          "packPrice": 1262,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「3~6か月ごとにモップの交換をお勧めします」（モップは1枚使用）",
+          "priceUrl": "https://www.dreametech.jp/products/%E7%B4%94%E6%AD%A3-%E3%83%A2%E3%83%83%E3%83%97%E3%83%91%E3%83%83%E3%83%89-1",
+          "intervalUrl": "https://cdn.shopify.com/s/files/1/0622/3524/6797/files/DreameBot_D10plus.pdf?v=1675762638"
+        }
+      ],
+      "excluded": [
+        "メインブラシ（公式ストアで3,490円・D9 Max/D10 Plus対応の単品あり。取扱説明書に交換目安の記載なし）",
+        "サイドブラシ（公式ストアで1,480円・2個入りの単品あり。取扱説明書に交換目安の記載なし）"
+      ],
+      "note": "Dreame Japan公式ストアの純正品価格（モップパッドはセール価格、通常1,480円）。交換周期はD10 Plus専用の日本語取扱説明書（公式サイト掲載）による。製品ページは「65日分のゴミを収集」としており、取扱説明書の「4～6週間」と食い違うため、取扱説明書を優先。メインブラシ・サイドブラシの交換費用を含まないため、実際はやや高くなる。",
+      "checkedAt": "2026-10-12"
+    },
+    "d20-ultra": {
+      "parts": [
+        {
+          "item": "ダストバッグ（3枚入り）",
+          "packPrice": 2180,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            2,
+            4
+          ],
+          "intervalBasis": "取扱説明書「紙バッグ 2～4カ月ごと」（製品ページは「最長100日間ゴミ捨て不要」）",
+          "priceUrl": "https://www.dreametech.jp/products/x30-ultra-l10s-ultra-gen2-l20-ultra-dust-bag",
+          "intervalUrl": "https://cdn.shopify.com/s/files/1/0622/3524/6797/files/R9507E-D20_Ultra-_-_1.pdf?v=1766634866"
+        },
+        {
+          "item": "メインブラシ（ゴム製）",
+          "packPrice": 1780,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            12
+          ],
+          "intervalBasis": "取扱説明書「メインブラシ 6～12カ月ごと」",
+          "priceUrl": "https://www.dreametech.jp/products/x30-ultra-l10s-ultra-gen2-%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B5%E3%83%AA%E3%83%BC%E3%82%AD%E3%83%83%E3%83%88-%E5%A4%8D%E5%88%B6",
+          "intervalUrl": "https://cdn.shopify.com/s/files/1/0622/3524/6797/files/R9507E-D20_Ultra-_-_1.pdf?v=1766634866"
+        },
+        {
+          "item": "サイドブラシ（2個入り）",
+          "packPrice": 1100,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「サイドブラシ 3～6カ月ごと」",
+          "priceUrl": "https://www.dreametech.jp/products/lside-brush-l10s-ultra-gen2-l20-ultra-complete-x30-ultra-l10s-plus-se",
+          "intervalUrl": "https://cdn.shopify.com/s/files/1/0622/3524/6797/files/R9507E-D20_Ultra-_-_1.pdf?v=1766634866"
+        },
+        {
+          "item": "モップパッド（4枚入り）",
+          "packPrice": 1446,
+          "packQty": 4,
+          "perSwap": 2,
+          "intervalMonths": [
+            1,
+            3
+          ],
+          "intervalBasis": "取扱説明書「モップパッド 1～3カ月ごと」（モップは2枚使用）",
+          "priceUrl": "https://www.dreametech.jp/products/mop-x50-ultra-x30-ultra-l20-ultra-complete-l10s-plus-se-l10s-ultra-gen2",
+          "intervalUrl": "https://cdn.shopify.com/s/files/1/0622/3524/6797/files/R9507E-D20_Ultra-_-_1.pdf?v=1766634866"
+        }
+      ],
+      "excluded": [
+        "HEPAフィルター（取扱説明書は「3～6カ月ごと」だが、D20 Ultra対応の単品が公式ストアになく、アクセサリーキットのみ）",
+        "専用床洗剤（他機種と条件をそろえるため除外）"
+      ],
+      "note": "Dreame Japan公式ストアの純正品価格（モップパッドはセール価格、通常1,480円）。交換周期はD20 Ultra専用の日本語取扱説明書（公式サイト掲載）による。メインブラシは「絡まり防止メインブラシ」（5,500円）も対応するが、D20 Ultra対応の公式アクセサリーキットに入っているゴム製ブラシ（1,780円）で計算。フィルター代を含まないため、実際はやや高くなる。",
+      "checkedAt": "2026-10-12"
+    },
+    "d9-max-gen-2": {
+      "parts": [
+        {
+          "item": "メインブラシ（ゴム製）",
+          "packPrice": 1780,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            12
+          ],
+          "intervalBasis": "取扱説明書「メインブラシ 6～12カ月毎」",
+          "priceUrl": "https://www.dreametech.jp/products/x30-ultra-l10s-ultra-gen2-%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B5%E3%83%AA%E3%83%BC%E3%82%AD%E3%83%83%E3%83%88-%E5%A4%8D%E5%88%B6",
+          "intervalUrl": "https://cdn.shopify.com/s/files/1/0622/3524/6797/files/D9_MAX_Gen_2_White_R2422E-_A01.pdf?v=1741249469"
+        },
+        {
+          "item": "サイドブラシ（2個入り）",
+          "packPrice": 1480,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「サイドブラシ 3～6カ月毎」",
+          "priceUrl": "https://www.dreametech.jp/products/side-brush-d10s-plus-d9max-gen2",
+          "intervalUrl": "https://cdn.shopify.com/s/files/1/0622/3524/6797/files/D9_MAX_Gen_2_White_R2422E-_A01.pdf?v=1741249469"
+        },
+        {
+          "item": "HEPAフィルター（2個入り）",
+          "packPrice": 1480,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「ダストボックスフィルター 3～6カ月毎」",
+          "priceUrl": "https://www.dreametech.jp/products/d10-plus-d9-max-gen2-filter",
+          "intervalUrl": "https://cdn.shopify.com/s/files/1/0622/3524/6797/files/D9_MAX_Gen_2_White_R2422E-_A01.pdf?v=1741249469"
+        },
+        {
+          "item": "ウォッシャブルモップパッド（2枚入り）",
+          "packPrice": 1184,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「モップパッド 3～6カ月毎」（モップは1枚使用）",
+          "priceUrl": "https://www.dreametech.jp/products/mop-d10-plus-d9-max-gen2",
+          "intervalUrl": "https://cdn.shopify.com/s/files/1/0622/3524/6797/files/D9_MAX_Gen_2_White_R2422E-_A01.pdf?v=1741249469"
+        }
+      ],
+      "excluded": [],
+      "note": "Dreame Japan公式ストアの純正品価格（フィルターとモップパッドはセール価格、通常1,980円・1,480円）。HEPAフィルター（D9 MAX GEN2専用）は確認時点で在庫切れ表示。交換周期はD9 Max Gen 2専用の日本語取扱説明書（公式サイト掲載）による。本体の製品ページは公式ストアに掲載なし。自動ゴミ収集なしのため紙パックは不要。",
+      "checkedAt": "2026-10-12"
+    },
+    "f20-plus": {
+      "parts": [
+        {
+          "item": "ダストバッグ（3枚入り）",
+          "packPrice": 1024,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            2,
+            5
+          ],
+          "intervalBasis": "取扱説明書「紙パック 2～5カ月ごと」（製品ページは「最長120日間ゴミ捨て不要」）",
+          "priceUrl": "https://www.dreametech.jp/products/%E7%B4%94%E6%AD%A3-%E3%83%80%E3%82%B9%E3%83%88%E3%83%90%E3%83%83%E3%82%B0-%E4%BA%A4%E6%8F%9B%E7%94%A8-1",
+          "intervalUrl": "https://cdn.shopify.com/s/files/1/0622/3524/6797/files/R9527-F20_Plus.pdf?v=1782371115"
+        },
+        {
+          "item": "メインブラシ",
+          "packPrice": 2480,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            12
+          ],
+          "intervalBasis": "取扱説明書「メインブラシ 6～12カ月ごと」",
+          "priceUrl": "https://www.dreametech.jp/products/%E7%B4%94%E6%AD%A3-%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%96%E3%83%A9%E3%82%B7-1",
+          "intervalUrl": "https://cdn.shopify.com/s/files/1/0622/3524/6797/files/R9527-F20_Plus.pdf?v=1782371115"
+        },
+        {
+          "item": "サイドブラシ（2個入り）",
+          "packPrice": 2280,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「サイドブラシ 3～6カ月ごと」",
+          "priceUrl": "https://www.dreametech.jp/products/%E7%B4%94%E6%AD%A3-%E3%82%B5%E3%82%A4%E3%83%89%E3%83%96%E3%83%A9%E3%82%B7",
+          "intervalUrl": "https://cdn.shopify.com/s/files/1/0622/3524/6797/files/R9527-F20_Plus.pdf?v=1782371115"
+        },
+        {
+          "item": "HEPAフィルター（2枚入り）",
+          "packPrice": 2280,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「ダストボックスのフィルター 3～6カ月ごと」",
+          "priceUrl": "https://www.dreametech.jp/products/%E7%B4%94%E6%AD%A3-hepa%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%83%BC-%E4%BA%A4%E6%8F%9B%E7%94%A8-4",
+          "intervalUrl": "https://cdn.shopify.com/s/files/1/0622/3524/6797/files/R9527-F20_Plus.pdf?v=1782371115"
+        },
+        {
+          "item": "モップパッド（2枚入り）",
+          "packPrice": 1880,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「モップパッド 3～6カ月ごと」（フラットモップ1枚使用）",
+          "priceUrl": "https://www.dreametech.jp/products/%E7%B4%94%E6%AD%A3-%E3%83%A2%E3%83%83%E3%83%97%E3%83%91%E3%83%83%E3%83%89-2",
+          "intervalUrl": "https://cdn.shopify.com/s/files/1/0622/3524/6797/files/R9527-F20_Plus.pdf?v=1782371115"
+        }
+      ],
+      "excluded": [],
+      "note": "Dreame Japan公式ストアの純正品価格（ダストバッグはセール価格、通常1,280円）。交換周期はF20 Plus専用の日本語取扱説明書（公式サイト掲載）による。",
+      "checkedAt": "2026-10-12"
+    },
+    "f20": {
+      "parts": [
+        {
+          "item": "メインブラシ",
+          "packPrice": 2480,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            12
+          ],
+          "intervalBasis": "取扱説明書「メインブラシ 6～12カ月ごと」",
+          "priceUrl": "https://www.dreametech.jp/products/%E7%B4%94%E6%AD%A3-%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%96%E3%83%A9%E3%82%B7-1",
+          "intervalUrl": "https://cdn.shopify.com/s/files/1/0622/3524/6797/files/R9526-F20.pdf?v=1782371124"
+        },
+        {
+          "item": "サイドブラシ（2個入り）",
+          "packPrice": 2280,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「サイドブラシ 3～6カ月ごと」",
+          "priceUrl": "https://www.dreametech.jp/products/%E7%B4%94%E6%AD%A3-%E3%82%B5%E3%82%A4%E3%83%89%E3%83%96%E3%83%A9%E3%82%B7",
+          "intervalUrl": "https://cdn.shopify.com/s/files/1/0622/3524/6797/files/R9526-F20.pdf?v=1782371124"
+        },
+        {
+          "item": "HEPAフィルター（2枚入り）",
+          "packPrice": 2280,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「ダストボックスのフィルター 3～6カ月ごと」",
+          "priceUrl": "https://www.dreametech.jp/products/%E7%B4%94%E6%AD%A3-hepa%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%83%BC-%E4%BA%A4%E6%8F%9B%E7%94%A8-4",
+          "intervalUrl": "https://cdn.shopify.com/s/files/1/0622/3524/6797/files/R9526-F20.pdf?v=1782371124"
+        },
+        {
+          "item": "モップパッド（2枚入り）",
+          "packPrice": 1880,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「モップパッド 3～6カ月ごと」（フラットモップ1枚使用）",
+          "priceUrl": "https://www.dreametech.jp/products/%E7%B4%94%E6%AD%A3-%E3%83%A2%E3%83%83%E3%83%97%E3%83%91%E3%83%83%E3%83%89-2",
+          "intervalUrl": "https://cdn.shopify.com/s/files/1/0622/3524/6797/files/R9526-F20.pdf?v=1782371124"
+        }
+      ],
+      "excluded": [],
+      "note": "Dreame Japan公式ストアの純正品価格。交換周期はF20専用の日本語取扱説明書（公式サイト掲載）による。自動ゴミ収集なしのため紙パックは不要。",
+      "checkedAt": "2026-10-12"
+    },
+    "l20-ultra-complete": {
+      "parts": [
+        {
+          "item": "ダストバッグ（3枚入り）",
+          "packPrice": 2180,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            1.38,
+            1.84
+          ],
+          "intervalBasis": "取扱説明書「ダストバッグ 6～8週間」（42～56日÷30.4）",
+          "priceUrl": "https://www.dreametech.jp/products/x30-ultra-l10s-ultra-gen2-l20-ultra-dust-bag",
+          "intervalUrl": "https://cdn.shopify.com/s/files/1/0622/3524/6797/files/DreameBot_L20_Ultra_Complete.pdf?v=1695268829"
+        },
+        {
+          "item": "メインブラシ（ゴム製）",
+          "packPrice": 1780,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            12
+          ],
+          "intervalBasis": "取扱説明書「メインブラシ 6～12カ月毎」",
+          "priceUrl": "https://www.dreametech.jp/products/x30-ultra-l10s-ultra-gen2-%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B5%E3%83%AA%E3%83%BC%E3%82%AD%E3%83%83%E3%83%88-%E5%A4%8D%E5%88%B6",
+          "intervalUrl": "https://cdn.shopify.com/s/files/1/0622/3524/6797/files/DreameBot_L20_Ultra_Complete.pdf?v=1695268829"
+        },
+        {
+          "item": "サイドブラシ（2個入り）",
+          "packPrice": 1100,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「サイドブラシ 3～6カ月毎」",
+          "priceUrl": "https://www.dreametech.jp/products/lside-brush-l10s-ultra-gen2-l20-ultra-complete-x30-ultra-l10s-plus-se",
+          "intervalUrl": "https://cdn.shopify.com/s/files/1/0622/3524/6797/files/DreameBot_L20_Ultra_Complete.pdf?v=1695268829"
+        },
+        {
+          "item": "HEPAフィルター（2個入り）",
+          "packPrice": 1000,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「ダストボックスフィルター 3～6カ月毎」",
+          "priceUrl": "https://www.dreametech.jp/products/filter-l20-ultra",
+          "intervalUrl": "https://cdn.shopify.com/s/files/1/0622/3524/6797/files/DreameBot_L20_Ultra_Complete.pdf?v=1695268829"
+        },
+        {
+          "item": "モップパッド（4枚入り）",
+          "packPrice": 1446,
+          "packQty": 4,
+          "perSwap": 2,
+          "intervalMonths": [
+            1,
+            3
+          ],
+          "intervalBasis": "取扱説明書「モップパッド 1～3カ月毎」（モップは2枚使用）",
+          "priceUrl": "https://www.dreametech.jp/products/mop-x50-ultra-x30-ultra-l20-ultra-complete-l10s-plus-se-l10s-ultra-gen2",
+          "intervalUrl": "https://cdn.shopify.com/s/files/1/0622/3524/6797/files/DreameBot_L20_Ultra_Complete.pdf?v=1695268829"
+        }
+      ],
+      "excluded": [
+        "専用床洗剤（他機種と条件をそろえるため除外）",
+        "銀イオン除菌モジュール（取扱説明書「12カ月」・公式ストア1,500円だが、他機種と条件をそろえるため除外）"
+      ],
+      "note": "Dreame Japan公式ストアの純正品価格（HEPAフィルターとモップパッドはセール価格、通常1,680円・1,480円）。交換周期はL20 Ultra Complete専用の日本語取扱説明書（公式サイト掲載）による。ダストバッグの対応機種表記は「L20 Ultra」。メインブラシは「絡まり防止メインブラシ」（5,500円）も対応するが、L20 Ultra Complete専用アクセサリーキットに入っているゴム製ブラシ（1,780円）で計算。本体の製品ページは公式ストアに掲載なし。",
+      "checkedAt": "2026-10-12"
+    },
+    "l40-ultra-ae": {
+      "parts": [
+        {
+          "item": "ダストバッグ（3枚入り）",
+          "packPrice": 2180,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            2,
+            4
+          ],
+          "intervalBasis": "取扱説明書「紙パック 2～4カ月ごと」（製品ページは「最大100日間お手入れ不要」）",
+          "priceUrl": "https://www.dreametech.jp/products/x30-ultra-l10s-ultra-gen2-l20-ultra-dust-bag",
+          "intervalUrl": "https://cdn.shopify.com/s/files/1/0622/3524/6797/files/R2579E-_-__A01.pdf?v=1749439005"
+        },
+        {
+          "item": "メインブラシ（ゴム製）",
+          "packPrice": 1780,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            12
+          ],
+          "intervalBasis": "取扱説明書「メインブラシ 6～12カ月ごと」",
+          "priceUrl": "https://www.dreametech.jp/products/x30-ultra-l10s-ultra-gen2-%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B5%E3%83%AA%E3%83%BC%E3%82%AD%E3%83%83%E3%83%88-%E5%A4%8D%E5%88%B6",
+          "intervalUrl": "https://cdn.shopify.com/s/files/1/0622/3524/6797/files/R2579E-_-__A01.pdf?v=1749439005"
+        },
+        {
+          "item": "モップパッド（4枚入り）",
+          "packPrice": 1446,
+          "packQty": 4,
+          "perSwap": 2,
+          "intervalMonths": [
+            1,
+            3
+          ],
+          "intervalBasis": "取扱説明書「モップパッド 1～3カ月ごと」（モップは2枚使用）",
+          "priceUrl": "https://www.dreametech.jp/products/mop-x50-ultra-x30-ultra-l20-ultra-complete-l10s-plus-se-l10s-ultra-gen2",
+          "intervalUrl": "https://cdn.shopify.com/s/files/1/0622/3524/6797/files/R2579E-_-__A01.pdf?v=1749439005"
+        }
+      ],
+      "excluded": [
+        "サイドブラシ（取扱説明書は「3～6カ月ごと」だが、L40 Ultra AE対応と明記した単品が公式ストアになく、アクセサリーキットのみ）",
+        "HEPAフィルター（取扱説明書は「3～6カ月ごと」だが、L40 Ultra AE対応と明記した単品が公式ストアになく、アクセサリーキットのみ）",
+        "専用床洗剤（他機種と条件をそろえるため除外）",
+        "銀イオン除菌モジュール（取扱説明書「12カ月」・公式ストア1,500円だが、他機種と条件をそろえるため除外）",
+        "汚水タンク消臭モジュール（取扱説明書「3～6カ月ごと」・公式ストア2,144円だが在庫切れ。他機種と条件をそろえるため除外）"
+      ],
+      "note": "Dreame Japan公式ストアの純正品価格（モップパッドはセール価格、通常1,480円）。交換周期はL40 Ultra AE専用の日本語取扱説明書（公式サイト掲載）による。PDFの文字データが文字化けしているため、該当ページ（日常的なお手入れの表）を画像で目視確認した。本体にはゴム製リフトアップブラシ（装着済み）と毛髪カットブラシ（単品5,500円）が付属するため、装着済みのゴム製ブラシで計算。サイドブラシ・フィルター代を含まないため、実際はやや高くなる。",
+      "checkedAt": "2026-10-12"
+    },
+    "x30-ultra": {
+      "parts": [
+        {
+          "item": "ダストバッグ（3枚入り）",
+          "packPrice": 2180,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            1.38,
+            1.84
+          ],
+          "intervalBasis": "取扱説明書「紙パック 6～8週間」（42～56日÷30.4）",
+          "priceUrl": "https://www.dreametech.jp/products/x30-ultra-l10s-ultra-gen2-l20-ultra-dust-bag",
+          "intervalUrl": "https://cdn.shopify.com/s/files/1/0622/3524/6797/files/Dreame_X30_Ultra.pdf?v=1720504181"
+        },
+        {
+          "item": "メインブラシ（ゴム製）",
+          "packPrice": 1780,
+          "packQty": 1,
+          "perSwap": 1,
+          "intervalMonths": [
+            6,
+            12
+          ],
+          "intervalBasis": "取扱説明書「メインブラシ 6～12カ月毎」",
+          "priceUrl": "https://www.dreametech.jp/products/x30-ultra-l10s-ultra-gen2-%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B5%E3%83%AA%E3%83%BC%E3%82%AD%E3%83%83%E3%83%88-%E5%A4%8D%E5%88%B6",
+          "intervalUrl": "https://cdn.shopify.com/s/files/1/0622/3524/6797/files/Dreame_X30_Ultra.pdf?v=1720504181"
+        },
+        {
+          "item": "サイドブラシ（2個入り）",
+          "packPrice": 1100,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「サイドブラシ 3～6カ月毎」",
+          "priceUrl": "https://www.dreametech.jp/products/lside-brush-l10s-ultra-gen2-l20-ultra-complete-x30-ultra-l10s-plus-se",
+          "intervalUrl": "https://cdn.shopify.com/s/files/1/0622/3524/6797/files/Dreame_X30_Ultra.pdf?v=1720504181"
+        },
+        {
+          "item": "HEPAフィルター（2個入り）",
+          "packPrice": 1280,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「ダストボックスフィルター 3～6カ月毎」",
+          "priceUrl": "https://www.dreametech.jp/products/filter-x30-ultra-l10s-ultra-gen2",
+          "intervalUrl": "https://cdn.shopify.com/s/files/1/0622/3524/6797/files/Dreame_X30_Ultra.pdf?v=1720504181"
+        },
+        {
+          "item": "モップパッド（4枚入り）",
+          "packPrice": 1446,
+          "packQty": 4,
+          "perSwap": 2,
+          "intervalMonths": [
+            1,
+            3
+          ],
+          "intervalBasis": "取扱説明書「モップパッド 1～3カ月毎」（モップは2枚使用）",
+          "priceUrl": "https://www.dreametech.jp/products/mop-x50-ultra-x30-ultra-l20-ultra-complete-l10s-plus-se-l10s-ultra-gen2",
+          "intervalUrl": "https://cdn.shopify.com/s/files/1/0622/3524/6797/files/Dreame_X30_Ultra.pdf?v=1720504181"
+        }
+      ],
+      "excluded": [
+        "専用床洗剤（他機種と条件をそろえるため除外）",
+        "銀イオン除菌モジュール（取扱説明書「12カ月」・公式ストア1,500円だが、他機種と条件をそろえるため除外）"
+      ],
+      "note": "Dreame Japan公式ストアの純正品価格（モップパッドはセール価格、通常1,480円）。交換周期はX30 Ultra専用の日本語取扱説明書（公式サイト掲載）による。メインブラシは「絡まり防止メインブラシ」（5,500円）も対応するが、X30 Ultra対応の公式アクセサリーキットに入っているゴム製ブラシ（1,780円）で計算。本体の製品ページは公式ストアに掲載なし。",
+      "checkedAt": "2026-10-12"
+    },
+    "x50-ultra": {
+      "parts": [
+        {
+          "item": "ダストバッグ（3枚入り）",
+          "packPrice": 2180,
+          "packQty": 3,
+          "perSwap": 1,
+          "intervalMonths": [
+            2,
+            4
+          ],
+          "intervalBasis": "取扱説明書「紙パック 2～4カ月ごと」（製品ページは「最大100日分」）",
+          "priceUrl": "https://www.dreametech.jp/products/x30-ultra-l10s-ultra-gen2-l20-ultra-dust-bag",
+          "intervalUrl": "https://cdn.shopify.com/s/files/1/0622/3524/6797/files/X50_Ultra-R2489E-_-_1.pdf?v=1763533944"
+        },
+        {
+          "item": "絡まり防止デュオブラシ（2本1組）",
+          "packPrice": 4980,
+          "packQty": 2,
+          "perSwap": 2,
+          "intervalMonths": [
+            6,
+            12
+          ],
+          "intervalBasis": "取扱説明書「メインブラシ 6～12カ月ごと」（デュオブラシは2本使用）",
+          "priceUrl": "https://www.dreametech.jp/products/%E7%B4%94%E6%AD%A3-%E7%B5%A1%E3%81%BE%E3%82%8A%E9%98%B2%E6%AD%A2%E3%83%87%E3%83%A5%E3%82%AA%E3%83%96%E3%83%A9%E3%82%B7-%E4%BA%A4%E6%8F%9B%E7%94%A8",
+          "intervalUrl": "https://cdn.shopify.com/s/files/1/0622/3524/6797/files/X50_Ultra-R2489E-_-_1.pdf?v=1763533944"
+        },
+        {
+          "item": "サイドブラシ（2個入り）",
+          "packPrice": 1980,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「サイドブラシ 3～6カ月ごと」",
+          "priceUrl": "https://www.dreametech.jp/products/%E7%B4%94%E6%AD%A3-%E3%82%B5%E3%82%A4%E3%83%89%E3%83%96%E3%83%A9%E3%82%B7-%E4%BA%A4%E6%8F%9B%E7%94%A8",
+          "intervalUrl": "https://cdn.shopify.com/s/files/1/0622/3524/6797/files/X50_Ultra-R2489E-_-_1.pdf?v=1763533944"
+        },
+        {
+          "item": "HEPAフィルター（2枚入り）",
+          "packPrice": 1680,
+          "packQty": 2,
+          "perSwap": 1,
+          "intervalMonths": [
+            3,
+            6
+          ],
+          "intervalBasis": "取扱説明書「ダストボックスのフィルター 3～6カ月ごと」",
+          "priceUrl": "https://www.dreametech.jp/products/%E7%B4%94%E6%AD%A3-hepa%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%83%BC-%E4%BA%A4%E6%8F%9B%E7%94%A8",
+          "intervalUrl": "https://cdn.shopify.com/s/files/1/0622/3524/6797/files/X50_Ultra-R2489E-_-_1.pdf?v=1763533944"
+        },
+        {
+          "item": "モップパッド（4枚入り）",
+          "packPrice": 1446,
+          "packQty": 4,
+          "perSwap": 2,
+          "intervalMonths": [
+            1,
+            3
+          ],
+          "intervalBasis": "取扱説明書「モップパッド 1～3カ月ごと」（モップは2枚使用）",
+          "priceUrl": "https://www.dreametech.jp/products/mop-x50-ultra-x30-ultra-l20-ultra-complete-l10s-plus-se-l10s-ultra-gen2",
+          "intervalUrl": "https://cdn.shopify.com/s/files/1/0622/3524/6797/files/X50_Ultra-R2489E-_-_1.pdf?v=1763533944"
+        }
+      ],
+      "excluded": [
+        "専用床洗剤（他機種と条件をそろえるため除外）",
+        "スケール防止剤（取扱説明書「18～36カ月ごと」・公式ストア1,500円だが、他機種と条件をそろえるため除外）",
+        "銀イオン除菌モジュール（取扱説明書「12カ月」・公式ストア1,500円だが、他機種と条件をそろえるため除外）",
+        "汚水タンク消臭モジュール（取扱説明書「3～6カ月ごと」だが、公式ストアの単品の対応機種にX50 Ultraの記載なし）"
+      ],
+      "note": "Dreame Japan公式ストアの純正品価格（HEPAフィルターとモップパッドはセール価格、通常2,280円・1,480円）。交換周期はX50 Ultra専用の日本語取扱説明書（公式サイト掲載）による。デュオブラシは2本セットを1回の交換で使い切る前提（L40s Pro Ultraと同じ扱い）。",
+      "checkedAt": "2026-10-12"
     }
   }
 }
