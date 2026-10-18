@@ -513,6 +513,24 @@ def render_entry(label: str, score_txt: str, body: str, tone: str = "") -> str:
           </div>"""
 
 
+def format_pick_heading(heading: str) -> str:
+    """Label + product name as a clear section start."""
+    text = str(heading or "").strip()
+    if "：" in text:
+        label, name = text.split("：", 1)
+        label, name = label.strip(), name.strip()
+        if label and name:
+            return (
+                '<h3 class="pick-heading">'
+                f'<span class="pick-label">{html.escape(label)}</span>'
+                f'<span class="pick-name">{html.escape(name)}</span>'
+                "</h3>"
+            )
+    return (
+        f'<h3 class="pick-heading"><span class="pick-name">{html.escape(text)}</span></h3>'
+    )
+
+
 def article_pick(
     *,
     anchor_id: str,
@@ -520,10 +538,11 @@ def article_pick(
     lead: str,
     product: dict | None,
 ) -> str:
+    heading_html = format_pick_heading(heading)
     if not product:
         return f"""
       <article class="article-pick" id="{html.escape(anchor_id)}">
-        <h3>{html.escape(heading)}</h3>
+        {heading_html}
         <p class="lead">該当する製品はありません。</p>
       </article>"""
 
@@ -613,7 +632,7 @@ def article_pick(
 
     return f"""
       <article class="article-pick" id="{html.escape(anchor_id)}" data-slug="{html.escape(product['id'])}">
-        <h3>{html.escape(heading)}</h3>
+        {heading_html}
         <div class="aff-mount" data-slug="{html.escape(product['id'])}"{aff_mount_attrs(product)}>
           <p class="aff-status">かんたんリンクを読み込み中…</p>
         </div>
@@ -1372,13 +1391,28 @@ def build_manufacturer_page(meta: dict) -> Path:
     .sec-lead {{
       margin:0 0 1rem; font-size:.92rem; line-height:1.7; color:#1e293b;
     }}
-    .articles {{ display:flex; flex-direction:column; gap:2rem; }}
-    .article-pick h3 {{
-      font-size:1.08rem; font-weight:900; margin:0 0 .85rem; color:#0f172a;
-      padding:.7rem 1rem;
-      border:1px solid var(--line);
-      background:#f8fafc;
-      border-radius:10px;
+    .articles {{ display:flex; flex-direction:column; gap:2.75rem; }}
+    .article-pick {{
+      scroll-margin-top:5.5rem;
+      padding-top:.15rem;
+    }}
+    .article-pick h3,
+    .article-pick h3.pick-heading {{
+      display:flex; flex-direction:column; gap:.35rem;
+      margin:0 0 1.05rem; padding:.95rem 1.15rem 1rem;
+      border:0; border-left:4px solid #1e40af;
+      border-radius:0 14px 14px 0;
+      background:linear-gradient(90deg,#eff6ff 0%,#ffffff 72%);
+      box-shadow:0 8px 22px rgba(30,64,175,.07);
+      color:#0f172a;
+    }}
+    .article-pick .pick-label {{
+      display:block; font-size:.78rem; font-weight:800; letter-spacing:.04em;
+      color:#1e40af; line-height:1.35;
+    }}
+    .article-pick .pick-name {{
+      display:block; font-size:clamp(1.2rem,3.1vw,1.55rem); font-weight:900;
+      line-height:1.35; color:#0f172a; text-wrap:balance;
     }}
     .aff-mount {{
       margin:0 0 1rem; min-height:2rem;

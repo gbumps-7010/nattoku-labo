@@ -166,13 +166,28 @@
     .sec-lead {
       margin:0 0 1rem; font-size:.92rem; line-height:1.7; color:#1e293b;
     }
-    .articles { display:flex; flex-direction:column; gap:2rem; }
-    .article-pick h3 {
-      font-size:1.08rem; font-weight:900; margin:0 0 .85rem; color:#0f172a;
-      padding:.7rem 1rem;
-      border:1px solid var(--line);
-      background:#f8fafc;
-      border-radius:10px;
+    .articles { display:flex; flex-direction:column; gap:2.75rem; }
+    .article-pick {
+      scroll-margin-top:5.5rem;
+      padding-top:.15rem;
+    }
+    .article-pick h3,
+    .article-pick h3.pick-heading {
+      display:flex; flex-direction:column; gap:.35rem;
+      margin:0 0 1.05rem; padding:.95rem 1.15rem 1rem;
+      border:0; border-left:4px solid #1e40af;
+      border-radius:0 14px 14px 0;
+      background:linear-gradient(90deg,#eff6ff 0%,#ffffff 72%);
+      box-shadow:0 8px 22px rgba(30,64,175,.07);
+      color:#0f172a;
+    }
+    .article-pick .pick-label {
+      display:block; font-size:.78rem; font-weight:800; letter-spacing:.04em;
+      color:#1e40af; line-height:1.35;
+    }
+    .article-pick .pick-name {
+      display:block; font-size:clamp(1.2rem,3.1vw,1.55rem); font-weight:900;
+      line-height:1.35; color:#0f172a; text-wrap:balance;
     }
     .aff-mount {
       margin:0 0 1rem; min-height:2rem;
@@ -650,7 +665,7 @@
         <p class="sec-lead">まず予算⁠で絞りたい人向けです⁠。各価格帯⁠で総合点⁠が最⁠も高い機種⁠を⁠、<strong class="em-key">強み・注意点</strong>・<strong class="em-key">口コミ傾向</strong>付きで紹介します⁠。</p>
         <div class="articles">
       <article class="article-pick" id="band-under5" data-slug="roomba-mini-autoempty">
-        <h3>予算〜5万円なら：Roomba® Mini + AutoEmpty™</h3>
+        <h3 class="pick-heading"><span class="pick-label">予算〜5万円なら</span><span class="pick-name">Roomba® Mini + AutoEmpty™</span></h3>
         <div class="aff-mount" data-slug="roomba-mini-autoempty" data-maker="iRobot">
           <p class="aff-status">かんたんリンクを読み込み中…</p>
         </div>
@@ -741,7 +756,7 @@
         </div>
       </article>
       <article class="article-pick" id="band-5-7" data-slug="roomba-105-combo-autoempty">
-        <h3>予算5〜7万円なら：Roomba® 105 Combo + AutoEmpty™</h3>
+        <h3 class="pick-heading"><span class="pick-label">予算5〜7万円なら</span><span class="pick-name">Roomba® 105 Combo + AutoEmpty™</span></h3>
         <div class="aff-mount" data-slug="roomba-105-combo-autoempty" data-maker="iRobot">
           <p class="aff-status">かんたんリンクを読み込み中…</p>
         </div>
@@ -832,7 +847,7 @@
         </div>
       </article>
       <article class="article-pick" id="band-7-10" data-slug="roomba-plus-405-combo-autowash">
-        <h3>予算7〜10万円なら：Roomba® Plus 405 Combo + AutoWash™</h3>
+        <h3 class="pick-heading"><span class="pick-label">予算7〜10万円なら</span><span class="pick-name">Roomba® Plus 405 Combo + AutoWash™</span></h3>
         <div class="aff-mount" data-slug="roomba-plus-405-combo-autowash" data-maker="iRobot">
           <p class="aff-status">かんたんリンクを読み込み中…</p>
         </div>
@@ -923,7 +938,7 @@
         </div>
       </article>
       <article class="article-pick" id="band-10-15" data-slug="roomba-plus-505-combo-autowash">
-        <h3>予算10〜15万円なら：Roomba® Plus 505 Combo + AutoWash™</h3>
+        <h3 class="pick-heading"><span class="pick-label">予算10〜15万円なら</span><span class="pick-name">Roomba® Plus 505 Combo + AutoWash™</span></h3>
         <div class="aff-mount" data-slug="roomba-plus-505-combo-autowash" data-maker="iRobot">
           <p class="aff-status">かんたんリンクを読み込み中…</p>
         </div>
@@ -1014,7 +1029,7 @@
         </div>
       </article>
       <article class="article-pick" id="band-15-20" data-slug="roomba-plus-575-combo-autowash">
-        <h3>予算15〜20万円なら：Roomba Plus 575 Combo + AutoWash</h3>
+        <h3 class="pick-heading"><span class="pick-label">予算15〜20万円なら</span><span class="pick-name">Roomba Plus 575 Combo + AutoWash</span></h3>
         <div class="aff-mount" data-slug="roomba-plus-575-combo-autowash" data-maker="iRobot">
           <p class="aff-status">かんたんリンクを読み込み中…</p>
         </div>
@@ -1105,7 +1120,7 @@
         </div>
       </article>
       <article class="article-pick" id="band-over20">
-        <h3>予算20万円〜のおすすめ</h3>
+        <h3 class="pick-heading"><span class="pick-name">予算20万円〜のおすすめ</span></h3>
         <p class="lead">該当する製品はありません。</p>
       </article></div>
       </section>
@@ -1115,7 +1130,7 @@
         <p class="sec-lead">「⁠<strong class="em-key benefit">床⁠をきれいにしたい</strong>⁠」「⁠<strong class="em-key benefit">静かに使いたい</strong>⁠」など⁠、機能⁠の優先順位⁠がはっきりしている人向けです⁠。機能ごとに1機種ずつ⁠、口コミ傾向付きで紹介します⁠。</p>
         <div class="articles">
       <article class="article-pick" id="feat-floor" data-slug="roomba-plus-405-combo-autowash">
-        <h3>フローリング掃除が得意な機種：Roomba® Plus 405 Combo + AutoWash™</h3>
+        <h3 class="pick-heading"><span class="pick-label">フローリング掃除が得意な機種</span><span class="pick-name">Roomba® Plus 405 Combo + AutoWash™</span></h3>
         <div class="aff-mount" data-slug="roomba-plus-405-combo-autowash" data-maker="iRobot">
           <p class="aff-status">かんたんリンクを読み込み中…</p>
         </div>
@@ -1206,7 +1221,7 @@
         </div>
       </article>
       <article class="article-pick" id="feat-carpet" data-slug="roomba-max-705-vac-autoempty">
-        <h3>カーペット掃除が得意な機種：Roomba® Max 705 Vac + AutoEmpty™</h3>
+        <h3 class="pick-heading"><span class="pick-label">カーペット掃除が得意な機種</span><span class="pick-name">Roomba® Max 705 Vac + AutoEmpty™</span></h3>
         <div class="aff-mount" data-slug="roomba-max-705-vac-autoempty" data-maker="iRobot">
           <p class="aff-status">かんたんリンクを読み込み中…</p>
         </div>
@@ -1297,7 +1312,7 @@
         </div>
       </article>
       <article class="article-pick" id="feat-quiet" data-slug="roomba-plus-575-combo-autowash">
-        <h3>静音性に優れた機種：Roomba Plus 575 Combo + AutoWash</h3>
+        <h3 class="pick-heading"><span class="pick-label">静音性に優れた機種</span><span class="pick-name">Roomba Plus 575 Combo + AutoWash</span></h3>
         <div class="aff-mount" data-slug="roomba-plus-575-combo-autowash" data-maker="iRobot">
           <p class="aff-status">かんたんリンクを読み込み中…</p>
         </div>
@@ -1388,7 +1403,7 @@
         </div>
       </article>
       <article class="article-pick" id="feat-pet" data-slug="roomba-max-705-vac-autoempty">
-        <h3>ペットの毛に強い機種：Roomba® Max 705 Vac + AutoEmpty™</h3>
+        <h3 class="pick-heading"><span class="pick-label">ペットの毛に強い機種</span><span class="pick-name">Roomba® Max 705 Vac + AutoEmpty™</span></h3>
         <div class="aff-mount" data-slug="roomba-max-705-vac-autoempty" data-maker="iRobot">
           <p class="aff-status">かんたんリンクを読み込み中…</p>
         </div>
@@ -1479,7 +1494,7 @@
         </div>
       </article>
       <article class="article-pick" id="feat-maint" data-slug="roomba-mini-autoempty">
-        <h3>手入れが楽な機種：Roomba® Mini + AutoEmpty™</h3>
+        <h3 class="pick-heading"><span class="pick-label">手入れが楽な機種</span><span class="pick-name">Roomba® Mini + AutoEmpty™</span></h3>
         <div class="aff-mount" data-slug="roomba-mini-autoempty" data-maker="iRobot">
           <p class="aff-status">かんたんリンクを読み込み中…</p>
         </div>
@@ -1570,7 +1585,7 @@
         </div>
       </article>
       <article class="article-pick" id="feat-battery" data-slug="roomba-plus-405-combo-autowash">
-        <h3>バッテリー持ちが良い機種：Roomba® Plus 405 Combo + AutoWash™</h3>
+        <h3 class="pick-heading"><span class="pick-label">バッテリー持ちが良い機種</span><span class="pick-name">Roomba® Plus 405 Combo + AutoWash™</span></h3>
         <div class="aff-mount" data-slug="roomba-plus-405-combo-autowash" data-maker="iRobot">
           <p class="aff-status">かんたんリンクを読み込み中…</p>
         </div>
@@ -1667,7 +1682,7 @@
         <p class="sec-lead">暮らし方⁠やこだわりに合わせて選ぶ場合⁠の目安⁠です⁠。タイプごとに重視する機能⁠を決め⁠、機能評価85%・<strong class="em-key">口コミ信頼度</strong>15%⁠の<strong class="em-key">加重点</strong>⁠で1機種⁠を選んでいます⁠。</p>
         <div class="articles">
       <article class="article-pick" id="persona-cost" data-slug="roomba-plus-405-combo-autowash">
-        <h3>コスパ重視の人なら：Roomba® Plus 405 Combo + AutoWash™</h3>
+        <h3 class="pick-heading"><span class="pick-label">コスパ重視の人なら</span><span class="pick-name">Roomba® Plus 405 Combo + AutoWash™</span></h3>
         <div class="aff-mount" data-slug="roomba-plus-405-combo-autowash" data-maker="iRobot">
           <p class="aff-status">かんたんリンクを読み込み中…</p>
         </div>
@@ -1758,7 +1773,7 @@
         </div>
       </article>
       <article class="article-pick" id="persona-quiet" data-slug="roomba-plus-575-combo-autowash">
-        <h3>静かに使いたい人なら：Roomba Plus 575 Combo + AutoWash</h3>
+        <h3 class="pick-heading"><span class="pick-label">静かに使いたい人なら</span><span class="pick-name">Roomba Plus 575 Combo + AutoWash</span></h3>
         <div class="aff-mount" data-slug="roomba-plus-575-combo-autowash" data-maker="iRobot">
           <p class="aff-status">かんたんリンクを読み込み中…</p>
         </div>
@@ -1849,7 +1864,7 @@
         </div>
       </article>
       <article class="article-pick" id="persona-pet" data-slug="roomba-max-705-vac-autoempty">
-        <h3>ペットのいる家なら：Roomba® Max 705 Vac + AutoEmpty™</h3>
+        <h3 class="pick-heading"><span class="pick-label">ペットのいる家なら</span><span class="pick-name">Roomba® Max 705 Vac + AutoEmpty™</span></h3>
         <div class="aff-mount" data-slug="roomba-max-705-vac-autoempty" data-maker="iRobot">
           <p class="aff-status">かんたんリンクを読み込み中…</p>
         </div>
@@ -1940,7 +1955,7 @@
         </div>
       </article>
       <article class="article-pick" id="persona-floor" data-slug="roomba-plus-405-combo-autowash">
-        <h3>床をきれいにしたい人なら：Roomba® Plus 405 Combo + AutoWash™</h3>
+        <h3 class="pick-heading"><span class="pick-label">床をきれいにしたい人なら</span><span class="pick-name">Roomba® Plus 405 Combo + AutoWash™</span></h3>
         <div class="aff-mount" data-slug="roomba-plus-405-combo-autowash" data-maker="iRobot">
           <p class="aff-status">かんたんリンクを読み込み中…</p>
         </div>
@@ -2031,7 +2046,7 @@
         </div>
       </article>
       <article class="article-pick" id="persona-maint" data-slug="roomba-mini-autoempty">
-        <h3>手間を減らしたい人なら：Roomba® Mini + AutoEmpty™</h3>
+        <h3 class="pick-heading"><span class="pick-label">手間を減らしたい人なら</span><span class="pick-name">Roomba® Mini + AutoEmpty™</span></h3>
         <div class="aff-mount" data-slug="roomba-mini-autoempty" data-maker="iRobot">
           <p class="aff-status">かんたんリンクを読み込み中…</p>
         </div>
@@ -2122,7 +2137,7 @@
         </div>
       </article>
       <article class="article-pick" id="persona-high" data-slug="roomba-plus-575-combo-autowash">
-        <h3>ハイエンドを探している人なら：Roomba Plus 575 Combo + AutoWash</h3>
+        <h3 class="pick-heading"><span class="pick-label">ハイエンドを探している人なら</span><span class="pick-name">Roomba Plus 575 Combo + AutoWash</span></h3>
         <div class="aff-mount" data-slug="roomba-plus-575-combo-autowash" data-maker="iRobot">
           <p class="aff-status">かんたんリンクを読み込み中…</p>
         </div>

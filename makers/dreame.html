@@ -166,13 +166,28 @@
     .sec-lead {
       margin:0 0 1rem; font-size:.92rem; line-height:1.7; color:#1e293b;
     }
-    .articles { display:flex; flex-direction:column; gap:2rem; }
-    .article-pick h3 {
-      font-size:1.08rem; font-weight:900; margin:0 0 .85rem; color:#0f172a;
-      padding:.7rem 1rem;
-      border:1px solid var(--line);
-      background:#f8fafc;
-      border-radius:10px;
+    .articles { display:flex; flex-direction:column; gap:2.75rem; }
+    .article-pick {
+      scroll-margin-top:5.5rem;
+      padding-top:.15rem;
+    }
+    .article-pick h3,
+    .article-pick h3.pick-heading {
+      display:flex; flex-direction:column; gap:.35rem;
+      margin:0 0 1.05rem; padding:.95rem 1.15rem 1rem;
+      border:0; border-left:4px solid #1e40af;
+      border-radius:0 14px 14px 0;
+      background:linear-gradient(90deg,#eff6ff 0%,#ffffff 72%);
+      box-shadow:0 8px 22px rgba(30,64,175,.07);
+      color:#0f172a;
+    }
+    .article-pick .pick-label {
+      display:block; font-size:.78rem; font-weight:800; letter-spacing:.04em;
+      color:#1e40af; line-height:1.35;
+    }
+    .article-pick .pick-name {
+      display:block; font-size:clamp(1.2rem,3.1vw,1.55rem); font-weight:900;
+      line-height:1.35; color:#0f172a; text-wrap:balance;
     }
     .aff-mount {
       margin:0 0 1rem; min-height:2rem;
@@ -680,7 +695,7 @@
         <p class="sec-lead">まず予算⁠で絞りたい人向けです⁠。各価格帯⁠で総合点⁠が最⁠も高い機種⁠を⁠、<strong class="em-key">強み・注意点</strong>・<strong class="em-key">口コミ傾向</strong>付きで紹介します⁠。</p>
         <div class="articles">
       <article class="article-pick" id="band-under5" data-slug="d20-ultra">
-        <h3>予算〜5万円なら：D20 Ultra</h3>
+        <h3 class="pick-heading"><span class="pick-label">予算〜5万円なら</span><span class="pick-name">D20 Ultra</span></h3>
         <div class="aff-mount" data-slug="d20-ultra" data-maker="Dreame">
           <p class="aff-status">かんたんリンクを読み込み中…</p>
         </div>
@@ -771,7 +786,7 @@
         </div>
       </article>
       <article class="article-pick" id="band-5-7" data-slug="l10s-ultra-gen-3">
-        <h3>予算5〜7万円なら：L10s Ultra Gen 3</h3>
+        <h3 class="pick-heading"><span class="pick-label">予算5〜7万円なら</span><span class="pick-name">L10s Ultra Gen 3</span></h3>
         <div class="aff-mount" data-slug="l10s-ultra-gen-3" data-maker="Dreame">
           <p class="aff-status">かんたんリンクを読み込み中…</p>
         </div>
@@ -862,7 +877,7 @@
         </div>
       </article>
       <article class="article-pick" id="band-7-10" data-slug="l40s-pro-ultra">
-        <h3>予算7〜10万円なら：L40s Pro Ultra</h3>
+        <h3 class="pick-heading"><span class="pick-label">予算7〜10万円なら</span><span class="pick-name">L40s Pro Ultra</span></h3>
         <div class="aff-mount" data-slug="l40s-pro-ultra" data-maker="Dreame">
           <p class="aff-status">かんたんリンクを読み込み中…</p>
         </div>
@@ -953,7 +968,7 @@
         </div>
       </article>
       <article class="article-pick" id="band-10-15" data-slug="x50-ultra">
-        <h3>予算10〜15万円なら：X50 Ultra</h3>
+        <h3 class="pick-heading"><span class="pick-label">予算10〜15万円なら</span><span class="pick-name">X50 Ultra</span></h3>
         <div class="aff-mount" data-slug="x50-ultra" data-maker="Dreame">
           <p class="aff-status">かんたんリンクを読み込み中…</p>
         </div>
@@ -1044,11 +1059,11 @@
         </div>
       </article>
       <article class="article-pick" id="band-15-20">
-        <h3>予算15〜20万円のおすすめ</h3>
+        <h3 class="pick-heading"><span class="pick-name">予算15〜20万円のおすすめ</span></h3>
         <p class="lead">該当する製品はありません。</p>
       </article>
       <article class="article-pick" id="band-over20">
-        <h3>予算20万円〜のおすすめ</h3>
+        <h3 class="pick-heading"><span class="pick-name">予算20万円〜のおすすめ</span></h3>
         <p class="lead">該当する製品はありません。</p>
       </article></div>
       </section>
@@ -1058,7 +1073,7 @@
         <p class="sec-lead">「⁠<strong class="em-key benefit">床⁠をきれいにしたい</strong>⁠」「⁠<strong class="em-key benefit">静かに使いたい</strong>⁠」など⁠、機能⁠の優先順位⁠がはっきりしている人向けです⁠。機能ごとに1機種ずつ⁠、口コミ傾向付きで紹介します⁠。</p>
         <div class="articles">
       <article class="article-pick" id="feat-floor" data-slug="l40s-pro-ultra">
-        <h3>フローリング掃除が得意な機種：L40s Pro Ultra</h3>
+        <h3 class="pick-heading"><span class="pick-label">フローリング掃除が得意な機種</span><span class="pick-name">L40s Pro Ultra</span></h3>
         <div class="aff-mount" data-slug="l40s-pro-ultra" data-maker="Dreame">
           <p class="aff-status">かんたんリンクを読み込み中…</p>
         </div>
@@ -1149,7 +1164,7 @@
         </div>
       </article>
       <article class="article-pick" id="feat-carpet" data-slug="l10s-ultra-gen-3">
-        <h3>カーペット掃除が得意な機種：L10s Ultra Gen 3</h3>
+        <h3 class="pick-heading"><span class="pick-label">カーペット掃除が得意な機種</span><span class="pick-name">L10s Ultra Gen 3</span></h3>
         <div class="aff-mount" data-slug="l10s-ultra-gen-3" data-maker="Dreame">
           <p class="aff-status">かんたんリンクを読み込み中…</p>
         </div>
@@ -1240,7 +1255,7 @@
         </div>
       </article>
       <article class="article-pick" id="feat-quiet" data-slug="d10-plus">
-        <h3>静音性に優れた機種：D10 Plus</h3>
+        <h3 class="pick-heading"><span class="pick-label">静音性に優れた機種</span><span class="pick-name">D10 Plus</span></h3>
         <div class="aff-mount" data-slug="d10-plus" data-maker="Dreame">
           <p class="aff-status">かんたんリンクを読み込み中…</p>
         </div>
@@ -1331,7 +1346,7 @@
         </div>
       </article>
       <article class="article-pick" id="feat-pet" data-slug="l40s-pro-ultra">
-        <h3>ペットの毛に強い機種：L40s Pro Ultra</h3>
+        <h3 class="pick-heading"><span class="pick-label">ペットの毛に強い機種</span><span class="pick-name">L40s Pro Ultra</span></h3>
         <div class="aff-mount" data-slug="l40s-pro-ultra" data-maker="Dreame">
           <p class="aff-status">かんたんリンクを読み込み中…</p>
         </div>
@@ -1422,7 +1437,7 @@
         </div>
       </article>
       <article class="article-pick" id="feat-maint" data-slug="l40s-pro-ultra">
-        <h3>手入れが楽な機種：L40s Pro Ultra</h3>
+        <h3 class="pick-heading"><span class="pick-label">手入れが楽な機種</span><span class="pick-name">L40s Pro Ultra</span></h3>
         <div class="aff-mount" data-slug="l40s-pro-ultra" data-maker="Dreame">
           <p class="aff-status">かんたんリンクを読み込み中…</p>
         </div>
@@ -1513,7 +1528,7 @@
         </div>
       </article>
       <article class="article-pick" id="feat-battery" data-slug="l10s-ultra-gen-2">
-        <h3>バッテリー持ちが良い機種：L10s Ultra Gen 2</h3>
+        <h3 class="pick-heading"><span class="pick-label">バッテリー持ちが良い機種</span><span class="pick-name">L10s Ultra Gen 2</span></h3>
         <div class="aff-mount" data-slug="l10s-ultra-gen-2" data-maker="Dreame">
           <p class="aff-status">かんたんリンクを読み込み中…</p>
         </div>
@@ -1610,7 +1625,7 @@
         <p class="sec-lead">暮らし方⁠やこだわりに合わせて選ぶ場合⁠の目安⁠です⁠。タイプごとに重視する機能⁠を決め⁠、機能評価85%・<strong class="em-key">口コミ信頼度</strong>15%⁠の<strong class="em-key">加重点</strong>⁠で1機種⁠を選んでいます⁠。</p>
         <div class="articles">
       <article class="article-pick" id="persona-cost" data-slug="l40s-pro-ultra">
-        <h3>コスパ重視の人なら：L40s Pro Ultra</h3>
+        <h3 class="pick-heading"><span class="pick-label">コスパ重視の人なら</span><span class="pick-name">L40s Pro Ultra</span></h3>
         <div class="aff-mount" data-slug="l40s-pro-ultra" data-maker="Dreame">
           <p class="aff-status">かんたんリンクを読み込み中…</p>
         </div>
@@ -1701,7 +1716,7 @@
         </div>
       </article>
       <article class="article-pick" id="persona-quiet" data-slug="d10-plus">
-        <h3>静かに使いたい人なら：D10 Plus</h3>
+        <h3 class="pick-heading"><span class="pick-label">静かに使いたい人なら</span><span class="pick-name">D10 Plus</span></h3>
         <div class="aff-mount" data-slug="d10-plus" data-maker="Dreame">
           <p class="aff-status">かんたんリンクを読み込み中…</p>
         </div>
@@ -1792,7 +1807,7 @@
         </div>
       </article>
       <article class="article-pick" id="persona-pet" data-slug="l40s-pro-ultra">
-        <h3>ペットのいる家なら：L40s Pro Ultra</h3>
+        <h3 class="pick-heading"><span class="pick-label">ペットのいる家なら</span><span class="pick-name">L40s Pro Ultra</span></h3>
         <div class="aff-mount" data-slug="l40s-pro-ultra" data-maker="Dreame">
           <p class="aff-status">かんたんリンクを読み込み中…</p>
         </div>
@@ -1883,7 +1898,7 @@
         </div>
       </article>
       <article class="article-pick" id="persona-floor" data-slug="l40s-pro-ultra">
-        <h3>床をきれいにしたい人なら：L40s Pro Ultra</h3>
+        <h3 class="pick-heading"><span class="pick-label">床をきれいにしたい人なら</span><span class="pick-name">L40s Pro Ultra</span></h3>
         <div class="aff-mount" data-slug="l40s-pro-ultra" data-maker="Dreame">
           <p class="aff-status">かんたんリンクを読み込み中…</p>
         </div>
@@ -1974,7 +1989,7 @@
         </div>
       </article>
       <article class="article-pick" id="persona-maint" data-slug="l40s-pro-ultra">
-        <h3>手間を減らしたい人なら：L40s Pro Ultra</h3>
+        <h3 class="pick-heading"><span class="pick-label">手間を減らしたい人なら</span><span class="pick-name">L40s Pro Ultra</span></h3>
         <div class="aff-mount" data-slug="l40s-pro-ultra" data-maker="Dreame">
           <p class="aff-status">かんたんリンクを読み込み中…</p>
         </div>
@@ -2065,7 +2080,7 @@
         </div>
       </article>
       <article class="article-pick" id="persona-high" data-slug="l40s-pro-ultra">
-        <h3>ハイエンドを探している人なら：L40s Pro Ultra</h3>
+        <h3 class="pick-heading"><span class="pick-label">ハイエンドを探している人なら</span><span class="pick-name">L40s Pro Ultra</span></h3>
         <div class="aff-mount" data-slug="l40s-pro-ultra" data-maker="Dreame">
           <p class="aff-status">かんたんリンクを読み込み中…</p>
         </div>
