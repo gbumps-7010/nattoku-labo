@@ -1303,24 +1303,32 @@ function pickAdMaterial(catalog, data, role) {
 function resolveAffiliateMaterials(data, catalog) {
     const aff = data.affiliate || {};
     // 公式CTA・もしもカードは製品固有アフィリを優先（計測が製品単位のため）
-    // メーカー/ECマスタはバナー差し込みとECテキスト用
     const official = pickAdMaterial(catalog, data, 'official_main')
         || pickAdMaterial(catalog, data, 'official_warranty');
     const ecCard = pickAdMaterial(catalog, data, 'ec_compare');
     const midBanner = pickAdMaterial(catalog, data, 'mid_banner')
         || pickAdMaterial(catalog, data, 'official_banner');
-    const ecRakuten = pickAdMaterial(catalog, data, 'ec_rakuten');
-    const ecAmazon = pickAdMaterial(catalog, data, 'ec_amazon');
-    const ecYahoo = pickAdMaterial(catalog, data, 'ec_yahoo');
+
+    // 広告感を抑える:
+    // A) メーカーバナーあり → ECバナーは出さない（公式誘導を1本に絞る）
+    // B) メーカーバナーなし → ECバナーは最大1本（楽天→Amazon→Yahoo）
+    let ecText = { rakuten: null, amazon: null, yahoo: null };
+    if (!(midBanner && midBanner.html)) {
+        const candidates = [
+            ['rakuten', pickAdMaterial(catalog, data, 'ec_rakuten')],
+            ['amazon', pickAdMaterial(catalog, data, 'ec_amazon')],
+            ['yahoo', pickAdMaterial(catalog, data, 'ec_yahoo')],
+        ];
+        const hit = candidates.find(([, mat]) => mat && mat.html);
+        if (hit) ecText[hit[0]] = hit[1];
+    }
+
     return {
         directHtml: (official && official.html) || aff.direct || '',
         moshimoHtml: (ecCard && ecCard.html) || aff.moshimo || '',
         midBannerHtml: (midBanner && midBanner.html) || '',
-        ecText: {
-            rakuten: ecRakuten,
-            amazon: ecAmazon,
-            yahoo: ecYahoo,
-        },
+        hasMakerBanner: !!(midBanner && midBanner.html),
+        ecText: ecText,
     };
 }
 
@@ -1383,17 +1391,27 @@ function injectMidBanner(html) {
     wrap.id = 'ad-mid-banner';
     wrap.className = 'ad-mid-banner';
     wrap.style.cssText =
-        'max-width:860px;margin:2rem auto;padding:0 1rem;text-align:center;';
+        'max-width:860px;margin:1.75rem auto 0.5rem;padding:0 1rem;text-align:center;';
+    const caption = document.createElement('p');
+    caption.textContent = 'メーカー公式ストア';
+    caption.style.cssText =
+        'margin:0 0 0.55rem;font-size:0.78rem;font-weight:700;color:#64748b;letter-spacing:0.04em;';
+    wrap.appendChild(caption);
     const inner = document.createElement('div');
     inner.style.cssText = 'display:inline-block;max-width:100%;line-height:0;';
     mountAdHtml(inner, html);
     wrap.appendChild(inner);
+    // 消耗品の直後〜購入CTA直前（読むゾーンの外・決断ゾーンの入口）
     const priceCta = document.getElementById('affiliate-cta-2');
     const consumables = document.getElementById('consumables-cost');
-    if (priceCta && priceCta.parentNode) {
+    if (consumables && consumables.parentNode) {
+        if (consumables.nextSibling) {
+            consumables.parentNode.insertBefore(wrap, consumables.nextSibling);
+        } else {
+            consumables.parentNode.appendChild(wrap);
+        }
+    } else if (priceCta && priceCta.parentNode) {
         priceCta.parentNode.insertBefore(wrap, priceCta);
-    } else if (consumables && consumables.parentNode) {
-        consumables.parentNode.insertBefore(wrap, consumables);
     } else {
         const container = document.querySelector('.container');
         if (container) container.appendChild(wrap);
