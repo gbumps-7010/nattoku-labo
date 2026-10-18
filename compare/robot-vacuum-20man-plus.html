@@ -713,7 +713,7 @@
   <article>
     <div class="wrap">
       <div class="note">
-        表示価格⁠はメーカー希望小売価格（⁠参考⁠）⁠です⁠。本ページ⁠の比較⁠は⁠、<strong class="em-key">2大ECサイト</strong>⁠に寄せられた口コミ⁠を集計・分析した参考情報⁠です⁠。口コミ⁠が少ない製品⁠は数値⁠が揺れやすいの⁠で⁠、件数・信頼度⁠とあわせて読んでください⁠。
+        表示価格⁠はメーカー希望小売価格（⁠参考⁠）⁠です⁠。本ページ⁠の比較⁠は⁠、<strong class="em-key">2大ECサイト</strong>⁠に寄せられた口コミ⁠を集計・分析した参考情報⁠です⁠。口コミ⁠が少ない製品⁠は数値⁠が揺れやすいので⁠、件数・信頼度⁠とあわせて読んでください⁠。
       </div>
 
       <section class="table-stage" aria-label="ロボット掃除機のおすすめ・口コミ徹底比較表">
@@ -741,7 +741,7 @@
                     <a href="https://nattoku-labo.com/products/deebot-x11-omnicyclone" target="_blank" rel="noopener">
                       <img
                         class="product-photo"
-                        src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/dex99-10ee.jpg"
+                        src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/deebot/x11omnicyclone/x11_thumb_w.jpg"
                         alt="エコバックス（ECOVACS） DEEBOT X11 OmniCyclone"
                         width="112"
                         height="112"
@@ -870,7 +870,7 @@
         <div class="card">
           <span class="pick">次の候補</span>
           <h3>Eufy Robot Vacuum Omni S2</h3>
-          <p>口コミ24件・信頼度57.4⁠。口コミ⁠が少ないの⁠で参考程度⁠に</p>
+          <p>口コミ24件・信頼度57.4⁠。口コミ⁠が少ないので参考程度⁠に</p>
         </div>
         <div class="card">
           <span class="pick">見方</span>
@@ -911,7 +911,7 @@
         <div class="affiliate-grid">
         <article class="aff-card" id="price-check-deebot-x11-omnicyclone" data-slug="deebot-x11-omnicyclone">
           <div class="aff-card-head">
-            <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/dex99-10ee.jpg" alt="" width="52" height="52" loading="lazy">
+            <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/deebot/x11omnicyclone/x11_thumb_w.jpg" alt="" width="52" height="52" loading="lazy">
             <div>
               <div class="aff-card-title">DEEBOT X11 OmniCyclone</div>
               <div class="aff-card-brand">エコバックス（ECOVACS） · ¥229,900</div>
@@ -1034,9 +1034,10 @@
       requestAnimationFrame(resetLeft);
     })();
   </script>
-  
   <script src="/products/js/official-perks.js?v=20261004b"></script>
-  <script>
+  
+  <script src="/products/js/compare-page-ads.js?v=20261018a"></script>
+<script>
     (function () {
       function normalizeMoshimoEasyLinkHtml(html) {
         if (typeof html !== "string") return html;
@@ -1197,7 +1198,11 @@
         }
       }
 
-      document.querySelectorAll(".aff-card[data-slug]").forEach(mountCard);
+      if (window.NattokuCompareAds && typeof window.NattokuCompareAds.initCards === 'function') {
+        window.NattokuCompareAds.initCards(mountCard);
+      } else {
+        document.querySelectorAll(".aff-card[data-slug]").forEach(mountCard);
+      }
     })();
   </script>
   <script src="/products/js/navigation.js?v=20261004a"></script>
