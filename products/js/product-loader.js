@@ -1325,41 +1325,56 @@ function resolveAffiliateMaterials(data, catalog) {
 }
 
 
-function injectEcTextLinks(body, ecText) {
-    if (!body || !ecText) return;
-    const entries = [
-        { key: 'rakuten', label: '楽天市場で見る' },
-        { key: 'amazon', label: 'Amazonで見る' },
-        { key: 'yahoo', label: 'Yahoo!で見る' },
-    ].filter((e) => ecText[e.key] && (ecText[e.key].html || ecText[e.key].url));
-    if (!entries.length || body.querySelector('.affiliate-ec-text-row')) return;
-    const row = document.createElement('div');
-    row.className = 'affiliate-ec-text-row';
-    row.style.cssText =
-        'display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:0.15rem 0 0.25rem;';
-    entries.forEach((e) => {
-        const mat = ecText[e.key];
-        const a = document.createElement('a');
-        a.target = '_blank';
-        a.rel = 'noopener sponsored nofollow';
-        a.textContent = e.label;
-        a.style.cssText =
-            'display:inline-block;padding:0.55rem 0.9rem;border-radius:10px;font-weight:700;' +
-            'font-size:0.86rem;text-decoration:none;color:#0f172a;background:#f8fafc;' +
-            'border:1.5px solid #cbd5e1;';
-        if (mat.url) {
-            a.href = mat.url;
-        } else {
-            // html がテキストリンクなら最初の a を使う。バナーなら枠に生挿入
-            const tmp = document.createElement('div');
-            tmp.innerHTML = mat.html || '';
-            const link = tmp.querySelector('a[href]');
-            if (link) a.href = link.href;
-            else return;
+function mountAdHtml(container, html) {
+    if (!container || !html) return;
+    const tmp = document.createElement('div');
+    tmp.innerHTML = html;
+    Array.from(tmp.childNodes).forEach((node) => {
+        if (node.nodeName === 'SCRIPT') {
+            const s = document.createElement('script');
+            for (const attr of Array.from(node.attributes || [])) {
+                s.setAttribute(attr.name, attr.value);
+            }
+            if (node.src) s.src = node.src;
+            else s.textContent = node.textContent;
+            container.appendChild(s);
+            return;
         }
-        row.appendChild(a);
+        container.appendChild(node);
     });
-    if (row.childNodes.length) body.appendChild(row);
+    container.querySelectorAll('img').forEach((img) => {
+        const w = Number(img.getAttribute('width') || 0);
+        const h = Number(img.getAttribute('height') || 0);
+        if (w <= 1 && h <= 1) return;
+        img.style.maxWidth = '100%';
+        img.style.height = 'auto';
+        img.style.display = 'inline-block';
+    });
+}
+
+function injectEcTextLinks(body, ecText) {
+    if (!body || !ecText || body.querySelector('.affiliate-ec-ads')) return;
+    const entries = [
+        { key: 'rakuten', label: '楽天' },
+        { key: 'amazon', label: 'Amazon' },
+        { key: 'yahoo', label: 'Yahoo' },
+    ].filter((e) => ecText[e.key] && ecText[e.key].html);
+    if (!entries.length) return;
+    const wrap = document.createElement('div');
+    wrap.className = 'affiliate-ec-ads';
+    wrap.style.cssText =
+        'display:flex;flex-direction:column;gap:0.75rem;align-items:center;' +
+        'margin:0.25rem 0 0.35rem;width:100%;';
+    entries.forEach((e) => {
+        const slot = document.createElement('div');
+        slot.className = 'affiliate-ec-ad';
+        slot.style.cssText = 'max-width:100%;text-align:center;overflow:hidden;';
+        mountAdHtml(slot, ecText[e.key].html);
+        wrap.appendChild(slot);
+    });
+    const moshimo = body.querySelector('[id^="affiliate-moshimo"]');
+    if (moshimo) body.insertBefore(wrap, moshimo);
+    else body.appendChild(wrap);
 }
 
 function injectMidBanner(html) {
@@ -1370,15 +1385,8 @@ function injectMidBanner(html) {
     wrap.style.cssText =
         'max-width:860px;margin:2rem auto;padding:0 1rem;text-align:center;';
     const inner = document.createElement('div');
-    inner.style.cssText = 'display:inline-block;max-width:100%;';
-    inner.innerHTML = html;
-    inner.querySelectorAll('img').forEach((img) => {
-        const w = Number(img.getAttribute('width') || img.width || 0);
-        const h = Number(img.getAttribute('height') || img.height || 0);
-        if (w <= 1 && h <= 1) return;
-        img.style.maxWidth = '100%';
-        img.style.height = 'auto';
-    });
+    inner.style.cssText = 'display:inline-block;max-width:100%;line-height:0;';
+    mountAdHtml(inner, html);
     wrap.appendChild(inner);
     const priceCta = document.getElementById('affiliate-cta-2');
     const consumables = document.getElementById('consumables-cost');
@@ -1391,6 +1399,7 @@ function injectMidBanner(html) {
         if (container) container.appendChild(wrap);
     }
 }
+
 
 function renderAffiliate(data, catalog) {
     const materials = resolveAffiliateMaterials(data, catalog || _adLinksCache || { byProduct: {} });

@@ -1,9 +1,130 @@
 {
   "updatedAt": "2026-10-18",
   "source": "広告リンク",
-  "count": 0,
-  "byManufacturer": {},
-  "byEc": {},
+  "count": 7,
+  "byManufacturer": {
+    "Dreame": [
+      {
+        "id": "manufacturer__Dreame__mid_banner__2",
+        "scope": "manufacturer",
+        "network": "afi-b",
+        "kind": "banner",
+        "size": "750x300",
+        "role": "mid_banner",
+        "html": "<a href=\"https://t.afi-b.com/visit.php?a=115804H-v536940B&p=g978598R\" rel=\"nofollow\"><img src=\"https://www.afi-b.com/upload_image/15804-1788841340-3.jpg\" width=\"750\" height=\"300\" style=\"border:none;\" alt=\"Dreame（ドリーミー）公式オンラインストア\" /></a><img src=\"https://t.afi-b.com/lead/115804H/g978598R/v536940B\" width=\"1\" height=\"1\" style=\"border:none;\" />",
+        "url": "https://t.afi-b.com/visit.php?a=115804H-v536940B&p=g978598R",
+        "note": "記事中バナー（A8の通常広告用HTMLを貼る）",
+        "checkedAt": "2026-10-18",
+        "manufacturer": "Dreame",
+        "ec": "",
+        "productId": ""
+      }
+    ],
+    "Anker": [
+      {
+        "id": "manufacturer__Anker__mid_banner__6",
+        "scope": "manufacturer",
+        "network": "valuecommerce",
+        "kind": "banner",
+        "size": "300x250",
+        "role": "mid_banner",
+        "html": "<script language=\"javascript\" src=\"//ad.jp.ap.valuecommerce.com/servlet/jsbanner?sid=3766176&pid=892728784\"></script><noscript><a href=\"//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3766176&pid=892728784\" rel=\"nofollow\"><img src=\"//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3766176&pid=892728784\" border=\"0\"></a></noscript>",
+        "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3766176&pid=892728784",
+        "note": "記事中バナー（A8の通常広告用HTMLを貼る）",
+        "checkedAt": "2026-10-18",
+        "manufacturer": "Anker",
+        "ec": "",
+        "productId": ""
+      }
+    ],
+    "SwitchBot": [
+      {
+        "id": "manufacturer__SwitchBot__mid_banner__8",
+        "scope": "manufacturer",
+        "network": "a8",
+        "kind": "banner",
+        "size": "300x250",
+        "role": "mid_banner",
+        "html": "<a href=\"https://px.a8.net/svt/ejp?a8mat=4B1OTR+ZQ12Q+4W9U+61JSH\" rel=\"nofollow\">\r\n<img border=\"0\" width=\"300\" height=\"250\" alt=\"\" src=\"https://www23.a8.net/svt/bgt?aid=260419311060&wid=001&eno=01&mid=s00000022845001015000&mc=1\"></a>\r\n<img border=\"0\" width=\"1\" height=\"1\" src=\"https://www11.a8.net/0.gif?a8mat=4B1OTR+ZQ12Q+4W9U+61JSH\" alt=\"\">",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B1OTR+ZQ12Q+4W9U+61JSH",
+        "note": "記事中バナー（A8の通常広告用HTMLを貼る）",
+        "checkedAt": "2026-10-18",
+        "manufacturer": "SwitchBot",
+        "ec": "",
+        "productId": ""
+      }
+    ],
+    "iRobot": [
+      {
+        "id": "manufacturer__iRobot__mid_banner__12",
+        "scope": "manufacturer",
+        "network": "a8",
+        "kind": "banner",
+        "size": "300x250",
+        "role": "mid_banner",
+        "html": "<a href=\"https://px.a8.net/svt/ejp?a8mat=4AZOWQ+152XIQ+4KHO+BZO4H\" rel=\"nofollow\">\r\n<img border=\"0\" width=\"300\" height=\"250\" alt=\"\" src=\"https://www21.a8.net/svt/bgt?aid=260326106069&wid=001&eno=01&mid=s00000021318002014000&mc=1\"></a>\r\n<img border=\"0\" width=\"1\" height=\"1\" src=\"https://www15.a8.net/0.gif?a8mat=4AZOWQ+152XIQ+4KHO+BZO4H\" alt=\"\">",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4AZOWQ+152XIQ+4KHO+BZO4H",
+        "note": "記事中バナー（A8の通常広告用HTMLを貼る）",
+        "checkedAt": "2026-10-18",
+        "manufacturer": "iRobot",
+        "ec": "",
+        "productId": ""
+      }
+    ]
+  },
+  "byEc": {
+    "rakuten": [
+      {
+        "id": "ec__rakuten__ec_rakuten__14",
+        "scope": "ec",
+        "network": "moshimo",
+        "kind": "banner",
+        "size": "468x60",
+        "role": "ec_rakuten",
+        "html": "<a href=\"//af.moshimo.com/af/c/click?a_id=5483003&p_id=54&pc_id=54&pl_id=1220\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc><img src=\"//image.moshimo.com/af-img/0032/000000001220.gif\" width=\"468\" height=\"60\" style=\"border:none;\"></a><img src=\"//i.moshimo.com/af/i/impression?a_id=5483003&p_id=54&pc_id=54&pl_id=1220\" width=\"1\" height=\"1\" style=\"border:none;\" loading=\"lazy\">",
+        "url": "https://af.moshimo.com/af/c/click?a_id=5483003&p_id=54&pc_id=54&pl_id=1220",
+        "note": "楽天のテキスト/バナー広告",
+        "checkedAt": "2026-10-18",
+        "manufacturer": "",
+        "ec": "rakuten",
+        "productId": ""
+      }
+    ],
+    "amazon": [
+      {
+        "id": "ec__amazon__ec_amazon__15",
+        "scope": "ec",
+        "network": "moshimo",
+        "kind": "banner",
+        "size": "728x90",
+        "role": "ec_amazon",
+        "html": "<a href=\"//af.moshimo.com/af/c/click?a_id=5483011&p_id=170&pc_id=185&pl_id=4153\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc><img src=\"//image.moshimo.com/af-img/0068/000000004153.gif\" width=\"728\" height=\"90\" style=\"border:none;\"></a><img src=\"//i.moshimo.com/af/i/impression?a_id=5483011&p_id=170&pc_id=185&pl_id=4153\" width=\"1\" height=\"1\" style=\"border:none;\" loading=\"lazy\">",
+        "url": "https://af.moshimo.com/af/c/click?a_id=5483011&p_id=170&pc_id=185&pl_id=4153",
+        "note": "Amazonのテキスト/バナー広告",
+        "checkedAt": "2026-10-18",
+        "manufacturer": "",
+        "ec": "amazon",
+        "productId": ""
+      }
+    ],
+    "yahoo": [
+      {
+        "id": "ec__yahoo__ec_yahoo__16",
+        "scope": "ec",
+        "network": "moshimo",
+        "kind": "banner",
+        "size": "468x60",
+        "role": "ec_yahoo",
+        "html": "<a href=\"//af.moshimo.com/af/c/click?a_id=5483010&p_id=1225&pc_id=1925&pl_id=18529\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc><img src=\"//image.moshimo.com/af-img/0349/000000018529.jpg\" width=\"468\" height=\"60\" style=\"border:none;\"></a><img src=\"//i.moshimo.com/af/i/impression?a_id=5483010&p_id=1225&pc_id=1925&pl_id=18529\" width=\"1\" height=\"1\" style=\"border:none;\" loading=\"lazy\">",
+        "url": "https://af.moshimo.com/af/c/click?a_id=5483010&p_id=1225&pc_id=1925&pl_id=18529",
+        "note": "Yahooのテキスト/バナー広告",
+        "checkedAt": "2026-10-18",
+        "manufacturer": "",
+        "ec": "yahoo",
+        "productId": ""
+      }
+    ]
+  },
   "byProduct": {},
   "roles": {
     "mid_banner": "メーカー記事中バナー（全製品で共有）",
