@@ -1,8 +1,8 @@
 /**
- * メーカーページの広告を薄くする。
- * - メーカーバナーあり: まとめ直前にバナー1本だけ。製品ごとのもしもは出さない
- * - メーカーバナーなし: もしもはページ全体で1枠だけ
- * EC横断バナーは出さない（もしもと重複するため）
+ * メーカーページ向け広告（当初プラン）:
+ * - アフィありメーカー: まとめ直前にメーカーバナー1本 ＋ 既存のもしもはそのまま
+ * - アフィなしメーカー: バナーなし。既存のもしものみ
+ * - EC横断バナーは出さない
  */
 (function () {
   'use strict';
@@ -32,13 +32,6 @@
       img.style.height = 'auto';
       img.style.display = 'inline-block';
     });
-  }
-
-  function hideMount(el) {
-    if (!el) return;
-    el.innerHTML = '';
-    el.hidden = true;
-    el.style.display = 'none';
   }
 
   function injectMakerBanner(maker, html) {
@@ -92,39 +85,25 @@
    */
   function initMounts(mountFn) {
     const mounts = Array.from(document.querySelectorAll('.aff-mount[data-slug]'));
-    if (!mounts.length) {
-      // マウントが無くてもバナーだけ出す可能性
-      const maker =
-        (document.body && document.body.dataset.maker) ||
-        (document.querySelector('[data-maker]') || {}).dataset.maker;
-      if (!maker) return;
-      loadCatalog().then((catalog) => {
-        const banner = pickMakerBanner(catalog, maker);
-        if (banner) injectMakerBanner(maker, banner.html);
-      });
-      return;
-    }
+    const maker =
+      (mounts[0] && mounts[0].getAttribute('data-maker')) ||
+      (document.querySelector('[data-maker]') || {}).getAttribute('data-maker') ||
+      '';
 
-    const maker = mounts[0].getAttribute('data-maker') || '';
+    // もしもは従来どおり全枠を描画
+    mounts.forEach((el) => {
+      el.hidden = false;
+      el.style.display = '';
+      mountFn(el);
+    });
+
+    if (!maker) return;
     loadCatalog().then((catalog) => {
       const banner = pickMakerBanner(catalog, maker);
       if (banner && banner.html) {
         injectMakerBanner(maker, banner.html);
-        mounts.forEach(hideMount);
-        console.log('✅ メーカーページ広告: バナー1本（もしも抑制）', maker);
-        return;
+        console.log('✅ メーカーページ: 公式バナー追加（もしもは従来どおり）', maker);
       }
-      // バナーなし → もしもは先頭1枠だけ
-      mounts.forEach((el, i) => {
-        if (i === 0) {
-          el.hidden = false;
-          el.style.display = '';
-          mountFn(el);
-        } else {
-          hideMount(el);
-        }
-      });
-      console.log('✅ メーカーページ広告: もしも1枠のみ', maker);
     });
   }
 
