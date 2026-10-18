@@ -1087,8 +1087,9 @@ function normalizeMoshimoEasyLinkHtml(html) {
 //   メイン文書へ動的appendしたscriptでは currentScript=null となり「リンク」プレースホルダのまま
 //   描画されないことがある。iframe(srcdoc)内でmarkupとして解析・実行させて確実に描画する。
 //   各iframeは独立コンテキストなので、2枠並べてもeid(id)衝突は起きない。
-function injectMoshimoIframe(container, html) {
+function injectMoshimoIframe(container, html, opts) {
     if (!container || !html) return;
+    opts = opts || {};
     container.innerHTML = '';
     const safe = normalizeMoshimoEasyLinkHtml(html);
     const iframe = document.createElement('iframe');
@@ -1119,7 +1120,9 @@ function injectMoshimoIframe(container, html) {
         'max-width:240px!important;max-height:240px!important;' +
         'width:auto!important;height:auto!important;min-width:0!important;object-fit:contain!important}' +
         'div.easyLink-box div.easyLink-info p.easyLink-info-name{' +
-        'display:-webkit-box!important;-webkit-box-orient:vertical!important;-webkit-line-clamp:3!important;overflow:hidden!important}' +
+        'display:-webkit-box!important;-webkit-box-orient:vertical!important;' +
+        '-webkit-line-clamp:' + (opts.compact ? '2' : '3') + '!important;overflow:hidden!important;' +
+        (opts.compact ? 'max-height:2.8em!important;line-height:1.35!important;margin-bottom:8px!important;' : '') + '}' +
         '@media screen and (max-width:480px){' +
         'div.easyLink-box{display:block!important}' +
         'div.easyLink-box div.easyLink-img,' +
@@ -1328,20 +1331,29 @@ function renderAffiliate(data) {
                 'padding:0 0.85rem 1.1rem;';
         }
 
-        // 公式HPを「確認先のひとつ」として先頭に
+        // 公式を先頭に。購入CTAでは特典別の副次ボタンも出す
         if (directEl) { directEl.innerHTML = ''; directEl.style.cssText = 'display:none; margin:0;'; }
         if (hasDirect) {
             const perksApi = window.NattokuOfficialPerks;
             const hasPerks = !!(perksApi && perksApi.has(data.manufacturer, data.productId));
-            let btn = hasPerks
-                ? buildOfficialButton(aff.direct, opts.withPixel, '公式ストアで特典を確認する', 'default')
-                : buildOfficialButton(aff.direct, opts.withPixel, opts.btnLabel, opts.buttonSize || 'default');
+            const officialLabel = opts.prominent
+                ? (hasPerks ? '公式ストアで今の価格と特典を確認する' : '公式ストアで今の価格を確認する')
+                : (hasPerks ? '公式ストアで特典を確認する' : opts.btnLabel);
+            let btn = buildOfficialButton(
+                aff.direct, opts.withPixel, officialLabel, opts.buttonSize || 'default'
+            );
             if (btn && hasPerks) {
+                const failure = perksApi.failureFrom
+                    ? perksApi.failureFrom(data.topComplaints)
+                    : null;
                 btn = perksApi.build({
                     maker: data.manufacturer,
                     productId: data.productId,
+                    price: data.price,
+                    failure: failure,
                     button: btn,
-                    mode: 'slim',
+                    href: extractOfficialHref(aff.direct),
+                    mode: opts.prominent ? 'purchase' : 'slim',
                 }) || btn;
             }
             if (btn) {
@@ -1356,9 +1368,22 @@ function renderAffiliate(data) {
             }
         }
 
-        // もしもかんたんリンク（楽天/Yahoo/Amazon）をiframeで確実描画
+        // EC比較は公式の下。購入CTAではカードを圧縮してボタン位置を上げる
         if (moshimoEl && hasMoshimo) {
-            injectMoshimoIframe(moshimoEl, aff.moshimo);
+            if (opts.prominent && body && hasDirect) {
+                let divider = body.querySelector('.affiliate-ec-divider');
+                if (!divider) {
+                    divider = document.createElement('p');
+                    divider.className = 'affiliate-ec-divider';
+                    divider.textContent = '他のショップでも価格を比較する';
+                    divider.style.cssText =
+                        'margin:0.35rem 0 0; padding:0.35rem 0 0; text-align:center; ' +
+                        'font-size:0.82rem; font-weight:700; color:#64748b; ' +
+                        'border-top:1px dashed #cbd5e1;';
+                    body.insertBefore(divider, moshimoEl);
+                }
+            }
+            injectMoshimoIframe(moshimoEl, aff.moshimo, { compact: !!opts.prominent });
         }
     }
 
@@ -1374,10 +1399,39 @@ function renderAffiliate(data) {
         secId: 'affiliate-cta-2', moshId: 'affiliate-moshimo-2', dirId: 'affiliate-direct-2',
         eidSuffix: 'b', withPixel: false, prominent: true, buttonSize: 'large',
         headerStyle: 'group', headerText: '今の価格を確認する', headerIcon: 'fa-yen-sign',
-        subText: 'メーカー公式HP・各ECサイトから、現在の価格を確認できます',
+        subText: 'まず公式ストアで価格と特典を確認し、必要なら他ショップとも比較できます',
         btnLabel: 'メーカー公式HPで価格を確認'
     });
-    console.log('✅ アフィリエイトCTA描画（詳細／価格を同一グループで表示）');
+    ensureStickyOfficialCta(data);
+    console.log('✅ アフィリエイトCTA描画（公式優先・特典別導線）');
+}
+
+function ensureStickyOfficialCta(data) {
+    const href = extractOfficialHref((data.affiliate || {}).direct || '');
+    if (!href || document.getElementById('sticky-official-cta')) return;
+    if (!document.getElementById('sticky-official-cta-style')) {
+        const style = document.createElement('style');
+        style.id = 'sticky-official-cta-style';
+        style.textContent =
+            '#sticky-official-cta{display:none;position:fixed;left:0;right:0;bottom:0;z-index:40;' +
+            'padding:0.55rem 0.75rem calc(0.55rem + env(safe-area-inset-bottom));' +
+            'background:rgba(255,255,255,0.96);border-top:1px solid #a7f3d0;' +
+            'box-shadow:0 -6px 20px rgba(15,23,42,0.08)}' +
+            '#sticky-official-cta a{display:block;text-align:center;text-decoration:none;color:#fff;' +
+            'font-weight:800;font-size:0.95rem;padding:0.85rem 1rem;border-radius:12px;background:#047857}' +
+            '@media (max-width:768px){#sticky-official-cta{display:block}' +
+            'body{padding-bottom:4.5rem}}';
+        document.head.appendChild(style);
+    }
+    const bar = document.createElement('div');
+    bar.id = 'sticky-official-cta';
+    const a = document.createElement('a');
+    a.href = href;
+    a.target = '_blank';
+    a.rel = 'noopener sponsored nofollow';
+    a.textContent = '公式ストアで今の価格を確認する';
+    bar.appendChild(a);
+    document.body.appendChild(bar);
 }
 
 // 12.5 製品スペック（メーカー公式）
@@ -1497,7 +1551,7 @@ function buildKeySpecsHtml(specs) {
         <h2 class="section-title"><i class="fas fa-list-ul"></i>主要スペック（メーカー公式）</h2>
         <div class="card">
             <table class="spec-table spec-table-key"><tbody>${keyRows.join('')}</tbody></table>
-            <p class="spec-key-more">その他のスペックと出典は<a href="#product-specs">詳細スペック</a>に掲載しています。</p>
+            <p class="spec-key-more">その他のスペックと出典は<a href="#product-specs-fold" onclick="var d=document.getElementById('product-specs-fold');if(d)d.open=true;">詳細スペック</a>に掲載しています。</p>
         </div>`;
 }
 
@@ -1518,14 +1572,20 @@ function buildSpecsHtml(specs) {
     const checked = specs.checkedAt ? formatSpecValue(specs.checkedAt, 'date') : '';
 
     return `
-        <h2 class="section-title"><i class="fas fa-list-ul"></i>詳細スペック（メーカー公式）</h2>
-        <div class="card">
-            <div class="spec-groups">${groupsHtml}</div>
-            <div class="spec-footer">
-                <p>「メーカー非公表」はメーカーが数値を公開していない項目です。仕様は予告なく変更される場合があるため、購入前に公式サイトで最新情報をご確認ください。${checked ? `（${checked}確認）` : ''}</p>
-                ${sources ? `<p class="spec-sources-title">出典</p><ul class="spec-sources">${sources}</ul>` : ''}
+        <details class="spec-details-fold card" id="product-specs-fold">
+            <summary class="spec-details-summary">
+                <span class="section-title" style="margin:0;display:inline-flex;align-items:center;gap:0.45rem;">
+                    <i class="fas fa-list-ul" aria-hidden="true"></i>詳細スペックを開く（メーカー公式）
+                </span>
+            </summary>
+            <div class="spec-details-body">
+                <div class="spec-groups">${groupsHtml}</div>
+                <div class="spec-footer">
+                    <p>「メーカー非公表」はメーカーが数値を公開していない項目です。仕様は予告なく変更される場合があるため、購入前に公式サイトで最新情報をご確認ください。${checked ? `（${checked}確認）` : ''}</p>
+                    ${sources ? `<p class="spec-sources-title">出典</p><ul class="spec-sources">${sources}</ul>` : ''}
+                </div>
             </div>
-        </div>`;
+        </details>`;
 }
 
 function injectSpecsStyles() {
@@ -1551,6 +1611,17 @@ function injectSpecsStyles() {
         .spec-sources-title { font-weight: 700; color: #475569; }
         .spec-sources { margin: 0; padding-left: 1.2rem; }
         .spec-sources a { color: var(--primary-color); }
+        .spec-details-fold { padding: 0; overflow: hidden; }
+        .spec-details-summary {
+            list-style: none; cursor: pointer; padding: 1rem 1.15rem;
+            background: #f8fafc; border-bottom: 1px solid #e2e8f0;
+        }
+        .spec-details-summary::-webkit-details-marker { display: none; }
+        .spec-details-summary::after {
+            content: '▼'; float: right; color: #64748b; font-size: 0.75rem; margin-top: 0.35rem;
+        }
+        details[open] > .spec-details-summary::after { content: '▲'; }
+        .spec-details-body { padding: 1rem 1.15rem 1.15rem; }
         @media (max-width: 768px) {
             .spec-groups { column-count: 1; }
         }
@@ -1582,8 +1653,12 @@ async function renderSpecs(productId) {
     section.id = 'product-specs';
     section.innerHTML = buildSpecsHtml(specs);
 
+    // 購入CTAの下に置く（スペックが価格確認ボタンを押し下げないようにする）
+    const priceCta = document.getElementById('affiliate-cta-2');
     const anchorSection = document.getElementById('consumables-cost');
-    if (anchorSection) {
+    if (priceCta) {
+        priceCta.after(section);
+    } else if (anchorSection) {
         anchorSection.after(section);
     } else {
         const container = document.querySelector('.container');

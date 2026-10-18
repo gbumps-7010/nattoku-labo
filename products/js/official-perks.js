@@ -75,6 +75,29 @@
     });
   }
 
+  /** 公式URLへの副次CTA（同じリンク先・訴求だけ変える） */
+  const ACTION_BY_KEY = {
+    warranty: { label: '保証内容を確認する', icon: 'fa-shield-halved' },
+    warranty5: { label: '長期保証を確認する', icon: 'fa-shield-heart' },
+    tradein: { label: '下取り特典を確認する', icon: 'fa-recycle' },
+    pickup: { label: '無料引き取りを確認する', icon: 'fa-recycle' },
+    return: { label: '返品保証を確認する', icon: 'fa-rotate-left' },
+    points: { label: 'ポイント還元を確認する', icon: 'fa-coins' },
+    genuine: { label: '正規保証の条件を確認する', icon: 'fa-circle-check' },
+  };
+  const ACTION_PRIORITY = ['warranty', 'warranty5', 'tradein', 'pickup', 'return', 'points', 'genuine'];
+
+  function purchaseActions(maker, productId) {
+    const keys = perksFor(maker, productId).map((p) => p.key);
+    const out = [];
+    ACTION_PRIORITY.forEach((key) => {
+      if (keys.indexOf(key) === -1 || !ACTION_BY_KEY[key]) return;
+      if (out.some((a) => a.key === key)) return;
+      out.push({ key: key, label: ACTION_BY_KEY[key].label, icon: ACTION_BY_KEY[key].icon });
+    });
+    return out.slice(0, 2);
+  }
+
   /** topComplaints（製品JSON）から故障系の不満を1件取り出す */
   function failureFrom(complaints) {
     if (!Array.isArray(complaints)) return null;
@@ -122,7 +145,16 @@
       '.op-slim-perks{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:2px 12px;margin:6px 0 0;font-size:.76rem;line-height:1.5;color:#475569}' +
       '.op-slim-perks span{white-space:nowrap}' +
       '.op-slim-perks i{margin-right:.3em;color:#0f766e;font-size:.85em}' +
-      '.op-slim-label{font-weight:700;color:#065f46}';
+      '.op-slim-label{font-weight:700;color:#065f46}' +
+      '.op-purchase{box-sizing:border-box;width:100%;margin:0;display:flex;flex-direction:column;gap:10px}' +
+      '.op-purchase-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}' +
+      '@media (max-width:520px){.op-purchase-actions{grid-template-columns:1fr}}' +
+      '.op-purchase-actions a{display:flex;align-items:center;justify-content:center;gap:.4em;text-align:center;' +
+      'text-decoration:none;font-weight:700;font-size:.86rem;line-height:1.35;padding:.72rem .85rem;border-radius:10px;' +
+      'color:#065f46;background:#ecfdf5;border:1.5px solid #6ee7b7}' +
+      '.op-purchase-actions a:hover{background:#d1fae5}' +
+      '.op-purchase-actions i{font-size:.9em}' +
+      '.op-purchase-hint{margin:0;font-size:.78rem;line-height:1.55;color:#64748b;text-align:center}';
     document.head.appendChild(style);
   }
 
@@ -135,14 +167,49 @@
 
   /**
    * 公式ストアの特典表示を作る。対象メーカーでなければ null。
-   * opts: { maker, productId, price, failure, button(Element), mode('slim'|'full') }
+   * opts: { maker, productId, price, failure, button(Element), mode('slim'|'full'|'purchase'), href }
    * slim: ボタン＋特典キーワード1行（記事の流れを邪魔しない場所用）
    * full: 特典・口コミに基づく一言・注記つき（購入を検討する場所用）
+   * purchase: 主ボタン＋特典別の副次CTA（同じ公式URL）＋特典チップ
    */
   function build(opts) {
     const perks = perksFor(opts.maker, opts.productId);
     if (!perks.length) return null;
     injectStyle();
+
+    if (opts.mode === 'purchase') {
+      const wrap = el('div', 'op-purchase');
+      if (opts.button) wrap.appendChild(opts.button);
+      const actions = purchaseActions(opts.maker, opts.productId);
+      if (opts.href && actions.length) {
+        const row = el('div', 'op-purchase-actions');
+        actions.forEach((a) => {
+          const link = document.createElement('a');
+          link.href = opts.href;
+          link.target = '_blank';
+          link.rel = 'noopener sponsored nofollow';
+          link.innerHTML = `<i class="fas ${a.icon}" aria-hidden="true"></i>`;
+          link.appendChild(document.createTextNode(a.label));
+          row.appendChild(link);
+        });
+        wrap.appendChild(row);
+        wrap.appendChild(el('p', 'op-purchase-hint', 'どれも同じ公式ストアのページを開きます。気になる特典から入れます。'));
+      }
+      const line = el('p', 'op-slim-perks');
+      line.appendChild(el('span', 'op-slim-label', '公式ストア特典'));
+      perks.slice(0, 3).forEach((p) => {
+        const item = el('span');
+        item.innerHTML = '<i class="fas fa-check" aria-hidden="true"></i>';
+        item.appendChild(document.createTextNode(p.short || p.title));
+        line.appendChild(item);
+      });
+      wrap.appendChild(line);
+      const text = nudgeText(opts.maker, opts.productId, Number(opts.price) || 0, opts.failure);
+      if (text) wrap.appendChild(el('p', 'op-nudge', text));
+      wrap.appendChild(el('p', 'op-note',
+        `※${CHECKED_AT}時点の${MAKERS[opts.maker].store}の情報です。条件・対象機種は変わることがあるため、購入前に公式ストアでご確認ください。`));
+      return wrap;
+    }
 
     if (opts.mode !== 'full') {
       const wrap = el('div', 'op-slim');
@@ -183,5 +250,11 @@
     return box;
   }
 
-  window.NattokuOfficialPerks = { CHECKED_AT, build, failureFrom, has: (maker, id) => perksFor(maker, id).length > 0 };
+  window.NattokuOfficialPerks = {
+    CHECKED_AT,
+    build,
+    failureFrom,
+    purchaseActions,
+    has: (maker, id) => perksFor(maker, id).length > 0,
+  };
 })();
