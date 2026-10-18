@@ -1277,24 +1277,89 @@ function loadAdLinksCatalog() {
     return _adLinksPromise;
 }
 
-function pickAdMaterial(catalog, productId, role) {
-    const list = (catalog && catalog.byProduct && catalog.byProduct[productId]) || [];
+function pickFromList(list, role) {
+    if (!list || !list.length) return null;
     return list.find((x) => x.role === role) || null;
+}
+
+/** 製品 → メーカー → EC の順で role に合う素材を返す */
+function pickAdMaterial(catalog, data, role) {
+    catalog = catalog || {};
+    const pid = data && data.productId;
+    const maker = data && data.manufacturer;
+    const fromProduct = pickFromList(catalog.byProduct && catalog.byProduct[pid], role);
+    if (fromProduct) return fromProduct;
+    const fromMaker = pickFromList(catalog.byManufacturer && catalog.byManufacturer[maker], role);
+    if (fromMaker) return fromMaker;
+    // EC role: ec_rakuten → byEc.rakuten
+    const ecKey = (role || '').replace(/^ec_/, '');
+    if (ecKey && catalog.byEc && catalog.byEc[ecKey]) {
+        const fromEc = pickFromList(catalog.byEc[ecKey], role);
+        if (fromEc) return fromEc;
+    }
+    return null;
 }
 
 function resolveAffiliateMaterials(data, catalog) {
     const aff = data.affiliate || {};
-    const pid = data.productId;
-    const official = pickAdMaterial(catalog, pid, 'official_main')
-        || pickAdMaterial(catalog, pid, 'official_warranty');
-    const ec = pickAdMaterial(catalog, pid, 'ec_compare');
-    const midBanner = pickAdMaterial(catalog, pid, 'mid_banner')
-        || pickAdMaterial(catalog, pid, 'official_banner');
+    // 公式CTA・もしもカードは製品固有アフィリを優先（計測が製品単位のため）
+    // メーカー/ECマスタはバナー差し込みとECテキスト用
+    const official = pickAdMaterial(catalog, data, 'official_main')
+        || pickAdMaterial(catalog, data, 'official_warranty');
+    const ecCard = pickAdMaterial(catalog, data, 'ec_compare');
+    const midBanner = pickAdMaterial(catalog, data, 'mid_banner')
+        || pickAdMaterial(catalog, data, 'official_banner');
+    const ecRakuten = pickAdMaterial(catalog, data, 'ec_rakuten');
+    const ecAmazon = pickAdMaterial(catalog, data, 'ec_amazon');
+    const ecYahoo = pickAdMaterial(catalog, data, 'ec_yahoo');
     return {
         directHtml: (official && official.html) || aff.direct || '',
-        moshimoHtml: (ec && ec.html) || aff.moshimo || '',
+        moshimoHtml: (ecCard && ecCard.html) || aff.moshimo || '',
         midBannerHtml: (midBanner && midBanner.html) || '',
+        ecText: {
+            rakuten: ecRakuten,
+            amazon: ecAmazon,
+            yahoo: ecYahoo,
+        },
     };
+}
+
+
+function injectEcTextLinks(body, ecText) {
+    if (!body || !ecText) return;
+    const entries = [
+        { key: 'rakuten', label: '楽天市場で見る' },
+        { key: 'amazon', label: 'Amazonで見る' },
+        { key: 'yahoo', label: 'Yahoo!で見る' },
+    ].filter((e) => ecText[e.key] && (ecText[e.key].html || ecText[e.key].url));
+    if (!entries.length || body.querySelector('.affiliate-ec-text-row')) return;
+    const row = document.createElement('div');
+    row.className = 'affiliate-ec-text-row';
+    row.style.cssText =
+        'display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:0.15rem 0 0.25rem;';
+    entries.forEach((e) => {
+        const mat = ecText[e.key];
+        const a = document.createElement('a');
+        a.target = '_blank';
+        a.rel = 'noopener sponsored nofollow';
+        a.textContent = e.label;
+        a.style.cssText =
+            'display:inline-block;padding:0.55rem 0.9rem;border-radius:10px;font-weight:700;' +
+            'font-size:0.86rem;text-decoration:none;color:#0f172a;background:#f8fafc;' +
+            'border:1.5px solid #cbd5e1;';
+        if (mat.url) {
+            a.href = mat.url;
+        } else {
+            // html がテキストリンクなら最初の a を使う。バナーなら枠に生挿入
+            const tmp = document.createElement('div');
+            tmp.innerHTML = mat.html || '';
+            const link = tmp.querySelector('a[href]');
+            if (link) a.href = link.href;
+            else return;
+        }
+        row.appendChild(a);
+    });
+    if (row.childNodes.length) body.appendChild(row);
 }
 
 function injectMidBanner(html) {
@@ -1443,6 +1508,9 @@ function renderAffiliate(data, catalog) {
                 }
             }
         }
+
+        // メーカー/ECマスタのテキストリンク（楽天・Amazon・Yahoo）
+        if (opts.prominent && body) injectEcTextLinks(body, materials.ecText);
 
         // EC比較は公式の下。購入CTAではカードを圧縮してボタン位置を上げる
         if (moshimoEl && hasMoshimo) {
