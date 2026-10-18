@@ -1256,10 +1256,86 @@ function ensureAffiliatePanel(section, opts) {
     return panel;
 }
 
-function renderAffiliate(data) {
-    const aff = data.affiliate;
-    const hasMoshimo = aff && aff.moshimo;
-    const hasDirect = aff && aff.direct;
+
+// --- 広告リンク素材マスタ（data/ad-links.json = スプレッド「広告リンク」） ---
+let _adLinksCache = null;
+let _adLinksPromise = null;
+
+function loadAdLinksCatalog() {
+    if (_adLinksCache) return Promise.resolve(_adLinksCache);
+    if (_adLinksPromise) return _adLinksPromise;
+    _adLinksPromise = fetch('data/ad-links.json')
+        .then((r) => (r.ok ? r.json() : null))
+        .then((data) => {
+            _adLinksCache = data || { byProduct: {} };
+            return _adLinksCache;
+        })
+        .catch(() => {
+            _adLinksCache = { byProduct: {} };
+            return _adLinksCache;
+        });
+    return _adLinksPromise;
+}
+
+function pickAdMaterial(catalog, productId, role) {
+    const list = (catalog && catalog.byProduct && catalog.byProduct[productId]) || [];
+    return list.find((x) => x.role === role) || null;
+}
+
+function resolveAffiliateMaterials(data, catalog) {
+    const aff = data.affiliate || {};
+    const pid = data.productId;
+    const official = pickAdMaterial(catalog, pid, 'official_main')
+        || pickAdMaterial(catalog, pid, 'official_warranty');
+    const ec = pickAdMaterial(catalog, pid, 'ec_compare');
+    const midBanner = pickAdMaterial(catalog, pid, 'mid_banner')
+        || pickAdMaterial(catalog, pid, 'official_banner');
+    return {
+        directHtml: (official && official.html) || aff.direct || '',
+        moshimoHtml: (ec && ec.html) || aff.moshimo || '',
+        midBannerHtml: (midBanner && midBanner.html) || '',
+    };
+}
+
+function injectMidBanner(html) {
+    if (!html || document.getElementById('ad-mid-banner')) return;
+    const wrap = document.createElement('aside');
+    wrap.id = 'ad-mid-banner';
+    wrap.className = 'ad-mid-banner';
+    wrap.style.cssText =
+        'max-width:860px;margin:2rem auto;padding:0 1rem;text-align:center;';
+    const inner = document.createElement('div');
+    inner.style.cssText = 'display:inline-block;max-width:100%;';
+    inner.innerHTML = html;
+    inner.querySelectorAll('img').forEach((img) => {
+        const w = Number(img.getAttribute('width') || img.width || 0);
+        const h = Number(img.getAttribute('height') || img.height || 0);
+        if (w <= 1 && h <= 1) return;
+        img.style.maxWidth = '100%';
+        img.style.height = 'auto';
+    });
+    wrap.appendChild(inner);
+    const priceCta = document.getElementById('affiliate-cta-2');
+    const consumables = document.getElementById('consumables-cost');
+    if (priceCta && priceCta.parentNode) {
+        priceCta.parentNode.insertBefore(wrap, priceCta);
+    } else if (consumables && consumables.parentNode) {
+        consumables.parentNode.insertBefore(wrap, consumables);
+    } else {
+        const container = document.querySelector('.container');
+        if (container) container.appendChild(wrap);
+    }
+}
+
+function renderAffiliate(data, catalog) {
+    const materials = resolveAffiliateMaterials(data, catalog || _adLinksCache || { byProduct: {} });
+    const aff = Object.assign({}, data.affiliate || {}, {
+        direct: materials.directHtml,
+        moshimo: materials.moshimoHtml,
+    });
+    const hasMoshimo = !!aff.moshimo;
+    const hasDirect = !!aff.direct;
+    if (materials.midBannerHtml) injectMidBanner(materials.midBannerHtml);
 
     // 1枠分を描画（見出し＋公式HP・各ECを同じ「確認先」グループに）
     function fillSlot(opts) {
@@ -1739,7 +1815,7 @@ async function initializePage() {
         updateDataQuality(data);
         updateResaleValue(data);
         updateCTAButtons(data);
-        renderAffiliate(data);
+        loadAdLinksCatalog().then((catalog) => renderAffiliate(data, catalog));
         updatePriceNote(data);
         renderSpecs(productId);
         
