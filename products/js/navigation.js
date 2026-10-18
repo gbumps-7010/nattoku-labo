@@ -3,7 +3,13 @@
  * - 固定ナビゲーションバー（製品ドロップダウン、メーカーフィルター、価格帯フィルター）
  * - 関連製品セクション（同メーカー・同価格帯の製品を自動表示）
  * - 内部リンクはすべてルート絶対パス（/products/...）に統一し /products/products 404 を防止
+ * - 製品URLは連結で組み立て、未展開テンプレをソースに残さない
  */
+
+/** 製品詳細のルート絶対パス */
+function productPagePath(id) {
+    return '/products/' + String(id || '');
+}
 
 // 全製品データ（価格・メーカー情報のみ）
 const ALL_PRODUCTS = [
@@ -228,7 +234,7 @@ function createNavigationBar() {
                     </button>
                     <div class="dropdown-menu products-dropdown">
                         ${ALL_PRODUCTS.map(p => `
-                            <a href="/products/${p.id}" class="dropdown-item ${getCurrentProductId() === p.id ? 'active' : ''}">
+                            <a href="${productPagePath(p.id)}" class="dropdown-item ${getCurrentProductId() === p.id ? 'active' : ''}">
                                 <span class="product-name">${p.name}</span>
                                 <span class="product-meta">
                                     <span class="manufacturer">${manufacturerLabel(p.manufacturer)}</span>
@@ -554,7 +560,7 @@ function createProductCard(product) {
     // Always use root-absolute paths. Relative "products/..." from /products/*
     // resolves to /products/products/... and 404s in Search Console.
     return `
-        <a href="/products/${product.id}" class="related-product-card">
+        <a href="${productPagePath(product.id)}" class="related-product-card">
             <div class="related-product-info">
                 <div class="related-manufacturer">${manufacturerLabel(product.manufacturer)}</div>
                 <div class="related-name">${product.name}</div>

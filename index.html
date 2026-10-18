@@ -1436,8 +1436,11 @@
             noResults.style.display = 'none';
             resultCount.textContent = products.length;
 
-            productsContainer.innerHTML = products.map((product, index) => `
-                <a href="/products/${product.id}" class="product-card fade-in" style="animation-delay: ${index * 0.1}s;">
+            productsContainer.innerHTML = products.map((product, index) => {
+                // パスは連結で組み立て（未展開テンプレをソースに残さない）
+                const href = '/products/' + product.id;
+                return `
+                <a href="${href}" class="product-card fade-in" style="animation-delay: ${index * 0.1}s;">
                     <div style="position: relative;">
                         <img src="${product.image}" alt="${product.name}" class="product-image">
                     </div>
@@ -1463,7 +1466,8 @@
                         </div>
                     </div>
                 </a>
-            `).join('');
+            `;
+            }).join('');
         }
 
         // Filter products

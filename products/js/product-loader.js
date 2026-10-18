@@ -145,7 +145,7 @@ function setProductTitleHeading(element, metadata) {
 // 2. メタデータ更新
 function updateMetadata(data) {
     const metadata = buildSeoMetadata(data);
-    const productUrl = `https://nattoku-labo.com/products/${data.productId}`;
+    const productUrl = 'https://nattoku-labo.com/products/' + data.productId;
     document.title = metadata.title;
     
     const metaDesc = document.querySelector('meta[name="description"]');
