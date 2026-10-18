@@ -1152,7 +1152,9 @@ def write_ranking_page(cfg: dict, products: list[dict]) -> Path:
   <meta property="og:url" content="https://nattoku-labo.com/rankings/{slug}">
   <meta property="og:title" content="{html.escape(cfg["h1"])}">
   <meta property="og:description" content="{html.escape(cfg["og_description"])}">
+  <meta property="og:image" content="https://nattoku-labo.com/og-default.png">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://nattoku-labo.com/og-default.png">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
   <link rel="stylesheet" href="/products/css/navigation.css?v={NAV_V}">
@@ -1325,6 +1327,9 @@ def write_hub(entries: list[tuple[dict, int]]) -> Path:
   <meta property="og:url" content="https://nattoku-labo.com/rankings/">
   <meta property="og:title" content="ロボット掃除機ランキング一覧">
   <meta property="og:description" content="口コミ分析に基づくロボット掃除機の機能別ランキング一覧。">
+  <meta property="og:image" content="https://nattoku-labo.com/og-default.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://nattoku-labo.com/og-default.png">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
   <link rel="stylesheet" href="/products/css/navigation.css?v={NAV_V}">

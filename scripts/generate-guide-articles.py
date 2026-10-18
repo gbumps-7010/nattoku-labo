@@ -960,8 +960,10 @@ def render_page(art: dict) -> Path:
   <meta property="og:url" content="{url}">
   <meta property="og:title" content="{html.escape(art["title"])}">
   <meta property="og:description" content="{html.escape(art["description"])}">
+  <meta property="og:image" content="https://nattoku-labo.com/og-default.png">
   <meta property="article:modified_time" content="{UPDATED}">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://nattoku-labo.com/og-default.png">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
   <link rel="stylesheet" href="/products/css/navigation.css?v={NAV_V}">
@@ -2772,7 +2774,9 @@ def build_hub(built: list[dict]) -> Path:
   <meta property="og:url" content="{SITE}/guides/">
   <meta property="og:title" content="ロボット掃除機の選び方ガイド（目的別）">
   <meta property="og:description" content="目的別にロボット掃除機の選び方とおすすめ機種を口コミ分析で解説します。">
+  <meta property="og:image" content="https://nattoku-labo.com/og-default.png">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://nattoku-labo.com/og-default.png">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
   <link rel="stylesheet" href="/products/css/navigation.css?v={NAV_V}">

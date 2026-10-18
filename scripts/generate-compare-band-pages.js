@@ -1413,7 +1413,9 @@ function buildPage(band) {
   <meta property="og:url" content="https://nattoku-labo.com${band.urlPath}">
   <meta property="og:title" content="ロボット掃除機のおすすめ・口コミ徹底比較【${band.label}】">
   <meta property="og:description" content="${escapeHtml(desc)}">
+  <meta property="og:image" content="https://nattoku-labo.com/og-default.png">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://nattoku-labo.com/og-default.png">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
   ${STYLE}
 

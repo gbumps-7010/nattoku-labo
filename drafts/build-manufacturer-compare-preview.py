@@ -1225,7 +1225,9 @@ def build_manufacturer_page(meta: dict) -> Path:
   <meta property="og:url" content="{SITE}/makers/{slug}">
   <meta property="og:title" content="【全機種比較】{html.escape(brand_ja)}ロボット掃除機｜口コミでわかるおすすめの選び方">
   <meta property="og:description" content="{html.escape(brand_full)}のロボット掃除機{len(rows)}製品を口コミ分析データで横断比較します。">
+  <meta property="og:image" content="https://nattoku-labo.com/og-default.png">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://nattoku-labo.com/og-default.png">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
   <link rel="stylesheet" href="/products/css/navigation.css?v={NAV_V}">
@@ -1765,7 +1767,9 @@ def build_index_page(counts: dict[str, int]) -> Path:
   <meta property="og:url" content="{SITE}/makers/">
   <meta property="og:title" content="メーカー別全機種比較｜ロボット掃除機の口コミ徹底比較">
   <meta property="og:description" content="メーカーごとのロボット掃除機を全機種横断比較。口コミ分析データで選び方を整理します。">
+  <meta property="og:image" content="https://nattoku-labo.com/og-default.png">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://nattoku-labo.com/og-default.png">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
   <link rel="stylesheet" href="/products/css/navigation.css?v={NAV_V}">
