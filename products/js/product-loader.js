@@ -95,27 +95,33 @@ function buildSeoMetadata(data) {
     const kana = manufacturerKatakana(manufacturer);
     const eng = manufacturerEnglish(manufacturer);
     const label = seoProductLabel(data);
-    // カタカナ（英語） → ロボット掃除機口コミ比較 → 製品名
+    // 機種名を先頭に（検索は「DEEBOT T50S OMNI 口コミ」型が多い）
     const brandPart = eng ? `${kana}（${eng}）` : kana;
-    const title = `${brandPart}｜ロボット掃除機口コミ比較｜${label}`;
+    const title = `${label}の口コミ・評判｜${brandPart}｜ナットクLabo`;
+    const reviews = Number(data.totalReviews || data.reviewCount || 0);
+    const reviewBit = reviews > 0 ? `${reviews}件の口コミを分析。` : '口コミを分析。';
+    const fallbackDesc =
+        `${label}（${brandPart}）の${reviewBit}` +
+        'メリット・よくある不満・向いている人を公開します。';
 
     return {
         name,
         title,
         brandPart,
-        comparePart: 'ロボット掃除機口コミ比較',
+        comparePart: '口コミ・評判',
         labelPart: label,
-        description: data.metaDescription || `${name}の口コミ統計分析。詳細データを公開。`
+        description: data.metaDescription || fallbackDesc,
     };
 }
 
 /** H1を「｜」単位で改行できる構造にし、各ブロック内の変な改行を防ぐ */
 function setProductTitleHeading(element, metadata) {
     if (!element || !metadata) return;
+    // SERPタイトルと同じく機種名 → 口コミ・評判 → メーカー
     const parts = [
-        metadata.brandPart,
-        metadata.comparePart,
         metadata.labelPart,
+        metadata.comparePart,
+        metadata.brandPart,
     ].filter(Boolean);
     element.textContent = '';
     parts.forEach((part, idx) => {
