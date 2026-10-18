@@ -87,22 +87,27 @@ function displayName(data) {
 }
 
 function buildMetadata(data) {
+  // Keep in sync with products/js/product-loader.js buildSeoMetadata()
   const name = displayName(data);
   const kana = manufacturerKatakana(data.manufacturer);
   const eng = manufacturerEnglish(data.manufacturer);
   const label = seoProductLabel(data);
   const brandPart = eng ? `${kana}（${eng}）` : kana;
-  const comparePart = "ロボット掃除機口コミ比較";
-  const title = `${brandPart}｜${comparePart}｜${label}`;
-  const description = String(
-    data.metaDescription || `${name}の口コミ統計分析。詳細データを公開。`,
-  );
+  const comparePart = "口コミ・評判";
+  const title = `${label}の口コミ・評判｜${brandPart}｜ナットクLabo`;
+  const reviews = Number(data.totalReviews || data.reviewCount || 0);
+  const reviewBit = reviews > 0 ? `${reviews}件の口コミを分析。` : "口コミを分析。";
+  const fallbackDesc =
+    `${label}（${brandPart}）の${reviewBit}` +
+    "メリット・よくある不満・向いている人を公開します。";
+  const description = String(data.metaDescription || fallbackDesc);
 
   return { name, title, brandPart, comparePart, labelPart: label, description };
 }
 
 function buildProductTitleHtml(metadata) {
-  const parts = [metadata.brandPart, metadata.comparePart, metadata.labelPart].filter(
+  // SERPと同じ順: 機種名 → 口コミ・評判 → メーカー
+  const parts = [metadata.labelPart, metadata.comparePart, metadata.brandPart].filter(
     Boolean,
   );
   return parts
