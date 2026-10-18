@@ -126,17 +126,17 @@ const MAKER_COMPARE_PAGES = [
     { label: 'スイッチボット（SwitchBot）', href: '/makers/switchbot' },
 ];
 
-// 目的別の選び方ガイド
+// 目的別の選び方ガイド（GSC勝ち筋: 安い・メーカー・静音導線を前に）
 const GUIDE_PAGES = [
     { label: 'ガイド一覧', href: '/guides/' },
+    { label: '安い', href: '/guides/robot-vacuum-cheap' },
+    { label: 'おすすめメーカー', href: '/guides/robot-vacuum-makers' },
+    { label: 'コスパ', href: '/guides/robot-vacuum-cost-performance' },
+    { label: 'ペットがいる家', href: '/guides/robot-vacuum-pet' },
+    { label: '猫がいる家', href: '/guides/robot-vacuum-cat' },
     { label: '薄型', href: '/guides/robot-vacuum-thin' },
     { label: '高さ一覧', href: '/guides/robot-vacuum-height' },
     { label: '小さい', href: '/guides/robot-vacuum-small' },
-    { label: '安い', href: '/guides/robot-vacuum-cheap' },
-    { label: 'コスパ', href: '/guides/robot-vacuum-cost-performance' },
-    { label: '猫がいる家', href: '/guides/robot-vacuum-cat' },
-    { label: 'ペットがいる家', href: '/guides/robot-vacuum-pet' },
-    { label: 'おすすめメーカー', href: '/guides/robot-vacuum-makers' },
 ];
 
 function isMakerCompareActive(href) {
@@ -502,6 +502,18 @@ function createRelatedProductsSection() {
         p.price >= priceMin && p.price <= priceMax && p.id !== currentProductId
     ).slice(0, 4);
     
+    const makerSlugByKey = {
+        ECOVACS: 'ecovacs',
+        Anker: 'anker',
+        Dreame: 'dreame',
+        Roborock: 'roborock',
+        iRobot: 'irobot',
+        SwitchBot: 'switchbot',
+    };
+    const makerHref = makerSlugByKey[currentProduct.manufacturer]
+        ? '/makers/' + makerSlugByKey[currentProduct.manufacturer]
+        : '/makers/';
+
     const section = document.createElement('section');
     section.className = 'related-products-section';
     section.innerHTML = `
@@ -510,6 +522,43 @@ function createRelatedProductsSection() {
                 <i class="fas fa-lightbulb"></i>
                 他の製品も見てみる
             </h2>
+
+            <div class="related-group">
+                <h3 class="related-subtitle">
+                    <i class="fas fa-compass"></i>
+                    比較・ランキングへ
+                </h3>
+                <div class="related-products-grid" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr));">
+                    <a href="${makerHref}" class="related-product-card">
+                        <div class="related-product-info">
+                            <div class="related-manufacturer">メーカー比較</div>
+                            <div class="related-name">${manufacturerLabel(currentProduct.manufacturer)}の全機種</div>
+                        </div>
+                        <div class="related-arrow"><i class="fas fa-arrow-right"></i></div>
+                    </a>
+                    <a href="/rankings/quietness" class="related-product-card">
+                        <div class="related-product-info">
+                            <div class="related-manufacturer">ランキング</div>
+                            <div class="related-name">静音性で比較</div>
+                        </div>
+                        <div class="related-arrow"><i class="fas fa-arrow-right"></i></div>
+                    </a>
+                    <a href="/compare/robot-vacuum-under-5man" class="related-product-card">
+                        <div class="related-product-info">
+                            <div class="related-manufacturer">価格帯比較</div>
+                            <div class="related-name">5万円以下を見る</div>
+                        </div>
+                        <div class="related-arrow"><i class="fas fa-arrow-right"></i></div>
+                    </a>
+                    <a href="/guides/robot-vacuum-cheap" class="related-product-card">
+                        <div class="related-product-info">
+                            <div class="related-manufacturer">選び方ガイド</div>
+                            <div class="related-name">安いおすすめ</div>
+                        </div>
+                        <div class="related-arrow"><i class="fas fa-arrow-right"></i></div>
+                    </a>
+                </div>
+            </div>
             
             ${sameManufacturer.length > 0 ? `
                 <div class="related-group">
@@ -823,6 +872,17 @@ function createSiteExploreSection() {
                         <a class="site-explore-chip site-explore-chip-primary" href="/guides/"><i class="fas fa-book-open" aria-hidden="true"></i>選び方ガイド</a>
                         <a class="site-explore-chip" href="/about"><i class="fas fa-info-circle" aria-hidden="true"></i>サイトについて</a>
                         <a class="site-explore-chip" href="/privacy"><i class="fas fa-shield-alt" aria-hidden="true"></i>プライバシー</a>
+                    </div>
+                </div>
+
+                <div class="site-explore-group">
+                    <h3>よく見られる入口</h3>
+                    <div class="site-explore-chips">
+                        <a class="site-explore-chip site-explore-chip-primary" href="/makers/ecovacs"><i class="fas fa-industry" aria-hidden="true"></i>エコバックス比較</a>
+                        <a class="site-explore-chip site-explore-chip-primary" href="/makers/dreame"><i class="fas fa-industry" aria-hidden="true"></i>ドリーミー比較</a>
+                        <a class="site-explore-chip site-explore-chip-primary" href="/rankings/quietness"><i class="fas fa-volume-mute" aria-hidden="true"></i>静音ランキング</a>
+                        <a class="site-explore-chip site-explore-chip-primary" href="/compare/robot-vacuum-under-5man"><i class="fas fa-yen-sign" aria-hidden="true"></i>5万円以下比較</a>
+                        <a class="site-explore-chip site-explore-chip-primary" href="/guides/robot-vacuum-cheap"><i class="fas fa-tags" aria-hidden="true"></i>安いおすすめ</a>
                     </div>
                 </div>
 
