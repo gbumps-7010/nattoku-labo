@@ -1,0 +1,62 @@
+{
+  "checkedAt": "2026-10-18",
+  "smart": {
+    "app": "eufy / Eufy Clean",
+    "wifi": "2.4GHzのみ",
+    "voiceAssistants": [
+      "Alexa",
+      "Googleアシスタント"
+    ],
+    "matter": null
+  },
+  "productId": "eufy-robot-vacuum-omni-s1-pro",
+  "modelNumber": "T2080",
+  "sources": [
+    {
+      "label": "Anker Japan公式 Eufy Robot Vacuum Omni S1 Pro",
+      "url": "https://www.ankerjapan.com/products/t2080"
+    }
+  ],
+  "basic": {
+    "dimensionsMm": {
+      "w": 325,
+      "d": 347,
+      "h": 96
+    },
+    "weightKg": null,
+    "runtimeMin": 210,
+    "chargeTimeMin": null,
+    "batteryMah": null,
+    "releaseDate": null,
+    "warrantyMonths": 18
+  },
+  "cleaning": {
+    "suctionPa": 8000,
+    "dustboxMl": null,
+    "waterTankMl": null,
+    "mappingType": "TrueCourse（dToF LiDAR）",
+    "obstacleAvoidance": "3D MatrixEye",
+    "climbHeightMm": null,
+    "climbNote": null,
+    "noiseDb": null
+  },
+  "mop": {
+    "type": "ローラーモップ（約1kg加圧／オゾン水除菌）",
+    "liftMm": null,
+    "autoDetach": false
+  },
+  "station": {
+    "autoEmpty": true,
+    "mopWash": true,
+    "hotWaterWash": false,
+    "hotWaterNote": null,
+    "hotAirDry": true,
+    "autoRefillDrain": false,
+    "detergentDispenser": false,
+    "dustBagMl": null,
+    "cleanTankMl": null,
+    "dirtyTankMl": null,
+    "dimensionsMm": null,
+    "weightKg": null
+  }
+}

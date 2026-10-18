@@ -1,0 +1,71 @@
+{
+  "productId": "d20-ultra",
+  "modelNumber": null,
+  "checkedAt": "2026-10-18",
+  "sources": [
+    {
+      "label": "Dreame公式 製品ページ",
+      "url": "https://www.dreametech.jp/products/dreame-d20-ultra"
+    },
+    {
+      "label": "Dreame公式 アフターサービスポリシー（保証）",
+      "url": "https://www.dreametech.jp/pages/after-sales-policy"
+    }
+  ],
+  "basic": {
+    "dimensionsMm": {
+      "w": 350,
+      "d": 350,
+      "h": 104
+    },
+    "weightKg": 3.9,
+    "runtimeMin": 260,
+    "chargeTimeMin": null,
+    "batteryMah": 5200,
+    "releaseDate": null,
+    "warrantyMonths": 36
+  },
+  "cleaning": {
+    "suctionPa": 13000,
+    "dustboxMl": 320,
+    "waterTankMl": null,
+    "mappingType": "Smart Pathfinder（LiDAR / レーザー距離センサー）",
+    "obstacleAvoidance": "3DAdapt",
+    "climbHeightMm": null,
+    "climbNote": null,
+    "noiseDb": null
+  },
+  "mop": {
+    "type": "回転式（DuoScrub）",
+    "liftMm": 10.5,
+    "autoDetach": false
+  },
+  "station": {
+    "autoEmpty": true,
+    "mopWash": true,
+    "hotWaterWash": false,
+    "hotWaterNote": null,
+    "hotAirDry": true,
+    "autoRefillDrain": false,
+    "detergentDispenser": true,
+    "dustBagMl": 3200,
+    "cleanTankMl": 4500,
+    "dirtyTankMl": 4000,
+    "dimensionsMm": {
+      "w": 340,
+      "d": 457,
+      "h": 590
+    },
+    "weightKg": 8.3
+  },
+  "smart": {
+    "app": "Dreamehome",
+    "wifi": null,
+    "voiceAssistants": [
+      "Alexa",
+      "Googleアシスタント",
+      "Siri"
+    ],
+    "matter": null
+  }
+}

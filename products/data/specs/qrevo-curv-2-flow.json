@@ -1,0 +1,54 @@
+{
+  "productId": "qrevo-curv-2-flow",
+  "modelNumber": "QC2F02-04",
+  "checkedAt": "2026-10-18",
+  "sources": [
+    { "label": "Roborock公式 製品ページ", "url": "https://jp.roborock.com/pages/roborock-qrevo-curv-2-flow" },
+    { "label": "Roborock公式 プレスリリース（2026年4月28日）", "url": "https://prtimes.jp/main/html/rd/p/000000109.000085581.html" },
+    { "label": "価格.com スペック（型番・質量）", "url": "https://kakaku.com/item/K0001801119/" }
+  ],
+  "basic": {
+    "dimensionsMm": { "w": 353, "d": 353, "h": 119 },
+    "weightKg": 5.3,
+    "runtimeMin": null,
+    "chargeTimeMin": null,
+    "batteryMah": 5200,
+    "releaseDate": "2026-04",
+    "warrantyMonths": 12
+  },
+  "cleaning": {
+    "suctionPa": 20000,
+    "dustboxMl": 324,
+    "waterTankMl": null,
+    "mappingType": "LDSレーザー",
+    "obstacleAvoidance": "Reactive AI（ストラクチャードライト + RGBカメラ、200種以上／幅5cm・高さ3cm）",
+    "climbHeightMm": null,
+    "climbNote": null,
+    "noiseDb": 63
+  },
+  "mop": {
+    "type": "SpiraFlow ローラーモップ（最大220回転/分・15N加圧）",
+    "liftMm": 15,
+    "autoDetach": false
+  },
+  "station": {
+    "autoEmpty": true,
+    "mopWash": true,
+    "hotWaterWash": true,
+    "hotWaterNote": "75℃",
+    "hotAirDry": true,
+    "autoRefillDrain": false,
+    "detergentDispenser": false,
+    "dustBagMl": null,
+    "cleanTankMl": null,
+    "dirtyTankMl": null,
+    "dimensionsMm": { "w": 450, "d": 450, "h": 450 },
+    "weightKg": null
+  },
+  "smart": {
+    "app": "Roborock",
+    "wifi": "2.4GHzのみ",
+    "voiceAssistants": ["Alexa", "Googleアシスタント", "Siri"],
+    "matter": true
+  }
+}

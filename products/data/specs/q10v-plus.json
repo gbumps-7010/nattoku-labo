@@ -1,0 +1,53 @@
+{
+  "productId": "q10v-plus",
+  "modelNumber": "Q10VP52-04",
+  "checkedAt": "2026-10-18",
+  "sources": [
+    { "label": "Roborock公式 製品ページ", "url": "https://jp.roborock.com/pages/roborock-q10v" },
+    { "label": "Roborock公式 取扱説明書", "url": "https://jp.roborock.com/cdn/shop/t/7/assets/manual_q10vplus.pdf" }
+  ],
+  "basic": {
+    "dimensionsMm": { "w": 353, "d": 353, "h": 99 },
+    "weightKg": 4.0,
+    "runtimeMin": null,
+    "chargeTimeMin": 270,
+    "batteryMah": 5200,
+    "releaseDate": "2025-06",
+    "warrantyMonths": 12
+  },
+  "cleaning": {
+    "suctionPa": 10000,
+    "dustboxMl": null,
+    "waterTankMl": null,
+    "mappingType": "LDSレーザー",
+    "obstacleAvoidance": "Reactive Tech（幅5cm・高さ3cm以上）",
+    "climbHeightMm": null,
+    "climbNote": null,
+    "noiseDb": null
+  },
+  "mop": {
+    "type": "VibraRise 2.0（最大3000回/分振動）",
+    "liftMm": 8,
+    "autoDetach": false
+  },
+  "station": {
+    "autoEmpty": true,
+    "mopWash": false,
+    "hotWaterWash": false,
+    "hotWaterNote": null,
+    "hotAirDry": false,
+    "autoRefillDrain": false,
+    "detergentDispenser": false,
+    "dustBagMl": null,
+    "cleanTankMl": null,
+    "dirtyTankMl": null,
+    "dimensionsMm": { "w": 212, "d": 178, "h": 258.5 },
+    "weightKg": 2.16
+  },
+  "smart": {
+    "app": "Roborock",
+    "wifi": "2.4GHzのみ",
+    "voiceAssistants": ["Alexa", "Googleアシスタント"],
+    "matter": false
+  }
+}

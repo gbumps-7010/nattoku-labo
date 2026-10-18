@@ -1,0 +1,55 @@
+{
+  "productId": "s20",
+  "modelNumber": "W6602001",
+  "checkedAt": "2026-10-18",
+  "sources": [
+    { "label": "SwitchBot公式 製品ページ", "url": "https://www.switchbot.jp/products/switchbot-robot-vacuum-cleaner-s20" },
+    { "label": "SwitchBot公式 機能比較一覧", "url": "https://www.switchbot.jp/pages/s1-s1plus-functional-comparison" },
+    { "label": "SwitchBotサポート Matter対応", "url": "https://support.switch-bot.com/hc/ja/articles/27790636642199" },
+    { "label": "SwitchBot公式 保証ポリシー", "url": "https://www.switchbot.jp/pages/warranty-policy" }
+  ],
+  "basic": {
+    "dimensionsMm": { "w": 365, "d": 365, "h": 115 },
+    "weightKg": 5.5,
+    "runtimeMin": 250,
+    "chargeTimeMin": null,
+    "batteryMah": 4000,
+    "releaseDate": "2025-05",
+    "warrantyMonths": 12
+  },
+  "cleaning": {
+    "suctionPa": 10000,
+    "dustboxMl": 310,
+    "waterTankMl": 300,
+    "mappingType": "dToFレーザー・PSDセンサー",
+    "obstacleAvoidance": "AIカメラ障害物回避 + PSD距離センサー（100種類以上）",
+    "climbHeightMm": 20,
+    "climbNote": null,
+    "noiseDb": 60
+  },
+  "mop": {
+    "type": "ローラーモップ（RevoRoll、約300回転/分・1kg加圧）",
+    "liftMm": null,
+    "autoDetach": false
+  },
+  "station": {
+    "autoEmpty": true,
+    "mopWash": true,
+    "hotWaterWash": false,
+    "hotWaterNote": null,
+    "hotAirDry": true,
+    "autoRefillDrain": false,
+    "detergentDispenser": false,
+    "dustBagMl": 4000,
+    "cleanTankMl": 2700,
+    "dirtyTankMl": 2500,
+    "dimensionsMm": { "w": 380, "d": 223, "h": 460 },
+    "weightKg": 6.79
+  },
+  "smart": {
+    "app": "SwitchBot",
+    "wifi": "2.4GHzのみ",
+    "voiceAssistants": ["Alexa", "Googleアシスタント", "Siri"],
+    "matter": true
+  }
+}

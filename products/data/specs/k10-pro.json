@@ -1,0 +1,55 @@
+{
+  "productId": "k10-pro",
+  "modelNumber": "W3011026",
+  "checkedAt": "2026-10-18",
+  "sources": [
+    { "label": "SwitchBot公式 製品ページ", "url": "https://www.switchbot.jp/products/switchbot-robot-vacuum-cleaner-k10-pro" },
+    { "label": "SwitchBot公式 機能比較一覧", "url": "https://www.switchbot.jp/pages/s1-s1plus-functional-comparison" },
+    { "label": "SwitchBot公式 プレスリリース（2024年7月11日）", "url": "https://prtimes.jp/main/html/rd/p/000000076.000057002.html" },
+    { "label": "SwitchBot公式 保証ポリシー", "url": "https://www.switchbot.jp/pages/warranty-policy" }
+  ],
+  "basic": {
+    "dimensionsMm": { "w": 248, "d": 248, "h": 92 },
+    "weightKg": 2.3,
+    "runtimeMin": 150,
+    "chargeTimeMin": 360,
+    "batteryMah": 3200,
+    "releaseDate": "2024-07",
+    "warrantyMonths": 24
+  },
+  "cleaning": {
+    "suctionPa": 3000,
+    "dustboxMl": 200,
+    "waterTankMl": null,
+    "mappingType": "LDSレーザー",
+    "obstacleAvoidance": "PSD距離センサー",
+    "climbHeightMm": 20,
+    "climbNote": null,
+    "noiseDb": 45
+  },
+  "mop": {
+    "type": "使い捨てお掃除シート",
+    "liftMm": null,
+    "autoDetach": false
+  },
+  "station": {
+    "autoEmpty": true,
+    "mopWash": false,
+    "hotWaterWash": false,
+    "hotWaterNote": null,
+    "hotAirDry": false,
+    "autoRefillDrain": false,
+    "detergentDispenser": false,
+    "dustBagMl": 4000,
+    "cleanTankMl": null,
+    "dirtyTankMl": null,
+    "dimensionsMm": { "w": 261, "d": 210, "h": 323 },
+    "weightKg": null
+  },
+  "smart": {
+    "app": "SwitchBot",
+    "wifi": "2.4GHzのみ",
+    "voiceAssistants": ["Alexa", "Googleアシスタント", "Siri"],
+    "matter": true
+  }
+}

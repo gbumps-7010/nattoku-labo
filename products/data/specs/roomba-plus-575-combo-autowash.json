@@ -1,0 +1,54 @@
+{
+  "productId": "roomba-plus-575-combo-autowash",
+  "modelNumber": "R285060",
+  "checkedAt": "2026-10-18",
+  "sources": [
+    { "label": "iRobot公式オンラインストア 製品ページ", "url": "https://store.irobot-jp.com/item/R285060.html" },
+    { "label": "iRobot公式（米国）製品ページ", "url": "https://www.irobot.com/en_US/roomba-plus-575-combo/R285220.html" },
+    { "label": "iRobot公式 製品一覧", "url": "https://www.irobot-jp.com/product/" }
+  ],
+  "basic": {
+    "dimensionsMm": { "w": 298, "d": 303, "h": 84 },
+    "weightKg": 3.1,
+    "runtimeMin": null,
+    "chargeTimeMin": null,
+    "batteryMah": null,
+    "releaseDate": "2026-05",
+    "warrantyMonths": 12
+  },
+  "cleaning": {
+    "suctionPa": 25000,
+    "dustboxMl": null,
+    "waterTankMl": null,
+    "mappingType": "ClearView™ Pro LiDAR（3Dマップ対応）",
+    "obstacleAvoidance": "PrecisionVision™ AI + ClearView™ Pro LiDAR",
+    "climbHeightMm": 35,
+    "climbNote": null,
+    "noiseDb": null
+  },
+  "mop": {
+    "type": "DualClean™ モップパッド with PerfectEdge®（約180回転/分・スマートスクラブ対応）",
+    "liftMm": 10,
+    "autoDetach": false
+  },
+  "station": {
+    "autoEmpty": true,
+    "mopWash": true,
+    "hotWaterWash": true,
+    "hotWaterNote": "75℃温水洗浄／45℃温風乾燥",
+    "hotAirDry": true,
+    "autoRefillDrain": false,
+    "detergentDispenser": true,
+    "dustBagMl": null,
+    "cleanTankMl": null,
+    "dirtyTankMl": null,
+    "dimensionsMm": { "w": 330, "d": 340, "h": 485 },
+    "weightKg": null
+  },
+  "smart": {
+    "app": "Roomba Home",
+    "wifi": "2.4GHzのみ",
+    "voiceAssistants": ["Alexa", "Googleアシスタント", "Siri"],
+    "matter": null
+  }
+}

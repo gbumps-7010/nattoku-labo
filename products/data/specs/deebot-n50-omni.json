@@ -1,0 +1,75 @@
+{
+  "productId": "deebot-n50-omni",
+  "modelNumber": "DLX88",
+  "checkedAt": "2026-10-18",
+  "sources": [
+    {
+      "label": "ECOVACS公式 DEEBOT N50 OMNI",
+      "url": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/deebot-n50-omni-white"
+    },
+    {
+      "label": "ECOVACS公式 取扱説明書（N50 OMNI）",
+      "url": "https://site-static.ecovacs.com/upload/file/support/2026/07/30/055849_9214$DEEBOTN50OMNIInstructionManual.pdf"
+    },
+    {
+      "label": "ECOVACS公式 保証期間について",
+      "url": "https://help.ecovacs.com/jp/support/warranty"
+    },
+    {
+      "label": "ECOVACS公式 Q&A（Wi-Fi 2.4GHz）",
+      "url": "https://help.ecovacs.com/jp/support/question"
+    }
+  ],
+  "basic": {
+    "dimensionsMm": {
+      "w": 353,
+      "d": 352,
+      "h": 100.35
+    },
+    "weightKg": null,
+    "runtimeMin": 180,
+    "chargeTimeMin": 240,
+    "batteryMah": 5200,
+    "releaseDate": "2026-07",
+    "warrantyMonths": 12
+  },
+  "cleaning": {
+    "suctionPa": 25000,
+    "dustboxMl": 260,
+    "waterTankMl": 70,
+    "mappingType": "TrueMapping 2.0",
+    "obstacleAvoidance": "TrueDetect 3D（構造光）",
+    "climbHeightMm": 20,
+    "climbNote": null,
+    "noiseDb": 65
+  },
+  "mop": {
+    "type": "回転式（OZMO Turbo 2.0）",
+    "liftMm": 9,
+    "autoDetach": false
+  },
+  "station": {
+    "autoEmpty": true,
+    "mopWash": true,
+    "hotWaterWash": false,
+    "hotWaterNote": null,
+    "hotAirDry": true,
+    "autoRefillDrain": false,
+    "detergentDispenser": false,
+    "dustBagMl": 3000,
+    "cleanTankMl": 4000,
+    "dirtyTankMl": 4000,
+    "dimensionsMm": {
+      "w": 350,
+      "d": 477,
+      "h": 533
+    },
+    "weightKg": null
+  },
+  "smart": {
+    "app": "ECOVACS HOME",
+    "wifi": "2.4GHzのみ",
+    "voiceAssistants": [],
+    "matter": false
+  }
+}

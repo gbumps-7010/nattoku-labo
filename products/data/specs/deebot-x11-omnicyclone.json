@@ -1,0 +1,77 @@
+{
+  "productId": "deebot-x11-omnicyclone",
+  "modelNumber": "DEX99-10EE",
+  "checkedAt": "2026-10-18",
+  "sources": [
+    {
+      "label": "ECOVACS公式 DEEBOT X11 OmniCyclone",
+      "url": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/deebot-x11-omnicyclone"
+    },
+    {
+      "label": "ECOVACS公式 DEEBOT X11 OmniCyclone（本体サイズ・重量・SG）",
+      "url": "https://www.ecovacs.com/sg/deebot-robotic-vacuum-cleaner/deebot-x11-omnicyclone"
+    },
+    {
+      "label": "ECOVACS公式 保証期間について",
+      "url": "https://help.ecovacs.com/jp/support/warranty"
+    },
+    {
+      "label": "ECOVACS公式 Q&A（Wi-Fi 2.4GHz）",
+      "url": "https://help.ecovacs.com/jp/support/question"
+    }
+  ],
+  "basic": {
+    "dimensionsMm": {
+      "w": 353,
+      "d": 351,
+      "h": 98
+    },
+    "weightKg": 5.3,
+    "runtimeMin": 200,
+    "chargeTimeMin": 200,
+    "batteryMah": 6400,
+    "releaseDate": null,
+    "warrantyMonths": 24
+  },
+  "cleaning": {
+    "suctionPa": 19500,
+    "dustboxMl": 220,
+    "waterTankMl": 205,
+    "mappingType": "dToF / AINA系ナビゲーション",
+    "obstacleAvoidance": "AIVI 3D 3.0 Omni-Approach",
+    "climbHeightMm": 24,
+    "climbNote": "TruePass 4WD。単段最大24mm、連続段差最大40mm",
+    "noiseDb": 62
+  },
+  "mop": {
+    "type": "ローラー式（OZMOローラー 2.0、最大200回転/分）",
+    "liftMm": 10,
+    "autoDetach": false
+  },
+  "station": {
+    "autoEmpty": true,
+    "mopWash": true,
+    "hotWaterWash": true,
+    "hotWaterNote": "75℃",
+    "hotAirDry": true,
+    "autoRefillDrain": false,
+    "detergentDispenser": true,
+    "dustBagMl": 1600,
+    "cleanTankMl": 3200,
+    "dirtyTankMl": 2700,
+    "dimensionsMm": {
+      "w": 380,
+      "d": 335,
+      "h": 465
+    },
+    "weightKg": 10.3
+  },
+  "smart": {
+    "app": "ECOVACS HOME",
+    "wifi": "2.4GHzのみ",
+    "voiceAssistants": [
+      "YIKO"
+    ],
+    "matter": false
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "productId": "deebot-t50-omni",
+  "modelNumber": "DDX57",
+  "checkedAt": "2026-10-18",
+  "sources": [
+    {
+      "label": "ECOVACS公式 DEEBOT T50 OMNI",
+      "url": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/deebot-t50-omni-white"
+    },
+    {
+      "label": "ECOVACS公式 保証期間について",
+      "url": "https://help.ecovacs.com/jp/support/warranty"
+    },
+    {
+      "label": "ECOVACS公式 Q&A（Wi-Fi 2.4GHz）",
+      "url": "https://help.ecovacs.com/jp/support/question"
+    }
+  ],
+  "basic": {
+    "dimensionsMm": {
+      "w": 352.7,
+      "d": 351.6,
+      "h": 81
+    },
+    "weightKg": null,
+    "runtimeMin": 225,
+    "chargeTimeMin": 195,
+    "batteryMah": 5200,
+    "releaseDate": null,
+    "warrantyMonths": 12
+  },
+  "cleaning": {
+    "suctionPa": 15000,
+    "dustboxMl": 260,
+    "waterTankMl": 55,
+    "mappingType": "TrueMapping 2.0（内蔵dToF LiDAR）",
+    "obstacleAvoidance": "AIVI 3D + TrueDetect 3D",
+    "climbHeightMm": null,
+    "climbNote": null,
+    "noiseDb": 70
+  },
+  "mop": {
+    "type": "回転式（OZMO Turbo 2.0）",
+    "liftMm": 9,
+    "autoDetach": false
+  },
+  "station": {
+    "autoEmpty": true,
+    "mopWash": true,
+    "hotWaterWash": true,
+    "hotWaterNote": "70℃",
+    "hotAirDry": true,
+    "autoRefillDrain": false,
+    "detergentDispenser": false,
+    "dustBagMl": 3000,
+    "cleanTankMl": 4000,
+    "dirtyTankMl": 4000,
+    "dimensionsMm": {
+      "w": 350,
+      "d": 477,
+      "h": 533
+    },
+    "weightKg": null
+  },
+  "smart": {
+    "app": "ECOVACS HOME",
+    "wifi": "2.4GHzのみ",
+    "voiceAssistants": [
+      "YIKO",
+      "Alexa",
+      "Googleアシスタント"
+    ],
+    "matter": false
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "productId": "roomba-105-combo-autoempty",
+  "modelNumber": "Y351060",
+  "checkedAt": "2026-10-18",
+  "sources": [
+    { "label": "iRobot公式オンラインストア 製品ページ", "url": "https://store.irobot-jp.com/item/Y351060.html" },
+    { "label": "iRobot公式 製品ページ（105 Combo + AutoEmpty）", "url": "https://www.irobot-jp.com/roombacombo/105_AE/" },
+    { "label": "iRobot公式 プレスリリース（2025年4月16日）", "url": "https://www.irobot-jp.com/press/pdf/20250416_2.pdf" }
+  ],
+  "basic": {
+    "dimensionsMm": { "w": 335, "d": 336, "h": 104 },
+    "weightKg": 2.92,
+    "runtimeMin": null,
+    "chargeTimeMin": 240,
+    "batteryMah": null,
+    "releaseDate": "2025-04",
+    "warrantyMonths": 12
+  },
+  "cleaning": {
+    "suctionPa": null,
+    "dustboxMl": null,
+    "waterTankMl": null,
+    "mappingType": "ClearView™ LiDAR",
+    "obstacleAvoidance": "ClearView™ LiDAR（障害物回避）",
+    "climbHeightMm": null,
+    "climbNote": null,
+    "noiseDb": null
+  },
+  "mop": {
+    "type": "マイクロファイバーモップパッド（スマートスクラブ対応／パッドプレート着脱）",
+    "liftMm": null,
+    "autoDetach": false
+  },
+  "station": {
+    "autoEmpty": true,
+    "mopWash": false,
+    "hotWaterWash": false,
+    "hotWaterNote": null,
+    "hotAirDry": false,
+    "autoRefillDrain": false,
+    "detergentDispenser": false,
+    "dustBagMl": null,
+    "cleanTankMl": null,
+    "dirtyTankMl": null,
+    "dimensionsMm": { "w": 213, "d": 171, "h": 293 },
+    "weightKg": 3.07
+  },
+  "smart": {
+    "app": "Roomba Home",
+    "wifi": "2.4GHzのみ",
+    "voiceAssistants": ["Alexa", "Googleアシスタント", "Siri"],
+    "matter": null
+  }
+}

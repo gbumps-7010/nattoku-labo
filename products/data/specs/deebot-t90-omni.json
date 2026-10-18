@@ -1,0 +1,71 @@
+{
+  "productId": "deebot-t90-omni",
+  "modelNumber": "DEX95",
+  "checkedAt": "2026-10-18",
+  "sources": [
+    {
+      "label": "ECOVACS公式 DEEBOT T90 OMNI",
+      "url": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/deebot-t90-omni"
+    },
+    {
+      "label": "ECOVACS公式 DEEBOT T90 OMNI（本体サイズ・DE）",
+      "url": "https://www.ecovacs.com/de/shop/deebot-robotic-vacuum-cleaner/deebot-t90-omni-white"
+    },
+    {
+      "label": "ECOVACS公式 保証期間について",
+      "url": "https://help.ecovacs.com/jp/support/warranty"
+    },
+    {
+      "label": "ECOVACS公式 Q&A（Wi-Fi 2.4GHz）",
+      "url": "https://help.ecovacs.com/jp/support/question"
+    }
+  ],
+  "basic": {
+    "dimensionsMm": {
+      "w": 353,
+      "d": 351,
+      "h": 95
+    },
+    "weightKg": null,
+    "runtimeMin": 260,
+    "chargeTimeMin": 210,
+    "batteryMah": 6400,
+    "releaseDate": "2026-02",
+    "warrantyMonths": 12
+  },
+  "cleaning": {
+    "suctionPa": 30000,
+    "dustboxMl": 250,
+    "waterTankMl": null,
+    "mappingType": "AINA 2.0インテリジェントナビゲーション",
+    "obstacleAvoidance": "AIVI 3D 4.0",
+    "climbHeightMm": 24,
+    "climbNote": "TruePass 4WD。単段最大24mm、連続段差最大40mm",
+    "noiseDb": 60
+  },
+  "mop": {
+    "type": "ローラー式（OZMO ROLLER 3.0、最大200回転/分）",
+    "liftMm": null,
+    "autoDetach": false
+  },
+  "station": {
+    "autoEmpty": true,
+    "mopWash": true,
+    "hotWaterWash": true,
+    "hotWaterNote": "75℃",
+    "hotAirDry": true,
+    "autoRefillDrain": false,
+    "detergentDispenser": false,
+    "dustBagMl": null,
+    "cleanTankMl": 4000,
+    "dirtyTankMl": 2200,
+    "dimensionsMm": null,
+    "weightKg": null
+  },
+  "smart": {
+    "app": "ECOVACS HOME",
+    "wifi": "2.4GHzのみ",
+    "voiceAssistants": [],
+    "matter": false
+  }
+}

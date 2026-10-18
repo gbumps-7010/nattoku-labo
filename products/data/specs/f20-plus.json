@@ -1,0 +1,71 @@
+{
+  "productId": "f20-plus",
+  "modelNumber": null,
+  "checkedAt": "2026-10-18",
+  "sources": [
+    {
+      "label": "Dreame公式 製品ページ",
+      "url": "https://www.dreametech.jp/products/f20-plus-robot-vacuum"
+    },
+    {
+      "label": "Dreame公式 アフターサービスポリシー（保証）",
+      "url": "https://www.dreametech.jp/pages/after-sales-policy"
+    }
+  ],
+  "basic": {
+    "dimensionsMm": {
+      "w": 325,
+      "d": 325,
+      "h": 94.7
+    },
+    "weightKg": 2.59,
+    "runtimeMin": 150,
+    "chargeTimeMin": null,
+    "batteryMah": 3200,
+    "releaseDate": null,
+    "warrantyMonths": 36
+  },
+  "cleaning": {
+    "suctionPa": 20000,
+    "dustboxMl": 220,
+    "waterTankMl": 280,
+    "mappingType": "LiDAR（Smart Pathfinder）",
+    "obstacleAvoidance": "LiDAR（Smart Pathfinder）",
+    "climbHeightMm": null,
+    "climbNote": null,
+    "noiseDb": null
+  },
+  "mop": {
+    "type": "フラットモップ",
+    "liftMm": null,
+    "autoDetach": false
+  },
+  "station": {
+    "autoEmpty": true,
+    "mopWash": false,
+    "hotWaterWash": false,
+    "hotWaterNote": null,
+    "hotAirDry": false,
+    "autoRefillDrain": false,
+    "detergentDispenser": false,
+    "dustBagMl": 4000,
+    "cleanTankMl": null,
+    "dirtyTankMl": null,
+    "dimensionsMm": {
+      "w": 293,
+      "d": 201,
+      "h": 266.5
+    },
+    "weightKg": 2.65
+  },
+  "smart": {
+    "app": "Dreamehome",
+    "wifi": null,
+    "voiceAssistants": [
+      "Alexa",
+      "Googleアシスタント",
+      "Siri"
+    ],
+    "matter": null
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "productId": "l40-ultra-ae",
+  "modelNumber": "RLL77SE",
+  "checkedAt": "2026-10-18",
+  "sources": [
+    {
+      "label": "Dreame公式 製品ページ",
+      "url": "https://www.dreametech.jp/products/l40-ultra-ae"
+    },
+    {
+      "label": "Dreame公式 アフターサービスポリシー（保証）",
+      "url": "https://www.dreametech.jp/pages/after-sales-policy"
+    }
+  ],
+  "basic": {
+    "dimensionsMm": {
+      "w": 350,
+      "d": 350,
+      "h": 97
+    },
+    "weightKg": 4.0,
+    "runtimeMin": 180,
+    "chargeTimeMin": null,
+    "batteryMah": 5200,
+    "releaseDate": null,
+    "warrantyMonths": 36
+  },
+  "cleaning": {
+    "suctionPa": 19000,
+    "dustboxMl": 395,
+    "waterTankMl": null,
+    "mappingType": "LDS",
+    "obstacleAvoidance": "インテリジェント RGB + 3D構造化光（最大120種）",
+    "climbHeightMm": null,
+    "climbNote": null,
+    "noiseDb": null
+  },
+  "mop": {
+    "type": "回転式（DuoScrub / MopExtend）",
+    "liftMm": 10.5,
+    "autoDetach": null
+  },
+  "station": {
+    "autoEmpty": true,
+    "mopWash": true,
+    "hotWaterWash": true,
+    "hotWaterNote": "75℃",
+    "hotAirDry": true,
+    "autoRefillDrain": false,
+    "detergentDispenser": true,
+    "dustBagMl": null,
+    "cleanTankMl": 4500,
+    "dirtyTankMl": 4000,
+    "dimensionsMm": {
+      "w": 457,
+      "d": 340,
+      "h": 590
+    },
+    "weightKg": 9.0
+  },
+  "smart": {
+    "app": "Dreamehome",
+    "wifi": null,
+    "voiceAssistants": [
+      "Alexa",
+      "Googleアシスタント",
+      "Siri"
+    ],
+    "matter": null
+  }
+}

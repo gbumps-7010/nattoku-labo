@@ -1,0 +1,79 @@
+{
+  "productId": "x30-ultra",
+  "modelNumber": "RLX56CE",
+  "checkedAt": "2026-10-18",
+  "sources": [
+    {
+      "label": "Dreame Global X30 Ultra 製品ページ",
+      "url": "https://global.dreametech.com/products/x30-ultra"
+    },
+    {
+      "label": "Dreame公式 プレスリリース（Makuake開始）",
+      "url": "https://prtimes.jp/main/html/rd/p/000000038.000116327.html"
+    },
+    {
+      "label": "Dreame公式 取扱説明書一覧",
+      "url": "https://www.dreametech.jp/pages/user-manual"
+    },
+    {
+      "label": "Dreame公式 アフターサービスポリシー（保証）",
+      "url": "https://www.dreametech.jp/pages/after-sales-policy"
+    }
+  ],
+  "basic": {
+    "dimensionsMm": {
+      "w": 350,
+      "d": 350,
+      "h": 97
+    },
+    "weightKg": null,
+    "runtimeMin": 260,
+    "chargeTimeMin": 270,
+    "batteryMah": 6400,
+    "releaseDate": "2024-03",
+    "warrantyMonths": 12
+  },
+  "cleaning": {
+    "suctionPa": 8300,
+    "dustboxMl": 350,
+    "waterTankMl": null,
+    "mappingType": "LDS",
+    "obstacleAvoidance": "AI + 3D Structured Light（最大70種）",
+    "climbHeightMm": null,
+    "climbNote": null,
+    "noiseDb": null
+  },
+  "mop": {
+    "type": "回転式（MopExtend RoboSwing）",
+    "liftMm": 10.5,
+    "autoDetach": true
+  },
+  "station": {
+    "autoEmpty": true,
+    "mopWash": true,
+    "hotWaterWash": true,
+    "hotWaterNote": "60℃",
+    "hotAirDry": true,
+    "autoRefillDrain": false,
+    "detergentDispenser": true,
+    "dustBagMl": 3200,
+    "cleanTankMl": 4500,
+    "dirtyTankMl": 4000,
+    "dimensionsMm": {
+      "w": 340,
+      "d": 457,
+      "h": 590
+    },
+    "weightKg": null
+  },
+  "smart": {
+    "app": "Dreamehome",
+    "wifi": null,
+    "voiceAssistants": [
+      "Alexa",
+      "Googleアシスタント",
+      "Siri"
+    ],
+    "matter": null
+  }
+}

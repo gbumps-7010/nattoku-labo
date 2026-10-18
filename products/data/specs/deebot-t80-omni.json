@@ -1,0 +1,71 @@
+{
+  "productId": "deebot-t80-omni",
+  "modelNumber": "DEX68",
+  "checkedAt": "2026-10-18",
+  "sources": [
+    {
+      "label": "ECOVACS公式 DEEBOT T80 OMNI",
+      "url": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/deebot-t80-omni-white"
+    },
+    {
+      "label": "ECOVACS公式 保証期間について",
+      "url": "https://help.ecovacs.com/jp/support/warranty"
+    },
+    {
+      "label": "ECOVACS公式 Q&A（Wi-Fi 2.4GHz）",
+      "url": "https://help.ecovacs.com/jp/support/question"
+    }
+  ],
+  "basic": {
+    "dimensionsMm": {
+      "w": 353,
+      "d": 351.5,
+      "h": 98
+    },
+    "weightKg": null,
+    "runtimeMin": 213,
+    "chargeTimeMin": 277,
+    "batteryMah": 6400,
+    "releaseDate": "2025-07",
+    "warrantyMonths": 12
+  },
+  "cleaning": {
+    "suctionPa": 18000,
+    "dustboxMl": 220,
+    "waterTankMl": 200,
+    "mappingType": "AINA 2.0（2D/3Dハイブリッド）",
+    "obstacleAvoidance": "AIVI 3D 3.0 Omni-Approach",
+    "climbHeightMm": null,
+    "climbNote": null,
+    "noiseDb": 65
+  },
+  "mop": {
+    "type": "ローラー式（OZMOローラー定圧式常時洗浄、最大200回転/分）",
+    "liftMm": 10,
+    "autoDetach": false
+  },
+  "station": {
+    "autoEmpty": true,
+    "mopWash": true,
+    "hotWaterWash": true,
+    "hotWaterNote": "40～75℃",
+    "hotAirDry": true,
+    "autoRefillDrain": false,
+    "detergentDispenser": false,
+    "dustBagMl": 3000,
+    "cleanTankMl": 4000,
+    "dirtyTankMl": 2200,
+    "dimensionsMm": {
+      "w": 338,
+      "d": 459,
+      "h": 500
+    },
+    "weightKg": null
+  },
+  "smart": {
+    "app": "ECOVACS HOME",
+    "wifi": "2.4GHzのみ",
+    "voiceAssistants": [],
+    "matter": false
+  }
+}

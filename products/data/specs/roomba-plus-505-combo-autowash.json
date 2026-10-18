@@ -1,0 +1,54 @@
+{
+  "productId": "roomba-plus-505-combo-autowash",
+  "modelNumber": "N185060",
+  "checkedAt": "2026-10-18",
+  "sources": [
+    { "label": "iRobot公式オンラインストア 製品ページ", "url": "https://store.irobot-jp.com/item/N185060.html" },
+    { "label": "iRobot公式 製品ページ（Plus 505 Combo）", "url": "https://www.irobot-jp.com/roombacombo/505/" },
+    { "label": "iRobot公式 プレスリリース（2025年4月16日）", "url": "https://www.irobot-jp.com/press/pdf/20250416_3.pdf" }
+  ],
+  "basic": {
+    "dimensionsMm": { "w": 351, "d": 357, "h": 106 },
+    "weightKg": 4.3,
+    "runtimeMin": null,
+    "chargeTimeMin": 240,
+    "batteryMah": null,
+    "releaseDate": "2025-04",
+    "warrantyMonths": 12
+  },
+  "cleaning": {
+    "suctionPa": null,
+    "dustboxMl": null,
+    "waterTankMl": null,
+    "mappingType": "ClearView™ Pro LiDAR",
+    "obstacleAvoidance": "PrecisionVision™ AI + ClearView™ Pro LiDAR（LiDAR＋カメラ＋LEDライト）",
+    "climbHeightMm": null,
+    "climbNote": null,
+    "noiseDb": null
+  },
+  "mop": {
+    "type": "DualClean™ モップパッド with PerfectEdge®（スマートスクラブ対応）",
+    "liftMm": 10,
+    "autoDetach": false
+  },
+  "station": {
+    "autoEmpty": true,
+    "mopWash": true,
+    "hotWaterWash": false,
+    "hotWaterNote": null,
+    "hotAirDry": true,
+    "autoRefillDrain": false,
+    "detergentDispenser": false,
+    "dustBagMl": null,
+    "cleanTankMl": null,
+    "dirtyTankMl": null,
+    "dimensionsMm": { "w": 315, "d": 450, "h": 470 },
+    "weightKg": 6.3
+  },
+  "smart": {
+    "app": "Roomba Home",
+    "wifi": "2.4GHz / 5GHz",
+    "voiceAssistants": ["Alexa", "Googleアシスタント", "Siri"],
+    "matter": null
+  }
+}

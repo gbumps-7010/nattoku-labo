@@ -1,0 +1,62 @@
+{
+  "checkedAt": "2026-10-18",
+  "smart": {
+    "app": "eufy / Eufy Clean",
+    "wifi": "2.4GHzのみ",
+    "voiceAssistants": [
+      "Alexa",
+      "Googleアシスタント"
+    ],
+    "matter": null
+  },
+  "productId": "eufy-robovac-g30-hybrid",
+  "modelNumber": "T2253514",
+  "sources": [
+    {
+      "label": "Anker Japan公式 Eufy RoboVac G30 Hybrid",
+      "url": "https://www.ankerjapan.com/products/t2253"
+    }
+  ],
+  "basic": {
+    "dimensionsMm": {
+      "w": 325,
+      "d": 325,
+      "h": 72
+    },
+    "weightKg": 2.9,
+    "runtimeMin": 100,
+    "chargeTimeMin": 330,
+    "batteryMah": null,
+    "releaseDate": "2023-05",
+    "warrantyMonths": 18
+  },
+  "cleaning": {
+    "suctionPa": 2000,
+    "dustboxMl": null,
+    "waterTankMl": 130,
+    "mappingType": "スマート・ダイナミック・ナビゲーション 2.0（ジャイロ）",
+    "obstacleAvoidance": null,
+    "climbHeightMm": null,
+    "climbNote": null,
+    "noiseDb": null
+  },
+  "mop": {
+    "type": "通常モップ",
+    "liftMm": null,
+    "autoDetach": false
+  },
+  "station": {
+    "autoEmpty": false,
+    "mopWash": false,
+    "hotWaterWash": false,
+    "hotWaterNote": null,
+    "hotAirDry": false,
+    "autoRefillDrain": false,
+    "detergentDispenser": false,
+    "dustBagMl": null,
+    "cleanTankMl": null,
+    "dirtyTankMl": null,
+    "dimensionsMm": null,
+    "weightKg": null
+  }
+}

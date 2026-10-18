@@ -1,0 +1,67 @@
+{
+  "productId": "deebot-n30",
+  "modelNumber": "YDLX11-32DF",
+  "checkedAt": "2026-10-18",
+  "sources": [
+    {
+      "label": "ECOVACS公式 DEEBOT N30",
+      "url": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/deebot-n30-black"
+    },
+    {
+      "label": "ECOVACS公式 保証期間について",
+      "url": "https://help.ecovacs.com/jp/support/warranty"
+    },
+    {
+      "label": "ECOVACS公式 Q&A（Wi-Fi 2.4GHz）",
+      "url": "https://help.ecovacs.com/jp/support/question"
+    }
+  ],
+  "basic": {
+    "dimensionsMm": {
+      "w": 353,
+      "d": 350,
+      "h": 104
+    },
+    "weightKg": null,
+    "runtimeMin": 350,
+    "chargeTimeMin": 390,
+    "batteryMah": 5200,
+    "releaseDate": "2025-09",
+    "warrantyMonths": 12
+  },
+  "cleaning": {
+    "suctionPa": 10000,
+    "dustboxMl": 350,
+    "waterTankMl": 300,
+    "mappingType": "TrueMapping（LDS）",
+    "obstacleAvoidance": "LDS + 赤外線センサー",
+    "climbHeightMm": 20,
+    "climbNote": null,
+    "noiseDb": 68
+  },
+  "mop": {
+    "type": "振動/水拭き（本体水タンク）",
+    "liftMm": null,
+    "autoDetach": false
+  },
+  "station": {
+    "autoEmpty": false,
+    "mopWash": false,
+    "hotWaterWash": false,
+    "hotWaterNote": null,
+    "hotAirDry": false,
+    "autoRefillDrain": false,
+    "detergentDispenser": false,
+    "dustBagMl": null,
+    "cleanTankMl": null,
+    "dirtyTankMl": null,
+    "dimensionsMm": null,
+    "weightKg": null
+  },
+  "smart": {
+    "app": "ECOVACS HOME",
+    "wifi": "2.4GHzのみ",
+    "voiceAssistants": [],
+    "matter": false
+  }
+}

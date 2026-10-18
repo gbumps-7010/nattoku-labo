@@ -1,0 +1,55 @@
+{
+  "productId": "qrevo-l",
+  "modelNumber": "QRL02-04",
+  "checkedAt": "2026-10-18",
+  "sources": [
+    { "label": "Roborock公式 製品ページ", "url": "https://jp.roborock.com/pages/roborock-qrevo-l" },
+    { "label": "Roborock公式 取扱説明書", "url": "https://jp.roborock.com/cdn/shop/t/7/assets/manual_qrevol.pdf" },
+    { "label": "Roborock公式 プレスリリース（2025年6月4日）", "url": "https://prtimes.jp/main/html/rd/p/000000079.000085581.html" },
+    { "label": "公式販売店 トレテク！ソフトバンクセレクション", "url": "https://shop.softbankselection.jp/item/6936905903426.html" }
+  ],
+  "basic": {
+    "dimensionsMm": { "w": 350, "d": 353.8, "h": 96.6 },
+    "weightKg": 3.71,
+    "runtimeMin": 180,
+    "chargeTimeMin": null,
+    "batteryMah": 5200,
+    "releaseDate": "2025-06",
+    "warrantyMonths": 12
+  },
+  "cleaning": {
+    "suctionPa": 10000,
+    "dustboxMl": 330,
+    "waterTankMl": null,
+    "mappingType": "LDSレーザー",
+    "obstacleAvoidance": "ストラクチャードライト（幅5cm・高さ3cm以上）",
+    "climbHeightMm": null,
+    "climbNote": null,
+    "noiseDb": 65
+  },
+  "mop": {
+    "type": "デュアル回転モップ（最大200回転/分・水量30段階）",
+    "liftMm": 10,
+    "autoDetach": false
+  },
+  "station": {
+    "autoEmpty": true,
+    "mopWash": true,
+    "hotWaterWash": false,
+    "hotWaterNote": null,
+    "hotAirDry": false,
+    "autoRefillDrain": false,
+    "detergentDispenser": false,
+    "dustBagMl": 2700,
+    "cleanTankMl": null,
+    "dirtyTankMl": null,
+    "dimensionsMm": { "w": 340, "d": 486.5, "h": 521.6 },
+    "weightKg": 7.35
+  },
+  "smart": {
+    "app": "Roborock",
+    "wifi": "2.4GHzのみ",
+    "voiceAssistants": ["Alexa", "Googleアシスタント", "Siri"],
+    "matter": false
+  }
+}

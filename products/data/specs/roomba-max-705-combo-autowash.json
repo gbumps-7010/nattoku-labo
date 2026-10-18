@@ -1,0 +1,54 @@
+{
+  "productId": "roomba-max-705-combo-autowash",
+  "modelNumber": "X185060",
+  "checkedAt": "2026-10-18",
+  "sources": [
+    { "label": "iRobot公式オンラインストア 製品ページ", "url": "https://store.irobot-jp.com/item/X185060.html" },
+    { "label": "iRobot公式 製品ページ（Max 705 Combo）", "url": "https://www.irobot-jp.com/roombacombo/705/" },
+    { "label": "iRobot公式 プレスリリース（2025年8月27日）", "url": "https://www.irobot-jp.com/press/pdf/20250827.pdf" }
+  ],
+  "basic": {
+    "dimensionsMm": { "w": 366, "d": 372, "h": 105 },
+    "weightKg": 5.72,
+    "runtimeMin": null,
+    "chargeTimeMin": 240,
+    "batteryMah": null,
+    "releaseDate": "2025-08",
+    "warrantyMonths": 12
+  },
+  "cleaning": {
+    "suctionPa": null,
+    "dustboxMl": null,
+    "waterTankMl": null,
+    "mappingType": "ClearView™ Pro LiDAR（3Dマップ対応）",
+    "obstacleAvoidance": "PrecisionVision™ AI + ClearView™ Pro LiDAR（LiDAR＋カメラ＋LEDライト）",
+    "climbHeightMm": null,
+    "climbNote": null,
+    "noiseDb": null
+  },
+  "mop": {
+    "type": "PowerSpin™ ローラーモップ with PerfectEdge®（最大200回転/分・スマートスクラブ対応）",
+    "liftMm": null,
+    "autoDetach": false
+  },
+  "station": {
+    "autoEmpty": true,
+    "mopWash": true,
+    "hotWaterWash": true,
+    "hotWaterNote": "温水洗浄（ローラーモップ）",
+    "hotAirDry": true,
+    "autoRefillDrain": false,
+    "detergentDispenser": true,
+    "dustBagMl": null,
+    "cleanTankMl": null,
+    "dirtyTankMl": null,
+    "dimensionsMm": { "w": 430, "d": 456, "h": 432 },
+    "weightKg": 8.47
+  },
+  "smart": {
+    "app": "Roomba Home",
+    "wifi": "2.4GHz / 5GHz",
+    "voiceAssistants": ["Alexa", "Googleアシスタント", "Siri"],
+    "matter": true
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "checkedAt": "2026-10-18",
+  "smart": {
+    "app": "eufy / Eufy Clean",
+    "wifi": "2.4GHzのみ",
+    "voiceAssistants": [
+      "Alexa",
+      "Googleアシスタント"
+    ],
+    "matter": null
+  },
+  "productId": "eufy-robot-vacuum-auto-empty-c10",
+  "modelNumber": "T2292511",
+  "sources": [
+    {
+      "label": "Anker Japan公式 Eufy Robot Vacuum Auto-Empty C10",
+      "url": "https://www.ankerjapan.com/products/t2292"
+    }
+  ],
+  "basic": {
+    "dimensionsMm": {
+      "w": 325,
+      "d": 323,
+      "h": 72
+    },
+    "weightKg": 2.5,
+    "runtimeMin": 120,
+    "chargeTimeMin": null,
+    "batteryMah": null,
+    "releaseDate": "2025-03",
+    "warrantyMonths": 18
+  },
+  "cleaning": {
+    "suctionPa": 4000,
+    "dustboxMl": 240,
+    "waterTankMl": null,
+    "mappingType": "iPath レーザー・ナビゲーション",
+    "obstacleAvoidance": null,
+    "climbHeightMm": 17,
+    "climbNote": null,
+    "noiseDb": null
+  },
+  "mop": {
+    "type": null,
+    "liftMm": null,
+    "autoDetach": false
+  },
+  "station": {
+    "autoEmpty": true,
+    "mopWash": false,
+    "hotWaterWash": false,
+    "hotWaterNote": null,
+    "hotAirDry": false,
+    "autoRefillDrain": false,
+    "detergentDispenser": false,
+    "dustBagMl": null,
+    "cleanTankMl": null,
+    "dirtyTankMl": null,
+    "dimensionsMm": {
+      "w": 275,
+      "d": 191,
+      "h": 212
+    },
+    "weightKg": 1.8
+  }
+}

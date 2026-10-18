@@ -1,0 +1,71 @@
+{
+  "productId": "deebot-mini-2",
+  "modelNumber": "DJX28",
+  "checkedAt": "2026-10-18",
+  "sources": [
+    {
+      "label": "ECOVACS公式 DEEBOT mini 2",
+      "url": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/deebot-mini2"
+    },
+    {
+      "label": "ECOVACS公式 保証期間について",
+      "url": "https://help.ecovacs.com/jp/support/warranty"
+    },
+    {
+      "label": "ECOVACS公式 Q&A（Wi-Fi 2.4GHz）",
+      "url": "https://help.ecovacs.com/jp/support/question"
+    }
+  ],
+  "basic": {
+    "dimensionsMm": {
+      "w": 286,
+      "d": 286,
+      "h": 99.8
+    },
+    "weightKg": null,
+    "runtimeMin": 189,
+    "chargeTimeMin": 210,
+    "batteryMah": 3200,
+    "releaseDate": "2026-04",
+    "warrantyMonths": 12
+  },
+  "cleaning": {
+    "suctionPa": 10000,
+    "dustboxMl": 99,
+    "waterTankMl": null,
+    "mappingType": "TrueMapping 2.0（LDS）",
+    "obstacleAvoidance": "TrueDetect 3D（構造光）+ LDS",
+    "climbHeightMm": 18,
+    "climbNote": null,
+    "noiseDb": 55
+  },
+  "mop": {
+    "type": "回転式（OZMO Turbo 2.0）",
+    "liftMm": 6,
+    "autoDetach": false
+  },
+  "station": {
+    "autoEmpty": true,
+    "mopWash": true,
+    "hotWaterWash": false,
+    "hotWaterNote": null,
+    "hotAirDry": true,
+    "autoRefillDrain": false,
+    "detergentDispenser": false,
+    "dustBagMl": 1800,
+    "cleanTankMl": 2600,
+    "dirtyTankMl": 1700,
+    "dimensionsMm": {
+      "w": 320,
+      "d": 400,
+      "h": 385
+    },
+    "weightKg": null
+  },
+  "smart": {
+    "app": "ECOVACS HOME",
+    "wifi": "2.4GHzのみ",
+    "voiceAssistants": [],
+    "matter": false
+  }
+}

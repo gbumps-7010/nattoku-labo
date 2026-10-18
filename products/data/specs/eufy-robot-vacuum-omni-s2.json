@@ -1,0 +1,79 @@
+{
+  "productId": "eufy-robot-vacuum-omni-s2",
+  "modelNumber": "T2081511",
+  "checkedAt": "2026-10-18",
+  "sources": [
+    {
+      "label": "Anker Japan公式 製品ページ",
+      "url": "https://www.ankerjapan.com/products/t2081"
+    },
+    {
+      "label": "Anker Japan公式 特設ページ",
+      "url": "https://www.ankerjapan.com/pages/eufy-s2"
+    },
+    {
+      "label": "Anker Japan公式 取扱説明書",
+      "url": "https://lp.ankerjapan.com/hubfs/aoos/manual/T2081Manual.pdf"
+    },
+    {
+      "label": "Anker Japan公式 ラインナップ（モップリフト）",
+      "url": "https://www.ankerjapan.com/pages/eufy-robotcleaner-lineup"
+    }
+  ],
+  "basic": {
+    "dimensionsMm": {
+      "w": 326,
+      "d": 358,
+      "h": 98
+    },
+    "weightKg": 5.2,
+    "runtimeMin": 260,
+    "chargeTimeMin": 260,
+    "batteryMah": 4600,
+    "releaseDate": "2026-05",
+    "warrantyMonths": 18
+  },
+  "cleaning": {
+    "suctionPa": 30000,
+    "dustboxMl": 300,
+    "waterTankMl": 120,
+    "mappingType": "CleanMind AI / 3Dマッピング",
+    "obstacleAvoidance": "3D MatrixEye 2.0",
+    "climbHeightMm": 42,
+    "climbNote": "2段段差最大42mm。1段は最大35mm",
+    "noiseDb": null
+  },
+  "mop": {
+    "type": "加圧式ローラーモップ（約1.5kg / HydroJet 2.0）",
+    "liftMm": 28,
+    "autoDetach": false
+  },
+  "station": {
+    "autoEmpty": true,
+    "mopWash": true,
+    "hotWaterWash": true,
+    "hotWaterNote": "約60℃",
+    "hotAirDry": true,
+    "autoRefillDrain": false,
+    "detergentDispenser": true,
+    "dustBagMl": 2500,
+    "cleanTankMl": 3000,
+    "dirtyTankMl": 2000,
+    "dimensionsMm": {
+      "w": 387,
+      "d": 476,
+      "h": 670
+    },
+    "weightKg": 9.5
+  },
+  "smart": {
+    "app": "eufy",
+    "wifi": "2.4GHzのみ",
+    "voiceAssistants": [
+      "Alexa",
+      "Googleアシスタント",
+      "Siri"
+    ],
+    "matter": true
+  }
+}

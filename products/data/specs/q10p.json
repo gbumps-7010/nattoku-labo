@@ -1,0 +1,55 @@
+{
+  "productId": "q10p",
+  "modelNumber": "Q10PP02-04",
+  "checkedAt": "2026-10-18",
+  "sources": [
+    { "label": "Roborock公式 製品ページ", "url": "https://jp.roborock.com/pages/roborock-q10p" },
+    { "label": "Roborock公式 取扱説明書", "url": "https://jp.roborock.com/cdn/shop/t/7/assets/manual_q10pplus.pdf" },
+    { "label": "Roborock公式 プレスリリース（2025年6月4日）", "url": "https://prtimes.jp/main/html/rd/p/000000079.000085581.html" },
+    { "label": "公式販売店 トレテク！ソフトバンクセレクション", "url": "https://shop.softbankselection.jp/item/6936905902108.html" }
+  ],
+  "basic": {
+    "dimensionsMm": { "w": 353, "d": 353, "h": 99 },
+    "weightKg": 4.0,
+    "runtimeMin": null,
+    "chargeTimeMin": 270,
+    "batteryMah": 5200,
+    "releaseDate": "2025-06",
+    "warrantyMonths": 12
+  },
+  "cleaning": {
+    "suctionPa": 10000,
+    "dustboxMl": null,
+    "waterTankMl": null,
+    "mappingType": "LDSレーザー",
+    "obstacleAvoidance": "障害物回避センサー（幅5cm・高さ3.5cm以上）",
+    "climbHeightMm": null,
+    "climbNote": null,
+    "noiseDb": null
+  },
+  "mop": {
+    "type": "固定モップ（水量3段階）",
+    "liftMm": 8,
+    "autoDetach": false
+  },
+  "station": {
+    "autoEmpty": true,
+    "mopWash": false,
+    "hotWaterWash": false,
+    "hotWaterNote": null,
+    "hotAirDry": false,
+    "autoRefillDrain": false,
+    "detergentDispenser": false,
+    "dustBagMl": null,
+    "cleanTankMl": null,
+    "dirtyTankMl": null,
+    "dimensionsMm": { "w": 212, "d": 178, "h": 258.5 },
+    "weightKg": 2.16
+  },
+  "smart": {
+    "app": "Roborock",
+    "wifi": "2.4GHzのみ",
+    "voiceAssistants": ["Alexa", "Googleアシスタント"],
+    "matter": false
+  }
+}

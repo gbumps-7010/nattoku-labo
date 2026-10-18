@@ -1,0 +1,71 @@
+{
+  "checkedAt": "2026-10-18",
+  "smart": {
+    "app": "eufy / Eufy Clean",
+    "wifi": "2.4GHzのみ",
+    "voiceAssistants": [
+      "Alexa",
+      "Googleアシスタント",
+      "Siri"
+    ],
+    "matter": true
+  },
+  "productId": "eufy-robot-vacuum-omni-e25",
+  "modelNumber": "T2353511",
+  "sources": [
+    {
+      "label": "Anker Japan公式 Eufy Robot Vacuum Omni E25",
+      "url": "https://www.ankerjapan.com/products/t2353"
+    },
+    {
+      "label": "Anker Japan公式 取扱説明書（T2353）",
+      "url": "https://lp.ankerjapan.com/hubfs/aoos/manual/T2353Manual.pdf"
+    }
+  ],
+  "basic": {
+    "dimensionsMm": {
+      "w": 327,
+      "d": 346,
+      "h": 111
+    },
+    "weightKg": 5.2,
+    "runtimeMin": 210,
+    "chargeTimeMin": 210,
+    "batteryMah": 5200,
+    "releaseDate": "2025-08",
+    "warrantyMonths": 18
+  },
+  "cleaning": {
+    "suctionPa": 20000,
+    "dustboxMl": 264,
+    "waterTankMl": 120,
+    "mappingType": "iPath レーザー・ナビゲーション",
+    "obstacleAvoidance": "AI.See（200種類以上の障害物を認識）",
+    "climbHeightMm": 21,
+    "climbNote": "取扱説明書記載",
+    "noiseDb": null
+  },
+  "mop": {
+    "type": "ローラーモップ（HydroJet／約1.5kg加圧）",
+    "liftMm": null,
+    "autoDetach": false
+  },
+  "station": {
+    "autoEmpty": true,
+    "mopWash": true,
+    "hotWaterWash": false,
+    "hotWaterNote": null,
+    "hotAirDry": true,
+    "autoRefillDrain": false,
+    "detergentDispenser": true,
+    "dustBagMl": 3000,
+    "cleanTankMl": 2500,
+    "dirtyTankMl": 1800,
+    "dimensionsMm": {
+      "w": 370,
+      "d": 462,
+      "h": 437
+    },
+    "weightKg": 7.1
+  }
+}

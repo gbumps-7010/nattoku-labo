@@ -1,0 +1,56 @@
+{
+  "productId": "s10",
+  "modelNumber": "W3211805",
+  "checkedAt": "2026-10-18",
+  "sources": [
+    { "label": "SwitchBot公式 製品ページ", "url": "https://www.switchbot.jp/products/switchbot-robot-vacuum-cleaner-s10" },
+    { "label": "SwitchBot公式 機能比較一覧", "url": "https://www.switchbot.jp/pages/s1-s1plus-functional-comparison" },
+    { "label": "SwitchBotサポート 消費電力・充電時間", "url": "https://support.switch-bot.com/hc/ja/articles/25741764846999" },
+    { "label": "SwitchBotサポート Matter対応", "url": "https://support.switch-bot.com/hc/ja/articles/27790636642199" },
+    { "label": "SwitchBot公式 保証ポリシー", "url": "https://www.switchbot.jp/pages/warranty-policy" }
+  ],
+  "basic": {
+    "dimensionsMm": { "w": 365, "d": 365, "h": 115 },
+    "weightKg": 5.5,
+    "runtimeMin": 250,
+    "chargeTimeMin": 180,
+    "batteryMah": 4000,
+    "releaseDate": "2024-05",
+    "warrantyMonths": 12
+  },
+  "cleaning": {
+    "suctionPa": 6500,
+    "dustboxMl": 310,
+    "waterTankMl": 300,
+    "mappingType": "LDSレーザー・PSDセンサー",
+    "obstacleAvoidance": "AIカメラ + PSD距離センサー",
+    "climbHeightMm": 20,
+    "climbNote": null,
+    "noiseDb": 62
+  },
+  "mop": {
+    "type": "ローラーモップ（RevoRoll、約300回転/分・1kg加圧）",
+    "liftMm": null,
+    "autoDetach": false
+  },
+  "station": {
+    "autoEmpty": true,
+    "mopWash": true,
+    "hotWaterWash": false,
+    "hotWaterNote": null,
+    "hotAirDry": true,
+    "autoRefillDrain": true,
+    "detergentDispenser": true,
+    "dustBagMl": 4000,
+    "cleanTankMl": null,
+    "dirtyTankMl": null,
+    "dimensionsMm": { "w": 260, "d": 207, "h": 412 },
+    "weightKg": 4.6
+  },
+  "smart": {
+    "app": "SwitchBot",
+    "wifi": "2.4GHzのみ",
+    "voiceAssistants": ["Alexa", "Googleアシスタント", "Siri"],
+    "matter": true
+  }
+}

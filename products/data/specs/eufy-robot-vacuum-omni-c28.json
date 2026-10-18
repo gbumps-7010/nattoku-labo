@@ -1,0 +1,66 @@
+{
+  "checkedAt": "2026-10-18",
+  "smart": {
+    "app": "eufy / Eufy Clean",
+    "wifi": "2.4GHzのみ",
+    "voiceAssistants": [
+      "Alexa",
+      "Googleアシスタント"
+    ],
+    "matter": null
+  },
+  "productId": "eufy-robot-vacuum-omni-c28",
+  "modelNumber": "T211A510",
+  "sources": [
+    {
+      "label": "Anker Japan公式 Eufy Robot Vacuum Omni C28",
+      "url": "https://www.ankerjapan.com/products/t211a"
+    }
+  ],
+  "basic": {
+    "dimensionsMm": {
+      "w": 327,
+      "d": 350,
+      "h": 111
+    },
+    "weightKg": 5.1,
+    "runtimeMin": 250,
+    "chargeTimeMin": 210,
+    "batteryMah": null,
+    "releaseDate": "2026-02",
+    "warrantyMonths": 18
+  },
+  "cleaning": {
+    "suctionPa": 15000,
+    "dustboxMl": 220,
+    "waterTankMl": 120,
+    "mappingType": "レーザーセンサー",
+    "obstacleAvoidance": "レーザーによる物体検知",
+    "climbHeightMm": null,
+    "climbNote": "高さ12cm未満の場所には進入しない仕様",
+    "noiseDb": null
+  },
+  "mop": {
+    "type": "ローラーモップ（約1.0kg加圧）",
+    "liftMm": null,
+    "autoDetach": false
+  },
+  "station": {
+    "autoEmpty": true,
+    "mopWash": true,
+    "hotWaterWash": false,
+    "hotWaterNote": null,
+    "hotAirDry": true,
+    "autoRefillDrain": false,
+    "detergentDispenser": false,
+    "dustBagMl": null,
+    "cleanTankMl": 2200,
+    "dirtyTankMl": 2200,
+    "dimensionsMm": {
+      "w": 353,
+      "d": 437,
+      "h": 430
+    },
+    "weightKg": 6.3
+  }
+}

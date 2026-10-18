@@ -1,0 +1,66 @@
+{
+  "checkedAt": "2026-10-18",
+  "smart": {
+    "app": "eufy / Eufy Clean",
+    "wifi": "2.4GHzのみ",
+    "voiceAssistants": [
+      "Alexa",
+      "Googleアシスタント"
+    ],
+    "matter": null
+  },
+  "productId": "eufy-x10-pro-omni",
+  "modelNumber": "T2351511",
+  "sources": [
+    {
+      "label": "Anker Japan公式 Eufy X10 Pro Omni",
+      "url": "https://www.ankerjapan.com/products/t2351"
+    }
+  ],
+  "basic": {
+    "dimensionsMm": {
+      "w": 353,
+      "d": 327,
+      "h": 114
+    },
+    "weightKg": 4.6,
+    "runtimeMin": 180,
+    "chargeTimeMin": 300,
+    "batteryMah": null,
+    "releaseDate": "2024-02",
+    "warrantyMonths": 18
+  },
+  "cleaning": {
+    "suctionPa": 8000,
+    "dustboxMl": 330,
+    "waterTankMl": 80,
+    "mappingType": "AI.See + レーザー",
+    "obstacleAvoidance": "AI.See（AIカメラ）",
+    "climbHeightMm": 20,
+    "climbNote": null,
+    "noiseDb": null
+  },
+  "mop": {
+    "type": "加圧式デュアル回転モップ（各約1kg）",
+    "liftMm": 12,
+    "autoDetach": false
+  },
+  "station": {
+    "autoEmpty": true,
+    "mopWash": true,
+    "hotWaterWash": false,
+    "hotWaterNote": null,
+    "hotAirDry": true,
+    "autoRefillDrain": false,
+    "detergentDispenser": false,
+    "dustBagMl": null,
+    "cleanTankMl": 3000,
+    "dirtyTankMl": 2700,
+    "dimensionsMm": {
+      "w": 366,
+      "d": 480,
+      "h": 460
+    },
+    "weightKg": 7.5
+  }
+}

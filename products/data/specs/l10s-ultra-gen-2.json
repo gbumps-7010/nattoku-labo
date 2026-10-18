@@ -1,0 +1,71 @@
+{
+  "productId": "l10s-ultra-gen-2",
+  "modelNumber": "RLL32SE",
+  "checkedAt": "2026-10-18",
+  "sources": [
+    {
+      "label": "Dreame公式 製品ページ",
+      "url": "https://www.dreametech.jp/products/l10s-ultra-gen-2"
+    },
+    {
+      "label": "Dreame公式 アフターサービスポリシー（保証）",
+      "url": "https://www.dreametech.jp/pages/after-sales-policy"
+    }
+  ],
+  "basic": {
+    "dimensionsMm": {
+      "w": 350,
+      "d": 350,
+      "h": 97.2
+    },
+    "weightKg": 4.0,
+    "runtimeMin": 160,
+    "chargeTimeMin": null,
+    "batteryMah": 5200,
+    "releaseDate": null,
+    "warrantyMonths": 12
+  },
+  "cleaning": {
+    "suctionPa": 10000,
+    "dustboxMl": 300,
+    "waterTankMl": null,
+    "mappingType": "Pathfinder（LiDAR）",
+    "obstacleAvoidance": "3DAdapt（3D構造化ライト）",
+    "climbHeightMm": 20,
+    "climbNote": "障害物乗り越えストリップ装着時",
+    "noiseDb": null
+  },
+  "mop": {
+    "type": "回転式（DuoScrub）",
+    "liftMm": 10.5,
+    "autoDetach": false
+  },
+  "station": {
+    "autoEmpty": true,
+    "mopWash": true,
+    "hotWaterWash": false,
+    "hotWaterNote": null,
+    "hotAirDry": true,
+    "autoRefillDrain": false,
+    "detergentDispenser": true,
+    "dustBagMl": 3200,
+    "cleanTankMl": 4500,
+    "dirtyTankMl": 4000,
+    "dimensionsMm": {
+      "w": 457,
+      "d": 340,
+      "h": 590.5
+    },
+    "weightKg": 8.5
+  },
+  "smart": {
+    "app": "Dreamehome",
+    "wifi": null,
+    "voiceAssistants": [
+      "Alexa",
+      "Googleアシスタント",
+      "Siri"
+    ],
+    "matter": null
+  }
+}
