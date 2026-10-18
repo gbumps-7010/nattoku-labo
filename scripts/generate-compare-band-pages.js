@@ -493,6 +493,46 @@ const STYLE = `<style>
       border-radius: 6px;
       margin-bottom: 0.35rem;
     }
+    .band-verdict {
+      margin: 1.35rem 0 1.6rem;
+      padding: 1.15rem 1.2rem;
+      border: 1px solid #93c5fd;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #eff6ff 0%, #ffffff 70%);
+      box-shadow: 0 8px 22px rgba(30, 64, 175, 0.08);
+    }
+    .band-verdict .verdict-kicker {
+      margin: 0 0 0.35rem;
+      font-size: 0.75rem;
+      font-weight: 900;
+      letter-spacing: 0.06em;
+      color: #1e40af;
+    }
+    .band-verdict .verdict-pick {
+      margin: 0 0 0.4rem;
+      font-size: clamp(1.1rem, 2.8vw, 1.35rem);
+      font-weight: 900;
+      color: #0f172a;
+      line-height: 1.4;
+    }
+    .band-verdict .verdict-why,
+    .band-verdict .verdict-alt {
+      margin: 0 0 0.35rem;
+      font-size: 0.9rem;
+      line-height: 1.65;
+      color: #1e293b;
+    }
+    .band-verdict .verdict-next {
+      margin: 0.6rem 0 0;
+      font-size: 0.9rem;
+      font-weight: 800;
+    }
+    .band-verdict a {
+      color: #1e40af;
+      text-decoration: none;
+      font-weight: 800;
+    }
+    .band-verdict a:hover { text-decoration: underline; }
     .product-links {
       display: grid;
       grid-template-columns: 1fr;
@@ -1109,6 +1149,74 @@ function matrixWho(who) {
       </div>`;
 }
 
+function compositeScore(p) {
+  const scores = [p.floor, p.quiet, p.maint, p.step, p.pet, p.app].filter(
+    (s) => typeof s === "number",
+  );
+  if (!scores.length) return Number(p.trust) || 0;
+  const avg = scores.reduce((a, b) => a + b, 0) / scores.length;
+  return avg * 0.85 + (Number(p.trust) || 0) * 0.15;
+}
+
+function buildBandVerdict(band) {
+  const ranked = [...band.products].sort(
+    (a, b) => compositeScore(b) - compositeScore(a) || b.reviews - a.reviews,
+  );
+  const top = ranked[0];
+  if (!top) return "";
+  const second = ranked[1];
+  const whyBits = [
+    ["フローリング", top.floor],
+    ["静音性", top.quiet],
+    ["お手入れ", top.maint],
+    ["ペット毛", top.pet],
+  ]
+    .filter(([, s]) => typeof s === "number")
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 2)
+    .map(([label]) => label);
+  const why = whyBits.length
+    ? `${whyBits.join("・")}の評価が高い`
+    : "この価格帯で総合点（目安）が最も高い";
+
+  const byQuiet = [...band.products].sort(
+    (a, b) => (b.quiet || 0) - (a.quiet || 0) || b.reviews - a.reviews,
+  )[0];
+  const byMaint = [...band.products].sort(
+    (a, b) => (b.maint || 0) - (a.maint || 0) || b.reviews - a.reviews,
+  )[0];
+
+  const alts = [];
+  if (second && second.slug !== top.slug) {
+    alts.push(
+      `総合点2位なら <a href="/products/${escapeHtml(second.slug)}">${escapeHtml(second.name)}</a>`,
+    );
+  }
+  if (byQuiet && byQuiet.slug !== top.slug) {
+    alts.push(
+      `静音優先なら <a href="/products/${escapeHtml(byQuiet.slug)}">${escapeHtml(byQuiet.name)}</a>`,
+    );
+  }
+  if (byMaint && byMaint.slug !== top.slug && (!byQuiet || byMaint.slug !== byQuiet.slug)) {
+    alts.push(
+      `手入れ優先なら <a href="/products/${escapeHtml(byMaint.slug)}">${escapeHtml(byMaint.name)}</a>`,
+    );
+  }
+
+  return `<section class="band-verdict" aria-label="この価格帯の結論">
+        <p class="verdict-kicker">迷ったらこれ · ${escapeHtml(band.label)}</p>
+        <p class="verdict-pick"><strong>${escapeHtml(top.name)}</strong> が第一候補</p>
+        <p class="verdict-why">理由：口コミ${top.reviews}件・信頼度${top.trust}。${escapeHtml(why)}</p>
+        ${
+          alts.length
+            ? `<p class="verdict-alt">${alts.slice(0, 2).join(" ／ ")}</p>`
+            : ""
+        }
+        <p class="verdict-next"><a href="/products/${escapeHtml(top.slug)}">詳細の口コミ分析を見る →</a>
+          · <a href="/rankings/">機能別ランキングで軸を変える</a></p>
+      </section>`;
+}
+
 function itemListJson(band) {
   return {
     "@context": "https://schema.org",
@@ -1484,6 +1592,8 @@ function buildPage(band) {
           </div>
         </div>
       </section>
+
+      ${buildBandVerdict(band)}
 
       <h2>この徹底比較で見るべきポイント</h2>
       <p class="section-sub">表の違いを短く補足します。くわしくは各製品ページへ。</p>

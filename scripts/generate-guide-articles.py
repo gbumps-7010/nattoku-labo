@@ -381,7 +381,15 @@ def keep_quote_marks(block: str) -> str:
 
 
 def pick_card(anchor: str, heading: str, lead: str, r: dict, chips: list[str] | None = None) -> str:
-    block = keep_quote_marks(mp.article_pick(anchor_id=anchor, heading=heading, lead="LEAD", product=r))
+    block = keep_quote_marks(
+        mp.article_pick(
+            anchor_id=anchor,
+            heading=heading,
+            lead="LEAD",
+            product=r,
+            alt_hint_html='ページ上部の「迷ったらこれ」や比較表もあわせて確認を',
+        )
+    )
     block = block.replace('<p class="lead">LEAD</p>', f'<p class="lead">{prose(lead)}</p>', 1)
     if chips:
         extra = "".join(f'<span class="chip spec">{html.escape(c)}</span>' for c in chips)
@@ -409,9 +417,12 @@ def conclusion_box(title: str, items: list[tuple[str, dict, str, str]]) -> str:
               </div>
             </li>"""
         )
+    display_title = title
+    if display_title.startswith("結論："):
+        display_title = "迷ったらこれ · " + display_title.removeprefix("結論：")
     return f"""
         <div class="conclusion" aria-label="結論">
-          <p class="conclusion-title">{html.escape(title)}</p>
+          <p class="conclusion-title">{html.escape(display_title)}</p>
           <ol class="conclusion-list">{''.join(lis)}</ol>
         </div>"""
 
@@ -518,10 +529,11 @@ main { padding:1.25rem 0 3rem; }
 .know-body > strong { display:block; font-size:.92rem; color:#0f172a; margin-bottom:.2rem; }
 .know-body p { margin:0; font-size:.84rem; line-height:1.65; color:#1e293b; font-weight:500; }
 .conclusion {
-  background:#fff; border:2px solid #fbbf24; border-radius:14px; padding:1rem 1.05rem 1.05rem;
-  margin:0 0 1.25rem; box-shadow:0 4px 14px rgba(180,83,9,.08);
+  background:linear-gradient(135deg,#fffbeb 0%,#ffffff 75%);
+  border:2px solid #fbbf24; border-radius:14px; padding:1.05rem 1.1rem 1.1rem;
+  margin:0 0 1.25rem; box-shadow:0 8px 22px rgba(180,83,9,.1);
 }
-.conclusion-title { font-size:1.02rem; font-weight:900; color:#92400e; margin-bottom:.65rem; }
+.conclusion-title { font-size:1.08rem; font-weight:900; color:#92400e; margin-bottom:.7rem; }
 .conclusion-list { list-style:none; display:grid; gap:.6rem; }
 .conclusion-list li { display:flex; gap:.7rem; align-items:flex-start; }
 .c-badge {
@@ -630,13 +642,43 @@ table.dt tbody tr:hover td { background:#f8fafc; }
 .dt-hint { font-size:.76rem; color:#475569; margin:0 0 1rem; }
 .yes { color:#047857; font-weight:800; }
 .no { color:#64748b; }
-.articles { display:flex; flex-direction:column; gap:2rem; margin-top:.75rem; }
-.article-pick h3 {
-  font-size:1.08rem; font-weight:900; margin:0 0 .85rem; color:#0f172a;
-  padding:.7rem 1rem; border:1px solid var(--line);
-  background:#f8fafc;
-  border-radius:10px; scroll-margin-top:84px;
+.articles { display:flex; flex-direction:column; gap:2.5rem; margin-top:.75rem; }
+.article-pick { scroll-margin-top:84px; }
+.article-pick h3,
+.article-pick h3.pick-heading {
+  display:flex; flex-direction:column; gap:.35rem;
+  margin:0 0 1.05rem; padding:.95rem 1.15rem 1rem;
+  border:0; border-left:4px solid #1e40af; border-radius:0 14px 14px 0;
+  background:linear-gradient(90deg,#eff6ff 0%,#ffffff 72%);
+  box-shadow:0 8px 22px rgba(30,64,175,.07); color:#0f172a;
 }
+.article-pick .pick-label {
+  display:block; font-size:.78rem; font-weight:800; letter-spacing:.04em;
+  color:#1e40af; line-height:1.35;
+}
+.article-pick .pick-name {
+  display:block; font-size:clamp(1.15rem,3vw,1.45rem); font-weight:900;
+  line-height:1.35; color:#0f172a; text-wrap:balance;
+}
+.verdict {
+  margin:1.15rem 0 0; padding:1rem 1.1rem;
+  border:1px solid #93c5fd; border-radius:12px;
+  background:linear-gradient(135deg,#eff6ff 0%,#ffffff 70%);
+  box-shadow:0 6px 18px rgba(30,64,175,.08);
+}
+.verdict-kicker {
+  margin:0 0 .35rem; font-size:.75rem; font-weight:900;
+  letter-spacing:.06em; color:#1e40af;
+}
+.verdict-pick {
+  margin:0 0 .4rem; font-size:1.05rem; font-weight:900; color:#0f172a; line-height:1.4;
+}
+.verdict-why, .verdict-alt {
+  margin:0 0 .35rem; font-size:.88rem; line-height:1.65; color:#1e293b;
+}
+.verdict-next { margin:.55rem 0 0; font-size:.9rem; font-weight:800; }
+.verdict a { color:#1e40af; text-decoration:none; font-weight:800; }
+.verdict a:hover { text-decoration:underline; }
 .maker-nav { display:flex; flex-wrap:wrap; gap:.45rem; margin:.25rem 0 1.4rem; }
 .maker-nav a {
   display:inline-flex; align-items:center; gap:.4rem; padding:.35rem .75rem .35rem .4rem;
@@ -758,7 +800,14 @@ section.chapter .maker-head h3 {
   display:flex; align-items:center; justify-content:center;
 }
 .faq .faq-a p { margin:0 0 .4rem; }
-.summary-box { background:#fff; border:1px solid var(--line); border-radius:12px; padding:1rem 1.1rem; }
+.summary-box {
+  background:linear-gradient(135deg,#eff6ff 0%,#ffffff 72%);
+  border:1px solid #93c5fd; border-radius:14px; padding:1.1rem 1.15rem;
+  box-shadow:0 8px 22px rgba(30,64,175,.08);
+}
+.summary-box > p:first-child {
+  font-size:1.02rem; font-weight:800; color:#0f172a;
+}
 .summary-box p { margin:0 0 .75rem; font-size:.95rem; }
 .summary-box ul { margin:0; padding-left:1.2rem; }
 .summary-box li { margin:.3rem 0; font-weight:700; font-size:.92rem; }
@@ -881,7 +930,7 @@ def render_page(art: dict) -> Path:
     url = f"{SITE}/guides/{slug}"
     sections = art["sections"] + [
         ("faq", "よくある質問", faq_html(art["faqs"])),
-        ("summary", "まとめ", art["summary"]),
+        ("summary", "まとめ｜迷ったらこれ", art["summary"]),
     ]
     body = "".join(
         f"""

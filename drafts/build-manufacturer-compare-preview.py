@@ -531,12 +531,66 @@ def format_pick_heading(heading: str) -> str:
     )
 
 
+def condition_label_from_heading(heading: str) -> str:
+    text = str(heading or "").strip()
+    if "：" in text:
+        return text.split("：", 1)[0].strip()
+    return "この条件"
+
+
+def build_verdict_html(
+    *,
+    product: dict,
+    condition_label: str,
+    strengths: list[dict],
+    alt_product: dict | None = None,
+    alt_hint_html: str = "",
+) -> str:
+    """Conditioned first-pick block so fair compare pages still end with a decision."""
+    raw_label = (condition_label or "この条件").strip()
+    # Ranked guide cards: only emit a verdict for 1位
+    if re.fullmatch(r"\d+位", raw_label) and raw_label != "1位":
+        return ""
+    name = html.escape(str(product["name"]))
+    pid = html.escape(str(product["id"]))
+    label = html.escape("総合1位" if raw_label == "1位" else raw_label)
+    why_bits = [str(a.get("label") or "") for a in (strengths or [])[:2] if a.get("label")]
+    why = (
+        "・".join(why_bits) + "の評価が高い"
+        if why_bits
+        else "この条件で総合点が最も高い"
+    )
+    if alt_product and alt_product.get("id") and alt_product.get("name"):
+        alt_html = (
+            f'<p class="verdict-alt">迷ったら比較：総合点2位の '
+            f'<a href="/products/{html.escape(str(alt_product["id"]))}">'
+            f'{html.escape(str(alt_product["name"]))}</a> も候補</p>'
+        )
+    elif alt_hint_html:
+        alt_html = f'<p class="verdict-alt">{alt_hint_html}</p>'
+    else:
+        alt_html = (
+            '<p class="verdict-alt">条件が違うなら、目次の別セクションや'
+            '<a href="/rankings/">機能別ランキング</a>も確認を</p>'
+        )
+    return f"""
+          <div class="verdict" aria-label="この条件の結論">
+            <p class="verdict-kicker">迷ったらこれ · {label}</p>
+            <p class="verdict-pick"><strong>{name}</strong> が第一候補</p>
+            <p class="verdict-why">理由：{html.escape(why)}</p>
+            {alt_html}
+            <p class="verdict-next"><a href="/products/{pid}">詳細の口コミ分析を見る →</a></p>
+          </div>"""
+
+
 def article_pick(
     *,
     anchor_id: str,
     heading: str,
     lead: str,
     product: dict | None,
+    alt_product: dict | None = None,
+    alt_hint_html: str = "",
 ) -> str:
     heading_html = format_pick_heading(heading)
     if not product:
@@ -548,6 +602,13 @@ def article_pick(
 
     strengths = pick_strengths(product, n=3)
     cautions = pick_cautions(product, n=2)
+    verdict_html = build_verdict_html(
+        product=product,
+        condition_label=condition_label_from_heading(heading),
+        strengths=strengths,
+        alt_product=alt_product,
+        alt_hint_html=alt_hint_html,
+    )
     strength_shorts = {a["short"] for a in strengths}
     cautions = [a for a in cautions if a["short"] not in strength_shorts][:2]
     fits = pick_fit_audiences(product, n=2)
@@ -651,7 +712,8 @@ def article_pick(
           {trends_html}
           {fit_html}
           {complaints_html}
-          <p class="more"><a href="https://nattoku-labo.com/products/{html.escape(product['id'])}" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
+          {verdict_html}
+          <p class="more"><a href="/products/{html.escape(product['id'])}">製品ページで詳しく見る →</a></p>
         </div>
       </article>"""
 
@@ -1038,15 +1100,18 @@ def build_manufacturer_page(meta: dict) -> Path:
             lead = f"この価格帯に該当するのは{p['name']}です。"
         else:
             lead = f"この価格帯（{len(cands)}製品）のなかで、総合点が最も高いのは{p['name']}です。"
+        alt = None
         if len(ranked_band) > 1 and ranked_band[1].get("overall") is not None:
             second = ranked_band[1]
             lead += f" 2位は{second['name']}（総合点{second['overall']:.1f}）です。"
+            alt = second
         band_html.append(
             article_pick(
                 anchor_id=aid,
                 heading=f"予算{label}なら：{p['name']}",
                 lead=lead,
                 product=p,
+                alt_product=alt,
             )
         )
 
@@ -1133,6 +1198,8 @@ def build_manufacturer_page(meta: dict) -> Path:
                 heading=f"{h3_base}：{top['name']}",
                 lead=lead,
                 product=top,
+                alt_product=second,
+                alt_hint_html='予算で選び直すなら <a href="#price">予算別のおすすめ</a> へ',
             )
         )
 
@@ -1208,6 +1275,7 @@ def build_manufacturer_page(meta: dict) -> Path:
                 heading=f"{title}なら：{top['name']}",
                 lead=lead_base,
                 product=top,
+                alt_hint_html='予算で選び直すなら <a href="#price">予算別のおすすめ</a> へ',
             )
         )
 
@@ -1414,6 +1482,25 @@ def build_manufacturer_page(meta: dict) -> Path:
       display:block; font-size:clamp(1.2rem,3.1vw,1.55rem); font-weight:900;
       line-height:1.35; color:#0f172a; text-wrap:balance;
     }}
+    .verdict {{
+      margin:1.15rem 0 0; padding:1rem 1.1rem;
+      border:1px solid #93c5fd; border-radius:12px;
+      background:linear-gradient(135deg,#eff6ff 0%,#ffffff 70%);
+      box-shadow:0 6px 18px rgba(30,64,175,.08);
+    }}
+    .verdict-kicker {{
+      margin:0 0 .35rem; font-size:.75rem; font-weight:900;
+      letter-spacing:.06em; color:#1e40af;
+    }}
+    .verdict-pick {{
+      margin:0 0 .4rem; font-size:1.05rem; font-weight:900; color:#0f172a; line-height:1.4;
+    }}
+    .verdict-why, .verdict-alt {{
+      margin:0 0 .35rem; font-size:.88rem; line-height:1.65; color:#1e293b;
+    }}
+    .verdict-next {{ margin:.55rem 0 0; font-size:.9rem; font-weight:800; }}
+    .verdict a {{ color:#1e40af; text-decoration:none; font-weight:800; }}
+    .verdict a:hover {{ text-decoration:underline; }}
     .aff-mount {{
       margin:0 0 1rem; min-height:2rem;
     }}
