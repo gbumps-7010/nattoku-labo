@@ -642,42 +642,72 @@ table.dt tbody tr:hover td { background:#f8fafc; }
 .dt-hint { font-size:.76rem; color:#475569; margin:0 0 1rem; }
 .yes { color:#047857; font-weight:800; }
 .no { color:#64748b; }
-.articles { display:flex; flex-direction:column; gap:2.5rem; margin-top:.75rem; }
+.articles { display:flex; flex-direction:column; gap:0; margin-top:.75rem; }
 .article-pick { scroll-margin-top:84px; }
+.articles > .article-pick {
+  margin-top:2.4rem; padding-top:1.6rem; border-top:3px solid #cbd5e1;
+}
+.articles > .article-pick:first-child {
+  margin-top:0; padding-top:.25rem; border-top:0;
+}
 .article-pick h3,
 .article-pick h3.pick-heading {
-  display:flex; flex-direction:column; gap:.35rem;
-  margin:0 0 1.05rem; padding:.95rem 1.15rem 1rem;
-  border:0; border-left:4px solid #1e40af; border-radius:0 14px 14px 0;
-  background:linear-gradient(90deg,#eff6ff 0%,#ffffff 72%);
-  box-shadow:0 8px 22px rgba(30,64,175,.07); color:#0f172a;
+  display:flex; flex-direction:column; gap:.45rem;
+  margin:0 0 1.2rem; padding:0 0 .85rem;
+  border:0; border-bottom:3px solid #1e3a8a; border-radius:0;
+  background:transparent; box-shadow:none; color:#0f172a;
 }
 .article-pick .pick-label {
-  display:block; font-size:.78rem; font-weight:800; letter-spacing:.04em;
-  color:#1e40af; line-height:1.35;
+  display:block; font-size:clamp(1.28rem,4.2vw,1.6rem); font-weight:900;
+  letter-spacing:.01em; color:#0f172a; line-height:1.3;
 }
 .article-pick .pick-name {
-  display:block; font-size:clamp(1.15rem,3vw,1.45rem); font-weight:900;
-  line-height:1.35; color:#0f172a; text-wrap:balance;
+  display:block; font-size:1.02rem; font-weight:800;
+  line-height:1.45; color:#1e40af; text-wrap:balance;
+}
+.article-pick .pick-name::before {
+  content:"おすすめ機種："; color:#64748b; font-weight:800;
+  font-size:.86rem; margin-right:.3rem;
 }
 .verdict {
-  margin:1.15rem 0 0; padding:1rem 1.1rem;
-  border:1px solid #93c5fd; border-radius:12px;
-  background:linear-gradient(135deg,#eff6ff 0%,#ffffff 70%);
-  box-shadow:0 6px 18px rgba(30,64,175,.08);
+  margin:1.4rem 0 0; padding:0;
+  border:2px solid #1e3a8a; border-radius:16px;
+  background:#fff; overflow:hidden;
+  box-shadow:0 12px 32px rgba(30,58,138,.18);
+}
+.verdict-head {
+  display:flex; flex-wrap:wrap; align-items:center; gap:.45rem .7rem;
+  margin:0; padding:.75rem 1.1rem; background:#1e3a8a; color:#fff;
+}
+.verdict-badge {
+  display:inline-flex; align-items:center;
+  padding:.22rem .7rem; border-radius:999px;
+  background:#fbbf24; color:#78350f;
+  font-size:.8rem; font-weight:900; letter-spacing:.02em; line-height:1.3;
+}
+.verdict-cond {
+  font-size:.88rem; font-weight:800; color:#dbeafe; letter-spacing:.02em;
+}
+.verdict-body {
+  padding:1rem 1.15rem 1.15rem;
+  background:linear-gradient(180deg,#f8fbff 0%,#ffffff 55%);
+}
+.verdict-source {
+  margin:0 0 .5rem; font-size:.9rem; font-weight:800;
+  line-height:1.55; color:#1e40af;
 }
 .verdict-kicker {
   margin:0 0 .35rem; font-size:.75rem; font-weight:900;
   letter-spacing:.06em; color:#1e40af;
 }
 .verdict-pick {
-  margin:0 0 .4rem; font-size:1.05rem; font-weight:900; color:#0f172a; line-height:1.4;
+  margin:0 0 .45rem; font-size:1.22rem; font-weight:900; color:#0f172a; line-height:1.4;
 }
 .verdict-why, .verdict-alt {
-  margin:0 0 .35rem; font-size:.88rem; line-height:1.65; color:#1e293b;
+  margin:0 0 .35rem; font-size:.9rem; line-height:1.65; color:#1e293b; font-weight:600;
 }
-.verdict-next { margin:.55rem 0 0; font-size:.9rem; font-weight:800; }
-.verdict a { color:#1e40af; text-decoration:none; font-weight:800; }
+.verdict-next { margin:.65rem 0 0; font-size:.95rem; font-weight:900; }
+.verdict a { color:#1e40af; text-decoration:none; font-weight:900; }
 .verdict a:hover { text-decoration:underline; }
 .maker-nav { display:flex; flex-wrap:wrap; gap:.45rem; margin:.25rem 0 1.4rem; }
 .maker-nav a {

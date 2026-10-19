@@ -495,22 +495,56 @@ const STYLE = `<style>
     }
     .band-verdict {
       margin: 1.35rem 0 1.6rem;
-      padding: 1.15rem 1.2rem;
-      border: 1px solid #93c5fd;
-      border-radius: 14px;
-      background: linear-gradient(135deg, #eff6ff 0%, #ffffff 70%);
-      box-shadow: 0 8px 22px rgba(30, 64, 175, 0.08);
+      padding: 0;
+      border: 2px solid #1e3a8a;
+      border-radius: 16px;
+      background: #fff;
+      overflow: hidden;
+      box-shadow: 0 12px 32px rgba(30, 58, 138, 0.18);
     }
-    .band-verdict .verdict-kicker {
-      margin: 0 0 0.35rem;
-      font-size: 0.75rem;
+    .band-verdict .verdict-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.45rem 0.7rem;
+      margin: 0;
+      padding: 0.75rem 1.1rem;
+      background: #1e3a8a;
+      color: #fff;
+    }
+    .band-verdict .verdict-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.22rem 0.7rem;
+      border-radius: 999px;
+      background: #fbbf24;
+      color: #78350f;
+      font-size: 0.8rem;
       font-weight: 900;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.02em;
+      line-height: 1.3;
+    }
+    .band-verdict .verdict-cond {
+      font-size: 0.88rem;
+      font-weight: 800;
+      color: #dbeafe;
+      letter-spacing: 0.02em;
+    }
+    .band-verdict .verdict-body {
+      padding: 1rem 1.15rem 1.15rem;
+      background: linear-gradient(180deg, #f8fbff 0%, #ffffff 55%);
+    }
+    .band-verdict .verdict-source {
+      margin: 0 0 0.5rem;
+      font-size: 0.9rem;
+      font-weight: 800;
+      line-height: 1.55;
       color: #1e40af;
     }
+    .band-verdict .verdict-kicker { display: none; }
     .band-verdict .verdict-pick {
-      margin: 0 0 0.4rem;
-      font-size: clamp(1.1rem, 2.8vw, 1.35rem);
+      margin: 0 0 0.45rem;
+      font-size: 1.22rem;
       font-weight: 900;
       color: #0f172a;
       line-height: 1.4;
@@ -521,16 +555,17 @@ const STYLE = `<style>
       font-size: 0.9rem;
       line-height: 1.65;
       color: #1e293b;
+      font-weight: 600;
     }
     .band-verdict .verdict-next {
-      margin: 0.6rem 0 0;
-      font-size: 0.9rem;
-      font-weight: 800;
+      margin: 0.65rem 0 0;
+      font-size: 0.95rem;
+      font-weight: 900;
     }
     .band-verdict a {
       color: #1e40af;
       text-decoration: none;
-      font-weight: 800;
+      font-weight: 900;
     }
     .band-verdict a:hover { text-decoration: underline; }
     .product-links {
@@ -1204,16 +1239,22 @@ function buildBandVerdict(band) {
   }
 
   return `<section class="band-verdict" aria-label="この価格帯の結論">
-        <p class="verdict-kicker">迷ったらこれ · ${escapeHtml(band.label)}</p>
-        <p class="verdict-pick"><strong>${escapeHtml(top.name)}</strong> が第一候補</p>
-        <p class="verdict-why">理由：口コミ${top.reviews}件・信頼度${top.trust}。${escapeHtml(why)}</p>
-        ${
-          alts.length
-            ? `<p class="verdict-alt">${alts.slice(0, 2).join(" ／ ")}</p>`
-            : ""
-        }
-        <p class="verdict-next"><a href="/products/${escapeHtml(top.slug)}">詳細の口コミ分析を見る →</a>
-          · <a href="/rankings/">機能別ランキングで軸を変える</a></p>
+        <div class="verdict-head">
+          <span class="verdict-badge">迷ったらこれ</span>
+          <span class="verdict-cond">${escapeHtml(band.label)}</span>
+        </div>
+        <div class="verdict-body">
+          <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+          <p class="verdict-pick"><strong>${escapeHtml(top.name)}</strong> が第一候補</p>
+          <p class="verdict-why">理由：口コミ${top.reviews}件・信頼度${top.trust}。${escapeHtml(why)}</p>
+          ${
+            alts.length
+              ? `<p class="verdict-alt">${alts.slice(0, 2).join(" ／ ")}</p>`
+              : ""
+          }
+          <p class="verdict-next"><a href="/products/${escapeHtml(top.slug)}">詳細の口コミ分析を見る →</a>
+            · <a href="/rankings/">機能別ランキングで軸を変える</a></p>
+        </div>
       </section>`;
 }
 

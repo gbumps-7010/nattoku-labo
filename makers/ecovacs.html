@@ -522,6 +522,417 @@
     td.score.s70 { color:#a16207; background:#fffbeb; }
     td.score.s60 { color:#b91c1c; background:#fef2f2; }
     tr.row-group td { border-top:2px solid #cbd5e1; }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* FLAT_LAYOUT_PROTOTYPE */
+    /* Soft frames + hierarchy: 項目 → 一言結論 → 補足。左アクセントは使わない */
+    /* Budget/condition label is the section break; product name is secondary */
+    .articles > .article-pick {
+      margin-top:2.4rem !important;
+      padding-top:1.6rem !important;
+      border-top:3px solid #cbd5e1 !important;
+    }
+    .articles > .article-pick:first-child {
+      margin-top:0 !important;
+      padding-top:.25rem !important;
+      border-top:0 !important;
+    }
+    .article-pick h3,
+    .article-pick h3.pick-heading {
+      display:flex !important;
+      flex-direction:column !important;
+      gap:.45rem !important;
+      background:transparent !important;
+      box-shadow:none !important;
+      border:0 !important;
+      border-radius:0 !important;
+      border-bottom:3px solid #1e3a8a !important;
+      padding:0 0 .85rem !important;
+      margin:0 0 1.2rem !important;
+    }
+    .article-pick .pick-label {
+      display:block !important;
+      font-size:clamp(1.28rem, 4.2vw, 1.6rem) !important;
+      font-weight:900 !important;
+      letter-spacing:.01em !important;
+      color:#0f172a !important;
+      line-height:1.3 !important;
+    }
+    .article-pick .pick-name {
+      display:block !important;
+      font-size:1.02rem !important;
+      font-weight:800 !important;
+      line-height:1.45 !important;
+      color:#1e40af !important;
+      text-wrap:balance !important;
+    }
+    .article-pick .pick-name::before {
+      content:"おすすめ機種：" !important;
+      color:#64748b !important;
+      font-weight:800 !important;
+      font-size:.86rem !important;
+      margin-right:.3rem !important;
+    }
+    .meta-block {
+      background:#f8fafc !important;
+      border:1px solid #e8eef5 !important;
+      border-radius:12px !important;
+      padding:.8rem .9rem !important;
+      margin:0 0 .9rem !important;
+    }
+    .article-copy .lead,
+    .article-pick > .lead {
+      margin:0 0 1rem !important;
+      padding:.75rem .9rem !important;
+      background:#f8fafc !important;
+      border:1px solid #e8eef5 !important;
+      border-radius:12px !important;
+      font-size:.9rem !important;
+      line-height:1.75 !important;
+      color:#1e293b !important;
+    }
+    .panel,
+    .panel.panel-neg,
+    .panel.trend-panel,
+    .panel.pros-cons {
+      background:#fafbfc !important;
+      border:1px solid #e8eef5 !important;
+      border-radius:14px !important;
+      padding:.9rem .9rem 1rem !important;
+      margin:0 0 1rem !important;
+      box-shadow:none !important;
+    }
+    .panel.panel-neg {
+      background:#fffafb !important;
+      border-color:#f1e4e7 !important;
+    }
+    .panel.trend-panel {
+      background:#f7f9fc !important;
+      border-color:#e4ebf5 !important;
+    }
+    .pros-cons-groups { gap:1rem !important; }
+    .pros-cons-group { gap:.55rem !important; }
+    .pros-cons-group-neg {
+      border-top:1px dashed #edd5da !important;
+      padding-top:.9rem !important;
+      margin-top:.15rem !important;
+    }
+    .pros-cons-label,
+    .panel h4,
+    .panel.pros-cons h4,
+    .panel.trend-panel h4,
+    .panel.panel-neg h4,
+    .know > h4,
+    h4.pros-cons-label {
+      display:block !important;
+      width:auto !important;
+      margin:0 0 .75rem !important;
+      padding:0 0 .4rem !important;
+      border-radius:0 !important;
+      background:transparent !important;
+      border-bottom:3px solid #cbd5e1 !important;
+      font-size:1.28rem !important;
+      font-weight:900 !important;
+      letter-spacing:.02em !important;
+      line-height:1.3 !important;
+      color:#0f172a !important;
+    }
+    h4.pros-cons-label.pros-cons-label-good {
+      color:#047857 !important;
+      border-bottom-color:#34d399 !important;
+    }
+    h4.pros-cons-label.pros-cons-label-warn,
+    .panel.panel-neg > h4 {
+      color:#be123c !important;
+      border-bottom-color:#fb7185 !important;
+    }
+    .panel.trend-panel > h4 {
+      color:#1d4ed8 !important;
+      border-bottom-color:#60a5fa !important;
+    }
+
+    .entry-grid {
+      grid-template-columns:1fr !important;
+      gap:.55rem !important;
+    }
+    @media (min-width:720px) {
+      .entry-grid {
+        grid-template-columns:1fr 1fr !important;
+        gap:.55rem .65rem !important;
+      }
+    }
+    .entry-stack { gap:.55rem !important; }
+
+    .entry,
+    .entry.good,
+    .entry.warn,
+    .entry.fit,
+    .entry.issue {
+      border:1px solid #e8eef5 !important;
+      border-radius:12px !important;
+      border-left:1px solid #e8eef5 !important;
+      box-shadow:none !important;
+      padding:.75rem .85rem .8rem !important;
+      height:auto !important;
+      background:#ffffff !important;
+    }
+    .entry.good {
+      background:#f4faf7 !important;
+      border-color:#d9ebe2 !important;
+    }
+    .entry.warn,
+    .entry.issue {
+      background:#fdf7f8 !important;
+      border-color:#f0dde2 !important;
+    }
+    .entry.fit {
+      background:#f5f8fd !important;
+      border-color:#dce6f4 !important;
+    }
+
+    .entry-head {
+      display:flex !important;
+      align-items:center !important;
+      justify-content:space-between !important;
+      gap:.5rem !important;
+      margin:0 0 .4rem !important;
+    }
+    .entry-label {
+      font-size:.78rem !important;
+      font-weight:800 !important;
+      color:#334155 !important;
+      letter-spacing:.04em !important;
+    }
+    /* fit/issue: ラベル自体が一言結論（途中省略の lead は入れない） */
+    .entry.fit .entry-label,
+    .entry.issue .entry-label {
+      font-size:1rem !important;
+      font-weight:900 !important;
+      color:#0f172a !important;
+      letter-spacing:.01em !important;
+      line-height:1.45 !important;
+    }
+    .entry.fit .entry-head,
+    .entry.issue .entry-head {
+      align-items:flex-start !important;
+      margin:0 0 .4rem !important;
+    }
+    .entry-score {
+      flex-shrink:0 !important;
+      display:inline-flex !important;
+      align-items:center !important;
+      padding:.12rem .5rem !important;
+      border-radius:999px !important;
+      background:rgba(255,255,255,.9) !important;
+      border:1px solid rgba(148,163,184,.35) !important;
+      font-size:.74rem !important;
+      font-weight:900 !important;
+      color:#334155 !important;
+      line-height:1.2 !important;
+    }
+    .entry.good .entry-score {
+      color:#047857 !important;
+      border-color:#b7e0cd !important;
+      background:#ffffff !important;
+    }
+    .entry.warn .entry-score,
+    .entry.issue .entry-score {
+      color:#e11d48 !important;
+      border-color:#f0c4cd !important;
+      background:#ffffff !important;
+    }
+    .entry.fit .entry-score {
+      color:#1d4ed8 !important;
+      border-color:#bfdbfe !important;
+      background:#ffffff !important;
+    }
+
+    .entry-lead {
+      margin:0 0 .35rem !important;
+      font-size:1.05rem !important;
+      font-weight:900 !important;
+      line-height:1.35 !important;
+      color:#0f172a !important;
+      letter-spacing:.01em !important;
+      /* 一言だけ：長文に見せない */
+      max-width:100% !important;
+    }
+    .entry.warn .entry-lead,
+    .entry.issue .entry-lead { color:#0f172a !important; }
+
+    .entry .entry-body,
+    .entry.good .entry-body,
+    .entry.warn .entry-body,
+    .entry.fit .entry-body,
+    .entry.issue .entry-body,
+    p.entry-body {
+      margin:0 !important;
+      font-size:.86rem !important;
+      line-height:1.7 !important;
+      color:#0f172a !important;
+      font-weight:600 !important;
+      opacity:1 !important;
+    }
+
+    .trend-summary {
+      font-size:.86rem !important;
+      line-height:1.7 !important;
+      color:#1e293b !important;
+    }
+    .trend-kw-title {
+      margin:1rem 0 .45rem !important;
+      font-size:.92rem !important;
+      font-weight:900 !important;
+      letter-spacing:.04em !important;
+      color:#0f172a !important;
+    }
+    .trend-chip {
+      border:1px solid #e2e8f0 !important;
+      background:#ffffff !important;
+      color:#334155 !important;
+      padding:.3rem .65rem !important;
+      border-radius:8px !important;
+      font-size:.74rem !important;
+    }
+    .know {
+      background:#fafbfc !important;
+      border:1px solid #e8eef5 !important;
+      border-radius:14px !important;
+      box-shadow:none !important;
+      padding:.9rem !important;
+      margin:0 0 1rem !important;
+    }
+    .know-note {
+      background:transparent !important;
+      border:0 !important;
+      padding:0 !important;
+      margin:0 0 .7rem !important;
+      color:#1e293b !important;
+    }
+    .know-item {
+      background:#ffffff !important;
+      border:1px solid #e8eef5 !important;
+      border-left:1px solid #e8eef5 !important;
+      border-radius:10px !important;
+      padding:.6rem .75rem !important;
+      margin:0 0 .45rem !important;
+    }
+    .toc-box,
+    .summary-box,
+    .vs-card {
+      background:#fafbfc !important;
+      border:1px solid #e8eef5 !important;
+      border-radius:14px !important;
+      box-shadow:none !important;
+      padding:.9rem 1rem !important;
+    }
+    .vs-table {
+      border:1px solid #e2e8f0 !important;
+      border-radius:10px !important;
+      box-shadow:none !important;
+    }
+    .vs-table thead th { background:#f1f5f9 !important; }
+    /* Decision block: stand out vs soft content cards */
+    .verdict,
+    .band-verdict {
+      margin:1.4rem 0 0 !important;
+      padding:0 !important;
+      border:2px solid #1e3a8a !important;
+      border-radius:16px !important;
+      background:#ffffff !important;
+      box-shadow:0 12px 32px rgba(30,58,138,.18) !important;
+      overflow:hidden !important;
+    }
+    .band-verdict { margin:1.35rem 0 1.6rem !important; }
+    .verdict-head,
+    .band-verdict .verdict-head {
+      display:flex !important;
+      flex-wrap:wrap !important;
+      align-items:center !important;
+      gap:.45rem .7rem !important;
+      margin:0 !important;
+      padding:.75rem 1.1rem !important;
+      background:#1e3a8a !important;
+      color:#fff !important;
+    }
+    .verdict-badge {
+      display:inline-flex !important;
+      align-items:center !important;
+      padding:.22rem .7rem !important;
+      border-radius:999px !important;
+      background:#fbbf24 !important;
+      color:#78350f !important;
+      font-size:.8rem !important;
+      font-weight:900 !important;
+      letter-spacing:.02em !important;
+      line-height:1.3 !important;
+    }
+    .verdict-cond {
+      font-size:.88rem !important;
+      font-weight:800 !important;
+      color:#dbeafe !important;
+      letter-spacing:.02em !important;
+    }
+    .verdict-body,
+    .band-verdict .verdict-body {
+      padding:1rem 1.15rem 1.15rem !important;
+      background:linear-gradient(180deg,#f8fbff 0%,#ffffff 55%) !important;
+    }
+    .verdict-source {
+      margin:0 0 .5rem !important;
+      font-size:.9rem !important;
+      font-weight:800 !important;
+      line-height:1.55 !important;
+      color:#1e40af !important;
+    }
+    .verdict-kicker,
+    .band-verdict > .verdict-kicker { display:none !important; }
+    .verdict-pick,
+    .band-verdict .verdict-pick {
+      margin:0 0 .45rem !important;
+      font-size:1.22rem !important;
+      font-weight:900 !important;
+      color:#0f172a !important;
+      line-height:1.4 !important;
+    }
+    .verdict-why, .verdict-alt,
+    .band-verdict .verdict-why,
+    .band-verdict .verdict-alt {
+      margin:0 0 .35rem !important;
+      font-size:.9rem !important;
+      line-height:1.65 !important;
+      color:#1e293b !important;
+      font-weight:600 !important;
+    }
+    .verdict-next,
+    .band-verdict .verdict-next {
+      margin:.65rem 0 0 !important;
+      font-size:.95rem !important;
+      font-weight:900 !important;
+    }
+    .verdict a,
+    .band-verdict a {
+      color:#1e40af !important;
+      text-decoration:none !important;
+      font-weight:900 !important;
+    }
+    .verdict a:hover,
+    .band-verdict a:hover { text-decoration:underline !important; }
+
   </style>
 </head>
 <body>
@@ -594,7 +1005,7 @@
         </li>
         <li>
           <a href="#persona">こんな人におすすめの機種</a>
-          <ol><li><a href="#persona-cost">コスパ重視の人</a></li><li><a href="#persona-quiet">静かに使いたい人</a></li><li><a href="#persona-pet">ペットのいる家</a></li><li><a href="#persona-floor">床をきれいにしたい人</a></li><li><a href="#persona-maint">手間を減らしたい人</a></li><li><a href="#persona-high">ハイエンドを探している人</a></li></ol>
+          <ol><li><a href="#persona-cost">コスパ重視の人</a></li><li><a href="#persona-quiet">静かに使いたい人</a></li><li><a href="#persona-pet">ペットのいる家</a></li><li><a href="#persona-floor">床をきれいにしたい人</a></li><li><a href="#persona-maint">手間を減らしたい人</a></li><li><a href="#persona-high">15万円以上で選ぶ人</a></li></ol>
         </li>
         <li><a href="#t50-vs-t50s">T50 OMNIとT50S OMNIの違い</a></li>
         <li><a href="#summary">まとめ｜エコバックスの選び方</a></li>
@@ -784,6 +1195,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">95点</span>
             </div>
+            <p class="entry-lead">床掃除に強い</p>
             <p class="entry-body">フローリング⁠の掃除性能⁠は非常⁠に高く評価されています⁠。「⁠吸引力⁠が申し分ない⁠」「⁠<strong class="em-key benefit">床⁠がピカピカ⁠になる</strong>⁠」⁠といった声⁠が多数あり⁠、髪⁠の毛⁠や微細なゴミまでしっかり除去⁠できる点⁠が強みです⁠。水拭き機能⁠も好評⁠で⁠、素足⁠で快適⁠に過ごせます⁠。</p>
           </div>
           <div class="entry good">
@@ -791,6 +1203,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">92点</span>
             </div>
+            <p class="entry-lead">ペット毛に強い</p>
             <p class="entry-body">ペット⁠の毛⁠の除去能力⁠は高く評価されています⁠。「⁠見落⁠としが<strong class="em-key benefit">ちなペット⁠の毛⁠もきれいに取れる</strong>⁠」⁠との口コミ⁠があり⁠、ペットオーナー⁠におすすめできる性能⁠です⁠。独自⁠のV字型ブラシ⁠が毛⁠の絡まりを防ぎ⁠、メンテナンス⁠の手間⁠を軽減します⁠。</p>
           </div>
           <div class="entry good">
@@ -798,6 +1211,7 @@
               <span class="entry-label">バッテリー</span>
               <span class="entry-score">90点</span>
             </div>
+            <p class="entry-lead">バッテリーの持ちは良好</p>
             <p class="entry-body">バッテリー⁠の持ちは良好⁠で「⁠広い家⁠も一回⁠の充電⁠で徹底清掃⁠」「⁠<strong class="em-key benefit">バッテリー⁠も長持ちで満足</strong>⁠」⁠といった評価⁠が寄せられています⁠。5年以上前⁠のモデル⁠と比較して⁠、性能⁠が大幅⁠に向上しているとの声⁠もあり⁠、長時間⁠の稼働⁠が期待⁠できます⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -805,6 +1219,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">70点</span>
             </div>
+            <p class="entry-lead">乗り上げて停止</p>
             <p class="entry-body">2cm程度⁠の段差⁠は乗り越えられるものの⁠、それ以上⁠の段差⁠やカーペット⁠の厚みによっては立ち往生するケース⁠が報告されています⁠。「⁠段<strong class="em-key demerit">差⁠で止まってしまうのが困りもの</strong>⁠」⁠という声⁠があり⁠、複雑な間取りや厚い敷物⁠がある環境⁠では<strong class="em-key demerit">注意⁠が必要</strong>⁠です⁠。</p>
           </div>
           <div class="entry warn">
@@ -812,6 +1227,7 @@
               <span class="entry-label">静音性</span>
               <span class="entry-score">82点</span>
             </div>
+            <p class="entry-lead">強力モードでは音が気になるよう</p>
             <p class="entry-body">動作音⁠については意見⁠が分かれます⁠。「⁠<strong class="em-key benefit">以前⁠の機種より静か</strong>⁠」「⁠夜間⁠でも使える⁠」⁠という肯定的な意見⁠がある一方⁠、「⁠<strong class="em-key demerit">音⁠がうるさい</strong>⁠」「⁠ゴトゴト⁠と響く⁠」⁠という指摘⁠も⁠。標準モード⁠では比較的静かですが⁠、強力モード⁠では音⁠が気⁠になるようです⁠。</p>
           </div></div></div></div></div>
           
@@ -852,11 +1268,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · 予算〜5万円なら</p>
-            <p class="verdict-pick"><strong>DEEBOT N30</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">予算〜5万円なら</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>DEEBOT N30</strong> が第一候補</p>
             <p class="verdict-why">理由：フローリング・ペット毛の評価が高い</p>
             <p class="verdict-alt">迷ったら比較：総合点2位の <strong>DEEBOT mini</strong> も候補</p>
             <p class="verdict-next"><a href="/products/deebot-n30">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/deebot-n30" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -883,6 +1305,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">98点</span>
             </div>
+            <p class="entry-lead">床がサラサラ</p>
             <p class="entry-body">10,000Pa⁠の強力な吸引力⁠で⁠、フローリング⁠のホコリ⁠や髪⁠の毛⁠を徹底的⁠に除去します⁠。多くの利用者⁠が掃除後⁠の床⁠がサラサラ⁠になると評価しており⁠、基本的な清掃能力⁠は非常⁠に高いレベル⁠にあります⁠。</p>
           </div>
           <div class="entry good">
@@ -890,6 +1313,7 @@
               <span class="entry-label">メンテナンス</span>
               <span class="entry-score">96点</span>
             </div>
+            <p class="entry-lead">ゴミパック不要のサイクロン式ステ</p>
             <p class="entry-body">ゴミパック不要⁠のサイクロン式ステーション⁠が最大⁠の魅力⁠です⁠。ランニングコスト⁠を抑えられ⁠、ゴミ捨ても簡単だと高く評価されています⁠。ブラシ⁠の毛絡みが少ないため⁠、本体⁠の手入れも非常⁠に楽⁠です⁠。</p>
           </div>
           <div class="entry good">
@@ -897,6 +1321,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">94点</span>
             </div>
+            <p class="entry-lead">吸引力が絶賛</p>
             <p class="entry-body">毛⁠が絡まりにくい「⁠Zero Tangle 2.0⁠」技術⁠が非常⁠に効果的⁠です⁠。犬⁠や猫⁠を多頭飼いしている家庭からも⁠、ブラシ⁠のメンテナンス⁠が楽⁠になったと絶賛されており⁠、ペットオーナー⁠にとって大きな利点⁠です⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -904,6 +1329,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">72点</span>
             </div>
+            <p class="entry-lead">乗り上げて停止</p>
             <p class="entry-body">公称2cm⁠の段差対応⁠ですが⁠、実際⁠には家具⁠の脚⁠や敷居⁠、厚めのラグ⁠で頻繁⁠に停止するとの報告⁠が多数あります⁠。走行ルート上⁠の小さな障害物⁠は事前⁠に片付けるか⁠、アプリ⁠で進入禁止エリア⁠を設定する必要⁠があります⁠。</p>
           </div>
           <div class="entry warn">
@@ -911,6 +1337,7 @@
               <span class="entry-label">静音性</span>
               <span class="entry-score">82点</span>
             </div>
+            <p class="entry-lead">最大パワー時やゴミ収集ステーショ</p>
             <p class="entry-body">動作音⁠は吸引力⁠の段階設定⁠で調整可能⁠です⁠。静音モード⁠は比較的静かですが⁠、最大パワー時⁠やゴミ収集ステーション⁠の作動音⁠は大きいと感じるユーザー⁠もいます⁠。在宅勤務中⁠や夜間⁠の使用⁠には<strong class="em-key demerit">注意⁠が必要</strong>⁠です⁠。</p>
           </div></div></div></div></div>
           
@@ -951,11 +1378,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · 予算5〜7万円なら</p>
-            <p class="verdict-pick"><strong>DEEBOT N30 PLUS</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">予算5〜7万円なら</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>DEEBOT N30 PLUS</strong> が第一候補</p>
             <p class="verdict-why">理由：フローリング・メンテナンスの評価が高い</p>
             <p class="verdict-alt">迷ったら比較：総合点2位の <strong>DEEBOT mini 2</strong> も候補</p>
             <p class="verdict-next"><a href="/products/deebot-n30-plus">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/deebot-n30-plus" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -982,6 +1415,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">97点</span>
             </div>
+            <p class="entry-lead">吸引＋水拭きでサラサラ</p>
             <p class="entry-body">本製品⁠で最⁠も評価⁠が高い項目⁠です⁠。ローラー式モップ⁠による加圧水拭きは「⁠<strong class="em-key benefit">床⁠がサラサラ</strong>⁠」「⁠<strong class="em-key benefit">ピカピカ⁠になる</strong>⁠」⁠と絶賛⁠の声⁠が多数⁠。汚水タンク⁠の汚れを見て⁠、その洗浄力⁠に驚くユーザー⁠が後⁠を絶ちません⁠。</p>
           </div>
           <div class="entry good">
@@ -989,6 +1423,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">94点</span>
             </div>
+            <p class="entry-lead">ペット毛に強い</p>
             <p class="entry-body">ペット⁠の毛⁠の吸引力⁠は非常⁠に高く評価されています⁠。「⁠犬⁠の抜け毛⁠もほぼ吸う⁠」「⁠毛⁠が絡まない⁠」⁠といった口コミ⁠が多く⁠、ペット⁠を飼っている家庭⁠にとって強力な味方⁠となる性能⁠を持っていることがわかります⁠。</p>
           </div>
           <div class="entry good">
@@ -996,6 +1431,7 @@
               <span class="entry-label">静音性</span>
               <span class="entry-score">88点</span>
             </div>
+            <p class="entry-lead">静か</p>
             <p class="entry-body">旧来⁠のロボット掃除機（⁠特⁠にルンバ⁠）⁠と比較して「⁠<strong class="em-key benefit">音⁠が静か</strong>⁠」⁠という意見⁠が多数⁠を占めます⁠。在宅中⁠や夜間⁠の稼働⁠でも気⁠になりにくいレベル⁠で⁠、テレビ⁠の音⁠を妨げないという声⁠もあり⁠、静音性⁠は高いです⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -1003,6 +1439,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">72点</span>
             </div>
+            <p class="entry-lead">乗り上げて停止</p>
             <p class="entry-body">2cm程度⁠の段差⁠は乗り越えられるとの評価⁠がある一方⁠、玄関などの高めの段差から落下したという報告⁠も散見されます⁠。落下防止センサー⁠は機能しますが⁠、過信⁠は禁物⁠で⁠、物理的な対策⁠が必要な場合⁠もあります⁠。</p>
           </div>
           <div class="entry warn">
@@ -1010,6 +1447,7 @@
               <span class="entry-label">メンテナンス</span>
               <span class="entry-score">75点</span>
             </div>
+            <p class="entry-lead">モップの自動洗浄・乾燥機能</p>
             <p class="entry-body">モップ⁠の自動洗浄・乾燥機能⁠は手間⁠の削減⁠に大きく貢献し高評価⁠です⁠。しかし⁠、汚水タンク⁠の清掃⁠や給水⁠、ステーション内部⁠のヘドロ掃除など⁠、定期的な手入れが必要⁠で⁠、これを手間⁠に感じる声⁠も多いです⁠。</p>
           </div></div></div></div></div>
           
@@ -1050,11 +1488,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · 予算7〜10万円なら</p>
-            <p class="verdict-pick"><strong>DEEBOT T80 OMNI</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">予算7〜10万円なら</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>DEEBOT T80 OMNI</strong> が第一候補</p>
             <p class="verdict-why">理由：フローリング・ペット毛の評価が高い</p>
             <p class="verdict-alt">迷ったら比較：総合点2位の <strong>DEEBOT T50 OMNI</strong> も候補</p>
             <p class="verdict-next"><a href="/products/deebot-t80-omni">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/deebot-t80-omni" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -1081,6 +1525,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">96点</span>
             </div>
+            <p class="entry-lead">吸引＋水拭きでサラサラ</p>
             <p class="entry-body">ローラーモップ⁠による水拭き性能⁠は絶賛されており⁠、素足⁠で歩くとサラサラ⁠になるとの声⁠が多数⁠です⁠。無垢材フローリング⁠でも水量⁠を調整して使える点⁠が評価されています⁠。</p>
           </div>
           <div class="entry good">
@@ -1088,6 +1533,7 @@
               <span class="entry-label">静音性</span>
               <span class="entry-score">95点</span>
             </div>
+            <p class="entry-lead">旧モデルや他社製品と比較して</p>
             <p class="entry-body">旧モデル⁠や他社製品⁠と比較して⁠、動作音⁠が非常⁠に静かであるという意見⁠が大多数⁠です⁠。夜間⁠に使用しても気⁠にならないレベル⁠で⁠、在宅中⁠でも快適⁠に掃除⁠を<strong class="em-key benefit">任せられます</strong>⁠。</p>
           </div>
           <div class="entry good">
@@ -1095,6 +1541,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">94点</span>
             </div>
+            <p class="entry-lead">ペット毛に強い</p>
             <p class="entry-body">ペット⁠の毛⁠や猫砂⁠を<strong class="em-key benefit">しっかり吸引</strong>する能力⁠が高く評価されています⁠。ペット⁠がいる家庭⁠では⁠、床⁠のザラつきがなくなり⁠、清潔⁠を保てると満足⁠の声⁠が上⁠がっています⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -1102,6 +1549,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">78点</span>
             </div>
+            <p class="entry-lead">乗り上げて停止</p>
             <p class="entry-body">玄関などの段差⁠はしっかり検知して落下⁠を回避します⁠。一方⁠で⁠、カーペット⁠の縁⁠や敷居など⁠、乗り越えを期待する場面⁠で苦戦するケース⁠も一部報告されています⁠。</p>
           </div>
           <div class="entry warn">
@@ -1109,6 +1557,7 @@
               <span class="entry-label">バッテリー</span>
               <span class="entry-score">80点</span>
             </div>
+            <p class="entry-lead">バッテリーに不安</p>
             <p class="entry-body">約50㎡⁠を75分⁠で掃除完了するなど⁠、一般的な家庭⁠では十分な稼働時間⁠です⁠。広い家⁠でも自動⁠で充電⁠に戻り再開するため⁠、バッテリー⁠に関する不満⁠はほぼ見られません⁠。</p>
           </div></div></div></div></div>
           
@@ -1149,11 +1598,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · 予算10〜15万円なら</p>
-            <p class="verdict-pick"><strong>DEEBOT T90 OMNI</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">予算10〜15万円なら</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>DEEBOT T90 OMNI</strong> が第一候補</p>
             <p class="verdict-why">理由：フローリング・静音性の評価が高い</p>
             <p class="verdict-alt">迷ったら比較：総合点2位の <strong>DEEBOT T50S OMNI</strong> も候補</p>
             <p class="verdict-next"><a href="/products/deebot-t90-omni">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/deebot-t90-omni" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -1180,6 +1635,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">92点</span>
             </div>
+            <p class="entry-lead">吸引＋水拭きでサラサラ</p>
             <p class="entry-body">回転するローラーモップ⁠による水拭き性能⁠は非常⁠に高く⁠、「⁠<strong class="em-key benefit">床⁠がサラサラ⁠になる</strong>⁠」⁠と絶賛されています⁠。汚れたモップ⁠を自動⁠で温水洗浄する機能⁠も⁠、清潔さを保てる点⁠で多くの支持⁠を得ています⁠。</p>
           </div>
           <div class="entry good">
@@ -1187,6 +1643,7 @@
               <span class="entry-label">静音性</span>
               <span class="entry-score">83点</span>
             </div>
+            <p class="entry-lead">旧来のロボット掃除機</p>
             <p class="entry-body">旧来⁠のロボット掃除機⁠と比較して「⁠<strong class="em-key benefit">動作音⁠が静か</strong>⁠」⁠という意見⁠が多く⁠、在宅中⁠でも気⁠になりにくいと好評⁠です⁠。ただし⁠、ステーション⁠でのゴミ収集時⁠やモップ乾燥時⁠には⁠、相応⁠の騒音⁠が発生します⁠。</p>
           </div>
           <div class="entry good">
@@ -1194,6 +1651,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">82点</span>
             </div>
+            <p class="entry-lead">ペット毛に強い</p>
             <p class="entry-body">猫⁠の毛⁠や短毛種⁠の犬⁠の毛⁠に対しては⁠、高い吸引力⁠で効果⁠を発揮するという声⁠が多数⁠です⁠。しかし⁠、長毛種⁠の毛⁠はブラシ⁠やホイール⁠に絡まりやすく⁠、頻繁な手入れが必要⁠になるという厳しい指摘⁠もあります⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -1201,6 +1659,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">44点</span>
             </div>
+            <p class="entry-lead">乗り上げて停止</p>
             <p class="entry-body">数ミリ程度⁠の段差⁠は乗り越えますが⁠、5mm以上⁠のカーペット⁠や椅子⁠の脚⁠、敷居などで<strong class="em-key demerit">立ち往生</strong>するケース⁠が頻繁⁠に報告されています⁠。公称値以下⁠の段差⁠でも引っかかることがあり⁠、過度な期待⁠は禁物⁠です⁠。</p>
           </div>
           <div class="entry warn">
@@ -1208,6 +1667,7 @@
               <span class="entry-label">メンテナンス</span>
               <span class="entry-score">74点</span>
             </div>
+            <p class="entry-lead">日々の手入れは大幅に削減され</p>
             <p class="entry-body">モップ⁠の自動洗浄・乾燥⁠やゴミ⁠の自動収集機能⁠により⁠、日々⁠の手入れは大幅⁠に削減されます⁠。しかし⁠、汚水タンク⁠の清掃⁠や⁠、本体ブラシ⁠、センサー類⁠の定期的な手入れは依然⁠として必要⁠です⁠。</p>
           </div></div></div></div></div>
           
@@ -1248,11 +1708,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · 予算15〜20万円なら</p>
-            <p class="verdict-pick"><strong>DEEBOT X8 PRO OMNI</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">予算15〜20万円なら</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>DEEBOT X8 PRO OMNI</strong> が第一候補</p>
             <p class="verdict-why">理由：フローリング・静音性の評価が高い</p>
             <p class="verdict-alt">軸を変えるなら <a href="#feature">機能別</a> / <a href="#persona">暮らし方別</a> / <a href="#price">予算別</a> へ</p>
             <p class="verdict-next"><a href="/products/deebot-x8-pro-omni">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/deebot-x8-pro-omni" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -1279,6 +1745,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">98点</span>
             </div>
+            <p class="entry-lead">吸引＋水拭きでサラサラ</p>
             <p class="entry-body">床掃除⁠の能力⁠は非常⁠に高く⁠、吸引⁠と水拭きの両方⁠で「⁠<strong class="em-key benefit">床⁠がサラサラ</strong>⁠」「⁠<strong class="em-key benefit">ピカピカ</strong>⁠」⁠といった満足⁠の声⁠が多いです⁠。</p>
           </div>
           <div class="entry good">
@@ -1286,6 +1753,7 @@
               <span class="entry-label">メンテナンス</span>
               <span class="entry-score">96点</span>
             </div>
+            <p class="entry-lead">メンテが楽</p>
             <p class="entry-body">自動ゴミ収集⁠とモップ洗浄・乾燥機能⁠により⁠、メンテナンス⁠の<strong class="em-key benefit">手間⁠が大幅⁠に削減</strong>され⁠、非常⁠に高い評価⁠を得ています⁠。</p>
           </div>
           <div class="entry good">
@@ -1293,6 +1761,7 @@
               <span class="entry-label">アプリ</span>
               <span class="entry-score">94点</span>
             </div>
+            <p class="entry-lead">基本的な操作性で高評価ですが</p>
             <p class="entry-body">アプリ⁠はマッピング⁠の速さや精度⁠、基本的な操作性⁠で高評価⁠ですが⁠、一部初期設定⁠の難しさも指摘されています⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -1300,6 +1769,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">75点</span>
             </div>
+            <p class="entry-lead">乗り上げて停止</p>
             <p class="entry-body">段差乗り越え性能⁠は向上していますが⁠、玄関⁠の段差⁠やカーテン下など⁠、特定⁠の障害物⁠で引っかかるケース⁠も見られます⁠。</p>
           </div>
           <div class="entry warn">
@@ -1307,6 +1777,7 @@
               <span class="entry-label">カーペット</span>
               <span class="entry-score">85点</span>
             </div>
+            <p class="entry-lead">厚手は苦手</p>
             <p class="entry-body">カーペット⁠の吸引力⁠は評価⁠が高いものの⁠、水拭き機能⁠との併用時⁠にラグ⁠が濡れるという指摘⁠もあります⁠。</p>
           </div></div></div></div></div>
           
@@ -1347,11 +1818,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · 予算20万円〜なら</p>
-            <p class="verdict-pick"><strong>DEEBOT X11 OmniCyclone</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">予算20万円〜なら</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>DEEBOT X11 OmniCyclone</strong> が第一候補</p>
             <p class="verdict-why">理由：フローリング・メンテナンスの評価が高い</p>
             <p class="verdict-alt">軸を変えるなら <a href="#feature">機能別</a> / <a href="#persona">暮らし方別</a> / <a href="#price">予算別</a> へ</p>
             <p class="verdict-next"><a href="/products/deebot-x11-omnicyclone">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/deebot-x11-omnicyclone" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -1384,6 +1861,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">97点</span>
             </div>
+            <p class="entry-lead">吸引＋水拭きでサラサラ</p>
             <p class="entry-body">本製品⁠で最⁠も評価⁠が高い項目⁠です⁠。ローラー式モップ⁠による加圧水拭きは「⁠<strong class="em-key benefit">床⁠がサラサラ</strong>⁠」「⁠<strong class="em-key benefit">ピカピカ⁠になる</strong>⁠」⁠と絶賛⁠の声⁠が多数⁠。汚水タンク⁠の汚れを見て⁠、その洗浄力⁠に驚くユーザー⁠が後⁠を絶ちません⁠。</p>
           </div>
           <div class="entry good">
@@ -1391,6 +1869,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">94点</span>
             </div>
+            <p class="entry-lead">ペット毛に強い</p>
             <p class="entry-body">ペット⁠の毛⁠の吸引力⁠は非常⁠に高く評価されています⁠。「⁠犬⁠の抜け毛⁠もほぼ吸う⁠」「⁠毛⁠が絡まない⁠」⁠といった口コミ⁠が多く⁠、ペット⁠を飼っている家庭⁠にとって強力な味方⁠となる性能⁠を持っていることがわかります⁠。</p>
           </div>
           <div class="entry good">
@@ -1398,6 +1877,7 @@
               <span class="entry-label">静音性</span>
               <span class="entry-score">88点</span>
             </div>
+            <p class="entry-lead">静か</p>
             <p class="entry-body">旧来⁠のロボット掃除機（⁠特⁠にルンバ⁠）⁠と比較して「⁠<strong class="em-key benefit">音⁠が静か</strong>⁠」⁠という意見⁠が多数⁠を占めます⁠。在宅中⁠や夜間⁠の稼働⁠でも気⁠になりにくいレベル⁠で⁠、テレビ⁠の音⁠を妨げないという声⁠もあり⁠、静音性⁠は高いです⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -1405,6 +1885,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">72点</span>
             </div>
+            <p class="entry-lead">乗り上げて停止</p>
             <p class="entry-body">2cm程度⁠の段差⁠は乗り越えられるとの評価⁠がある一方⁠、玄関などの高めの段差から落下したという報告⁠も散見されます⁠。落下防止センサー⁠は機能しますが⁠、過信⁠は禁物⁠で⁠、物理的な対策⁠が必要な場合⁠もあります⁠。</p>
           </div>
           <div class="entry warn">
@@ -1412,6 +1893,7 @@
               <span class="entry-label">メンテナンス</span>
               <span class="entry-score">75点</span>
             </div>
+            <p class="entry-lead">モップの自動洗浄・乾燥機能</p>
             <p class="entry-body">モップ⁠の自動洗浄・乾燥機能⁠は手間⁠の削減⁠に大きく貢献し高評価⁠です⁠。しかし⁠、汚水タンク⁠の清掃⁠や給水⁠、ステーション内部⁠のヘドロ掃除など⁠、定期的な手入れが必要⁠で⁠、これを手間⁠に感じる声⁠も多いです⁠。</p>
           </div></div></div></div></div>
           
@@ -1452,11 +1934,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · フローリング掃除が得意な機種</p>
-            <p class="verdict-pick"><strong>DEEBOT T80 OMNI</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">フローリング掃除が得意な機種</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>DEEBOT T80 OMNI</strong> が第一候補</p>
             <p class="verdict-why">理由：フローリング・ペット毛の評価が高い</p>
             <p class="verdict-alt">迷ったら比較：総合点2位の <strong>DEEBOT N30 PLUSです。</strong> も候補</p>
             <p class="verdict-next"><a href="/products/deebot-t80-omni">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/deebot-t80-omni" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -1483,6 +1971,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">96点</span>
             </div>
+            <p class="entry-lead">吸引＋水拭きでサラサラ</p>
             <p class="entry-body">ローラーモップ⁠による水拭き性能⁠は絶賛されており⁠、素足⁠で歩くとサラサラ⁠になるとの声⁠が多数⁠です⁠。無垢材フローリング⁠でも水量⁠を調整して使える点⁠が評価されています⁠。</p>
           </div>
           <div class="entry good">
@@ -1490,6 +1979,7 @@
               <span class="entry-label">静音性</span>
               <span class="entry-score">95点</span>
             </div>
+            <p class="entry-lead">旧モデルや他社製品と比較して</p>
             <p class="entry-body">旧モデル⁠や他社製品⁠と比較して⁠、動作音⁠が非常⁠に静かであるという意見⁠が大多数⁠です⁠。夜間⁠に使用しても気⁠にならないレベル⁠で⁠、在宅中⁠でも快適⁠に掃除⁠を<strong class="em-key benefit">任せられます</strong>⁠。</p>
           </div>
           <div class="entry good">
@@ -1497,6 +1987,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">94点</span>
             </div>
+            <p class="entry-lead">ペット毛に強い</p>
             <p class="entry-body">ペット⁠の毛⁠や猫砂⁠を<strong class="em-key benefit">しっかり吸引</strong>する能力⁠が高く評価されています⁠。ペット⁠がいる家庭⁠では⁠、床⁠のザラつきがなくなり⁠、清潔⁠を保てると満足⁠の声⁠が上⁠がっています⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -1504,6 +1995,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">78点</span>
             </div>
+            <p class="entry-lead">乗り上げて停止</p>
             <p class="entry-body">玄関などの段差⁠はしっかり検知して落下⁠を回避します⁠。一方⁠で⁠、カーペット⁠の縁⁠や敷居など⁠、乗り越えを期待する場面⁠で苦戦するケース⁠も一部報告されています⁠。</p>
           </div>
           <div class="entry warn">
@@ -1511,6 +2003,7 @@
               <span class="entry-label">バッテリー</span>
               <span class="entry-score">80点</span>
             </div>
+            <p class="entry-lead">バッテリーに不安</p>
             <p class="entry-body">約50㎡⁠を75分⁠で掃除完了するなど⁠、一般的な家庭⁠では十分な稼働時間⁠です⁠。広い家⁠でも自動⁠で充電⁠に戻り再開するため⁠、バッテリー⁠に関する不満⁠はほぼ見られません⁠。</p>
           </div></div></div></div></div>
           
@@ -1551,11 +2044,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · カーペット掃除が得意な機種</p>
-            <p class="verdict-pick"><strong>DEEBOT T90 OMNI</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">カーペット掃除が得意な機種</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>DEEBOT T90 OMNI</strong> が第一候補</p>
             <p class="verdict-why">理由：フローリング・静音性の評価が高い</p>
             <p class="verdict-alt">迷ったら比較：総合点2位の <strong>DEEBOT N30 PLUSです。</strong> も候補</p>
             <p class="verdict-next"><a href="/products/deebot-t90-omni">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/deebot-t90-omni" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -1582,6 +2081,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">96点</span>
             </div>
+            <p class="entry-lead">吸引＋水拭きでサラサラ</p>
             <p class="entry-body">ローラーモップ⁠による水拭き性能⁠は絶賛されており⁠、素足⁠で歩くとサラサラ⁠になるとの声⁠が多数⁠です⁠。無垢材フローリング⁠でも水量⁠を調整して使える点⁠が評価されています⁠。</p>
           </div>
           <div class="entry good">
@@ -1589,6 +2089,7 @@
               <span class="entry-label">静音性</span>
               <span class="entry-score">95点</span>
             </div>
+            <p class="entry-lead">旧モデルや他社製品と比較して</p>
             <p class="entry-body">旧モデル⁠や他社製品⁠と比較して⁠、動作音⁠が非常⁠に静かであるという意見⁠が大多数⁠です⁠。夜間⁠に使用しても気⁠にならないレベル⁠で⁠、在宅中⁠でも快適⁠に掃除⁠を<strong class="em-key benefit">任せられます</strong>⁠。</p>
           </div>
           <div class="entry good">
@@ -1596,6 +2097,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">94点</span>
             </div>
+            <p class="entry-lead">ペット毛に強い</p>
             <p class="entry-body">ペット⁠の毛⁠や猫砂⁠を<strong class="em-key benefit">しっかり吸引</strong>する能力⁠が高く評価されています⁠。ペット⁠がいる家庭⁠では⁠、床⁠のザラつきがなくなり⁠、清潔⁠を保てると満足⁠の声⁠が上⁠がっています⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -1603,6 +2105,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">78点</span>
             </div>
+            <p class="entry-lead">乗り上げて停止</p>
             <p class="entry-body">玄関などの段差⁠はしっかり検知して落下⁠を回避します⁠。一方⁠で⁠、カーペット⁠の縁⁠や敷居など⁠、乗り越えを期待する場面⁠で苦戦するケース⁠も一部報告されています⁠。</p>
           </div>
           <div class="entry warn">
@@ -1610,6 +2113,7 @@
               <span class="entry-label">バッテリー</span>
               <span class="entry-score">80点</span>
             </div>
+            <p class="entry-lead">バッテリーに不安</p>
             <p class="entry-body">約50㎡⁠を75分⁠で掃除完了するなど⁠、一般的な家庭⁠では十分な稼働時間⁠です⁠。広い家⁠でも自動⁠で充電⁠に戻り再開するため⁠、バッテリー⁠に関する不満⁠はほぼ見られません⁠。</p>
           </div></div></div></div></div>
           
@@ -1650,11 +2154,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · 静音性に優れた機種</p>
-            <p class="verdict-pick"><strong>DEEBOT T90 OMNI</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">静音性に優れた機種</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>DEEBOT T90 OMNI</strong> が第一候補</p>
             <p class="verdict-why">理由：フローリング・静音性の評価が高い</p>
             <p class="verdict-alt">迷ったら比較：総合点2位の <strong>DEEBOT miniです。</strong> も候補</p>
             <p class="verdict-next"><a href="/products/deebot-t90-omni">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/deebot-t90-omni" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -1681,6 +2191,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">97点</span>
             </div>
+            <p class="entry-lead">吸引＋水拭きでサラサラ</p>
             <p class="entry-body">本製品⁠で最⁠も評価⁠が高い項目⁠です⁠。ローラー式モップ⁠による加圧水拭きは「⁠<strong class="em-key benefit">床⁠がサラサラ</strong>⁠」「⁠<strong class="em-key benefit">ピカピカ⁠になる</strong>⁠」⁠と絶賛⁠の声⁠が多数⁠。汚水タンク⁠の汚れを見て⁠、その洗浄力⁠に驚くユーザー⁠が後⁠を絶ちません⁠。</p>
           </div>
           <div class="entry good">
@@ -1688,6 +2199,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">94点</span>
             </div>
+            <p class="entry-lead">ペット毛に強い</p>
             <p class="entry-body">ペット⁠の毛⁠の吸引力⁠は非常⁠に高く評価されています⁠。「⁠犬⁠の抜け毛⁠もほぼ吸う⁠」「⁠毛⁠が絡まない⁠」⁠といった口コミ⁠が多く⁠、ペット⁠を飼っている家庭⁠にとって強力な味方⁠となる性能⁠を持っていることがわかります⁠。</p>
           </div>
           <div class="entry good">
@@ -1695,6 +2207,7 @@
               <span class="entry-label">静音性</span>
               <span class="entry-score">88点</span>
             </div>
+            <p class="entry-lead">静か</p>
             <p class="entry-body">旧来⁠のロボット掃除機（⁠特⁠にルンバ⁠）⁠と比較して「⁠<strong class="em-key benefit">音⁠が静か</strong>⁠」⁠という意見⁠が多数⁠を占めます⁠。在宅中⁠や夜間⁠の稼働⁠でも気⁠になりにくいレベル⁠で⁠、テレビ⁠の音⁠を妨げないという声⁠もあり⁠、静音性⁠は高いです⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -1702,6 +2215,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">72点</span>
             </div>
+            <p class="entry-lead">乗り上げて停止</p>
             <p class="entry-body">2cm程度⁠の段差⁠は乗り越えられるとの評価⁠がある一方⁠、玄関などの高めの段差から落下したという報告⁠も散見されます⁠。落下防止センサー⁠は機能しますが⁠、過信⁠は禁物⁠で⁠、物理的な対策⁠が必要な場合⁠もあります⁠。</p>
           </div>
           <div class="entry warn">
@@ -1709,6 +2223,7 @@
               <span class="entry-label">メンテナンス</span>
               <span class="entry-score">75点</span>
             </div>
+            <p class="entry-lead">モップの自動洗浄・乾燥機能</p>
             <p class="entry-body">モップ⁠の自動洗浄・乾燥機能⁠は手間⁠の削減⁠に大きく貢献し高評価⁠です⁠。しかし⁠、汚水タンク⁠の清掃⁠や給水⁠、ステーション内部⁠のヘドロ掃除など⁠、定期的な手入れが必要⁠で⁠、これを手間⁠に感じる声⁠も多いです⁠。</p>
           </div></div></div></div></div>
           
@@ -1749,11 +2264,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · ペットの毛に強い機種</p>
-            <p class="verdict-pick"><strong>DEEBOT T80 OMNI</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">ペットの毛に強い機種</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>DEEBOT T80 OMNI</strong> が第一候補</p>
             <p class="verdict-why">理由：フローリング・ペット毛の評価が高い</p>
             <p class="verdict-alt">迷ったら比較：総合点2位の <strong>DEEBOT N30 PLUSです。</strong> も候補</p>
             <p class="verdict-next"><a href="/products/deebot-t80-omni">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/deebot-t80-omni" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -1780,6 +2301,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">98点</span>
             </div>
+            <p class="entry-lead">床がサラサラ</p>
             <p class="entry-body">10,000Pa⁠の強力な吸引力⁠で⁠、フローリング⁠のホコリ⁠や髪⁠の毛⁠を徹底的⁠に除去します⁠。多くの利用者⁠が掃除後⁠の床⁠がサラサラ⁠になると評価しており⁠、基本的な清掃能力⁠は非常⁠に高いレベル⁠にあります⁠。</p>
           </div>
           <div class="entry good">
@@ -1787,6 +2309,7 @@
               <span class="entry-label">メンテナンス</span>
               <span class="entry-score">96点</span>
             </div>
+            <p class="entry-lead">ゴミパック不要のサイクロン式ステ</p>
             <p class="entry-body">ゴミパック不要⁠のサイクロン式ステーション⁠が最大⁠の魅力⁠です⁠。ランニングコスト⁠を抑えられ⁠、ゴミ捨ても簡単だと高く評価されています⁠。ブラシ⁠の毛絡みが少ないため⁠、本体⁠の手入れも非常⁠に楽⁠です⁠。</p>
           </div>
           <div class="entry good">
@@ -1794,6 +2317,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">94点</span>
             </div>
+            <p class="entry-lead">吸引力が絶賛</p>
             <p class="entry-body">毛⁠が絡まりにくい「⁠Zero Tangle 2.0⁠」技術⁠が非常⁠に効果的⁠です⁠。犬⁠や猫⁠を多頭飼いしている家庭からも⁠、ブラシ⁠のメンテナンス⁠が楽⁠になったと絶賛されており⁠、ペットオーナー⁠にとって大きな利点⁠です⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -1801,6 +2325,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">72点</span>
             </div>
+            <p class="entry-lead">乗り上げて停止</p>
             <p class="entry-body">公称2cm⁠の段差対応⁠ですが⁠、実際⁠には家具⁠の脚⁠や敷居⁠、厚めのラグ⁠で頻繁⁠に停止するとの報告⁠が多数あります⁠。走行ルート上⁠の小さな障害物⁠は事前⁠に片付けるか⁠、アプリ⁠で進入禁止エリア⁠を設定する必要⁠があります⁠。</p>
           </div>
           <div class="entry warn">
@@ -1808,6 +2333,7 @@
               <span class="entry-label">静音性</span>
               <span class="entry-score">82点</span>
             </div>
+            <p class="entry-lead">最大パワー時やゴミ収集ステーショ</p>
             <p class="entry-body">動作音⁠は吸引力⁠の段階設定⁠で調整可能⁠です⁠。静音モード⁠は比較的静かですが⁠、最大パワー時⁠やゴミ収集ステーション⁠の作動音⁠は大きいと感じるユーザー⁠もいます⁠。在宅勤務中⁠や夜間⁠の使用⁠には<strong class="em-key demerit">注意⁠が必要</strong>⁠です⁠。</p>
           </div></div></div></div></div>
           
@@ -1848,11 +2374,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · 手入れが楽な機種</p>
-            <p class="verdict-pick"><strong>DEEBOT N30 PLUS</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">手入れが楽な機種</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>DEEBOT N30 PLUS</strong> が第一候補</p>
             <p class="verdict-why">理由：フローリング・メンテナンスの評価が高い</p>
             <p class="verdict-alt">迷ったら比較：総合点2位の <strong>DEEBOT X11 OmniCycloneです。</strong> も候補</p>
             <p class="verdict-next"><a href="/products/deebot-n30-plus">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/deebot-n30-plus" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -1879,6 +2411,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">95点</span>
             </div>
+            <p class="entry-lead">床掃除に強い</p>
             <p class="entry-body">フローリング⁠の掃除性能⁠は非常⁠に高く評価されています⁠。「⁠吸引力⁠が申し分ない⁠」「⁠<strong class="em-key benefit">床⁠がピカピカ⁠になる</strong>⁠」⁠といった声⁠が多数あり⁠、髪⁠の毛⁠や微細なゴミまでしっかり除去⁠できる点⁠が強みです⁠。水拭き機能⁠も好評⁠で⁠、素足⁠で快適⁠に過ごせます⁠。</p>
           </div>
           <div class="entry good">
@@ -1886,6 +2419,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">92点</span>
             </div>
+            <p class="entry-lead">ペット毛に強い</p>
             <p class="entry-body">ペット⁠の毛⁠の除去能力⁠は高く評価されています⁠。「⁠見落⁠としが<strong class="em-key benefit">ちなペット⁠の毛⁠もきれいに取れる</strong>⁠」⁠との口コミ⁠があり⁠、ペットオーナー⁠におすすめできる性能⁠です⁠。独自⁠のV字型ブラシ⁠が毛⁠の絡まりを防ぎ⁠、メンテナンス⁠の手間⁠を軽減します⁠。</p>
           </div>
           <div class="entry good">
@@ -1893,6 +2427,7 @@
               <span class="entry-label">バッテリー</span>
               <span class="entry-score">90点</span>
             </div>
+            <p class="entry-lead">バッテリーの持ちは良好</p>
             <p class="entry-body">バッテリー⁠の持ちは良好⁠で「⁠広い家⁠も一回⁠の充電⁠で徹底清掃⁠」「⁠<strong class="em-key benefit">バッテリー⁠も長持ちで満足</strong>⁠」⁠といった評価⁠が寄せられています⁠。5年以上前⁠のモデル⁠と比較して⁠、性能⁠が大幅⁠に向上しているとの声⁠もあり⁠、長時間⁠の稼働⁠が期待⁠できます⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -1900,6 +2435,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">70点</span>
             </div>
+            <p class="entry-lead">乗り上げて停止</p>
             <p class="entry-body">2cm程度⁠の段差⁠は乗り越えられるものの⁠、それ以上⁠の段差⁠やカーペット⁠の厚みによっては立ち往生するケース⁠が報告されています⁠。「⁠段<strong class="em-key demerit">差⁠で止まってしまうのが困りもの</strong>⁠」⁠という声⁠があり⁠、複雑な間取りや厚い敷物⁠がある環境⁠では<strong class="em-key demerit">注意⁠が必要</strong>⁠です⁠。</p>
           </div>
           <div class="entry warn">
@@ -1907,6 +2443,7 @@
               <span class="entry-label">静音性</span>
               <span class="entry-score">82点</span>
             </div>
+            <p class="entry-lead">強力モードでは音が気になるよう</p>
             <p class="entry-body">動作音⁠については意見⁠が分かれます⁠。「⁠<strong class="em-key benefit">以前⁠の機種より静か</strong>⁠」「⁠夜間⁠でも使える⁠」⁠という肯定的な意見⁠がある一方⁠、「⁠<strong class="em-key demerit">音⁠がうるさい</strong>⁠」「⁠ゴトゴト⁠と響く⁠」⁠という指摘⁠も⁠。標準モード⁠では比較的静かですが⁠、強力モード⁠では音⁠が気⁠になるようです⁠。</p>
           </div></div></div></div></div>
           
@@ -1947,11 +2484,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · バッテリー持ちが良い機種</p>
-            <p class="verdict-pick"><strong>DEEBOT N30</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">バッテリー持ちが良い機種</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>DEEBOT N30</strong> が第一候補</p>
             <p class="verdict-why">理由：フローリング・ペット毛の評価が高い</p>
             <p class="verdict-alt">迷ったら比較：総合点2位の <strong>DEEBOT N30 PLUSです。</strong> も候補</p>
             <p class="verdict-next"><a href="/products/deebot-n30">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/deebot-n30" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -1984,6 +2527,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">97点</span>
             </div>
+            <p class="entry-lead">吸引＋水拭きでサラサラ</p>
             <p class="entry-body">本製品⁠で最⁠も評価⁠が高い項目⁠です⁠。ローラー式モップ⁠による加圧水拭きは「⁠<strong class="em-key benefit">床⁠がサラサラ</strong>⁠」「⁠<strong class="em-key benefit">ピカピカ⁠になる</strong>⁠」⁠と絶賛⁠の声⁠が多数⁠。汚水タンク⁠の汚れを見て⁠、その洗浄力⁠に驚くユーザー⁠が後⁠を絶ちません⁠。</p>
           </div>
           <div class="entry good">
@@ -1991,6 +2535,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">94点</span>
             </div>
+            <p class="entry-lead">ペット毛に強い</p>
             <p class="entry-body">ペット⁠の毛⁠の吸引力⁠は非常⁠に高く評価されています⁠。「⁠犬⁠の抜け毛⁠もほぼ吸う⁠」「⁠毛⁠が絡まない⁠」⁠といった口コミ⁠が多く⁠、ペット⁠を飼っている家庭⁠にとって強力な味方⁠となる性能⁠を持っていることがわかります⁠。</p>
           </div>
           <div class="entry good">
@@ -1998,6 +2543,7 @@
               <span class="entry-label">静音性</span>
               <span class="entry-score">88点</span>
             </div>
+            <p class="entry-lead">静か</p>
             <p class="entry-body">旧来⁠のロボット掃除機（⁠特⁠にルンバ⁠）⁠と比較して「⁠<strong class="em-key benefit">音⁠が静か</strong>⁠」⁠という意見⁠が多数⁠を占めます⁠。在宅中⁠や夜間⁠の稼働⁠でも気⁠になりにくいレベル⁠で⁠、テレビ⁠の音⁠を妨げないという声⁠もあり⁠、静音性⁠は高いです⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -2005,6 +2551,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">72点</span>
             </div>
+            <p class="entry-lead">乗り上げて停止</p>
             <p class="entry-body">2cm程度⁠の段差⁠は乗り越えられるとの評価⁠がある一方⁠、玄関などの高めの段差から落下したという報告⁠も散見されます⁠。落下防止センサー⁠は機能しますが⁠、過信⁠は禁物⁠で⁠、物理的な対策⁠が必要な場合⁠もあります⁠。</p>
           </div>
           <div class="entry warn">
@@ -2012,6 +2559,7 @@
               <span class="entry-label">メンテナンス</span>
               <span class="entry-score">75点</span>
             </div>
+            <p class="entry-lead">モップの自動洗浄・乾燥機能</p>
             <p class="entry-body">モップ⁠の自動洗浄・乾燥機能⁠は手間⁠の削減⁠に大きく貢献し高評価⁠です⁠。しかし⁠、汚水タンク⁠の清掃⁠や給水⁠、ステーション内部⁠のヘドロ掃除など⁠、定期的な手入れが必要⁠で⁠、これを手間⁠に感じる声⁠も多いです⁠。</p>
           </div></div></div></div></div>
           
@@ -2052,11 +2600,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · コスパ重視の人なら</p>
-            <p class="verdict-pick"><strong>DEEBOT T80 OMNI</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">コスパ重視の人なら</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>DEEBOT T80 OMNI</strong> が第一候補</p>
             <p class="verdict-why">理由：フローリング・ペット毛の評価が高い</p>
             <p class="verdict-alt">軸を変えるなら <a href="#feature">機能別</a> / <a href="#persona">暮らし方別</a> / <a href="#price">予算別</a> へ</p>
             <p class="verdict-next"><a href="/products/deebot-t80-omni">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/deebot-t80-omni" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -2083,6 +2637,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">96点</span>
             </div>
+            <p class="entry-lead">吸引＋水拭きでサラサラ</p>
             <p class="entry-body">ローラーモップ⁠による水拭き性能⁠は絶賛されており⁠、素足⁠で歩くとサラサラ⁠になるとの声⁠が多数⁠です⁠。無垢材フローリング⁠でも水量⁠を調整して使える点⁠が評価されています⁠。</p>
           </div>
           <div class="entry good">
@@ -2090,6 +2645,7 @@
               <span class="entry-label">静音性</span>
               <span class="entry-score">95点</span>
             </div>
+            <p class="entry-lead">旧モデルや他社製品と比較して</p>
             <p class="entry-body">旧モデル⁠や他社製品⁠と比較して⁠、動作音⁠が非常⁠に静かであるという意見⁠が大多数⁠です⁠。夜間⁠に使用しても気⁠にならないレベル⁠で⁠、在宅中⁠でも快適⁠に掃除⁠を<strong class="em-key benefit">任せられます</strong>⁠。</p>
           </div>
           <div class="entry good">
@@ -2097,6 +2653,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">94点</span>
             </div>
+            <p class="entry-lead">ペット毛に強い</p>
             <p class="entry-body">ペット⁠の毛⁠や猫砂⁠を<strong class="em-key benefit">しっかり吸引</strong>する能力⁠が高く評価されています⁠。ペット⁠がいる家庭⁠では⁠、床⁠のザラつきがなくなり⁠、清潔⁠を保てると満足⁠の声⁠が上⁠がっています⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -2104,6 +2661,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">78点</span>
             </div>
+            <p class="entry-lead">乗り上げて停止</p>
             <p class="entry-body">玄関などの段差⁠はしっかり検知して落下⁠を回避します⁠。一方⁠で⁠、カーペット⁠の縁⁠や敷居など⁠、乗り越えを期待する場面⁠で苦戦するケース⁠も一部報告されています⁠。</p>
           </div>
           <div class="entry warn">
@@ -2111,6 +2669,7 @@
               <span class="entry-label">バッテリー</span>
               <span class="entry-score">80点</span>
             </div>
+            <p class="entry-lead">バッテリーに不安</p>
             <p class="entry-body">約50㎡⁠を75分⁠で掃除完了するなど⁠、一般的な家庭⁠では十分な稼働時間⁠です⁠。広い家⁠でも自動⁠で充電⁠に戻り再開するため⁠、バッテリー⁠に関する不満⁠はほぼ見られません⁠。</p>
           </div></div></div></div></div>
           
@@ -2151,11 +2710,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · 静かに使いたい人なら</p>
-            <p class="verdict-pick"><strong>DEEBOT T90 OMNI</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">静かに使いたい人なら</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>DEEBOT T90 OMNI</strong> が第一候補</p>
             <p class="verdict-why">理由：フローリング・静音性の評価が高い</p>
             <p class="verdict-alt">軸を変えるなら <a href="#feature">機能別</a> / <a href="#persona">暮らし方別</a> / <a href="#price">予算別</a> へ</p>
             <p class="verdict-next"><a href="/products/deebot-t90-omni">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/deebot-t90-omni" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -2182,6 +2747,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">97点</span>
             </div>
+            <p class="entry-lead">吸引＋水拭きでサラサラ</p>
             <p class="entry-body">本製品⁠で最⁠も評価⁠が高い項目⁠です⁠。ローラー式モップ⁠による加圧水拭きは「⁠<strong class="em-key benefit">床⁠がサラサラ</strong>⁠」「⁠<strong class="em-key benefit">ピカピカ⁠になる</strong>⁠」⁠と絶賛⁠の声⁠が多数⁠。汚水タンク⁠の汚れを見て⁠、その洗浄力⁠に驚くユーザー⁠が後⁠を絶ちません⁠。</p>
           </div>
           <div class="entry good">
@@ -2189,6 +2755,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">94点</span>
             </div>
+            <p class="entry-lead">ペット毛に強い</p>
             <p class="entry-body">ペット⁠の毛⁠の吸引力⁠は非常⁠に高く評価されています⁠。「⁠犬⁠の抜け毛⁠もほぼ吸う⁠」「⁠毛⁠が絡まない⁠」⁠といった口コミ⁠が多く⁠、ペット⁠を飼っている家庭⁠にとって強力な味方⁠となる性能⁠を持っていることがわかります⁠。</p>
           </div>
           <div class="entry good">
@@ -2196,6 +2763,7 @@
               <span class="entry-label">静音性</span>
               <span class="entry-score">88点</span>
             </div>
+            <p class="entry-lead">静か</p>
             <p class="entry-body">旧来⁠のロボット掃除機（⁠特⁠にルンバ⁠）⁠と比較して「⁠<strong class="em-key benefit">音⁠が静か</strong>⁠」⁠という意見⁠が多数⁠を占めます⁠。在宅中⁠や夜間⁠の稼働⁠でも気⁠になりにくいレベル⁠で⁠、テレビ⁠の音⁠を妨げないという声⁠もあり⁠、静音性⁠は高いです⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -2203,6 +2771,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">72点</span>
             </div>
+            <p class="entry-lead">乗り上げて停止</p>
             <p class="entry-body">2cm程度⁠の段差⁠は乗り越えられるとの評価⁠がある一方⁠、玄関などの高めの段差から落下したという報告⁠も散見されます⁠。落下防止センサー⁠は機能しますが⁠、過信⁠は禁物⁠で⁠、物理的な対策⁠が必要な場合⁠もあります⁠。</p>
           </div>
           <div class="entry warn">
@@ -2210,6 +2779,7 @@
               <span class="entry-label">メンテナンス</span>
               <span class="entry-score">75点</span>
             </div>
+            <p class="entry-lead">モップの自動洗浄・乾燥機能</p>
             <p class="entry-body">モップ⁠の自動洗浄・乾燥機能⁠は手間⁠の削減⁠に大きく貢献し高評価⁠です⁠。しかし⁠、汚水タンク⁠の清掃⁠や給水⁠、ステーション内部⁠のヘドロ掃除など⁠、定期的な手入れが必要⁠で⁠、これを手間⁠に感じる声⁠も多いです⁠。</p>
           </div></div></div></div></div>
           
@@ -2250,11 +2820,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · ペットのいる家なら</p>
-            <p class="verdict-pick"><strong>DEEBOT T80 OMNI</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">ペットのいる家なら</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>DEEBOT T80 OMNI</strong> が第一候補</p>
             <p class="verdict-why">理由：フローリング・ペット毛の評価が高い</p>
             <p class="verdict-alt">軸を変えるなら <a href="#feature">機能別</a> / <a href="#persona">暮らし方別</a> / <a href="#price">予算別</a> へ</p>
             <p class="verdict-next"><a href="/products/deebot-t80-omni">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/deebot-t80-omni" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -2281,6 +2857,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">97点</span>
             </div>
+            <p class="entry-lead">吸引＋水拭きでサラサラ</p>
             <p class="entry-body">本製品⁠で最⁠も評価⁠が高い項目⁠です⁠。ローラー式モップ⁠による加圧水拭きは「⁠<strong class="em-key benefit">床⁠がサラサラ</strong>⁠」「⁠<strong class="em-key benefit">ピカピカ⁠になる</strong>⁠」⁠と絶賛⁠の声⁠が多数⁠。汚水タンク⁠の汚れを見て⁠、その洗浄力⁠に驚くユーザー⁠が後⁠を絶ちません⁠。</p>
           </div>
           <div class="entry good">
@@ -2288,6 +2865,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">94点</span>
             </div>
+            <p class="entry-lead">ペット毛に強い</p>
             <p class="entry-body">ペット⁠の毛⁠の吸引力⁠は非常⁠に高く評価されています⁠。「⁠犬⁠の抜け毛⁠もほぼ吸う⁠」「⁠毛⁠が絡まない⁠」⁠といった口コミ⁠が多く⁠、ペット⁠を飼っている家庭⁠にとって強力な味方⁠となる性能⁠を持っていることがわかります⁠。</p>
           </div>
           <div class="entry good">
@@ -2295,6 +2873,7 @@
               <span class="entry-label">静音性</span>
               <span class="entry-score">88点</span>
             </div>
+            <p class="entry-lead">静か</p>
             <p class="entry-body">旧来⁠のロボット掃除機（⁠特⁠にルンバ⁠）⁠と比較して「⁠<strong class="em-key benefit">音⁠が静か</strong>⁠」⁠という意見⁠が多数⁠を占めます⁠。在宅中⁠や夜間⁠の稼働⁠でも気⁠になりにくいレベル⁠で⁠、テレビ⁠の音⁠を妨げないという声⁠もあり⁠、静音性⁠は高いです⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -2302,6 +2881,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">72点</span>
             </div>
+            <p class="entry-lead">乗り上げて停止</p>
             <p class="entry-body">2cm程度⁠の段差⁠は乗り越えられるとの評価⁠がある一方⁠、玄関などの高めの段差から落下したという報告⁠も散見されます⁠。落下防止センサー⁠は機能しますが⁠、過信⁠は禁物⁠で⁠、物理的な対策⁠が必要な場合⁠もあります⁠。</p>
           </div>
           <div class="entry warn">
@@ -2309,6 +2889,7 @@
               <span class="entry-label">メンテナンス</span>
               <span class="entry-score">75点</span>
             </div>
+            <p class="entry-lead">モップの自動洗浄・乾燥機能</p>
             <p class="entry-body">モップ⁠の自動洗浄・乾燥機能⁠は手間⁠の削減⁠に大きく貢献し高評価⁠です⁠。しかし⁠、汚水タンク⁠の清掃⁠や給水⁠、ステーション内部⁠のヘドロ掃除など⁠、定期的な手入れが必要⁠で⁠、これを手間⁠に感じる声⁠も多いです⁠。</p>
           </div></div></div></div></div>
           
@@ -2349,11 +2930,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · 床をきれいにしたい人なら</p>
-            <p class="verdict-pick"><strong>DEEBOT T80 OMNI</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">床をきれいにしたい人なら</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>DEEBOT T80 OMNI</strong> が第一候補</p>
             <p class="verdict-why">理由：フローリング・ペット毛の評価が高い</p>
             <p class="verdict-alt">軸を変えるなら <a href="#feature">機能別</a> / <a href="#persona">暮らし方別</a> / <a href="#price">予算別</a> へ</p>
             <p class="verdict-next"><a href="/products/deebot-t80-omni">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/deebot-t80-omni" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -2380,6 +2967,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">98点</span>
             </div>
+            <p class="entry-lead">床がサラサラ</p>
             <p class="entry-body">10,000Pa⁠の強力な吸引力⁠で⁠、フローリング⁠のホコリ⁠や髪⁠の毛⁠を徹底的⁠に除去します⁠。多くの利用者⁠が掃除後⁠の床⁠がサラサラ⁠になると評価しており⁠、基本的な清掃能力⁠は非常⁠に高いレベル⁠にあります⁠。</p>
           </div>
           <div class="entry good">
@@ -2387,6 +2975,7 @@
               <span class="entry-label">メンテナンス</span>
               <span class="entry-score">96点</span>
             </div>
+            <p class="entry-lead">ゴミパック不要のサイクロン式ステ</p>
             <p class="entry-body">ゴミパック不要⁠のサイクロン式ステーション⁠が最大⁠の魅力⁠です⁠。ランニングコスト⁠を抑えられ⁠、ゴミ捨ても簡単だと高く評価されています⁠。ブラシ⁠の毛絡みが少ないため⁠、本体⁠の手入れも非常⁠に楽⁠です⁠。</p>
           </div>
           <div class="entry good">
@@ -2394,6 +2983,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">94点</span>
             </div>
+            <p class="entry-lead">吸引力が絶賛</p>
             <p class="entry-body">毛⁠が絡まりにくい「⁠Zero Tangle 2.0⁠」技術⁠が非常⁠に効果的⁠です⁠。犬⁠や猫⁠を多頭飼いしている家庭からも⁠、ブラシ⁠のメンテナンス⁠が楽⁠になったと絶賛されており⁠、ペットオーナー⁠にとって大きな利点⁠です⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -2401,6 +2991,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">72点</span>
             </div>
+            <p class="entry-lead">乗り上げて停止</p>
             <p class="entry-body">公称2cm⁠の段差対応⁠ですが⁠、実際⁠には家具⁠の脚⁠や敷居⁠、厚めのラグ⁠で頻繁⁠に停止するとの報告⁠が多数あります⁠。走行ルート上⁠の小さな障害物⁠は事前⁠に片付けるか⁠、アプリ⁠で進入禁止エリア⁠を設定する必要⁠があります⁠。</p>
           </div>
           <div class="entry warn">
@@ -2408,6 +2999,7 @@
               <span class="entry-label">静音性</span>
               <span class="entry-score">82点</span>
             </div>
+            <p class="entry-lead">最大パワー時やゴミ収集ステーショ</p>
             <p class="entry-body">動作音⁠は吸引力⁠の段階設定⁠で調整可能⁠です⁠。静音モード⁠は比較的静かですが⁠、最大パワー時⁠やゴミ収集ステーション⁠の作動音⁠は大きいと感じるユーザー⁠もいます⁠。在宅勤務中⁠や夜間⁠の使用⁠には<strong class="em-key demerit">注意⁠が必要</strong>⁠です⁠。</p>
           </div></div></div></div></div>
           
@@ -2448,17 +3040,23 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · 手間を減らしたい人なら</p>
-            <p class="verdict-pick"><strong>DEEBOT N30 PLUS</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">手間を減らしたい人なら</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>DEEBOT N30 PLUS</strong> が第一候補</p>
             <p class="verdict-why">理由：フローリング・メンテナンスの評価が高い</p>
             <p class="verdict-alt">軸を変えるなら <a href="#feature">機能別</a> / <a href="#persona">暮らし方別</a> / <a href="#price">予算別</a> へ</p>
             <p class="verdict-next"><a href="/products/deebot-n30-plus">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/deebot-n30-plus" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
       </article>
       <article class="article-pick" id="persona-high" data-slug="deebot-x11-omnicyclone">
-        <h3 class="pick-heading"><span class="pick-label">ハイエンドを探している人なら</span><span class="pick-name">DEEBOT X11 OmniCyclone</span></h3>
+        <h3 class="pick-heading"><span class="pick-label">15万円以上で選ぶ人なら</span><span class="pick-name">DEEBOT X11 OmniCyclone</span></h3>
         <div class="aff-mount" data-slug="deebot-x11-omnicyclone" data-maker="ECOVACS">
           <p class="aff-status">かんたんリンクを読み込み中…</p>
         </div>
@@ -2472,13 +3070,14 @@
             </p>
             <p class="price-caution">表示価格⁠はメーカー公式ストア⁠の販売価格⁠です⁠。セール⁠で頻繁⁠に変わるため⁠、購入前⁠に最新⁠の価格⁠の確認⁠を強くおすすめします⁠。</p>
           </div>
-          <p class="lead">15万円以上⁠の上位機⁠に絞り⁠、フローリング評価⁠が<strong class="em-key">最⁠も高い</strong>機種⁠を選んでいます⁠。予算⁠に余裕⁠がある人向けです⁠。</p>
+          <p class="lead">価格15万円以上の機種に絞ったうえで、フローリング評価が<strong class="em-key">最⁠も高い</strong>機種⁠を選んでいます⁠。予算に余裕があり、上位モデルを見たい人向けです。</p>
           <div class="panel pros-cons"><div class="pros-cons-groups"><div class="pros-cons-group"><h4 class="pros-cons-label pros-cons-label-good">強み</h4><div class="entry-grid">
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">フローリング</span>
               <span class="entry-score">98点</span>
             </div>
+            <p class="entry-lead">吸引＋水拭きでサラサラ</p>
             <p class="entry-body">床掃除⁠の能力⁠は非常⁠に高く⁠、吸引⁠と水拭きの両方⁠で「⁠<strong class="em-key benefit">床⁠がサラサラ</strong>⁠」「⁠<strong class="em-key benefit">ピカピカ</strong>⁠」⁠といった満足⁠の声⁠が多いです⁠。</p>
           </div>
           <div class="entry good">
@@ -2486,6 +3085,7 @@
               <span class="entry-label">メンテナンス</span>
               <span class="entry-score">96点</span>
             </div>
+            <p class="entry-lead">メンテが楽</p>
             <p class="entry-body">自動ゴミ収集⁠とモップ洗浄・乾燥機能⁠により⁠、メンテナンス⁠の<strong class="em-key benefit">手間⁠が大幅⁠に削減</strong>され⁠、非常⁠に高い評価⁠を得ています⁠。</p>
           </div>
           <div class="entry good">
@@ -2493,6 +3093,7 @@
               <span class="entry-label">アプリ</span>
               <span class="entry-score">94点</span>
             </div>
+            <p class="entry-lead">基本的な操作性で高評価ですが</p>
             <p class="entry-body">アプリ⁠はマッピング⁠の速さや精度⁠、基本的な操作性⁠で高評価⁠ですが⁠、一部初期設定⁠の難しさも指摘されています⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -2500,6 +3101,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">75点</span>
             </div>
+            <p class="entry-lead">乗り上げて停止</p>
             <p class="entry-body">段差乗り越え性能⁠は向上していますが⁠、玄関⁠の段差⁠やカーテン下など⁠、特定⁠の障害物⁠で引っかかるケース⁠も見られます⁠。</p>
           </div>
           <div class="entry warn">
@@ -2507,6 +3109,7 @@
               <span class="entry-label">カーペット</span>
               <span class="entry-score">85点</span>
             </div>
+            <p class="entry-lead">厚手は苦手</p>
             <p class="entry-body">カーペット⁠の吸引力⁠は評価⁠が高いものの⁠、水拭き機能⁠との併用時⁠にラグ⁠が濡れるという指摘⁠もあります⁠。</p>
           </div></div></div></div></div>
           
@@ -2547,11 +3150,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · ハイエンドを探している人なら</p>
-            <p class="verdict-pick"><strong>DEEBOT X11 OmniCyclone</strong> が第一候補</p>
-            <p class="verdict-why">理由：フローリング・メンテナンスの評価が高い</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">15万円以上で選ぶ人なら</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>DEEBOT X11 OmniCyclone</strong> が第一候補</p>
+            <p class="verdict-why">理由：15万円以上の機種のなかで、フローリング評価が最も高い</p>
             <p class="verdict-alt">軸を変えるなら <a href="#feature">機能別</a> / <a href="#persona">暮らし方別</a> / <a href="#price">予算別</a> へ</p>
             <p class="verdict-next"><a href="/products/deebot-x11-omnicyclone">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/deebot-x11-omnicyclone" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>

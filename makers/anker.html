@@ -486,6 +486,417 @@
     td.score.s70 { color:#a16207; background:#fffbeb; }
     td.score.s60 { color:#b91c1c; background:#fef2f2; }
     tr.row-group td { border-top:2px solid #cbd5e1; }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* FLAT_LAYOUT_PROTOTYPE */
+    /* Soft frames + hierarchy: 項目 → 一言結論 → 補足。左アクセントは使わない */
+    /* Budget/condition label is the section break; product name is secondary */
+    .articles > .article-pick {
+      margin-top:2.4rem !important;
+      padding-top:1.6rem !important;
+      border-top:3px solid #cbd5e1 !important;
+    }
+    .articles > .article-pick:first-child {
+      margin-top:0 !important;
+      padding-top:.25rem !important;
+      border-top:0 !important;
+    }
+    .article-pick h3,
+    .article-pick h3.pick-heading {
+      display:flex !important;
+      flex-direction:column !important;
+      gap:.45rem !important;
+      background:transparent !important;
+      box-shadow:none !important;
+      border:0 !important;
+      border-radius:0 !important;
+      border-bottom:3px solid #1e3a8a !important;
+      padding:0 0 .85rem !important;
+      margin:0 0 1.2rem !important;
+    }
+    .article-pick .pick-label {
+      display:block !important;
+      font-size:clamp(1.28rem, 4.2vw, 1.6rem) !important;
+      font-weight:900 !important;
+      letter-spacing:.01em !important;
+      color:#0f172a !important;
+      line-height:1.3 !important;
+    }
+    .article-pick .pick-name {
+      display:block !important;
+      font-size:1.02rem !important;
+      font-weight:800 !important;
+      line-height:1.45 !important;
+      color:#1e40af !important;
+      text-wrap:balance !important;
+    }
+    .article-pick .pick-name::before {
+      content:"おすすめ機種：" !important;
+      color:#64748b !important;
+      font-weight:800 !important;
+      font-size:.86rem !important;
+      margin-right:.3rem !important;
+    }
+    .meta-block {
+      background:#f8fafc !important;
+      border:1px solid #e8eef5 !important;
+      border-radius:12px !important;
+      padding:.8rem .9rem !important;
+      margin:0 0 .9rem !important;
+    }
+    .article-copy .lead,
+    .article-pick > .lead {
+      margin:0 0 1rem !important;
+      padding:.75rem .9rem !important;
+      background:#f8fafc !important;
+      border:1px solid #e8eef5 !important;
+      border-radius:12px !important;
+      font-size:.9rem !important;
+      line-height:1.75 !important;
+      color:#1e293b !important;
+    }
+    .panel,
+    .panel.panel-neg,
+    .panel.trend-panel,
+    .panel.pros-cons {
+      background:#fafbfc !important;
+      border:1px solid #e8eef5 !important;
+      border-radius:14px !important;
+      padding:.9rem .9rem 1rem !important;
+      margin:0 0 1rem !important;
+      box-shadow:none !important;
+    }
+    .panel.panel-neg {
+      background:#fffafb !important;
+      border-color:#f1e4e7 !important;
+    }
+    .panel.trend-panel {
+      background:#f7f9fc !important;
+      border-color:#e4ebf5 !important;
+    }
+    .pros-cons-groups { gap:1rem !important; }
+    .pros-cons-group { gap:.55rem !important; }
+    .pros-cons-group-neg {
+      border-top:1px dashed #edd5da !important;
+      padding-top:.9rem !important;
+      margin-top:.15rem !important;
+    }
+    .pros-cons-label,
+    .panel h4,
+    .panel.pros-cons h4,
+    .panel.trend-panel h4,
+    .panel.panel-neg h4,
+    .know > h4,
+    h4.pros-cons-label {
+      display:block !important;
+      width:auto !important;
+      margin:0 0 .75rem !important;
+      padding:0 0 .4rem !important;
+      border-radius:0 !important;
+      background:transparent !important;
+      border-bottom:3px solid #cbd5e1 !important;
+      font-size:1.28rem !important;
+      font-weight:900 !important;
+      letter-spacing:.02em !important;
+      line-height:1.3 !important;
+      color:#0f172a !important;
+    }
+    h4.pros-cons-label.pros-cons-label-good {
+      color:#047857 !important;
+      border-bottom-color:#34d399 !important;
+    }
+    h4.pros-cons-label.pros-cons-label-warn,
+    .panel.panel-neg > h4 {
+      color:#be123c !important;
+      border-bottom-color:#fb7185 !important;
+    }
+    .panel.trend-panel > h4 {
+      color:#1d4ed8 !important;
+      border-bottom-color:#60a5fa !important;
+    }
+
+    .entry-grid {
+      grid-template-columns:1fr !important;
+      gap:.55rem !important;
+    }
+    @media (min-width:720px) {
+      .entry-grid {
+        grid-template-columns:1fr 1fr !important;
+        gap:.55rem .65rem !important;
+      }
+    }
+    .entry-stack { gap:.55rem !important; }
+
+    .entry,
+    .entry.good,
+    .entry.warn,
+    .entry.fit,
+    .entry.issue {
+      border:1px solid #e8eef5 !important;
+      border-radius:12px !important;
+      border-left:1px solid #e8eef5 !important;
+      box-shadow:none !important;
+      padding:.75rem .85rem .8rem !important;
+      height:auto !important;
+      background:#ffffff !important;
+    }
+    .entry.good {
+      background:#f4faf7 !important;
+      border-color:#d9ebe2 !important;
+    }
+    .entry.warn,
+    .entry.issue {
+      background:#fdf7f8 !important;
+      border-color:#f0dde2 !important;
+    }
+    .entry.fit {
+      background:#f5f8fd !important;
+      border-color:#dce6f4 !important;
+    }
+
+    .entry-head {
+      display:flex !important;
+      align-items:center !important;
+      justify-content:space-between !important;
+      gap:.5rem !important;
+      margin:0 0 .4rem !important;
+    }
+    .entry-label {
+      font-size:.78rem !important;
+      font-weight:800 !important;
+      color:#334155 !important;
+      letter-spacing:.04em !important;
+    }
+    /* fit/issue: ラベル自体が一言結論（途中省略の lead は入れない） */
+    .entry.fit .entry-label,
+    .entry.issue .entry-label {
+      font-size:1rem !important;
+      font-weight:900 !important;
+      color:#0f172a !important;
+      letter-spacing:.01em !important;
+      line-height:1.45 !important;
+    }
+    .entry.fit .entry-head,
+    .entry.issue .entry-head {
+      align-items:flex-start !important;
+      margin:0 0 .4rem !important;
+    }
+    .entry-score {
+      flex-shrink:0 !important;
+      display:inline-flex !important;
+      align-items:center !important;
+      padding:.12rem .5rem !important;
+      border-radius:999px !important;
+      background:rgba(255,255,255,.9) !important;
+      border:1px solid rgba(148,163,184,.35) !important;
+      font-size:.74rem !important;
+      font-weight:900 !important;
+      color:#334155 !important;
+      line-height:1.2 !important;
+    }
+    .entry.good .entry-score {
+      color:#047857 !important;
+      border-color:#b7e0cd !important;
+      background:#ffffff !important;
+    }
+    .entry.warn .entry-score,
+    .entry.issue .entry-score {
+      color:#e11d48 !important;
+      border-color:#f0c4cd !important;
+      background:#ffffff !important;
+    }
+    .entry.fit .entry-score {
+      color:#1d4ed8 !important;
+      border-color:#bfdbfe !important;
+      background:#ffffff !important;
+    }
+
+    .entry-lead {
+      margin:0 0 .35rem !important;
+      font-size:1.05rem !important;
+      font-weight:900 !important;
+      line-height:1.35 !important;
+      color:#0f172a !important;
+      letter-spacing:.01em !important;
+      /* 一言だけ：長文に見せない */
+      max-width:100% !important;
+    }
+    .entry.warn .entry-lead,
+    .entry.issue .entry-lead { color:#0f172a !important; }
+
+    .entry .entry-body,
+    .entry.good .entry-body,
+    .entry.warn .entry-body,
+    .entry.fit .entry-body,
+    .entry.issue .entry-body,
+    p.entry-body {
+      margin:0 !important;
+      font-size:.86rem !important;
+      line-height:1.7 !important;
+      color:#0f172a !important;
+      font-weight:600 !important;
+      opacity:1 !important;
+    }
+
+    .trend-summary {
+      font-size:.86rem !important;
+      line-height:1.7 !important;
+      color:#1e293b !important;
+    }
+    .trend-kw-title {
+      margin:1rem 0 .45rem !important;
+      font-size:.92rem !important;
+      font-weight:900 !important;
+      letter-spacing:.04em !important;
+      color:#0f172a !important;
+    }
+    .trend-chip {
+      border:1px solid #e2e8f0 !important;
+      background:#ffffff !important;
+      color:#334155 !important;
+      padding:.3rem .65rem !important;
+      border-radius:8px !important;
+      font-size:.74rem !important;
+    }
+    .know {
+      background:#fafbfc !important;
+      border:1px solid #e8eef5 !important;
+      border-radius:14px !important;
+      box-shadow:none !important;
+      padding:.9rem !important;
+      margin:0 0 1rem !important;
+    }
+    .know-note {
+      background:transparent !important;
+      border:0 !important;
+      padding:0 !important;
+      margin:0 0 .7rem !important;
+      color:#1e293b !important;
+    }
+    .know-item {
+      background:#ffffff !important;
+      border:1px solid #e8eef5 !important;
+      border-left:1px solid #e8eef5 !important;
+      border-radius:10px !important;
+      padding:.6rem .75rem !important;
+      margin:0 0 .45rem !important;
+    }
+    .toc-box,
+    .summary-box,
+    .vs-card {
+      background:#fafbfc !important;
+      border:1px solid #e8eef5 !important;
+      border-radius:14px !important;
+      box-shadow:none !important;
+      padding:.9rem 1rem !important;
+    }
+    .vs-table {
+      border:1px solid #e2e8f0 !important;
+      border-radius:10px !important;
+      box-shadow:none !important;
+    }
+    .vs-table thead th { background:#f1f5f9 !important; }
+    /* Decision block: stand out vs soft content cards */
+    .verdict,
+    .band-verdict {
+      margin:1.4rem 0 0 !important;
+      padding:0 !important;
+      border:2px solid #1e3a8a !important;
+      border-radius:16px !important;
+      background:#ffffff !important;
+      box-shadow:0 12px 32px rgba(30,58,138,.18) !important;
+      overflow:hidden !important;
+    }
+    .band-verdict { margin:1.35rem 0 1.6rem !important; }
+    .verdict-head,
+    .band-verdict .verdict-head {
+      display:flex !important;
+      flex-wrap:wrap !important;
+      align-items:center !important;
+      gap:.45rem .7rem !important;
+      margin:0 !important;
+      padding:.75rem 1.1rem !important;
+      background:#1e3a8a !important;
+      color:#fff !important;
+    }
+    .verdict-badge {
+      display:inline-flex !important;
+      align-items:center !important;
+      padding:.22rem .7rem !important;
+      border-radius:999px !important;
+      background:#fbbf24 !important;
+      color:#78350f !important;
+      font-size:.8rem !important;
+      font-weight:900 !important;
+      letter-spacing:.02em !important;
+      line-height:1.3 !important;
+    }
+    .verdict-cond {
+      font-size:.88rem !important;
+      font-weight:800 !important;
+      color:#dbeafe !important;
+      letter-spacing:.02em !important;
+    }
+    .verdict-body,
+    .band-verdict .verdict-body {
+      padding:1rem 1.15rem 1.15rem !important;
+      background:linear-gradient(180deg,#f8fbff 0%,#ffffff 55%) !important;
+    }
+    .verdict-source {
+      margin:0 0 .5rem !important;
+      font-size:.9rem !important;
+      font-weight:800 !important;
+      line-height:1.55 !important;
+      color:#1e40af !important;
+    }
+    .verdict-kicker,
+    .band-verdict > .verdict-kicker { display:none !important; }
+    .verdict-pick,
+    .band-verdict .verdict-pick {
+      margin:0 0 .45rem !important;
+      font-size:1.22rem !important;
+      font-weight:900 !important;
+      color:#0f172a !important;
+      line-height:1.4 !important;
+    }
+    .verdict-why, .verdict-alt,
+    .band-verdict .verdict-why,
+    .band-verdict .verdict-alt {
+      margin:0 0 .35rem !important;
+      font-size:.9rem !important;
+      line-height:1.65 !important;
+      color:#1e293b !important;
+      font-weight:600 !important;
+    }
+    .verdict-next,
+    .band-verdict .verdict-next {
+      margin:.65rem 0 0 !important;
+      font-size:.95rem !important;
+      font-weight:900 !important;
+    }
+    .verdict a,
+    .band-verdict a {
+      color:#1e40af !important;
+      text-decoration:none !important;
+      font-weight:900 !important;
+    }
+    .verdict a:hover,
+    .band-verdict a:hover { text-decoration:underline !important; }
+
   </style>
 </head>
 <body>
@@ -558,7 +969,7 @@
         </li>
         <li>
           <a href="#persona">こんな人におすすめの機種</a>
-          <ol><li><a href="#persona-cost">コスパ重視の人</a></li><li><a href="#persona-quiet">静かに使いたい人</a></li><li><a href="#persona-pet">ペットのいる家</a></li><li><a href="#persona-floor">床をきれいにしたい人</a></li><li><a href="#persona-maint">手間を減らしたい人</a></li><li><a href="#persona-high">ハイエンドを探している人</a></li></ol>
+          <ol><li><a href="#persona-cost">コスパ重視の人</a></li><li><a href="#persona-quiet">静かに使いたい人</a></li><li><a href="#persona-pet">ペットのいる家</a></li><li><a href="#persona-floor">床をきれいにしたい人</a></li><li><a href="#persona-maint">手間を減らしたい人</a></li><li><a href="#persona-high">15万円以上で選ぶ人</a></li></ol>
         </li>
         <li><a href="#summary">まとめ｜アンカーの選び方</a></li>
       </ol>
@@ -717,6 +1128,7 @@
               <span class="entry-label">メンテナンス</span>
               <span class="entry-score">94点</span>
             </div>
+            <p class="entry-lead">メンテが楽</p>
             <p class="entry-body">約2ヶ月⁠に1度⁠のダストバッグ交換⁠で済む自動ゴミ収集機能⁠は圧倒的⁠に高評価⁠です⁠。ブラシ⁠の毛⁠がらみ除去システム⁠も有効⁠で⁠、日々⁠のメンテナンス⁠の手間⁠を大幅⁠に削減してくれます⁠。</p>
           </div>
           <div class="entry good">
@@ -724,6 +1136,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">93点</span>
             </div>
+            <p class="entry-lead">ペット毛に強い</p>
             <p class="entry-body">フローリング⁠の掃除性能⁠は非常⁠に高く評価されています⁠。髪⁠の毛⁠やペット⁠の毛⁠、ホコリ⁠を<strong class="em-key benefit">しっかり吸引</strong>し⁠、帰宅時⁠に床⁠が綺麗⁠になっていることへの満足⁠の声⁠が大多数⁠を占めます⁠。</p>
           </div>
           <div class="entry good">
@@ -731,6 +1144,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">90点</span>
             </div>
+            <p class="entry-lead">メンテが楽</p>
             <p class="entry-body">ペット⁠の抜け毛掃除⁠では多くのユーザーから高く評価されています⁠。自動ゴミ収集機能⁠と合わせ⁠、日々⁠の毛⁠の掃除から解放されたという声⁠が多く⁠、犬猫⁠のいる家庭⁠で活躍します⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -738,6 +1152,7 @@
               <span class="entry-label">カーペット</span>
               <span class="entry-score">78点</span>
             </div>
+            <p class="entry-lead">厚手カーペットは苦手</p>
             <p class="entry-body">薄手⁠のカーペット⁠やラグ⁠は問題なく掃除⁠できますが⁠、毛足⁠の長いものや厚手⁠のものは苦手な様子⁠。めくり上げてしまったり⁠、吸引力⁠が物足りないとの指摘⁠が一部⁠で見られます⁠。</p>
           </div>
           <div class="entry warn">
@@ -745,6 +1160,7 @@
               <span class="entry-label">バッテリー</span>
               <span class="entry-score">82点</span>
             </div>
+            <p class="entry-lead">途中で充電切れ</p>
             <p class="entry-body">一般的な家庭⁠のリビング⁠や複数⁠の部屋⁠を一度⁠に掃除するには十分なバッテリー性能⁠です⁠。ただし⁠、途中⁠で充電⁠が切れたり⁠、ステーション⁠に戻れず停止するケース⁠も稀⁠に報告されています⁠。</p>
           </div></div></div></div></div>
           
@@ -785,11 +1201,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · 予算〜5万円なら</p>
-            <p class="verdict-pick"><strong>Eufy Robot Vacuum Auto-Empty C10</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">予算〜5万円なら</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>Eufy Robot Vacuum Auto-Empty C10</strong> が第一候補</p>
             <p class="verdict-why">理由：メンテナンス・フローリングの評価が高い</p>
             <p class="verdict-alt">迷ったら比較：総合点2位の <strong>Eufy RoboVac G30 Hybrid</strong> も候補</p>
             <p class="verdict-next"><a href="/products/eufy-robot-vacuum-auto-empty-c10">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/eufy-robot-vacuum-auto-empty-c10" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -816,6 +1238,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">94点</span>
             </div>
+            <p class="entry-lead">吸引力が絶賛</p>
             <p class="entry-body">ペット⁠の毛⁠や猫砂⁠の吸引力⁠は絶賛されており⁠、犬⁠や猫⁠を多頭飼いしている家庭からも支持されています⁠。毛⁠がブラシ⁠に絡まりにくい独自⁠の除去システム⁠も⁠、メンテナンス⁠の手間⁠を省く上⁠で高く評価されています⁠。</p>
           </div>
           <div class="entry good">
@@ -823,6 +1246,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">92点</span>
             </div>
+            <p class="entry-lead">吸引＋水拭きでサラサラ</p>
             <p class="entry-body">吸引⁠と水拭きの同時実行⁠で床⁠がサラサラ⁠になると高評価⁠です⁠。特⁠にフローリング⁠での満足度⁠は非常⁠に高いです⁠。ただし⁠、一部⁠では水拭き機能⁠は「⁠おまけ程度⁠」⁠との声⁠もあり⁠、過度な期待⁠は禁物⁠です⁠。</p>
           </div>
           <div class="entry good">
@@ -830,6 +1254,7 @@
               <span class="entry-label">メンテナンス</span>
               <span class="entry-score">88点</span>
             </div>
+            <p class="entry-lead">ゴミ捨てがほぼ不要</p>
             <p class="entry-body">自動ゴミ収集機能⁠により⁠、日々⁠のゴミ捨ての手間⁠が不要⁠になる点⁠は高く評価されています⁠。一方⁠で⁠、水拭きモップ⁠は使用⁠の都度⁠、手洗いと給水⁠が必要⁠で⁠、これを面倒⁠に感じるという意見⁠も見られました⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -837,6 +1262,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">70点</span>
             </div>
+            <p class="entry-lead">乗り上げて停止</p>
             <p class="entry-body">玄関などの大きな段差からの落下防止機能⁠は正常⁠に動作します⁠。しかし⁠、低い段差⁠や家具⁠の脚⁠、敷居などで乗り上げたり引っかかったりして停止する事例⁠が複数報告されており⁠、完全な自律走行⁠には課題⁠があります⁠。</p>
           </div>
           <div class="entry warn">
@@ -844,6 +1270,7 @@
               <span class="entry-label">アプリ</span>
               <span class="entry-score">75点</span>
             </div>
+            <p class="entry-lead">接続が不安定</p>
             <p class="entry-body">進入禁止エリア⁠の設定⁠やスケジュール管理など⁠、アプリ⁠の機能性⁠は便利だと評価されています⁠。しかし⁠、Wi-Fi接続⁠が途切れる⁠、マッピング⁠がリセットされるなど⁠、一部⁠で不安定さを指摘する声⁠が上⁠がっています⁠。</p>
           </div></div></div></div></div>
           
@@ -884,11 +1311,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · 予算5〜7万円なら</p>
-            <p class="verdict-pick"><strong>Eufy Clean X8 Pro with Self-Empty Station</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">予算5〜7万円なら</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>Eufy Clean X8 Pro with Self-Empty Station</strong> が第一候補</p>
             <p class="verdict-why">理由：ペット毛・フローリングの評価が高い</p>
             <p class="verdict-alt">軸を変えるなら <a href="#feature">機能別</a> / <a href="#persona">暮らし方別</a> / <a href="#price">予算別</a> へ</p>
             <p class="verdict-next"><a href="/products/eufy-clean-x8-pro-with-self-empty-station">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/eufy-clean-x8-pro-with-self-empty-station" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -915,6 +1348,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">98点</span>
             </div>
+            <p class="entry-lead">床がサラサラ</p>
             <p class="entry-body">「⁠<strong class="em-key benefit">床⁠がサラサラ</strong>⁠」「⁠素足⁠で歩くと違いを実感⁠」⁠といった声⁠が圧倒的多数⁠。ローラーモップ⁠が常⁠に洗浄されるため⁠、汚れを引きずらず高い清掃品質⁠を維持します⁠。</p>
           </div>
           <div class="entry good">
@@ -922,6 +1356,7 @@
               <span class="entry-label">アプリ</span>
               <span class="entry-score">96点</span>
             </div>
+            <p class="entry-lead">マッピング精度が高く</p>
             <p class="entry-body">マッピング精度⁠が高く⁠、部屋分割⁠や進入禁止エリア⁠の設定⁠が直感的⁠に行えると高く評価されています⁠。Wi-Fi接続⁠も安定しており⁠、操作性⁠は良好⁠です⁠。</p>
           </div>
           <div class="entry good">
@@ -929,6 +1364,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">95点</span>
             </div>
+            <p class="entry-lead">吸引力が絶賛</p>
             <p class="entry-body">犬⁠や猫⁠の抜け毛⁠を<strong class="em-key benefit">しっかり吸引</strong>し⁠、水拭きで肉球⁠の足跡⁠も綺麗⁠になるとペットオーナーから絶賛されています⁠。毛⁠が絡みにくいブラシ構造⁠も評価されています⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -936,6 +1372,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">75点</span>
             </div>
+            <p class="entry-lead">厚手は苦手</p>
             <p class="entry-body">約2cm⁠の段差⁠は乗り越え可能⁠ですが⁠、それ以上⁠の高さや厚手⁠のプレイマットなどは苦手なようです⁠。玄関など大きな段差⁠では落下防止機能⁠が正常⁠に作動します⁠。</p>
           </div>
           <div class="entry warn">
@@ -943,6 +1380,7 @@
               <span class="entry-label">静音性</span>
               <span class="entry-score">85点</span>
             </div>
+            <p class="entry-lead">掃除完了後にステーションでゴミ</p>
             <p class="entry-body">掃除中⁠の本体動作音⁠は非常⁠に静かとの評価⁠が多数⁠です⁠。ただし⁠、掃除完了後⁠にステーション⁠でゴミ⁠を吸引する際⁠の音⁠は大きいという指摘⁠が共通して見られます⁠。</p>
           </div></div></div></div></div>
           
@@ -983,11 +1421,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · 予算7〜10万円なら</p>
-            <p class="verdict-pick"><strong>Eufy Robot Vacuum Omni C28</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">予算7〜10万円なら</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>Eufy Robot Vacuum Omni C28</strong> が第一候補</p>
             <p class="verdict-why">理由：フローリング・アプリの評価が高い</p>
             <p class="verdict-alt">迷ったら比較：総合点2位の <strong>Eufy X10 Pro Omni</strong> も候補</p>
             <p class="verdict-next"><a href="/products/eufy-robot-vacuum-omni-c28">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/eufy-robot-vacuum-omni-c28" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -1014,6 +1458,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">96点</span>
             </div>
+            <p class="entry-lead">吸引＋水拭きでサラサラ</p>
             <p class="entry-body">加圧式ローラーモップ⁠による水拭き性能⁠は絶賛⁠の声⁠が多数⁠。食べこぼしや皮脂汚れも綺麗⁠になり⁠、床⁠がサラサラ⁠になると高く評価されています⁠。一部⁠、水量⁠が多すぎるとの指摘⁠もありますが⁠、アプリ⁠で調整可能⁠です⁠。</p>
           </div>
           <div class="entry good">
@@ -1021,6 +1466,7 @@
               <span class="entry-label">バッテリー</span>
               <span class="entry-score">92点</span>
             </div>
+            <p class="entry-lead">バッテリーに関する言及</p>
             <p class="entry-body">バッテリー⁠に関する言及⁠は少ないものの⁠、広い間取りでも一度⁠の充電⁠で掃除⁠を完了⁠できるとの評価⁠です⁠。途中⁠で充電⁠のためにステーション⁠に戻っても⁠、充電後⁠に中断した場所から掃除⁠を再開するため⁠、バッテリー不足⁠が問題⁠になることは稀⁠です⁠。</p>
           </div>
           <div class="entry good">
@@ -1028,6 +1474,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">90点</span>
             </div>
+            <p class="entry-lead">ペット毛に強い</p>
             <p class="entry-body">ペット⁠の毛⁠の除去能力⁠は高く評価されています⁠。特⁠にDuoSpiralブラシ⁠は髪⁠の毛⁠やペット⁠の毛⁠が絡みにくいと好評⁠で⁠、メンテナンス⁠の手間⁠が少ない点⁠が飼い主から支持されています⁠。隅⁠に残る場合⁠があるとの声⁠も一部あります⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -1035,6 +1482,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">70点</span>
             </div>
+            <p class="entry-lead">乗り上げて停止</p>
             <p class="entry-body">数ミリ程度⁠の段差⁠は問題なく乗り越えますが⁠、家具⁠の脚⁠や厚めのマット⁠に乗り上げて停止するケース⁠が散見されます⁠。障害物回避性能⁠は高いものの⁠、特定⁠の形状⁠の段差⁠は苦手な傾向⁠があり⁠、進入禁止エリア⁠の設定⁠が推奨されます⁠。</p>
           </div>
           <div class="entry warn">
@@ -1042,6 +1490,7 @@
               <span class="entry-label">アプリ</span>
               <span class="entry-score">80点</span>
             </div>
+            <p class="entry-lead">接続が不安定</p>
             <p class="entry-body">マッピング精度⁠やエリア指定⁠、スケジュール設定など機能⁠は豊富⁠で使いやすいと概ね好評⁠です⁠。一方⁠で⁠、初期設定時⁠のWi-Fi接続⁠の不安定さや⁠、マップ⁠が稀⁠にリセットされるといったソフトウェア関連⁠の不具合報告⁠も一部見られます⁠。</p>
           </div></div></div></div></div>
           
@@ -1082,11 +1531,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · 予算10〜15万円なら</p>
-            <p class="verdict-pick"><strong>Eufy Robot Vacuum Omni E25</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">予算10〜15万円なら</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>Eufy Robot Vacuum Omni E25</strong> が第一候補</p>
             <p class="verdict-why">理由：フローリング・バッテリーの評価が高い</p>
             <p class="verdict-alt">軸を変えるなら <a href="#feature">機能別</a> / <a href="#persona">暮らし方別</a> / <a href="#price">予算別</a> へ</p>
             <p class="verdict-next"><a href="/products/eufy-robot-vacuum-omni-e25">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/eufy-robot-vacuum-omni-e25" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -1113,6 +1568,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">95点</span>
             </div>
+            <p class="entry-lead">吸引＋水拭きでサラサラ</p>
             <p class="entry-body">加圧式⁠のローラーモップ⁠による水拭き性能⁠は絶賛されており⁠、「⁠<strong class="em-key benefit">床⁠がサラサラ⁠になる</strong>⁠」⁠との声⁠が多数⁠です⁠。走行しながらモップ⁠を洗浄するため⁠、常⁠に清潔な状態⁠で拭き掃除⁠ができる点⁠が高く評価されています⁠。</p>
           </div>
           <div class="entry good">
@@ -1120,6 +1576,7 @@
               <span class="entry-label">バッテリー</span>
               <span class="entry-score">90点</span>
             </div>
+            <p class="entry-lead">バッテリーに関する言及</p>
             <p class="entry-body">バッテリー⁠に関する言及⁠は少ないものの⁠、最大170分⁠という連続稼働時間から⁠、広い間取りでも一度⁠で掃除⁠を完了⁠できる性能⁠を持っていると評価⁠できます⁠。バッテリー切れで途中⁠で止まるという不満⁠は見られません⁠。</p>
           </div>
           <div class="entry good">
@@ -1127,6 +1584,7 @@
               <span class="entry-label">静音性</span>
               <span class="entry-score">88点</span>
             </div>
+            <p class="entry-lead">掃除中のロボット本体の動作音</p>
             <p class="entry-body">掃除中⁠のロボット本体⁠の動作音⁠は非常⁠に静かで⁠、在宅ワーク中⁠でも気⁠にならないレベルだと高く評価されています⁠。ただし⁠、ステーション⁠でのゴミ収集音⁠は「⁠爆音⁠」⁠と評されるほど大きい点⁠には<strong class="em-key demerit">注意⁠が必要</strong>⁠です⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -1134,6 +1592,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">65点</span>
             </div>
+            <p class="entry-lead">乗り上げて停止</p>
             <p class="entry-body">敷居などの低い段差⁠はスロープ⁠があれば乗り越え可能⁠ですが⁠、電源コード⁠を回避してしまったり⁠、玄関から落下した事例⁠も報告されています⁠。障害物回避性能⁠の高さが⁠、逆⁠に乗り越え性能⁠の低さにつながる場面⁠があるようです⁠。</p>
           </div>
           <div class="entry warn">
@@ -1141,6 +1600,7 @@
               <span class="entry-label">カーペット</span>
               <span class="entry-score">78点</span>
             </div>
+            <p class="entry-lead">厚手カーペットは苦手</p>
             <p class="entry-body">カーペット⁠を自動⁠で認識し吸引力⁠を高める機能⁠は評価されています⁠。しかし⁠、一部⁠のユーザーからは「⁠毛足⁠の長いカーペット⁠では吸引力⁠が足りない⁠」⁠との指摘⁠もあり⁠、環境⁠によって満足度⁠が分かれるようです⁠。</p>
           </div></div></div></div></div>
           
@@ -1181,11 +1641,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · 予算15〜20万円なら</p>
-            <p class="verdict-pick"><strong>Eufy Robot Vacuum Omni S1 Pro</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">予算15〜20万円なら</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>Eufy Robot Vacuum Omni S1 Pro</strong> が第一候補</p>
             <p class="verdict-why">理由：フローリング・バッテリーの評価が高い</p>
             <p class="verdict-alt">軸を変えるなら <a href="#feature">機能別</a> / <a href="#persona">暮らし方別</a> / <a href="#price">予算別</a> へ</p>
             <p class="verdict-next"><a href="/products/eufy-robot-vacuum-omni-s1-pro">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/eufy-robot-vacuum-omni-s1-pro" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -1212,6 +1678,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">98点</span>
             </div>
+            <p class="entry-lead">床がサラサラ</p>
             <p class="entry-body">30,000Pa⁠の圧倒的な吸引力⁠と加圧式ローラーモップ⁠が高評価⁠。フローリング⁠の微細なホコリ⁠や皮脂汚れまで除去し⁠、「⁠<strong class="em-key benefit">床⁠がサラサラ⁠になる</strong>⁠」⁠との声⁠が多数⁠。無垢床⁠でも水量⁠を調整すれば安心して使用⁠できます⁠。</p>
           </div>
           <div class="entry good">
@@ -1219,6 +1686,7 @@
               <span class="entry-label">メンテナンス</span>
               <span class="entry-score">98点</span>
             </div>
+            <p class="entry-lead">吸引力が絶賛</p>
             <p class="entry-body">ゴミ収集からモップ⁠の温水洗浄・乾燥⁠、洗剤自動投入まで全てをこなす全自動ステーション⁠が「⁠手間いらず⁠」⁠と絶賛されています⁠。日々⁠の作業⁠は給排水⁠のみで⁠、メンテナンス⁠の負担⁠が劇的⁠に軽減されます⁠。</p>
           </div>
           <div class="entry good">
@@ -1226,6 +1694,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">94点</span>
             </div>
+            <p class="entry-lead">吸引力が絶賛</p>
             <p class="entry-body">犬⁠や猫⁠の毛⁠で悩む家庭から「⁠<strong class="em-key benefit">助かっている</strong>⁠」⁠と絶賛⁠の声⁠。強力な吸引力⁠と毛⁠が絡まりにくいブラシ構造⁠で⁠、ペット⁠の抜け毛⁠を効率的⁠に除去⁠。アレルギー対策⁠としても非常⁠に有効な機能⁠です⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -1233,6 +1702,7 @@
               <span class="entry-label">静音性</span>
               <span class="entry-score">85点</span>
             </div>
+            <p class="entry-lead">フローリングでの通常清掃時</p>
             <p class="entry-body">フローリング⁠での通常清掃時⁠は「⁠<strong class="em-key benefit">非常⁠に静か</strong>⁠」⁠と高評価⁠。一方⁠で⁠、カーペット上⁠で吸引力⁠が上⁠がると相応⁠の音⁠が発生します⁠。ステーション⁠のゴミ収集音⁠は大きいですが短時間⁠で終わるため⁠、許容範囲⁠との意見⁠が多いです⁠。</p>
           </div>
           <div class="entry warn">
@@ -1240,6 +1710,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">88点</span>
             </div>
+            <p class="entry-lead">厚手は苦手</p>
             <p class="entry-body">最大4.2cm⁠の段差⁠に対応し⁠、厚手⁠のラグ⁠や部屋⁠の敷居⁠もスムーズ⁠に乗り越える性能⁠が多くのレビュー⁠で称賛されています⁠。ただし⁠、家具⁠の脚⁠や特定⁠の形状⁠の段差⁠で稀⁠に引っかかることがあるとの指摘⁠も見られます⁠。</p>
           </div></div></div></div></div>
           
@@ -1280,11 +1751,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · 予算20万円〜なら</p>
-            <p class="verdict-pick"><strong>Eufy Robot Vacuum Omni S2</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">予算20万円〜なら</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>Eufy Robot Vacuum Omni S2</strong> が第一候補</p>
             <p class="verdict-why">理由：フローリング・メンテナンスの評価が高い</p>
             <p class="verdict-alt">軸を変えるなら <a href="#feature">機能別</a> / <a href="#persona">暮らし方別</a> / <a href="#price">予算別</a> へ</p>
             <p class="verdict-next"><a href="/products/eufy-robot-vacuum-omni-s2">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/eufy-robot-vacuum-omni-s2" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -1317,6 +1794,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">98点</span>
             </div>
+            <p class="entry-lead">床がサラサラ</p>
             <p class="entry-body">「⁠<strong class="em-key benefit">床⁠がサラサラ</strong>⁠」「⁠素足⁠で歩くと違いを実感⁠」⁠といった声⁠が圧倒的多数⁠。ローラーモップ⁠が常⁠に洗浄されるため⁠、汚れを引きずらず高い清掃品質⁠を維持します⁠。</p>
           </div>
           <div class="entry good">
@@ -1324,6 +1802,7 @@
               <span class="entry-label">アプリ</span>
               <span class="entry-score">96点</span>
             </div>
+            <p class="entry-lead">マッピング精度が高く</p>
             <p class="entry-body">マッピング精度⁠が高く⁠、部屋分割⁠や進入禁止エリア⁠の設定⁠が直感的⁠に行えると高く評価されています⁠。Wi-Fi接続⁠も安定しており⁠、操作性⁠は良好⁠です⁠。</p>
           </div>
           <div class="entry good">
@@ -1331,6 +1810,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">95点</span>
             </div>
+            <p class="entry-lead">吸引力が絶賛</p>
             <p class="entry-body">犬⁠や猫⁠の抜け毛⁠を<strong class="em-key benefit">しっかり吸引</strong>し⁠、水拭きで肉球⁠の足跡⁠も綺麗⁠になるとペットオーナーから絶賛されています⁠。毛⁠が絡みにくいブラシ構造⁠も評価されています⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -1338,6 +1818,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">75点</span>
             </div>
+            <p class="entry-lead">厚手は苦手</p>
             <p class="entry-body">約2cm⁠の段差⁠は乗り越え可能⁠ですが⁠、それ以上⁠の高さや厚手⁠のプレイマットなどは苦手なようです⁠。玄関など大きな段差⁠では落下防止機能⁠が正常⁠に作動します⁠。</p>
           </div>
           <div class="entry warn">
@@ -1345,6 +1826,7 @@
               <span class="entry-label">静音性</span>
               <span class="entry-score">85点</span>
             </div>
+            <p class="entry-lead">掃除完了後にステーションでゴミ</p>
             <p class="entry-body">掃除中⁠の本体動作音⁠は非常⁠に静かとの評価⁠が多数⁠です⁠。ただし⁠、掃除完了後⁠にステーション⁠でゴミ⁠を吸引する際⁠の音⁠は大きいという指摘⁠が共通して見られます⁠。</p>
           </div></div></div></div></div>
           
@@ -1385,11 +1867,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · フローリング掃除が得意な機種</p>
-            <p class="verdict-pick"><strong>Eufy Robot Vacuum Omni C28</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">フローリング掃除が得意な機種</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>Eufy Robot Vacuum Omni C28</strong> が第一候補</p>
             <p class="verdict-why">理由：フローリング・アプリの評価が高い</p>
             <p class="verdict-alt">迷ったら比較：総合点2位の <strong>Eufy X10 Pro Omniです。</strong> も候補</p>
             <p class="verdict-next"><a href="/products/eufy-robot-vacuum-omni-c28">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/eufy-robot-vacuum-omni-c28" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -1416,6 +1904,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">98点</span>
             </div>
+            <p class="entry-lead">床がサラサラ</p>
             <p class="entry-body">「⁠<strong class="em-key benefit">床⁠がサラサラ</strong>⁠」「⁠素足⁠で歩くと違いを実感⁠」⁠といった声⁠が圧倒的多数⁠。ローラーモップ⁠が常⁠に洗浄されるため⁠、汚れを引きずらず高い清掃品質⁠を維持します⁠。</p>
           </div>
           <div class="entry good">
@@ -1423,6 +1912,7 @@
               <span class="entry-label">アプリ</span>
               <span class="entry-score">96点</span>
             </div>
+            <p class="entry-lead">マッピング精度が高く</p>
             <p class="entry-body">マッピング精度⁠が高く⁠、部屋分割⁠や進入禁止エリア⁠の設定⁠が直感的⁠に行えると高く評価されています⁠。Wi-Fi接続⁠も安定しており⁠、操作性⁠は良好⁠です⁠。</p>
           </div>
           <div class="entry good">
@@ -1430,6 +1920,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">95点</span>
             </div>
+            <p class="entry-lead">吸引力が絶賛</p>
             <p class="entry-body">犬⁠や猫⁠の抜け毛⁠を<strong class="em-key benefit">しっかり吸引</strong>し⁠、水拭きで肉球⁠の足跡⁠も綺麗⁠になるとペットオーナーから絶賛されています⁠。毛⁠が絡みにくいブラシ構造⁠も評価されています⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -1437,6 +1928,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">75点</span>
             </div>
+            <p class="entry-lead">厚手は苦手</p>
             <p class="entry-body">約2cm⁠の段差⁠は乗り越え可能⁠ですが⁠、それ以上⁠の高さや厚手⁠のプレイマットなどは苦手なようです⁠。玄関など大きな段差⁠では落下防止機能⁠が正常⁠に作動します⁠。</p>
           </div>
           <div class="entry warn">
@@ -1444,6 +1936,7 @@
               <span class="entry-label">静音性</span>
               <span class="entry-score">85点</span>
             </div>
+            <p class="entry-lead">掃除完了後にステーションでゴミ</p>
             <p class="entry-body">掃除中⁠の本体動作音⁠は非常⁠に静かとの評価⁠が多数⁠です⁠。ただし⁠、掃除完了後⁠にステーション⁠でゴミ⁠を吸引する際⁠の音⁠は大きいという指摘⁠が共通して見られます⁠。</p>
           </div></div></div></div></div>
           
@@ -1484,11 +1977,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · カーペット掃除が得意な機種</p>
-            <p class="verdict-pick"><strong>Eufy Robot Vacuum Omni C28</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">カーペット掃除が得意な機種</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>Eufy Robot Vacuum Omni C28</strong> が第一候補</p>
             <p class="verdict-why">理由：フローリング・アプリの評価が高い</p>
             <p class="verdict-alt">迷ったら比較：総合点2位の <strong>Eufy Robot Vacuum Omni S2です。</strong> も候補</p>
             <p class="verdict-next"><a href="/products/eufy-robot-vacuum-omni-c28">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/eufy-robot-vacuum-omni-c28" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -1515,6 +2014,7 @@
               <span class="entry-label">静音性</span>
               <span class="entry-score">95点</span>
             </div>
+            <p class="entry-lead">吸引力が絶賛</p>
             <p class="entry-body">動作音⁠の静かさは多くのユーザー⁠が絶賛しており⁠、本製品⁠の大きな長所⁠です⁠。夜間⁠や在宅ワーク中⁠でも気⁠にならないレベル⁠で⁠、テレビ⁠を見ながらでも使用⁠できるとのレビュー⁠が多数⁠。従来⁠の掃除機⁠や他社製品⁠との比較⁠で特⁠に高く評価されています⁠。</p>
           </div>
           <div class="entry good">
@@ -1522,6 +2022,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">92点</span>
             </div>
+            <p class="entry-lead">吸引＋水拭きでサラサラ</p>
             <p class="entry-body">フローリング⁠の清掃能力⁠は非常⁠に高く評価されています⁠。吸引⁠と水拭きの同時実行⁠で⁠、髪⁠の毛⁠やホコリ⁠、砂埃までしっかり除去し⁠、床⁠がサラサラ⁠になるとの声⁠が多数⁠。一部吸い残しの指摘⁠もありますが⁠、満足度⁠は高いです⁠。</p>
           </div>
           <div class="entry good">
@@ -1529,6 +2030,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">88点</span>
             </div>
+            <p class="entry-lead">ペット毛に強い</p>
             <p class="entry-body">犬⁠や猫⁠の抜け毛⁠に対する吸引力⁠は高く評価されています⁠。ペット⁠のいる家庭⁠では⁠、日々⁠の掃除⁠の手間⁠が大幅⁠に軽減されたとの喜びの声⁠が多く見られました⁠。短毛種⁠のペット⁠がいる家庭⁠では特⁠に満足度⁠が高いようです⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -1536,6 +2038,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">65点</span>
             </div>
+            <p class="entry-lead">乗り上げて停止</p>
             <p class="entry-body">約1.5cmまでの段差⁠は乗り越え可能⁠ですが⁠、それ以上⁠の段差⁠や⁠、椅子⁠の脚⁠、配線カバーなど特定⁠の形状⁠のものには苦戦する傾向⁠があります⁠。玄関からの落下⁠を防ぐセンサー⁠は機能しますが⁠、低い段差⁠では乗り越えられず停止することもあります⁠。</p>
           </div>
           <div class="entry warn">
@@ -1543,6 +2046,7 @@
               <span class="entry-label">カーペット</span>
               <span class="entry-score">70点</span>
             </div>
+            <p class="entry-lead">厚手カーペットは苦手</p>
             <p class="entry-body">薄手⁠のカーペット⁠やラグ⁠は乗り越えて掃除⁠できますが⁠、厚手⁠のものや毛足⁠の長いものは苦手なようです⁠。軽いラグ⁠を巻き込んで停止したり⁠、ブラシ⁠が挟まったりする事例⁠が報告されており⁠、<strong class="em-key demerit">注意⁠が必要</strong>⁠です⁠。</p>
           </div></div></div></div></div>
           
@@ -1583,11 +2087,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · 静音性に優れた機種</p>
-            <p class="verdict-pick"><strong>Eufy RoboVac G30 Hybrid</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">静音性に優れた機種</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>Eufy RoboVac G30 Hybrid</strong> が第一候補</p>
             <p class="verdict-why">理由：静音性・フローリングの評価が高い</p>
             <p class="verdict-alt">迷ったら比較：総合点2位の <strong>Eufy Robot Vacuum Auto-Empty C10です。</strong> も候補</p>
             <p class="verdict-next"><a href="/products/eufy-robovac-g30-hybrid">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/eufy-robovac-g30-hybrid" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -1614,6 +2124,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">98点</span>
             </div>
+            <p class="entry-lead">床がサラサラ</p>
             <p class="entry-body">「⁠<strong class="em-key benefit">床⁠がサラサラ</strong>⁠」「⁠素足⁠で歩くと違いを実感⁠」⁠といった声⁠が圧倒的多数⁠。ローラーモップ⁠が常⁠に洗浄されるため⁠、汚れを引きずらず高い清掃品質⁠を維持します⁠。</p>
           </div>
           <div class="entry good">
@@ -1621,6 +2132,7 @@
               <span class="entry-label">アプリ</span>
               <span class="entry-score">96点</span>
             </div>
+            <p class="entry-lead">マッピング精度が高く</p>
             <p class="entry-body">マッピング精度⁠が高く⁠、部屋分割⁠や進入禁止エリア⁠の設定⁠が直感的⁠に行えると高く評価されています⁠。Wi-Fi接続⁠も安定しており⁠、操作性⁠は良好⁠です⁠。</p>
           </div>
           <div class="entry good">
@@ -1628,6 +2140,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">95点</span>
             </div>
+            <p class="entry-lead">吸引力が絶賛</p>
             <p class="entry-body">犬⁠や猫⁠の抜け毛⁠を<strong class="em-key benefit">しっかり吸引</strong>し⁠、水拭きで肉球⁠の足跡⁠も綺麗⁠になるとペットオーナーから絶賛されています⁠。毛⁠が絡みにくいブラシ構造⁠も評価されています⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -1635,6 +2148,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">75点</span>
             </div>
+            <p class="entry-lead">厚手は苦手</p>
             <p class="entry-body">約2cm⁠の段差⁠は乗り越え可能⁠ですが⁠、それ以上⁠の高さや厚手⁠のプレイマットなどは苦手なようです⁠。玄関など大きな段差⁠では落下防止機能⁠が正常⁠に作動します⁠。</p>
           </div>
           <div class="entry warn">
@@ -1642,6 +2156,7 @@
               <span class="entry-label">静音性</span>
               <span class="entry-score">85点</span>
             </div>
+            <p class="entry-lead">掃除完了後にステーションでゴミ</p>
             <p class="entry-body">掃除中⁠の本体動作音⁠は非常⁠に静かとの評価⁠が多数⁠です⁠。ただし⁠、掃除完了後⁠にステーション⁠でゴミ⁠を吸引する際⁠の音⁠は大きいという指摘⁠が共通して見られます⁠。</p>
           </div></div></div></div></div>
           
@@ -1682,11 +2197,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · ペットの毛に強い機種</p>
-            <p class="verdict-pick"><strong>Eufy Robot Vacuum Omni C28</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">ペットの毛に強い機種</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>Eufy Robot Vacuum Omni C28</strong> が第一候補</p>
             <p class="verdict-why">理由：フローリング・アプリの評価が高い</p>
             <p class="verdict-alt">迷ったら比較：総合点2位の <strong>Eufy X10 Pro Omniです。</strong> も候補</p>
             <p class="verdict-next"><a href="/products/eufy-robot-vacuum-omni-c28">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/eufy-robot-vacuum-omni-c28" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -1713,6 +2234,7 @@
               <span class="entry-label">メンテナンス</span>
               <span class="entry-score">94点</span>
             </div>
+            <p class="entry-lead">メンテが楽</p>
             <p class="entry-body">約2ヶ月⁠に1度⁠のダストバッグ交換⁠で済む自動ゴミ収集機能⁠は圧倒的⁠に高評価⁠です⁠。ブラシ⁠の毛⁠がらみ除去システム⁠も有効⁠で⁠、日々⁠のメンテナンス⁠の手間⁠を大幅⁠に削減してくれます⁠。</p>
           </div>
           <div class="entry good">
@@ -1720,6 +2242,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">93点</span>
             </div>
+            <p class="entry-lead">ペット毛に強い</p>
             <p class="entry-body">フローリング⁠の掃除性能⁠は非常⁠に高く評価されています⁠。髪⁠の毛⁠やペット⁠の毛⁠、ホコリ⁠を<strong class="em-key benefit">しっかり吸引</strong>し⁠、帰宅時⁠に床⁠が綺麗⁠になっていることへの満足⁠の声⁠が大多数⁠を占めます⁠。</p>
           </div>
           <div class="entry good">
@@ -1727,6 +2250,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">90点</span>
             </div>
+            <p class="entry-lead">メンテが楽</p>
             <p class="entry-body">ペット⁠の抜け毛掃除⁠では多くのユーザーから高く評価されています⁠。自動ゴミ収集機能⁠と合わせ⁠、日々⁠の毛⁠の掃除から解放されたという声⁠が多く⁠、犬猫⁠のいる家庭⁠で活躍します⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -1734,6 +2258,7 @@
               <span class="entry-label">カーペット</span>
               <span class="entry-score">78点</span>
             </div>
+            <p class="entry-lead">厚手カーペットは苦手</p>
             <p class="entry-body">薄手⁠のカーペット⁠やラグ⁠は問題なく掃除⁠できますが⁠、毛足⁠の長いものや厚手⁠のものは苦手な様子⁠。めくり上げてしまったり⁠、吸引力⁠が物足りないとの指摘⁠が一部⁠で見られます⁠。</p>
           </div>
           <div class="entry warn">
@@ -1741,6 +2266,7 @@
               <span class="entry-label">バッテリー</span>
               <span class="entry-score">82点</span>
             </div>
+            <p class="entry-lead">途中で充電切れ</p>
             <p class="entry-body">一般的な家庭⁠のリビング⁠や複数⁠の部屋⁠を一度⁠に掃除するには十分なバッテリー性能⁠です⁠。ただし⁠、途中⁠で充電⁠が切れたり⁠、ステーション⁠に戻れず停止するケース⁠も稀⁠に報告されています⁠。</p>
           </div></div></div></div></div>
           
@@ -1781,11 +2307,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · 手入れが楽な機種</p>
-            <p class="verdict-pick"><strong>Eufy Robot Vacuum Auto-Empty C10</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">手入れが楽な機種</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>Eufy Robot Vacuum Auto-Empty C10</strong> が第一候補</p>
             <p class="verdict-why">理由：メンテナンス・フローリングの評価が高い</p>
             <p class="verdict-alt">迷ったら比較：総合点2位の <strong>Eufy Robot Vacuum Omni C28です。</strong> も候補</p>
             <p class="verdict-next"><a href="/products/eufy-robot-vacuum-auto-empty-c10">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/eufy-robot-vacuum-auto-empty-c10" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -1812,6 +2344,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">96点</span>
             </div>
+            <p class="entry-lead">吸引＋水拭きでサラサラ</p>
             <p class="entry-body">加圧式ローラーモップ⁠による水拭き性能⁠は絶賛⁠の声⁠が多数⁠。食べこぼしや皮脂汚れも綺麗⁠になり⁠、床⁠がサラサラ⁠になると高く評価されています⁠。一部⁠、水量⁠が多すぎるとの指摘⁠もありますが⁠、アプリ⁠で調整可能⁠です⁠。</p>
           </div>
           <div class="entry good">
@@ -1819,6 +2352,7 @@
               <span class="entry-label">バッテリー</span>
               <span class="entry-score">92点</span>
             </div>
+            <p class="entry-lead">バッテリーに関する言及</p>
             <p class="entry-body">バッテリー⁠に関する言及⁠は少ないものの⁠、広い間取りでも一度⁠の充電⁠で掃除⁠を完了⁠できるとの評価⁠です⁠。途中⁠で充電⁠のためにステーション⁠に戻っても⁠、充電後⁠に中断した場所から掃除⁠を再開するため⁠、バッテリー不足⁠が問題⁠になることは稀⁠です⁠。</p>
           </div>
           <div class="entry good">
@@ -1826,6 +2360,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">90点</span>
             </div>
+            <p class="entry-lead">ペット毛に強い</p>
             <p class="entry-body">ペット⁠の毛⁠の除去能力⁠は高く評価されています⁠。特⁠にDuoSpiralブラシ⁠は髪⁠の毛⁠やペット⁠の毛⁠が絡みにくいと好評⁠で⁠、メンテナンス⁠の手間⁠が少ない点⁠が飼い主から支持されています⁠。隅⁠に残る場合⁠があるとの声⁠も一部あります⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -1833,6 +2368,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">70点</span>
             </div>
+            <p class="entry-lead">乗り上げて停止</p>
             <p class="entry-body">数ミリ程度⁠の段差⁠は問題なく乗り越えますが⁠、家具⁠の脚⁠や厚めのマット⁠に乗り上げて停止するケース⁠が散見されます⁠。障害物回避性能⁠は高いものの⁠、特定⁠の形状⁠の段差⁠は苦手な傾向⁠があり⁠、進入禁止エリア⁠の設定⁠が推奨されます⁠。</p>
           </div>
           <div class="entry warn">
@@ -1840,6 +2376,7 @@
               <span class="entry-label">アプリ</span>
               <span class="entry-score">80点</span>
             </div>
+            <p class="entry-lead">接続が不安定</p>
             <p class="entry-body">マッピング精度⁠やエリア指定⁠、スケジュール設定など機能⁠は豊富⁠で使いやすいと概ね好評⁠です⁠。一方⁠で⁠、初期設定時⁠のWi-Fi接続⁠の不安定さや⁠、マップ⁠が稀⁠にリセットされるといったソフトウェア関連⁠の不具合報告⁠も一部見られます⁠。</p>
           </div></div></div></div></div>
           
@@ -1880,11 +2417,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · バッテリー持ちが良い機種</p>
-            <p class="verdict-pick"><strong>Eufy Robot Vacuum Omni E25</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">バッテリー持ちが良い機種</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>Eufy Robot Vacuum Omni E25</strong> が第一候補</p>
             <p class="verdict-why">理由：フローリング・バッテリーの評価が高い</p>
             <p class="verdict-alt">迷ったら比較：総合点2位の <strong>Eufy X10 Pro Omniです。</strong> も候補</p>
             <p class="verdict-next"><a href="/products/eufy-robot-vacuum-omni-e25">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/eufy-robot-vacuum-omni-e25" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -1917,6 +2460,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">98点</span>
             </div>
+            <p class="entry-lead">床がサラサラ</p>
             <p class="entry-body">「⁠<strong class="em-key benefit">床⁠がサラサラ</strong>⁠」「⁠素足⁠で歩くと違いを実感⁠」⁠といった声⁠が圧倒的多数⁠。ローラーモップ⁠が常⁠に洗浄されるため⁠、汚れを引きずらず高い清掃品質⁠を維持します⁠。</p>
           </div>
           <div class="entry good">
@@ -1924,6 +2468,7 @@
               <span class="entry-label">アプリ</span>
               <span class="entry-score">96点</span>
             </div>
+            <p class="entry-lead">マッピング精度が高く</p>
             <p class="entry-body">マッピング精度⁠が高く⁠、部屋分割⁠や進入禁止エリア⁠の設定⁠が直感的⁠に行えると高く評価されています⁠。Wi-Fi接続⁠も安定しており⁠、操作性⁠は良好⁠です⁠。</p>
           </div>
           <div class="entry good">
@@ -1931,6 +2476,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">95点</span>
             </div>
+            <p class="entry-lead">吸引力が絶賛</p>
             <p class="entry-body">犬⁠や猫⁠の抜け毛⁠を<strong class="em-key benefit">しっかり吸引</strong>し⁠、水拭きで肉球⁠の足跡⁠も綺麗⁠になるとペットオーナーから絶賛されています⁠。毛⁠が絡みにくいブラシ構造⁠も評価されています⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -1938,6 +2484,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">75点</span>
             </div>
+            <p class="entry-lead">厚手は苦手</p>
             <p class="entry-body">約2cm⁠の段差⁠は乗り越え可能⁠ですが⁠、それ以上⁠の高さや厚手⁠のプレイマットなどは苦手なようです⁠。玄関など大きな段差⁠では落下防止機能⁠が正常⁠に作動します⁠。</p>
           </div>
           <div class="entry warn">
@@ -1945,6 +2492,7 @@
               <span class="entry-label">静音性</span>
               <span class="entry-score">85点</span>
             </div>
+            <p class="entry-lead">掃除完了後にステーションでゴミ</p>
             <p class="entry-body">掃除中⁠の本体動作音⁠は非常⁠に静かとの評価⁠が多数⁠です⁠。ただし⁠、掃除完了後⁠にステーション⁠でゴミ⁠を吸引する際⁠の音⁠は大きいという指摘⁠が共通して見られます⁠。</p>
           </div></div></div></div></div>
           
@@ -1985,11 +2533,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · コスパ重視の人なら</p>
-            <p class="verdict-pick"><strong>Eufy Robot Vacuum Omni C28</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">コスパ重視の人なら</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>Eufy Robot Vacuum Omni C28</strong> が第一候補</p>
             <p class="verdict-why">理由：フローリング・アプリの評価が高い</p>
             <p class="verdict-alt">軸を変えるなら <a href="#feature">機能別</a> / <a href="#persona">暮らし方別</a> / <a href="#price">予算別</a> へ</p>
             <p class="verdict-next"><a href="/products/eufy-robot-vacuum-omni-c28">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/eufy-robot-vacuum-omni-c28" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -2016,6 +2570,7 @@
               <span class="entry-label">静音性</span>
               <span class="entry-score">95点</span>
             </div>
+            <p class="entry-lead">吸引力が絶賛</p>
             <p class="entry-body">動作音⁠の静かさは多くのユーザー⁠が絶賛しており⁠、本製品⁠の大きな長所⁠です⁠。夜間⁠や在宅ワーク中⁠でも気⁠にならないレベル⁠で⁠、テレビ⁠を見ながらでも使用⁠できるとのレビュー⁠が多数⁠。従来⁠の掃除機⁠や他社製品⁠との比較⁠で特⁠に高く評価されています⁠。</p>
           </div>
           <div class="entry good">
@@ -2023,6 +2578,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">92点</span>
             </div>
+            <p class="entry-lead">吸引＋水拭きでサラサラ</p>
             <p class="entry-body">フローリング⁠の清掃能力⁠は非常⁠に高く評価されています⁠。吸引⁠と水拭きの同時実行⁠で⁠、髪⁠の毛⁠やホコリ⁠、砂埃までしっかり除去し⁠、床⁠がサラサラ⁠になるとの声⁠が多数⁠。一部吸い残しの指摘⁠もありますが⁠、満足度⁠は高いです⁠。</p>
           </div>
           <div class="entry good">
@@ -2030,6 +2586,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">88点</span>
             </div>
+            <p class="entry-lead">ペット毛に強い</p>
             <p class="entry-body">犬⁠や猫⁠の抜け毛⁠に対する吸引力⁠は高く評価されています⁠。ペット⁠のいる家庭⁠では⁠、日々⁠の掃除⁠の手間⁠が大幅⁠に軽減されたとの喜びの声⁠が多く見られました⁠。短毛種⁠のペット⁠がいる家庭⁠では特⁠に満足度⁠が高いようです⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -2037,6 +2594,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">65点</span>
             </div>
+            <p class="entry-lead">乗り上げて停止</p>
             <p class="entry-body">約1.5cmまでの段差⁠は乗り越え可能⁠ですが⁠、それ以上⁠の段差⁠や⁠、椅子⁠の脚⁠、配線カバーなど特定⁠の形状⁠のものには苦戦する傾向⁠があります⁠。玄関からの落下⁠を防ぐセンサー⁠は機能しますが⁠、低い段差⁠では乗り越えられず停止することもあります⁠。</p>
           </div>
           <div class="entry warn">
@@ -2044,6 +2602,7 @@
               <span class="entry-label">カーペット</span>
               <span class="entry-score">70点</span>
             </div>
+            <p class="entry-lead">厚手カーペットは苦手</p>
             <p class="entry-body">薄手⁠のカーペット⁠やラグ⁠は乗り越えて掃除⁠できますが⁠、厚手⁠のものや毛足⁠の長いものは苦手なようです⁠。軽いラグ⁠を巻き込んで停止したり⁠、ブラシ⁠が挟まったりする事例⁠が報告されており⁠、<strong class="em-key demerit">注意⁠が必要</strong>⁠です⁠。</p>
           </div></div></div></div></div>
           
@@ -2084,11 +2643,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · 静かに使いたい人なら</p>
-            <p class="verdict-pick"><strong>Eufy RoboVac G30 Hybrid</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">静かに使いたい人なら</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>Eufy RoboVac G30 Hybrid</strong> が第一候補</p>
             <p class="verdict-why">理由：静音性・フローリングの評価が高い</p>
             <p class="verdict-alt">軸を変えるなら <a href="#feature">機能別</a> / <a href="#persona">暮らし方別</a> / <a href="#price">予算別</a> へ</p>
             <p class="verdict-next"><a href="/products/eufy-robovac-g30-hybrid">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/eufy-robovac-g30-hybrid" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -2115,6 +2680,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">98点</span>
             </div>
+            <p class="entry-lead">床がサラサラ</p>
             <p class="entry-body">「⁠<strong class="em-key benefit">床⁠がサラサラ</strong>⁠」「⁠素足⁠で歩くと違いを実感⁠」⁠といった声⁠が圧倒的多数⁠。ローラーモップ⁠が常⁠に洗浄されるため⁠、汚れを引きずらず高い清掃品質⁠を維持します⁠。</p>
           </div>
           <div class="entry good">
@@ -2122,6 +2688,7 @@
               <span class="entry-label">アプリ</span>
               <span class="entry-score">96点</span>
             </div>
+            <p class="entry-lead">マッピング精度が高く</p>
             <p class="entry-body">マッピング精度⁠が高く⁠、部屋分割⁠や進入禁止エリア⁠の設定⁠が直感的⁠に行えると高く評価されています⁠。Wi-Fi接続⁠も安定しており⁠、操作性⁠は良好⁠です⁠。</p>
           </div>
           <div class="entry good">
@@ -2129,6 +2696,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">95点</span>
             </div>
+            <p class="entry-lead">吸引力が絶賛</p>
             <p class="entry-body">犬⁠や猫⁠の抜け毛⁠を<strong class="em-key benefit">しっかり吸引</strong>し⁠、水拭きで肉球⁠の足跡⁠も綺麗⁠になるとペットオーナーから絶賛されています⁠。毛⁠が絡みにくいブラシ構造⁠も評価されています⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -2136,6 +2704,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">75点</span>
             </div>
+            <p class="entry-lead">厚手は苦手</p>
             <p class="entry-body">約2cm⁠の段差⁠は乗り越え可能⁠ですが⁠、それ以上⁠の高さや厚手⁠のプレイマットなどは苦手なようです⁠。玄関など大きな段差⁠では落下防止機能⁠が正常⁠に作動します⁠。</p>
           </div>
           <div class="entry warn">
@@ -2143,6 +2712,7 @@
               <span class="entry-label">静音性</span>
               <span class="entry-score">85点</span>
             </div>
+            <p class="entry-lead">掃除完了後にステーションでゴミ</p>
             <p class="entry-body">掃除中⁠の本体動作音⁠は非常⁠に静かとの評価⁠が多数⁠です⁠。ただし⁠、掃除完了後⁠にステーション⁠でゴミ⁠を吸引する際⁠の音⁠は大きいという指摘⁠が共通して見られます⁠。</p>
           </div></div></div></div></div>
           
@@ -2183,11 +2753,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · ペットのいる家なら</p>
-            <p class="verdict-pick"><strong>Eufy Robot Vacuum Omni C28</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">ペットのいる家なら</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>Eufy Robot Vacuum Omni C28</strong> が第一候補</p>
             <p class="verdict-why">理由：フローリング・アプリの評価が高い</p>
             <p class="verdict-alt">軸を変えるなら <a href="#feature">機能別</a> / <a href="#persona">暮らし方別</a> / <a href="#price">予算別</a> へ</p>
             <p class="verdict-next"><a href="/products/eufy-robot-vacuum-omni-c28">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/eufy-robot-vacuum-omni-c28" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -2214,6 +2790,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">98点</span>
             </div>
+            <p class="entry-lead">床がサラサラ</p>
             <p class="entry-body">「⁠<strong class="em-key benefit">床⁠がサラサラ</strong>⁠」「⁠素足⁠で歩くと違いを実感⁠」⁠といった声⁠が圧倒的多数⁠。ローラーモップ⁠が常⁠に洗浄されるため⁠、汚れを引きずらず高い清掃品質⁠を維持します⁠。</p>
           </div>
           <div class="entry good">
@@ -2221,6 +2798,7 @@
               <span class="entry-label">アプリ</span>
               <span class="entry-score">96点</span>
             </div>
+            <p class="entry-lead">マッピング精度が高く</p>
             <p class="entry-body">マッピング精度⁠が高く⁠、部屋分割⁠や進入禁止エリア⁠の設定⁠が直感的⁠に行えると高く評価されています⁠。Wi-Fi接続⁠も安定しており⁠、操作性⁠は良好⁠です⁠。</p>
           </div>
           <div class="entry good">
@@ -2228,6 +2806,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">95点</span>
             </div>
+            <p class="entry-lead">吸引力が絶賛</p>
             <p class="entry-body">犬⁠や猫⁠の抜け毛⁠を<strong class="em-key benefit">しっかり吸引</strong>し⁠、水拭きで肉球⁠の足跡⁠も綺麗⁠になるとペットオーナーから絶賛されています⁠。毛⁠が絡みにくいブラシ構造⁠も評価されています⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -2235,6 +2814,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">75点</span>
             </div>
+            <p class="entry-lead">厚手は苦手</p>
             <p class="entry-body">約2cm⁠の段差⁠は乗り越え可能⁠ですが⁠、それ以上⁠の高さや厚手⁠のプレイマットなどは苦手なようです⁠。玄関など大きな段差⁠では落下防止機能⁠が正常⁠に作動します⁠。</p>
           </div>
           <div class="entry warn">
@@ -2242,6 +2822,7 @@
               <span class="entry-label">静音性</span>
               <span class="entry-score">85点</span>
             </div>
+            <p class="entry-lead">掃除完了後にステーションでゴミ</p>
             <p class="entry-body">掃除中⁠の本体動作音⁠は非常⁠に静かとの評価⁠が多数⁠です⁠。ただし⁠、掃除完了後⁠にステーション⁠でゴミ⁠を吸引する際⁠の音⁠は大きいという指摘⁠が共通して見られます⁠。</p>
           </div></div></div></div></div>
           
@@ -2282,11 +2863,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · 床をきれいにしたい人なら</p>
-            <p class="verdict-pick"><strong>Eufy Robot Vacuum Omni C28</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">床をきれいにしたい人なら</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>Eufy Robot Vacuum Omni C28</strong> が第一候補</p>
             <p class="verdict-why">理由：フローリング・アプリの評価が高い</p>
             <p class="verdict-alt">軸を変えるなら <a href="#feature">機能別</a> / <a href="#persona">暮らし方別</a> / <a href="#price">予算別</a> へ</p>
             <p class="verdict-next"><a href="/products/eufy-robot-vacuum-omni-c28">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/eufy-robot-vacuum-omni-c28" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -2313,6 +2900,7 @@
               <span class="entry-label">メンテナンス</span>
               <span class="entry-score">94点</span>
             </div>
+            <p class="entry-lead">メンテが楽</p>
             <p class="entry-body">約2ヶ月⁠に1度⁠のダストバッグ交換⁠で済む自動ゴミ収集機能⁠は圧倒的⁠に高評価⁠です⁠。ブラシ⁠の毛⁠がらみ除去システム⁠も有効⁠で⁠、日々⁠のメンテナンス⁠の手間⁠を大幅⁠に削減してくれます⁠。</p>
           </div>
           <div class="entry good">
@@ -2320,6 +2908,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">93点</span>
             </div>
+            <p class="entry-lead">ペット毛に強い</p>
             <p class="entry-body">フローリング⁠の掃除性能⁠は非常⁠に高く評価されています⁠。髪⁠の毛⁠やペット⁠の毛⁠、ホコリ⁠を<strong class="em-key benefit">しっかり吸引</strong>し⁠、帰宅時⁠に床⁠が綺麗⁠になっていることへの満足⁠の声⁠が大多数⁠を占めます⁠。</p>
           </div>
           <div class="entry good">
@@ -2327,6 +2916,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">90点</span>
             </div>
+            <p class="entry-lead">メンテが楽</p>
             <p class="entry-body">ペット⁠の抜け毛掃除⁠では多くのユーザーから高く評価されています⁠。自動ゴミ収集機能⁠と合わせ⁠、日々⁠の毛⁠の掃除から解放されたという声⁠が多く⁠、犬猫⁠のいる家庭⁠で活躍します⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -2334,6 +2924,7 @@
               <span class="entry-label">カーペット</span>
               <span class="entry-score">78点</span>
             </div>
+            <p class="entry-lead">厚手カーペットは苦手</p>
             <p class="entry-body">薄手⁠のカーペット⁠やラグ⁠は問題なく掃除⁠できますが⁠、毛足⁠の長いものや厚手⁠のものは苦手な様子⁠。めくり上げてしまったり⁠、吸引力⁠が物足りないとの指摘⁠が一部⁠で見られます⁠。</p>
           </div>
           <div class="entry warn">
@@ -2341,6 +2932,7 @@
               <span class="entry-label">バッテリー</span>
               <span class="entry-score">82点</span>
             </div>
+            <p class="entry-lead">途中で充電切れ</p>
             <p class="entry-body">一般的な家庭⁠のリビング⁠や複数⁠の部屋⁠を一度⁠に掃除するには十分なバッテリー性能⁠です⁠。ただし⁠、途中⁠で充電⁠が切れたり⁠、ステーション⁠に戻れず停止するケース⁠も稀⁠に報告されています⁠。</p>
           </div></div></div></div></div>
           
@@ -2381,17 +2973,23 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · 手間を減らしたい人なら</p>
-            <p class="verdict-pick"><strong>Eufy Robot Vacuum Auto-Empty C10</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">手間を減らしたい人なら</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>Eufy Robot Vacuum Auto-Empty C10</strong> が第一候補</p>
             <p class="verdict-why">理由：メンテナンス・フローリングの評価が高い</p>
             <p class="verdict-alt">軸を変えるなら <a href="#feature">機能別</a> / <a href="#persona">暮らし方別</a> / <a href="#price">予算別</a> へ</p>
             <p class="verdict-next"><a href="/products/eufy-robot-vacuum-auto-empty-c10">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/eufy-robot-vacuum-auto-empty-c10" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
       </article>
       <article class="article-pick" id="persona-high" data-slug="eufy-robot-vacuum-omni-s2">
-        <h3 class="pick-heading"><span class="pick-label">ハイエンドを探している人なら</span><span class="pick-name">Eufy Robot Vacuum Omni S2</span></h3>
+        <h3 class="pick-heading"><span class="pick-label">15万円以上で選ぶ人なら</span><span class="pick-name">Eufy Robot Vacuum Omni S2</span></h3>
         <div class="aff-mount" data-slug="eufy-robot-vacuum-omni-s2" data-maker="Anker">
           <p class="aff-status">かんたんリンクを読み込み中…</p>
         </div>
@@ -2405,13 +3003,14 @@
             </p>
             <p class="price-caution">表示価格⁠はメーカー公式ストア⁠の販売価格⁠です⁠。セール⁠で頻繁⁠に変わるため⁠、購入前⁠に最新⁠の価格⁠の確認⁠を強くおすすめします⁠。</p>
           </div>
-          <p class="lead">15万円以上⁠の上位機⁠に絞り⁠、フローリング評価⁠が<strong class="em-key">最⁠も高い</strong>機種⁠を選んでいます⁠。予算⁠に余裕⁠がある人向けです⁠。</p>
+          <p class="lead">価格15万円以上の機種に絞ったうえで、フローリング評価が<strong class="em-key">最⁠も高い</strong>機種⁠を選んでいます⁠。予算に余裕があり、上位モデルを見たい人向けです。</p>
           <div class="panel pros-cons"><div class="pros-cons-groups"><div class="pros-cons-group"><h4 class="pros-cons-label pros-cons-label-good">強み</h4><div class="entry-grid">
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">フローリング</span>
               <span class="entry-score">98点</span>
             </div>
+            <p class="entry-lead">床がサラサラ</p>
             <p class="entry-body">30,000Pa⁠の圧倒的な吸引力⁠と加圧式ローラーモップ⁠が高評価⁠。フローリング⁠の微細なホコリ⁠や皮脂汚れまで除去し⁠、「⁠<strong class="em-key benefit">床⁠がサラサラ⁠になる</strong>⁠」⁠との声⁠が多数⁠。無垢床⁠でも水量⁠を調整すれば安心して使用⁠できます⁠。</p>
           </div>
           <div class="entry good">
@@ -2419,6 +3018,7 @@
               <span class="entry-label">メンテナンス</span>
               <span class="entry-score">98点</span>
             </div>
+            <p class="entry-lead">吸引力が絶賛</p>
             <p class="entry-body">ゴミ収集からモップ⁠の温水洗浄・乾燥⁠、洗剤自動投入まで全てをこなす全自動ステーション⁠が「⁠手間いらず⁠」⁠と絶賛されています⁠。日々⁠の作業⁠は給排水⁠のみで⁠、メンテナンス⁠の負担⁠が劇的⁠に軽減されます⁠。</p>
           </div>
           <div class="entry good">
@@ -2426,6 +3026,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">94点</span>
             </div>
+            <p class="entry-lead">吸引力が絶賛</p>
             <p class="entry-body">犬⁠や猫⁠の毛⁠で悩む家庭から「⁠<strong class="em-key benefit">助かっている</strong>⁠」⁠と絶賛⁠の声⁠。強力な吸引力⁠と毛⁠が絡まりにくいブラシ構造⁠で⁠、ペット⁠の抜け毛⁠を効率的⁠に除去⁠。アレルギー対策⁠としても非常⁠に有効な機能⁠です⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -2433,6 +3034,7 @@
               <span class="entry-label">静音性</span>
               <span class="entry-score">85点</span>
             </div>
+            <p class="entry-lead">フローリングでの通常清掃時</p>
             <p class="entry-body">フローリング⁠での通常清掃時⁠は「⁠<strong class="em-key benefit">非常⁠に静か</strong>⁠」⁠と高評価⁠。一方⁠で⁠、カーペット上⁠で吸引力⁠が上⁠がると相応⁠の音⁠が発生します⁠。ステーション⁠のゴミ収集音⁠は大きいですが短時間⁠で終わるため⁠、許容範囲⁠との意見⁠が多いです⁠。</p>
           </div>
           <div class="entry warn">
@@ -2440,6 +3042,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">88点</span>
             </div>
+            <p class="entry-lead">厚手は苦手</p>
             <p class="entry-body">最大4.2cm⁠の段差⁠に対応し⁠、厚手⁠のラグ⁠や部屋⁠の敷居⁠もスムーズ⁠に乗り越える性能⁠が多くのレビュー⁠で称賛されています⁠。ただし⁠、家具⁠の脚⁠や特定⁠の形状⁠の段差⁠で稀⁠に引っかかることがあるとの指摘⁠も見られます⁠。</p>
           </div></div></div></div></div>
           
@@ -2480,11 +3083,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · ハイエンドを探している人なら</p>
-            <p class="verdict-pick"><strong>Eufy Robot Vacuum Omni S2</strong> が第一候補</p>
-            <p class="verdict-why">理由：フローリング・メンテナンスの評価が高い</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">15万円以上で選ぶ人なら</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>Eufy Robot Vacuum Omni S2</strong> が第一候補</p>
+            <p class="verdict-why">理由：15万円以上の機種のなかで、フローリング評価が最も高い</p>
             <p class="verdict-alt">軸を変えるなら <a href="#feature">機能別</a> / <a href="#persona">暮らし方別</a> / <a href="#price">予算別</a> へ</p>
             <p class="verdict-next"><a href="/products/eufy-robot-vacuum-omni-s2">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/eufy-robot-vacuum-omni-s2" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>

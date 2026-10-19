@@ -381,7 +381,403 @@ a { color:var(--primary); }
 .related-grid a:hover { border-color:#93c5fd; background:#eff6ff; }
 footer.page-footer { text-align:center; color:var(--muted); font-size:.8rem; padding:1.5rem 1rem 2rem; }
 footer.page-footer a { color:var(--primary); font-weight:700; text-decoration:none; margin:0 .35rem; }
-</style>
+
+    /* FLAT_LAYOUT_PROTOTYPE */
+    /* Soft frames + hierarchy: 項目 → 一言結論 → 補足。左アクセントは使わない */
+    /* Budget/condition label is the section break; product name is secondary */
+    .articles > .article-pick {
+      margin-top:2.4rem !important;
+      padding-top:1.6rem !important;
+      border-top:3px solid #cbd5e1 !important;
+    }
+    .articles > .article-pick:first-child {
+      margin-top:0 !important;
+      padding-top:.25rem !important;
+      border-top:0 !important;
+    }
+    .article-pick h3,
+    .article-pick h3.pick-heading {
+      display:flex !important;
+      flex-direction:column !important;
+      gap:.45rem !important;
+      background:transparent !important;
+      box-shadow:none !important;
+      border:0 !important;
+      border-radius:0 !important;
+      border-bottom:3px solid #1e3a8a !important;
+      padding:0 0 .85rem !important;
+      margin:0 0 1.2rem !important;
+    }
+    .article-pick .pick-label {
+      display:block !important;
+      font-size:clamp(1.28rem, 4.2vw, 1.6rem) !important;
+      font-weight:900 !important;
+      letter-spacing:.01em !important;
+      color:#0f172a !important;
+      line-height:1.3 !important;
+    }
+    .article-pick .pick-name {
+      display:block !important;
+      font-size:1.02rem !important;
+      font-weight:800 !important;
+      line-height:1.45 !important;
+      color:#1e40af !important;
+      text-wrap:balance !important;
+    }
+    .article-pick .pick-name::before {
+      content:"おすすめ機種：" !important;
+      color:#64748b !important;
+      font-weight:800 !important;
+      font-size:.86rem !important;
+      margin-right:.3rem !important;
+    }
+    .meta-block {
+      background:#f8fafc !important;
+      border:1px solid #e8eef5 !important;
+      border-radius:12px !important;
+      padding:.8rem .9rem !important;
+      margin:0 0 .9rem !important;
+    }
+    .article-copy .lead,
+    .article-pick > .lead {
+      margin:0 0 1rem !important;
+      padding:.75rem .9rem !important;
+      background:#f8fafc !important;
+      border:1px solid #e8eef5 !important;
+      border-radius:12px !important;
+      font-size:.9rem !important;
+      line-height:1.75 !important;
+      color:#1e293b !important;
+    }
+    .panel,
+    .panel.panel-neg,
+    .panel.trend-panel,
+    .panel.pros-cons {
+      background:#fafbfc !important;
+      border:1px solid #e8eef5 !important;
+      border-radius:14px !important;
+      padding:.9rem .9rem 1rem !important;
+      margin:0 0 1rem !important;
+      box-shadow:none !important;
+    }
+    .panel.panel-neg {
+      background:#fffafb !important;
+      border-color:#f1e4e7 !important;
+    }
+    .panel.trend-panel {
+      background:#f7f9fc !important;
+      border-color:#e4ebf5 !important;
+    }
+    .pros-cons-groups { gap:1rem !important; }
+    .pros-cons-group { gap:.55rem !important; }
+    .pros-cons-group-neg {
+      border-top:1px dashed #edd5da !important;
+      padding-top:.9rem !important;
+      margin-top:.15rem !important;
+    }
+    .pros-cons-label,
+    .panel h4,
+    .panel.pros-cons h4,
+    .panel.trend-panel h4,
+    .panel.panel-neg h4,
+    .know > h4,
+    h4.pros-cons-label {
+      display:block !important;
+      width:auto !important;
+      margin:0 0 .75rem !important;
+      padding:0 0 .4rem !important;
+      border-radius:0 !important;
+      background:transparent !important;
+      border-bottom:3px solid #cbd5e1 !important;
+      font-size:1.28rem !important;
+      font-weight:900 !important;
+      letter-spacing:.02em !important;
+      line-height:1.3 !important;
+      color:#0f172a !important;
+    }
+    h4.pros-cons-label.pros-cons-label-good {
+      color:#047857 !important;
+      border-bottom-color:#34d399 !important;
+    }
+    h4.pros-cons-label.pros-cons-label-warn,
+    .panel.panel-neg > h4 {
+      color:#be123c !important;
+      border-bottom-color:#fb7185 !important;
+    }
+    .panel.trend-panel > h4 {
+      color:#1d4ed8 !important;
+      border-bottom-color:#60a5fa !important;
+    }
+
+    .entry-grid {
+      grid-template-columns:1fr !important;
+      gap:.55rem !important;
+    }
+    @media (min-width:720px) {
+      .entry-grid {
+        grid-template-columns:1fr 1fr !important;
+        gap:.55rem .65rem !important;
+      }
+    }
+    .entry-stack { gap:.55rem !important; }
+
+    .entry,
+    .entry.good,
+    .entry.warn,
+    .entry.fit,
+    .entry.issue {
+      border:1px solid #e8eef5 !important;
+      border-radius:12px !important;
+      border-left:1px solid #e8eef5 !important;
+      box-shadow:none !important;
+      padding:.75rem .85rem .8rem !important;
+      height:auto !important;
+      background:#ffffff !important;
+    }
+    .entry.good {
+      background:#f4faf7 !important;
+      border-color:#d9ebe2 !important;
+    }
+    .entry.warn,
+    .entry.issue {
+      background:#fdf7f8 !important;
+      border-color:#f0dde2 !important;
+    }
+    .entry.fit {
+      background:#f5f8fd !important;
+      border-color:#dce6f4 !important;
+    }
+
+    .entry-head {
+      display:flex !important;
+      align-items:center !important;
+      justify-content:space-between !important;
+      gap:.5rem !important;
+      margin:0 0 .4rem !important;
+    }
+    .entry-label {
+      font-size:.78rem !important;
+      font-weight:800 !important;
+      color:#334155 !important;
+      letter-spacing:.04em !important;
+    }
+    /* fit/issue: ラベル自体が一言結論（途中省略の lead は入れない） */
+    .entry.fit .entry-label,
+    .entry.issue .entry-label {
+      font-size:1rem !important;
+      font-weight:900 !important;
+      color:#0f172a !important;
+      letter-spacing:.01em !important;
+      line-height:1.45 !important;
+    }
+    .entry.fit .entry-head,
+    .entry.issue .entry-head {
+      align-items:flex-start !important;
+      margin:0 0 .4rem !important;
+    }
+    .entry-score {
+      flex-shrink:0 !important;
+      display:inline-flex !important;
+      align-items:center !important;
+      padding:.12rem .5rem !important;
+      border-radius:999px !important;
+      background:rgba(255,255,255,.9) !important;
+      border:1px solid rgba(148,163,184,.35) !important;
+      font-size:.74rem !important;
+      font-weight:900 !important;
+      color:#334155 !important;
+      line-height:1.2 !important;
+    }
+    .entry.good .entry-score {
+      color:#047857 !important;
+      border-color:#b7e0cd !important;
+      background:#ffffff !important;
+    }
+    .entry.warn .entry-score,
+    .entry.issue .entry-score {
+      color:#e11d48 !important;
+      border-color:#f0c4cd !important;
+      background:#ffffff !important;
+    }
+    .entry.fit .entry-score {
+      color:#1d4ed8 !important;
+      border-color:#bfdbfe !important;
+      background:#ffffff !important;
+    }
+
+    .entry-lead {
+      margin:0 0 .35rem !important;
+      font-size:1.05rem !important;
+      font-weight:900 !important;
+      line-height:1.35 !important;
+      color:#0f172a !important;
+      letter-spacing:.01em !important;
+      /* 一言だけ：長文に見せない */
+      max-width:100% !important;
+    }
+    .entry.warn .entry-lead,
+    .entry.issue .entry-lead { color:#0f172a !important; }
+
+    .entry .entry-body,
+    .entry.good .entry-body,
+    .entry.warn .entry-body,
+    .entry.fit .entry-body,
+    .entry.issue .entry-body,
+    p.entry-body {
+      margin:0 !important;
+      font-size:.86rem !important;
+      line-height:1.7 !important;
+      color:#0f172a !important;
+      font-weight:600 !important;
+      opacity:1 !important;
+    }
+
+    .trend-summary {
+      font-size:.86rem !important;
+      line-height:1.7 !important;
+      color:#1e293b !important;
+    }
+    .trend-kw-title {
+      margin:1rem 0 .45rem !important;
+      font-size:.92rem !important;
+      font-weight:900 !important;
+      letter-spacing:.04em !important;
+      color:#0f172a !important;
+    }
+    .trend-chip {
+      border:1px solid #e2e8f0 !important;
+      background:#ffffff !important;
+      color:#334155 !important;
+      padding:.3rem .65rem !important;
+      border-radius:8px !important;
+      font-size:.74rem !important;
+    }
+    .know {
+      background:#fafbfc !important;
+      border:1px solid #e8eef5 !important;
+      border-radius:14px !important;
+      box-shadow:none !important;
+      padding:.9rem !important;
+      margin:0 0 1rem !important;
+    }
+    .know-note {
+      background:transparent !important;
+      border:0 !important;
+      padding:0 !important;
+      margin:0 0 .7rem !important;
+      color:#1e293b !important;
+    }
+    .know-item {
+      background:#ffffff !important;
+      border:1px solid #e8eef5 !important;
+      border-left:1px solid #e8eef5 !important;
+      border-radius:10px !important;
+      padding:.6rem .75rem !important;
+      margin:0 0 .45rem !important;
+    }
+    .toc-box,
+    .summary-box,
+    .vs-card {
+      background:#fafbfc !important;
+      border:1px solid #e8eef5 !important;
+      border-radius:14px !important;
+      box-shadow:none !important;
+      padding:.9rem 1rem !important;
+    }
+    .vs-table {
+      border:1px solid #e2e8f0 !important;
+      border-radius:10px !important;
+      box-shadow:none !important;
+    }
+    .vs-table thead th { background:#f1f5f9 !important; }
+    /* Decision block: stand out vs soft content cards */
+    .verdict,
+    .band-verdict {
+      margin:1.4rem 0 0 !important;
+      padding:0 !important;
+      border:2px solid #1e3a8a !important;
+      border-radius:16px !important;
+      background:#ffffff !important;
+      box-shadow:0 12px 32px rgba(30,58,138,.18) !important;
+      overflow:hidden !important;
+    }
+    .band-verdict { margin:1.35rem 0 1.6rem !important; }
+    .verdict-head,
+    .band-verdict .verdict-head {
+      display:flex !important;
+      flex-wrap:wrap !important;
+      align-items:center !important;
+      gap:.45rem .7rem !important;
+      margin:0 !important;
+      padding:.75rem 1.1rem !important;
+      background:#1e3a8a !important;
+      color:#fff !important;
+    }
+    .verdict-badge {
+      display:inline-flex !important;
+      align-items:center !important;
+      padding:.22rem .7rem !important;
+      border-radius:999px !important;
+      background:#fbbf24 !important;
+      color:#78350f !important;
+      font-size:.8rem !important;
+      font-weight:900 !important;
+      letter-spacing:.02em !important;
+      line-height:1.3 !important;
+    }
+    .verdict-cond {
+      font-size:.88rem !important;
+      font-weight:800 !important;
+      color:#dbeafe !important;
+      letter-spacing:.02em !important;
+    }
+    .verdict-body,
+    .band-verdict .verdict-body {
+      padding:1rem 1.15rem 1.15rem !important;
+      background:linear-gradient(180deg,#f8fbff 0%,#ffffff 55%) !important;
+    }
+    .verdict-source {
+      margin:0 0 .5rem !important;
+      font-size:.9rem !important;
+      font-weight:800 !important;
+      line-height:1.55 !important;
+      color:#1e40af !important;
+    }
+    .verdict-kicker,
+    .band-verdict > .verdict-kicker { display:none !important; }
+    .verdict-pick,
+    .band-verdict .verdict-pick {
+      margin:0 0 .45rem !important;
+      font-size:1.22rem !important;
+      font-weight:900 !important;
+      color:#0f172a !important;
+      line-height:1.4 !important;
+    }
+    .verdict-why, .verdict-alt,
+    .band-verdict .verdict-why,
+    .band-verdict .verdict-alt {
+      margin:0 0 .35rem !important;
+      font-size:.9rem !important;
+      line-height:1.65 !important;
+      color:#1e293b !important;
+      font-weight:600 !important;
+    }
+    .verdict-next,
+    .band-verdict .verdict-next {
+      margin:.65rem 0 0 !important;
+      font-size:.95rem !important;
+      font-weight:900 !important;
+    }
+    .verdict a,
+    .band-verdict a {
+      color:#1e40af !important;
+      text-decoration:none !important;
+      font-weight:900 !important;
+    }
+    .verdict a:hover,
+    .band-verdict a:hover { text-decoration:underline !important; }
+
+  </style>
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -621,6 +1017,7 @@ footer.page-footer a { color:var(--primary); font-weight:700; text-decoration:no
               <span class="entry-label">フローリング</span>
               <span class="entry-score">94点</span>
             </div>
+            <p class="entry-lead">吸引力が絶賛</p>
             <p class="entry-body">コンパクトな本体⁠が椅子⁠の脚⁠の間⁠や家具⁠の下など狭い場所⁠にも入り込み⁠、髪⁠の毛⁠やホコリ⁠をしっかり吸引する点⁠が絶賛されている⁠。隅々まで綺麗⁠になるという満足⁠の声⁠が大多数⁠を占める⁠。</p>
           </div>
           <div class="entry good">
@@ -628,6 +1025,7 @@ footer.page-footer a { color:var(--primary); font-weight:700; text-decoration:no
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">92点</span>
             </div>
+            <p class="entry-lead">ペット毛に強い</p>
             <p class="entry-body">犬⁠や猫⁠の抜け毛⁠に悩む利用者から「⁠<strong class="em-key benefit">床⁠に毛⁠が落ちていない生活⁠が快適</strong>⁠」⁠と高い評価⁠を得ている⁠。ゴム製ブラシ⁠は毛⁠が絡まりにくいが⁠、両端⁠の軸部分⁠には定期的なメンテナンス⁠が必要⁠との声⁠もある⁠。</p>
           </div>
           <div class="entry good">
@@ -635,6 +1033,7 @@ footer.page-footer a { color:var(--primary); font-weight:700; text-decoration:no
               <span class="entry-label">静音性</span>
               <span class="entry-score">89点</span>
             </div>
+            <p class="entry-lead">静か</p>
             <p class="entry-body">「⁠<strong class="em-key benefit">静音モード⁠は非常⁠に静か</strong>⁠」⁠との評価⁠が多く⁠、夜間⁠や在宅中⁠でも気⁠にならないレベルだと好評⁠。ただし⁠、ゴミ⁠をステーション⁠に回収する際⁠の吸引音⁠は大きいという指摘⁠が共通して見られる⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -642,6 +1041,7 @@ footer.page-footer a { color:var(--primary); font-weight:700; text-decoration:no
               <span class="entry-label">段差</span>
               <span class="entry-score">70点</span>
             </div>
+            <p class="entry-lead">引っかかって停止</p>
             <p class="entry-body">2cm程度⁠の段差⁠は乗り越える性能⁠を持つが⁠、家具⁠の脚⁠や敷居⁠の形状⁠によっては頻繁⁠に引っかかり停止する⁠。カウンターチェア⁠の脚など特定⁠の障害物⁠で動けなくなる報告⁠が多く⁠、事前⁠の対策⁠が重要⁠。</p>
           </div>
           <div class="entry warn">
@@ -649,6 +1049,7 @@ footer.page-footer a { color:var(--primary); font-weight:700; text-decoration:no
               <span class="entry-label">カーペット</span>
               <span class="entry-score">78点</span>
             </div>
+            <p class="entry-lead">厚手カーペットは苦手</p>
             <p class="entry-body">薄手⁠のカーペット⁠やプレイマット⁠は問題なく乗り越えて掃除するが⁠、毛足⁠の長いものや柔らかいラグ⁠は吸い込んで停止することがある⁠。吸引力自体⁠は評価されているが⁠、素材⁠との相性⁠を選ぶ傾向⁠がある⁠。</p>
           </div></div></div></div></div>
           
@@ -689,11 +1090,17 @@ footer.page-footer a { color:var(--primary); font-weight:700; text-decoration:no
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · 総合1位</p>
-            <p class="verdict-pick"><strong>ロボット掃除機 K11+</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">総合1位</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>ロボット掃除機 K11+</strong> が第一候補</p>
             <p class="verdict-why">理由：フローリング・ペット毛の評価が高い</p>
             <p class="verdict-alt">ページ上部の「迷ったらこれ」や比較表もあわせて確認を</p>
             <p class="verdict-next"><a href="/products/k11">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
           <p class="more"><a href="/products/k11">製品ページで詳しく見る →</a></p>
         </div>
@@ -720,6 +1127,7 @@ footer.page-footer a { color:var(--primary); font-weight:700; text-decoration:no
               <span class="entry-label">メンテナンス</span>
               <span class="entry-score">95点</span>
             </div>
+            <p class="entry-lead">メンテが楽</p>
             <p class="entry-body">自動ゴミ収集機能⁠により⁠、数ヶ月⁠に一度⁠の紙パック交換だけで済む手軽さが絶賛されています⁠。市販⁠のウェットシート⁠が使える点⁠も⁠、メンテナンス⁠の手間⁠とコスト⁠を削減⁠できると好評⁠です⁠。</p>
           </div>
           <div class="entry good">
@@ -727,6 +1135,7 @@ footer.page-footer a { color:var(--primary); font-weight:700; text-decoration:no
               <span class="entry-label">フローリング</span>
               <span class="entry-score">93点</span>
             </div>
+            <p class="entry-lead">隅々まで掃除できる</p>
             <p class="entry-body">コンパクトな本体⁠が椅子⁠の脚⁠の間⁠や家具⁠の隙間⁠にも入り込み⁠、隅々まで掃除⁠できると高評価⁠です⁠。吸引力⁠も十分⁠で⁠、日常的なホコリ⁠や髪⁠の毛⁠は問題なく除去⁠できるとの声⁠が多数⁠でした⁠。</p>
           </div>
           <div class="entry good">
@@ -734,6 +1143,7 @@ footer.page-footer a { color:var(--primary); font-weight:700; text-decoration:no
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">85点</span>
             </div>
+            <p class="entry-lead">ペット毛に強い</p>
             <p class="entry-body">猫⁠の毛⁠や猫砂⁠を問題なく吸い込むという肯定的な意見⁠が多く見られました⁠。ペット⁠の毛⁠がカーペット⁠に絡みついている場合⁠は取り残しがあるものの⁠、フローリング⁠では十分な性能⁠を発揮します⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -741,6 +1151,7 @@ footer.page-footer a { color:var(--primary); font-weight:700; text-decoration:no
               <span class="entry-label">静音性</span>
               <span class="entry-score">65点</span>
             </div>
+            <p class="entry-lead">動作音は「静か」という意見</p>
             <p class="entry-body">動作音⁠は「⁠<strong class="em-key benefit">静か</strong>⁠」⁠という意見⁠と「⁠<strong class="em-key demerit">うるさい</strong>⁠」⁠という意見⁠に二分されます⁠。特⁠にゴミ収集ステーション⁠の吸引音⁠は「⁠爆音⁠」⁠と評されるほど大きく⁠、夜間⁠の使用⁠には注意⁠が必要⁠です⁠。</p>
           </div>
           <div class="entry warn">
@@ -748,6 +1159,7 @@ footer.page-footer a { color:var(--primary); font-weight:700; text-decoration:no
               <span class="entry-label">アプリ</span>
               <span class="entry-score">68点</span>
             </div>
+            <p class="entry-lead">接続が不安定</p>
             <p class="entry-body">Wi-Fi接続⁠が頻繁⁠に切れる⁠、マッピング⁠が崩れるといったソフトウェア面⁠の不安定さを指摘する声⁠が目立ちます⁠。一度接続⁠できれば便利⁠ですが⁠、初期設定⁠で苦労するユーザー⁠が多い印象⁠です⁠。</p>
           </div></div></div></div></div>
           
@@ -812,6 +1224,7 @@ footer.page-footer a { color:var(--primary); font-weight:700; text-decoration:no
               <span class="entry-label">フローリング</span>
               <span class="entry-score">92点</span>
             </div>
+            <p class="entry-lead">小型ボディを活かし</p>
             <p class="entry-body">小型ボディ⁠を活かし⁠、椅子⁠の脚⁠の間⁠や家具⁠の下など狭い場所⁠も隅々まで清掃⁠。吸引力⁠も十分⁠で⁠、ホコリ⁠や髪⁠の毛⁠をしっかり除去する性能⁠は高く評価されている⁠。多くのユーザー⁠が満足している⁠。</p>
           </div>
           <div class="entry good">
@@ -819,6 +1232,7 @@ footer.page-footer a { color:var(--primary); font-weight:700; text-decoration:no
               <span class="entry-label">静音性</span>
               <span class="entry-score">90点</span>
             </div>
+            <p class="entry-lead">清掃中の動作音は非常に静かで</p>
             <p class="entry-body">清掃中⁠の動作音⁠は非常⁠に静かで⁠、在宅中⁠や夜間⁠でも気⁠にならないとの声⁠が多数⁠。ただし⁠、ゴミ収集ステーション⁠の吸引音⁠は数秒間⁠と短いものの⁠、かなり大きいという指摘⁠があるため注意⁠が必要⁠。</p>
           </div>
           <div class="entry good">
@@ -826,6 +1240,7 @@ footer.page-footer a { color:var(--primary); font-weight:700; text-decoration:no
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">88点</span>
             </div>
+            <p class="entry-lead">ペット毛に強い</p>
             <p class="entry-body">ペット⁠の毛⁠や鳥⁠の羽など⁠、細かいゴミ⁠に対する吸引力⁠は好評⁠。小型⁠でケージ下などの狭い場所⁠にも入り込める点⁠がペットオーナー⁠に評価されている⁠。ブラシ⁠への毛⁠の絡まりは定期的な手入れが必要⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -833,6 +1248,7 @@ footer.page-footer a { color:var(--primary); font-weight:700; text-decoration:no
               <span class="entry-label">段差</span>
               <span class="entry-score">60点</span>
             </div>
+            <p class="entry-lead">乗り上げて停止</p>
             <p class="entry-body">1cm程度⁠の段差⁠は超えられるが⁠、1.5cm以上⁠になると失敗するケース⁠が多い⁠。特⁠にマット⁠の端⁠や敷居⁠で立ち往生するとの口コミ⁠が目立つ⁠。段差⁠の多い環境⁠ではスロープ等⁠の工夫⁠が必須⁠。</p>
           </div>
           <div class="entry warn">
@@ -840,6 +1256,7 @@ footer.page-footer a { color:var(--primary); font-weight:700; text-decoration:no
               <span class="entry-label">カーペット</span>
               <span class="entry-score">68点</span>
             </div>
+            <p class="entry-lead">厚手カーペットは苦手</p>
             <p class="entry-body">薄手⁠のラグ⁠は掃除⁠できるが⁠、毛足⁠の長いものや厚手⁠のカーペット⁠ではブラシ⁠が止まったり⁠、乗り越えられずにエラー⁠になる報告⁠が複数ある⁠。カーペット⁠がメイン⁠の環境⁠には不向きな可能性⁠がある⁠。</p>
           </div></div></div></div></div>
           
@@ -904,6 +1321,7 @@ footer.page-footer a { color:var(--primary); font-weight:700; text-decoration:no
               <span class="entry-label">フローリング</span>
               <span class="entry-score">95点</span>
             </div>
+            <p class="entry-lead">吸引＋水拭きでサラサラ</p>
             <p class="entry-body">フローリング⁠の清掃能力⁠は非常⁠に高く評価されている⁠。「⁠<strong class="em-key benefit">床⁠がピカピカ</strong>⁠」「⁠<strong class="em-key benefit">サラサラ⁠になる</strong>⁠」⁠との声⁠が多数⁠。吸引⁠と水拭きの組み合わせで⁠、素足⁠で歩くのが快適⁠になったという意見⁠が多い⁠。</p>
           </div>
           <div class="entry good">
@@ -911,6 +1329,7 @@ footer.page-footer a { color:var(--primary); font-weight:700; text-decoration:no
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">91点</span>
             </div>
+            <p class="entry-lead">ペット毛に強い</p>
             <p class="entry-body">ペット⁠の毛⁠の吸引力⁠は高く評価されており⁠、犬⁠や猫⁠を飼っている家庭から「⁠<strong class="em-key benefit">助かる</strong>⁠」⁠との声⁠が多数⁠。コンパクトなため⁠、ペット用品⁠が多い部屋⁠でも小回りが利き⁠、効率的⁠に掃除してくれる⁠。</p>
           </div>
           <div class="entry good">
@@ -918,6 +1337,7 @@ footer.page-footer a { color:var(--primary); font-weight:700; text-decoration:no
               <span class="entry-label">バッテリー</span>
               <span class="entry-score">83点</span>
             </div>
+            <p class="entry-lead">ワンルームや1LDK</p>
             <p class="entry-body">ワンルーム⁠や1LDK⁠、特定⁠の部屋⁠の掃除⁠には十分なバッテリー性能⁠。広い家⁠では途中⁠で充電⁠に戻ることもあるが⁠、自動⁠で再開するため問題視する声⁠は少ない⁠。コンパクトさを考えれば妥当な性能⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -925,6 +1345,7 @@ footer.page-footer a { color:var(--primary); font-weight:700; text-decoration:no
               <span class="entry-label">アプリ</span>
               <span class="entry-score">55点</span>
             </div>
+            <p class="entry-lead">接続が不安定</p>
             <p class="entry-body">Wi-Fi接続⁠で苦労するユーザー⁠が非常⁠に多い⁠。2.4GHz帯⁠への接続⁠が必須⁠で⁠、アプリ⁠のUI⁠も直感的⁠でないとの声⁠が多数⁠。一度接続⁠できれば便利だが⁠、IT機器⁠の設定⁠が苦手な人⁠には高いハードルだ⁠。</p>
           </div>
           <div class="entry warn">
@@ -932,6 +1353,7 @@ footer.page-footer a { color:var(--primary); font-weight:700; text-decoration:no
               <span class="entry-label">メンテナンス</span>
               <span class="entry-score">65点</span>
             </div>
+            <p class="entry-lead">こまめなゴミ捨てが必要</p>
             <p class="entry-body">本体⁠がコンパクトな分ダストボックス⁠も小さく⁠、こまめなゴミ捨てが必要⁠。特⁠に蓋⁠のツメ⁠が硬く「⁠<strong class="em-key demerit">開け方⁠が分かりにくい</strong>⁠」⁠との不満⁠が複数見られる⁠。メンテナンス⁠の手軽さでは評価⁠が低い⁠。</p>
           </div></div></div></div></div>
           
@@ -996,6 +1418,7 @@ footer.page-footer a { color:var(--primary); font-weight:700; text-decoration:no
               <span class="entry-label">フローリング</span>
               <span class="entry-score">94点</span>
             </div>
+            <p class="entry-lead">吸引＋水拭きでサラサラ</p>
             <p class="entry-body">回転モップ⁠による水拭き性能⁠は絶賛されており⁠、「⁠<strong class="em-key benefit">床⁠がサラサラ</strong>⁠」「⁠<strong class="em-key benefit">ピカピカ⁠になる</strong>⁠」⁠との声⁠が多数⁠。吸引⁠と水拭きの同時実行⁠で⁠、日々⁠の掃除品質⁠が格段⁠に向上したと評価されています⁠。</p>
           </div>
           <div class="entry good">
@@ -1003,6 +1426,7 @@ footer.page-footer a { color:var(--primary); font-weight:700; text-decoration:no
               <span class="entry-label">メンテナンス</span>
               <span class="entry-score">94点</span>
             </div>
+            <p class="entry-lead">吸引力が絶賛</p>
             <p class="entry-body">モップ⁠の自動洗浄・乾燥⁠、ゴミ⁠の自動収集機能⁠により⁠、日々⁠の手入れが非常⁠に楽⁠になったと絶賛されています⁠。汚水タンク⁠の清掃⁠や給水⁠の手間⁠は残るものの⁠、その価値⁠は十分あるとの評価⁠です⁠。</p>
           </div>
           <div class="entry good">
@@ -1010,6 +1434,7 @@ footer.page-footer a { color:var(--primary); font-weight:700; text-decoration:no
               <span class="entry-label">静音性</span>
               <span class="entry-score">92点</span>
             </div>
+            <p class="entry-lead">「ルンバより遥かに静か」</p>
             <p class="entry-body">「⁠<strong class="em-key benefit">ルンバより遥かに静か</strong>⁠」⁠と比較する声⁠が多く⁠、在宅中⁠でも気⁠にならないレベル⁠と評価されています⁠。ステーション⁠でのゴミ収集音⁠は大きいものの⁠、短時間⁠で終わるため許容範囲内⁠との意見⁠が多数⁠です⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -1017,6 +1442,7 @@ footer.page-footer a { color:var(--primary); font-weight:700; text-decoration:no
               <span class="entry-label">カーペット</span>
               <span class="entry-score">35点</span>
             </div>
+            <p class="entry-lead">厚手は苦手</p>
             <p class="entry-body">モップ装着時⁠はカーペット⁠を回避するため⁠、吸引清掃⁠も行われません⁠。モップリフトアップ機能⁠がなく⁠、都度モップ⁠を取り外す必要⁠があり⁠、カーペット⁠のある家庭⁠では利便性⁠が低いとの指摘⁠があります⁠。</p>
           </div>
           <div class="entry warn">
@@ -1024,6 +1450,7 @@ footer.page-footer a { color:var(--primary); font-weight:700; text-decoration:no
               <span class="entry-label">バッテリー</span>
               <span class="entry-score">60点</span>
             </div>
+            <p class="entry-lead">バッテリーに不安</p>
             <p class="entry-body">コンパクトなサイズ⁠のため⁠、バッテリー持続時間⁠はそれほど長くないとの指摘⁠があります⁠。広い家⁠では途中⁠で充電⁠に戻ることがあり⁠、全体⁠の掃除時間⁠が長くなる可能性⁠がある点⁠は注意⁠が必要⁠です⁠。</p>
           </div></div></div></div></div>
           

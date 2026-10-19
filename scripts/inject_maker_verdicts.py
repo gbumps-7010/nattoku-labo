@@ -11,23 +11,44 @@ MAKERS = ROOT / "makers"
 
 VERDICT_CSS = """
     .verdict {
-      margin:1.15rem 0 0; padding:1rem 1.1rem;
-      border:1px solid #93c5fd; border-radius:12px;
-      background:linear-gradient(135deg,#eff6ff 0%,#ffffff 70%);
-      box-shadow:0 6px 18px rgba(30,64,175,.08);
+      margin:1.4rem 0 0; padding:0;
+      border:2px solid #1e3a8a; border-radius:16px;
+      background:#fff; overflow:hidden;
+      box-shadow:0 12px 32px rgba(30,58,138,.18);
+    }
+    .verdict-head {
+      display:flex; flex-wrap:wrap; align-items:center; gap:.45rem .7rem;
+      margin:0; padding:.75rem 1.1rem; background:#1e3a8a; color:#fff;
+    }
+    .verdict-badge {
+      display:inline-flex; align-items:center;
+      padding:.22rem .7rem; border-radius:999px;
+      background:#fbbf24; color:#78350f;
+      font-size:.8rem; font-weight:900; letter-spacing:.02em; line-height:1.3;
+    }
+    .verdict-cond {
+      font-size:.88rem; font-weight:800; color:#dbeafe; letter-spacing:.02em;
+    }
+    .verdict-body {
+      padding:1rem 1.15rem 1.15rem;
+      background:linear-gradient(180deg,#f8fbff 0%,#ffffff 55%);
+    }
+    .verdict-source {
+      margin:0 0 .5rem; font-size:.9rem; font-weight:800;
+      line-height:1.55; color:#1e40af;
     }
     .verdict-kicker {
       margin:0 0 .35rem; font-size:.75rem; font-weight:900;
       letter-spacing:.06em; color:#1e40af;
     }
     .verdict-pick {
-      margin:0 0 .4rem; font-size:1.05rem; font-weight:900; color:#0f172a; line-height:1.4;
+      margin:0 0 .45rem; font-size:1.22rem; font-weight:900; color:#0f172a; line-height:1.4;
     }
     .verdict-why, .verdict-alt {
-      margin:0 0 .35rem; font-size:.88rem; line-height:1.65; color:#1e293b;
+      margin:0 0 .35rem; font-size:.9rem; line-height:1.65; color:#1e293b; font-weight:600;
     }
-    .verdict-next { margin:.55rem 0 0; font-size:.9rem; font-weight:800; }
-    .verdict a { color:#1e40af; text-decoration:none; font-weight:800; }
+    .verdict-next { margin:.65rem 0 0; font-size:.95rem; font-weight:900; }
+    .verdict a { color:#1e40af; text-decoration:none; font-weight:900; }
     .verdict a:hover { text-decoration:underline; }
 """
 
@@ -89,11 +110,17 @@ def build_verdict(slug: str, body: str) -> str:
 
     return f"""
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · {html_lib.escape(label)}</p>
-            <p class="verdict-pick"><strong>{html_lib.escape(name)}</strong> が第一候補</p>
-            <p class="verdict-why">理由：{html_lib.escape(why)}</p>
-            {alt_html}
-            <p class="verdict-next"><a href="/products/{html_lib.escape(slug)}">詳細の口コミ分析を見る →</a></p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">{html_lib.escape(label)}</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>{html_lib.escape(name)}</strong> が第一候補</p>
+              <p class="verdict-why">理由：{html_lib.escape(why)}</p>
+              {alt_html}
+              <p class="verdict-next"><a href="/products/{html_lib.escape(slug)}">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 """
 

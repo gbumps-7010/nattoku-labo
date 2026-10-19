@@ -486,6 +486,417 @@
     td.score.s70 { color:#a16207; background:#fffbeb; }
     td.score.s60 { color:#b91c1c; background:#fef2f2; }
     tr.row-group td { border-top:2px solid #cbd5e1; }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* FLAT_LAYOUT_PROTOTYPE */
+    /* Soft frames + hierarchy: 項目 → 一言結論 → 補足。左アクセントは使わない */
+    /* Budget/condition label is the section break; product name is secondary */
+    .articles > .article-pick {
+      margin-top:2.4rem !important;
+      padding-top:1.6rem !important;
+      border-top:3px solid #cbd5e1 !important;
+    }
+    .articles > .article-pick:first-child {
+      margin-top:0 !important;
+      padding-top:.25rem !important;
+      border-top:0 !important;
+    }
+    .article-pick h3,
+    .article-pick h3.pick-heading {
+      display:flex !important;
+      flex-direction:column !important;
+      gap:.45rem !important;
+      background:transparent !important;
+      box-shadow:none !important;
+      border:0 !important;
+      border-radius:0 !important;
+      border-bottom:3px solid #1e3a8a !important;
+      padding:0 0 .85rem !important;
+      margin:0 0 1.2rem !important;
+    }
+    .article-pick .pick-label {
+      display:block !important;
+      font-size:clamp(1.28rem, 4.2vw, 1.6rem) !important;
+      font-weight:900 !important;
+      letter-spacing:.01em !important;
+      color:#0f172a !important;
+      line-height:1.3 !important;
+    }
+    .article-pick .pick-name {
+      display:block !important;
+      font-size:1.02rem !important;
+      font-weight:800 !important;
+      line-height:1.45 !important;
+      color:#1e40af !important;
+      text-wrap:balance !important;
+    }
+    .article-pick .pick-name::before {
+      content:"おすすめ機種：" !important;
+      color:#64748b !important;
+      font-weight:800 !important;
+      font-size:.86rem !important;
+      margin-right:.3rem !important;
+    }
+    .meta-block {
+      background:#f8fafc !important;
+      border:1px solid #e8eef5 !important;
+      border-radius:12px !important;
+      padding:.8rem .9rem !important;
+      margin:0 0 .9rem !important;
+    }
+    .article-copy .lead,
+    .article-pick > .lead {
+      margin:0 0 1rem !important;
+      padding:.75rem .9rem !important;
+      background:#f8fafc !important;
+      border:1px solid #e8eef5 !important;
+      border-radius:12px !important;
+      font-size:.9rem !important;
+      line-height:1.75 !important;
+      color:#1e293b !important;
+    }
+    .panel,
+    .panel.panel-neg,
+    .panel.trend-panel,
+    .panel.pros-cons {
+      background:#fafbfc !important;
+      border:1px solid #e8eef5 !important;
+      border-radius:14px !important;
+      padding:.9rem .9rem 1rem !important;
+      margin:0 0 1rem !important;
+      box-shadow:none !important;
+    }
+    .panel.panel-neg {
+      background:#fffafb !important;
+      border-color:#f1e4e7 !important;
+    }
+    .panel.trend-panel {
+      background:#f7f9fc !important;
+      border-color:#e4ebf5 !important;
+    }
+    .pros-cons-groups { gap:1rem !important; }
+    .pros-cons-group { gap:.55rem !important; }
+    .pros-cons-group-neg {
+      border-top:1px dashed #edd5da !important;
+      padding-top:.9rem !important;
+      margin-top:.15rem !important;
+    }
+    .pros-cons-label,
+    .panel h4,
+    .panel.pros-cons h4,
+    .panel.trend-panel h4,
+    .panel.panel-neg h4,
+    .know > h4,
+    h4.pros-cons-label {
+      display:block !important;
+      width:auto !important;
+      margin:0 0 .75rem !important;
+      padding:0 0 .4rem !important;
+      border-radius:0 !important;
+      background:transparent !important;
+      border-bottom:3px solid #cbd5e1 !important;
+      font-size:1.28rem !important;
+      font-weight:900 !important;
+      letter-spacing:.02em !important;
+      line-height:1.3 !important;
+      color:#0f172a !important;
+    }
+    h4.pros-cons-label.pros-cons-label-good {
+      color:#047857 !important;
+      border-bottom-color:#34d399 !important;
+    }
+    h4.pros-cons-label.pros-cons-label-warn,
+    .panel.panel-neg > h4 {
+      color:#be123c !important;
+      border-bottom-color:#fb7185 !important;
+    }
+    .panel.trend-panel > h4 {
+      color:#1d4ed8 !important;
+      border-bottom-color:#60a5fa !important;
+    }
+
+    .entry-grid {
+      grid-template-columns:1fr !important;
+      gap:.55rem !important;
+    }
+    @media (min-width:720px) {
+      .entry-grid {
+        grid-template-columns:1fr 1fr !important;
+        gap:.55rem .65rem !important;
+      }
+    }
+    .entry-stack { gap:.55rem !important; }
+
+    .entry,
+    .entry.good,
+    .entry.warn,
+    .entry.fit,
+    .entry.issue {
+      border:1px solid #e8eef5 !important;
+      border-radius:12px !important;
+      border-left:1px solid #e8eef5 !important;
+      box-shadow:none !important;
+      padding:.75rem .85rem .8rem !important;
+      height:auto !important;
+      background:#ffffff !important;
+    }
+    .entry.good {
+      background:#f4faf7 !important;
+      border-color:#d9ebe2 !important;
+    }
+    .entry.warn,
+    .entry.issue {
+      background:#fdf7f8 !important;
+      border-color:#f0dde2 !important;
+    }
+    .entry.fit {
+      background:#f5f8fd !important;
+      border-color:#dce6f4 !important;
+    }
+
+    .entry-head {
+      display:flex !important;
+      align-items:center !important;
+      justify-content:space-between !important;
+      gap:.5rem !important;
+      margin:0 0 .4rem !important;
+    }
+    .entry-label {
+      font-size:.78rem !important;
+      font-weight:800 !important;
+      color:#334155 !important;
+      letter-spacing:.04em !important;
+    }
+    /* fit/issue: ラベル自体が一言結論（途中省略の lead は入れない） */
+    .entry.fit .entry-label,
+    .entry.issue .entry-label {
+      font-size:1rem !important;
+      font-weight:900 !important;
+      color:#0f172a !important;
+      letter-spacing:.01em !important;
+      line-height:1.45 !important;
+    }
+    .entry.fit .entry-head,
+    .entry.issue .entry-head {
+      align-items:flex-start !important;
+      margin:0 0 .4rem !important;
+    }
+    .entry-score {
+      flex-shrink:0 !important;
+      display:inline-flex !important;
+      align-items:center !important;
+      padding:.12rem .5rem !important;
+      border-radius:999px !important;
+      background:rgba(255,255,255,.9) !important;
+      border:1px solid rgba(148,163,184,.35) !important;
+      font-size:.74rem !important;
+      font-weight:900 !important;
+      color:#334155 !important;
+      line-height:1.2 !important;
+    }
+    .entry.good .entry-score {
+      color:#047857 !important;
+      border-color:#b7e0cd !important;
+      background:#ffffff !important;
+    }
+    .entry.warn .entry-score,
+    .entry.issue .entry-score {
+      color:#e11d48 !important;
+      border-color:#f0c4cd !important;
+      background:#ffffff !important;
+    }
+    .entry.fit .entry-score {
+      color:#1d4ed8 !important;
+      border-color:#bfdbfe !important;
+      background:#ffffff !important;
+    }
+
+    .entry-lead {
+      margin:0 0 .35rem !important;
+      font-size:1.05rem !important;
+      font-weight:900 !important;
+      line-height:1.35 !important;
+      color:#0f172a !important;
+      letter-spacing:.01em !important;
+      /* 一言だけ：長文に見せない */
+      max-width:100% !important;
+    }
+    .entry.warn .entry-lead,
+    .entry.issue .entry-lead { color:#0f172a !important; }
+
+    .entry .entry-body,
+    .entry.good .entry-body,
+    .entry.warn .entry-body,
+    .entry.fit .entry-body,
+    .entry.issue .entry-body,
+    p.entry-body {
+      margin:0 !important;
+      font-size:.86rem !important;
+      line-height:1.7 !important;
+      color:#0f172a !important;
+      font-weight:600 !important;
+      opacity:1 !important;
+    }
+
+    .trend-summary {
+      font-size:.86rem !important;
+      line-height:1.7 !important;
+      color:#1e293b !important;
+    }
+    .trend-kw-title {
+      margin:1rem 0 .45rem !important;
+      font-size:.92rem !important;
+      font-weight:900 !important;
+      letter-spacing:.04em !important;
+      color:#0f172a !important;
+    }
+    .trend-chip {
+      border:1px solid #e2e8f0 !important;
+      background:#ffffff !important;
+      color:#334155 !important;
+      padding:.3rem .65rem !important;
+      border-radius:8px !important;
+      font-size:.74rem !important;
+    }
+    .know {
+      background:#fafbfc !important;
+      border:1px solid #e8eef5 !important;
+      border-radius:14px !important;
+      box-shadow:none !important;
+      padding:.9rem !important;
+      margin:0 0 1rem !important;
+    }
+    .know-note {
+      background:transparent !important;
+      border:0 !important;
+      padding:0 !important;
+      margin:0 0 .7rem !important;
+      color:#1e293b !important;
+    }
+    .know-item {
+      background:#ffffff !important;
+      border:1px solid #e8eef5 !important;
+      border-left:1px solid #e8eef5 !important;
+      border-radius:10px !important;
+      padding:.6rem .75rem !important;
+      margin:0 0 .45rem !important;
+    }
+    .toc-box,
+    .summary-box,
+    .vs-card {
+      background:#fafbfc !important;
+      border:1px solid #e8eef5 !important;
+      border-radius:14px !important;
+      box-shadow:none !important;
+      padding:.9rem 1rem !important;
+    }
+    .vs-table {
+      border:1px solid #e2e8f0 !important;
+      border-radius:10px !important;
+      box-shadow:none !important;
+    }
+    .vs-table thead th { background:#f1f5f9 !important; }
+    /* Decision block: stand out vs soft content cards */
+    .verdict,
+    .band-verdict {
+      margin:1.4rem 0 0 !important;
+      padding:0 !important;
+      border:2px solid #1e3a8a !important;
+      border-radius:16px !important;
+      background:#ffffff !important;
+      box-shadow:0 12px 32px rgba(30,58,138,.18) !important;
+      overflow:hidden !important;
+    }
+    .band-verdict { margin:1.35rem 0 1.6rem !important; }
+    .verdict-head,
+    .band-verdict .verdict-head {
+      display:flex !important;
+      flex-wrap:wrap !important;
+      align-items:center !important;
+      gap:.45rem .7rem !important;
+      margin:0 !important;
+      padding:.75rem 1.1rem !important;
+      background:#1e3a8a !important;
+      color:#fff !important;
+    }
+    .verdict-badge {
+      display:inline-flex !important;
+      align-items:center !important;
+      padding:.22rem .7rem !important;
+      border-radius:999px !important;
+      background:#fbbf24 !important;
+      color:#78350f !important;
+      font-size:.8rem !important;
+      font-weight:900 !important;
+      letter-spacing:.02em !important;
+      line-height:1.3 !important;
+    }
+    .verdict-cond {
+      font-size:.88rem !important;
+      font-weight:800 !important;
+      color:#dbeafe !important;
+      letter-spacing:.02em !important;
+    }
+    .verdict-body,
+    .band-verdict .verdict-body {
+      padding:1rem 1.15rem 1.15rem !important;
+      background:linear-gradient(180deg,#f8fbff 0%,#ffffff 55%) !important;
+    }
+    .verdict-source {
+      margin:0 0 .5rem !important;
+      font-size:.9rem !important;
+      font-weight:800 !important;
+      line-height:1.55 !important;
+      color:#1e40af !important;
+    }
+    .verdict-kicker,
+    .band-verdict > .verdict-kicker { display:none !important; }
+    .verdict-pick,
+    .band-verdict .verdict-pick {
+      margin:0 0 .45rem !important;
+      font-size:1.22rem !important;
+      font-weight:900 !important;
+      color:#0f172a !important;
+      line-height:1.4 !important;
+    }
+    .verdict-why, .verdict-alt,
+    .band-verdict .verdict-why,
+    .band-verdict .verdict-alt {
+      margin:0 0 .35rem !important;
+      font-size:.9rem !important;
+      line-height:1.65 !important;
+      color:#1e293b !important;
+      font-weight:600 !important;
+    }
+    .verdict-next,
+    .band-verdict .verdict-next {
+      margin:.65rem 0 0 !important;
+      font-size:.95rem !important;
+      font-weight:900 !important;
+    }
+    .verdict a,
+    .band-verdict a {
+      color:#1e40af !important;
+      text-decoration:none !important;
+      font-weight:900 !important;
+    }
+    .verdict a:hover,
+    .band-verdict a:hover { text-decoration:underline !important; }
+
   </style>
 </head>
 <body>
@@ -558,7 +969,7 @@
         </li>
         <li>
           <a href="#persona">こんな人におすすめの機種</a>
-          <ol><li><a href="#persona-cost">コスパ重視の人</a></li><li><a href="#persona-quiet">静かに使いたい人</a></li><li><a href="#persona-pet">ペットのいる家</a></li><li><a href="#persona-floor">床をきれいにしたい人</a></li><li><a href="#persona-maint">手間を減らしたい人</a></li><li><a href="#persona-high">ハイエンドを探している人</a></li></ol>
+          <ol><li><a href="#persona-cost">コスパ重視の人</a></li><li><a href="#persona-quiet">静かに使いたい人</a></li><li><a href="#persona-pet">ペットのいる家</a></li><li><a href="#persona-floor">床をきれいにしたい人</a></li><li><a href="#persona-maint">手間を減らしたい人</a></li><li><a href="#persona-high">15万円以上で選ぶ人</a></li></ol>
         </li>
         <li><a href="#summary">まとめ｜ルンバの選び方</a></li>
       </ol>
@@ -707,6 +1118,7 @@
               <span class="entry-label">メンテナンス</span>
               <span class="entry-score">95点</span>
             </div>
+            <p class="entry-lead">メンテが楽</p>
             <p class="entry-body">自動ゴミ収集機能⁠により⁠、数ヶ月⁠に一度⁠の紙パック交換だけで済む手軽さが絶賛されています⁠。市販⁠のウェットシート⁠が使える点⁠も⁠、メンテナンス⁠の手間⁠とコスト⁠を削減⁠できると好評⁠です⁠。</p>
           </div>
           <div class="entry good">
@@ -714,6 +1126,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">93点</span>
             </div>
+            <p class="entry-lead">隅々まで掃除できる</p>
             <p class="entry-body">コンパクトな本体⁠が椅子⁠の脚⁠の間⁠や家具⁠の隙間⁠にも入り込み⁠、隅々まで掃除⁠できると高評価⁠です⁠。吸引力⁠も十分⁠で⁠、日常的なホコリ⁠や髪⁠の毛⁠は問題なく除去⁠できるとの声⁠が多数⁠でした⁠。</p>
           </div>
           <div class="entry good">
@@ -721,6 +1134,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">85点</span>
             </div>
+            <p class="entry-lead">ペット毛に強い</p>
             <p class="entry-body">猫⁠の毛⁠や猫砂⁠を問題なく吸い込むという肯定的な意見⁠が多く見られました⁠。ペット⁠の毛⁠がカーペット⁠に絡みついている場合⁠は<strong class="em-key demerit">取り残</strong>しがあるものの⁠、フローリング⁠では十分な性能⁠を発揮します⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -728,6 +1142,7 @@
               <span class="entry-label">静音性</span>
               <span class="entry-score">65点</span>
             </div>
+            <p class="entry-lead">動作音は「静か」という意見</p>
             <p class="entry-body">動作音⁠は「⁠<strong class="em-key benefit">静か</strong>⁠」⁠という意見⁠と「⁠<strong class="em-key demerit">うるさい</strong>⁠」⁠という意見⁠に二分されます⁠。特⁠にゴミ収集ステーション⁠の吸引音⁠は「⁠爆音⁠」⁠と評されるほど大きく⁠、夜間⁠の使用⁠には注意⁠が必要⁠です⁠。</p>
           </div>
           <div class="entry warn">
@@ -735,6 +1150,7 @@
               <span class="entry-label">アプリ</span>
               <span class="entry-score">68点</span>
             </div>
+            <p class="entry-lead">接続が不安定</p>
             <p class="entry-body">Wi-Fi接続⁠が頻繁⁠に切れる⁠、マッピング⁠が崩れるといったソフトウェア面⁠の不安定さを指摘する声⁠が目立ちます⁠。一度接続⁠できれば便利⁠ですが⁠、初期設定⁠で苦労するユーザー⁠が多い印象⁠です⁠。</p>
           </div></div></div></div></div>
           
@@ -775,11 +1191,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · 予算〜5万円なら</p>
-            <p class="verdict-pick"><strong>Roomba® Mini + AutoEmpty™</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">予算〜5万円なら</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>Roomba® Mini + AutoEmpty™</strong> が第一候補</p>
             <p class="verdict-why">理由：メンテナンス・フローリングの評価が高い</p>
             <p class="verdict-alt">迷ったら比較：総合点2位の <strong>Roomba® Mini Slim + SlimCharge™</strong> も候補</p>
             <p class="verdict-next"><a href="/products/roomba-mini-autoempty">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/roomba-mini-autoempty" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -806,6 +1228,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">93点</span>
             </div>
+            <p class="entry-lead">床がサラサラ</p>
             <p class="entry-body">フローリング⁠の清掃能力⁠は非常⁠に高く評価されています⁠。「⁠<strong class="em-key benefit">床⁠がサラサラ・ピカピカ⁠になる</strong>⁠」⁠との声⁠が多数⁠。ホコリ⁠や髪⁠の毛⁠、ペット⁠の毛まで<strong class="em-key benefit">しっかり吸引</strong>し⁠、満足度⁠は高いです⁠。</p>
           </div>
           <div class="entry good">
@@ -813,6 +1236,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">91点</span>
             </div>
+            <p class="entry-lead">メンテが楽</p>
             <p class="entry-body">ペット⁠の毛⁠の除去性能⁠は好評⁠です⁠。「⁠猫⁠の毛⁠が綺麗⁠に吸い取れる⁠」⁠といった口コミ⁠が多く⁠、ペット⁠を飼っている家庭⁠で高く評価されています⁠。自動ゴミ収集機能⁠も毛⁠の処理⁠の手間⁠を省きます⁠。</p>
           </div>
           <div class="entry good">
@@ -820,6 +1244,7 @@
               <span class="entry-label">メンテナンス</span>
               <span class="entry-score">88点</span>
             </div>
+            <p class="entry-lead">ゴミ捨てがほぼ不要</p>
             <p class="entry-body">自動ゴミ収集機能⁠により⁠、日々⁠のゴミ捨ての<strong class="em-key benefit">手間⁠が大幅⁠に削減</strong>される点⁠が評価されています⁠。ただし⁠、水拭き後⁠のタンク清掃⁠やモップ手洗いを面倒⁠に感じるという意見⁠も見られます⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -827,6 +1252,7 @@
               <span class="entry-label">カーペット</span>
               <span class="entry-score">50点</span>
             </div>
+            <p class="entry-lead">厚手カーペットは苦手</p>
             <p class="entry-body">カーペット⁠での評価⁠は分かれます⁠。薄いラグ⁠は乗り越える一方⁠、「⁠毛足⁠の長いラグ⁠で停止する⁠」「⁠<strong class="em-key demerit">絨毯⁠を清掃しない</strong>⁠」⁠という報告⁠も⁠。カーペット検知⁠で水拭きを回避する点⁠は評価されています⁠。</p>
           </div>
           <div class="entry warn">
@@ -834,6 +1260,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">65点</span>
             </div>
+            <p class="entry-lead">乗り上げて停止</p>
             <p class="entry-body">1-2cm程度⁠の低い段差⁠は乗り越えることができますが⁠、「⁠少しの段差⁠で止まる⁠」「⁠玄関から落下した⁠」⁠という声⁠も⁠。部屋間⁠の敷居など⁠、環境⁠によっては<strong class="em-key demerit">注意⁠が必要</strong>⁠です⁠。</p>
           </div></div></div></div></div>
           
@@ -874,11 +1301,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · 予算5〜7万円なら</p>
-            <p class="verdict-pick"><strong>Roomba® 105 Combo + AutoEmpty™</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">予算5〜7万円なら</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>Roomba® 105 Combo + AutoEmpty™</strong> が第一候補</p>
             <p class="verdict-why">理由：フローリング・ペット毛の評価が高い</p>
             <p class="verdict-alt">軸を変えるなら <a href="#feature">機能別</a> / <a href="#persona">暮らし方別</a> / <a href="#price">予算別</a> へ</p>
             <p class="verdict-next"><a href="/products/roomba-105-combo-autoempty">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/roomba-105-combo-autoempty" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -905,6 +1338,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">96点</span>
             </div>
+            <p class="entry-lead">吸引＋水拭きでサラサラ</p>
             <p class="entry-body">水拭き機能⁠への評価⁠が圧倒的⁠に高く⁠、「⁠<strong class="em-key benefit">床⁠がサラサラ</strong>⁠」「⁠<strong class="em-key benefit">ピカピカ⁠になる</strong>⁠」⁠との声⁠が多数⁠。汚水タンク⁠の汚れを見て効果⁠を実感するユーザー⁠も多く⁠、フローリング⁠の清掃能力⁠は非常⁠に優れています⁠。</p>
           </div>
           <div class="entry good">
@@ -912,6 +1346,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">90点</span>
             </div>
+            <p class="entry-lead">ペット毛に強い</p>
             <p class="entry-body">ペット⁠の毛⁠や猫⁠の抜け毛⁠を<strong class="em-key benefit">しっかり吸引</strong>してくれるとの評価⁠が目立ちます⁠。水拭き機能⁠と合わせることで⁠、アレルギー対策⁠や床⁠の清潔維持⁠に貢献していると感じるペットオーナー⁠が多いです⁠。</p>
           </div>
           <div class="entry good">
@@ -919,6 +1354,7 @@
               <span class="entry-label">バッテリー</span>
               <span class="entry-score">89点</span>
             </div>
+            <p class="entry-lead">一度の充電で広い範囲を掃除でき</p>
             <p class="entry-body">一度⁠の充電⁠で広い範囲⁠を掃除⁠でき⁠、バッテリー⁠が少なくなると自動⁠で充電しに戻り⁠、中断した場所から再開する機能⁠が評価されています⁠。バッテリー持続時間⁠に関する不満⁠はほとんど見られません⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -926,6 +1362,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">70点</span>
             </div>
+            <p class="entry-lead">乗り上げて停止</p>
             <p class="entry-body">1cm程度⁠の段差⁠は乗り越えるものの⁠、2cm⁠のジョイントマット⁠で登れない⁠、家具⁠の足⁠に引っかかるといった報告⁠が散見されます⁠。玄関からの落下防止⁠は機能しますが⁠、複雑な段差⁠は苦手な傾向⁠です⁠。</p>
           </div>
           <div class="entry warn">
@@ -933,6 +1370,7 @@
               <span class="entry-label">静音性</span>
               <span class="entry-score">78点</span>
             </div>
+            <p class="entry-lead">走行中の音は「静か</p>
             <p class="entry-body">走行中⁠の音⁠は「⁠<strong class="em-key benefit">静かになった</strong>⁠」「⁠<strong class="em-key benefit">気⁠にならない</strong>⁠」⁠という意見⁠がある一方⁠、ゴミ収集時⁠の音⁠は「⁠大きい⁠」「⁠驚く⁠」⁠という声⁠が多数⁠。夜間⁠の使用⁠はゴミ収集⁠のタイミング⁠を考慮する必要⁠があります⁠。</p>
           </div></div></div></div></div>
           
@@ -973,11 +1411,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · 予算7〜10万円なら</p>
-            <p class="verdict-pick"><strong>Roomba® Plus 405 Combo + AutoWash™</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">予算7〜10万円なら</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>Roomba® Plus 405 Combo + AutoWash™</strong> が第一候補</p>
             <p class="verdict-why">理由：フローリング・ペット毛の評価が高い</p>
             <p class="verdict-alt">迷ったら比較：総合点2位の <strong>Roomba® Max 705 Vac + AutoEmpty™</strong> も候補</p>
             <p class="verdict-next"><a href="/products/roomba-plus-405-combo-autowash">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/roomba-plus-405-combo-autowash" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -1004,6 +1448,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">98点</span>
             </div>
+            <p class="entry-lead">吸引＋水拭きでサラサラ</p>
             <p class="entry-body">水拭き機能⁠への評価⁠は極めて高く⁠、「⁠<strong class="em-key benefit">床⁠がサラサラ</strong>⁠」「⁠<strong class="em-key benefit">ピカピカ⁠になる</strong>⁠」⁠といった声⁠が多数⁠です⁠。専用洗剤⁠を使用することで⁠、素足⁠での快適性⁠が格段⁠に向上したと実感するユーザー⁠が多いです⁠。</p>
           </div>
           <div class="entry good">
@@ -1011,6 +1456,7 @@
               <span class="entry-label">メンテナンス</span>
               <span class="entry-score">96点</span>
             </div>
+            <p class="entry-lead">日々の手間が大幅に削減され</p>
             <p class="entry-body">ゴミ収集からモップ⁠の洗浄・乾燥まで全自動⁠で行うため⁠、日々⁠の<strong class="em-key benefit">手間⁠が大幅⁠に削減</strong>されます⁠。汚水タンク⁠の排水⁠と給水タンク⁠の補充⁠が主な作業⁠で⁠、メンテナンス⁠の手軽さは本製品⁠の最大⁠の特徴⁠です⁠。</p>
           </div>
           <div class="entry good">
@@ -1018,6 +1464,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">92点</span>
             </div>
+            <p class="entry-lead">ペット毛に強い</p>
             <p class="entry-body">ペット⁠の毛⁠やフケ⁠に対する吸引力⁠は非常⁠に強力⁠で⁠、多くの飼い主から支持されています⁠。動物⁠の糞などをAI⁠が認識して回避する機能⁠もあり⁠、ペット⁠がいる家庭⁠でも安心して利用⁠できる点⁠が強みです⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -1025,6 +1472,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">75点</span>
             </div>
+            <p class="entry-lead">引っかかって停止</p>
             <p class="entry-body">公称値⁠は2cm⁠ですが⁠、実際⁠には1.5cm程度⁠の段差⁠でも引っかかり⁠、停止することがあるとの報告⁠が複数あります⁠。敷居⁠やラグ⁠の厚みによっては⁠、スロープ⁠の設置などの対策⁠が必要⁠になる場合⁠があります⁠。</p>
           </div>
           <div class="entry warn">
@@ -1032,6 +1480,7 @@
               <span class="entry-label">アプリ</span>
               <span class="entry-score">80点</span>
             </div>
+            <p class="entry-lead">接続が不安定</p>
             <p class="entry-body">初期設定⁠で「⁠アップデート⁠が終わらない⁠」「⁠<strong class="em-key demerit">Wi-Fi⁠に接続⁠できない</strong>⁠」⁠といった問題⁠が散見されます⁠。一度設定⁠が完了すれば便利⁠ですが⁠、アプリ⁠の動作⁠が不安定⁠で使いにくいという声⁠も一定数存在します⁠。</p>
           </div></div></div></div></div>
           
@@ -1072,11 +1521,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · 予算10〜15万円なら</p>
-            <p class="verdict-pick"><strong>Roomba® Plus 505 Combo + AutoWash™</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">予算10〜15万円なら</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>Roomba® Plus 505 Combo + AutoWash™</strong> が第一候補</p>
             <p class="verdict-why">理由：フローリング・メンテナンスの評価が高い</p>
             <p class="verdict-alt">軸を変えるなら <a href="#feature">機能別</a> / <a href="#persona">暮らし方別</a> / <a href="#price">予算別</a> へ</p>
             <p class="verdict-next"><a href="/products/roomba-plus-505-combo-autowash">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/roomba-plus-505-combo-autowash" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -1103,6 +1558,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">96点</span>
             </div>
+            <p class="entry-lead">吸引＋水拭きでサラサラ</p>
             <p class="entry-body">多くのレビュー⁠がフローリング⁠の拭き掃除性能⁠を絶賛⁠。素足⁠で歩くとサラサラ⁠、ピカピカ⁠になるとの声⁠が多数⁠。吸引⁠と水拭きの同時実行⁠で⁠、日々⁠の床掃除から解放されたと高評価⁠を得ている⁠。</p>
           </div>
           <div class="entry good">
@@ -1110,6 +1566,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">91点</span>
             </div>
+            <p class="entry-lead">ペット毛に強い</p>
             <p class="entry-body">犬⁠や猫⁠の毛⁠を<strong class="em-key benefit">しっかり吸引</strong>してくれる点⁠が高く評価されている⁠。毛⁠が絡みにくいゴム製ブラシ⁠のメンテナンス性⁠も好評⁠で⁠、ペット⁠のいる家庭⁠の強い味方⁠となっているようだ⁠。</p>
           </div>
           <div class="entry good">
@@ -1117,6 +1574,7 @@
               <span class="entry-label">静音性</span>
               <span class="entry-score">88点</span>
             </div>
+            <p class="entry-lead">旧モデルと比較して格段に静か</p>
             <p class="entry-body">旧モデル⁠と比較して格段⁠に静かになったという意見⁠が多数⁠。テレビ視聴⁠やリモート会議中⁠でも気⁠にならないレベル⁠との声⁠も⁠。ただし⁠、ゴミ収集時⁠やモップ洗浄時⁠の音⁠は大きいという指摘⁠もある⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -1124,6 +1582,7 @@
               <span class="entry-label">アプリ</span>
               <span class="entry-score">65点</span>
             </div>
+            <p class="entry-lead">接続が不安定</p>
             <p class="entry-body">Wi-Fi接続⁠でエラー⁠が多発し⁠、初期設定⁠に苦労したという報告⁠が非常⁠に多い⁠。マッピング精度⁠が低く⁠、部屋⁠を正しく認識しない⁠、禁止エリア設定⁠が機能しないなどの問題⁠も指摘されている⁠。</p>
           </div>
           <div class="entry warn">
@@ -1131,6 +1590,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">78点</span>
             </div>
+            <p class="entry-lead">乗り上げて停止</p>
             <p class="entry-body">約2cm程度⁠の段差⁠は力強く乗り越えるとの評価⁠がある一方⁠、家具⁠の脚⁠や敷居⁠で<strong class="em-key demerit">立ち往生</strong>する⁠、引っかかるといった報告⁠も散見される⁠。環境⁠による差⁠が大きい項目⁠と言える⁠。</p>
           </div></div></div></div></div>
           
@@ -1171,11 +1631,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · 予算15〜20万円なら</p>
-            <p class="verdict-pick"><strong>Roomba Plus 575 Combo + AutoWash</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">予算15〜20万円なら</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>Roomba Plus 575 Combo + AutoWash</strong> が第一候補</p>
             <p class="verdict-why">理由：フローリング・ペット毛の評価が高い</p>
             <p class="verdict-alt">迷ったら比較：総合点2位の <strong>Roomba® Max 705 Combo + AutoWash™</strong> も候補</p>
             <p class="verdict-next"><a href="/products/roomba-plus-575-combo-autowash">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/roomba-plus-575-combo-autowash" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -1212,6 +1678,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">96点</span>
             </div>
+            <p class="entry-lead">吸引＋水拭きでサラサラ</p>
             <p class="entry-body">水拭き機能⁠への評価⁠が圧倒的⁠に高く⁠、「⁠<strong class="em-key benefit">床⁠がサラサラ</strong>⁠」「⁠<strong class="em-key benefit">ピカピカ⁠になる</strong>⁠」⁠との声⁠が多数⁠。汚水タンク⁠の汚れを見て効果⁠を実感するユーザー⁠も多く⁠、フローリング⁠の清掃能力⁠は非常⁠に優れています⁠。</p>
           </div>
           <div class="entry good">
@@ -1219,6 +1686,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">90点</span>
             </div>
+            <p class="entry-lead">ペット毛に強い</p>
             <p class="entry-body">ペット⁠の毛⁠や猫⁠の抜け毛⁠を<strong class="em-key benefit">しっかり吸引</strong>してくれるとの評価⁠が目立ちます⁠。水拭き機能⁠と合わせることで⁠、アレルギー対策⁠や床⁠の清潔維持⁠に貢献していると感じるペットオーナー⁠が多いです⁠。</p>
           </div>
           <div class="entry good">
@@ -1226,6 +1694,7 @@
               <span class="entry-label">バッテリー</span>
               <span class="entry-score">89点</span>
             </div>
+            <p class="entry-lead">一度の充電で広い範囲を掃除でき</p>
             <p class="entry-body">一度⁠の充電⁠で広い範囲⁠を掃除⁠でき⁠、バッテリー⁠が少なくなると自動⁠で充電しに戻り⁠、中断した場所から再開する機能⁠が評価されています⁠。バッテリー持続時間⁠に関する不満⁠はほとんど見られません⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -1233,6 +1702,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">70点</span>
             </div>
+            <p class="entry-lead">乗り上げて停止</p>
             <p class="entry-body">1cm程度⁠の段差⁠は乗り越えるものの⁠、2cm⁠のジョイントマット⁠で登れない⁠、家具⁠の足⁠に引っかかるといった報告⁠が散見されます⁠。玄関からの落下防止⁠は機能しますが⁠、複雑な段差⁠は苦手な傾向⁠です⁠。</p>
           </div>
           <div class="entry warn">
@@ -1240,6 +1710,7 @@
               <span class="entry-label">静音性</span>
               <span class="entry-score">78点</span>
             </div>
+            <p class="entry-lead">走行中の音は「静か</p>
             <p class="entry-body">走行中⁠の音⁠は「⁠<strong class="em-key benefit">静かになった</strong>⁠」「⁠<strong class="em-key benefit">気⁠にならない</strong>⁠」⁠という意見⁠がある一方⁠、ゴミ収集時⁠の音⁠は「⁠大きい⁠」「⁠驚く⁠」⁠という声⁠が多数⁠。夜間⁠の使用⁠はゴミ収集⁠のタイミング⁠を考慮する必要⁠があります⁠。</p>
           </div></div></div></div></div>
           
@@ -1280,11 +1751,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · フローリング掃除が得意な機種</p>
-            <p class="verdict-pick"><strong>Roomba® Plus 405 Combo + AutoWash™</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">フローリング掃除が得意な機種</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>Roomba® Plus 405 Combo + AutoWash™</strong> が第一候補</p>
             <p class="verdict-why">理由：フローリング・ペット毛の評価が高い</p>
             <p class="verdict-alt">迷ったら比較：総合点2位の <strong>Roomba Plus 575 Combo + AutoWashです。</strong> も候補</p>
             <p class="verdict-next"><a href="/products/roomba-plus-405-combo-autowash">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/roomba-plus-405-combo-autowash" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -1311,6 +1788,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">95点</span>
             </div>
+            <p class="entry-lead">床がサラサラ</p>
             <p class="entry-body">フローリング⁠の掃除性能⁠は絶賛されており⁠、髪⁠の毛⁠やホコリ⁠の<strong class="em-key demerit">取り残</strong>しはほとんど見られません⁠。多くのユーザー⁠が「⁠<strong class="em-key benefit">床⁠がサラサラ⁠になる</strong>⁠」⁠とその高い吸引力⁠と清掃能力⁠を評価しています⁠。</p>
           </div>
           <div class="entry good">
@@ -1318,6 +1796,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">93点</span>
             </div>
+            <p class="entry-lead">ペット毛に強い</p>
             <p class="entry-body">ペット⁠の毛⁠の除去能力⁠は特⁠に高く評価されており⁠、犬⁠や猫⁠を飼っている家庭からの支持⁠が厚いです⁠。ゴム製ブラシ⁠は毛⁠が絡まりにくく⁠、メンテナンス⁠の手間⁠が少ない点⁠も喜ばれています⁠。</p>
           </div>
           <div class="entry good">
@@ -1325,6 +1804,7 @@
               <span class="entry-label">カーペット</span>
               <span class="entry-score">89点</span>
             </div>
+            <p class="entry-lead">ペット毛に強い</p>
             <p class="entry-body">カーペットブースト機能⁠により⁠、毛足⁠の奥⁠に入り込んだゴミ⁠やペット⁠の毛⁠も<strong class="em-key benefit">しっかり吸引</strong>⁠できると高評価⁠です⁠。一部⁠、毛足⁠の長いラグ⁠でめくれ上⁠がってしまうとの指摘⁠もありました⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -1332,6 +1812,7 @@
               <span class="entry-label">バッテリー</span>
               <span class="entry-score">70点</span>
             </div>
+            <p class="entry-lead">バッテリーに不安</p>
             <p class="entry-body">バッテリー⁠の持ちが悪い⁠、1年未満⁠で充電⁠できなくなったという深刻な不具合報告⁠が複数見られます⁠。清掃性能⁠が高い分⁠、バッテリー消費⁠が多い傾向⁠にあり⁠、耐久性⁠に課題⁠がある可能性⁠があります⁠。</p>
           </div>
           <div class="entry warn">
@@ -1339,6 +1820,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">72点</span>
             </div>
+            <p class="entry-lead">乗り上げて停止</p>
             <p class="entry-body">1〜2cm程度⁠の段差⁠は乗り越えますが⁠、それ以上⁠や柔らかい敷物⁠では苦戦する場合⁠があります⁠。LiDAR搭載⁠で本体高⁠が上⁠がり⁠、これまで入れていた家具⁠の下⁠に入れなくなったという声⁠もありました⁠。</p>
           </div></div></div></div></div>
           
@@ -1379,11 +1861,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · カーペット掃除が得意な機種</p>
-            <p class="verdict-pick"><strong>Roomba® Max 705 Vac + AutoEmpty™</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">カーペット掃除が得意な機種</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>Roomba® Max 705 Vac + AutoEmpty™</strong> が第一候補</p>
             <p class="verdict-why">理由：フローリング・ペット毛の評価が高い</p>
             <p class="verdict-alt">迷ったら比較：総合点2位の <strong>Roomba® Plus 405 Combo + AutoWash™です。</strong> も候補</p>
             <p class="verdict-next"><a href="/products/roomba-max-705-vac-autoempty">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/roomba-max-705-vac-autoempty" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -1410,6 +1898,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">96点</span>
             </div>
+            <p class="entry-lead">吸引＋水拭きでサラサラ</p>
             <p class="entry-body">多くのレビュー⁠がフローリング⁠の拭き掃除性能⁠を絶賛⁠。素足⁠で歩くとサラサラ⁠、ピカピカ⁠になるとの声⁠が多数⁠。吸引⁠と水拭きの同時実行⁠で⁠、日々⁠の床掃除から解放されたと高評価⁠を得ている⁠。</p>
           </div>
           <div class="entry good">
@@ -1417,6 +1906,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">91点</span>
             </div>
+            <p class="entry-lead">ペット毛に強い</p>
             <p class="entry-body">犬⁠や猫⁠の毛⁠を<strong class="em-key benefit">しっかり吸引</strong>してくれる点⁠が高く評価されている⁠。毛⁠が絡みにくいゴム製ブラシ⁠のメンテナンス性⁠も好評⁠で⁠、ペット⁠のいる家庭⁠の強い味方⁠となっているようだ⁠。</p>
           </div>
           <div class="entry good">
@@ -1424,6 +1914,7 @@
               <span class="entry-label">静音性</span>
               <span class="entry-score">88点</span>
             </div>
+            <p class="entry-lead">旧モデルと比較して格段に静か</p>
             <p class="entry-body">旧モデル⁠と比較して格段⁠に静かになったという意見⁠が多数⁠。テレビ視聴⁠やリモート会議中⁠でも気⁠にならないレベル⁠との声⁠も⁠。ただし⁠、ゴミ収集時⁠やモップ洗浄時⁠の音⁠は大きいという指摘⁠もある⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -1431,6 +1922,7 @@
               <span class="entry-label">アプリ</span>
               <span class="entry-score">65点</span>
             </div>
+            <p class="entry-lead">接続が不安定</p>
             <p class="entry-body">Wi-Fi接続⁠でエラー⁠が多発し⁠、初期設定⁠に苦労したという報告⁠が非常⁠に多い⁠。マッピング精度⁠が低く⁠、部屋⁠を正しく認識しない⁠、禁止エリア設定⁠が機能しないなどの問題⁠も指摘されている⁠。</p>
           </div>
           <div class="entry warn">
@@ -1438,6 +1930,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">78点</span>
             </div>
+            <p class="entry-lead">乗り上げて停止</p>
             <p class="entry-body">約2cm程度⁠の段差⁠は力強く乗り越えるとの評価⁠がある一方⁠、家具⁠の脚⁠や敷居⁠で<strong class="em-key demerit">立ち往生</strong>する⁠、引っかかるといった報告⁠も散見される⁠。環境⁠による差⁠が大きい項目⁠と言える⁠。</p>
           </div></div></div></div></div>
           
@@ -1478,11 +1971,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · 静音性に優れた機種</p>
-            <p class="verdict-pick"><strong>Roomba Plus 575 Combo + AutoWash</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">静音性に優れた機種</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>Roomba Plus 575 Combo + AutoWash</strong> が第一候補</p>
             <p class="verdict-why">理由：フローリング・ペット毛の評価が高い</p>
             <p class="verdict-alt">迷ったら比較：総合点2位の <strong>Roomba® Plus 505 Combo + AutoWash™です。</strong> も候補</p>
             <p class="verdict-next"><a href="/products/roomba-plus-575-combo-autowash">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/roomba-plus-575-combo-autowash" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -1509,6 +2008,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">95点</span>
             </div>
+            <p class="entry-lead">床がサラサラ</p>
             <p class="entry-body">フローリング⁠の掃除性能⁠は絶賛されており⁠、髪⁠の毛⁠やホコリ⁠の<strong class="em-key demerit">取り残</strong>しはほとんど見られません⁠。多くのユーザー⁠が「⁠<strong class="em-key benefit">床⁠がサラサラ⁠になる</strong>⁠」⁠とその高い吸引力⁠と清掃能力⁠を評価しています⁠。</p>
           </div>
           <div class="entry good">
@@ -1516,6 +2016,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">93点</span>
             </div>
+            <p class="entry-lead">ペット毛に強い</p>
             <p class="entry-body">ペット⁠の毛⁠の除去能力⁠は特⁠に高く評価されており⁠、犬⁠や猫⁠を飼っている家庭からの支持⁠が厚いです⁠。ゴム製ブラシ⁠は毛⁠が絡まりにくく⁠、メンテナンス⁠の手間⁠が少ない点⁠も喜ばれています⁠。</p>
           </div>
           <div class="entry good">
@@ -1523,6 +2024,7 @@
               <span class="entry-label">カーペット</span>
               <span class="entry-score">89点</span>
             </div>
+            <p class="entry-lead">ペット毛に強い</p>
             <p class="entry-body">カーペットブースト機能⁠により⁠、毛足⁠の奥⁠に入り込んだゴミ⁠やペット⁠の毛⁠も<strong class="em-key benefit">しっかり吸引</strong>⁠できると高評価⁠です⁠。一部⁠、毛足⁠の長いラグ⁠でめくれ上⁠がってしまうとの指摘⁠もありました⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -1530,6 +2032,7 @@
               <span class="entry-label">バッテリー</span>
               <span class="entry-score">70点</span>
             </div>
+            <p class="entry-lead">バッテリーに不安</p>
             <p class="entry-body">バッテリー⁠の持ちが悪い⁠、1年未満⁠で充電⁠できなくなったという深刻な不具合報告⁠が複数見られます⁠。清掃性能⁠が高い分⁠、バッテリー消費⁠が多い傾向⁠にあり⁠、耐久性⁠に課題⁠がある可能性⁠があります⁠。</p>
           </div>
           <div class="entry warn">
@@ -1537,6 +2040,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">72点</span>
             </div>
+            <p class="entry-lead">乗り上げて停止</p>
             <p class="entry-body">1〜2cm程度⁠の段差⁠は乗り越えますが⁠、それ以上⁠や柔らかい敷物⁠では苦戦する場合⁠があります⁠。LiDAR搭載⁠で本体高⁠が上⁠がり⁠、これまで入れていた家具⁠の下⁠に入れなくなったという声⁠もありました⁠。</p>
           </div></div></div></div></div>
           
@@ -1577,11 +2081,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · ペットの毛に強い機種</p>
-            <p class="verdict-pick"><strong>Roomba® Max 705 Vac + AutoEmpty™</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">ペットの毛に強い機種</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>Roomba® Max 705 Vac + AutoEmpty™</strong> が第一候補</p>
             <p class="verdict-why">理由：フローリング・ペット毛の評価が高い</p>
             <p class="verdict-alt">迷ったら比較：総合点2位の <strong>Roomba® Max 705 Combo + AutoWash™です。</strong> も候補</p>
             <p class="verdict-next"><a href="/products/roomba-max-705-vac-autoempty">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/roomba-max-705-vac-autoempty" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -1608,6 +2118,7 @@
               <span class="entry-label">メンテナンス</span>
               <span class="entry-score">95点</span>
             </div>
+            <p class="entry-lead">メンテが楽</p>
             <p class="entry-body">自動ゴミ収集機能⁠により⁠、数ヶ月⁠に一度⁠の紙パック交換だけで済む手軽さが絶賛されています⁠。市販⁠のウェットシート⁠が使える点⁠も⁠、メンテナンス⁠の手間⁠とコスト⁠を削減⁠できると好評⁠です⁠。</p>
           </div>
           <div class="entry good">
@@ -1615,6 +2126,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">93点</span>
             </div>
+            <p class="entry-lead">隅々まで掃除できる</p>
             <p class="entry-body">コンパクトな本体⁠が椅子⁠の脚⁠の間⁠や家具⁠の隙間⁠にも入り込み⁠、隅々まで掃除⁠できると高評価⁠です⁠。吸引力⁠も十分⁠で⁠、日常的なホコリ⁠や髪⁠の毛⁠は問題なく除去⁠できるとの声⁠が多数⁠でした⁠。</p>
           </div>
           <div class="entry good">
@@ -1622,6 +2134,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">85点</span>
             </div>
+            <p class="entry-lead">ペット毛に強い</p>
             <p class="entry-body">猫⁠の毛⁠や猫砂⁠を問題なく吸い込むという肯定的な意見⁠が多く見られました⁠。ペット⁠の毛⁠がカーペット⁠に絡みついている場合⁠は<strong class="em-key demerit">取り残</strong>しがあるものの⁠、フローリング⁠では十分な性能⁠を発揮します⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -1629,6 +2142,7 @@
               <span class="entry-label">静音性</span>
               <span class="entry-score">65点</span>
             </div>
+            <p class="entry-lead">動作音は「静か」という意見</p>
             <p class="entry-body">動作音⁠は「⁠<strong class="em-key benefit">静か</strong>⁠」⁠という意見⁠と「⁠<strong class="em-key demerit">うるさい</strong>⁠」⁠という意見⁠に二分されます⁠。特⁠にゴミ収集ステーション⁠の吸引音⁠は「⁠爆音⁠」⁠と評されるほど大きく⁠、夜間⁠の使用⁠には注意⁠が必要⁠です⁠。</p>
           </div>
           <div class="entry warn">
@@ -1636,6 +2150,7 @@
               <span class="entry-label">アプリ</span>
               <span class="entry-score">68点</span>
             </div>
+            <p class="entry-lead">接続が不安定</p>
             <p class="entry-body">Wi-Fi接続⁠が頻繁⁠に切れる⁠、マッピング⁠が崩れるといったソフトウェア面⁠の不安定さを指摘する声⁠が目立ちます⁠。一度接続⁠できれば便利⁠ですが⁠、初期設定⁠で苦労するユーザー⁠が多い印象⁠です⁠。</p>
           </div></div></div></div></div>
           
@@ -1676,11 +2191,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · 手入れが楽な機種</p>
-            <p class="verdict-pick"><strong>Roomba® Mini + AutoEmpty™</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">手入れが楽な機種</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>Roomba® Mini + AutoEmpty™</strong> が第一候補</p>
             <p class="verdict-why">理由：メンテナンス・フローリングの評価が高い</p>
             <p class="verdict-alt">迷ったら比較：総合点2位の <strong>Roomba® Plus 505 Combo + AutoWash™です。</strong> も候補</p>
             <p class="verdict-next"><a href="/products/roomba-mini-autoempty">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/roomba-mini-autoempty" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -1707,6 +2228,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">96点</span>
             </div>
+            <p class="entry-lead">吸引＋水拭きでサラサラ</p>
             <p class="entry-body">水拭き機能⁠への評価⁠が圧倒的⁠に高く⁠、「⁠<strong class="em-key benefit">床⁠がサラサラ</strong>⁠」「⁠<strong class="em-key benefit">ピカピカ⁠になる</strong>⁠」⁠との声⁠が多数⁠。汚水タンク⁠の汚れを見て効果⁠を実感するユーザー⁠も多く⁠、フローリング⁠の清掃能力⁠は非常⁠に優れています⁠。</p>
           </div>
           <div class="entry good">
@@ -1714,6 +2236,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">90点</span>
             </div>
+            <p class="entry-lead">ペット毛に強い</p>
             <p class="entry-body">ペット⁠の毛⁠や猫⁠の抜け毛⁠を<strong class="em-key benefit">しっかり吸引</strong>してくれるとの評価⁠が目立ちます⁠。水拭き機能⁠と合わせることで⁠、アレルギー対策⁠や床⁠の清潔維持⁠に貢献していると感じるペットオーナー⁠が多いです⁠。</p>
           </div>
           <div class="entry good">
@@ -1721,6 +2244,7 @@
               <span class="entry-label">バッテリー</span>
               <span class="entry-score">89点</span>
             </div>
+            <p class="entry-lead">一度の充電で広い範囲を掃除でき</p>
             <p class="entry-body">一度⁠の充電⁠で広い範囲⁠を掃除⁠でき⁠、バッテリー⁠が少なくなると自動⁠で充電しに戻り⁠、中断した場所から再開する機能⁠が評価されています⁠。バッテリー持続時間⁠に関する不満⁠はほとんど見られません⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -1728,6 +2252,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">70点</span>
             </div>
+            <p class="entry-lead">乗り上げて停止</p>
             <p class="entry-body">1cm程度⁠の段差⁠は乗り越えるものの⁠、2cm⁠のジョイントマット⁠で登れない⁠、家具⁠の足⁠に引っかかるといった報告⁠が散見されます⁠。玄関からの落下防止⁠は機能しますが⁠、複雑な段差⁠は苦手な傾向⁠です⁠。</p>
           </div>
           <div class="entry warn">
@@ -1735,6 +2260,7 @@
               <span class="entry-label">静音性</span>
               <span class="entry-score">78点</span>
             </div>
+            <p class="entry-lead">走行中の音は「静か</p>
             <p class="entry-body">走行中⁠の音⁠は「⁠<strong class="em-key benefit">静かになった</strong>⁠」「⁠<strong class="em-key benefit">気⁠にならない</strong>⁠」⁠という意見⁠がある一方⁠、ゴミ収集時⁠の音⁠は「⁠大きい⁠」「⁠驚く⁠」⁠という声⁠が多数⁠。夜間⁠の使用⁠はゴミ収集⁠のタイミング⁠を考慮する必要⁠があります⁠。</p>
           </div></div></div></div></div>
           
@@ -1775,11 +2301,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · バッテリー持ちが良い機種</p>
-            <p class="verdict-pick"><strong>Roomba® Plus 405 Combo + AutoWash™</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">バッテリー持ちが良い機種</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>Roomba® Plus 405 Combo + AutoWash™</strong> が第一候補</p>
             <p class="verdict-why">理由：フローリング・ペット毛の評価が高い</p>
             <p class="verdict-alt">迷ったら比較：総合点2位の <strong>Roomba® Max 705 Combo + AutoWash™です。</strong> も候補</p>
             <p class="verdict-next"><a href="/products/roomba-plus-405-combo-autowash">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/roomba-plus-405-combo-autowash" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -1812,6 +2344,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">96点</span>
             </div>
+            <p class="entry-lead">吸引＋水拭きでサラサラ</p>
             <p class="entry-body">水拭き機能⁠への評価⁠が圧倒的⁠に高く⁠、「⁠<strong class="em-key benefit">床⁠がサラサラ</strong>⁠」「⁠<strong class="em-key benefit">ピカピカ⁠になる</strong>⁠」⁠との声⁠が多数⁠。汚水タンク⁠の汚れを見て効果⁠を実感するユーザー⁠も多く⁠、フローリング⁠の清掃能力⁠は非常⁠に優れています⁠。</p>
           </div>
           <div class="entry good">
@@ -1819,6 +2352,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">90点</span>
             </div>
+            <p class="entry-lead">ペット毛に強い</p>
             <p class="entry-body">ペット⁠の毛⁠や猫⁠の抜け毛⁠を<strong class="em-key benefit">しっかり吸引</strong>してくれるとの評価⁠が目立ちます⁠。水拭き機能⁠と合わせることで⁠、アレルギー対策⁠や床⁠の清潔維持⁠に貢献していると感じるペットオーナー⁠が多いです⁠。</p>
           </div>
           <div class="entry good">
@@ -1826,6 +2360,7 @@
               <span class="entry-label">バッテリー</span>
               <span class="entry-score">89点</span>
             </div>
+            <p class="entry-lead">一度の充電で広い範囲を掃除でき</p>
             <p class="entry-body">一度⁠の充電⁠で広い範囲⁠を掃除⁠でき⁠、バッテリー⁠が少なくなると自動⁠で充電しに戻り⁠、中断した場所から再開する機能⁠が評価されています⁠。バッテリー持続時間⁠に関する不満⁠はほとんど見られません⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -1833,6 +2368,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">70点</span>
             </div>
+            <p class="entry-lead">乗り上げて停止</p>
             <p class="entry-body">1cm程度⁠の段差⁠は乗り越えるものの⁠、2cm⁠のジョイントマット⁠で登れない⁠、家具⁠の足⁠に引っかかるといった報告⁠が散見されます⁠。玄関からの落下防止⁠は機能しますが⁠、複雑な段差⁠は苦手な傾向⁠です⁠。</p>
           </div>
           <div class="entry warn">
@@ -1840,6 +2376,7 @@
               <span class="entry-label">静音性</span>
               <span class="entry-score">78点</span>
             </div>
+            <p class="entry-lead">走行中の音は「静か</p>
             <p class="entry-body">走行中⁠の音⁠は「⁠<strong class="em-key benefit">静かになった</strong>⁠」「⁠<strong class="em-key benefit">気⁠にならない</strong>⁠」⁠という意見⁠がある一方⁠、ゴミ収集時⁠の音⁠は「⁠大きい⁠」「⁠驚く⁠」⁠という声⁠が多数⁠。夜間⁠の使用⁠はゴミ収集⁠のタイミング⁠を考慮する必要⁠があります⁠。</p>
           </div></div></div></div></div>
           
@@ -1880,11 +2417,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · コスパ重視の人なら</p>
-            <p class="verdict-pick"><strong>Roomba® Plus 405 Combo + AutoWash™</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">コスパ重視の人なら</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>Roomba® Plus 405 Combo + AutoWash™</strong> が第一候補</p>
             <p class="verdict-why">理由：フローリング・ペット毛の評価が高い</p>
             <p class="verdict-alt">軸を変えるなら <a href="#feature">機能別</a> / <a href="#persona">暮らし方別</a> / <a href="#price">予算別</a> へ</p>
             <p class="verdict-next"><a href="/products/roomba-plus-405-combo-autowash">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/roomba-plus-405-combo-autowash" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -1911,6 +2454,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">96点</span>
             </div>
+            <p class="entry-lead">吸引＋水拭きでサラサラ</p>
             <p class="entry-body">多くのレビュー⁠がフローリング⁠の拭き掃除性能⁠を絶賛⁠。素足⁠で歩くとサラサラ⁠、ピカピカ⁠になるとの声⁠が多数⁠。吸引⁠と水拭きの同時実行⁠で⁠、日々⁠の床掃除から解放されたと高評価⁠を得ている⁠。</p>
           </div>
           <div class="entry good">
@@ -1918,6 +2462,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">91点</span>
             </div>
+            <p class="entry-lead">ペット毛に強い</p>
             <p class="entry-body">犬⁠や猫⁠の毛⁠を<strong class="em-key benefit">しっかり吸引</strong>してくれる点⁠が高く評価されている⁠。毛⁠が絡みにくいゴム製ブラシ⁠のメンテナンス性⁠も好評⁠で⁠、ペット⁠のいる家庭⁠の強い味方⁠となっているようだ⁠。</p>
           </div>
           <div class="entry good">
@@ -1925,6 +2470,7 @@
               <span class="entry-label">静音性</span>
               <span class="entry-score">88点</span>
             </div>
+            <p class="entry-lead">旧モデルと比較して格段に静か</p>
             <p class="entry-body">旧モデル⁠と比較して格段⁠に静かになったという意見⁠が多数⁠。テレビ視聴⁠やリモート会議中⁠でも気⁠にならないレベル⁠との声⁠も⁠。ただし⁠、ゴミ収集時⁠やモップ洗浄時⁠の音⁠は大きいという指摘⁠もある⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -1932,6 +2478,7 @@
               <span class="entry-label">アプリ</span>
               <span class="entry-score">65点</span>
             </div>
+            <p class="entry-lead">接続が不安定</p>
             <p class="entry-body">Wi-Fi接続⁠でエラー⁠が多発し⁠、初期設定⁠に苦労したという報告⁠が非常⁠に多い⁠。マッピング精度⁠が低く⁠、部屋⁠を正しく認識しない⁠、禁止エリア設定⁠が機能しないなどの問題⁠も指摘されている⁠。</p>
           </div>
           <div class="entry warn">
@@ -1939,6 +2486,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">78点</span>
             </div>
+            <p class="entry-lead">乗り上げて停止</p>
             <p class="entry-body">約2cm程度⁠の段差⁠は力強く乗り越えるとの評価⁠がある一方⁠、家具⁠の脚⁠や敷居⁠で<strong class="em-key demerit">立ち往生</strong>する⁠、引っかかるといった報告⁠も散見される⁠。環境⁠による差⁠が大きい項目⁠と言える⁠。</p>
           </div></div></div></div></div>
           
@@ -1979,11 +2527,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · 静かに使いたい人なら</p>
-            <p class="verdict-pick"><strong>Roomba Plus 575 Combo + AutoWash</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">静かに使いたい人なら</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>Roomba Plus 575 Combo + AutoWash</strong> が第一候補</p>
             <p class="verdict-why">理由：フローリング・ペット毛の評価が高い</p>
             <p class="verdict-alt">軸を変えるなら <a href="#feature">機能別</a> / <a href="#persona">暮らし方別</a> / <a href="#price">予算別</a> へ</p>
             <p class="verdict-next"><a href="/products/roomba-plus-575-combo-autowash">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/roomba-plus-575-combo-autowash" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -2010,6 +2564,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">95点</span>
             </div>
+            <p class="entry-lead">床がサラサラ</p>
             <p class="entry-body">フローリング⁠の掃除性能⁠は絶賛されており⁠、髪⁠の毛⁠やホコリ⁠の<strong class="em-key demerit">取り残</strong>しはほとんど見られません⁠。多くのユーザー⁠が「⁠<strong class="em-key benefit">床⁠がサラサラ⁠になる</strong>⁠」⁠とその高い吸引力⁠と清掃能力⁠を評価しています⁠。</p>
           </div>
           <div class="entry good">
@@ -2017,6 +2572,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">93点</span>
             </div>
+            <p class="entry-lead">ペット毛に強い</p>
             <p class="entry-body">ペット⁠の毛⁠の除去能力⁠は特⁠に高く評価されており⁠、犬⁠や猫⁠を飼っている家庭からの支持⁠が厚いです⁠。ゴム製ブラシ⁠は毛⁠が絡まりにくく⁠、メンテナンス⁠の手間⁠が少ない点⁠も喜ばれています⁠。</p>
           </div>
           <div class="entry good">
@@ -2024,6 +2580,7 @@
               <span class="entry-label">カーペット</span>
               <span class="entry-score">89点</span>
             </div>
+            <p class="entry-lead">ペット毛に強い</p>
             <p class="entry-body">カーペットブースト機能⁠により⁠、毛足⁠の奥⁠に入り込んだゴミ⁠やペット⁠の毛⁠も<strong class="em-key benefit">しっかり吸引</strong>⁠できると高評価⁠です⁠。一部⁠、毛足⁠の長いラグ⁠でめくれ上⁠がってしまうとの指摘⁠もありました⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -2031,6 +2588,7 @@
               <span class="entry-label">バッテリー</span>
               <span class="entry-score">70点</span>
             </div>
+            <p class="entry-lead">バッテリーに不安</p>
             <p class="entry-body">バッテリー⁠の持ちが悪い⁠、1年未満⁠で充電⁠できなくなったという深刻な不具合報告⁠が複数見られます⁠。清掃性能⁠が高い分⁠、バッテリー消費⁠が多い傾向⁠にあり⁠、耐久性⁠に課題⁠がある可能性⁠があります⁠。</p>
           </div>
           <div class="entry warn">
@@ -2038,6 +2596,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">72点</span>
             </div>
+            <p class="entry-lead">乗り上げて停止</p>
             <p class="entry-body">1〜2cm程度⁠の段差⁠は乗り越えますが⁠、それ以上⁠や柔らかい敷物⁠では苦戦する場合⁠があります⁠。LiDAR搭載⁠で本体高⁠が上⁠がり⁠、これまで入れていた家具⁠の下⁠に入れなくなったという声⁠もありました⁠。</p>
           </div></div></div></div></div>
           
@@ -2078,11 +2637,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · ペットのいる家なら</p>
-            <p class="verdict-pick"><strong>Roomba® Max 705 Vac + AutoEmpty™</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">ペットのいる家なら</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>Roomba® Max 705 Vac + AutoEmpty™</strong> が第一候補</p>
             <p class="verdict-why">理由：フローリング・ペット毛の評価が高い</p>
             <p class="verdict-alt">軸を変えるなら <a href="#feature">機能別</a> / <a href="#persona">暮らし方別</a> / <a href="#price">予算別</a> へ</p>
             <p class="verdict-next"><a href="/products/roomba-max-705-vac-autoempty">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/roomba-max-705-vac-autoempty" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -2109,6 +2674,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">96点</span>
             </div>
+            <p class="entry-lead">吸引＋水拭きでサラサラ</p>
             <p class="entry-body">水拭き機能⁠への評価⁠が圧倒的⁠に高く⁠、「⁠<strong class="em-key benefit">床⁠がサラサラ</strong>⁠」「⁠<strong class="em-key benefit">ピカピカ⁠になる</strong>⁠」⁠との声⁠が多数⁠。汚水タンク⁠の汚れを見て効果⁠を実感するユーザー⁠も多く⁠、フローリング⁠の清掃能力⁠は非常⁠に優れています⁠。</p>
           </div>
           <div class="entry good">
@@ -2116,6 +2682,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">90点</span>
             </div>
+            <p class="entry-lead">ペット毛に強い</p>
             <p class="entry-body">ペット⁠の毛⁠や猫⁠の抜け毛⁠を<strong class="em-key benefit">しっかり吸引</strong>してくれるとの評価⁠が目立ちます⁠。水拭き機能⁠と合わせることで⁠、アレルギー対策⁠や床⁠の清潔維持⁠に貢献していると感じるペットオーナー⁠が多いです⁠。</p>
           </div>
           <div class="entry good">
@@ -2123,6 +2690,7 @@
               <span class="entry-label">バッテリー</span>
               <span class="entry-score">89点</span>
             </div>
+            <p class="entry-lead">一度の充電で広い範囲を掃除でき</p>
             <p class="entry-body">一度⁠の充電⁠で広い範囲⁠を掃除⁠でき⁠、バッテリー⁠が少なくなると自動⁠で充電しに戻り⁠、中断した場所から再開する機能⁠が評価されています⁠。バッテリー持続時間⁠に関する不満⁠はほとんど見られません⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -2130,6 +2698,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">70点</span>
             </div>
+            <p class="entry-lead">乗り上げて停止</p>
             <p class="entry-body">1cm程度⁠の段差⁠は乗り越えるものの⁠、2cm⁠のジョイントマット⁠で登れない⁠、家具⁠の足⁠に引っかかるといった報告⁠が散見されます⁠。玄関からの落下防止⁠は機能しますが⁠、複雑な段差⁠は苦手な傾向⁠です⁠。</p>
           </div>
           <div class="entry warn">
@@ -2137,6 +2706,7 @@
               <span class="entry-label">静音性</span>
               <span class="entry-score">78点</span>
             </div>
+            <p class="entry-lead">走行中の音は「静か</p>
             <p class="entry-body">走行中⁠の音⁠は「⁠<strong class="em-key benefit">静かになった</strong>⁠」「⁠<strong class="em-key benefit">気⁠にならない</strong>⁠」⁠という意見⁠がある一方⁠、ゴミ収集時⁠の音⁠は「⁠大きい⁠」「⁠驚く⁠」⁠という声⁠が多数⁠。夜間⁠の使用⁠はゴミ収集⁠のタイミング⁠を考慮する必要⁠があります⁠。</p>
           </div></div></div></div></div>
           
@@ -2177,11 +2747,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · 床をきれいにしたい人なら</p>
-            <p class="verdict-pick"><strong>Roomba® Plus 405 Combo + AutoWash™</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">床をきれいにしたい人なら</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>Roomba® Plus 405 Combo + AutoWash™</strong> が第一候補</p>
             <p class="verdict-why">理由：フローリング・ペット毛の評価が高い</p>
             <p class="verdict-alt">軸を変えるなら <a href="#feature">機能別</a> / <a href="#persona">暮らし方別</a> / <a href="#price">予算別</a> へ</p>
             <p class="verdict-next"><a href="/products/roomba-plus-405-combo-autowash">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/roomba-plus-405-combo-autowash" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
@@ -2208,6 +2784,7 @@
               <span class="entry-label">メンテナンス</span>
               <span class="entry-score">95点</span>
             </div>
+            <p class="entry-lead">メンテが楽</p>
             <p class="entry-body">自動ゴミ収集機能⁠により⁠、数ヶ月⁠に一度⁠の紙パック交換だけで済む手軽さが絶賛されています⁠。市販⁠のウェットシート⁠が使える点⁠も⁠、メンテナンス⁠の手間⁠とコスト⁠を削減⁠できると好評⁠です⁠。</p>
           </div>
           <div class="entry good">
@@ -2215,6 +2792,7 @@
               <span class="entry-label">フローリング</span>
               <span class="entry-score">93点</span>
             </div>
+            <p class="entry-lead">隅々まで掃除できる</p>
             <p class="entry-body">コンパクトな本体⁠が椅子⁠の脚⁠の間⁠や家具⁠の隙間⁠にも入り込み⁠、隅々まで掃除⁠できると高評価⁠です⁠。吸引力⁠も十分⁠で⁠、日常的なホコリ⁠や髪⁠の毛⁠は問題なく除去⁠できるとの声⁠が多数⁠でした⁠。</p>
           </div>
           <div class="entry good">
@@ -2222,6 +2800,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">85点</span>
             </div>
+            <p class="entry-lead">ペット毛に強い</p>
             <p class="entry-body">猫⁠の毛⁠や猫砂⁠を問題なく吸い込むという肯定的な意見⁠が多く見られました⁠。ペット⁠の毛⁠がカーペット⁠に絡みついている場合⁠は<strong class="em-key demerit">取り残</strong>しがあるものの⁠、フローリング⁠では十分な性能⁠を発揮します⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -2229,6 +2808,7 @@
               <span class="entry-label">静音性</span>
               <span class="entry-score">65点</span>
             </div>
+            <p class="entry-lead">動作音は「静か」という意見</p>
             <p class="entry-body">動作音⁠は「⁠<strong class="em-key benefit">静か</strong>⁠」⁠という意見⁠と「⁠<strong class="em-key demerit">うるさい</strong>⁠」⁠という意見⁠に二分されます⁠。特⁠にゴミ収集ステーション⁠の吸引音⁠は「⁠爆音⁠」⁠と評されるほど大きく⁠、夜間⁠の使用⁠には注意⁠が必要⁠です⁠。</p>
           </div>
           <div class="entry warn">
@@ -2236,6 +2816,7 @@
               <span class="entry-label">アプリ</span>
               <span class="entry-score">68点</span>
             </div>
+            <p class="entry-lead">接続が不安定</p>
             <p class="entry-body">Wi-Fi接続⁠が頻繁⁠に切れる⁠、マッピング⁠が崩れるといったソフトウェア面⁠の不安定さを指摘する声⁠が目立ちます⁠。一度接続⁠できれば便利⁠ですが⁠、初期設定⁠で苦労するユーザー⁠が多い印象⁠です⁠。</p>
           </div></div></div></div></div>
           
@@ -2276,17 +2857,23 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · 手間を減らしたい人なら</p>
-            <p class="verdict-pick"><strong>Roomba® Mini + AutoEmpty™</strong> が第一候補</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">手間を減らしたい人なら</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>Roomba® Mini + AutoEmpty™</strong> が第一候補</p>
             <p class="verdict-why">理由：メンテナンス・フローリングの評価が高い</p>
             <p class="verdict-alt">軸を変えるなら <a href="#feature">機能別</a> / <a href="#persona">暮らし方別</a> / <a href="#price">予算別</a> へ</p>
             <p class="verdict-next"><a href="/products/roomba-mini-autoempty">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/roomba-mini-autoempty" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
       </article>
       <article class="article-pick" id="persona-high" data-slug="roomba-plus-575-combo-autowash">
-        <h3 class="pick-heading"><span class="pick-label">ハイエンドを探している人なら</span><span class="pick-name">Roomba Plus 575 Combo + AutoWash</span></h3>
+        <h3 class="pick-heading"><span class="pick-label">15万円以上で選ぶ人なら</span><span class="pick-name">Roomba Plus 575 Combo + AutoWash</span></h3>
         <div class="aff-mount" data-slug="roomba-plus-575-combo-autowash" data-maker="iRobot">
           <p class="aff-status">かんたんリンクを読み込み中…</p>
         </div>
@@ -2300,13 +2887,14 @@
             </p>
             <p class="price-caution">表示価格⁠はメーカー公式ストア⁠の販売価格⁠です⁠。セール⁠で頻繁⁠に変わるため⁠、購入前⁠に最新⁠の価格⁠の確認⁠を強くおすすめします⁠。</p>
           </div>
-          <p class="lead">15万円以上⁠の上位機⁠に絞り⁠、フローリング評価⁠が<strong class="em-key">最⁠も高い</strong>機種⁠を選んでいます⁠。予算⁠に余裕⁠がある人向けです⁠。</p>
+          <p class="lead">価格15万円以上の機種に絞ったうえで、フローリング評価が<strong class="em-key">最⁠も高い</strong>機種⁠を選んでいます⁠。予算に余裕があり、上位モデルを見たい人向けです。</p>
           <div class="panel pros-cons"><div class="pros-cons-groups"><div class="pros-cons-group"><h4 class="pros-cons-label pros-cons-label-good">強み</h4><div class="entry-grid">
           <div class="entry good">
             <div class="entry-head">
               <span class="entry-label">フローリング</span>
               <span class="entry-score">96点</span>
             </div>
+            <p class="entry-lead">吸引＋水拭きでサラサラ</p>
             <p class="entry-body">多くのレビュー⁠がフローリング⁠の拭き掃除性能⁠を絶賛⁠。素足⁠で歩くとサラサラ⁠、ピカピカ⁠になるとの声⁠が多数⁠。吸引⁠と水拭きの同時実行⁠で⁠、日々⁠の床掃除から解放されたと高評価⁠を得ている⁠。</p>
           </div>
           <div class="entry good">
@@ -2314,6 +2902,7 @@
               <span class="entry-label">ペット毛</span>
               <span class="entry-score">91点</span>
             </div>
+            <p class="entry-lead">ペット毛に強い</p>
             <p class="entry-body">犬⁠や猫⁠の毛⁠を<strong class="em-key benefit">しっかり吸引</strong>してくれる点⁠が高く評価されている⁠。毛⁠が絡みにくいゴム製ブラシ⁠のメンテナンス性⁠も好評⁠で⁠、ペット⁠のいる家庭⁠の強い味方⁠となっているようだ⁠。</p>
           </div>
           <div class="entry good">
@@ -2321,6 +2910,7 @@
               <span class="entry-label">静音性</span>
               <span class="entry-score">88点</span>
             </div>
+            <p class="entry-lead">旧モデルと比較して格段に静か</p>
             <p class="entry-body">旧モデル⁠と比較して格段⁠に静かになったという意見⁠が多数⁠。テレビ視聴⁠やリモート会議中⁠でも気⁠にならないレベル⁠との声⁠も⁠。ただし⁠、ゴミ収集時⁠やモップ洗浄時⁠の音⁠は大きいという指摘⁠もある⁠。</p>
           </div></div></div><div class="pros-cons-group pros-cons-group-neg"><h4 class="pros-cons-label pros-cons-label-warn">注意点</h4><div class="entry-grid">
           <div class="entry warn">
@@ -2328,6 +2918,7 @@
               <span class="entry-label">アプリ</span>
               <span class="entry-score">65点</span>
             </div>
+            <p class="entry-lead">接続が不安定</p>
             <p class="entry-body">Wi-Fi接続⁠でエラー⁠が多発し⁠、初期設定⁠に苦労したという報告⁠が非常⁠に多い⁠。マッピング精度⁠が低く⁠、部屋⁠を正しく認識しない⁠、禁止エリア設定⁠が機能しないなどの問題⁠も指摘されている⁠。</p>
           </div>
           <div class="entry warn">
@@ -2335,6 +2926,7 @@
               <span class="entry-label">段差</span>
               <span class="entry-score">78点</span>
             </div>
+            <p class="entry-lead">乗り上げて停止</p>
             <p class="entry-body">約2cm程度⁠の段差⁠は力強く乗り越えるとの評価⁠がある一方⁠、家具⁠の脚⁠や敷居⁠で<strong class="em-key demerit">立ち往生</strong>する⁠、引っかかるといった報告⁠も散見される⁠。環境⁠による差⁠が大きい項目⁠と言える⁠。</p>
           </div></div></div></div></div>
           
@@ -2375,11 +2967,17 @@
           </div></div></div>
           
           <div class="verdict" aria-label="この条件の結論">
-            <p class="verdict-kicker">迷ったらこれ · ハイエンドを探している人なら</p>
-            <p class="verdict-pick"><strong>Roomba Plus 575 Combo + AutoWash</strong> が第一候補</p>
-            <p class="verdict-why">理由：フローリング・ペット毛の評価が高い</p>
+            <div class="verdict-head">
+              <span class="verdict-badge">迷ったらこれ</span>
+              <span class="verdict-cond">15万円以上で選ぶ人なら</span>
+            </div>
+            <div class="verdict-body">
+              <p class="verdict-source">口コミ分析の結果では、次の機種が第一候補です</p>
+              <p class="verdict-pick"><strong>Roomba Plus 575 Combo + AutoWash</strong> が第一候補</p>
+            <p class="verdict-why">理由：15万円以上の機種のなかで、フローリング評価が最も高い</p>
             <p class="verdict-alt">軸を変えるなら <a href="#feature">機能別</a> / <a href="#persona">暮らし方別</a> / <a href="#price">予算別</a> へ</p>
             <p class="verdict-next"><a href="/products/roomba-plus-575-combo-autowash">詳細の口コミ分析を見る →</a></p>
+            </div>
           </div>
 <p class="more"><a href="https://nattoku-labo.com/products/roomba-plus-575-combo-autowash" target="_blank" rel="noopener">製品ページで詳しく見る →</a></p>
         </div>
