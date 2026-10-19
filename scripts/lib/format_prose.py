@@ -339,6 +339,11 @@ def _valid_span(text: str) -> bool:
 
         return False
 
+    # Reject spans that start mid-phrase with a particle
+    if text and text[0] in "のがをにへとはでもや":
+
+        return False
+
     return True
 
 _BENEFIT_IDIOMS = (
@@ -418,6 +423,10 @@ def _best_quote_span(inner: str, tone: str) -> str | None:
 
             continue
 
+        if _valid_span(hint):
+
+            return hint
+
         idx = inner.index(hint)
 
         start = max(0, idx - (MAX_MARKER_CHARS - len(hint)) // 2)
@@ -425,6 +434,10 @@ def _best_quote_span(inner: str, tone: str) -> str | None:
         end = min(len(inner), start + MAX_MARKER_CHARS)
 
         start = max(0, end - MAX_MARKER_CHARS)
+
+        while start < idx and inner[start] in "のがをにへとはでもや":
+
+            start += 1
 
         span = inner[start:end]
 
@@ -457,6 +470,11 @@ def _add_candidate(
         return
 
     if _has_mark(span):
+
+        return
+
+    # Avoid mid-word cuts: …動作中 + の音…
+    if start > 0 and span and span[0] in "のがをにへとはでもや":
 
         return
 

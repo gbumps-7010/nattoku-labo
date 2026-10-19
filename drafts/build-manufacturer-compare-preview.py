@@ -590,6 +590,20 @@ def build_verdict_html(
           </div>"""
 
 
+def price_band_anchor(price: float | int | None) -> tuple[str, str] | None:
+    """Return (label, anchor_id) for the budget section that contains this price."""
+    if price is None:
+        return None
+    try:
+        p = float(price)
+    except (TypeError, ValueError):
+        return None
+    for label, lo, hi, aid in PRICE_BANDS:
+        if lo <= p < hi:
+            return label, aid
+    return None
+
+
 def article_pick(
     *,
     anchor_id: str,
@@ -599,6 +613,7 @@ def article_pick(
     alt_product: dict | None = None,
     alt_hint_html: str = "",
     why_override: str = "",
+    compact: bool = False,
 ) -> str:
     heading_html = format_pick_heading(heading)
     if not product:
@@ -606,6 +621,41 @@ def article_pick(
       <article class="article-pick" id="{html.escape(anchor_id)}">
         {heading_html}
         <p class="lead">該当する製品はありません。</p>
+      </article>"""
+
+    # Compact cards for 機能別 / 暮らし方別: avoid repeating full product blocks
+    if compact:
+        overall_txt = (
+            f"{product['overall']:.1f}" if product.get("overall") is not None else "—"
+        )
+        band = price_band_anchor(product.get("price"))
+        band_link = ""
+        if band:
+            band_label, band_id = band
+            band_link = (
+                f'<p class="more compact-jump">'
+                f'<a href="#{html.escape(band_id)}">予算{html.escape(band_label)}の詳細比較を見る →</a>'
+                f"</p>"
+            )
+        short_lead = lead.strip()
+        # Keep 1–2 sentences max
+        parts = [s for s in short_lead.replace("。", "。\n").split("\n") if s.strip()]
+        short_lead = "。".join(p.rstrip("。") for p in parts[:2])
+        if short_lead and not short_lead.endswith("。"):
+            short_lead += "。"
+        return f"""
+      <article class="article-pick article-pick-compact" id="{html.escape(anchor_id)}" data-slug="{html.escape(product['id'])}">
+        {heading_html}
+        <div class="article-copy">
+          <p class="meta">
+            <span class="chip">{yen(product['price'])}</span>
+            <span class="chip accent">総合点 {overall_txt}</span>
+            <span class="chip">口コミ数 {product['reviews']:,}件</span>
+          </p>
+          <p class="lead">{format_prose(short_lead)}</p>
+          {band_link}
+          <p class="more"><a href="/products/{html.escape(product['id'])}">製品ページで詳しく見る →</a></p>
+        </div>
       </article>"""
 
     strengths = pick_strengths(product, n=3)
@@ -1209,6 +1259,7 @@ def build_manufacturer_page(meta: dict) -> Path:
                 product=top,
                 alt_product=second,
                 alt_hint_html='予算で選び直すなら <a href="#price">予算別のおすすめ</a> へ',
+                compact=True,
             )
         )
 
@@ -1291,6 +1342,7 @@ def build_manufacturer_page(meta: dict) -> Path:
                 product=top,
                 alt_hint_html='予算で選び直すなら <a href="#price">予算別のおすすめ</a> へ',
                 why_override=why,
+                compact=True,
             )
         )
 
@@ -1312,21 +1364,43 @@ def build_manufacturer_page(meta: dict) -> Path:
     )
     summary_text = f"{brand_ja}は、{SUMMARY_LEAD}"
 
+    # SEO overrides (query-aligned titles). Ecovacs needs DEEBOT in title/h1.
+    if slug == "ecovacs":
+        page_title = (
+            f"エコバックス（DEEBOT）全{len(rows)}機種比較｜口コミ・評判とT50/T50Sの違い｜ナットクLabo"
+        )
+        page_desc = (
+            f"DEEBOT（エコバックス）の評判と全{len(rows)}機種比較。"
+            "T50とT50Sの違い、N30など人気モデルの口コミ評価を横断で確認できます。"
+        )
+        page_h1 = "【全機種比較】エコバックス DEEBOT ロボット掃除機｜口コミでわかる選び方"
+        og_title = page_title
+    else:
+        page_title = (
+            f"【全機種比較】{brand_ja}ロボット掃除機｜口コミでわかるおすすめの選び方｜ナットクLabo"
+        )
+        page_desc = (
+            f"{brand_full}のロボット掃除機{len(rows)}製品を口コミ分析データで横断比較。"
+            "価格帯・機能・暮らし方別のおすすめも掲載します。"
+        )
+        page_h1 = f"【全機種比較】{brand_ja}ロボット掃除機｜口コミでわかるおすすめの選び方"
+        og_title = f"【全機種比較】{brand_ja}ロボット掃除機｜口コミでわかるおすすめの選び方"
+
     page = f"""<!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-  <title>【全機種比較】{html.escape(brand_ja)}ロボット掃除機｜口コミでわかるおすすめの選び方｜ナットクLabo</title>
-  <meta name="description" content="{html.escape(brand_full)}のロボット掃除機{len(rows)}製品を口コミ分析データで横断比較。価格帯・機能・暮らし方別のおすすめも掲載します。">
+  <title>{html.escape(page_title)}</title>
+  <meta name="description" content="{html.escape(page_desc)}">
   <link rel="canonical" href="{SITE}/makers/{slug}">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="ナットクLabo">
   <meta property="og:locale" content="ja_JP">
   <meta property="og:url" content="{SITE}/makers/{slug}">
-  <meta property="og:title" content="【全機種比較】{html.escape(brand_ja)}ロボット掃除機｜口コミでわかるおすすめの選び方">
-  <meta property="og:description" content="{html.escape(brand_full)}のロボット掃除機{len(rows)}製品を口コミ分析データで横断比較します。">
+  <meta property="og:title" content="{html.escape(og_title)}">
+  <meta property="og:description" content="{html.escape(page_desc)}">
   <meta property="og:image" content="https://nattoku-labo.com/og-default.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://nattoku-labo.com/og-default.png">
@@ -1338,9 +1412,9 @@ def build_manufacturer_page(meta: dict) -> Path:
   {{
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "【全機種比較】{html.escape(brand_ja)}ロボット掃除機｜口コミでわかるおすすめの選び方",
+    "headline": "{html.escape(og_title)}",
     "url": "{SITE}/makers/{slug}",
-    "description": "{html.escape(brand_full)}のロボット掃除機{len(rows)}製品を口コミ分析データで横断比較します。"
+    "description": "{html.escape(page_desc)}"
   }}
   </script>
   <script type="application/ld+json">
@@ -1826,7 +1900,7 @@ def build_manufacturer_page(meta: dict) -> Path:
   <header class="hero">
     <div class="wrap">
       <nav class="crumb"><a href="/">ホーム</a> › <a href="/makers/">メーカー比較</a> › {html.escape(brand_ja)}</nav>
-      <h1>【全機種比較】{html.escape(brand_ja)}ロボット掃除機｜口コミでわかるおすすめの選び方</h1>
+      <h1>{html.escape(page_h1)}</h1>
       <p class="lede">{format_prose(hero_lede)}</p>
       {switcher}
     </div>

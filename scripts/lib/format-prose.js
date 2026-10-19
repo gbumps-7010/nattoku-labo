@@ -313,6 +313,9 @@ function validSpan(text) {
 
   if (startsForbidden(text)) return false;
 
+  // Reject spans that start mid-phrase with a particle
+  if (/^[のがをにへとはでもや]/.test(text)) return false;
+
   return true;
 
 }
@@ -351,11 +354,17 @@ function bestQuoteSpan(inner, tone) {
 
     const idx = inner.indexOf(hint);
 
+    // Prefer highlighting the hint itself when it fits
+    if (validSpan(hint)) return hint;
+
     let start = Math.max(0, idx - Math.floor((MAX_MARKER_CHARS - hint.length) / 2));
 
     let end = Math.min(inner.length, start + MAX_MARKER_CHARS);
 
     start = Math.max(0, end - MAX_MARKER_CHARS);
+
+    // Snap start forward past leading particles / mid-word cuts
+    while (start < idx && /^[のがをにへとはでもや]/.test(inner[start] || "")) start += 1;
 
     const span = inner.slice(start, end);
 
@@ -367,11 +376,40 @@ function bestQuoteSpan(inner, tone) {
 
 }
 
+function isCjkLetter(ch) {
+  if (!ch) return false;
+  const code = ch.codePointAt(0);
+  return (
+    (code >= 0x3040 && code <= 0x30ff) || // kana
+    (code >= 0x3400 && code <= 0x9fff) || // CJK
+    (code >= 0xf900 && code <= 0xfaff)
+  );
+}
+
+function isWordBoundary(text, start, end) {
+  // Avoid mid-word emphasis like 動作中<strong>の音が… / …使</strong>っても
+  const before = start > 0 ? text[start - 1] : "";
+  const after = end < text.length ? text[end] : "";
+  const first = text[start] || "";
+  const last = end > start ? text[end - 1] : "";
+  const particleStarts = "のがをにへとはでもや";
+  if (isCjkLetter(before) && particleStarts.includes(first)) return false;
+  // Truncated verb/adjective stem ending mid-word before another kana/kanji
+  if (isCjkLetter(after) && /[っッー]/.test(last)) return false;
+  if (isCjkLetter(after) && particleStarts.includes(after) && isCjkLetter(last)) {
+    // ending right before a particle is OK (静か</strong>で)
+    return true;
+  }
+  return true;
+}
+
 function addCandidate(candidates, text, start, end, tone, priority) {
 
   const span = text.slice(start, end);
 
   if (!validSpan(span) || hasMark(span)) return;
+
+  if (!isWordBoundary(text, start, end)) return;
 
   if (candidates.some((c) => !(end <= c.start || start >= c.end))) return;
 

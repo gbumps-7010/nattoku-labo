@@ -5,6 +5,17 @@ const fs = require("fs");
 const path = require("path");
 const { computeOverallScores, formatScore } = require("./lib/overall-score");
 const { loadVerified, summarize } = require("./lib/consumables");
+const {
+  buildPerformanceDetailsHtml,
+  buildKeywordListHtml,
+  buildComplaintsHtml,
+  buildAttributeDetailsHtml,
+  buildStaticAffiliateHtml,
+  buildTimeSavingLinkSection,
+  updateBadgeHtml,
+  buildEditorialReview,
+  overallColor,
+} = require("./lib/prerender-sections");
 
 const ROOT = path.resolve(__dirname, "..");
 const PRODUCTS_DIR = path.join(ROOT, "products");
@@ -151,6 +162,11 @@ function buildStructuredData(data, metadata) {
   if (data.modelNumber) product.model = String(data.modelNumber);
   if (data.asin) product.sku = String(data.asin);
 
+  // Editorial Review only — do NOT add aggregateRating (third-party review aggregate risk)
+  const review = buildEditorialReview(data, metadata);
+  if (review) product.review = review;
+
+  const crumbName = metadata.labelPart || metadata.name;
   const breadcrumb = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -164,7 +180,13 @@ function buildStructuredData(data, metadata) {
       {
         "@type": "ListItem",
         position: 2,
-        name: metadata.name,
+        name: "製品一覧",
+        item: "https://nattoku-labo.com/#productsContainer",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: crumbName,
         item: url,
       },
     ],
@@ -456,6 +478,14 @@ function ensureMobileOverrides(html) {
 }
 
 function prerenderHtml(html, data) {
+  const computed = computeOverallScores(data);
+  if (computed) {
+    if (computed.overallScore != null) data.overallScore = computed.overallScore;
+    if (computed.featureAverageScore != null) {
+      data.featureAverageScore = computed.featureAverageScore;
+    }
+  }
+
   const metadata = buildMetadata(data);
   const structuredDataScripts = buildStructuredData(data, metadata);
 
@@ -530,12 +560,6 @@ function prerenderHtml(html, data) {
     "timeSaving.monthlyHours",
   ];
 
-  const computed = computeOverallScores(data);
-  if (computed) {
-    if (computed.overallScore != null) data.overallScore = computed.overallScore;
-    if (computed.featureAverageScore != null) data.featureAverageScore = computed.featureAverageScore;
-  }
-
   for (const dottedPath of directPaths) {
     let value = getNestedValue(data, dottedPath);
     if (value === undefined && dottedPath === "reliability.score") value = data.reliabilityScore;
@@ -564,6 +588,17 @@ function prerenderHtml(html, data) {
     buildConsumablesSection(data, VERIFIED_CONSUMABLES[data.productId]),
     data.productId,
   );
+
+  // P0-1: bake analysis sections into static HTML for crawlers
+  html = injectPerformanceDetails(html, data);
+  html = injectKeywordFallbacks(html, data);
+  html = injectComplaints(html, data);
+  html = injectAttributeScores(html, data);
+  html = injectAffiliateStatic(html, data);
+  html = injectTimeSavingLink(html);
+  html = injectUpdateBadge(html, data);
+  html = injectBreadcrumbCurrent(html, metadata);
+
   html = bumpLoaderVersion(html);
 
   // 口コミ分析サマリー（seo-unique-summary）は表示しない
@@ -573,6 +608,126 @@ function prerenderHtml(html, data) {
   html = stripProductNameFromSectionHeadings(html, metadata.name, data.productName);
 
   return html;
+}
+
+function injectPerformanceDetails(html, data) {
+  const inner = buildPerformanceDetailsHtml(data.performanceAnalysis);
+  if (!inner) return html;
+  const marked =
+    /(<div class="performance-details-grid"[^>]*>)[\s\S]*?(<\/div>\s*<\/div>\s*<\/section>)/i;
+  if (marked.test(html)) {
+    return html.replace(marked, `$1${inner}\n                $2`);
+  }
+  return html;
+}
+
+function injectKeywordFallbacks(html, data) {
+  const posList = buildKeywordListHtml(data.reviewKeywords?.positive || [], "positive");
+  const negList = buildKeywordListHtml(data.reviewKeywords?.negative || [], "negative");
+
+  // Drop prior fallbacks so re-runs stay idempotent
+  html = html.replace(/\s*<noscript>\s*<ul class="keyword-fallback"[\s\S]*?<\/ul>\s*<\/noscript>/gi, "");
+  html = html.replace(/\s*<noscript>\s*<p class="keyword-fallback-empty"[\s\S]*?<\/p>\s*<\/noscript>/gi, "");
+  html = html.replace(/\s*<div class="keyword-fallback-wrap"[\s\S]*?<\/div>/gi, "");
+
+  const afterPos = `$1\n                        <div class="keyword-fallback-wrap">${posList}</div>`;
+  const afterNeg = `$1\n                        <div class="keyword-fallback-wrap">${negList}</div>`;
+  html = html.replace(/(<canvas id="positiveKeywordsChart"><\/canvas>\s*<\/div>)/i, afterPos);
+  html = html.replace(/(<canvas id="negativeKeywordsChart"><\/canvas>\s*<\/div>)/i, afterNeg);
+  return html;
+}
+
+function injectComplaints(html, data) {
+  const inner = buildComplaintsHtml(data);
+  if (!inner) return html;
+  const re =
+    /(<div class="problems-grid complaints-list">)[\s\S]*?(<\/div>\s*<\/section>)/i;
+  if (re.test(html)) {
+    return html.replace(re, `$1${inner}\n            $2`);
+  }
+  return html;
+}
+
+function injectAttributeScores(html, data) {
+  const scores = data.attributeScores;
+  if (!scores) return html;
+  for (const key of Object.keys(scores)) {
+    const attr = scores[key];
+    if (!attr) continue;
+    const cardRe = new RegExp(
+      `(<div class="attribute-card"[^>]*data-attribute="${escapeRegExp(key)}"[^>]*>)([\\s\\S]*?)(</div>\\s*)(?=<div class="attribute-card"|</div>\\s*</div>\\s*</section>)`,
+      "i",
+    );
+    html = html.replace(cardRe, (full, open, body, close) => {
+      let next = body;
+      if (attr.overall != null) {
+        const color = overallColor(attr.overall);
+        next = next.replace(
+          /<span([^>]*class="attribute-overall-score"[^>]*)>[\s\S]*?<\/span>/i,
+          `<span style="font-size: 1.5rem; font-weight: 700; color: ${color};" class="attribute-overall-score">${escapeHtml(attr.overall)}</span>`,
+        );
+      }
+      const details = buildAttributeDetailsHtml(attr, key);
+      if (details) {
+        next = next.replace(
+          /(<div class="attribute-details">)[\s\S]*?(<\/div>)/i,
+          `$1${details}\n                        $2`,
+        );
+      }
+      return open + next + close;
+    });
+  }
+  return html;
+}
+
+function injectAffiliateStatic(html, data) {
+  const block = buildStaticAffiliateHtml(data);
+  // Strip previous static blocks
+  html = html.replace(
+    /\s*<!-- AFFILIATE_STATIC_START -->[\s\S]*?<!-- AFFILIATE_STATIC_END -->\s*/g,
+    "\n",
+  );
+  // Insert into first empty #affiliate-moshimo and #affiliate-moshimo-2
+  let n = 0;
+  html = html.replace(
+    /(<div id="affiliate-moshimo(?:-2)?"[^>]*>)([\s\S]*?)(<\/div>)/gi,
+    (full, open, _inner, close) => {
+      n += 1;
+      if (n > 2) return full;
+      return `${open}\n${block}\n            ${close}`;
+    },
+  );
+  return html;
+}
+
+function injectTimeSavingLink(html) {
+  const section = buildTimeSavingLinkSection();
+  const marked = /<!-- TIME_SAVING_START -->[\s\S]*?<!-- TIME_SAVING_END -->/;
+  if (marked.test(html)) return html.replace(marked, () => section);
+  const legacy =
+    /(?:<!-- Time Saving \/ Quality of Life -->\s*)?<section>\s*<h2 class="section-title">\s*<i class="fas fa-clock"><\/i>[\s\S]*?自由な時間が増えます[\s\S]*?<\/section>/;
+  if (legacy.test(html)) return html.replace(legacy, () => section);
+  // Already replaced heading variant
+  const legacy2 =
+    /<section>\s*<h2 class="section-title">\s*<i class="fas fa-clock"><\/i>[\s\S]*?掃除の手間を減らすという視点[\s\S]*?<\/section>/;
+  if (legacy2.test(html)) return html.replace(legacy2, () => section);
+  return html;
+}
+
+function injectUpdateBadge(html, data) {
+  const badge = updateBadgeHtml(data.updateInfo?.lastUpdated);
+  const re =
+    /<div class="update-status-badge"[^>]*data-dynamic="updateInfo\.badge"[^>]*>[\s\S]*?<\/div>/i;
+  if (re.test(html)) return html.replace(re, () => badge);
+  return html;
+}
+
+function injectBreadcrumbCurrent(html, metadata) {
+  const name = metadata.labelPart || metadata.name;
+  return html.replace(
+    /(<span class="breadcrumb-current">)[\s\S]*?(<\/span>)/i,
+    `$1${escapeHtml(name)}$2`,
+  );
 }
 
 function stripProductNameFromSectionHeadings(html, displayName, productName) {

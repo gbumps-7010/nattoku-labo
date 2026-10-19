@@ -205,6 +205,19 @@ def build_feature_tabs(active_slug: str | None = None) -> str:
   </nav>"""
 
 
+LOW_REVIEW_THRESHOLD = 20
+
+
+def ref_badge(reviews: int) -> str:
+    """Mark low-sample scores as 参考値 (keep in ranking, do not exclude)."""
+    if int(reviews or 0) >= LOW_REVIEW_THRESHOLD:
+        return ""
+    return (
+        '<span class="ref-badge" title="口コミ数が少ないため参考値">'
+        "参考値</span>"
+    )
+
+
 def build_rows(products: list[dict], comment_label: str) -> str:
     chunks = []
     for p in products:
@@ -212,15 +225,19 @@ def build_rows(products: list[dict], comment_label: str) -> str:
         name = html.escape(p["name"])
         mfr = html.escape(p["manufacturer"])
         comment = format_prose((p.get("comment") or "").strip())
+        if not comment:
+            comment = (
+                f'<span class="comment-empty">{html.escape(comment_label)}'
+                "に関する口コミは見つかりませんでした</span>"
+            )
         tc = top_class(p["rank"])
+        badge = ref_badge(p["reviews"])
         img = (
             f'<img src="{html.escape(p["imageUrl"])}" alt="{name}の製品画像" loading="lazy" width="56" height="56">'
             if p.get("imageUrl")
             else '<div class="img-ph" aria-hidden="true"></div>'
         )
-        comment_row = ""
-        if comment:
-            comment_row = f"""
+        comment_row = f"""
       <tr class="comment-row{tc}" data-price="{p['price']}" data-rank="{p['rank']}">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
@@ -230,7 +247,7 @@ def build_rows(products: list[dict], comment_label: str) -> str:
         chunks.append(
             f"""
       <tr class="rank-row{tc}" data-price="{p['price']}" data-rank="{p['rank']}">
-        <td class="rank"><span class="rank-num">{p['rank']}</span></td>
+        <td class="rank"><span class="rank-num">{p['rank']}</span>{badge}</td>
         <td class="product">
           <a class="product-link" href="{url}" target="_blank" rel="noopener">
             <span class="thumb">{img}</span>
@@ -544,7 +561,20 @@ th {
   font-size: 0.72rem; letter-spacing: 0.03em; font-weight: 700; white-space: nowrap;
   box-shadow: 0 1px 0 var(--line);
 }
-.rank { width: 3rem; }
+.rank { width: 4.2rem; }
+.ref-badge {
+  display: inline-block;
+  margin: 0.25rem 0 0;
+  padding: 0.1rem 0.35rem;
+  border-radius: 999px;
+  background: #fef3c7;
+  color: #92400e;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+.comment-empty { color: #64748b; font-weight: 600; }
 .rank-num {
   display: inline-flex; align-items: center; justify-content: center;
   min-width: 1.7rem; height: 1.7rem;
@@ -1112,6 +1142,7 @@ def build_top_cards(products: list[dict], score_col: str) -> str:
             <span>{html.escape(score_col)} <strong>{p['feature']:.0f}</strong></span>
             <span>口コミ信頼度 <strong>{p['reliability']:.1f}</strong></span>
             <span>口コミ <strong>{p['reviews']:,}</strong></span>
+            {ref_badge(p['reviews'])}
           </div>
           <a class="aff-card-detail" href="{url}" target="_blank" rel="noopener">詳細分析を見る →</a>
           <div class="aff-card-body">

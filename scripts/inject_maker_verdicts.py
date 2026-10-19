@@ -90,8 +90,10 @@ def build_verdict(slug: str, body: str) -> str:
 
     lead = first(r'class="lead">([\s\S]*?)</p>', body)
     lead_plain = strip_marks(re.sub(r"<[^>]+>", "", lead))
-    alt_m = re.search(r"2位は([^\s（(]+(?:\s+[^\s（(]+)*)", lead_plain)
+    alt_m = re.search(r"2位は(.+?)です", lead_plain)
     alt_name = alt_m.group(1).strip() if alt_m else ""
+    # Drop score parenthetical: "DEEBOT mini（総合点76.3）" → "DEEBOT mini"
+    alt_name = re.sub(r"[（(][^）)]*[）)]\s*$", "", alt_name).strip()
 
     # Try to resolve alt slug from a product link later in page? keep name-only if unknown
     if alt_name and alt_name != name:
