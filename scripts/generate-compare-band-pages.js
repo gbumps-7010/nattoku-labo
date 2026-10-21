@@ -1258,11 +1258,20 @@ function buildBandVerdict(band) {
       </section>`;
 }
 
+// 残す価格帯は先頭を価格帯にする（トップと競合させない）。〜5万・15〜20万・20万〜は統合を検討中のため旧表記のまま
+const PRICE_FIRST_BANDS = new Set(["5〜7万円", "7〜10万円", "10〜15万円"]);
+
+function bandHeading(band) {
+  return PRICE_FIRST_BANDS.has(band.label)
+    ? `${band.label}のロボット掃除機おすすめ｜口コミ分析で比較`
+    : `ロボット掃除機のおすすめ・口コミ徹底比較【${band.label}】`;
+}
+
 function itemListJson(band) {
   return {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: `ロボット掃除機のおすすめ・口コミ徹底比較【${band.label}】`,
+    name: bandHeading(band),
     description: `${band.label}帯のロボット掃除機をおすすめ・口コミ徹底比較（全${band.products.length}製品）。2大ECサイトの口コミ分析に基づきます。`,
     url: `https://nattoku-labo.com${band.urlPath}`,
     numberOfItems: band.products.length,
@@ -1535,9 +1544,9 @@ const affiliateInlineScript = `
 
 function buildPage(band) {
   const totalReviews = band.products.reduce((s, p) => s + (p.reviews || 0), 0);
-  const title = `ロボット掃除機のおすすめ・口コミ徹底比較【${band.label}】 | ナットクLabo`;
+  const h1 = bandHeading(band);
+  const title = PRICE_FIRST_BANDS.has(band.label) ? `${h1}｜ナットクLabo` : `${h1} | ナットクLabo`;
   const desc = `${band.label}帯のロボット掃除機全${band.products.length}製品をおすすめ・口コミ徹底比較。2大ECサイトの口コミを分析し、価格・信頼度・注意点を横並びで確認できます。`;
-  const h1 = `ロボット掃除機のおすすめ・口コミ徹底比較【${band.label}】`;
   const productLinks = band.products
     .map(
       (p) =>
@@ -1560,7 +1569,7 @@ function buildPage(band) {
   <meta property="og:site_name" content="ナットクLabo">
   <meta property="og:locale" content="ja_JP">
   <meta property="og:url" content="https://nattoku-labo.com${band.urlPath}">
-  <meta property="og:title" content="ロボット掃除機のおすすめ・口コミ徹底比較【${band.label}】">
+  <meta property="og:title" content="${h1}">
   <meta property="og:description" content="${escapeHtml(desc)}">
   <meta property="og:image" content="https://nattoku-labo.com/og-default.png">
   <meta name="twitter:card" content="summary_large_image">
