@@ -142,8 +142,15 @@ function setProductTitleHeading(element, metadata) {
     });
 }
 
+/** プリレンダ済みページか（SEO枠はプリレンダが正なので、表示時に上書きしない） */
+function isPrerenderedPage() {
+    return [...document.querySelectorAll('script[type="application/ld+json"]')]
+        .some((s) => s.textContent.includes('"BreadcrumbList"'));
+}
+
 // 2. メタデータ更新
 function updateMetadata(data) {
+    if (isPrerenderedPage()) return;
     const metadata = buildSeoMetadata(data);
     const productUrl = 'https://nattoku-labo.com/products/' + data.productId;
     document.title = metadata.title;
@@ -263,8 +270,8 @@ function updateDynamicElements(data) {
                     console.log('ℹ️ 画像なし（アフィリエイト画像未設定）→ 非表示');
                 }
             } else if (path === 'productName' && element.tagName === 'H1') {
-                // ページ見出し（H1）はSEOタイトルを表示（改行位置を制御）
-                setProductTitleHeading(element, buildSeoMetadata(data));
+                // ページ見出し（H1）はSEOタイトルを表示（改行位置を制御）。プリレンダ済みならそのまま
+                if (!isPrerenderedPage()) setProductTitleHeading(element, buildSeoMetadata(data));
             } else if (path === 'price') {
                 // 価格を「約」付きでカンマ区切りでフォーマット
                 element.textContent = `約¥${value.toLocaleString()}`;
@@ -309,13 +316,16 @@ function getNestedValue(obj, path) {
 
 // 4. 基本情報更新
 function updateBasicInfo(data) {
-    const breadcrumbCurrent = document.querySelector('.breadcrumb-current');
-    if (breadcrumbCurrent && data.productName) {
-        breadcrumbCurrent.textContent = data.productName;
-    }
+    // パンくずと H1 はプリレンダ済みならそのまま（構造化データと表記を揃える）
+    if (!isPrerenderedPage()) {
+        const breadcrumbCurrent = document.querySelector('.breadcrumb-current');
+        if (breadcrumbCurrent && data.productName) {
+            breadcrumbCurrent.textContent = data.productName;
+        }
 
-    const productTitle = document.querySelector('h1.product-title, .product-header h1.product-title');
-    if (productTitle) setProductTitleHeading(productTitle, buildSeoMetadata(data));
+        const productTitle = document.querySelector('h1.product-title, .product-header h1.product-title');
+        if (productTitle) setProductTitleHeading(productTitle, buildSeoMetadata(data));
+    }
     
     const productImage = document.querySelector('.product-image-header');
     if (productImage) {

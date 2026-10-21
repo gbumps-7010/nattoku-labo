@@ -1,0 +1,15 @@
+{
+  "_note": "製品ページの title / meta description を製品ごとに上書きする。書いていない製品は共通書式。description の {totalReviews} は製品JSONの総口コミ数に置き換わる。点数・件数は書かない。",
+  "deebot-t50s-omni": {
+    "title": "エコバックス DEEBOT T50S OMNIの口コミ・評判｜T50との違い・不満点｜ナットクLabo",
+    "description": "DEEBOT T50S OMNI（エコバックス）の口コミ{totalReviews}件を分析。水拭き・静音は高評価、不満はアプリの初期設定とステーションの大きさ。T50 OMNIとの違いも比較できます。"
+  },
+  "deebot-t50-omni": {
+    "title": "エコバックス DEEBOT T50 OMNIの口コミ・評判｜故障・停止の声と対策｜ナットクLabo",
+    "description": "DEEBOT T50 OMNI（エコバックス）の口コミ{totalReviews}件を分析。水拭き・マッピングは高評価。家具の脚やラグで止まる、水漏れなど初期不良の声と対策、T50Sとの違いもまとめました。"
+  },
+  "deebot-n30": {
+    "title": "エコバックス DEEBOT N30の口コミ・評判｜N30 PLUSとの違い・不満点｜ナットクLabo",
+    "description": "DEEBOT N30（エコバックス）の口コミ{totalReviews}件を分析。吸引力・マッピングは高評価、段差での停止や初期設定の不満と対策を整理。本体が同じでゴミ収集ステーションが付くN30 PLUSとの違いも比較。"
+  }
+}

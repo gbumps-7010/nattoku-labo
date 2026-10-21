@@ -21,8 +21,12 @@ const ROOT = path.resolve(__dirname, "..");
 const PRODUCTS_DIR = path.join(ROOT, "products");
 const DATA_DIR = path.join(PRODUCTS_DIR, "data");
 const EXCLUDED = new Set(["template-unified.html", "template-unified-old.html", "test-js.html"]);
-const LOADER_V = "20261012a";
+const LOADER_V = "20261021a";
 const VERIFIED_CONSUMABLES = loadVerified(path.join(ROOT, "scripts", "data", "consumables"));
+// 製品ごとの title / description の上書き（scripts/data/seo-overrides.json）
+const SEO_OVERRIDES = JSON.parse(
+  fs.readFileSync(path.join(ROOT, "scripts", "data", "seo-overrides.json"), "utf8"),
+);
 
 function escapeHtml(value) {
   return String(value ?? "")
@@ -98,20 +102,24 @@ function displayName(data) {
 }
 
 function buildMetadata(data) {
-  // Keep in sync with products/js/product-loader.js buildSeoMetadata()
+  // SEO枠（title・meta・JSON-LD・パンくず・H1）の正はここ。product-loader.js はプリレンダ済みページでは上書きしない。
+  // H1 の組み立ては products/js/product-loader.js buildSeoMetadata() と揃えておく（未プリレンダ時の表示用）
   const name = displayName(data);
   const kana = manufacturerKatakana(data.manufacturer);
   const eng = manufacturerEnglish(data.manufacturer);
   const label = seoProductLabel(data);
   const brandPart = eng ? `${kana}（${eng}）` : kana;
   const comparePart = "口コミ・評判";
-  const title = `${label}の口コミ・評判｜${brandPart}｜ナットクLabo`;
+  const override = SEO_OVERRIDES[data.productId] || {};
+  const title = override.title || `${label}の口コミ・評判｜${brandPart}｜ナットクLabo`;
   const reviews = Number(data.totalReviews || data.reviewCount || 0);
   const reviewBit = reviews > 0 ? `${reviews}件の口コミを分析。` : "口コミを分析。";
   const fallbackDesc =
     `${label}（${brandPart}）の${reviewBit}` +
     "メリット・よくある不満・向いている人を公開します。";
-  const description = String(data.metaDescription || fallbackDesc);
+  const description = override.description
+    ? override.description.replace(/\{totalReviews\}/g, String(reviews))
+    : String(data.metaDescription || fallbackDesc);
 
   return { name, title, brandPart, comparePart, labelPart: label, description };
 }
@@ -669,9 +677,10 @@ function injectAttributeScores(html, data) {
       }
       const details = buildAttributeDetailsHtml(attr, key);
       if (details) {
+        // details は入れ子の div を含むので、カード内の最後の </div> までを置き換える（再実行しても重複しない）
         next = next.replace(
-          /(<div class="attribute-details">)[\s\S]*?(<\/div>)/i,
-          `$1${details}\n                        $2`,
+          /(<div class="attribute-details">)[\s\S]*(<\/div>)(\s*)$/i,
+          `$1${details}\n                        $2$3`,
         );
       }
       return open + next + close;
