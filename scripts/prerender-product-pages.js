@@ -52,9 +52,9 @@ function manufacturerKatakana(manufacturer) {
     Roborock: "ロボロック",
     ECOVACS: "エコバックス",
     Dreame: "ドリーミー",
-    Anker: "ユーフィー",
-    eufy: "ユーフィー",
-    Eufy: "ユーフィー",
+    Anker: "アンカー",
+    eufy: "アンカー",
+    Eufy: "アンカー",
     SwitchBot: "スイッチボット",
   };
   return map[m] || m;
@@ -67,9 +67,9 @@ function manufacturerEnglish(manufacturer) {
     Roborock: "Roborock",
     ECOVACS: "ECOVACS",
     Dreame: "Dreame",
-    Anker: "eufy",
-    eufy: "eufy",
-    Eufy: "eufy",
+    Anker: "Anker",
+    eufy: "Anker",
+    Eufy: "Anker",
     SwitchBot: "SwitchBot",
   };
   return map[m] || m;
@@ -107,10 +107,12 @@ function buildMetadata(data) {
   const name = displayName(data);
   const kana = manufacturerKatakana(data.manufacturer);
   const eng = manufacturerEnglish(data.manufacturer);
-  const label = seoProductLabel(data);
-  const brandPart = eng ? `${kana}（${eng}）` : kana;
-  const comparePart = "口コミ・評判";
   const override = SEO_OVERRIDES[data.productId] || {};
+  // label は検索される表記（ルンバ ○○ / Eufy ○○ など）。英字ブランドが既に入っていれば後ろはカナだけにする
+  const label = override.label || seoProductLabel(data);
+  const brandPart =
+    eng && !label.toLowerCase().includes(eng.toLowerCase()) ? `${kana}（${eng}）` : kana;
+  const comparePart = "口コミ・評判";
   const title = override.title || `${label}の口コミ・評判｜${brandPart}｜ナットクLabo`;
   const reviews = Number(data.totalReviews || data.reviewCount || 0);
   const reviewBit = reviews > 0 ? `${reviews}件の口コミを分析。` : "口コミを分析。";

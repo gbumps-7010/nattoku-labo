@@ -1,5 +1,5 @@
 {
-  "_note": "製品ページの title / meta description を製品ごとに上書きする。書いていない製品は共通書式。description の {totalReviews} は製品JSONの総口コミ数に置き換わる。点数・件数は書かない。",
+  "_note": "製品ページの SEO 表記を製品ごとに上書きする。label = タイトル・H1・パンくずの先頭（検索される表記）、title / description = 丸ごと上書き。書いていない項目は共通書式。description の {totalReviews} は製品JSONの総口コミ数に置き換わる。点数・件数は書かない。",
   "deebot-t50s-omni": {
     "title": "エコバックス DEEBOT T50S OMNIの口コミ・評判｜T50との違い・不満点｜ナットクLabo",
     "description": "DEEBOT T50S OMNI（エコバックス）の口コミ{totalReviews}件を分析。水拭き・静音は高評価、不満はアプリの初期設定とステーションの大きさ。T50 OMNIとの違いも比較できます。"
@@ -11,5 +11,52 @@
   "deebot-n30": {
     "title": "エコバックス DEEBOT N30の口コミ・評判｜N30 PLUSとの違い・不満点｜ナットクLabo",
     "description": "DEEBOT N30（エコバックス）の口コミ{totalReviews}件を分析。吸引力・マッピングは高評価、段差での停止や初期設定の不満と対策を整理。本体が同じでゴミ収集ステーションが付くN30 PLUSとの違いも比較。"
-  }
+  },
+
+  "roomba-mini-autoempty": { "label": "ルンバ ミニ（Roomba Mini）" },
+  "roomba-mini-slim-slimcharge": { "label": "ルンバ ミニ スリム" },
+  "roomba-plus-505-combo-autowash": { "label": "ルンバ 505 コンボ" },
+  "roomba-105-combo-autoempty": { "label": "ルンバ 105 コンボ" },
+  "roomba-plus-405-combo-autowash": { "label": "ルンバ 405 コンボ" },
+  "roomba-max-705-combo-autowash": { "label": "ルンバ Max 705 コンボ" },
+  "roomba-max-705-vac-autoempty": { "label": "ルンバ Max 705 Vac" },
+  "roomba-plus-575-combo-autowash": { "label": "ルンバ 575 コンボ" },
+
+  "eufy-x10-pro-omni": { "label": "Eufy X10 Pro Omni" },
+  "eufy-robot-vacuum-auto-empty-c10": { "label": "Eufy C10（Auto-Empty）" },
+  "eufy-robot-vacuum-omni-e25": { "label": "Eufy Omni E25" },
+  "eufy-clean-x8-pro-with-self-empty-station": { "label": "Eufy X8 Pro" },
+  "eufy-robot-vacuum-omni-c28": { "label": "Eufy Omni C28" },
+  "eufy-robovac-g30-hybrid": { "label": "Eufy RoboVac G30 Hybrid" },
+  "eufy-robot-vacuum-omni-s1-pro": { "label": "Eufy Omni S1 Pro" },
+  "eufy-robovac-g10-hybrid": { "label": "Eufy RoboVac G10 Hybrid" },
+  "eufy-robot-vacuum-omni-s2": { "label": "Eufy Omni S2" },
+
+  "q10p": { "label": "Roborock Q10P+" },
+  "q10v": { "label": "Roborock Q10V" },
+  "q10v-plus": { "label": "Roborock Q10V+" },
+  "qrevo-curv-2-flow": { "label": "Roborock Qrevo Curv 2 Flow" },
+  "qrevo-l": { "label": "Roborock Qrevo L" },
+  "saros-10r": { "label": "Roborock Saros 10R" },
+  "saros-20": { "label": "Roborock Saros 20" },
+
+  "k10-pro": { "label": "SwitchBot K10+ Pro" },
+  "k11": { "label": "SwitchBot K11+" },
+  "k11-pro": { "label": "SwitchBot K11+ Pro" },
+  "k20-pro": { "label": "SwitchBot K20+ Pro" },
+  "s10": { "label": "SwitchBot S10" },
+  "s20": { "label": "SwitchBot S20" },
+
+  "d10-plus": { "label": "Dreame D10 Plus" },
+  "d20-ultra": { "label": "Dreame D20 Ultra" },
+  "d9-max-gen-2": { "label": "Dreame D9 Max Gen 2" },
+  "f20": { "label": "Dreame F20" },
+  "f20-plus": { "label": "Dreame F20 Plus" },
+  "l10s-ultra-gen-2": { "label": "Dreame L10s Ultra Gen 2" },
+  "l10s-ultra-gen-3": { "label": "Dreame L10s Ultra Gen 3" },
+  "l20-ultra-complete": { "label": "Dreame L20 Ultra Complete" },
+  "l40-ultra-ae": { "label": "Dreame L40 Ultra AE" },
+  "l40s-pro-ultra": { "label": "Dreame L40s Pro Ultra" },
+  "x30-ultra": { "label": "Dreame X30 Ultra" },
+  "x50-ultra": { "label": "Dreame X50 Ultra" }
 }
