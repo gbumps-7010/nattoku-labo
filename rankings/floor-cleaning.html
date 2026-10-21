@@ -57,6 +57,8 @@ h1 {
   margin-bottom: 0.65rem;
 }
 .lede { font-size: 0.95rem; opacity: 0.95; max-width: 42rem; }
+/* 句読点・｜の位置で改行する（収まらない節だけ節の中で折り返す） */
+h1 .clause, .lede .clause { display: inline-block; word-break: auto-phrase; text-wrap: pretty; }
 .rank-tabs {
   position: sticky;
   top: calc(60px + env(safe-area-inset-top, 0px));
@@ -745,8 +747,8 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
       <nav class="crumb" aria-label="パンくず">
         <a href="/">ホーム</a> › <a href="/rankings/">ランキング</a> › フローリング掃除
       </nav>
-      <h1>【ロボット掃除機ランキング】フローリング掃除のおすすめ機種</h1>
-      <p class="lede">口コミ⁠に書かれた吸引力⁠や水拭きの評価⁠を数値化し⁠、フローリング掃除⁠の得意さを比較したランキング⁠です⁠。各製品⁠には⁠、実際⁠の口コミからまとめたフローリング清掃⁠の傾向コメント⁠も掲載しています⁠。</p>
+      <h1><span class="clause">【ロボット掃除機ランキング】フローリング掃除のおすすめ機種</span></h1>
+      <p class="lede"><span class="clause">口コミ⁠に書かれた吸引力⁠や水拭きの評価⁠を数値化し⁠、</span><span class="clause">フローリング掃除⁠の得意さを比較したランキング⁠です⁠。</span><span class="clause">各製品⁠には⁠、実際⁠の口コミからまとめたフローリング清掃⁠の傾向コメント⁠も掲載しています⁠。</span></p>
     </div>
   </header>
 
@@ -2270,7 +2272,7 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
       <a href="/compare/">徹底比較</a>
       <a href="/about">サイトについて</a>
     </div>
-    <p style="margin-top:0.65rem">ナットクLabo · 更新 2026-10-19</p>
+    <p style="margin-top:0.65rem">ナットクLabo · 更新 2026-10-21</p>
   </footer>
   <script src="/products/js/navigation.js?v=20261005a"></script>
   <script>

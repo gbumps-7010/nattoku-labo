@@ -37,11 +37,36 @@ function overallColor(score) {
   return "#ef4444";
 }
 
+// ranking: 機能別ランキングへの導線。点数が80点（良好）以上かどうかで文言だけ変える
 const PERF_MAPPING = [
-  { keys: ["floorCleaning"], label: "フローリング清掃" },
-  { keys: ["carpetCleaning"], label: "カーペット清掃" },
+  {
+    keys: ["floorCleaning"],
+    label: "フローリング清掃",
+    ranking: {
+      href: "/rankings/floor-cleaning",
+      high: "フローリング掃除ランキングでほかの機種と比べる",
+      low: "床掃除が得意な機種をフローリング掃除ランキングで探す",
+    },
+  },
+  {
+    keys: ["carpetCleaning"],
+    label: "カーペット清掃",
+    ranking: {
+      href: "/rankings/carpet-cleaning",
+      high: "カーペット掃除ランキングでほかの機種と比べる",
+      low: "カーペットに強い機種をカーペット掃除ランキングで探す",
+    },
+  },
   { keys: ["petHair", "petHairRemoval"], label: "ペット毛対応" },
-  { keys: ["nightQuietness", "quietness"], label: "静音性（夜間）" },
+  {
+    keys: ["nightQuietness", "quietness"],
+    label: "静音性（夜間）",
+    ranking: {
+      href: "/rankings/quietness",
+      high: "静音性ランキングでほかの静かな機種と比べる",
+      low: "もっと静かな機種を静音性ランキングで探す",
+    },
+  },
   { keys: ["stepClimbing"], label: "段差乗り越え" },
   { keys: ["maintenance"], label: "メンテナンス性" },
   { keys: ["appStability"], label: "アプリ安定性" },
@@ -62,6 +87,12 @@ function buildPerformanceDetailsHtml(perfData) {
     const score = data.score;
     const lv = scoreLevel(score);
     const reviewCount = data.reviewCount != null ? data.reviewCount : 0;
+    const rankingLink = item.ranking
+      ? `
+                        <p class="perf-ranking-link" style="margin:.6rem 0 0;font-size:.85rem;"><a href="${item.ranking.href}" style="color:var(--primary-color);font-weight:700;">${escapeHtml(
+          Number(score) >= 80 ? item.ranking.high : item.ranking.low,
+        )} →</a></p>`
+      : "";
     return `
                 <div class="performance-detail-card score-lv-${lv.key}">
                     <div class="performance-detail-head">
@@ -72,7 +103,7 @@ function buildPerformanceDetailsHtml(perfData) {
                         <div class="performance-detail-score"><b>${escapeHtml(score)}</b><small>/ 100点</small></div>
                         <div class="score-bar"><i style="width:${scoreBarWidth(score)}%"></i></div>
                         <p class="rank-badge">${escapeHtml(reviewCount)}件の口コミから算出</p>
-                        <p class="performance-detail-comment">${fp(data.comment || "詳細評価情報なし")}</p>
+                        <p class="performance-detail-comment">${fp(data.comment || "詳細評価情報なし")}</p>${rankingLink}
                     </div>
                 </div>`;
   }).join("");

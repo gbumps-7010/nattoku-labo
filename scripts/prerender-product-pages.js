@@ -21,7 +21,7 @@ const ROOT = path.resolve(__dirname, "..");
 const PRODUCTS_DIR = path.join(ROOT, "products");
 const DATA_DIR = path.join(PRODUCTS_DIR, "data");
 const EXCLUDED = new Set(["template-unified.html", "template-unified-old.html", "test-js.html"]);
-const LOADER_V = "20261021a";
+const LOADER_V = "20261021b";
 const VERIFIED_CONSUMABLES = loadVerified(path.join(ROOT, "scripts", "data", "consumables"));
 // 製品ごとの title / description の上書き（scripts/data/seo-overrides.json）
 const SEO_OVERRIDES = JSON.parse(

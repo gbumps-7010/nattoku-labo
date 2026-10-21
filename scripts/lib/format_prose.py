@@ -633,3 +633,28 @@ def format_prose(text: str) -> str:
     )
 
     return safe
+
+
+def clause_lines(text: str) -> str:
+
+    """Wrap each clause (ending in 、 or 。) in span.clause so lines break at punctuation (needs .clause{display:inline-block})."""
+
+    if not text:
+
+        return ""
+
+    clauses: list[str] = []
+
+    for part in re.findall(r"[^、。]+[、。]?", text.strip()):
+
+        # 「各製品には、」のような短い節は次の節とつなげ、1行に取り残されないようにする
+
+        if clauses and len(clauses[-1]) < 10 and not clauses[-1].endswith("。"):
+
+            clauses[-1] += part
+
+        else:
+
+            clauses.append(part)
+
+    return "".join(f'<span class="clause">{format_prose(c)}</span>' for c in clauses)

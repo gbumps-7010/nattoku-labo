@@ -25,6 +25,8 @@
       document.querySelectorAll(sel).forEach((el) => {
         if (el.dataset.proseDone) return;
         if (el.closest("h1, h2, h3, h4, a")) return;
+        // 生成時に句読点で区切り済み（span.clause）のものは崩さない
+        if (el.querySelector(".clause")) return;
         const raw = el.textContent;
         if (!raw || !raw.trim()) return;
         el.innerHTML = formatProse(raw);

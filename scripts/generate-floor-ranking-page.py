@@ -10,7 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts" / "lib"))
-from format_prose import format_prose  # noqa: E402
+from format_prose import clause_lines, format_prose  # noqa: E402
 DATA_DIR = ROOT / "products" / "data"
 OUT_DIR = ROOT / "rankings"
 NAV_V = "20261005a"
@@ -80,10 +80,10 @@ RANKINGS = [
         "slug": "quietness",
         "tab_label": "静音性",
         "perf_keys": ("quietness", "noiseLevel", "quietOperation"),
-        "crumb": "静音性",
-        "h1": "【ロボット掃除機ランキング】静音性のおすすめ機種",
-        "meta_description": "口コミの静音性評価を数値化したランキング。口コミ信頼度も加味したおすすめ順で{count}製品を比較できます。",
-        "og_description": "口コミの静音性評価を数値化したランキング。口コミ信頼度も加味したおすすめ順で比較できます。",
+        "crumb": "静音ロボット掃除機ランキング",
+        "h1": "静音ロボット掃除機ランキング｜静かでおすすめの機種を口コミで比較",
+        "meta_description": "口コミの「静か」「うるさい」の声を数値化して、{count}機種を静音性の高い順に比較。夜間や在宅ワーク中、集合住宅でも使いやすい機種を、実際の口コミ付きで選べます。",
+        "og_description": "口コミの「静か」「うるさい」の声を数値化して、静音性の高い順に比較。夜間や在宅ワーク中、集合住宅でも使いやすい機種を、実際の口コミ付きで選べます。",
         "lede": "口コミに書かれた運転音・静音性の評価を数値化し、在宅中や夜間でも使いやすい機種を比較したランキングです。各製品には、実際の口コミからまとめた静音性の傾向コメントも掲載しています。",
         "method_body": (
             "「音が静か」「テレビの邪魔にならない」といった口コミを点数化し、静音性の高さで並べています。"
@@ -94,7 +94,7 @@ RANKINGS = [
         "score_col": "静音性",
         "comment_label": "静音性の口コミ傾向",
         "table_note": "各製品に静音性の口コミコメント付き",
-        "hub_title": "【ロボット掃除機ランキング】静音性のおすすめ機種",
+        "hub_title": "静音ロボット掃除機ランキング｜静かでおすすめの機種を口コミで比較",
         "hub_cta": "静音性ランキングを見る →",
         "hub_meta": "運転音・静音性の口コミを数値化",
         "schema_description": "口コミの静音性評価を数値化したランキング",
@@ -152,6 +152,15 @@ def load_products(perf_keys: tuple[str, ...]) -> list[dict]:
     for i, row in enumerate(rows, 1):
         row["rank"] = i
     return rows
+
+
+def heading_lines(text: str) -> str:
+    """見出しを「｜」の位置で改行できるよう、区切りごとに span.clause で包む。"""
+    parts = [p for p in text.split("｜")]
+    return "".join(
+        f'<span class="clause">{html.escape(p)}{"｜" if i < len(parts) - 1 else ""}</span>'
+        for i, p in enumerate(parts)
+    )
 
 
 def yen(n: int) -> str:
@@ -325,6 +334,8 @@ h1 {
   margin-bottom: 0.65rem;
 }
 .lede { font-size: 0.95rem; opacity: 0.95; max-width: 42rem; }
+/* 句読点・｜の位置で改行する（収まらない節だけ節の中で折り返す） */
+h1 .clause, .lede .clause { display: inline-block; word-break: auto-phrase; text-wrap: pretty; }
 .rank-tabs {
   position: sticky;
   top: calc(60px + env(safe-area-inset-top, 0px));
@@ -1212,8 +1223,8 @@ def write_ranking_page(cfg: dict, products: list[dict]) -> Path:
       <nav class="crumb" aria-label="パンくず">
         <a href="/">ホーム</a> › <a href="/rankings/">ランキング</a> › {html.escape(cfg["crumb"])}
       </nav>
-      <h1>{html.escape(cfg["h1"])}</h1>
-      <p class="lede">{format_prose(cfg["lede"])}</p>
+      <h1>{heading_lines(cfg["h1"])}</h1>
+      <p class="lede">{clause_lines(cfg["lede"])}</p>
     </div>
   </header>
 {build_feature_tabs(slug)}
@@ -1375,6 +1386,7 @@ def write_hub(entries: list[tuple[dict, int]]) -> Path:
     .crumb a {{ color:#bfdbfe; text-decoration:none; }}
     h1 {{ font-size:clamp(1.25rem,4.6vw,1.9rem); font-weight:900; line-height:1.35; margin-bottom:0.65rem; }}
     .lede {{ font-size:0.95rem; opacity:0.95; max-width:40rem; }}
+    h1 .clause, .lede .clause {{ display:inline-block; word-break:auto-phrase; text-wrap:pretty; }}
     .rank-tabs {{
       position: sticky;
       top: calc(60px + env(safe-area-inset-top, 0px));
@@ -1418,7 +1430,7 @@ def write_hub(entries: list[tuple[dict, int]]) -> Path:
     <div class="wrap">
       <nav class="crumb" aria-label="パンくず"><a href="/">ホーム</a> › ランキング</nav>
       <h1>ロボット掃除機ランキング一覧</h1>
-      <p class="lede">{format_prose("口コミ分析の点数をもとに、気になる機能からおすすめ機種を探せます。")}</p>
+      <p class="lede">{clause_lines("口コミ分析の点数をもとに、気になる機能からおすすめ機種を探せます。")}</p>
     </div>
   </header>
 {build_feature_tabs(None)}

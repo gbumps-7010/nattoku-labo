@@ -423,7 +423,10 @@ function updatePerformanceCards(perfData) {
     ];
     
     const detailsGrid = document.querySelector('.performance-details-grid');
-    
+
+    // プリレンダ済みのカード（ランキングへのリンク付き）はそのまま使う
+    if (detailsGrid && isPrerenderedPage() && detailsGrid.querySelector('.performance-detail-card')) return;
+
     if (detailsGrid && perfData) {
         const html = perfMapping.map(item => {
             // 複数キーに対応（petHair/petHairRemoval, quietness/nightQuietnessなど）

@@ -30,6 +30,7 @@
     .crumb a { color:#bfdbfe; text-decoration:none; }
     h1 { font-size:clamp(1.25rem,4.6vw,1.9rem); font-weight:900; line-height:1.35; margin-bottom:0.65rem; }
     .lede { font-size:0.95rem; opacity:0.95; max-width:40rem; }
+    h1 .clause, .lede .clause { display:inline-block; word-break:auto-phrase; text-wrap:pretty; }
     .rank-tabs {
       position: sticky;
       top: calc(60px + env(safe-area-inset-top, 0px));
@@ -73,7 +74,7 @@
     <div class="wrap">
       <nav class="crumb" aria-label="パンくず"><a href="/">ホーム</a> › ランキング</nav>
       <h1>ロボット掃除機ランキング一覧</h1>
-      <p class="lede"><strong class="em-key">口コミ分析</strong>⁠の点数⁠をもとに⁠、気⁠になる機能からおすすめ機種⁠を探せます⁠。</p>
+      <p class="lede"><span class="clause"><strong class="em-key">口コミ分析</strong>⁠の点数⁠をもとに⁠、</span><span class="clause">気⁠になる機能からおすすめ機種⁠を探せます⁠。</span></p>
     </div>
   </header>
 
@@ -95,7 +96,7 @@
       <span class="meta">カーペット清掃の口コミを数値化 / 掲載54製品</span>
     </a>
     <a class="band" href="/rankings/quietness">
-      <strong>【ロボット掃除機ランキング】静音性のおすすめ機種</strong>
+      <strong>静音ロボット掃除機ランキング｜静かでおすすめの機種を口コミで比較</strong>
       <span>静音性ランキングを見る →</span>
       <span class="meta">運転音・静音性の口コミを数値化 / 掲載54製品</span>
     </a>

@@ -86,6 +86,8 @@
     a.band span { font-size: 0.9rem; font-weight: 600; color: #1e40af; }
     a.band .meta { display: block; margin-top: 0.35rem; font-size: 0.82rem; font-weight: 500; color: var(--muted); }
     footer { text-align: center; color: var(--muted); font-size: 0.8rem; padding: 1.5rem 1rem 2rem; }
+      /* CLAUSE_BREAKS */
+    h1 .clause, .lede .clause { display:inline-block; word-break:auto-phrase; text-wrap:pretty; }
   </style>
   <script type="application/ld+json">
   {
@@ -102,7 +104,7 @@
     <div class="wrap">
       <p class="eyebrow">徹底比較ハブ · メーカー別 · 価格帯別</p>
       <h1>ロボット掃除機の徹底比較</h1>
-      <p class="lede">メーカーごとの全機種比較と、同じ予算での口コミ徹底比較から選べます。掲載製品は、各ページの比較表に入れています。</p>
+      <p class="lede"><span class="clause">メーカーごとの全機種比較と、</span><span class="clause">同じ予算での口コミ徹底比較から選べます。</span><span class="clause">掲載製品は、各ページの比較表に入れています。</span></p>
     </div>
   </header>
 
@@ -185,6 +187,6 @@
   <footer>ナットクLabo ·</footer>
   <script src="/products/js/navigation.js?v=20261004a"></script>
   <script src="/products/js/format-prose.js?v=20261005a"></script>
-  <script src="/products/js/prose-init.js?v=20261005a"></script>
+  <script src="/products/js/prose-init.js?v=20261021a"></script>
 </body>
 </html>
