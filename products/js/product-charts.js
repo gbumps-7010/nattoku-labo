@@ -15,6 +15,27 @@
         return text.length > maxLen ? text.slice(0, maxLen) + '…' : text;
     }
 
+    /** 長いラベルは「・」の後ろで改行して全文を見せる（Chart.js は配列で複数行表示） */
+    function wrapLabel(label, maxLen) {
+        if (label == null) return '';
+        const text = String(label);
+        if (text.length <= maxLen) return text;
+        const parts = text.split('・');
+        const lines = [];
+        let current = '';
+        parts.forEach(function (part, i) {
+            const piece = i < parts.length - 1 ? part + '・' : part;
+            if (current && (current + piece).length > maxLen) {
+                lines.push(current);
+                current = piece;
+            } else {
+                current += piece;
+            }
+        });
+        if (current) lines.push(current);
+        return lines.length > 1 ? lines : text;
+    }
+
     /**
      * IntersectionObserver 用の監視対象（サイズのある親を優先）
      */
@@ -138,6 +159,8 @@
                 y: {
                     ticks: {
                         autoSkip: false,
+                        // ラベルは左揃え（読み始めの位置をそろえる）
+                        crossAlign: 'far',
                         padding: mobile ? 6 : 10,
                         font: {
                             size: mobile ? 11 : 13,
@@ -147,7 +170,7 @@
                         color: '#334155',
                         callback: function (value) {
                             const label = this.getLabelForValue(value);
-                            return truncateLabel(label, mobile ? 9 : 16);
+                            return wrapLabel(label, mobile ? 10 : 12);
                         }
                     },
                     grid: {
@@ -157,7 +180,7 @@
                         if (isMobileViewport()) {
                             scale.width = Math.min(
                                 scale.width,
-                                Math.max(78, window.innerWidth * 0.34)
+                                Math.max(78, window.innerWidth * 0.4)
                             );
                         } else {
                             scale.width = Math.max(scale.width, 160);
@@ -293,6 +316,11 @@
                 },
                 options: buildKeywordBarOptions()
             });
+            // グラフが描けたら、同じ内容の文字一覧（クローラー・JSなし向けのプリレンダ）は隠す
+            var fallback = wrap && wrap.nextElementSibling;
+            if (fallback && fallback.classList.contains('keyword-fallback-wrap')) {
+                fallback.style.display = 'none';
+            }
             console.log('✅ ' + canvasId + ' 描画完了');
         } catch (error) {
             console.error('❌ ' + canvasId + ' エラー:', error);

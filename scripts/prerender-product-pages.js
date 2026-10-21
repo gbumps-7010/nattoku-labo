@@ -15,17 +15,27 @@ const {
   updateBadgeHtml,
   buildEditorialReview,
   overallColor,
+  buildPurchaseCtaHtml,
+  buildCompareCandidatesHtml,
 } = require("./lib/prerender-sections");
 
 const ROOT = path.resolve(__dirname, "..");
 const PRODUCTS_DIR = path.join(ROOT, "products");
 const DATA_DIR = path.join(PRODUCTS_DIR, "data");
 const EXCLUDED = new Set(["template-unified.html", "template-unified-old.html", "test-js.html"]);
-const LOADER_V = "20261021b";
+const LOADER_V = "20261021c";
+const CHARTS_V = "20261021c"; // products/js/product-charts.js を変えたら上げる
 const VERIFIED_CONSUMABLES = loadVerified(path.join(ROOT, "scripts", "data", "consumables"));
 // 製品ごとの title / description の上書き（scripts/data/seo-overrides.json）
 const SEO_OVERRIDES = JSON.parse(
   fs.readFileSync(path.join(ROOT, "scripts", "data", "seo-overrides.json"), "utf8"),
+);
+// 不満点直後の購入ブロック・比較候補（scripts/data/purchase-flow.json）
+const PURCHASE_FLOW = JSON.parse(
+  fs.readFileSync(path.join(ROOT, "scripts", "data", "purchase-flow.json"), "utf8"),
+);
+const BAND_MANIFEST = JSON.parse(
+  fs.readFileSync(path.join(ROOT, "compare", "_bands-manifest.json"), "utf8"),
 );
 
 function escapeHtml(value) {
@@ -393,7 +403,9 @@ function replaceConsumablesSection(html, sectionHtml, label) {
 }
 
 function bumpLoaderVersion(html) {
-  return html.replace(/js\/product-loader\.js\?v=[0-9a-z]+/, `js/product-loader.js?v=${LOADER_V}`);
+  return html
+    .replace(/js\/product-loader\.js\?v=[0-9a-z]+/, `js/product-loader.js?v=${LOADER_V}`)
+    .replace(/js\/product-charts\.js\?v=[0-9a-z]+/, `js/product-charts.js?v=${CHARTS_V}`);
 }
 
 const mobileOverrides = `        /* MOBILE_LAYOUT_FIX_START */
@@ -603,6 +615,7 @@ function prerenderHtml(html, data) {
   html = injectPerformanceDetails(html, data);
   html = injectKeywordFallbacks(html, data);
   html = injectComplaints(html, data);
+  html = injectPurchaseFlow(html, data);
   html = injectAttributeScores(html, data);
   html = injectAffiliateStatic(html, data);
   html = injectTimeSavingLink(html);
@@ -656,6 +669,144 @@ function injectComplaints(html, data) {
     return html.replace(re, `$1${inner}\n            $2`);
   }
   return html;
+}
+
+// --- 不満点直後の購入ブロックと比較候補（新しい点数は作らず、製品ページと同じ計算の既存値だけを使う） ---
+const FLOW_AXES = [
+  { keys: ["floorCleaning"], label: "フローリング清掃" },
+  { keys: ["carpetCleaning"], label: "カーペット清掃" },
+  { keys: ["petHair", "petHairRemoval"], label: "ペット毛対応" },
+  { keys: ["nightQuietness", "quietness"], label: "静音性（夜間）" },
+  { keys: ["stepClimbing"], label: "段差乗り越え" },
+  { keys: ["maintenance"], label: "メンテナンス性" },
+  { keys: ["appStability"], label: "アプリ安定性" },
+  { keys: ["batteryLife"], label: "バッテリー持続" },
+];
+const FAILURE_RE = /故障|初期不良|不具合|壊れ/;
+const FLOW_START = "<!-- PURCHASE_FLOW_START -->";
+const FLOW_END = "<!-- PURCHASE_FLOW_END -->";
+let flowProducts = null;
+
+function axisScores(data) {
+  const perf = data.performanceAnalysis || {};
+  const out = {};
+  for (const axis of FLOW_AXES) {
+    const node = axis.keys.map((k) => perf[k]).find(Boolean);
+    const n = Number(node?.score);
+    if (Number.isFinite(n)) out[axis.label] = n;
+  }
+  return out;
+}
+
+function loadFlowProducts() {
+  if (flowProducts) return flowProducts;
+  const bandOf = {};
+  for (const band of BAND_MANIFEST) for (const slug of band.slugs) bandOf[slug] = band.label;
+  flowProducts = fs
+    .readdirSync(DATA_DIR)
+    .filter((f) => f.endsWith(".json") && !["ad-links.json", "products-index.json"].includes(f))
+    .map((f) => JSON.parse(fs.readFileSync(path.join(DATA_DIR, f), "utf8")))
+    .filter((d) => d.productId && d.affiliate?.hpPublish === true)
+    .map((d) => ({
+      id: d.productId,
+      name: buildMetadata(d).labelPart,
+      price: Number(d.price),
+      overall: computeOverallScores(d)?.overallScore,
+      rel: Number(d.reliabilityScore || d.reliability?.score || 0),
+      reviews: Number(d.totalReviews || 0),
+      band: bandOf[d.productId] || null,
+      axes: axisScores(d),
+    }));
+  return flowProducts;
+}
+
+function selectCandidates(data) {
+  const all = loadFlowProducts();
+  const self = all.find((p) => p.id === data.productId);
+  if (!self) return [];
+  const minReviews = Number(PURCHASE_FLOW.minReviewsForCandidate || 0);
+  const chosen = new Set([self.id]);
+  const out = [];
+  const priceText = (p) => `価格目安 約¥${p.price.toLocaleString("ja-JP")}`;
+  const overallText = (p) => `総合点 ${formatScore(p.overall)}`;
+  const href = (p) => `/products/${p.id}`;
+
+  // ① 姉妹機
+  const pair = (PURCHASE_FLOW.siblings || []).find((s) => s.includes(self.id));
+  const sibling = pair && all.find((p) => p.id !== self.id && pair.includes(p.id));
+  if (sibling) {
+    chosen.add(sibling.id);
+    out.push({ href: href(sibling), role: "同じシリーズの姉妹機", name: sibling.name, priceText: priceText(sibling), overallText: overallText(sibling) });
+  }
+
+  // ② 同じ価格帯で総合点がより高い機種
+  if (self.band && self.overall != null) {
+    const better = all
+      .filter((p) => !chosen.has(p.id) && p.band === self.band && p.reviews >= minReviews && p.overall > self.overall)
+      .sort((a, b) => b.overall - a.overall || b.rel - a.rel || b.reviews - a.reviews)[0];
+    if (better) {
+      chosen.add(better.id);
+      out.push({ href: href(better), role: `同じ予算（${self.band}）で総合点が上`, name: better.name, priceText: priceText(better), overallText: overallText(better) });
+    }
+  }
+
+  // ③ この機種でいちばん点数が低い項目が得意な、価格が近い機種
+  const weakest = Object.entries(self.axes).sort((a, b) => a[1] - b[1])[0];
+  if (weakest && Number.isFinite(self.price)) {
+    const [label, score] = weakest;
+    const win = Number(PURCHASE_FLOW.priceWindow || 0.3);
+    const strong = all
+      .filter(
+        (p) =>
+          !chosen.has(p.id) &&
+          p.reviews >= minReviews &&
+          Math.abs(p.price - self.price) <= self.price * win &&
+          (p.axes[label] ?? -1) > score,
+      )
+      .sort((a, b) => b.axes[label] - a.axes[label] || b.overall - a.overall)[0];
+    if (strong) {
+      chosen.add(strong.id);
+      out.push({
+        href: href(strong),
+        role: `${label}を重視するなら`,
+        name: strong.name,
+        priceText: priceText(strong),
+        overallText: overallText(strong),
+        axisText: `${label} ${strong.axes[label]}点（この機種は${score}点）`,
+      });
+    }
+  }
+  return out;
+}
+
+function purchaseCtaCopy(data) {
+  const failure = (data.topComplaints || []).some((c) => FAILURE_RE.test(String(c.title || "")));
+  const hasDirect = !!String(data.affiliate?.direct || "").trim();
+  const notOfficial = (PURCHASE_FLOW.ecNotOfficial || []).includes(data.productId);
+  const price = Number(data.price);
+  const priceText = Number.isFinite(price) ? `価格目安：約¥${price.toLocaleString("ja-JP")}` : "";
+  if (failure && hasDirect) {
+    return { heading: "故障が心配なら、保証が手厚い公式ストアで", sub: "公式ストアの保証・特典を確認してから選べます。ほかのショップの価格も比べられます。", priceText };
+  }
+  if (failure && !notOfficial) {
+    return { heading: "故障が心配なら、メーカー正規販売店で", sub: "正規販売店の価格を確認できます。購入前に保証の条件も確かめておくと安心です。", priceText };
+  }
+  return { heading: "気になる点が許容範囲なら、今の価格をチェック", sub: "ショップごとの最新価格を確認できます。", priceText };
+}
+
+function injectPurchaseFlow(html, data) {
+  // 挿入した分（"\n        START … END\n"）だけを取り除き、周りの改行は元のまま残す
+  const existing = new RegExp(`\\n[ \\t]*${FLOW_START}[\\s\\S]*?${FLOW_END}\\n`);
+  html = html.replace(existing, "");
+  if (!(PURCHASE_FLOW.pilot || []).includes(data.productId)) return html;
+  const block =
+    `\n        ${FLOW_START}` +
+    buildPurchaseCtaHtml(purchaseCtaCopy(data)) +
+    buildCompareCandidatesHtml(selectCandidates(data)) +
+    `\n        ${FLOW_END}\n`;
+  const anchor = "\n        <!-- Attribute Scores -->";
+  if (!html.includes(anchor)) throw new Error(`${data.productId}: Attribute Scores anchor missing for purchase flow`);
+  return html.replace(anchor, `${block}${anchor}`);
 }
 
 function injectAttributeScores(html, data) {

@@ -399,7 +399,52 @@ function buildEditorialReview(data, metadata) {
   };
 }
 
+/**
+ * 「主な不満点と対策」直後の購入ブロック（中身のボタンは product-loader.js が #affiliate-*-mid に描画）
+ * cta = { heading, sub, priceText }
+ */
+function buildPurchaseCtaHtml(cta) {
+  if (!cta) return "";
+  return `
+        <section id="affiliate-cta-mid" class="affiliate-cta-section affiliate-cta-mid" data-keep-header="1" style="max-width: 760px; margin: 2.5rem auto; padding: 0 1.5rem;">
+            <h2 class="section-title">${escapeHtml(cta.heading)}</h2>
+            <p class="affiliate-cta-subtitle">${escapeHtml(cta.sub)}</p>
+            ${cta.priceText ? `<p class="affiliate-cta-price" style="margin:0;padding:0 1.15rem 0.75rem;text-align:center;font-size:0.9rem;color:#475569;">${escapeHtml(cta.priceText)}</p>` : ""}
+            <div id="affiliate-moshimo-mid"></div>
+            <div id="affiliate-direct-mid"></div>
+        </section>`;
+}
+
+/**
+ * 比較候補（最大3機種）。点数は製品ページと同じ計算の既存値を引用するだけ
+ * c = { href, role, name, priceText, overallText, axisText }
+ */
+function buildCompareCandidatesHtml(candidates) {
+  if (!candidates || !candidates.length) return "";
+  const cards = candidates
+    .map(
+      (c) => `
+                <a class="compare-candidate" href="${escapeHtml(c.href)}" style="display:flex;flex-direction:column;gap:0.35rem;padding:1rem 1.1rem;border:1.5px solid #cbd5e1;border-radius:14px;background:#fff;text-decoration:none;color:#0f172a;">
+                    <span style="font-size:0.78rem;font-weight:800;color:var(--primary-color);">${escapeHtml(c.role)}</span>
+                    <strong style="font-size:1.02rem;line-height:1.4;">${escapeHtml(c.name)}</strong>
+                    <span style="font-size:0.85rem;color:#475569;">${escapeHtml(c.priceText)}｜${escapeHtml(c.overallText)}</span>
+                    ${c.axisText ? `<span style="font-size:0.85rem;color:#475569;">${escapeHtml(c.axisText)}</span>` : ""}
+                    <span style="margin-top:auto;font-size:0.85rem;font-weight:700;color:var(--primary-color);">口コミ分析を見る →</span>
+                </a>`,
+    )
+    .join("");
+  return `
+        <section class="compare-candidates" style="max-width: 920px; margin: 2rem auto 2.5rem; padding: 0 1.5rem;">
+            <h2 class="section-title">この機種で迷っている人の比較候補</h2>
+            <p style="margin:0 0 1rem;font-size:0.9rem;color:#475569;">点数は各製品の口コミ分析と同じ計算の値です。</p>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0.9rem;">${cards}
+            </div>
+        </section>`;
+}
+
 module.exports = {
+  buildPurchaseCtaHtml,
+  buildCompareCandidatesHtml,
   buildPerformanceDetailsHtml,
   buildKeywordListHtml,
   buildComplaintsHtml,

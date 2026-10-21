@@ -1456,7 +1456,8 @@ function renderAffiliate(data, catalog) {
 
         // 見出し：ボタンではなく「確認する」ための親ラベル
         const h = panel ? panel.querySelector('h2') : (section ? section.querySelector('h2') : null);
-        if (h) {
+        // keepHeader: 見出し・説明はプリレンダが製品データから決めた文言をそのまま使う
+        if (h && !opts.keepHeader) {
             h.innerHTML =
                 (opts.headerIcon ? `<i class="fas ${opts.headerIcon}" aria-hidden="true"></i>` : '') +
                 `<span>${opts.headerText}</span>`;
@@ -1481,8 +1482,15 @@ function renderAffiliate(data, catalog) {
                 panel.prepend(sub);
             }
         }
+        if (h && opts.keepHeader) {
+            h.style.cssText =
+                'margin:0; padding:1.15rem 1.25rem 0.35rem; text-align:center; color:#065f46; ' +
+                'font-weight:900; font-size:clamp(1.15rem, 3.8vw, 1.45rem); background:transparent; border:none;';
+        }
         if (sub) {
-            sub.textContent = opts.subText || 'メーカー公式HP・各ECサイトから確認できます';
+            if (!opts.keepHeader || !sub.textContent.trim()) {
+                sub.textContent = opts.subText || 'メーカー公式HP・各ECサイトから確認できます';
+            }
             sub.style.cssText =
                 'text-align:center; color:#0f172a; font-size:0.92rem; font-weight:600; ' +
                 'margin:0; padding:0 1.15rem 1rem; line-height:1.55;';
@@ -1569,6 +1577,14 @@ function renderAffiliate(data, catalog) {
         subText: 'メーカー公式HP・各ECサイトから、仕様や最新情報を確認できます',
         btnLabel: 'メーカー公式HPで見る'
     });
+    // 「主な不満点と対策」直後の購入ブロック（プリレンダで枠がある製品だけ）
+    if (document.getElementById('affiliate-cta-mid')) {
+        fillSlot({
+            secId: 'affiliate-cta-mid', moshId: 'affiliate-moshimo-mid', dirId: 'affiliate-direct-mid',
+            eidSuffix: 'm', withPixel: false, prominent: true, buttonSize: 'large', keepHeader: true,
+            btnLabel: 'メーカー公式HPで価格を確認'
+        });
+    }
     fillSlot({
         secId: 'affiliate-cta-2', moshId: 'affiliate-moshimo-2', dirId: 'affiliate-direct-2',
         eidSuffix: 'b', withPixel: false, prominent: true, buttonSize: 'large',
