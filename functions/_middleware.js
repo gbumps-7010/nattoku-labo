@@ -6,6 +6,7 @@
  * 3) C: 拡張子付きを拡張子なしへ（正規URL方針）
  * 4) 旧スラッグ → 新スラッグ（_redirects の動的上限に依存しない）
  * 5) 公開終了URL → 410
+ * 6) 内部資料・作業用ファイル（docs / scripts / drafts / *.md / Git設定など）→ 404
  *
  * 注: Pages Functions 配下では _redirects が効かないことがあるため、
  * 正規化はここで1ホップ完結させる。
@@ -82,6 +83,34 @@ const GONE_PATHS = new Set([
   "/products/eufy-robovac-g30",
   "/products/eufy-robovac-x8-hybrid",
 ]);
+
+/** 内部資料・作業用（公開しない）— 旧 drafts URL の 301 は normalizePathname で先に処理済み */
+const PRIVATE_PREFIXES = ["/docs/", "/scripts/", "/drafts/", "/products/examples/"];
+const PRIVATE_FILES = new Set([
+  "/deploy_files_list.txt",
+  "/remove-yodobashi-cta.txt",
+  "/products/js/test.js",
+]);
+const PRIVATE_EXTENSIONS = [".md", ".backup"];
+
+function isPrivatePath(pathname) {
+  let path = pathname;
+  try {
+    path = decodeURIComponent(pathname);
+  } catch {
+    // 不正なエンコードはそのまま判定する
+  }
+  path = path.replace(/\/{2,}/g, "/").toLowerCase();
+  if (PRIVATE_PREFIXES.some((p) => path === p.slice(0, -1) || path.startsWith(p))) {
+    return true;
+  }
+  if (PRIVATE_FILES.has(path)) return true;
+  // .github / .gitignore / .git など（/.well-known/ は公開のまま）
+  if (path.split("/").some((seg) => seg.startsWith(".") && seg !== ".well-known")) {
+    return true;
+  }
+  return PRIVATE_EXTENSIONS.some((ext) => path.endsWith(ext));
+}
 
 const HTML_STRIP_PREFIXES = [
   "/products/",
@@ -170,6 +199,13 @@ export async function onRequest(context) {
   if (normalized !== incoming.pathname) {
     incoming.pathname = normalized;
     changed = true;
+  }
+
+  if (isPrivatePath(incoming.pathname)) {
+    return new Response("Not Found", {
+      status: 404,
+      headers: { "content-type": "text/plain; charset=utf-8", "x-robots-tag": "noindex" },
+    });
   }
 
   const goneKey = stripHtmlExtension(collapseNestedProducts(incoming.pathname));
