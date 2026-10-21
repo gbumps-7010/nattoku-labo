@@ -1,5 +1,7 @@
 # ナットクLabo 運用引継ぎ（Claude向け）／2026-10-20
 
+**更新 2026-10-21（main @ 3169307）:** 生成スクリプトが公開中HTMLを再現できない件（§4.1）、SEO上書きファイル・プリレンダ修正・改行処理（§2.4）を追記。記事・文言の編集は Claude Code で実施する運用に変更。作戦は [`strategy.md`](./strategy.md)。
+
 このドキュメントは、今後の作業分担と現状の正確な引き継ぎ用です。  
 **正規の置き場:** リポジトリ `docs/ops/`（Claude Code はルート `CLAUDE.md` 経由で最初に読む）。  
 あわせて読む：**[`keyword-audit.md`](./keyword-audit.md)**（同ディレクトリ）。
@@ -51,14 +53,14 @@ SEOのために「この機種を上げたい」等の理由で手入力修正�
 | リポジトリ | `https://github.com/gbumps-7010/nattoku-labo.git` |
 | 本番 | `https://nattoku-labo.com/`（Cloudflare Pages想定） |
 | ブランチ | `main`（`origin/main` と同期済み） |
-| 最新コミット | `92c16c6` — *Ship SEO fix-list: prerender product analysis and tighten search surfaces.* |
+| 最新コミット | `3169307` — *Retitle the quietness ranking, link product cards to rankings, and break hero text at punctuation.*（2026-10-21） |
 | 作業ディレクトリ（Claude Code / Cursor 共通） | `C:\Users\naoto\Desktop\nattoku-labo` |
 
 **注意:** ローカルに `__pycache__` の未追跡があってもコミットしない。
 
 ---
 
-## 2. すでに本番反映済み（Cursorで実施済み）
+## 2. すでに本番反映済み（2.1 は Cursor、2.4 は Claude Code で実施）
 
 参照：修正指示書 `nattoku-labo-fix-list.md`（2026-10-19）＋その後の合意。
 
@@ -94,6 +96,40 @@ SEOのために「この機種を上げたい」等の理由で手入力修正�
 - **価格表示の全面更新**（公式価格とのずれ）— 別タスク
 - **aggregateRating** — 付けない
 - 口コミ少数機種のランキング**除外** — しない（参考値のみ）
+
+### 2.4 2026-10-21 に本番反映（Claude Code で実施）
+
+| コミット | 内容 |
+|---|---|
+| `55065a0` | `functions/_middleware.js` で内部ファイルを 404（`/docs/`・`/scripts/`・`/drafts/`・`/products/examples/`・`*.md`・`*.backup`・`.` で始まるパス〔`/.well-known/` は除く〕・作業用 txt など）。旧 `/drafts/` URL の 301 は維持 |
+| `735faff` | エコバックス T50S・T50・N30 のタイトル／説明文を個別化、N30⇔N30 PLUS の相互リンク、ブラウザ側の SEO 上書き停止、プリレンダの重複バグ修正 |
+| `3169307` | 静音ランキングのタイトル等変更、製品カードからランキングへのリンク、見出し・リード文の改行処理 |
+
+**製品ページのタイトル・説明文の個別上書き: `scripts/data/seo-overrides.json`**
+- 製品IDごとに `title` / `description` を書くと、`scripts/prerender-product-pages.js` の `buildMetadata()` がそれを使う。書いていない製品は共通書式のまま。
+- `description` の `{totalReviews}` は製品JSONの総口コミ数に置き換わる。点数・件数を手書きしない。
+- 現在の対象: `deebot-t50s-omni` / `deebot-t50-omni` / `deebot-n30`。
+
+**ブラウザ側（`products/js/product-loader.js`）はプリレンダ済みページを上書きしない**
+- `isPrerenderedPage()`（`BreadcrumbList` の JSON-LD があるか）で判定し、title・meta・og・JSON-LD・パンくず・H1・総合性能分析カードを作り直さない。
+- 以前は表示時に JSON-LD を Review なしの Product に置き換え、パンくずも ® 付きの名前に戻していた（どちらも解消）。
+- SEO枠の正はプリレンダ側。loader の挙動を変えたら `prerender-product-pages.js` の `LOADER_V` を上げてキャッシュを切る（現在 `20261021b`）。
+
+**プリレンダの修正（再実行しても壊れない）**
+- ライフスタイル別の相性診断（`injectAttributeScores`）が入れ子の `</div>` の手前までしか置き換えず、実行のたびに項目が重複していた。カード内の最後の `</div>` まで置き換えるよう修正。
+- 本番の T50S ページは既にこの重複で壊れていた（`735faff` で修復済み）。
+- 確認方法: `node scripts/prerender-product-pages.js --all` を2回続けて実行し、2回目が `0 updated` になること。
+
+**総合性能分析カードからランキングへのリンク（`scripts/lib/prerender-sections.js` の `PERF_MAPPING`）**
+- フローリング・カーペット・静音性のカードに各ランキングへのリンク。点数 80 以上かどうかで文言だけ変える（点数は変えない）。
+- floor-cleaning を水拭き軸に転換して URL を変える場合は、ここの `href` も直す。
+
+**見出し・リード文の改行（句読点と「｜」で改行）**
+- 仕組み: h1 と `<p class="lede">` を節ごとの `span.clause`（`display:inline-block; word-break:auto-phrase; text-wrap:pretty`）で包む。10文字未満の節は次の節とつなげる。
+- rankings: `scripts/generate-floor-ranking-page.py` が生成時に処理（`scripts/lib/format_prose.py` の `clause_lines()`）。
+- guides / makers / compare: 生成スクリプトでは処理できないため（§4.1）、後処理の **`scripts/apply_clause_breaks.py`** で公開中HTMLを直接加工する。何度実行しても結果は同じ。
+- `products/js/prose-init.js`（compare/ と トップで使用）は `.clause` を含む要素を作り直さない。
+
 
 ---
 
@@ -140,27 +176,46 @@ SEOのために「この機種を上げたい」等の理由で手入力修正�
 | 用途 | パス |
 |------|------|
 | 製品プリレンダ | `scripts/prerender-product-pages.js` + `scripts/lib/prerender-sections.js` |
+| 製品ごとの title / description 上書き | `scripts/data/seo-overrides.json` |
 | 製品JSON | `products/data/{id}.json` |
 | 製品HTML | `products/{id}.html` |
-| メーカー比較生成 | `drafts/build-manufacturer-compare-preview.py` |
+| メーカー比較生成 ⚠ | `drafts/build-manufacturer-compare-preview.py`（§4.1：実行禁止） |
 | フラットレイアウト再適用 | `scripts/apply_flat_layout_prototype.py` |
-| ランキング生成 | `scripts/generate-floor-ranking-page.py` |
-| ガイド生成 | `scripts/generate-guide-articles.py` |
-| 価格帯比較生成 | `scripts/generate-compare-band-pages.js` |
+| ランキング生成 | `scripts/generate-floor-ranking-page.py`（再現OK） |
+| ガイド生成 ⚠ | `scripts/generate-guide-articles.py`（§4.1：実行禁止） |
+| 価格帯比較生成 ⚠ | `scripts/generate-compare-band-pages.js`（§4.1：実行禁止） |
+| 見出し・リード文の改行（後処理） | `scripts/apply_clause_breaks.py` |
 | トップ製品一覧同期 | `scripts/sync-index-product-list.js` |
 | SEO枠から WJ 除去 | `scripts/strip-wj-from-seo.js` |
-| 強調・改行 | `scripts/lib/format_prose.py` / `format-prose.js` |
+| 強調・改行 | `scripts/lib/format_prose.py`（`clause_lines()` を含む）/ `format-prose.js` |
 | 口コミローダー（ランタイム） | `products/js/product-loader.js` |
+| 静的テキストの強調（ランタイム） | `products/js/prose-init.js`（compare/ とトップ） |
+| 内部ファイルの 404 | `functions/_middleware.js` |
 
-**よく使うコマンド（Cursor側）**
+**よく使うコマンド**
 ```bash
-node scripts/prerender-product-pages.js --all
-python drafts/build-manufacturer-compare-preview.py
-python scripts/apply_flat_layout_prototype.py
+node scripts/prerender-product-pages.js --all   # 2回目が 0 updated になることを確認
 python scripts/generate-floor-ranking-page.py
+python scripts/apply_clause_breaks.py           # guides / makers / compare の改行処理（再実行OK）
 node scripts/sync-index-product-list.js
 git push origin HEAD   # ユーザー指示時のみ
 ```
+
+### 4.1 ⚠ 生成スクリプトが公開中のHTMLを再現できない（guides / makers / compare）
+
+2026-10-21 に、変更を入れる前の状態で次の3本を実行して確認した。**どれも公開中のページを再現できず、大量に削除が出る。**
+
+| スクリプト | 出力先 | 変更前のコードで実行した結果 |
+|---|---|---|
+| `scripts/generate-guide-articles.py` | `guides/` 8ページ | +491 / −3,671 行 |
+| `scripts/generate-compare-band-pages.js` | `compare/robot-vacuum-*` 6ページ | +324 / −2,514 行 |
+| `drafts/build-manufacturer-compare-preview.py` | `makers/` 6ページ | −2,521 行 |
+
+- 原因: 公開中のページには、生成のあとに別のスクリプトや手作業で加えた内容（レイアウト調整、結論ブロック、ショップのカード、広告の差し込みなど）が入っており、生成スクリプトにはそれが反映されていない。
+- **当面のルール: この3本は実行しない。** 実行すると本番の内容が消える。うっかり実行したら `git checkout -- guides/ compare/ makers/` で戻す。
+- これらのページの文言を変えるときは、公開中のHTMLを直接編集するか、`apply_clause_breaks.py` のような**再実行しても壊れない後処理スクリプト**で加工する。
+- 生成スクリプトを再び使うには、後から加えた加工をすべて生成スクリプト側に取り込み、「実行しても差分が出ない」状態を確認する必要がある（別タスク）。
+- 再現できるもの: `prerender-product-pages.js`（2回目 0 updated）、`generate-floor-ranking-page.py`（差分は更新日のみ）。
 
 ---
 
