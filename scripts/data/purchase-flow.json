@@ -12,8 +12,7 @@
     ["k11", "k11-pro"],
     ["roomba-mini-autoempty", "roomba-mini-slim-slimcharge"],
     ["roomba-max-705-combo-autowash", "roomba-max-705-vac-autoempty"],
-    ["roomba-plus-405-combo-autowash", "roomba-plus-505-combo-autowash"],
-    ["eufy-robovac-g10-hybrid", "eufy-robovac-g30-hybrid"]
+    ["roomba-plus-405-combo-autowash", "roomba-plus-505-combo-autowash"]
   ],
   "ecNotOfficial": ["q10v", "q10v-plus"],
   "minReviewsForCandidate": 20,

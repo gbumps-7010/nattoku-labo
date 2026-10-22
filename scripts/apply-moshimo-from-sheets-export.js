@@ -39,7 +39,6 @@ const DEFAULT_SHEET_NAME_TO_PRODUCT_ID = {
   "X30 Ultra": "dreame-x30-ultra",
   "L10s Ultra Gen 3": "dreame-l10s-ultra-gen-3",
   "L40 Ultra AE": "dreame-l40-ultra-ae",
-  "L20 Ultra Complete": "dreame-l20-ultra-complete",
   "L10s Ultra Gen 2": "dreame-l10s-ultra-gen2",
   "D10 Plus": "dreame-d10-plus",
   "D20 Pro Plus": "dreame-d20-pro-plus",
@@ -55,7 +54,6 @@ const DEFAULT_SHEET_NAME_TO_PRODUCT_ID = {
   "Eufy Robot Vacuum Omni S1 Pro": "eufy-robot-vacuum-omni-s1-pro",
   "Eufy Robot Vacuum Auto-Empty C10": "anker-eufy-c10",
   "Eufy RoboVac G30 Hybrid": "eufy-robovac-g30-hybrid",
-  "Eufy RoboVac G10 Hybrid": "eufy-robovac-g10-hybrid",
   // SwitchBot（スプレッドシート B 列の <a> 本文に合わせる）
   "お掃除ロボットS20": "switchbot-s20",
   "ロボット掃除機 K11+": "switchbot-k11-plus",

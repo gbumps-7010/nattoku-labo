@@ -68,6 +68,12 @@
 /products/eufy-robovac-g30 410
 /products/eufy-robovac-x8-hybrid.html 410
 /products/eufy-robovac-x8-hybrid 410
+/products/eufy-clean-x8-pro-with-self-empty-station.html 410
+/products/eufy-clean-x8-pro-with-self-empty-station 410
+/products/eufy-robovac-g10-hybrid.html 410
+/products/eufy-robovac-g10-hybrid 410
+/products/l20-ultra-complete.html 410
+/products/l20-ultra-complete 410
 
 # スラッグ移行（旧 → 新）※評価継承のため410にしない
 /products/anker-eufy-c10.html /products/eufy-robot-vacuum-auto-empty-c10 301
@@ -80,8 +86,8 @@
 /products/dreame-l10s-ultra-gen-3 /products/l10s-ultra-gen-3 301
 /products/dreame-l10s-ultra-gen2.html /products/l10s-ultra-gen-2 301
 /products/dreame-l10s-ultra-gen2 /products/l10s-ultra-gen-2 301
-/products/dreame-l20-ultra-complete.html /products/l20-ultra-complete 301
-/products/dreame-l20-ultra-complete /products/l20-ultra-complete 301
+/products/dreame-l20-ultra-complete.html 410
+/products/dreame-l20-ultra-complete 410
 /products/dreame-l40-ultra-ae.html /products/l40-ultra-ae 301
 /products/dreame-l40-ultra-ae /products/l40-ultra-ae 301
 /products/dreame-l40s-pro-ultra.html /products/l40s-pro-ultra 301
@@ -96,8 +102,8 @@
 /products/ecovacs-deebot-t90-omni /products/deebot-t90-omni 301
 /products/ecovacs-deebot-x8-pro-omni.html /products/deebot-x8-pro-omni 301
 /products/ecovacs-deebot-x8-pro-omni /products/deebot-x8-pro-omni 301
-/products/eufy-clean-x8-pro-self-empty.html /products/eufy-clean-x8-pro-with-self-empty-station 301
-/products/eufy-clean-x8-pro-self-empty /products/eufy-clean-x8-pro-with-self-empty-station 301
+/products/eufy-clean-x8-pro-self-empty.html 410
+/products/eufy-clean-x8-pro-self-empty 410
 /products/roborock-q10v.html /products/q10v 301
 /products/roborock-q10v /products/q10v 301
 /products/roborock-q10v-plus.html /products/q10v-plus 301

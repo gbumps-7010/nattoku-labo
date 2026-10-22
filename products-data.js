@@ -1890,27 +1890,6 @@ const productsData = [
         rakutenUrl: 'https://search.rakuten.co.jp/search/mall/Eufy+RoboVac+G30+Hybrid/'
     },
     {
-        id: 'eufy-robovac-g10-hybrid',
-        name: 'Eufy RoboVac G10 Hybrid',
-        manufacturer: 'Anker',
-        price: 29990,
-        rating: 4.2,
-        reviewCount: 102,
-        totalReviewCount: 102,
-        image: 'https://m.media-amazon.com/images/I/61-B9+P0eLL._AC_SL1500_.jpg',
-        badges: ['ブラシレス', 'ハイブリッド', '採用102件'],
-        specs: {
-            suction: 92,
-            mopping: 55,
-            noise: 90,
-            obstacle: 68,
-            app: 70,
-            maintenance: 86
-        },
-        amazonUrl: 'https://www.amazon.co.jp/s?k=Eufy+RoboVac+G10+Hybrid',
-        rakutenUrl: 'https://search.rakuten.co.jp/search/mall/Eufy+RoboVac+G10+Hybrid/'
-    }
-    {
         id: 'roomba-mini-slim-slimcharge',
         name: 'Roomba Mini Slim + SlimCharge',
         manufacturer: 'iRobot',
@@ -2324,27 +2303,6 @@ const productsData = [
         },
         amazonUrl: 'https://www.amazon.co.jp/s?k=Dreame+D20+Pro+Plus',
         rakutenUrl: 'https://search.rakuten.co.jp/search/mall/Dreame+D20+Pro+Plus/'
-    },
-    {
-        id: 'dreame-l20-ultra-complete',
-        name: 'Dreame L20 Ultra Complete',
-        manufacturer: 'Dreame',
-        price: 52000,
-        rating: 4.8,
-        reviewCount: 346,
-        totalReviewCount: 346,
-        image: '',
-        badges: ['新規追加', '詳細分析対応', 'JSON自動追加'],
-        specs: {
-            suction: 98,
-            mopping: 97,
-            noise: 82,
-            obstacle: 88,
-            app: 85,
-            maintenance: 96
-        },
-        amazonUrl: 'https://www.amazon.co.jp/s?k=Dreame+L20+Ultra+Complete',
-        rakutenUrl: 'https://search.rakuten.co.jp/search/mall/Dreame+L20+Ultra+Complete/'
     },
     {
         id: 'deebot-n30-plus',

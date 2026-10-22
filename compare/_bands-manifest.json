@@ -8,7 +8,6 @@
       "f20",
       "deebot-n30",
       "eufy-robot-vacuum-auto-empty-c10",
-      "eufy-robovac-g10-hybrid",
       "q10v",
       "f20-plus",
       "k11",
@@ -22,7 +21,7 @@
       "k11-pro",
       "d20-ultra"
     ],
-    "count": 18
+    "count": 17
   },
   {
     "label": "5〜7万円",
@@ -30,15 +29,13 @@
     "slugs": [
       "l10s-ultra-gen-2",
       "roomba-105-combo-autoempty",
-      "l20-ultra-complete",
       "s20",
       "k10-pro",
       "deebot-n30-plus",
       "l10s-ultra-gen-3",
-      "deebot-mini-2",
-      "eufy-clean-x8-pro-with-self-empty-station"
+      "deebot-mini-2"
     ],
-    "count": 9
+    "count": 7
   },
   {
     "label": "7〜10万円",

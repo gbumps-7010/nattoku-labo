@@ -82,6 +82,9 @@ const GONE_PATHS = new Set([
   "/products/roborock-qrevo-curv-c",
   "/products/eufy-robovac-g30",
   "/products/eufy-robovac-x8-hybrid",
+  "/products/eufy-clean-x8-pro-with-self-empty-station",
+  "/products/eufy-robovac-g10-hybrid",
+  "/products/l20-ultra-complete",
 ]);
 
 /** 内部資料・作業用（公開しない）— 旧 drafts URL の 301 は normalizePathname で先に処理済み */

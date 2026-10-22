@@ -13,13 +13,11 @@ function productPagePath(id) {
 
 // 全製品データ（価格・メーカー情報のみ）
 const ALL_PRODUCTS = [
-    { id: 'eufy-clean-x8-pro-with-self-empty-station', name: 'Eufy Clean X8 Pro with Self-Empty Station', manufacturer: 'Anker', price: 69990, rating: 4.14 },
     { id: 'eufy-robot-vacuum-auto-empty-c10', name: 'Eufy Robot Vacuum Auto-Empty C10', manufacturer: 'Anker', price: 29990, rating: 4.37 },
     { id: 'eufy-robot-vacuum-omni-c28', name: 'Eufy Robot Vacuum Omni C28', manufacturer: 'Anker', price: 99990, rating: 4.49 },
     { id: 'eufy-robot-vacuum-omni-e25', name: 'Eufy Robot Vacuum Omni E25', manufacturer: 'Anker', price: 149900, rating: 4.27 },
     { id: 'eufy-robot-vacuum-omni-s1-pro', name: 'Eufy Robot Vacuum Omni S1 Pro', manufacturer: 'Anker', price: 199900, rating: 4.19 },
     { id: 'eufy-robot-vacuum-omni-s2', name: 'Eufy Robot Vacuum Omni S2', manufacturer: 'Anker', price: 249900, rating: 4.61 },
-    { id: 'eufy-robovac-g10-hybrid', name: 'Eufy RoboVac G10 Hybrid', manufacturer: 'Anker', price: 29990, rating: 3.28 },
     { id: 'eufy-robovac-g30-hybrid', name: 'Eufy RoboVac G30 Hybrid', manufacturer: 'Anker', price: 39990, rating: 4.02 },
     { id: 'eufy-x10-pro-omni', name: 'Eufy X10 Pro Omni', manufacturer: 'Anker', price: 99990, rating: 4.34 },
     { id: 'd10-plus', name: 'D10 Plus', manufacturer: 'Dreame', price: 21600, rating: 4.4 },
@@ -29,7 +27,6 @@ const ALL_PRODUCTS = [
     { id: 'f20-plus', name: 'F20 Plus', manufacturer: 'Dreame', price: 34800, rating: 3.89 },
     { id: 'l10s-ultra-gen-2', name: 'L10s Ultra Gen 2', manufacturer: 'Dreame', price: 55800, rating: 4.38 },
     { id: 'l10s-ultra-gen-3', name: 'L10s Ultra Gen 3', manufacturer: 'Dreame', price: 69800, rating: 4.51 },
-    { id: 'l20-ultra-complete', name: 'L20 Ultra Complete', manufacturer: 'Dreame', price: 59800, rating: 4.43 },
     { id: 'l40-ultra-ae', name: 'L40 Ultra AE', manufacturer: 'Dreame', price: 99800, rating: 4.15 },
     { id: 'l40s-pro-ultra', name: 'L40s Pro Ultra', manufacturer: 'Dreame', price: 99800, rating: 4.33 },
     { id: 'x30-ultra', name: 'X30 Ultra', manufacturer: 'Dreame', price: 94800, rating: 4.11 },

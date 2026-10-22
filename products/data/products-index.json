@@ -322,29 +322,6 @@
     }
   },
   {
-    "id": "eufy-clean-x8-pro-with-self-empty-station",
-    "name": "Eufy Clean X8 Pro with Self-Empty Station",
-    "manufacturer": "Anker",
-    "price": 69990,
-    "reviewCount": 125,
-    "totalReviewCount": 125,
-    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t2276/t2276_normal.jpg",
-    "badges": [
-      "Anker",
-      "水拭き・拭き掃除が良い",
-      "満足・買ってよかった"
-    ],
-    "overallTrustScore": 75.7,
-    "specs": {
-      "suction": 92,
-      "mopping": 85,
-      "noise": 78,
-      "obstacle": 70,
-      "app": 75,
-      "maintenance": 88
-    }
-  },
-  {
     "id": "eufy-robot-vacuum-auto-empty-c10",
     "name": "Eufy Robot Vacuum Auto-Empty C10",
     "manufacturer": "Anker",
@@ -434,29 +411,6 @@
       "obstacle": 65,
       "app": 88,
       "maintenance": 85
-    }
-  },
-  {
-    "id": "eufy-robovac-g10-hybrid",
-    "name": "Eufy RoboVac G10 Hybrid",
-    "manufacturer": "Anker",
-    "price": 29990,
-    "reviewCount": 113,
-    "totalReviewCount": 113,
-    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/value-shopping/cabinet/product07/4571411191008.jpg",
-    "badges": [
-      "Anker",
-      "水拭き・拭き掃除が良い",
-      "吸引力が高い"
-    ],
-    "overallTrustScore": 71,
-    "specs": {
-      "suction": 88,
-      "mopping": 35,
-      "noise": 90,
-      "obstacle": 55,
-      "app": 65,
-      "maintenance": 82
     }
   },
   {
@@ -686,29 +640,6 @@
       "obstacle": 78,
       "app": 85,
       "maintenance": 95
-    }
-  },
-  {
-    "id": "l20-ultra-complete",
-    "name": "L20 Ultra Complete",
-    "manufacturer": "Dreame",
-    "price": 59800,
-    "reviewCount": 46,
-    "totalReviewCount": 46,
-    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/lapistores/cabinet/13061158/35177699_4.jpg",
-    "badges": [
-      "Dreame",
-      "水拭き・拭き掃除が良い",
-      "満足・買ってよかった"
-    ],
-    "overallTrustScore": 57.5,
-    "specs": {
-      "suction": 97,
-      "mopping": 88,
-      "noise": 90,
-      "obstacle": 85,
-      "app": 91,
-      "maintenance": 78
     }
   },
   {
