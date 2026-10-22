@@ -536,6 +536,60 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
   font-size: 0.82rem;
 }
 .aff-card-status.error { color: #dc2626; }
+
+.picks { margin: 1.25rem 0 1.5rem; }
+.picks h2, .article-sec h2 { font-size: 1.15rem; font-weight: 900; color: #0f172a; margin-bottom: 0.4rem; }
+.picks .section-sub { font-size: 0.86rem; color: #475569; margin-bottom: 0.85rem; }
+.picks-grid { display: grid; gap: 0.85rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.pick-card { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 1rem; display: flex; flex-direction: column; gap: 0.55rem; }
+.pick-card:first-child { border: 2px solid var(--primary); box-shadow: 0 8px 22px rgba(30,64,175,0.08); }
+.pick-label { font-size: 0.78rem; font-weight: 800; color: var(--primary); }
+.pick-head { display: flex; gap: 0.7rem; align-items: center; }
+.pick-head img, .pick-head .img-ph { width: 64px; height: 64px; object-fit: contain; border-radius: 10px; background: #f1f5f9; flex: 0 0 auto; }
+.pick-head h3 { font-size: 1rem; font-weight: 900; line-height: 1.35; }
+.pick-head h3 a { color: #0f172a; text-decoration: none; }
+.pick-meta { font-size: 0.8rem; color: #475569; }
+.pick-stats { list-style: none; display: flex; flex-wrap: wrap; gap: 0.3rem 0.8rem; font-size: 0.82rem; color: #334155; }
+.pick-card > p { font-size: 0.85rem; color: #334155; line-height: 1.7; }
+.pick-actions { margin-top: auto; display: grid; gap: 0.45rem; }
+.btn-primary, .btn-sub { display: block; text-align: center; border-radius: 10px; padding: 0.65rem 0.8rem; font-weight: 800; font-size: 0.9rem; text-decoration: none; }
+.btn-primary { background: var(--primary); color: #fff; }
+.btn-primary:hover { background: #1e3a8a; }
+.btn-sub { background: #eff6ff; color: var(--primary); border: 1px solid #bfdbfe; }
+.btn-sub:hover { background: #dbeafe; }
+.article { margin: 1.75rem 0 0.5rem; display: grid; gap: 1.1rem; }
+.article-sec { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 1.1rem 1.15rem; }
+.article-sec p { font-size: 0.93rem; line-height: 1.85; color: #1e293b; }
+.article-sec p + p, .article-sec p + .table-scroll, .article-sec .table-scroll + p { margin-top: 0.7rem; }
+.article-sec a { color: var(--primary); font-weight: 700; }
+.article-sec .em-key { background: linear-gradient(transparent 62%, #fde68a 62%); font-weight: 800; }
+.table-scroll { overflow-x: auto; margin-top: 0.75rem; }
+table.mini { width: 100%; border-collapse: collapse; font-size: 0.85rem; min-width: 520px; }
+table.mini th, table.mini td { border-bottom: 1px solid var(--line); padding: 0.5rem 0.55rem; text-align: left; vertical-align: top; }
+table.mini th { background: #f8fafc; font-weight: 800; color: #0f172a; white-space: nowrap; }
+table.mini td.num { white-space: nowrap; font-weight: 700; }
+ul.tips { list-style: none; display: grid; gap: 0.55rem; }
+ul.tips li { font-size: 0.92rem; line-height: 1.8; padding-left: 1.1rem; position: relative; }
+ul.tips li::before { content: "✓"; position: absolute; left: 0; color: var(--primary); font-weight: 900; }
+.mid-cta { margin-top: 0.9rem; }
+.mid-cta .btn-sub { display: inline-block; }
+.faq details { border-top: 1px solid var(--line); padding: 0.65rem 0; }
+.faq details:first-of-type { border-top: none; }
+.faq summary { cursor: pointer; font-weight: 800; color: #0f172a; font-size: 0.95rem; }
+.faq .faq-a { margin-top: 0.45rem; }
+.aff-card { scroll-margin-top: 130px; }
+.picks, .article-sec, .top-cards { scroll-margin-top: 120px; }
+.sticky-cta { display: none; }
+@media (max-width: 768px) {
+  .sticky-cta:not([hidden]) {
+    display: flex; gap: 0.45rem; position: fixed; left: 0; right: 0; bottom: 0; z-index: 40;
+    padding: 0.6rem 0.75rem calc(0.6rem + env(safe-area-inset-bottom, 0px));
+    background: rgba(255,255,255,0.97); border-top: 1px solid var(--line); box-shadow: 0 -6px 18px rgba(15,23,42,0.08);
+  }
+  .sticky-cta a { flex: 1 1 auto; text-align: center; border-radius: 10px; padding: 0.7rem 0.6rem; font-weight: 800; font-size: 0.88rem; text-decoration: none; background: var(--primary); color: #fff; }
+  .sticky-cta a.sticky-sub { flex: 0 0 auto; background: #eff6ff; color: var(--primary); border: 1px solid #bfdbfe; }
+  body { padding-bottom: 4.5rem; }
+}
 </style>
   <script type="application/ld+json">
 {
@@ -730,6 +784,46 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
 }
   </script>
   <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "ロボット掃除機は何cmの段差まで越えられますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "メーカー公表値では20mmがいちばん多く（公表している35機種のうち22機種）、40mm以上を公表している機種は4機種です。敷居やラグの高さを測り、それより余裕のある機種を選ぶと安心です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "段差に強くて安い機種はありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "口コミ50件以上で5万円以下の機種では、Eufy Robot Vacuum Auto-Empty C10（¥29,990）の段差評価が85点で最も高く、総合でも4位です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "公表されている段差の高さが大きければ安心ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "公表値が高い機種ほど口コミの評価も高い傾向はありますが、例外もあります。公表値は条件がそろったときの値なので、口コミで同じような段差の声を確かめるのがおすすめです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "段差に強いいちばんのおすすめはどれですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "口コミの件数も考えると、L40s Pro Ultra（段差88点・口コミ107件・公表40mm・2段）がおすすめです。"
+      }
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -768,6 +862,71 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         </p>
       </section>
 
+      <section class="picks" id="picks" aria-label="段差で選ぶならこの3台">
+        <h2>結論：段差で選ぶならこの3台</h2>
+        <p class="section-sub">ランキング⁠の順位⁠に加えて⁠、口コミ⁠の件数⁠と予算⁠も考えて選んだ3台⁠です⁠。点数⁠はランキング表⁠と同じ値⁠です⁠。</p>
+        <div class="picks-grid">
+          <article class="pick-card">
+            <p class="pick-label">口コミ50件以上で段差に最も強い</p>
+            <div class="pick-head">
+              <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/20251230173059_cp.jpg" alt="" width="64" height="64" loading="lazy">
+              <div>
+                <h3><a href="/products/l40s-pro-ultra">L40s Pro Ultra</a></h3>
+                <p class="pick-meta">Dreame · ¥99,800</p>
+              </div>
+            </div>
+            <ul class="pick-stats">
+              <li>段差 <strong>88点</strong>（3位）</li>
+              <li>口コミ <strong>107件</strong></li>
+              <li>メーカー公表 <strong>40mm・2段</strong></li>
+            </ul>
+            <p>口コミ⁠では「⁠公称通り2cm程度⁠の段差⁠は問題なく乗り越え⁠、部屋間⁠の移動⁠はスムーズ⁠です⁠。⁠」</p>
+            <div class="pick-actions">
+              <a class="btn-primary" href="/products/l40s-pro-ultra">口コミ分析を見る</a>
+              <a class="btn-sub" href="#price-l40s-pro-ultra">最新価格を見る ▼</a>
+            </div>
+          </article>
+          <article class="pick-card">
+            <p class="pick-label">予算5万円以下で段差に最も強い</p>
+            <div class="pick-head">
+              <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t2292/t2292_nomal.jpg" alt="" width="64" height="64" loading="lazy">
+              <div>
+                <h3><a href="/products/eufy-robot-vacuum-auto-empty-c10">Eufy Robot Vacuum Auto-Empty C10</a></h3>
+                <p class="pick-meta">Anker · ¥29,990</p>
+              </div>
+            </div>
+            <ul class="pick-stats">
+              <li>段差 <strong>85点</strong>（4位）</li>
+              <li>口コミ <strong>225件</strong></li>
+              <li>メーカー公表 <strong>17mm</strong></li>
+            </ul>
+            <p>口コミ⁠では「⁠2cm程度⁠の段差⁠やラグ⁠はパワフル⁠に乗り越える性能⁠があります⁠。⁠」</p>
+            <div class="pick-actions">
+              <a class="btn-primary" href="/products/eufy-robot-vacuum-auto-empty-c10">口コミ分析を見る</a>
+              <a class="btn-sub" href="#price-eufy-robot-vacuum-auto-empty-c10">最新価格を見る ▼</a>
+            </div>
+          </article>
+          <article class="pick-card">
+            <p class="pick-label">総合1位（口コミが少なく参考値）</p>
+            <div class="pick-head">
+              <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/x50ultra_cp.jpg" alt="" width="64" height="64" loading="lazy">
+              <div>
+                <h3><a href="/products/x50-ultra">X50 Ultra</a></h3>
+                <p class="pick-meta">Dreame · ¥149,800</p>
+              </div>
+            </div>
+            <ul class="pick-stats">
+              <li>段差 <strong>97点</strong>（1位）</li>
+              <li>口コミ <strong>17件</strong><span class="ref-badge" title="口コミ数が少ないため参考値">参考値</span></li>
+              <li>メーカー公表 <strong>60mm・2段</strong></li>
+            </ul>
+            <p>口コミ⁠では「⁠最大6cm⁠の段差⁠を乗り越える独自⁠のロボットレッグ機能⁠は⁠、他⁠の製品⁠にはない大きな利点⁠として高く評価されています⁠。⁠」</p>
+            <div class="pick-actions">
+              <a class="btn-primary" href="/products/x50-ultra">口コミ分析を見る</a>
+              <a class="btn-sub" href="#price-x50-ultra">最新価格を見る ▼</a>
+            </div>
+          </article></div>
+      </section>
       <section class="filters" aria-label="価格帯で絞り込み">
         <div class="filters-label">価格帯で絞り込み</div>
         <div class="filter-chips" role="group">
@@ -1939,14 +2098,16 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         </div>
         <p class="empty-msg" id="empty-msg">この価格帯に該当する製品はありません。</p>
       </section>
+<div class="article"><section class="article-sec" id="step-guide"><h2>家の段差の目安と、必要な乗り越え性能</h2><p>ロボット掃除機⁠が止まりやすいのは⁠、部屋⁠の境目⁠の<strong class="em-key">敷居</strong>⁠、<strong class="em-key">ラグ⁠やカーペット⁠の端</strong>⁠、<strong class="em-key">家具⁠の脚⁠や台座</strong>⁠です⁠。高さは家ごとに違うので⁠、まず掃除させたい場所⁠の段差⁠を実際⁠に測り⁠、その高さを越えられる機種⁠を選ぶのが確実⁠です⁠。</p><p>メーカー⁠が「⁠乗り越えられる段差⁠」⁠を公表しているのは掲載51機種⁠のうち35機種⁠で⁠、いちばん多いのは<strong class="em-key">20mm</strong>（⁠22機種⁠）⁠です⁠。40mm以上⁠を公表しているのは4機種⁠で⁠、X50 Ultra・Saros 20・L40s Pro Ultra・Saros 10R⁠は2段⁠になった段差⁠の合計値（⁠2段⁠）⁠として公表しています⁠。</p><div class="table-scroll"><table class="mini">
+          <thead><tr><th>メーカー公表の段差</th><th>機種数</th><th>口コミの段差評価（平均）</th><th>主な機種</th></tr></thead>
+          <tbody><tr><td>20mm未満</td><td class="num">4機種</td><td class="num">67.5点</td><td>Eufy Robot Vacuum Auto-Empty C10、Eufy RoboVac G30 Hybrid、DEEBOT mini ほか</td></tr><tr><td>20mm</td><td class="num">22機種</td><td class="num">68.3点</td><td>D10 Plus、マルチタスク家庭用ロボットK20+ Pro、L10s Ultra Gen 3 ほか</td></tr><tr><td>21〜39mm</td><td class="num">5機種</td><td class="num">77.8点</td><td>Eufy Robot Vacuum Omni S2、Roomba Plus 575 Combo + AutoWash、DEEBOT T90 OMNI ほか</td></tr><tr><td>40mm以上</td><td class="num">4機種</td><td class="num">87.2点</td><td>X50 Ultra、Saros 20、L40s Pro Ultra ほか</td></tr></tbody></table></div></section><section class="article-sec" id="step-spec"><h2>メーカー公表値と口コミ評価のちがい</h2><p>公表値⁠が高い機種ほど⁠、口コミ⁠の段差評価⁠も高い傾向⁠があります⁠。公表20mm⁠の機種⁠は平均68.3点⁠、40mm以上⁠の機種⁠は平均87.2点⁠でした（⁠全機種⁠の平均⁠は71.8点⁠）⁠。</p><p>ただし例外⁠もあります⁠。<a href="/products/eufy-robot-vacuum-auto-empty-c10">Eufy Robot Vacuum Auto-Empty C10</a>⁠は公表17mm⁠ですが⁠、口コミ⁠の段差評価⁠は85点⁠と高めです（⁠口コミ225件⁠）⁠。反対⁠に<a href="/products/eufy-robot-vacuum-omni-e25">Eufy Robot Vacuum Omni E25</a>⁠は公表21mm⁠でも⁠、口コミ⁠では70点⁠にとどまっています（⁠口コミ193件⁠）⁠。同じように<a href="/products/saros-10r">Saros 10R</a>⁠は公表40mm・2段⁠でも⁠、口コミ⁠では72点⁠にとどまっています（⁠口コミ147件⁠）⁠。公表値⁠は「⁠条件⁠がそろえば越えられる高さ⁠」なので⁠、段差⁠の形⁠や素材⁠によって結果⁠が変わります⁠。<strong class="em-key">公表値⁠と口コミ⁠の両方</strong>⁠を見て選ぶのがおすすめです⁠。</p></section><section class="article-sec" id="step-voices"><h2>口コミで多い段差の声</h2><p>各機種⁠の段差⁠に関する口コミ⁠をまとめたコメント⁠で⁠、よく出てくる場所⁠は「⁠敷居⁠」（⁠25機種⁠）⁠、「⁠ラグ・カーペット⁠の端⁠」（⁠24機種⁠）⁠、「⁠家具⁠の脚・台座⁠」（⁠18機種⁠）⁠、「⁠玄関・落下⁠」（⁠17機種⁠）⁠、「⁠乗り上げて動けなくなる⁠」（⁠16機種⁠）⁠です⁠。敷居⁠やラグ⁠の端⁠は越えられても⁠、<strong class="em-key">家具⁠の脚⁠や台座⁠に乗り上げて止まる</strong>⁠という声⁠は評価⁠の高い機種⁠にも見られます⁠。気⁠になる場所⁠がある場合⁠は⁠、ランキング表⁠のコメント⁠で同じ状況⁠の声⁠があるかを確かめてください⁠。</p></section><section class="article-sec" id="step-tips"><h2>段差が苦手な家での対策</h2><ul class="tips"><li><strong class="em-key">段差解消スロープ⁠を置く</strong>：敷居⁠や玄関マット⁠の手前⁠に置くと⁠、越えられなかった段差⁠を越えやすくなります⁠。</li><li><strong class="em-key">アプリ⁠で進入禁止エリア⁠を設定する</strong>：家具⁠の台座など⁠、乗り上げて止まりやすい場所⁠を掃除⁠の範囲から外せます⁠。</li><li><strong class="em-key">ラグ⁠の端⁠を固定する</strong>：めくれた端⁠に乗り上げて止まるのを防げます⁠。毛足⁠の長いラグ⁠は避けるのも手⁠です⁠。</li><li><strong class="em-key">段差⁠に強い機種⁠を選ぶ</strong>：段差⁠が多い家⁠では⁠、このランキング⁠の上位⁠や⁠、公表値⁠が高い機種⁠を候補⁠にしましょう⁠。</li></ul><p class="mid-cta"><a class="btn-sub" href="#price-check">段差に強い上位機種の価格を見る ▼</a></p></section><section class="article-sec faq" id="faq"><h2>よくある質問</h2><details><summary>ロボット掃除機は何cmの段差まで越えられますか？</summary><div class="faq-a"><p>メーカー公表値⁠では20mm⁠がいちばん多く（⁠公表している35機種⁠のうち22機種⁠）⁠、40mm以上⁠を公表している機種⁠は4機種⁠です⁠。敷居⁠やラグ⁠の高さを測り⁠、それより余裕⁠のある機種⁠を選ぶと安心⁠です⁠。</p></div></details><details><summary>段差に強くて安い機種はありますか？</summary><div class="faq-a"><p>口コミ50件以上⁠で5万円以下⁠の機種⁠では⁠、Eufy Robot Vacuum Auto-Empty C10（⁠¥29,990⁠）⁠の段差評価⁠が85点⁠で最⁠も高く⁠、総合⁠でも4位⁠です⁠。</p></div></details><details><summary>公表されている段差の高さが大きければ安心ですか？</summary><div class="faq-a"><p>公表値⁠が高い機種ほど口コミ⁠の評価⁠も高い傾向⁠はありますが⁠、例外⁠もあります⁠。公表値⁠は条件⁠がそろったときの値なので⁠、口コミ⁠で同じような段差⁠の声⁠を確かめるのがおすすめです⁠。</p></div></details><details><summary>段差に強いいちばんのおすすめはどれですか？</summary><div class="faq-a"><p>口コミ⁠の件数⁠も考えると⁠、L40s Pro Ultra（⁠段差88点・口コミ107件・公表40mm・2段⁠）⁠がおすすめです⁠。</p></div></details></section><section class="article-sec" id="data"><h2>データについて</h2><p>段差⁠の点数⁠は⁠、ECサイト⁠の口コミ⁠のうち段差⁠の乗り越えに触れたものを分析して数値化した値⁠です⁠。順位⁠は「⁠段差点数×0.85＋口コミ信頼度×0.15⁠」⁠で決めています⁠。口コミ⁠が20件未満⁠の機種⁠は「⁠参考値⁠」⁠と表示していますが⁠、ランキングからは外していません⁠。</p><p>メーカー公表⁠の段差⁠は⁠、各メーカー⁠の公式サイト・取扱説明書・国内代理店⁠の仕様表⁠で確認した値⁠です⁠。公表値⁠が見つからなかった16機種⁠は「⁠公表なし⁠」⁠としています⁠。</p></section></div>
 
-
-      <section class="top-cards" aria-label="上位10製品">
+      <section class="top-cards" id="price-check" aria-label="上位10製品">
         <h2>上位10製品</h2>
         <p class="section-sub">ランキング上位の製品カードです。詳細分析ページと最新価格を確認できます。</p>
         <div class="top-cards-grid">
           
-        <article class="aff-card rank-1" data-slug="x50-ultra">
+        <article class="aff-card rank-1" id="price-x50-ultra" data-slug="x50-ultra">
           <div class="aff-card-head">
             <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/x50ultra_cp.jpg" alt="" width="56" height="56" loading="lazy">
             <div>
@@ -1968,7 +2129,7 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
             <span class="aff-card-status">価格読込中…</span>
           </div>
         </article>
-        <article class="aff-card rank-2" data-slug="saros-20">
+        <article class="aff-card rank-2" id="price-saros-20" data-slug="saros-20">
           <div class="aff-card-head">
             <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/roborockjapandirect/cabinet/products/12574614/imgrc0134813006.jpg" alt="" width="56" height="56" loading="lazy">
             <div>
@@ -1990,7 +2151,7 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
             <span class="aff-card-status">価格読込中…</span>
           </div>
         </article>
-        <article class="aff-card rank-3" data-slug="l40s-pro-ultra">
+        <article class="aff-card rank-3" id="price-l40s-pro-ultra" data-slug="l40s-pro-ultra">
           <div class="aff-card-head">
             <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/20251230173059_cp.jpg" alt="" width="56" height="56" loading="lazy">
             <div>
@@ -2012,7 +2173,7 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
             <span class="aff-card-status">価格読込中…</span>
           </div>
         </article>
-        <article class="aff-card" data-slug="eufy-robot-vacuum-auto-empty-c10">
+        <article class="aff-card" id="price-eufy-robot-vacuum-auto-empty-c10" data-slug="eufy-robot-vacuum-auto-empty-c10">
           <div class="aff-card-head">
             <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t2292/t2292_nomal.jpg" alt="" width="56" height="56" loading="lazy">
             <div>
@@ -2034,7 +2195,7 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
             <span class="aff-card-status">価格読込中…</span>
           </div>
         </article>
-        <article class="aff-card" data-slug="eufy-robot-vacuum-omni-s2">
+        <article class="aff-card" id="price-eufy-robot-vacuum-omni-s2" data-slug="eufy-robot-vacuum-omni-s2">
           <div class="aff-card-head">
             <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/deal/202608m1/imgrc0103966655.jpg" alt="" width="56" height="56" loading="lazy">
             <div>
@@ -2056,7 +2217,7 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
             <span class="aff-card-status">価格読込中…</span>
           </div>
         </article>
-        <article class="aff-card" data-slug="d20-ultra">
+        <article class="aff-card" id="price-d20-ultra" data-slug="d20-ultra">
           <div class="aff-card-head">
             <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/20250815185610_1.jpg" alt="" width="56" height="56" loading="lazy">
             <div>
@@ -2078,7 +2239,7 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
             <span class="aff-card-status">価格読込中…</span>
           </div>
         </article>
-        <article class="aff-card" data-slug="roomba-plus-575-combo-autowash">
+        <article class="aff-card" id="price-roomba-plus-575-combo-autowash" data-slug="roomba-plus-575-combo-autowash">
           <div class="aff-card-head">
             <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/03016688/20260219_review_2nen/575_aw_2nen.jpg" alt="" width="56" height="56" loading="lazy">
             <div>
@@ -2100,7 +2261,7 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
             <span class="aff-card-status">価格読込中…</span>
           </div>
         </article>
-        <article class="aff-card" data-slug="qrevo-l">
+        <article class="aff-card" id="price-qrevo-l" data-slug="qrevo-l">
           <div class="aff-card-head">
             <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/roborockjapandirect/cabinet/products/12574614/12574615/imgrc0130333896.jpg" alt="" width="56" height="56" loading="lazy">
             <div>
@@ -2122,7 +2283,7 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
             <span class="aff-card-status">価格読込中…</span>
           </div>
         </article>
-        <article class="aff-card" data-slug="deebot-t90-omni">
+        <article class="aff-card" id="price-deebot-t90-omni" data-slug="deebot-t90-omni">
           <div class="aff-card-head">
             <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/dex96-12ee.jpg" alt="" width="56" height="56" loading="lazy">
             <div>
@@ -2144,7 +2305,7 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
             <span class="aff-card-status">価格読込中…</span>
           </div>
         </article>
-        <article class="aff-card" data-slug="l10s-ultra-gen-3">
+        <article class="aff-card" id="price-l10s-ultra-gen-3" data-slug="l10s-ultra-gen-3">
           <div class="aff-card-head">
             <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/l10sultragen3_cp.jpg" alt="" width="56" height="56" loading="lazy">
             <div>
@@ -2208,6 +2369,7 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
     </div>
     <p style="margin-top:0.65rem">ナットクLabo · 更新 2026-10-23</p>
   </footer>
+  <div class="sticky-cta" id="sticky-cta" hidden><a href="#price-l40s-pro-ultra">L40s Pro Ultraの価格を見る</a><a class="sticky-sub" href="#price-check">上位の価格一覧</a></div>
   <script src="/products/js/navigation.js?v=20261005a"></script>
   <script>
 (function () {
@@ -2510,6 +2672,23 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
   }
 
   document.querySelectorAll(".aff-card[data-slug]").forEach(mountCard);
+})();
+</script><script>
+(function () {
+  var bar = document.getElementById("sticky-cta");
+  var picks = document.getElementById("picks");
+  var prices = document.getElementById("price-check");
+  if (!bar || !picks || !prices || !("IntersectionObserver" in window)) return;
+  var pastPicks = false, pricesVisible = false;
+  function update() { bar.hidden = !(pastPicks && !pricesVisible); }
+  new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) { pastPicks = !e.isIntersecting && e.boundingClientRect.top < 0; });
+    update();
+  }).observe(picks);
+  new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) { pricesVisible = e.isIntersecting; });
+    update();
+  }).observe(prices);
 })();
 </script>
 </body>
