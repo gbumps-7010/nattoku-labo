@@ -67,7 +67,15 @@ const PERF_MAPPING = [
       low: "もっと静かな機種を静音性ランキングで探す",
     },
   },
-  { keys: ["stepClimbing"], label: "段差乗り越え" },
+  {
+    keys: ["stepClimbing"],
+    label: "段差乗り越え",
+    ranking: {
+      href: "/rankings/step-climbing",
+      high: "段差ランキングでほかの機種と比べる",
+      low: "段差に強い機種を段差ランキングで探す",
+    },
+  },
   { keys: ["maintenance"], label: "メンテナンス性" },
   { keys: ["appStability"], label: "アプリ安定性" },
   { keys: ["batteryLife"], label: "バッテリー持続" },

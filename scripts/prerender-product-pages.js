@@ -796,9 +796,11 @@ function purchaseCtaCopy(data) {
 
 function injectPurchaseFlow(html, data) {
   // 挿入した分（"\n        START … END\n"）だけを取り除き、周りの改行は元のまま残す
-  const existing = new RegExp(`\\n[ \\t]*${FLOW_START}[\\s\\S]*?${FLOW_END}\\n`);
+  // （Windows の CRLF でチェックアウトされたファイルでも一致するよう \r を許す）
+  const existing = new RegExp(`\\r?\\n[ \\t]*${FLOW_START}[\\s\\S]*?${FLOW_END}\\r?\\n`);
   html = html.replace(existing, "");
-  if (!(PURCHASE_FLOW.pilot || []).includes(data.productId)) return html;
+  // all: true なら全製品、そうでなければ pilot に入れた製品だけ
+  if (!PURCHASE_FLOW.all && !(PURCHASE_FLOW.pilot || []).includes(data.productId)) return html;
   const block =
     `\n        ${FLOW_START}` +
     buildPurchaseCtaHtml(purchaseCtaCopy(data)) +

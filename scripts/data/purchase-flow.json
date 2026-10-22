@@ -1,5 +1,6 @@
 {
-  "_note": "製品ページの「不満点と対策」直後の購入ブロックと比較候補の設定。pilot に入れた製品だけに出す。siblings は同シリーズの組（比較候補①）。ecNotOfficial は楽天のかんたんリンク先が正規販売店でない製品（故障の文言を出さない）。",
+  "_note": "製品ページの「不満点と対策」直後の購入ブロックと比較候補の設定。all が true なら全製品、false なら pilot に入れた製品だけに出す。siblings は同シリーズの組（比較候補①）。ecNotOfficial は楽天のかんたんリンク先が正規販売店でない製品（故障の文言を出さない）。",
+  "all": true,
   "pilot": ["q10v", "q10v-plus", "l40s-pro-ultra"],
   "siblings": [
     ["deebot-t50-omni", "deebot-t50s-omni"],
@@ -14,7 +15,7 @@
     ["roomba-max-705-combo-autowash", "roomba-max-705-vac-autoempty"],
     ["roomba-plus-405-combo-autowash", "roomba-plus-505-combo-autowash"]
   ],
-  "ecNotOfficial": ["q10v", "q10v-plus"],
+  "ecNotOfficial": ["q10v", "q10v-plus", "qrevo-curv-2-flow", "roomba-max-705-combo-autowash", "k10-pro"],
   "minReviewsForCandidate": 20,
   "priceWindow": 0.3
 }

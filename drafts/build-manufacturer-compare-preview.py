@@ -1375,6 +1375,18 @@ def build_manufacturer_page(meta: dict) -> Path:
         )
         page_h1 = "【全機種比較】エコバックス DEEBOT ロボット掃除機｜口コミでわかる選び方"
         og_title = page_title
+    elif slug in ("irobot", "anker"):
+        # 検索される表記に合わせる（ルンバ 比較・おすすめ／アンカー・eufy ロボット掃除機）
+        page_h1 = {
+            "irobot": "ルンバ全機種を比較｜おすすめ・種類の違いと口コミ評判",
+            "anker": "アンカー（Eufy）ロボット掃除機の全機種比較｜口コミ・評判とおすすめ",
+        }[slug]
+        page_title = f"{page_h1}｜ナットクLabo"
+        page_desc = (
+            f"{brand_full}のロボット掃除機{len(rows)}製品を口コミ分析データで横断比較。"
+            "価格帯・機能・暮らし方別のおすすめも掲載します。"
+        )
+        og_title = page_h1
     else:
         page_title = (
             f"【全機種比較】{brand_ja}ロボット掃除機｜口コミでわかるおすすめの選び方｜ナットクLabo"
