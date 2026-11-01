@@ -1587,6 +1587,19 @@ def build_small(rows: list[dict]) -> dict | None:
     apt_best = max(apt, key=lambda r: (r["apartment"], r["overall"])) if apt else None
     st_rows = [r for r in compact if r.get("station")]
     thr_cm = cm(thr)
+    # ステーションの床の広さ（幅×奥行）。高さ15cm以下は充電台だけの機種として扱う
+    st_floor = [r for r in st_rows if r["station"].get("w") and r["station"].get("d")]
+    for r in st_floor:
+        r["st_area"] = r["station"]["w"] * r["station"]["d"]
+        r["st_kind"] = "充電台のみ" if r["station"]["h"] <= 150 else "ゴミ収集などのステーション"
+    st_floor.sort(key=lambda r: (r["st_area"], r["station"]["h"]))
+    st_rel = reliable(st_floor)
+    st_min_any = st_rel[0] if st_rel else None
+    st_min_dock = next((r for r in st_rel if r["st_kind"] != "充電台のみ"), None)
+
+    def st_txt(r: dict) -> str:
+        s = r["station"]
+        return f"{_cm_num(s['w'])}×{_cm_num(s['d'])}×{_cm_num(s['h'])}cm"
 
     bins = [
         ("30cm以下", lambda f: f <= 300),
@@ -1628,8 +1641,38 @@ def build_small(rows: list[dict]) -> dict | None:
         )
         if r.get("apartment") is not None and r["apartment"] >= 85:
             lead += f"マンション・集合住宅との相性を示す適合度も{r['apartment']:.0f}点と高めです。"
+        if r.get("station") and r.get("st_kind"):
+            lead += (
+                f"{'充電台' if r['st_kind'] == '充電台のみ' else 'ステーション'}は幅×奥行×高さ{st_txt(r)}で、"
+                f"本記事の{len(st_floor)}機種のなかで置き場所が{ordinal(st_floor.index(r) + 1)}小さい機種です。"
+            )
         lead += pick_lead_tail(r)
-        cards.append(pick_card(f"pick-{i}", f"{i}位：{r['name']}（幅{cm(r['foot'])}）", lead, r, size_chips(r)))
+        st_chip = [f"ステーション {st_txt(r)}"] if r.get("st_kind") else []
+        cards.append(pick_card(f"pick-{i}", f"{i}位：{r['name']}（幅{cm(r['foot'])}）", lead, r, size_chips(r) + st_chip))
+
+    sec_station = []
+    if st_floor:
+        sec_station.append(P(
+            "本体が小さくても、**充電台やゴミ収集ステーションの置き場所**が必要です。"
+            "狭い部屋では、ステーションの幅と奥行が家具の配置に響くので、本体とあわせて確認しましょう。"
+            f"本記事の{len(st_floor)}機種では、ステーションの床の広さ（幅×奥行）は"
+            f"{_cm_num(st_floor[0]['station']['w'])}×{_cm_num(st_floor[0]['station']['d'])}cmから"
+            f"{_cm_num(st_floor[-1]['station']['w'])}×{_cm_num(st_floor[-1]['station']['d'])}cmまで差があります。"
+        ))
+        sec_station.append(mini_table(
+            ["製品", "ステーション（幅×奥行×高さ）", "種類", "本体の幅×奥行", "総合点"],
+            [[f'<a href="/products/{html.escape(r["id"])}">{html.escape(r["name"])}</a>', st_txt(r), r["st_kind"], wd(r), f"{r['overall']:.1f}"] for r in st_floor],
+        ))
+        picks_st = []
+        if st_min_any:
+            picks_st.append(f"**置き場所を最小にするなら{plink(st_min_any)}**：{st_min_any['st_kind']}で{st_txt(st_min_any)}です。")
+        if st_min_dock and st_min_dock is not st_min_any:
+            picks_st.append(f"**ゴミ収集つきで最もコンパクトなのは{plink(st_min_dock)}**：ステーションが{st_txt(st_min_dock)}です。")
+        if picks_st:
+            sec_station.append(P(f"口コミ{MIN_REVIEWS}件以上の機種のうち、" + "".join(picks_st)))
+        sec_station.append(P(
+            "ステーションの前や左右には、本体が出入りするための空きスペースも必要です。必要な広さは機種ごとに違うので、**取扱説明書の設置条件**も確認してください。"
+        ))
 
     table = data_table(
         [
@@ -1675,6 +1718,14 @@ def build_small(rows: list[dict]) -> dict | None:
             f"家具の下に入るかは**幅ではなく高さで決まります**。{gl('robot-vacuum-thin')}や{gl('robot-vacuum-height')}で確認してください。",
         ),
     ]
+    if st_floor:
+        faqs.insert(3, (
+            "ステーションを置くにはどれくらいの場所が必要ですか？",
+            f"本記事の{len(st_floor)}機種では、ステーションの幅×奥行は{_cm_num(st_floor[0]['station']['w'])}×{_cm_num(st_floor[0]['station']['d'])}cm"
+            f"〜{_cm_num(st_floor[-1]['station']['w'])}×{_cm_num(st_floor[-1]['station']['d'])}cmです。"
+            + (f"置き場所を最も小さくできるのは{plink(st_min_any)}（{st_min_any['st_kind']}）です。" if st_min_any else "")
+            + "ステーションの前や左右にも空きスペースが必要なので、**取扱説明書の設置条件**もあわせて確認してください。",
+        ))
 
     summary = f"""
         <div class="summary-box">
@@ -1687,7 +1738,7 @@ def build_small(rows: list[dict]) -> dict | None:
 
     return {
         "slug": "robot-vacuum-small",
-        "crumb": "小さいロボット掃除機",
+        "crumb": "小型ロボット掃除機",
         "title": f"小型ロボット掃除機のおすすめ{len(picks)}選｜一人暮らし・狭い部屋向けを口コミで比較【{YEAR}年】",
         "h1": "小型ロボット掃除機のおすすめ｜一人暮らし・狭い部屋向けを本体サイズで比較",
         "description": (
@@ -1703,6 +1754,7 @@ def build_small(rows: list[dict]) -> dict | None:
             ("「小さい」の目安になるサイズ", f"掲載{len(sized)}機種の本体サイズの分布から、コンパクトの基準を示します。"),
             ("小さい機種のメリットと注意点", "すき間に入れる良さと、バッテリーなど気をつけたい点を口コミから確認します。"),
             ("小さいロボット掃除機のおすすめ", "総合点と口コミ信頼度で、失敗しにくい機種を選びました。"),
+            ("ステーションの置き場所", "充電台・ステーションの大きさを比べ、狭い部屋に置きやすい機種を紹介します。"),
         ],
         "conclusion": conclusion,
         "intro": [
@@ -1716,6 +1768,7 @@ def build_small(rows: list[dict]) -> dict | None:
             ("picks", f"小さいロボット掃除機のおすすめ{len(picks)}選", P(
                 f"本体{thr_cm}以下・口コミ{MIN_REVIEWS}件以上の機種を、総合点の高い順に紹介します。"
             ) + f'<div class="articles">{"".join(cards)}</div>'),
+            *([("station", "ステーション込みの置き場所", "".join(sec_station))] if sec_station else []),
             ("table", "小さいロボット掃除機のサイズ比較表", P(
                 f"本体{thr_cm}以下の{len(compact)}機種を、小さい順に並べました。"
             ) + table),

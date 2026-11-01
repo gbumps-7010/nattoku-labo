@@ -1045,7 +1045,21 @@ ul.tips li::before { content: "✓"; position: absolute; left: 0; color: var(--p
 .faq summary { cursor: pointer; font-weight: 800; color: #0f172a; font-size: 0.95rem; }
 .faq .faq-a { margin-top: 0.45rem; }
 .aff-card { scroll-margin-top: 130px; }
-.picks, .article-sec, .top-cards { scroll-margin-top: 120px; }
+.picks, .article-sec, .top-cards, .table-wrap { scroll-margin-top: 120px; }
+.picks-note { font-size: 0.82rem; color: #475569; margin-top: 0.75rem; line-height: 1.7; }
+.picks-jump { margin-top: 0.75rem; text-align: center; }
+.picks-jump .btn-sub { display: inline-block; padding: 0.6rem 1.4rem; }
+@media (max-width: 768px) {
+  /* スマホでは結論を1台1行に近い簡単な表示にして、表までの距離を縮める */
+  .picks-grid { gap: 0.55rem; }
+  .pick-card { padding: 0.75rem 0.8rem; gap: 0.35rem; }
+  .pick-card > p, .pick-meta, .pick-stats li:nth-child(3) { display: none; }
+  .pick-head img, .pick-head .img-ph { width: 44px; height: 44px; }
+  .pick-head h3 { font-size: 0.95rem; }
+  .pick-stats { font-size: 0.8rem; }
+  .pick-actions { grid-template-columns: 1fr 1fr; gap: 0.4rem; }
+  .btn-primary, .btn-sub { padding: 0.55rem 0.4rem; font-size: 0.82rem; }
+}
 .sticky-cta { display: none; }
 @media (max-width: 768px) {
   .sticky-cta:not([hidden]) {
@@ -1295,7 +1309,15 @@ def step_picks(products: list[dict]) -> list[tuple[str, dict]]:
 
 def build_step_picks(products: list[dict]) -> str:
     cards = []
-    for label, r in step_picks(products):
+    picks = step_picks(products)
+    top = products[0] if products else None
+    note = ""
+    if top and picks and picks[0][1]["id"] != top["id"]:
+        note = (
+            f"ランキング表の1位は{top['name']}（段差{top['feature']:.0f}点）ですが、口コミが{top['reviews']:,}件と少ないため、"
+            f"ここでは口コミ{PICK_MIN_REVIEWS}件以上の機種を先に挙げています。"
+        )
+    for label, r in picks:
         url = f"/products/{r['id']}"
         img = (
             f'<img src="{html.escape(r["imageUrl"])}" alt="" width="64" height="64" loading="lazy">'
@@ -1328,6 +1350,8 @@ def build_step_picks(products: list[dict]) -> str:
         <h2>結論：段差で選ぶならこの3台</h2>
         {p_tag("ランキングの順位に加えて、口コミの件数と予算も考えて選んだ3台です。点数はランキング表と同じ値です。", "section-sub")}
         <div class="picks-grid">{"".join(cards)}</div>
+        {p_tag(note, "picks-note") if note else ""}
+        <p class="picks-jump"><a class="btn-sub" href="#ranking">全機種ランキングを見る ▼</a></p>
       </section>"""
 
 
@@ -1566,6 +1590,17 @@ def write_ranking_page(cfg: dict, products: list[dict]) -> Path:
             )
             sticky_js = f"<script>{STICKY_JS}</script>"
         article_css = ARTICLE_CSS
+    method_html = f"""
+      <section class="method">
+        <h2>このランキングの見方</h2>
+        <p>{format_prose(cfg["method_body"])}</p>
+        <p class="method-sub">
+          ランキングの式：<code>{html.escape(cfg["formula_label"])} × 0.85 ＋ 口コミ信頼度 × 0.15</code>
+        </p>
+      </section>
+"""
+    # 記事付きのページは結論を最初に置き、見方は表のあとへ回す
+    method_top, method_after = ("", method_html) if picks_html else (method_html, "")
     page = f"""<!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -1618,14 +1653,7 @@ def write_ranking_page(cfg: dict, products: list[dict]) -> Path:
 
   <main>
     <div class="wrap">
-      <section class="method">
-        <h2>このランキングの見方</h2>
-        <p>{format_prose(cfg["method_body"])}</p>
-        <p class="method-sub">
-          ランキングの式：<code>{html.escape(cfg["formula_label"])} × 0.85 ＋ 口コミ信頼度 × 0.15</code>
-        </p>
-      </section>
-{picks_html}
+{method_top}{picks_html}
       <section class="filters" aria-label="価格帯で絞り込み">
         <div class="filters-label">価格帯で絞り込み</div>
         <div class="filter-chips" role="group">
@@ -1640,7 +1668,7 @@ def write_ranking_page(cfg: dict, products: list[dict]) -> Path:
         <p class="filter-meta"><span id="filter-count">{count}</span>製品を表示中（順位は全体順位のまま）</p>
       </section>
 
-      <section class="table-wrap">
+      <section class="table-wrap" id="ranking">
         <div class="table-head">
           <h2>全機種ランキング</h2>
           <span>{html.escape(cfg["table_note"])}</span>
@@ -1675,7 +1703,7 @@ def write_ranking_page(cfg: dict, products: list[dict]) -> Path:
         </div>
         <p class="empty-msg" id="empty-msg">この価格帯に該当する製品はありません。</p>
       </section>
-{article_html}
+{method_after}{article_html}
 {build_top_cards(products, cfg["score_col"], extra_cards)}
 
       <div class="notes">

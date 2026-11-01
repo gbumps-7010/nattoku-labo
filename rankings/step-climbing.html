@@ -578,7 +578,21 @@ ul.tips li::before { content: "✓"; position: absolute; left: 0; color: var(--p
 .faq summary { cursor: pointer; font-weight: 800; color: #0f172a; font-size: 0.95rem; }
 .faq .faq-a { margin-top: 0.45rem; }
 .aff-card { scroll-margin-top: 130px; }
-.picks, .article-sec, .top-cards { scroll-margin-top: 120px; }
+.picks, .article-sec, .top-cards, .table-wrap { scroll-margin-top: 120px; }
+.picks-note { font-size: 0.82rem; color: #475569; margin-top: 0.75rem; line-height: 1.7; }
+.picks-jump { margin-top: 0.75rem; text-align: center; }
+.picks-jump .btn-sub { display: inline-block; padding: 0.6rem 1.4rem; }
+@media (max-width: 768px) {
+  /* スマホでは結論を1台1行に近い簡単な表示にして、表までの距離を縮める */
+  .picks-grid { gap: 0.55rem; }
+  .pick-card { padding: 0.75rem 0.8rem; gap: 0.35rem; }
+  .pick-card > p, .pick-meta, .pick-stats li:nth-child(3) { display: none; }
+  .pick-head img, .pick-head .img-ph { width: 44px; height: 44px; }
+  .pick-head h3 { font-size: 0.95rem; }
+  .pick-stats { font-size: 0.8rem; }
+  .pick-actions { grid-template-columns: 1fr 1fr; gap: 0.4rem; }
+  .btn-primary, .btn-sub { padding: 0.55rem 0.4rem; font-size: 0.82rem; }
+}
 .sticky-cta { display: none; }
 @media (max-width: 768px) {
   .sticky-cta:not([hidden]) {
@@ -854,13 +868,6 @@ ul.tips li::before { content: "✓"; position: absolute; left: 0; color: var(--p
 
   <main>
     <div class="wrap">
-      <section class="method">
-        <h2>このランキングの見方</h2>
-        <p>「⁠敷居⁠を問題なく越える⁠」「⁠ラグ⁠の端⁠で止まる⁠」⁠といった口コミ⁠を点数化し⁠、段差⁠の乗り越えの得意さで並べています⁠。口コミ⁠の信頼度⁠を適切⁠に加味するので⁠、実体験⁠に近いおすすめ順⁠になっています⁠。メーカー⁠が公表する乗り越えられる段差⁠の高さとは別⁠の⁠、使った人⁠の声⁠にもとづく評価⁠です⁠。</p>
-        <p class="method-sub">
-          ランキングの式：<code>段差点数 × 0.85 ＋ 口コミ信頼度 × 0.15</code>
-        </p>
-      </section>
 
       <section class="picks" id="picks" aria-label="段差で選ぶならこの3台">
         <h2>結論：段差で選ぶならこの3台</h2>
@@ -926,6 +933,8 @@ ul.tips li::before { content: "✓"; position: absolute; left: 0; color: var(--p
               <a class="btn-sub" href="#price-x50-ultra">最新価格を見る ▼</a>
             </div>
           </article></div>
+        <p class="picks-note">ランキング表⁠の1位⁠はX50 Ultra（⁠段差97点⁠）⁠ですが⁠、口コミ⁠が17件⁠と少ないため⁠、ここでは口コミ50件以上⁠の機種⁠を先⁠に挙げています⁠。</p>
+        <p class="picks-jump"><a class="btn-sub" href="#ranking">全機種ランキングを見る ▼</a></p>
       </section>
       <section class="filters" aria-label="価格帯で絞り込み">
         <div class="filters-label">価格帯で絞り込み</div>
@@ -941,7 +950,7 @@ ul.tips li::before { content: "✓"; position: absolute; left: 0; color: var(--p
         <p class="filter-meta"><span id="filter-count">51</span>製品を表示中（順位は全体順位のまま）</p>
       </section>
 
-      <section class="table-wrap">
+      <section class="table-wrap" id="ranking">
         <div class="table-head">
           <h2>全機種ランキング</h2>
           <span>各製品に段差の乗り越えの口コミコメント付き</span>
@@ -2098,6 +2107,14 @@ ul.tips li::before { content: "✓"; position: absolute; left: 0; color: var(--p
         </div>
         <p class="empty-msg" id="empty-msg">この価格帯に該当する製品はありません。</p>
       </section>
+
+      <section class="method">
+        <h2>このランキングの見方</h2>
+        <p>「⁠敷居⁠を問題なく越える⁠」「⁠ラグ⁠の端⁠で止まる⁠」⁠といった口コミ⁠を点数化し⁠、段差⁠の乗り越えの得意さで並べています⁠。口コミ⁠の信頼度⁠を適切⁠に加味するので⁠、実体験⁠に近いおすすめ順⁠になっています⁠。メーカー⁠が公表する乗り越えられる段差⁠の高さとは別⁠の⁠、使った人⁠の声⁠にもとづく評価⁠です⁠。</p>
+        <p class="method-sub">
+          ランキングの式：<code>段差点数 × 0.85 ＋ 口コミ信頼度 × 0.15</code>
+        </p>
+      </section>
 <div class="article"><section class="article-sec" id="step-guide"><h2>家の段差の目安と、必要な乗り越え性能</h2><p>ロボット掃除機⁠が止まりやすいのは⁠、部屋⁠の境目⁠の<strong class="em-key">敷居</strong>⁠、<strong class="em-key">ラグ⁠やカーペット⁠の端</strong>⁠、<strong class="em-key">家具⁠の脚⁠や台座</strong>⁠です⁠。高さは家ごとに違うので⁠、まず掃除させたい場所⁠の段差⁠を実際⁠に測り⁠、その高さを越えられる機種⁠を選ぶのが確実⁠です⁠。</p><p>メーカー⁠が「⁠乗り越えられる段差⁠」⁠を公表しているのは掲載51機種⁠のうち35機種⁠で⁠、いちばん多いのは<strong class="em-key">20mm</strong>（⁠22機種⁠）⁠です⁠。40mm以上⁠を公表しているのは4機種⁠で⁠、X50 Ultra・Saros 20・L40s Pro Ultra・Saros 10R⁠は2段⁠になった段差⁠の合計値（⁠2段⁠）⁠として公表しています⁠。</p><div class="table-scroll"><table class="mini">
           <thead><tr><th>メーカー公表の段差</th><th>機種数</th><th>口コミの段差評価（平均）</th><th>主な機種</th></tr></thead>
           <tbody><tr><td>20mm未満</td><td class="num">4機種</td><td class="num">67.5点</td><td>Eufy Robot Vacuum Auto-Empty C10、Eufy RoboVac G30 Hybrid、DEEBOT mini ほか</td></tr><tr><td>20mm</td><td class="num">22機種</td><td class="num">68.3点</td><td>D10 Plus、マルチタスク家庭用ロボットK20+ Pro、L10s Ultra Gen 3 ほか</td></tr><tr><td>21〜39mm</td><td class="num">5機種</td><td class="num">77.8点</td><td>Eufy Robot Vacuum Omni S2、Roomba Plus 575 Combo + AutoWash、DEEBOT T90 OMNI ほか</td></tr><tr><td>40mm以上</td><td class="num">4機種</td><td class="num">87.2点</td><td>X50 Ultra、Saros 20、L40s Pro Ultra ほか</td></tr></tbody></table></div></section><section class="article-sec" id="step-spec"><h2>メーカー公表値と口コミ評価のちがい</h2><p>公表値⁠が高い機種ほど⁠、口コミ⁠の段差評価⁠も高い傾向⁠があります⁠。公表20mm⁠の機種⁠は平均68.3点⁠、40mm以上⁠の機種⁠は平均87.2点⁠でした（⁠全機種⁠の平均⁠は71.8点⁠）⁠。</p><p>ただし例外⁠もあります⁠。<a href="/products/eufy-robot-vacuum-auto-empty-c10">Eufy Robot Vacuum Auto-Empty C10</a>⁠は公表17mm⁠ですが⁠、口コミ⁠の段差評価⁠は85点⁠と高めです（⁠口コミ225件⁠）⁠。反対⁠に<a href="/products/eufy-robot-vacuum-omni-e25">Eufy Robot Vacuum Omni E25</a>⁠は公表21mm⁠でも⁠、口コミ⁠では70点⁠にとどまっています（⁠口コミ193件⁠）⁠。同じように<a href="/products/saros-10r">Saros 10R</a>⁠は公表40mm・2段⁠でも⁠、口コミ⁠では72点⁠にとどまっています（⁠口コミ147件⁠）⁠。公表値⁠は「⁠条件⁠がそろえば越えられる高さ⁠」なので⁠、段差⁠の形⁠や素材⁠によって結果⁠が変わります⁠。<strong class="em-key">公表値⁠と口コミ⁠の両方</strong>⁠を見て選ぶのがおすすめです⁠。</p></section><section class="article-sec" id="step-voices"><h2>口コミで多い段差の声</h2><p>各機種⁠の段差⁠に関する口コミ⁠をまとめたコメント⁠で⁠、よく出てくる場所⁠は「⁠敷居⁠」（⁠25機種⁠）⁠、「⁠ラグ・カーペット⁠の端⁠」（⁠24機種⁠）⁠、「⁠家具⁠の脚・台座⁠」（⁠18機種⁠）⁠、「⁠玄関・落下⁠」（⁠17機種⁠）⁠、「⁠乗り上げて動けなくなる⁠」（⁠16機種⁠）⁠です⁠。敷居⁠やラグ⁠の端⁠は越えられても⁠、<strong class="em-key">家具⁠の脚⁠や台座⁠に乗り上げて止まる</strong>⁠という声⁠は評価⁠の高い機種⁠にも見られます⁠。気⁠になる場所⁠がある場合⁠は⁠、ランキング表⁠のコメント⁠で同じ状況⁠の声⁠があるかを確かめてください⁠。</p></section><section class="article-sec" id="step-tips"><h2>段差が苦手な家での対策</h2><ul class="tips"><li><strong class="em-key">段差解消スロープ⁠を置く</strong>：敷居⁠や玄関マット⁠の手前⁠に置くと⁠、越えられなかった段差⁠を越えやすくなります⁠。</li><li><strong class="em-key">アプリ⁠で進入禁止エリア⁠を設定する</strong>：家具⁠の台座など⁠、乗り上げて止まりやすい場所⁠を掃除⁠の範囲から外せます⁠。</li><li><strong class="em-key">ラグ⁠の端⁠を固定する</strong>：めくれた端⁠に乗り上げて止まるのを防げます⁠。毛足⁠の長いラグ⁠は避けるのも手⁠です⁠。</li><li><strong class="em-key">段差⁠に強い機種⁠を選ぶ</strong>：段差⁠が多い家⁠では⁠、このランキング⁠の上位⁠や⁠、公表値⁠が高い機種⁠を候補⁠にしましょう⁠。</li></ul><p class="mid-cta"><a class="btn-sub" href="#price-check">段差に強い上位機種の価格を見る ▼</a></p></section><section class="article-sec faq" id="faq"><h2>よくある質問</h2><details><summary>ロボット掃除機は何cmの段差まで越えられますか？</summary><div class="faq-a"><p>メーカー公表値⁠では20mm⁠がいちばん多く（⁠公表している35機種⁠のうち22機種⁠）⁠、40mm以上⁠を公表している機種⁠は4機種⁠です⁠。敷居⁠やラグ⁠の高さを測り⁠、それより余裕⁠のある機種⁠を選ぶと安心⁠です⁠。</p></div></details><details><summary>段差に強くて安い機種はありますか？</summary><div class="faq-a"><p>口コミ50件以上⁠で5万円以下⁠の機種⁠では⁠、Eufy Robot Vacuum Auto-Empty C10（⁠¥29,990⁠）⁠の段差評価⁠が85点⁠で最⁠も高く⁠、総合⁠でも4位⁠です⁠。</p></div></details><details><summary>公表されている段差の高さが大きければ安心ですか？</summary><div class="faq-a"><p>公表値⁠が高い機種ほど口コミ⁠の評価⁠も高い傾向⁠はありますが⁠、例外⁠もあります⁠。公表値⁠は条件⁠がそろったときの値なので⁠、口コミ⁠で同じような段差⁠の声⁠を確かめるのがおすすめです⁠。</p></div></details><details><summary>段差に強いいちばんのおすすめはどれですか？</summary><div class="faq-a"><p>口コミ⁠の件数⁠も考えると⁠、L40s Pro Ultra（⁠段差88点・口コミ107件・公表40mm・2段⁠）⁠がおすすめです⁠。</p></div></details></section><section class="article-sec" id="data"><h2>データについて</h2><p>段差⁠の点数⁠は⁠、ECサイト⁠の口コミ⁠のうち段差⁠の乗り越えに触れたものを分析して数値化した値⁠です⁠。順位⁠は「⁠段差点数×0.85＋口コミ信頼度×0.15⁠」⁠で決めています⁠。口コミ⁠が20件未満⁠の機種⁠は「⁠参考値⁠」⁠と表示していますが⁠、ランキングからは外していません⁠。</p><p>メーカー公表⁠の段差⁠は⁠、各メーカー⁠の公式サイト・取扱説明書・国内代理店⁠の仕様表⁠で確認した値⁠です⁠。公表値⁠が見つからなかった16機種⁠は「⁠公表なし⁠」⁠としています⁠。</p></section></div>
@@ -2367,7 +2384,7 @@ ul.tips li::before { content: "✓"; position: absolute; left: 0; color: var(--p
       <a href="/compare/">徹底比較</a>
       <a href="/about">サイトについて</a>
     </div>
-    <p style="margin-top:0.65rem">ナットクLabo · 更新 2026-10-23</p>
+    <p style="margin-top:0.65rem">ナットクLabo · 更新 2026-11-01</p>
   </footer>
   <div class="sticky-cta" id="sticky-cta" hidden><a href="#price-l40s-pro-ultra">L40s Pro Ultraの価格を見る</a><a class="sticky-sub" href="#price-check">上位の価格一覧</a></div>
   <script src="/products/js/navigation.js?v=20261005a"></script>
