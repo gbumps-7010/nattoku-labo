@@ -13,9 +13,10 @@
     ["k11", "k11-pro"],
     ["roomba-mini-autoempty", "roomba-mini-slim-slimcharge"],
     ["roomba-max-705-combo-autowash", "roomba-max-705-vac-autoempty"],
-    ["roomba-plus-405-combo-autowash", "roomba-plus-505-combo-autowash"]
+    ["roomba-plus-405-combo-autowash", "roomba-plus-505-combo-autowash"],
+    ["d20-pro", "d20-pro-plus"]
   ],
-  "ecNotOfficial": ["q10v", "q10v-plus", "qrevo-curv-2-flow", "roomba-max-705-combo-autowash", "k10-pro"],
+  "ecNotOfficial": ["q10v", "q10v-plus", "qrevo-curv-2-flow", "roomba-max-705-combo-autowash", "k10-pro", "l40-ultra-ce", "e5", "q7-max"],
   "minReviewsForCandidate": 20,
   "priceWindow": 0.3
 }

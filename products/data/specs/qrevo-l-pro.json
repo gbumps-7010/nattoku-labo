@@ -1,0 +1,53 @@
+{
+  "productId": "qrevo-l-pro",
+  "modelNumber": null,
+  "checkedAt": "2026-11-03",
+  "sources": [
+    { "label": "Roborock公式 製品ページ", "url": "https://jp.roborock.com/pages/roborock-qrevo-l-pro" },
+    { "label": "Roborock公式 プレスリリース（2026年4月28日）", "url": "https://digitalpr.jp/r/134023" }
+  ],
+  "basic": {
+    "dimensionsMm": { "w": 350, "d": 353, "h": 96.5 },
+    "weightKg": null,
+    "runtimeMin": null,
+    "chargeTimeMin": null,
+    "batteryMah": null,
+    "releaseDate": "2026-04",
+    "warrantyMonths": null
+  },
+  "cleaning": {
+    "suctionPa": 18500,
+    "dustboxMl": null,
+    "waterTankMl": null,
+    "mappingType": "LDSレーザー（PreciSense LiDAR）",
+    "obstacleAvoidance": "Reactive Tech ストラクチャードライト（幅5cm・高さ3cm以上）",
+    "climbHeightMm": null,
+    "climbNote": null,
+    "noiseDb": null
+  },
+  "mop": {
+    "type": "昇降式デュアル回転モップ（最大200回転/分・水量30段階）",
+    "liftMm": 10,
+    "autoDetach": false
+  },
+  "station": {
+    "autoEmpty": true,
+    "mopWash": true,
+    "hotWaterWash": true,
+    "hotWaterNote": "最大75℃（内部ヒーター出力温度）／45℃温風乾燥",
+    "hotAirDry": true,
+    "autoRefillDrain": false,
+    "detergentDispenser": false,
+    "dustBagMl": null,
+    "cleanTankMl": null,
+    "dirtyTankMl": null,
+    "dimensionsMm": { "w": 340, "d": 487, "h": 519 },
+    "weightKg": null
+  },
+  "smart": {
+    "app": "Roborock",
+    "wifi": null,
+    "voiceAssistants": ["Alexa", "Googleアシスタント", "Siri"],
+    "matter": true
+  }
+}

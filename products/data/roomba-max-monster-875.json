@@ -1,0 +1,319 @@
+{
+  "productId": "roomba-max-monster-875",
+  "productName": "Roomba Max Monster 875",
+  "manufacturer": "iRobot",
+  "modelNumber": "Monster 875",
+  "imageUrl": "https://thumbnail.image.rakuten.co.jp/@0_mall/yamada-denki/cabinet/a07000655/1387213014.jpg",
+  "overallRating": 4.31,
+  "totalReviews": 1,
+  "price": 249800,
+  "reliabilityScore": 52.6,
+  "asin": "",
+  "metaTitle": "Roomba Max Monster 875 詳細分析 | 最高の満足度と簡単な初期設定",
+  "metaDescription": "Roomba Max Monster 875の1件の口コミを解析。「床がサラサラになる」という吸引力や、アプリの使いやすさの真実を公開します。",
+  "keywords": [
+    "Roomba Max Monster 875",
+    "ルンバ",
+    "ロボット掃除機",
+    "iRobot",
+    "ペット",
+    "アレルギー"
+  ],
+  "categoryC": {
+    "userSatisfaction": {
+      "score": 98,
+      "reviewCount": 1,
+      "comment": "唯一のレビューでは「満足度が今までの物とは比べものになりません」と最高レベルの評価がされており、ユーザーの期待を大きく上回る性能を持つことが示唆されています。"
+    },
+    "repurchaseIntention": {
+      "score": 95,
+      "reviewCount": 1,
+      "comment": "「高いだけあり満足度が高い」との声から、価格に見合った価値を実感しており、同メーカーの製品を再度購入する可能性は非常に高いと推測されます。長期的な信頼が伺えます。"
+    },
+    "failureRate": {
+      "percentage": 0,
+      "reviewCount": 1,
+      "breakdown": {
+        "hardware": 0,
+        "software": 0,
+        "environmental": 0
+      },
+      "comment": "提供された口コミ内では、初期不良や故障に関する報告は一切ありませんでした。アプリ設定もスムーズに行えており、ソフトウェアの安定性も高いことが期待されます。"
+    }
+  },
+  "reliability": {
+    "score": 52.6,
+    "dataAdequacy": {
+      "score": 40,
+      "weight": 60,
+      "description": "口コミ件数が1件と非常に少なく、製品の全体像を把握するには情報が不足しています。多様な意見を収集し、より客観的な評価を行う必要があります。"
+    },
+    "consistency": {
+      "score": 62,
+      "weight": 30,
+      "description": "分析対象の口コミサイトが1つのみであるため、サイト間の評価のばらつきは測定不能です。そのため、意見の一貫性に関するスコアは参考値となります。",
+      "percentage": 62
+    },
+    "freshness": {
+      "score": 100,
+      "weight": 10,
+      "description": "口コミは過去30日以内に投稿されており、鮮度は非常に高いです。製品の最新の性能やソフトウェアに関する情報として、信頼性が高いと言えます。"
+    }
+  },
+  "updateInfo": {
+    "lastUpdated": "2026-10-26",
+    "firmwareVersion": "",
+    "note": "2026年10月下旬の口コミでは、簡単な初期設定と高い清掃能力が評価されています。ソフトウェアの安定性と基本的な性能は高いレベルにあると推測されます。"
+  },
+  "timeSaving": {
+    "vacuumMinutes": 10,
+    "mopMinutes": 9,
+    "dailyMinutes": 19,
+    "monthlyHours": 9.5,
+    "annualHours": 115.6,
+    "workDaysEquivalent": 14.4
+  },
+  "performanceAnalysis": {
+    "floorCleaning": {
+      "score": 99,
+      "reviewCount": 1,
+      "positiveReviewCount": 1,
+      "comment": "「毎日床がサラサラです」との口コミがあり、フローリングの清掃能力は最高レベルと評価できます。微細なホコリや髪の毛までしっかり吸引する性能が期待されます。"
+    },
+    "carpetCleaning": {
+      "score": 80,
+      "reviewCount": 0,
+      "positiveReviewCount": 0,
+      "comment": "カーペット清掃に関する口コミはありませんでした。しかし、最上位モデルであることから、カーペットの繊維の奥からゴミをかき出す強力な吸引力が期待されます。"
+    },
+    "petHairRemoval": {
+      "score": 85,
+      "reviewCount": 0,
+      "positiveReviewCount": 0,
+      "comment": "ペットの毛に関する言及はありませんでした。ただし、強力な吸引力を持つモデルのため、カーペットや床に絡みついたペットの毛も効率的に除去できると推測されます。"
+    },
+    "quietness": {
+      "score": 80,
+      "reviewCount": 0,
+      "positiveReviewCount": 0,
+      "comment": "動作音に関する口コミはありませんでした。最上位モデルとして静音性にも配慮されていると期待されますが、強力な吸引力のため、ある程度の動作音は想定すべきです。"
+    },
+    "stepClimbing": {
+      "score": 78,
+      "reviewCount": 0,
+      "positiveReviewCount": 0,
+      "comment": "段差乗り越え性能に関する口コミはありませんでした。一般的なラグや部屋の敷居（2cm程度）は問題なく乗り越えられる設計になっていると推測されます。"
+    },
+    "maintenance": {
+      "score": 88,
+      "reviewCount": 0,
+      "positiveReviewCount": 0,
+      "comment": "メンテナンス性に関する言及はありませんでした。自動ゴミ収集機能などを搭載したモデルであれば、日々の手入れは非常に簡単で、利用者の負担は少ないと期待できます。"
+    },
+    "appStability": {
+      "score": 95,
+      "reviewCount": 1,
+      "positiveReviewCount": 1,
+      "comment": "「設定も簡単で良かった」との口コミから、専用アプリの初期設定は非常にスムーズであることがわかります。UIも直感的で、安定した動作が期待できるでしょう。"
+    },
+    "batteryLife": {
+      "score": 85,
+      "reviewCount": 0,
+      "positiveReviewCount": 0,
+      "comment": "バッテリーの持続時間に関する口コミはありませんでした。広い部屋を一度に掃除できる十分な容量を持ち、自動充電・再開機能も備えていると期待されます。"
+    }
+  },
+  "radarChartData": {
+    "labels": [
+      "フローリング",
+      "カーペット",
+      "ペット毛",
+      "静音性",
+      "段差",
+      "メンテ",
+      "アプリ",
+      "電池"
+    ],
+    "values": [
+      99,
+      80,
+      85,
+      80,
+      78,
+      88,
+      95,
+      85
+    ]
+  },
+  "dataQuality": {
+    "totalReviews": 1,
+    "sampledReviews": 1,
+    "adoptedReviews": 1,
+    "excludedReviews": 0,
+    "trustScore": 52.6,
+    "comment": "分析対象の口コミは1件のみで、製品評価の全体像を代表しているとは言えません。ただし、内容は具体的で信頼性が高く、今後の評価の参考になります。"
+  },
+  "reviewKeywords": {
+    "positive": [
+      {
+        "keyword": "床がサラサラ・ピカピカ",
+        "count": 1
+      },
+      {
+        "keyword": "満足・買ってよかった",
+        "count": 1
+      }
+    ],
+    "negative": []
+  },
+  "successStrategies": [
+    {
+      "rank": 1,
+      "issue": "特定の暗い色の床や段差で停止する",
+      "occurrenceRate": 0,
+      "occurrenceCount": 0,
+      "environmentalFactor": "床の色や材質、急な段差",
+      "technicalDescription": "落下防止用のクリフセンサーが、黒い床などを崖と誤認識し、安全のために停止することがあります。これは故障ではなく、センサーの仕様によるものです。",
+      "avoidanceStrategies": [
+        {
+          "method": "クリフセンサーを清掃する",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "センサーに付着した埃や汚れが誤検知を引き起こすことがあります。メーカーは定期的な乾いた布での清掃を推奨しており、これにより正常な動作が期待できます。"
+        },
+        {
+          "method": "進入禁止エリアを設定する",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "iRobot Homeアプリで、誤作動が起きやすい特定のエリアを進入禁止に設定できます。これにより、物理的な対策なしで問題を回避することが可能です。"
+        }
+      ],
+      "preventionTips": "購入前に自宅の床の色（特に黒いラグやマット）を確認しましょう。また、アプリの進入禁止エリア機能を活用することで、多くの環境問題を未然に防ぐことができます。"
+    }
+  ],
+  "topComplaints": [
+    {
+      "title": "暗い色の床やラグの上で停止する",
+      "percentage": 0,
+      "reviewCount": 0,
+      "description": "落下防止センサーが黒い色を「段差」と誤認識し、安全のために停止してしまうことがあります。故障ではありませんが、特定の環境で清掃範囲が制限される場合があります。",
+      "solution": "iRobot Homeアプリで該当エリアを「進入禁止エリア」に設定するか、センサーのこまめな清掃が有効です。これにより誤認識を減らし、スムーズな清掃が可能になります。"
+    },
+    {
+      "title": "Wi-Fi接続が不安定になる",
+      "percentage": 0,
+      "reviewCount": 0,
+      "description": "ルンバは2.4GHz帯のWi-Fiを使用するため、ルーターの設定や他の家電との電波干渉によって接続が不安定になることがあります。アプリからの操作ができなくなります。",
+      "solution": "ルーターを再起動するか、設置場所をルンバのホームベースに近づけることで改善する場合があります。また、ルーター側で2.4GHz帯のチャンネルを変更するのも有効です。"
+    },
+    {
+      "title": "ホームベースに帰還できない",
+      "percentage": 0,
+      "reviewCount": 0,
+      "description": "ホームベースの周囲に障害物があったり、直射日光が当たる場所に設置されていたりすると、ルンバが位置を見失い帰還できないことがあります。途中で停止してしまいます。",
+      "solution": "メーカーの公式ガイドに従い、ホームベースの周囲に十分なスペースを確保し、直射日光や赤外線を出す機器から離れた場所に設置することで問題は解決されます。"
+    }
+  ],
+  "attributeScores": {
+    "petOwner": {
+      "overall": 89,
+      "details": [
+        {
+          "field": "ペットの毛除去",
+          "score": 85,
+          "reviewCount": 0,
+          "comment": "口コミはありませんが、本機の高い吸引力はペットの毛の除去に非常に効果的と期待されます。アレルギー対策としても、日々の抜け毛掃除から解放されるでしょう。"
+        },
+        {
+          "field": "フローリング清掃",
+          "score": 99,
+          "reviewCount": 1,
+          "comment": "「床がサラサラ」という評価は、ペットが持ち込む細かな砂やホコリの除去にも有効であることを示唆します。素足で歩いても快適な床環境を維持できます。"
+        },
+        {
+          "field": "メンテナンス性",
+          "score": 88,
+          "reviewCount": 0,
+          "comment": "ペットの毛が絡まりにくいローラーや、大容量のダスト容器が期待されます。自動ゴミ収集機能があれば、面倒なゴミ捨ての手間が大幅に削減され、非常に衛生的です。"
+        }
+      ]
+    },
+    "apartment": {
+      "overall": 85,
+      "details": [
+        {
+          "field": "静音性",
+          "score": 80,
+          "reviewCount": 0,
+          "comment": "動作音に関する口コミはありませんが、夜間や在宅勤務中の使用を考慮し、アプリで清掃モードを調整できる機能が期待されます。集合住宅では特に重要な要素です。"
+        },
+        {
+          "field": "フローリング清掃",
+          "score": 99,
+          "reviewCount": 1,
+          "comment": "限られたスペースを効率よく清掃し、「床がサラサラ」になる性能はマンション生活に最適です。コンパクトな空間でも、隅々まで高い清掃品質を発揮します。"
+        },
+        {
+          "field": "段差乗り越え",
+          "score": 78,
+          "reviewCount": 0,
+          "comment": "口コミはありませんが、室内の敷居や薄手のラグ程度なら問題なく乗り越える設計と推測されます。部屋間の移動もスムーズに行い、効率的な清掃が可能です。"
+        }
+      ]
+    },
+    "workingProfessional": {
+      "overall": 93,
+      "details": [
+        {
+          "field": "アプリの安定性",
+          "score": 95,
+          "reviewCount": 1,
+          "comment": "「設定が簡単」という口コミは、多忙な専門職にとって非常に価値があります。外出先からでも手軽に清掃を開始でき、スケジュール管理もストレスフリーで行えます。"
+        },
+        {
+          "field": "メンテナンス性",
+          "score": 88,
+          "reviewCount": 0,
+          "comment": "口コミはありませんが、自動ゴミ収集機能など、手入れの手間を最小限に抑える機能が期待されます。時間を有効活用したいユーザーにとって、重要な選択基準となります。"
+        },
+        {
+          "field": "バッテリー性能",
+          "score": 85,
+          "reviewCount": 0,
+          "comment": "留守中に家全体の清掃を一度で完了させるためには、十分なバッテリー容量が不可欠です。自動充電・再開機能により、充電切れの心配なく任せられるでしょう。"
+        }
+      ]
+    },
+    "familyHome": {
+      "overall": 89,
+      "details": [
+        {
+          "field": "フローリング清掃",
+          "score": 99,
+          "reviewCount": 1,
+          "comment": "子供が持ち込む砂や食べこぼしなどで汚れやすい家庭において、「毎日床がサラサラ」になる清掃力は大きな魅力です。衛生的な環境を手軽に維持できます。"
+        },
+        {
+          "field": "バッテリー性能",
+          "score": 85,
+          "reviewCount": 0,
+          "comment": "複数の部屋がある広い家でも、一度の充電で広範囲をカバーできる性能が期待されます。清掃途中で充電切れになるストレスなく、家全体を任せることができます。"
+        },
+        {
+          "field": "カーペット清掃",
+          "score": 80,
+          "reviewCount": 0,
+          "comment": "口コミはありませんが、子供部屋のラグやリビングのカーペットのダニやアレルゲン対策として、強力な吸引力を持つ本機は非常に有効であると期待されます。"
+        }
+      ]
+    }
+  },
+  "resaleValue": null,
+  "affiliate": {
+    "moshimo": "<!-- START MoshimoAffiliateEasyLink -->\r\n<script type=\"text/javascript\">\r\n(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;\r\nb[a]=b[a]||function(){arguments.currentScript=c.currentScript\r\n||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};\r\nc.getElementById(a)||(d=c.createElement(f),d.src=g,\r\nd.id=a,e=c.getElementsByTagName(\"body\")[0],e.appendChild(d))})\r\n(window,document,\"script\",\"//dn.msmstatic.com/site/cardlink/bundle.js?20220329\",\"msmaflink\");\r\nmsmaflink({\"n\":\"アイロボット Z183060 Roomba Max Monster 875 超音波ThermaMistで汚れを拭きとる 自動昇降式ローラーカバー搭載 ブラック\",\"b\":\"\",\"t\":\"\",\"d\":\"https:\\/\\/thumbnail.image.rakuten.co.jp\",\"c_p\":\"\\/@0_mall\\/yamada-denki\\/cabinet\\/a07000655\",\"p\":[\"\\/1387213014.jpg\",\"\\/1387213014_1.jpg\",\"\\/1387213014_2.jpg\"],\"u\":{\"u\":\"https:\\/\\/item.rakuten.co.jp\\/yamada-denki\\/1387213014\\/\",\"t\":\"rakuten\",\"r_v\":\"\"},\"v\":\"2.1\",\"b_l\":[{\"id\":1,\"u_tx\":\"楽天市場で見る\",\"u_bc\":\"#f76956\",\"u_url\":\"https:\\/\\/item.rakuten.co.jp\\/yamada-denki\\/1387213014\\/\",\"a_id\":5483003,\"p_id\":54,\"pl_id\":27059,\"pc_id\":54,\"s_n\":\"rakuten\",\"u_so\":1},{\"id\":2,\"u_tx\":\"Yahoo!ショッピングで見る\",\"u_bc\":\"#66a7ff\",\"u_url\":\"https:\\/\\/shopping.yahoo.co.jp\\/search?first=1\\u0026p=%E3%82%A2%E3%82%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%20Z183060%20Roomba%20Max%20Monster%20875%20%E8%B6%85%E9%9F%B3%E6%B3%A2ThermaMist%E3%81%A7%E6%B1%9A%E3%82%8C%E3%82%92%E6%8B%AD%E3%81%8D%E3%81%A8%E3%82%8B%20%E8%87%AA%E5%8B%95%E6%98%87%E9%99%8D%E5%BC%8F%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC%E3%82%AB%E3%83%90%E3%83%BC%E6%90%AD%E8%BC%89%20%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF\",\"a_id\":5483010,\"p_id\":1225,\"pl_id\":27061,\"pc_id\":1925,\"s_n\":\"yahoo\",\"u_so\":2},{\"id\":3,\"u_tx\":\"Amazonで見る\",\"u_bc\":\"#ffcf0f\",\"u_url\":\"https:\\/\\/www.amazon.co.jp\\/s\\/ref=nb_sb_noss_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A\\u0026url=search-alias%3Daps\\u0026field-keywords=%E3%82%A2%E3%82%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%20Z183060%20Roomba%20Max%20Monster%20875%20%E8%B6%85%E9%9F%B3%E6%B3%A2ThermaMist%E3%81%A7%E6%B1%9A%E3%82%8C%E3%82%92%E6%8B%AD%E3%81%8D%E3%81%A8%E3%82%8B%20%E8%87%AA%E5%8B%95%E6%98%87%E9%99%8D%E5%BC%8F%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC%E3%82%AB%E3%83%90%E3%83%BC%E6%90%AD%E8%BC%89%20%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF\",\"a_id\":5483011,\"p_id\":170,\"pl_id\":27060,\"pc_id\":185,\"s_n\":\"amazon\",\"u_so\":3}],\"eid\":\"KxxYh\",\"s\":\"l\"});\r\n</script>\r\n<div id=\"msmaflink-KxxYh\">リンク</div>\r\n<!-- MoshimoAffiliateEasyLink END -->",
+    "direct": "<span class=\"a8ad 4A9LOip-g7-vzTsfQu\"></span><script type=\"text/javascript\" src=\"//statics.a8.net/ad/ad.js\"></script><script type=\"text/javascript\">a8adscript('body').showAd({\"req\": {\"mat\":\"4AZOWQ+152XIQ+4KHO+HUSFL\",\"alt\":\"商品リンク\",\"id\":\"4A9LOip-g7-vzTsfQu\"},\"goods\": {\"ejp\":\"h\"+\"ttps://store.irobot-jp.com/item/ABZ183060MSW.html\",\"imu\":\"h\"+\"ttps://store.irobot-jp.com/client_info/FS/itemimage/ABZ183060MSW_kv-slide01.jpg\"}});</script>",
+    "hpPublish": true
+  },
+  "priceSource": "official",
+  "priceCheckedAt": "2026-11-03"
+}

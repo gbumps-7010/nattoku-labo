@@ -145,8 +145,15 @@ PICK_MIN_REVIEWS = 50
 CHEAP_MAX = 50000
 
 
+# 口コミがこれ未満の機種は点数が安定しないためランキングに載せない（2026-11-03 決定）。
+# 点数・順位の式は変えず、載せる機種を絞るだけ。除外した機種名は EXCLUDED に残す。
+MIN_RANK_REVIEWS = 10
+EXCLUDED: dict[tuple[str, ...], list[str]] = {}
+
+
 def load_products(perf_keys: tuple[str, ...]) -> list[dict]:
     rows = []
+    excluded: list[str] = []
     for path in sorted(DATA_DIR.glob("*.json")):
         raw = json.loads(path.read_text(encoding="utf-8"))
         if not isinstance(raw, dict):
@@ -170,6 +177,9 @@ def load_products(perf_keys: tuple[str, ...]) -> list[dict]:
             rel = (raw.get("reliability") or {}).get("score")
         if rel is None:
             continue
+        if int(raw.get("totalReviews") or 0) < MIN_RANK_REVIEWS:
+            excluded.append(raw.get("productName") or path.stem)
+            continue
         rows.append(
             {
                 "id": raw.get("productId") or path.stem,
@@ -189,7 +199,15 @@ def load_products(perf_keys: tuple[str, ...]) -> list[dict]:
     )
     for i, row in enumerate(rows, 1):
         row["rank"] = i
+    EXCLUDED[perf_keys] = excluded
     return rows
+
+
+def low_sample_note(cfg: dict) -> str:
+    """見方ボックスの一文：載せていない機種の数と、参考値の基準。"""
+    n = len(EXCLUDED.get(tuple(cfg["perf_keys"]), []))
+    head = f"口コミが{MIN_RANK_REVIEWS}件未満の{n}機種は、点数が安定しないためこのランキングに載せていません。" if n else ""
+    return head + f"{LOW_REVIEW_THRESHOLD}件未満の機種は「参考値」と表示しています。"
 
 
 def heading_lines(text: str) -> str:
@@ -256,7 +274,7 @@ LOW_REVIEW_THRESHOLD = 20
 
 
 def ref_badge(reviews: int) -> str:
-    """Mark low-sample scores as 参考値 (keep in ranking, do not exclude)."""
+    """Mark low-sample scores as 参考値 (10–19件 stay in the ranking; under 10 are excluded upstream)."""
     if int(reviews or 0) >= LOW_REVIEW_THRESHOLD:
         return ""
     return (
@@ -1473,7 +1491,7 @@ def build_step_article(products: list[dict]) -> tuple[str, list[tuple[str, str]]
         p_tag(
             "段差の点数は、ECサイトの口コミのうち段差の乗り越えに触れたものを分析して数値化した値です。"
             "順位は「段差点数×0.85＋口コミ信頼度×0.15」で決めています。"
-            f"口コミが{LOW_REVIEW_THRESHOLD}件未満の機種は「参考値」と表示していますが、ランキングからは外していません。"
+            f"口コミが{MIN_RANK_REVIEWS}件未満の機種は点数が安定しないため載せておらず、{LOW_REVIEW_THRESHOLD}件未満の機種は「参考値」と表示しています。"
         ),
         p_tag(
             f"メーカー公表の段差は、各メーカーの公式サイト・取扱説明書・国内代理店の仕様表で確認した値です。公表値が見つからなかった{n - len(known)}機種は「公表なし」としています。"
@@ -1597,6 +1615,7 @@ def write_ranking_page(cfg: dict, products: list[dict]) -> Path:
         <p class="method-sub">
           ランキングの式：<code>{html.escape(cfg["formula_label"])} × 0.85 ＋ 口コミ信頼度 × 0.15</code>
         </p>
+        <p class="method-sub">{format_prose(low_sample_note(cfg))}</p>
       </section>
 """
     # 記事付きのページは結論を最初に置き、見方は表のあとへ回す

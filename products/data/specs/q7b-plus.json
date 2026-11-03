@@ -1,0 +1,54 @@
+{
+  "productId": "q7b-plus",
+  "modelNumber": "Q7BP02-04",
+  "checkedAt": "2026-11-03",
+  "sources": [
+    { "label": "Roborock公式 製品ページ", "url": "https://jp.roborock.com/pages/roborock-q7b" },
+    { "label": "家電Watch（Q7B 発売発表・2025年7月3日）", "url": "https://kaden.watch.impress.co.jp/docs/news/2028048.html" },
+    { "label": "価格.com スペック（型番・質量・発売日）", "url": "https://kakaku.com/item/K0001714171/spec/" }
+  ],
+  "basic": {
+    "dimensionsMm": { "w": 325, "d": 327, "h": 99 },
+    "weightKg": 2.8,
+    "runtimeMin": null,
+    "chargeTimeMin": null,
+    "batteryMah": null,
+    "releaseDate": "2025-09",
+    "warrantyMonths": null
+  },
+  "cleaning": {
+    "suctionPa": 8000,
+    "dustboxMl": null,
+    "waterTankMl": 280,
+    "mappingType": "LDSレーザー",
+    "obstacleAvoidance": null,
+    "climbHeightMm": null,
+    "climbNote": null,
+    "noiseDb": null
+  },
+  "mop": {
+    "type": "水拭きモップ（水量3段階）",
+    "liftMm": null,
+    "autoDetach": false
+  },
+  "station": {
+    "autoEmpty": true,
+    "mopWash": false,
+    "hotWaterWash": false,
+    "hotWaterNote": null,
+    "hotAirDry": false,
+    "autoRefillDrain": false,
+    "detergentDispenser": false,
+    "dustBagMl": null,
+    "cleanTankMl": null,
+    "dirtyTankMl": null,
+    "dimensionsMm": { "w": 213, "d": 178, "h": 259 },
+    "weightKg": null
+  },
+  "smart": {
+    "app": "Roborock",
+    "wifi": null,
+    "voiceAssistants": ["Alexa", "Googleアシスタント"],
+    "matter": null
+  }
+}

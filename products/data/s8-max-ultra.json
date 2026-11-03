@@ -1,0 +1,380 @@
+{
+  "productId": "s8-max-ultra",
+  "productName": "S8 Max Ultra",
+  "manufacturer": "Roborock",
+  "modelNumber": "S8 Max Ultra",
+  "imageUrl": "https://m.media-amazon.com/images/I/41ZrrFTHLkL._SL500_.jpg",
+  "overallRating": 4.39,
+  "totalReviews": 93,
+  "price": 98000,
+  "reliabilityScore": 70.6,
+  "asin": "",
+  "metaTitle": "Roborock S8 Max Ultra 詳細分析 | 口コミ91件から見る真実",
+  "metaDescription": "Roborock S8 Max Ultraの口コミ91件を徹底解析。驚異の吸引力や進化した水拭き性能、一方で多発する故障や段差問題など、購入前に知るべき真実を公開します。",
+  "keywords": [
+    "ロボット掃除機",
+    "S8 Max Ultra",
+    "Roborock",
+    "水拭き",
+    "自動洗浄",
+    "ペットの毛"
+  ],
+  "categoryC": {
+    "userSatisfaction": {
+      "score": 92,
+      "reviewCount": 91,
+      "comment": "掃除性能や自動メンテナンス機能に満足する声が大多数です。特に水拭き後の床のサラサラ感や、手入れの手間が省ける点を高く評価。一方で初期不良や故障報告も散見され、品質のばらつきが満足度を下げる要因となっています。"
+    },
+    "repurchaseIntention": {
+      "percentage": 85,
+      "reviewCount": 75,
+      "comment": "故障を経験していないユーザーの多くは、次もRoborock製品を選びたいと考えるほど高い評価をしています。しかし、保証期間切れ後の故障やサポート対応への不満から、他社製品への乗り換えを検討する声も一定数存在します。"
+    },
+    "failureRate": {
+      "percentage": 19,
+      "reviewCount": 91,
+      "breakdown": {
+        "hardware": 12,
+        "software": 5,
+        "environmental": 1
+      },
+      "comment": "「故障・不具合」に関する言及が18件と多く、特にセンサー異常やブラシの動作不良、暴走といったハードウェア起因の問題が目立ちます。アプリ接続不良などソフトウェアの問題も報告されており、高価格帯製品としては看過できない不具合率です。"
+    }
+  },
+  "reliability": {
+    "score": 70.6,
+    "dataAdequacy": {
+      "score": 76,
+      "weight": 60,
+      "description": "口コミ件数は91件と、製品の基本的な傾向を把握するには十分な量ですが、より多角的な評価のためには数百件規模のデータが望ましいです。"
+    },
+    "consistency": {
+      "score": 60,
+      "weight": 30,
+      "description": "「最高の製品」という絶賛と「1年で故障」といった酷評が混在し、評価のばらつきが大きいです。初期不良や耐久性に関する意見の不一致が目立ちます。",
+      "percentage": 60
+    },
+    "freshness": {
+      "score": 70,
+      "weight": 10,
+      "description": "直近30日以内の口コミが全体の約8.8%を占めており、鮮度は中程度です。継続的なソフトウェア更新の影響を判断するには、より新しい口コミの収集が求められます。"
+    }
+  },
+  "updateInfo": {
+    "lastUpdated": "2026-11-03",
+    "firmwareVersion": "",
+    "note": "2024年9月から2026年10月までの口コミを分析。ソフトウェア更新で障害物回避性能が改善傾向にある一方、ハードウェアの故障報告は継続的に見られます。"
+  },
+  "timeSaving": {
+    "vacuumMinutes": 10,
+    "mopMinutes": 9,
+    "dailyMinutes": 19,
+    "monthlyHours": 9.5,
+    "annualHours": 115.6,
+    "workDaysEquivalent": 14.4
+  },
+  "performanceAnalysis": {
+    "floorCleaning": {
+      "score": 95,
+      "reviewCount": 56,
+      "positiveReviewCount": 53,
+      "comment": "水拭き性能への評価が極めて高く、多くのユーザーが「床がサラサラになる」と絶賛しています。吸引と水拭きの同時実行で、皮脂汚れや足跡も綺麗になると好評。掃除後の爽快感を重視するなら、この性能は大きな魅力となるでしょう。"
+    },
+    "carpetCleaning": {
+      "score": 82,
+      "reviewCount": 22,
+      "positiveReviewCount": 17,
+      "comment": "強力な吸引力でカーペットの毛やゴミをしっかり除去できると評価されています。ただし、一部のユーザーからは「吸えていないゴミがあった」との報告も。毛足の長いカーペットでは性能が落ちる可能性があり、過度な期待は禁物です。"
+    },
+    "petHairRemoval": {
+      "score": 94,
+      "reviewCount": 25,
+      "positiveReviewCount": 23,
+      "comment": "ペットの毛や猫砂の掃除で絶大な効果を発揮します。デュアルブラシが毛の絡まりを防ぎ、強力な吸引力で綺麗に吸い取ると高評価です。ペットのいる家庭にとって、日々の掃除負担を大幅に軽減してくれる頼もしい存在です。"
+    },
+    "quietness": {
+      "score": 88,
+      "reviewCount": 14,
+      "positiveReviewCount": 12,
+      "comment": "「吸引力の割に静か」という意見が多く、夜間や在宅ワーク中でも使いやすいと好評です。ただし、ドックでのゴミ収集時やモップ洗浄時には大きな音が発生するため、設置場所や作動時間には配慮が必要という声もありました。"
+    },
+    "stepClimbing": {
+      "score": 72,
+      "reviewCount": 37,
+      "positiveReviewCount": 25,
+      "comment": "仕様上の段差乗り越え性能は高いものの、実際の口コミでは評価が分かれています。「1cmの敷居も越える」という声がある一方、「3cmの段差で落ちて動けなくなる」という報告も多数。間取りによっては進入禁止設定が必須です。"
+    },
+    "maintenance": {
+      "score": 96,
+      "reviewCount": 37,
+      "positiveReviewCount": 35,
+      "comment": "モップの自動洗浄・乾燥やゴミの自動収集機能により、手入れの手間がほぼ不要な点を絶賛する声が多数。汚水タンクの清掃は必要ですが、日々のメンテナンスから解放されるメリットは非常に大きいと評価されています。"
+    },
+    "appStability": {
+      "score": 90,
+      "reviewCount": 39,
+      "positiveReviewCount": 35,
+      "comment": "マッピング精度が高く、エリア指定や進入禁止設定が直感的に行えると好評です。一部でWi-Fi接続の初期設定に手間取ったとの報告や、稀なバグ報告はあるものの、総じてアプリの使い勝手と安定性は高く評価されています。"
+    },
+    "batteryLife": {
+      "score": 85,
+      "reviewCount": 10,
+      "positiveReviewCount": 8,
+      "comment": "バッテリーに関する言及は少ないですが、ほとんどのユーザーは掃除途中の充電切れを経験していません。広い部屋でも自動で充電に戻り掃除を再開するため、バッテリー持ちが問題になることは稀で、十分な性能を持っていると評価できます。"
+    }
+  },
+  "radarChartData": {
+    "labels": [
+      "フローリング",
+      "カーペット",
+      "ペット毛",
+      "静音性",
+      "段差",
+      "メンテ",
+      "アプリ",
+      "電池"
+    ],
+    "values": [
+      95,
+      82,
+      94,
+      88,
+      72,
+      96,
+      90,
+      85
+    ]
+  },
+  "dataQuality": {
+    "totalReviews": 93,
+    "sampledReviews": 91,
+    "adoptedReviews": 91,
+    "excludedReviews": 2,
+    "trustScore": 70.6,
+    "comment": "提供された91件の口コミを全て分析。絶賛から厳しい批判まで多様な意見が含まれており、製品の長所と短所を多角的に評価するための十分な品質を持っています。ただし、評価のばらつきが大きい点には注意が必要です。"
+  },
+  "reviewKeywords": {
+    "positive": [
+      {
+        "keyword": "水拭き・拭き掃除が良い",
+        "count": 39
+      },
+      {
+        "keyword": "満足・買ってよかった",
+        "count": 27
+      },
+      {
+        "keyword": "吸引力が高い",
+        "count": 20
+      },
+      {
+        "keyword": "マッピング・ルートが賢い",
+        "count": 19
+      },
+      {
+        "keyword": "静かで快適",
+        "count": 12
+      },
+      {
+        "keyword": "綺麗になる",
+        "count": 6
+      },
+      {
+        "keyword": "使いやすい・便利",
+        "count": 6
+      },
+      {
+        "keyword": "家事が楽になった",
+        "count": 5
+      },
+      {
+        "keyword": "床がサラサラ・ピカピカ",
+        "count": 2
+      },
+      {
+        "keyword": "故障・トラブルが少ない",
+        "count": 2
+      }
+    ],
+    "negative": [
+      {
+        "keyword": "故障・不具合",
+        "count": 18
+      },
+      {
+        "keyword": "段差・家具で引っかかる",
+        "count": 8
+      },
+      {
+        "keyword": "コードを巻き込む",
+        "count": 6
+      },
+      {
+        "keyword": "止まってしまう",
+        "count": 6
+      },
+      {
+        "keyword": "動作音が気になる",
+        "count": 4
+      },
+      {
+        "keyword": "吸引力が弱い",
+        "count": 1
+      },
+      {
+        "keyword": "価格・コストが高い",
+        "count": 1
+      }
+    ]
+  },
+  "successStrategies": [
+    {
+      "rank": 1,
+      "issue": "突然の故障・動作不良",
+      "occurrenceRate": 19.8,
+      "occurrenceCount": 18,
+      "environmentalFactor": "製品の個体差、長期使用による部品劣化の可能性",
+      "technicalDescription": "「LDSセンサー異常」「サイドブラシが回転しない」「暴走する」など、ハードウェア起因の故障報告が多数。保証期間内であれば無償修理の対象ですが、保証切れ後の修理は高額になる傾向があり、ユーザーの大きな不満点となっています。",
+      "avoidanceStrategies": [
+        {
+          "method": "定期的なセンサー清掃とブラシの手入れ",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalRationale": "公式サポートは、LDSレーザーセンサーや各種センサーを指定の布で清掃することを推奨しています。これによりマッピング異常や衝突エラーを予防できる可能性があります。また、ブラシに絡まった異物を除去することも正常動作の維持に繋がります。"
+        },
+        {
+          "method": "長期保証付きの販売店で購入する",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "メーカー保証は1年ですが、故障報告が散見されるため、販売店が提供する延長保証への加入が有効なリスク対策となります。万が一の故障時に高額な修理費用を負担せずに済み、安心して長期間使用するための重要な戦略です。"
+        }
+      ],
+      "preventionTips": "本体やドック周辺に障害物を置かず、十分なスペースを確保することが重要です。また、ファームウェアを常に最新の状態に保つことで、ソフトウェア起因の動作不安定を未然に防ぐことができます。定期的なメンテナンスを心がけましょう。"
+    }
+  ],
+  "topComplaints": [
+    {
+      "title": "突然の故障・動作不良（保証切れ後の高額修理）",
+      "percentage": 19.8,
+      "reviewCount": 18,
+      "description": "「1年過ぎたら壊れた」「センサー異常で動かない」など、耐久性への不満が最も多いです。保証期間が切れた後の修理費用が数万円と高額になるケースもあり、製品の信頼性を大きく損なう原因となっています。",
+      "solution": "まずは公式サイトのQ&Aを参考に再起動やセンサー清掃をお試しください。それでも改善しない場合はサポートへの連絡が必要です。保証期間外の高額修理を避けるため、購入時に販売店の延長保証に加入することを強く推奨します。"
+    },
+    {
+      "title": "段差で立ち往生・落下する",
+      "percentage": 8.8,
+      "reviewCount": 8,
+      "description": "高性能を謳う段差乗り越え機能ですが、「玄関から落下して動けなくなった」「敷居を越えられない」といった報告が目立ちます。部屋の構造によっては、期待した性能を発揮できず、掃除エリアが限定されてしまうことがあります。",
+      "solution": "Roborockアプリで進入禁止エリアやバーチャルウォールを正確に設定することが最も効果的な対策です。物理的な対策として、段差に市販のスロープを設置する方法もありますが、まずはアプリのマップ編集機能を活用しましょう。"
+    },
+    {
+      "title": "充電ケーブルなどを巻き込んで停止する",
+      "percentage": 6.6,
+      "reviewCount": 6,
+      "description": "障害物回避性能は高いものの、床に落ちているスマートフォン用の細い充電ケーブルやハンガーなどを巻き込んで停止する事例が報告されています。外出中に掃除を任せた結果、帰宅時に停止しているとがっかり感は大きいです。",
+      "solution": "掃除を開始する前に、床にケーブルや薄い布、小物などが落ちていないか確認する習慣が重要です。Roborockアプリの障害物回避設定を「丁寧」モードにすることも有効ですが、事前の片付けが最も確実な対策となります。"
+    }
+  ],
+  "attributeScores": {
+    "petOwner": {
+      "overall": 94,
+      "details": [
+        {
+          "field": "ペットの毛除去",
+          "score": 94,
+          "reviewCount": 25,
+          "comment": "抜け毛や猫砂を強力に吸引し、ブラシへの毛の絡まりも少ないと絶賛されています。ペットがいる家庭の掃除負担を劇的に軽減する性能です。"
+        },
+        {
+          "field": "床の拭き掃除",
+          "score": 95,
+          "reviewCount": 56,
+          "comment": "ペットの足跡や皮脂汚れも水拭きで綺麗になり、床がサラサラに仕上がります。衛生的な環境を保ちたいペットオーナーに最適です。"
+        },
+        {
+          "field": "メンテナンス性",
+          "score": 96,
+          "reviewCount": 37,
+          "comment": "全自動ドックのおかげで、面倒なゴミ捨てやモップ洗浄から解放されます。忙しい中でも清潔な状態を維持できる点が非常に高く評価されています。"
+        }
+      ]
+    },
+    "apartment": {
+      "overall": 86,
+      "details": [
+        {
+          "field": "静音性",
+          "score": 88,
+          "reviewCount": 14,
+          "comment": "パワフルな吸引力の割に動作音が静かで、集合住宅でも時間帯を気にせず使いやすいと好評です。ただしドックの作動音は大きいので注意が必要です。"
+        },
+        {
+          "field": "床の拭き掃除",
+          "score": 95,
+          "reviewCount": 56,
+          "comment": "フローリングの掃除性能が非常に高く、ホコリや髪の毛を完璧に除去します。水拭き後の床の清潔感は、マンション生活の質を向上させます。"
+        },
+        {
+          "field": "段差乗り越え",
+          "score": 72,
+          "reviewCount": 37,
+          "comment": "部屋間の敷居など、わずかな段差で動けなくなる可能性があります。購入前に自宅の段差を確認し、アプリで進入禁止設定が必要か検討すべきです。"
+        }
+      ]
+    },
+    "workingProfessional": {
+      "overall": 91,
+      "details": [
+        {
+          "field": "アプリの安定性",
+          "score": 90,
+          "reviewCount": 39,
+          "comment": "外出先からでも掃除を指示でき、スケジュール設定も簡単なため、多忙なプロフェッショナルに最適です。安定したアプリでストレスなく操作できます。"
+        },
+        {
+          "field": "メンテナンス性",
+          "score": 96,
+          "reviewCount": 37,
+          "comment": "ゴミ収集からモップ洗浄・乾燥まで全自動で行うため、メンテナンスの手間がほとんどかかりません。時間を有効活用したい方に最高の機能です。"
+        },
+        {
+          "field": "バッテリー性能",
+          "score": 85,
+          "reviewCount": 10,
+          "comment": "一度の充電で広い範囲を掃除でき、バッテリー切れの心配はほぼありません。掃除の途中で自動的に充電し再開するため、常に任せきりにできます。"
+        }
+      ]
+    },
+    "familyHome": {
+      "overall": 88,
+      "details": [
+        {
+          "field": "床の拭き掃除",
+          "score": 95,
+          "reviewCount": 56,
+          "comment": "子供の食べこぼしや足跡も水拭きで綺麗に除去できます。広いリビングの床を常に清潔に保てるため、子育て世帯に強く推奨できます。"
+        },
+        {
+          "field": "バッテリー性能",
+          "score": 85,
+          "reviewCount": 10,
+          "comment": "複数の部屋がある広い家でも、バッテリーを心配することなく掃除を任せられます。自動充電・再開機能により、家全体を効率的に清掃可能です。"
+        },
+        {
+          "field": "カーペット掃除",
+          "score": 82,
+          "reviewCount": 22,
+          "comment": "カーペットの奥のゴミまでしっかり吸引する力はありますが、完璧ではありません。特に毛足の長いラグでは吸い残しが出る可能性も考慮すべきです。"
+        }
+      ]
+    }
+  },
+  "resaleValue": null,
+  "affiliate": {
+    "moshimo": "<!-- START MoshimoAffiliateEasyLink -->\r\n<script type=\"text/javascript\">\r\n(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;\r\nb[a]=b[a]||function(){arguments.currentScript=c.currentScript\r\n||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};\r\nc.getElementById(a)||(d=c.createElement(f),d.src=g,\r\nd.id=a,e=c.getElementsByTagName(\"body\")[0],e.appendChild(d))})\r\n(window,document,\"script\",\"//dn.msmstatic.com/site/cardlink/bundle.js?20220329\",\"msmaflink\");\r\nmsmaflink({\"n\":\"【2024最新】 roborock S8 Max Ultra ロボロック ロボット掃除機 お掃除ロボット 自動ゴミ収集 ロボット掃除機 水拭き 両用 全自動ドック 強力吸引 障害物回避\",\"b\":\"roborock\",\"t\":\"S8MU52-04\",\"d\":\"https:\\/\\/m.media-amazon.com\",\"c_p\":\"\\/images\\/I\",\"p\":[\"\\/41ZrrFTHLkL._SL500_.jpg\",\"\\/41PXrslyz1L._SL500_.jpg\",\"\\/51BhxIigicL._SL500_.jpg\",\"\\/51tUr1aHMmL._SL500_.jpg\",\"\\/51QzSuqNb4L._SL500_.jpg\",\"\\/51Dy5pSDgJL._SL500_.jpg\",\"\\/41PHnDtYcdL._SL500_.jpg\",\"\\/41QzJ99M1uL._SL500_.jpg\"],\"u\":{\"u\":\"https:\\/\\/www.amazon.co.jp\\/dp\\/B0DB5TR54Z\",\"t\":\"amazon\",\"r_v\":\"\"},\"v\":\"2.1\",\"b_l\":[{\"id\":1,\"u_tx\":\"楽天市場で見る\",\"u_bc\":\"#f76956\",\"u_url\":\"https:\\/\\/search.rakuten.co.jp\\/search\\/mall\\/%E3%80%902024%E6%9C%80%E6%96%B0%E3%80%91%20roborock%20S8%20Max%20Ultra%20%E3%83%AD%E3%83%9C%E3%83%AD%E3%83%83%E3%82%AF%20%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%20%E3%81%8A%E6%8E%83%E9%99%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%20%E8%87%AA%E5%8B%95%E3%82%B4%E3%83%9F%E5%8F%8E%E9%9B%86%20%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%20%E6%B0%B4%E6%8B%AD%E3%81%8D%20%E4%B8%A1%E7%94%A8%20%E5%85%A8%E8%87%AA%E5%8B%95%E3%83%89%E3%83%83%E3%82%AF%20%E5%BC%B7%E5%8A%9B%E5%90%B8%E5%BC%95%20%E9%9A%9C%E5%AE%B3%E7%89%A9%E5%9B%9E%E9%81%BF\\/\",\"a_id\":5483003,\"p_id\":54,\"pl_id\":27059,\"pc_id\":54,\"s_n\":\"rakuten\",\"u_so\":1},{\"id\":2,\"u_tx\":\"Yahoo!ショッピングで見る\",\"u_bc\":\"#66a7ff\",\"u_url\":\"https:\\/\\/shopping.yahoo.co.jp\\/search?first=1\\u0026p=%E3%80%902024%E6%9C%80%E6%96%B0%E3%80%91%20roborock%20S8%20Max%20Ultra%20%E3%83%AD%E3%83%9C%E3%83%AD%E3%83%83%E3%82%AF%20%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%20%E3%81%8A%E6%8E%83%E9%99%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%20%E8%87%AA%E5%8B%95%E3%82%B4%E3%83%9F%E5%8F%8E%E9%9B%86%20%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%20%E6%B0%B4%E6%8B%AD%E3%81%8D%20%E4%B8%A1%E7%94%A8%20%E5%85%A8%E8%87%AA%E5%8B%95%E3%83%89%E3%83%83%E3%82%AF%20%E5%BC%B7%E5%8A%9B%E5%90%B8%E5%BC%95%20%E9%9A%9C%E5%AE%B3%E7%89%A9%E5%9B%9E%E9%81%BF\",\"a_id\":5483010,\"p_id\":1225,\"pl_id\":27061,\"pc_id\":1925,\"s_n\":\"yahoo\",\"u_so\":2},{\"id\":3,\"u_tx\":\"Amazonで見る\",\"u_bc\":\"#ffcf0f\",\"u_url\":\"https:\\/\\/www.amazon.co.jp\\/dp\\/B0DB5TR54Z\",\"a_id\":5483011,\"p_id\":170,\"pl_id\":27060,\"pc_id\":185,\"s_n\":\"amazon\",\"u_so\":3}],\"eid\":\"dmlaj\",\"s\":\"l\"});\r\n</script>\r\n<div id=\"msmaflink-dmlaj\">リンク</div>\r\n<!-- MoshimoAffiliateEasyLink END -->",
+    "direct": "",
+    "hpPublish": false
+  },
+  "priceSource": "amazon",
+  "priceCheckedAt": "2026-11-03"
+}

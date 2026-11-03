@@ -86,16 +86,15 @@ products/data/[product-id].json
 
 ### ステップ3: HTMLページを作成（30秒）
 
-**`products/template-unified.html`をコピーして新製品HTMLを作成**：
+**2026-11-03 更新:** `template-unified.html` は仕様が古いので使わない。  
+**公開中の同メーカー製品ページ**（例: Dreameなら `d20-ultra.html`）をコピーして新ID名にする。
 
 ```bash
-コピー元: products/template-unified.html
+コピー元: products/<現行の同メーカー機種>.html
 コピー先: products/[product-id].html
 ```
 
-**例**: `products/xiaomi-x20-pro.html`
-
-**それだけです！** テンプレートには全9セクションが含まれており、product-loader.jsが自動的にJSONデータを読み込んで反映します。
+その後 `node scripts/prerender-product-pages.js` で JSON を焼き込む。
 
 ---
 

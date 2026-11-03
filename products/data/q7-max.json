@@ -1,0 +1,348 @@
+{
+  "productId": "q7-max",
+  "productName": "Q7 Max",
+  "manufacturer": "Roborock",
+  "modelNumber": "Q7M02-04",
+  "imageUrl": "https://m.media-amazon.com/images/I/31KaRm0H1uL._SL500_.jpg",
+  "overallRating": 3.96,
+  "totalReviews": 9,
+  "price": 11800,
+  "reliabilityScore": 50.0,
+  "asin": "",
+  "metaTitle": "Roborock Q7 Max 詳細分析 | 9件の口コミから分かる吸引力と水拭きの実力",
+  "metaDescription": "Roborock Q7 Maxの9件の口コミを徹底解析。フローリングでの高い清掃能力やアプリの利便性、一方で報告される電源トラブルや段差での停止問題など、購入前に知るべき真実を公開します。",
+  "keywords": [
+    "Roborock Q7 Max",
+    "ロボット掃除機",
+    "口コミ",
+    "レビュー",
+    "水拭き",
+    "吸引力"
+  ],
+  "categoryC": {
+    "userSatisfaction": {
+      "score": 85,
+      "reviewCount": 9,
+      "comment": "基本的な清掃性能には多くのユーザーが満足しています。特にフローリングの掃除や水拭き機能が高評価です。しかし、一部で電源が入らないといった初期不良や耐久性への不満も見られます。"
+    },
+    "repurchaseIntention": {
+      "percentage": 67,
+      "reviewCount": 9,
+      "comment": "製品の性能に満足し、次も同ブランドを検討したいという声がある一方、1年半での故障やサポート対応への不満から、他ブランドへの乗り換えを考えるユーザーも一定数存在します。"
+    },
+    "failureRate": {
+      "percentage": 33,
+      "reviewCount": 9,
+      "breakdown": {
+        "hardware": 3,
+        "software": 0,
+        "environmental": 0
+      },
+      "comment": "9件中3件が「電源が入らない」「1年半で故障」といったハードウェアの不具合を報告しています。特に初期不良に関する言及が複数あり、購入後の動作確認が重要と言えるでしょう。"
+    }
+  },
+  "reliability": {
+    "score": 50.0,
+    "dataAdequacy": {
+      "score": 44,
+      "weight": 60,
+      "description": "口コミ件数が9件と少なく、製品の全体像を把握するにはデータ量が不足しています。より多くのレビューが集まることで、評価の信頼性が高まるでしょう。"
+    },
+    "consistency": {
+      "score": 62,
+      "weight": 30,
+      "description": "清掃性能を高く評価する声と、初期不良や故障を報告する声が混在しており、評価の一貫性は中程度です。個体差や使用期間による品質のばらつきが示唆されます。",
+      "percentage": 62
+    },
+    "freshness": {
+      "score": 50,
+      "weight": 10,
+      "description": "直近30日以内の新しい口コミがなく、鮮度は低い評価です。最新のファームウェアや現行ロットの品質に関する情報が不足している可能性があります。"
+    }
+  },
+  "updateInfo": {
+    "lastUpdated": "2026-11-03",
+    "firmwareVersion": "",
+    "note": "分析対象の口コミは2025年1月から2026年9月のものです。清掃性能への高評価と、電源関連の不具合報告という傾向が見られます。"
+  },
+  "timeSaving": {
+    "vacuumMinutes": 10,
+    "mopMinutes": 9,
+    "dailyMinutes": 19,
+    "monthlyHours": 9.5,
+    "annualHours": 115.6,
+    "workDaysEquivalent": 14.4
+  },
+  "performanceAnalysis": {
+    "floorCleaning": {
+      "score": 95,
+      "reviewCount": 3,
+      "positiveReviewCount": 3,
+      "comment": "フローリングの清掃能力は高く評価されています。「大分綺麗にしてくれる」「しっかり掃除してくれる」との声があり、吸引と水拭きの基本性能に満足しているユーザーが多いです。"
+    },
+    "carpetCleaning": {
+      "score": 70,
+      "reviewCount": 1,
+      "positiveReviewCount": 0,
+      "comment": "カーペット清掃に関する具体的な言及は限定的でした。公式サイトでは2cmまでの段差に対応とされており、標準的なカーペットなら問題ないと考えられますが、口コミでの実証は不足しています。"
+    },
+    "petHairRemoval": {
+      "score": 75,
+      "reviewCount": 1,
+      "positiveReviewCount": 0,
+      "comment": "ペットの毛の除去能力に関する直接的な口コミはありませんでした。しかし、4200Paの強力な吸引力を公表しており、一般的なペットの毛に対しては十分な性能が期待されます。"
+    },
+    "quietness": {
+      "score": 90,
+      "reviewCount": 1,
+      "positiveReviewCount": 1,
+      "comment": "動作音については「とても静か」という好意的なレビューが1件ありました。iRobot製品からの乗り換えユーザーが特に静音性の高さを評価しており、マンションなどでの使用にも適しています。"
+    },
+    "stepClimbing": {
+      "score": 60,
+      "reviewCount": 2,
+      "positiveReviewCount": 0,
+      "comment": "段差乗り越え時に「亀状態になって動けずに困っている」との報告があります。公式サイトでは2cmまで対応とされていますが、段差の形状や角度によってはうまく乗り越えられない場合があるようです。"
+    },
+    "maintenance": {
+      "score": 88,
+      "reviewCount": 0,
+      "positiveReviewCount": 0,
+      "comment": "「ダストボックスやブラシの取り外しが簡単」との声があり、日常的な手入れのしやすさが評価されています。アプリで消耗品の交換時期を通知する機能もメンテナンスを容易にしています。"
+    },
+    "appStability": {
+      "score": 75,
+      "reviewCount": 3,
+      "positiveReviewCount": 2,
+      "comment": "「アプリとwifiの接続が少し手こずる」「Alexaにより制御はいまいち不安定」といった声がある一方、マッピング機能などアプリの基本機能には満足している様子で、評価が分かれています。"
+    },
+    "batteryLife": {
+      "score": 80,
+      "reviewCount": 1,
+      "positiveReviewCount": 0,
+      "comment": "バッテリーに関する直接的な評価はありませんでしたが、最大3時間の連続駆動が可能と公表されています。途中で充電し掃除を再開する機能もあり、広い部屋でも安心して使用できる仕様です。"
+    }
+  },
+  "radarChartData": {
+    "labels": [
+      "フローリング",
+      "カーペット",
+      "ペット毛",
+      "静音性",
+      "段差",
+      "メンテ",
+      "アプリ",
+      "電池"
+    ],
+    "values": [
+      95,
+      70,
+      75,
+      90,
+      60,
+      88,
+      75,
+      80
+    ]
+  },
+  "dataQuality": {
+    "totalReviews": 9,
+    "sampledReviews": 9,
+    "adoptedReviews": 9,
+    "excludedReviews": 0,
+    "trustScore": 50.0,
+    "comment": "分析対象の口コミは9件のみで、統計的信頼性は高くありません。特に初期不良や故障に関する報告が全体の評価に大きく影響しているため、より多くのデータでの検証が望まれます。"
+  },
+  "reviewKeywords": {
+    "positive": [
+      {
+        "keyword": "満足・買ってよかった",
+        "count": 4
+      },
+      {
+        "keyword": "水拭き・拭き掃除が良い",
+        "count": 2
+      },
+      {
+        "keyword": "使いやすい・便利",
+        "count": 1
+      },
+      {
+        "keyword": "吸引力が高い",
+        "count": 1
+      },
+      {
+        "keyword": "静かで快適",
+        "count": 1
+      },
+      {
+        "keyword": "故障・トラブルが少ない",
+        "count": 1
+      }
+    ],
+    "negative": [
+      {
+        "keyword": "期待外れ・不満",
+        "count": 1
+      },
+      {
+        "keyword": "故障・不具合",
+        "count": 1
+      },
+      {
+        "keyword": "段差・家具で引っかかる",
+        "count": 1
+      }
+    ]
+  },
+  "successStrategies": [
+    {
+      "rank": 1,
+      "issue": "電源が入らない・起動しない",
+      "occurrenceRate": 22,
+      "occurrenceCount": 2,
+      "environmentalFactor": "初期不良またはバッテリーの完全放電",
+      "technicalDescription": "新品購入直後や長期間使用後に、本体ボタンを押しても反応しない状態。充電ドックのライトは点滅するが、本体は充電を開始しないハードウェア系の不具合が報告されています。",
+      "avoidanceStrategies": [
+        {
+          "method": "本体を充電ドックに手動で設置し、接点が合っているか確認する",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalRationale": "充電接点の接触不良が原因の場合、正しく設置し直すことで充電が開始されることがあります。接点部分を乾いた布で清掃することも有効です。"
+        },
+        {
+          "method": "ダストボックス下のResetボタンを押し、電源ボタンを15秒長押しする",
+          "effectiveness": "中",
+          "technicalLevel": "中級",
+          "technicalRationale": "一時的なソフトウェアの問題である場合、本体のリセットや強制再起動で復旧する可能性があります。ただし、口コミではこの方法でも解決しなかったケースが報告されています。"
+        }
+      ],
+      "preventionTips": "商品到着後は速やかに動作確認を行うことが最も重要です。万が一不具合があった場合、購入後15日以内であれば初期不良として新品交換の対象となるため、すぐに購入店やサポートへ連絡しましょう。"
+    }
+  ],
+  "topComplaints": [
+    {
+      "title": "電源が入らない・起動しない",
+      "percentage": 22,
+      "reviewCount": 2,
+      "description": "新品で購入したにもかかわらず、最初から電源が入らないという初期不良の報告が複数見られます。充電ドックに置いても反応がなく、全く使用できないという深刻な問題です。",
+      "solution": "まず充電ドックと本体の充電端子を清掃し、確実に接触させてください。それでも改善しない場合は本体のリセットを試みます。解決しない場合は初期不良の可能性が高いため、購入後15日以内に販売店またはメーカーサポートへ連絡し、交換を依頼してください。"
+    },
+    {
+      "title": "1年半で故障し、サポート対応も不十分",
+      "percentage": 11,
+      "reviewCount": 1,
+      "description": "約1年半の使用で突然動かなくなり、修理に3万円以上かかると案内された事例が報告されています。また、サポートの対応が自動案内中心で、質問に直接答えてもらえなかったという不満の声も上がっています。",
+      "solution": "保証期間は購入から1年間です。期間外の修理は有償となりますが、まずは公式サイトのWEBフォームや電話で不具合状況を正確に伝え、見積もりを依頼してください。保証書を手元に準備しておくことが重要です。"
+    },
+    {
+      "title": "段差で停止してしまうことがある",
+      "percentage": 11,
+      "reviewCount": 1,
+      "description": "性能上は2cmまでの段差を乗り越え可能ですが、実際には「時々亀状態になって動けずに困っている」との口コミがあります。敷居やラグの端など、特定の条件下でスタックしてしまうことがあるようです。",
+      "solution": "アプリのマッピング機能を活用し、頻繁に停止する場所を「進入禁止エリア」に設定するのが最も簡単な対策です。 また、段差の角度が問題であれば、市販の緩やかなスロープを設置することでスムーズな走行が期待できます。"
+    }
+  ],
+  "attributeScores": {
+    "petOwner": {
+      "overall": 84,
+      "details": [
+        {
+          "field": "ペットの毛吸引",
+          "score": 75,
+          "reviewCount": 1,
+          "comment": "口コミは無いものの、4200Paの強力な吸引力はペットの毛の掃除に効果が期待できます。ゴム製のメインブラシは毛が絡まりにくい設計で、メンテナンスの手間を軽減します。"
+        },
+        {
+          "field": "床掃除（水拭き）",
+          "score": 95,
+          "reviewCount": 3,
+          "comment": "フローリングでの水拭き性能は高く評価されており、ペットの足跡や軽微な汚れの除去に役立ちます。床を清潔に保ちたいペットオーナーにとって大きなメリットです。"
+        },
+        {
+          "field": "メンテナンス性",
+          "score": 88,
+          "reviewCount": 1,
+          "comment": "ブラシやダストボックスが簡単に取り外せるため、ペットの毛やホコリが溜まっても手軽に清掃できます。清潔さを維持しやすい点は、ペットを飼う家庭で重要なポイントです。"
+        }
+      ]
+    },
+    "apartment": {
+      "overall": 86,
+      "details": [
+        {
+          "field": "静音性",
+          "score": 90,
+          "reviewCount": 1,
+          "comment": "「とても静か」との評価があり、集合住宅での使用に適しています。夜間や在宅ワーク中でも、周囲を気にせず掃除を任せられるレベルの静かさが期待できます。"
+        },
+        {
+          "field": "床掃除性能",
+          "score": 95,
+          "reviewCount": 3,
+          "comment": "限られたスペースを効率的に掃除する能力は、マンションの生活環境に最適です。特にフローリングでの高い清掃力は、日々の床を快適に保つのに貢献します。"
+        },
+        {
+          "field": "段差乗り越え",
+          "score": 60,
+          "reviewCount": 2,
+          "comment": "室内の敷居やラグで停止する可能性が指摘されています。購入前に自宅の段差を確認し、必要であれば進入禁止エリア設定などの対策を検討する必要があります。"
+        }
+      ]
+    },
+    "workingProfessional": {
+      "overall": 80,
+      "details": [
+        {
+          "field": "アプリの安定性",
+          "score": 75,
+          "reviewCount": 3,
+          "comment": "接続に手こずる場合があるとの声も。しかし、一度設定すればマッピングやスケジュール管理など、外出先からでも掃除を指示できるため、多忙な専門職の時間を節約します。"
+        },
+        {
+          "field": "メンテナンスの容易さ",
+          "score": 88,
+          "reviewCount": 1,
+          "comment": "手入れが簡単で、消耗品の交換時期もアプリが通知してくれるため、手間がかかりません。時間を有効活用したい共働き世帯にとって、メンテナンスの手軽さは大きな利点です。"
+        },
+        {
+          "field": "バッテリー性能",
+          "score": 80,
+          "reviewCount": 1,
+          "comment": "最大3時間の長時間駆動と自動充電・再開機能により、充電切れの心配は少ないです。帰宅したら掃除が終わっている、という理想的な運用が可能です。"
+        }
+      ]
+    },
+    "familyHome": {
+      "overall": 84,
+      "details": [
+        {
+          "field": "床掃除性能",
+          "score": 95,
+          "reviewCount": 3,
+          "comment": "食べこぼしや砂埃など、汚れやすいファミリー世帯のフローリングをきれいに保つ高い清掃能力があります。水拭き機能も床のべたつき解消に効果的です。"
+        },
+        {
+          "field": "バッテリー性能",
+          "score": 80,
+          "reviewCount": 1,
+          "comment": "広い家でも一度の充電で広範囲をカバーできるバッテリー性能を備えています。掃除途中で充電が切れても自動で再開するため、手間なく家全体をきれいにできます。"
+        },
+        {
+          "field": "カーペット清掃",
+          "score": 70,
+          "reviewCount": 1,
+          "comment": "カーペットに関する言及は少ないですが、強力な吸引力と段差乗り越え機能により、多くの家庭のカーペットに対応可能です。子供部屋のラグなどの掃除にも役立つでしょう。"
+        }
+      ]
+    }
+  },
+  "resaleValue": null,
+  "affiliate": {
+    "moshimo": "<!-- START MoshimoAffiliateEasyLink -->\r\n<script type=\"text/javascript\">\r\n(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;\r\nb[a]=b[a]||function(){arguments.currentScript=c.currentScript\r\n||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};\r\nc.getElementById(a)||(d=c.createElement(f),d.src=g,\r\nd.id=a,e=c.getElementsByTagName(\"body\")[0],e.appendChild(d))})\r\n(window,document,\"script\",\"//dn.msmstatic.com/site/cardlink/bundle.js?20220329\",\"msmaflink\");\r\nmsmaflink({\"n\":\"ロボット掃除機 ロボロック Q7Max 白 水拭き マッピング 強力吸引 自動充電 3次元稼働ブラシ 高精度レーザーセンサー アプリ操作 正規品\",\"b\":\"roborock\",\"t\":\"\",\"d\":\"https:\\/\\/m.media-amazon.com\",\"c_p\":\"\\/images\\/I\",\"p\":[\"\\/31KaRm0H1uL._SL500_.jpg\",\"\\/41jv2bvFvsL._SL500_.jpg\",\"\\/41fieEyYk6L._SL500_.jpg\",\"\\/41gFsJjU7gL._SL500_.jpg\",\"\\/41pAR89LbvL._SL500_.jpg\",\"\\/41+zA2J37BL._SL500_.jpg\"],\"u\":{\"u\":\"https:\\/\\/www.amazon.co.jp\\/dp\\/B0BBPKSL1K\",\"t\":\"amazon\",\"r_v\":\"\"},\"v\":\"2.1\",\"b_l\":[{\"id\":1,\"u_tx\":\"楽天市場で見る\",\"u_bc\":\"#f76956\",\"u_url\":\"https:\\/\\/search.rakuten.co.jp\\/search\\/mall\\/%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%20%E3%83%AD%E3%83%9C%E3%83%AD%E3%83%83%E3%82%AF%20Q7Max%20%E7%99%BD%20%E6%B0%B4%E6%8B%AD%E3%81%8D%20%E3%83%9E%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0%20%E5%BC%B7%E5%8A%9B%E5%90%B8%E5%BC%95%20%E8%87%AA%E5%8B%95%E5%85%85%E9%9B%BB%203%E6%AC%A1%E5%85%83%E7%A8%BC%E5%83%8D%E3%83%96%E3%83%A9%E3%82%B7%20%E9%AB%98%E7%B2%BE%E5%BA%A6%E3%83%AC%E3%83%BC%E3%82%B6%E3%83%BC%E3%82%BB%E3%83%B3%E3%82%B5%E3%83%BC%20%E3%82%A2%E3%83%97%E3%83%AA%E6%93%8D%E4%BD%9C%20%E6%AD%A3%E8%A6%8F%E5%93%81\\/\",\"a_id\":5483003,\"p_id\":54,\"pl_id\":27059,\"pc_id\":54,\"s_n\":\"rakuten\",\"u_so\":1},{\"id\":2,\"u_tx\":\"Yahoo!ショッピングで見る\",\"u_bc\":\"#66a7ff\",\"u_url\":\"https:\\/\\/shopping.yahoo.co.jp\\/search?first=1\\u0026p=%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%20%E3%83%AD%E3%83%9C%E3%83%AD%E3%83%83%E3%82%AF%20Q7Max%20%E7%99%BD%20%E6%B0%B4%E6%8B%AD%E3%81%8D%20%E3%83%9E%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0%20%E5%BC%B7%E5%8A%9B%E5%90%B8%E5%BC%95%20%E8%87%AA%E5%8B%95%E5%85%85%E9%9B%BB%203%E6%AC%A1%E5%85%83%E7%A8%BC%E5%83%8D%E3%83%96%E3%83%A9%E3%82%B7%20%E9%AB%98%E7%B2%BE%E5%BA%A6%E3%83%AC%E3%83%BC%E3%82%B6%E3%83%BC%E3%82%BB%E3%83%B3%E3%82%B5%E3%83%BC%20%E3%82%A2%E3%83%97%E3%83%AA%E6%93%8D%E4%BD%9C%20%E6%AD%A3%E8%A6%8F%E5%93%81\",\"a_id\":5483010,\"p_id\":1225,\"pl_id\":27061,\"pc_id\":1925,\"s_n\":\"yahoo\",\"u_so\":2},{\"id\":3,\"u_tx\":\"Amazonで見る\",\"u_bc\":\"#ffcf0f\",\"u_url\":\"https:\\/\\/www.amazon.co.jp\\/dp\\/B0BBPKSL1K\",\"a_id\":5483011,\"p_id\":170,\"pl_id\":27060,\"pc_id\":185,\"s_n\":\"amazon\",\"u_so\":3}],\"eid\":\"QBYJ9\",\"s\":\"l\"});\r\n</script>\r\n<div id=\"msmaflink-QBYJ9\">リンク</div>\r\n<!-- MoshimoAffiliateEasyLink END -->",
+    "direct": "",
+    "hpPublish": true
+  },
+  "priceSource": "amazon-used",
+  "priceCheckedAt": "2026-11-03"
+}

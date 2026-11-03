@@ -3,6 +3,8 @@
     "label": "〜5万円",
     "urlPath": "/compare/robot-vacuum-under-5man",
     "slugs": [
+      "q7-max",
+      "e5",
       "d9-max-gen-2",
       "d10-plus",
       "f20",
@@ -15,27 +17,33 @@
       "eufy-robovac-g30-hybrid",
       "q10v-plus",
       "q10p",
+      "q7t-plus",
+      "d20-pro",
       "roomba-mini-autoempty",
       "s10",
       "deebot-mini",
       "k11-pro",
-      "d20-ultra"
+      "d20-ultra",
+      "q7b-plus"
     ],
-    "count": 17
+    "count": 22
   },
   {
     "label": "5〜7万円",
     "urlPath": "/compare/robot-vacuum-5-7man",
     "slugs": [
       "l10s-ultra-gen-2",
+      "l40-ultra-ce",
       "roomba-105-combo-autoempty",
       "s20",
       "k10-pro",
+      "qrevo-c",
+      "d20-pro-plus",
       "deebot-n30-plus",
       "l10s-ultra-gen-3",
       "deebot-mini-2"
     ],
-    "count": 7
+    "count": 10
   },
   {
     "label": "7〜10万円",
@@ -43,19 +51,22 @@
     "slugs": [
       "qrevo-l",
       "k20-pro",
+      "qrevo-l-pro",
       "x30-ultra",
       "roomba-plus-405-combo-autowash",
       "roomba-max-705-vac-autoempty",
       "deebot-t80-omni",
       "deebot-t50-omni",
       "l40s-pro-ultra",
+      "aqua10s-roller-ae",
       "l40-ultra-ae",
       "deebot-n50-omni",
+      "roomba-plus-515-combo-autowash",
       "qrevo-curv-2-flow",
       "eufy-x10-pro-omni",
       "eufy-robot-vacuum-omni-c28"
     ],
-    "count": 13
+    "count": 16
   },
   {
     "label": "10〜15万円",
@@ -64,16 +75,19 @@
       "deebot-t50s-omni",
       "roomba-plus-505-combo-autowash",
       "deebot-t80s-omni",
+      "deebot-t90-max-omni",
       "deebot-t90-omni",
       "x50-ultra",
       "eufy-robot-vacuum-omni-e25"
     ],
-    "count": 6
+    "count": 7
   },
   {
     "label": "15〜20万円",
     "urlPath": "/compare/robot-vacuum-15-20man",
     "slugs": [
+      "deebot-t90-pro-omni",
+      "qrevo-edge-2",
       "roomba-plus-575-combo-autowash",
       "roomba-max-705-combo-autowash",
       "deebot-x8-pro-omni",
@@ -81,15 +95,18 @@
       "eufy-robot-vacuum-omni-s1-pro",
       "saros-10r"
     ],
-    "count": 6
+    "count": 8
   },
   {
     "label": "20万円〜",
     "urlPath": "/compare/robot-vacuum-20man-plus",
     "slugs": [
       "deebot-x11-omnicyclone",
+      "deebot-x12s-pro-omni",
+      "aqua10-ultra-roller",
+      "roomba-max-monster-875",
       "eufy-robot-vacuum-omni-s2"
     ],
-    "count": 2
+    "count": 5
   }
 ]

@@ -1,0 +1,355 @@
+{
+  "productId": "qrevo-c",
+  "productName": "Qrevo C",
+  "manufacturer": "Roborock",
+  "modelNumber": "QRRC52-04",
+  "imageUrl": "https://thumbnail.image.rakuten.co.jp/@0_mall/yamada-denki/cabinet/a07000441/1385763016.jpg",
+  "overallRating": 4.34,
+  "totalReviews": 18,
+  "price": 65780,
+  "reliabilityScore": 56.8,
+  "asin": "",
+  "metaTitle": "Roborock Qrevo C 詳細分析 | 18件の口コミでわかる実力と注意点",
+  "metaDescription": "Roborock Qrevo Cの口コミ18件を徹底解析。優れた水拭き性能や静音性を評価する声が多い一方、コード類の巻き込みや水タンクの交換頻度に関する指摘も。購入前に知るべき真実を公開します。",
+  "keywords": [
+    "Roborock Qrevo C",
+    "ロボット掃除機",
+    "口コミ",
+    "レビュー",
+    "水拭き",
+    "静音性"
+  ],
+  "categoryC": {
+    "userSatisfaction": {
+      "score": 88,
+      "reviewCount": 18,
+      "comment": "多くの利用者が掃除性能、特に水拭きの仕上がりに高い満足感を示しています。日々の掃除負担が大幅に軽減されたとの声が多数寄せられており、総合的な満足度は非常に高いレベルにあります。"
+    },
+    "repurchaseIntention": {
+      "percentage": 80,
+      "reviewCount": 2,
+      "comment": "実際に1階用と2階用に同じ製品をリピート購入したユーザーがおり、製品への高い信頼がうかがえます。他の利用者も機能面での満足度が高く、再購入意向は強いと推測されます。"
+    },
+    "failureRate": {
+      "percentage": 0,
+      "reviewCount": 18,
+      "breakdown": {
+        "hardware": 0,
+        "software": 0,
+        "environmental": 0
+      },
+      "comment": "提供された18件の口コミの中では、製品の故障や初期不良に関する報告は見られませんでした。ただし、価格変動に関する不満は散見されるため、購入タイミングには注意が必要です。"
+    }
+  },
+  "reliability": {
+    "score": 56.8,
+    "dataAdequacy": {
+      "score": 47,
+      "weight": 60,
+      "description": "口コミ総数が18件と少なく、統計的信頼性を担保するにはデータ量が不足しています。より多角的な評価のためには、継続的な口コミ収集と分析が必要です。"
+    },
+    "consistency": {
+      "score": 62,
+      "weight": 30,
+      "description": "製品性能に関する評価は概ね肯定的ですが、アプリの挙動やメンテナンス頻度など一部の項目で意見が分かれています。価格変動への不満も評価のばらつきに影響しています。",
+      "percentage": 62
+    },
+    "freshness": {
+      "score": 100,
+      "weight": 10,
+      "description": "口コミはすべて過去1年半以内に投稿されており、鮮度は非常に高いです。現行モデルの性能やソフトウェアの挙動を評価する上で、信頼性の高い情報源と言えます。"
+    }
+  },
+  "updateInfo": {
+    "lastUpdated": "2026-08-01",
+    "firmwareVersion": "",
+    "note": "2025年8月から2026年8月までの口コミを分析。全体的に水拭き性能と静音性が高く評価されていますが、障害物回避やアプリ設定の一部に改善を望む声が見られます。"
+  },
+  "timeSaving": {
+    "vacuumMinutes": 10,
+    "mopMinutes": 9,
+    "dailyMinutes": 19,
+    "monthlyHours": 9.5,
+    "annualHours": 115.6,
+    "workDaysEquivalent": 14.4
+  },
+  "performanceAnalysis": {
+    "floorCleaning": {
+      "score": 96,
+      "reviewCount": 8,
+      "positiveReviewCount": 8,
+      "comment": "水拭き性能への評価が特に高く、子供の食べこぼしや床のベタつきも綺麗になると好評です。汚水タンクの水を見て、汚れ落ちを実感する声も多く、満足度は非常に高い項目です。"
+    },
+    "carpetCleaning": {
+      "score": 85,
+      "reviewCount": 1,
+      "positiveReviewCount": 1,
+      "comment": "カーペットも問題なく掃除できるとの肯定的な口コミが1件ありました。言及数は少ないものの、カーペット上での基本的な走行と吸引性能は備えていると考えられます。"
+    },
+    "petHairRemoval": {
+      "score": 88,
+      "reviewCount": 2,
+      "positiveReviewCount": 1,
+      "comment": "猫がいる家庭で稼働させても逃げ出さないほど静かという口コミがあり、ペットがいる環境での使用に適しています。直接的な毛の吸引力への言及は少ないですが、高評価です。"
+    },
+    "quietness": {
+      "score": 92,
+      "reviewCount": 3,
+      "positiveReviewCount": 3,
+      "comment": "「他社製に比べかなり静か」「コードレス掃除機よりも静か」といった声が複数あり、静音性は高く評価されています。夜間や在宅ワーク中でも気兼ねなく使用できるレベルです。"
+    },
+    "stepClimbing": {
+      "score": 90,
+      "reviewCount": 2,
+      "positiveReviewCount": 2,
+      "comment": "部屋間の段差を問題なく乗り越えるとの高評価レビューがあります。マッピング機能と合わせて、複数の部屋をスムーズに清掃する能力が期待でき、ユーザーの満足度も高いです。"
+    },
+    "maintenance": {
+      "score": 85,
+      "reviewCount": 4,
+      "positiveReviewCount": 3,
+      "comment": "モップの自動洗浄やゴミの自動収集機能は「手間が省けて便利」と高く評価されています。一方で、家の広さによっては給水・汚水タンクの交換頻度が高いと感じるユーザーもいます。"
+    },
+    "appStability": {
+      "score": 78,
+      "reviewCount": 3,
+      "positiveReviewCount": 1,
+      "comment": "エリア指定など直感的な操作性を評価する声がある一方、モップ洗浄のために頻繁にドックへ戻る挙動を止められないなど、一部設定の自由度の低さを指摘する声も見られます。"
+    },
+    "batteryLife": {
+      "score": 80,
+      "reviewCount": 1,
+      "positiveReviewCount": 1,
+      "comment": "バッテリーの持続時間に関する直接的な評価は少ないものの、毎日の掃除を問題なくこなしている様子がうかがえます。長期的な耐久性については未知数ですが、現状は十分な性能です。"
+    }
+  },
+  "radarChartData": {
+    "labels": [
+      "フローリング",
+      "カーペット",
+      "ペット毛",
+      "静音性",
+      "段差",
+      "メンテ",
+      "アプリ",
+      "電池"
+    ],
+    "values": [
+      96,
+      85,
+      88,
+      92,
+      90,
+      85,
+      78,
+      80
+    ]
+  },
+  "dataQuality": {
+    "totalReviews": 18,
+    "sampledReviews": 18,
+    "adoptedReviews": 18,
+    "excludedReviews": 0,
+    "trustScore": 56.8,
+    "comment": "楽天の18件のレビューを分析。製品性能に関する評価が中心ですが、価格変動への不満も含まれます。サンプル数が少ないため、スコアは参考値と捉える必要があります。"
+  },
+  "reviewKeywords": {
+    "positive": [
+      {
+        "keyword": "水拭き・拭き掃除が良い",
+        "count": 5
+      },
+      {
+        "keyword": "静かで快適",
+        "count": 3
+      },
+      {
+        "keyword": "満足・買ってよかった",
+        "count": 2
+      },
+      {
+        "keyword": "吸引力が高い",
+        "count": 1
+      },
+      {
+        "keyword": "綺麗になる",
+        "count": 1
+      },
+      {
+        "keyword": "使いやすい・便利",
+        "count": 1
+      },
+      {
+        "keyword": "家事が楽になった",
+        "count": 1
+      }
+    ],
+    "negative": [
+      {
+        "keyword": "コードを巻き込む",
+        "count": 1
+      },
+      {
+        "keyword": "動作音が気になる",
+        "count": 1
+      }
+    ]
+  },
+  "successStrategies": [
+    {
+      "rank": 1,
+      "issue": "床面のコード類や小物の巻き込み",
+      "occurrenceRate": 5.6,
+      "occurrenceCount": 1,
+      "environmentalFactor": "床に電源コードやUSBケーブル、薄いラグなどが散乱している状態。",
+      "technicalDescription": "本機は障害物回避機能を搭載していますが、細いコードや薄い布類はセンサーが検知しきれず、ブラシに巻き込んでしまうことがあります。特に扇風機や充電器のコードは注意が必要です。",
+      "avoidanceStrategies": [
+        {
+          "method": "掃除前に床のコード類を片付ける",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "物理的に障害物をなくすことが最も確実な対策です。ケーブルホルダーや結束バンドを活用し、コードを壁際に固定したり、家具の裏にまとめることで巻き込みを未然に防ぎます。"
+        },
+        {
+          "method": "アプリで進入禁止エリアを設定する",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalRationale": "Roborockアプリのマップ編集機能で、コード類が集中しているエリアを「進入禁止エリア」として設定します。これにより、ロボットがその区域に進入するのを防ぐことができます。"
+        }
+      ],
+      "preventionTips": "日頃から床にモノを置かない習慣をつけることが最も効果的です。特にスマートフォン等の充電ケーブルは、使用後すぐに片付けるか、壁際の高い位置で充電するよう心がけましょう。"
+    }
+  ],
+  "topComplaints": [
+    {
+      "title": "コード類の巻き込み",
+      "percentage": 5.6,
+      "reviewCount": 1,
+      "description": "扇風機のコードなどを構わず巻き込んで停止してしまうとの報告があります。障害物回避センサーは搭載されていますが、細いケーブルや紐は認識しにくい傾向があるようです。",
+      "solution": "掃除を開始する前に、床に落ちている電源コードや充電ケーブルを片付けるのが最も確実です。アプリでコード類が多い場所を進入禁止エリアに設定することでも回避可能です。"
+    },
+    {
+      "title": "給水・汚水タンクの交換頻度",
+      "percentage": 5.6,
+      "reviewCount": 1,
+      "description": "水拭きを4〜5回行うと給水タンクが空になり、汚水タンクが満杯になるとの指摘があります。家の広さや水拭きの頻度によっては、タンクの管理が手間に感じられる可能性があります。",
+      "solution": "これは製品の仕様であり、こまめな水拭きの裏返しでもあります。アプリで水拭きの範囲を限定したり、水量を「少なめ」に設定することで、交換頻度をある程度調整することが可能です。"
+    },
+    {
+      "title": "アプリ設定の自由度が低い",
+      "percentage": 5.6,
+      "reviewCount": 1,
+      "description": "モップ洗浄のためにドックへ戻る頻度を任意に設定できず、掃除を中断せざるを得ないという不満が見られます。特定の条件下で、ユーザーの意図通りの動作設定が難しい場合があるようです。",
+      "solution": "Roborockアプリのドック設定内で、モップ洗浄の間隔を「時間ごと」または「部屋ごと」に設定できます。時間設定のスライダーを最大にすることで、戻る頻度を減らすことが可能です。"
+    },
+    {
+      "title": "購入時期による価格差が大きい",
+      "percentage": 11.1,
+      "reviewCount": 2,
+      "description": "セール期間中と通常時で1万円以上の価格差があったとの報告が2件ありました。製品性能への不満ではないものの、購入タイミングを誤ると大きな不満に繋がる可能性があります。",
+      "solution": "大手ECサイトのセール時期（楽天スーパーセール、Amazonプライムデーなど）を狙って購入するのがおすすめです。価格比較サイトで価格推移を確認し、底値の時期を見極めましょう。"
+    }
+  ],
+  "attributeScores": {
+    "petOwner": {
+      "overall": 90,
+      "details": [
+        {
+          "field": "ペット毛吸引",
+          "score": 88,
+          "reviewCount": 2,
+          "comment": "ペットがいる環境でも静かに動作するため、動物にストレスを与えにくい点が評価されています。吸引力も高く、抜け毛の掃除にも十分な性能を発揮することが期待されます。"
+        },
+        {
+          "field": "床掃除",
+          "score": 96,
+          "reviewCount": 8,
+          "comment": "ペットの足跡や床の汚れも強力な水拭き機能で綺麗にします。アレルギー対策としても、微細なホコリやフケをしっかり除去できるため、ペットオーナーにとって心強い機能です。"
+        },
+        {
+          "field": "メンテナンス性",
+          "score": 85,
+          "reviewCount": 4,
+          "comment": "自動ゴミ収集やモップ洗浄機能により、日々の手入れは簡単です。ただし、ペットがいると汚水タンクが汚れやすいため、タンクの清掃はこまめに行うことをおすすめします。"
+        }
+      ]
+    },
+    "apartment": {
+      "overall": 92,
+      "details": [
+        {
+          "field": "静音性",
+          "score": 92,
+          "reviewCount": 3,
+          "comment": "集合住宅で最も気になる動作音が非常に静かであると高く評価されています。夜間や早朝の稼働でも隣室に迷惑をかける心配が少なく、気兼ねなく使用できる点が大きな魅力です。"
+        },
+        {
+          "field": "床掃除",
+          "score": 96,
+          "reviewCount": 8,
+          "comment": "コンパクトな居住空間でも、隅々まで丁寧に掃除します。特にフローリングの拭き掃除性能が高く、限られたスペースを常に清潔に保ちたいマンション居住者に最適です。"
+        },
+        {
+          "field": "段差乗り越え",
+          "score": 90,
+          "reviewCount": 2,
+          "comment": "部屋の敷居やカーペットの段差もスムーズに乗り越えるため、掃除が中断されにくいです。間取りが複雑なマンションでも、安心して掃除を任せることができます。"
+        }
+      ]
+    },
+    "workingProfessional": {
+      "overall": 82,
+      "details": [
+        {
+          "field": "アプリ安定性",
+          "score": 78,
+          "reviewCount": 3,
+          "comment": "外出先からの遠隔操作やスケジュール設定など、基本的な機能は直感的に使えます。忙しい中でも手軽に掃除を指示できるため、共働き世帯のライフスタイルにマッチします。"
+        },
+        {
+          "field": "メンテナンス性",
+          "score": 85,
+          "reviewCount": 4,
+          "comment": "ゴミ収集からモップ洗浄・乾燥まで全自動で行うため、メンテナンスの手間が最小限で済みます。時間に追われる日々でも、掃除機の手入れに時間を取られることがありません。"
+        },
+        {
+          "field": "バッテリー",
+          "score": 80,
+          "reviewCount": 1,
+          "comment": "一度の充電で家全体を掃除できる十分なバッテリー性能を備えています。不在時に掃除を完了させられるため、帰宅時には常にきれいな部屋で過ごすことができます。"
+        }
+      ]
+    },
+    "familyHome": {
+      "overall": 90,
+      "details": [
+        {
+          "field": "床掃除",
+          "score": 96,
+          "reviewCount": 8,
+          "comment": "子供の食べこぼしや素足での皮脂汚れなど、ファミリー世帯特有の床の汚れを水拭きで徹底的に除去します。広いリビングでも効率的に掃除を行い、清潔な環境を維持します。"
+        },
+        {
+          "field": "バッテリー",
+          "score": 80,
+          "reviewCount": 1,
+          "comment": "広い家でも途中で充電切れになる心配は少ないです。万が一バッテリーがなくなっても、自動でドックに戻り充電後、中断した場所から掃除を再開する賢さを備えています。"
+        },
+        {
+          "field": "カーペット掃除",
+          "score": 85,
+          "reviewCount": 1,
+          "comment": "リビングのラグや子供部屋のカーペットも問題なく掃除できます。カーペットを検知して自動で吸引力を上げる機能もあり、様々な床材に対応できる汎用性の高さが魅力です。"
+        }
+      ]
+    }
+  },
+  "resaleValue": null,
+  "affiliate": {
+    "moshimo": "<!-- START MoshimoAffiliateEasyLink -->\r\n<script type=\"text/javascript\">\r\n(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;\r\nb[a]=b[a]||function(){arguments.currentScript=c.currentScript\r\n||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};\r\nc.getElementById(a)||(d=c.createElement(f),d.src=g,\r\nd.id=a,e=c.getElementsByTagName(\"body\")[0],e.appendChild(d))})\r\n(window,document,\"script\",\"//dn.msmstatic.com/site/cardlink/bundle.js?20220329\",\"msmaflink\");\r\nmsmaflink({\"n\":\"Roborock ロボット掃除機 Qrevo C QRRC52-04\",\"b\":\"\",\"t\":\"\",\"d\":\"https:\\/\\/thumbnail.image.rakuten.co.jp\",\"c_p\":\"\\/@0_mall\\/yamada-denki\\/cabinet\\/a07000441\",\"p\":[\"\\/1385763016.jpg\",\"\\/1385763016_1.jpg\",\"\\/1385763016_2.jpg\"],\"u\":{\"u\":\"https:\\/\\/item.rakuten.co.jp\\/yamada-denki\\/1385763016\\/\",\"t\":\"rakuten\",\"r_v\":\"\"},\"v\":\"2.1\",\"b_l\":[{\"id\":1,\"u_tx\":\"楽天市場で見る\",\"u_bc\":\"#f76956\",\"u_url\":\"https:\\/\\/item.rakuten.co.jp\\/yamada-denki\\/1385763016\\/\",\"a_id\":5483003,\"p_id\":54,\"pl_id\":27059,\"pc_id\":54,\"s_n\":\"rakuten\",\"u_so\":1},{\"id\":2,\"u_tx\":\"Yahoo!ショッピングで見る\",\"u_bc\":\"#66a7ff\",\"u_url\":\"https:\\/\\/shopping.yahoo.co.jp\\/search?first=1\\u0026p=Roborock%20%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%20Qrevo%20C%20QRRC52-04\",\"a_id\":5483010,\"p_id\":1225,\"pl_id\":27061,\"pc_id\":1925,\"s_n\":\"yahoo\",\"u_so\":2},{\"id\":3,\"u_tx\":\"Amazonで見る\",\"u_bc\":\"#ffcf0f\",\"u_url\":\"https:\\/\\/www.amazon.co.jp\\/s\\/ref=nb_sb_noss_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A\\u0026url=search-alias%3Daps\\u0026field-keywords=Roborock%20%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%20Qrevo%20C%20QRRC52-04\",\"a_id\":5483011,\"p_id\":170,\"pl_id\":27060,\"pc_id\":185,\"s_n\":\"amazon\",\"u_so\":3}],\"eid\":\"xgJya\",\"s\":\"l\"});\r\n</script>\r\n<div id=\"msmaflink-xgJya\">リンク</div>\r\n<!-- MoshimoAffiliateEasyLink END -->",
+    "direct": "",
+    "hpPublish": true
+  },
+  "priceSource": "shop",
+  "priceCheckedAt": "2026-11-03"
+}

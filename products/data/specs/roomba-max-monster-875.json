@@ -1,0 +1,53 @@
+{
+  "productId": "roomba-max-monster-875",
+  "modelNumber": "Z183060",
+  "checkedAt": "2026-11-03",
+  "sources": [
+    { "label": "iRobot公式オンラインストア 製品ページ", "url": "https://store.irobot-jp.com/item/Z183060.html" },
+    { "label": "iRobot公式 プレスリリース（2026年10月14日）", "url": "https://www.irobot-jp.com/press/pdf/20261014_01.pdf" }
+  ],
+  "basic": {
+    "dimensionsMm": { "w": 356, "d": 360, "h": 99.8 },
+    "weightKg": 5.4,
+    "runtimeMin": null,
+    "chargeTimeMin": 240,
+    "batteryMah": null,
+    "releaseDate": "2026-10",
+    "warrantyMonths": 12
+  },
+  "cleaning": {
+    "suctionPa": null,
+    "dustboxMl": null,
+    "waterTankMl": null,
+    "mappingType": "ClearView™ Pro Dual-Line LiDAR（3Dマップ対応）",
+    "obstacleAvoidance": "PrecisionVision™ AI + ClearView™ Pro Dual-Line LiDAR（LiDAR＋カメラ＋LEDライト）",
+    "climbHeightMm": 35,
+    "climbNote": null,
+    "noiseDb": null
+  },
+  "mop": {
+    "type": "PowerSpin™ Max ローラーモップ with PerfectEdge®＋ThermaMist™（60℃温水ミスト・最大300回転/分・18N加圧）",
+    "liftMm": null,
+    "autoDetach": false
+  },
+  "station": {
+    "autoEmpty": true,
+    "mopWash": true,
+    "hotWaterWash": true,
+    "hotWaterNote": "80℃温水洗浄／55℃温風乾燥",
+    "hotAirDry": true,
+    "autoRefillDrain": false,
+    "detergentDispenser": true,
+    "dustBagMl": null,
+    "cleanTankMl": 4000,
+    "dirtyTankMl": null,
+    "dimensionsMm": { "w": 350, "d": 499, "h": 475 },
+    "weightKg": 8.1
+  },
+  "smart": {
+    "app": "Roomba Home",
+    "wifi": "2.4GHzのみ",
+    "voiceAssistants": ["Alexa", "Googleアシスタント", "Siri"],
+    "matter": null
+  }
+}

@@ -118,6 +118,34 @@
         { "label": "iRobot US 公式 Plus 575 Combo", "url": "https://www.irobot.com/en_US/roomba-plus-575-combo/R285020.html" }
       ],
       "note": "指定の型番「RVD-Y6」は確認できず、国内品番はR285060（2026年5月発売のオンライン専用モデル。2025年ラインナップではない）。国内公式ストアのページには仕様表が無く、寸法30.3(奥行)×29.8(幅)×8.4(高さ)cm・ステーション34.0×33.0×48.5cmはAmazon掲載のメーカー比較表、重量3.1kgは価格.com。段差3.5cmは国内公式プレスリリース（自動昇降式前輪）とUS公式の35mmで一致。LiDARは本体内蔵（天面突起なし）。排せつ物認識は国内ページでは明記を確認できず、US公式の「PrecisionVision AI immediately recognizes cords, socks, even pet waste」に基づく。なおUS公式のRobot Dimensions(14.1×13.8×4.2in)・重量9.44lbは国内値と大きく食い違うため不採用。"
+    },
+    "roomba-plus-515-combo-autowash": {
+      "dimensionsMm": { "w": 298, "d": 303, "h": 84 },
+      "weightKg": 2.9,
+      "climbHeightMm": null,
+      "obstacleAvoidance": "LiDAR（ClearView LiDAR／Integrated Line Laser）※カメラなし",
+      "recognizesPetWaste": false,
+      "liftLidar": false,
+      "stationDimensionsMm": { "w": 330, "d": 340, "h": 485 },
+      "sources": [
+        { "label": "アイロボット公式オンラインストア N285060 製品仕様", "url": "https://store.irobot-jp.com/item/N285060.html" },
+        { "label": "アイロボット プレスリリース 2026-05-27（Roomba Plus 515 Combo）", "url": "https://www.irobot-jp.com/press/pdf/20260527_01.pdf" }
+      ],
+      "note": "公式仕様: 30.3(奥行)×29.8(幅)×8.4(高さ)cm、本体約2.9kg、ステーション34.0(奥行)×33.0(幅)×48.5(高さ)cm/約5.3kg（公式ストア表記は「約約5.3kg」）。2026年5月29日発売。LiDARは新開発「Integrated Line Laser」を本体前面に埋め込み（天面突起なし）。物体認識はClearView LiDARのみでカメラの記載なし（2026年秋冬ラインナップ表でもPrecisionVision AIは775/875のみ）のため排泄物認識はfalse。ステーションの自動給水は本体タンクへの給水で、水道直結ではない。段差乗り越え高さは公式に数値記載なし（同寸法のPlus 575の3.5cmは本機の公式資料に記載なし・未採用）。"
+    },
+    "roomba-max-monster-875": {
+      "dimensionsMm": { "w": 356, "d": 360, "h": 99.8 },
+      "weightKg": 5.4,
+      "climbHeightMm": 35,
+      "obstacleAvoidance": "AIカメラ（PrecisionVision AI）＋LiDAR（ClearView Pro Dual-Line LiDAR）＋LEDライト",
+      "recognizesPetWaste": true,
+      "liftLidar": false,
+      "stationDimensionsMm": { "w": 350, "d": 499, "h": 475 },
+      "sources": [
+        { "label": "アイロボット公式オンラインストア Z183060 製品仕様", "url": "https://store.irobot-jp.com/item/Z183060.html" },
+        { "label": "アイロボット プレスリリース 2026-10-14（Roomba Monster／Max 875 Combo）", "url": "https://www.irobot-jp.com/press/pdf/20261014_01.pdf" }
+      ],
+      "note": "公式仕様: 36.0(奥行)×35.6(幅)×9.98(高さ)cm、本体約5.4kg、ステーション49.9(奥行)×35.0(幅)×47.5(高さ)cm/約8.1kg。2026年10月21日発売（通称Roomba Monster）。段差は公式ストア・プレスリリースとも「最大3.5cm」。LiDARは本体に内蔵とプレスリリースに明記。ペットの排せつ物回避は「犬または猫の固形の糞のみ」と公式注記あり。ステーションは4Lの給水タンク（水道直結ではない）。"
     }
   }
 }

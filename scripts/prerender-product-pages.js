@@ -23,7 +23,11 @@ const ROOT = path.resolve(__dirname, "..");
 const PRODUCTS_DIR = path.join(ROOT, "products");
 const DATA_DIR = path.join(PRODUCTS_DIR, "data");
 const EXCLUDED = new Set(["template-unified.html", "template-unified-old.html", "test-js.html"]);
-const LOADER_V = "20261021c";
+const LOADER_V = "20261103a";
+// 口コミがこれ未満の製品は機能別ランキングに載せない（generate-floor-ranking-page.py の MIN_RANK_REVIEWS と同じ値）
+const MIN_RANK_REVIEWS = 10;
+// 口コミがこれ未満の製品は点数を参考値として扱う（ランキングの「参考値」バッジと同じ値）
+const LOW_REVIEW_THRESHOLD = 20;
 const CHARTS_V = "20261021c"; // products/js/product-charts.js を変えたら上げる
 const VERIFIED_CONSUMABLES = loadVerified(path.join(ROOT, "scripts", "data", "consumables"));
 // 製品ごとの title / description の上書き（scripts/data/seo-overrides.json）
@@ -272,6 +276,28 @@ function upsertOpenGraphTags(html, data, metadata) {
     throw new Error(`${data.productId}: canonical tag missing for Open Graph insertion`);
   }
   return html.replace(canonicalRe, `$1\n    ${tags.join("\n    ")}`);
+}
+
+// 価格の出典（products/js/product-loader.js の PRICE_SOURCE_LABELS と同じ表記）
+const PRICE_SOURCE_LABELS = {
+  official: "メーカー公式オンラインストア",
+  amazon: "メーカー公式Amazonストア",
+  shop: "購入リンク先のショップ",
+  "amazon-used": "Amazonの中古品",
+};
+
+// 価格の注記を priceSource に合わせて静的HTMLにも書く（JSなしでも出典が正しく読めるように）。
+// priceSource が無い製品は HTML の既定文のまま
+function injectPriceNote(html, data) {
+  const label = PRICE_SOURCE_LABELS[data.priceSource];
+  if (!label) return html;
+  let checked = "";
+  if (data.priceCheckedAt) {
+    const [y, m, d] = String(data.priceCheckedAt).split(/[-/]/);
+    checked = `（${y}年${Number(m)}月${Number(d)}日時点）`;
+  }
+  const note = `表示価格は${label}の販売価格です${checked}。<br>セールで頻繁に変わるため、<strong>購入前に最新の価格を確認</strong>してください。`;
+  return html.replace(/(<p class="price-note">)[\s\S]*?(<\/p>)/, `$1${note}$2`);
 }
 
 function replaceSimpleDynamic(html, dottedPath, value) {
@@ -597,6 +623,7 @@ function prerenderHtml(html, data) {
     }
     html = replaceSimpleDynamic(html, dottedPath, formatValue(dottedPath, value));
   }
+  html = injectPriceNote(html, data);
 
   // H1はSEOタイトルを表示（｜単位で改行できる構造）
   html = html.replace(
@@ -610,6 +637,8 @@ function prerenderHtml(html, data) {
     buildConsumablesSection(data, VERIFIED_CONSUMABLES[data.productId]),
     data.productId,
   );
+
+  html = injectLowSampleNotice(html, data);
 
   // P0-1: bake analysis sections into static HTML for crawlers
   html = injectPerformanceDetails(html, data);
@@ -631,6 +660,27 @@ function prerenderHtml(html, data) {
   html = stripProductNameFromSectionHeadings(html, metadata.name, data.productName);
 
   return html;
+}
+
+const LOW_SAMPLE_MARKED = /\n?[ \t]*<!-- LOW_SAMPLE_NOTICE_START -->[\s\S]*?<!-- LOW_SAMPLE_NOTICE_END -->/;
+
+// 口コミが少ない製品は、本文の最初に「点数は参考値」の注意書きを出す
+function injectLowSampleNotice(html, data) {
+  html = html.replace(LOW_SAMPLE_MARKED, "");
+  const reviews = Number(data.totalReviews || 0);
+  if (reviews >= LOW_REVIEW_THRESHOLD) return html;
+  const excluded = reviews < MIN_RANK_REVIEWS;
+  const body = excluded
+    ? `口コミが少ないと1件の声で点数が大きく変わるため、この製品は<strong>機能別ランキングに載せていません</strong>。口コミが${MIN_RANK_REVIEWS}件以上たまったら更新します。`
+    : `口コミが${LOW_REVIEW_THRESHOLD}件以上たまるまでは、ほかの製品と比べるときの目安としてご覧ください。`;
+  const notice = `
+        <!-- LOW_SAMPLE_NOTICE_START -->
+        <aside class="low-sample-notice" role="note" style="max-width: 760px; margin: 1.5rem auto 0; padding: 1rem 1.25rem; border: 2px solid #f59e0b; border-radius: 12px; background: #fffbeb; color: #78350f; line-height: 1.7;">
+            <p style="margin: 0 0 0.35rem; font-weight: 800; font-size: 1.05rem;">⚠ 口コミがまだ${reviews}件のため、点数は参考値です</p>
+            <p style="margin: 0; font-size: 0.95rem;">${body}</p>
+        </aside>
+        <!-- LOW_SAMPLE_NOTICE_END -->`;
+  return html.replace(/(<!-- Main Content -->\s*<div class="container">)/, (m) => m + notice);
 }
 
 function injectPerformanceDetails(html, data) {

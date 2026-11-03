@@ -1,0 +1,54 @@
+{
+  "productId": "q7-max",
+  "modelNumber": "Q7M02-04",
+  "checkedAt": "2026-11-03",
+  "sources": [
+    { "label": "Roborock公式 製品ページ", "url": "https://jp.roborock.com/pages/roborock-q7-max" },
+    { "label": "価格.com スペック（型番・外形寸法・質量・発売日）", "url": "https://kakaku.com/item/K0001462442/spec/" },
+    { "label": "マイナビニュース（Q7 Max+/Q7 Max 発売発表・2022年8月）", "url": "https://news.mynavi.jp/article/20220804-2415633/" }
+  ],
+  "basic": {
+    "dimensionsMm": { "w": 353, "d": 353, "h": 96.5 },
+    "weightKg": 3.7,
+    "runtimeMin": 180,
+    "chargeTimeMin": 360,
+    "batteryMah": 5200,
+    "releaseDate": "2022-08",
+    "warrantyMonths": null
+  },
+  "cleaning": {
+    "suctionPa": 4200,
+    "dustboxMl": 470,
+    "waterTankMl": 350,
+    "mappingType": "LDSレーザー",
+    "obstacleAvoidance": null,
+    "climbHeightMm": 20,
+    "climbNote": null,
+    "noiseDb": null
+  },
+  "mop": {
+    "type": "水拭きモップ（水量30段階）",
+    "liftMm": null,
+    "autoDetach": false
+  },
+  "station": {
+    "autoEmpty": false,
+    "mopWash": false,
+    "hotWaterWash": false,
+    "hotWaterNote": null,
+    "hotAirDry": false,
+    "autoRefillDrain": false,
+    "detergentDispenser": false,
+    "dustBagMl": null,
+    "cleanTankMl": null,
+    "dirtyTankMl": null,
+    "dimensionsMm": null,
+    "weightKg": null
+  },
+  "smart": {
+    "app": "Roborock",
+    "wifi": null,
+    "voiceAssistants": ["Alexa", "Googleアシスタント", "Siri"],
+    "matter": null
+  }
+}

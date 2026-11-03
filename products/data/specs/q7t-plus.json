@@ -1,0 +1,55 @@
+{
+  "productId": "q7t-plus",
+  "modelNumber": "Q7TP02-04",
+  "checkedAt": "2026-11-03",
+  "sources": [
+    { "label": "Roborock公式 製品ページ", "url": "https://jp.roborock.com/pages/roborock-q7-t" },
+    { "label": "Roborock公式 プレスリリース（Qrevo C / Q7T+ / Q7T・2025年5月27日）", "url": "https://resemom.jp/release/prtimes/20250527/145774.html" },
+    { "label": "PHILE WEB（Q7T+ 発売発表・2025年5月27日）", "url": "https://gadget.phileweb.com/?p=102555" },
+    { "label": "価格.com スペック（型番・質量・運転時間）", "url": "https://kakaku.com/item/K0001691578/spec/" }
+  ],
+  "basic": {
+    "dimensionsMm": { "w": 325, "d": 327, "h": 99 },
+    "weightKg": 2.8,
+    "runtimeMin": 150,
+    "chargeTimeMin": 270,
+    "batteryMah": null,
+    "releaseDate": "2025-06",
+    "warrantyMonths": null
+  },
+  "cleaning": {
+    "suctionPa": 10000,
+    "dustboxMl": 200,
+    "waterTankMl": 280,
+    "mappingType": "LDSレーザー",
+    "obstacleAvoidance": null,
+    "climbHeightMm": null,
+    "climbNote": null,
+    "noiseDb": null
+  },
+  "mop": {
+    "type": "水拭きモップ（水量3段階）",
+    "liftMm": null,
+    "autoDetach": false
+  },
+  "station": {
+    "autoEmpty": true,
+    "mopWash": false,
+    "hotWaterWash": false,
+    "hotWaterNote": null,
+    "hotAirDry": false,
+    "autoRefillDrain": false,
+    "detergentDispenser": false,
+    "dustBagMl": null,
+    "cleanTankMl": null,
+    "dirtyTankMl": null,
+    "dimensionsMm": { "w": 213, "d": 178, "h": 259 },
+    "weightKg": null
+  },
+  "smart": {
+    "app": "Roborock",
+    "wifi": null,
+    "voiceAssistants": ["Alexa", "Googleアシスタント"],
+    "matter": null
+  }
+}

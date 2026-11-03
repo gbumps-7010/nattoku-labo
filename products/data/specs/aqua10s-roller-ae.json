@@ -1,0 +1,71 @@
+{
+  "productId": "aqua10s-roller-ae",
+  "modelNumber": null,
+  "checkedAt": "2026-11-03",
+  "sources": [
+    {
+      "label": "Dreame公式 製品ページ",
+      "url": "https://www.dreametech.jp/products/aqua10s-roller-ae"
+    },
+    {
+      "label": "Dreame公式 アフターサービスポリシー（保証）",
+      "url": "https://www.dreametech.jp/pages/after-sales-policy"
+    }
+  ],
+  "basic": {
+    "dimensionsMm": {
+      "w": 350,
+      "d": 350,
+      "h": 113
+    },
+    "weightKg": 5.1,
+    "runtimeMin": null,
+    "chargeTimeMin": null,
+    "batteryMah": 5200,
+    "releaseDate": null,
+    "warrantyMonths": 36
+  },
+  "cleaning": {
+    "suctionPa": 35000,
+    "dustboxMl": 220,
+    "waterTankMl": null,
+    "mappingType": "LDS",
+    "obstacleAvoidance": "LDS + シングルレーザー 3D 構造化ライト（3DAdapt）",
+    "climbHeightMm": 20,
+    "climbNote": null,
+    "noiseDb": null
+  },
+  "mop": {
+    "type": "ローラー式（AquaRoll 浄水ローラーモップ・幅270mm・最大40mm伸縮）",
+    "liftMm": 14,
+    "autoDetach": null
+  },
+  "station": {
+    "autoEmpty": true,
+    "mopWash": true,
+    "hotWaterWash": true,
+    "hotWaterNote": "100℃（ウォッシュボードPTC）",
+    "hotAirDry": true,
+    "autoRefillDrain": false,
+    "detergentDispenser": true,
+    "dustBagMl": 3200,
+    "cleanTankMl": 4000,
+    "dirtyTankMl": 3500,
+    "dimensionsMm": {
+      "w": 420,
+      "d": 440,
+      "h": 505
+    },
+    "weightKg": 10.4
+  },
+  "smart": {
+    "app": "Dreamehome",
+    "wifi": null,
+    "voiceAssistants": [
+      "Alexa",
+      "Googleアシスタント",
+      "Siri"
+    ],
+    "matter": true
+  }
+}

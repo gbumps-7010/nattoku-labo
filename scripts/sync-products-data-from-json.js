@@ -239,7 +239,18 @@ const PRICE_RANGES = [
   if (!navProductsRe.test(nav)) {
     throw new Error("Could not patch products/js/navigation.js (ALL_PRODUCTS / MANUFACTURERS pattern not found)");
   }
-  const replaced = nav.replace(navProductsRe, newBlock);
+  // MANUFACTURER_LABELS などを挟んだ位置にある既存の PRICE_RANGES は上の正規表現で拾えないため、
+  // 先頭以外の PRICE_RANGES ブロックを取り除いて二重宣言（SyntaxError）を防ぐ
+  let seenPriceRanges = false;
+  const replaced = nav
+    .replace(navProductsRe, newBlock)
+    .replace(/(?:\/\/ 価格帯一覧[^\n]*\r?\n)?const PRICE_RANGES = \[[\s\S]*?\];\r?\n(?:\r?\n)?/g, (block) => {
+      if (!seenPriceRanges) {
+        seenPriceRanges = true;
+        return block;
+      }
+      return "";
+    });
   fs.writeFileSync(NAVIGATION_JS_PATH, replaced, "utf8");
   if (replaced !== nav) {
     console.log(`✅ Updated products/js/navigation.js (${items.length} products).`);

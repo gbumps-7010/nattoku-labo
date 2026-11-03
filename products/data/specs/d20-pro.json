@@ -1,0 +1,71 @@
+{
+  "productId": "d20-pro",
+  "modelNumber": null,
+  "checkedAt": "2026-11-03",
+  "sources": [
+    {
+      "label": "Dreame公式 製品ページ",
+      "url": "https://www.dreametech.jp/products/d20-pro"
+    },
+    {
+      "label": "Dreame公式 アフターサービスポリシー（保証）",
+      "url": "https://www.dreametech.jp/pages/after-sales-policy"
+    }
+  ],
+  "basic": {
+    "dimensionsMm": {
+      "w": 350,
+      "d": 350,
+      "h": 96.9
+    },
+    "weightKg": 3.5,
+    "runtimeMin": 285,
+    "chargeTimeMin": null,
+    "batteryMah": 5200,
+    "releaseDate": null,
+    "warrantyMonths": 36
+  },
+  "cleaning": {
+    "suctionPa": 13000,
+    "dustboxMl": 700,
+    "waterTankMl": null,
+    "mappingType": "LDS",
+    "obstacleAvoidance": "シングルレーザー 3D 構造化ライト",
+    "climbHeightMm": 20,
+    "climbNote": null,
+    "noiseDb": null
+  },
+  "mop": {
+    "type": "取り外し可能なモップパッド",
+    "liftMm": null,
+    "autoDetach": false
+  },
+  "station": {
+    "autoEmpty": false,
+    "mopWash": false,
+    "hotWaterWash": false,
+    "hotWaterNote": null,
+    "hotAirDry": false,
+    "autoRefillDrain": false,
+    "detergentDispenser": false,
+    "dustBagMl": null,
+    "cleanTankMl": null,
+    "dirtyTankMl": null,
+    "dimensionsMm": {
+      "w": 130,
+      "d": 126,
+      "h": 93
+    },
+    "weightKg": 0.4
+  },
+  "smart": {
+    "app": "Dreamehome",
+    "wifi": null,
+    "voiceAssistants": [
+      "Alexa",
+      "Googleアシスタント",
+      "Siri"
+    ],
+    "matter": null
+  }
+}

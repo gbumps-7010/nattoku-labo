@@ -4,8 +4,8 @@
   "manufacturer": "Anker",
   "modelNumber": "T2253",
   "imageUrl": "https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t2253/t2253_daily.jpg",
-  "overallRating": 4.02,
-  "totalReviews": 221,
+  "overallRating": 3.99,
+  "totalReviews": 223,
   "price": 39990,
   "reliabilityScore": 84.4,
   "asin": "",
@@ -17,28 +17,28 @@
     "静音",
     "アプリ連携"
   ],
-  "metaTitle": "Eufy RoboVac G30 Hybrid 詳細分析 | 211件の口コミで判明した静音性と水拭きの実力",
-  "metaDescription": "Eufy RoboVac G30 Hybridの211件の口コミを徹底解析。フローリングでの高い清掃能力や静音性が高評価。一方で、段差の乗り越えや特定の家具でのトラブルなど、購入前に知るべき注意点を公開。",
+  "metaTitle": "Eufy RoboVac G30 Hybrid 詳細分析 | 213件の口コミで判明した静音性と水拭きの実力",
+  "metaDescription": "Eufy RoboVac G30 Hybridの213件の口コミを徹底解析。フローリング掃除や静音性の高評価、一方でバッテリー寿命や段差でのエラーなど、購入前に知るべき真実を公開。",
   "categoryC": {
     "userSatisfaction": {
-      "score": 85,
-      "reviewCount": 211,
-      "comment": "多くのユーザーが価格以上の性能に満足しており、特にフローリングの清掃能力と静音性を高く評価しています。日々の掃除が楽になったとの声が多数寄せられ、生活の質が向上したと感じる方が多いようです。"
+      "score": 88,
+      "reviewCount": 213,
+      "comment": "フローリングでの高い清掃能力と静音性が多くのユーザーから支持されています。一方で、バッテリーの寿命や段差でのエラーに関する不満も見られ、長期的な利用には注意が必要です。"
     },
     "repurchaseIntention": {
-      "percentage": 78,
-      "reviewCount": 180,
-      "comment": "初めてのロボット掃除機として購入したユーザーからの満足度が高く、同メーカーの次期モデルへの買い替え意向も見られます。ただし、2年以上使用したユーザーからはバッテリー劣化や故障を理由に他社製品を検討する声も一部ありました。"
+      "percentage": 75,
+      "reviewCount": 160,
+      "comment": "「コスパが良い」「家事が楽になった」と評価する声が多く、同価格帯での買い替え意向は高いです。しかし、2〜3年で発生するバッテリー問題が再購入の障壁となる可能性があります。"
     },
     "failureRate": {
-      "percentage": 14.7,
-      "reviewCount": 31,
+      "percentage": 15,
+      "reviewCount": 33,
       "breakdown": {
         "hardware": 10,
-        "software": 3,
-        "environmental": 18
+        "software": 2,
+        "environmental": 3
       },
-      "comment": "最も多い不具合は「故障・不具合」で、特に2年以上の長期使用後にバッテリーエラーや車輪の故障が報告されています。また、段差やコード、特定の家具に引っかかり停止するケースも散見され、使用環境への依存度が高い傾向にあります。"
+      "comment": "最も多い不満はバッテリー劣化による充電・動作不良です。2年以上経過すると発生率が高まる傾向にあります。次いで、段差や敷物への引っかかりによるエラーが報告されています。"
     }
   },
   "reliability": {
@@ -46,24 +46,24 @@
     "dataAdequacy": {
       "score": 86,
       "weight": 60,
-      "description": "レビュー総数は211件あり、製品の全体的な評価を把握するには十分なデータ量です。多様な利用環境からのフィードバックが含まれており、信頼性の高い分析が可能です。"
+      "description": "総レビュー数213件は、製品の一般的な性能と問題を把握するのに十分なデータ量です。信頼性の高い評価を行うための基準を満たしています。"
     },
     "consistency": {
       "score": 81,
       "weight": 30,
-      "description": "各レビューサイトや個々の意見において、フローリング清掃能力の高さや静音性については概ね評価が一致しています。一方で、段差乗り越え性能や耐久性に関しては評価が分かれる傾向が見られます。",
+      "description": "多くの口コミで「静音性」「フローリングでの吸引力」が高く評価される一方、「バッテリー寿命」「段差対応」に関する不満も共通しており、意見の一貫性は高いです。",
       "percentage": 81
     },
     "freshness": {
       "score": 85,
       "weight": 10,
-      "description": "分析対象の口コミには直近30日以内に投稿されたものが5%以上含まれており、現在の製品品質やサポート状況を反映した、比較的新しい情報に基づいています。"
+      "description": "レビューの大半は過去1年以内に集中していますが、直近30日以内の新しい口コミも含まれており、現在の製品品質を評価する上で十分な鮮度を保っています。"
     }
   },
   "updateInfo": {
-    "lastUpdated": "2026-08-13",
+    "lastUpdated": "2026-10-27",
     "firmwareVersion": "",
-    "note": "本分析は2026年8月上旬までの口コミに基づいています。全体的にコストパフォーマンスを評価する声が多い一方、2年以上の長期使用によるバッテリーや部品の劣化に関する報告が散見されます。"
+    "note": "口コミは2024年11月から2026年10月までのデータを分析。全体的に静音性とフローリング掃除の評価が高い一方、長期使用によるバッテリー劣化の報告が散見されます。"
   },
   "timeSaving": {
     "vacuumMinutes": 10,
@@ -73,80 +73,54 @@
     "annualHours": 115.6,
     "workDaysEquivalent": 14.4
   },
-  "operationalCost": {
-    "daily": 23,
-    "dailyNote": "消耗品（サイドブラシ、フィルター、モッピングクロス）の交換コストを日割りで計算した実質的な費用です。",
-    "monthly": 708,
-    "annual": 8500,
-    "consumables": [
-      {
-        "item": "交換用サイドブラシ",
-        "replacementFrequency": "3〜6ヶ月ごと",
-        "unitCost": 1990,
-        "annualCost": 3980
-      },
-      {
-        "item": "交換用フィルターセット",
-        "replacementFrequency": "2〜3ヶ月ごと",
-        "unitCost": 1990,
-        "annualCost": 3980
-      },
-      {
-        "item": "交換用モッピングクロス",
-        "replacementFrequency": "3〜4ヶ月ごと",
-        "unitCost": 1499,
-        "annualCost": 540
-      }
-    ]
-  },
   "performanceAnalysis": {
     "floorCleaning": {
-      "score": 92,
-      "reviewCount": 87,
-      "positiveReviewCount": 80,
-      "comment": "フローリングの清掃能力は非常に高く評価されています。吸引と水拭きの同時実行で、髪の毛やホコリ、砂埃までしっかり除去し、床がサラサラになるとの声が多数。一部吸い残しの指摘もありますが、満足度は高いです。"
+      "score": 95,
+      "reviewCount": 90,
+      "positiveReviewCount": 86,
+      "comment": "フローリングの掃除能力は非常に高く評価されています。「床がサラサラになる」「ホコリや髪の毛をしっかり取る」といった声が多数あり、日常的な床の清潔維持に大きく貢献します。"
     },
     "carpetCleaning": {
-      "score": 70,
-      "reviewCount": 17,
-      "positiveReviewCount": 10,
-      "comment": "薄手のカーペットやラグは乗り越えて掃除できますが、厚手のものや毛足の長いものは苦手なようです。軽いラグを巻き込んで停止したり、ブラシが挟まったりする事例が報告されており、注意が必要です。"
+      "score": 75,
+      "reviewCount": 18,
+      "positiveReviewCount": 13,
+      "comment": "薄手のカーペットは乗り越えて掃除できますが、毛足の長いラグや軽いマットは巻き込んで停止する場合があります。厚手のカーペットでの使用は推奨されていません。"
     },
     "petHairRemoval": {
-      "score": 88,
-      "reviewCount": 20,
-      "positiveReviewCount": 17,
-      "comment": "犬や猫の抜け毛に対する吸引力は高く評価されています。ペットのいる家庭では、日々の掃除の手間が大幅に軽減されたとの喜びの声が多く見られました。短毛種のペットがいる家庭では特に満足度が高いようです。"
+      "score": 92,
+      "reviewCount": 21,
+      "positiveReviewCount": 20,
+      "comment": "犬や猫の毛をしっかり吸引すると多くのペットオーナーから高評価を得ています。日々の抜け毛掃除の手間を大幅に削減できるため、ペットのいる家庭に特におすすめです。"
     },
     "quietness": {
-      "score": 95,
-      "reviewCount": 37,
-      "positiveReviewCount": 36,
-      "comment": "動作音の静かさは多くのユーザーが絶賛しており、本製品の大きな長所です。夜間や在宅ワーク中でも気にならないレベルで、テレビを見ながらでも使用できるとのレビューが多数。従来の掃除機や他社製品との比較で特に高く評価されています。"
+      "score": 96,
+      "reviewCount": 38,
+      "positiveReviewCount": 37,
+      "comment": "「ルンバより遥かに静か」「テレビの音を邪魔しない」など、動作音の静かさはトップクラスの評価です。夜間や在宅ワーク中でも気兼ねなく使用できる点が大きな魅力です。"
     },
     "stepClimbing": {
       "score": 65,
-      "reviewCount": 34,
-      "positiveReviewCount": 20,
-      "comment": "約1.5cmまでの段差は乗り越え可能ですが、それ以上の段差や、椅子の脚、配線カバーなど特定の形状のものには苦戦する傾向があります。玄関からの落下を防ぐセンサーは機能しますが、低い段差では乗り越えられず停止することもあります。"
+      "reviewCount": 33,
+      "positiveReviewCount": 19,
+      "comment": "1cm程度の低い段差は乗り越えますが、それ以上の段差やラグの端で引っかかり、エラー停止することが多いです。特に黒い家具や床材を段差と誤認識する傾向も見られます。"
     },
     "maintenance": {
-      "score": 75,
-      "reviewCount": 31,
-      "positiveReviewCount": 22,
-      "comment": "ダストボックスのゴミ捨ては比較的簡単ですが、慎重に行わないとゴミがこぼれるとの指摘があります。サイドブラシが外れやすいという声も散見されますが、奥まで強く押し込むことで解決するとの報告も。水拭きタンクの手入れは手間と感じるユーザーもいます。"
+      "score": 70,
+      "reviewCount": 32,
+      "positiveReviewCount": 21,
+      "comment": "ダストボックスのゴミ捨ては簡単ですが、サイドブラシが外れやすいという指摘が複数あります。また、水拭きタンクの洗浄やモップの手洗いなど、定期的な手入れは必要です。"
     },
     "appStability": {
-      "score": 80,
-      "reviewCount": 45,
-      "positiveReviewCount": 35,
-      "comment": "アプリの基本的な操作性やスケジュール設定は便利だと評価されています。一方で、初期のWi-Fi接続に手間取ったというレビューが複数見られます。一度接続すれば安定して使えるものの、セットアップには改善の余地がありそうです。"
+      "score": 78,
+      "reviewCount": 54,
+      "positiveReviewCount": 43,
+      "comment": "初期のWi-Fi接続（2.4GHz帯のみ対応）に苦労するユーザーが多いです。一度接続すれば、スケジュール設定や掃除履歴の確認など、アプリの機能は便利で安定して使えます。"
     },
     "batteryLife": {
-      "score": 78,
-      "reviewCount": 31,
-      "positiveReviewCount": 23,
-      "comment": "通常の使用では1回の充電でLDK全体を十分に掃除できるとの評価です。しかし、2年以上使用したユーザーからはバッテリーが劣化し、稼働時間が短くなったり、ステーションに戻れなくなったりするとの報告が複数寄せられています。"
+      "score": 68,
+      "reviewCount": 32,
+      "positiveReviewCount": 18,
+      "comment": "「2〜3年でバッテリーが劣化した」「充電できなくなった」という報告が複数あり、長期的な耐久性には懸念があります。バッテリー交換は可能ですが、有償修理となる場合が多いです。"
     }
   },
   "radarChartData": {
@@ -161,71 +135,71 @@
       "電池"
     ],
     "values": [
-      92,
-      70,
-      88,
       95,
-      65,
       75,
-      80,
-      78
+      92,
+      96,
+      65,
+      70,
+      78,
+      68
     ]
   },
   "dataQuality": {
-    "totalReviews": 221,
-    "sampledReviews": 211,
-    "adoptedReviews": 211,
+    "totalReviews": 223,
+    "sampledReviews": 213,
+    "adoptedReviews": 213,
     "excludedReviews": 10,
     "trustScore": 84.4,
-    "comment": "分析には211件の検証済み口コミデータを使用。短文や配送に関する評価など、製品性能と直接関係のない10件のレビューは除外しており、信頼性の高い分析結果となっています。"
+    "comment": "Amazonと楽天の計213件の口コミを分析。購入者の具体的な使用感や長期利用による問題点が明確に表れており、信頼性の高いデータとなっています。"
   },
   "reviewKeywords": {
     "positive": [
       {
         "keyword": "水拭き・拭き掃除が良い",
-        "count": 59
+        "count": 60
       },
       {
         "keyword": "満足・買ってよかった",
-        "count": 57
+        "count": 51
       },
       {
         "keyword": "静かで快適",
-        "count": 36
+        "count": 38
       },
       {
         "keyword": "使いやすい・便利",
-        "count": 18
+        "count": 20
       },
       {
         "keyword": "吸引力が高い",
-        "count": 17
+        "count": 18
       },
       {
         "keyword": "綺麗になる",
-        "count": 15
-      },
-      {
-        "keyword": "家事が楽になった",
         "count": 14
       },
       {
+        "keyword": "家事が楽になった",
+        "count": 12
+      },
+      {
         "keyword": "マッピング・ルートが賢い",
-        "count": 9
+        "count": 10
       },
       {
         "keyword": "故障・トラブルが少ない",
-        "count": 5
+        "count": 7
       },
       {
         "keyword": "床がサラサラ・ピカピカ",
-        "count": 2
+        "count": 1
       }
     ],
     "negative": [
       {
         "keyword": "故障・不具合",
-        "count": 31
+        "count": 33
       },
       {
         "keyword": "段差・家具で引っかかる",
@@ -233,7 +207,7 @@
       },
       {
         "keyword": "止まってしまう",
-        "count": 7
+        "count": 8
       },
       {
         "keyword": "期待外れ・不満",
@@ -241,7 +215,7 @@
       },
       {
         "keyword": "動作音が気になる",
-        "count": 2
+        "count": 1
       },
       {
         "keyword": "アプリ・Wi-Fi接続が難しい",
@@ -252,7 +226,7 @@
         "count": 1
       },
       {
-        "keyword": "コードを巻き込む",
+        "keyword": "吸引力が弱い",
         "count": 1
       }
     ]
@@ -260,49 +234,49 @@
   "successStrategies": [
     {
       "rank": 1,
-      "issue": "2年以上の使用でバッテリーが劣化し、充電ステーションに戻れなくなる",
-      "occurrenceRate": 14.7,
-      "occurrenceCount": 31,
-      "environmentalFactor": "長期使用による経年劣化",
-      "technicalDescription": "リチウムイオンバッテリーは充放電サイクルに寿命があり、約2年（500回以上）の使用で性能が低下します。電圧が低下すると自己位置を認識できず、帰還不能やバッテリーエラー（S1）が発生しやすくなります。",
+      "issue": "段差やラグで頻繁に停止・エラーが発生する",
+      "occurrenceRate": 4.7,
+      "occurrenceCount": 10,
+      "environmentalFactor": "約1.5cm以上の段差、毛足の長いカーペット、軽いマット、黒い色の敷物",
+      "technicalDescription": "落下防止センサーが黒い床材を段差と誤認したり、車輪がラグの端や段差で空転したりすることでエラーが発生します。本体の乗り越え性能の限界を超えた場合に起こりやすいです。",
       "avoidanceStrategies": [
         {
-          "method": "Anker公式サイトから純正バッテリーを購入し、自分で交換する",
+          "method": "別売りの境界線テープを設置する",
           "effectiveness": "高",
           "technicalLevel": "初級",
-          "technicalRationale": "メーカーは交換用バッテリーを販売しており、ユーザー自身での交換が可能です。これにより、本体を買い替えるよりも低コストで問題を解決し、製品寿命を延ばすことができます。"
+          "technicalRationale": "本体底面のセンサーが磁気テープを検知し、そのエリアへの進入を物理的に防ぎます。これにより、カーペットや段差など、問題が発生しやすい場所を確実に避けさせることができます。"
         },
         {
-          "method": "長期間使用しない場合は、バッテリーを本体から取り外して保管する",
-          "effectiveness": "中",
-          "technicalLevel": "初級",
-          "technicalRationale": "バッテリーの過放電は故障の大きな原因となります。数ヶ月以上使わない場合は、バッテリーを外し、涼しく乾燥した場所に保管することで、劣化を遅らせることができます。"
+          "method": "アプリで進入禁止エリアを設定する",
+          "effectiveness": "無",
+          "technicalLevel": "N/A",
+          "technicalRationale": "本モデルはアプリ上での仮想的な進入禁止エリア設定には対応していません。 物理的な境界線テープが唯一の公式な進入制限方法となりますので、購入前に注意が必要です。"
         }
       ],
-      "preventionTips": "バッテリー寿命を延ばすため、掃除完了後は常に充電ステーションに設置し、満充電状態を維持することが推奨されます。また、長期間家を空ける際は、主電源をオフにしておくことで過放電のリスクを軽減できます。"
+      "preventionTips": "掃除前に、めくれやすいラグやマットの端を固定するか、一時的に片付けるのが最も効果的です。また、ケーブル類は床に這わせず、ケーブルホルダーなどでまとめておくと絡まりを防げます。"
     }
   ],
   "topComplaints": [
     {
-      "title": "故障・不具合（バッテリーエラー、車輪の異音・固着）",
-      "percentage": 14.7,
-      "reviewCount": 31,
-      "description": "特に2年以上使用した製品で「バッテリーエラーS1」や、片側の車輪が動かなくなる「エラー2」の報告が目立ちます。長期使用による部品の経年劣化が主な原因と考えられ、突然動かなくなるケースが多いようです。",
-      "solution": "Anker公式サイトで交換用バッテリーやホイール部品が販売されています。多くの場合、部品交換で修理可能です。保証期間外でも、サポートに連絡して修理オプションを確認することをお勧めします。"
+      "title": "2〜3年でバッテリーが劣化・故障する",
+      "percentage": 15.5,
+      "reviewCount": 33,
+      "description": "「バッテリーエラーで動かない」「充電できなくなった」という報告が、購入後2年以上経過したユーザーから多く寄せられています。長期的な耐久性には課題があり、突然使えなくなる可能性があります。",
+      "solution": "バッテリーは消耗品であり、交換は比較的簡単に行えます。 Anker公式サイトやオンラインストアで交換用バッテリーを購入し、本体裏面のネジを外して自分で交換することが可能です。"
     },
     {
-      "title": "段差や家具、ラグに引っかかり停止する",
+      "title": "段差やラグで頻繁に停止する",
       "percentage": 4.7,
       "reviewCount": 10,
-      "description": "薄いラグやカーペットの端を巻き込んだり、椅子の脚や低い家具の隙間に挟まって動けなくなることがあります。特に黒い色の家具はセンサーが認識しづらく、強く衝突する傾向があるとの指摘もありました。",
-      "solution": "床から電源コードや薄い敷物を片付けることが最も効果的です。 侵入されたくない場所には、別売りの境界線テープを設置することでエリア制限が可能です。テープは物理的な磁気バリアとして機能します。"
+      "description": "少しの段差やカーペットの端で乗り上げに失敗し、エラーで停止するケースが頻繁に報告されています。特に軽いラグは巻き込んでしまい、掃除が中断されることが多いです。",
+      "solution": "Anker公式は、進入させたくない場所に別売りの「境界線テープ」を設置することを推奨しています。 これにより、段差やカーペットなどの苦手なエリアを物理的に避けて掃除させることができます。"
     },
     {
       "title": "サイドブラシが外れやすい",
       "percentage": 3.8,
       "reviewCount": 8,
-      "description": "掃除中にサイドブラシが外れてしまい、紛失したり、清掃能力が低下したりするとの報告が複数あります。特に段差を乗り越える際や、カーペットの上で外れやすい傾向が見られます。",
-      "solution": "多くのユーザーが「カチッ」と音がするまで強く押し込むことで問題が解決したと報告しています。取り付けが甘いと外れやすいため、装着時にしっかりと固定されているか確認することが重要です。"
+      "description": "掃除中にサイドブラシが何かに引っかかり、外れてしまうという声が複数あります。一度外れると紛失しやすく、清掃能力の低下につながるため、定期的な確認が必要です。",
+      "solution": "メーカーのサポートによると、サイドブラシは「カチッ」と音がするまで強く押し込む必要があります。 正しく装着されていないと外れやすくなるため、取り付け時にしっかり確認することが重要です。"
     }
   ],
   "attributeScores": {
@@ -310,101 +284,101 @@
       "overall": 89,
       "details": [
         {
-          "field": "ペットの毛除去",
-          "score": 88,
-          "reviewCount": 20,
-          "comment": "犬や猫の抜け毛をしっかり吸引する能力は高く評価されています。特にフローリング中心の環境では、日々の掃除負担が大幅に軽減されると好評です。"
-        },
-        {
-          "field": "フローリング清掃",
+          "field": "ペットの毛吸引",
           "score": 92,
-          "reviewCount": 87,
-          "comment": "ペットが持ち込む細かな砂やホコリも、吸引と水拭きの組み合わせで綺麗になります。床がサラサラになるため、ペットも快適に過ごせます。"
+          "reviewCount": 21,
+          "comment": "犬や猫の抜け毛に対する吸引力は非常に高く評価されており、ペットがいる家庭の掃除負担を大幅に軽減します。ブラシへの毛の絡まりも比較的少ないです。"
         },
         {
-          "field": "メンテナンス性",
-          "score": 75,
-          "reviewCount": 31,
-          "comment": "ダストボックスに溜まったペットの毛を捨てるのは簡単ですが、ブラシへの毛の絡まりは定期的な手入れが必要です。手間を許容できるかがポイントです。"
+          "field": "静音性",
+          "score": 96,
+          "reviewCount": 38,
+          "comment": "動作音が非常に静かなため、音に敏感なペットを怖がらせにくいという利点があります。ペットがリラックスしている時間帯でも気兼ねなく掃除を任せられます。"
+        },
+        {
+          "field": "フローリング掃除",
+          "score": 95,
+          "reviewCount": 90,
+          "comment": "ペットが持ち込む細かな砂やホコリを、フローリングからきれいに取り除きます。水拭き機能を併用することで、床のザラつきや足跡もさっぱりさせることができます。"
         }
       ]
     },
     "apartment": {
-      "overall": 89,
+      "overall": 90,
       "details": [
         {
           "field": "静音性",
-          "score": 95,
-          "reviewCount": 37,
-          "comment": "動作音が非常に静かなため、集合住宅での夜間や早朝の使用でも近隣に迷惑をかける心配が少ないです。この点は多くのユーザーから絶賛されています。"
+          "score": 96,
+          "reviewCount": 38,
+          "comment": "全性能項目の中で最も評価が高く、集合住宅での利用に最適です。夜間や早朝の運転でも隣室や階下への騒音を気にする必要がほとんどありません。"
         },
         {
-          "field": "フローリング清掃",
-          "score": 92,
-          "reviewCount": 87,
-          "comment": "コンパクトなマンションの床掃除には十分な性能を発揮します。吸引と水拭きで、限られたスペースを効率的に清潔に保つことができます。"
+          "field": "フローリング掃除",
+          "score": 95,
+          "reviewCount": 90,
+          "comment": "コンパクトな設計で家具の隙間にも入り込み、限られたスペースを効率的に掃除します。フローリングのホコリや髪の毛をしっかり除去し、清潔な空間を保ちます。"
         },
         {
           "field": "段差乗り越え",
           "score": 65,
-          "reviewCount": 34,
-          "comment": "部屋間の敷居など、少しの段差でも苦戦することがあります。バリアフリーでない間取りの場合は、スムーズに全室を掃除できない可能性があります。"
+          "reviewCount": 33,
+          "comment": "部屋間の敷居など、少しの段差でも乗り越えられないことがあります。バリアフリーでない住居では、部屋ごとに移動させる手間が発生する可能性があります。"
         }
       ]
     },
     "workingProfessional": {
-      "overall": 81,
+      "overall": 73,
       "details": [
         {
           "field": "アプリの安定性",
-          "score": 80,
-          "reviewCount": 45,
-          "comment": "外出先からスマホで掃除を開始したり、スケジュール設定ができる点は多忙な社会人に好評です。Wi-Fi設定に苦労する声もありますが、一度繋がれば便利です。"
-        },
-        {
-          "field": "メンテナンス性",
-          "score": 75,
-          "reviewCount": 31,
-          "comment": "定期的なゴミ捨てやブラシの手入れは必要です。帰宅後にまとめてメンテナンスする時間を確保できるかが、快適に使い続けるための鍵となります。"
-        },
-        {
-          "field": "バッテリー持続時間",
           "score": 78,
-          "reviewCount": 31,
-          "comment": "1LDKや単身者向けの部屋であれば、バッテリー切れの心配はほとんどありません。外出中に掃除を完了させ、帰宅時には綺麗な部屋が待っています。"
+          "reviewCount": 54,
+          "comment": "外出先から掃除を開始したり、スケジュールを設定したりできるアプリ機能は多忙な社会人に最適です。ただし、初期のWi-Fi設定でつまずく可能性があります。"
+        },
+        {
+          "field": "メンテナンスの手間",
+          "score": 70,
+          "reviewCount": 32,
+          "comment": "ダストボックスのゴミ捨ては簡単ですが、サイドブラシが外れたり、水拭きモップの手入れが必要だったりと、ある程度のメンテナンス時間は確保する必要があります。"
+        },
+        {
+          "field": "バッテリー寿命",
+          "score": 68,
+          "reviewCount": 32,
+          "comment": "2〜3年でバッテリーが劣化する可能性があり、長期的なコストパフォーマンスに影響します。忙しくて買い替えの検討が難しい場合は注意が必要です。"
         }
       ]
     },
     "familyHome": {
-      "overall": 80,
+      "overall": 81,
       "details": [
         {
-          "field": "フローリング清掃",
-          "score": 92,
-          "reviewCount": 87,
-          "comment": "リビングなどの広いフローリングエリアの掃除では高い性能を発揮します。子供の食べこぼし後の軽い拭き掃除としても役立ち、家事の負担を軽減します。"
+          "field": "フローリング掃除",
+          "score": 95,
+          "reviewCount": 90,
+          "comment": "子供が汚した床の食べこぼしやホコリを効率的に掃除します。水拭き機能を使えば、素足で歩いても気持ち良いサラサラの床を維持でき、家族全員が快適に過ごせます。"
         },
         {
-          "field": "バッテリー持続時間",
-          "score": 78,
-          "reviewCount": 31,
-          "comment": "広い一軒家全体を一度に掃除するにはバッテリー容量が少し心許ないかもしれません。フロアごとやエリアを分けて掃除するなどの工夫が必要です。"
+          "field": "カーペット掃除",
+          "score": 75,
+          "reviewCount": 18,
+          "comment": "リビングの薄いラグ程度であれば掃除可能ですが、子供部屋のプレイマットなどは巻き込む恐れがあります。カーペットが多い家庭では注意が必要です。"
         },
         {
-          "field": "カーペット清掃",
-          "score": 70,
-          "reviewCount": 17,
-          "comment": "子供部屋のプレイマットやリビングのラグなど、敷物が多い家庭では注意が必要です。薄手のものしか乗り越えられず、掃除範囲が限られる可能性があります。"
+          "field": "バッテリー寿命",
+          "score": 68,
+          "reviewCount": 32,
+          "comment": "広い家を毎日掃除するとバッテリーへの負荷が大きくなり、寿命が短くなる可能性があります。長期的な利用を考えると、バッテリー交換のコストも考慮に入れるべきです。"
         }
       ]
     }
   },
   "resaleValue": null,
+  "priceSource": "official",
+  "priceCheckedAt": "2026-10-03",
   "affiliate": {
-    "moshimo": "<!-- START MoshimoAffiliateEasyLink -->\r\n<script type=\"text/javascript\">\r\n(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;\r\nb[a]=b[a]||function(){arguments.currentScript=c.currentScript\r\n||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};\r\nc.getElementById(a)||(d=c.createElement(f),d.src=g,\r\nd.id=a,e=c.getElementsByTagName(\"body\")[0],e.appendChild(d))})\r\n(window,document,\"script\",\"//dn.msmstatic.com/site/cardlink/bundle.js?20220329\",\"msmaflink\");\r\nmsmaflink({\"n\":\"Anker (アンカー) Eufy RoboVac G30 Hybrid（ロボット掃除機）\",\"b\":\"\",\"t\":\"\",\"d\":\"https:\\/\\/thumbnail.image.rakuten.co.jp\",\"c_p\":\"\\/@0_mall\\/anker\\/cabinet\",\"p\":[\"\\/tmb\\/t\\/t2253_normal.jpg\",\"\\/categorypage\\/13125615\\/700x700.jpg\",\"\\/store-design\\/common\\/eufy_warranty_24m.jpg\"],\"u\":{\"u\":\"https:\\/\\/item.rakuten.co.jp\\/anker\\/t2253\\/\",\"t\":\"rakuten\",\"r_v\":\"\"},\"v\":\"2.1\",\"b_l\":[{\"id\":1,\"u_tx\":\"楽天市場で見る\",\"u_bc\":\"#f76956\",\"u_url\":\"https:\\/\\/item.rakuten.co.jp\\/anker\\/t2253\\/\",\"a_id\":5483003,\"p_id\":54,\"pl_id\":27059,\"pc_id\":54,\"s_n\":\"rakuten\",\"u_so\":1},{\"id\":2,\"u_tx\":\"Yahoo!ショッピングで見る\",\"u_bc\":\"#66a7ff\",\"u_url\":\"https:\\/\\/shopping.yahoo.co.jp\\/search?first=1\\u0026p=Anker%20Eufy%20RoboVac%20G30%20Hybrid\",\"a_id\":5483010,\"p_id\":1225,\"pl_id\":27061,\"pc_id\":1925,\"s_n\":\"yahoo\",\"u_so\":2},{\"id\":3,\"u_tx\":\"Amazonで見る\",\"u_bc\":\"#ffcf0f\",\"u_url\":\"https:\\/\\/www.amazon.co.jp\\/s\\/ref=nb_sb_noss_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A\\u0026url=search-alias%3Daps\\u0026field-keywords=Anker%20Eufy%20RoboVac%20G30%20Hybrid\",\"a_id\":5483011,\"p_id\":170,\"pl_id\":27060,\"pc_id\":185,\"s_n\":\"amazon\",\"u_so\":3}],\"eid\":\"bAzdS\",\"s\":\"l\"});\r\n</script>\r\n<div id=\"msmaflink-bAzdS\">リンク</div>\r\n<!-- MoshimoAffiliateEasyLink END -->",
+    "moshimo": "<!-- START MoshimoAffiliateEasyLink -->\r\n<script type=\"text/javascript\">\r\n(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;\r\nb[a]=b[a]||function(){arguments.currentScript=c.currentScript\r\n||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};\r\nc.getElementById(a)||(d=c.createElement(f),d.src=g,\r\nd.id=a,e=c.getElementsByTagName(\"body\")[0],e.appendChild(d))})\r\n(window,document,\"script\",\"//dn.msmstatic.com/site/cardlink/bundle.js?20220329\",\"msmaflink\");\r\nmsmaflink({\"n\":\"Anker (アンカー) Eufy RoboVac G30 Hybrid（ロボット掃除機）【スマート・ダイナミック・ナビゲーション 2.0\\/2-in-1 吸引・水拭き両用\\/Wi-Fi対応\\/超薄型\\/強力吸引\\/自動充電\\/BoostIQ搭載\\/新生活\\/引越し\\/一人暮らし】\",\"b\":\"\",\"t\":\"\",\"d\":\"https:\\/\\/thumbnail.image.rakuten.co.jp\",\"c_p\":\"\\/@0_mall\\/anker\\/cabinet\",\"p\":[\"\\/listing\\/tmb\\/t2253\\/t2253_daily.jpg\",\"\\/categorypage\\/13125615\\/700x700.jpg\",\"\\/store-design\\/common\\/eufy_warranty_24m.jpg\"],\"u\":{\"u\":\"https:\\/\\/item.rakuten.co.jp\\/anker\\/t2253\\/\",\"t\":\"rakuten\",\"r_v\":\"\"},\"v\":\"2.1\",\"b_l\":[{\"id\":1,\"u_tx\":\"楽天市場で見る\",\"u_bc\":\"#f76956\",\"u_url\":\"https:\\/\\/item.rakuten.co.jp\\/anker\\/t2253\\/\",\"a_id\":5483003,\"p_id\":54,\"pl_id\":27059,\"pc_id\":54,\"s_n\":\"rakuten\",\"u_so\":1},{\"id\":2,\"u_tx\":\"Yahoo!ショッピングで見る\",\"u_bc\":\"#66a7ff\",\"u_url\":\"https:\\/\\/shopping.yahoo.co.jp\\/search?first=1\\u0026p=Anker%20(%E3%82%A2%E3%83%B3%E3%82%AB%E3%83%BC)%20Eufy%20RoboVac%20G30%20Hybrid%EF%BC%88%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%EF%BC%89%E3%80%90%E3%82%B9%E3%83%9E%E3%83%BC%E3%83%88%E3%83%BB%E3%83%80%E3%82%A4%E3%83%8A%E3%83%9F%E3%83%83%E3%82%AF%E3%83%BB%E3%83%8A%E3%83%93%E3%82%B2%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%202.0%2F2-in-1%20%E5%90%B8%E5%BC%95%E3%83%BB%E6%B0%B4%E6%8B%AD%E3%81%8D%E4%B8%A1%E7%94%A8%2FWi-Fi%E5%AF%BE%E5%BF%9C%2F%E8%B6%85%E8%96%84%E5%9E%8B%2F%E5%BC%B7%E5%8A%9B%E5%90%B8%E5%BC%95%2F%E8%87%AA%E5%8B%95%E5%85%85%E9%9B%BB%2FBoostIQ%E6%90%AD%E8%BC%89%2F%E6%96%B0%E7%94%9F%E6%B4%BB%2F%E5%BC%95%E8%B6%8A%E3%81%97%2F%E4%B8%80%E4%BA%BA%E6%9A%AE%E3%82%89%E3%81%97%E3%80%91\",\"a_id\":5483010,\"p_id\":1225,\"pl_id\":27061,\"pc_id\":1925,\"s_n\":\"yahoo\",\"u_so\":2},{\"id\":3,\"u_tx\":\"Amazonで見る\",\"u_bc\":\"#ffcf0f\",\"u_url\":\"https:\\/\\/www.amazon.co.jp\\/s\\/ref=nb_sb_noss_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A\\u0026url=search-alias%3Daps\\u0026field-keywords=Anker%20(%E3%82%A2%E3%83%B3%E3%82%AB%E3%83%BC)%20Eufy%20RoboVac%20G30%20Hybrid%EF%BC%88%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%EF%BC%89%E3%80%90%E3%82%B9%E3%83%9E%E3%83%BC%E3%83%88%E3%83%BB%E3%83%80%E3%82%A4%E3%83%8A%E3%83%9F%E3%83%83%E3%82%AF%E3%83%BB%E3%83%8A%E3%83%93%E3%82%B2%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%202.0%2F2-in-1%20%E5%90%B8%E5%BC%95%E3%83%BB%E6%B0%B4%E6%8B%AD%E3%81%8D%E4%B8%A1%E7%94%A8%2FWi-Fi%E5%AF%BE%E5%BF%9C%2F%E8%B6%85%E8%96%84%E5%9E%8B%2F%E5%BC%B7%E5%8A%9B%E5%90%B8%E5%BC%95%2F%E8%87%AA%E5%8B%95%E5%85%85%E9%9B%BB%2FBoostIQ%E6%90%AD%E8%BC%89%2F%E6%96%B0%E7%94%9F%E6%B4%BB%2F%E5%BC%95%E8%B6%8A%E3%81%97%2F%E4%B8%80%E4%BA%BA%E6%9A%AE%E3%82%89%E3%81%97%E3%80%91\",\"a_id\":5483011,\"p_id\":170,\"pl_id\":27060,\"pc_id\":185,\"s_n\":\"amazon\",\"u_so\":3}],\"eid\":\"bAzdS\",\"s\":\"l\"});\r\n</script>\r\n<div id=\"msmaflink-bAzdS\">リンク</div>\r\n<!-- MoshimoAffiliateEasyLink END -->",
     "direct": "<a href=\"//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3766176&pid=892603477&vc_url=https%3A%2F%2Fwww.ankerjapan.com%2Fproducts%2Ft2253%3F_pos%3D4%26_fid%3D6afd318d9%26_ss%3Dc%3Fvariant%3D40073436233889\" rel=\"nofollow\"><img src=\"//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3766176&pid=892603477\" height=\"1\" width=\"0\" border=\"0\">Eufy RoboVac G30 Hybrid</a>",
     "hpPublish": true
-  },
-  "priceSource": "official",
-  "priceCheckedAt": "2026-10-03"
+  }
 }

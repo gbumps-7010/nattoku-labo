@@ -19,6 +19,7 @@ PERKS_V = "20261004b"
 PROSE_V = "20261005a"
 SITE = "https://nattoku-labo.com"
 WF, WR = 0.85, 0.15
+LOW_REVIEW_THRESHOLD = 20  # 口コミがこれ未満のおすすめは「参考値」と添える（選定は変えない）
 
 # id = products/data JSON の manufacturer 値
 MANUFACTURERS = [
@@ -1159,6 +1160,8 @@ def build_manufacturer_page(meta: dict) -> Path:
             lead = f"この価格帯に該当するのは{p['name']}です。"
         else:
             lead = f"この価格帯（{len(cands)}製品）のなかで、総合点が最も高いのは{p['name']}です。"
+        if p["reviews"] < LOW_REVIEW_THRESHOLD:
+            lead += f" ただし口コミはまだ{p['reviews']}件のため、点数は参考値です。"
         alt = None
         if len(ranked_band) > 1 and ranked_band[1].get("overall") is not None:
             second = ranked_band[1]

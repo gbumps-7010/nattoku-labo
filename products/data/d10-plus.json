@@ -4,11 +4,13 @@
   "manufacturer": "Dreame",
   "modelNumber": "RLS3D",
   "imageUrl": "https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/11302689/imgrc0140534087.jpg",
-  "overallRating": 4.4,
-  "totalReviews": 28,
+  "overallRating": 4.17,
+  "totalReviews": 34,
   "price": 21600,
-  "reliabilityScore": 52.7,
+  "reliabilityScore": 54.5,
   "asin": "",
+  "metaTitle": "Dreame D10 Plus 詳細分析 | 33件の口コミでわかる実力と注意点",
+  "metaDescription": "Dreame D10 Plusの33件の口コミを徹底解析。静音性の高さやアプリの多機能性を評価する声が多い一方、段差でのスタックや初期設定の課題も。購入前に知るべき真実を公開します。",
   "keywords": [
     "Dreame D10 Plus",
     "ロボット掃除機",
@@ -17,53 +19,51 @@
     "静音",
     "アプリ連携"
   ],
-  "metaTitle": "Dreame D10 Plus 詳細分析 | 口コミから分かる実力と注意点",
-  "metaDescription": "Dreame D10 Plusの27件の口コミを徹底解析。静音性や吸引力、賢いマッピング機能など、購入前に知るべき真実を公開します。",
   "categoryC": {
     "userSatisfaction": {
       "score": 85,
-      "reviewCount": 27,
-      "comment": "静音性や基本的な清掃能力、便利な自動ゴミ収集機能には多くの満足の声が寄せられています。一方で、初期不良や消耗品の入手性に不満を持つユーザーもおり、評価が分かれる要因となっています。"
+      "reviewCount": 33,
+      "comment": "多くの利用者が静音性や自動ゴミ収集機能に高い満足感を示しています。一方で、初期不良や設定のつまずきに関する不満も見られ、総合的な満足度はやや分かれる傾向にあります。"
     },
     "repurchaseIntention": {
-      "percentage": 70,
-      "reviewCount": 27,
-      "comment": "製品の静音性や清掃性能に満足し、次も同ブランドを検討したいという声が見られます。しかし、初期不良やサポート対応、消耗品の供給問題に直面したユーザーは再購入に消極的な傾向があります。"
+      "percentage": 75,
+      "reviewCount": 4,
+      "comment": "「2台目の購入」というリピーターが存在し、製品の基本性能に満足している層がいます。しかし、故障やサポート対応への不満から、再購入をためらう可能性のある声も散見されます。"
     },
     "failureRate": {
-      "percentage": 15,
-      "reviewCount": 27,
+      "percentage": 12,
+      "reviewCount": 33,
       "breakdown": {
-        "hardware": 11,
-        "software": 4,
+        "hardware": 2,
+        "software": 2,
         "environmental": 0
       },
-      "comment": "「充電できない」「起動しない」といったハードウェア関連の初期不良報告が複数見られます。アプリ設定で失敗するケースもあり、購入後の動作確認が重要ですが、多くのユーザーは問題なく使用できています。"
+      "comment": "「1ヶ月で動かなくなった」「充電できない」といったハードウェア故障の報告が複数あります。また、Wi-Fi設定が完了しないなど、アプリ関連の初期不良に関する声も目立ちます。"
     }
   },
   "reliability": {
-    "score": 52.7,
+    "score": 54.5,
     "dataAdequacy": {
-      "score": 51,
+      "score": 53,
       "weight": 60,
-      "description": "口コミ総数は27件と多くはなく、製品の全体像を把握するにはやや限定的です。より多角的な評価のためには、今後の口コミ蓄積が待たれます。"
+      "description": "口コミ総数が33件と少なく、製品の全体像を把握するにはデータがやや不足しています。より多くのレビューが集まることで、評価の信頼性が高まることが期待されます。"
     },
     "consistency": {
-      "score": 57,
+      "score": 59,
       "weight": 30,
-      "description": "満足しているユーザーと初期不良に遭遇したユーザーとで評価が大きく分かれています。そのため、サイト間の評価のばらつきは大きい傾向にあります。",
-      "percentage": 57
+      "description": "Amazonと楽天で評価に大きな差はありませんが、満足度の高い声と初期不良などの低い評価が混在しており、ユーザー体験の一貫性にはばらつきが見られます。",
+      "percentage": 59
     },
     "freshness": {
       "score": 50,
       "weight": 10,
-      "description": "直近30日以内の新しい口コミは少なく、最新のファームウェアや製品ロットでの改善状況を完全に反映しているとは言えない可能性があります。"
+      "description": "直近30日以内の新しい口コミがなく、鮮度は低いです。現在のファームウェアやサポート体制での評価が反映されていない可能性があるため、最新情報には注意が必要です。"
     }
   },
   "updateInfo": {
-    "lastUpdated": "2026-06-26",
+    "lastUpdated": "2026-11-03",
     "firmwareVersion": "",
-    "note": "2025年7月までの口コミを分析。静音性とマッピング性能は高く評価されていますが、一部で初期不良や消耗品の入手性に関する指摘が見られます。"
+    "note": "口コミは2022年8月から2026年9月の期間に収集されました。静音性と自動ゴミ収集機能が高く評価される一方、初期設定のトラブルや段差でのスタックが課題として挙げられています。"
   },
   "timeSaving": {
     "vacuumMinutes": 10,
@@ -73,86 +73,54 @@
     "annualHours": 115.6,
     "workDaysEquivalent": 14.4
   },
-  "operationalCost": {
-    "daily": 46,
-    "dailyNote": "ダストパック、フィルター、ブラシなどの消耗品を定期的に交換した場合の日割りコストです。使用頻度により変動します。",
-    "monthly": 1407,
-    "annual": 16880,
-    "consumables": [
-      {
-        "item": "ダストバッグ",
-        "replacementFrequency": "2ヶ月ごと",
-        "unitCost": 1980,
-        "annualCost": 11880
-      },
-      {
-        "item": "サイドブラシ",
-        "replacementFrequency": "1年ごと",
-        "unitCost": 2000,
-        "annualCost": 2000
-      },
-      {
-        "item": "フィルター",
-        "replacementFrequency": "1年ごと",
-        "unitCost": 1500,
-        "annualCost": 1500
-      },
-      {
-        "item": "モップパッド",
-        "replacementFrequency": "1年ごと",
-        "unitCost": 1500,
-        "annualCost": 1500
-      }
-    ]
-  },
   "performanceAnalysis": {
     "floorCleaning": {
-      "score": 95,
-      "reviewCount": 7,
+      "score": 92,
+      "reviewCount": 8,
       "positiveReviewCount": 7,
-      "comment": "フローリングの清掃能力は非常に高く評価されています。「チリや埃が残らない」「歩いたときの砂感がない」など、素足での快適さを実感する声が多く、特にペットを飼っている家庭で満足度が高いです。"
+      "comment": "フローリングやクッションフロアでの清掃能力は高く評価されています。「チリや埃が残らない」との声があり、多くの利用者が満足しています。吸引力も十分で、日常的な床掃除は安心して任せられます。"
     },
     "carpetCleaning": {
       "score": 78,
-      "reviewCount": 6,
-      "positiveReviewCount": 4,
-      "comment": "カーペットでの使用感は「意外とよかった」という声がある一方、水拭き機能との兼ね合いで試していないユーザーもいます。段差乗り越え性能から、毛足の長くないカーペットなら問題なく掃除できると期待されます。"
+      "reviewCount": 8,
+      "positiveReviewCount": 6,
+      "comment": "カーペットでの使用感に関する言及は少ないものの、「意外とよかった」という肯定的な意見があります。ただし、専門的なカーペット清掃能力を期待するより、補助的な機能と捉えるのが良さそうです。"
     },
     "petHairRemoval": {
-      "score": 90,
-      "reviewCount": 5,
-      "positiveReviewCount": 4,
-      "comment": "ペットの毛の除去能力については、特にフローリング上で高い評価を得ています。「ペットを飼っている人なら絶対満足する」との声もあり、強力な吸引力が効果を発揮していることがうかがえます。"
+      "score": 88,
+      "reviewCount": 8,
+      "positiveReviewCount": 7,
+      "comment": "ペットのいる家庭での使用に期待が寄せられており、フローリングでの毛の除去能力は満足されています。ただし、ペットの排泄物を巻き込むと悲惨なことになるため、事前の片付けは必須です。"
     },
     "quietness": {
-      "score": 96,
+      "score": 95,
       "reviewCount": 11,
-      "positiveReviewCount": 11,
-      "comment": "動作音の静かさは本製品の大きな特長です。「ルンバより静か」「ゴミを吸っているか不安になるくらい」と、他社製品と比較して静音性を絶賛する声が多数。在宅ワーク中や夜間でも気兼ねなく使えます。"
+      "positiveReviewCount": 10,
+      "comment": "動作音の静かさは本製品の最大の特徴の一つです。「ルンバより静か」という比較レビューが複数あり、在宅ワーク中でも気にならないレベルと高評価です。ただしゴミ収集時の音は大きいので注意が必要です。"
     },
     "stepClimbing": {
-      "score": 80,
-      "reviewCount": 9,
-      "positiveReviewCount": 7,
-      "comment": "約2cm程度の段差は問題なく乗り越えるとの報告が多く、ラグや部屋の敷居などはスムーズに通過できます。ただし、それ以上の大きな段差は自動で回避するため、家の環境によっては進入できないエリアも生じます。"
+      "score": 70,
+      "reviewCount": 10,
+      "positiveReviewCount": 6,
+      "comment": "約2cmまでの段差は乗り越える能力がありますが、椅子の脚や家具の隙間など、複雑な形状の場所で身動きが取れなくなる報告が複数あります。床に物を置かない工夫が安定稼働の鍵となります。"
     },
     "maintenance": {
-      "score": 85,
-      "reviewCount": 10,
+      "score": 80,
+      "reviewCount": 11,
       "positiveReviewCount": 8,
-      "comment": "自動ゴミ収集機能は「とてもいい」「めちゃくちゃ楽」と高く評価されており、日々の手間を大幅に削減します。一方で、交換用ダストパックなどの消耗品が購入しづらいという指摘が複数見られました。"
+      "comment": "自動ゴミ収集機能により、日々のゴミ捨ての手間が大幅に削減される点は高く評価されています。一方で、消耗品であるダストバッグの入手方法が分かりにくいという初期の不満が見られました。"
     },
     "appStability": {
-      "score": 88,
+      "score": 75,
       "reviewCount": 15,
-      "positiveReviewCount": 12,
-      "comment": "アプリは「出来が非常によくできている」と評価され、マップ作成や清掃エリア指定など機能面は優秀です。しかし、一部ユーザーからは初期設定やWi-Fi接続で失敗したという報告もあり、環境を選ぶ可能性があります。"
+      "positiveReviewCount": 11,
+      "comment": "エリア設定やスケジュール管理など、アプリの機能性は優秀だと評価されています。しかし、初期のWi-Fi設定でつまずく事例や、ユーザー登録が進まないといった致命的な不具合報告も見られます。"
     },
     "batteryLife": {
-      "score": 92,
-      "reviewCount": 8,
+      "score": 90,
+      "reviewCount": 9,
       "positiveReviewCount": 8,
-      "comment": "バッテリー性能は高く評価されており、広い範囲を一度に掃除できます。3部屋(38㎡)を掃除しても22%しか消費しなかったという報告もあり、一般的な家庭環境では十分な稼働時間を持つと言えます。"
+      "comment": "バッテリーの持ちは良好で、広い範囲を一度に掃除する能力があります。3部屋(38㎡)を掃除しても22%しか消費しなかったという報告もあり、一般的な家庭環境では十分な性能です。"
     }
   },
   "radarChartData": {
@@ -167,33 +135,33 @@
       "電池"
     ],
     "values": [
-      95,
+      92,
       78,
-      90,
-      96,
-      80,
-      85,
       88,
-      92
+      95,
+      70,
+      80,
+      75,
+      90
     ]
   },
   "dataQuality": {
-    "totalReviews": 28,
-    "sampledReviews": 27,
-    "adoptedReviews": 27,
+    "totalReviews": 34,
+    "sampledReviews": 33,
+    "adoptedReviews": 33,
     "excludedReviews": 1,
-    "trustScore": 52.7,
-    "comment": "分析対象の口コミは27件です。製品の長所と短所を把握するには十分ですが、サンプル数が限られるため、個々の意見が統計結果に与える影響が比較的大きい点に留意が必要です。"
+    "trustScore": 54.5,
+    "comment": "口コミ総数が33件と限定的であり、評価の信頼性は中程度です。特に新しい口コミが不足しているため、現在の製品品質やサポート体制を完全に反映しているとは言えません。"
   },
   "reviewKeywords": {
     "positive": [
       {
-        "keyword": "静かで快適",
+        "keyword": "満足・買ってよかった",
         "count": 10
       },
       {
-        "keyword": "満足・買ってよかった",
-        "count": 9
+        "keyword": "静かで快適",
+        "count": 10
       },
       {
         "keyword": "使いやすい・便利",
@@ -212,22 +180,22 @@
         "count": 3
       },
       {
+        "keyword": "綺麗になる",
+        "count": 2
+      },
+      {
         "keyword": "自動ゴミ収集が便利",
         "count": 2
       },
       {
         "keyword": "家事が楽になった",
         "count": 1
-      },
-      {
-        "keyword": "綺麗になる",
-        "count": 1
       }
     ],
     "negative": [
       {
         "keyword": "段差・家具で引っかかる",
-        "count": 1
+        "count": 2
       },
       {
         "keyword": "故障・不具合",
@@ -254,197 +222,151 @@
   "successStrategies": [
     {
       "rank": 1,
-      "issue": "消耗品の入手が困難",
-      "occurrenceRate": 22,
-      "occurrenceCount": 6,
-      "environmentalFactor": "国内流通チャネルの限定",
-      "technicalDescription": "ダストパックやブラシ等の交換用消耗品が、公式ストアや一部ECサイトでしか安定的に販売されておらず、ユーザーが必要な時に入手しづらい状況が発生しています。",
+      "issue": "Wi-Fi・アプリ初期設定の失敗",
+      "occurrenceRate": 6,
+      "occurrenceCount": 2,
+      "environmentalFactor": "Wi-Fi環境、スマートフォンのOSや設定",
+      "technicalDescription": "アプリのユーザー登録が進まない、またはWi-Fi設定中に本体が反応しなくなる問題。ルーターが2.4GHz帯に対応しているか、アプリの権限が許可されているかなどが原因となりえます。",
       "avoidanceStrategies": [
         {
-          "method": "公式サイト・認定販売店で在庫を確認",
+          "method": "2.4GHz帯のWi-Fiに接続する",
           "effectiveness": "高",
           "technicalLevel": "初級",
-          "technicalRationale": "メーカー公式サイトや公式が出店しているECモール（楽天、Yahoo!等）が最も確実な入手経路です。在庫状況を定期的に確認し、早めに購入することが推奨されます。"
-        },
-        {
-          "method": "互換品を検討する",
-          "effectiveness": "中",
-          "technicalLevel": "中級",
-          "technicalRationale": "一部ECサイトではサードパーティ製の互換品が販売されています。純正品ではないため性能保証はありませんが、緊急時の代替手段となり得ます。サイズや形状をよく確認する必要があります。"
-        }
-      ],
-      "preventionTips": "本体購入時に、予備のダストパックやフィルターがセットになったアクセサリーキットを同時に購入しておくと、当面の消耗品切れを防ぐことができ安心です。"
-    },
-    {
-      "rank": 2,
-      "issue": "充電ができない・開始しない",
-      "occurrenceRate": 15,
-      "occurrenceCount": 4,
-      "environmentalFactor": "接触不良またはバッテリーの過放電",
-      "technicalDescription": "充電ステーションと本体の充電端子の汚れによる接触不良や、長期間使用しなかったことによるバッテリーの完全放電が原因で充電が開始されないことがあります。",
-      "avoidanceStrategies": [
-        {
-          "method": "充電端子を清掃する",
-          "effectiveness": "高",
-          "technicalLevel": "初級",
-          "technicalRationale": "本体とステーションの金属端子を、乾いた柔らかい布で優しく拭き、ホコリや汚れを取り除きます。これにより物理的な接続が改善され、正常に充電が再開される場合があります。"
-        },
-        {
-          "method": "本体を直接ステーションに設置し直す",
-          "effectiveness": "中",
-          "technicalLevel": "初級",
-          "technicalRationale": "自動で帰還できない場合、手動で本体をステーションの正しい位置にしっかりと設置し直してみてください。カチッという音がして、充電ランプが点灯するか確認します。"
-        }
-      ],
-      "preventionTips": "長期間家を空けるなど、ロボット掃除機を使用しない場合でも、バッテリーの過放電を防ぐため、常に充電ステーションに接続した状態にしておくことが推奨されます。"
-    },
-    {
-      "rank": 3,
-      "issue": "アプリとのWi-Fi接続・設定ができない",
-      "occurrenceRate": 11,
-      "occurrenceCount": 3,
-      "environmentalFactor": "Wi-Fi環境またはアプリの権限設定",
-      "technicalDescription": "本製品は2.4GHz帯のWi-Fiにのみ対応しており、5GHz帯では接続できません。また、スマートフォンの設定でアプリへの位置情報アクセス許可が必要な場合があります。",
-      "avoidanceStrategies": [
-        {
-          "method": "2.4GHz帯のWi-Fiネットワークに接続する",
-          "effectiveness": "高",
-          "technicalLevel": "中級",
-          "technicalRationale": "自宅のWi-Fiルーターの設定を確認し、スマートフォンを2.4GHz帯のネットワークに接続してから、再度ロボット掃除機との接続設定を行ってください。"
+          "technicalRationale": "多くのロボット掃除機は安定性の高い2.4GHz帯のWi-Fiのみに対応しています。スマホをあらかじめ2.4GHzのSSIDに接続してから設定を開始することで、接続エラーを防ぎます。"
         },
         {
           "method": "アプリの権限を確認・許可する",
           "effectiveness": "中",
           "technicalLevel": "初級",
-          "technicalRationale": "スマートフォンの設定画面からDreamehomeアプリを選択し、位置情報やローカルネットワークへのアクセス権限が許可されているか確認してください。許可されていない場合はオンにします。"
+          "technicalRationale": "スマートフォンの設定で、Dreamehomeアプリに位置情報やローカルネットワークへのアクセス権限を許可します。これにより、アプリが掃除機本体を正しく検出できるようになります。"
         }
       ],
-      "preventionTips": "セットアップを始める前に、自宅のWi-Fiが2.4GHz帯に対応しているかルーターの仕様を確認し、スマートフォンのWi-Fi設定を済ませておくとスムーズです。"
+      "preventionTips": "設定を始める前に、メーカー公式サイトのFAQで「Wi-Fi接続に関するトラブルシューティング」を確認しましょう。ルーターの再起動や、他のデバイスとの干渉を避けることも有効です。"
     }
   ],
   "topComplaints": [
     {
-      "title": "消耗品の入手が困難・不明",
-      "percentage": 22,
-      "reviewCount": 6,
-      "description": "自動ゴミ収集用のダストパックや交換用ブラシ、フィルターといった消耗品の購入先が分かりにくい、または在庫がないという声が複数見られます。ランニングコストに直結する問題です。",
-      "solution": "メーカーの公式サイトや、楽天、Yahoo!ショッピングなどの公式ストアが正規の販売チャネルです。在庫がない場合は、再入荷通知を登録するか、Amazonなどで販売されている互換品を検討する方法もあります。"
+      "title": "家具の隙間や段差で動けなくなる",
+      "percentage": 6,
+      "reviewCount": 2,
+      "description": "椅子の脚が複雑に交差する場所や、わずかな段差、家具の隙間などでスタックし、自力で復帰できなくなることがあります。これにより掃除が中断し、バッテリー切れに繋がるケースも報告されています。",
+      "solution": "アプリのマップ編集機能で「進入禁止エリア」や「仮想壁」を設定し、問題が起きやすい場所へ侵入しないように設定するのが最も効果的です。床に物を置かない整理整頓も重要です。"
     },
     {
-      "title": "初期不良で充電・起動しない",
-      "percentage": 15,
-      "reviewCount": 4,
-      "description": "購入直後から「充電ができない」「全く動かない」といった深刻な不具合報告が少数ですが存在します。長期間放置後の過放電や、本体とステーションの接触不良が原因の場合もあります。",
-      "solution": "まず、本体とステーションの充電端子を乾いた布で清掃してください。それでも改善しない場合は、初期不良の可能性が高いため、速やかに購入した販売店やメーカーサポートに連絡することをお勧めします。"
+      "title": "初期不良・短期間での故障",
+      "percentage": 6,
+      "reviewCount": 2,
+      "description": "「1ヶ月で動かなくなった」「充電できない」といった、購入後すぐに使用不能になる故障報告が複数見られます。初期不良の可能性があり、サポートへの連絡が必要となるケースです。",
+      "solution": "本体のリセットや充電端子の清掃を試しても改善しない場合、速やかにメーカーのカスタマーサポートに連絡してください。公式HPのFAQでリセット方法を確認し、試してみる価値はあります。"
     },
     {
-      "title": "アプリの初期設定で失敗する",
-      "percentage": 11,
-      "reviewCount": 3,
-      "description": "「アプリの案内通りに設定しても本体が起動しない」「ユーザー登録が進まない」といった、スマートフォンアプリ連携でのトラブル報告があります。Wi-Fi環境が原因の場合が多いようです。",
-      "solution": "お使いのWi-Fiルーターが2.4GHz帯に対応しているか確認してください。本製品は5GHz帯には対応していません。また、アプリに位置情報などの権限を許可する必要があるか確認してください。"
+      "title": "アプリの初期設定が完了しない",
+      "percentage": 6,
+      "reviewCount": 2,
+      "description": "Wi-Fi設定中に本体が起動しない、ユーザー登録が進まないなど、アプリとの連携でつまずく事例が報告されています。スマートフォンの設定やWi-Fi環境が原因である可能性が高いです。",
+      "solution": "自宅のWi-Fiが2.4GHz帯に対応しているか確認し、そちらに接続してください。また、アプリの位置情報やローカルネットワークへのアクセス権限を許可することで解決する場合があります。"
     }
   ],
   "attributeScores": {
     "petOwner": {
-      "overall": 90.5,
+      "overall": 87,
       "details": [
         {
           "field": "ペットの毛吸引",
-          "score": 90,
-          "reviewCount": 5,
-          "comment": "フローリング上のペットの毛や散らばったトイレ砂などを強力に吸引する能力は、ペットオーナーから高く評価されています。抜け毛が多い時期でも床を清潔に保つことができます。"
+          "score": 88,
+          "reviewCount": 8,
+          "comment": "フローリング上のペットの毛の掃除には十分な性能を発揮します。抜け毛が多い時期の掃除負担を大きく軽減してくれるでしょう。ただしカーペットの奥の毛には限界があるかもしれません。"
         },
         {
           "field": "床掃除",
-          "score": 95,
-          "reviewCount": 7,
-          "comment": "ペットの足跡や軽微な汚れが気になるフローリングをきれいに掃除します。水拭き機能も併用することで、素足で歩いても快適な床を維持できると好評です。"
+          "score": 92,
+          "reviewCount": 8,
+          "comment": "ペットが汚しがちな床をきれいに保つ能力は高いです。水拭き機能も併用することで、足跡のベタつきなども軽減でき、衛生的な環境を維持しやすくなります。"
         },
         {
           "field": "メンテナンス性",
-          "score": 85,
-          "reviewCount": 10,
-          "comment": "自動ゴミ収集機能により、毛やホコリが溜まったダストボックスを頻繁に掃除する手間が省けます。ただし、ブラシに絡まった毛の除去は定期的に必要です。"
+          "score": 80,
+          "reviewCount": 11,
+          "comment": "自動ゴミ収集機能は、毛が溜まりやすいペット家庭にとって大きなメリットです。ただし、ローラーへの毛の絡まりは避けられないため、定期的なブラシの清掃は必要になります。"
         }
       ]
     },
     "apartment": {
-      "overall": 92.5,
+      "overall": 88,
       "details": [
         {
           "field": "静音性",
-          "score": 96,
+          "score": 95,
           "reviewCount": 11,
-          "comment": "集合住宅で最も気になる動作音が非常に静かである点が最大の魅力です。「ルンバより静か」との声が多く、隣室や階下への騒音を気にせず、時間帯を選ばずに使用できます。"
+          "comment": "集合住宅で最も気になる動作音が非常に静かである点は大きな利点です。隣室や階下への騒音を気にすることなく、日中や夜間でも気兼ねなく使用することができます。"
         },
         {
           "field": "床掃除",
-          "score": 95,
-          "reviewCount": 7,
-          "comment": "コンパクトな室内でも、LDSレーザーによる正確なマッピングで効率的に掃除を行います。フローリングのホコリや髪の毛をしっかりと取り除き、部屋を清潔に保ちます。"
+          "score": 92,
+          "reviewCount": 8,
+          "comment": "限られたスペースを効率的に掃除し、フローリングをきれいに保ちます。コンパクトな間取りでも隅々まで掃除しようと試みるため、部屋を清潔に維持できます。"
         },
         {
           "field": "段差乗り越え",
-          "score": 80,
-          "reviewCount": 9,
-          "comment": "マンション内でよく見られる部屋の敷居や薄手のラグマットなどの段差はスムーズに乗り越えます。家具への衝突も少なく、安心して任せられると評価されています。"
+          "score": 70,
+          "reviewCount": 10,
+          "comment": "マンション内の敷居など、低い段差は問題なく乗り越えます。ただし、家具の配置によってはスタックする可能性があるため、進入禁止エリアの設定を推奨します。"
         }
       ]
     },
     "workingProfessional": {
-      "overall": 87.6,
+      "overall": 82,
       "details": [
         {
-          "field": "アプリの安定性",
-          "score": 88,
+          "field": "アプリ安定性",
+          "score": 75,
           "reviewCount": 15,
-          "comment": "外出先からでもスマホアプリで操作でき、掃除スケジュールを設定できる点が多忙な社会人に最適です。清掃状況をリアルタイムで確認できるのも便利だと評価されています。"
+          "comment": "外出先から掃除を開始したり、スケジュールを設定したりできるアプリの機能は多忙なプロフェッショナルに最適です。ただし、初期設定でつまずくリスクは考慮すべきです。"
         },
         {
           "field": "メンテナンス性",
-          "score": 85,
-          "reviewCount": 10,
-          "comment": "約2ヶ月間ゴミ捨て不要の自動収集ステーションは、日々のメンテナンスの手間を大幅に削減してくれます。帰宅時には常にきれいな部屋が保たれている快適さは大きなメリットです。"
+          "score": 80,
+          "reviewCount": 11,
+          "comment": "自動ゴミ収集機能のおかげで、数週間に一度のゴミ捨てで済み、メンテナンスの手間が省けます。時間を有効活用したい方にとって、この機能は非常に価値が高いです。"
         },
         {
           "field": "バッテリー性能",
-          "score": 92,
-          "reviewCount": 8,
-          "comment": "一度の充電で家全体を掃除できる十分なバッテリー容量を備えています。掃除途中で充電切れになる心配が少なく、スケジュール通りに掃除を完了させることができます。"
+          "score": 90,
+          "reviewCount": 9,
+          "comment": "一度の充電で家全体を掃除できるため、帰宅時には常にきれいな部屋が待っています。充電切れで掃除が中断される心配が少なく、安心して任せられます。"
         }
       ]
     },
     "familyHome": {
-      "overall": 89,
+      "overall": 87,
       "details": [
         {
           "field": "床掃除",
-          "score": 95,
-          "reviewCount": 7,
-          "comment": "子供の食べこぼしや砂埃などで汚れがちなリビングの床を、パワフルな吸引力で綺麗にします。水拭き機能を併用すれば、より一層さっぱりとした仕上がりになります。"
+          "score": 92,
+          "reviewCount": 8,
+          "comment": "子供が汚しがちなリビングの床をきれいに保つのに役立ちます。食べこぼしなどの細かいゴミもしっかり吸引してくれるため、掃除の手間を大幅に削減できます。"
         },
         {
           "field": "バッテリー性能",
-          "score": 92,
-          "reviewCount": 8,
-          "comment": "広い戸建て住宅でも、一度の充電で複数の部屋を掃除できる長い稼働時間を誇ります。掃除の途中で充電のために中断されることが少なく、効率的に家全体をきれいにできます。"
+          "score": 90,
+          "reviewCount": 9,
+          "comment": "広い一軒家でも、途中で充電に戻ることなく一度で掃除を完了させるスタミナがあります。複数の部屋をまとめて掃除させたいファミリー世帯のニーズに応えます。"
         },
         {
           "field": "カーペット掃除",
           "score": 78,
-          "reviewCount": 6,
-          "comment": "リビングのラグや子供部屋のカーペットにも対応可能です。ただし、毛足の長いものや特殊な素材のカーペットでは性能が落ちる可能性も考慮する必要があります。"
+          "reviewCount": 8,
+          "comment": "リビングのラグや子供部屋のカーペットの表面的なゴミは掃除できます。ただし、本格的なカーペット清掃には限界があるため、他の掃除機との併用が望ましいです。"
         }
       ]
     }
   },
   "resaleValue": null,
+  "priceSource": "official",
+  "priceCheckedAt": "2026-10-03",
   "affiliate": {
-    "moshimo": "<!-- START MoshimoAffiliateEasyLink -->\r\n<script type=\"text/javascript\">\r\n(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;\r\nb[a]=b[a]||function(){arguments.currentScript=c.currentScript\r\n||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};\r\nc.getElementById(a)||(d=c.createElement(f),d.src=g,\r\nd.id=a,e=c.getElementsByTagName(\"body\")[0],e.appendChild(d))})\r\n(window,document,\"script\",\"//dn.msmstatic.com/site/cardlink/bundle.js?20220329\",\"msmaflink\");\r\nmsmaflink({\"n\":\"ロボット掃除機 Dreame D10 Plus 4000Pa強力吸引 170分連続稼働 LDSレーザーセンサー 高精度マッピング 静音 お掃除ロボット ペット 掃除機 一人暮らし ドリーミー\",\"b\":\"\",\"t\":\"\",\"d\":\"https:\\/\\/thumbnail.image.rakuten.co.jp\",\"c_p\":\"\\/@0_mall\\/dreame-shop\\/cabinet\",\"p\":[\"\\/11302689\\/imgrc0140534087.jpg\",\"\\/13294318\\/13294321\\/11.jpg\",\"\\/imgrc0162029264.jpg\"],\"u\":{\"u\":\"https:\\/\\/item.rakuten.co.jp\\/dreame-shop\\/d10plus\\/\",\"t\":\"rakuten\",\"r_v\":\"\"},\"v\":\"2.1\",\"b_l\":[{\"id\":1,\"u_tx\":\"楽天市場で見る\",\"u_bc\":\"#f76956\",\"u_url\":\"https:\\/\\/item.rakuten.co.jp\\/dreame-shop\\/d10plus\\/\",\"a_id\":5483003,\"p_id\":54,\"pl_id\":27059,\"pc_id\":54,\"s_n\":\"rakuten\",\"u_so\":1},{\"id\":2,\"u_tx\":\"Yahoo!ショッピングで見る\",\"u_bc\":\"#66a7ff\",\"u_url\":\"https:\\/\\/shopping.yahoo.co.jp\\/search?first=1\\u0026p=Dreame%20D10%20Plus\",\"a_id\":5483010,\"p_id\":1225,\"pl_id\":27061,\"pc_id\":1925,\"s_n\":\"yahoo\",\"u_so\":2},{\"u_bc\":\"#ffcf0f\",\"u_tx\":\"Amazonで見る\",\"u_url\":\"https:\\/\\/www.amazon.co.jp\\/s\\/ref=nb_sb_noss_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A\\u0026url=search-alias%3Daps\\u0026field-keywords=Dreame%20D10%20Plus\",\"s_n\":\"amazon\",\"u_so\":3,\"a_id\":5483011,\"p_id\":170,\"pc_id\":185,\"pl_id\":27060,\"id\":3}],\"eid\":\"84YMM\",\"s\":\"l\"});\r\n</script>\r\n<div id=\"msmaflink-84YMM\">リンク</div>\r\n<!-- MoshimoAffiliateEasyLink END -->",
+    "moshimo": "<!-- START MoshimoAffiliateEasyLink -->\r\n<script type=\"text/javascript\">\r\n(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;\r\nb[a]=b[a]||function(){arguments.currentScript=c.currentScript\r\n||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};\r\nc.getElementById(a)||(d=c.createElement(f),d.src=g,\r\nd.id=a,e=c.getElementsByTagName(\"body\")[0],e.appendChild(d))})\r\n(window,document,\"script\",\"//dn.msmstatic.com/site/cardlink/bundle.js?20220329\",\"msmaflink\");\r\nmsmaflink({\"n\":\"【69％OFFクーポン→21,502円 7\\/31 23:59まで】【自動ゴミ収集＆水拭き】ロボット掃除機 Dreame D10 Plus 4000Pa強力吸引 170分連続稼働 LDSレーザーセンサー 高精度マッピング 静音 お掃除ロボット ペット 掃除機 一人暮らし ドリーミー\",\"b\":\"\",\"t\":\"\",\"d\":\"https:\\/\\/thumbnail.image.rakuten.co.jp\",\"c_p\":\"\\/@0_mall\\/dreame-shop\\/cabinet\",\"p\":[\"\\/11302689\\/imgrc0140534087.jpg\",\"\\/13294318\\/13294321\\/11.jpg\",\"\\/biiino\\/award\\/d10plue4e31f7b03.jpg\"],\"u\":{\"u\":\"https:\\/\\/item.rakuten.co.jp\\/dreame-shop\\/d10plus\\/\",\"t\":\"rakuten\",\"r_v\":\"\"},\"v\":\"2.1\",\"b_l\":[{\"id\":1,\"u_tx\":\"楽天市場で見る\",\"u_bc\":\"#f76956\",\"u_url\":\"https:\\/\\/item.rakuten.co.jp\\/dreame-shop\\/d10plus\\/\",\"a_id\":5483003,\"p_id\":54,\"pl_id\":27059,\"pc_id\":54,\"s_n\":\"rakuten\",\"u_so\":1},{\"id\":2,\"u_tx\":\"Yahoo!ショッピングで見る\",\"u_bc\":\"#66a7ff\",\"u_url\":\"https:\\/\\/shopping.yahoo.co.jp\\/search?first=1\\u0026p=%E3%80%9069%EF%BC%85OFF%E3%82%AF%E3%83%BC%E3%83%9D%E3%83%B3%E2%86%9221%2C502%E5%86%86%207%2F31%2023%3A59%E3%81%BE%E3%81%A7%E3%80%91%E3%80%90%E8%87%AA%E5%8B%95%E3%82%B4%E3%83%9F%E5%8F%8E%E9%9B%86%EF%BC%86%E6%B0%B4%E6%8B%AD%E3%81%8D%E3%80%91%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%20Dreame%20D10%20Plus%204000Pa%E5%BC%B7%E5%8A%9B%E5%90%B8%E5%BC%95%20170%E5%88%86%E9%80%A3%E7%B6%9A%E7%A8%BC%E5%83%8D%20LDS%E3%83%AC%E3%83%BC%E3%82%B6%E3%83%BC%E3%82%BB%E3%83%B3%E3%82%B5%E3%83%BC%20%E9%AB%98%E7%B2%BE%E5%BA%A6%E3%83%9E%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0%20%E9%9D%99%E9%9F%B3%20%E3%81%8A%E6%8E%83%E9%99%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%20%E3%83%9A%E3%83%83%E3%83%88%20%E6%8E%83%E9%99%A4%E6%A9%9F%20%E4%B8%80%E4%BA%BA%E6%9A%AE%E3%82%89%E3%81%97%20%E3%83%89%E3%83%AA%E3%83%BC%E3%83%9F%E3%83%BC\",\"a_id\":5483010,\"p_id\":1225,\"pl_id\":27061,\"pc_id\":1925,\"s_n\":\"yahoo\",\"u_so\":2},{\"u_bc\":\"#ffcf0f\",\"u_tx\":\"Amazonで見る\",\"u_url\":\"https:\\/\\/www.amazon.co.jp\\/s\\/ref=nb_sb_noss_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A\\u0026url=search-alias%3Daps\\u0026field-keywords=%E3%80%9069%EF%BC%85OFF%E3%82%AF%E3%83%BC%E3%83%9D%E3%83%B3%E2%86%9221%2C502%E5%86%86%207%2F31%2023%3A59%E3%81%BE%E3%81%A7%E3%80%91%E3%80%90%E8%87%AA%E5%8B%95%E3%82%B4%E3%83%9F%E5%8F%8E%E9%9B%86%EF%BC%86%E6%B0%B4%E6%8B%AD%E3%81%8D%E3%80%91%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%20Dreame%20D10%20Plus%204000Pa%E5%BC%B7%E5%8A%9B%E5%90%B8%E5%BC%95%20170%E5%88%86%E9%80%A3%E7%B6%9A%E7%A8%BC%E5%83%8D%20LDS%E3%83%AC%E3%83%BC%E3%82%B6%E3%83%BC%E3%82%BB%E3%83%B3%E3%82%B5%E3%83%BC%20%E9%AB%98%E7%B2%BE%E5%BA%A6%E3%83%9E%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0%20%E9%9D%99%E9%9F%B3%20%E3%81%8A%E6%8E%83%E9%99%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%20%E3%83%9A%E3%83%83%E3%83%88%20%E6%8E%83%E9%99%A4%E6%A9%9F%20%E4%B8%80%E4%BA%BA%E6%9A%AE%E3%82%89%E3%81%97%20%E3%83%89%E3%83%AA%E3%83%BC%E3%83%9F%E3%83%BC\",\"s_n\":\"amazon\",\"u_so\":3,\"a_id\":5483011,\"p_id\":170,\"pc_id\":185,\"pl_id\":27060,\"id\":3}],\"eid\":\"84YMM\",\"s\":\"l\"});\r\n</script>\r\n<div id=\"msmaflink-84YMM\">リンク</div>\r\n<!-- MoshimoAffiliateEasyLink END -->",
     "direct": "<a href=\"https://t.afi-b.com/visit.php?a=115804H-h5150028&p=g978598R\" rel=\"nofollow\"> D10Plus ロボット掃除機</a><img src=\"https://t.afi-b.com/lead/115804H/g978598R/h5150028\" width=\"1\" height=\"1\" style=\"border:none;\" />",
     "hpPublish": true
-  },
-  "priceSource": "official",
-  "priceCheckedAt": "2026-10-03"
+  }
 }

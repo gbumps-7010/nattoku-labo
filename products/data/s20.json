@@ -2,12 +2,12 @@
   "productId": "s20",
   "productName": "お掃除ロボットS20",
   "manufacturer": "SwitchBot",
-  "modelNumber": "W6602001",
+  "modelNumber": "S20",
   "imageUrl": "https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/09377790/s20/amazon/s20.jpg",
-  "overallRating": 4.15,
-  "totalReviews": 126,
+  "overallRating": 4.28,
+  "totalReviews": 124,
   "price": 59980,
-  "reliabilityScore": 78.1,
+  "reliabilityScore": 76.6,
   "asin": "",
   "keywords": [
     "SwitchBot S20",
@@ -15,55 +15,55 @@
     "水拭き",
     "ローラーモップ",
     "自動ゴミ収集",
-    "ペットの毛"
+    "ペット"
   ],
-  "metaTitle": "SwitchBot お掃除ロボットS20 詳細分析 | 118件の口コミで判明した実力と注意点",
-  "metaDescription": "SwitchBot お掃除ロボットS20の口コミ118件を徹底解析。強力な水拭き性能や吸引力が評価される一方、初期不良や段差からの落下といった問題も。購入前に知るべき真実を公開します。",
+  "metaTitle": "SwitchBot お掃除ロボットS20 詳細分析 | 116件の口コミで判明した実力と注意点",
+  "metaDescription": "SwitchBot お掃除ロボットS20の口コミ116件を徹底解析。強力な吸引力とローラー式の水拭き性能、賢い障害物回避など、購入前に知るべき真実を公開します。",
   "categoryC": {
     "userSatisfaction": {
-      "score": 88,
-      "reviewCount": 118,
-      "comment": "多くのユーザーが水拭き性能と吸引力に満足しており、家事の負担が大幅に軽減されたと評価。床がサラサラになる感覚や、外出中に掃除が完了する利便性が高く評価されています。"
+      "score": 92,
+      "reviewCount": 116,
+      "comment": "多くの利用者が吸引力や水拭き性能に満足しており、特に床がサラサラになる点を高く評価しています。一部、初期不良や特定の状況での性能に不満の声も見られますが、全体的には満足度が非常に高いです。"
     },
     "repurchaseIntention": {
-      "percentage": 82,
-      "reviewCount": 118,
-      "comment": "「もっと早く買えばよかった」「もう手放せない」といった声が多く、高い満足度が再購入意向に繋がっています。ただし、初期不良や故障を経験した一部ユーザーは次期モデルへの期待と不安を抱いています。"
+      "percentage": 85,
+      "reviewCount": 102,
+      "comment": "「もっと早く買えばよかった」「買ってよかった」という声が多数を占め、生活の質が向上したと感じるユーザーが多いです。故障を懸念する声もありますが、製品の利便性から再購入意向は高いと判断できます。"
     },
     "failureRate": {
-      "percentage": 5.9,
-      "reviewCount": 118,
+      "percentage": 6,
+      "reviewCount": 7,
       "breakdown": {
         "hardware": 4,
         "software": 2,
         "environmental": 1
       },
-      "comment": "「すぐ止まる」「電源がつかない」といった初期不良や、短期間での故障報告が7件見られました。特に階段からの落下事例は深刻で、センサーの信頼性に課題を残しています。"
+      "comment": "「初期不良」「ブラシが回転しない」といったハードウェアの不具合報告が数件見られます。また、アプリ連携の失敗や特定の環境下でスタックする問題も報告されており、全体のごく一部で発生しています。"
     }
   },
   "reliability": {
-    "score": 78.1,
+    "score": 76.6,
     "dataAdequacy": {
       "score": 81,
       "weight": 60,
-      "description": "118件の口コミを分析。多様な利用環境からの評価が含まれており、製品の長所と短所を判断するのに十分なデータ量です。"
+      "description": "レビュー総数は116件あり、製品の全体的な傾向を把握するには十分なデータ量です。多様な利用環境からのフィードバックが含まれており、信頼性の高い分析が可能です。"
     },
     "consistency": {
       "score": 70,
       "weight": 30,
-      "description": "高評価と低評価の意見が分かれる傾向にあります。水拭き性能を絶賛する声が多い一方、初期不良や故障、落下といった致命的な問題に関する報告も散見され、品質にばらつきがある可能性が示唆されます。",
+      "description": "Amazonと楽天で評価傾向に大きな乖離はなく、概ね高評価で一致しています。ただし、一部で初期不良やサポート対応に関する否定的な意見も見られ、評価のばらつきが若干存在します。",
       "percentage": 70
     },
     "freshness": {
-      "score": 85,
+      "score": 70,
       "weight": 10,
-      "description": "分析対象の口コミは比較的新しいものが中心ですが、直近1ヶ月以内のレビューは全体の約1.7%と少なめです。発売から時間が経過し、長期利用における課題も出始めています。"
+      "description": "レビューの大半は製品発売後の期間に集中していますが、継続的に新しいレビューが投稿されています。ただし直近1ヶ月のデータは少なく、最新のファームウェア更新による影響は限定的です。"
     }
   },
   "updateInfo": {
-    "lastUpdated": "2026-08-13",
+    "lastUpdated": "2026-07-20",
     "firmwareVersion": "",
-    "note": "2026年7月までの口コミを中心に分析。水拭き性能への高評価は安定していますが、初期不良やセンサー関連のトラブル報告が複数あり、個体差や設置環境への注意が必要です。"
+    "note": "2025年7月から2026年7月までの口コミ116件を分析。全体的に水拭き性能と吸引力が高く評価されていますが、一部で初期不良や段差乗り越えに関する課題が指摘されています。"
   },
   "timeSaving": {
     "vacuumMinutes": 10,
@@ -73,80 +73,54 @@
     "annualHours": 115.6,
     "workDaysEquivalent": 14.4
   },
-  "operationalCost": {
-    "daily": 50,
-    "dailyNote": "消耗品と電気代を考慮した1日あたりの推定運用コストです。使用頻度により変動します。",
-    "monthly": 1533,
-    "annual": 18400,
-    "consumables": [
-      {
-        "item": "ローラーモップ",
-        "replacementFrequency": "4ヶ月ごと",
-        "unitCost": 4000,
-        "annualCost": 12000
-      },
-      {
-        "item": "サイドブラシ",
-        "replacementFrequency": "6ヶ月ごと",
-        "unitCost": 1200,
-        "annualCost": 2400
-      },
-      {
-        "item": "フィルター",
-        "replacementFrequency": "3ヶ月ごと",
-        "unitCost": 1000,
-        "annualCost": 4000
-      }
-    ]
-  },
   "performanceAnalysis": {
     "floorCleaning": {
       "score": 95,
-      "reviewCount": 68,
-      "positiveReviewCount": 64,
-      "comment": "多くの利用者がローラーモップによる水拭き性能を絶賛。「床がサラサラ」「ピカピカになる」との声が多数寄せられ、特に子育て世帯やペットがいる家庭で高く評価されています。"
+      "reviewCount": 66,
+      "positiveReviewCount": 62,
+      "comment": "「床がサラサラ・ピカピカになる」と絶賛の声が多数。ローラーモップ方式の水拭き性能は非常に高く評価されています。ただし、ごく一部で拭き筋が残るとの指摘もあり、完璧ではないようです。"
     },
     "carpetCleaning": {
-      "score": 78,
+      "score": 85,
       "reviewCount": 12,
-      "positiveReviewCount": 9,
-      "comment": "カーペットを自動で検知し吸引力を上げる機能は評価されていますが、薄いラグを巻き込んでしまうという報告も。毛足の長いカーペットや色の濃いラグでは性能が落ちる可能性があります。"
+      "positiveReviewCount": 10,
+      "comment": "カーペットを自動で検知し、吸引力を上げる機能が評価されています。水拭きローラーがリフトアップするため、カーペットが濡れる心配がない点も好評です。ただし、毛足の長いラグは苦手な場合があります。"
     },
     "petHairRemoval": {
-      "score": 92,
+      "score": 94,
       "reviewCount": 11,
-      "positiveReviewCount": 10,
-      "comment": "ペットの毛や猫砂をしっかり吸引する性能は高く評価されています。毛が絡まりにくいゴム製ブラシも好評で、ペットオーナーからの満足度は非常に高いです。"
+      "positiveReviewCount": 11,
+      "comment": "ペットの毛をしっかり吸い取るとの評価が多数です。猫を多頭飼いしている家庭からも「掃除のストレスが激減した」と高評価を得ています。ゴム製のブラシは毛が絡まりにくい点も利点です。"
     },
     "quietness": {
-      "score": 84,
+      "score": 86,
       "reviewCount": 10,
       "positiveReviewCount": 8,
-      "comment": "「思ったより静か」という意見が多く、在宅中でも気にならないレベルとの評価。ただし、ゴミをステーションに吸い上げる際の音は大きいと感じるユーザーもいるため注意が必要です。"
+      "comment": "ロボット本体の動作音は「思ったより静か」で、夜間や在宅中でも気にならないという意見が多いです。一方で、ステーションでのゴミ収集音は「掃除機並み」に大きいという指摘が共通して見られます。"
     },
     "stepClimbing": {
-      "score": 65,
+      "score": 70,
       "reviewCount": 16,
-      "positiveReviewCount": 8,
-      "comment": "2cm程度の段差は乗り越えられるものの、机の脚に乗り上げて動けなくなったり、逆に低い段差を検知できず落下する深刻な事例も報告されており、安定性には課題があります。"
+      "positiveReviewCount": 10,
+      "comment": "キッチンマットなどは乗り越えるものの、1-2cm程度の段差でスタックしたり、玄関から落下したりする事例が報告されています。複雑な段差や敷居が多い環境では、進入禁止エリアの設定が必須です。"
     },
     "maintenance": {
-      "score": 80,
-      "reviewCount": 44,
-      "positiveReviewCount": 35,
-      "comment": "ゴミ収集やモップ洗浄・乾燥が自動で行われる点は高く評価されています。しかし、ローラーモップの構造が複雑で清掃しにくく、臭いやホコリの塊が発生するとの指摘もあります。"
+      "score": 85,
+      "reviewCount": 45,
+      "positiveReviewCount": 38,
+      "comment": "ゴミ収集からモップの洗浄・乾燥まで自動で行うため、日々の手間は大幅に削減されます。しかし、ローラーモップの淵にホコリが溜まりやすく、定期的な手動清掃や臭い対策が必要との声もあります。"
     },
     "appStability": {
-      "score": 88,
+      "score": 90,
       "reviewCount": 31,
-      "positiveReviewCount": 27,
-      "comment": "アプリの操作性やマッピング機能は概ね良好で、外出先からの操作やスケジュール設定が便利だと評価されています。一部で部屋の分割など微調整の難しさを指摘する声もありました。"
+      "positiveReviewCount": 28,
+      "comment": "「携帯と連動できて便利」「設定が簡単」と、アプリの操作性は概ね好評です。ただし、初期のWi-Fi接続でエラーが出たという報告や、他社アプリに比べてマップ編集がしにくいという意見もありました。"
     },
     "batteryLife": {
-      "score": 82,
-      "reviewCount": 4,
-      "positiveReviewCount": 3,
-      "comment": "バッテリーに関する言及は少ないものの、3LDKを45分で掃除完了するなど、一般的な家庭では十分な稼働時間を持つと推測されます。充電が70%で終了する仕様に言及する声もありました。"
+      "score": 80,
+      "reviewCount": 3,
+      "positiveReviewCount": 2,
+      "comment": "バッテリーに関する言及は非常に少ないですが、途中で充電切れになるなどの致命的な問題は報告されていません。一般的な家庭環境であれば、一度の充電で十分に掃除を完了できる性能を持っているようです。"
     }
   },
   "radarChartData": {
@@ -162,28 +136,28 @@
     ],
     "values": [
       95,
-      78,
-      92,
-      84,
-      65,
-      80,
-      88,
-      82
+      85,
+      94,
+      86,
+      70,
+      85,
+      90,
+      80
     ]
   },
   "dataQuality": {
-    "totalReviews": 126,
-    "sampledReviews": 118,
-    "adoptedReviews": 118,
+    "totalReviews": 124,
+    "sampledReviews": 116,
+    "adoptedReviews": 116,
     "excludedReviews": 8,
-    "trustScore": 78.1,
-    "comment": "Amazonと楽天から収集した118件の口コミを分析。購入直後から長期利用まで様々な期間のレビューが含まれており、製品の初期性能と耐久性の両側面を評価する上で信頼性の高いデータです。"
+    "trustScore": 76.6,
+    "comment": "Amazonと楽天から収集した116件のユーザーレビューを分析対象としました。極端に短い、内容がない、配送に関する評価のみといったレビューは除外し、製品評価の品質を担保しています。"
   },
   "reviewKeywords": {
     "positive": [
       {
         "keyword": "水拭き・拭き掃除が良い",
-        "count": 44
+        "count": 42
       },
       {
         "keyword": "満足・買ってよかった",
@@ -191,11 +165,11 @@
       },
       {
         "keyword": "使いやすい・便利",
-        "count": 18
+        "count": 19
       },
       {
         "keyword": "床がサラサラ・ピカピカ",
-        "count": 17
+        "count": 16
       },
       {
         "keyword": "吸引力が高い",
@@ -207,7 +181,7 @@
       },
       {
         "keyword": "綺麗になる",
-        "count": 12
+        "count": 11
       },
       {
         "keyword": "静かで快適",
@@ -260,125 +234,118 @@
   "successStrategies": [
     {
       "rank": 1,
-      "issue": "階段や玄関から落下する",
-      "occurrenceRate": 1.7,
-      "occurrenceCount": 2,
-      "environmentalFactor": "段差の高さや床材の色、センサーの汚れ",
-      "technicalDescription": "落下防止センサーが段差を正確に認識できずに発生。特に色の濃い床材を崖と誤認したり、センサーの汚れで感度が低下したりすることが原因と考えられます。非常に危険な不具合です。",
+      "issue": "段差でのスタックや落下",
+      "occurrenceRate": 3,
+      "occurrenceCount": 4,
+      "environmentalFactor": "1-2cm程度の敷居や段差、濃い色のマット",
+      "technicalDescription": "落下防止センサーは搭載されているものの、特定の高さの段差や色の濃いラグを正しく認識できず、スタックや落下に至るケースが報告されています。AI障害物回避機能が過敏に働き、段差手前で停止することもあります。",
       "avoidanceStrategies": [
         {
-          "method": "アプリで侵入禁止エリアを設定する",
+          "method": "アプリで進入禁止エリア・バーチャルウォールを設定する",
           "effectiveness": "高",
           "technicalLevel": "初級",
-          "technicalRationale": "マップ上で階段や玄関エリアを「侵入禁止」に設定することで、物理的にその場所へ進入するのを防ぎます。これが最も確実で安全な対策です。メーカーも推奨しています。"
+          "technicalRationale": "マップ上で玄関や危険な段差を予め指定することで、物理的にそのエリアに進入しなくなります。SwitchBotアプリのマップ編集機能から簡単に設定でき、最も確実な落下防止策です。"
         },
         {
-          "method": "落下防止センサーを定期的に清掃する",
+          "method": "段差にスロープを設置する",
           "effectiveness": "中",
           "technicalLevel": "初級",
-          "technicalRationale": "本体底面にある落下防止センサー（崖センサー）を乾いた布で拭き、ホコリや汚れを取り除きます。センサー感度を正常に保つことで、落下リスクを低減できます。"
+          "technicalRationale": "市販のロボット掃除機用スロープを設置することで、乗り越え性能を補助します。ただし、家の美観を損ねる可能性や、スロープ自体が障害物になる場合もあるため、設置場所の検討が必要です。"
         }
       ],
-      "preventionTips": "初めて使用するフロアでは、必ずマッピング機能で正確な地図を作成し、階段や玄関などの危険箇所を侵入禁止エリアに設定してください。物理的なベビーゲートなどを併用するとさらに安全です。"
+      "preventionTips": "初回のマッピング走行時に、特に注意してロボットの動きを観察しましょう。危険な箇所を特定し、清掃を開始する前にアプリで進入禁止設定を済ませておくことが、事故を防ぐ最も効果的な予防策です。"
     }
   ],
   "topComplaints": [
     {
-      "title": "初期不良・故障が多い",
-      "percentage": 5.9,
+      "title": "初期不良・故障の報告",
+      "percentage": 6,
       "reviewCount": 7,
-      "description": "「電源が入らない」「すぐ止まる」「ブラシが回転しない」など、購入直後や数ヶ月での故障報告が複数あります。サポートの対応に時間がかかるとの指摘もあり、品質のばらつきが懸念されます。",
-      "solution": "問題が発生した場合、まずは本体の再起動やファームウェアのアップデートを確認してください。改善しない場合は、速やかにアプリのフィードバック機能からサポートセンターへ連絡することが推奨されます。"
+      "description": "「電源が入らない」「ブラシが回転しない」といった初期不良や、使用後すぐに発生する故障が少数報告されています。サポートの対応に時間がかかるという声もあり、購入後の不安要素となっています。",
+      "solution": "不具合が発生した場合、まずは本体の再起動やアプリからのリセットを試してください。改善しない場合は、速やかにSwitchBot公式サイトのサポートページから問い合わせを行うことが推奨されます。"
     },
     {
-      "title": "階段から落下し破損する",
-      "percentage": 1.7,
-      "reviewCount": 2,
-      "description": "落下防止センサーが機能せず、2階から落下したという深刻な報告があります。本体の破損だけでなく、家屋を傷つける危険性もあり、特に階段のある家では注意が必要です。",
-      "solution": "最も確実な対策は、アプリのマップ機能で階段周辺を「侵入禁止エリア」に設定することです。また、センサーが汚れていると感度が落ちるため、定期的な清掃が重要です。"
+      "title": "水拭きの仕上がりに一部不満",
+      "percentage": 3,
+      "reviewCount": 4,
+      "description": "全体的に高評価な水拭き機能ですが、「拭き筋が残る」「部屋の隅が拭けない」といった指摘が一部で見られます。ローラーモップの構造上、壁際ぎりぎりまでの清掃には限界があるようです。",
+      "solution": "アプリで水量を調整したり、専用の洗浄液を使用したりすることで拭き筋が改善する場合があります。壁際や隅は、本体設定の「エッジ清掃」を有効にすることで、ある程度の改善が期待できます。"
     },
     {
-      "title": "部屋の隅や壁際の掃除が甘い",
-      "percentage": 2.5,
-      "reviewCount": 3,
-      "description": "本体形状のため、部屋の四隅や壁際ギリギリのゴミを取り残すことがあります。また、水拭き時に拭き筋が残ったり、部屋の途中で掃除を終えて戻ったりするなど、清掃ルートの精度に不満の声が見られます。",
-      "solution": "アプリの設定で清掃モードを「徹底」にしたり、同じエリアを2回掃除する設定にすることで改善する場合があります。壁際の掃除性能を重視する場合は、Dシェイプ型の他社製品も比較検討の価値があります。"
-    },
-    {
-      "title": "ローラーモップの手入れが面倒で臭いが発生",
-      "percentage": 1.7,
-      "reviewCount": 2,
-      "description": "自動洗浄機能はあるものの、ローラーモップの構造が複雑で、淵にホコリが溜まり乾燥して固まることがあります。これが床に落ちたり、手洗いしないと臭いの原因になったりするとの指摘があります。",
-      "solution": "定期的にローラーモップを取り外し、ブラシなどで内部の汚れをかき出す手入れが必要です。洗浄・乾燥後も臭いが気になる場合は、メーカー推奨の専用洗剤の使用が効果的です。"
+      "title": "段差や障害物で停止・スタックする",
+      "percentage": 4,
+      "reviewCount": 5,
+      "description": "「机の足に乗り上げて停止」「1cmの段差を越えられない」など、特定の障害物や段差で動けなくなる事例が報告されています。特に複雑な形状の家具の脚周りや、色の濃いラグは苦手な傾向があります。",
+      "solution": "事前に床のケーブルや小物を片付けることが基本対策です。解決しない場合は、アプリのマップ編集機能で「進入禁止エリア」を設定し、問題が発生する箇所を避けて掃除するよう設定するのが効果的です。"
     }
   ],
   "attributeScores": {
     "petOwner": {
-      "overall": 91,
+      "overall": 92,
       "details": [
         {
-          "field": "ペット毛吸引",
-          "score": 92,
+          "field": "ペットの毛除去",
+          "score": 94,
           "reviewCount": 11,
-          "comment": "10,000Paの強力な吸引力と毛が絡みにくいゴム製ブラシで、ペットの毛や猫砂をしっかり除去。多くのペットオーナーから高い評価を得ています。"
+          "comment": "猫を多頭飼いするユーザーからも、抜け毛をしっかり吸引してくれると高評価です。ゴム製ブラシは毛の絡まりが少なく、ペットがいる家庭にとって大きなメリットと言えるでしょう。"
         },
         {
-          "field": "床掃除（水拭き）",
+          "field": "床の洗浄力",
           "score": 95,
-          "reviewCount": 68,
-          "comment": "ペットのよだれ跡なども水拭きで綺麗さっぱり。床が常に清潔に保てるため、安心してペットを遊ばせることができると好評です。"
+          "reviewCount": 66,
+          "comment": "ペットのよだれ跡や足跡などのベタつきも、強力な水拭き機能で綺麗になります。常に洗浄されるローラーモップが悪臭の原因を広げず、床を衛生的に保てる点が支持されています。"
         },
         {
           "field": "メンテナンス性",
-          "score": 80,
-          "reviewCount": 44,
-          "comment": "自動ゴミ収集機能は便利ですが、ペットの毛が多い環境ではダストバッグの交換頻度が上がります。ローラーモップの手入れも定期的に必要です。"
+          "score": 85,
+          "reviewCount": 45,
+          "comment": "全自動ステーションがゴミ捨てやモップ洗浄の手間を大幅に削減します。ペットの毛が多い環境でもダストバッグの交換頻度が低く、忙しい飼い主の負担を軽減してくれる点が魅力です。"
         }
       ]
     },
     "apartment": {
-      "overall": 83,
+      "overall": 85,
       "details": [
         {
           "field": "静音性",
-          "score": 84,
+          "score": 86,
           "reviewCount": 10,
-          "comment": "走行音は静かで、集合住宅でも時間帯を気にせず使いやすいと評価されています。ただし、ステーションでのゴミ吸引音は大きいため、夜間の使用は避けた方が無難です。"
+          "comment": "清掃中の動作音は比較的静かで、集合住宅でも隣室への騒音を気にせず使用できるレベルです。ただし、ゴミ収集時の音は大きいため、夜間や早朝の自動収集は避けた方が賢明です。"
         },
         {
-          "field": "床掃除（水拭き）",
+          "field": "床の洗浄力",
           "score": 95,
-          "reviewCount": 68,
-          "comment": "フローリングの掃除性能が非常に高く、床のべたつきを解消してくれます。コンパクトな空間でも隅々まで掃除しようと試みますが、壁際は苦手です。"
+          "reviewCount": 66,
+          "comment": "限られたスペースを効率的に清掃し、フローリングを常に清潔に保ちます。コンパクトな間取りでも、水拭きによる床のサラサラ感は生活の質を大きく向上させてくれるでしょう。"
         },
         {
           "field": "段差乗り越え",
-          "score": 65,
+          "score": 70,
           "reviewCount": 16,
-          "comment": "敷居などの低い段差は乗り越えますが、玄関のたたきなどへの落下リスクが指摘されています。ワンフロアでの使用が基本となり、段差のある場所は注意が必要です。"
+          "comment": "マンションによくある部屋間の敷居やドアレールでスタックする可能性があります。購入前に自宅の段差を確認し、必要であればアプリで進入禁止エリアを設定するなどの対策が必要です。"
         }
       ]
     },
     "workingProfessional": {
-      "overall": 86,
+      "overall": 88,
       "details": [
         {
-          "field": "アプリ安定性",
-          "score": 88,
+          "field": "アプリの安定性・操作性",
+          "score": 90,
           "reviewCount": 31,
-          "comment": "外出先からスマホで掃除を開始したり、スケジュールを設定したりできる点が多忙な社会人に好評。帰宅時には綺麗な部屋が待っています。"
+          "comment": "外出先からでもスマホアプリで簡単に操作でき、清掃スケジュール設定も可能です。帰宅時間に合わせて掃除を完了させられるため、忙しいビジネスパーソンにとって非常に便利な機能です。"
         },
         {
           "field": "メンテナンス性",
-          "score": 80,
-          "reviewCount": 44,
-          "comment": "ゴミ捨てや水交換の手間が大幅に削減されるため、掃除に時間をかけられない人に最適です。ただし、数週間に一度はタンクの清掃などが必要です。"
+          "score": 85,
+          "reviewCount": 45,
+          "comment": "ゴミ捨てやモップ洗浄が自動化されており、メンテナンスの手間が最小限で済みます。汚水タンクの処理など月に数回の対応で済むため、時間に追われる日々の中でも手軽に清潔な環境を維持できます。"
         },
         {
-          "field": "バッテリー",
-          "score": 82,
-          "reviewCount": 4,
-          "comment": "一度の充電で広範囲を掃除できるため、帰宅後に充電切れで止まっている心配は少ないです。掃除完了後は自動でステーションに戻り充電します。"
+          "field": "バッテリー性能",
+          "score": 80,
+          "reviewCount": 3,
+          "comment": "バッテリーに関する不満はほとんどなく、一般的な広さの住居であれば途中で充電に戻ることなく清掃を完了できます。自動帰還・充電機能があるため、バッテリー残量を気にする必要はありません。"
         }
       ]
     },
@@ -386,33 +353,33 @@
       "overall": 87,
       "details": [
         {
-          "field": "床掃除（水拭き）",
+          "field": "床の洗浄力",
           "score": 95,
-          "reviewCount": 68,
-          "comment": "子供の食べこぼしや赤ちゃんのよだれ跡も綺麗になると、子育て世帯から絶大な支持を得ています。床を清潔に保ちたい家庭に最適です。"
+          "reviewCount": 66,
+          "comment": "子供の食べこぼしや皮脂汚れなど、家族が集まるリビングの床を強力に洗浄します。水拭き後の床は素足で歩いても快適で、小さな子供がハイハイする家庭でも安心して使用できます。"
         },
         {
-          "field": "バッテリー",
-          "score": 82,
-          "reviewCount": 4,
-          "comment": "広い一軒家でも途中で充電に戻り、掃除を再開する機能を搭載。複数階のマップも保存可能ですが、本体を運ぶ手間はかかります。"
-        },
-        {
-          "field": "カーペット掃除",
-          "score": 78,
+          "field": "カーペット清掃",
+          "score": 85,
           "reviewCount": 12,
-          "comment": "リビングのカーペットなども掃除できますが、子供のおもちゃや薄いマットを巻き込む可能性があります。掃除前に床を片付ける習慣が大切です。"
+          "comment": "リビングのラグやカーペットも、自動で吸引力を上げてしっかり掃除します。水拭きモップが自動でリフトアップするため、カーペットを濡らす心配がなく、安心して任せられます。"
+        },
+        {
+          "field": "バッテリー性能",
+          "score": 80,
+          "reviewCount": 3,
+          "comment": "広い一軒家でも、効率的なマッピング機能とバッテリー性能で隅々まで清掃可能です。万が一途中で充電が切れても、自動で充電後に中断した場所から清掃を再開するため、掃除残しがありません。"
         }
       ]
     },
     "resaleValue": null
   },
   "resaleValue": null,
+  "priceSource": "official",
+  "priceCheckedAt": "2026-10-03",
   "affiliate": {
-    "moshimo": "<!-- START MoshimoAffiliateEasyLink -->\r\n<script type=\"text/javascript\">\r\n(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;\r\nb[a]=b[a]||function(){arguments.currentScript=c.currentScript\r\n||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};\r\nc.getElementById(a)||(d=c.createElement(f),d.src=g,\r\nd.id=a,e=c.getElementsByTagName(\"body\")[0],e.appendChild(d))})\r\n(window,document,\"script\",\"//dn.msmstatic.com/site/cardlink/bundle.js?20220329\",\"msmaflink\");\r\nmsmaflink({\"n\":\"SwitchBot スイッチボット お掃除ロボットS20 ロボット掃除機 掃除ロボット 掃除機 クリーナー 水拭き 自動ゴミ収集 自動充電 モップ乾燥 強力吸引 AI障害物回避\",\"b\":\"\",\"t\":\"\",\"d\":\"https:\\/\\/thumbnail.image.rakuten.co.jp\",\"c_p\":\"\\/@0_mall\\/switchbot\\/cabinet\\/09377790\\/s20\\/amazon\",\"p\":[\"\\/head.jpg\",\"\\/s20.jpg\",\"\\/01.jpg\"],\"u\":{\"u\":\"https:\\/\\/item.rakuten.co.jp\\/switchbot\\/s20\\/\",\"t\":\"rakuten\",\"r_v\":\"\"},\"v\":\"2.1\",\"b_l\":[{\"id\":1,\"u_tx\":\"楽天市場で見る\",\"u_bc\":\"#f76956\",\"u_url\":\"https:\\/\\/item.rakuten.co.jp\\/switchbot\\/s20\\/\",\"a_id\":5483003,\"p_id\":54,\"pl_id\":27059,\"pc_id\":54,\"s_n\":\"rakuten\",\"u_so\":1},{\"id\":2,\"u_tx\":\"Yahoo!ショッピングで見る\",\"u_bc\":\"#66a7ff\",\"u_url\":\"https:\\/\\/shopping.yahoo.co.jp\\/search?first=1\\u0026p=SwitchBot%20%E3%81%8A%E6%8E%83%E9%99%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88S20\",\"a_id\":5483010,\"p_id\":1225,\"pl_id\":27061,\"pc_id\":1925,\"s_n\":\"yahoo\",\"u_so\":2},{\"id\":3,\"u_tx\":\"Amazonで見る\",\"u_bc\":\"#ffcf0f\",\"u_url\":\"https:\\/\\/www.amazon.co.jp\\/s\\/ref=nb_sb_noss_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A\\u0026url=search-alias%3Daps\\u0026field-keywords=SwitchBot%20%E3%81%8A%E6%8E%83%E9%99%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88S20\",\"a_id\":5483011,\"p_id\":170,\"pl_id\":27060,\"pc_id\":185,\"s_n\":\"amazon\",\"u_so\":3}],\"eid\":\"OvG0a\",\"s\":\"l\"});\r\n</script>\r\n<div id=\"msmaflink-OvG0a\">リンク</div>\r\n<!-- MoshimoAffiliateEasyLink END -->",
+    "moshimo": "<!-- START MoshimoAffiliateEasyLink -->\r\n<script type=\"text/javascript\">\r\n(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;\r\nb[a]=b[a]||function(){arguments.currentScript=c.currentScript\r\n||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};\r\nc.getElementById(a)||(d=c.createElement(f),d.src=g,\r\nd.id=a,e=c.getElementsByTagName(\"body\")[0],e.appendChild(d))})\r\n(window,document,\"script\",\"//dn.msmstatic.com/site/cardlink/bundle.js?20220329\",\"msmaflink\");\r\nmsmaflink({\"n\":\"【150万P抽選チャンス】SwitchBot スイッチボット お掃除ロボットS20 ロボット掃除機 掃除ロボット 掃除機 クリーナー 水拭き 自動ゴミ収集 自動充電 モップ乾燥 強力吸引 　AI障害物回避\",\"b\":\"\",\"t\":\"\",\"d\":\"https:\\/\\/thumbnail.image.rakuten.co.jp\",\"c_p\":\"\\/@0_mall\\/switchbot\\/cabinet\\/09377790\\/s20\\/amazon\",\"p\":[\"\\/s20.jpg\",\"\\/01.jpg\",\"\\/02.jpg\"],\"u\":{\"u\":\"https:\\/\\/item.rakuten.co.jp\\/switchbot\\/s20\\/\",\"t\":\"rakuten\",\"r_v\":\"\"},\"v\":\"2.1\",\"b_l\":[{\"id\":1,\"u_tx\":\"楽天市場で見る\",\"u_bc\":\"#f76956\",\"u_url\":\"https:\\/\\/item.rakuten.co.jp\\/switchbot\\/s20\\/\",\"a_id\":5483003,\"p_id\":54,\"pl_id\":27059,\"pc_id\":54,\"s_n\":\"rakuten\",\"u_so\":1},{\"id\":2,\"u_tx\":\"Yahoo!ショッピングで見る\",\"u_bc\":\"#66a7ff\",\"u_url\":\"https:\\/\\/shopping.yahoo.co.jp\\/search?first=1\\u0026p=%E3%80%90150%E4%B8%87P%E6%8A%BD%E9%81%B8%E3%83%81%E3%83%A3%E3%83%B3%E3%82%B9%E3%80%91SwitchBot%20%E3%82%B9%E3%82%A4%E3%83%83%E3%83%81%E3%83%9C%E3%83%83%E3%83%88%20%E3%81%8A%E6%8E%83%E9%99%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88S20%20%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%20%E6%8E%83%E9%99%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%20%E6%8E%83%E9%99%A4%E6%A9%9F%20%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%8A%E3%83%BC%20%E6%B0%B4%E6%8B%AD%E3%81%8D%20%E8%87%AA%E5%8B%95%E3%82%B4%E3%83%9F%E5%8F%8E%E9%9B%86%20%E8%87%AA%E5%8B%95%E5%85%85%E9%9B%BB%20%E3%83%A2%E3%83%83%E3%83%97%E4%B9%BE%E7%87%A5%20%E5%BC%B7%E5%8A%9B%E5%90%B8%E5%BC%95%20%E3%80%80AI%E9%9A%9C%E5%AE%B3%E7%89%A9%E5%9B%9E%E9%81%BF\",\"a_id\":5483010,\"p_id\":1225,\"pl_id\":27061,\"pc_id\":1925,\"s_n\":\"yahoo\",\"u_so\":2},{\"id\":3,\"u_tx\":\"Amazonで見る\",\"u_bc\":\"#ffcf0f\",\"u_url\":\"https:\\/\\/www.amazon.co.jp\\/s\\/ref=nb_sb_noss_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A\\u0026url=search-alias%3Daps\\u0026field-keywords=%E3%80%90150%E4%B8%87P%E6%8A%BD%E9%81%B8%E3%83%81%E3%83%A3%E3%83%B3%E3%82%B9%E3%80%91SwitchBot%20%E3%82%B9%E3%82%A4%E3%83%83%E3%83%81%E3%83%9C%E3%83%83%E3%83%88%20%E3%81%8A%E6%8E%83%E9%99%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88S20%20%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%20%E6%8E%83%E9%99%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%20%E6%8E%83%E9%99%A4%E6%A9%9F%20%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%8A%E3%83%BC%20%E6%B0%B4%E6%8B%AD%E3%81%8D%20%E8%87%AA%E5%8B%95%E3%82%B4%E3%83%9F%E5%8F%8E%E9%9B%86%20%E8%87%AA%E5%8B%95%E5%85%85%E9%9B%BB%20%E3%83%A2%E3%83%83%E3%83%97%E4%B9%BE%E7%87%A5%20%E5%BC%B7%E5%8A%9B%E5%90%B8%E5%BC%95%20%E3%80%80AI%E9%9A%9C%E5%AE%B3%E7%89%A9%E5%9B%9E%E9%81%BF\",\"a_id\":5483011,\"p_id\":170,\"pl_id\":27060,\"pc_id\":185,\"s_n\":\"amazon\",\"u_so\":3}],\"eid\":\"OvG0a\",\"s\":\"l\"});\r\n</script>\r\n<div id=\"msmaflink-OvG0a\">リンク</div>\r\n<!-- MoshimoAffiliateEasyLink END -->",
     "direct": "<a href=\"https://px.a8.net/svt/ejp?a8mat=4B1OTR+ZQ12Q+4W9U+BW0YB&a8ejpredirect=https%3A%2F%2Fwww.switchbot.jp%2Fproducts%2Fswitchbot-robot-vacuum-cleaner-s20\" target=\"_blank\" rel=\"nofollow\">公式サイトで見る</a>",
     "hpPublish": true
-  },
-  "priceSource": "official",
-  "priceCheckedAt": "2026-10-03"
+  }
 }

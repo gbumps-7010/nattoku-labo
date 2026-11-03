@@ -1,0 +1,369 @@
+{
+  "productId": "e5",
+  "productName": "E5",
+  "manufacturer": "Roborock",
+  "modelNumber": "E5",
+  "imageUrl": "https://m.media-amazon.com/images/I/41H5Fv-yLRL._SL500_.jpg",
+  "overallRating": 3.63,
+  "totalReviews": 31,
+  "price": 19800,
+  "reliabilityScore": 54.2,
+  "asin": "",
+  "metaTitle": "Roborock E5 詳細分析 | 口コミ31件から見る実力と注意点",
+  "metaDescription": "Roborock E5の口コミ31件を徹底解析。水拭き性能や吸引力、アプリ連携の安定性など、購入前に知るべき長所と短所、そして賢い使い方を公開します。",
+  "keywords": [
+    "Roborock E5",
+    "ロボット掃除機",
+    "水拭き",
+    "コスパ",
+    "アプリ",
+    "口コミ"
+  ],
+  "categoryC": {
+    "userSatisfaction": {
+      "score": 82,
+      "reviewCount": 31,
+      "comment": "基本的な清掃能力やコストパフォーマンスへの満足度は高いです。しかし、アプリ連携やWi-Fi設定で苦戦する声が散見され、IT機器に不慣れな層からの評価を下げています。"
+    },
+    "repurchaseIntention": {
+      "percentage": 65,
+      "reviewCount": 31,
+      "comment": "「初めてのロボット掃除機として十分」という声が多く、次も同社の製品を検討する層はいます。一方で、アプリの使い勝手から他社製品への乗り換えを考える可能性も示唆されます。"
+    },
+    "failureRate": {
+      "percentage": 9.7,
+      "reviewCount": 31,
+      "breakdown": {
+        "hardware": 2,
+        "software": 1,
+        "environmental": 0
+      },
+      "comment": "「バッテリー不良」や「不良品」といったハードウェア起因の初期不良報告が数件見られます。ソフトウェア関連では、Wi-Fi接続の不安定さが主な問題点として挙げられています。"
+    }
+  },
+  "reliability": {
+    "score": 54.2,
+    "dataAdequacy": {
+      "score": 52,
+      "weight": 60,
+      "description": "口コミ件数が31件と少なく、統計的信頼性を確保するにはやや不十分です。より多角的な評価のためには、さらなるデータ収集が望まれます。"
+    },
+    "consistency": {
+      "percentage": 60,
+      "weight": 30,
+      "description": "清掃性能は高評価で一致していますが、アプリやWi-Fi接続の評価が大きく分かれています。使用者のITリテラシーや家庭のネットワーク環境に左右される傾向が見られます。",
+      "score": 60
+    },
+    "freshness": {
+      "score": 50,
+      "weight": 10,
+      "description": "直近30日以内の新しい口コミがなく、鮮度は低いです。ファームウェア更新による改善点が現在の評価に反映されていない可能性があります。"
+    }
+  },
+  "updateInfo": {
+    "lastUpdated": "2026-05-19",
+    "firmwareVersion": "",
+    "note": "分析対象の最新口コミは2026年5月時点のものです。基本的な清掃性能は高評価ですが、アプリやWi-Fi接続に関する問題点が複数指摘されています。"
+  },
+  "timeSaving": {
+    "vacuumMinutes": 10,
+    "mopMinutes": 9,
+    "dailyMinutes": 19,
+    "monthlyHours": 9.5,
+    "annualHours": 115.6,
+    "workDaysEquivalent": 14.4
+  },
+  "performanceAnalysis": {
+    "floorCleaning": {
+      "score": 88,
+      "reviewCount": 12,
+      "positiveReviewCount": 10,
+      "comment": "吸引と水拭きの同時実行は高く評価されており、「ピカピカになる」との声が多数あります。ただし、水拭き時に水の入れすぎで漏れるという指摘もあり、水量の調整には注意が必要です。"
+    },
+    "carpetCleaning": {
+      "score": 90,
+      "reviewCount": 6,
+      "positiveReviewCount": 6,
+      "comment": "カーペットを自動認識して吸引力を最大化する機能が好評です。毛足の長いラグでもスムーズに走行し、ゴミをしっかり除去できるという評価が多く見られました。"
+    },
+    "petHairRemoval": {
+      "score": 92,
+      "reviewCount": 5,
+      "positiveReviewCount": 4,
+      "comment": "ペットの毛に対する吸引力は非常に高く評価されており、「犬猫のいる家は必須」との声も。ただし、ペットの排泄物を認識できず大惨事になった例もあり、床の事前確認は必須です。"
+    },
+    "quietness": {
+      "score": 55,
+      "reviewCount": 5,
+      "positiveReviewCount": 1,
+      "comment": "動作音に関する評価は「うるさい」と「意外と静か」で二分されています。静音モードもありますが、夜間の使用には不向きと感じるユーザーが多く、音に敏感な方には注意が必要です。"
+    },
+    "stepClimbing": {
+      "score": 78,
+      "reviewCount": 6,
+      "positiveReviewCount": 4,
+      "comment": "8mm厚のカーペットや2cm程度の段差は問題なく乗り越える走破性があります。しかし、稀にサイドブラシが段差で外れるという報告もあり、構造的な弱点も指摘されています。"
+    },
+    "maintenance": {
+      "score": 68,
+      "reviewCount": 2,
+      "positiveReviewCount": 0,
+      "comment": "ダストボックスのゴミ捨てが頻繁に必要で、フィルターの取り外しやボックス内の清掃がしにくいとの指摘があります。メンテナンスの容易さには改善の余地があるようです。"
+    },
+    "appStability": {
+      "score": 45,
+      "reviewCount": 12,
+      "positiveReviewCount": 3,
+      "comment": "Wi-Fiが2.4GHz帯にしか対応しておらず、接続に苦労する声が多数。また、公式のRoborockアプリが使えず、機能が限定的な別アプリへの誘導がある点も大きな不満点です。"
+    },
+    "batteryLife": {
+      "score": 65,
+      "reviewCount": 5,
+      "positiveReviewCount": 2,
+      "comment": "「バッテリー不良」という初期不良の報告がある一方、「長時間掃除してくれる」という声もあります。個体差が大きい可能性があり、安定性にはやや不安が残ります。"
+    }
+  },
+  "radarChartData": {
+    "labels": [
+      "フローリング",
+      "カーペット",
+      "ペット毛",
+      "静音性",
+      "段差",
+      "メンテ",
+      "アプリ",
+      "電池"
+    ],
+    "values": [
+      88,
+      90,
+      92,
+      55,
+      78,
+      68,
+      45,
+      65
+    ]
+  },
+  "dataQuality": {
+    "totalReviews": 31,
+    "sampledReviews": 31,
+    "adoptedReviews": 31,
+    "excludedReviews": 0,
+    "trustScore": 54.2,
+    "comment": "全31件の口コミを分析。件数が少ないため信頼度スコアは伸び悩んでいますが、アプリ連携や初期不良など、特定の課題に関する指摘が複数見られ、製品の傾向を掴むには十分です。"
+  },
+  "reviewKeywords": {
+    "positive": [
+      {
+        "keyword": "水拭き・拭き掃除が良い",
+        "count": 9
+      },
+      {
+        "keyword": "満足・買ってよかった",
+        "count": 7
+      },
+      {
+        "keyword": "使いやすい・便利",
+        "count": 5
+      },
+      {
+        "keyword": "マッピング・ルートが賢い",
+        "count": 5
+      },
+      {
+        "keyword": "吸引力が高い",
+        "count": 4
+      },
+      {
+        "keyword": "綺麗になる",
+        "count": 2
+      },
+      {
+        "keyword": "故障・トラブルが少ない",
+        "count": 2
+      },
+      {
+        "keyword": "床がサラサラ・ピカピカ",
+        "count": 1
+      },
+      {
+        "keyword": "静かで快適",
+        "count": 1
+      }
+    ],
+    "negative": [
+      {
+        "keyword": "動作音が気になる",
+        "count": 3
+      },
+      {
+        "keyword": "故障・不具合",
+        "count": 2
+      },
+      {
+        "keyword": "段差・家具で引っかかる",
+        "count": 2
+      },
+      {
+        "keyword": "アプリ・Wi-Fi接続が難しい",
+        "count": 1
+      },
+      {
+        "keyword": "吸引力が弱い",
+        "count": 1
+      }
+    ]
+  },
+  "successStrategies": [
+    {
+      "rank": 1,
+      "issue": "Wi-Fi・アプリ接続ができない",
+      "occurrenceRate": 38.7,
+      "occurrenceCount": 12,
+      "environmentalFactor": "家庭のWi-Fi環境（5GHz帯の利用、バンドステアリング機能）やユーザーのIT設定知識に大きく依存します。",
+      "technicalDescription": "本機はWi-Fiの2.4GHz帯にのみ対応しています。多くの家庭用ルーターが5GHz帯を併用、または自動で切り替えるため、接続に失敗するケースが多発しています。",
+      "avoidanceStrategies": [
+        {
+          "method": "スマホを2.4GHz帯のWi-Fiに手動で接続する",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "接続設定時、スマートフォンのWi-Fi設定画面で、SSIDの末尾が「-g」や「-2G」となっている2.4GHz帯のネットワークを選択することで、問題を回避できます。"
+        },
+        {
+          "method": "ルーターのバンドステアリング機能を一時的に無効化する",
+          "effectiveness": "高",
+          "technicalLevel": "中級",
+          "technicalRationale": "ルーターが自動で周波数帯を切り替える機能を無効にし、2.4GHz帯に固定することで安定した接続が可能です。設定方法はルーターの取扱説明書を確認してください。"
+        }
+      ],
+      "preventionTips": "購入前に自宅のWi-Fiルーターが2.4GHz帯を提供しているか、また設定画面にアクセスして周波数帯を個別に設定できるかを確認しておくことが最も確実な予防策です。"
+    }
+  ],
+  "topComplaints": [
+    {
+      "title": "アプリ連携とWi-Fi接続の不安定さ",
+      "percentage": 38.7,
+      "reviewCount": 12,
+      "description": "最も多い不満はWi-Fi接続に関するものです。2.4GHz帯にしか対応しておらず、接続に失敗するユーザーが多数。また、公式アプリ非対応で機能が限定される点も低評価です。",
+      "solution": "スマホを意図的に2.4GHzのSSIDに接続し直すのが最も有効です。ルーター設定で5GHz帯を一時的にOFFにする、または2.4GHzと5GHzのSSIDを別名に設定してください。"
+    },
+    {
+      "title": "動作音・アナウンス音声がうるさい",
+      "percentage": 9.7,
+      "reviewCount": 3,
+      "description": "「掃除音がうるさい」「音声が賑やか」といった声が複数あり、特に夜間の使用をためらうユーザーが見られます。静音性の評価は個人差が大きく、期待値を下回る可能性があります。",
+      "solution": "アプリやリモコンから静音モードを選択することで、ある程度騒音を抑えることが可能です。日中の外出中などにスケジュール運転を活用することをおすすめします。"
+    },
+    {
+      "title": "初期不良・故障の報告",
+      "percentage": 6.5,
+      "reviewCount": 2,
+      "description": "「バッテリー不良で充電できない」「購入後すぐに使えなくなった」といった初期不良に関する報告が少数ながら存在します。安価なモデルである分、品質のばらつきが懸念されます。",
+      "solution": "購入後は速やかに動作確認を行い、問題があれば保証期間内に販売店やメーカーサポートに連絡してください。本体のリセットで解決する場合もあります。"
+    }
+  ],
+  "attributeScores": {
+    "petOwner": {
+      "overall": 86,
+      "details": [
+        {
+          "field": "ペットの毛吸引",
+          "score": 92,
+          "reviewCount": 5,
+          "comment": "ペットの毛やトイレ砂に対する吸引力は非常に高く、多くの飼い主から支持されています。床が清潔に保たれることで、ペットとの生活がより快適になります。"
+        },
+        {
+          "field": "フローリング清掃",
+          "score": 88,
+          "reviewCount": 12,
+          "comment": "吸引と水拭きで床のザラつきや皮脂汚れをしっかり除去します。ペットの足跡なども綺麗になり、素足で歩いても快適な床を維持できると好評です。"
+        },
+        {
+          "field": "メンテナンス性",
+          "score": 68,
+          "reviewCount": 2,
+          "comment": "毛が絡まりやすいブラシや、頻繁なゴミ捨てが必要なダストボックスの清掃はやや手間です。特にペットの毛が多い家庭では、こまめな手入れが欠かせません。"
+        }
+      ]
+    },
+    "apartment": {
+      "overall": 72,
+      "details": [
+        {
+          "field": "静音性",
+          "score": 55,
+          "reviewCount": 5,
+          "comment": "動作音が気になるという意見が多く、集合住宅での夜間や早朝の使用は注意が必要です。隣室への騒音を気にする場合は、静音モードの活用が必須となります。"
+        },
+        {
+          "field": "フローリング清掃",
+          "score": 88,
+          "reviewCount": 12,
+          "comment": "フローリングの多いマンションでは、吸引と水拭きの同時清掃機能が高く評価されています。ホコリや髪の毛を効率的に除去し、清潔な居住空間を保ちます。"
+        },
+        {
+          "field": "段差乗り越え",
+          "score": 78,
+          "reviewCount": 6,
+          "comment": "部屋間の敷居やラグなど、一般的なマンション内の段差は問題なく乗り越えます。家具への衝突も少なく、スムーズな清掃が期待できるでしょう。"
+        }
+      ]
+    },
+    "workingProfessional": {
+      "overall": 65,
+      "details": [
+        {
+          "field": "アプリの安定性",
+          "score": 45,
+          "reviewCount": 12,
+          "comment": "外出先からの遠隔操作を期待すると、Wi-Fi接続の不安定さが大きなストレスになります。IT設定に不慣れな場合、期待通りの利便性を得られない可能性があります。"
+        },
+        {
+          "field": "メンテナンス性",
+          "score": 68,
+          "reviewCount": 2,
+          "comment": "忙しい中で頻繁なゴミ捨てや手入れが求められるのはマイナスポイントです。自動ゴミ収集機能がないため、メンテナンスの手間は割り切る必要があります。"
+        },
+        {
+          "field": "バッテリー性能",
+          "score": 65,
+          "reviewCount": 5,
+          "comment": "バッテリーの初期不良報告があり、長期間安心して使えるかには疑問符がつきます。不在時に清掃を任せるには、やや信頼性が低いと言わざるを得ません。"
+        }
+      ]
+    },
+    "familyHome": {
+      "overall": 83,
+      "details": [
+        {
+          "field": "フローリング清掃",
+          "score": 88,
+          "reviewCount": 12,
+          "comment": "子供の食べこぼしなどで汚れやすいリビングの床を、吸引と水拭きで綺麗に保てる点はファミリー層に好評です。日々の掃除負担を大きく軽減してくれます。"
+        },
+        {
+          "field": "カーペット清掃",
+          "score": 90,
+          "reviewCount": 6,
+          "comment": "子供部屋のラグやカーペットのゴミもしっかり吸引します。カーペットを自動で検知して吸引力を上げるため、設定の手間なく効率的に掃除ができます。"
+        },
+        {
+          "field": "バッテリー性能",
+          "score": 65,
+          "reviewCount": 5,
+          "comment": "広い一軒家を一度に掃除するには、バッテリーの持続時間に不安が残るかもしれません。自動再開機能はありますが、完了までに時間がかかる可能性があります。"
+        }
+      ]
+    },
+    "resaleValue": null
+  },
+  "resaleValue": null,
+  "affiliate": {
+    "moshimo": "<!-- START MoshimoAffiliateEasyLink -->\r\n<script type=\"text/javascript\">\r\n(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;\r\nb[a]=b[a]||function(){arguments.currentScript=c.currentScript\r\n||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};\r\nc.getElementById(a)||(d=c.createElement(f),d.src=g,\r\nd.id=a,e=c.getElementsByTagName(\"body\")[0],e.appendChild(d))})\r\n(window,document,\"script\",\"//dn.msmstatic.com/site/cardlink/bundle.js?20220329\",\"msmaflink\");\r\nmsmaflink({\"n\":\"ロボット掃除機 ロボロック E5 黒 水拭き マッピング 強力吸引 自動充電 アプリ操作 200分連続稼働 落下防止 正規品\",\"b\":\"roborock\",\"t\":\"E552-04\",\"d\":\"https:\\/\\/m.media-amazon.com\",\"c_p\":\"\\/images\\/I\",\"p\":[\"\\/41H5Fv-yLRL._SL500_.jpg\",\"\\/41+RMJSftKL._SL500_.jpg\",\"\\/31qlhVbKtML._SL500_.jpg\",\"\\/41-zYOP6kzL._SL500_.jpg\",\"\\/412uYVhnsrL._SL500_.jpg\",\"\\/41bNHXHMraL._SL500_.jpg\"],\"u\":{\"u\":\"https:\\/\\/www.amazon.co.jp\\/dp\\/B09MW6LN35\",\"t\":\"amazon\",\"r_v\":\"\"},\"v\":\"2.1\",\"b_l\":[{\"id\":1,\"u_tx\":\"楽天市場で見る\",\"u_bc\":\"#f76956\",\"u_url\":\"https:\\/\\/search.rakuten.co.jp\\/search\\/mall\\/%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%20%E3%83%AD%E3%83%9C%E3%83%AD%E3%83%83%E3%82%AF%20E5%20%E9%BB%92%20%E6%B0%B4%E6%8B%AD%E3%81%8D%20%E3%83%9E%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0%20%E5%BC%B7%E5%8A%9B%E5%90%B8%E5%BC%95%20%E8%87%AA%E5%8B%95%E5%85%85%E9%9B%BB%20%E3%82%A2%E3%83%97%E3%83%AA%E6%93%8D%E4%BD%9C%20200%E5%88%86%E9%80%A3%E7%B6%9A%E7%A8%BC%E5%83%8D%20%E8%90%BD%E4%B8%8B%E9%98%B2%E6%AD%A2%20%E6%AD%A3%E8%A6%8F%E5%93%81\\/\",\"a_id\":5483003,\"p_id\":54,\"pl_id\":27059,\"pc_id\":54,\"s_n\":\"rakuten\",\"u_so\":1},{\"id\":2,\"u_tx\":\"Yahoo!ショッピングで見る\",\"u_bc\":\"#66a7ff\",\"u_url\":\"https:\\/\\/shopping.yahoo.co.jp\\/search?first=1\\u0026p=%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%20%E3%83%AD%E3%83%9C%E3%83%AD%E3%83%83%E3%82%AF%20E5%20%E9%BB%92%20%E6%B0%B4%E6%8B%AD%E3%81%8D%20%E3%83%9E%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0%20%E5%BC%B7%E5%8A%9B%E5%90%B8%E5%BC%95%20%E8%87%AA%E5%8B%95%E5%85%85%E9%9B%BB%20%E3%82%A2%E3%83%97%E3%83%AA%E6%93%8D%E4%BD%9C%20200%E5%88%86%E9%80%A3%E7%B6%9A%E7%A8%BC%E5%83%8D%20%E8%90%BD%E4%B8%8B%E9%98%B2%E6%AD%A2%20%E6%AD%A3%E8%A6%8F%E5%93%81\",\"a_id\":5483010,\"p_id\":1225,\"pl_id\":27061,\"pc_id\":1925,\"s_n\":\"yahoo\",\"u_so\":2},{\"id\":3,\"u_tx\":\"Amazonで見る\",\"u_bc\":\"#ffcf0f\",\"u_url\":\"https:\\/\\/www.amazon.co.jp\\/dp\\/B09MW6LN35\",\"a_id\":5483011,\"p_id\":170,\"pl_id\":27060,\"pc_id\":185,\"s_n\":\"amazon\",\"u_so\":3}],\"eid\":\"q6ZAj\",\"s\":\"l\"});\r\n</script>\r\n<div id=\"msmaflink-q6ZAj\">リンク</div>\r\n<!-- MoshimoAffiliateEasyLink END -->",
+    "direct": "",
+    "hpPublish": true
+  },
+  "priceSource": "shop",
+  "priceCheckedAt": "2026-11-03"
+}

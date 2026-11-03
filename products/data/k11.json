@@ -4,66 +4,66 @@
   "manufacturer": "SwitchBot",
   "modelNumber": "W3003100",
   "imageUrl": "https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/09377790/11892401/13129054/imgrc0100726038.jpg",
-  "overallRating": 4.24,
+  "overallRating": 4.28,
   "totalReviews": 195,
   "price": 39800,
-  "reliabilityScore": 83.8,
+  "reliabilityScore": 82.9,
   "asin": "",
   "keywords": [
-    "SwitchBot K11+",
     "ロボット掃除機",
+    "SwitchBot",
+    "K11+",
     "コンパクト",
     "静音",
-    "マッピング",
-    "ペットの毛"
+    "マッピング"
   ],
-  "metaTitle": "SwitchBot K11+ 詳細分析 | 口コミ190件で判明した賢さと弱点",
-  "metaDescription": "SwitchBot K11+の口コミ190件を徹底解析。コンパクトさ、静音性、賢いマッピング機能で高評価。一方で段差での停止やコードの巻き込みといった弱点と、その具体的な対策を公開します。",
+  "metaTitle": "SwitchBot ロボット掃除機 K11+ 詳細分析 | コンパクトさと賢さを両立した一台",
+  "metaDescription": "SwitchBot ロボット掃除機 K11+の191件の口コミを解析。静音性やマッピング機能、ペットの毛への強さなど、コンパクトなボディに秘められた実力を公開します。",
   "categoryC": {
     "userSatisfaction": {
       "score": 92,
-      "reviewCount": 190,
-      "comment": "コンパクトな設計と静音性が高く評価され、多くの利用者が日々の掃除負担軽減を実感。特に狭い場所の掃除能力に満足の声が多数。一部で段差での停止やアプリ操作の慣れが必要との意見も見られた。"
+      "reviewCount": 191,
+      "comment": "多くの利用者が掃除の手間が減ったと高く評価しています。特にコンパクトさからくる小回りの良さと、賢いマッピング機能が満足度に繋がっているようです。"
     },
     "repurchaseIntention": {
       "percentage": 85,
-      "reviewCount": 161,
-      "comment": "「もっと早く買えばよかった」という声が多数あり、生活の質が向上したとの評価が多い。次もSwitchBot製品を選ぶという意見も目立ち、高いブランドロイヤリティが伺える。サポート対応の改善を望む声も一部ある。"
+      "reviewCount": 191,
+      "comment": "「もっと早く買えばよかった」という声が多数あり、次も同社製品を選びたいという意見が見られます。スマートホーム連携のしやすさも再購入意向を高めています。"
     },
     "failureRate": {
       "percentage": 7,
-      "reviewCount": 190,
+      "reviewCount": 14,
       "breakdown": {
         "hardware": 4,
         "software": 2,
-        "environmental": 1
+        "environmental": 8
       },
-      "comment": "「3ヶ月で壊れた」「アプリと連携できなくなった」など初期不良や短期間での故障報告が14件見られた。サポート対応の遅さを指摘する声もあり、購入後の保証や対応体制は注意が必要な側面もある。"
+      "comment": "故障報告は少数ですが存在します。内容は「ゴミを吸引しなくなった」などのハードウェア不良や、段差や家具で動けなくなる環境起因の停止が主です。"
     }
   },
   "reliability": {
-    "score": 83.8,
+    "score": 82.9,
     "dataAdequacy": {
-      "score": 84,
+      "score": 85,
       "weight": 60,
-      "description": "レビュー総数190件。多様な利用環境からの意見を分析する上で十分なデータ量があり、製品の長所・短所を多角的に評価できる信頼性の高いサンプル数です。"
+      "description": "レビュー総数は191件と多く、製品の長所と短所を判断するのに十分なデータ量です。多様な利用環境からのフィードバックが集まっています。"
     },
     "consistency": {
-      "score": 78,
+      "score": 73,
       "weight": 30,
-      "description": "Amazonと楽天で高評価が中心だが、一部で故障やサポート対応への厳しい意見も散見される。全体的な満足度は高いものの、個別の問題点も明確になっており、意見の一貫性は中程度です。",
-      "percentage": 78
+      "description": "全体的に高評価ですが、段差乗り越え性能やサポート対応については意見が分かれる傾向にあります。ただし、清掃能力や静音性に関する評価は安定しています。",
+      "percentage": 73
     },
     "freshness": {
       "score": 100,
       "weight": 10,
-      "description": "直近30日以内のレビューが全体の8.9%を占めており、現在も継続的に購入・評価されている製品です。最新の利用状況やファームウェアでの挙動を反映した、鮮度の高い情報です。"
+      "description": "継続的にレビューが投稿されており、最新のファームウェアや使用環境におけるユーザーの評価を反映しています。直近の口コミも豊富です。"
     }
   },
   "updateInfo": {
-    "lastUpdated": "2026-08-12",
+    "lastUpdated": "2026-11-03",
     "firmwareVersion": "",
-    "note": "2026年8月までの口コミを中心に分析。コンパクトさと静音性は一貫して高評価。一方で、特定の家具の脚や段差で停止する問題は、最新のレビューでも継続して報告されている。"
+    "note": "2026年8月までの口コミを基に分析。小型で賢いという評価が多数を占める一方、段差での停止やサポート対応に関する指摘も一部で見られます。"
   },
   "timeSaving": {
     "vacuumMinutes": 10,
@@ -73,92 +73,54 @@
     "annualHours": 115.6,
     "workDaysEquivalent": 14.4
   },
-  "operationalCost": {
-    "daily": 81,
-    "dailyNote": "消耗品の実質的な日割りコスト",
-    "monthly": 2475,
-    "annual": 29700,
-    "consumables": [
-      {
-        "item": "ダストパック",
-        "replacementFrequency": "3ヶ月ごと",
-        "unitCost": 3500,
-        "annualCost": 14000
-      },
-      {
-        "item": "モップパッド",
-        "replacementFrequency": "4ヶ月ごと",
-        "unitCost": 2000,
-        "annualCost": 6000
-      },
-      {
-        "item": "サイドブラシ",
-        "replacementFrequency": "6ヶ月ごと",
-        "unitCost": 1200,
-        "annualCost": 2400
-      },
-      {
-        "item": "メインブラシ（ゴムブラシ）",
-        "replacementFrequency": "1年ごと",
-        "unitCost": 2500,
-        "annualCost": 2500
-      },
-      {
-        "item": "フィルター",
-        "replacementFrequency": "3ヶ月ごと",
-        "unitCost": 1200,
-        "annualCost": 4800
-      }
-    ]
-  },
   "performanceAnalysis": {
     "floorCleaning": {
-      "score": 94,
-      "reviewCount": 62,
-      "positiveReviewCount": 58,
-      "comment": "コンパクトな本体が椅子の脚の間や家具の下など狭い場所にも入り込み、髪の毛やホコリをしっかり吸引する点が絶賛されている。隅々まで綺麗になるという満足の声が大多数を占める。"
+      "score": 95,
+      "reviewCount": 64,
+      "positiveReviewCount": 61,
+      "comment": "フローリングの掃除能力は非常に高く評価されています。髪の毛やホコリ、ペットの毛までしっかり吸引し、多くのユーザーが床のサラサラ感を実感しています。"
     },
     "carpetCleaning": {
       "score": 78,
-      "reviewCount": 18,
-      "positiveReviewCount": 14,
-      "comment": "薄手のカーペットやプレイマットは問題なく乗り越えて掃除するが、毛足の長いものや柔らかいラグは吸い込んで停止することがある。吸引力自体は評価されているが、素材との相性を選ぶ傾向がある。"
+      "reviewCount": 20,
+      "positiveReviewCount": 15,
+      "comment": "毛足の短いカーペットでは十分な性能を発揮しますが、薄いラグを巻き込んだり、厚手のカーペットの段差で止まったりする事例が報告されています。"
     },
     "petHairRemoval": {
       "score": 92,
-      "reviewCount": 35,
-      "positiveReviewCount": 32,
-      "comment": "犬や猫の抜け毛に悩む利用者から「床に毛が落ちていない生活が快適」と高い評価を得ている。ゴム製ブラシは毛が絡まりにくいが、両端の軸部分には定期的なメンテナンスが必要との声もある。"
+      "reviewCount": 32,
+      "positiveReviewCount": 30,
+      "comment": "ペットの毛の吸引力は特筆すべき点です。犬や猫の抜け毛に悩む多くの飼い主から「床に毛が落ちなくなった」と絶賛されており、高い満足度を得ています。"
     },
     "quietness": {
-      "score": 89,
-      "reviewCount": 38,
-      "positiveReviewCount": 34,
-      "comment": "「静音モードは非常に静か」との評価が多く、夜間や在宅中でも気にならないレベルだと好評。ただし、ゴミをステーションに回収する際の吸引音は大きいという指摘が共通して見られる。"
+      "score": 88,
+      "reviewCount": 39,
+      "positiveReviewCount": 35,
+      "comment": "走行中の動作音は非常に静かで、夜間や在宅中でも気にならないという声が多数です。ただし、ステーションでのゴミ収集音は大きいという指摘があります。"
     },
     "stepClimbing": {
-      "score": 70,
+      "score": 65,
       "reviewCount": 40,
-      "positiveReviewCount": 28,
-      "comment": "2cm程度の段差は乗り越える性能を持つが、家具の脚や敷居の形状によっては頻繁に引っかかり停止する。カウンターチェアの脚など特定の障害物で動けなくなる報告が多く、事前の対策が重要。"
+      "positiveReviewCount": 25,
+      "comment": "2cm未満の段差に対応しますが、家具の脚や敷居、ラグの縁など、形状によっては乗り越えられず停止する報告が散見されます。最大の弱点と言える項目です。"
     },
     "maintenance": {
       "score": 85,
-      "reviewCount": 36,
-      "positiveReviewCount": 30,
-      "comment": "ゴミの自動収集機能で日々の手間は大幅に削減される。ゴム製ブラシは髪の毛が絡みにくいと好評だが、両端には絡まるため定期的な清掃が必要。消耗品の交換も簡単でメンテナンス性は高い。"
+      "reviewCount": 33,
+      "positiveReviewCount": 28,
+      "comment": "メインのゴムブラシは髪の毛が絡まりにくく手入れが楽と好評です。ただし、ブラシの軸部分には絡まるため、定期的な清掃は必要との声もあります。"
     },
     "appStability": {
-      "score": 88,
-      "reviewCount": 76,
-      "positiveReviewCount": 67,
-      "comment": "マッピング精度が高く、エリア指定や進入禁止設定が直感的に行えると好評。一部で「設定に手こずった」「マップがバグった」との声もあるが、多くのユーザーは安定して使用できている。"
+      "score": 94,
+      "reviewCount": 81,
+      "positiveReviewCount": 76,
+      "comment": "アプリは直感的で使いやすく、マッピング精度やエリア設定機能が高く評価されています。一部で初期設定の戸惑いやマップのバグ報告がありましたが、大半は満足しています。"
     },
     "batteryLife": {
-      "score": 82,
-      "reviewCount": 14,
-      "positiveReviewCount": 11,
-      "comment": "一人暮らしや2LDK程度の広さでは一度の充電で十分に掃除を完了できるとの評価。広い家屋では複数回に分かれる可能性もあるが、自動充電・再開機能があるため大きな問題にはなっていない。"
+      "score": 88,
+      "reviewCount": 10,
+      "positiveReviewCount": 9,
+      "comment": "バッテリーに関する言及は少ないものの、一度の充電で一般的な部屋の広さを十分に掃除できるとの評価です。特にバッテリー持ちが悪いという指摘は見られません。"
     }
   },
   "radarChartData": {
@@ -173,29 +135,29 @@
       "電池"
     ],
     "values": [
-      94,
+      95,
       78,
       92,
-      89,
-      70,
-      85,
       88,
-      82
+      65,
+      85,
+      94,
+      88
     ]
   },
   "dataQuality": {
     "totalReviews": 195,
-    "sampledReviews": 190,
-    "adoptedReviews": 190,
-    "excludedReviews": 5,
-    "trustScore": 83.8,
-    "comment": "Amazonと楽天から収集した190件の採用レビューに基づき分析。購入者の多様な意見を反映しており、製品の性能と課題を正確に把握できる高いデータ品質を確保しています。"
+    "sampledReviews": 191,
+    "adoptedReviews": 191,
+    "excludedReviews": 4,
+    "trustScore": 82.9,
+    "comment": "191件の検証済み口コミを分析。購入者の多様な意見を反映しており、製品の性能を判断する上で信頼性の高いデータとなっています。"
   },
   "reviewKeywords": {
     "positive": [
       {
         "keyword": "満足・買ってよかった",
-        "count": 55
+        "count": 51
       },
       {
         "keyword": "マッピング・ルートが賢い",
@@ -207,7 +169,7 @@
       },
       {
         "keyword": "静かで快適",
-        "count": 31
+        "count": 32
       },
       {
         "keyword": "使いやすい・便利",
@@ -223,7 +185,7 @@
       },
       {
         "keyword": "綺麗になる",
-        "count": 11
+        "count": 12
       },
       {
         "keyword": "故障・トラブルが少ない",
@@ -237,19 +199,19 @@
       },
       {
         "keyword": "止まってしまう",
-        "count": 11
+        "count": 12
       },
       {
         "keyword": "段差・家具で引っかかる",
-        "count": 11
+        "count": 12
       },
       {
         "keyword": "動作音が気になる",
-        "count": 8
+        "count": 9
       },
       {
         "keyword": "コードを巻き込む",
-        "count": 5
+        "count": 7
       },
       {
         "keyword": "水拭き・拭き掃除が不十分",
@@ -260,15 +222,15 @@
         "count": 2
       },
       {
+        "keyword": "マッピング・認識が不正確",
+        "count": 2
+      },
+      {
         "keyword": "期待外れ・不満",
         "count": 1
       },
       {
         "keyword": "アプリ・Wi-Fi接続が難しい",
-        "count": 1
-      },
-      {
-        "keyword": "バッテリー・稼働時間が短い",
         "count": 1
       }
     ]
@@ -278,195 +240,149 @@
       "rank": 1,
       "issue": "段差や家具の脚で頻繁に停止する",
       "occurrenceRate": 6,
-      "occurrenceCount": 11,
-      "environmentalFactor": "U字やコの字型の家具脚、2cm未満でも角度のある敷居、柔らかいラグ",
-      "technicalDescription": "LiDARセンサーが空間を認識する一方、物理的なバンパーセンサーと車輪の駆動力が特定の形状の障害物に対応しきれず、乗り上げやスタックを引き起こす。特に細いパイプ状の脚は検知しにくい。",
+      "occurrenceCount": 12,
+      "environmentalFactor": "2cm未満でも複雑な形状の段差、椅子の脚、薄いラグの縁",
+      "technicalDescription": "落下防止センサーが段差を検知し安全停止するか、乗り越えようとしてタイヤが空転しスタックします。特に椅子の脚のような細い障害物で発生しやすいです。",
       "avoidanceStrategies": [
         {
-          "method": "アプリで進入禁止エリアを設定する",
+          "method": "アプリで「進入禁止エリア」を設定する",
           "effectiveness": "高",
           "technicalLevel": "初級",
-          "technicalRationale": "公式に推奨されている最も確実な対策。 マップ上で問題の家具周辺や敷居を囲むように設定すれば、物理的にそのエリアに近づかなくなり、スタックを100%回避できる。"
+          "technicalRationale": "マッピング完了後、アプリの地図上でロボットが進入しない仮想的な壁を設定できます。これにより、問題の箇所を物理的に避けて清掃を継続させます。"
         },
         {
-          "method": "市販のスロープを設置する",
-          "effectiveness": "中",
-          "technicalLevel": "初級",
-          "technicalRationale": "敷居などの段差が原因の場合、緩やかな傾斜を作ることで乗り越えを補助できる。ただし、家具の脚など複雑な形状の障害物には適用できず、見た目の問題も生じる可能性がある。"
-        }
-      ],
-      "preventionTips": "初回マッピング時に、ロボットが苦手としそうな家具の脚や段差をあらかじめ特定することが重要。ダイニングチェアなど動かせる家具は、掃除時に少し配置を変えるだけでも効果的です。"
-    },
-    {
-      "rank": 2,
-      "issue": "電源コードや小物を巻き込んで停止する",
-      "occurrenceRate": 3,
-      "occurrenceCount": 5,
-      "environmentalFactor": "床に置かれた充電ケーブル、靴下、薄手の布類",
-      "technicalDescription": "本機はカメラによる物体認識機能を持たないため、LiDARセンサーで検知しきれない低い位置にある細いケーブルや布類をサイドブラシやメインブラシで巻き込み、動作を停止させてしまう。",
-      "avoidanceStrategies": [
-        {
-          "method": "掃除前に床のケーブル類を片付ける",
+          "method": "市販の段差解消スロープを設置する",
           "effectiveness": "高",
           "technicalLevel": "初級",
-          "technicalRationale": "最も基本的かつ効果的な対策。ケーブルホルダーや配線カバーを使い、コードを床から浮かせることで巻き込みのリスクを根本的になくすことができる。多くのユーザーが実践している方法。"
-        },
-        {
-          "method": "進入禁止エリアに設定する",
-          "effectiveness": "中",
-          "technicalLevel": "初級",
-          "technicalRationale": "ケーブル類が集中しているPCデスク周りなどを恒久的に掃除エリアから除外する方法。ただし、そのエリアの清掃は別途手動で行う必要があり、利便性が若干損なわれる。"
+          "technicalRationale": "物理的なスロープを設置することで、ロボットがスムーズに通過できるようになります。公式では最大15度の傾斜が推奨されています。"
         }
       ],
-      "preventionTips": "ロボット掃除機を稼働させる前の「床の片付け」を習慣化することが最も確実な予防策です。特にスマートフォンの充電ケーブルなど、日常的に床に置かれがちなものに注意してください。"
-    },
-    {
-      "rank": 3,
-      "issue": "故障・アプリ連携エラーが発生する",
-      "occurrenceRate": 7,
-      "occurrenceCount": 14,
-      "environmentalFactor": "個体差、Wi-Fi環境の不安定さ",
-      "technicalDescription": "「ゴミを吸引しなくなった」「アプリと連携できない」といったハードウェアまたはソフトウェアの不具合報告。原因は多岐にわたるが、電子部品の初期不良やファームウェアの問題が考えられる。",
-      "avoidanceStrategies": [
-        {
-          "method": "本体をリセット（初期化）する",
-          "effectiveness": "中",
-          "technicalLevel": "初級",
-          "technicalRationale": "アプリ連携の不具合などソフトウェア起因の問題に有効。公式サイトによると、充電・清掃ボタンとレーザーレーダー部を6秒長押しでリセット可能。 これでWi-Fi情報やマップは消えるが、接続が回復する場合がある。"
-        },
-        {
-          "method": "サポートセンターに問い合わせる",
-          "effectiveness": "高",
-          "technicalLevel": "初級",
-          "technicalRationale": "物理的な故障が疑われる場合の唯一の解決策。SwitchBotアプリ内のフィードバック機能やサポートメール、電話で連絡する。 口コミでは対応の遅さが指摘されることもあるが、保証期間内であれば修理や交換対応が受けられる。"
-        }
-      ],
-      "preventionTips": "購入後は早めに動作確認を行い、不具合があれば保証期間内に連絡することが重要。Wi-Fiルーターの再起動やアプリの再インストールなど、基本的なトラブルシューティングを試すことも有効です。"
+      "preventionTips": "初回のマッピング時に、椅子や小さな家具をできるだけ移動させて正確な地図を作成することが重要です。その後、日常的に問題が発生する箇所を進入禁止エリアに指定しましょう。"
     }
   ],
   "topComplaints": [
     {
-      "title": "段差や家具の脚で頻繁に止まる",
+      "title": "段差や家具で引っかかり停止する",
       "percentage": 6,
-      "reviewCount": 11,
-      "description": "スペック上は2cmの段差に対応しているが、ダイニングチェアの脚や敷居など、特定の形状の障害物に乗り上げて動けなくなることが多い。 ユーザーは救出の手間が発生し、掃除を完全に任せられないストレスを感じている。",
-      "solution": "最も確実な解決策は、SwitchBotアプリのマップ編集機能で「進入禁止エリア」を設定することです。 問題が発生する家具の周囲や段差部分をエリア指定すれば、ロボットはその場所を避けて掃除するため、停止するトラブルを未然に防げます。"
+      "reviewCount": 12,
+      "description": "カーペットの縁や少しの段差、椅子の脚などに乗り上げて動けなくなるという報告が最も多い不満点です。清掃を完了できず、手動での救出が必要になります。",
+      "solution": "SwitchBotアプリの「進入禁止エリア」機能を活用し、問題が起きる場所をあらかじめ避けるように設定するのが最も効果的です。物理的なスロープの設置も有効です。"
     },
     {
-      "title": "短期間での故障とサポート対応",
+      "title": "原因不明で停止・故障する",
       "percentage": 7,
       "reviewCount": 14,
-      "description": "「3ヶ月でゴミを吸わなくなった」「1ヶ月でアプリ連携不能」など、購入後比較的早い段階での故障報告が複数見られる。それに伴い、サポートの電話が繋がりにくい、メール返信が遅いといった対応への不満の声も上がっている。",
-      "solution": "ハードウェア故障が疑われる場合、アプリ内のフィードバック機能から動画や写真を添付して連絡することが推奨されます。 ソフトウェアの問題であれば、本体のリセットで改善する可能性があります。 保証期間は2年間あるため、根気強く連絡を続けることが重要です。"
+      "description": "「何もない場所で止まる」「ゴミを吸わなくなった」といった不具合の報告があります。サポートの対応が遅いという声も一部で見られ、不安要素となっています。",
+      "solution": "本体の再起動や、公式サイトの手順に従ったリセットで改善する場合があります。 解決しない場合は、アプリ内のフィードバックから動画を添付してサポートに連絡することが推奨されます。"
     },
     {
-      "title": "ケーブルや薄いラグを巻き込む",
-      "percentage": 3,
-      "reviewCount": 5,
-      "description": "床に置かれた充電ケーブルや、薄くて軽いラグなどをブラシが巻き込んでしまい、エラーで停止する。カメラによる障害物回避機能がないため、低い位置にある小さな物体を認識できず、物理的に接触してしまう。",
-      "solution": "掃除を開始する前に、床に落ちているケーブルや紐、薄い布などを片付けることが最も効果的です。ケーブル類が常設されている場所は、アプリで「進入禁止エリア」に設定することで、巻き込みのリスクを恒久的に回避できます。"
+      "title": "電源コードなどを巻き込む",
+      "percentage": 4,
+      "reviewCount": 7,
+      "description": "床に置かれたスマートフォンの充電ケーブルや細い紐などを認識できず、ブラシに巻き込んで停止する事例があります。事前の片付けが必須との声が多いです。",
+      "solution": "清掃前には床にあるコード類を壁に固定したり、家具の上に上げたりする対策が必要です。カメラを搭載した上位機種と異なり、小物回避機能は限定的です。"
     }
   ],
   "attributeScores": {
     "petOwner": {
-      "overall": 90,
+      "overall": 91,
       "details": [
         {
-          "field": "ペットの毛除去",
+          "field": "ペットの毛吸引",
           "score": 92,
-          "reviewCount": 35,
-          "comment": "猫や犬の抜け毛をしっかり吸引し、床が清潔に保たれると飼い主から高評価。ゴム製ブラシで毛の絡まりが少ない点もメンテナンスの手間を減らし、ペットのいる家庭に適している。"
+          "reviewCount": 32,
+          "comment": "猫や犬の毛を強力に吸引し、床が清潔に保たれると飼い主から絶大な支持を得ています。ゴム製ブラシは毛が絡みにくい点も高く評価されています。"
         },
         {
           "field": "フローリング掃除",
-          "score": 94,
-          "reviewCount": 62,
-          "comment": "コンパクトなボディで家具の隙間に入り込み、猫砂や食べこぼしなどもしっかり掃除してくれる。ペットがいる家庭の床掃除の手間を大幅に削減できると満足の声が多い。"
+          "score": 95,
+          "reviewCount": 64,
+          "comment": "散らばったキャットフードや猫砂もしっかり掃除してくれます。コンパクトなため、ケージや家具の隙間など、ペット用品周りの掃除も得意です。"
         },
         {
-          "field": "メンテナンス性",
-          "score": 85,
-          "reviewCount": 36,
-          "comment": "自動ゴミ収集機能と絡まりにくいゴム製ブラシにより、ペットの毛が多い環境でもメンテナンスの手間が少ない。ブラシの軸に絡まる毛の定期的な除去は必要だが、全体的に管理は楽。"
+          "field": "静音性",
+          "score": 88,
+          "reviewCount": 39,
+          "comment": "動作音が静かなため、ペットが怖がりにくいという利点があります。在宅中に動かしていても、ペットがリラックスして過ごせるとの声が見られます。"
         }
       ]
     },
     "apartment": {
-      "overall": 85,
+      "overall": 86,
       "details": [
         {
           "field": "静音性",
-          "score": 89,
-          "reviewCount": 38,
-          "comment": "静音モードの動作音は図書館レベルと評され、集合住宅での夜間や早朝の使用にも適している。近隣への騒音を気にせず掃除できる点が、マンション居住者にとって大きなメリット。"
+          "score": 88,
+          "reviewCount": 39,
+          "comment": "標準モードでの運転音は非常に静かで、集合住宅での使用に適しています。隣室への騒音を気にせず、時間を問わず掃除できる点が魅力です。"
         },
         {
-          "field": "フローリング掃除",
-          "score": 94,
-          "reviewCount": 62,
-          "comment": "限られたスペースでも、コンパクトな本体が小回りを利かせて隅々まで掃除する。家具の多いマンションの部屋でも効率的に清掃できると評価が高い。"
+          "field": "コンパクトさ",
+          "score": 96,
+          "reviewCount": 81,
+          "comment": "本体とステーションが非常にコンパクトなため、限られたスペースにも設置しやすいです。家具の多い部屋でも隅々まで掃除できる小回りの良さが好評です。"
         },
         {
           "field": "段差乗り越え",
-          "score": 70,
+          "score": 65,
           "reviewCount": 40,
-          "comment": "部屋間の敷居など、マンション特有の小さな段差で引っかかることがある。進入禁止エリアの設定で対策は可能だが、完全な自動化には住環境の確認が必要となる。"
+          "comment": "マンションの敷居やドアレールで停止する可能性があります。間取りによっては進入禁止エリアの設定やスロープの設置などの工夫が必要になる場合があります。"
         }
       ]
     },
     "workingProfessional": {
-      "overall": 87,
+      "overall": 90,
       "details": [
         {
-          "field": "アプリの安定性",
-          "score": 88,
-          "reviewCount": 76,
-          "comment": "外出先からスマホで操作でき、スケジュール設定も容易なため、忙しい社会人に最適。マッピング精度も高く、不在時に効率的な掃除を任せられる点が評価されている。"
+          "field": "アプリ性能",
+          "score": 94,
+          "reviewCount": 81,
+          "comment": "外出先からスマホで操作でき、掃除のスケジュール設定も簡単です。帰宅したら部屋が綺麗になっている快適さは、多忙な社会人にとって大きなメリットです。"
         },
         {
           "field": "メンテナンス性",
           "score": 85,
-          "reviewCount": 36,
-          "comment": "ゴミの自動収集機能により、数ヶ月に一度の紙パック交換で済む。日々のメンテナンスに時間を割けない多忙なユーザーにとって、この手軽さは大きな魅力となっている。"
+          "reviewCount": 33,
+          "comment": "ゴミの自動収集機能により、数ヶ月間ゴミ捨てが不要です。ブラシの手入れも比較的簡単なため、日々のメンテナンスに時間を取られることがありません。"
         },
         {
-          "field": "バッテリー性能",
-          "score": 82,
-          "reviewCount": 14,
-          "comment": "一人暮らしの部屋であれば、バッテリー切れの心配なく掃除が完了する。自動充電機能もあるため、帰宅時には常に綺麗な部屋が保たれ、QOLが向上したとの声が多い。"
+          "field": "バッテリー",
+          "score": 88,
+          "reviewCount": 10,
+          "comment": "一人暮らしの部屋であれば、バッテリー切れの心配はほとんどありません。掃除が終わると自動で充電ステーションに戻るため、常に準備万端な状態です。"
         }
       ]
     },
     "familyHome": {
-      "overall": 85,
+      "overall": 88,
       "details": [
         {
           "field": "フローリング掃除",
-          "score": 94,
-          "reviewCount": 62,
-          "comment": "子供の食べこぼしやホコリなどをしっかり吸引し、清潔な床を保つ。ソファの下など、普段掃除しにくい場所まで綺麗になるため、子育て世帯の掃除負担を大幅に軽減する。"
+          "score": 95,
+          "reviewCount": 64,
+          "comment": "子供の食べこぼしや砂埃など、リビングの様々なゴミをしっかり吸引します。毎日稼働させることで、清潔な床を楽に維持できると評価されています。"
         },
         {
-          "field": "バッテリー性能",
-          "score": 82,
-          "reviewCount": 14,
-          "comment": "複数階のマップを保存でき、本体が軽量なため階をまたいでの使用も容易。広い家でも自動充電・再開機能で対応可能だが、1フロアごとにステーションを移動させる手間はかかる。"
+          "field": "バッテリー",
+          "score": 88,
+          "reviewCount": 10,
+          "comment": "複数の部屋を掃除する場合でも、途中でバッテリーが切れることは少ないようです。広い家屋では、自動再開機能の有無が重要になるかもしれません。"
         },
         {
           "field": "カーペット掃除",
           "score": 78,
-          "reviewCount": 18,
-          "comment": "子供用のプレイマットなど、厚みのあるマットも乗り越えて掃除してくれる。ただし、薄手のラグは巻き込む可能性があるため、子供部屋での使用には注意が必要。"
+          "reviewCount": 20,
+          "comment": "子供用のプレイマットや薄手のラグでは、乗り越えに失敗したり巻き込んだりすることがあります。エリア設定でカーペットを避けるなどの工夫が有効です。"
         }
       ]
     }
   },
   "resaleValue": null,
+  "priceSource": "official",
+  "priceCheckedAt": "2026-10-03",
   "affiliate": {
-    "moshimo": "<!-- START MoshimoAffiliateEasyLink -->\r\n<script type=\"text/javascript\">\r\n(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;\r\nb[a]=b[a]||function(){arguments.currentScript=c.currentScript\r\n||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};\r\nc.getElementById(a)||(d=c.createElement(f),d.src=g,\r\nd.id=a,e=c.getElementsByTagName(\"body\")[0],e.appendChild(d))})\r\n(window,document,\"script\",\"//dn.msmstatic.com/site/cardlink/bundle.js?20220329\",\"msmaflink\");\r\nmsmaflink({\"n\":\"SwitchBot スイッチボット ロボット掃除機 K11+ お掃除ロボット 掃除ロボット 掃除機 クリーナー 超小型 水拭き 拭き掃除 高精度マッピング 6000pa強力吸引 ゴミ収集 高性能 自動充電 レーザー搭載 禁止エリア 静音設計\",\"b\":\"\",\"t\":\"\",\"d\":\"https:\\/\\/thumbnail.image.rakuten.co.jp\",\"c_p\":\"\\/@0_mall\\/switchbot\\/cabinet\\/09377790\\/11892401\",\"p\":[\"\\/13129054\\/imgrc0100726038.jpg\",\"\\/11892930\\/imgrc0109182678.jpg\",\"\\/11892930\\/imgrc0109182788.jpg\"],\"u\":{\"u\":\"https:\\/\\/item.rakuten.co.jp\\/switchbot\\/k11\\/\",\"t\":\"rakuten\",\"r_v\":\"\"},\"v\":\"2.1\",\"b_l\":[{\"id\":1,\"u_tx\":\"楽天市場で見る\",\"u_bc\":\"#f76956\",\"u_url\":\"https:\\/\\/item.rakuten.co.jp\\/switchbot\\/k11\\/\",\"a_id\":5483003,\"p_id\":54,\"pl_id\":27059,\"pc_id\":54,\"s_n\":\"rakuten\",\"u_so\":1},{\"id\":2,\"u_tx\":\"Yahoo!ショッピングで見る\",\"u_bc\":\"#66a7ff\",\"u_url\":\"https:\\/\\/shopping.yahoo.co.jp\\/search?first=1\\u0026p=SwitchBot%20%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%20K11%2B\",\"a_id\":5483010,\"p_id\":1225,\"pl_id\":27061,\"pc_id\":1925,\"s_n\":\"yahoo\",\"u_so\":2},{\"id\":3,\"u_tx\":\"Amazonで見る\",\"u_bc\":\"#ffcf0f\",\"u_url\":\"https:\\/\\/www.amazon.co.jp\\/s\\/ref=nb_sb_noss_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A\\u0026url=search-alias%3Daps\\u0026field-keywords=SwitchBot%20%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%20K11%2B\",\"a_id\":5483011,\"p_id\":170,\"pl_id\":27060,\"pc_id\":185,\"s_n\":\"amazon\",\"u_so\":3}],\"eid\":\"iEX3D\",\"s\":\"l\"});\r\n</script>\r\n<div id=\"msmaflink-iEX3D\">リンク</div>\r\n<!-- MoshimoAffiliateEasyLink END -->",
+    "moshimo": "<!-- START MoshimoAffiliateEasyLink -->\r\n<script type=\"text/javascript\">\r\n(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;\r\nb[a]=b[a]||function(){arguments.currentScript=c.currentScript\r\n||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};\r\nc.getElementById(a)||(d=c.createElement(f),d.src=g,\r\nd.id=a,e=c.getElementsByTagName(\"body\")[0],e.appendChild(d))})\r\n(window,document,\"script\",\"//dn.msmstatic.com/site/cardlink/bundle.js?20220329\",\"msmaflink\");\r\nmsmaflink({\"n\":\"【150万ポイント抽選】SwitchBot スイッチボット ロボット掃除機 K11+ お掃除ロボット 掃除ロボット 掃除機 クリーナー 超小型 水拭き 拭き掃除 高精度マッピング 6000pa強力吸引 ゴミ収集 高性能 自動充電 レーザー搭載 禁止エリア 静音設計\",\"b\":\"\",\"t\":\"\",\"d\":\"https:\\/\\/thumbnail.image.rakuten.co.jp\",\"c_p\":\"\\/@0_mall\\/switchbot\\/cabinet\\/09377790\\/11892401\",\"p\":[\"\\/13129054\\/imgrc0100726038.jpg\",\"\\/12970458\\/imgrc0098709833.jpg\",\"\\/11892930\\/1.jpg\"],\"u\":{\"u\":\"https:\\/\\/item.rakuten.co.jp\\/switchbot\\/k11\\/\",\"t\":\"rakuten\",\"r_v\":\"\"},\"v\":\"2.1\",\"b_l\":[{\"id\":1,\"u_tx\":\"楽天市場で見る\",\"u_bc\":\"#f76956\",\"u_url\":\"https:\\/\\/item.rakuten.co.jp\\/switchbot\\/k11\\/\",\"a_id\":5483003,\"p_id\":54,\"pl_id\":27059,\"pc_id\":54,\"s_n\":\"rakuten\",\"u_so\":1},{\"id\":2,\"u_tx\":\"Yahoo!ショッピングで見る\",\"u_bc\":\"#66a7ff\",\"u_url\":\"https:\\/\\/shopping.yahoo.co.jp\\/search?first=1\\u0026p=%E3%80%90150%E4%B8%87%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88%E6%8A%BD%E9%81%B8%E3%80%91SwitchBot%20%E3%82%B9%E3%82%A4%E3%83%83%E3%83%81%E3%83%9C%E3%83%83%E3%83%88%20%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%20K11%2B%20%E3%81%8A%E6%8E%83%E9%99%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%20%E6%8E%83%E9%99%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%20%E6%8E%83%E9%99%A4%E6%A9%9F%20%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%8A%E3%83%BC%20%E8%B6%85%E5%B0%8F%E5%9E%8B%20%E6%B0%B4%E6%8B%AD%E3%81%8D%20%E6%8B%AD%E3%81%8D%E6%8E%83%E9%99%A4%20%E9%AB%98%E7%B2%BE%E5%BA%A6%E3%83%9E%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0%206000pa%E5%BC%B7%E5%8A%9B%E5%90%B8%E5%BC%95%20%E3%82%B4%E3%83%9F%E5%8F%8E%E9%9B%86%20%E9%AB%98%E6%80%A7%E8%83%BD%20%E8%87%AA%E5%8B%95%E5%85%85%E9%9B%BB%20%E3%83%AC%E3%83%BC%E3%82%B6%E3%83%BC%E6%90%AD%E8%BC%89%20%E7%A6%81%E6%AD%A2%E3%82%A8%E3%83%AA%E3%82%A2%20%E9%9D%99%E9%9F%B3%E8%A8%AD%E8%A8%88\",\"a_id\":5483010,\"p_id\":1225,\"pl_id\":27061,\"pc_id\":1925,\"s_n\":\"yahoo\",\"u_so\":2},{\"id\":3,\"u_tx\":\"Amazonで見る\",\"u_bc\":\"#ffcf0f\",\"u_url\":\"https:\\/\\/www.amazon.co.jp\\/s\\/ref=nb_sb_noss_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A\\u0026url=search-alias%3Daps\\u0026field-keywords=%E3%80%90150%E4%B8%87%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88%E6%8A%BD%E9%81%B8%E3%80%91SwitchBot%20%E3%82%B9%E3%82%A4%E3%83%83%E3%83%81%E3%83%9C%E3%83%83%E3%83%88%20%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%20K11%2B%20%E3%81%8A%E6%8E%83%E9%99%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%20%E6%8E%83%E9%99%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%20%E6%8E%83%E9%99%A4%E6%A9%9F%20%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%8A%E3%83%BC%20%E8%B6%85%E5%B0%8F%E5%9E%8B%20%E6%B0%B4%E6%8B%AD%E3%81%8D%20%E6%8B%AD%E3%81%8D%E6%8E%83%E9%99%A4%20%E9%AB%98%E7%B2%BE%E5%BA%A6%E3%83%9E%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0%206000pa%E5%BC%B7%E5%8A%9B%E5%90%B8%E5%BC%95%20%E3%82%B4%E3%83%9F%E5%8F%8E%E9%9B%86%20%E9%AB%98%E6%80%A7%E8%83%BD%20%E8%87%AA%E5%8B%95%E5%85%85%E9%9B%BB%20%E3%83%AC%E3%83%BC%E3%82%B6%E3%83%BC%E6%90%AD%E8%BC%89%20%E7%A6%81%E6%AD%A2%E3%82%A8%E3%83%AA%E3%82%A2%20%E9%9D%99%E9%9F%B3%E8%A8%AD%E8%A8%88\",\"a_id\":5483011,\"p_id\":170,\"pl_id\":27060,\"pc_id\":185,\"s_n\":\"amazon\",\"u_so\":3}],\"eid\":\"iEX3D\",\"s\":\"l\"});\r\n</script>\r\n<div id=\"msmaflink-iEX3D\">リンク</div>\r\n<!-- MoshimoAffiliateEasyLink END -->",
     "direct": "<a href=\"https://px.a8.net/svt/ejp?a8mat=4B1OTR+ZQ12Q+4W9U+BW0YB&a8ejpredirect=https%3A%2F%2Fwww.switchbot.jp%2Fproducts%2Fswitchbot-robot-vacuum-cleaner-k11\" target=\"_blank\" rel=\"nofollow\">公式サイトで見る</a>",
     "hpPublish": true
-  },
-  "priceSource": "official",
-  "priceCheckedAt": "2026-10-03"
+  }
 }

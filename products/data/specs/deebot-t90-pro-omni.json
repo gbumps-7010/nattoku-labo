@@ -1,0 +1,77 @@
+{
+  "productId": "deebot-t90-pro-omni",
+  "modelNumber": "DEX95",
+  "checkedAt": "2026-11-03",
+  "sources": [
+    {
+      "label": "ECOVACS公式 DEEBOT T90 PRO OMNI と消耗品セット",
+      "url": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/bundle-deebot-t90-pro-omni"
+    },
+    {
+      "label": "PR TIMES エコバックスジャパン DEEBOT T90 ファミリー発売リリース（本体・ステーションサイズ）",
+      "url": "https://prtimes.jp/main/html/rd/p/000000154.000017926.html"
+    },
+    {
+      "label": "ECOVACS公式 DEEBOT T90 PRO OMNI 取扱説明書（型番・Wi-Fi 2.4GHz）",
+      "url": "https://site-static.ecovacs.com/upload/file/support/2026/02/26/083526_4079$T90PROOMNIInstructionManual-JP.pdf"
+    },
+    {
+      "label": "ECOVACS公式 保証期間について",
+      "url": "https://help.ecovacs.com/jp/support/warranty"
+    }
+  ],
+  "basic": {
+    "dimensionsMm": {
+      "w": 353,
+      "d": 351,
+      "h": 95
+    },
+    "weightKg": null,
+    "runtimeMin": 140,
+    "chargeTimeMin": 150,
+    "batteryMah": 4000,
+    "releaseDate": "2026-02",
+    "warrantyMonths": 12
+  },
+  "cleaning": {
+    "suctionPa": 30000,
+    "dustboxMl": 250,
+    "waterTankMl": null,
+    "mappingType": "AINA 2.0インテリジェントナビゲーションモデル",
+    "obstacleAvoidance": "AIVI 3D 4.0",
+    "climbHeightMm": 24,
+    "climbNote": "TruePass アダプティブ4WD。単段最大24mm、連続段差最大40mm",
+    "noiseDb": 60
+  },
+  "mop": {
+    "type": "ローラー式（OZMO ROLLER 3.0、最大200回転/分）",
+    "liftMm": null,
+    "autoDetach": false
+  },
+  "station": {
+    "autoEmpty": true,
+    "mopWash": true,
+    "hotWaterWash": true,
+    "hotWaterNote": "75℃",
+    "hotAirDry": true,
+    "autoRefillDrain": false,
+    "detergentDispenser": true,
+    "dustBagMl": null,
+    "cleanTankMl": 4000,
+    "dirtyTankMl": 2200,
+    "dimensionsMm": {
+      "w": 338,
+      "d": 460,
+      "h": 500
+    },
+    "weightKg": null
+  },
+  "smart": {
+    "app": "ECOVACS HOME",
+    "wifi": "2.4GHzのみ",
+    "voiceAssistants": [
+      "YIKO"
+    ],
+    "matter": null
+  }
+}

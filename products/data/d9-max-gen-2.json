@@ -4,66 +4,66 @@
   "manufacturer": "Dreame",
   "modelNumber": "D9 Max Gen 2",
   "imageUrl": "https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/d9maxgen2_cp.jpg",
-  "overallRating": 4.31,
-  "totalReviews": 58,
+  "overallRating": 4.15,
+  "totalReviews": 34,
   "price": 20800,
-  "reliabilityScore": 70.0,
+  "reliabilityScore": 57.4,
   "asin": "",
-  "metaTitle": "Dreame D9 Max Gen 2 詳細分析 | 口コミ56件で判明した吸引力と賢さの真実",
-  "metaDescription": "Dreame D9 Max Gen 2の56件の口コミを徹底解析。強力な吸引力、高精度なマッピング機能で高評価を得る一方、水拭き性能や段差乗り越えに関する課題も。購入前に知るべき全ての情報を公開。",
   "keywords": [
-    "Dreame D9 Max Gen 2",
+    "D9 Max Gen 2",
+    "Dreame",
     "ロボット掃除機",
-    "口コミ",
-    "評価",
     "水拭き",
-    "マッピング"
+    "マッピング",
+    "高コスパ"
   ],
+  "metaTitle": "Dreame D9 Max Gen 2 詳細分析 | 34件の口コミで判明した吸引力と賢さ",
+  "metaDescription": "Dreame D9 Max Gen 2の34件の口コミを徹底解析。強力な吸引力や高精度なマッピング機能、水拭きの実力など、コスパに優れた本製品の真実を公開します。",
   "categoryC": {
     "userSatisfaction": {
       "score": 91,
-      "reviewCount": 56,
-      "comment": "多くの利用者が吸引力やマッピング性能に満足しており、「もっと早く買えばよかった」という声が多数。家事の負担が大幅に軽減されたと実感しているユーザーが多く、全体的に高い満足度を得ています。"
+      "reviewCount": 34,
+      "comment": "価格以上の吸引力と高精度なマッピング機能に満足する声が多数を占めます。日々の掃除が楽になり、生活の質が向上したとの意見が多く、総合的な満足度は非常に高いです。"
     },
     "repurchaseIntention": {
       "percentage": 85,
-      "reviewCount": 56,
-      "comment": "価格以上の性能に満足し、同メーカーの他製品や後継機にも興味を持つユーザーが多いです。故障時の買い替え候補として、再度Dreame製品を選ぶという意見が、その信頼性の高さを物語っています。"
+      "reviewCount": 34,
+      "comment": "「もっと早く買えばよかった」という意見が散見され、高い満足度が再購入意向に繋がっています。同メーカーの上位機種へのステップアップを検討する声もありました。"
     },
     "failureRate": {
-      "percentage": 3.5,
-      "reviewCount": 56,
+      "percentage": 6,
+      "reviewCount": 34,
       "breakdown": {
         "hardware": 1,
         "software": 1,
         "environmental": 0
       },
-      "comment": "致命的な故障報告は極めて少ないですが、まれに家具に引っかかり停止する事象や、アプリのマップが一時的に消えるというソフトウェア関連の軽微な不具合が報告されています。全体的に安定性は高いです。"
+      "comment": "致命的な故障報告はほとんどありませんが、アプリのマップが一時的に消える、バッテリー切れで停止するといった軽微なトラブルが数件見られました。ハードウェアの信頼性は高いです。"
     }
   },
   "reliability": {
-    "score": 70.0,
+    "score": 57.4,
     "dataAdequacy": {
-      "score": 62,
+      "score": 54,
       "weight": 60,
-      "description": "口コミ件数は56件と中規模ですが、多様な利用環境からの具体的な評価が含まれており、製品の長所と短所を判断するための情報量は十分に確保されています。"
+      "description": "口コミ件数は34件と多くはありませんが、各機能への言及はあり、基本的な性能評価には十分なデータ量です。より多角的な評価には、さらなる口コミの蓄積が望まれます。"
     },
     "consistency": {
-      "score": 81,
+      "score": 60,
       "weight": 30,
-      "description": "Amazonと楽天の評価に大きな乖離はなく、吸引力やマッピング精度の高さは共通して高評価です。一方で、水拭き性能や段差対応への限定的な評価も一致しており、意見の一貫性は高いです。",
-      "percentage": 81
+      "description": "Amazonのみの口コミのためサイト間比較はできませんが、概ね高評価で意見は一致しています。ただし、段差乗り越え性能など一部で評価が分かれる項目も見られました。",
+      "percentage": 60
     },
     "freshness": {
-      "score": 85,
+      "score": 70,
       "weight": 10,
-      "description": "分析対象の口コミには直近3ヶ月以内のものが多く含まれており、現在の製品性能やソフトウェアの安定性を反映した鮮度の高い情報となっています。"
+      "description": "直近30日以内の口コミが全体の約6%を占めており、鮮度は中程度です。継続的に新しい利用者の声が投稿されており、現在の性能を判断する上で参考になります。"
     }
   },
   "updateInfo": {
-    "lastUpdated": "2026-08-13",
+    "lastUpdated": "2026-10-23",
     "firmwareVersion": "",
-    "note": "2026年8月までの口コミを分析した結果、吸引力とマッピング精度は高く評価されていますが、水拭きは補助的機能との認識が必要です。アプリの安定性も向上している傾向が見られます。"
+    "note": "2026年10月までの34件の口コミを分析。吸引力とマッピングが高評価な一方、段差検知の不安定さやコード類の巻き込みが課題として挙げられています。"
   },
   "timeSaving": {
     "vacuumMinutes": 10,
@@ -73,86 +73,54 @@
     "annualHours": 115.6,
     "workDaysEquivalent": 14.4
   },
-  "operationalCost": {
-    "daily": 56,
-    "dailyNote": "消耗品（ブラシ、フィルター、モップ）の交換費用を日割りで計算した実質的なコストです。",
-    "monthly": 1710,
-    "annual": 20520,
-    "consumables": [
-      {
-        "item": "メインブラシ",
-        "replacementFrequency": "6ヶ月ごと",
-        "unitCost": 1780,
-        "annualCost": 3560
-      },
-      {
-        "item": "サイドブラシ",
-        "replacementFrequency": "3ヶ月ごと",
-        "unitCost": 1280,
-        "annualCost": 5120
-      },
-      {
-        "item": "HEPAフィルター",
-        "replacementFrequency": "3ヶ月ごと",
-        "unitCost": 1480,
-        "annualCost": 5920
-      },
-      {
-        "item": "モップパッド",
-        "replacementFrequency": "3ヶ月ごと",
-        "unitCost": 1480,
-        "annualCost": 5920
-      }
-    ]
-  },
   "performanceAnalysis": {
     "floorCleaning": {
       "score": 96,
-      "reviewCount": 30,
-      "positiveReviewCount": 29,
-      "comment": "最大6,000Paの強力な吸引力で、フローリングの髪の毛やホコリをしっかり除去します。「床がサラサラになった」との声が多数あり、日常的な掃除性能は非常に高い評価を得ています。"
+      "reviewCount": 18,
+      "positiveReviewCount": 17,
+      "comment": "6,000Paの強力な吸引力が高く評価されており、「床がサラサラになる」と満足の声が多数です。水拭き機能も日常的な汚れには十分で、価格以上の清掃能力を持つと好評です。"
     },
     "carpetCleaning": {
-      "score": 78,
-      "reviewCount": 4,
-      "positiveReviewCount": 3,
-      "comment": "ラグ上の食べこぼしなどは問題なく吸引しますが、毛足の長い（10mm以上）カーペットでは乗り越えに苦労する場合があります。自動で吸引力を上げるカーペットブースト機能は評価されています。"
+      "score": 75,
+      "reviewCount": 3,
+      "positiveReviewCount": 2,
+      "comment": "ラグの上のお菓子の食べこぼしを綺麗にできたとの報告がある一方、毛足の長い厚手のカーペットでは乗り越えに苦労する場合があります。薄手のラグやカーペット向きです。"
     },
     "petHairRemoval": {
-      "score": 90,
+      "score": 92,
       "reviewCount": 3,
       "positiveReviewCount": 3,
-      "comment": "言及数は少ないものの、猫の毛などペットの毛をしっかり吸い込むとの評価があります。強力な吸引力と絡みにくいゴム製ブラシが、ペットのいる家庭で効果を発揮します。"
+      "comment": "言及数は少ないものの、犬のいる家庭で「毎日の掃除ストレスが激変した」という肯定的な口コミがありました。強力な吸引力はペットの毛の除去にも効果が期待できます。"
     },
     "quietness": {
       "score": 88,
-      "reviewCount": 10,
-      "positiveReviewCount": 9,
-      "comment": "「旧モデルより静か」「会話の邪魔にならない」といった肯定的な意見が多く、在宅中でも気兼ねなく使用できるレベルです。ただし、長期間使用すると音が大きくなったという報告も一部ありました。"
+      "reviewCount": 5,
+      "positiveReviewCount": 4,
+      "comment": "「旧モデルより静か」「動画で見た印象より気にならない」といった好意的な意見がほとんどです。ただし、長期間の使用で動作音が大きくなったという報告も1件ありました。"
     },
     "stepClimbing": {
-      "score": 72,
-      "reviewCount": 13,
-      "positiveReviewCount": 9,
-      "comment": "1〜2cm程度の段差やスロープは問題なく乗り越えますが、5cm以上の段差では落下する可能性が指摘されています。玄関など大きな段差がある場所では、進入禁止エリアの設定が推奨されます。"
+      "score": 70,
+      "reviewCount": 9,
+      "positiveReviewCount": 5,
+      "comment": "1〜2cm程度の低い段差は乗り越えますが、5cm程度の段差では落下するとの報告があります。玄関など大きな段差がある場所では、アプリの進入禁止エリア設定が必須です。"
     },
     "maintenance": {
-      "score": 85,
-      "reviewCount": 7,
-      "positiveReviewCount": 6,
-      "comment": "ダストボックスのゴミ捨ては手動ですが、構造がシンプルで簡単です。消耗品の入手性も良く、長期的な運用がしやすい点が評価されています。全自動モデルのような手間いらずではありません。"
+      "score": 78,
+      "reviewCount": 4,
+      "positiveReviewCount": 3,
+      "comment": "ゴミ捨てや給水は手動ですが、ダストボックスの構造はシンプルです。「ゴミパック無しはコスパが良い」と、手動であることを肯定的に捉える意見も見られました。"
     },
     "appStability": {
-      "score": 92,
-      "reviewCount": 33,
-      "positiveReviewCount": 30,
-      "comment": "高精度なマッピング機能やエリア指定、スケジュール設定など、アプリの機能性は高く評価されています。初期のWi-Fi接続や複数端末での利用に戸惑う声も一部ありましたが、概ね安定しています。"
+      "score": 93,
+      "reviewCount": 15,
+      "positiveReviewCount": 13,
+      "comment": "マッピング精度やエリア指定、スケジュール機能など、アプリの多機能性と使いやすさが高く評価されています。一方で、スマホ1台しか登録できないという制限を指摘する声もありました。"
     },
     "batteryLife": {
-      "score": 89,
+      "score": 72,
       "reviewCount": 3,
       "positiveReviewCount": 2,
-      "comment": "最大285分の長時間稼働が可能で、広い部屋でも一度の充電で掃除を完了できます。ただし、ターボモードを多用すると稼働時間は短くなります。途中でバッテリー切れを起こしたとの報告もありました。"
+      "comment": "大容量バッテリーを搭載していますが、掃除範囲が広い場合や吸引力を最大に設定した場合に、途中でバッテリー切れを起こして停止したとの報告が一部で見られました。"
     }
   },
   "radarChartData": {
@@ -168,43 +136,31 @@
     ],
     "values": [
       96,
-      78,
-      90,
-      88,
-      72,
-      85,
+      75,
       92,
-      89
+      88,
+      70,
+      78,
+      93,
+      72
     ]
   },
   "dataQuality": {
-    "totalReviews": 58,
-    "sampledReviews": 56,
-    "adoptedReviews": 56,
-    "excludedReviews": 2,
-    "trustScore": 70.0,
-    "comment": "Amazonと楽天から収集した56件の口コミを分析。購入者の具体的な使用感が豊富に含まれており、製品の性能を多角的に評価するための信頼性の高いデータセットです。"
+    "totalReviews": 34,
+    "sampledReviews": 34,
+    "adoptedReviews": 34,
+    "excludedReviews": 0,
+    "trustScore": 57.4,
+    "comment": "Amazonに投稿された34件の口コミを全て分析対象としました。口コミ総数は少ないものの、多様な機能への言及があり、製品の長所と短所を把握する上で信頼性の高いデータです。"
   },
   "reviewKeywords": {
     "positive": [
       {
         "keyword": "水拭き・拭き掃除が良い",
-        "count": 22
-      },
-      {
-        "keyword": "マッピング・ルートが賢い",
-        "count": 17
+        "count": 15
       },
       {
         "keyword": "吸引力が高い",
-        "count": 16
-      },
-      {
-        "keyword": "満足・買ってよかった",
-        "count": 12
-      },
-      {
-        "keyword": "静かで快適",
         "count": 10
       },
       {
@@ -212,23 +168,39 @@
         "count": 8
       },
       {
-        "keyword": "綺麗になる",
+        "keyword": "満足・買ってよかった",
+        "count": 6
+      },
+      {
+        "keyword": "マッピング・ルートが賢い",
+        "count": 6
+      },
+      {
+        "keyword": "静かで快適",
         "count": 5
+      },
+      {
+        "keyword": "綺麗になる",
+        "count": 2
       },
       {
         "keyword": "家事が楽になった",
-        "count": 5
-      },
-      {
-        "keyword": "床がサラサラ・ピカピカ",
         "count": 2
       },
       {
         "keyword": "故障・トラブルが少ない",
         "count": 1
+      },
+      {
+        "keyword": "床がサラサラ・ピカピカ",
+        "count": 1
       }
     ],
     "negative": [
+      {
+        "keyword": "コードを巻き込む",
+        "count": 1
+      },
       {
         "keyword": "価格・コストが高い",
         "count": 1
@@ -240,161 +212,157 @@
       {
         "keyword": "段差・家具で引っかかる",
         "count": 1
-      },
-      {
-        "keyword": "故障・不具合",
-        "count": 1
       }
     ]
   },
   "successStrategies": [
     {
       "rank": 1,
-      "issue": "段差や厚手のカーペットでの走行性能",
-      "occurrenceRate": 23.2,
-      "occurrenceCount": 13,
-      "environmentalFactor": "2cm以上の段差、毛足の長いカーペット",
-      "technicalDescription": "落下防止センサーが特定の床色や素材を段差と誤認識したり、物理的な車輪の高さ限界を超えたりすることで、スタックや落下が発生します。特に暗い色の床材はセンサーが苦手とする傾向があります。",
+      "issue": "玄関などの段差で落下・立ち往生する",
+      "occurrenceRate": 26,
+      "occurrenceCount": 9,
+      "environmentalFactor": "約2cmを超える段差、またはセンサーが認識しにくい色の床材",
+      "technicalDescription": "落下防止用の崖センサーは搭載されていますが、段差の高さや床の色・材質によっては正確に検知できず、落下や立ち往生につながるケースが報告されています。",
       "avoidanceStrategies": [
         {
           "method": "アプリで進入禁止エリアを設定する",
           "effectiveness": "高",
           "technicalLevel": "初級",
-          "technicalRationale": "LDSレーザーで作成したマップ上で、玄関や厚いカーペットのエリアを仮想的な壁で囲むことで、物理的に侵入させないようにします。最も確実で簡単な回避策です。"
+          "technicalRationale": "DreameHomeアプリのマッピング機能で、玄関や階段など落下危険性のある場所を「進入禁止エリア」に設定することで、物理的にその場所へ近づくのを防ぎます。"
         },
         {
-          "method": "段差スロープを設置する",
+          "method": "落下防止センサーを定期的に清掃する",
           "effectiveness": "中",
           "technicalLevel": "初級",
-          "technicalRationale": "市販のロボット掃除機用スロープを設置し、物理的な段差を緩やかにすることで、本体の走行を補助します。ただし、スロープ自体の設置スペースや見た目の問題が発生する場合があります。"
+          "technicalRationale": "本体底面にある落下防止センサーにホコリが付着すると、段差を正しく検知できなくなることがあります。柔らかい布で定期的に拭き、センサーの感度を維持することが推奨されます。"
         }
       ],
-      "preventionTips": "購入前に、掃除させたいエリアで最も高い段差やカーペットの厚さを測定しておくことが重要です。メーカーが公表している乗り越え可能な段差（2cm）を超える場所は、事前の対策が必要です。"
+      "preventionTips": "初回のマッピング作成時に、特に段差のあるエリアの境界線を正確に設定することが重要です。また、市販の段差スロープを設置することで、乗り越え性能を補助することも有効な対策です。"
     }
   ],
   "topComplaints": [
     {
-      "title": "水拭き性能が期待以下",
-      "percentage": 12.5,
-      "reviewCount": 7,
-      "description": "「モップを引きずるだけ」と感じるユーザーが多く、頑固な汚れを落とすほどの本格的な水拭きは期待できません。あくまでフローリングの皮脂汚れやザラつきを抑える補助的な機能と捉えるべきです。",
-      "solution": "水拭き前に吸引清掃をしっかり行い、大きなゴミを取り除いておくことで拭き取り効果が向上します。また、アプリで水量を「高」に設定すると、よりウェットな拭き心地が得られます。"
+      "title": "段差の検知が不安定で落下することがある",
+      "percentage": 26,
+      "reviewCount": 9,
+      "description": "1〜2cm程度の段差は乗り越えますが、玄関のたたきなど約5cmの段差ではセンサーが検知できずに落下するとの報告が複数あります。特に同じ色のタイルなどでは認識しにくいようです。",
+      "solution": "最も確実な対策は、アプリで玄関や階段などの危険な場所を「進入禁止エリア」として設定することです。また、本体底面の落下防止センサーを定期的に清掃することも有効です。"
     },
     {
-      "title": "段差や厚いカーペットに弱い",
-      "percentage": 23.2,
-      "reviewCount": 13,
-      "description": "公称2cmまでの段差は乗り越えますが、それ以上や毛足の長いカーペットでは立ち往生することがあります。特に玄関のたたきなど、センサーが誤認識しやすい場所での落下報告が複数見られました。",
-      "solution": "Dreame Homeアプリの高精度なマッピング機能を活用し、玄関や厚いラグなどを「進入禁止エリア」に設定することが最も効果的です。これにより、問題が発生する場所を未然に回避できます。"
-    },
-    {
-      "title": "アプリが1台のスマホしか登録できない",
-      "percentage": 3.6,
+      "title": "床の充電コードや小物を巻き込んで停止する",
+      "percentage": 6,
       "reviewCount": 2,
-      "description": "本体を登録できるアカウントは1つだけで、家族で共有したい場合に不便を感じるという声がありました。別々の端末で使うには、同じアカウントでログインするか、共有機能を使う必要があります。",
-      "solution": "公式FAQによると、1つのアカウントでログイン情報を共有するか、アプリ内の「デバイス共有」機能を使うことで、複数の端末から操作が可能です。ただし共有機能では一部機能が制限される場合があります。"
+      "description": "上位機種のようなAIによる障害物回避カメラは非搭載のため、床に落ちている充電ケーブルやビニール袋、スリッパなどを認識できず、巻き込んで停止してしまうことがあります。",
+      "solution": "掃除を開始する前に、床の上からコード類や小物などを片付けておくことが最も効果的です。これにより、ロボットがスムーズに清掃でき、途中で停止するトラブルを防げます。"
+    },
+    {
+      "title": "専用アプリはスマホ1台でしか登録・操作できない",
+      "percentage": 3,
+      "reviewCount": 1,
+      "description": "家族で共有したい場合でも、ロボット1台につき連携できるアカウントは1つのみです。そのため、他の家族が操作する際は、登録したスマホを借りるか、アカウント情報を共有する必要があります。",
+      "solution": "公式には1デバイスのみの連携となりますが、家族で同じログインIDとパスワードを共有すれば、複数のスマートフォンで同一アカウントにログインして操作することが可能です。"
     }
   ],
   "attributeScores": {
     "petOwner": {
-      "overall": 92,
+      "overall": 90,
       "details": [
         {
           "field": "ペットの毛除去",
-          "score": 90,
+          "score": 92,
           "reviewCount": 3,
-          "comment": "強力な吸引力でカーペットや床に落ちたペットの毛をしっかり吸引します。言及数は少ないですが、飼い主からの評価は高く、抜け毛対策として有効です。"
+          "comment": "強力な吸引力により、カーペットや床に落ちたペットの毛もしっかりと吸い込みます。犬のいる家庭からは「掃除のストレスが激変した」との高い評価を得ています。"
         },
         {
-          "field": "フローリング掃除",
+          "field": "フローリング清掃",
           "score": 96,
-          "reviewCount": 30,
-          "comment": "ペットが歩き回るフローリングを常に清潔に保ちます。水拭き機能を使えば、足跡や皮脂汚れも軽減でき、床がサラサラになる点が好評です。"
+          "reviewCount": 18,
+          "comment": "吸引と水拭きの同時実行で、ペットの足跡や皮脂汚れも綺麗になります。毎日稼働させることで、ペットがいても素足で快適に過ごせる床を維持できると好評です。"
         },
         {
-          "field": "静音性",
-          "score": 88,
-          "reviewCount": 10,
-          "comment": "比較的静かな動作音で、ペットを怖がらせにくいです。掃除中にペットがリラックスして過ごせるため、在宅中も気兼ねなく稼働させられます。"
+          "field": "メンテナンス性",
+          "score": 78,
+          "reviewCount": 4,
+          "comment": "ダストボックスのゴミ捨ては手動ですが、構造がシンプルで手入れは簡単です。ペットの毛が溜まりやすいため、こまめなゴミ捨てを習慣にすることが推奨されます。"
         }
       ]
     },
     "apartment": {
-      "overall": 85,
+      "overall": 87,
       "details": [
         {
           "field": "静音性",
           "score": 88,
-          "reviewCount": 10,
-          "comment": "集合住宅で気になる動作音は、標準モードであれば比較的静かです。夜間や早朝の利用でも、隣室への騒音を気にせず掃除を任せられるレベルです。"
+          "reviewCount": 5,
+          "comment": "「音が気にならない」との評価が多く、集合住宅でも時間帯を気にせず使いやすいです。在宅勤務中や夜間でも、会話や作業を妨げにくいレベルの静音性を備えています。"
         },
         {
-          "field": "フローリング掃除",
+          "field": "フローリング清掃",
           "score": 96,
-          "reviewCount": 30,
-          "comment": "限られたスペースを効率的に掃除し、フローリングのホコリや髪の毛をきれいにします。コンパクトながらパワフルな清掃力で、部屋を常に清潔に保ちます。"
+          "reviewCount": 18,
+          "comment": "限られたスペースを効率的に清掃するマッピング能力が高く評価されています。コンパクトな間取りでも、家具の脚周りなどを巧みに避けながら隅々まで綺麗にします。"
         },
         {
           "field": "段差乗り越え",
-          "score": 72,
-          "reviewCount": 13,
-          "comment": "室内の敷居やカーペットなど、マンション特有の小さな段差は問題なく乗り越えます。ただし、玄関の段差には注意が必要で、進入禁止エリアの設定が推奨されます。"
+          "score": 70,
+          "reviewCount": 9,
+          "comment": "室内の敷居や薄いラグ程度の段差は問題なく乗り越えます。ただし、玄関の段差からの落下報告があるため、アプリでの進入禁止エリア設定は必須と考えた方が良いでしょう。"
         }
       ]
     },
     "workingProfessional": {
-      "overall": 90,
+      "overall": 83,
       "details": [
         {
           "field": "アプリの安定性",
-          "score": 92,
-          "reviewCount": 33,
-          "comment": "外出先からでもスマホで操作でき、掃除のスケジュール管理も簡単です。帰宅時間に合わせて部屋を綺麗にしておけるため、忙しい日々の大きな助けとなります。"
+          "score": 93,
+          "reviewCount": 15,
+          "comment": "外出先からでも掃除を開始でき、清掃状況をリアルタイムで確認できるアプリの利便性が高く評価されています。タイマー機能で不在時に掃除を自動化できる点も好評です。"
         },
         {
           "field": "メンテナンス性",
-          "score": 85,
-          "reviewCount": 7,
-          "comment": "ゴミ捨ては手動ですが、数日に一度で済むため手間は少ないです。消耗品の交換も簡単で、忙しい中でも手軽にメンテナンスできる点が魅力です。"
+          "score": 78,
+          "reviewCount": 4,
+          "comment": "自動ゴミ収集機能はありませんが、ダストボックスの容量が大きめなため、ゴミ捨ての頻度は数日に1回程度で済みます。忙しい中でも、最低限の手間で運用可能です。"
         },
         {
           "field": "バッテリー性能",
-          "score": 89,
+          "score": 72,
           "reviewCount": 3,
-          "comment": "一度の充電で部屋全体を掃除できるため、充電切れの心配が少ないです。不在時に掃除を任せても、途中で止まることなく確実に完了してくれます。"
+          "comment": "一人暮らしの標準的な間取りであれば、一度の充電で十分に掃除を完了できます。ただし、バッテリー切れの報告もあるため、充電ドック周りは物を置かず帰還しやすい環境が望ましいです。"
         }
       ]
     },
     "familyHome": {
-      "overall": 87,
+      "overall": 83,
       "details": [
         {
-          "field": "フローリング掃除",
+          "field": "フローリング清掃",
           "score": 96,
-          "reviewCount": 30,
-          "comment": "子供の食べこぼしや砂埃など、様々なゴミを強力に吸引します。広いリビングでも隅々まで掃除し、家族が快適に過ごせる清潔な空間を維持します。"
+          "reviewCount": 18,
+          "comment": "食べこぼしやホコリがたまりがちなリビングやダイニングで、その吸引力と水拭き性能を発揮します。「家事が楽になった」という声が多く、家族の時間を増やすのに貢献します。"
         },
         {
           "field": "バッテリー性能",
-          "score": 89,
+          "score": 72,
           "reviewCount": 3,
-          "comment": "大容量バッテリーにより、複数の部屋がある広い家でも一度の充電で対応可能です。掃除の途中で充電に戻る頻度が少なく、効率的に清掃を完了できます。"
+          "comment": "広い家屋の場合、全ての部屋を一度に掃除しようとするとバッテリーが途中で切れる可能性があります。部屋ごとにスケジュールを分けて掃除させるなどの工夫が有効です。"
         },
         {
-          "field": "カーペット掃除",
-          "score": 78,
-          "reviewCount": 4,
-          "comment": "子供部屋のラグやリビングのカーペットのゴミをしっかり吸引します。ただし、毛足の長いものや厚手のものは苦手なため、家庭のカーペットとの相性確認が必要です。"
+          "field": "カーペット清掃",
+          "score": 75,
+          "reviewCount": 3,
+          "comment": "子供部屋のラグなど、薄手のカーペットであれば問題なく掃除できます。ただし、毛足の長い高級なカーペットがある場合は、乗り越えられず性能を十分に発揮できない可能性があります。"
         }
       ]
     }
   },
   "resaleValue": null,
+  "priceSource": "official",
+  "priceCheckedAt": "2026-10-03",
   "affiliate": {
-    "moshimo": "<!-- START MoshimoAffiliateEasyLink -->\r\n<script type=\"text/javascript\">\r\n(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;\r\nb[a]=b[a]||function(){arguments.currentScript=c.currentScript\r\n||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};\r\nc.getElementById(a)||(d=c.createElement(f),d.src=g,\r\nd.id=a,e=c.getElementsByTagName(\"body\")[0],e.appendChild(d))})\r\n(window,document,\"script\",\"//dn.msmstatic.com/site/cardlink/bundle.js?20220329\",\"msmaflink\");\r\nmsmaflink({\"n\":\"ロボット掃除機 Dreame D9 Max Gen2 6000Pa 570ml大容量ダストボックス LDSレーザーセンサー 高精度マッピング 静音設計 お掃除ロボット 掃除機 ペット ドリーミー\",\"b\":\"\",\"t\":\"\",\"d\":\"https:\\/\\/thumbnail.image.rakuten.co.jp\",\"c_p\":\"\\/@0_mall\\/dreame-shop\\/cabinet\",\"p\":[\"\\/thumcheck\\/imgrc0157534704.jpg\",\"\\/13294318\\/13294321\\/11.jpg\",\"\\/biiino\\/award\\/d9maxg7611fb5b9b.jpg\"],\"u\":{\"u\":\"https:\\/\\/item.rakuten.co.jp\\/dreame-shop\\/d9maxgen2\\/\",\"t\":\"rakuten\",\"r_v\":\"\"},\"v\":\"2.1\",\"b_l\":[{\"id\":1,\"u_tx\":\"楽天市場で見る\",\"u_bc\":\"#f76956\",\"u_url\":\"https:\\/\\/item.rakuten.co.jp\\/dreame-shop\\/d9maxgen2\\/\",\"a_id\":5483003,\"p_id\":54,\"pl_id\":27059,\"pc_id\":54,\"s_n\":\"rakuten\",\"u_so\":1},{\"id\":2,\"u_tx\":\"Yahoo!ショッピングで見る\",\"u_bc\":\"#66a7ff\",\"u_url\":\"https:\\/\\/shopping.yahoo.co.jp\\/search?first=1\\u0026p=Dreame%20D9%20Max%20Gen%202\",\"a_id\":5483010,\"p_id\":1225,\"pl_id\":27061,\"pc_id\":1925,\"s_n\":\"yahoo\",\"u_so\":2},{\"u_bc\":\"#ffcf0f\",\"u_tx\":\"Amazonで見る\",\"u_url\":\"https:\\/\\/www.amazon.co.jp\\/s\\/ref=nb_sb_noss_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A\\u0026url=search-alias%3Daps\\u0026field-keywords=Dreame%20D9%20Max%20Gen%202\",\"s_n\":\"amazon\",\"u_so\":3,\"a_id\":5483011,\"p_id\":170,\"pc_id\":185,\"pl_id\":27060,\"id\":3}],\"eid\":\"E6mbA\",\"s\":\"l\"});\r\n</script>\r\n<div id=\"msmaflink-E6mbA\">リンク</div>\r\n<!-- MoshimoAffiliateEasyLink END -->",
+    "moshimo": "<!-- START MoshimoAffiliateEasyLink -->\r\n<script type=\"text/javascript\">\r\n(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;\r\nb[a]=b[a]||function(){arguments.currentScript=c.currentScript\r\n||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};\r\nc.getElementById(a)||(d=c.createElement(f),d.src=g,\r\nd.id=a,e=c.getElementsByTagName(\"body\")[0],e.appendChild(d))})\r\n(window,document,\"script\",\"//dn.msmstatic.com/site/cardlink/bundle.js?20220329\",\"msmaflink\");\r\nmsmaflink({\"n\":\"【61％OFFクーポン→17,800円 7\\/31 23:59まで】【水拭き対応】ロボット掃除機 Dreame D9 Max Gen2 6000Pa 570ml大容量ダストボックス LDSレーザーセンサー 高精度マッピング 静音設計 お掃除ロボット 掃除機 ペット ドリーミー\",\"b\":\"\",\"t\":\"\",\"d\":\"https:\\/\\/thumbnail.image.rakuten.co.jp\",\"c_p\":\"\\/@0_mall\\/dreame-shop\\/cabinet\",\"p\":[\"\\/biiino\\/item\\/main-image\\/d9maxgen2_cp.jpg\",\"\\/13294318\\/13294321\\/11.jpg\",\"\\/biiino\\/award\\/d9maxg7611fb5b9b.jpg\"],\"u\":{\"u\":\"https:\\/\\/item.rakuten.co.jp\\/dreame-shop\\/d9maxgen2\\/\",\"t\":\"rakuten\",\"r_v\":\"\"},\"v\":\"2.1\",\"b_l\":[{\"id\":1,\"u_tx\":\"楽天市場で見る\",\"u_bc\":\"#f76956\",\"u_url\":\"https:\\/\\/item.rakuten.co.jp\\/dreame-shop\\/d9maxgen2\\/\",\"a_id\":5483003,\"p_id\":54,\"pl_id\":27059,\"pc_id\":54,\"s_n\":\"rakuten\",\"u_so\":1},{\"id\":2,\"u_tx\":\"Yahoo!ショッピングで見る\",\"u_bc\":\"#66a7ff\",\"u_url\":\"https:\\/\\/shopping.yahoo.co.jp\\/search?first=1\\u0026p=%E3%80%9061%EF%BC%85OFF%E3%82%AF%E3%83%BC%E3%83%9D%E3%83%B3%E2%86%9217%2C800%E5%86%86%207%2F31%2023%3A59%E3%81%BE%E3%81%A7%E3%80%91%E3%80%90%E6%B0%B4%E6%8B%AD%E3%81%8D%E5%AF%BE%E5%BF%9C%E3%80%91%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%20Dreame%20D9%20Max%20Gen2%206000Pa%20570ml%E5%A4%A7%E5%AE%B9%E9%87%8F%E3%83%80%E3%82%B9%E3%83%88%E3%83%9C%E3%83%83%E3%82%AF%E3%82%B9%20LDS%E3%83%AC%E3%83%BC%E3%82%B6%E3%83%BC%E3%82%BB%E3%83%B3%E3%82%B5%E3%83%BC%20%E9%AB%98%E7%B2%BE%E5%BA%A6%E3%83%9E%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0%20%E9%9D%99%E9%9F%B3%E8%A8%AD%E8%A8%88%20%E3%81%8A%E6%8E%83%E9%99%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%20%E6%8E%83%E9%99%A4%E6%A9%9F%20%E3%83%9A%E3%83%83%E3%83%88%20%E3%83%89%E3%83%AA%E3%83%BC%E3%83%9F%E3%83%BC\",\"a_id\":5483010,\"p_id\":1225,\"pl_id\":27061,\"pc_id\":1925,\"s_n\":\"yahoo\",\"u_so\":2},{\"u_bc\":\"#ffcf0f\",\"u_tx\":\"Amazonで見る\",\"u_url\":\"https:\\/\\/www.amazon.co.jp\\/s\\/ref=nb_sb_noss_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A\\u0026url=search-alias%3Daps\\u0026field-keywords=%E3%80%9061%EF%BC%85OFF%E3%82%AF%E3%83%BC%E3%83%9D%E3%83%B3%E2%86%9217%2C800%E5%86%86%207%2F31%2023%3A59%E3%81%BE%E3%81%A7%E3%80%91%E3%80%90%E6%B0%B4%E6%8B%AD%E3%81%8D%E5%AF%BE%E5%BF%9C%E3%80%91%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%20Dreame%20D9%20Max%20Gen2%206000Pa%20570ml%E5%A4%A7%E5%AE%B9%E9%87%8F%E3%83%80%E3%82%B9%E3%83%88%E3%83%9C%E3%83%83%E3%82%AF%E3%82%B9%20LDS%E3%83%AC%E3%83%BC%E3%82%B6%E3%83%BC%E3%82%BB%E3%83%B3%E3%82%B5%E3%83%BC%20%E9%AB%98%E7%B2%BE%E5%BA%A6%E3%83%9E%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0%20%E9%9D%99%E9%9F%B3%E8%A8%AD%E8%A8%88%20%E3%81%8A%E6%8E%83%E9%99%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%20%E6%8E%83%E9%99%A4%E6%A9%9F%20%E3%83%9A%E3%83%83%E3%83%88%20%E3%83%89%E3%83%AA%E3%83%BC%E3%83%9F%E3%83%BC\",\"s_n\":\"amazon\",\"u_so\":3,\"a_id\":5483011,\"p_id\":170,\"pc_id\":185,\"pl_id\":27060,\"id\":3}],\"eid\":\"E6mbA\",\"s\":\"l\"});\r\n</script>\r\n<div id=\"msmaflink-E6mbA\">リンク</div>\r\n<!-- MoshimoAffiliateEasyLink END -->",
     "direct": "<a href=\"https://t.afi-b.com/visit.php?a=115804H-E517109l&p=g978598R\" rel=\"nofollow\">D9Max Gen 2 </a><img src=\"https://t.afi-b.com/lead/115804H/g978598R/E517109l\" width=\"1\" height=\"1\" style=\"border:none;\" />",
     "hpPublish": true
-  },
-  "priceSource": "official",
-  "priceCheckedAt": "2026-10-03"
+  }
 }

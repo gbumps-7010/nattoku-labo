@@ -1,5 +1,8 @@
 # ナットクLabo 運用引継ぎ（Claude向け）／2026-10-20
 
+**更新 2026-11-03（夕）:** Cursor が新規13機種の製品ページ〜index/nav/sitemap まで公開準備完了。  
+→ Claude 側の反映は完了（[`claude-handoff-2026-11-03-new-products.md`](./claude-handoff-2026-11-03-new-products.md) §6〜9）。  
+**更新 2026-11-03:** §0.2 に製品追加バトンと「現行HTML雛形／template-unified禁止／loader上書き禁止」を追記。  
 **更新 2026-10-21（main @ 3169307）:** 生成スクリプトが公開中HTMLを再現できない件（§4.1）、SEO上書きファイル・プリレンダ修正・改行処理（§2.4）を追記。記事・文言の編集は Claude Code で実施する運用に変更。作戦は [`strategy.md`](./strategy.md)。
 
 このドキュメントは、今後の作業分担と現状の正確な引き継ぎ用です。  
@@ -36,13 +39,22 @@ SEOのために「この機種を上げたい」等の理由で手入力修正�
 
 | 担当 | やること | やらないこと |
 |------|----------|--------------|
-| **Cursor** | **元データの作成に徹する**：スクショ収集、口コミ／製品JSON化、所定手順でのデータ反映、prerender等の再生成、**git commit / push**、ローカル確認 | SEO設計・タイトル案・記事構成の主担当にはしない。Claude指示でも**点数・計算式は変更しない** |
-| **Claude** | SEO設計、タイトル／本文方針、ページ統合・新規記事の設計、カニバリ整理、keyword-audit の実装指示（**表示・文言・導線のみ**）、品質チェック方針 | 本番 push。スクショからのデータ抽出の主担当。**いかなる理由でも計算済み点数・順位ロジックの改変を指示／実行しない** |
+| **Cursor** | **元データ**: スクショ／差分更新、Gemini分析JSON、`products/data` 投入、**現行の同メーカー製品HTMLを雛形**にしたページ作成、prerender / sync、ローカル確認、**git commit / push**（ユーザー指示時） | SEO設計・タイトル案の主担当。`template-unified.html` からの新規作成。work の古い `product-loader.js` でデプロイ側を上書きすること。**点数・計算式の改変** |
+| **Claude** | SEO・タイトル／本文／導線、ページ統合・301、`seo-overrides` / dims / purchase-flow、makers・compare・guides への手作業追記、keyword-audit 実行、表示バグの修正 | 本番 push。口コミスクショ〜点数JSON化。**guides/compare/makers の一括再生成3本**。**点数・計算式の改変** |
+| **ユーザー** | 管理表の行追加・かんたんリンク／直販リンク | — |
 
-**連携の型**
+**製品追加のバトン（確定）**
+1. ユーザーが管理表を用意  
+2. Cursor が JSON＋現行仕様の製品ページまで作る（完了条件: `products/data/{id}.json`、現行雛形の `{id}.html`、index/nav、prerender、プレビューURL）  
+3. Claude が 301・dims・seo-overrides・purchase-flow・メーカー／価格帯／ガイドを足す  
+4. ユーザー指示後、Cursor が commit / push  
+
+**連携の型（SEO・表示修正）**
 1. Claudeが「何を直すか・どのファイル・完成条件」を指示書に落とす（**点数変更を含めない**）  
-2. Cursorが元データ更新 or 表示実装 → push  
-3. GSC・スクショは Cursor側で集め、必要なら Claude に渡して次の設計へ
+2. 実装は Claude Code、または Cursor が指示どおり反映 → push は Cursor／ユーザー指示時  
+3. GSC・スクショは Cursor側で集め、必要なら Claude に渡して次の設計へ  
+
+**新規HTMLの正:** 公開中の同メーカー機種ページ（例: Dreameなら `d20-ultra.html`）をコピーしてから prerender。`products/template-unified.html` は古いので新規追加に使わない（更新は別タスク）。
 
 ---
 
@@ -75,7 +87,7 @@ SEOのために「この機種を上げたい」等の理由で手入力修正�
 - **「機種名＋です。」** 除去、太字途中切れロジック修正
 - **トップ全製品リンク** 54機種同期
 - **時間創出「年間115.6時間」** 製品ページから削除 → about へのリンクのみ
-- **ランキング** 口コミ20件未満に「参考値」バッジ（除外はしない）
+- **ランキング** 口コミ10件未満は機能別ランキングに載せない（2026-11-03 ユーザー決定）。10〜19件は「参考値」バッジで掲載
 - U+2060：SEO枠（title/meta/h1〜h3/JSON-LD）除去用スクリプトあり。**本文にはまだ残る**
 
 ### 2.2 以前確定した「勝ち筋5入口」（GSCベース・旧方針）
@@ -135,9 +147,14 @@ SEOのために「この機種を上げたい」等の理由で手入力修正�
 
 ## 3. 次にやるべきこと（Claude主担当）
 
-**一次ソース:** [`docs/ops/keyword-audit.md`](./keyword-audit.md)
+### 完了（2026-11-03）
 
-### すぐ（作業小・効果大）
+**[`claude-handoff-2026-11-03-new-products.md`](./claude-handoff-2026-11-03-new-products.md)**  
+新規13機種＋Roborock 4機種（E5・Q7T+・Q7 Max・Qrevo C）を makers / 価格帯 / ガイド / ランキングへ反映済み（掲載68製品）。生成はスクラッチで回して差分を確認してから本番へコピー。S8 Max Ultra は見送り（§9）。commit / push は Cursor 待ち
+
+**一次ソース（SEO全体）:** [`docs/ops/keyword-audit.md`](./keyword-audit.md)
+
+### すぐ（作業小・効果大）※上記と並行可
 
 1. ルンバ8ページ・Eufy9ページの**タイトルを検索表記に揃える**（テンプレ一括）
 2. `/makers/irobot`・`/makers/anker` のタイトル修正（比較・おすすめ・Eufy）
@@ -153,7 +170,7 @@ SEOのために「この機種を上げたい」等の理由で手入力修正�
 
 ### 技術・品質（実装は Cursor でも可／設計は Claude）
 
-9. サイトマップ自動生成＋lastmod（575 Combo 等が欠けている指摘あり）
+9. サイトマップ自動生成＋lastmod — **2026-11-03 Cursor 実施済み**（`node scripts/generate-sitemap.js`、製品68）。lastmod 精度の改善は任意
 10. 「かんたんリンクを読み込み中…」等のプレースホルダーを静的HTMLから除去
 11. 口コミ0件項目を「—」表示
 12. 「最も高い／総合1位」と表の点数不一致のロジック確認
@@ -221,9 +238,11 @@ git push origin HEAD   # ユーザー指示時のみ
 
 ## 5. データ収集（Cursor専任）の手順メモ
 
-- 製品追加・口コミ更新は **スクショ → JSON（Geminiプロンプト系ドキュメントあり）→ `products/data/` → prerender / sync**
+- 製品追加・口コミ更新は **スクショ → JSON（Geminiプロンプト系ドキュメントあり）→ `products/data/` → 現行製品HTML雛形 → prerender / sync**
+- **禁止:** `template-unified.html` からの新規作成。`deploy_affiliate` で work の古い `product-loader.js` をデプロイ repo に上書きすること（SEOスキップ `isPrerenderedPage` が消える）
 - 参照ドキュメント（リポ内）:  
-  `products/NEW_PRODUCT_GUIDE.md`、`products/GEMINI_ADD_PRODUCT_FROM_JSON.md`、`products/GEMINI_PROMPT_CORE.md`
+  `products/NEW_PRODUCT_GUIDE.md`、`products/GEMINI_ADD_PRODUCT_FROM_JSON.md`、`products/GEMINI_PROMPT_CORE.md`  
+  ※ NEW_PRODUCT_GUIDE の「template コピー」記述は古い。正は §0.2
 - 価格の公式突き合わせは別タスクとして保留中。スクショ収集時も「価格を本番に載せ替える」は指示があるまでやらない。
 
 ---
@@ -239,7 +258,7 @@ git push origin HEAD   # ユーザー指示時のみ
 【今回やってほしいこと】
 （例）ルンバ8＋Eufy9のタイトル修正案を、検索語付きの変更表で出して。
       実装用に「どの生成スクリプト／どのフィールドを直すか」まで書いて。
-【やってほしくないこと】aggregateRating、価格全面更新、口コミ少数のランキング除外、
+【やってほしくないこと】aggregateRating、価格全面更新、口コミ10件以上の機種のランキング除外、
 点数・％・件数の手直し、計算式の変更提案
 【成果物】変更表＋完成条件＋Cursor向け実装指示（ファイルパス付き・データ改変なし）
 ```
@@ -262,7 +281,7 @@ git push origin HEAD   # ユーザー指示時のみ
 
 - **点数・計算ロジックは聖域**（§0.1）。更新は元データ収集ルートのみ
 - Reviewスニペット: **編集部 Review のみ**（第三者集計の aggregateRating なし）
-- 低口コミ: **参考値バッジ**、ランキング除外なし
+- 低口コミ: 10件未満は機能別ランキングに載せず製品ページで参考値を強調、10〜19件は**参考値バッジ**で掲載
 - 時間創出の共通数値: 製品ページに載せない
 - WORD JOINER: SEO枠優先で除去、本文は段階的
 - 価格の古さ: **保留**

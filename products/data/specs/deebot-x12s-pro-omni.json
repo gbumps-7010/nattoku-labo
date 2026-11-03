@@ -1,0 +1,77 @@
+{
+  "productId": "deebot-x12s-pro-omni",
+  "modelNumber": "ZJ2570",
+  "checkedAt": "2026-11-03",
+  "sources": [
+    {
+      "label": "ECOVACS公式 DEEBOT X12S PRO OMNI",
+      "url": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/deebot-x12s-pro-omni"
+    },
+    {
+      "label": "PR TIMES エコバックスジャパン DEEBOT X12S PRO OMNI / T90 MAX Family 発売リリース（本体・ステーションサイズ、吸引力）",
+      "url": "https://prtimes.jp/main/html/rd/p/000000171.000017926.html"
+    },
+    {
+      "label": "ECOVACS公式 DEEBOT X12S PRO OMNI 取扱説明書（型番・Wi-Fi 2.4GHz）",
+      "url": "https://site-static.ecovacs.com/upload/file/support/2026/09/14/082550_8339$DEEBOTX12SPROOMNI取扱説明書JA_EN.pdf"
+    },
+    {
+      "label": "ECOVACS公式 保証期間について",
+      "url": "https://help.ecovacs.com/jp/support/warranty"
+    }
+  ],
+  "basic": {
+    "dimensionsMm": {
+      "w": 353,
+      "d": 351,
+      "h": 98
+    },
+    "weightKg": null,
+    "runtimeMin": null,
+    "chargeTimeMin": 150,
+    "batteryMah": 4000,
+    "releaseDate": "2026-10",
+    "warrantyMonths": 24
+  },
+  "cleaning": {
+    "suctionPa": 27000,
+    "dustboxMl": 250,
+    "waterTankMl": 110,
+    "mappingType": null,
+    "obstacleAvoidance": "AIVI 3D 4.0（RGBD＋補助光）",
+    "climbHeightMm": 25,
+    "climbNote": "直径7.6cmの大型駆動輪。単段最大25mm、2段連続で合計最大50mm",
+    "noiseDb": 60.2
+  },
+  "mop": {
+    "type": "ローラー式（OZMOローラー 3.0、260RPM、下方加圧4,000Pa、カーペット時スマートカバー）",
+    "liftMm": 15,
+    "autoDetach": false
+  },
+  "station": {
+    "autoEmpty": true,
+    "mopWash": true,
+    "hotWaterWash": true,
+    "hotWaterNote": "最大100℃（ヒーター到達温度・メーカーラボ条件）",
+    "hotAirDry": null,
+    "autoRefillDrain": false,
+    "detergentDispenser": null,
+    "dustBagMl": null,
+    "cleanTankMl": null,
+    "dirtyTankMl": null,
+    "dimensionsMm": {
+      "w": 338,
+      "d": 459,
+      "h": 500
+    },
+    "weightKg": null
+  },
+  "smart": {
+    "app": "ECOVACS HOME",
+    "wifi": "2.4GHzのみ",
+    "voiceAssistants": [
+      "YIKO"
+    ],
+    "matter": null
+  }
+}

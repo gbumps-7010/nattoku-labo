@@ -50,10 +50,6 @@
 /products/template-unified-old.html 410
 /products/test-js 410
 /products/test-js.html 410
-/products/dreame-d20-pro.html 410
-/products/dreame-d20-pro 410
-/products/dreame-d20-pro-plus.html 410
-/products/dreame-d20-pro-plus 410
 /products/dreame-f10.html 410
 /products/dreame-f10 410
 /products/f10-plus.html 410
@@ -100,6 +96,10 @@
 /products/ecovacs-deebot-mini /products/deebot-mini 301
 /products/ecovacs-deebot-t90-omni.html /products/deebot-t90-omni 301
 /products/ecovacs-deebot-t90-omni /products/deebot-t90-omni 301
+/products/dreame-d20-pro.html /products/d20-pro 301
+/products/dreame-d20-pro /products/d20-pro 301
+/products/dreame-d20-pro-plus.html /products/d20-pro-plus 301
+/products/dreame-d20-pro-plus /products/d20-pro-plus 301
 /products/ecovacs-deebot-x8-pro-omni.html /products/deebot-x8-pro-omni 301
 /products/ecovacs-deebot-x8-pro-omni /products/deebot-x8-pro-omni 301
 /products/eufy-clean-x8-pro-self-empty.html 410

@@ -1909,7 +1909,7 @@ const productsData = [
         },
         amazonUrl: 'https://www.amazon.co.jp/s?k=Roomba+Mini+Slim',
         rakutenUrl: 'https://search.rakuten.co.jp/search/mall/Roomba+Mini+Slim/'
-    }
+    },
     {
         id: 'roomba-max-705-combo-autowash',
         name: 'Roomba Max 705 Combo + AutoWash',
@@ -2490,7 +2490,7 @@ const productsData = [
         id: 'eufy-robot-vacuum-omni-s2',
         name: 'Eufy Robot Vacuum Omni S2',
         manufacturer: 'Anker',
-        price: 199900,
+        price: 249900,
         reviewCount: 24,
         totalReviewCount: 24,
         image: 'https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/deal/202608m1/imgrc0103966655.jpg',

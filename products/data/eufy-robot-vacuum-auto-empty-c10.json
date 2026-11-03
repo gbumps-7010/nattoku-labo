@@ -4,66 +4,66 @@
   "manufacturer": "Anker",
   "modelNumber": "T2292",
   "imageUrl": "https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t2292/t2292_nomal.jpg",
-  "overallRating": 4.37,
-  "totalReviews": 225,
+  "overallRating": 4.35,
+  "totalReviews": 224,
   "price": 29990,
-  "reliabilityScore": 85.0,
+  "reliabilityScore": 83.5,
   "asin": "",
-  "metaTitle": "Eufy Robot Vacuum Auto-Empty C10 詳細分析 | 故障・引っかかる？221件の口コミでわかる真実",
-  "metaDescription": "Eufy Robot Vacuum Auto-Empty C10の221件の口コミを解析。賢いマッピング性能や静音性は高評価ですが、故障や段差でのスタック報告も。購入前に知るべき対策を公開。",
+  "metaTitle": "Eufy Robot Vacuum Auto-Empty C10 詳細分析 | 219件の口コミから分かる実力と注意点",
+  "metaDescription": "Eufy Robot Vacuum Auto-Empty C10の219件の口コミを徹底解析。自動ゴミ収集の利便性や静音性は高評価ですが、段差での挙動や初期不良には注意が必要です。賢い選択のための真実を公開。",
   "keywords": [
     "Eufy C10",
     "ロボット掃除機",
-    "Anker",
     "自動ゴミ収集",
-    "レーザーマッピング",
-    "ペットの毛"
+    "Anker",
+    "薄型",
+    "レーザーマッピング"
   ],
   "categoryC": {
     "userSatisfaction": {
-      "score": 92,
-      "reviewCount": 221,
-      "comment": "「もっと早く買えばよかった」という声が多数。特に自動ゴミ収集とマッピング機能による掃除の手間削減が高く評価され、多くのユーザーが生活の質の向上を実感しています。"
+      "score": 88,
+      "reviewCount": 219,
+      "comment": "多くの利用者が掃除の手間が減ったと高く評価しています。特に自動ゴミ収集機能や静音性、薄型設計が満足度に貢献。一方で、段差での挙動や初期不良に関する不満も見られ、評価が分かれる点もあります。"
     },
     "repurchaseIntention": {
-      "percentage": 85,
-      "reviewCount": 188,
-      "comment": "故障時のサポート対応に不満を持つ声はあるものの、価格と性能のバランスから「次も同ブランドで」と考えるユーザーが多く、コストパフォーマンスの良さが再購入意向に繋がっています。"
+      "percentage": 80,
+      "reviewCount": 150,
+      "comment": "「もっと早く買えばよかった」という声が多く、生活の質が向上したと感じるユーザーが多数。ただし、半年程度で故障したという報告もあり、長期的な信頼性に不安を感じてリピートを躊躇する層も一定数存在します。"
     },
     "failureRate": {
-      "percentage": 13,
-      "reviewCount": 29,
+      "percentage": 14,
+      "reviewCount": 31,
       "breakdown": {
-        "hardware": 9,
-        "software": 5,
-        "environmental": 15
+        "hardware": 18,
+        "software": 8,
+        "environmental": 5
       },
-      "comment": "約13%が何らかの不具合に言及。サイドブラシの故障や突然電源が入らない等の初期不良報告が目立ちます。また、段差やケーブル等、環境起因での停止も多く見られます。"
+      "comment": "「サイドブラシエラー」や「電源が入らない」といった初期不良や半年以内の故障報告が散見されます。多くは保証期間内の修理や交換で対応されていますが、購入後のサポート対応には改善の余地があるとの声も聞かれます。"
     }
   },
   "reliability": {
-    "score": 85.0,
+    "score": 83.5,
     "dataAdequacy": {
       "score": 86,
       "weight": 60,
-      "description": "レビュー総数は221件と判断に十分な量です。様々な利用環境からの評価が集まっており、製品の長所と短所を多角的に把握するのに適したデータ量と評価できます。"
+      "description": "219件のレビューは、製品の一般的な性能と問題を把握するのに十分な量です。多様な利用環境からのフィードバックが含まれており、信頼性の高い評価基盤となっています。"
     },
     "consistency": {
-      "score": 78,
+      "score": 73,
       "weight": 30,
-      "description": "多くのECサイトで高評価ですが、故障やスタックに関する低評価も一定数存在します。特に初期不良に関する評価のばらつきが信頼度をやや押し下げる要因となっています。",
-      "percentage": 78
+      "description": "全体的には高評価ですが、初期不良や故障に関する低評価レビューも一定数存在します。特に「賢い」という評価と「動きがおかしい」という評価が混在し、個体差や利用環境による差が大きい可能性があります。",
+      "percentage": 73
     },
     "freshness": {
       "score": 100,
       "weight": 10,
-      "description": "直近30日以内のレビューが全体の10%以上を占めており、鮮度は非常に高いです。現行のファームウェアや製品品質に関する最新のユーザー体験が反映されています。"
+      "description": "レビューの大半が直近1年以内に集中しており、現行モデルの性能やファームウェアの安定性を評価する上で非常に新鮮で価値の高い情報源となっています。"
     }
   },
   "updateInfo": {
-    "lastUpdated": "2026-08-12",
+    "lastUpdated": "2026-11-03",
     "firmwareVersion": "",
-    "note": "2026年8月までの口コミを中心に分析。マッピング精度の向上を評価する声がある一方、特定の環境下でのスタック問題やアプリの挙動に関する指摘は継続して見られます。"
+    "note": "2025年後半から2026年にかけての口コミが中心。アプリの安定性やマッピング精度は概ね好評ですが、一部で物理的な段差乗り越えや障害物回避の挙動に課題が残るという傾向が見られます。"
   },
   "timeSaving": {
     "vacuumMinutes": 10,
@@ -73,80 +73,54 @@
     "annualHours": 115.6,
     "workDaysEquivalent": 14.4
   },
-  "operationalCost": {
-    "daily": 18,
-    "dailyNote": "消耗品と電気代を考慮した日割りコストの目安です。使用頻度により変動します。",
-    "monthly": 550,
-    "annual": 6600,
-    "consumables": [
-      {
-        "item": "ダストバッグ",
-        "replacementFrequency": "2ヶ月ごと",
-        "unitCost": 600,
-        "annualCost": 3600
-      },
-      {
-        "item": "サイドブラシ",
-        "replacementFrequency": "1年ごと",
-        "unitCost": 1500,
-        "annualCost": 1500
-      },
-      {
-        "item": "フィルター",
-        "replacementFrequency": "1年ごと",
-        "unitCost": 1500,
-        "annualCost": 1500
-      }
-    ]
-  },
   "performanceAnalysis": {
     "floorCleaning": {
-      "score": 93,
-      "reviewCount": 70,
-      "positiveReviewCount": 65,
-      "comment": "フローリングの掃除性能は非常に高く評価されています。髪の毛やペットの毛、ホコリをしっかり吸引し、帰宅時に床が綺麗になっていることへの満足の声が大多数を占めます。"
+      "score": 95,
+      "reviewCount": 64,
+      "positiveReviewCount": 60,
+      "comment": "フローリングのホコリや髪の毛、ペットの毛をしっかり吸引する性能は高く評価されています。「帰宅した時に床がツルツル」との声も。ただし、部屋の隅のゴミが若干残ることがあるという指摘も見られます。"
     },
     "carpetCleaning": {
       "score": 78,
-      "reviewCount": 34,
+      "reviewCount": 33,
       "positiveReviewCount": 25,
-      "comment": "薄手のカーペットやラグは問題なく掃除できますが、毛足の長いものや厚手のものは苦手な様子。めくり上げてしまったり、吸引力が物足りないとの指摘が一部で見られます。"
+      "comment": "BoostIQ機能によりカーペット上での吸引力は向上しますが、ペットの毛が絡みついたものは苦手な様子。毛足の短いカーペットは問題ないものの、軽いラグやマットはめくり上げてしまい、走行が不安定になることがあります。"
     },
     "petHairRemoval": {
       "score": 90,
-      "reviewCount": 39,
-      "positiveReviewCount": 35,
-      "comment": "ペットの抜け毛掃除では多くのユーザーから高く評価されています。自動ゴミ収集機能と合わせ、日々の毛の掃除から解放されたという声が多く、犬猫のいる家庭で活躍します。"
+      "reviewCount": 37,
+      "positiveReviewCount": 33,
+      "comment": "犬や猫の抜け毛掃除で非常に高く評価されており、「ペットのいる家庭の救世主」との声も。毛絡み除去システムの効果で、ブラシへの毛の絡まりが少ない点もメンテナンスの手間を減らす上で好評です。"
     },
     "quietness": {
-      "score": 88,
-      "reviewCount": 37,
-      "positiveReviewCount": 32,
-      "comment": "掃除中の走行音は非常に静かで、在宅勤務中や夜間でも気にならないレベルとの評価が多数。ただし、ステーションでのゴミ収集音は爆音との指摘が多く、使用時間帯には配慮が必要です。"
+      "score": 92,
+      "reviewCount": 41,
+      "positiveReviewCount": 38,
+      "comment": "走行中の動作音は非常に静かで、在宅勤務中や夜間でも気にならないというレビューが多数。一方で、ステーションでの自動ゴミ収集時の音は「爆音」と表現されるほど大きく、使用時間帯には配慮が必要です。"
     },
     "stepClimbing": {
-      "score": 85,
-      "reviewCount": 50,
+      "score": 75,
+      "reviewCount": 58,
       "positiveReviewCount": 40,
-      "comment": "2cm程度の段差やラグはパワフルに乗り越える性能があります。しかし、逆に乗り越えてほしくない場所にも侵入し、家具の脚などに乗り上げてスタックする原因にもなっています。"
+      "comment": "カーペットや部屋間の敷居など、数センチの段差は力強く乗り越えます。しかし、そのパワー故に扇風機の土台など乗り越えてほしくない物によじ登り、スタックする原因にも。アプリでの進入禁止エリア設定が必須です。"
     },
     "maintenance": {
-      "score": 94,
-      "reviewCount": 38,
-      "positiveReviewCount": 36,
-      "comment": "約2ヶ月に1度のダストバッグ交換で済む自動ゴミ収集機能は圧倒的に高評価です。ブラシの毛がらみ除去システムも有効で、日々のメンテナンスの手間を大幅に削減してくれます。"
+      "score": 93,
+      "reviewCount": 41,
+      "positiveReviewCount": 38,
+      "comment": "約2ヶ月間ゴミ捨て不要の自動収集機能は「最高」「とても楽」と絶賛されています。ブラシへの毛絡みが少ない点も好評。ただし、紙パック式の消耗品コストがかかる点と、一部でエラーが頻発する点がマイナス評価です。"
     },
     "appStability": {
-      "score": 89,
-      "reviewCount": 104,
+      "score": 88,
+      "reviewCount": 105,
       "positiveReviewCount": 92,
-      "comment": "マッピング精度は高く、部屋の指定や進入禁止エリアの設定が便利だと好評です。一部でWi-Fi接続のトラブルや、マップが稀に崩れるという報告も見られますが、概ね安定しています。"
+      "comment": "マッピング機能や進入禁止エリア設定、スケジュール管理など、アプリの操作性は直感的で使いやすいと好評です。一部でWi-Fi接続に手こずる例や、マップが時々不正確になるという報告も見られます。"
     },
     "batteryLife": {
-      "score": 82,
-      "reviewCount": 29,
-      "positiveReviewCount": 23,
-      "comment": "一般的な家庭のリビングや複数の部屋を一度に掃除するには十分なバッテリー性能です。ただし、途中で充電が切れたり、ステーションに戻れず停止するケースも稀に報告されています。"
+      "score": 85,
+      "reviewCount": 31,
+      "positiveReviewCount": 26,
+      "comment": "一度の充電でLDK全体を十分に掃除できる持続力があります。掃除範囲が広い場合は自動で充電に戻り、再開する機能も搭載。ただし、待機中の電力消費が大きいという指摘もあり、常時ステーション接続が推奨されます。"
     }
   },
   "radarChartData": {
@@ -161,57 +135,57 @@
       "電池"
     ],
     "values": [
-      93,
+      95,
       78,
       90,
+      92,
+      75,
+      93,
       88,
-      85,
-      94,
-      89,
-      82
+      85
     ]
   },
   "dataQuality": {
-    "totalReviews": 225,
-    "sampledReviews": 221,
-    "adoptedReviews": 221,
-    "excludedReviews": 4,
-    "trustScore": 85.0,
-    "comment": "全221件の口コミを分析。購入直後から半年以上の長期利用レビューまで幅広く含まれており、製品の初期性能と耐久性の両側面を評価する上で信頼性の高いデータセットです。"
+    "totalReviews": 224,
+    "sampledReviews": 219,
+    "adoptedReviews": 219,
+    "excludedReviews": 5,
+    "trustScore": 83.5,
+    "comment": "Amazonと楽天の計219件の口コミを分析。高評価から低評価まで幅広く、製品の長所と潜在的な欠点を多角的に評価するための信頼性の高いデータセットです。"
   },
   "reviewKeywords": {
     "positive": [
       {
         "keyword": "満足・買ってよかった",
-        "count": 69
+        "count": 68
       },
       {
         "keyword": "使いやすい・便利",
-        "count": 36
-      },
-      {
-        "keyword": "マッピング・ルートが賢い",
-        "count": 34
+        "count": 35
       },
       {
         "keyword": "静かで快適",
-        "count": 28
+        "count": 34
+      },
+      {
+        "keyword": "マッピング・ルートが賢い",
+        "count": 29
       },
       {
         "keyword": "吸引力が高い",
-        "count": 24
+        "count": 25
       },
       {
         "keyword": "水拭き・拭き掃除が良い",
-        "count": 19
+        "count": 21
       },
       {
         "keyword": "綺麗になる",
-        "count": 17
+        "count": 16
       },
       {
         "keyword": "家事が楽になった",
-        "count": 16
+        "count": 14
       },
       {
         "keyword": "自動ゴミ収集が便利",
@@ -219,40 +193,48 @@
       },
       {
         "keyword": "故障・トラブルが少ない",
-        "count": 3
+        "count": 4
       }
     ],
     "negative": [
       {
         "keyword": "故障・不具合",
-        "count": 29
+        "count": 31
       },
       {
         "keyword": "段差・家具で引っかかる",
         "count": 20
       },
       {
-        "keyword": "水拭き・拭き掃除が不十分",
+        "keyword": "コードを巻き込む",
         "count": 13
       },
       {
-        "keyword": "動作音が気になる",
-        "count": 11
-      },
-      {
-        "keyword": "コードを巻き込む",
-        "count": 9
+        "keyword": "水拭き・拭き掃除が不十分",
+        "count": 12
       },
       {
         "keyword": "止まってしまう",
-        "count": 9
+        "count": 10
+      },
+      {
+        "keyword": "動作音が気になる",
+        "count": 10
       },
       {
         "keyword": "吸引力が弱い",
-        "count": 1
+        "count": 2
       },
       {
         "keyword": "価格・コストが高い",
+        "count": 1
+      },
+      {
+        "keyword": "マッピング・認識が不正確",
+        "count": 1
+      },
+      {
+        "keyword": "アプリ・Wi-Fi接続が難しい",
         "count": 1
       }
     ]
@@ -263,149 +245,148 @@
       "issue": "段差や家具への乗り上げ・スタック",
       "occurrenceRate": 9,
       "occurrenceCount": 20,
-      "environmentalFactor": "厚手のラグ、テーブルの脚、敷居など",
-      "technicalDescription": "本機は2cm程度の段差を乗り越える強力な駆動部を持ちますが、障害物回避センサーが高さのない物体を検知しきれず、乗り上げて動けなくなることがあります。",
+      "environmentalFactor": "扇風機の土台、椅子の脚、厚いラグなど",
+      "technicalDescription": "本機は強力なモーターで段差を乗り越えますが、高度な障害物回避センサーは非搭載のため、形状によっては乗り越えようとして動けなくなります。特に斜めの形状の脚や軽いラグは苦手です。",
       "avoidanceStrategies": [
         {
-          "method": "アプリで進入禁止エリアを設定する",
+          "method": "アプリで「進入禁止エリア」を設定する",
           "effectiveness": "高",
           "technicalLevel": "初級",
-          "technicalRationale": "レーザーマッピングで作成された地図上で、スタックしやすい家具の周囲やラグ全体を仮想的な壁で囲むことで、物理的にそのエリアへの進入を防ぎます。"
+          "technicalRationale": "レーザーナビゲーションで作成したマップに対し、仮想的な壁を設定して侵入を防ぎます。一度設定すれば、毎回物を片付ける手間なく、問題箇所を恒久的に回避できます。"
         },
         {
-          "method": "物理的な障害物を設置する",
+          "method": "物理的な障害物を置く",
           "effectiveness": "中",
           "technicalLevel": "初級",
-          "technicalRationale": "特に玄関など、アプリ設定が難しい場所では、掃除の時間だけ低い板や市販のロボット掃除機用スロープを逆向きに置くことで、落下や不要な進入を防げます。"
+          "technicalRationale": "本体のバンパーが検知できる高さの物を置くことで、物理的に侵入を防ぎます。アプリ設定が難しい場合や、一時的に回避したい場合に有効な原始的かつ確実な方法です。"
         }
       ],
-      "preventionTips": "初回のマッピング走行後、掃除履歴でスタックした場所を確認し、予防的に進入禁止エリアに設定することが最も効果的です。特に椅子の脚が複雑な場所は要注意です。"
+      "preventionTips": "初回のマッピング走行時に、乗り上げやすい場所（扇風機の土台、椅子の脚、ペットの水飲み場周辺など）を注意深く観察し、稼働前にアプリで進入禁止エリアとして設定しておくことが最も効果的です。"
     }
   ],
   "topComplaints": [
     {
-      "title": "故障・初期不良の報告が多い",
-      "percentage": 13,
-      "reviewCount": 29,
-      "description": "「サイドブラシが動かなくなった」「電源が入らない」「エラーが頻発する」といった故障報告が一定数見られます。購入後、数週間から半年以内での発生が目立ちます。",
-      "solution": "保証期間内であれば無償修理の対象となります。公式サイトのサポートに連絡し、症状を伝えることで修理や交換の案内が受けられます。梱包材は自身で用意する必要がある場合があります。"
+      "title": "半年以内の故障・エラー頻発",
+      "percentage": 14,
+      "reviewCount": 31,
+      "description": "「サイドブラシが動かない」「電源が入らない」「ゴミを吸引しない」といった初期不良や数ヶ月での故障報告が最も多く見られます。特にサイドブラシ関連のエラーは頻出する傾向にあります。",
+      "solution": "まずサイドブラシに髪の毛などが絡まっていないか確認・清掃します。 解決しない場合は、アプリのフィードバック機能や公式サイトからカスタマーサポートに連絡し、修理または交換を依頼してください。"
     },
     {
-      "title": "段差や家具に乗り上げて停止する",
+      "title": "予期せぬ場所に乗り上げて停止する",
       "percentage": 9,
       "reviewCount": 20,
-      "description": "パワフルな段差乗り越え性能が仇となり、テーブルの脚や扇風機の土台、敷居などに乗り上げて動けなくなる「亀の子状態」が頻繁に報告されています。救出の手間がかかります。",
-      "solution": "EufyHomeアプリのマップ編集機能で「進入禁止エリア」を設定するのが最も有効な対策です。頻繁にスタックする家具の周辺を囲むことで、その場所を避けて掃除します。"
+      "description": "強力な段差乗り越え性能が裏目に出て、扇風機の土台や椅子の脚、軽いラグなどに乗り上げて動けなくなることがあります。特に斜めの形状をした障害物を苦手とする傾向が見られます。",
+      "solution": "Eufy Cleanアプリを使い、マップ上で乗り上げてしまう場所を「進入禁止エリア」として設定することが最も効果的です。 物理的に物を置いたり、床から撤去することでも回避可能です。"
     },
     {
-      "title": "電源コードや小物を巻き込む",
-      "percentage": 4,
-      "reviewCount": 9,
-      "description": "床に置かれたスマートフォンの充電ケーブルや、ペットのおもちゃ、スリッパなどを巻き込んで停止する事例が多数あります。カメラによる障害物回避機能はないため、事前の片付けが必須です。",
-      "solution": "メーカーは掃除前に床の小物を片付けることを推奨しています。 ケーブル類は壁際にまとめる、またはケーブルカバーを使用することで巻き込みリスクを大幅に減らすことができます。"
+      "title": "ケーブルや小物を巻き込んで停止する",
+      "percentage": 6,
+      "reviewCount": 13,
+      "description": "床に置かれた充電ケーブル、靴下、ペットのおもちゃ、薄いマットなどをブラシが巻き込んでしまい、エラーで停止するケースが報告されています。事前の床面の片付けが不可欠です。",
+      "solution": "メーカーは掃除開始前に床からケーブルや小物を片付けることを推奨しています。 ケーブル類が多い場所は、アプリの進入禁止エリアに設定するか、ケーブルボックスに収納するなどの対策が有効です。"
     }
   ],
   "attributeScores": {
     "petOwner": {
-      "overall": 91,
+      "overall": 92,
       "details": [
         {
           "field": "ペットの毛吸引",
           "score": 90,
-          "reviewCount": 39,
-          "comment": "換毛期の抜け毛掃除に絶大な効果を発揮します。フローリングに散らばる毛を効率的に集め、ペットのいる家庭の掃除負担を大きく軽減してくれると高く評価されています。"
+          "reviewCount": 37,
+          "comment": "抜け毛をしっかり吸引し、毛絡み除去システムでブラシの手入れも楽なため、ペットオーナーから高い評価を得ています。鳥のペレットのような少し大きめのゴミも吸引可能です。"
+        },
+        {
+          "field": "フローリング掃除",
+          "score": 95,
+          "reviewCount": 64,
+          "comment": "フローリングの掃除性能は非常に高く、ペットが撒き散らす毛や猫砂などでザラザラした床も綺麗にしてくれます。薄型設計で家具の下にも入り込めるのが利点です。"
         },
         {
           "field": "メンテナンス性",
-          "score": 94,
-          "reviewCount": 38,
-          "comment": "自動ゴミ収集機能により、ペットの毛が詰まったダストボックスを毎日掃除する手間から解放されます。毛がらみ除去システムもブラシの手入れ頻度を減らしてくれます。"
-        },
-        {
-          "field": "静音性",
-          "score": 88,
-          "reviewCount": 37,
-          "comment": "走行音が静かなため、音に敏感なペットを驚かせにくい点がメリットです。ただし、ゴミ収集時の大きな音には慣れが必要かもしれません。"
+          "score": 93,
+          "reviewCount": 41,
+          "comment": "自動ゴミ収集機能により、日々のゴミ捨てから解放される点が最大のメリット。ペットの毛が多くても頻繁な手入れが不要で、衛生的な状態を保ちやすいです。"
         }
       ]
     },
     "apartment": {
-      "overall": 89,
+      "overall": 90,
       "details": [
         {
           "field": "静音性",
-          "score": 88,
-          "reviewCount": 37,
-          "comment": "走行中の動作音は非常に静かで、集合住宅での使用に適しています。隣室への騒音を気にせず、日中はもちろん、時間帯を選ばず掃除を任せられる点が評価されています。"
-        },
-        {
-          "field": "コンパクトさ",
           "score": 92,
-          "reviewCount": 221,
-          "comment": "本体・ステーション共にコンパクトな設計で、限られたスペースにも設置しやすいです。特に本体の薄さは、ソファやベッド下など狭い場所の掃除に威力を発揮します。"
+          "reviewCount": 41,
+          "comment": "走行音は非常に静かで、集合住宅での夜間や早朝の使用にも適しています。ただし、ゴミ収集時の音は大きいため、アプリで吸引しない時間帯を設定すると良いでしょう。"
         },
         {
-          "field": "フロア掃除",
-          "score": 93,
-          "reviewCount": 70,
-          "comment": "フローリングの掃除性能に優れており、ホコリや髪の毛をきれいに除去します。ワンルームやリビングなど、主な生活空間を常に清潔に保つことができます。"
+          "field": "フローリング掃除",
+          "score": 95,
+          "reviewCount": 64,
+          "comment": "コンパクトな部屋でもマッピング機能で効率的に掃除します。薄型のため、ワンルームに多い脚付きのソファやベッドの下にもしっかり入り、ホコリを取り除いてくれます。"
+        },
+        {
+          "field": "段差乗り越え",
+          "score": 75,
+          "reviewCount": 58,
+          "comment": "部屋間の敷居などは問題なく乗り越えますが、玄関の段差を誤認識して落下する可能性も指摘されています。アプリで玄関付近を進入禁止エリアに設定すると安心です。"
         }
       ]
     },
     "workingProfessional": {
-      "overall": 91,
+      "overall": 89,
       "details": [
         {
-          "field": "アプリ性能",
-          "score": 89,
-          "reviewCount": 104,
-          "comment": "外出先からでもスマホアプリで掃除を開始・管理できるため、不在時を有効活用できます。スケジュール設定により、帰宅時には常に部屋が綺麗な状態を保てます。"
+          "field": "アプリ安定性",
+          "score": 88,
+          "reviewCount": 105,
+          "comment": "外出先からスマホで掃除を開始したり、スケジュールを設定できるため、不在時に掃除を完了できます。アプリの操作は直感的で、忙しい中でも手軽に扱える点が評価されています。"
         },
         {
           "field": "メンテナンス性",
-          "score": 94,
-          "reviewCount": 38,
-          "comment": "自動ゴミ収集機能のおかげで、ゴミ捨ては2ヶ月に1度程度で済みます。忙しい日々の中で、掃除機の手入れに時間を取られることがなく、手間いらずな点が魅力です。"
+          "score": 93,
+          "reviewCount": 41,
+          "comment": "約2ヶ月ゴミ捨てが不要なため、メンテナンスに時間を取られることがありません。消耗品の交換時期もアプリが通知してくれるため、管理の手間が省けます。"
         },
         {
-          "field": "時間節約",
-          "score": 95,
-          "reviewCount": 221,
-          "comment": "日々の床掃除を完全に自動化することで、年間100時間以上の自由時間を創出します。面倒な掃除から解放され、趣味や休息など、より有意義な時間の使い方が可能になります。"
+          "field": "バッテリー性能",
+          "score": 85,
+          "reviewCount": 31,
+          "comment": "一人暮らしの部屋であれば、一度の充電で十分に掃除を完了できます。掃除の途中で充電が切れても自動で再開するため、帰宅時には綺麗な状態が保たれています。"
         }
       ]
     },
     "familyHome": {
-      "overall": 86,
+      "overall": 87,
       "details": [
         {
-          "field": "フロア掃除",
-          "score": 93,
-          "reviewCount": 70,
-          "comment": "子供の食べこぼしや砂埃など、日々の細かなゴミをしっかり掃除してくれます。リビングや子供部屋を清潔に保つ上で、非常に頼りになる存在です。"
+          "field": "フローリング掃除",
+          "score": 95,
+          "reviewCount": 64,
+          "comment": "リビングやキッチンなど、広い範囲のフローリングも効率的に掃除します。子供の食べこぼしやホコリが溜まりがちなソファの下も綺麗になり、衛生的な環境を維持できます。"
         },
         {
-          "field": "アプリ性能",
-          "score": 89,
-          "reviewCount": 104,
-          "comment": "子供が遊ぶスペースを進入禁止に設定したり、食事後にダイニングだけを掃除させたりと、アプリを使って生活シーンに合わせた柔軟な使い方ができる点が便利です。"
-        },
-        {
-          "field": "段差乗り越え",
+          "field": "バッテリー性能",
           "score": 85,
-          "reviewCount": 50,
-          "comment": "部屋間の敷居やラグをスムーズに乗り越え、複数の部屋を効率的に掃除します。ただし、子供のおもちゃなどに乗り上げて停止することもあるため、事前の床の片付けは必要です。"
+          "reviewCount": 31,
+          "comment": "複数の部屋を掃除しても途中で止まることは少なく、広い家でも対応可能です。バッテリーが少なくなると自動でステーションに戻るため、手間がかかりません。"
+        },
+        {
+          "field": "カーペット掃除",
+          "score": 78,
+          "reviewCount": 33,
+          "comment": "子供部屋のラグやマットの掃除も可能ですが、軽いものは巻き込んでしまうことがあります。滑り止めで固定するか、進入禁止エリアに設定するなどの工夫が必要です。"
         }
       ]
-    },
-    "resaleValue": null
+    }
   },
   "resaleValue": null,
+  "priceSource": "official",
+  "priceCheckedAt": "2026-10-03",
   "affiliate": {
-    "moshimo": "<!-- START MoshimoAffiliateEasyLink -->\r\n<script type=\"text/javascript\">\r\n(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;\r\nb[a]=b[a]||function(){arguments.currentScript=c.currentScript\r\n||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};\r\nc.getElementById(a)||(d=c.createElement(f),d.src=g,\r\nd.id=a,e=c.getElementsByTagName(\"body\")[0],e.appendChild(d))})\r\n(window,document,\"script\",\"//dn.msmstatic.com/site/cardlink/bundle.js?20220329\",\"msmaflink\");\r\nmsmaflink({\"n\":\"Anker Eufy (ユーフィ) Robot Vacuum Auto-Empty C10 (ロボット掃除機)\",\"b\":\"\",\"t\":\"\",\"d\":\"https:\\/\\/thumbnail.image.rakuten.co.jp\",\"c_p\":\"\\/@0_mall\\/anker\\/cabinet\\/listing\",\"p\":[\"\\/tmb\\/t2292\\/t2292_normal_new.jpg\",\"\\/product\\/t2292\\/t2292_sub_v3_1.jpg\",\"\\/product\\/t2292\\/t2292_sub_v2_2.jpg\"],\"u\":{\"u\":\"https:\\/\\/item.rakuten.co.jp\\/anker\\/t2292\\/\",\"t\":\"rakuten\",\"r_v\":\"\"},\"v\":\"2.1\",\"b_l\":[{\"id\":1,\"u_tx\":\"楽天市場で見る\",\"u_bc\":\"#f76956\",\"u_url\":\"https:\\/\\/item.rakuten.co.jp\\/anker\\/t2292\\/\",\"a_id\":5483003,\"p_id\":54,\"pl_id\":27059,\"pc_id\":54,\"s_n\":\"rakuten\",\"u_so\":1},{\"id\":2,\"u_tx\":\"Yahoo!ショッピングで見る\",\"u_bc\":\"#66a7ff\",\"u_url\":\"https:\\/\\/shopping.yahoo.co.jp\\/search?first=1\\u0026p=Anker%20Eufy%20Robot%20Vacuum%20Auto-Empty%20C10\",\"a_id\":5483010,\"p_id\":1225,\"pl_id\":27061,\"pc_id\":1925,\"s_n\":\"yahoo\",\"u_so\":2}],\"eid\":\"t9ggJ\",\"s\":\"s\"});\r\n</script>\r\n<div id=\"msmaflink-t9ggJ\">リンク</div>\r\n<!-- MoshimoAffiliateEasyLink END -->",
+    "moshimo": "<!-- START MoshimoAffiliateEasyLink -->\r\n<script type=\"text/javascript\">\r\n(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;\r\nb[a]=b[a]||function(){arguments.currentScript=c.currentScript\r\n||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};\r\nc.getElementById(a)||(d=c.createElement(f),d.src=g,\r\nd.id=a,e=c.getElementsByTagName(\"body\")[0],e.appendChild(d))})\r\n(window,document,\"script\",\"//dn.msmstatic.com/site/cardlink/bundle.js?20220329\",\"msmaflink\");\r\nmsmaflink({\"n\":\"Anker Eufy (ユーフィ) Robot Vacuum Auto-Empty C10 (ロボット掃除機) 【自動ゴミ収集ステーション 伸縮サイドブラシ 毛絡み除去システム レーザーマッピング アプリ操作 落下防止 薄型 小型 時短家電 新生活 引越し 一人暮らし】\",\"b\":\"\",\"t\":\"\",\"d\":\"https:\\/\\/thumbnail.image.rakuten.co.jp\",\"c_p\":\"\\/@0_mall\\/anker\\/cabinet\\/listing\",\"p\":[\"\\/tmb\\/t2292\\/t2292_nomal.jpg\",\"\\/product\\/t2292\\/t2292_sub_2.jpg\",\"\\/product\\/t2292\\/t2292_sub_3.jpg\"],\"u\":{\"u\":\"https:\\/\\/item.rakuten.co.jp\\/anker\\/t2292\\/\",\"t\":\"rakuten\",\"r_v\":\"\"},\"v\":\"2.1\",\"b_l\":[{\"id\":1,\"u_tx\":\"楽天市場で見る\",\"u_bc\":\"#f76956\",\"u_url\":\"https:\\/\\/item.rakuten.co.jp\\/anker\\/t2292\\/\",\"a_id\":5483003,\"p_id\":54,\"pl_id\":27059,\"pc_id\":54,\"s_n\":\"rakuten\",\"u_so\":1},{\"id\":2,\"u_tx\":\"Yahoo!ショッピングで見る\",\"u_bc\":\"#66a7ff\",\"u_url\":\"https:\\/\\/shopping.yahoo.co.jp\\/search?first=1\\u0026p=Anker%20Eufy%20(%E3%83%A6%E3%83%BC%E3%83%95%E3%82%A3)%20Robot%20Vacuum%20Auto-Empty%20C10%20(%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F)%20%E3%80%90%E8%87%AA%E5%8B%95%E3%82%B4%E3%83%9F%E5%8F%8E%E9%9B%86%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%20%E4%BC%B8%E7%B8%AE%E3%82%B5%E3%82%A4%E3%83%89%E3%83%96%E3%83%A9%E3%82%B7%20%E6%AF%9B%E7%B5%A1%E3%81%BF%E9%99%A4%E5%8E%BB%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%20%E3%83%AC%E3%83%BC%E3%82%B6%E3%83%BC%E3%83%9E%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0%20%E3%82%A2%E3%83%97%E3%83%AA%E6%93%8D%E4%BD%9C%20%E8%90%BD%E4%B8%8B%E9%98%B2%E6%AD%A2%20%E8%96%84%E5%9E%8B%20%E5%B0%8F%E5%9E%8B%20%E6%99%82%E7%9F%AD%E5%AE%B6%E9%9B%BB%20%E6%96%B0%E7%94%9F%E6%B4%BB%20%E5%BC%95%E8%B6%8A%E3%81%97%20%E4%B8%80%E4%BA%BA%E6%9A%AE%E3%82%89%E3%81%97%E3%80%91\",\"a_id\":5483010,\"p_id\":1225,\"pl_id\":27061,\"pc_id\":1925,\"s_n\":\"yahoo\",\"u_so\":2}],\"eid\":\"t9ggJ\",\"s\":\"s\"});\r\n</script>\r\n<div id=\"msmaflink-t9ggJ\">リンク</div>\r\n<!-- MoshimoAffiliateEasyLink END -->",
     "direct": "<a href=\"//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3766176&pid=892603477&vc_url=https%3A%2F%2Fwww.ankerjapan.com%2Fproducts%2Ft2292%3F_pos%3D3%26_fid%3D6afd318d9%26_ss%3Dc%3Fvariant%3D44871970226337\" rel=\"nofollow\"><img src=\"//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3766176&pid=892603477\" height=\"1\" width=\"0\" border=\"0\">Eufy Robot Vacuum Auto-Empty C10</a>",
     "hpPublish": true
-  },
-  "priceSource": "official",
-  "priceCheckedAt": "2026-10-03"
+  }
 }

@@ -1,0 +1,395 @@
+{
+  "productId": "qrevo-l-pro",
+  "productName": "Qrevo L Pro",
+  "manufacturer": "Roborock",
+  "modelNumber": "Qrevo L Pro",
+  "imageUrl": "https://m.media-amazon.com/images/I/3196WRRWVZL._SL500_.jpg",
+  "overallRating": 4.33,
+  "totalReviews": 32,
+  "price": 89990,
+  "reliabilityScore": 59.5,
+  "asin": "",
+  "metaTitle": "Roborock Qrevo L Pro 詳細分析 | 32件の口コミで判明した実力と注意点",
+  "metaDescription": "Roborock Qrevo L Proの32件の口コミを徹底解析。優れた水拭き性能や静音性の評価、一方で指摘される段差の弱さや壁際の清掃範囲など、購入前に知るべき真実を公開します。",
+  "keywords": [
+    "Roborock Qrevo L Pro",
+    "ロボット掃除機",
+    "水拭き",
+    "自動ゴミ収集",
+    "ペット",
+    "口コミ"
+  ],
+  "categoryC": {
+    "userSatisfaction": {
+      "score": 92,
+      "reviewCount": 32,
+      "comment": "多くの利用者が「買ってよかった」と高く評価しています。特に水拭き機能による床のサラサラ感や、家事負担の軽減が満足度に直結。一部、初期不良や故障報告が評価を下げる要因となっています。"
+    },
+    "repurchaseIntention": {
+      "percentage": 85,
+      "reviewCount": 32,
+      "comment": "高い満足度を背景に、同ブランドや後継機への買い替え意欲は高いと推測されます。ただし、故障を経験したユーザーは他社製品を検討する可能性があり、サポート対応が今後の評価を左右しそうです。"
+    },
+    "failureRate": {
+      "percentage": 13,
+      "reviewCount": 4,
+      "breakdown": {
+        "hardware": 3,
+        "software": 1,
+        "environmental": 0
+      },
+      "comment": "購入後1ヶ月以内のモップ機能故障や、走行エラーなどの報告が4件見られました。全自動で便利な反面、複雑な構造が故障リスクに繋がる可能性も。長期的な耐久性には注意が必要です。"
+    }
+  },
+  "reliability": {
+    "score": 59.5,
+    "dataAdequacy": {
+      "score": 53,
+      "weight": 60,
+      "description": "口コミ総数は32件と多くはないため、個別の意見が統計結果に与える影響が大きめです。今後データが増えることで、より客観的な評価が可能になります。"
+    },
+    "consistency": {
+      "score": 59,
+      "weight": 30,
+      "description": "今回はAmazonの口コミのみを分析対象としています。複数のECサイト間での評価比較ができていないため、一貫性のスコアは参考値となります。",
+      "percentage": 59
+    },
+    "freshness": {
+      "score": 100,
+      "weight": 10,
+      "description": "分析対象の口コミのうち25%が直近30日以内に投稿されており、鮮度は非常に高いです。最新の製品品質やファームウェア状況を反映した評価と言えます。"
+    }
+  },
+  "updateInfo": {
+    "lastUpdated": "2026-11-01",
+    "firmwareVersion": "",
+    "note": "2026年5月から11月までの口コミを分析。水拭き性能と全自動メンテナンスへの高評価が目立つ一方、壁際や段差の対応、初期不良に関する指摘も見られます。"
+  },
+  "timeSaving": {
+    "vacuumMinutes": 10,
+    "mopMinutes": 9,
+    "dailyMinutes": 19,
+    "monthlyHours": 9.5,
+    "annualHours": 115.6,
+    "workDaysEquivalent": 14.4
+  },
+  "performanceAnalysis": {
+    "floorCleaning": {
+      "score": 95,
+      "reviewCount": 25,
+      "positiveReviewCount": 23,
+      "comment": "水拭き性能は絶賛されており「床がサラサラになる」との声が多数。回転モップによる拭き掃除能力は本機の最大の強みです。ただし、壁際数センチは拭き残しが発生する構造的な弱点も指摘されています。"
+    },
+    "carpetCleaning": {
+      "score": 85,
+      "reviewCount": 8,
+      "positiveReviewCount": 7,
+      "comment": "カーペットを自動で検知し、モップを持ち上げて吸引のみを行う機能は高く評価されています。ただし、リフトアップ幅が約10mmのため、毛足の長いカーペットでは濡れる可能性があり注意が必要です。"
+    },
+    "petHairRemoval": {
+      "score": 90,
+      "reviewCount": 10,
+      "positiveReviewCount": 9,
+      "comment": "犬や猫の毛をしっかり吸引するとの評価が多く、ペットがいる家庭で特に重宝されています。一方、一部で「毛髪の吸い取りがイマイチ」との声もあり、床材との相性も考えられます。"
+    },
+    "quietness": {
+      "score": 80,
+      "reviewCount": 7,
+      "positiveReviewCount": 5,
+      "comment": "走行中の動作音は「静か」という評価が多数派で、夜間でも使いやすいとの声があります。しかし、ドックでのゴミ収集音は大きく、使用時間帯には配慮が必要です。最大吸引時の音を指摘する声も一部ありました。"
+    },
+    "stepClimbing": {
+      "score": 70,
+      "reviewCount": 9,
+      "positiveReviewCount": 5,
+      "comment": "公称2cmの段差対応ですが、実際は「かなり厳しい」との声が目立ちます。特に後退時や角度によっては乗り越えられず、タイヤが空転することも。敷居の高い部屋での使用は工夫が必要です。"
+    },
+    "maintenance": {
+      "score": 92,
+      "reviewCount": 10,
+      "positiveReviewCount": 9,
+      "comment": "モップの自動洗浄・乾燥やゴミの自動収集機能により、日々の手間は給排水のみと大幅に削減されます。ただし、汚水タンクは数日で臭いが発生するため、こまめな清掃が推奨されます。"
+    },
+    "appStability": {
+      "score": 95,
+      "reviewCount": 12,
+      "positiveReviewCount": 11,
+      "comment": "専用アプリは「設定が簡単」「洗練されている」と高評価です。マッピング精度も高く、部屋ごとの清掃設定や遠隔操作も直感的に行えます。アプリに関する不満はほとんど見られませんでした。"
+    },
+    "batteryLife": {
+      "score": 85,
+      "reviewCount": 2,
+      "positiveReviewCount": 2,
+      "comment": "バッテリーに関する言及は少ないものの、途中で充電切れになるなどのネガティブな意見は見られません。一般的な住環境であれば、一度の充電で十分に清掃を完了できる性能を持っていると推測されます。"
+    }
+  },
+  "radarChartData": {
+    "labels": [
+      "フローリング",
+      "カーペット",
+      "ペット毛",
+      "静音性",
+      "段差",
+      "メンテ",
+      "アプリ",
+      "電池"
+    ],
+    "values": [
+      95,
+      85,
+      90,
+      80,
+      70,
+      92,
+      95,
+      85
+    ]
+  },
+  "dataQuality": {
+    "totalReviews": 32,
+    "sampledReviews": 32,
+    "adoptedReviews": 32,
+    "excludedReviews": 0,
+    "trustScore": 59.5,
+    "comment": "Amazonに投稿された32件の口コミを全て分析。レビュー総数は多くないものの、具体的な使用感に関する詳細な記述が多く、製品の長所と短所を把握する上で質の高いデータとなっています。"
+  },
+  "reviewKeywords": {
+    "positive": [
+      {
+        "keyword": "水拭き・拭き掃除が良い",
+        "count": 16
+      },
+      {
+        "keyword": "満足・買ってよかった",
+        "count": 11
+      },
+      {
+        "keyword": "使いやすい・便利",
+        "count": 7
+      },
+      {
+        "keyword": "床がサラサラ・ピカピカ",
+        "count": 5
+      },
+      {
+        "keyword": "マッピング・ルートが賢い",
+        "count": 5
+      },
+      {
+        "keyword": "静かで快適",
+        "count": 4
+      },
+      {
+        "keyword": "吸引力が高い",
+        "count": 3
+      },
+      {
+        "keyword": "家事が楽になった",
+        "count": 2
+      }
+    ],
+    "negative": [
+      {
+        "keyword": "故障・不具合",
+        "count": 4
+      },
+      {
+        "keyword": "動作音が気になる",
+        "count": 2
+      },
+      {
+        "keyword": "価格・コストが高い",
+        "count": 1
+      },
+      {
+        "keyword": "止まってしまう",
+        "count": 1
+      },
+      {
+        "keyword": "段差・家具で引っかかる",
+        "count": 1
+      },
+      {
+        "keyword": "期待外れ・不満",
+        "count": 1
+      },
+      {
+        "keyword": "コードを巻き込む",
+        "count": 1
+      }
+    ]
+  },
+  "successStrategies": [
+    {
+      "rank": 1,
+      "issue": "壁際や隅の拭き残し",
+      "occurrenceRate": 13,
+      "occurrenceCount": 4,
+      "environmentalFactor": "部屋の角、家具の脚周り",
+      "technicalDescription": "本体の構造上、回転モップが壁や障害物から数cm離れてしまうため、物理的に拭き掃除が届かない範囲が発生します。これはモップが外側に拡張しないモデルの共通の課題です。",
+      "avoidanceStrategies": [
+        {
+          "method": "アプリで「壁際を重点的に」設定",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalRationale": "Roborockアプリには壁際の清掃を強化するモードがあります。吸引掃除で隅のゴミを掻き出す効果はありますが、拭き残し範囲を完全に解消するものではありません。"
+        },
+        {
+          "method": "定期的なハンディモップでの補完",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "ロボットが掃除できない範囲を、週に一度など定期的に手動で補うのが最も確実な対策です。日常の大部分は自動化し、気になる箇所のみを人間が補う運用が現実的です。"
+        }
+      ],
+      "preventionTips": "家具の配置を工夫し、ロボットが脚周りを広く周回できるスペースを確保すると、清掃範囲が広がります。また、壁際のホコリは吸引で大部分カバーできるため、過度な期待は禁物です。"
+    },
+    {
+      "rank": 2,
+      "issue": "敷居や段差でのスタック・乗り越え失敗",
+      "occurrenceRate": 6,
+      "occurrenceCount": 2,
+      "environmentalFactor": "高さ2cm前後の敷居、マットの端",
+      "technicalDescription": "公称値2cmの段差走破性を持ちますが、進入角度や速度、段差の形状によってはタイヤが空転し乗り越えに失敗します。特に後退しながら段差を越える際に発生しやすい傾向があります。",
+      "avoidanceStrategies": [
+        {
+          "method": "ロボット掃除機用のスロープを設置",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "市販の段差解消スロープを設置することで、物理的に段差を緩やかにし、スムーズな乗り越えを補助します。これが最も確実で効果的な解決策です。"
+        },
+        {
+          "method": "アプリで進入禁止エリアに設定",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "どうしても乗り越えられない段差は、アプリのマップ編集機能で「進入禁止エリア」または「仮想壁」を設定し、スタックを未然に防ぎます。そのエリアは別途清掃が必要です。"
+        }
+      ],
+      "preventionTips": "マッピング時に段差で失敗するとマップが不安定になることがあります。初回マッピング時はドアを閉めるなどして、段差のないエリアから確実にマップを作成するのがおすすめです。"
+    }
+  ],
+  "topComplaints": [
+    {
+      "title": "壁際・隅の拭き残し",
+      "percentage": 13,
+      "reviewCount": 4,
+      "description": "本体の構造上、回転モップが壁から5-10cm程度届かず、部屋の隅や家具の脚周りに拭き残しが発生します。これは吸引ではなく、特に水拭き機能において指摘される問題点です。",
+      "solution": "これは製品の仕様上の限界です。アプリの壁際清掃モードで吸引を強化しつつ、気になる箇所は定期的に手動で拭き掃除を行うハイブリッドな運用が現実的な解決策となります。"
+    },
+    {
+      "title": "購入初期の故障・不具合",
+      "percentage": 13,
+      "reviewCount": 4,
+      "description": "「購入1週間でエラーが頻発」「1ヶ月でモップ機能が故障した」など、購入初期の不具合報告が複数見られます。カスタマーサポートの対応が平日のみという点も不満として挙げられています。",
+      "solution": "初期不良が疑われる場合は、購入日から15日以内であれば新品交換の対象となる可能性があります。まずは保証書を用意し、速やかに公式サイトのカスタマーサポートへ連絡することが重要です。"
+    },
+    {
+      "title": "段差の乗り越え性能が低い",
+      "percentage": 6,
+      "reviewCount": 2,
+      "description": "仕様上は2cmの段差まで対応可能ですが、実際には敷居などで苦戦し、タイヤが空転したりスタックしたりするとの報告があります。特に後退しながら段差を越えるのが苦手なようです。",
+      "solution": "最も確実な対策は、市販のロボット掃除機用スロープを設置することです。または、アプリで段差の手前を進入禁止エリアに設定し、スタックを回避する方法も有効です。"
+    }
+  ],
+  "attributeScores": {
+    "petOwner": {
+      "overall": 91.9,
+      "details": [
+        {
+          "field": "ペットの毛除去",
+          "score": 90,
+          "reviewCount": 10,
+          "comment": "犬や猫の抜け毛に対する吸引力は高く評価されています。特殊なサイドブラシが毛の絡まりを防ぎ、ペットのいる家庭の大きな助けになります。"
+        },
+        {
+          "field": "床掃除（水拭き）",
+          "score": 95,
+          "reviewCount": 25,
+          "comment": "ペットの足跡やよだれの跡なども、強力な水拭き機能で綺麗になります。ペット用品周りを重点的に掃除する設定も便利で、衛生的な環境を保てます。"
+        },
+        {
+          "field": "メンテナンス性",
+          "score": 92,
+          "reviewCount": 10,
+          "comment": "全自動ドックのおかげで、毛が絡まりやすいブラシの手入れやゴミ捨ての手間が大幅に削減。忙しい飼い主でも手軽に清潔を維持できます。"
+        }
+      ]
+    },
+    "apartment": {
+      "overall": 82.5,
+      "details": [
+        {
+          "field": "静音性",
+          "score": 80,
+          "reviewCount": 7,
+          "comment": "走行中の音は比較的静かで、集合住宅でも時間帯を気にせず使いやすいと好評です。ただし、ゴミ収集時の音は大きいため、深夜早朝の利用は避けた方が無難です。"
+        },
+        {
+          "field": "床掃除（水拭き）",
+          "score": 95,
+          "reviewCount": 25,
+          "comment": "フローリングの床をサラサラに仕上げる水拭き性能は、マンションの生活空間を快適に保ちます。素足で過ごすことが多い方には特に満足度が高いでしょう。"
+        },
+        {
+          "field": "段差乗り越え",
+          "score": 70,
+          "reviewCount": 9,
+          "comment": "部屋間の敷居には注意が必要です。段差で止まってしまう可能性があるため、購入前に自宅の敷居の高さを確認し、必要であればスロープの設置を検討しましょう。"
+        }
+      ]
+    },
+    "workingProfessional": {
+      "overall": 91.8,
+      "details": [
+        {
+          "field": "アプリの安定性",
+          "score": 95,
+          "reviewCount": 12,
+          "comment": "外出先からでも遠隔操作できる安定したアプリは、多忙なプロフェッショナルに最適です。帰宅時間に合わせて掃除を完了させるなど、スマートな活用が可能です。"
+        },
+        {
+          "field": "メンテナンス性",
+          "score": 92,
+          "reviewCount": 10,
+          "comment": "給排水とゴミパック交換以外はほぼ自動化されており、メンテナンスに時間を取られません。「家事を家電に任せる」という思想を高いレベルで実現しています。"
+        },
+        {
+          "field": "バッテリー性能",
+          "score": 85,
+          "reviewCount": 2,
+          "comment": "バッテリーに関する不満はなく、一度の充電で広範囲を掃除できます。清掃途中で充電のために中断されるストレスが少ないため、効率的に時間を活用できます。"
+        }
+      ]
+    },
+    "familyHome": {
+      "overall": 89,
+      "details": [
+        {
+          "field": "床掃除（水拭き）",
+          "score": 95,
+          "reviewCount": 25,
+          "comment": "子供の食べこぼしや足跡など、汚れやすいファミリー世帯の床を常に清潔に保ちます。強力な水拭き機能は、衛生面を重視する家庭にとって大きなメリットです。"
+        },
+        {
+          "field": "カーペット掃除",
+          "score": 85,
+          "reviewCount": 8,
+          "comment": "リビングのカーペットとフローリングが混在する環境でも、モップ自動リフト機能でスムーズに掃除します。ただし毛足の長いラグは濡れる可能性があるので注意が必要です。"
+        },
+        {
+          "field": "バッテリー性能",
+          "score": 85,
+          "reviewCount": 2,
+          "comment": "広い戸建てでも、途中で充電に戻ることなく効率的に掃除を進めることができます。家全体の清潔を一台で維持できるだけのスタミナを持っています。"
+        }
+      ]
+    }
+  },
+  "resaleValue": null,
+  "affiliate": {
+    "moshimo": "<!-- START MoshimoAffiliateEasyLink -->\r\n<script type=\"text/javascript\">\r\n(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;\r\nb[a]=b[a]||function(){arguments.currentScript=c.currentScript\r\n||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};\r\nc.getElementById(a)||(d=c.createElement(f),d.src=g,\r\nd.id=a,e=c.getElementsByTagName(\"body\")[0],e.appendChild(d))})\r\n(window,document,\"script\",\"//dn.msmstatic.com/site/cardlink/bundle.js?20220329\",\"msmaflink\");\r\nmsmaflink({\"n\":\"roborock (ロボロック) Qrevo L Pro ロボット掃除機 水拭き両用 モップ温水洗浄 全自動お掃除ロボット【26年モデル・初心者向け】 | 自動ゴミ収集 温風乾燥 18500Pa強力吸引 毛絡み防止ブラシ 障害物回避 クイックマッピング 高速回転モップ カーペット自動検知 モップリフトアップ 0段階水量調節 Matter対応 プライバシー保護 メンテナンス簡単 アプリ操作\",\"b\":\"roborock\",\"t\":\"\",\"d\":\"https:\\/\\/m.media-amazon.com\",\"c_p\":\"\\/images\\/I\",\"p\":[\"\\/3196WRRWVZL._SL500_.jpg\",\"\\/31EOu7OEBoL._SL500_.jpg\",\"\\/41Lux5DjUjL._SL500_.jpg\",\"\\/41AOeM0bwtL._SL500_.jpg\",\"\\/41rAdudeZIL._SL500_.jpg\",\"\\/41G9VTPsHmL._SL500_.jpg\",\"\\/51bJgIlkSsL._SL500_.jpg\",\"\\/415UScRk6-L._SL500_.jpg\"],\"u\":{\"u\":\"https:\\/\\/www.amazon.co.jp\\/dp\\/B0GXB5HWWD\",\"t\":\"amazon\",\"r_v\":\"\"},\"v\":\"2.1\",\"b_l\":[{\"id\":1,\"u_tx\":\"楽天市場で見る\",\"u_bc\":\"#f76956\",\"u_url\":\"https:\\/\\/search.rakuten.co.jp\\/search\\/mall\\/roborock%20(%E3%83%AD%E3%83%9C%E3%83%AD%E3%83%83%E3%82%AF)%20Qrevo%20L%20Pro%20%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%20%E6%B0%B4%E6%8B%AD%E3%81%8D%E4%B8%A1%E7%94%A8%20%E3%83%A2%E3%83%83%E3%83%97%E6%B8%A9%E6%B0%B4%E6%B4%97%E6%B5%84%20%E5%85%A8%E8%87%AA%E5%8B%95%E3%81%8A%E6%8E%83%E9%99%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E3%80%9026%E5%B9%B4%E3%83%A2%E3%83%87%E3%83%AB%E3%83%BB%E5%88%9D%E5%BF%83%E8%80%85%E5%90%91%E3%81%91%E3%80%91%20%7C%20%E8%87%AA%E5%8B%95%E3%82%B4%E3%83%9F%E5%8F%8E%E9%9B%86%20%E6%B8%A9%E9%A2%A8%E4%B9%BE%E7%87%A5%2018500Pa%E5%BC%B7%E5%8A%9B%E5%90%B8%E5%BC%95%20%E6%AF%9B%E7%B5%A1%E3%81%BF%E9%98%B2%E6%AD%A2%E3%83%96%E3%83%A9%E3%82%B7%20%E9%9A%9C%E5%AE%B3%E7%89%A9%E5%9B%9E%E9%81%BF%20%E3%82%AF%E3%82%A4%E3%83%83%E3%82%AF%E3%83%9E%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0%20%E9%AB%98%E9%80%9F%E5%9B%9E%E8%BB%A2%E3%83%A2%E3%83%83%E3%83%97%20%E3%82%AB%E3%83%BC%E3%83%9A%E3%83%83%E3%83%88%E8%87%AA%E5%8B%95%E6%A4%9C%E7%9F%A5%20%E3%83%A2%E3%83%83%E3%83%97%E3%83%AA%E3%83%95%E3%83%88%E3%82%A2%E3%83%83%E3%83%97%200%E6%AE%B5%E9%9A%8E%E6%B0%B4%E9%87%8F%E8%AA%BF%E7%AF%80%20Matter%E5%AF%BE%E5%BF%9C%20%E3%83%97%E3%83%A9%E3%82%A4%E3%83%90%E3%82%B7%E3%83%BC%E4%BF%9D%E8%AD%B7%20%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9%E7%B0%A1%E5%8D%98%20%E3%82%A2%E3%83%97%E3%83%AA%E6%93%8D%E4%BD%9C\\/\",\"a_id\":5483003,\"p_id\":54,\"pl_id\":27059,\"pc_id\":54,\"s_n\":\"rakuten\",\"u_so\":1},{\"id\":2,\"u_tx\":\"Yahoo!ショッピングで見る\",\"u_bc\":\"#66a7ff\",\"u_url\":\"https:\\/\\/shopping.yahoo.co.jp\\/search?first=1\\u0026p=roborock%20(%E3%83%AD%E3%83%9C%E3%83%AD%E3%83%83%E3%82%AF)%20Qrevo%20L%20Pro%20%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%20%E6%B0%B4%E6%8B%AD%E3%81%8D%E4%B8%A1%E7%94%A8%20%E3%83%A2%E3%83%83%E3%83%97%E6%B8%A9%E6%B0%B4%E6%B4%97%E6%B5%84%20%E5%85%A8%E8%87%AA%E5%8B%95%E3%81%8A%E6%8E%83%E9%99%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E3%80%9026%E5%B9%B4%E3%83%A2%E3%83%87%E3%83%AB%E3%83%BB%E5%88%9D%E5%BF%83%E8%80%85%E5%90%91%E3%81%91%E3%80%91%20%7C%20%E8%87%AA%E5%8B%95%E3%82%B4%E3%83%9F%E5%8F%8E%E9%9B%86%20%E6%B8%A9%E9%A2%A8%E4%B9%BE%E7%87%A5%2018500Pa%E5%BC%B7%E5%8A%9B%E5%90%B8%E5%BC%95%20%E6%AF%9B%E7%B5%A1%E3%81%BF%E9%98%B2%E6%AD%A2%E3%83%96%E3%83%A9%E3%82%B7%20%E9%9A%9C%E5%AE%B3%E7%89%A9%E5%9B%9E%E9%81%BF%20%E3%82%AF%E3%82%A4%E3%83%83%E3%82%AF%E3%83%9E%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0%20%E9%AB%98%E9%80%9F%E5%9B%9E%E8%BB%A2%E3%83%A2%E3%83%83%E3%83%97%20%E3%82%AB%E3%83%BC%E3%83%9A%E3%83%83%E3%83%88%E8%87%AA%E5%8B%95%E6%A4%9C%E7%9F%A5%20%E3%83%A2%E3%83%83%E3%83%97%E3%83%AA%E3%83%95%E3%83%88%E3%82%A2%E3%83%83%E3%83%97%200%E6%AE%B5%E9%9A%8E%E6%B0%B4%E9%87%8F%E8%AA%BF%E7%AF%80%20Matter%E5%AF%BE%E5%BF%9C%20%E3%83%97%E3%83%A9%E3%82%A4%E3%83%90%E3%82%B7%E3%83%BC%E4%BF%9D%E8%AD%B7%20%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9%E7%B0%A1%E5%8D%98%20%E3%82%A2%E3%83%97%E3%83%AA%E6%93%8D%E4%BD%9C\",\"a_id\":5483010,\"p_id\":1225,\"pl_id\":27061,\"pc_id\":1925,\"s_n\":\"yahoo\",\"u_so\":2},{\"id\":3,\"u_tx\":\"Amazonで見る\",\"u_bc\":\"#ffcf0f\",\"u_url\":\"https:\\/\\/www.amazon.co.jp\\/dp\\/B0GXB5HWWD\",\"a_id\":5483011,\"p_id\":170,\"pl_id\":27060,\"pc_id\":185,\"s_n\":\"amazon\",\"u_so\":3}],\"eid\":\"UmV0k\",\"s\":\"l\"});\r\n</script>\r\n<div id=\"msmaflink-UmV0k\">リンク</div>\r\n<!-- MoshimoAffiliateEasyLink END -->",
+    "direct": "",
+    "hpPublish": true
+  },
+  "priceSource": "official",
+  "priceCheckedAt": "2026-11-03"
+}

@@ -1860,6 +1860,8 @@ async function renderSpecs(productId) {
 const PRICE_SOURCE_LABELS = {
     official: 'メーカー公式オンラインストア',
     amazon: 'メーカー公式Amazonストア',
+    shop: '購入リンク先のショップ',
+    'amazon-used': 'Amazonの中古品',
 };
 
 function updatePriceNote(data) {

@@ -2,6 +2,55 @@
   "maker": "Dreame",
   "checkedAt": "2026-10-03",
   "products": {
+    "aqua10-ultra-roller": {
+      "dimensionsMm": {
+        "w": 350,
+        "d": 350,
+        "h": 98
+      },
+      "weightKg": 5.8,
+      "climbHeightMm": 80,
+      "obstacleAvoidance": "AIカメラ2基＋3D構造光＋LEDライト（240種以上認識）",
+      "recognizesPetWaste": null,
+      "liftLidar": true,
+      "stationDimensionsMm": {
+        "w": 420,
+        "d": 440,
+        "h": 505
+      },
+      "sources": [
+        {
+          "label": "Dreame Japan公式 Aqua10 Ultra Roller 製品ページ（製品仕様）",
+          "url": "https://www.dreametech.jp/products/aqua10-ultra-roller-black"
+        }
+      ],
+      "note": "公式仕様「本体サイズ 約35×35×9.8cm (Retracted LDS)／約35×35×12cm (Lifted LDS)」のため高さはVersaLift LDS格納時の98mmを採用（伸張時120mm）。段差は公式仕様「約8.0cm (二段) 約4.2cm (単段)」（8cm ProLeap、下段上面の幅が約8cmを超える場合の二層段差）。ナビは昇降式「VersaLift LDS」。ペット関連機能（ペット探索・ペット専用ゾーン）の記載はあるが、排泄物の認識は日本公式に明記なしのため null。ステーション公式表記「約42×44×50.5cm」の表記順、重量約11.1kg。",
+      "climbTwoStep": true
+    },
+    "aqua10s-roller-ae": {
+      "dimensionsMm": {
+        "w": 350,
+        "d": 350,
+        "h": 113
+      },
+      "weightKg": 5.1,
+      "climbHeightMm": 20,
+      "obstacleAvoidance": "3D構造化ライト（3DAdapt／LDS＋シングルレーザー）",
+      "recognizesPetWaste": false,
+      "liftLidar": false,
+      "stationDimensionsMm": {
+        "w": 420,
+        "d": 440,
+        "h": 505
+      },
+      "sources": [
+        {
+          "label": "Dreame Japan公式 Aqua10s Roller AE 製品ページ（仕様）",
+          "url": "https://www.dreametech.jp/products/aqua10s-roller-ae"
+        }
+      ],
+      "note": "公式仕様「350 x 350 x 113mm」「通過可能な障害物の高さ 2cm」。障害物回避は公式仕様「LDS + シングルレーザー 3D 構造化ライト」（本文は3DAdapt）でAIカメラの記載なし、ペット排泄物認識の記載なし。ステーション公式表記「420 x 440 x 505mm」の表記順、重量10.4kg。"
+    },
     "d10-plus": {
       "dimensionsMm": {
         "w": 349,
@@ -33,6 +82,54 @@
         }
       ],
       "note": "本体重量は公式サイト・代理店・価格.com・公式取扱説明書のいずれにも記載がなく未確認（海外小売の4.3kg表記は採用せず）。段差20mmはCFD販売の仕様「段差対応高さ制限 20 mm」。衝突防止は「LDS+メカニカルバンパー」でAIカメラ非搭載。ステーション寸法は公式表記「303 × 403 × 399mm」（CFDは399.2mm）の順に格納、幅/奥行の割当は表記順のまま。"
+    },
+    "d20-pro": {
+      "dimensionsMm": {
+        "w": 350,
+        "d": 350,
+        "h": 96.9
+      },
+      "weightKg": 3.5,
+      "climbHeightMm": 20,
+      "obstacleAvoidance": "シングルレーザー3D構造化ライト",
+      "recognizesPetWaste": false,
+      "liftLidar": false,
+      "stationDimensionsMm": {
+        "w": 130,
+        "d": 126,
+        "h": 93
+      },
+      "sources": [
+        {
+          "label": "Dreame Japan公式 D20 Pro 製品ページ（仕様）",
+          "url": "https://www.dreametech.jp/products/d20-pro"
+        }
+      ],
+      "note": "公式仕様「350 x 350 x 96.9mm」「段差乗り越え 20mm」。障害物回避は公式仕様「シングルレーザー 3D 構造化ライト」でAIカメラ非搭載、ペット排泄物認識の記載なし。ゴミ収集ステーションなし（充電ベースのみ）。stationDimensionsMm は公式「充電ベース寸法 130 x 126 x 93mm」の表記順（重量0.4kg）。"
+    },
+    "d20-pro-plus": {
+      "dimensionsMm": {
+        "w": 350,
+        "d": 350,
+        "h": 96.9
+      },
+      "weightKg": 3.5,
+      "climbHeightMm": 20,
+      "obstacleAvoidance": "シングルレーザー3D構造化ライト",
+      "recognizesPetWaste": false,
+      "liftLidar": false,
+      "stationDimensionsMm": {
+        "w": 440,
+        "d": 298,
+        "h": 452
+      },
+      "sources": [
+        {
+          "label": "Dreame Japan公式 D20 Pro Plus 製品ページ（仕様）",
+          "url": "https://www.dreametech.jp/products/d20-pro-plus"
+        }
+      ],
+      "note": "公式仕様「350 x 350 x 96.9mm」「段差乗り越え 20mm」。障害物回避は公式仕様「シングルレーザー 3D 構造化ライト」でAIカメラ非搭載、ペット排泄物認識の記載なし。自動ゴミ収集ステーション（ダストバッグ5L、モップ洗浄なし）。ステーション公式表記「440 x 298 x 452 mm」の表記順（幅/奥行の割当は未確認）、重量4.0kg。"
     },
     "d20-ultra": {
       "dimensionsMm": {
@@ -281,6 +378,30 @@
         }
       ],
       "note": "障害物回避は公式仕様「インテリジェント RGB + 3D 構造化光方式」。ペット（人・ペット本体）の検知・回避や餌皿/トイレ周り清掃の記載はあるが、排泄物の認識は明記なしのため null。ステーション公式表記「457 x 340 x 590mm」（価格.comは450幅×340奥行と表記揺れ）。"
+    },
+    "l40-ultra-ce": {
+      "dimensionsMm": {
+        "w": 350,
+        "d": 350,
+        "h": 104
+      },
+      "weightKg": 3.9,
+      "climbHeightMm": null,
+      "obstacleAvoidance": "3D構造化ライト（3DAdapt）",
+      "recognizesPetWaste": false,
+      "liftLidar": false,
+      "stationDimensionsMm": {
+        "w": 340,
+        "d": 457,
+        "h": 590
+      },
+      "sources": [
+        {
+          "label": "Dreame Japan公式 L40 Ultra CE 製品ページ（仕様）",
+          "url": "https://www.dreametech.jp/products/dreame-l40ultra-ce-ロボット掃除機"
+        }
+      ],
+      "note": "公式仕様「350 x 350 x 104 mm」「3.9 kg」。段差乗り越え高さは日本公式ページに数値記載がなく未確認（海外Dreameブログの約22mmは別機種L40s Ultra CEの値のため採用せず）。障害物回避は3DAdapt（Smart Pathfinder レーザーナビ）でAIカメラの記載なし、ペット排泄物認識の記載なし。ステーション公式表記「340 x 457 x 590 mm」、重量8.3kg。寸法・重量・ステーション仕様はD20 Ultraと同値。"
     },
     "l40s-pro-ultra": {
       "dimensionsMm": {

@@ -137,6 +137,7 @@ def load_products() -> list[dict]:
             r["apartment"] = _num((attrs.get("apartment") or {}).get("overall"))
             r["cat_quotes"] = cat_sentences(raw)
             r["price_checked"] = raw.get("priceCheckedAt") or ""
+            r["price_used"] = raw.get("priceSource") == "amazon-used"
             r["floor_comment_full"] = ((perf.get("floorCleaning") or {}).get("comment") or "")
             d = dims.get(r["id"]) or {}
             size = d.get("dimensionsMm") or {}
@@ -181,6 +182,11 @@ def mean(vals) -> float | None:
 
 def yen(n: int) -> str:
     return f"¥{int(n):,}"
+
+
+def yen_note(r: dict) -> str:
+    """価格を書く。中古品の価格なら「中古品で」を前に付ける（新品の出品がない機種）。"""
+    return ("中古品で" if r.get("price_used") else "") + yen(r["price"])
 
 
 PENDING = "確認中"
@@ -1810,7 +1816,7 @@ def build_cheap(rows: list[dict]) -> dict:
     sec_market = [
         P(
             f"当サイトに掲載しているロボット掃除機のうち、**5万円以下で買えるのは{len(cheap)}機種**です。"
-            f"最も安い機種は{yen(cheap[0]['price'])}（{cheap[0]['name']}）でした。"
+            f"最も安い機種は{yen_note(cheap[0])}（{cheap[0]['name']}）でした。"
         ),
         P(
             "5万円を超える機種と比べて、口コミの点数がどこで下がりやすいかを性能ごとに並べると、次のようになります。"
@@ -1862,7 +1868,7 @@ def build_cheap(rows: list[dict]) -> dict:
     table = data_table(
         [
             ("製品", product_cell),
-            ("価格", lambda r: f"<strong>{yen(r['price'])}</strong>"),
+            ("価格", lambda r: f"<strong>{yen(r['price'])}</strong>" + ("<br><small>中古品の価格</small>" if r.get("price_used") else "")),
             ("総合点", lambda r: sc_cell(r["overall"], 1)),
             ("口コミ信頼度", lambda r: sc_cell(r["rel"], 1)),
             ("口コミ数", lambda r: f"{r['reviews']:,}件"),
@@ -1880,11 +1886,16 @@ def build_cheap(rows: list[dict]) -> dict:
         [(f"{i}位", r, f"総合点{r['overall']:.1f}点・口コミ{r['reviews']}件・信頼度{r['rel']:.1f}。", f"pick-{i}") for i, r in enumerate(picks[:3], 1)],
     )
 
+    under_20k = [r for r in cheap if r["price"] < 20000]
     faqs = [
         (
             "1万円台のロボット掃除機はどうですか？",
-            f"当サイトの分析対象で最も安いのは{yen(cheap[0]['price'])}の{plink(cheap[0])}で、**1万円台の機種は分析していません**。"
-            "価格だけで選ぶと、口コミが少なく評価が安定しない機種に当たることもあるため、**口コミの件数もあわせて確認する**のがおすすめです。",
+            (
+                "当サイトで分析している2万円未満の機種は" + join_ja([f"{plink(r)}（{yen_note(r)}・口コミ{r['reviews']}件）" for r in under_20k]) + "です。"
+                if under_20k
+                else f"当サイトの分析対象で最も安いのは{yen(cheap[0]['price'])}の{plink(cheap[0])}で、**1万円台の機種は分析していません**。"
+            )
+            + "価格だけで選ぶと、口コミが少なく評価が安定しない機種に当たることもあるため、**口コミの件数もあわせて確認する**のがおすすめです。",
         ),
         (
             "安いロボット掃除機でも水拭きはできますか？",

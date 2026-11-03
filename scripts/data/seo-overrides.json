@@ -21,6 +21,8 @@
   "roomba-max-705-combo-autowash": { "label": "ルンバ Max 705 コンボ" },
   "roomba-max-705-vac-autoempty": { "label": "ルンバ Max 705 Vac" },
   "roomba-plus-575-combo-autowash": { "label": "ルンバ 575 コンボ" },
+  "roomba-plus-515-combo-autowash": { "label": "ルンバ 515 コンボ" },
+  "roomba-max-monster-875": { "label": "ルンバ Max Monster 875" },
 
   "eufy-x10-pro-omni": { "label": "Eufy X10 Pro Omni" },
   "eufy-robot-vacuum-auto-empty-c10": { "label": "Eufy C10（Auto-Empty）" },
@@ -35,6 +37,13 @@
   "q10v-plus": { "label": "Roborock Q10V+" },
   "qrevo-curv-2-flow": { "label": "Roborock Qrevo Curv 2 Flow" },
   "qrevo-l": { "label": "Roborock Qrevo L" },
+  "qrevo-l-pro": { "label": "Roborock Qrevo L Pro" },
+  "qrevo-edge-2": { "label": "Roborock Qrevo Edge 2" },
+  "q7b-plus": { "label": "Roborock Q7B+" },
+  "e5": { "label": "Roborock E5" },
+  "q7t-plus": { "label": "Roborock Q7T+" },
+  "q7-max": { "label": "Roborock Q7 Max" },
+  "qrevo-c": { "label": "Roborock Qrevo C" },
   "saros-10r": { "label": "Roborock Saros 10R" },
   "saros-20": { "label": "Roborock Saros 20" },
 
@@ -55,5 +64,10 @@
   "l40-ultra-ae": { "label": "Dreame L40 Ultra AE" },
   "l40s-pro-ultra": { "label": "Dreame L40s Pro Ultra" },
   "x30-ultra": { "label": "Dreame X30 Ultra" },
-  "x50-ultra": { "label": "Dreame X50 Ultra" }
+  "x50-ultra": { "label": "Dreame X50 Ultra" },
+  "d20-pro": { "label": "Dreame D20 Pro" },
+  "d20-pro-plus": { "label": "Dreame D20 Pro Plus" },
+  "l40-ultra-ce": { "label": "Dreame L40 Ultra CE" },
+  "aqua10s-roller-ae": { "label": "Dreame Aqua10s Roller AE" },
+  "aqua10-ultra-roller": { "label": "Dreame Aqua10 Ultra Roller" }
 }

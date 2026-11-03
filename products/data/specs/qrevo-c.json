@@ -1,0 +1,54 @@
+{
+  "productId": "qrevo-c",
+  "modelNumber": "QRRC52-04",
+  "checkedAt": "2026-11-03",
+  "sources": [
+    { "label": "Roborock公式 製品ページ", "url": "https://jp.roborock.com/pages/roborock-qrevo-c" },
+    { "label": "Roborock公式 プレスリリース（Qrevo C / Q7T+ / Q7T・2025年5月27日）", "url": "https://resemom.jp/release/prtimes/20250527/145774.html" },
+    { "label": "価格.com スペック（型番・質量・集じん容積・運転時間）", "url": "https://kakaku.com/item/K0001691577/spec/" }
+  ],
+  "basic": {
+    "dimensionsMm": { "w": 350, "d": 353.8, "h": 96.6 },
+    "weightKg": 3.91,
+    "runtimeMin": 180,
+    "chargeTimeMin": null,
+    "batteryMah": null,
+    "releaseDate": "2025-06",
+    "warrantyMonths": null
+  },
+  "cleaning": {
+    "suctionPa": 12000,
+    "dustboxMl": 325,
+    "waterTankMl": null,
+    "mappingType": null,
+    "obstacleAvoidance": "ストラクチャードライト（幅5cm・高さ3cm以上）",
+    "climbHeightMm": null,
+    "climbNote": null,
+    "noiseDb": null
+  },
+  "mop": {
+    "type": "デュアル回転モップ（最大200回転/分・水量30段階・壁際で伸びるモップ）",
+    "liftMm": 10,
+    "autoDetach": false
+  },
+  "station": {
+    "autoEmpty": true,
+    "mopWash": true,
+    "hotWaterWash": false,
+    "hotWaterNote": null,
+    "hotAirDry": true,
+    "autoRefillDrain": false,
+    "detergentDispenser": false,
+    "dustBagMl": 2700,
+    "cleanTankMl": null,
+    "dirtyTankMl": null,
+    "dimensionsMm": { "w": 340, "d": 486.5, "h": 521.6 },
+    "weightKg": null
+  },
+  "smart": {
+    "app": "Roborock",
+    "wifi": null,
+    "voiceAssistants": ["Alexa", "Googleアシスタント", "Siri"],
+    "matter": null
+  }
+}

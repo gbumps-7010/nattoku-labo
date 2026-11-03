@@ -154,6 +154,36 @@
       ],
       "note": "本体353×351×95mm・ステーション338×460×500mm（公式リリース）、埋め込み式レーダーで高さ95mm（昇降式ではない）。段差はTruePassアダプティブ4WDで単段最大24mm、連続段差最大40mm（公式）。本体重量はT90 OMNI単体の記載なし（上位T90 PRO OMNIは価格.comで5.3kg）。公式本文「コード類やペット用品など…一定の距離を保って回避」とあるがペット排泄物の明記なし。"
     },
+    "deebot-t90-max-omni": {
+      "dimensionsMm": { "w": 353, "d": 351, "h": 95 },
+      "weightKg": null,
+      "climbHeightMm": 20,
+      "obstacleAvoidance": "TrueDetect 3D（構造化光）＋完全内蔵型dToF LiDAR",
+      "recognizesPetWaste": null,
+      "liftLidar": false,
+      "stationDimensionsMm": { "w": 338, "d": 459, "h": 470 },
+      "sources": [
+        { "label": "ECOVACS Japan公式 DEEBOT T90 MAX OMNI（ホワイト）製品ページ", "url": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/deebot-t90-max-omni-white" },
+        { "label": "PR TIMES エコバックスジャパン DEEBOT X12S PRO OMNI / T90 MAX Family 発売リリース", "url": "https://prtimes.jp/main/html/rd/p/000000171.000017926.html" },
+        { "label": "ECOVACS 公式 DEEBOT T90 MAX OMNI 取扱説明書（JP）", "url": "https://site-static.ecovacs.com/upload/file/support/2026/10/12/072614_9206$DEEBOTT90MAXOMNIInstructionManualJP.pdf" }
+      ],
+      "note": "公式「サイズ（WxDxH) 353*351*95」、完全内蔵型dToF LiDARで高さ95mm（昇降式ではない）。ステーション338×459×470mm（公式リリース。製品ページは「高さ47cm」のみ）。段差は公式「最大20mmの段差」（機械式乗り越え、連続段差の記載なし）。本体・ステーション重量は公式記載なし。障害物回避はTrueDetect 3D（最小2cmの障害物を検知）でAIカメラの記載なし、ペット排泄物の認識記載なし。型番ZJ2633は取扱説明書記載。"
+    },
+    "deebot-t90-pro-omni": {
+      "dimensionsMm": { "w": 353, "d": 351, "h": 95 },
+      "weightKg": null,
+      "climbHeightMm": 24,
+      "obstacleAvoidance": "AIVI 3D 4.0 Omni-Approach（AI・VLM＋前方構造光）",
+      "recognizesPetWaste": null,
+      "liftLidar": false,
+      "stationDimensionsMm": { "w": 338, "d": 460, "h": 500 },
+      "sources": [
+        { "label": "ECOVACS Japan公式 DEEBOT T90 PRO OMNI と消耗品セット 製品ページ", "url": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/bundle-deebot-t90-pro-omni" },
+        { "label": "PR TIMES エコバックスジャパン DEEBOT T90 ファミリー発売リリース", "url": "https://prtimes.jp/main/html/rd/p/000000154.000017926.html" },
+        { "label": "ECOVACS 公式 DEEBOT T90 PRO OMNI 取扱説明書（JP）", "url": "https://site-static.ecovacs.com/upload/file/support/2026/02/26/083526_4079$T90PROOMNIInstructionManual-JP.pdf" }
+      ],
+      "note": "本体353×351×95mm・ステーション338×460×500mm（公式リリース）、埋め込み式レーダーで高さ95mm（昇降式ではない）。段差はTruePassアダプティブ4WDで単段最大2.4cm、連続段差最大4cm（公式）。本体・ステーション重量は公式記載なし（既存T90 OMNIのnoteにある価格.com 5.3kgは未確認のため未採用）。水タンクは製品ページ「4L上水/2.2L下水」だが公式リリースは「真水3.2L／汚水2.7L」と食い違いあり。洗浄液自動投入あり（PRO専用）。公式本文はペット用品の回避・ペット回避に触れるがペット排泄物の明記なし。型番DEX95（取扱説明書、T90 OMNIと同型番）。"
+    },
     "deebot-x11-omnicyclone": {
       "dimensionsMm": { "w": 353, "d": 351, "h": 98 },
       "weightKg": 4.9,
@@ -170,6 +200,21 @@
         { "label": "ECOVACS Singapore公式 DEEBOT X11 OmniCyclone（重量参考）", "url": "https://www.ecovacs.com/sg/deebot-robotic-vacuum-cleaner/deebot-x11-omnicyclone" }
       ],
       "note": "本体353×351×98mm（公式リリース・ヨドバシ）。ステーションは公式「380*335(493)*465」＝ベース込み奥行493mm（ベースなし335mm）。段差はTruePassで単段最大24mm、連続段差最大40mm（公式）。重量4.9kg(バッテリー含む)は価格.com記載だが、ECOVACSシンガポール公式は本体5.3±0.1kgと記載しており食い違いあり。公式は「AIカメラがモノや人を認識し賢く回避」とするがペット排泄物の明記なし。"
+    },
+    "deebot-x12s-pro-omni": {
+      "dimensionsMm": { "w": 353, "d": 351, "h": 98 },
+      "weightKg": null,
+      "climbHeightMm": 25,
+      "obstacleAvoidance": "AIVI 3D 4.0（RGBD＋補助光、セマンティックモデル）",
+      "recognizesPetWaste": true,
+      "liftLidar": null,
+      "stationDimensionsMm": { "w": 338, "d": 459, "h": 500 },
+      "sources": [
+        { "label": "ECOVACS Japan公式 DEEBOT X12S PRO OMNI 製品ページ", "url": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/deebot-x12s-pro-omni" },
+        { "label": "PR TIMES エコバックスジャパン DEEBOT X12S PRO OMNI / T90 MAX Family 発売リリース", "url": "https://prtimes.jp/main/html/rd/p/000000171.000017926.html" },
+        { "label": "ECOVACS 公式 DEEBOT X12S PRO OMNI 取扱説明書（JA/EN）", "url": "https://site-static.ecovacs.com/upload/file/support/2026/09/14/082550_8339$DEEBOTX12SPROOMNI取扱説明書JA_EN.pdf" }
+      ],
+      "note": "公式「サイズ（WxDxH) 353*351*98」、ステーション338×459×500mm（公式リリース）。段差は公式「最大2.5cmの単一段差」「高さ合計最大5cmまでの連続した2段の段差」。本体・ステーション重量は公式記載なし。LiDARの搭載形式（内蔵／昇降）は公式記載なしのためnull。公式本文「ペットやペットの排せつ物、床に散らばった電源コード…」をAIVI 3D 4.0で認識・回避と明記。吸引力は製品ページ「最大53AW」、Pa表記（27,000Pa）は公式リリース。型番ZJ2570は取扱説明書記載。"
     },
     "deebot-x8-pro-omni": {
       "dimensionsMm": { "w": 353, "d": 351.5, "h": 98 },

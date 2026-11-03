@@ -2,68 +2,68 @@
   "productId": "deebot-mini",
   "productName": "DEEBOT mini",
   "manufacturer": "ECOVACS",
-  "modelNumber": "DJX11",
+  "modelNumber": "",
   "imageUrl": "https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/djx11-11ee.jpg",
-  "overallRating": 3.79,
-  "totalReviews": 89,
+  "overallRating": 4.26,
+  "totalReviews": 84,
   "price": 49800,
-  "reliabilityScore": 79.3,
+  "reliabilityScore": 78.1,
   "asin": "",
-  "metaTitle": "ECOVACS DEEBOT mini 詳細分析 | コンパクトでも妥協なき水拭き性能",
-  "metaDescription": "ECOVACS DEEBOT miniの88件の口コミを解析。優れた水拭き性能や静音性、コンパクトさで高評価を得る一方、初期設定の難しさやカーペット清掃の課題も。購入前に知るべき真実を公開。",
   "keywords": [
     "DEEBOT mini",
     "ロボット掃除機",
     "水拭き",
+    "自動洗浄",
     "コンパクト",
-    "自動ゴミ収集",
-    "静音"
+    "ECOVACS"
   ],
+  "metaTitle": "ECOVACS DEEBOT mini 詳細分析 | コンパクトでも妥協なき清掃力",
+  "metaDescription": "ECOVACS DEEBOT miniの83件の口コミを徹底解析。驚きの水拭き性能や賢いマッピング、自動メンテナンス機能など、コンパクトなボディに秘められた真の実力を公開します。",
   "categoryC": {
     "userSatisfaction": {
       "score": 92,
-      "reviewCount": 88,
-      "comment": "コンパクトな設計と強力な水拭き機能に高い満足度が示されています。特に床がサラサラになる点が高く評価されており、多くのユーザーが掃除の手間が省けたと実感しています。"
+      "reviewCount": 83,
+      "comment": "「もっと早く買えばよかった」という声が多数。特に水拭き後の床のサラサラ感と、全自動メンテナンスの手軽さが、日々の家事ストレスを大幅に軽減し、高い満足度に繋がっています。"
     },
     "repurchaseIntention": {
       "percentage": 85,
-      "reviewCount": 88,
-      "comment": "「もっと早く買えばよかった」という声が多数あり、高い再購入意向が伺えます。他社製品からの乗り換え組も多く、静音性やメンテナンスの容易さがリピート意向を後押ししています。"
+      "reviewCount": 83,
+      "comment": "ECOVACS製品のリピーターや、2階用に追加購入するユーザーが目立ちます。他社製品からの乗り換え組も多く、本製品の性能とコストパフォーマンスへの信頼感が伺えます。"
     },
     "failureRate": {
-      "percentage": 7,
-      "reviewCount": 88,
+      "percentage": 11,
+      "reviewCount": 83,
       "breakdown": {
-        "hardware": 4,
-        "software": 2,
-        "environmental": 0
+        "hardware": 5,
+        "software": 4,
+        "environmental": 2
       },
-      "comment": "初期不良やステーションへの帰還トラブルが数件報告されています。ただし、サポートの迅速な対応により交換に至ったケースもあり、メーカーのサポート体制は機能しているようです。"
+      "comment": "初期不良に関する報告が数件見られますが、サポートの迅速な交換対応が評価されています。その他、マッピングのズレやWi-Fi接続のトラブルが主な不具合として挙げられています。"
     }
   },
   "reliability": {
-    "score": 79.3,
+    "score": 78.1,
     "dataAdequacy": {
-      "score": 75,
+      "score": 73,
       "weight": 60,
-      "description": "レビュー総数は88件で、製品の基本的な評価を行うには十分なデータ量です。多様な利用環境からのフィードバックが含まれており、信頼性は中程度と評価されます。"
+      "description": "口コミ件数は83件と中規模ですが、各機能への言及は豊富で、製品の実力を判断するには十分なデータ量です。特にメンテナンス性に関する意見が多く集まっています。"
     },
     "consistency": {
       "score": 81,
       "weight": 30,
-      "description": "口コミ評価は概ね高評価で安定しており、特に水拭き性能とコンパクトさに関する意見は一致しています。一部、初期設定やカーペット対応で意見のばらつきが見られます。",
+      "description": "水拭き性能や静音性の高さ、メンテナンスの容易さといった長所については、多くの口コミで意見が一致しています。一方で、アプリの初期設定や段差対応では評価が分かれました。",
       "percentage": 81
     },
     "freshness": {
       "score": 100,
       "weight": 10,
-      "description": "直近の口コミも多数含まれており、現行モデルの性能やソフトウェアの安定性に関する最新の情報を反映しています。鮮度の高いデータとして信頼できます。"
+      "description": "分析対象の口コミは直近のものが多く、現在の製品価値やソフトウェアの安定性を反映した、鮮度の高い情報となっています。最新のユーザー体験に基づいた評価です。"
     }
   },
   "updateInfo": {
-    "lastUpdated": "2026-08-13",
+    "lastUpdated": "2026-04-25",
     "firmwareVersion": "",
-    "note": "2026年上半期までの口コミを基に分析。水拭き性能と静音性への高評価が目立ちますが、アプリの初期設定に関する指摘が複数見られるなど、ソフトウェア面の課題も残ります。"
+    "note": "分析対象の口コミは2025年後半から2026年前半に集中。アプリの初期設定に関する戸惑いの声が見られる一方、一度設定が完了すれば安定して動作するとの評価が多数です。"
   },
   "timeSaving": {
     "vacuumMinutes": 10,
@@ -73,80 +73,54 @@
     "annualHours": 115.6,
     "workDaysEquivalent": 14.4
   },
-  "operationalCost": {
-    "daily": 40,
-    "dailyNote": "ゴミパック、モップ、ブラシ等の主要消耗品を定期交換した場合の実質的な日割りコストです。使用頻度により変動します。",
-    "monthly": 1225,
-    "annual": 14700,
-    "consumables": [
-      {
-        "item": "抗菌ゴミパック",
-        "replacementFrequency": "2ヶ月ごと",
-        "unitCost": 2200,
-        "annualCost": 6600
-      },
-      {
-        "item": "モップパッド",
-        "replacementFrequency": "3ヶ月ごと",
-        "unitCost": 1800,
-        "annualCost": 3600
-      },
-      {
-        "item": "サイドブラシ",
-        "replacementFrequency": "4ヶ月ごと",
-        "unitCost": 1500,
-        "annualCost": 4500
-      }
-    ]
-  },
   "performanceAnalysis": {
     "floorCleaning": {
-      "score": 94,
-      "reviewCount": 53,
-      "positiveReviewCount": 50,
-      "comment": "回転モップによる水拭き性能は絶賛されており、「床がサラサラ」「ピカピカになる」との声が多数。吸引と水拭きの同時実行で、日々の掃除品質が格段に向上したと評価されています。"
+      "score": 96,
+      "reviewCount": 56,
+      "positiveReviewCount": 54,
+      "comment": "「床がサラサラ・ピカピカになる」と絶賛の声が多数。回転式の加圧水拭きモップが、素足で歩きたくなるほどの仕上がりを実現します。汚水タンクの汚れが清掃効果を物語っています。"
     },
     "carpetCleaning": {
-      "score": 35,
-      "reviewCount": 9,
-      "positiveReviewCount": 3,
-      "comment": "モップ装着時はカーペットを回避するため、吸引清掃も行われません。モップリフトアップ機能がなく、都度モップを取り外す必要があり、カーペットのある家庭では利便性が低いとの指摘があります。"
+      "score": 72,
+      "reviewCount": 13,
+      "positiveReviewCount": 8,
+      "comment": "モップ非搭載時の吸引力は評価されていますが、モップリフトアップ機能がない点が大きな制約です。カーペットやマットを自動で回避するため、ユーザー側での設定や工夫が必要になります。"
     },
     "petHairRemoval": {
-      "score": 90,
-      "reviewCount": 10,
-      "positiveReviewCount": 9,
-      "comment": "犬や猫の毛をしっかり吸引してくれると高評価です。コンパクトなボディで家具の下にも入り込むため、ペットの毛が溜まりやすい場所も綺麗に掃除できる点が喜ばれています。"
+      "score": 92,
+      "reviewCount": 11,
+      "positiveReviewCount": 10,
+      "comment": "犬や猫の抜け毛、猫砂などをしっかり回収する吸引力が高く評価されています。毛が絡まりにくいブラシ構造も、ペットがいる家庭にとってメンテナンスの手間を減らす嬉しいポイントです。"
     },
     "quietness": {
-      "score": 92,
-      "reviewCount": 24,
-      "positiveReviewCount": 22,
-      "comment": "「ルンバより遥かに静か」と比較する声が多く、在宅中でも気にならないレベルと評価されています。ステーションでのゴミ収集音は大きいものの、短時間で終わるため許容範囲内との意見が多数です。"
+      "score": 89,
+      "reviewCount": 18,
+      "positiveReviewCount": 16,
+      "comment": "「ルンバより遥かに静か」という意見が多く、在宅中や夜間でも気兼ねなく使える点が好評です。ただし、ステーションでのゴミ収集音は掃除機相応の大きな音がするため注意が必要です。"
     },
     "stepClimbing": {
-      "score": 65,
-      "reviewCount": 11,
-      "positiveReviewCount": 7,
-      "comment": "2cm程度の段差は乗り越えるとの評価がある一方、玄関の段差を検知できず落下したという深刻な報告も1件ありました。マッピング精度に依存する部分が大きく、落下防止センサーの信頼性に課題が残ります。"
+      "score": 75,
+      "reviewCount": 9,
+      "positiveReviewCount": 6,
+      "comment": "2cm程度の段差は乗り越えるという声がある一方、玄関の段差から落下したという報告もあり、センサーの検知能力にはやや不安定さが見られます。確実な落下防止には注意が必要です。"
     },
     "maintenance": {
-      "score": 94,
-      "reviewCount": 83,
+      "score": 95,
+      "reviewCount": 81,
       "positiveReviewCount": 78,
-      "comment": "モップの自動洗浄・乾燥、ゴミの自動収集機能により、日々の手入れが非常に楽になったと絶賛されています。汚水タンクの清掃や給水の手間は残るものの、その価値は十分あるとの評価です。"
+      "comment": "ゴミ収集からモップの洗浄・熱風乾燥まで全自動で行うステーションは、本製品最大の魅力です。日々の手入れは給排水のみで済むため、メンテナンスの手間が劇的に削減されます。"
     },
     "appStability": {
-      "score": 76,
-      "reviewCount": 46,
-      "positiveReviewCount": 35,
-      "comment": "一度設定が完了すればエリア指定など便利に使えるとの評価ですが、最初のWi-Fi接続で苦労したユーザーが散見されます。特に2.4GHz帯への接続やパスワード入力で戸惑う声がありました。"
+      "score": 82,
+      "reviewCount": 45,
+      "positiveReviewCount": 36,
+      "comment": "Wi-Fiの初期接続に苦労したという声が散見されます。しかし、一度接続すればマッピングやエリア指定、スケジュール設定など機能は豊富で、使いやすいと評価する声が多数です。"
     },
     "batteryLife": {
-      "score": 60,
-      "reviewCount": 7,
-      "positiveReviewCount": 4,
-      "comment": "コンパクトなサイズのため、バッテリー持続時間はそれほど長くないとの指摘があります。広い家では途中で充電に戻ることがあり、全体の掃除時間が長くなる可能性がある点は注意が必要です。"
+      "score": 80,
+      "reviewCount": 8,
+      "positiveReviewCount": 6,
+      "comment": "一般的なマンションであれば1回の充電で全部屋の掃除を完了できます。しかし、本体がコンパクトな分バッテリー容量も限られるため、広い家では途中で充電に戻ることがあります。"
     }
   },
   "radarChartData": {
@@ -161,61 +135,61 @@
       "電池"
     ],
     "values": [
-      94,
-      35,
-      90,
+      96,
+      72,
       92,
-      65,
-      94,
-      76,
-      60
+      89,
+      75,
+      95,
+      82,
+      80
     ]
   },
   "dataQuality": {
-    "totalReviews": 89,
-    "sampledReviews": 88,
-    "adoptedReviews": 88,
+    "totalReviews": 84,
+    "sampledReviews": 83,
+    "adoptedReviews": 83,
     "excludedReviews": 1,
-    "trustScore": 79.3,
-    "comment": "提供された88件の楽天レビューを全て分析。購入直後から長期使用後まで多様な意見が含まれており、製品の長所と短所を多角的に評価するための信頼性の高いデータセットです。"
+    "trustScore": 78.1,
+    "comment": "提供された83件の口コミを全て分析。各機能に対する具体的な言及が多く、製品の長所と短所を多角的に評価するための信頼性の高いデータセットとなっています。"
   },
   "reviewKeywords": {
     "positive": [
       {
-        "keyword": "満足・買ってよかった",
-        "count": 35
+        "keyword": "水拭き・拭き掃除が良い",
+        "count": 39
       },
       {
-        "keyword": "水拭き・拭き掃除が良い",
-        "count": 32
+        "keyword": "満足・買ってよかった",
+        "count": 30
       },
       {
         "keyword": "マッピング・ルートが賢い",
-        "count": 20
+        "count": 21
       },
       {
         "keyword": "静かで快適",
-        "count": 19
+        "count": 15
       },
       {
         "keyword": "床がサラサラ・ピカピカ",
         "count": 11
       },
       {
-        "keyword": "使いやすい・便利",
+        "keyword": "家事が楽になった",
         "count": 8
       },
       {
+        "keyword": "使いやすい・便利",
+        "count": 6
+      },
+      {
         "keyword": "綺麗になる",
-        "count": 7
+        "count": 6
       },
       {
         "keyword": "吸引力が高い",
         "count": 4
-      },
-      {
-        "keyword": "家事が楽になった",
-        "count": 3
       },
       {
         "keyword": "故障・トラブルが少ない",
@@ -225,11 +199,11 @@
     "negative": [
       {
         "keyword": "故障・不具合",
-        "count": 6
+        "count": 9
       },
       {
         "keyword": "動作音が気になる",
-        "count": 4
+        "count": 2
       },
       {
         "keyword": "マッピング・認識が不正確",
@@ -242,203 +216,161 @@
       {
         "keyword": "水拭き・拭き掃除が不十分",
         "count": 1
+      },
+      {
+        "keyword": "吸引力が弱い",
+        "count": 1
       }
     ]
   },
   "successStrategies": [
     {
       "rank": 1,
-      "issue": "Wi-Fi接続と初期設定の難しさ",
-      "occurrenceRate": 9,
-      "occurrenceCount": 8,
-      "environmentalFactor": "家庭のWi-Fi環境（5GHz帯の存在、ルーター設定）",
-      "technicalDescription": "製品が2.4GHz帯のWi-Fiにのみ対応しているため、5GHz帯が優先される環境では接続に失敗しやすい。また、アプリの権限許可やパスワード入力画面が分かりにくいとの指摘がある。",
+      "issue": "カーペット・マットの清掃問題",
+      "occurrenceRate": 16,
+      "occurrenceCount": 13,
+      "environmentalFactor": "モップリフトアップ機能の非搭載、カーペットの材質",
+      "technicalDescription": "モップ装着時、カーペットを自動で回避する仕様のため、敷物のある部屋全体の清掃が中断されます。また、キッチンマットなどをカーペットと誤認識し、進入しない場合があります。",
       "avoidanceStrategies": [
         {
-          "method": "スマホのWi-Fi設定で5GHz帯を一時的に無効化または「接続しない」設定にする",
+          "method": "アプリで「進入禁止エリア」を設定する",
           "effectiveness": "高",
-          "technicalLevel": "中級",
-          "technicalRationale": "接続プロセス中にスマホが自動で5GHz帯に切り替わるのを防ぎ、2.4GHz帯での安定した接続を確立させます。メーカーも推奨している最も確実な方法の一つです。"
+          "technicalLevel": "初級",
+          "technicalRationale": "濡らしたくないカーペットやラグをアプリのマップ上で「バーチャルウォール」として設定することで、ロボットの進入を物理的に防ぎ、清掃ルートを最適化できます。"
         },
         {
-          "method": "設定中はロボットとスマホをWi-Fiルーターの近く（2m以内）に置く",
+          "method": "モップを取り外して吸引清掃のみ行う",
           "effectiveness": "中",
           "technicalLevel": "初級",
-          "technicalRationale": "電波強度を最大化し、接続の安定性を高めます。物理的な距離が原因で接続が不安定になるケースを減らすための基本的な対策で、多くの通信機器で有効です。"
+          "technicalRationale": "カーペットの吸引清掃をしたい場合は、モップユニットを物理的に取り外す必要があります。これによりカーペット上も吸引のみで清掃しますが、都度の着脱に手間がかかります。"
         }
       ],
-      "preventionTips": "設定を始める前に、スマホのモバイルデータ通信をオフにし、ECOVACS HOMEアプリに位置情報へのアクセス権限を許可しておくと、スムーズに接続できる可能性が高まります。"
-    },
-    {
-      "rank": 2,
-      "issue": "モップ装着時のカーペット清掃不可",
-      "occurrenceRate": 8,
-      "occurrenceCount": 7,
-      "environmentalFactor": "カーペットやキッチンマットの存在",
-      "technicalDescription": "本機はモップリフトアップ機能を搭載しておらず、水拭きモップ装着時はカーペットを濡らさないよう完全に回避する仕様。そのため、カーペットエリアは吸引清掃も行われない。",
-      "avoidanceStrategies": [
-        {
-          "method": "アプリで「カーペット通過エリア」を設定し、清掃ルートを確保する",
-          "effectiveness": "中",
-          "technicalLevel": "初級",
-          "technicalRationale": "この設定により、モップを装着していてもカーペット上を「通過」できるようになります。ただし、カーペット自体の清掃は行わないため、あくまで部屋間の移動を可能にする機能です。"
-        },
-        {
-          "method": "清掃モードを使い分ける（モップを外して吸引のみ→モップを付けて水拭き）",
-          "effectiveness": "高",
-          "technicalLevel": "初級",
-          "technicalRationale": "手間はかかりますが、最も確実な方法です。最初にモップを外した状態で家全体の吸引清掃を行い、次にモップを装着してフローリングのみを水拭きするスケジュールを組むことで対応できます。"
-        }
-      ],
-      "preventionTips": "購入前に自宅のカーペットやマットの配置を確認することが重要です。フローリング中心の家庭に最適化された製品であり、敷物が多い環境では性能を最大限に発揮できない可能性があります。"
-    },
-    {
-      "rank": 3,
-      "issue": "ステーションへの帰還・ドッキング失敗",
-      "occurrenceRate": 5,
-      "occurrenceCount": 4,
-      "environmentalFactor": "ステーションの設置場所、スロープの取り付け",
-      "technicalDescription": "ステーション周辺の障害物や、スロープが完全に嵌まっていない物理的な問題でドッキングに失敗する。また、センサーが汚れていると位置を正確に認識できず、帰還に失敗することがある。",
-      "avoidanceStrategies": [
-        {
-          "method": "ステーションの左右0.5m、前方1mに障害物を置かない",
-          "effectiveness": "高",
-          "technicalLevel": "初級",
-          "technicalRationale": "メーカーが推奨する設置スペースを確保することで、ロボットがステーションを正確に認識し、スムーズにドッキングするための誘導信号を妨げないようにします。"
-        },
-        {
-          "method": "スロープを「カチッ」と音がするまで強く押し込み、完全に取り付ける",
-          "effectiveness": "高",
-          "technicalLevel": "初級",
-          "technicalRationale": "口コミでは、スロープの取り付けが甘く、物理的に登れないケースが報告されています。見た目だけでなく、ロック音がするまでしっかり固定することが重要です。"
-        }
-      ],
-      "preventionTips": "清掃は必ずステーションから開始させ、途中で本体やステーションを手で動かさないことが重要です。これにより、ロボットが自身の位置とステーションの位置関係を正確に保つことができます。"
+      "preventionTips": "購入前に自宅のカーペットやマットの配置を確認しましょう。フローリング中心の家には最適ですが、敷物が多い場合は、モップの着脱の手間を許容できるか検討が必要です。"
     }
   ],
   "topComplaints": [
     {
-      "title": "Wi-Fiの初期設定が難しい",
-      "percentage": 9,
+      "title": "アプリの初期Wi-Fi接続が難しい",
+      "percentage": 10,
       "reviewCount": 8,
-      "description": "多くのユーザーが最初のWi-Fi接続に苦労しています。特に自宅のネットワークが5GHz帯に対応している場合、2.4GHz帯に手動で切り替える必要があり、手順が分かりにくいとの声が多数ありました。",
-      "solution": "設定前にスマホのモバイル通信をOFFにし、Wi-Fi設定で2.4GHz帯のネットワークに接続してください。ECOVACS HOMEアプリに位置情報権限を許可することも重要です。"
+      "description": "多くのユーザーが最初のWi-Fi設定で苦労しています。ルーターとの相性や、2.4GHz帯への接続指定、スマホ側の設定など、複数の要因が絡み、スムーズに接続できない場合があります。",
+      "solution": "スマホのモバイルデータを一時的にオフにし、Wi-Fiが2.4GHz帯であることを確認します。リセットボタンは1秒だけ押し、それでも失敗する場合はアプリと本体を再起動してみてください。"
     },
     {
-      "title": "カーペットを掃除できない",
-      "percentage": 8,
-      "reviewCount": 7,
-      "description": "水拭き用のモップを取り付けていると、カーペットやキッチンマットを障害物と認識して避けてしまいます。そのため、カーペットエリアは吸引掃除すら行われず、不便だという意見が見られました。",
-      "solution": "モップリフトアップ機能がないため、カーペットを掃除する際はモップユニットを物理的に取り外す必要があります。アプリのカーペット回避設定を確認し、吸引のみのスケジュールを別途作成するのが有効です。"
+      "title": "カーペットやマットを掃除できない",
+      "percentage": 16,
+      "reviewCount": 13,
+      "description": "モップリフトアップ機能がないため、モップ装着時はカーペットを自動で回避します。キッチンマットのような薄い敷物もカーペットと誤認識し、掃除しないため不便との声が多数です。",
+      "solution": "アプリのマップ編集機能で「バーチャルウォール」を設定し、カーペットエリアを清掃範囲から除外するのが有効です。カーペットを掃除したい場合はモップを外す必要があります。"
     },
     {
-      "title": "ステーションにうまく戻れない",
+      "title": "マッピングがずれる・不正確",
       "percentage": 5,
       "reviewCount": 4,
-      "description": "清掃後、ステーションにうまくドッキングできない、スロープを登れないといった物理的なトラブルが報告されています。スロープの取り付けが不完全だったり、周辺に物があると発生しやすいようです。",
-      "solution": "ステーションの周囲、特に前方1m、左右0.5mには物を置かないでください。また、設置時にスロープが「カチッ」と音がするまでしっかりはめ込まれているか確認することが重要です。"
+      "description": "使用中にマップが歪んだり、部屋の認識がおかしくなったりすることがあります。家具の配置変更や、ロボットが位置を見失うことで発生し、効率的な掃除ができなくなる場合があります。",
+      "solution": "まずアプリのマップ管理から「マップの復元」を試します。それで直らない場合は、マップを一度削除し、部屋を片付けてから再度マッピングを行うと精度が向上します。"
     }
   ],
   "attributeScores": {
     "petOwner": {
-      "overall": 92,
+      "overall": 94,
       "details": [
         {
-          "field": "ペットの毛除去",
-          "score": 90,
-          "reviewCount": 10,
-          "comment": "犬や猫の抜け毛をしっかり吸引する性能が高く評価されています。コンパクトなため、ソファ下など毛が溜まりやすい場所にも入り込んで掃除してくれる点が飼い主にとって大きな利点です。"
+          "field": "ペットの毛吸引",
+          "score": 92,
+          "reviewCount": 11,
+          "comment": "抜け毛や猫砂をしっかり吸引する性能は、ペットオーナーから高く評価されています。毛が絡みにくいブラシの採用で、日々のメンテナンス負担が軽い点も大きなメリットです。"
         },
         {
-          "field": "床の清潔さ",
-          "score": 94,
-          "reviewCount": 53,
-          "comment": "水拭き機能により、ペットの足跡や細かな汚れも綺麗になり、床が常にサラサラに保てると好評です。ハイハイする赤ちゃんがいる家庭でも安心して使えるとの声もありました。"
+          "field": "床の衛生（水拭き）",
+          "score": 96,
+          "reviewCount": 56,
+          "comment": "ペットの足跡や床のベタつきを解消する水拭き機能が好評です。自動でモップを洗浄・乾燥するため、常に清潔な状態で拭き掃除ができ、衛生的な環境を保てます。"
         },
         {
           "field": "メンテナンス性",
-          "score": 94,
-          "reviewCount": 83,
-          "comment": "自動ゴミ収集とモップ洗浄機能のおかげで、ペットの毛が詰まったダストボックスを手で処理する手間がありません。日々のメンテナンスが楽な点は、ペットがいる多忙な家庭に最適です。"
+          "score": 95,
+          "reviewCount": 81,
+          "comment": "毛やゴミが溜まりやすいペットのいる家庭にとって、ゴミの自動収集やモップの自動洗浄機能は非常に価値が高いです。面倒な手入れから解放され、清潔さを維持できます。"
         }
       ]
     },
     "apartment": {
-      "overall": 89,
+      "overall": 88,
       "details": [
         {
           "field": "静音性",
-          "score": 92,
-          "reviewCount": 24,
-          "comment": "動作音が非常に静かで、夜間や在宅ワーク中でも気にならないと高評価です。集合住宅で隣室や階下への騒音を気にする方にとって、大きなメリットとなるでしょう。"
+          "score": 89,
+          "reviewCount": 18,
+          "comment": "集合住宅で気になる稼働音が非常に静かである点が、多くのユーザーに支持されています。隣室への騒音を気にすることなく、時間帯を選ばずに掃除を任せられるのは大きな利点です。"
+        },
+        {
+          "field": "コンパクトさ",
+          "score": 95,
+          "reviewCount": 25,
+          "comment": "本体とステーションがコンパクトなため、限られたスペースにも設置しやすいです。家具の多いマンションでも、椅子の脚の間など狭い場所まで入り込んで掃除してくれます。"
         },
         {
           "field": "床掃除性能",
-          "score": 94,
-          "reviewCount": 53,
-          "comment": "限られたスペースを効率的に掃除し、水拭きでフローリングを清潔に保つ能力はマンションでの生活に適しています。コンパクトなため、家具の多い部屋でも隅々まで掃除可能です。"
-        },
-        {
-          "field": "段差乗り越え",
-          "score": 65,
-          "reviewCount": 11,
-          "comment": "部屋間の敷居などは問題なく乗り越えますが、玄関の段差で落下した事例も報告されています。センサーの過信は禁物で、落下リスクのある場所には物理的な対策が必要です。"
+          "score": 96,
+          "reviewCount": 56,
+          "comment": "フローリングの掃除性能は非常に高く、ホコリや髪の毛をしっかり除去します。特に水拭き機能は床のザラつきを一掃し、素足で快適に過ごせる清潔な空間を作り出します。"
         }
       ]
     },
     "workingProfessional": {
-      "overall": 86,
+      "overall": 87,
       "details": [
         {
           "field": "メンテナンスの容易さ",
-          "score": 94,
+          "score": 95,
+          "reviewCount": 81,
+          "comment": "多忙な日々で掃除に時間を割けない層にとって、給排水以外ほぼ全自動のメンテナンスフリー仕様は最大の魅力です。手間をかけずに、常に家を清潔に保つことができます。"
+        },
+        {
+          "field": "アプリの安定性・機能",
+          "score": 82,
+          "reviewCount": 45,
+          "comment": "初期設定のハードルはありますが、一度接続すれば外出先からの遠隔操作やスケジュール設定が可能です。帰宅時間に合わせて掃除を完了させるなど、スマートな活用ができます。"
+        },
+        {
+          "field": "時間創出効果",
+          "score": 90,
           "reviewCount": 83,
-          "comment": "ゴミ収集からモップ洗浄・乾燥まで全自動で行うため、多忙なプロフェッショナルに最適です。給水と汚水処理以外はほぼ手間いらずで、時間を有効活用できます。"
-        },
-        {
-          "field": "アプリの安定性",
-          "score": 76,
-          "reviewCount": 46,
-          "comment": "外出先から掃除を指示できるなど、アプリの機能は便利ですが、初期設定の煩雑さがマイナスポイントです。一度設定してしまえば安定して動作するとの評価が一般的です。"
-        },
-        {
-          "field": "バッテリー持続時間",
-          "score": 60,
-          "reviewCount": 7,
-          "comment": "バッテリーの持ちは平均的で、ワンルームや1LDKなど、コンパクトな住環境での使用が前提です。広い家では掃除完了までに複数回の充電が必要になる可能性があります。"
+          "comment": "掃除機がけと拭き掃除という面倒な家事を完全に自動化することで、自由な時間を創出します。週末の掃除時間を、趣味や休息など、より価値のある活動に充てることができます。"
         }
       ]
     },
     "familyHome": {
-      "overall": 73,
+      "overall": 84,
       "details": [
         {
-          "field": "フローリング掃除",
-          "score": 94,
-          "reviewCount": 53,
-          "comment": "子供の食べこぼしなどで汚れやすいリビングの床を、水拭き機能で常に清潔に保てます。床がサラサラになるため、子供が裸足で過ごす家庭から特に高い評価を得ています。"
+          "field": "フローリング清掃",
+          "score": 96,
+          "reviewCount": 56,
+          "comment": "子供の食べこぼしや素足の皮脂汚れなども、吸引と水拭きの同時清掃で綺麗になります。床が常にサラサラの状態に保たれるため、小さな子供がいる家庭でも安心です。"
         },
         {
-          "field": "カーペット掃除",
-          "score": 35,
-          "reviewCount": 9,
-          "comment": "子供部屋などにカーペットを敷いている場合、モップを装着したままでは掃除ができません。毎回モップを着脱する手間がかかるため、カーペットが多い家庭には不向きと言えます。"
+          "field": "バッテリー性能",
+          "score": 80,
+          "reviewCount": 8,
+          "comment": "部屋数の多い戸建てでは、掃除の途中でバッテリーが切れて充電に戻ることがあります。全エリアを一度に掃除するのではなく、部屋ごとにスケジュールを分ける工夫が有効です。"
         },
         {
-          "field": "バッテリー持続時間",
-          "score": 60,
-          "reviewCount": 7,
-          "comment": "部屋数の多い戸建て住宅では、1回の充電で全エリアを掃除しきれない可能性があります。掃除時間が長くなることを想定しておく必要があります。"
+          "field": "カーペット対応力",
+          "score": 72,
+          "reviewCount": 13,
+          "comment": "子供部屋のプレイマットやリビングのラグなどを自動で回避してしまうため、敷物が多い家庭では使い勝手が悪く感じる可能性があります。吸引のみで清掃するにはモップの着脱が必要です。"
         }
       ]
     }
   },
   "resaleValue": null,
+  "priceSource": "official",
+  "priceCheckedAt": "2026-10-03",
   "affiliate": {
-    "moshimo": "<!-- START MoshimoAffiliateEasyLink -->\r\n<script type=\"text/javascript\">\r\n(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;\r\nb[a]=b[a]||function(){arguments.currentScript=c.currentScript\r\n||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};\r\nc.getElementById(a)||(d=c.createElement(f),d.src=g,\r\nd.id=a,e=c.getElementsByTagName(\"body\")[0],e.appendChild(d))})\r\n(window,document,\"script\",\"//dn.msmstatic.com/site/cardlink/bundle.js?20220329\",\"msmaflink\");\r\nmsmaflink({\"n\":\"ロボット掃除機 DEEBOT mini エコバックス 公式 ECOVACS お掃除ロボット 掃除機 自動掃除機 掃除ロボット 高性能 マッピング機能 自動ゴミ収集 水拭き お掃除 メーカー保証最大24ヶ月 2025 エコバッグス ペット\",\"b\":\"\",\"t\":\"\",\"d\":\"https:\\/\\/thumbnail.image.rakuten.co.jp\",\"c_p\":\"\\/@0_mall\\/store-ecovacs-japan\\/cabinet\",\"p\":[\"\\/campaign\\/261002\\/djx11-11ee.jpg\",\"\\/review\\/warranty\\/2502_item.jpg\",\"\\/salesno1.jpg\"],\"u\":{\"u\":\"https:\\/\\/item.rakuten.co.jp\\/store-ecovacs-japan\\/djx11-11ee\\/\",\"t\":\"rakuten\",\"r_v\":\"\"},\"v\":\"2.1\",\"b_l\":[{\"id\":1,\"u_tx\":\"楽天市場で見る\",\"u_bc\":\"#f76956\",\"u_url\":\"https:\\/\\/item.rakuten.co.jp\\/store-ecovacs-japan\\/djx11-11ee\\/\",\"a_id\":5483003,\"p_id\":54,\"pl_id\":27059,\"pc_id\":54,\"s_n\":\"rakuten\",\"u_so\":1},{\"id\":2,\"u_tx\":\"Yahoo!ショッピングで見る\",\"u_bc\":\"#66a7ff\",\"u_url\":\"https:\\/\\/shopping.yahoo.co.jp\\/search?first=1\\u0026p=ECOVACS%20DEEBOT%20mini\",\"a_id\":5483010,\"p_id\":1225,\"pl_id\":27061,\"pc_id\":1925,\"s_n\":\"yahoo\",\"u_so\":2},{\"id\":3,\"u_tx\":\"Amazonで見る\",\"u_bc\":\"#ffcf0f\",\"u_url\":\"https:\\/\\/www.amazon.co.jp\\/s\\/ref=nb_sb_noss_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A\\u0026url=search-alias%3Daps\\u0026field-keywords=ECOVACS%20DEEBOT%20mini\",\"a_id\":5483011,\"p_id\":170,\"pl_id\":27060,\"pc_id\":185,\"s_n\":\"amazon\",\"u_so\":3}],\"eid\":\"vqnXi\",\"s\":\"l\"});\r\n</script>\r\n<div id=\"msmaflink-vqnXi\">リンク</div>\r\n<!-- MoshimoAffiliateEasyLink END -->",
+    "moshimo": "<!-- START MoshimoAffiliateEasyLink -->\r\n<script type=\"text/javascript\">\r\n(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;\r\nb[a]=b[a]||function(){arguments.currentScript=c.currentScript\r\n||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};\r\nc.getElementById(a)||(d=c.createElement(f),d.src=g,\r\nd.id=a,e=c.getElementsByTagName(\"body\")[0],e.appendChild(d))})\r\n(window,document,\"script\",\"//dn.msmstatic.com/site/cardlink/bundle.js?20220329\",\"msmaflink\");\r\nmsmaflink({\"n\":\"【クーポン利用で49,800円！7\\/27 09:59まで】ロボット掃除機 DEEBOT mini エコバックス 公式 ECOVACS お掃除ロボット 掃除機 自動掃除機 掃除ロボット 高性能 マッピング機能 自動ゴミ収集 水拭き お掃除 メーカー保証最大24ヶ月 2025 エコバッグス ペット 犬 猫\",\"b\":\"\",\"t\":\"\",\"d\":\"https:\\/\\/thumbnail.image.rakuten.co.jp\",\"c_p\":\"\\/@0_mall\\/store-ecovacs-japan\\/cabinet\",\"p\":[\"\\/campaign\\/260717\\/djx11-11ee.jpg\",\"\\/review\\/coupon\\/2602_flick.jpg\",\"\\/salesno1.jpg\"],\"u\":{\"u\":\"https:\\/\\/item.rakuten.co.jp\\/store-ecovacs-japan\\/djx11-11ee\\/\",\"t\":\"rakuten\",\"r_v\":\"\"},\"v\":\"2.1\",\"b_l\":[{\"id\":1,\"u_tx\":\"楽天市場で見る\",\"u_bc\":\"#f76956\",\"u_url\":\"https:\\/\\/item.rakuten.co.jp\\/store-ecovacs-japan\\/djx11-11ee\\/\",\"a_id\":5483003,\"p_id\":54,\"pl_id\":27059,\"pc_id\":54,\"s_n\":\"rakuten\",\"u_so\":1},{\"id\":2,\"u_tx\":\"Yahoo!ショッピングで見る\",\"u_bc\":\"#66a7ff\",\"u_url\":\"https:\\/\\/shopping.yahoo.co.jp\\/search?first=1\\u0026p=%E3%80%90%E3%82%AF%E3%83%BC%E3%83%9D%E3%83%B3%E5%88%A9%E7%94%A8%E3%81%A749%2C800%E5%86%86%EF%BC%817%2F27%2009%3A59%E3%81%BE%E3%81%A7%E3%80%91%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%20DEEBOT%20mini%20%E3%82%A8%E3%82%B3%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%20%E5%85%AC%E5%BC%8F%20ECOVACS%20%E3%81%8A%E6%8E%83%E9%99%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%20%E6%8E%83%E9%99%A4%E6%A9%9F%20%E8%87%AA%E5%8B%95%E6%8E%83%E9%99%A4%E6%A9%9F%20%E6%8E%83%E9%99%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%20%E9%AB%98%E6%80%A7%E8%83%BD%20%E3%83%9E%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0%E6%A9%9F%E8%83%BD%20%E8%87%AA%E5%8B%95%E3%82%B4%E3%83%9F%E5%8F%8E%E9%9B%86%20%E6%B0%B4%E6%8B%AD%E3%81%8D%20%E3%81%8A%E6%8E%83%E9%99%A4%20%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E4%BF%9D%E8%A8%BC%E6%9C%80%E5%A4%A724%E3%83%B6%E6%9C%88%202025%20%E3%82%A8%E3%82%B3%E3%83%90%E3%83%83%E3%82%B0%E3%82%B9%20%E3%83%9A%E3%83%83%E3%83%88%20%E7%8A%AC%20%E7%8C%AB\",\"a_id\":5483010,\"p_id\":1225,\"pl_id\":27061,\"pc_id\":1925,\"s_n\":\"yahoo\",\"u_so\":2},{\"id\":3,\"u_tx\":\"Amazonで見る\",\"u_bc\":\"#ffcf0f\",\"u_url\":\"https:\\/\\/www.amazon.co.jp\\/s\\/ref=nb_sb_noss_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A\\u0026url=search-alias%3Daps\\u0026field-keywords=%E3%80%90%E3%82%AF%E3%83%BC%E3%83%9D%E3%83%B3%E5%88%A9%E7%94%A8%E3%81%A749%2C800%E5%86%86%EF%BC%817%2F27%2009%3A59%E3%81%BE%E3%81%A7%E3%80%91%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%20DEEBOT%20mini%20%E3%82%A8%E3%82%B3%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%20%E5%85%AC%E5%BC%8F%20ECOVACS%20%E3%81%8A%E6%8E%83%E9%99%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%20%E6%8E%83%E9%99%A4%E6%A9%9F%20%E8%87%AA%E5%8B%95%E6%8E%83%E9%99%A4%E6%A9%9F%20%E6%8E%83%E9%99%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%20%E9%AB%98%E6%80%A7%E8%83%BD%20%E3%83%9E%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0%E6%A9%9F%E8%83%BD%20%E8%87%AA%E5%8B%95%E3%82%B4%E3%83%9F%E5%8F%8E%E9%9B%86%20%E6%B0%B4%E6%8B%AD%E3%81%8D%20%E3%81%8A%E6%8E%83%E9%99%A4%20%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E4%BF%9D%E8%A8%BC%E6%9C%80%E5%A4%A724%E3%83%B6%E6%9C%88%202025%20%E3%82%A8%E3%82%B3%E3%83%90%E3%83%83%E3%82%B0%E3%82%B9%20%E3%83%9A%E3%83%83%E3%83%88%20%E7%8A%AC%20%E7%8C%AB\",\"a_id\":5483011,\"p_id\":170,\"pl_id\":27060,\"pc_id\":185,\"s_n\":\"amazon\",\"u_so\":3}],\"eid\":\"vqnXi\",\"s\":\"l\"});\r\n</script>\r\n<div id=\"msmaflink-vqnXi\">リンク</div>\r\n<!-- MoshimoAffiliateEasyLink END -->",
     "direct": "",
     "hpPublish": true
-  },
-  "priceSource": "official",
-  "priceCheckedAt": "2026-10-03"
+  }
 }

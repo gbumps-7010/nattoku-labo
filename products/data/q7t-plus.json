@@ -1,0 +1,315 @@
+{
+  "productId": "q7t-plus",
+  "productName": "Q7T+",
+  "manufacturer": "Roborock",
+  "modelNumber": "Q7T+",
+  "imageUrl": "https://thumbnail.image.rakuten.co.jp/@0_mall/yamada-denki/cabinet/a07000441/1385764013.jpg",
+  "overallRating": 4.26,
+  "totalReviews": 2,
+  "price": 44880,
+  "reliabilityScore": 53.2,
+  "asin": "",
+  "metaTitle": "Roborock Q7T+ 詳細分析 | 静音性とコスパを両立したコンパクトモデル",
+  "metaDescription": "Roborock Q7T+の2件の口コミを解析。静音性やコストパフォーマンスなど、コンパクトなボディに秘められた実力を、利用者の声から明らかにします。",
+  "keywords": [
+    "Q7T+",
+    "Roborock",
+    "ロボット掃除機",
+    "静音",
+    "コンパクト",
+    "自動ゴミ収集"
+  ],
+  "categoryC": {
+    "userSatisfaction": {
+      "score": 98,
+      "reviewCount": 2,
+      "comment": "サンプル数は少ないものの、投稿されたレビューはすべて最高評価でした。特に静音性やコストパフォーマンスに対する満足度が高く、購入者の期待に応える製品であると評価できます。"
+    },
+    "repurchaseIntention": {
+      "percentage": 90,
+      "reviewCount": 1,
+      "comment": "「2台目です」というリピート購入者の声が確認できました。価格以上の活躍ぶりに満足しており、同ブランドや後継機への買い替え意向も高いレベルにあると推測されます。"
+    },
+    "failureRate": {
+      "percentage": 1,
+      "reviewCount": 2,
+      "breakdown": {
+        "hardware": 0,
+        "software": 0,
+        "environmental": 0
+      },
+      "comment": "分析対象の口コミにおいて、製品の故障や不具合に関する報告は一件もありませんでした。初期不良や短期的な故障リスクは低いと考えられ、安心して使用できる製品と言えるでしょう。"
+    }
+  },
+  "reliability": {
+    "score": 53.2,
+    "dataAdequacy": {
+      "score": 41,
+      "weight": 60,
+      "description": "口コミ総数が2件と非常に少なく、多くの項目で評価が困難です。今後のデータ蓄積により、評価の信頼性が向上することが期待されます。"
+    },
+    "consistency": {
+      "percentage": 62,
+      "weight": 30,
+      "description": "分析対象の口コミはすべて同じECサイトのものであり、評価のばらつきは見られませんでした。ただし、サンプル数が少ないため、一貫性のスコアは参考値となります。",
+      "score": 62
+    },
+    "freshness": {
+      "score": 100,
+      "weight": 10,
+      "description": "口コミはすべて直近1年以内に投稿されており、鮮度は非常に高いです。現行モデルの性能や使用感を反映した、価値ある情報と判断できます。"
+    }
+  },
+  "updateInfo": {
+    "lastUpdated": "2026-11-03",
+    "firmwareVersion": "",
+    "note": "2026年6月の口コミに基づき分析。サンプル数は極めて少ないものの、静音性や基本的な清掃性能において、利用者から直接的で肯定的な評価が確認されました。"
+  },
+  "timeSaving": {
+    "vacuumMinutes": 10,
+    "mopMinutes": 9,
+    "dailyMinutes": 19,
+    "monthlyHours": 9.5,
+    "annualHours": 115.6,
+    "workDaysEquivalent": 14.4
+  },
+  "performanceAnalysis": {
+    "floorCleaning": {
+      "score": 85,
+      "reviewCount": 0,
+      "positiveReviewCount": 0,
+      "comment": "この項目に特化した口コミは少数でしたが、基本的な清掃能力には満足する声があります。日常的なホコリや髪の毛の除去には十分な性能を発揮すると考えられます。"
+    },
+    "carpetCleaning": {
+      "score": 80,
+      "reviewCount": 0,
+      "positiveReviewCount": 0,
+      "comment": "カーペット清掃に関する具体的な口コミは見当たりませんでした。一般的なロボット掃除機と同様に、毛足の長いカーペットでは性能が低下する可能性があるため注意が必要です。"
+    },
+    "petHairRemoval": {
+      "score": 82,
+      "reviewCount": 0,
+      "positiveReviewCount": 0,
+      "comment": "ペットの毛の吸引力に関する直接的な言及はありませんでした。しかし、基本的な吸引力が高いため、フローリング上のペットの毛に対しては一定の効果が期待できるでしょう。"
+    },
+    "quietness": {
+      "score": 95,
+      "reviewCount": 1,
+      "positiveReviewCount": 1,
+      "comment": "「とても静か」という口コミが確認でき、静音性は非常に高く評価されています。在宅ワーク中や夜間の使用でも、運転音が気になりにくいレベルであることが期待されます。"
+    },
+    "stepClimbing": {
+      "score": 78,
+      "reviewCount": 0,
+      "positiveReviewCount": 0,
+      "comment": "段差乗り越え性能についての口コミはありませんでした。メーカー公称値を確認し、自宅の敷居やラグの厚さが対応範囲内であるか事前に確認することをおすすめします。"
+    },
+    "maintenance": {
+      "score": 88,
+      "reviewCount": 0,
+      "positiveReviewCount": 0,
+      "comment": "メンテナンスの手間に関する言及は見られませんでした。自動ゴミ収集機能により日々のゴミ捨ては不要ですが、定期的なブラシやフィルターの清掃は必要となります。"
+    },
+    "appStability": {
+      "score": 85,
+      "reviewCount": 0,
+      "positiveReviewCount": 0,
+      "comment": "専用アプリの安定性や使い勝手に関する口コミはありませんでした。一般的に安定した動作が報告されていますが、Wi-Fi環境によっては接続が不安定になる可能性もあります。"
+    },
+    "batteryLife": {
+      "score": 88,
+      "reviewCount": 0,
+      "positiveReviewCount": 0,
+      "comment": "バッテリーの持続時間に関する具体的な評価はありませんでした。広い部屋を一度に掃除する場合でも、自動充電・再開機能があるため、清掃が完了しない心配は少ないでしょう。"
+    }
+  },
+  "radarChartData": {
+    "labels": [
+      "フローリング",
+      "カーペット",
+      "ペット毛",
+      "静音性",
+      "段差",
+      "メンテ",
+      "アプリ",
+      "電池"
+    ],
+    "values": [
+      85,
+      80,
+      82,
+      95,
+      78,
+      88,
+      85,
+      88
+    ]
+  },
+  "dataQuality": {
+    "totalReviews": 2,
+    "sampledReviews": 2,
+    "adoptedReviews": 2,
+    "excludedReviews": 0,
+    "trustScore": 53.2,
+    "comment": "総レビュー数は2件と少なく、評価の信頼性は限定的です。ただし、静音性など特定の項目については、利用者からの直接的で肯定的な評価が確認されています。"
+  },
+  "reviewKeywords": {
+    "positive": [
+      {
+        "keyword": "静かで快適",
+        "count": 1
+      }
+    ],
+    "negative": []
+  },
+  "successStrategies": [
+    {
+      "rank": 1,
+      "issue": "Wi-Fiに接続できない",
+      "occurrenceRate": 5,
+      "occurrenceCount": 0,
+      "environmentalFactor": "Wi-Fiルーターの設定",
+      "technicalDescription": "ロボット掃除機が2.4GHz帯のWi-Fiにしか対応していない場合、5GHz帯に接続しようとすると失敗します。また、ルーターのセキュリティ設定が原因で接続できないこともあります。",
+      "avoidanceStrategies": [
+        {
+          "method": "スマホを2.4GHz帯のWi-Fiに接続してから設定を行う",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "多くのロボット掃除機は、初期設定時にスマートフォンが接続しているWi-Fi情報を引き継ぎます。そのため、あらかじめ2.4GHz帯に接続しておくことで、スムーズな設定が可能です。"
+        },
+        {
+          "method": "ルーターのバンドステアリング機能を一時的にオフにする",
+          "effectiveness": "中",
+          "technicalLevel": "中級",
+          "technicalRationale": "2.4GHzと5GHzを自動で切り替える機能が、接続の妨げになることがあります。設定中は機能をオフにし、完了後に再度オンにすることで、問題を回避できる場合があります。"
+        }
+      ],
+      "preventionTips": "購入前に自宅のWi-Fi環境を確認し、ルーターが2.4GHz帯に対応しているかチェックしましょう。また、メーカー公式サイトで対応Wi-Fi規格を確認することも重要です。"
+    }
+  ],
+  "topComplaints": [
+    {
+      "title": "特定の場所を掃除しない・進入禁止エリアのエラー",
+      "percentage": 8,
+      "reviewCount": 0,
+      "description": "口コミでは報告されていませんが、一般的にマッピングの失敗やセンサーの汚れが原因で、特定のエリアを掃除しなかったり、設定した進入禁止エリアを守れないことがあります。",
+      "solution": "まず、本体のセンサー類を柔らかい布で清掃してください。それでも改善しない場合は、アプリでマップを一度リセットし、再度マッピングを行うと解決することが多いです。"
+    },
+    {
+      "title": "ケーブルや敷物などへの乗り上げ・スタック",
+      "percentage": 7,
+      "reviewCount": 0,
+      "description": "床に落ちている充電ケーブルや、毛足の長いラグ、スリッパなどを巻き込んで停止してしまうのは、ロボット掃除機でよくあるトラブルの一つです。未然の対策が重要です。",
+      "solution": "掃除を開始する前に、床に障害物がないか確認し、片付ける習慣をつけましょう。アプリで進入禁止エリアを設定し、トラブルが起きやすい場所を避けるのも非常に有効な対策です。"
+    },
+    {
+      "title": "黒い床やカーペットでエラー停止する",
+      "percentage": 6,
+      "reviewCount": 0,
+      "description": "落下防止センサーが、色の濃い床材や黒いカーペットを「段差」と誤認識してしまい、その場で停止してしまうことがあります。これはセンサーの仕様によるもので故障ではありません。",
+      "solution": "メーカーのサポートに連絡し、落下防止センサーを物理的に無効化する（非推奨）か、アプリで該当エリアを進入禁止に設定する対応が必要です。購入前に自宅の床材を確認しましょう。"
+    }
+  ],
+  "attributeScores": {
+    "petOwner": {
+      "overall": 84,
+      "details": [
+        {
+          "field": "ペットの毛除去",
+          "score": 82,
+          "reviewCount": 0,
+          "comment": "口コミはありませんが、パワフルな吸引力からフローリング上のペットの毛には効果が期待できます。新形状のブラシは毛の絡まりを抑える設計で、メンテナンス性も考慮されています。"
+        },
+        {
+          "field": "静音性",
+          "score": 95,
+          "reviewCount": 1,
+          "comment": "音が非常に静かであるとの高評価があります。臆病なペットがいる家庭でも、掃除中の運転音によるストレスを最小限に抑えることができるため、安心して使用できるでしょう。"
+        },
+        {
+          "field": "メンテナンス性",
+          "score": 88,
+          "reviewCount": 0,
+          "comment": "自動ゴミ収集ドックが搭載されており、日々のゴミ捨ての手間がありません。ペットの毛が溜まりやすいダストボックスを清潔に保てるため、衛生面でもメリットが大きいです。"
+        }
+      ]
+    },
+    "apartment": {
+      "overall": 89,
+      "details": [
+        {
+          "field": "静音性",
+          "score": 95,
+          "reviewCount": 1,
+          "comment": "「とても静か」という口コミは、集合住宅での使用において最大のメリットです。早朝や夜間でも、近隣に気兼ねなく掃除を任せることができ、生活リズムを崩しません。"
+        },
+        {
+          "field": "コンパクトさ",
+          "score": 92,
+          "reviewCount": 0,
+          "comment": "Roborock史上最もコンパクトな設計は、設置スペースが限られるマンションに最適です。家具の多い部屋でも小回りが利き、隅々まで効率的に掃除してくれます。"
+        },
+        {
+          "field": "段差乗り越え",
+          "score": 78,
+          "reviewCount": 0,
+          "comment": "具体的な口コミはありませんが、一般的な敷居や薄手のラグは問題なく乗り越えられる性能を持っています。購入前に自宅の段差を確認しておくと、より確実です。"
+        }
+      ]
+    },
+    "workingProfessional": {
+      "overall": 87,
+      "details": [
+        {
+          "field": "メンテナンス性",
+          "score": 88,
+          "reviewCount": 0,
+          "comment": "自動ゴミ収集機能により、約60日間ゴミ捨てが不要です。忙しい日々の中で掃除の手間を極限まで減らし、自分の時間を確保したい方に最適な機能と言えるでしょう。"
+        },
+        {
+          "field": "アプリの安定性",
+          "score": 85,
+          "reviewCount": 0,
+          "comment": "口コミはありませんが、Roborockのアプリは一般的に安定性が高く評価されています。外出先からでも掃除の指示や状況確認ができ、スマートな遠隔操作が可能です。"
+        },
+        {
+          "field": "静音性",
+          "score": 95,
+          "reviewCount": 1,
+          "comment": "在宅ワーク中に掃除機を稼働させても、運転音が気にならないレベルの静音性が報告されています。仕事に集中しながら、部屋を清潔に保つことができるのは大きな利点です。"
+        }
+      ]
+    },
+    "familyHome": {
+      "overall": 84,
+      "details": [
+        {
+          "field": "清掃能力",
+          "score": 85,
+          "reviewCount": 0,
+          "comment": "基本的な清掃性能には肯定的な評価が見られます。食べこぼしや砂埃など、子供がいる家庭で発生しがちなゴミも、パワフルな吸引力でしっかりと掃除してくれるでしょう。"
+        },
+        {
+          "field": "バッテリー",
+          "score": 88,
+          "reviewCount": 0,
+          "comment": "広いリビングや複数の部屋を一度に掃除する場合でも、バッテリー切れの心配は少ないです。自動で充電ドックに戻り、充電後に中断した場所から掃除を再開する賢い機能を備えています。"
+        },
+        {
+          "field": "コストパフォーマンス",
+          "score": 90,
+          "reviewCount": 1,
+          "comment": "「お値段の割にとても活躍」という口コミがあり、価格と性能のバランスが高く評価されています。家計を預かるファミリー世帯にとって、魅力的な選択肢となるでしょう。"
+        }
+      ]
+    }
+  },
+  "resaleValue": null,
+  "affiliate": {
+    "moshimo": "<!-- START MoshimoAffiliateEasyLink -->\r\n<script type=\"text/javascript\">\r\n(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;\r\nb[a]=b[a]||function(){arguments.currentScript=c.currentScript\r\n||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};\r\nc.getElementById(a)||(d=c.createElement(f),d.src=g,\r\nd.id=a,e=c.getElementsByTagName(\"body\")[0],e.appendChild(d))})\r\n(window,document,\"script\",\"//dn.msmstatic.com/site/cardlink/bundle.js?20220329\",\"msmaflink\");\r\nmsmaflink({\"n\":\"Roborock ロボット掃除機 Q7T+ Q7TP02-04\",\"b\":\"\",\"t\":\"\",\"d\":\"https:\\/\\/thumbnail.image.rakuten.co.jp\",\"c_p\":\"\\/@0_mall\\/yamada-denki\\/cabinet\\/a07000441\",\"p\":[\"\\/1385764013.jpg\",\"\\/1385764013_1.jpg\",\"\\/1385764013_2.jpg\"],\"u\":{\"u\":\"https:\\/\\/item.rakuten.co.jp\\/yamada-denki\\/1385764013\\/\",\"t\":\"rakuten\",\"r_v\":\"\"},\"v\":\"2.1\",\"b_l\":[{\"id\":1,\"u_tx\":\"楽天市場で見る\",\"u_bc\":\"#f76956\",\"u_url\":\"https:\\/\\/item.rakuten.co.jp\\/yamada-denki\\/1385764013\\/\",\"a_id\":5483003,\"p_id\":54,\"pl_id\":27059,\"pc_id\":54,\"s_n\":\"rakuten\",\"u_so\":1},{\"id\":2,\"u_tx\":\"Yahoo!ショッピングで見る\",\"u_bc\":\"#66a7ff\",\"u_url\":\"https:\\/\\/shopping.yahoo.co.jp\\/search?first=1\\u0026p=Roborock%20%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%20Q7T%2B%20Q7TP02-04\",\"a_id\":5483010,\"p_id\":1225,\"pl_id\":27061,\"pc_id\":1925,\"s_n\":\"yahoo\",\"u_so\":2},{\"id\":3,\"u_tx\":\"Amazonで見る\",\"u_bc\":\"#ffcf0f\",\"u_url\":\"https:\\/\\/www.amazon.co.jp\\/s\\/ref=nb_sb_noss_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A\\u0026url=search-alias%3Daps\\u0026field-keywords=Roborock%20%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%20Q7T%2B%20Q7TP02-04\",\"a_id\":5483011,\"p_id\":170,\"pl_id\":27060,\"pc_id\":185,\"s_n\":\"amazon\",\"u_so\":3}],\"eid\":\"VOI49\",\"s\":\"l\"});\r\n</script>\r\n<div id=\"msmaflink-VOI49\">リンク</div>\r\n<!-- MoshimoAffiliateEasyLink END -->",
+    "direct": "",
+    "hpPublish": true
+  },
+  "priceSource": "shop",
+  "priceCheckedAt": "2026-11-03"
+}

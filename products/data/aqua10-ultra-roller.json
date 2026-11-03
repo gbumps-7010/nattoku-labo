@@ -1,0 +1,369 @@
+{
+  "productId": "aqua10-ultra-roller",
+  "productName": "Aqua10 Ultra Roller",
+  "manufacturer": "Dreame",
+  "modelNumber": "RLH71DE",
+  "imageUrl": "https://thumbnail.image.rakuten.co.jp/@0_mall/yamada-denki/cabinet/a07000527/1386714017.jpg",
+  "overallRating": 3.0,
+  "totalReviews": 3,
+  "price": 249800,
+  "reliabilityScore": 53.2,
+  "asin": "",
+  "keywords": [
+    "Aqua10 Ultra Roller",
+    "Dreame",
+    "ロボット掃除機",
+    "水拭き",
+    "ペット",
+    "自動洗浄"
+  ],
+  "metaTitle": "Dreame Aqua10 Ultra Roller 詳細分析 | 3件の口コミからわかる実力と注意点",
+  "metaDescription": "Dreame Aqua10 Ultra Rollerの3件の口コミを徹底解析。ペットの毛に強い自動洗浄モップや、一部で報告される水拭きトラブルなど、購入前に知るべき真実を公開します。",
+  "categoryC": {
+    "userSatisfaction": {
+      "score": 85,
+      "reviewCount": 3,
+      "comment": "ペットオーナーからの評価は非常に高い一方、初期ロット品と見られる製品で水拭き性能に関する不満が見られました。全体としては満足度が高いものの、個体差や使用環境による影響も考慮すべきでしょう。"
+    },
+    "repurchaseIntention": {
+      "percentage": 67,
+      "reviewCount": 3,
+      "comment": "「買ってよかった」という声がある一方で、高価格帯に見合わないとする厳しい意見も。特に水拭き機能の安定性を重視するユーザーは、今後の改善や後継機に期待を寄せている可能性があります。"
+    },
+    "failureRate": {
+      "percentage": 33,
+      "reviewCount": 3,
+      "breakdown": {
+        "hardware": 1,
+        "software": 0,
+        "environmental": 0
+      },
+      "comment": "クラウドファンディングの初期ロット品で半年経たずに水拭き関連の動作が怪しくなったとの報告がありました。ハードウェア起因の不具合の可能性が考えられ、製品の耐久性については注意が必要です。"
+    }
+  },
+  "reliability": {
+    "score": 53.2,
+    "dataAdequacy": {
+      "score": 41,
+      "weight": 60,
+      "description": "口コミ件数が50件未満のため、スコアは40点です。まだ市場に出回り始めたばかりの製品である可能性があり、評価の全体像を掴むにはデータが不足しています。"
+    },
+    "consistency": {
+      "score": 62,
+      "weight": 30,
+      "description": "評価がAmazonのみでサイト間の比較ができないため70点としています。高評価と厳しい評価が混在しており、ユーザーの期待値や使用環境によって満足度が大きく分かれる傾向が見られます。",
+      "percentage": 62
+    },
+    "freshness": {
+      "score": 100,
+      "weight": 10,
+      "description": "口コミは発売から数ヶ月以内のものが中心で、比較的新しい情報です。ただし直近1ヶ月以内の投稿は少なく、最新のファームウェアでの改善状況などは反映されていない可能性があります。"
+    }
+  },
+  "updateInfo": {
+    "lastUpdated": "2026-11-03",
+    "firmwareVersion": "",
+    "note": "2026年7月から8月の口コミを基に分析。ペットオーナーからは高評価ですが、初期ロットとみられる製品で水拭き機能への不満が報告されています。全体的に評価が分かれる傾向にあります。"
+  },
+  "timeSaving": {
+    "vacuumMinutes": 10,
+    "mopMinutes": 9,
+    "dailyMinutes": 19,
+    "monthlyHours": 9.5,
+    "annualHours": 115.6,
+    "workDaysEquivalent": 14.4
+  },
+  "performanceAnalysis": {
+    "floorCleaning": {
+      "score": 75,
+      "reviewCount": 3,
+      "positiveReviewCount": 2,
+      "comment": "モップを洗いながら掃除する機能は高く評価されています。しかし、洗剤の取りこぼしやステーションでの泡立ちなど、水拭き機能の安定性に関する深刻な指摘もあり、評価が大きく分かれています。"
+    },
+    "carpetCleaning": {
+      "score": 50,
+      "reviewCount": 0,
+      "positiveReviewCount": 0,
+      "comment": "提供された口コミの中にカーペット掃除に関する言及はありませんでした。そのため、この項目に関する性能は不明であり、評価は参考値となります。購入前に別途確認することをおすすめします。"
+    },
+    "petHairRemoval": {
+      "score": 95,
+      "reviewCount": 2,
+      "positiveReviewCount": 2,
+      "comment": "犬を飼っているユーザーから「めちゃくちゃ便利」と絶賛されています。吸引力と回転モップの組み合わせが、ペットの毛や足跡汚れの除去に非常に効果的であることがうかがえます。"
+    },
+    "quietness": {
+      "score": 50,
+      "reviewCount": 0,
+      "positiveReviewCount": 0,
+      "comment": "提供された口コミの中に静音性に関する言及はありませんでした。高機能モデルのため、動作音がある程度することは想定されますが、具体的なレベルは不明です。音に敏感な方は注意が必要です。"
+    },
+    "stepClimbing": {
+      "score": 50,
+      "reviewCount": 0,
+      "positiveReviewCount": 0,
+      "comment": "提供された口コミの中に段差乗り越え性能に関する具体的な言及はありませんでした。ケーブル類は回避するものの、段ボールのような軽微な障害物で問題が起きた例があり、複雑な地形は苦手な可能性があります。"
+    },
+    "maintenance": {
+      "score": 60,
+      "reviewCount": 1,
+      "positiveReviewCount": 0,
+      "comment": "ステーションが泡立ち水浸しになるという報告があり、メンテナンスの手間が増える可能性が示唆されています。モップ自動洗浄機能は便利ですが、ステーション自体の清掃や管理が必要になる場合があります。"
+    },
+    "appStability": {
+      "score": 50,
+      "reviewCount": 0,
+      "positiveReviewCount": 0,
+      "comment": "アプリの安定性に関する直接の言及はありませんが、音声操作が「頭悪い」と評されており、スマート機能全般の洗練度に課題がある可能性がうかがえます。基本的な操作は問題ないと思われます。"
+    },
+    "batteryLife": {
+      "score": 50,
+      "reviewCount": 0,
+      "positiveReviewCount": 0,
+      "comment": "提供された口コミの中にバッテリーの持続時間に関する言及はありませんでした。多機能なハイエンドモデルのため、掃除モードによっては稼働時間が短くなる可能性も考えられます。"
+    }
+  },
+  "radarChartData": {
+    "labels": [
+      "フローリング",
+      "カーペット",
+      "ペット毛",
+      "静音性",
+      "段差",
+      "メンテ",
+      "アプリ",
+      "電池"
+    ],
+    "values": [
+      75,
+      50,
+      95,
+      50,
+      50,
+      60,
+      50,
+      50
+    ]
+  },
+  "dataQuality": {
+    "totalReviews": 3,
+    "sampledReviews": 3,
+    "adoptedReviews": 3,
+    "excludedReviews": 0,
+    "trustScore": 53.2,
+    "comment": "3件の口コミをすべて採用。サンプル数は少ないですが、高評価と厳しい意見の両方が含まれており、製品の長所と潜在的な問題点の両方を把握する上で参考になるデータです。"
+  },
+  "reviewKeywords": {
+    "positive": [
+      {
+        "keyword": "使いやすい・便利",
+        "count": 2
+      },
+      {
+        "keyword": "満足・買ってよかった",
+        "count": 1
+      },
+      {
+        "keyword": "水拭き・拭き掃除が良い",
+        "count": 1
+      }
+    ],
+    "negative": []
+  },
+  "successStrategies": [
+    {
+      "rank": 1,
+      "issue": "水拭き時の洗剤漏れ・泡立ち問題",
+      "occurrenceRate": 33,
+      "occurrenceCount": 1,
+      "environmentalFactor": "初期ロットの個体差、または洗剤の量",
+      "technicalDescription": "ステーションでモップを洗浄する際、または清掃中に、洗剤が過剰に供給され泡立ったり、床に洗剤を取りこぼしたりする問題。センサーや供給機構の不具合が考えられます。",
+      "avoidanceStrategies": [
+        {
+          "method": "公式の洗剤自動投入機能を使い、手動で追加しない",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "自動投入機能は最適な量を計算して供給します。手動で洗剤を追加したり、非純正の洗剤を使用したりすると、泡立ちや故障の原因となるため、必ず純正品を規定通り使用してください。"
+        },
+        {
+          "method": "ステーションの汚水タンクと洗浄ベースを定期的に清掃する",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalRationale": "洗浄ベースやフィルターに汚れが溜まると、水の流れが阻害され、泡立ちや水漏れにつながることがあります。公式マニュアルに従い、定期的なメンテナンスを行うことでトラブルを予防できます。"
+        }
+      ],
+      "preventionTips": "初めて使用する際は、まず水のみで水拭き運転を試し、正常に動作するか確認しましょう。問題がなければ、次に自動投入機能で純正洗剤を使用し、泡立ち等が発生しないか観察することをおすすめします。"
+    },
+    {
+      "rank": 2,
+      "issue": "軽微な障害物でのスタック・巻き込み",
+      "occurrenceRate": 33,
+      "occurrenceCount": 1,
+      "environmentalFactor": "床に置かれた薄い段ボールやシート類",
+      "technicalDescription": "ケーブル類のような明確な障害物は回避できるものの、畳まれた段ボールや布・シートのような薄く低い障害物を乗り越えようとしてスタックしたり、巻き込んでしまうことがあります。",
+      "avoidanceStrategies": [
+        {
+          "method": "掃除前に床から段ボールや布類を片付ける",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "ロボット掃除機の障害物回避性能には限界があります。特に薄いものや柔らかいものはセンサーが検知しにくい傾向があるため、事前の片付けが最も確実な対策となります。"
+        },
+        {
+          "method": "アプリで侵入禁止エリアを設定する",
+          "effectiveness": "中",
+          "technicalLevel": "初級",
+          "technicalRationale": "物が散らかりやすい場所や、段ボールなどを一時的に置いている場所をアプリのマップ上で侵入禁止エリアに設定することで、ロボットがその場所に近づかないように制御できます。"
+        }
+      ],
+      "preventionTips": "障害物回避センサーは定期的に乾いた柔らかい布で拭き、汚れや指紋を取り除いてください。センサーが汚れていると検知精度が低下し、予期せぬトラブルの原因になることがあります。"
+    },
+    {
+      "rank": 3,
+      "issue": "音声操作の認識精度が低い",
+      "occurrenceRate": 33,
+      "occurrenceCount": 1,
+      "environmentalFactor": "ネットワーク環境、発話の明瞭さ",
+      "technicalDescription": "「掃除して」といった単純な指示に対して「それはできない」と応答するなど、音声コマンドを正しく認識・実行できない問題。スマートスピーカーとの連携や本体マイクの性能に起因する可能性があります。",
+      "avoidanceStrategies": [
+        {
+          "method": "アプリから操作する",
+          "effectiveness": "高",
+          "technicalLevel": "初級",
+          "technicalRationale": "音声操作に問題がある場合でも、スマートフォンアプリからの操作はより確実です。清掃モードの選択やスケジュール設定など、詳細な指示はアプリで行うのが最も信頼性が高い方法です。"
+        },
+        {
+          "method": "スマートスピーカーとの連携を再設定する",
+          "effectiveness": "中",
+          "technicalLevel": "中級",
+          "technicalRationale": "AlexaやGoogleアシスタントと連携している場合、一度スキルやデバイスの連携を解除し、再設定することで問題が解決することがあります。また、呼び出す際のコマンドが正しいか公式ガイドで確認してください。"
+        }
+      ],
+      "preventionTips": "ロボット掃除機に話しかける際は、テレビなどの雑音がない静かな環境で、はっきりと明瞭に発話することを心がけてください。Wi-Fiルーターの近くで操作することも通信の安定につながります。"
+    }
+  ],
+  "topComplaints": [
+    {
+      "title": "水拭き時の洗剤漏れ・泡立ち問題",
+      "percentage": 33,
+      "reviewCount": 1,
+      "description": "ステーションが泡立って水浸しになったり、床に洗剤を取りこぼしたりするなど、水拭き機能の動作が不安定だという指摘。初期ロット品特有の問題である可能性も考えられます。",
+      "solution": "まず純正洗剤が自動投入機能で正しく使われているか確認してください。手動での追加は避け、ステーションの洗浄ベースや汚水タンク周りを定期的に清掃し、汚れの詰まりを防ぐことが重要です。"
+    },
+    {
+      "title": "軽微な障害物でのスタック",
+      "percentage": 33,
+      "reviewCount": 1,
+      "description": "ケーブルは回避するものの、床に置かれた段ボールに乗り上げてスタックし、周囲を濡らしてしまったという報告。薄い物体や柔らかい物体の認識はまだ完璧ではないようです。",
+      "solution": "センサーの性能には限界があるため、掃除前には床にある段ボール、布、薄いラグなどを片付けるのが最も確実です。または、アプリのマップ機能でそれらを置く場所を侵入禁止エリアに設定しましょう。"
+    },
+    {
+      "title": "音声操作の認識精度が低い",
+      "percentage": 33,
+      "reviewCount": 1,
+      "description": "掃除を指示しても「それはできない」と返答されるなど、音声コマンドの認識能力が低いとの評価。スマートホーム連携を期待しているユーザーにとっては大きな不満点となる可能性があります。",
+      "solution": "確実な操作はスマートフォンアプリで行うことを推奨します。音声操作を利用する場合は、雑音の少ない環境ではっきり発音してみてください。スマートスピーカー連携の場合は、スキルの再設定も有効です。"
+    }
+  ],
+  "attributeScores": {
+    "petOwner": {
+      "overall": 82,
+      "details": [
+        {
+          "field": "ペットの毛除去",
+          "score": 95,
+          "reviewCount": 2,
+          "comment": "犬を飼っている家庭から「毎日稼働させていてめちゃくちゃ便利」との声があり、ペットの毛の掃除能力は非常に高い評価を得ています。抜け毛が多いペットがいるご家庭に最適です。"
+        },
+        {
+          "field": "フローリング掃除",
+          "score": 75,
+          "reviewCount": 3,
+          "comment": "モップの自動洗浄機能はペットの足跡汚れなどを常にきれいに拭き上げるのに役立ちます。ただし、水拭き機能の安定性には懸念があり、個体差や使い方に注意が必要です。"
+        },
+        {
+          "field": "メンテナンス",
+          "score": 60,
+          "reviewCount": 1,
+          "comment": "全自動で便利な一方、ステーションで水漏れが発生したという報告もあります。ペットがいると使用頻度も高まるため、定期的なステーションの清掃や点検が欠かせません。"
+        }
+      ]
+    },
+    "apartment": {
+      "overall": 58,
+      "details": [
+        {
+          "field": "静音性",
+          "score": 50,
+          "reviewCount": 0,
+          "comment": "口コミでは言及がなく、動作音のレベルは不明です。高機能な分、吸引やモップ洗浄時の音は大きい可能性があり、集合住宅では夜間や早朝の使用に配慮が必要かもしれません。"
+        },
+        {
+          "field": "フローリング掃除",
+          "score": 75,
+          "reviewCount": 3,
+          "comment": "限られたスペースを効率的に掃除し、モップ自動洗浄で常に清潔な床を保てる点はマンション生活に適しています。ただし、水漏れトラブルは床材へのダメージが懸念されます。"
+        },
+        {
+          "field": "段差乗り越え",
+          "score": 50,
+          "reviewCount": 0,
+          "comment": "口コミに言及はありませんが、敷居やラグなどの小さな段差への対応力は不明です。段ボールでスタックした例から、複雑な段差がある部屋での使用は注意が必要かもしれません。"
+        }
+      ]
+    },
+    "workingProfessional": {
+      "overall": 54,
+      "details": [
+        {
+          "field": "アプリ/スマート機能",
+          "score": 50,
+          "reviewCount": 0,
+          "comment": "音声操作の精度に課題があるとの指摘があり、スマート機能に過度な期待は禁物です。留守中にアプリで操作する基本的な使い方であれば、大きな問題はないでしょう。"
+        },
+        {
+          "field": "メンテナンス",
+          "score": 60,
+          "reviewCount": 1,
+          "comment": "「全自動」が魅力ですが、ステーションの水漏れなど予期せぬトラブルが発生すると、かえって手間が増える可能性があります。忙しい人ほど、安定した動作が求められます。"
+        },
+        {
+          "field": "バッテリー",
+          "score": 50,
+          "reviewCount": 0,
+          "comment": "バッテリーに関する口コミはありませんでした。外出中に掃除を完了させるためには、家の広さに見合った十分な稼働時間があるか、事前に確認することが重要です。"
+        }
+      ]
+    },
+    "familyHome": {
+      "overall": 60,
+      "details": [
+        {
+          "field": "フローリング掃除",
+          "score": 75,
+          "reviewCount": 3,
+          "comment": "広いリビングの掃除や、子供の食べこぼしなどを自動で綺麗にしてくれる点はファミリー世帯にとって大きな魅力です。水拭き機能が安定して動作すれば、家事負担を大幅に軽減できます。"
+        },
+        {
+          "field": "バッテリー",
+          "score": 50,
+          "reviewCount": 0,
+          "comment": "広い家を一度に掃除できるか、バッテリー性能は未知数です。途中で充電に戻る機能はあると思われますが、掃除完了までの時間は家の広さによって大きく変わるでしょう。"
+        },
+        {
+          "field": "カーペット掃除",
+          "score": 50,
+          "reviewCount": 0,
+          "comment": "カーペット掃除に関する評価がないため、ラグや絨毯が多い家庭では性能が不明です。水拭きとカーペット掃除を両立できるか、モップリフト機能の有無などを確認する必要があります。"
+        }
+      ]
+    }
+  },
+  "resaleValue": null,
+  "affiliate": {
+    "moshimo": "<!-- START MoshimoAffiliateEasyLink -->\r\n<script type=\"text/javascript\">\r\n(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;\r\nb[a]=b[a]||function(){arguments.currentScript=c.currentScript\r\n||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};\r\nc.getElementById(a)||(d=c.createElement(f),d.src=g,\r\nd.id=a,e=c.getElementsByTagName(\"body\")[0],e.appendChild(d))})\r\n(window,document,\"script\",\"//dn.msmstatic.com/site/cardlink/bundle.js?20220329\",\"msmaflink\");\r\nmsmaflink({\"n\":\"DREAME RLH71DE 吸引・水拭き両用ロボット掃除機 Aqua10 Ultra Roller 30,000Paの超強力吸引 8cmの段差も通る ブラック\",\"b\":\"\",\"t\":\"\",\"d\":\"https:\\/\\/thumbnail.image.rakuten.co.jp\",\"c_p\":\"\\/@0_mall\\/yamada-denki\\/cabinet\\/a07000527\",\"p\":[\"\\/1386714017.jpg\",\"\\/1386714017_1.jpg\",\"\\/1386714017_2.jpg\"],\"u\":{\"u\":\"https:\\/\\/item.rakuten.co.jp\\/yamada-denki\\/1386714017\\/\",\"t\":\"rakuten\",\"r_v\":\"\"},\"v\":\"2.1\",\"b_l\":[{\"id\":1,\"u_tx\":\"楽天市場で見る\",\"u_bc\":\"#f76956\",\"u_url\":\"https:\\/\\/item.rakuten.co.jp\\/yamada-denki\\/1386714017\\/\",\"a_id\":5483003,\"p_id\":54,\"pl_id\":27059,\"pc_id\":54,\"s_n\":\"rakuten\",\"u_so\":1},{\"id\":2,\"u_tx\":\"Yahoo!ショッピングで見る\",\"u_bc\":\"#66a7ff\",\"u_url\":\"https:\\/\\/shopping.yahoo.co.jp\\/search?first=1\\u0026p=DREAME%20RLH71DE%20%E5%90%B8%E5%BC%95%E3%83%BB%E6%B0%B4%E6%8B%AD%E3%81%8D%E4%B8%A1%E7%94%A8%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%20Aqua10%20Ultra%20Roller%2030%2C000Pa%E3%81%AE%E8%B6%85%E5%BC%B7%E5%8A%9B%E5%90%B8%E5%BC%95%208cm%E3%81%AE%E6%AE%B5%E5%B7%AE%E3%82%82%E9%80%9A%E3%82%8B%20%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF\",\"a_id\":5483010,\"p_id\":1225,\"pl_id\":27061,\"pc_id\":1925,\"s_n\":\"yahoo\",\"u_so\":2},{\"id\":3,\"u_tx\":\"Amazonで見る\",\"u_bc\":\"#ffcf0f\",\"u_url\":\"https:\\/\\/www.amazon.co.jp\\/s\\/ref=nb_sb_noss_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A\\u0026url=search-alias%3Daps\\u0026field-keywords=DREAME%20RLH71DE%20%E5%90%B8%E5%BC%95%E3%83%BB%E6%B0%B4%E6%8B%AD%E3%81%8D%E4%B8%A1%E7%94%A8%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%20Aqua10%20Ultra%20Roller%2030%2C000Pa%E3%81%AE%E8%B6%85%E5%BC%B7%E5%8A%9B%E5%90%B8%E5%BC%95%208cm%E3%81%AE%E6%AE%B5%E5%B7%AE%E3%82%82%E9%80%9A%E3%82%8B%20%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF\",\"a_id\":5483011,\"p_id\":170,\"pl_id\":27060,\"pc_id\":185,\"s_n\":\"amazon\",\"u_so\":3}],\"eid\":\"sX7IN\",\"s\":\"l\"});\r\n</script>\r\n<div id=\"msmaflink-sX7IN\">リンク</div>\r\n<!-- MoshimoAffiliateEasyLink END -->",
+    "direct": "",
+    "hpPublish": true
+  },
+  "priceSource": "official",
+  "priceCheckedAt": "2026-11-03"
+}

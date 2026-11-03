@@ -1,25 +1,140 @@
 [
   {
+    "id": "aqua10-ultra-roller",
+    "name": "Aqua10 Ultra Roller",
+    "manufacturer": "Dreame",
+    "price": 249800,
+    "reviewCount": 3,
+    "totalReviewCount": 3,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/yamada-denki/cabinet/a07000527/1386714017.jpg",
+    "badges": [
+      "Dreame",
+      "使いやすい・便利",
+      "満足・買ってよかった"
+    ],
+    "overallTrustScore": 53.2,
+    "specs": {
+      "suction": 75,
+      "mopping": 50,
+      "noise": 50,
+      "obstacle": 50,
+      "app": 50,
+      "maintenance": 60
+    }
+  },
+  {
+    "id": "aqua10s-roller-ae",
+    "name": "Aqua10s Roller AE",
+    "manufacturer": "Dreame",
+    "price": 99800,
+    "reviewCount": 18,
+    "totalReviewCount": 18,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/13220398/20260623-153601.jpg",
+    "badges": [
+      "Dreame",
+      "水拭き・拭き掃除が良い",
+      "吸引力が高い"
+    ],
+    "overallTrustScore": 56.2,
+    "specs": {
+      "suction": 98,
+      "mopping": 85,
+      "noise": 86,
+      "obstacle": 75,
+      "app": 94,
+      "maintenance": 96
+    }
+  },
+  {
     "id": "d10-plus",
     "name": "D10 Plus",
     "manufacturer": "Dreame",
     "price": 21600,
-    "reviewCount": 28,
-    "totalReviewCount": 28,
+    "reviewCount": 34,
+    "totalReviewCount": 34,
     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/11302689/imgrc0140534087.jpg",
     "badges": [
       "Dreame",
-      "静かで快適",
-      "満足・買ってよかった"
+      "満足・買ってよかった",
+      "静かで快適"
     ],
-    "overallTrustScore": 52.7,
+    "overallTrustScore": 54.5,
+    "specs": {
+      "suction": 92,
+      "mopping": 78,
+      "noise": 95,
+      "obstacle": 70,
+      "app": 75,
+      "maintenance": 80
+    }
+  },
+  {
+    "id": "d20-pro-plus",
+    "name": "D20 Pro Plus",
+    "manufacturer": "Dreame",
+    "price": 68800,
+    "reviewCount": 106,
+    "totalReviewCount": 106,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/20250609195227_1.jpg",
+    "badges": [
+      "Dreame",
+      "水拭き・拭き掃除が良い",
+      "吸引力が高い"
+    ],
+    "overallTrustScore": 72.7,
+    "specs": {
+      "suction": 93,
+      "mopping": 73,
+      "noise": 73,
+      "obstacle": 50,
+      "app": 88,
+      "maintenance": 92
+    }
+  },
+  {
+    "id": "d20-pro",
+    "name": "D20 Pro",
+    "manufacturer": "Dreame",
+    "price": 47800,
+    "reviewCount": 101,
+    "totalReviewCount": 101,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/biccamera/cabinet/product/13219/00000014193285_a01.jpg",
+    "badges": [
+      "Dreame",
+      "水拭き・拭き掃除が良い",
+      "吸引力が高い"
+    ],
+    "overallTrustScore": 70.7,
     "specs": {
       "suction": 95,
-      "mopping": 78,
-      "noise": 96,
-      "obstacle": 80,
-      "app": 88,
-      "maintenance": 85
+      "mopping": 82,
+      "noise": 84,
+      "obstacle": 72,
+      "app": 85,
+      "maintenance": 88
+    }
+  },
+  {
+    "id": "d20-ultra",
+    "name": "D20 Ultra",
+    "manufacturer": "Dreame",
+    "price": 49800,
+    "reviewCount": 8,
+    "totalReviewCount": 8,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/20250815185610_1.jpg",
+    "badges": [
+      "Dreame",
+      "水拭き・拭き掃除が良い",
+      "床がサラサラ・ピカピカ"
+    ],
+    "overallTrustScore": 53.8,
+    "specs": {
+      "suction": 98,
+      "mopping": 90,
+      "noise": 95,
+      "obstacle": 88,
+      "app": 80,
+      "maintenance": 96
     }
   },
   {
@@ -27,22 +142,22 @@
     "name": "D9 Max Gen 2",
     "manufacturer": "Dreame",
     "price": 20800,
-    "reviewCount": 58,
-    "totalReviewCount": 58,
+    "reviewCount": 34,
+    "totalReviewCount": 34,
     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/d9maxgen2_cp.jpg",
     "badges": [
       "Dreame",
       "水拭き・拭き掃除が良い",
-      "マッピング・ルートが賢い"
+      "吸引力が高い"
     ],
-    "overallTrustScore": 70,
+    "overallTrustScore": 57.4,
     "specs": {
       "suction": 96,
-      "mopping": 78,
+      "mopping": 75,
       "noise": 88,
-      "obstacle": 72,
-      "app": 92,
-      "maintenance": 85
+      "obstacle": 70,
+      "app": 93,
+      "maintenance": 78
     }
   },
   {
@@ -73,22 +188,22 @@
     "name": "DEEBOT mini",
     "manufacturer": "ECOVACS",
     "price": 49800,
-    "reviewCount": 89,
-    "totalReviewCount": 89,
+    "reviewCount": 84,
+    "totalReviewCount": 84,
     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/djx11-11ee.jpg",
     "badges": [
       "ECOVACS",
-      "満足・買ってよかった",
-      "水拭き・拭き掃除が良い"
+      "水拭き・拭き掃除が良い",
+      "満足・買ってよかった"
     ],
-    "overallTrustScore": 79.3,
+    "overallTrustScore": 78.1,
     "specs": {
-      "suction": 94,
-      "mopping": 35,
-      "noise": 92,
-      "obstacle": 65,
-      "app": 76,
-      "maintenance": 94
+      "suction": 96,
+      "mopping": 72,
+      "noise": 89,
+      "obstacle": 75,
+      "app": 82,
+      "maintenance": 95
     }
   },
   {
@@ -101,16 +216,16 @@
     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/ydlx11-35ee.jpg",
     "badges": [
       "ECOVACS",
-      "満足・買ってよかった",
-      "水拭き・拭き掃除が良い"
+      "水拭き・拭き掃除が良い",
+      "マッピング・ルートが賢い"
     ],
-    "overallTrustScore": 84.4,
+    "overallTrustScore": 84.7,
     "specs": {
-      "suction": 98,
-      "mopping": 85,
+      "suction": 95,
+      "mopping": 80,
       "noise": 82,
-      "obstacle": 72,
-      "app": 86,
+      "obstacle": 65,
+      "app": 70,
       "maintenance": 96
     }
   },
@@ -119,22 +234,22 @@
     "name": "DEEBOT N30",
     "manufacturer": "ECOVACS",
     "price": 29800,
-    "reviewCount": 95,
-    "totalReviewCount": 95,
+    "reviewCount": 115,
+    "totalReviewCount": 115,
     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/ydlx11-32df.jpg",
     "badges": [
       "ECOVACS",
-      "吸引力が高い",
-      "マッピング・ルートが賢い"
+      "満足・買ってよかった",
+      "吸引力が高い"
     ],
-    "overallTrustScore": 77.8,
+    "overallTrustScore": 79,
     "specs": {
-      "suction": 95,
-      "mopping": 86,
-      "noise": 82,
-      "obstacle": 70,
+      "suction": 96,
+      "mopping": 82,
+      "noise": 80,
+      "obstacle": 85,
       "app": 88,
-      "maintenance": 88
+      "maintenance": 78
     }
   },
   {
@@ -165,22 +280,22 @@
     "name": "DEEBOT T50 OMNI",
     "manufacturer": "ECOVACS",
     "price": 99800,
-    "reviewCount": 224,
-    "totalReviewCount": 224,
+    "reviewCount": 225,
+    "totalReviewCount": 225,
     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/ddx57-12ee.jpg",
     "badges": [
       "ECOVACS",
       "水拭き・拭き掃除が良い",
       "満足・買ってよかった"
     ],
-    "overallTrustScore": 85.6,
+    "overallTrustScore": 85.9,
     "specs": {
-      "suction": 96,
+      "suction": 97,
       "mopping": 78,
       "noise": 88,
-      "obstacle": 72,
-      "app": 80,
-      "maintenance": 85
+      "obstacle": 62,
+      "app": 78,
+      "maintenance": 82
     }
   },
   {
@@ -188,21 +303,21 @@
     "name": "DEEBOT T50S OMNI",
     "manufacturer": "ECOVACS",
     "price": 109799,
-    "reviewCount": 71,
-    "totalReviewCount": 71,
+    "reviewCount": 103,
+    "totalReviewCount": 103,
     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/ddx47-0401.jpg",
     "badges": [
       "ECOVACS",
       "満足・買ってよかった",
       "水拭き・拭き掃除が良い"
     ],
-    "overallTrustScore": 73,
+    "overallTrustScore": 82.3,
     "specs": {
-      "suction": 98,
-      "mopping": 78,
-      "noise": 88,
+      "suction": 96,
+      "mopping": 80,
+      "noise": 78,
       "obstacle": 75,
-      "app": 82,
+      "app": 85,
       "maintenance": 94
     }
   },
@@ -253,25 +368,71 @@
     }
   },
   {
+    "id": "deebot-t90-max-omni",
+    "name": "T90 MAX OMNI",
+    "manufacturer": "ECOVACS",
+    "price": 139800,
+    "reviewCount": 12,
+    "totalReviewCount": 12,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/14108108/zj2633-0801.jpg",
+    "badges": [
+      "ECOVACS",
+      "水拭き・拭き掃除が良い",
+      "満足・買ってよかった"
+    ],
+    "overallTrustScore": 55.6,
+    "specs": {
+      "suction": 98,
+      "mopping": 0,
+      "noise": 95,
+      "obstacle": 65,
+      "app": 94,
+      "maintenance": 85
+    }
+  },
+  {
     "id": "deebot-t90-omni",
     "name": "DEEBOT T90 OMNI",
     "manufacturer": "ECOVACS",
     "price": 149799,
-    "reviewCount": 94,
-    "totalReviewCount": 94,
+    "reviewCount": 100,
+    "totalReviewCount": 100,
     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/dex96-12ee.jpg",
     "badges": [
       "ECOVACS",
-      "満足・買ってよかった",
-      "水拭き・拭き掃除が良い"
+      "水拭き・拭き掃除が良い",
+      "満足・買ってよかった"
     ],
-    "overallTrustScore": 79,
+    "overallTrustScore": 82.3,
     "specs": {
       "suction": 96,
-      "mopping": 88,
-      "noise": 95,
-      "obstacle": 78,
-      "app": 82,
+      "mopping": 82,
+      "noise": 91,
+      "obstacle": 72,
+      "app": 87,
+      "maintenance": 88
+    }
+  },
+  {
+    "id": "deebot-t90-pro-omni",
+    "name": "T90 PRO OMNI",
+    "manufacturer": "ECOVACS",
+    "price": 159800,
+    "reviewCount": 18,
+    "totalReviewCount": 18,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/14108108/dex95-12ee.jpg",
+    "badges": [
+      "ECOVACS",
+      "水拭き・拭き掃除が良い",
+      "満足・買ってよかった"
+    ],
+    "overallTrustScore": 56.8,
+    "specs": {
+      "suction": 95,
+      "mopping": 50,
+      "noise": 90,
+      "obstacle": 30,
+      "app": 40,
       "maintenance": 85
     }
   },
@@ -280,22 +441,45 @@
     "name": "DEEBOT X11 OmniCyclone",
     "manufacturer": "ECOVACS",
     "price": 229900,
-    "reviewCount": 93,
-    "totalReviewCount": 93,
+    "reviewCount": 107,
+    "totalReviewCount": 107,
     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/dex99-10ee.jpg",
     "badges": [
       "ECOVACS",
       "満足・買ってよかった",
       "水拭き・拭き掃除が良い"
     ],
-    "overallTrustScore": 70.3,
+    "overallTrustScore": 82.3,
+    "specs": {
+      "suction": 97,
+      "mopping": 70,
+      "noise": 96,
+      "obstacle": 75,
+      "app": 85,
+      "maintenance": 92
+    }
+  },
+  {
+    "id": "deebot-x12s-pro-omni",
+    "name": "DEEBOT X12S PRO OMNI",
+    "manufacturer": "ECOVACS",
+    "price": 229900,
+    "reviewCount": 7,
+    "totalReviewCount": 7,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/14108108/zj2570.jpg",
+    "badges": [
+      "ECOVACS",
+      "満足・買ってよかった",
+      "水拭き・拭き掃除が良い"
+    ],
+    "overallTrustScore": 54.4,
     "specs": {
       "suction": 98,
-      "mopping": 85,
-      "noise": 86,
-      "obstacle": 75,
-      "app": 94,
-      "maintenance": 96
+      "mopping": 70,
+      "noise": 88,
+      "obstacle": 70,
+      "app": 95,
+      "maintenance": 90
     }
   },
   {
@@ -311,14 +495,37 @@
       "水拭き・拭き掃除が良い",
       "満足・買ってよかった"
     ],
-    "overallTrustScore": 83.5,
+    "overallTrustScore": 81.4,
     "specs": {
-      "suction": 92,
-      "mopping": 75,
-      "noise": 83,
-      "obstacle": 44,
-      "app": 81,
-      "maintenance": 74
+      "suction": 95,
+      "mopping": 82,
+      "noise": 90,
+      "obstacle": 65,
+      "app": 78,
+      "maintenance": 80
+    }
+  },
+  {
+    "id": "e5",
+    "name": "E5",
+    "manufacturer": "Roborock",
+    "price": 19800,
+    "reviewCount": 31,
+    "totalReviewCount": 31,
+    "image": "https://m.media-amazon.com/images/I/41H5Fv-yLRL._SL500_.jpg",
+    "badges": [
+      "Roborock",
+      "水拭き・拭き掃除が良い",
+      "満足・買ってよかった"
+    ],
+    "overallTrustScore": 54.2,
+    "specs": {
+      "suction": 88,
+      "mopping": 90,
+      "noise": 55,
+      "obstacle": 78,
+      "app": 45,
+      "maintenance": 68
     }
   },
   {
@@ -326,22 +533,22 @@
     "name": "Eufy Robot Vacuum Auto-Empty C10",
     "manufacturer": "Anker",
     "price": 29990,
-    "reviewCount": 225,
-    "totalReviewCount": 225,
+    "reviewCount": 224,
+    "totalReviewCount": 224,
     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t2292/t2292_nomal.jpg",
     "badges": [
       "Anker",
       "満足・買ってよかった",
       "使いやすい・便利"
     ],
-    "overallTrustScore": 85,
+    "overallTrustScore": 83.5,
     "specs": {
-      "suction": 93,
+      "suction": 95,
       "mopping": 78,
-      "noise": 88,
-      "obstacle": 85,
-      "app": 89,
-      "maintenance": 94
+      "noise": 92,
+      "obstacle": 75,
+      "app": 88,
+      "maintenance": 93
     }
   },
   {
@@ -349,8 +556,8 @@
     "name": "Eufy Robot Vacuum Omni C28",
     "manufacturer": "Anker",
     "price": 99990,
-    "reviewCount": 99,
-    "totalReviewCount": 99,
+    "reviewCount": 97,
+    "totalReviewCount": 97,
     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t211a/imgrc0103188193.jpg",
     "badges": [
       "Anker",
@@ -361,10 +568,10 @@
     "specs": {
       "suction": 98,
       "mopping": 88,
-      "noise": 85,
+      "noise": 82,
       "obstacle": 75,
-      "app": 96,
-      "maintenance": 94
+      "app": 90,
+      "maintenance": 96
     }
   },
   {
@@ -372,22 +579,22 @@
     "name": "Eufy Robot Vacuum Omni E25",
     "manufacturer": "Anker",
     "price": 149900,
-    "reviewCount": 193,
-    "totalReviewCount": 193,
+    "reviewCount": 191,
+    "totalReviewCount": 191,
     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t2353/imgrc0094500246.jpg",
     "badges": [
       "Anker",
-      "水拭き・拭き掃除が良い",
-      "満足・買ってよかった"
+      "満足・買ってよかった",
+      "水拭き・拭き掃除が良い"
     ],
     "overallTrustScore": 84.4,
     "specs": {
       "suction": 96,
       "mopping": 82,
-      "noise": 88,
-      "obstacle": 70,
-      "app": 80,
-      "maintenance": 85
+      "noise": 89,
+      "obstacle": 72,
+      "app": 91,
+      "maintenance": 90
     }
   },
   {
@@ -397,7 +604,7 @@
     "price": 199900,
     "reviewCount": 102,
     "totalReviewCount": 102,
-    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/youplan/cabinet/300087/100007649453_1.jpg",
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/tmb/t/t2080_normal.jpg",
     "badges": [
       "Anker",
       "水拭き・拭き掃除が良い",
@@ -414,12 +621,35 @@
     }
   },
   {
+    "id": "eufy-robot-vacuum-omni-s2",
+    "name": "Eufy Robot Vacuum Omni S2",
+    "manufacturer": "Anker",
+    "price": 249900,
+    "reviewCount": 24,
+    "totalReviewCount": 24,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/deal/202608m1/imgrc0103966655.jpg",
+    "badges": [
+      "Anker",
+      "マッピング・ルートが賢い",
+      "水拭き・拭き掃除が良い"
+    ],
+    "overallTrustScore": 57.4,
+    "specs": {
+      "suction": 98,
+      "mopping": 92,
+      "noise": 85,
+      "obstacle": 88,
+      "app": 94,
+      "maintenance": 98
+    }
+  },
+  {
     "id": "eufy-robovac-g30-hybrid",
     "name": "Eufy RoboVac G30 Hybrid",
     "manufacturer": "Anker",
     "price": 39990,
-    "reviewCount": 221,
-    "totalReviewCount": 221,
+    "reviewCount": 223,
+    "totalReviewCount": 223,
     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t2253/t2253_daily.jpg",
     "badges": [
       "Anker",
@@ -428,12 +658,12 @@
     ],
     "overallTrustScore": 84.4,
     "specs": {
-      "suction": 92,
-      "mopping": 70,
-      "noise": 95,
+      "suction": 95,
+      "mopping": 75,
+      "noise": 96,
       "obstacle": 65,
-      "app": 80,
-      "maintenance": 75
+      "app": 78,
+      "maintenance": 70
     }
   },
   {
@@ -441,8 +671,8 @@
     "name": "Eufy X10 Pro Omni",
     "manufacturer": "Anker",
     "price": 99990,
-    "reviewCount": 208,
-    "totalReviewCount": 208,
+    "reviewCount": 210,
+    "totalReviewCount": 210,
     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t2351/t2351_normal.jpg",
     "badges": [
       "Anker",
@@ -452,11 +682,11 @@
     "overallTrustScore": 85.3,
     "specs": {
       "suction": 97,
-      "mopping": 84,
-      "noise": 82,
+      "mopping": 82,
+      "noise": 86,
       "obstacle": 72,
-      "app": 94,
-      "maintenance": 85
+      "app": 88,
+      "maintenance": 78
     }
   },
   {
@@ -510,22 +740,22 @@
     "name": "ロボット掃除機 K10+ Pro",
     "manufacturer": "SwitchBot",
     "price": 64800,
-    "reviewCount": 199,
-    "totalReviewCount": 199,
+    "reviewCount": 202,
+    "totalReviewCount": 202,
     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/rikusyouya/cabinet/11351708/12526999/imgrc0101203443.jpg",
     "badges": [
       "SwitchBot",
       "満足・買ってよかった",
       "マッピング・ルートが賢い"
     ],
-    "overallTrustScore": 80.2,
+    "overallTrustScore": 82.3,
     "specs": {
-      "suction": 92,
-      "mopping": 68,
-      "noise": 90,
+      "suction": 90,
+      "mopping": 72,
+      "noise": 92,
       "obstacle": 60,
-      "app": 72,
-      "maintenance": 85
+      "app": 55,
+      "maintenance": 80
     }
   },
   {
@@ -564,13 +794,13 @@
       "満足・買ってよかった",
       "マッピング・ルートが賢い"
     ],
-    "overallTrustScore": 83.8,
+    "overallTrustScore": 82.9,
     "specs": {
-      "suction": 94,
+      "suction": 95,
       "mopping": 78,
-      "noise": 89,
-      "obstacle": 70,
-      "app": 88,
+      "noise": 88,
+      "obstacle": 65,
+      "app": 94,
       "maintenance": 85
     }
   },
@@ -601,17 +831,17 @@
     "name": "L10s Ultra Gen 2",
     "manufacturer": "Dreame",
     "price": 55800,
-    "reviewCount": 93,
-    "totalReviewCount": 93,
-    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/fleurette01/cabinet/g/1/e9ge84g4av-5.jpg",
+    "reviewCount": 98,
+    "totalReviewCount": 98,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/l10sultragen2_cp.jpg",
     "badges": [
       "Dreame",
       "水拭き・拭き掃除が良い",
       "満足・買ってよかった"
     ],
-    "overallTrustScore": 71.8,
+    "overallTrustScore": 68.9,
     "specs": {
-      "suction": 97,
+      "suction": 96,
       "mopping": 82,
       "noise": 88,
       "obstacle": 72,
@@ -624,22 +854,22 @@
     "name": "L10s Ultra Gen 3",
     "manufacturer": "Dreame",
     "price": 69800,
-    "reviewCount": 73,
-    "totalReviewCount": 73,
+    "reviewCount": 84,
+    "totalReviewCount": 84,
     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/l10sultragen3_cp.jpg",
     "badges": [
       "Dreame",
       "満足・買ってよかった",
       "水拭き・拭き掃除が良い"
     ],
-    "overallTrustScore": 74.5,
+    "overallTrustScore": 78.7,
     "specs": {
-      "suction": 98,
-      "mopping": 90,
+      "suction": 97,
+      "mopping": 88,
       "noise": 92,
       "obstacle": 78,
       "app": 85,
-      "maintenance": 95
+      "maintenance": 96
     }
   },
   {
@@ -666,25 +896,48 @@
     }
   },
   {
+    "id": "l40-ultra-ce",
+    "name": "L40 Ultra CE",
+    "manufacturer": "Dreame",
+    "price": 55800,
+    "reviewCount": 17,
+    "totalReviewCount": 17,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/vlookupstore/cabinet/g/74/e9zp2dns07-1.jpg",
+    "badges": [
+      "Dreame",
+      "吸引力が高い",
+      "マッピング・ルートが賢い"
+    ],
+    "overallTrustScore": 54.7,
+    "specs": {
+      "suction": 88,
+      "mopping": 92,
+      "noise": 80,
+      "obstacle": 72,
+      "app": 85,
+      "maintenance": 78
+    }
+  },
+  {
     "id": "l40s-pro-ultra",
     "name": "L40s Pro Ultra",
     "manufacturer": "Dreame",
     "price": 99800,
-    "reviewCount": 107,
-    "totalReviewCount": 107,
+    "reviewCount": 118,
+    "totalReviewCount": 118,
     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/20251230173059_cp.jpg",
     "badges": [
       "Dreame",
       "水拭き・拭き掃除が良い",
       "満足・買ってよかった"
     ],
-    "overallTrustScore": 80.5,
+    "overallTrustScore": 81.1,
     "specs": {
       "suction": 97,
-      "mopping": 76,
+      "mopping": 78,
       "noise": 84,
-      "obstacle": 88,
-      "app": 75,
+      "obstacle": 91,
+      "app": 72,
       "maintenance": 96
     }
   },
@@ -701,14 +954,14 @@
       "満足・買ってよかった",
       "水拭き・拭き掃除が良い"
     ],
-    "overallTrustScore": 79.9,
+    "overallTrustScore": 79.3,
     "specs": {
-      "suction": 97,
-      "mopping": 86,
-      "noise": 91,
-      "obstacle": 72,
-      "app": 92,
-      "maintenance": 93
+      "suction": 98,
+      "mopping": 85,
+      "noise": 88,
+      "obstacle": 75,
+      "app": 94,
+      "maintenance": 90
     }
   },
   {
@@ -718,7 +971,7 @@
     "price": 43999,
     "reviewCount": 43,
     "totalReviewCount": 43,
-    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/myr2026/cabinet/g/1/e9z0wr6h0x-1.jpg",
+    "image": "https://m.media-amazon.com/images/I/319BCGeg7ZL._SL500_.jpg",
     "badges": [
       "Roborock",
       "水拭き・拭き掃除が良い",
@@ -741,7 +994,7 @@
     "price": 29999,
     "reviewCount": 51,
     "totalReviewCount": 51,
-    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/myr2026/cabinet/g/22/e9z0wtw8az-1.jpg",
+    "image": "https://m.media-amazon.com/images/I/313-K0HeIRL._SL500_.jpg",
     "badges": [
       "Roborock",
       "水拭き・拭き掃除が良い",
@@ -758,13 +1011,104 @@
     }
   },
   {
+    "id": "q7-max",
+    "name": "Q7 Max",
+    "manufacturer": "Roborock",
+    "price": 11800,
+    "reviewCount": 9,
+    "totalReviewCount": 9,
+    "image": "https://m.media-amazon.com/images/I/31KaRm0H1uL._SL500_.jpg",
+    "badges": [
+      "Roborock",
+      "満足・買ってよかった",
+      "水拭き・拭き掃除が良い"
+    ],
+    "overallTrustScore": 50,
+    "specs": {
+      "suction": 95,
+      "mopping": 70,
+      "noise": 90,
+      "obstacle": 60,
+      "app": 75,
+      "maintenance": 88
+    }
+  },
+  {
+    "id": "q7b-plus",
+    "name": "Q7B+",
+    "manufacturer": "Roborock",
+    "price": 49980,
+    "reviewCount": 71,
+    "totalReviewCount": 71,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/roborockjapandirect/cabinet/products/12574614/imgrc0133862310.jpg",
+    "badges": [
+      "Roborock",
+      "水拭き・拭き掃除が良い",
+      "静かで快適"
+    ],
+    "overallTrustScore": 64.9,
+    "specs": {
+      "suction": 95,
+      "mopping": 78,
+      "noise": 88,
+      "obstacle": 75,
+      "app": 70,
+      "maintenance": 85
+    }
+  },
+  {
+    "id": "q7t-plus",
+    "name": "Q7T+",
+    "manufacturer": "Roborock",
+    "price": 44880,
+    "reviewCount": 2,
+    "totalReviewCount": 2,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/yamada-denki/cabinet/a07000441/1385764013.jpg",
+    "badges": [
+      "Roborock",
+      "静かで快適"
+    ],
+    "overallTrustScore": 53.2,
+    "specs": {
+      "suction": 85,
+      "mopping": 80,
+      "noise": 95,
+      "obstacle": 78,
+      "app": 85,
+      "maintenance": 88
+    }
+  },
+  {
+    "id": "qrevo-c",
+    "name": "Qrevo C",
+    "manufacturer": "Roborock",
+    "price": 65780,
+    "reviewCount": 18,
+    "totalReviewCount": 18,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/yamada-denki/cabinet/a07000441/1385763016.jpg",
+    "badges": [
+      "Roborock",
+      "水拭き・拭き掃除が良い",
+      "静かで快適"
+    ],
+    "overallTrustScore": 56.8,
+    "specs": {
+      "suction": 96,
+      "mopping": 85,
+      "noise": 92,
+      "obstacle": 90,
+      "app": 78,
+      "maintenance": 85
+    }
+  },
+  {
     "id": "qrevo-curv-2-flow",
     "name": "Qrevo Curv 2 Flow",
     "manufacturer": "Roborock",
     "price": 99900,
     "reviewCount": 20,
     "totalReviewCount": 20,
-    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/happymasaya/cabinet/g/1/e9d3eqcf0a-1.jpg",
+    "image": "https://m.media-amazon.com/images/I/31DRz0R5QsL._SL500_.jpg",
     "badges": [
       "Roborock",
       "水拭き・拭き掃除が良い",
@@ -781,26 +1125,72 @@
     }
   },
   {
+    "id": "qrevo-edge-2",
+    "name": "Qrevo Edge 2",
+    "manufacturer": "Roborock",
+    "price": 163900,
+    "reviewCount": 19,
+    "totalReviewCount": 19,
+    "image": "https://m.media-amazon.com/images/I/31srwUOD6cL._SL500_.jpg",
+    "badges": [
+      "Roborock",
+      "水拭き・拭き掃除が良い",
+      "吸引力が高い"
+    ],
+    "overallTrustScore": 56.8,
+    "specs": {
+      "suction": 95,
+      "mopping": 90,
+      "noise": 88,
+      "obstacle": 65,
+      "app": 85,
+      "maintenance": 96
+    }
+  },
+  {
+    "id": "qrevo-l-pro",
+    "name": "Qrevo L Pro",
+    "manufacturer": "Roborock",
+    "price": 89990,
+    "reviewCount": 32,
+    "totalReviewCount": 32,
+    "image": "https://m.media-amazon.com/images/I/3196WRRWVZL._SL500_.jpg",
+    "badges": [
+      "Roborock",
+      "水拭き・拭き掃除が良い",
+      "満足・買ってよかった"
+    ],
+    "overallTrustScore": 59.5,
+    "specs": {
+      "suction": 95,
+      "mopping": 85,
+      "noise": 80,
+      "obstacle": 70,
+      "app": 95,
+      "maintenance": 92
+    }
+  },
+  {
     "id": "qrevo-l",
     "name": "Qrevo L",
     "manufacturer": "Roborock",
     "price": 79800,
-    "reviewCount": 161,
-    "totalReviewCount": 161,
+    "reviewCount": 159,
+    "totalReviewCount": 159,
     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/roborockjapandirect/cabinet/products/12574614/12574615/imgrc0130333896.jpg",
     "badges": [
       "Roborock",
       "水拭き・拭き掃除が良い",
       "満足・買ってよかった"
     ],
-    "overallTrustScore": 81.1,
+    "overallTrustScore": 82.6,
     "specs": {
-      "suction": 97,
-      "mopping": 88,
-      "noise": 93,
-      "obstacle": 78,
-      "app": 92,
-      "maintenance": 91
+      "suction": 96,
+      "mopping": 82,
+      "noise": 90,
+      "obstacle": 72,
+      "app": 85,
+      "maintenance": 88
     }
   },
   {
@@ -816,14 +1206,14 @@
       "水拭き・拭き掃除が良い",
       "満足・買ってよかった"
     ],
-    "overallTrustScore": 82.9,
+    "overallTrustScore": 82.3,
     "specs": {
-      "suction": 93,
-      "mopping": 50,
-      "noise": 75,
-      "obstacle": 65,
-      "app": 70,
-      "maintenance": 88
+      "suction": 96,
+      "mopping": 72,
+      "noise": 85,
+      "obstacle": 70,
+      "app": 80,
+      "maintenance": 82
     }
   },
   {
@@ -833,7 +1223,7 @@
     "price": 179800,
     "reviewCount": 167,
     "totalReviewCount": 167,
-    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/03016688/20260219_review_2nen/705c_aw_tm_2nen_v2.jpg",
+    "image": "https://m.media-amazon.com/images/I/41N6+n9f7mL._SL500_.jpg",
     "badges": [
       "iRobot",
       "水拭き・拭き掃除が良い",
@@ -873,12 +1263,35 @@
     }
   },
   {
+    "id": "roomba-max-monster-875",
+    "name": "Roomba Max Monster 875",
+    "manufacturer": "iRobot",
+    "price": 249800,
+    "reviewCount": 1,
+    "totalReviewCount": 1,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/yamada-denki/cabinet/a07000655/1387213014.jpg",
+    "badges": [
+      "iRobot",
+      "床がサラサラ・ピカピカ",
+      "満足・買ってよかった"
+    ],
+    "overallTrustScore": 52.6,
+    "specs": {
+      "suction": 99,
+      "mopping": 80,
+      "noise": 80,
+      "obstacle": 78,
+      "app": 95,
+      "maintenance": 88
+    }
+  },
+  {
     "id": "roomba-mini-autoempty",
     "name": "Roomba® Mini + AutoEmpty™",
     "manufacturer": "iRobot",
     "price": 49800,
-    "reviewCount": 138,
-    "totalReviewCount": 138,
+    "reviewCount": 139,
+    "totalReviewCount": 139,
     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/item_thum/br_thum/mini_ae_2nen_rank.jpg",
     "badges": [
       "iRobot",
@@ -887,11 +1300,11 @@
     ],
     "overallTrustScore": 83.2,
     "specs": {
-      "suction": 93,
-      "mopping": 78,
-      "noise": 65,
-      "obstacle": 70,
-      "app": 68,
+      "suction": 96,
+      "mopping": 85,
+      "noise": 82,
+      "obstacle": 75,
+      "app": 78,
       "maintenance": 95
     }
   },
@@ -931,14 +1344,14 @@
       "水拭き・拭き掃除が良い",
       "満足・買ってよかった"
     ],
-    "overallTrustScore": 84.4,
+    "overallTrustScore": 84.7,
     "specs": {
-      "suction": 96,
+      "suction": 97,
       "mopping": 82,
-      "noise": 78,
-      "obstacle": 70,
+      "noise": 80,
+      "obstacle": 68,
       "app": 85,
-      "maintenance": 88
+      "maintenance": 94
     }
   },
   {
@@ -965,13 +1378,58 @@
     }
   },
   {
+    "id": "roomba-plus-515-combo-autowash",
+    "name": "Roomba Plus 515 Combo",
+    "manufacturer": "iRobot",
+    "price": 99800,
+    "reviewCount": 2,
+    "totalReviewCount": 2,
+    "image": "https://m.media-amazon.com/images/I/31RomH2hfjL._SL500_.jpg",
+    "badges": [
+      "iRobot",
+      "水拭き・拭き掃除が良い"
+    ],
+    "overallTrustScore": 53.2,
+    "specs": {
+      "suction": 95,
+      "mopping": 80,
+      "noise": 82,
+      "obstacle": 75,
+      "app": 70,
+      "maintenance": 88
+    }
+  },
+  {
+    "id": "roomba-plus-575-combo-autowash",
+    "name": "Roomba Plus 575 Combo + AutoWash",
+    "manufacturer": "iRobot",
+    "price": 169800,
+    "reviewCount": 129,
+    "totalReviewCount": 129,
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/03016688/20260219_review_2nen/575_aw_2nen.jpg",
+    "badges": [
+      "iRobot",
+      "水拭き・拭き掃除が良い",
+      "満足・買ってよかった"
+    ],
+    "overallTrustScore": 82.6,
+    "specs": {
+      "suction": 96,
+      "mopping": 82,
+      "noise": 88,
+      "obstacle": 78,
+      "app": 65,
+      "maintenance": 85
+    }
+  },
+  {
     "id": "s10",
     "name": "お掃除ロボットS10",
     "manufacturer": "SwitchBot",
     "price": 49800,
     "reviewCount": 125,
     "totalReviewCount": 125,
-    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/trend-tech/cabinet/item/13/switchbot/0810150540697_2.jpg",
+    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/09377790/s10/imgrc0080562316.jpg",
     "badges": [
       "SwitchBot",
       "水拭き・拭き掃除が良い",
@@ -992,22 +1450,22 @@
     "name": "お掃除ロボットS20",
     "manufacturer": "SwitchBot",
     "price": 59980,
-    "reviewCount": 126,
-    "totalReviewCount": 126,
+    "reviewCount": 124,
+    "totalReviewCount": 124,
     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/09377790/s20/amazon/s20.jpg",
     "badges": [
       "SwitchBot",
       "水拭き・拭き掃除が良い",
       "満足・買ってよかった"
     ],
-    "overallTrustScore": 78.1,
+    "overallTrustScore": 76.6,
     "specs": {
       "suction": 95,
-      "mopping": 78,
-      "noise": 84,
-      "obstacle": 65,
-      "app": 88,
-      "maintenance": 80
+      "mopping": 85,
+      "noise": 86,
+      "obstacle": 70,
+      "app": 90,
+      "maintenance": 85
     }
   },
   {
@@ -1015,22 +1473,22 @@
     "name": "Saros 10R",
     "manufacturer": "Roborock",
     "price": 199980,
-    "reviewCount": 147,
-    "totalReviewCount": 147,
+    "reviewCount": 148,
+    "totalReviewCount": 148,
     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/roborockjapandirect/cabinet/products/12574614/imgrc0135010295.jpg",
     "badges": [
       "Roborock",
       "満足・買ってよかった",
       "水拭き・拭き掃除が良い"
     ],
-    "overallTrustScore": 82.6,
+    "overallTrustScore": 82,
     "specs": {
-      "suction": 96,
-      "mopping": 84,
+      "suction": 97,
+      "mopping": 88,
       "noise": 89,
-      "obstacle": 72,
+      "obstacle": 76,
       "app": 91,
-      "maintenance": 94
+      "maintenance": 96
     }
   },
   {
@@ -1069,14 +1527,14 @@
       "満足・買ってよかった",
       "水拭き・拭き掃除が良い"
     ],
-    "overallTrustScore": 53,
+    "overallTrustScore": 59.3,
     "specs": {
-      "suction": 96,
+      "suction": 95,
       "mopping": 78,
-      "noise": 95,
+      "noise": 96,
       "obstacle": 55,
-      "app": 82,
-      "maintenance": 75
+      "app": 88,
+      "maintenance": 85
     }
   },
   {
@@ -1095,11 +1553,11 @@
     "overallTrustScore": 51.2,
     "specs": {
       "suction": 98,
-      "mopping": 88,
-      "noise": 92,
+      "mopping": 82,
+      "noise": 90,
       "obstacle": 97,
-      "app": 78,
-      "maintenance": 94
+      "app": 88,
+      "maintenance": 96
     }
   }
 ]

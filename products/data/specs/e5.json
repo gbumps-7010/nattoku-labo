@@ -1,0 +1,53 @@
+{
+  "productId": "e5",
+  "modelNumber": "E552-04",
+  "checkedAt": "2026-11-03",
+  "sources": [
+    { "label": "Roborock公式 製品ページ", "url": "https://jp.roborock.com/pages/roborock-e5" },
+    { "label": "価格.com スペック（型番・外形寸法・質量・発売日）", "url": "https://kakaku.com/item/K0001395485/spec/" }
+  ],
+  "basic": {
+    "dimensionsMm": { "w": 350, "d": 350, "h": 90.5 },
+    "weightKg": 3.0,
+    "runtimeMin": 200,
+    "chargeTimeMin": null,
+    "batteryMah": null,
+    "releaseDate": "2021-10",
+    "warrantyMonths": null
+  },
+  "cleaning": {
+    "suctionPa": 2500,
+    "dustboxMl": 640,
+    "waterTankMl": null,
+    "mappingType": "ジャイロ（Wジャイロスコープ＋モーショントラッキング）",
+    "obstacleAvoidance": null,
+    "climbHeightMm": 20,
+    "climbNote": null,
+    "noiseDb": null
+  },
+  "mop": {
+    "type": "水拭きモップ（取り外し式モップクロス）",
+    "liftMm": null,
+    "autoDetach": false
+  },
+  "station": {
+    "autoEmpty": false,
+    "mopWash": false,
+    "hotWaterWash": false,
+    "hotWaterNote": null,
+    "hotAirDry": false,
+    "autoRefillDrain": false,
+    "detergentDispenser": false,
+    "dustBagMl": null,
+    "cleanTankMl": null,
+    "dirtyTankMl": null,
+    "dimensionsMm": null,
+    "weightKg": null
+  },
+  "smart": {
+    "app": "Mi Home",
+    "wifi": "2.4GHzのみ",
+    "voiceAssistants": ["Alexa", "Googleアシスタント"],
+    "matter": null
+  }
+}
