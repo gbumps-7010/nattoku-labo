@@ -68,6 +68,8 @@ const SLUG_REDIRECTS = {
   "/products/about": "/about",
   "/products/privacy": "/privacy",
   "/contact-simple": "/privacy",
+  // 2026-11-03 〜5万円の比較は安いガイドに統合（同じ機種・同じ検索意図で食い合っていたため）
+  "/compare/robot-vacuum-under-5man": "/guides/robot-vacuum-cheap",
 };
 
 /** 公開終了（410）— 拡張子なしキー */
@@ -79,6 +81,7 @@ const GONE_PATHS = new Set([
   "/products/f10-plus",
   "/products/eufy-robot-vacuum-omni-c20",
   "/products/qrevo-curvc",
+  "/products/s8-max-ultra",
   "/products/roborock-qrevo-curv-c",
   "/products/eufy-robovac-g30",
   "/products/eufy-robovac-x8-hybrid",

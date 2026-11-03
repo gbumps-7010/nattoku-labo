@@ -894,7 +894,10 @@ function listAllSlugs() {
             (typeof aff.direct === "string" && aff.direct.trim()),
         );
         const hasPage = fs.existsSync(path.join(root, "products", `${slug}.html`));
+        // 管理表で HP掲載 を外した製品（hpPublish: false）は載せない
+        const unpublished = aff.hpPublish === false;
         return (
+          !unpublished &&
           hasPage &&
           reviews > 0 &&
           String(p.imageUrl || "").trim() !== "" &&
@@ -979,8 +982,9 @@ function buildWho(products) {
 const BAND_DEFS = [
   {
     label: "〜5万円",
-    urlPath: "/compare/robot-vacuum-under-5man",
-    filename: "compare/robot-vacuum-under-5man.html",
+    // 2026-11-03 安いガイドに統合（301）。比較ページは作らず、ハブ・ナビのリンク先だけに使う
+    urlPath: "/guides/robot-vacuum-cheap",
+    filename: null,
     min: 0,
     max: 50000,
   },
@@ -1272,7 +1276,7 @@ function itemListJson(band) {
     "@context": "https://schema.org",
     "@type": "ItemList",
     name: bandHeading(band),
-    description: `${band.label}帯のロボット掃除機をおすすめ・口コミ徹底比較（全${band.products.length}製品）。2大ECサイトの口コミ分析に基づきます。`,
+    description: `${band.label}帯のロボット掃除機をおすすめ・口コミ徹底比較（全${band.products.length}製品）。Amazon・楽天市場の口コミ分析に基づきます。`,
     url: `https://nattoku-labo.com${band.urlPath}`,
     numberOfItems: band.products.length,
     itemListElement: band.products.map((p, i) => ({
@@ -1546,7 +1550,7 @@ function buildPage(band) {
   const totalReviews = band.products.reduce((s, p) => s + (p.reviews || 0), 0);
   const h1 = bandHeading(band);
   const title = PRICE_FIRST_BANDS.has(band.label) ? `${h1}｜ナットクLabo` : `${h1} | ナットクLabo`;
-  const desc = `${band.label}帯のロボット掃除機全${band.products.length}製品をおすすめ・口コミ徹底比較。2大ECサイトの口コミを分析し、価格・信頼度・注意点を横並びで確認できます。`;
+  const desc = `${band.label}帯のロボット掃除機全${band.products.length}製品をおすすめ・口コミ徹底比較。Amazon・楽天市場の口コミを分析し、価格・信頼度・注意点を横並びで確認できます。`;
   const productLinks = band.products
     .map(
       (p) =>
@@ -1606,7 +1610,7 @@ function buildPage(band) {
       </p>
       <div class="source-banner" role="note">
         <span class="source-kicker">データ根拠</span>
-        <span>2大ECサイトの口コミを分析した結果です（合計 ${totalReviews.toLocaleString("ja-JP")}件 / ${band.products.length}製品）</span>
+        <span>Amazon・楽天市場の口コミを分析した結果です（合計 ${totalReviews.toLocaleString("ja-JP")}件 / ${band.products.length}製品）</span>
       </div>
       <div class="meta-row">
         <span class="chip">おすすめ・口コミ徹底比較</span>
@@ -1619,14 +1623,14 @@ function buildPage(band) {
   <article>
     <div class="wrap">
       <div class="note">
-        ${formatProse("表示価格はメーカー希望小売価格（参考）です。本ページの比較は、2大ECサイトに寄せられた口コミを集計・分析した参考情報です。口コミが少ない製品は数値が揺れやすいので、件数・信頼度とあわせて読んでください。")}
+        ${formatProse("表示価格はメーカー希望小売価格（参考）です。本ページの比較は、Amazon・楽天市場に寄せられた口コミを集計・分析した参考情報です。口コミが少ない製品は数値が揺れやすいので、件数・信頼度とあわせて読んでください。")}
       </div>
 
       <section class="table-stage" aria-label="ロボット掃除機のおすすめ・口コミ徹底比較表">
         <div class="table-stage-label">
           <strong>おすすめ・口コミ徹底比較表（${band.label}・全${band.products.length}製品）</strong>
         </div>
-        <p class="table-source">${formatProse("比較表の数値・キーワード・注意点は、すべて2大ECサイトの口コミ分析に基づきます。点数は90点台が緑、80点台が青、70点台が黄、70点未満が赤です。")}</p>
+        <p class="table-source">${formatProse("比較表の数値・キーワード・注意点は、すべてAmazon・楽天市場の口コミ分析に基づきます。点数は90点台が緑、80点台が青、70点台が黄、70点未満が赤です。")}</p>
         <div class="compare-nav" role="group" aria-label="比較表の横移動">
           <button type="button" class="compare-nav-btn" data-dir="-1" aria-label="前の製品へ">‹</button>
           <div class="compare-nav-meta">
@@ -1682,16 +1686,18 @@ for (const def of BAND_DEFS) {
     console.warn("empty band", def.label);
     continue;
   }
-  const band = { ...def, products };
-  const html = buildPage(band);
-  fs.writeFileSync(path.join(root, def.filename), html, "utf8");
-  console.log(
-    "wrote",
-    def.filename,
-    products.length,
-    "products:",
-    products.map((p) => p.slug).join(","),
-  );
+  if (def.filename) {
+    const band = { ...def, products };
+    const html = buildPage(band);
+    fs.writeFileSync(path.join(root, def.filename), html, "utf8");
+    console.log(
+      "wrote",
+      def.filename,
+      products.length,
+      "products:",
+      products.map((p) => p.slug).join(","),
+    );
+  }
   manifest.push({
     label: def.label,
     urlPath: def.urlPath,

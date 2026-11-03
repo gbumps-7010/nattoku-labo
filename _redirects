@@ -25,6 +25,10 @@
 /rankings/index.html /rankings/ 301
 /guides/index.html /guides/ 301
 
+# 〜5万円の比較 → 安いガイドに統合（2026-11-03）
+/compare/robot-vacuum-under-5man /guides/robot-vacuum-cheap 301
+/compare/robot-vacuum-under-5man.html /guides/robot-vacuum-cheap 301
+
 # メーカー比較の草案URL → 本番
 /drafts/manufacturer-compare-index.html /makers/ 301
 /drafts/manufacturer-compare-index /makers/ 301
@@ -58,6 +62,8 @@
 /products/eufy-robot-vacuum-omni-c20 410
 /products/qrevo-curvc.html 410
 /products/qrevo-curvc 410
+/products/s8-max-ultra.html 410
+/products/s8-max-ultra 410
 /products/roborock-qrevo-curv-c.html 410
 /products/roborock-qrevo-curv-c 410
 /products/eufy-robovac-g30.html 410

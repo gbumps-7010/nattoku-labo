@@ -79,9 +79,7 @@ SITE_UI_PHRASES = tuple(
 
         "強み・注意点",
 
-        "2大ECサイト",
-
-        "２大ECサイト",
+        "Amazon・楽天市場",
 
         "口コミ分析",
 

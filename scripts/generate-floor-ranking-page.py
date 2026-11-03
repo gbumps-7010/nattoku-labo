@@ -23,42 +23,44 @@ UPDATED = date.today().isoformat()
 RANKINGS = [
     {
         "slug": "floor-cleaning",
-        "tab_label": "フローリング",
+        "tab_label": "水拭き・床",
         "perf_keys": ("floorCleaning", "floor", "hardwood", "hardFloor"),
-        "crumb": "フローリング掃除",
-        "h1": "【ロボット掃除機ランキング】フローリング掃除のおすすめ機種",
-        "meta_description": "口コミの吸引力・水拭き評価を数値化したフローリング掃除ランキング。口コミ信頼度も加味したおすすめ順で{count}製品を比較できます。",
-        "og_description": "口コミの吸引力・水拭き評価を数値化したフローリング掃除ランキング。口コミ信頼度も加味したおすすめ順で比較できます。",
-        "lede": "口コミに書かれた吸引力や水拭きの評価を数値化し、フローリング掃除の得意さを比較したランキングです。各製品には、実際の口コミからまとめたフローリング清掃の傾向コメントも掲載しています。",
+        "crumb": "水拭き・フローリング",
+        "h1": "水拭きロボット掃除機ランキング｜フローリングの仕上がりを口コミで比較",
+        "meta_description": "口コミの「水拭きで床がサラサラ」「ベタつきが取れる」といった声を数値化して、{count}機種を水拭き・フローリング掃除の評価順に比較。ローラー・回転などモップの方式や、モップ自動洗浄の有無もまとめました。",
+        "og_description": "口コミの水拭き・フローリング掃除の評価を数値化したランキング。モップの方式やモップ自動洗浄の有無もまとめました。",
+        "lede": "口コミに書かれた水拭きの仕上がりや、フローリングのゴミの取れ具合を数値化して比べたランキングです。モップの方式やステーションの機能、口コミで多い声もまとめています。",
         "method_body": (
-            "「吸引力が強い」「水拭きがきれい」といった口コミを点数化し、フローリング掃除の得意さで並べています。"
-            "口コミの信頼度を適切に加味するので、実体験に近いおすすめ順になっています。"
-            "表の各製品には、床の仕上がりや水拭きに関する口コミ傾向も記載しているので、点数だけでなく具体的な声も比較できます。"
+            "「水拭きで床がサラサラになる」「髪の毛やホコリがしっかり取れる」といった口コミを点数化し、フローリング掃除（水拭き・吸引）の評価で並べています。"
+            "点数は水拭きだけでなく、フローリングのゴミの吸い取りも含めた評価です。"
+            "口コミの信頼度も加味するので、実体験に近いおすすめ順になっています。"
+            "表の各製品には、水拭きや床の仕上がりに関する口コミ傾向も記載しているので、点数だけでなく具体的な声も比較できます。"
         ),
-        "formula_label": "フローリング点数",
-        "score_col": "フローリング",
-        "comment_label": "フローリング清掃の口コミ傾向",
-        "table_note": "各製品にフローリング清掃の口コミコメント付き",
-        "hub_title": "【ロボット掃除機ランキング】フローリング掃除のおすすめ機種",
-        "hub_cta": "フローリング清掃ランキングを見る →",
-        "hub_meta": "吸引力・水拭きの口コミを数値化",
-        "schema_description": "口コミの吸引力・水拭き評価を数値化したフローリング掃除ランキング",
+        "formula_label": "水拭き・フローリング点数",
+        "score_col": "水拭き・床",
+        "comment_label": "水拭き・フローリングの口コミ傾向",
+        "table_note": "各製品に水拭き・フローリングの口コミコメント付き",
+        "hub_title": "水拭きロボット掃除機ランキング｜フローリングの仕上がりを口コミで比較",
+        "hub_cta": "水拭き・フローリングランキングを見る →",
+        "hub_meta": "水拭き・吸引の口コミを数値化",
+        "schema_description": "口コミの水拭き・フローリング掃除の評価を数値化したランキング",
         "related_note": "カーペット掃除・静音性・段差の乗り越えは別のランキングでも比較できます。",
         "related_rankings": [
-            ("/rankings/carpet-cleaning", "カーペット掃除ランキング"),
+            ("/rankings/carpet-cleaning", "カーペット・ラグランキング"),
             ("/rankings/quietness", "静音性ランキング"),
             ("/rankings/step-climbing", "段差ランキング"),
         ],
+        "article": "mop",
     },
     {
         "slug": "carpet-cleaning",
-        "tab_label": "カーペット",
+        "tab_label": "カーペット・ラグ",
         "perf_keys": ("carpetCleaning", "carpet"),
-        "crumb": "カーペット掃除",
-        "h1": "【ロボット掃除機ランキング】カーペット掃除のおすすめ機種",
-        "meta_description": "口コミのカーペット清掃評価を数値化したランキング。口コミ信頼度も加味したおすすめ順で{count}製品を比較できます。",
-        "og_description": "口コミのカーペット清掃評価を数値化したランキング。口コミ信頼度も加味したおすすめ順で比較できます。",
-        "lede": "口コミに書かれたカーペット清掃の評価を数値化し、ラグや絨毯掃除の得意さを比較したランキングです。各製品には、実際の口コミからまとめたカーペット清掃の傾向コメントも掲載しています。",
+        "crumb": "カーペット・ラグ",
+        "h1": "カーペット・ラグに強いロボット掃除機おすすめランキング｜口コミで比較",
+        "meta_description": "口コミの「カーペットのゴミが取れる」「ラグを巻き込まない」といった声を数値化して、{count}機種をカーペット・ラグ掃除の評価順に比較。口コミ信頼度も加味したおすすめ順です。",
+        "og_description": "口コミのカーペット・ラグ掃除の評価を数値化したランキング。口コミ信頼度も加味したおすすめ順で比較できます。",
+        "lede": "口コミに書かれたカーペット・ラグ掃除の評価を数値化し、ラグや絨毯の掃除の得意さを比較したランキングです。各製品には、実際の口コミからまとめたカーペット清掃の傾向コメントも掲載しています。",
         "method_body": (
             "「カーペットのゴミが取れる」「ラグを巻き込まない」といった口コミを点数化し、カーペット掃除の得意さで並べています。"
             "口コミの信頼度を適切に加味するので、実体験に近いおすすめ順になっています。"
@@ -66,15 +68,15 @@ RANKINGS = [
         ),
         "formula_label": "カーペット点数",
         "score_col": "カーペット",
-        "comment_label": "カーペット清掃の口コミ傾向",
-        "table_note": "各製品にカーペット清掃の口コミコメント付き",
-        "hub_title": "【ロボット掃除機ランキング】カーペット掃除のおすすめ機種",
-        "hub_cta": "カーペット清掃ランキングを見る →",
-        "hub_meta": "カーペット清掃の口コミを数値化",
-        "schema_description": "口コミのカーペット清掃評価を数値化したランキング",
-        "related_note": "フローリング掃除・静音性・段差の乗り越えは別のランキングでも比較できます。",
+        "comment_label": "カーペット・ラグ清掃の口コミ傾向",
+        "table_note": "各製品にカーペット・ラグ清掃の口コミコメント付き",
+        "hub_title": "カーペット・ラグに強いロボット掃除機おすすめランキング｜口コミで比較",
+        "hub_cta": "カーペット・ラグランキングを見る →",
+        "hub_meta": "カーペット・ラグ清掃の口コミを数値化",
+        "schema_description": "口コミのカーペット・ラグ掃除の評価を数値化したランキング",
+        "related_note": "水拭き・フローリング掃除・静音性・段差の乗り越えは別のランキングでも比較できます。",
         "related_rankings": [
-            ("/rankings/floor-cleaning", "フローリング掃除ランキング"),
+            ("/rankings/floor-cleaning", "水拭き・フローリングランキング"),
             ("/rankings/quietness", "静音性ランキング"),
             ("/rankings/step-climbing", "段差ランキング"),
         ],
@@ -85,7 +87,7 @@ RANKINGS = [
         "perf_keys": ("quietness", "noiseLevel", "quietOperation"),
         "crumb": "静音ロボット掃除機ランキング",
         "h1": "静音ロボット掃除機ランキング｜静かでおすすめの機種を口コミで比較",
-        "meta_description": "口コミの「静か」「うるさい」の声を数値化して、{count}機種を静音性の高い順に比較。夜間や在宅ワーク中、集合住宅でも使いやすい機種を、実際の口コミ付きで選べます。",
+        "meta_description": "口コミの「静か」「うるさい」の声を数値化して、{count}機種を静音性の高い順に比較。メーカー公表の運転音（dB）やステーションのゴミ収集音、夜や集合住宅で使うときのコツもまとめました。",
         "og_description": "口コミの「静か」「うるさい」の声を数値化して、静音性の高い順に比較。夜間や在宅ワーク中、集合住宅でも使いやすい機種を、実際の口コミ付きで選べます。",
         "lede": "口コミに書かれた運転音・静音性の評価を数値化し、在宅中や夜間でも使いやすい機種を比較したランキングです。各製品には、実際の口コミからまとめた静音性の傾向コメントも掲載しています。",
         "method_body": (
@@ -103,10 +105,11 @@ RANKINGS = [
         "schema_description": "口コミの静音性評価を数値化したランキング",
         "related_note": "フローリング掃除・カーペット掃除・段差の乗り越えは別のランキングでも比較できます。",
         "related_rankings": [
-            ("/rankings/floor-cleaning", "フローリング掃除ランキング"),
-            ("/rankings/carpet-cleaning", "カーペット掃除ランキング"),
+            ("/rankings/floor-cleaning", "水拭き・フローリングランキング"),
+            ("/rankings/carpet-cleaning", "カーペット・ラグランキング"),
             ("/rankings/step-climbing", "段差ランキング"),
         ],
+        "article": "quiet",
     },
     {
         "slug": "step-climbing",
@@ -132,8 +135,8 @@ RANKINGS = [
         "schema_description": "口コミの段差乗り越え評価を数値化したランキング",
         "related_note": "フローリング掃除・カーペット掃除・静音性は別のランキングでも比較できます。",
         "related_rankings": [
-            ("/rankings/floor-cleaning", "フローリング掃除ランキング"),
-            ("/rankings/carpet-cleaning", "カーペット掃除ランキング"),
+            ("/rankings/floor-cleaning", "水拭き・フローリングランキング"),
+            ("/rankings/carpet-cleaning", "カーペット・ラグランキング"),
             ("/rankings/quietness", "静音性ランキング"),
         ],
         "article": "step",
@@ -157,6 +160,9 @@ def load_products(perf_keys: tuple[str, ...]) -> list[dict]:
     for path in sorted(DATA_DIR.glob("*.json")):
         raw = json.loads(path.read_text(encoding="utf-8"))
         if not isinstance(raw, dict):
+            continue
+        # 管理表で HP掲載 を外した製品（hpPublish: false）は載せない
+        if (raw.get("affiliate") or {}).get("hpPublish") is False:
             continue
         perf = raw.get("performanceAnalysis") or {}
         feature = None
@@ -212,10 +218,9 @@ def low_sample_note(cfg: dict) -> str:
 
 def heading_lines(text: str) -> str:
     """見出しを「｜」の位置で改行できるよう、区切りごとに span.clause で包む。"""
-    parts = [p for p in text.split("｜")]
-    return "".join(
-        f'<span class="clause">{html.escape(p)}{"｜" if i < len(parts) - 1 else ""}</span>'
-        for i, p in enumerate(parts)
+    # 「｜」は別の span にして、スマホ幅では隠して改行だけにする（「｜」だけが1行になるのを防ぐ）
+    return '<span class="h-sep">｜</span>'.join(
+        f'<span class="clause">{html.escape(p)}</span>' for p in text.split("｜")
     )
 
 
@@ -297,13 +302,31 @@ def build_rows(products: list[dict], comment_label: str) -> str:
             )
         tc = top_class(p["rank"])
         badge = ref_badge(p["reviews"])
+        # 静音ランキングでは、自動ゴミ収集の有無を製品名の下に出して絞り込みにも使う
+        auto_attr = auto_tag = ""
+        if "auto_empty" in p:
+            ae = p["auto_empty"]
+            auto_attr = f' data-auto="{"yes" if ae is True else "no" if ae is False else "unknown"}"'
+            if ae is True:
+                auto_tag = '<span class="auto-tag yes">自動ゴミ収集あり</span>'
+            elif ae is False:
+                auto_tag = '<span class="auto-tag no">自動ゴミ収集なし</span>'
+        # 水拭きランキングでは、モップの方式と自動洗浄の有無を出し、自動洗浄で絞り込めるようにする
+        elif "mop_wash" in p:
+            mw = p["mop_wash"]
+            auto_attr = f' data-auto="{"yes" if mw is True else "no" if mw is False else "unknown"}"'
+            if p.get("mop_style"):
+                auto_tag = f'<span class="auto-tag no">{html.escape(p["mop_style"])}</span>'
+            if mw is True:
+                auto_tag += '<span class="auto-tag yes">モップ自動洗浄</span>'
+
         img = (
             f'<img src="{html.escape(p["imageUrl"])}" alt="{name}の製品画像" loading="lazy" width="56" height="56">'
             if p.get("imageUrl")
             else '<div class="img-ph" aria-hidden="true"></div>'
         )
         comment_row = f"""
-      <tr class="comment-row{tc}" data-price="{p['price']}" data-rank="{p['rank']}">
+      <tr class="comment-row{tc}" data-price="{p['price']}" data-rank="{p['rank']}"{auto_attr}>
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">{html.escape(comment_label)}</span>{comment}</p>
@@ -311,14 +334,14 @@ def build_rows(products: list[dict], comment_label: str) -> str:
       </tr>"""
         chunks.append(
             f"""
-      <tr class="rank-row{tc}" data-price="{p['price']}" data-rank="{p['rank']}">
+      <tr class="rank-row{tc}" data-price="{p['price']}" data-rank="{p['rank']}"{auto_attr}>
         <td class="rank"><span class="rank-num">{p['rank']}</span>{badge}</td>
         <td class="product">
           <a class="product-link" href="{url}" target="_blank" rel="noopener">
             <span class="thumb">{img}</span>
             <span class="pinfo">
               <span class="pname">{name}</span>
-              <span class="pmeta">{mfr}</span>
+              <span class="pmeta">{mfr}</span>{auto_tag}
             </span>
           </a>
         </td>
@@ -392,6 +415,10 @@ h1 {
 .lede { font-size: 0.95rem; opacity: 0.95; max-width: 42rem; }
 /* 句読点・｜の位置で改行する（収まらない節だけ節の中で折り返す） */
 h1 .clause, .lede .clause { display: inline-block; word-break: auto-phrase; text-wrap: pretty; }
+@media (max-width: 768px) {
+  h1 .h-sep { display: none; }
+  h1 .clause { display: block; }
+}
 .rank-tabs {
   position: sticky;
   top: calc(60px + env(safe-area-inset-top, 0px));
@@ -677,6 +704,11 @@ tr.comment-row .comment-spacer { border-bottom: 1px solid #e2e8f0; }
 .img-ph { display: block; }
 .pname { display: block; font-weight: 700; font-size: 0.9rem; line-height: 1.35; }
 .pmeta { display: block; color: var(--muted); font-size: 0.75rem; }
+.auto-tag { display: inline-block; margin-top: 0.2rem; font-size: 0.68rem; font-weight: 800; border-radius: 999px; padding: 0.05rem 0.5rem; }
+.auto-tag.yes { background: #dcfce7; color: #166534; }
+.auto-tag.no { background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; }
+.auto-tag + .auto-tag { margin-left: 0.25rem; }
+.filters-label-2 { margin-top: 0.7rem; }
 .floor-comment {
   margin: 0; padding: 0.55rem 0.7rem;
   background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;
@@ -873,7 +905,9 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
 
 JS = r"""
 (function () {
-  const chips = document.querySelectorAll(".filter-chip");
+  const chips = document.querySelectorAll(".filter-chip:not(.auto-chip)");
+  const autoChips = document.querySelectorAll(".auto-chip");
+  let curMin = 0, curMax = Infinity, curAuto = "all";
   const rows = document.querySelectorAll("#ranking-table tbody tr.rank-row, #ranking-table tbody tr.comment-row");
   const countEl = document.getElementById("filter-count");
   const emptyEl = document.getElementById("empty-msg");
@@ -962,10 +996,12 @@ JS = r"""
   }
 
   function applyFilter(min, max) {
+    curMin = min; curMax = max;
     let shown = 0;
     rows.forEach(function (row) {
       const price = Number(row.getAttribute("data-price") || 0);
-      const ok = price >= min && price < max;
+      const auto = row.getAttribute("data-auto");
+      const ok = price >= min && price < max && (curAuto === "all" || auto === curAuto);
       row.style.display = ok ? "" : "none";
       if (ok && row.classList.contains("rank-row")) shown += 1;
     });
@@ -983,6 +1019,15 @@ JS = r"""
       const maxRaw = chip.getAttribute("data-max");
       const max = maxRaw === "Infinity" ? Infinity : Number(maxRaw);
       applyFilter(min, max);
+    });
+  });
+
+  autoChips.forEach(function (chip) {
+    chip.addEventListener("click", function () {
+      autoChips.forEach(function (c) { c.classList.remove("active"); });
+      chip.classList.add("active");
+      curAuto = chip.getAttribute("data-auto") || "all";
+      applyFilter(curMin, curMax);
     });
   });
 
@@ -1065,6 +1110,21 @@ ul.tips li::before { content: "✓"; position: absolute; left: 0; color: var(--p
 .aff-card { scroll-margin-top: 130px; }
 .picks, .article-sec, .top-cards, .table-wrap { scroll-margin-top: 120px; }
 .picks-note { font-size: 0.82rem; color: #475569; margin-top: 0.75rem; line-height: 1.7; }
+.tradeoff-box, .caution-box { border-radius: 12px; padding: 0.85rem 1rem; margin-top: 0.85rem; }
+.tradeoff-box { background: #eff6ff; border: 1px solid #bfdbfe; }
+.caution-box { background: #fff7ed; border: 2px solid #f59e0b; margin: 0 0 0.9rem; }
+.tradeoff-title, .caution-title { font-weight: 900; font-size: 0.95rem; margin-bottom: 0.4rem; }
+.tradeoff-title { color: #1e3a8a; }
+.caution-title { color: #9a3412; }
+.caution-title::before { content: "⚠ "; }
+.caution-key { background: #fef2f2; border: 2px solid #dc2626; border-radius: 10px; padding: 0.75rem 0.9rem; margin: 0.5rem 0 0.7rem; font-size: 1rem !important; line-height: 1.75 !important; color: #7f1d1d !important; }
+.caution-key strong { color: #b91c1c; font-size: 1.05rem; }
+.caution-key-label { display: inline-block; background: #dc2626; color: #fff; font-size: 0.75rem; font-weight: 900; border-radius: 6px; padding: 0.1rem 0.5rem; margin-right: 0.5rem; vertical-align: 0.1em; }
+.article-sec > .caution-key { margin-top: 1rem; }
+.tradeoff-box ul, .caution-box ul { list-style: disc; padding-left: 1.2rem; display: grid; gap: 0.3rem; }
+.tradeoff-box li, .caution-box li { font-size: 0.88rem; line-height: 1.75; color: #1e293b; }
+table.mini.ref { min-width: 0; }
+.src-note { font-size: 0.78rem !important; color: #475569 !important; margin-top: 0.4rem; }
 .picks-jump { margin-top: 0.75rem; text-align: center; }
 .picks-jump .btn-sub { display: inline-block; padding: 0.6rem 1.4rem; }
 @media (max-width: 768px) {
@@ -1325,17 +1385,28 @@ def step_picks(products: list[dict]) -> list[tuple[str, dict]]:
     return picks
 
 
-def build_step_picks(products: list[dict]) -> str:
+def build_pick_section(
+    products: list[dict],
+    picks: list[tuple[str, dict]],
+    theme: str,
+    score_name: str,
+    spec_item,
+    sub: str | None = None,
+    after_grid: str = "",
+) -> str:
+    """結論ボックス（カード）。theme は見出しの言葉（「段差」「静かさ」）、score_name は点数の項目名。
+    spec_item(label, r) はカードの3行目（メーカー公表値など）を (見出し, 値) で返す。"""
     cards = []
-    picks = step_picks(products)
     top = products[0] if products else None
     note = ""
-    if top and picks and picks[0][1]["id"] != top["id"]:
+    # 1位の機種を口コミ件数の少なさで先頭から外したときだけ、その理由を書く
+    if top and picks and picks[0][1]["id"] != top["id"] and top["reviews"] < PICK_MIN_REVIEWS:
         note = (
-            f"ランキング表の1位は{top['name']}（段差{top['feature']:.0f}点）ですが、口コミが{top['reviews']:,}件と少ないため、"
+            f"ランキング表の1位は{top['name']}（{score_name}{top['feature']:.0f}点）ですが、口コミが{top['reviews']:,}件と少ないため、"
             f"ここでは口コミ{PICK_MIN_REVIEWS}件以上の機種を先に挙げています。"
         )
     for label, r in picks:
+        spec_label, spec_value = spec_item(label, r)
         url = f"/products/{r['id']}"
         img = (
             f'<img src="{html.escape(r["imageUrl"])}" alt="" width="64" height="64" loading="lazy">'
@@ -1353,24 +1424,30 @@ def build_step_picks(products: list[dict]) -> str:
               </div>
             </div>
             <ul class="pick-stats">
-              <li>段差 <strong>{r['feature']:.0f}点</strong>（{r['rank']}位）</li>
+              <li>{html.escape(score_name)} <strong>{r['feature']:.0f}点</strong>（{r['rank']}位）</li>
               <li>口コミ <strong>{r['reviews']:,}件</strong>{ref_badge(r['reviews'])}</li>
-              <li>メーカー公表 <strong>{html.escape(climb_label(r))}</strong></li>
+              <li>{html.escape(spec_label)} <strong>{html.escape(spec_value)}</strong></li>
             </ul>
-            {p_tag("口コミでは「" + quote + "」") if quote else ""}
+            {p_tag("口コミでは" + (quote if quote.startswith("「") else "「" + quote + "」")) if quote else ""}
             <div class="pick-actions">
               <a class="btn-primary" href="{url}">口コミ分析を見る</a>
               <a class="btn-sub" href="#price-{html.escape(r['id'])}">最新価格を見る ▼</a>
             </div>
           </article>""")
     return f"""
-      <section class="picks" id="picks" aria-label="段差で選ぶならこの3台">
-        <h2>結論：段差で選ぶならこの3台</h2>
-        {p_tag("ランキングの順位に加えて、口コミの件数と予算も考えて選んだ3台です。点数はランキング表と同じ値です。", "section-sub")}
-        <div class="picks-grid">{"".join(cards)}</div>
+      <section class="picks" id="picks" aria-label="{html.escape(theme)}で選ぶならこの{len(picks)}台">
+        <h2>結論：{html.escape(theme)}で選ぶならこの{len(picks)}台</h2>
+        {p_tag(sub or f"ランキングの順位に加えて、口コミの件数と予算も考えて選んだ{len(picks)}台です。点数はランキング表と同じ値です。", "section-sub")}
+        <div class="picks-grid">{"".join(cards)}</div>{after_grid}
         {p_tag(note, "picks-note") if note else ""}
         <p class="picks-jump"><a class="btn-sub" href="#ranking">全機種ランキングを見る ▼</a></p>
       </section>"""
+
+
+def build_step_picks(products: list[dict]) -> str:
+    return build_pick_section(
+        products, step_picks(products), "段差", "段差", lambda label, r: ("メーカー公表", climb_label(r))
+    )
 
 
 STEP_TOPICS = [
@@ -1512,6 +1589,580 @@ def build_step_article(products: list[dict]) -> tuple[str, list[tuple[str, str]]
     return f'<div class="article">{body}</div>', faqs
 
 
+def noise_label(r: dict) -> str:
+    return f"{r['db']:g}dB" if r.get("db") else "公表なし"
+
+
+def quiet_cheap_top(products: list[dict]) -> dict | None:
+    cheap = [r for r in products if r["reviews"] >= PICK_MIN_REVIEWS and r["price"] and r["price"] <= CHEAP_MAX]
+    return cheap[0] if cheap else None
+
+
+def quiet_picks(products: list[dict]) -> list[tuple[str, dict]]:
+    """結論ボックスの3台（すべて口コミ50件以上）。自動ゴミ収集の有無で使い勝手が大きく変わるので分けて選ぶ：
+    自動ゴミ収集ありで最も静か → 自動ゴミ収集なしで最も静か → 5万円以下・自動ゴミ収集ありで最も静か。
+    重なったら 5万円以下で最も静か → 集合住宅との相性が最も高い で埋める。順位・点数はランキング表のまま。"""
+    picks: list[tuple[str, dict]] = []
+    seen: set[str] = set()
+
+    def add(label: str, r: dict | None) -> None:
+        if r and r["id"] not in seen and len(picks) < 3:
+            picks.append((label, r))
+            seen.add(r["id"])
+
+    def first(rs: list[dict]) -> dict | None:
+        # その条件での1位がすでに別の観点で選ばれていたら、2位を「最も〜」とは書かずに次の観点へ進む
+        return rs[0] if rs and rs[0]["id"] not in seen else None
+
+    reliable = [r for r in products if r["reviews"] >= PICK_MIN_REVIEWS]
+    auto = [r for r in reliable if r.get("auto_empty") is True]
+    manual = [r for r in reliable if r.get("auto_empty") is False]
+    add("自動ゴミ収集ありで最も静か", first(auto))
+    add("自動ゴミ収集なしで最も静か", first(manual))
+    add("5万円以下・自動ゴミ収集ありで最も静か", first([r for r in auto if r["price"] and r["price"] <= CHEAP_MAX]))
+    add("5万円以下で最も静か", first([r for r in reliable if r["price"] and r["price"] <= CHEAP_MAX]))
+    apt = sorted(
+        [r for r in reliable if r.get("apartment") is not None and r["id"] not in seen],
+        key=lambda r: (-r["apartment"], -r["feature"]),
+    )
+    add("マンション・集合住宅との相性が最も高い", apt[0] if apt else None)
+    return picks
+
+
+def build_quiet_picks(products: list[dict]) -> str:
+    def spec(label: str, r: dict) -> tuple[str, str]:
+        if "集合住宅" in label:
+            return ("集合住宅との相性", f"{r['apartment']:.0f}点")
+        return ("メーカー公表の運転音", noise_label(r))
+
+    picks = quiet_picks(products)
+    sub = (
+        f"口コミ{PICK_MIN_REVIEWS}件以上の機種から、**自動ゴミ収集の「あり」「なし」を分けて**選んだ{len(picks)}台です。"
+        "点数と順位はランキング表と同じ値です。"
+    )
+    tradeoff = """
+        <div class="tradeoff-box" role="note">
+          <p class="tradeoff-title">自動ゴミ収集の「あり」「なし」で選び方が変わります</p>
+          <ul>
+            <li><strong>ありの機種</strong>：ゴミ捨ては数週間に1回で済みます。その代わり、掃除のあとにステーションがゴミを吸い上げる<strong>大きめの音（数秒〜十数秒）</strong>が出ます。</li>
+            <li><strong>なしの機種</strong>：ゴミを吸い上げる音がないぶん静かですが、<strong>ダストボックスのゴミを毎回手で捨てる</strong>必要があります。</li>
+          </ul>
+        </div>"""
+    return build_pick_section(products, picks, "静かさ", "静音性", spec, sub=sub, after_grid=tradeoff)
+
+
+# 全国環境研協議会 騒音小委員会「騒音の目安（都心・近郊用）」（環境省「騒音の目安について」に掲載）の図から読んだおおよその値
+NOISE_REFS = [
+    (40, "図書館の館内・戸建住宅地（昼間）"),
+    (50, "書店の店内・高層住宅地域（昼間）"),
+    (55, "役所の窓口周辺"),
+    (60, "銀行の窓口周辺・博物館の館内"),
+    (65, "ファミリーレストランの店内"),
+    (70, "コーヒーショップの店内・バスの車内"),
+]
+NOISE_REF_URL = "https://www.env.go.jp/air/ippan/index.html"
+
+
+def noise_like(db: float) -> str:
+    """公表の運転音に近い生活音（目安）。"""
+    if db <= 47:
+        return "美術館・図書館の館内くらい"
+    if db <= 52:
+        return "書店の店内くらい"
+    if db <= 57:
+        return "役所の窓口周辺くらい"
+    if db <= 61:
+        return "銀行の窓口周辺くらい"
+    if db <= 65:
+        return "ファミリーレストランの店内くらい"
+    return "コーヒーショップの店内くらい"
+
+
+QUIET_TOPICS = [
+    ("ステーションのゴミ収集の音", r"収集|ゴミ捨て|ステーション"),
+    ("夜・寝ている間", r"夜|寝"),
+    ("在宅ワーク・家にいる時間", r"在宅|テレワーク|仕事|会議"),
+    ("吸引の強さ・モードで音が変わる", r"モード|吸引力"),
+    ("テレビや会話のじゃま", r"テレビ|会話"),
+]
+
+
+def _corr(xs: list[float], ys: list[float]) -> float | None:
+    n = len(xs)
+    if n < 3:
+        return None
+    mx, my = sum(xs) / n, sum(ys) / n
+    sx = sum((x - mx) ** 2 for x in xs) ** 0.5
+    sy = sum((y - my) ** 2 for y in ys) ** 0.5
+    if not sx or not sy:
+        return None
+    return sum((x - mx) * (y - my) for x, y in zip(xs, ys)) / (sx * sy)
+
+
+def build_quiet_article(products: list[dict]) -> tuple[str, list[tuple[str, str]]]:
+    n = len(products)
+    avg_all = sum(r["feature"] for r in products) / n
+    picks = quiet_picks(products)
+    pick1 = picks[0][1] if picks else products[0]
+    cheap_pick = quiet_cheap_top(products)
+    apt_pick = max(
+        (r for r in products if r["reviews"] >= PICK_MIN_REVIEWS and r.get("apartment") is not None),
+        key=lambda r: (r["apartment"], r["feature"]),
+        default=None,
+    )
+
+    # メーカー公表の運転音
+    known = sorted([r for r in products if r.get("db")], key=lambda r: (r["db"], -r["feature"]))
+    db_rows = "".join(
+        f'<tr><td><a href="/products/{r["id"]}">{html.escape(r["name"])}</a></td><td class="num">{r["db"]:g}dB</td>'
+        f'<td>{html.escape(noise_like(r["db"]))}</td>'
+        f'<td class="num">{r["feature"]:.0f}点</td><td class="num">{r["rank"]}位</td>'
+        f'<td>{"あり" if r.get("auto_empty") is True else "なし" if r.get("auto_empty") is False else "—"}</td></tr>'
+        for r in known
+    )
+    ref_rows = "".join(f'<tr><td class="num">{db}dB前後</td><td>{html.escape(label)}</td></tr>' for db, label in NOISE_REFS)
+    corr = _corr([r["db"] for r in known], [r["feature"] for r in known])
+    makers = sorted({r["manufacturer"] for r in known})
+    quietest = known[0] if known else None
+    loud = [r for r in products if re.search(r"うるさ|大き", r.get("comment") or "")]
+
+    # ステーションのゴミ収集
+    auto = [r for r in products if r.get("auto_empty") is True]
+    auto_loud = [r for r in auto if re.search(r"収集|ゴミ捨て|ステーション", r.get("comment") or "")]
+    no_auto = [r for r in products if r.get("auto_empty") is False]
+    rel_auto = [r for r in auto if r["reviews"] >= PICK_MIN_REVIEWS]
+    rel_manual = [r for r in no_auto if r["reviews"] >= PICK_MIN_REVIEWS]
+
+    topic_counts = [(label, sum(1 for r in products if re.search(pat, r.get("comment") or ""))) for label, pat in QUIET_TOPICS]
+    topic_counts.sort(key=lambda x: -x[1])
+    topics_txt = "、".join(f"「{label}」（{cnt}機種）" for label, cnt in topic_counts if cnt)
+
+    # 1. 音の種類
+    sec1 = [
+        p_tag(
+            "ロボット掃除機の音は、おもに**本体の吸引音**、**ブラシやタイヤの走行音**、そして**ステーションがゴミを吸い上げる音**の3つです。"
+            "掃除中は静かでも、掃除のあとにステーションが短いあいだ大きな音を出す機種が多いので、どの音が気になるかで選び方が変わります。"
+        ),
+        p_tag(
+            f"掲載{n}機種の口コミの静音性の平均は{avg_all:.1f}点です。"
+            f"静音性の口コミで「うるさい」「音が大きい」といった声が出ている機種は{len(loud)}機種あり、"
+            "上位の機種でも**吸引を強くしたときや、ゴミ収集のときの音**を指摘する声があります。"
+        ),
+    ]
+    # 2. 公表値と口コミ
+    sec2 = []
+    if known:
+        sec2.append(
+            f"""<div class="caution-box" role="note">
+          <p class="caution-title">dBの数字を見るときの注意</p>
+          <p class="caution-key" role="alert"><span class="caution-key-label">必ずお読みください</span><strong>測り方（距離・運転モード・床の材質）はメーカーごとに違います。</strong><br>別のメーカーどうしで、dBの数字をそのまま比べることはできません。</p>
+          <ul>
+            <li><strong>運転音（dB）を公表しているのは、掲載{n}機種のうち{len(known)}機種だけ</strong>です。残りの{n - len(known)}機種は公表値がないため、口コミの静音性の点数で比べてください。</li>
+            <li>dBは<strong>10dB上がると、耳にはおよそ2倍うるさく</strong>聞こえます。数dBの差でも感じ方は変わります。</li>
+          </ul>
+        </div>"""
+        )
+        sec2.append(p_tag(
+            "dBの数字だけではどれくらいの音か想像しにくいので、身近な場所の音の大きさを目安として並べました。"
+            "ロボット掃除機の値はメーカーが本体の近くで測った値で、下の場所の値とは測り方が違うため、**おおよそのイメージ**としてご覧ください。"
+        ))
+        sec2.append(
+            f"""<div class="table-scroll"><table class="mini ref">
+          <thead><tr><th>音の大きさ</th><th>身近な場所の例</th></tr></thead>
+          <tbody>{ref_rows}</tbody></table></div>
+          <p class="src-note">出典：全国環境研協議会 騒音小委員会「騒音の目安（都心・近郊用）」（<a href="{NOISE_REF_URL}" target="_blank" rel="noopener">環境省「騒音の目安について」</a>）の図から、おおよその値を読み取りました。</p>"""
+        )
+        sec2.append(p_tag(
+            f"運転音（dB）を公表しているのは掲載{n}機種のうち{len(known)}機種（{'・'.join(makers)}）で、"
+            f"もっとも小さいのは{plink(quietest)}の**{quietest['db']:g}dB**（{noise_like(quietest['db'])}）です。"
+        ))
+        if corr is not None:
+            if corr <= -0.5:
+                trend = "公表値が小さい機種ほど口コミの静音性も高い傾向がはっきり見られます"
+            elif corr <= -0.2:
+                trend = "公表値が小さい機種ほど口コミの静音性も高い傾向はありますが、例外も多くあります"
+            else:
+                trend = "公表値と口コミの静音性には、はっきりした関係は見られません"
+            sec2.append(p_tag(f"公表値と口コミの静音性を比べると、{trend}。数字だけでなく、**実際に使った人の声**もあわせて確かめるのがおすすめです。"))
+        sec2.append('<p class="caution-key"><span class="caution-key-label">必ずお読みください</span><strong>測り方（距離・運転モード・床の材質）はメーカーごとに違います。</strong><br>別のメーカーどうしで、dBの数字をそのまま比べることはできません。</p>')
+        sec2.append(
+            f"""<div class="table-scroll"><table class="mini">
+          <thead><tr><th>機種</th><th>メーカー公表の運転音</th><th>生活音でいうと（目安）</th><th>口コミの静音性</th><th>ランキング</th><th>自動ゴミ収集</th></tr></thead>
+          <tbody>{db_rows}</tbody></table></div>"""
+        )
+    # 3. ゴミ収集の音
+    sec3 = [p_tag(
+        f"掲載{n}機種のうち{len(auto)}機種は、ゴミを自動で吸い上げるステーションが付いています。"
+        f"そのうち{len(auto_loud)}機種では、静音性の口コミで**ステーションの音**に触れています。"
+        "集合住宅や、家族が寝ている時間に使う場合は、ゴミ収集の音も確かめておくと安心です。"
+        + (f"自動ゴミ収集のない機種（{'・'.join(r['name'] for r in no_auto[:4])}{'など' if len(no_auto) > 4 else ''}）には、この音がありません。" if no_auto else "")
+    )]
+    if rel_auto and rel_manual:
+        sec3.append(p_tag(
+            "ただし、自動ゴミ収集がないと**ダストボックスのゴミを毎回手で捨てる**ことになります。"
+            f"口コミ{PICK_MIN_REVIEWS}件以上で最も静かなのは、自動ゴミ収集ありでは{plink(rel_auto[0])}（静音性{rel_auto[0]['feature']:.0f}点・{rel_auto[0]['rank']}位）、"
+            f"なしでは{plink(rel_manual[0])}（静音性{rel_manual[0]['feature']:.0f}点・{rel_manual[0]['rank']}位）です。"
+            "ランキング表の上にある「自動ゴミ収集で絞り込み」で、どちらか一方だけを表示することもできます。"
+        ))
+    # 4. 口コミで多い声
+    sec4 = [p_tag(
+        f"各機種の静音性の口コミをまとめたコメントで、よく出てくる場面は{topics_txt}です。"
+        "とくに**夜や在宅中に使えるか**を気にする声が多く、「寝ている間でも気にならない」という評価がある一方で、"
+        "「夜は使いにくい」という声もあります。気になる場面がある場合は、ランキング表のコメントで同じ状況の声を探してください。"
+    )]
+    # 5. 使い方のコツ
+    sec5 = [
+        '<ul class="tips">'
+        + "".join(f"<li>{prose(t)}</li>" for t in [
+            "**外出中にスケジュールで動かす**：アプリで時間を決めておけば、音を気にせず毎日掃除できます。",
+            "**静音（エコ）モードを使う**：吸引を弱めると音は小さくなります。そのぶんカーペットのゴミは取りにくくなるので、部屋ごとに使い分けるのがおすすめです。",
+            "**ゴミ収集のタイミングを確かめる**：機種によっては、アプリでゴミ収集の時間帯や回数を変えられます。夜に掃除するなら、収集を朝に回せるかを確かめておきましょう。",
+            "**集合住宅では夜遅い時間を避ける**：走行音やぶつかる音が床に響くことがあります。ラグを敷くと響きにくくなります。",
+        ])
+        + "</ul>",
+        '<p class="mid-cta"><a class="btn-sub" href="#price-check">静かな上位機種の価格を見る ▼</a></p>',
+    ]
+    faqs = [
+        ("いちばん静かなロボット掃除機はどれですか？",
+         (
+             f"口コミ{PICK_MIN_REVIEWS}件以上では、自動ゴミ収集ありなら{rel_auto[0]['name']}（静音性{rel_auto[0]['feature']:.0f}点）、"
+             f"なしなら{rel_manual[0]['name']}（静音性{rel_manual[0]['feature']:.0f}点）です。"
+             "自動ゴミ収集がない機種はゴミを吸い上げる音がないぶん静かですが、ゴミ捨ては手作業になります。"
+             if rel_auto and rel_manual
+             else f"口コミの件数も考えると、{pick1['name']}（静音性{pick1['feature']:.0f}点・口コミ{pick1['reviews']:,}件）がおすすめです。"
+         )
+         + (f"メーカー公表の運転音では、{quietest['name']}の{quietest['db']:g}dBがもっとも小さい値です（運転音を公表している{len(known)}機種のなか）。" if quietest else "")),
+        ("夜に使っても大丈夫ですか？",
+         "静かな機種なら「寝ている間でも気にならない」という口コミもありますが、ステーションのゴミ収集の音は大きめです。"
+         "夜に使うなら、静音モードにして、ゴミ収集を朝に回せるかを確かめておくと安心です。"),
+        ("静かで安いロボット掃除機はありますか？",
+         (f"口コミ{PICK_MIN_REVIEWS}件以上で5万円以下の機種では、{cheap_pick['name']}（{yen(cheap_pick['price'])}）の静音性が{cheap_pick['feature']:.0f}点で最も高く、総合でも{cheap_pick['rank']}位です。"
+          if cheap_pick else "5万円以下の機種は、ランキング表の価格帯フィルターで絞り込んで比べられます。")),
+        ("マンションや集合住宅に向いている機種は？",
+         (f"口コミの分析で集合住宅との相性が最も高いのは{apt_pick['name']}（{apt_pick['apartment']:.0f}点・静音性{apt_pick['feature']:.0f}点）です。"
+          if apt_pick else "")
+         + "集合住宅では、運転音に加えて、走行やぶつかる音が床に響かないかも口コミで確かめるのがおすすめです。"),
+        ("何dBなら静かといえますか？",
+         (f"当サイトで運転音を公表している{len(known)}機種では、{known[0]['db']:g}dB〜{known[-1]['db']:g}dBでした。" if known else "")
+         + "身近な音でいうと、40dB前後が図書館の館内、50dB前後が書店の店内、60dB前後が銀行の窓口周辺くらいです（全国環境研協議会「騒音の目安」より）。"
+         + "ただし測り方がメーカーごとに違うので、同じメーカーの機種どうしで比べるときの目安にしてください。"),
+    ]
+    faq_html = "".join(
+        f'<details><summary>{html.escape(q)}</summary><div class="faq-a">{p_tag(a)}</div></details>' for q, a in faqs
+    )
+    data_note = [
+        p_tag(
+            "静音性の点数は、ECサイトの口コミのうち運転音や静かさに触れたものを分析して数値化した値です。"
+            "順位は「静音性点数×0.85＋口コミ信頼度×0.15」で決めています。"
+            f"口コミが{MIN_RANK_REVIEWS}件未満の機種は点数が安定しないため載せておらず、{LOW_REVIEW_THRESHOLD}件未満の機種は「参考値」と表示しています。"
+        ),
+        p_tag(
+            "メーカー公表の運転音は、各メーカーの公式サイト・取扱説明書で確認した値です。"
+            f"公表値が見つからなかった{n - len(known)}機種は「公表なし」としています。"
+            "集合住宅との相性は、口コミの内容から集合住宅での使いやすさを評価した点数です。"
+        ),
+    ]
+    sections = [
+        ("quiet-source", "ロボット掃除機の音は3種類", sec1),
+        ("quiet-spec", "メーカー公表の運転音（dB）と口コミ評価", sec2),
+        ("quiet-station", "見落としやすいステーションのゴミ収集音", sec3),
+        ("quiet-voices", "口コミで多い音の声", sec4),
+        ("quiet-tips", "音を気にせず使うコツ", sec5),
+    ]
+    body = "".join(
+        f'<section class="article-sec" id="{sid}"><h2>{html.escape(title)}</h2>{"".join(parts)}</section>'
+        for sid, title, parts in sections if parts
+    )
+    body += f'<section class="article-sec faq" id="faq"><h2>よくある質問</h2>{faq_html}</section>'
+    body += f'<section class="article-sec" id="data"><h2>データについて</h2>{"".join(data_note)}</section>'
+    return f'<div class="article">{body}</div>', faqs
+
+
+def load_quiet_extras(products: list[dict]) -> None:
+    """静音ランキング用に、公表の運転音・自動ゴミ収集の有無・集合住宅との相性を足す。"""
+    for r in products:
+        spec_path = DATA_DIR / "specs" / f"{r['id']}.json"
+        spec = json.loads(spec_path.read_text(encoding="utf-8")) if spec_path.exists() else {}
+        raw = json.loads((DATA_DIR / f"{r['id']}.json").read_text(encoding="utf-8"))
+        r["db"] = (spec.get("cleaning") or {}).get("noiseDb")
+        r["auto_empty"] = (spec.get("station") or {}).get("autoEmpty")
+        apt = ((raw.get("attributeScores") or {}).get("apartment") or {}).get("overall")
+        r["apartment"] = float(apt) if isinstance(apt, (int, float)) else None
+
+
+MOP_STYLES = [
+    ("ローラーモップ", "回転するローラーで床をこすりながら、ステーションや本体でローラーを洗い続ける方式です。ベタつきや乾いた汚れを取りやすく、上位機種に多い方式です。"),
+    ("回転モップ", "円形のモップを2枚回転させて、床に押し付けながら拭く方式です。壁際や家具の脚まわりでモップを伸ばせる機種もあります。"),
+    ("振動モップ", "板状のモップを細かく振動させて、床をこすって拭く方式です。"),
+    ("パッド・シート", "固定のモップパッドや使い捨てシートで床を拭く方式です。安い機種に多く、毎日の軽い汚れ取り向きです。"),
+]
+
+
+def mop_style(text: str | None) -> str | None:
+    """スペックのモップ表記を4つの方式に分ける（表記がなければ None、モップなしは「水拭きなし」）。"""
+    if text is None:
+        return None
+    t = str(text).strip()
+    if not t:
+        return None
+    if t == "なし":
+        return "水拭きなし"
+    if "ローラー" in t or "RevoRoll" in t or "Roll" in t:
+        return "ローラーモップ"
+    if "振動" in t or "VibraRise" in t:
+        return "振動モップ"
+    if "回転" in t or "DuoScrub" in t or "MopExtend" in t or "DualClean" in t:
+        return "回転モップ"
+    return "パッド・シート"
+
+
+def load_mop_extras(products: list[dict]) -> None:
+    """水拭きランキング用に、モップの方式・持ち上げ・ステーションの機能を足す（スペック未確認は None）。"""
+    for r in products:
+        spec_path = DATA_DIR / "specs" / f"{r['id']}.json"
+        spec = json.loads(spec_path.read_text(encoding="utf-8")) if spec_path.exists() else {}
+        mop = spec.get("mop") or {}
+        st = spec.get("station") or {}
+        r["mop_style"] = mop_style(mop.get("type")) if spec else None
+        lift = mop.get("liftMm")
+        r["mop_lift"] = lift if isinstance(lift, (int, float)) and lift > 0 else None
+        r["mop_detach"] = mop.get("autoDetach") if spec else None
+        r["mop_wash"] = st.get("mopWash") if spec else None
+        r["hot_wash"] = st.get("hotWaterWash") if spec else None
+        r["hot_dry"] = st.get("hotAirDry") if spec else None
+        r["detergent"] = st.get("detergentDispenser") if spec else None
+        r["mop_spec"] = bool(spec)
+
+
+def mop_picks(products: list[dict]) -> list[tuple[str, dict]]:
+    """結論ボックスの3台（すべて口コミ50件以上）：モップ自動洗浄ありで最も高い → 5万円以下で最も高い
+    → ローラーモップで最も高い → 回転モップで最も高い。重なったら次の観点へ進み、最大3台。順位・点数はランキング表のまま。"""
+    picks: list[tuple[str, dict]] = []
+    seen: set[str] = set()
+
+    def add(label: str, r: dict | None) -> None:
+        if r and r["id"] not in seen and len(picks) < 3:
+            picks.append((label, r))
+            seen.add(r["id"])
+
+    def first(rs: list[dict]) -> dict | None:
+        # その条件での1位がすでに別の観点で選ばれていたら、2位を「最も〜」とは書かずに次の観点へ進む
+        return rs[0] if rs and rs[0]["id"] not in seen else None
+
+    reliable = [r for r in products if r["reviews"] >= PICK_MIN_REVIEWS and r.get("mop_style") not in (None, "水拭きなし")]
+    add("モップ自動洗浄ありで最も高い", first([r for r in reliable if r.get("mop_wash") is True]))
+    add("予算5万円以下で最も高い", first([r for r in reliable if r["price"] and r["price"] <= CHEAP_MAX]))
+    add("ローラーモップで最も高い", first([r for r in reliable if r.get("mop_style") == "ローラーモップ"]))
+    add("回転モップで最も高い", first([r for r in reliable if r.get("mop_style") == "回転モップ"]))
+    return picks
+
+
+def mop_label(r: dict) -> str:
+    style = r.get("mop_style") or "確認中"
+    if r.get("mop_wash") is True:
+        return f"{style}・自動洗浄あり"
+    if r.get("mop_wash") is False:
+        return f"{style}・自動洗浄なし"
+    return style
+
+
+def build_mop_picks(products: list[dict]) -> str:
+    picks = mop_picks(products)
+    sub = (
+        f"口コミ{PICK_MIN_REVIEWS}件以上の機種から、**モップ自動洗浄の有無と予算、モップの方式**で分けて選んだ{len(picks)}台です。"
+        "点数と順位はランキング表と同じ値です。"
+    )
+    tradeoff = """
+        <div class="tradeoff-box" role="note">
+          <p class="tradeoff-title">モップ自動洗浄の「あり」「なし」で手間が変わります</p>
+          <ul>
+            <li><strong>ありの機種</strong>：掃除のあとにステーションがモップを洗い、機種によっては乾燥まで行います。そのぶん<strong>価格は高めで、ステーションも大きく</strong>なります。</li>
+            <li><strong>なしの機種</strong>：本体は安く済みますが、<strong>掃除のたびにモップを外して手で洗う（またはシートを替える）</strong>必要があります。</li>
+          </ul>
+        </div>"""
+    return build_pick_section(
+        products, picks, "水拭き", "水拭き・床", lambda label, r: ("モップ", mop_label(r)), sub=sub, after_grid=tradeoff
+    )
+
+
+MOP_TOPICS = [
+    ("床がサラサラ・ピカピカになる", r"サラサラ|ツルツル|ピカピカ|さっぱり|スッキリ"),
+    ("ベタつき・皮脂汚れが取れる", r"ベタ|べた|皮脂|足跡"),
+    ("拭きムラ・水跡が残る", r"ムラ|水跡|拭き跡|跡が|筋"),
+    ("モップの臭い・手入れ", r"臭|ニオイ|におい|手入れ|乾燥"),
+    ("髪の毛・ホコリの取れ具合", r"髪|ホコリ"),
+]
+
+
+def build_mop_article(products: list[dict]) -> tuple[str, list[tuple[str, str]]]:
+    n = len(products)
+    picks = mop_picks(products)
+    pick1 = picks[0][1] if picks else products[0]
+    with_mop = [r for r in products if r.get("mop_style") not in (None, "水拭きなし")]
+    no_mop = [r for r in products if r.get("mop_style") == "水拭きなし"]
+    reliable_mop = [r for r in with_mop if r["reviews"] >= PICK_MIN_REVIEWS]
+
+    # 1. モップの方式
+    style_rows = []
+    style_stats: dict[str, tuple[int, float, int]] = {}
+    for style, desc in MOP_STYLES:
+        rs = [r for r in with_mop if r["mop_style"] == style]
+        if not rs:
+            continue
+        prices = sorted(r["price"] for r in rs if r["price"])
+        med = prices[len(prices) // 2] if prices else 0
+        avg = sum(r["feature"] for r in rs) / len(rs)
+        style_stats[style] = (len(rs), avg, med)
+        style_rows.append(
+            f'<tr><td><strong>{html.escape(style)}</strong><br><small>{html.escape(desc)}</small></td>'
+            f'<td class="num">{len(rs)}機種</td><td class="num">{yen(med)}</td><td class="num">{avg:.1f}点</td></tr>'
+        )
+    ranked_styles = sorted(style_stats.items(), key=lambda kv: -kv[1][1])
+    sec1 = [
+        p_tag(
+            "ロボット掃除機の水拭きは、モップの動かし方で大きく4つの方式に分かれます。"
+            f"掲載{n}機種のうち、水拭きができるのは{len(with_mop)}機種です"
+            + (f"（{'・'.join(r['name'] for r in no_mop)}は水拭き機能がありません）。" if no_mop else "。")
+        ),
+        f"""<div class="table-scroll"><table class="mini">
+          <thead><tr><th>モップの方式</th><th>機種数</th><th>価格の中央値</th><th>水拭き・床の平均点</th></tr></thead>
+          <tbody>{"".join(style_rows)}</tbody></table></div>""",
+    ]
+    if len(ranked_styles) >= 2:
+        top_avg = round(ranked_styles[0][1][1], 1)
+        tops = [st for st, v in ranked_styles if round(v[1], 1) == top_avg]
+        lo = ranked_styles[-1]
+        sec1.append(p_tag(
+            f"口コミの点数の平均は**{'と'.join(tops)}{'がともに' if len(tops) > 1 else 'が'}{top_avg:.1f}点で最も高く**、{lo[0]}は{lo[1][1]:.1f}点でした。"
+            "ただし方式ごとに価格帯も違うため、**予算の中でどの方式を選べるか**で考えるのが現実的です。"
+        ))
+
+    # 2. ステーションの自動化
+    feats = [
+        ("モップの自動洗浄", "mop_wash"),
+        ("温水でのモップ洗浄", "hot_wash"),
+        ("モップの温風乾燥", "hot_dry"),
+        ("洗剤の自動投入", "detergent"),
+    ]
+    feat_rows = []
+    for label, key in feats:
+        known = [r for r in with_mop if r.get(key) is not None]
+        hit = [r for r in known if r.get(key) is True]
+        cheap = sorted([r for r in hit if r["reviews"] >= PICK_MIN_REVIEWS and r["price"]], key=lambda r: r["price"])
+        cheapest = (
+            f'<a href="/products/{cheap[0]["id"]}">{html.escape(cheap[0]["name"])}</a>（{yen(cheap[0]["price"])}）'
+            if cheap else "—"
+        )
+        feat_rows.append(
+            f'<tr><td>{html.escape(label)}</td><td class="num">{len(hit)}/{len(known)}機種</td><td>{cheapest}</td></tr>'
+        )
+    sec2 = [
+        p_tag(
+            "水拭きで手間がかかるのは、**モップを洗う・乾かす作業**です。"
+            "ステーションがどこまで自動で行うかは機種によって違うので、メーカーが公表しているスペックで比べました。"
+        ),
+        f"""<div class="table-scroll"><table class="mini">
+          <thead><tr><th>ステーションの機能</th><th>付いている機種</th><th>口コミ{PICK_MIN_REVIEWS}件以上で最も安い機種</th></tr></thead>
+          <tbody>{"".join(feat_rows)}</tbody></table></div>""",
+        p_tag(
+            "**モップを乾かす機能がない機種は、濡れたモップが臭いやすい**ので、こまめに外して洗う必要があります。"
+            "毎日水拭きするなら、自動洗浄と乾燥まで付いた機種を選ぶと手間がかなり減ります。"
+        ),
+    ]
+
+    # 3. カーペットとの両立
+    lift = [r for r in with_mop if r.get("mop_lift")]
+    detach = [r for r in with_mop if r.get("mop_detach") is True]
+    lift_known = [r for r in with_mop if r.get("mop_spec")]
+    sec3 = [p_tag(
+        "ラグやカーペットがある家では、水拭き中にカーペットを濡らさない仕組みが大切です。"
+        f"モップを持ち上げる機能（メーカー公表）があるのは{len(with_mop)}機種のうち{len(lift)}機種"
+        + (f"、モップをステーションで自動で取り外せるのは{'・'.join(r['name'] for r in detach)}の{len(detach)}機種" if detach else "")
+        + "です。"
+        "持ち上げの高さは機種によって違い、毛足の長いラグでは持ち上げても触れることがあります。"
+        "カーペットの掃除の評価は[カーペット・ラグランキング](/rankings/carpet-cleaning)で比べられます。"
+    )]
+    if len(lift_known) < len(with_mop):
+        sec3.append(p_tag(f"※スペックを確認できていない{len(with_mop) - len(lift_known)}機種は、上の数に含めていません。"))
+
+    # 4. 口コミで多い声
+    topic_counts = [(label, sum(1 for r in products if re.search(pat, r.get("comment") or ""))) for label, pat in MOP_TOPICS]
+    topic_counts.sort(key=lambda x: -x[1])
+    # 1〜2機種しか出てこない内容は「よく出てくる」に入れない
+    topics_txt = "、".join(f"「{label}」（{cnt}機種）" for label, cnt in topic_counts if cnt >= 3)
+    mop_mention = sum(1 for r in products if re.search(r"水拭き|モップ", r.get("comment") or ""))
+    sec4 = [p_tag(
+        f"各機種の口コミをまとめたコメントのうち、{n}機種中{mop_mention}機種で水拭きやモップに触れています。"
+        f"よく出てくる内容は{topics_txt}です。"
+        "気になる点がある機種は、ランキング表のコメントで同じ悩みの声を探してください。"
+    )]
+
+    # 5. コツ
+    sec5 = [
+        '<ul class="tips">'
+        + "".join(f"<li>{prose(t)}</li>" for t in [
+            "**先に床のモノを片付ける**：コードや小物があるとモップが引っかかりやすく、拭き残しの原因になります。",
+            "**水量はアプリで部屋ごとに変える**：フローリングは少なめ、キッチンなど汚れやすい場所は多めにすると、水跡やムラを防ぎやすくなります。",
+            "**無垢材や水に弱い床は取扱説明書を確認する**：床材によっては水拭きを勧めていない場合があります。",
+            "**モップは定期的に交換する**：使い続けると汚れが落ちにくくなり、臭いの原因にもなります。交換の目安はメーカーの案内を確認してください。",
+        ])
+        + "</ul>",
+        '<p class="mid-cta"><a class="btn-sub" href="#price-check">水拭きの評価が高い機種の価格を見る ▼</a></p>',
+    ]
+
+    cheap_mop = next((r for r in reliable_mop if r["price"] and r["price"] <= CHEAP_MAX), None)
+    roller = next((r for r in reliable_mop if r["mop_style"] == "ローラーモップ"), None)
+    rotary = next((r for r in reliable_mop if r["mop_style"] == "回転モップ"), None)
+    best = reliable_mop[0] if reliable_mop else pick1
+    faqs = [
+        ("水拭きがいちばん得意なロボット掃除機はどれですか？",
+         f"口コミ{PICK_MIN_REVIEWS}件以上の機種で順位が最も高いのは、{best['name']}（水拭き・床{best['feature']:.0f}点・口コミ{best['reviews']:,}件・{best['rank']}位）です。"
+         "点数は水拭きとフローリングのゴミの取れ具合をあわせた口コミ評価です。"),
+        ("安いロボット掃除機でも水拭きはできますか？",
+         (f"できます。口コミ{PICK_MIN_REVIEWS}件以上で5万円以下の機種では、{cheap_mop['name']}（{yen(cheap_mop['price'])}）の評価が最も高く、{cheap_mop['feature']:.0f}点です。"
+          if cheap_mop else "5万円以下の機種は、ランキング表の価格帯フィルターで絞り込んで比べられます。")
+         + "ただし安い機種はモップを手で洗う方式が多いので、手間も含めて考えてください。"),
+        ("ローラーモップと回転モップはどちらがいいですか？",
+         "ローラーモップは床をこすりながらローラーを洗い続けるので、ベタつきなどの汚れに強いのが特長です。"
+         "回転モップは押し付ける力が強く、壁際でモップを伸ばせる機種もあります。"
+         + (f"口コミの評価が高いのは、ローラーモップでは{roller['name']}（{roller['feature']:.0f}点）、回転モップでは{rotary['name']}（{rotary['feature']:.0f}点）です。" if roller and rotary else "")),
+        ("カーペットがあっても水拭きできますか？",
+         f"モップを持ち上げる機能がある機種なら、カーペットの上ではモップを上げて掃除できます（掲載機種のうち{len(lift)}機種）。"
+         "毛足の長いラグでは触れることもあるので、気になる場合はアプリでラグを進入禁止にするか、モップを自動で取り外せる機種を選ぶと安心です。"),
+        ("水拭きだけのロボットと、吸引と水拭きの両方ができる機種はどちらがいいですか？",
+         "当サイトで比べているのは、吸引と水拭きの両方ができる機種です。"
+         "ゴミを吸ってから拭くので、1台で床掃除をまとめて任せたい場合に向いています。"),
+    ]
+    faq_html = "".join(
+        f'<details><summary>{html.escape(q)}</summary><div class="faq-a">{p_tag(a)}</div></details>' for q, a in faqs
+    )
+    data_note = [
+        p_tag(
+            "水拭き・床の点数は、ECサイトの口コミのうちフローリング掃除（水拭き・吸引）に触れたものを分析して数値化した値です。"
+            "順位は「水拭き・フローリング点数×0.85＋口コミ信頼度×0.15」で決めています。"
+            f"口コミが{MIN_RANK_REVIEWS}件未満の機種は点数が安定しないため載せておらず、{LOW_REVIEW_THRESHOLD}件未満の機種は「参考値」と表示しています。"
+        ),
+        p_tag(
+            "モップの方式・持ち上げ・ステーションの機能は、各メーカーの公式サイト・取扱説明書で確認した内容です。"
+            "方式は当サイトで4つに分けたもので、メーカーの呼び方とは違う場合があります。"
+        ),
+    ]
+    sections = [
+        ("mop-type", "水拭きのモップは4つの方式", sec1),
+        ("mop-station", "モップを洗う・乾かす手間はステーションで変わる", sec2),
+        ("mop-carpet", "カーペットがある家はモップの持ち上げを確認", sec3),
+        ("mop-voices", "口コミで多い水拭きの声", sec4),
+        ("mop-tips", "水拭きを上手に使うコツ", sec5),
+    ]
+    body = "".join(
+        f'<section class="article-sec" id="{sid}"><h2>{html.escape(title)}</h2>{"".join(parts)}</section>'
+        for sid, title, parts in sections if parts
+    )
+    body += f'<section class="article-sec faq" id="faq"><h2>よくある質問</h2>{faq_html}</section>'
+    body += f'<section class="article-sec" id="data"><h2>データについて</h2>{"".join(data_note)}</section>'
+    return f'<div class="article">{body}</div>', faqs
+
+
 def faq_jsonld(faqs: list[tuple[str, str]]) -> str:
     payload = {
         "@context": "https://schema.org",
@@ -1586,18 +2237,43 @@ def write_ranking_page(cfg: dict, products: list[dict]) -> Path:
         for href, label in cfg.get("related_rankings", [])
     )
     meta_desc = cfg["meta_description"].format(count=count)
-    picks_html = article_html = faq_ld = sticky_html = article_css = sticky_js = ""
+    picks_html = article_html = faq_ld = sticky_html = article_css = sticky_js = auto_filter = ""
     extra_cards: list[dict] = []
-    if cfg.get("article") == "step":
-        dims = load_dims()
-        for r in products:
-            d = dims.get(r["id"]) or {}
-            r["climb"] = d.get("climbHeightMm")
-            r["climb2"] = bool(d.get("climbTwoStep"))
-        picks = step_picks(products)
+    if cfg.get("article") in ("step", "quiet", "mop"):
+        if cfg["article"] == "step":
+            dims = load_dims()
+            for r in products:
+                d = dims.get(r["id"]) or {}
+                r["climb"] = d.get("climbHeightMm")
+                r["climb2"] = bool(d.get("climbTwoStep"))
+            picks = step_picks(products)
+            picks_html = build_step_picks(products)
+            article_html, faqs = build_step_article(products)
+        elif cfg["article"] == "mop":
+            load_mop_extras(products)
+            picks = mop_picks(products)
+            picks_html = build_mop_picks(products)
+            article_html, faqs = build_mop_article(products)
+            auto_filter = """
+        <div class="filters-label filters-label-2">モップ自動洗浄で絞り込み</div>
+        <div class="filter-chips" role="group">
+          <button type="button" class="filter-chip auto-chip active" data-auto="all">すべて</button>
+          <button type="button" class="filter-chip auto-chip" data-auto="yes">モップ自動洗浄あり</button>
+          <button type="button" class="filter-chip auto-chip" data-auto="no">モップ自動洗浄なし</button>
+        </div>"""
+        else:
+            load_quiet_extras(products)
+            picks = quiet_picks(products)
+            picks_html = build_quiet_picks(products)
+            article_html, faqs = build_quiet_article(products)
+            auto_filter = """
+        <div class="filters-label filters-label-2">自動ゴミ収集で絞り込み</div>
+        <div class="filter-chips" role="group">
+          <button type="button" class="filter-chip auto-chip active" data-auto="all">すべて</button>
+          <button type="button" class="filter-chip auto-chip" data-auto="yes">自動ゴミ収集あり</button>
+          <button type="button" class="filter-chip auto-chip" data-auto="no">自動ゴミ収集なし</button>
+        </div>"""
         extra_cards = [r for _, r in picks]
-        picks_html = build_step_picks(products)
-        article_html, faqs = build_step_article(products)
         faq_ld = f'\n  <script type="application/ld+json">\n{faq_jsonld(faqs)}\n  </script>'
         if picks:
             lead = picks[0][1]
@@ -1616,6 +2292,7 @@ def write_ranking_page(cfg: dict, products: list[dict]) -> Path:
           ランキングの式：<code>{html.escape(cfg["formula_label"])} × 0.85 ＋ 口コミ信頼度 × 0.15</code>
         </p>
         <p class="method-sub">{format_prose(low_sample_note(cfg))}</p>
+        <p class="method-sub">集計の元データ：Amazon・楽天市場に投稿された公開レビューです。文章は転載せず、内容を分類して点数にしています。</p>
       </section>
 """
     # 記事付きのページは結論を最初に置き、見方は表のあとへ回す
@@ -1683,7 +2360,7 @@ def write_ranking_page(cfg: dict, products: list[dict]) -> Path:
           <button type="button" class="filter-chip" data-min="100000" data-max="150000">10〜15万円</button>
           <button type="button" class="filter-chip" data-min="150000" data-max="200000">15〜20万円</button>
           <button type="button" class="filter-chip" data-min="200000" data-max="Infinity">20万円〜</button>
-        </div>
+        </div>{auto_filter}
         <p class="filter-meta"><span id="filter-count">{count}</span>製品を表示中（順位は全体順位のまま）</p>
       </section>
 
@@ -1742,7 +2419,7 @@ def write_ranking_page(cfg: dict, products: list[dict]) -> Path:
             <a href="/compare/">価格帯比較</a>
           </div>
           <div class="related" style="margin-top:0.65rem">
-            <a href="/compare/robot-vacuum-under-5man">〜5万円</a>
+            <a href="/guides/robot-vacuum-cheap">〜5万円</a>
             <a href="/compare/robot-vacuum-5-7man">5〜7万円</a>
             <a href="/compare/robot-vacuum-7-10man">7〜10万円</a>
             <a href="/compare/robot-vacuum-10-15man">10〜15万円</a>

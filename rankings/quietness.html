@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>静音ロボット掃除機ランキング｜静かでおすすめの機種を口コミで比較｜ナットクLabo</title>
-  <meta name="description" content="口コミの「静か」「うるさい」の声を数値化して、57機種を静音性の高い順に比較。夜間や在宅ワーク中、集合住宅でも使いやすい機種を、実際の口コミ付きで選べます。">
+  <meta name="description" content="口コミの「静か」「うるさい」の声を数値化して、57機種を静音性の高い順に比較。メーカー公表の運転音（dB）やステーションのゴミ収集音、夜や集合住宅で使うときのコツもまとめました。">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <link rel="canonical" href="https://nattoku-labo.com/rankings/quietness">
   <meta property="og:type" content="website">
@@ -59,6 +59,10 @@ h1 {
 .lede { font-size: 0.95rem; opacity: 0.95; max-width: 42rem; }
 /* 句読点・｜の位置で改行する（収まらない節だけ節の中で折り返す） */
 h1 .clause, .lede .clause { display: inline-block; word-break: auto-phrase; text-wrap: pretty; }
+@media (max-width: 768px) {
+  h1 .h-sep { display: none; }
+  h1 .clause { display: block; }
+}
 .rank-tabs {
   position: sticky;
   top: calc(60px + env(safe-area-inset-top, 0px));
@@ -344,6 +348,11 @@ tr.comment-row .comment-spacer { border-bottom: 1px solid #e2e8f0; }
 .img-ph { display: block; }
 .pname { display: block; font-weight: 700; font-size: 0.9rem; line-height: 1.35; }
 .pmeta { display: block; color: var(--muted); font-size: 0.75rem; }
+.auto-tag { display: inline-block; margin-top: 0.2rem; font-size: 0.68rem; font-weight: 800; border-radius: 999px; padding: 0.05rem 0.5rem; }
+.auto-tag.yes { background: #dcfce7; color: #166534; }
+.auto-tag.no { background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; }
+.auto-tag + .auto-tag { margin-left: 0.25rem; }
+.filters-label-2 { margin-top: 0.7rem; }
 .floor-comment {
   margin: 0; padding: 0.55rem 0.7rem;
   background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;
@@ -536,6 +545,89 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
   font-size: 0.82rem;
 }
 .aff-card-status.error { color: #dc2626; }
+
+.picks { margin: 1.25rem 0 1.5rem; }
+.picks h2, .article-sec h2 { font-size: 1.15rem; font-weight: 900; color: #0f172a; margin-bottom: 0.4rem; }
+.picks .section-sub { font-size: 0.86rem; color: #475569; margin-bottom: 0.85rem; }
+.picks-grid { display: grid; gap: 0.85rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.pick-card { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 1rem; display: flex; flex-direction: column; gap: 0.55rem; }
+.pick-card:first-child { border: 2px solid var(--primary); box-shadow: 0 8px 22px rgba(30,64,175,0.08); }
+.pick-label { font-size: 0.78rem; font-weight: 800; color: var(--primary); }
+.pick-head { display: flex; gap: 0.7rem; align-items: center; }
+.pick-head img, .pick-head .img-ph { width: 64px; height: 64px; object-fit: contain; border-radius: 10px; background: #f1f5f9; flex: 0 0 auto; }
+.pick-head h3 { font-size: 1rem; font-weight: 900; line-height: 1.35; }
+.pick-head h3 a { color: #0f172a; text-decoration: none; }
+.pick-meta { font-size: 0.8rem; color: #475569; }
+.pick-stats { list-style: none; display: flex; flex-wrap: wrap; gap: 0.3rem 0.8rem; font-size: 0.82rem; color: #334155; }
+.pick-card > p { font-size: 0.85rem; color: #334155; line-height: 1.7; }
+.pick-actions { margin-top: auto; display: grid; gap: 0.45rem; }
+.btn-primary, .btn-sub { display: block; text-align: center; border-radius: 10px; padding: 0.65rem 0.8rem; font-weight: 800; font-size: 0.9rem; text-decoration: none; }
+.btn-primary { background: var(--primary); color: #fff; }
+.btn-primary:hover { background: #1e3a8a; }
+.btn-sub { background: #eff6ff; color: var(--primary); border: 1px solid #bfdbfe; }
+.btn-sub:hover { background: #dbeafe; }
+.article { margin: 1.75rem 0 0.5rem; display: grid; gap: 1.1rem; }
+.article-sec { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 1.1rem 1.15rem; }
+.article-sec p { font-size: 0.93rem; line-height: 1.85; color: #1e293b; }
+.article-sec p + p, .article-sec p + .table-scroll, .article-sec .table-scroll + p { margin-top: 0.7rem; }
+.article-sec a { color: var(--primary); font-weight: 700; }
+.article-sec .em-key { background: linear-gradient(transparent 62%, #fde68a 62%); font-weight: 800; }
+.table-scroll { overflow-x: auto; margin-top: 0.75rem; }
+table.mini { width: 100%; border-collapse: collapse; font-size: 0.85rem; min-width: 520px; }
+table.mini th, table.mini td { border-bottom: 1px solid var(--line); padding: 0.5rem 0.55rem; text-align: left; vertical-align: top; }
+table.mini th { background: #f8fafc; font-weight: 800; color: #0f172a; white-space: nowrap; }
+table.mini td.num { white-space: nowrap; font-weight: 700; }
+ul.tips { list-style: none; display: grid; gap: 0.55rem; }
+ul.tips li { font-size: 0.92rem; line-height: 1.8; padding-left: 1.1rem; position: relative; }
+ul.tips li::before { content: "✓"; position: absolute; left: 0; color: var(--primary); font-weight: 900; }
+.mid-cta { margin-top: 0.9rem; }
+.mid-cta .btn-sub { display: inline-block; }
+.faq details { border-top: 1px solid var(--line); padding: 0.65rem 0; }
+.faq details:first-of-type { border-top: none; }
+.faq summary { cursor: pointer; font-weight: 800; color: #0f172a; font-size: 0.95rem; }
+.faq .faq-a { margin-top: 0.45rem; }
+.aff-card { scroll-margin-top: 130px; }
+.picks, .article-sec, .top-cards, .table-wrap { scroll-margin-top: 120px; }
+.picks-note { font-size: 0.82rem; color: #475569; margin-top: 0.75rem; line-height: 1.7; }
+.tradeoff-box, .caution-box { border-radius: 12px; padding: 0.85rem 1rem; margin-top: 0.85rem; }
+.tradeoff-box { background: #eff6ff; border: 1px solid #bfdbfe; }
+.caution-box { background: #fff7ed; border: 2px solid #f59e0b; margin: 0 0 0.9rem; }
+.tradeoff-title, .caution-title { font-weight: 900; font-size: 0.95rem; margin-bottom: 0.4rem; }
+.tradeoff-title { color: #1e3a8a; }
+.caution-title { color: #9a3412; }
+.caution-title::before { content: "⚠ "; }
+.caution-key { background: #fef2f2; border: 2px solid #dc2626; border-radius: 10px; padding: 0.75rem 0.9rem; margin: 0.5rem 0 0.7rem; font-size: 1rem !important; line-height: 1.75 !important; color: #7f1d1d !important; }
+.caution-key strong { color: #b91c1c; font-size: 1.05rem; }
+.caution-key-label { display: inline-block; background: #dc2626; color: #fff; font-size: 0.75rem; font-weight: 900; border-radius: 6px; padding: 0.1rem 0.5rem; margin-right: 0.5rem; vertical-align: 0.1em; }
+.article-sec > .caution-key { margin-top: 1rem; }
+.tradeoff-box ul, .caution-box ul { list-style: disc; padding-left: 1.2rem; display: grid; gap: 0.3rem; }
+.tradeoff-box li, .caution-box li { font-size: 0.88rem; line-height: 1.75; color: #1e293b; }
+table.mini.ref { min-width: 0; }
+.src-note { font-size: 0.78rem !important; color: #475569 !important; margin-top: 0.4rem; }
+.picks-jump { margin-top: 0.75rem; text-align: center; }
+.picks-jump .btn-sub { display: inline-block; padding: 0.6rem 1.4rem; }
+@media (max-width: 768px) {
+  /* スマホでは結論を1台1行に近い簡単な表示にして、表までの距離を縮める */
+  .picks-grid { gap: 0.55rem; }
+  .pick-card { padding: 0.75rem 0.8rem; gap: 0.35rem; }
+  .pick-card > p:not(.pick-label), .pick-meta, .pick-stats li:nth-child(3) { display: none; }
+  .pick-head img, .pick-head .img-ph { width: 44px; height: 44px; }
+  .pick-head h3 { font-size: 0.95rem; }
+  .pick-stats { font-size: 0.8rem; }
+  .pick-actions { grid-template-columns: 1fr 1fr; gap: 0.4rem; }
+  .btn-primary, .btn-sub { padding: 0.55rem 0.4rem; font-size: 0.82rem; }
+}
+.sticky-cta { display: none; }
+@media (max-width: 768px) {
+  .sticky-cta:not([hidden]) {
+    display: flex; gap: 0.45rem; position: fixed; left: 0; right: 0; bottom: 0; z-index: 40;
+    padding: 0.6rem 0.75rem calc(0.6rem + env(safe-area-inset-bottom, 0px));
+    background: rgba(255,255,255,0.97); border-top: 1px solid var(--line); box-shadow: 0 -6px 18px rgba(15,23,42,0.08);
+  }
+  .sticky-cta a { flex: 1 1 auto; text-align: center; border-radius: 10px; padding: 0.7rem 0.6rem; font-weight: 800; font-size: 0.88rem; text-decoration: none; background: var(--primary); color: #fff; }
+  .sticky-cta a.sticky-sub { flex: 0 0 auto; background: #eff6ff; color: var(--primary); border: 1px solid #bfdbfe; }
+  body { padding-bottom: 4.5rem; }
+}
 </style>
   <script type="application/ld+json">
 {
@@ -730,6 +822,54 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
 }
   </script>
   <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "いちばん静かなロボット掃除機はどれですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "口コミ50件以上では、自動ゴミ収集ありならDEEBOT X11 OmniCyclone（静音性96点）、なしならEufy RoboVac G30 Hybrid（静音性96点）です。自動ゴミ収集がない機種はゴミを吸い上げる音がないぶん静かですが、ゴミ捨ては手作業になります。メーカー公表の運転音では、ロボット掃除機 K10+ Proの45dBがもっとも小さい値です（運転音を公表している20機種のなか）。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "夜に使っても大丈夫ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "静かな機種なら「寝ている間でも気にならない」という口コミもありますが、ステーションのゴミ収集の音は大きめです。夜に使うなら、静音モードにして、ゴミ収集を朝に回せるかを確かめておくと安心です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "静かで安いロボット掃除機はありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "口コミ50件以上で5万円以下の機種では、Eufy RoboVac G30 Hybrid（¥39,990）の静音性が96点で最も高く、総合でも1位です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "マンションや集合住宅に向いている機種は？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "口コミの分析で集合住宅との相性が最も高いのはDEEBOT X11 OmniCyclone（92点・静音性96点）です。集合住宅では、運転音に加えて、走行やぶつかる音が床に響かないかも口コミで確かめるのがおすすめです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "何dBなら静かといえますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "当サイトで運転音を公表している20機種では、45dB〜70dBでした。身近な音でいうと、40dB前後が図書館の館内、50dB前後が書店の店内、60dB前後が銀行の窓口周辺くらいです（全国環境研協議会「騒音の目安」より）。ただし測り方がメーカーごとに違うので、同じメーカーの機種どうしで比べるときの目安にしてください。"
+      }
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -747,29 +887,94 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
       <nav class="crumb" aria-label="パンくず">
         <a href="/">ホーム</a> › <a href="/rankings/">ランキング</a> › 静音ロボット掃除機ランキング
       </nav>
-      <h1><span class="clause">静音ロボット掃除機ランキング｜</span><span class="clause">静かでおすすめの機種を口コミで比較</span></h1>
+      <h1><span class="clause">静音ロボット掃除機ランキング</span><span class="h-sep">｜</span><span class="clause">静かでおすすめの機種を口コミで比較</span></h1>
       <p class="lede"><span class="clause">口コミ⁠に書かれた運転音・静音性⁠の評価⁠を数値化し⁠、</span><span class="clause">在宅中⁠や夜間⁠でも使いやすい機種⁠を比較したランキング⁠です⁠。</span><span class="clause">各製品⁠には⁠、実際⁠の口コミからまとめた静音性⁠の傾向コメント⁠も掲載しています⁠。</span></p>
     </div>
   </header>
 
   <nav class="rank-tabs" aria-label="機能別ランキング">
     <div class="wrap rank-tabs-inner">
-      <a class="rank-tab" href="/rankings/floor-cleaning">フローリング</a><a class="rank-tab" href="/rankings/carpet-cleaning">カーペット</a><a class="rank-tab active" href="/rankings/quietness" aria-current="page">静音性</a><a class="rank-tab" href="/rankings/step-climbing">段差</a><a class="rank-tab rank-tab-all" href="/rankings/">一覧</a>
+      <a class="rank-tab" href="/rankings/floor-cleaning">水拭き・床</a><a class="rank-tab" href="/rankings/carpet-cleaning">カーペット・ラグ</a><a class="rank-tab active" href="/rankings/quietness" aria-current="page">静音性</a><a class="rank-tab" href="/rankings/step-climbing">段差</a><a class="rank-tab rank-tab-all" href="/rankings/">一覧</a>
     </div>
   </nav>
 
   <main>
     <div class="wrap">
 
-      <section class="method">
-        <h2>このランキングの見方</h2>
-        <p>「⁠<strong class="em-key benefit">音⁠が静か</strong>⁠」「⁠テレビ⁠の邪魔⁠にならない⁠」⁠といった口コミ⁠を点数化し⁠、静音性⁠の高さで並べています⁠。口コミ⁠の信頼度⁠を適切⁠に加味するので⁠、実体験⁠に近いおすすめ順⁠になっています⁠。表⁠の各製品⁠には⁠、運転音⁠や生活⁠への影響⁠に関する<strong class="em-key">口コミ傾向</strong>⁠も記載しているので⁠、点数だけでなく具体的な声⁠も比較⁠できます⁠。</p>
-        <p class="method-sub">
-          ランキングの式：<code>静音性点数 × 0.85 ＋ 口コミ信頼度 × 0.15</code>
-        </p>
-        <p class="method-sub">口コミ⁠が10件未満⁠の11機種⁠は⁠、点数⁠が安定しないためこのランキング⁠に載せていません⁠。20件未満⁠の機種⁠は「⁠参考値⁠」⁠と表示しています⁠。</p>
+      <section class="picks" id="picks" aria-label="静かさで選ぶならこの3台">
+        <h2>結論：静かさで選ぶならこの3台</h2>
+        <p class="section-sub">口コミ50件以上⁠の機種から⁠、<strong class="em-key">自動ゴミ収集⁠の「⁠あり⁠」「⁠なし⁠」⁠を分けて</strong>選んだ3台⁠です⁠。点数⁠と順位⁠はランキング表⁠と同じ値⁠です⁠。</p>
+        <div class="picks-grid">
+          <article class="pick-card">
+            <p class="pick-label">自動ゴミ収集ありで最も静か</p>
+            <div class="pick-head">
+              <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/dex99-10ee.jpg" alt="" width="64" height="64" loading="lazy">
+              <div>
+                <h3><a href="/products/deebot-x11-omnicyclone">DEEBOT X11 OmniCyclone</a></h3>
+                <p class="pick-meta">ECOVACS · ¥229,900</p>
+              </div>
+            </div>
+            <ul class="pick-stats">
+              <li>静音性 <strong>96点</strong>（2位）</li>
+              <li>口コミ <strong>107件</strong></li>
+              <li>メーカー公表の運転音 <strong>62dB</strong></li>
+            </ul>
+            <p>口コミ⁠では「⁠驚くほど静か⁠」⁠という意見⁠が圧倒的多数⁠で⁠、夜間⁠や集合住宅⁠でも気兼ねなく使えるレベル⁠です⁠。</p>
+            <div class="pick-actions">
+              <a class="btn-primary" href="/products/deebot-x11-omnicyclone">口コミ分析を見る</a>
+              <a class="btn-sub" href="#price-deebot-x11-omnicyclone">最新価格を見る ▼</a>
+            </div>
+          </article>
+          <article class="pick-card">
+            <p class="pick-label">自動ゴミ収集なしで最も静か</p>
+            <div class="pick-head">
+              <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t2253/t2253_daily.jpg" alt="" width="64" height="64" loading="lazy">
+              <div>
+                <h3><a href="/products/eufy-robovac-g30-hybrid">Eufy RoboVac G30 Hybrid</a></h3>
+                <p class="pick-meta">Anker · ¥39,990</p>
+              </div>
+            </div>
+            <ul class="pick-stats">
+              <li>静音性 <strong>96点</strong>（1位）</li>
+              <li>口コミ <strong>223件</strong></li>
+              <li>メーカー公表の運転音 <strong>公表なし</strong></li>
+            </ul>
+            <p>口コミ⁠では「⁠ルンバより遥かに静か⁠」「⁠テレビ⁠の音⁠を邪魔しない⁠」など⁠、動作音⁠の静かさはトップクラス⁠の評価⁠です⁠。</p>
+            <div class="pick-actions">
+              <a class="btn-primary" href="/products/eufy-robovac-g30-hybrid">口コミ分析を見る</a>
+              <a class="btn-sub" href="#price-eufy-robovac-g30-hybrid">最新価格を見る ▼</a>
+            </div>
+          </article>
+          <article class="pick-card">
+            <p class="pick-label">5万円以下・自動ゴミ収集ありで最も静か</p>
+            <div class="pick-head">
+              <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t2292/t2292_nomal.jpg" alt="" width="64" height="64" loading="lazy">
+              <div>
+                <h3><a href="/products/eufy-robot-vacuum-auto-empty-c10">Eufy Robot Vacuum Auto-Empty C10</a></h3>
+                <p class="pick-meta">Anker · ¥29,990</p>
+              </div>
+            </div>
+            <ul class="pick-stats">
+              <li>静音性 <strong>92点</strong>（3位）</li>
+              <li>口コミ <strong>224件</strong></li>
+              <li>メーカー公表の運転音 <strong>公表なし</strong></li>
+            </ul>
+            <p>口コミ⁠では「⁠走行中⁠の動作音⁠は非常⁠に静かで⁠、在宅勤務中⁠や夜間⁠でも気⁠にならないというレビュー⁠が多数⁠。⁠」</p>
+            <div class="pick-actions">
+              <a class="btn-primary" href="/products/eufy-robot-vacuum-auto-empty-c10">口コミ分析を見る</a>
+              <a class="btn-sub" href="#price-eufy-robot-vacuum-auto-empty-c10">最新価格を見る ▼</a>
+            </div>
+          </article></div>
+        <div class="tradeoff-box" role="note">
+          <p class="tradeoff-title">自動ゴミ収集の「あり」「なし」で選び方が変わります</p>
+          <ul>
+            <li><strong>ありの機種</strong>：ゴミ捨ては数週間に1回で済みます。その代わり、掃除のあとにステーションがゴミを吸い上げる<strong>大きめの音（数秒〜十数秒）</strong>が出ます。</li>
+            <li><strong>なしの機種</strong>：ゴミを吸い上げる音がないぶん静かですが、<strong>ダストボックスのゴミを毎回手で捨てる</strong>必要があります。</li>
+          </ul>
+        </div>
+        
+        <p class="picks-jump"><a class="btn-sub" href="#ranking">全機種ランキングを見る ▼</a></p>
       </section>
-
       <section class="filters" aria-label="価格帯で絞り込み">
         <div class="filters-label">価格帯で絞り込み</div>
         <div class="filter-chips" role="group">
@@ -780,6 +985,12 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
           <button type="button" class="filter-chip" data-min="100000" data-max="150000">10〜15万円</button>
           <button type="button" class="filter-chip" data-min="150000" data-max="200000">15〜20万円</button>
           <button type="button" class="filter-chip" data-min="200000" data-max="Infinity">20万円〜</button>
+        </div>
+        <div class="filters-label filters-label-2">自動ゴミ収集で絞り込み</div>
+        <div class="filter-chips" role="group">
+          <button type="button" class="filter-chip auto-chip active" data-auto="all">すべて</button>
+          <button type="button" class="filter-chip auto-chip" data-auto="yes">自動ゴミ収集あり</button>
+          <button type="button" class="filter-chip auto-chip" data-auto="no">自動ゴミ収集なし</button>
         </div>
         <p class="filter-meta"><span id="filter-count">57</span>製品を表示中（順位は全体順位のまま）</p>
       </section>
@@ -813,14 +1024,14 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
             </thead>
             <tbody>
               
-      <tr class="rank-row top-1" data-price="39990" data-rank="1">
+      <tr class="rank-row top-1" data-price="39990" data-rank="1" data-auto="no">
         <td class="rank"><span class="rank-num">1</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/eufy-robovac-g30-hybrid" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t2253/t2253_daily.jpg" alt="Eufy RoboVac G30 Hybridの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Eufy RoboVac G30 Hybrid</span>
-              <span class="pmeta">Anker</span>
+              <span class="pmeta">Anker</span><span class="auto-tag no">自動ゴミ収集なし</span>
             </span>
           </a>
         </td>
@@ -829,20 +1040,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">223</td>
         <td class="num muted">¥39,990</td>
       </tr>
-      <tr class="comment-row top-1" data-price="39990" data-rank="1">
+      <tr class="comment-row top-1" data-price="39990" data-rank="1" data-auto="no">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>「⁠<strong class="em-key benefit">ルンバより遥かに静か</strong>⁠」「⁠<strong class="em-key demerit">テレビ⁠の音⁠を邪魔しない</strong>⁠」など⁠、動作音⁠の静かさはトップクラス⁠の評価⁠です⁠。夜間⁠や在宅ワーク中⁠でも気兼ねなく使用⁠できる点⁠が大きな魅力⁠です⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row top-2" data-price="229900" data-rank="2">
+      <tr class="rank-row top-2" data-price="229900" data-rank="2" data-auto="yes">
         <td class="rank"><span class="rank-num">2</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/deebot-x11-omnicyclone" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/dex99-10ee.jpg" alt="DEEBOT X11 OmniCycloneの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">DEEBOT X11 OmniCyclone</span>
-              <span class="pmeta">ECOVACS</span>
+              <span class="pmeta">ECOVACS</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -851,20 +1062,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">107</td>
         <td class="num muted">¥229,900</td>
       </tr>
-      <tr class="comment-row top-2" data-price="229900" data-rank="2">
+      <tr class="comment-row top-2" data-price="229900" data-rank="2" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>「⁠<strong class="em-key benefit">驚くほど静か</strong>⁠」⁠という意見⁠が圧倒的多数⁠で⁠、夜間⁠や集合住宅⁠でも気兼ねなく使えるレベル⁠です⁠。旧来⁠のロボット掃除機⁠の動作音⁠を知るユーザーほど⁠、その静音性⁠の進化⁠に感動しています⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row top-3" data-price="29990" data-rank="3">
+      <tr class="rank-row top-3" data-price="29990" data-rank="3" data-auto="yes">
         <td class="rank"><span class="rank-num">3</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/eufy-robot-vacuum-auto-empty-c10" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t2292/t2292_nomal.jpg" alt="Eufy Robot Vacuum Auto-Empty C10の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Eufy Robot Vacuum Auto-Empty C10</span>
-              <span class="pmeta">Anker</span>
+              <span class="pmeta">Anker</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -873,20 +1084,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">224</td>
         <td class="num muted">¥29,990</td>
       </tr>
-      <tr class="comment-row top-3" data-price="29990" data-rank="3">
+      <tr class="comment-row top-3" data-price="29990" data-rank="3" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>走行中⁠の動作音⁠は非常⁠に静かで⁠、在宅勤務中⁠や夜間⁠でも気⁠にならないというレビュー⁠が多数⁠。一方⁠で⁠、ステーション⁠での自動ゴミ収集時⁠の音⁠は「⁠爆音⁠」⁠と表現されるほど大きく⁠、使用時間帯⁠には配慮⁠が必要⁠です⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="94800" data-rank="4">
+      <tr class="rank-row" data-price="94800" data-rank="4" data-auto="yes">
         <td class="rank"><span class="rank-num">4</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/x30-ultra" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/11006786/imgrc0151417959.jpg" alt="X30 Ultraの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">X30 Ultra</span>
-              <span class="pmeta">Dreame</span>
+              <span class="pmeta">Dreame</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -895,20 +1106,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">27</td>
         <td class="num muted">¥94,800</td>
       </tr>
-      <tr class="comment-row" data-price="94800" data-rank="4">
+      <tr class="comment-row" data-price="94800" data-rank="4" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>「⁠<strong class="em-key benefit">音⁠がかなり静か</strong>⁠」「⁠在宅中⁠に横⁠で動いていてもミーティング⁠ができるレベル⁠」⁠と⁠、静音性⁠は非常⁠に高く評価されています⁠。夜間⁠や早朝⁠でも気兼ねなく使用⁠できる点⁠が魅力⁠です⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="64800" data-rank="5">
+      <tr class="rank-row" data-price="64800" data-rank="5" data-auto="yes">
         <td class="rank"><span class="rank-num">5</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/k10-pro" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/rikusyouya/cabinet/11351708/12526999/imgrc0101203443.jpg" alt="ロボット掃除機 K10+ Proの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">ロボット掃除機 K10+ Pro</span>
-              <span class="pmeta">SwitchBot</span>
+              <span class="pmeta">SwitchBot</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -917,20 +1128,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">202</td>
         <td class="num muted">¥64,800</td>
       </tr>
-      <tr class="comment-row" data-price="64800" data-rank="5">
+      <tr class="comment-row" data-price="64800" data-rank="5" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>「⁠静音モード⁠」⁠での動作音⁠は非常⁠に静かで⁠、在宅中⁠や夜間⁠でも気⁠にならないと好評⁠です⁠。ただし⁠、ゴミ収集ステーション⁠の吸引音⁠は大きいという意見⁠で一致しています⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="69800" data-rank="6">
+      <tr class="rank-row" data-price="69800" data-rank="6" data-auto="yes">
         <td class="rank"><span class="rank-num">6</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/l10s-ultra-gen-3" target="_blank" rel="noopener">
-            <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/l10sultragen3_cp.jpg" alt="L10s Ultra Gen 3の製品画像" loading="lazy" width="56" height="56"></span>
+            <span class="thumb"><img src="https://www.dreametech.jp/cdn/shop/files/l10s_ultra_gen_3.png?width=800" alt="L10s Ultra Gen 3の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">L10s Ultra Gen 3</span>
-              <span class="pmeta">Dreame</span>
+              <span class="pmeta">Dreame</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -939,20 +1150,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">84</td>
         <td class="num muted">¥69,800</td>
       </tr>
-      <tr class="comment-row" data-price="69800" data-rank="6">
+      <tr class="comment-row" data-price="69800" data-rank="6" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>多くのユーザー⁠が動作音⁠の静かさに驚いています⁠。旧来⁠のロボット掃除機⁠と比較して格段⁠に静かで⁠、在宅中⁠や夜間⁠でも気兼ねなく使用⁠できるレベルだと高く評価されています⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="149799" data-rank="7">
+      <tr class="rank-row" data-price="149799" data-rank="7" data-auto="yes">
         <td class="rank"><span class="rank-num">7</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/deebot-t90-omni" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/dex96-12ee.jpg" alt="DEEBOT T90 OMNIの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">DEEBOT T90 OMNI</span>
-              <span class="pmeta">ECOVACS</span>
+              <span class="pmeta">ECOVACS</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -961,20 +1172,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">100</td>
         <td class="num muted">¥149,799</td>
       </tr>
-      <tr class="comment-row" data-price="149799" data-rank="7">
+      <tr class="comment-row" data-price="149799" data-rank="7" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>「⁠<strong class="em-key benefit">驚くほど静か</strong>⁠」⁠という口コミ⁠が非常⁠に多く⁠、夜間⁠や在宅ワーク中⁠でも気⁠にならないレベル⁠です⁠。旧モデル⁠や他社製品からの乗り換えユーザー⁠はその静音性⁠に特⁠に満足しています⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="139800" data-rank="8">
+      <tr class="rank-row" data-price="139800" data-rank="8" data-auto="yes">
         <td class="rank"><span class="rank-num">8</span><span class="ref-badge" title="口コミ数が少ないため参考値">参考値</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/deebot-t90-max-omni" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/14108108/zj2633-0801.jpg" alt="T90 MAX OMNIの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">T90 MAX OMNI</span>
-              <span class="pmeta">ECOVACS</span>
+              <span class="pmeta">ECOVACS</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -983,20 +1194,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">12</td>
         <td class="num muted">¥139,800</td>
       </tr>
-      <tr class="comment-row" data-price="139800" data-rank="8">
+      <tr class="comment-row" data-price="139800" data-rank="8" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>「⁠<strong class="em-key benefit">音⁠が静か</strong>⁠」「⁠<strong class="em-key benefit">思ったより静か</strong>⁠」⁠との声⁠が多数⁠を占めています⁠。旧モデル⁠や他社製品⁠と比較して動作音⁠が小さいと感じるユーザー⁠が多く⁠、在宅中⁠でも気兼ねなく使用⁠できる点⁠が評価されています⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="21600" data-rank="9">
+      <tr class="rank-row" data-price="21600" data-rank="9" data-auto="yes">
         <td class="rank"><span class="rank-num">9</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/d10-plus" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/11302689/imgrc0140534087.jpg" alt="D10 Plusの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">D10 Plus</span>
-              <span class="pmeta">Dreame</span>
+              <span class="pmeta">Dreame</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -1005,20 +1216,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">34</td>
         <td class="num muted">¥21,600</td>
       </tr>
-      <tr class="comment-row" data-price="21600" data-rank="9">
+      <tr class="comment-row" data-price="21600" data-rank="9" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>動作音⁠の静かさは本製品⁠の最大⁠の特徴⁠の一つです⁠。「⁠<strong class="em-key benefit">ルンバより静か</strong>⁠」⁠という比較レビュー⁠が複数あり⁠、在宅ワーク中⁠でも気⁠にならないレベル⁠と高評価⁠です⁠。ただしゴミ収集時⁠の音⁠は大きいので<strong class="em-key demerit">注意⁠が必要</strong>⁠です⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="79800" data-rank="10">
+      <tr class="rank-row" data-price="79800" data-rank="10" data-auto="yes">
         <td class="rank"><span class="rank-num">10</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/qrevo-l" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/roborockjapandirect/cabinet/products/12574614/12574615/imgrc0130333896.jpg" alt="Qrevo Lの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Qrevo L</span>
-              <span class="pmeta">Roborock</span>
+              <span class="pmeta">Roborock</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -1027,20 +1238,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">159</td>
         <td class="num muted">¥79,800</td>
       </tr>
-      <tr class="comment-row" data-price="79800" data-rank="10">
+      <tr class="comment-row" data-price="79800" data-rank="10" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>「⁠<strong class="em-key benefit">ルンバより遥かに静か</strong>⁠」⁠と比較する声⁠が多く⁠、在宅勤務中⁠や夜間⁠でも気⁠にならないレベル⁠と評価されています⁠。ただし⁠、ドック⁠でのゴミ収集時⁠の吸引音⁠は大きいという意見⁠が共通しています⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="199800" data-rank="11">
+      <tr class="rank-row" data-price="199800" data-rank="11" data-auto="yes">
         <td class="rank"><span class="rank-num">11</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/deebot-x8-pro-omni" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/dex56-14ee.jpg" alt="DEEBOT X8 PRO OMNIの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">DEEBOT X8 PRO OMNI</span>
-              <span class="pmeta">ECOVACS</span>
+              <span class="pmeta">ECOVACS</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -1049,20 +1260,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">135</td>
         <td class="num muted">¥199,800</td>
       </tr>
-      <tr class="comment-row" data-price="199800" data-rank="11">
+      <tr class="comment-row" data-price="199800" data-rank="11" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>旧来⁠のロボット掃除機からの買い替えユーザー⁠を中心⁠に「⁠<strong class="em-key benefit">驚くほど静か</strong>⁠」⁠との声⁠が多数⁠。在宅中⁠でも気⁠になりにくいレベル⁠です⁠。ただし⁠、ステーション⁠でのゴミ収集音⁠は大きいという点⁠は共通⁠の認識⁠です⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="99800" data-rank="12">
+      <tr class="rank-row" data-price="99800" data-rank="12" data-auto="yes">
         <td class="rank"><span class="rank-num">12</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/deebot-t80-omni" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/dex68-21ee.jpg" alt="DEEBOT T80 OMNIの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">DEEBOT T80 OMNI</span>
-              <span class="pmeta">ECOVACS</span>
+              <span class="pmeta">ECOVACS</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -1071,20 +1282,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">596</td>
         <td class="num muted">¥99,800</td>
       </tr>
-      <tr class="comment-row" data-price="99800" data-rank="12">
+      <tr class="comment-row" data-price="99800" data-rank="12" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>旧来⁠のロボット掃除機（⁠特⁠にルンバ⁠）⁠と比較して「⁠<strong class="em-key benefit">音⁠が静か</strong>⁠」⁠という意見⁠が多数⁠を占めます⁠。在宅中⁠や夜間⁠の稼働⁠でも気⁠になりにくいレベル⁠で⁠、テレビ⁠の音⁠を妨げないという声⁠もあり⁠、静音性⁠は高いです⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="29999" data-rank="13">
+      <tr class="rank-row" data-price="29999" data-rank="13" data-auto="no">
         <td class="rank"><span class="rank-num">13</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/q10v" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://m.media-amazon.com/images/I/313-K0HeIRL._SL500_.jpg" alt="Q10Vの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Q10V</span>
-              <span class="pmeta">Roborock</span>
+              <span class="pmeta">Roborock</span><span class="auto-tag no">自動ゴミ収集なし</span>
             </span>
           </a>
         </td>
@@ -1093,20 +1304,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">51</td>
         <td class="num muted">¥29,999</td>
       </tr>
-      <tr class="comment-row" data-price="29999" data-rank="13">
+      <tr class="comment-row" data-price="29999" data-rank="13" data-auto="no">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>「⁠<strong class="em-key benefit">ルンバよりはるかに静か</strong>⁠」「⁠<strong class="em-key benefit">夜間⁠でも気⁠にならない</strong>⁠」⁠といった声⁠が多く⁠、動作音⁠の静かさは大きな長所⁠です⁠。在宅中⁠でもストレスなく使用⁠できる点⁠が支持されています⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="149900" data-rank="14">
+      <tr class="rank-row" data-price="149900" data-rank="14" data-auto="yes">
         <td class="rank"><span class="rank-num">14</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/eufy-robot-vacuum-omni-e25" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t2353/imgrc0094500246.jpg" alt="Eufy Robot Vacuum Omni E25の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Eufy Robot Vacuum Omni E25</span>
-              <span class="pmeta">Anker</span>
+              <span class="pmeta">Anker</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -1115,20 +1326,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">191</td>
         <td class="num muted">¥149,900</td>
       </tr>
-      <tr class="comment-row" data-price="149900" data-rank="14">
+      <tr class="comment-row" data-price="149900" data-rank="14" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>旧世代⁠のロボット掃除機⁠と比較して「⁠<strong class="em-key benefit">驚くほど静か</strong>⁠」⁠という意見⁠が多数⁠。在宅中⁠でも気⁠にならないレベル⁠です⁠。ただし⁠、ゴミ収集時⁠の音⁠は大きいという点⁠は共通⁠の認識⁠です⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="69800" data-rank="15">
+      <tr class="rank-row" data-price="69800" data-rank="15" data-auto="yes">
         <td class="rank"><span class="rank-num">15</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/deebot-mini-2" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260804/djx28-01ee.jpg" alt="DEEBOT mini 2の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">DEEBOT mini 2</span>
-              <span class="pmeta">ECOVACS</span>
+              <span class="pmeta">ECOVACS</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -1137,20 +1348,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">36</td>
         <td class="num muted">¥69,800</td>
       </tr>
-      <tr class="comment-row" data-price="69800" data-rank="15">
+      <tr class="comment-row" data-price="69800" data-rank="15" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>「⁠<strong class="em-key benefit">予想以上⁠に静か</strong>⁠」⁠という意見⁠が大多数⁠を占めており⁠、夜間⁠や在宅ワーク中⁠でも気兼ねなく使用⁠できるレベル⁠です⁠。特⁠に旧型⁠のロボット掃除機からの買い替えユーザー⁠はその静音性⁠に驚いています⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="199980" data-rank="16">
+      <tr class="rank-row" data-price="199980" data-rank="16" data-auto="yes">
         <td class="rank"><span class="rank-num">16</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/saros-10r" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/roborockjapandirect/cabinet/products/12574614/imgrc0135010295.jpg" alt="Saros 10Rの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Saros 10R</span>
-              <span class="pmeta">Roborock</span>
+              <span class="pmeta">Roborock</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -1159,20 +1370,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">148</td>
         <td class="num muted">¥199,980</td>
       </tr>
-      <tr class="comment-row" data-price="199980" data-rank="16">
+      <tr class="comment-row" data-price="199980" data-rank="16" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>多くのユーザー⁠が「⁠<strong class="em-key benefit">想像より静か</strong>⁠」⁠と評価しており⁠、夜間⁠や在宅ワーク中⁠でも気兼ねなく使用⁠できるレベル⁠です⁠。ただし⁠、一部⁠のユーザー⁠はモップ⁠の振動音⁠を指摘しており⁠、無音⁠というわけではありません⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="99800" data-rank="17">
+      <tr class="rank-row" data-price="99800" data-rank="17" data-auto="yes">
         <td class="rank"><span class="rank-num">17</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/deebot-t50-omni" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/ddx57-12ee.jpg" alt="DEEBOT T50 OMNIの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">DEEBOT T50 OMNI</span>
-              <span class="pmeta">ECOVACS</span>
+              <span class="pmeta">ECOVACS</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -1181,20 +1392,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">225</td>
         <td class="num muted">¥99,800</td>
       </tr>
-      <tr class="comment-row" data-price="99800" data-rank="17">
+      <tr class="comment-row" data-price="99800" data-rank="17" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>動作音⁠は「⁠<strong class="em-key benefit">思ったより静か</strong>⁠」⁠という意見⁠が多数派⁠で⁠、在宅中⁠や夜間⁠でも使いやすいと評価されています⁠。ただし⁠、ステーション⁠でのゴミ収集⁠やモップ洗浄時⁠の音⁠は大きいと感じる人⁠もいます⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="43999" data-rank="18">
+      <tr class="rank-row" data-price="43999" data-rank="18" data-auto="yes">
         <td class="rank"><span class="rank-num">18</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/q10v-plus" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://m.media-amazon.com/images/I/319BCGeg7ZL._SL500_.jpg" alt="Q10V+の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Q10V+</span>
-              <span class="pmeta">Roborock</span>
+              <span class="pmeta">Roborock</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -1203,20 +1414,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">43</td>
         <td class="num muted">¥43,999</td>
       </tr>
-      <tr class="comment-row" data-price="43999" data-rank="18">
+      <tr class="comment-row" data-price="43999" data-rank="18" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>動作音⁠は静かであるとの評価⁠が多く⁠、特⁠に夜間⁠や在宅ワーク中⁠でも気⁠にならないレベルだと好評⁠です⁠。ただし⁠、ゴミ収集時⁠のドック⁠の吸引音⁠は大きいという指摘⁠もあり<strong class="em-key demerit">注意⁠が必要</strong>⁠です⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="49800" data-rank="19">
+      <tr class="rank-row" data-price="49800" data-rank="19" data-auto="yes">
         <td class="rank"><span class="rank-num">19</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/deebot-mini" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/djx11-11ee.jpg" alt="DEEBOT miniの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">DEEBOT mini</span>
-              <span class="pmeta">ECOVACS</span>
+              <span class="pmeta">ECOVACS</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -1225,20 +1436,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">84</td>
         <td class="num muted">¥49,800</td>
       </tr>
-      <tr class="comment-row" data-price="49800" data-rank="19">
+      <tr class="comment-row" data-price="49800" data-rank="19" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>「⁠<strong class="em-key benefit">ルンバより遥かに静か</strong>⁠」⁠という意見⁠が多く⁠、在宅中⁠や夜間⁠でも気兼ねなく使える点⁠が好評⁠です⁠。ただし⁠、ステーション⁠でのゴミ収集音⁠は掃除機相応⁠の大きな音⁠がするため<strong class="em-key demerit">注意⁠が必要</strong>⁠です⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="39800" data-rank="20">
+      <tr class="rank-row" data-price="39800" data-rank="20" data-auto="yes">
         <td class="rank"><span class="rank-num">20</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/k11" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/09377790/11892401/13129054/imgrc0100726038.jpg" alt="ロボット掃除機 K11+の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">ロボット掃除機 K11+</span>
-              <span class="pmeta">SwitchBot</span>
+              <span class="pmeta">SwitchBot</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -1247,20 +1458,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">195</td>
         <td class="num muted">¥39,800</td>
       </tr>
-      <tr class="comment-row" data-price="39800" data-rank="20">
+      <tr class="comment-row" data-price="39800" data-rank="20" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>走行中⁠の動作音⁠は非常⁠に静かで⁠、夜間⁠や在宅中⁠でも気⁠にならないという声⁠が多数⁠です⁠。ただし⁠、ステーション⁠でのゴミ収集音⁠は大きいという指摘⁠があります⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="169800" data-rank="21">
+      <tr class="rank-row" data-price="169800" data-rank="21" data-auto="yes">
         <td class="rank"><span class="rank-num">21</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/roomba-plus-575-combo-autowash" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/03016688/20260219_review_2nen/575_aw_2nen.jpg" alt="Roomba Plus 575 Combo + AutoWashの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Roomba Plus 575 Combo + AutoWash</span>
-              <span class="pmeta">iRobot</span>
+              <span class="pmeta">iRobot</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -1269,20 +1480,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">129</td>
         <td class="num muted">¥169,800</td>
       </tr>
-      <tr class="comment-row" data-price="169800" data-rank="21">
+      <tr class="comment-row" data-price="169800" data-rank="21" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>旧モデル⁠と比較して格段⁠に静かになったという意見⁠が多数⁠。テレビ視聴⁠やリモート会議中⁠でも気⁠にならないレベル⁠との声⁠も⁠。ただし⁠、ゴミ収集時⁠やモップ洗浄時⁠の音⁠は大きいという指摘⁠もある⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="65780" data-rank="22">
+      <tr class="rank-row" data-price="65780" data-rank="22" data-auto="yes">
         <td class="rank"><span class="rank-num">22</span><span class="ref-badge" title="口コミ数が少ないため参考値">参考値</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/qrevo-c" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/yamada-denki/cabinet/a07000441/1385763016.jpg" alt="Qrevo Cの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Qrevo C</span>
-              <span class="pmeta">Roborock</span>
+              <span class="pmeta">Roborock</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -1291,20 +1502,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">18</td>
         <td class="num muted">¥65,780</td>
       </tr>
-      <tr class="comment-row" data-price="65780" data-rank="22">
+      <tr class="comment-row" data-price="65780" data-rank="22" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>「⁠<strong class="em-key benefit">他社製⁠に比べかなり静か</strong>⁠」「⁠<strong class="em-key benefit">コードレス掃除機よりも静か</strong>⁠」⁠といった声⁠が複数あり⁠、静音性⁠は高く評価されています⁠。夜間⁠や在宅ワーク中⁠でも気兼ねなく使用⁠できるレベル⁠です⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="44800" data-rank="23">
+      <tr class="rank-row" data-price="44800" data-rank="23" data-auto="yes">
         <td class="rank"><span class="rank-num">23</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/q10p" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/roborockjapandirect/cabinet/products/12574614/imgrc0133045076.jpg" alt="Q10P+の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Q10P+</span>
-              <span class="pmeta">Roborock</span>
+              <span class="pmeta">Roborock</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -1313,20 +1524,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">92</td>
         <td class="num muted">¥44,800</td>
       </tr>
-      <tr class="comment-row" data-price="44800" data-rank="23">
+      <tr class="comment-row" data-price="44800" data-rank="23" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>旧機種⁠のルンバ等⁠と比較し「⁠<strong class="em-key benefit">驚くほど静か</strong>⁠」⁠という意見⁠が多数⁠。在宅中⁠や夜間⁠でも気兼ねなく使えるレベル⁠です⁠。ただしゴミ収集時⁠の音⁠は大きいという共通認識⁠があります⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="99990" data-rank="24">
+      <tr class="rank-row" data-price="99990" data-rank="24" data-auto="yes">
         <td class="rank"><span class="rank-num">24</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/eufy-x10-pro-omni" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t2351/t2351_normal.jpg" alt="Eufy X10 Pro Omniの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Eufy X10 Pro Omni</span>
-              <span class="pmeta">Anker</span>
+              <span class="pmeta">Anker</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -1335,20 +1546,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">210</td>
         <td class="num muted">¥99,990</td>
       </tr>
-      <tr class="comment-row" data-price="99990" data-rank="24">
+      <tr class="comment-row" data-price="99990" data-rank="24" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>掃除中⁠の動作音⁠は「⁠<strong class="em-key benefit">ルンバより静か</strong>⁠」⁠と評価⁠が高く⁠、在宅中⁠でも気⁠になりにくいレベル⁠です⁠。ただし⁠、ステーション⁠でのゴミ自動収集時⁠の音⁠は「⁠爆音⁠」⁠と評されるほど大きく⁠、夜間⁠の使用⁠には<strong class="em-key demerit">注意⁠が必要</strong>⁠です⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="199900" data-rank="25">
+      <tr class="rank-row" data-price="199900" data-rank="25" data-auto="yes">
         <td class="rank"><span class="rank-num">25</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/eufy-robot-vacuum-omni-s1-pro" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/tmb/t/t2080_normal.jpg" alt="Eufy Robot Vacuum Omni S1 Proの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Eufy Robot Vacuum Omni S1 Pro</span>
-              <span class="pmeta">Anker</span>
+              <span class="pmeta">Anker</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -1357,20 +1568,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">102</td>
         <td class="num muted">¥199,900</td>
       </tr>
-      <tr class="comment-row" data-price="199900" data-rank="25">
+      <tr class="comment-row" data-price="199900" data-rank="25" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>掃除中⁠のロボット本体⁠の動作音⁠は非常⁠に静かで⁠、在宅ワーク中⁠でも気⁠にならないレベルだと高く評価されています⁠。ただし⁠、ステーション⁠でのゴミ収集音⁠は「⁠爆音⁠」⁠と評されるほど大きい点⁠には<strong class="em-key demerit">注意⁠が必要</strong>⁠です⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="55800" data-rank="26">
+      <tr class="rank-row" data-price="55800" data-rank="26" data-auto="yes">
         <td class="rank"><span class="rank-num">26</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/l10s-ultra-gen-2" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/l10sultragen2_cp.jpg" alt="L10s Ultra Gen 2の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">L10s Ultra Gen 2</span>
-              <span class="pmeta">Dreame</span>
+              <span class="pmeta">Dreame</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -1379,20 +1590,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">98</td>
         <td class="num muted">¥55,800</td>
       </tr>
-      <tr class="comment-row" data-price="55800" data-rank="26">
+      <tr class="comment-row" data-price="55800" data-rank="26" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>従来⁠のロボット掃除機（⁠特⁠に旧型ルンバ⁠）⁠と比較して「⁠<strong class="em-key benefit">圧倒的⁠に静か</strong>⁠」⁠という意見⁠が多数⁠。テレビ視聴中⁠も気⁠にならないレベル⁠ですが⁠、ゴミ収集時⁠やパワフルモード⁠ではそれなりの動作音⁠が発生します⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="159800" data-rank="27">
+      <tr class="rank-row" data-price="159800" data-rank="27" data-auto="yes">
         <td class="rank"><span class="rank-num">27</span><span class="ref-badge" title="口コミ数が少ないため参考値">参考値</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/deebot-t90-pro-omni" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/14108108/dex95-12ee.jpg" alt="T90 PRO OMNIの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">T90 PRO OMNI</span>
-              <span class="pmeta">ECOVACS</span>
+              <span class="pmeta">ECOVACS</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -1401,20 +1612,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">18</td>
         <td class="num muted">¥159,800</td>
       </tr>
-      <tr class="comment-row" data-price="159800" data-rank="27">
+      <tr class="comment-row" data-price="159800" data-rank="27" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>言及⁠は1件⁠のみですが「⁠<strong class="em-key benefit">音⁠は静か</strong>⁠」⁠と明確⁠に評価されています⁠。他⁠の多機能モデル⁠と比較しても⁠、動作音⁠は比較的静かなレベル⁠にあると推測され⁠、在宅中⁠でも気⁠になりにくいでしょう⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="199800" data-rank="28">
+      <tr class="rank-row" data-price="199800" data-rank="28" data-auto="yes">
         <td class="rank"><span class="rank-num">28</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/saros-20" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/roborockjapandirect/cabinet/products/12574614/imgrc0134813006.jpg" alt="Saros 20の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Saros 20</span>
-              <span class="pmeta">Roborock</span>
+              <span class="pmeta">Roborock</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -1423,20 +1634,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">41</td>
         <td class="num muted">¥199,800</td>
       </tr>
-      <tr class="comment-row" data-price="199800" data-rank="28">
+      <tr class="comment-row" data-price="199800" data-rank="28" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>本体⁠の動作音⁠は「⁠<strong class="em-key benefit">吸引力からすると十分⁠に静か</strong>⁠」⁠と評価されています⁠。ただし⁠、ドック⁠でのゴミ収集⁠やモップ洗浄時⁠の音⁠は大きいという指摘⁠もあり⁠、夜間⁠の使用⁠には<strong class="em-key demerit">注意⁠が必要</strong>⁠です⁠。アプリ⁠でおやすみモード⁠の設定⁠が可能⁠です⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="59980" data-rank="29">
+      <tr class="rank-row" data-price="59980" data-rank="29" data-auto="yes">
         <td class="rank"><span class="rank-num">29</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/s20" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/09377790/s20/amazon/s20.jpg" alt="お掃除ロボットS20の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">お掃除ロボットS20</span>
-              <span class="pmeta">SwitchBot</span>
+              <span class="pmeta">SwitchBot</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -1445,20 +1656,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">124</td>
         <td class="num muted">¥59,980</td>
       </tr>
-      <tr class="comment-row" data-price="59980" data-rank="29">
+      <tr class="comment-row" data-price="59980" data-rank="29" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>ロボット本体⁠の動作音⁠は「⁠<strong class="em-key benefit">思ったより静か</strong>⁠」⁠で⁠、夜間⁠や在宅中⁠でも気⁠にならないという意見⁠が多いです⁠。一方⁠で⁠、ステーション⁠でのゴミ収集音⁠は「⁠掃除機並み⁠」⁠に大きいという指摘⁠が共通して見られます⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="59200" data-rank="30">
+      <tr class="rank-row" data-price="59200" data-rank="30" data-auto="yes">
         <td class="rank"><span class="rank-num">30</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/roomba-105-combo-autoempty" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/03016688/20260219_review_2nen/105c_ae_tm_2nen_v2.jpg" alt="Roomba® 105 Combo + AutoEmpty™の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Roomba® 105 Combo + AutoEmpty™</span>
-              <span class="pmeta">iRobot</span>
+              <span class="pmeta">iRobot</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -1467,20 +1678,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">182</td>
         <td class="num muted">¥59,200</td>
       </tr>
-      <tr class="comment-row" data-price="59200" data-rank="30">
+      <tr class="comment-row" data-price="59200" data-rank="30" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>掃除中⁠の動作音⁠は「⁠<strong class="em-key benefit">非常⁠に静か</strong>⁠」⁠との評価⁠が多数⁠を占め⁠、テレビ視聴中⁠も気⁠にならないレベル⁠です⁠。しかし⁠、自動ゴミ収集ステーション⁠への吸引音⁠は「⁠爆音⁠」⁠と評されるほど大きく⁠、夜間⁠の使用⁠には<strong class="em-key demerit">注意⁠が必要</strong>⁠です⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="49980" data-rank="31">
+      <tr class="rank-row" data-price="49980" data-rank="31" data-auto="yes">
         <td class="rank"><span class="rank-num">31</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/q7b-plus" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/roborockjapandirect/cabinet/products/12574614/imgrc0133862310.jpg" alt="Q7B+の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Q7B+</span>
-              <span class="pmeta">Roborock</span>
+              <span class="pmeta">Roborock</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -1489,20 +1700,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">71</td>
         <td class="num muted">¥49,980</td>
       </tr>
-      <tr class="comment-row" data-price="49980" data-rank="31">
+      <tr class="comment-row" data-price="49980" data-rank="31" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>「⁠<strong class="em-key benefit">驚くほど静か</strong>⁠」「⁠夜中⁠でも使える⁠」⁠と動作音⁠の静かさは高く評価されている⁠。ただし⁠、自動ゴミ収集時⁠のドック⁠の吸引音⁠は大きいという意見⁠で一致している⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="49800" data-rank="32">
+      <tr class="rank-row" data-price="49800" data-rank="32" data-auto="yes">
         <td class="rank"><span class="rank-num">32</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/k11-pro" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/13479056/mainbg2.jpg" alt="ロボット掃除機 K11+ Proの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">ロボット掃除機 K11+ Pro</span>
-              <span class="pmeta">SwitchBot</span>
+              <span class="pmeta">SwitchBot</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -1511,20 +1722,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">26</td>
         <td class="num muted">¥49,800</td>
       </tr>
-      <tr class="comment-row" data-price="49800" data-rank="32">
+      <tr class="comment-row" data-price="49800" data-rank="32" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>標準モード⁠での運転音⁠は非常⁠に静かで気⁠にならないとの声⁠が多数⁠。在宅中⁠でも快適⁠に使用⁠できる⁠。ただし⁠、ゴミ収集ステーション⁠の吸引音⁠は爆音⁠との指摘⁠があり⁠、夜間⁠の使用⁠には<strong class="em-key demerit">注意⁠が必要</strong>だ⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="149800" data-rank="33">
+      <tr class="rank-row" data-price="149800" data-rank="33" data-auto="yes">
         <td class="rank"><span class="rank-num">33</span><span class="ref-badge" title="口コミ数が少ないため参考値">参考値</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/x50-ultra" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/x50ultra_cp.jpg" alt="X50 Ultraの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">X50 Ultra</span>
-              <span class="pmeta">Dreame</span>
+              <span class="pmeta">Dreame</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -1533,20 +1744,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">17</td>
         <td class="num muted">¥149,800</td>
       </tr>
-      <tr class="comment-row" data-price="149800" data-rank="33">
+      <tr class="comment-row" data-price="149800" data-rank="33" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>「⁠<strong class="em-key benefit">動作音⁠が気⁠にならない</strong>⁠」「⁠<strong class="em-key benefit">トップクラス⁠の静かさ</strong>⁠」⁠と静音性⁠は高く評価されています⁠。在宅中⁠や夜間⁠でも稼働させやすく⁠、生活リズム⁠を妨げない点⁠がメリット⁠。パワフルな吸引力⁠と静音性⁠を両立しています⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="139799" data-rank="34">
+      <tr class="rank-row" data-price="139799" data-rank="34" data-auto="yes">
         <td class="rank"><span class="rank-num">34</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/deebot-t80s-omni" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260804/dex62-0402.jpg" alt="DEEBOT T80S OMNIの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">DEEBOT T80S OMNI</span>
-              <span class="pmeta">ECOVACS</span>
+              <span class="pmeta">ECOVACS</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -1555,20 +1766,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">21</td>
         <td class="num muted">¥139,799</td>
       </tr>
-      <tr class="comment-row" data-price="139799" data-rank="34">
+      <tr class="comment-row" data-price="139799" data-rank="34" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>「⁠⁠とても<strong class="em-key benefit">静か</strong>⁠」「⁠<strong class="em-key benefit">音⁠も気⁠にならない</strong>⁠」⁠といった肯定的な意見⁠が見られ⁠、在宅中⁠や夜間⁠の使用⁠でもストレス⁠が少ないようです⁠。ゴミ収集時⁠の音⁠は大きいものの⁠、清掃中⁠の動作音⁠は許容範囲内⁠と評価されています⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="99800" data-rank="35">
+      <tr class="rank-row" data-price="99800" data-rank="35" data-auto="yes">
         <td class="rank"><span class="rank-num">35</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/l40s-pro-ultra" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/20251230173059_cp.jpg" alt="L40s Pro Ultraの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">L40s Pro Ultra</span>
-              <span class="pmeta">Dreame</span>
+              <span class="pmeta">Dreame</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -1577,13 +1788,13 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">118</td>
         <td class="num muted">¥99,800</td>
       </tr>
-      <tr class="comment-row" data-price="99800" data-rank="35">
+      <tr class="comment-row" data-price="99800" data-rank="35" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>清掃中⁠の動作音⁠は「⁠<strong class="em-key benefit">思ったより静か</strong>⁠」⁠と好評⁠で⁠、テレビ視聴⁠や在宅ワーク⁠を妨げないレベル⁠。ただし⁠、ステーション⁠での自動ゴミ収集時⁠の音⁠は「⁠<strong class="em-key demerit">すごいうるさい</strong>⁠」⁠との意見⁠が多く⁠、夜間⁠の使用⁠には注意⁠が必要な点⁠が指摘されている⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="20800" data-rank="36">
+      <tr class="rank-row" data-price="20800" data-rank="36" data-auto="unknown">
         <td class="rank"><span class="rank-num">36</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/d9-max-gen-2" target="_blank" rel="noopener">
@@ -1599,20 +1810,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">34</td>
         <td class="num muted">¥20,800</td>
       </tr>
-      <tr class="comment-row" data-price="20800" data-rank="36">
+      <tr class="comment-row" data-price="20800" data-rank="36" data-auto="unknown">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>「⁠<strong class="em-key benefit">旧モデルより静か</strong>⁠」「⁠<strong class="em-key benefit">動画⁠で見た印象より気⁠にならない</strong>⁠」⁠といった好意的な意見⁠がほとんどです⁠。ただし⁠、長期間⁠の使用⁠で動作音⁠が大きくなったという報告⁠も1件ありました⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="99900" data-rank="37">
+      <tr class="rank-row" data-price="99900" data-rank="37" data-auto="yes">
         <td class="rank"><span class="rank-num">37</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/qrevo-curv-2-flow" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://m.media-amazon.com/images/I/31DRz0R5QsL._SL500_.jpg" alt="Qrevo Curv 2 Flowの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Qrevo Curv 2 Flow</span>
-              <span class="pmeta">Roborock</span>
+              <span class="pmeta">Roborock</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -1621,20 +1832,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">20</td>
         <td class="num muted">¥99,900</td>
       </tr>
-      <tr class="comment-row" data-price="99900" data-rank="37">
+      <tr class="comment-row" data-price="99900" data-rank="37" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>「⁠<strong class="em-key benefit">在宅中⁠でも気⁠にならない</strong>⁠」⁠と静音性⁠を評価する声⁠が多いです⁠。ただし⁠、吸引力⁠を最大⁠に設定した場合⁠は相応⁠の稼働音⁠が発生するため⁠、夜間⁠の使用などではモード選択⁠の工夫⁠が必要⁠になります⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="163900" data-rank="38">
+      <tr class="rank-row" data-price="163900" data-rank="38" data-auto="yes">
         <td class="rank"><span class="rank-num">38</span><span class="ref-badge" title="口コミ数が少ないため参考値">参考値</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/qrevo-edge-2" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://m.media-amazon.com/images/I/31srwUOD6cL._SL500_.jpg" alt="Qrevo Edge 2の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Qrevo Edge 2</span>
-              <span class="pmeta">Roborock</span>
+              <span class="pmeta">Roborock</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -1643,20 +1854,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">19</td>
         <td class="num muted">¥163,900</td>
       </tr>
-      <tr class="comment-row" data-price="163900" data-rank="38">
+      <tr class="comment-row" data-price="163900" data-rank="38" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>動作音⁠は静かであるとの評価⁠があります⁠。ただし⁠、言及している口コミ⁠が1件⁠のみのため⁠、個人⁠の感じ方⁠による差⁠が大きい可能性⁠も考慮する必要⁠があります⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="69800" data-rank="39">
+      <tr class="rank-row" data-price="69800" data-rank="39" data-auto="yes">
         <td class="rank"><span class="rank-num">39</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/deebot-n30-plus" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/ydlx11-35ee.jpg" alt="DEEBOT N30 PLUSの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">DEEBOT N30 PLUS</span>
-              <span class="pmeta">ECOVACS</span>
+              <span class="pmeta">ECOVACS</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -1665,20 +1876,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">186</td>
         <td class="num muted">¥69,800</td>
       </tr>
-      <tr class="comment-row" data-price="69800" data-rank="39">
+      <tr class="comment-row" data-price="69800" data-rank="39" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>動作音⁠は静音モードなら比較的静かだという意見⁠が多い一方⁠、標準以上⁠の吸引力⁠やゴミ収集時⁠の音⁠は「⁠大きい⁠」⁠と感じるユーザー⁠もいます⁠。夜間⁠の使用⁠は<strong class="em-key demerit">注意⁠が必要</strong>かもしれません⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="49800" data-rank="40">
+      <tr class="rank-row" data-price="49800" data-rank="40" data-auto="yes">
         <td class="rank"><span class="rank-num">40</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/roomba-mini-autoempty" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/item_thum/br_thum/mini_ae_2nen_rank.jpg" alt="Roomba® Mini + AutoEmpty™の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Roomba® Mini + AutoEmpty™</span>
-              <span class="pmeta">iRobot</span>
+              <span class="pmeta">iRobot</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -1687,20 +1898,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">139</td>
         <td class="num muted">¥49,800</td>
       </tr>
-      <tr class="comment-row" data-price="49800" data-rank="40">
+      <tr class="comment-row" data-price="49800" data-rank="40" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>本体⁠の動作音⁠は比較的静かで⁠、テレビ⁠を見ながらでも気⁠にならないという声⁠が多いです⁠。しかし⁠、ゴミ⁠をステーション⁠に吸引する際⁠の音⁠は「⁠爆音⁠」⁠と評されるほど大きく⁠、夜間⁠の使用⁠には<strong class="em-key demerit">注意⁠が必要</strong>⁠です⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="47800" data-rank="41">
+      <tr class="rank-row" data-price="47800" data-rank="41" data-auto="no">
         <td class="rank"><span class="rank-num">41</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/d20-pro" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/biccamera/cabinet/product/13219/00000014193285_a01.jpg" alt="D20 Proの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">D20 Pro</span>
-              <span class="pmeta">Dreame</span>
+              <span class="pmeta">Dreame</span><span class="auto-tag no">自動ゴミ収集なし</span>
             </span>
           </a>
         </td>
@@ -1709,20 +1920,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">101</td>
         <td class="num muted">¥47,800</td>
       </tr>
-      <tr class="comment-row" data-price="47800" data-rank="41">
+      <tr class="comment-row" data-price="47800" data-rank="41" data-auto="no">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>「⁠<strong class="em-key benefit">夜間⁠に使っても気⁠にならない</strong>⁠」⁠という声⁠がある一方⁠、「⁠音⁠が大きい⁠」「⁠使うにつれ煩くなった⁠」⁠との指摘⁠も⁠。標準モード⁠では比較的静かですが⁠、吸引力⁠を最大⁠にすると相応⁠の動作音⁠が発生します⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="99990" data-rank="42">
+      <tr class="rank-row" data-price="99990" data-rank="42" data-auto="yes">
         <td class="rank"><span class="rank-num">42</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/eufy-robot-vacuum-omni-c28" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t211a/imgrc0103188193.jpg" alt="Eufy Robot Vacuum Omni C28の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Eufy Robot Vacuum Omni C28</span>
-              <span class="pmeta">Anker</span>
+              <span class="pmeta">Anker</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -1731,20 +1942,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">97</td>
         <td class="num muted">¥99,990</td>
       </tr>
-      <tr class="comment-row" data-price="99990" data-rank="42">
+      <tr class="comment-row" data-price="99990" data-rank="42" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>走行中⁠の動作音⁠は「⁠<strong class="em-key benefit">静か</strong>⁠」⁠との評価⁠が多い一方⁠、ステーション⁠でのゴミ収集音⁠は「⁠<strong class="em-key demerit">掃除機並みにうるさい</strong>⁠」⁠と多数指摘されています⁠。この騒音⁠のため⁠、夜間⁠や早朝⁠の自動清掃⁠をためらうユーザー⁠もいます⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="99800" data-rank="43">
+      <tr class="rank-row" data-price="99800" data-rank="43" data-auto="yes">
         <td class="rank"><span class="rank-num">43</span><span class="ref-badge" title="口コミ数が少ないため参考値">参考値</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/aqua10s-roller-ae" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/13220398/20260623-153601.jpg" alt="Aqua10s Roller AEの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Aqua10s Roller AE</span>
-              <span class="pmeta">Dreame</span>
+              <span class="pmeta">Dreame</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -1753,20 +1964,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">18</td>
         <td class="num muted">¥99,800</td>
       </tr>
-      <tr class="comment-row" data-price="99800" data-rank="43">
+      <tr class="comment-row" data-price="99800" data-rank="43" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>通常モード⁠での走行音⁠は「⁠<strong class="em-key benefit">驚くほど静か</strong>⁠」⁠と評価されています⁠。ただし⁠、ゴミ⁠の自動収集時⁠やカーペット上⁠での最大吸引モード⁠では一時的⁠に大きな音⁠が発生するため<strong class="em-key demerit">注意⁠が必要</strong>⁠です⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="249900" data-rank="44">
+      <tr class="rank-row" data-price="249900" data-rank="44" data-auto="yes">
         <td class="rank"><span class="rank-num">44</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/eufy-robot-vacuum-omni-s2" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/deal/202608m1/imgrc0103966655.jpg" alt="Eufy Robot Vacuum Omni S2の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Eufy Robot Vacuum Omni S2</span>
-              <span class="pmeta">Anker</span>
+              <span class="pmeta">Anker</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -1775,20 +1986,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">24</td>
         <td class="num muted">¥249,900</td>
       </tr>
-      <tr class="comment-row" data-price="249900" data-rank="44">
+      <tr class="comment-row" data-price="249900" data-rank="44" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>フローリング⁠での通常清掃時⁠は「⁠<strong class="em-key benefit">非常⁠に静か</strong>⁠」⁠と高評価⁠。一方⁠で⁠、カーペット上⁠で吸引力⁠が上⁠がると相応⁠の音⁠が発生します⁠。ステーション⁠のゴミ収集音⁠は大きいですが短時間⁠で終わるため⁠、許容範囲⁠との意見⁠が多いです⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="98800" data-rank="45">
+      <tr class="rank-row" data-price="98800" data-rank="45" data-auto="yes">
         <td class="rank"><span class="rank-num">45</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/roomba-plus-405-combo-autowash" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/03016688/20260730_brandday/260730_405c_tm.jpg" alt="Roomba® Plus 405 Combo + AutoWash™の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Roomba® Plus 405 Combo + AutoWash™</span>
-              <span class="pmeta">iRobot</span>
+              <span class="pmeta">iRobot</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -1797,20 +2008,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">179</td>
         <td class="num muted">¥98,800</td>
       </tr>
-      <tr class="comment-row" data-price="98800" data-rank="45">
+      <tr class="comment-row" data-price="98800" data-rank="45" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>走行中⁠の動作音⁠は「⁠<strong class="em-key benefit">静か</strong>⁠」「⁠<strong class="em-key benefit">気⁠にならない</strong>⁠」⁠との評価⁠が多い一方⁠、ステーション⁠でのゴミ吸引音⁠は「⁠爆音⁠」⁠と評されるほど大きいという意見⁠が多数⁠。夜間⁠の使用⁠は避けるなどの配慮⁠が必要⁠です⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="29800" data-rank="46">
+      <tr class="rank-row" data-price="29800" data-rank="46" data-auto="no">
         <td class="rank"><span class="rank-num">46</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/deebot-n30" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/ydlx11-32df.jpg" alt="DEEBOT N30の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">DEEBOT N30</span>
-              <span class="pmeta">ECOVACS</span>
+              <span class="pmeta">ECOVACS</span><span class="auto-tag no">自動ゴミ収集なし</span>
             </span>
           </a>
         </td>
@@ -1819,20 +2030,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">115</td>
         <td class="num muted">¥29,800</td>
       </tr>
-      <tr class="comment-row" data-price="29800" data-rank="46">
+      <tr class="comment-row" data-price="29800" data-rank="46" data-auto="no">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>「⁠<strong class="em-key benefit">静か</strong>⁠」⁠という意見⁠が多い一方⁠、「⁠<strong class="em-key demerit">タイヤ⁠の音⁠がゴトゴトうるさい</strong>⁠」「⁠吸引力⁠を上げると気⁠になる⁠」⁠という指摘⁠も⁠。総合的⁠には許容範囲⁠と考えるユーザー⁠が多いですが⁠、音⁠に敏感な方⁠は注意⁠が必要⁠です⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="128400" data-rank="47">
+      <tr class="rank-row" data-price="128400" data-rank="47" data-auto="yes">
         <td class="rank"><span class="rank-num">47</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/roomba-plus-505-combo-autowash" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/03016688/20260730_brandday/260730_505c.jpg" alt="Roomba® Plus 505 Combo + AutoWash™の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Roomba® Plus 505 Combo + AutoWash™</span>
-              <span class="pmeta">iRobot</span>
+              <span class="pmeta">iRobot</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -1841,20 +2052,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">88</td>
         <td class="num muted">¥128,400</td>
       </tr>
-      <tr class="comment-row" data-price="128400" data-rank="47">
+      <tr class="comment-row" data-price="128400" data-rank="47" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>走行中⁠の動作音⁠は旧モデルより静かになったという意見⁠がある一方⁠、全体的⁠には「⁠音⁠が大きい⁠」⁠と感じるユーザー⁠もいます⁠。特⁠にゴミ収集時⁠やモップ洗浄時⁠の音⁠は大きく⁠、夜間⁠の使用⁠には<strong class="em-key demerit">注意⁠が必要</strong>⁠です⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="109799" data-rank="48">
+      <tr class="rank-row" data-price="109799" data-rank="48" data-auto="yes">
         <td class="rank"><span class="rank-num">48</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/deebot-t50s-omni" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/ddx47-0401.jpg" alt="DEEBOT T50S OMNIの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">DEEBOT T50S OMNI</span>
-              <span class="pmeta">ECOVACS</span>
+              <span class="pmeta">ECOVACS</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -1863,20 +2074,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">103</td>
         <td class="num muted">¥109,799</td>
       </tr>
-      <tr class="comment-row" data-price="109799" data-rank="48">
+      <tr class="comment-row" data-price="109799" data-rank="48" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>標準モード⁠の動作音⁠は「⁠<strong class="em-key benefit">思ったより静か</strong>⁠」⁠という意見⁠が多いです⁠。しかし⁠、モップ洗浄時⁠やゴミ収集時⁠の音⁠は大きく⁠、夜間⁠の使用⁠をためらう声⁠も⁠。一部⁠、モップ掛け時⁠の異音⁠を指摘する口コミ⁠もありました⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="89990" data-rank="49">
+      <tr class="rank-row" data-price="89990" data-rank="49" data-auto="yes">
         <td class="rank"><span class="rank-num">49</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/qrevo-l-pro" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://m.media-amazon.com/images/I/3196WRRWVZL._SL500_.jpg" alt="Qrevo L Proの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Qrevo L Pro</span>
-              <span class="pmeta">Roborock</span>
+              <span class="pmeta">Roborock</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -1885,20 +2096,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">32</td>
         <td class="num muted">¥89,990</td>
       </tr>
-      <tr class="comment-row" data-price="89990" data-rank="49">
+      <tr class="comment-row" data-price="89990" data-rank="49" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>走行中⁠の動作音⁠は「⁠<strong class="em-key benefit">静か</strong>⁠」⁠という評価⁠が多数派⁠で⁠、夜間⁠でも使いやすいとの声⁠があります⁠。しかし⁠、ドック⁠でのゴミ収集音⁠は大きく⁠、使用時間帯⁠には配慮⁠が必要⁠です⁠。最大吸引時⁠の音⁠を指摘する声⁠も一部ありました⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="179800" data-rank="50">
+      <tr class="rank-row" data-price="179800" data-rank="50" data-auto="yes">
         <td class="rank"><span class="rank-num">50</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/roomba-max-705-combo-autowash" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://m.media-amazon.com/images/I/41N6+n9f7mL._SL500_.jpg" alt="Roomba® Max 705 Combo + AutoWash™の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Roomba® Max 705 Combo + AutoWash™</span>
-              <span class="pmeta">iRobot</span>
+              <span class="pmeta">iRobot</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -1907,20 +2118,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">167</td>
         <td class="num muted">¥179,800</td>
       </tr>
-      <tr class="comment-row" data-price="179800" data-rank="50">
+      <tr class="comment-row" data-price="179800" data-rank="50" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>走行中⁠の動作音⁠は比較的静かだという意見⁠が多い一方⁠、ステーション⁠でのゴミ収集⁠やモップ洗浄・乾燥時⁠の音⁠は「⁠かなり大きい⁠」⁠との指摘⁠が目立ちます⁠。夜間⁠の使用⁠には<strong class="em-key demerit">注意⁠が必要</strong>⁠です⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="55800" data-rank="51">
+      <tr class="rank-row" data-price="55800" data-rank="51" data-auto="yes">
         <td class="rank"><span class="rank-num">51</span><span class="ref-badge" title="口コミ数が少ないため参考値">参考値</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/l40-ultra-ce" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/vlookupstore/cabinet/g/74/e9zp2dns07-1.jpg" alt="L40 Ultra CEの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">L40 Ultra CE</span>
-              <span class="pmeta">Dreame</span>
+              <span class="pmeta">Dreame</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -1929,20 +2140,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">17</td>
         <td class="num muted">¥55,800</td>
       </tr>
-      <tr class="comment-row" data-price="55800" data-rank="51">
+      <tr class="comment-row" data-price="55800" data-rank="51" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>「⁠<strong class="em-key benefit">標準モードなら音⁠は気⁠にならない</strong>⁠」「⁠<strong class="em-key benefit">換気扇より静か</strong>⁠」⁠といった肯定的な意見⁠が優勢⁠です⁠。ただし⁠、吸引力⁠を上げると相応⁠の動作音⁠が発生するため⁠、静音性⁠を最優先する方⁠には注意⁠が必要⁠です⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="98800" data-rank="52">
+      <tr class="rank-row" data-price="98800" data-rank="52" data-auto="yes">
         <td class="rank"><span class="rank-num">52</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/roomba-max-705-vac-autoempty" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/03016688/20260730_brandday/260730_705v_tm.jpg" alt="Roomba® Max 705 Vac + AutoEmpty™の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Roomba® Max 705 Vac + AutoEmpty™</span>
-              <span class="pmeta">iRobot</span>
+              <span class="pmeta">iRobot</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -1951,20 +2162,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">154</td>
         <td class="num muted">¥98,800</td>
       </tr>
-      <tr class="comment-row" data-price="98800" data-rank="52">
+      <tr class="comment-row" data-price="98800" data-rank="52" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>動作音⁠については「⁠<strong class="em-key benefit">静かになった</strong>⁠」⁠という声⁠と「⁠まだ大きい⁠」⁠という声⁠に分かれます⁠。旧モデルよりは改善されていますが⁠、在宅中⁠や夜間⁠の使用⁠には気⁠になるレベル⁠と感じる人⁠もいるようです⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="39800" data-rank="53">
+      <tr class="rank-row" data-price="39800" data-rank="53" data-auto="no">
         <td class="rank"><span class="rank-num">53</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/roomba-mini-slim-slimcharge" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/03016688/20260219_review_2nen/minislim_2nen_logo.jpg" alt="Roomba® Mini Slim + SlimCharge™の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Roomba® Mini Slim + SlimCharge™</span>
-              <span class="pmeta">iRobot</span>
+              <span class="pmeta">iRobot</span><span class="auto-tag no">自動ゴミ収集なし</span>
             </span>
           </a>
         </td>
@@ -1973,20 +2184,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">106</td>
         <td class="num muted">¥39,800</td>
       </tr>
-      <tr class="comment-row" data-price="39800" data-rank="53">
+      <tr class="comment-row" data-price="39800" data-rank="53" data-auto="no">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>動作音⁠については意見⁠が分かれる⁠。旧機種より静かという声⁠がある一方⁠、「⁠音⁠が大きい⁠」「⁠テレビ⁠が聞こえにくい⁠」⁠という指摘⁠も⁠。特⁠にカーペット上⁠では吸引力⁠が強まるため⁠、音⁠が大きくなる傾向⁠がある⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="68800" data-rank="54">
+      <tr class="rank-row" data-price="68800" data-rank="54" data-auto="yes">
         <td class="rank"><span class="rank-num">54</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/d20-pro-plus" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/20250609195227_1.jpg" alt="D20 Pro Plusの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">D20 Pro Plus</span>
-              <span class="pmeta">Dreame</span>
+              <span class="pmeta">Dreame</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -1995,20 +2206,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">106</td>
         <td class="num muted">¥68,800</td>
       </tr>
-      <tr class="comment-row" data-price="68800" data-rank="54">
+      <tr class="comment-row" data-price="68800" data-rank="54" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>動作音⁠は静かだという評価⁠が多く⁠、夜間⁠や在宅中⁠でも気⁠にならないとの声⁠が多数⁠。一方⁠で⁠、使用するにつれて音⁠が大きくなった⁠、⁠という指摘⁠も一部⁠で見られました⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="49800" data-rank="55">
+      <tr class="rank-row" data-price="49800" data-rank="55" data-auto="yes">
         <td class="rank"><span class="rank-num">55</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/s10" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/09377790/s10/imgrc0080562316.jpg" alt="お掃除ロボットS10の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">お掃除ロボットS10</span>
-              <span class="pmeta">SwitchBot</span>
+              <span class="pmeta">SwitchBot</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -2017,20 +2228,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">125</td>
         <td class="num muted">¥49,800</td>
       </tr>
-      <tr class="comment-row" data-price="49800" data-rank="55">
+      <tr class="comment-row" data-price="49800" data-rank="55" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>走行音自体⁠は「⁠<strong class="em-key benefit">比較的静か</strong>⁠」⁠との評価⁠がある一方⁠、モップ⁠の乾燥音⁠や段差⁠を乗り越える際⁠の<strong class="em-key demerit">動作音⁠が大きい</strong>⁠という指摘⁠も⁠。特⁠に夜間⁠の使用⁠には配慮⁠が必要かもしれない⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="34800" data-rank="56">
+      <tr class="rank-row" data-price="34800" data-rank="56" data-auto="yes">
         <td class="rank"><span class="rank-num">56</span><span class="ref-badge" title="口コミ数が少ないため参考値">参考値</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/f20-plus" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/13111094/imgrc0155930361.jpg" alt="F20 Plusの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">F20 Plus</span>
-              <span class="pmeta">Dreame</span>
+              <span class="pmeta">Dreame</span><span class="auto-tag yes">自動ゴミ収集あり</span>
             </span>
           </a>
         </td>
@@ -2039,20 +2250,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">11</td>
         <td class="num muted">¥34,800</td>
       </tr>
-      <tr class="comment-row" data-price="34800" data-rank="56">
+      <tr class="comment-row" data-price="34800" data-rank="56" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>動作音⁠は標準モード⁠では比較的静かとの評価⁠ですが⁠、吸引力⁠を最大⁠にすると相応⁠の音⁠が発生します⁠。在宅勤務中⁠や夜間⁠の使用⁠では⁠、モード⁠の使い分けが重要⁠になりそうです⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="19800" data-rank="57">
+      <tr class="rank-row" data-price="19800" data-rank="57" data-auto="no">
         <td class="rank"><span class="rank-num">57</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/e5" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://m.media-amazon.com/images/I/41H5Fv-yLRL._SL500_.jpg" alt="E5の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">E5</span>
-              <span class="pmeta">Roborock</span>
+              <span class="pmeta">Roborock</span><span class="auto-tag no">自動ゴミ収集なし</span>
             </span>
           </a>
         </td>
@@ -2061,7 +2272,7 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">31</td>
         <td class="num muted">¥19,800</td>
       </tr>
-      <tr class="comment-row" data-price="19800" data-rank="57">
+      <tr class="comment-row" data-price="19800" data-rank="57" data-auto="no">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
           <p class="floor-comment"><span class="floor-comment-label">静音性の口コミ傾向</span>動作音⁠に関する評価⁠は「⁠<strong class="em-key demerit">うるさい</strong>⁠」⁠と「⁠<strong class="em-key benefit">意外⁠と静か</strong>⁠」⁠で二分されています⁠。静音モード⁠もありますが⁠、夜間⁠の使用⁠には不向きと感じるユーザー⁠が多く⁠、音⁠に敏感な方⁠には注意⁠が必要⁠です⁠。</p>
@@ -2074,6 +2285,28 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <p class="empty-msg" id="empty-msg">この価格帯に該当する製品はありません。</p>
       </section>
 
+      <section class="method">
+        <h2>このランキングの見方</h2>
+        <p>「⁠<strong class="em-key benefit">音⁠が静か</strong>⁠」「⁠テレビ⁠の邪魔⁠にならない⁠」⁠といった口コミ⁠を点数化し⁠、静音性⁠の高さで並べています⁠。口コミ⁠の信頼度⁠を適切⁠に加味するので⁠、実体験⁠に近いおすすめ順⁠になっています⁠。表⁠の各製品⁠には⁠、運転音⁠や生活⁠への影響⁠に関する<strong class="em-key">口コミ傾向</strong>⁠も記載しているので⁠、点数だけでなく具体的な声⁠も比較⁠できます⁠。</p>
+        <p class="method-sub">
+          ランキングの式：<code>静音性点数 × 0.85 ＋ 口コミ信頼度 × 0.15</code>
+        </p>
+        <p class="method-sub">口コミ⁠が10件未満⁠の11機種⁠は⁠、点数⁠が安定しないためこのランキング⁠に載せていません⁠。20件未満⁠の機種⁠は「⁠参考値⁠」⁠と表示しています⁠。</p>
+        <p class="method-sub">集計の元データ：Amazon・楽天市場に投稿された公開レビューです。文章は転載せず、内容を分類して点数にしています。</p>
+      </section>
+<div class="article"><section class="article-sec" id="quiet-source"><h2>ロボット掃除機の音は3種類</h2><p>ロボット掃除機⁠の音⁠は⁠、おもに<strong class="em-key">本体⁠の吸引音</strong>⁠、<strong class="em-key">ブラシ⁠やタイヤ⁠の走行音</strong>⁠、そして<strong class="em-key">ステーション⁠がゴミ⁠を吸い上げる音</strong>⁠の3つです⁠。掃除中⁠は静かでも⁠、掃除⁠のあとにステーション⁠が短いあいだ大きな音⁠を出す機種⁠が多いので⁠、どの音⁠が気⁠になるかで選び方⁠が変わります⁠。</p><p>掲載57機種⁠の口コミ⁠の静音性⁠の平均⁠は85.8点⁠です⁠。静音性⁠の口コミ⁠で「⁠うるさい⁠」「⁠音⁠が大きい⁠」⁠といった声⁠が出ている機種⁠は41機種あり⁠、上位⁠の機種⁠でも<strong class="em-key">吸引⁠を強くしたときや⁠、ゴミ収集⁠のときの音</strong>⁠を指摘する声⁠があります⁠。</p></section><section class="article-sec" id="quiet-spec"><h2>メーカー公表の運転音（dB）と口コミ評価</h2><div class="caution-box" role="note">
+          <p class="caution-title">dBの数字を見るときの注意</p>
+          <p class="caution-key" role="alert"><span class="caution-key-label">必ずお読みください</span><strong>測り方（距離・運転モード・床の材質）はメーカーごとに違います。</strong><br>別のメーカーどうしで、dBの数字をそのまま比べることはできません。</p>
+          <ul>
+            <li><strong>運転音（dB）を公表しているのは、掲載57機種のうち20機種だけ</strong>です。残りの37機種は公表値がないため、口コミの静音性の点数で比べてください。</li>
+            <li>dBは<strong>10dB上がると、耳にはおよそ2倍うるさく</strong>聞こえます。数dBの差でも感じ方は変わります。</li>
+          </ul>
+        </div><p>dB⁠の数字だけではどれくらいの音か想像しにくいので⁠、身近な場所⁠の音⁠の大きさを目安⁠として並べました⁠。ロボット掃除機⁠の値⁠はメーカー⁠が本体⁠の近くで測った値⁠で⁠、下⁠の場所⁠の値⁠とは測り方⁠が違うため⁠、<strong class="em-key">おおよそのイメージ</strong>⁠としてご覧ください⁠。</p><div class="table-scroll"><table class="mini ref">
+          <thead><tr><th>音の大きさ</th><th>身近な場所の例</th></tr></thead>
+          <tbody><tr><td class="num">40dB前後</td><td>図書館の館内・戸建住宅地（昼間）</td></tr><tr><td class="num">50dB前後</td><td>書店の店内・高層住宅地域（昼間）</td></tr><tr><td class="num">55dB前後</td><td>役所の窓口周辺</td></tr><tr><td class="num">60dB前後</td><td>銀行の窓口周辺・博物館の館内</td></tr><tr><td class="num">65dB前後</td><td>ファミリーレストランの店内</td></tr><tr><td class="num">70dB前後</td><td>コーヒーショップの店内・バスの車内</td></tr></tbody></table></div>
+          <p class="src-note">出典：全国環境研協議会 騒音小委員会「騒音の目安（都心・近郊用）」（<a href="https://www.env.go.jp/air/ippan/index.html" target="_blank" rel="noopener">環境省「騒音の目安について」</a>）の図から、おおよその値を読み取りました。</p><p>運転音（⁠dB⁠）⁠を公表しているのは掲載57機種⁠のうち20機種（⁠ECOVACS・Roborock・SwitchBot⁠）⁠で⁠、⁠もっとも小さいのは<a href="/products/k10-pro">ロボット掃除機 K10+ Pro</a>⁠の<strong class="em-key">45dB</strong>（⁠美術館・図書館⁠の館内くらい⁠）⁠です⁠。</p><p>公表値⁠と口コミ⁠の静音性⁠を比べると⁠、公表値⁠が小さい機種ほど口コミ⁠の静音性⁠も高い傾向⁠はありますが⁠、例外⁠も多くあります⁠。数字だけでなく⁠、<strong class="em-key">実際⁠に使った人⁠の声</strong>⁠もあわせて確かめるのがおすすめです⁠。</p><p class="caution-key"><span class="caution-key-label">必ずお読みください</span><strong>測り方（距離・運転モード・床の材質）はメーカーごとに違います。</strong><br>別のメーカーどうしで、dBの数字をそのまま比べることはできません。</p><div class="table-scroll"><table class="mini">
+          <thead><tr><th>機種</th><th>メーカー公表の運転音</th><th>生活音でいうと（目安）</th><th>口コミの静音性</th><th>ランキング</th><th>自動ゴミ収集</th></tr></thead>
+          <tbody><tr><td><a href="/products/k10-pro">ロボット掃除機 K10+ Pro</a></td><td class="num">45dB</td><td>美術館・図書館の館内くらい</td><td class="num">92点</td><td class="num">5位</td><td>あり</td></tr><tr><td><a href="/products/k11">ロボット掃除機 K11+</a></td><td class="num">45dB</td><td>美術館・図書館の館内くらい</td><td class="num">88点</td><td class="num">20位</td><td>あり</td></tr><tr><td><a href="/products/k11-pro">ロボット掃除機 K11+ Pro</a></td><td class="num">45dB</td><td>美術館・図書館の館内くらい</td><td class="num">88点</td><td class="num">32位</td><td>あり</td></tr><tr><td><a href="/products/deebot-mini-2">DEEBOT mini 2</a></td><td class="num">55dB</td><td>役所の窓口周辺くらい</td><td class="num">92点</td><td class="num">15位</td><td>あり</td></tr><tr><td><a href="/products/deebot-mini">DEEBOT mini</a></td><td class="num">55dB</td><td>役所の窓口周辺くらい</td><td class="num">89点</td><td class="num">19位</td><td>あり</td></tr><tr><td><a href="/products/deebot-t90-max-omni">T90 MAX OMNI</a></td><td class="num">59.3dB</td><td>銀行の窓口周辺くらい</td><td class="num">95点</td><td class="num">8位</td><td>あり</td></tr><tr><td><a href="/products/deebot-t90-omni">DEEBOT T90 OMNI</a></td><td class="num">60dB</td><td>銀行の窓口周辺くらい</td><td class="num">91点</td><td class="num">7位</td><td>あり</td></tr><tr><td><a href="/products/deebot-t90-pro-omni">T90 PRO OMNI</a></td><td class="num">60dB</td><td>銀行の窓口周辺くらい</td><td class="num">90点</td><td class="num">27位</td><td>あり</td></tr><tr><td><a href="/products/s20">お掃除ロボットS20</a></td><td class="num">60dB</td><td>銀行の窓口周辺くらい</td><td class="num">86点</td><td class="num">29位</td><td>あり</td></tr><tr><td><a href="/products/deebot-x11-omnicyclone">DEEBOT X11 OmniCyclone</a></td><td class="num">62dB</td><td>ファミリーレストランの店内くらい</td><td class="num">96点</td><td class="num">2位</td><td>あり</td></tr><tr><td><a href="/products/s10">お掃除ロボットS10</a></td><td class="num">62dB</td><td>ファミリーレストランの店内くらい</td><td class="num">72点</td><td class="num">55位</td><td>あり</td></tr><tr><td><a href="/products/qrevo-curv-2-flow">Qrevo Curv 2 Flow</a></td><td class="num">63dB</td><td>ファミリーレストランの店内くらい</td><td class="num">88点</td><td class="num">37位</td><td>あり</td></tr><tr><td><a href="/products/deebot-t50s-omni">DEEBOT T50S OMNI</a></td><td class="num">63dB</td><td>ファミリーレストランの店内くらい</td><td class="num">78点</td><td class="num">48位</td><td>あり</td></tr><tr><td><a href="/products/qrevo-l">Qrevo L</a></td><td class="num">65dB</td><td>ファミリーレストランの店内くらい</td><td class="num">90点</td><td class="num">10位</td><td>あり</td></tr><tr><td><a href="/products/deebot-x8-pro-omni">DEEBOT X8 PRO OMNI</a></td><td class="num">65dB</td><td>ファミリーレストランの店内くらい</td><td class="num">90点</td><td class="num">11位</td><td>あり</td></tr><tr><td><a href="/products/deebot-t80-omni">DEEBOT T80 OMNI</a></td><td class="num">65dB</td><td>ファミリーレストランの店内くらい</td><td class="num">88点</td><td class="num">12位</td><td>あり</td></tr><tr><td><a href="/products/deebot-t80s-omni">DEEBOT T80S OMNI</a></td><td class="num">65dB</td><td>ファミリーレストランの店内くらい</td><td class="num">88点</td><td class="num">34位</td><td>あり</td></tr><tr><td><a href="/products/deebot-n30-plus">DEEBOT N30 PLUS</a></td><td class="num">68dB</td><td>コーヒーショップの店内くらい</td><td class="num">82点</td><td class="num">39位</td><td>あり</td></tr><tr><td><a href="/products/deebot-n30">DEEBOT N30</a></td><td class="num">68dB</td><td>コーヒーショップの店内くらい</td><td class="num">80点</td><td class="num">46位</td><td>なし</td></tr><tr><td><a href="/products/deebot-t50-omni">DEEBOT T50 OMNI</a></td><td class="num">70dB</td><td>コーヒーショップの店内くらい</td><td class="num">88点</td><td class="num">17位</td><td>あり</td></tr></tbody></table></div></section><section class="article-sec" id="quiet-station"><h2>見落としやすいステーションのゴミ収集音</h2><p>掲載57機種⁠のうち50機種⁠は⁠、ゴミ⁠を自動⁠で吸い上げるステーション⁠が付いています⁠。そのうち32機種⁠では⁠、静音性⁠の口コミ⁠で<strong class="em-key">ステーション⁠の音</strong>⁠に触れています⁠。集合住宅⁠や⁠、家族⁠が寝ている時間⁠に使う場合⁠は⁠、ゴミ収集⁠の音⁠も確かめておくと安心⁠です⁠。自動ゴミ収集⁠のない機種（⁠Eufy RoboVac G30 Hybrid・Q10V・D20 Pro・DEEBOT N30など⁠）⁠には⁠、この音⁠がありません⁠。</p><p>ただし⁠、自動ゴミ収集⁠がないと<strong class="em-key">ダストボックス⁠のゴミ⁠を毎回手⁠で捨てる</strong>ことになります⁠。口コミ50件以上⁠で最⁠も静かなのは⁠、自動ゴミ収集ありでは<a href="/products/deebot-x11-omnicyclone">DEEBOT X11 OmniCyclone</a>（⁠静音性96点・2位⁠）⁠、なしでは<a href="/products/eufy-robovac-g30-hybrid">Eufy RoboVac G30 Hybrid</a>（⁠静音性96点・1位⁠）⁠です⁠。ランキング表⁠の上⁠にある「⁠自動ゴミ収集⁠で絞り込み⁠」⁠で⁠、どちらか一方だけを表示することもできます⁠。</p></section><section class="article-sec" id="quiet-voices"><h2>口コミで多い音の声</h2><p>各機種⁠の静音性⁠の口コミ⁠をまとめたコメント⁠で⁠、よく出てくる場面⁠は「⁠夜・寝ている間⁠」（⁠42機種⁠）⁠、「⁠在宅ワーク・家⁠にいる時間⁠」（⁠34機種⁠）⁠、「⁠ステーション⁠のゴミ収集⁠の音⁠」（⁠32機種⁠）⁠、「⁠吸引⁠の強さ・モード⁠で音⁠が変わる⁠」（⁠16機種⁠）⁠、「⁠テレビ⁠や会話⁠のじゃま⁠」（⁠8機種⁠）⁠です⁠。⁠とくに<strong class="em-key">夜⁠や在宅中⁠に使えるか</strong>⁠を気⁠にする声⁠が多く⁠、「⁠寝ている間⁠でも気⁠にならない⁠」⁠という評価⁠がある一方⁠で⁠、「⁠夜⁠は使いにくい⁠」⁠という声⁠もあります⁠。気⁠になる場面⁠がある場合⁠は⁠、ランキング表⁠のコメント⁠で同じ状況⁠の声⁠を探してください⁠。</p></section><section class="article-sec" id="quiet-tips"><h2>音を気にせず使うコツ</h2><ul class="tips"><li><strong class="em-key">外出中⁠にスケジュール⁠で動かす</strong>：アプリ⁠で時間⁠を決めておけば⁠、音⁠を気⁠にせず毎日掃除⁠できます⁠。</li><li><strong class="em-key">静音（⁠エコ⁠）モード⁠を使う</strong>：吸引⁠を弱めると音⁠は小さくなります⁠。そのぶんカーペット⁠のゴミ⁠は取りにくくなるので⁠、部屋ごとに使い分けるのがおすすめです⁠。</li><li><strong class="em-key">ゴミ収集⁠のタイミング⁠を確かめる</strong>：機種⁠によっては⁠、アプリ⁠でゴミ収集⁠の時間帯⁠や回数⁠を変えられます⁠。夜⁠に掃除するなら⁠、収集⁠を朝⁠に回せるかを確かめておきましょう⁠。</li><li><strong class="em-key">集合住宅⁠では夜遅い時間⁠を避ける</strong>：走行音⁠やぶつかる音⁠が床⁠に響くことがあります⁠。ラグ⁠を敷くと響きにくくなります⁠。</li></ul><p class="mid-cta"><a class="btn-sub" href="#price-check">静かな上位機種の価格を見る ▼</a></p></section><section class="article-sec faq" id="faq"><h2>よくある質問</h2><details><summary>いちばん静かなロボット掃除機はどれですか？</summary><div class="faq-a"><p>口コミ50件以上⁠では⁠、自動ゴミ収集ありならDEEBOT X11 OmniCyclone（⁠静音性96点⁠）⁠、なしならEufy RoboVac G30 Hybrid（⁠静音性96点⁠）⁠です⁠。自動ゴミ収集⁠がない機種⁠はゴミ⁠を吸い上げる音⁠がないぶん静かですが⁠、ゴミ捨ては手作業⁠になります⁠。メーカー公表⁠の運転音⁠では⁠、ロボット掃除機 K10+ Pro⁠の45dB⁠がもっとも小さい値⁠です（⁠運転音⁠を公表している20機種⁠のなか⁠）⁠。</p></div></details><details><summary>夜に使っても大丈夫ですか？</summary><div class="faq-a"><p>静かな機種なら「⁠寝ている間⁠でも気⁠にならない⁠」⁠という口コミ⁠もありますが⁠、ステーション⁠のゴミ収集⁠の音⁠は大きめです⁠。夜⁠に使うなら⁠、静音モード⁠にして⁠、ゴミ収集⁠を朝⁠に回せるかを確かめておくと安心⁠です⁠。</p></div></details><details><summary>静かで安いロボット掃除機はありますか？</summary><div class="faq-a"><p>口コミ50件以上⁠で5万円以下⁠の機種⁠では⁠、Eufy RoboVac G30 Hybrid（⁠¥39,990⁠）⁠の静音性⁠が96点⁠で最⁠も高く⁠、総合⁠でも1位⁠です⁠。</p></div></details><details><summary>マンションや集合住宅に向いている機種は？</summary><div class="faq-a"><p>口コミ⁠の分析⁠で集合住宅⁠との相性⁠が最⁠も高いのはDEEBOT X11 OmniCyclone（⁠92点・静音性96点⁠）⁠です⁠。集合住宅⁠では⁠、運転音⁠に加えて⁠、走行⁠やぶつかる音⁠が床⁠に響かないかも口コミ⁠で確かめるのがおすすめです⁠。</p></div></details><details><summary>何dBなら静かといえますか？</summary><div class="faq-a"><p>当サイト⁠で運転音⁠を公表している20機種⁠では⁠、45dB〜70dB⁠でした⁠。身近な音⁠でいうと⁠、40dB前後⁠が図書館⁠の館内⁠、50dB前後⁠が書店⁠の店内⁠、60dB前後⁠が銀行⁠の窓口周辺くらいです（⁠全国環境研協議会「⁠騒音⁠の目安⁠」より⁠）⁠。ただし測り方⁠がメーカーごとに違うので⁠、同じメーカー⁠の機種どうしで比べるときの目安⁠にしてください⁠。</p></div></details></section><section class="article-sec" id="data"><h2>データについて</h2><p>静音性⁠の点数⁠は⁠、ECサイト⁠の口コミ⁠のうち運転音⁠や静かさに触れたものを分析して数値化した値⁠です⁠。順位⁠は「⁠静音性点数×0.85＋口コミ信頼度×0.15⁠」⁠で決めています⁠。口コミ⁠が10件未満⁠の機種⁠は点数⁠が安定しないため載せておらず⁠、20件未満⁠の機種⁠は「⁠参考値⁠」⁠と表示しています⁠。</p><p>メーカー公表⁠の運転音⁠は⁠、各メーカー⁠の公式サイト・取扱説明書⁠で確認した値⁠です⁠。公表値⁠が見つからなかった37機種⁠は「⁠公表なし⁠」⁠としています⁠。集合住宅⁠との相性⁠は⁠、口コミ⁠の内容から集合住宅⁠での使いやすさを評価した点数⁠です⁠。</p></section></div>
 
       <section class="top-cards" id="price-check" aria-label="上位10製品">
         <h2>上位10製品</h2>
@@ -2192,7 +2425,7 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         </article>
         <article class="aff-card" id="price-l10s-ultra-gen-3" data-slug="l10s-ultra-gen-3">
           <div class="aff-card-head">
-            <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/l10sultragen3_cp.jpg" alt="" width="56" height="56" loading="lazy">
+            <img src="https://www.dreametech.jp/cdn/shop/files/l10s_ultra_gen_3.png?width=800" alt="" width="56" height="56" loading="lazy">
             <div>
               <div class="aff-card-title">
                 <span class="aff-card-rank">6</span>
@@ -2315,12 +2548,12 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <section>
           <h2>ほかのランキング・比較</h2>
           <div class="related">
-            <a href="/rankings/floor-cleaning">フローリング掃除ランキング</a><a href="/rankings/carpet-cleaning">カーペット掃除ランキング</a><a href="/rankings/step-climbing">段差ランキング</a>
+            <a href="/rankings/floor-cleaning">水拭き・フローリングランキング</a><a href="/rankings/carpet-cleaning">カーペット・ラグランキング</a><a href="/rankings/step-climbing">段差ランキング</a>
             <a href="/rankings/">ランキング一覧</a>
             <a href="/compare/">価格帯比較</a>
           </div>
           <div class="related" style="margin-top:0.65rem">
-            <a href="/compare/robot-vacuum-under-5man">〜5万円</a>
+            <a href="/guides/robot-vacuum-cheap">〜5万円</a>
             <a href="/compare/robot-vacuum-5-7man">5〜7万円</a>
             <a href="/compare/robot-vacuum-7-10man">7〜10万円</a>
             <a href="/compare/robot-vacuum-10-15man">10〜15万円</a>
@@ -2342,10 +2575,13 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
     </div>
     <p style="margin-top:0.65rem">ナットクLabo · 更新 2026-11-03</p>
   </footer>
+  <div class="sticky-cta" id="sticky-cta" hidden><a href="#price-deebot-x11-omnicyclone">DEEBOT X11 OmniCycloneの価格を見る</a><a class="sticky-sub" href="#price-check">上位の価格一覧</a></div>
   <script src="/products/js/navigation.js?v=20261005a"></script>
   <script>
 (function () {
-  const chips = document.querySelectorAll(".filter-chip");
+  const chips = document.querySelectorAll(".filter-chip:not(.auto-chip)");
+  const autoChips = document.querySelectorAll(".auto-chip");
+  let curMin = 0, curMax = Infinity, curAuto = "all";
   const rows = document.querySelectorAll("#ranking-table tbody tr.rank-row, #ranking-table tbody tr.comment-row");
   const countEl = document.getElementById("filter-count");
   const emptyEl = document.getElementById("empty-msg");
@@ -2434,10 +2670,12 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
   }
 
   function applyFilter(min, max) {
+    curMin = min; curMax = max;
     let shown = 0;
     rows.forEach(function (row) {
       const price = Number(row.getAttribute("data-price") || 0);
-      const ok = price >= min && price < max;
+      const auto = row.getAttribute("data-auto");
+      const ok = price >= min && price < max && (curAuto === "all" || auto === curAuto);
       row.style.display = ok ? "" : "none";
       if (ok && row.classList.contains("rank-row")) shown += 1;
     });
@@ -2455,6 +2693,15 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
       const maxRaw = chip.getAttribute("data-max");
       const max = maxRaw === "Infinity" ? Infinity : Number(maxRaw);
       applyFilter(min, max);
+    });
+  });
+
+  autoChips.forEach(function (chip) {
+    chip.addEventListener("click", function () {
+      autoChips.forEach(function (c) { c.classList.remove("active"); });
+      chip.classList.add("active");
+      curAuto = chip.getAttribute("data-auto") || "all";
+      applyFilter(curMin, curMax);
     });
   });
 
@@ -2644,6 +2891,23 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
   }
 
   document.querySelectorAll(".aff-card[data-slug]").forEach(mountCard);
+})();
+</script><script>
+(function () {
+  var bar = document.getElementById("sticky-cta");
+  var picks = document.getElementById("picks");
+  var prices = document.getElementById("price-check");
+  if (!bar || !picks || !prices || !("IntersectionObserver" in window)) return;
+  var pastPicks = false, pricesVisible = false;
+  function update() { bar.hidden = !(pastPicks && !pricesVisible); }
+  new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) { pastPicks = !e.isIntersecting && e.boundingClientRect.top < 0; });
+    update();
+  }).observe(picks);
+  new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) { pricesVisible = e.isIntersecting; });
+    update();
+  }).observe(prices);
 })();
 </script>
 </body>

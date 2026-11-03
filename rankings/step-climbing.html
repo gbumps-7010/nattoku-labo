@@ -59,6 +59,10 @@ h1 {
 .lede { font-size: 0.95rem; opacity: 0.95; max-width: 42rem; }
 /* 句読点・｜の位置で改行する（収まらない節だけ節の中で折り返す） */
 h1 .clause, .lede .clause { display: inline-block; word-break: auto-phrase; text-wrap: pretty; }
+@media (max-width: 768px) {
+  h1 .h-sep { display: none; }
+  h1 .clause { display: block; }
+}
 .rank-tabs {
   position: sticky;
   top: calc(60px + env(safe-area-inset-top, 0px));
@@ -344,6 +348,11 @@ tr.comment-row .comment-spacer { border-bottom: 1px solid #e2e8f0; }
 .img-ph { display: block; }
 .pname { display: block; font-weight: 700; font-size: 0.9rem; line-height: 1.35; }
 .pmeta { display: block; color: var(--muted); font-size: 0.75rem; }
+.auto-tag { display: inline-block; margin-top: 0.2rem; font-size: 0.68rem; font-weight: 800; border-radius: 999px; padding: 0.05rem 0.5rem; }
+.auto-tag.yes { background: #dcfce7; color: #166534; }
+.auto-tag.no { background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; }
+.auto-tag + .auto-tag { margin-left: 0.25rem; }
+.filters-label-2 { margin-top: 0.7rem; }
 .floor-comment {
   margin: 0; padding: 0.55rem 0.7rem;
   background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;
@@ -580,6 +589,21 @@ ul.tips li::before { content: "✓"; position: absolute; left: 0; color: var(--p
 .aff-card { scroll-margin-top: 130px; }
 .picks, .article-sec, .top-cards, .table-wrap { scroll-margin-top: 120px; }
 .picks-note { font-size: 0.82rem; color: #475569; margin-top: 0.75rem; line-height: 1.7; }
+.tradeoff-box, .caution-box { border-radius: 12px; padding: 0.85rem 1rem; margin-top: 0.85rem; }
+.tradeoff-box { background: #eff6ff; border: 1px solid #bfdbfe; }
+.caution-box { background: #fff7ed; border: 2px solid #f59e0b; margin: 0 0 0.9rem; }
+.tradeoff-title, .caution-title { font-weight: 900; font-size: 0.95rem; margin-bottom: 0.4rem; }
+.tradeoff-title { color: #1e3a8a; }
+.caution-title { color: #9a3412; }
+.caution-title::before { content: "⚠ "; }
+.caution-key { background: #fef2f2; border: 2px solid #dc2626; border-radius: 10px; padding: 0.75rem 0.9rem; margin: 0.5rem 0 0.7rem; font-size: 1rem !important; line-height: 1.75 !important; color: #7f1d1d !important; }
+.caution-key strong { color: #b91c1c; font-size: 1.05rem; }
+.caution-key-label { display: inline-block; background: #dc2626; color: #fff; font-size: 0.75rem; font-weight: 900; border-radius: 6px; padding: 0.1rem 0.5rem; margin-right: 0.5rem; vertical-align: 0.1em; }
+.article-sec > .caution-key { margin-top: 1rem; }
+.tradeoff-box ul, .caution-box ul { list-style: disc; padding-left: 1.2rem; display: grid; gap: 0.3rem; }
+.tradeoff-box li, .caution-box li { font-size: 0.88rem; line-height: 1.75; color: #1e293b; }
+table.mini.ref { min-width: 0; }
+.src-note { font-size: 0.78rem !important; color: #475569 !important; margin-top: 0.4rem; }
 .picks-jump { margin-top: 0.75rem; text-align: center; }
 .picks-jump .btn-sub { display: inline-block; padding: 0.6rem 1.4rem; }
 @media (max-width: 768px) {
@@ -855,14 +879,14 @@ ul.tips li::before { content: "✓"; position: absolute; left: 0; color: var(--p
       <nav class="crumb" aria-label="パンくず">
         <a href="/">ホーム</a> › <a href="/rankings/">ランキング</a> › 段差に強いロボット掃除機ランキング
       </nav>
-      <h1><span class="clause">段差に強いロボット掃除機ランキング｜</span><span class="clause">段差の乗り越えを口コミで比較</span></h1>
+      <h1><span class="clause">段差に強いロボット掃除機ランキング</span><span class="h-sep">｜</span><span class="clause">段差の乗り越えを口コミで比較</span></h1>
       <p class="lede"><span class="clause">口コミ⁠に書かれた段差⁠の乗り越えの評価⁠を数値化し⁠、</span><span class="clause">敷居⁠やラグ⁠のある家⁠でも止まりにくい機種⁠を比較したランキング⁠です⁠。</span><span class="clause">各製品⁠には⁠、実際⁠の口コミからまとめた段差⁠の傾向コメント⁠も掲載しています⁠。</span></p>
     </div>
   </header>
 
   <nav class="rank-tabs" aria-label="機能別ランキング">
     <div class="wrap rank-tabs-inner">
-      <a class="rank-tab" href="/rankings/floor-cleaning">フローリング</a><a class="rank-tab" href="/rankings/carpet-cleaning">カーペット</a><a class="rank-tab" href="/rankings/quietness">静音性</a><a class="rank-tab active" href="/rankings/step-climbing" aria-current="page">段差</a><a class="rank-tab rank-tab-all" href="/rankings/">一覧</a>
+      <a class="rank-tab" href="/rankings/floor-cleaning">水拭き・床</a><a class="rank-tab" href="/rankings/carpet-cleaning">カーペット・ラグ</a><a class="rank-tab" href="/rankings/quietness">静音性</a><a class="rank-tab active" href="/rankings/step-climbing" aria-current="page">段差</a><a class="rank-tab rank-tab-all" href="/rankings/">一覧</a>
     </div>
   </nav>
 
@@ -1137,7 +1161,7 @@ ul.tips li::before { content: "✓"; position: absolute; left: 0; color: var(--p
         <td class="rank"><span class="rank-num">8</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/l10s-ultra-gen-3" target="_blank" rel="noopener">
-            <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/l10sultragen3_cp.jpg" alt="L10s Ultra Gen 3の製品画像" loading="lazy" width="56" height="56"></span>
+            <span class="thumb"><img src="https://www.dreametech.jp/cdn/shop/files/l10s_ultra_gen_3.png?width=800" alt="L10s Ultra Gen 3の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">L10s Ultra Gen 3</span>
               <span class="pmeta">Dreame</span>
@@ -2247,6 +2271,7 @@ ul.tips li::before { content: "✓"; position: absolute; left: 0; color: var(--p
           ランキングの式：<code>段差点数 × 0.85 ＋ 口コミ信頼度 × 0.15</code>
         </p>
         <p class="method-sub">口コミ⁠が10件未満⁠の11機種⁠は⁠、点数⁠が安定しないためこのランキング⁠に載せていません⁠。20件未満⁠の機種⁠は「⁠参考値⁠」⁠と表示しています⁠。</p>
+        <p class="method-sub">集計の元データ：Amazon・楽天市場に投稿された公開レビューです。文章は転載せず、内容を分類して点数にしています。</p>
       </section>
 <div class="article"><section class="article-sec" id="step-guide"><h2>家の段差の目安と、必要な乗り越え性能</h2><p>ロボット掃除機⁠が止まりやすいのは⁠、部屋⁠の境目⁠の<strong class="em-key">敷居</strong>⁠、<strong class="em-key">ラグ⁠やカーペット⁠の端</strong>⁠、<strong class="em-key">家具⁠の脚⁠や台座</strong>⁠です⁠。高さは家ごとに違うので⁠、まず掃除させたい場所⁠の段差⁠を実際⁠に測り⁠、その高さを越えられる機種⁠を選ぶのが確実⁠です⁠。</p><p>メーカー⁠が「⁠乗り越えられる段差⁠」⁠を公表しているのは掲載57機種⁠のうち38機種⁠で⁠、いちばん多いのは<strong class="em-key">20mm</strong>（⁠24機種⁠）⁠です⁠。40mm以上⁠を公表しているのは4機種⁠で⁠、X50 Ultra・L40s Pro Ultra・Saros 20・Saros 10R⁠は2段⁠になった段差⁠の合計値（⁠2段⁠）⁠として公表しています⁠。</p><div class="table-scroll"><table class="mini">
           <thead><tr><th>メーカー公表の段差</th><th>機種数</th><th>口コミの段差評価（平均）</th><th>主な機種</th></tr></thead>
@@ -2413,7 +2438,7 @@ ul.tips li::before { content: "✓"; position: absolute; left: 0; color: var(--p
         </article>
         <article class="aff-card" id="price-l10s-ultra-gen-3" data-slug="l10s-ultra-gen-3">
           <div class="aff-card-head">
-            <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/l10sultragen3_cp.jpg" alt="" width="56" height="56" loading="lazy">
+            <img src="https://www.dreametech.jp/cdn/shop/files/l10s_ultra_gen_3.png?width=800" alt="" width="56" height="56" loading="lazy">
             <div>
               <div class="aff-card-title">
                 <span class="aff-card-rank">8</span>
@@ -2492,12 +2517,12 @@ ul.tips li::before { content: "✓"; position: absolute; left: 0; color: var(--p
         <section>
           <h2>ほかのランキング・比較</h2>
           <div class="related">
-            <a href="/rankings/floor-cleaning">フローリング掃除ランキング</a><a href="/rankings/carpet-cleaning">カーペット掃除ランキング</a><a href="/rankings/quietness">静音性ランキング</a>
+            <a href="/rankings/floor-cleaning">水拭き・フローリングランキング</a><a href="/rankings/carpet-cleaning">カーペット・ラグランキング</a><a href="/rankings/quietness">静音性ランキング</a>
             <a href="/rankings/">ランキング一覧</a>
             <a href="/compare/">価格帯比較</a>
           </div>
           <div class="related" style="margin-top:0.65rem">
-            <a href="/compare/robot-vacuum-under-5man">〜5万円</a>
+            <a href="/guides/robot-vacuum-cheap">〜5万円</a>
             <a href="/compare/robot-vacuum-5-7man">5〜7万円</a>
             <a href="/compare/robot-vacuum-7-10man">7〜10万円</a>
             <a href="/compare/robot-vacuum-10-15man">10〜15万円</a>
@@ -2523,7 +2548,9 @@ ul.tips li::before { content: "✓"; position: absolute; left: 0; color: var(--p
   <script src="/products/js/navigation.js?v=20261005a"></script>
   <script>
 (function () {
-  const chips = document.querySelectorAll(".filter-chip");
+  const chips = document.querySelectorAll(".filter-chip:not(.auto-chip)");
+  const autoChips = document.querySelectorAll(".auto-chip");
+  let curMin = 0, curMax = Infinity, curAuto = "all";
   const rows = document.querySelectorAll("#ranking-table tbody tr.rank-row, #ranking-table tbody tr.comment-row");
   const countEl = document.getElementById("filter-count");
   const emptyEl = document.getElementById("empty-msg");
@@ -2612,10 +2639,12 @@ ul.tips li::before { content: "✓"; position: absolute; left: 0; color: var(--p
   }
 
   function applyFilter(min, max) {
+    curMin = min; curMax = max;
     let shown = 0;
     rows.forEach(function (row) {
       const price = Number(row.getAttribute("data-price") || 0);
-      const ok = price >= min && price < max;
+      const auto = row.getAttribute("data-auto");
+      const ok = price >= min && price < max && (curAuto === "all" || auto === curAuto);
       row.style.display = ok ? "" : "none";
       if (ok && row.classList.contains("rank-row")) shown += 1;
     });
@@ -2633,6 +2662,15 @@ ul.tips li::before { content: "✓"; position: absolute; left: 0; color: var(--p
       const maxRaw = chip.getAttribute("data-max");
       const max = maxRaw === "Infinity" ? Infinity : Number(maxRaw);
       applyFilter(min, max);
+    });
+  });
+
+  autoChips.forEach(function (chip) {
+    chip.addEventListener("click", function () {
+      autoChips.forEach(function (c) { c.classList.remove("active"); });
+      chip.classList.add("active");
+      curAuto = chip.getAttribute("data-auto") || "all";
+      applyFilter(curMin, curMax);
     });
   });
 

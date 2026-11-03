@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>【ロボット掃除機ランキング】フローリング掃除のおすすめ機種｜ナットクLabo</title>
-  <meta name="description" content="口コミの吸引力・水拭き評価を数値化したフローリング掃除ランキング。口コミ信頼度も加味したおすすめ順で57製品を比較できます。">
+  <title>水拭きロボット掃除機ランキング｜フローリングの仕上がりを口コミで比較｜ナットクLabo</title>
+  <meta name="description" content="口コミの「水拭きで床がサラサラ」「ベタつきが取れる」といった声を数値化して、57機種を水拭き・フローリング掃除の評価順に比較。ローラー・回転などモップの方式や、モップ自動洗浄の有無もまとめました。">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <link rel="canonical" href="https://nattoku-labo.com/rankings/floor-cleaning">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="ナットクLabo">
   <meta property="og:locale" content="ja_JP">
   <meta property="og:url" content="https://nattoku-labo.com/rankings/floor-cleaning">
-  <meta property="og:title" content="【ロボット掃除機ランキング】フローリング掃除のおすすめ機種">
-  <meta property="og:description" content="口コミの吸引力・水拭き評価を数値化したフローリング掃除ランキング。口コミ信頼度も加味したおすすめ順で比較できます。">
+  <meta property="og:title" content="水拭きロボット掃除機ランキング｜フローリングの仕上がりを口コミで比較">
+  <meta property="og:description" content="口コミの水拭き・フローリング掃除の評価を数値化したランキング。モップの方式やモップ自動洗浄の有無もまとめました。">
   <meta property="og:image" content="https://nattoku-labo.com/og-default.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://nattoku-labo.com/og-default.png">
@@ -59,6 +59,10 @@ h1 {
 .lede { font-size: 0.95rem; opacity: 0.95; max-width: 42rem; }
 /* 句読点・｜の位置で改行する（収まらない節だけ節の中で折り返す） */
 h1 .clause, .lede .clause { display: inline-block; word-break: auto-phrase; text-wrap: pretty; }
+@media (max-width: 768px) {
+  h1 .h-sep { display: none; }
+  h1 .clause { display: block; }
+}
 .rank-tabs {
   position: sticky;
   top: calc(60px + env(safe-area-inset-top, 0px));
@@ -344,6 +348,11 @@ tr.comment-row .comment-spacer { border-bottom: 1px solid #e2e8f0; }
 .img-ph { display: block; }
 .pname { display: block; font-weight: 700; font-size: 0.9rem; line-height: 1.35; }
 .pmeta { display: block; color: var(--muted); font-size: 0.75rem; }
+.auto-tag { display: inline-block; margin-top: 0.2rem; font-size: 0.68rem; font-weight: 800; border-radius: 999px; padding: 0.05rem 0.5rem; }
+.auto-tag.yes { background: #dcfce7; color: #166534; }
+.auto-tag.no { background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; }
+.auto-tag + .auto-tag { margin-left: 0.25rem; }
+.filters-label-2 { margin-top: 0.7rem; }
 .floor-comment {
   margin: 0; padding: 0.55rem 0.7rem;
   background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;
@@ -536,13 +545,96 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
   font-size: 0.82rem;
 }
 .aff-card-status.error { color: #dc2626; }
+
+.picks { margin: 1.25rem 0 1.5rem; }
+.picks h2, .article-sec h2 { font-size: 1.15rem; font-weight: 900; color: #0f172a; margin-bottom: 0.4rem; }
+.picks .section-sub { font-size: 0.86rem; color: #475569; margin-bottom: 0.85rem; }
+.picks-grid { display: grid; gap: 0.85rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.pick-card { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 1rem; display: flex; flex-direction: column; gap: 0.55rem; }
+.pick-card:first-child { border: 2px solid var(--primary); box-shadow: 0 8px 22px rgba(30,64,175,0.08); }
+.pick-label { font-size: 0.78rem; font-weight: 800; color: var(--primary); }
+.pick-head { display: flex; gap: 0.7rem; align-items: center; }
+.pick-head img, .pick-head .img-ph { width: 64px; height: 64px; object-fit: contain; border-radius: 10px; background: #f1f5f9; flex: 0 0 auto; }
+.pick-head h3 { font-size: 1rem; font-weight: 900; line-height: 1.35; }
+.pick-head h3 a { color: #0f172a; text-decoration: none; }
+.pick-meta { font-size: 0.8rem; color: #475569; }
+.pick-stats { list-style: none; display: flex; flex-wrap: wrap; gap: 0.3rem 0.8rem; font-size: 0.82rem; color: #334155; }
+.pick-card > p { font-size: 0.85rem; color: #334155; line-height: 1.7; }
+.pick-actions { margin-top: auto; display: grid; gap: 0.45rem; }
+.btn-primary, .btn-sub { display: block; text-align: center; border-radius: 10px; padding: 0.65rem 0.8rem; font-weight: 800; font-size: 0.9rem; text-decoration: none; }
+.btn-primary { background: var(--primary); color: #fff; }
+.btn-primary:hover { background: #1e3a8a; }
+.btn-sub { background: #eff6ff; color: var(--primary); border: 1px solid #bfdbfe; }
+.btn-sub:hover { background: #dbeafe; }
+.article { margin: 1.75rem 0 0.5rem; display: grid; gap: 1.1rem; }
+.article-sec { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 1.1rem 1.15rem; }
+.article-sec p { font-size: 0.93rem; line-height: 1.85; color: #1e293b; }
+.article-sec p + p, .article-sec p + .table-scroll, .article-sec .table-scroll + p { margin-top: 0.7rem; }
+.article-sec a { color: var(--primary); font-weight: 700; }
+.article-sec .em-key { background: linear-gradient(transparent 62%, #fde68a 62%); font-weight: 800; }
+.table-scroll { overflow-x: auto; margin-top: 0.75rem; }
+table.mini { width: 100%; border-collapse: collapse; font-size: 0.85rem; min-width: 520px; }
+table.mini th, table.mini td { border-bottom: 1px solid var(--line); padding: 0.5rem 0.55rem; text-align: left; vertical-align: top; }
+table.mini th { background: #f8fafc; font-weight: 800; color: #0f172a; white-space: nowrap; }
+table.mini td.num { white-space: nowrap; font-weight: 700; }
+ul.tips { list-style: none; display: grid; gap: 0.55rem; }
+ul.tips li { font-size: 0.92rem; line-height: 1.8; padding-left: 1.1rem; position: relative; }
+ul.tips li::before { content: "✓"; position: absolute; left: 0; color: var(--primary); font-weight: 900; }
+.mid-cta { margin-top: 0.9rem; }
+.mid-cta .btn-sub { display: inline-block; }
+.faq details { border-top: 1px solid var(--line); padding: 0.65rem 0; }
+.faq details:first-of-type { border-top: none; }
+.faq summary { cursor: pointer; font-weight: 800; color: #0f172a; font-size: 0.95rem; }
+.faq .faq-a { margin-top: 0.45rem; }
+.aff-card { scroll-margin-top: 130px; }
+.picks, .article-sec, .top-cards, .table-wrap { scroll-margin-top: 120px; }
+.picks-note { font-size: 0.82rem; color: #475569; margin-top: 0.75rem; line-height: 1.7; }
+.tradeoff-box, .caution-box { border-radius: 12px; padding: 0.85rem 1rem; margin-top: 0.85rem; }
+.tradeoff-box { background: #eff6ff; border: 1px solid #bfdbfe; }
+.caution-box { background: #fff7ed; border: 2px solid #f59e0b; margin: 0 0 0.9rem; }
+.tradeoff-title, .caution-title { font-weight: 900; font-size: 0.95rem; margin-bottom: 0.4rem; }
+.tradeoff-title { color: #1e3a8a; }
+.caution-title { color: #9a3412; }
+.caution-title::before { content: "⚠ "; }
+.caution-key { background: #fef2f2; border: 2px solid #dc2626; border-radius: 10px; padding: 0.75rem 0.9rem; margin: 0.5rem 0 0.7rem; font-size: 1rem !important; line-height: 1.75 !important; color: #7f1d1d !important; }
+.caution-key strong { color: #b91c1c; font-size: 1.05rem; }
+.caution-key-label { display: inline-block; background: #dc2626; color: #fff; font-size: 0.75rem; font-weight: 900; border-radius: 6px; padding: 0.1rem 0.5rem; margin-right: 0.5rem; vertical-align: 0.1em; }
+.article-sec > .caution-key { margin-top: 1rem; }
+.tradeoff-box ul, .caution-box ul { list-style: disc; padding-left: 1.2rem; display: grid; gap: 0.3rem; }
+.tradeoff-box li, .caution-box li { font-size: 0.88rem; line-height: 1.75; color: #1e293b; }
+table.mini.ref { min-width: 0; }
+.src-note { font-size: 0.78rem !important; color: #475569 !important; margin-top: 0.4rem; }
+.picks-jump { margin-top: 0.75rem; text-align: center; }
+.picks-jump .btn-sub { display: inline-block; padding: 0.6rem 1.4rem; }
+@media (max-width: 768px) {
+  /* スマホでは結論を1台1行に近い簡単な表示にして、表までの距離を縮める */
+  .picks-grid { gap: 0.55rem; }
+  .pick-card { padding: 0.75rem 0.8rem; gap: 0.35rem; }
+  .pick-card > p:not(.pick-label), .pick-meta, .pick-stats li:nth-child(3) { display: none; }
+  .pick-head img, .pick-head .img-ph { width: 44px; height: 44px; }
+  .pick-head h3 { font-size: 0.95rem; }
+  .pick-stats { font-size: 0.8rem; }
+  .pick-actions { grid-template-columns: 1fr 1fr; gap: 0.4rem; }
+  .btn-primary, .btn-sub { padding: 0.55rem 0.4rem; font-size: 0.82rem; }
+}
+.sticky-cta { display: none; }
+@media (max-width: 768px) {
+  .sticky-cta:not([hidden]) {
+    display: flex; gap: 0.45rem; position: fixed; left: 0; right: 0; bottom: 0; z-index: 40;
+    padding: 0.6rem 0.75rem calc(0.6rem + env(safe-area-inset-bottom, 0px));
+    background: rgba(255,255,255,0.97); border-top: 1px solid var(--line); box-shadow: 0 -6px 18px rgba(15,23,42,0.08);
+  }
+  .sticky-cta a { flex: 1 1 auto; text-align: center; border-radius: 10px; padding: 0.7rem 0.6rem; font-weight: 800; font-size: 0.88rem; text-decoration: none; background: var(--primary); color: #fff; }
+  .sticky-cta a.sticky-sub { flex: 0 0 auto; background: #eff6ff; color: var(--primary); border: 1px solid #bfdbfe; }
+  body { padding-bottom: 4.5rem; }
+}
 </style>
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "name": "【ロボット掃除機ランキング】フローリング掃除のおすすめ機種",
-  "description": "口コミの吸引力・水拭き評価を数値化したフローリング掃除ランキング",
+  "name": "水拭きロボット掃除機ランキング｜フローリングの仕上がりを口コミで比較",
+  "description": "口コミの水拭き・フローリング掃除の評価を数値化したランキング",
   "url": "https://nattoku-labo.com/rankings/floor-cleaning",
   "numberOfItems": 57,
   "itemListElement": [
@@ -730,13 +822,61 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
 }
   </script>
   <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "水拭きがいちばん得意なロボット掃除機はどれですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "口コミ50件以上の機種で順位が最も高いのは、DEEBOT T80 OMNI（水拭き・床97点・口コミ596件・1位）です。点数は水拭きとフローリングのゴミの取れ具合をあわせた口コミ評価です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "安いロボット掃除機でも水拭きはできますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "できます。口コミ50件以上で5万円以下の機種では、Q10P+（¥44,800）の評価が最も高く、98点です。ただし安い機種はモップを手で洗う方式が多いので、手間も含めて考えてください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ローラーモップと回転モップはどちらがいいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ローラーモップは床をこすりながらローラーを洗い続けるので、ベタつきなどの汚れに強いのが特長です。回転モップは押し付ける力が強く、壁際でモップを伸ばせる機種もあります。口コミの評価が高いのは、ローラーモップではDEEBOT T80 OMNI（97点）、回転モップではDEEBOT T50 OMNI（97点）です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "カーペットがあっても水拭きできますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "モップを持ち上げる機能がある機種なら、カーペットの上ではモップを上げて掃除できます（掲載機種のうち28機種）。毛足の長いラグでは触れることもあるので、気になる場合はアプリでラグを進入禁止にするか、モップを自動で取り外せる機種を選ぶと安心です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "水拭きだけのロボットと、吸引と水拭きの両方ができる機種はどちらがいいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "当サイトで比べているのは、吸引と水拭きの両方ができる機種です。ゴミを吸ってから拭くので、1台で床掃除をまとめて任せたい場合に向いています。"
+      }
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
       {"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://nattoku-labo.com/"},
       {"@type": "ListItem", "position": 2, "name": "ランキング", "item": "https://nattoku-labo.com/rankings/"},
-      {"@type": "ListItem", "position": 3, "name": "フローリング掃除", "item": "https://nattoku-labo.com/rankings/floor-cleaning"}
+      {"@type": "ListItem", "position": 3, "name": "水拭き・フローリング", "item": "https://nattoku-labo.com/rankings/floor-cleaning"}
     ]
   }
   </script>
@@ -745,31 +885,96 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
   <header class="hero">
     <div class="wrap">
       <nav class="crumb" aria-label="パンくず">
-        <a href="/">ホーム</a> › <a href="/rankings/">ランキング</a> › フローリング掃除
+        <a href="/">ホーム</a> › <a href="/rankings/">ランキング</a> › 水拭き・フローリング
       </nav>
-      <h1><span class="clause">【ロボット掃除機ランキング】フローリング掃除のおすすめ機種</span></h1>
-      <p class="lede"><span class="clause">口コミ⁠に書かれた吸引力⁠や水拭きの評価⁠を数値化し⁠、</span><span class="clause">フローリング掃除⁠の得意さを比較したランキング⁠です⁠。</span><span class="clause">各製品⁠には⁠、実際⁠の口コミからまとめたフローリング清掃⁠の傾向コメント⁠も掲載しています⁠。</span></p>
+      <h1><span class="clause">水拭きロボット掃除機ランキング</span><span class="h-sep">｜</span><span class="clause">フローリングの仕上がりを口コミで比較</span></h1>
+      <p class="lede"><span class="clause">口コミ⁠に書かれた水拭きの仕上⁠がりや⁠、</span><span class="clause">フローリング⁠のゴミ⁠の取れ具合⁠を数値化して比べたランキング⁠です⁠。</span><span class="clause">モップ⁠の方式⁠やステーション⁠の機能⁠、</span><span class="clause">口コミ⁠で多い声⁠もまとめています⁠。</span></p>
     </div>
   </header>
 
   <nav class="rank-tabs" aria-label="機能別ランキング">
     <div class="wrap rank-tabs-inner">
-      <a class="rank-tab active" href="/rankings/floor-cleaning" aria-current="page">フローリング</a><a class="rank-tab" href="/rankings/carpet-cleaning">カーペット</a><a class="rank-tab" href="/rankings/quietness">静音性</a><a class="rank-tab" href="/rankings/step-climbing">段差</a><a class="rank-tab rank-tab-all" href="/rankings/">一覧</a>
+      <a class="rank-tab active" href="/rankings/floor-cleaning" aria-current="page">水拭き・床</a><a class="rank-tab" href="/rankings/carpet-cleaning">カーペット・ラグ</a><a class="rank-tab" href="/rankings/quietness">静音性</a><a class="rank-tab" href="/rankings/step-climbing">段差</a><a class="rank-tab rank-tab-all" href="/rankings/">一覧</a>
     </div>
   </nav>
 
   <main>
     <div class="wrap">
 
-      <section class="method">
-        <h2>このランキングの見方</h2>
-        <p>「⁠吸引力⁠が強い⁠」「⁠<strong class="em-key benefit">水拭きがきれい</strong>⁠」⁠といった口コミ⁠を点数化し⁠、フローリング掃除⁠の得意さで並べています⁠。口コミ⁠の信頼度⁠を適切⁠に加味するので⁠、実体験⁠に近いおすすめ順⁠になっています⁠。表⁠の各製品⁠には⁠、床⁠の仕上⁠がりや水拭きに関する<strong class="em-key">口コミ傾向</strong>⁠も記載しているので⁠、点数だけでなく具体的な声⁠も比較⁠できます⁠。</p>
-        <p class="method-sub">
-          ランキングの式：<code>フローリング点数 × 0.85 ＋ 口コミ信頼度 × 0.15</code>
-        </p>
-        <p class="method-sub">口コミ⁠が10件未満⁠の11機種⁠は⁠、点数⁠が安定しないためこのランキング⁠に載せていません⁠。20件未満⁠の機種⁠は「⁠参考値⁠」⁠と表示しています⁠。</p>
+      <section class="picks" id="picks" aria-label="水拭きで選ぶならこの3台">
+        <h2>結論：水拭きで選ぶならこの3台</h2>
+        <p class="section-sub">口コミ50件以上⁠の機種から⁠、<strong class="em-key">モップ自動洗浄⁠の有無⁠と予算⁠、モップ⁠の方式</strong>⁠で分けて選んだ3台⁠です⁠。点数⁠と順位⁠はランキング表⁠と同じ値⁠です⁠。</p>
+        <div class="picks-grid">
+          <article class="pick-card">
+            <p class="pick-label">モップ自動洗浄ありで最も高い</p>
+            <div class="pick-head">
+              <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/dex68-21ee.jpg" alt="" width="64" height="64" loading="lazy">
+              <div>
+                <h3><a href="/products/deebot-t80-omni">DEEBOT T80 OMNI</a></h3>
+                <p class="pick-meta">ECOVACS · ¥99,800</p>
+              </div>
+            </div>
+            <ul class="pick-stats">
+              <li>水拭き・床 <strong>97点</strong>（1位）</li>
+              <li>口コミ <strong>596件</strong></li>
+              <li>モップ <strong>ローラーモップ・自動洗浄あり</strong></li>
+            </ul>
+            <p>口コミ⁠では「⁠本製品⁠で最⁠も評価⁠が高い項目⁠です⁠。⁠」</p>
+            <div class="pick-actions">
+              <a class="btn-primary" href="/products/deebot-t80-omni">口コミ分析を見る</a>
+              <a class="btn-sub" href="#price-deebot-t80-omni">最新価格を見る ▼</a>
+            </div>
+          </article>
+          <article class="pick-card">
+            <p class="pick-label">予算5万円以下で最も高い</p>
+            <div class="pick-head">
+              <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/roborockjapandirect/cabinet/products/12574614/imgrc0133045076.jpg" alt="" width="64" height="64" loading="lazy">
+              <div>
+                <h3><a href="/products/q10p">Q10P+</a></h3>
+                <p class="pick-meta">Roborock · ¥44,800</p>
+              </div>
+            </div>
+            <ul class="pick-stats">
+              <li>水拭き・床 <strong>98点</strong>（4位）</li>
+              <li>口コミ <strong>92件</strong></li>
+              <li>モップ <strong>パッド・シート・自動洗浄なし</strong></li>
+            </ul>
+            <p>口コミ⁠では「⁠床⁠がピカピカ⁠」「⁠ワックス⁠をかけたよう⁠」⁠と絶賛⁠の声⁠が多数⁠。</p>
+            <div class="pick-actions">
+              <a class="btn-primary" href="/products/q10p">口コミ分析を見る</a>
+              <a class="btn-sub" href="#price-q10p">最新価格を見る ▼</a>
+            </div>
+          </article>
+          <article class="pick-card">
+            <p class="pick-label">回転モップで最も高い</p>
+            <div class="pick-head">
+              <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/ddx57-12ee.jpg" alt="" width="64" height="64" loading="lazy">
+              <div>
+                <h3><a href="/products/deebot-t50-omni">DEEBOT T50 OMNI</a></h3>
+                <p class="pick-meta">ECOVACS · ¥99,800</p>
+              </div>
+            </div>
+            <ul class="pick-stats">
+              <li>水拭き・床 <strong>97点</strong>（3位）</li>
+              <li>口コミ <strong>225件</strong></li>
+              <li>モップ <strong>回転モップ・自動洗浄あり</strong></li>
+            </ul>
+            <p>口コミ⁠では「⁠回転モップ⁠による水拭き性能⁠は絶賛されており⁠、「⁠床⁠がサラサラ・ピカピカ⁠になる⁠」⁠との声⁠が多数⁠。⁠」</p>
+            <div class="pick-actions">
+              <a class="btn-primary" href="/products/deebot-t50-omni">口コミ分析を見る</a>
+              <a class="btn-sub" href="#price-deebot-t50-omni">最新価格を見る ▼</a>
+            </div>
+          </article></div>
+        <div class="tradeoff-box" role="note">
+          <p class="tradeoff-title">モップ自動洗浄の「あり」「なし」で手間が変わります</p>
+          <ul>
+            <li><strong>ありの機種</strong>：掃除のあとにステーションがモップを洗い、機種によっては乾燥まで行います。そのぶん<strong>価格は高めで、ステーションも大きく</strong>なります。</li>
+            <li><strong>なしの機種</strong>：本体は安く済みますが、<strong>掃除のたびにモップを外して手で洗う（またはシートを替える）</strong>必要があります。</li>
+          </ul>
+        </div>
+        
+        <p class="picks-jump"><a class="btn-sub" href="#ranking">全機種ランキングを見る ▼</a></p>
       </section>
-
       <section class="filters" aria-label="価格帯で絞り込み">
         <div class="filters-label">価格帯で絞り込み</div>
         <div class="filter-chips" role="group">
@@ -781,13 +986,19 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
           <button type="button" class="filter-chip" data-min="150000" data-max="200000">15〜20万円</button>
           <button type="button" class="filter-chip" data-min="200000" data-max="Infinity">20万円〜</button>
         </div>
+        <div class="filters-label filters-label-2">モップ自動洗浄で絞り込み</div>
+        <div class="filter-chips" role="group">
+          <button type="button" class="filter-chip auto-chip active" data-auto="all">すべて</button>
+          <button type="button" class="filter-chip auto-chip" data-auto="yes">モップ自動洗浄あり</button>
+          <button type="button" class="filter-chip auto-chip" data-auto="no">モップ自動洗浄なし</button>
+        </div>
         <p class="filter-meta"><span id="filter-count">57</span>製品を表示中（順位は全体順位のまま）</p>
       </section>
 
       <section class="table-wrap" id="ranking">
         <div class="table-head">
           <h2>全機種ランキング</h2>
-          <span>各製品にフローリング清掃の口コミコメント付き</span>
+          <span>各製品に水拭き・フローリングの口コミコメント付き</span>
         </div>
         <div class="rank-nav" role="group" aria-label="ランキング表のスクロール">
           <button type="button" class="rank-nav-btn" data-dir="-1" aria-label="表を上へ">▲</button>
@@ -805,7 +1016,7 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
               <tr>
                 <th>順位</th>
                 <th>製品</th>
-                <th>フローリング</th>
+                <th>水拭き・床</th>
                 <th>口コミ信頼度</th>
                 <th>口コミ数</th>
                 <th>価格目安</th>
@@ -813,14 +1024,14 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
             </thead>
             <tbody>
               
-      <tr class="rank-row top-1" data-price="99800" data-rank="1">
+      <tr class="rank-row top-1" data-price="99800" data-rank="1" data-auto="yes">
         <td class="rank"><span class="rank-num">1</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/deebot-t80-omni" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/dex68-21ee.jpg" alt="DEEBOT T80 OMNIの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">DEEBOT T80 OMNI</span>
-              <span class="pmeta">ECOVACS</span>
+              <span class="pmeta">ECOVACS</span><span class="auto-tag no">ローラーモップ</span><span class="auto-tag yes">モップ自動洗浄</span>
             </span>
           </a>
         </td>
@@ -829,20 +1040,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">596</td>
         <td class="num muted">¥99,800</td>
       </tr>
-      <tr class="comment-row top-1" data-price="99800" data-rank="1">
+      <tr class="comment-row top-1" data-price="99800" data-rank="1" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>本製品⁠で最⁠も評価⁠が高い項目⁠です⁠。ローラー式モップ⁠による加圧水拭きは「⁠<strong class="em-key benefit">床⁠がサラサラ</strong>⁠」「⁠<strong class="em-key benefit">ピカピカ⁠になる</strong>⁠」⁠と絶賛⁠の声⁠が多数⁠。汚水タンク⁠の汚れを見て⁠、その洗浄力⁠に驚くユーザー⁠が後⁠を絶ちません⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>本製品⁠で最⁠も評価⁠が高い項目⁠です⁠。ローラー式モップ⁠による加圧水拭きは「⁠<strong class="em-key benefit">床⁠がサラサラ</strong>⁠」「⁠<strong class="em-key benefit">ピカピカ⁠になる</strong>⁠」⁠と絶賛⁠の声⁠が多数⁠。汚水タンク⁠の汚れを見て⁠、その洗浄力⁠に驚くユーザー⁠が後⁠を絶ちません⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row top-2" data-price="99990" data-rank="2">
+      <tr class="rank-row top-2" data-price="99990" data-rank="2" data-auto="yes">
         <td class="rank"><span class="rank-num">2</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/eufy-robot-vacuum-omni-c28" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t211a/imgrc0103188193.jpg" alt="Eufy Robot Vacuum Omni C28の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Eufy Robot Vacuum Omni C28</span>
-              <span class="pmeta">Anker</span>
+              <span class="pmeta">Anker</span><span class="auto-tag no">ローラーモップ</span><span class="auto-tag yes">モップ自動洗浄</span>
             </span>
           </a>
         </td>
@@ -851,20 +1062,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">97</td>
         <td class="num muted">¥99,990</td>
       </tr>
-      <tr class="comment-row top-2" data-price="99990" data-rank="2">
+      <tr class="comment-row top-2" data-price="99990" data-rank="2" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>「⁠<strong class="em-key benefit">床⁠がサラサラ⁠になる</strong>⁠」⁠という声⁠が圧倒的多数⁠。ローラーモップ⁠による加圧水拭き性能⁠は極めて高く⁠、汚水⁠の汚れ具合⁠に驚くユーザー⁠が続出⁠。本製品最大⁠の強みであり⁠、満足度⁠の根幹⁠をなしています⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>「⁠<strong class="em-key benefit">床⁠がサラサラ⁠になる</strong>⁠」⁠という声⁠が圧倒的多数⁠。ローラーモップ⁠による加圧水拭き性能⁠は極めて高く⁠、汚水⁠の汚れ具合⁠に驚くユーザー⁠が続出⁠。本製品最大⁠の強みであり⁠、満足度⁠の根幹⁠をなしています⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row top-3" data-price="99800" data-rank="3">
+      <tr class="rank-row top-3" data-price="99800" data-rank="3" data-auto="yes">
         <td class="rank"><span class="rank-num">3</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/deebot-t50-omni" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/ddx57-12ee.jpg" alt="DEEBOT T50 OMNIの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">DEEBOT T50 OMNI</span>
-              <span class="pmeta">ECOVACS</span>
+              <span class="pmeta">ECOVACS</span><span class="auto-tag no">回転モップ</span><span class="auto-tag yes">モップ自動洗浄</span>
             </span>
           </a>
         </td>
@@ -873,20 +1084,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">225</td>
         <td class="num muted">¥99,800</td>
       </tr>
-      <tr class="comment-row top-3" data-price="99800" data-rank="3">
+      <tr class="comment-row top-3" data-price="99800" data-rank="3" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>回転モップ⁠による水拭き性能⁠は絶賛されており⁠、「⁠<strong class="em-key benefit">床⁠がサラサラ・ピカピカ⁠になる</strong>⁠」⁠との声⁠が多数⁠。吸引力⁠も高く⁠、ホコリ⁠や髪⁠の毛⁠をしっかり除去⁠。掃除後⁠の満足度⁠は非常⁠に高いです⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>回転モップ⁠による水拭き性能⁠は絶賛されており⁠、「⁠<strong class="em-key benefit">床⁠がサラサラ・ピカピカ⁠になる</strong>⁠」⁠との声⁠が多数⁠。吸引力⁠も高く⁠、ホコリ⁠や髪⁠の毛⁠をしっかり除去⁠。掃除後⁠の満足度⁠は非常⁠に高いです⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="44800" data-rank="4">
+      <tr class="rank-row" data-price="44800" data-rank="4" data-auto="no">
         <td class="rank"><span class="rank-num">4</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/q10p" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/roborockjapandirect/cabinet/products/12574614/imgrc0133045076.jpg" alt="Q10P+の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Q10P+</span>
-              <span class="pmeta">Roborock</span>
+              <span class="pmeta">Roborock</span><span class="auto-tag no">パッド・シート</span>
             </span>
           </a>
         </td>
@@ -895,20 +1106,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">92</td>
         <td class="num muted">¥44,800</td>
       </tr>
-      <tr class="comment-row" data-price="44800" data-rank="4">
+      <tr class="comment-row" data-price="44800" data-rank="4" data-auto="no">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>「⁠<strong class="em-key benefit">床⁠がピカピカ</strong>⁠」「⁠ワックス⁠をかけたよう⁠」⁠と絶賛⁠の声⁠が多数⁠。吸引⁠と水拭きの同時実行⁠で⁠、ホコリ⁠や髪⁠の毛⁠、足跡までしっかり除去する性能⁠が高く評価されています⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>「⁠<strong class="em-key benefit">床⁠がピカピカ</strong>⁠」「⁠ワックス⁠をかけたよう⁠」⁠と絶賛⁠の声⁠が多数⁠。吸引⁠と水拭きの同時実行⁠で⁠、ホコリ⁠や髪⁠の毛⁠、足跡までしっかり除去する性能⁠が高く評価されています⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="99990" data-rank="5">
+      <tr class="rank-row" data-price="99990" data-rank="5" data-auto="yes">
         <td class="rank"><span class="rank-num">5</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/eufy-x10-pro-omni" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t2351/t2351_normal.jpg" alt="Eufy X10 Pro Omniの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Eufy X10 Pro Omni</span>
-              <span class="pmeta">Anker</span>
+              <span class="pmeta">Anker</span><span class="auto-tag no">回転モップ</span><span class="auto-tag yes">モップ自動洗浄</span>
             </span>
           </a>
         </td>
@@ -917,20 +1128,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">210</td>
         <td class="num muted">¥99,990</td>
       </tr>
-      <tr class="comment-row" data-price="99990" data-rank="5">
+      <tr class="comment-row" data-price="99990" data-rank="5" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>加圧式⁠の回転モップ⁠による水拭き性能⁠は圧倒的⁠に高評価⁠です⁠。「⁠<strong class="em-key benefit">床⁠がサラサラ</strong>⁠」「⁠<strong class="em-key benefit">ピカピカ⁠になる</strong>⁠」⁠という声⁠が多数あり⁠、汚水タンク⁠の汚れ具合からその効果⁠を実感するユーザー⁠が多いです⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>加圧式⁠の回転モップ⁠による水拭き性能⁠は圧倒的⁠に高評価⁠です⁠。「⁠<strong class="em-key benefit">床⁠がサラサラ</strong>⁠」「⁠<strong class="em-key benefit">ピカピカ⁠になる</strong>⁠」⁠という声⁠が多数あり⁠、汚水タンク⁠の汚れ具合からその効果⁠を実感するユーザー⁠が多いです⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="98800" data-rank="6">
+      <tr class="rank-row" data-price="98800" data-rank="6" data-auto="yes">
         <td class="rank"><span class="rank-num">6</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/roomba-plus-405-combo-autowash" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/03016688/20260730_brandday/260730_405c_tm.jpg" alt="Roomba® Plus 405 Combo + AutoWash™の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Roomba® Plus 405 Combo + AutoWash™</span>
-              <span class="pmeta">iRobot</span>
+              <span class="pmeta">iRobot</span><span class="auto-tag no">回転モップ</span><span class="auto-tag yes">モップ自動洗浄</span>
             </span>
           </a>
         </td>
@@ -939,20 +1150,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">179</td>
         <td class="num muted">¥98,800</td>
       </tr>
-      <tr class="comment-row" data-price="98800" data-rank="6">
+      <tr class="comment-row" data-price="98800" data-rank="6" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>「⁠<strong class="em-key benefit">床⁠がサラサラ</strong>⁠」「⁠<strong class="em-key benefit">ピカピカ⁠になる</strong>⁠」⁠と絶賛⁠の声⁠が多数⁠。特⁠に水拭き機能⁠の評価⁠が非常⁠に高く⁠、素足⁠で歩くのが快適⁠になったという意見⁠が目立ちます⁠。吸引⁠と水拭きの同時実行⁠で時短⁠にも貢献します⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>「⁠<strong class="em-key benefit">床⁠がサラサラ</strong>⁠」「⁠<strong class="em-key benefit">ピカピカ⁠になる</strong>⁠」⁠と絶賛⁠の声⁠が多数⁠。特⁠に水拭き機能⁠の評価⁠が非常⁠に高く⁠、素足⁠で歩くのが快適⁠になったという意見⁠が目立ちます⁠。吸引⁠と水拭きの同時実行⁠で時短⁠にも貢献します⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="229900" data-rank="7">
+      <tr class="rank-row" data-price="229900" data-rank="7" data-auto="yes">
         <td class="rank"><span class="rank-num">7</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/deebot-x11-omnicyclone" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/dex99-10ee.jpg" alt="DEEBOT X11 OmniCycloneの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">DEEBOT X11 OmniCyclone</span>
-              <span class="pmeta">ECOVACS</span>
+              <span class="pmeta">ECOVACS</span><span class="auto-tag no">ローラーモップ</span><span class="auto-tag yes">モップ自動洗浄</span>
             </span>
           </a>
         </td>
@@ -961,20 +1172,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">107</td>
         <td class="num muted">¥229,900</td>
       </tr>
-      <tr class="comment-row" data-price="229900" data-rank="7">
+      <tr class="comment-row" data-price="229900" data-rank="7" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>吸引力⁠と水拭き性能⁠への評価⁠が非常⁠に高く⁠、「⁠<strong class="em-key benefit">床⁠がサラサラ⁠になる</strong>⁠」⁠との声⁠が多数⁠。特⁠にフローリング⁠での清掃能力⁠は⁠、多くのユーザー⁠が<strong class="em-key benefit">満足しており</strong>⁠、微細なチリまで除去する能力⁠が確認⁠できます⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>吸引力⁠と水拭き性能⁠への評価⁠が非常⁠に高く⁠、「⁠<strong class="em-key benefit">床⁠がサラサラ⁠になる</strong>⁠」⁠との声⁠が多数⁠。特⁠にフローリング⁠での清掃能力⁠は⁠、多くのユーザー⁠が<strong class="em-key benefit">満足しており</strong>⁠、微細なチリまで除去する能力⁠が確認⁠できます⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="199980" data-rank="8">
+      <tr class="rank-row" data-price="199980" data-rank="8" data-auto="yes">
         <td class="rank"><span class="rank-num">8</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/saros-10r" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/roborockjapandirect/cabinet/products/12574614/imgrc0135010295.jpg" alt="Saros 10Rの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Saros 10R</span>
-              <span class="pmeta">Roborock</span>
+              <span class="pmeta">Roborock</span><span class="auto-tag no">回転モップ</span><span class="auto-tag yes">モップ自動洗浄</span>
             </span>
           </a>
         </td>
@@ -983,20 +1194,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">148</td>
         <td class="num muted">¥199,980</td>
       </tr>
-      <tr class="comment-row" data-price="199980" data-rank="8">
+      <tr class="comment-row" data-price="199980" data-rank="8" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>フローリング⁠の掃除性能⁠は絶賛⁠に値します⁠。「⁠<strong class="em-key benefit">床⁠がサラサラ・ピカピカ⁠になる</strong>⁠」⁠との声⁠が多数あり⁠、特⁠に水拭き機能⁠は高く評価されています⁠。こびりついた汚れ以外⁠は⁠、これ一台⁠で十分な清潔さを保てます⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>フローリング⁠の掃除性能⁠は絶賛⁠に値します⁠。「⁠<strong class="em-key benefit">床⁠がサラサラ・ピカピカ⁠になる</strong>⁠」⁠との声⁠が多数あり⁠、特⁠に水拭き機能⁠は高く評価されています⁠。こびりついた汚れ以外⁠は⁠、これ一台⁠で十分な清潔さを保てます⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="99800" data-rank="9">
+      <tr class="rank-row" data-price="99800" data-rank="9" data-auto="yes">
         <td class="rank"><span class="rank-num">9</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/l40s-pro-ultra" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/20251230173059_cp.jpg" alt="L40s Pro Ultraの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">L40s Pro Ultra</span>
-              <span class="pmeta">Dreame</span>
+              <span class="pmeta">Dreame</span><span class="auto-tag no">回転モップ</span><span class="auto-tag yes">モップ自動洗浄</span>
             </span>
           </a>
         </td>
@@ -1005,20 +1216,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">118</td>
         <td class="num muted">¥99,800</td>
       </tr>
-      <tr class="comment-row" data-price="99800" data-rank="9">
+      <tr class="comment-row" data-price="99800" data-rank="9" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>「⁠<strong class="em-key benefit">床⁠がサラサラ⁠、ピカピカ⁠になる</strong>⁠」⁠と絶賛⁠の声⁠が多数⁠。吸引⁠と水拭きの同時実行⁠で⁠、裸足⁠で歩くのが気持ち良いと感じるユーザー⁠が多い⁠。特⁠に食べこぼしや皮脂汚れも綺麗⁠になり⁠、小さな子供⁠やペット⁠がいる家庭⁠で高く評価されている⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>「⁠<strong class="em-key benefit">床⁠がサラサラ⁠、ピカピカ⁠になる</strong>⁠」⁠と絶賛⁠の声⁠が多数⁠。吸引⁠と水拭きの同時実行⁠で⁠、裸足⁠で歩くのが気持ち良いと感じるユーザー⁠が多い⁠。特⁠に食べこぼしや皮脂汚れも綺麗⁠になり⁠、小さな子供⁠やペット⁠がいる家庭⁠で高く評価されている⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="69800" data-rank="10">
+      <tr class="rank-row" data-price="69800" data-rank="10" data-auto="yes">
         <td class="rank"><span class="rank-num">10</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/l10s-ultra-gen-3" target="_blank" rel="noopener">
-            <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/l10sultragen3_cp.jpg" alt="L10s Ultra Gen 3の製品画像" loading="lazy" width="56" height="56"></span>
+            <span class="thumb"><img src="https://www.dreametech.jp/cdn/shop/files/l10s_ultra_gen_3.png?width=800" alt="L10s Ultra Gen 3の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">L10s Ultra Gen 3</span>
-              <span class="pmeta">Dreame</span>
+              <span class="pmeta">Dreame</span><span class="auto-tag no">回転モップ</span><span class="auto-tag yes">モップ自動洗浄</span>
             </span>
           </a>
         </td>
@@ -1027,20 +1238,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">84</td>
         <td class="num muted">¥69,800</td>
       </tr>
-      <tr class="comment-row" data-price="69800" data-rank="10">
+      <tr class="comment-row" data-price="69800" data-rank="10" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>水拭き性能⁠は圧倒的⁠に高評価⁠です⁠。「⁠<strong class="em-key benefit">床⁠がサラサラ・ピカピカ⁠になる</strong>⁠」⁠との声⁠が多数⁠。汚水タンク⁠の汚れを見て清掃力⁠に驚くユーザー⁠も多く⁠、裸足⁠で過ごすのが快適⁠になったと好評⁠です⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>水拭き性能⁠は圧倒的⁠に高評価⁠です⁠。「⁠<strong class="em-key benefit">床⁠がサラサラ・ピカピカ⁠になる</strong>⁠」⁠との声⁠が多数⁠。汚水タンク⁠の汚れを見て清掃力⁠に驚くユーザー⁠も多く⁠、裸足⁠で過ごすのが快適⁠になったと好評⁠です⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="149900" data-rank="11">
+      <tr class="rank-row" data-price="149900" data-rank="11" data-auto="yes">
         <td class="rank"><span class="rank-num">11</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/eufy-robot-vacuum-omni-e25" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t2353/imgrc0094500246.jpg" alt="Eufy Robot Vacuum Omni E25の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Eufy Robot Vacuum Omni E25</span>
-              <span class="pmeta">Anker</span>
+              <span class="pmeta">Anker</span><span class="auto-tag no">ローラーモップ</span><span class="auto-tag yes">モップ自動洗浄</span>
             </span>
           </a>
         </td>
@@ -1049,20 +1260,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">191</td>
         <td class="num muted">¥149,900</td>
       </tr>
-      <tr class="comment-row" data-price="149900" data-rank="11">
+      <tr class="comment-row" data-price="149900" data-rank="11" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>「⁠<strong class="em-key benefit">床⁠がサラサラ⁠になる</strong>⁠」⁠という絶賛⁠の声⁠が多数⁠。加圧式ローラーモップ⁠による水拭き性能⁠は非常⁠に高く⁠、食べこぼしや皮脂汚れも綺麗⁠になると評価されています⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>「⁠<strong class="em-key benefit">床⁠がサラサラ⁠になる</strong>⁠」⁠という絶賛⁠の声⁠が多数⁠。加圧式ローラーモップ⁠による水拭き性能⁠は非常⁠に高く⁠、食べこぼしや皮脂汚れも綺麗⁠になると評価されています⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="49800" data-rank="12">
+      <tr class="rank-row" data-price="49800" data-rank="12" data-auto="no">
         <td class="rank"><span class="rank-num">12</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/roomba-mini-autoempty" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/item_thum/br_thum/mini_ae_2nen_rank.jpg" alt="Roomba® Mini + AutoEmpty™の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Roomba® Mini + AutoEmpty™</span>
-              <span class="pmeta">iRobot</span>
+              <span class="pmeta">iRobot</span><span class="auto-tag no">パッド・シート</span>
             </span>
           </a>
         </td>
@@ -1071,20 +1282,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">139</td>
         <td class="num muted">¥49,800</td>
       </tr>
-      <tr class="comment-row" data-price="49800" data-rank="12">
+      <tr class="comment-row" data-price="49800" data-rank="12" data-auto="no">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>コンパクトな本体⁠が椅子⁠の脚⁠の間⁠や家具⁠の隙間など⁠、従来機⁠が届かなかった場所まで清掃⁠できると絶賛されています⁠。吸引力⁠も十分⁠で⁠、ホコリ⁠や髪⁠の毛⁠をしっかり除去します⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>コンパクトな本体⁠が椅子⁠の脚⁠の間⁠や家具⁠の隙間など⁠、従来機⁠が届かなかった場所まで清掃⁠できると絶賛されています⁠。吸引力⁠も十分⁠で⁠、ホコリ⁠や髪⁠の毛⁠をしっかり除去します⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="79800" data-rank="13">
+      <tr class="rank-row" data-price="79800" data-rank="13" data-auto="yes">
         <td class="rank"><span class="rank-num">13</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/qrevo-l" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/roborockjapandirect/cabinet/products/12574614/12574615/imgrc0130333896.jpg" alt="Qrevo Lの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Qrevo L</span>
-              <span class="pmeta">Roborock</span>
+              <span class="pmeta">Roborock</span><span class="auto-tag no">回転モップ</span><span class="auto-tag yes">モップ自動洗浄</span>
             </span>
           </a>
         </td>
@@ -1093,20 +1304,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">159</td>
         <td class="num muted">¥79,800</td>
       </tr>
-      <tr class="comment-row" data-price="79800" data-rank="13">
+      <tr class="comment-row" data-price="79800" data-rank="13" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>吸引⁠と回転モップ⁠による水拭きの同時実行⁠で「⁠<strong class="em-key benefit">床⁠がサラサラ⁠、ピカピカ⁠になる</strong>⁠」⁠と絶賛されています⁠。特⁠に素足⁠で生活するユーザーからの満足度⁠が非常⁠に高く⁠、製品⁠の最⁠も強力な長所⁠と言えます⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>吸引⁠と回転モップ⁠による水拭きの同時実行⁠で「⁠<strong class="em-key benefit">床⁠がサラサラ⁠、ピカピカ⁠になる</strong>⁠」⁠と絶賛されています⁠。特⁠に素足⁠で生活するユーザーからの満足度⁠が非常⁠に高く⁠、製品⁠の最⁠も強力な長所⁠と言えます⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="169800" data-rank="14">
+      <tr class="rank-row" data-price="169800" data-rank="14" data-auto="yes">
         <td class="rank"><span class="rank-num">14</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/roomba-plus-575-combo-autowash" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/03016688/20260219_review_2nen/575_aw_2nen.jpg" alt="Roomba Plus 575 Combo + AutoWashの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Roomba Plus 575 Combo + AutoWash</span>
-              <span class="pmeta">iRobot</span>
+              <span class="pmeta">iRobot</span><span class="auto-tag no">回転モップ</span><span class="auto-tag yes">モップ自動洗浄</span>
             </span>
           </a>
         </td>
@@ -1115,20 +1326,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">129</td>
         <td class="num muted">¥169,800</td>
       </tr>
-      <tr class="comment-row" data-price="169800" data-rank="14">
+      <tr class="comment-row" data-price="169800" data-rank="14" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>多くのレビュー⁠がフローリング⁠の拭き掃除性能⁠を絶賛⁠。素足⁠で歩くとサラサラ⁠、ピカピカ⁠になるとの声⁠が多数⁠。吸引⁠と水拭きの同時実行⁠で⁠、日々⁠の床掃除から解放されたと高評価⁠を得ている⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>多くのレビュー⁠がフローリング⁠の拭き掃除性能⁠を絶賛⁠。素足⁠で歩くとサラサラ⁠、ピカピカ⁠になるとの声⁠が多数⁠。吸引⁠と水拭きの同時実行⁠で⁠、日々⁠の床掃除から解放されたと高評価⁠を得ている⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="59200" data-rank="15">
+      <tr class="rank-row" data-price="59200" data-rank="15" data-auto="no">
         <td class="rank"><span class="rank-num">15</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/roomba-105-combo-autoempty" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/03016688/20260219_review_2nen/105c_ae_tm_2nen_v2.jpg" alt="Roomba® 105 Combo + AutoEmpty™の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Roomba® 105 Combo + AutoEmpty™</span>
-              <span class="pmeta">iRobot</span>
+              <span class="pmeta">iRobot</span><span class="auto-tag no">パッド・シート</span>
             </span>
           </a>
         </td>
@@ -1137,20 +1348,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">182</td>
         <td class="num muted">¥59,200</td>
       </tr>
-      <tr class="comment-row" data-price="59200" data-rank="15">
+      <tr class="comment-row" data-price="59200" data-rank="15" data-auto="no">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>フローリング⁠の掃除性能⁠は極めて高く⁠、多くの利用者⁠が吸引⁠と水拭きの同時清掃⁠による「⁠<strong class="em-key benefit">床⁠のサラサラ感</strong>⁠」⁠を絶賛しています⁠。壁際⁠や隅まで綺麗⁠にする賢いルート設計⁠も好評⁠で⁠、満足度⁠は非常⁠に高いです⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>フローリング⁠の掃除性能⁠は極めて高く⁠、多くの利用者⁠が吸引⁠と水拭きの同時清掃⁠による「⁠<strong class="em-key benefit">床⁠のサラサラ感</strong>⁠」⁠を絶賛しています⁠。壁際⁠や隅まで綺麗⁠にする賢いルート設計⁠も好評⁠で⁠、満足度⁠は非常⁠に高いです⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="109799" data-rank="16">
+      <tr class="rank-row" data-price="109799" data-rank="16" data-auto="yes">
         <td class="rank"><span class="rank-num">16</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/deebot-t50s-omni" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/ddx47-0401.jpg" alt="DEEBOT T50S OMNIの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">DEEBOT T50S OMNI</span>
-              <span class="pmeta">ECOVACS</span>
+              <span class="pmeta">ECOVACS</span><span class="auto-tag no">回転モップ</span><span class="auto-tag yes">モップ自動洗浄</span>
             </span>
           </a>
         </td>
@@ -1159,20 +1370,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">103</td>
         <td class="num muted">¥109,799</td>
       </tr>
-      <tr class="comment-row" data-price="109799" data-rank="16">
+      <tr class="comment-row" data-price="109799" data-rank="16" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>「⁠<strong class="em-key benefit">床⁠がピカピカ</strong>⁠」「⁠<strong class="em-key benefit">サラサラ⁠になる</strong>⁠」⁠と絶賛⁠の声⁠が多数⁠。吸引⁠と同時⁠に強力な水拭きを行うため⁠、素足⁠で歩くのが気持ち良いと評価されています⁠。特⁠に子育て世帯からの支持⁠が厚いです⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>「⁠<strong class="em-key benefit">床⁠がピカピカ</strong>⁠」「⁠<strong class="em-key benefit">サラサラ⁠になる</strong>⁠」⁠と絶賛⁠の声⁠が多数⁠。吸引⁠と同時⁠に強力な水拭きを行うため⁠、素足⁠で歩くのが気持ち良いと評価されています⁠。特⁠に子育て世帯からの支持⁠が厚いです⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="149799" data-rank="17">
+      <tr class="rank-row" data-price="149799" data-rank="17" data-auto="yes">
         <td class="rank"><span class="rank-num">17</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/deebot-t90-omni" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/dex96-12ee.jpg" alt="DEEBOT T90 OMNIの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">DEEBOT T90 OMNI</span>
-              <span class="pmeta">ECOVACS</span>
+              <span class="pmeta">ECOVACS</span><span class="auto-tag no">ローラーモップ</span><span class="auto-tag yes">モップ自動洗浄</span>
             </span>
           </a>
         </td>
@@ -1181,20 +1392,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">100</td>
         <td class="num muted">¥149,799</td>
       </tr>
-      <tr class="comment-row" data-price="149799" data-rank="17">
+      <tr class="comment-row" data-price="149799" data-rank="17" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>特筆すべきは水拭き性能⁠で「⁠<strong class="em-key benefit">床⁠がサラサラ⁠になる</strong>⁠」⁠と絶賛⁠の声⁠が多数⁠です⁠。ローラーモップ⁠が壁際までしっかり届き⁠、汚水⁠の黒さに清掃効果⁠を実感するユーザー⁠が多いです⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>特筆すべきは水拭き性能⁠で「⁠<strong class="em-key benefit">床⁠がサラサラ⁠になる</strong>⁠」⁠と絶賛⁠の声⁠が多数⁠です⁠。ローラーモップ⁠が壁際までしっかり届き⁠、汚水⁠の黒さに清掃効果⁠を実感するユーザー⁠が多いです⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="199800" data-rank="18">
+      <tr class="rank-row" data-price="199800" data-rank="18" data-auto="yes">
         <td class="rank"><span class="rank-num">18</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/saros-20" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/roborockjapandirect/cabinet/products/12574614/imgrc0134813006.jpg" alt="Saros 20の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Saros 20</span>
-              <span class="pmeta">Roborock</span>
+              <span class="pmeta">Roborock</span><span class="auto-tag no">回転モップ</span><span class="auto-tag yes">モップ自動洗浄</span>
             </span>
           </a>
         </td>
@@ -1203,20 +1414,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">41</td>
         <td class="num muted">¥199,800</td>
       </tr>
-      <tr class="comment-row" data-price="199800" data-rank="18">
+      <tr class="comment-row" data-price="199800" data-rank="18" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>36,000Pa⁠の強力な吸引力⁠とデュアル回転モップ⁠による水拭き性能⁠は絶賛されています⁠。「⁠<strong class="em-key benefit">床⁠がサラサラ・ピカピカ⁠になる</strong>⁠」⁠との声⁠が多数あり⁠、ホコリ⁠や髪⁠の毛⁠、皮脂汚れまでしっかり除去⁠できる点⁠が高く評価されています⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>36,000Pa⁠の強力な吸引力⁠とデュアル回転モップ⁠による水拭き性能⁠は絶賛されています⁠。「⁠<strong class="em-key benefit">床⁠がサラサラ・ピカピカ⁠になる</strong>⁠」⁠との声⁠が多数あり⁠、ホコリ⁠や髪⁠の毛⁠、皮脂汚れまでしっかり除去⁠できる点⁠が高く評価されています⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="69800" data-rank="19">
+      <tr class="rank-row" data-price="69800" data-rank="19" data-auto="no">
         <td class="rank"><span class="rank-num">19</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/deebot-n30-plus" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/ydlx11-35ee.jpg" alt="DEEBOT N30 PLUSの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">DEEBOT N30 PLUS</span>
-              <span class="pmeta">ECOVACS</span>
+              <span class="pmeta">ECOVACS</span><span class="auto-tag no">振動モップ</span>
             </span>
           </a>
         </td>
@@ -1225,20 +1436,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">186</td>
         <td class="num muted">¥69,800</td>
       </tr>
-      <tr class="comment-row" data-price="69800" data-rank="19">
+      <tr class="comment-row" data-price="69800" data-rank="19" data-auto="no">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>10000Pa⁠の強力な吸引力⁠は高く評価されており⁠、フローリング⁠のホコリ⁠や髪⁠の毛⁠をしっかり除去します⁠。掃除後⁠に床⁠が「⁠<strong class="em-key benefit">サラサラ⁠になる</strong>⁠」⁠という声⁠が多く⁠、満足度⁠は非常⁠に高いです⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>10000Pa⁠の強力な吸引力⁠は高く評価されており⁠、フローリング⁠のホコリ⁠や髪⁠の毛⁠をしっかり除去します⁠。掃除後⁠に床⁠が「⁠<strong class="em-key benefit">サラサラ⁠になる</strong>⁠」⁠という声⁠が多く⁠、満足度⁠は非常⁠に高いです⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="29800" data-rank="20">
+      <tr class="rank-row" data-price="29800" data-rank="20" data-auto="no">
         <td class="rank"><span class="rank-num">20</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/deebot-n30" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/ydlx11-32df.jpg" alt="DEEBOT N30の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">DEEBOT N30</span>
-              <span class="pmeta">ECOVACS</span>
+              <span class="pmeta">ECOVACS</span><span class="auto-tag no">振動モップ</span>
             </span>
           </a>
         </td>
@@ -1247,20 +1458,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">115</td>
         <td class="num muted">¥29,800</td>
       </tr>
-      <tr class="comment-row" data-price="29800" data-rank="20">
+      <tr class="comment-row" data-price="29800" data-rank="20" data-auto="no">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>フローリング⁠での清掃能力⁠は絶賛されており⁠、多くのレビュー⁠で「⁠吸引力⁠が強い⁠」「⁠<strong class="em-key benefit">床⁠がピカピカ⁠になる</strong>⁠」⁠と高評価⁠です⁠。髪⁠の毛⁠や微細なゴミ⁠も逃さず⁠、水拭き併用⁠でサラサラな仕上⁠がりになります⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>フローリング⁠での清掃能力⁠は絶賛されており⁠、多くのレビュー⁠で「⁠吸引力⁠が強い⁠」「⁠<strong class="em-key benefit">床⁠がピカピカ⁠になる</strong>⁠」⁠と高評価⁠です⁠。髪⁠の毛⁠や微細なゴミ⁠も逃さず⁠、水拭き併用⁠でサラサラな仕上⁠がりになります⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="39990" data-rank="21">
+      <tr class="rank-row" data-price="39990" data-rank="21" data-auto="no">
         <td class="rank"><span class="rank-num">21</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/eufy-robovac-g30-hybrid" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t2253/t2253_daily.jpg" alt="Eufy RoboVac G30 Hybridの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Eufy RoboVac G30 Hybrid</span>
-              <span class="pmeta">Anker</span>
+              <span class="pmeta">Anker</span><span class="auto-tag no">パッド・シート</span>
             </span>
           </a>
         </td>
@@ -1269,20 +1480,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">223</td>
         <td class="num muted">¥39,990</td>
       </tr>
-      <tr class="comment-row" data-price="39990" data-rank="21">
+      <tr class="comment-row" data-price="39990" data-rank="21" data-auto="no">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>フローリング⁠の掃除能力⁠は非常⁠に高く評価されています⁠。「⁠<strong class="em-key benefit">床⁠がサラサラ⁠になる</strong>⁠」「⁠ホコリ⁠や髪⁠の毛⁠をしっかり取る⁠」⁠といった声⁠が多数あり⁠、日常的な床⁠の清潔維持⁠に大きく貢献します⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>フローリング⁠の掃除能力⁠は非常⁠に高く評価されています⁠。「⁠<strong class="em-key benefit">床⁠がサラサラ⁠になる</strong>⁠」「⁠ホコリ⁠や髪⁠の毛⁠をしっかり取る⁠」⁠といった声⁠が多数あり⁠、日常的な床⁠の清潔維持⁠に大きく貢献します⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="128400" data-rank="22">
+      <tr class="rank-row" data-price="128400" data-rank="22" data-auto="yes">
         <td class="rank"><span class="rank-num">22</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/roomba-plus-505-combo-autowash" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/03016688/20260730_brandday/260730_505c.jpg" alt="Roomba® Plus 505 Combo + AutoWash™の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Roomba® Plus 505 Combo + AutoWash™</span>
-              <span class="pmeta">iRobot</span>
+              <span class="pmeta">iRobot</span><span class="auto-tag no">回転モップ</span><span class="auto-tag yes">モップ自動洗浄</span>
             </span>
           </a>
         </td>
@@ -1291,20 +1502,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">88</td>
         <td class="num muted">¥128,400</td>
       </tr>
-      <tr class="comment-row" data-price="128400" data-rank="22">
+      <tr class="comment-row" data-price="128400" data-rank="22" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>水拭き機能⁠への評価⁠は極めて高く⁠、「⁠<strong class="em-key benefit">床⁠がサラサラ</strong>⁠」「⁠<strong class="em-key benefit">ピカピカ⁠になる</strong>⁠」⁠といった声⁠が多数⁠です⁠。専用洗剤⁠を使用することで⁠、素足⁠での快適性⁠が格段⁠に向上したと実感するユーザー⁠が多いです⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>水拭き機能⁠への評価⁠は極めて高く⁠、「⁠<strong class="em-key benefit">床⁠がサラサラ</strong>⁠」「⁠<strong class="em-key benefit">ピカピカ⁠になる</strong>⁠」⁠といった声⁠が多数⁠です⁠。専用洗剤⁠を使用することで⁠、素足⁠での快適性⁠が格段⁠に向上したと実感するユーザー⁠が多いです⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="49800" data-rank="23">
+      <tr class="rank-row" data-price="49800" data-rank="23" data-auto="yes">
         <td class="rank"><span class="rank-num">23</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/deebot-mini" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/djx11-11ee.jpg" alt="DEEBOT miniの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">DEEBOT mini</span>
-              <span class="pmeta">ECOVACS</span>
+              <span class="pmeta">ECOVACS</span><span class="auto-tag no">回転モップ</span><span class="auto-tag yes">モップ自動洗浄</span>
             </span>
           </a>
         </td>
@@ -1313,20 +1524,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">84</td>
         <td class="num muted">¥49,800</td>
       </tr>
-      <tr class="comment-row" data-price="49800" data-rank="23">
+      <tr class="comment-row" data-price="49800" data-rank="23" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>「⁠<strong class="em-key benefit">床⁠がサラサラ・ピカピカ⁠になる</strong>⁠」⁠と絶賛⁠の声⁠が多数⁠。回転式⁠の加圧水拭きモップ⁠が⁠、素足⁠で歩きたくなるほどの仕上⁠がりを実現します⁠。汚水タンク⁠の汚れが清掃効果⁠を物語っています⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>「⁠<strong class="em-key benefit">床⁠がサラサラ・ピカピカ⁠になる</strong>⁠」⁠と絶賛⁠の声⁠が多数⁠。回転式⁠の加圧水拭きモップ⁠が⁠、素足⁠で歩きたくなるほどの仕上⁠がりを実現します⁠。汚水タンク⁠の汚れが清掃効果⁠を物語っています⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="179800" data-rank="24">
+      <tr class="rank-row" data-price="179800" data-rank="24" data-auto="yes">
         <td class="rank"><span class="rank-num">24</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/roomba-max-705-combo-autowash" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://m.media-amazon.com/images/I/41N6+n9f7mL._SL500_.jpg" alt="Roomba® Max 705 Combo + AutoWash™の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Roomba® Max 705 Combo + AutoWash™</span>
-              <span class="pmeta">iRobot</span>
+              <span class="pmeta">iRobot</span><span class="auto-tag no">ローラーモップ</span><span class="auto-tag yes">モップ自動洗浄</span>
             </span>
           </a>
         </td>
@@ -1335,13 +1546,13 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">167</td>
         <td class="num muted">¥179,800</td>
       </tr>
-      <tr class="comment-row" data-price="179800" data-rank="24">
+      <tr class="comment-row" data-price="179800" data-rank="24" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>水拭き性能⁠は圧倒的⁠に高評価⁠です⁠。「⁠<strong class="em-key benefit">床⁠がサラサラ</strong>⁠」「⁠<strong class="em-key benefit">ピカピカ⁠になる</strong>⁠」⁠といった声⁠が多数⁠。温水⁠とローラーモップ⁠の組み合わせで⁠、皮脂汚れや食べこぼしも綺麗⁠に除去⁠できる点⁠が支持されています⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>水拭き性能⁠は圧倒的⁠に高評価⁠です⁠。「⁠<strong class="em-key benefit">床⁠がサラサラ</strong>⁠」「⁠<strong class="em-key benefit">ピカピカ⁠になる</strong>⁠」⁠といった声⁠が多数⁠。温水⁠とローラーモップ⁠の組み合わせで⁠、皮脂汚れや食べこぼしも綺麗⁠に除去⁠できる点⁠が支持されています⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="29990" data-rank="25">
+      <tr class="rank-row" data-price="29990" data-rank="25" data-auto="no">
         <td class="rank"><span class="rank-num">25</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/eufy-robot-vacuum-auto-empty-c10" target="_blank" rel="noopener">
@@ -1357,20 +1568,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">224</td>
         <td class="num muted">¥29,990</td>
       </tr>
-      <tr class="comment-row" data-price="29990" data-rank="25">
+      <tr class="comment-row" data-price="29990" data-rank="25" data-auto="no">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>フローリング⁠のホコリ⁠や髪⁠の毛⁠、ペット⁠の毛⁠を<strong class="em-key benefit">しっかり吸引</strong>する性能⁠は高く評価されています⁠。「⁠帰宅した時⁠に床⁠がツルツル⁠」⁠との声⁠も⁠。ただし⁠、部屋⁠の隅⁠のゴミ⁠が若干残ることがあるという指摘⁠も見られます⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>フローリング⁠のホコリ⁠や髪⁠の毛⁠、ペット⁠の毛⁠を<strong class="em-key benefit">しっかり吸引</strong>する性能⁠は高く評価されています⁠。「⁠帰宅した時⁠に床⁠がツルツル⁠」⁠との声⁠も⁠。ただし⁠、部屋⁠の隅⁠のゴミ⁠が若干残ることがあるという指摘⁠も見られます⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="39800" data-rank="26">
+      <tr class="rank-row" data-price="39800" data-rank="26" data-auto="no">
         <td class="rank"><span class="rank-num">26</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/k11" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/09377790/11892401/13129054/imgrc0100726038.jpg" alt="ロボット掃除機 K11+の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">ロボット掃除機 K11+</span>
-              <span class="pmeta">SwitchBot</span>
+              <span class="pmeta">SwitchBot</span><span class="auto-tag no">パッド・シート</span>
             </span>
           </a>
         </td>
@@ -1379,20 +1590,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">195</td>
         <td class="num muted">¥39,800</td>
       </tr>
-      <tr class="comment-row" data-price="39800" data-rank="26">
+      <tr class="comment-row" data-price="39800" data-rank="26" data-auto="no">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>フローリング⁠の掃除能力⁠は非常⁠に高く評価されています⁠。髪⁠の毛⁠やホコリ⁠、ペット⁠の毛まで<strong class="em-key benefit">しっかり吸引</strong>し⁠、多くのユーザー⁠が床⁠のサラサラ感⁠を実感しています⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>フローリング⁠の掃除能力⁠は非常⁠に高く評価されています⁠。髪⁠の毛⁠やホコリ⁠、ペット⁠の毛まで<strong class="em-key benefit">しっかり吸引</strong>し⁠、多くのユーザー⁠が床⁠のサラサラ感⁠を実感しています⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="98800" data-rank="27">
+      <tr class="rank-row" data-price="98800" data-rank="27" data-auto="no">
         <td class="rank"><span class="rank-num">27</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/roomba-max-705-vac-autoempty" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/03016688/20260730_brandday/260730_705v_tm.jpg" alt="Roomba® Max 705 Vac + AutoEmpty™の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Roomba® Max 705 Vac + AutoEmpty™</span>
-              <span class="pmeta">iRobot</span>
+              <span class="pmeta">iRobot</span><span class="auto-tag no">水拭きなし</span>
             </span>
           </a>
         </td>
@@ -1401,20 +1612,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">154</td>
         <td class="num muted">¥98,800</td>
       </tr>
-      <tr class="comment-row" data-price="98800" data-rank="27">
+      <tr class="comment-row" data-price="98800" data-rank="27" data-auto="no">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>フローリング⁠の掃除性能⁠は絶賛されており⁠、髪⁠の毛⁠やホコリ⁠の<strong class="em-key demerit">取り残</strong>しはほとんど見られません⁠。多くのユーザー⁠が「⁠<strong class="em-key benefit">床⁠がサラサラ⁠になる</strong>⁠」⁠とその高い吸引力⁠と清掃能力⁠を評価しています⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>フローリング⁠の掃除性能⁠は絶賛されており⁠、髪⁠の毛⁠やホコリ⁠の<strong class="em-key demerit">取り残</strong>しはほとんど見られません⁠。多くのユーザー⁠が「⁠<strong class="em-key benefit">床⁠がサラサラ⁠になる</strong>⁠」⁠とその高い吸引力⁠と清掃能力⁠を評価しています⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="39800" data-rank="28">
+      <tr class="rank-row" data-price="39800" data-rank="28" data-auto="no">
         <td class="rank"><span class="rank-num">28</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/roomba-mini-slim-slimcharge" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/irobotstore/cabinet/03016688/20260219_review_2nen/minislim_2nen_logo.jpg" alt="Roomba® Mini Slim + SlimCharge™の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Roomba® Mini Slim + SlimCharge™</span>
-              <span class="pmeta">iRobot</span>
+              <span class="pmeta">iRobot</span><span class="auto-tag no">パッド・シート</span>
             </span>
           </a>
         </td>
@@ -1423,20 +1634,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">106</td>
         <td class="num muted">¥39,800</td>
       </tr>
-      <tr class="comment-row" data-price="39800" data-rank="28">
+      <tr class="comment-row" data-price="39800" data-rank="28" data-auto="no">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>フローリング⁠の清掃能力⁠は非常⁠に高く評価されている⁠。「⁠<strong class="em-key benefit">床⁠がピカピカ</strong>⁠」「⁠<strong class="em-key benefit">サラサラ⁠になる</strong>⁠」⁠との声⁠が多数⁠。吸引⁠と水拭きの組み合わせで⁠、素足⁠で歩くのが快適⁠になったという意見⁠が多い⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>フローリング⁠の清掃能力⁠は非常⁠に高く評価されている⁠。「⁠<strong class="em-key benefit">床⁠がピカピカ</strong>⁠」「⁠<strong class="em-key benefit">サラサラ⁠になる</strong>⁠」⁠との声⁠が多数⁠。吸引⁠と水拭きの組み合わせで⁠、素足⁠で歩くのが快適⁠になったという意見⁠が多い⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="199800" data-rank="29">
+      <tr class="rank-row" data-price="199800" data-rank="29" data-auto="yes">
         <td class="rank"><span class="rank-num">29</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/deebot-x8-pro-omni" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260717/dex56-14ee.jpg" alt="DEEBOT X8 PRO OMNIの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">DEEBOT X8 PRO OMNI</span>
-              <span class="pmeta">ECOVACS</span>
+              <span class="pmeta">ECOVACS</span><span class="auto-tag no">ローラーモップ</span><span class="auto-tag yes">モップ自動洗浄</span>
             </span>
           </a>
         </td>
@@ -1445,20 +1656,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">135</td>
         <td class="num muted">¥199,800</td>
       </tr>
-      <tr class="comment-row" data-price="199800" data-rank="29">
+      <tr class="comment-row" data-price="199800" data-rank="29" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>「⁠<strong class="em-key benefit">床⁠がサラサラ⁠、ピカピカ⁠になる</strong>⁠」⁠と水拭き性能⁠への賞賛⁠が多数⁠。汚水タンク⁠の汚れに驚く声⁠も多く⁠、目⁠に見えて清掃効果⁠を実感⁠できます⁠。吸引力⁠も高く⁠、フローリング⁠の掃除能力⁠は非常⁠に優秀⁠です⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>「⁠<strong class="em-key benefit">床⁠がサラサラ⁠、ピカピカ⁠になる</strong>⁠」⁠と水拭き性能⁠への賞賛⁠が多数⁠。汚水タンク⁠の汚れに驚く声⁠も多く⁠、目⁠に見えて清掃効果⁠を実感⁠できます⁠。吸引力⁠も高く⁠、フローリング⁠の掃除能力⁠は非常⁠に優秀⁠です⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="59980" data-rank="30">
+      <tr class="rank-row" data-price="59980" data-rank="30" data-auto="yes">
         <td class="rank"><span class="rank-num">30</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/s20" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/09377790/s20/amazon/s20.jpg" alt="お掃除ロボットS20の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">お掃除ロボットS20</span>
-              <span class="pmeta">SwitchBot</span>
+              <span class="pmeta">SwitchBot</span><span class="auto-tag no">ローラーモップ</span><span class="auto-tag yes">モップ自動洗浄</span>
             </span>
           </a>
         </td>
@@ -1467,20 +1678,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">124</td>
         <td class="num muted">¥59,980</td>
       </tr>
-      <tr class="comment-row" data-price="59980" data-rank="30">
+      <tr class="comment-row" data-price="59980" data-rank="30" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>「⁠<strong class="em-key benefit">床⁠がサラサラ・ピカピカ⁠になる</strong>⁠」⁠と絶賛⁠の声⁠が多数⁠。ローラーモップ方式⁠の水拭き性能⁠は非常⁠に高く評価されています⁠。ただし⁠、ごく一部⁠で拭き筋⁠が残るとの指摘⁠もあり⁠、完璧⁠ではないようです⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>「⁠<strong class="em-key benefit">床⁠がサラサラ・ピカピカ⁠になる</strong>⁠」⁠と絶賛⁠の声⁠が多数⁠。ローラーモップ方式⁠の水拭き性能⁠は非常⁠に高く評価されています⁠。ただし⁠、ごく一部⁠で拭き筋⁠が残るとの指摘⁠もあり⁠、完璧⁠ではないようです⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="249900" data-rank="31">
+      <tr class="rank-row" data-price="249900" data-rank="31" data-auto="yes">
         <td class="rank"><span class="rank-num">31</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/eufy-robot-vacuum-omni-s2" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/deal/202608m1/imgrc0103966655.jpg" alt="Eufy Robot Vacuum Omni S2の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Eufy Robot Vacuum Omni S2</span>
-              <span class="pmeta">Anker</span>
+              <span class="pmeta">Anker</span><span class="auto-tag no">ローラーモップ</span><span class="auto-tag yes">モップ自動洗浄</span>
             </span>
           </a>
         </td>
@@ -1489,20 +1700,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">24</td>
         <td class="num muted">¥249,900</td>
       </tr>
-      <tr class="comment-row" data-price="249900" data-rank="31">
+      <tr class="comment-row" data-price="249900" data-rank="31" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>30,000Pa⁠の圧倒的な吸引力⁠と加圧式ローラーモップ⁠が高評価⁠。フローリング⁠の微細なホコリ⁠や皮脂汚れまで除去し⁠、「⁠<strong class="em-key benefit">床⁠がサラサラ⁠になる</strong>⁠」⁠との声⁠が多数⁠。無垢床⁠でも水量⁠を調整すれば安心して使用⁠できます⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>30,000Pa⁠の圧倒的な吸引力⁠と加圧式ローラーモップ⁠が高評価⁠。フローリング⁠の微細なホコリ⁠や皮脂汚れまで除去し⁠、「⁠<strong class="em-key benefit">床⁠がサラサラ⁠になる</strong>⁠」⁠との声⁠が多数⁠。無垢床⁠でも水量⁠を調整すれば安心して使用⁠できます⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="99900" data-rank="32">
+      <tr class="rank-row" data-price="99900" data-rank="32" data-auto="yes">
         <td class="rank"><span class="rank-num">32</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/qrevo-curv-2-flow" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://m.media-amazon.com/images/I/31DRz0R5QsL._SL500_.jpg" alt="Qrevo Curv 2 Flowの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Qrevo Curv 2 Flow</span>
-              <span class="pmeta">Roborock</span>
+              <span class="pmeta">Roborock</span><span class="auto-tag no">ローラーモップ</span><span class="auto-tag yes">モップ自動洗浄</span>
             </span>
           </a>
         </td>
@@ -1511,20 +1722,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">20</td>
         <td class="num muted">¥99,900</td>
       </tr>
-      <tr class="comment-row" data-price="99900" data-rank="32">
+      <tr class="comment-row" data-price="99900" data-rank="32" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>20000Pa⁠の強力な吸引⁠とローラーモップ⁠による水拭き性能⁠は絶賛⁠の嵐⁠です⁠。素足⁠で歩くと床⁠がサラサラ⁠になるとの評価⁠が多数⁠。汚れを広げず常⁠に清水⁠で拭く仕組みが高く評価されています⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>20000Pa⁠の強力な吸引⁠とローラーモップ⁠による水拭き性能⁠は絶賛⁠の嵐⁠です⁠。素足⁠で歩くと床⁠がサラサラ⁠になるとの評価⁠が多数⁠。汚れを広げず常⁠に清水⁠で拭く仕組みが高く評価されています⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="55800" data-rank="33">
+      <tr class="rank-row" data-price="55800" data-rank="33" data-auto="yes">
         <td class="rank"><span class="rank-num">33</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/l10s-ultra-gen-2" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/l10sultragen2_cp.jpg" alt="L10s Ultra Gen 2の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">L10s Ultra Gen 2</span>
-              <span class="pmeta">Dreame</span>
+              <span class="pmeta">Dreame</span><span class="auto-tag no">回転モップ</span><span class="auto-tag yes">モップ自動洗浄</span>
             </span>
           </a>
         </td>
@@ -1533,20 +1744,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">98</td>
         <td class="num muted">¥55,800</td>
       </tr>
-      <tr class="comment-row" data-price="55800" data-rank="33">
+      <tr class="comment-row" data-price="55800" data-rank="33" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>水拭き性能⁠は絶賛されており「⁠<strong class="em-key benefit">床⁠がピカピカ</strong>⁠」「⁠<strong class="em-key benefit">裸足⁠で歩くとサラサラ</strong>⁠」⁠と高評価⁠です⁠。壁際までモップ⁠が届く機能⁠も好評⁠。吸引⁠と水拭きを同時⁠に行うことで⁠、掃除⁠の手間⁠が大幅⁠に削減されます⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>水拭き性能⁠は絶賛されており「⁠<strong class="em-key benefit">床⁠がピカピカ</strong>⁠」「⁠<strong class="em-key benefit">裸足⁠で歩くとサラサラ</strong>⁠」⁠と高評価⁠です⁠。壁際までモップ⁠が届く機能⁠も好評⁠。吸引⁠と水拭きを同時⁠に行うことで⁠、掃除⁠の手間⁠が大幅⁠に削減されます⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="99800" data-rank="34">
+      <tr class="rank-row" data-price="99800" data-rank="34" data-auto="yes">
         <td class="rank"><span class="rank-num">34</span><span class="ref-badge" title="口コミ数が少ないため参考値">参考値</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/aqua10s-roller-ae" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/13220398/20260623-153601.jpg" alt="Aqua10s Roller AEの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Aqua10s Roller AE</span>
-              <span class="pmeta">Dreame</span>
+              <span class="pmeta">Dreame</span><span class="auto-tag no">ローラーモップ</span><span class="auto-tag yes">モップ自動洗浄</span>
             </span>
           </a>
         </td>
@@ -1555,20 +1766,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">18</td>
         <td class="num muted">¥99,800</td>
       </tr>
-      <tr class="comment-row" data-price="99800" data-rank="34">
+      <tr class="comment-row" data-price="99800" data-rank="34" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>常⁠に綺麗な水⁠を供給するローラーモップ⁠が高評価⁠。皮脂汚れやベタつきも解消し⁠、床⁠がサラサラ⁠になると絶賛されています⁠。壁際まで届く伸縮機能⁠も掃除残しを減らすのに貢献しています⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>常⁠に綺麗な水⁠を供給するローラーモップ⁠が高評価⁠。皮脂汚れやベタつきも解消し⁠、床⁠がサラサラ⁠になると絶賛されています⁠。壁際まで届く伸縮機能⁠も掃除残しを減らすのに貢献しています⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="139800" data-rank="35">
+      <tr class="rank-row" data-price="139800" data-rank="35" data-auto="yes">
         <td class="rank"><span class="rank-num">35</span><span class="ref-badge" title="口コミ数が少ないため参考値">参考値</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/deebot-t90-max-omni" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/14108108/zj2633-0801.jpg" alt="T90 MAX OMNIの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">T90 MAX OMNI</span>
-              <span class="pmeta">ECOVACS</span>
+              <span class="pmeta">ECOVACS</span><span class="auto-tag no">ローラーモップ</span><span class="auto-tag yes">モップ自動洗浄</span>
             </span>
           </a>
         </td>
@@ -1577,20 +1788,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">12</td>
         <td class="num muted">¥139,800</td>
       </tr>
-      <tr class="comment-row" data-price="139800" data-rank="35">
+      <tr class="comment-row" data-price="139800" data-rank="35" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>水拭き性能⁠は絶賛されており「⁠力⁠をかけて拭いているよう⁠」「⁠しっかり床拭きされている⁠」⁠と高評価⁠です⁠。水量調整機能⁠で床⁠が濡れすぎない点⁠も⁠、日本⁠の気候⁠に適していると好評⁠を得ています⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>水拭き性能⁠は絶賛されており「⁠力⁠をかけて拭いているよう⁠」「⁠しっかり床拭きされている⁠」⁠と高評価⁠です⁠。水量調整機能⁠で床⁠が濡れすぎない点⁠も⁠、日本⁠の気候⁠に適していると好評⁠を得ています⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="69800" data-rank="36">
+      <tr class="rank-row" data-price="69800" data-rank="36" data-auto="yes">
         <td class="rank"><span class="rank-num">36</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/deebot-mini-2" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260804/djx28-01ee.jpg" alt="DEEBOT mini 2の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">DEEBOT mini 2</span>
-              <span class="pmeta">ECOVACS</span>
+              <span class="pmeta">ECOVACS</span><span class="auto-tag no">回転モップ</span><span class="auto-tag yes">モップ自動洗浄</span>
             </span>
           </a>
         </td>
@@ -1599,20 +1810,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">36</td>
         <td class="num muted">¥69,800</td>
       </tr>
-      <tr class="comment-row" data-price="69800" data-rank="36">
+      <tr class="comment-row" data-price="69800" data-rank="36" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>加圧回転式モップ⁠による水拭き性能⁠は絶賛されており⁠、「⁠<strong class="em-key benefit">床⁠がサラサラ⁠になる</strong>⁠」⁠との声⁠が多数⁠。吸引⁠と同時⁠に行うことで⁠、ベタつきや細かいホコリ⁠を効率的⁠に除去⁠できる点⁠が高く評価されています⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>加圧回転式モップ⁠による水拭き性能⁠は絶賛されており⁠、「⁠<strong class="em-key benefit">床⁠がサラサラ⁠になる</strong>⁠」⁠との声⁠が多数⁠。吸引⁠と同時⁠に行うことで⁠、ベタつきや細かいホコリ⁠を効率的⁠に除去⁠できる点⁠が高く評価されています⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="47800" data-rank="37">
+      <tr class="rank-row" data-price="47800" data-rank="37" data-auto="no">
         <td class="rank"><span class="rank-num">37</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/d20-pro" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/biccamera/cabinet/product/13219/00000014193285_a01.jpg" alt="D20 Proの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">D20 Pro</span>
-              <span class="pmeta">Dreame</span>
+              <span class="pmeta">Dreame</span><span class="auto-tag no">パッド・シート</span>
             </span>
           </a>
         </td>
@@ -1621,20 +1832,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">101</td>
         <td class="num muted">¥47,800</td>
       </tr>
-      <tr class="comment-row" data-price="47800" data-rank="37">
+      <tr class="comment-row" data-price="47800" data-rank="37" data-auto="no">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>「⁠<strong class="em-key benefit">床⁠がピカピカ</strong>⁠」「⁠<strong class="em-key benefit">サラサラ⁠になる</strong>⁠」⁠と水拭き性能⁠への高評価⁠が多数⁠。吸引⁠と同時⁠に行うことで⁠、ホコリだけでなく床⁠のざらつきも解消⁠できる点⁠が満足度⁠に繋⁠がっています⁠。汚水タンク⁠の汚れに驚く声⁠も⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>「⁠<strong class="em-key benefit">床⁠がピカピカ</strong>⁠」「⁠<strong class="em-key benefit">サラサラ⁠になる</strong>⁠」⁠と水拭き性能⁠への高評価⁠が多数⁠。吸引⁠と同時⁠に行うことで⁠、ホコリだけでなく床⁠のざらつきも解消⁠できる点⁠が満足度⁠に繋⁠がっています⁠。汚水タンク⁠の汚れに驚く声⁠も⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="199900" data-rank="38">
+      <tr class="rank-row" data-price="199900" data-rank="38" data-auto="yes">
         <td class="rank"><span class="rank-num">38</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/eufy-robot-vacuum-omni-s1-pro" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/tmb/t/t2080_normal.jpg" alt="Eufy Robot Vacuum Omni S1 Proの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Eufy Robot Vacuum Omni S1 Pro</span>
-              <span class="pmeta">Anker</span>
+              <span class="pmeta">Anker</span><span class="auto-tag no">ローラーモップ</span><span class="auto-tag yes">モップ自動洗浄</span>
             </span>
           </a>
         </td>
@@ -1643,20 +1854,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">102</td>
         <td class="num muted">¥199,900</td>
       </tr>
-      <tr class="comment-row" data-price="199900" data-rank="38">
+      <tr class="comment-row" data-price="199900" data-rank="38" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>加圧式⁠のローラーモップ⁠による水拭き性能⁠は絶賛されており⁠、「⁠<strong class="em-key benefit">床⁠がサラサラ⁠になる</strong>⁠」⁠との声⁠が多数⁠です⁠。走行しながらモップ⁠を洗浄するため⁠、常⁠に清潔な状態⁠で拭き掃除⁠ができる点⁠が高く評価されています⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>加圧式⁠のローラーモップ⁠による水拭き性能⁠は絶賛されており⁠、「⁠<strong class="em-key benefit">床⁠がサラサラ⁠になる</strong>⁠」⁠との声⁠が多数⁠です⁠。走行しながらモップ⁠を洗浄するため⁠、常⁠に清潔な状態⁠で拭き掃除⁠ができる点⁠が高く評価されています⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="149800" data-rank="39">
+      <tr class="rank-row" data-price="149800" data-rank="39" data-auto="yes">
         <td class="rank"><span class="rank-num">39</span><span class="ref-badge" title="口コミ数が少ないため参考値">参考値</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/x50-ultra" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/x50ultra_cp.jpg" alt="X50 Ultraの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">X50 Ultra</span>
-              <span class="pmeta">Dreame</span>
+              <span class="pmeta">Dreame</span><span class="auto-tag no">回転モップ</span><span class="auto-tag yes">モップ自動洗浄</span>
             </span>
           </a>
         </td>
@@ -1665,20 +1876,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">17</td>
         <td class="num muted">¥149,800</td>
       </tr>
-      <tr class="comment-row" data-price="149800" data-rank="39">
+      <tr class="comment-row" data-price="149800" data-rank="39" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>20,000Pa⁠の強力な吸引力⁠と回転モップ⁠による水拭き性能⁠は絶賛されています⁠。「⁠<strong class="em-key benefit">床⁠がサラサラ・ツルツル⁠になる</strong>⁠」⁠との声⁠が多数あり⁠、ホコリ⁠やペット⁠の毛⁠、床⁠のべたつきまで一度⁠に解決⁠できる点⁠が高く評価されています⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>20,000Pa⁠の強力な吸引力⁠と回転モップ⁠による水拭き性能⁠は絶賛されています⁠。「⁠<strong class="em-key benefit">床⁠がサラサラ・ツルツル⁠になる</strong>⁠」⁠との声⁠が多数あり⁠、ホコリ⁠やペット⁠の毛⁠、床⁠のべたつきまで一度⁠に解決⁠できる点⁠が高く評価されています⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="139799" data-rank="40">
+      <tr class="rank-row" data-price="139799" data-rank="40" data-auto="yes">
         <td class="rank"><span class="rank-num">40</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/deebot-t80s-omni" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260804/dex62-0402.jpg" alt="DEEBOT T80S OMNIの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">DEEBOT T80S OMNI</span>
-              <span class="pmeta">ECOVACS</span>
+              <span class="pmeta">ECOVACS</span><span class="auto-tag no">ローラーモップ</span><span class="auto-tag yes">モップ自動洗浄</span>
             </span>
           </a>
         </td>
@@ -1687,20 +1898,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">21</td>
         <td class="num muted">¥139,799</td>
       </tr>
-      <tr class="comment-row" data-price="139799" data-rank="40">
+      <tr class="comment-row" data-price="139799" data-rank="40" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>水拭き性能⁠は絶賛されており⁠、「⁠<strong class="em-key benefit">床⁠がピカピカ</strong>⁠」「⁠ホコリ⁠が本当⁠になくなる⁠」⁠と高評価⁠です⁠。専用洗剤⁠を使うとさらに床⁠がサラサラ⁠になるとの声⁠も多く⁠、フローリング中心⁠の家庭⁠では満足度⁠が非常⁠に高いです⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>水拭き性能⁠は絶賛されており⁠、「⁠<strong class="em-key benefit">床⁠がピカピカ</strong>⁠」「⁠ホコリ⁠が本当⁠になくなる⁠」⁠と高評価⁠です⁠。専用洗剤⁠を使うとさらに床⁠がサラサラ⁠になるとの声⁠も多く⁠、フローリング中心⁠の家庭⁠では満足度⁠が非常⁠に高いです⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="49980" data-rank="41">
+      <tr class="rank-row" data-price="49980" data-rank="41" data-auto="no">
         <td class="rank"><span class="rank-num">41</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/q7b-plus" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/roborockjapandirect/cabinet/products/12574614/imgrc0133862310.jpg" alt="Q7B+の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Q7B+</span>
-              <span class="pmeta">Roborock</span>
+              <span class="pmeta">Roborock</span><span class="auto-tag no">パッド・シート</span>
             </span>
           </a>
         </td>
@@ -1709,13 +1920,13 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">71</td>
         <td class="num muted">¥49,980</td>
       </tr>
-      <tr class="comment-row" data-price="49980" data-rank="41">
+      <tr class="comment-row" data-price="49980" data-rank="41" data-auto="no">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>吸引⁠と水拭きの同時実行⁠が高く評価されており⁠、「⁠<strong class="em-key benefit">ピカピカ⁠になる</strong>⁠」「⁠素足⁠の感触⁠が違う⁠」⁠と満足⁠の声⁠が多数⁠。フローリング⁠の目地⁠に沿った掃除機能⁠も好評だ⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>吸引⁠と水拭きの同時実行⁠が高く評価されており⁠、「⁠<strong class="em-key benefit">ピカピカ⁠になる</strong>⁠」「⁠素足⁠の感触⁠が違う⁠」⁠と満足⁠の声⁠が多数⁠。フローリング⁠の目地⁠に沿った掃除機能⁠も好評だ⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="20800" data-rank="42">
+      <tr class="rank-row" data-price="20800" data-rank="42" data-auto="unknown">
         <td class="rank"><span class="rank-num">42</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/d9-max-gen-2" target="_blank" rel="noopener">
@@ -1731,20 +1942,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">34</td>
         <td class="num muted">¥20,800</td>
       </tr>
-      <tr class="comment-row" data-price="20800" data-rank="42">
+      <tr class="comment-row" data-price="20800" data-rank="42" data-auto="unknown">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>6,000Pa⁠の強力な吸引力⁠が高く評価されており⁠、「⁠<strong class="em-key benefit">床⁠がサラサラ⁠になる</strong>⁠」⁠と満足⁠の声⁠が多数⁠です⁠。水拭き機能⁠も日常的な汚れには十分⁠で⁠、価格以上⁠の清掃能力⁠を持つと好評⁠です⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>6,000Pa⁠の強力な吸引力⁠が高く評価されており⁠、「⁠<strong class="em-key benefit">床⁠がサラサラ⁠になる</strong>⁠」⁠と満足⁠の声⁠が多数⁠です⁠。水拭き機能⁠も日常的な汚れには十分⁠で⁠、価格以上⁠の清掃能力⁠を持つと好評⁠です⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="65780" data-rank="43">
+      <tr class="rank-row" data-price="65780" data-rank="43" data-auto="yes">
         <td class="rank"><span class="rank-num">43</span><span class="ref-badge" title="口コミ数が少ないため参考値">参考値</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/qrevo-c" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/yamada-denki/cabinet/a07000441/1385763016.jpg" alt="Qrevo Cの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Qrevo C</span>
-              <span class="pmeta">Roborock</span>
+              <span class="pmeta">Roborock</span><span class="auto-tag no">回転モップ</span><span class="auto-tag yes">モップ自動洗浄</span>
             </span>
           </a>
         </td>
@@ -1753,20 +1964,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">18</td>
         <td class="num muted">¥65,780</td>
       </tr>
-      <tr class="comment-row" data-price="65780" data-rank="43">
+      <tr class="comment-row" data-price="65780" data-rank="43" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>水拭き性能⁠への評価⁠が特⁠に高く⁠、子供⁠の食べこぼしや床⁠のベタつきも綺麗⁠になると好評⁠です⁠。汚水タンク⁠の水⁠を見て⁠、汚れ落ちを実感する声⁠も多く⁠、満足度⁠は非常⁠に高い項目⁠です⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>水拭き性能⁠への評価⁠が特⁠に高く⁠、子供⁠の食べこぼしや床⁠のベタつきも綺麗⁠になると好評⁠です⁠。汚水タンク⁠の水⁠を見て⁠、汚れ落ちを実感する声⁠も多く⁠、満足度⁠は非常⁠に高い項目⁠です⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="29999" data-rank="44">
+      <tr class="rank-row" data-price="29999" data-rank="44" data-auto="no">
         <td class="rank"><span class="rank-num">44</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/q10v" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://m.media-amazon.com/images/I/313-K0HeIRL._SL500_.jpg" alt="Q10Vの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Q10V</span>
-              <span class="pmeta">Roborock</span>
+              <span class="pmeta">Roborock</span><span class="auto-tag no">振動モップ</span>
             </span>
           </a>
         </td>
@@ -1775,20 +1986,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">51</td>
         <td class="num muted">¥29,999</td>
       </tr>
-      <tr class="comment-row" data-price="29999" data-rank="44">
+      <tr class="comment-row" data-price="29999" data-rank="44" data-auto="no">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>10,000Pa⁠の強力な吸引力⁠と高振動水拭き機能⁠は絶賛されています⁠。「⁠<strong class="em-key benefit">床⁠がサラサラ⁠になる</strong>⁠」「⁠ゴミ⁠をしっかり吸い取る⁠」など⁠、基本的な清掃能力⁠は非常⁠に高く評価されています⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>10,000Pa⁠の強力な吸引力⁠と高振動水拭き機能⁠は絶賛されています⁠。「⁠<strong class="em-key benefit">床⁠がサラサラ⁠になる</strong>⁠」「⁠ゴミ⁠をしっかり吸い取る⁠」など⁠、基本的な清掃能力⁠は非常⁠に高く評価されています⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="43999" data-rank="45">
+      <tr class="rank-row" data-price="43999" data-rank="45" data-auto="no">
         <td class="rank"><span class="rank-num">45</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/q10v-plus" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://m.media-amazon.com/images/I/319BCGeg7ZL._SL500_.jpg" alt="Q10V+の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Q10V+</span>
-              <span class="pmeta">Roborock</span>
+              <span class="pmeta">Roborock</span><span class="auto-tag no">振動モップ</span>
             </span>
           </a>
         </td>
@@ -1797,20 +2008,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">43</td>
         <td class="num muted">¥43,999</td>
       </tr>
-      <tr class="comment-row" data-price="43999" data-rank="45">
+      <tr class="comment-row" data-price="43999" data-rank="45" data-auto="no">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>フローリング⁠の掃除性能⁠は非常⁠に高く評価されています⁠。強力な吸引力⁠と適切な水拭きにより⁠、床⁠がサラサラ⁠になるとの好意的な意見⁠が多数寄せられており⁠、満足度⁠の高い項目⁠です⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>フローリング⁠の掃除性能⁠は非常⁠に高く評価されています⁠。強力な吸引力⁠と適切な水拭きにより⁠、床⁠がサラサラ⁠になるとの好意的な意見⁠が多数寄せられており⁠、満足度⁠の高い項目⁠です⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="68800" data-rank="46">
+      <tr class="rank-row" data-price="68800" data-rank="46" data-auto="no">
         <td class="rank"><span class="rank-num">46</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/d20-pro-plus" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/20250609195227_1.jpg" alt="D20 Pro Plusの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">D20 Pro Plus</span>
-              <span class="pmeta">Dreame</span>
+              <span class="pmeta">Dreame</span><span class="auto-tag no">パッド・シート</span>
             </span>
           </a>
         </td>
@@ -1819,20 +2030,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">106</td>
         <td class="num muted">¥68,800</td>
       </tr>
-      <tr class="comment-row" data-price="68800" data-rank="46">
+      <tr class="comment-row" data-price="68800" data-rank="46" data-auto="no">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>多くのレビュー⁠が水拭き性能⁠を高く評価しており⁠、「⁠<strong class="em-key benefit">床⁠がサラサラ・ピカピカ⁠になる</strong>⁠」⁠との声⁠が多数⁠。吸引力⁠も十分⁠で⁠、日常的なホコリ⁠や髪⁠の毛⁠をしっかり除去してくれます⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>多くのレビュー⁠が水拭き性能⁠を高く評価しており⁠、「⁠<strong class="em-key benefit">床⁠がサラサラ・ピカピカ⁠になる</strong>⁠」⁠との声⁠が多数⁠。吸引力⁠も十分⁠で⁠、日常的なホコリ⁠や髪⁠の毛⁠をしっかり除去してくれます⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="89990" data-rank="47">
+      <tr class="rank-row" data-price="89990" data-rank="47" data-auto="yes">
         <td class="rank"><span class="rank-num">47</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/qrevo-l-pro" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://m.media-amazon.com/images/I/3196WRRWVZL._SL500_.jpg" alt="Qrevo L Proの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Qrevo L Pro</span>
-              <span class="pmeta">Roborock</span>
+              <span class="pmeta">Roborock</span><span class="auto-tag no">回転モップ</span><span class="auto-tag yes">モップ自動洗浄</span>
             </span>
           </a>
         </td>
@@ -1841,20 +2052,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">32</td>
         <td class="num muted">¥89,990</td>
       </tr>
-      <tr class="comment-row" data-price="89990" data-rank="47">
+      <tr class="comment-row" data-price="89990" data-rank="47" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>水拭き性能⁠は絶賛されており「⁠<strong class="em-key benefit">床⁠がサラサラ⁠になる</strong>⁠」⁠との声⁠が多数⁠。回転モップ⁠による拭き掃除能力⁠は本機⁠の最大⁠の強みです⁠。ただし⁠、壁際数センチ⁠は拭き残しが発生する構造的な弱点⁠も指摘されています⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>水拭き性能⁠は絶賛されており「⁠<strong class="em-key benefit">床⁠がサラサラ⁠になる</strong>⁠」⁠との声⁠が多数⁠。回転モップ⁠による拭き掃除能力⁠は本機⁠の最大⁠の強みです⁠。ただし⁠、壁際数センチ⁠は拭き残しが発生する構造的な弱点⁠も指摘されています⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="94800" data-rank="48">
+      <tr class="rank-row" data-price="94800" data-rank="48" data-auto="yes">
         <td class="rank"><span class="rank-num">48</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/x30-ultra" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/11006786/imgrc0151417959.jpg" alt="X30 Ultraの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">X30 Ultra</span>
-              <span class="pmeta">Dreame</span>
+              <span class="pmeta">Dreame</span><span class="auto-tag no">回転モップ</span><span class="auto-tag yes">モップ自動洗浄</span>
             </span>
           </a>
         </td>
@@ -1863,20 +2074,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">27</td>
         <td class="num muted">¥94,800</td>
       </tr>
-      <tr class="comment-row" data-price="94800" data-rank="48">
+      <tr class="comment-row" data-price="94800" data-rank="48" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>「⁠<strong class="em-key benefit">床⁠がサラサラ⁠で気持ちいい</strong>⁠」「⁠<strong class="em-key benefit">揚げ物⁠の油⁠もきれいになった</strong>⁠」など⁠、床掃除⁠の品質⁠は絶賛されています⁠。吸引⁠と水拭きの組み合わせで⁠、素足⁠で歩きたくなる仕上⁠がりが高評価⁠です⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>「⁠<strong class="em-key benefit">床⁠がサラサラ⁠で気持ちいい</strong>⁠」「⁠<strong class="em-key benefit">揚げ物⁠の油⁠もきれいになった</strong>⁠」など⁠、床掃除⁠の品質⁠は絶賛されています⁠。吸引⁠と水拭きの組み合わせで⁠、素足⁠で歩きたくなる仕上⁠がりが高評価⁠です⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="163900" data-rank="49">
+      <tr class="rank-row" data-price="163900" data-rank="49" data-auto="yes">
         <td class="rank"><span class="rank-num">49</span><span class="ref-badge" title="口コミ数が少ないため参考値">参考値</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/qrevo-edge-2" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://m.media-amazon.com/images/I/31srwUOD6cL._SL500_.jpg" alt="Qrevo Edge 2の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">Qrevo Edge 2</span>
-              <span class="pmeta">Roborock</span>
+              <span class="pmeta">Roborock</span><span class="auto-tag no">回転モップ</span><span class="auto-tag yes">モップ自動洗浄</span>
             </span>
           </a>
         </td>
@@ -1885,20 +2096,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">19</td>
         <td class="num muted">¥163,900</td>
       </tr>
-      <tr class="comment-row" data-price="163900" data-rank="49">
+      <tr class="comment-row" data-price="163900" data-rank="49" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>吸引力⁠と水拭き性能⁠は非常⁠に高く評価されており⁠、多くの利用者⁠が床⁠がサラサラ⁠になる効果⁠を実感しています⁠。ただし⁠、壁際⁠の動きが非効率的⁠で掃除残しがあるとの指摘⁠も一部⁠で見られました⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>吸引力⁠と水拭き性能⁠は非常⁠に高く評価されており⁠、多くの利用者⁠が床⁠がサラサラ⁠になる効果⁠を実感しています⁠。ただし⁠、壁際⁠の動きが非効率的⁠で掃除残しがあるとの指摘⁠も一部⁠で見られました⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="159800" data-rank="50">
+      <tr class="rank-row" data-price="159800" data-rank="50" data-auto="yes">
         <td class="rank"><span class="rank-num">50</span><span class="ref-badge" title="口コミ数が少ないため参考値">参考値</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/deebot-t90-pro-omni" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/14108108/dex95-12ee.jpg" alt="T90 PRO OMNIの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">T90 PRO OMNI</span>
-              <span class="pmeta">ECOVACS</span>
+              <span class="pmeta">ECOVACS</span><span class="auto-tag no">ローラーモップ</span><span class="auto-tag yes">モップ自動洗浄</span>
             </span>
           </a>
         </td>
@@ -1907,20 +2118,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">18</td>
         <td class="num muted">¥159,800</td>
       </tr>
-      <tr class="comment-row" data-price="159800" data-rank="50">
+      <tr class="comment-row" data-price="159800" data-rank="50" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>「⁠裸足⁠で歩いたときの<strong class="em-key benefit">サラサラ</strong>感⁠が劇的⁠に向上⁠」など⁠、加圧回転式⁠のローラーモップ⁠による水拭き性能⁠は絶賛されています⁠。キッチン⁠の油汚れやこびりつきにも強く⁠、床⁠の清潔さを実感⁠できます⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>「⁠裸足⁠で歩いたときの<strong class="em-key benefit">サラサラ</strong>感⁠が劇的⁠に向上⁠」など⁠、加圧回転式⁠のローラーモップ⁠による水拭き性能⁠は絶賛されています⁠。キッチン⁠の油汚れやこびりつきにも強く⁠、床⁠の清潔さを実感⁠できます⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="34800" data-rank="51">
+      <tr class="rank-row" data-price="34800" data-rank="51" data-auto="no">
         <td class="rank"><span class="rank-num">51</span><span class="ref-badge" title="口コミ数が少ないため参考値">参考値</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/f20-plus" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/13111094/imgrc0155930361.jpg" alt="F20 Plusの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">F20 Plus</span>
-              <span class="pmeta">Dreame</span>
+              <span class="pmeta">Dreame</span><span class="auto-tag no">パッド・シート</span>
             </span>
           </a>
         </td>
@@ -1929,20 +2140,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">11</td>
         <td class="num muted">¥34,800</td>
       </tr>
-      <tr class="comment-row" data-price="34800" data-rank="51">
+      <tr class="comment-row" data-price="34800" data-rank="51" data-auto="no">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>フローリング⁠の掃除性能⁠は高く評価されています⁠。吸引⁠と水拭きを同時⁠に行い⁠、目⁠に見えるゴミだけでなく⁠、床⁠のべたつきも解消してくれる点⁠に満足⁠の声⁠が多数あります⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>フローリング⁠の掃除性能⁠は高く評価されています⁠。吸引⁠と水拭きを同時⁠に行い⁠、目⁠に見えるゴミだけでなく⁠、床⁠のべたつきも解消してくれる点⁠に満足⁠の声⁠が多数あります⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="64800" data-rank="52">
+      <tr class="rank-row" data-price="64800" data-rank="52" data-auto="no">
         <td class="rank"><span class="rank-num">52</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/k10-pro" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/rikusyouya/cabinet/11351708/12526999/imgrc0101203443.jpg" alt="ロボット掃除機 K10+ Proの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">ロボット掃除機 K10+ Pro</span>
-              <span class="pmeta">SwitchBot</span>
+              <span class="pmeta">SwitchBot</span><span class="auto-tag no">パッド・シート</span>
             </span>
           </a>
         </td>
@@ -1951,20 +2162,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">202</td>
         <td class="num muted">¥64,800</td>
       </tr>
-      <tr class="comment-row" data-price="64800" data-rank="52">
+      <tr class="comment-row" data-price="64800" data-rank="52" data-auto="no">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>小型ボディ⁠を活かし⁠、家具⁠の隙間⁠や部屋⁠の隅まで清掃⁠できると高評価⁠です⁠。吸引力⁠も日常的なホコリ⁠や髪⁠の毛⁠には十分⁠ですが⁠、一部⁠で大きめのゴミ⁠の取りこぼしが指摘されています⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>小型ボディ⁠を活かし⁠、家具⁠の隙間⁠や部屋⁠の隅まで清掃⁠できると高評価⁠です⁠。吸引力⁠も日常的なホコリ⁠や髪⁠の毛⁠には十分⁠ですが⁠、一部⁠で大きめのゴミ⁠の取りこぼしが指摘されています⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="21600" data-rank="53">
+      <tr class="rank-row" data-price="21600" data-rank="53" data-auto="no">
         <td class="rank"><span class="rank-num">53</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/d10-plus" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/11302689/imgrc0140534087.jpg" alt="D10 Plusの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">D10 Plus</span>
-              <span class="pmeta">Dreame</span>
+              <span class="pmeta">Dreame</span><span class="auto-tag no">パッド・シート</span>
             </span>
           </a>
         </td>
@@ -1973,20 +2184,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">34</td>
         <td class="num muted">¥21,600</td>
       </tr>
-      <tr class="comment-row" data-price="21600" data-rank="53">
+      <tr class="comment-row" data-price="21600" data-rank="53" data-auto="no">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>フローリング⁠やクッションフロア⁠での清掃能力⁠は高く評価されています⁠。「⁠<strong class="em-key demerit">チリ⁠や埃⁠が残らない</strong>⁠」⁠との声⁠があり⁠、多くの利用者⁠が満足しています⁠。吸引力⁠も十分⁠で⁠、日常的な床掃除⁠は安心して<strong class="em-key benefit">任せられます</strong>⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>フローリング⁠やクッションフロア⁠での清掃能力⁠は高く評価されています⁠。「⁠<strong class="em-key demerit">チリ⁠や埃⁠が残らない</strong>⁠」⁠との声⁠があり⁠、多くの利用者⁠が満足しています⁠。吸引力⁠も十分⁠で⁠、日常的な床掃除⁠は安心して<strong class="em-key benefit">任せられます</strong>⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="49800" data-rank="54">
+      <tr class="rank-row" data-price="49800" data-rank="54" data-auto="yes">
         <td class="rank"><span class="rank-num">54</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/s10" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/09377790/s10/imgrc0080562316.jpg" alt="お掃除ロボットS10の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">お掃除ロボットS10</span>
-              <span class="pmeta">SwitchBot</span>
+              <span class="pmeta">SwitchBot</span><span class="auto-tag no">ローラーモップ</span><span class="auto-tag yes">モップ自動洗浄</span>
             </span>
           </a>
         </td>
@@ -1995,20 +2206,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">125</td>
         <td class="num muted">¥49,800</td>
       </tr>
-      <tr class="comment-row" data-price="49800" data-rank="54">
+      <tr class="comment-row" data-price="49800" data-rank="54" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>正常⁠に動作すれば⁠、水拭き性能⁠は非常⁠に高く評価されている⁠。多くのユーザー⁠が「⁠<strong class="em-key benefit">床⁠がサラサラ⁠になる</strong>⁠」⁠と満足⁠。ただし⁠、水漏れやモップ⁠の異臭問題⁠も一部⁠で指摘されている⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>正常⁠に動作すれば⁠、水拭き性能⁠は非常⁠に高く評価されている⁠。多くのユーザー⁠が「⁠<strong class="em-key benefit">床⁠がサラサラ⁠になる</strong>⁠」⁠と満足⁠。ただし⁠、水漏れやモップ⁠の異臭問題⁠も一部⁠で指摘されている⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="55800" data-rank="55">
+      <tr class="rank-row" data-price="55800" data-rank="55" data-auto="yes">
         <td class="rank"><span class="rank-num">55</span><span class="ref-badge" title="口コミ数が少ないため参考値">参考値</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/l40-ultra-ce" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/vlookupstore/cabinet/g/74/e9zp2dns07-1.jpg" alt="L40 Ultra CEの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">L40 Ultra CE</span>
-              <span class="pmeta">Dreame</span>
+              <span class="pmeta">Dreame</span><span class="auto-tag no">回転モップ</span><span class="auto-tag yes">モップ自動洗浄</span>
             </span>
           </a>
         </td>
@@ -2017,20 +2228,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">17</td>
         <td class="num muted">¥55,800</td>
       </tr>
-      <tr class="comment-row" data-price="55800" data-rank="55">
+      <tr class="comment-row" data-price="55800" data-rank="55" data-auto="yes">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>13,000Pa⁠の強力な吸引力⁠で⁠、フローリング⁠のホコリ⁠やゴミ⁠をしっかり除去するとの評価⁠が多数⁠。ただし⁠、コーヒー粉など特定⁠のゴミ⁠を吸わないという厳しい意見⁠も1件ありました⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>13,000Pa⁠の強力な吸引力⁠で⁠、フローリング⁠のホコリ⁠やゴミ⁠をしっかり除去するとの評価⁠が多数⁠。ただし⁠、コーヒー粉など特定⁠のゴミ⁠を吸わないという厳しい意見⁠も1件ありました⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="19800" data-rank="56">
+      <tr class="rank-row" data-price="19800" data-rank="56" data-auto="no">
         <td class="rank"><span class="rank-num">56</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/e5" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://m.media-amazon.com/images/I/41H5Fv-yLRL._SL500_.jpg" alt="E5の製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">E5</span>
-              <span class="pmeta">Roborock</span>
+              <span class="pmeta">Roborock</span><span class="auto-tag no">パッド・シート</span>
             </span>
           </a>
         </td>
@@ -2039,20 +2250,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">31</td>
         <td class="num muted">¥19,800</td>
       </tr>
-      <tr class="comment-row" data-price="19800" data-rank="56">
+      <tr class="comment-row" data-price="19800" data-rank="56" data-auto="no">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>吸引⁠と水拭きの同時実行⁠は高く評価されており⁠、「⁠<strong class="em-key benefit">ピカピカ⁠になる</strong>⁠」⁠との声⁠が多数あります⁠。ただし⁠、水拭き時⁠に水⁠の入れすぎで漏れるという指摘⁠もあり⁠、水量⁠の調整⁠には<strong class="em-key demerit">注意⁠が必要</strong>⁠です⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>吸引⁠と水拭きの同時実行⁠は高く評価されており⁠、「⁠<strong class="em-key benefit">ピカピカ⁠になる</strong>⁠」⁠との声⁠が多数あります⁠。ただし⁠、水拭き時⁠に水⁠の入れすぎで漏れるという指摘⁠もあり⁠、水量⁠の調整⁠には<strong class="em-key demerit">注意⁠が必要</strong>⁠です⁠。</p>
         </td>
       </tr>
-      <tr class="rank-row" data-price="49800" data-rank="57">
+      <tr class="rank-row" data-price="49800" data-rank="57" data-auto="no">
         <td class="rank"><span class="rank-num">57</span></td>
         <td class="product">
           <a class="product-link" href="https://nattoku-labo.com/products/k11-pro" target="_blank" rel="noopener">
             <span class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/13479056/mainbg2.jpg" alt="ロボット掃除機 K11+ Proの製品画像" loading="lazy" width="56" height="56"></span>
             <span class="pinfo">
               <span class="pname">ロボット掃除機 K11+ Pro</span>
-              <span class="pmeta">SwitchBot</span>
+              <span class="pmeta">SwitchBot</span><span class="auto-tag no">パッド・シート</span>
             </span>
           </a>
         </td>
@@ -2061,10 +2272,10 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <td class="num muted">26</td>
         <td class="num muted">¥49,800</td>
       </tr>
-      <tr class="comment-row" data-price="49800" data-rank="57">
+      <tr class="comment-row" data-price="49800" data-rank="57" data-auto="no">
         <td class="comment-spacer" aria-hidden="true"></td>
         <td class="comment-cell" colspan="5">
-          <p class="floor-comment"><span class="floor-comment-label">フローリング清掃の口コミ傾向</span>多くのユーザー⁠はホコリ⁠や髪⁠の毛⁠を<strong class="em-key benefit">しっかり吸引</strong>すると評価⁠。しかし一部⁠では⁠、取りこぼしや髪⁠の毛⁠を吸わないとの指摘⁠もあり⁠、評価⁠が分かれる⁠。コンパクトな本体⁠で狭い場所⁠に入れる点⁠は好評だ⁠。</p>
+          <p class="floor-comment"><span class="floor-comment-label">水拭き・フローリングの口コミ傾向</span>多くのユーザー⁠はホコリ⁠や髪⁠の毛⁠を<strong class="em-key benefit">しっかり吸引</strong>すると評価⁠。しかし一部⁠では⁠、取りこぼしや髪⁠の毛⁠を吸わないとの指摘⁠もあり⁠、評価⁠が分かれる⁠。コンパクトな本体⁠で狭い場所⁠に入れる点⁠は好評だ⁠。</p>
         </td>
       </tr>
             </tbody>
@@ -2074,6 +2285,20 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <p class="empty-msg" id="empty-msg">この価格帯に該当する製品はありません。</p>
       </section>
 
+      <section class="method">
+        <h2>このランキングの見方</h2>
+        <p>「⁠<strong class="em-key benefit">水拭きで床⁠がサラサラ⁠になる</strong>⁠」「⁠髪⁠の毛⁠やホコリ⁠がしっかり取れる⁠」⁠といった口コミ⁠を点数化し⁠、フローリング掃除（⁠水拭き・吸引⁠）⁠の評価⁠で並べています⁠。点数⁠は水拭きだけでなく⁠、フローリング⁠のゴミ⁠の吸い取りも含めた評価⁠です⁠。口コミ⁠の信頼度⁠も加味するので⁠、実体験⁠に近いおすすめ順⁠になっています⁠。表⁠の各製品⁠には⁠、水拭きや床⁠の仕上⁠がりに関する<strong class="em-key">口コミ傾向</strong>⁠も記載しているので⁠、点数だけでなく具体的な声⁠も比較⁠できます⁠。</p>
+        <p class="method-sub">
+          ランキングの式：<code>水拭き・フローリング点数 × 0.85 ＋ 口コミ信頼度 × 0.15</code>
+        </p>
+        <p class="method-sub">口コミ⁠が10件未満⁠の11機種⁠は⁠、点数⁠が安定しないためこのランキング⁠に載せていません⁠。20件未満⁠の機種⁠は「⁠参考値⁠」⁠と表示しています⁠。</p>
+        <p class="method-sub">集計の元データ：Amazon・楽天市場に投稿された公開レビューです。文章は転載せず、内容を分類して点数にしています。</p>
+      </section>
+<div class="article"><section class="article-sec" id="mop-type"><h2>水拭きのモップは4つの方式</h2><p>ロボット掃除機⁠の水拭きは⁠、モップ⁠の動かし方⁠で大きく4つの方式⁠に分かれます⁠。掲載57機種⁠のうち⁠、水拭きができるのは54機種⁠です（⁠Roomba® Max 705 Vac + AutoEmpty™⁠は水拭き機能⁠がありません⁠）⁠。</p><div class="table-scroll"><table class="mini">
+          <thead><tr><th>モップの方式</th><th>機種数</th><th>価格の中央値</th><th>水拭き・床の平均点</th></tr></thead>
+          <tbody><tr><td><strong>ローラーモップ</strong><br><small>回転するローラーで床をこすりながら、ステーションや本体でローラーを洗い続ける方式です。ベタつきや乾いた汚れを取りやすく、上位機種に多い方式です。</small></td><td class="num">16機種</td><td class="num">¥149,799</td><td class="num">96.0点</td></tr><tr><td><strong>回転モップ</strong><br><small>円形のモップを2枚回転させて、床に押し付けながら拭く方式です。壁際や家具の脚まわりでモップを伸ばせる機種もあります。</small></td><td class="num">20機種</td><td class="num">¥99,800</td><td class="num">96.0点</td></tr><tr><td><strong>振動モップ</strong><br><small>板状のモップを細かく振動させて、床をこすって拭く方式です。</small></td><td class="num">4機種</td><td class="num">¥43,999</td><td class="num">95.2点</td></tr><tr><td><strong>パッド・シート</strong><br><small>固定のモップパッドや使い捨てシートで床を拭く方式です。安い機種に多く、毎日の軽い汚れ取り向きです。</small></td><td class="num">14機種</td><td class="num">¥47,800</td><td class="num">92.7点</td></tr></tbody></table></div><p>口コミ⁠の点数⁠の平均⁠は<strong class="em-key">回転モップ⁠とローラーモップ⁠がともに96.0点⁠で最⁠も高く</strong>⁠、パッド・シート⁠は92.7点⁠でした⁠。ただし方式ごとに価格帯⁠も違うため⁠、<strong class="em-key">予算⁠の中⁠でどの方式⁠を選べるか</strong>⁠で考えるのが現実的⁠です⁠。</p></section><section class="article-sec" id="mop-station"><h2>モップを洗う・乾かす手間はステーションで変わる</h2><p>水拭きで手間⁠がかかるのは⁠、<strong class="em-key">モップ⁠を洗う・乾かす作業</strong>⁠です⁠。ステーション⁠がどこまで自動⁠で行うかは機種⁠によって違うので⁠、メーカー⁠が公表しているスペック⁠で比べました⁠。</p><div class="table-scroll"><table class="mini">
+          <thead><tr><th>ステーションの機能</th><th>付いている機種</th><th>口コミ50件以上で最も安い機種</th></tr></thead>
+          <tbody><tr><td>モップの自動洗浄</td><td class="num">36/54機種</td><td><a href="/products/deebot-mini">DEEBOT mini</a>（¥49,800）</td></tr><tr><td>温水でのモップ洗浄</td><td class="num">20/52機種</td><td><a href="/products/deebot-t80-omni">DEEBOT T80 OMNI</a>（¥99,800）</td></tr><tr><td>モップの温風乾燥</td><td class="num">34/54機種</td><td><a href="/products/deebot-mini">DEEBOT mini</a>（¥49,800）</td></tr><tr><td>洗剤の自動投入</td><td class="num">17/53機種</td><td><a href="/products/s10">お掃除ロボットS10</a>（¥49,800）</td></tr></tbody></table></div><p><strong class="em-key">モップ⁠を乾かす機能⁠がない機種⁠は⁠、濡れたモップ⁠が臭いやすい</strong>⁠ので⁠、こまめに外して洗う必要⁠があります⁠。毎日水拭きするなら⁠、自動洗浄⁠と乾燥まで付いた機種⁠を選ぶと手間⁠がかなり減ります⁠。</p></section><section class="article-sec" id="mop-carpet"><h2>カーペットがある家はモップの持ち上げを確認</h2><p>ラグ⁠やカーペット⁠がある家⁠では⁠、水拭き中⁠にカーペット⁠を濡らさない仕組みが大切⁠です⁠。モップ⁠を持ち上げる機能（⁠メーカー公表⁠）⁠があるのは54機種⁠のうち28機種⁠、モップ⁠をステーション⁠で自動⁠で取り外せるのはSaros 10R・L40s Pro Ultra・Saros 20・X50 Ultra・X30 Ultra⁠の5機種⁠です⁠。持ち上げの高さは機種⁠によって違い⁠、毛足⁠の長いラグ⁠では持ち上げても触れることがあります⁠。カーペット⁠の掃除⁠の評価⁠は<a href="/rankings/carpet-cleaning">カーペット・ラグランキング</a>⁠で比べられます⁠。</p></section><section class="article-sec" id="mop-voices"><h2>口コミで多い水拭きの声</h2><p>各機種⁠の口コミ⁠をまとめたコメント⁠のうち⁠、57機種中47機種⁠で水拭きやモップ⁠に触れています⁠。よく出てくる内容⁠は「⁠床⁠がサラサラ・ピカピカ⁠になる⁠」（⁠49機種⁠）⁠、「⁠髪⁠の毛・ホコリ⁠の取れ具合⁠」（⁠19機種⁠）⁠、「⁠ベタつき・皮脂汚れが取れる⁠」（⁠11機種⁠）⁠です⁠。気⁠になる点⁠がある機種⁠は⁠、ランキング表⁠のコメント⁠で同じ悩みの声⁠を探してください⁠。</p></section><section class="article-sec" id="mop-tips"><h2>水拭きを上手に使うコツ</h2><ul class="tips"><li><strong class="em-key">先⁠に床⁠のモノ⁠を片付ける</strong>：コード⁠や小物⁠があるとモップ⁠が引っかかりやすく⁠、拭き残しの原因⁠になります⁠。</li><li><strong class="em-key">水量⁠はアプリ⁠で部屋ごとに変える</strong>：フローリング⁠は少なめ⁠、キッチンなど汚れやすい場所⁠は多めにすると⁠、水跡⁠やムラ⁠を防ぎやすくなります⁠。</li><li><strong class="em-key">無垢材⁠や水⁠に弱い床⁠は取扱説明書⁠を確認する</strong>：床材⁠によっては水拭きを勧めていない場合⁠があります⁠。</li><li><strong class="em-key">モップ⁠は定期的⁠に交換する</strong>：使い続けると汚れが落ちにくくなり⁠、臭いの原因⁠にもなります⁠。交換⁠の目安⁠はメーカー⁠の案内⁠を確認してください⁠。</li></ul><p class="mid-cta"><a class="btn-sub" href="#price-check">水拭きの評価が高い機種の価格を見る ▼</a></p></section><section class="article-sec faq" id="faq"><h2>よくある質問</h2><details><summary>水拭きがいちばん得意なロボット掃除機はどれですか？</summary><div class="faq-a"><p>口コミ50件以上⁠の機種⁠で順位⁠が最⁠も高いのは⁠、DEEBOT T80 OMNI（⁠水拭き・床97点・口コミ596件・1位⁠）⁠です⁠。点数⁠は水拭きとフローリング⁠のゴミ⁠の取れ具合⁠をあわせた口コミ評価⁠です⁠。</p></div></details><details><summary>安いロボット掃除機でも水拭きはできますか？</summary><div class="faq-a"><p>できます⁠。口コミ50件以上⁠で5万円以下⁠の機種⁠では⁠、Q10P+（⁠¥44,800⁠）⁠の評価⁠が最⁠も高く⁠、98点⁠です⁠。ただし安い機種⁠はモップ⁠を手⁠で洗う方式⁠が多いので⁠、手間⁠も含めて考えてください⁠。</p></div></details><details><summary>ローラーモップと回転モップはどちらがいいですか？</summary><div class="faq-a"><p>ローラーモップ⁠は床⁠をこすりながらローラー⁠を洗い続けるので⁠、ベタつきなどの汚れに強いのが特長⁠です⁠。回転モップ⁠は押し付ける力⁠が強く⁠、壁際⁠でモップ⁠を伸ばせる機種⁠もあります⁠。口コミ⁠の評価⁠が高いのは⁠、ローラーモップ⁠ではDEEBOT T80 OMNI（⁠97点⁠）⁠、回転モップ⁠ではDEEBOT T50 OMNI（⁠97点⁠）⁠です⁠。</p></div></details><details><summary>カーペットがあっても水拭きできますか？</summary><div class="faq-a"><p>モップ⁠を持ち上げる機能⁠がある機種なら⁠、カーペット⁠の上⁠ではモップ⁠を上げて掃除⁠できます（⁠掲載機種⁠のうち28機種⁠）⁠。毛足⁠の長いラグ⁠では触れることもあるので⁠、気⁠になる場合⁠はアプリ⁠でラグ⁠を進入禁止⁠にするか⁠、モップ⁠を自動⁠で取り外せる機種⁠を選ぶと安心⁠です⁠。</p></div></details><details><summary>水拭きだけのロボットと、吸引と水拭きの両方ができる機種はどちらがいいですか？</summary><div class="faq-a"><p>当サイト⁠で比べているのは⁠、吸引⁠と水拭きの両方⁠ができる機種⁠です⁠。ゴミ⁠を吸ってから拭くので⁠、1台⁠で床掃除⁠をまとめて任せたい場合⁠に向いています⁠。</p></div></details></section><section class="article-sec" id="data"><h2>データについて</h2><p>水拭き・床⁠の点数⁠は⁠、ECサイト⁠の口コミ⁠のうちフローリング掃除（⁠水拭き・吸引⁠）⁠に触れたものを分析して数値化した値⁠です⁠。順位⁠は「⁠水拭き・フローリング点数×0.85＋口コミ信頼度×0.15⁠」⁠で決めています⁠。口コミ⁠が10件未満⁠の機種⁠は点数⁠が安定しないため載せておらず⁠、20件未満⁠の機種⁠は「⁠参考値⁠」⁠と表示しています⁠。</p><p>モップ⁠の方式・持ち上げ・ステーション⁠の機能⁠は⁠、各メーカー⁠の公式サイト・取扱説明書⁠で確認した内容⁠です⁠。方式⁠は当サイト⁠で4つに分けたもので⁠、メーカー⁠の呼び方⁠とは違う場合⁠があります⁠。</p></section></div>
 
       <section class="top-cards" id="price-check" aria-label="上位10製品">
         <h2>上位10製品</h2>
@@ -2092,7 +2317,7 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
             </div>
           </div>
           <div class="aff-card-stats">
-            <span>フローリング <strong>97</strong></span>
+            <span>水拭き・床 <strong>97</strong></span>
             <span>口コミ信頼度 <strong>92.5</strong></span>
             <span>口コミ <strong>596</strong></span>
             
@@ -2114,7 +2339,7 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
             </div>
           </div>
           <div class="aff-card-stats">
-            <span>フローリング <strong>98</strong></span>
+            <span>水拭き・床 <strong>98</strong></span>
             <span>口コミ信頼度 <strong>81.1</strong></span>
             <span>口コミ <strong>97</strong></span>
             
@@ -2136,7 +2361,7 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
             </div>
           </div>
           <div class="aff-card-stats">
-            <span>フローリング <strong>97</strong></span>
+            <span>水拭き・床 <strong>97</strong></span>
             <span>口コミ信頼度 <strong>85.9</strong></span>
             <span>口コミ <strong>225</strong></span>
             
@@ -2158,7 +2383,7 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
             </div>
           </div>
           <div class="aff-card-stats">
-            <span>フローリング <strong>98</strong></span>
+            <span>水拭き・床 <strong>98</strong></span>
             <span>口コミ信頼度 <strong>79.3</strong></span>
             <span>口コミ <strong>92</strong></span>
             
@@ -2180,7 +2405,7 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
             </div>
           </div>
           <div class="aff-card-stats">
-            <span>フローリング <strong>97</strong></span>
+            <span>水拭き・床 <strong>97</strong></span>
             <span>口コミ信頼度 <strong>85.3</strong></span>
             <span>口コミ <strong>210</strong></span>
             
@@ -2202,7 +2427,7 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
             </div>
           </div>
           <div class="aff-card-stats">
-            <span>フローリング <strong>97</strong></span>
+            <span>水拭き・床 <strong>97</strong></span>
             <span>口コミ信頼度 <strong>84.7</strong></span>
             <span>口コミ <strong>179</strong></span>
             
@@ -2224,7 +2449,7 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
             </div>
           </div>
           <div class="aff-card-stats">
-            <span>フローリング <strong>97</strong></span>
+            <span>水拭き・床 <strong>97</strong></span>
             <span>口コミ信頼度 <strong>82.3</strong></span>
             <span>口コミ <strong>107</strong></span>
             
@@ -2246,7 +2471,7 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
             </div>
           </div>
           <div class="aff-card-stats">
-            <span>フローリング <strong>97</strong></span>
+            <span>水拭き・床 <strong>97</strong></span>
             <span>口コミ信頼度 <strong>82.0</strong></span>
             <span>口コミ <strong>148</strong></span>
             
@@ -2268,7 +2493,7 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
             </div>
           </div>
           <div class="aff-card-stats">
-            <span>フローリング <strong>97</strong></span>
+            <span>水拭き・床 <strong>97</strong></span>
             <span>口コミ信頼度 <strong>81.1</strong></span>
             <span>口コミ <strong>118</strong></span>
             
@@ -2280,7 +2505,7 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         </article>
         <article class="aff-card" id="price-l10s-ultra-gen-3" data-slug="l10s-ultra-gen-3">
           <div class="aff-card-head">
-            <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/dreame-shop/cabinet/biiino/item/main-image/l10sultragen3_cp.jpg" alt="" width="56" height="56" loading="lazy">
+            <img src="https://www.dreametech.jp/cdn/shop/files/l10s_ultra_gen_3.png?width=800" alt="" width="56" height="56" loading="lazy">
             <div>
               <div class="aff-card-title">
                 <span class="aff-card-rank">10</span>
@@ -2290,7 +2515,7 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
             </div>
           </div>
           <div class="aff-card-stats">
-            <span>フローリング <strong>97</strong></span>
+            <span>水拭き・床 <strong>97</strong></span>
             <span>口コミ信頼度 <strong>78.7</strong></span>
             <span>口コミ <strong>84</strong></span>
             
@@ -2315,12 +2540,12 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
         <section>
           <h2>ほかのランキング・比較</h2>
           <div class="related">
-            <a href="/rankings/carpet-cleaning">カーペット掃除ランキング</a><a href="/rankings/quietness">静音性ランキング</a><a href="/rankings/step-climbing">段差ランキング</a>
+            <a href="/rankings/carpet-cleaning">カーペット・ラグランキング</a><a href="/rankings/quietness">静音性ランキング</a><a href="/rankings/step-climbing">段差ランキング</a>
             <a href="/rankings/">ランキング一覧</a>
             <a href="/compare/">価格帯比較</a>
           </div>
           <div class="related" style="margin-top:0.65rem">
-            <a href="/compare/robot-vacuum-under-5man">〜5万円</a>
+            <a href="/guides/robot-vacuum-cheap">〜5万円</a>
             <a href="/compare/robot-vacuum-5-7man">5〜7万円</a>
             <a href="/compare/robot-vacuum-7-10man">7〜10万円</a>
             <a href="/compare/robot-vacuum-10-15man">10〜15万円</a>
@@ -2342,10 +2567,13 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
     </div>
     <p style="margin-top:0.65rem">ナットクLabo · 更新 2026-11-03</p>
   </footer>
+  <div class="sticky-cta" id="sticky-cta" hidden><a href="#price-deebot-t80-omni">DEEBOT T80 OMNIの価格を見る</a><a class="sticky-sub" href="#price-check">上位の価格一覧</a></div>
   <script src="/products/js/navigation.js?v=20261005a"></script>
   <script>
 (function () {
-  const chips = document.querySelectorAll(".filter-chip");
+  const chips = document.querySelectorAll(".filter-chip:not(.auto-chip)");
+  const autoChips = document.querySelectorAll(".auto-chip");
+  let curMin = 0, curMax = Infinity, curAuto = "all";
   const rows = document.querySelectorAll("#ranking-table tbody tr.rank-row, #ranking-table tbody tr.comment-row");
   const countEl = document.getElementById("filter-count");
   const emptyEl = document.getElementById("empty-msg");
@@ -2434,10 +2662,12 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
   }
 
   function applyFilter(min, max) {
+    curMin = min; curMax = max;
     let shown = 0;
     rows.forEach(function (row) {
       const price = Number(row.getAttribute("data-price") || 0);
-      const ok = price >= min && price < max;
+      const auto = row.getAttribute("data-auto");
+      const ok = price >= min && price < max && (curAuto === "all" || auto === curAuto);
       row.style.display = ok ? "" : "none";
       if (ok && row.classList.contains("rank-row")) shown += 1;
     });
@@ -2455,6 +2685,15 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
       const maxRaw = chip.getAttribute("data-max");
       const max = maxRaw === "Infinity" ? Infinity : Number(maxRaw);
       applyFilter(min, max);
+    });
+  });
+
+  autoChips.forEach(function (chip) {
+    chip.addEventListener("click", function () {
+      autoChips.forEach(function (c) { c.classList.remove("active"); });
+      chip.classList.add("active");
+      curAuto = chip.getAttribute("data-auto") || "all";
+      applyFilter(curMin, curMax);
     });
   });
 
@@ -2644,6 +2883,23 @@ tr.top-3 .floor-comment { background: #fff7ed; border-color: #fed7aa; }
   }
 
   document.querySelectorAll(".aff-card[data-slug]").forEach(mountCard);
+})();
+</script><script>
+(function () {
+  var bar = document.getElementById("sticky-cta");
+  var picks = document.getElementById("picks");
+  var prices = document.getElementById("price-check");
+  if (!bar || !picks || !prices || !("IntersectionObserver" in window)) return;
+  var pastPicks = false, pricesVisible = false;
+  function update() { bar.hidden = !(pastPicks && !pricesVisible); }
+  new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) { pastPicks = !e.isIntersecting && e.boundingClientRect.top < 0; });
+    update();
+  }).observe(picks);
+  new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) { pricesVisible = e.isIntersecting; });
+    update();
+  }).observe(prices);
 })();
 </script>
 </body>

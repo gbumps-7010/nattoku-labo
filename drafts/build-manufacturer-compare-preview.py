@@ -182,6 +182,9 @@ def load_manufacturer(mfr_id: str) -> list[dict]:
         d = json.loads(path.read_text(encoding="utf-8"))
         if not isinstance(d, dict) or d.get("manufacturer") != mfr_id:
             continue
+        # 管理表で HP掲載 を外した製品（hpPublish: false）は載せない
+        if (d.get("affiliate") or {}).get("hpPublish") is False:
+            continue
         if not d.get("price"):
             continue
         perf = d.get("performanceAnalysis") or {}
@@ -1058,7 +1061,7 @@ def build_know_box(brand_ja: str, n: int) -> str:
     return f"""
         <div class="know" aria-labelledby="know-heading">
           <h2 id="know-heading">この記事でわかること</h2>
-          <p class="know-note">{format_prose("２大ECサイトのすべての口コミを分析した結果を紹介します！")}</p>
+          <p class="know-note">{format_prose("Amazon・楽天市場の口コミを分析した結果を紹介します！")}</p>
           <ul class="know-list">
             <li class="know-item">
               <span class="know-num" aria-hidden="true">1</span>

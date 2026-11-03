@@ -156,3 +156,11 @@ Claude 作業後:
 - specs・dims（roborock.json）・seo-overrides・purchase-flow（E5・Q7 Max を ecNotOfficial に）を追加
 - 再生成：メーカー（Roborock 14機種、5〜7万円のおすすめが Qrevo C・口コミ18件で参考値の注記つき）、価格帯（〜5万円 22製品、5〜7万円 10製品）、ガイド（cheap・height・makers・small・thin）、ランキング（57製品。Q7T+ 2件・Q7 Max 9件は除外）
 - 安いガイドの「1万円台の機種は分析していません」を、2万円未満の機種があるときはその機種を挙げる文に変更
+
+## 口コミの出典を明記（2026-11-03 ユーザー決定）
+
+- 「2大ECサイト／２大ECサイト」を **「Amazon・楽天市場」** に置換（compare・guides・makers の本文と meta、生成元 `generate-compare-band-pages.js` / `generate-guide-articles.py` / `drafts/build-manufacturer-compare-preview.py`、強調語リスト `format-prose.js`×2・`format_prose.py`）。メーカーの「すべての口コミ」は誇張になるため「口コミ」に。
+- 製品ページ69件：「口コミの信頼度」の件数の直下に `p.review-source-note`（集計の元データ：Amazon・楽天市場の公開レビュー／文章は転載せず分類・集計）。**新製品ページも既存ページを雛形にすればこの一文が入る**。
+- ランキング：「このランキングの見方」に同趣旨の一文（生成元に追加済み）。
+- about：分析アプローチ01を「Amazon・楽天市場の口コミ横断分析」に、「口コミデータの出典と扱い方」ボックス（出典・転載しない・除外・非公認）を追加。
+- 方針：title・h1・ロゴには出さない。口コミ本文の転載、サイト別の星評価表示、aggregateRating はしない。

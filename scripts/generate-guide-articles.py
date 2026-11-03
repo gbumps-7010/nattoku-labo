@@ -30,6 +30,7 @@ mp = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(mp)
 
 DATA_DIR = ROOT / "products" / "data"
+SPECS_DIR = DATA_DIR / "specs"
 DIMS_DIR = ROOT / "scripts" / "data" / "dims"
 CONS_DIR = ROOT / "scripts" / "data" / "consumables"
 OUT_DIR = ROOT / "guides"
@@ -157,8 +158,45 @@ def load_products() -> list[dict]:
             r["dim_sources"] = d.get("sources") or []
             r["dim_note"] = (d.get("note") or "").strip()
             r["dim_checked"] = d.get("checkedAt") or ""
+            sp_path = SPECS_DIR / f"{r['id']}.json"
+            sp = json.loads(sp_path.read_text(encoding="utf-8")) if sp_path.exists() else {}
+            sp_st = sp.get("station") or {}
+            r["auto_empty"] = sp_st.get("autoEmpty") if sp else None
+            r["mop_wash"] = sp_st.get("mopWash") if sp else None
+            r["mapping"] = ((sp.get("cleaning") or {}).get("mappingType") or "").strip()
             rows.append(r)
     return rows
+
+
+def has_3d_avoid(r: dict) -> bool | None:
+    """前方の障害物を立体的に捉えるセンサー（3D構造化ライト・ストラクチャードライト・AIカメラ）があるか。
+    「AIカメラなし」「記載なし」などの否定の書き方は除いてから判定する。"""
+    t = r.get("avoid") or ""
+    if not t:
+        return None
+    if t.startswith("なし"):
+        return False
+    t = re.sub(r"（[^（）]*(?:なし|非搭載)[^（）]*）", "", t)
+    t = t.replace("※カメラなし", "")
+    return bool(re.search(r"構造化ライト|構造光|ストラクチャードライト|カメラ|3D|RGB", t))
+
+
+def is_gyro(r: dict) -> bool | None:
+    m = r.get("mapping") or ""
+    if not m:
+        return None
+    return "ジャイロ" in m
+
+
+def share(rows: list[dict], fn) -> tuple[int, int]:
+    """(搭載している機種数, 判定できた機種数)"""
+    vals = [fn(r) for r in rows]
+    known = [v for v in vals if v is not None]
+    return sum(1 for v in known if v), len(known)
+
+
+def share_txt(hit: int, total: int) -> str:
+    return f"{hit}/{total}機種（{round(hit * 100 / total)}%）" if total else "—"
 
 
 def reliable(rows: list[dict]) -> list[dict]:
@@ -449,7 +487,7 @@ def know_box(items: list[tuple[str, str]]) -> str:
     return f"""
         <div class="know" aria-labelledby="know-heading">
           <h2 id="know-heading">この記事でわかること</h2>
-          <p class="know-note">{prose("２大ECサイトの口コミ分析と、メーカー公表のスペックをもとに解説します。")}</p>
+          <p class="know-note">{prose("Amazon・楽天市場の口コミ分析と、メーカー公表のスペックをもとに解説します。")}</p>
           <ul class="know-list">{''.join(lis)}</ul>
         </div>"""
 
@@ -931,7 +969,7 @@ def related_html(current: str) -> str:
 
 def notes_html(extra: list[str], sources_rows: list[dict] | None = None) -> str:
     base = [
-        "点数は２大ECサイトの口コミを分析した値です。実機で計測した値ではありません。",
+        "点数はAmazon・楽天市場の口コミを分析した値です。実機で計測した値ではありません。",
         "総合点は「8つの性能の平均点×0.85＋口コミ信頼度×0.15」で、製品ページと同じ計算です。",
         f"口コミが{MIN_REVIEWS}件未満の製品は点数が揺れやすいため、おすすめ機種からは外し、比較表に「口コミ少」と表示しています。",
         "価格はメーカー公式ストアの販売価格（調査時点）です。セールで変わるため、購入前に販売ページで確認してください。",
@@ -1809,9 +1847,86 @@ def build_cheap(rows: list[dict]) -> dict:
         if a is not None and b is not None:
             diffs.append((label, a, b, round(b - a, 1)))
     diffs.sort(key=lambda x: -x[3])
+    purpose_rows = []
+    rel_pool = reliable(cheap)
+    for k, need in [
+        ("floor", "フローリングをきれいにしたい"),
+        ("carpet", "カーペット・ラグも掃除したい"),
+        ("pet", "ペットの毛が多い"),
+        ("quiet", "運転音が気になる"),
+        ("step", "段差・敷居が多い"),
+        ("maint", "お手入れを楽にしたい"),
+    ]:
+        cands = sorted([r for r in rel_pool if r[k] is not None], key=lambda r: (-r[k], -r["overall"], -r["reviews"]))
+        if cands:
+            b = cands[0]
+            purpose_rows.append([
+                html.escape(need), f'<a href="/products/{b["id"]}">{html.escape(b["name"])}</a>', yen_note(b),
+                f"{AXIS_LABEL[k]} {b[k]:.0f}点", f"{b['reviews']}件",
+            ])
+    most_reviewed = max(rel_pool, key=lambda r: r["reviews"]) if rel_pool else None
     few = [r for r in cheap if r["reviews"] < MIN_REVIEWS]
     weak = [r for r in reliable(cheap) if (r["carpet"] is not None and r["carpet"] < 60) or (r["step"] is not None and r["step"] < 65)]
     mop_reviewed = [r for r in reliable(cheap) if "水拭き" in r["floor_comment_full"]]
+    diff_of = {l: d for l, a, b, d in diffs}
+    last_l, last_d = diffs[-1][0], diffs[-1][3]
+
+    def spread(k: str) -> str:
+        vals = [r[k] for r in reliable(cheap) if r[k] is not None]
+        return f"{min(vals):.0f}〜{max(vals):.0f}点" if vals else "—"
+    last_txt = (
+        f"{last_l}は安い機種のほうが平均点がやや高く（{abs(last_d):.1f}点）"
+        if last_d < 0
+        else f"{last_l}は差が小さく（{last_d:+.1f}点）"
+    )
+
+    features = [
+        ("自動ゴミ収集", lambda r: r.get("auto_empty")),
+        ("モップの自動洗浄", lambda r: r.get("mop_wash")),
+        ("レーザーで部屋の地図を作る", lambda r: None if is_gyro(r) is None else not is_gyro(r)),
+        ("前方の障害物を立体的に検知（3Dセンサー・AIカメラ）", has_3d_avoid),
+    ]
+    feat_rows = []
+    for label, fn in features:
+        a, b = share(cheap, fn), share(others, fn)
+        feat_rows.append([label, share_txt(*a), share_txt(*b)])
+    rel_cheap = sorted(reliable(cheap), key=lambda r: r["price"])
+    auto_cheap = [r for r in rel_cheap if r.get("auto_empty") is True]
+    wash_cheap = [r for r in rel_cheap if r.get("mop_wash") is True]
+    avoid_cheap = [r for r in rel_cheap if has_3d_avoid(r)]
+    gyro_cheap = [r for r in cheap if is_gyro(r)]
+
+    def cheapest_txt(rs: list[dict], what: str) -> str:
+        if not rs:
+            return ""
+        r = rs[0]
+        return f"口コミ{MIN_REVIEWS}件以上で**{what}の最安は{plink(r)}（{yen_note(r)}）**です。"
+
+    sec_features = [
+        P(
+            "口コミの点数とは別に、メーカーが公表しているスペックから、**価格で差が出やすい機能**の搭載率を比べました。"
+        ),
+        mini_table(["機能", "5万円以下", "5万円超"], feat_rows),
+        P(
+            "**自動ゴミ収集は、5万円以下でも多くの機種に付いています**。"
+            + cheapest_txt(auto_cheap, "自動ゴミ収集付き")
+            + "ゴミ捨ての手間を減らしたいだけなら、5万円以下でも十分に選べます。"
+        ),
+        P(
+            "一方、**モップの自動洗浄と、障害物を立体的に見分けるセンサーは、5万円を超える機種が中心**です。"
+            + cheapest_txt(wash_cheap, "モップ自動洗浄付き")
+            + cheapest_txt(avoid_cheap, "3Dセンサー・AIカメラ付き")
+            + "床にケーブルや小物が多い家や、水拭きまで全自動にしたい家では、5万円超の機種も候補に入れると選びやすくなります。"
+        ),
+        (
+            P(
+                f"なお、{join_ja([plink(r) for r in gyro_cheap])}はレーザーではなく**ジャイロセンサーで走行する機種**です。"
+                "部屋の地図を作って部屋ごとに掃除する、といった使い方には向かないため、間取りが広い家では注意してください。"
+            )
+            if gyro_cheap
+            else ""
+        ),
+    ]
 
     sec_market = [
         P(
@@ -1827,7 +1942,7 @@ def build_cheap(rows: list[dict]) -> dict:
         ),
         P(
             f"**差が大きいのは{diffs[0][0]}と{diffs[1][0]}**です。"
-            f"反対に**{diffs[-1][0]}は差が小さく**、安い機種でも十分な評価を得ています。"
+            f"反対に**{last_txt}**、安い機種でも十分な評価を得ています。"
             "安いモデルを選ぶときは、差が出やすい性能が自分の家で重要かどうかを考えると失敗しにくくなります。"
         ),
     ]
@@ -1840,8 +1955,17 @@ def build_cheap(rows: list[dict]) -> dict:
             + (f"5万円以下で口コミが{MIN_REVIEWS}件未満の機種は{join_ja([f'{r['name']}（{r['reviews']}件）' for r in few])}です。" if few else ""),
         ),
         (
-            "カーペットや段差が多い家は要注意",
-            "安い機種は、**カーペットの清掃や段差の乗り越えで評価が分かれやすい**傾向があります。"
+            "カーペットや段差は機種ごとに確認する",
+            (
+                f"5万円超の機種との平均点の差は、カーペットが{diff_of['カーペット']:+.1f}点、段差が{diff_of['段差']:+.1f}点で、"
+                "**平均すると大きな差はありません**。"
+                if "カーペット" in diff_of and "段差" in diff_of
+                else ""
+            )
+            + (
+                f"ただし、口コミ{MIN_REVIEWS}件以上の機種でも、カーペットは{spread('carpet')}、段差は{spread('step')}と**機種ごとに幅がある**ので、"
+                "カーペットや段差が多い家では点数を個別に確認してください。"
+            )
             + (f"口コミ{MIN_REVIEWS}件以上の機種のうち、カーペット60点未満または段差65点未満なのは{join_ja([f'{r['name']}' for r in weak])}です。" if weak else ""),
         ),
         (
@@ -1898,6 +2022,18 @@ def build_cheap(rows: list[dict]) -> dict:
             + "価格だけで選ぶと、口コミが少なく評価が安定しない機種に当たることもあるため、**口コミの件数もあわせて確認する**のがおすすめです。",
         ),
         (
+            "5万円以下で自動ゴミ収集付きの機種はありますか？",
+            (
+                f"あります。口コミ{MIN_REVIEWS}件以上では"
+                + join_ja([f"{plink(r)}（{yen_note(r)}）" for r in auto_cheap[:4]])
+                + "などです。"
+                + "紙パックなどの消耗品が別にかかるので、"
+                + f"{gl('robot-vacuum-cost-performance')}で維持費もあわせて確認してください。"
+            )
+            if auto_cheap
+            else "5万円以下で自動ゴミ収集付きの機種は、口コミが十分にある機種のなかにはまだありません。",
+        ),
+        (
             "安いロボット掃除機でも水拭きはできますか？",
             (f"5万円以下でも、口コミで**水拭きが評価されている機種があります**（{join_ja([plink(r) for r in mop_reviewed[:5]])}など）。" if mop_reviewed else "")
             + "ただし、モップの自動洗浄まで付いた全自動モデルは**5万円を超える機種が中心**です。",
@@ -1905,22 +2041,22 @@ def build_cheap(rows: list[dict]) -> dict:
         (
             "安い機種と高い機種のいちばんの違いは何ですか？",
             f"口コミの点数で差が大きいのは**{diffs[0][0]}と{diffs[1][0]}**です（平均{diffs[0][3]:+.1f}点差・{diffs[1][3]:+.1f}点差）。"
-            f"一方、{diffs[-1][0]}の差は{diffs[-1][3]:+.1f}点で、安い機種でも十分な評価を得ています。",
+            f"一方、{last_txt}、安い機種でも十分な評価を得ています。",
         ),
         (
             "セールで安く買える時期はありますか？",
             "**大手ECサイトの大型セール**（Amazonのプライムデーやブラックフライデー、楽天市場のスーパーセールなど）では、ロボット掃除機も値下げされることがあります。"
-            "本記事の価格はメーカー公式ストアの通常の販売価格なので、購入前に最新価格を確認してください。",
+            "本記事の価格は確認した時点の販売価格で、セール中は大きく変わることがあるため、購入前に最新価格を確認してください。",
         ),
     ]
 
     summary = f"""
         <div class="summary-box">
           {P(f"5万円以下でも、口コミの評価が高いロボット掃除機はあります。総合点で選ぶなら**{plink(picks[0])}が最有力**です。")}
-          {P("安い機種は**カーペット・段差・消耗品代で差が出やすい**ので、自分の家で重要なポイントを確認してから選びましょう。")}
+          {P(f"5万円超の機種と比べて差が大きいのは**{diffs[0][0]}と{diffs[1][0]}**の口コミ評価です。自動ゴミ収集やモップ洗浄など、**手間を減らす機能が付いているか**も確認してから選びましょう。")}
           <ul>
             <li>維持費まで含めて比べる → {prose(gl('robot-vacuum-cost-performance'))}</li>
-            <li>5万円以下の全機種を表で比べる → <a href="/compare/robot-vacuum-under-5man">〜5万円の徹底比較</a></li>
+            <li>予算を少し上げて比べる → <a href="/compare/robot-vacuum-5-7man">5〜7万円の徹底比較</a></li>
           </ul>
         </div>"""
 
@@ -1930,7 +2066,7 @@ def build_cheap(rows: list[dict]) -> dict:
         "title": f"安いロボット掃除機のおすすめ{len(picks)}選｜5万円以下を口コミで比較【{YEAR}年】",
         "h1": "安いロボット掃除機のおすすめ｜3万円以下・5万円以下を口コミ分析で比較",
         "description": (
-            f"5万円以下で買える安いロボット掃除機{len(cheap)}機種を、２大ECサイトの口コミ分析で比較。"
+            f"5万円以下で買える安いロボット掃除機{len(cheap)}機種を、Amazon・楽天市場の口コミ分析で比較。"
             "3万円以下・4万円台など予算別のおすすめと、安いモデルで妥協しやすいポイントを解説します。"
         ),
         "lede": (
@@ -1940,6 +2076,7 @@ def build_cheap(rows: list[dict]) -> dict:
         "chips": [f"5万円以下・{len(cheap)}機種", "口コミ分析"],
         "know": [
             ("安いモデルで差が出やすい性能", "5万円以下と5万円超の口コミ評価を、性能ごとに比べます。"),
+            ("5万円以下で付いている機能", "自動ゴミ収集・モップ洗浄・障害物センサーの搭載率を比べます。"),
             ("5万円以下のおすすめランキング", f"口コミ{MIN_REVIEWS}件以上の機種から、総合点の高い順に紹介します。"),
             ("安さだけで選ぶと後悔しやすい点", "口コミの少なさ・苦手な床・消耗品代など、事前に確認したい点をまとめました。"),
         ],
@@ -1951,12 +2088,17 @@ def build_cheap(rows: list[dict]) -> dict:
         ],
         "sections": [
             ("market", "安いロボット掃除機の価格帯と特徴", "".join(sec_market)),
+            ("features", "5万円以下で付いている機能・付いていない機能", "".join(sec_features)),
             ("points", "安いロボット掃除機を選ぶときの3つのポイント", points_list(points)),
             ("picks", f"安いロボット掃除機のおすすめ{len(picks)}選", P(
                 f"5万円以下・口コミ{MIN_REVIEWS}件以上の機種を、総合点の高い順に紹介します。"
             ) + f'<div class="articles">{"".join(cards)}</div>'),
             ("budget", "予算別の最有力機種", P("予算の上限ごとに、総合点が最も高い機種をまとめました。")
              + mini_table(["予算", "機種", "価格", "総合点", "口コミ数"], group_rows)),
+            ("purpose", "目的別の最有力機種", P(
+                f"5万円以下・口コミ{MIN_REVIEWS}件以上の機種から、気になる性能ごとに口コミの点数が最も高い機種をまとめました。"
+                + (f"迷ったときは、口コミが最も多い{plink(most_reviewed)}（{most_reviewed['reviews']}件）も評価が安定していて選びやすい機種です。" if most_reviewed else "")
+            ) + mini_table(["こんな人に", "機種", "価格", "口コミの点数", "口コミ数"], purpose_rows)),
             ("table", "5万円以下のロボット掃除機比較表", P(
                 f"5万円以下の{len(cheap)}機種を、安い順に並べました。"
             ) + table),
@@ -1989,7 +2131,7 @@ def build_cost(rows: list[dict]) -> dict:
     hi_all = max(r["cons"]["annualHi"] for r in verified)
     band_rows = []
     hrefs = {
-        "band-under5": "/compare/robot-vacuum-under-5man", "band-5-7": "/compare/robot-vacuum-5-7man",
+        "band-under5": "/guides/robot-vacuum-cheap", "band-5-7": "/compare/robot-vacuum-5-7man",
         "band-7-10": "/compare/robot-vacuum-7-10man", "band-10-15": "/compare/robot-vacuum-10-15man",
         "band-15-20": "/compare/robot-vacuum-15-20man", "band-over20": "/compare/robot-vacuum-20man-plus",
     }

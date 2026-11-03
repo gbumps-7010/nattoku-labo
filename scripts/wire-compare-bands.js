@@ -10,7 +10,7 @@ function banner(label, href) {
             <a class="same-price-compare-link" href="${href}">
                 <span class="same-price-compare-copy">
                     <strong>同価格帯の口コミ分析比較を見る</strong>
-                    <span class="same-price-compare-meta">${label}｜全製品のおすすめ比較</span>
+                    <span class="same-price-compare-meta">${label}｜${href.startsWith("/guides/") ? "安いロボット掃除機のおすすめと全機種比較" : "全製品のおすすめ比較"}</span>
                 </span>
                 <span class="same-price-compare-action">比較を見る</span>
             </a>
@@ -55,7 +55,7 @@ hub = hub.replace(
 );
 
 const hubMetas = {
-  "/compare/robot-vacuum-under-5man": "この価格帯の全13製品を比較",
+  "/guides/robot-vacuum-cheap": "この価格帯の全13製品を比較",
   "/compare/robot-vacuum-5-7man": "この価格帯の全16製品を比較",
   "/compare/robot-vacuum-7-10man": "この価格帯の全11製品を比較",
   "/compare/robot-vacuum-10-15man": "この価格帯の全6製品を比較",

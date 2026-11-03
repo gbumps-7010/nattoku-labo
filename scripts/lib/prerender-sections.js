@@ -44,8 +44,8 @@ const PERF_MAPPING = [
     label: "フローリング清掃",
     ranking: {
       href: "/rankings/floor-cleaning",
-      high: "フローリング掃除ランキングでほかの機種と比べる",
-      low: "床掃除が得意な機種をフローリング掃除ランキングで探す",
+      high: "水拭き・フローリングのランキングでほかの機種と比べる",
+      low: "水拭き・床掃除が得意な機種をランキングで探す",
     },
   },
   {
@@ -53,8 +53,8 @@ const PERF_MAPPING = [
     label: "カーペット清掃",
     ranking: {
       href: "/rankings/carpet-cleaning",
-      high: "カーペット掃除ランキングでほかの機種と比べる",
-      low: "カーペットに強い機種をカーペット掃除ランキングで探す",
+      high: "カーペット・ラグのランキングでほかの機種と比べる",
+      low: "カーペット・ラグに強い機種をランキングで探す",
     },
   },
   { keys: ["petHair", "petHairRemoval"], label: "ペット毛対応" },

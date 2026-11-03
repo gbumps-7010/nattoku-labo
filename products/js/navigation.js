@@ -114,7 +114,7 @@ function manufacturerLabel(id) {
 // おすすめ比較（価格帯別）
 const COMPARE_BANDS = [
     { label: '一覧', href: '/compare/', min: null, max: null },
-    { label: '〜5万円', href: '/compare/robot-vacuum-under-5man', min: 0, max: 50000 },
+    { label: '〜5万円', href: '/guides/robot-vacuum-cheap', min: 0, max: 50000 },
     { label: '5〜7万円', href: '/compare/robot-vacuum-5-7man', min: 50000, max: 70000 },
     { label: '7〜10万円', href: '/compare/robot-vacuum-7-10man', min: 70000, max: 100000 },
     { label: '10〜15万円', href: '/compare/robot-vacuum-10-15man', min: 100000, max: 150000 },
@@ -557,7 +557,7 @@ function createRelatedProductsSection() {
                         </div>
                         <div class="related-arrow"><i class="fas fa-arrow-right"></i></div>
                     </a>
-                    <a href="/compare/robot-vacuum-under-5man" class="related-product-card">
+                    <a href="/guides/robot-vacuum-cheap" class="related-product-card">
                         <div class="related-product-info">
                             <div class="related-manufacturer">価格帯比較</div>
                             <div class="related-name">5万円以下を見る</div>
@@ -895,7 +895,6 @@ function createSiteExploreSection() {
                         <a class="site-explore-chip site-explore-chip-primary" href="/makers/ecovacs"><i class="fas fa-industry" aria-hidden="true"></i>エコバックス比較</a>
                         <a class="site-explore-chip site-explore-chip-primary" href="/makers/dreame"><i class="fas fa-industry" aria-hidden="true"></i>ドリーミー比較</a>
                         <a class="site-explore-chip site-explore-chip-primary" href="/rankings/quietness"><i class="fas fa-volume-mute" aria-hidden="true"></i>静音ランキング</a>
-                        <a class="site-explore-chip site-explore-chip-primary" href="/compare/robot-vacuum-under-5man"><i class="fas fa-yen-sign" aria-hidden="true"></i>5万円以下比較</a>
                         <a class="site-explore-chip site-explore-chip-primary" href="/guides/robot-vacuum-cheap"><i class="fas fa-tags" aria-hidden="true"></i>安いおすすめ</a>
                     </div>
                 </div>

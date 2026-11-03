@@ -162,6 +162,8 @@
 1. ルンバ8ページとEufy9ページのタイトル修正（テンプレートの変更で一括）
 2. /makers/irobot と /makers/anker のタイトル修正
 3. floor-cleaning を「水拭き」に転換、small に「小型・一人暮らし」を追加
+   - 2026-11-03 済み：floor-cleaning を「水拭きロボット掃除機ランキング」に転換（URL・点数・順位は変えず、タイトル・結論・モップ方式の記事・モップ自動洗浄の絞り込みを追加）。small も対応済み
 4. under-5man を cheap に統合（301）、15-20man と 20man-plus を統合
+   - 2026-11-03 済み：under-5man → /guides/robot-vacuum-cheap に301（functions/_middleware.js の SLUG_REDIRECTS と _redirects）。比較ページは生成しない（generate-compare-band-pages.js の filename: null）。cheap に「目的別の最有力機種」を追加。製品ページの同価格帯バナーを wire-compare-bands.js で現価格帯に付け直し。15-20man と 20man-plus の統合は未着手
 5. サイトマップの自動生成と lastmod の修正
 6. 新規ページ：ふるさと納税（期限あり）→ 段差ランキング → 日本製 → ロボロック vs ルンバ
