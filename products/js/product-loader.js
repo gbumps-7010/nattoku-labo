@@ -286,6 +286,9 @@ function updateDynamicElements(data) {
             } else if (path === 'updateInfo.lastUpdated') {
                 element.textContent = formatUpdateDate(value);
                 console.log(`✅ データ更新日: ${formatUpdateDate(value)}`);
+            } else if (RELIABILITY_MAX_PTS[path]) {
+                // 信頼度の内訳は配点に換算して表示（プリレンダと同じ「51 / 60点」の形。0-100の素点を入れると「85 / 60点」に崩れる）
+                element.textContent = formatReliabilityPoints(value, RELIABILITY_MAX_PTS[path]);
             } else if (path.includes('percentage')) {
                 element.textContent = `${value}%`;
                 console.log(`✅ ${path} = ${value}%`);
@@ -472,6 +475,12 @@ function updateReviewKeywords(data) {
 // 7.5. データ信頼性（DRI 2.0）更新
 // 理論: 信頼度 = 口コミ件数(配点60) + 意見一致度(配点30) + 鮮度(配点10)
 //   各要素の0-100スコアを配点に換算して表示（例: 十分性77点→46.2/60点）
+const RELIABILITY_MAX_PTS = {
+    'reliability.dataAdequacy.score': 60,
+    'reliability.consistency.percentage': 30,
+    'reliability.freshness.score': 10,
+};
+
 function reliabilityWeightedPoints(raw, maxPts) {
     const n = Number(raw);
     if (!Number.isFinite(n)) return null;

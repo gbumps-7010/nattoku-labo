@@ -23,7 +23,7 @@ const ROOT = path.resolve(__dirname, "..");
 const PRODUCTS_DIR = path.join(ROOT, "products");
 const DATA_DIR = path.join(PRODUCTS_DIR, "data");
 const EXCLUDED = new Set(["template-unified.html", "template-unified-old.html", "test-js.html"]);
-const LOADER_V = "20261103a";
+const LOADER_V = "20261104a";
 // 口コミがこれ未満の製品は機能別ランキングに載せない（generate-floor-ranking-page.py の MIN_RANK_REVIEWS と同じ値）
 const MIN_RANK_REVIEWS = 10;
 // 口コミがこれ未満の製品は点数を参考値として扱う（ランキングの「参考値」バッジと同じ値）
